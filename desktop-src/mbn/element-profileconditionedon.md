@@ -7,12 +7,12 @@ MSHAttr:
 title: ProfileConditionedOn
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44257377400ec8877b07b6aa29766552b72e28e6
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 1c0be79fd82b7fa92400a4d828149912cfc1aeb7
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882898"
+ms.locfileid: "122987078"
 ---
 # <a name="span-idwwan_profile_v4element_profileconditionedonspanprofileconditionedon"></a><span id="WWAN_profile_v4.element_ProfileConditionedOn"></span>ProfileConditionedOn
 
@@ -25,7 +25,7 @@ Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplic
 [&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
 **&lt;ProfileConditionedOn&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <ProfileConditionedOn>
@@ -77,7 +77,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

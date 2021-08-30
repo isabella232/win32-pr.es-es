@@ -1,7 +1,7 @@
 ---
 description: Marca que especifica si el objeto está realizando una operación de vaciado. Si es TRUE, el objeto ha empezado a vaciarse.
 ms.assetid: d7a066bd-962a-463f-a6f6-13b7cd58725c
-title: 'Miembro COutputQueue:: m_bFlushing (Outputq. h)'
+title: COutputQueue::m_bFlushing miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16f80f20e7a819599bf763320a1985a15854c72e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 051de26747c5fca4cc65937bb374b9106778cf531addaf442bdffdcd661ff61f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087235"
 ---
-# <a name="coutputqueuem_bflushing-member"></a>Miembro bFlushing COutputQueue:: m \_
+# <a name="coutputqueuem_bflushing-member"></a>COutputQueue::m \_ bFlushing member
 
-Marca que especifica si el objeto está realizando una operación de vaciado. Si **es true**, el objeto ha empezado a vaciarse.
+Marca que especifica si el objeto está realizando una operación de vaciado. Si **es TRUE,** el objeto ha empezado a vaciarse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bFlushing;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bFlushing;
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

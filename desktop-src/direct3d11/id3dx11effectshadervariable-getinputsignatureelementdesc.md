@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectShaderVariable GetInputSignatureElementDesc (D3dx11effect. h)
-description: Obtiene una descripción de la firma de entrada.
+title: Método ID3DX11EffectShaderVariable GetInputSignatureElementDesc (D3dx11effect.h)
+description: Obtenga una descripción de la firma de entrada.
 ms.assetid: 45b1fd25-1005-48fd-8a61-561ea2c273e5
 keywords:
 - Método GetInputSignatureElementDesc Direct3D 11
-- Método GetInputSignatureElementDesc Direct3D 11, interfaz ID3DX11EffectShaderVariable
-- Interfaz ID3DX11EffectShaderVariable Direct3D 11, método GetInputSignatureElementDesc
+- Método GetInputSignatureElementDesc Direct3D 11 , interfaz ID3DX11EffectShaderVariable
+- Interfaz ID3DX11EffectShaderVariable direct3D 11 , método GetInputSignatureElementDesc
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbf788370c26da1ba773d797de544b1a64750d90
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0f494d24e1a92fedb000847569841fb364338bb430c85bfd5e0bc8ab7aba4fb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069675"
 ---
-# <a name="id3dx11effectshadervariablegetinputsignatureelementdesc-method"></a>ID3DX11EffectShaderVariable:: GetInputSignatureElementDesc (método)
+# <a name="id3dx11effectshadervariablegetinputsignatureelementdesc-method"></a>Método ID3DX11EffectShaderVariable::GetInputSignatureElementDesc
 
-Obtiene una descripción de la firma de entrada.
+Obtenga una descripción de la firma de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,27 +48,27 @@ HRESULT GetInputSignatureElementDesc(
 *ShaderIndex* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice de sombreador basado en cero.
+Índice de sombreador de base cero.
 
 </dd> <dt>
 
 *Element* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice de elemento de sombreador basado en cero.
+Índice de elemento de sombreador de base cero.
 
 </dd> <dt>
 
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **\_ parámetro de firma D3D11 \_ \_ DESC**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)\***
+Tipo: **[ **D3D11 \_ SIGNATURE \_ PARAMETER \_ DESC**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)\***
 
-Un puntero a una descripción de parámetro (vea [**D3D11 \_ Signature \_ Parameter \_ DESC**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)).
+Puntero a una descripción de parámetro (vea [**D3D11 \_ SIGNATURE \_ PARAMETER \_ DESC**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)).
 
 </dd> </dl>
 
@@ -76,14 +76,14 @@ Un puntero a una descripción de parámetro (vea [**D3D11 \_ Signature \_ Parame
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un efecto contiene uno o varios sombreadores; cada sombreador tiene una firma de entrada y salida; cada firma contiene uno o más elementos (o parámetros). El índice del sombreador identifica el sombreador y el índice del elemento identifica el elemento (o parámetro) de la firma del sombreador.
+Un efecto contiene uno o varios sombreadores; cada sombreador tiene una firma de entrada y salida; cada firma contiene uno o varios elementos (o parámetros). El índice de sombreador identifica el sombreador y el índice del elemento identifica el elemento (o parámetro) en la firma del sombreador.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -93,8 +93,8 @@ Un efecto contiene uno o varios sombreadores; cada sombreador tiene una firma de
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

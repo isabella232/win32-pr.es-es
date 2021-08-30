@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5f13e97596de9874c3983ce28535a07860c7fa42
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 93e076a8e7df73f6cc504f84daa2b928daa4de96
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624581"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786781"
 ---
 # <a name="span-idvspixengineidebugshadercallbackspanidebugshadercallback-interface"></a><span id="vspixengine.idebugshadercallback"></span>IDebugShaderCallback (interfaz)
 
 Devolución de llamada para devolver las instrucciones generadas a partir de la creación de un seguimiento del sombreador.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDebugShaderCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDebugShaderCallback** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IDebugShaderCallback** hereda de la [**interfaz IUnknown.**](/wind
 
 La **interfaz IDebugShaderCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/idebugshadercallback-resultinstructions-dword-byte-arr"><strong>ResultInstructions</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host la información de instrucciones devuelta por la solicitud asociada.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/idebugshadercallback-resultinstructions-dword-byte-arr"><strong>ResultInstructions</strong></a></td><td ><p>Devolución de llamada que notifica al host la información de instrucciones devuelta por la solicitud asociada.</p></td></tr></tbody></table>
 
  
 

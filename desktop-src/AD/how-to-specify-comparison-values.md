@@ -7,12 +7,12 @@ keywords:
 - Cómo especificar valores de comparación de AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5babc7d9781895c9671594214e4e036a85ef951cdb4b97ba34d708d160dd8fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b847f681be876ff768a51a9f5da875cb653faa51
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118188126"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881384"
 ---
 # <a name="how-to-specify-comparison-values"></a>Cómo especificar valores de comparación
 
@@ -27,7 +27,7 @@ En las secciones siguientes se describen los requisitos de cada sintaxis de atri
 
 El valor especificado en un filtro debe ser un valor de cadena que sea "TRUE" o "FALSE". En los ejemplos siguientes se muestra cómo especificar una cadena de comparación booleana.
 
-En el ejemplo siguiente se buscarán objetos que tengan **un valor showInAdvancedViewOnly** establecido en **TRUE**:
+En el ejemplo siguiente se buscarán objetos que tengan **un valor showInAdvancedViewOnly** establecido en **TRUE:**
 
 
 ```C++
@@ -59,7 +59,7 @@ El valor especificado en un filtro debe ser un entero decimal. Los valores hexad
 
 
 
-" <attribute name> " es el **lDAPDisplayName** del atributo y "<value>" es el valor que se va a usar para la comparación.
+" <attribute name> " es el **lDAPDisplayName** del atributo y " &lt; value " es el valor que se usará para la &gt; comparación.
 
 En el ejemplo de código siguiente se muestra un filtro que buscará objetos que tengan un valor **groupType** igual a la marca **ADS GROUP TYPE UNIVERSAL \_ \_ \_ \_ GROUP** (8) y la marca **ADS GROUP TYPE SECURITY \_ \_ \_ \_ ENABLED** (0x80000000). Las dos marcas combinadas son iguales 0x80000008, que se convierten en decimales 2147483656.
 
@@ -70,7 +70,7 @@ En el ejemplo de código siguiente se muestra un filtro que buscará objetos que
 
 
 
-Los operadores de reglas de coincidencia LDAP también se pueden usar para realizar comparaciones bit a bit. Para obtener más información sobre las reglas de coincidencia, vea [Sintaxis de filtro de búsqueda.](/windows/desktop/ADSI/search-filter-syntax) En el ejemplo de código siguiente se muestra un filtro que buscará objetos que tienen un **groupType** con el conjunto de bits **ADS GROUP TYPE SECURITY \_ \_ \_ \_ ENABLED** (0x80000000 = 2147483648).
+Los operadores de reglas de coincidencia LDAP también se pueden usar para realizar comparaciones bit a bit. Para obtener más información sobre las reglas de coincidencia, vea [Sintaxis de filtro de búsqueda.](/windows/desktop/ADSI/search-filter-syntax) En el ejemplo de código siguiente se muestra un filtro que buscará objetos que tienen **un groupType** con el conjunto de bits **ADS GROUP TYPE SECURITY \_ \_ \_ \_ ENABLED** (0x80000000 = 2147483648).
 
 
 ```C++
@@ -117,7 +117,7 @@ En el ejemplo de código siguiente se muestra un filtro que contiene una cadena 
 
 </dd> <dt>
 
-<span id="DN"></span><span id="dn"></span>Dn
+<span id="DN"></span><span id="dn"></span>DN
 </dt> <dd>
 
 Se debe proporcionar el nombre distintivo completo que se va a coincidir.
@@ -151,7 +151,7 @@ En el ejemplo de código siguiente se muestra un filtro que especifica un **valo
 
 
 
-Las funciones siguientes crean un filtro de coincidencia exacta (=) para un atributo entero grande y comprueban el atributo en el esquema y su sintaxis:
+Las siguientes funciones crean un filtro de coincidencia exacta (=) para un atributo entero grande y comprueban el atributo en el esquema y su sintaxis:
 
 
 ```C++
@@ -279,7 +279,7 @@ HRESULT CreateExactMatchFilterLargeInteger( LPOLESTR szAttribute,
 <span id="PrintableString"></span><span id="printablestring"></span><span id="PRINTABLESTRING"></span>PrintableString
 </dt> <dd>
 
-Los atributos con estas sintaxis deben cumplir con conjuntos de caracteres específicos. Para obtener más información, vea [Sintaxis de atributos en Active Directory Domain Services](syntaxes-for-attributes-in-active-directory-domain-services.md).
+Los atributos con estas sintaxis deben cumplir con conjuntos de caracteres específicos. Para obtener más información, vea [Syntaxes for Attributes in Active Directory Domain Services](syntaxes-for-attributes-in-active-directory-domain-services.md).
 
 Actualmente, Active Directory Domain Services no aplican esos juegos de caracteres.
 
@@ -299,7 +299,7 @@ YYYYMMDDHHMMSS.0Z
 
 
 
-"0Z" indica que no hay diferencias de tiempo. Tenga en cuenta que Active Directory servidor almacena la fecha y hora como Hora media de Greenwich (GMT). Si no se especifica un diferencial de hora, el valor predeterminado es GMT.
+"0Z" indica que no hay diferencial de tiempo. Tenga en cuenta que Active Directory servidor almacena la fecha y hora como Hora media de Greenwich (GMT). Si no se especifica un diferencial de hora, el valor predeterminado es GMT.
 
 Si la zona horaria local no es GMT, use un valor diferencial para especificar la zona horaria local y aplicar el diferencial a GMT. El diferencial se basa en: GMT=Local+differential.
 
@@ -436,13 +436,13 @@ YYMMDDHHMMSSZ
 
 
 
-Z indica que no hay diferencial de tiempo. Tenga en cuenta que el Active Directory almacena la fecha y la hora como hora GMT. Si no se especifica un diferencial de hora, GMT es el valor predeterminado.
+Z indica que no hay diferencial de tiempo. Tenga en cuenta que el servidor Active Directory almacena la fecha y la hora como hora GMT. Si no se especifica un diferencial de hora, GMT es el valor predeterminado.
 
 El valor de segundos ("SS") es opcional.
 
 Si GMT no es la zona horaria local, aplique un valor diferencial local para especificar la zona horaria local. El diferencial es: GMT=Local+differential.
 
-Para especificar un diferencial, use el formato siguiente:
+Para especificar un diferencial, use el siguiente formulario:
 
 
 ```C++
@@ -487,10 +487,10 @@ El valor especificado en un filtro es una cadena. DirectoryString puede contener
 
 </dd> <dt>
 
-<span id="OID"></span><span id="oid"></span>Oid
+<span id="OID"></span><span id="oid"></span>OID
 </dt> <dd>
 
-Se debe proporcionar el OID completo que se va a coincidir.
+Se debe proporcionar todo el OID que se va a coincidir.
 
 No se aceptan caracteres comodín.
 

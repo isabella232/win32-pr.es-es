@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec2TransformNormal (D3dx9math.h): transforma el vector 2D normal según la matriz especificada.'
+description: 'Función D3DXVec2TransformNormal (D3dx9math.h): transforma el vector 2D normal por la matriz dada.'
 ms.assetid: aa9adf6d-5aae-4acf-bbd9-f5c14d90470e
 title: Función D3DXVec2TransformNormal (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c8ed31300027fcb2e827988809cce1c50dbf77de
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2bb1cc78bdb1b2e4fc713bf85b99046010d2f74f8cedb5d7fecef7089b7d3a1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849655"
 ---
 # <a name="d3dxvec2transformnormal-function-d3dx9mathh"></a>Función D3DXVec2TransformNormal (D3dx9math.h)
 
-Transforma el vector 2D normal según la matriz especificada.
+Transforma el vector 2D normal por la matriz especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -79,7 +79,7 @@ Puntero a una [**estructura D3DXVECTOR2**](d3dxvector2.md) que es el vector tran
 
 Esta función transforma el vector *(pV-*>x, *pV-*>y, 0, 0) por la matriz a la que apunta *pM*.
 
-Si desea transformar un normal, la matriz que pasa a esta función debe ser la transpuesta de la inversa de la matriz que usaría para transformar un punto.
+Si desea transformar un normal, la matriz que pase a esta función debe ser la transponer del inverso de la matriz que se usaría para transformar un punto.
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec2TransformNormal** se puede usar como parámetro para otra función.
 
@@ -94,7 +94,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

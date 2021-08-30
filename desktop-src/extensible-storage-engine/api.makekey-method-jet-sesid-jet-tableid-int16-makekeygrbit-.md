@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método API. MakeKey (JET_SESID, JET_TABLEID, Int16, MakeKeyGrbit)'
-title: Método API. MakeKey (JET_SESID, JET_TABLEID, Int16, MakeKeyGrbit)
+description: 'Más información sobre: Método Api.MakeKey (JET_SESID, JET_TABLEID, Int16, MakeKeyGrbit)'
+title: Método Api.MakeKey (JET_SESID, JET_TABLEID, Int16, MakeKeyGrbit)
 TOCTitle: MakeKey method (JET_SESID, JET_TABLEID, Int16, MakeKeyGrbit)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.MakeKey(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Int16,Microsoft.Isam.Esent.Interop.MakeKeyGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.makekey(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 42162f699510c2ef99c6001532adc7574fe8c99e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 485d79851dc25c0370e5c1f92ca0da19eae3a2fb7c0e2263b987bc535f0f5214
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067135"
 ---
-# <a name="apimakekey-method-jet_sesid-jet_tableid-int16-makekeygrbit"></a>Método API. MakeKey (JET_SESID, JET_TABLEID, Int16, MakeKeyGrbit)
+# <a name="apimakekey-method-jet_sesid-jet_tableid-int16-makekeygrbit"></a>Método Api.MakeKey (JET_SESID, JET_TABLEID, Int16, MakeKeyGrbit)
 
-Construye una clave de búsqueda que puede usar [JetSeek (JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) y [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).
+Construye una clave de búsqueda que [jetSeek(JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) y [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,39 +64,39 @@ public static void MakeKey(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor en el que se va a crear la clave.
+    Cursor en el que se creará la clave.
 
 <!-- end list -->
 
   - datos  
-    Tipo: [System. Int16](/dotnet/api/system.int16)  
+    Tipo: [System.Int16](/dotnet/api/system.int16)  
     
     Datos de columna para la columna de clave actual del índice actual.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. MakeKeyGrbit](./makekeygrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.MakeKeyGrbit](./makekeygrbit-enumeration.md)  
     
-    Opciones de clave.
+    Opciones clave.
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Sobrecarga MakeKey](./api.makekey-method.md)
+[Sobrecarga de MakeKey](./api.makekey-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

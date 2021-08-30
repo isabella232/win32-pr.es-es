@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: aafd6407d556a6d0b4269c38192107edbc7cb1fa
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 13b150de4394ecc7a8b52e050a673354326f4bd1533cf80a737807ffd6bcf43e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068165"
 ---
 # <a name="restartstrip-directx-hlsl-stream-output-object"></a>RestartStrip (objeto Stream-Output HLSL de DirectX)
 
@@ -44,14 +44,14 @@ None
 
 ## <a name="remarks"></a>Observaciones
 
-Un corte de franja hace que la franja actual finalice y se inicie una nueva. Un corte de franja se puede realizar llamando explícitamente a este método o simplemente representando hasta el valor de índice máximo ( 1, que es 0xffffffff para índices de 32 bits o 0xffff para índices de 16 bits). Cada instancia de un dibujo con instancia indizada genera automáticamente un corte de franja. Esto es así incluso si la topología no es una franja de triángulos.
+Un corte de franja hace que la franja actual finalice y se inicie una nueva. Un corte de franja se puede realizar llamando explícitamente a este método o simplemente representando hasta el valor de índice máximo ( 1, que es 0xffffffff para índices de 32 bits o 0xffff para índices de 16 bits). Cada instancia de un dibujo de instancia indizada genera automáticamente un corte de franja. Esto es así incluso si la topología no es una franja de triángulos.
 
 > [!Note]  
-> La compatibilidad con el reinicio y el 1 "valor mágico" para un corte solo está disponible en los dispositivos de nivel [de](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) característica 10.0 o superior.
+> La compatibilidad con el reinicio y el 1 "valor mágico" para un corte solo está disponible en los dispositivos [de](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) nivel de característica 10.0 o superior.
 
  
 
-Siempre se supone que la salida es una franja de triángulo. Para convertir la salida en una lista de triángulos, debe llamar a RestartStrip entre cada triángulo. No se admiten los ventiladores de triángulo.
+Siempre se supone que la salida es una franja de triángulos. Para convertir la salida en una lista de triángulos, debe llamar a RestartStrip entre cada triángulo. No se admiten los ventiladores de triángulo.
 
 ## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -61,7 +61,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

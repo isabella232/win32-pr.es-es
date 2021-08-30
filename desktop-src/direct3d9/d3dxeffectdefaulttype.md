@@ -1,7 +1,7 @@
 ---
-description: Tipos de datos de efecto. Los datos están contenidos en el miembro de pValue de D3DXEFFECTDEFAULT.
+description: Tipos de datos de efecto. Los datos están contenidos en el miembro pValue de D3DXEFFECTDEFAULT.
 ms.assetid: d698ad6e-2ce2-48d6-90be-49bc08f172a9
-title: Enumeración D3DXEFFECTDEFAULTTYPE (D3dx9mesh. h)
+title: Enumeración D3DXEFFECTDEFAULTTYPE (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: ffd31167d712a8270011c061cd6328aa9214352e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 25b197503b4f709c376a80c1fde0a89f96656da330be6bd26a4b1ebc1c8f47a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119205"
 ---
-# <a name="d3dxeffectdefaulttype-enumeration"></a>Enumeración D3DXEFFECTDEFAULTTYPE
+# <a name="d3dxeffectdefaulttype-enumeration"></a>D3DXEFFECTDEFAULTTYPE (enumeración)
 
-Tipos de datos de efecto. Los datos están contenidos en el miembro de pValue de [**D3DXEFFECTDEFAULT**](d3dxeffectdefault.md).
+Tipos de datos de efecto. Los datos están contenidos en el miembro pValue de [**D3DXEFFECTDEFAULT.**](d3dxeffectdefault.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,31 +42,31 @@ typedef enum D3DXEFFECTDEFAULTTYPE {
 
 <dl> <dt>
 
-<span id="D3DXEDT_STRING"></span><span id="d3dxedt_string"></span>**\_Cadena D3DXEDT**
+<span id="D3DXEDT_STRING"></span><span id="d3dxedt_string"></span>**CADENA D3DXEDT \_**
 </dt> <dd>
 
 El tipo de datos es una cadena de texto ASCII terminada en NULL.
 
 </dd> <dt>
 
-<span id="D3DXEDT_FLOATS"></span><span id="d3dxedt_floats"></span>**D3DXEDT \_ flotantes**
+<span id="D3DXEDT_FLOATS"></span><span id="d3dxedt_floats"></span>**FLOTANTES D3DXEDT \_**
 </dt> <dd>
 
-El tipo de datos es una matriz de tipo float. El número de tipos Float de la matriz se especifica mediante NumBytes en [**D3DXEFFECTDEFAULT**](d3dxeffectdefault.md).
+El tipo de datos es una matriz de tipo float. NumBytes especifica el número de tipos float de la matriz en [**D3DXEFFECTDEFAULT.**](d3dxeffectdefault.md)
 
 </dd> <dt>
 
 <span id="D3DXEDT_DWORD"></span><span id="d3dxedt_dword"></span>**D3DXEDT \_ DWORD**
 </dt> <dd>
 
-El tipo de datos es un valor DWORD.
+El tipo de datos es DWORD.
 
 </dd> <dt>
 
 <span id="D3DXEDT_FORCEDWORD"></span><span id="d3dxedt_forcedword"></span>**D3DXEDT \_ FORCEDWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Obtiene el nombre de usuario.
 ms.assetid: 1373fc9d-ab1c-49b9-8b82-de2e99c4821c
-title: _GetUserName función)
+title: _GetUserName función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: f61be4596c5076dd7763ed171124888382f3ef6f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67ebcf5cb775a71475ebb0cb7366e8b57a261dff45646ad1259ad71e44321f93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053165"
 ---
-# <a name="_getusername-function"></a>\_GetUserName (función)
+# <a name="_getusername-function"></a>\_Función GetUserName
 
-\[Esta función es un contenedor de la función **GetUserName** . Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar a **GetUserName** directamente.\]
+\[Esta función es un contenedor sobre la **función GetUserName.** Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar **directamente a GetUserName.**\]
 
-Obtiene el nombre de usuario. Consulte [**GetUserName**](/windows/win32/api/winbase/nf-winbase-getusernamea).
+Obtiene el nombre de usuario. Vea [**GetUserName.**](/windows/win32/api/winbase/nf-winbase-getusernamea)
 
 ## <a name="syntax"></a>Sintaxis
 

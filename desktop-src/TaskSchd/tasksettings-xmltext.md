@@ -1,11 +1,11 @@
 ---
-title: TaskSettings.Xmlpropiedad Text
-description: Para scripting, obtiene o establece una definición con formato XML de la configuración de la tarea.
+title: TaskSettings.XmlText
+description: Para el scripting, obtiene o establece una definición con formato XML de la configuración de la tarea.
 ms.assetid: b3613e41-6e22-49d7-8a15-92f745b3cb03
 keywords:
 - Propiedad XmlText Programador de tareas
-- Propiedad XmlText Programador de tareas, objeto TaskSettings
-- Programador de tareas objeto TaskSettings, propiedad XmlText
+- Propiedad XmlText Programador de tareas , objeto TaskSettings
+- Objeto TaskSettings Programador de tareas , propiedad XmlText
 topic_type:
 - apiref
 api_name:
@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fae49bd460780132d2165a6a201c1f8b070ba33c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5ba9d13cca4f1b9fd4be01fcbd4e2335df6cbde99e9d70544334a5742879e362
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080275"
 ---
-# <a name="tasksettingsxmltext-property"></a>TaskSettings.Xmlpropiedad Text
+# <a name="tasksettingsxmltext-property"></a>TaskSettings.XmlText
 
-Para scripting, obtiene o establece una definición con formato XML de la configuración de la tarea.
+Para el scripting, obtiene o establece una definición con formato XML de la configuración de la tarea.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -46,11 +46,11 @@ Definición con formato XML de la configuración de la tarea.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,35 +1,35 @@
 ---
-description: En este tema se describe cómo crear un OM XPS en blanco.
+description: En este tema se describe cómo crear una OM XPS en blanco.
 ms.assetid: 5b6f12ba-9a41-4252-96c4-391bb8d75cd4
-title: Crear un OM XPS en blanco
+title: Creación de un OM xps en blanco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0588fc11deb4b3d980e978dfe8a5370bc170d506
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78a2d57810a9a8bb500c4d9392b362f4e41e12f7c1a7384c029953a48e77d9a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950345"
 ---
-# <a name="create-a-blank-xps-om"></a>Crear un OM XPS en blanco
+# <a name="create-a-blank-xps-om"></a>Creación de un OM xps en blanco
 
-En este tema se describe cómo crear un OM XPS en blanco. Presenta los ejemplos de código que muestran cómo usar un OM XPS para crear la estructura de documento de un documento XPS con una página en blanco.
+En este tema se describe cómo crear una OM XPS en blanco. Presenta los ejemplos de código que ilustran cómo usar una OM XPS para compilar la estructura de documentos de un documento XPS que tiene una página en blanco.
 
-Para que se guarde como un documento XPS, el OM de XPS requiere al menos los siguientes componentes:
+Para guardarse como un documento XPS, XPS OM requiere al menos los siguientes componentes:
 
--   Un [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) que describe el paquete de documento XPS
--   Un [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence) que contiene el marco del contenido del paquete.
--   Un [**IXpsOMDocument**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocument) que contiene el marco de un documento dentro del paquete.
--   [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference) que contiene la colección de páginas del documento.
--   Un [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage) que contiene una página en blanco
+-   Un [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) que describe el paquete de documentos XPS
+-   [**IXpsOMDocumentSequence que**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence) contiene el marco del contenido del paquete
+-   [**IXpsOMDocument que**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocument) contiene el marco de un documento dentro del paquete
+-   [**IXpsOMPageReference que**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference) contiene la colección de páginas del documento
+-   [**IXpsOMPage que**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage) contiene una página en blanco
 
-Cuando se usan estas interfaces, el OM de XPS contendrá un documento con una página en blanco. Para crear este documento en un OM XPS, el programa primero debe crear los componentes individuales y vincularlos juntos.
+Cuando se usan estas interfaces, XPS OM contendrá un documento que tiene una página en blanco. Para crear este documento en una OM XPS, el programa debe crear primero los componentes individuales y, a continuación, vincularlos entre sí.
 
-Antes de usar los ejemplos de código siguientes, lea la declinación de responsabilidades en [las tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
+Antes de usar los ejemplos de código siguientes, lea la declinación de responsabilidades en [Tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
 
 ## <a name="code-examples"></a>Ejemplos de código
 
-En el ejemplo de código siguiente se da por supuesto que la inicialización, descrita en [inicializar un OM XPS](xps-object-model-initialization.md), se ha realizado correctamente.
+En el ejemplo de código siguiente se da por supuesto que la inicialización, descrita en [Inicialización de una OM XPS,](xps-object-model-initialization.md)se ha hecho correctamente.
 
 
 ```C++
@@ -107,7 +107,7 @@ En el ejemplo de código siguiente se da por supuesto que la inicialización, de
 
 ## <a name="best-practices"></a>Prácticas recomendadas
 
-Después de usar una interfaz [**IOpcPartUri**](/previous-versions/windows/desktop/api/msopc/nn-msopc-iopcparturi) para crear un componente (por ejemplo, después de llamar al método **CreateDocument** en el ejemplo de código), libere el puntero a esa interfaz, a menos que lo necesite para otra llamada.
+Después de usar una interfaz [**IOpcPartUri**](/previous-versions/windows/desktop/api/msopc/nn-msopc-iopcparturi) para crear un componente (por ejemplo, después de llamar al método **CreateDocument** en el ejemplo de código), suelte el puntero a esa interfaz, a menos que lo necesite para otra llamada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -116,16 +116,16 @@ Después de usar una interfaz [**IOpcPartUri**](/previous-versions/windows/deskt
 **Pasos siguientes**
 </dt> <dt>
 
-[Navegar por el OM de XPS](navigate-the-xps-om.md)
+[Navegación por XPS OM](navigate-the-xps-om.md)
 </dt> <dt>
 
-[Escribir texto en un OM XPS](write-text-to-an-xps-om.md)
+[Escribir texto en una om xps](write-text-to-an-xps-om.md)
 </dt> <dt>
 
 [Dibujar gráficos en un OM XPS](draw-graphics-in-an-xps-om.md)
 </dt> <dt>
 
-[Colocar imágenes en un OM XPS](place-images-in-an-xps-om.md)
+[Colocar imágenes en un OM xps](place-images-in-an-xps-om.md)
 </dt> <dt>
 
 **Se usa en esta página**
@@ -158,19 +158,19 @@ Después de usar una interfaz [**IOpcPartUri**](/previous-versions/windows/deskt
 [**IXpsOMPageReferenceCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereferencecollection)
 </dt> <dt>
 
-[**tamaño de XPS \_**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_size)
+[**XPS \_ SIZE**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_size)
 </dt> <dt>
 
 **Para obtener más información**
 </dt> <dt>
 
-[Inicializar un OM XPS](xps-object-model-initialization.md)
+[Inicialización de una om xps](xps-object-model-initialization.md)
 </dt> <dt>
 
 [API de empaquetado](/previous-versions/windows/desktop/opc/packaging)
 </dt> <dt>
 
-[Referencia de la API de documentos XPS](xps-programming-reference.md)
+[Referencia de document API de XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

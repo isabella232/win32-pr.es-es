@@ -1,21 +1,21 @@
 ---
-title: Abrir secuencias en un archivo AVI y cerrar el archivo
-description: Abrir secuencias en un archivo AVI y cerrar el archivo
+title: Abrir Secuencias en un archivo AVI y cerrar el archivo
+description: Abrir Secuencias en un archivo AVI y cerrar el archivo
 ms.assetid: 3c6afa04-3d95-48cd-b468-7167bac07d46
 keywords:
-- AVIFileGetStream función)
+- Función AVIFileGetStream
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ca06378862ec543e9da8f671eca50841c85d744
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 634d1e21bc324c85636bd607e14669d3577b2b4b0b3296881af62baefb0b0db3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038305"
 ---
-# <a name="opening-streams-in-an-avi-file-and-closing-the-file"></a>Abrir secuencias en un archivo AVI y cerrar el archivo
+# <a name="opening-streams-in-an-avi-file-and-closing-the-file"></a>Abrir Secuencias en un archivo AVI y cerrar el archivo
 
-En el siguiente ejemplo se abren todas las secuencias en un archivo AVI mediante la función [**AVIFileGetStream**](/windows/desktop/api/Vfw/nf-vfw-avifilegetstream) . Si se produce un error, se cierra el archivo.
+En el ejemplo siguiente se abren todas las secuencias de un archivo AVI mediante la [**función AVIFileGetStream.**](/windows/desktop/api/Vfw/nf-vfw-avifilegetstream) Si se produce un error, el archivo se cierra.
 
 
 ```C++
@@ -63,9 +63,9 @@ void InsertAVIFile(PAVIFILE pfile, HWND hwnd, LPSTR lpszFile)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

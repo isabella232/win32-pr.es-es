@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetInit2 (método)'
-title: Método API. JetInit2
+description: Más información sobre el método Api.JetInit2
+title: Método Api.JetInit2
 TOCTitle: 'JetInit2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetInit2(Microsoft.Isam.Esent.Interop.JET_INSTANCE@,Microsoft.Isam.Esent.Interop.InitGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetinit2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 138a9830d5a74b887e7e68f3a3833f5f7e7fb8df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40bc66387bdb562b885c0e855657682e7e722d70576fe42310dfdb03d4b75e40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067155"
 ---
-# <a name="apijetinit2-method"></a>Método API. JetInit2
+# <a name="apijetinit2-method"></a>Método Api.JetInit2
 
-Inicialice el motor de base de datos ESENT.
+Inicialice el motor de base de datos DE ESENT.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,9 +65,9 @@ public static JET_wrn JetInit2(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia de que se va a inicializar. Si no se ha asignado una instancia, se crea una nueva y el motor funcionará en modo de instancia única.
+    Instancia que se inicializará. Si no se ha asignado una instancia, se crea una nueva y el motor funcionará en modo de instancia única.
 
 <!-- end list -->
 
@@ -78,15 +78,15 @@ public static JET_wrn JetInit2(
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Código de advertencia.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

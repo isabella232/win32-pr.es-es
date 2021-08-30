@@ -1,7 +1,7 @@
 ---
-description: La \_ información de la impresora \_ 6 especifica el valor de estado de una impresora.
+description: PRINTER \_ INFO \_ 6 especifica el valor de estado de una impresora.
 ms.assetid: f26fe75b-7c97-47ad-892f-d9e40331fa5d
-title: Estructura de PRINTER_INFO_6 (winspool. h)
+title: PRINTER_INFO_6 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 0ee4e86590483ec1751fa088fd56770c5891df0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76255c563066ebcffde0fb2901426b186ec96504269842d286d2dc6ccca42ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947685"
 ---
-# <a name="printer_info_6-structure"></a>Estructura de la información de la impresora \_ \_ 6
+# <a name="printer_info_6-structure"></a>Printer \_ INFO \_ 6 (estructura)
 
-La **información de la impresora \_ \_ 6** especifica el valor de estado de una impresora.
+PRINTER **\_ INFO \_ 6** especifica el valor de estado de una impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,37 +44,37 @@ typedef struct _PRINTER_INFO_6 {
 **dwStatus**
 </dt> <dd>
 
-El estado de la impresora. Este miembro puede ser cualquier combinación razonable de los siguientes valores.
+Estado de la impresora. Este miembro puede ser cualquier combinación razonable de los valores siguientes.
 
 
 
 | Value                               | Significado                                                                                                       |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Estado de la impresora \_ \_ ocupado               | La impresora está ocupada.                                                                                          |
-| puerta de estado de la impresora \_ \_ \_ abierta         | La puerta de la impresora está abierta.                                                                                     |
-| \_error de estado de la impresora \_              | No se utiliza.                                                                                                     |
-| Estado de la impresora \_ \_ inicializando       | La impresora se está inicializando.                                                                                  |
-| \_e/s de estado de impresora \_ \_ activa         | La impresora está en un estado de entrada/salida activo                                                                |
-| \_ \_ alimentación manual de estado de la impresora \_       | La impresora está en un estado de alimentación manual.                                                                        |
-| Estado de la impresora \_ \_ sin \_ tóner          | Se ha agotado el tóner de la impresora.                                                                                  |
-| Estado de la impresora \_ \_ no \_ disponible     | La impresora no está disponible para imprimir.                                                                    |
-| Estado de la impresora \_ \_ sin conexión            | La impresora no está conectada.                                                                                       |
-| \_Estado de la impresora \_ sin \_ \_ memoria    | La impresora se ha quedado sin memoria.                                                                            |
-| bandeja de salida de estado de la impresora \_ \_ \_ \_ llena  | La bandeja de salida de la impresora está llena.                                                                             |
-| Página de estado de la impresora \_ \_ \_ aparcan         | La impresora no puede imprimir la página actual.                                                                    |
-| \_atasco de \_ papel del estado de la impresora \_         | El papel está atascado en la impresora                                                                                |
-| \_papel del estado de la impresora \_ \_         | La impresora se ha quedado sin papel.                                                                                  |
-| \_problema de \_ papel del estado de la impresora \_     | La impresora tiene un problema de papel.                                                                              |
-| Estado de la impresora en \_ \_ pausa             | La impresora está en pausa.                                                                                        |
-| Estado de la impresora \_ \_ pendiente de \_ eliminación  | La impresora está pendiente de eliminación como resultado de una llamada a la función [**DeletePrinter**](deleteprinter.md) . |
-| Estado de la impresora- \_ \_ \_ guardar energía        | La impresora está en modo de ahorro de energía.                                                                            |
-| \_impresión del estado de la impresora \_           | La impresora se está imprimiendo.                                                                                      |
-| \_procesamiento del estado de la impresora \_         | La impresora está procesando un comando de la función [**SetPrinter**](setprinter.md) .                       |
-| servidor de estado de impresora \_ \_ \_ desconocido    | No se conoce el estado de la impresora.                                                                                |
-| Estado de la impresora \_ \_ tóner \_ bajo         | La impresora tiene poco tóner.                                                                                  |
-| Estado de la impresora- \_ \_ intervención del usuario \_ | La impresora tiene un error que requiere que el usuario haga algo.                                              |
-| Estado de la impresora en \_ \_ espera            | La impresora está en espera.                                                                                       |
-| \_preparación del \_ estado \_ de la impresora        | La impresora se está preparando.                                                                                    |
+| ESTADO DE \_ LA IMPRESORA \_ OCUPADO               | La impresora está ocupada.                                                                                          |
+| PUERTA DE \_ ESTADO DE \_ IMPRESORA \_ ABIERTA         | La puerta de la impresora está abierta.                                                                                     |
+| ERROR DE \_ ESTADO DE \_ LA IMPRESORA              | No se usa.                                                                                                     |
+| INICIALIZACIÓN \_ DEL ESTADO DE LA \_ IMPRESORA       | La impresora se está inicializando.                                                                                  |
+| ESTADO DE \_ LA \_ IMPRESORA \_ E/S ACTIVA         | La impresora está en un estado de entrada/salida activo.                                                                |
+| FUENTE \_ MANUAL DE ESTADO DE LA \_ \_ IMPRESORA       | La impresora está en un estado de fuente manual.                                                                        |
+| ESTADO \_ DE LA IMPRESORA SIN \_ \_ TONER          | Se ha agotado el tóner de la impresora.                                                                                  |
+| ESTADO \_ DE LA IMPRESORA NO \_ \_ DISPONIBLE     | La impresora no está disponible para imprimir.                                                                    |
+| ESTADO DE \_ LA IMPRESORA \_ SIN CONEXIÓN            | La impresora no está conectada.                                                                                       |
+| ESTADO \_ DE LA IMPRESORA FUERA DE \_ \_ \_ MEMORIA    | La impresora se ha quedo sin memoria.                                                                            |
+| BANDEJA DE \_ SALIDA DE ESTADO DE LA IMPRESORA \_ \_ \_ COMPLETA  | La bandeja de salida de la impresora está llena.                                                                             |
+| PUNT DE \_ LA PÁGINA DE ESTADO DE LA \_ \_ IMPRESORA         | La impresora no puede imprimir la página actual.                                                                    |
+| ATFILA \_ DE PAPEL DE ESTADO DE LA \_ \_ IMPRESORA         | El papel se afila en la impresora                                                                                |
+| PAPEL DE \_ ESTADO \_ DE LA \_ IMPRESORA         | La impresora se ha quedado sin papel.                                                                                  |
+| PROBLEMA DE \_ PAPEL DE ESTADO DE LA \_ \_ IMPRESORA     | La impresora tiene un problema de papel.                                                                              |
+| ESTADO DE \_ LA \_ IMPRESORA EN PAUSA             | La impresora está en pausa.                                                                                        |
+| ESTADO DE \_ LA IMPRESORA PENDIENTE DE \_ \_ ELIMINACIÓN  | La impresora está pendiente de eliminación como resultado de una llamada a la [**función DeletePrinter.**](deleteprinter.md) |
+| GUARDADO \_ DE ENERGÍA DEL ESTADO DE LA \_ \_ IMPRESORA        | La impresora está en modo de ahorro de energía.                                                                            |
+| IMPRESIÓN DE \_ ESTADO DE \_ IMPRESORA           | La impresora está imprimendo.                                                                                      |
+| PROCESAMIENTO DEL \_ ESTADO DE \_ LA IMPRESORA         | La impresora está procesando un comando de la [**función SetPrinter.**](setprinter.md)                       |
+| SERVIDOR DE \_ ESTADO DE \_ IMPRESORA \_ DESCONOCIDO    | El estado de la impresora es desconocido.                                                                                |
+| TONER \_ DE ESTADO DE IMPRESORA \_ \_ BAJO         | La impresora tiene poca toner.                                                                                  |
+| INTERVENCIÓN \_ DEL USUARIO DEL ESTADO DE LA \_ \_ IMPRESORA | La impresora tiene un error que requiere que el usuario haga algo.                                              |
+| ESTADO DE \_ LA \_ IMPRESORA EN ESPERA            | La impresora está esperando.                                                                                       |
+| ESTADO \_ DE LA IMPRESORA EN \_ \_ CALIENTE        | La impresora se está preparando.                                                                                    |
 
 
 
@@ -90,8 +90,8 @@ El estado de la impresora. Este miembro puede ser cualquier combinación razonab
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | Información de la **\_ impresora \_ \_ 6W** (Unicode) y la información de la **\_ impresora \_ \_ 6A** (ANSI)<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ PRINTER \_ INFO \_ 6W** (Unicode) e **\_ PRINTER INFO \_ \_ 6A** (ANSI)<br/>                           |
 
 
 
@@ -102,25 +102,25 @@ El estado de la impresora. Este miembro puede ser cualquier combinación razonab
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**SetPrinter**](setprinter.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 1**](printer-info-1.md)
+[**INFORMACIÓN \_ DE IMPRESORA \_ 1**](printer-info-1.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 2**](printer-info-2.md)
+[**INFORMACIÓN \_ DE IMPRESORA \_ 2**](printer-info-2.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 3**](printer-info-3.md)
+[**INFORMACIÓN \_ DE IMPRESORA \_ 3**](printer-info-3.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 4**](printer-info-4.md)
+[**INFORMACIÓN \_ DE IMPRESORA \_ 4**](printer-info-4.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 5**](printer-info-5.md)
+[**PRINTER \_ INFO \_ 5**](printer-info-5.md)
 </dt> </dl>
 
  

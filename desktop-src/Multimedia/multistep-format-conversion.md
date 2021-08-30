@@ -1,35 +1,35 @@
 ---
-title: Conversión de formato multipaso
-description: Conversión de formato multipaso
+title: Conversión de formato de varios pasos
+description: Conversión de formato de varios pasos
 ms.assetid: 21d837e7-d665-461d-9676-68add3829fb0
 keywords:
 - Administrador de compresión de audio (ACM), convertir datos
-- ACM (Administrador de compresión de audio), convertir datos
-- Ejemplos de ACM, convertir datos
+- ACM (administrador de compresión de audio), convertir datos
+- Ejemplos de ACM, conversión de datos
 - convertir datos
-- acmFormatSuggest función)
+- Función acmFormatSuggest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e81ebd5bef17d6a97cb5735e15219c39d3116b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a7853579b7ff96a6ce9b9eaceb8ce34058be874b718659ba44c88a721a5385b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038465"
 ---
-# <a name="multistep-format-conversion"></a>Conversión de formato multipaso
+# <a name="multistep-format-conversion"></a>Conversión de formato de varios pasos
 
-A veces, el ACM no puede convertir datos de un formato a otro en un solo paso. Por ejemplo, es posible que una aplicación necesite convertir datos estéreo de 16 bits de 44 kHz a un ADPCM mono de 11 kHz. Si el compresor o el descompresor no pueden realizar esta conversión directamente, es posible que la aplicación la intente en dos pasos. Normalmente, esto significa hacer una conversión entre dos formatos PCM y, a continuación, otra conversión al tipo de formato final.
+A veces, el ACM no puede convertir datos de un formato a otro en un solo paso. Por ejemplo, una aplicación podría necesitar convertir datos estéreo de 16 bits y 44 kHz en ADPCM mono de 11 kHz. Si el descomprimidor o el descomprimidor no pueden realizar esta conversión directamente, la aplicación podría intentarla en dos pasos. Esto suele significar realizar una conversión entre dos formatos PCM y, a continuación, otra conversión al tipo de formato final.
 
-Para realizar la conversión en dos pasos, utilice la función [**acmFormatSuggest**](/windows/desktop/api/Msacm/nf-msacm-acmformatsuggest) para buscar un formato PCM que coincida con el formato ADPCM. A continuación, use dos flujos de conversión para realizar la conversión. Por ejemplo, realice una conversión del PCM estéreo de 16 bits 44-kHz a mono de 16 bits, de 11 kHz, y, a continuación, convierta de 16 bits a un ADPCM mono a 11 kHz.
+Para realizar la conversión en dos pasos, use la función [**acmFormatSuggest**](/windows/desktop/api/Msacm/nf-msacm-acmformatsuggest) para buscar un formato PCM que coincida con el formato ADPCM. A continuación, use dos secuencias de conversión para realizar la conversión. Por ejemplo, realice una conversión de PCM estéreo de 16 bits, 44 kHz a 16 bits, mono de 11 kHz y, a continuación, convierta de ADPCM mono de 16 bits y 11 kHz mono a 11 kHz.
 
-La conversión en un solo paso también se produce cuando el formato de origen o de destino no es PCM. Si el formato de origen no es PCM, debe cambiarse a un formato PCM antes de la conversión. Si el formato de destino no es PCM, el origen debe convertirse a un formato PCM intermedio y, a continuación, convertirse al formato de destino final.
+La conversión de varios pasos también se produce cuando el formato de origen o de destino no es PCM. Si el formato de origen no es PCM, debe cambiarse a un formato PCM antes de la conversión. Si el formato de destino no es PCM, el origen debe convertirse a un formato PCM intermedio y, a continuación, convertirse al formato de destino final.
 
-Las conversiones más directas se producen cuando los formatos de origen y destino son ambos formatos PCM. Cuando el formato de origen o destino no es PCM, la conversión podría requerir un paso adicional. Si los formatos de origen y destino no son PCM, la conversión normalmente requerirá más de un paso y, en algunos casos, la conversión podría no ser posible.
+Las conversiones más sencillas se producen cuando los formatos de origen y destino son formatos PCM. Cuando el formato de origen o destino no es PCM, la conversión puede requerir un paso adicional. Si los formatos de origen y destino no son PCM, la conversión normalmente requerirá más de un paso y, en algunos casos, es posible que la conversión no sea posible.
 
- 
+ 
 
- 
+ 
 
 
 

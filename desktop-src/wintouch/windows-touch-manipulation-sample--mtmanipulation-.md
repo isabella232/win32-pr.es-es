@@ -1,35 +1,35 @@
 ---
-title: Ejemplo de manipulación táctil de Windows (MTManipulation)
-description: En esta sección se describe el ejemplo de manipulación táctil de Windows.
+title: Windows Ejemplo de manipulación táctil (MTManipulation)
+description: En esta sección se describe el Windows de manipulación táctil.
 ms.assetid: 59b9279c-ffa3-42c3-a01f-3ea7aca8f235
 keywords:
 - Windows Touch, ejemplos de código
 - Windows Touch, código de ejemplo
-- Windows Touch, manipulaciones
-- Windows Touch, ejemplo de manipulación
+- Windows Táctil, manipulaciones
+- Windows Touch,Manipulation sample
 - manipulaciones, código de ejemplo
 - manipulaciones, ejemplos de código
 - Ejemplo de manipulación
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: b93ac4d7cd6724d5475c919c74b90eaf106d2803
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 3ec730f8bedfce20ea27b4cadc02ef56a9c444790e7e4e4748d1974cb61d28a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104420252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055884"
 ---
-# <a name="windows-touch-manipulation-sample-mtmanipulation"></a>Ejemplo de manipulación táctil de Windows (MTManipulation)
+# <a name="windows-touch-manipulation-sample-mtmanipulation"></a>Windows Ejemplo de manipulación táctil (MTManipulation)
 
-En esta sección se describe el ejemplo de manipulación táctil de Windows.
+En esta sección se describe el Windows de manipulación táctil.
 
-En el ejemplo de manipulación táctil de Windows se muestra cómo trasladar, girar y escalar un objeto mediante la interfaz [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e implementar un receptor de eventos [**_IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) . En la captura de pantalla siguiente se muestra el aspecto del ejemplo cuando se está ejecutando.
+El Windows ejemplo de manipulación táctil muestra cómo traducir, girar y escalar un objeto mediante [](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) la interfaz [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e implementar un receptor de eventos _IManipulationEvents de eventos. En la siguiente captura de pantalla se muestra el aspecto del ejemplo cuando se ejecuta.
 
-![captura de pantalla que muestra el ejemplo de manipulación táctil de Windows, con un rectángulo blanco girado con un subrayado azul con líneas azules dibujadas desde esquinas opuestas](images/mtmanipulation.png)
+![captura de pantalla que muestra el ejemplo de manipulación táctil de ventanas, con un rectángulo blanco con contorno azul girado con líneas azules dibujadas desde esquinas opuestas](images/mtmanipulation.png)
 
-En este ejemplo, se crea una clase **CDrawingObject** que se puede traducir, girar o escalar mediante programación. Se crea una instancia de una interfaz [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) . Se crea un receptor de eventos de manipulación que acepta un puntero a la clase **CDrawingObject** y la interfaz **IManipulationProcessor** en su constructor. Se crea un punto de conexión a IManipulationProcessor en la implementación del receptor de eventos de manipulación para que el receptor de eventos reciba los eventos generados por **IManipulationProcessor** . Los datos táctiles se alimentan a la interfaz **IManipulationProcessor** y la interfaz generará eventos [**_IManipulationEvent**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) . Los controladores de eventos de la clase **CManipulationEventSink** actualizarán la orientación de **CDrawingObject** llamando a los descriptores de acceso en el puntero a **CDrawingObject**.
+Para este ejemplo, se **crea una clase CDrawingObject** que se puede traducir, girar o escalar mediante programación. Se crea una instancia de una interfaz [**IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) Se crea un receptor de eventos de manipulación que acepta un puntero a la clase **CDrawingObject** y a la **interfaz IManipulationProcessor** en su constructor. Se crea un punto de conexión a IManipulationProcessor en la implementación del receptor de eventos de manipulación para que el receptor del evento reciba los eventos generados por **IManipulationProcessor.** Los datos táctiles se introducen en **la interfaz IManipulationProcessor** y, a continuación, la interfaz [**genera _IManipulationEvent**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) eventos. Los controladores de eventos de la **clase CManipulationEventSink** actualizarán la orientación de **CDrawingObject** llamando a los descriptores de acceso del puntero a **CDrawingObject**.
 
-En el código siguiente se muestra cómo se configura la ventana para tocar y cómo se crean instancias de **CDrawingObject** y [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) y se pasan al constructor **CManipulationEventSink** .
+El código siguiente muestra cómo se configura la ventana para la función táctil y cómo se crea una instancia de **CDrawingObject** e [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) y se pasan al constructor **CManipulationEventSink.**
 
 ```C++
 CDrawingObject g_cRect; // CDrawingObject class holds information about the rectangle
@@ -78,7 +78,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
     }
 ```
 
-En el código siguiente se muestra el constructor del receptor de eventos de manipulación **CManipulationEventSink**.
+El código siguiente muestra el constructor para el receptor de eventos de manipulación, **CManipulationEventSink**.
 
 ```C++
 CManipulationEventSink::CManipulationEventSink(CDrawingObject* pcDrawingObject)
@@ -91,7 +91,7 @@ CManipulationEventSink::CManipulationEventSink(CDrawingObject* pcDrawingObject)
 }
 ```
 
-En el código siguiente se muestra cómo se conecta el receptor de eventos al procesador de manipulación.
+El código siguiente muestra cómo se conecta el receptor de eventos al procesador de manipulación.
 
 ```C++
 bool CManipulationEventSink::Connect(IManipulationProcessor* pManipulationProcessor)
@@ -146,7 +146,7 @@ bool CManipulationEventSink::Connect(IManipulationProcessor* pManipulationProces
 }
 ```
 
-En el código siguiente se muestra cómo se pasan los datos táctiles al receptor de eventos de manipulación.
+El código siguiente muestra cómo se pasan los datos táctiles al receptor del evento de manipulación.
 
 ```C++
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -212,7 +212,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         break;
 ```
 
-En el código siguiente se muestra cómo los controladores de eventos actualizan la orientación y el tamaño del objeto en los eventos Delta de manipulación.
+El código siguiente muestra cómo los controladores de eventos actualizan la orientación y el tamaño del objeto en los eventos delta de manipulación.
 
 ```C++
 HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
@@ -235,7 +235,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
 }
 ```
 
-El código siguiente es la implementación de **ApplyManipulationDelta** en la clase **CDrawingObject** .
+El código siguiente es la implementación de **ApplyManipulationDelta** en la **clase CDrawingObject.**
 
 ```C++
 // This function is responsible for manipulation of the rectangle.
@@ -261,8 +261,8 @@ void CDrawingObject::ApplyManipulationDelta(
 }
 ```
 
-Una vez actualizados los puntos centrales, el factor de escala y el ángulo de rotación de **CDrawingObject**, el objeto se dibujará a sí mismo.
+Una vez actualizados los puntos centrales, el factor de escala y el ángulo de rotación de **CDrawingObject,** el objeto se dibujará a sí mismo transformado.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Aplicación de manipulación multitáctil](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTManipulation/cpp), [ejemplo de manipulación e inercia](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTManipulationInertia/cpp), [ejemplos de Windows Touch](windows-touch-samples.md)
+[Aplicación de manipulación multi táctil,](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTManipulation/cpp) [ejemplo de manipulación](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTManipulationInertia/cpp)e inercia, [Windows touch samples](windows-touch-samples.md)

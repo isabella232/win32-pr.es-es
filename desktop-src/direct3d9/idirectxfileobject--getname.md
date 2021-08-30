@@ -1,7 +1,7 @@
 ---
-description: Recupera un puntero al nombre de un objeto de archivo de DirectX. En desuso.
+description: Recupera un puntero al nombre de un objeto de archivo DirectX. En desuso.
 ms.assetid: feb3faa2-22b9-47ed-8a38-33092821d484
-title: 'IDirectXFileObject:: GetName (método) (DXFile. h)'
+title: Método IDirectXFileObject::GetName (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 134a1ce61ed1dc0d98a4daf3ba80dd4b0976c372
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e67381a26e3d0f1031e282d6530562416919e8cf52800a07301bf18820887828
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105689875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846955"
 ---
-# <a name="idirectxfileobjectgetname-method"></a>IDirectXFileObject:: GetName (método)
+# <a name="idirectxfileobjectgetname-method"></a>IDirectXFileObject::GetName (método)
 
-Recupera un puntero al nombre de un objeto de archivo de DirectX. En desuso.
+Recupera un puntero al nombre de un objeto de archivo DirectX. En desuso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,12 +41,12 @@ HRESULT GetName(
 
 <dl> <dt>
 
-*pstrNameBuf* \[ enuncia\]
+*pstrNameBuf* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPSTR**](../winprog/windows-data-types.md)**
 
-Puntero al búfer en el que se copiará el nombre del objeto de archivo de DirectX. Establezca en **null** si solo se necesita la longitud del búfer.
+Puntero al búfer en el que se copiará el nombre del objeto de archivo DirectX. Se establece **en NULL** si solo se necesita la longitud del búfer.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Puntero al búfer en el que se copiará el nombre del objeto de archivo de Direc
 
 Tipo: **[ **LPDWORD**](../winprog/windows-data-types.md)**
 
-Puntero a un valor DWORD que especifica la longitud del búfer al que apunta pstrNameBuf. El valor del parámetro pdwBufLen se modificará en la longitud del búfer necesaria para contener el nombre del objeto aunque pstrNameBuf sea **null**. En cualquier caso, la función devolverá DXFILEERR \_ BADVALUE si el valor original de pdwBufLen no es tan grande como o mayor que la longitud necesaria para contener el nombre del objeto.
+Puntero a un DWORD que especifica la longitud del búfer al que apunta pstrNameBuf. El valor del parámetro pdwBufLen se modificará a la longitud del búfer necesaria para contener el nombre del objeto incluso si pstrNameBuf es **NULL.** En cualquier caso, la función devolverá DXFILEERR BADVALUE si el valor original de pdwBufLen no es tan grande como o mayor que la longitud necesaria para contener el nombre del \_ objeto.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a un valor DWORD que especifica la longitud del búfer al que apunta pst
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

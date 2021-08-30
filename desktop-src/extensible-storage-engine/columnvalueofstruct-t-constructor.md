@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: <T> constructor ColumnValueOfStruct'
-title: Constructor ColumnValueOfStruct (T)
+description: 'Más información sobre: Constructor ColumnValueOfStruct <T>'
+title: Constructor ColumnValueOfStruct(T)
 TOCTitle: 'ColumnValueOfStruct(T) constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnValueOfStruct`1.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn334175(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f5dceeca79e0ae5a983f5aaaabf3233e66f9615
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12105b0852abd992c4d1fde7729e30e40db4fb3def79c6f904c1c523c6500ea9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066885"
 ---
-# <a name="columnvalueofstructt-constructor"></a>Constructor de ColumnValueOfStruct \<T\>
+# <a name="columnvalueofstructt-constructor"></a>Constructor ColumnValueOfStruct \<T\>
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New ColumnValueOfStruct()
 protected ColumnValueOfStruct()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[\<T\>Clase ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
+[ColumnValueOfStruct \<T\> (clase)](./columnvalueofstruct-t-class.md)
 
-[Miembros de ColumnValueOfStruct \<T\>](./columnvalueofstruct-t-members.md)
+[Miembros \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

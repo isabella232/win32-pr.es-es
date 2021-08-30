@@ -1,7 +1,7 @@
 ---
-description: Contiene el período de la señal de salida efectiva para un controlador de modulación de ancho de pulso (PWM).
+description: Contiene el período de señal de salida efectivo para un controlador de ancho de pulso (PWM).
 ms.assetid: 280F564F-FF7F-4121-B726-9F9AF9E98EB7
-title: Estructura de PWM_CONTROLLER_GET_ACTUAL_PERIOD_OUTPUT (PWM. h)
+title: PWM_CONTROLLER_GET_ACTUAL_PERIOD_OUTPUT estructura (Pwm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Pwm.h
-ms.openlocfilehash: f63057299a8ef37ed1b38151958d2e0061ad2727
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3f51f360e7b6ff3966ed58d8ec3a171d8bbbfb54672c50c31852e71ab6750f95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088145"
 ---
-# <a name="pwm_controller_get_actual_period_output-structure"></a>La \_ \_ estructura de \_ \_ salida del período real \_ del controlador de PWM
+# <a name="pwm_controller_get_actual_period_output-structure"></a>Estructura GET REAL PERIOD OUTPUT del CONTROLADOR \_ \_ \_ \_ \_ DE PWM
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Contiene el período de la señal de salida efectiva para un controlador de modulación de ancho de pulso (PWM).
+Contiene el período de señal de salida efectivo para un controlador de ancho de pulso (PWM).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _PWM_CONTROLLER_GET_ACTUAL_PERIOD_OUTPUT {
 **ActualPeriod**
 </dt> <dd>
 
-El período efectivo de la señal de salida como se mediría en los canales de salida del controlador.
+El período de señal de salida efectivo tal como se mediría en los canales de salida del controlador.
 
 </dd> </dl>
 
@@ -54,11 +54,11 @@ El período efectivo de la señal de salida como se mediría en los canales de s
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                             |
 | Versión mínima de KMDF<br/>     | 1.19<br/>                                                                                  |
 | Versión mínima de UMDF<br/>     | 2.19<br/>                                                                                  |
-| Encabezado<br/>                   | <dl> <dt>PWM. h (incluir PWM. h)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Pwm.h (incluir Pwm.h)</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ El período efectivo de la señal de salida como se mediría en los canales de s
 
 <dl> <dt>
 
-[**el \_ controlador de PWM de ioctl \_ obtiene el \_ \_ \_ período real**](https://www.bing.com/search?q=**IOCTL\_PWM\_CONTROLLER\_GET\_ACTUAL\_PERIOD**)
+[**IOCTL \_ PWM \_ CONTROLLER GET REAL \_ \_ \_ PERIOD**](https://www.bing.com/search?q=**IOCTL\_PWM\_CONTROLLER\_GET\_ACTUAL\_PERIOD**)
 </dt> </dl>
 
  

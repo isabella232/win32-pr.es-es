@@ -1,7 +1,7 @@
 ---
-description: El método GetNextI recupera el elemento en la posición especificada y hace avanzar la posición.
+description: El método GetNextI recupera el elemento en la posición especificada y avanza la posición.
 ms.assetid: 3ec217ec-b0f9-4ff4-bdb7-ac204df99010
-title: Método CBaseList. GetNextI (Wxlist. h)
+title: Método CBaseList.GetNextI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f96be8d8cdf286a4017e56af7050970d45e8a56e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b45556c1657961bdebf378f7e3908501f0bf5b971cf0c6533a55477b05a40ad9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983514"
 ---
-# <a name="cbaselistgetnexti-method"></a>CBaseList. GetNextI, método
+# <a name="cbaselistgetnexti-method"></a>Método CBaseList.GetNextI
 
-El `GetNextI` método recupera el elemento en la posición especificada y hace avanzar la posición.
+El `GetNextI` método recupera el elemento en la posición especificada y avanza la posición.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ void* GetNextI(
 
 <dl> <dt>
 
-*RP* \[ CLI\]
+*rp* \[ Ref\]
 </dt> <dd>
 
-Referencia a un valor de posición.
+Referencia a un valor POSITION.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero al elemento. Si *RP* es **null**, el método devuelve **null**.
+Devuelve un puntero al elemento. Si *rp* es **NULL,** el método devuelve **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método avanza el indicador de posición hasta la posición siguiente. Si el indicador de posición se desplaza más allá del final de la lista, el método lo establece en **null**.
+Este método avanza el indicador de posición a la siguiente posición. Si el indicador de posición se mueve más allá del final de la lista, el método lo establece en **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método avanza el indicador de posición hasta la posición siguiente. Si e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método avanza el indicador de posición hasta la posición siguiente. Si e
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

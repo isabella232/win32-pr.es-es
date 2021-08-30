@@ -1,15 +1,15 @@
 ---
-description: Esta aplicación de ejemplo, que muestra el almacenamiento en búfer controlado por temporizador, usa core Audio API para representar datos de audio en un dispositivo de salida especificado por el usuario.
+description: Esta aplicación de ejemplo, que muestra el almacenamiento en búfer controlado por temporizador, usa las API de audio principal para representar datos de audio en un dispositivo de salida especificado por el usuario.
 ms.assetid: eae7d896-77ef-4340-bd77-1f3333166987
 title: RenderSharedTimerDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89d2814f359668f8724d3deb65a7c2a9eeff5b06
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 37aace64636ff132006c3059f7e056c4312322d4b1b8f52c07c71e07c2186de5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984885"
 ---
 # <a name="rendersharedtimerdriven"></a>RenderSharedTimerDriven
 
@@ -38,7 +38,7 @@ En este ejemplo se muestran las siguientes características.
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
 | [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
-| Programa para la mejora                                                  | 2008      |
+| Visual Studio                                                  | 2008      |
 
 
 
@@ -50,9 +50,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Location    | Ruta de acceso o dirección URL                                                                                                 |
+| Ubicación    | Ruta de acceso o dirección URL                                                                                                 |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| Windows SDK | \\Archivos de \\ programa Microsoft SDK de Windows \\ \\ v7.0 \\ Samples Multimedia Audio \\ \\ \\ RenderSharedTimerDriven \\ ... |
+| Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows ejemplos de audio multimedia \\ \\ v7.0 \\ \\ \\ \\ RenderSharedTimerDriven \\ ... |
 
 
 
@@ -62,9 +62,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 Para compilar el ejemplo RenderSharedTimerDriven, siga estos pasos:
 
-1.  Abra el shell de CMD para el Windows SDK y cambie al directorio de ejemplo RenderSharedTimerDriven.
-2.  Ejecute el comando en el directorio RenderSharedTimerDriven para abrir el proyecto `start WASAPIRenderSharedTimerDriven.sln` WASAPIRenderSharedTimerDriven en la Visual Studio anterior.
-3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre Visual Studio desde el shell de CMD para el SDK, Visual Studio tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto, WASAPIRenderSharedTimerDriven.vcproj.
+1.  Abra el shell de CMD para Windows SDK y cambie al directorio de ejemplo RenderSharedTimerDriven.
+2.  Ejecute el comando en el directorio `start WASAPIRenderSharedTimerDriven.sln` RenderSharedTimerDriven para abrir el proyecto WASAPIRenderSharedTimerDriven en la Visual Studio cliente.
+3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre una Visual Studio desde el shell de CMD para el SDK, Visual Studio no tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto WASAPIRenderSharedTimerDriven.vcproj.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
@@ -91,11 +91,11 @@ En la tabla siguiente se muestran los argumentos.
 
  
 
-Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo para la sesión de representación. Después de que el usuario especifica un dispositivo, la aplicación representa una onda sinusoidal a 440 Hz durante 10 segundos. Estos valores se pueden modificar especificando los valores de modificador -f y -d.
+Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo para la sesión de representación. Una vez que el usuario especifica un dispositivo, la aplicación representa una onda seno a 440 Hz durante 10 segundos. Estos valores se pueden modificar especificando los valores de modificador -f y -d.
 
 RenderSharedTimerDriven muestra el almacenamiento en búfer controlado por temporizador. En este modo, el cliente debe esperar un período de tiempo (la mitad de la latencia, especificada por el valor del modificador -d, en milisegundos). Cuando el cliente se reactiva, a mitad del período de procesamiento, extrae el siguiente conjunto de muestras del motor. Antes de que cada procesamiento pase en el bucle de almacenamiento en búfer, el cliente debe averiguar la cantidad de datos que se representará para que los datos no sobresalan el búfer.
 
-Los datos de audio que se reproducirán en el dispositivo especificado se pueden procesar habilitando el almacenamiento en búfer controlado por eventos. Este modo se muestra en el [ejemplo RenderSharedEventDriven.](rendersharedeventdriven.md)
+Los datos de audio que se reproducirán en el dispositivo especificado se pueden procesar habilitando el almacenamiento en búfer controlado por eventos. Este modo se muestra en el ejemplo [RenderSharedEventDriven.](rendersharedeventdriven.md)
 
 Para obtener más información sobre cómo representar una secuencia, vea [Representación de una secuencia.](rendering-a-stream.md)
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento ProcessTokenSidType (principalType)
-description: Especifica el tipo de identificación de seguridad (SID) del proceso de la tarea.
+description: Especifica el tipo de identificación de seguridad de proceso (SID) de la tarea.
 ms.assetid: d9bffa92-c0dc-4332-a29c-7f2710ec34e3
 keywords:
-- Programador de tareas del elemento ProcessTokenSidType
+- Elemento ProcessTokenSidType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1875da055f2719afca454d225c3bebd13b404b3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b89da903ee3d0814f2c6d599e1418886efc414a129dd7197282fc66e9e7d78d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125725"
 ---
 # <a name="processtokensidtype-principaltype-element"></a>Elemento ProcessTokenSidType (principalType)
 
-Especifica el tipo de identificación de seguridad (SID) del proceso de la tarea.
+Especifica el tipo de identificación de seguridad de proceso (SID) de la tarea.
 
 ``` syntax
 <xs:element name="ProcessTokenSidType"
@@ -32,7 +32,7 @@ Especifica el tipo de identificación de seguridad (SID) del proceso de la tarea
  />
 ```
 
-El elemento **ProcessTokenSidType** se define mediante el tipo complejo de [**principalType**](taskschedulerschema-principaltype-complextype.md) .
+El tipo complejo [**principalType**](taskschedulerschema-principaltype-complextype.md) define el elemento **ProcessTokenSidType.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,17 +40,17 @@ El elemento **ProcessTokenSidType** se define mediante el tipo complejo de [**pr
 
 | Elemento                                                                  | Derivado de                                                           | Descripción                                                    |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------|
-| [**Principal**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad para una entidad de seguridad.<br/> |
+| [**Principal**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica las credenciales de seguridad de una entidad de seguridad.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el desarrollo de C++, el tipo de SID de proceso se especifica mediante la propiedad [**IPrincipal2::P rocesstokensidtype**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_processtokensidtype) .
+Para el desarrollo de C++, el tipo de SID de proceso se especifica mediante la propiedad [**IPrincipal2::P rocessTokenSidType.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_processtokensidtype)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define el tipo de SID del proceso de la tarea.
+El xml siguiente define el tipo de SID de proceso de la tarea.
 
 
 ```XML
@@ -68,8 +68,8 @@ El siguiente código XML define el tipo de SID del proceso de la tarea.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

@@ -4,12 +4,12 @@ description: Cada extensión de clase auxiliar tiene varias claves del Registro 
 ms.assetid: 9ff3266d-5ffc-4a00-be24-2f85461c6ea6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6457e144abdeb1dbed1e33bb10e21302f918da8cdc5a6fd2090f3665e83f0316
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 166f07760dc8905f35c82c63d58fa2faa804aeb8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117798503"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883831"
 ---
 # <a name="registering-ndf-helper-class-extensions"></a>Registro de extensiones de clase auxiliar de NDF
 
@@ -41,14 +41,14 @@ En el procedimiento siguiente se muestra cómo agregar extensiones de clase auxi
 
      
 
-2.  En cada *clave de nombre de clase* auxiliar, publique la siguiente información.
+2.  En cada clave *del nombre de clase* auxiliar, publique la siguiente información.
 
     
 
     | Valor         | Tipo       | Significado                                                                                                                                                                 |
     |---------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **Clsid**     | REG \_ SZ    | Cadena que contiene el identificador de clase COM de la clase auxiliar.                                                                                                            |
-    | **Versión**   | REG \_ SZ    | Cadena que contiene las versiones principales y secundarias de la clase auxiliar con el formato <major> <minor> .                                                        |
+    | **CLSID**     | REG \_ SZ    | Cadena que contiene el identificador de clase COM de la clase auxiliar.                                                                                                            |
+    | **Versión**   | REG \_ SZ    | Cadena que contiene las versiones principales y secundarias de la clase auxiliar con el formato &lt; principal &gt; &lt; secundaria &gt; .                                                        |
     | **Publicado** | REG \_ DWORD | Un valor de 1 significa que se espera que esta clase auxiliar se invoque directamente desde el cliente de Diagnostics. 0 significa que solo se puede llamar desde otra clase auxiliar. |
     | **Parent**    | REG \_ SZ    | Cadena que denomina la clase auxiliar extensible de Microsoft que se está ampliando.                                                                                       |
 

@@ -4,12 +4,12 @@ ms.assetid: 391b56a1-d0aa-4d35-8dba-cf7de66513d8
 title: S_PRESENT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6cd860fcc8268bf2b63a9498b9960da359ca210
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d04f04e779213b3dbb9059515fa746a9c9285412bbcf954d5e140bdec6ea29ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849505"
 ---
 # <a name="s_present"></a>S \_ PRESENT
 
@@ -27,7 +27,7 @@ Lista de algunos de los códigos de retorno posibles para métodos y funciones.
 
  
 
-Otros códigos de error están contenidos en [D3DERR.](d3derr.md)
+Otros códigos de error están incluidos en [D3DERR.](d3derr.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

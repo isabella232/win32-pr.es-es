@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_ISGROUPVIEWENABLED (commctrl. h)
-description: Comprueba si el control de vista de lista tiene la vista de grupo habilitada.
+title: LVM_ISGROUPVIEWENABLED mensaje (Commctrl.h)
+description: Comprueba si el control list-view tiene habilitada la vista de grupo.
 ms.assetid: 7c6ffa1f-300c-4e5e-900f-93a41e06c951
 keywords:
-- LVM_ISGROUPVIEWENABLED controles de mensajes de Windows
+- LVM_ISGROUPVIEWENABLED controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f8f7af79a1b0594ba6ebb100c1c975f09898d35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df4934eb8f4b8dea9f31f589aab5e60798b83446cf0379ac7efbd4f1e67f5bef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079895"
 ---
-# <a name="lvm_isgroupviewenabled-message"></a>\_Mensaje ISGROUPVIEWENABLED LVM
+# <a name="lvm_isgroupviewenabled-message"></a>Mensaje \_ DE LVM ISGROUPVIEWENABLED
 
-Comprueba si el control de vista de lista tiene la vista de grupo habilitada.
+Comprueba si el control list-view tiene habilitada la vista de grupo.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,12 +37,12 @@ Comprueba si el control de vista de lista tiene la vista de grupo habilitada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la vista de grupo está habilitada o **false** en caso contrario.
+Devuelve **TRUE si** la vista de grupo está habilitada o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -50,11 +50,11 @@ Devuelve **true** si la vista de grupo está habilitada o **false** en caso cont
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

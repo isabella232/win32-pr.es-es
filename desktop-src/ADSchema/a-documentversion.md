@@ -4,7 +4,7 @@ description: El tipo de atributo documentVersion especifica el número de versi�
 ms.assetid: 259a71c5-97c9-46d9-b122-499df8f4010f
 ms.tgt_platform: multiple
 keywords:
-- documentVersion esquema de AD de atributos
+- Esquema de AD del atributo documentVersion
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d55b367c1e602d8fd0632c10587931ba4571d5f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3efcaaaa6a6e65d4b51fa4836d38cb145142011a3fb3858418424d96299e149a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077745"
 ---
 # <a name="documentversion-attribute"></a>atributo documentVersion
 
@@ -29,13 +29,13 @@ El tipo de atributo documentVersion especifica el número de versión de un docu
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | documentVersion                             |
-| Nombre para mostrar de LDAP | documentVersion                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | documentVersion                             |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.13                  |
-| System-ID-GUID    | 94b3a8a9-d613-4cec-9aad-5fbcc1046b43        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 94b3a8a9-d613-4cec-9aad-5fbcc1046b43        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ El tipo de atributo documentVersion especifica el número de versión de un docu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ El tipo de atributo documentVersion especifica el número de versión de un docu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ El tipo de atributo documentVersion especifica el número de versión de un docu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ El tipo de atributo documentVersion especifica el número de versión de un docu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -137,18 +137,18 @@ El tipo de atributo documentVersion especifica el número de versión de un docu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 

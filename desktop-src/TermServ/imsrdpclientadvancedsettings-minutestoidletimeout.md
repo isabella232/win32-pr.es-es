@@ -1,26 +1,26 @@
 ---
-title: Propiedad MinutesToIdleTimeout de IMsRdpClientAdvancedSettings
-description: Especifica el período de tiempo máximo, en minutos, que el cliente debe permanecer conectado sin intervención del usuario. Si transcurre el tiempo especificado, el control llama al método OnIdleTimeoutNotification de IMsTscAxEvents.
+title: IMsRdpClientAdvancedSettings MinutesToIdleTimeout, propiedad
+description: Especifica el tiempo máximo, en minutos, que el cliente debe permanecer conectado sin la entrada del usuario. Si transcurre el tiempo especificado, el control llama al método IMsTscAxEvents OnIdleTimeoutNotification.
 ms.assetid: 709238ea-45f8-4bdc-9bbe-019d54ca27bf
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad MinutesToIdleTimeout
-- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto propiedad , MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad MinutesToIdleTimeout
+- Propiedad MinutesToIdleTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad MinutesToIdleTimeout
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b5e42258ed670ac0323723cafe7b2792f8c5bd6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a3d39d4f69931194683c928c6dfd7dc7809c22f5f8b4d2d82395acc8aa9ddfe9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870915"
 ---
-# <a name="imsrdpclientadvancedsettingsminutestoidletimeout-property"></a>IMsRdpClientAdvancedSettings:: MinutesToIdleTimeout (propiedad)
+# <a name="imsrdpclientadvancedsettingsminutestoidletimeout-property"></a>IMsRdpClientAdvancedSettings::MinutesToIdleTimeout, propiedad
 
-Especifica el período de tiempo máximo, en minutos, que el cliente debe permanecer conectado sin intervención del usuario. Si transcurre el tiempo especificado, el control llama al método [**IMsTscAxEvents:: OnIdleTimeoutNotification**](imstscaxevents-onidletimeoutnotification.md) .
+Especifica el tiempo máximo, en minutos, que el cliente debe permanecer conectado sin la entrada del usuario. Si transcurre el tiempo especificado, el control llama al método [**IMsTscAxEvents::OnIdleTimeoutNotification.**](imstscaxevents-onidletimeoutnotification.md)
 
-Puede usar esta propiedad en una situación en la que necesite desconectar una sesión inactiva; por ejemplo, en un entorno de quiosco.
+Puede usar esta propiedad en una situación en la que necesite desconectar una sesión inactiva. por ejemplo, en un entorno de quiosco.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -90,11 +90,11 @@ La nueva hora, en minutos. El valor predeterminado es cero, lo que deshabilita l
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

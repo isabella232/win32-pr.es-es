@@ -1,31 +1,31 @@
 ---
-description: Alineación de bloque, en bytes, para un tipo de medio de audio. La alineación de bloque es la unidad atómica mínima de datos para el formato de audio.
+description: Alineación de bloques, en bytes, para un tipo de medio de audio. La alineación de bloques es la unidad atómica mínima de datos para el formato de audio.
 ms.assetid: 7d304826-ad81-4243-a675-2f55b668b348
-title: MF_MT_AUDIO_BLOCK_ALIGNMENT atributo (mfapi. h)
+title: MF_MT_AUDIO_BLOCK_ALIGNMENT atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21efb14cbb89d1773fe9bc3b5ade8d0a50555a1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5985485313bda76221a9a45dc4a6aa9f257884766398dce8a9301401d49ea2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113895"
 ---
-# <a name="mf_mt_audio_block_alignment-attribute"></a>\_Atributo de \_ alineación de bloque de audio MF MT \_ \_
+# <a name="mf_mt_audio_block_alignment-attribute"></a>Atributo MF \_ MT \_ AUDIO BLOCK \_ \_ ALIGNMENT
 
-Alineación de bloque, en bytes, para un tipo de medio de audio. La alineación de bloque es la unidad atómica mínima de datos para el formato de audio.
+Alineación de bloques, en bytes, para un tipo de medio de audio. La alineación de bloques es la unidad atómica mínima de datos para el formato de audio.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En el caso de los formatos de audio PCM, la alineación del bloque es igual al número de canales de audio multiplicado por el número de bytes por muestra de audio.
 
-Este atributo corresponde al miembro **nBlockAlign** de la estructura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+Este atributo corresponde al miembro **nBlockAlign** de la [**estructura DETENTEATEX.**](/previous-versions/dd757713(v=vs.85))
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,19 +43,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Deriva una clave de sesión del secreto y cifra el valor de la propiedad de contenido usando esa clave. Devuelve el contenido cifrado como una cadena codificada.
+description: Deriva una clave de sesión del secreto y cifra el valor de la propiedad Content mediante esa clave. Devuelve el contenido cifrado como una cadena codificada.
 ms.assetid: aa6f6e6a-208b-4e9c-b530-08673ab9d794
-title: EncryptedData. Encrypt (método) (InfoCard. h)
+title: Método EncryptedData.Encrypt (Infocard.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 04d7bf8a337c1bcfa0a024b84304fe50c035f9dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b1b2b974bc4f5f527ea41d68f3f643a07d4ed928cda832b4ab33c2c35aa5c4e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874655"
 ---
-# <a name="encrypteddataencrypt-method"></a>EncryptedData. Encrypt (método)
+# <a name="encrypteddataencrypt-method"></a>Método EncryptedData.Encrypt
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use servicios de invocación de plataforma (PInvoke) para llamar a las funciones de la API de Win32 [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) y [**CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage) para cifrar y descifrar los mensajes. Para obtener información sobre PInvoke, vea [tutorial de invocación de plataforma](https://msdn.microsoft.com/library/aa288468.aspx). También pueden resultar útiles las subsecciones de [.net y CryptoAPI a través de p/Invoke: parte 1](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) y [.net y CryptoAPI a través de p/Invoke: parte 2](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) de la extensión de la [criptografía de .net con CAPICOM y p/Invoke](/previous-versions/ms867087(v=msdn.10)) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use Platform Invocation Services (PInvoke) para llamar a las funciones de API de Win32 [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) y [**CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage) para cifrar y descifrar mensajes. Para obtener información sobre PInvoke, vea [Tutorial de invocación de plataforma](https://msdn.microsoft.com/library/aa288468.aspx). Las subsecciones .NET y CryptoAPI a través de [P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic5) Parte 1 y .NET y CryptoAPI a través de [P/Invoke:](/previous-versions/ms867087(v=msdn.10)#netcryptoapi_topic6) subsecciones de la parte 2 de Extensión de criptografía de .NET con [CAPICOM y P/Invoke](/previous-versions/ms867087(v=msdn.10)) también pueden resultar útiles.\]
 
-El método **Encrypt** deriva una clave de sesión del secreto y cifra el valor de la propiedad de [**contenido**](encrypteddata-content.md) usando esa clave. Devuelve el contenido cifrado como una cadena codificada.
+El **método Encrypt** deriva una clave de sesión del secreto y cifra el valor de la propiedad [**Content**](encrypteddata-content.md) mediante esa clave. Devuelve el contenido cifrado como una cadena codificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,18 +41,18 @@ EncryptedData.Encrypt( _
 
 <dl> <dt>
 
-*EncodingType* \[ en, opcional\]
+*EncodingType* \[ in, opcional\]
 </dt> <dd>
 
-Un valor de la enumeración de [**\_ \_ tipo de codificación CAPICOM**](capicom-encoding-type.md) que indica el tipo de codificación utilizado para codificar los datos cifrados. El valor predeterminado es CAPICOM \_ encode \_ Base64. Este parámetro puede ser uno de los valores siguientes.
+Valor de la enumeración [**CAPICOM \_ ENCODING \_ TYPE**](capicom-encoding-type.md) que indica el tipo de codificación utilizado para codificar los datos cifrados. El valor predeterminado es CAPICOM \_ ENCODE \_ BASE64. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                                                  | Significado                                                                                                                                                                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="CAPICOM_ENCODE_ANY"></span><span id="capicom_encode_any"></span><dl> <dt>**CAPICOM \_ codificar \_ any**</dt> </dl>          | Este tipo de codificación solo se utiliza cuando los datos de entrada tienen un tipo de codificación desconocido. Si este valor se usa para especificar el tipo de codificación de la salida, \_ se usará CAPICOM encode \_ Base64 en su lugar. Introducido en CAPICOM 2,0.<br/> |
-| <span id="CAPICOM_ENCODE_BASE64"></span><span id="capicom_encode_base64"></span><dl> <dt>**CAPICOM, codificación \_ \_ Base64**</dt> </dl> | Los datos se guardan como una cadena codificada en Base64.<br/>                                                                                                                                                                               |
-| <span id="CAPICOM_ENCODE_BINARY"></span><span id="capicom_encode_binary"></span><dl> <dt>**\_código binario de codificación de CAPICOM \_**</dt> </dl> | Los datos se guardan como una secuencia binaria pura.<br/>                                                                                                                                                                                |
+| <span id="CAPICOM_ENCODE_ANY"></span><span id="capicom_encode_any"></span><dl> <dt>**CAPICOM \_ ENCODE \_ ANY**</dt> </dl>          | Este tipo de codificación solo se usa cuando los datos de entrada tienen un tipo de codificación desconocido. Si este valor se usa para especificar el tipo de codificación de la salida, se usará CAPICOM \_ ENCODE \_ BASE64 en su lugar. Introducido en CAPICOM 2.0.<br/> |
+| <span id="CAPICOM_ENCODE_BASE64"></span><span id="capicom_encode_base64"></span><dl> <dt>**CAPICOM \_ ENCODE \_ BASE64**</dt> </dl> | Los datos se guardan como una cadena codificada en base64.<br/>                                                                                                                                                                               |
+| <span id="CAPICOM_ENCODE_BINARY"></span><span id="capicom_encode_binary"></span><dl> <dt>**CAPICOM \_ ENCODE \_ BINARY**</dt> </dl> | Los datos se guardan como una secuencia binaria pura.<br/>                                                                                                                                                                                |
 
 
 
@@ -62,11 +62,11 @@ Un valor de la enumeración de [**\_ \_ tipo de codificación CAPICOM**](capicom
 
 ## <a name="return-value"></a>Valor devuelto
 
-Cadena que contiene los datos cifrados codificados.
+Cadena que contiene los datos cifrados y codificados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar al método **Encrypt** , establezca la propiedad [**Content**](encrypteddata-content.md) y llame al método [**SetSecret**](encrypteddata-setsecret.md) .
+Antes de llamar **al método Encrypt,** establezca la [**propiedad Content**](encrypteddata-content.md) y llame al [**método SetSecret.**](encrypteddata-setsecret.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Antes de llamar al método **Encrypt** , establezca la propiedad [**Content**](e
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
-| Encabezado<br/>                | <dl> <dt>InfoCard. h</dt> </dl>  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Header<br/>                | <dl> <dt>Infocard.h</dt> </dl>  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

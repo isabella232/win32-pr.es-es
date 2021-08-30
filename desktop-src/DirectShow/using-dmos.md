@@ -1,22 +1,22 @@
 ---
-description: Usar DMOs
+description: Uso de DDO
 ms.assetid: 1b82d64d-5f20-4286-815a-f868427b11ce
-title: Usar DMOs
+title: Uso de DDO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe767ad9cb2fc5e3ab027a1eca35311aa68cf6e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34fbc5a5013d75e9b69bfae3be118cc1794313448609e097005e82b783003093
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104497878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078645"
 ---
-# <a name="using-dmos"></a>Usar DMOs
+# <a name="using-dmos"></a>Uso de DDO
 
-En esta sección se describe cómo usar DMOs. Contiene los temas siguientes.
+En esta sección se describe cómo usar las DDO. Contiene los temas siguientes.
 
--   [Hospedar directamente un DMO](directly-hosting-a-dmo.md)
--   [Usar DMOs en DirectShow](using-dmos-in-directshow.md)
+-   [Hospedaje directo de un DMO](directly-hosting-a-dmo.md)
+-   [Uso de DDO en DirectShow](using-dmos-in-directshow.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

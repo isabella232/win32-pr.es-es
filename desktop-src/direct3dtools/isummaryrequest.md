@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7cd5e36c186972d52edbaf103ad9f1e2c125636a
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: b48373e18ec3c1ab15c1c0f93f157977deda81d8
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624821"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787471"
 ---
 # <a name="span-idvspixengineisummaryrequestspanisummaryrequest-interface"></a><span id="vspixengine.isummaryrequest"></span>Interfaz ISummaryRequest
 
 Solicitud de información de resumen.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ISummaryRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ISummaryRequest** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz ISummaryRequest** hereda de la [**interfaz IUnknown.**](/windows/d
 
 La **interfaz ISummaryRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isummaryrequest-requestasync-isummarycallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicitud asincrónica para obtener información de resumen sobre un registro de gráficos.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/isummaryrequest-requestasync-isummarycallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Solicitud asincrónica para obtener información de resumen sobre un registro de gráficos.</p></td></tr></tbody></table>
 
  
 

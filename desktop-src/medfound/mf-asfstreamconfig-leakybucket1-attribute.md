@@ -1,45 +1,45 @@
 ---
-description: Establece el promedio &\# 0034; depósito de fugas&\# 0034; parámetros (vea la sección comentarios) para codificar un archivo de Windows Media. Establezca este atributo mediante la interfaz IMFASFStreamConfig.
+description: Establece el promedio &\# 0034;leaky bucket&\# 0034; parámetros (consulte Comentarios) para codificar un archivo Windows Media. Establezca este atributo mediante la interfaz IMFASFStreamConfig.
 ms.assetid: 5aa570eb-1004-4942-9a63-b8f6373d4e53
-title: MF_ASFSTREAMCONFIG_LEAKYBUCKET1 atributo (Wmcontainer. h)
+title: MF_ASFSTREAMCONFIG_LEAKYBUCKET1 atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4db383d19ff5009ccc9fc3203281e04000870474
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5343d7721d6fad4be4d8623ffdd8f1b3e63fccbe8d90cd4616e0115c35fc2100
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826825"
 ---
-# <a name="mf_asfstreamconfig_leakybucket1-attribute"></a>\_ \_ Atributo LEAKYBUCKET1 de MF ASFSTREAMCONFIG
+# <a name="mf_asfstreamconfig_leakybucket1-attribute"></a>Atributo MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET1
 
-Establece el promedio de parámetros de "depósito de fugas" (vea la sección comentarios) para codificar un archivo de Windows Media. Establezca este atributo mediante la interfaz [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) .
+Establece el promedio de parámetros de "cubo de pérdida" (consulte Comentarios) para codificar un Windows multimedia. Establezca este atributo mediante la interfaz [**IMFASFStreamConfig.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig)
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de este atributo es una matriz de tres **DWORD** s, en el orden siguiente:
+El valor de este atributo es una matriz de tres **DWORD,** en el orden siguiente:
 
 -   Velocidad de bits, en bits por segundo.
--   Ventana de búfer, en milisegundos.
--   Llenado inicial del búfer, en bytes.
+-   Ventana búfer, en milisegundos.
+-   Integridad inicial del búfer, en bytes.
 
-Para obtener más información sobre el concepto de depósito con fugas, vea el tema [modelo de búfer de depósitos con fugas](the-leaky-bucket-buffer-model.md) en la documentación del SDK de Windows Media Format.
+Para obtener más información sobre el concepto de cubo con pérdidas, consulte el tema [The Leaky Bucket Buffer Model](the-leaky-bucket-buffer-model.md) en la documentación del SDK Windows Media Format.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -47,16 +47,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos ASF](asf-attributes.md)
+[Atributos de ASF](asf-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**ATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**ATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET2**](mf-asfstreamconfig-leakybucket2-attribute.md)

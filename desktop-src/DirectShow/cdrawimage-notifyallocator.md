@@ -1,7 +1,7 @@
 ---
 description: El método NotifyAllocator informa al objeto CDrawImage de si el asignador de la conexión es un objeto CImageAllocator.
 ms.assetid: cc1604e7-f755-4a7a-9294-6fd06bb434d4
-title: Método CDrawImage. NotifyAllocator (Winutil. h)
+title: Método CDrawImage.NotifyAllocator (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a7bab7d1d00b70317a7cbb0b79f8a430a603a757
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c40504c81ad404fec8bd442d243602ba90d6c7ffeb770e448a5cbe788d76428b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076355"
 ---
-# <a name="cdrawimagenotifyallocator-method"></a>CDrawImage. NotifyAllocator, método
+# <a name="cdrawimagenotifyallocator-method"></a>CDrawImage.NotifyAllocator (método)
 
-El `NotifyAllocator` método informa al objeto **CDrawImage** de si el asignador de la conexión es un objeto [**CImageAllocator**](cimageallocator.md) .
+El método informa al objeto CDrawImage de si el asignador de la `NotifyAllocator` conexión es un objeto [**CImageAllocator.**](cimageallocator.md) 
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void NotifyAllocator(
 *bUsingImageAllocator* 
 </dt> <dd>
 
-Valor booleano que indica el tipo de asignador que se va a usar.
+Valor booleano que indica qué tipo de asignador se está utilizando.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Valor booleano que indica el tipo de asignador que se va a usar.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El filtro propietario debe llamar a este método después de que los pin acepten un asignador. Si el filtro sabe que el asignador es un objeto **CImageAllocator** , debe llamar a este método con el valor **true**. (Normalmente, el filtro solo lo sabrá si posee el asignador en cuestión). De lo contrario, debería llamar a este método con el valor **false**.
+El filtro propietario debe llamar a este método después de que los pines acepten un asignador. Si el filtro sabe que el asignador es **un objeto CImageAllocator,** debe llamar a este método con el valor **TRUE**. (Normalmente, el filtro lo sabrá solo si posee el asignador en cuestión). De lo contrario, debe llamar a este método con el **valor FALSE**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ El filtro propietario debe llamar a este método después de que los pin acepten
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ El filtro propietario debe llamar a este método después de que los pin acepten
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> <dt>
 
 [**CDrawImage::D rawImage**](cdrawimage-drawimage.md)
