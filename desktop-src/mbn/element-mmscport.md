@@ -7,12 +7,12 @@ MSHAttr:
 title: MmscPort
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56077222bbc738e9f735a9068cc81f0bfebc8463
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 529a0b24ac3e69912452529a0223be4e62f6b2c5
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885431"
+ms.locfileid: "122982758"
 ---
 # <a name="span-idwwan_profile_v4element_mmscportspanmmscport"></a><span id="WWAN_profile_v4.element_MmscPort"></span>MmscPort
 
@@ -24,7 +24,7 @@ Especifica el número de puerto del servidor MMSC para el dispositivo. Especifiq
 [&lt;MmsConfiguration&gt;](element-mmsconfiguration.md)  
 **&lt;MmscPort&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <MmscPort>
@@ -57,7 +57,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

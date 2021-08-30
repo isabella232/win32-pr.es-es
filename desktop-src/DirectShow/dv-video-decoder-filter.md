@@ -4,12 +4,12 @@ ms.assetid: aa47010e-8510-475d-836a-cb63deeb3a7b
 title: Filtro de descodificador de vídeo DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12131aa09f8e3f7dbef56504ad55410af11ffcbe
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b12aead5f8238064198c31566a1e2ca1fde75931
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466052"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984298"
 ---
 # <a name="dv-video-decoder-filter"></a>Filtro de descodificador de vídeo DV
 
@@ -18,14 +18,25 @@ Este filtro descodifica una secuencia de vídeo digital (DV) en vídeo sin compr
 
 
 
-| | | Filtrar interfaces | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-idvrgb219"><strong>IDVRGB219,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iipdvdec"><strong>IIPDVDec,</strong></a> <strong>IPersistStream,</strong> <strong>ISpecifyPropertyPages</strong> | | Tipos de medios de pin de entrada | <ul><li>MEDIATYPE_Video</li><li>MEDIASUBTYPE_dvsd</li><li>FORMAT_VideoInfo, FORMAT_DvInfo</li></ul> | | Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Tipos de medios de pin de salida | <strong>Tipo principal:</strong>MEDIATYPE_Video<strong>subtipos</strong>:<br /><ul><li>MEDIASUBTYPE_YUY2</li><li>MEDIASUBTYPE_UYVY</li><li>MEDIASUBTYPE_RGB24</li><li>MEDIASUBTYPE_RGB32</li><li>MEDIASUBTYPE_ARGB32</li><li>MEDIASUBTYPE_RGB565</li><li>MEDIASUBTYPE_RGB555</li><li>MEDIASUBTYPE_RGB8</li><li>MEDIASUBTYPE_Y41P</li></ul><strong>Tipos de formato:</strong><br /> Format_VideoInfo, Format_VideoInfo2<br /> | | Interfaces de pin de salida | <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Filtrar clsid | CLSID_DVVideoCodec | | ClSID de página de propiedades | CLSID_DVDecPropertiesPage | | Archivos ejecutables | qdv.dll | | <a href="merit.md">Ventajas |</a> MERIT_NORMAL | | <a href="filter-categories.md">Categoría de</a> filtro | CLSID_LegacyAmFilterCategory | 
+| Etiqueta | Value |
+|--------|-------|
+| Interfaces de filtro | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-idvrgb219"><strong>IDVRGB219,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iipdvdec"><strong>IIPDVDec,</strong></a> <strong>IPersistStream,</strong> <strong>ISpecifyPropertyPages</strong> | 
+| Tipos de medios de pin de entrada | <ul><li>MEDIATYPE_Video</li><li>MEDIASUBTYPE_dvsd</li><li>FORMAT_VideoInfo, FORMAT_DvInfo</li></ul> | 
+| Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | 
+| Tipos de medios de pin de salida | <strong>Tipo principal:</strong>MEDIATYPE_Video<strong>subtipos</strong>:<br /><ul><li>MEDIASUBTYPE_YUY2</li><li>MEDIASUBTYPE_UYVY</li><li>MEDIASUBTYPE_RGB24</li><li>MEDIASUBTYPE_RGB32</li><li>MEDIASUBTYPE_ARGB32</li><li>MEDIASUBTYPE_RGB565</li><li>MEDIASUBTYPE_RGB555</li><li>MEDIASUBTYPE_RGB8</li><li>MEDIASUBTYPE_Y41P</li></ul><strong>Tipos de formato:</strong><br /> Format_VideoInfo, Format_VideoInfo2<br /> | 
+| Interfaces de pin de salida | <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | 
+| Filtrar CLSID | CLSID_DVVideoCodec | 
+| CLSID de la página de propiedades | CLSID_DVDecPropertiesPage | 
+| Executable | qdv.dll | 
+| <a href="merit.md">Mérito</a> | MERIT_NORMAL | 
+| <a href="filter-categories.md">Categoría de filtro</a> | CLSID_LegacyAmFilterCategory | 
 
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use la [**interfaz IIPDVDec**](/windows/desktop/api/Strmif/nn-strmif-iipdvdec) para establecer la resolución de lacoding en tamaño completo, de tamaño medio, de trimestre o de un octavo tamaño.
 

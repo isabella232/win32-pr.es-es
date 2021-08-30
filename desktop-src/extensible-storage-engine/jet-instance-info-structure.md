@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6dbeab994d012f031de7620487c754b69d00db3d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0954aa944cfc30c2fc1ce7b078445b44683b9d97
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472701"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984128"
 ---
 # <a name="jet_instance_info-structure"></a>JET_INSTANCE_INFO estructura
 
@@ -54,11 +54,11 @@ Nombre de la instancia de la base de datos. Este valor puede ser **NULL** si la 
 
 **cDatabases**
 
-Número de bases de datos asociadas a la instancia de base de datos. **cDatabases también** contiene el tamaño de las matrices de cadenas que se devuelven en **szDatabaseFileName**, **szDatabaseDisplayName** y **szDatabaseSLVFileName**.
+Número de bases de datos que están asociadas a la instancia de base de datos. **cDatabases también** contiene el tamaño de las matrices de cadenas que se devuelven en **szDatabaseFileName**, **szDatabaseDisplayName** y **szDatabaseSLVFileName**.
 
 **szDatabaseFileName**
 
-Matriz de cadenas, cada una con el nombre de archivo de una base de datos asociada a la instancia de base de datos. La matriz tiene **elementos cDatabases.**
+Matriz de cadenas, cada una de las que contiene el nombre de archivo de una base de datos asociada a la instancia de base de datos. La matriz tiene **elementos cDatabases.**
 
 **szDatabaseDisplayName**
 
@@ -66,18 +66,23 @@ Matriz de cadenas, cada una con el nombre para mostrar de una base de datos. Act
 
 **szDatabaseSLVFileName**
 
-Matriz de cadenas, cada una con el nombre de archivo del archivo SLV asociado a la instancia de base de datos. La matriz tiene **elementos cDatabases.** No se admiten archivos SLV, por lo que este campo debe omitirse.
+Matriz de cadenas, cada una de las que contiene el nombre de archivo del archivo SLV que está asociado a la instancia de base de datos. La matriz tiene **elementos cDatabases.** No se admiten archivos SLV, por lo que este campo debe omitirse.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-Cada instancia de base de datos puede tener asociadas varias bases de datos.
+Cada instancia de base de datos puede tener varias bases de datos asociadas.
 
-Para una estructura **JET_INSTANCE_INFO,** la matriz de cadenas que se devuelve para las bases de datos está en el mismo orden. Por ejemplo, "szDatabaseDisplayName \[ \] i" y "szDatabaseFileName i" hacen referencia \[ a la misma base de \] datos.
+Para una estructura **JET_INSTANCE_INFO,** la matriz de cadenas que se devuelve para las bases de datos está en el mismo orden. Por ejemplo, "szDatabaseDisplayName \[ \] i" y "szDatabaseFileName \[ \] i" hacen referencia a la misma base de datos.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_INSTANCE_INFO_W</strong> (Unicode) <strong>y JET_INSTANCE_INFO _A</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_INSTANCE_INFO_W</strong> (Unicode) <strong>y JET_INSTANCE_INFO _A</strong> (ANSI).</p> | 
 
 
 

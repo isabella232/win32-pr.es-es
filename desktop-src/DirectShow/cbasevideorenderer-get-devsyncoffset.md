@@ -1,7 +1,7 @@
 ---
-description: El \_ método get DevSyncOffset recupera la desviación estándar del tiempo en milisegundos entre el momento en que se debió cada fotograma y el momento en que se representó en realidad, para todos los fotogramas desde que se inició el streaming.
+description: El método get DevSyncOffset recupera la desviación estándar del tiempo en milisegundos entre el momento en que se debía cada fotograma y el momento en que se representó realmente, para todos los fotogramas desde que se inició el \_ streaming.
 ms.assetid: 86f60064-f913-4377-bad0-148a213171fc
-title: Método CBaseVideoRenderer.get_DevSyncOffset (Renbase. h)
+title: CBaseVideoRenderer.get_DevSyncOffset método (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9926e809901f7290738e2e2cf3d094e54e068580
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8be41c3c7ae1be598b7c15f033510134cfa46890c904a79b4d979733e0ab6952
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052355"
 ---
-# <a name="cbasevideorendererget_devsyncoffset-method"></a>CBaseVideoRenderer. Get \_ DevSyncOffset (método)
+# <a name="cbasevideorendererget_devsyncoffset-method"></a>CBaseVideoRenderer.get \_ DevSyncOffset (método)
 
-El `get_DevSyncOffset` método recupera la desviación estándar del tiempo en milisegundos entre el momento en que se debió cada fotograma y el momento en que se representó en realidad, para todos los fotogramas desde que se inició el streaming.
+El método recupera la desviación estándar del tiempo en milisegundos entre el momento en que se debía a cada fotograma y el momento en que se representó realmente, para todos los fotogramas desde que se inició `get_DevSyncOffset` el streaming.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT get_DevSyncOffset(
 *piDev* 
 </dt> <dd>
 
-Puntero a la desviación estándar de la hora que se ha descrito anteriormente.
+Puntero a la desviación estándar de la hora como se describió anteriormente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IQualProp:: get \_ DevSyncOffset**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_devsyncoffset) .
+Esta función miembro implementa el [**método IQualProp::get \_ DevSyncOffset.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_devsyncoffset)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método [**IQualProp:: get \_ DevSyncOffset*
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método [**IQualProp:: get \_ DevSyncOffset*
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

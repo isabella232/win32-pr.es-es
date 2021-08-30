@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - bdatypes.h
-ms.openlocfilehash: 5153f6f79c2807634149222a126a7256a65ffe8a
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: eaea633aa543c4b8fa2ddaf95f0914b759eb5f75bf2352f55e5811766d4e001d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051045"
 ---
 # <a name="mpeg2_transport_stride-structure"></a>Estructura MPEG2 \_ TRANSPORT \_ STRIDE
 
@@ -38,7 +38,7 @@ Los paquetes stride se identifican mediante el siguiente tipo de medio:
 
  
 
-El bloque de formato (**pbFormat**) es opcional. Si se incluye el bloque de formato, debe comenzar con una **estructura MPEG2 \_ TRANSPORT \_ STRIDE.** Esta estructura define el diseño del paquete de transporte dentro del paquete stride. Si el bloque de formato **es NULL,** se supone que los paquetes usan un conjunto de valores predeterminados; consulte la sección Comentarios para obtener más información.
+El bloque de formato (**pbFormat**) es opcional. Si se incluye el bloque de formato, debe comenzar con una estructura **MPEG2 \_ TRANSPORT \_ STRIDE.** Esta estructura define el diseño del paquete de transporte dentro del paquete stride. Si el bloque de formato **es NULL,** se supone que los paquetes usan un conjunto de valores predeterminados; consulte la sección Comentarios para obtener más información.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ typedef struct _MPEG2_TRANSPORT_STRIDE {
 **dwOffset**
 </dt> <dd>
 
-Especifica el desplazamiento, en bytes, desde el principio del paquete hasta el primer byte del paquete de transporte incrustado. El valor debe oscilar entre cero y `(dwStride - dwPacketLength)` , ambos incluidos.
+Especifica el desplazamiento, en bytes, desde el principio del paquete hasta el primer byte del paquete de transporte incrustado. El valor debe oscilar entre cero y `(dwStride - dwPacketLength)` , ambos inclusive.
 
 </dd> <dt>
 
@@ -82,15 +82,15 @@ Especifica la longitud del paquete stride completo, en bytes. El valor debe ser 
 
 En el diagrama siguiente se muestran las relaciones entre los miembros de la estructura.
 
-![paquete de paso mpeg-2](images/mpeg2-stride-packet.png)
+![paquete mpeg-2 stride](images/mpeg2-stride-packet.png)
 
-Los búferes de entrada que contienen paquetes de paso multiplexado tienen algunas restricciones:
+Los búferes de entrada que contienen paquetes de pasos multiplexados tienen algunas restricciones:
 
 -   Los paquetes stride deben empaquetarse de forma contigua dentro del búfer.
--   Ningún bytes puede preceder al primer paquete de paso o seguir el último paquete de paso.
--   Un número entero de paquetes de paso debe caber en el búfer; es decir, la longitud del búfer % dwStride es igual a cero.
+-   Ningún bytes puede preceder al primer paquete de pasos o seguir el último paquete de pasos.
+-   Un número entero de paquetes de pasos debe caber en el búfer; es decir, la longitud del búfer % dwStride es igual a cero.
 
-No hay ninguna restricción en el número de paquetes de paso por búfer.
+No hay ninguna restricción en el número de paquetes de pasos por búfer.
 
 Si el tipo de medio no contiene un bloque de formato **(pbFormat** es **NULL),** se usan los siguientes valores predeterminados:
 
@@ -108,11 +108,11 @@ Si el tipo de medio no contiene un bloque de formato **(pbFormat** es **NULL),**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Estructuras de DirectShow](directshow-structures.md)
+[DirectShow Estructuras](directshow-structures.md)
 </dt> <dt>
 
 [Tipos de medios MPEG-2](mpeg-2-media-types.md)

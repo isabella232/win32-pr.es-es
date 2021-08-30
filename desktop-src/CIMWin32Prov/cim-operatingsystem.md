@@ -1,5 +1,5 @@
 ---
-description: La clase CIM OperatingSystem representa un sistema operativo del equipo, que se forma de software y firmware que hacen que el hardware de un sistema informático \_ sea utilizable.
+description: La clase CIM OperatingSystem representa un sistema operativo de equipo, que está integrado por software y firmware que hacen que se pueda usar \_ el hardware de un sistema informático.
 ms.assetid: 014d2553-e1ac-4394-84ae-307af3658f6e
 ms.tgt_platform: multiple
 title: CIM_OperatingSystem clase
@@ -41,19 +41,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 76dc59331d3e4fed7c2b79dd95de4ecef02d67d26ab4c9aa66df5d9d7d5a7215
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fbdec7fce68231b59d1b2be3cea1c265e9daddea
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020993"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887111"
 ---
 # <a name="cim_operatingsystem-class"></a>Cim \_ OperatingSystem (clase)
 
-La **clase CIM \_ OperatingSystem** representa un sistema operativo del equipo, que se forma de software y firmware que hacen que el hardware de un sistema informático sea utilizable.
+La **clase \_ CIM OperatingSystem** representa un sistema operativo de equipo, que se constituye en software y firmware que hacen que el hardware de un sistema informático sea utilizable.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -97,21 +97,21 @@ class CIM_OperatingSystem : CIM_LogicalElement
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ Cim OperatingSystem** tiene estos tipos de miembros:
+La **clase \_ CIM OperatingSystem** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ Cim OperatingSystem** tiene estos métodos.
+La **clase \_ CIM OperatingSystem** tiene estos métodos.
 
 
 
 | Método                                                           | Descripción                                                                                                                            |
 |:-----------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| [**Reboot**](reboot-method-in-class-cim-operatingsystem.md)     | Método de clase que apaga el sistema del equipo y, a continuación, lo reinicia. No implementado por WMI.<br/>                                 |
-| [**Apagado**](shutdown-method-in-class-cim-operatingsystem.md) | Método de clase que descarga programas y archivos DLL hasta el punto en que es seguro desactivar el equipo. No implementado por WMI.<br/> |
+| [**Reiniciar**](reboot-method-in-class-cim-operatingsystem.md)     | Método de clase que apaga el sistema del equipo y, a continuación, lo reinicia. Wmi no implementa.<br/>                                 |
+| [**Apagado**](shutdown-method-in-class-cim-operatingsystem.md) | Método de clase que descarga programas y archivos DLL hasta el punto en que es seguro apagar el equipo. Wmi no implementa.<br/> |
 
 
 
@@ -150,7 +150,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ Clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
@@ -166,10 +166,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**Cim \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**clave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Ámbito del nombre de clase de creación del sistema de equipo.
+Ámbito del nombre de la clase de creación del sistema de equipo.
 
 </dd> <dt>
 
@@ -182,10 +182,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Ámbito del nombre del sistema informático.
+Ámbito del nombre del sistema del equipo.
 
 </dd> <dt>
 
@@ -232,7 +232,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** el sistema operativo se distribuye entre varios nodos del sistema del equipo, que deben agruparse como un clúster.
+Si **es TRUE,** el sistema operativo se distribuye entre varios nodos del sistema del equipo, que se deben agrupar como un clúster.
 
 </dd> <dt>
 
@@ -250,7 +250,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kil
 
 Número de kilobytes de memoria física actualmente sin usar y disponible.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -268,7 +268,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Número de kilobytes que se pueden asignar a los archivos de paginación del sistema operativo sin provocar que se intercambien otras páginas. Un valor de 0 indica que no hay archivos de paginación.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -286,7 +286,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kil
 
 Número de kilobytes de memoria virtual actualmente sin usar y disponible. Por ejemplo, esto se puede calcular agregando la cantidad de RAM libre a la cantidad de espacio de paginación libre (es decir, agregando las propiedades **FreePhysicalMemory** y **FreeSpaceInPagingFiles).**
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -367,7 +367,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kil
 
 Número máximo de kilobytes de memoria que se pueden asignar a un proceso. Para los sistemas operativos sin memoria virtual, este valor suele ser igual a la cantidad total de memoria física, menos la memoria usada por el BIOS y el sistema operativo. Para algunos sistemas operativos, este valor puede ser infinito, en cuyo caso se debe especificar 0. En otros casos, este valor puede ser una constante, por ejemplo, 2 GB o 4 GB.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -380,7 +380,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Clave de una instancia de sistema operativo dentro de un sistema informático.
@@ -514,7 +514,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de máquinas virtuales
+Abrir máquinas virtuales
 
 </dd> <dt>
 
@@ -552,7 +552,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -771,7 +771,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -917,7 +917,7 @@ Mac OS 9
 
 </dt> <dd>
 
-So de mano
+So De remanso
 
 </dd> <dt>
 
@@ -977,7 +977,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ OperatingSystem**.**OSType**")
 </dt> </dl>
 
-Describe el fabricante y el tipo de sistema operativo cuando la **propiedad OSType** está establecida en 1 ("Other"). El formato de la cadena insertada **en OtherTypeDescription** debe ser similar a las cadenas **values** definidas para **OSType**. Esta propiedad debe establecerse en NULL cuando **OSType** es un valor distinto de 1 (uno).
+Describe el fabricante y el tipo de sistema operativo cuando la **propiedad OSType** se establece en 1 ("Other"). El formato de la cadena insertada en **OtherTypeDescription** debe ser similar a las cadenas **Values** definidas para **OSType**. Esta propiedad debe establecerse en NULL cuando **OSType** es un valor distinto de 1 (uno).
 
 </dd> <dt>
 
@@ -995,7 +995,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Número de kilobytes que se pueden almacenar en los archivos de paginación del sistema operativo. Este número no representa el tamaño físico real del archivo de paginación en el disco. Un valor de 0 (cero) indica que no hay archivos de paginación.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -1042,7 +1042,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -1056,14 +1056,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1117,9 +1117,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Espacio de intercambio total, en kilobytes. Este valor puede ser NULL (sin especificar) si el espacio de intercambio no se distingue de los archivos de página. Sin embargo, algunos sistemas operativos distinguen estos conceptos. Por ejemplo, se pueden "intercambiar" procesos completos en UNIX cuando la lista de páginas libres cae y permanece por debajo de una cantidad especificada.
+Espacio de intercambio total, en kilobytes. Este valor puede ser NULL (no especificado) si el espacio de intercambio no se distingue de los archivos de página. Sin embargo, algunos sistemas operativos distinguen estos conceptos. Por ejemplo, los procesos completos se pueden "intercambiar" en UNIX cuando la lista de páginas libres cae y permanece por debajo de una cantidad especificada.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -1137,7 +1137,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kil
 
 Número de kilobytes de memoria virtual. Por ejemplo, calcule esto agregando la cantidad total de RAM a la cantidad de espacio de paginación (es decir, agregue la cantidad de memoria en o agregada por el sistema del equipo a la propiedad **SizeStoredInPagingFiles.**
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -1153,9 +1153,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Cantidad total de memoria física, en kilobytes, disponible para el sistema operativo. Este valor no indica necesariamente la cantidad verdadera de memoria física, sino lo que se notifica al sistema operativo como disponible para él.
+Cantidad total de memoria física, en kilobytes, disponible para el sistema operativo. Este valor no indica necesariamente la verdadera cantidad de memoria física, sino lo que se notifica al sistema operativo como disponible para él.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -1173,10 +1173,10 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Versión de la operación.
 
-La versión de la operación debe tener uno de los siguientes formatos:
+La versión de la operación debe tener uno de los formatos siguientes:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
 </dd> </dl>
 
@@ -1184,15 +1184,15 @@ La versión de la operación debe tener uno de los siguientes formatos:
 
 La **clase \_ CIM OperatingSystem** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
-WMI no implementa esta clase. Para las clases WMI que se derivan de **\_ CIM OperatingSystem**, vea [Clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI que se derivan de **CIM \_ OperatingSystem**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1202,7 +1202,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

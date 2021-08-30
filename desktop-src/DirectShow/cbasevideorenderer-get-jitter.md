@@ -1,7 +1,7 @@
 ---
-description: El \_ método get vibración recupera la desviación estándar de tiempo en milisegundos entre cada fotograma y el siguiente para todos los fotogramas desde que se inició el streaming.
+description: El método get Jitter recupera la desviación estándar del tiempo en milisegundos entre cada fotograma y el siguiente para todos los fotogramas desde que se inició \_ el streaming.
 ms.assetid: 629e725e-7dee-4824-8f79-cd3335f4901b
-title: Método CBaseVideoRenderer.get_Jitter (Renbase. h)
+title: CBaseVideoRenderer.get_Jitter método (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef39cdb1b7a77dab22db9728268bf7b23b9fcefb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ac86cb74267c508a1f0f266455955e486d3686548202d2a524ee4a49288793e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052285"
 ---
-# <a name="cbasevideorendererget_jitter-method"></a>CBaseVideoRenderer. Get \_ vibración (método)
+# <a name="cbasevideorendererget_jitter-method"></a>Método CBaseVideoRenderer.get \_ Jitter
 
-El `get_Jitter` método recupera la desviación estándar de tiempo en milisegundos entre cada fotograma y el siguiente para todos los fotogramas desde que se inició el streaming.
+El método recupera la desviación estándar del tiempo en milisegundos entre cada fotograma y el siguiente para todos los fotogramas desde que se `get_Jitter` inició el streaming.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT get_Jitter(
 *piJitter* 
 </dt> <dd>
 
-Puntero a la desviación estándar del tiempo de INTERMARCO, en milisegundos.
+Puntero a la desviación estándar del tiempo de interframe, en milisegundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IQualProp:: get \_ vibración**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_jitter) .
+Esta función miembro implementa el [**método IQualProp::get \_ Jitter.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_jitter)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método [**IQualProp:: get \_ vibración**](
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método [**IQualProp:: get \_ vibración**](
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

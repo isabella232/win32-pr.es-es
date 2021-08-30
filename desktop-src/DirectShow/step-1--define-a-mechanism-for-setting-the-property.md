@@ -1,25 +1,25 @@
 ---
-description: Defina un mecanismo para establecer la propiedad como parte de la creación de una página de propiedades de filtro para un filtro de DirectShow personalizado.
+description: Defina un mecanismo para establecer la propiedad como parte de la creación de una página de propiedades de filtro para un filtro DirectShow personalizado.
 ms.assetid: 1912af22-11dc-4864-8c20-91675d4f45d9
 title: Paso 1. Definir un mecanismo para establecer la propiedad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 191014c35e27974c52961c2c6218e3a83effcc99
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 3048ae4a88fd9ab707319aa825eaaf687f1022ab5f544ff17191be453a3e9c2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050425"
 ---
 # <a name="step-1-define-a-mechanism-for-setting-the-property"></a>Paso 1. Definir un mecanismo para establecer la propiedad
 
 El filtro debe admitir una manera de que la página de propiedades se comunique con ella, de modo que la página de propiedades pueda establecer y recuperar propiedades en el filtro. Entre los posibles mecanismos se incluyen los siguientes:
 
 -   Exponer una interfaz COM personalizada.
--   Admite propiedades de Automation mediante **IDispatch**.
+-   Admite propiedades de Automation, a **través de IDispatch**.
 -   Exponga **la interfaz IPropertyBag** y defina un conjunto de propiedades con nombre.
 
-En este ejemplo se usa una interfaz COM personalizada, denominada ISaturation. No se trata de una interfaz real de DirectShow; solo se define para este ejemplo. Comience declarando la interfaz en un archivo de encabezado, junto con el identificador de interfaz (IID):
+En este ejemplo se usa una interfaz COM personalizada, denominada ISaturation. No se trata de una interfaz DirectShow real; solo se define para este ejemplo. Comience declarando la interfaz en un archivo de encabezado, junto con el identificador de interfaz (IID):
 
 
 ```C++

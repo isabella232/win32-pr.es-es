@@ -1,6 +1,6 @@
 ---
-title: atributo encode
-description: El atributo \ encode \ ACF especifica que un procedimiento o un tipo de datos necesita compatibilidad de serialización.
+title: atributo de codificación
+description: El atributo \ encode\ ACF especifica que un procedimiento o un tipo de datos necesita compatibilidad con la serialización.
 ms.assetid: 2661021d-8a26-4216-935b-ca40b6f8b9ec
 keywords:
 - codificar el atributo MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c2a35c6d6910229a9e14026f6727db5c3176050
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 15a62a170fbad60ea05b1574b54d09042a433d1684761a66a36a4c86dbef6b9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979615"
 ---
-# <a name="encode-attribute"></a>atributo encode
+# <a name="encode-attribute"></a>atributo de codificación
 
-El atributo **\[ encode \]** ACF especifica que un procedimiento o un tipo de datos necesita compatibilidad de serialización.
+El **\[ atributo \]** ACF de codificación especifica que un procedimiento o un tipo de datos necesita compatibilidad con la serialización.
 
 ``` syntax
 [ 
@@ -42,66 +42,66 @@ typedef [encode [ , type-attribute-list] ] type-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica otros atributos que se aplican a la interfaz en conjunto.
+Especifica otros atributos que se aplican a la interfaz en su conjunto.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*definición de interfaz* 
+*interface-definition* 
 </dt> <dd>
 
-Especifica las instrucciones IDL que forman la definición de la interfaz.
+Especifica instrucciones IDL que forman la definición de la interfaz.
 
 </dd> <dt>
 
-*OP-Attribute-List* 
+*op-attribute-list* 
 </dt> <dd>
 
-Especifica otros atributos operativos que se aplican al procedimiento como **\[** [**descodificar**](decode.md) **\]** .
+Especifica otros atributos operativos que se aplican al procedimiento, como **\[** [**descodificar**](decode.md) **\]** .
 
 </dd> <dt>
 
-*proc: nombre* 
+*proc-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento.
 
 </dd> <dt>
 
-*lista de atributos de tipo* 
+*type-attribute-list* 
 </dt> <dd>
 
-Especifica otros atributos que se aplican al tipo, como **\[** [**Decode**](decode.md) **\]** y **\[** [**allocate**](allocate.md) **\]** .
+Especifica otros atributos que se aplican al tipo, como **\[** [**descodificar y**](decode.md) **\]** **\[** [**asignar**](allocate.md) **\]** .
 
 </dd> <dt>
 
-*nombre de tipo* 
+*type-name* 
 </dt> <dd>
 
 Especifica un tipo definido en el archivo IDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **\[ encode \]** hace que el compilador MIDL genere código que una aplicación puede utilizar para serializar los datos en un búfer. El **\[** atributo [**Decode**](decode.md) **\]** genera el código para calcular las referencias de los datos de un búfer.
+El **\[ atributo \] de codificación** hace que el compilador MIDL genere código que una aplicación puede usar para serializar los datos en un búfer. El **\[** [**atributo de descodificación**](decode.md) **\]** genera el código para desmarque los datos de un búfer.
 
-Use los atributos **\[ encode \]** y **\[** [**Decode**](decode.md) **\]** en un ACF para generar código de serialización para los procedimientos o tipos definidos en el archivo IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ encode \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo operativo, **\[ encode \]** solo se aplica al procedimiento especificado. Cuando se usa como atributo de tipo, **\[ encode \]** solo se aplica al tipo especificado.
+Use los **\[ atributos de codificación \]** y descodificación de un ACF para generar código de serialización para procedimientos o tipos definidos en el archivo **\[** [](decode.md) **\]** IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ la codificación \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo operativo, **\[ la codificación \]** solo se aplica al procedimiento especificado. Cuando se usa como atributo de tipo, **\[ la codificación \]** solo se aplica al tipo especificado.
 
-Cuando se aplica el atributo de **\[ codificación \]** o **\[** [**descodificación**](decode.md) **\]** a un procedimiento, el compilador MIDL genera un código auxiliar de serialización de forma similar a como se generan los códigos auxiliares remotos para las rutinas remotas. Un procedimiento puede ser un procedimiento remoto o de serialización, pero no puede ser ambos. El prototipo de la rutina generada se envía al código auxiliar. H mientras el propio código auxiliar entra en el \_ archivo stub c. c.
+Cuando el atributo **\[ de \]** codificación o descodificación se aplica a un procedimiento, el compilador MIDL genera un código auxiliar de serialización de forma similar a como se generan códigos auxiliares remotos para **\[** [](decode.md) **\]** rutinas remotas. Un procedimiento puede ser remoto o serializador, pero no puede ser ambos. El prototipo de la rutina generada se envía al CÓDIGO AUXILIAR. Archivo H mientras el propio código auxiliar entra en el \_ archivo STUB C.C.
 
-El compilador MIDL genera dos funciones para cada tipo al que se aplica el atributo **\[ \] encode** y una función adicional para cada tipo al **\[** que se aplica el atributo [**descode**](decode.md) **\]** . Por ejemplo, para un tipo definido por el usuario denominado mi tipo, el compilador genera código para las \_ funciones de codificación, \_ descodificación y tipo \_ AlignSize. Para estas funciones, el compilador escribe prototipos en STUB. H y código fuente para STUB \_ C.C.
+El compilador MIDL genera dos **\[ \]** funciones para cada tipo al que se aplica el atributo de codificación y una función adicional para cada tipo al que se aplica el atributo **\[** [**de**](decode.md) **\]** descodificación. Por ejemplo, para un tipo definido por el usuario denominado MyType, el compilador genera código para las funciones MyType \_ Encode, MyType Decode y \_ MyType \_ AlignSize. Para estas funciones, el compilador escribe prototipos en STUB. H y código fuente a STUB \_ C.C.
 
-Para obtener más información sobre los identificadores de serialización y la codificación o descodificación de datos, vea [servicios de serialización](/windows/desktop/Rpc/serialization-services).
+Para obtener información adicional sobre los identificadores de serialización y la codificación o la codificación de datos, vea [Servicios de serialización](/windows/desktop/Rpc/serialization-services).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -137,9 +137,9 @@ interface regress
 [**allocate**](allocate.md)
 </dt> <dt>
 
-[**descodificar**](decode.md)
+[**Decodificar**](decode.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

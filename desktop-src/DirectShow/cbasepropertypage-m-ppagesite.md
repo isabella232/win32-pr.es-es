@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m pPageSite contiene un puntero a la interfaz IPropertyPageSite del sitio de la página de propiedades.
+description: La variable miembro m \_ pPageSite contiene un puntero a la interfaz IPropertyPageSite del sitio de la página de propiedades.
 ms.assetid: 678db5d0-0c07-4846-ada1-99aa6749f301
-title: 'Miembro CBasePropertyPage:: m_pPageSite (Cprop. h)'
+title: CBasePropertyPage::m_pPageSite miembro (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8cc6327898f065a8575360d9fd9d5ec1fd52be38
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d0be9375522ef9ab5778287ee8146e1aac1833f4102671739a55bc926a925242
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052585"
 ---
-# <a name="cbasepropertypagem_ppagesite-member"></a>Miembro pPageSite CBasePropertyPage:: m \_
+# <a name="cbasepropertypagem_ppagesite-member"></a>Miembro CBasePropertyPage::m \_ pPageSite
 
-La variable miembro **m \_ pPageSite** contiene un puntero a la interfaz **IPropertyPageSite** del sitio de la página de propiedades.
+La **variable miembro m \_ pPageSite** contiene un puntero a la **interfaz IPropertyPageSite** del sitio de la página de propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ IPropertyPageSite* m_pPageSite;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ IPropertyPageSite* m_pPageSite;
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

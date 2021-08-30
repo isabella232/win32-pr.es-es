@@ -3,9 +3,9 @@ title: Propiedad WebViewFolderContents.FocusedItem (Shldisp.h)
 description: 'Propiedad WebViewFolderContents.FocusedItem: obtiene un objeto FolderItem que representa el elemento que tiene el foco de entrada.'
 ms.assetid: 84cf92ac-dadb-4741-8383-a8ae1d35d4e0
 keywords:
-- Características heredadas del entorno de Windows de la propiedad FocusedItem
-- Objeto WebViewFolderContents de características heredadas del entorno de Windows de la propiedad FocusedItem
-- Objeto WebViewFolderContents Características heredadas del entorno de Windows, propiedad FocusedItem
+- Características heredadas del entorno de Windows focusedItem
+- Propiedad FocusedItem heredada Windows environment features , objeto WebViewFolderContents
+- Objeto WebViewFolderContents Heredado Windows Environment Features , Propiedad FocusedItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 724743b81f605dc9ba5794a4a796b8a0c4a2a03f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0a4d9a22ac1529fc7f8f3880f53666e9835fae1088d3c7548abfa38a5f400061
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114535"
 ---
 # <a name="webviewfoldercontentsfocuseditem-property"></a>Propiedad WebViewFolderContents.FocusedItem
 
@@ -44,7 +44,7 @@ Variable de tipo [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oai
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript insertado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript incrustada en HTML.
 
 
 ```HTML
@@ -82,9 +82,9 @@ En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

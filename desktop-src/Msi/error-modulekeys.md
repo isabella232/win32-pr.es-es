@@ -1,7 +1,7 @@
 ---
-description: La propiedad ModuleKeys de solo lectura del objeto error devuelve un puntero a una colección de cadenas que contiene las claves principales de la fila del módulo que produce el error, una clave por cada entrada de la colección.
+description: La propiedad ModuleKeys de solo lectura del objeto Error devuelve un puntero a una colección de cadenas que contiene las claves principales de la fila del módulo que produce el error, una clave por cada entrada de la colección.
 ms.assetid: b02b609b-4682-4228-b29a-364f079e863c
-title: Propiedad error. ModuleKeys (Mergemod. h)
+title: Propiedad Error.ModuleKeys (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 53d2ac37f8864318a83c13672c081ed5dea42b0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9d33b546bea909700cc1a737043947d980006764daa86771820740570adf7f80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044605"
 ---
-# <a name="errormodulekeys-property"></a>Error. ModuleKeys (propiedad)
+# <a name="errormodulekeys-property"></a>Propiedad Error.ModuleKeys
 
-La propiedad **ModuleKeys** de solo lectura del objeto [**error**](error-object.md) devuelve un puntero a una colección de cadenas que contiene las claves principales de la fila del módulo que produce el error, una clave por cada entrada de la colección.
+La propiedad **ModuleKeys** de solo lectura del objeto [**Error**](error-object.md) devuelve un puntero a una colección de cadenas que contiene las claves principales de la fila del módulo que produce el error, una clave por cada entrada de la colección.
 
 Esta propiedad es de solo lectura.
 
@@ -38,15 +38,15 @@ propVal = Error.ModuleKeys
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cliente es responsable de liberar la colección de cadenas cuando ya no se necesita.
+El cliente es responsable de liberar la colección de cadenas cuando ya no es necesaria.
 
-La colección está vacía si los valores no se aplican al tipo del error. Puede determinar el tipo de error llamando a la propiedad [**Type**](error-type.md) del objeto [**error**](error-object.md) .
+La colección está vacía si los valores no se aplican al tipo del error. Puede determinar el tipo de error llamando a la [**propiedad Type**](error-type.md) del [**objeto Error.**](error-object.md)
 
 ### <a name="c"></a>C++
 
-Consulte [**Get \_ ModuleKeys**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_modulekeys) function.
+Consulte get ModuleKeys function (Obtener [**\_ función ModuleKeys).**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_modulekeys)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Consulte [**Get \_ ModuleKeys**](/windows/win32/api/mergemod/nf-mergemod-imsmerr
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 1,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

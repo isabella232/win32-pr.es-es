@@ -4,23 +4,23 @@ description: Atributo ShadowOK de VML
 ms.assetid: 88400bf5-f41c-4495-a5d0-9b35c1cae9f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9e6b4ca6b98ce66208e906c45fd560324121e8a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a4ce851a8e6d6bf458213521248cee05d3beb3d32dd6b235b93dd666a4c75051
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099105"
 ---
 # <a name="vml-shadowok-attribute"></a>Atributo ShadowOK de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si se mostrará una sombra. Lectura/escritura **VgTriState**.
+Determina si se mostrará una sombra. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Determina si se mostrará una sombra. Lectura/escritura **VgTriState**.
 
 **Sintaxis de etiquetas**
 
-<v: *Element* shadowok = " *expresión* " >
+<v: *element* shadowok=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . shadowok = "*expresión*"
+*element* .shadowok="*expression*"
 
-*expresión* = de *elemento*. shadowok
+*expresión* = *elemento*.shadowok
 
 **Comentarios:**
 
-Si **es false**, la ruta de acceso no puede tener una sombra. El valor predeterminado es **True**. Este atributo invalida todos los demás atributos de sombra del elemento primario o de **sombra** .
+Si **es False**, la ruta de acceso no puede tener una sombra. El valor predeterminado es **True**. Este atributo invalida todos los demás atributos de sombra en el elemento primario o **shadow.**
 
 *Atributo estándar de VML*
 
@@ -59,6 +59,6 @@ La forma no tendrá una sombra.
 
 
 
- 
+ 
 
- 
+ 

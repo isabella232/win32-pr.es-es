@@ -1,11 +1,11 @@
 ---
-title: Método Next IWMPControls
-description: El siguiente método establece el elemento siguiente de la lista de reproducción como el elemento actual.
+title: Método next de IWMPControls
+description: El método siguiente establece el siguiente elemento de la lista de reproducción como el elemento actual.
 ms.assetid: 3f82ef25-a1e0-4845-b0ed-dd6463719577
 keywords:
-- siguiente método de Windows Media Player
-- siguiente método de Windows Media Player, interfaz IWMPControls
-- Interfaz IWMPControls Windows Media Player, método Next
+- siguiente método Reproductor de Windows Media
+- Next method Reproductor de Windows Media , IWMPControls (interfaz)
+- Interfaz IWMPControls Reproductor de Windows Media , método next
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8444ba7d9209759cb64c4b582e1af9d074332ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa7b2fcb4a05078f1eefe90c266d636ec80cff219226246c622ce6040824c45d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031285"
 ---
-# <a name="iwmpcontrolsnext-method"></a>IWMPControls:: Next (método)
+# <a name="iwmpcontrolsnext-method"></a>IWMPControls::next (método)
 
-El **siguiente** método establece el elemento siguiente de la lista de reproducción como el elemento actual.
+El **método siguiente** establece el siguiente elemento de la lista de reproducción como el elemento actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,17 +53,17 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la lista de reproducción está en la última entrada cuando se invoca **siguiente** , la primera entrada de la lista de reproducción se convertirá en la actual.
+Si la lista de reproducción  está en la última entrada cuando se invoca la siguiente, la primera entrada de la lista de reproducción se convertirá en la actual.
 
-En las listas de reproducción del lado servidor, este método omite el siguiente elemento de la lista de reproducción del servidor, no la lista de reproducción del cliente.
+En el caso de las listas de reproducción del lado servidor, este método omite el siguiente elemento de la lista de reproducción del lado servidor, no la lista de reproducción del cliente.
 
-Al reproducir un DVD, este método omite el siguiente capítulo lógico de la secuencia de reproducción, que puede no ser el siguiente capítulo de la lista de reproducción. Al reproducir imágenes de DVD seguidas, este método pasa a la siguiente imagen.
+Al reproducir un DVD, este método omite el siguiente capítulo lógico de la secuencia de reproducción, que puede no ser el siguiente capítulo de la lista de reproducción. Al reproducir imágenes fijas de DVD, este método omite la siguiente imagen.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **Next** para moverse al siguiente elemento de la lista de reproducción actual en respuesta al evento click de un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa next** para desplazarse al siguiente elemento de la lista de reproducción actual en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -110,7 +110,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -123,10 +123,10 @@ End Sub
 [**Interfaz IWMPControls (VB y C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Previous (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-previous--vb-and-c.md)
+[**IWMPControls.previous (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-previous--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. STOP (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
+[**IWMPControls.stop (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
 </dt> </dl>
 
  

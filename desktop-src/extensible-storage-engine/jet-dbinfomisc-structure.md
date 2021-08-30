@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_DBINFOMISC estructura'
+description: 'Más información sobre: JET_DBINFOMISC structure'
 title: Estructura de JET_DBINFOMISC
 TOCTitle: JET_DBINFOMISC Structure
 ms:assetid: ff287087-35b8-495e-9922-418ec2439e19
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7d7861e558bbf6a1938d252a52e7bb781068a331
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b5b65e13b6d6f6b48f4c04802a1b2822ef353dd2
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476871"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982938"
 ---
 # <a name="jet_dbinfomisc-structure"></a>Estructura de JET_DBINFOMISC
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_dbinfomisc-structure"></a>Estructura de JET_DBINFOMISC
 
-La **JET_DBINFOMISC** contiene información miscelánea sobre una base de datos. Esta es la información contenida en el encabezado de la base de datos.
+La **JET_DBINFOMISC** contiene información diversa sobre una base de datos. Esta es la información contenida en el encabezado de base de datos.
 
 ```cpp
     typedef struct {
@@ -70,19 +70,19 @@ Realiza un seguimiento de las actualizaciones de formato de base de datos increm
 
 | <p>ulVersion, ulUpdate =</p> | <p>Significado</p> | 
 |------------------------------|----------------|
-| <p>0x620,0</p> | <p>Formato Beta del sistema operativo original (22/4/97).</p> | 
-| <p>0x620,1</p> | <p>Agregue columnas en el catálogo para la indexación condicional y OLD (29/5/97).</p> | 
+| <p>0x620,0</p> | <p>Formato beta del sistema operativo original (22/4/97).</p> | 
+| <p>0x620,1</p> | <p>Agregue columnas al catálogo para la indexación condicional y OLD (29/5/97).</p> | 
 | <p>0x620,2</p> | <p>Agregue la marca fLocalizedText en IDB (5/6/97).</p> | 
 | <p>0x620,3</p> | <p>Agregue SPLIT_BUFFER a las páginas raíz del árbol de espacio (30/10/97).</p> | 
-| <p>0x620,2</p> | <p>Revierta la revisión para que ESE97 siga siendo compatible con el futuro (28/1/98).</p> | 
-| <p>0x620,3</p> | <p>Agregar nuevas columnas etiquetadas al catálogo ("CallbackData" y "CallbackDependencies").</p> | 
+| <p>0x620,2</p> | <p>Revierta la revisión para que ESE97 siga siendo compatible con el avance (28/1/98).</p> | 
+| <p>0x620,3</p> | <p>Agregue nuevas columnas etiquetadas al catálogo ("CallbackData" y "CallbackDependencies").</p> | 
 | <p>0x620,4</p> | <p>Compatibilidad con SLV: signSLV, fSLVExists en el encabezado db (5/5/98).</p> | 
 | <p>0x620,5</p> | <p>Nuevo árbol de espacio SLV (29/5/98).</p> | 
 | <p>0x620,6</p> | <p>Mapa de espacio SLV (12/10/98).</p> | 
-| <p>0x620,7</p> | <p>IDXSEG de 4 bytes (12/10/98).</p> | 
+| <p>0x620,7</p> | <p>IDXSEG de 4 bytes (10/12/98).</p> | 
 | <p>0x620,8</p> | <p>Nuevo formato de columna de plantilla (25/1/99).</p> | 
 | <p>0x620,9</p> | <p>Columnas de plantilla ordenadas (24/6/99).</p> | 
-| <p>0x623,0</p> | <p>Nuevo Administrador de espacio (15/5/99).</p> | 
+| <p>0x623,0</p> | <p>Nuevo administrador de espacios (15/5/99).</p> | 
 
 
 
@@ -97,10 +97,10 @@ Este es el estado de la base de datos.
 Las siguientes opciones están disponibles para este miembro.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_dbstateJustCreated<br />1</p> | <p>La base de datos se acaba de crear.</p> | 
-| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>La base de datos requiere que se ejecute una recuperación de forma dura o flexible para poder usarse o moverse. No se deben intentar mover bases de datos en este estado.</p> | 
+| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>La base de datos requiere que se ejecute una recuperación de forma dura o flexible para poder usarse o moverse. No se debe intentar mover las bases de datos en este estado.</p> | 
 | <p>JET_dbstateCleanShutdown<br />3</p> | <p>La base de datos está en un estado limpio. La base de datos se puede adjuntar sin archivos de registro.</p> | 
 | <p>JET_dbstateBeingConverted<br />4</p> | <p>La base de datos se está actualizando.</p> | 
 | <p>JET_dbstateForceDetach<br />5</p> | <p>Interno.</p> | 
@@ -109,27 +109,27 @@ Las siguientes opciones están disponibles para este miembro.
 
 **lgposConsistent**
 
-Null si la base de datos se encuentra en un estado de desvía. Esta es la posición del registro que se usó cuando la base de datos se hizo por última vez en un estado de apagado limpio.
+Null si la base de datos está en un estado desdeso. Esta es la posición del registro que se usó cuando la base de datos se hizo por última vez en un estado de apagado limpio.
 
 **logtimeConsistent**
 
-Null si la base de datos se encuentra en un estado de desvía. Esta es la hora en que la base de datos se hizo por última vez en un estado de apagado limpio.
+Null si la base de datos está en un estado desdeso. Esta es la hora en que la base de datos se hizo por última vez en un estado de apagado limpio.
 
 **logtimeAttach**
 
-Hora a la que se adjunta la base de datos por última vez [con JetAttachDatabase](./jetattachdatabase-function.md).
+Hora en que la base de datos se agregó por última vez [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **lgposAttach**
 
-Posición del registro que se usó la última vez que se adjunta la base de datos [con JetAttachDatabase](./jetattachdatabase-function.md).
+Posición del registro que se usó la última vez que se adjuntaba la base de datos [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **logtimeDetach**
 
-Hora a la que se desasociaron por última vez la base de datos [con JetDetachDatabase](./jetdetachdatabase-function.md).
+Hora en que la base de datos se desasocia por última vez [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **lgposDetach**
 
-Posición de registro que se usó la última vez que la base de datos se [desasocia con JetDetachDatabase](./jetdetachdatabase-function.md).
+Posición del registro que se usó la última vez que la base de datos se desasociaba [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **signLog**
 
@@ -157,15 +157,15 @@ Admite la infraestructura ese y no se puede usar en el código.
 
 **dwMajorVersion**
 
-Representa los números Windows versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
+Representa los Windows de la versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
 
 **dwMinorVersion**
 
-Representa los números Windows versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
+Representa los Windows de la versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
 
 **dwBuildNumber**
 
-Representa los números Windows versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
+Representa los Windows de la versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
 
 **lSPNumber**
 
@@ -180,7 +180,11 @@ Este valor solo se recupera si JET_DbInfoMisc a [JetGetDatabaseInfo](./jetgetdat
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

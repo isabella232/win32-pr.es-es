@@ -1,7 +1,7 @@
 ---
 description: Valor HRESULT que indica si el objeto aceptará ejemplos. Si el valor es S \_ OK, el objeto aceptará ejemplos. De lo contrario, rechaza los ejemplos.
 ms.assetid: e05d4d2e-cc3e-4b83-8531-bc4bd6d665ac
-title: 'Miembro COutputQueue:: m_hr (Outputq. h)'
+title: COutputQueue::m_hr miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b786afa24f974d5eab7e13062105f26386da1c30
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6ae9920589d93afe05d56654da6bf80e9ef09aaef6e787d23919f2ac48c09ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087225"
 ---
-# <a name="coutputqueuem_hr-member"></a>Miembro COutputQueue:: m \_ HR
+# <a name="coutputqueuem_hr-member"></a>Miembro COutputQueue::m \_ hr
 
-Valor **HRESULT** que indica si el objeto aceptará ejemplos. Si el valor es S \_ OK, el objeto aceptará ejemplos. De lo contrario, rechaza los ejemplos.
+**Valor HRESULT** que indica si el objeto aceptará ejemplos. Si el valor es S \_ OK, el objeto aceptará ejemplos. De lo contrario, rechaza los ejemplos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ HRESULT m_hr;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta variable miembro se utiliza para coordinar las actividades entre subprocesos. Si el PIN de entrada de nivel inferior rechaza un ejemplo o si el objeto comienza a vaciarse, el valor se establece en S \_ false o en un código de error. El objeto no proporcionará más muestras hasta que se complete el vaciado o hasta que se llame al método [**COutputQueue:: RESET**](coutputqueue-reset.md) .
+Esta variable miembro se usa para coordinar actividades entre subprocesos. Si el pin de entrada de bajada rechaza un ejemplo o si el objeto comienza a vaciarse, el valor se establece en S \_ FALSE o en un código de error. El objeto no entregará más muestras hasta que se complete el vaciado o hasta que se llame al método [**COutputQueue::Reset.**](coutputqueue-reset.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Esta variable miembro se utiliza para coordinar las actividades entre subproceso
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Esta variable miembro se utiliza para coordinar las actividades entre subproceso
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

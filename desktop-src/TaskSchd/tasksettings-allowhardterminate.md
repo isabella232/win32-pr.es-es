@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskSettings. AllowHardTerminate
-description: Para scripting, obtiene o establece un valor booleano que indica que el servicio de Programador de tareas puede finalizar la tarea mediante TerminateProcess.
+title: Propiedad TaskSettings.AllowHardTerminate
+description: Para el scripting, obtiene o establece un valor booleano que indica que la tarea puede ser finalizada por el servicio Programador de tareas mediante TerminateProcess.
 ms.assetid: 1dfd692e-efbe-41a2-8dbd-b14cf26bbcb7
 keywords:
-- Programador de tareas de la propiedad AllowHardTerminate
-- Programador de tareas de la propiedad AllowHardTerminate, objeto TaskSettings
-- Programador de tareas de objeto TaskSettings, propiedad AllowHardTerminate
+- Propiedad AllowHardTerminate Programador de tareas
+- Propiedad AllowHardTerminate Programador de tareas , objeto TaskSettings
+- Objeto TaskSettings Programador de tareas propiedad , AllowHardTerminate
 topic_type:
 - apiref
 api_name:
@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c38e117ebc3d2175b952f01698987ccb65f7af5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9f6886a43a3c63df80c392b04dc35aa4f3331af52048c0bbe9e86aaf4005f638
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099765"
 ---
-# <a name="tasksettingsallowhardterminate-property"></a>Propiedad TaskSettings. AllowHardTerminate
+# <a name="tasksettingsallowhardterminate-property"></a>Propiedad TaskSettings.AllowHardTerminate
 
-Para scripting, obtiene o establece un valor booleano que indica que el servicio de Programador de tareas puede finalizar la tarea mediante [**TerminateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminateprocess). El servicio intentará cerrar la tarea en ejecución mediante el envío de la notificación de [**\_ cierre de WM**](../winmsg/wm-close.md) y, si la tarea no responde, la tarea se terminará solo si esta propiedad está establecida en true.
+Para el scripting, obtiene o establece un valor booleano que indica que la tarea puede ser finalizada por el servicio Programador de tareas mediante [**TerminateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminateprocess). El servicio intentará cerrar la tarea en ejecución mediante el envío de la notificación [**WM \_ CLOSE**](../winmsg/wm-close.md) y, si la tarea no responde, la tarea finalizará solo si esta propiedad está establecida en true.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,11 +40,11 @@ TaskSettings.AllowHardTerminate As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si es true, la tarea se puede finalizar mediante [**TerminateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminateprocess). Si es false, la tarea no se puede finalizar mediante **TerminateProcess**.
+Si es True, la tarea se puede finalizar mediante [**TerminateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminateprocess). Si es False, la tarea no se puede finalizar mediante **TerminateProcess**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, esta configuración se especifica en el elemento [AllowHardTerminate](taskschedulerschema-allowhardterminate-settingstype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, esta configuración se especifica en el [elemento AllowHardTerminate](taskschedulerschema-allowhardterminate-settingstype-element.md) del esquema Programador de tareas datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Al leer o escribir XML para una tarea, esta configuración se especifica en el e
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
 description: Bloqueo de streaming.
 ms.assetid: e5794dcd-f793-4b23-80ab-083b7192c67e
-title: 'Miembro CBaseRenderer:: m_RendererLock (Renbase. h)'
+title: CBaseRenderer::m_RendererLock miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5514b987e67fe89ff28e9bf9a5170bd982e2b714
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90332ff65754d9e2c8648d9b4d93882b2fe990bce5bc165b8d9c6f95319b6b9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052425"
 ---
-# <a name="cbaserendererm_rendererlock-member"></a>Miembro RendererLock CBaseRenderer:: m \_
+# <a name="cbaserendererm_rendererlock-member"></a>Miembro CBaseRenderer::m \_ RendererLock
 
 Bloqueo de streaming.
 
@@ -42,8 +42,8 @@ CCritSec m_RendererLock;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CCritSec m_RendererLock;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

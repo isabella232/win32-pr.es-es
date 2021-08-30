@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d37762166f079c7810a5ea28f2affe460d3bc08f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 8517a70f8dd5de95bd9c16782759339b22ff4130
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478281"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984378"
 ---
 # <a name="jetsetcolumn-function"></a>Función JetSetColumn
 
@@ -73,7 +73,7 @@ Tamaño en bytes del búfer de entrada.
 Un grupo de bits que contienen las opciones que se usarán para esta llamada, que incluyen cero o más de lo siguiente:
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitSetAppendLV</p> | <p>Esta opción se usa para anexar datos a una columna de tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>. Se puede lograr el mismo comportamiento si se determina el tamaño del valor long existente y se <em>especifica ibLongValue</em> en <em>psetinfo</em>. Sin embargo, es más sencillo usar este <em>grbit,</em> ya que no es necesario conocer el tamaño del valor de columna existente.</p> | 
 | <p>JET_bitSetOverwriteLV</p> | <p>Esta opción se usa para reemplazar el valor long existente por los datos recién proporcionados. Cuando se usa esta opción, es como si el valor long existente se hubiera establecido en 0 (cero) longitud antes de establecer los nuevos datos.</p> | 
@@ -82,7 +82,7 @@ Un grupo de bits que contienen las opciones que se usarán para esta llamada, qu
 | <p>JET_bitSetSizeLV</p> | <p>Esta opción se usa para interpretar el búfer de entrada como un número entero de bytes que se va a establecer como la longitud del valor largo descrito por el <em>columnid</em> especificado y, si se proporciona, el número de secuencia en psetinfo- &gt; itagSequence. Si el tamaño especificado es mayor que el valor de columna existente, la columna se extenderá con 0s. Si el tamaño es menor que el valor de columna existente, el valor se truncará.</p> | 
 | <p>JET_bitSetUniqueMultiValues</p> | <p>Esta opción se usa para exigir que todos los valores de una columna con varios valores sean distintos. Esta opción compara los datos de la columna de origen, sin transformaciones, con otros valores de columna existentes y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, JET_bitSetAppendLV, JET_bitSetOverwriteLV y JET_bitSetSizeLV tampoco se pueden proporcionar.</p> | 
 | <p>JET_bitSetUniqueNormalizedMultiValues</p> | <p>Esta opción se usa para exigir que todos los valores de una columna con varios valores sean distintos. Esta opción compara la transformación normalizada clave de los datos de columna con otros valores de columna existentes transformados de forma similar y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, JET_bitSetAppendLV, JET_bitSetOverwriteLV y JET_bitSetSizeLV tampoco se pueden proporcionar.</p> | 
-| <p>JET_bitSetZeroLength</p> | <p>Esta opción se usa para establecer un valor en longitud cero. Normalmente, un valor de columna se establece <strong>en NULL</strong> pasando cbMax de 0 (cero). Sin embargo, para algunos tipos, como <a href="gg269213(v=exchg.10).md">JET_coltypText</a>, un valor de columna puede tener una longitud de 0 (cero) en lugar de <strong>NULL,</strong>y esta opción se usa para diferenciar entre la longitud <strong>NULL</strong> y 0 (cero).</p><p><strong>Nota</strong>  En general, si la columna es una columna de longitud fija, este bit se omite y la columna se establece en <strong>NULL.</strong> Sin embargo, si la columna es una columna etiquetada de longitud fija, la longitud de la columna se establece en 0. Cuando la columna etiquetada de longitud fija se establece en 0 longitud, los intentos de recuperar la columna con <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a> o <a href="gg294135(v=exchg.10).md">JetRetrieveColumns</a> se realizarán correctamente, pero la longitud real que se devuelve en el <em>parámetro cbActual</em> es 0.</p> | 
+| <p>JET_bitSetZeroLength</p> | <p>Esta opción se usa para establecer un valor en longitud cero. Normalmente, un valor de columna se establece <strong>en NULL</strong> pasando cbMax de 0 (cero). Sin embargo, para algunos tipos, <a href="gg269213(v=exchg.10).md">como JET_coltypText</a>, un valor de columna puede tener una longitud de 0 (cero) en lugar de <strong>NULL,</strong>y esta opción se usa para diferenciar entre la longitud <strong>NULL</strong> y 0 (cero).</p><p><strong>Nota</strong>  En general, si la columna es una columna de longitud fija, este bit se omite y la columna se establece en <strong>NULL.</strong> Sin embargo, si la columna es una columna etiquetada de longitud fija, la longitud de la columna se establece en 0. Cuando la columna etiquetada de longitud fija se establece en 0 longitud, los intentos de recuperar la columna con <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a> o <a href="gg294135(v=exchg.10).md">JetRetrieveColumns</a> se realizarán correctamente, pero la longitud real que se devuelve en el <em>parámetro cbActual</em> es 0.</p> | 
 | <p>JET_bitSetIntrinsicLV</p> | <p>Esta opción se usa para almacenar el valor long completo en el registro.</p> | 
 | <p>JET_bitSetCompressed</p> | <p>Esta opción se usa para intentar la compresión de datos al almacenar los datos.</p><p><strong>Windows 7:</strong>  JET_bitSetCompressed se introdujo en Windows 7.</p> | 
 | <p>JET_bitSetUncompressed</p> | <p>Esta opción se usa para no intentar la compresión al almacenar los datos.</p><p><strong>Windows 7:</strong>  JET_bitSetUnCompressed se introdujo en Windows 7.</p> | 
@@ -98,7 +98,7 @@ Si *psetinfo* se especifica como **NULL,** la función se comporta como si se hu
 Se pueden establecer las siguientes opciones para este parámetro:
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>ibLongValue</p> | <p>Desplazamiento binario en un valor de columna largo donde deben comenzar los datos establecidos.</p> | 
 | <p>itagSequence</p> | <p>Número de secuencia del valor de columna multivalor deseado que se establecerá. Si <em>itagSequence</em> se establece en 0 (cero), el valor proporcionado se debe anexar al final de la secuencia de valores multivalor. Si el número de secuencia proporcionado es mayor que el último valor multivalor existente, se anexa de nuevo el valor especificado al final de la secuencia de valores. Si el número de secuencia corresponde a un valor existente, ese valor se reemplaza por el valor especificado.</p> | 
@@ -117,43 +117,49 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errColumnNotFound</p> | <p>La columna descrita por el <em>columnid</em> dado no existe en la tabla.</p> | 
 | <p>JET_errColumnNotUpdatable</p> | <p>Se intentó actualizar un valor largo durante una operación de actualización original de eliminación de copia de inserción.</p> | 
-| <p>JET_errColumnTooBig</p> | <p>Los datos de valor de columna especificados en el búfer de entrada superan la limitación de tamaño natural para una columna de longitud fija o configurados para columnas binarias o de texto de longitud fija. Este error también se devuelve cuando se pasan más de 1024 bytes de datos para una columna larga y se establece la marca JET_bitSetIntrinsicLV datos.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errColumnTooBig</p> | <p>Los datos de valor de columna especificados en el búfer de entrada superan la limitación de tamaño natural para una columna de longitud fija o configurados para columnas binarias o de texto de longitud fija. Este error también se devuelve cuando se pasan más de 1024 bytes de datos para una columna larga y se establece JET_bitSetIntrinsicLV marca.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errInvalidBufferSize</p> | <p>El tamaño de datos del valor de columna especificado no coincide con lo que es natural para el tipo de datos de longitud fija.</p> | 
 | <p>JET_errInvalidColumnType</p> | <p>Se intentó actualizar una columna de incremento automático durante una operación de inserción o actualización, o bien actualizar una columna de versión durante una operación de reemplazo.</p> | 
-| <p>JET_errInvalidgrbit</p> | <p>Las opciones proporcionadas son desconocidas o una combinación no conocida de la configuración de bits conocida.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>El psetinfo- &gt; cbStruct especificado no es un tamaño válido para la <a href="gg294090(v=exchg.10).md">JET_SETINFO</a> estructura.</p> | 
-| <p>JET_errMultiValuedDuplicate</p> | <p>La operación set column intentó crear un valor duplicado y especificó JET_bitSetUniqueMultiValues o JET_bitSetUniqueNormalizedMultiValues.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>Las opciones proporcionadas son desconocidas o son una combinación no conocida de la configuración de bits conocida.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>El valor psetinfo- &gt; cbStruct especificado no es un tamaño válido para la <a href="gg294090(v=exchg.10).md">JET_SETINFO</a> estructura.</p> | 
+| <p>JET_errMultiValuedDuplicate</p> | <p>La operación de establecer columna intentó crear un valor duplicado y especificó JET_bitSetUniqueMultiValues o JET_bitSetUniqueNormalizedMultiValues.</p> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
-| <p>JET_errNotInTransaction</p> | <p>Se intentó actualizar un valor de columna largo cuando la sesión de llamada no estaba en una transacción.</p> | 
-| <p>JET_errNullInvalid</p> | <p>Se intentó establecer una columna que no<strong>es NULL</strong> en <strong>NULL.</strong></p> | 
+| <p>JET_errNotInTransaction</p> | <p>Se realizó un intento no válido de actualizar un valor de columna largo cuando la sesión de llamada no estaba en una transacción.</p> | 
+| <p>JET_errNullInvalid</p> | <p>Se intentó establecer una columna que no es<strong>NULL</strong> en <strong>NULL.</strong></p> | 
 | <p>JET_errColumnIllegalNull</p> | <p>Igual que JET_errNullInvalid.</p> | 
-| <p>JET_errRecordTooBig</p> | <p>El valor de columna no se pudo establecer en el valor del búfer de entrada porque habría provocado que el registro superara su limitación de tamaño de página relacionada. Las columnas de <a href="gg269213(v=exchg.10).md">tipo JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> pueden almacenarse por separado de los datos de registro restantes. Sin embargo, otras columnas deben almacenarse con el registro y pueden hacer que se supere la limitación de tamaño del registro. Incluso las columnas largas requieren 5 bytes de espacio dentro del registro como vinculación y esto también puede provocar que JET_errRecordTooBig se devuelvan.</p> | 
+| <p>JET_errRecordTooBig</p> | <p>No se pudo establecer el valor de columna en el valor del búfer de entrada porque habría provocado que el registro superara su limitación de tamaño de página relacionada. Las columnas de <a href="gg269213(v=exchg.10).md">tipo JET_coltypLongText</a> <a href="gg269213(v=exchg.10).md">o JET_coltypLongBinary</a> pueden almacenarse por separado de los datos de registro restantes. Sin embargo, otras columnas deben almacenarse con el registro y pueden hacer que se supere la limitación de tamaño del registro. Incluso las columnas largas requieren 5 bytes de espacio dentro del registro como vinculación y esto también puede provocar que JET_errRecordTooBig se devuelvan.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p><p><strong>Windows XP:</strong>  Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
 | <p>JET_errUpdateNotPrepared</p> | <p>El cursor no está actualmente en proceso de insertar un nuevo registro o de actualizar uno existente.</p> | 
 | <p>JET_errVersionStoreOutOfMemory</p> | <p>Este error se producirá cuando el tamaño configurado del almacén de versiones no sea suficiente para contener todas las actualizaciones pendientes.</p> | 
-| <p>JET_wrnColumnMaxTruncated</p> | <p>El valor de columna del búfer de entrada superó la longitud máxima configurada para una columna de longitud variable y se truncó.</p> | 
+| <p>JET_wrnColumnMaxTruncated</p> | <p>El valor de columna del búfer de entrada superó la longitud máxima configurada para una columna de longitud variable y se trunó.</p> | 
 
 
 
-Si se ejecuta correctamente, la parte deseada de un valor de columna para la columna especificada se establece con los datos copiados del búfer de entrada. Es posible que el conjunto de datos se haya truncado si ha superado la longitud máxima especificada para una columna de longitud variable.
+Si se ejecuta correctamente, la parte deseada de un valor de columna para la columna especificada se establece con los datos copiados del búfer de entrada. Es posible que el conjunto de datos se haya truncado si superó la longitud máxima especificada para una columna de longitud variable.
 
-En caso de error, la ubicación del cursor se deja sin cambios y no se actualizan datos de valor de columna en el búfer de copia.
+En caso de error, la ubicación del cursor se deja sin cambios y no se actualizan datos de valores de columna en el búfer de copia.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-El establecimiento de valores largos, valores para columnas [JET_coltypLongBinary](./jet-coltyp.md) de tipo [JET_coltypLongText](./jet-coltyp.md) o [JET_coltypLongBinary](./jet-coltyp.md), debe realizarse solo cuando la sesión de llamada está en una transacción. Si la sesión de llamada no está en una transacción, las modificaciones en los valores largos que se almacenan por separado se pueden realizar completamente incluso cuando la operación de actualización se cancele más adelante. Si la sesión de llamada está en una transacción, los efectos de la actualización se pueden revertir completamente cancelando la actualización y revierte la transacción de sesión.
+Establecer valores largos, valores para columnas [JET_coltypLongBinary](./jet-coltyp.md) de tipo [JET_coltypLongText](./jet-coltyp.md) o [JET_coltypLongBinary](./jet-coltyp.md), debe realizarse solo cuando la sesión de llamada está en una transacción. Si la sesión de llamada no está en una transacción, las modificaciones en los valores largos que se almacenan por separado pueden estar totalmente confirmadas incluso cuando la operación de actualización se cancele más adelante. Si la sesión de llamada está en una transacción, los efectos de la actualización se pueden revertir completamente cancelando la actualización y revierte la transacción de sesión.
 
 Las actualizaciones de índice no se realizan como resultado de **las operaciones de JetSetColumn.** En su lugar, los índices solo se actualizan una vez completadas todas las modificaciones de columna y se [llama a JetUpdate.](./jetupdate-function.md) Esto permite la actualización más eficaz de los índices cuando los índices implican la modificación de más de una columna.
 
-Un registro tiene un tamaño limitado en función del tamaño de página de la base de datos. Los valores largos del registro de más de cinco bytes se almacenarán separados del registro en caso de que los datos del registro superen su límite como resultado de una **operación JetSetColumn.** El error JET_errRecordTooBig solo se devolverá después de que todos los datos de la columna de registro separable se hayan almacenado por separado del registro y el registro supere el límite de tamaño del registro.
+Un registro tiene un tamaño limitado en función del tamaño de página de la base de datos. Los valores long del registro de más de cinco bytes se almacenarán independientes del registro si los datos del registro superan su límite como resultado de una **operación JetSetColumn.** El error JET_errRecordTooBig solo se devolverá después de que todos los datos de la columna de registro separable se hayan almacenado por separado del registro y el registro supere el límite de tamaño del registro.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

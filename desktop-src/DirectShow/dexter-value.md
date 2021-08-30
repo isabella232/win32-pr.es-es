@@ -1,7 +1,7 @@
 ---
-description: Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume a lo largo de la transición o efecto.
+description: Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume durante la duración de la transición o efecto.
 ms.assetid: 3b1c35cf-f1f7-4f2c-8d94-1aaae4116833
-title: DEXTER_VALUE estructura (QEDIT. h)
+title: DEXTER_VALUE estructura (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 930b828e1b715cfcb53275192ed76a7df7d116ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e8e76636a28f1eaa8f3bd948c29e4ab6b2440c75bb4265f6d3c1bf281599bbf6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051955"
 ---
-# <a name="dexter_value-structure"></a>Estructura del valor de DEXTERity \_
+# <a name="dexter_value-structure"></a>ESTRUCTURA VALUE DE LA ESTRUCTURA DE VALUE DE LA PROPIEDAD \_
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume a lo largo de la transición o efecto.
+Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume durante la duración de la transición o efecto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,31 +46,31 @@ typedef struct {
 
 <dl> <dt>
 
-**v**
+**V**
 </dt> <dd>
 
 Valor de la propiedad.
 
 </dd> <dt>
 
-**RT**
+**Rt**
 </dt> <dd>
 
-Hora a la que la propiedad asume el valor, en relación con el inicio de la transición o efecto.
+Hora a la que la propiedad asume el valor, en relación con el inicio de la transición o el efecto.
 
 </dd> <dt>
 
 **dwInterp**
 </dt> <dd>
 
-Marca que indica cómo progresa la propiedad desde el valor anterior a este valor. Debe ser una de las siguientes:
+Marca que indica cómo progresa la propiedad del valor anterior a este valor. Debe ser una de las siguientes:
 
 
 
 | Value                                                                                                                                                                           | Significado                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <span id="DEXTERF_JUMP"></span><span id="dexterf_jump"></span><dl> <dt>**salto de DEXTERF \_**</dt> </dl>                      | La propiedad salta inmediatamente al nuevo valor en el momento especificado.<br/>     |
-| <span id="DEXTERF_INTERPOLATE"></span><span id="dexterf_interpolate"></span><dl> <dt>**DEXTERF \_ interpolación**</dt> </dl> | La propiedad se interpola linealmente a lo largo del tiempo desde el valor anterior.<br/> |
+| <span id="DEXTERF_JUMP"></span><span id="dexterf_jump"></span><dl> <dt>**JUMP \_ DE**</dt> </dl>                      | La propiedad salta al instante al nuevo valor en el momento especificado.<br/>     |
+| <span id="DEXTERF_INTERPOLATE"></span><span id="dexterf_interpolate"></span><dl> <dt>**INTERPOLACIÓN \_ DE INTERPOLACIÓN**</dt> </dl> | La propiedad se interpola linealmente a lo largo del tiempo con respecto al valor anterior.<br/> |
 
 
 
@@ -84,7 +84,7 @@ Marca que indica cómo progresa la propiedad desde el valor anterior a este valo
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>QEDIT. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Qedit.h</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Marca que indica cómo progresa la propiedad desde el valor anterior a este valo
 [**IPropertySetter**](ipropertysetter.md)
 </dt> <dt>
 
-[**parámetro DEXTERity \_**](dexter-param.md)
+[**PARAM DE \_**](dexter-param.md)
 </dt> </dl>
 
  

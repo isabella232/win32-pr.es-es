@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_SETHORIZONTALEXTENT (Winuser. h)
-description: Una aplicación envía el \_ mensaje CB SETHORIZONTALEXTENT para establecer el ancho, en píxeles, por el que un cuadro de lista se puede desplazar horizontalmente (el ancho desplazable).
+title: CB_SETHORIZONTALEXTENT mensaje (Winuser.h)
+description: Una aplicación envía el mensaje CB SETHORIZONTALEXTENT para establecer el ancho, en píxeles, por el que un cuadro de lista se puede desplazar \_ horizontalmente (el ancho desplazable).
 ms.assetid: 85e8ff4f-ad9a-451c-b791-bd442b32d716
 keywords:
-- CB_SETHORIZONTALEXTENT controles de mensajes de Windows
+- CB_SETHORIZONTALEXTENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f51e505f36f7cfd3fa47644a288db4a97ba89ca4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8aac1fc0d10a38b292a4f37b3b170060d7e76ef5c8d303f39180b3f5063ffee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089025"
 ---
-# <a name="cb_sethorizontalextent-message"></a>\_Mensaje SETHORIZONTALEXTENT CB
+# <a name="cb_sethorizontalextent-message"></a>Mensaje \_ CB SETHORIZONTALEXTENT
 
-Una aplicación envía el mensaje **CB \_ SETHORIZONTALEXTENT** para establecer el ancho, en píxeles, por el que un cuadro de lista se puede desplazar horizontalmente (el ancho desplazable). Si el ancho del cuadro de lista es menor que este valor, la barra de desplazamiento horizontal se desplaza horizontalmente por los elementos del cuadro de lista. Si el ancho del cuadro de lista es igual o mayor que este valor, la barra de desplazamiento horizontal está oculta o, si el cuadro combinado tiene el [**estilo \_ DISABLENOSCROLL de CBS**](combo-box-styles.md) , deshabilitado.
+Una aplicación envía el mensaje **\_ CB SETHORIZONTALEXTENT** para establecer el ancho, en píxeles, por el que un cuadro de lista se puede desplazar horizontalmente (el ancho desplazable). Si el ancho del cuadro de lista es menor que este valor, la barra de desplazamiento horizontal desplaza horizontalmente los elementos del cuadro de lista. Si el ancho del cuadro de lista es igual o mayor que este valor, la barra de desplazamiento horizontal está oculta o, si el cuadro combinado tiene el estilo [**\_ DISABLENOSCROLL de CBS,**](combo-box-styles.md) deshabilitado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,11 +47,11 @@ Este parámetro no se utiliza.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

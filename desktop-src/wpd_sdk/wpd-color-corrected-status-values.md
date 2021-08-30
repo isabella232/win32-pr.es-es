@@ -1,7 +1,7 @@
 ---
-description: El \_ \_ \_ \_ tipo de enumeración valores de estado corregidos en color de WPD describe el estado de corrección del color de un archivo de imagen o vídeo.
+description: El tipo de \_ enumeración WPD COLOR CORRECTED STATUS VALUES describe el estado de corrección \_ de color de un archivo de imagen o \_ \_ vídeo.
 ms.assetid: af129a1b-7760-4339-adf7-3f3c17cebde2
-title: Enumeración WPD_COLOR_CORRECTED_STATUS_VALUES (PortableDevice. h)
+title: WPD_COLOR_CORRECTED_STATUS_VALUES enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: ec6bfcaa3933bb70c3064f829e701509e3ff32f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 94caa345c0c7bee6c500109d6ebc6cbedd0aefae5254a254dbc5af907e0be737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089595"
 ---
-# <a name="wpd_color_corrected_status_values-enumeration"></a>\_ \_ \_ Enumeración de valores de estado corregidos en color de WPD \_
+# <a name="wpd_color_corrected_status_values-enumeration"></a>Enumeración \_ WPD COLOR \_ CORRECTED \_ STATUS \_ VALUES
 
-El tipo de enumeración **\_ \_ \_ \_ valores de estado corregidos en color de WPD** describe el estado de corrección del color de un archivo de imagen o vídeo.
+El **tipo de \_ enumeración WPD COLOR \_ CORRECTED STATUS \_ \_ VALUES** describe el estado de corrección de color de un archivo de imagen o vídeo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,30 +41,30 @@ typedef enum WPD_COLOR_CORRECTED_STATUS_VALUES {
 
 <dl> <dt>
 
-<span id="WPD_COLOR_CORRECTED_STATUS_NOT_CORRECTED"></span><span id="wpd_color_corrected_status_not_corrected"></span>**\_Estado corregido de color de WPD \_ \_ \_ no \_ corregido**
+<span id="WPD_COLOR_CORRECTED_STATUS_NOT_CORRECTED"></span><span id="wpd_color_corrected_status_not_corrected"></span>**ESTADO CORRECTO \_ DEL COLOR \_ WPD NO \_ \_ \_ CORREGIDO**
 </dt> <dd>
 
 No se ha corregido el color de la imagen.
 
 </dd> <dt>
 
-<span id="WPD_COLOR_CORRECTED_STATUS_CORRECTED"></span><span id="wpd_color_corrected_status_corrected"></span>**se \_ \_ corrigió el \_ Estado corregido de color de WPD \_**
+<span id="WPD_COLOR_CORRECTED_STATUS_CORRECTED"></span><span id="wpd_color_corrected_status_corrected"></span>**ESTADO CORRECTO \_ DEL COLOR \_ WPD \_ \_ CORREGIDO**
 </dt> <dd>
 
-Se corrigió el color de la imagen.
+Se ha corregido el color de la imagen.
 
 </dd> <dt>
 
-<span id="WPD_COLOR_CORRECTED_STATUS_SHOULD_NOT_BE_CORRECTED"></span><span id="wpd_color_corrected_status_should_not_be_corrected"></span>**el \_ Estado corrección del color de WPD \_ \_ \_ \_ no debe \_ \_ corregirse**
+<span id="WPD_COLOR_CORRECTED_STATUS_SHOULD_NOT_BE_CORRECTED"></span><span id="wpd_color_corrected_status_should_not_be_corrected"></span>**EL \_ ESTADO CORRECTO DEL COLOR \_ WPD \_ NO DEBE \_ \_ \_ \_ CORREGIRSE**
 </dt> <dd>
 
-La imagen no ha sido, y no debe ser, se ha corregido el color.
+No se ha corregido el color de la imagen ni debe corregirse.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Indica el estado de corrección del color de una imagen. Esta enumeración se usa en la propiedad de [ \_ \_ \_ \_ Estado corrección de color de imagen de WPD](image-properties.md) .
+Indica el estado corregido del color de una imagen. Esta enumeración la usa la propiedad [ \_ WPD IMAGE \_ COLOR \_ CORRECTED \_ STATUS.](image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Indica el estado de corrección del color de una imagen. Esta enumeración se us
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: IBasicDevice PhysicalAddresses, método
+title: Método IBasicDevice PhysicalAddresses
 description: Devuelve un vector de direcciones físicas.
 ms.assetid: 85F48EE3-14A1-46DA-A3C3-F94A8A43CF92
 keywords:
-- Método PhysicalAddresses API de streaming de multimedia
-- Método PhysicalAddresses API de streaming de multimedia, interfaz IBasicDevice
-- Interfaz IBasicDevice API de streaming de multimedia, método PhysicalAddresses
+- PhysicalAddresses method Media Streaming API
+- PhysicalAddresses method Media Streaming API , IBasicDevice interface
+- IBasicDevice interface Media Streaming API , método PhysicalAddresses
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2f1cd87435c78e1f6877d1bb6afd1b38981b05dc
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 3721b7472e952d2535c892dc562125ba6d2d0ce518e8bb9c0fe7e86a4e8fb33c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011805"
 ---
-# <a name="ibasicdevicephysicaladdresses-method"></a>IBasicDevice::P método hysicalAddresses
+# <a name="ibasicdevicephysicaladdresses-method"></a>IBasicDevice::P hysicalAddresses (método)
 
 Devuelve un vector de direcciones físicas.
 
@@ -41,7 +41,7 @@ HRESULT PhysicalAddresses(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
 Recibe una colección enumerable de punteros a direcciones físicas.
@@ -50,13 +50,13 @@ Recibe una colección enumerable de punteros a direcciones físicas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

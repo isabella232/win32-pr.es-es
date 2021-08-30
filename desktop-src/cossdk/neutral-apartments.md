@@ -1,23 +1,23 @@
 ---
-description: COM+ incorpora apartamentos neutros para simplificar la programación en entornos multiproceso. El apartamento neutro es el modelo preferido para COM+ para los componentes sin interfaz de usuario.
+description: COM+ presenta departamentos neutros para simplificar la programación en entornos multiproceso. El apartamento neutro es el modelo preferido para COM+ para los componentes sin interfaz de usuario.
 ms.assetid: 679742af-7c04-4b0e-822a-a43e1aafa936
-title: Apartamentos neutros
+title: NeutralEstes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ac3bdff2670e4f99ad94af20278eaca6a38861e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: beea8fbc3d007b26274d4a2b9d4cfd1ac0b604991ad9039b5053ccf534a5c6d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070435"
 ---
-# <a name="neutral-apartments"></a>Apartamentos neutros
+# <a name="neutral-apartments"></a>NeutralEstes
 
-COM+ incorpora apartamentos neutros para simplificar la programación en entornos multiproceso. El apartamento neutro es el modelo preferido para COM+ para los componentes sin interfaz de usuario.
+COM+ presenta departamentos neutros para simplificar la programación en entornos multiproceso. El apartamento neutro es el modelo preferido para COM+ para los componentes sin interfaz de usuario.
 
-En el pasado, para evitar cuellos de botella, los desarrolladores de COM+ que requieran la escalabilidad del servidor tenían que implementar componentes de subprocesamiento libre. sin embargo, los modelos de subprocesamiento libre son complicados de implementar porque deben tratar el acceso de interbloqueo. En apartamentos neutros, los objetos siguen las instrucciones para apartamentos multiproceso pero se pueden ejecutar en cualquier tipo de subproceso. Cuando un subproceso se ejecuta en un apartamento neutro, se recibe el contexto del objeto sin que se produzca un cambio de subproceso.
+En el pasado, para evitar cuellos de botella, los desarrolladores de COM+ que requerían escalabilidad del servidor tenían que implementar componentes sin subprocesos. sin embargo, los modelos de subprocesamiento libre son complicados de implementar porque deben tratar con el acceso de interbloqueo. En los departamentos neutros, los objetos siguen las directrices para los departamentos multiproceso, pero se pueden ejecutar en cualquier tipo de subproceso. Cuando un subproceso se ejecuta en un apartamento neutro, el contexto del objeto se recibe sin provocar un modificador de subproceso.
 
-Cada proceso solo puede tener un apartamento neutro. Para seleccionar un apartamento neutro, utilice la siguiente configuración del registro:
+Cada proceso solo puede tener un apartamento neutro. Para seleccionar un contenedor neutro, use la siguiente configuración del Registro:
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
@@ -26,9 +26,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
          ThreadingModel = Neutral
 ```
 
-Los componentes que tienen interfaces de usuario deben seguir usando apartamentos de un solo subproceso como modelo preferido. Para seleccionar un contenedor uniproceso, utilice la siguiente configuración del registro:
+Los componentes que tienen interfaces de usuario deben seguir usando los departamentos de un solo subproceso como modelo preferido. Para seleccionar un contenedor de un solo subproceso, use la siguiente configuración del Registro:
 
-**ThreadingModel** = Apartamento
+**ThreadingModel** = Apartment
 
  
 

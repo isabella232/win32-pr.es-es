@@ -1,19 +1,19 @@
 ---
 description: Se envía inmediatamente antes de que el IME genere la cadena de composición como resultado de una pulsación de tecla. Una ventana recibe este mensaje a través de su función WindowProc.
 ms.assetid: 2740d009-8685-4f70-9b01-67b71f4ddcbd
-title: Mensaje de WM_IME_STARTCOMPOSITION (Winuser. h)
+title: WM_IME_STARTCOMPOSITION mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7bd9a93b4c6c2e8dba6658c84b5f431dd9a54e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c1c45e429277fc2621956646f2f4d5c1162a5ad516b90fd2d4d1e60ffe01e30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086485"
 ---
-# <a name="wm_ime_startcomposition-message"></a>\_Mensaje STARTCOMPOSITION de IME de WM \_
+# <a name="wm_ime_startcomposition-message"></a>Mensaje \_ \_ STARTCOMPOSITION de WM IME
 
-Se envía inmediatamente antes de que el IME genere la cadena de composición como resultado de una pulsación de tecla. Una ventana recibe este mensaje a través de su función [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Se envía inmediatamente antes de que el IME genere la cadena de composición como resultado de una pulsación de tecla. Una ventana recibe este mensaje a través de su [*función WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -37,11 +37,11 @@ Este mensaje no tiene parámetros.
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este mensaje es una notificación a una ventana de IME para abrir su ventana de composición. Una aplicación debe procesar este mensaje si muestra los propios caracteres de composición.
 
-Si una aplicación ha creado una ventana de IME, debe pasar este mensaje a esa ventana. La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) procesa el mensaje pasándolo a la ventana IME predeterminada.
+Si una aplicación ha creado una ventana IME, debe pasar este mensaje a esa ventana. La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) procesa el mensaje al pasarlo a la ventana de IME predeterminada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Si una aplicación ha creado una ventana de IME, debe pasar este mensaje a esa v
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Si una aplicación ha creado una ventana de IME, debe pasar este mensaje a esa v
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Mensajes del administrador de métodos de entrada](input-method-manager-messages.md)
+[Mensajes del Administrador de métodos de entrada](input-method-manager-messages.md)
 </dt> </dl>
 
  

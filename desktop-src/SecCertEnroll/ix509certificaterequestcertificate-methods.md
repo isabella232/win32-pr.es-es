@@ -4,16 +4,16 @@ ms.assetid: F526D6FC-02F2-4337-9CF3-F065242E70B1
 title: Métodos IX509CertificateRequestCertificate
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9cf6874d1583ed7663a5c16f489efe88436387f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f1ec72c7e2a6c2b0767cdefa81109fbb680dc606a99bc82232caf76d4087ff0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976325"
 ---
 # <a name="ix509certificaterequestcertificate-methods"></a>Métodos IX509CertificateRequestCertificate
 
-La interfaz [**IX509CertificateRequestCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcertificate) expone los métodos siguientes.
+La [**interfaz IX509CertificateRequestCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcertificate) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

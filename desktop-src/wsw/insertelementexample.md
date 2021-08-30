@@ -1,25 +1,25 @@
 ---
 title: InsertElementExample
-description: En este ejemplo se muestra cómo insertar un elemento en un búfer XML.
+description: En este ejemplo se muestra cómo insertar un elemento en un búfer xml.
 ms.assetid: 98fed487-77f8-4224-9a73-b20afcb01d47
 keywords:
 - InsertElementExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efdcd0e6cc2b36bcdd1bb3e9ecbedfccdf1b8b3f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 243d5a515c75040f4a16aa140ca397e622489ecd28d31989baabe0be3936db9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089545"
 ---
 # <a name="insertelementexample"></a>InsertElementExample
 
-En este ejemplo se muestra cómo insertar un elemento en un búfer XML.
+En este ejemplo se muestra cómo insertar un elemento en un búfer xml.
 
-## <a name="insertelementcpp"></a>InsertElement. cpp
+## <a name="insertelementcpp"></a>InsertElement.cpp
 
 
 ```C++
@@ -292,9 +292,9 @@ Exit:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

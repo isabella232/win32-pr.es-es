@@ -1,7 +1,7 @@
 ---
-description: 'El método move coloca y cambia el tamaño del cuadro de diálogo. Este método implementa el método IPropertyPage:: Move.'
+description: El método Move coloca y cambia el tamaño del cuadro de diálogo. Este método implementa el método IPropertyPage::Move.
 ms.assetid: b6cabb5c-196d-489b-9dd4-194d26f4de83
-title: Método CBasePropertyPage. Move (Cprop. h)
+title: Método CBasePropertyPage.Move (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4d293f6ccb6a1bcd730ce997367c179f1747f66e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 274295c08895fe28b0f3abe3438496719f7fcdfa2dae486401de6babb624cc31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052555"
 ---
-# <a name="cbasepropertypagemove-method"></a>CBasePropertyPage. Move (método)
+# <a name="cbasepropertypagemove-method"></a>CBasePropertyPage.Move (método)
 
-El `Move` método coloca y cambia el tamaño del cuadro de diálogo. Este método implementa el método **IPropertyPage:: Move** .
+El `Move` método coloca y cambia el tamaño del cuadro de diálogo. Este método implementa el **método IPropertyPage::Move.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ HRESULT Move(
 *prect* 
 </dt> <dd>
 
-Puntero a una estructura **Rect** que contiene la información de posición.
+Puntero a una **estructura RECT** que contiene la información de posicionamiento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                  | Descripción                           |
 |----------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Correcto.<br/>                   |
-| <dl> <dt>**\_puntero E**</dt> </dl>    | Argumento de puntero **nulo** .<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Error inesperado.<br/>        |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Correcto.<br/>                   |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | **Argumento de** puntero NULL.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Error inesperado.<br/>        |
 
 
 
@@ -71,8 +71,8 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

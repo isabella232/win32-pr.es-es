@@ -4,9 +4,9 @@ description: Contiene la instancia de dispositivo de Configuration Manager del d
 ms.assetid: 2a3e7001-7889-417f-8f9d-cc7a1776249f
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad CmDeviceInstance
-- Propiedad CmDeviceInstance Servicios de Escritorio remoto, interfaz IMsRdpDeviceV2
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceV2, propiedad CmDeviceInstance
+- Propiedad CmDeviceInstance Servicios de Escritorio remoto
+- Propiedad CmDeviceInstance Servicios de Escritorio remoto interfaz , IMsRdpDeviceV2
+- Interfaz IMsRdpDeviceV2 Servicios de Escritorio remoto , propiedad CmDeviceInstance
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec036d5e2497f45fff389ec8af457a05fcc9fef9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28843563cef37e09a9901a6b78285bf3f30b100e7e578c25666259c62b9eeb60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099375"
 ---
-# <a name="imsrdpdevicev2cmdeviceinstance-property"></a>IMsRdpDeviceV2:: CmDeviceInstance (propiedad)
+# <a name="imsrdpdevicev2cmdeviceinstance-property"></a>IMsRdpDeviceV2::CmDeviceInstance, propiedad
 
 Contiene la instancia de dispositivo de Configuration Manager del dispositivo.
 

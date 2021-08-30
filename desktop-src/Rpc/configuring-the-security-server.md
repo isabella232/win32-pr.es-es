@@ -1,33 +1,33 @@
 ---
 title: Configuración del servidor de seguridad
-description: En el procedimiento siguiente se detalla la configuración del servidor de seguridad para Microsoft RPC.
+description: En el procedimiento siguiente se detalla la configuración del servidor de seguridad para Rpc de Microsoft.
 ms.assetid: 959d06b0-3ddb-4090-8686-82a44462a28e
 keywords:
-- RPC llamada a procedimiento remoto, tareas, configurar el servidor de seguridad
+- Llamada a procedimiento remoto RPC, tareas, configuración del servidor de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bf4a5e2a7d89a0f9137ff36df34b6040e70ea8f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 11f7f030e654b8b87ca0fb199d8973ec1dd2258df265eef78a24e3dcc7792005
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073455"
 ---
 # <a name="configuring-the-security-server"></a>Configuración del servidor de seguridad
 
-En el procedimiento siguiente se detalla la configuración del servidor de seguridad para Microsoft RPC.
+En el procedimiento siguiente se detalla la configuración del servidor de seguridad para Rpc de Microsoft.
 
 **Para configurar el servidor de seguridad para RPC**
 
-1.  Inicie el panel de control.
-2.  En el panel de control, haga clic en el icono **redes** . Aparece el cuadro de diálogo **configuración de red** .
-3.  En la lista **software de red instalado** , seleccione **configuración de RPC**. Aparece el cuadro de diálogo **configuración de RPC** .
-4.  En la lista **proveedor de servicios de seguridad** , seleccione uno o varios proveedores de seguridad.
-5.  Haga clic en **OK**.
+1.  Inicie el Panel de control.
+2.  En Panel de control, haga clic en **el icono** Redes. Aparece **el cuadro de diálogo Configuración** red.
+3.  En la **lista Software de red** instalado, seleccione Configuración de **RPC.** Aparece el cuadro de diálogo Configuración de **RPC.**
+4.  En la **lista Proveedor de servicios de** seguridad , seleccione uno o varios proveedores de seguridad.
+5.  Haga clic en **Aceptar**.
 
- 
+ 
 
- 
+ 
 
 
 

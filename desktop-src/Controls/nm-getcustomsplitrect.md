@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_GETCUSTOMSPLITRECT (commctrl. h)
-description: Enviado por un control de botón a su elemento primario para obtener medidas para los dos rectángulos del botón de expansión. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_GETCUSTOMSPLITRECT de notificación (Commctrl.h)
+description: Enviado por un control de botón a su elemento primario para obtener medidas para los dos rectángulos del botón de división. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: ce72778d-3cca-46a4-9d05-40954a18681d
 keywords:
-- NM_GETCUSTOMSPLITRECT controles de código de notificación de Windows
+- NM_GETCUSTOMSPLITRECT código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97b839540da7e07069fdf56ed656ed8772d029eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5ab55083b830ef3ba8a0e22250d4048134fdda100bf798a8b567c13c8a949e57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088765"
 ---
-# <a name="nm_getcustomsplitrect-notification-code"></a>Código de notificación de NM \_ GETCUSTOMSPLITRECT
+# <a name="nm_getcustomsplitrect-notification-code"></a>Código \_ de notificación NM GETCUSTOMSPLITRECT
 
-Enviado por un control de botón a su elemento primario para obtener medidas para los dos rectángulos del botón de expansión. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de botón a su elemento primario para obtener medidas para los dos rectángulos del botón de división. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,27 +41,27 @@ NM_GETCUSTOMSPLITRECT
 *lParam* 
 </dt> <dd>
 
-Un puntero a un [**NMCUSTOMSPLITRECTINFO**](/windows/win32/api/commctrl/ns-commctrl-nmcustomsplitrectinfo) para recibir información de rectángulos delimitadores. La estructura **NMCUSTOMSPLITRECTINFO** se envía con el código de notificación como una solicitud para que el elemento primario proporcione medidas para los rectángulos del botón de expansión.
+Puntero a [**NMCUSTOMSPLITRECTINFO para**](/windows/win32/api/commctrl/ns-commctrl-nmcustomsplitrectinfo) recibir información de rectángulos delimitadores. La **estructura NMCUSTOMSPLITRECTINFO** se envía con el código de notificación como una solicitud para que el elemento primario proporcione medidas para los rectángulos del botón de división.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve [**CDRF \_ SKIPDEFAULT**](cdrf-constants.md) para indicar al control de botón que use los valores devueltos en la estructura [**NMCUSTOMSPLITRECTINFO**](/windows/win32/api/commctrl/ns-commctrl-nmcustomsplitrectinfo) ; de lo contrario, devuelve [**CDRF de \_ forma predeterminada**](cdrf-constants.md).
+Devuelve [**CDRF \_ SKIPDEFAULT**](cdrf-constants.md) para que indique al control de botón que use los valores devueltos en la estructura [**NMCUSTOMSPLITRECTINFO; de**](/windows/win32/api/commctrl/ns-commctrl-nmcustomsplitrectinfo) lo contrario, devuelve [**CDRF \_ DODEFAULT.**](cdrf-constants.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este código de notificación se envía por un control de botón antes de dibujarse. El botón debe tener el estilo [**BS \_ SPLITBUTTON**](button-styles.md) o [**BS \_ DEFSPLITBUTTON**](button-styles.md). Si los rectángulos devueltos al control en *lParam* no son válidos, se omiten.
+Un control de botón envía este código de notificación antes de dibujarlo. El botón debe ser de estilo [**BS \_ SPLITBUTTON**](button-styles.md) o [**BS \_ DEFSPLITBUTTON**](button-styles.md). Si los rectángulos devueltos al control *en lParam* no son válidos, se omiten.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

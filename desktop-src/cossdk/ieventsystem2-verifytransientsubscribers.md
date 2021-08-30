@@ -1,7 +1,7 @@
 ---
-description: Comprueba la existencia de todos los suscriptores transitorios en el almacén de datos. Al llamar a este método, puede asegurarse de que todos los suscriptores transitorios enumerados en el almacén de datos estén activos.
+description: Comprueba la existencia de todos los suscriptores transitorios en el almacén de datos. Al llamar a este método, puede asegurarse de que todos los suscriptores transitorios enumerados en el almacén de datos están activos.
 ms.assetid: fffdde33-e960-42ef-a089-8ea8a6f33d52
-title: 'IEventSystem2:: VerifyTransientSubscribers (método)'
+title: IEventSystem2::VerifyTransientSubscribers (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 4415f405b95f341b645ca1dccbf254df2ffc7167
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9b147a8910ef3574b93389088af798a84265dd7f929b458e9bd94232cc586a17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070615"
 ---
-# <a name="ieventsystem2verifytransientsubscribers-method"></a>IEventSystem2:: VerifyTransientSubscribers (método)
+# <a name="ieventsystem2verifytransientsubscribers-method"></a>IEventSystem2::VerifyTransientSubscribers (método)
 
-Comprueba la existencia de todos los suscriptores transitorios en el almacén de datos. Al llamar a este método, puede asegurarse de que todos los suscriptores transitorios enumerados en el almacén de datos estén activos.
+Comprueba la existencia de todos los suscriptores transitorios en el almacén de datos. Al llamar a este método, puede asegurarse de que todos los suscriptores transitorios enumerados en el almacén de datos están activos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperado, e \_ FAIL y S \_ OK.
+Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL y S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase de sesión'
+description: 'Más información sobre: Clase session'
 title: Clase de sesión
 TOCTitle: Session class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Session
@@ -24,27 +24,27 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1bbfa62205965237d0dc2416b94c9e8b130ce31e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b24dceeb86f22f8b72f227f9f5649960aaf8ae941777081f183af106004b85d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115565"
 ---
 # <a name="session-class"></a>Clase de sesión
 
-Una clase que encapsula una JET_SESID en un objeto descartable.
+Clase que encapsula un JET_SESID en un objeto descartable.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. EsentResource](./esentresource-class.md)  
-    Microsoft. ISAM. esent. Interop. Session  
+  [Microsoft.Isam.Esent.Interop.EsentResource](./esentresource-class.md)  
+    Microsoft.Isam.Esent.Interop.Session  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,4 +68,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de sesión](./session-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-description: Otra forma de crear un espacio de nombres es usar el código Managed Object Format (MOF) para crear un espacio de nombres relacionado. Un espacio de nombres relacionado es un espacio de nombres que no existe como elemento secundario del espacio de nombres actual.
+description: Otra manera de crear un espacio de nombres es usar Managed Object Format (MOF) para crear un espacio de nombres relacionado. Un espacio de nombres relacionado es un espacio de nombres que no existe como elemento secundario del espacio de nombres actual.
 ms.assetid: 1a3f8569-e725-4158-9a2b-b440b9247925
 ms.tgt_platform: multiple
 title: Crear un espacio de nombres relacionado con código MOF
@@ -10,31 +10,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4fcbf6e16ad51ab9a0df63e3497735b07cd6afc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 282ac9f23abcfb98c9c46d6030d679235d838208e4934366c2e10a0380a5df0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071495"
 ---
 # <a name="creating-a-sibling-namespace-with-mof-code"></a>Crear un espacio de nombres relacionado con código MOF
 
-Otra forma de crear un espacio de nombres es usar el código Managed Object Format (MOF) para crear un espacio de nombres relacionado. Un espacio de nombres relacionado es un espacio de nombres que no existe como elemento secundario del espacio de nombres actual.
+Otra manera de crear un espacio de nombres es usar Managed Object Format (MOF) para crear un espacio de nombres relacionado. Un espacio de nombres relacionado es un espacio de nombres que no existe como elemento secundario del espacio de nombres actual.
 
 En el procedimiento siguiente se describe cómo crear un espacio de nombres relacionado con código MOF.
 
 **Para crear un espacio de nombres relacionado con código MOF**
 
-1.  Inserte el comando [**\# pragma namespace**](pragma-namespace.md) en el código MOF antes de la declaración de espacio de nombres.
+1.  Inserte el [**\# comando pragma namespace**](pragma-namespace.md) en el código MOF antes de la declaración del espacio de nombres.
 
-    El comando [**\# pragma namespace**](pragma-namespace.md) indica a WMI dónde debe crear las instancias que siguen a la Directiva.
+    El [**\# comando pragma namespace**](pragma-namespace.md) indica a WMI dónde crear las instancias de siguiendo la directiva .
 
-2.  Cree una instancia de la clase [**\_ \_ namespace**](--namespace.md) .
-3.  Compile el código con la utilidad [MOFCOMP](mofcomp.md) o la interfaz [**IMofCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) .
+2.  Cree una instancia de la clase [**\_ \_ Namespace.**](--namespace.md)
+3.  Compile el código con [la utilidad mofcomp](mofcomp.md) o la [**interfaz IMofCompiler.**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler)
 
-    Para obtener más información, vea [compilar archivos MOF](compiling-mof-files.md).
+    Para obtener más información, [vea Compilar archivos MOF.](compiling-mof-files.md)
 
-En el siguiente ejemplo de código MOF se describe cómo crear un espacio de nombres como un elemento relacionado con el espacio de nombres "root \\ CIMv2".
+En el siguiente ejemplo de código MOF se describe cómo crear un espacio de nombres como un elemento relacionado con el espacio de nombres \\ "ROOT CIMv2".
 
 ``` syntax
 #pragma namespace("\\\\.\\Root")

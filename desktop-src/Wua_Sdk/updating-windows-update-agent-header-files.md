@@ -1,19 +1,19 @@
 ---
-description: Actualización de los archivos de encabezado de la API del agente de Windows Update (WUA).
+description: Cómo actualizar para los archivos de encabezado Windows API del Agente de actualización (WUA).
 ms.assetid: 241052d0-d704-42e2-b6f3-03f3fa16b645
-title: Actualización de los archivos de encabezado del agente Windows Update
+title: Actualización de Windows actualizar archivos de encabezado del agente
 ms.topic: article
 ms.date: 06/20/2019
-ms.openlocfilehash: 27cdea5011ac5ab8e740005ecd6895cbf05da68b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 721e0024846cb77fed3be07d7c49d329eec101247241242d9097620dfd0e57a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104081996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071295"
 ---
-# <a name="updating-windows-update-agent-header-files"></a>Actualización de los archivos de encabezado del agente Windows Update
+# <a name="updating-windows-update-agent-header-files"></a>Actualización de Windows actualizar archivos de encabezado del agente
 
-Las API del agente de Windows Update anteriormente eran una descarga independiente. Ahora se incluyen como parte de la Windows SDK. Para descargar el Windows SDK vaya a [esta página](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+Las WINDOWS update agent anteriormente eran una descarga independiente. Ahora se incluyen como parte del SDK de Windows. Para descargar el SDK Windows, vaya a [esta página](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-Para obtener más información sobre cómo actualizar WUA, consulte [actualización de Windows Update Agent](updating-the-windows-update-agent.md).
+Para obtener más información sobre cómo actualizar WUA, vea [Actualización Windows Update Agent](updating-the-windows-update-agent.md).
 

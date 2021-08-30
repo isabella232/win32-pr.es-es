@@ -1,19 +1,19 @@
 ---
-description: La velocidad de fotogramas mínima admitida por un dispositivo de captura de vídeo, en fotogramas por segundo.
+description: Velocidad mínima de fotogramas que admite un dispositivo de captura de vídeo, en fotogramas por segundo.
 ms.assetid: d3725796-f683-4ca1-a37f-22c40fff0b76
-title: MF_MT_FRAME_RATE_RANGE_MIN atributo (mfapi. h)
+title: MF_MT_FRAME_RATE_RANGE_MIN atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9692927242eea7ec65b86572db455e610e30c711
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11253444255e3bac36cb4563e632ebe04d1782b0ae8edadabc08e34cf1d38a99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113795"
 ---
-# <a name="mf_mt_frame_rate_range_min-attribute"></a>\_ \_ \_ \_ Atributo min de intervalo de velocidad de fotogramas MF MT \_
+# <a name="mf_mt_frame_rate_range_min-attribute"></a>Atributo MF \_ MT FRAME RATE RANGE \_ \_ \_ \_ MIN
 
-La velocidad de fotogramas mínima admitida por un dispositivo de captura de vídeo, en fotogramas por segundo.
+Velocidad mínima de fotogramas que admite un dispositivo de captura de vídeo, en fotogramas por segundo.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,19 +21,19 @@ La velocidad de fotogramas mínima admitida por un dispositivo de captura de ví
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**MFGetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributeratio).
+Para obtener este atributo, llame [**a MFGetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributeratio).
 
-Para establecer este atributo, llame a [**MFSetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributeratio).
+Para establecer este atributo, llame [**a MFSetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributeratio).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La velocidad de fotogramas se expresa como una proporción. Los 32 superiores del valor del atributo contienen el numerador, y los 32 bits inferiores contienen el denominador. Por ejemplo, si la velocidad de fotogramas es de 30 fotogramas por segundo (FPS), la relación es 30/1.
+La velocidad de fotogramas se expresa como una relación. Los 32 bits superiores del valor del atributo contienen el numerador y los 32 bits inferiores contienen el denominador. Por ejemplo, si la velocidad de fotogramas es de 30 fotogramas por segundo (fps), la proporción es de 30/1.
 
-Si el dispositivo de captura informa de una velocidad de fotogramas mínima, el origen de medios establece este atributo en el tipo de medio. La velocidad de fotogramas máxima se indica en el atributo [MF \_ MT \_ Frame \_ rate \_ Range \_ Max](mf-mt-frame-rate-range-max.md) . No se garantiza que el dispositivo admita todos los incrementos dentro de este intervalo.
+Si el dispositivo de captura informa de una velocidad de fotogramas mínima, el origen del medio establece este atributo en el tipo de medio. La velocidad máxima de fotogramas se especifica en el atributo [MF MT FRAME RATE RANGE \_ \_ \_ \_ \_ MAX.](mf-mt-frame-rate-range-max.md) No se garantiza que el dispositivo admita cada incremento dentro de este intervalo.
 
-Para establecer la velocidad de fotogramas del dispositivo, modifique primero el valor del atributo de [**\_ \_ \_ velocidad de fotogramas MF MT**](mf-mt-frame-rate-attribute.md) en el tipo de medio. A continuación, establezca el tipo de medio en el origen del medio.
+Para establecer la velocidad de fotogramas del dispositivo, modifique primero el valor del atributo [**MF \_ MT FRAME \_ \_ RATE**](mf-mt-frame-rate-attribute.md) en el tipo de medio. A continuación, establezca el tipo de medio en el origen de medios.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Cómo establecer la velocidad de fotogramas de captura de vídeo](how-to-set-the-video-capture-frame-rate.md)
@@ -63,7 +63,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 [Captura de vídeo](video-capture.md)
 </dt> <dt>
 
-[\_intervalo de \_ velocidad de fotogramas MF MT \_ \_ \_ máx.](mf-mt-frame-rate-range-max.md)
+[MF \_ MT \_ FRAME \_ RATE \_ RANGE \_ MAX](mf-mt-frame-rate-range-max.md)
 </dt> </dl>
 
  

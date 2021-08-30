@@ -5,16 +5,16 @@ ms.assetid: C1C8242F-B628-44A8-8A68-F9F789783A2C
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aea1d9122359e75d6ba417d4a3e5b7d640934602
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0eea30f4964f5668276521c1f04f44cd08b5cc0f96d04bc0b1cfc4a58eae897b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072295"
 ---
 # <a name="iremotedesktopclientsettings-methods"></a>Métodos IRemoteDesktopClientSettings
 
-La interfaz [**IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings) expone los métodos siguientes.
+La [**interfaz IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -30,24 +30,24 @@ Almacena el contenido especificado en el archivo RDP.
 [**Método GetRdpProperty**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-getrdpproperty)
 </dt> <dd>
 
-Recupera un valor de propiedad de RDP con nombre único.
+Recupera un único valor de propiedad RDP con nombre.
 
 </dd> <dt>
 
 [**Método RetrieveSettings**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-retrievesettings)
 </dt> <dd>
 
-Recupera el archivo RDP completo como una cadena.
+Recupera todo el archivo RDP como una cadena.
 
 </dd> <dt>
 
 [**Método SetRdpProperty**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclientsettings-setrdpproperty)
 </dt> <dd>
 
-Establece el valor de una sola propiedad de RDP con nombre.
+Establece el valor de una única propiedad RDP con nombre.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

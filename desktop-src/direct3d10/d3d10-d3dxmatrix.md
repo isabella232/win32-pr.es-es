@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: ba1b9533fe5dfa2cfd163a1f92b34a43d7dbd741
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0d2489031254dc3d97fd65690de208c0fa9fd37a3bdb2b039a6a8f076092edb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070175"
 ---
 # <a name="d3dxmatrix-structure-d3dx10mathh"></a>Estructura D3DXMATRIX (D3DX10Math.h)
 
-Matriz 4x4 que contiene métodos y sobrecargas de operador.
+Matriz 4x4 que contiene métodos y sobrecargas de operadores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -127,7 +127,7 @@ typedef struct _D3DMATRIX D3DXMATRIX, *LPD3DXMATRIX;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
