@@ -1,6 +1,6 @@
 ---
-title: Desenfoque de DWM en las constantes (dwmapi. h)
-description: Marcas usadas por la \_ estructura BLURBEHIND de DWM para indicar cuál de sus miembros contiene información válida.
+title: Desenfoque de DWM detrás de constantes (Dwmapi.h)
+description: Marcas usadas por la estructura \_ DWM BLURBEHIND para indicar cuál de sus miembros contiene información válida.
 ms.assetid: d6dd552c-1f3b-4f16-8705-f5016ed55d9e
 topic_type:
 - apiref
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbe08e0315d4c4b906cdb897ac7ad5dd34d50fbf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d714fadce30748d337f9b6ff7a0d0aee59dbcb61e12744141c25bb78f07fa69c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094615"
 ---
 # <a name="dwm-blur-behind-constants"></a>Desenfoque de DWM detrás de constantes
 
-Marcas usadas por la [**estructura \_ BLURBEHIND de DWM**](/windows/desktop/api/Dwmapi/ns-dwmapi-dwm_blurbehind) para indicar cuál de sus miembros contiene información válida.
+Marcas usadas por la [**estructura \_ DWM BLURBEHIND**](/windows/desktop/api/Dwmapi/ns-dwmapi-dwm_blurbehind) para indicar cuál de sus miembros contiene información válida.
 
 <dl> <dt>
 
-<span id="DWM_BB_ENABLE"></span><span id="dwm_bb_enable"></span>**DWM \_ BB \_ habilitado**
+<span id="DWM_BB_ENABLE"></span><span id="dwm_bb_enable"></span>**DWM \_ BB \_ ENABLE**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -35,7 +35,7 @@ Marcas usadas por la [**estructura \_ BLURBEHIND de DWM**](/windows/desktop/api/
 
 
 
-Se ha especificado un valor para el miembro **fEnable** .
+Se ha especificado un valor para el miembro **fEnable.**
 
 
 </dt> </dl> </dd> <dt>
@@ -48,7 +48,7 @@ Se ha especificado un valor para el miembro **fEnable** .
 
 
 
-Se ha especificado un valor para el miembro **hRgnBlur** .
+Se ha especificado un valor para el **miembro hRgnBlur.**
 
 
 </dt> </dl> </dd> <dt>
@@ -61,7 +61,7 @@ Se ha especificado un valor para el miembro **hRgnBlur** .
 
 
 
-Se ha especificado un valor para el miembro **fTransitionOnMaximized** .
+Se ha especificado un valor para el miembro **fTransitionOnMaximized.**
 
 
 </dt> </dl> </dd> </dl>
@@ -70,11 +70,11 @@ Se ha especificado un valor para el miembro **fTransitionOnMaximized** .
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Dwmapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Dwmapi.h</dt> </dl> |
 
 
 

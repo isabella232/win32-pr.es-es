@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_DBINFOMISC3 estructura'
+description: 'Más información sobre: JET_DBINFOMISC3 structure'
 title: Estructura de JET_DBINFOMISC3
 TOCTitle: JET_DBINFOMISC3 Structure
 ms:assetid: ffb23ac1-21ad-4dc6-98f8-aa4e6ef395ac
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9b3f0d56702da29b4ddd0557c7d8f1f18e8addd8
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: b46ea501a23a818447bdbb3d95df60a66b1b26ad
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987298"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469462"
 ---
 # <a name="jet_dbinfomisc3-structure"></a>Estructura de JET_DBINFOMISC3
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_dbinfomisc3-structure"></a>Estructura de JET_DBINFOMISC3
 
-La **JET_DBINFOMISC3** contiene información varias sobre una base de datos. Esta es la información contenida en el encabezado de la base de datos.
+La **JET_DBINFOMISC3** contiene información diversa sobre una base de datos. Esta es la información contenida en el encabezado de base de datos.
 
 ```cpp
     typedef struct {
@@ -86,23 +86,23 @@ Realiza un seguimiento de las actualizaciones de formato de base de datos increm
 
 | <p>ulVersion, ulUpdate =</p> | <p>Significado</p> | 
 |------------------------------|----------------|
-| <p>0x620,0</p> | <p>Formato Beta del sistema operativo original (22/4/97).</p> | 
-| <p>0x620,1</p> | <p>Agregue columnas en el catálogo para la indexación condicional y OLD (29/5/97).</p> | 
+| <p>0x620,0</p> | <p>Formato beta del sistema operativo original (22/4/97).</p> | 
+| <p>0x620,1</p> | <p>Agregue columnas al catálogo para la indexación condicional y OLD (29/5/97).</p> | 
 | <p>0x620,2</p> | <p>Agregue la marca fLocalizedText en IDB (5/6/97).</p> | 
 | <p>0x620,3</p> | <p>Agregue SPLIT_BUFFER a las páginas raíz del árbol de espacio (30/10/97).</p> | 
-| <p>0x620,2</p> | <p>Revierta la revisión para que ESE97 siga siendo compatible con el futuro (28/1/98).</p> | 
-| <p>0x620,3</p> | <p>Agregar nuevas columnas etiquetadas al catálogo ("CallbackData" y "CallbackDependencies").</p> | 
+| <p>0x620,2</p> | <p>Revierta la revisión para que ESE97 siga siendo compatible con el avance (28/1/98).</p> | 
+| <p>0x620,3</p> | <p>Agregue nuevas columnas etiquetadas al catálogo ("CallbackData" y "CallbackDependencies").</p> | 
 | <p>0x620,4</p> | <p>Compatibilidad con SLV: signSLV, fSLVExists en el encabezado db (5/5/98).</p> | 
 | <p>0x620,5</p> | <p>Nuevo árbol de espacio SLV (29/5/98).</p> | 
 | <p>0x620,6</p> | <p>Mapa de espacio SLV (12/10/98).</p> | 
-| <p>0x620,7</p> | <p>IDXSEG de 4 bytes (12/10/98).</p> | 
+| <p>0x620,7</p> | <p>IDXSEG de 4 bytes (10/12/98).</p> | 
 | <p>0x620,8</p> | <p>Nuevo formato de columna de plantilla (25/1/99).</p> | 
 | <p>0x620,9</p> | <p>Columnas de plantilla ordenadas (24/6/99).</p> | 
-| <p>0x620,A</p> | <p>Base de código combinado (26/3/2003).</p> | 
+| <p>0x620,A</p> | <p>Código base combinado (26/3/2003).</p> | 
 | <p>0x620,B</p> | <p>Nuevo formato de suma de comprobación (08/1/2004).</p> | 
 | <p>0x620,C</p> | <p>Se ha aumentado la longitud máxima de clave a 1000/2000 bytes para páginas de 4/8 kb (1/15/2004).</p> | 
-| <p>0x620,D</p> | <p>Sugerencias de espacio de catálogo, space_header.v2 (15/7/2007).</p> | 
-| <p>0x620,E</p> | <p>Agregue el nuevo formato de nodo o extensión al administrador de espacios y úselo para grupos reservados de espacio (9/8/2007).</p> | 
+| <p>0x620,D</p> | <p>Sugerencias de espacio del catálogo, space_header.v2 (15/7/2007).</p> | 
+| <p>0x620,E</p> | <p>Agregue el nuevo formato de nodo o extensión al administrador de espacios y úsel para los grupos de espacio reservados (9/8/2007).</p> | 
 | <p>0x620,F</p> | <p>Compresión para valores long intrínsecos (30/10/2007).</p> | 
 | <p>0x620,10</p> | <p>Compresión para valores largos separados (12/05/2007).</p> | 
 | <p>0x620,11</p> | <p>Nuevo tamaño de fragmento de LV para páginas grandes (29/12/2007).</p> | 
@@ -120,10 +120,10 @@ Este es el estado de la base de datos.
 Las siguientes opciones están disponibles para este miembro.
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_dbstateJustCreated<br />1</p> | <p>La base de datos se acaba de crear.</p> | 
-| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>La base de datos requiere que se ejecute una recuperación de forma dura o flexible para poder usarse o moverse. No se debe intentar mover bases de datos en este estado.</p> | 
+| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>La base de datos requiere que se ejecute una recuperación de forma dura o flexible para poderse usar o mover. No se debe intentar mover las bases de datos en este estado.</p> | 
 | <p>JET_dbstateCleanShutdown<br />3</p> | <p>La base de datos está en un estado limpio. La base de datos se puede adjuntar sin archivos de registro.</p> | 
 | <p>JET_dbstateBeingConverted<br />4</p> | <p>La base de datos se está actualizando.</p> | 
 | <p>JET_dbstateForceDetach<br />5</p> | <p>Interno.</p> | 
@@ -132,27 +132,27 @@ Las siguientes opciones están disponibles para este miembro.
 
 **lgposConsistent**
 
-Null si la base de datos se encuentra en un estado de desvía. Esta es la posición del registro que se usó cuando la base de datos se hizo por última vez en un estado de apagado limpio.
+Null si la base de datos está en un estado desdeso. Esta es la posición del registro que se usó cuando la base de datos se hizo por última vez en un estado de apagado limpio.
 
 **logtimeConsistent**
 
-Null si la base de datos se encuentra en un estado de desvía. Esta es la hora en que la base de datos se hizo por última vez en un estado de apagado limpio.
+Null si la base de datos está en un estado desdeso. Esta es la hora en que la base de datos se hizo por última vez en un estado de apagado limpio.
 
 **logtimeAttach**
 
-Hora a la que se ha adjuntado la base de datos por última vez [con JetAttachDatabase.](./jetattachdatabase-function.md)
+Hora en que la base de datos se adjunta por última vez [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **lgposAttach**
 
-Posición del registro que se usó la última vez que se adjunta la base de datos [con JetAttachDatabase](./jetattachdatabase-function.md).
+Posición del registro que se usó la última vez que se adjuntaba la base de datos [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **logtimeDetach**
 
-Hora a la que se desasociaron por última vez la base de datos [con JetDetachDatabase](./jetdetachdatabase-function.md).
+Hora en que la base de datos se desasocia por última vez [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **lgposDetach**
 
-Posición de registro que se usó la última vez que la base de datos se [desasocia con JetDetachDatabase](./jetdetachdatabase-function.md).
+Posición del registro que se usó la última vez que la base de datos se desasocia [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **signLog**
 
@@ -198,11 +198,11 @@ Representa los números Windows versión de NT cuando se actualizaron los índic
 
 Tamaño de página de la base de datos. 0 significa que el tamaño de página es de 4 KB.
 
-Este valor solo se recupera si JET_DbInfoMisc a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md)
+Este valor solo se recupera si JET_DbInfoMisc a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md).
 
 **genMinRequired**
 
-Representa la generación mínima de registros necesaria para reproducir los registros. Normalmente, esto es lo mismo que la generación del punto de control.
+Representa la generación de registros mínima necesaria para reproducir los registros. Normalmente, esto es lo mismo que la generación del punto de comprobación.
 
 **genMaxRequired**
 
@@ -226,7 +226,7 @@ Número de veces que se había ejecutado la reparación en esta base de datos an
 
 **ulECCFixSuccess**
 
-Número de veces que se corrigió un error de un bit y dio lugar a una página buena.
+Número de veces que se corrigió un error de un bit y se produjo una buena página.
 
 **logtimeECCFixSuccess**
 
@@ -246,7 +246,7 @@ Representa la fecha y hora en que se corrigió el último error de un bit y dio 
 
 **ulECCFixFailOld**
 
-Número de veces que se corrigió un error de un bit y se produjo una página no buena antes de la última reparación.
+Número de veces que se corrigió un error de un bit y se produjo una página no era buena antes de la última reparación.
 
 **ulBadChecksum**
 
@@ -254,7 +254,7 @@ Número de veces que se encontró un error ecc/suma de comprobación no corregib
 
 **logtimeBadChecksum**
 
-Representa la fecha y hora en que se encontró el último error de ECC o suma de comprobación no corregible.
+Representa la fecha y hora en que se encontró el último error ecc/suma de comprobación no corregible.
 
 **ulBadChecksumOld**
 
@@ -267,11 +267,7 @@ Generación de registros actual. Puede ser menor que genMaxRequired si JET_param
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

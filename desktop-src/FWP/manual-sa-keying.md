@@ -1,19 +1,19 @@
 ---
-title: Creación manual de claves SA
-description: En el código de ejemplo siguiente se muestra cómo crear asociaciones de seguridad (SA) mediante la plataforma de filtrado de Windows.
+title: Teclado de SA manual
+description: El código de ejemplo siguiente muestra cómo crear asociaciones de seguridad (SA) mediante Windows de filtrado.
 ms.assetid: a929456e-e824-44d3-97f7-be75716a1ecd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91834e4aedbbe199e37f458832fb30d31f696ba5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d13987b3e37eb6ded20f6001247a14d62a00b00fe9ca2e8bd794db33a92fe20b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104531816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075395"
 ---
-# <a name="manual-sa-keying"></a>Creación manual de claves SA
+# <a name="manual-sa-keying"></a>Teclado de SA manual
 
-En el código de ejemplo siguiente se muestra cómo crear asociaciones de seguridad (SA) mediante la plataforma de filtrado de Windows.
+En el código de ejemplo siguiente se muestra cómo crear asociaciones de seguridad (SA) mediante Windows de filtrado.
 
 
 ```C++
@@ -283,9 +283,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

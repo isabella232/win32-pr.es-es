@@ -1,23 +1,23 @@
 ---
-title: store_raw (SM5-ASM)
-description: Escritura de acceso aleatorio de componentes de 32 bits de 1-4 en memoria sin tipo.
+title: store_raw (sm5 - asm)
+description: Escritura de acceso aleatorio de componentes de 1 a 4 de 32 bits en memoria sin tipo.
 ms.assetid: D166116A-CF4E-4020-9F6A-F9CEEFCDAB21
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c44b4d22a576853fb8b7d2c43fcb6a2d7fc9a448
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: d2452f5b48b410b0a62dbd394c7c0501d99d34ba15c8c78291c02db58d65d090
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118205"
 ---
-# <a name="store_raw-sm5---asm"></a>almacén \_ sin procesar (SM5-ASM)
+# <a name="store_raw-sm5---asm"></a>store \_ raw (sm5 - asm)
 
-Escritura de acceso aleatorio de componentes de 32 bits de 1-4 en memoria sin tipo.
+Escritura de acceso aleatorio de componentes de 1 a 4 de 32 bits en memoria sin tipo.
 
 
 
-| Almacene la \_ \[ máscara dst0. Write sin formato, el \_ \] \[ componente dstByteOffset. Select \_ \] , src0 \[ . swizzle\] |
+| store \_ raw dst0 \[ .write mask , \_ \] dstByteOffset \[ .select component , \_ \] src0 \[ .swzzle\] |
 |----------------------------------------------------------------------------------------|
 
 
@@ -28,23 +28,23 @@ Escritura de acceso aleatorio de componentes de 32 bits de 1-4 en memoria sin ti
 
 | Elemento                                                                                                                       | Descripción                                |
 |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                            | \[en \] la dirección de memoria.<br/>      |
-| <span id="dstByteOffset"></span><span id="dstbyteoffset"></span><span id="DSTBYTEOFFSET"></span>*dstByteOffset*<br/> | \[en \] el desplazamiento.<br/>              |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                            | \[en \] los componentes que se van a escribir.<br/> |
+| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                            | \[en \] La dirección de memoria.<br/>      |
+| <span id="dstByteOffset"></span><span id="dstbyteoffset"></span><span id="DSTBYTEOFFSET"></span>*dstByteOffset*<br/> | \[en \] El desplazamiento.<br/>              |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                            | \[en \] Componentes que se escribirán.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza componentes de 1-4 de componentes de 32 de componente \* escritos desde *src0* en *dst0* en el desplazamiento en *dstByteOffset*. No hay ninguna conversión de formato.
+Esta instrucción realiza componentes de 1-4 componentes de 32 bits escritos de \* *src0* a *dst0* en el desplazamiento *de dstByteOffset*. No hay ninguna conversión de formato.
 
-*dst0* debe ser un UAV (u \# ) o, en el sombreador de cálculo, también puede ser la memoria compartida del grupo de subprocesos (g \# ).
+*dst0 debe* ser un UAV (u), o en el sombreador de proceso también puede ser memoria compartida del grupo de \# subprocesos (g \# ).
 
-*dstByteOffset* especifica el valor de base 32 bits en memoria para una ventana de 4 valores de 32 bits secuenciales en los que se pueden escribir datos, en función de la swizzle y de la máscara de otros parámetros.
+*dstByteOffset* especifica el valor base de 32 bits en memoria para una ventana de 4 valores secuenciales de 32 bits en los que se pueden escribir datos, en función del swzzle y mask de otros parámetros.
 
-La ubicación de los datos escritos es equivalente al siguiente pseudocódigo que muestra la dirección, el puntero al contenido del búfer y los datos almacenados de forma lineal.
+La ubicación de los datos escritos es equivalente al pseudocódigo siguiente, que muestra la dirección, el puntero al contenido del búfer y los datos almacenados linealmente.
 
 ``` syntax
                     BYTE *BufferContents;          // from src0
@@ -71,19 +71,19 @@ La ubicación de los datos escritos es equivalente al siguiente pseudocódigo qu
                              WriteComponents * sizeof(UINT32));
 ```
 
-En este pseudocódigo se muestra cómo funciona la operación, pero no es necesario que los datos reales se almacenen de forma lineal. *dst0* solo puede tener una máscara de escritura que sea uno de los siguientes:. x,. XY,. XYZ,. xyzw. La máscara de escritura determina el número de componentes de 32 bits que se van a escribir sin huecos.
+Este pseudocódigo muestra cómo funciona la operación, pero los datos reales no tienen que almacenarse linealmente. *dst0* solo puede tener una máscara de escritura que sea una de las siguientes: .x, .xy, .xyz, .xyzw. La máscara de escritura determina el número de componentes de 32 bits que se escribirán sin espacios.
 
-Fuera del límite, el direccionamiento en u \# significa que no se escribe nada en la memoria fuera de los límites; cualquier parte que esté en los límites se escribe correctamente.
+El direccionamiento fuera de límites en u significa que no se escribe nada en la memoria fuera de límites; cualquier parte que esté dentro de los \# límites se escribirá correctamente.
 
-Fuera de los límites que se dirigen a g \# (los límites de esa g concreta \# , en contraposición a toda la memoria compartida) de cualquier componente de 32 bits dado, hace que todo el contenido de toda la memoria compartida quede sin definir.
+El direccionamiento fuera de límites en g (los límites de ese g determinado, en lugar de toda la memoria compartida) para cualquier componente de 32 bits dado hace que todo el contenido de toda la memoria compartida se vuelva \# \# indefinido.
 
-CS \_ 4 \_ 0 y CS \_ 4 \_ 1 admiten esta instrucción para UAV.
+cs \_ 4 \_ 0 y cs \_ 4 \_ 1 admiten esta instrucción para UAV.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -91,11 +91,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D 11,1, esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11,1, que está disponible a partir de Windows 8.
+Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -103,20 +103,20 @@ Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -126,7 +126,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

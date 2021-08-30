@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DM_REPOSITION (Winuser. h)
-description: Cambia de posición un cuadro de diálogo de nivel superior para que quepa en el área del escritorio. Una aplicación puede enviar este mensaje a un cuadro de diálogo después de cambiar el tamaño para asegurarse de que todo el cuadro de diálogo permanece visible.
+title: DM_REPOSITION mensaje (Winuser.h)
+description: Vuelve a colocar un cuadro de diálogo de nivel superior para que se ajuste al área de escritorio. Una aplicación puede enviar este mensaje a un cuadro de diálogo después de cambiar su tamaño para asegurarse de que todo el cuadro de diálogo permanece visible.
 ms.assetid: 8386d23e-06ea-4ea7-adde-ac97fc97861d
 keywords:
-- DM_REPOSITION cuadros de diálogo de mensaje
+- DM_REPOSITION cuadros de diálogo del mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19425d4d77a62117f3fadfdd98f0629b81bf334c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52fd3978df92e379f4750b4140c137b915d0d1ae21ac0a5124d3e9d87e62d5c8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117815"
 ---
-# <a name="dm_reposition-message"></a>\_Mensaje de REposición de DM
+# <a name="dm_reposition-message"></a>Mensaje \_ DM REPOSITION
 
-Cambia de posición un cuadro de diálogo de nivel superior para que quepa en el área del escritorio. Una aplicación puede enviar este mensaje a un cuadro de diálogo después de cambiar el tamaño para asegurarse de que todo el cuadro de diálogo permanece visible.
+Vuelve a colocar un cuadro de diálogo de nivel superior para que se ajuste al área de escritorio. Una aplicación puede enviar este mensaje a un cuadro de diálogo después de cambiar su tamaño para asegurarse de que todo el cuadro de diálogo permanece visible.
 
 
 ```C++
@@ -40,14 +40,14 @@ Cambia de posición un cuadro de diálogo de nivel superior para que quepa en el
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Este parámetro no se utiliza y debe ser cero.
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este mensaje no tiene ningún efecto si el cuadro de diálogo es una ventana secundaria.
 
@@ -67,7 +67,7 @@ Este mensaje no tiene ningún efecto si el cuadro de diálogo es una ventana sec
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

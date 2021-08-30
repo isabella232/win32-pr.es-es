@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_CLICK (syslink) (commctrl. h)
-description: Notifica a la ventana primaria de un control que el usuario ha haga clic en un hipervínculo con el botón primario del mouse en el control. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_CLICK de notificación (syslink) (Commctrl.h)
+description: Notifica a la ventana primaria de un control que el usuario ha hecho clic en un hipervínculo con el botón izquierdo del mouse dentro del control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: e92d7c92-f2c6-44aa-bce5-3bb07c184e7d
 keywords:
-- Código de notificación de NM_CLICK (syslink), controles de Windows
+- NM_CLICK (syslink) notification code Windows Controls
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ea34682b0cfdfdf1206a133abe4fdb22b8af5cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8b3dd9b8ae4e0621898ceb50165af1d680340e352d6579a66e1f9355ec62e6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061755"
 ---
-# <a name="nm_click-syslink-notification-code"></a>NM \_ click (syslink) código de notificación
+# <a name="nm_click-syslink-notification-code"></a>Código de notificación de NM \_ CLICK (syslink)
 
-Notifica a la ventana primaria de un control que el usuario ha haga clic en un hipervínculo con el botón primario del mouse en el control. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control que el usuario ha hecho clic en un hipervínculo con el botón izquierdo del mouse dentro del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_CLICK
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMLINK**](/windows/win32/api/commctrl/ns-commctrl-nmlink) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMLINK**](/windows/win32/api/commctrl/ns-commctrl-nmlink) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -49,10 +49,10 @@ Puntero a una estructura [**NMLINK**](/windows/win32/api/commctrl/ns-commctrl-nm
 
 El control omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -62,9 +62,9 @@ El control omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ El control omite el valor devuelto.
 [**NMLINK**](/windows/win32/api/commctrl/ns-commctrl-nmlink)
 </dt> <dt>
 
-[**\_notificaciones de WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

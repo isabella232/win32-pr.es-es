@@ -4,12 +4,12 @@ ms.assetid: d8195c3a-97ac-4ad1-a097-18878c8fda6f
 title: Descodificador de vídeo MPEG-2 de Microsoft (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4afdd9609124ba1057f597c4b7a907654c62a321
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: b9fccfe5cf584dca639601b09d02957540d74cee
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982198"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475731"
 ---
 # <a name="microsoft-mpeg-2-video-decoder"></a>Descodificador de vídeo MPEG-2 de Microsoft
 
@@ -39,7 +39,7 @@ Tipos de medios de pin de entrada
 
 Pin de entrada de vídeo:
 
--   MEDIATYPE \_ DVD \_ ENCRYPTED \_ PACK, VÍDEO DE MEDIASUBTYPE \_ MPEG2 \_
+-   PAQUETE CIFRADO \_ DE DVD DE MEDIATYPE, VÍDEO \_ \_ \_ MPEG2 DE MEDIASUBTYPE \_
 -   MEDIATYPE \_ MPEG2 \_ PES, MEDIASUBTYPE \_ MPEG2 \_ VIDEO
 -   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ MPEG1Packet
 -   MEDIATYPE \_ Video, MEDIASUBTYPE \_ MPEG1Payload
@@ -68,12 +68,12 @@ Tipos de medios de pin de salida
 Pin de salida de vídeo:
 
 -   Vídeo \_ MEDIATYPE, modo \_ DXVAMPEG2 \_ A (DXVA 1.0)
--   Vídeo \_ MEDIATYPE, modo \_ DXVAMPEG2 \_ C (DXVA 1.0)
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ I420 (Descodificación de software o DXVA2.0)
+-   VÍDEO \_ MEDIATYPE, modo \_ DXVAMPEG2 \_ C (DXVA 1.0)
+-   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ I420 (Descodificación de software o DXVA2.0)
 -   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ NV12 (Descodificación de software o DXVA2.0)
 -   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ YUY2 (Descodificación de software o DXVA2.0)
 -   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ IMC3 (solo DXVA2.0)
--   MEDIATYPE \_ Video, MEDIASUBTYPE \_ IMC4 (solo DXVA2.0)
+-   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ IMC4 (solo DXVA2.0)
 -   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ S340 (solo DXVA2.0)
 -   VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ YV12 (solo DXVA2.0)
 
@@ -112,7 +112,7 @@ msmpeg2vdec.dll
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este filtro tiene dos pines de entrada y tres de salida.
 
@@ -127,7 +127,7 @@ Pins de salida:
 -   Salida de línea 21
 -   Salida de subimagen
 
-El filtro no crea el pin de salida de subpicture a menos que el pin de entrada de vídeo esté conectado con un tipo de medio **\_ MEDIATYPE DVD \_ ENCRYPTED \_ PACK.**
+El filtro no crea el pin de salida de subimagen a menos que el pin de entrada de vídeo esté conectado con un tipo de medio **\_ MEDIATYPE DVD \_ ENCRYPTED \_ PACK.**
 
 ### <a name="mpeg-12-support"></a>Compatibilidad con MPEG-1/2
 
@@ -136,12 +136,7 @@ Para MPEG-1 y MPEG-2, el descodificador admite los siguientes formatos:
 
 
 
-| Etiqueta | Value |
-|--------|-------|
-| Perfiles o niveles | Cualquier combinación de los siguientes perfiles y niveles:<br /><ul><li>Perfiles: Simple, Main</li><li>Niveles: Bajo, Principal, Alto, Alto 1440</li></ul> | 
-| Formatos de los colores | 4:2:0(4:2:0) | 
-| Resolución máxima | 1920 × 1088 píxeles | 
-| DXVA | El descodificador admite DirectX Video Acceleration (DXVA) versión 1 y versión 2. | 
+| | | Perfiles o niveles | Cualquier combinación de los siguientes perfiles y niveles:<br /><ul><li>Perfiles: Simple, Main</li><li>Niveles: Bajo, Principal, Alto, Alto 1440</li></ul> | | Formatos de | 4:2:0 | | Resolución máxima | 1920 × 1088 píxeles | | | DXVA El descodificador admite directX Video Acceleration (DXVA) versión 1 y versión 2. | 
 
 
 
@@ -158,10 +153,10 @@ Para H.264, el descodificador admite los siguientes formatos:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Perfiles y niveles    | Perfiles de línea base, principal y alto, hasta el nivel 5.1. (Consulte la especificación ITU-T H.264 para obtener más información).                                                                                                                                                                          |
-| Formatos de traslación     | 4:2:0, color azul o monocromo                                                                                                                                                                                                                                                |
+| Formatos de colores     | 4:2:0 acrobado o monocromo                                                                                                                                                                                                                                                |
 | Resolución mínima | 48 × 48 píxeles                                                                                                                                                                                                                                                            |
 | Resolución máxima | 1920 × 1088 píxeles                                                                                                                                                                                                                                                        |
 | DXVA               | El descodificador admite DXVA versión 2, pero no DXVA versión 1. Lacoding DXVA solo se admite para las secuencias de bits de perfil principal, principal y alto. (Las secuencias de bits de línea de base compatibles con main se definen como **\_ idc** de perfil =66 y la marca **\_ set1 \_ restringida**=1). |
@@ -218,9 +213,9 @@ El filtro admite las siguientes propiedades a través [**de ICodecAPI**](/window
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate desktop apps \[ only\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ desktop apps only\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                                                                     |
 | Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>                                                                                       |
 

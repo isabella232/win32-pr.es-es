@@ -1,17 +1,17 @@
 ---
 description: Tipo canónico del elemento.
 ms.assetid: 530ba98a-09fd-438b-8872-9eee47f0cf54
-title: System. ItemType
+title: System.ItemType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0159a12e1cc3c6d85e461461cad20334a641fbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 784a72c46e92ac5956532994df4f36758d42f440
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278882"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880716"
 ---
-# <a name="systemitemtype"></a>System. ItemType
+# <a name="systemitemtype"></a>System.ItemType
 
 Tipo canónico del elemento.
 
@@ -31,21 +31,21 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-El valor de System. ItemType está diseñado para analizarse mediante programación y puede ser:
+El valor de System.ItemType está pensado para analizarse mediante programación y puede ser:
 
--   Extensión de archivo que señala a un valor ProgID ( \_ clase HKEY \_ raíz \\ <ProgID> ) que contiene el nombre para mostrar del tipo.
--   Un valor ProgID ( \_ clases HKEY \_ RROOT \\ <ProgID> ), que contiene el nombre para mostrar del tipo.
+-   Extensión de archivo que apunta a un valor ProgID (HKEY \_ CLASSES \_ ROOT \\ &lt; ProgID) que mantiene &gt; el nombre para mostrar del tipo.
+-   Valor ProgID (HKEY \_ CLASSES \_ RROOT \\ &lt; &gt; ProgID), que contiene el nombre para mostrar del tipo.
 
-El elemento FriendlyTypeName de un ProgID debe ser una versión localizada del nombre de la aplicación ( @winword.dll ,-42), mientras que el valor predeterminado de la clave ProgID es un nombre no traducido (Word.Document. 12).
+El elemento FriendlyTypeName de un ProgID debe ser una versión localizada del nombre de la aplicación ( ,-42), mientras que el valor predeterminado de la clave ProgID es un nombre no localizado @winword.dll (Word.Document.12).
 
-Si no hay ningún tipo canónico, el valor es VT \_ vacío. Si el elemento es un archivo ([System. FileName](./props-system-filename.md) no es VT \_ vacío), el valor es el mismo que [System. FileExtension](./props-system-fileextension.md). Use [System. ItemTypeText](./props-system-itemtypetext.md) cuando desee mostrar el tipo a los usuarios finales en una vista.
+Si no hay ningún tipo canónico, el valor es VT \_ EMPTY. Si el elemento es un archivo ([System.FileName](./props-system-filename.md) no es VT EMPTY), el valor es el mismo \_ que [System.FileExtension](./props-system-fileextension.md). Use [System.ItemTypeText](./props-system-itemtypetext.md) cuando desee mostrar el tipo a los usuarios finales en una vista.
 
 > [!Note]  
-> Si el elemento es un archivo, pasar el valor [System. ItemType]() a [**PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay) da como resultado el mismo valor que [System. ItemTypeText](./props-system-itemtypetext.md).
+> Si el elemento es un archivo, pasar el valor [System.ItemType]() a [**PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay) da como resultado el mismo valor que [System.ItemTypeText.](./props-system-itemtypetext.md)
 
  
 
@@ -53,14 +53,14 @@ Valores de ejemplo:
 
 
 
-| Ruta                                   | ItemType         |
+| Ruta de acceso                                   | ItemType         |
 |----------------------------------------|------------------|
-| c: \\hello.txt de la \\ barra myDir \\              | .txt             |
-| \\\\\\goodnews.doc del recurso compartido del servidor \\ myDir \\ | .doc             |
-| \\\\\\carpeta de recurso compartido de servidor \\              | Directorio        |
-| c: \\ MyDir \\ carpeta                    | Directorio        |
+| c: \\ barra de mydir \\ \\hello.txt              | .txt             |
+| \\\\servidor \\ compartido \\ mydir \\goodnews.doc | .doc             |
+| \\\\carpeta de \\ recurso compartido \\ de servidor              | Directorio        |
+| c: \\ MyDir \\ MyFolder                    | Directorio        |
 | \[desktop\]                            | Carpeta           |
-| Cuenta o bandeja de entrada de/Mailbox/' re: Hello! '    | MAPI/IPM. Mensaje |
+| /Mailbox Account/Inbox/'Re: Hello!'    | MAPI/IPM. Mensaje |
 
 
 
@@ -79,7 +79,7 @@ Valores de ejemplo:
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -91,7 +91,7 @@ Valores de ejemplo:
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -109,10 +109,10 @@ Valores de ejemplo:
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> <dt>
 
-[Identificadores de programación](../shell/fa-progids.md)
+[Identificadores mediante programación](../shell/fa-progids.md)
 </dt> </dl>
 
  

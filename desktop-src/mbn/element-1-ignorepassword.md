@@ -1,5 +1,5 @@
 ---
-description: '\/MódemDMConfigProfile... \/ IgnorePassword (v4)'
+description: ModemDMConfigProfile \/ ... \/ IgnorePassword (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_IgnorePassword
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -7,14 +7,14 @@ MSHAttr:
 title: IgnorePassword (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbb7be6d4344e6126501223f238642b97efbb059
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 41bb5f81d5c2fe52cafec8877dfcfb84bc68f51d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987118"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478261"
 ---
-# <a name="span-idwwan_profile_v4element_1_ignorepasswordspanmodemdmconfigprofileignorepassword-v4"></a><span id="WWAN_profile_v4.element_1_IgnorePassword"></span>MódemDMConfigProfile \/ ... \/ IgnorePassword (v4)
+# <a name="span-idwwan_profile_v4element_1_ignorepasswordspanmodemdmconfigprofileignorepassword-v4"></a><span id="WWAN_profile_v4.element_1_IgnorePassword"></span>ModemDMConfigProfile \/ ... \/ IgnorePassword (v4)
 
 Especifica cómo se controlan las contraseñas al actualizar perfiles.
 
@@ -34,7 +34,7 @@ Para más información, consulte la documentación del elemento [**IgnorePasswor
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<IgnorePassword\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IgnorePassword>
@@ -67,9 +67,7 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

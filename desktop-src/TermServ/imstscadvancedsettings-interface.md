@@ -1,6 +1,6 @@
 ---
 title: Interfaz IMsTscAdvancedSettings
-description: Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y el redireccionamiento de impresoras y portapapeles.
+description: Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y la redirección de impresoras y portapapeles.
 ms.assetid: 3385e843-be05-4801-8d59-6395d95686b1
 ms.tgt_platform: multiple
 keywords:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f1156f59178275ff9406299fc553afacd3ce99a0488497f836d147ec1d63547
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: edc379375456feb5de50abdc68ff2cc2da463fbe
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118606202"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475351"
 ---
 # <a name="imstscadvancedsettings-interface"></a>Interfaz IMsTscAdvancedSettings
 
-Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y el redireccionamiento de impresoras y portapapeles. También puede especificar nombres de archivos DLL de cliente de canal virtual.
+Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y la redirección de impresoras y portapapeles. También puede especificar nombres de archivos DLL de cliente de canal virtual.
 
-Para obtener una instancia de esta interfaz, use la [**propiedad IMsTscAx::AdvancedSettings.**](imstscax-advancedsettings.md)
+Puede obtener una instancia de esta interfaz mediante la [**propiedad IMsTscAx::AdvancedSettings.**](imstscax-advancedsettings.md)
 
 ## <a name="members"></a>Miembros
 
@@ -41,80 +41,27 @@ La **interfaz IMsTscAdvancedSettings** tiene estas propiedades.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Propiedad</th>
-<th style="text-align: left;">Tipo de acceso</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="imstscadvancedsettings-allowbackgroundinput.md"><strong>allowBackgroundInput</strong></a><br/></td>
-<td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el modo de entrada en segundo plano está habilitado.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imstscadvancedsettings-bitmapperistence.md"><strong>BitmapPeristence</strong></a><br/></td>
-<td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si está habilitado el almacenamiento en caché de mapa de bits.<br/>
-<blockquote>
-[!Note]<br />
-El error ortográfico en el nombre de la propiedad está en la versión publicada del control.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imstscadvancedsettings-compress.md"><strong>Comprimir</strong></a><br/></td>
-<td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si la compresión está habilitada.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imstscadvancedsettings-containerhandledfullscreen.md"><strong>ContainerHandledFullScreen</strong></a><br/></td>
-<td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el modo de pantalla completa que controla el contenedor está habilitado.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imstscadvancedsettings-disablerdpdr.md"><strong>DisableRdpdr</strong></a><br/></td>
-<td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si está habilitada la redirección de impresoras y portapapeles.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imstscadvancedsettings-iconfile.md"><strong>IconFile</strong></a><br/></td>
-<td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">Especifica el nombre del archivo que contiene los datos de icono a los que se tendrá acceso al mostrar el cliente en modo de pantalla completa.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imstscadvancedsettings-iconindex.md"><strong>IconIndex</strong></a><br/></td>
-<td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">Especifica el índice del icono en el archivo de icono actual.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imstscadvancedsettings-keyboardlayoutstr.md"><strong>KeyBoardLayoutStr</strong></a><br/></td>
-<td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">Especifica el nombre del identificador de configuración regional de entrada activo (anteriormente denominado diseño de teclado) que se usará para la conexión.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imstscadvancedsettings-plugindlls.md"><strong>PluginDlls</strong></a><br/></td>
-<td style="text-align: left;">Solo escritura<br/></td>
-<td style="text-align: left;">Especifica los nombres de los archivos DLL de cliente de canal virtual que se cargarán.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Propiedad | Tipo de acceso | Descripción | 
+|----------|-------------|-------------|
+| <a href="imstscadvancedsettings-allowbackgroundinput.md"><strong>allowBackgroundInput</strong></a><br /> | Lectura/escritura<br /> | Especifica si el modo de entrada en segundo plano está habilitado.<br /> | 
+| <a href="imstscadvancedsettings-bitmapperistence.md"><strong>BitmapPeristence</strong></a><br /> | Lectura/escritura<br /> | Especifica si está habilitado el almacenamiento en caché de mapa de bits.<br /><blockquote>[!Note]<br />El error ortográfico en el nombre de la propiedad está en la versión publicada del control.</blockquote><br /> | 
+| <a href="imstscadvancedsettings-compress.md"><strong>Comprimir</strong></a><br /> | Lectura/escritura<br /> | Especifica si la compresión está habilitada.<br /> | 
+| <a href="imstscadvancedsettings-containerhandledfullscreen.md"><strong>ContainerHandledFullScreen</strong></a><br /> | Lectura/escritura<br /> | Especifica si el modo de pantalla completa con control de contenedor está habilitado.<br /> | 
+| <a href="imstscadvancedsettings-disablerdpdr.md"><strong>DisableRdpdr</strong></a><br /> | Lectura/escritura<br /> | Especifica si está habilitada la redirección de impresoras y portapapeles.<br /> | 
+| <a href="imstscadvancedsettings-iconfile.md"><strong>IconFile</strong></a><br /> | Solo escritura<br /> | Especifica el nombre del archivo que contiene los datos de icono a los que se tendrá acceso al mostrar el cliente en modo de pantalla completa.<br /> | 
+| <a href="imstscadvancedsettings-iconindex.md"><strong>IconIndex</strong></a><br /> | Solo escritura<br /> | Especifica el índice del icono en el archivo de icono actual.<br /> | 
+| <a href="imstscadvancedsettings-keyboardlayoutstr.md"><strong>KeyBoardLayoutStr</strong></a><br /> | Solo escritura<br /> | Especifica el nombre del identificador de configuración regional de entrada activa (anteriormente denominado diseño de teclado) que se usará para la conexión.<br /> | 
+| <a href="imstscadvancedsettings-plugindlls.md"><strong>PluginDlls</strong></a><br /> | Solo escritura<br /> | Especifica los nombres de los archivos DLL de cliente de canal virtual que se cargarán.<br /> | 
+
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta interfaz se ha ampliado mediante las interfaces siguientes, donde cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
+Esta interfaz se ha ampliado mediante las interfaces siguientes, y cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
 
 -   [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
 -   [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md)
@@ -130,7 +77,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
@@ -140,7 +87,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

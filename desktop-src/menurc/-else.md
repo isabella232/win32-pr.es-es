@@ -1,29 +1,29 @@
 ---
 title: " else"
-description: La Directiva \ else marca una cláusula opcional de un bloque de compilación condicional definido por una directiva \ ifdef, \ ifndef o \ if. La Directiva \ else debe ser la última Directiva antes de la Directiva \ endif.
+description: La directiva \ else marca una cláusula opcional de un bloque de compilación condicional definido por una directiva \ ifdef, \ ifndef o \ if. La directiva \ else debe ser la última directiva antes de la directiva \endif.
 ms.assetid: 982466d9-ae77-4e1c-89f3-511335165da7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 086acd9e6323f7be11a65951a33b2b11b680ad46
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aade46f8d2af211d4ed09e596ec3a42fa57d141d3d533bdbe34be09d9e9988c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060205"
 ---
-# <a name="else"></a>\#else
+# <a name="else"></a>\#Más
 
-La directiva **\# else** marca una cláusula opcional de un bloque de compilación condicional definido por una directiva **\# ifdef**, **\# ifndef** o **\# If** . La directiva **\# else** debe ser la última Directiva antes de la directiva **\# endif** .
+La **\# directiva else** marca una cláusula opcional de un bloque de compilación condicional definido por una **\# directiva ifdef**, **\# ifndef** o **\# if.** La **\# directiva else** debe ser la última directiva antes de la **\# directiva endif.**
 
 ``` syntax
 #else
 ```
 
-Esta Directiva no tiene parámetros.
+Esta directiva no tiene parámetros.
 
 ## <a name="example"></a>Ejemplo
 
-En este ejemplo se compila la segunda instrucción [**Bitmap**](bitmap-resource.md) solo si no se define DEBUG:
+En este ejemplo se compila la segunda [**instrucción BITMAP**](bitmap-resource.md) solo si no se define DEBUG:
 
 ``` syntax
 #ifdef DEBUG
@@ -40,9 +40,9 @@ En este ejemplo se compila la segunda instrucción [**Bitmap**](bitmap-resource.
 [Directivas de preprocesador](preprocessor-directives.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

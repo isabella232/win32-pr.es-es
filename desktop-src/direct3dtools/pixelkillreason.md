@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 58ead08f81c8dee1644e431ae100c5100551e9907ab9a9d5bf00f6aae3532abd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15ad935ff5949c9f8de79aac55b339314c54ddf4
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119329"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623769"
 ---
 # <a name="span-idvspixenginepixelkillreasonspanpixelkillreason-enumeration"></a><span id="vspixengine.pixelkillreason"></span>Enumeración PIXELKILLREASON
 
 Enumeración usada para indicar por qué se rechazó un píxel.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -44,7 +44,7 @@ Valor que indica que el píxel no se rechazó.
 Valor que indica que el píxel se rechazó porque el sombreador no se ha ejecutado.
 
 <span id="PKR_SCISSORTEST"></span><span id="pkr_scissortest"></span>**PKR \_ DE LA PRUEBA DE DESERCIÓN**  
-Valor que indica que el píxel se rechazó porque se ha dado error en la prueba de examen.
+Valor que indica que el píxel se rechazó porque se ha dado error en la prueba de la lecha.
 
 <span id="PKR_ALPHATEST"></span><span id="pkr_alphatest"></span>**PKR \_ ALPHATEST**  
 Valor que indica que el píxel se rechazó porque no se pudo realizar la prueba alfa.
@@ -72,7 +72,7 @@ Valor que indica que el píxel se rechazó porque la prueba de profundidad y gal
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

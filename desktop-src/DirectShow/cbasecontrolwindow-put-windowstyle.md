@@ -1,7 +1,7 @@
 ---
-description: El \_ método put estiloVentana establece los estilos de ventana estándar.
+description: El método put \_ WindowStyle establece los estilos de ventana estándar.
 ms.assetid: 3b3aa035-6aa1-4f11-80d8-03268fcf98e1
-title: Método CBaseControlWindow.put_WindowStyle (Ctlutil. h)
+title: CBaseControlWindow.put_WindowStyle método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3f98e6205a45530a0dbcce09d095dfaa2267ccbb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 416f222b3b4a3f3d10c12baf482d1c94687ba23596fcfbc92e59e1b7dab731e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056733"
 ---
-# <a name="cbasecontrolwindowput_windowstyle-method"></a>CBaseControlWindow. put \_ estiloVentana (método)
+# <a name="cbasecontrolwindowput_windowstyle-method"></a>CBaseControlWindow.put \_ (método WindowStyle)
 
 El `put_WindowStyle` método establece los estilos de ventana estándar.
 
@@ -51,11 +51,11 @@ Nuevos estilos de ventana.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga cuidado al cambiar los estilos de ventana. En la mayoría de los casos, una aplicación debe recuperar el estilo actual y, a continuación, agregar o quitar los bits inapropiados. Este procedimiento permite que los distintos estilos de ventana internos utilizados por Windows permanezcan intactos.
+Tener cuidado al cambiar los estilos de ventana. En la mayoría de los casos, una aplicación debe recuperar el estilo actual y, a continuación, agregar o quitar los bits inadecuados. Este procedimiento permite que varios estilos de ventana internos usados por Windows permanezcan intactos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Tenga cuidado al cambiar los estilos de ventana. En la mayoría de los casos, un
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Tenga cuidado al cambiar los estilos de ventana. En la mayoría de los casos, un
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

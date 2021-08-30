@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1SvgStrokeDashArray GetDashes (D2d1svg. h)
-description: Obtiene los guiones de la matriz.
+title: Métodos Id2D1SvgStrokeDashArray GetDashes (D2d1svg.h)
+description: Obtiene guiones de la matriz.
 ms.assetid: d244b59c-2681-1da9-9b89-534b4f3be543
 keywords:
-- Métodos de GetDashes Direct2D
+- Métodos GetDashes de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: b5e868ce12cc016097ace7868124c16027b42a41
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7ee01215ba2a19165d3df51c86ed16c9b287bffe0396883c8da0a8589c4a356
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076835"
 ---
-# <a name="id2d1svgstrokedasharraygetdashes-methods"></a>ID2D1SvgStrokeDashArray:: GetDashes (métodos)
+# <a name="id2d1svgstrokedasharraygetdashes-methods"></a>Métodos ID2D1SvgStrokeDashArray::GetDashes
 
-Obtiene los guiones de la matriz.
+Obtiene guiones de la matriz.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Obtiene los guiones de la matriz.
 
 | Método                                                                                         | Descripción                            |
 |:-----------------------------------------------------------------------------------------------|:---------------------------------------|
-| [**GetDashes (FLOAT \* , UInt32, UInt32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-getdashes(float_uint32_uint32))               | Obtiene los guiones de la matriz.<br/> |
-| [**GetDashes ( \_ longitud de SVG \_ de D2D1 \* , UInt32, UInt32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-getdashes(d2d1_svg_length_uint32_uint32)) | Obtiene los guiones de la matriz.<br/> |
+| [**GetDashes(FLOAT, \* UINT32, UINT32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-getdashes(float_uint32_uint32))               | Obtiene guiones de la matriz.<br/> |
+| [**GetDashes(D2D1 \_ SVG \_ LENGTH \* , UINT32, UINT32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-getdashes(d2d1_svg_length_uint32_uint32)) | Obtiene guiones de la matriz.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Obtiene los guiones de la matriz.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1svg. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1svg.h</dt> </dl> |
 
 
 

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 51509f4027d4748f32b8c9dfb8756433b5f93935
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 61e770687584a41d4e8511b2c9478c097f311109
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984838"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479101"
 ---
 # <a name="jetgetlock-function"></a>JetGetLock (Función)
 
@@ -57,7 +57,7 @@ Cursor que se usará para esta llamada.
 Un grupo de bits que contienen las opciones que se usarán para esta llamada, que incluyen cero o más de lo siguiente:
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitReadLock</p> | <p>Esta marca hace que se adquiera un bloqueo de lectura en el registro actual. Los bloqueos de lectura no son compatibles con los bloqueos de escritura que ya mantienen otras sesiones, pero son compatibles con los bloqueos de lectura que mantienen otras sesiones.</p> | 
 | <p>JET_bitWriteLock</p> | <p>Esta marca hace que se adquiera un bloqueo de escritura en el registro actual. Los bloqueos de escritura no son compatibles con los bloqueos de escritura o lectura que mantienen otras sesiones, pero son compatibles con los bloqueos de lectura mantenidos por la misma sesión.</p> | 
@@ -72,7 +72,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad en la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errInvalidgrbit</p> | <p>El <em>grbit dado</em> no es JET_bitReadLock ni JET_bitWriteLock. Debe ser una de estas dos marcas.</p> | 
 | <p>JET_errNoCurrentRecord</p> | <p>El cursor debe estar en un registro para adquirir un bloqueo. Los bloqueos siempre están en los registros.</p> | 
@@ -91,13 +91,13 @@ Si se ejecuta correctamente, la sesión ha adquirido el bloqueo solicitado.
 
 En caso de error, la sesión no ha adquirido el bloqueo solicitado.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Los bloqueos de escritura no se pueden adquirir con sesiones o cursores que tengan permisos de solo lectura, incluso si la sesión y el cursor en última instancia no realizan una operación de actualización. Tanto la sesión como el cursor deben tener privilegios de escritura para adquirir un bloqueo de escritura.
 
 Los bloqueos de lectura y escritura son un medio de bloqueo pesimista. El bloqueo pesimista espera que varias sesiones simultáneas entren en conflicto y adquieran bloqueos de antemano para asegurarse de que sus operaciones se ejecutan correctamente.
 
-La mayoría de las operaciones se serializarán en virtud de los bloqueos tomados implícitamente. Sin embargo, algunas operaciones no lo harán. Para ilustrar esto, tenga en cuenta las dos transacciones:
+La mayoría de las operaciones se pueden serializar en virtud de los bloqueos tomados implícitamente. Sin embargo, algunas operaciones no lo harán. Para ilustrar esto, tenga en cuenta las dos transacciones:
 
 T1: R(A), U(B)
 
@@ -108,13 +108,7 @@ El control de versiones de nivel de registro garantizará que cada transacción 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

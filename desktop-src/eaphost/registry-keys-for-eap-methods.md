@@ -1,22 +1,22 @@
 ---
-title: Configurar los valores del registro para los métodos EAP
-description: Obtenga información sobre cómo configurar los valores del registro para los métodos de autenticación EAP y EAP. Vea una lista de temas y vea más recursos disponibles.
+title: Configuración de valores del Registro para métodos EAP
+description: Obtenga información sobre la configuración de valores del Registro para los métodos de autenticación EAP del mismo nivel y EAP. Consulte una lista de temas y vea los recursos disponibles adicionales.
 ms.assetid: 1022cfa6-2e12-40e7-b5d6-bb60a4d787be
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 379c57e67ec8cccc04ac21c894a8c81a18d8414c
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 2beb182e4d7233e2fae533e6a7332bbca2600582189da5cf8388564dbaeec5f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094245"
 ---
-# <a name="configuring-registry-values-for-eap-methods"></a>Configurar los valores del registro para los métodos EAP
+# <a name="configuring-registry-values-for-eap-methods"></a>Configuración de valores del Registro para métodos EAP
 
-Los valores del registro necesarios para los métodos de EAP del mismo nivel y los métodos de autenticación EAP se proporcionan en los temas siguientes.
+Los valores del Registro necesarios para los métodos del mismo nivel de EAP y los métodos de autenticación EAP se proporcionan en los temas siguientes.
 
--   [Claves del registro del método de autenticación de EAP](eap-authenticator-method-registry-keys.md)
--   [Claves del registro del método EAP del mismo nivel](eap-peer-method-registry-keys.md)
+-   [Claves del Registro Authenticator eap](eap-authenticator-method-registry-keys.md)
+-   [Claves del Registro del método del mismo nivel eap](eap-peer-method-registry-keys.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -28,9 +28,9 @@ Los valores del registro necesarios para los métodos de EAP del mismo nivel y l
 [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

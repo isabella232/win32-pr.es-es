@@ -1,17 +1,17 @@
 ---
 description: Información de control de acceso, desde SummaryInfo propset.
 ms.assetid: 0cc40312-2298-4611-b60f-e0222ef793c3
-title: System.Document. Bursátil
+title: System.Document. Seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7295b73b947d4423f5eae2f4df6e8cfeea4b826
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f42915f8fdf456162bae6242d91fbe0d12bfcfcb63a66c7e72ac3ab65b2d349
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059185"
 ---
-# <a name="systemdocumentsecurity"></a>System.Document. Bursátil
+# <a name="systemdocumentsecurity"></a>System.Document. Seguridad
 
 Información de control de acceso, desde SummaryInfo propset
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

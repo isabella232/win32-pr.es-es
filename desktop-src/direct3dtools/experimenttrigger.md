@@ -4,7 +4,7 @@ MS-HAID: vspixengine.ExperimentTrigger
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Estructura ExperimentTrigger
+title: ExperimentTrigger (estructura)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 3CAA67E5-9C43-4BCD-9388-63EF06AB1C0E
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bba350657cf738058ecd3f38d7284b72deda1c17
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ce4087e4e4ef30cedeb356730a0a7ae94252d4f3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906564"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625181"
 ---
-# <a name="span-idvspixengineexperimenttriggerspanexperimenttrigger-structure"></a><span id="vspixengine.experimenttrigger"></span>Estructura ExperimentTrigger
+# <a name="span-idvspixengineexperimenttriggerspanexperimenttrigger-structure"></a><span id="vspixengine.experimenttrigger"></span>ExperimentTrigger (estructura)
 
 Representa la información del desencadenador del experimento.
 
@@ -38,26 +38,26 @@ Representa la información del desencadenador del experimento.
 ## <a name="members"></a>Miembros
 
 **type**  
-El tipo de experimento (captura) desencadenado.
+Tipo de experimento (captura) desencadenado.
 
 **key**  
-Cuando el tipo es igual a EXPERIMENTTRIGGERTYPE:: KEY, la clave utilizada para desencadenar la captura.
+Cuando type es igual a EXPERIMENTTRIGGERTYPE::KEY, la clave usada para desencadenar la captura.
 
-**Númeromarco**  
-Cuando el tipo es igual a EXPERIMENTTRIGGERTYPE:: NÚMEROMARCO, el número de marco que desencadenará la captura.
+**frameNumber**  
+Cuando type es igual a EXPERIMENTTRIGGERTYPE::FRAMENUMBER, el número de fotograma que desencadenará la captura.
 
 **captureCount**  
-Número de fotogramas secuenciales que se van a capturar.
+Número de fotogramas secuenciales que se capturan.
 
 **actionIID**  
-IDENTIFICADOR del evento de acción (captura de pantalla, captura de fotogramas, etc.).
+Identificador del evento de acción (captura de pantalla, captura de fotogramas, etc.).
 
 **actionPlayload**  
 Puntero a la carga del evento de acción.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

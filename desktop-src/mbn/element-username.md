@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ UserName (v4)
+description: MBNProfileExt... \/ \/ UserName (v4)
 MS-HAID: WWAN\_profile\_v4.element\_UserName
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,14 +16,14 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1e3202b321c547309635a4ba5bb53d1b22276c72
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: f408c7c754e1cc718d3bc6370fd050330296709e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122981938"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472121"
 ---
-# <a name="span-idwwan_profile_v4element_usernamespanmbnprofileextusername-v4"></a><span id="WWAN_profile_v4.element_UserName"></span>MBNProfileExt \/ ... \/ UserName (v4)
+# <a name="span-idwwan_profile_v4element_usernamespanmbnprofileextusername-v4"></a><span id="WWAN_profile_v4.element_UserName"></span>MBNProfileExt... \/ \/ UserName (v4)
 
 Nombre de usuario que se usará para el inicio de sesión.
 
@@ -41,7 +41,7 @@ Para más información, consulte la documentación del elemento [**UserName**](.
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<UserName\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <UserName>
@@ -74,9 +74,7 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

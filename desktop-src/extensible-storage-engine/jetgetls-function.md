@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JetGetLS (Función)'
+description: 'Más información sobre: Función JetGetLS'
 title: JetGetLS (Función)
 TOCTitle: JetGetLS Function
 ms:assetid: 411baf34-d167-4633-81af-be4886f4a646
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9eb6eed0bbec7be0acd377fa3b34d1b91a8b3fed
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 48446d74802bea7ab11aae9bc307d90189d8029d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982548"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478361"
 ---
 # <a name="jetgetls-function"></a>JetGetLS (Función)
 
@@ -64,11 +64,11 @@ Búfer de salida que recibe el identificador de contexto asociado actualmente al
 Grupo de bits que especifica cero o más de las opciones siguientes.
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitLSCursor</p> | <p>Indica que se debe recuperar el identificador de contexto asociado al cursor especificado.</p><p>Si no JET_bitLSCursor ni JET_bitLSTable se especifica , JET_bitLSCursor se presupone.</p><p>Esta opción no se puede usar con JET_bitLSTable. La operación producirá un error JET_errInvalidgrbit si se intenta.</p> | 
 | <p>JET_bitLSTable</p> | <p>Indica que se debe recuperar el identificador de contexto asociado a la tabla que contiene el cursor especificado. No es posible usar esta opción con JET_bitLSCursor. La operación producirá un error JET_errInvalidgrbit si se intenta.</p> | 
-| <p>JET_bitLSReset</p> | <p>Indica que el identificador de contexto del objeto elegido se debe restablecer a JET_LSNil. El valor actual del identificador de contexto se devuelve en el búfer de salida.</p> | 
+| <p>JET_bitLSReset</p> | <p>Indica que el identificador de contexto para el objeto elegido se debe restablecer a JET_LSNil. El valor actual del identificador de contexto se devuelve en el búfer de salida.</p> | 
 
 
 
@@ -97,13 +97,7 @@ En caso de error, no se ha producido ningún cambio en el estado del objeto soli
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

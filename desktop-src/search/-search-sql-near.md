@@ -1,21 +1,21 @@
 ---
-description: El término próximo se usa para especificar que dos términos de búsqueda de contenido deben estar relativamente cerca de otro para que se reconozcan como coincidencia para el predicado CONTAINS.
+description: El término NEAR se usa para especificar que dos términos de búsqueda de contenido deben estar relativamente cerca unos de otros para que se reconozcan como coincidencias para el predicado CONTAINS.
 ms.assetid: cbc449b1-9f1d-42a2-b39e-d5cd69c052df
-title: A corto plazo
+title: NEAR Term
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4676ec8af80f674ca0b8124d8b4f941d0d6f4936
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c43d6e3554722ebeb65d2789d07adb521177a986
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360190"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631823"
 ---
-# <a name="near-term"></a>A corto plazo
+# <a name="near-term"></a>NEAR Term
 
-El término próximo se usa para especificar que dos términos de búsqueda de contenido deben estar relativamente cerca de otro para que se reconozcan como coincidencia para el predicado [Contains](-search-sql-contains.md) .
+El término NEAR se usa para especificar que dos términos de búsqueda de contenido deben estar relativamente cerca unos de otros para que se reconozcan como coincidencias para el [predicado CONTAINS.](-search-sql-contains.md)
 
-La sintaxis para el término próximo es:
+La sintaxis del término NEAR es:
 
 
 ```
@@ -24,25 +24,25 @@ La sintaxis para el término próximo es:
 
 
 
-El término próximo se puede representar mediante la palabra clave "NEAR" o una tilde (~).
+El término NEAR se puede representar mediante la palabra clave "NEAR" o mediante una tilde (~).
 
-Cuando las palabras Unidas cerca de la consulta se encuentran en unas 50 palabras aproximadamente entre sí dentro de la columna en la que se busca, el término próximo devuelve una coincidencia. Cuanto más se acerquen las dos palabras, mayor será el rango calculado para el término próximo. Cuanto más lejos se encuentran las dos palabras, menor es el rango.
+Cuando las palabras unidas por NEAR en la consulta se encuentran dentro de aproximadamente 50 palabras entre sí dentro de la columna en la que se está buscando, el término NEAR devuelve una coincidencia. Cuanto más cerca estén las dos palabras, mayor será el rango calculado para el término NEAR. Cuanto más lejos estén las dos palabras, menor es la clasificación.
 
 > [!Note]  
-> El número de palabras entre los términos de búsqueda encontrados es aproximado y depende de la apariencia de las palabras irrelevantes, como "a" o "The", y cómo wordbreakers el texto de tokens. Puede ser inferior a 50.
+> El número de palabras entre los términos de búsqueda encontrados es aproximado y depende de la apariencia de las palabras ruidosas, como "a" o "the", y de la forma en que los buscadores de palabras tokenizan texto. Puede ser menor que 50.
 
  
 
 
-En la tabla siguiente se describen los tipos de términos de búsqueda de contenido que se pueden usar con un término cercano en un predicado CONTAINS.
+En la tabla siguiente se describen los tipos de términos de búsqueda de contenido que se pueden usar con un término NEAR en un predicado CONTAINS.
 
 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -54,11 +54,11 @@ En la tabla siguiente se describen los tipos de términos de búsqueda de conten
 <tbody>
 <tr class="odd">
 <td>Word</td>
-<td>Una sola palabra sin espacios u otros signos de puntuación. No es necesario incluir comillas dobles.</td>
+<td>Una sola palabra sin espacios u otros signos de puntuación. No son necesarias comillas dobles.</td>
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -75,7 +75,7 @@ En la tabla siguiente se describen los tipos de términos de búsqueda de conten
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -88,12 +88,12 @@ En la tabla siguiente se describen los tipos de términos de búsqueda de conten
 </tr>
 <tr class="odd">
 <td>Wildcard (Carácter comodín)</td>
-<td>Palabras o frases con el asterisco (*) agregados al final. Para obtener más información, vea <a href="-search-sql-wildcards.md">usar caracteres comodín en el predicado CONtains</a>.</td>
+<td>Palabras o frases con el asterisco (*) agregado al final. Para obtener más información, <a href="-search-sql-wildcards.md">vea Usar caracteres comodín en el predicado CONTAINS</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -108,13 +108,13 @@ En la tabla siguiente se describen los tipos de términos de búsqueda de conten
 </table>
 
 > [!Note]  
-> Si las palabras coincidentes especificadas con el término próximo se encuentran en la columna que se está buscando, pero se encuentran más allá de las 50 palabras, el resultado sigue siendo devuelto, pero tiene un [rango](-search-sql-understandingrelevancevalues.md) de 0.
+> Si las palabras de coincidencia especificadas con el término NEAR se encuentran en la columna en la que se busca, pero están más lejos que 50 palabras, el resultado se devuelve, pero tiene un rango de 0. [](-search-sql-understandingrelevancevalues.md)
 
  
 
 ### <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra el encadenamiento de términos cercanos, usando las formas corto y largo del término:
+En el ejemplo siguiente se muestra el encadenamiento de términos NEAR, usando las formas cortas y largas del término:
 
 
 ```
@@ -133,7 +133,7 @@ En el ejemplo siguiente se muestra el encadenamiento de términos cercanos, usan
 [Cláusula WHERE](-search-sql-where.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Predicados de texto completo](-search-sql-fulltextpredicates.md)

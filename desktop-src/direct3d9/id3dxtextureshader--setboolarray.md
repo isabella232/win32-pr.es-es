@@ -1,7 +1,7 @@
 ---
 description: Establece una matriz de valores BOOL.
 ms.assetid: d168d362-86b3-4db4-bc52-748a640ebc18
-title: 'ID3DXTextureShader:: SetBoolArray (método) (D3DX9Shader. h)'
+title: Método ID3DXTextureShader::SetBoolArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0799e4ef9d35a886e59fae44c37a841bcda3aed6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cd802f1b4052565242aa2e1d036f7cdb0d4acae59b6ce218ad7ca1eeabaa09dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095655"
 ---
-# <a name="id3dxtextureshadersetboolarray-method"></a>ID3DXTextureShader:: SetBoolArray (método)
+# <a name="id3dxtextureshadersetboolarray-method"></a>Método ID3DXTextureShader::SetBoolArray
 
 Establece una matriz de valores BOOL.
 
@@ -42,30 +42,30 @@ HRESULT SetBoolArray(
 
 <dl> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes. Vea [D3DXHANDLE](d3dxfx.md).
+Identificador único de la matriz de constantes. Vea [D3DXHANDLE.](d3dxfx.md)
 
 </dd> <dt>
 
-*PB* \[ de\]
+*pB* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**bool**](../winprog/windows-data-types.md) \***
+Tipo: **const [**BOOL**](../winprog/windows-data-types.md) \***
 
 Matriz de valores BOOL.
 
 </dd> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de valores BOOLEANOs de la matriz.
+Número de valores BOOL de la matriz.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Número de valores BOOLEANOs de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

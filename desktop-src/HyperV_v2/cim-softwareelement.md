@@ -1,5 +1,5 @@
 ---
-description: Representa una parte que se puede administrar individualmente o que se puede implementar de un \_ objeto SoftwareFeature de CIM.
+description: Representa una parte administrable o implementable individualmente de una propiedad \_ Cim SoftwareFeature.
 ms.assetid: 96affc55-b001-4122-b883-3610bf95a786
 title: CIM_SoftwareElement (administración de Hyper-V)
 ms.topic: reference
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6454b6080a4841ef261233ce304725ec4a08a1a793cfb657c87e20ef56592df0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1557190cf6afef34d234e5f8e3c7fe3f051f2b4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118647365"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881793"
 ---
 # <a name="cim_softwareelement-class-hyper-v-management"></a>CIM_SoftwareElement (administración de Hyper-V)
 
-Representa una parte que se puede administrar individualmente o que se puede implementar de un **\_ objeto SoftwareFeature de CIM.**
+Representa una parte que se puede administrar individualmente o que se puede implementar de una propiedad **\_ Cim SoftwareFeature.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,7 +81,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.4")
 </dt> </dl>
 
-Identificador interno de la compilación del elemento de software.
+Identificador interno para la compilación del elemento de software.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.6")
 </dt> </dl>
 
-Identificador del fabricante del elemento de software. Suele ser una unidad de almacén (SKU) o un número de pieza.
+Identificador del fabricante del elemento de software. Suele ser una unidad de mantenimiento de existencias (SKU) o un número de pieza.
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.7")
 </dt> </dl>
 
-Edición de idioma del elemento de software. Se deben usar los códigos de idioma definidos en el estándar ISO 639. Si el elemento representa una versión multilingüe o internacional, se debe usar la cadena "Multilingüe".
+Edición de lenguaje del elemento de software. Se deben usar los códigos de idioma definidos en el estándar ISO 639. Si el elemento representa una versión multilingüe o internacional, se debe usar la cadena "Multilingüe".
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](/windows/desktop/CIMWin32Prov/cim-operatingsystem).**OtherTypeDescription**")
 </dt> </dl>
 
-El fabricante y el tipo de sistema operativo cuando la **propiedad TargetOperatingSystem** se establece en **Other** ("1").
+El fabricante y el tipo de sistema operativo cuando **la propiedad TargetOperatingSystem** se establece **en Otros** ("1").
 
 </dd> <dt>
 
@@ -231,9 +231,9 @@ Estado del ciclo de vida del elemento de software.
 
 \- Un SoftwareElement en estado instalable describe los detalles necesarios para instalarlo correctamente y los detalles (comprobaciones y acciones) necesarios para crear un elemento en el estado ejecutable (es decir, el siguiente estado).
 
-\- Un SoftwareElement en estado ejecutable describe los detalles necesarios para iniciarlo correctamente y los detalles (Comprobaciones y acciones) necesarios para moverlo al estado en ejecución (es decir, el siguiente estado).
+\- Un SoftwareElement en estado ejecutable describe los detalles necesarios para iniciarlo correctamente y los detalles (comprobaciones y acciones) necesarios para moverlo al estado en ejecución (es decir, el siguiente estado).
 
-\- Un SoftwareElement en estado de ejecución describe los detalles necesarios para administrar el elemento iniciado.
+\- Un SoftwareElement en estado en ejecución describe los detalles necesarios para administrar el elemento iniciado.
 
 <dt>
 
@@ -279,7 +279,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](/windows/desktop/CIMWin32Prov/cim-operatingsystem).**OSType**")
 </dt> </dl>
 
-Sistema operativo del elemento de software. El valor de esta propiedad no garantiza que sea ejecutable binario.
+Sistema operativo del elemento de software. El valor de esta propiedad no garantiza que sea un archivo ejecutable binario.
 
 <dt>
 
@@ -369,7 +369,7 @@ Sistema operativo del elemento de software. El valor de esta propiedad no garant
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-**SISTEMA OPERATIVO/2** (12)
+**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -810,7 +810,7 @@ Sistema operativo del elemento de software. El valor de esta propiedad no garant
 
 <span id="Windows_Embedded_for_Point_of_Service"></span><span id="windows_embedded_for_point_of_service"></span><span id="WINDOWS_EMBEDDED_FOR_POINT_OF_SERVICE"></span>
 
-**Windows embedded for Point of Service** (75)
+**Windows insertado para el punto de servicio** (75)
 
 
 </dt> <dd></dd> <dt>
@@ -887,14 +887,14 @@ Sistema operativo del elemento de software. El valor de esta propiedad no garant
 
 <span id="Novell_OES"></span><span id="novell_oes"></span><span id="NOVELL_OES"></span>
 
-**OES Desasoy** (86)
+**OES de Asíns** (86)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Novell_Linux_Desktop"></span><span id="novell_linux_desktop"></span><span id="NOVELL_LINUX_DESKTOP"></span>
 
-**Escritorio De Linux de Linux** de Linux (87)
+**Escritorio Linux de Nociones** (87)
 
 
 </dt> <dd></dd> <dt>
@@ -1055,7 +1055,7 @@ Sistema operativo del elemento de software. El valor de esta propiedad no garant
 
 <span id="eComStation_32-bitx"></span><span id="ecomstation_32-bitx"></span><span id="ECOMSTATION_32-BITX"></span>
 
-**eComStation 32 bitsx** (110)
+**eComStation 32-bitx** (110)
 
 
 </dt> <dd></dd> </dl>
@@ -1074,7 +1074,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.4")
 </dt> </dl>
 
-La versión de software con el formato *<Major>* *<Minor>* .*<Revision>* o *<Major>* *<Minor><letter><revision>* .
+La versión de software con el formato *&lt; Principal &gt;*.*&lt; Secundaria. &gt;* *&lt; Revisión &gt;* o *&lt; principal. &gt;**&lt; Revisión &gt; &lt; de letra &gt; &lt; secundaria &gt;*.
 
 </dd> </dl>
 
@@ -1092,7 +1092,7 @@ La versión de software con el formato *<Major>* *<Minor>* .*<Revision>* o *<Maj
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

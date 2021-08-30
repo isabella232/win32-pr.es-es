@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ff2d9e7c538e8aa8cc862fe9a72c0308e497fd4
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: fba09bc0bfb806a8785ea1c009f2bfbb7eb5105c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986668"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479001"
 ---
 # <a name="jetprereadindexranges-function"></a>JetPrereadIndexRanges (Función)
 
@@ -83,12 +83,12 @@ Número de id. de columna para las columnas de valor largo que se deben leer pre
 Grupo de bits que especifica cero o más de los valores de dirección de lectura previa enumerados en la tabla siguiente.
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>Adelante</p> | <p>Leer previamente hacia delante.</p> | 
 | <p>Atrás</p> | <p>Leer previamente hacia atrás.</p> | 
 | <p>FirstPageOnly</p> | <p>Leer previamente solo la primera página de cualquier columna larga.</p> | 
-| <p>NormalizedKey</p> | <p>Clave/marcador normalizado proporcionado en lugar del valor de columna.</p> | 
+| <p>NormalizedKey</p> | <p>Clave o marcador normalizado proporcionado en lugar del valor de columna.</p> | 
 
 
 
@@ -103,20 +103,14 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los c
 
 
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Si los registros con los intervalos de claves especificados no están en la caché del búfer, debe iniciar lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2012.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2012.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

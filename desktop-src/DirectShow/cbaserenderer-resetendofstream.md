@@ -1,7 +1,7 @@
 ---
 description: El método ResetEndOfStream restablece las marcas de fin de secuencia.
 ms.assetid: 80f6d49b-a825-4c3c-b693-7b1d9298f541
-title: Método CBaseRenderer. ResetEndOfStream (Renbase. h)
+title: Método CBaseRenderer.ResetEndOfStream (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0269ee2dfafea9265b5eeb82caa4c39f8d91320c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f65bb1c4a63f1aac004dcbe0e1da267c1f14cf095d9c60e2f68391b50d53a01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131435"
 ---
-# <a name="cbaserendererresetendofstream-method"></a>CBaseRenderer. ResetEndOfStream, método
+# <a name="cbaserendererresetendofstream-method"></a>Método CBaseRenderer.ResetEndOfStream
 
-El `ResetEndOfStream` método restablece las marcas de fin de secuencia.
+El `ResetEndOfStream` método restablece las marcas de fin de flujo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método borra la condición de final de secuencia anterior. En ese momento, el filtro puede recibir datos nuevos. Los métodos [**CBaseRenderer:: Stop**](cbaserenderer-stop.md) y [**CBaseRenderer:: BeginFlush**](cbaserenderer-beginflush.md) llaman a este método.
+Este método borra la condición de final de secuencia anterior. En ese momento, el filtro puede recibir nuevos datos. Los [**métodos CBaseRenderer::Stop**](cbaserenderer-stop.md) y [**CBaseRenderer::BeginFlush**](cbaserenderer-beginflush.md) llaman a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método borra la condición de final de secuencia anterior. En ese momento,
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método borra la condición de final de secuencia anterior. En ese momento,
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

@@ -8,12 +8,12 @@ keywords:
 - Nombre de entidad de seguridad de servicio AD, formatos de nombre para
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b041f88bc025c604ec5f0ad9a6bf5ba7f4cdabc
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b5f135f0aa9bc7199e7b5338b94479f2a20d5b11
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472341"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881291"
 ---
 # <a name="name-formats-for-unique-spns"></a>Formatos de nombre para SPN únicos
 
@@ -32,8 +32,8 @@ Un SPN debe ser único en el bosque en el que está registrado. Si no es único,
 | Elemento | Descripción | 
 |---------|-------------|
 | "<service class>" | Cadena que identifica la clase general de servicio; por ejemplo, "SqlServer". Hay nombres de clase de servicio conocidos, como "www" para un servicio web o "ldap" para un servicio de directorio. En general, puede ser cualquier cadena que sea única para la clase de servicio. Tenga en cuenta que la sintaxis de SPN usa una barra diagonal (/) para separar elementos, por lo que este carácter no puede aparecer en un nombre de clase de servicio. | 
-| "<host>" | Nombre del equipo en el que se ejecuta el servicio. Puede ser un nombre DNS completo o un nombre NetBIOS. Tenga en cuenta que no se garantiza que los nombres NetBIOS sean únicos en un bosque, por lo que un SPN que contiene un nombre NetBIOS quizás no sea único. | 
-| "<port>" | Número de puerto opcional para diferenciar entre varias instancias de la misma clase de servicio en un único equipo host. Omita este componente si el servicio usa el puerto predeterminado para su clase de servicio. | 
+| " &lt; host &gt; " | Nombre del equipo en el que se ejecuta el servicio. Puede ser un nombre DNS completo o un nombre NetBIOS. Tenga en cuenta que no se garantiza que los nombres NetBIOS sean únicos en un bosque, por lo que un SPN que contiene un nombre NetBIOS quizás no sea único. | 
+| " &lt; port &gt; " | Número de puerto opcional para diferenciar entre varias instancias de la misma clase de servicio en un único equipo host. Omita este componente si el servicio usa el puerto predeterminado para su clase de servicio. | 
 | "<service name>" | Nombre opcional que se usa en los SPN de un servicio replicable para identificar los datos o servicios proporcionados por el servicio o el dominio a los que sirve el servicio. Este componente puede tener uno de los siguientes formatos:<ul><li>Nombre distintivo u objectGUID de un objeto en Active Directory Domain Services, como un punto de conexión de servicio (SCP).</li><li>Nombre DNS del dominio de un servicio que proporciona un servicio especificado para un dominio en su conjunto.</li><li>Nombre DNS de un registro SRV o MX.</li></ul> | 
 
 
@@ -54,7 +54,7 @@ Para un servicio basado en host, se omite el componente " nombre de servicio " p
 
 
 
-La clase de servicio por sí sola es suficiente para identificar a los clientes las características que proporciona el servicio. Puede instalar instancias de la clase de servicio en muchos equipos y cada instancia proporciona servicios que se identifican con su equipo host. FTP y Telnet son ejemplos de servicios basados en host. Los SPN de una instancia de servicio basada en host pueden incluir el número de puerto si el servicio usa un puerto no predeterminado o hay varias instancias del servicio en el host.
+La clase de servicio por sí sola es suficiente para identificar a los clientes las características que proporciona el servicio. Puede instalar instancias de la clase de servicio en muchos equipos y cada instancia proporciona servicios que se identifican con su equipo host. FTP y Telnet son ejemplos de servicios basados en host. Los SPN de una instancia de servicio basada en host pueden incluir el número de puerto si el servicio usa un puerto no predeterminado o si hay varias instancias del servicio en el host.
 
 
 ```C++
@@ -98,7 +98,7 @@ MyDBService/host3/CN=hrdb,OU=mktg,DC=example,DC=com
 
 Otro ejemplo de un servicio replicable es aquel que proporciona servicios a un dominio completo. En este caso, el componente &lt; "nombre de &gt; servicio" es el nombre DNS del dominio que se está atendidas. Un KDC de Kerberos es un ejemplo de este tipo de servicio replicable.
 
-Tenga en cuenta que si cambia el nombre DNS de un equipo, el sistema actualiza el elemento " host " para todos los &lt; &gt; SPN registrados para ese host en el bosque.
+Tenga en cuenta que si cambia el nombre DNS de un equipo, el sistema actualiza el elemento " host " para todos los SPN registrados para ese &lt; &gt; host en el bosque.
 
  
 

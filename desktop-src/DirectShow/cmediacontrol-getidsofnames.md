@@ -1,7 +1,7 @@
 ---
-description: 'Asigna una sola función miembro y un conjunto opcional de parámetros a un conjunto correspondiente de identificadores de envío enteros (DISPID), que se puede usar en las llamadas subsiguientes a la función miembro CMediaControl:: Invoke.'
+description: Mapas una función miembro única y un conjunto opcional de parámetros en un conjunto correspondiente de identificadores de distribución de enteros (DISPID), que se pueden usar en llamadas posteriores a la función miembro CMediaControl::Invoke.
 ms.assetid: 9ce1b1aa-ea03-4a65-bff7-e46771cd0772
-title: Método CMediaControl. GetIDsOfNames (Ctlutil. h)
+title: Método CMediaControl.GetIDsOfNames (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f906db9540f0429e1e7831284e55edf8c29b6a03
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d328a4311746f6fdab9cf7eaa3376c7ba49c2b13b9db1d3aaac19142d2d583d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055184"
 ---
-# <a name="cmediacontrolgetidsofnames-method"></a>CMediaControl. GetIDsOfNames (método)
+# <a name="cmediacontrolgetidsofnames-method"></a>Método CMediaControl.GetIDsOfNames
 
-Asigna una sola función miembro y un conjunto opcional de parámetros a un conjunto correspondiente de identificadores de envío enteros (DISPID), que se puede usar en las llamadas subsiguientes a la función miembro [**CMediaControl:: Invoke**](cmediacontrol-invoke.md) .
+Mapas una función miembro única y un conjunto opcional de parámetros en un conjunto correspondiente de identificadores de distribución de enteros (DISPID), que se pueden usar en llamadas posteriores a la función miembro [**CMediaControl::Invoke.**](cmediacontrol-invoke.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ HRESULT GetIDsOfNames(
 *riid* 
 </dt> <dd>
 
-Identificador de referencia. Reservado para uso futuro. Debe ser **null**.
+Identificador de referencia. Reservado para uso futuro. Debe ser **NULL.**
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Dirección de un puntero a una matriz de nombres pasada que se va a asignar.
 
 </dd> <dt>
 
-*CNAME* 
+*cNames* 
 </dt> <dd>
 
 Número de nombres que se van a asignar.
@@ -70,14 +70,14 @@ Número de nombres que se van a asignar.
 *lcid* 
 </dt> <dd>
 
-Contexto de configuración regional en el que se van a interpretar los nombres.
+Contexto de configuración regional en el que se interpretarán los nombres.
 
 </dd> <dt>
 
 *rgdispid* 
 </dt> <dd>
 
-Puntero a una matriz asignada por el llamador, donde cada elemento contiene un identificador que corresponde a uno de los nombres pasados en la matriz *rgszNames* . El primer elemento representa el nombre del miembro; los elementos siguientes representan cada uno de los parámetros del miembro.
+Puntero a una matriz asignada por el autor de la llamada, cuyo elemento contiene un identificador correspondiente a uno de los nombres pasados en la *matriz rgszNames.* El primer elemento representa el nombre del miembro; los elementos subsiguientes representan cada uno de los parámetros del miembro.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                                            | Descripción                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**DISP \_ . \_ \_ CLSID desconocido**</dt> </dl> | No se reconoció el CLSID.<br/>                                                                                                             |
-| <dl> <dt>**DISP \_ E \_ UNKNOWNNAME**</dt> </dl>    | No se conocían uno o varios de los nombres. Los DISPID devueltos contienen un DISPID \_ desconocido para cada entrada que corresponde a un nombre desconocido.<br/> |
+| <dl> <dt>**DISP \_ E \_ UNKNOWN \_ CLSID**</dt> </dl> | No se ha reconocido el CLSID.<br/>                                                                                                             |
+| <dl> <dt>**DISP \_ E \_ UNKNOWNNAME**</dt> </dl>    | No se conocían uno o varios de los nombres. Los DISPID devueltos contienen DISPID \_ UNKNOWN para cada entrada que corresponde a un nombre desconocido.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Memoria insuficiente<br/>                                                                                                                            |
-| <dl> <dt>**S \_ correcto**</dt> </dl>                   | Correcto.<br/>                                                                                                                                  |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Correcto.<br/>                                                                                                                                  |
 
 
 
@@ -104,8 +104,8 @@ Devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -113,7 +113,7 @@ Devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**Clase CMediaControl**](cmediacontrol.md)
+[**CMediaControl (clase)**](cmediacontrol.md)
 </dt> </dl>
 
  

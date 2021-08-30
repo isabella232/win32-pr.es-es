@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt... \/ \/ UserLogonCred (v4)
+description: MBNProfileExt \/ ... \/ UserLogonCred (v4)
 MS-HAID: WWAN\_profile\_v4.element\_UserLogonCred
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,14 +16,14 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d28c0d275b722dbba6ebc1be3363cfa3e2f6d300
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: af4fd0c97c47f210d0a6112ebd2a3394ab442959
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985398"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475121"
 ---
-# <a name="span-idwwan_profile_v4element_userlogoncredspanmbnprofileextuserlogoncred-v4"></a><span id="WWAN_profile_v4.element_UserLogonCred"></span>MBNProfileExt... \/ \/ UserLogonCred (v4)
+# <a name="span-idwwan_profile_v4element_userlogoncredspanmbnprofileextuserlogoncred-v4"></a><span id="WWAN_profile_v4.element_UserLogonCred"></span>MBNProfileExt \/ ... \/ UserLogonCred (v4)
 
 Credenciales de inicio de sesión para una conexión.
 
@@ -39,7 +39,7 @@ Credenciales de inicio de sesión para una conexión.
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<UserLogonCred\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <UserLogonCred>
@@ -67,7 +67,7 @@ Ninguno.
 
 | Elemento secundario | Descripción | 
 |---------------|-------------|
-| <a href="element-ignorepassword.md">IgnorePassword</a> | <p>Especifica cómo se controlan las contraseñas al actualizar perfiles.</p><p>Si se establece en <strong>TRUE</strong> y existe un perfil con el mismo nombre en el momento de la operación de actualización, la contraseña de ese perfil se toma y se almacena en el nuevo perfil.</p><p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-ignorepassword-userlogoncred-element.md"><strong>IgnorePassword</strong></a> v1.</p> | 
+| <a href="element-ignorepassword.md">IgnorePassword</a> | <p>Especifica cómo se controlan las contraseñas al actualizar perfiles.</p><p>Si se establece en <strong>TRUE</strong> y existe un perfil con el mismo nombre en el momento de la operación de actualización, la contraseña de ese perfil se toma y almacena en el nuevo perfil.</p><p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-ignorepassword-userlogoncred-element.md"><strong>IgnorePassword</strong></a> v1.</p> | 
 | <a href="element-password.md">Contraseña</a> | <p>Especifica la contraseña usada para autenticar a un usuario.</p><p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-password-userlogoncred-element.md"><strong>Password</strong></a> v1.</p> | 
 | <a href="element-username.md">UserName</a> | <p>Nombre de usuario que se usará para el inicio de sesión.</p><p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-username-userlogoncred-element.md"><strong>UserName</strong></a> v1.</p> | 
 
@@ -87,9 +87,7 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

@@ -1,7 +1,7 @@
 ---
 description: El método IsClassID determina si un CLSID coincide con esta plantilla de clase.
 ms.assetid: de560f7a-2ccb-44e2-ac32-3b0fea0d80b8
-title: Método CFactoryTemplate. IsClassID (ComBase. h)
+title: Método CFactoryTemplate.IsClassID (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94564d7e9db52f8be22717a10f73fffb7fb6fa14
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 38714c6c6a97c46a14d1e381fdf49ddbc723d04ee217a09c9554b39d4eb22491
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055795"
 ---
-# <a name="cfactorytemplateisclassid-method"></a>CFactoryTemplate. IsClassID, método
+# <a name="cfactorytemplateisclassid-method"></a>CFactoryTemplate.IsClassID (método)
 
 El `IsClassID` método determina si un CLSID coincide con esta plantilla de clase.
 
@@ -51,7 +51,7 @@ Referencia a un CLSID.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el *parámetro rclsid* es el mismo CLSID que la variable miembro [**CFactoryTemplate:: m \_ CLSID**](cfactorytemplate-m-clsid.md) ; de lo contrario, devuelve **false**.
+Devuelve **TRUE** si el *parámetro rclsid* es el mismo CLSID que la variable miembro [**CFactoryTemplate::m \_ ClsID**](cfactorytemplate-m-clsid.md) o devuelve **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve **true** si el *parámetro rclsid* es el mismo CLSID que la variable mi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve **true** si el *parámetro rclsid* es el mismo CLSID que la variable mi
 
 <dl> <dt>
 
-[**Clase CFactoryTemplate**](cfactorytemplate.md)
+[**CFactoryTemplate (clase)**](cfactorytemplate.md)
 </dt> </dl>
 
  

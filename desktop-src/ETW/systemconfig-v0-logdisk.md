@@ -26,12 +26,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 42b17cf31dcb3830cd35f046a7fcbad1858f8ae4f728fc1417339962a4be4441
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e07a5539d8916434fa86a257daf4ef8a2ba3a826
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119927525"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880741"
 ---
 # <a name="systemconfig_v0_logdisk-class"></a>Clase LogDisk SystemConfig \_ V0 \_
 
@@ -118,7 +118,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (6), **Max** (4)
 </dt> </dl>
 
-Letra de unidad del disco con el formato " <letter> :".
+Letra de unidad del disco con el formato " &lt; letter &gt; :".
 
 </dd> <dt>
 
@@ -138,9 +138,9 @@ Tipo de unidad de disco. Los valores posibles son:
 
 
 
-| Value                                                                        | Significado                                         |
+| Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partición<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volumen<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partición extendida en varios discos<br/> |
 
@@ -314,14 +314,14 @@ Reservado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXPRTBuffer::GetNumSamples: recupera el número de vértices (o texeles) muestreados.'
+description: 'Método ID3DXPRTBuffer::GetNumSamples: recupera el número de vértices (o elementos de textura) muestreados.'
 ms.assetid: fdcb9f09-29fb-409d-b2c0-78ebf311f48b
 title: Método ID3DXPRTBuffer::GetNumSamples (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b6889b710b92d52a48884098e68c58286c400330
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c73cb3067d143ca6da54d0bba4e12244332e4f91aad71efde1c281467bf863b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095875"
 ---
 # <a name="id3dxprtbuffergetnumsamples-method"></a>Método ID3DXPRTBuffer::GetNumSamples
 
-Recupera el número de vértices (o texeles) muestreados.
+Recupera el número de vértices (o elementos de textura) muestreados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Devuelve el número de vértices (o texeles) muestreados.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,32 +1,32 @@
 ---
-description: En este tema se describe cómo reproducir un segmento de un archivo multimedia en MFPlay, estableciendo las horas de inicio y detención para la reproducción.
+description: En este tema se describe cómo reproducir un segmento de un archivo multimedia en MFPlay estableciendo las horas de inicio y de detenerse para la reproducción.
 ms.assetid: cd761a4a-42ad-4994-b1b8-0946d29c3d8b
 title: Cómo reproducir un clip de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 744db96c6dc384f2473f6c6d3361b24950a8881d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fe8773e2658d77b6c603e121d6498a8fb5235eec16d71726049d2d59ec1169f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061535"
 ---
 # <a name="how-to-play-a-file-clip"></a>Cómo reproducir un clip de archivo
 
-\[MFPlay está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. \]
+\[MFPlay está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. \]
 
-En este tema se describe cómo reproducir un segmento de un archivo multimedia en MFPlay, estableciendo las horas de inicio y detención para la reproducción.
+En este tema se describe cómo reproducir un segmento de un archivo multimedia en MFPlay estableciendo las horas de inicio y de detenerse para la reproducción.
 
 **Para reproducir un clip de archivo**
 
-1.  Llame a [**IMFPMediaPlayer:: CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) o [**IMFPMediaPlayer:: CreateMediaItemFromObject**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromobject) para crear un elemento multimedia para el archivo.
-2.  Opcionalmente, obtenga la duración total del archivo, como se describe en [Cómo obtener la duración de la reproducción](how-to-get-the-playback-duration.md).
-3.  Llame a [**IMFPMediaItem:: SetStartStopPosition**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-setstartstopposition) para establecer las horas de inicio y detención. La hora de detención no debe superar la duración del archivo.
-4.  Llame a [**IMFPMediaPlayer:: SetMediaItem**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmediaitem) para iniciar la reproducción.
+1.  Llame [**a IMFPMediaPlayer::CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl) o [**APTPMediaPlayer::CreateMediaItemFromObject**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromobject) para crear un elemento multimedia para el archivo.
+2.  Opcionalmente, obtenga la duración total del archivo, como se describe en [Cómo obtener la duración de reproducción.](how-to-get-the-playback-duration.md)
+3.  Llame [**a IMFPMediaItem::SetStartStopPosition para**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-setstartstopposition) establecer las horas de inicio y de detenerse. El tiempo de detenerse no debe superar la duración del archivo.
+4.  Llame [**a IMFPMediaPlayer::SetMediaItem para**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmediaitem) iniciar la reproducción.
 
-En el ejemplo siguiente se usa la versión de bloqueo de [**CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl). Si se usa la versión que no es de bloqueo, el código que aparece después de **CreateMediaItemFromURL** debe colocarse en el controlador para el evento de **tipo de \_ evento MFP \_ \_ MEDIAITEM \_ creado** . Para obtener más información sobre los eventos de MFPlay, consulte [recibir eventos del reproductor](getting-started-with-mfplay.md).
+En el ejemplo siguiente se usa la versión de bloqueo [**de CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl). Si se usa la versión sin bloqueo, el código que aparece después de **CreateMediaItemFromURL** debe colocarse en el controlador para el evento MEDIAITEM CREATED del tipo de evento **\_ \_ \_ MFP \_** EVENT TYPE. Para obtener más información sobre los eventos de MFPlay, vea [Receiving Events From the Player](getting-started-with-mfplay.md).
 
-Para obtener la duración del archivo, este ejemplo llama a la `GetPlaybackDuration` función que se muestra en el tema [Cómo obtener la duración de la reproducción](how-to-get-the-playback-duration.md).
+Para obtener la duración del archivo, en este ejemplo se llama a la función que se muestra en el `GetPlaybackDuration` tema How to Get the Playback [Duration](how-to-get-the-playback-duration.md).
 
 
 ```C++
