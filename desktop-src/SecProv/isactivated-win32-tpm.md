@@ -1,7 +1,7 @@
 ---
-description: El método IsActivated de la clase de Win32 \_ TPM indica si el dispositivo está activado.
+description: El método IsActivated de la clase Tpm de Win32 \_ indica si el dispositivo está activado.
 ms.assetid: 862c386c-c5b5-44d2-89a5-3735b99bf8bc
-title: Método IsActivated de la clase Win32_Tpm
+title: Método IsActivated de la Win32_Tpm clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 6482163a27f211b4f4ce24284a8339f2b7254f3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40399d14d7bbadaab294f7a345d95e6253615c2cd11bd2fe6749edf3deb98be2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906335"
 ---
-# <a name="isactivated-method-of-the-win32_tpm-class"></a>Método IsActivated de la \_ clase Win32 TPM
+# <a name="isactivated-method-of-the-win32_tpm-class"></a>Método IsActivated de la clase Tpm de \_ Win32
 
-El método **IsActivated** de la clase de [**Win32 \_ TPM**](win32-tpm.md) indica si el dispositivo está activado.
+El **método IsActivated** de la [**clase \_ Tpm de Win32**](win32-tpm.md) indica si el dispositivo está activado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,18 +39,18 @@ uint32 IsActivated(
 
 <dl> <dt>
 
-*IsActivated* \[ enuncia\]
+*IsActivated* \[ out\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Si es **true**, el dispositivo está activado.
+Si **es true,** se activa el dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Se pueden devolver todos los errores de TPM, así como los errores específicos de los servicios base de TPM.
 
@@ -60,41 +60,41 @@ A continuación se enumeran los códigos de retorno comunes.
 
 | Código o valor devuelto                                                                                                                                 | Descripción                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl> | Método realizado correctamente.<br/> |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl> | Método realizado correctamente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La desactivación es similar a deshabilitada, pero se pueden realizar cambios de estado operativo. Según la especificación de Trusted Computing Group (TCG) v 1.2, solo están disponibles los siguientes comandos cuando el dispositivo está en un estado desactivado.
+La desactivación es similar a deshabilitada, pero es posible realizar cambios de estado operativo. Según la especificación Trusted Computing Group (TCG) v1.2, solo están disponibles los siguientes comandos cuando el dispositivo está en estado desactivado.
 
--   ContinueSelfTest de TPM \_
--   DSAP de TPM \_
--   FlushSpecific de TPM \_
--   GetCapability de TPM \_
--   GetTestResult de TPM \_
--   \_Inicialización de TPM
--   OIAP de TPM \_
--   OSAP de TPM \_
--   OwnerSetDisable de TPM \_
--   \_Restablecimiento de PCR de TPM \_
--   PhysicalDisable de TPM \_
--   PhysicalEnable de TPM \_
--   PhysicalSetDeactivated de TPM \_
--   Restablecimiento de TPM \_
--   \_Savesta TPM
--   SelfTestFull de TPM \_
--   SetCapability de TPM \_
--   SHA1Complete de TPM \_
--   SHA1Start de TPM \_
--   SHA1Update de TPM \_
+-   TPM \_ ContinueSelfTest
+-   TPM \_ DSAP
+-   TPM \_ FlushSpecific
+-   TPM \_ GetCapability
+-   TPM \_ GetTestResult
+-   Inicialización de TPM \_
+-   TPM \_ OIAP
+-   TPM \_ OSAP
+-   TPM \_ OwnerSetDisable
+-   Restablecimiento \_ de PCR de TPM \_
+-   TPM \_ PhysicalDisable
+-   Tpm \_ físicoEnable
+-   TPM \_ PhysicalSetDeactivated
+-   Restablecimiento \_ de TPM
+-   TPM \_ SaveState
+-   TPM \_ SelfTestFull
+-   TPM \_ SetCapability
+-   TPM \_ SHA1Complete
+-   TPM \_ SHA1Start
+-   TPM \_ SHA1Update
 -   Inicio de TPM \_
--   TakeOwnerShip de TPM \_
--   \_Identificador de finalización de TPM \_
+-   TPM \_ TakeOwnership
+-   Controlador de \_ terminación de TPM \_
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,11 +102,11 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                      |
-| Espacio de nombres<br/>                | \\MicrosoftTpm de \\ seguridad de cimv2 raíz \\<br/>                                            |
-| MOF<br/>                      | <dl> <dt>Win32 \_ TPM. mof</dt> </dl> |
-| Archivo DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**TPM de Win32 \_**](win32-tpm.md)
+[**Tpm de \_ Win32**](win32-tpm.md)
 </dt> </dl>
 
  

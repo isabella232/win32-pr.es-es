@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 36583267277f7c5254adc85047ce99631f6c03ef
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 4123b64143e34bb316d94e367b2af26e3e3481ba
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479081"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989028"
 ---
 # <a name="jetgettruncateloginfoinstance-function"></a>JetGetTruncateLogInfoInstance (Función)
 
@@ -34,9 +34,9 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetgettruncateloginfoinstance-function"></a>JetGetTruncateLogInfoInstance (Función)
 
-La función **JetGetTruncateLogInfoInstance** se usa durante una copia de seguridad iniciada por [JetBeginExternalBackup](./jetbeginexternalbackup-function.md) para consultar una instancia de los nombres de los archivos de registro de transacciones que se pueden eliminar de forma segura una vez completada correctamente la copia de seguridad.
+La función **JetGetTruncateLogInfoInstance** se usa durante una copia de seguridad iniciada por [JetBeginExternalBackup para](./jetbeginexternalbackup-function.md) consultar una instancia de los nombres de los archivos de registro de transacciones que se pueden eliminar de forma segura una vez completada correctamente la copia de seguridad.
 
-**Windows XP:****JetGetTruncateLogInfoInstance** se introdujo en Windows XP.  
+**Windows XP:****JetGetTruncateLogInfoInstance** se presenta en Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetGetTruncateLogInfoInstance(
@@ -76,30 +76,37 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o la combinación de varios valores de parámetro dio lugar a un resultado inesperado.</p><p><strong>Windows XP y versiones posteriores:</strong>  Esto puede ocurrir para <strong>JetGetTruncateLogInfoInstance</strong> cuando el identificador de instancia especificado no es válido.</p> | 
-| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión aún no se ha inicializado.</p> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introdujo en Windows XP.</p> | 
-| <p>JET_errBackupAbortByServer</p> | <p>Error en la operación porque la copia de seguridad externa actual se ha anulado mediante una llamada a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introdujo en Windows XP.</p> | 
-| <p>JET_errInvalidBackupSequence</p> | <p>Error en la operación de copia de seguridad porque se llamó fuera de la secuencia.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introdujo en Windows XP.</p> | 
+| <p>JET_errBackupAbortByServer</p> | <p>Error en la operación porque una llamada a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>anuló la copia de seguridad externa actual.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introdujo en Windows XP.</p> | 
+| <p>JET_errInvalidBackupSequence</p> | <p>Error en la operación de copia de seguridad porque se llamó fuera de secuencia.</p> | 
 | <p>JET_errNoBackup</p> | <p>Error en la operación porque no hay ninguna copia de seguridad externa en curso.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
-| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia de asociada a la sesión.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p> | 
 | <p><strong>JetGetTruncateLogInfoInstance</strong></p> | <p>Hay identificadores de archivo pendientes que se crearon <a href="gg269249(v=exchg.10).md">mediante JetOpenFile</a> para la instancia.</p> | 
 
 
 
 Si esta función se realiza correctamente, la información solicitada sobre el conjunto de archivos de registro de transacciones que se pueden eliminar de forma segura una vez completada correctamente la copia de seguridad se colocará en los búferes de salida donde se proporcionan. La máquina de estado de copia de seguridad estará avanzada de modo que ya no se permita la copia de seguridad de los archivos de base de datos. Solo se pueden abrir archivos de revisión de base de datos y archivos de registro de transacciones para la copia de seguridad más allá de este punto.
 
-Si se produce un error en esta función, el estado de los búferes de salida es indefinido. El error provocará la cancelación de todo el proceso de copia de seguridad de la instancia.
+Si se produce un error en esta función, el estado de los búferes de salida no está definido. El error dará lugar a la cancelación de todo el proceso de copia de seguridad de la instancia.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Esta API no devuelve un error o una advertencia si el búfer de salida es demasiado pequeño para aceptar la lista completa de archivos que deben formar parte del conjunto de archivos de copia de seguridad. La aplicación siempre debe proporcionar un búfer para recibir el tamaño real de esta lista y usar esa información para determinar si la lista se ha truncado.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetTruncateLogInfoInstanceW</strong> (Unicode) y <strong>JetGetTruncateLogInfoInstanceA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetGetTruncateLogInfoInstanceW</strong> (Unicode) y <strong>JetGetTruncateLogInfoInstanceA</strong> (ANSI).</p> | 
 
 
 

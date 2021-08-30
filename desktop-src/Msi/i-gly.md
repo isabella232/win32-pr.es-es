@@ -1,15 +1,15 @@
 ---
-description: Obtenga información Windows Installer conceptos que comienzan por la letra I, como la tabla Importar dirección y el nivel de instalación.
+description: Obtenga información Windows conceptos del instalador que comienzan por la letra I, como la tabla Importar dirección y el nivel de instalación.
 ms.assetid: b8e0a14f-ebdc-4b8f-a884-f6276dccda49
 title: I (Windows Installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e33b5cfb9c4545a5482b214e0413ab3e3d981109
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 3c8894b61907062c7b68cdb0a70e9b20e49729b8a3a04c76b9a59d82efbefdbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129455"
 ---
 # <a name="i-windows-installer"></a>I (Windows Installer)
 
@@ -20,14 +20,14 @@ ms.locfileid: "112010658"
 <span id="_msi_.idt_file_gly"></span><span id="_MSI_.IDT_FILE_GLY"></span>**Archivo .idt**
 </dt> <dd>
 
-Tabla de base de datos del instalador exportada. Para obtener más información, [vea Importing and Exporting](importing-and-exporting.md) and [Windows Installer File Extensions](windows-installer-file-extensions.md).
+Tabla de base de datos del instalador exportada. Para obtener más información, vea [Importing and Exporting](importing-and-exporting.md) and [Windows Installer File Extensions](windows-installer-file-extensions.md).
 
 </dd> <dt>
 
 <span id="_msi_import_address_table_gly"></span><span id="_MSI_IMPORT_ADDRESS_TABLE_GLY"></span>**Importar tabla de direcciones (IAT)**
 </dt> <dd>
 
-Donde se guarda la dirección virtual calculada de cada función importada de todos los archivos DLL.
+Donde se guarda la dirección virtual calculada de cada función importada desde todos los archivos DLL.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Funcionalidades integradas del instalador que se pueden usar para crear una inte
 <span id="_msi_install_level_gly"></span><span id="_MSI_INSTALL_LEVEL_GLY"></span>**nivel de instalación**
 </dt> <dd>
 
-Valor de instalación especificado. Una aplicación solo se instala si su propio nivel es menor o igual que el nivel de instalación. Por lo tanto, el conjunto de aplicaciones elegidas para la instalación se puede cambiar modificando el nivel de instalación. Para obtener más información, vea [Tabla de características](feature-table.md).
+Valor de instalación especificado. Una aplicación solo se instala si su propio nivel es menor o igual que el nivel de instalación. Por lo tanto, el conjunto de aplicaciones elegido para la instalación se puede cambiar modificando el nivel de instalación. Para obtener más información, vea [Tabla de características](feature-table.md).
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ La combinación de derechos de instalación y tipos de instalación genera tres 
 <span id="_msi_installer_gly"></span><span id="_MSI_INSTALLER_GLY"></span>**Instalador**
 </dt> <dd>
 
-El [*Windows Installer*](m-gly.md).
+El [*Windows de instalación*](m-gly.md)de .
 
 </dd> <dt>
 

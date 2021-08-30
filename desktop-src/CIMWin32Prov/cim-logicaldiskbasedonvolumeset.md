@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación LogicalDiskBasedOnVolumeSet de CIM relaciona los discos lógicos con el volumen en el que se encuentran. Los discos lógicos pueden basarse en un único volumen (por ejemplo, expuesto por un administrador de volumen de software) o una partición de disco.
+description: La \_ asociación Cim LogicalDiskBasedOnVolumeSet relaciona los discos lógicos con el volumen en el que se encuentran. Los discos lógicos se pueden basar en un único volumen (por ejemplo, expuesto por un administrador de volúmenes de software) o en una partición de disco.
 ms.assetid: 15a588c9-a6b0-4393-927f-8e8818315542
 ms.tgt_platform: multiple
-title: CIM_LogicalDiskBasedOnVolumeSet (clase)
+title: CIM_LogicalDiskBasedOnVolumeSet clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f2af4c141fe0b64979c6fb6e5b7b0e6068d018d9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 38ecbcf35ed46cb22a254289d617f9086780c087d932ba17a4cbd60bc1782f52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923145"
 ---
 # <a name="cim_logicaldiskbasedonvolumeset-class"></a>\_Clase LogicalDiskBasedOnVolumeSet de CIM
 
-La **Asociación \_ LogicalDiskBasedOnVolumeSet de CIM** relaciona los discos lógicos con el volumen en el que se encuentran. Los discos lógicos pueden basarse en un único volumen (por ejemplo, expuesto por un administrador de volumen de software) o una partición de disco.
+La **\_ asociación Cim LogicalDiskBasedOnVolumeSet** relaciona los discos lógicos con el volumen en el que se encuentran. Los discos lógicos se pueden basar en un único volumen (por ejemplo, expuesto por un administrador de volúmenes de software) o en una partición de disco.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,69 +51,69 @@ class CIM_LogicalDiskBasedOnVolumeSet : CIM_BasedOn
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ LogicalDiskBasedOnVolumeSet** tiene estos tipos de miembros:
+La **clase \_ LogicalDiskBasedOnVolumeSet** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ LogicalDiskBasedOnVolumeSet** tiene estas propiedades.
+La **clase \_ LogicalDiskBasedOnVolumeSet** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ VolumeSet**
+Tipo de datos: **Cim \_ VolumeSet**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ VolumeSet de CIM**](cim-volumeset.md) que describe el conjunto de volúmenes.
+Conjunto [**de \_ volúmenes CIM**](cim-volumeset.md) que describe el conjunto de volúmenes.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ LogicalDisk**
+Tipo de datos: **Cim \_ LogicalDisk**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ LogicalDisk de CIM**](cim-logicaldisk.md) que describe el disco lógico que se basa en el conjunto de volúmenes.
+Disco [**lógico CIM \_**](cim-logicaldisk.md) que describe el disco lógico que se basa en el conjunto de volúmenes.
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el final de la extensión de alto nivel en el almacenamiento de nivel inferior. Esta propiedad es útil cuando se asignan extensiones no contiguas a una agrupación de nivel superior.
+Indica el final de la extensión de alto nivel en el almacenamiento de nivel inferior. Esta propiedad es útil al asignar extensiones no contiguas a una agrupación de nivel superior.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda de [**\_ BasedOn CIM**](cim-basedon.md).
+Esta propiedad se hereda de [**CIM \_ BasedOn.**](cim-basedon.md)
 
 </dd> <dt>
 
 **StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -121,39 +121,39 @@ Tipo de acceso: solo lectura
 
 Indica el principio de la extensión de alto nivel en el almacenamiento de nivel inferior.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda de [**\_ BasedOn CIM**](cim-basedon.md).
+Esta propiedad se hereda de [**CIM \_ BasedOn.**](cim-basedon.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ LogicalDiskBasedOnVolumeSet** se deriva de [**la \_ BasedOn CIM**](cim-basedon.md).
+La **clase \_ LogicalDiskBasedOnVolumeSet** de CIM se deriva de [**CIM \_ BasedOn**](cim-basedon.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_BasedOn CIM**](cim-basedon.md)
+[**CIM \_ BasedOn**](cim-basedon.md)
 </dt> </dl>
 
  

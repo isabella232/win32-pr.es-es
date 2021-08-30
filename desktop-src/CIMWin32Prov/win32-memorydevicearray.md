@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI MemoryDeviceArray Association de Win32 relaciona un dispositivo de memoria y la matriz de memoria en la que reside.
+description: La clase WMI de asociación MemoryDeviceArray de Win32 relaciona un dispositivo de memoria y la matriz de memoria \_ en la que reside.
 ms.assetid: 39ea6333-2352-488b-99e4-97594bea7dcd
 ms.tgt_platform: multiple
-title: Win32_MemoryDeviceArray (clase)
+title: Win32_MemoryDeviceArray clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1e527f77183c3bdc09d464f6fed4808e45adefa5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2226e9adffa917a479078f9fb1fbcddfa4e1f74c3f481a294947dc8f832c4c7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973005"
 ---
-# <a name="win32_memorydevicearray-class"></a>\_Clase Win32 MemoryDeviceArray
+# <a name="win32_memorydevicearray-class"></a>Clase MemoryDeviceArray de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ MemoryDeviceArray** Association de Win32 relaciona un dispositivo de memoria y la matriz de memoria en la que reside.
+La clase WMI **de asociación \_ MemoryDeviceArray** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona un dispositivo de memoria y la matriz de memoria en la que reside.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -55,16 +55,16 @@ La **clase \_ MemoryDeviceArray de Win32** tiene estas propiedades.
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Win32 \_ MemoryArray**
+Tipo de datos: **\_ MemoryArray de Win32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryArray")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryArray")
 </dt> </dl>
 
-[**\_ MemoryArray de Win32**](win32-memoryarray.md) que representa la parte de la matriz de memoria de la \_ Asociación MemoryDeviceArray de Win32.
+MemoryArray [**de Win32 \_ que representa**](win32-memoryarray.md) la parte de la matriz de memoria de la asociación \_ MemoryDeviceArray de Win32.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo de datos: **Win32 \_ MemoryDevice**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryDevice")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryDevice")
 </dt> </dl>
 
-[**\_ MemoryDevice de Win32**](win32-memorydevice.md) que representa una parte del dispositivo de memoria de la \_ Asociación MemoryDeviceArray de Win32.
+Un [**dispositivo \_ MemoryDevice de Win32**](win32-memorydevice.md) que representa una parte del dispositivo de memoria de la asociación \_ MemoryDeviceArray de Win32.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ MemoryDeviceArray de Win32** se deriva [**del \_ componente CIM**](cim-component.md).
+La **clase \_ MemoryDeviceArray de Win32** se deriva del [**componente CIM \_**](cim-component.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La **clase \_ MemoryDeviceArray de Win32** se deriva [**del \_ componente CIM**]
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,10 +106,10 @@ La **clase \_ MemoryDeviceArray de Win32** se deriva [**del \_ componente CIM**]
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM DeviceErrorCounts es una clase estadística que contiene contadores relacionados con errores para un dispositivo lógico. Los tipos de errores se definen mediante CCITt (REC X. 733) e ISO (IEC 10164-4).
+description: La clase DeviceErrorCounts de CIM es una clase estadística que contiene contadores relacionados con \_ errores para un dispositivo lógico. Los tipos de errores se definen mediante CCITT (Rec X.733) e ISO (IEC 10164-4).
 ms.assetid: d65cbc78-40f2-4846-bd47-76e04b2f588b
 ms.tgt_platform: multiple
-title: CIM_DeviceErrorCounts (clase)
+title: CIM_DeviceErrorCounts clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,19 +26,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1602e68b7254811ba8c09726feda8baa7bf23d29
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1e4f81531a281766d152174c77219b17dff60b626f58cbad0f9907129d9e379f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924545"
 ---
-# <a name="cim_deviceerrorcounts-class"></a>\_Clase DeviceErrorCounts de CIM
+# <a name="cim_deviceerrorcounts-class"></a>Cim \_ DeviceErrorCounts (clase)
 
-La clase **CIM \_ DeviceErrorCounts** es una clase estadística que contiene contadores relacionados con errores para un dispositivo lógico. Los tipos de errores se definen mediante CCITt (REC X. 733) e ISO (IEC 10164-4).
+La **clase \_ DeviceErrorCounts** de CIM es una clase estadística que contiene contadores relacionados con errores para un dispositivo lógico. Los tipos de errores se definen mediante CCITT (Rec X.733) e ISO (IEC 10164-4).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -67,20 +67,20 @@ class CIM_DeviceErrorCounts : CIM_StatisticalInformation
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ DeviceErrorCounts** tiene estos tipos de miembros:
+La **clase \_ DeviceErrorCounts** de CIM tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **CIM \_ DeviceErrorCounts** tiene estos métodos.
+La **clase \_ DeviceErrorCounts** de CIM tiene estos métodos.
 
 
 
 | Método                                                                     | Descripción                                                               |
 |:---------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| [**ResetCounter**](resetcounter-method-in-class-cim-deviceerrorcounts.md) | Restablece los contadores de error y ADVERTENCIA. No implementado por WMI.<br/> |
+| [**ResetCounter**](resetcounter-method-in-class-cim-deviceerrorcounts.md) | Restablece los contadores de error y advertencia. No implementado por WMI.<br/> |
 
 
 
@@ -88,7 +88,7 @@ La clase **CIM \_ DeviceErrorCounts** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ DeviceErrorCounts** tiene estas propiedades.
+La **clase \_ DeviceErrorCounts** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -104,27 +104,27 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descripción textual de la estadística o la métrica.
+Descripción textual breve de la estadística o métrica.
 
-Esta propiedad se hereda de [**\_ StatisticalInformation CIM**](cim-statisticalinformation.md).
+Esta propiedad se hereda de [**CIM \_ StatisticalInformation.**](cim-statisticalinformation.md)
 
 </dd> <dt>
 
 **CriticalErrorCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 003,7 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado operativo DMTF \| \| 003.7")
 </dt> </dl>
 
-Recuento de los errores críticos.
+Recuento de errores críticos.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -137,9 +137,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción textual de la estadística o la métrica.
+Descripción textual de la estadística o métrica.
 
-Esta propiedad se hereda de [**\_ StatisticalInformation CIM**](cim-statisticalinformation.md).
+Esta propiedad se hereda de [**CIM \_ StatisticalInformation.**](cim-statisticalinformation.md)
 
 </dd> <dt>
 
@@ -152,14 +152,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ LogicalDevice de CIM**](cim-logicaldevice.md).**CreationClassName**"), [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalDevice**](cim-logicaldevice.md).**CreationClassName**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Propiedad **CreationClassName** del dispositivo de ámbito.
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -168,7 +168,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ LogicalDevice de CIM**](cim-logicaldevice.md).**DeviceID**"), [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalDevice**](cim-logicaldevice.md).**DeviceID**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Identificador del dispositivo de ámbito.
@@ -178,48 +178,48 @@ Identificador del dispositivo de ámbito.
 **IndeterminateErrorCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Recuento de los errores indeterminados.
+Recuento de errores indeterminados.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **MajorErrorCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 003,8 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.8")
 </dt> </dl>
 
 Recuento de los errores principales.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **MinorErrorCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Recuento de los errores menores.
+Recuento de errores menores.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -232,10 +232,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("nombre"), [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-La propiedad de nombre heredado sirve como parte de la clave de la instancia de **\_ DeviceErrorCounts de CIM** . El ámbito del objeto es el dispositivo lógico al que se aplican las estadísticas.
+La propiedad Name heredada actúa como parte de la clave de la instancia **\_ deviceErrorCounts de CIM.** El ámbito del objeto es el dispositivo lógico al que se aplican las estadísticas.
 
 </dd> <dt>
 
@@ -248,10 +248,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ LogicalDevice de CIM**](cim-logicaldevice.md).**SystemCreationClassName**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalDevice**](cim-logicaldevice.md).**SystemCreationClassName**"), [**Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-El ámbito de **CreationClassName** del sistema.
+Ámbito de **CreationClassName del sistema.**
 
 </dd> <dt>
 
@@ -264,36 +264,36 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ LogicalDevice de CIM**](cim-logicaldevice.md).**SystemName**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalDevice**](cim-logicaldevice.md).**SystemName**"), [**Cim \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Propiedad de **nombre** del sistema de ámbito.
+Propiedad Name del sistema **de** ámbito.
 
 </dd> <dt>
 
 **WarningCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 003,9 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.9")
 </dt> </dl>
 
 Recuento de las advertencias.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -303,8 +303,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -313,7 +313,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_STATISTICALINFORMATION CIM**](cim-statisticalinformation.md)
+[**CIM \_ StatisticalInformation**](cim-statisticalinformation.md)
 </dt> </dl>
 
  

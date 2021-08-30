@@ -1,9 +1,9 @@
 ---
-title: Tipo simple UInt32Type (registro de eventos de Windows)
-description: 'Tipo simple UInt32Type (registro de eventos de Windows): define un tipo entero sin signo.'
+title: Tipo simple UInt32Type (Windows de eventos)
+description: 'UInt32Type Simple Type (Windows Event Log): define un tipo entero sin signo.'
 ms.assetid: 11e99c26-3be7-4fac-b3e1-97cb0428a886
 keywords:
-- Tipo simple EventLog de UInt32Type
+- UInt32Tipo de tipo simple EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 631bb3e8424db8a5d781aaa43df6096730aaa4d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e1bd3ecb22b3b2bb65d3563a1a29ba4a1ff9550ff2c4de68dba1cf81789d7f26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865875"
 ---
-# <a name="uint32type-simple-type-windows-event-log"></a>Tipo simple UInt32Type (registro de eventos de Windows)
+# <a name="uint32type-simple-type-windows-event-log"></a>Tipo simple UInt32Type (Windows de eventos)
 
 Define un tipo entero sin signo. El valor se puede especificar como un entero de 4 bytes o un valor hexadecimal en el intervalo comprendido entre 0 y 4.294.967.295.
 
@@ -36,10 +36,10 @@ Define un tipo entero sin signo. El valor se puede especificar como un entero de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

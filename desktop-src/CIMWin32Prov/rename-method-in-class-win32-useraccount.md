@@ -1,8 +1,8 @@
 ---
-description: Cambia el nombre de un nombre de cuenta de usuario.
+description: Cambia el nombre de una cuenta de usuario.
 ms.assetid: 90258256-7470-4ec8-afce-bea0f64b90fb
 ms.tgt_platform: multiple
-title: Cambiar el nombre del método de la clase Win32_UserAccount
+title: Método Rename de la Win32_UserAccount clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 27d495804fb68bc74eda269c2dd7921540f05f5b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b83b52078ce7d1202a08ffd9c6fe9bce63656ee26b58716d3aebae9f97bf9f4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929585"
 ---
-# <a name="rename-method-of-the-win32_useraccount-class"></a>Cambiar el nombre del método de la \_ clase Win32 cuentadeusuario
+# <a name="rename-method-of-the-win32_useraccount-class"></a>Método Rename de la clase UserAccount de Win32 \_
 
-El método **Rename** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) cambia el nombre de un nombre de cuenta de usuario.
+El **método Cambiar nombre** de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) cambia el nombre de una cuenta de usuario.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 Rename(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
 Nuevo nombre de cuenta.
@@ -51,7 +51,7 @@ Nuevo nombre de cuenta.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -64,21 +64,21 @@ Correcto.
 
 </dd> <dt>
 
-**No se encontró la instancia**
+**Instancia no encontrada**
 </dt> <dd>
 
 1
 
-No se encuentra la instancia.
+No se encontró la instancia.
 
 </dd> <dt>
 
-**Instancia requerida**
+**Instancia necesaria**
 </dt> <dd>
 
 2
 
-Instancia requerida.
+Instancia necesaria.
 
 </dd> <dt>
 
@@ -100,16 +100,16 @@ Usuario no encontrado.
 
 </dd> <dt>
 
-**No se encontró el dominio**
+**Dominio no encontrado**
 </dt> <dd>
 
 5
 
-No se encontró el dominio.
+Dominio no encontrado.
 
 </dd> <dt>
 
-**La operación solo se permite en el controlador de dominio principal del dominio**
+**Solo se permite la operación en el controlador de dominio principal del dominio.**
 </dt> <dd>
 
 6
@@ -118,7 +118,7 @@ La operación solo se permite en el controlador de dominio principal del dominio
 
 </dd> <dt>
 
-**La operación no se permite en la última cuenta administrativa.**
+**No se permite la operación en la última cuenta administrativa.**
 </dt> <dd>
 
 7
@@ -139,11 +139,11 @@ No se permite la operación en grupos especiales especificados: usuario, adminis
 
 9
 
-Otro error de la API.
+Otro error de API.
 
 </dd> <dt>
 
-**Error interno**
+**Error interno.**
 </dt> <dd>
 
 10
@@ -152,9 +152,9 @@ Error interno.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta funcionalidad se implementa como un método para proporcionar un contexto independiente para el nuevo nombre que se puede distinguir del valor de la propiedad clave para el nombre que está asociado a la instancia que se va a modificar.
+Esta funcionalidad se implementa como un método para proporcionar un contexto independiente para el nuevo nombre que se puede distinguir del valor de propiedad de clave de Nombre asociado a la instancia que se va a modificar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -164,8 +164,8 @@ Esta funcionalidad se implementa como un método para proporcionar un contexto i
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -174,7 +174,7 @@ Esta funcionalidad se implementa como un método para proporcionar un contexto i
 
 <dl> <dt>
 
-[**Cuentadeusuario de Win32 \_**](win32-useraccount.md)
+[**UserAccount de Win32 \_**](win32-useraccount.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

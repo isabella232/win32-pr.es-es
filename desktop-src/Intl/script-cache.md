@@ -1,19 +1,19 @@
 ---
-description: Define una memoria caché de métricas de fuente de Uniscribe.
+description: Define una caché de métricas de fuentes uniscribe.
 ms.assetid: 56a98529-6ae9-4b71-bd7d-cf056a1e3683
-title: SCRIPT_CACHE (Usp10. h)
+title: SCRIPT_CACHE (Usp10.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ece29fe0ed610b4576263c36c50311ef57317579
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4376f0b69de8d9e963cae6a156eff8c3724ac375db3c18bce0a80855afd6f91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130245"
 ---
-# <a name="script_cache"></a>caché de SCRIPT \_
+# <a name="script_cache"></a>CACHÉ DE \_ SCRIPTS
 
-Define una memoria caché de métricas de fuente de Uniscribe.
+Define una caché de métricas de fuentes uniscribe.
 
 
 ```C++
@@ -22,19 +22,19 @@ typedef void* SCRIPT_CACHE;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una estructura opaca. La aplicación debe asignar y conservar una \_ variable de caché de script para cada estilo de carácter utilizado. La variable se debe inicializar en **null**.
+Se trata de una estructura opaca. La aplicación debe asignar y conservar una variable SCRIPT \_ CACHE para cada estilo de carácter utilizado. La variable debe inicializarse en **NULL.**
 
-Muchas funciones de script toman una combinación de un identificador de contexto de dispositivo de hardware y una variable de caché de SCRIPTs \_ . En primer lugar, se intenta tener acceso a los datos de fuente mediante la variable de caché de SCRIPT \_ . Solo inspecciona el contexto de dispositivo de hardware Si los datos necesarios aún no están almacenados en caché.
+Muchas funciones de script toman una combinación de un identificador de contexto de dispositivo de hardware y una variable SCRIPT \_ CACHE. Uniscribe primero intenta acceder a los datos de fuente mediante la variable SCRIPT \_ CACHE. Solo inspecciona el contexto del dispositivo de hardware si los datos necesarios no están ya almacenados en caché.
 
-El identificador de contexto de dispositivo de hardware se puede pasar a como **null**. Si los datos requeridos por Uniscribe ya están almacenados en caché, no se tiene acceso al contexto del dispositivo y la operación continúa con normalidad.
+El identificador de contexto del dispositivo de hardware se puede pasar a Uniscribe como **NULL.** Si los datos requeridos por Uniscribe ya están almacenados en caché, no se tiene acceso al contexto del dispositivo y la operación continúa con normalidad.
 
-Si el contexto del dispositivo se pasa como **null** y Uniscribe tiene que tener acceso a él por cualquier motivo, Uniscribe devuelve el código de error E \_ pendiente. Este código se devuelve rápidamente, lo que permite que la aplicación evite las llamadas [**SeleccionarObjeto**](/windows/win32/api/wingdi/nf-wingdi-selectobject) que consumen mucho tiempo.
+Si el contexto del dispositivo se pasa como **NULL** y Uniscribe necesita tener acceso a él por cualquier motivo, Uniscribe devuelve el código de error E \_ PENDING. Este código se devuelve rápidamente, lo que permite a la aplicación evitar llamadas [**SelectObject**](/windows/win32/api/wingdi/nf-wingdi-selectobject) que requieren mucho tiempo.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo siguiente se aplica a todas las funciones que toman una variable de caché de SCRIPTs \_ y un identificador opcional para un contexto de dispositivo de hardware.
+El ejemplo siguiente se aplica a todas las funciones que toman una variable SCRIPT CACHE y \_ un identificador opcional en un contexto de dispositivo de hardware.
 
 
 ```C++
@@ -58,7 +58,7 @@ if (hr == E_PENDING)
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Usp10. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Usp10.h</dt> </dl> |
 
 
 
@@ -66,10 +66,10 @@ if (hr == E_PENDING)
 
 <dl> <dt>
 
-[Uniscribe](uniscribe.md)
+[Unscribe](uniscribe.md)
 </dt> <dt>
 
-[Estructuras de Uniscribe](uniscribe-structures.md)
+[Estructuras de unidirección](uniscribe-structures.md)
 </dt> <dt>
 
 [Almacenamiento en caché](caching.md)

@@ -1,6 +1,6 @@
 ---
-title: Variables de estado de píxel
-description: Variables de estado de píxel
+title: Variables de estado de píxeles
+description: Variables de estado de píxeles
 ms.assetid: 79aeda3c-6d97-43fa-83f3-be400ba9990b
 keywords:
 - Variables de estado de píxeles OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42ae0aa6fab7bb567f67055f0398a74549e519b6
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 8e243a4a854eb9cac80f8ce94fd12c5b63f01b6a413167797a80804c9df66717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034825"
 ---
-# <a name="pixel-state-variables"></a>Variables de estado de píxel
+# <a name="pixel-state-variables"></a>Variables de estado de píxeles
 
 <dl> <dt><span id="GL_UNPACK_SWAP_BYTES"></span><span id="gl_unpack_swap_bytes"></span>GL \_ UNPACK \_ SWAP \_ BYTES</dt> <dd> 
 
@@ -177,7 +177,7 @@ ms.locfileid: "107908823"
 
  
 
-</dd> <dt><span id="GL_MAP_COLOR"></span><span id="gl_map_color"></span>COLOR \_ DEL MAPA DE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAP_COLOR"></span><span id="gl_map_color"></span>COLOR \_ DE MAPA \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
@@ -190,7 +190,7 @@ ms.locfileid: "107908823"
 
  
 
-</dd> <dt><span id="GL_MAP_STENCIL"></span><span id="gl_map_stencil"></span>GALERÍA \_ DE SÍMBOLOS DE MAPA DE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAP_STENCIL"></span><span id="gl_map_stencil"></span>GALERÍA DE \_ SÍMBOLOS DE MAPA DE \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|

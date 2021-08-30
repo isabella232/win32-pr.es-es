@@ -3,7 +3,7 @@ title: Atributo WM/WMCollectionID
 description: El atributo WM/WMCollectionID es un GUID que identifica la colección a la que pertenece el elemento.
 ms.assetid: 21fc0a62-d374-4ca3-bbb8-278e0d2497ce
 keywords:
-- Media Player de Windows de atributos de WM/WMCollectionID
+- Atributo WM/WMCollectionID Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,41 +12,41 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bce21196e1da9583db293dab004812265c85308
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 623961ea069f5c01ba187b706a4590926f8e2670773d3d66618fa40c063e61c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900305"
 ---
 # <a name="wmwmcollectionid-attribute"></a>Atributo WM/WMCollectionID
 
-El atributo **WM/WMCollectionID** es un GUID que identifica la colección a la que pertenece el elemento.
+El **atributo WM/WMCollectionID** es un GUID que identifica la colección a la que pertenece el elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Listas de reproducción de CD](cd-playlist-attributes.md)
 -   [Pistas de CD](cd-track-attributes.md)
--   [Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca (o caché) y en el archivo multimedia.
+Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia.
 
-**WMCollectionID** es un alias para este atributo.
+**WMCollectionID es** un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMCollectionID.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMCollectionID.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -54,7 +54,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

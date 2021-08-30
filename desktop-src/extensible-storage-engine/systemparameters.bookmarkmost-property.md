@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. BookmarkMost (propiedad)'
-title: Propiedad SystemParameters. BookmarkMost
+description: 'Más información sobre: Propiedad SystemParameters.BookmarkMost'
+title: Propiedad SystemParameters.BookmarkMost
 TOCTitle: 'BookmarkMost property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.BookmarkMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.bookmarkmost(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cf224d384206916043f6d865ba023045f47c53fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78fc744f8a53dd7cf25c69ce85d1d9380dc6defca59a1d0e2440feeb8249aaa6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093165"
 ---
-# <a name="systemparametersbookmarkmost-property"></a>Propiedad SystemParameters. BookmarkMost
+# <a name="systemparametersbookmarkmost-property"></a>Propiedad SystemParameters.BookmarkMost
 
-Obtiene el tamaño máximo de un marcador. [JetGetBookmark (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32)](./api.jetgetbookmark-method.md).
+Obtiene el tamaño máximo de un marcador. [JetGetBookmark(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32)](./api.jetgetbookmark-method.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,14 +57,14 @@ public static int BookmarkMost { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

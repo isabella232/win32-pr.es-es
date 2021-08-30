@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMDeviceApp2 QueryDeviceStatus2 (WMDRMDeviceApp. h)
-description: El método QueryDeviceStatus2 consulta un dispositivo para una funcionalidad o un estado DRM específico.
+title: Método IWMDRMDeviceApp2 QueryDeviceStatus2 (WMDRMDeviceApp.h)
+description: El método QueryDeviceStatus2 consulta un dispositivo para obtener un estado o una funcionalidad drm específicos.
 ms.assetid: f7e95fb7-5929-4a70-8580-a443e152e6d1
 keywords:
-- Método QueryDeviceStatus2 de Windows Media Administrador de dispositivos
-- Método QueryDeviceStatus2 de Windows Media Administrador de dispositivos, interfaz IWMDRMDeviceApp2
-- Interfaz IWMDRMDeviceApp2 de Windows Media Administrador de dispositivos, método QueryDeviceStatus2
+- Método QueryDeviceStatus2 windows Media Administrador de dispositivos
+- Método QueryDeviceStatus2 windows Media Administrador de dispositivos interfaz , IWMDRMDeviceApp2
+- IWMDRMDeviceApp2 interface windows Media Administrador de dispositivos , QueryDeviceStatus2 method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 338d1f03f8d1e63086bb260c9854c7dcf3e88514
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2def2063498cc28de0f0e81efe4e34a382276e8d54466c5da321feea201e47a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031715"
 ---
-# <a name="iwmdrmdeviceapp2querydevicestatus2-method"></a>IWMDRMDeviceApp2:: QueryDeviceStatus2 (método)
+# <a name="iwmdrmdeviceapp2querydevicestatus2-method"></a>Método IWMDRMDeviceApp2::QueryDeviceStatus2
 
-El método **QueryDeviceStatus2** consulta un dispositivo para una funcionalidad o un estado DRM específico.
+El **método QueryDeviceStatus2** consulta un dispositivo para obtener un estado o una funcionalidad drm específicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ HRESULT QueryDeviceStatus2(
 
 <dl> <dt>
 
-*pDevice* \[ de\]
+*pDevice* \[ En\]
 </dt> <dd>
 
-Puntero a un objeto [**IWMDMDevice**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice) .
+Puntero a un [**objeto IWMDMDevice.**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice)
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Uno o varios de los siguientes valores **DWORD** que especifican las funciones que se van a solicitar, combinadas con **una operación OR** bit a bit.
+Uno o varios de los siguientes valores **DWORD** que especifican las funcionalidades que se deben solicitar, combinados con un OR bit a **bit.**
 
 
 
 | Marca                              | Descripción                                                                  |
 |-----------------------------------|------------------------------------------------------------------------------|
-| \_INDIVSTATUS de \_ cliente de consulta WMDRM \_ | Consulte si los componentes DRM del equipo deben ser individualizados.       |
-| \_dispositivo de consulta WMDRM \_ \_ CLOCKSTATUS | Consulte si es necesario agregar o actualizar el reloj seguro del dispositivo.        |
-| \_dispositivo de consulta WMDRM \_ \_ ISREVOKED   | Consulta si el dispositivo se ha revocado.                                         |
-| \_dispositivo de consulta WMDRM \_ \_ ISWMDRM     | Consulta si el dispositivo admite Windows Media DRM 10 para dispositivos portátiles. |
+| \_INDIVSTATUS DEL CLIENTE DE CONSULTA \_ \_ WMDRM | Consulte si es necesario individualizar los componentes DRM del equipo.       |
+| CLOCKSTATUS DEL DISPOSITIVO \_ DE \_ CONSULTA \_ WMDRM | Consulte si es necesario agregar o actualizar el reloj seguro del dispositivo.        |
+| ISREVOKED DEL DISPOSITIVO DE CONSULTA \_ \_ \_ WMDRM   | Consulta si se revoca el dispositivo.                                         |
+| \_ISWMDRM DEL DISPOSITIVO DE CONSULTA \_ \_ WMDRM     | Consulte si el dispositivo admite Windows DRM 10 multimedia para dispositivos portátiles. |
 
 
 
@@ -72,20 +72,20 @@ Uno o varios de los siguientes valores **DWORD** que especifican las funciones q
 
 </dd> <dt>
 
-*pdwStatus* \[ enuncia\]
+*pdwStatus* \[ out\]
 </dt> <dd>
 
-Cero o más de los siguientes valores **DWORD** que especifican el estado de dispositivo solicitado, combinado con una operación **OR bit a** bit.
+Cero o más de los siguientes valores **DWORD** que especifican el estado del dispositivo solicitado, combinados con un OR bit a **bit.**
 
 
 
-| Status                      | Descripción                                              |
+| Estado                      | Descripción                                              |
 |-----------------------------|----------------------------------------------------------|
-| \_dispositivo \_ ISWMDRM de WMDRM      | El dispositivo es compatible con DRM de Windows Media.                   |
-| \_dispositivo \_ NEEDCLOCK de WMDRM    | El dispositivo no tiene un reloj seguro.                 |
-| \_dispositivo WMDRM \_ revocado      | El dispositivo se ha revocado.                             |
-| \_NEEDINDIV de cliente WMDRM \_    | Los componentes de DRM del equipo deben ser individualizados. |
-| \_dispositivo \_ REFRESHCLOCK de WMDRM | El reloj debe actualizarse.                         |
+| \_ \_ ISWMDRM DEL DISPOSITIVO WMDRM      | El dispositivo admite drm Windows multimedia.                   |
+| \_NEEDCLOCK DEL DISPOSITIVO \_ WMDRM    | El dispositivo no tiene un reloj seguro.                 |
+| DISPOSITIVO WMDRM \_ \_ REVOCADO      | Se ha revocado el dispositivo.                             |
+| NECESIDAD DE CLIENTE \_ \_ WMDRMINDIV    | Los componentes DRM del equipo deben individualizarse. |
+| ACTUALIZACIÓN DE \_ DISPOSITIVO \_ WMDRMCLOCK | El reloj debe actualizarse.                         |
 
 
 
@@ -95,24 +95,24 @@ Cero o más de los siguientes valores **DWORD** que especifican el estado de dis
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                                              | Descripción                                                               |
 |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                                     | El método se ha llevado a cabo de forma correcta.<br/>                                          |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                     | El método se ha llevado a cabo de forma correcta.<br/>                                          |
 | <dl> <dt>**DRM \_ E \_ INVALIDARG**</dt> </dl>                        | Uno o varios argumentos no son válidos.<br/>                           |
-| <dl> <dt>**\_ \_ \_ certificado no válido de DRM E DRM \_**</dt> </dl>          | El certificado de dispositivo recuperado del dispositivo no es válido.<br/> |
-| <dl> <dt>**\_DRM E \_ DRM \_ no \_ puede \_ obtener \_ el \_ certificado del dispositivo**</dt> </dl> | No se pudo recuperar el certificado de dispositivo del dispositivo.<br/>     |
+| <dl> <dt>**NS E DRM INVALID CERTIFICATE (CERTIFICADO NO VÁLIDO DE DRM DE NS \_ \_ \_ \_ E)**</dt> </dl>          | El certificado de dispositivo recuperado del dispositivo no es válido.<br/> |
+| <dl> <dt>**DRM DE NS \_ E NO PUEDE OBTENER EL CERTIFICADO DE \_ \_ \_ \_ \_ \_ DISPOSITIVO**</dt> </dl> | No se pudo recuperar el certificado de dispositivo del dispositivo.<br/>     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se debe llamar a este método antes de realizar cualquier acción restringida en el contenido DRM, como transferir contenido DRM al dispositivo o adquirir información de medición. Si los valores recuperados por *pdwStatus* indican que es necesario realizar alguna acción (por ejemplo, la individualización del escritorio o la adquisición de un reloj para el dispositivo), la aplicación debe llamar a [**IWMDRMDeviceApp:: AcquireDeviceData**](iwmdrmdeviceapp-acquiredevicedata.md) y pasar el valor de *pdwStatus* recuperado de esta función al parámetro *dwFlags* en **AcquireDeviceData**. Si se devuelve cero, el dispositivo no admite Windows Media DRM 10 para dispositivos portátiles y no es necesario realizar ninguna acción. Consulte [control del contenido protegido en la aplicación](handling-protected-content-in-the-application.md) para obtener más información.
+Se debe llamar a este método antes de realizar cualquier acción restringida en el contenido DRM, como transferir contenido DRM al dispositivo o adquirir información de medición. Si los valores recuperados por *pdwStatus* indican que es necesario realizar alguna acción (como la individualización para el escritorio o adquirir un reloj para el dispositivo), la aplicación debe llamar a [**IWMDRMDeviceApp::AcquireDeviceData**](iwmdrmdeviceapp-acquiredevicedata.md) y pasar el valor *pdwStatus* recuperado de esta función al parámetro *dwFlags* **de AcquireDeviceData.** Si se devuelve cero, el dispositivo no admite Windows DRM 10 multimedia para dispositivos portátiles y no es necesario realizar ninguna acción. Consulte [Control de contenido protegido en la aplicación para](handling-protected-content-in-the-application.md) obtener más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,8 +120,8 @@ Se debe llamar a este método antes de realizar cualquier acción restringida en
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>WMDRMDeviceApp. h (también requiere Wmdrmdeviceapp \_ i, generado a partir de WMDRMDeviceApp. idl)</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl>                                                                        |
+| Encabezado<br/>  | <dl> <dt>WMDRMDeviceApp.h (también requiere Wmdrmdeviceapp i.c, creado a partir de \_ WMDRMDeviceApp.idl)</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl>                                                                        |
 
 
 
@@ -129,13 +129,13 @@ Se debe llamar a este método antes de realizar cualquier acción restringida en
 
 <dl> <dt>
 
-[**Control del contenido protegido en la aplicación**](handling-protected-content-in-the-application.md)
+[**Control de contenido protegido en la aplicación**](handling-protected-content-in-the-application.md)
 </dt> <dt>
 
 [**IWMDRMDeviceApp::QueryDeviceStatus**](iwmdrmdeviceapp-querydevicestatus.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMDeviceApp2**](iwmdrmdeviceapp2.md)
+[**IWMDRMDeviceApp2 (interfaz)**](iwmdrmdeviceapp2.md)
 </dt> </dl>
 
  

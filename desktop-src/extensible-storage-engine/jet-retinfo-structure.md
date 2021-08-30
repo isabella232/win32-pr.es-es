@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ddf6f7b2ef129ab620a61616d975c8b8470022e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f7f2f396ac34dfb2039d50ae626debcc8510d07d
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470791"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988208"
 ---
 # <a name="jet_retinfo-structure"></a>JET_RETINFO estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_retinfo-structure"></a>JET_RETINFO estructura
 
-La **JET_RETINFO** estructura contiene parámetros de entrada y salida opcionales [para JetRetrieveColumn](./jetretrievecolumn-function.md). Se puede pasar un puntero nulo donde, de lo contrario, se pasaría un puntero a esta estructura. Pasar un puntero nulo es lo mismo que pasar **JET_RETINFO** con **cbStruct** establecido en sizeof(JET_RETINFO), **ibLongValue** establecido en 0 (cero) e **itagSequence** establecido en 1.
+La **JET_RETINFO** contiene parámetros de entrada y salida opcionales [para JetRetrieveColumn.](./jetretrievecolumn-function.md) Se puede pasar un puntero nulo donde, de lo contrario, se pasaría un puntero a esta estructura. Pasar un puntero nulo es lo mismo que pasar **JET_RETINFO** con **cbStruct** establecido en sizeof(JET_RETINFO), **ibLongValue** establecido en 0 (cero) e **itagSequence** establecido en 1.
 
 ```cpp
     typedef struct {
@@ -63,7 +63,11 @@ Devuelve el columnid de la columna etiquetada, multivalor o dispersa recuperada 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

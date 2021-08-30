@@ -1,17 +1,17 @@
 ---
 description: Especifica el número de fotogramas de vídeo que se omiten porque eran duplicados de fotogramas anteriores.
 ms.assetid: ef4aa5a0-3788-493e-b541-c3a24509d939
-title: Propiedad MFPKEY_ZEROBYTEFRAMES (Wmcodecdsp. h)
+title: MFPKEY_ZEROBYTEFRAMES propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffcf29d099b3a3fb27a307e970af7af1a5c3d58b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 373d0e7d40b27edff8ae47c9081ef6acb55252858a677c6516877fe88bee392c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953255"
 ---
-# <a name="mfpkey_zerobyteframes-property"></a>\_Propiedad ZEROBYTEFRAMES de MFPKEY
+# <a name="mfpkey_zerobyteframes-property"></a>Propiedad ZEROBYTEFRAMES de MFPKEY \_
 
 Especifica el número de fotogramas de vídeo que se omiten porque eran duplicados de fotogramas anteriores.
 
@@ -23,13 +23,13 @@ g \_ wszWMVCZeroByteFrames
 
 VT \_ I4
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este valor no se resta del número total de fotogramas pasados ([MFPKEY \_ TOTALFRAMES](mfpkey-totalframesproperty.md)) al calcular el número de fotogramas codificados ([MFPKEY \_ CODEDFRAMES](mfpkey-codedframesproperty.md)).
+Este valor no se resta del número total de[fotogramas pasados (MFPKEY \_ TOTALFRAMES)](mfpkey-totalframesproperty.md)al calcular el número de fotogramas[codificados (MFPKEY \_ CODEDFRAMES).](mfpkey-codedframesproperty.md)
 
-Puede impedir que el códec omita fotogramas duplicados estableciendo [MFPKEY \_ PRODUCEDUMMYFRAMES](mfpkey-producedummyframesproperty.md) en Variant \_ true.
+Puede impedir que el códec otee fotogramas duplicados estableciendo [MFPKEY \_ PRODUCEDUMMYFRAMES](mfpkey-producedummyframesproperty.md) en VARIANT \_ TRUE.
 
-Puede obtener este valor después de haber terminado de pasar ejemplos.
+Puede obtener este valor una vez que haya terminado de pasar ejemplos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Puede obtener este valor después de haber terminado de pasar ejemplos.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Puede obtener este valor después de haber terminado de pasar ejemplos.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

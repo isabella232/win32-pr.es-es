@@ -1,10 +1,10 @@
 ---
 title: Interfaz IMsRdpClientNonScriptable6
-description: Proporciona acceso a las propiedades que no admiten scripts de la sesión remota de un cliente en el control ActiveX Escritorio remoto. Deriva de la interfaz IMsRdpClientNonScriptable5.
+description: Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la interfaz IMsRdpClientNonScriptable5.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable6, descrito
+- Interfaz IMsRdpClientNonScriptable6 Servicios de Escritorio remoto
+- Interfaz IMsRdpClientNonScriptable6 Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,28 +15,28 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 0d6793452ebf59f1974831aef0fa10f2469d8e92
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 6beede518b346ff4934730eb6fa8c3ed9f80dec980be031f9d09e774aeb359a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104422727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033225"
 ---
 # <a name="imsrdpclientnonscriptable6-interface"></a>Interfaz IMsRdpClientNonScriptable6
 
-Proporciona acceso a las propiedades que no admiten scripts de la sesión remota de un cliente en el control ActiveX Escritorio remoto. Deriva de la interfaz [**IMsRdpClientNonScriptable5**](imsrdpclientnonscriptable5.md) . Solo se puede tener acceso a los métodos de esta interfaz a través de vtable; no están disponibles para los clientes con scripts.
+Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la [**interfaz IMsRdpClientNonScriptable5.**](imsrdpclientnonscriptable5.md) Solo se puede acceder a los métodos de esta interfaz a través de vtable; no están disponibles para su uso en clientes que pueden incluir scripts.
 
-Una instancia de esta interfaz se obtiene llamando a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el objeto [**IMsTscAx**](imstscax-interface.md) y pasando **IID \_ IMsRdpClientNonScriptable6**.
+Para obtener una instancia de esta interfaz, llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el objeto [**IMsTscAx**](imstscax-interface.md) y pase **\_ IID IMsRdpClientNonScriptable6**.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsRdpClientNonScriptable6** hereda de [**IMsRdpClientNonScriptable5**](imsrdpclientnonscriptable5.md). **IMsRdpClientNonScriptable6** también tiene estos tipos de miembros:
+La **interfaz IMsRdpClientNonScriptable6** hereda de [**IMsRdpClientNonScriptable5.**](imsrdpclientnonscriptable5.md) **IMsRdpClientNonScriptable6** también tiene estos tipos de miembros:
 
 - [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IMsRdpClientNonScriptable6** tiene estos métodos.
+La **interfaz IMsRdpClientNonScriptable6** tiene estos métodos.
 
 
 | Método            | Descripción                   |

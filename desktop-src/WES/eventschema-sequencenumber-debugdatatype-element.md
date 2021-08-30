@@ -1,6 +1,6 @@
 ---
-title: SequenceNumber (DebugDataType), elemento
-description: El número de secuencia local o global del mensaje de seguimiento.
+title: Elemento SequenceNumber (DebugDataType)
+description: Número de secuencia local o global del mensaje de seguimiento.
 ms.assetid: b1cd111f-a496-45d5-91d8-bd8bad9e218e
 keywords:
 - Elemento SequenceNumber EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8685ac6583cc9865b8084abfc4293a9ca5bdc7ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bc507c31b882f3720a74fe5d37830bf0b8395eb4ff9d8e4e5fd73bc5568feeb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904315"
 ---
-# <a name="sequencenumber-debugdatatype-element"></a>SequenceNumber (DebugDataType), elemento
+# <a name="sequencenumber-debugdatatype-element"></a>Elemento SequenceNumber (DebugDataType)
 
-El número de secuencia local o global del mensaje de seguimiento.
+Número de secuencia local o global del mensaje de seguimiento.
 
 ``` syntax
 <xs:element name="SequenceNumber"
@@ -31,7 +31,7 @@ El número de secuencia local o global del mensaje de seguimiento.
  />
 ```
 
-El elemento **SequenceNumber** se define mediante el tipo complejo [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+El tipo complejo [**DebugDataType**](eventschema-debugdatatype-complextype.md) define el elemento **SequenceNumber.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ El elemento **SequenceNumber** se define mediante el tipo complejo [**DebugDataT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

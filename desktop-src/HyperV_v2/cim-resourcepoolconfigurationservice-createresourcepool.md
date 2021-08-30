@@ -1,7 +1,7 @@
 ---
-description: Inicia un trabajo para crear un ResourcePool raíz. El ámbito del ResourcePool se establecerá en el mismo sistema que este servicio.
+description: Inicia un trabajo para crear una clase ResourcePool raíz. ResourcePool tendrá como ámbito el mismo sistema que este servicio.
 ms.assetid: 357880dc-125a-452c-89f5-44cd17684436
-title: Método CreateResourcePool de la clase CIM_ResourcePoolConfigurationService
+title: Método CreateResourcePool de la CIM_ResourcePoolConfigurationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ca339eb2e2a4ec0fb441c5ed1a657608d71248bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 723ff669a44a7459f52a389e1ad61d236d00489a95e1bbf1038ce9c6eb21caab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980895"
 ---
-# <a name="createresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método CreateResourcePool de la \_ clase ResourcePoolConfigurationService de CIM
+# <a name="createresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método CreateResourcePool de la clase \_ ResourcePoolConfigurationService de CIM
 
-Inicia un trabajo para crear un ResourcePool raíz. El ámbito del ResourcePool se establecerá en el mismo sistema que este servicio.
+Inicia un trabajo para crear una clase ResourcePool raíz. ResourcePool tendrá como ámbito el mismo sistema que este servicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,48 +43,48 @@ uint32 CreateResourcePool(
 
 <dl> <dt>
 
-*ElementName* \[ de\]
+*ElementName* \[ En\]
 </dt> <dd>
 
-Nombre relevante del usuario final para el grupo que se va a crear. Si **es null**, se puede usar un nombre predeterminado proporcionado por el sistema. El valor se almacenará en la propiedad **ElementName** del grupo creado.
+Nombre pertinente del usuario final para el grupo que se va a crear. Si **es NULL,** se puede usar un nombre predeterminado proporcionado por el sistema. El valor se almacenará en la **propiedad ElementName** del grupo creado.
 
 </dd> <dt>
 
-*HostResources* \[ de\]
+*HostResources* \[ En\]
 </dt> <dd>
 
-Matriz de cero o más [**dispositivos \_ lógicos de CIM**](cim-logicaldevice.md) que se usan para crear el grupo o modificar las extensiones de origen. Todos los elementos de la matriz deben ser del mismo tipo.
+Matriz de cero o más [**dispositivos \_ LogicalDevice de CIM**](cim-logicaldevice.md) que se usan para crear el grupo o modificar las extensiones de origen. Todos los elementos de la matriz deben ser del mismo tipo.
 
 </dd> <dt>
 
-*ResourceType* \[in\]
+*ResourceType* \[ En\]
 </dt> <dd>
 
-El tipo de recursos que el grupo creado administrará. Si *HostResources* contiene elementos, esta propiedad debe Machar su tipo.
+Tipo de recursos que administrará el grupo creado. Si *HostResources* contiene elementos, esta propiedad debe cambiar su tipo.
 
 </dd> <dt>
 
-*Grupo* \[ de enuncia\]
+*Grupo* \[ out\]
 </dt> <dd>
 
-Si se ejecuta correctamente, devuelve una referencia a [**la \_ ResourcePool CIM**](cim-resourcepool.md)resultante. Cuando se devuelve un trabajo, esto puede ser **null**, en cuyo caso, el cliente debe usar el trabajo para buscar el ResourcePool resultante una vez completado el trabajo.
+Si se ejecuta correctamente, devuelve una referencia al elemento [**\_ ResourcePool de CIM resultante.**](cim-resourcepool.md) Cuando se devuelve un trabajo, puede ser **NULL,** en cuyo caso, el cliente debe usar el trabajo para buscar el grupo de recursos resultante una vez completado el trabajo.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia a un [**\_ ConcreteJob de CIM**](cim-concretejob.md) que representa el trabajo (puede ser null si el trabajo se completó).
+Referencia a un [**\_ ConcreteJob de CIM**](cim-concretejob.md) que representa el trabajo (puede ser NULL si el trabajo se ha completado).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-**Trabajo completado sin errores** (0)
+**Trabajo completado sin error** (0)
 </dt> <dt>
 
 **No compatible** (1)
@@ -93,7 +93,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Desconocido** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Error** (4)
@@ -105,7 +105,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **En uso** (6)
 </dt> <dt>
 
-**Resourcetype incorrecto para el grupo** (7)
+**ResourceType incorrecto para el grupo** (7)
 </dt> <dt>
 
 **DMTF reservado** (..)
@@ -114,13 +114,13 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Tamaño no compatible** (4097)
+**Tamaño no admitido** (4097)
 </dt> <dt>
 
-**Método reservado** (4098.. 32767)
+**Método reservado** (4098..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -130,9 +130,9 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -141,7 +141,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**\_RESOURCEPOOLCONFIGURATIONSERVICE CIM**](cim-resourcepoolconfigurationservice.md)
+[**CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

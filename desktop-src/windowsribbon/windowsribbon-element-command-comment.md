@@ -1,9 +1,9 @@
 ---
-title: Command. Comment (propiedad)
+title: Propiedad Command.Comment
 description: Representa un comentario, o anotación, para un comando.
 ms.assetid: 4ac5c7d4-9627-4703-bd3c-594d9497ba24
 keywords:
-- Command. Comment (propiedad, cinta de Windows)
+- Barra de opciones de la Windows Command.Comment
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f7df2131234623dd30fc90339634a932eca5bd9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4eef6b5366f61f15fda808ca60264de5d28322b8b41a2d6e986e36282a95fbd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931645"
 ---
-# <a name="commandcomment-property"></a>Command. Comment (propiedad)
+# <a name="commandcomment-property"></a>Propiedad Command.Comment
 
 Representa un comentario, o anotación, para un comando.
 
@@ -47,21 +47,21 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
 El comentario está asociado a una definición de comando en el archivo de encabezado de la cinta de opciones, por ejemplo, `#define cmdSave 25003 /* Save */` .
 
-Este elemento contiene un valor de tipo *xs: String*.
+Este elemento contiene un valor de tipo *xs:string*.
 
 La longitud máxima es de 250 caracteres.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windowsribbon-element-command.md) con una declaración **Command. Comment** .
+En el ejemplo siguiente se muestra el marcado de un [**elemento Command**](windowsribbon-element-command.md) con una **declaración Command.Comment.**
 
 
 ```XML
@@ -91,8 +91,8 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

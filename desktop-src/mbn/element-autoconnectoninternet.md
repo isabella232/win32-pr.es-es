@@ -7,12 +7,12 @@ MSHAttr:
 title: AutoConnectOnInternet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e277b544a03b1c37aaa7f58123cbe8d0928bebf0
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: c28124d2b8dc18ab9543e3bd96cfc9d151c9ed16
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985488"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469392"
 ---
 # <a name="span-idwwan_profile_v4element_autoconnectoninternetspanautoconnectoninternet"></a><span id="WWAN_profile_v4.element_AutoConnectOnInternet"></span>AutoConnectOnInternet
 
@@ -22,10 +22,10 @@ Para más información, consulte la documentación del elemento [**AutoConnectOn
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
-**&lt;AutoConnectOnInternet&gt;**
+[<MBNProfileExt>](element-mbnprofileext.md)  
+**<AutoConnectOnInternet>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <AutoConnectOnInternet>
@@ -58,9 +58,7 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

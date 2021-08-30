@@ -12,12 +12,12 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: b1206aa4e358e0763c10a0d9b5028acae25f5683
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: d471d9de9afaf1017a374b3b4ad9e90b5e966f68012902315b843bac3164de99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778255"
 ---
 # <a name="dlpnotifypostprint-function"></a>Función DlpNotifyPostPrint
 

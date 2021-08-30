@@ -1,8 +1,8 @@
 ---
-description: Las tareas de WMI para redes administran y obtienen información acerca de las conexiones y las direcciones IP o MAC. Para ver otros ejemplos, vea el ScriptCenter de TechNet en https://www.microsoft.com/technet .
+description: Las tareas WMI para redes administran y obtienen información sobre las conexiones y las direcciones IP o MAC. Para ver otros ejemplos, consulte ScriptCenter de TechNet en https://www.microsoft.com/technet .
 ms.assetid: 25da32c3-34bf-4c88-9b09-ff371f2cf8db
 ms.tgt_platform: multiple
-title: 'Tareas de WMI: redes'
+title: 'Tareas WMI: Redes'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,42 +10,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 31e8346a064fe2f6c7ab624897be8e789474f7b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2a0555d63ccc01086983789dae5226492e8aa41
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715821"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625601"
 ---
-# <a name="wmi-tasks-networking"></a>Tareas de WMI: redes
+# <a name="wmi-tasks-networking"></a>Tareas WMI: Redes
 
-Las tareas de WMI para redes administran y obtienen información acerca de las conexiones y las direcciones IP o MAC. Para ver otros ejemplos, vea el ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Las tareas WMI para redes administran y obtienen información sobre las conexiones y las direcciones IP o MAC. Para ver otros ejemplos, consulte ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Los ejemplos de scripts que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información acerca de cómo usar el script para obtener datos de equipos remotos, consulte [conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con la extensión. vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una extensión. txt al archivo.
-2.  Abra una ventana del símbolo del sistema y navegue hasta el directorio en el que guardó el archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega .txt extensión al archivo.
+2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede obtener acceso a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts de WMI pueden generar grandes cantidades de resultados, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script de *filename.vbs* a *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para obtener distintos tipos de datos del equipo local.
+En la tabla siguiente se muestran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,11 +55,11 @@ En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para ob
 </thead>
 <tbody>
 <tr class="odd">
-<td>... ¿deshabilitar una conexión de red mediante WMI?</td>
-<td>Si usa DHCP, use el <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> y el método <a href="/windows/desktop/CIMWin32Prov/releasedhcplease-method-in-class-win32-networkadapterconfiguration"><strong>ReleaseDHCPLease</strong></a> para liberar la dirección IP. Si no usa DHCP, no puede usar WMI para deshabilitar una conexión de red. Para volver a habilitar la conexión de red, use <a href="/windows/desktop/CIMWin32Prov/renewdhcplease-method-in-class-win32-networkadapterconfiguration"><strong>objNetCard. RenewDHCPLease</strong></a>. También puede liberar o renovar todas las concesiones DHCP mediante los métodos <a href="/windows/desktop/CIMWin32Prov/releasedhcpleaseall-method-in-class-win32-networkadapterconfiguration"><strong>ReleaseDHCPLeaseAll</strong></a> y <a href="/windows/desktop/CIMWin32Prov/renewdhcpleaseall-method-in-class-win32-networkadapterconfiguration"><strong>RenewDHCPLeaseAll</strong></a> .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... deshabilitar una conexión de red mediante WMI?</td>
+<td>Si usa DHCP, use los métodos <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> <a href="/windows/desktop/CIMWin32Prov/releasedhcplease-method-in-class-win32-networkadapterconfiguration"><strong>y ReleaseDHCPLease</strong></a> para liberar la dirección IP. Si no usa DHCP, no puede usar WMI para deshabilitar una conexión de red. Para volver a habilitar la conexión de red, use <a href="/windows/desktop/CIMWin32Prov/renewdhcplease-method-in-class-win32-networkadapterconfiguration"><strong>objNetCard.RenewDHCPLease</strong></a>. También puede publicar o renovar todas las concesiones DHCP mediante los métodos <a href="/windows/desktop/CIMWin32Prov/releasedhcpleaseall-method-in-class-win32-networkadapterconfiguration"><strong>ReleaseDHCPLeaseAll</strong></a> y <a href="/windows/desktop/CIMWin32Prov/renewdhcpleaseall-method-in-class-win32-networkadapterconfiguration"><strong>RenewDHCPLeaseAll.</strong></a><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -83,7 +83,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -105,17 +105,17 @@ foreach ($NetCard in $netenabled) {
 </td>
 </tr>
 <tr class="even">
-<td>... ¿deshabilitar o habilitar una NIC?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapter"><strong>Win32_NetworkAdapter</strong></a> y los métodos <a href="/windows/desktop/CIMWin32Prov/disable-method-in-class-win32-networkadapter"><strong>Disable</strong></a> o <a href="/windows/desktop/CIMWin32Prov/enable-method-in-class-win32-networkadapter"><strong>enable</strong></a> .</p></td>
+<td>... ¿Deshabilitar o habilitar una NIC?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-networkadapter"><strong>clase Win32_NetworkAdapter</strong></a> y los <a href="/windows/desktop/CIMWin32Prov/disable-method-in-class-win32-networkadapter"><strong>métodos Disable</strong></a> o <a href="/windows/desktop/CIMWin32Prov/enable-method-in-class-win32-networkadapter"><strong>Enable.</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td>... ¿determinar qué dirección IP se ha asignado a una conexión de red determinada?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapter"><strong>Win32_NetworkAdapter</strong></a> y la propiedad <strong>NetConnectionID</strong> para determinar la dirección Mac de la conexión de red. A continuación, use la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> para buscar la dirección IP asociada a la dirección Mac.</p>
+<td>... determinar qué dirección IP se ha asignado a una conexión de red determinada?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-networkadapter"><strong>Win32_NetworkAdapter</strong></a> y la <strong>propiedad NetConnectionID</strong> para determinar la dirección MAC de la conexión de red. A continuación, <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>use Win32_NetworkAdapterConfiguration</strong></a> clase para buscar la dirección IP asociada a la dirección MAC.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -155,7 +155,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -191,17 +191,17 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinar la dirección MAC de un adaptador de red</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> y compruebe el valor de la propiedad <strong>MacAddress</strong> .</p></td>
+<td>... determinar la dirección MAC de un adaptador de red?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> clase y compruebe el valor de la <strong>propiedad MACAddress.</strong></p></td>
 </tr>
 <tr class="odd">
-<td>... determinar la dirección IP de un equipo</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> y compruebe el valor de la propiedad <strong>IPAddress</strong> . Esto se devuelve como una matriz, por lo que debe usar un bucle For-Each para obtener el valor.</p>
+<td>... determinar la dirección IP de un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> clase y compruebe el valor de la <strong>propiedad IPAddress.</strong> Esto se devuelve como una matriz, por lo que use un bucle For-Each para obtener el valor.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -230,7 +230,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -261,13 +261,13 @@ else {&quot;$Count IP addresses found on this system&quot;}</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>...configque un equipo empiece a obtener su dirección IP a través de DHCP?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> y el método <a href="/windows/desktop/CIMWin32Prov/enabledhcp-method-in-class-win32-networkadapterconfiguration"><strong>EnableDHCP</strong></a> .</p>
+<td>...configun equipo para empezar a obtener su dirección IP a través de DHCP?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/enabledhcp-method-in-class-win32-networkadapterconfiguration"><strong>método EnableDHCP.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -293,13 +293,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿asignar un equipo una dirección IP estática?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> y el método <a href="/windows/desktop/CIMWin32Prov/enablestatic-method-in-class-win32-networkadapterconfiguration"><strong>EnableStatic</strong></a> .</p>
+<td>... ¿Asignar una dirección IP estática a un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/enablestatic-method-in-class-win32-networkadapterconfiguration"><strong>método EnableStatic.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -332,13 +332,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿desea obtener información acerca de los adaptadores de red sin recuperar también información sobre aspectos como conexiones RAS y VPN?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> . En la consulta <a href="querying-with-wql.md">WQL</a> , use esta cláusula: Where <strong>IPEnabled</strong>  =  <strong>true</strong>.</p>
+<td>... obtener información sobre los adaptadores de red sin recuperar también información sobre aspectos como las conexiones RAS y VPN.</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>Win32_NetworkAdapterConfiguration</strong></a> clase . En la <a href="querying-with-wql.md">consulta WQL,</a> use esta cláusula: Where <strong>IPEnabled</strong>  =  <strong>True</strong>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -369,14 +369,14 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿hacer ping a un equipo sin utilizar Ping.exe?</td>
-<td><p>Utilice la clase <a href="/previous-versions/windows/desktop/wmipicmp/win32-pingstatus"><strong>Win32_PingStatus</strong></a> .</p>
-<p><a href="/previous-versions/windows/desktop/wmipicmp/win32-pingstatus"><strong>Win32_PingStatus</strong></a> puede devolver datos para equipos que tengan tanto direcciones IPv4 como direcciones IPv6.</p>
+<td>... hacer ping a un equipo sin usar Ping.exe?</td>
+<td><p>Use la <a href="/previous-versions/windows/desktop/wmipicmp/win32-pingstatus"><strong>Win32_PingStatus</strong></a> clase .</p>
+<p><a href="/previous-versions/windows/desktop/wmipicmp/win32-pingstatus"><strong>Win32_PingStatus</strong></a> pueden devolver datos para equipos que tienen direcciones IPv4 e IPv6.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -408,7 +408,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -449,12 +449,12 @@ End If
 
 <dl> <dt>
 
-[Tareas de WMI para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
+[Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones de C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicación C++ de WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter de TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 

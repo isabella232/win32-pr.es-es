@@ -1,7 +1,7 @@
 ---
-description: 'El método EndOfStream notifica al pin que no se espera ningún dato adicional. Este método invalida el método CBasePin:: EndOfStream.'
+description: El método EndOfStream notifica al pin que no se espera ningún dato adicional. Este método invalida el método CBasePin::EndOfStream.
 ms.assetid: fb5fd8bb-47be-4df6-b837-2c5ff4347478
-title: Método CRendererInputPin. EndOfStream (Renbase. h)
+title: Método CRendererInputPin.EndOfStream (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a8f495c87a86efc9d5625868c7f8fd4afd6ff1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0e8f292016d24de69f71f91391c3c0d028c05e9cfa9c9057509877424ab02c99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908305"
 ---
-# <a name="crendererinputpinendofstream-method"></a>CRendererInputPin. EndOfStream, método
+# <a name="crendererinputpinendofstream-method"></a>Método CRendererInputPin.EndOfStream
 
-El `EndOfStream` método notifica al pin que no se espera ningún dato adicional. Este método invalida el método [**CBasePin:: EndOfStream**](cbasepin-endofstream.md) .
+El `EndOfStream` método notifica al pin que no se espera ningún dato adicional. Este método invalida el [**método CBasePin::EndOfStream.**](cbasepin-endofstream.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

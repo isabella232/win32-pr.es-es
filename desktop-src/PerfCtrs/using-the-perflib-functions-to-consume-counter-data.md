@@ -1,104 +1,104 @@
 ---
 title: Uso de funciones PerfLib para consumir datos de contadores
-description: Las funciones de la API de PerfLib se pueden usar para consumir datos del contador de rendimiento V2 directamente cuando no se puede usar PDH.
+description: Las funciones de LA API de PerfLib se pueden usar para consumir datos del contador de rendimiento V2 directamente cuando no se puede usar PDH.
 ms.date: 08/17/2020
 ms.topic: article
-ms.openlocfilehash: 9fec3bb97ec32ff98e2b317b737023da81147bdd
-ms.sourcegitcommit: f7cf41ffc79d1ffead9de2fc61677201f94b423a
+ms.openlocfilehash: 154ce2e60df34fc91f83f2b51b48d78cf170191091df55b85b44560ae271ce3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "105720178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033155"
 ---
 # <a name="using-the-perflib-functions-to-consume-counter-data"></a>Uso de funciones PerfLib para consumir datos de contadores
 
-Utilice las funciones de consumidor de PerfLib para consumir datos de rendimiento de los proveedores de datos de rendimiento V2 cuando no se pueden usar las funciones de la [aplicación auxiliar de datos de rendimiento (PDH)](using-the-pdh-functions-to-consume-counter-data.md). Estas funciones se pueden usar al escribir aplicaciones de OneCore para recopilar los valores de configuración de V2 o cuando es necesario recopilar los valores de configuración de V2 con las dependencias y la sobrecarga mínimas.
+Use las funciones consumidoras de PerfLib para consumir datos de rendimiento de proveedores de datos de rendimiento V2 cuando no se puedan usar las funciones del asistente de datos de rendimiento [(PDH).](using-the-pdh-functions-to-consume-counter-data.md) Estas funciones se pueden usar al escribir OneCore para recopilar contraconjuntos V2 o cuando necesite recopilar conjuntos de contadores V2 con dependencias mínimas y sobrecarga.
 
 > [!TIP]
-> Las funciones de consumidor de PerfLib V2 son más difíciles de usar que las funciones de la aplicación auxiliar de datos de rendimiento (PDH) y solo admiten la recopilación de datos de proveedores de V2. Las funciones PDH deben ser preferibles para la mayoría de las aplicaciones.
+> Las funciones perfLib V2 Consumer son más difíciles de usar que las funciones del asistente de datos de rendimiento (PDH) y solo admiten la recopilación de datos de proveedores V2. Las funciones PDH deben ser preferibles para la mayoría de las aplicaciones.
 
-Las funciones de consumidor de PerfLib V2 son la API de bajo nivel para recopilar datos de **proveedores de V2**. Las funciones de consumidor de PerfLib V2 no admiten la recopilación de datos de **proveedores de v1**.
+Las funciones de consumidor de PerfLib V2 son la API de bajo nivel para recopilar datos de **proveedores V2.** Las funciones consumidoras de PerfLib V2 no admiten la recopilación de datos de **proveedores V1.**
 
 > [!WARNING]
-> Las funciones de consumidor de PerfLib V2 pueden recopilar datos de orígenes que no son de confianza, por ejemplo, de servicios locales con privilegios limitados o de equipos remotos. Las funciones de consumidor de PerfLib V2 no validan los datos para mantener la integridad o la coherencia. Depende de la aplicación de consumidor comprobar que los datos devueltos son coherentes, por ejemplo, que los valores de tamaño del bloque de datos devuelto no superan el tamaño real del bloque de datos devuelto. Esto es especialmente importante cuando la aplicación de consumidor se ejecuta con privilegios elevados.
+> Las funciones de consumidor perfLib V2 pueden recopilar datos de orígenes que no son de confianza, por ejemplo, de servicios locales con privilegios limitados o de máquinas remotas. Las funciones de consumidor de PerfLib V2 no validan la integridad ni la coherencia de los datos. La aplicación consumidora debe comprobar que los datos devueltos son coherentes, por ejemplo, que los valores size del bloque de datos devuelto no superan el tamaño real del bloque de datos devuelto. Esto es especialmente importante cuando la aplicación de consumidor se ejecuta con privilegios elevados.
 
 ## <a name="perflib-usage"></a>Uso de PerfLib
 
-El `perflib.h` encabezado incluye las declaraciones usadas por los proveedores de modo de usuario de V2 (es decir, la API del proveedor de Perflib) y los consumidores V2 (es decir, la API de consumidor de Perflib). Declara las siguientes funciones para consumir datos de rendimiento V2:
+El encabezado incluye las declaraciones que usan los proveedores de modo de usuario V2 (es decir, la API del proveedor perfLib) y los `perflib.h` consumidores V2 (es decir, perfLib Consumer API). Declara las siguientes funciones para consumir datos de rendimiento V2:
 
-- Use [**PerfEnumerateCounterSet**](/windows/desktop/api/Perflib/nf-perflib-perfenumeratecounterset) para obtener los GUID de los contraconjuntos registrados por los proveedores de V2 en el sistema.
-- Use [**PerfQueryCounterSetRegistrationInfo**](/windows/desktop/api/Perflib/nf-perflib-perfquerycountersetregistrationinfo) para obtener información sobre un CounterSet determinado como el nombre de CounterSet, la descripción, el tipo (instancia única o de varias instancias), los tipos de contador, los nombres de contadores y las descripciones de los contadores.
-- Use [**PerfEnumerateCounterSetInstances**](/windows/desktop/api/Perflib/nf-perflib-perfenumeratecountersetinstances) para obtener los nombres de las instancias actualmente activas de un CounterSet de varias instancias.
-- Use [**PerfOpenQueryHandle**](/windows/desktop/api/Perflib/nf-perflib-perfopenqueryhandle) para crear un nuevo identificador de consulta que se usará para recopilar datos de uno o más contraconjuntos.
-- Use [**PerfCloseQueryHandle**](/windows/desktop/api/Perflib/nf-perflib-perfclosequeryhandle) para cerrar un identificador de consulta.
-- Use [**PerfAddCounters**](/windows/desktop/api/Perflib/nf-perflib-perfaddcounters) para agregar una consulta a un identificador de consulta.
-- Use [**PerfDeleteCounters**](/windows/desktop/api/Perflib/nf-perflib-perfdeletecounters) para quitar una consulta de un identificador de consulta.
-- Use [**PerfQueryCounterInfo**](/windows/desktop/api/Perflib/nf-perflib-perfquerycounterinfo) para obtener información sobre las consultas actuales en un identificador de consulta.
-- Use [**PerfQueryCounterData**](/windows/desktop/api/Perflib/nf-perflib-perfquerycounterdata) para recopilar los datos de rendimiento de un identificador de consulta.
+- Use [**PerfEnumerateCounterSet**](/windows/desktop/api/Perflib/nf-perflib-perfenumeratecounterset) para obtener los GUID de los contraconjuntos registrados por los proveedores V2 en el sistema.
+- Use [**PerfQueryCounterSetRegistrationInfo**](/windows/desktop/api/Perflib/nf-perflib-perfquerycountersetregistrationinfo) para obtener información sobre un conjunto de contadores determinado, como el nombre, la descripción, el tipo (instancia única o de varias instancias), los tipos de contador, los nombres de contador y las descripciones de los contadores.
+- Use [**PerfEnumerateCounterSetInstances**](/windows/desktop/api/Perflib/nf-perflib-perfenumeratecountersetinstances) para obtener los nombres de las instancias actualmente activas de un conjunto de contadores de varias instancias.
+- Use [**PerfOpenQueryHandle para**](/windows/desktop/api/Perflib/nf-perflib-perfopenqueryhandle) crear un nuevo identificador de consulta que se usará para recopilar datos de uno o varios conjuntos de contadores.
+- Use [**PerfCloseQueryHandle para**](/windows/desktop/api/Perflib/nf-perflib-perfclosequeryhandle) cerrar un identificador de consulta.
+- Use [**PerfAddCounters para**](/windows/desktop/api/Perflib/nf-perflib-perfaddcounters) agregar una consulta a un identificador de consulta.
+- Use [**PerfDeleteCounters para**](/windows/desktop/api/Perflib/nf-perflib-perfdeletecounters) quitar una consulta de un identificador de consulta.
+- Use [**PerfQueryCounterInfo para**](/windows/desktop/api/Perflib/nf-perflib-perfquerycounterinfo) obtener información sobre las consultas actuales en un identificador de consulta.
+- Use [**PerfQueryCounterData para**](/windows/desktop/api/Perflib/nf-perflib-perfquerycounterdata) recopilar los datos de rendimiento de un identificador de consulta.
 
-Si el consumidor va a consumir datos solo de un proveedor específico en el que los índices GUID y Counter son estables y tiene acceso al archivo de símbolos generado por [CTRPP](ctrpp.md)(desde el `-ch` parámetro CTRPP), puede codificar de forma rígida el GUID de CounterSet y los valores de índice de contador en el consumidor.
+Si el consumidor va a consumir datos solo de un proveedor específico en el que el GUID y los índices de contador son estables y tiene acceso al archivo de símbolos generado por [CTRPP](ctrpp.md)(desde el parámetro CTRPP), puede codificar de forma hard-code los valores guid y de índice de contador en `-ch` el consumidor.
 
-De lo contrario, tendrá que cargar los metadatos de CounterSet para determinar los GUID de CounterSet y los índices de contador que se usarán en la consulta de la siguiente manera:
+De lo contrario, deberá cargar los metadatos del conjunto de contadores para determinar los GUID del conjunto de contadores y los índices de contadores que se usarán en la consulta de la siguiente manera:
 
-- Use **PerfEnumerateCounterSet** para obtener una lista de GUID de CounterSet admitidos.
-- Para cada GUID, use **PerfQueryCounterSetRegistrationInfo** para cargar el nombre de CounterSet. Deténgase cuando encuentre el nombre que está buscando.
-- Use **PerfQueryCounterSetRegistrationInfo** para cargar el resto de metadatos (configuración de CounterSet, nombres de contador, índices de contador, tipos de contador) para ese CounterSet.
+- Use **PerfEnumerateCounterSet para** obtener una lista de GUID de conjuntos de contadores admitidos.
+- Para cada GUID, use **PerfQueryCounterSetRegistrationInfo para** cargar el nombre del contraconjunto. Detén cuando encuentre el nombre que está buscando.
+- Use **PerfQueryCounterSetRegistrationInfo** para cargar los metadatos restantes (configuración del conjunto de contadores, nombres de contador, índices de contadores, tipos de contadores) para ese conjunto de contadores.
 
-Si solo necesita conocer los nombres de las instancias actualmente activas de un CounterSet (es decir, si no necesita los valores reales de los datos de rendimiento), puede usar **PerfEnumerateCounterSetInstances**. Esto toma un GUID CounterSet como entrada y devuelve un `PERF_INSTANCE_HEADER` bloque con los nombres y los identificadores de las instancias actualmente activas del CounterSet determinado.
+Si solo necesita conocer los nombres de las instancias actualmente activas de un conjunto de contadores (es decir, si no necesita los valores de datos de rendimiento reales), puede usar **PerfEnumerateCounterSetInstances**. Esto toma un GUID de conjunto de contadores como entrada y devuelve un bloque con los nombres y los identificadores de las instancias actualmente activas del `PERF_INSTANCE_HEADER` contraconjunto especificado.
 
 ### <a name="queries"></a>Consultas
 
 Para recopilar datos de rendimiento, debe crear un identificador de consulta, agregarle consultas y recopilar los datos de las consultas.
 
-Un identificador de consulta puede tener muchas consultas asociadas. Cuando se llama a **PerfQueryCounterData** para un identificador de consulta, Perflib ejecutará todas las consultas del identificador y recopilará todos los resultados.
+Un identificador de consulta puede tener muchas consultas asociadas. Al llamar a **PerfQueryCounterData** para un identificador de consulta, PerfLib ejecutará todas las consultas del identificador y recopilará todos los resultados.
 
-Cada consulta especifica un GUID de CounterSet, un filtro de nombre de instancia, un filtro de ID. de instancia opcional y un filtro de ID. de contador opcional.
+Cada consulta especifica un GUID de conjunto de contadores, un filtro de nombre de instancia, un filtro de identificador de instancia opcional y un filtro de identificador de contador opcional.
 
-- El GUID de CounterSet es obligatorio. Indica el GUID del CounterSet desde el que la consulta recopilará los datos. Esto es similar a la `FROM` cláusula de una consulta SQL.
-- El filtro de nombre de instancia es obligatorio. Indica un patrón de carácter comodín con el que debe coincidir el nombre de instancia para que la instancia se incluya en la consulta, con `*` lo que se indica "cualquier carácter" y se `?` indica "un carácter". En el caso de los contraconjuntos de instancia única, se **debe** establecer en una cadena de longitud cero `""` . En el caso de los contraconjuntos de varias instancias, **debe** establecerse en una cadena que no esté vacía (use `"*"` para aceptar todos los nombres de instancia). Esto es similar a una `WHERE InstanceName LIKE NameFilter` cláusula de una consulta SQL.
-- El filtro de ID. de instancia es opcional. Si está presente (es decir, si se establece en un valor distinto de `0xFFFFFFFF` ), indica que la consulta solo debe recopilar las instancias en las que el identificador de instancia coincide con el identificador especificado. Si no existe (es decir, si `0xFFFFFFFF` está establecido en), indica que la consulta debe aceptar todos los identificadores de instancia. Esto es similar a una `WHERE InstanceId == IdFilter` cláusula de una consulta SQL.
-- El filtro de ID. de contador es opcional. Si está presente (es decir, si se establece en un valor distinto de `PERF_WILDCARD_COUNTER` ), indica que la consulta debe recopilar un solo contador, similar a una `SELECT CounterName` cláusula de una consulta SQL. Si no existe (es decir, si `PERF_WILDCARD_COUNTER` está establecido en), indica que la consulta debe recopilar todos los contadores disponibles, de forma similar a una `SELECT *` cláusula de una consulta SQL.
+- Se requiere el GUID del conjunto de contadores. Indica el GUID del contraconjunto del que la consulta recopilará datos. Esto es similar a la `FROM` cláusula de una SQL consulta.
+- Se requiere el filtro de nombre de instancia. Indica un patrón de caracteres comodín que el nombre de instancia debe coincidir para que la instancia se incluya en la consulta, indicando `*` "cualquier carácter" e `?` indicando "un carácter". Para los conjuntos de contadores de instancia única, **debe** establecerse en una cadena de longitud cero `""` . Para los conjuntos de contadores de instancias **múltiples,** debe establecerse en una cadena no vacía (use `"*"` para aceptar todos los nombres de instancia). Esto es similar a una `WHERE InstanceName LIKE NameFilter` cláusula de una SQL consulta.
+- El filtro de identificador de instancia es opcional. Si está presente (es decir, si se establece en un valor distinto de ), indica que la consulta solo debe recopilar instancias donde el identificador de instancia coincide con `0xFFFFFFFF` el identificador especificado. Si no está presente (es decir, si se establece en ), indica que la consulta `0xFFFFFFFF` debe aceptar todos los iD de instancia. Esto es similar a una `WHERE InstanceId == IdFilter` cláusula de una SQL consulta.
+- El filtro de identificador de contador es opcional. Si está presente (es decir, si se establece en un valor distinto de ), indica que la consulta debe recopilar un único contador, similar a una cláusula de una `PERF_WILDCARD_COUNTER` `SELECT CounterName` SQL consulta. Si no está presente (es decir, si se establece en ), indica que la consulta debe recopilar todos los contadores disponibles, de forma similar a una cláusula de una `PERF_WILDCARD_COUNTER` `SELECT *` SQL consulta.
 
-Use **PerfAddCounters** para agregar consultas a un identificador de consulta. Use **PerfDeleteCounters** para quitar las consultas de un identificador de consulta.
+Use **PerfAddCounters para** agregar consultas a un identificador de consulta. Use **PerfDeleteCounters para** quitar consultas de un identificador de consulta.
 
-Después de cambiar las consultas en un identificador de consulta, use **PerfQueryCounterInfo** para obtener los índices de consulta. Los índices indican el orden en que los resultados de la consulta se devolverán por **PerfQueryCounterData** (los resultados no siempre coincidirán con el orden en el que se agregaron las consultas).
+Después de cambiar las consultas de un identificador de consulta, use **PerfQueryCounterInfo para** obtener los índices de consulta. Los índices indican el orden en el que **PerfQueryCounterData** devolverá los resultados de la consulta (los resultados no siempre coincidirán con el orden en que se agregaron las consultas).
 
-Una vez que el identificador de consulta esté listo, use **PerfQueryCounterData** para recopilar los datos. Normalmente, los datos se recopilan periódicamente (una vez por segundo o una vez por minuto) y después se procesan los datos según sea necesario.
+Una vez que el identificador de consulta esté listo, use **PerfQueryCounterData** para recopilar los datos. Normalmente, recopilará los datos periódicamente (una vez por segundo o una vez por minuto) y los procesará según sea necesario.
 
 > [!NOTE]
 > Los contadores de rendimiento no están diseñados para recopilarse más de una vez por segundo.
 
-**PerfQueryCounterData** devolverá un `PERF_DATA_HEADER` bloque, que consta de un encabezado de datos con marcas de tiempo seguido de una secuencia de `PERF_COUNTER_HEADER` bloques, cada uno de los cuales contiene los resultados de una consulta.
+**PerfQueryCounterData** devolverá un bloque , que consta de un encabezado de datos con marcas de tiempo seguidas de una secuencia de bloques, cada uno de los cuales contiene los `PERF_DATA_HEADER` resultados `PERF_COUNTER_HEADER` de una consulta.
 
-`PERF_COUNTER_HEADER`Puede contener diferentes tipos de datos, como se indica en el valor del `dwType` campo:
+puede contener varios tipos diferentes de datos, como indica `PERF_COUNTER_HEADER` el valor del campo `dwType` :
 
-- `PERF_ERROR_RETURN` -PerfLib no puede obtener datos de contador válidos de vuelta del proveedor.
-- `PERF_SINGLE_COUNTER` -La consulta era para un solo contador de un CounterSet de una sola instancia. Los resultados contienen solo el valor del contador solicitado.
-- `PERF_MULTIPLE_COUNTERS` -La consulta era para varios contadores de un CounterSet de una sola instancia. El resultado contiene los valores del contador junto con información para hacer coincidir cada valor con el contador correspondiente (es decir, los encabezados de columna).
-- `PERF_MULTIPLE_INSTANCES` -La consulta era para un solo contador de un CounterSet de varias instancias. Los resultados contienen la información de la instancia (es decir, los encabezados de fila) y un valor de contador por instancia.
-- `PERF_COUNTERSET` -La consulta era para varios contadores de un CounterSet de varias instancias. Los resultados contienen la información de la instancia (es decir, los encabezados de fila), los valores de contador para cada instancia e información para hacer coincidir cada valor con el contador correspondiente (es decir, los encabezados de columna).
+- `PERF_ERROR_RETURN` - PerfLib no puede obtener datos de contador válidos del proveedor.
+- `PERF_SINGLE_COUNTER` - La consulta era para un único contador de un conjunto de contadores de instancia única. Los resultados contienen solo el valor de contador solicitado.
+- `PERF_MULTIPLE_COUNTERS` - La consulta era para varios contadores de un conjunto de contadores de instancia única. El resultado contiene los valores de contador junto con información para hacer coincidir cada valor con el contador correspondiente (es decir, los encabezados de columna).
+- `PERF_MULTIPLE_INSTANCES` - La consulta era para un único contador de un conjunto de contadores de varias instancias. Los resultados contienen la información de instancia (es decir, encabezados de fila) y un valor de contador por instancia.
+- `PERF_COUNTERSET` - La consulta era para varios contadores de un conjunto de contadores de varias instancias. Los resultados contienen la información de instancia (es decir, encabezados de fila), los valores de contador de cada instancia e información para hacer coincidir cada valor con el contador correspondiente (es decir, encabezados de columna).
 
-Los valores devueltos por **PerfQueryCounterData** son `UINT32` o `UINT64` valores sin formato. Normalmente, estos requieren algún procesamiento para generar los valores con formato esperados. El procesamiento necesario depende del tipo del contador. Muchos tipos de contador requieren información adicional para el procesamiento completo, como una marca de tiempo o un valor de un contador "base" en el mismo ejemplo.
+Los valores devueltos **por PerfQueryCounterData** son `UINT32` o valores sin `UINT64` procesar. Normalmente, requieren algún procesamiento para generar los valores con formato esperados. El procesamiento necesario depende del tipo del contador. Muchos tipos de contador requieren información adicional para el procesamiento completo, como una marca de tiempo o un valor de un contador "base" en el mismo ejemplo.
 
-Algunos tipos de contador son contadores "Delta" que solo son significativos cuando se comparan con los datos de un ejemplo anterior. Por ejemplo, un contador de tipo `PERF_SAMPLE_COUNTER` tiene un valor con formato que se espera que muestre una tasa (el número de veces que se ha producido una cosa determinada por segundo sobre el intervalo de muestra), pero el valor sin formato real es simplemente un recuento (el número de veces que se ha producido una cosa determinada en total). Para generar el valor con formato "rate", debe aplicar la fórmula correspondiente al tipo de contador. La fórmula de `PERF_SAMPLE_COUNTER` es `(N1 - N0) / ((T1 - T0) / F)` : reste el valor del ejemplo actual del valor del ejemplo anterior (que indica el número de veces que se ha producido el evento durante el intervalo de muestra) y, a continuación, divida el resultado por el número de segundos del intervalo de muestra (se obtiene restando la marca de tiempo del ejemplo actual de la marca de tiempo del ejemplo anterior y dividiendo por frecuencia para convertir
+Algunos tipos de contadores son contadores "delta" que solo son significativos cuando se comparan con los datos de un ejemplo anterior. Por ejemplo, un contador de tipo tiene un valor con formato que se espera que muestre una tasa (el número de veces que se produjo una cosa determinada por segundo durante el intervalo de muestra), pero el valor sin procesar real es solo un recuento (el número de veces que ha ocurrido una cosa determinada `PERF_SAMPLE_COUNTER` en total). Para generar el valor "rate" con formato, debe aplicar la fórmula correspondiente al tipo de contador. La fórmula para es : restar el valor de la muestra actual del valor de la muestra anterior (lo que proporciona el número de veces que se produjo el evento durante el intervalo de muestra) y, a continuación, dividir el resultado por el número de segundos del intervalo de muestra (obtenido restando la marca de tiempo de la muestra actual de la marca de tiempo de la muestra anterior y dividiendo por frecuencia para convertir el intervalo de tiempo en `PERF_SAMPLE_COUNTER` `(N1 - N0) / ((T1 - T0) / F)` segundos).
 
-Consulte [calcular valores de contadores](calculating-counter-values.md) para obtener más información sobre cómo calcular valores con formato a partir de valores sin formato.
+Consulte [Cálculo de valores de contador para](calculating-counter-values.md) obtener más información sobre la computación de valores con formato a partir de valores sin procesar.
 
 ## <a name="sample"></a>Muestra
 
-El código siguiente implementa un consumidor que usa las funciones de consumidor de PerfLib v2 para leer la información de rendimiento de la CPU del CounterSet "información de procesador".
+El código siguiente implementa un consumidor que usa las funciones Consumidor de PerfLib V2 para leer la información de rendimiento de la CPU desde el contraconjunto "Información del procesador".
 
-El consumidor se organiza de la manera siguiente:
+El consumidor se organiza de la siguiente manera:
 
 - La `CpuPerfCounters` clase implementa la lógica para consumir datos de rendimiento. Encapsula un identificador de consulta y un búfer de datos en el que se registran los resultados de la consulta.
 - La `CpuPerfTimestamp` estructura almacena la información de marca de tiempo de un ejemplo. Cada vez que se recopilan datos, el autor de la llamada recibe un único `CpuPerfTimestamp` .
-- La `CpuPerfData` estructura almacena la información de rendimiento (el nombre de instancia y los valores de rendimiento sin procesar) de una CPU. Cada vez que se recopilan datos, el autor de la llamada recibe una matriz de `CpuPerfData` (una por CPU).
+- La estructura almacena la información de rendimiento (nombre de instancia `CpuPerfData` y valores de rendimiento sin procesar) de una CPU. Cada vez que se recopilan datos, el autor de la llamada recibe una matriz `CpuPerfData` de (una por CPU).
 
-Este ejemplo usa los valores de identificador de contador y GUID de CounterSet codificados de forma rígida porque está optimizado para un CounterSet específico (información del procesador) que no cambiará los valores de GUID o ID. Una clase más genérica que lee los datos de rendimiento de los contraconjuntos arbitrarios necesitaría usar **PerfQueryCounterSetRegistrationInfo** para buscar la asignación entre los identificadores de contador y los valores de contador en tiempo de ejecución.
+En este ejemplo se usan valores de GUID y de identificador de contador codificados de forma hard-coded porque está optimizado para un conjunto de contadores específico (información del procesador) que no cambiará los valores GUID o ID. Una clase más genérica que lee datos de rendimiento de conjuntos de contadores arbitrarios tendría que usar **PerfQueryCounterSetRegistrationInfo** para buscar la asignación entre los valores de contador y los de contador en tiempo de ejecución.
 
-Un `CpuPerfCountersConsumer.cpp` programa sencillo muestra cómo usar los valores de la `CpuPerfCounters` clase.
+Un programa `CpuPerfCountersConsumer.cpp` simple muestra cómo usar los valores de la clase `CpuPerfCounters` .
 
-### <a name="cpuperfcountersh"></a>CpuPerfCounters. h
+### <a name="cpuperfcountersh"></a>CpuPerfCounters.h
 
 ```cpp
 #pragma once
@@ -187,7 +187,7 @@ private:
 };
 ```
 
-### <a name="cpuperfcounterscpp"></a>CpuPerfCounters. cpp
+### <a name="cpuperfcounterscpp"></a>CpuPerfCounters.cpp
 
 ```cpp
 #include "CpuPerfCounters.h"
@@ -558,7 +558,7 @@ Done:
 }
 ```
 
-### <a name="cpuperfcountersconsumercpp"></a>CpuPerfCountersConsumer. cpp
+### <a name="cpuperfcountersconsumercpp"></a>CpuPerfCountersConsumer.cpp
 
 ```cpp
 #include <windows.h>

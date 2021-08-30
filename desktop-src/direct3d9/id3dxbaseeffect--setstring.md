@@ -1,7 +1,7 @@
 ---
 description: Establece una cadena.
 ms.assetid: 7e8eef70-85ee-461d-bf8c-44cda5f184cd
-title: 'ID3DXBaseEffect:: SetString (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::SetString (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 1a7c4f86c6b7fa78c869eb1d5bd49634ec4b496d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc0575ca8364d04b87b9b006b8fe0c3c14de52297443b032c8e3c8e69031b50d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893675"
 ---
-# <a name="id3dxbaseeffectsetstring-method"></a>ID3DXBaseEffect:: SetString (método)
+# <a name="id3dxbaseeffectsetstring-method"></a>Método ID3DXBaseEffect::SetString
 
 Establece una cadena.
 
@@ -41,21 +41,21 @@ HRESULT SetString(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pString* \[ de\]
+*pString* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Cadena que se va a establecer.
+Cadena que se establecerá.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Cadena que se va a establecer.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -83,7 +83,7 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**GetString**](id3dxbaseeffect--getstring.md)
+[**Getstring**](id3dxbaseeffect--getstring.md)
 </dt> </dl>
 
  

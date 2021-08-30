@@ -4,18 +4,18 @@ description: Movimiento del mouse
 ms.assetid: 54366E9B-470A-4155-8A5F-425BAC8AC1A5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14176310882651cdeb2939d0db55368ff133ea11
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: f15c5d6be5e7b018bc7e9c5d07f50871018ee20730d0a9b8a005294eded044a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "105689604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979824"
 ---
 # <a name="mouse-movement"></a>Movimiento del mouse
 
-Cuando se mueve el mouse, Windows envía un mensaje de [**WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) . De forma predeterminada, el **\_ MOUSEMOVE de WM** va a la ventana que contiene el cursor. Puede invalidar este comportamiento mediante la *captura* del mouse, que se describe en la sección siguiente.
+Cuando se mueve el mouse, Windows un [**mensaje \_ WM MOUSEMOVE.**](/windows/desktop/inputdev/wm-mousemove) De forma predeterminada, **WM \_ MOUSEMOVE** va a la ventana que contiene el cursor. Puede invalidar este comportamiento *capturando el* mouse, que se describe en la sección siguiente.
 
-El mensaje de [**\_ MOUSEMOVE de WM**](/windows/desktop/inputdev/wm-mousemove) contiene los mismos parámetros que los mensajes de clics del mouse. Los 16 bits más bajos de *lParam* contienen la coordenada x y los 16 bits siguientes contienen la coordenada y. Use las macros [**Get \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) y [**Get \_ y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para desempaquetar las coordenadas de *lParam*. El parámetro *wParam* contiene **una operación OR bit a bit** de marcas, que indica el estado de los demás botones del mouse más las teclas Mayús y Ctrl. En el código siguiente se obtienen las coordenadas del mouse desde *lParam*.
+El [**mensaje \_ WM MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) contiene los mismos parámetros que los mensajes para los clics del mouse. Los 16 bits más bajos de *lParam* contienen la coordenada x y los 16 bits siguientes contienen la coordenada y. Use las macros [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) [**y GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para desempaquetar las coordenadas *de lParam.* El *parámetro wParam* contiene un **OR** bit a bit de marcas, que indica el estado de los demás botones del mouse más las teclas MAYÚS y CTRL. El código siguiente obtiene las coordenadas del mouse *de lParam*.
 
 
 ```C++
@@ -25,27 +25,27 @@ int yPos = GET_Y_LPARAM(lParam);
 
 
 
-Recuerde que estas coordenadas están en píxeles, no en píxeles independientes del dispositivo (DIP). Más adelante en este tema, veremos el código que convierte entre las dos unidades.
+Recuerde que estas coordenadas están en píxeles, no en píxeles independientes del dispositivo (DIP). Más adelante en este tema, se verá el código que convierte entre las dos unidades.
 
-Una ventana también puede recibir un mensaje de Windows de [**WM \_**](/windows/desktop/inputdev/wm-mousemove) si la posición del cursor cambia en relación con la ventana. Por ejemplo, si el cursor se coloca sobre una ventana y el usuario oculta la ventana, la ventana recibe mensajes de **WM \_ MOUSEMOVE** incluso si el mouse no se mueve. Una consecuencia de este comportamiento es que las coordenadas del mouse podrían no cambiar entre mensajes de **WM \_ MOUSEMOVE** .
+Una ventana también puede recibir un [**mensaje \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) de WM si la posición del cursor cambia con respecto a la ventana. Por ejemplo, si el cursor se coloca sobre una ventana y el usuario oculta la ventana, la ventana recibe mensajes **\_ WM MOUSEMOVE** incluso si el mouse no se movió. Una consecuencia de este comportamiento es que es posible que las coordenadas del mouse no cambien entre **los mensajes DE WM \_ MOUSEMOVE.**
 
-## <a name="capturing-mouse-movement-outside-the-window"></a>Capturar el movimiento del mouse fuera de la ventana
+## <a name="capturing-mouse-movement-outside-the-window"></a>Captura del movimiento del mouse fuera de la ventana
 
-De forma predeterminada, una ventana deja de recibir mensajes de [**WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) si el mouse se desplaza más allá del borde del área cliente. Pero para algunas operaciones, es posible que tenga que realizar un seguimiento de la posición del mouse más allá de este punto. Por ejemplo, un programa de dibujo podría permitir al usuario arrastrar el rectángulo de selección más allá del borde de la ventana, tal como se muestra en el diagrama siguiente.
+De forma predeterminada, una ventana deja de recibir [**mensajes \_ WM MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) si el mouse se mueve más allá del borde del área cliente. Pero para algunas operaciones, es posible que tenga que realizar un seguimiento de la posición del mouse más allá de este punto. Por ejemplo, un programa de dibujo podría permitir al usuario arrastrar el rectángulo de selección más allá del borde de la ventana, como se muestra en el diagrama siguiente.
 
-![Ilustración de la captura del mouse.](images/input01.png)
+![ilustración de la captura del mouse.](images/input01.png)
 
-Para recibir mensajes de movimiento del mouse más allá del borde de la ventana, llame a la función [**SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) . Después de llamar a esta función, la ventana seguirá recibiendo mensajes de [**WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) mientras el usuario mantenga al menos un botón del mouse hacia abajo, incluso si el mouse se mueve fuera de la ventana. La ventana de captura debe ser la ventana de primer plano y solo una ventana puede ser la ventana de captura a la vez. Para liberar la captura del mouse, llame a la función [**releaseCapture**](/windows/desktop/api/winuser/nf-winuser-releasecapture) .
+Para recibir mensajes de movimiento del mouse más allá del borde de la ventana, llame a la [**función SetCapture.**](/windows/desktop/api/winuser/nf-winuser-setcapture) Después de llamar a esta función, la ventana seguirá recibiendo mensajes [**\_ WM MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) mientras el usuario mantenga presionado al menos un botón del mouse, incluso si el mouse se mueve fuera de la ventana. La ventana de captura debe ser la ventana de primer plano y solo una ventana puede ser la ventana de captura a la vez. Para liberar la captura del mouse, llame a [**la función ReleaseCapture.**](/windows/desktop/api/winuser/nf-winuser-releasecapture)
 
-Normalmente usaría [**SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) y [**releaseCapture**](/windows/desktop/api/winuser/nf-winuser-releasecapture) de la siguiente manera.
+Normalmente, usaría [**SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) y [**ReleaseCapture**](/windows/desktop/api/winuser/nf-winuser-releasecapture) de la siguiente manera.
 
-1.  Cuando el usuario presione el botón primario del mouse, llame a [**SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) para iniciar la captura del mouse.
-2.  Responder a los mensajes de movimiento del mouse.
-3.  Cuando el usuario suelte el botón primario del mouse, llame a [**releaseCapture**](/windows/desktop/api/winuser/nf-winuser-releasecapture).
+1.  Cuando el usuario presione el botón izquierdo del mouse, llame a [**SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) para empezar a capturar el mouse.
+2.  Responder a mensajes de movimiento del mouse.
+3.  Cuando el usuario suelte el botón izquierdo del mouse, llame a [**ReleaseCapture**](/windows/desktop/api/winuser/nf-winuser-releasecapture).
 
-## <a name="example-drawing-circles"></a>Ejemplo: dibujo de círculos
+## <a name="example-drawing-circles"></a>Ejemplo: Dibujar círculos
 
-Vamos a ampliar el programa de círculo del [módulo 3](module-3---windows-graphics.md) , permitiendo al usuario dibujar un círculo con el mouse. Comience con el programa de [ejemplo de círculo de Direct2D](direct2d-circle-sample.md) . Se modificará el código de este ejemplo para agregar un dibujo sencillo. En primer lugar, agregue una nueva variable miembro a la `MainWindow` clase.
+Vamos a ampliar el programa Círculo del [módulo 3](module-3---windows-graphics.md) al permitir que el usuario dibuje un círculo con el mouse. Comience con el [programa Ejemplo de círculo de Direct2D.](direct2d-circle-sample.md) Modificaremos el código de este ejemplo para agregar un dibujo simple. En primer lugar, agregue una nueva variable miembro a la `MainWindow` clase .
 
 
 ```C++
@@ -54,7 +54,7 @@ Vamos a ampliar el programa de círculo del [módulo 3](module-3---windows-graph
 
 
 
-Esta variable almacena la posición del puntero del mouse mientras el usuario arrastra el mouse. En el `MainWindow` constructor, inicialice las variables *Ellipse* y *ptMouse* .
+Esta variable almacena la posición del mouse hacia abajo mientras el usuario arrastra el mouse. En el `MainWindow` constructor, inicialice las variables *ellipse* *y ptMouse.*
 
 
 ```C++
@@ -76,7 +76,7 @@ Quite el cuerpo del `MainWindow::CalculateLayout` método; no es necesario para 
 
 
 
-A continuación, declare los controladores de mensajes para los mensajes con el botón primario, el botón primario y el movimiento del mouse.
+A continuación, declare controladores de mensajes para los mensajes del botón izquierdo hacia abajo, el botón izquierdo hacia arriba y el movimiento del mouse.
 
 
 ```C++
@@ -87,7 +87,7 @@ A continuación, declare los controladores de mensajes para los mensajes con el 
 
 
 
-Las coordenadas del mouse se proporcionan en píxeles físicos, pero Direct2D espera píxeles independientes del dispositivo (DIP). Para controlar correctamente los valores altos de PPP, debe traducir las coordenadas de píxeles en DIP. Para obtener más información acerca de los PPP, consulte [PPP y Device-Independent píxeles](dpi-and-device-independent-pixels.md). En el código siguiente se muestra una clase auxiliar que convierte píxeles en DIP.
+Las coordenadas del mouse se dan en píxeles físicos, pero Direct2D espera píxeles independientes del dispositivo (DIP). Para controlar correctamente la configuración de valores altos de PPP, debe traducir las coordenadas de píxel en DIP. Para obtener más información sobre PPP, vea [PPP y Device-Independent Pixels](dpi-and-device-independent-pixels.md). En el código siguiente se muestra una clase auxiliar que convierte píxeles en DIP.
 
 
 ```C++
@@ -118,7 +118,7 @@ float DPIScale::scaleY = 1.0f;
 
 
 
-Llame a `DPIScale::Initialize` en el controlador de [**\_ creación de WM**](/windows/desktop/winmsg/wm-create) , después de crear el objeto de generador de Direct2D.
+Llame `DPIScale::Initialize` a en el controlador WM [**\_ CREATE**](/windows/desktop/winmsg/wm-create) después de crear el objeto de generador de Direct2D.
 
 
 ```C++
@@ -134,12 +134,12 @@ Llame a `DPIScale::Initialize` en el controlador de [**\_ creación de WM**](/wi
 
 
 
-Para obtener las coordenadas del mouse en DIP desde los mensajes del mouse, haga lo siguiente:
+Para obtener las coordenadas del mouse en DIP de los mensajes del mouse, haga lo siguiente:
 
-1.  Use las macros [**Get \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) y [**Get \_ y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para obtener las coordenadas de píxeles. Estas macros se definen en WindowsX. h, por lo que no olvide incluir ese encabezado en el proyecto.
-2.  Llame a `DPIScale::PixelsToDipsX` y `DPIScale::PixelsToDipsY` para convertir los píxeles en DIP.
+1.  Use las macros [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) [**y GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para obtener las coordenadas de píxel. Estas macros se definen en WindowsX.h, por lo que no olvide incluir ese encabezado en el proyecto.
+2.  Llame `DPIScale::PixelsToDipsX` a y para convertir `DPIScale::PixelsToDipsY` píxeles en DIP.
 
-Ahora, agregue los controladores de mensajes al procedimiento de ventana.
+Ahora agregue los controladores de mensajes al procedimiento de ventana.
 
 
 ```C++
@@ -160,14 +160,14 @@ Ahora, agregue los controladores de mensajes al procedimiento de ventana.
 
 Por último, implemente los propios controladores de mensajes.
 
-### <a name="left-button-down"></a>Botón primario abajo
+### <a name="left-button-down"></a>Botón izquierdo hacia abajo
 
-En el caso del mensaje situado a la izquierda, haga lo siguiente:
+Para el mensaje de abajo del botón izquierdo, haga lo siguiente:
 
-1.  Llame a [**SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) para empezar a capturar el mouse.
-2.  Almacene la posición del clic del mouse en la variable *ptMouse* . Esta posición define la esquina superior izquierda del cuadro de límite de la elipse.
-3.  Restablecer la estructura de la elipse.
-4.  Llame a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esta función obliga a que se vuelva a dibujar la ventana.
+1.  Llame [**a SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) para empezar a capturar el mouse.
+2.  Almacene la posición del clic del mouse en la variable *ptMouse.* Esta posición define la esquina superior izquierda del cuadro de límite para la elipse.
+3.  Restablezca la estructura de puntos suspensivos.
+4.  Llame [**a InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esta función fuerza a que se vuelva a dibujar la ventana.
 
 
 ```C++
@@ -182,13 +182,13 @@ void MainWindow::OnLButtonDown(int pixelX, int pixelY, DWORD flags)
 
 
 
-### <a name="mouse-move"></a>Movimiento del mouse
+### <a name="mouse-move"></a>Mover el mouse
 
-Para el mensaje de movimiento del mouse, compruebe si el botón primario del mouse está presionado. Si es así, vuelva a calcular la elipse y vuelva a dibujar la ventana. En Direct2D, una elipse se define mediante el punto central y los radios x e y. Queremos dibujar una elipse que se ajuste al rectángulo de selección definido por el punto de desplazamiento del mouse (*ptMouse*) y la posición actual del cursor (*x*, *y*), por lo que se necesita un poco de aritmética para buscar el ancho, el alto y la posición de la elipse.
+Para el mensaje de movimiento del mouse, compruebe si el botón izquierdo del mouse está apagado. Si es así, vuelva a calcular la elipse y vuelva a dibujar la ventana. En Direct2D, una elipse se define mediante el punto central y x e y-radii. Queremos dibujar una elipse que se ajuste al rectángulo delimitador definido por el punto de desplazamiento del mouse *(ptMouse)* y la posición actual del cursor *(x*, *y*), por lo que se necesita un poco de aritmética para encontrar el ancho, el alto y la posición de la elipse.
 
-En el código siguiente se vuelve a calcular la elipse y, a continuación, se llama a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect) para volver a dibujar la ventana.
+El código siguiente vuelve a calcular la elipse y, a continuación, llama a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect) para volver a dibujar la ventana.
 
-![Diagrama que muestra una elipse con RADIUS x e y.](images/input02.png)
+![Diagrama que muestra una elipse con radios x e y.](images/input02.png)
 
 
 ```C++
@@ -212,9 +212,9 @@ void MainWindow::OnMouseMove(int pixelX, int pixelY, DWORD flags)
 
 
 
-### <a name="left-button-up"></a>Botón primario arriba
+### <a name="left-button-up"></a>Botón izquierdo hacia arriba
 
-En el caso del mensaje de botón izquierdo, simplemente llame a [**releaseCapture**](/windows/desktop/api/winuser/nf-winuser-releasecapture) para liberar la captura del mouse.
+Para el mensaje de botón izquierdo hacia arriba, simplemente llame a [**ReleaseCapture**](/windows/desktop/api/winuser/nf-winuser-releasecapture) para liberar la captura del mouse.
 
 
 ```C++

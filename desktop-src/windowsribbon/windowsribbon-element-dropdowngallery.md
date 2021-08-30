@@ -3,7 +3,7 @@ title: Elemento DropDownGallery
 description: Representa un control Drop-Down galería con un menú basado en la galería.
 ms.assetid: fee6b3ad-fc84-49da-97da-2d53ff4dd0d8
 keywords:
-- DropDownGallery, elemento de la cinta de opciones de Windows
+- DropDownGallery, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: befe0624dfef5910625a0aa067f3ad8cd9882ca2
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 5ca7371f172237df53870b5165698bd24302643a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443426"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624601"
 ---
 # <a name="dropdowngallery-element"></a>Elemento DropDownGallery
 
@@ -45,16 +45,16 @@ Representa un [control Galería desplegable con](windowsribbon-controls-dropdown
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -123,7 +123,7 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 | Elemento                                                                                           | Descripción                                        |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                                         | Puede producirse una o varias veces<br/> <br/> |
-| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md)<br/> | Debe producirse exactamente una vez<br/> <br/>     |
 | [**DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md)<br/> | Puede producirse como máximo una vez<br/> <br/>      |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                               | Puede producirse una o varias veces<br/> <br/> |
@@ -137,8 +137,8 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

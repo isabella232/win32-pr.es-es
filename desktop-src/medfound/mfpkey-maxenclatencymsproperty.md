@@ -1,23 +1,23 @@
 ---
 description: Especifica la latencia máxima del codificador, en milisegundos.
 ms.assetid: 58a5208a-385b-44fd-a97b-61bff4703393
-title: Propiedad MFPKEY_MAXENCLATENCYMS (Wmcodecdsp. h)
+title: MFPKEY_MAXENCLATENCYMS propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5637e6a091885c755ef23b94fc86cf803f2a69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5849ecc34388dd2b62436060a5828b0b873f89f3919441e35c4366a18c48929
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953935"
 ---
-# <a name="mfpkey_maxenclatencyms-property"></a>\_Propiedad MAXENCLATENCYMS de MFPKEY
+# <a name="mfpkey_maxenclatencyms-property"></a>Propiedad MFPKEY \_ MAXENCLATENCYMS
 
 Especifica la latencia máxima del codificador, en milisegundos.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -29,9 +29,9 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -39,10 +39,10 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 <dl> <dt>
 
-[**\_Propiedad CONSTRAINENCLATENCY de MFPKEY**](mfpkey-constrainenclatencyproperty.md)
+[**Propiedad MFPKEY \_ CONSTRAINENCLATENCY**](mfpkey-constrainenclatencyproperty.md)
 </dt> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

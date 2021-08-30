@@ -1,6 +1,6 @@
 ---
 title: Crear un controlador de limpieza de disco
-description: Un axioma demostrado una vez y otra vez en el mundo de los equipos es que, independientemente del tamaño de la capacidad de almacenamiento del equipo, finalmente se rellenará.
+description: Un axioma demostrado una vez y otra vez en el mundo de los equipos es que, independientemente del tamaño de la capacidad de almacenamiento del equipo, al final se llenará.
 ms.assetid: f85e0db7-fbdb-452e-90c8-672f716b5692
 keywords:
 - controladores de limpieza de disco
@@ -9,21 +9,21 @@ keywords:
 - register,disk cleanup handlers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61ce7fc96e16cb27168e00196b65d48d378758a47594122cca978dc1a1f4de94
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 217366c4e7da2d4fc3b53b7cf32ef418916247d3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118479903"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622281"
 ---
 # <a name="creating-a-disk-cleanup-handler"></a>Crear un controlador de limpieza de disco
 
-Un axioma demostrado una vez y otra vez en el mundo de los equipos es que, independientemente del tamaño de la capacidad de almacenamiento del equipo, finalmente se rellenará. Aunque el tamaño medio del disco duro de un equipo ha aumentado drásticamente con el tiempo, las aplicaciones también han aumentado en consecuencia, lo que deja a los usuarios buscando formas de crear más espacio libre en disco duro. El espacio disponible también se reduce por los muchos archivos temporales que las aplicaciones crean por motivos de copia de seguridad o rendimiento. Cuando el espacio en disco es bajo, es necesario reducir la cantidad de espacio que usan las aplicaciones. El espacio en disco se puede liberar mediante una variedad de medios, incluidos los siguientes:
+Un axioma demostrado una vez y otra vez en el mundo de los equipos es que, independientemente del tamaño de la capacidad de almacenamiento del equipo, al final se llenará. Aunque el tamaño medio del disco duro de un equipo ha aumentado considerablemente con el tiempo, las aplicaciones también han crecido en consecuencia, lo que deja a los usuarios buscando formas de crear más espacio libre en disco duro. El espacio disponible también se reduce por los muchos archivos temporales que las aplicaciones crean por motivos de copia de seguridad o rendimiento. Cuando el espacio en disco es bajo, es necesario reducir la cantidad de espacio que usan las aplicaciones. El espacio en disco se puede liberar mediante diversos medios, incluidos los siguientes:
 
 -   Eliminando archivos.
 -   Comprimir archivos.
 -   Mover archivos a un medio de copia de seguridad.
--   Transferencia de archivos a un servidor remoto.
+-   Transferir archivos a un servidor remoto.
 
 Los archivos que son buenos candidatos para la limpieza incluyen:
 
@@ -39,7 +39,7 @@ Esperar que un usuario limpie manualmente el sistema de archivos no es una buena
 
 En este tema se de abordan las siguientes facetas de la utilidad Limpieza de disco.
 
--   [La utilidad Windows limpieza de disco](#the-windows-disk-cleanup-utility)
+-   [Utilidad Windows limpieza de disco](#the-windows-disk-cleanup-utility)
 -   [Conceptos básicos de implementación](#implementation-basics)
     -   [Initialize/InitializeEx](#initializeinitializeex)
     -   [GetSpaceUsed](#getspaceused)
@@ -47,49 +47,49 @@ En este tema se de abordan las siguientes facetas de la utilidad Limpieza de dis
     -   [Purgar](#purge)
     -   [Desactivación](#deactivate)
 -   [Registro de un controlador de limpieza de disco](#registering-a-disk-cleanup-handler)
-    -   [Registrar el CLSID de un controlador](#registering-a-handlers-clsid)
-    -   [Registro de un controlador con el Administrador de limpieza de disco: General](#registering-a-handler-with-the-disk-cleanup-manager-general)
-    -   [Registro de un controlador con el Administrador de limpieza de disco: Windows 2000 o sistemas posteriores](#registering-a-handler-with-the-disk-cleanup-manager-windows-2000-or-later-systems)
+    -   [Registro del CLSID de un controlador](#registering-a-handlers-clsid)
+    -   [Registro de un controlador con el Administrador de limpieza de discos: General](#registering-a-handler-with-the-disk-cleanup-manager-general)
+    -   [Registro de un controlador con el Administrador de limpieza de discos: Windows 2000 o sistemas posteriores](#registering-a-handler-with-the-disk-cleanup-manager-windows-2000-or-later-systems)
     -   [Usar el objeto DataDrivenCleaner](#using-the-datadrivencleaner-object)
     -   [Registro de ejemplo de un controlador de limpieza de disco](#example-registration-of-a-disk-cleanup-handler)
 
-## <a name="the-windows-disk-cleanup-utility"></a>La utilidad Windows limpieza de disco
+## <a name="the-windows-disk-cleanup-utility"></a>Utilidad Windows limpieza de disco
 
-A partir Windows 98, el sistema operativo Windows incluye Limpieza de disco, una utilidad que facilita al usuario la administración del espacio disponible en disco duro. La utilidad Limpieza de disco está diseñada para liberar tanto espacio en disco como sea posible y reducir el riesgo de que el usuario elimine accidentalmente los archivos esenciales.
+A partir de Windows 98, el sistema operativo Windows incluye Limpieza de disco, una utilidad que facilita al usuario la administración del espacio disponible en disco duro. La utilidad Limpieza de disco está diseñada para liberar tanto espacio en disco como sea posible y reducir el riesgo de que el usuario elimine accidentalmente los archivos esenciales.
 
 La limpieza del disco se puede iniciar de tres maneras.
 
--   El usuario puede iniciar la limpieza del disco haciendo clic **en Iniciar**; que apunta a **Todos los programas,** **Accesorios** y Herramientas **del sistema**; y, a continuación, **haga clic en Limpieza de disco.**
--   El sistema notifica al usuario con un cuadro de mensaje que el espacio en disco no utilizado ha alcanzado el modo crítico. El umbral de modo crítico para una unidad de más de 2,25 gigabytes (GB) es de 200 megabytes (MB). Las advertencias posteriores se dan a 80, 50 y 1 MB. El usuario tiene la opción de liberar espacio en disco manualmente o iniciar la utilidad Limpieza de disco.
--   El usuario puede hacer que Windows Asistente para tareas programadas (conocido como Asistente para mantenimiento en sistemas anteriores) ejecute automáticamente la utilidad Limpieza de disco en horas programadas.
+-   El usuario puede iniciar la limpieza de disco haciendo clic **en Iniciar**; que apunta a **Todos los programas,** **Accesorios** y Herramientas **del sistema**; y, a continuación, **hacer clic en Limpieza de disco.**
+-   El sistema notifica al usuario con un cuadro de mensaje que el espacio en disco no utilizado ha alcanzado el modo crítico. El umbral de modo crítico para una unidad de más de 2,25 gigabytes (GB) es de 200 megabytes (MB). Las advertencias posteriores se dan en 80, 50 y 1 MB. El usuario tiene la opción de liberar espacio en disco manualmente o iniciar la utilidad Limpieza de disco.
+-   El usuario puede hacer que Windows Asistente para tareas programadas (conocido como Asistente para mantenimiento en sistemas anteriores) ejecute la utilidad Limpieza de disco automáticamente en horas programadas.
 
-El desafío básico inherente a la limpieza de disco es liberar tanto espacio en disco como sea posible sin eliminar archivos esenciales. Dado que no hay ninguna manera estándar de marcar los archivos para la limpieza, ninguna aplicación puede detectar y limpiar todos los archivos no esenciales de forma confiable. La utilidad Limpieza de disco soluciona este problema dividiendo la operación de limpieza entre un único administrador *de limpieza* de disco y una colección de controladores de limpieza *de disco*.
+El desafío básico inherente a la limpieza de disco es liberar tanto espacio en disco como sea posible sin eliminar los archivos esenciales. Dado que no hay ninguna manera estándar de marcar los archivos para la limpieza, ninguna aplicación única puede detectar y limpiar de forma confiable todos los archivos no esenciales. La utilidad Limpieza de disco soluciona este problema  dividiendo la operación de limpieza entre un único administrador de limpieza de disco y una colección de controladores de *limpieza de disco*.
 
 Cuando se ejecuta la utilidad Limpieza de disco, el usuario ve el siguiente cuadro de diálogo. (Si hay más de una partición de disco o disco en el equipo, primero se pide al usuario que elija una unidad antes de que se muestre este cuadro de diálogo).
 
 ![captura de pantalla del cuadro de diálogo de limpieza](images/cleanup1.png)
 
-El administrador de limpieza de disco forma parte del sistema operativo. Muestra el cuadro de diálogo que se muestra en la ilustración anterior, controla la entrada del usuario y administra la operación de limpieza. La selección y limpieza reales de los archivos innecesarios se realiza mediante los controladores de limpieza de disco individuales que se muestran en el cuadro de lista del administrador de limpieza de disco. El usuario tiene la opción de habilitar o deshabilitar controladores individuales activando o desactivando su casilla en la interfaz de usuario del administrador de limpieza de discos.
+El administrador de limpieza de disco forma parte del sistema operativo. Muestra el cuadro de diálogo que se muestra en la ilustración anterior, controla la entrada del usuario y administra la operación de limpieza. La selección y limpieza reales de los archivos innecesarios se realiza mediante los controladores de limpieza de disco individuales que se muestran en el cuadro de lista del administrador de limpieza de discos. El usuario tiene la opción de habilitar o deshabilitar controladores individuales activando o desactivando su casilla en la interfaz de usuario del administrador de limpieza de discos.
 
-Cada controlador es responsable de un conjunto de archivos bien definido. Por ejemplo, el controlador seleccionado en la ilustración es responsable de limpiar los archivos de programa descargados. El controlador seleccionado en la ilustración también proporciona un **botón Ver** archivos. Al hacer clic en el botón, el usuario puede solicitar que el controlador muestre una interfaz de usuario normalmente una ventana del Explorador de Windows que permita al usuario especificar qué archivos o clases de archivos se deben limpiar.
+Cada controlador es responsable de un conjunto de archivos bien definido. Por ejemplo, el controlador seleccionado en la ilustración es responsable de limpiar los archivos de programa descargados. El controlador seleccionado en la ilustración también proporciona un **botón Ver** archivos. Al hacer clic en el botón, el usuario puede solicitar que el controlador muestre una interfaz de usuario normalmente una ventana del Explorador de Windows que permita al usuario especificar qué archivos o clases de archivos limpiar.
 
 Aunque Windows incluye varios controladores de limpieza de disco, no están diseñados para controlar los archivos generados por otras aplicaciones. En su lugar, el administrador de limpieza de disco está diseñado para ser flexible y extensible al permitir que cualquier desarrollador implemente y registre su propio controlador de limpieza de disco. Cualquier desarrollador puede ampliar los servicios de limpieza de disco disponibles implementando y registrando un controlador de limpieza de disco.
 
-Todas las aplicaciones que producen archivos temporales pueden y deben implementar y registrar un controlador de limpieza de disco. Esto proporciona a los usuarios una manera cómoda y confiable de administrar los archivos temporales de la aplicación. Al implementar el controlador, puede decidir qué archivos se ven afectados y determinar cómo se produce la limpieza real.
+Todas las aplicaciones que generan archivos temporales pueden y deben implementar y registrar un controlador de limpieza de disco. Esto proporciona a los usuarios una manera cómoda y confiable de administrar los archivos temporales de la aplicación. Al implementar el controlador, puede decidir qué archivos se ven afectados y determinar cómo se produce la limpieza real.
 
 ## <a name="implementation-basics"></a>Conceptos básicos de implementación
 
-Los controladores de limpieza son objetos del Modelo de objetos componentes (COM) del servidor en proceso. Windows proporciona un objeto de controlador existente denominado DataDrivenCleaner para su uso. También puede optar por implementar un controlador usted mismo para obtener más flexibilidad. Estos objetos permiten especificar cómo seleccionar archivos, liberar espacio en disco y, en el caso de un controlador implementado, mostrar la interfaz de usuario opcional para un control más pormenorizados. En esta sección se aborda la cuestión de implementar su propio controlador. Para obtener más información sobre el uso del objeto DataDrivenCleaner, vea [Usar el objeto DataDrivenCleaner](#using-the-datadrivencleaner-object).
+Los controladores de limpieza son objetos del Modelo de objetos componentes (COM) del servidor en proceso. Windows proporciona un objeto de controlador existente denominado DataDrivenCleaner para su uso. También puede optar por implementar un controlador usted mismo para obtener más flexibilidad. A continuación, estos objetos permiten especificar cómo seleccionar archivos, liberar espacio en disco y, en el caso de un controlador implementado, mostrar la interfaz de usuario opcional para un control más granular. En esta sección se aborda la cuestión de implementar su propio controlador. Para obtener más información sobre el uso del objeto DataDrivenCleaner, vea [Usar el objeto DataDrivenCleaner](#using-the-datadrivencleaner-object).
 
 Un controlador de limpieza de disco debe realizar estas cinco tareas básicas.
 
 -   Inicialice el objeto de controlador.
--   Examinar el disco para determinar cuánto espacio en disco se puede liberar.
--   Muestre la interfaz de usuario para obtener comentarios del usuario sobre los archivos que se deben limpiar. (Opcional)
+-   Analice el disco para determinar cuánto espacio en disco se puede liberar.
+-   Muestra la interfaz de usuario para obtener comentarios de los usuarios sobre los archivos que se deben limpiar. (Opcional)
 -   Realice la limpieza.
 -   Apagar.
 
-Para permitir que el administrador de limpieza de disco administre estas tareas, un controlador debe exportar [**IEmptyVolumeCache**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache) para Windows 98 o [**IEmptyVolumeCache2**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2) para Windows Millennium Edition (Windows Me), Windows 2000 y Windows XP. Dado **que IEmptyVolumeCache2** hereda de **IEmptyVolumeCache**, agregando solo el método adicional **InitializeEx**, se requiere relativamente poco trabajo adicional para implementar ambos. A menos que el controlador esté pensado solo para uno de estos sistemas operativos, debe exportar ambas interfaces.
+Para permitir que el administrador de limpieza de disco administre estas tareas, un controlador debe exportar [**IEmptyVolumeCache**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache) para Windows 98 o [**IEmptyVolumeCache2**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2) para Windows Edition Desenrículo (Windows Me), Windows 2000 y Windows XP. Dado **que IEmptyVolumeCache2** hereda de **IEmptyVolumeCache**, agregando solo el método adicional **InitializeEx**, se requiere relativamente poco trabajo adicional para implementar ambos. A menos que el controlador esté destinado solo a uno de estos sistemas operativos, debe exportar ambas interfaces.
 
 Para exportar estas interfaces, debe implementar estos métodos correspondientes a las cinco tareas básicas.
 
@@ -101,7 +101,7 @@ Para exportar estas interfaces, debe implementar estos métodos correspondientes
 
 ### <a name="initializeinitializeex"></a>Initialize/InitializeEx
 
-Cuando se ejecuta la utilidad Limpieza de disco, se llama a los dos métodos de inicialización, que son bastante similares. El Windows de limpieza de disco 98 llama al método [**IEmptyVolumeCache::Initialize de un**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) controlador. El administrador de limpieza de disco Windows Millennium Edition (Windows Me), Windows 2000 o Windows XP, sin embargo, primero intenta llamar a [**IEmptyVolumeCache2::InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) y solo usa **IEmptyVolumeCache::Initialize** si el controlador no expone [**IEmptyVolumeCache2.**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2) El administrador de limpieza de disco pasa información al método , como la clave del Registro del controlador y el volumen de disco que se va a limpiar.
+Se llama a los dos métodos de inicialización, que son bastante similares, cuando se ejecuta la utilidad Limpieza de disco. El Windows limpieza de disco 98 llama al método [**IEmptyVolumeCache::Initialize de un**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) controlador. El administrador de limpieza de discos Windows Millennium Edition (Windows Me), Windows 2000 o Windows XP, sin embargo, primero intenta llamar a [**IEmptyVolumeCache2::InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) y solo usa **IEmptyVolumeCache::Initialize** si el controlador no expone [**IEmptyVolumeCache2.**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2) El administrador de limpieza de disco pasa información al método , como la clave del Registro del controlador y el volumen de disco que se va a limpiar.
 
 Cualquiera de los métodos puede devolver varias cadenas de presentación y establecer una o varias marcas. La diferencia principal entre los dos métodos es cómo se controla el texto mostrado en el administrador de limpieza de disco. Las tres cadenas siguientes se ven afectadas.
 
@@ -109,7 +109,7 @@ Cualquiera de los métodos puede devolver varias cadenas de presentación y esta
 
 | String       | Propósito                                                                            | Inicialización                                                                           | InitializeEx                                                                                     |
 |--------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Display Name (Nombre para mostrar) | El nombre del controlador se muestra en el cuadro de lista del administrador de limpieza de discos.               | Si *ppwszDisplayName* es **NULL,** el valor predeterminado se recupera del Registro. | Una cadena localizada correctamente debe especificarse en *ppwszDisplayName* sin que se utilice ningún valor del Registro. |
+| Display Name (Nombre para mostrar) | El nombre del controlador se muestra en el cuadro de lista del administrador de limpieza de disco.               | Si *ppwszDisplayName* es **NULL,** el valor predeterminado se recupera del Registro. | Una cadena localizada correctamente debe especificarse en *ppwszDisplayName* sin que se utilice ningún valor del Registro. |
 | Descripción  | Texto descriptivo que se muestra debajo del cuadro de lista cuando se selecciona el nombre del controlador. | Si *ppwszDescription* es **NULL,** el valor predeterminado se recupera del Registro. | Una cadena localizada correctamente debe especificarse en *ppwszDescription,* no se usan valores del Registro. |
 | Texto del botón  | Texto del botón opcional que permite a los usuarios mostrar la interfaz de usuario del controlador.        | No hay ningún parámetro disponible. Debe especificarse en el Registro.                           | Una cadena localizada correctamente debe especificarse en *ppwszBtnText* sin que se utilicen valores del Registro.     |
 
@@ -121,7 +121,7 @@ El *parámetro pdwFlags* que se encuentra en ambos métodos de inicialización r
 
 -   **EVCF \_ SETTINGSMODE**
 
-    Si el administrador de limpieza de disco se ejecuta según una programación, establece la marca **EVCF \_ SETTINGSMODE.** Si se establece esta marca, el administrador de limpieza de disco no llama a los [métodos GetSpaceUsed,](#getspaceused) [Purge](#purge)o [ShowProperties.](#showproperties) El método [**Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) o [**InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) del controlador debe controlar todas las tareas que normalmente realizan [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) y [**Purge.**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-purge) Dado que no hay ninguna oportunidad para los comentarios de los usuarios, solo se deben tocar los archivos que son extremadamente seguros de limpiar. Debe omitir el parámetro *pcwszVolume* del método de inicialización y limpiar los archivos innecesarios independientemente de la unidad en la que se encuentran.
+    Si el administrador de limpieza de disco se ejecuta según una programación, establece la marca **EVCF \_ SETTINGSMODE.** Si se establece esta marca, el administrador de limpieza de disco no llama a los [métodos GetSpaceUsed,](#getspaceused) [Purge](#purge) [o ShowProperties.](#showproperties) El método [**Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) o [**InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) del controlador debe controlar todas las tareas que normalmente realizan [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) y [**Purge.**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-purge) Dado que no hay ninguna oportunidad para los comentarios de los usuarios, solo se deben tocar los archivos que son extremadamente seguros de limpiar. Debe omitir el parámetro *pcwszVolume* del método de inicialización y limpiar los archivos innecesarios independientemente de la unidad en la que se encuentran.
 
 -   **EVCF \_ OUTOFDISKSPACE**
 
@@ -135,7 +135,7 @@ El controlador de limpieza de disco establece las marcas restantes y se devuelve
 
 -   EVCF \_ ENABLEBYDEFAULT
 
-    Especifica que el controlador está habilitado de forma predeterminada. Se ejecutará cada vez que se lleve a cabo una limpieza de disco a menos que el usuario lo deshabilite desactivando su casilla en la lista de controladores del administrador de limpieza de discos.
+    Especifica que el controlador está habilitado de forma predeterminada. Se ejecutará cada vez que se lleve a cabo una limpieza de disco a menos que el usuario lo deshabilite desactivando la casilla en la lista de controladores del administrador de limpieza de discos.
 
 -   EVCF \_ ENABLEBYDEFAULT \_ AUTO
 
@@ -174,10 +174,10 @@ Se [**llama al método Deactivate**](/windows/desktop/api/Emptyvc/nf-emptyvc-iem
 
 ## <a name="registering-a-disk-cleanup-handler"></a>Registro de un controlador de limpieza de disco
 
-Para agregar un controlador a la lista del administrador de limpieza de disco, se deben agregar ciertas claves y valores al registro Windows disco.
+Para agregar un controlador a la lista del administrador de limpieza de discos, se deben agregar ciertas claves y valores al registro Windows disco.
 
 -   [Registro del CLSID de un controlador](#registering-a-handlers-clsid)
--   [Registro de un controlador con el Administrador de limpieza de disco: General](#registering-a-handler-with-the-disk-cleanup-manager-general)
+-   [Registro de un controlador con el Administrador de limpieza de discos: General](#registering-a-handler-with-the-disk-cleanup-manager-general)
 -   [Registro de un controlador con el Administrador de limpieza de discos: Windows 2000 o sistemas posteriores](#registering-a-handler-with-the-disk-cleanup-manager-windows-2000-or-later-systems)
 -   [Usar el objeto DataDrivenCleaner](#using-the-datadrivencleaner-object)
 -   [Registro de ejemplo de un controlador de limpieza de disco](#example-registration-of-a-disk-cleanup-handler)
@@ -197,7 +197,7 @@ HKEY_CLASSES_ROOT
             ThreadingModel = Apartment
 ```
 
-### <a name="registering-a-handler-with-the-disk-cleanup-manager-general"></a>Registro de un controlador con el Administrador de limpieza de disco: General
+### <a name="registering-a-handler-with-the-disk-cleanup-manager-general"></a>Registro de un controlador con el Administrador de limpieza de discos: General
 
 Para completar el registro, un controlador debe agregar una clave que mantiene sus detalles, como se muestra aquí. En el resto de esta sección se describe el contenido de esta clave.
 
@@ -223,20 +223,20 @@ En general, el nombre de la clave que mantiene los detalles de un controlador se
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor</th>
+<th>Value</th>
 <th>Tipo</th>
 <th>Significado</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Valor predeterminado</td>
+<td>Predeterminado</td>
 <td>REG_SZ</td>
 <td>CLSID del controlador registrado en <strong>HKEY_CLASSES_ROOT</strong> \ <strong>CLSID</strong>.</td>
 </tr>
@@ -257,19 +257,19 @@ En general, el nombre de la clave que mantiene los detalles de un controlador se
 <ul>
 <li>El valor CSIDL se especifica como 0x0000000d (CSIDL_MYMUSIC)</li>
 <li>La carpeta My Música se encuentra en C:\Documents and Configuración\<em>username</em>\My Música</li>
-<li>El valor folder contiene &quot; Jazz\Ahora&quot;</li>
+<li>El valor De carpeta contiene &quot; Jazz\Lodos.&quot;</li>
 </ul>
 El resultado de ese escenario es que el controlador de limpieza de disco busca en la carpeta C:\Documents and Configuración\<em>username</em>\My Música\Jazz\Usernames. Tenga en cuenta que la barra diagonal que precede al valor carpeta se agrega si no está presente.<br/></td>
 </tr>
 <tr class="odd">
 <td>Descripción</td>
 <td>REG_SZ</td>
-<td>Texto descriptivo que se muestra debajo del cuadro de lista del administrador de limpieza de discos cuando se selecciona el nombre del controlador. Aquí puede explicar lo que hace el controlador, los archivos con los que se preocupa y cualquier otra información que elucidatory para el usuario. Si el controlador no expone <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx,</strong></a> este texto se puede invalidar mediante el método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> del controlador especificando una cadena alternativa en el <em>parámetro ppwszDescription</em> cuando se llama al método .</td>
+<td>Texto descriptivo que se muestra debajo del cuadro de lista del administrador de limpieza de discos cuando se selecciona el nombre del controlador. Aquí puede explicar lo que hace el controlador, los archivos con los que se preocupa y cualquier otra información que elucidatory para el usuario. Si el controlador no expone <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx,</strong></a> este texto se puede invalidar mediante el método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> del controlador especificando una cadena alternativa en el parámetro <em>ppwszDescription</em> cuando se llama al método .</td>
 </tr>
 <tr class="even">
 <td>Mostrar</td>
 <td>REG_SZ</td>
-<td>Nombre del controlador que se va a mostrar en el cuadro de lista del administrador de limpieza de disco. Si el controlador no expone <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx,</strong></a> este texto se puede invalidar mediante el método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> del controlador especificando una cadena alternativa en el <em>parámetro ppwszDisplayName</em> cuando se llama al método .</td>
+<td>Nombre del controlador que se va a mostrar en el cuadro de lista del administrador de limpieza de disco. Si el controlador no expone <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx,</strong></a> este texto se puede invalidar mediante el método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> del controlador especificando una cadena alternativa en el parámetro <em>ppwszDisplayName</em> cuando se llama al método .</td>
 </tr>
 <tr class="odd">
 <td>Filelist</td>
@@ -287,7 +287,7 @@ El resultado de ese escenario es que el controlador de limpieza de disco busca e
 <li>DDEVCF_REMOVESYSTEM (0x00000008). Quite los archivos que cumplan los criterios de búsqueda incluso si son archivos del sistema.</li>
 <li>DDEVCF_REMOVEHIDDEN (0x00000010). Quite los archivos que cumplan los criterios de búsqueda incluso si son archivos ocultos.</li>
 <li>DDEVCF_DONTSHOWIFZERO (0x00000020). No muestre este controlador en el administrador de limpieza de disco si ningún archivo coincide con sus criterios de búsqueda.</li>
-<li>DDEVCF_REMOVEDIRS (0x00000040). Haga coincidir el valor fileList con los directorios y quite las coincidencias y todos sus subdirectorios.</li>
+<li>DDEVCF_REMOVEDIRS (0x00000040). Haga coincidir el valor de FileList con los directorios y quite las coincidencias y todos sus subdirectorios.</li>
 <li>DDEVCF_RUNIFOUTOFDISKSPACE (0x00000080). Ejecute este controlador solo si el espacio en disco disponible ha quedado por debajo del valor crítico, determinado por el administrador de limpieza de disco que establece la marca EVCF_OUTOFDISKSPACE a través de <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> o <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx</strong></a>.</li>
 <li>DDEVCF_REMOVEPARENTDIR (0x00000100). Quite el directorio primario de los archivos especificados una vez que se haya ejecutado el limpiador.</li>
 <li>DDEVCF_PRIVATE_LASTACCESS (0x10000000). Use el valor LastAccess, si se proporciona, para determinar qué archivos se deben limpiar. Esta marca se omite cuando se usa <a href="#using-the-datadrivencleaner-object">DataDrivenCleaner</a> siempre se usa cualquier valor de LastAccess proporcionado.</li>
@@ -296,7 +296,7 @@ El resultado de ese escenario es que el controlador de limpieza de disco busca e
 <tr class="odd">
 <td>Carpeta</td>
 <td>REG_SZ, REG_MULTI_SZ o REG_EXPAND_SZ</td>
-<td>Carpetas o carpetas específicas para buscar elementos que coincidan con las entradas del valor FileList. Puede especificar caracteres comodín mediante ? o * caracteres. Si el valor es de tipo REG_SZ, se separan varios nombres de carpeta mediante el | carácter, sin espacios a ambos lados.<br/> Si hay un valor CSIDL presente, solo se puede especificar una carpeta en este valor. La ubicación indicada por el valor CSIDL se antepone a esa ruta de acceso de carpeta para crear una ruta de búsqueda. Para obtener un ejemplo, vea la descripción del valor CSIDL.<br/> Si este valor no está presente en Windows Vista Service Pack 1 (SP1) y versiones posteriores, el controlador de limpieza se omite y devuelve S_FALSE la inicialización.<br/> Si este valor no está presente en la versión original de Windows Vista y versiones anteriores, se usa la carpeta raíz del volumen actual. La DDEVCF_DOSUBDIRS es necesaria en ese caso para buscar en toda la unidad. Sin ella, solo se busca en la propia carpeta raíz.<br/> Se debe especificar una unidad o unidades. Esto se puede proporcionar a través del valor CSIDL o a través de una REG_EXPAND_SZ cadena. Sin embargo, si se barran esas opciones, la unidad que se va a buscar debe especificarse en el nombre de la carpeta. Use ?: para buscar en la carpeta de la unidad actual.<br/></td>
+<td>Carpetas o carpetas específicas para buscar elementos que coincidan con las entradas del valor FileList. Puede especificar caracteres comodín mediante ? o * caracteres. Si el valor es de tipo REG_SZ, se separan varios nombres de carpeta mediante el | carácter, sin espacios a ambos lados.<br/> Si hay un valor CSIDL presente, solo se puede especificar una carpeta en este valor. La ubicación indicada por el valor CSIDL se antepone a esa ruta de acceso de carpeta para crear una ruta de búsqueda. Para obtener un ejemplo, vea la descripción del valor CSIDL.<br/> Si este valor no está presente en Windows Vista Service Pack 1 (SP1) y versiones posteriores, el controlador de limpieza se omite y devuelve S_FALSE en la inicialización.<br/> Si este valor no está presente en la versión original de Windows Vista y versiones anteriores, se usa la carpeta raíz del volumen actual. La DDEVCF_DOSUBDIRS es necesaria en ese caso para buscar en toda la unidad. Sin ella, solo se busca en la propia carpeta raíz.<br/> Se debe especificar una unidad o unidades. Esto se puede proporcionar a través del valor CSIDL o a través de una REG_EXPAND_SZ cadena. Sin embargo, si se barrasen esas opciones, la unidad de búsqueda debe especificarse en el nombre de la carpeta. Use ?: para buscar en la carpeta de la unidad actual.<br/></td>
 </tr>
 <tr class="even">
 <td>IconPath</td>
@@ -321,12 +321,12 @@ El resultado de ese escenario es que el controlador de limpieza de disco busca e
 <tr class="even">
 <td>StateFlags</td>
 <td>REG_DWORD</td>
-<td>Al ejecutar el archivo ejecutable del administrador de limpieza de Cleanmgr.exe desde una línea de comandos, puede declarar <em>perfiles de limpieza</em>. Estos perfiles se componen de un subconjunto de los controladores disponibles y reciben una etiqueta numérica única. Esto le permite automatizar la ejecución de diferentes conjuntos de controladores en momentos diferentes.<br/> La línea de &quot; comandoscleanmgr.exe /sageset:<strong>nnnn</strong>, donde &quot; <strong>nnnn</strong> es una etiqueta numérica única, muestra una interfaz de usuario que le permite elegir los controladores que se incluirán en ese perfil. Además de definir el perfil, el parámetro sageset también escribe un valor denominado StateFlags<strong>nnnn,</strong>donde <strong>nnnn</strong> es la etiqueta que usó en el parámetro , en todas las subclaves de <strong>VolumeCaches</strong>. Hay dos valores de datos posibles para esas entradas.
+<td>Al ejecutar el archivo ejecutable del administrador de limpieza de Cleanmgr.exe desde una línea de comandos, puede declarar <em>perfiles de limpieza</em>. Estos perfiles se componen de un subconjunto de los controladores disponibles y reciben una etiqueta numérica única. Esto le permite automatizar la ejecución de diferentes conjuntos de controladores en momentos diferentes.<br/> La línea de &quot; comandoscleanmgr.exe /sageset:<strong>nnnn</strong>, donde &quot; <strong>nnnn</strong> es una etiqueta numérica única, muestra una interfaz de usuario que permite elegir los controladores que se incluirán en ese perfil. Además de definir el perfil, el parámetro sageset también escribe un valor denominado StateFlags<strong>nnnn,</strong>donde <strong>nnnn</strong> es la etiqueta que usó en el parámetro , en todas las subclaves de <strong>VolumeCaches</strong>. Hay dos valores de datos posibles para esas entradas.
 <ul>
 <li>0: No ejecute este controlador cuando se ejecute este perfil.</li>
 <li>2: Incluya este controlador cuando se ejecute este perfil.</li>
 </ul>
-<br/> Por ejemplo, supongamos que se ejecuta &quot; lacleanmgr.exe de comandoscleanmgr.exe /sageset:1234. &quot; En la interfaz de usuario que se presenta, el usuario elige Archivos de <strong>programa descargados,</strong>pero no archivos <strong>temporales de Internet.</strong> A continuación, los siguientes valores se escriben en el Registro.<br/>
+<br/> Por ejemplo, supongamos que se ejecuta &quot; lacleanmgr.exe de comandos de /sageset:1234. &quot; En la interfaz de usuario que se presenta, el usuario elige Archivos de <strong>programa descargados,</strong>pero no archivos <strong>temporales de Internet.</strong> A continuación, los siguientes valores se escriben en el Registro.<br/>
 <pre data-space="preserve"><code>HKEY_LOCAL_MACHINE
    Software
       Microsoft
@@ -341,7 +341,7 @@ El resultado de ese escenario es que el controlador de limpieza de disco busca e
 <br/> La línea de &quot; comandoscleanmgr.exe /sagerun:<strong>nnnn</strong>, donde el valor de &quot; <strong>nnnn coincide</strong> con la etiqueta declarada con el parámetro sageset, ejecuta todos los controladores seleccionados en ese perfil.<br/> Un valor StateFlags genérico se escribe en el Registro cuando la limpieza de disco se ejecuta con normalidad. Este valor simplemente almacena el estado (activado o desactivado) del controlador la última vez que se presentó como una opción para el usuario. Hay dos valores de datos posibles para esas entradas.
 <ul>
 <li>0: no se seleccionó el controlador.</li>
-<li>1: se ha seleccionado el controlador.</li>
+<li>1: se seleccionó el controlador.</li>
 </ul>
 <br/></td>
 </tr>
@@ -354,7 +354,7 @@ El resultado de ese escenario es que el controlador de limpieza de disco busca e
 
 ### <a name="registering-a-handler-with-the-disk-cleanup-manager-windows-2000-or-later-systems"></a>Registro de un controlador con el Administrador de limpieza de discos: Windows 2000 o sistemas posteriores
 
-Especificar texto para mostrar en el Registro puede dificultar la localización del software. Por este motivo, Windows 2000 y Windows XP admiten la interfaz [**IEmptyVolumeCache2**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2) con su método de inicialización preferido [**InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex). En Windows 2000 o posterior, siempre se intenta llamar a **IEmptyVolumeCache2::InitializeEx** antes de [**IEmptyVolumeCache::Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize). El sistema solo usa **Initialize** para inicializar un controlador si no se expone **IEmptyVolumeCache2.**
+Especificar texto para mostrar en el Registro puede dificultar la localización del software. Por este motivo, Windows 2000 y Windows XP admiten la interfaz [**IEmptyVolumeCache2**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2) con su método de inicialización [**preferido InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex). En Windows 2000 o posterior, siempre se intenta llamar a **IEmptyVolumeCache2::InitializeEx** antes de [**IEmptyVolumeCache::Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize). El sistema solo usa **Initialize** para inicializar un controlador si no se expone **IEmptyVolumeCache2.**
 
 Con respecto al Registro, la única diferencia en Windows 2000 o posterior es que puede omitir los valores AdvancedButtonText, Display y Description cuando el controlador expone [**IEmptyVolumeCache2::InitializeEx.**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) Esos valores, que contienen texto localizado correctamente, se proporcionan al administrador de limpieza de disco cuando llama **a InitializeEx**.
 

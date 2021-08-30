@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_MIM_CLOSE (mmsystem. h)
-description: El mensaje de cierre de MIM de MM \_ \_ se envía a una ventana cuando se cierra un dispositivo de entrada MIDI.
+title: MM_MIM_CLOSE mensaje (Mmsystem.h)
+description: El mensaje MM \_ MIM CLOSE se envía a una ventana cuando se cierra un dispositivo de entrada DE \_ LÍNEA.
 ms.assetid: 261021aa-4df6-44d8-aad3-5f98b1213459
 keywords:
-- Mensaje de MM_MIM_CLOSE de Windows multimedia
+- MM_MIM_CLOSE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8ce511365b1faa49faefaf4ed25c5b8befb2288
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87e1ee579f09fbd379f1fa353d602657194b0848d040210a713d0492a7e42311
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807395"
 ---
-# <a name="mm_mim_close-message"></a>Mensaje de cierre de MM \_ MIM \_
+# <a name="mm_mim_close-message"></a>Mensaje MM \_ MIM \_ CLOSE
 
-El mensaje de **\_ \_ cierre de MIM de mm** se envía a una ventana cuando se cierra un dispositivo de entrada MIDI.
+El **mensaje MM MIM \_ \_ CLOSE** se envía a una ventana cuando se cierra un dispositivo de entrada DE LÍNEA.
 
 
 ```C++
@@ -41,34 +41,34 @@ lParam = reserved
 <span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*
 </dt> <dd>
 
-Identificador del dispositivo de entrada MIDI que se cerró.
+Identificador del dispositivo de entrada DE LÍNEA que se ha cerrado.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Sector No use.
+Reservado; no use.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El identificador de dispositivo ya no es válido después de enviar este mensaje.
+El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ El identificador de dispositivo ya no es válido después de enviar este mensaje
 [Interfaz digital de instrumentos digitales (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
-[Mensajes MIDI](midi-messages.md)
+[Mensajes DE MIDI](midi-messages.md)
 </dt> </dl>
 
  

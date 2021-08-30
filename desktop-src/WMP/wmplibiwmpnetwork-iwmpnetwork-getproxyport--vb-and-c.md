@@ -1,11 +1,11 @@
 ---
-title: IWMPNetwork getProxyPort, método
-description: El método getProxyPort devuelve el puerto del proxy que se está usando.
+title: Método IWMPNetwork getProxyPort
+description: El método getProxyPort devuelve el puerto de proxy que se está utilizando.
 ms.assetid: fc94f3a9-458d-410c-98e9-a34be6e08c52
 keywords:
-- método getProxyPort de Windows Media Player
-- método getProxyPort Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, método getProxyPort
+- Método getProxyPort Reproductor de Windows Media
+- Método getProxyPort Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media método , getProxyPort
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46fb388c2740e709e75579c01d216af677a826c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c59186ed06b1669ead0727c618f01bcb937ff5f6e32454f6e7a1678499803cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999955"
 ---
-# <a name="iwmpnetworkgetproxyport-method"></a>IWMPNetwork:: getProxyPort (método)
+# <a name="iwmpnetworkgetproxyport-method"></a>IWMPNetwork::getProxyPort (método)
 
-El método **getProxyPort** devuelve el puerto del proxy que se está usando.
+El **método getProxyPort** devuelve el puerto de proxy que se está utilizando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,24 +53,24 @@ Implements IWMPNetwork.getProxyPort
 
 <dl> <dt>
 
-*bstrProtocol* \[ de\]
+*bstrProtocol* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**System.String que** es el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. Int32** que es el puerto del proxy que se está usando. El valor solo es significativo cuando **IWMPNetwork. getProxySettings** devuelve un valor de 2 (use la configuración manual).
+**System.Int32** que es el puerto de proxy que se usa. El valor solo es significativo cuando **IWMPNetwork.getProxySettings** devuelve un valor de 2 (use la configuración manual).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **getProxyPort** para mostrar los números de puerto de proxy de Windows Media Player actuales para los protocolos MMS y http. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa getProxyPort** para mostrar los números de puerto Reproductor de Windows Media proxy actuales para los protocolos MMS y HTTP. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -135,7 +135,7 @@ proxyPortText.Lines = proxyPorts
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -148,10 +148,10 @@ proxyPortText.Lines = proxyPorts
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setProxyPort (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxyport--vb-and-c.md)
+[**IWMPNetwork.setProxyPort (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxyport--vb-and-c.md)
 </dt> </dl>
 
  

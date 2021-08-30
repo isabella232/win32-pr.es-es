@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_SETOWNER (VFW. h)
-description: El \_ mensaje MCIWNDM SETOWNER establece la ventana para recibir los mensajes de notificación asociados a la ventana MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetOwner.
+title: MCIWNDM_SETOWNER mensaje (Vfw.h)
+description: El mensaje SETOWNER de MCIWNDM \_ establece la ventana para recibir mensajes de notificación asociados a la ventana MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetOwner.
 ms.assetid: c2d0f9d5-bf60-4036-a613-65ba1ed83110
 keywords:
-- Mensaje de MCIWNDM_SETOWNER de Windows multimedia
+- MCIWNDM_SETOWNER mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3989632e83a65cda5e805bd91da3f502ca387d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a45fb1f7893641fe1e1f4f0bb2e79b31f33c465811e9dec83869af90d819414
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807755"
 ---
-# <a name="mciwndm_setowner-message"></a>MCIWNDM \_ SETOWNER
+# <a name="mciwndm_setowner-message"></a>Mensaje SETOWNER de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ SETOWNER** establece la ventana para recibir los mensajes de notificación asociados a la ventana MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetOwner**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetowner) .
+El **mensaje \_ SETOWNER de MCIWNDM** establece la ventana para recibir mensajes de notificación asociados a la ventana MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetOwner.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetowner)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = 0;
 <span id="hwndP"></span><span id="hwndp"></span><span id="HWNDP"></span>*hwndP*
 </dt> <dd>
 
-Identificador de la ventana para recibir los mensajes de notificación.
+Identificador en la ventana para recibir los mensajes de notificación.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Devuelve cero.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

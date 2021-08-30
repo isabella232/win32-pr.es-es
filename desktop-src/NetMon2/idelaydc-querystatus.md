@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 13d1e34b57302d263b81ed64df0b136dc01177b2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 623601fc295c0f4bf91539c222e7c4986f35010a120086380d06d496a7756b92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910495"
 ---
 # <a name="idelaydcquerystatus-method"></a>IDelaydC::QueryStatus (método)
 
@@ -73,7 +73,7 @@ Antes de llamar a este método, debe asignar la memoria necesaria para la estruc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -82,7 +82,7 @@ Antes de llamar a este método, debe asignar la memoria necesaria para la estruc
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

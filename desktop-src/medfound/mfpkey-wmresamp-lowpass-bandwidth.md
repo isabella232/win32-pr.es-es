@@ -1,19 +1,19 @@
 ---
-description: Especifica el ancho de banda del filtro de paso bajo como porcentaje de la velocidad de muestra de destino.
+description: Especifica el ancho de banda de filtro de paso bajo, como porcentaje de la frecuencia de muestreo de destino.
 ms.assetid: 7d9b5949-2d9e-436a-9e44-61c6fc86f973
-title: Propiedad MFPKEY_WMRESAMP_LOWPASS_BANDWIDTH (Wmcodecdsp. h)
+title: MFPKEY_WMRESAMP_LOWPASS_BANDWIDTH propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a419c713f7172aa61f828af416d4807435d87797
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f6121ac9c5e755bd1d7b4a3584c1cb1a363ee5a3606d1e565be7caff7b0247f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953265"
 ---
-# <a name="mfpkey_wmresamp_lowpass_bandwidth-property"></a>\_Propiedad de \_ ancho de \_ banda paso bajo de MFPKEY WMRESAMP
+# <a name="mfpkey_wmresamp_lowpass_bandwidth-property"></a>Propiedad LOWPASS BANDWIDTH de MFPKEY \_ WMRESAMP \_ \_
 
-Especifica el ancho de banda del filtro de paso bajo como porcentaje de la velocidad de muestra de destino.
+Especifica el ancho de banda de filtro de paso bajo, como porcentaje de la frecuencia de muestreo de destino.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -25,11 +25,11 @@ VT \_ R4
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [DSP de remuestreador de audio](audioresampler.md)
+-   [Audio Resampler DSP](audioresampler.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El intervalo válido de esta propiedad es de 0,0 a 1,0, ambos inclusive.
+El intervalo válido de esta propiedad es de 0,0 a 1,0, ambos inclusive
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ El intervalo válido de esta propiedad es de 0,0 a 1,0, ambos inclusive.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ El intervalo válido de esta propiedad es de 0,0 a 1,0, ambos inclusive.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVariable assampler (D3dx11effect. h)
-description: Obtiene una variable de muestra.
+title: Método ID3DX11EffectVariable AsSampler (D3dx11effect.h)
+description: Obtenga una variable sampler.
 ms.assetid: dff699f7-758a-442b-93eb-23a09468251f
 keywords:
-- Método assampler Direct3D 11
-- Método assampler Direct3D 11, ID3DX11EffectVariable (interfaz)
-- Interfaz ID3DX11EffectVariable Direct3D 11, método assampler
+- Método AsSampler Direct3D 11
+- Método AsSampler Direct3D 11, interfaz ID3DX11EffectVariable
+- Interfaz ID3DX11EffectVariable Direct3D 11 , método AsSampler
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1213320950377f6981348a158c3d8c8ef4d4fd0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7a6c71e8e2cdc89860c8edf82a0c008c03f4a154ab23cee882ed1e9eaaad2939
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894605"
 ---
-# <a name="id3dx11effectvariableassampler-method"></a>ID3DX11EffectVariable:: assampler (método)
+# <a name="id3dx11effectvariableassampler-method"></a>Método ID3DX11EffectVariable::AsSampler
 
-Obtiene una variable de muestra.
+Obtenga una variable sampler.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,16 +45,16 @@ Este método no tiene parámetros.
 
 Tipo: **[ **ID3DX11EffectSamplerVariable**](id3dx11effectsamplervariable.md)\***
 
-Puntero a una variable de muestra. Vea [**ID3DX11EffectSamplerVariable**](id3dx11effectsamplervariable.md).
+Puntero a una variable sampler. Vea [**ID3DX11EffectSamplerVariable.**](id3dx11effectsamplervariable.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El demuestreador devuelve una versión de la variable de efecto que se ha especializado para una variable de muestra. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de muestra.
+AsSampler devuelve una versión de la variable de efecto que se ha especializado en una variable sampler. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de sampler.
 
-Las aplicaciones pueden probar la validez del objeto devuelto mediante una llamada a [**IsValid**](id3dx11effectvariable-isvalid.md).
+Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsValid.**](id3dx11effectvariable-isvalid.md)
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,8 +64,8 @@ Las aplicaciones pueden probar la validez del objeto devuelto mediante una llama
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

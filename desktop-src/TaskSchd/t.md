@@ -5,61 +5,61 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: d4c6d7ba-7bca-420d-a4dc-4daea816f99c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2730cdbe3a13456aed0e613a614d43a0e56e6673
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: d9a5ce6b99cb9c21ffa1eefa2d58462b4b15af235f9eda85ce34cc103f6c598e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104533669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033945"
 ---
 # <a name="t-task-scheduler"></a>T (Programador de tareas)
 
-A B C D [E](e.md) F G H [I](i.md) J K L M N o [p](p.md) Q R [s](s.md) T U V [W](w.md) X Y Z
+A B C D [E](e.md) F G H [I](i.md) J K L M N O [P](p.md) Q R [S](s.md) T U V [W](w.md) X Y Z
 
 <dl> <dt>
 
-<span id="_msb_task_objects_gly"></span><span id="_MSB_TASK_OBJECTS_GLY"></span>**objetos de tarea**
+<span id="_msb_task_objects_gly"></span><span id="_MSB_TASK_OBJECTS_GLY"></span>**objetos task**
 </dt> <dd>
 
-Instancias de un objeto que proporciona métodos para administrar tareas. Esto incluye métodos para establecer y recuperar propiedades; ejecutar, terminar y eliminar tareas; y la creación de desencadenadores nuevos y la recuperación de los desencadenadores anteriores.
+Instancias de un objeto que proporciona métodos para administrar tareas. Esto incluye métodos para establecer y recuperar propiedades; ejecutar, terminar y eliminar tareas; y crear nuevos desencadenadores y recuperar desencadenadores antiguos.
 
-El objeto de tarea se crea mediante llamadas a [**IScheduledWorkItem:: CreateTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-createtrigger) y [**IScheduledWorkItem:: GetTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-gettrigger).
+El objeto de tarea se crea mediante llamadas a [**IScheduledWorkItem::CreateTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-createtrigger) e [**IScheduledWorkItem::GetTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-gettrigger).
 
 </dd> <dt>
 
 <span id="_msb_task_scheduler_objects_gly"></span><span id="_MSB_TASK_SCHEDULER_OBJECTS_GLY"></span>**objetos del programador de tareas**
 </dt> <dd>
 
-Instancias de un objeto que representa el servicio Programador de tareas. Este objeto admite dos interfaces: **IUnknown** y [**ITaskScheduler**](/windows/desktop/api/Mstask/nn-mstask-itaskscheduler) (actualmente, las tareas son el único tipo de elementos de trabajo admitidos por el servicio Programador de tareas).
+Instancias de un objeto que representa el Programador de tareas servicio. Este objeto admite dos interfaces: **IUnknown** e [**ITaskScheduler**](/windows/desktop/api/Mstask/nn-mstask-itaskscheduler) (actualmente, las tareas son el único tipo de elementos de trabajo admitidos por el servicio Programador de tareas trabajo).
 
-Los objetos del programador de tareas se crean mediante llamadas a **CoCreateInstance**.
+Los objetos del programador de tareas se crean mediante llamadas **a CoCreateInstance**.
 
 </dd> <dt>
 
-<span id="_msb_task_trigger_objects_gly"></span><span id="_MSB_TASK_TRIGGER_OBJECTS_GLY"></span>**objetos de desencadenador de tarea**
+<span id="_msb_task_trigger_objects_gly"></span><span id="_MSB_TASK_TRIGGER_OBJECTS_GLY"></span>**objetos de desencadenador de tareas**
 </dt> <dd>
 
-Instancias de un objeto que proporciona métodos para establecer y recuperar desencadenadores de tareas. Este objeto admite dos interfaces: **IUnknown** y [**ITaskTrigger**](/windows/desktop/api/Mstask/nn-mstask-itasktrigger).
+Instancias de un objeto proporciona métodos para establecer y recuperar desencadenadores de tareas. Este objeto admite dos interfaces: **IUnknown** e [**ITaskTrigger.**](/windows/desktop/api/Mstask/nn-mstask-itasktrigger)
 
-Los objetos de desencadenador de tarea se crean mediante llamadas a [**IScheduledWorkItem:: CreateTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-createtrigger) y [**IScheduledWorkItem:: GetTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-gettrigger).
+Los objetos de desencadenador de tareas se crean mediante llamadas a [**IScheduledWorkItem::CreateTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-createtrigger) e [**IScheduledWorkItem::GetTrigger**](/windows/desktop/api/Mstask/nf-mstask-ischeduledworkitem-gettrigger).
 
 Vea también: *desencadenadores*.
 
 </dd> <dt>
 
-<span id="_msb_tasks_gly"></span><span id="_MSB_TASKS_GLY"></span>**tareas**
+<span id="_msb_tasks_gly"></span><span id="_MSB_TASKS_GLY"></span>**Tareas**
 </dt> <dd>
 
-Cualquier elemento que el Programador de tareas pueda ejecutar. Estos elementos pueden incluir cualquiera de los siguientes (tal y como lo admite el sistema operativo en el que se ejecutará la tarea): Win32® aplicaciones, aplicaciones de Win16, sistema operativo/2, aplicaciones de® de MS-DOS, archivos por lotes ( \* . bat), archivos de comandos ( \* . cmd) o cualquier tipo de archivo registrado correctamente.
+Cualquier elemento que el Programador de tareas puede ejecutar. Estos elementos pueden incluir cualquiera de los siguientes elementos (según sea compatible con el sistema operativo en el que se ejecutará la tarea): aplicaciones Win32®, aplicaciones Win16, aplicaciones de sistema operativo/2, aplicaciones MS-DOS®, archivos por lotes (.bat), archivos de comandos \* (.cmd) o cualquier tipo de archivo registrado \* correctamente.
 
 </dd> <dt>
 
-<span id="_msb_tasks_folder_gly"></span><span id="_MSB_TASKS_FOLDER_GLY"></span>**Carpeta tareas**
+<span id="_msb_tasks_folder_gly"></span><span id="_MSB_TASKS_FOLDER_GLY"></span>**Carpeta Tasks**
 </dt> <dd>
 
-La carpeta en la que se enumeran todos los archivos de tareas (actualmente, las tareas son los únicos elementos de trabajo disponibles). Estos archivos contienen la información sobre la tarea. El nombre de estos archivos refleja el nombre de la tarea.
+Carpeta que enumera todos los archivos de tareas (actualmente, las tareas son los únicos elementos de trabajo disponibles). Estos archivos contienen la información sobre la tarea. El nombre de estos archivos refleja el nombre de la tarea.
 
-Puede recuperar la ubicación de la carpeta de tareas del registro obteniendo datos para el valor siguiente:
+Puede recuperar la ubicación de la carpeta Tasks del Registro obteniendo datos para el siguiente valor:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -71,24 +71,24 @@ HKEY_LOCAL_MACHINE
 
 </dd> <dt>
 
-<span id="_msb_triggers_gly"></span><span id="_MSB_TRIGGERS_GLY"></span>**desencadenadores**
+<span id="_msb_triggers_gly"></span><span id="_MSB_TRIGGERS_GLY"></span>**desencadenantes**
 </dt> <dd>
 
-Un conjunto de criterios que, cuando se cumplen, provocarán la ejecución de una tarea. Programador de tareas proporciona desencadenadores basados en el tiempo y en eventos que pueden especificar las horas de inicio de la tarea, los criterios de repetición y otros parámetros.
+Conjunto de criterios que, cuando se cumplan, harán que se ejecute una tarea. Programador de tareas proporciona desencadenadores basados en el tiempo y basados en eventos que pueden especificar horas de inicio de tareas, criterios de repetición y otros parámetros.
 
 </dd> <dt>
 
 <span id="_msb_trigger_strings_gly"></span><span id="_MSB_TRIGGER_STRINGS_GLY"></span>**cadenas de desencadenador**
 </dt> <dd>
 
-Cadena que describe el desencadenador. Esta cadena la crea el servicio de Programador de tareas y aparece en la Programador de tareas interfaz de usuario en un formulario similar a "a las 14:00 días, a partir del 5/11/97".
+Cadena que describe el desencadenador. Esta cadena la crea el servicio Programador de tareas y aparece en la interfaz de usuario de Programador de tareas con un formato similar a "A las 2 p. m. todos los días, a partir del 11/5/97".
 
 </dd> <dt>
 
 <span id="_msb_trigger_structures_gly"></span><span id="_MSB_TRIGGER_STRUCTURES_GLY"></span>**estructuras de desencadenador**
 </dt> <dd>
 
-Estructura [**del \_ desencadenador**](/windows/desktop/api/Mstask/ns-mstask-task_trigger) de la tarea que se usa al establecer o recuperar los criterios que definen el desencadenador. Los criterios incluyen Cuándo se activará el desencadenador y el tipo del desencadenador.
+Estructura [**TASK \_ TRIGGER**](/windows/desktop/api/Mstask/ns-mstask-task_trigger) usada al establecer o recuperar los criterios que definen el desencadenador. Los criterios incluyen cuándo se activará el desencadenador y el tipo del desencadenador.
 
 </dd> </dl>
 

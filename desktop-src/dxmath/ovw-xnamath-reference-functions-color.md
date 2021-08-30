@@ -4,12 +4,12 @@ ms.assetid: 857e2aed-d082-d990-1c67-e22ce3d07310
 title: Funciones de color de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d3cc7870012da5aa016bb1a353e8eacc85eda8
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 1004ac944e9d5857c0a75c16be71a0d308a1dbf0f107150185963477002b8758
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979395"
 ---
 # <a name="directxmath-library-color-functions"></a>Funciones de color de la biblioteca DirectXMath
 
@@ -26,7 +26,7 @@ Enumera las funciones de color proporcionadas por DirectXMath.
 | [**XMColorAdjustContrast**](/windows/win32/api/directxmath/nf-directxmath-xmcoloradjustcontrast)<br/>     | Ajusta el valor de contraste de un color.<br/>                                                                                             |
 | [**XMColorAdjustSaturation**](/windows/win32/api/directxmath/nf-directxmath-xmcoloradjustsaturation)<br/> | Ajusta el valor de saturación de un color.<br/>                                                                                           |
 | [**XMColorEqual**](/windows/win32/api/directxmath/nf-directxmath-xmcolorequal)<br/>                       | Comprueba la igualdad de dos colores.<br/>                                                                                              |
-| [**XMColorGreater**](/windows/win32/api/directxmath/nf-directxmath-xmcolorgreater)<br/>                   | Comprueba si todos los componentes del primer color son mayores que los componentes correspondientes en el segundo color.<br/>             |
+| [**XMColorGreater**](/windows/win32/api/directxmath/nf-directxmath-xmcolorgreater)<br/>                   | Comprueba si todos los componentes del primer color son mayores que los componentes correspondientes del segundo color.<br/>             |
 | [**XMColorGreaterOrEqual**](/windows/win32/api/directxmath/nf-directxmath-xmcolorgreaterorequal)<br/>     | Comprueba si todos los componentes del primer color son mayores o iguales que los componentes correspondientes del segundo color.<br/> |
 | [**XMColorHSLToRGB**](/windows/win32/api/directxmath/nf-directxmath-xmcolorhsltorgb)<br/>                 | Convierte los valores de color HSL en valores de color RGB.<br/>                                                                                     |
 | [**XMColorHSVToRGB**](/windows/win32/api/directxmath/nf-directxmath-xmcolorhsvtorgb)<br/>                 | Convierte los valores de color HSV en valores de color RGB.<br/>                                                                                     |

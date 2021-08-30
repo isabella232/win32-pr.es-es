@@ -1,9 +1,9 @@
 ---
-title: Keywords (elemento)
-description: Define una lista de palabras clave que clasifican eventos. | Keywords (elemento)
+title: Elemento keywords (ProviderType)
+description: Define una lista de palabras clave que clasifican eventos. | Elemento keywords (ProviderType)
 ms.assetid: 709da870-b252-4598-a1f6-51c12fa7c6df
 keywords:
-- elemento Keywords EventLog
+- Elemento keywords EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bd5868a652f7e48b97b419718e82cad0aea36c95
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6fc126ad8a47ee3dff9707b035504ce76ac5f0845a9fc64c3f7d04b46fab8ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865725"
 ---
-# <a name="keywords-providertype-element"></a>Keywords (elemento)
+# <a name="keywords-providertype-element"></a>Elemento keywords (ProviderType)
 
 Define una lista de palabras clave que clasifican eventos.
 
@@ -30,7 +30,7 @@ Define una lista de palabras clave que clasifican eventos.
  />
 ```
 
-El elemento **Keywords** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El **elemento keywords** se define mediante el [**tipo complejo ProviderType.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Keywords** se define mediante el tipo complejo de [**ProviderType*
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **Keywords** se define mediante el tipo complejo de [**ProviderType*
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

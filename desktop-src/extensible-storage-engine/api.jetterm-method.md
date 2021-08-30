@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetTerm (método)'
-title: Método API. JetTerm
+description: 'Más información sobre: Método Api.JetTerm'
+title: Método Api.JetTerm
 TOCTitle: 'JetTerm method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetTerm(Microsoft.Isam.Esent.Interop.JET_INSTANCE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetterm(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c8e028ecdc6456521b7aaa671cb4f5199e8751e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e750b32023af8746e175944c640cdf929979edebfae17d317ff145755d777285
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977475"
 ---
-# <a name="apijetterm-method"></a>Método API. JetTerm
+# <a name="apijetterm-method"></a>Método Api.JetTerm
 
-Finalice una instancia creada con [JetInit (JET_INSTANCE)](./api.jetinit-method.md) o [JetCreateInstance JET_INSTANCE (cadena)](./api.jetcreateinstance-method.md).
+Finalice una instancia de que se creó [con JetInit(JET_INSTANCE)](./api.jetinit-method.md) o [JetCreateInstance(JET_INSTANCE, String).](./api.jetcreateinstance-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,9 +58,9 @@ public static void JetTerm(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia de que se va a finalizar.
+    Instancia de que se finaliza.
 
 ## <a name="see-also"></a>Vea también
 
@@ -68,6 +68,6 @@ public static void JetTerm(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

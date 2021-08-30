@@ -3,9 +3,9 @@ title: Propiedad receivedPackets de IWMPNetwork
 description: La propiedad receivedPackets obtiene el número de paquetes recibidos.
 ms.assetid: 2a79dc81-4c7a-45d6-bc2b-b19ff5704c3b
 keywords:
-- propiedades de receivedPackets Media Player de Windows
-- propiedad receivedPackets de Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad receivedPackets
+- receivedPackets, propiedad Reproductor de Windows Media
+- Propiedad receivedPackets Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad receivedPackets
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90c62b4d90039f07177e8fcdc971cb66e0044aee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 405018dbd4f597f4affb7e3b2af826379054a8e66b48dd112a6bbe9f18273fb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956095"
 ---
-# <a name="iwmpnetworkreceivedpackets-property"></a>IWMPNetwork:: receivedPackets (propiedad)
+# <a name="iwmpnetworkreceivedpackets-property"></a>Propiedad IWMPNetwork::receivedPackets
 
-La propiedad **receivedPackets** obtiene el número de paquetes recibidos.
+La **propiedad receivedPackets** obtiene el número de paquetes recibidos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public ReadOnly Property receivedPackets As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el número de paquetes recibidos.
+**System.Int32 que** es el número de paquetes recibidos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada vez que se detiene y se reinicia la reproducción, esta propiedad se restablece en cero. El valor no se restablece si la reproducción está en pausa.
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece a cero. El valor no se restablece si la reproducción está en pausa.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **receivedPackets** para mostrar el número de paquetes recibidos. La información se muestra en una etiqueta en respuesta al evento **PlayStateChange** . En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa receivedPackets** para mostrar el número de paquetes recibidos. La información se muestra en una etiqueta en respuesta al **evento PlayStateChange.** En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -139,7 +139,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

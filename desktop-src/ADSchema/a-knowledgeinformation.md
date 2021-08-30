@@ -1,11 +1,11 @@
 ---
-title: Knowledge-Information atributo)
-description: Especifica una descripción acumulada de conocimiento que se puede leer y que es legible por un agente de sistema de directorio específico.
+title: Knowledge-Information atributo
+description: Especifica una descripción acumulada legible del conocimiento maestro por un agente de sistema de directorio específico.
 ms.assetid: a3999e3d-0e54-4aef-9b77-d4ffadcae090
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Knowledge-Information
-- knowledgeInformation esquema de AD de atributos
+- Knowledge-Information esquema de AD de atributo
+- Esquema de AD del atributo knowledgeInformation
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7547972dd2e0df8238866eaead9639e454cc85b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 557a74e3737b3d7d8bd577e3802bfa42c56096667a586f5769bf19cedc2f0cf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924815"
 ---
-# <a name="knowledge-information-attribute"></a>Knowledge-Information atributo)
+# <a name="knowledge-information-attribute"></a>Knowledge-Information atributo
 
-Especifica una descripción acumulada de conocimiento que se puede leer y que es legible por un agente de sistema de directorio específico.
+Especifica una descripción acumulada legible del conocimiento maestro por un agente de sistema de directorio específico.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Knowledge-Information                       |
-| Nombre para mostrar de LDAP | knowledgeInformation                        |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | knowledgeInformation                        |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 2.5.4.2                                     |
-| System-ID-GUID    | 1677581f-47f3-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Teletex)**](s-string-teletex.md) |
+| System-Id-Guid    | 1677581f-47f3-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Teletex)**](s-string-teletex.md) |
 
 
 
@@ -55,13 +55,13 @@ Especifica una descripción acumulada de conocimiento que se puede leer y que es
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80C3                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Especifica una descripción acumulada de conocimiento que se puede leer y que es
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80C3                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Especifica una descripción acumulada de conocimiento que se puede leer y que es
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80C3                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -118,13 +118,13 @@ Especifica una descripción acumulada de conocimiento que se puede leer y que es
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80C3                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Especifica una descripción acumulada de conocimiento que se puede leer y que es
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80C3                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Especifica una descripción acumulada de conocimiento que se puede leer y que es
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x80C3                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

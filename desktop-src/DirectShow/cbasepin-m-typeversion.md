@@ -1,7 +1,7 @@
 ---
 description: Versión actual del conjunto de tipos de medios preferidos.
 ms.assetid: 14c576f6-0bdc-47eb-994e-cfa4a908d729
-title: 'Miembro CBasePin:: m_TypeVersion (Amfilter. h)'
+title: Miembro CBasePin::m_TypeVersion (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8bc0204324716fca083d2dbe212ed553994098f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f9921dde20b0f24b86e1100360f64e1df4a485d9fb53ef032c4cfb005d65f2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910455"
 ---
-# <a name="cbasepinm_typeversion-member"></a>Miembro TypeVersion CBasePin:: m \_
+# <a name="cbasepinm_typeversion-member"></a>Miembro CBasePin::m \_ TypeVersion
 
 Versión actual del conjunto de tipos de medios preferidos.
 
@@ -42,8 +42,8 @@ LONG m_TypeVersion;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ LONG m_TypeVersion;
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

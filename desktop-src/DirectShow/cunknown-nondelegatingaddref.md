@@ -1,7 +1,7 @@
 ---
-description: 'El método NonDelegatingAddRef incrementa el recuento de referencias en el objeto. Este método implementa el método INonDelegatingUnknown:: NonDelegatingAddRef.'
+description: El método NonDelegatingAddRef incrementa el recuento de referencias en el objeto . Este método implementa el método INonDelegatingUnknown::NonDelegatingAddRef.
 ms.assetid: abb6ee51-8fb8-4307-b127-b3667260e35a
-title: Método CUnknown. NonDelegatingAddRef (ComBase. h)
+title: Método CUnknown.NonDelegatingAddRef (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2f97260c03f0931e94e8ce6de8b7816789b2fe66
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 620a06d7e061b4a671a688eacd7f23c71bc2a71a7e97b204939ab5412a036746
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998905"
 ---
-# <a name="cunknownnondelegatingaddref-method"></a>CUnknown. NonDelegatingAddRef, método
+# <a name="cunknownnondelegatingaddref-method"></a>CUnknown.NonDelegatingAddRef (método)
 
-El `NonDelegatingAddRef` método incrementa el recuento de referencias en el objeto. Este método implementa el método **INonDelegatingUnknown:: NonDelegatingAddRef** .
+El `NonDelegatingAddRef` método incrementa el recuento de referencias en el objeto . Este método implementa el **método INonDelegatingUnknown::NonDelegatingAddRef.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Devuelve el recuento de referencias.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

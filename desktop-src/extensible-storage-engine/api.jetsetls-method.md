@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetSetLS (método)'
-title: Método API. JetSetLS
+description: Más información sobre el método Api.JetSetLS
+title: Método Api.JetSetLS
 TOCTitle: 'JetSetLS method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetLS(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_LS,Microsoft.Isam.Esent.Interop.LsGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetls(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d11d0790bb1d9340c427fd1b836d927527c6ca63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94c6b8dfe425576b7340f637a3f9942a25aeb28391adbdf3417b65afe0e0e84b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977585"
 ---
-# <a name="apijetsetls-method"></a>Método API. JetSetLS
+# <a name="apijetsetls-method"></a>Método Api.JetSetLS
 
-Permite a la aplicación asociar un identificador de contexto conocido como almacenamiento local con un cursor o la tabla asociada a ese cursor. La aplicación puede usar este identificador de contexto para almacenar datos auxiliares que están asociados a un cursor o una tabla. Posteriormente, la aplicación recibe una notificación mediante una devolución de llamada en tiempo de ejecución cuando se debe liberar el identificador de contexto. Esto hace posible asociar el estado asignado dinámicamente a un cursor o una tabla.
+Permite que la aplicación asocie un identificador de contexto conocido como Storage local con un cursor o la tabla asociada a ese cursor. La aplicación puede usar este identificador de contexto para almacenar datos auxiliares asociados a un cursor o tabla. Más adelante se notifica a la aplicación mediante una devolución de llamada en tiempo de ejecución cuando se debe liberar el identificador de contexto. Esto permite asociar el estado asignado dinámicamente a un cursor o tabla.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,30 +68,30 @@ public static void JetSetLS(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a usar.
+    Cursor que se usará.
 
 <!-- end list -->
 
   - ls  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_LS](./jet-ls-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LS](./jet-ls-structure.md)  
     
     Identificador de contexto que se va a asociar a la sesión o al cursor.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. LsGrbit](./lsgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.LsGrbit](./lsgrbit-enumeration.md)  
     
-    Opciones set.
+    Establecer opciones.
 
 ## <a name="see-also"></a>Vea también
 
@@ -99,6 +99,6 @@ public static void JetSetLS(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

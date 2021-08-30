@@ -1,7 +1,7 @@
 ---
-description: Especifica los datos de control de sector.
+description: Especifica los datos de control de segmento.
 ms.assetid: ae3399e9-b78c-473d-8ed5-e570dfb676aa
-title: DXVA_Slice_HEVC_Short estructura (DXVA. h)
+title: DXVA_Slice_HEVC_Short estructura (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dxva.h
-ms.openlocfilehash: 0d0f88e1534ef3d901023ebdee8ce9c36a8c2cc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b59008947e636e7d4252b678a79b28c128c4a7b122b97c9337fb41ddc062fd54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958585"
 ---
-# <a name="dxva_slice_hevc_short-structure"></a>\_Estructura corta del segmento de DXVA \_ HEVC \_
+# <a name="dxva_slice_hevc_short-structure"></a>Estructura corta \_ de HEVC de segmento \_ DXVA \_
 
-Especifica los datos de control de sector.
+Especifica los datos de control de segmento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,24 +51,24 @@ Especifica la ubicación de la unidad NAL.
 **SliceBytesInBuffer**
 </dt> <dd>
 
-El número de bytes del búfer de datos fragmentada que están asociados a esta estructura de datos del control de segmento.
+Número de bytes del búfer de datos de flujo de bits asociados a esta estructura de datos de control de segmento.
 
 </dd> <dt>
 
 **wBadSliceChopping**
 </dt> <dd>
 
-Si se usa el análisis de fragmentada fuera del host, este valor indica el segmento incorrecto cortar y contiene uno de los siguientes valores:
+Si se usa el análisis de secuencia de bits fuera del host, este valor indica el corte de segmentos no válidos y contiene uno de los valores siguientes:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Value | Descripción                                                                                                                                                                                                                                             |
-| 0     | Todos los bits del segmento se encuentran en el búfer de datos de fragmentada correspondiente.                                                                                                                                                                      |
-| 1     | El búfer de datos fragmentada contiene el inicio del segmento, pero no el segmento completo, porque el búfer está lleno.                                                                                                                                        |
-| 2     | El búfer de datos fragmentada contiene el final del segmento. No contiene el inicio del segmento, porque el inicio del segmento se encontraba en el búfer de datos fragmentada anterior.                                                                  |
-| 3     | El búfer de datos fragmentada no contiene el inicio del segmento porque el inicio del segmento se encontraba en el búfer de datos fragmentada anterior y no contiene el final del segmento porque el búfer de datos fragmentada actual también está lleno. |
+| Valor | Descripción                                                                                                                                                                                                                                             |
+| 0     | Todos los bits del segmento se encuentran en el búfer de datos de secuencia de bits correspondiente.                                                                                                                                                                      |
+| 1     | El búfer de datos de secuencia de bits contiene el inicio del segmento, pero no todo el segmento, porque el búfer está lleno.                                                                                                                                        |
+| 2     | El búfer de datos de flujo de bits contiene el final del segmento. No contiene el inicio del segmento, porque el inicio del segmento se encontraba en el búfer de datos de flujo de bits anterior.                                                                  |
+| 3     | El búfer de datos de flujo de bits no contiene el inicio del segmento porque el inicio del segmento se encontraba en el búfer de datos de flujo de bits anterior y no contiene el final del segmento porque el búfer de datos de secuencia de bits actual también está lleno. |
 
 
 
@@ -76,9 +76,9 @@ Si se usa el análisis de fragmentada fuera del host, este valor indica el segme
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**DXVA \_ El segmento \_ HEVC \_ Short** contiene datos de control de segmento que se pasan al Acelerador de hardware desde el descodificador de software del host.
+**DXVA \_ Slice \_ HEVC \_ Short contiene** datos de control de segmento que se pasan al acelerador de hardware desde el descodificador de software host.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,9 +86,9 @@ Si se usa el análisis de fragmentada fuera del host, este valor indica el segme
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

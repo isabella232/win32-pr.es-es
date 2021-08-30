@@ -1,10 +1,10 @@
 ---
-title: Estructura de ORPC_INIT_ARGS
-description: La \_ estructura ORPC init \_ args contiene información que se usa para inicializar la depuración remota mediante la interfaz IOrpcDebugNotify.
+title: ORPC_INIT_ARGS estructura
+description: La estructura ORPC INIT ARGS contiene información que se usa para inicializar \_ \_ la depuración remota mediante la interfaz IOrpcDebugNotify.
 ms.assetid: be7646c7-3394-45ae-ae8f-9cee68bbc789
 keywords:
-- Estructura de ORPC_INIT_ARGS COM
-- LPORPC_INIT_ARGS puntero de estructura COM
+- ORPC_INIT_ARGS com de estructura
+- LPORPC_INIT_ARGS de estructura de datos COM
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e7dca0209f745d5034bde2da852829b99d7dcb8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 49bca85d44f13f304ad566b2d0ab39cb800abd36af4c922c0ae5619bb2703009
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992315"
 ---
-# <a name="orpc_init_args-structure"></a>ORPC \_ init \_ args (estructura)
+# <a name="orpc_init_args-structure"></a>Estructura ARGS de ORPC \_ INIT \_
 
-La estructura **ORPC \_ init \_ args** contiene información que se usa para inicializar la depuración remota mediante la interfaz [**IOrpcDebugNotify**](iorpcdebugnotify.md) .
+La **estructura ORPC \_ INIT \_ ARGS** contiene información que se usa para inicializar la depuración remota mediante la [**interfaz IOrpcDebugNotify.**](iorpcdebugnotify.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ typedef struct ORPC_INIT_ARGS {
 **lpIntfOrpcDebug**
 </dt> <dd>
 
-Un puntero a la interfaz [**IOrpcDebugNotify**](iorpcdebugnotify.md) para su uso por los depuradores en proceso. Si el depurador no está en proceso o es un sistema Macintosh, este campo debe ser **null**.
+Puntero a la [**interfaz IOrpcDebugNotify**](iorpcdebugnotify.md) para que la usen los depuradores en proceso. Si el depurador no está en proceso o es un sistema Macintosh, este campo debe ser **NULL.**
 
 </dd> <dt>
 
 **pvPSN**
 </dt> <dd>
 
-Puntero al número de serie del proceso de Macintosh del proceso del depurador. Si el código depurado no es un sistema Macintosh, este campo debe ser **null**.
+Puntero al número de serie del proceso Macintosh del proceso del depurado. Si el depurado no es un sistema Macintosh, este campo debe ser **NULL.**
 
 </dd> <dt>
 
@@ -88,10 +88,10 @@ Reservado. Debe ser 0.
 
 <dl> <dt>
 
-[**ORPC \_ dbg \_ All**](orpc-dbg-all.md)
+[**ORPC \_ DBG \_ ALL**](orpc-dbg-all.md)
 </dt> <dt>
 
-[**\_búfer ORPC dbg \_**](orpc-dbg-buffer.md)
+[**BÚFER \_ DE DBG DE ORPC \_**](orpc-dbg-buffer.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

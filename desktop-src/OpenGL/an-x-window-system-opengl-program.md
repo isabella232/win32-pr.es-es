@@ -1,23 +1,23 @@
 ---
 title: Un programa OpenGL del sistema de ventanas X
-description: El siguiente programa es un programa OpenGL del sistema de ventana X con el mismo código OpenGL que se usa en AUXEDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma de Microsoft. Compare este programa con el programa OpenGL de Windows del programa trasladado a Windows.
+description: El programa siguiente es un programa X Window System OpenGL con el mismo código OpenGL que se usa en AUXEDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma de Microsoft. Compare este programa con el Windows OpenGL en El programa portado a Windows.
 ms.assetid: 8caab983-491f-46fa-b564-79191fa4a9ac
 keywords:
-- trasladar a OpenGL, ejemplo
-- Exportación de OpenGL, ejemplo
-- Sistema de ventanas X, ejemplo
+- porting to OpenGL,sample
+- Porte de OpenGL, ejemplo
+- X Window System,sample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac03fdc0dac707f2a14d62d7955fa7533957f4de
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a0fe7be4c09c27d0a4fceb591e52674a4bbdf54361e6e752e9306e6fc19b9280
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128355"
 ---
 # <a name="an-x-window-system-opengl-program"></a>Un programa OpenGL del sistema de ventanas X
 
-El siguiente programa es un programa OpenGL del sistema de ventana X con el mismo código OpenGL que se usa en AUXEDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma de Microsoft. Compare este programa con el programa OpenGL de Windows del [programa trasladado a Windows](the-program-ported-to-win32.md).
+El programa siguiente es un programa X Window System OpenGL con el mismo código OpenGL que se usa en AUXEDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma de Microsoft. Compare este programa con el Windows OpenGL en [El programa portado a Windows](the-program-ported-to-win32.md).
 
 
 ```C++
@@ -272,9 +272,9 @@ GLvoid drawScene(GLvoid)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

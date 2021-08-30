@@ -1,6 +1,6 @@
 ---
-title: Templates (ProviderType) (elemento)
-description: Define una lista de plantillas que especifican los datos que se van a incluir con los eventos. | Templates (ProviderType) (elemento)
+title: Elemento templates (ProviderType)
+description: Define una lista de plantillas que especifican los datos que se incluirán con los eventos. | Elemento templates (ProviderType)
 ms.assetid: bc1cd2ef-200c-40e5-a3cd-013c0a79a049
 keywords:
 - elemento templates EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 193b2a1e8cab91b995c45abf1935fbbfba0a2d1b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0dbd619b5d79c27d42de974ec162ac726c1286f0f91936a08fdd51a3669136d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957975"
 ---
-# <a name="templates-providertype-element"></a>Templates (ProviderType) (elemento)
+# <a name="templates-providertype-element"></a>Elemento templates (ProviderType)
 
-Define una lista de plantillas que especifican los datos que se van a incluir con los eventos.
+Define una lista de plantillas que especifican los datos que se incluirán con los eventos.
 
 ``` syntax
 <xs:element name="templates"
@@ -30,7 +30,7 @@ Define una lista de plantillas que especifican los datos que se van a incluir co
  />
 ```
 
-El elemento **templates** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El **elemento templates** se define mediante el tipo complejo [**ProviderType.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **templates** se define mediante el tipo complejo de [**ProviderType
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **templates** se define mediante el tipo complejo de [**ProviderType
 **Elemento primario**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

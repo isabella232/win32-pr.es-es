@@ -1,23 +1,23 @@
 ---
-description: En este tema se describe cómo solicitar permisos al usuario para usar sensores. Para obtener información general sobre los permisos de la API de sensor, consulte Administración de permisos de usuario.
+description: En este tema se describe cómo solicitar permisos al usuario para usar sensores. Para obtener información general sobre los permisos en sensor API, consulte Administración de permisos de usuario.
 ms.assetid: e43ad497-86f1-4804-a67a-0aeb56b80d7f
-title: Solicitar permisos de usuario
+title: Solicitud de permisos de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41e103426388d2db49bb5a8fb01d3370207ec49b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2bb6c977306ff68f40fb8d3a77b598114cb6f77feeb35d4beca96c05fbce224
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992685"
 ---
-# <a name="requesting-user-permissions"></a>Solicitar permisos de usuario
+# <a name="requesting-user-permissions"></a>Solicitud de permisos de usuario
 
-En este tema se describe cómo solicitar permisos al usuario para usar sensores. Para obtener información general sobre los permisos de la API de sensor, consulte [Administración de permisos de usuario](managing-user-permissions.md).
+En este tema se describe cómo solicitar permisos al usuario para usar sensores. Para obtener información general sobre los permisos en sensor API, consulte [Administración de permisos de usuario.](managing-user-permissions.md)
 
-En los siguientes ejemplos se ilustran algunos de los escenarios comunes en los que puede elegir solicitar permisos de usuario.
+En los ejemplos siguientes se muestran algunos de los escenarios comunes en los que puede optar por solicitar permisos de usuario.
 
-El código de ejemplo siguiente simplemente solicita permisos para todos los sensores recuperados del administrador del sensor, por tipo, mediante una llamada de método asincrónico. La plataforma abrirá un cuadro de diálogo para pedir al usuario que habilite solo los sensores que aún no están habilitados. Para determinar si el usuario ha habilitado los sensores en este caso, debe controlar el evento [**ISensorEvents:: OnStateChanged**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-onstatechanged) .
+El código de ejemplo siguiente simplemente solicita permisos para todos los sensores recuperados del administrador de sensores, por tipo, mediante una llamada de método asincrónico. La plataforma abrirá un cuadro de diálogo para solicitar al usuario que solo habilite los sensores que aún no están habilitados. Para determinar si el usuario ha habilitado algún sensor en este caso, debe controlar el [**evento ISensorEvents::OnStateChanged.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-onstatechanged)
 
 
 ```C++
@@ -35,7 +35,7 @@ if(SUCCEEDED(hr))
 
 
 
-Puede optar por probar el estado del sensor sincrónicamente antes de intentar recuperar los datos. En el ejemplo de código siguiente se muestra esta técnica.
+Puede optar por probar el estado del sensor sincrónicamente antes de intentar recuperar datos. En el código de ejemplo siguiente se muestra esta técnica.
 
 
 ```C++
@@ -73,7 +73,7 @@ if(SUCCEEDED(hr))
 
 
 
-En el código de ejemplo siguiente se pide al usuario permisos de sensor si se produce un error al intentar recuperar un informe de datos de un sensor determinado.
+El código de ejemplo siguiente solicita al usuario permisos de sensor si se produce un error al intentar recuperar un informe de datos de un sensor determinado.
 
 
 ```C++
@@ -107,7 +107,7 @@ if(SUCCEEDED(hr))
 [**ISensorManager**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanager)
 </dt> <dt>
 
-[Administrar permisos de usuario](managing-user-permissions.md)
+[Administración de permisos de usuario](managing-user-permissions.md)
 </dt> </dl>
 
  

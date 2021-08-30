@@ -1,34 +1,34 @@
 ---
-description: Especifica un objeto de activación que crea un presentador de vídeo personalizado para el receptor de medios de representador de vídeo mejorado (EVR).
+description: Especifica un objeto de activación que crea un presentador de vídeo personalizado para el receptor multimedia de representador de vídeo mejorado (EVR).
 ms.assetid: 65d88832-0969-4d85-bee2-fd0aa68e9f3b
-title: MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_ACTIVATE atributo (Mfidl. h)
+title: MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_ACTIVATE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75855c18faba8568547f9efcfb19e04574c4885e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d17d7c54691b629caed33d0cdfffe59e7b1da9d025f25026f7416de75741a354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957105"
 ---
-# <a name="mf_activate_custom_video_presenter_activate-attribute"></a>MF \_ activar \_ atributo personalizado para \_ \_ activar el presentador de vídeo \_
+# <a name="mf_activate_custom_video_presenter_activate-attribute"></a>Atributo MF \_ ACTIVATE \_ CUSTOM VIDEO \_ \_ PRESENTER \_ ACTIVATE
 
-Especifica un objeto de activación que crea un presentador de vídeo personalizado para el receptor de medios de representador de vídeo mejorado (EVR).
+Especifica un objeto de activación que crea un presentador de vídeo personalizado para el receptor multimedia de representador de vídeo mejorado (EVR).
 
 ## <a name="data-type"></a>Tipo de datos
 
-**IUnknown \** _
+**IUnknown\***
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si va a crear EVR a través de un objeto de activación, puede usar este atributo para establecer un presentador de vídeo personalizado en EVR. Use este atributo como se indica a continuación:
+Si va a crear la EVR a través de un objeto de activación, puede usar este atributo para establecer un presentador de vídeo personalizado en la EVR. Use este atributo como se muestra a continuación:
 
-1.  Llame a la función [_ *MFCreateVideoRendererActivate* *](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para crear un objeto de activación para EVR. La función devuelve un puntero a la interfaz [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) .
-2.  Establezca este atributo en el puntero [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) llamando a [**IMFAttributes:: setunknown (**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown). El valor del atributo es un puntero a un objeto de activación implementado por el autor de la llamada. El objeto de activación del llamador debe exponer la interfaz **IMFActivate** .
+1.  Llame a [**la función MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para crear un objeto de activación para la EVR. La función devuelve un puntero a la [**interfaz DEACTIVATE.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
+2.  Establezca este atributo en el puntero [**DE LAACTIVATE llamando**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) [**aATTRIBUTEAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown). El valor del atributo es un puntero a un objeto de activación implementado por el autor de la llamada. El objeto de activación del autor de la llamada debe exponer **la interfaz IMFActivate.**
 
-Si establece este atributo, EVR llama a [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para crear el presentador de vídeo personalizado. El presentador de vídeo debe exponer la interfaz [**IMFVideoPresenter**](/windows/desktop/api/evr/nn-evr-imfvideopresenter) .
+Si establece este atributo, el EVR llama [**a IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para crear el presentador de vídeo personalizado. El presentador de vídeo debe exponer la [**interfaz DEPRESENTVideoPresenter.**](/windows/desktop/api/evr/nn-evr-imfvideopresenter)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -36,9 +36,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -46,16 +46,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de representador de vídeo mejorados](enhanced-video-renderer-attributes.md)
+[Atributos mejorados del representador de vídeo](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
+[**ATTRIBUTEAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
 </dt> <dt>
 
-[**IMFAttributes:: Setunknown (**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
+[**ATTRIBUTEAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
 </dt> <dt>
 
 [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
