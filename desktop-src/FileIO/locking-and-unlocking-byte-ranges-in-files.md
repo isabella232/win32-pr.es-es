@@ -4,12 +4,12 @@ ms.assetid: 9d54fe11-b1ad-4723-a42a-00bc6dc64072
 title: Bloqueo y desbloqueo de intervalos de bytes en archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ccd18fc8a5e2f143cb58717f72abbc135421ee802ff93b651dad0916ed8a953
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8ea12d2563f1c5e163eb019b37c42bdeb8eed8b
+ms.sourcegitcommit: ccf7dea7222b925441486fa564a1a61b69395562
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118951164"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "123463056"
 ---
 # <a name="locking-and-unlocking-byte-ranges-in-files"></a>Bloqueo y desbloqueo de intervalos de bytes en archivos
 
@@ -18,7 +18,7 @@ Aunque el sistema permite que más de una aplicación abra un archivo y escriba 
 Las [**funciones LockFile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile) y [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) bloquean un intervalo especificado de bytes en un archivo. El intervalo puede extenderse más allá del final actual del archivo. Bloquear parte de un archivo proporciona a los subprocesos de los procesos de bloqueo acceso exclusivo al intervalo de bytes especificado mediante el identificador de archivo especificado. Los intentos de acceder a un intervalo de bytes bloqueado por otro proceso siempre producirán un error. Si el proceso de bloqueo intenta acceder a un intervalo de bytes bloqueado a través de un segundo identificador de archivo, se produce un error en el intento.
 
 > [!Note]  
-> Los archivos asignados a memoria no se admiten con bloqueos de intervalo de bytes.
+> Los bloqueos de intervalo de bytes se omiten al usar archivos asignados a memoria.
 
  
 
@@ -1032,7 +1032,7 @@ Este ejemplo es una aplicación de consola de Windows que ejecuta varios accesos
 
 Todos los registros tienen los dos primeros campos en común: un código de tipo y un número de secuencia. El código de tipo es uno de dos códigos: el código "Mstr" hace referencia al tipo **MASTER \_ RECORD** y el código "Data" hace referencia a un tipo **DATA \_ RECORD.** Solo puede haber un **registro \_ maestro y** cero o más registros **\_ de** datos. En este ejemplo, los datos contenidos en los registros de datos se generan aleatoriamente. El segundo campo, el número de secuencia, se incrementa cada vez que se modifica un registro.
 
-Cuando comienza la ejecución, si el archivo de datos aún no existe, se crea e inicializa mediante la **función InitNewFile.** La **función InitNewFile** escribe un registro de tipo Master con un mapa de bits vacío al principio. Si el archivo ya existe, se abre; se supone que tiene un registro maestro válido al principio.
+Cuando comienza la ejecución, si el archivo de datos aún no existe, se crea e inicializa mediante la **función InitNewFile.** La **función InitNewFile** escribe un registro de tipo Master con un mapa de bits vacío al principio. Si el archivo ya existe, se abre; Se supone que tiene un registro maestro válido al principio.
 
 Una vez que el archivo se ha creado correctamente o se ha abierto correctamente, se inician varios subprocesos de trabajo y todos ellos ejecutan un bucle en el que una operación y un registro se eligen aleatoriamente y, a continuación, se intenta esa operación en ese registro. Dado que estas operaciones son aleatorias, no todas se realizarán correctamente, pero no necesariamente son errores. La información de estado adecuada se registra en la consola.
 
