@@ -4,12 +4,12 @@ description: Controles de reproducción
 ms.assetid: eba750e1-ee3d-490c-8ebf-c53d8dbae0f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d7a03d71e1ed1899c04698fa9faa7676766eb69f13f9745f24226bd54915266
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e1ee888f5cb73c810e2e1cf40ccb4a355758481
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117802275"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372451"
 ---
 # <a name="playback-controls"></a>Controles de reproducción
 

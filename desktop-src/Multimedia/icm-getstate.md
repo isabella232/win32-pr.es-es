@@ -1,6 +1,6 @@
 ---
 title: ICM_GETSTATE mensaje (Vfw.h)
-description: El ICM GETSTATE consulta un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información \_ de configuración.
+description: El ICM getstate consulta a un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información \_ de configuración.
 ms.assetid: 4b77e294-f3aa-45f9-a4f4-f103b83eae8d
 keywords:
 - ICM_GETSTATE mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9bf21d808752b8a3ac3ba71a8593cd6dc577b3af4f34f421682d126c73b3578
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b6a45dcde627a02c1a4a402ea9a2a725f0429a7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784955"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370495"
 ---
 # <a name="icm_getstate-message"></a>\_ICM Mensaje GETSTATE
 
-El **ICM \_ GETSTATE** consulta a un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICGetState.**](/windows/desktop/api/Vfw/nf-vfw-icgetstate)
+El **ICM \_ mensaje GETSTATE** consulta a un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICGetState.**](/windows/desktop/api/Vfw/nf-vfw-icgetstate)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = (DWORD_PTR) cb;
 <span id="pv"></span><span id="PV"></span>*Pv*
 </dt> <dd>
 
-Puntero a un bloque de memoria para contener la información de configuración actual. Puede especificar **NULL para** este parámetro para determinar la cantidad de memoria necesaria para la información de configuración, como en [**ICGetStateSize**](/windows/desktop/api/Vfw/nf-vfw-icgetstatesize).
+Puntero a un bloque de memoria que contiene la información de configuración actual. Puede especificar **NULL para** este parámetro para determinar la cantidad de memoria necesaria para la información de configuración, como en [**ICGetStateSize**](/windows/desktop/api/Vfw/nf-vfw-icgetstatesize).
 
 </dd> <dt>
 
@@ -56,9 +56,9 @@ Tamaño, en bytes, del bloque de memoria.
 
 Si *pv* es **NULL,** devuelve la cantidad de memoria, en bytes, necesaria para la información de configuración.
 
-Si *pv* no es **NULL,** devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
+Si *pv no* es **NULL,** devuelve ICERR OK si se realiza \_ correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La estructura utilizada para representar la información de configuración es específica del controlador y la define el controlador.
 

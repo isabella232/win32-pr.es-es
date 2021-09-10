@@ -9,12 +9,12 @@ keywords:
 - Tipos de datos de entrada de MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f3cb45c321cdac95c09274f25293f4635d5a715638367c8f9e06cf5c45777af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8f0738827cce4cfd8cb4a237dcd2031c2fe71a7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119525225"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370909"
 ---
 # <a name="midi-input-data-types"></a>Tipos de datos de entrada DE MIDI
 
@@ -22,10 +22,10 @@ Windows define los siguientes tipos de datos para las funciones de entrada de MI
 
 
 
-| Valor                            | Significado                                                                                                                                                                                     |
+| Value                            | Significado                                                                                                                                                                                     |
 |----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **HMIDIIN**                      | Identificador de un dispositivo de entrada DE LÍNEA.                                                                                                                                                              |
-| [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)       | Encabezado para un búfer de flujo o un bloque de datos exclusivos del sistema DE LÍNEA. En el caso de las aplicaciones de entrada, esta estructura solo registra datos exclusivos del sistema (el streaming no se admite para la entrada MIDI). |
+| [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)       | Encabezado para un búfer de flujo o un bloque de datos exclusivos del sistema DE LÍNEA. En el caso de las aplicaciones de entrada, esta estructura registra solo datos exclusivos del sistema (el streaming no se admite para la entrada MIDI). |
 | [**MIDIINCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midiincaps) | Estructura que se usa para consultar las funcionalidades de un dispositivo de entrada DE LÍNEA.                                                                                                                    |
 
 

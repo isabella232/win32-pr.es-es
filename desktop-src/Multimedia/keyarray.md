@@ -6,12 +6,12 @@ keywords:
 - KEYARRAY MIDIPATCHSIZE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 507c5f578b912a7b184f9f455bc4a730132b2316472d061532c48847c312302d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6e45e46417fb3b6653ecae605aa60f775c1d654
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118140045"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370783"
 ---
 # <a name="keyarray"></a>KEYARRAY
 
@@ -29,7 +29,7 @@ typedef WORD KEYARRAY[MIDIPATCHSIZE];
 **KEYARRAY \[ MIDIPATCHSIZE\]**
 </dt> <dd>
 
-Cada elemento de la matriz corresponde a una revisión de revisión de revisión basada en claves con cada uno de los 16 bits que representan uno de los 16 canales DE LÍNEA. Los bits se establecen para cada uno de los canales que usan esa revisión concreta. Por ejemplo, si los canales FÍSICOs 9 y 15 usan la revisión de la clave 60, el elemento 60 de la matriz debe establecerse en 0x8200.
+Cada elemento de la matriz corresponde a una revisión de revisión de revisión basada en claves con cada uno de los 16 bits que representan uno de los 16 canales DE MIDI. Los bits se establecen para cada uno de los canales que usan esa revisión concreta. Por ejemplo, si los canales 9 y 15 físicos usan la revisión de la clave 60, el elemento 60 de la matriz debe establecerse en 0x8200.
 
 </dd> </dl>
 
@@ -37,12 +37,12 @@ Cada elemento de la matriz corresponde a una revisión de revisión de revisión
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
 | Versión<br/>                  | Interfaz digital instrumentable (MIDI), tipos DE MIDI<br/>                                        |
-| Header<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

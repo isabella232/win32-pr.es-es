@@ -10,12 +10,12 @@ keywords:
 - Macro ICDecompressGetPalette
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cc17db0d7aa015c955825840fb70d12714be3c0a44a69bf5abc59290ebc633c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2fcb4140a4118cb2a36ccd75088556c53c55fdcb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119497425"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370382"
 ---
 # <a name="determining-a-decompressors-output-format"></a>Determinar el formato de salida de un descomprimidor
 

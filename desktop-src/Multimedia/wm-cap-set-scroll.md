@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 352d65c2ad8e80622f7ff50cca0a8f7d6e523d53ae002a2325327a634b97c931
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 812b76bdcad166b9f766957032f232293d4083c0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118134989"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371528"
 ---
-# <a name="wm_cap_set_scroll-message"></a>Mensaje DE DESPLAZAMIENTO de WM \_ CAP \_ SET \_
+# <a name="wm_cap_set_scroll-message"></a>Mensaje \_ WM CAP SET \_ \_ SCROLL
 
-El **mensaje WM CAP SET \_ \_ \_ SCROLL** define la parte del fotograma de vídeo que se mostrará en la ventana de captura. Este mensaje establece la esquina superior izquierda del área cliente de la ventana de captura en las coordenadas de un píxel especificado dentro del fotograma de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetScrollPos.**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos)
+El **mensaje WM CAP SET \_ \_ \_ SCROLL** define la parte del fotograma de vídeo que se mostrará en la ventana de captura. Este mensaje establece la esquina superior izquierda del área cliente de la ventana de captura en las coordenadas de un píxel especificado dentro del marco de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetScrollPos.**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos)
 
 
 ```C++
@@ -49,7 +49,7 @@ Dirección que contiene la posición de desplazamiento deseada.
 
 Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La posición de desplazamiento afecta a la imagen en los modos de vista previa y superposición.
 

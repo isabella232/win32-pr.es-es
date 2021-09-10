@@ -4,12 +4,12 @@ description: Eliminación de un objeto
 ms.assetid: 54ea1e7d-75b5-461f-b0d6-a976c33d66fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e94e55c025d3358f50170b83042b6e888622e14897d02607b9fc24ed0dea1c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31f77ad42700e01e5594faa5b8bb299fcc5841d7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144538"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371684"
 ---
 # <a name="deleting-an-object"></a>Eliminación de un objeto
 

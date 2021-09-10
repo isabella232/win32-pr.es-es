@@ -9,16 +9,16 @@ keywords:
 - Vídeo para Windows (VFW),interfaces de controlador de flujo
 - VFW (vídeo para Windows), interfaces de controlador de archivos personalizadas
 - VFW (vídeo para Windows), interfaces de controlador de flujo personalizadas
-- VFW (vídeo para Windows), interfaces de controlador de archivos
+- VFW (vídeo para Windows),interfaces de controlador de archivos
 - VFW (vídeo para Windows), interfaces de controlador de flujo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df0547f260fdf6b3d6b0b308cf5af6fef2b4dae17a1d4e8a1699385f1be2e9d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec9d75c0142d77c3c13a6d6563a22fc241e06a22
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785475"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371666"
 ---
 # <a name="custom-file-and-stream-handler-interfaces"></a>Interfaces personalizadas de controlador de archivos y secuencias
 

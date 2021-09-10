@@ -1,6 +1,6 @@
 ---
 title: ICM_SET_STATUS_PROC mensaje (Vfw.h)
-description: El ICM \_ SET STATUS PROC proporciona una función de devolución de llamada \_ de estado con el estado de una operación \_ larga.
+description: El ICM SET STATUS PROC proporciona una función de devolución de llamada \_ de estado con el estado de una operación \_ \_ larga.
 ms.assetid: a1bcd840-b94b-487e-91d6-67411a8a3a2d
 keywords:
 - ICM_SET_STATUS_PROC mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c02019bb6375aa18fd37ba34d2603839b37291d58822858b0b9cabc01e47d7b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53d7ad2745ab53c2e04a1588ddbf1b1e5d755202
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119678345"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370603"
 ---
 # <a name="icm_set_status_proc-message"></a>\_ICM Mensaje \_ SET STATUS \_ PROC
 
-El **ICM \_ SET STATUS \_ \_ PROC** proporciona una función de devolución de llamada de estado con el estado de una operación larga.
+El **ICM SET STATUS \_ \_ \_ PROC** proporciona una función de devolución de llamada de estado con el estado de una operación larga.
 
 
 ```C++
@@ -56,9 +56,9 @@ Tamaño, en bytes, de **ICSETSTATUSPROC**.
 
 Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La compatibilidad con este mensaje es opcional, pero se recomienda encarecidamente si la compresión o descompresión tarda más de aproximadamente una décima de segundo.
+La compatibilidad con este mensaje es opcional, pero se recomienda encarecidamente si la compresión o la descompresión tardan más de una décima parte aproximadamente de un segundo.
 
 Una aplicación puede enviar este mensaje periódicamente a una función de devolución de llamada de estado durante operaciones largas.
 

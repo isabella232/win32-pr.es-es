@@ -1,6 +1,6 @@
 ---
 title: MM_JOY2BUTTONUP mensaje (Mmsystem.h)
-description: El mensaje MM MMMM2BUTTONUP notifica a la ventana que ha capturado la captura de UNID2 que se ha liberado \_ un botón.
+description: El mensaje MMMID2BUTTONUP notifica a la ventana que ha capturado el botón DE BOTÓN2 que se ha \_ liberado.
 ms.assetid: da024466-7cd3-42ec-90a7-1468eb42841e
 keywords:
 - MM_JOY2BUTTONUP mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f94a1761686bd2e3ac7c470268427a213d54cdb4b8a58d54fdd6961427c2377
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7a4f2d23739fc72a6898e2b53fc3e1c330687f7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119557315"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371149"
 ---
-# <a name="mm_joy2buttonup-message"></a>Mensaje \_ MM MMMIENTO2BUTTONUP
+# <a name="mm_joy2buttonup-message"></a>Mensaje \_ MMMIENTO2BUTTONUP
 
-El **mensaje \_ MMIJO2BUTTONUP** notifica a la ventana que ha capturado la captura de UNID2 que se ha liberado un botón.
+El **mensaje \_ MMMID2BUTTONUP** notifica a la ventana que ha capturado el botón DE BOTÓN2 que se ha liberado.
 
 
 ```C++
@@ -42,16 +42,16 @@ yPos = HIWORD(lParam);
 **fwButtons** 
 </dt> <dd>
 
-Identifica el botón que ha cambiado de estado y los botones que se presionan. Puede tener uno de los valores siguientes:
+Identifica el botón que ha cambiado el estado y los botones que se presionan. Puede tener uno de los valores siguientes:
 
 
 
-| Valor                                                                                                                                                            | Significado                                              |
+| Value                                                                                                                                                            | Significado                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <span id="JOY_BUTTON1CHG"></span><span id="joy_button1chg"></span><dl> <dt>**\_BUTTON1CHG DE BUTTON1 DE BUTTON**</dt> </dl> | El primer botón button button ha cambiado de estado.<br/>  |
-| <span id="JOY_BUTTON2CHG"></span><span id="joy_button2chg"></span><dl> <dt>**\_BUTTON2CHG DE BUTTON2 BUTTON2**</dt> </dl> | El segundo botón button button ha cambiado de estado.<br/> |
-| <span id="JOY_BUTTON3CHG"></span><span id="joy_button3chg"></span><dl> <dt>**\_BUTTON3CHG DE BUTTON3CHG**</dt> </dl> | El tercer botón button button ha cambiado de estado.<br/>  |
-| <span id="JOY_BUTTON4CHG"></span><span id="joy_button4chg"></span><dl> <dt>**\_BUTTON4CHG DE BUTTON4CHG**</dt> </dl> | El cuarto botón button button ha cambiado de estado.<br/> |
+| <span id="JOY_BUTTON1CHG"></span><span id="joy_button1chg"></span><dl> <dt>**\_BUTTON1CHG DE BUTTON1 DE BUTTON1**</dt> </dl> | El primer botón button ha cambiado de estado.<br/>  |
+| <span id="JOY_BUTTON2CHG"></span><span id="joy_button2chg"></span><dl> <dt>**\_BUTTON2CHG DE BUTTON2**</dt> </dl> | El segundo botón button ha cambiado de estado.<br/> |
+| <span id="JOY_BUTTON3CHG"></span><span id="joy_button3chg"></span><dl> <dt>**\_BUTTON3CHG DE BUTTON3CHG**</dt> </dl> | El tercer botón button ha cambiado de estado.<br/>  |
+| <span id="JOY_BUTTON4CHG"></span><span id="joy_button4chg"></span><dl> <dt>**\_BUTTON4CHG DE BUTTON4CHG**</dt> </dl> | El cuarto botón button ha cambiado de estado.<br/> |
 
 
 
@@ -61,12 +61,12 @@ y uno o varios de los siguientes:
 
 
 
-| Valor                                                                                                                                                   | Significado                                       |
+| Value                                                                                                                                                   | Significado                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <span id="JOY_BUTTON1"></span><span id="joy_button1"></span><dl> <dt>**BOTÓN \_ BUTTON1 DE BUTTON1 DE BUTTON1**</dt> </dl> | Se presiona el primer botón de botones.<br/>  |
-| <span id="JOY_BUTTON2"></span><span id="joy_button2"></span><dl> <dt>**BOTÓN \_ BUTTON2 DE BUTTON2**</dt> </dl> | Se presiona el segundo botón button button (Botón de botones).<br/> |
-| <span id="JOY_BUTTON3"></span><span id="joy_button3"></span><dl> <dt>**BOTÓN \_ BUTTON3 DE BUTTON3**</dt> </dl> | Se presiona el tercer botón de botones.<br/>  |
-| <span id="JOY_BUTTON4"></span><span id="joy_button4"></span><dl> <dt>**BUTTON4 \_ DE BUTTON4 DE BUTTON**</dt> </dl> | Se presiona el cuarto botón button button (Cuarto botón de botones).<br/> |
+| <span id="JOY_BUTTON1"></span><span id="joy_button1"></span><dl> <dt>**BOTÓN \_ BUTTON1 DE BUTTON1 DE BUTTON1**</dt> </dl> | Se presiona el primer botón button button (Botón button).<br/>  |
+| <span id="JOY_BUTTON2"></span><span id="joy_button2"></span><dl> <dt>**BUTTON2 \_ DE BUTTON2 PARA BUTTON2**</dt> </dl> | Se presiona el segundo botón button button (Segundo botón button).<br/> |
+| <span id="JOY_BUTTON3"></span><span id="joy_button3"></span><dl> <dt>**BUTTON3 \_ DE BUTTON3 DE BUTTON3**</dt> </dl> | Se presiona el tercer botón button button (Tercer botón button).<br/>  |
+| <span id="JOY_BUTTON4"></span><span id="joy_button4"></span><dl> <dt>**BUTTON4 \_ DE BUTTON4 DE BUTTON4**</dt> </dl> | Se presiona el cuarto botón button button (Cuarto botón button).<br/> |
 
 
 
@@ -77,14 +77,14 @@ y uno o varios de los siguientes:
 **xPos** 
 </dt> <dd>
 
-Coordenadas x del borde con respecto a la esquina superior izquierda del área cliente.
+Las coordenadas x del ángulo con respecto a la esquina superior izquierda del área de cliente.
 
 </dd> <dt>
 
 **yPos** 
 </dt> <dd>
 
-Coordenada y del borde con respecto a la esquina superior izquierda del área cliente.
+Coordenada y del ángulo con respecto a la esquina superior izquierda del área cliente.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Coordenada y del borde con respecto a la esquina superior izquierda del área cl
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8b209e59032c0da4c875a316008c889cf064ae7d8bc48f5c621125a06582673
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c663d669635116500bc8aa7e7fdc994cdccd6dfe
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065475"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371228"
 ---
 # <a name="mm_wim_data-message"></a>Mensaje \_ MM WIM \_ DATA
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-waveh
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Es posible que el búfer devuelto no esté lleno. Use el **miembro dwBytesRecorded** de la estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) especificada por *lParam* para determinar el número de bytes registrados en el búfer devuelto.
 

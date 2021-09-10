@@ -1,19 +1,19 @@
 ---
 description: En el ejemplo siguiente se usan las funciones RegQueryInfoKey, RegEnumKeyEx y RegEnumValue para enumerar las subclaves de la clave especificada.
 ms.assetid: 3730180a-52bc-4382-83ca-39f162273ba5
-title: Enumerar subclaves del registro
+title: Enumeración de subclaves del Registro
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 81aa61dbcbfe487298725de0ac17e1367639da93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669973"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371935"
 ---
-# <a name="enumerating-registry-subkeys"></a>Enumerar subclaves del registro
+# <a name="enumerating-registry-subkeys"></a>Enumeración de subclaves del Registro
 
-En el ejemplo siguiente se usan las funciones [**RegQueryInfoKey**](/windows/desktop/api/Winreg/nf-winreg-regqueryinfokeya), [**RegEnumKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regenumkeyexa)y [**RegEnumValue**](/windows/desktop/api/Winreg/nf-winreg-regenumvaluea) para enumerar las subclaves de la clave especificada. El parámetro hKey que se pasa a cada función es un identificador de una clave abierta. Esta clave debe abrirse antes de la llamada de función y cerrarse después.
+En el ejemplo siguiente se usan las funciones [**RegQueryInfoKey**](/windows/desktop/api/Winreg/nf-winreg-regqueryinfokeya), [**RegEnumKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regenumkeyexa)y [**RegEnumValue**](/windows/desktop/api/Winreg/nf-winreg-regenumvaluea) para enumerar las subclaves de la clave especificada. El parámetro hKey pasado a cada función es un identificador para una clave abierta. Esta clave debe abrirse antes de la llamada a la función y cerrarse después.
 
 
 ```C++

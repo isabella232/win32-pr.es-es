@@ -12,12 +12,12 @@ keywords:
 - waveOutOpen ( Función)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adf386c517d900fc4b0450f169060c6be6365df57ab0fcb3e6953337f4f67fbc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c3e7541a00b43b5fb2267a17d4de8bb017823c3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892435"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371203"
 ---
 # <a name="using-a-callback-function-to-process-driver-messages"></a>Usar una función de devolución de llamada para procesar mensajes del controlador
 

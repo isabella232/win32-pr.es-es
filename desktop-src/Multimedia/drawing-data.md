@@ -12,12 +12,12 @@ keywords:
 - Macro ICDrawEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dcbb9f0c9c39da17c4f60af3dfb9c3a7e0179ebf4c8ed6e5bcac4cdc6f24828
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 62f598ef47bbbf6b8f53c7fb2639c9ddff1390ab
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119496715"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370393"
 ---
 # <a name="drawing-data"></a>Dibujar datos
 

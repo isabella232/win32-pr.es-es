@@ -10,12 +10,12 @@ keywords:
 - Funciones de MCIWnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85c2d88bf94e30b041db9170c5412b0597a59399d11b5cb8ab52dd8f62379a12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c8a8905a56a15fbca5a7acedb40dc691aa49f84
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783434"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372367"
 ---
 # <a name="mciwnd-functions"></a>Funciones de MCIWnd
 

@@ -4,18 +4,18 @@ description: Descompresión de datos
 ms.assetid: 1faf0238-7bef-4363-9bbc-44737600c946
 keywords:
 - Administrador de compresión de vídeo (VCM), descomprimir datos
-- VCM (administrador de compresión de vídeo), descompresión de datos
-- ICDecompressBegin macro
+- VCM (administrador de compresión de vídeo), descomprimir datos
+- MACRO ICDecompressBegin
 - Función ICDecompress
-- MACRO ICDecompressEnd
+- Macro ICDecompressEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a213a4d4762f782da817773aac6e8838155561ae47129dd998dad7a82ac5a4f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03b44ea375bb1f2b5c41a361ca7f31387439b610
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785435"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370381"
 ---
 # <a name="decompressing-data"></a>Descompresión de datos
 

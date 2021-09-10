@@ -1,30 +1,30 @@
 ---
-description: En este tema se muestra cómo crear y destruir temporizadores y cómo usar un temporizador para capturar la entrada del mouse a intervalos especificados.
+description: En este tema se muestra cómo crear y destruir temporizadores, y cómo usar un temporizador para capturar la entrada del mouse a intervalos especificados.
 ms.assetid: eee54078-759f-4fd4-9cf4-10a8bde888b7
 title: Uso de temporizadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7922be60012ae81ce1971afe6f2300f54689f7a6cc8d7f088df2fb126e834ab5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 440c6479aca9d5394c2ad9ade87dd77b1474f31f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028313"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370957"
 ---
 # <a name="using-timers"></a>Uso de temporizadores
 
-En este tema se muestra cómo crear y destruir temporizadores y cómo usar un temporizador para capturar la entrada del mouse a intervalos especificados.
+En este tema se muestra cómo crear y destruir temporizadores, y cómo usar un temporizador para capturar la entrada del mouse a intervalos especificados.
 
 En este tema se incluyen las siguientes secciones.
 
--   [Crear un temporizador](#creating-a-timer)
+-   [Creación de un temporizador](#creating-a-timer)
 -   [Destruir un temporizador](#destroying-a-timer)
 -   [Uso de funciones de temporizador para capturar la entrada del mouse](#using-timer-functions-to-trap-mouse-input)
 -   [Temas relacionados](#related-topics)
 
-## <a name="creating-a-timer"></a>Crear un temporizador
+## <a name="creating-a-timer"></a>Creación de un temporizador
 
-En el ejemplo siguiente se usa [**la función SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) para crear dos temporizadores. El primer temporizador se establece para cada 10 segundos y el segundo para cada cinco minutos.
+En el ejemplo siguiente se usa [**la función SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) para crear dos temporizadores. El primer temporizador se establece cada 10 segundos y el segundo cada cinco minutos.
 
 
 ```
@@ -43,7 +43,7 @@ SetTimer(hwnd,             // handle to main window
 
 
 
-Para procesar los [**mensajes WM \_ TIMER**](wm-timer.md) generados por estos temporizadores, agregue una instrucción de caso **\_ DE TEMPORIZADOR DE WM** al procedimiento de ventana para el parámetro *hwnd.*
+Para procesar los [**mensajes DE \_ TEMPORIZADOR WM**](wm-timer.md) generados por estos temporizadores, agregue una instrucción case de WM **\_ TIMER** al procedimiento de ventana para el *parámetro hwnd.*
 
 
 ```
@@ -65,7 +65,7 @@ case WM_TIMER:
 
 
 
-Una aplicación también puede crear un temporizador cuyos mensajes [**WM \_ TIMER**](wm-timer.md) no se procesan mediante el procedimiento de ventana principal, sino por una función de devolución de llamada definida por la aplicación, como en el ejemplo de código siguiente, que crea un temporizador y usa la función de devolución de llamada **MyTimerProc para** procesar los mensajes **WM \_ TIMER** del temporizador.
+Una aplicación también puede crear un temporizador cuyos mensajes [**WM \_ TIMER**](wm-timer.md) no se procesan mediante el procedimiento de ventana principal, sino por una función de devolución de llamada definida por la aplicación, como en el ejemplo de código siguiente, que crea un temporizador y usa la función de devolución de llamada **MyTimerProc para procesar** los mensajes WM TIMER del **temporizador. \_**
 
 
 ```
@@ -81,7 +81,7 @@ SetTimer(hwnd,                // handle to main window
 
 La convención de llamada para **MyTimerProc** debe basarse en la función de devolución de llamada [*TimerProc.*](/windows/win32/api/winuser/nc-winuser-timerproc)
 
-Si la aplicación crea un temporizador sin especificar un identificador de ventana, la aplicación debe supervisar la cola de mensajes para los mensajes [**WM \_ TIMER**](wm-timer.md) y enviarlos a la ventana adecuada.
+Si la aplicación crea un temporizador sin especificar un identificador de ventana, la aplicación debe supervisar la cola de mensajes para los mensajes [**de WM \_ TIMER**](wm-timer.md) y enviarlos a la ventana adecuada.
 
 
 ```
@@ -110,7 +110,7 @@ MSG msg;          // message structure
 
 ## <a name="destroying-a-timer"></a>Destruir un temporizador
 
-Las aplicaciones deben usar [**la función KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) para destruir temporizadores que ya no son necesarios. En el ejemplo siguiente se destruyen los temporizadores identificados por las constantes IDT \_ TIMER1, IDT \_ TIMER2 y IDT \_ TIMER3.
+Las aplicaciones deben usar [**la función KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) para destruir los temporizadores que ya no son necesarios. En el ejemplo siguiente se destruyen los temporizadores identificados por las constantes IDT \_ TIMER1, IDT \_ TIMER2 y IDT \_ TIMER3.
 
 
 ```
@@ -125,9 +125,9 @@ KillTimer(hwnd, IDT_TIMER3);
 
 ## <a name="using-timer-functions-to-trap-mouse-input"></a>Uso de funciones de temporizador para capturar la entrada del mouse
 
-A veces es necesario evitar más entradas mientras se tiene un puntero del mouse en la pantalla. Una manera de lograrlo es crear una rutina especial que captura la entrada del mouse hasta que se produce un evento específico. Muchos desarrolladores hacen referencia a esta rutina como "creación de una ratón".
+A veces es necesario evitar más entradas mientras tiene un puntero del mouse en la pantalla. Una manera de hacerlo es crear una rutina especial que captura la entrada del mouse hasta que se produce un evento específico. Muchos desarrolladores hacen referencia a esta rutina como "creación de una trampa del mouse".
 
-En el ejemplo siguiente se usan [**las funciones SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) y [**KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) para capturar la entrada del mouse. **SetTimer crea** un temporizador que envía un mensaje [**WM \_ TIMER**](wm-timer.md) cada 10 segundos. Cada vez que la aplicación recibe un **mensaje \_ WM TIMER,** registra la ubicación del puntero del mouse. Si la ubicación actual es la misma que la ubicación anterior y se minimiza la ventana principal de la aplicación, la aplicación mueve el puntero del mouse al icono. Cuando se cierra la aplicación, **KillTimer** detiene el temporizador.
+En el ejemplo siguiente se usan las [**funciones SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) [**y KillTimer**](/windows/win32/api/winuser/nf-winuser-killtimer) para capturar la entrada del mouse. **SetTimer crea** un temporizador que envía un mensaje [**WM \_ TIMER**](wm-timer.md) cada 10 segundos. Cada vez que la aplicación recibe un **mensaje \_ WM TIMER,** registra la ubicación del puntero del mouse. Si la ubicación actual es la misma que la ubicación anterior y se minimiza la ventana principal de la aplicación, la aplicación mueve el puntero del mouse al icono. Cuando se cierra la aplicación, **KillTimer** detiene el temporizador.
 
 
 ```
@@ -217,7 +217,7 @@ LONG APIENTRY MainWndProc(
 
 
 
-Aunque en el ejemplo siguiente también se muestra cómo capturar la entrada del mouse, procesa el mensaje [**\_ WM TIMER**](wm-timer.md) a través de la función de devolución de llamada **MyTimerProc** definida por la aplicación, en lugar de a través de la cola de mensajes de la aplicación.
+Aunque en el ejemplo siguiente también se muestra cómo capturar la entrada del mouse, procesa el mensaje [**WM \_ TIMER**](wm-timer.md) a través de la función de devolución de llamada **MyTimerProc** definida por la aplicación, en lugar de a través de la cola de mensajes de la aplicación.
 
 
 ```

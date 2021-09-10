@@ -129,16 +129,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e937ad9cc32a7837303d535b73b176c7e16f2d0ab0033bf625f629d2d5f7bc7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d789a233df777d98860e519f7e877a030aba55a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118504357"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "124360837"
 ---
 # <a name="directdraw-return-codes"></a>Códigos de retorno de DirectDraw
 
-Los errores se representan mediante valores negativos y no se pueden combinar. En esta tabla se enumeran los valores que pueden devolver todos los métodos de las funciones [DirectDraw Interfaces](directdraw-interfaces.md) y [DirectDraw](directdraw-functions.md). Para obtener una lista de los códigos de error que puede devolver cada método o función, vea la descripción del método o la función.
+Los errores se representan mediante valores negativos y no se pueden combinar. En esta tabla se enumeran los valores que pueden devolver todos los métodos de las funciones [DirectDraw Interfaces](directdraw-interfaces.md) [y DirectDraw](directdraw-functions.md). Para obtener una lista de los códigos de error que puede devolver cada método o función, vea la descripción del método o la función.
 
 <dl> <dt>
 
@@ -167,7 +167,7 @@ El objeto ya se ha inicializado.
 
 
 
-Un objeto DirectDrawClipper se adjunta a una superficie de origen que se ha pasado a una llamada al método [**IDirectDrawSurface7::BltFast.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast)
+Un objeto DirectDrawClipper se adjunta a una superficie de origen que ha pasado a una llamada al método [**IDirectDrawSurface7::BltFast.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast)
 
 
 </dt> </dl> </dd> <dt>
@@ -197,7 +197,7 @@ Una superficie no se puede desasociar de otra superficie solicitada.
 
 
 
-Windows puede crear más contextos de dispositivo (DC) o un controlador de dominio ha solicitado una superficie indizada por paleta cuando la superficie no tenía ninguna paleta y el modo de presentación no estaba indexado por la paleta (en este caso, DirectDraw no puede seleccionar una paleta adecuada en el controlador de dominio).
+Windows no se pueden crear más contextos de dispositivo (DC) o un controlador de dominio ha solicitado una superficie indizada por paleta cuando la superficie no tenía ninguna paleta y el modo de presentación no estaba indexado por paleta (en este caso, DirectDraw no puede seleccionar una paleta adecuada en el controlador de dominio).
 
 
 </dt> </dl> </dd> <dt>
@@ -227,7 +227,7 @@ Se rechaza el acceso a esta superficie porque se intentó bloquear la superficie
 
 
 
-Error al intentar bloquear la página de una superficie. El bloqueo de página no funciona en una superficie de memoria para mostrar o en una superficie principal emulada.
+Error al intentar bloquear la página de una superficie. El bloqueo de página no funciona en una superficie de memoria para mostrar ni en una superficie principal emulada.
 
 
 </dt> </dl> </dd> <dt>
@@ -237,12 +237,12 @@ Error al intentar bloquear la página de una superficie. El bloqueo de página n
 
 
 
-Error al intentar desbloquear una superficie en la página. El desbloqueo de páginas no funciona en una superficie de memoria para mostrar o en una superficie principal emulada.
+Error al intentar desbloquear una superficie. El desbloqueo de página no funciona en una superficie de memoria para mostrar ni en una superficie principal emulada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_CLIPPERISUSINGHWND"></span><span id="dderr_clipperisusinghwnd"></span>**DDERR \_ CLIPPERISUSINGHWND**
+<span id="DDERR_CLIPPERISUSINGHWND"></span><span id="dderr_clipperisusinghwnd"></span>**\_CLIPPERISUSINGHWND de DDERR**
 </dt> <dd> <dl> <dt>
 
 
@@ -342,12 +342,12 @@ Los datos han expirado y, por tanto, ya no son válidos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_GENERIC"></span><span id="dderr_generic"></span>**DDERR \_ GENÉRICO**
+<span id="DDERR_GENERIC"></span><span id="dderr_generic"></span>**DDERR \_ GENERIC**
 </dt> <dd> <dl> <dt>
 
 
 
-Hay una condición de error indefinido.
+Hay una condición de error no definida.
 
 
 </dt> </dl> </dd> <dt>
@@ -367,7 +367,7 @@ El alto del rectángulo proporcionado no es un múltiplo de la alineación neces
 
 
 
-Ya se ha establecido el identificador de ventana de nivel cooperativo de DirectDraw. No se puede restablecer mientras el proceso tiene superficies o paletas creadas.
+Ya se ha establecido el identificador de ventana de nivel cooperativa de DirectDraw. No se puede restablecer mientras el proceso tiene superficies o paletas creadas.
 
 
 </dt> </dl> </dd> <dt>
@@ -377,7 +377,7 @@ Ya se ha establecido el identificador de ventana de nivel cooperativo de DirectD
 
 
 
-DirectDraw no puede restaurar el estado porque el identificador de ventana de nivel cooperativo de DirectDraw se ha subclasificado.
+No se puede restaurar el estado de DirectDraw porque el identificador de ventana de nivel cooperativa de DirectDraw se ha subclasificado.
 
 
 </dt> </dl> </dd> <dt>
@@ -387,7 +387,7 @@ DirectDraw no puede restaurar el estado porque el identificador de ventana de ni
 
 
 
-La superficie no se puede restaurar porque es una superficie creada implícitamente.
+No se puede restaurar la superficie porque es una superficie creada implícitamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -427,7 +427,7 @@ DirectDraw no admite la lista de clips proporcionada.
 
 
 
-El identificador único global (GUID) pasado a la [**función DirectDrawCreate**](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate) no es un identificador de controlador directDraw válido.
+El identificador único global (GUID) pasado a la [**función DirectDrawCreate**](/windows/desktop/api/Ddraw/nf-ddraw-directdrawcreate) no es un identificador de controlador de DirectDraw válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -452,7 +452,7 @@ DirectDraw recibió un puntero que era un objeto DirectDraw no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDPARAMS"></span><span id="dderr_invalidparams"></span>**INVALIDPARAMS de DDERR \_**
+<span id="DDERR_INVALIDPARAMS"></span><span id="dderr_invalidparams"></span>**DDERR \_ INVALIDPARAMS**
 </dt> <dd> <dl> <dt>
 
 
@@ -467,12 +467,12 @@ Uno o varios de los parámetros pasados al método son incorrectos.
 
 
 
-El formato de píxel no era válido según lo especificado.
+El formato de píxel no era válido como se especificó.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_INVALIDPOSITION"></span><span id="dderr_invalidposition"></span>**INVALIDPOSITION de DDERR \_**
+<span id="DDERR_INVALIDPOSITION"></span><span id="dderr_invalidposition"></span>**DDERR \_ INVALIDPOSITION**
 </dt> <dd> <dl> <dt>
 
 
@@ -532,12 +532,12 @@ Hay más datos disponibles de los que puede contener el tamaño de búfer especi
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NEWMODE"></span><span id="dderr_newmode"></span>**DDERR \_ NEWMODE**
+<span id="DDERR_NEWMODE"></span><span id="dderr_newmode"></span>**NEWMODE de DDERR \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Novedad de DirectX 7.0. Cuando se llama a [**IDirectDraw7::StartModeTest**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) con la marca DDSMT ISTESTREQUIRED, podría devolver este valor para indicar que algunas o todas las resoluciones pueden y deben \_ probarse. [**IDirectDraw7::EvaluateMode**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode) devuelve este valor para indicar que la prueba ha cambiado a un nuevo modo de presentación.
+Novedad de DirectX 7.0. Cuando se llama a [**IDirectDraw7::StartModeTest**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) con la marca ISTESTREQUIRED de DDSMT, es posible que devuelva este valor para indicar que algunas o todas las resoluciones pueden y deben \_ probarse. [**IDirectDraw7::EvaluateMode devuelve**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode) este valor para indicar que la prueba ha cambiado a un nuevo modo de presentación.
 
 
 </dt> </dl> </dd> <dt>
@@ -547,7 +547,7 @@ Novedad de DirectX 7.0. Cuando se llama a [**IDirectDraw7::StartModeTest**](/win
 
 
 
-No hay hardware 3D ni emulación presente.
+No hay hardware 3D ni emulación.
 
 
 </dt> </dl> </dd> <dt>
@@ -627,7 +627,7 @@ No hay compatibilidad de hardware con la clave de color de destino.
 
 
 
-Se llamó a una función create sin el [**método IDirectDraw7::SetCooperativeLevel.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel)
+Se llamó a una función create [**sin el método IDirectDraw7::SetCooperativeLevel.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel)
 
 
 </dt> </dl> </dd> <dt>
@@ -737,7 +737,7 @@ No hay GDI presente.
 
 
 
-Clipper notificación requiere un identificador de ventana o no se ha establecido previamente ningún identificador de ventana como identificador de ventana de nivel cooperativo.
+Clipper notificación requiere un identificador de ventana o no se ha establecido previamente ningún identificador de ventana como identificador de ventana de nivel cooperativa.
 
 
 </dt> </dl> </dd> <dt>
@@ -807,7 +807,7 @@ Se llama al método [**IDirectDrawSurface7::GetOverlayPosition**](/windows/deskt
 
 
 
-No hay ningún hardware superpuesto presente o disponible.
+No hay ningún hardware de superposición presente o disponible.
 
 
 </dt> </dl> </dd> <dt>
@@ -847,7 +847,7 @@ No hay ningún hardware de operación de trama adecuado presente o disponible.
 
 
 
-No hay ningún hardware de rotación presente o disponible.
+No hay hardware de rotación presente ni disponible.
 
 
 </dt> </dl> </dd> <dt>
@@ -867,7 +867,7 @@ No hay ningún hardware estéreo presente o disponible.
 
 
 
-No hay compatibilidad de hardware para la extensión.
+No hay compatibilidad con hardware para el stretching.
 
 
 </dt> </dl> </dd> <dt>
@@ -877,7 +877,7 @@ No hay compatibilidad de hardware para la extensión.
 
 
 
-No hay hardware presente que admita superficies estéreo.
+No hay ningún hardware que admita superficies estéreo.
 
 
 </dt> </dl> </dd> <dt>
@@ -962,7 +962,7 @@ Se intentó llamar a un método de interfaz de un objeto DirectDraw creado por [
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_NOTLOADED"></span><span id="dderr_notloaded"></span>**DDERR \_ NO CARGADO**
+<span id="DDERR_NOTLOADED"></span><span id="dderr_notloaded"></span>**DDERR \_ NOTLOADED**
 </dt> <dd> <dl> <dt>
 
 
@@ -1007,7 +1007,7 @@ La superficie que se usa no es una superficie basada en paleta.
 
 
 
-No hay compatibilidad de hardware para las operaciones sincronizadas verticales en blanco.
+No hay compatibilidad de hardware para las operaciones sincronizadas en blanco verticales.
 
 
 </dt> </dl> </dd> <dt>
@@ -1017,7 +1017,7 @@ No hay compatibilidad de hardware para las operaciones sincronizadas verticales 
 
 
 
-La operación para crear un búfer z en la memoria para mostrar o para realizar una transferencia de bloque de bits (bitblt), mediante un búfer z no se puede llevar a cabo porque no hay compatibilidad de hardware con los búferes z.
+La operación para crear un búfer z en la memoria de presentación o para realizar una transferencia de bloques de bits (bitblt), mediante un búfer z no se puede realizar porque no hay compatibilidad de hardware con los búferes z.
 
 
 </dt> </dl> </dd> <dt>
@@ -1027,12 +1027,12 @@ La operación para crear un búfer z en la memoria para mostrar o para realizar 
 
 
 
-Las superficies superpuestas no se pueden superponer en capas z, en función del orden z porque el hardware no admite la ordenación z de las superposiciones.
+Las superficies superpuestas no pueden estar en capas z, en función del orden z porque el hardware no admite la ordenación z de superposiciones.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OUTOFCAPS"></span><span id="dderr_outofcaps"></span>**OUTOFCAPS de DDERR \_**
+<span id="DDERR_OUTOFCAPS"></span><span id="dderr_outofcaps"></span>**DDERR \_ OUTOFCAPS**
 </dt> <dd> <dl> <dt>
 
 
@@ -1297,7 +1297,7 @@ El puerto de vídeo no está activo.
 
 
 
-La operación bitblt anterior que transfiere información hacia o desde esta superficie está incompleta.
+La operación bit a bit anterior que transfiere información hacia o desde esta superficie está incompleta.
 
 
 </dt> </dl> </dd> <dt>

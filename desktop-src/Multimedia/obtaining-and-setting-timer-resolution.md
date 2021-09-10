@@ -4,27 +4,27 @@ description: Obtener y establecer la resolución del temporizador
 ms.assetid: 237a6770-89b9-4922-b9e9-0e0bf3e0c9b6
 keywords:
 - temporizadores multimedia, resolución
-- temporizadores, resolución
+- timers,resolution
 - resolución mínima del temporizador
 - resolución máxima del temporizador
 - temporizadores multimedia, resolución máxima
 - temporizadores, resolución máxima
 - temporizadores multimedia, resolución mínima
 - temporizadores, resolución mínima
-- timeGetDevCaps función)
-- timeBeginPeriod función)
+- función timeGetDevCaps
+- función timeBeginPeriod
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: af5feca59e6fb4c528d6042b00eb7aa23263245c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685520"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370981"
 ---
 # <a name="obtaining-and-setting-timer-resolution"></a>Obtener y establecer la resolución del temporizador
 
-En el ejemplo siguiente se llama a la función [**timeGetDevCaps**](/windows/desktop/api/TimeAPI/nf-timeapi-timegetdevcaps) para determinar las resoluciones de temporizador mínima y máxima admitidas por los servicios del temporizador. Antes de configurar los eventos de temporizador, en el ejemplo se establece la resolución mínima del temporizador mediante la función [**timeBeginPeriod**](/windows/desktop/api/TimeAPI/nf-timeapi-timebeginperiod) .
+En el ejemplo siguiente se llama [**a la función timeGetDevCaps**](/windows/desktop/api/TimeAPI/nf-timeapi-timegetdevcaps) para determinar las resoluciones de temporizador mínimas y máximas admitidas por los servicios de temporizador. Antes de configurar cualquier evento de temporizador, el ejemplo establece la resolución mínima del temporizador mediante la [**función timeBeginPeriod.**](/windows/desktop/api/TimeAPI/nf-timeapi-timebeginperiod)
 
 
 ```C++
@@ -48,12 +48,12 @@ timeBeginPeriod(wTimerRes);
 
 <dl> <dt>
 
-[Usar temporizadores multimedia](using-multimedia-timers.md)
+[Uso de temporizadores multimedia](using-multimedia-timers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 816aeb26455ba375b4446edc275ec4fbaa318b67b1fea64bd6049760f45d8235
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d851f73df7adbc205585eb7c69ad9d4d969aba66
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135448"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371395"
 ---
 # <a name="wm_cap_dlg_videocompression-message"></a>Mensaje \_ WM CAP \_ DLG \_ VIDEOCOMPRESSION
 
@@ -38,7 +38,7 @@ lParam = 0L;
 
 Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este mensaje con controladores de captura que proporcionen fotogramas solo en el \_ formato RGB de BI. Este mensaje es muy útil en la operación de captura de pasos para combinar la captura y la compresión en una sola operación. Es muy probable que la compresión de fotogramas con un software como parte de una operación de captura en tiempo real tarde demasiado tiempo en realizarse.
 
@@ -48,7 +48,7 @@ La compresión no afecta a los fotogramas copiados en el Portapapeles.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

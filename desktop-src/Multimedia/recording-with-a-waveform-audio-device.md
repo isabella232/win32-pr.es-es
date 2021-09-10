@@ -6,12 +6,12 @@ keywords:
 - Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f457058b6de38e8add9ccc091fce45ddf59c6b343bdf57cceda8b980722544c5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eb7ab9df07cbe9748fb082239bac20f511010ab3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689295"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371749"
 ---
 # <a name="recording-with-a-waveform-audio-device"></a>Grabación con un Waveform-Audio dispositivo
 

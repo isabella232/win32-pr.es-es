@@ -4,12 +4,12 @@ ms.assetid: 509a6fc4-ddee-4ff4-88a2-25dad4c48c2f
 title: Acerca de los temporizadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fdcaa8c7e4a46f6d64aea17c84f9b137879a915489527e1b53cb391c1817560
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3163dbfd5357de516e0202665cd76d017335593
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028513"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370952"
 ---
 # <a name="about-timers"></a>Acerca de los temporizadores
 

@@ -4,23 +4,23 @@ description: Referencia de E/S de archivos multimedia
 ms.assetid: 1f24432e-7407-4b97-80ab-0a0c40c09253
 keywords:
 - Windows multimedia, referencia de E/S de archivos
-- multimedia, referencia de E/S de archivo
+- multimedia, referencia de E/S de archivos
 - entrada multimedia, referencia de E/S de archivo
 - E/S de archivos multimedia, referencia
 - E/S de archivo, referencia
 - entrada y salida (E/S),referencia
 - E/S (entrada y salida),referencia
 - referencia de E/S de archivos multimedia, acerca de
-- Referencia de E/S de archivos multimedia, acerca de
+- referencia de E/S de archivos multimedia, acerca de
 - referencia de E/S de archivo, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06d61b06c16b12a9276adc0d858a3170dae2f7d636cc63a9ac6cc032a65c978c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a0f833b7fb6677e064c19897e276d3961038cfc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136906"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371792"
 ---
 # <a name="multimedia-file-io-reference"></a>Referencia de E/S de archivos multimedia
 

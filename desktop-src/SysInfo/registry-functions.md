@@ -4,12 +4,12 @@ ms.assetid: a490b748-42e8-462b-9a7f-a8b21438ea79
 title: Funciones del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a81f5aff4dad00691f606911c1cf092933aa121eaf7a2d25aacbcc8a83948b89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc2cfadd3753b7a269667fee22955f8465495458
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118885218"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371917"
 ---
 # <a name="registry-functions"></a>Funciones del Registro
 
@@ -99,7 +99,7 @@ Las siguientes funciones de shell se pueden usar con el Registro:
 -   [**SHRegWriteUSValue**](/windows/desktop/api/shlwapi/nf-shlwapi-shregwriteusvaluea)
 -   [**SHSetValue**](/windows/desktop/api/shlwapi/nf-shlwapi-shsetvaluea)
 
-Las siguientes son las funciones de archivo de inicialización. Recuperan información de y copian información en un archivo de inicialización definido por el sistema o por la aplicación. Estas funciones solo se proporcionan por compatibilidad con versiones de 16 bits de Windows. Las nuevas aplicaciones deben usar el registro.
+Las siguientes son las funciones de archivo de inicialización. Recuperan información de y copian información en un archivo de inicialización definido por el sistema o por la aplicación. Estas funciones solo se proporcionan para la compatibilidad con versiones de 16 bits de Windows. Las nuevas aplicaciones deben usar el registro.
 
 
 
@@ -111,7 +111,7 @@ Las siguientes son las funciones de archivo de inicialización. Recuperan inform
 | [**GetPrivateProfileString**](/windows/desktop/api/Winbase/nf-winbase-getprivateprofilestring)             | Recupera una cadena de la sección especificada en un archivo de inicialización.                           |
 | [**GetPrivateProfileStruct**](/windows/desktop/api/Winbase/nf-winbase-getprivateprofilestruct)             | Recupera los datos asociados a una clave en la sección especificada de un archivo de inicialización.       |
 | [**GetProfileInt**](/windows/desktop/api/Winbase/nf-winbase-getprofileinta)                                 | Recupera un entero de una clave en la sección especificada del Win.ini archivo.                      |
-| [**GetProfileSection**](/windows/desktop/api/Winbase/nf-winbase-getprofilesectiona)                         | Recupera todas las claves y valores de la sección especificada del Win.ini archivo.                   |
+| [**GetProfileSection**](/windows/desktop/api/Winbase/nf-winbase-getprofilesectiona)                         | Recupera todas las claves y valores de la sección especificada del Win.ini especificado.                   |
 | [**GetProfileString**](/windows/desktop/api/Winbase/nf-winbase-getprofilestringa)                           | Recupera la cadena asociada a una clave en la sección especificada del Win.ini archivo.           |
 | [**WritePrivateProfileSection**](/windows/desktop/api/Winbase/nf-winbase-writeprivateprofilesectiona)       | Reemplaza las claves y los valores de la sección especificada en un archivo de inicialización.                  |
 | [**WritePrivateProfileString**](/windows/desktop/api/Winbase/nf-winbase-writeprivateprofilestringa)         | Copia una cadena en la sección especificada de un archivo de inicialización.                              |
@@ -125,7 +125,7 @@ Las siguientes son las funciones de archivo de inicialización. Recuperan inform
 
 ## <a name="obsolete-functions"></a>Funciones obsoletas
 
-Estas funciones solo se proporcionan para la compatibilidad con versiones de 16 bits de Windows:
+Estas funciones solo se proporcionan por compatibilidad con versiones de 16 bits de Windows:
 
 -   [**RegCreateKey**](/windows/desktop/api/Winreg/nf-winreg-regcreatekeya)
 -   [**RegEnumKey**](/windows/desktop/api/Winreg/nf-winreg-regenumkeya)

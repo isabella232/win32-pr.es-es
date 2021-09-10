@@ -4,25 +4,25 @@ description: Instalación del controlador de archivos y secuencias
 ms.assetid: 8d007ea4-b75a-4b3f-965f-8091fcd4cb2f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78ac1b08fb917ee27dc871082591a9118e6e2c40588bc9eb4961f41786c1fb9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be94137df69ed35b57b1b8fbeb5c9640dd7636d6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785415"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372212"
 ---
 # <a name="file-and-stream-handler-installation"></a>Instalación del controlador de archivos y secuencias
 
 La biblioteca AVIFile usa controladores de archivos y secuencias instalados para leer y escribir archivos y secuencias AVI. Se instala un controlador cuando reside en el directorio Windows SYSTEM y el Registro contiene la siguiente información necesaria para describir e identificar un controlador:
 
 -   Identificador de clase de 16 bytes para el controlador
--   Breve descripción del controlador
+-   Una breve descripción del controlador
 -   Nombre del archivo que contiene el controlador
 -   La extensión de archivo que un controlador de archivos puede procesar
 -   Acceso a archivos y otras propiedades asociadas a un controlador de archivos
 -   Códigos de cuatro caracteres que identifican los tipos de secuencia que puede procesar un controlador de secuencias
 
-La biblioteca AVIFile consulta al Registro los controladores externos a una aplicación al abrir archivos y acceder a secuencias. El resultado de una consulta correcta devuelve el nombre de archivo de un controlador que puede procesar el archivo o el tipo de secuencia especificado en la consulta. El Registro enumera cada controlador mediante la creación de tres entradas que tienen el formato siguiente:
+La biblioteca AVIFile consulta el Registro en busca de controladores externos a una aplicación al abrir archivos y acceder a secuencias. El resultado de una consulta correcta devuelve el nombre de archivo de un controlador que puede procesar el archivo o el tipo de secuencia especificado en la consulta. El Registro enumera cada controlador mediante la creación de tres entradas que tienen el formato siguiente:
 
 
 ```C++
@@ -48,7 +48,7 @@ Estas entradas constan de las siguientes partes.
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | RAÍZ DE CLASES HKEY \_ \_                    | Identifica la entrada raíz del registro.                                                                                                                                               |
 | Clsid                                  | Identifica esta entrada como un identificador de clase.                                                                                                                                             |
-| {00010023-0000-0000-C000-00000000046} | Especifica un identificador de interfaz (IID) o un identificador de clase. Este valor es un identificador único de 16 bytes. (El identificador también se puede denominar GUID o UUID en otros manuales). |
+| {00010023-0000-0000-C000-00000000046} | Especifica un identificador de interfaz (IID) o un identificador de clase. Este valor es un identificador único de 16 bytes. (El identificador también puede denominarse GUID o UUID en otros manuales). |
 | Lector o escritor de archivos wave                | Especifica una cadena para describir el controlador. Esta cadena se puede mostrar en cuadros de diálogo para seleccionar controladores de secuencias y archivos.                                                         |
 | InProcServer32                         | Especifica el archivo (en este ejemplo, WAVEFILE.DLL) que se puede cargar para controlar esta clase.                                                                                              |
 | AVIFile                                | Especifica las propiedades de un controlador de archivos. En este ejemplo, el controlador puede leer y escribir en un archivo AVI.                                                                              |
@@ -71,7 +71,7 @@ Un controlador de archivos puede tener una o varias de sus propiedades almacenad
 
  
 
-Al crear un controlador de archivos o secuencias, puede obtener un nuevo identificador mediante la ejecución de UUIDGEN.EXE. Use siempre UUIDGEN.EXE para crear un nuevo identificador. El número hexadecimal de 16 bytes creado por este ejecutable identificará de forma única el controlador.
+Al crear un controlador de archivos o secuencias, puede obtener un identificador nuevo mediante la ejecución de UUIDGEN.EXE. Use siempre UUIDGEN.EXE para crear un nuevo identificador. El número hexadecimal de 16 bytes creado por este ejecutable identificará de forma única el controlador.
 
 La biblioteca AVIFile usa entradas adicionales en el Registro para identificar un identificador de clase basado en la extensión de archivo que un controlador de archivos puede procesar o un código de cuatro caracteres que un controlador de archivos o secuencias puede procesar. Por ejemplo, las siguientes entradas asocian un identificador de clase a la extensión de archivo . WAV y el código de cuatro caracteres "WAVE":
 
@@ -93,7 +93,7 @@ Estas entradas constan de las siguientes partes.
 | Parte                                   | Descripción                                                                                       |
 |----------------------------------------|---------------------------------------------------------------------------------------------------|
 | RAÍZ DE CLASES HKEY \_ \_                    | Identifica la entrada raíz del registro.                                                        |
-| AVIFile                                | Identifica esta entrada como una entrada utilizada por AVIFile.                                                |
+| AVIFile                                | Identifica esta entrada como una entrada usada por AVIFile.                                                |
 | Extensiones                             | Especifica la extensión de archivo (en este ejemplo, . WAV) que un controlador de archivos puede procesar.             |
 | RIFFHandlers                           | Especifica el código de cuatro caracteres (en este ejemplo, "WAVE") que un archivo o controlador de secuencias puede procesar. |
 | {00010023-0000-0000-C000-00000000046} | Especifica un identificador de interfaz (IID) o un identificador de clase.                                      |
@@ -102,9 +102,9 @@ Estas entradas constan de las siguientes partes.
 
  
 
-Si distribuye el controlador de secuencias o archivos sin una aplicación de instalación para instalarlo en el sistema del usuario, debe incluir un . Archivo REG para que el usuario pueda instalar el controlador. El usuario usará el editor del Registro para crear entradas del Registro para el controlador de secuencias o archivos.
+Si distribuye el controlador de secuencias o archivos sin una aplicación de instalación para instalarlo en el sistema del usuario, debe incluir un . Archivo REG para que el usuario pueda instalar el controlador. El usuario usará el editor del Registro para crear entradas del Registro para la secuencia o el controlador de archivos.
 
-En el ejemplo siguiente se muestra el contenido de un típico . Archivo REG. La primera entrada del ejemplo siguiente es la cadena descriptiva para el controlador. La segunda entrada identifica el archivo que contiene el controlador. La tercera entrada identifica las propiedades del controlador de archivos (en este caso, acceso de solo lectura a los archivos). La cuarta entrada asocia el tipo de archivo que procesa el controlador (en este caso, los archivos con una extensión de nombre .JPG nombre de archivo) con el identificador de clase.
+En el ejemplo siguiente se muestra el contenido de un típico . Archivo REG. La primera entrada del ejemplo siguiente es la cadena descriptiva para el controlador. La segunda entrada identifica el archivo que contiene el controlador. La tercera entrada identifica las propiedades del controlador de archivos (en este caso, el acceso de solo lectura a los archivos). La cuarta entrada asocia el tipo de archivo que procesa el controlador (en este caso, los archivos con una extensión .JPG nombre de archivo) con el identificador de clase.
 
 
 ```C++

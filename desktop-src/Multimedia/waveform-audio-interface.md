@@ -9,12 +9,12 @@ keywords:
 - interfaz de audio de forma de onda, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0657381f061238d974ab7dde5fc934c2c3438a0116712b54801be0a9351f2d00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51c2108539a13f9c603198662039cec0bf1abd37
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117800817"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371288"
 ---
 # <a name="waveform-audio-interface"></a>Waveform-Audio interfaz
 

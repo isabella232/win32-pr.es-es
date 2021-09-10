@@ -7,12 +7,12 @@ keywords:
 - Macro MCIWndGetEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 594aa63b4b620327cd8b9ae41c263c197e1a981405c2148545ae7b8d4df86c5c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 84a8e7022bdfcede526a730014a07deaf22fe66d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119497345"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372151"
 ---
 # <a name="determining-and-changing-the-current-position"></a>Determinar y cambiar la posición actual
 

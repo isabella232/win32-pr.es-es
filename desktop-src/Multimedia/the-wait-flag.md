@@ -6,12 +6,12 @@ keywords:
 - MCI_WAIT marca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 311e1a55e756cfc3c1038f6ab3ccb4b708bb066dde962afff31006dcf39b7c4f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e552650aca9cf104d2c87d7faddd0b6c85b5a6b8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117801439"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371564"
 ---
 # <a name="the-wait-flag"></a>La marca wait
 

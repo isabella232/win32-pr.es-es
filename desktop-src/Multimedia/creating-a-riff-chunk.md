@@ -15,12 +15,12 @@ keywords:
 - Fragmento de RIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d01130a34759d8445913704a37406d93a1bbce0b8ad714f4467783e4b3a63b63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adca2cca96b45ecf0313f811b5df4e966be8fc0f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144738"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371809"
 ---
 # <a name="creating-a-riff-chunk"></a>Creación de un fragmento de RIFF
 

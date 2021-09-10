@@ -4,12 +4,12 @@ ms.assetid: vs|winui|~\winui\windowsuserinterface\windowing\timers.htm
 title: Temporizadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dd8eced20e7d8b1eca5ec8a952f10798f92f1650db3c77bca76aca756cdd569
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5fa44be05acc09eafed550a200ed6bc61f79daa2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120110704"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370945"
 ---
 # <a name="timers"></a>Temporizadores
 
@@ -49,7 +49,7 @@ Un temporizador es una rutina interna que mide repetidamente un intervalo especi
 
 | Nombre                          | Descripción                                                                                                                                                                                     |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**TEMPORIZADOR \_ WM**](wm-timer.md) | Se publica en la cola de mensajes del subproceso de instalación cuando expira un temporizador. La función [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) o [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) publica el mensaje. <br/> |
+| [**TEMPORIZADOR \_ DE WM**](wm-timer.md) | Se publica en la cola de mensajes del subproceso de instalación cuando expira un temporizador. La función [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) o [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) publica el mensaje. <br/> |
 
 
 

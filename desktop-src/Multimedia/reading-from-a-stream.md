@@ -6,12 +6,12 @@ keywords:
 - Función AVIStreamInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38c56e1bd34fb9b0555c4eb0ed86944be3b7603645865144ac053604cd515cb8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cc7ecd606a33503557e7c7209bff68015756523
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118371656"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372481"
 ---
 # <a name="reading-from-a-stream"></a>Lectura desde un flujo
 
@@ -21,7 +21,7 @@ Algunos miembros de la [**estructura AVISTREAMINFO**](/windows/desktop/api/Vfw/n
 
 Si una secuencia tiene información adicional asociada, puede recuperar esta información mediante la [**función AVIStreamReadData.**](/windows/desktop/api/Vfw/nf-vfw-avistreamreaddata) Esta función devuelve la información en un búfer proporcionado por la aplicación. La información de flujo adicional puede incluir opciones de configuración para los métodos de compresión y descompresión que se usan en una secuencia. Puede obtener el tamaño de búfer necesario mediante la [**macro AVIStreamDataSize.**](/windows/desktop/api/Vfw/nf-vfw-avistreamdatasize)
 
-Puede recuperar información de formato sobre una secuencia mediante la [**función AVIStreamReadFormat.**](/windows/desktop/api/Vfw/nf-vfw-avistreamreadformat) Esta función devuelve una estructura específica del flujo en un búfer proporcionado por la aplicación. Para una secuencia de vídeo, el búfer contiene información de formato en una [**estructura BITMAPINFO.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) En el caso de una secuencia de audio, el búfer contiene información de formato en una [**estructura DE FORMATEMA O**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) [**PCMWAVEFORMAT.**](/windows/win32/api/mmreg/ns-mmreg-pcmwaveformat) Para otros tipos de flujo, el controlador de flujo devuelve información específica de la secuencia. Puede determinar el tamaño de búfer necesario mediante **AVIStreamReadFormat** y especificando una dirección de búfer **NULL** o mediante la macro [**AVIStreamFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-avistreamformatsize)
+Puede recuperar información de formato sobre una secuencia mediante la [**función AVIStreamReadFormat.**](/windows/desktop/api/Vfw/nf-vfw-avistreamreadformat) Esta función devuelve una estructura específica del flujo en un búfer proporcionado por la aplicación. Para una secuencia de vídeo, el búfer contiene información de formato en una [**estructura BITMAPINFO.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) En el caso de una secuencia de audio, el búfer contiene información de formato en una [**estructura DEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) [**o PCMWAVEFORMAT.**](/windows/win32/api/mmreg/ns-mmreg-pcmwaveformat) Para otros tipos de flujo, el controlador de flujo devuelve información específica de la secuencia. Puede determinar el tamaño de búfer necesario mediante **AVIStreamReadFormat** y especificando una dirección de búfer **NULL** o mediante la macro [**AVIStreamFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-avistreamformatsize)
 
 Puede recuperar el contenido multimedia de una secuencia mediante la [**función AVIStreamRead.**](/windows/desktop/api/Vfw/nf-vfw-avistreamread) Esta función copia los datos sin procesar de la secuencia en un búfer proporcionado por la aplicación. En el caso de las secuencias de vídeo, esta función recupera las imágenes de mapa de bits que son el contenido del fotograma. En el caso de las secuencias de audio, esta función recupera muestras de audio de forma de onda que son el contenido del sonido. Puede determinar el tamaño de búfer necesario mediante **AVIStreamRead** y especificando una dirección de búfer **NULL** o mediante la macro [**AVIStreamSampleSize.**](/windows/desktop/api/Vfw/nf-vfw-avistreamsamplesize)
 

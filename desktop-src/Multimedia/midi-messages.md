@@ -6,30 +6,30 @@ keywords:
 - audio multimedia, mensajes MIDI
 - audio, mensajes DE AUDIO
 - Interfaz digital de instrumentar música (MIDI),messages
-- MIDI (Interfaz digital de instrumentar música),messages
+- MIDI (Interfaz digital instrumentable), mensajes
 - referencia de MIDI,messages
 - Referencia de MIDI, mensajes
 - Mensajes DE MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c45c7c9f101c931591857d3957df0f0cfd00a4ecaff61c31f6f69ef24b36deff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63a49e918a4f06efbafd5d8f61848111d3331153
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119525135"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370777"
 ---
 # <a name="midi-messages"></a>Mensajes DE MIDI
 
 Los mensajes siguientes se usan con MIDI.
 
--   [**\_MIM Cerca**](mim-close.md)
--   [**\_MIM Datos**](mim-data.md)
--   [**\_MIM Error**](mim-error.md)
+-   [**\_MIM CERCA**](mim-close.md)
+-   [**\_MIM DATOS**](mim-data.md)
+-   [**\_MIM ERROR**](mim-error.md)
 -   [**\_MIM LONGDATA**](mim-longdata.md)
 -   [**\_MIM LONGERROR**](mim-longerror.md)
 -   [**\_MIM MOREDATA**](mim-moredata.md)
--   [**\_MIM Abierto**](mim-open.md)
+-   [**\_MIM ABIERTO**](mim-open.md)
 -   [**MM \_ MIM \_ CLOSE**](mm-mim-close.md)
 -   [**MM \_ MIM \_ DATA**](mm-mim-data.md)
 -   [**MM \_ MIM \_ ERROR**](mm-mim-error.md)

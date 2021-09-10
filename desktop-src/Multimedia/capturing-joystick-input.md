@@ -1,22 +1,22 @@
 ---
-title: Captura de entradas de joystick
-description: Captura de entradas de joystick
+title: Captura de entrada de entradas de entrada
+description: Captura de entrada de entradas de entrada
 ms.assetid: 1214fe5a-5a6a-4c6c-9b77-94eeb73f60da
 keywords:
-- joysticks, capturar entradas
-- captura de entradas de joystick
+- entradas de captura
+- captura de entrada de input
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b23fd3717ad09fd2e52f1a815f7d13b91963a13e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104149259"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371161"
 ---
-# <a name="capturing-joystick-input"></a>Captura de entradas de joystick
+# <a name="capturing-joystick-input"></a>Captura de entrada de entradas de entrada
 
-La mayor parte del código que controla el joystick está en la función de ventana principal. En la siguiente parte del controlador de mensajes, la aplicación llama a [**joySetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) para capturar la entrada desde el joystick JOYSTICKID1.
+La mayor parte del código que controla el eje está en la función de ventana principal. En la siguiente parte del controlador de mensajes, la aplicación llama [**alegSetCapture para**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) capturar la entrada desde el valor DEONID1.
 
 
 ```C++
@@ -34,6 +34,6 @@ case WM_CREATE:
 
 
 
- 
+ 
 
- 
+ 

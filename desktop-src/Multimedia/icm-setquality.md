@@ -1,9 +1,9 @@
 ---
 title: ICM_SETQUALITY mensaje (Vfw.h)
-description: El ICM \_ SETQUALITY proporciona un controlador de compresión de vídeo con un nivel de calidad para usar durante la compresión.
+description: El ICM setquality proporciona un controlador de compresión de vídeo \_ con un nivel de calidad para usar durante la compresión.
 ms.assetid: 487ff1de-7178-440a-b38d-0b82a30d7297
 keywords:
-- ICM_SETQUALITY mensaje Windows multimedia
+- ICM_SETQUALITY mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adb840b3dc283d0cd81b4662322e0571b8e687bbdd4b6e7009a6fa1786e95920
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a1523996ad336e64d4b34143cc26cd8d0937d5c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784915"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370598"
 ---
 # <a name="icm_setquality-message"></a>\_ICM Mensaje SETQUALITY
 
-El **ICM \_ setquality proporciona** un controlador de compresión de vídeo con un nivel de calidad para usar durante la compresión.
+El **ICM \_ SETQUALITY proporciona** un controlador de compresión de vídeo con un nivel de calidad para usar durante la compresión.
 
 
 ```C++

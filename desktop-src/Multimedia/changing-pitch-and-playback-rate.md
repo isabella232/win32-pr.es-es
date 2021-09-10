@@ -15,12 +15,12 @@ keywords:
 - cambiar el tono de audio de forma de onda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 006788c286476434a7ca2a3d5b79dbd6c4d8af431d74ffb4a00e03a7357777f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99eec4e29ec1c38cddb5a5f92f27643e2c9c3e6c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941283"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371209"
 ---
 # <a name="changing-pitch-and-playback-rate"></a>Cambiar el tono y la velocidad de reproducción
 
@@ -46,7 +46,7 @@ Windows proporciona las siguientes funciones para consultar y establecer velocid
 
  
 
-Las velocidades de inclinación y reproducción cambian por un factor especificado con un número de punto fijo empaquetado en un valor doubleword. Los 16 bits superiores especifican la parte entera del número; los 16 bits inferiores especifican la parte fraccionera. Por ejemplo, el valor 1.5 se representa como 0x00018000L. El valor 0,75 se representa como 0x0000C000L. Un valor de 1,0 (0x00010000) significa que la velocidad de inclinación o reproducción no cambia.
+Las velocidades de inclinación y reproducción cambian por un factor especificado con un número de punto fijo empaquetado en un valor doubleword. Los 16 bits superiores especifican la parte entera del número; los 16 bits inferiores especifican la parte fraccionera. Por ejemplo, el valor 1.5 se representa como 0x00018000L. El valor 0,75 se representa como 0x0000C000L. Un valor de 1,0 (0x00010000) significa que la velocidad de lanzamiento o reproducción no cambia.
 
  
 

@@ -6,12 +6,12 @@ keywords:
 - Función mciSendString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4efeb5801c46d89686ed3fe9fcf25b311d57d4d553c220902907ac0e70a5b7e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d1db4cb4b3d02a93adecc82d6ce95de436fb2e7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144798"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371773"
 ---
 # <a name="converting-strings"></a>Convertir cadenas
 

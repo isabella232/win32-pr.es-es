@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b274536e934f426ef5e545e758c2f7bf918d552c42085650fc7c81a6a47c842e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3b294d4c461970a3304f09088cf63a6564acd50c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807095"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371114"
 ---
 # <a name="mmiom_writeflush-message"></a>Mensaje WRITEFLUSH de MMIOM \_
 
@@ -56,7 +56,7 @@ Número de bytes que se escribirán en el archivo.
 
 Devuelve el número de bytes escritos realmente en el archivo. Si se produce un error, el valor devuelto es 1.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El procedimiento de E/S es responsable de actualizar el miembro **lDiskOffset** de la estructura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) para reflejar la nueva posición del archivo después de la operación de escritura.
 

@@ -4,12 +4,12 @@ description: Conceptos de programación de C++ y OLE
 ms.assetid: 2c6c3f29-aa5d-4e55-8c4d-16c5fb223fb9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b33c70577c07a7e5b6e9429c4262b32b43095e6902b161febcad35a7c9eddb61
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 46c47ef5ff2d89930b5d4138f12e3ebc15385a7e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808245"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372049"
 ---
 # <a name="c-and-ole-programming-concepts"></a>Conceptos de programación de C++ y OLE
 

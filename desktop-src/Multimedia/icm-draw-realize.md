@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW_REALIZE mensaje (Vfw.h)
-description: El ICM DRAW REALIZE notifica a un \_ controlador de representación que se dé cuenta de su paleta de dibujos durante el \_ dibujo. Puede enviar este mensaje explícitamente o mediante la macro ICDrawRealize.
+description: El ICM DRAW REALIZE notifica a un controlador de representación \_ que se dé cuenta de su paleta de dibujo durante el \_ dibujo. Puede enviar este mensaje explícitamente o mediante la macro ICDrawRealize.
 ms.assetid: 501540cd-41e2-4f80-abf8-2ec2179970a9
 keywords:
 - ICM_DRAW_REALIZE mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f05e9bd21cc8185afd17ec909fcf95bf3ac6bedba7477f47191b9f3d51383914
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd054c16caae55cba25c30098337e54b0ec4b681
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987250"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370556"
 ---
 # <a name="icm_draw_realize-message"></a>\_ICM Mensaje DRAW \_ REALIZE
 
-El **ICM \_ DRAW \_ REALIZE** notifica a un controlador de representación que se dé cuenta de su paleta de dibujos durante el dibujo. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawRealize.**](/windows/desktop/api/Vfw/nf-vfw-icdrawrealize)
+El **ICM \_ DRAW \_ REALIZE** notifica a un controlador de representación que se dé cuenta de su paleta de dibujo durante el dibujo. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawRealize.**](/windows/desktop/api/Vfw/nf-vfw-icdrawrealize)
 
 
 ```C++
@@ -41,24 +41,24 @@ lParam = (DWORD_PTR) (BOOL) fBackground;
 <span id="hdc"></span><span id="HDC"></span>*Hdc*
 </dt> <dd>
 
-Identificador del controlador de dominio utilizado para realizar la paleta.
+Identificador del controlador de dominio que se usa para realizar la paleta.
 
 </dd> <dt>
 
 <span id="fBackground"></span><span id="fbackground"></span><span id="FBACKGROUND"></span>*fBackground*
 </dt> <dd>
 
-Marca de fondo. Especifique **TRUE** para realizar la paleta como una tarea de fondo o **FALSE** para realizar la paleta en primer plano.
+Marca de fondo. Especifique **TRUE para** realizar la paleta como una tarea de fondo o **FALSE** para realizar la paleta en primer plano.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR OK si se realiza la paleta de dibujos o ICERR UNSUPPORTED si se realiza la paleta asociada a los datos \_ \_ descomprimidos.
+Devuelve ICERR OK si se realiza la paleta de dibujo o ICERR UNSUPPORTED si se realiza la paleta asociada a los datos \_ \_ descomprimidos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los controladores solo deben responder a este mensaje si la paleta de dibujos es diferente de la paleta descomprimida.
+Los controladores solo deben responder a este mensaje si la paleta de dibujo es diferente de la paleta descomprimida.
 
 ## <a name="requirements"></a>Requisitos
 

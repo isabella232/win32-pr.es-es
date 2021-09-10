@@ -4,15 +4,15 @@ description: Estructuras de compresión de vídeo
 ms.assetid: 129a65a7-cac3-47e0-9e9c-6e5a4a260c73
 keywords:
 - Vídeo para Windows (VFW), estructuras de VCM
-- VFW (vídeo para Windows),estructuras VCM
+- VFW (vídeo para Windows),estructuras de VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e447e87a689df068d7f1df5956c76a0e4d5f39b8d4ba3f58592f1d1e33c7fca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f42a01af4ab49b7470568ab931c95072b786251
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118370064"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372542"
 ---
 # <a name="video-compression-structures"></a>Estructuras de compresión de vídeo
 
@@ -34,7 +34,7 @@ Las estructuras siguientes se usan con compresión de vídeo.
 
 <dl> <dt>
 
-[Referencia del administrador de compresión de vídeo](video-compression-manager-reference.md)
+[Referencia del Administrador de compresión de vídeo](video-compression-manager-reference.md)
 </dt> </dl>
 
  

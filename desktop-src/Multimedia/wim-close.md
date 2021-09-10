@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7488ef0d8a6a0d36852faa93397f853efb4f76f41761b6f38dd544ddcbc398ad
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c6028ac6c45aa013138aab227e79d8d210ad70bb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119803895"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371257"
 ---
-# <a name="wim_close-message"></a>Mensaje \_ DE WIM CLOSE
+# <a name="wim_close-message"></a>Mensaje DE \_ WIM CLOSE
 
 El **mensaje CLOSE \_ de WIM** se envía a la función de devolución de llamada de entrada de audio de forma de onda dada cuando se cierra un dispositivo de entrada de audio de forma de onda. El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 

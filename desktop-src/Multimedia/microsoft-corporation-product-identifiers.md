@@ -9,12 +9,12 @@ keywords:
 - identificadores de productos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0edba7b1c7cfb0716726ac15c4cf0154b7fe6d08d31667c1296f8fadcaefd48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e3bfd9c777281a07ebd25b6b0df3f0f4336ea638
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117802835"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372337"
 ---
 # <a name="microsoft-corporation-product-identifiers"></a>Microsoft Corporation identificadores de producto
 
@@ -26,7 +26,7 @@ ms.locfileid: "117802835"
 | Códec G.711                              | MM \_ MSFT \_ ACM \_ G711                 |
 | Códec GSM 610                            | MM \_ MSFT \_ ACM \_ GSM610               |
 | Códec IMA ADPCM                          | MM \_ MSFT \_ ACM \_ IMAADPCM             |
-| Adaptador de Adaptador de                         | MM \_ PC \_ TORDO                    |
+| Adaptador de Adaptador de                         | MM \_ PC \_ VEZ                    |
 | Asignador de MIDI                              | ASIGNADOR \_ DE MM MIDI \_                    |
 | Puerto de entrada MIDI compatible con MPU 401       | MM \_ MPU401 \_ MIDIIN                  |
 | Puerto de salida MIDI compatible con MPU 401      | MM \_ MPU401 \_ MIDIOUT                 |
@@ -41,8 +41,8 @@ ms.locfileid: "117802835"
 | Puerto auxiliar de audio de MS OEM                    | MM \_ MSFT \_ WSS \_ OEM \_ AUXILIAR             |
 | Controlador mezclador de la placa de audio de MS OEM          | MEZCLADOR \_ DE MM MSFT WSS \_ \_ OEM \_           |
 | Síntesis FM estéreo de la placa de audio de MS OEM | MM \_ MSFT \_ WSS \_ OEM FM OEM FM \_ OEM \_ STEREO |
-| Entrada de forma de onda de la placa de audio de MS OEM        | MM \_ MSFT \_ WSS \_ OEM \_ WAVEIN          |
-| Salida de forma de onda de la placa de audio oem de MS       | MM \_ MSFT \_ WSS \_ WAVEOUT DE OEM \_         |
+| Entrada de forma de onda de la placa de audio de MS OEM        | MM \_ MSFT \_ WSS OEM \_ \_ WAVEIN          |
+| Salida de forma de onda de la placa de audio oem de MS       | MM \_ MSFT \_ WSS \_ \_ WAVEOUT DE OEM         |
 | MS vanilla driver aux (CD)               | MM \_ MSFT \_ GENERIC \_ AUX \_ CD          |
 | MS vanilla driver aux (line in)          | LÍNEA \_ AUXILIAR GENÉRICA DE MSFT \_ \_ \_ MM        |
 | MS vanilla driver aux (mic)              | MM \_ MSFT \_ GENERIC \_ AUX \_ MIC         |

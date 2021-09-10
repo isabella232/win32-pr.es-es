@@ -7,12 +7,12 @@ keywords:
 - referencia de AVIFile,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c0cb11b7481c055f584401b830191ff07273693aa5b12dbf768217dd00997ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb0e068a0e2d24e549d5aad41bdec9fdc96ce0af
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375632"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372020"
 ---
 # <a name="avifile-structures"></a>Estructuras AVIFile
 

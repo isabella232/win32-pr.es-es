@@ -11,12 +11,12 @@ keywords:
 - Función EditStreamSetInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8616b3560409dfd15991cbdb9c5c1ecd7492a11c3690ee3728b0e52ec8d0951a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29eb687eb36ff9dfe0b1d3477bff095bdd78a135
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117988826"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372206"
 ---
 # <a name="editing-streams"></a>Edición Secuencias
 

@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_GRAB_FRAME mensaje (Vfw.h)
-description: El mensaje \_ WM CAP GRAB FRAME recupera y muestra un único fotograma del controlador de \_ \_ captura. Después de la captura, se deshabilitan la superposición y la versión preliminar. Puede enviar este mensaje explícitamente o mediante la macro capGrabFrame.
+description: El mensaje WM \_ CAP GRAB FRAME recupera y muestra un único fotograma del controlador de \_ \_ captura. Después de la captura, se deshabilitan la superposición y la versión preliminar. Puede enviar este mensaje explícitamente o mediante la macro capGrabFrame.
 ms.assetid: 91d58c1c-53b9-4813-88c2-7a1acf641d96
 keywords:
 - WM_CAP_GRAB_FRAME mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdccfc9df0f3abac7febfa78029b4ecb351ec3044c618dc4c811e91b433f0f49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2ffd91ce767ad86ddac002bb216420b604883d7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892045"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371461"
 ---
 # <a name="wm_cap_grab_frame-message"></a>Mensaje \_ WM CAP GRAB \_ \_ FRAME
 
@@ -36,9 +36,9 @@ lParam = (LPARAM)0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener información sobre cómo instalar funciones de devolución de llamada, vea los mensajes [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR**](wm-cap-set-callback-error.md) y [**WM CAP SET \_ \_ \_ CALLBACK \_ FRAME.**](wm-cap-set-callback-frame.md)
 

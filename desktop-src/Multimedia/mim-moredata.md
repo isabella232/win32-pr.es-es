@@ -1,6 +1,6 @@
 ---
 title: MIM_MOREDATA mensaje (Mmsystem.h)
-description: El mensaje MIM MOREDATA se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje MIDI, pero la aplicación no procesa los mensajes data de MIM lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de \_ \_ entrada.
+description: El mensaje MIM MOREDATA se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje DE LÍNEA, pero la aplicación no procesa los mensajes data de MIM lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de \_ \_ entrada.
 ms.assetid: 74ed46ab-a18e-4df5-bf36-ab3dec7fafa5
 keywords:
 - MIM_MOREDATA mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 130a07d1d205e9944c7be6ab9ad1294e09d0ebdcdb81d5befc5468ff5a65218f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6342823e13a085b377a3e71f28a0f9ff016681c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119782975"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370880"
 ---
 # <a name="mim_moredata-message"></a>\_MIM Mensaje MOREDATA
 
-El **MIM \_ mensaje MOREDATA** se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje MIDI, pero la aplicación no procesa los mensajes data de [**MIM \_**](mim-data.md) lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de entrada. La función de devolución de llamada recibe este mensaje solo cuando la aplicación especifica EL ESTADO DE E/S de MIDI en la llamada \_ \_ a la función [**midiInOpen.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
+El **mensaje \_ MIM MOREDATA** se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje MIDI, pero la aplicación no procesa los mensajes DATA de [**MIM \_**](mim-data.md) lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de entrada. La función de devolución de llamada recibe este mensaje solo cuando la aplicación especifica EL ESTADO DE E/S de MIDI en la llamada \_ \_ a la función [**midiInOpen.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
 
 
 ```C++
@@ -71,11 +71,11 @@ Especifica la hora a la que el controlador de dispositivo de entrada recibió el
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación solo debe realizar una cantidad mínima de procesamiento de MIM \_ mensajes MOREDATA. (En concreto, las aplicaciones no deben llamar a la [función PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) mientras se procesa MIM \_ MOREDATA). En su lugar, la aplicación debe colocar los datos del evento en un búfer y, a continuación, devolver.
+Una aplicación solo debe realizar una cantidad mínima de procesamiento de MIM \_ mensajes MOREDATA. (En concreto, las aplicaciones no deben llamar a la [función PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) durante el procesamiento MIM \_ MOREDATA). En su lugar, la aplicación debe colocar los datos del evento en un búfer y, a continuación, devolver.
 
-Cuando una aplicación recibe un mensaje [**MIM \_ DATA**](mim-data.md) después de una serie de mensajes MOREDATA de MIM, se ha puesto al día con los eventos ENTRANTEs de MIDI y puede llamar de forma segura a funciones que requieren mucho \_ tiempo.
+Cuando una aplicación recibe un mensaje [**MIM \_ DATA**](mim-data.md) después de una serie de MIM mensajes MOREDATA, se ha puesto al día con los eventos ENTRANTEs de MIDI y puede llamar de forma segura a funciones que requieren mucho \_ tiempo.
 
 Los mensajes DE MIDI recibidos de un puerto de entrada de MIDI tienen el estado de ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado DE MIDI.
 

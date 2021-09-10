@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed3bd1c122d5e0cf62aa39266da547cd3701e43e6afbf01b853c7d24040504d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92c4aa10d9934f8cf5f5747ecb4e4eb736af2655
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118373597"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371179"
 ---
-# <a name="mm_mixm_line_change-message"></a>Mensaje \_ MM MIXM \_ LINE \_ CHANGE
+# <a name="mm_mixm_line_change-message"></a>MENSAJE DE CAMBIO DE LÍNEA DE MM \_ MIXM \_ \_
 
 Un dispositivo mezclador envía el mensaje **MM \_ MIXM \_ LINE \_ CHANGE** para notificar a una aplicación que el estado de una línea de audio en el dispositivo especificado ha cambiado. La aplicación debe actualizar su pantalla y los valores almacenados en caché para la línea de audio especificada.
 
@@ -41,18 +41,18 @@ lParam = (LPARAM) dwLineID
 <span id="hMixer"></span><span id="hmixer"></span><span id="HMIXER"></span>*hMixer*
 </dt> <dd>
 
-Identificador del dispositivo mezclador que envió el mensaje de notificación.
+Identificador al dispositivo mezclador que envió el mensaje de notificación.
 
 </dd> <dt>
 
 <span id="dwLineID"></span><span id="dwlineid"></span><span id="DWLINEID"></span>*dwLineID*
 </dt> <dd>
 
-Identificador de línea de la línea de audio que ha cambiado de estado. Este identificador es el mismo que el **miembro dwLineID** de la **estructura MIXERLINE** devuelta por la **función mixerGetLineInfo.**
+Identificador de línea de la línea de audio que ha cambiado de estado. Este identificador es el mismo que el **miembro dwLineID** de la estructura **MIXERLINE** devuelta por la **función mixerGetLineInfo.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación debe abrir un dispositivo mezclador y especificar una ventana de devolución de llamada para recibir el **mensaje MM \_ MIXM LINE \_ \_ CHANGE.**
 
@@ -60,7 +60,7 @@ Una aplicación debe abrir un dispositivo mezclador y especificar una ventana de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -68,7 +68,7 @@ Una aplicación debe abrir un dispositivo mezclador y especificar una ventana de
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

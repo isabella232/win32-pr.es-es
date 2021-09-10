@@ -12,18 +12,18 @@ keywords:
 - referencia de mezcladores de audio, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1602a9ac0631a3e81430285c8cd862215a437c72b03b41d87fad6cefa7e41827
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be1d86f305714d72631b56495753417699b1a146
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119786225"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371174"
 ---
 # <a name="audio-mixer-reference"></a>Referencia de Mixer audio
 
 En esta sección se describen las funciones, las estructuras y los mensajes asociados a los mezcladores de audio. Estos elementos se agrupan como se muestra a continuación.
 
-## <a name="querying-devices"></a>Consultar dispositivos
+## <a name="querying-devices"></a>Consulta de dispositivos
 
 -   [**MIXERCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-mixercaps)
 -   [**mixerGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetdevcaps)
@@ -32,7 +32,7 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 ## <a name="opening-and-closing"></a>Apertura y cierre
 
 -   [**mixerClose**](/windows/win32/api/mmeapi/nf-mmeapi-mixerclose)
--   [**mixerOpen**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
+-   [**mixerAbrir**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
 
 ## <a name="retrieving-mixer-identifiers"></a>Recuperación de Mixer identificadores
 
@@ -49,7 +49,7 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 -   [**MIXERCONTROLDETAILS**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta)
 -   [**MIXERCONTROLDETAILS \_ BOOLEAN**](/previous-versions//dd757295(v=vs.85))
 -   [**MIXERCONTROLDETAILS \_ LISTTEXT**](/previous-versions//dd757296(v=vs.85))
--   [**MIXERCONTROLDETAILS \_ FIRMADO**](/previous-versions//dd757297(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ SIGNED**](/previous-versions//dd757297(v=vs.85))
 -   [**MIXERCONTROLDETAILS \_ SIN SIGNO**](/previous-versions//dd757298(v=vs.85))
 -   [**mixerGetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetcontroldetails)
 -   [**mixerSetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
@@ -58,7 +58,7 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 
 -   [**mixerGetLineInfo**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
 -   [**MIXERLINE**](/windows/win32/api/mmeapi/ns-mmeapi-mixerline)
--   [**CAMBIO \_ DE CONTROL DE MIXM \_ \_ MM**](mm-mixm-control-change.md)
+-   [**CAMBIO DE CONTROL DE \_ MM MIXM \_ \_**](mm-mixm-control-change.md)
 -   [**CAMBIO \_ DE LÍNEA DE MM MIXM \_ \_**](mm-mixm-line-change.md)
 
 ## <a name="sending-user-defined-messages"></a>Envío de User-Defined mensajes

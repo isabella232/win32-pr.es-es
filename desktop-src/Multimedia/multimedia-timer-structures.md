@@ -8,16 +8,16 @@ keywords:
 - entrada multimedia, estructuras de temporizador
 - temporizadores multimedia, estructuras
 - timers,structures
-- referencia para temporizadores, estructuras
-- referencia de temporizador, estructuras
+- referencia de temporizadores, estructuras
+- referencia del temporizador, estructuras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2229d3db57fdf56e7f0eb94572b3d67becd959041119ac008d7cdf5edccc133e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d64be4a17545750e06895883338a735a59dbcb55
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038485"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372433"
 ---
 # <a name="multimedia-timer-structures"></a>Estructuras de temporizador multimedia
 

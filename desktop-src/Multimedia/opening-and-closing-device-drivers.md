@@ -13,12 +13,12 @@ keywords:
 - cerrar dispositivos MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e935ab3d0d420e735bed6e01d08c80962e134338ea9e88eaa4899e0e81cb71f3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 53d7035455baa067b81af7da980a4ae043500c7b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806295"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370933"
 ---
 # <a name="opening-and-closing-device-drivers"></a>Apertura y cierre de controladores de dispositivos
 
@@ -26,7 +26,7 @@ Debe abrir un dispositivo MIDI antes de usarlo y debe cerrarlo en cuanto termine
 
 
 
-| Valor                                | Significado                                            |
+| Value                                | Significado                                            |
 |--------------------------------------|----------------------------------------------------|
 | [**midiInClose**](/windows/win32/api/mmeapi/nf-mmeapi-midiinclose)   | Cierra un dispositivo de entrada MIDI especificado.              |
 | [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)     | Abre un dispositivo de entrada MIDI especificado para la grabación. |
@@ -39,7 +39,7 @@ Debe abrir un dispositivo MIDI antes de usarlo y debe cerrarlo en cuanto termine
 
 Cada función que abre un dispositivo MIDI toma como parámetros un identificador de dispositivo, una dirección de una ubicación de memoria y algunos parámetros únicos para los dispositivos MIDI. La ubicación de memoria se rellena con un identificador de dispositivo, que se usa para identificar el dispositivo de audio abierto en las llamadas a otras funciones de audio.
 
-Muchas funciones DE MIDI pueden aceptar un identificador de dispositivo o un identificador de dispositivo. Aunque puede usar un identificador de dispositivo siempre que use un identificador de dispositivo, no siempre puede usar un identificador de dispositivo cuando se llama a un identificador.
+Muchas funciones MIDI pueden aceptar un identificador de dispositivo o un identificador de dispositivo. Aunque puede usar un identificador de dispositivo siempre que use un identificador de dispositivo, no siempre puede usar un identificador de dispositivo cuando se llama a un identificador.
 
 > [!Note]  
 > Los dispositivos MIDI no son necesariamente compartibles, por lo que es posible que un dispositivo determinado no esté disponible cuando un usuario lo solicite. Si esto ocurre, la aplicación debe notificar al usuario y permitir que intente abrir el dispositivo de nuevo.

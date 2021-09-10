@@ -1,6 +1,6 @@
 ---
 title: ICM_ABOUT mensaje (Vfw.h)
-description: El ICM mensaje ABOUT notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo Acerca de o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro \_ de diálogo Acerca de. Puede enviar este mensaje explícitamente o mediante la macro ICAbout.
+description: El ICM acerca de notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo Acerca de o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro \_ de diálogo Acerca de. Puede enviar este mensaje explícitamente o mediante la macro ICAbout.
 ms.assetid: 6eca69a3-0463-48e6-befb-5003b7515e7d
 keywords:
 - ICM_ABOUT mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bf47ff93ef1986d805b2cb37697fdf4d86876c5552fe6aeffb00ff172673018
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1e03e88993ba1e345a3ea32a9de7adb2d63abe9
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785075"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370304"
 ---
 # <a name="icm_about-message"></a>\_ICM Mensaje ABOUT
 

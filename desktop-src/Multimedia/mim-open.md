@@ -1,6 +1,6 @@
 ---
 title: MIM_OPEN mensaje (Mmsystem.h)
-description: El MIM open se envía a una función de devolución de llamada de entrada DE MIDI cuando se abre \_ un dispositivo de entrada DE LÍNEA.
+description: El MIM open se envía a una función de devolución de llamada \_ de entrada DE MIDI cuando se abre un dispositivo de entrada DE MIDI.
 ms.assetid: c7a8b856-aedd-457d-8a21-0ec2e9303960
 keywords:
 - MIM_OPEN mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15cacc21fd31810adf3188cb1ba267c9727715a0426c98d18f231eeec19b9691
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 49fcfd05ef7702fbc7bf3108365e49660071ae9a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428125"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370885"
 ---
 # <a name="mim_open-message"></a>\_MIM Mensaje OPEN
 
-El **MIM \_ open** se envía a una función de devolución de llamada de entrada DE MIDI cuando se abre un dispositivo de entrada DE LÍNEA.
+El **MIM \_ open** se envía a una función de devolución de llamada de entrada DE MIDI cuando se abre un dispositivo de entrada DE MIDI.
 
 
 ```C++
@@ -41,14 +41,14 @@ dwParam2 = reserved
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Reservado; no se usan.
+Reservado; no use.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Reservado; no se usan.
+Reservado; no use.
 
 </dd> </dl>
 

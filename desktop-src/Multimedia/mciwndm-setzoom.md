@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_SETZOOM mensaje (Vfw.h)
-description: El mensaje SETZOOM de MCIWNDM \_ cambia el tamaño de una imagen de vídeo según un factor de zoom. Este marco ajusta el tamaño de una ventana de MCIWnd manteniendo una relación de aspecto constante. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetZoom.
+description: El mensaje MCIWNDM \_ SETZOOM cambia el tamaño de una imagen de vídeo según un factor de zoom. Este marco ajusta el tamaño de una ventana de MCIWnd mientras se mantiene una relación de aspecto constante. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetZoom.
 ms.assetid: c899b678-5ba7-4f0a-9ef9-c5370b3b4ea8
 keywords:
 - MCIWNDM_SETZOOM mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbcdd40206332df442bbae32975b0d888bbe39bc377a189d40e215888e4a6d0f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80ecb513735c4e62266892e8ad55c7bf5daca151
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807585"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370693"
 ---
 # <a name="mciwndm_setzoom-message"></a>Mensaje SETZOOM de MCIWNDM \_
 
-El **mensaje \_ SETZOOM de MCIWNDM** cambia el tamaño de una imagen de vídeo según un factor de zoom. Este marco ajusta el tamaño de una ventana de MCIWnd manteniendo una relación de aspecto constante. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetZoom.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetzoom)
+El **mensaje MCIWNDM \_ SETZOOM** cambia el tamaño de una imagen de vídeo según un factor de zoom. Este marco ajusta el tamaño de una ventana de MCIWnd mientras se mantiene una relación de aspecto constante. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetZoom.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetzoom)
 
 
 ```C++

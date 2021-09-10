@@ -7,15 +7,15 @@ keywords:
 - audio, mensajes de forma de onda
 - audio de forma de onda, mensajes
 - referencia de audio de forma de onda, mensajes
-- referencia de audio wavefore,messages
+- referencia de audio wavefore, mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f670a2a5aff4c2754c2ae3d8fed846cb8ec71777d69ae125fe705f30e39ad3a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d397f7b046c01c93e090a14579c203e87caae73f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369865"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371234"
 ---
 # <a name="waveform-messages"></a>Mensajes de forma de onda
 
@@ -26,7 +26,7 @@ ms.locfileid: "118369865"
 -   [**MM \_ WOM \_ DONE**](mm-wom-done.md)
 -   [**MM \_ WOM \_ OPEN**](mm-wom-open.md)
 -   [**WIM \_ CLOSE**](wim-close.md)
--   [**DATOS \_ DE WIM**](wim-data.md)
+-   [**DATOS DE \_ WIM**](wim-data.md)
 -   [**WIM \_ OPEN**](wim-open.md)
 -   [**WOM \_ CLOSE**](wom-close.md)
 -   [**WOM \_ DONE**](wom-done.md)

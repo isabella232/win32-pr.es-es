@@ -7,12 +7,12 @@ keywords:
 - controles, botones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81e5664166d20f9195a33d03534f792a4262b291bc3db34194fd05e06681563a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bcdc187cfba244bb2b8c28c37e3677593f99870
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118140314"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372289"
 ---
 # <a name="joystick-position"></a>Posición del puesto
 

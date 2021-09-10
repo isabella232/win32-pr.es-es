@@ -3,33 +3,33 @@ title: Notificaciones de notificación de notificación
 description: Notificaciones de notificación de notificación
 ms.assetid: 523dfae3-bbd5-4955-96f3-1710e29d003f
 keywords:
-- y, por último, notificaciones
-- sms, mensajes
+- así como notificaciones
+- y, por último, mensajes
 - capturó los contrabandos
-- adaptadores desconectados
+- interruptores desconectados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86666645a4589d1ecd638b81541aab2954839ca08889ef567b69f4abda17d211
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2791f8da14107d50afe90d8efbdbfe79acba3093
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118140336"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372290"
 ---
 # <a name="joystick-notifications"></a>Notificaciones de notificación de notificación
 
-Puede capturar mensajes de mensajes de mensajes directos que se enviarán a una función mediante la [**función fuesetCapture.**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) Solo una aplicación a la vez puede capturar mensajes de un país, pero puede consultar el objeto desde otra aplicación mediante la [**funcióngetGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) [**ogetPosEx.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
+Puede capturar mensajes de mensajes de mensajes de mensajes directos que se enviarán a una función mediante la [**función soapSetCapture.**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) Solo una aplicación a la vez puede capturar mensajes de un grupo, pero puede consultar el objeto desde otra aplicación mediante la [**funcióngetGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) [**ogetPosEx.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
 
 > [!Note]  
-> Un mensaje de mensaje de mensaje no puede llegar a la aplicación que capturó el objeto si una segunda aplicación usa **fuepoGetPos** **ogetPosEx** para consultar el destino aproximadamente al mismo tiempo que se envía el mensaje. En este caso, la segunda aplicación podría interceptar el mensaje.
+> Un mensaje de sms puede no llegar a la aplicación que capturó el paquete si una segunda aplicación **usagetPos** **ogetGetPosEx** para consultar el paquete aproximadamente al mismo tiempo que se envía el mensaje. En este caso, la segunda aplicación podría interceptar el mensaje.
 
  
 
-Si desea capturar mensajes de dos velocidades conectadas al sistema, use [**hasta dos veces,**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) una vez para cada uno. La ventana recibe mensajes independientes y distintos para cada dispositivo.
+Si desea capturar mensajes de dos dispositivos conectados al sistema, use el método [**de captura de**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) datos de dos veces, una vez para cada uno de ellos. La ventana recibe mensajes independientes y distintos para cada dispositivo.
 
-Puede liberar un objeto capture mediante la [**función de releaseCapture.**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture) Si una aplicación no libera el objeto antes de finalizar, se libera automáticamente poco después de que se destruya la ventana de captura.
+Puede liberar un objeto capture mediante la [**función de releaseCapture.**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture) Si una aplicación no libera el yerba antes de finalizar, este se libera automáticamente poco después de que se destruye la ventana de captura.
 
-No se puede capturar un resalte desconectado. La **funciónnchSetCapture** devuelve UNPLUGGED de DRAGERR \_ si el dispositivo especificado está desconectado.
+No se puede capturar un interruptor desconectado. La **funciónvoluciónsetCapture** devuelve \_ ELECONJUNTO DE TOR SI el dispositivo especificado está desconectado.
 
  
 

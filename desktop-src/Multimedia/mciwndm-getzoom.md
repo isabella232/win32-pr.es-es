@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52c247230ffe6269f77b906d874a4cf82a21ed8d3388ffa18193417603e45fbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcb4ae1883787f1b86dcc17f2d4a3e0e0ee29ced
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118374146"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370688"
 ---
 # <a name="mciwndm_getzoom-message"></a>Mensaje GETZOOM de MCIWNDM \_
 
@@ -36,17 +36,17 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve los valores más recientes usados [**con MCIWNDM \_ SETZOOM.**](mciwndm-setzoom.md)
+Devuelve los valores más recientes usados con [**MCIWNDM \_ SETZOOM.**](mciwndm-setzoom.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Un valor devuelto de 100 indica que la imagen no está zoomed. Un valor de 200 indica que la imagen se ha ampliado al doble de su tamaño original. Un valor de 50 indica que la imagen se reduce a la mitad de su tamaño original.
+Un valor devuelto de 100 indica que la imagen no está zoomed. Un valor de 200 indica que la imagen se amplía al doble de su tamaño original. Un valor de 50 indica que la imagen se reduce a la mitad de su tamaño original.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -54,7 +54,7 @@ Un valor devuelto de 100 indica que la imagen no está zoomed. Un valor de 200 i
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

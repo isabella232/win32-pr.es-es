@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_SET_CALLBACK_FRAME mensaje (Vfw.h)
-description: El mensaje WM CAP SET CALLBACK FRAME establece una función de devolución \_ de llamada de versión preliminar en la \_ \_ \_ aplicación. AVICap llama a este procedimiento cuando la ventana de captura captura fotogramas de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnFrame.
+description: El mensaje WM \_ CAP \_ SET \_ CALLBACK FRAME establece una función de \_ devolución de llamada de versión preliminar en la aplicación. AVICap llama a este procedimiento cuando la ventana de captura captura fotogramas de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnFrame.
 ms.assetid: 3882e6f6-c48c-4e50-9697-cbdf5b9342a5
 keywords:
 - WM_CAP_SET_CALLBACK_FRAME mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f85321483639135db31750cacf76cc5f0dc4ad42e96474efa1dc17ac84ba4a79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b91c2f30ac0875e2f45592d3aa7e0a3ce9c296b7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369513"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371473"
 ---
 # <a name="wm_cap_set_callback_frame-message"></a>Mensaje WM \_ CAP \_ SET \_ CALLBACK \_ FRAME
 
@@ -41,23 +41,23 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntero a la función de devolución de llamada de vista previa, de [**tipo capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **NULL para** este parámetro para deshabilitar una función de devolución de llamada instalada previamente.
+Puntero a la función de devolución de llamada de vista previa, de tipo [**capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **NULL para** este parámetro para deshabilitar una función de devolución de llamada instalada previamente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **si** la captura de streaming o una sesión de captura de un solo fotograma están en curso.
+Devuelve **TRUE si** se realiza **correctamente o FALSE si** la captura de streaming o una sesión de captura de un solo fotograma está en curso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La ventana de captura llama a la función de devolución de llamada antes de mostrar fotogramas de vista previa. Esto permite que una aplicación modifique el marco si lo desea. Esta función de devolución de llamada no se usa durante la captura de vídeo de streaming.
+La ventana de captura llama a la función de devolución de llamada antes de mostrar fotogramas de vista previa. Esto permite a una aplicación modificar el marco si lo desea. Esta función de devolución de llamada no se usa durante la captura de vídeo de streaming.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -65,7 +65,7 @@ La ventana de captura llama a la función de devolución de llamada antes de mos
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

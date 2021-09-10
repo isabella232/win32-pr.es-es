@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_NOTIFYMODE mensaje (Vfw.h)
-description: El mensaje MCIWNDM NOTIFYMODE notifica a la ventana primaria de una aplicación que el modo de funcionamiento del \_ dispositivo MCI ha cambiado.
+description: El mensaje NOTIFYMODE de MCIWNDM notifica a la ventana primaria de una aplicación que el modo de funcionamiento del \_ dispositivo MCI ha cambiado.
 ms.assetid: 08adfa8b-4d88-4953-acd8-8a4728f9e1b6
 keywords:
 - MCIWNDM_NOTIFYMODE mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c610904512e2b39a5c0f16781c1d9f27155f7826941aebfc66fcd9259f7ee8a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fe75048a53023dab67bef4048d6149438ad54d2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119525425"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370705"
 ---
 # <a name="mciwndm_notifymode-message"></a>Mensaje NOTIFYMODE de MCIWNDM \_
 
@@ -52,7 +52,7 @@ Entero correspondiente al modo MCI.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede habilitar la notificación de los cambios de modo de un dispositivo MCI especificando el estilo de ventana MCIWNDF \_ NOTIFYMODE.
 
@@ -60,7 +60,7 @@ Puede habilitar la notificación de los cambios de modo de un dispositivo MCI es
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

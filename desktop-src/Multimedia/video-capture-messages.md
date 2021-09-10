@@ -7,12 +7,12 @@ keywords:
 - VFW (vídeo para Windows), mensajes de captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f45832d0712ef73ed4e66694f2a89abeb1431d14a540ecec910f3cd2cf75ae7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e6d775decf7a7514772e9291665f3fdf10233d6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687645"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371389"
 ---
 # <a name="video-capture-messages"></a>Mensajes de captura de vídeo
 
@@ -42,7 +42,7 @@ Los mensajes siguientes se usan con la captura de vídeo.
 -   [**WM \_ CAP \_ GET \_ USER \_ DATA**](wm-cap-get-user-data.md)
 -   [**WM \_ CAP \_ GET \_ VIDEOFORMAT**](wm-cap-get-videoformat.md)
 -   [**MARCO DE \_ CAPTURA DE EXTREMO DE \_ \_ WM**](wm-cap-grab-frame.md)
--   [**WM \_ CAP \_ GRAB \_ FRAME \_ NOSTOP**](wm-cap-grab-frame-nostop.md)
+-   [**NOSTOP \_ DEL MARCO DE CAPTURA DE EXTREMO \_ \_ \_ DE WM**](wm-cap-grab-frame-nostop.md)
 -   [**WM \_ CAP \_ PAL \_ AUTOCREATE**](wm-cap-pal-autocreate.md)
 -   [**WM \_ CAP \_ PAL \_ MANUALCREATE**](wm-cap-pal-manualcreate.md)
 -   [**WM \_ CAP \_ PAL \_ OPEN**](wm-cap-pal-open.md)
@@ -54,10 +54,10 @@ Los mensajes siguientes se usan con la captura de vídeo.
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ CAPCONTROL**](wm-cap-set-callback-capcontrol.md)
 -   [**ERROR DE \_ DEVOLUCIÓN \_ DE LLAMADA DEL CONJUNTO \_ DE LÍMITES DE \_ WM**](wm-cap-set-callback-error.md)
 -   [**MARCO DE DEVOLUCIÓN DE LLAMADA DE WM \_ CAP \_ SET \_ \_**](wm-cap-set-callback-frame.md)
--   [**ESTADO DE \_ DEVOLUCIÓN \_ DE LLAMADA DEL CONJUNTO \_ DE LÍMITES DE \_ WM**](wm-cap-set-callback-status.md)
+-   [**ESTADO DE DEVOLUCIÓN DE LLAMADA DEL CONJUNTO DE \_ \_ \_ LÍMITES \_ DE WM**](wm-cap-set-callback-status.md)
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ VIDEOSTREAM**](wm-cap-set-callback-videostream.md)
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ WAVESTREAM**](wm-cap-set-callback-wavestream.md)
--   [**RENDIMIENTO DE DEVOLUCIÓN DE LLAMADA DE WM \_ CAP \_ SET \_ \_**](wm-cap-set-callback-yield.md)
+-   [**RENDIMIENTO DE DEVOLUCIÓN DE LLAMADA DEL CONJUNTO DE \_ \_ \_ LÍMITES \_ DE WM**](wm-cap-set-callback-yield.md)
 -   [**WM \_ CAP \_ SET \_ MCI \_ DEVICE**](wm-cap-set-mci-device.md)
 -   [**SUPERPOSICIÓN \_ DE CONJUNTO DE LÍMITE DE \_ \_ WM**](wm-cap-set-overlay.md)
 -   [**WM \_ CAP \_ SET \_ PREVIEW**](wm-cap-set-preview.md)

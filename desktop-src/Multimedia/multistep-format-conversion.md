@@ -10,12 +10,12 @@ keywords:
 - Función acmFormatSuggest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7853579b7ff96a6ce9b9eaceb8ce34058be874b718659ba44c88a721a5385b4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c2e81ebd5bef17d6a97cb5735e15219c39d3116b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038465"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370340"
 ---
 # <a name="multistep-format-conversion"></a>Conversión de formato de varios pasos
 

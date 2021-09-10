@@ -10,12 +10,12 @@ keywords:
 - MM_WOM_DONE mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6aca93f23ed74a4a4974633d8345f2e897535e156ccc03f46eb0da92a2d2fdf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 73e909777c115b6b10500e081a08bde6cfe24b00
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037865"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371323"
 ---
 # <a name="processing-the-mm_wom_done-message"></a>Procesamiento del mensaje \_ DE MM WOM \_ DONE
 

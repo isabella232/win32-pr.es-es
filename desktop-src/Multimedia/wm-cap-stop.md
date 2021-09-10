@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bceac7a821a42227a388de6ebc2b9ea548156ec80d1e5baba7f1e1ad708002d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ded89ea8999fa2b29f576a6d047f5147d492bc2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369334"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371540"
 ---
-# <a name="wm_cap_stop-message"></a>Mensaje \_ DE DETENERSE DE WM CAP \_
+# <a name="wm_cap_stop-message"></a>Mensaje \_ STOP de WM CAP \_
 
 El **mensaje WM CAP \_ \_ STOP** detiene la operación de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capCaptureStop.**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop)
 
@@ -38,9 +38,9 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La operación de captura debe producir para usar este mensaje. Use el [**mensaje ABORT \_ \_ de WM CAP**](wm-cap-abort.md) para abandonar la operación de captura actual.
 
@@ -48,7 +48,7 @@ La operación de captura debe producir para usar este mensaje. Use el [**mensaje
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -56,7 +56,7 @@ La operación de captura debe producir para usar este mensaje. Use el [**mensaje
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

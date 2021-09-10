@@ -10,12 +10,12 @@ keywords:
 - reproducir archivos de audio de forma de onda, función Play Sound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa83125665e2a99cc0f47da0893cbc113c0be7a251d62eb66a91e7a1218dac5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b9d5dde46827b7892217f760c749e75e19f368f5
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687855"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372499"
 ---
 # <a name="using-playsound-to-play-waveform-audio-files"></a>Uso de PlaySound para reproducir Waveform-Audio archivos
 

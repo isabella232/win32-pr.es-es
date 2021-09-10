@@ -8,12 +8,12 @@ keywords:
 - Funciones ICDecompressEx
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5006a019fd3fcf24a08f620186af8eb09d9516e103722395ed96722b48696cb8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 25614f157436056f7f24c340f6cc6f4dbc62d9ae
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495605"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372266"
 ---
 # <a name="image-data-decompression"></a>Image-Data descompresión
 
@@ -34,13 +34,13 @@ Si desea descomprimir datos y la aplicación requiere un formato de salida espec
 
 Si el formato de salida no es importante en la aplicación, solo necesita encontrar un descomprimidor que pueda controlar el formato de entrada. Para determinar si un descomprimidor puede controlar el formato de entrada, use [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery) y especifique **NULL para** el *parámetro lpbiDst.* La aplicación puede determinar el tamaño de búfer necesario para los datos que especifican el formato de descompresión mediante el envío del mensaje GET FORMAT de [**ICM \_ \_ \_ DECOMPRESS**](icm-decompress-get-format.md) (o use la macro [**ICDecompressGetFormatSize).**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize) También puede enviar ICM GET FORMAT de **\_ DECOMPRESS \_ \_** (o la macro [**ICDecompressGetFormat)**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat) para recuperar los datos de formato. El descomprimidor devuelve su formato sugerido en una [**estructura BITMAPINFO.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) Este formato suele conservar la mayor parte de la información durante la descompresión. La aplicación debe asegurarse de que el descompresor se devuelve correctamente antes de descomprimir la información.
 
-Dado que la aplicación asigna la memoria necesaria para la descompresión, debe determinar la memoria máxima que el descompresor puede requerir para el formato de salida. El ICM mensaje GET FORMAT de **\_ DECOMPRESS \_ \_** obtiene el número de bytes que usa el descompresor para el formato predeterminado.
+Dado que la aplicación asigna la memoria necesaria para la descompresión, debe determinar la memoria máxima que el descompresor puede requerir para el formato de salida. El ICM get format de **\_ DECOMPRESS \_ \_** obtiene el número de bytes que usa el descompresor para el formato predeterminado.
 
-Si la aplicación define su propio formato mediante [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery), también debe obtener una paleta para el mapa de bits; **ICDecompressExQuery** no proporciona definiciones de paleta. (La mayoría de las aplicaciones usan formatos estándar y no necesitan obtener una paleta). La aplicación puede obtener la paleta enviando el mensaje ICM GET PALETTE de [**\_ DECOMPRESS \_ \_**](icm-decompress-get-palette.md) (o use la macro [**ICDecompressGetPalette).**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette)
+Si la aplicación define su propio formato mediante [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery), también debe obtener una paleta para el mapa de bits; **ICDecompressExQuery** no proporciona definiciones de paleta. (La mayoría de las aplicaciones usan formatos estándar y no necesitan obtener una paleta). La aplicación puede obtener la paleta mediante el envío ICM mensaje GET PALETTE de [**\_ DECOMPRESS \_ \_**](icm-decompress-get-palette.md) (o use la macro [**ICDecompressGetPalette).**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette)
 
 ## <a name="decompressor-initialization"></a>Inicialización del descomprimidor
 
-Una vez que la aplicación selecciona un descomprimidor que puede controlar los formatos de entrada y salida que necesita, puede inicializar el descomprimidor mediante la [**función ICDecompressExBegin.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexbegin) Esta función requiere el identificador de descompresión y los formatos de entrada y salida.
+Una vez que la aplicación selecciona un descompresión que puede controlar los formatos de entrada y salida que necesita, puede inicializar el descomprimidor mediante la [**función ICDecompressExBegin.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexbegin) Esta función requiere el identificador de descompresión y los formatos de entrada y salida.
 
 ## <a name="data-decompression"></a>Descompresión de datos
 

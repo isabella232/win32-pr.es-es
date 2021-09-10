@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_SET_USER_DATA mensaje (Vfw.h)
-description: El mensaje WM CAP SET USER DATA asocia un valor de datos \_ \_ LONG \_ \_ \_ PTR a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capSetUserData.
+description: El mensaje \_ WM CAP SET USER DATA asocia un valor de datos LONG \_ \_ \_ \_ PTR a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capSetUserData.
 ms.assetid: 067502e3-f009-4cf2-b612-4a0b64624416
 keywords:
 - WM_CAP_SET_USER_DATA mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea5b4a192b774572ea374b08d4a4128389281e44ee00614806841b0b007d978b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 542b8e49f740bfc265824947237841dede1f6065
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119803555"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371450"
 ---
 # <a name="wm_cap_set_user_data-message"></a>Mensaje DE DATOS DE USUARIO DE WM \_ CAP \_ SET \_ \_
 
@@ -49,7 +49,7 @@ Valor de datos que se asociará a una ventana de captura.
 
 Devuelve **TRUE si** se realiza **correctamente o FALSE** si la captura de streaming está en curso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, este mensaje se usa para apuntar a un bloque de datos asociado a una ventana de captura.
 

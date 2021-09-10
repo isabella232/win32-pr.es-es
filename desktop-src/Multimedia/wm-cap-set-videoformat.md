@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_SET_VIDEOFORMAT mensaje (Vfw.h)
-description: El mensaje \_ WM CAP \_ SET \_ VIDEOFORMAT establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la macro capSetVideoFormat.
+description: El mensaje WM \_ CAP \_ SET \_ VIDEOFORMAT establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la macro capSetVideoFormat.
 ms.assetid: 4f9cf90d-7ccb-4fc7-aad5-3d7e082526be
 keywords:
 - WM_CAP_SET_VIDEOFORMAT mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c543f613fedf54518579829d6825bd20dc4738ae03cb77f0996f8a58a123cb76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ba6154ec1532bd83f482eb81a0e286795aa3341
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135032"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371384"
 ---
-# <a name="wm_cap_set_videoformat-message"></a>Mensaje \_ \_ VIDEOFORMAT de WM CAP SET \_
+# <a name="wm_cap_set_videoformat-message"></a>Mensaje DE FORMATO DE VÍDEO DE WM \_ CAP \_ SET \_
 
-El **mensaje WM CAP SET \_ \_ \_ VIDEOFORMAT** establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la [**macro capSetVideoFormat.**](/windows/desktop/api/Vfw/nf-vfw-capsetvideoformat)
+El **mensaje WM CAP SET \_ \_ \_ VIDEOFORMAT** establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la macro [**capSetVideoFormat.**](/windows/desktop/api/Vfw/nf-vfw-capsetvideoformat)
 
 
 ```C++
@@ -54,9 +54,9 @@ Puntero a una [**estructura BITMAPINFO.**](/windows/win32/api/wingdi/ns-wingdi-b
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dado que los formatos de vídeo son específicos del dispositivo, las aplicaciones deben comprobar el valor devuelto de esta función para determinar si el controlador acepta el formato.
 

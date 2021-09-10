@@ -1,6 +1,6 @@
 ---
-title: Fabricante y identificadores de producto
-description: Fabricante y identificadores de producto
+title: Identificadores de fabricante y producto
+description: Identificadores de fabricante y producto
 ms.assetid: ab68ffd2-208f-445b-9f5c-37159edb4d4b
 keywords:
 - Windows multimedia, identificadores de fabricante
@@ -14,20 +14,20 @@ keywords:
 - empresas multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88222f35d7e865dba201ca5dc5edf229390f5611f9d6e814394e921402f8f8c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e559905ecd3e8db5bb791a32ea1d208bdf0d0c39
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138830"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372355"
 ---
-# <a name="manufacturer-and-product-identifiers"></a>Fabricante y identificadores de producto
+# <a name="manufacturer-and-product-identifiers"></a>Identificadores de fabricante y producto
 
 En este apéndice se documenta el fabricante y los identificadores de producto definidos para las aplicaciones multimedia. Estos identificadores se usan cuando una aplicación emite una consulta sobre los dispositivos instalados en un equipo. Para usar estos identificadores en la aplicación, incluya MMREG. Archivo H.
 
 -   [Identificadores de fabricante](manufacturer-identifiers.md)
 -   [Microsoft Corporation identificadores de producto](microsoft-corporation-product-identifiers.md)
--   [Controladores del Windows de sonido de Microsoft](microsoft-windows-sound-system-drivers.md)
+-   [Controladores del sistema de sonido de Microsoft Windows](microsoft-windows-sound-system-drivers.md)
 -   [Identificadores de producto](product-identifiers.md)
 
 > [!Note]  

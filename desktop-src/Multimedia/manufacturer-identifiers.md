@@ -10,12 +10,12 @@ keywords:
 - empresas multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 384a3ff6dc90104f98c323c5206b0fa4eb219484c67bdbb40db6e2b85ffad04c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd45026e6982068ef4e71afb049de2e1c6b18473
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138803"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372344"
 ---
 # <a name="manufacturer-identifiers"></a>Identificadores de fabricante
 
@@ -23,9 +23,9 @@ ms.locfileid: "118138803"
 
 | Nombre de la compañía                               | Identificador            |
 |--------------------------------------------|-----------------------|
-| Advanced Technology Computer Technology, Ltd.  | \_MMGRAIS            |
+| Advanced Gravis Computer Technology, Ltd.  | MM \_ LAIS            |
 | Antex Electronics Corporation              | MM \_ ANTEX             |
-| SOFTWARE DE APLICACIONES                              | APLICACIONES \_ MM              |
+| SOFTWARE DE APLICACIONES                              | MM \_ APPS              |
 | Artisoft, Inc.                             | MM \_ ARTISOFT          |
 | AST Research, Inc.                         | MM \_ AST               |
 | ATI Technologies, Inc.                     | MM \_ ATI               |
@@ -43,23 +43,23 @@ ms.locfileid: "118138803"
 | Dialogic Corporation                       | MM \_ DIALOGIC          |
 | Dolby Dolby Dolbyes, Inc.                   | MM \_ DOLBY             |
 | DSP Group, Inc.                            | MM \_ DSP \_ GROUP        |
-| DSP Solutions, Inc.                        | SOLUCIONES \_ DE DSP DE MM \_    |
+| DSP Solutions, Inc.                        | SOLUCIONES \_ DE DSP DE \_ MM    |
 | Echo Speech Corporation                    | MM \_ ECHO              |
 | ESS Technology, Inc.                       | MM \_ ESS               |
 | Everex Systems, Inc.                       | MM \_ EVEREX            |
 | EXAN, Ltd.                                 | MM \_ EXAN              |
-| Tsutsu, Ltd.                              | \_MMTSU           |
+| Fujitsu, Ltd.                              | \_MMTSUTSU           |
 | Magic Corporation de E/S                      | MM \_ IOMAGIC           |
-| Sistemas personales de ICL                       | MM \_ ICL \_ PS           |
+| ICL Personal Systems                       | MM \_ ICL \_ PS           |
 | Ing. C. Olivetti & C., S.p.A.              | MM \_ OLIVETTI          |
 | Integrated Circuit Systems, Inc.           | MM \_ ICS               |
 | Intel Corporation                          | MM \_ INTEL             |
 | InterActive, Inc.                          | MM \_ INTERACTIVE       |
 | Máquinas empresariales internacionales            | MM \_ IBM               |
 | Iterated Systems, Inc.                     | MM \_ ITERATEDSYS       |
-| Quer, Inc.                             | MM \_ LOGITECH          |
+| Susa, Inc.                             | MM \_ LOGITECH          |
 | Lyrrus, Inc.                               | MM \_ LYRRUS            |
-| Shishita Electric Corporation of America | MM \_ KOSHITA        |
+| Lcshita Electric Corporation of America | MM \_ GLUSHITA        |
 | Media Vision, Inc.                         | MM \_ MEDIAVISION       |
 | Metheus Corporation                        | MM \_ METHEUS           |
 | microEngineering Labs                      | MM \_ MELABS            |
@@ -70,9 +70,9 @@ ms.locfileid: "118138803"
 | NCR Corporation                            | MM \_ NCR               |
 | NEC Corporation                            | MM \_ NEC               |
 | New Media Corporation                      | MM \_ NEWMEDIA          |
-| Oki                                        | MM \_ OKI               |
+| OKI                                        | MM \_ OKI               |
 | OPTi, Inc.                                 | MM \_ OPTI              |
-| Corporation De Corporation                         | MM \_ LORÓN            |
+| Corporía de la consor                         | MM \_ LORÓN            |
 | SCALACS                                    | MM \_ SCALACS           |
 | Seili Corporation Corporation, Inc.              | MM \_ EPSON             |
 | Sierra Semiconductor Corporation           | MM \_ SIERRA            |

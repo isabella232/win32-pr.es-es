@@ -3,7 +3,7 @@ title: Consulta y establecimiento del tempo
 description: Consulta y establecimiento del tempo
 ms.assetid: 84eba230-88b6-4cba-9e90-ba0b4bcfc691
 keywords:
-- Interfaz digital de instrumentar música (MIDI), tempo
+- Interfaz digital instrumentable (MIDI), tempo
 - MIDI (Interfaz digital instrumenta de música), tempo
 - Secuenciador DE MCI MIDI, tempo
 - MCI_STATUS comando
@@ -11,12 +11,12 @@ keywords:
 - Tempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5db1c703272a477b36399335b68a81ce1e8711618acf205e702045704b24974
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e3927d2f04e1b073b25c262437620325dc5cd040
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805725"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371078"
 ---
 # <a name="querying-and-setting-the-tempo"></a>Consulta y establecimiento del tempo
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_SEQUENCE_SETUP (VFW. h)
-description: El mensaje de configuración de la secuencia de definición de Cap de WM \_ \_ \_ \_ establece los parámetros de configuración que se usan con la captura de streaming. Puede enviar este mensaje explícitamente o mediante la macro capCaptureSetSetup.
+title: WM_CAP_SET_SEQUENCE_SETUP mensaje (Vfw.h)
+description: El mensaje \_ WM CAP SET SEQUENCE SETUP establece los parámetros de configuración utilizados con la captura de \_ \_ \_ streaming. Puede enviar este mensaje explícitamente o mediante la macro capCaptureSetSetup.
 ms.assetid: ba9adb26-6627-469b-a836-f4f277ddb7c4
 keywords:
-- Mensaje de WM_CAP_SET_SEQUENCE_SETUP de Windows multimedia
+- WM_CAP_SET_SEQUENCE_SETUP mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 54a2129021f31694d9e601ecd97503e2a5f5c925
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535338"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371503"
 ---
-# <a name="wm_cap_set_sequence_setup-message"></a>\_Mensaje de \_ instalación de secuencia de conjunto de Cap de \_ WM \_
+# <a name="wm_cap_set_sequence_setup-message"></a>Mensaje DE CONFIGURACIÓN DE SECUENCIA DE SET \_ \_ \_ \_ DE WM CAP
 
-El mensaje de configuración de la secuencia de definición de Cap de WM establece los parámetros de configuración que se usan con la captura de streaming. **\_ \_ \_ \_** Puede enviar este mensaje explícitamente o mediante la macro [**capCaptureSetSetup**](/windows/desktop/api/Vfw/nf-vfw-capcapturesetsetup) .
+El **mensaje WM CAP SET SEQUENCE \_ \_ \_ \_ SETUP** establece los parámetros de configuración utilizados con la captura de streaming. Puede enviar este mensaje explícitamente o mediante la [**macro capCaptureSetSetup.**](/windows/desktop/api/Vfw/nf-vfw-capcapturesetsetup)
 
 
 ```C++
@@ -48,17 +48,17 @@ Tamaño, en bytes, de la estructura a la que hace referencia **s**.
 <span id="psCapParms"></span><span id="pscapparms"></span><span id="PSCAPPARMS"></span>*psCapParms*
 </dt> <dd>
 
-Puntero a una estructura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) .
+Puntero a una [**estructura CAPTUREPARMS.**](/windows/win32/api/vfw/ns-vfw-captureparms)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener información sobre los parámetros que se usan para controlar la captura de streaming, consulte la estructura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) .
+Para obtener información sobre los parámetros usados para controlar la captura de streaming, consulte la [**estructura CAPTUREPARMS.**](/windows/win32/api/vfw/ns-vfw-captureparms)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Para obtener información sobre los parámetros que se usan para controlar la ca
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

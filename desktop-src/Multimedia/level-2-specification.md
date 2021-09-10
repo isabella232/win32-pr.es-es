@@ -9,12 +9,12 @@ keywords:
 - MPC nivel 2, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1641349849a03d130b599f78592d4907e8627169a78406cab858ae19918b04fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5456c9ac8b1245c89f0a4831964f73dd3694ed9
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139711"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372326"
 ---
 # <a name="level-2-specification"></a>Especificación de nivel 2
 

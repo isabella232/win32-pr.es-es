@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5a74c92f35f9cd504fdbf332315a3a4ad8ac336e61571d68cff8b4cee73c869
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 493893a51d51b1ce61d43ff54461bb71c08a9f6a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891875"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371491"
 ---
 # <a name="wm_cap_set_callback_status-message"></a>Mensaje DE \_ ESTADO DE \_ \_ DEVOLUCIÓN DE LLAMADA \_ DE WM CAP SET
 
@@ -49,7 +49,7 @@ Puntero a la función de devolución de llamada de estado, de tipo [**capStatusC
 
 Devuelve **TRUE si** se realiza correctamente o FALSE **si** la captura de streaming o una sesión de captura de un solo fotograma están en curso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcionalmente, las aplicaciones pueden establecer una función de devolución de llamada de estado. Si se establece, AVICap llama a este procedimiento en las situaciones siguientes:
 

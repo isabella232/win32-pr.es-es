@@ -6,12 +6,12 @@ keywords:
 - MCI_OPEN comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11aed7802a3536beb069c1fd7048b66be217d21f0dd3e47fa21caaad80d854e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6ea203c3a5d36ab747632b18b6550a3a0319159
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806175"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371737"
 ---
 # <a name="opening-the-playback-window"></a>Abrir la ventana de reproducción
 

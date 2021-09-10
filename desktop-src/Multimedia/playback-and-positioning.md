@@ -4,12 +4,12 @@ description: Reproducción y posicionamiento
 ms.assetid: fbf9294e-c644-45c7-ab60-dd903409a44f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9993c2ed4402184d2b15d5c3e54bb0137d1e7a3fe34f8cca36559ca329ada9d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1efbd6256fbd0d258f5d5c9d3da9b01c72a203dd
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892975"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371623"
 ---
 # <a name="playback-and-positioning"></a>Reproducción y posicionamiento
 

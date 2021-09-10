@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbabd0cae61c1b1ea3d88df3cd2e52524b779eb7cdb5ac2c1e1a371546724f44
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 68f173daa2fb104305979a72c9a14106175d7d20
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038875"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371017"
 ---
 # <a name="mom_close-message"></a>Mensaje \_ MOM CLOSE
 
@@ -56,7 +56,7 @@ Reservado; no use.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 

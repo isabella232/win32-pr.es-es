@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW_CHANGEPALETTE mensaje (Vfw.h)
-description: El ICM \_ DRAW \_ CHANGEPALETTE notifica a un controlador de representación que la paleta de películas está cambiando. Puede enviar este mensaje explícitamente o mediante la macro ICDrawChangePalette.
+description: El ICM DRAW CHANGEPALETTE notifica a un controlador \_ de representación que la paleta de películas está \_ cambiando. Puede enviar este mensaje explícitamente o mediante la macro ICDrawChangePalette.
 ms.assetid: 974fc0d8-d0c7-4a82-af84-68b53f753259
 keywords:
 - ICM_DRAW_CHANGEPALETTE mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e936c7dce397910ef70a80e2efa7f3e031ab8a61b8f59fece158d5c28e9e1270
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6364abb2c535158b2e64ff311041b00490c5958c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987601"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370538"
 ---
 # <a name="icm_draw_changepalette-message"></a>\_ICM Draw \_ CHANGEPALETTE message
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bi
 
 Devuelve ICERR \_ OK si se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje debe ser compatible con los controladores de representación instalables que dibujan DIB con una estructura interna que incluye una paleta.
 

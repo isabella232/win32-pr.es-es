@@ -8,12 +8,12 @@ keywords:
 - Función ICSetStatusProc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 724d3e6a8bee645717ef624eddd1276d3e55e856f1aab3c6edc5f9585b3f5feb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: beb86a40bb653380dc93e758ada1b2eef6ec9ca7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118137186"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370399"
 ---
 # <a name="monitoring-compressor-and-decompressor-progress"></a>Supervisión del progreso de la supervisión y el descompresión
 

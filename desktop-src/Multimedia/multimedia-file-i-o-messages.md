@@ -4,7 +4,7 @@ description: Mensajes de E/S de archivos multimedia
 ms.assetid: 05c7cd42-6e48-45a5-9e6d-9470ab3d432e
 keywords:
 - Windows multimedia, mensajes de E/S de archivos
-- multimedia, mensajes de E/S de archivos
+- multimedia, mensajes de E/S de archivo
 - entrada multimedia, mensajes de E/S de archivo
 - E/S de archivos multimedia, mensajes
 - E/S de archivo, mensajes
@@ -15,12 +15,12 @@ keywords:
 - referencia de E/S de archivo, mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1aa543d976acf953512d800f2a5b183a7b1e73acd799920b6a72b48531d04161
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 006ba55a7ff3282abe18b0f4a363f2a58e9590df
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136997"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372392"
 ---
 # <a name="multimedia-file-io-messages"></a>Mensajes de E/S de archivos multimedia
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dc5271f4e2a49b762273b241133ea5c5826ebf1861ba9fe5eb4cf7832b164fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64ff028dcd9dc851d94699ef5cb75707429ba149
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065445"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371239"
 ---
 # <a name="mm_wim_open-message"></a>Mensaje \_ MM WIM \_ OPEN
 
@@ -60,7 +60,7 @@ Este mensaje no devuelve un valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

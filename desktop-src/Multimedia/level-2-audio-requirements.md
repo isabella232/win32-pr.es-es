@@ -4,17 +4,17 @@ description: Requisitos de audio de nivel 2
 ms.assetid: 203648f2-9d20-438d-975b-b80e50b0fb9b
 keywords:
 - Equipo multimedia (MPC), nivel 2
-- MPC (EQUIPO multimedia), nivel 2
+- MPC (Equipo multimedia), nivel 2
 - Consejo de marketing de PC multimedia, nivel 2
-- Nivel 2 de MPC, requisitos de audio
+- MPC nivel 2, requisitos de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5a2bc9398a25ac916352f41ad2ddc2325820354d1c7beb511b03b27004fadd9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e20458f8dcb26149c9fa697587faf93cf10c0f27
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139836"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372320"
 ---
 # <a name="level-2-audio-requirements"></a>Requisitos de audio de nivel 2
 
@@ -23,26 +23,26 @@ El subsistema de audio de un equipo que cumple la especificación de nivel 2 inc
 -   Un controlador de CD-ROM con salidas de CD-DA (audio de libro rojo) y control de volumen
 -   Una DAC de 16 bits con las siguientes características:
     -   Muestreo de PCM lineal (pulsación de código)
-    -   Funcionalidad de transferencia en búfer DMA o FIFO con interrupción en el búfer vacío
-    -   Frecuencias de muestreo obligatorias de 44,1, 22,05 y 11,025 kHz
+    -   Funcionalidad de transferencia en búfer de DMA o FIFO con interrupción en el búfer vacío
+    -   Velocidades de muestreo obligatorias de 44,1, 22,05 y 11,025 kHz
     -   Canales estéreo
-    -   Uso de ancho de banda de CPU del 10 por ciento o menos al generar audio de frecuencia de muestreo de 22,05 o 11,025 kHz, o un ancho de banda de CPU del 15 por ciento o menos al generar audio de frecuencia de muestreo de 44,1 kHz
+    -   Uso de ancho de banda de CPU del 10 % o menos al generar audio de una frecuencia de muestreo de 22,05 o 11,025 kHz, o un ancho de banda de CPU del 15 % o menos al generar audio de 44,1 kHz de frecuencia de muestreo
 
 <!-- -->
 
 -   Un ADC de 16 bits con las siguientes características:
     -   Muestreo de PCM lineal
-    -   Funcionalidad de transferencia en búfer DMA o FIFO con interrupción en el búfer vacío
-    -   Frecuencias de muestreo obligatorias de 44,1, 22,05 y 11,025 kHz
+    -   Funcionalidad de transferencia en búfer de DMA o FIFO con interrupción en el búfer vacío
+    -   Velocidades de muestreo obligatorias de 44,1, 22,05 y 11,025 kHz
     -   Entrada de micrófono
 
 <!-- -->
 
--   Funcionalidades internas de síntesis con múltiplesvoices, multitimbral, seis notas simultáneas de la música simultánea más dos notas de percusiones simultáneas
+-   Funcionalidades de síntesis interna con múltiplesvoices, multitimbrales, seis notas simultáneas de la música simultánea, además de dos notas de percusión simultáneas
 -   Combinación interna con las siguientes funcionalidades:
     -   Puede combinar tres orígenes de audio y presentar la salida como una señal de audio estéreo de nivel de línea en el panel posterior.
-    -   Los orígenes de mezcla son el audio del libro rojo de CD, el sintetizador y la DAC
-    -   Cada origen de mezcla tiene un control de volumen de 3 bits con un taper logarítmico
+    -   Los orígenes de mezcla son audio, síntesis y DAC de CD Red Book
+    -   Cada origen de mezcla tiene un control de volumen de 3 bits con un taper logarítmico.
 
  
 

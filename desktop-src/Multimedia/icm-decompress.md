@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DECOMPRESS (VFW. h)
-description: El \_ mensaje de descompresión ICM informa a un controlador de descompresión de vídeo para descomprimir un marco de datos en un búfer definido por la aplicación.
+title: ICM_DECOMPRESS mensaje (Vfw.h)
+description: El ICM mensaje DECOMPRESS notifica a un controlador de descompresión de vídeo que descomprima un marco de datos en un búfer definido \_ por la aplicación.
 ms.assetid: 666f2ebf-80a5-4846-861d-c79c3001c5a0
 keywords:
-- Mensaje de ICM_DECOMPRESS de Windows multimedia
+- ICM_DECOMPRESS mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0c890a8ca15202f57fdaa02922e364af75f7b952
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079642"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370496"
 ---
-# <a name="icm_decompress-message"></a>Descompresión de ICM \_
+# <a name="icm_decompress-message"></a>\_ICM Mensaje DECOMPRESS
 
-El mensaje de descompresión **ICM \_** informa a un controlador de descompresión de vídeo para descomprimir un marco de datos en un búfer definido por la aplicación.
+El **ICM \_ de DECOMPRESS** notifica a un controlador de descompresión de vídeo que descomprima un marco de datos en un búfer definido por la aplicación.
 
 
 ```C++
@@ -38,14 +38,14 @@ lParam = sizeof(ICDECOMPRESS);
 
 <dl> <dt>
 
-<span id="icd"></span><span id="ICD"></span>*ICD*
+<span id="icd"></span><span id="ICD"></span>*Icd*
 </dt> <dd>
 
-Puntero a una estructura [**ICDECOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-icdecompress) .
+Puntero a una [**estructura ICDECOMPRESS.**](/windows/desktop/api/Vfw/ns-vfw-icdecompress)
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
 Tamaño, en bytes, de [**ICDECOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-icdecompress).
@@ -54,13 +54,13 @@ Tamaño, en bytes, de [**ICDECOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-icdecom
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si es correcto o un error en caso contrario.
+Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Si desea que el controlador Descomprima los datos directamente en la pantalla, envíe el mensaje de [**\_ dibujo ICM**](icm-draw.md) .
+Si desea que el controlador descomprima los datos directamente en la pantalla, envíe el [**ICM \_ DRAW.**](icm-draw.md)
 
-El controlador devuelve un error si este mensaje se recibe antes del mensaje de [**\_ \_ Inicio de descompresión de ICM**](icm-decompress-begin.md) .
+El controlador devuelve un error si este mensaje se recibe antes ICM [**\_ mensaje DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ El controlador devuelve un error si este mensaje se recibe antes del mensaje de 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

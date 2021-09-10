@@ -6,12 +6,12 @@ keywords:
 - MCI_SEEK de comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a14f062fc93a89f54fb89a30b6ac3e53c8d6240cfc28b661a25da48a0b1b2fbe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 235dc2639d7d9fc01f94aff700ae9e0ebf1dcbe2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941293"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371708"
 ---
 # <a name="changing-the-current-position"></a>Cambiar la posición actual
 

@@ -14,12 +14,12 @@ keywords:
 - Fragmento de RIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acbb09c7777cf675ceb0f11ae84fb50a3b9deaa73910ca9e15280c3fb88c42cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b45b2182e44ac84423c29a79fe29e96820d5bf2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119782095"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371827"
 ---
 # <a name="searching-for-a-riff-chunk"></a>Búsqueda de un fragmento de RIFF
 

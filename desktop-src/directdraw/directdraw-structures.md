@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre las siguientes estructura
 ms.assetid: 36424B41-B179-414A-ACFF-E63DA7B27043
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4aba62751b619982628575b380ea75eb57661db8737325fee1fb1b042e856ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 52cf24c71da3f022833c6ecf9843e996df2c514b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118504347"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "124360836"
 ---
 # <a name="directdraw-structures"></a>Estructuras de DirectDraw
 

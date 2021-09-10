@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57caf05182f01ef1e6aec6939946a23ca0acf6f3f82ec29be04ec7e3a49cb782
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eefea0f6344fb598fac1f0413bba5c377c5914e6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987240"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370568"
 ---
 # <a name="icm_draw_start_play-message"></a>\_ICM Draw \_ START \_ PLAY message
 
-El **ICM \_ DRAW START \_ \_ PLAY** proporciona las horas de inicio y finalización de una operación de reproducción a un controlador de representación. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawStartPlay.**](/windows/desktop/api/Vfw/nf-vfw-icdrawstartplay)
+El **ICM DRAW START \_ \_ \_ PLAY** proporciona las horas de inicio y finalización de una operación de reproducción a un controlador de representación. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawStartPlay.**](/windows/desktop/api/Vfw/nf-vfw-icdrawstartplay)
 
 
 ```C++
@@ -56,7 +56,7 @@ Hora de finalización.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje precede a los datos de fotogramas enviados al controlador de representación.
 

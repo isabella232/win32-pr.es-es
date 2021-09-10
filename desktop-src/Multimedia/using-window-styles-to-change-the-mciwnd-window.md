@@ -6,12 +6,12 @@ keywords:
 - Función MCIWndCreate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90212b43d6d51c82eb9b6e1a26bb06c7215c2568594e04980294b0d87bd53e43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3bef1471c4da280540b5b08ed43704b73a6b16f6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135613"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372410"
 ---
 # <a name="using-window-styles-to-change-the-mciwnd-window"></a>Usar estilos de ventana para cambiar la ventana MCIWnd
 

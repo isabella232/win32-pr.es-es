@@ -10,12 +10,12 @@ keywords:
 - Función DrawDibEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ac063cb2e9697b3b95045b95c9cc759a562197b56f10ff86a076ddcfa9a72cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2a7ae2c85d62e93e4149518221aa520eabe13ee2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688804"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372476"
 ---
 # <a name="sequences-of-images"></a>Secuencias de imágenes
 
@@ -30,7 +30,7 @@ La [**función DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) pro
 
 Después de [**usar DrawDibBegin,**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin)puede dibujar la secuencia de imágenes mediante [**DrawDibDraw**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw) y especificar una o varias marcas según corresponda. Especifique la **marca DDF \_ SAME \_ HDC** siempre y cuando el controlador de dominio no haya cambiado. Especifique la marca DDF SAME DRAW cuando no se han cambiado los parámetros siguientes para \_ \_ **DrawDibDraw:** la dirección de la estructura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) y las dimensiones del rectángulo de origen y destino.
 
-Puede actualizar las marcas establecidas con [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) mediante la función [**DrawDibEnd**](/windows/desktop/api/Vfw/nf-vfw-drawdibend) seguida de otra llamada a **DrawDibBegin**. A **continuación, use DrawDibEnd para** borrar el controlador de dominio DrawDib de sus marcas y configuraciones actuales. La llamada subsiguiente **a DrawDibBegin** reinicializa el controlador de dominio drawDib con las marcas y la configuración adecuadas. Como alternativa, puede actualizar las marcas de un controlador de dominio DrawDib mediante **DrawDibBegin** sin **DrawDibEnd**. Para ello, debe cambiar al menos una de las siguientes configuraciones simultáneamente con las marcas: la dirección de la estructura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) o las dimensiones del rectángulo de origen o de destino.
+Puede actualizar las marcas establecidas con [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) mediante la función [**DrawDibEnd**](/windows/desktop/api/Vfw/nf-vfw-drawdibend) seguida de otra llamada a **DrawDibBegin**. A **continuación, use DrawDibEnd para** borrar el controlador de dominio DrawDib de sus marcas y configuraciones actuales. La llamada subsiguiente **a DrawDibBegin** reinicializa el controlador de dominio drawDib con las marcas y la configuración adecuadas. Como alternativa, puede actualizar las marcas de un controlador de dominio DrawDib mediante **DrawDibBegin** sin **DrawDibEnd**. Para ello, debe cambiar al menos una de las siguientes configuraciones simultáneamente con las marcas: la dirección de la estructura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) o las dimensiones del rectángulo de origen o destino.
 
 Puede aumentar la eficacia de [**DrawDibDraw**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw) para las operaciones de streaming de datos que usan imágenes comprimidas, como la reproducción de un clip de vídeo, mediante las funciones [**DrawDibStart**](/windows/desktop/api/Vfw/nf-vfw-drawdibstart) y [**DrawDibStop.**](/windows/desktop/api/Vfw/nf-vfw-drawdibstop) La **función DrawDibStart** prepara el controlador de dominio drawDib para recibir una secuencia de imágenes mediante el envío de un mensaje al administrador de compresión de vídeo (VCM). Cuando el streaming ha finalizado, **DrawDibStop** envía un mensaje a VCM que indica que puede liberar los recursos que asignó para la operación de streaming de datos. Para obtener más información sobre VCM, vea [Administrador de compresión de vídeo](video-compression-manager.md).
 

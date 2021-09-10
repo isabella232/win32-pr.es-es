@@ -11,11 +11,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 15f9117299214aba4658443739f1bc359f7b5ed7
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625331"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372356"
 ---
 # <a name="product-identifiers"></a>Identificadores de producto
 
@@ -214,7 +214,7 @@ ms.locfileid: "122625331"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Lcshita Electric Corporation of America</td>
+<td>Shishita Electric Corporation of America</td>
 <td><ul>
 <li>MM_MATSUSHITA_AUX</li>
 <li>MM_MATSUSHITA_FMSYNTH_STEREO</li>
@@ -399,7 +399,7 @@ ms.locfileid: "122625331"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Corporation De Corporation</td>
+<td>Corporía de la consor</td>
 <td><ul>
 <li>MM_ROLAND_MPU401_MIDIIN</li>
 <li>MM_ROLAND_MPU401_MIDIOUT</li>
@@ -454,7 +454,7 @@ ms.locfileid: "122625331"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Toshishi Okuhura, Korg, Inc.</td>
+<td>Toshilig Okuhura, Korg, Inc.</td>
 <td><ul>
 <li>MM_KORG_PCIF_MIDIIN</li>
 <li>MM_KORG_PCIF_MIDIOUT</li>
@@ -489,14 +489,14 @@ ms.locfileid: "122625331"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Por su parte, El maestro Desfila</td>
+<td>Sendoses Desfila</td>
 <td><ul>
 <li>MM_WANGLABS_WAVEIN1</li>
 <li>MM_WANGLABS_WAVEOUT1</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Winov, LP</td>
+<td>Winnov, LP</td>
 <td><ul>
 <li>MM_WINNOV_CAVIAR_CHAMPAGNE</li>
 <li>MM_WINNOV_CAVIAR_VIDC</li>

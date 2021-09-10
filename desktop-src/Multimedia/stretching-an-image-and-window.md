@@ -9,12 +9,12 @@ keywords:
 - Función SetWindowPos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a38cc3072be387f549e77186886854c8cf6a40a466ca5014c4eb85469faf762b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ee8ef0bd4d549e6fbe29ced52304cded4ce6979
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119781865"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370844"
 ---
 # <a name="stretching-an-image-and-window"></a>Stretching an Image and Window
 

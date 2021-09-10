@@ -9,12 +9,12 @@ keywords:
 - Estructura WAVEHDR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17c84e75eccaf34ef16ccadefb4dae42931854a0c6c4278003fb5c01b0c551f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7e5580ff64425eae1bc6650268b065e60b90f43
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139178"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371198"
 ---
 # <a name="managing-data-blocks-by-polling"></a>Administración de bloques de datos mediante sondeo
 

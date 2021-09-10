@@ -11,12 +11,12 @@ keywords:
 - MM_JOY2 mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27113adeb6f9fd4444f8fc30431df0eab686db667fa2674e81d7f5d4e568be64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 698f999dab49ea6684e9184f6ed5c46286518b97
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118140345"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372283"
 ---
 # <a name="joystick-notification-messages"></a>Mensajes de notificación de notificación de notificaciones de notificación
 
@@ -28,9 +28,9 @@ Los mensajes de la tabla siguiente identifican el estado de los botones de boton
 
 | Message                                         | Descripción                                                     |
 |-------------------------------------------------|-----------------------------------------------------------------|
-| [**\_MMIJO1BUTTONDOWN**](mm-joy1buttondown.md) | Se ha presionado un botón en el botón CTRLID1.              |
+| [**\_MMBUTTON1BUTTONDOWN**](mm-joy1buttondown.md) | Se ha presionado un botón en el botón CTRLID1.              |
 | [**MM \_ MMMIENTO1BUTTONUP**](mm-joy1buttonup.md)     | Se ha publicado un botón en el botón DESID1.             |
-| [**\_MMMOV1MOVE**](mm-joy1move.md)             | Se cambió la posición de la dirección X o Y de La izquierda a izquierda. |
+| [**MM \_ MM1MOVE**](mm-joy1move.md)             | Se cambió la posición de la dirección X o Y de La izquierda a izquierda. |
 | [**\_MMMUT1ZMOVE**](mm-joy1zmove.md)           | Se cambió la posición de la dirección Z de La 1.       |
 | [**\_MMIJO2BUTTONDOWN**](mm-joy2buttondown.md) | Se ha presionado un botón en el botón CTRLID2.              |
 | [**\_MMIJO2BUTTONUP**](mm-joy2buttonup.md)     | Se ha publicado un botón en el botón DESID2.             |

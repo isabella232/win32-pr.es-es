@@ -10,21 +10,21 @@ keywords:
 - Interfaz digital de instrumentar música (MIDI), acerca de
 - MIDI (Interfaz digital de instrumentado), acerca de
 - Interfaz digital de instrumentar música (MIDI), ejemplos
-- MIDI (Interfaz digital de instrumentar música), ejemplos
+- MIDI (Interfaz digital instrumentable), ejemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8278de823653340dabcc71710170e225321dcb12ec033bcbef4d481c84e2d60b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5e7f473e70a5d1aaff8af46e98e830453b16cbc0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687865"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371077"
 ---
 # <a name="using-midi"></a>Uso de MIDI
 
 Esta sección contiene ejemplos que muestran cómo realizar las siguientes tareas:
 
--   [Uso del secuenciador de MCI MIDI](using-the-mci-midi-sequencer.md)
+-   [Uso del secuenciador MCI MIDI](using-the-mci-midi-sequencer.md)
 -   [Uso de midiOutShortMsg para enviar mensajes INDIVIDUALES DE MIDI](using-midioutshortmsg-to-send-individual-midi-messages.md)
 
  

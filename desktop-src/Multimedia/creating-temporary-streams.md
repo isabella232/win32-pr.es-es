@@ -8,16 +8,16 @@ keywords:
 - Función AVIMakeCompressedStream
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c33ce8d4ec6fd88a7283588d35955432cbe01a4855565928dca83d40afa8b64f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 209259f46e25275094dcd1eb5eeddd4f336ee906
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785705"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372163"
 ---
 # <a name="creating-temporary-streams"></a>Creación de una Secuencias
 
-Las secuencias temporales pueden ser beneficiosas de varias maneras. Puede usar una secuencia temporal como flujo de trabajo, por ejemplo, al cambiar el formato de la secuencia. O bien, puede crear una secuencia temporal para contener partes de otras secuencias que se han copiado.
+Los flujos temporales pueden ser beneficiosos de varias maneras. Puede usar una secuencia temporal como flujo de trabajo, por ejemplo, al cambiar el formato de secuencia. O bien, puede crear una secuencia temporal para contener partes de otras secuencias que se han copiado.
 
 Puede crear una secuencia en memoria que no esté asociada a ningún archivo mediante la [**función AVIStreamCreate.**](/windows/desktop/api/Vfw/nf-vfw-avistreamcreate) Esta función devuelve la dirección de la interfaz a la nueva secuencia en una ubicación especificada y la usan internamente otras funciones que crean flujos temporales.
 

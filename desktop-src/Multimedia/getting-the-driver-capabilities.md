@@ -6,12 +6,12 @@ keywords:
 - nids,drivers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd5bd178b1658ccecd9af26e6729fc00beab95b55fb4c8189feeada92c029d5c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e1b9f4d54e80dc589a4c730ef891d8f0bd132e52
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119691315"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371162"
 ---
 # <a name="getting-the-driver-capabilities"></a>Obtención de las funcionalidades del controlador
 

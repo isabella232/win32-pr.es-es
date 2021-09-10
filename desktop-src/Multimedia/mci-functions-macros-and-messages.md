@@ -1,21 +1,21 @@
 ---
-title: Mensajes y macros de funciones de MCI
-description: Mensajes y macros de funciones de MCI
+title: Macros y mensajes de funciones de MCI
+description: Macros y mensajes de funciones de MCI
 ms.assetid: 7cedc46f-f67b-4b1a-b1e0-7ac32c250132
 keywords:
 - Mensajes de MCI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67b411c018c55254658972d3cdc21a9d721334d5e78635b38f636892e2c80797
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ade9ac3ea5c2a3c74f94bab899305cdae7ec51c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784325"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371624"
 ---
-# <a name="mci-functions-macros-and-messages"></a>Mensajes y macros de funciones de MCI
+# <a name="mci-functions-macros-and-messages"></a>Macros y mensajes de funciones de MCI
 
-La mayoría de las aplicaciones MCI usan las funciones [**mciSendString**](/previous-versions//dd757161(v=vs.85)) y [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) decenas de veces. MCI proporciona otras funciones útiles que la aplicación usará con menos frecuencia.
+La mayoría de las aplicaciones MCI usan las funciones [**mciSendString**](/previous-versions//dd757161(v=vs.85)) y [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) decenas de veces. MCI proporciona algunas otras funciones útiles que la aplicación usará con menos frecuencia.
 
 El identificador de dispositivo requerido por la mayoría de los comandos MCI normalmente se recupera en una llamada al [**comando open**](open.md) [**(MCI \_ OPEN).**](mci-open.md) Si necesita un identificador de dispositivo pero no desea abrir el dispositivo (por ejemplo, si desea consultar las funcionalidades del dispositivo antes de realizar cualquier otra acción), puede llamar a la función [**mciGetDeviceID.**](/previous-versions//dd757156(v=vs.85))
 

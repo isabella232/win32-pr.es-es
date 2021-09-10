@@ -1,6 +1,6 @@
 ---
 title: MM_MIM_LONGERROR mensaje (Mmsystem.h)
-description: El mensaje MM MIM LONGERROR se envía a una ventana cuando se recibe un mensaje no válido o incompleto exclusivo del \_ \_ sistema DE MIDI.
+description: El mensaje MM MIM LONGERROR se envía a una ventana cuando se recibe un mensaje exclusivo del sistema DE MIDI no \_ \_ válido o incompleto.
 ms.assetid: 2de4c2f8-2ded-4994-934c-6e72c95637b2
 keywords:
 - MM_MIM_LONGERROR mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd829b8a1851c42075b8301a12bfed6b59f96a231b33b686209a48df869f4b78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e274faca26a90a5cd3b3915a7e8e1ed27bcfd77
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117985586"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370898"
 ---
 # <a name="mm_mim_longerror-message"></a>Mensaje \_ \_ LONGERROR MIM MM
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midih
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Es posible que el búfer devuelto no esté lleno. Para determinar el número de bytes registrados en el búfer devuelto, use el **miembro dwBytesRecorded** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) especificada por *lpMidiHdr*.
 

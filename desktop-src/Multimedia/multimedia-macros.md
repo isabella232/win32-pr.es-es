@@ -10,12 +10,12 @@ keywords:
 - macros multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9cdad8be1acfb92db2f58762fb5debe834dd52f7b5519f3ed4ed4d43d55cbd8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aef29d18fc53d46e96de2a13d6e9e39e75e4dc6b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806765"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370298"
 ---
 # <a name="multimedia-macros"></a>Multimedia Macros
 
@@ -112,7 +112,7 @@ Las macros siguientes se usan con multimedia.
 -   [**ICDecompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat)
 -   [**ICDecompressGetFormatSize**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize)
 -   [**ICDecompressGetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette)
--   [**ICDecompressAbrir**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
+-   [**ICDecompressOpen**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
 -   [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
 -   [**ICDecompressSetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompresssetpalette)
 -   [**ICDrawChangePalette**](/windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette)
@@ -139,15 +139,15 @@ Las macros siguientes se usan con multimedia.
 -   [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate)
 -   [**máximo**](max.md)
 -   [**MCI \_ HMS \_ HOUR**](mci-hms-hour.md)
--   [**MCI \_ HMS \_ MINUTE**](mci-hms-minute.md)
+-   [**MINUTO MCI \_ HMS \_**](mci-hms-minute.md)
 -   [**MCI \_ HMS \_ SECOND**](mci-hms-second.md)
 -   [**MCI \_ MAKE \_ HMS**](mci-make-hms.md)
 -   [**MCI \_ MAKE \_ MSF**](mci-make-msf.md)
 -   [**MCI \_ MAKE \_ TMSF**](mci-make-tmsf.md)
--   [**MCI \_ MSF \_ FRAME**](/previous-versions//dd743438(v=vs.85))
+-   [**MARCO DE MSF de MCI \_ \_**](/previous-versions//dd743438(v=vs.85))
 -   [**MCI \_ MSF \_ MINUTE**](mci-msf-minute.md)
 -   [**MCI \_ MSF \_ SECOND**](mci-msf-second.md)
--   [**MCI \_ TMSF \_ FRAME**](mci-tmsf-frame.md)
+-   [**MARCO \_ MCI TMSF \_**](mci-tmsf-frame.md)
 -   [**MCI \_ TMSF \_ MINUTE**](mci-tmsf-minute.md)
 -   [**MCI \_ TMSF \_ SECOND**](mci-tmsf-second.md)
 -   [**MCI \_ TMSF \_ TRACK**](mci-tmsf-track.md)
@@ -170,7 +170,7 @@ Las macros siguientes se usan con multimedia.
 -   [**MCIWndGetEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend)
 -   [**MCIWndGetError**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror)
 -   [**MCIWndGetFileName**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetfilename)
--   [**MCIWndGetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
+-   [**MCIWndGetCiónTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
 -   [**MCIWndGetLength**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetlength)
 -   [**MCIWndGetMode**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetmode)
 -   [**MCIWndGetPalette**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetpalette)
@@ -206,7 +206,7 @@ Las macros siguientes se usan con multimedia.
 -   [**MCIWndSeek**](/windows/desktop/api/Vfw/nf-vfw-mciwndseek)
 -   [**MCIWndSendString**](/windows/desktop/api/Vfw/nf-vfw-mciwndsendstring)
 -   [**MCIWndSetActiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetactivetimer)
--   [**MCIWndSetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
+-   [**MCIWndSetCiónTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
 -   [**MCIWndSetOwner**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetowner)
 -   [**MCIWndSetPalette**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetpalette)
 -   [**MCIWndSetRepeat**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetrepeat)
@@ -222,7 +222,7 @@ Las macros siguientes se usan con multimedia.
 -   [**MCIWndValidateMedia**](/windows/desktop/api/Vfw/nf-vfw-mciwndvalidatemedia)
 -   [**MEVT \_ EVENTPARM**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventparm)
 -   [**MEVT \_ EVENTTYPE**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
--   [**Min**](min.md)
+-   [**min.**](min.md)
 -   [**mmioFOURCC**](/windows/win32/api/vfw/nf-vfw-mmiofourcc)
 -   [**sndAlias**](/previous-versions//dd798675(v=vs.85))
 

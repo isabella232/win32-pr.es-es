@@ -9,19 +9,19 @@ keywords:
 - notificaciones de notificación de notificación basadas en el tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80052d5e728a7a5b00e6177a36c30f470fe80daeafbe39a12aa4c9a883766534
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 15dff2a6140bd993157f20e92488afce1b646e20
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688255"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372494"
 ---
 # <a name="time-based-notifications"></a>Time-Based notificaciones
 
 Puede notificar al sistema operativo que envíe mensajes de mensajes de mensaje a una aplicación a intervalos de tiempo regulares estableciendo el parámetro *fChanged* de [**fuefSetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) en **FALSE** y especificando la longitud del intervalo entre los mensajes sucesivos. Para ello, asigne al *parámetro uPeriod* un valor entre las frecuencias de sondeo mínimas y máximas del intervalo. Puede determinar este intervalo mediante la [**funcióngetGetDevCaps,**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps) que rellena los **miembros wPeriodMin** y **wPeriodMax** en la [**estructura DECAPS.**](/windows/win32/api/joystickapi/ns-joystickapi-joycaps) Si el valor *uPeriod* está fuera del intervalo de frecuencias de sondeo válidas para el taxi, el controlador de driver usa la frecuencia de sondeo mínima o máxima, la que esté más cerca del valor *uPeriod.*
 
 > [!Note]  
-> Windows configura un evento de temporizador con cada llamada a **modosetCapture**.
+> Windows configura un evento de temporizador con cada llamada a **setCapture.**
 
  
 

@@ -11,16 +11,16 @@ keywords:
 - Función PlaySound, en comparación con la función sndPlaySound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd256d3c4cf07d6d2f57ba9c4d85c54b9d0e599f9382a5b8d9d1f3a0ef4705ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9678c18e09b12ee1e8d8215d0841cbdaba0ac9c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136764"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371318"
 ---
 # <a name="playing-wave-resources"></a>Reproducción de recursos de WAVE
 
-Puede usar la [**función PlaySound**](/previous-versions//dd743680(v=vs.85)) para reproducir un sonido que se almacena como un recurso. Aunque esto también es posible mediante la función [**sndPlaySound,**](/previous-versions//dd798676(v=vs.85)) **sndPlaySound** requiere que encuentre, cargue, bloquee, desbloquee y libre el recurso. **PlaySound** consigue todo esto con una sola línea de código.
+Puede usar la función [**Play Sound**](/previous-versions//dd743680(v=vs.85)) para reproducir un sonido que se almacena como un recurso. Aunque esto también es posible mediante la función [**sndPlaySound,**](/previous-versions//dd798676(v=vs.85)) **sndPlaySound** requiere que encuentre, cargue, bloquee, desbloquee y libre el recurso. **PlaySound** consigue todo esto con una sola línea de código.
 
 ## <a name="playsound-example"></a>Ejemplo de PlaySound
 
@@ -42,7 +42,7 @@ soundName WAVE c:\sounds\bells.wav
 
 
 
-El nombre *soundName es* un marcador de posición de un nombre que se proporciona para hacer referencia a este recurso WAVE. Los recursos wave se cargan y se accede al igual que otros recursos de Windows definidos Windows aplicación. La función PlayResource del ejemplo siguiente reproduce un recurso WAVE especificado.
+El nombre *soundName es* un marcador de posición de un nombre que se proporciona para hacer referencia a este recurso WAVE. Los recursos wave se cargan y se accede al igual que otros recursos de Windows definidos por la aplicación. La función PlayResource del ejemplo siguiente reproduce un recurso WAVE especificado.
 
 
 ```C++

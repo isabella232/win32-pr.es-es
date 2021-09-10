@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9435a7f0790c8ffe88f6b7ea6228bb2f442b23f5dcb15e2722e59b75c671588
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 12b3f59edfc9bf01f6bd2af3b9028f8e3315e2de
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687025"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371438"
 ---
-# <a name="wm_cap_file_set_capture_file-message"></a>Mensaje \_ WM CAP FILE SET CAPTURE \_ \_ \_ \_ FILE
+# <a name="wm_cap_file_set_capture_file-message"></a>Mensaje DE ARCHIVO DE CAPTURA DE CONJUNTO \_ \_ DE \_ \_ ARCHIVOS DE \_ WM CAP
 
 El **mensaje WM CAP FILE SET CAPTURE \_ \_ \_ \_ \_ FILE** nombra el archivo usado para la captura de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capFileSetCaptureFile.**](/windows/desktop/api/Vfw/nf-vfw-capfilesetcapturefile)
 
@@ -47,9 +47,9 @@ Puntero a la cadena terminada en NULL que contiene el nombre del archivo de capt
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** el nombre de archivo es correcto o **FALSE** si el nombre de archivo no es válido, o si la secuencia o la captura de fotograma único están en curso.
+Devuelve **TRUE si** el nombre de archivo es correcto o **FALSE** si el nombre de archivo no es válido, o si el streaming o la captura de fotograma único están en curso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje almacena el nombre de archivo en una estructura interna. No crea, asigna ni abre el archivo especificado. El nombre de archivo de captura predeterminado es C: \\CAPTURE.AVI.
 

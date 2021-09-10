@@ -11,12 +11,12 @@ keywords:
 - ACM (administrador de compresión de audio), acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 020d84ca784d85456f8173d18bd041c502e519579d96357a405e7e160e6779e4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 30f8906ceffc8930fd945a50c557030c1e8f8902
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808343"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370316"
 ---
 # <a name="audio-compression-manager"></a>Administrador de compresión de audio
 

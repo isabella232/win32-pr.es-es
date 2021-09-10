@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETDEVICE (VFW. h)
-description: El \_ mensaje MCIWNDM GETDEVICE recupera el nombre del dispositivo MCI abierto actualmente. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetDevice.
+title: MCIWNDM_GETDEVICE mensaje (Vfw.h)
+description: El mensaje GETDEVICE de MCIWNDM \_ recupera el nombre del dispositivo MCI abierto actualmente. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetDevice.
 ms.assetid: e69a73a6-a927-4536-98c7-ee7d5b16668a
 keywords:
-- Mensaje de MCIWNDM_GETDEVICE de Windows multimedia
+- MCIWNDM_GETDEVICE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 32664508a577db9d5a077e3cb4fd00aab34fbdf3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489425"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370639"
 ---
-# <a name="mciwndm_getdevice-message"></a>MCIWNDM \_ GETDEVICE
+# <a name="mciwndm_getdevice-message"></a>Mensaje GETDEVICE de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETDEVICE** recupera el nombre del dispositivo MCI abierto actualmente. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetDevice**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdevice) .
+El **mensaje \_ GETDEVICE de MCIWNDM** recupera el nombre del dispositivo MCI abierto actualmente. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetDevice.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdevice)
 
 
 ```C++
@@ -38,14 +38,14 @@ lParam = (LPARAM) (LPVOID) lp;
 
 <dl> <dt>
 
-<span id="len"></span><span id="LEN"></span>*terminado*
+<span id="len"></span><span id="LEN"></span>*Len*
 </dt> <dd>
 
 Tamaño, en bytes, del búfer.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
 Puntero a un búfer definido por la aplicación para devolver el nombre del dispositivo.
@@ -54,11 +54,11 @@ Puntero a un búfer definido por la aplicación para devolver el nombre del disp
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un valor distinto de cero en caso contrario.
+Devuelve cero si se realiza correctamente o un valor distinto de cero de lo contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Si la cadena terminada en null que contiene el nombre del dispositivo es más larga que el búfer, MCIWnd lo trunca.
+Si la cadena terminada en NULL que contiene el nombre del dispositivo es mayor que el búfer, MCIWnd la trunca.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Si la cadena terminada en null que contiene el nombre del dispositivo es más la
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

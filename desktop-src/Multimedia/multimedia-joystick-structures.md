@@ -6,17 +6,17 @@ keywords:
 - Windows multimedia, estructuras de estructura de estructura
 - multimedia, estructuras de estructuras de estructura
 - entrada multimedia, estructuras de teclado
-- strucciones, estructuras
+- estructuras, estructuras
 - referencia para las estructuras, las estructuras
 - referencia, estructuras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11c2f260bb17d39389f199e0ee4b64a54e1e4c7a29b3b25d29ad085b62bff4d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e8cccfb6ec1266cdd05296eee836d2c5f9a8643
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136744"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372415"
 ---
 # <a name="multimedia-joystick-structures"></a>Estructuras multimedia de multimedia
 

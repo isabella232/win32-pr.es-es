@@ -5,20 +5,20 @@ ms.assetid: 261f994b-6a7a-4372-bfaa-1a9f5b73bb15
 keywords:
 - Vídeo para Windows (VFW), controladores de archivos personalizados
 - Vídeo para Windows (VFW), controladores de flujo personalizados
-- Vídeo para Windows (VFW),controladores de archivos
-- Vídeo para Windows (VFW),controladores de secuencia
+- Vídeo para Windows (VFW), controladores de archivos
+- Vídeo para Windows (VFW), controladores de flujo
 - VFW (vídeo para Windows), controladores de archivos personalizados
 - VFW (vídeo para Windows), controladores de flujo personalizados
 - VFW (vídeo para Windows),controladores de archivos
-- VFW (vídeo para Windows),controladores de secuencia
+- VFW (vídeo para Windows), controladores de flujo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 416eb5bb244c5c8177143570b07703596f9fdcfb2727490e2000a28e1aa4f0f7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5f7631edcbbf141d03927301dd6f7b19286ed080
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119804665"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371671"
 ---
 # <a name="using-custom-file-and-stream-handlers"></a>Uso de controladores de archivos y secuencias personalizados
 

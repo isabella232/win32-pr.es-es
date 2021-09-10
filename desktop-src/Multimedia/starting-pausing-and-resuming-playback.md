@@ -8,12 +8,12 @@ keywords:
 - Macro MCIWndResume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49977b9bc741c6b32ce0da0c0ae9f63bd875a24268a00bb4782cd71531a4ef31
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 734a186b90b8d6701923d0ffa1f743cc8c5ae378
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688675"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372439"
 ---
 # <a name="starting-pausing-and-resuming-playback"></a>Inicio, pausa y reanudación de la reproducción
 

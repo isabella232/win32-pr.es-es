@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_PAL_PASTE mensaje (Vfw.h)
-description: El mensaje WM CAP PAL PASTE copia la paleta del Portapapeles \_ y la pasa a un controlador de \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capPalettePaste.
+description: El mensaje WM \_ CAP PAL PASTE copia la paleta del \_ \_ Portapapeles y la pasa a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la macro capPalettePaste.
 ms.assetid: d49c7fd9-be40-4a07-8339-b85f7c4c331e
 keywords:
 - WM_CAP_PAL_PASTE mensaje Windows Multimedia
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7bedb760a444abe9b0667592855d701dc24a02b8ee57ea15ab30912a5e216d6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3daf88c69edbb8bad6257456b95a86c8a68df328
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686835"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371480"
 ---
-# <a name="wm_cap_pal_paste-message"></a>Mensaje \_ DE PEGAR DE WM CAP \_ PAL \_
+# <a name="wm_cap_pal_paste-message"></a>Mensaje \_ DE PEGADO DE PAL \_ \_ de WM CAP
 
 El **mensaje WM CAP PAL \_ \_ \_ PASTE** copia la paleta del Portapapeles y la pasa a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capPalettePaste.**](/windows/desktop/api/Vfw/nf-vfw-cappalettepaste)
 
@@ -36,11 +36,11 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**DE ERROR WM CAP SET \_ \_ \_ CALLBACK, \_**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un controlador de captura usa una paleta cuando lo requiere el formato de vídeo digitalizado especificado.
 
@@ -48,7 +48,7 @@ Un controlador de captura usa una paleta cuando lo requiere el formato de vídeo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

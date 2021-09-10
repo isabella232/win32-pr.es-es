@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d89be1821b03e43fbe05b5ed2efc90e40db03e36538cf0412201baa7273e596
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a205b7e6edb4a427b0e80d32cc711d9bf2b052c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118622672"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370448"
 ---
-# <a name="drv_close-message"></a>Mensaje DRV \_ CLOSE
+# <a name="drv_close-message"></a>Mensaje CLOSE de DRV \_
 
 Dirige al controlador para que cierre la instancia especificada. Si no hay ninguna otra instancia abierta, el controlador debe prepararse para la posterior liberación de la memoria.
 
@@ -59,7 +59,7 @@ Valor de 32 bits especificado como parámetro *lParam2* en una llamada a la **fu
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero en caso contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

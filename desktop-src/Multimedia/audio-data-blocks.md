@@ -10,12 +10,12 @@ keywords:
 - Estructura WAVEHDR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08a4a0c7236c52854911b51677cf792fa504371fb18900ac947e8fdf1391bd69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8a81a5a29ec9718e7c11306b6bafc1aa20369e5
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941759"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371197"
 ---
 # <a name="audio-data-blocks"></a>Bloques de datos de audio
 

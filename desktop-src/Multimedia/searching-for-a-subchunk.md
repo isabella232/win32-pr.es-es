@@ -3,9 +3,9 @@ title: Búsqueda de un subchunk
 description: Búsqueda de un subchunk
 ms.assetid: c494a57f-6395-40a4-a4f2-d200d7ad6223
 keywords:
-- E/S de archivos multimedia, buscar fragmentos de RIFF
+- E/S de archivos multimedia, buscar fragmento de RIFF
 - E/S de archivo, buscar fragmento de RIFF
-- entrada y salida (E/S), búsqueda de fragmento de RIFF
+- entrada y salida (E/S), buscar fragmento de RIFF
 - E/S (entrada y salida), buscar fragmento de RIFF
 - buscar fragmento de RIFF
 - formato de archivo de intercambio de recursos (RIFF)
@@ -14,12 +14,12 @@ keywords:
 - Fragmento de RIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f77cc4d3b9640e0d262a113d3c8f352bb30fce625737b1bf13dde24adbe578
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d6cfb0ecc3223f4a883998e9f192bfbbb5ff276
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118371143"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371828"
 ---
 # <a name="searching-for-a-subchunk"></a>Búsqueda de un subchunk
 
@@ -39,11 +39,11 @@ else
 
 
 
-Para buscar un subcunk (es decir, cualquier fragmento que no sea un fragmento "RIFF" o "LIST"), identifique su fragmento primario en el parámetro *lpckParent* de la [**función mmioDescend.**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiodescend)
+Para buscar un subchunk (es decir, cualquier fragmento que no sea un fragmento "RIFF" o "LIST"), identifique su fragmento primario en el parámetro *lpckParent* de la [**función mmioDescend.**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiodescend)
 
 Si no especifica un fragmento primario, la posición actual del archivo debe estar al principio de un fragmento antes de llamar a la **función mmioDescend.** Si especifica un fragmento primario, la posición actual del archivo puede estar en cualquier parte de ese fragmento.
 
-Si se produce un error en la búsqueda de un subcunk, la posición del archivo actual no está definida. Puede usar la función [**mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) y el miembro **dwDataOffset** de la estructura [**MMCKINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-mmckinfo) que describe el fragmento primario para volver al principio del fragmento primario, como en el ejemplo siguiente:
+Si se produce un error en la búsqueda de un subchunk, la posición del archivo actual no está definida. Puede usar la función [**mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) y el miembro **dwDataOffset** de la estructura [**MMCKINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-mmckinfo) que describe el fragmento primario para volver al principio del fragmento primario, como en el ejemplo siguiente:
 
 
 ```C++
@@ -52,7 +52,7 @@ mmioSeek(hmmio, mmckinfoParent.dwDataOffset + 4, SEEK_SET);
 
 
 
-Dado **que dwDataOffset** especifica el desplazamiento al principio de la parte de datos del fragmento, debe buscar 4 bytes más allá de **dwDataOffset** para establecer la posición del archivo después del tipo de formulario.
+Dado **que dwDataOffset** especifica el desplazamiento hasta el principio de la parte de datos del fragmento, debe buscar 4 bytes más allá de **dwDataOffset** para establecer la posición del archivo después del tipo de formulario.
 
  
 

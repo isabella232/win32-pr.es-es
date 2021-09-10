@@ -10,16 +10,16 @@ keywords:
 - CapSetVideoFormat macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30ef2a135c8b557889d433e6495ac6a3e980326b4cfb0843d8c856fedfed4b50
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b5efe3c517a45ea44e9f8ab9ebd8fbae6dd95194
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119804125"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372554"
 ---
 # <a name="video-format"></a>Formato de vídeo
 
-Puede recuperar la estructura que especifica el formato de vídeo o el tamaño de esa estructura mediante el envío del mensaje [**\_ GET \_ \_ VIDEOFORMAT**](wm-cap-get-videoformat.md) de WM CAP (o las macros [**capGetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformat) y [**capGetVideoFormatSize)**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformatsize) a una ventana de captura. Puede establecer el formato de los datos de vídeo capturados mediante el envío del mensaje [**\_ \_ \_ VIDEOFORMAT DE WM CAP SET**](wm-cap-set-videoformat.md) (o la macro [**capSetVideoFormat)**](/windows/desktop/api/Vfw/nf-vfw-capsetvideoformat) a una ventana de captura.
+Puede recuperar la estructura que especifica el formato de vídeo o el tamaño de esa estructura enviando el mensaje [**\_ GET \_ \_ VIDEOFORMAT**](wm-cap-get-videoformat.md) de WM CAP (o las macros [**capGetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformat) y [**capGetVideoFormatSize)**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformatsize) a una ventana de captura. Puede establecer el formato de los datos de vídeo capturados enviando el mensaje [**\_ \_ \_ VIDEOFORMAT**](wm-cap-set-videoformat.md) de WM CAP SET (o la macro [**capSetVideoFormat)**](/windows/desktop/api/Vfw/nf-vfw-capsetvideoformat) a una ventana de captura.
 
  
 

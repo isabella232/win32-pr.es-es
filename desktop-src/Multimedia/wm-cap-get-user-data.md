@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_GET_USER_DATA mensaje (Vfw.h)
-description: El mensaje \_ GET USER DATA de WM CAP recupera un valor de datos LONG \_ \_ \_ \_ PTR asociado a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capGetUserData.
+description: El mensaje GET USER DATA de WM CAP recupera un valor de datos \_ \_ LONG \_ \_ \_ PTR asociado a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capGetUserData.
 ms.assetid: f7c121ba-44a1-4916-b602-c53d8332c2af
 keywords:
 - WM_CAP_GET_USER_DATA mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a79a513d415d166ab2715a181a6d8fc366b60480caf2982f6bbc53eadf90d96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02951667600acba115f506a610b167b72b69ea99
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892035"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371455"
 ---
 # <a name="wm_cap_get_user_data-message"></a>Mensaje \_ GET USER DATA \_ \_ \_ de WM CAP
 
@@ -36,7 +36,7 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor guardado previamente mediante el mensaje [**WM CAP SET USER \_ \_ \_ \_ DATA.**](wm-cap-set-user-data.md)
+Devuelve un valor guardado anteriormente mediante el mensaje [**WM CAP SET USER \_ \_ \_ \_ DATA.**](wm-cap-set-user-data.md)
 
 ## <a name="requirements"></a>Requisitos
 

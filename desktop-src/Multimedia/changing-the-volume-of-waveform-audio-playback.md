@@ -10,16 +10,16 @@ keywords:
 - cambiar el volumen de reproducción de audio de forma de onda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e59bca6dbc168d2c327c46e4d934d4abb3afa73cc8ef2cae8b1a6c283bd92c81
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 89f972b5bd8e6f0d4a0d7d5964f164429c5632b0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807995"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371215"
 ---
 # <a name="changing-the-volume-of-waveform-audio-playback"></a>Cambiar el volumen de la Waveform-Audio reproducción
 
-Windows proporciona las siguientes funciones para consultar y establecer el nivel de volumen de los dispositivos de salida de audio de forma de onda.
+Windows proporciona las siguientes funciones para consultar y establecer el nivel de volumen de los dispositivos de salida de audio de onda.
 
 
 
@@ -38,7 +38,7 @@ Algunas aplicaciones permiten al usuario controlar el volumen de todos los dispo
 
 El volumen se especifica en un valor doubleword. Cuando el formato de audio es estéreo, los 16 bits superiores especifican el volumen relativo del canal derecho y los 16 bits inferiores especifican el volumen relativo del canal izquierdo. En el caso de los dispositivos que no admiten el control de volumen del canal izquierdo y derecho, los 16 bits inferiores especifican el nivel de volumen y los 16 bits superiores se omiten.
 
-Los valores de nivel de volumen van 0x0 (silencio) a 0xFFFF (volumen máximo) y se interpretan logarítmicamente. El aumento del volumen percibido es el mismo al aumentar el nivel de volumen de 0x5000 a 0x6000 que de 0x4000 a 0x5000.
+Los valores de nivel de volumen van 0x0 (silencio) a 0xFFFF (volumen máximo) y se interpretan logarítmicamente. El aumento de volumen percibido es el mismo al aumentar el nivel de volumen de 0x5000 a 0x6000 que de 0x4000 a 0x5000.
 
  
 

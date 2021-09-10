@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4bd5fae6e9f008649366cf922ef117f5b6f7560a7764c4f8d81552a255de48a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 06de8cc3bcfe463d0318651c8e2d51b269504769
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495875"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370585"
 ---
 # <a name="icm_getbufferswanted-message"></a>\_ICM Mensaje GETBUFFERSWANTED
 
@@ -49,7 +49,7 @@ Dirección para contener el número de muestras que el controlador necesita para
 
 Devuelve ICERR \_ OK si se realiza correctamente o ICERR \_ UNSUPPORTED en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje lo usan los controladores que usan hardware para representar los datos y quieren garantizar un retraso de tiempo mínimo causado por la espera de que lleguen los búferes. Por ejemplo, si un controlador controla una placa de descompresión de vídeo que puede contener 10 fotogramas de vídeo, podría devolver 10 para este mensaje. Esto indica a las aplicaciones que intenten mantener 10 fotogramas por delante del marco que necesita actualmente.
 

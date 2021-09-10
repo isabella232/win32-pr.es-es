@@ -8,12 +8,12 @@ keywords:
 - MCI_INFO comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 412ccfb8819ac1c76cd3f0114fa114c877280de959f605535fd4bb83d224a91e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 10acb53fa1a961fe7a70042350f8d889d9fdf572
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689095"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371695"
 ---
 # <a name="retrieving-information-about-a-device"></a>Recuperar información sobre un dispositivo
 

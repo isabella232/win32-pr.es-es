@@ -1,6 +1,6 @@
 ---
 title: ICM_DECOMPRESS_QUERY mensaje (Vfw.h)
-description: El ICM consulta DECOMPRESS consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede \_ descomprimir un formato de entrada específico en un formato de salida \_ específico.
+description: El ICM mensaje DECOMPRESS QUERY consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede \_ descomprimir un formato de entrada específico a un formato de salida \_ específico.
 ms.assetid: 622dd1de-3f7a-4841-913c-282c2ad766f4
 keywords:
 - ICM_DECOMPRESS_QUERY mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05edaa76f0d361741cb3ab5b274c63c2c2cc38ce5e388854f7056c3ea59d109f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 838c946a38f9c2fda0c9178a36107af73f539a03
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987945"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370532"
 ---
 # <a name="icm_decompress_query-message"></a>\_ICM Mensaje DE CONSULTA \_ DECOMPRESS
 
-El ICM consulta **\_ DECOMPRESS \_** consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede descomprimir un formato de entrada específico a un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la [**macro ICDecompressQuery.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
+El ICM mensaje **\_ DECOMPRESS \_ QUERY** consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede descomprimir un formato de entrada específico a un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressQuery.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
 
 
 ```C++

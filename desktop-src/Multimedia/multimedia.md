@@ -1,20 +1,20 @@
 ---
 title: Contenido multimedia
-description: Este glosario contiene definiciones de los términos usados en la documentación Windows Multimedia.
+description: Este glosario contiene definiciones de términos usados en la documentación Windows Multimedia.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 0c35d8cd-0226-4161-bbb9-cb754785274c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 243b9eb6d84b133a98d65f24e3486b79d78397f75c17f3ed5ceb52a3f2ff59ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ed45a6503e1856f41e892eb6bcad03f4263ddf6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118373465"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372409"
 ---
 # <a name="multimedia"></a>Contenido multimedia
 
-Este glosario contiene definiciones de los términos usados en la documentación Windows Multimedia.
+Este glosario contiene definiciones de términos usados en la documentación Windows Multimedia.
 
 <dl> <dt>
 
@@ -238,7 +238,7 @@ Una organización colectiva compuesta por fabricantes de instrumentes de instrum
 <span id="_win32_midi_mapper_gloss"></span><span id="_WIN32_MIDI_MAPPER_GLOSS"></span>**Asignador de MIDI**
 </dt> <dd>
 
-Windows software de sistemas que modifica los mensajes de salida de La interfaz digital de instrumentaciones musicales (MIDI) y los redirige a un dispositivo de salida DE MIDI mediante valores almacenados en un mapa de configuración de MIDI. El asignador de MIDI puede cambiar el canal de destino y el dispositivo de salida de un mensaje, así como modificar los mensajes de cambio de programa, los valores de volumen y los valores de clave.
+Windows software de sistemas que modifica los mensajes de salida de la interfaz digital de instrumentaciones musicales (MIDI) y los redirige a un dispositivo de salida MIDI mediante valores almacenados en un mapa de configuración de MIDI. El asignador de MIDI puede cambiar el canal de destino y el dispositivo de salida de un mensaje, así como modificar los mensajes de cambio de programa, los valores de volumen y los valores de clave.
 
 </dd> <dt>
 
@@ -280,70 +280,70 @@ Un conjunto completo de datos para que el asignador de interfaz digital de instr
 <span id="_win32_mma_gloss"></span><span id="_WIN32_MMA_GLOSS"></span>**MMA**
 </dt> <dd>
 
-Vea [Asociación de fabricantes de MIDI](/windows).
+Vea [Asociación de fabricantes de MIDI.](/windows)
 
 </dd> <dt>
 
 <span id="_win32_msf_time_format_gloss"></span><span id="_WIN32_MSF_TIME_FORMAT_GLOSS"></span>**Formato de hora de MSF**
 </dt> <dd>
 
-Formato de hora que usa la interfaz de control multimedia (MCI) para expresar el tiempo en minutos, segundos y fotogramas. El número de fotogramas de un segundo depende del tipo de dispositivo que se esté utilizando. Los dispositivos de audio de disco compacto usan 75 fotogramas por segundo. El formato de hora de MSF se usa principalmente en dispositivos de audio de disco compacto.
+Formato de hora que usa la interfaz de control multimedia (MCI) para expresar el tiempo en minutos, segundos y fotogramas. El número de fotogramas en un segundo depende del tipo de dispositivo que se usa; Los dispositivos de audio de disco compacto usan 75 fotogramas por segundo. El formato de hora msf se usa principalmente en dispositivos de audio de disco compacto.
 
 </dd> <dt>
 
-<span id="_win32_musical_instrument_digital_interface_midi_gloss"></span><span id="_WIN32_MUSICAL_INSTRUMENT_DIGITAL_INTERFACE_MIDI_GLOSS"></span>**Interfaz digital instrumentable (MIDI)**
+<span id="_win32_musical_instrument_digital_interface_midi_gloss"></span><span id="_WIN32_MUSICAL_INSTRUMENT_DIGITAL_INTERFACE_MIDI_GLOSS"></span>**Interfaz digital de instrumentar música (MIDI)**
 </dt> <dd>
 
-Un protocolo estándar para la comunicación entre equipos e instrumentales.
+Un protocolo estándar para la comunicación entre los equipos y los instrumentoes musicales.
 
 </dd> <dt>
 
-<span id="_win32_parts_per_quarter_note_ppqn_gloss"></span><span id="_WIN32_PARTS_PER_QUARTER_NOTE_PPQN_GLOSS"></span>**partes por nota de trimestre (PPQN)**
+<span id="_win32_parts_per_quarter_note_ppqn_gloss"></span><span id="_WIN32_PARTS_PER_QUARTER_NOTE_PPQN_GLOSS"></span>**nota de partes por trimestre (PPQN)**
 </dt> <dd>
 
-Formato de hora que se usa para secuencias de interfaz digital de instrumentar música (MIDI). PPQN es el formato de hora más común que se usa con los archivos MIDI estándar.
+Formato de hora que se usa para secuencias de interfaz digital de instrumentar música (MIDI). PPQN es el formato de hora más común que se usa con archivos ESTÁNDAR DE MIDI.
 
 </dd> <dt>
 
 <span id="_win32_patch_gloss"></span><span id="_WIN32_PATCH_GLOSS"></span>**revisión**
 </dt> <dd>
 
-Una configuración determinada de un sintetizador de interfaz digital de instrumentar música (MIDI) que da como resultado un sonido determinado, normalmente un sonido que simula un instrumento músical específico. Las revisiones también se denominan programas. Un mensaje de cambio de programa DE MIDI cambia la configuración de revisión en un sintetizador. Patch también hace referencia a la conexión o las conexiones entre dispositivos MIDI. Consulte también [Interfaz digital de instrumentar música (MIDI).](/windows)
+Una configuración determinada de un sintetizador de interfaz digital de instrumentador (MIDI) que da como resultado un sonido determinado, normalmente un sonido que simula un instrumento musical específico. Las revisiones también se denominan programas. Un mensaje de cambio de programa DE MIDI cambia la configuración de revisión en un sintetizador. La revisión también hace referencia a la conexión o las conexiones entre dispositivos MIDI. Consulte también [Interfaz digital de instrumentar música (MIDI).](/windows)
 
 </dd> <dt>
 
 <span id="_win32_patch_caching_gloss"></span><span id="_WIN32_PATCH_CACHING_GLOSS"></span>**almacenamiento en caché de revisiones**
 </dt> <dd>
 
-Técnica que permite a algunos controladores de dispositivos de síntesis de instrumentación digital (MIDI) internos cargar previamente sus datos de revisión, lo que reduce el retraso entre el momento en que el sintetizador recibe un mensaje de cambio de programa DE MIDI y el momento en que se toma nota con la nueva revisión. El almacenamiento en caché de revisiones también garantiza que las revisiones necesarias estén disponibles (el sintetizador podría cargar solo un subconjunto de sus revisiones). Consulte también [Interfaz digital de instrumentación de música (MIDI)](/windows), [revisión](/windows).
+Técnica que permite que algunos controladores de dispositivos de síntesis de instrumentación digital (MIDI) internos precarguen sus datos de revisión, lo que reduce el retraso entre el momento en que el sintetizador recibe un mensaje de cambio del programa MIDI y el momento en que reproduce una nota con la nueva revisión. El almacenamiento en caché de revisiones también garantiza que las revisiones necesarias estén disponibles (el sintetizador podría cargar solo un subconjunto de sus revisiones). Vea también [Interfaz digital de instrumentar música (MIDI)](/windows), [revisión](/windows).
 
 </dd> <dt>
 
-<span id="_win32_pitch_scale_factor_gloss"></span><span id="_WIN32_PITCH_SCALE_FACTOR_GLOSS"></span>**factor de escala de tono**
+<span id="_win32_pitch_scale_factor_gloss"></span><span id="_WIN32_PITCH_SCALE_FACTOR_GLOSS"></span>**factor de escala de pitch**
 </dt> <dd>
 
-En audio de forma de onda, la cantidad por la que un controlador de audio de forma de onda escala el tono. Un factor de escala de dos da como resultado un aumento de una octave en el tono. El escalado de tono requiere hardware especializado. La velocidad de reproducción y la frecuencia de muestreo no se cambian.
+En el audio de forma de onda, la cantidad por la que un controlador de audio de forma de onda escala el tono. Un factor de escala de dos da como resultado un aumento de una octave en el tono. El escalado de tono requiere hardware especializado. La velocidad de reproducción y la frecuencia de muestreo no se cambian.
 
 </dd> <dt>
 
 <span id="_win32_playback_rate_scale_factor_gloss"></span><span id="_WIN32_PLAYBACK_RATE_SCALE_FACTOR_GLOSS"></span>**factor de escala de velocidad de reproducción**
 </dt> <dd>
 
-En audio de forma de onda, la cantidad por la que el controlador de audio de forma de onda escala la velocidad de reproducción. El escalado de reproducción se realiza mediante software; la frecuencia de muestreo no cambia, pero el controlador interpola omitiendo o sintetizando muestras. Por ejemplo, si la velocidad de reproducción cambia por un factor de dos, el controlador omite todas las demás muestras.
+En el audio de forma de onda, la cantidad por la que el controlador de audio de forma de onda escala la velocidad de reproducción. El escalado de reproducción se realiza mediante software; la frecuencia de muestreo no cambia, pero el controlador interpola omitiendo o sintetizando muestras. Por ejemplo, si la velocidad de reproducción cambia por un factor de dos, el controlador omite todas las demás muestras.
 
 </dd> <dt>
 
 <span id="_win32_polyphony_gloss"></span><span id="_WIN32_POLYPHONY_GLOSS"></span>**polifónica**
 </dt> <dd>
 
-El número máximo de notas que puede reproducir simultáneamente un dispositivo de salida de Interfaz digital de instrumentar música (MIDI).
+Número máximo de notas que puede reproducir simultáneamente un dispositivo de salida de la interfaz digital de instrumentar música (MIDI).
 
 </dd> <dt>
 
 <span id="_win32_ppqn_gloss"></span><span id="_WIN32_PPQN_GLOSS"></span>**PPQN**
 </dt> <dd>
 
-Vea [las partes por trimestre de la nota](/windows).
+Vea [las partes por trimestre nota](/windows).
 
 </dd> <dt>
 
@@ -364,7 +364,7 @@ Consulte [disco compacto: audio digital (CD-DA).](/windows)
 <span id="_win32_resource_interchange_file_format_riff_gloss"></span><span id="_WIN32_RESOURCE_INTERCHANGE_FILE_FORMAT_RIFF_GLOSS"></span>**Formato de archivo de intercambio de recursos (RIFF)**
 </dt> <dd>
 
-Especificación de archivo etiquetado que se usa para definir formatos estándar para archivos multimedia. La estructura de archivos etiquetados ayuda a evitar problemas de compatibilidad que suelen producirse cuando las definiciones de formato de archivo cambian con el tiempo. Dado que cada dato del archivo se identifica mediante un encabezado estándar, una aplicación que no reconoce un elemento de datos determinado puede omitir la información desconocida. Consulte también formato [de archivo etiquetado.](/windows)
+Especificación de archivo etiquetado que se usa para definir formatos estándar para archivos multimedia. La estructura de archivos etiquetados ayuda a evitar problemas de compatibilidad que a menudo se producen cuando las definiciones de formato de archivo cambian con el tiempo. Dado que cada fragmento de datos del archivo se identifica mediante un encabezado estándar, una aplicación que no reconoce un elemento de datos determinado puede omitir la información desconocida. Consulte también [formato de archivo etiquetado.](/windows)
 
 </dd> <dt>
 
@@ -378,14 +378,14 @@ Consulte [Formato de archivo de intercambio de recursos (RIFF).](/windows)
 <span id="_win32_riff_chunk_gloss"></span><span id="_WIN32_RIFF_CHUNK_GLOSS"></span>**Fragmento de RIFF**
 </dt> <dd>
 
-Fragmento con el identificador de fragmento Formato de archivo de intercambio de [recursos (RIFF)](/windows) que incluye un código de identificación y cero o más subchunks, cuyo contenido depende del tipo de formulario.
+Fragmento con identificador de fragmento Formato de archivo de intercambio de recursos [(RIFF)](/windows) que incluye un código de identificación y cero o más subchunks, cuyo contenido depende del tipo de formulario.
 
 </dd> <dt>
 
 <span id="_win32_riff_file_gloss"></span><span id="_WIN32_RIFF_FILE_GLOSS"></span>**Archivo RIFF**
 </dt> <dd>
 
-Un archivo cuyo formato cumple con uno de los formularios de formato de archivo de intercambio de [recursos (RIFF)](/windows) publicados. Entre los ejemplos de archivos RIFF se incluyen los archivos WAVE para los datos de audio de forma de onda, los archivos RMID para secuencias de Interfaz digital de instrumentar música (MIDI) y los archivos RDIB para mapas de bits independientes del dispositivo.
+Un archivo cuyo formato cumple con uno de los formularios de formato de archivo de intercambio de [recursos (RIFF)](/windows) publicados. Algunos ejemplos de archivos RIFF son los archivos WAVE para los datos de audio de forma de onda, los archivos RMID para secuencias de la interfaz digital de instrumentar música (MIDI) y los archivos RDIB para mapas de bits independientes del dispositivo.
 
 </dd> <dt>
 
@@ -410,7 +410,7 @@ Velocidad a la que un controlador de audio de forma de onda realiza la conversi�
 
 </dd> <dt>
 
-<span id="_win32_sequence_gloss"></span><span id="_WIN32_SEQUENCE_GLOSS"></span>**secuencia**
+<span id="_win32_sequence_gloss"></span><span id="_WIN32_SEQUENCE_GLOSS"></span>**sequence**
 </dt> <dd>
 
 Vea [secuencia de MIDI.](/windows)
@@ -434,28 +434,28 @@ Un dispositivo de interfaz de control multimedia (MCI) que no requiere un elemen
 <span id="_win32_smpte_gloss"></span><span id="_WIN32_SMPTE_GLOSS"></span>**SMPTE**
 </dt> <dd>
 
-Vea [Society of Motion Picture and Tv Engineers](/windows).
+Consulte [Society of Motion Picture and Tv Engineers](/windows).
 
 </dd> <dt>
 
 <span id="_win32_smpte_division_type_gloss"></span><span id="_WIN32_SMPTE_DIVISION_TYPE_GLOSS"></span>**Tipo de división SMPTE**
 </dt> <dd>
 
-Uno de los cuatro formatos de tiempo de SMPTE. El tiempo de SMPTE se expresa en horas, minutos, segundos y fotogramas. El tipo de división SMPTE especifica el valor de fotogramas por segundo correspondiente a un tiempo de SMPTE determinado. Por ejemplo, un tiempo SMPTE de una hora, 30 minutos, 24 segundos y 15 fotogramas solo es útil si se conoce el valor fotogramas por segundo o el tipo de división SMPTE.
+Uno de los cuatro formatos de control de tiempo de SMPTE. El tiempo de SMPTE se expresa en horas, minutos, segundos y fotogramas. El tipo de división SMPTE especifica el valor de fotogramas por segundo correspondiente a un tiempo de SMPTE determinado. Por ejemplo, un tiempo SMPTE de una hora, 30 minutos, 24 segundos y 15 fotogramas solo es útil si se conoce el valor fotogramas por segundo o el tipo de división SMPTE.
 
 </dd> <dt>
 
 <span id="_win32_smpte_offset_gloss"></span><span id="_WIN32_SMPTE_OFFSET_GLOSS"></span>**Desplazamiento de SMPTE**
 </dt> <dd>
 
-Evento de interfaz digital instrumenta cultural (MIDI) que designa la hora SMPTE en la que se iniciará la reproducción de un archivo MIDI. Los desplazamientos SMPTE solo se usan con archivos MIDI que usan el tipo de división SMPTE.
+Un evento de interfaz digital de instrumentar música (MIDI) que designa la hora de SMPTE a la que se va a iniciar la reproducción de un archivo MIDI. Los desplazamientos SMPTE solo se usan con archivos MIDI que usan el tipo de división SMPTE.
 
 </dd> <dt>
 
 <span id="_win32_smpte_time_gloss"></span><span id="_WIN32_SMPTE_TIME_GLOSS"></span>**Hora de SMPTE**
 </dt> <dd>
 
-Representación estándar del tiempo desarrollada para los sectores del vídeo y el cine. La hora de SMPTE se usa con audio de interfaz digital de instrumentador de música (MIDI), ya que muchas personas usan MIDI para puntuar la puntuación de música y vídeo. La hora de SMPTE es un formato de hora absoluto expresado en horas, minutos, segundos y fotogramas. Los tipos de división SMPTE estándar son 24, 25 y 30 fotogramas por segundo.
+Representación estándar del tiempo desarrollada para los sectores de vídeos y películas. La hora de SMPTE se usa con audio de interfaz digital de instrumentar música (MIDI), ya que muchas personas usan MIDI para puntuar sonido y vídeo. La hora de SMPTE es un formato de tiempo absoluto expresado en horas, minutos, segundos y fotogramas. Los tipos de división SMPTE estándar son 24, 25 y 30 fotogramas por segundo.
 
 </dd> <dt>
 
@@ -476,63 +476,63 @@ Un sintetizador que genera sonido mediante la adición de ondas cuadradas de var
 <span id="_win32_system_exclusive_data_gloss"></span><span id="_WIN32_SYSTEM_EXCLUSIVE_DATA_GLOSS"></span>**datos exclusivos del sistema**
 </dt> <dd>
 
-En La interfaz digital instrumentada (MIDI), los mensajes que solo comprenden los dispositivos MIDI de un fabricante específico. Los fabricantes de dispositivos MIDI pueden usar datos exclusivos del sistema para definir mensajes personalizados que se pueden intercambiar entre sus dispositivos MIDI. (La especificación ESTÁNDAR de MIDI define solo un marco para los mensajes exclusivos del sistema). Consulte también [Instrumentar la interfaz digital.](/windows)
+En Interfaz digital de instrumentar música (MIDI), los mensajes que solo comprenden los dispositivos MIDI de un fabricante específico. Los fabricantes de dispositivos MIDI pueden usar datos exclusivos del sistema para definir mensajes personalizados que se pueden intercambiar entre sus dispositivos MIDI. (La especificación ESTÁNDAR DE MIDI define solo un marco para mensajes exclusivos del sistema). Consulte también [Instrumentar la interfaz digital.](/windows)
 
 </dd> <dt>
 
 <span id="_win32_tagged_file_format_gloss"></span><span id="_WIN32_TAGGED_FILE_FORMAT_GLOSS"></span>**formato de archivo etiquetado**
 </dt> <dd>
 
-Formato de archivo en el que los datos se etiquetan mediante encabezados estándar que identifican el tipo y la longitud de la información. Consulte también [Formato de archivo de intercambio de recursos (RIFF).](/windows)
+Formato de archivo en el que los datos se etiquetan mediante encabezados estándar que identifican el tipo de información y la longitud. Consulte también [Formato de archivo de intercambio de recursos (RIFF).](/windows)
 
 </dd> <dt>
 
 <span id="_win32_tempo_gloss"></span><span id="_WIN32_TEMPO_GLOSS"></span>**tempo**
 </dt> <dd>
 
-Velocidad a la que se reproduce un archivo de interfaz digital de instrumentar música (MIDI). El tempo se mide en latidos por minuto (BPM); el tempo de MIDI típico es de 120 BPM. Consulte también [Instrumentar la interfaz digital.](/windows)
+Velocidad a la que se reproduce un archivo de interfaz digital de instrumentar música (MIDI). El tempo se mide en latidos por minuto (BPM); el tempo típico de MIDI es de 120 BPM. Consulte también [Instrumentar la interfaz digital.](/windows)
 
 </dd> <dt>
 
 <span id="_win32_threshold_gloss"></span><span id="_WIN32_THRESHOLD_GLOSS"></span>**umbral**
 </dt> <dd>
 
-En el caso de la interfaz de la máquina virtual, la cantidad, en unidades de dispositivo, que las coordenadas de stick deben cambiar antes de que la aplicación sea notificada del movimiento. Un umbral alto reduce el número de mensajes sms enviados a una aplicación, pero también reduce la confidencialidad del micrófono.
+En el caso de la interfaz de puerto, la cantidad, en unidades de dispositivo, que las coordenadas de stick deben cambiar antes de que se notifique el movimiento a la aplicación. Un umbral alto reduce el número de mensajes sms enviados a una aplicación, pero también reduce la confidencialidad de los mensajes.
 
 </dd> <dt>
 
 <span id="_win32_time_stamp_gloss"></span><span id="_WIN32_TIME_STAMP_GLOSS"></span>**marca de tiempo**
 </dt> <dd>
 
-Una etiqueta que permite a un secuenciador de interfaz digital de instrumentar música (MIDI) reproducir los datos DE MIDI registrados en el momento adecuado. Consulte también [Instrumentar la interfaz digital.](/windows)
+Una etiqueta que permite a un secuenciador de interfaz digital de instrumentar música (MIDI) reproducir los datos de MIDI registrados en el momento adecuado. Consulte también [Instrumentar la interfaz digital.](/windows)
 
 </dd> <dt>
 
 <span id="_win32_tmsf_time_format_gloss"></span><span id="_WIN32_TMSF_TIME_FORMAT_GLOSS"></span>**Formato de hora TMSF**
 </dt> <dd>
 
-Formato de hora que usa la interfaz de control multimedia (MCI) para expresar el tiempo en pistas, minutos, segundos y fotogramas. El número de fotogramas en un segundo depende del tipo de dispositivo que se usa; Los dispositivos de audio de disco compacto usan 75 fotogramas por segundo. El formato de hora TMSF se usa principalmente en dispositivos de audio de disco compacto. Vea también [Interfaz de control multimedia (MCI).](/windows)
+Formato de hora que usa la interfaz de control multimedia (MCI) para expresar el tiempo en pistas, minutos, segundos y fotogramas. El número de fotogramas de un segundo depende del tipo de dispositivo que se esté utilizando. Los dispositivos de audio de disco compacto usan 75 fotogramas por segundo. El formato de hora TMSF se usa principalmente en dispositivos de audio de disco compacto. Vea también [Interfaz de control multimedia (MCI).](/windows)
 
 </dd> <dt>
 
 <span id="_win32_track_gloss"></span><span id="_WIN32_TRACK_GLOSS"></span>**seguimiento**
 </dt> <dd>
 
-Secuencia de sonido en un disco compacto: disco de audio digital (CD-DA). Con un archivo de interfaz digital instrumentada (MIDI), la información se puede separar en pistas, definidas por el creador del archivo. Las pistas de archivo DE MIDI pueden corresponder a canales MIDI, o pueden corresponder a partes de una canción (por ejemplo, sonido o música); Una pista de CD-DA normalmente corresponde a una canción. Consulte también [disco compacto: audio digital.](/windows)
+Secuencia de sonido en un disco compacto: disco de audio digital (CD-DA). Con un archivo de interfaz digital instrumentada (MIDI), la información se puede separar en pistas, definidas por el creador del archivo. Las pistas de archivos DE MIDI pueden corresponder a canales DE LÍNEA, o pueden corresponderse con partes de una canción (por ejemplo, la música o el pórtico); una pista de CD-DA normalmente corresponde a una canción. Consulte también [disco compacto: audio digital.](/windows)
 
 </dd> <dt>
 
 <span id="_win32_volume_scalar_gloss"></span><span id="_WIN32_VOLUME_SCALAR_GLOSS"></span>**escalar de volumen**
 </dt> <dd>
 
-Componente de un mapa de revisión del asignador de instrumentaciones digitales (MIDI) que ajusta el volumen de una revisión en un sintetizador. Por ejemplo, si la revisión de bajo de un sintetizador es demasiado alta con respecto a la revisión de los mosaicos, el escalar del volumen puede reducir el volumen del bajo o aumentar el volumen del sonido. (Las aplicaciones que reproducen audio de forma de onda también pueden ajustar el volumen de salida). Consulte también [asignador DE MES,](/windows) [revisión](/windows).
+Componente de un mapa de revisión del asignador de instrumentaciones digitales (MIDI) que ajusta el volumen de una revisión en un sintetizador. Por ejemplo, si la revisión de los parches de un sintetizador es demasiado alta en relación con la revisión de la zona de la cola, el escalar del volumen puede reducir el volumen del sonido o aumentar el volumen del sonido. (Las aplicaciones que reproducen audio de forma de onda también pueden ajustar el volumen de salida). Vea también [Asignador DE MIDI,](/windows) [revisión](/windows).
 
 </dd> <dt>
 
 <span id="_win32_wave_file_gloss"></span><span id="_WIN32_WAVE_FILE_GLOSS"></span>**Archivo WAVE**
 </dt> <dd>
 
-Formato de archivo estándar para almacenar datos de audio de forma de onda. Los archivos WAVE tienen un . Extensión de nombre de archivo WAV.
+Un formato de archivo estándar para almacenar datos de audio de forma de onda. Los archivos WAVE tienen un . Extensión de nombre de archivo WAV.
 
 </dd> <dt>
 

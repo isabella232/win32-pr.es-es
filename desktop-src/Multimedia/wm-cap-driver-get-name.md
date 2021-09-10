@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dc44efae992f2967cb069c0866fbb7f9febed51ea73f94853a1b017bc57a068
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 256b5f7913c83ddd278f3f3a05552b3d81070c73
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369687"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371414"
 ---
-# <a name="wm_cap_driver_get_name-message"></a>Mensaje GET NAME DEL CONTROLADOR WM \_ CAP \_ \_ \_
+# <a name="wm_cap_driver_get_name-message"></a>Mensaje GET \_ \_ NAME DEL CONTROLADOR \_ WM CAP \_
 
 El **mensaje WM CAP DRIVER GET \_ \_ \_ \_ NAME** devuelve el nombre del controlador de captura conectado a la ventana de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capDriverGetName.**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetname)
 
@@ -41,7 +41,7 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 <span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*wSize*
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que hace referencia **szName.**
+Tamaño, en bytes, del búfer al que hace referencia **szName**.
 
 </dd> <dt>
 
@@ -56,15 +56,15 @@ Puntero a un búfer definido por la aplicación que se usa para devolver el nomb
 
 Devuelve **TRUE si** se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El nombre es una cadena de texto recuperada del área de recursos del controlador. Las aplicaciones deben asignar aproximadamente 80 bytes para esta cadena. Si el controlador no contiene un recurso de nombre, se devuelve el nombre de ruta de acceso completo del controlador que aparece en el registro o en SYSTEM.INI archivo.
+El nombre es una cadena de texto recuperada del área de recursos del controlador. Las aplicaciones deben asignar aproximadamente 80 bytes para esta cadena. Si el controlador no contiene un recurso de nombre, se devuelve el nombre completo de la ruta de acceso del controlador que aparece en el Registro o en SYSTEM.INI archivo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -72,7 +72,7 @@ El nombre es una cadena de texto recuperada del área de recursos del controlado
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

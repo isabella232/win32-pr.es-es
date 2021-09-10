@@ -16,12 +16,12 @@ keywords:
 - mezcladores, controles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3f435396dd2a8d5983f596628711dfd01afe7111e75af1dc2060f5c6c4ef0a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 447b0cdc44a33237aa7e0c726a5eb533b3bc7d0e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065615"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372379"
 ---
 # <a name="mixer-architecture"></a>Mixer Arquitectura
 

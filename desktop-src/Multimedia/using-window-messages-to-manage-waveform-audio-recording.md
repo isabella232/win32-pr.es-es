@@ -14,12 +14,12 @@ keywords:
 - MM_WIM_OPEN mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c709df27be25a8a3f4c5a9be6528e28b4e8bab9251b04b6c397a7ef3fc8efd9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70bb1cfe1ed0f7ba6052fc1eb6af8fca8355d87d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135657"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371305"
 ---
 # <a name="using-window-messages-to-manage-waveform-audio-recording"></a>Uso de mensajes de ventana para administrar Waveform-Audio grabación
 
@@ -37,7 +37,7 @@ Los mensajes siguientes se pueden enviar a una función de procedimiento de vent
 
  
 
-El *parámetro lParam* de [**MM \_ WIM \_ DATA**](mm-wim-data.md) especifica un puntero a una [**estructura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) que identifica el búfer. Es posible que este búfer no se llene completamente con datos de audio de forma de onda; La grabación puede detenerse antes de que se llene el búfer. Use el **miembro dwBytesRecorded de** la estructura **WAVEHDR** para determinar la cantidad de datos válidos presentes en el búfer.
+El *parámetro lParam* de [**MM \_ WIM \_ DATA**](mm-wim-data.md) especifica un puntero a una [**estructura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) que identifica el búfer. Es posible que este búfer no se llene completamente con datos de audio de forma de onda; la grabación puede detenerse antes de que se llene el búfer. Use el **miembro dwBytesRecorded** de la estructura **WAVEHDR** para determinar la cantidad de datos válidos presentes en el búfer.
 
 El mensaje más útil es probablemente [**MM \_ WIM \_ DATA**](mm-wim-data.md). Cuando la aplicación termine de usar el bloque de datos enviado por el controlador de dispositivo, puede limpiar y liberar el bloque de datos. A menos que necesite asignar memoria o inicializar variables, probablemente no necesite usar los mensajes [**\_ MM WIM \_ OPEN**](mm-wim-open.md) y [**MM \_ WIM \_ CLOSE.**](mm-wim-close.md)
 
