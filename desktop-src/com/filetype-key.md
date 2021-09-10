@@ -6,12 +6,12 @@ keywords:
 - Com de clave del Registro FileType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2899b69c2f433fbd3587bdd7baa6c17c4f8cc4c9cd32100dcd672f9d213d4d3b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9a2e331588b627ee5ce9a9c1b69631f1e8a1dbe4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119462505"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369608"
 ---
 # <a name="filetype-key"></a>Clave FileType
 
@@ -55,7 +55,7 @@ Representa el patrón que debe coincidir para que un archivo sea de este tipo de
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función [**GetClassFile**](/windows/desktop/api/Objbase/nf-objbase-getclassfile) usa entradas para buscar coincidencias con patrones con varios bytes de archivo en un archivo no compuesto. **FileType** tiene subclaves CLSID, cada una de las cuales tiene una serie de subclaves **0,** **1,** **2,** **3**. Estos valores contienen patrones que, si uno coincide, producen el CLSID indicado. Por ejemplo, un valor de "0, 4, FFFFFFFF, ABCD1234" indica que los primeros 4 bytes deben ser ABCD1234, en ese orden. Un valor de "-4, 4, FEFEFEFE" indica que los últimos cuatro bytes del archivo deben ser FEFEFEFE. Si alguno de los patrones coincide, se devuelve el CLSID.
 

@@ -11,12 +11,12 @@ keywords:
 - Macro MCIWndCanWindow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f6dbc6b9d1e7bbfc1c1e3651edd40c0f5953989dee6d2462e065d5c2109b5b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59effd4e00106a2bb0175bf39b7eb07fa8b65d30
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117986703"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372349"
 ---
 # <a name="mci-device-capabilities"></a>Funcionalidades del dispositivo MCI
 

@@ -4,12 +4,12 @@ ms.assetid: 3815d487-2d58-4ba8-85d2-cae6a642a791
 title: Vista combinada de HKEY_CLASSES_ROOT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a52b48be32ec524cdac42808d7f4efddfc78854b56133e647d6f5a9b06ae88bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8597db976922db9ca348488b0092c41ba7c7489
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118885424"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371887"
 ---
 # <a name="merged-view-of-hkey_classes_root"></a>Vista combinada de HKEY \_ CLASSES \_ ROOT
 
@@ -25,7 +25,7 @@ Si una aplicación se ejecuta con derechos de administrador y el control de cuen
 
 **Windows Server 2003 y Windows XP/2000:** Las aplicaciones pueden registrar objetos COM dependientes en el almacén de configuración COM por equipo o por usuario ( clases de **software HKEY \_ LOCAL \_ MACHINE \\ \\** o clases de **software HKEY \_ CURRENT \_ USER \\ \\**).
 
-En el ejemplo siguiente se muestra un conjunto de subclaves bajo las claves **HKEY \_ LOCAL \_ MACHINE** y **HKEY \_ CURRENT \_ USER** y la vista combinada resultante de **HKEY CLASSES \_ \_ ROOT**.
+En el ejemplo siguiente se muestra un conjunto de subclaves en las claves **HKEY \_ LOCAL \_ MACHINE** y **HKEY \_ CURRENT \_ USER** y la vista combinada resultante de **HKEY CLASSES \_ \_ ROOT**.
 
 **HKEY \_ Clases \_ \\ DE SOFTWARE \\ DE** MÁQUINA LOCAL **CLSID***2**4***inprocserver32****localserver32***7*                                             
 

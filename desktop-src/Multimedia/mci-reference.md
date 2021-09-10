@@ -6,12 +6,12 @@ keywords:
 - Referencia de MCI, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f2c8f91f779ca55d0915c31ac110d5aef77a5171fa4eed110e2911c5167c4df
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 27cc54f69e714960d189567e759cf4b254275807
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039055"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369871"
 ---
 # <a name="mci-reference"></a>Referencia de MCI
 
@@ -58,10 +58,10 @@ En esta sección se enumeran las funciones, estructuras, mensajes, macros, coman
 
 ## <a name="configuring-a-device"></a>Configuración de un dispositivo
 
--   [**Romper**](break.md)
+-   [**break**](break.md)
 -   [**Configurar**](configure.md)
 -   [Escapar](escape.md)
--   [**Índice**](./windows-multimedia-start-page.md)
+-   [**índice**](./windows-multimedia-start-page.md)
 -   [**MCI \_ BREAK**](mci-break.md)
 -   [**MCI \_ BREAK \_ PARMS**](mci-break-parms.md)
 -   [**MCI \_ CONFIGURE**](mci-configure.md)
@@ -137,7 +137,7 @@ En esta sección se enumeran las funciones, estructuras, mensajes, macros, coman
 -   [**MCI \_ VCR \_ STEP \_ PARMS**](mci-vcr-step-parms.md)
 -   [**MCI \_ VD \_ STEP \_ PARMS**](mci-vd-step-parms.md)
 -   [**Buscar**](seek.md)
--   [**signal**](signal.md)
+-   [**Señal**](signal.md)
 -   [**Paso**](step.md)
 
 ## <a name="editing"></a>Edición
@@ -155,7 +155,7 @@ En esta sección se enumeran las funciones, estructuras, mensajes, macros, coman
 -   [**PEGAR \_ MCI**](mci-paste.md)
 -   [**MCI \_ UNDO**](mci-undo.md)
 -   [**MCI \_ WAVE \_ DELETE \_ PARMS**](mci-wave-delete-parms.md)
--   [**pegar**](paste.md)
+-   [**Pegar**](paste.md)
 -   [**Deshacer**](undo.md)
 
 ## <a name="miscellaneous"></a>Varios
@@ -171,7 +171,7 @@ En esta sección se enumeran las funciones, estructuras, mensajes, macros, coman
 -   [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md)
 -   [**MCI \_ OVLY \_ OPEN \_ PARMS**](mci-ovly-open-parms.md)
 -   [**MCI \_ WAVE \_ OPEN \_ PARMS**](mci-wave-open-parms.md)
--   [**abierto**](open.md)
+-   [**Abierto**](open.md)
 
 ## <a name="realizing-a-palette"></a>Realización de una paleta
 
@@ -232,7 +232,7 @@ En esta sección se enumeran las funciones, estructuras, mensajes, macros, coman
 -   [**MCI \_ RESERVE**](mci-reserve.md)
 -   [**RESTAURACIÓN DE MCI \_**](mci-restore.md)
 -   [**Monitor**](monitor.md)
--   [**Calidad**](quality.md)
+-   [**calidad**](quality.md)
 -   [**reserva**](reserve.md)
 -   [**restaurar**](restore.md)
 
@@ -245,16 +245,16 @@ En esta sección se enumeran las funciones, estructuras, mensajes, macros, coman
 -   [**MCI \_ OVLY \_ WINDOW \_ PARMS**](mci-ovly-window-parms.md)
 -   [**MCI \_ PUT**](mci-put.md)
 -   [**MCI \_ WHERE**](mci-where.md)
--   [**VENTANA \_ MCI**](mci-window.md)
+-   [**VENTANA \_ de MCI**](mci-window.md)
 -   [**Poner**](put.md)
--   [**Dónde**](where.md)
+-   [**where**](where.md)
 -   [**Ventana**](window.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> </dl>
 
  

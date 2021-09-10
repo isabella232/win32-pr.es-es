@@ -9,12 +9,12 @@ keywords:
 - Referencia de MCIWnd, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03249d5e0f0a0f4fef8110d878021437f7aee667085a0720a86de77c8cbdfe49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76333f38a5dec3edaadcae69777703ebea61296f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118374370"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370819"
 ---
 # <a name="mciwnd-reference"></a>Referencia de MCIWnd
 
@@ -113,9 +113,9 @@ En esta sección se describen las funciones, mensajes y macros asociados a la cl
 ## <a name="status-updates"></a>Actualizaciones de estado
 
 -   [**MCIWndGetActiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetactivetimer)
--   [**MCIWndGetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
+-   [**MCIWndGetCiónTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
 -   [**MCIWndSetActiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetactivetimer)
--   [**MCIWndSetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
+-   [**MCIWndSetCiónTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
 -   [**MCIWndSetTimers**](/windows/desktop/api/Vfw/nf-vfw-mciwndsettimers)
 
 ## <a name="device-capabilities"></a>Capacidades del dispositivo
@@ -135,7 +135,7 @@ En esta sección se describen las funciones, mensajes y macros asociados a la cl
 -   [**MCIWndGetFileName**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetfilename)
 -   [**MCIWndGetMode**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetmode)
 
-## <a name="mci-command-string-interface"></a>Interfaz de Command-String MCI
+## <a name="mci-command-string-interface"></a>Interfaz Command-String MCI
 
 -   [**MCIWndReturnString**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
 -   [**MCIWndSendString**](/windows/desktop/api/Vfw/nf-vfw-mciwndsendstring)

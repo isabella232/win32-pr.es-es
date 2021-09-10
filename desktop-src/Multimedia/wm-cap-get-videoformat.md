@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afae3ea79b29cad6a758272f8f3952fdfb830a2b3d6d60f9fc5b4ca5042179fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 072d71366efee550b037d4a20388817954937854
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118622624"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371462"
 ---
 # <a name="wm_cap_get_videoformat-message"></a>Mensaje \_ GET \_ VIDEOFORMAT de WM CAP \_
 
@@ -58,7 +58,7 @@ Devuelve el tamaño, en bytes, del formato de vídeo o cero si la ventana de cap
 
 ## <a name="remarks"></a>Observaciones
 
-Dado que los formatos de vídeo comprimidos varían en los requisitos de tamaño, las aplicaciones deben recuperar primero el tamaño, luego asignar memoria y, por último, solicitar los datos de formato de vídeo.
+Dado que los formatos de vídeo comprimidos varían en los requisitos de tamaño, las aplicaciones deben recuperar primero el tamaño, asignar memoria y, por último, solicitar los datos de formato de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 

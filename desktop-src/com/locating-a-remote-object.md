@@ -4,12 +4,12 @@ description: Buscar un objeto remoto
 ms.assetid: b329de53-646b-42a2-afa3-06473c3483d6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96577ddd018ab6b00c5af59a9824984c1ffe255dc91849b4391b256b493b765a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d0ce1b2280faaed7be3b5afb25a48438ff1a2b7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119992455"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369520"
 ---
 # <a name="locating-a-remote-object"></a>Buscar un objeto remoto
 

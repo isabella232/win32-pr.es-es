@@ -4,12 +4,12 @@ description: Crear un puntero de objeto
 ms.assetid: b66a2725-6ba1-4aea-b165-fe3f4da00375
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 586ba0b8c9ee261e29f21ed58c84193f4cc89d1399c62d75d82a2c0a49075dcc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4f57451e2781a94642e61365d3a6c694758f4056
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144688"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371672"
 ---
 # <a name="creating-an-object-pointer"></a>Crear un puntero de objeto
 

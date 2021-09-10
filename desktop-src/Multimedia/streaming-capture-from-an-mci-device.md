@@ -10,12 +10,12 @@ keywords:
 - CapGetMCIDeviceName macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24d469465f47e908bda2512261ea638ad23e931a43cbb0449df676829469c3d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab8cf358a87a812024328abf7fc1aae0509a126f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892595"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372085"
 ---
 # <a name="streaming-capture-from-an-mci-device"></a>Captura de streaming desde un dispositivo MCI
 
@@ -23,7 +23,7 @@ Los dispositivos MCI aumentan la operación de captura en la captura en tiempo r
 
 En la captura en tiempo real, la ventana de captura sincroniza la operación de captura y compensa los retrasos asociados con la posición del origen de vídeo de MCI y la inicialización de los recursos (como los búferes de captura) necesarios para capturar datos. La ventana de captura espera que se instale un dispositivo de vídeo MCI válido en el sistema para capturar datos de esta manera.
 
-Las especificaciones para controlar un dispositivo MCI se almacenan en los miembros de la [**estructura CAPTUREPARMS.**](/windows/win32/api/vfw/ns-vfw-captureparms) Los orígenes de vídeo compatibles con MCI incluyen vcr y escánerdiscs. Si el **miembro fMCIControl** de esta estructura se establece en **TRUE,** la ventana de captura coordina la operación MCI. La ventana de captura usa los parámetros especificados en los miembros **dwMCIStartTime** y **dwMCIStopTime** para obtener las posiciones inicial y de detención, en milisegundos, de la secuencia. Si el valor de **fMCIControl** es **FALSE,** el origen del vídeo no se trata como un dispositivo MCI y se omite el contenido de **dwMCIStartTime** y **dwMCIStopTime.**
+Las especificaciones para controlar un dispositivo MCI se almacenan en los miembros de la [**estructura CAPTUREPARMS.**](/windows/win32/api/vfw/ns-vfw-captureparms) Los orígenes de vídeo compatibles con MCI incluyen VCR y escáneres. Si el **miembro fMCIControl** de esta estructura se establece en **TRUE,** la ventana de captura coordina la operación MCI. La ventana de captura usa los parámetros especificados en los miembros **dwMCIStartTime** y **dwMCIStopTime** para obtener las posiciones inicial y de detención, en milisegundos, de la secuencia. Si el valor de **fMCIControl** es **FALSE,** el origen del vídeo no se trata como un dispositivo MCI y se omite el contenido de **dwMCIStartTime** y **dwMCIStopTime.**
 
 Puede usar Media Player para comprobar rápidamente que un dispositivo de vídeo MCI está conectado correctamente al sistema. La reproducción de un dispositivo Media Player comprueba que la configuración de MCI del dispositivo es correcta. Si aparece una imagen en la pantalla de vídeo, el origen del vídeo se conecta correctamente al hardware de captura.
 

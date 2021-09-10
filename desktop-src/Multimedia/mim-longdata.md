@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82605835ce8ac231346014215c854abfe9ae7a55fd81e81b8d6214fb8a230327
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bc5f83b1f0468540da18d0d8317dae42cbf33bc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118137216"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370879"
 ---
 # <a name="mim_longdata-message"></a>\_MIM Mensaje LONGDATA
 
-El **MIM \_ longdata** se envía a una función de devolución de llamada de entrada DE MIDI cuando un búfer exclusivo del sistema se ha rellenado con datos y se devuelve a la aplicación.
+El **MIM \_ mensaje LONGDATA** se envía a una función de devolución de llamada de entrada DE MIDI cuando un búfer exclusivo del sistema se ha rellenado con datos y se devuelve a la aplicación.
 
 
 ```C++
@@ -41,14 +41,14 @@ dwParam2 = dwTimestamp
 <span id="lpMidiHdr"></span><span id="lpmidihdr"></span><span id="LPMIDIHDR"></span>*lpMidiHdr*
 </dt> <dd>
 
-Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) que identifica el búfer de entrada.
+Puntero a una [**estructura MIDIHDR que**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) identifica el búfer de entrada.
 
 </dd> <dt>
 
 <span id="dwTimestamp"></span><span id="dwtimestamp"></span><span id="DWTIMESTAMP"></span>*dwTimestamp*
 </dt> <dd>
 
-Hora a la que el controlador del dispositivo de entrada recibió los datos. La marca de tiempo se especifica en milisegundos, empezando por cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
+Hora a la que el controlador del dispositivo de entrada recibió los datos. La marca de tiempo se especifica en milisegundos, empezando en cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Hora a la que el controlador del dispositivo de entrada recibió los datos. La m
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Es posible que el búfer devuelto no esté lleno. Para determinar el número de bytes registrados en el búfer devuelto, use el **miembro dwBytesRecorded** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) especificada por *lpMidiHdr*.
 

@@ -15,12 +15,12 @@ keywords:
 - audio auxiliar, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d59f27e845d6edd4b49bcd3a27263941859767b29c89cf770bbf31accfc6dadf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2050760a3716ddbc0c59504f1e035a7364f02e78
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135934"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371311"
 ---
 # <a name="using-waveform-and-auxiliary-audio"></a>Usar forma de onda y audio auxiliar
 

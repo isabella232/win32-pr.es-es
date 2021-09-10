@@ -11,16 +11,16 @@ keywords:
 - E/S de archivo, función mmioOpen
 - entrada y salida (E/S),función mmioOpen
 - E/S (entrada y salida),función mmioOpen
-- mmioOpen ( Función)
+- Función mmioOpen
 - abrir archivos de E/S
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffbd323e888b181b0166572d11687d3dde66e83f0ce73541555b1f49083564ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2123b73c5f3a93cbb6e72711a7137652f7534b2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893195"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371816"
 ---
 # <a name="opening-a-file-with-mmioopen"></a>Abrir un archivo con mmioOpen
 

@@ -4,12 +4,12 @@ description: Seguridad de activación
 ms.assetid: 0c13d473-a9f9-40b5-951b-731eab736fe6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4be436997889edd14704d5fa7646db689bba405825c1e8bcf9d021ea850ae70f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e5b01b918666e911d96ed16528ba5045103f445
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048913"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369747"
 ---
 # <a name="activation-security"></a>Seguridad de activación
 

@@ -16,22 +16,22 @@ keywords:
 - crear archivos MIDI, asignaciones de claves estándar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe148c2fe1bb562aad994608a8c87c35e84bccb7d63ba1bc3ee3e5dd3bbc56a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6fcfec1b5089fa3c58c18eb8990156df12db0ae
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065645"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370796"
 ---
 # <a name="authoring-guidelines-for-midi-files"></a>Directrices de creación para archivos MIDI
 
 Siga estas instrucciones para crear archivos MIDI independientes del dispositivo para Windows:
 
 -   Use las [asignaciones de revisión estándar](standard-midi-patch-assignments.md) de MIDI y [las asignaciones de claves MIDI estándar.](standard-midi-key-assignments.md)
--   Envíe siempre un mensaje de cambio de programa a un canal para seleccionar una revisión antes de enviar otros mensajes a ese canal. Para los dos canales de canales (10 y 16), seleccione el número de programa 0.
+-   Envíe siempre un mensaje de cambio de programa a un canal para seleccionar una revisión antes de enviar otros mensajes a ese canal. Para los dos canales de televisión (10 y 16), seleccione el número de programa 0.
 -   Siga siempre un mensaje de cambio de programa DE MIDI con un mensaje de controlador de volumen principal DE MIDI (número de controlador 7) para establecer el volumen relativo de la revisión.
 -   Use un valor de 80 (0x50) para el controlador de volumen principal para los niveles de escucha normales. Para niveles más silenciosos o más altos, puede usar valores inferiores o superiores.
--   Use solo los siguientes mensajes MIDI: note-on with velocity, note-off, program change, pitch pitch pitch, main volume (controller 7) (Nota con velocidad, nota desactivada, cambio de programa), pitch pitch, main volume (controller 7) (Volumen principal (controlador 7) y el controlador 64). Los síntesis internos son necesarios para responder a estos mensajes y la mayoría de los instrumentos son tan importantes como para responder a ellos.
+-   Use solo los siguientes mensajes MIDI: note-on with velocity, note-off, program change, pitch pitch pitch, main volume (controller 7) y el controlador 64. Los síntesis internos son necesarios para responder a estos mensajes y la mayoría de los instrumentos son tan importantes como para responder a ellos.
 
  
 

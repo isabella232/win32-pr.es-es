@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd19580dacdc819f35bc36ed8f0070a5fc1b9fc4b745c78711c4fc312611e3c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a554c9ed4e4869eab333b93736a0400ef93053cc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138290"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370070"
 ---
 # <a name="mci_ovly_window_parms-structure"></a>Estructura MCI \_ OVLY \_ WINDOW \_ PARMS
 
@@ -71,7 +71,7 @@ Título de la ventana.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -91,7 +91,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

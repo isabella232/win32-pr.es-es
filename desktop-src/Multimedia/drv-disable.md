@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75d9c5a99414f0b755efbae005365d89665a2b2bc5a4673436101066ec740564
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b512e90612a02681008474c7f1323f17304422d2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144418"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370460"
 ---
 # <a name="drv_disable-message"></a>Mensaje DISABLE de DRV \_
 
@@ -40,7 +40,7 @@ Identificador de la instancia del controlador instalable.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se usan los parámetros *dwDriverId,* *lParam1* y *lParam2.*
 

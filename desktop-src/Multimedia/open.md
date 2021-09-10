@@ -3,7 +3,7 @@ title: Comando open (Corecrt \_ io.h)
 description: El comando open inicializa un dispositivo. Todos los dispositivos MCI reconocen este comando.
 ms.assetid: 0bb97c8c-8222-4d4e-b20b-94e9f9095afe
 keywords:
-- Abrir comando Windows Multimedia
+- comando open Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d2e585a44c19093fa0d20ab4870f579c67cd568c3a693523242b84910e6589d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac8d31f1806a9c12f764c679548564aa053c3041
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118373274"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369840"
 ---
 # <a name="open-command"></a>Comando open
 
@@ -55,7 +55,7 @@ Marca que identifica lo que se va a inicializar. En la tabla siguiente se enumer
 
 
 
-| Valor        | Significado                                                        | Significado                                                                         |
+| Value        | Significado                                                        | Significado                                                                         |
 |--------------|----------------------------------------------------------------|---------------------------------------------------------------------------------|
 | cdaudio      | alias *de dispositivo \_ compartible*                                  | tipo *\_ de dispositivo*                                                             |
 | digitalvideo | alias *de dispositivo \_ aliaselementname* nostatic parent *hwnd* compartible | estilo de estilo secundario superpuesto estilo emergente tipo *de \_ estilo tipo* de *dispositivo \_* |
@@ -73,7 +73,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 
 
 
-| Valor                 | Significado                                                                                                                                                                                                                                                                                                                                                              |
+| Value                 | Significado                                                                                                                                                                                                                                                                                                                                                              |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | alias *\_ de dispositivo* | Especifica un nombre alternativo para el dispositivo especificado. Si se especifica, debe usarse como identificador *de \_ dispositivo* en los comandos posteriores.                                                                                                                                                                                                                                          |
 | *Elementname*         | Especifica el nombre del elemento de dispositivo (archivo) cargado cuando se abre el dispositivo.                                                                                                                                                                                                                                                                                        |
@@ -103,7 +103,7 @@ Puede ser "wait", "notify" o ambos. Para obtener más información sobre estas m
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 MCI reserva "cdaudio" para el tipo de dispositivo de audio de CD, "videodisc" para el tipo de dispositivo videodisc, "sequencer" para el tipo de dispositivo secuenciador MIDI, "AVIVideo" para el tipo de dispositivo de vídeo digital y "waveaudio" para el tipo de dispositivo audio de onda.
 
@@ -137,7 +137,7 @@ El controlador MCIWAVE requiere un dispositivo asincrónico de audio de forma de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                     |
@@ -145,11 +145,11 @@ El controlador MCIWAVE requiere un dispositivo asincrónico de audio de forma de
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

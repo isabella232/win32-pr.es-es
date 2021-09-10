@@ -7,12 +7,12 @@ keywords:
 - Macro MCIWndNew
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a02dfd62985b0267c685e6893512f977340f47f95801e8821d46005d5371397
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 814bd9f92b895c03ccbb073f830dbf31dcd2e3c2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805565"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370849"
 ---
 # <a name="recording-with-mciwnd-controls"></a>Grabación con controles MCIWnd
 

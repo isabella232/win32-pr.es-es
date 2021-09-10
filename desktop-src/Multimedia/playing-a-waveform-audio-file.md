@@ -1,17 +1,17 @@
 ---
-title: Reproducción de un Waveform-Audio archivo
-description: Reproducción de un Waveform-Audio archivo
+title: Reproducir un archivo Waveform-Audio archivo
+description: Reproducir un archivo Waveform-Audio archivo
 ms.assetid: b28ee3e8-1633-4eb8-af1c-d1441ef752e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1581a891f07a69641338f203fb56ce57f9b3717d6cd52800b907798fce43795d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb6cd1bf32de7ae9002dc3691d342af360f29455
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118372665"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371743"
 ---
-# <a name="playing-a-waveform-audio-file"></a>Reproducción de un Waveform-Audio archivo
+# <a name="playing-a-waveform-audio-file"></a>Reproducir un archivo Waveform-Audio archivo
 
 En el ejemplo siguiente se abre un dispositivo de audio de forma de onda y se reproduce el archivo de audio de forma de onda especificado por el *parámetro lpszWAVEFileName* mediante la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 

@@ -4,12 +4,12 @@ description: Asociación de iconos a una categoría
 ms.assetid: 5e5c3c10-07cf-4a34-9822-97ec940b3117
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62af14480d24053ffc517d405635ecbe4d6e45c8edac256039ea008160f11063
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 98c7a662ab3aaf578f037ff246207d03e4fcd688
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793835"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369683"
 ---
 # <a name="associating-icons-with-a-category"></a>Asociación de iconos a una categoría
 

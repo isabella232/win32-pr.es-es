@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cfd55b2950f6d4268a9af5ee5bdc7fc9c378c4dbaeaa569406339263a2cf85e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 68a6b51d980b6ca0a3c223f414571a42b2e3ae3f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039115"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369919"
 ---
 # <a name="mci_ovly_rect_parms-structure"></a>Estructura \_ MCI OVLY \_ RECT \_ PARMS
 
@@ -44,7 +44,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Rectángulo que contiene información de posicionamiento. [Las estructuras RECT]
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -75,7 +75,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
@@ -90,7 +90,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
 </dt> <dt>
 
-[Rect](/previous-versions//ms536136(v=vs.85))
+[RECT](/previous-versions//ms536136(v=vs.85))
 </dt> </dl>
 
  

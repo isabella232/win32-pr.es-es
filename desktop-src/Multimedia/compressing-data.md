@@ -10,12 +10,12 @@ keywords:
 - Macro ICCompressEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f45c7b592b4b55e77b71390d7ffd79b23714242ea678d641d4a3f5b8118bef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0c08308b695bf022d2d2b76bda6727d9f9c1a9c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145008"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370375"
 ---
 # <a name="compressing-data"></a>Comprimir datos
 

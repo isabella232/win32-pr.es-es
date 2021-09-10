@@ -7,18 +7,18 @@ keywords:
 - Función AVIFileRelease
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cca5cfdce177e119d178ca09dd447b7d4e3b6a52c1881f059b72e4424f9c54c3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 68e1c51c4747e03bf4f18a8e6c560e45798e1c8c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038325"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372025"
 ---
 # <a name="opening-and-closing-files"></a>Abrir y cerrar archivos
 
 Una aplicación debe abrir un archivo AVI antes de leer o escribir. Para abrir un archivo AVI, use la [**función AVIFileOpen.**](/windows/desktop/api/Vfw/nf-vfw-avifileopen) **AVIFileOpen** devuelve la dirección de una interfaz de archivo AVI que contiene el identificador del archivo abierto e incrementa el recuento de referencias del archivo.
 
-La **función AVIFileOpen** admite las marcas OF usadas con la [función OpenFile.](/documentation/) Si una aplicación escribe en un archivo existente, debe incluir la marca OF \_ WRITE en **AVIFileOpen.** Del mismo modo, si la aplicación crea y escribe en un nuevo archivo, debe incluir las marcas OF CREATE y \_ OF \_ WRITE en **AVIFileOpen.**
+La **función AVIFileOpen** admite las marcas OF usadas con la [función OpenFile.](/documentation/) Si una aplicación escribe en un archivo existente, debe incluir la marca OF \_ WRITE en **AVIFileOpen.** De forma similar, si la aplicación crea y escribe en un archivo nuevo, debe incluir las marcas OF CREATE y \_ OF \_ WRITE en **AVIFileOpen.**
 
 Al abrir un archivo mediante **AVIFileOpen**, puede usar un controlador de archivos predeterminado o puede especificar un controlador de archivos personalizado para leer y escribir en el archivo y sus flujos de datos. En cualquier caso, AVIFile busca en el Registro el controlador de archivos correcto que se usará. Debe asegurarse de que los controladores de archivos personalizados están en el Registro antes de que una aplicación pueda acceder a ellos.
 

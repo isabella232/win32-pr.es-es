@@ -18,12 +18,12 @@ keywords:
 - Función mciSendString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6f402e532f1bcf22a9136764647c91b1f4d54479f932c509ec172c1d973f4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44538937be73c2ccfb1d30de1f1a1c729cc05095
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375162"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370280"
 ---
 # <a name="general-mci-errors"></a>Errores generales de MCI
 
@@ -31,7 +31,7 @@ La función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) o [**mci
 
 
 
-| Valor                            | Significado                                                                                                                                                     |
+| Value                            | Significado                                                                                                                                                     |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | FORMATO DE HORA \_ \_ DE MALA HORA DE MCIERR \_        | El valor especificado para el formato de hora no es válido.                                                                                                         |
 | MCIERR \_ NO PUEDE CARGAR EL \_ \_ CONTROLADOR     | El controlador de dispositivo especificado no se cargará correctamente.                                                                                                         |
@@ -52,10 +52,10 @@ La función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) o [**mci
 | ARCHIVO MCIERR \_ \_ NO \_ ENCONTRADO         | No se encontró el archivo solicitado. Compruebe que la ruta de acceso y el nombre de archivo son correctos.                                                                             |
 | ARCHIVO MCIERR \_ \_ NO \_ GUARDADO         | El archivo no se guardó. Asegúrese de que el sistema tiene suficiente espacio en disco o tiene una conexión de red intacta.                                                |
 | LECTURA DEL ARCHIVO MCIERR \_ \_               | Error al leer el archivo. Asegúrese de que el archivo está presente en el sistema o de que el sistema tiene una conexión de red intacta.                             |
-| MCIERR \_ FILE \_ WRITE              | Error al escribir en el archivo. Asegúrese de que el sistema tiene suficiente espacio en disco o tiene una conexión de red intacta.                                            |
+| ESCRITURA DE \_ ARCHIVOS MCIERR \_              | Error al escribir en el archivo. Asegúrese de que el sistema tiene suficiente espacio en disco o tiene una conexión de red intacta.                                            |
 | SE REQUIERE UN NOMBRE DE ARCHIVO MCIERR \_ \_       | El nombre de archivo no es válido. Asegúrese de que el nombre de archivo no tiene más de ocho caracteres, seguido de un punto y una extensión.                                  |
 | MARCAS MCIERR \_ \_ NO \_ COMPATIBLES   | Los parámetros especificados no se pueden usar juntos.                                                                                                           |
-| MCIERR \_ GET \_ CD                  | No se encontró el archivo solicitado o el dispositivo MCI. Intente cambiar directorios o reiniciar el sistema.                                                         |
+| MCIERR \_ GET \_ CD                  | No se encontró el archivo solicitado o el dispositivo MCI. Intente cambiar los directorios o reiniciar el sistema.                                                         |
 | HARDWARE DE MCIERR \_                 | El dispositivo especificado presenta un problema. Compruebe que el dispositivo funciona correctamente o póngase en contacto con el fabricante del dispositivo.                                     |
 | MCIERR \_ ILLEGAL \_ FOR \_ AUTO \_ OPEN | MCI no realizará el comando especificado en un dispositivo abierto automáticamente. Espere hasta que se cierre el dispositivo y, a continuación, intente realizar el comando .             |
 | MCIERR \_ INTERNAL                 | Se produjo un problema al inicializar MCI. Intente reiniciar el Windows operativo.                                                                        |

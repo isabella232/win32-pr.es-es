@@ -3,16 +3,16 @@ title: Entradas del sistema para descompresión, descompresión y representadore
 description: Entradas del sistema para descompresión, descompresión y representadores
 ms.assetid: b27bbd5b-a218-49bb-b179-b24ce39869a1
 keywords:
-- Vídeo para Windows (VFW), entradas del sistema de vídeo
-- VFW (vídeo para Windows), entradas del sistema de vídeo
+- Vídeo para Windows (VFW), entradas del sistema de refrigeración
+- VFW (vídeo para Windows), entradas del sistema de refrigeración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0afa453603eacffe0db1b3a904709a096e638dc284aa64aa388968a0e555c33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b46d9c6fd8974511698bcb687c580e68be3757ee
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892565"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372470"
 ---
 # <a name="system-entries-for-compressors-decompressors-and-renderers"></a>Entradas del sistema para descompresión, descompresión y representadores
 
@@ -22,7 +22,7 @@ El sistema usa entradas en el Registro para buscar controladores de VCM. Estas e
 
 | Código de cuatro caracteres | Descripción                               |
 |---------------------|-------------------------------------------|
-| "VIDC"              | Identifica los descompresores y los descompresores. |
+| "VIDC"              | Identifica los descomprimores y los descompresión. |
 | "VIDS"              | Identifica los representadores de secuencias de vídeo.        |
 | "TXTS"              | Identifica los representadores de flujo de texto.         |
 | "AUDS"              | Identifica los controladores de secuencias de audio.         |
@@ -35,9 +35,9 @@ Los representadores personalizados pueden definir sus propios códigos de cuatro
 
 El controlador define el segundo código de cuatro caracteres. Normalmente, el segundo código de cuatro caracteres corresponde al tipo de datos que el controlador puede controlar.
 
-Al abrir un controlador VCM, una aplicación especifica el tipo de controlador y el tipo de controlador de datos que necesita. Normalmente, esta información procede del encabezado de flujo. El sistema intenta abrir el controlador de datos especificado, pero si se produce un error, el sistema busca en el Registro un controlador que tenga el controlador necesario.
+Al abrir un controlador de VCM, una aplicación especifica el tipo de controlador y el tipo de controlador de datos que necesita. Normalmente, esta información procede del encabezado de secuencia. El sistema intenta abrir el controlador de datos especificado, pero si se produce un error, el sistema busca en el Registro un controlador que tenga el controlador necesario.
 
-Al buscar el controlador, el sistema intenta hacer coincidir los códigos de cuatro caracteres especificados para el tipo de controlador y el controlador de datos con los especificados en la entrada del controlador. Por ejemplo, si una aplicación especifica el MSSQ, el sistema busca en el Registro la entrada del controlador VIDC.MSSQ. Si no encuentra una coincidencia, abre cada controlador correspondiente al tipo de controlador y busca uno que pueda controlar el tipo de datos que especifica la aplicación. En el ejemplo anterior, si el sistema no pudiera encontrar VIDC.MSSQ, abriría todos los controladores con el código de cuatro caracteres "VIDC" y buscaría uno que pueda controlar los datos.
+Al buscar el controlador, el sistema intenta hacer coincidir los códigos de cuatro caracteres especificados para el tipo de controlador y el controlador de datos con los especificados en la entrada del controlador. Por ejemplo, si una aplicación especifica el MSSQ, el sistema busca en el Registro la entrada del controlador VIDC.MSSQ. Si no encuentra una coincidencia, abre cada controlador correspondiente al tipo de controlador y busca uno que pueda controlar el tipo de datos que la aplicación especifica. En el ejemplo anterior, si el sistema no encuentra VIDC.MSSQ, abriría todos los controladores con el código de cuatro caracteres "VIDC" y buscaría uno que pueda controlar los datos.
 
  
 

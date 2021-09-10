@@ -7,16 +7,16 @@ keywords:
 - función termAVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22045e23c3dcc6f05279fe9ddf999586923e0bf828757cd14a490f10c045c715
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ac540d670b15eaf1befb1d2f253223e3571ecee
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806235"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371774"
 ---
 # <a name="opening-multiple-avi-files"></a>Abrir varios archivos AVI
 
-Si la aplicación abre varios archivos, debe incluir rutinas como las siguientes funciones simples. La aplicación usaría la función "initAVI" durante su inicialización y la función "termAVI" durante su finalización. Estas funciones simplemente encapsulan [**la función mciSendString.**](/previous-versions//dd757161(v=vs.85))
+Si la aplicación abre varios archivos, debe incluir rutinas como las siguientes funciones sencillas. La aplicación usaría la función "initAVI" durante su inicialización y la función "termAVI" durante su finalización. Estas funciones simplemente encapsulan [**la función mciSendString.**](/previous-versions//dd757161(v=vs.85))
 
 
 ```C++

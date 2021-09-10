@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f15675923f37a80ce694a400f18113f5178a54a3f75664008644919c6d9fc128
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c6d401efca6a59d1ed3cbf433d7c33311678705d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119690475"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369888"
 ---
 # <a name="info-command"></a>Comando info
 
@@ -53,7 +53,7 @@ Marca que identifica el tipo de información necesaria. En la tabla siguiente se
 
 
 
-| Valor        | Significado                                                             | Significado                                             |
+| Value        | Significado                                                             | Significado                                             |
 |--------------|---------------------------------------------------------------------|-----------------------------------------------------|
 | cdaudio      | info identityinfo upc                                               | product                                             |
 | digitalvideo | audio algorithmaudio qualityfileproductstfund algorithmstill quality | usageversionvideo algorithmvideo qualitywindow text |
@@ -71,7 +71,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 
 
 
-| Valor           | Significado                                                                                                                                                                                            |
+| Value           | Significado                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | algoritmo de audio | Devuelve el nombre del algoritmo de compresión de audio actual.                                                                                                                                       |
 | calidad del audio   | Devuelve el nombre del descriptor de calidad de audio actual. Esto podría devolver "desconocido" si la aplicación ha establecido parámetros en valores específicos que no se corresponden con calidades definidas.       |
@@ -120,7 +120,7 @@ info mysound product
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -131,7 +131,7 @@ info mysound product
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

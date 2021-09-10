@@ -7,25 +7,25 @@ keywords:
 - mezcladores de audio, números
 - mezcladores, controles
 - mezcladores, números
-- controles de número
+- controles number
 - MIXERCONTROLDETAILS_SIGNED estructura
 - MIXERCONTROLDETAILS_UNSIGNED estructura
-- control decibelio
+- control decibel
 - control de porcentaje
 - control firmado
 - control sin signo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21c9e1bacdea3f52129d78eea2f0bc7134df08b7077c83510bd8de824777e524
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f02c4ffd40f1058fae51af3798135840394be918
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806625"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372139"
 ---
 # <a name="numbers-windows-multimedia"></a>Números (Windows Multimedia)
 
-Los controles numéricos permiten al usuario escribir datos numéricos asociados a una línea. Los datos numéricos se expresan como enteros con signo, enteros sin signo o valores de decibelios enteros. Estos controles usan las [**estructuras MIXERCONTROLDETAILS \_ SIGNED**](/previous-versions//dd757297(v=vs.85)) y [**MIXERCONTROLDETAILS \_ UNSIGNED**](/previous-versions//dd757298(v=vs.85)) para recuperar y establecer propiedades de control. En la tabla siguiente se describen los tipos de controles de número.
+Los controles de número permiten al usuario escribir datos numéricos asociados a una línea. Los datos numéricos se expresan como enteros con signo, enteros sin signo o valores de decibelios enteros. Estos controles usan las estructuras [**MIXERCONTROLDETAILS \_ SIGNED**](/previous-versions//dd757297(v=vs.85)) y [**MIXERCONTROLDETAILS \_ UNSIGNED**](/previous-versions//dd757298(v=vs.85)) para recuperar y establecer propiedades de control. En la tabla siguiente se describen los tipos de controles number.
 
 
 

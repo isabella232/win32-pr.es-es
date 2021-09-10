@@ -4,18 +4,18 @@ description: Aunque la mayoría de los archivos DLL se pueden ejecutar en un sup
 ms.assetid: f89dabe6-f65f-4d90-ad0e-c680d4b08ba5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 624b516f4b6c9deb00e3a093bd3531d3453e631450a1e5ec3b0810569580961a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae82aa44771d398d80169c56976df7b0e209ea6e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993245"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369719"
 ---
 # <a name="dll-server-requirements"></a>Requisitos del servidor DLL
 
 Aunque la mayoría de los archivos DLL se pueden ejecutar en un suplente, algunos archivos DLL no.
 
-El archivo DLL debe tener un comportamiento correcto si desea usar el suplente proporcionado por el sistema. Por ejemplo, un archivo DLL que llama a métodos que registran devoluciones de llamada desde el cliente intentaría invocar esas devoluciones de llamada como si los punteros de función que recibió fueran para obtener instrucciones en su espacio de direcciones, lo que no es el caso. De forma similar, un archivo DLL que usa una variable global a la que espera que el cliente acceda no funcionaría. En general, los parámetros que no se pueden serializar correctamente impedirán que el servidor DLL se ejecute fuera del proceso de cliente. En muchos casos, puede escribir un suplente personalizado diseñado específicamente para compensar el comportamiento "malo". (Para obtener más información, vea [Escribir un suplente personalizado).](writing-a-custom-surrogate.md)
+El archivo DLL debe tener un comportamiento correcto si desea usar el suplente proporcionado por el sistema. Por ejemplo, un archivo DLL que llama a métodos que registran devoluciones de llamada desde el cliente intentaría invocar esas devoluciones de llamada como si los punteros de función que recibió fueran para obtener instrucciones en su espacio de direcciones, lo que no es el caso. De forma similar, un archivo DLL que usa una variable global a la que espera que el cliente acceda no funcionará. En general, los parámetros que no se pueden serializar correctamente impedirán que el servidor DLL se ejecute fuera del proceso de cliente. En muchos casos, puede escribir un suplente personalizado diseñado específicamente para compensar el comportamiento "malo". (Para obtener más información, vea [Escribir un suplente personalizado).](writing-a-custom-surrogate.md)
 
 Si el servidor DLL usa interfaces personalizadas, tendría que asegurarse de que el código de serialización está disponible para esas interfaces. Por ejemplo, puede compilar y registrar un archivo DLL de proxy o proporcionar y registrar una biblioteca de tipos que permita que el servidor funcione correctamente mientras se ejecuta en un suplente.
 

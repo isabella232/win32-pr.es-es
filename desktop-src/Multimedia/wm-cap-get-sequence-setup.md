@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55122a98846f23c609eb371ab5698198729c39e967d7953295850b61764459af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5cd1585b165581f9c9646741b92c5dc841472ae
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369543"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371449"
 ---
 # <a name="wm_cap_get_sequence_setup-message"></a>Mensaje \_ DE CONFIGURACIÓN GET SEQUENCE \_ \_ \_ DE WM CAP
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura CAPTUREPARMS.**](/windows/win32/api/vfw/ns-vfw-captu
 
 Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener información sobre los parámetros usados para controlar la captura de streaming, vea la [**estructura CAPTUREPARMS.**](/windows/win32/api/vfw/ns-vfw-captureparms)
 
@@ -64,7 +64,7 @@ Para obtener información sobre los parámetros usados para controlar la captura
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -72,7 +72,7 @@ Para obtener información sobre los parámetros usados para controlar la captura
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -8,12 +8,12 @@ keywords:
 - Función ICLocate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c861c9fb5c317b6b0fc3a48552db200389739ebd8a53dbf15fbdbd0564ba8f76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d45b07c619095b4d50bdbdde5c3d2b1ca9209471
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139306"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370394"
 ---
 # <a name="locating-and-opening-compressors-and-decompressors"></a>Búsqueda y apertura de descomprimores y descompresión
 

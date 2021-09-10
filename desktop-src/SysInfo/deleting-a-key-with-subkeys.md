@@ -4,12 +4,12 @@ ms.assetid: 1cf6db95-85a4-4416-b17e-e14f45804503
 title: Eliminación de una clave con subclaves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7c64421a83c6eeb1537a8a72b839eeea5d49d2f17846dc7d627c5127e6b7e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 490020ff5a7bc6ea44f83b729bcbad4491aaa62e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117764489"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371924"
 ---
 # <a name="deleting-a-key-with-subkeys"></a>Eliminación de una clave con subclaves
 

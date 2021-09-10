@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 987b10f3820262d24e0da9c42ecd4841b15c47985538af79c4bc2f8e097018c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db7b9e20a0b0621038e1c7e092a871a6727566cf
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987628"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370519"
 ---
 # <a name="icm_draw_begin-message"></a>\_ICM Draw Begin message (Draw \_ Begin)
 
@@ -58,7 +58,7 @@ Devuelve ICERR OK si el controlador admite dibujar los datos en la pantalla de l
 
 
 
-| Valor               | Significado                                                                       |
+| Value               | Significado                                                                       |
 |---------------------|-------------------------------------------------------------------------------|
 | ICERR \_ BADFORMAT    | No se admite el formato de entrada o salida.                                      |
 | ICERR \_ NO ADMITIDO | El controlador no dibuja directamente en la pantalla o no admite este mensaje. |
@@ -67,9 +67,9 @@ Devuelve ICERR OK si el controlador admite dibujar los datos en la pantalla de l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si desea que el controlador descomprima los datos en un búfer, envíe el [**ICM \_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
+Si desea que el controlador descomprima los datos en un búfer, envíe el ICM [**\_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
 Los **ICM \_ DRAW \_ BEGIN** [**y ICM \_ DRAW \_ END**](icm-draw-end.md) no anidan. Si el controlador recibe **ICM \_ DRAW \_ BEGIN** antes de detener la descompresión **con ICM DRAW \_ \_ END**, debe reiniciar la descompresión con nuevos parámetros.
 
@@ -77,7 +77,7 @@ Los **ICM \_ DRAW \_ BEGIN** [**y ICM \_ DRAW \_ END**](icm-draw-end.md) no anid
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

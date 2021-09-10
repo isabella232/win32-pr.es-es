@@ -1,6 +1,6 @@
 ---
 title: ICM_COMPRESS mensaje (Vfw.h)
-description: El ICM COMPRESS notifica a un controlador de compresión de vídeo que comprima un marco de \_ datos en un búfer definido por la aplicación.
+description: El ICM COMPRESS notifica a un controlador de compresión \_ de vídeo que comprime un marco de datos en un búfer definido por la aplicación.
 ms.assetid: d95b943f-458d-4a5e-bab1-e3648d323395
 keywords:
 - ICM_COMPRESS mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1230f429eb49596dd8a450b8a384e0a69856b69c51141834458c09fa41ca54d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8021a4c18ab47c9b5b848dd1cb097358f2714bf
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119678475"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370418"
 ---
 # <a name="icm_compress-message"></a>\_ICM Mensaje COMPRESS
 
-El **ICM \_ compress notifica** a un controlador de compresión de vídeo que comprima un marco de datos en un búfer definido por la aplicación.
+El **ICM \_ COMPRESS** notifica a un controlador de compresión de vídeo que comprime un marco de datos en un búfer definido por la aplicación.
 
 
 ```C++
@@ -48,7 +48,7 @@ Puntero a una [**estructura ICCOMPRESS.**](/windows/desktop/api/Vfw/ns-vfw-iccom
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Tamaño, en bytes, de [**ICCOMPRESS.**](/windows/desktop/api/Vfw/ns-vfw-iccompress)
+Tamaño, en bytes, de [**ICCOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-iccompress).
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

@@ -1,85 +1,85 @@
 ---
 title: Moniker de elevación COM
-description: El moniker de elevación de COM permite a las aplicaciones que se ejecutan en control de cuentas de usuario (UAC) activar las clases COM con privilegios elevados. Para obtener más información, consulte enfoque de privilegios mínimos.
+description: El moniker de elevación COM permite que las aplicaciones que se ejecutan bajo el control de cuentas de usuario (UAC) activen clases COM con privilegios elevados. Para obtener más información, vea Centrarse en privilegios mínimos.
 ms.assetid: 1595ebb8-65af-4609-b3e7-a21209e64391
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: acc80774764cb99e63ed3334a8c0f9c8cedd2500
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488382"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369768"
 ---
 # <a name="the-com-elevation-moniker"></a>Moniker de elevación COM
 
-El moniker de elevación de COM permite a las aplicaciones que se ejecutan en control de cuentas de usuario (UAC) activar las clases COM con privilegios elevados. Para obtener más información, consulte [enfoque de privilegios mínimos](/previous-versions/dotnet/articles/aa480194(v=msdn.10)).
+El moniker de elevación COM permite que las aplicaciones que se ejecutan bajo el control de cuentas de usuario (UAC) activen clases COM con privilegios elevados. Para obtener más información, vea [Centrarse en privilegios mínimos.](/previous-versions/dotnet/articles/aa480194(v=msdn.10))
 
-## <a name="when-to-use-the-elevation-moniker"></a>Cuándo utilizar el moniker de elevación
+## <a name="when-to-use-the-elevation-moniker"></a>Cuándo usar el moniker de elevación
 
-El moniker de elevación se utiliza para activar una clase COM con el fin de lograr una función específica y limitada que requiere privilegios elevados, como cambiar la fecha y la hora del sistema.
+El moniker de elevación se usa para activar una clase COM para lograr una función específica y limitada que requiere privilegios elevados, como cambiar la fecha y hora del sistema.
 
-La elevación requiere la participación de una clase COM y su cliente. La clase COM se debe configurar para admitir la elevación mediante la anotación de la entrada del registro, como se describe en la sección requisitos. El cliente COM debe solicitar la elevación mediante el moniker de elevación.
+La elevación requiere la participación de una clase COM y su cliente. La clase COM debe configurarse para admitir la elevación anotando su entrada del Registro, como se describe en la sección Requisitos. El cliente COM debe solicitar la elevación mediante el moniker de elevación.
 
-El moniker de elevación no está diseñado para proporcionar compatibilidad con aplicaciones. Por ejemplo, si desea ejecutar una aplicación COM heredada como WinWord como servidor con privilegios elevados, debe configurar el ejecutable del cliente COM para que requiera elevación, en lugar de activar la clase de la aplicación heredada con el moniker de elevación. Cuando el cliente COM con privilegios elevados llama a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) mediante el CLSID de la aplicación heredada, el estado elevado del cliente pasará al proceso del servidor.
+El moniker de elevación no está diseñado para proporcionar compatibilidad con aplicaciones. Por ejemplo, si quieres ejecutar una aplicación COM heredada como WinWord como servidor con privilegios elevados, debes configurar el ejecutable del cliente COM para que requiera elevación, en lugar de activar la clase de la aplicación heredada con el moniker de elevación. Cuando el cliente COM con privilegios elevados llama a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) mediante el CLSID de la aplicación heredada, el estado elevado del cliente fluirá al proceso del servidor.
 
-No toda la funcionalidad de COM es compatible con la elevación. Entre las funciones que no funcionarán se incluyen:
+No toda la funcionalidad COM es compatible con la elevación. La funcionalidad que no funcionará incluye:
 
 -   La elevación no fluye desde un cliente a un servidor COM remoto. Si un cliente activa un servidor COM remoto con el moniker de elevación, el servidor no se elevará, aunque admita la elevación.
 -   Si una clase COM con privilegios elevados usa la suplantación durante una llamada COM, podría perder sus privilegios elevados durante la suplantación.
 -   Si un servidor COM con privilegios elevados registra una clase en la tabla de objetos en ejecución (ROT), la clase no estará disponible para los clientes sin privilegios elevados.
--   Un proceso elevado mediante el uso del mecanismo de UAC no carga las clases por usuario durante las activaciones COM. En el caso de las aplicaciones COM, esto significa que las clases COM de la aplicación deben instalarse en el subárbol del registro del **\_ \_ equipo local HKEY** si la aplicación va a ser utilizada por cuentas con privilegios y sin privilegios. Las clases COM de la aplicación solo deben instalarse en el subárbol de **\_ usuarios HKEY** si la aplicación nunca la usan las cuentas con privilegios.
--   No se permite arrastrar y colocar desde aplicaciones no elevadas a elevadas.
+-   Un proceso con privilegios elevados mediante el mecanismo UAC no carga clases por usuario durante las activaciones COM. Para las aplicaciones COM, esto significa que las clases COM de la aplicación deben instalarse en el subárbol del Registro **HKEY \_ LOCAL \_ MACHINE** si la aplicación se va a usar tanto en cuentas sin privilegios como en cuentas con privilegios. Las clases COM de la aplicación solo deben instalarse en el subárbol **HKEY \_ USERS** si las cuentas con privilegios nunca usan la aplicación.
+-   No se permite arrastrar y colocar desde aplicaciones sin privilegios elevados a aplicaciones con privilegios elevados.
 
 ## <a name="requirements"></a>Requisitos
 
-Para utilizar el moniker de elevación para activar una clase COM, se debe configurar la clase para que se ejecute como el usuario iniciador o la identidad de aplicación "activar como activador". Si la clase está configurada para ejecutarse en cualquier otra identidad, la activación devuelve el error el valor en el CO \_ E \_ runas \_ \_ debe \_ ser \_ AAA.
+Para usar el moniker de elevación para activar una clase COM, la clase debe configurarse para ejecutarse como el usuario de inicio o la identidad de aplicación "Activate as Activator". Si la clase está configurada para ejecutarse con cualquier otra identidad, la activación devuelve el error CO \_ E \_ RUNAS \_ VALUE MUST \_ \_ BE \_ AAA.
 
-La clase también se debe anotar con un nombre para mostrar "descriptivo" que sea compatible con la interfaz de usuario multilingüe (MUI). Esto requiere la siguiente entrada del registro:
-
-```
-HKEY_LOCAL_MACHINE\Software\Classes\CLSID
-   {CLSID}
-      LocalizedString = displayName
-```
-
-Si falta esta entrada, la activación devuelve el error CO \_ E \_ falta \_ DISPLAYNAME. Si falta el archivo MUI, se devuelve el código de error de la función [**RegLoadMUIStringW**](/windows/desktop/api/winreg/nf-winreg-regloadmuistringa) .
-
-Opcionalmente, para especificar el icono de la aplicación que va a mostrar la interfaz de usuario de UAC, agregue la siguiente clave del registro:
+La clase también debe anotarse con un nombre para mostrar "descriptivo" que sea compatible con la interfaz de usuario multilingüe (MUI). Esto requiere la siguiente entrada del Registro:
 
 ```
 HKEY_LOCAL_MACHINE\Software\Classes\CLSID
-   {CLSID}
-      Elevation
-         IconReference = applicationIcon
+   {CLSID}
+      LocalizedString = displayName
+```
+
+Si falta esta entrada, la activación devuelve el error CO \_ E \_ MISSING \_ DISPLAYNAME. Si falta el archivo MUI, se devuelve el código de error [**de la función RegLoadMUIStringW.**](/windows/desktop/api/winreg/nf-winreg-regloadmuistringa)
+
+Opcionalmente, para especificar un icono de aplicación que se mostrará mediante la interfaz de usuario de UAC, agregue la siguiente clave del Registro:
+
+```
+HKEY_LOCAL_MACHINE\Software\Classes\CLSID
+   {CLSID}
+      Elevation
+         IconReference = applicationIcon
 ```
 
 **IconReference** usa el mismo formato que **LocalizedString**:
 
-@*pathtobinary*,*-númerorecurso*
+@*pathtobinary*,*-resourcenumber*
 
 Además, el componente COM debe estar firmado para que se muestre el icono.
 
-La clase COM también se debe anotar como habilitada para LUA. Esto requiere la siguiente entrada del registro:
+La clase COM también debe anotarse como HABILITADA PARA LUA. Esto requiere la siguiente entrada del Registro:
 
 ```
 HKEY_LOCAL_MACHINE\Software\Classes\CLSID
-   {CLSID}
-      Elevation
-         Enabled = 1
+   {CLSID}
+      Elevation
+         Enabled = 1
 ```
 
-Si falta esta entrada, la activación devuelve la elevación del error CO \_ E \_ \_ deshabilitada.
+Si falta esta entrada, la activación devuelve el error CO \_ E \_ ELEVATION \_ DISABLED.
 
-Tenga en cuenta que estas entradas deben existir en \_ el \_ subárbol del equipo local HKEY, no en el \_ \_ subárbol HKEY current user o HKEY \_ users. Esto evita que los usuarios Eleven las clases COM que no tenían también los privilegios para registrarse.
+Tenga en cuenta que estas entradas deben existir en el subárbol HKEY LOCAL MACHINE, no en el subárbol \_ \_ HKEY \_ CURRENT USER o \_ HKEY \_ USERS. Esto evita que los usuarios eleven las clases COM que no tenían también los privilegios para registrarse.
 
-## <a name="the-elevation-moniker-and-the-elevation-ui"></a>El moniker de elevación y la interfaz de usuario de elevación
+## <a name="the-elevation-moniker-and-the-elevation-ui"></a>El Moniker de elevación y la interfaz de usuario de elevación
 
-Si el cliente ya se ha elevado, el uso del moniker de elevación no hará que se muestre la interfaz de usuario de elevación.
+Si el cliente ya tiene privilegios elevados, el uso del moniker de elevación no hará que se muestre la interfaz de usuario de elevación.
 
-## <a name="how-to-use-the-elevation-moniker"></a>Cómo utilizar el moniker de elevación
+## <a name="how-to-use-the-elevation-moniker"></a>Cómo usar el moniker de elevación
 
-El moniker de elevación es un moniker COM estándar, similar a los monikers de sesión, partición o cola. Dirige una solicitud de activación a un servidor especificado con el nivel de elevación especificado. El CLSID que se va a activar aparece en la cadena de moniker.
+El moniker de elevación es un moniker COM estándar, similar a los monikers de sesión, partición o cola. Dirige una solicitud de activación a un servidor especificado con el nivel de elevación especificado. El CLSID que se va a activar aparece en la cadena del moniker.
 
 El moniker de elevación admite los siguientes tokens de nivel de ejecución:
 
@@ -93,9 +93,9 @@ Elevation:Administrator!new:{guid}
 Elevation:Highest!new:{guid}
 ```
 
-La sintaxis anterior usa el moniker "nuevo" para devolver una instancia de la clase COM especificada por *GUID*. Tenga en cuenta que el moniker "nuevo" usa internamente la interfaz [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) para obtener un objeto de clase y, a continuación, llama a [**IClassFactory:: CreateInstance**](/windows/desktop/api/Unknwn/nf-unknwn-iclassfactory-createinstance) en él.
+La sintaxis anterior usa el moniker "new" para devolver una instancia de la clase COM especificada por *guid*. Tenga en cuenta que el moniker "nuevo" usa internamente la interfaz [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) para obtener un objeto de clase y, a continuación, llama a [**IClassFactory::CreateInstance**](/windows/desktop/api/Unknwn/nf-unknwn-iclassfactory-createinstance) en él.
 
-El moniker de elevación también se puede usar para obtener un objeto de clase, que implementa [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory). A continuación, el llamador llama a [**CreateInstance**](/windows/desktop/api/Unknwn/nf-unknwn-iclassfactory-createinstance) para obtener una instancia de objeto. La sintaxis para esto es la siguiente:
+El moniker de elevación también se puede usar para obtener un objeto de clase, que implementa [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory). A continuación, el autor de la llamada llama a [**CreateInstance**](/windows/desktop/api/Unknwn/nf-unknwn-iclassfactory-createinstance) para obtener una instancia de objeto. La sintaxis para esto es la siguiente:
 
 ``` syntax
 Elevation:Administrator!clsid:{guid}
@@ -103,7 +103,7 @@ Elevation:Administrator!clsid:{guid}
 
 ## <a name="sample-code"></a>Código de ejemplo
 
-En el ejemplo de código siguiente se muestra cómo utilizar el moniker de elevación. Se supone que ya se ha inicializado COM en el subproceso actual.
+En el ejemplo de código siguiente se muestra cómo usar el moniker de elevación. Se supone que ya ha inicializado COM en el subproceso actual.
 
 
 ```C++
@@ -127,19 +127,19 @@ HRESULT CoCreateInstanceAsAdmin(HWND hwnd, REFCLSID rclsid, REFIID riid, __out v
 
 
 
-[**Enlazar \_ OPTS3**](/windows/win32/api/objidl/ns-objidl-bind_opts3~r1) es una novedad de Windows Vista. Se deriva de [**BIND \_ OPTS2**](/windows/win32/api/objidl/ns-objidl-bind_opts2~r1).
+[**BIND \_ OPTS3**](/windows/win32/api/objidl/ns-objidl-bind_opts3~r1) es una novedad de Windows Vista. Se deriva de [**BIND \_ OPTS2.**](/windows/win32/api/objidl/ns-objidl-bind_opts2~r1)
 
-La única suma es un campo **hWnd** , **hWnd**. Este identificador representa una ventana que se convierte en el propietario de la interfaz de usuario de elevación, si procede.
+La única adición es **un campo HWND,** **hwnd**. Este identificador representa una ventana que se convierte en el propietario de la interfaz de usuario de elevación, si procede.
 
-Si **hWnd** es **null**, com llamará a [GetActiveWindow](/windows/win32/api/winuser/nf-winuser-getactivewindow) para buscar un identificador de ventana asociado al subproceso actual. Este caso podría producirse si el cliente es un script, que no puede rellenar una estructura de [**enlace \_ OPTS3**](/windows/win32/api/objidl/ns-objidl-bind_opts3~r1) . En este caso, COM intentará usar la ventana asociada al subproceso de script.
+Si **hwnd** es **NULL,** COM llamará a [GetActiveWindow para](/windows/win32/api/winuser/nf-winuser-getactivewindow) buscar un identificador de ventana asociado al subproceso actual. Este caso puede producirse si el cliente es un script, que no puede rellenar una estructura [**BIND \_ OPTS3.**](/windows/win32/api/objidl/ns-objidl-bind_opts3~r1) En este caso, COM intentará usar la ventana asociada al subproceso de script.
 
-## <a name="over-the-shoulder-ots-elevation"></a>Elevación sobre el hombro (OTS)
+## <a name="over-the-shoulder-ots-elevation"></a>Elevación por encima del cuello (OTS)
 
-La elevación sobre el hombro (OTS) se refiere al escenario en el que un cliente ejecuta un servidor COM con las credenciales de un administrador en lugar de su propio. (El término "sobre el hombro" significa que el administrador está inspeccionando el hombro del cliente mientras el cliente ejecuta el servidor).
+La elevación por encima del cuello (OTS) hace referencia al escenario en el que un cliente ejecuta un servidor COM con las credenciales de un administrador en lugar de las suyas propias. (El término "encima del cuello" significa que el administrador está controlndo el cuello del cliente mientras el cliente ejecuta el servidor).
 
-Este escenario puede provocar un problema en las llamadas COM al servidor, ya que es posible que el servidor no llame a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) explícitamente (es decir, mediante programación) o implícitamente (es decir, mediante declaración, con el registro). En el caso de estos servidores, COM calcula un descriptor de seguridad que permite a los administradores de solo, del sistema y integrados \\ realizar llamadas com en el servidor. Esta disposición no funcionará en escenarios de OTS. En su lugar, el servidor debe llamar a **CoInitializeSecurity**, ya sea de forma explícita o implícita, y especificar una ACL que incluya el SID del grupo interactivo y el sistema.
+Este escenario podría causar un problema para las llamadas COM en el servidor, ya que es posible que el servidor no llame a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) explícitamente (es decir, mediante programación) o implícitamente (es decir, mediante declaración, mediante el Registro). Para estos servidores, COM calcula un descriptor de seguridad que solo permite a los administradores SELF, SYSTEM y Builtin realizar llamadas \\ COM en el servidor. Esta disposición no funcionará en escenarios de OTS. En su lugar, el servidor debe llamar a **CoInitializeSecurity**, ya sea explícita o implícitamente, y especificar una ACL que incluya el SID del grupo INTERACTIVO y SYSTEM.
 
-En el ejemplo de código siguiente se muestra cómo crear un descriptor de seguridad (SD) con el SID de grupo interactivo.
+En el ejemplo de código siguiente se muestra cómo crear un descriptor de seguridad (SD) con el SID del grupo INTERACTIVO.
 
 ``` syntax
 BOOL GetAccessPermissionsForLUAServer(SECURITY_DESCRIPTOR **ppSD)
@@ -159,7 +159,7 @@ BOOL GetAccessPermissionsForLUAServer(SECURITY_DESCRIPTOR **ppSD)
 }
 ```
 
-En el ejemplo de código siguiente se muestra cómo llamar a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) implícitamente con el SD del ejemplo de código anterior:
+En el ejemplo de código siguiente se muestra cómo llamar a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) implícitamente con la SD del ejemplo de código anterior:
 
 
 ```C++
@@ -184,7 +184,7 @@ done:
 
 
 
-En el ejemplo de código siguiente se muestra cómo llamar a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) explícitamente con el SD anterior:
+En el ejemplo de código siguiente se muestra cómo llamar a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) explícitamente con la SD anterior:
 
 
 ```C++
@@ -256,13 +256,13 @@ else
 
 
 
-## <a name="com-permissions-and-mandatory-access-labels"></a>Permisos COM y etiquetas de acceso obligatorias
+## <a name="com-permissions-and-mandatory-access-labels"></a>Permisos COM y etiquetas de acceso obligatorio
 
-Windows Vista presenta el concepto de *etiquetas de acceso obligatorias* en los descriptores de seguridad. La etiqueta determina si los clientes pueden obtener acceso de ejecución a un objeto COM. La etiqueta se especifica en la parte de la lista de control de acceso de sistema (SACL) del descriptor de seguridad. En Windows Vista, COM es compatible con la etiqueta obligatoria del sistema etiqueta \_ \_ \_ \_ de no ejecutar \_ . Las SACL de los permisos COM se omiten en los sistemas operativos anteriores a Windows Vista.
+Windows Vista presenta la noción de *etiquetas de acceso obligatorias en* los descriptores de seguridad. La etiqueta determina si los clientes pueden obtener acceso de ejecución a un objeto COM. La etiqueta se especifica en la parte de la lista de control de acceso del sistema (SACL) del descriptor de seguridad. En Windows Vista, COM admite la etiqueta SYSTEM \_ MANDATORY \_ LABEL NO \_ EXECUTE \_ \_ UP. Las SACL de los permisos COM se omiten en los sistemas operativos antes de Windows Vista.
 
-A partir de Windows Vista, dcomcnfg.exe no admite el cambio del nivel de integridad (IL) en los permisos COM. Debe establecerse mediante programación.
+A Windows Vista, dcomcnfg.exe no admite el cambio del nivel de integridad (IL) en los permisos COM. Debe establecerse mediante programación.
 
-En el ejemplo de código siguiente se muestra cómo crear un descriptor de seguridad COM con una etiqueta que permite solicitudes de inicio o activación de todos los clientes de IL bajo. Tenga en cuenta que las etiquetas son válidas para los permisos de inicio y activación, y de llamada. Por lo tanto, es posible escribir un servidor COM que no permita el inicio, la activación o las llamadas de clientes con un determinado IL. Para obtener más información acerca de los niveles de integridad, consulte la sección "Descripción del mecanismo de integridad de Windows Vista" en el tema [sobre cómo comprender y trabajar en modo protegido de Internet Explorer](/previous-versions/windows/internet-explorer/ie-developer/).
+En el ejemplo de código siguiente se muestra cómo crear un descriptor de seguridad COM con una etiqueta que permite solicitudes de inicio y activación desde todos los clientes de LOW IL. Tenga en cuenta que las etiquetas son válidas para los permisos Launch/Activation y Call. Por lo tanto, es posible escribir un servidor COM que no permite el inicio, la activación o las llamadas de clientes con un IL determinado. Para obtener más información sobre los niveles de [integridad,](/previous-versions/windows/internet-explorer/ie-developer/)vea la sección "Understanding Windows Vista's Integrity Mechanism" (Descripción del mecanismo de integridad de Vista) en Understanding and Working in Protected Mode Internet Explorer .
 
 
 ```C++
@@ -300,30 +300,30 @@ done:
 
 ## <a name="cocreateinstance-and-integrity-levels"></a>CoCreateInstance y niveles de integridad
 
-El comportamiento de [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) ha cambiado en Windows Vista, para evitar que los clientes de Il bajo se enlacen a los servidores com de forma predeterminada. El servidor debe permitir explícitamente dichos enlaces especificando la SACL. Los cambios en **CoCreateInstance** son los siguientes:
+El comportamiento de [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) ha cambiado en Windows Vista, para evitar que los clientes de IL bajo se enlacen a servidores COM de forma predeterminada. El servidor debe permitir explícitamente dichos enlaces especificando la SACL. Los cambios en **CoCreateInstance** son los siguientes:
 
-1.  Al iniciar un proceso de servidor COM, el IL en el token de proceso de servidor se establece en el token de cliente o de servidor IL, lo que sea menor.
-2.  De forma predeterminada, COM impedirá que los clientes de IL bajo se enlacen a las instancias en ejecución de cualquier servidor COM. Para permitir el enlace, el descriptor de seguridad de inicio y activación de un servidor COM debe contener una SACL que especifique la etiqueta de IL bajo (consulte la sección anterior para ver el código de ejemplo para crear este tipo de descriptor de seguridad).
+1.  Al iniciar un proceso de servidor COM, el IL del token de proceso de servidor se establece en el IL del token de cliente o servidor, lo que sea menor.
+2.  De forma predeterminada, COM impedirá que los clientes de IL bajo enlacen a instancias en ejecución de cualquier servidor COM. Para permitir el enlace, el descriptor de seguridad Launch/Activation de un servidor COM debe contener una SACL que especifique la etiqueta il bajo (consulte la sección anterior para ver el código de ejemplo para crear un descriptor de seguridad de este tipo).
 
-## <a name="elevated-servers-and-rot-registrations"></a>Servidores con privilegios elevados y registros de ROT
+## <a name="elevated-servers-and-rot-registrations"></a>Servidores con privilegios elevados y registros ROT
 
-Si un servidor COM quiere registrarse en la tabla de objetos en ejecución (ROT) y permitir que cualquier cliente tenga acceso al registro, debe usar la \_ marca ROTFLAGS ALLOWANYCLIENT. Un servidor COM "activar como activador" no puede especificar ROTFLAGS \_ ALLOWANYCLIENT porque el administrador de control de servicios (DCOMSCM) de DCOM aplica una comprobación de suplantación de identidad en esta marca. Por lo tanto, en Windows Vista, COM agrega compatibilidad con una nueva entrada del registro que permite al servidor estipular que los registros de la tabla ROT están disponibles para cualquier cliente:
+Si un servidor COM desea registrarse en la tabla de objetos en ejecución (ROT) y permitir que cualquier cliente acceda al registro, debe usar la marca ROTFLAGS \_ ALLOWANYCLIENT. Un servidor COM "Activar como activador" no puede especificar ROTFLAGS ALLOWANYCLIENT porque el administrador de control de servicios DCOM (DCOMSCM) aplica una comprobación de suplantación de seguridad en esta \_ marca. Por lo tanto, en Windows Vista, COM agrega compatibilidad con una nueva entrada del Registro que permite al servidor estipular que sus registros ROT estén disponibles para cualquier cliente:
 
 ```
 HKEY_LOCAL_MACHINE\Software\Classes\AppID
-   {APPID}
-      ROTFlags
+   {APPID}
+      ROTFlags
 ```
 
-El único valor válido para esta entrada de REG \_ DWORD es:
+El único valor válido para esta entrada \_ REG DWORD es:
 
 ``` syntax
 ROTREGFLAGS_ALLOWANYCLIENT 0x1
 ```
 
-La entrada debe existir en el subárbol del **\_ \_ equipo local HKEY** .
+La entrada debe existir en el **subárbol HKEY \_ LOCAL \_ MACHINE.**
 
-Esta entrada proporciona un servidor "activar como activador" con la misma funcionalidad que ROTFLAGS \_ ALLOWANYCLIENT proporciona para un servidor runas.
+Esta entrada proporciona un servidor "Activar como activador" con la misma funcionalidad que ROTFLAGS \_ ALLOWANYCLIENT proporciona para un servidor RunAs.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -335,6 +335,6 @@ Esta entrada proporciona un servidor "activar como activador" con la misma funci
 [Descripción y trabajo con el modo protegido de Internet Explorer [puede estar en inglés]](/previous-versions/windows/internet-explorer/ie-developer/)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

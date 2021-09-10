@@ -4,12 +4,12 @@ ms.assetid: 470d00c1-5975-4a58-9a78-fbed7326a60c
 title: Categorías de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad4bf4abb7af2abf723aa42f3426c58230083d8e575dda176b8eeda0daecb36d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 009a3c89d23f713bb2ed08a7f7c53790e08055db
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118885856"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371875"
 ---
 # <a name="categories-of-data"></a>Categorías de datos
 

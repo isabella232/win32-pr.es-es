@@ -7,12 +7,12 @@ keywords:
 - capFileSaveAs macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f552f6f2f94ed1a7c7f7f8cae20b20c6fa4b5aa27e8105ab3f5dc33e60b7aff8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce1966b8cf1e189038e9ee427a868b84a1fb1b50
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892915"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372073"
 ---
 # <a name="saving-captured-data-to-a-new-file"></a>Guardar los datos capturados en un nuevo archivo
 

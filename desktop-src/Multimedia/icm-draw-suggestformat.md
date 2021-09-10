@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW_SUGGESTFORMAT mensaje (Vfw.h)
-description: El ICM DRAW SUGGESTFORMAT consulta un controlador de representación para sugerir \_ \_ un formato descomprimido que puede dibujar.
+description: El ICM DRAW SUGGESTFORMAT consulta un controlador de representación para sugerir un formato \_ \_ descomprimido que puede dibujar.
 ms.assetid: e3e97790-dbd1-4436-9830-5218ae1f949b
 keywords:
 - ICM_DRAW_SUGGESTFORMAT mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 843dd2d398f5be6476a148922f3244113e94ab3fe3c10bac9ee08caefb8c4828
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c97c8782b16336427b3832f36b5a06987399df1b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495955"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370574"
 ---
 # <a name="icm_draw_suggestformat-message"></a>\_ICM Draw \_ SUGGESTFORMAT message
 
@@ -56,7 +56,7 @@ Tamaño, en bytes, de [**ICDRAWSUGGEST.**](/windows/desktop/api/Vfw/ns-vfw-icdra
 
 Devuelve ICERR \_ OK si se realiza correctamente. Si el **miembro lpbiSuggest** de la estructura [**ICDRAWSUGGEST**](/windows/desktop/api/Vfw/ns-vfw-icdrawsuggest) es **NULL,** este mensaje devuelve la cantidad de memoria necesaria para contener el formato sugerido.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El controlador debe examinar el formato especificado en el miembro **lpbiIn** de la estructura [**ICDRAWSUGGEST**](/windows/desktop/api/Vfw/ns-vfw-icdrawsuggest) y usar el miembro **lpbiSuggest** para devolver un formato que pueda dibujar. El formato de salida debe conservar tantos datos como sea posible del formato de entrada.
 

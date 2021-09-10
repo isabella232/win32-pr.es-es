@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41457cbd04de7ffc85248912224819f9c7549c8aebd34d60c4a7efcd70bbcada
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0b154d9a2f54248ac6174e71a24d4afe74918d4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118374597"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370105"
 ---
 # <a name="mci_spin-command"></a>Comando SPIN de MCI \_
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las marcas adicionales siguientes se aplican a los dispositivos videodisc:
 
@@ -92,7 +92,7 @@ Inicia el disco girando.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -100,11 +100,11 @@ Inicia el disco girando.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

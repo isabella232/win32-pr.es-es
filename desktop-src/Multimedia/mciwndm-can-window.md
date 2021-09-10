@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26db92a07437f10295c2670e035950be5a56813aa6bb4c6252cfe35ef502f77c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d638b61093483b6e834b57af1d5c892d77d0f1d4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038155"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370610"
 ---
-# <a name="mciwndm_can_window-message"></a>Mensaje CAN WINDOW de MCIWNDM \_ \_
+# <a name="mciwndm_can_window-message"></a>Mensaje DE VENTANA \_ DE LA VENTANA DE MCIWNDM \_
 
 El **mensaje MCIWNDM \_ CAN \_ WINDOW** determina si un dispositivo MCI admite comandos MCI orientados a ventanas. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndCanWindow.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanwindow)
 
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si el dispositivo admite comandos MCI orientados a ventanas o **FALSE** en caso contrario.
+Devuelve **TRUE si** el dispositivo admite comandos MCI orientados a ventanas o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5df46ce0cbffe17f890e50159a13a93192e67f60e323d6ba711bee6af7ac3f79
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2acbc9efa3ca973c12112a599d1202ad936107a9
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119429655"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370616"
 ---
 # <a name="mciwndm_can_record-message"></a>Mensaje MCIWNDM \_ CAN \_ RECORD
 
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** el dispositivo admite grabación o **FALSE** de lo contrario.
+Devuelve **TRUE si** el dispositivo admite grabación o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

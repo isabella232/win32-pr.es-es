@@ -4,12 +4,12 @@ ms.assetid: 7927862d-2e32-4b56-825d-78a35f520f0d
 title: Acerca del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 827ec2d819cc2319694227f4495b524bbe3bd690fcee7afc822b12485055245e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28c7f567cd1f72a7c017cf4e7a9d32054a20445b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117959009"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371869"
 ---
 # <a name="about-the-registry"></a>Acerca del Registro
 

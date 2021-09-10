@@ -1,17 +1,17 @@
 ---
-title: Operaciones avifile
-description: Operaciones avifile
+title: Operaciones AVIFile
+description: Operaciones AVIFile
 ms.assetid: 0d9611d1-4d6a-480e-881a-171adac87a0c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3171e32e6e5253e7fe9f24275a9973327364aecdfd8a8e4557025949411ac336
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 07ddd895e9a635dc3d9776cc05f10eec8058ff8b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119691945"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372008"
 ---
-# <a name="avifile-operations"></a>Operaciones avifile
+# <a name="avifile-operations"></a>Operaciones AVIFile
 
 En esta sección se describen las operaciones de entrada y salida (E/S) del archivo AVIFile.
 

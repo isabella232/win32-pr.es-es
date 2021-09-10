@@ -10,16 +10,16 @@ keywords:
 - función timeGetSystemTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45460078776732234510d7308bd1e8f490e3871334bdf950bcedd77943b430e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 89fdcc905569a500afe689658676137c460d19d8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806475"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372428"
 ---
 # <a name="obtaining-the-system-time"></a>Obtener la hora del sistema
 
-Normalmente, antes de que una aplicación comience a usar los servicios de temporizador multimedia, recupera la hora *actual del sistema*. La hora del sistema es la hora, en milisegundos, desde que se inició Windows sistema operativo de Microsoft. Puede usar la función [**timeGetTime o**](/windows/desktop/api/TimeAPI/nf-timeapi-timegettime) [**timeGetSystemTime**](/windows/desktop/api/TimeAPI/nf-timeapi-timegetsystemtime) para recuperar la hora del sistema. Estas dos funciones son muy similares: **timeGetTime** devuelve la hora del sistema y **timeGetSystemTime** rellena una estructura [**MMTIME**](/previous-versions//dd757347(v=vs.85)) con la hora del sistema.
+Normalmente, antes de que una aplicación comience a usar los servicios de temporizador multimedia, recupera la hora *actual del sistema*. La hora del sistema es la hora, en milisegundos, desde que se Windows sistema operativo de Microsoft. Puede usar la función [**timeGetTime o**](/windows/desktop/api/TimeAPI/nf-timeapi-timegettime) [**timeGetSystemTime**](/windows/desktop/api/TimeAPI/nf-timeapi-timegetsystemtime) para recuperar la hora del sistema. Estas dos funciones son muy similares: **timeGetTime** devuelve la hora del sistema y **timeGetSystemTime** rellena una estructura [**MMTIME**](/previous-versions//dd757347(v=vs.85)) con la hora del sistema.
 
  
 

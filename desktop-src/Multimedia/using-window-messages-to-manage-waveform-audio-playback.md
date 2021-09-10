@@ -14,12 +14,12 @@ keywords:
 - MM_WOM_OPEN mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a31d8a88cb74953a1d38285a77b18ac25cd7495c3e29e71c5259551b5c2c3453
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce02794222274e10498e31e0f38939d930ef3745
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135890"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371233"
 ---
 # <a name="using-window-messages-to-manage-waveform-audio-playback"></a>Uso de mensajes de ventana para administrar Waveform-Audio reproducción
 

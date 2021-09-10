@@ -10,12 +10,12 @@ keywords:
 - funciones multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a38a1e886e86e1a503e2e6398f5f339837554145683fbf478e21e9413508d69c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc279a8fdbbeaee88dc3f83eb56d6eec7b7bae5e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806955"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370292"
 ---
 # <a name="multimedia-functions"></a>Funciones multimedia
 

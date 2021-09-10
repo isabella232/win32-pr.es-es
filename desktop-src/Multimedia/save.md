@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0c7b4fb75f78f8468a204217f5a4fa1593a1c50d5db541a83070a7faed41cc5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0029ad03c1b7fe855e8485b2719b11628fac1103
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037485"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370141"
 ---
 # <a name="save-command"></a>comando save
 
@@ -55,7 +55,7 @@ Marca que especifica el nombre del archivo que se va a guardar y, opcionalmente,
 
 | Value        | Significado              | Significado               |
 |--------------|----------------------|-----------------------|
-| digitalvideo | abort en el *rectángulo* | *filename* keepreserve |
+| digitalvideo | abort at *rectangle* | *filename* keepreserve |
 | overlay      | en *rectángulo*       | *filename*            |
 | sequencer    | *filename*           |                       |
 | waveaudio    | *filename*           |                       |
@@ -70,10 +70,10 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 
 | Value          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| anular          | Detiene una **operación de** guardado en curso. Si se usa, este debe ser el único elemento presente.                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| en *rectángulo* | Especifica un rectángulo relativo al origen del búfer de fotogramas. El *rectángulo* se especifica como *X1 Y1 X2 Y2.* Las coordenadas *X1 Y1 especifican* la esquina superior izquierda y las coordenadas *X2 Y2* especifican el ancho y el alto. En el caso de los dispositivos de vídeo digital, el [comando capture](capture.md) se usa para capturar el contenido del búfer de fotogramas.<br/>                                                                                                                                               |
-| *filename*     | Especifica el nombre de archivo que se asignará al archivo de datos. Si no se especifica una ruta de acceso, el archivo se colocará en el disco y en el directorio especificado anteriormente en el comando de reserva explícito [o](reserve.md) implícito. Si **no** se ha emitido la reserva, la unidad y el directorio predeterminados son los asociados a la tarea de la aplicación. Si se especifica una ruta de acceso, el dispositivo podría requerir que esté en la unidad de disco especificada por la reserva explícita o **implícita**. Esta marca es obligatoria. |
-| keepreserve    | Especifica que no se desasigna el espacio en disco sin usar que queda **desde** el comando de reserva original.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| anular          | Detiene una **operación de** guardado en curso. Si se usa, debe ser el único elemento presente.                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| en *rectángulo* | Especifica un rectángulo relativo al origen del búfer de marco. El *rectángulo* se especifica como *X1 Y1 X2 Y2*. Las coordenadas *X1 Y1 especifican* la esquina superior izquierda y las coordenadas *X2 Y2* especifican el ancho y el alto. En el caso de los dispositivos de vídeo digital, el [comando capture](capture.md) se usa para capturar el contenido del búfer de fotogramas.<br/>                                                                                                                                               |
+| *filename*     | Especifica el nombre de archivo que se asignará al archivo de datos. Si no se especifica una ruta de acceso, el archivo se colocará en el disco y en el directorio especificado anteriormente en el comando de reserva explícito [o implícito.](reserve.md) Si **no** se ha emitido la reserva, la unidad y el directorio predeterminados son los asociados a la tarea de la aplicación. Si se especifica una ruta de acceso, el dispositivo podría requerir que esté en la unidad de disco especificada por la reserva explícita o **implícita**. Esta marca es obligatoria. |
+| keepreserve    | Especifica que no se desasigna el espacio en disco sin usar que se deja desde el comando **de** reserva original.                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 
 
@@ -90,15 +90,15 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La *variable filename* es necesaria si el dispositivo se abrió con el identificador de dispositivo "nuevo".
+La *variable de* nombre de archivo es necesaria si el dispositivo se abrió con el identificador de dispositivo "nuevo".
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente guarda todo el búfer de vídeo en un archivo denominado VCAPFILE. Tga.
+El siguiente comando guarda todo el búfer de vídeo en un archivo denominado VCAPFILE. TGA.
 
 ``` syntax
 save vboard c:\vcap\vcapfile.tga
@@ -119,7 +119,7 @@ save vboard c:\vcap\vcapfile.tga
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

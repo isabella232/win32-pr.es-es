@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c70c7b8dda57d91e595bd65223a2fd33ef904679e35a38aaacbaf263b525258f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 007a5d954b9b879f87c5e8ffe2d0774d0d1d85a3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065575"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371132"
 ---
 # <a name="mm_joy1buttonup-message"></a>Mensaje \_ MMIJO1BUTTONUP
 
@@ -46,7 +46,7 @@ Identifica el botón que ha cambiado el estado y los botones que se presionan. P
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-----------------|-------------------------------------------|
 | \_BUTTON1CHG DE BUTTON1 DE BUTTON1 | El primer botón button ha cambiado de estado.  |
 | \_BUTTON2CHG DE BUTTON2 | El segundo botón button ha cambiado de estado. |
@@ -61,7 +61,7 @@ y uno o varios de los siguientes:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------|------------------------------------|
 | BOTÓN \_ BUTTON1 DE BUTTON1 DE BUTTON1 | Se presiona el primer botón button button (Botón button).  |
 | BUTTON2 \_ DE BUTTON2 PARA BUTTON2 | Se presiona el segundo botón button button (Segundo botón button). |
@@ -92,7 +92,7 @@ Coordenada y del ángulo con respecto a la esquina superior izquierda del área 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

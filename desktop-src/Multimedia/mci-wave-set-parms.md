@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85508ec493ecdc38825b90877e608683fe6c0bb7c099365c187a434890c605d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11446eda931da1a645b9bb6218c93898862b59bd
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783755"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369955"
 ---
 # <a name="mci_wave_set_parms-structure"></a>Estructura MCI \_ WAVE \_ SET \_ PARMS
 
@@ -57,7 +57,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Reservado.
 **wBitsPerSample**
 </dt> <dd>
 
-Bits por muestra.
+Bits por ejemplo.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -179,7 +179,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

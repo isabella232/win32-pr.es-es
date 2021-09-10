@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7624c85554fca997ce9542170e370711f8b3c3cefc22cf0e8d2fe9ea3e88687
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9dccdae49efc107a513e047282922f3a6de73e8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065455"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371227"
 ---
-# <a name="mm_wom_close-message"></a>Mensaje \_ MM WOM \_ CLOSE
+# <a name="mm_wom_close-message"></a>Mensaje \_ DE MM WOM \_ CLOSE
 
 El **mensaje \_ MM WOM \_ CLOSE** se envía a una ventana cuando se cierra un dispositivo de salida de audio de forma de onda. El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 

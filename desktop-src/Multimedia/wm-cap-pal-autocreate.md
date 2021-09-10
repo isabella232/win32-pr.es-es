@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a18d805ef394388de2265845f4e21bebb98d94391b851a60ed38d46e9872fecc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ba70de46167121aa9a83959c6d9e202039f65cd
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117800645"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371467"
 ---
 # <a name="wm_cap_pal_autocreate-message"></a>Mensaje \_ WM CAP PAL \_ \_ AUTOCREATE
 
@@ -54,11 +54,11 @@ Número de colores de la paleta. El valor máximo de este parámetro es 256.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**DE ERROR WM CAP SET \_ \_ \_ CALLBACK, \_**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La secuencia de vídeo muestreada debe incluir todos los colores que desee en la paleta. Para obtener la mejor paleta, es posible que tenga que muestrear toda la secuencia en lugar de una parte de ella.
 
@@ -66,7 +66,7 @@ La secuencia de vídeo muestreada debe incluir todos los colores que desee en la
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -74,7 +74,7 @@ La secuencia de vídeo muestreada debe incluir todos los colores que desee en la
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

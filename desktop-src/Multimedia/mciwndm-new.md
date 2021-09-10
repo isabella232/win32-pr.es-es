@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bca9c03aff08c07f3ab1d8337547de776aeab5c6623a34ddaa71bfada0bca4f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 293323cd0404da45e648024b35b7f96ef60fea61
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783085"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370694"
 ---
-# <a name="mciwndm_new-message"></a>NUEVO mensaje de MCIWNDM \_
+# <a name="mciwndm_new-message"></a>Mensaje MCIWNDM \_ NEW
 
 El **mensaje MCIWNDM \_ NEW** crea un nuevo archivo para el dispositivo MCI actual. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndNew.**](/windows/desktop/api/Vfw/nf-vfw-mciwndnew)
 
@@ -47,7 +47,7 @@ Puntero a un búfer que contiene el nombre del dispositivo MCI que usará el arc
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

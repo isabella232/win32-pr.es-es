@@ -1,6 +1,6 @@
 ---
 title: MCI_MONITOR comando (Mmsystem.h)
-description: El comando MONITOR de MCI \_ especifica el origen de la presentación. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando MCI \_ MONITOR especifica el origen de la presentación. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: b6c476ef-d1a4-477d-a104-dda10be60915
 keywords:
 - MCI_MONITOR comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6127a193feb16c6d2cdad21d2e99a062901be3ad37aab22fabfad172329ccc2c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6aa2f36b0e486143dc348d2e150422b2b082ecf7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117986315"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369968"
 ---
-# <a name="mci_monitor-command"></a>Comando MONITOR de MCI \_
+# <a name="mci_monitor-command"></a>Comando monitor de MCI \_
 
-El comando MONITOR de MCI \_ especifica el origen de la presentación. Los dispositivos de vídeo digital reconocen este comando.
+El comando MCI \_ MONITOR especifica el origen de la presentación. Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -66,9 +66,9 @@ Puntero a una [**estructura MCI \_ DGV \_ MONITOR \_ PARMS.**](/windows/desktop/
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digital:
 
@@ -79,14 +79,14 @@ Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digita
 
 Una constante que indica el método de supervisión se incluye en el **miembro dwMethod** de la estructura identificada *por lpMonitor*.
 
-Cuando se usa la marca INPUT de MCI DGV MONITOR en el \_ \_ miembro \_ **dwSource,** se selecciona el método de supervisión. Normalmente, los distintos métodos de supervisión tienen implicaciones diferentes en la forma en que se usa el hardware. El dispositivo selecciona el método de supervisión predeterminado.
+Cuando se usa la marca INPUT de MCI DGV MONITOR en el \_ \_ miembro \_ **dwSource,** se selecciona el método de supervisión. Normalmente, los distintos métodos de supervisión tienen implicaciones diferentes sobre cómo se usa el hardware. El dispositivo selecciona el método de supervisión predeterminado.
 
 </dd> <dt>
 
-<span id="MCI_DGV_MONITOR_SOURCE"></span><span id="mci_dgv_monitor_source"></span>ORIGEN DEL \_ MONITOR DGV \_ de MCI \_
+<span id="MCI_DGV_MONITOR_SOURCE"></span><span id="mci_dgv_monitor_source"></span>ORIGEN DEL \_ MONITOR de MCI DGV \_ \_
 </dt> <dd>
 
-Una constante que indica que el origen del monitor se incluye en el **miembro dwSource** de la estructura identificada por *lpMonitor*.
+Constante que indica que el origen del monitor se incluye en el **miembro dwSource** de la estructura identificada *por lpMonitor*.
 
 </dd> </dl>
 
@@ -106,7 +106,7 @@ Una constante que indica que el origen del monitor se incluye en el **miembro dw
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

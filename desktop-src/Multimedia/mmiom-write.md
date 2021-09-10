@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 755b89d7e268e266b4761142dc3820bdd4d33d4bd4d86522ce5363b95e5be282
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c27cf96827f803608c369cc9022faa6235add9ec
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065275"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371120"
 ---
 # <a name="mmiom_write-message"></a>MMIOM \_ WRITE message
 
@@ -56,7 +56,7 @@ Número de bytes que se escribirán en el archivo.
 
 Devuelve el número de bytes escritos realmente en el archivo. Si se produce un error, el valor devuelto es 1.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El procedimiento de E/S es responsable de actualizar el miembro **lDiskOffset** de la estructura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) para reflejar la nueva posición del archivo después de la operación de escritura.
 

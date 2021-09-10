@@ -18,12 +18,12 @@ keywords:
 - Nivel 2 de MPC, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4de04612c2e5e84f55049f35e131830c3ff40ae7f8dc829e1e3875a6c494ac1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af698a84443876dbf0ea98b9dfcc505f1e1d3eeb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117985245"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372331"
 ---
 # <a name="multimedia-pc-specifications"></a>Especificaciones de pc multimedia
 

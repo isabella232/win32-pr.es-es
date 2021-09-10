@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10f2161f3c163fb5f6c411293770a2b2ba3907bef7eb03aad2d67b0e0637abbf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f197ae3a7df9ad1520b84cf27fd15a1c76524ab1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135097"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371516"
 ---
 # <a name="wm_cap_set_overlay-message"></a>Mensaje \_ DE \_ SUPERPOSICIÓN \_ DE WM CAP SET
 
@@ -49,7 +49,7 @@ Marca de superposición. Especifique **TRUE** para este parámetro para habilita
 
 Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El uso de una superposición no requiere recursos de CPU.
 
@@ -61,7 +61,7 @@ Al habilitar el modo de superposición, se deshabilita automáticamente el modo 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

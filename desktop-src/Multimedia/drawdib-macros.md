@@ -12,12 +12,12 @@ keywords:
 - referencia de DrawDib,macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c16dfe24913c705868df7899b0c081227cba8e70fa44c3837d784f9257b8f84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eafc722f875285d1d3a343e3a5ae28fbca399da3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785405"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372187"
 ---
 # <a name="drawdib-macros"></a>DrawDib (Macros)
 

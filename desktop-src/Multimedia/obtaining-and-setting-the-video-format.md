@@ -7,12 +7,12 @@ keywords:
 - CapGetVideoFormatSize macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 632711d0d80cb027c50fe5004e822ece6a627d24ded577d5b3f27936329d0816
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6890c3a1d653d43d24c5baa0790cc0d26040685b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038475"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371383"
 ---
 # <a name="obtaining-and-setting-the-video-format"></a>Obtener y establecer el formato de vídeo
 

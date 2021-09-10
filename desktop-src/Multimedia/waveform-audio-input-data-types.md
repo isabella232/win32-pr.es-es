@@ -1,6 +1,6 @@
 ---
-title: Waveform-Audio tipos de datos de entrada
-description: Waveform-Audio tipos de datos de entrada
+title: Waveform-Audio de datos de entrada
+description: Waveform-Audio de datos de entrada
 ms.assetid: dfedcb93-edfb-4a25-8445-95d4aee55734
 keywords:
 - audio de forma de onda, tipos de datos de entrada
@@ -12,14 +12,14 @@ keywords:
 - ESTRUCTURA WAVEINCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6e131e55c404fe658a0c8f60a8f816ff231f9eb9492bcf8641a4e38781bfa78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39a8d37869224fe2ce677e2b8b952030ca6e021f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892095"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371306"
 ---
-# <a name="waveform-audio-input-data-types"></a>Waveform-Audio tipos de datos de entrada
+# <a name="waveform-audio-input-data-types"></a>Waveform-Audio de datos de entrada
 
 Los siguientes tipos de datos se definen para las funciones de entrada de audio de forma de onda.
 

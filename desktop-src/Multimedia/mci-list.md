@@ -1,6 +1,6 @@
 ---
 title: MCI_LIST comando (Mmsystem.h)
-description: El comando LIST de MCI \_ obtiene información sobre el número y los tipos de entradas disponibles para el dispositivo. Los dispositivos de vídeo digital y VCR reconocen este comando.
+description: El comando LIST de MCI obtiene información sobre el número y los \_ tipos de entradas disponibles para el dispositivo. Los dispositivos de vídeo digital y VCR reconocen este comando.
 ms.assetid: 1977fbfa-cae4-4afe-9fc5-ac68177574ca
 keywords:
 - MCI_LIST comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9bd3aa35875791d6fa916d9d6831bdcb83a6db43be6e5859ce582243606f666
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15d5a616085028132c83fd71c46f7d409bf48a14
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138641"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370033"
 ---
 # <a name="mci_list-command"></a>Comando LIST de MCI \_
 
-El comando LIST de MCI \_ obtiene información sobre el número y los tipos de entradas disponibles para el dispositivo. Los dispositivos de vídeo digital y VCR reconocen este comando.
+El comando LIST de MCI obtiene información sobre el número y los \_ tipos de entradas disponibles para el dispositivo. Los dispositivos de vídeo digital y VCR reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas adicionales se aplican al tipo **de dispositivo digitalvideo:**
 
@@ -226,7 +226,7 @@ En el caso de los dispositivos VCR, *lpList* apunta a una estructura [**\_ MCI V
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

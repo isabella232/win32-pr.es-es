@@ -4,12 +4,12 @@ ms.assetid: 5fd828d6-4d62-4823-a2f1-15782b5cd28c
 title: Tipos de valor del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed2bc73e03d9aab8d39bdda31ab308af1749f22315a262ceb4ae28ec743c8c69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adc653e69c514bc77323704485e88f0a57eebaae
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118885022"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371863"
 ---
 # <a name="registry-value-types"></a>Tipos de valor del Registro
 
@@ -19,13 +19,13 @@ Los siguientes tipos de valor del Registro se definen en Winnt.h.
 
 
 
-| Valor                                 | Tipo                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Value                                 | Tipo                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | REG \_ BINARY<br/>                | Datos binarios en cualquier formato.<br/>                                                                                                                                                                                                                                                                                                                                                                                                     |
 | REG \_ DWORD<br/>                 | Número de 32 bits.<br/>                                                                                                                                                                                                                                                                                                                                                                                                             |
 | REG \_ DWORD \_ LITTLE \_ ENDIAN<br/> | Número de 32 bits en formato little-endian.<br/> Windows está diseñado para ejecutarse en arquitecturas de equipos little-endian. Por lo tanto, este valor se define como REG \_ DWORD en los Windows de encabezado.<br/>                                                                                                                                                                                                                          |
 | REG \_ DWORD \_ BIG \_ ENDIAN<br/>    | Número de 32 bits en formato big-endian.<br/> Algunos UNIX admiten arquitecturas big-endian.<br/>                                                                                                                                                                                                                                                                                                                         |
-| REG \_ EXPAND \_ SZ<br/>            | Cadena terminada en NULL que contiene referencias sin explorar a variables de entorno (por ejemplo, "%PATH%"). Será una cadena Unicode o ANSI en función de si se usan las funciones Unicode o ANSI. Para expandir las referencias de variables de entorno, use [**la función ExpandEnvironmentStrings.**](/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa)<br/>                                                                                 |
+| REG \_ EXPAND \_ SZ<br/>            | Cadena terminada en NULL que contiene referencias no exploradas a variables de entorno (por ejemplo, "%PATH%"). Será una cadena Unicode o ANSI en función de si se usan las funciones Unicode o ANSI. Para expandir las referencias de variables de entorno, use [**la función ExpandEnvironmentStrings.**](/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa)<br/>                                                                                 |
 | REG \_ LINK<br/>                  | Cadena Unicode terminada en NULL que contiene la ruta de acceso de destino de un vínculo simbólico que se creó mediante una llamada a la [**función RegCreateKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regcreatekeyexa) con REG \_ OPTION CREATE \_ \_ LINK.<br/>                                                                                                                                                                                                                          |
 | REG \_ MULTI \_ SZ<br/>             | Secuencia de cadenas terminadas en NULL, terminadas por una cadena vacía ( \\ 0).<br/> A continuación se muestra un ejemplo:<br/> *String1* \\ 0 *String2* \\ 0 *String3* \\ 0 *LastString* \\ 0 \\ 0<br/> El primer 0 finaliza la primera cadena, el segundo hasta el último 0 finaliza la última cadena y el \\ \\ 0 final \\ finaliza la secuencia. Tenga en cuenta que el terminador final debe tenerse en cuenta en la longitud de la cadena.<br/> |
 | REG \_ NONE<br/>                  | No hay ningún tipo de valor definido.<br/>                                                                                                                                                                                                                                                                                                                                                                                                       |

@@ -6,16 +6,16 @@ keywords:
 - Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bebc7d30d8eaef21bfe869e6cebbae7708758c9c26100562981be5b587aa2834
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 711fb56164a9dc440240f12c16b9adff1210db71
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805495"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371755"
 ---
 # <a name="retrieving-information-about-a-movie"></a>Recuperar información sobre una película
 
-En el ejemplo siguiente se establece el formato de tiempo en fotogramas y se obtiene la posición actual si el dispositivo se reproduce mediante la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
+En el ejemplo siguiente se establece el formato de hora en fotogramas y se obtiene la posición actual si el dispositivo se reproduce mediante la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++

@@ -1,6 +1,6 @@
 ---
 title: comando spin
-description: El comando spin empieza a girar un disco o impide que el disco gire. Los dispositivos videodiscos reconocen este comando.
+description: El comando de giro empieza a girar un disco o detiene el giro del disco. Los dispositivos Videodisc reconocen este comando.
 ms.assetid: 1fdf4d09-fafd-4245-ad92-397114d0f473
 keywords:
 - Comando spin Windows Multimedia
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4b643d1f641f7f7faf2711bc2fa8ec43efe7ca1e60a2fb178191870c5ce2354
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c25e25f5a44ad6e6c9562d05653ab25cb2950b8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136457"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370261"
 ---
 # <a name="spin-command"></a>comando spin
 
-El comando spin empieza a girar un disco o impide que el disco gire. Los dispositivos videodiscos reconocen este comando.
+El comando de giro empieza a girar un disco o detiene el giro del disco. Los dispositivos Videodisc reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -53,7 +53,7 @@ Una de las marcas siguientes.
 
 
 
-| Valor | Significado                       |
+| Value | Significado                       |
 |-------|-------------------------------|
 |  Abajo  | Detiene el giro del disco. |
 | up    | Comienza a girar el disco.     |
@@ -73,11 +73,11 @@ Puede ser "wait", "notify" o ambos. Para obtener más información sobre estas m
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente comienza a girar un dispositivo de vídeodisco.
+El siguiente comando comienza a girar un dispositivo videodisc.
 
 ``` syntax
 spin videodisc up
@@ -87,7 +87,7 @@ spin videodisc up
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -98,7 +98,7 @@ spin videodisc up
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

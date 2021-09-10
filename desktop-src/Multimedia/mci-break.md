@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07006ddfb38e1a57f6e08cb73d9b33021d139b9542245aec137e0969378140e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33b17e3796192344ef974fed1af7229d41746aaf
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117803976"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369896"
 ---
 # <a name="mci_break-command"></a>Comando BREAK de MCI \_
 
@@ -53,7 +53,7 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 <span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-MCI NOTIFY, MCI WAIT o, para dispositivos de grabación de vídeo digital y vídeo \_ \_ (VCR), MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
+MCI NOTIFY, MCI WAIT o, para dispositivos de grabadora de vídeo digital y vídeo \_ \_ (VCR), MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
@@ -66,11 +66,11 @@ Puntero a una [**estructura \_ MCI BREAK \_ PARMS.**](mci-break-parms.md)
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Es posible que tenga que presionar la tecla de interrupción varias veces para interrumpir una operación de espera. Al presionar la tecla de interrupción después de cancelar una espera del dispositivo, se puede enviar la interrupción a una aplicación. Si una aplicación tiene una acción definida para el código de clave virtual, puede responder involuntariamente a la interrupción. Por ejemplo, una aplicación que usa VK CANCEL para una tecla de aceleración puede responder a la tecla CTRL+BREAK predeterminada si se presiona después de cancelar \_ una espera.
+Es posible que tenga que presionar la tecla de interrupción varias veces para interrumpir una operación de espera. Al presionar la tecla de interrupción después de cancelarse una espera del dispositivo, se puede enviar la interrupción a una aplicación. Si una aplicación tiene una acción definida para el código de clave virtual, puede responder involuntariamente a la interrupción. Por ejemplo, una aplicación que usa VK CANCEL para una tecla de aceleración puede responder a la tecla CTRL+BREAK predeterminada si se presiona después de cancelar \_ una espera.
 
 Las siguientes marcas adicionales se aplican a todos los dispositivos:
 
@@ -79,7 +79,7 @@ Las siguientes marcas adicionales se aplican a todos los dispositivos:
 <span id="MCI_BREAK_HWND"></span><span id="mci_break_hwnd"></span>MCI \_ BREAK \_ HWND
 </dt> <dd>
 
-El **miembro hwndBreak** de la estructura identificada por *lpBreak* contiene un identificador de ventana que debe ser la ventana actual para habilitar la detección de interrupción para ese dispositivo MCI. Esta suele ser la ventana principal de la aplicación. Si se omite, MCI no comprueba el identificador de ventana de la ventana actual.
+El **miembro hwndBreak** de la estructura identificada por *lpBreak* contiene un identificador de ventana que debe ser la ventana actual para habilitar la detección de saltos para ese dispositivo MCI. Esta suele ser la ventana principal de la aplicación. Si se omite, MCI no comprueba el identificador de ventana de la ventana actual.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ El **miembro nVirtKey** de la estructura identificada por *lpBreak* especifica e
 
 </dd> <dt>
 
-<span id="MCI_BREAK_OFF"></span><span id="mci_break_off"></span>INTERRUPCIÓN DE MCI \_ \_
+<span id="MCI_BREAK_OFF"></span><span id="mci_break_off"></span>MCI \_ BREAK \_ OFF
 </dt> <dd>
 
 Deshabilita cualquier clave de interrupción existente para el dispositivo indicado.
@@ -101,7 +101,7 @@ Deshabilita cualquier clave de interrupción existente para el dispositivo indic
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -109,11 +109,11 @@ Deshabilita cualquier clave de interrupción existente para el dispositivo indic
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

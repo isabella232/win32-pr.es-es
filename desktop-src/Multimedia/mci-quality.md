@@ -1,6 +1,6 @@
 ---
 title: MCI_QUALITY comando (Mmsystem.h)
-description: El comando MCI QUALITY define un nivel de calidad personalizado para la compresión de \_ datos de audio, vídeo o imagen fija. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando MCI QUALITY define un nivel de calidad personalizado para la compresión de datos de audio, vídeo o \_ imágenes fijas. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 91ad9704-0089-4b1f-b0f6-919ab5fd84e0
 keywords:
 - MCI_QUALITY comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1237d9b70c9f06782342c404c19dd23cf6f0848f8c7b33523bce35990287fa27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 996703c1a5b7d3adec1a001af58ebc8d916301a5
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138226"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370052"
 ---
 # <a name="mci_quality-command"></a>Comando MCI \_ QUALITY
 
-El comando MCI QUALITY define un nivel de calidad personalizado para la compresión de \_ datos de audio, vídeo o imagen fija. Los dispositivos de vídeo digital reconocen este comando.
+El comando MCI QUALITY define un nivel de calidad personalizado para la compresión de datos de audio, vídeo o \_ imágenes fijas. Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -66,11 +66,11 @@ Puntero a una [**estructura \_ MCI DGV \_ QUALITY \_ PARMS.**](/windows/desktop/
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El nombre definido para este nivel de calidad se puede usar al establecer el audio, el vídeo o la calidad con los comandos [MCI \_ SETAUDIO](mci-setaudio.md) y [MCI \_ SETVIDEO.](mci-setvideo.md)
+El nombre definido para este nivel de calidad se puede usar al establecer el audio, el vídeo o la calidad con los comandos [ \_ MCI SETAUDIO](mci-setaudio.md) y [MCI \_ SETVIDEO.](mci-setvideo.md)
 
 Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digital:
 
@@ -79,11 +79,11 @@ Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digita
 <span id="MCI_QUALITY_ALG"></span><span id="mci_quality_alg"></span>MCI \_ QUALITY \_ ALG
 </dt> <dd>
 
-El **miembro lpstrAlgorithm** de la estructura identificada por *lpQuality* contiene una dirección de un búfer que contiene el nombre del algoritmo. Este algoritmo debe ser compatible con el controlador del dispositivo y debe ser compatible con el descriptor de audio, still o vídeo que se usa. Si se omite esta marca, se usa el algoritmo actual.
+El **miembro lpstrAlgorithm** de la estructura identificada por *lpQuality* contiene una dirección de un búfer que contiene el nombre del algoritmo. Este algoritmo debe ser compatible con el controlador de dispositivo y debe ser compatible con el descriptor de audio, de imagen o de vídeo que se usa. Si se omite esta marca, se usa el algoritmo actual.
 
 </dd> <dt>
 
-<span id="MCI_QUALITY_DIALOG"></span><span id="mci_quality_dialog"></span>CUADRO DE DIÁLOGO CALIDAD DE MCI \_ \_
+<span id="MCI_QUALITY_DIALOG"></span><span id="mci_quality_dialog"></span>CUADRO DE DIÁLOGO DE CALIDAD DE MCI \_ \_
 </dt> <dd>
 
 El controlador de dispositivo debe mostrar un cuadro de diálogo para especificar el nivel de calidad. El cuadro de diálogo tiene campos específicos del algoritmo usados internamente por el controlador de dispositivo para crear una estructura que describa un nivel de calidad específico.
@@ -93,7 +93,7 @@ El controlador de dispositivo debe mostrar un cuadro de diálogo para especifica
 <span id="MCI_QUALITY_HANDLE"></span><span id="mci_quality_handle"></span>IDENTIFICADOR DE CALIDAD DE MCI \_ \_
 </dt> <dd>
 
-El **miembro dwHandle** de la estructura identificada por *lpQuality* contiene un identificador para una estructura. La estructura contiene datos específicos del algoritmo que describen el nivel de calidad específico. El formato de las estructuras de los algoritmos depende del dispositivo.
+El **miembro dwHandle** de la estructura identificada por *lpQuality* contiene un identificador para una estructura . La estructura contiene datos específicos del algoritmo que describen el nivel de calidad específico. El formato de las estructuras de los algoritmos depende del dispositivo.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ El **miembro lpstrName** de la estructura identificada por *lpQuality* contiene 
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

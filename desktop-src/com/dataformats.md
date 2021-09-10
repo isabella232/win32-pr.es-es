@@ -6,12 +6,12 @@ keywords:
 - Com de clave del Registro DataFormats
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfb8b2cc2ad4d11137fa41f419db2184f1a2b47fb850176227401e3d2b1aec04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf130461a8db67cfe7fc7c56b0115b27eef6dc6b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118310603"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369575"
 ---
 # <a name="dataformats"></a>DataFormats
 
@@ -28,7 +28,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
             n = formats
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *valor file/format* especifica el formato de objeto o archivo principal predeterminado para los objetos de esta clase.
 

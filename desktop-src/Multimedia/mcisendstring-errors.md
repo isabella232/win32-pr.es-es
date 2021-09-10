@@ -3,11 +3,11 @@ title: Errores de mciSendString
 description: Errores de mciSendString
 ms.assetid: 286102bd-fcf3-425b-9adc-e0ca2d62e453
 keywords:
-- MCIERR devuelve valores, errores mciSendString
+- MCIERR return values,mciSendString errors
 - referencia multimedia, errores de mciSendString
 - referencia de los errores multimedia,mciSendString
-- Interfaz de control multimedia (MCI), errores de mciSendString
-- MCI (interfaz de control multimedia), errores de mciSendString
+- Interfaz de control multimedia (MCI), errores mciSendString
+- Errores de MCI (interfaz de control multimedia),mciSendString
 - referencia de errores MCI,mciSendString
 - Referencia de MCI, errores de mciSendString
 - Interfaz de control multimedia (MCI), errores
@@ -18,12 +18,12 @@ keywords:
 - Función mciSendString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27d7603821a20dd154548cdf3cc69b84d54df1d549e9f3c87362e10a03e8e9bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 063db1986d3bff2416ad17886afb3b6281e20165
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783445"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370285"
 ---
 # <a name="mcisendstring-errors"></a>Errores de mciSendString
 
@@ -33,13 +33,13 @@ La función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) devuelve 
 
 | Value                             | Significado                                           |
 |-----------------------------------|---------------------------------------------------|
-| CONSTANTE MALA DE MCIERR \_ \_             | El valor especificado para un parámetro es desconocido.   |
-| ENTERO NEGATIVO DE MCIERR \_ \_              | Un entero del comando no era válido o faltaba. |
+| MCIERR \_ BAD \_ CONSTANT             | Se desconoce el valor especificado para un parámetro.   |
+| ENTERO NO VÁLIDO DE MCIERR \_ \_              | Un entero del comando no era válido o faltaba. |
 | MARCAS \_ DUPLICADAS DE MCIERR \_          | Se especificó dos veces una marca o un valor.              |
-| FALTA LA \_ CADENA DE COMANDO \_ DE \_ MCIERR  | No se especificó ningún comando.                         |
+| FALTA LA CADENA \_ DE \_ COMANDOS DE \_ MCIERR  | No se especificó ningún comando.                         |
 | FALTA EL NOMBRE \_ DEL DISPOSITIVO EN MCIERR \_ \_     | No se especificó ningún nombre de dispositivo.                     |
 | FALTA EL ARGUMENTO \_ DE \_ CADENA DE \_ MCIERR | Faltaba un valor de cadena en el comando.      |
-| MCIERR \_ NEW \_ REQUIERE \_ ALIAS      | Se debe usar un alias con el nombre de dispositivo "nuevo". |
+| MCIERR \_ NEW \_ REQUIERE \_ ALIAS      | Se debe usar un alias con el nombre del dispositivo "nuevo". |
 | MCIERR \_ NO \_ CLOSING \_ QUOTE        | Falta una comilla de cierre.              |
 | NOTIFICACIÓN DE MCIERR \_ \_ AL ABRIR \_ \_ AUTOMÁTICAMENTE    | La marca "notify" no es posible con la apertura automática.      |
 | MCIERR \_ PARAM \_ OVERFLOW           | La cadena de salida no era lo suficientemente larga.            |

@@ -1,5 +1,5 @@
 ---
-title: comando de funcionalidad
+title: comando capability
 description: El comando de funcionalidad solicita información sobre una funcionalidad determinada de un dispositivo. Todos los dispositivos MCI reconocen este comando.
 ms.assetid: 1b470473-0de6-41ba-9f6e-41f0b13ceaeb
 keywords:
@@ -13,13 +13,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 44e57a793f799214753f50504d80bce7051fba14
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469162"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369828"
 ---
-# <a name="capability-command"></a>comando de funcionalidad
+# <a name="capability-command"></a>comando capability
 
 El comando de funcionalidad solicita información sobre una funcionalidad determinada de un dispositivo. Todos los dispositivos MCI reconocen este comando.
 
@@ -49,19 +49,19 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszRequest"></span><span id="lpszrequest"></span><span id="LPSZREQUEST"></span>*lpszRequest*
 </dt> <dd>
 
-Marca que identifica una funcionalidad del dispositivo. En la tabla siguiente se enumeran los tipos de dispositivo que **reconocen** el comando de funcionalidad y las marcas usadas por cada tipo:
+Marca que identifica una funcionalidad del dispositivo. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **de** funcionalidad y las marcas usadas por cada tipo:
 
 
 
 
-| Valor | Tipo | Tipo | 
+| Value | Tipo | Tipo | 
 |-------|------|------|
-| cdaudio | <ul><li>puede expulsar</li><li>puede reproducir</li><li>puede registrar</li><li>puede guardar</li><li>dispositivo compuesto</li></ul> | <ul><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene vídeo</li><li>usa archivos</li></ul> | 
-| digitalvideo | <ul><li>puede expulsar</li><li>puede inmovilizar</li><li>puede bloquear</li><li>puede reproducir</li><li>puede registrar</li><li>puede invertir</li><li>puede guardar</li><li>se puede extender</li><li>puede extender la entrada</li><li>puede probar</li></ul> | <ul><li>dispositivo compuesto</li><li>tipo de dispositivo</li><li>tiene audio</li><li>Todavía</li><li>tiene vídeo</li><li>velocidad máxima de reproducción</li><li>velocidad de reproducción mínima</li><li>usa archivos</li><li>usa paletas</li><li>Windows</li></ul> | 
-| overlay | <ul><li>puede expulsar</li><li>puede inmovilizar</li><li>puede reproducir</li><li>puede registrar</li><li>puede guardar</li><li>se puede extender</li></ul> | <ul><li>dispositivo compuesto</li><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene vídeo</li><li>usa archivos</li><li>Windows</li></ul> | 
-| sequencer | <ul><li>puede expulsar</li><li>puede reproducir</li><li>puede registrar</li><li>puede guardar</li><li>dispositivo compuesto</li></ul> | <ul><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene vídeo</li><li>usa archivos</li></ul> | 
-| Vcr | <ul><li>puede detectar la longitud</li><li>puede expulsar</li><li>puede inmovilizar</li><li>puede supervisar los orígenes</li><li>puede reproducir</li><li>puede realizar la inscripción previa</li><li>puede obtener una vista previa</li><li>puede registrar</li><li>puede invertir</li><li>puede guardar</li><li>puede probar</li></ul> | <ul><li>velocidad de incremento del reloj</li><li>dispositivo compuesto</li><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene reloj</li><li>tiene código de tiempo</li><li>tiene vídeo</li><li>número de marcas</li><li>buscar precisión</li><li>usa archivos</li></ul> | 
-| Videodisco | <ul><li>puede expulsar</li><li>puede reproducir</li><li>puede registrar</li><li>puede invertir</li><li>puede guardar</li><li>CAV</li><li>CLV</li><li>dispositivo compuesto</li></ul> | <ul><li>tipo de dispositivo</li><li>velocidad de reproducción rápida</li><li>tiene audio</li><li>tiene vídeo</li><li>velocidad de reproducción normal</li><li>velocidad de reproducción lenta</li><li>usa archivos</li></ul> | 
+| cdaudio | <ul><li>puede expulsar</li><li>puede reproducir</li><li>puede grabar</li><li>puede guardar</li><li>dispositivo compuesto</li></ul> | <ul><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene vídeo</li><li>usa archivos</li></ul> | 
+| digitalvideo | <ul><li>puede expulsar</li><li>se puede inmovilizar</li><li>puede bloquear</li><li>puede reproducir</li><li>puede grabar</li><li>puede invertir</li><li>puede guardar</li><li>se puede extender</li><li>puede extender la entrada</li><li>puede probar</li></ul> | <ul><li>dispositivo compuesto</li><li>tipo de dispositivo</li><li>tiene audio</li><li>Todavía</li><li>tiene vídeo</li><li>velocidad de reproducción máxima</li><li>velocidad de reproducción mínima</li><li>usa archivos</li><li>usa paletas</li><li>Windows</li></ul> | 
+| overlay | <ul><li>puede expulsar</li><li>se puede inmovilizar</li><li>puede reproducir</li><li>puede grabar</li><li>puede guardar</li><li>se puede extender</li></ul> | <ul><li>dispositivo compuesto</li><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene vídeo</li><li>usa archivos</li><li>Windows</li></ul> | 
+| sequencer | <ul><li>puede expulsar</li><li>puede reproducir</li><li>puede grabar</li><li>puede guardar</li><li>dispositivo compuesto</li></ul> | <ul><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene vídeo</li><li>usa archivos</li></ul> | 
+| Vcr | <ul><li>puede detectar la longitud</li><li>puede expulsar</li><li>se puede inmovilizar</li><li>puede supervisar los orígenes</li><li>puede reproducir</li><li>puede realizar la inscripción previa</li><li>puede obtener una vista previa</li><li>puede grabar</li><li>puede invertir</li><li>puede guardar</li><li>puede probar</li></ul> | <ul><li>velocidad de incremento del reloj</li><li>dispositivo compuesto</li><li>tipo de dispositivo</li><li>tiene audio</li><li>tiene reloj</li><li>tiene código de tiempo</li><li>tiene vídeo</li><li>número de marcas</li><li>buscar precisión</li><li>usa archivos</li></ul> | 
+| Videodisco | <ul><li>puede expulsar</li><li>puede reproducir</li><li>puede grabar</li><li>puede invertir</li><li>puede guardar</li><li>CAV</li><li>CLV</li><li>dispositivo compuesto</li></ul> | <ul><li>tipo de dispositivo</li><li>velocidad de reproducción rápida</li><li>tiene audio</li><li>tiene vídeo</li><li>velocidad de reproducción normal</li><li>velocidad de reproducción lenta</li><li>usa archivos</li></ul> | 
 | waveaudio | <ul><li>puede expulsar</li><li>puede reproducir</li><li>puede grabar</li><li>puede guardar</li><li>dispositivo compuesto</li><li>tipo de dispositivo</li></ul> | <ul><li>tiene audio</li><li>tiene vídeo</li><li>inputs</li><li>outputs</li><li>usa archivos</li></ul> | 
 
 
@@ -69,7 +69,7 @@ Marca que identifica una funcionalidad del dispositivo. En la tabla siguiente se
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro *lpszRequest* y sus significados:
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el *parámetro lpszRequest* y sus significados:
 
 
 
@@ -109,7 +109,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 | outputs | Devuelve el número total de dispositivos de salida. | 
 | buscar precisión | Devuelve la precisión esperada de una búsqueda en fotogramas; 0 indica que el dispositivo es preciso, 1 indica que el dispositivo espera estar dentro de un fotograma de la posición de búsqueda indicada, y así sucesivamente. | 
 | velocidad de reproducción lenta | Devuelve la velocidad de reproducción lenta en fotogramas por segundo o cero si el dispositivo no puede reproducirse lentamente. | 
-| usa archivos | Devuelve <strong>TRUE</strong> si el almacenamiento de datos utilizado por un dispositivo compuesto es un archivo. | 
+| usa archivos | Devuelve <strong>TRUE</strong> si el almacenamiento de datos usado por un dispositivo compuesto es un archivo. | 
 | usa paletas | Devuelve <strong>TRUE</strong> si el dispositivo usa paletas. | 
 | Windows | Devuelve el número de ventanas de visualización simultáneas que el dispositivo puede admitir. | 
 
@@ -133,7 +133,7 @@ Devuelve información en el *parámetro lpszReturnString* de la [**función mciS
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente devuelve el tipo de dispositivo del dispositivo "mysound".
+El comando siguiente devuelve el tipo de dispositivo del dispositivo "my sound".
 
 ``` syntax
 capability mysound device type
@@ -143,14 +143,14 @@ capability mysound device type
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

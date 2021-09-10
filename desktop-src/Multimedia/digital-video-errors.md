@@ -1,16 +1,16 @@
 ---
-title: Errores de Digital-Video
-description: Errores de Digital-Video
+title: Digital-Video errores
+description: Digital-Video errores
 ms.assetid: 177436fc-543f-4692-8281-1555c1fa21b0
 keywords:
 - Valores devueltos de MCIERR, errores de vídeo digital
 - referencia multimedia, errores de vídeo digital
-- referencia de errores de vídeo digital y multimedia
-- Media control Interface (MCI), errores de vídeo digital
-- MCI (media control Interface), errores de vídeo digital
-- referencia de los errores de MCI y vídeo digital
+- referencia de los errores multimedia, de vídeo digital
+- Interfaz de control multimedia (MCI), errores de vídeo digital
+- MCI (interfaz de control multimedia), errores de vídeo digital
+- referencia de MCI, errores de vídeo digital
 - Referencia de MCI, errores de vídeo digital
-- Media control Interface (MCI), errores
+- Interfaz de control multimedia (MCI), errores
 - MCI (interfaz de control multimedia), errores
 - referencia de MCI, errores
 - Referencia de MCI, errores
@@ -19,13 +19,13 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6938330d15777ed867bf7d151a9d626e60b28646
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778762"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370279"
 ---
-# <a name="digital-video-errors"></a>Errores de Digital-Video
+# <a name="digital-video-errors"></a>Digital-Video errores
 
 Los siguientes valores devueltos adicionales se definen para dispositivos de vídeo digital:
 
@@ -33,24 +33,24 @@ Los siguientes valores devueltos adicionales se definen para dispositivos de ví
 
 | Value                           | Significado                                                         |
 |---------------------------------|-----------------------------------------------------------------|
-| MCIAVI \_ NombreProducto             | Vídeo                                                           |
-| \_AUDIOERROR AVI \_ MCIERR         | Error desconocido al intentar reproducir audio.                   |
-| \_BADPALETTE AVI \_ MCIERR         | No se puede cambiar a la nueva paleta.                                |
-| \_CANTPLAYFULLSCREEN AVI \_ MCIERR | Este archivo AVI no se puede reproducir en modo de pantalla completa.             |
-| \_DISPLAYERROR AVI \_ MCIERR       | Error desconocido al intentar mostrar el vídeo.                |
-| MCIERR \_ AVI \_ nocompresor       | No se puede encontrar el compresor instalable necesario para reproducir este archivo.   |
-| \_NODISPDIB AVI \_ MCIERR          | 256 modo VGA de color no disponible.                               |
-| \_NOTINTERLEAVED AVI \_ MCIERR     | Este archivo AVI no está intercalado.                               |
-| \_OLDAVIFORMAT AVI \_ MCIERR       | Este archivo AVI tiene un formato obsoleto.                         |
-| \_TOOBIGFORVGA AVI \_ MCIERR       | Este archivo AVI es demasiado grande para reproducirse en el modo VGA seleccionado. |
+| MCIAVI \_ PRODUCTNAME             | Vídeo                                                           |
+| MCIERR \_ AVI \_ AUDIOERROR         | Error desconocido al intentar reproducir audio.                   |
+| MCIERR \_ AVI \_ BADPALETTE         | No se puede cambiar a la nueva paleta.                                |
+| MCIERR \_ AVI \_ CANTPLAYFULLSCREEN | Este archivo AVI no se puede reproducir en modo de pantalla completa.             |
+| MCIERR \_ AVI \_ DISPLAYERROR       | Error desconocido al intentar mostrar el vídeo.                |
+| MCIERR \_ AVI \_ NOCOMPRESSOR       | No se puede encontrar el sistema instalable necesario para reproducir este archivo.   |
+| MCIERR \_ AVI \_ NODISPDIB          | El modo VGA de 256 colores no está disponible.                               |
+| MCIERR \_ AVI \_ NOTINTERLEAVED     | Este archivo AVI no está intercalado.                               |
+| MCIERR \_ AVI \_ OLDAVIFORMAT       | Este archivo AVI tiene un formato obsoleto.                         |
+| MCIERR \_ AVI \_ TOOBIGFORVGA       | Este archivo AVI es demasiado grande para reproducirse en el modo VGA seleccionado. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

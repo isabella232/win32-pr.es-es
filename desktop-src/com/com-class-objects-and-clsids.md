@@ -4,12 +4,12 @@ description: Un servidor COM se implementa como una clase COM.
 ms.assetid: 0073acdf-38a8-4f1a-aa26-379456a95fca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8a6bcd00f886d3a754a44658e669189d28fd2fa121248b667ba2a3928b626f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1bbfde2f379c4c7589db4cde283c8c67d720b21d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118550629"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369507"
 ---
 # <a name="com-class-objects-and-clsids"></a>Objetos de clase COM y CLSID
 

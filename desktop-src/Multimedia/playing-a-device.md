@@ -7,12 +7,12 @@ keywords:
 - Ventana de reproducción de MCIAVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af9efc06b3d5f33dfb798aa4c47bf7d5a7a8bab45842de1da170c860d2a4a5f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f73d8b6539e842a1ffa632ed1efae5c2c8d3cda1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118372646"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371648"
 ---
 # <a name="playing-a-device"></a>Reproducir un dispositivo
 
@@ -37,7 +37,7 @@ Algunos tipos de dispositivo amplían este comando para aprovechar las funcional
 
 ## <a name="playing-an-avi-file"></a>Reproducir un archivo AVI
 
-Los archivos de Windows están integrados por al menos dos flujos de datos intercalados: una secuencia de vídeo (imagentorial) y una secuencia de audio. Puede reproducir fácilmente estos archivos de audio y vídeo intercalado (AVI) mediante comandos de MCI. En las secciones siguientes se describe la reproducción de archivos AVI.
+Los archivos de Windows están integrados por al menos dos secuencias de datos intercaladas: una secuencia de vídeo (imagentorial) y una secuencia de audio. Puede reproducir fácilmente estos archivos de audio y vídeo intercalado (AVI) mediante comandos de MCI. En las secciones siguientes se describe la reproducción de archivos AVI.
 
 ## <a name="setting-up-an-mciavi-playback-window"></a>Configuración de una ventana de reproducción de MCIAVI
 

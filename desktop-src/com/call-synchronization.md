@@ -4,12 +4,12 @@ description: Sincronización de llamadas
 ms.assetid: e74407ef-f500-4d13-aef4-ca6bb37d5858
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9969c968294a3dfdbfbc4cb78d40e64ad65c17392bf3b9fd09fc7a5f99b9049b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec9254aceaaa8a6fa26d56d4a86987cc955b90dc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048743"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369448"
 ---
 # <a name="call-synchronization"></a>Sincronización de llamadas
 
@@ -62,7 +62,7 @@ Al realizar llamadas sincronizadas con entrada, el objeto al que se llama debe c
 
 </dd> </dl>
 
-Para minimizar los problemas que pueden surgir del procesamiento asincrónico de mensajes, la mayoría de las llamadas a métodos COM son sincrónicas. Con la comunicación sincrónica, no es necesario que el código especial envíe y controle los mensajes entrantes. Cuando una aplicación realiza una llamada de método sincrónico, COM entra en un bucle de espera modal que controla las respuestas necesarias y envía los mensajes entrantes a las aplicaciones capaces de procesarlos.
+Para minimizar los problemas que pueden surgir del procesamiento asincrónico de mensajes, la mayoría de las llamadas al método COM son sincrónicas. Con la comunicación sincrónica, no es necesario que el código especial envíe y controle los mensajes entrantes. Cuando una aplicación realiza una llamada de método sincrónico, COM entra en un bucle de espera modal que controla las respuestas necesarias y envía los mensajes entrantes a las aplicaciones capaces de procesarlos.
 
 COM administra las llamadas a métodos mediante la asignación de un identificador denominado identificador *de subproceso lógico*. Se asigna uno nuevo cuando un usuario selecciona un comando de menú o cuando la aplicación inicia una nueva operación COM. A las llamadas posteriores relacionadas con la llamada COM inicial se les asigna el mismo identificador de subproceso lógico que la llamada inicial.
 

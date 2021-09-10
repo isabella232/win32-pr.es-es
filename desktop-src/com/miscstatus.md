@@ -3,15 +3,15 @@ title: MiscStatus
 description: Especifica cómo crear y mostrar un objeto .
 ms.assetid: 585b2d1e-3edb-494e-a61e-bbfa6eae2ba1
 keywords:
-- MiscStatus registry key COM
+- Com de clave del Registro MiscStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41aa5a5ab7f777eb6aa19d919c69ca219c9364cd1d6e5e9471cb677300d4ebb5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abee49776577df61dc8b7d4e94a0621dfdd8b216
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119992355"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369592"
 ---
 # <a name="miscstatus"></a>MiscStatus
 
@@ -27,7 +27,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
          aspect = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información, vea la [**enumeración OLEMISC**](/windows/win32/api/oleidl/ne-oleidl-olemisc) [**e IOleObject::GetMiscStatus**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getmiscstatus).
 

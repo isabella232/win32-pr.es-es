@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 526d5f69d0b0c02d977cc8fc73cd81a7a1bf06c3e55088f11d53c05cfa72c0c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd81b3ad0e1f10c14d68df12399045149f686a8c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117986173"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370166"
 ---
 # <a name="mci_step-command"></a>Comando STEP de MCI \_
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este comando admite dispositivos que devuelven **TRUE** a la marca \_ MCI GETDEVCAPS \_ HAS VIDEO del comando \_ [ \_ GETDEVCAPS de MCI.](mci-getdevcaps.md)
 
@@ -136,7 +136,7 @@ En el caso de los dispositivos videodisc, el *parámetro lpStep* apunta a una [*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -148,7 +148,7 @@ En el caso de los dispositivos videodisc, el *parámetro lpStep* apunta a una [*
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

@@ -12,12 +12,12 @@ keywords:
 - audio auxiliar, dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e02ca4ceaf8e8a8b2f84ea69be437145f0f92b375904a0121c17abc7870fa831
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3f80c499f18b60f0919214c91eeec834ed72c3e1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808115"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371276"
 ---
 # <a name="changing-the-volume-of-auxiliary-audio-devices"></a>Cambiar el volumen de la Audio-Devices
 
@@ -38,7 +38,7 @@ No todos los dispositivos de audio auxiliares admiten cambios de volumen. Alguno
 
 El volumen se especifica en un valor doubleword, al igual que con las funciones de control de volumen de audio de forma de onda y MIDI. Cuando el formato de audio es estéreo, los 16 bits superiores especifican el volumen relativo del canal derecho y los 16 bits inferiores especifican el volumen relativo del canal izquierdo. En el caso de los dispositivos que no admiten el control de volumen del canal izquierdo y derecho, los 16 bits inferiores especifican el nivel de volumen y los 16 bits superiores se omiten.
 
-Los valores de nivel de volumen van 0x0 (silencio) a 0xFFFF (volumen máximo) y se interpretan logarítmicamente. El aumento del volumen percibido es el mismo al aumentar el nivel de volumen de 0x5000 a 0x6000 que de 0x4000 a 0x5000.
+Los valores de nivel de volumen van 0x0 (silencio) a 0xFFFF (volumen máximo) y se interpretan logarítmicamente. El aumento de volumen percibido es el mismo al aumentar el nivel de volumen de 0x5000 a 0x6000 que de 0x4000 a 0x5000.
 
  
 

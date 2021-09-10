@@ -4,12 +4,12 @@ description: Uso e implementación de IUnknown
 ms.assetid: d44a6dc7-54e4-42b3-9a3d-a6569fa4128b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce05f1bdd9f0e4b81d2aade7a583af86772fbe9d8949b85ac8f47d7c947bf781
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1fc5be5ee84bacfec9e239d28263344ec902a0d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129447"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369775"
 ---
 # <a name="using-and-implementing-iunknown"></a>Uso e implementación de IUnknown
 

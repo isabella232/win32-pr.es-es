@@ -6,12 +6,12 @@ keywords:
 - MCI_SET de comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59eb5a9194f3f2598cd8f88fbefb3ea741f51eb9c25210deb6db69c54259e189
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6bc48faa36fea49b0aba749476c998572ebf400
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118370894"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371756"
 ---
 # <a name="setting-the-time-format"></a>Establecer el formato de hora
 
