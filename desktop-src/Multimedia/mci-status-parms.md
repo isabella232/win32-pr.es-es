@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2685ec70f10dc8dcecb0149f3bcf1af6c9814dd360e8f7e185d31710c24d5527
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8295f2e747752889c10083c6bb794ba2df7ac273
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138101"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370124"
 ---
 # <a name="mci_status_parms-structure"></a>Estructura MCI \_ STATUS \_ PARMS
 
@@ -71,7 +71,7 @@ Longitud o número de pistas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La marca MCI STATUS ITEM debe establecerse en el parámetro fdwCommand de la función \_ \_ [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))  para validar el **miembro dwItem,** que debe contener una de las constantes que indican qué información de estado se solicita.
 
@@ -79,7 +79,7 @@ La marca MCI STATUS ITEM debe establecerse en el parámetro fdwCommand de la fun
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -91,7 +91,7 @@ La marca MCI STATUS ITEM debe establecerse en el parámetro fdwCommand de la fun
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

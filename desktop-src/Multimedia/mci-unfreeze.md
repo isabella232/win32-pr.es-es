@@ -1,5 +1,5 @@
 ---
-title: MCI_UNFREEZE (Mmsystem.h)
+title: MCI_UNFREEZE comando (Mmsystem.h)
 description: El comando UNFREEZE de MCI restaura el movimiento en un área del búfer de vídeo \_ inmovilizado con el comando MCI \_ FREEZE. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
 ms.assetid: 79ff1be5-6e30-4ef4-ab81-fc5643e3a72d
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3011f3d2c05c304b37957c6f4cb78f2ada9389ab727a7af63a358fd4b5afdd3c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8736e27998330f9337bb21569e145a4395e90020
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119525575"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370184"
 ---
 # <a name="mci_unfreeze-command"></a>Comando \_ MCI UNFREEZE
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La siguiente marca adicional se usa con el **tipo de dispositivo digitalvideo:**
 
@@ -82,7 +82,7 @@ Las siguientes marcas adicionales se usan con el tipo **de dispositivo vcr:**
 
 <dl> <dt>
 
-<span id="MCI_VCR_UNFREEZE_INPUT"></span><span id="mci_vcr_unfreeze_input"></span>ENTRADA DE \_ DESCONGELAR VCR \_ DE MCI \_
+<span id="MCI_VCR_UNFREEZE_INPUT"></span><span id="mci_vcr_unfreeze_input"></span>ENTRADA MCI \_ VCR \_ \_ UNFREEZE
 </dt> <dd>
 
 Descongele la entrada.
@@ -113,7 +113,7 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpUnf
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -125,7 +125,7 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpUnf
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

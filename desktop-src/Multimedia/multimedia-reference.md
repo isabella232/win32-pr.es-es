@@ -6,19 +6,19 @@ keywords:
 - Windows multimedia,reference
 - multimedia, referencia
 - referencia multimedia, acerca de
-- referencia para multimedia, acerca de
+- referencia de multimedia, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a85521039b1ca229f0baefaf8eac2b97d3cab7110fc82a02af9f8af765dd23d7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ea0987ca1c9453380ab633821da04a28117a13a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038695"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370238"
 ---
 # <a name="multimedia-reference"></a>Referencia multimedia
 
-Los elementos siguientes están asociados a elementos multimedia:
+Los siguientes elementos están asociados a multimedia:
 
 -   [Funciones multimedia](multimedia-functions.md)
 -   [Estructuras multimedia](multimedia-structures.md)

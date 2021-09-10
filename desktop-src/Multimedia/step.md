@@ -1,9 +1,9 @@
 ---
 title: comando step
-description: El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos videodisc en formato Digital-Video, VCR y VCR reconocen este comando.
+description: El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
 ms.assetid: 6017ace5-cde9-42a0-bb2f-f85d7847adc5
 keywords:
-- comando step Windows Multimedia
+- Comando step Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b804ac64c2641ba1eb43ba7019ae2668c04a7d8b07fbfd20ab7b8cb570d8fab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6203d0b2d5dea401e8197e1261946955cd28618a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118370835"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370160"
 ---
 # <a name="step-command"></a>comando step
 
-El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos videodisc en formato Digital-Video, VCR y VCR reconocen este comando.
+El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -53,10 +53,10 @@ Una o las dos marcas siguientes.
 
 
 
-| Valor       | Significado                                                                                                                  |
+| Value       | Significado                                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
-| por *fotogramas* | Indica el número de fotogramas que se deban step. Si especifica un valor de *fotogramas negativos,* no puede especificar la marca "reverse". |
-| reverse     | Paso a paso de los fotogramas en orden inverso.                                                                                              |
+| por *fotogramas* | Indica el número de fotogramas que se debe ir paso a paso. Si especifica un valor de *fotogramas negativos,* no puede especificar la marca "reverse". |
+| reverse     | Paso a paso inverso de los fotogramas.                                                                                              |
 
 
 
@@ -73,24 +73,24 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

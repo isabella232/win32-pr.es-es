@@ -1,6 +1,6 @@
 ---
 title: MCI_CONFIGURE comando (Mmsystem.h)
-description: El comando MCI \_ CONFIGURE muestra un cuadro de diálogo para establecer las opciones de funcionamiento. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando \_ MCI CONFIGURE muestra un cuadro de diálogo para establecer las opciones de funcionamiento. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 92683579-e6af-42a7-8a0f-6b88b04441f2
 keywords:
 - MCI_CONFIGURE comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fda6595e859cf41bfa916c74344c442703c4d3adcd7e1721854b0362bffadcd7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f752f17ac0d0a5c04edf628edfb6c04a339783f5
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784645"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369926"
 ---
 # <a name="mci_configure-command"></a>Comando MCI \_ CONFIGURE
 
-El comando MCI \_ CONFIGURE muestra un cuadro de diálogo para establecer las opciones de funcionamiento. Los dispositivos de vídeo digital reconocen este comando.
+El comando \_ MCI CONFIGURE muestra un cuadro de diálogo para establecer las opciones de funcionamiento. Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,19 +60,19 @@ MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Para obtener información sobre estas 
 <span id="lpConfigure"></span><span id="lpconfigure"></span><span id="LPCONFIGURE"></span>*lpConfigure*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -84,7 +84,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

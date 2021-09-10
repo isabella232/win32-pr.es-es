@@ -4,16 +4,16 @@ description: Un objeto persistente implementa una o varias interfaces de objeto 
 ms.assetid: 8c8e44e4-f564-4af5-9a8a-ac6883862cae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97ee1062c80a5c40d139965e0e3bebf96cbda534062322e218e2f5a7da586ff0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5df8920f1242d077044654d1090adcc0e3f3f05c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120415"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369795"
 ---
 # <a name="persistent-object-interfaces"></a>Interfaces de objetos persistentes
 
-Un objeto persistente implementa una o varias *interfaces de objeto persistentes*. Los clientes usan interfaces de objetos persistentes para decir a esos objetos cuándo y dónde almacenar su estado. Todas las interfaces de objetos persistentes se derivan de [**IPersist,**](/windows/desktop/api/ObjIdl/nn-objidl-ipersist)por lo que cualquier objeto que implemente cualquier interfaz de objeto persistente también **implementa IPersist**.
+Un objeto persistente implementa una o varias interfaces *de objeto persistentes*. Los clientes usan interfaces de objetos persistentes para decir a esos objetos cuándo y dónde almacenar su estado. Todas las interfaces de objetos persistentes se derivan de [**IPersist,**](/windows/desktop/api/ObjIdl/nn-objidl-ipersist)por lo que cualquier objeto que implemente cualquier interfaz de objeto persistente también **implementa IPersist**.
 
 Actualmente se definen las siguientes interfaces de objeto persistentes:
 

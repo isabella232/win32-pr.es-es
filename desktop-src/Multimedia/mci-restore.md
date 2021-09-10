@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a51753dbb5ed265bc9d60d5aafed38a9618854cb63500c1bf58e4d20b87a1ed
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6b0c82db597a0e347f382c7cda55ce507f4e6dcc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038895"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370082"
 ---
 # <a name="mci_restore-command"></a>Comando RESTORE de MCI \_
 
@@ -60,7 +60,7 @@ MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Para obtener información sobre estas 
 <span id="lpRestore"></span><span id="lprestore"></span><span id="LPRESTORE"></span>*lpRestore*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI DGV \_ RESTORE \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_restore_parmsa)
+Puntero a una [**estructura MCI \_ DGV \_ RESTORE \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_restore_parmsa)
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ Puntero a una [**estructura \_ MCI DGV \_ RESTORE \_ PARMS.**](/windows/desktop/
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La implementación puede reconocer diversos formatos de imagen, pero siempre Windows mapa de bits independiente del dispositivo (DIB).
+La implementación puede reconocer una variedad de formatos de imagen, pero siempre se acepta Windows mapa de bits independiente del dispositivo (DIB).
 
 Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digital:
 
@@ -79,7 +79,7 @@ Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digita
 <span id="MCI_DGV_RESTORE_FROM"></span><span id="mci_dgv_restore_from"></span>RESTAURACIÓN \_ DE MCI DGV \_ \_ DESDE
 </dt> <dd>
 
-El **miembro lpstrFileName** de la estructura identificada por *lpRestore* contiene una dirección de un búfer que contiene el nombre de archivo de origen. Se requiere el nombre de archivo.
+El **miembro lpstrFileName de** la estructura identificada por *lpRestore* contiene una dirección de un búfer que contiene el nombre de archivo de origen. Se requiere el nombre de archivo.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ El **miembro rc** de la estructura identificada por *lpRestore* contiene un rect
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

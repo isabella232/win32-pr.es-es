@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9905000c718ff70435ec91bf86bf7a77d14379ed7ca557eaa85fb0df594196c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86553ac759a362c1ea4abb53a47d0e9376cbc526
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784285"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370112"
 ---
 # <a name="mci_status-command"></a>Comando MCI \_ STATUS
 
@@ -71,7 +71,7 @@ Puntero a una [**estructura MCI \_ STATUS \_ PARMS.**](mci-status-parms.md) (Los
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas estándar y específicas de comando adicionales se aplican a todos los dispositivos que admiten MCI \_ STATUS:
 
@@ -258,7 +258,7 @@ El **miembro dwReturn** devuelve el número de fotogramas que no se dibujaron cu
 
 </dd> <dt>
 
-<span id="MCI_AVI_STATUS_LAST_PLAY_SPEED"></span><span id="mci_avi_status_last_play_speed"></span>VELOCIDAD DE ÚLTIMA REPRODUCCIÓN DEL ESTADO DE MCI \_ \_ \_ \_ \_ AVI
+<span id="MCI_AVI_STATUS_LAST_PLAY_SPEED"></span><span id="mci_avi_status_last_play_speed"></span>VELOCIDAD DE ÚLTIMA REPRODUCCIÓN DEL ESTADO DE MCI \_ AVI \_ \_ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** devuelve un valor que representa la proximidad de la hora de reproducción real de la última secuencia AVI con la hora de reproducción de destino. El valor 1000 indica que la hora de destino y la hora real eran las mismas. Un valor de 2000, por ejemplo, indicaría que la secuencia AVI tardó el doble de tiempo en reproducirse como debería. Esta marca solo la reconoce el controlador de vídeo digital MCIAVI.
@@ -286,7 +286,7 @@ El **miembro dwReturn** devuelve MCI ON o MCI OFF que refleja el estado establec
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_AUDIO_SOURCE"></span><span id="mci_dgv_status_audio_source"></span>ORIGEN DE AUDIO \_ MCI DGV \_ STATUS \_ \_
+<span id="MCI_DGV_STATUS_AUDIO_SOURCE"></span><span id="mci_dgv_status_audio_source"></span>ORIGEN DE AUDIO \_ DE ESTADO DE MCI DGV \_ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** devuelve el origen del digitalizador de audio actual:
@@ -494,52 +494,52 @@ MÉTODO \_ MCI DGV \_ \_ DIRECTO
 
 Supervisión de entrada directa.
 
-POST DEL \_ MÉTODO MCI DGV \_ \_
+MCI \_ DGV \_ METHOD \_ POST
 
 Supervisión posterior a la entrada.
 
-MÉTODO \_ MCI DGV \_ \_ PRE
+MCI \_ DGV \_ METHOD \_ PRE
 
 Supervisión previa a la entrada.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_PAUSE_MODE"></span><span id="mci_dgv_status_pause_mode"></span>MODO DE PAUSA \_ DE ESTADO DE MCI DGV \_ \_ \_
+<span id="MCI_DGV_STATUS_PAUSE_MODE"></span><span id="mci_dgv_status_pause_mode"></span>MODO DE PAUSA \_ DEL ESTADO DE MCI DGV \_ \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** devuelve MCI MODE PLAY si el dispositivo se ha pausado durante la reproducción y devuelve MCI MODE RECORD si el dispositivo se ha pausado \_ durante la \_ \_ \_ grabación. El comando devuelve MCIERR NONAPPLICABLE FUNCTION como una \_ \_ devolución de error si el dispositivo no está en pausa.
+El **miembro dwReturn** devuelve MCI MODE PLAY si el dispositivo se ha pausado durante la reproducción y devuelve MCI MODE RECORD si el dispositivo se ha pausado \_ durante la \_ \_ \_ grabación. El comando devuelve MCIERR NONAPPLICABLE FUNCTION como una devolución \_ de error si el dispositivo no está en \_ pausa.
 
 </dd> <dt>
 
 <span id="MCI_DGV_STATUS_SAMPLESPERSECOND"></span><span id="mci_dgv_status_samplespersecond"></span>EJEMPLOS DE \_ ESTADO DE MCI DGVPERSECOND \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** devuelve el número de muestras por segundo grabado.
+El **miembro dwReturn** devuelve el número de muestras por segundo grabadas.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SEEK_EXACTLY"></span><span id="mci_dgv_status_seek_exactly"></span>ESTADO DE \_ MCI DGV \_ BUSCAR \_ \_ EXACTAMENTE
+<span id="MCI_DGV_STATUS_SEEK_EXACTLY"></span><span id="mci_dgv_status_seek_exactly"></span>MCI \_ DGV \_ STATUS \_ SEEK \_ EXACTLY
 </dt> <dd>
 
-El **miembro dwReturn** devuelve **TRUE** o **FALSE,** lo que indica si se ha establecido o no el formato de búsqueda exactamente. (Las aplicaciones pueden establecer este formato mediante el [comando MCI \_ SET](mci-set.md) con la marca MCI \_ DGV \_ SET SEEK \_ \_ EXACTLY).
+El **miembro dwReturn** devuelve **TRUE** o **FALSE,** lo que indica si se ha establecido o no el formato de búsqueda exactamente. (Las aplicaciones pueden establecer este formato mediante el comando [MCI \_ SET](mci-set.md) con la marca \_ MCI DGV \_ SET SEEK \_ \_ EXACTLY).
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SHARPNESS"></span><span id="mci_dgv_status_sharpness"></span>\_NICIELO DEL ESTADO DE MCI DGV \_ \_
+<span id="MCI_DGV_STATUS_SHARPNESS"></span><span id="mci_dgv_status_sharpness"></span>\_NICIEZ DEL ESTADO DE MCI DGV \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** devuelve el nivel de niguidad actual. Use MCI \_ DGV \_ STATUS NOMINAL con esta marca para obtener el nivel \_ nominal.
+El **miembro dwReturn** devuelve el nivel de ni sharpness actual. Use MCI \_ DGV \_ STATUS NOMINAL con esta marca para obtener el nivel \_ nominal.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SIZE"></span><span id="mci_dgv_status_size"></span>TAMAÑO DE \_ ESTADO DE MCI DGV \_ \_
+<span id="MCI_DGV_STATUS_SIZE"></span><span id="mci_dgv_status_size"></span>TAMAÑO DE ESTADO \_ DE MCI DGV \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** devuelve la duración aproximada de reproducción de los datos comprimidos que contendrán el área de trabajo reservada. Las unidades de duración están en el formato de hora actual. Devuelve cero si no hay espacio en disco reservado. El tamaño devuelto es aproximado, ya que el espacio en disco preciso para los datos comprimidos no se puede predecir, en general, hasta después de que se hayan comprimido los datos.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SMPTE"></span><span id="mci_dgv_status_smpte"></span>\_SMPTE DE ESTADO DE \_ MCI DGV \_
+<span id="MCI_DGV_STATUS_SMPTE"></span><span id="mci_dgv_status_smpte"></span>MCI \_ DGV \_ STATUS \_ SMPTE
 </dt> <dd>
 
 El **miembro dwReturn** devuelve el código de tiempo de SMPTE asociado a la posición actual en el área de trabajo.
@@ -560,7 +560,7 @@ El **miembro dwReturn** devuelve el formato de archivo actual para el [comando M
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_TINT"></span><span id="mci_dgv_status_tint"></span>TINT \_ DE ESTADO DE MCI DGV \_ \_
+<span id="MCI_DGV_STATUS_TINT"></span><span id="mci_dgv_status_tint"></span>TINT DE \_ ESTADO DE MCI DGV \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** devuelve el nivel de tono de vídeo actual. Use MCI \_ DGV \_ STATUS NOMINAL con esta marca para obtener el nivel \_ nominal.
@@ -591,14 +591,14 @@ El **miembro dwReturn** devuelve MCI \_ ON si el vídeo está habilitado o MCI \
 <span id="MCI_DGV_STATUS_VIDEO_RECORD"></span><span id="mci_dgv_status_video_record"></span>REGISTRO DE \_ VÍDEO DE ESTADO DE MCI DGV \_ \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** devuelve MCI ON o MCI OFF, lo que refleja el estado establecido por la marca MCI DGV SETVIDEO RECORD del comando \_ \_ \_ \_ \_ [ \_ MCI SETVIDEO.](mci-setvideo.md)
+El **miembro dwReturn** devuelve MCI ON o MCI OFF, lo que refleja el estado establecido por la marca SETVIDEO RECORD de MCI DGV del comando \_ \_ \_ \_ \_ [ \_ SETVIDEO de MCI.](mci-setvideo.md)
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_VIDEO_SOURCE"></span><span id="mci_dgv_status_video_source"></span>ORIGEN DE \_ VÍDEO DE ESTADO DE MCI DGV \_ \_ \_
+<span id="MCI_DGV_STATUS_VIDEO_SOURCE"></span><span id="mci_dgv_status_video_source"></span>ORIGEN DEL \_ VÍDEO MCI DGV \_ STATUS \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** devuelve una constante que indica el tipo de origen de vídeo establecido por la marca \_ MCI DGV SETVIDEO SOURCE del \_ comando \_ **\_ MCI SETVIDEO.**
+El **miembro dwReturn** devuelve una constante que indica el tipo de origen de vídeo establecido por la marca MCI DGV SETVIDEO SOURCE del comando \_ \_ \_ **\_ MCI SETVIDEO.**
 
 </dd> <dt>
 
@@ -640,24 +640,24 @@ El **miembro dwReturn** devuelve **TRUE** si se minimiza la ventana.
 <span id="MCI_DGV_STATUS_WINDOW_MAXIMIZED"></span><span id="mci_dgv_status_window_maximized"></span>VENTANA DE \_ ESTADO DE MCI DGV \_ \_ \_ MAXIMIZADA
 </dt> <dd>
 
-El **miembro dwReturn** devuelve **TRUE** si la ventana está maximizada.
+El **miembro dwReturn** devuelve **TRUE si** la ventana está maximizada.
 
 </dd> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MCI \_ STATUS \_ MEDIA \_ PRESENT
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MEDIOS DE ESTADO DE MCI \_ \_ \_ PRESENTES
 </dt> <dd>
 
 El **miembro dwReturn** devuelve **TRUE.**
 
 </dd> </dl>
 
-En el caso de los dispositivos de vídeo digital, el *parámetro lpStatus* apunta a una estructura [**\_ MCI DGV \_ STATUS \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_status_parmsa)
+En el caso de los dispositivos de vídeo digital, el *parámetro lpStatus* apunta a una estructura [**MCI \_ DGV \_ STATUS \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_status_parmsa)
 
 Las siguientes marcas adicionales se usan con el **tipo de dispositivo sequencer.** Estas constantes se usan en el **miembro dwItem** de la estructura a la que apunta el parámetro *lpStatus* cuando se especifica MCI STATUS ITEM para el \_ parámetro \_ *dwFlags.*
 
 <dl> <dt>
 
-<span id="MCI_SEQ_STATUS_DIVTYPE"></span><span id="mci_seq_status_divtype"></span>DIVTYPE DE ESTADO DE MCI \_ SEQ \_ \_
+<span id="MCI_SEQ_STATUS_DIVTYPE"></span><span id="mci_seq_status_divtype"></span>DIVTYPE DE \_ ESTADO DE MCI SEQ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en uno de los siguientes valores que indican el tipo de división actual de una secuencia:
@@ -691,24 +691,24 @@ El **miembro dwReturn** se establece en el identificador de dispositivo MIDI par
 
 </dd> <dt>
 
-<span id="MCI_SEQ_STATUS_SLAVE"></span><span id="mci_seq_status_slave"></span>MCI \_ SEQ \_ STATUS \_ SLAVE
+<span id="MCI_SEQ_STATUS_SLAVE"></span><span id="mci_seq_status_slave"></span>SUBORDINADO DE ESTADO DE MCI \_ SEQ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en el tipo de sincronización utilizado para la operación subordinada.
 
 </dd> <dt>
 
-<span id="MCI_SEQ_STATUS_TEMPO"></span><span id="mci_seq_status_tempo"></span>TEMPO DE \_ ESTADO DE MCI SEQ \_ \_
+<span id="MCI_SEQ_STATUS_TEMPO"></span><span id="mci_seq_status_tempo"></span>TEMPO DE ESTADO DE MCI \_ SEQ \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** se establece en el tempo actual de una secuencia DE MIDI en latidos por minuto para los archivos PPQN o fotogramas por segundo para los archivos SMPTE.
+El **miembro dwReturn** se establece en el tempo actual de una secuencia DE MIDI en latidos por minuto para archivos PPQN o fotogramas por segundo para archivos SMPTE.
 
 </dd> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MCI \_ STATUS \_ MEDIA \_ PRESENT
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MEDIOS DE ESTADO DE MCI \_ \_ \_ PRESENTES
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se establece **en FALSE.**
+El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se **establece en FALSE.**
 
 </dd> </dl>
 
@@ -716,49 +716,49 @@ Las siguientes marcas adicionales se usan con el tipo **de dispositivo vcr.** Es
 
 <dl> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MCI \_ STATUS \_ MEDIA \_ PRESENT
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MEDIOS DE ESTADO DE MCI \_ \_ \_ PRESENTES
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se establece **en FALSE.**
+El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se **establece en FALSE.**
 
 </dd> <dt>
 
 <span id="MCI_VCR_STATUS_ASSEMBLE_RECORD"></span><span id="mci_vcr_status_assemble_record"></span>REGISTRO MCI \_ VCR \_ STATUS \_ ASSEMBLE \_
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE** si el modo de ensamblado está activo; de lo contrario, se establece **en FALSE.**
+El **miembro dwReturn** se establece en **TRUE si** el modo de ensamblado está activo; de lo contrario, se **establece en FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_MONITOR"></span><span id="mci_vcr_status_audio_monitor"></span>MONITOR DE AUDIO \_ DE ESTADO DE VCR \_ \_ DE \_ MCI
+<span id="MCI_VCR_STATUS_AUDIO_MONITOR"></span><span id="mci_vcr_status_audio_monitor"></span>MONITOR DE \_ AUDIO DE ESTADO DE VCR \_ \_ de \_ MCI
 </dt> <dd>
 
-El **miembro dwReturn** se establece en una constante, lo que indica el tipo de monitor de audio seleccionado actualmente.
+El **miembro dwReturn** se establece en una constante, que indica el tipo de monitor de audio seleccionado actualmente.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_MONITOR_NUMBER"></span><span id="mci_vcr_status_audio_monitor_number"></span>NÚMERO DE MONITOR DE \_ AUDIO DE ESTADO DE MCI VCR \_ \_ \_ \_
+<span id="MCI_VCR_STATUS_AUDIO_MONITOR_NUMBER"></span><span id="mci_vcr_status_audio_monitor_number"></span>NÚMERO DE MONITOR \_ DE AUDIO DE ESTADO DE MCI VCR \_ \_ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en el número del tipo de monitor de audio seleccionado actualmente.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_RECORD"></span><span id="mci_vcr_status_audio_record"></span>REGISTRO DE AUDIO \_ DE ESTADO DE VCR \_ \_ DE \_ MCI
+<span id="MCI_VCR_STATUS_AUDIO_RECORD"></span><span id="mci_vcr_status_audio_record"></span>REGISTRO DE AUDIO \_ DE ESTADO DE VCR \_ \_ de \_ MCI
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE** si se grabará audio cuando se haya dado el siguiente comando de grabación; de lo contrario, se establece **en FALSE.** Si especifica MCI TRACK en el parámetro \_ *dwFlags* de este comando, **dwTrack** contiene el seguimiento al que se aplica esta consulta.
+El **miembro dwReturn** se establece en **TRUE si** se grabará audio cuando se haya dado el siguiente comando de registro; de lo contrario, se **establece en FALSE.** Si especifica MCI TRACK en el parámetro \_ *dwFlags* de este comando, **dwTrack** contiene el seguimiento al que se aplica esta consulta.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_SOURCE"></span><span id="mci_vcr_status_audio_source"></span>ORIGEN DE AUDIO \_ MCI VCR \_ STATUS \_ \_
+<span id="MCI_VCR_STATUS_AUDIO_SOURCE"></span><span id="mci_vcr_status_audio_source"></span>ORIGEN DE AUDIO \_ DE ESTADO DE VCR \_ \_ MCI \_
 </dt> <dd>
 
-El **miembro dwReturn** se establece en una constante, lo que indica el tipo de origen de audio actual.
+El **miembro dwReturn** se establece en una constante, que indica el tipo de origen de audio actual.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_SOURCE_NUMBER"></span><span id="mci_vcr_status_audio_source_number"></span>NÚMERO DE ORIGEN \_ DE AUDIO DE ESTADO DE VCR \_ \_ \_ DE \_ MCI
+<span id="MCI_VCR_STATUS_AUDIO_SOURCE_NUMBER"></span><span id="mci_vcr_status_audio_source_number"></span>NÚMERO DE ORIGEN \_ DE AUDIO DE ESTADO DE MCI VCR \_ \_ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en el número del tipo de origen de audio seleccionado actualmente.
@@ -768,7 +768,7 @@ El **miembro dwReturn** se establece en el número del tipo de origen de audio s
 <span id="MCI_VCR_STATUS_CLOCK"></span><span id="mci_vcr_status_clock"></span>RELOJ DE ESTADO \_ DE VCR \_ de MCI \_
 </dt> <dd>
 
-El **miembro dwReturn** se establece en el valor de reloj actual, en incrementos de reloj totales.
+El **miembro dwReturn** se establece en el valor del reloj actual, en incrementos de reloj totales.
 
 </dd> <dt>
 
@@ -1029,9 +1029,9 @@ El **miembro dwReturn** se establece en **TRUE** si el medio está protegido por
 
 En el caso de los dispositivos VCR, el *parámetro lpStatus* apunta a una estructura [**MCI \_ VCR \_ STATUS \_ PARMS.**](mci-vcr-status-parms.md)
 
-El uso de la marca MCI STATUS LENGTH para determinar la longitud del medio siempre devuelve 2 horas para los dispositivos VCR, a menos que la longitud se haya cambiado explícitamente mediante el \_ \_ comando [MCI \_ SET.](mci-set.md)
+El uso de la marca STATUS LENGTH de MCI para determinar la longitud del medio siempre devuelve 2 horas para los dispositivos VCR, a menos que la longitud se haya cambiado explícitamente mediante el \_ \_ comando [MCI \_ SET.](mci-set.md)
 
-Las siguientes marcas adicionales se usan con el tipo **de dispositivo superpuesto.** Estas constantes se usan en el **miembro dwItem** de la estructura a la que apunta el parámetro *lpStatus* cuando se especifica MCI STATUS ITEM para el \_ parámetro \_ *dwFlags.*
+Las siguientes marcas adicionales se usan con el tipo **de dispositivo de** superposición. Estas constantes se usan en el **miembro dwItem** de la estructura a la que apunta el parámetro *lpStatus* cuando se especifica MCI STATUS ITEM para el \_ parámetro \_ *dwFlags.*
 
 <dl> <dt>
 
@@ -1045,36 +1045,36 @@ El **miembro dwReturn** se establece en el identificador de la ventana asociada 
 <span id="MCI_OVLY_STATUS_STRETCH"></span><span id="mci_ovly_status_stretch"></span>MCI \_ OVLY \_ STATUS \_ STRETCH
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE** si está habilitado el ajuste; de lo contrario, se establece **en FALSE.**
+El **miembro dwReturn** se establece en **TRUE si** el ajuste está habilitado; de lo contrario, se **establece en FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MCI \_ STATUS \_ MEDIA \_ PRESENT
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MEDIOS DE ESTADO DE MCI \_ \_ \_ PRESENTES
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se establece **en FALSE.**
+El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se **establece en FALSE.**
 
 </dd> </dl>
 
-Las siguientes marcas adicionales se usan con el **tipo de dispositivo videodisc.** Estas constantes se usan en el **miembro dwItem** de la estructura a la que apunta el parámetro *lpStatus* cuando se especifica MCI STATUS ITEM para el \_ parámetro \_ *dwFlags.*
+Las marcas adicionales siguientes se usan con el tipo **de dispositivo videodisc.** Estas constantes se usan en el **miembro dwItem** de la estructura a la que apunta el parámetro *lpStatus* cuando se especifica MCI STATUS ITEM para el \_ parámetro \_ *dwFlags.*
 
 <dl> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MCI \_ STATUS \_ MEDIA \_ PRESENT
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MEDIOS DE ESTADO DE MCI \_ \_ \_ PRESENTES
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se establece **en FALSE.**
+El **miembro dwReturn** se establece en **TRUE** si el medio se inserta en el dispositivo; de lo contrario, se **establece en FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_STATUS_MODE"></span><span id="mci_status_mode"></span>MODO DE ESTADO \_ MCI \_
+<span id="MCI_STATUS_MODE"></span><span id="mci_status_mode"></span>MODO DE ESTADO DE MCI \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en el modo actual del dispositivo. Los dispositivos Videodisc pueden devolver la constante MCI VD MODE PARK, además de las constantes que cualquier dispositivo puede devolver, como se documenta con el \_ \_ parámetro \_ *dwFlags.*
 
 </dd> <dt>
 
-<span id="MCI_VD_STATUS_DISC_SIZE"></span><span id="mci_vd_status_disc_size"></span>TAMAÑO DEL \_ DISCO DE ESTADO DE VD \_ \_ DE \_ MCI
+<span id="MCI_VD_STATUS_DISC_SIZE"></span><span id="mci_vd_status_disc_size"></span>TAMAÑO DEL \_ DISCO DE ESTADO DE MCI VD \_ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en el tamaño del disco cargado en pulgadas (8 o 12).
@@ -1084,9 +1084,9 @@ El **miembro dwReturn** se establece en el tamaño del disco cargado en pulgadas
 <span id="MCI_VD_STATUS_FORWARD"></span><span id="mci_vd_status_forward"></span>MCI \_ VD \_ STATUS \_ FORWARD
 </dt> <dd>
 
-El **miembro dwReturn** se establece en **TRUE si** se reproduce hacia delante; de lo contrario, se establece **en FALSE.**
+El **miembro dwReturn** se establece en **TRUE si** se reproduce hacia delante; de lo contrario, se **establece en FALSE.**
 
-El dispositivo videodisc de MCI no admite esta marca.
+El dispositivo de vídeo de MCI no admite esta marca.
 
 </dd> <dt>
 
@@ -1095,7 +1095,7 @@ El dispositivo videodisc de MCI no admite esta marca.
 
 El **miembro dwReturn** se establece en el tipo de medio del medio insertado. Se pueden devolver los siguientes tipos de medios:
 
-MCI \_ VD \_ MEDIA \_ UNO
+MCI \_ VD \_ MEDIA \_ VEZ
 
 MCI \_ VD \_ MEDIA \_ CLV
 
@@ -1103,14 +1103,14 @@ MCI \_ VD \_ MEDIA \_ OTHER
 
 </dd> <dt>
 
-<span id="MCI_VD_STATUS_SIDE"></span><span id="mci_vd_status_side"></span>LADO DE ESTADO \_ DE VD \_ DE MCI \_
+<span id="MCI_VD_STATUS_SIDE"></span><span id="mci_vd_status_side"></span>LADO DE ESTADO VD DE MCI \_ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en 1 o 2 para indicar qué lado del disco se carga. No todos los dispositivos videodisc admiten esta marca.
 
 </dd> <dt>
 
-<span id="MCI_VD_STATUS_SPEED"></span><span id="mci_vd_status_speed"></span>VELOCIDAD DE ESTADO \_ DE VD \_ de MCI \_
+<span id="MCI_VD_STATUS_SPEED"></span><span id="mci_vd_status_speed"></span>VELOCIDAD DE ESTADO VD de MCI \_ \_ \_
 </dt> <dd>
 
 El **miembro dwReturn** se establece en la velocidad de reproducción en fotogramas por segundo. The MCIPIONR. El controlador de dispositivo DRV devuelve MCIERR \_ UNSUPPORTED \_ FUNCTION.
@@ -1135,17 +1135,17 @@ El **miembro dwReturn** se establece en el dispositivo de entrada de onda que se
 
 </dd> <dt>
 
-<span id="MCI_WAVE_OUTPUT"></span><span id="mci_wave_output"></span>SALIDA DE MCI \_ \_ WAVE
+<span id="MCI_WAVE_OUTPUT"></span><span id="mci_wave_output"></span>SALIDA DE MCI \_ WAVE \_
 </dt> <dd>
 
-El **miembro dwReturn** se establece en el dispositivo de salida de onda que se usa para reproducir. Si no hay ningún dispositivo en uso y no se ha establecido explícitamente ningún dispositivo, la devolución del error es MCIERR \_ WAVE \_ OUTPUTUNSPECIFIED.
+El **miembro dwReturn** se establece en el dispositivo de salida de onda que se usa para la reproducción. Si no hay ningún dispositivo en uso y no se ha establecido explícitamente ningún dispositivo, la devolución del error es MCIERR \_ WAVE \_ OUTPUTUNSPECIFIED.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_STATUS_AVGBYTESPERSEC"></span><span id="mci_wave_status_avgbytespersec"></span>ESTADO DE ONDA MCI \_ \_ \_ AVGBYTESPERSEC
+<span id="MCI_WAVE_STATUS_AVGBYTESPERSEC"></span><span id="mci_wave_status_avgbytespersec"></span>ESTADO DE ONDA DE MCI \_ \_ \_ AVGBYTESPERSEC
 </dt> <dd>
 
-El **miembro dwReturn** se establece en los bytes actuales por segundo que se usan para reproducir, grabar y guardar.
+El **miembro dwReturn** se establece en los bytes actuales por segundo usados para reproducir, grabar y guardar.
 
 </dd> <dt>
 
@@ -1163,21 +1163,21 @@ El **miembro dwReturn** se establece en la alineación del bloque actual que se 
 
 </dd> <dt>
 
-<span id="MCI_WAVE_STATUS_CHANNELS"></span><span id="mci_wave_status_channels"></span>CANALES DE \_ ESTADO \_ DE MCI WAVE \_
+<span id="MCI_WAVE_STATUS_CHANNELS"></span><span id="mci_wave_status_channels"></span>CANALES DE \_ ESTADO DE MCI WAVE \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** se establece en el número de canales actual usado para reproducir, grabar y guardar.
+El **miembro dwReturn** se establece en el recuento de canales actual que se usa para reproducir, grabar y guardar.
 
 </dd> <dt>
 
 <span id="MCI_WAVE_STATUS_LEVEL"></span><span id="mci_wave_status_level"></span>NIVEL DE ESTADO \_ DE MCI WAVE \_ \_
 </dt> <dd>
 
-El **miembro dwReturn** se establece en el nivel de reproducción o registro actual de los datos con formato PCM. El valor se devuelve como un valor de 8 o 16 bits, en función del tamaño de muestra utilizado. El nivel de canal derecho o mono se devuelve en la palabra de orden inferior. El nivel de canal izquierdo se devuelve en la palabra de orden superior.
+El **miembro dwReturn** se establece en el nivel de reproducción o registro actual de los datos con formato PCM. El valor se devuelve como un valor de 8 o 16 bits, según el tamaño de la muestra utilizado. El nivel de canal derecho o mono se devuelve en la palabra de orden inferior. El nivel de canal izquierdo se devuelve en la palabra de orden superior.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_STATUS_SAMPLESPERSEC"></span><span id="mci_wave_status_samplespersec"></span>EJEMPLOS DE \_ ESTADO \_ DE MCI \_ WAVEPERSEC
+<span id="MCI_WAVE_STATUS_SAMPLESPERSEC"></span><span id="mci_wave_status_samplespersec"></span>EJEMPLOS DE ESTADO \_ DE MCI \_ \_ WAVEPERSEC
 </dt> <dd>
 
 El **miembro dwReturn** se establece en los ejemplos actuales por segundo que se usan para reproducir, grabar y guardar.
@@ -1200,7 +1200,7 @@ El **miembro dwReturn** se establece en los ejemplos actuales por segundo que se
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)
@@ -1212,7 +1212,7 @@ El **miembro dwReturn** se establece en los ejemplos actuales por segundo que se
 [MCI \_ DELETE](mci-delete.md)
 </dt> <dt>
 
-[PEGAR DE \_ MCI](mci-paste.md)
+[PEGAR \_ MCI](mci-paste.md)
 </dt> <dt>
 
 [MCI \_ RESERVE](mci-reserve.md)

@@ -27,12 +27,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14cf6f0ab42b03d028d52df8160cad286e8c37af3988d8ca3b9736dad538012e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1227d2accdf871c2e57a25661837d10089c983ce
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993785"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369763"
 ---
 # <a name="authentication-service-constants"></a>Constantes del servicio de autenticación
 
@@ -61,7 +61,7 @@ Define los servicios de autenticación mediante la identificación del paquete d
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estas constantes se usan en las estructuras [**SOLE \_ AUTHENTICATION SERVICE \_ y**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_service) [**SOLE AUTHENTICATION \_ \_ INFO.**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_info) El servidor pasa la estructura **SOLE \_ AUTHENTICATION \_ SERVICE** a la función [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) y la función [**CoQueryAuthenticationServices**](/windows/desktop/api/combaseapi/nf-combaseapi-coqueryauthenticationservices) puede recuperarla. El cliente pasa un puntero a **una estructura SOLE AUTHENTICATION \_ \_ INFO** a **CoInitializeSecurity.** Para obtener más información sobre los paquetes de seguridad identificados por estos valores, como NTLMSSP y Kerberos, vea [COM y Paquetes de seguridad](com-and-security-packages.md).
 

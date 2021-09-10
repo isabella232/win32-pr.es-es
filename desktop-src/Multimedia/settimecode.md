@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19c6516586e1f8f3972193ef5723fb0843635fd2e28dda9dbecc5ce13ef8414b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 32092e5af7c77cdc274491b20663218d39a1ec1a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037275"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370165"
 ---
 # <a name="settimecode-command"></a>Comando settimecode
 
@@ -55,8 +55,8 @@ Una de las marcas siguientes.
 
 | Value      | Significado                          |
 |------------|----------------------------------|
-| registro en  | Establece vcr para registrar el código de tiempo. |
-| record off | Deshabilita la grabación de código de tiempo.     |
+| registro en  | Establece el VCR para registrar el código de tiempo. |
+| registro desactivado | Deshabilita la grabación del código de tiempo.     |
 
 
 
@@ -73,7 +73,7 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

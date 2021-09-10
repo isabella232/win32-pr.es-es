@@ -1,6 +1,6 @@
 ---
 title: MCI_LOAD_PARMS estructura (Mmsystem.h)
-description: La estructura \_ MCI LOAD \_ PARMS contiene el nombre de archivo que se cargará para el comando \_ LOAD de MCI.
+description: La estructura \_ MCI LOAD PARMS contiene el nombre de archivo \_ que se cargará para el comando LOAD de MCI. \_
 ms.assetid: 371d11cc-44db-496b-b51a-66d7b919b794
 keywords:
 - MCI_LOAD_PARMS estructura Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d52a5c875bbbfff6f94857bc7337a0cba1473571bfdb8edc8ccfa8f3f1a471fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04697a52eb9f8bb33db6063eb47e791be674f1d2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375010"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370010"
 ---
 # <a name="mci_load_parms-structure"></a>Estructura \_ MCI LOAD \_ PARMS
 
@@ -55,7 +55,7 @@ Nombre del archivo que se cargará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -63,7 +63,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
@@ -71,11 +71,11 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

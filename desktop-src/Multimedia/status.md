@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bd209ed04e51671ce7d9c8a7ae88a79073836c2e
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626121"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370148"
 ---
 # <a name="status-command"></a>comando status
 
 > [!NOTE]
-> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusión.  Dentro de este documento, hay referencias a la palabra "subordinado". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
+> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusario.  Dentro de este documento, hay referencias a la palabra "subordinada". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
 
 El comando status solicita información de estado de un dispositivo. Todos los dispositivos reconocen este comando.
 
@@ -72,10 +72,10 @@ Marca para solicitar información de estado. En la tabla siguiente se enumeran l
 <tr class="odd">
 <td>cdaudio</td>
 <td><ul>
-<li>Número de <em></em> pista de tipo cdaudio</li>
+<li>cdaudio type track <em>number</em></li>
 <li>pista actual</li>
 <li>length</li>
-<li>número de pista <em>de longitud</em></li>
+<li>número de pista de <em>longitud</em></li>
 <li>medios presentes</li>
 <li>mode</li>
 <li>número de pistas</li>
@@ -91,13 +91,13 @@ Marca para solicitar información de estado. En la tabla siguiente se enumeran l
 <td><ul>
 <li>audio</li>
 <li>alineación de audio</li>
-<li>audio bitspersample</li>
-<li>pausas de audio</li>
-<li>audio bytespersec</li>
+<li>bitspersample de audio</li>
+<li>saltos de audio</li>
+<li>bytes de audiopersec</li>
 <li>entrada de audio</li>
 <li>registro de audio</li>
 <li>origen de audio</li>
-<li>audio samplespersec</li>
+<li>ejemplos de audiopersec</li>
 <li>secuencia de audio</li>
 <li>Bajo</li>
 <li>bitsperpel</li>
@@ -115,26 +115,26 @@ Marca para solicitar información de estado. En la tabla siguiente se enumeran l
 <li>input</li>
 <li>volumen izquierdo</li>
 <li>length</li>
-<li>número de pista <em>de longitud</em></li>
+<li>número de pista de <em>longitud</em></li>
 <li>medios presentes</li>
 <li>mode</li>
 <li>monitor</li>
 <li>método monitor</li>
 <li>Nominal</li>
-<li>velocidad nominal de fotogramas</li>
+<li>velocidad de fotogramas nominal</li>
 <li>velocidad de fotogramas de registros nominales</li>
 <li>número de pistas</li>
 <li>output</li>
-<li>identificador de paleta</li>
+<li>controlador de paleta</li>
 <li>modo de pausa</li>
 <li>velocidad de reproducción</li>
 <li>position</li>
 <li>número de seguimiento de <em>posición</em></li>
 <li>ready</li>
-<li>velocidad de fotogramas de registros</li>
+<li>velocidad de fotogramas de registro</li>
 <li>marco de <em>referencia</em></li>
 <li>tamaño reservado</li>
-<li>volumen correcto</li>
+<li>volumen derecho</li>
 <li>buscar exactamente</li>
 <li>Nitidez</li>
 <li>Smpte</li>
@@ -279,7 +279,7 @@ Marca para solicitar información de estado. En la tabla siguiente se enumeran l
 <li>etiqueta de formato</li>
 <li>input</li>
 <li>length</li>
-<li>número de pista de <em>longitud</em></li>
+<li>número de pista <em>de longitud</em></li>
 <li>Nivel</li>
 <li>medios presentes</li>
 <li>mode</li>
@@ -321,56 +321,56 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 <td>Devuelve la alineación de bloques de datos, en bytes.</td>
 </tr>
 <tr class="even">
-<td>ensamblado del registro</td>
-<td>Devuelve <strong>TRUE si</strong> el dispositivo está configurado para ensamblar la grabación en modo.</td>
+<td>ensamblar registro</td>
+<td>Devuelve <strong>TRUE</strong> si el dispositivo está establecido para la grabación en modo de ensamblado.</td>
 </tr>
 <tr class="odd">
 <td>audio</td>
-<td>Devuelve &quot; on o off en función del comando &quot; &quot; &quot; <a href="setaudio.md">setaudio</a> &quot; on o off más &quot; &quot; &quot; reciente. Devuelve on &quot; si uno o ambos &quot; hablantes están habilitados y desactivado &quot; en caso &quot; contrario.</td>
+<td>Devuelve &quot; on o off en función del comando &quot; &quot; &quot; <a href="setaudio.md">setaudio</a> &quot; on o off más &quot; &quot; &quot; reciente. Devuelve on &quot; si uno o ambos &quot; oradores están habilitados y &quot; desactivados en caso &quot; contrario.</td>
 </tr>
 <tr class="even">
 <td>alineación de audio</td>
 <td>Devuelve la alineación de los bloques de datos con respecto al inicio de los datos de audio de forma de onda de entrada.</td>
 </tr>
 <tr class="odd">
-<td>bitspersample de audio</td>
+<td>audio bitspersample</td>
 <td>Devuelve el número de bits por muestra que usa el dispositivo para la grabación. Esta marca solo se aplica a los dispositivos que admiten el &quot; algoritmo &quot; pcm.</td>
 </tr>
 <tr class="even">
-<td>saltos de audio</td>
-<td>Devuelve el número de veces que se interrumpió la parte de audio de la última secuencia AVI. El sistema cuenta una interrupción de audio cada vez que intenta escribir datos de audio en el controlador del dispositivo y detecta que el controlador ya ha reproducidos todos los datos disponibles. Esta marca solo la reconoce el controlador de vídeo digital MCIAVI. Está pensado solo para la evaluación del rendimiento; el valor devuelto es difícil de interpretar.</td>
+<td>pausas de audio</td>
+<td>Devuelve el número de veces que se interrumpió la parte de audio de la última secuencia AVI. El sistema cuenta una interrupción de audio cada vez que intenta escribir datos de audio en el controlador del dispositivo y detecta que el controlador ya ha reproducidos todos los datos disponibles. Esta marca solo la reconoce el controlador de vídeo digital MCIAVI. Está pensado solo para la evaluación del rendimiento; El valor devuelto es difícil de interpretar.</td>
 </tr>
 <tr class="odd">
-<td>bytes de audiopersec</td>
+<td>audio bytespersec</td>
 <td>Devuelve el número medio de bytes por segundo usados para la grabación.</td>
 </tr>
 <tr class="even">
 <td>entrada de audio</td>
-<td>Devuelve el nivel de audio instantáneo aproximado de la señal de audio de entrada análoga. Un valor mayor que 1000 implica distorsión de recorte. Algunos dispositivos solo pueden devolver este valor durante la grabación de audio. El valor no tiene ningún <a href="set.md">conjunto o</a> <a href="setaudio.md">comando setaudio</a> asociado.</td>
+<td>Devuelve el nivel de audio instantáneo aproximado de la señal de audio de entrada análoga. Un valor mayor que 1000 implica la distorsión del recorte. Algunos dispositivos solo pueden devolver este valor durante la grabación de audio. El valor no tiene ningún <a href="set.md">comando set</a> <a href="setaudio.md">o setaudio</a> asociado.</td>
 </tr>
 <tr class="odd">
 <td>monitor de audio</td>
-<td>Devuelve &quot; la salida o uno de los tipos de entrada de origen &quot; válidos. Para obtener más información, vea el <strong>comando setaudio</strong> &quot; &quot; monitor.</td>
+<td>Devuelve &quot; la salida o uno de los tipos de entrada de origen &quot; válidos. Para más información, consulte el <strong>comando setaudio</strong> &quot; &quot; monitor.</td>
 </tr>
 <tr class="even">
 <td>número de monitor de audio</td>
-<td>Devuelve el número de vídeo supervisado del tipo especificado por el monitor <strong>de</strong> &quot; audio de estado &quot; . Para obtener más información, vea el <a href="setaudio.md">comando setaudio.</a></td>
+<td>Devuelve el número de vídeo supervisado del <strong></strong> tipo especificado por el &quot; monitor de audio de estado &quot; . Para obtener más información, vea el <a href="setaudio.md">comando setaudio.</a></td>
 </tr>
 <tr class="odd">
 <td>registro de audio</td>
-<td>Devuelve &quot; on o off , que refleja el estado establecido por el registro &quot; &quot; &quot; <strong>setaudio</strong> &quot; &quot; .</td>
+<td>Devuelve &quot; on o off , lo que refleja el estado establecido por &quot; &quot; &quot; <strong>setaudio</strong> &quot; record &quot; .</td>
 </tr>
 <tr class="even">
 <td>número de pista de la grabación de <em>audio</em></td>
 <td>Devuelve <strong>TRUE</strong> si vcr está establecido para grabar audio. Si no se da ningún número de pista, se supone que el valor predeterminado es 1.</td>
 </tr>
 <tr class="odd">
-<td>ejemplos de audiopersec</td>
-<td>Devuelve el número de muestras por segundo grabado.</td>
+<td>audio samplespersec</td>
+<td>Devuelve el número de muestras por segundo grabadas.</td>
 </tr>
 <tr class="even">
 <td>origen de audio</td>
-<td>Devuelve el origen actual del digitalizador de audio: &quot; left &quot; , &quot; &quot; right, average o &quot; &quot; &quot; &quot; stereo.</td>
+<td>Devuelve el origen actual del digitalizador de audio: &quot; left , right , average o &quot; &quot; &quot; &quot; &quot; &quot; &quot; stereo.</td>
 </tr>
 <tr class="odd">
 <td>número de origen de audio</td>
@@ -382,7 +382,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>Bajo</td>
-<td>Devuelve el nivel de audio-sonido actual.</td>
+<td>Devuelve el nivel de audio-graves actual.</td>
 </tr>
 <tr class="even">
 <td>bitsperpel</td>
@@ -390,7 +390,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>bitspersample</td>
-<td>Devuelve los bits por muestra.</td>
+<td>Devuelve los bits por ejemplo.</td>
 </tr>
 <tr class="even">
 <td>luminosidad</td>
@@ -398,19 +398,19 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>bytespersec</td>
-<td>Devuelve el número medio de bytes por segundo que se reproducen o se registran.</td>
+<td>Devuelve el número medio de bytes por segundo reproducdos o registrados.</td>
 </tr>
 <tr class="even">
-<td>cdaudio type track <em>number</em></td>
+<td>Número de <em></em> pista de tipo cdaudio</td>
 <td>Devuelve el tipo del número de pista especificado. Puede ser &quot; audio &quot; u &quot; otro.&quot;</td>
 </tr>
 <tr class="odd">
 <td>canal</td>
-<td>Devuelve el valor entero del canal establecido en el afinador.</td>
+<td>Devuelve el valor entero del canal establecido en el tuner.</td>
 </tr>
 <tr class="even">
 <td>número de tuner de <em>canal</em></td>
-<td>Si &quot; se da el &quot; <em>número</em> de afinador, se devolverá el canal seleccionado actualmente en el número de <em>afinador</em> lógico. Tenga en cuenta que puede haber varios afinadores lógicos.</td>
+<td>Si &quot; se da el &quot; <em>número</em> de tuner, se <em></em> devolverá el canal seleccionado actualmente en el número de tuner lógico. Tenga en cuenta que puede haber varios afinadores lógicos.</td>
 </tr>
 <tr class="odd">
 <td>canales nueva</td>
@@ -418,7 +418,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="even">
 <td>clock</td>
-<td>Devuelve la hora externa. El tiempo debe ser un entero largo sin signo que exprese incrementos totales. Para obtener más información, consulte el comando <a href="capability.md">de velocidad</a> de incremento del reloj &quot; de &quot; funcionalidad.</td>
+<td>Devuelve la hora externa. El tiempo debe ser un entero largo sin signo que exprese incrementos totales. Para más información, consulte el comando <a href="capability.md">de velocidad</a> de incremento del reloj &quot; de &quot; funcionalidad.</td>
 </tr>
 <tr class="odd">
 <td>id. de reloj</td>
@@ -454,7 +454,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>unidad de espacio en <em>disco</em></td>
-<td>Devuelve el espacio en disco aproximado, en el formato de hora actual, que se puede obtener mediante un comando <a href="reserve.md">reserve</a> para la unidad de disco <em>especificada.</em> La <em>unidad</em> normalmente se especifica como una sola letra o una sola letra seguida de dos puntos (:). Sin embargo, algunos dispositivos pueden usar una ruta de acceso.</td>
+<td>Devuelve el espacio en disco aproximado, en el formato de hora actual, que se puede obtener mediante un comando <a href="reserve.md">reserve</a> para la unidad de disco <em>especificada.</em> <em>Normalmente,</em> la unidad se especifica como una sola letra o una sola letra seguida de dos puntos (:). Sin embargo, algunos dispositivos pueden usar una ruta de acceso.</td>
 </tr>
 <tr class="even">
 <td>tipo de división</td>
@@ -578,11 +578,11 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="even">
 <td>offset</td>
-<td>Devuelve el desplazamiento de un archivo basado en SMPTE. El desplazamiento es la hora de inicio de una secuencia basada en SMPTE. La hora se devuelve como <em>hh:mm:ss:ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, <em>ss</em> es segundos y <em>ff</em> es fotogramas.</td>
+<td>Devuelve el desplazamiento de un archivo basado en SMPTE. El desplazamiento es la hora de inicio de una secuencia basada en SMPTE. La hora se devuelve <em>como hh:mm:ss:ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, <em>ss</em> es segundos y <em>ff</em> es marcos.</td>
 </tr>
 <tr class="odd">
 <td>output</td>
-<td>Devuelve la salida establecida actualmente. Si no se establece ninguna salida, el error devuelto indica que se puede usar cualquier dispositivo. En el caso de los dispositivos de vídeo digital, modifica los marcadores de &quot; &quot; sonido, &quot; &quot; treble, &quot; &quot; &quot; &quot; volumen, brillo, &quot; &quot; &quot; &quot; color, &quot; contraste, &quot; &quot; &quot; gamma, &quot; &quot; nidez o tono para que se aplique solo a la salida. Este es el valor predeterminado al supervisar un archivo.</td>
+<td>Devuelve la salida establecida actualmente. Si no se establece ninguna salida, el error devuelto indica que se puede usar cualquier dispositivo. En el caso de los dispositivos de vídeo digital, modifica la marca de &quot; &quot; bajo, &quot; treble, volumen &quot; , &quot; &quot; &quot; &quot; brillo, &quot; &quot; &quot; &quot; color, &quot; &quot; contraste, &quot; &quot; gamma, &quot; &quot; niticidad o tono para que se aplique solo a la salida. Este es el valor predeterminado al supervisar un archivo.</td>
 </tr>
 <tr class="even">
 <td>modo de pausa</td>
@@ -594,31 +594,31 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="even">
 <td>formato de reproducción</td>
-<td>Devuelve un código que indica el formato en el que se reproducirá la cinta de vídeo, si se puede detectar: &quot; lp , ep , sp u otro &quot; &quot; &quot; &quot; &quot; &quot; &quot; . Para obtener más información, vea la &quot; marca de formato de &quot; registro.</td>
+<td>Devuelve un código que indica el formato en el que se reproducirá la cinta de vídeo, si se puede detectar: &quot; lp , ep , sp u otros &quot; &quot; &quot; &quot; &quot; &quot; &quot; . Para obtener más información, vea la &quot; marca de formato de &quot; registro.</td>
 </tr>
 <tr class="odd">
 <td>velocidad de reproducción</td>
-<td>Devuelve un valor que representa la cantidad de tiempo de reproducción real de la última secuencia AVI que coincide con la hora de reproducción de destino. El valor 1000 indica que la hora de destino y la hora real eran las mismas. Un valor de 2000, por ejemplo, indicaría que la secuencia AVI tardó el doble de tiempo en reproducirse como debería. Esta marca solo la reconoce el controlador de vídeo digital MCIAVI. Está pensado solo para la evaluación del rendimiento; el valor devuelto es difícil de interpretar.</td>
+<td>Devuelve un valor que representa la coincidencia real del tiempo de reproducción real de la última secuencia AVI con el tiempo de reproducción de destino. El valor 1000 indica que la hora de destino y la hora real eran las mismas. Un valor de 2000, por ejemplo, indicaría que la secuencia AVI tardó el doble de tiempo en reproducirse como debería. Esta marca solo la reconoce el controlador de vídeo digital MCIAVI. Está pensado solo para la evaluación del rendimiento; El valor devuelto es difícil de interpretar.</td>
 </tr>
 <tr class="even">
 <td>port</td>
-<td>Devuelve el número de puerto de MIDI asignado a la secuencia.</td>
+<td>Devuelve el número de puerto MIDI asignado a la secuencia.</td>
 </tr>
 <tr class="odd">
 <td>position</td>
-<td>Devuelve la posición actual. En el caso de los archivos PPQN, la posición se devuelve en unidades de puntero de canción. En el caso de los archivos SMPTE, se devuelve como <em>hh:mm:ss:ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, ss es segundos y <em>ff</em> es fotogramas.<br/></td>
+<td>Devuelve la posición actual. Para los archivos PPQN, la posición se devuelve en unidades de puntero de canción. En el caso de los archivos SMPTE, se devuelve como <em>hh:mm:ss:ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, ss es segundos y <em>ff</em> es marcos.<br/></td>
 </tr>
 <tr class="even">
-<td>inicio de posición</td>
+<td>position start</td>
 <td>Devuelve la posición del inicio del medio utilizable.</td>
 </tr>
 <tr class="odd">
 <td>número de seguimiento de <em>posición</em></td>
-<td>Devuelve la posición del inicio de la pista especificada por <em>el número</em>. En el caso de los archivos PPQN, el formato de hora se devuelve en unidades de puntero de canción. En el caso de los archivos SMPTE, se devuelve como <em>hh:mm:ss:ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, <em>ss</em> es segundos y <em>ff</em> es fotogramas. El secuenciador MCISEQ devuelve cero. El dispositivo MCIPIONR no admite esta marca. El dispositivo MCIWAVE devuelve cero.</td>
+<td>Devuelve la posición del inicio de la pista especificada por <em>número</em>. Para los archivos PPQN, el formato de hora se devuelve en unidades de puntero de canción. En el caso de los archivos SMPTE, se devuelve como <em>hh:mm:ss:ff</em>, donde <em>hh</em> es horas, <em>mm</em> es minutos, <em>ss</em> es segundos y <em>ff</em> es marcos. El secuenciador MCISEQ devuelve cero. El dispositivo MCIPIONR no admite esta marca. El dispositivo MCIWAVE devuelve cero.</td>
 </tr>
 <tr class="even">
 <td>duración del postroll</td>
-<td>Devuelve la longitud de la cinta de vídeo, en el formato <a href="stop.md"><strong></strong></a> de <a href="pause.md"><strong></strong></a> hora actual, necesaria para interrumpir el transporte de VCR cuando se emite un comando de detenerse o pausar.</td>
+<td>Devuelve la longitud de la cinta de vídeo, en el formato de <a href="pause.md"><strong></strong></a> hora actual, necesaria para interrumpir el transporte de VCR cuando se emite un comando <a href="stop.md"><strong>de</strong></a> detenerse o pausar.</td>
 </tr>
 <tr class="odd">
 <td>encendido</td>
@@ -634,11 +634,11 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="even">
 <td>formato de registro</td>
-<td>Devuelve un código que indica el formato en el que se grabará la cinta de vídeo. Los tipos de valor devueltos &quot; actuales son lp &quot; , ep , sp u otros &quot; &quot; &quot; &quot; &quot; &quot; . Estos formatos no son específicos de VHS y se pueden aplicar a cualquier VCR que tenga varios formatos de grabación seleccionables. El tipo sp es el formato de grabación más rápido y de mayor calidad y se usa como valor predeterminado en los &quot; &quot; VCR de formato único.</td>
+<td>Devuelve un código que indica el formato en el que se grabará la cinta de vídeo. Los tipos de valor devueltos &quot; actuales son lp &quot; , ep , sp u otros &quot; &quot; &quot; &quot; &quot; &quot; . Estos formatos no son específicos de VHS y se pueden aplicar a cualquier VCR que tenga varios formatos de grabación seleccionables. El tipo sp es el formato de grabación más rápido y de mayor calidad y se usa como valor &quot; &quot; predeterminado en vcr de formato único.</td>
 </tr>
 <tr class="odd">
-<td>velocidad de fotogramas de registro</td>
-<td>Devuelve la velocidad de fotogramas, en fotogramas por segundo multiplicada por 1000, utilizada para la compresión.</td>
+<td>velocidad de fotogramas de registros</td>
+<td>Devuelve la velocidad de fotogramas, en fotogramas por segundo multiplicada por 1000, usada para la compresión.</td>
 </tr>
 <tr class="even">
 <td>marco de <em>referencia</em></td>
@@ -649,24 +649,24 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 <td>Devuelve el tamaño, en el formato de hora actual, del área de trabajo reservada. El tamaño corresponde al tiempo aproximado que se tardaría en reproducir los datos comprimidos desde un área de trabajo completa. Devuelve cero si no hay espacio en disco reservado. Esta marca devuelve el tamaño aproximado porque el espacio en disco preciso para los datos comprimidos no se puede predecir, en general, hasta después de que se hayan comprimido los datos.</td>
 </tr>
 <tr class="even">
-<td>volumen derecho</td>
+<td>volumen correcto</td>
 <td>Devuelve el conjunto de volúmenes para el canal de audio correcto.</td>
 </tr>
 <tr class="odd">
 <td>samplespersec</td>
-<td>Devuelve el número de muestras por segundo reproducdas o registradas.</td>
+<td>Devuelve el número de muestras por segundo reproducdas o grabadas.</td>
 </tr>
 <tr class="even">
 <td>buscar exactamente</td>
-<td>Devuelve on o off , lo que indica si se establece o &quot; no la marca de búsqueda &quot; &quot; &quot; &quot; &quot; exacta.</td>
+<td>Devuelve on o off , que indica si se establece &quot; o no la marca de búsqueda &quot; &quot; &quot; &quot; &quot; exacta.</td>
 </tr>
 <tr class="odd">
 <td>Nitidez</td>
-<td>Devuelve el nivel de nidez actual del dispositivo.</td>
+<td>Devuelve el nivel de ni sharpness actual del dispositivo.</td>
 </tr>
 <tr class="even">
 <td>Lado</td>
-<td>Devuelve 1 o 2 para indicar qué lado del vídeodisc está cargado.</td>
+<td>Devuelve 1 o 2 para indicar qué lado del vídeodisc se carga.</td>
 </tr>
 <tr class="odd">
 <td>Esclavo</td>
@@ -674,7 +674,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="even">
 <td>Smpte</td>
-<td>Devuelve el código de tiempo de SMPTE asociado a la posición actual en el área de trabajo. Se trata de una cadena con el formato <em>dd:dd:dd:dd</em>, donde cada <em>d</em> denota un dígito de 0 a 9. Si los datos del área de trabajo no incluyen datos de código de tiempo, esta marca devuelve 00:00:00:00.</td>
+<td>Devuelve el código de tiempo de SMPTE asociado a la posición actual del área de trabajo. Se trata de una cadena con el formato <em>dd:dd:dd:dd,</em>donde cada <em>d</em> denota un dígito de 0 a 9. Si los datos del área de trabajo no incluyen datos de código de tiempo, esta marca devuelve 00:00:00:00.</td>
 </tr>
 <tr class="odd">
 <td>velocidad</td>
@@ -690,11 +690,11 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="even">
 <td>ajustar</td>
-<td>Devuelve <strong>TRUE si</strong> el stretch está habilitado.</td>
+<td>Devuelve <strong>TRUE</strong> si el stretching está habilitado.</td>
 </tr>
 <tr class="odd">
 <td>Tempo</td>
-<td>Devuelve el tempo actual de una secuencia MIDI en el formato de hora actual. En el caso de los archivos con formato PPQN, el tempo está en latidos por minuto. En el caso de los archivos con formato SMPTE, el tempo está en fotogramas por segundo.</td>
+<td>Devuelve el tempo actual de una secuencia MIDI en el formato de hora actual. En el caso de los archivos con formato PPQN, el tempo está en ritmos por minuto. En el caso de los archivos con formato SMPTE, el tempo está en fotogramas por segundo.</td>
 </tr>
 <tr class="even">
 <td>formato de hora</td>
@@ -710,7 +710,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 </tr>
 <tr class="odd">
 <td>código de tiempo presente</td>
-<td>Devuelve <strong>TRUE si</strong> el código de tiempo se ha registrado en la posición actual de la cinta. El código de tiempo debe avanzar desde la posición actual. Es posible que sea necesario reproducir un VCR para comprobar esta condición.</td>
+<td>Devuelve <strong>TRUE</strong> si el código de tiempo se ha registrado en la posición actual de la cinta. El código de tiempo debe avanzar desde la posición actual. Es posible que sea necesario reproducir un VCR para comprobar esta condición.</td>
 </tr>
 <tr class="even">
 <td>registro de código de tiempo</td>
@@ -820,7 +820,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 Devuelve información en el *parámetro lpszReturnString* [**de mciSendString**](/previous-versions//dd757161(v=vs.85)). La información depende del tipo de solicitud.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de emitir cualquier comando que use valores de posición, debe establecer el formato de hora deseado mediante el [comando set.](set.md)
 

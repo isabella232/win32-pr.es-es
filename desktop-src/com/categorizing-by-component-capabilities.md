@@ -4,12 +4,12 @@ description: Las categorías de componentes se pueden usar para mostrar un subco
 ms.assetid: 522af5d7-ba7b-4127-9cdb-48ef4d0f8e65
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 251e8197c00a39c8d9666dee7122be7445402fc84ce7b3508987bcf79f27df15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff44e03e9eae0226ac57279c37d4a5dfd32fc6bd
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048753"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369680"
 ---
 # <a name="categorizing-by-component-capabilities"></a>Categorización por funcionalidades de componentes
 

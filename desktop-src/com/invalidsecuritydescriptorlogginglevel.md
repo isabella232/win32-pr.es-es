@@ -6,12 +6,12 @@ keywords:
 - Valor del Registro COM InvalidSecurityDescriptorLoggingLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c2362b38c19acd8d895e5fa9640475fa401a7d5bd88c8016056df2d22c3a579
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25ac333a7cb8b54f383f93a71131cbb0a9314466
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119854345"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369664"
 ---
 # <a name="invalidsecuritydescriptorlogginglevel"></a>InvalidSecurityDescriptorLoggingLevel
 
@@ -24,13 +24,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
    InvalidSecurityDescriptorLoggingLevel = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ REG DWORD.**
 
 
 
-| Valor | Descripción                                                                                                                                                                    |
+| Value | Descripción                                                                                                                                                                    |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | Registra siempre errores cuando COM encuentra un descriptor de seguridad no válido. Este es el valor predeterminado.                                                                                  |
 | 2     | Nunca registre errores cuando COM encuentre un descriptor de seguridad no válido. No se recomienda deshabilitar el registro de eventos, ya que puede dificultar el diagnóstico de problemas. |

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3270dce8b2127cce783c7c3b8bf21102590cd3e82d74a3e990a3117c59772381
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41b4d630dbc9dbc7403e93cd0bda3de2eef1e5cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783695"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370069"
 ---
 # <a name="mci_window-command"></a>Comando VENTANA de MCI \_
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los dispositivos gráficos deben crear una ventana predeterminada cuando se abre un dispositivo, pero no deben mostrarla hasta que reciban el [comando MCI \_ PLAY.](mci-play.md) El comando WINDOW de MCI se usa para proporcionar una ventana creada por la aplicación al dispositivo y para cambiar las características de visualización de una ventana de presentación predeterminada o definida \_ por la aplicación. Si la aplicación proporciona la ventana de presentación, debe estar preparada para actualizar un rectángulo no válido en la ventana.
 
@@ -124,7 +124,7 @@ El identificador de la ventana utilizada para el destino se incluye en el **miem
 
 </dd> <dt>
 
-<span id="MCI_OVLY_WINDOW_STATE"></span><span id="mci_ovly_window_state"></span>ESTADO DE VENTANA DE MCI \_ OVLY \_ \_
+<span id="MCI_OVLY_WINDOW_STATE"></span><span id="mci_ovly_window_state"></span>ESTADO DE VENTANA DE MCI \_ \_ \_ OVLY
 </dt> <dd>
 
 El **miembro nCmdShow** de la estructura *lpWindow* contiene parámetros para establecer el estado de la ventana. Esta marca equivale a llamar a [ShowWindow con](/windows/win32/api/winuser/nf-winuser-showwindow) el *parámetro state.* Las constantes son las mismas que las definidas en WINDOWS. H (como SW \_ HIDE, SW \_ MINIMIZE o SW \_ SHOWNORMAL).
@@ -156,7 +156,7 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpWin
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

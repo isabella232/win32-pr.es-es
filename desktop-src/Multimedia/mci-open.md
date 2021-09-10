@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a84c95df35ecd602c207daa716b62d90f6bdc79b0ede7f937d3a38e6d6a9373b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14d8b33e70a2e061b54260aeffc6e69432c469f5
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689985"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370021"
 ---
 # <a name="mci_open-command"></a>Comando MCI \_ OPEN
 
@@ -60,23 +60,23 @@ MCI \_ NOTIFY o MCI \_ WAIT. Para obtener información sobre estas marcas, vea [
 <span id="lpOpen"></span><span id="lpopen"></span><span id="LPOPEN"></span>*lpOpen*
 </dt> <dd>
 
-Puntero a una [**estructura MCI \_ OPEN \_ PARMS.**](mci-open-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura MCI \_ OPEN \_ PARMS.**](mci-open-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La marca MCI OPEN TYPE debe usarse siempre que se especifique un \_ dispositivo en la función \_ [**mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Si abre un dispositivo especificando una constante de tipo de dispositivo, debe especificar la marca MCI OPEN TYPE ID además \_ \_ de \_ MCI OPEN \_ \_ TYPE. Para obtener una lista de constantes de tipo de dispositivo, vea [Tipos de dispositivo MCI.](mci-device-types.md)
+La marca MCI OPEN TYPE debe usarse siempre que se especifique un dispositivo \_ \_ en la función [**mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Si abre un dispositivo especificando una constante de tipo de dispositivo, debe especificar la marca MCI OPEN TYPE ID además \_ \_ de \_ MCI OPEN \_ \_ TYPE. Para obtener una lista de constantes de tipo de dispositivo, vea [Tipos de dispositivo de MCI.](mci-device-types.md)
 
-Si no se especifica la marca MCI OPEN SHAREABLE cuando se abre inicialmente un dispositivo o archivo, se producirá un error en todos los comandos MCI OPEN subsiguientes en el dispositivo o \_ \_ \_ archivo. Si el dispositivo o archivo ya está abierto y no se especifica esta marca, se producirá un error en la llamada aunque el primer comando open haya especificado MCI \_ OPEN \_ SHAREABLE. Archivos abiertos para MCISEQ. DRV y MCIWAVE. Los dispositivos DRV no pueden compartirse.
+Si no se especifica la marca MCI OPEN SHAREABLE cuando se abre inicialmente un dispositivo o archivo, se producirá un error en todos los comandos MCI OPEN subsiguientes en el dispositivo o \_ \_ \_ archivo. Si el dispositivo o archivo ya está abierto y no se especifica esta marca, se producirá un error en la llamada incluso si el primer comando open especificó MCI \_ OPEN \_ SHAREABLE. Archivos abiertos para MCISEQ. DRV y MCIWAVE. Los dispositivos DRV no son compartidos.
 
 Case se omite en el nombre del dispositivo, pero no puede haber espacios en blanco iniciales o finales.
 
-Para usar la selección automática de tipos (a través de las entradas del Registro), asigne el nombre de archivo y la extensión de archivo al miembro **lpstrElementName** de la estructura identificada por *lpOpen,* establezca el miembro **lpstrDeviceType** en **NULL** y establezca la marca \_ MCI OPEN \_ ELEMENT.
+Para usar la selección automática de tipos (a través de las entradas del Registro), asigne el nombre de archivo y la extensión de archivo al miembro **lpstrElementName** de la estructura identificada por *lpOpen*, establezca el miembro **lpstrDeviceType** en **NULL** y establezca la marca \_ MCI OPEN \_ ELEMENT.
 
 Las siguientes marcas adicionales se aplican a todos los dispositivos que admiten MCI \_ OPEN:
 
@@ -85,7 +85,7 @@ Las siguientes marcas adicionales se aplican a todos los dispositivos que admite
 <span id="MCI_OPEN_ALIAS"></span><span id="mci_open_alias"></span>ALIAS DE MCI \_ OPEN \_
 </dt> <dd>
 
-Se incluye un alias en el **miembro lpstrAlias** de la estructura identificada por *lpOpen*.
+Se incluye un alias en el **miembro lpstrAlias** de la estructura identificada por *lpOpen.*
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ El dispositivo o archivo debe abrirse como compartible.
 
 </dd> <dt>
 
-<span id="MCI_OPEN_TYPE"></span><span id="mci_open_type"></span>MCI \_ OPEN \_ TYPE
+<span id="MCI_OPEN_TYPE"></span><span id="mci_open_type"></span>TIPO OPEN DE MCI \_ \_
 </dt> <dd>
 
 Se incluye un nombre de tipo de dispositivo o una constante en el **miembro lpstrDeviceType** de la estructura identificada *por lpOpen*.
@@ -114,17 +114,17 @@ Las siguientes marcas adicionales se aplican a los dispositivos compuestos:
 
 <dl> <dt>
 
-<span id="MCI_OPEN_ELEMENT"></span><span id="mci_open_element"></span>ELEMENTO OPEN de MCI \_ \_
+<span id="MCI_OPEN_ELEMENT"></span><span id="mci_open_element"></span>ELEMENTO OPEN DE MCI \_ \_
 </dt> <dd>
 
-Se incluye un nombre de archivo en el **miembro lpstrElementName** de la estructura identificada *por lpOpen*.
+Se incluye un nombre de archivo en el **miembro lpstrElementName** de la estructura identificada por *lpOpen*.
 
 </dd> <dt>
 
 <span id="MCI_OPEN_ELEMENT_ID"></span><span id="mci_open_element_id"></span>MCI \_ OPEN \_ ELEMENT \_ ID
 </dt> <dd>
 
-El **miembro lpstrElementName** de la estructura identificada por *lpOpen* se interpreta como un valor **DWORD** y tiene significado interno para el dispositivo. Use esta marca con la marca \_ MCI OPEN \_ ELEMENT.
+El **miembro lpstrElementName** de la estructura identificada por *lpOpen* se interpreta como un **valor DWORD** y tiene un significado interno para el dispositivo. Use esta marca con la marca MCI \_ OPEN \_ ELEMENT.
 
 </dd> </dl>
 
@@ -142,7 +142,7 @@ El dispositivo debe reducir el número de colores estáticos (del sistema) en la
 <span id="MCI_DGV_OPEN_PARENT"></span><span id="mci_dgv_open_parent"></span>MCI \_ DGV \_ OPEN \_ PARENT
 </dt> <dd>
 
-El identificador de ventana primaria se especifica en el **miembro hWndParent** de la estructura identificada *por lpOpen*.
+El identificador de ventana primario se especifica en el **miembro hWndParent** de la estructura identificada por *lpOpen*.
 
 </dd> <dt>
 
@@ -163,20 +163,20 @@ Indica una preferencia para la compatibilidad con dispositivos MCI de 16 bits.
 <span id="MCI_DGV_OPEN_32BIT"></span><span id="mci_dgv_open_32bit"></span>MCI \_ DGV \_ OPEN \_ 32BIT
 </dt> <dd>
 
-Indica una preferencia para la compatibilidad con dispositivos MCI de 32 bits.
+Indica una preferencia por la compatibilidad con dispositivos MCI de 32 bits.
 
 </dd> </dl>
 
 En el caso de los dispositivos de vídeo digital, el parámetro *lpOpen* apunta a una estructura [**MCI \_ DGV \_ OPEN \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_open_parmsa)
 
-Las siguientes marcas adicionales se usan con el tipo **de dispositivo superpuesto:**
+Las siguientes marcas adicionales se usan con el tipo **de dispositivo de** superposición:
 
 <dl> <dt>
 
 <span id="MCI_OVLY_OPEN_PARENT"></span><span id="mci_ovly_open_parent"></span>MCI \_ OVLY \_ OPEN \_ PARENT
 </dt> <dd>
 
-El identificador de ventana primaria se especifica en el **miembro hWndParent** de la estructura identificada *por lpOpen*.
+El identificador de ventana primario se especifica en el **miembro hWndParent** de la estructura identificada por *lpOpen*.
 
 </dd> <dt>
 
@@ -200,7 +200,7 @@ Se especifica una longitud de búfer en el **miembro dwBufferSeconds** de la est
 
 </dd> </dl>
 
-En el caso de los dispositivos de audio de forma de onda, el parámetro *lpOpen* apunta a una estructura [**\_ MCI WAVE \_ OPEN \_ PARMS.**](mci-wave-open-parms.md) El controlador MCIWAVE requiere un dispositivo asincrónico de audio y forma de onda.
+En el caso de los dispositivos de audio de forma de onda, el parámetro *lpOpen* apunta a una [**estructura \_ MCI WAVE \_ OPEN \_ PARMS.**](mci-wave-open-parms.md) El controlador MCIWAVE requiere un dispositivo asincrónico de audio de forma de onda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -218,7 +218,7 @@ En el caso de los dispositivos de audio de forma de onda, el parámetro *lpOpen*
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

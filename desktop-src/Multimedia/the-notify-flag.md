@@ -6,12 +6,12 @@ keywords:
 - MCI_NOTIFY marca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbec671a9810d31078eedf9b8557bcdc4fa7c3e82f688b7fd005f85cb4127476
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9093e539becb4ba2f09b48d628a57d8243bd837c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688275"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369860"
 ---
 # <a name="the-notify-flag"></a>La marca Notify
 

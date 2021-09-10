@@ -6,12 +6,12 @@ keywords:
 - Com de clave del Registro AppID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da7eb6e15c858a2bf0ecbb1b71589a8d7c471f317ac5deca792f2d07b680bcf8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b283a9cc47907cf418c2d7d6d613d151c7e5c5e6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119859715"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369536"
 ---
 # <a name="appid-key"></a>Clave appID
 
@@ -25,7 +25,7 @@ Agrupa las opciones de configuración de uno o varios objetos DCOM en una ubicac
 
 | Valor del Registro                                           | Descripción                                                                                                                                                                                                     |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AccessPermission**](accesspermission.md)             | Describe la lista Access Control (ACL) de las entidades de seguridad que pueden tener acceso a instancias de esta clase. Esta ACL solo la usan las aplicaciones que no llaman a [**CoInitializeSecurity.**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) |
+| [**AccessPermission**](accesspermission.md)             | Describe la lista Access Control (ACL) de las entidades de seguridad que pueden tener acceso a las instancias de esta clase. Esta ACL solo la usan las aplicaciones que no llaman a [**CoInitializeSecurity.**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) |
 | [**ActivateAtStorage**](activateatstorage.md)           | Configura el cliente para crear instancias de objetos en el mismo equipo que el estado persistente que usan o desde el que se inicializan.                                                                    |
 | [**Appid**](appid.md)                                   | Identifica el GUID de AppID que corresponde al ejecutable con nombre.                                                                                                                                             |
 | [**AppIDFlags**](appidflags.md)                         | Configura cómo un cliente inicia o enlaza un servidor COM configurado para ejecutarse como "usuario interactivo" en un escritorio no predeterminado.                                                              |
@@ -47,7 +47,7 @@ Agrupa las opciones de configuración de uno o varios objetos DCOM en una ubicac
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los appID se asignan a ejecutables y clases mediante dos mecanismos diferentes:
 
@@ -56,7 +56,7 @@ Los appID se asignan a ejecutables y clases mediante dos mecanismos diferentes:
 
 La **clave HKEY \_ LOCAL MACHINE \_ SOFTWARE \\ \\ Classes** corresponde a la clave RAÍZ **HKEY \_ CLASSES, \_** que se conservaba por compatibilidad con versiones anteriores de COM.
 
-En el caso de los servidores COM, la asignación normalmente se genera y escribe en el Registro durante el proceso de registro o al ejecutar dcomcnfg.exe. Sin embargo, los clientes COM que desean establecer la seguridad mediante la clave [](/windows/desktop/SysInfo/registry-functions) **AppID** deben crear las claves del Registro adecuadas y especificar la asignación necesaria llamando a las funciones del Registro o usando Regedit.exe. A continuación, se pueden establecer valores como [**AccessPermission**](accesspermission.md) [**o AuthenticationLevel**](authenticationlevel.md) para el cliente. Por ejemplo, suponga que el nombre del ejecutable para el proceso de cliente es "YourClient.exe" y desea establecer el nivel de autenticación en "None". Usaría Guidgen.exe o Uuidgen.exe para crear el GUID que es el AppID del ejecutable. A continuación, establecería valores en el Registro como se muestra en el ejemplo siguiente, donde 00000001 representa un nivel de autenticación de "None":
+En el caso de los servidores COM, la asignación normalmente se genera y escribe en el Registro durante el proceso de registro o al ejecutar dcomcnfg.exe. Sin embargo, los clientes COM que desean establecer la seguridad mediante la clave [](/windows/desktop/SysInfo/registry-functions) **AppID** deben crear las claves del Registro adecuadas y especificar la asignación necesaria llamando a las funciones del Registro o Regedit.exe. A continuación, se pueden establecer valores como [**AccessPermission**](accesspermission.md) [**o AuthenticationLevel**](authenticationlevel.md) para el cliente. Por ejemplo, suponga que el nombre del ejecutable para el proceso de cliente es "YourClient.exe" y desea establecer el nivel de autenticación en "None". Usaría Guidgen.exe o Uuidgen.exe para crear el GUID que es el AppID del ejecutable. A continuación, establecería valores en el Registro como se muestra en el ejemplo siguiente, donde 00000001 representa un nivel de autenticación de "None":
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID

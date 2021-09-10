@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e8e867098438a9df0be03646d85ff33fe857b285d0fda2763a3cecd46075f8c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d1e93890b8c3db1150bc7224b0fd8b6ee7475ced
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039215"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369931"
 ---
 # <a name="mci_index-command"></a>Comando MCI \_ INDEX
 
@@ -60,17 +60,17 @@ MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Para obtener información sobre estas 
 <span id="lpIndex"></span><span id="lpindex"></span><span id="LPINDEX"></span>*lpIndex*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La información presentada en la pantalla se controla mediante la marca \_ MCI VCR \_ SET INDEX del comando \_ [MCI \_ SET.](mci-set.md)
+La información presentada en la pantalla se controla mediante la marca \_ MCI VCR \_ SET INDEX en el comando \_ [MCI \_ SET.](mci-set.md)
 
 Las siguientes marcas adicionales se aplican a los dispositivos VCR:
 
@@ -106,7 +106,7 @@ Activa la pantalla en pantalla.
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

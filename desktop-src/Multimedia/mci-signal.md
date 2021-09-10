@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fda7585ad63415f888f5971397df2b27c23710864ea21a8ed5e6ebce1a7c66f3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 711238d73ee40f5809f15a2d6df93183fb17bf67
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689845"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370100"
 ---
 # <a name="mci_signal-command"></a>Comando MCI \_ SIGNAL
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI DGV \_ SIGNAL \_ PARMS.**](/windows/desktop/a
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La ventana cuyo identificador especifique en el **miembro dwCallback** de la estructura [**MCI \_ DGV \_ SIGNAL \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_signal_parms) recibe el mensaje MM \_ MCISIGNAL.
 
@@ -115,7 +115,7 @@ Se incluye un valor de datos en el **miembro dwUserParm** de la estructura ident
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -127,7 +127,7 @@ Se incluye un valor de datos en el **miembro dwUserParm** de la estructura ident
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

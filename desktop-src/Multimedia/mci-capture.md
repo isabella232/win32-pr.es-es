@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cc6bc6e31fd66153a8ea867f56a4e2638ad1f3392a284a61818e521327e52d6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 041954d786b007023226fb5d3febf4747c0121e2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039455"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369913"
 ---
 # <a name="mci_capture-command"></a>Comando MCI \_ CAPTURE
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI DGV \_ CAPTURE \_ PARMS.**](/windows/desktop/
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digital:
 
@@ -104,7 +104,7 @@ El **miembro rc** de la estructura identificada por *lpCapture* contiene un rect
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

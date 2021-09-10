@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8423e63c7e155c072b496a9bf13c332619f96e8c6780cac6fae266f6a924c9f6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f65f978c13fc1b3fbf86266c35786b21612c4e7c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039145"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370214"
 ---
 # <a name="mci_msf_minute-macro"></a>Macro MCI \_ MSF \_ MINUTE
 
@@ -51,7 +51,7 @@ Hora en formato MSF.
 
 Devuelve el componente minutes de la información de MSF especificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tiempo en formato MSF se expresa como un valor **DWORD** con el byte menos significativo que contiene minutos, el siguiente byte menos significativo que contiene segundos y el siguiente byte menos significativo que contiene fotogramas. El byte más significativo no se usa.
 
@@ -80,7 +80,7 @@ La **macro MCI \_ MSF \_ MINUTE** se define de la siguiente manera:
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [MCI Macros](mci-macros.md)

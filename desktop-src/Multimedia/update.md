@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1a5f4f185c16e0ba499e75ed9f445aaf87b9e346dbde9a7929035613f4744ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5cb0fc96d404efd8e2f657985ffa5a8861d3b4f4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119804705"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370159"
 ---
 # <a name="update-command"></a>comando update
 
@@ -53,7 +53,7 @@ Identificador de un controlador de dominio. En la tabla siguiente se enumeran lo
 
 
 
-| Valor        | Significado                       | Significado         |
+| Value        | Significado                       | Significado         |
 |--------------|-------------------------------|-----------------|
 | digitalvideo | hdc *hdc* hdc *hdc* at *rect* | paint hdc *hdc* |
 
@@ -65,10 +65,10 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 
 
 
-| Valor               | Significado                                                                                                |
+| Value               | Significado                                                                                                |
 |---------------------|--------------------------------------------------------------------------------------------------------|
 | hdc *hdc*           | Especifica el identificador del controlador de dominio que se pintará.                                                               |
-| hdc *hdc* at *rect* | Especifica el rectángulo de recorte relativo al rectángulo de cliente.                                     |
+| hdc *hdc* at *rect* | Especifica el rectángulo de recorte relativo al rectángulo del cliente.                                     |
 | paint hdc *hdc*     | Pinta el controlador de dominio cuando la aplicación recibe un [**mensaje \_ WM PAINT**](/windows/desktop/gdi/wm-paint) destinado a un controlador de dominio. |
 
 
@@ -113,7 +113,7 @@ update movie hdc 203
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

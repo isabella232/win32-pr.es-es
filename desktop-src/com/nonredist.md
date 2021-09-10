@@ -6,12 +6,12 @@ keywords:
 - VALOR DEL Registro NOREDISTA COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b303c145ea48a51f72d6ee21078b5f29a6b6d4fabc7184d4a37e980a2bbb2e4b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9d537208ecaf98cec46591966e4ae7d9c205850a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119678465"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369671"
 ---
 # <a name="nonredist"></a>NONREDIST
 
@@ -26,7 +26,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
       name2
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los archivos que agregue a la lista se representan mediante pares nombre-valor almacenados bajo esta clave. En cada par nombre-valor, el nombre es el nombre del archivo y el valor está reservado.
 

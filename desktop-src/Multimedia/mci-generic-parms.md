@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e2da55b721c7567b5fbc52d965cf753f896ee28fa4d76e094c7867434a69791
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1f96482ed5ec7e27253f234031cd099600bf1b6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784315"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369903"
 ---
 # <a name="mci_generic_parms-structure"></a>Estructura \_ \_ parms genéricos de MCI
 
@@ -47,7 +47,7 @@ La palabra de orden bajo especifica un identificador de ventana que se usa para 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las **estructuras MCI \_ CLOSE \_ PARMS** y **MCI REALIZE \_ \_ PARMS** son idénticas a la estructura **\_ MCI GENERIC \_ PARMS.**
 
@@ -69,7 +69,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

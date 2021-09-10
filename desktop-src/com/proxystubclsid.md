@@ -6,12 +6,12 @@ keywords:
 - Valor del Registro ProxyStubClsid COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93f86db768979a72d2d2f0b8c7a137d6b105f4a52d082ec50c6e78ba271fbca3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9adfbe319903b2e278be342d169a2e523c952693
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129997"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369591"
 ---
 # <a name="proxystubclsid"></a>ProxyStubClsid
 
@@ -25,9 +25,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
       ProxyStubClsid = {CLSID}
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se trata de **un valor \_ SZ reg** que especifica el CLSID para el IID.
+Se trata de **un valor \_ REG SZ** que especifica el CLSID para el IID.
 
 Si agrega interfaces, debe usar esta entrada para registrarlas (sistemas de 16 bits) para que OLE pueda encontrar el código de comunicación remota adecuado para establecer la comunicación entre procesos.
 

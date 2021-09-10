@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f99c8609b1364d374d91965816fde2d9c48b750d7bf0b3f6fb2957ed205a85a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f727fb6cf375e09a260ee68f62eac83816ff5d4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375477"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369827"
 ---
 # <a name="break-command"></a>comando break
 
@@ -53,7 +53,7 @@ Una de las marcas siguientes.
 
 
 
-| Valor                 | Significado                                                                         |
+| Value                 | Significado                                                                         |
 |-----------------------|---------------------------------------------------------------------------------|
 | en *el código de clave virtual* | Especifica la clave que anula un comando que se inició con la marca "wait". |
 | apagado                   | Deshabilita la clave de interrupción actual.                                                 |
@@ -73,15 +73,15 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se habilita la tecla de interrupción y el usuario presiona la tecla identificada por el código de clave virtual especificado en el parámetro *lpszVirtKey,* el dispositivo devuelve el control a la aplicación. Si es posible, el comando continúa la ejecución.
+Cuando la tecla de interrupción está habilitada y el usuario presiona la tecla identificada por el código de clave virtual especificado en el parámetro *lpszVirtKey,* el dispositivo devuelve el control a la aplicación. Si es posible, el comando continúa la ejecución.
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente establece F2 como clave de interrupción para el dispositivo "mysound".
+El comando siguiente establece F2 como clave de interrupción para el dispositivo "my sound".
 
 ``` syntax
 break mysound on 113
@@ -91,7 +91,7 @@ break mysound on 113
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -102,7 +102,7 @@ break mysound on 113
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

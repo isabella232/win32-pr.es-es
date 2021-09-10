@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55e82fdec2480cfe2fc1b41901872aef7e41ee468d1adc3924df17a27e40031e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e2d7f0f236b26e3e73807b32485442d597e93d40
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689195"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370250"
 ---
 # <a name="restore-command"></a>comando restore
 
@@ -53,7 +53,7 @@ Una o varias de las marcas siguientes.
 
 
 
-| Valor           | Significado                                                                                                                                                                                                                                                                                                                         |
+| Value           | Significado                                                                                                                                                                                                                                                                                                                         |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | en *rectángulo*  | Especifica un rectángulo relativo al origen del búfer de fotogramas. El *rectángulo* se especifica como *X1 Y1 X2 Y2.* Las coordenadas *X1 Y1 especifican* la esquina superior izquierda y las coordenadas *X2 Y2* especifican el ancho y el alto. Si no se usa esta marca, la imagen se copia en la esquina superior izquierda del búfer de fotogramas.<br/> |
 | desde nombre *de archivo* | Especifica el nombre de archivo de la imagen que se debe recuperar. Esta marca es obligatoria.                                                                                                                                                                                                                                                                  |
@@ -75,7 +75,7 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los dispositivos pueden reconocer diversos formatos de imagen. siempre Windows mapa de bits independiente del dispositivo.
 
@@ -94,7 +94,7 @@ Los dispositivos pueden reconocer diversos formatos de imagen. siempre Windows m
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

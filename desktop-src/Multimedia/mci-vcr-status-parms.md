@@ -1,6 +1,6 @@
 ---
 title: MCI_VCR_STATUS_PARMS estructura (Vcr.h)
-description: La estructura MCI VCR STATUS PARMS contiene parámetros para el comando \_ \_ \_ MCI \_ STATUS para las grabadoras de vídeo.
+description: La estructura MCI VCR STATUS PARMS contiene parámetros para el comando MCI STATUS para las \_ \_ \_ \_ grabadoras de vídeo.
 ms.assetid: 5d7cbb64-a81d-4bdd-8f07-8c20dd7b9ef5
 keywords:
 - MCI_VCR_STATUS_PARMS estructura Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8569a278f697ed816085c4fc8f313502d2994215519fb2452f82e63ce31a80cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0b197acfa0e170a9ab199cd6d6c51a64e14c320
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783925"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370111"
 ---
-# <a name="mci_vcr_status_parms-structure"></a>Estructura parms \_ de estado de VCR \_ \_ de MCI
+# <a name="mci_vcr_status_parms-structure"></a>Estructura MCI \_ VCR \_ STATUS \_ PARMS
 
-La **estructura MCI \_ VCR STATUS \_ \_ PARMS** contiene parámetros para el comando [**MCI \_ STATUS**](mci-status.md) para las grabadoras de vídeo.
+La **estructura MCI \_ VCR STATUS \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ STATUS**](mci-status.md) para las grabadoras de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ La palabra de orden bajo especifica un identificador de ventana que se usa para 
 **dwReturn**
 </dt> <dd>
 
-Valor devuelto por el [**comando STATUS \_ de MCI.**](mci-status.md) El valor devuelto varía según la consulta del comando. Para obtener más información, vea la descripción del [**comando STATUS \_ de MCI.**](mci-status-parms.md)
+Valor devuelto por el [**comando MCI \_ STATUS.**](mci-status.md) El valor devuelto varía según la consulta del comando. Para obtener más información, vea la descripción del [**comando MCI \_ STATUS.**](mci-status-parms.md)
 
 </dd> <dt>
 
@@ -68,18 +68,18 @@ Tipo de información solicitada.
 **dwTrack**
 </dt> <dd>
 
-Pista de audio o vídeo que almacenará información durante la siguiente grabación. Este miembro se usa para devolver información cuando el comando [**MCI \_ STATUS**](mci-status-parms.md) pregunta sobre el estado de grabación de audio o vídeo.
+Pista de audio o vídeo que almacenará información durante la siguiente grabación. Este miembro se usa para devolver información cuando el comando [**MCI \_ STATUS**](mci-status-parms.md) pregunta sobre el estado de grabación de vídeo o audio.
 
 </dd> <dt>
 
 **dwNumber**
 </dt> <dd>
 
-Afinador lógico al que está asociado el canal actual. Este miembro se usa para devolver información cuando el comando STATUS de [**MCI \_**](mci-status.md) pregunta sobre el número de canal actual.
+El afinador lógico al que está asociado el canal actual. Este miembro se usa para devolver información cuando el [**comando MCI \_ STATUS**](mci-status.md) pregunta sobre el número de canal actual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -99,7 +99,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

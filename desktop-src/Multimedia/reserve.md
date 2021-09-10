@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83f4573f5a630bbf1243b7126867c2d6c6beef61810210624fe87958e12b02ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f71889af552b9040777394047a0facfc6c81366
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892925"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370136"
 ---
 # <a name="reserve-command"></a>comando reserve
 
@@ -75,7 +75,7 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si es necesario, [los comandos de](record.md) registro [o](save.md) guardado posteriores usan el espacio reservado por este comando. Si el área de trabajo contiene datos no guardados, los datos se pierden. Algunos dispositivos no requieren reserva y la omiten. Si el espacio en disco no está reservado antes de la grabación, el comando record realiza una reserva implícita con marcas predeterminadas específicas del dispositivo. Use un comando de reserva explícito si desea un mejor control de cuándo se produce el retraso en la asignación de disco, el control de la cantidad de espacio asignado y el control de dónde se asigna el espacio en disco. La aplicación puede cambiar la cantidad y la ubicación del espacio en disco previamente reservado con los comandos de reserva posteriores. Cualquier espacio en disco asignado y sin usar no se desasigna hasta que se guarden los datos registrados o hasta que se cierre la instancia del dispositivo.
 
@@ -94,7 +94,7 @@ Si es necesario, [los comandos de](record.md) registro [o](save.md) guardado pos
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

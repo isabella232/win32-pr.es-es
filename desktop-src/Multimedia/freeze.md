@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 1261cc75575a5b59d200ff965a5325caef9fa966
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481561"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369884"
 ---
 # <a name="freeze-command"></a>comando freeze
 
@@ -54,7 +54,7 @@ Marca que identifica qué se debe inmovilizar. En la tabla siguiente se enumeran
 
 
 
-| Valor | Significado | Significado | 
+| Value | Significado | Significado | 
 |-------|---------|---------|
 | digitalvideo | en <em>rectángulo</em> | Fuera | 
 | overlay | en <em>rectángulo</em> | 
@@ -69,7 +69,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 
 
 
-| Valor          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Value          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | en *rectángulo* | Especifica la región que se inmovilizará. En el caso de los dispositivos de superposición de vídeo, esta región tendrá deshabilitada la adquisición de vídeo. En el caso de los dispositivos de vídeo digital, los píxeles dentro del rectángulo tendrán el bit de máscara de bloqueo activado (a menos que se especifique la marca "fuera"). El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2*. Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
 | campo          | Inmoviliza el primer campo. El campo se asume de forma predeterminada (si no se especifica ningún marco ni campo).                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -95,7 +95,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se usa con dispositivos VCR, este comando está pensado para tarjetas de captura de fotogramas.
 
@@ -115,14 +115,14 @@ freeze vboard at 0 0 100 100
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

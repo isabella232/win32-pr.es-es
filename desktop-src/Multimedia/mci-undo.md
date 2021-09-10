@@ -1,6 +1,6 @@
 ---
 title: MCI_UNDO comando (Mmsystem.h)
-description: El comando UNDO de MCI invierte el comando \_ MCI \_ CUT, MCI COPY, MCI DELETE o MCI PASTE más \_ \_ \_ reciente. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando MCI UNDO invierte el comando \_ MCI \_ CUT, MCI \_ COPY, MCI DELETE o MCI PASTE más \_ \_ reciente. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 1593457a-e680-4732-a89e-00f4eff7605a
 keywords:
 - MCI_UNDO comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44f69d39c7980cca3deb2c65226af8e95ce3e40f86e651356abd9f4b47410d64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d099d95159afee8d91acb77eb64e8e80bee5425d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784187"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370183"
 ---
 # <a name="mci_undo-command"></a>Comando \_ UNDO de MCI
 
-El comando UNDO de MCI invierte el comando \_ [MCI \_ CUT,](mci-cut.md) [MCI \_ COPY,](mci-copy.md) [MCI \_ DELETE](mci-delete.md)o [MCI \_ PASTE](mci-paste.md) más reciente. Los dispositivos de vídeo digital reconocen este comando.
+El comando MCI UNDO invierte el comando \_ [MCI \_ CUT,](mci-cut.md) [MCI \_ COPY,](mci-copy.md) [MCI \_ DELETE](mci-delete.md)o [MCI \_ PASTE](mci-paste.md) más reciente. Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,19 +60,19 @@ MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Para obtener información sobre estas 
 <span id="lpUndo"></span><span id="lpundo"></span><span id="LPUNDO"></span>*lpUndo*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -84,7 +84,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

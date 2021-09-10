@@ -4,12 +4,12 @@ description: Creación de la tabla de interfaz global
 ms.assetid: e8e46642-ef41-4322-97d0-8dd5b7c72992
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 836cc5507ac9b8e7cccd6e9dc8fd8c2d71e1a23419945ecc01d35b3978940124
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f792f9664da554f6522086796f94a00ccdf0dc07
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793775"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369492"
 ---
 # <a name="creating-the-global-interface-table"></a>Creación de la tabla de interfaz global
 
@@ -38,7 +38,7 @@ Después de llamar a la función [**CoCreateInstance,**](/windows/desktop/api/co
 
 Un ejemplo sencillo de uso de [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) sería cuando se quiere pasar un puntero de interfaz en un objeto en un apartamento de un solo subproceso (STA) a un subproceso de trabajo de otro apartamento. En lugar de tener que serializar en una secuencia y pasar la secuencia al subproceso de trabajo como un parámetro de subproceso, **IGlobalInterfaceTable** permite pasar simplemente una cookie.
 
-Al registrar la interfaz en la tabla de interfaz global, obtiene una cookie que puede usar en lugar de pasar el puntero real (siempre que necesite pasar el puntero), ya sea a un parámetro no de método que vaya a otro apartamento (como parámetro a [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85)) a través de [**CreateThread)**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread)o a la memoria en proceso accesible fuera de su apartamento.
+Al registrar la interfaz en la tabla de interfaz global, obtiene una cookie que puede usar en lugar de pasar el puntero real (siempre que necesite pasar el puntero), ya sea a un parámetro nomethod que vaya a otro apartamento (como un parámetro a [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85)) a través de [**CreateThread)**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread)o a la memoria en proceso accesible fuera de su apartamento.
 
 Es necesario tener cuidado porque el uso de interfaces globales supone una carga adicional para el programador de administrar problemas como condiciones de carrera y exclusión mutua, que están asociados al acceso al estado global desde varios subprocesos simultáneamente.
 

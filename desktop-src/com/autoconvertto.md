@@ -6,12 +6,12 @@ keywords:
 - AutoConvertTo registry key COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5ea2b32445bb7107dcbfdc2aec8aee518fdd474674e76fdbd820265d06b6160
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 160f6591ed318ad7622e0bf3c0af5187f95d3be3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120097055"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369563"
 ---
 # <a name="autoconvertto"></a>AutoConvertTo
 
@@ -25,11 +25,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
       AutoConvertTo = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se trata de **un valor \_ REG SZ** que especifica el identificador de clase del objeto al que se debe convertir el objeto o la clase de objetos especificados.
+Se trata de **un valor \_ SZ reg** que especifica el identificador de clase del objeto al que se debe convertir el objeto o la clase de objetos especificados.
 
-Esta clave se usa normalmente para convertir automáticamente los archivos creados por una versión anterior de una aplicación a una versión más reciente de la aplicación.
+Esta clave se usa normalmente para convertir automáticamente los archivos creados por una versión anterior de una aplicación en una versión más reciente de la aplicación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

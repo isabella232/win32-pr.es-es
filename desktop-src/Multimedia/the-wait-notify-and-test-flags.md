@@ -8,12 +8,12 @@ keywords:
 - MCI_TEST marca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ecb3c8cf1125f199f2c12ffa2749a33f0366b6671f53bf4077585e9ff1a9c73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af50e0b19d24d3012d6cb6025ea1ad8ee4b7e822
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941182"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369863"
 ---
 # <a name="the-wait-notify-and-test-flags"></a>Las marcas Wait, Notify y Test
 

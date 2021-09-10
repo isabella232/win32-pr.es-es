@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d901bf92e3495dde9a16e7499dcaae850b5e50eab2b4df1af99ca39f290cc981
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d0e34f6fa823092968e74515a885e7a40db9f2d7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119430485"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370040"
 ---
 # <a name="mci_seek-command"></a>Comando \_ MCI SEEK
 
@@ -60,7 +60,7 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ 
 <span id="lpSeek"></span><span id="lpseek"></span><span id="LPSEEK"></span>*lpSeek*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI SEEK \_ PARMS.**](mci-seek-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI SEEK \_ PARMS.**](mci-seek-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
@@ -131,7 +131,7 @@ La siguiente marca adicional se usa con el **tipo de dispositivo videodisc:**
 <span id="MCI_VD_SEEK_REVERSE"></span><span id="mci_vd_seek_reverse"></span>MCI \_ VD \_ SEEK \_ REVERSE
 </dt> <dd>
 
-La dirección de la búsqueda es inversa.
+La dirección de búsqueda es inversa.
 
 </dd> </dl>
 
@@ -151,7 +151,7 @@ La dirección de la búsqueda es inversa.
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

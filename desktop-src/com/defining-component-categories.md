@@ -4,12 +4,12 @@ description: Definir categorías de componentes
 ms.assetid: 2d67a998-5200-4285-bd99-48cf59683569
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 840c785f4b263f0288793f62542cc6d93637b719ff37c9cf29454f43dfaa1914
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4609654827789949705a2f32803c154152d3f9c9
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120071015"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369691"
 ---
 # <a name="defining-component-categories"></a>Definir categorías de componentes
 

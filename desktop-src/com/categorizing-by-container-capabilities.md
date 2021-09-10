@@ -4,12 +4,12 @@ description: Los componentes a menudo requieren cierta funcionalidad del contene
 ms.assetid: 11002f3e-17de-4e05-a2df-0c9e6326846d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67811a40c2c1bbffd4529b3f7c885a0d3e2bea19bda04035ffb80b601c266807
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 987546c20ff77a40666bb74689466a15fab989a6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118310892"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369687"
 ---
 # <a name="categorizing-by-container-capabilities"></a>Categorización por funcionalidades de contenedor
 
@@ -54,7 +54,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_GroupBox...}\Required Categories\{...CATID_Sim
  
 ```
 
-Un contenedor que admite Visual Basic controles enlazados a datos, pero no admite controles de marco simples, especificaría CATID Control y CATID VBDatabound en la interfaz de usuario \_ \_ del control de inserción. La lista de controles que se muestran al usuario contendrá el botón CLSID \_ y CLSID \_ MyDBControl. No se mostraría GroupBox de \_ CLSID.
+Un contenedor que admite Visual Basic controles enlazados a datos, pero no admite controles de marco simples, especificaría CATID Control y CATID VBDatabound en la interfaz de usuario del \_ \_ control de inserción. La lista de controles que se muestran al usuario contendrá el botón CLSID \_ y CLSID \_ MyDBControl. No se mostraría GroupBox de \_ CLSID.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Un contenedor que admite Visual Basic controles enlazados a datos, pero no admit
 [Asociación de iconos a una categoría](associating-icons-with-a-category.md)
 </dt> <dt>
 
-[Categorización por funcionalidades de componente](categorizing-by-component-capabilities.md)
+[Categorización por funcionalidades de componentes](categorizing-by-component-capabilities.md)
 </dt> <dt>
 
 [Clases y asociaciones predeterminadas](default-classes-and-associations.md)

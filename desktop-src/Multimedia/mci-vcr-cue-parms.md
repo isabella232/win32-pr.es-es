@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ff14bf6db2fee24b2cee426114b460dc5e4682bd00e14f7b68a91695bab1f66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8eeae20495281640718f95066476f0f3ac89dc6f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038245"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369979"
 ---
 # <a name="mci_vcr_cue_parms-structure"></a>Estructura MCI \_ VCR \_ CUE \_ PARMS
 
-La **estructura MCI \_ VCR CUE \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ CUE**](mci-cue.md) para las grabadoras de vídeo-grabadora.
+La **estructura MCI \_ VCR CUE \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ CUE**](mci-cue.md) para las grabadoras de video-recorder.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Posición a la que se debe hacer referencia.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -83,7 +83,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

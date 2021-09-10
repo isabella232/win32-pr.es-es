@@ -24,12 +24,12 @@ keywords:
 - Referencia de MCI, errores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57fc8426b264f68d7a6ab793e365d529774c931e72d89536b40b22592728a2ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8912284b98b2aacb60905e3fef4dc32705a5656
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783415"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370274"
 ---
 # <a name="mcierr-return-values"></a>Valores devueltos de MCIERR
 

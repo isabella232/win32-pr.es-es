@@ -4,18 +4,18 @@ description: Funciones de forma de onda
 ms.assetid: 6c8aaa54-0477-484f-91e1-d2152aa9c185
 keywords:
 - audio multimedia, funciones de forma de onda
-- audio, funciones de forma de onda
+- funciones audio,forma de onda
 - audio de forma de onda, funciones
 - referencia de audio de forma de onda, funciones
-- referencia de audio wavefore, funciones
+- referencia de audio wavefore,functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bf5b5f5fabbeeee50b3ecfa76a8540bd2f3ec96dda818eb3f7c77cbc4361f0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e9b6568bdf0f92409d8dca8d68cad3c97bfbc26
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119781485"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372566"
 ---
 # <a name="waveform-functions"></a>Funciones de forma de onda
 
@@ -24,10 +24,10 @@ Las siguientes funciones se usan con audio de forma de onda.
 -   [**auxGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetdevcaps)
 -   [**auxGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetnumdevs)
 -   [**auxGetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetvolume)
--   [**auxOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-auxoutmessage)
+-   [**auxiliarOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-auxoutmessage)
 -   [**auxSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-auxsetvolume)
--   [**PlaySound**](/previous-versions//dd743680(v=vs.85))
--   [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))
+-   [**Play Sound**](/previous-versions//dd743680(v=vs.85))
+-   [**sndPlay Sound**](/previous-versions//dd798676(v=vs.85))
 -   [**waveInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-waveinaddbuffer)
 -   [**waveInClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveinclose)
 -   [**waveInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetdevcaps)

@@ -6,12 +6,12 @@ keywords:
 - valor del registro COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8087313b8527ed95e7122d0e8dbe4fbd1ef028d7009f25937b3dc4300e9a4103
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2ddd1330191d7b7baf37973dbfb40e267a2f87e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048903"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369540"
 ---
 # <a name="activateatstorage"></a>ActivateAtStorage
 
@@ -25,7 +25,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
       ActivateAtStorage = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ SZ reg.** Cualquier valor que comience por "Y" o "y" indica que se debe usar **ActivateAtStorage.**
 

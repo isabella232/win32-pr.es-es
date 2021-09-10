@@ -1,6 +1,6 @@
 ---
 title: MCI_PAUSE comando (Mmsystem.h)
-description: El comando MCI \_ PAUSE pausa la acción actual. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc y audio de forma de onda reconocen este comando.
+description: El comando MCI \_ PAUSE pausa la acción actual. Los dispositivos cd audio, digital-video, secuenciador DE AUDIO, VCR, videodisc y audio de forma de onda reconocen este comando.
 ms.assetid: c4d0b0a2-cd7b-4641-a318-eb4b4e88b70f
 keywords:
 - MCI_PAUSE comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2318a10e7b03bf89d616bd6ff2373cdf785b0bb4015ab4b308ead57d7f9223
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b076397ca9ab770d6f9c23cc5b64853bdd2f07ee
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117803503"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369949"
 ---
 # <a name="mci_pause-command"></a>Comando MCI \_ PAUSE
 
-El comando MCI \_ PAUSE pausa la acción actual. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc y audio de forma de onda reconocen este comando.
+El comando MCI \_ PAUSE pausa la acción actual. Los dispositivos cd audio, digital-video, secuenciador DE AUDIO, VCR, videodisc y audio de forma de onda reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,17 +60,17 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ 
 <span id="lpPause"></span><span id="lppause"></span><span id="LPPAUSE"></span>*lpPause*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La diferencia entre los [comandos MCI \_ STOP](mci-stop.md) y MCI \_ PAUSE depende del dispositivo. Si es posible, MCI PAUSE suspende la operación del dispositivo, pero deja el \_ dispositivo listo para reanudar la reproducción inmediatamente. Con los controladores MCICDA, MCISEQ y MCIPIONR, el comando MCI PAUSE funciona igual que el \_ comando MCI \_ STOP.
+La diferencia entre los [comandos MCI \_ STOP](mci-stop.md) y MCI \_ PAUSE depende del dispositivo. Si es posible, MCI PAUSE suspende la operación del dispositivo, pero deja el \_ dispositivo listo para reanudar la reproducción inmediatamente. Con los controladores MCICDA, MCISEQ y MCIPIONR, el comando MCI PAUSE funciona igual que \_ el comando MCI \_ STOP.
 
 En el caso de los dispositivos de vídeo digital, el parámetro *lpPause* apunta a una estructura [**MCI \_ DGV \_ PAUSE \_ PARMS.**](/previous-versions//dd743395(v=vs.85))
 
@@ -90,7 +90,7 @@ En el caso de los dispositivos de vídeo digital, el parámetro *lpPause* apunta
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

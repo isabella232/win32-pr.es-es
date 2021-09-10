@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68bc32fd247cbe3519fbffad778b33679e3b71c652b476f557db5a910e87721c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdf5edce248fc5402245e36e869cddc97ba3430a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941523"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369836"
 ---
 # <a name="capture-command"></a>comando capture
 
@@ -56,7 +56,7 @@ Una o varias de las marcas siguientes:
 | Value          | Significado                                                                                                                                                                                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | como *pathname*  | Especifica la ruta de acceso de destino y el nombre de archivo de la imagen capturada. Esta marca es obligatoria.                                                                                                                                                                |
-| en *rectángulo* | Especifica la región rectangular dentro del búfer de fotogramas que el dispositivo recorta y guarda en el disco. Si se omite, la región recortada tiene como valor predeterminado el rectángulo especificado o predeterminado en un comando [put](put.md) "source" anterior para esta instancia de dispositivo. |
+| en *rectángulo* | Especifica la región rectangular dentro del búfer de fotogramas que el dispositivo recorta y guarda en el disco. Si se omite, la región recortada tiene como valor predeterminado el rectángulo especificado o el valor predeterminado en un comando [put](put.md) "source" anterior para esta instancia de dispositivo. |
 
 
 
@@ -75,9 +75,9 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este comando podría producir un error si el dispositivo está reproduciendo vídeo de movimiento o ejecutando alguna otra operación que consume muchos recursos. Si el búfer de fotogramas se actualiza en tiempo real, la actualización se pausa momentáneamente para que se captura una imagen completa. Si el dispositivo pausa la actualización, puede haber un efecto visual o similar. Si no se han establecido el formato de archivo, el algoritmo de compresión y los niveles de calidad, se usan sus valores predeterminados.
+Este comando podría producir un error si el dispositivo está reproduciendo vídeo de movimiento o ejecutando alguna otra operación que consume muchos recursos. Si el búfer de fotogramas se actualiza en tiempo real, la actualización se pausa momentáneamente para capturar una imagen completa. Si el dispositivo pausa la actualización, puede haber un efecto visual o similar. Si no se han establecido el formato de archivo, el algoritmo de compresión y los niveles de calidad, se usan sus valores predeterminados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,7 +94,7 @@ Este comando podría producir un error si el dispositivo está reproduciendo ví
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

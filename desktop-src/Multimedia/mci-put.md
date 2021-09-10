@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c34250f59122eca942309b840c4b66521a08b3eecc8ca89dfd480d6e9a6869d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c8fa4af30aa2b3aa6f7cdd50f453bc8edca83334
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689915"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369914"
 ---
 # <a name="mci_put-command"></a>Comando PUT de MCI \_
 
@@ -60,7 +60,7 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital, MCI \_ TEST. 
 <span id="lpDest"></span><span id="lpdest"></span><span id="LPDEST"></span>*lpDest*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas adicionales se usan con el **tipo de dispositivo digitalvideo:**
 
@@ -155,7 +155,7 @@ El rectángulo definido para MCI OVLY RECT especifica el área del búfer de ví
 <span id="MCI_OVLY_PUT_VIDEO"></span><span id="mci_ovly_put_video"></span>VÍDEO \_ DE MCI OVLY \_ \_ PUT
 </dt> <dd>
 
-El rectángulo definido para MCI OVLY RECT especifica el área de la captura de origen de \_ vídeo por el búfer de \_ vídeo. El rectángulo contiene el desplazamiento y la extensión del rectángulo de recorte para el origen de vídeo en relación con su origen.
+El rectángulo definido para MCI OVLY RECT especifica el área de la captura de origen de \_ vídeo por el búfer de \_ vídeo. El rectángulo contiene el desplazamiento y la extensión del rectángulo de recorte para el origen del vídeo en relación con su origen.
 
 </dd> <dt>
 
@@ -184,7 +184,7 @@ En el caso de los dispositivos de superposición de vídeo, *lpDest* apunta a un
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

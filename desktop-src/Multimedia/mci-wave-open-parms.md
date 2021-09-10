@@ -3,7 +3,7 @@ title: MCI_WAVE_OPEN_PARMS estructura (Mciapi.h)
 description: La estructura MCI \_ WAVE \_ OPEN \_ PARMS contiene información para el comando MCI \_ OPEN para dispositivos de audio de onda.
 ms.assetid: 2fc9383e-4610-4751-acad-b545dc6d8992
 keywords:
-- MCI_WAVE_OPEN_PARMS estructura Windows Multimedia
+- MCI_WAVE_OPEN_PARMS estructura Windows multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 470b00bc818fb184174f27a8ff281359788f235ec7e31b899b051dc90423426c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5a4107c6283edab1ffeaf18297e2898a8b17761
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783789"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370028"
 ---
 # <a name="mci_wave_open_parms-structure"></a>Estructura \_ MCI WAVE \_ OPEN \_ PARMS
 
@@ -48,7 +48,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Indentifier devuelto a la aplicación.
 **lpstrDeviceType**
 </dt> <dd>
 
-Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o SYSTEM.INI archivo). Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI.](mci-device-types.md)
+Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o SYSTEM.INI archivo). Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI](mci-device-types.md).
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Longitud del búfer, en segundos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -97,7 +97,7 @@ Puede usar la estructura [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md) en lugar 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -109,7 +109,7 @@ Puede usar la estructura [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md) en lugar 
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

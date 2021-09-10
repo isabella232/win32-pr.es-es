@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 708d37f4d011997352a95b80dc80b8b9afd28730feeeb0e285a07d68c8c8eed5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf143bb0d895dc03df38bbb0a657467d506eac77
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117803135"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370178"
 ---
 # <a name="mci_sysinfo_parms-structure"></a>Estructura \_ MCI SYSINFO \_ PARMS
 
@@ -75,11 +75,11 @@ Número que indica la posición del dispositivo en la tabla de dispositivos MCI 
 **wDeviceType**
 </dt> <dd>
 
-Tipo de dispositivo. Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI.](mci-device-types.md)
+Tipo de dispositivo. Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI](mci-device-types.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -87,7 +87,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -99,7 +99,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

@@ -3,7 +3,7 @@ title: Comando cut
 description: El comando cortar quita los datos del área de trabajo y los copia en el Portapapeles. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: f42c7364-49cb-41be-b601-bda6e97d1e76
 keywords:
-- Comando cut Windows Multimedia
+- comando cut Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5a39010ad7dd07ccff38291441bb0aa05a54ee65da1b865d7ac82ed77fbfdd6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33571309e1dd249f20e577c97b8c6e1b950eda09
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144568"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369875"
 ---
 # <a name="cut-command"></a>Comando cut
 
@@ -55,7 +55,7 @@ Una de las marcas siguientes identifica el elemento que se debe cortar.
 
 | Value                 | Significado                                                                                                                                                                                                                               |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en *rectángulo*        | Especifica la parte de cada corte de marco. Si se omite, el valor predeterminado es todo el marco. Cuando se especifica este elemento, no se eliminan los fotogramas. En su lugar, el área dentro del rectángulo se vuelve negra.                                       |
+| en *rectángulo*        | Especifica la parte de cada corte de marco. Si se omite, el valor predeterminado es todo el marco. Cuando se especifica este elemento, no se eliminan los marcos. En su lugar, el área dentro del rectángulo se vuelve negra.                                       |
 | secuencia *de* audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando . Si usa esta marca y también quiere cortar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se cortan todas las secuencias de audio y vídeo). |
 | desde *la posición*       | Especifica el inicio del corte de intervalo. Si se omite, el valor predeterminado es la posición actual.                                                                                                                                                |
 | para *colocar*         | Especifica el final del corte de intervalo. El corte de datos de audio y vídeo es exclusivo de esta posición. Si se omite, el valor predeterminado es el final del área de trabajo.                                                                                  |
@@ -76,9 +76,9 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El cambio se convierte en permanente solo cuando los datos se guardan explícitamente; sin embargo, la reproducción actúa como si se hubieran quitado los datos.
 
@@ -97,7 +97,7 @@ El cambio se convierte en permanente solo cuando los datos se guardan explícita
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

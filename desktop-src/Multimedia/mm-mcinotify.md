@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc03ab0406542472871f35ca3ff619d4d9a6f35725b9322a4c11bc73bc29a5aa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 96ee62c4a2b6e17bf5ad6d719dcb7d6e992a2f2e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807515"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369864"
 ---
 # <a name="mm_mcinotify-message"></a>Mensaje \_ MM MTIFTIFY
 
@@ -45,7 +45,7 @@ Motivo de la notificación. Se definen los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MCI \_ NOTIFY \_ ABORTED    | El dispositivo recibió un comando que impedía que se cumpliesan las condiciones actuales para iniciar la función de devolución de llamada. Si un nuevo comando interrumpe el comando actual y también solicita una notificación, el dispositivo solo envía este mensaje y no MCI \_ NOTIFY \_ SUPERSEDED |
 | ERROR DE NOTIFICACIÓN DE MCI \_ \_    | Se produjo un error de dispositivo mientras el dispositivo estaba ejecutando el comando.                                                                                                                                                                                                            |
@@ -69,7 +69,7 @@ Identificador del dispositivo que inicia la función de devolución de llamada.
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre la marca MCI \_ NOTIFY, vea [La marca de notificación](the-notify-flag.md).
 
@@ -83,7 +83,7 @@ Cuando la aplicación solicite la notificación de un comando, compruebe la devo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -95,7 +95,7 @@ Cuando la aplicación solicite la notificación de un comando, compruebe la devo
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Mensajes de MCI](mci-messages.md)

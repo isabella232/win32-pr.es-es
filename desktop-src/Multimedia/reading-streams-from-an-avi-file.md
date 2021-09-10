@@ -6,12 +6,12 @@ keywords:
 - Función AVIStreamInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84d42c4682c1875fffbea079ab9ef55d954f15d3e9d49c2da1309504da68aa92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: edbea431a5a5f08602b026e26fd15dfe684c555d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118371520"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369856"
 ---
 # <a name="reading-streams-from-an-avi-file"></a>Lectura Secuencias desde un archivo AVI
 

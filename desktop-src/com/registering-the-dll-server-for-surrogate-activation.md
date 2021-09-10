@@ -1,43 +1,43 @@
 ---
-title: Registrando el servidor DLL para la activación de suplentes
-description: Registrando el servidor DLL para la activación de suplentes
+title: Registro del servidor DLL para la activación suplente
+description: Registro del servidor DLL para la activación suplente
 ms.assetid: 7133daa4-43b2-402e-a8ac-b357bea745d9
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0ca0af764bebf54590442f87f0b4ffdb1a681012
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103794001"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369727"
 ---
-# <a name="registering-the-dll-server-for-surrogate-activation"></a>Registrando el servidor DLL para la activación de suplentes
+# <a name="registering-the-dll-server-for-surrogate-activation"></a>Registro del servidor DLL para la activación suplente
 
 Un servidor DLL se cargará en un proceso suplente en las siguientes condiciones:
 
--   Debe haber un valor AppID especificado en la clave CLSID en el registro y una clave [AppID](appid-key.md) correspondiente.
--   En una llamada de activación, se establece el bit del [**\_ \_ servidor local CLSCTX**](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx) y la clave CLSID no especifica [LocalServer32](localserver32.md), [LocalServer](localserver.md)o [LocalService](localservice.md). Si se establecen otros bits **CLSCTX** , se sigue el [**algoritmo de procesamiento**](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx)para las marcas de ejecución in-Process, local o remota.
--   La clave CLSID contiene la subclave [InProcServer32](inprocserver32.md) .
--   La DLL de proxy/stub especificada en la clave **InProcServer32** existe.
--   El valor [DllSurrogate](dllsurrogate.md) existe en la clave **AppID** .
+-   Debe haber un valor AppID especificado en la clave CLSID en el Registro y una clave [AppID](appid-key.md) correspondiente.
+-   En una llamada de activación, se establece el bit [**CLSCTX \_ LOCAL \_ SERVER**](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx) y la clave CLSID no especifica [LocalServer32,](localserver32.md) [LocalServer](localserver.md)o [LocalService](localservice.md). Si se establecen otros bits **CLSCTX,** se sigue el algoritmo de procesamiento para las marcas de ejecución en proceso, local o remota. [](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx)
+-   La clave CLSID contiene la [subclave InprocServer32.](inprocserver32.md)
+-   Existe el archivo DLL de proxy/stub especificado en la **clave InprocServer32.**
+-   El [valor DllSurrogate](dllsurrogate.md) existe en la **clave AppID.**
 
-Si hay un servidor **LocalServer**, **LocalServer32** o **LocalService**, que indica la existencia de un archivo exe, siempre se iniciará el servidor o el servicio exe en su preferencia para cargar un servidor dll en un proceso suplente.
+Si hay un **servidor LocalServer**, **LocalServer32** o **LocalService**, que indica la existencia de un exe, el servidor o servicio EXE siempre se inicia en lugar de cargar un servidor DLL en un proceso suplente.
 
-Se debe especificar el valor con nombre **DllSurrogate** para que se produzca la activación de suplentes. La activación hace referencia a las llamadas a cualquiera de las siguientes funciones de activación:
+Se debe especificar el valor con nombre de **DllSurrogate** para que se produzca la activación suplente. La activación hace referencia a las llamadas a cualquiera de las siguientes funciones de activación:
 
 -   [**CoGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetclassobject)
 -   [**CoCreateInstanceEx**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstanceex)
 -   [**CoGetInstanceFromFile**](/windows/desktop/api/Objbase/nf-objbase-cogetinstancefromfile)
 -   [**CoGetInstanceFromIStorage**](/windows/desktop/api/Objbase/nf-objbase-cogetinstancefromistorage)
--   [**IMoniker:: BindToObject**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtoobject)
+-   [**IMoniker::BindToObject**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtoobject)
 
-Para iniciar una instancia del suplente proporcionado por el sistema, establezca el valor de **DllSurrogate** en una cadena vacía o en **null**. Para especificar el inicio de un suplente personalizado, establezca el valor en la ruta de acceso del suplente.
+Para iniciar una instancia del suplente proporcionado por el sistema, establezca el valor de **DllSurrogate** en una cadena vacía o en **NULL.** Para especificar el inicio de un suplente personalizado, establezca el valor en la ruta de acceso del suplente.
 
-Si se especifica [RemoteServerName](remoteservername.md) y **DllSurrogate** para el mismo AppID, se omite el valor **remoteservername** y el valor **DllSurrogate** provoca una activación en el equipo local. Para la activación de suplentes remotos, especifique **RemoteServerName** pero no **DllSurrogate** en el cliente y especifique **DllSurrogate** en el servidor.
+Si se [especifican RemoteServerName](remoteservername.md) y **DllSurrogate** para el mismo AppID, se omite el valor **RemoteServerName** y el valor **DllSurrogate** provoca una activación en el equipo local. Para la activación suplente remota, especifique **RemoteServerName** pero no **DllSurrogate** en el cliente y especifique **DllSurrogate** en el servidor.
 
-Un servidor DLL diseñado para ejecutarse siempre en su propio proceso suplente se configura mejor con un AppID igual a su CLSID. En **AppID**, solo hay que especificar un valor con nombre de **DllSurrogate** con un valor de cadena vacía.
+Un servidor DLL diseñado para ejecutarse siempre solo en su propio proceso suplente se configura mejor con un AppID igual a su CLSID. En **AppID**, simplemente especifique un valor con nombre **DllSurrogate** con un valor de cadena vacío.
 
-Es mejor configurar un servidor DLL diseñado para ejecutarse por sí solo en su propio proceso suplente y para el servicio de varios clientes a través de una red con un valor [runas](runas.md) especificado en la clave del registro **AppID** . El hecho de que **runas** especifique "usuario interactivo" o una identidad de usuario específica depende de la interfaz de usuario, la seguridad y otros requisitos del servidor. Cuando se especifica un valor **runas** , solo se carga una instancia del servidor para atender a todos los clientes, independientemente de la identidad del cliente. Por otro lado, no configure el servidor con **runas** si la intención es tener una instancia del servidor dll que se ejecuta en suplente para atender cada identidad de cliente remoto.
+Es mejor configurar un servidor DLL diseñado para ejecutarse solo en su propio proceso suplente y para dar servicio a varios clientes a través de una red con un valor [RunAs](runas.md) especificado en la clave del Registro **AppID.** Si **runAs especifica** "Usuario interactivo" o una identidad de usuario específica depende de la interfaz de usuario, la seguridad y otros requisitos del servidor. Cuando se especifica un valor **RunAs,** solo se carga una instancia del servidor para dar servicio a todos los clientes, independientemente de la identidad del cliente. Por otro lado, no configure el servidor con **RunAs** si la intención es que una instancia del servidor DLL se ejecute en suplente para dar servicio a cada identidad de cliente remota.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -46,9 +46,9 @@ Es mejor configurar un servidor DLL diseñado para ejecutarse por sí solo en su
 [Requisitos del servidor DLL](dll-server-requirements.md)
 </dt> <dt>
 
-[Uso compartido de suplentes](surrogate-sharing.md)
+[Uso compartido suplente](surrogate-sharing.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
