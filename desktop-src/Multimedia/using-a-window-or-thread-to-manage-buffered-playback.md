@@ -10,18 +10,18 @@ keywords:
 - MM_MOM_CLOSE mensaje
 - MM_MOM_DONE mensaje
 - MM_MOM_OPEN mensaje
-- Interfaz digital instrumentable (MIDI), envío de mensajes
+- Interfaz digital de instrumentar música (MIDI), enviar mensajes
 - MIDI (Interfaz digital instrumenta instrumentable), envío de mensajes
 - reproducir archivos MIDI, enviar mensajes
 - envío de mensajes MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbc0acb39090a640d60539542a439111287faef246adf64aef7ee12ced3ae09e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c8c120504a4a25ddcf01474db341a367a2e9854
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117801259"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371024"
 ---
 # <a name="using-a-window-or-thread-to-manage-buffered-playback"></a>Usar una ventana o un subproceso para administrar la reproducción en búfer
 
@@ -29,7 +29,7 @@ Los mensajes siguientes se pueden enviar a una ventana o subproceso para adminis
 
 
 
-| Valor                                  | Significado                                                                                                                                                                  |
+| Value                                  | Significado                                                                                                                                                                  |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MM \_ MOM \_ CLOSE**](mm-mom-close.md) | Se envía cuando el dispositivo se cierra mediante la [**función midiOutClose.**](/windows/win32/api/mmeapi/nf-mmeapi-midioutclose)                                                                               |
 | [**MM \_ MOM \_ DONE**](mm-mom-done.md)   | Se envía cuando el controlador de dispositivo finaliza con un bloque de datos enviado mediante [**la función midiOutLongMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutlongmsg) [**o midiStreamOut.**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout) |

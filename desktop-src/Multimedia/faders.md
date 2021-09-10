@@ -15,12 +15,12 @@ keywords:
 - control de igualador gráfico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a72b33387da77f7dfcd773abc874562d2f401b4865443a3cd6701a24ecd87e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd2b560b61a694089b947b0cfda7a54b486f1e3a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119526145"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372127"
 ---
 # <a name="faders"></a>Faders
 

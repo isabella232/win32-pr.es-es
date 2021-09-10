@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2f13d0e9f8a7a4b9f5477459286bc56b9c98b1f9564e8432329681aeaef66d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e64b864b4b0366421828960504aff3f5a83836b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138289"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370027"
 ---
 # <a name="mci_ovly_open_parms-structure"></a>Estructura \_ MCI OVLY \_ OPEN \_ PARMS
 
@@ -49,7 +49,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Controlar a la ventana primaria.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -117,7 +117,7 @@ Puede usar la estructura [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md) en lugar 
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

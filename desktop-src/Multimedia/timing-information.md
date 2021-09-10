@@ -15,16 +15,16 @@ keywords:
 - ticks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6a75be9964457c64c7c1da59cb93aab2e423f72e861ba496494a5007025461c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f2daf5b1847456e8fb518665521e484118fead79
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119804745"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371053"
 ---
 # <a name="timing-information"></a>Información de tiempo
 
-La información de control de tiempo para un evento MIDI se almacena en el **miembro dwDeltaTime** de la [**estructura MIDIEVENT.**](/windows/win32/api/mmeapi/ns-mmeapi-midievent) El tiempo se da en pasos, tal como se define en la *especificación Standard MIDI Files 1.0.* La longitud de un paso se define por el formato de hora y, posiblemente, el tempo asociado a la secuencia. Para obtener más información sobre las secuencias, vea [LA SECUENCIAS](midi-streams.md).
+La información de control de tiempo de un evento MIDI se almacena en el **miembro dwDeltaTime** de la [**estructura MIDIEVENT.**](/windows/win32/api/mmeapi/ns-mmeapi-midievent) El tiempo se da en pasos, tal como se define en la *especificación Standard MIDI Files 1.0.* La longitud de un paso se define por el formato de hora y, posiblemente, el tempo asociado a la secuencia. Para obtener más información sobre las secuencias, vea [LA SECUENCIAS](midi-streams.md).
 
 Un tic se expresa como microsegundos por nota de trimestre o como tics de tiempo de SMPTE (Society of Motion Picture and Tv Engineers). Las aplicaciones que envían mensajes MIDI individualmente o usan mensajes MIDI no procesados usan información de tiempo de nota trimestral y tempo para determinar la duración de un paso. Las aplicaciones que preprocesen mensajes MIDI pueden almacenar el tiempo transcurrido como un recuento de las unidades de SMPTE que se usan.
 

@@ -1,19 +1,19 @@
 ---
-title: AppID (AppID Key)
+title: AppID (clave appID)
 description: Identifica el GUID de AppID que corresponde al ejecutable con nombre.
 ms.assetid: 960abcc5-c97f-47d6-9d8a-840473c136bf
 keywords:
 - Valor del Registro appID (AppID) COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1cf49a9f1148c9d89c793021a007827e418c68f6e9192e70e98c21e5037a882
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 183bc18e55ee157e42fc2b35ef1d0b278e2683f0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993945"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369535"
 ---
-# <a name="appid-appid-key"></a>AppID (AppID Key)
+# <a name="appid-appid-key"></a>AppID (clave appID)
 
 Identifica el GUID de AppID que corresponde al ejecutable con nombre.
 
@@ -25,9 +25,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
       AppID = {AppID_GUID}
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se trata de **un valor \_ REG SZ.**
+Se trata de **un valor \_ SZ reg.**
 
 ## <a name="related-topics"></a>Temas relacionados
 

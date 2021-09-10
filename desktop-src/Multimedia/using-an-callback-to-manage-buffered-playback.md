@@ -14,12 +14,12 @@ keywords:
 - devolución de llamada de evento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 747652c10471662daacfe433a8fc22d5248bf2fe2365b6b314e76d0b91ced127
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2fc6f6cc7bec7971c117cb81b2f823d7184bc2fd
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118370271"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370928"
 ---
 # <a name="using-an-event-callback-to-manage-buffered-playback"></a>Usar una devolución de llamada de eventos para administrar la reproducción en búfer
 

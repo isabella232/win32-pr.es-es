@@ -4,12 +4,12 @@ description: Uso de OleView
 ms.assetid: e4b80b78-0e66-4e67-a4a0-6acd3263d572
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7729cf2091b4cfe30b1e43877ae961c06dff263f6ada623c6b901f6f4c0b19a7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 035cc33ce3f0bb833b455e5b8500186e8c884661
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119896175"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369700"
 ---
 # <a name="using-oleview"></a>Uso de OleView
 

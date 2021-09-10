@@ -1,6 +1,6 @@
 ---
 title: MIM_ERROR mensaje (Mmsystem.h)
-description: El MIM error se envía a una función de devolución de llamada de entrada \_ DE MIDI cuando se recibe un mensaje MIDI no válido.
+description: El MIM error se envía a una función de devolución de llamada de entrada DE MIDI cuando se recibe \_ un mensaje MIDI no válido.
 ms.assetid: ea720da5-1f18-4d0d-ac9d-45cd1c3219d6
 keywords:
 - MIM_ERROR mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44793587b35c5d3e614c6a52f0cc9299e899b5feb4154f21b1ff278b96afde9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: add5b675a557ab25d41e79d99864e090364d384c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119525065"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370874"
 ---
-# <a name="mim_error-message"></a>\_MIM Mensaje DE ERROR
+# <a name="mim_error-message"></a>\_MIM MENSAJE DE ERROR
 
-El **MIM \_ error se** envía a una función de devolución de llamada de entrada DE MIDI cuando se recibe un mensaje MIDI no válido.
+El **MIM \_ error se** envía a una función de devolución de llamada de entrada DE MIDI cuando se recibe un mensaje NO VÁLIDO DE MIDI.
 
 
 ```C++

@@ -12,12 +12,12 @@ keywords:
 - Tipos DE MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a06f035af217e04f89ac69be95e4665904fdce729dd8d412f59f6c633102bee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 723804b2673e489cd49788fba21434989acaea5a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118137304"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372380"
 ---
 # <a name="midi-types"></a>Tipos DE MIDI
 

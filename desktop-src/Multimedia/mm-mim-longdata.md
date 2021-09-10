@@ -1,6 +1,6 @@
 ---
 title: MM_MIM_LONGDATA mensaje (Mmsystem.h)
-description: El mensaje MM MIM LONGDATA se envía a una ventana cuando se recibe un mensaje completo exclusivo del sistema de MIDI o cuando se ha rellenado un búfer con datos exclusivos \_ \_ del sistema.
+description: El mensaje MM MIM LONGDATA se envía a una ventana cuando se recibe un mensaje completo exclusivo del sistema DE MIDI o cuando se ha rellenado un búfer con datos exclusivos \_ \_ del sistema.
 ms.assetid: 72b9eade-4224-436f-bfef-32204eaf51ae
 keywords:
 - MM_MIM_LONGDATA mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e4748381500f42a5dc4f2bceae8ad862a64f237c9d5024e4b0b7cc96a694e5b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25bf1900ef2e9394b9d8772747eba873f8d607f1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065525"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370903"
 ---
 # <a name="mm_mim_longdata-message"></a>Mensaje \_ \_ LONGDATA MIM MM
 
-El **mensaje MM MIM \_ \_ LONGDATA** se envía a una ventana cuando se recibe un mensaje completo exclusivo del sistema DE LÍNEA o cuando se ha rellenado un búfer con datos exclusivos del sistema.
+El **mensaje MM MIM \_ \_ LONGDATA** se envía a una ventana cuando se recibe un mensaje completo exclusivo del sistema DE MIDI o cuando se ha rellenado un búfer con datos exclusivos del sistema.
 
 
 ```C++
@@ -56,7 +56,7 @@ Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midih
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Es posible que el búfer devuelto no esté lleno. Para determinar el número de bytes registrados en el búfer devuelto, use el **miembro dwBytesRecorded** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) a la que apunta *lpMidiHdr*.
 

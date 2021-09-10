@@ -6,12 +6,12 @@ keywords:
 - CapDriverGetCaps macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 961a26a3a78d9153dd024b271179d6971bca6f610ee0fde070e13454e02f8528
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ce51a3b7c77fbb161007ddde7dfe91c36152121
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117988779"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371371"
 ---
 # <a name="enabling-video-overlay"></a>Habilitación de la superposición de vídeo
 

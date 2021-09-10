@@ -10,12 +10,12 @@ keywords:
 - tipo de división de secuencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b28bb7e32097b888cdd3dec739eaccfc2a37dfe14060168fb11f0a7ca3d00e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6586a33fe4a5225fdcdca21e413104388d5831d3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117801809"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371089"
 ---
 # <a name="retrieving-the-sequence-division-type"></a>Recuperar el tipo de división de secuencia
 
@@ -25,7 +25,7 @@ Si el **comando MCI \_ STATUS** es correcto, el miembro **dwReturn** de la estru
 
 
 
-| Valor                        | Tipo de división                     |
+| Value                        | Tipo de división                     |
 |------------------------------|-----------------------------------|
 | MCI \_ SEQ \_ DIV \_ PPQN          | PPQN (nota de partes por trimestre)     |
 | MCI \_ SEQ \_ DIV \_ SMPTE \_ 24     | SMPTE, 24 fps (fotogramas por segundo) |

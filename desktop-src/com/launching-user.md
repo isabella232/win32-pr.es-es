@@ -4,12 +4,12 @@ description: Iniciar usuario
 ms.assetid: ea5140b6-0a79-4149-b845-4f6388e89104
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76e04163d5229942abff55339d53ba37ec0f8bdc6e9ac60b0893f1d243b22643
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf6fb60652bff77eb27a33ec8a8a8d40db0f0023
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117736542"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369555"
 ---
 # <a name="launching-user"></a>Iniciar usuario
 

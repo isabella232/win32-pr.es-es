@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DECOMPRESS_SET_PALETTE (VFW. h)
-description: El \_ mensaje de decompredor de la \_ paleta Set ICM \_ especifica una paleta para que un controlador de descompresión de vídeo lo use si se está descomprime con un formato que usa una paleta. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressSetPalette.
+title: ICM_DECOMPRESS_SET_PALETTE mensaje (Vfw.h)
+description: El ICM DECOMPRESS SET PALETTE especifica una paleta para un controlador de descompresión de vídeo que se va a usar si se está \_ \_ descomprimiendo en un formato que usa una \_ paleta. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressSetPalette.
 ms.assetid: 269d01f9-b7c8-40e4-abdb-24dd0c9cc18d
 keywords:
-- Mensaje de ICM_DECOMPRESS_SET_PALETTE de Windows multimedia
+- ICM_DECOMPRESS_SET_PALETTE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5f2bbbf1b09b8c5954a2149edd16cb213a08fb3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676893"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370537"
 ---
-# <a name="icm_decompress_set_palette-message"></a>Descompresor ICM \_ \_ set \_ Palette Message
+# <a name="icm_decompress_set_palette-message"></a>\_ICM Mensaje DE DECOMPRESS \_ SET \_ PALETTE
 
-El mensaje de **\_ decompredor de la \_ \_ paleta Set ICM** especifica una paleta para que un controlador de descompresión de vídeo lo use si se está descomprime con un formato que usa una paleta. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressSetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompresssetpalette) .
+El **ICM \_ DECOMPRESS \_ SET \_ PALETTE** especifica una paleta para un controlador de descompresión de vídeo que se va a usar si se está descomprimiendo en un formato que usa una paleta. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressSetPalette.**](/windows/desktop/api/Vfw/nf-vfw-icdecompresssetpalette)
 
 
 ```C++
@@ -41,19 +41,19 @@ lParam = 0;
 <span id="lpbiPalette"></span><span id="lpbipalette"></span><span id="LPBIPALETTE"></span>*lpbiPalette*
 </dt> <dd>
 
-Puntero a una estructura [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)) cuya tabla de colores contiene los colores que se deben usar si es posible. Puede especificar cero para usar el conjunto predeterminado de colores de salida.
+Puntero a una [**estructura BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)) cuya tabla de colores contiene los colores que se deben usar si es posible. Puede especificar cero para usar el conjunto predeterminado de colores de salida.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si el controlador de descompresión puede descomprimir imágenes con precisión en la paleta sugerida mediante el conjunto de colores que se organizan en la paleta. Devuelve ICERR \_ no compatible en caso contrario.
+Devuelve ICERR OK si el controlador \_ de descompresión puede descomprimir imágenes con precisión en la paleta sugerida mediante el conjunto de colores a medida que se organizan en la paleta. Devuelve ICERR \_ UNSUPPORTED en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Este mensaje no debe afectar a la descompresión que ya está en curso; en su lugar, se deben devolver los colores que se pasan con este mensaje en respuesta a los mensajes de la paleta [**de obtención y \_ \_ \_**](icm-decompress-get-format.md) [**\_ descompresión \_ \_ ICM**](icm-decompress-get-palette.md) más adelante. Los colores se devuelven al controlador de descompresión en un futuro mensaje de [**\_ \_ Inicio descomprimido de ICM**](icm-decompress-begin.md) .
+Este mensaje no debería afectar a la descompresión ya en curso; en su lugar, los colores que se pasan con este mensaje deben devolverse en respuesta a los ICM [**\_ DECOMPRESS \_ GET \_ FORMAT**](icm-decompress-get-format.md) y ICM [**\_ \_ DECOMPRESS GET \_ PALETTE.**](icm-decompress-get-palette.md) Los colores se envían de nuevo al controlador de descompresión en un futuro [**ICM \_ mensaje DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
-Este mensaje se utiliza principalmente cuando un controlador descomprime imágenes en la pantalla y otra aplicación que usa una paleta está en primer plano, lo que obliga al controlador de descompresión a adaptarse a un conjunto de colores externo.
+Este mensaje se usa principalmente cuando un controlador descomprime imágenes en la pantalla y otra aplicación que usa una paleta está en primer plano, lo que obliga al controlador de descompresión a adaptarse a un conjunto externo de colores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Este mensaje se utiliza principalmente cuando un controlador descomprime imágen
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

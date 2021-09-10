@@ -1,6 +1,6 @@
 ---
 title: DRV_POWER mensaje (Mmsystem.h)
-description: Notifica al controlador que la alimentación del dispositivo está activada o desactivada.
+description: Notifica al controlador que la alimentación del dispositivo está activada o apagada.
 ms.assetid: b3bbd16a-5b90-4127-a1dd-f2ddfd918f0a
 keywords:
 - DRV_POWER mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a6b9f3ddb2c0184337d2f53d73cdda8451a8d8df19229e505b08fedf685f40d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8113b7fe544bf36a35b6e516c7a98ae71082577d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119496455"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370489"
 ---
 # <a name="drv_power-message"></a>Mensaje DE \_ DRV POWER
 
-Notifica al controlador que la alimentación del dispositivo está activada o desactivada.
+Notifica al controlador que la alimentación del dispositivo está activada o apagada.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Identificador de la instancia del controlador instalable.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero en caso contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se usan los parámetros *lParam1* y *lParam2.*
 

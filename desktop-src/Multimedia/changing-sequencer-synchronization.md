@@ -6,17 +6,17 @@ keywords:
 - MCI_SET de comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69f7f31544b7b9ceb00109551718b9984dd2aa506557848e0d63e77724c4be32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bffdc1606624f63fa05a9cc03c68fe64781620f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119526425"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371707"
 ---
 # <a name="changing-sequencer-synchronization"></a>Cambiar la sincronización del secuenciador
 
 > [!NOTE]
-> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusario.  Dentro de este documento, hay referencias a la palabra "subordinada". La Guía de estilo de Microsoft [para Bias-Free Comunicaciones](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en el software. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se quite del software, corregiremos este documento para que esté alineado.
+> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusario.  Dentro de este documento, hay referencias a la palabra "subordinada". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en el software. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se quite del software, corregiremos este documento para que esté alineado.
 
 Para cambiar el modo de sincronización de un dispositivo secuenciador, use el mensaje de comando [**MCI \_ SET**](mci-set.md) con las marcas MCI SEQ SET MASTER y \_ \_ \_ MCI \_ SEQ \_ SET \_ SLAVE. Dos miembros de la estructura [**MCI \_ SEQ \_ SET \_ PARMS,**](mci-seq-set-parms.md) **dwMaster** y **dwMastere,** se usan para especificar los modos de sincronización maestro y subordinado.
 
@@ -34,7 +34,7 @@ El modo de sincronización maestra controla la información de sincronización e
 
  
 
-El modo de sincronización subordinado controla dónde obtiene el secuenciador su información de tiempo para reproducir un archivo MIDI. A continuación se encuentran las constantes para el **miembro dw Constante** y sus modos de sincronización subordinados correspondientes.
+El modo de sincronización subordinado controla dónde obtiene el secuenciador su información de tiempo para reproducir un archivo MIDI. A continuación se encuentran las constantes para el **miembro dwAltere** y sus modos de sincronización subordinados correspondientes.
 
 
 

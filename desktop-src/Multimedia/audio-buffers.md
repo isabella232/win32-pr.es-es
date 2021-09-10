@@ -9,12 +9,12 @@ keywords:
 - CapCaptureSetSetup macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7993e3dc89abda520c0f1c5bda90f3eb209aca31e36071a304af01fb420d821e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f1a67f120dc2d2ff956148e5dd4e3992a960641d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119692105"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371954"
 ---
 # <a name="audio-buffers"></a>Búferes de audio
 

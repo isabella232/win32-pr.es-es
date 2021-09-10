@@ -1,6 +1,6 @@
 ---
 title: MCI_RECORD comando (Mmsystem.h)
-description: El comando MCI \_ RECORD inicia la grabación desde la posición actual o desde una ubicación especificada a otra ubicación especificada.
+description: El comando MCI RECORD inicia la grabación desde la posición actual o desde \_ una ubicación especificada a otra ubicación especificada.
 ms.assetid: d3c4e8a3-7d81-428e-91d8-d8d63fc0aa02
 keywords:
 - MCI_RECORD comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 327b9ed9b138b581bec17d8bfcfe19ae67bb07d59be2781af54e22a85e2133c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec1cd15974753b8f40abd87b8d93622c090e2a57
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117803456"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369973"
 ---
 # <a name="mci_record-command"></a>Comando MCI \_ RECORD
 
-El [**comando MCI \_ RECORD**](mci-record-parms.md) inicia la grabación desde la posición actual o desde una ubicación especificada a otra ubicación especificada. Los dispositivos VCR y de audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores DE MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
+El [**comando MCI \_ RECORD**](mci-record-parms.md) inicia la grabación desde la posición actual o desde una ubicación especificada a otra ubicación especificada. Los dispositivos VCR y audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,17 +60,17 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ 
 <span id="lpRecord"></span><span id="lprecord"></span><span id="LPRECORD"></span>*lpRecord*
 </dt> <dd>
 
-Puntero a una [**estructura MCI \_ RECORD \_ PARMS.**](mci-record-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI RECORD \_ PARMS.**](mci-record-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este comando es compatible con los dispositivos que devuelven **TRUE** cuando se llama al comando [ \_ GETDEVCAPS](mci-getdevcaps.md) de MCI con la marca \_ MCI GETDEVCAPS \_ CAN \_ RECORD. Para el controlador MCIWAVE, todos los datos registrados después de abrir un archivo se descartan si el archivo se cierra sin guardarlo.
+Este comando es compatible con dispositivos que devuelven **TRUE** cuando se llama al comando [ \_ GETDEVCAPS](mci-getdevcaps.md) de MCI con la marca \_ GETDEVCAPS \_ CAN RECORD de MCI. \_ Para el controlador MCIWAVE, todos los datos registrados después de abrir un archivo se descartan si el archivo se cierra sin guardarlo.
 
 Las siguientes marcas adicionales se aplican a todos los dispositivos que admiten MCI \_ RECORD:
 
@@ -90,7 +90,7 @@ La información recién registrada debe insertarse o pegarse en los datos existe
 
 </dd> <dt>
 
-<span id="MCI_RECORD_OVERWRITE"></span><span id="mci_record_overwrite"></span>\_SOBRESCRITURA DE REGISTROS MCI \_
+<span id="MCI_RECORD_OVERWRITE"></span><span id="mci_record_overwrite"></span>SOBRESCRITURA \_ DE REGISTROS MCI \_
 </dt> <dd>
 
 Los datos deben sobrescribir los datos existentes. The MCIWAVE. El dispositivo DRV devuelve MCIERR \_ UNSUPPORTED \_ FUNCTION en respuesta a esta marca.
@@ -100,7 +100,7 @@ Los datos deben sobrescribir los datos existentes. The MCIWAVE. El dispositivo D
 <span id="MCI_TO"></span><span id="mci_to"></span>MCI \_ TO
 </dt> <dd>
 
-Se incluye una ubicación final en el **miembro dwTo** de la estructura identificada por *lpRecord*. Las unidades asignadas a los valores de posición se especifican con la marca MCI \_ SET TIME FORMAT del comando \_ \_ [MCI \_ SET.](mci-set.md) Si no se especifica MCI TO, la ubicación final tiene como valor predeterminado \_ el final del contenido.
+Se incluye una ubicación final en el **miembro dwTo** de la estructura identificada por *lpRecord*. Las unidades asignadas a los valores de posición se especifican con la marca MCI \_ SET TIME FORMAT del comando \_ \_ [MCI \_ SET.](mci-set.md) Si no se especifica MCI TO, la ubicación final tiene como valor \_ predeterminado el final del contenido.
 
 </dd> </dl>
 
@@ -111,28 +111,28 @@ Las siguientes marcas adicionales se usan con el **tipo de dispositivo digitalvi
 <span id="MCI_DGV_RECORD_AUDIO_STREAM"></span><span id="mci_dgv_record_audio_stream"></span>SECUENCIA DE \_ AUDIO DE GRABACIÓN DE MCI DGV \_ \_ \_
 </dt> <dd>
 
-Se incluye un número de secuencia de audio en el **miembro dwAudioStream** de la estructura identificada *por lpRecord*. Si omite esta marca, los datos de audio se graban en la primera secuencia física.
+Se incluye un número de secuencia de audio en el **miembro dwAudioStream** de la estructura identificada por *lpRecord*. Si omite esta marca, los datos de audio se graban en la primera secuencia física.
 
 </dd> <dt>
 
-<span id="MCI_DGV_RECORD_HOLD"></span><span id="mci_dgv_record_hold"></span>RETENCIÓN DE \_ REGISTROS DE MCI DGV \_ \_
+<span id="MCI_DGV_RECORD_HOLD"></span><span id="mci_dgv_record_hold"></span>RETENCIÓN DE \_ REGISTROS DGV \_ de MCI \_
 </dt> <dd>
 
-Cuando se detenga la grabación, la pantalla contendrá la última imagen y no se reanudará mostrando el vídeo hasta que se emita un comando monitor de [MCI. \_ ](mci-monitor.md)
+Cuando se detenga la grabación, la pantalla contendrá la última imagen y no reanudará la presentación del vídeo hasta que se emita un comando [MCI \_ MONITOR.](mci-monitor.md)
 
 </dd> <dt>
 
 <span id="MCI_DGV_RECORD_VIDEO_STREAM"></span><span id="mci_dgv_record_video_stream"></span>SECUENCIA DE \_ VÍDEO DE GRABACIÓN DE MCI DGV \_ \_ \_
 </dt> <dd>
 
-Se incluye un número de secuencia de vídeo en el **miembro dwVideoStream** de la estructura identificada *por lpRecord*. Si omite esta marca, los datos de vídeo se graban en la primera secuencia física.
+Se incluye un número de secuencia de vídeo en el **miembro dwVideoStream** de la estructura identificada por *lpRecord*. Si omite esta marca, los datos de vídeo se graban en la primera secuencia física.
 
 </dd> <dt>
 
 <span id="MCI_DGV_RECT"></span><span id="mci_dgv_rect"></span>MCI \_ DGV \_ RECT
 </dt> <dd>
 
-Se especifica un rectángulo en el miembro **rc** de la estructura identificada por *lpRecord*. El rectángulo especifica la región de la entrada externa utilizada como origen de los píxeles comprimidos y guardados. Este rectángulo tiene como valor predeterminado el rectángulo especificado (o predeterminado) por la marca PUT VIDEO de MCI DGV para \_ \_ el comando PUT \_ [ \_ de MCI.](mci-put.md) Cuando se establece de forma diferente que el rectángulo de vídeo, lo que se muestra no es lo que se graba
+Se especifica un rectángulo en el miembro **rc** de la estructura identificada por *lpRecord*. El rectángulo especifica la región de la entrada externa utilizada como origen de los píxeles comprimidos y guardados. Este rectángulo tiene como valor predeterminado el rectángulo especificado (o predeterminado) por la marca PUT VIDEO de MCI DGV para \_ \_ el comando PUT \_ [ \_ de MCI.](mci-put.md) Cuando se establece de forma diferente que el rectángulo de vídeo, lo que se muestra no es lo que se registra
 
 </dd> </dl>
 
@@ -156,7 +156,7 @@ Busque el dispositivo al principio del medio, comience a grabar vídeo y audio e
 
 </dd> </dl>
 
-En el caso de los dispositivos *VCR, lpRecord* apunta a una estructura [**\_ MCI VCR \_ RECORD \_ PARMS.**](mci-vcr-record-parms.md)
+En el caso de los dispositivos VCR, *lpRecord* apunta a una estructura [**\_ MCI VCR \_ RECORD \_ PARMS.**](mci-vcr-record-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -174,7 +174,7 @@ En el caso de los dispositivos *VCR, lpRecord* apunta a una estructura [**\_ MCI
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

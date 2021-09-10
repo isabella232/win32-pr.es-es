@@ -3,7 +3,7 @@ title: Comando mark
 description: El comando mark controla la grabación y el borrado de marcas en la cinta de vídeo. Los dispositivos VCR reconocen este comando.
 ms.assetid: d5f7a546-dc46-459c-b5dc-0651bca842cb
 keywords:
-- Comando mark Windows Multimedia
+- Mark command Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0f59f56a6d542120d088d764d1b301329a7f0b167f25952587a9e743878643e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 570968af05424597a7fe2b59e86e0364694e0e1f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138756"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369895"
 ---
 # <a name="mark-command"></a>Comando mark
 
@@ -53,10 +53,10 @@ Una de las marcas siguientes.
 
 
 
-| Valor | Significado                                                                                                                                |
+| Value | Significado                                                                                                                                |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------|
-| erase | Borra una marca en la posición actual, si existe una. Para borrar una marca, primero busque la marca y, a continuación, emita el comando mark "erase". |
-| escritura | Escribe una marca en la posición actual. Es posible que el VCR tenga que estar en modo de reproducción o registro para que este comando se pueda ejecutar correctamente.                    |
+| erase | Borra una marca en la posición actual, si existe una. Para borrar una marca, primero busque la marca y luego emita el comando "erase" de la marca. |
+| escritura | Escribe una marca en la posición actual. Es posible que el VCR tenga que estar en modo de reproducción o de registro para que este comando se pueda ejecutar correctamente.                    |
 
 
 
@@ -73,9 +73,9 @@ Puede ser "wait", "notify" o "test". Para obtener más información sobre estas 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las marcas son señales especiales escritas en el contenido que el VCR puede detectar durante las búsquedas de alta velocidad. Las marcas son específicas de VCR.
 
@@ -83,7 +83,7 @@ Las marcas son señales especiales escritas en el contenido que el VCR puede det
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -94,7 +94,7 @@ Las marcas son señales especiales escritas en el contenido que el VCR puede det
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

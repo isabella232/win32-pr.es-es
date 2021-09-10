@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb54b56d35ad34d10d95c2a34b52b370fb856d9c958dd42223c7f0a08ddbdfb4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c6d42d4d39f31b82c7461a5bd8d8561b0da1b6bf
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807445"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370232"
 ---
 # <a name="mm_mcisignal-message"></a>Mensaje \_ MM MCISIGNAL
 
@@ -56,7 +56,7 @@ Valor pasado en el **miembro dwUserParm** de la estructura **\_ MCI DGV \_ SIGNA
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -68,13 +68,13 @@ Valor pasado en el **miembro dwUserParm** de la estructura **\_ MCI DGV \_ SIGNA
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Mensajes de MCI](mci-messages.md)
 </dt> <dt>
 
-[**signal**](signal.md)
+[**Señal**](signal.md)
 </dt> </dl>
 
  

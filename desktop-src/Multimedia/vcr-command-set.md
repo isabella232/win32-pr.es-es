@@ -4,12 +4,12 @@ description: Conjunto de comandos vcr
 ms.assetid: e17ec75d-a98f-46ea-8bef-7e45e1696f43
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00fdc15ca4f8c151a8202642bcd11a650fa5481c979ab794552675fb109c75ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa6f84b4542b6ea87b5d05ae8d1cda2374fcac2c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118370261"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371582"
 ---
 # <a name="vcr-command-set"></a>Conjunto de comandos vcr
 
@@ -19,11 +19,11 @@ Los VCR admiten el siguiente conjunto de comandos.
 
 | Formulario de cadena                        | Formulario de mensaje                                |
 |------------------------------------|---------------------------------------------|
-| [**Romper**](break.md)             | [**MCI \_ BREAK**](mci-break.md)             |
+| [**break**](break.md)             | [**MCI \_ BREAK**](mci-break.md)             |
 | [**Capacidad**](capability.md)   | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md)   |
 | [**Cue**](cue.md)                 | [**MCI \_ CUE**](mci-cue.md)                 |
 | [**Congelar**](freeze.md)           | [**MCI \_ FREEZE**](mci-freeze.md)           |
-| [**Índice**](./windows-multimedia-start-page.md)             | [**ÍNDICE \_ DE MCI**](mci-index.md)             |
+| [**índice**](./windows-multimedia-start-page.md)             | [**ÍNDICE \_ DE MCI**](mci-index.md)             |
 | [**Información**](info.md)               | [**INFORMACIÓN \_ de MCI**](mci-info.md)               |
 | [**Lista**](list.md)               | [**LISTA \_ DE MCI**](mci-list.md)               |
 | [**Marca**](mark.md)               | [**MCI \_ MARK**](mci-mark.md)               |

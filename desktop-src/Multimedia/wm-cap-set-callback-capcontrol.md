@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_SET_CALLBACK_CAPCONTROL mensaje (Vfw.h)
-description: El mensaje WM CAP SET CALLBACK CAPCONTROL establece una función de devolución de llamada en \_ la aplicación que le ofrece un control de grabación \_ \_ \_ preciso. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnCapControl.
+description: El mensaje CAPCONTROL de devolución de llamada DE WM CAP SET establece una función de devolución de \_ llamada en la aplicación que le da un control de grabación \_ \_ \_ preciso. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnCapControl.
 ms.assetid: 1e93ed7b-8205-45fe-bdcf-efe3f709f728
 keywords:
 - WM_CAP_SET_CALLBACK_CAPCONTROL mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70e5786ef67fe66c7ad0dac463824dcd49bfb34e4c8239ddca74ed60e3861bea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fda38bbc79461b7c5ccaf9b3a32c2c3a0f9e3e1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369523"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371510"
 ---
-# <a name="wm_cap_set_callback_capcontrol-message"></a>Mensaje \_ \_ CAPCONTROL DE \_ DEVOLUCIÓN DE LLAMADA DE \_ WM CAP SET
+# <a name="wm_cap_set_callback_capcontrol-message"></a>Mensaje \_ \_ CAPCONTROL DE \_ DEVOLUCIÓN DE \_ LLAMADA DE WM CAP SET
 
-El **mensaje WM CAP SET \_ \_ \_ CALLBACK \_ CAPCONTROL** establece una función de devolución de llamada en la aplicación que le ofrece un control de grabación preciso. Puede enviar este mensaje explícitamente o mediante la macro [**capSetCallbackOnCapControl.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackoncapcontrol)
+El **mensaje \_ \_ \_ \_ CAPCONTROL de devolución de** llamada DE WM CAP SET establece una función de devolución de llamada en la aplicación que le da un control de grabación preciso. Puede enviar este mensaje explícitamente o mediante la [**macro capSetCallbackOnCapControl.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackoncapcontrol)
 
 
 ```C++
@@ -47,17 +47,17 @@ Puntero a la función de devolución de llamada, de tipo [**capControlCallback**
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza **correctamente o FALSE** si hay una captura de streaming o una sesión de captura de fotograma único en curso.
+Devuelve **TRUE si** se realiza correctamente o FALSE **si** hay una captura de streaming o una sesión de captura de un solo fotograma en curso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se usa una sola función de devolución de llamada para proporcionar a la aplicación un control preciso sobre los momentos en los que comienza y se completa la captura de streaming. La ventana de captura llama primero al procedimiento con *nState* establecido en CONTROLCALLBACK PREROLL una vez que se han asignado todos los búferes y se han completado todas las demás preparaciones \_ de captura. Esto proporciona a la aplicación la capacidad de preinselección de orígenes de vídeo, volviendo de la función de devolución de llamada en el momento exacto en que se va a iniciar la grabación. Un valor devuelto de **TRUE de la** función de devolución de llamada continúa la captura y un valor devuelto de **FALSE** anula la captura. Una vez que comience la captura, se llamará a esta función de devolución de llamada con frecuencia con *nState* establecido en CONTROLCALLBACK CAPTURING para permitir que la aplicación finalice la captura \_ devolviendo **FALSE**.
+Se usa una sola función de devolución de llamada para proporcionar a la aplicación un control preciso sobre los momentos en que comienza y se completa la captura de streaming. La ventana de captura llama primero al procedimiento con *nState* establecido en CONTROLCALLBACK PREROLL después de que se hayan asignado todos los búferes y de que todas las demás preparaciones \_ de captura hayan finalizado. Esto proporciona a la aplicación la capacidad de preinselección de orígenes de vídeo, volviendo de la función de devolución de llamada en el momento exacto en que se va a iniciar la grabación. Un valor devuelto de **TRUE de** la función de devolución de llamada continúa la captura y un valor devuelto de **FALSE** anula la captura. Una vez que comience la captura, se llamará a esta función de devolución de llamada con frecuencia con *nState* establecido en CONTROLCALLBACK CAPTURING para permitir que la aplicación finalice la captura \_ devolviendo **FALSE**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -65,7 +65,7 @@ Se usa una sola función de devolución de llamada para proporcionar a la aplica
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

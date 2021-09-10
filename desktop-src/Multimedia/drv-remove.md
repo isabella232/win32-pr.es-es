@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c08302d69e934ec77908b247f3c8f6368de8de4eab36809b6102b74858adde5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ccfc94d648f83e618a20323ed7bbe3694616bc06
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119496425"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370478"
 ---
 # <a name="drv_remove-message"></a>Mensaje REMOVE de DRV \_
 
@@ -47,7 +47,7 @@ Identificador de la instancia del controlador instalable.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se usan los parámetros *lParam1* y *lParam2.*
 

@@ -6,12 +6,12 @@ keywords:
 - Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c5ef021c283337c0cea2085d79fefa91667ce1dac095ff7ae17fcc448c9461c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20eb271658f77c5af4d35db96dd7bdbe6753af08
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806365"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371719"
 ---
 # <a name="opening-a-compound-device-by-using-the-filename"></a>Apertura de un dispositivo compuesto mediante el nombre de archivo
 

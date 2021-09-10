@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_DRIVER_GET_VERSION mensaje (Vfw.h)
-description: El mensaje GET VERSION del CONTROLADOR \_ DE WM CAP devuelve la información de versión del controlador de captura conectado a una ventana \_ de \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverGetVersion.
+description: El mensaje GET VERSION del controlador WM CAP devuelve la información de \_ versión del controlador de captura conectado a una ventana de \_ \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverGetVersion.
 ms.assetid: 762ebe7e-0d09-46ea-ab17-86061f0bd8f9
 keywords:
 - WM_CAP_DRIVER_GET_VERSION mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49f6bed4513383c5dd889639a78e9f00e409fe347bfd6b64b112ea830571ae55
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ced70f2d0159ef4bbad3f2d7a8027c30b2c71a5f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687095"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371419"
 ---
-# <a name="wm_cap_driver_get_version-message"></a>Mensaje GET VERSION del CONTROLADOR WM \_ CAP \_ \_ \_
+# <a name="wm_cap_driver_get_version-message"></a>Mensaje GET VERSION DEL CONTROLADOR WM \_ CAP \_ \_ \_
 
-El **mensaje GET VERSION \_ \_ \_ \_ del** CONTROLADOR DE WM CAP devuelve la información de versión del controlador de captura conectado a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro [**capDriverGetVersion.**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetversion)
+El **mensaje GET VERSION \_ \_ \_ \_ del** controlador WM CAP devuelve la información de versión del controlador de captura conectado a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capDriverGetVersion.**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetversion)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szVer);
 <span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*wSize*
 </dt> <dd>
 
-Tamaño, en bytes, del búfer definido por la aplicación al que hace referencia **szVer.**
+Tamaño, en bytes, del búfer definido por la aplicación al que hace referencia **szVer**.
 
 </dd> <dt>
 
@@ -54,11 +54,11 @@ Puntero a un búfer definido por la aplicación que se usa para devolver la info
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
+Devuelve **TRUE si** se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La información de versión es una cadena de texto recuperada del área de recursos del controlador. Las aplicaciones deben asignar aproximadamente 40 bytes para esta cadena. Si la información de versión no está disponible, se devuelve una cadena **NULL.**
+La información de versión es una cadena de texto recuperada del área de recursos del controlador. Las aplicaciones deben asignar aproximadamente 40 bytes para esta cadena. Si la información de versión no está disponible, se **devuelve una** cadena NULL.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88fe45b1346872483a4012c5f5d161dcd61020c64349fee254ae4bf337b4be8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 155ba6b65fb08411d8404920c8f3337d1bddbcb1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118370815"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369887"
 ---
 # <a name="unfreeze-command"></a>comando unfreeze
 
@@ -53,7 +53,7 @@ Marca para volver a enmarcar la adquisición de vídeo en el búfer de fotograma
 
 
 
-| Valor        | Significado        |
+| Value        | Significado        |
 |--------------|----------------|
 | digitalvideo | en *rectángulo* |
 | overlay      | en *rectángulo* |
@@ -67,7 +67,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 
 
 
-| Valor          | Significado                                                                                                                                                                                                                                                                                    |
+| Value          | Significado                                                                                                                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | en *rectángulo* | Especifica la región en la que se volverá a habilitar la adquisición de vídeo. El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2*. Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
 | input          | Descongele la imagen de entrada.                                                                                                                                                                                                                                                                  |
@@ -102,18 +102,18 @@ unfreeze vboard at 10 20 90 165
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

@@ -1,12 +1,12 @@
 ---
-title: Creación y eliminación de un archivo
-description: Creación y eliminación de un archivo
+title: Crear y eliminar un archivo
+description: Crear y eliminar un archivo
 ms.assetid: a4b4a310-7230-4f1d-b084-c47db39adaac
 keywords:
 - E/S de archivos multimedia, crear archivos
 - E/S de archivo, crear archivos
-- entrada y salida (E/S), crear archivos
-- E/S (entrada y salida), crear archivos
+- entrada y salida (E/S), creación de archivos
+- E/S (entrada y salida), creación de archivos
 - crear archivos de E/S
 - E/S de archivos multimedia, eliminar archivos
 - E/S de archivo, eliminar archivos
@@ -16,14 +16,14 @@ keywords:
 - Función mmioOpen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91a2ee8e70508e2c5dc3b24c084cf0b081b6629a519703ef43a15845ef3ec76a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c22cd6330874d0b5da74d69193359c025c709c79
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785735"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371804"
 ---
-# <a name="creating-and-deleting-a-file"></a>Creación y eliminación de un archivo
+# <a name="creating-and-deleting-a-file"></a>Crear y eliminar un archivo
 
 Para crear un archivo, establezca el *parámetro dwOpenFlags* de la [**función mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) en MMIO \_ CREATE. En el ejemplo siguiente se crea un archivo y se abre para leer y escribir.
 
@@ -42,7 +42,7 @@ else
 
 Si el archivo que está creando ya existe, se truncará a una longitud cero.
 
-Para eliminar un archivo, establezca el *parámetro dwOpenFlags* de la **función mmioOpen** en MMIO \_ DELETE. Después de eliminar un archivo, no se puede recuperar por ningún medio estándar. Si la aplicación elimina un archivo a petición de un usuario, consulte al usuario antes de eliminar el archivo para asegurarse de que el usuario desea eliminarlo.
+Para eliminar un archivo, establezca el *parámetro dwOpenFlags* de la **función mmioOpen** en MMIO \_ DELETE. Después de eliminar un archivo, no se puede recuperar por ningún medio estándar. Si la aplicación elimina un archivo a petición de un usuario, consulte al usuario antes de eliminarlo para asegurarse de que el usuario desea eliminarlo.
 
  
 

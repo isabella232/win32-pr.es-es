@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre las siguientes funciones 
 ms.assetid: BAFABF0D-B803-4F7C-8807-4FBA5B5AC743
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78ea5b56e65552c10f24ed95a70871919ec7301bf9759a8662e768076a762015
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e62ac294ac39dee44f3a820ee8c4680e46db16a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118504635"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "124360831"
 ---
 # <a name="directdraw-callback-functions"></a>Funciones de devolución de llamada de DirectDraw
 

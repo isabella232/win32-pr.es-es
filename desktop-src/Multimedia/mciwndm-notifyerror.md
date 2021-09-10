@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_NOTIFYERROR mensaje (Vfw.h)
-description: El mensaje NOTIFYERROR de MCIWNDM notifica a la ventana primaria de una aplicación que se ha producido \_ un error de MCI.
+description: El mensaje NOTIFYERROR de MCIWNDM notifica a la ventana primaria de una \_ aplicación que se produjo un error de MCI.
 ms.assetid: 0f54886a-77dc-43cc-be46-2d322c75471a
 keywords:
 - MCIWNDM_NOTIFYERROR mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5dcca10f593c14e1532aa53b59b8c0bb106ea721ad0d09bde742727fddaeb07
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbef9180c31091f3bd1a85f23a08990c2f7e7ea0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118374136"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370699"
 ---
 # <a name="mciwndm_notifyerror-message"></a>Mensaje NOTIFYERROR de MCIWNDM \_
 
@@ -52,7 +52,7 @@ Código numérico para el error de MCI.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede habilitar la notificación de errores de MCI especificando el estilo de ventana \_ NOTIFYERROR de MCIWNDF.
 
@@ -60,7 +60,7 @@ Puede habilitar la notificación de errores de MCI especificando el estilo de ve
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

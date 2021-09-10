@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e76f0e88642d7d28771090b0690191eb4e4e72f5749dc74a9e42d90bfea87812
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d36cec54e5775641118679b24b0d4b3b1767693
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119781405"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371425"
 ---
 # <a name="wm_cap_file_allocate-message"></a>Mensaje \_ WM CAP FILE \_ \_ ALLOCATE
 
@@ -51,7 +51,7 @@ Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
 Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede mejorar significativamente el rendimiento de la captura de streaming mediante la preasignación de un archivo de captura lo suficientemente grande como para almacenar un clip de vídeo completo y desfragmentando el archivo de captura antes de capturar el clip.
 

@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_SET_PREVIEWRATE mensaje (Vfw.h)
-description: El mensaje WM CAP SET PREVIEWRATE establece la velocidad de visualización \_ de \_ \_ fotogramas en modo de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capPreviewRate.
+description: El mensaje WM \_ CAP \_ SET \_ PREVIEWRATE establece la velocidad de visualización de fotogramas en modo de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capPreviewRate.
 ms.assetid: 1189ad4a-1f32-4684-920b-ee3c26ef97f8
 keywords:
 - WM_CAP_SET_PREVIEWRATE mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9b9a24614a40c5efb545b91a80069bf915c77c4b7d8fb289ed581f750ac0cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1134255b73e579841800af6cd5f6900965217106
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135087"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371522"
 ---
 # <a name="wm_cap_set_previewrate-message"></a>Mensaje \_ WM CAP SET \_ \_ PREVIEWRATE
 
@@ -41,17 +41,17 @@ lParam = 0L;
 <span id="wMS"></span><span id="wms"></span><span id="WMS"></span>*Wms*
 </dt> <dd>
 
-Velocidad, en milisegundos, en la que se capturan y muestran nuevos fotogramas.
+Velocidad, en milisegundos, a la que se capturan y muestran nuevos fotogramas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
+Devuelve **TRUE** si se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El modo de vista previa usa recursos de CPU considerables. Las aplicaciones pueden deshabilitar la vista previa o reducir la velocidad de vista previa cuando otra aplicación tiene el foco. Durante la captura de vídeo de streaming, la tarea de vista previa tiene una prioridad menor que escribir fotogramas en el disco y los fotogramas de vista previa solo se muestran si no hay ningún otro búfer disponible para escritura.
+El modo de versión preliminar usa recursos de CPU considerables. Las aplicaciones pueden deshabilitar la vista previa o reducir la velocidad de vista previa cuando otra aplicación tiene el foco. Durante la captura de vídeo de streaming, la tarea de vista previa tiene menos prioridad que escribir fotogramas en el disco y los fotogramas de vista previa solo se muestran si no hay ningún otro búfer disponible para escritura.
 
 ## <a name="requirements"></a>Requisitos
 

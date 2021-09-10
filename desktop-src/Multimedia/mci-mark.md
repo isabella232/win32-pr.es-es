@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e83cdb6c8c62fa19d66dc6042b6c8b16837f9dc4657060c0955098ed90e1c016
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ddc80decb4559659efb29132f17f18459c334fb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375000"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370039"
 ---
 # <a name="mci_mark-command"></a>Comando MCI \_ MARK
 
-El comando MCI MARK registra o borra las marcas que se pueden usar con el \_ [comando MCI \_ SEEK](mci-seek.md) para búsquedas de alta velocidad. Los dispositivos VCR reconocen este comando.
+El comando MCI MARK registra o borra las marcas que se pueden usar con el comando \_ [ \_ MCI SEEK](mci-seek.md) para búsquedas de alta velocidad. Los dispositivos VCR reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,15 +60,15 @@ MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Para obtener información sobre estas 
 <span id="lpMark"></span><span id="lpmark"></span><span id="LPMARK"></span>*lpMark*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas adicionales se aplican a los dispositivos VCR:
 
@@ -81,7 +81,7 @@ Borra una marca en la posición actual si existe una.
 
 </dd> <dt>
 
-<span id="MCI_VCR_MARK_WRITE"></span><span id="mci_vcr_mark_write"></span>MCI \_ VCR \_ MARK \_ WRITE
+<span id="MCI_VCR_MARK_WRITE"></span><span id="mci_vcr_mark_write"></span>ESCRITURA DE \_ MARCA DE VCR \_ DE MCI \_
 </dt> <dd>
 
 Escribe una marca en la posición actual.
@@ -92,7 +92,7 @@ Escribe una marca en la posición actual.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -100,11 +100,11 @@ Escribe una marca en la posición actual.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

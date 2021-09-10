@@ -1,9 +1,9 @@
 ---
-title: escape (comando)
-description: El comando escape envía información específica del dispositivo a un dispositivo. Los dispositivos de videodisco reconocen este comando.
+title: comando escape
+description: El comando de escape envía información específica del dispositivo a un dispositivo. Los dispositivos Videodisc reconocen este comando.
 ms.assetid: 16e0e2b6-6d98-440a-86c1-eca8201ad61a
 keywords:
-- comando de escape de Windows multimedia
+- Comando escape Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -13,17 +13,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b04f7a2ef6c2e91adc9b24a044d0a7e941843f9e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105651384"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369883"
 ---
-# <a name="escape-command"></a>escape (comando)
+# <a name="escape-command"></a>comando escape
 
-El comando escape envía información específica del dispositivo a un dispositivo. Los dispositivos de videodisco reconocen este comando.
+El comando de escape envía información específica del dispositivo a un dispositivo. Los dispositivos Videodisc reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,24 +49,24 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszEscape"></span><span id="lpszescape"></span><span id="LPSZESCAPE"></span>*lpszEscape*
 </dt> <dd>
 
-Información personalizada que se va a enviar al dispositivo.
+Información personalizada que se enviará al dispositivo.
 
 </dd> <dt>
 
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente envía la cadena de escape "SA" al dispositivo de VideoDisc.
+El siguiente comando envía la cadena de escape "SA" al dispositivo videodisc.
 
 ``` syntax
 escape videodisc SA
@@ -90,7 +90,7 @@ escape videodisc SA
 [MCI](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

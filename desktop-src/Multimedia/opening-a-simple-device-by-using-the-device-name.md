@@ -6,12 +6,12 @@ keywords:
 - Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15d186451717a056188d6fc990188c7e73fcf34cf1339b0787f7cec6e7573557
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f84a852a18da3edb4431308259bacf38623bce3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117802332"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371720"
 ---
 # <a name="opening-a-simple-device-by-using-the-device-name"></a>Abrir un dispositivo simple mediante el nombre del dispositivo
 

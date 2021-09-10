@@ -4,12 +4,12 @@ description: Si la suplantación se realiza correctamente, significa que el clie
 ms.assetid: 7539bbee-063f-4788-aece-7b70684826c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fca691c89e7ff4a12e279ae0ecd0fd04cb31a951c8ac3f2671201fe99dd5900a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85286e5fa880ea7620d6f6ccb6107bf139ec2005
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119756395"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369544"
 ---
 # <a name="impersonation-levels"></a>Niveles de suplantación
 
@@ -36,7 +36,7 @@ Nivel predeterminado del sistema. El servidor puede obtener la identidad del cli
 <span id="impersonate__RPC_C_IMP_LEVEL_IMPERSONATE_"></span><span id="impersonate__rpc_c_imp_level_impersonate_"></span><span id="IMPERSONATE__RPC_C_IMP_LEVEL_IMPERSONATE_"></span>suplantar (RPC \_ C \_ IMP LEVEL \_ \_ IMPERSONATE)
 </dt> <dd>
 
-El servidor puede suplantar el contexto de seguridad del cliente mientras actúa en su nombre. El servidor puede obtener acceso a los recursos locales como el cliente. Si el servidor es local, puede acceder a los recursos de red como el cliente. Si el servidor es remoto, solo puede acceder a los recursos que se encuentran en el mismo equipo que el servidor.
+El servidor puede suplantar el contexto de seguridad del cliente mientras actúa en su nombre. El servidor puede obtener acceso a los recursos locales como el cliente. Si el servidor es local, puede acceder a los recursos de red como el cliente. Si el servidor es remoto, solo puede acceder a los recursos que están en el mismo equipo que el servidor.
 
 </dd> <dt>
 
@@ -54,13 +54,13 @@ Para que la suplantación funcione en el nivel de delegado, se deben cumplir los
 
 </dd> </dl>
 
-Al elegir el nivel de suplantación, el cliente indica al servidor hasta dónde puede llegar suplantando al cliente. El cliente establece el nivel de suplantación en el proxy que usa para comunicarse con el servidor.
+Al elegir el nivel de suplantación, el cliente indica al servidor hasta dónde puede llegar la suplantación del cliente. El cliente establece el nivel de suplantación en el proxy que usa para comunicarse con el servidor.
 
 ## <a name="setting-the-impersonation-level"></a>Establecer el nivel de suplantación
 
 Hay dos maneras de establecer el nivel de suplantación:
 
--   El cliente puede establecerlo en todo el proceso, a través de una llamada a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
+-   El cliente puede establecerlo en todo el proceso, mediante una llamada a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
 -   Un cliente puede establecer la seguridad de nivel de proxy en una interfaz de un objeto remoto mediante una llamada a [**IClientSecurity::SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) (o a la función auxiliar [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)).
 
 Para establecer el nivel de suplantación, pase un valor de RPC C IMP LEVEL xxx adecuado a \_ \_ \_ \_ [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) o [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) a través del *parámetro dwImpLevel.*

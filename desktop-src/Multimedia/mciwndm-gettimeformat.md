@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3badb7c7722db6444d3bd928535790876e0a128e69e50323cea3fe39c2dd987a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a09f969c009ff23bc0951ed2efbc0dbf7aa95dda
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117985913"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370682"
 ---
 # <a name="mciwndm_gettimeformat-message"></a>Mensaje GETTIMEFORMAT de MCIWNDM \_
 
@@ -56,7 +56,7 @@ Puntero a un búfer que contiene la forma de cadena terminada en NULL del format
 
 Devuelve un entero correspondiente a la constante MCI que define el formato de hora.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la cadena de formato de hora es mayor que el búfer devuelto, MCIWnd trunca la cadena.
 
@@ -67,7 +67,7 @@ Un dispositivo MCI puede admitir uno o varios de los siguientes formatos de hora
 | Formato de hora                      | Constante MCI               |
 |----------------------------------|----------------------------|
 | Bytes                            | BYTES DE FORMATO MCI \_ \_         |
-| Marcos                           | MARCOS DE \_ FORMATO MCI \_        |
+| Marcos                           | MARCOS DE FORMATO MCI \_ \_        |
 | Horas, minutos, segundos          | MCI \_ FORMAT \_ HMS           |
 | Milisegundos                     | MILISEGUNDOS DE FORMATO MCI \_ \_  |
 | Minutos, segundos, fotogramas         | MCI \_ FORMAT \_ MSF           |
@@ -75,7 +75,7 @@ Un dispositivo MCI puede admitir uno o varios de los siguientes formatos de hora
 | SMPTE 24                         | MCI \_ FORMAT \_ SMPTE \_ 24     |
 | SMPTE 25                         | MCI \_ FORMAT \_ SMPTE \_ 25     |
 | SMPTE 30 drop                    | MCI \_ FORMAT \_ SMPTE \_ 30DROP |
-| SMPTE 30 (sin colocar)              | MCI \_ FORMAT \_ SMPTE \_ 30     |
+| SMPTE 30 (sin quitar)              | MCI \_ FORMAT \_ SMPTE \_ 30     |
 | Seguimientos, minutos, segundos, fotogramas | \_TMSF CON \_ FORMATO MCI          |
 
 
@@ -86,7 +86,7 @@ Un dispositivo MCI puede admitir uno o varios de los siguientes formatos de hora
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -94,7 +94,7 @@ Un dispositivo MCI puede admitir uno o varios de los siguientes formatos de hora
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

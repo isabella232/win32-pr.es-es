@@ -6,12 +6,12 @@ keywords:
 - COM de clave del Registro de versiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b16232e4269d513443c1bf018e010d5459710e64b6e750079c8ec1b42f7606f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dcfe909113dad3b0d84ac692463661e82750aaa0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119991985"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369607"
 ---
 # <a name="version-com"></a>Versión (COM)
 
@@ -25,9 +25,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
       Version = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se trata de **un valor \_ REG SZ.**
+Se trata de **un valor \_ SZ reg.**
 
 El número de versión debe coincidir con la versión de la biblioteca de tipos asociada al control .
 

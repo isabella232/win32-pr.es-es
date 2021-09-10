@@ -6,12 +6,12 @@ keywords:
 - Com de clave del Registro de protocolo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7721e4f90a122fcbc519163d80c1e8e549f2b6aa05526d33d9693783abd1276a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 176cb3fce826a6416270fc35a902621521341e6a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130027"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369480"
 ---
 # <a name="protocol"></a>Protocolo
 
@@ -31,7 +31,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes
                ...
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **entrada StdFileEditing especifica** información de compatibilidad de OLE 1. Solo debe estar presente si los objetos de esta clase se pueden insertar en contenedores OLE 1.
 

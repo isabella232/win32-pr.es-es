@@ -3,19 +3,19 @@ title: Referencia del controlador instalable
 description: Referencia del controlador instalable
 ms.assetid: 869b92f1-2711-4198-9911-3df1ebc58d5f
 keywords:
-- Windows de controlador multimedia instalable
-- multimedia, referencia de controladores instalables
+- Windows referencia de controlador multimedia instalable
+- multimedia, referencia del controlador instalable
 - controladores instalables, referencia
 - referencia del controlador instalable, acerca de
 - referencia de los controladores instalables, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6dd2488f0b07805edbcdc90187309db2a04c9c0ced4f4b5b0af4e50bd983ca4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e90475063f9d9211e841902fe73d2f09dc6130d8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038645"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370459"
 ---
 # <a name="installable-driver-reference"></a>Referencia del controlador instalable
 
@@ -30,9 +30,9 @@ Las funciones y los mensajes asociados a los controladores instalables se agrupa
 ## <a name="closedriver"></a>CloseDriver
 
 -   [**DRV \_ CLOSE**](drv-close.md)
--   [**DRV \_ DISABLE**](drv-disable.md)
--   [**DRV \_ ENABLE**](drv-enable.md)
--   [**DRV \_ FREE**](drv-free.md)
+-   [**DESHABILITACIÓN DE DRV \_**](drv-disable.md)
+-   [**HABILITACIÓN DE DRV \_**](drv-enable.md)
+-   [**DRV \_ GRATIS**](drv-free.md)
 -   [**CARGA \_ DE DRV**](drv-load.md)
 -   [**DRV \_ OPEN**](drv-open.md)
 

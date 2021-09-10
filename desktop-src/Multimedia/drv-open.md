@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 537d3067c85cf3f92eaf2fae81cd392490ff9fa728ed8377d8241c7204cf64e1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 53c56e62cb85f09a3846c6d95d723b9fa05d95a7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119691585"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370442"
 ---
-# <a name="drv_open-message"></a>Mensaje DE \_ DRV OPEN
+# <a name="drv_open-message"></a>Mensaje DRV \_ OPEN
 
 Dirige al controlador para que abra una nueva instancia.
 
@@ -59,9 +59,9 @@ Datos específicos del controlador de 32 bits.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si se realiza correctamente o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el controlador devuelve un valor distinto de cero, el sistema usa ese valor como identificador del controlador (el parámetro *dwDriverId)* en los mensajes que envía posteriormente a la instancia del controlador. El controlador puede devolver cualquier tipo de valor como identificador. Por ejemplo, algunos controladores devuelven direcciones de memoria que apuntan a información específica de la instancia. El uso de este método para especificar identificadores para una instancia de controlador proporciona a los controladores acceso listo a la información mientras están procesando mensajes.
 

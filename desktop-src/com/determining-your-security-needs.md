@@ -1,19 +1,19 @@
 ---
 title: Determinar las necesidades de seguridad
-description: La configuración de la seguridad COM para la aplicación depende del tipo de seguridad que necesite la aplicación. Hay varias situaciones comunes que determinan lo que debe hacer.
+description: La configuración de la seguridad COM para la aplicación depende del tipo de seguridad que necesita la aplicación. Hay varias situaciones comunes que determinan lo que debe hacer.
 ms.assetid: db5c9adb-b04b-4621-b738-2959cac40985
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d57ccbbc8fc96b7c94e90fd3925dfb2ffff07225c34ebe1da34353f42b08b3ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62cacef6d4e3aab59cb3b603125c36dd17d07846
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993235"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369748"
 ---
 # <a name="determining-your-security-needs"></a>Determinar las necesidades de seguridad
 
-La configuración de la seguridad COM para la aplicación depende del tipo de seguridad que necesite la aplicación. Hay varias situaciones comunes que determinan lo que debe hacer.
+La configuración de la seguridad COM para la aplicación depende del tipo de seguridad que necesita la aplicación. Hay varias situaciones comunes que determinan lo que debe hacer.
 
 Si decide usar los valores predeterminados de seguridad COM, no tiene que hacer nada: COM lo controla todo. Para obtener información sobre cuáles son estas configuraciones [predeterminadas,](com-security-defaults.md)vea Valores predeterminados de seguridad COM.
 

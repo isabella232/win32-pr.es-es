@@ -3,7 +3,7 @@ title: comando load
 description: El comando load carga un archivo en un formato específico del dispositivo. Los dispositivos de superposición de vídeo y vídeo digital reconocen este comando.
 ms.assetid: ae7bfe92-7957-4756-a408-e3ab60dd9aa4
 keywords:
-- comando load Windows Multimedia
+- cargar comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c66822de727ea45e93839c710dae19739cba8adaac8b571846c1fa23ef0083c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b199a6d3aea8a2697217eb75176c24b2b0bc2e2a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139360"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369891"
 ---
 # <a name="load-command"></a>comando load
 
@@ -64,7 +64,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El dispositivo "vidboard" envía un mensaje de notificación cuando se completa la carga.
 
@@ -80,7 +80,7 @@ load vidboard c:\vid\fish.vid notify
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -91,7 +91,7 @@ load vidboard c:\vid\fish.vid notify
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

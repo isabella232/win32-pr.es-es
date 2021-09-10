@@ -6,12 +6,12 @@ keywords:
 - ProxyStubClsid32 valor del Registro COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d9098ffc7771d3f900489292694ade462a2214e733294a1ed18e6ddb9817692
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7d1d70ad2deb4f747ecf57fd12f0707ac8b2b9d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118309901"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369595"
 ---
 # <a name="proxystubclsid32"></a>ProxyStubClsid32
 
@@ -25,7 +25,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
       ProxyStubClsid32 = {CLSID}
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ SZ reg** que especifica el CLSID para el IID.
 

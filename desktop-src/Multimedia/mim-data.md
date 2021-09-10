@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bebbb9ca6016706605de8fed29e5fa5ebaf6055f4a730fb563323f306606b866
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a11d2701d488fe29ae6d0bc0742c32c803b28076
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118137294"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370789"
 ---
 # <a name="mim_data-message"></a>\_MIM Mensaje DATA
 
-El **MIM \_ DATA** se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje DE MIDI.
+El **MIM \_ DATA** se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje MIDI.
 
 
 ```C++
@@ -45,7 +45,7 @@ Mensaje DE MIDI que se recibió. El mensaje se empaqueta en un valor doubleword 
 
 
 
-| Requisito | Valor | Descripción |
+| Requisito | Value | Descripción |
 |-----------|-----------------|-----------------------------------------------------|
 | Palabra alta | Byte de orden superior | No se usa.                                           |
 |           | Byte de orden bajo  | Contiene un segundo byte de datos DE MIDI (cuando sea necesario).  |
@@ -71,7 +71,7 @@ Hora a la que el controlador del dispositivo de entrada recibió el mensaje. La 
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los mensajes DE MIDI recibidos de un puerto de entrada de MIDI tienen el estado de ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado DE MIDI.
 
@@ -81,7 +81,7 @@ Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

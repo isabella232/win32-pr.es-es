@@ -13,12 +13,12 @@ keywords:
 - mensajes individuales de MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1f73d0956004f90644ce2e8b0e41b368137a7b61fd04e6d17302619980336d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5473d1ab7361c26a922683ed7d5021995b0f13ea
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037455"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371006"
 ---
 # <a name="sending-individual-midi-messages"></a>Envío de mensajes INDIVIDUALES DE MIDI
 

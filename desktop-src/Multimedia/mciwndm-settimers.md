@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_SETTIMERS mensaje (Vfw.h)
-description: El mensaje MCIWNDM SETTIMERS establece los períodos de actualización utilizados por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la \_ ventana primaria.
+description: El mensaje MCIWNDM SETTIMERS establece los períodos de actualización usados por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana \_ primaria.
 ms.assetid: 06407c67-b620-4f80-9fe9-456cdf3d0666
 keywords:
 - MCIWNDM_SETTIMERS mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e9c17a131827459555ae51adc5d5bd48d98fabb88fc4c1f0dbbcd1eb3673466
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7bba3fa2e474a15dc23deb9cdc6d00d148b8cd3a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807565"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370766"
 ---
 # <a name="mciwndm_settimers-message"></a>Mensaje DE MCIWNDM \_ SETTIMERS
 
-El **mensaje MCIWNDM \_ SETTIMERS** establece los períodos de actualización utilizados por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetTimers.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsettimers)
+El mensaje **MCIWNDM \_ SETTIMERS** establece los períodos de actualización usados por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetTimers.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsettimers)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = (LPARAM) (UINT) inactive;
 <span id="active"></span><span id="ACTIVE"></span>*Activo*
 </dt> <dd>
 
-Período de actualización utilizado por MCIWnd cuando es la ventana activa. El valor predeterminado es 500 milisegundos. Storage para este valor se limita a 16 bits.
+Período de actualización usado por MCIWnd cuando es la ventana activa. El valor predeterminado es 500 milisegundos. Storage para este valor se limita a 16 bits.
 
 </dd> <dt>
 

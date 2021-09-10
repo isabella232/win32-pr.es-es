@@ -6,12 +6,12 @@ keywords:
 - Función MCIWndRegisterClass
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b75d337c5375b66974161c1c983c1aeec5bed7805457186139771d879132b6f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ebc30d177ee7b0dd8ae0c5d9ca23c5d6ca577c2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941060"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372181"
 ---
 # <a name="using-a-multiple-document-interface"></a>Uso de una interfaz de varios documentos
 

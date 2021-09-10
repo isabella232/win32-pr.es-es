@@ -11,12 +11,12 @@ keywords:
 - Macro MCIWndGetZoom
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbed63549683a92d457b9b91ac967ff9098235bf8d9cbd60b1ea332624886d9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f02b1e14a5153e279e3cfdf6989beade31cf6f3e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808575"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371947"
 ---
 # <a name="adjusting-speed-volume-and-zoom"></a>Ajustar la velocidad, el volumen y el zoom
 

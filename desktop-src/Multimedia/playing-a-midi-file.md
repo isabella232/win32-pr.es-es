@@ -4,12 +4,12 @@ description: Reproducir un archivo MIDI
 ms.assetid: a11b432f-de31-4637-a9cd-eef5fad7591a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44ea4b42a6bb0143005352f08af7c0498546ea37697e1a5114820964143e5c48
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c7ce9638a5f26a2d701798f72229877dc2758829
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038035"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371731"
 ---
 # <a name="playing-a-midi-file"></a>Reproducir un archivo MIDI
 

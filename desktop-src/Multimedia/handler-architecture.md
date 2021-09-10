@@ -4,12 +4,12 @@ description: Arquitectura del controlador
 ms.assetid: 93839b82-09cb-41af-ac0e-a8e9448bf04b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c0da7846f31c94202d8d50ac0566c87ef5db085a0b9efb3f9250468346512db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e2b02d0184d364ce438dc28f8219beea01c4868
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118141098"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372230"
 ---
 # <a name="handler-architecture"></a>Arquitectura del controlador
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a45fb1f7893641fe1e1f4f0bb2e79b31f33c465811e9dec83869af90d819414
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c3989632e83a65cda5e805bd91da3f502ca387d6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807755"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370748"
 ---
 # <a name="mciwndm_setowner-message"></a>Mensaje SETOWNER de MCIWNDM \_
 

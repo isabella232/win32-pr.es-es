@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b02acd3ebe3d45a402ae565c6fcac121f712df4374924bcb0e02c3dcadf9ceeb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d28c255e518553c022dfc833c857b792f43fdbe8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807965"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369868"
 ---
 # <a name="close-command"></a>Comando close
 
@@ -56,19 +56,19 @@ Puede ser "wait", "notify" o ambos. Para obtener más información sobre estas m
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para cerrar todos los dispositivos abiertos por la aplicación, especifique el identificador de dispositivo "all" para el *parámetro lpszDeviceID.*
 
 Al cerrar el **dispositivo cdaudio,** se detiene la reproducción de audio.
 
-**Windows 2000/XP:** Si el **dispositivo cdaudio** se está reproduciendo, el cierre del **dispositivo cdaudio** no hace que el audio deje de reproducirse. Envíe primero [el comando stop.](stop.md)
+**Windows 2000/XP:** Si se **reproduce el dispositivo cdaudio,** el cierre del **dispositivo cdaudio** no hace que el audio deje de reproducirse. Envíe primero [el comando](stop.md) stop.
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente cierra el dispositivo "mysound".
+El comando siguiente cierra el dispositivo "my sound".
 
 ``` syntax
 close mysound
@@ -78,7 +78,7 @@ close mysound
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                     |
@@ -90,7 +90,7 @@ close mysound
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

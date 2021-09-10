@@ -1,6 +1,6 @@
 ---
 title: MM_JOY2ZMOVE mensaje (Mmsystem.h)
-description: El mensaje MMMOV2ZMOVE notifica a la ventana que ha capturado el id. de posición del eje Z que ha cambiado la posición del \_ eje Z.
+description: El mensaje MMMOV2ZMOVE notifica a la ventana que ha capturado el id. de posición del eje Z que la posición del eje Z ha \_ cambiado.
 ms.assetid: f09a1a11-8c97-4a03-a388-8bf9ab89a3db
 keywords:
 - MM_JOY2ZMOVE mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9b59a22a4b8fcfa11384a7a89f61657586a9535e8248535641ad37d36dfb0fe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0d899a4a1c93304075cb166ba805367ceed6ddd3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807525"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371155"
 ---
 # <a name="mm_joy2zmove-message"></a>Mensaje \_ MMMOV2ZMOVE
 
-El **mensaje \_ MMMOV2ZMOVE** notifica a la ventana que ha capturado el id. de posición del eje Z que ha cambiado la posición del eje Z.
+El **mensaje \_ MMMOV2ZMOVE** notifica a la ventana que ha capturado el id. de posición del eje Z que la posición del eje Z ha cambiado.
 
 
 ```C++
@@ -45,12 +45,12 @@ Identifica los botones que se presionan. Puede ser uno o varios de los valores s
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------|------------------------------------|
-| BUTTON1 \_ DE BUTTON1 DE BUTTON1 | Se presiona el primer botón de botones.  |
+| BOTÓN \_ BUTTON1 DE BUTTON1 DE BUTTON1 | Se presiona el primer botón de botones.  |
 | BOTÓN \_ BUTTON2 DE BUTTON2 | Se presiona el segundo botón button button (Botón de botones). |
 | BOTÓN \_ BUTTON3 DE BUTTON3 | Se presiona el tercer botón de botones.  |
-| BOTÓN \_ BUTTON4 DE BUTTON4 | Se presiona el cuarto botón button button (Cuarto botón de botones). |
+| BUTTON4 \_ DE BUTTON4 DE BUTTON | Se presiona el cuarto botón button button (Cuarto botón de botones). |
 
 
 
@@ -69,7 +69,7 @@ Coordenada z del eje.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

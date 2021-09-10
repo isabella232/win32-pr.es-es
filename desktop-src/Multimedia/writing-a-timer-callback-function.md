@@ -10,12 +10,12 @@ keywords:
 - timers,writing callback functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5b8680fc4d697c33514276276daaa2a4d75577bfbd78fa3caffc7f426ca9d70
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 609cf2dda455897fb6cae0f3c48252016ba54cb9
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891785"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370982"
 ---
 # <a name="writing-a-timer-callback-function"></a>Escribir una función de devolución de llamada de temporizador
 

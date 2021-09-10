@@ -6,12 +6,12 @@ keywords:
 - Valor del Registro ACTIVATIONFailureLoggingLevel COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a51d0f92dbf1b54d572de44e750fba20ca39954ced57b6276ecdc4b8c4e07960
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfdd834be35a59dd5d8e207cd679dae68043d70c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119855105"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369615"
 ---
 # <a name="activationfailurelogginglevel"></a>ActivationFailureLoggingLevel
 
@@ -24,7 +24,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
    ActivationFailureLoggingLevel = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ REG DWORD.**
 

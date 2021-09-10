@@ -1,6 +1,6 @@
 ---
 title: MOM_OPEN mensaje (Mmsystem.h)
-description: El mensaje MOM OPEN se envía a una función de devolución de llamada \_ de salida DE MIDI cuando se abre un dispositivo de salida DE MIDI.
+description: El mensaje MOM \_ OPEN se envía a una función de devolución de llamada de salida DE MIDI cuando se abre un dispositivo de salida DE MIDI.
 ms.assetid: f3360482-7d16-419c-b5d1-0dd3a6e3c690
 keywords:
 - MOM_OPEN mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 650291df51382640da2c3b4fb21910da4271ca96ace2d5711558d43501080795
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 24072aad6bff9ce192460c2c8525da4506f32746
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038845"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371023"
 ---
 # <a name="mom_open-message"></a>Mensaje \_ DE MOM OPEN
 

@@ -6,12 +6,12 @@ keywords:
 - MCI_TEST marca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 837b7812a904ed39fa0350d703b1525bbffa6f981b4736d25927840395932f32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a36cddaa186a9be260cf87b7a323a6e05ed9fc4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117801494"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371563"
 ---
 # <a name="the-test-flag"></a>La marca de prueba
 

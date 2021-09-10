@@ -8,12 +8,12 @@ keywords:
 - Asignador de MIDI, arquitectura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 024a3ce675677df8fa1bfcf32f4fdf4e6bdcae921cc14c7ccb42d6fe832480e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 951ad3cee4fb37de6ecbfdc4f81860afcb9f589d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805124"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371065"
 ---
 # <a name="the-midi-mapper-and-windows"></a>Asignador y Windows
 

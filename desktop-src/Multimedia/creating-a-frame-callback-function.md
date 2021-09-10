@@ -6,12 +6,12 @@ keywords:
 - CapSetCallbackOnFrame macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ac102baf62cbfabc79a9a38eb81127a0c6ea36b6ad694139f882bbae0e1bce1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 07b2a921bfae235c50387c41865c44bb69b5c05a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119497935"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371359"
 ---
 # <a name="creating-a-frame-callback-function"></a>Crear una función de devolución de llamada frame
 

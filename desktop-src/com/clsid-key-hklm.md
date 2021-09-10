@@ -6,12 +6,12 @@ keywords:
 - CLSID registry key COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd390fc6a1ccb15e128245c3b6a80e2b4ca57f41de9e9c21e93ebe4c708783d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa9253446a039e47996366c7dfdb51c01f9b1993
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119854985"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369568"
 ---
 # <a name="clsid-key"></a>Clave CLSID
 
@@ -53,7 +53,7 @@ Un CLSID es un identificador único global que identifica un objeto de clase COM
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clave HKEY \_ LOCAL MACHINE \_ SOFTWARE \\ \\ Classes** corresponde a la clave RAÍZ **HKEY \_ CLASSES, \_** que se conservaba por compatibilidad con versiones anteriores de COM.
 

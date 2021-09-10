@@ -4,12 +4,12 @@ description: Elección del modelo de subprocesos
 ms.assetid: e8a0286d-1831-454f-8549-1957fd794809
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f1966a4b000683bb7549ce9c825051324088fd85c41146137443045785b5e0e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2f0fdcd327bf05c0019a03ad171d41c1f1d95a1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119896515"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369455"
 ---
 # <a name="choosing-the-threading-model"></a>Elección del modelo de subprocesos
 

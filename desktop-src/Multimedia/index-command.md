@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9044ce01db5f35354390fd8d09cc085416202f670c8378a2e1a10311b12ab94
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da652b1a7a48dffd9850c435345fcfcb11c2e674
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119690555"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372271"
 ---
 # <a name="index-command"></a>comando index
 
@@ -53,10 +53,10 @@ Una de las marcas siguientes.
 
 
 
-| Valor | Significado                                                                                                                  |
+| Value | Significado                                                                                                                  |
 |-------|--------------------------------------------------------------------------------------------------------------------------|
 | apagado   | Desactiva la pantalla en pantalla.                                                                                         |
-| en    | Activa la pantalla en pantalla. El elemento que se va a mostrar se especifica mediante la marca "index" del [comando set.](set.md) |
+| on    | Activa la pantalla en pantalla. El elemento que se va a mostrar se especifica mediante la marca "index" del [comando set.](set.md) |
 
 
 
@@ -79,7 +79,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -90,7 +90,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

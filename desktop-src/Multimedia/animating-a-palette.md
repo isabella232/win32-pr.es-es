@@ -9,12 +9,12 @@ keywords:
 - Función DrawDibChangePalette
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4be9613e4e648fad0b1fafe5d48d091ab13c9b6c358eda4a858c1d5517ab8fc5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e023ba8ee2c4791ebc8c3f2ac7ebf9a198f4a5ae
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808425"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371857"
 ---
 # <a name="animating-a-palette"></a>Animar una paleta
 

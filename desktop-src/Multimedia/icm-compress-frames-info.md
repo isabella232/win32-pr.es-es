@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2382a930b0ce12e212adf78ddaf3c7e1b3300e47597b4671d0eae223cb536f73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cbb6df0eab7706ebfc03a5e3069d4323be26ecdb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118140916"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370429"
 ---
 # <a name="icm_compress_frames_info-message"></a>\_ICM Mensaje DE \_ INFORMACIÓN DE COMPRESS FRAMES \_
 
-El **ICM COMPRESS FRAMES \_ \_ \_ INFO** notifica a un controlador de compresión que establezca los parámetros de la compresión pendiente.
+El **ICM \_ COMPRESS FRAMES \_ \_ INFO** notifica a un controlador de compresión que establezca los parámetros de la compresión pendiente.
 
 
 ```C++
@@ -56,7 +56,7 @@ Tamaño, en bytes, de [**ICCOMPRESSFRAMES**](/windows/desktop/api/Vfw/ns-vfw-icc
 
 Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un resalte puede usar este mensaje para determinar la cantidad de espacio que se debe asignar para cada fotograma durante la compresión.
 
@@ -64,7 +64,7 @@ Un resalte puede usar este mensaje para determinar la cantidad de espacio que se
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

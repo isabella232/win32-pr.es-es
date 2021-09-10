@@ -3,30 +3,30 @@ title: Consulta de dispositivos MIDI
 description: Consulta de dispositivos MIDI
 ms.assetid: 0c9882a7-b5cb-41d1-a52e-003112225035
 keywords:
-- Interfaz digital de instrumentación musical (MIDI), consultar dispositivos
+- Interfaz digital de instrumentación de música (MIDI), consultar dispositivos
 - MIDI (Interfaz digital de instrumentación de música), consulta de dispositivos
 - Servicios DE MIDI, consultar dispositivos
 - consultar dispositivos MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3546971a17a5a8002f0e6d4205ceee5ca796babeb2b27df911cfca5a5911371c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 066648d6e9ce89e03b26940cb27f3b62b6a03c07
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118372320"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370934"
 ---
 # <a name="querying-midi-devices"></a>Consulta de dispositivos MIDI
 
-Antes de reproducir o grabar datos DE MIDI, debe determinar las capacidades del hardware de MIDI presente en el sistema. La funcionalidad de MIDI puede variar de un equipo multimedia al siguiente; las aplicaciones no deben realizar suposiciones sobre el hardware presente en un sistema determinado.
+Antes de reproducir o grabar datos DE MIDI, debe determinar las capacidades del hardware de MIDI presente en el sistema. La funcionalidad de MIDI puede variar de un equipo multimedia al siguiente; las aplicaciones no deben hacer suposiciones sobre el hardware presente en un sistema determinado.
 
 Windows proporciona las siguientes funciones para determinar cuántos dispositivos MIDI están disponibles para la entrada o salida en un sistema determinado.
 
 
 
-| Valor                                          | Significado                                                            |
+| Value                                          | Significado                                                            |
 |------------------------------------------------|--------------------------------------------------------------------|
-| [**midiInGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-midiingetnumdevs)   | Recupera el número de dispositivos de entrada MIDI presentes en el sistema.  |
+| [**midiInGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-midiingetnumdevs)   | Recupera el número de dispositivos de entrada de MIDI presentes en el sistema.  |
 | [**midiOutGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetnumdevs) | Recupera el número de dispositivos de salida DE MIDI presentes en el sistema. |
 
 
@@ -39,10 +39,10 @@ Después de determinar cuántos dispositivos de entrada o salida DE LÍNEA está
 
 
 
-| Valor                                          | Significado                                                                                                                                   |
+| Value                                          | Significado                                                                                                                                   |
 |------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**midiInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-midiingetdevcaps)   | Recupera las funciones de un dispositivo de entrada MIDI determinado y coloca esta información en la [**estructura MIDIINCAPS.**](/windows/win32/api/mmeapi/ns-mmeapi-midiincaps)    |
-| [**midiOutGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetdevcaps) | Recupera las funciones de un dispositivo de salida MIDI determinado y coloca esta información en la [**estructura MIDIOUTCAPS.**](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) |
+| [**midiInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-midiingetdevcaps)   | Recupera las funcionalidades de un dispositivo de entrada MIDI determinado y coloca esta información en la [**estructura MIDIINCAPS.**](/windows/win32/api/mmeapi/ns-mmeapi-midiincaps)    |
+| [**midiOutGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetdevcaps) | Recupera las funcionalidades de un dispositivo de salida MIDI determinado y coloca esta información en la [**estructura MIDIOUTCAPS.**](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: MCI_VCR_SETVIDEO_PARMS estructura (Vcr.h)
-description: La estructura MCI VCR SETVIDEO PARMS contiene parámetros para el comando MCI SETVIDEO para las \_ \_ \_ \_ grabadoras de vídeo.
+description: La estructura MCI VCR SETVIDEO PARMS contiene parámetros para el comando SETVIDEO de MCI para \_ \_ las \_ \_ grabadoras de vídeo.
 ms.assetid: d14b2c9f-6068-4902-8db6-fc081bcd01c0
 keywords:
 - MCI_VCR_SETVIDEO_PARMS estructura Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf260804a6e993ba133ca450a51802a0f43db3aa3d0e557ba684b8a86bcfb7dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 050e6452b3952a9d15515de01c2ca94a87af2f29
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784135"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370058"
 ---
 # <a name="mci_vcr_setvideo_parms-structure"></a>Estructura MCI \_ VCR \_ SETVIDEO \_ PARMS
 
-La **estructura MCI \_ VCR \_ SETVIDEO \_ PARMS** contiene parámetros para el comando [**MCI \_ SETVIDEO**](mci-setvideo.md) para las grabadoras de vídeo.
+La **estructura MCI \_ VCR \_ SETVIDEO \_ PARMS** contiene parámetros para el comando [**\_ SETVIDEO**](mci-setvideo.md) de MCI para las grabadoras de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,7 +71,7 @@ Entrada de vídeo (del tipo especificado en el **miembro dwTo)** que se usará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -79,7 +79,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -91,7 +91,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

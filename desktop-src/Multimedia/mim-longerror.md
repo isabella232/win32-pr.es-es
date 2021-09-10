@@ -1,6 +1,6 @@
 ---
 title: MIM_LONGERROR mensaje (Mmsystem.h)
-description: El MIM mensaje LONGERROR se envía a una función de devolución de llamada de entrada DE MIDI cuando se recibe un mensaje exclusivo del sistema DE MIDI no \_ válido o incompleto.
+description: El MIM mensaje LONGERROR se envía a una función de devolución de llamada de entrada DE MIDI cuando se recibe un mensaje no válido o incompleto exclusivo del \_ sistema.
 ms.assetid: 7e3b0716-33c4-449c-a200-e5ba72428dc1
 keywords:
 - MIM_LONGERROR mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d0be5f2d75ae8ba1eed61f99d1387e1defec556b5e242f713b75eee0a3f70e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 631c4fdcd31eef01d691aea80100427d116ae7d5
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117985748"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370886"
 ---
 # <a name="mim_longerror-message"></a>\_MIM Mensaje LONGERROR
 
@@ -48,7 +48,7 @@ Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midih
 <span id="dwTimestamp"></span><span id="dwtimestamp"></span><span id="DWTIMESTAMP"></span>*dwTimestamp*
 </dt> <dd>
 
-Hora a la que el controlador del dispositivo de entrada recibió los datos. La marca de tiempo se especifica en milisegundos, empezando en cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
+Hora a la que el controlador del dispositivo de entrada recibió los datos. La marca de tiempo se especifica en milisegundos, empezando por cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Hora a la que el controlador del dispositivo de entrada recibió los datos. La m
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Es posible que el búfer devuelto no esté lleno. Para determinar el número de bytes registrados en el búfer devuelto, use el **miembro dwBytesRecorded** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) especificada por *lpMidiHdr*.
 

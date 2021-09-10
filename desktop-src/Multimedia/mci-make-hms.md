@@ -1,9 +1,9 @@
 ---
-title: Macro MCI_MAKE_HMS (Mciapi. h)
-description: La \_ macro MCI make \_ HMS crea un valor de hora en formato de horas, minutos y segundos empaquetados (HMS) a partir de los valores de horas, minutos y segundos determinados.
+title: MCI_MAKE_HMS macro (Mciapi.h)
+description: La macro MCI MAKE HMS crea un valor de tiempo en formato \_ packed hours/minutes/seconds (HMS) a partir de los valores de \_ horas, minutos y segundos especificados.
 ms.assetid: 470e89eb-36e1-4b05-babd-4c986adc88dd
 keywords:
-- MCI_MAKE_HMS de macros de Windows multimedia
+- MCI_MAKE_HMS macro Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f37c95df89ed6a799575e964ae274e01e329ef1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803506"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370207"
 ---
-# <a name="mci_make_hms-macro"></a>\_HMS de creación de \_ macros
+# <a name="mci_make_hms-macro"></a>Macro \_ MCI MAKE \_ HMS
 
-La macro **MCI \_ Make \_ HMS** crea un valor de hora en formato de horas, minutos y segundos empaquetados (HMS) a partir de los valores de horas, minutos y segundos determinados.
+La **macro \_ MCI MAKE \_ HMS** crea un valor de tiempo en formato packed hours/minutes/seconds (HMS) a partir de los valores de horas, minutos y segundos especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,9 +69,9 @@ Devuelve la hora en formato HMS empaquetado.
 
 ## <a name="remarks"></a>Observaciones
 
-La hora en formato HMS se expresa como un valor **DWORD** con el byte menos significativo que contiene las horas, el siguiente byte menos significativo que contiene los minutos y el siguiente byte menos significativo que contiene los segundos. El byte más significativo no se utiliza.
+El tiempo en formato HMS se expresa como un valor **DWORD** con el byte menos significativo que contiene horas, el siguiente byte menos significativo que contiene minutos y el siguiente byte menos significativo que contiene segundos. El byte más significativo no se usa.
 
-La macro **MCI \_ Make \_ HMS** se define de la siguiente manera:
+La **macro \_ MCI MAKE \_ HMS** se define de la siguiente manera:
 
 
 ```C++
@@ -90,7 +90,7 @@ La macro **MCI \_ Make \_ HMS** se define de la siguiente manera:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ La macro **MCI \_ Make \_ HMS** se define de la siguiente manera:
 [MCI](mci.md)
 </dt> <dt>
 
-[Macros MCI](mci-macros.md)
+[MCI Macros](mci-macros.md)
 </dt> </dl>
 
  

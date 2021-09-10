@@ -1,30 +1,30 @@
 ---
 title: Schannel
-description: El paquete de seguridad de Canal seguro (Schannel), cuyo identificador de servicio de autenticación es RPC C AUTHN GSS SCHANNEL, admite los siguientes protocolos basados en clave pública \_ \_ SSL \_ (Capa de sockets seguros) versiones 2.0 y 3.0, Seguridad de la capa de transporte (TLS) 1.0 y Tecnología de comunicación privada \_ (PCT) 1.0. TLS 1.0 es una versión estandarizada y ligeramente modificada de SSL 3.0 que emitió el Grupo de trabajo de ingeniería de Internet (IETF) en enero de 1999, en el documento RFC 2246. Dado que TLS se ha estandarizado, se recomienda a los desarrolladores que usen TLS en lugar de SSL. PCT solo se incluye por compatibilidad con versiones anteriores y no debe usarse para el nuevo desarrollo. Cuando se usa el paquete de seguridad de Schannel, DCOM negocia automáticamente el mejor protocolo, en función de las funcionalidades de cliente y servidor.
+description: El paquete de seguridad de Canal seguro (Schannel), cuyo identificador de servicio de autenticación es RPC C AUTHN GSS SCHANNEL, admite los siguientes protocolos basados en clave pública SSL (Capa de sockets seguros) versiones 2.0 y 3.0, Seguridad de la capa de transporte (TLS) 1.0 y Tecnología de comunicación privada \_ \_ \_ \_ (PCT) 1.0. TLS 1.0 es una versión estandarizada y ligeramente modificada de SSL 3.0 que emitió internet Engineering Task Force (IETF) en enero de 1999, en el documento RFC 2246. Dado que TLS se ha estandarizado, se recomienda a los desarrolladores que usen TLS en lugar de SSL. PCT solo se incluye por compatibilidad con versiones anteriores y no debe usarse para el nuevo desarrollo. Cuando se usa el paquete de seguridad de Schannel, DCOM negocia automáticamente el mejor protocolo, en función de las funcionalidades de cliente y servidor.
 ms.assetid: 03a5f987-f668-4f19-9b58-d62711f58734
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01ab40ed9d87013f646137e23ccc755dfdf9ab6b8f2ded367940b4ae630d7b4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eccc9f82a05d1542e7585426128f10cdf452d31d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047853"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369736"
 ---
 # <a name="schannel"></a>Schannel
 
-El paquete de seguridad de Canal seguro (Schannel), cuyo identificador de servicio de autenticación es RPC C AUTHN GSS SCHANNEL, admite los siguientes protocolos basados en clave \_ \_ \_ pública: SSL (Capa de sockets seguros) versiones 2.0 y 3.0, Seguridad de la capa de transporte (TLS) 1.0 y Tecnología de comunicación privada \_ (PCT) 1.0. TLS 1.0 es una versión estandarizada y ligeramente modificada de SSL 3.0 que emitió el Grupo de trabajo de ingeniería de Internet (IETF) en enero de 1999, en el documento [RFC 2246](https://www.ietf.org/rfc/rfc2246.txt). Dado que TLS se ha estandarizado, se recomienda a los desarrolladores que usen TLS en lugar de SSL. PCT solo se incluye por compatibilidad con versiones anteriores y no debe usarse para el nuevo desarrollo. Cuando se usa el paquete de seguridad de Schannel, DCOM negocia automáticamente el mejor protocolo, en función de las funcionalidades de cliente y servidor.
+El paquete de seguridad de Canal seguro (Schannel), cuyo identificador de servicio de autenticación es RPC C AUTHN GSS SCHANNEL, admite los siguientes protocolos basados en clave \_ \_ \_ pública: SSL (Capa de sockets seguros) versiones 2.0 y 3.0, Seguridad de la capa de transporte (TLS) 1.0 y Tecnología de comunicación privada \_ (PCT) 1.0. TLS 1.0 es una versión estandarizada y ligeramente modificada de SSL 3.0 que emitió internet Engineering Task Force (IETF) en enero de 1999, en el [documento RFC 2246](https://www.ietf.org/rfc/rfc2246.txt). Dado que TLS se ha estandarizado, se recomienda a los desarrolladores que usen TLS en lugar de SSL. PCT solo se incluye por compatibilidad con versiones anteriores y no debe usarse para el nuevo desarrollo. Cuando se usa el paquete de seguridad de Schannel, DCOM negocia automáticamente el mejor protocolo, en función de las funcionalidades de cliente y servidor.
 
 En los temas siguientes se describe brevemente el protocolo TLS y cómo funciona con DCOM.
 
 -   [Cuándo usar TLS](#when-to-use-tls)
--   [Información general breve sobre cómo funciona TLS](#brief-overview-of-how-tls-works)
+-   [Breve información general sobre cómo funciona TLS](#brief-overview-of-how-tls-works)
 -   [Certificados X.509](#x509-certificates)
     -   [Certificados de cliente](#client-certificates)
 -   [Uso de TLS en COM](#using-tls-in-com)
     -   [Cómo un servidor establece el nivel de seguridad](#how-a-server-sets-the-security-blanket)
-    -   [Cómo un cliente establece la medida de seguridad](#how-a-client-sets-the-security-blanket)
-    -   [Cómo cambia un cliente el nivel de seguridad](#how-a-client-changes-the-security-blanket)
+    -   [Cómo un cliente establece el problema de seguridad](#how-a-client-sets-the-security-blanket)
+    -   [Cómo cambia un cliente el problema de seguridad](#how-a-client-changes-the-security-blanket)
     -   [Ejemplo: El cliente cambia el nivel de seguridad](#example-client-changes-the-security-blanket)
 -   [Temas relacionados](#related-topics)
 
@@ -35,21 +35,21 @@ En los temas siguientes se describe brevemente el protocolo TLS y cómo funciona
 
 ## <a name="when-to-use-tls"></a>Cuándo usar TLS
 
-TLS es la única opción de seguridad disponible cuando los servidores necesitan demostrar su identidad a clientes anónimos. Esto es especialmente importante para los sitios web que desean participar en el comercio electrónico porque ayuda a proteger la transmisión de información confidencial, como números de tarjeta de crédito. TLS garantiza que los clientes de comercio electrónico pueden estar seguros de con quién hacen negocios porque se les proporciona una prueba de la identidad del servidor. También proporciona al servidor de comercio electrónico la eficacia de no tener que preocuparse por autenticar la identidad de cada uno de sus clientes.
+TLS es la única opción de seguridad disponible cuando los servidores necesitan demostrar su identidad a clientes anónimos. Esto es especialmente importante para los sitios web que desean participar en el comercio electrónico porque ayuda a proteger la transmisión de información confidencial, como números de tarjeta de crédito. TLS garantiza que los clientes de comercio electrónico pueden estar seguros de con quién están haciendo negocios, ya que se les proporciona una prueba de la identidad del servidor. También proporciona al servidor de comercio electrónico la eficacia de no tener que preocuparse por autenticar la identidad de cada uno de sus clientes.
 
-TLS requiere que todos los servidores demuestren su identidad a los clientes. Además, TLS ofrece la opción de hacer que los clientes prueben su identidad en los servidores. Esta autenticación mutua puede ser útil para restringir el acceso de determinadas páginas web en una intranet corporativa de gran tamaño.
+TLS requiere que todos los servidores demuestren su identidad a los clientes. Además, TLS ofrece la opción de que los clientes demuestren su identidad en los servidores. Esta autenticación mutua puede ser útil para restringir el acceso de determinadas páginas web en una intranet corporativa grande.
 
 TLS admite los niveles de autenticación más sólidos y ofrece una arquitectura abierta que permite que la seguridad del cifrado aumente con el tiempo para mantenerse al día con la innovación tecnológica. TLS es la mejor opción para entornos en los que se desea el mayor nivel de seguridad para los datos en tránsito.
 
-## <a name="brief-overview-of-how-tls-works"></a>Información general breve sobre cómo funciona TLS
+## <a name="brief-overview-of-how-tls-works"></a>Breve información general sobre cómo funciona TLS
 
 TLS se basa en una infraestructura de clave pública (PKI), que usa pares de claves públicas y privadas para habilitar el cifrado de datos y establecer la integridad de los datos, y usa certificados X.509 para la autenticación.
 
-Muchos protocolos de seguridad, como el protocolo Kerberos v5, dependen de una sola clave para cifrar y descifrar datos. Por lo tanto, estos protocolos dependen del intercambio seguro de claves de cifrado. en el protocolo Kerberos, esto se realiza a través de vales obtenidos del Centro de distribución de claves (KDC). Esto requiere que todos los usuarios que usan el protocolo Kerberos se registren en el KDC, lo que sería una limitación poco práctica para un servidor web de comercio electrónico que está pensado para atraer a millones de clientes de todo el mundo. Por lo tanto, TLS se basa en una PKI, que usa dos claves para el cifrado de datos: "cuando una clave del par cifra los datos, solo la otra clave del par puede descifrarlo. La principal ventaja de este diseño es que el cifrado se puede realizar sin necesidad del intercambio seguro de claves de cifrado.
+Muchos protocolos de seguridad, como el protocolo Kerberos v5, dependen de una sola clave para cifrar y descifrar los datos. Por lo tanto, estos protocolos dependen del intercambio seguro de claves de cifrado. en el protocolo Kerberos, esto se realiza a través de vales obtenidos del Centro de distribución de claves (KDC). Esto requiere que todos los usuarios que usan el protocolo Kerberos se registren en el KDC, lo que sería una limitación poco práctica para un servidor web de comercio electrónico que está pensado para atraer a millones de clientes de todo el mundo. Por lo tanto, TLS se basa en una PKI, que usa dos claves para el cifrado de datos: "cuando una clave del par cifra los datos, solo la otra clave del par puede descifrarlo. La principal ventaja de este diseño es que el cifrado se puede realizar sin necesidad de un intercambio seguro de claves de cifrado.
 
 Una PKI usa una técnica en la que una de las claves se mantiene privada y solo está disponible para la entidad de seguridad a la que está registrada, mientras que la otra clave se hace pública para que cualquier usuario pueda acceder a ella. Si alguien desea enviar un mensaje privado al propietario de un par de claves, el mensaje se puede cifrar con la clave pública y solo se puede usar la clave privada para descifrar el mensaje.
 
-Los pares de claves también se usan para comprobar la integridad de los datos que se envían. Para ello, el propietario del par de claves puede adjuntar una firma digital a los datos antes de enviarlos. La creación de una firma digital implica calcular un hash de los datos y cifrar el hash con la clave privada. Cualquier persona que use la clave pública para descifrar la firma digital está seguro de que la firma digital solo debe haber procede de la persona propietaria de la clave privada. Además, el destinatario puede calcular un hash de los datos con el mismo algoritmo que el remitente y, si el hash calculado coincide con el enviado en la firma digital, el destinatario puede estar seguro de que los datos no se modificaron después de que se firmaron digitalmente.
+Los pares de claves también se usan para comprobar la integridad de los datos que se envían. Para ello, el propietario del par de claves puede adjuntar una firma digital a los datos antes de enviarlos. La creación de una firma digital implica calcular un hash de los datos y cifrar el hash con la clave privada. Cualquier persona que use la clave pública para descifrar la firma digital está seguro de que la firma digital solo debe haber procededo de la persona que posee la clave privada. Además, el destinatario puede calcular un hash de los datos con el mismo algoritmo que el remitente y, si el hash calculado coincide con el enviado en la firma digital, el destinatario puede estar seguro de que los datos no se modificaron después de que se firmaron digitalmente.
 
 Una desventaja de usar una PKI para el cifrado de datos de gran volumen es su rendimiento relativamente lento. Debido a las matemáticas intensivas implicadas, el cifrado y descifrado de datos mediante un cifrado asimétrico que depende de un par de claves puede ser hasta 1000 veces más lento que el cifrado y descifrado mediante un cifrado simétrico que depende solo de una sola clave. Por lo tanto, TLS usa una PKI solo para generar firmas digitales y para negociar la clave única específica de la sesión que usarán el cliente y el servidor para el cifrado y descifrado masivos de datos. TLS admite una amplia variedad de cifrados simétricos de clave única y se pueden agregar cifrados adicionales en el futuro.
 
@@ -59,23 +59,23 @@ Para obtener más detalles sobre la criptografía detrás del protocolo TLS, vea
 
 ## <a name="x509-certificates"></a>Certificados X.509
 
-Un problema crítico que debe controlar una PKI es la capacidad de confiar en la autenticidad de la clave pública que se está utilizando. Cuando se usa una clave pública emitida para una empresa con la que quiere hacer negocios, quiere estar seguro de que la clave pertenece realmente a la empresa en lugar de a un padre que quiere detectar el número de tarjeta de crédito.
+Un problema crítico que debe controlar una PKI es la capacidad de confiar en la autenticidad de la clave pública que se está utilizando. Cuando se usa una clave pública emitida para una empresa con la que quiere hacer negocios, quiere estar seguro de que la clave pertenece realmente a la empresa en lugar de a un delincuente que quiere detectar el número de tarjeta de crédito.
 
-Para garantizar la identidad de una entidad de seguridad que tiene un par de claves, una entidad de certificación (CA) emite un certificado X.509. Este certificado contiene información que identifica la entidad de seguridad, contiene la clave pública de la entidad de seguridad y está firmado digitalmente por la entidad de certificación. Esta firma digital indica que la entidad de certificación considera que la clave pública contenida en el certificado pertenece realmente a la entidad de seguridad identificada por el certificado.
+Para garantizar la identidad de una entidad de seguridad que tiene un par de claves, una entidad de certificación (CA) emite un certificado X.509. Este certificado contiene información que identifica la entidad de seguridad, contiene la clave pública de la entidad de seguridad y está firmado digitalmente por la entidad de certificación. Esta firma digital indica que la CA cree que la clave pública contenida en el certificado pertenece realmente a la entidad de seguridad identificada por el certificado.
 
-¿Y cómo confía en la entidad de certificación? Dado que la propia CA contiene un certificado X.509 firmado por una entidad de certificación de nivel superior. Esta cadena de firmas de certificado continúa hasta que llega a una CA raíz, que es una CA que firma sus propios certificados. Si confía en la integridad de la CA raíz de un certificado, debería poder confiar en la autenticidad del propio certificado. Por lo tanto, la selección de las CA raíz en las que está dispuesto a confiar es un servicio importante para un administrador del sistema.
+¿Y cómo confía en la CA? Dado que la propia CA contiene un certificado X.509 firmado por una entidad de certificación de nivel superior. Esta cadena de firmas de certificado continúa hasta que llega a una CA raíz, que es una CA que firma sus propios certificados. Si confía en la integridad de la CA raíz de un certificado, debería poder confiar en la autenticidad del propio certificado. Por lo tanto, la selección de CA raíz en las que esté dispuesto a confiar es una tarea importante para un administrador del sistema.
 
 ### <a name="client-certificates"></a>Certificados de cliente
 
-Cuando emergió por primera vez los protocolos de capa de transporte de seguridad, su propósito principal era garantizar que un cliente se conectaba a un servidor auténtico y ayudar a proteger la privacidad de los datos mientras estaba en tránsito. Sin embargo, SSL 3.0 y TLS 1.0 también incluyen compatibilidad para la transmisión del certificado de un cliente durante el protocolo de enlace del protocolo. Esta característica opcional habilita la autenticación mutua del cliente y el servidor.
+Cuando surgieron por primera vez los protocolos de capa de transporte de seguridad, su propósito principal era garantizar que un cliente se conectaba a un servidor auténtico y ayudar a proteger la privacidad de los datos en tránsito. Sin embargo, SSL 3.0 y TLS 1.0 también incluyen compatibilidad para la transmisión del certificado de un cliente durante el protocolo de enlace del protocolo. Esta característica opcional permite la autenticación mutua del cliente y el servidor.
 
-La decisión de si se debe usar un certificado de cliente se debe tomar en el contexto de la aplicación. Los certificados de cliente no son necesarios si el requisito principal es autenticar el servidor. Sin embargo, si la autenticación de cliente es esencial, se puede usar el certificado de un cliente en lugar de depender de la autenticación personalizada dentro de la aplicación. El uso de certificados de cliente es preferible a la autenticación personalizada porque proporciona a los usuarios un escenario de inicio de sesión único.
+La decisión de si se debe usar un certificado de cliente se debe tomar en el contexto de la aplicación. Los certificados de cliente no son necesarios si el requisito principal es autenticar el servidor. Sin embargo, si la autenticación de cliente es esencial, se puede usar el certificado de un cliente en lugar de confiar en la autenticación personalizada dentro de la aplicación. El uso de certificados de cliente es preferible a la autenticación personalizada porque proporciona a los usuarios un escenario de inicio de sesión único.
 
 ## <a name="using-tls-in-com"></a>Uso de TLS en COM
 
-TLS solo admite el nivel de suplantación (RPC \_ C \_ IMP LEVEL \_ \_ IMPERSONATE) de suplantación. Si COM negocia TLS como el servicio de autenticación en un proxy, COM establecerá el nivel de suplantación para suplantar, independientemente del valor predeterminado del proceso. Para que la suplantación funcione correctamente en TLS, el cliente debe proporcionar un certificado X.509 al servidor y el servidor debe tener ese certificado asignado a una cuenta de usuario determinada en el servidor. Para obtener más información, vea la Guía paso a paso para asignar [certificados a cuentas de usuario.](https://www.microsoft.com/isapi/redir.dll?prd=windows2000&sbp=technicallibrary&ar=security&sba=mappingcertificates)
+TLS solo admite el nivel de suplantación (RPC \_ C \_ IMP LEVEL \_ \_ IMPERSONATE) de suplantación. Si COM negocia TLS como servicio de autenticación en un proxy, COM establecerá el nivel de suplantación para suplantar independientemente del proceso predeterminado. Para que la suplantación funcione correctamente en TLS, el cliente debe proporcionar un certificado X.509 al servidor y el servidor debe tener ese certificado asignado a una cuenta de usuario determinada en el servidor. Para obtener más información, vea la Guía paso a paso para asignar certificados a [cuentas de usuario.](https://www.microsoft.com/isapi/redir.dll?prd=windows2000&sbp=technicallibrary&ar=security&sba=mappingcertificates)
 
-TLS no admite el [contrabando](cloaking.md)de . Si se especifica una marca de distintivo y TLS en [**una coinitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) o una llamada [**IClientSecurity::SetBlanket,**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) se devolverá E \_ INVALIDARG.
+TLS no admite la [ocultación de](cloaking.md). Si se especifica una marca de ocultación y TLS en una llamada [**a CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) o [**IClientSecurity::SetBlanket,**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) se devolverá E \_ INVALIDARG.
 
 TLS no funciona con el nivel de autenticación establecido en Ninguno. El protocolo de enlace entre el cliente y el servidor examina el nivel de autenticación establecido por cada uno de ellos y elige la configuración de seguridad más alta para la conexión.
 
@@ -83,24 +83,24 @@ Los parámetros de seguridad de TLS se pueden establecer llamando a [**CoInitial
 
 ### <a name="how-a-server-sets-the-security-blanket"></a>Cómo un servidor establece el nivel de seguridad
 
-Si un servidor quiere usar TLS, debe especificar Schannel (RPC C AUTHN GSS SCHANNEL) como servicio de autenticación en el parámetro \_ \_ \_ \_ *asAuthSvc* de [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Para evitar que los clientes se conecten al servidor mediante un servicio de autenticación menos seguro, el servidor debe especificar solo Schannel como servicio de autenticación cuando llame a **CoInitializeSecurity**. El servidor no puede cambiar la seguridad después de llamar **a CoInitializeSecurity**.
+Si un servidor quiere usar TLS, debe especificar Schannel (RPC C AUTHN GSS SCHANNEL) como servicio de autenticación en el parámetro \_ \_ \_ \_ *asAuthSvc* de [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Para evitar que los clientes se conecten al servidor mediante un servicio de autenticación menos seguro, el servidor debe especificar solo Schannel como servicio de autenticación cuando llama a **CoInitializeSecurity**. El servidor no puede cambiar la seguridad después de llamar a **CoInitializeSecurity**.
 
 Para usar TLS, se deben especificar los parámetros siguientes cuando un servidor llama a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity):
 
 -   *pVoid* debe ser un puntero a un [**objeto IAccessControl**](/windows/desktop/api/IAccess/nn-iaccess-iaccesscontrol) o un puntero a un [**DESCRIPTOR DE \_ SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor). No debe ser **NULL ni** un puntero a un AppID.
--   *cAuthSvc* no puede ser 0 ni -1. Los servidores COM nunca eligen Schannel cuando *cAuthSvc* es -1.
--   *asAuthSvc debe* especificar Schannel como un posible servicio de autenticación. Para ello, se estableciendo los siguientes parámetros [**DE SERVICIO \_ DE \_ AUTENTICACIÓN DE SOLE**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_service) para el miembro Schannel de LA LISTA DE [**\_ AUTENTICACIÓN \_ ÚNICA**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_list):
+-   *cAuthSvc* no puede ser 0 o -1. Los servidores COM nunca eligen Schannel cuando *cAuthSvc* es -1.
+-   *asAuthSvc debe* especificar Schannel como un posible servicio de autenticación. Para ello, se estableciendo los siguientes parámetros [**de SERVICIO \_ DE AUTENTICACIÓN \_ DE SOLE**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_service) para el miembro Schannel de LA LISTA DE [**\_ AUTENTICACIÓN \_ DE SOLE**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_list):
     -   *dwAuthnSvc* debe ser RPC \_ C \_ AUTHN \_ GSS \_ SCHANNEL.
     -   *dwAuthzSvc* debe ser RPC \_ C \_ AUTHZ \_ NONE. Actualmente, se omite.
     -   *pPrincipalName debe* ser un puntero a [**CERT \_ CONTEXT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context), que se convierte como un puntero a OLECHAR, que representa el certificado X.509 del servidor.
--   *dwAuthnLevel* indica el nivel de autenticación mínimo que se aceptará de los clientes para una conexión correcta. No puede ser RPC \_ C \_ AUTHN \_ LEVEL \_ NONE.
--   *dwCapabilities* no debe tener establecida la marca \_ APPID de EOAC. La marca ACCESS CONTROL de EOAC debe establecerse si pVoid apunta a un objeto \_ \_ [**IAccessControl;**](/windows/desktop/api/IAccess/nn-iaccess-iaccesscontrol)  no debe establecerse si *pVoid* apunta a un DESCRIPTOR DE \_ SEGURIDAD. Para ver otras marcas que se pueden establecer, [**vea CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
+-   *dwAuthnLevel* indica el nivel mínimo de autenticación que se aceptará de los clientes para una conexión correcta. No puede ser RPC \_ C \_ AUTHN \_ LEVEL \_ NONE.
+-   *dwCapabilities no* debe tener establecida la marca \_ APPID de EOAC. La marca EOAC ACCESS CONTROL debe establecerse si pVoid apunta a un objeto \_ \_ [**IAccessControl;**](/windows/desktop/api/IAccess/nn-iaccess-iaccesscontrol)  no debe establecerse si *pVoid* apunta a un DESCRIPTOR DE \_ SEGURIDAD. Para ver otras marcas que se pueden establecer, [**vea CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
-Para obtener más información sobre el [**uso de CoInitializeSecurity,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)vea Establecer la seguridad [de todo el proceso con CoInitializeSecurity.](setting-processwide-security-with-coinitializesecurity.md)
+Para obtener más información sobre el [**uso de CoInitializeSecurity,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)vea Establecer la seguridad [de todo el proceso con CoInitializeSecurity](setting-processwide-security-with-coinitializesecurity.md).
 
-### <a name="how-a-client-sets-the-security-blanket"></a>Cómo un cliente establece la medida de seguridad
+### <a name="how-a-client-sets-the-security-blanket"></a>Cómo un cliente establece el problema de seguridad
 
-Si un cliente quiere usar TLS, debe especificar Schannel (RPC \_ C AUTHN GSS SCHANNEL) en su lista de servicios de autenticación en el parámetro \_ \_ \_ *pAuthList* de [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Si Schannel no se especifica como un posible servicio de autenticación cuando se llama a **CoInitializeSecurity,** se producirá un error en una llamada posterior a [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) (o [**IClientSecurity::SetBlanket)**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket)si intenta especificar Schannel como servicio de autenticación.
+Si un cliente quiere usar TLS, debe especificar Schannel (RPC \_ C AUTHN GSS SCHANNEL) en su lista de servicios de autenticación en el \_ \_ parámetro \_ *pAuthList* de [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Si Schannel no se especifica como un posible servicio de autenticación cuando se llama a **CoInitializeSecurity,** se producirá un error en una llamada posterior a [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) (o [**IClientSecurity::SetBlanket)**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket)si intenta especificar Schannel como servicio de autenticación.
 
 Se deben especificar los parámetros siguientes cuando un cliente llama a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity):
 
@@ -109,24 +109,24 @@ Se deben especificar los parámetros siguientes cuando un cliente llama a [**CoI
 -   *pAuthList* debe tener los siguientes parámetros [**SOLE \_ AUTHENTICATION \_ INFO**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_info) como miembro de la lista:
     -   *dwAuthnSvc* debe ser RPC \_ C \_ AUTHN \_ GSS \_ SCHANNEL.
     -   *dwAuthzSvc* debe ser RPC \_ C \_ AUTHZ \_ NONE.
-    -   *pAuthInfo* es un puntero a [**CERT \_ CONTEXT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context), que se convierte como un puntero a void, que representa el certificado X.509 del cliente. Si el cliente no tiene un certificado o no desea presentar su certificado al servidor, *pAuthInfo* debe ser **NULL** y se intenta una conexión anónima con el servidor.
+    -   *pAuthInfo* es un puntero a [**UN CONTEXTO \_ DE CERT,**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)que se convierte como puntero a void, que representa el certificado X.509 del cliente. Si el cliente no tiene un certificado o no quiere presentar su certificado al servidor, *pAuthInfo* debe ser **NULL** y se intenta una conexión anónima con el servidor.
 -   *dwCapabilities es* un conjunto de marcas que indican funcionalidades de cliente adicionales. Consulte [**CoInitializeSecurity para**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) obtener información sobre qué marcas se deben establecer.
 
-Para obtener más información sobre el [**uso de CoInitializeSecurity,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)vea Establecer la seguridad [de todo el proceso con CoInitializeSecurity.](setting-processwide-security-with-coinitializesecurity.md)
+Para obtener más información sobre el [**uso de CoInitializeSecurity,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)vea Establecer la seguridad [de todo el proceso con CoInitializeSecurity](setting-processwide-security-with-coinitializesecurity.md).
 
-### <a name="how-a-client-changes-the-security-blanket"></a>Cómo cambia un cliente el nivel de seguridad
+### <a name="how-a-client-changes-the-security-blanket"></a>Cómo cambia un cliente el problema de seguridad
 
 Si un cliente quiere usar TLS pero cambiar la seguridad después de llamar a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), debe llamar a [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) o [**IClientSecurity::SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) con parámetros similares a los usados en la llamada a **CoInitializeSecurity**, con las siguientes diferencias:
 
 -   *pServerPrincName* indica el nombre principal del servidor, en formato msstd o fullsic. Para obtener información sobre estos formatos, vea [Nombres principales](/windows/desktop/Rpc/principal-names). Si el cliente tiene el certificado X.509 del servidor, puede encontrar el nombre principal llamando a [**RpcCertGeneratePrincipalName**](/windows/desktop/api/rpcssl/nf-rpcssl-rpccertgenerateprincipalname).
--   *pAuthInfo* es un puntero a [**UN CONTEXTO \_ DE CERT,**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)que se convierte como un puntero a RPC AUTH IDENTITY HANDLE, que representa el certificado \_ \_ \_ X.509 del cliente. Si el cliente no tiene un certificado o no desea presentar su certificado al servidor, *pAuthInfo* debe ser **NULL** y se intenta una conexión anónima con el servidor.
--   *dwCapabilities* consta de marcas que indican funcionalidades de cliente adicionales. Solo se pueden usar cuatro marcas para cambiar la configuración de seguridad: EOAC \_ DEFAULT, EOAC MUTUAL AUTH, EOAC ANY AUTHORITY (esta marca está en desuso) y \_ \_ \_ \_ EOAC \_ MAKE \_ FULLSIC. Para obtener más información, [**vea CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+-   *pAuthInfo* es un puntero a [**UN CONTEXTO \_ DE CERT,**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)que se convierte como puntero a RPC AUTH IDENTITY HANDLE, que representa el certificado \_ \_ \_ X.509 del cliente. Si el cliente no tiene un certificado o no quiere presentar su certificado al servidor, *pAuthInfo* debe ser **NULL** y se intenta una conexión anónima con el servidor.
+-   *dwCapabilities consta* de marcas que indican funcionalidades de cliente adicionales. Solo se pueden usar cuatro marcas para cambiar la configuración de la omisión de seguridad: EOAC \_ DEFAULT, EOAC MUTUAL AUTH, EOAC ANY AUTHORITY (esta marca está en desuso) y \_ \_ \_ \_ EOAC \_ MAKE \_ FULLSIC. Para obtener más información, [**vea CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
-Para obtener más información sobre el [**uso de CoSetProxyBlanket,**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)vea [Establecer la seguridad en el nivel de proxy de interfaz.](setting-security-at-the-interface-proxy-level.md)
+Para obtener más información sobre el [**uso de CoSetProxyBlanket, vea**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)Establecer la seguridad en el nivel de proxy de [interfaz.](setting-security-at-the-interface-proxy-level.md)
 
 ### <a name="example-client-changes-the-security-blanket"></a>Ejemplo: El cliente cambia el nivel de seguridad
 
-En el ejemplo siguiente se muestra cómo un cliente puede cambiar la medida de seguridad para dar cabida a una solicitud del servidor para que el cliente proporcione su certificado X.509. El código de control de errores se omite por brevedad.
+En el ejemplo siguiente se muestra cómo un cliente puede cambiar el nivel de seguridad para dar cabida a una solicitud del servidor para que el cliente proporcione su certificado X.509. El código de control de errores se omite por brevedad.
 
 
 ```C++
@@ -223,7 +223,7 @@ void ClientChangesSecurity ()
 
 <dl> <dt>
 
-[COM y paquetes de seguridad](com-and-security-packages.md)
+[Com y paquetes de seguridad](com-and-security-packages.md)
 </dt> </dl>
 
  

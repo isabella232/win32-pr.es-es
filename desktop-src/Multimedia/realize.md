@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc0aba1e610f4636c7dbfb71fbc959d9b4b8496cc23e91a97100ef6edce133b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33accaa9638210adf4385a1776fcd8d2bd2021e7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118371440"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370249"
 ---
 # <a name="realize-command"></a>comando realize
 
@@ -53,7 +53,7 @@ Una de las marcas siguientes.
 
 
 
-| Valor      | Significado                                                                   |
+| Value      | Significado                                                                   |
 |------------|---------------------------------------------------------------------------|
 | background | Realiza la paleta como una paleta de fondo.                             |
 | normal     | Realiza la paleta de una ventana de nivel superior. Esta es la configuración predeterminada. |
@@ -73,15 +73,15 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use este comando solo si la aplicación usa un identificador de ventana y recibe un mensaje **\_ WM QUERYNEWPALVARIABLE** **o WM \_ PALETTECHANGED.**
+Use este comando solo si la aplicación usa un identificador de ventana y recibe un mensaje **\_ WM QUERYNEWPALLETTE** **o WM \_ PALETTECHANGED.**
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente indica al dispositivo "myvideo" que se dé cuenta de su paleta.
+El comando siguiente indica al dispositivo "myvideo" que se des cuenta de su paleta.
 
 ``` syntax
 realize myvideo normal
@@ -91,18 +91,18 @@ realize myvideo normal
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

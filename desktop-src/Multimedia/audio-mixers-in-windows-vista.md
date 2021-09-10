@@ -10,16 +10,16 @@ keywords:
 - Windows Mezcladores de audio de Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb4299a7c4d1dcbc3fa5d92e4bb18042793976dafac4e836f80ac5c70ac53f09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0610e9f16e13c19a253fbd9f6fac5ef452fa68ad
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117989605"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371989"
 ---
 # <a name="audio-mixers-in-windows-vista"></a>Mezcladores de audio en Windows Vista
 
-A partir Windows Vista, algunos controles mezcladores se implementan en software en lugar de hardware. Por ejemplo, los controles de volumen se implementan mediante la API Windows sesión de audio (WASAPI). Estos controles no afectan directamente a la configuración de hardware. Además, están asociados a una sesión de audio específica del proceso, por lo que los cambios afectan a la aplicación que realiza la llamada, pero no afectan a otras aplicaciones.
+A partir Windows Vista, algunos controles mezcladores se implementan en software en lugar de hardware. Por ejemplo, los controles de volumen se implementan mediante la API Windows audio session API (WASAPI). Estos controles no afectan directamente a la configuración de hardware. Además, están asociados a una sesión de audio específica del proceso, por lo que los cambios afectan a la aplicación que realiza la llamada, pero no afectan a otras aplicaciones.
 
 Cada dispositivo de punto de conexión de audio tiene un diseño mezclador estándar, implementado en software.
 

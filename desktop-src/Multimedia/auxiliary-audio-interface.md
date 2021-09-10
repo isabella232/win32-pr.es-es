@@ -6,7 +6,7 @@ keywords:
 - Windows multimedia, audio auxiliar
 - multimedia, audio auxiliar
 - audio multimedia, auxiliar
-- audio,auxiliary
+- audio, auxiliar
 - audio multimedia, interfaz de audio auxiliar
 - audio, interfaz de audio auxiliar
 - audio de forma de onda, interfaz de audio auxiliar
@@ -16,15 +16,15 @@ keywords:
 - dispositivos de audio auxiliares, acerca de
 - audio multimedia, dispositivos de audio auxiliares
 - audio, dispositivos de audio auxiliares
-- audio de forma de onda, dispositivos de audio auxiliares
+- audio de onda, dispositivos de audio auxiliares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: effd30748914724cf089b47b9c7d8d1848cfef121d7eb1233738477f31c1e902
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4daa76f2c4f33b7cc04e90313550ad2f254fc7e6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808355"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371275"
 ---
 # <a name="auxiliary-audio-interface"></a>Interfaz de audio auxiliar
 

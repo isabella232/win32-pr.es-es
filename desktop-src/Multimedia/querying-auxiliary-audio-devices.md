@@ -12,12 +12,12 @@ keywords:
 - audio auxiliar, dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49a6d61634475c3b921428529df69113c921b8c5bff8d1a65d5b08931a670fff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5d7de949c304cdd6941be87277f2eef1711ada24
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037575"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371282"
 ---
 # <a name="querying-auxiliary-audio-devices"></a>Consulta de dispositivos de audio auxiliares
 

@@ -6,12 +6,12 @@ keywords:
 - Com de la clave del Registro TreatAs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc0808242b0732521bdd45a7b8fcdb65783ae83e5293f6c7fac39e51d50e609a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf4340b398d6a98b0445cee932da120e23355b71
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119639325"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369572"
 ---
 # <a name="treatas"></a>TreatAs
 
@@ -25,7 +25,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
       TreatAs = {CLSID_TreatAs}
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ REG SZ.**
 

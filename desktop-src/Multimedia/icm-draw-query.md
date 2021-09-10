@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0d1ce01244f81383baab9e6a7efc0fbf658682c8bc070ca0c06eec04814a847
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27266484cffa503583df32b60c6e8a0c04f344f4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987287"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370550"
 ---
 # <a name="icm_draw_query-message"></a>\_ICM Draw \_ QUERY message
 
-El **ICM DRAW QUERY \_ \_ consulta** a un controlador de representación para determinar si puede representar datos en un formato específico. Puede enviar este mensaje explícitamente o mediante la [**macro ICDrawQuery.**](/windows/desktop/api/Vfw/nf-vfw-icdrawquery)
+El **ICM draw query \_ \_ consulta** consulta a un controlador de representación para determinar si puede representar los datos en un formato específico. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawQuery.**](/windows/desktop/api/Vfw/nf-vfw-icdrawquery)
 
 
 ```C++
@@ -47,11 +47,11 @@ Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bi
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR OK si el controlador puede representar datos en el formato especificado o \_ ICERR \_ BADFORMAT en caso contrario.
+Devuelve ICERR OK si el controlador puede representar los datos en el formato especificado o \_ ICERR BADFORMAT en caso \_ contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje difiere del ICM [**\_ DRAW \_ BEGIN**](icm-draw-begin.md) en que consulta el controlador en un sentido general. **ICM \_ DRAW \_ BEGIN** determina si el controlador puede dibujar los datos con el formato especificado en condiciones específicas, como el extendido de la imagen.
+Este mensaje difiere del ICM [**\_ DRAW \_ BEGIN**](icm-draw-begin.md) en que consulta el controlador en un sentido general. **ICM \_ DRAW \_ BEGIN** determina si el controlador puede dibujar los datos con el formato especificado en condiciones específicas, como extender la imagen.
 
 ## <a name="requirements"></a>Requisitos
 

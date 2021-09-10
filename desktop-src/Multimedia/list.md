@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8881c85d146ce869e41d234a72190901135d233f8e45d580d5f568c4ccc48da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5d0a171c6768caf1b947a0d07cb46e5cccd28c6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139478"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369892"
 ---
 # <a name="list-command"></a>Comando list
 
@@ -53,9 +53,9 @@ Marca que identifica el número y los tipos de entradas de vídeo y audio. En la
 
 
 
-| Valor        | Significado                                                                           | Significado                                                                                                                      |
+| Value        | Significado                                                                           | Significado                                                                                                                      |
 |--------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| digitalvideo | algoritmo de audioaudio quality algorithm *audio* streamcountnumber *index* | still algorithmstil quality *algorithm* video algorithmvideo quality algorithm *video sourcevideo* stream |
+| digitalvideo | audio algorithmaudio quality *algorithm* audio streamcountnumber *index* | still algorithmstil quality *algorithm* video algorithmvideo quality algorithm *video sourcevideo* stream |
 | Vcr          | índice de número de origen countaudio de origen de *audio*                                     | recuento de orígenes de vídeo índice de número de origen de *vídeo*                                                                                |
 
 
@@ -66,14 +66,14 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 
 
 
-| Valor                               | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Value                               | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | algoritmo de audio                     | Especifica que el comando debe recuperar nombres de algoritmos de audio.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | algoritmo de calidad de *audio* | Especifica que el comando debe recuperar los niveles de calidad asociados al algoritmo *especificado.* Si *el* algoritmo es "actual", se devuelve el nivel de calidad del algoritmo actual.                                                                                                                                                                                                                                                                                                   |
 | recuento de orígenes de audio                  | Devuelve el número total de entradas de audio.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | índice de número de origen *de audio*         | Devuelve el tipo de entrada de audio del índice de *origen.*                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| secuencia de audio                        | Especifica que el comando debe recuperar los nombres de las secuencias de audio asociadas al área de trabajo. Estas cadenas (como "Inglés" o "Alemán") se insertan en el archivo e identifican la secuencia.                                                                                                                                                                                                                                                                                    |
-| recuento                               | Devuelve el número de opciones del tipo especificado.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| secuencia de audio                        | Especifica que el comando debe recuperar los nombres de las secuencias de audio asociadas al área de trabajo. Estas cadenas (como "Inglés" o "Alemán") se incrustan en el archivo e identifican la secuencia.                                                                                                                                                                                                                                                                                    |
+| count                               | Devuelve el número de opciones del tipo especificado.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | number *index*                      | Devuelve una cadena que describe una opción específica (identificada por *el índice*) del tipo de opción especificado. *El* índice debe ser un entero entre 1 y el valor devuelto por "count".                                                                                                                                                                                                                                                                                                         |
 | algoritmo still                     | Especifica que el comando debe recuperar nombres de algoritmos todavía.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | algoritmo de calidad *todavía* | Especifica que el comando debe recuperar los niveles de calidad asociados al algoritmo todavía *especificado.* Si *el* algoritmo es "actual", se devuelve el nivel de calidad del algoritmo actual.                                                                                                                                                                                                                                                                                             |
@@ -82,7 +82,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 | origen de vídeo                        | Especifica que el comando debe devolver información sobre los orígenes de vídeo. Cuando se usa con la marca "count", devuelve el número de orígenes de vídeo. Cuando se usa con la marca "number", devuelve el tipo de un origen de vídeo. MCI define las siguientes constantes para el tipo: "cide", "rgb", "pal", "secam", "svideo" y "generic". Puede haber más de un origen de cada tipo devuelto. El tipo de origen "genérico" se usa cuando se permite más de una señal para ese conector. |
 | recuento de orígenes de vídeo                  | Devuelve el número total de entradas de vídeo.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | índice de número de origen de *vídeo*         | Devuelve el tipo de entrada de vídeo del índice de *origen*.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| secuencia de vídeo                        | Especifica que el comando debe recuperar los nombres de las secuencias de vídeo asociadas al área de trabajo. Estas cadenas (como "final final" o "final lamentablemente") se insertan en el archivo e identifican la secuencia.                                                                                                                                                                                                                                                                               |
+| secuencia de vídeo                        | Especifica que el comando debe recuperar los nombres de las secuencias de vídeo asociadas al área de trabajo. Estas cadenas (como "final inesperado" o "final lamentablemente") se insertan en el archivo e identifican la secuencia.                                                                                                                                                                                                                                                                               |
 
 
 
@@ -101,7 +101,7 @@ Puede ser "wait", "notify" o "test". Para obtener más información sobre estas 
 
 Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el caso de los dispositivos VCR, se debe especificar "origen de vídeo" o "origen de audio" con las marcas "count" o "number". Si se especifica "count", se devuelve el número total de entradas de vídeo o audio. Si se especifica "number", el controlador devuelve un tipo correspondiente a la entrada. El tipo puede ser cualquiera de los siguientes: "tuner", "line", "svideo", "aux" o "generic". Normalmente, primero debe consultar el VCR para el "recuento" y, a continuación, usar el recuento como intervalo para la marca "number". Los números de "origen" comienzan en 1.
 
@@ -120,7 +120,7 @@ En el caso de los dispositivos VCR, se debe especificar "origen de vídeo" o "or
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

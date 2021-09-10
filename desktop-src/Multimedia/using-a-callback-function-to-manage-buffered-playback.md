@@ -11,7 +11,7 @@ keywords:
 - MOM_DONE mensaje
 - MOM_OPEN mensaje
 - Interfaz digital de instrumentar música (MIDI), enviar mensajes
-- MIDI (Interfaz digital instrumenta de música), envío de mensajes
+- MIDI (Interfaz digital instrumenta instrumentable), envío de mensajes
 - reproducir archivos MIDI, enviar mensajes
 - envío de mensajes MIDI
 - Interfaz digital instrumentable (MIDI), funciones de devolución de llamada
@@ -20,12 +20,12 @@ keywords:
 - Función de devolución de llamada de MidiOutProc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 727474e5323519cb5f70dbcaa71798c41a8c6f9433852718051a8584a2967e5c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bccccd8e5fb052b89e8ca1804b89de6da26cd5b7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119804695"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371012"
 ---
 # <a name="using-a-callback-function-to-manage-buffered-playback"></a>Usar una función de devolución de llamada para administrar la reproducción en búfer
 
@@ -35,7 +35,7 @@ Los mensajes siguientes se pueden enviar al parámetro *wMsg* de la función de 
 
 
 
-| Valor                           | Significado                                                                                                                                                                  |
+| Value                           | Significado                                                                                                                                                                  |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MOM \_ CLOSE**](mom-close.md) | Se envía cuando el dispositivo se cierra mediante la [**función midiOutClose.**](/windows/win32/api/mmeapi/nf-mmeapi-midioutclose)                                                                               |
 | [**MOM \_ DONE**](mom-done.md)   | Se envía cuando el controlador de dispositivo finaliza con un bloque de datos enviado mediante [**la función midiOutLongMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutlongmsg) [**o midiStreamOut.**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout) |

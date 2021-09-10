@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7075de6ed50c49773a502ba77e093d84e85b079a6b17c462ea8ee65ad1330aa6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 51150043a68f3cd34525eb74a64237fc4dc150e8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688805"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370256"
 ---
 # <a name="settuner-command"></a>Comando settuner
 
@@ -53,11 +53,11 @@ Una de las marcas siguientes.
 
 
 
-| Valor                            | Significado                                                                                                                                                                                                                                                                                                     |
+| Value                            | Significado                                                                                                                                                                                                                                                                                                     |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| canal *de canal*                | Establece el afinador en *el canal*. Es posible que no pueda cambiar el canal durante la grabación, dependiendo del VCR. Un canal mayor que el máximo establece el afinador en el canal máximo.                                                                                                                    |
-| channel seek upchannel seek down | Busca el canal siguiente con una señal válida. "Buscar" incrementa el número de canal en su búsqueda. "Buscar abajo" disminuye el número de canal en su búsqueda. El ajuste se ajusta al canal 1 cuando se supera el número de canal máximo. De forma similar, al buscar hacia abajo, el ajuste se ajusta al canal máximo. |
-| canal hacia arriba y abajo           | Incrementa o disminuye el canal del tuner. Es posible que no pueda cambiar el canal durante la grabación, dependiendo del VCR. El ajuste se ajusta al canal 1 cuando se supera el número de canal máximo. De forma similar, al buscar hacia abajo, el ajuste se ajusta al canal máximo.                              |
+| canal *de canal*                | Establece el afinador en *el canal*. Es posible que no pueda cambiar el canal durante la grabación, en función del VCR. Un canal mayor que el máximo establece el afinador en el canal máximo.                                                                                                                    |
+| channel seek upchannel seek down | Busca el canal siguiente con una señal válida. "Buscar" incrementa el número de canal en su búsqueda. "Buscar abajo" disminuye el número de canal en su búsqueda. El ajuste se ajusta al canal 1 cuando se supera el número máximo de canales. De forma similar, al buscar hacia abajo, el ajuste se ajusta al canal máximo. |
+| canal hacia arriba y abajo           | Incrementa o disminuye el canal del tuner. Es posible que no pueda cambiar el canal durante la grabación, en función del VCR. El ajuste se ajusta al canal 1 cuando se supera el número máximo de canales. De forma similar, al buscar hacia abajo, el ajuste se ajusta al canal máximo.                              |
 | number *number*                  | Especifica el ajuste que se va a ver afectado por el comando settuner. Si *no* se da number, se supone el valor predeterminado de 1.                                                                                                                                                                                    |
 
 
@@ -81,7 +81,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -92,7 +92,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

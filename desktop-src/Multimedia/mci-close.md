@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 047bea34aab9130cc609904d56ff95ba593271670b27a5bc3d763180ccf50418
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 417129595405aeb6c9a2345eb9c3f03f1e2731e5
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784635"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369925"
 ---
 # <a name="mci_close-command"></a>Comando MCI \_ CLOSE
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (T
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Salir de una aplicación sin cerrar ningún dispositivo MCI que haya abierto puede dejar el dispositivo inaccesible. La aplicación debe cerrar explícitamente cada dispositivo o archivo cuando haya terminado con él. MCI descarga el dispositivo cuando se cierran todas las instancias del dispositivo o todos los archivos asociados.
 
@@ -88,7 +88,7 @@ Salir de una aplicación sin cerrar ningún dispositivo MCI que haya abierto pue
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

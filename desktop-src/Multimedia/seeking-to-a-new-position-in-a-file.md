@@ -6,7 +6,7 @@ keywords:
 - E/S de archivos multimedia, pasar al principio de los archivos
 - E/S de archivo, pasar al principio de los archivos
 - entrada y salida (E/S), pasar al principio de los archivos
-- E/S (entrada y salida), mover al principio de los archivos
+- E/S (entrada y salida), pasar al principio de los archivos
 - mover al principio de los archivos de E/S
 - E/S de archivos multimedia, buscar nueva posición en los archivos
 - E/S de archivo, buscar nueva posición en los archivos
@@ -15,12 +15,12 @@ keywords:
 - buscar nueva posición en los archivos de E/S
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97e51ab51065bcdf89af84f2fd622558261dd4cf42cac3e50fe54fb116a7ad9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 949ca3e9d118fdd83e5b53ae9336ad8ab601c64b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136589"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371833"
 ---
 # <a name="seeking-to-a-new-position-in-a-file"></a>Buscar una nueva posición en un archivo
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17969bd05e321594a618d0ab712ae3fdec86f079d4415689f0b8f27b1000abf9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 232a1d829b5cdd6da23e7dd3fb0294b95ca79f4b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117802919"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370646"
 ---
 # <a name="mciwndm_getfilename-message"></a>Mensaje GETFILENAME de MCIWNDM \_
 
@@ -56,7 +56,7 @@ Puntero a un búfer definido por la aplicación para devolver el nombre de archi
 
 Devuelve cero si se realiza correctamente o 1 en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la cadena terminada en NULL que contiene el nombre de archivo es mayor que el búfer, MCIWnd trunca el nombre de archivo.
 
@@ -64,7 +64,7 @@ Si la cadena terminada en NULL que contiene el nombre de archivo es mayor que el
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

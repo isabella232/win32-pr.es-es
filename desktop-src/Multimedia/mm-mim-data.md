@@ -1,6 +1,6 @@
 ---
 title: MM_MIM_DATA mensaje (Mmsystem.h)
-description: El mensaje MM MIM DATA se envía a una ventana cuando un dispositivo de entrada MIDI recibe un \_ \_ mensaje MIDI completo.
+description: El mensaje MM MIM DATA se envía a una ventana cuando un dispositivo de entrada MIDI recibe un \_ \_ mensaje COMPLETO de MIDI.
 ms.assetid: 9c580e48-78f3-4914-bdea-393823fb8482
 keywords:
 - MM_MIM_DATA mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4309149c8b69fd4396de3a4e67ab18c49008dd7051ed52d4fe992867d1262fe4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d2a79a5a4ab6b0422705fe737ba3da4a6fd4f923
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807385"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370892"
 ---
 # <a name="mm_mim_data-message"></a>Mensaje \_ MM MIM \_ DATA
 
-El **mensaje MM MIM \_ \_ DATA** se envía a una ventana cuando un dispositivo de entrada MIDI recibe un mensaje MIDI completo.
+El **mensaje MM MIM \_ \_ DATA** se envía a una ventana cuando un dispositivo de entrada MIDI recibe un mensaje COMPLETO de MIDI.
 
 
 ```C++
@@ -52,10 +52,10 @@ Mensaje DE MIDI que se recibió. El mensaje se empaqueta en un valor doubleword 
 
 
 
-| Requisito | Valor | Descripción |
+| Requisito | Value | Descripción |
 |-----------|-----------------|-----------------------------------------------------|
 | Palabra alta | Byte de orden superior | No se usa.                                           |
-|           | Byte de orden bajo  | Contiene un segundo byte de datos DE MIDI (cuando sea necesario).  |
+|           | Byte de orden bajo  | Contiene un segundo byte de datos MIDI (cuando sea necesario).  |
 | Palabra baja  | Byte de orden superior | Contiene el primer byte de datos DE MIDI (cuando sea necesario). |
 |           | Byte de orden bajo  | Contiene el estado de MIDI.                           |
 
@@ -71,9 +71,9 @@ Los dos bytes de datos de MIDI son opcionales, dependiendo del byte de estado de
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los mensajes DE MIDI recibidos de un puerto de entrada de MIDI tienen el estado de ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado DE MIDI.
+Los mensajes MIDI recibidos de un puerto de entrada DE MIDI tienen deshabilitado el estado de ejecución; cada mensaje se expande para incluir el byte de estado DE MIDI.
 
 Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI. No hay ninguna marca de tiempo disponible con este mensaje. Para los datos de entrada con marca de tiempo, debe usar los mensajes que se envían a las funciones de devolución de llamada.
 
@@ -81,7 +81,7 @@ Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

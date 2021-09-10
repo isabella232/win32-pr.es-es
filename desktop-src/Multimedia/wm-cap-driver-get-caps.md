@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_DRIVER_GET_CAPS mensaje (Vfw.h)
-description: El mensaje WM \_ CAP \_ DRIVER GET \_ \_ CAPS devuelve las funcionalidades de hardware del controlador de captura conectado actualmente a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverGetCaps.
+description: El mensaje WM CAP DRIVER GET CAPS devuelve \_ \_ las \_ \_ funcionalidades de hardware del controlador de captura conectado actualmente a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverGetCaps.
 ms.assetid: 898a800c-1109-47cd-bcc9-cb61d86a4a2e
 keywords:
 - WM_CAP_DRIVER_GET_CAPS mensaje Windows Multimedia
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aecc863234cddf64bece47896015fd01e97093d227951aef69363136e55cabe5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 027e530be82c76afebc343ceebe4905daef9b126
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687085"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371413"
 ---
-# <a name="wm_cap_driver_get_caps-message"></a>Mensaje \_ GET \_ \_ CAPS DEL CONTROLADOR WM CAP \_
+# <a name="wm_cap_driver_get_caps-message"></a>Mensaje \_ GET \_ \_ CAPS DEL CONTROLADOR \_ DE WM CAP
 
 El **mensaje WM CAP DRIVER GET \_ \_ \_ \_ CAPS** devuelve las funcionalidades de hardware del controlador de captura conectado actualmente a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capDriverGetCaps.**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps)
 
@@ -54,11 +54,11 @@ Puntero a la [**estructura CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdri
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
+Devuelve **TRUE** si se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las funcionalidades devueltas [**en CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps) son constantes para un controlador de captura determinado. Las aplicaciones necesitan recuperar esta información una vez cuando el controlador de captura se conecta por primera vez a una ventana de captura.
+Las funcionalidades devueltas [**en CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps) son constantes para un controlador de captura determinado. Las aplicaciones deben recuperar esta información una vez cuando el controlador de captura se conecta por primera vez a una ventana de captura.
 
 ## <a name="requirements"></a>Requisitos
 

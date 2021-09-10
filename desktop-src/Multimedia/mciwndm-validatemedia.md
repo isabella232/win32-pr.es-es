@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2db79f5714a9f48a2fdd73ff6eedecd0a14172e352e0a40ffbdccdd3aaaf4c2f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 43cb6e6a4a7c320d4eb6472c3c72da2843d0814c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428535"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370771"
 ---
 # <a name="mciwndm_validatemedia-message"></a>Mensaje VALIDATEMEDIA de MCIWNDM \_
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18d53acbdfeb0c13b4b9e201d1bea23008dfbaa83221007152181fe685d09957
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e9f6ba5be1c2a4ce94b880a87a468c594bc5b676
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039205"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369998"
 ---
 # <a name="mci_info-command"></a>Comando INFO de MCI \_
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI INFO \_ PARMS.**](mci-info-parms.md) (Los dis
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La siguiente marca estándar adicional y específica del comando se aplica a todos los dispositivos que admiten MCI \_ INFO:
 
@@ -277,7 +277,7 @@ Obtiene el nombre del producto de la salida actual y su valor es específico del
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

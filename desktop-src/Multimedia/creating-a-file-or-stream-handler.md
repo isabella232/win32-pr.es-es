@@ -4,12 +4,12 @@ description: Crear un controlador de archivos o secuencias
 ms.assetid: 9ec1af9a-f428-4323-a4f8-3eb923ce78d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6732c572e390f3401f6e0472659bec7c522189b357b04d8ef7def20a7d9519b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b2f118f4f5279cea1aacedd58b86f23afa9a9af
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785795"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371678"
 ---
 # <a name="creating-a-file-or-stream-handler"></a>Crear un controlador de archivos o secuencias
 

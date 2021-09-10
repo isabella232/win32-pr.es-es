@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41bdb8fbc9a0cddf470733fa35b2f25dc62675175cbb40c427d0b160074c5409
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3bde99dfcf483e67aa6a601de2718814cc22439
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038795"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370567"
 ---
 # <a name="icm_draw_stop-message"></a>\_ICM Draw \_ STOP message
 
@@ -38,7 +38,7 @@ lParam = 0;
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje lo usa el hardware que realiza su propia descompresión asincrónica, control de tiempo y dibujo.
 

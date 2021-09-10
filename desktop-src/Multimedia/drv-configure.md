@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DRV_CONFIGURE (mmsystem. h)
-description: Dirige el controlador instalable para mostrar su cuadro de diálogo de configuración y permitir que el usuario especifique la nueva configuración para la instancia de controlador instalable especificada.
+title: DRV_CONFIGURE mensaje (Mmsystem.h)
+description: Dirige al controlador instalable para que muestre su cuadro de diálogo de configuración y permita al usuario especificar una nueva configuración para la instancia de controlador instalable dada.
 ms.assetid: 0d99fad7-ce79-4574-9fd8-262f7e758866
 keywords:
-- Mensaje de DRV_CONFIGURE de Windows multimedia
+- DRV_CONFIGURE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 30a761e7bda7188e93b02e436f2e952bed61bee9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997093"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370441"
 ---
-# <a name="drv_configure-message"></a>DRV \_ configurar mensaje
+# <a name="drv_configure-message"></a>MENSAJE DE CONFIGURACIÓN DE DRV \_
 
-Dirige el controlador instalable para mostrar su cuadro de diálogo de configuración y permitir que el usuario especifique la nueva configuración para la instancia de controlador instalable especificada.
+Dirige al controlador instalable para que muestre su cuadro de diálogo de configuración y permita al usuario especificar una nueva configuración para la instancia de controlador instalable dada.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Dirige el controlador instalable para mostrar su cuadro de diálogo de configura
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificador del controlador instalable. Este es el mismo valor que el controlador devolvió previamente desde el mensaje [**\_ abierto DRV**](drv-open.md) .
+Identificador del controlador instalable. Este es el mismo valor devuelto anteriormente por el controlador del [**mensaje DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
@@ -46,14 +46,14 @@ Identificador de la instancia del controlador instalable.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Identificador de la ventana primaria. Esta ventana se utiliza como ventana primaria para el cuadro de diálogo de configuración.
+Identificador de la ventana primaria. Esta ventana se usa como ventana primaria para el cuadro de diálogo de configuración.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Dirección de una estructura [**DRVCONFIGINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-drvconfiginfo) o **null**. Si se proporciona la estructura, contiene los nombres de la clave del registro y el valor asociado al controlador.
+Dirección de una [**estructura DRVCONFIGINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-drvconfiginfo) o **NULL.** Si se da la estructura , contiene los nombres de la clave del Registro y el valor asociados al controlador.
 
 </dd> </dl>
 
@@ -65,9 +65,9 @@ Devuelve uno de estos valores:
 
 | Requisito | Value |
 |-----------------|----------------------------------------------------------------------------------------------------|
-| DRVCNF \_ Aceptar      | La configuración es correcta; no es necesario realizar ninguna otra acción.                                    |
-| \_Cancelar DRVCNF  | El usuario canceló el cuadro de diálogo. no es necesario realizar ninguna otra acción.                                   |
-| reinicio de DRVCNF \_ | La configuración es correcta, pero los cambios no surten efecto hasta que se reinicia el sistema. |
+| DRVCNF \_ OK      | La configuración es correcta; no se requiere ninguna otra acción.                                    |
+| DRVCNF \_ CANCEL  | El usuario canceló el cuadro de diálogo; no se requiere ninguna otra acción.                                   |
+| REINICIO \_ DRVCNF | La configuración es correcta, pero los cambios no se hacen efectivos hasta que se reinicia el sistema. |
 
 
 
@@ -75,9 +75,9 @@ Devuelve uno de estos valores:
 
 ## <a name="remarks"></a>Observaciones
 
-Algunos controladores instalables anexan información de configuración al valor asignado al valor del registro asociado al controlador.
+Algunos controladores instalables anexan información de configuración al valor asignado al valor del Registro asociado al controlador.
 
-Los \_ valores de devolución DRV CANCEL, DRV \_ OK y DRV \_ restart son obsoletos; se han sustituido por DRVCNF \_ Cancel, DRVCNF \_ OK y DRVCNF \_ restart, respectivamente.
+Los valores devueltos DRV CANCEL, DRV OK y DRV RESTART están obsoletos; se han reemplazado por \_ \_ \_ DRVCNF \_ CANCEL, DRVCNF OK y \_ DRVCNF \_ RESTART, respectivamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,7 +87,7 @@ Los \_ valores de devolución DRV CANCEL, DRV \_ OK y DRV \_ restart son obsolet
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

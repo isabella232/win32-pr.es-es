@@ -9,12 +9,12 @@ keywords:
 - CapCaptureSetSetup (macro)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46a6493d22a495a56084e89d2b067c1cf9a874752b44b81f636b5a184b895199
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 71e2f3e5b56f995e6a09792260ac2fd6e1ba5cd7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687695"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372080"
 ---
 # <a name="video-buffers"></a>Búferes de vídeo
 

@@ -7,23 +7,23 @@ keywords:
 - multimedia, administrador de compresión de vídeo (VCM)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 122114666713b3bf5d1e706db2206a3d4894f8a40dea94d33d3b12829fb02bfd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6841446a5a0f22b8c05c2419448e65b035f90703
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808725"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370310"
 ---
 # <a name="about-the-video-compression-manager"></a>Acerca del Administrador de compresión de vídeo
 
-Normalmente, los dispositivos instalables funcionan con datos de imagen de vídeo almacenados en archivos de audio y vídeo intercalados (AVI). En esta introducción se explican las técnicas de programación que se usan para acceder a los dispositivos instalables a través de VCM y se tratan los temas siguientes:
+Normalmente, los módulos instalables funcionan con datos de imágenes de vídeo almacenados en archivos intercalados de audio y vídeo (AVI). En esta introducción se explican las técnicas de programación que se usan para acceder a los procedimientos instalables a través de VCM y se tratan los temas siguientes:
 
 -   VCM y el vídeo para Windows arquitectura
 -   Comprimir y descomprimir datos de imagen de la aplicación
 -   Uso de representadores de VCM para dibujar datos de la aplicación
 -   Funciones y estructuras de VCM
 
-Antes de leer esta información general, debe estar familiarizado con los servicios gráficos de Microsoft Win32. En concreto, VCM usa ampliamente los mapas de bits y las estructuras relacionadas con mapas de bits, como [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) y [**BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) Para obtener información adicional sobre las estructuras **BITMAPINFO** y **BITMAPINFOHEADER,** vea [Mapas de bits.](/previous-versions//ms532349(v=vs.85))
+Antes de leer esta introducción, debe estar familiarizado con los servicios gráficos de Microsoft Win32. En concreto, VCM usa ampliamente mapas de bits y estructuras relacionadas con mapas de bits, como [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) y [**BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) Para obtener información adicional sobre las **estructuras BITMAPINFO** y **BITMAPINFOHEADER,** vea [Mapas de bits.](/previous-versions//ms532349(v=vs.85))
 
 > [!Note]  
 > El administrador de compresión de audio (ACM) proporciona compatibilidad de nivel de sistema con controladores de compresión y descompresión de audio. Para obtener una descripción de los servicios de compresión de audio, vea [Administrador de compresión de audio](audio-compression-manager.md).

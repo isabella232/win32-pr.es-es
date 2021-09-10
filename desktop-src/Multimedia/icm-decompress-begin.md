@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1d26a0ea99f089d558da639dfad99d4551237b180e595912973e0d22f634f5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59b8f55ebb5543c73e0d7a9c9ee800fabfc483d8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119678355"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370502"
 ---
 # <a name="icm_decompress_begin-message"></a>\_ICM Mensaje BEGIN de \_ DECOMPRESS
 
@@ -56,13 +56,13 @@ Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bi
 
 Devuelve ICERR \_ OK si se admite la descompresión especificada o ICERR \_ BADFORMAT en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el controlador recibe este mensaje, debe asignar búferes y realizar las operaciones que requieren mucho tiempo para que pueda procesar ICM [**\_ mensajes DECOMPRESS**](icm-decompress.md) de forma eficaz.
 
 Si desea que el controlador descomprima los datos directamente en la pantalla, envíe el [**ICM \_ DRAW.**](icm-draw.md)
 
-Los **ICM \_ DECOMPRESS \_ BEGIN** [**y ICM \_ end de DECOMPRESS \_ no**](icm-decompress-end.md) anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con **ICM END de \_ DECOMPRESS, \_** debe reiniciar la descompresión con nuevos parámetros.
+Los **ICM \_ DECOMPRESS \_ BEGIN** [**y ICM \_ end de \_ DECOMPRESS**](icm-decompress-end.md) no anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con **ICM \_ DECOMPRESS \_ END**, debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 

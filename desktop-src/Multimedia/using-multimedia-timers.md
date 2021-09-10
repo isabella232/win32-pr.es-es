@@ -12,12 +12,12 @@ keywords:
 - timers,examples
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f5d3b1f520f27422902ed7477ab01f4cdbf313d91ba1541ccf359fbaa6bc646
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c904935b99d9a17f41da1f93b60f52b5b033318e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118940966"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370969"
 ---
 # <a name="using-multimedia-timers"></a>Uso de temporizadores multimedia
 

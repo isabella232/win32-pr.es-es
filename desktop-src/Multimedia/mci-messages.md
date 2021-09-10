@@ -7,12 +7,12 @@ keywords:
 - Referencia de MCI, mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2561411afba88f58de49ddd76375ae71c4f20dbd5c40509b0934fa23f30e5536
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 189a5fd6197df8deee736752cc474968fe28b6ce
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117803547"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369867"
 ---
 # <a name="mci-messages"></a>Mensajes de MCI
 

@@ -1,6 +1,6 @@
 ---
 title: MCI_VD_PLAY_PARMS estructura (Mciapi.h)
-description: La estructura MCI VD PLAY PARMS contiene información de posición y velocidad para el \_ \_ comando \_ MCI PLAY para \_ dispositivos videodisc.
+description: La estructura MCI VD PLAY PARMS contiene información de posición y velocidad para \_ \_ el comando \_ MCI PLAY para \_ dispositivos videodisc.
 ms.assetid: 9fa8418f-3f69-4a9c-b23e-7d2e2c75c7af
 keywords:
 - MCI_VD_PLAY_PARMS estructura Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62c2aef6915d1e3cc325d5b9f8e1c7fe176a878c2d84080b5f8a77eaf034afc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3ab04ba5cf0a2b507370a4b777c19fd60a05c30
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783870"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370202"
 ---
 # <a name="mci_vd_play_parms-structure"></a>Estructura MCI \_ VD \_ PLAY \_ PARMS
 
@@ -71,7 +71,7 @@ Velocidad de reproducción en fotogramas por segundo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -93,7 +93,7 @@ Puede usar la estructura [**MCI \_ PLAY \_ PARMS**](mci-play-parms.md) en lugar 
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

@@ -8,16 +8,16 @@ keywords:
 - Macro MCIWndOpenInterface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb9e388e4b7998a932cb22545c05509277f1f7fa705a81fbde02d4d5fb35cdd6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac4191f18409a1fb1f23ba3a2128b4aaed1b30e8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119786274"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371959"
 ---
 # <a name="allowing-the-user-to-specify-devices-and-files"></a>Permitir al usuario especificar dispositivos y archivos
 
-Puede asociar un dispositivo o archivo a una ventana MCIWnd existente mediante las macros [**MCIWndOpenDialog**](/windows/desktop/api/Vfw/nf-vfw-mciwndopendialog), [**MCIWndOpen y**](/windows/desktop/api/Vfw/nf-vfw-mciwndopen) [**MCIWndOpenInterface,**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface) y la función [**GetOpenFileNamePreview.**](/windows/desktop/api/Vfw/nf-vfw-getopenfilenamepreviewa)
+Puede asociar un dispositivo o archivo a una ventana MCIWnd existente mediante las macros [**MCIWndOpenDialog**](/windows/desktop/api/Vfw/nf-vfw-mciwndopendialog), [**MCIWndOpen**](/windows/desktop/api/Vfw/nf-vfw-mciwndopen)y [**MCIWndOpenInterface,**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface) y la función [**GetOpenFileNamePreview.**](/windows/desktop/api/Vfw/nf-vfw-getopenfilenamepreviewa)
 
 Para permitir que un usuario de la aplicación seleccione un archivo para reproducir, use **MCIWndOpenDialog**. Esta macro muestra el **cuadro** de diálogo Abrir (que se muestra en la siguiente captura de pantalla) para elegir un archivo y asocia el archivo seleccionado a la ventana actual de MCIWnd.
 

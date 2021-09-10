@@ -14,12 +14,12 @@ keywords:
 - selección del formato para guardar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65288e4a15712ec86bcf48a8f8088da9f6d5944f298119b21766be238168bf3b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 55df4cd89a04bf1d3dd34512c4014928b6d5d4fb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805785"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370346"
 ---
 # <a name="producing-a-dialog-box-for-selecting-a-format-for-saving"></a>Generar un cuadro de diálogo para seleccionar un formato para guardar
 

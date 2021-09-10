@@ -4,16 +4,16 @@ description: El nivel de autenticación controla la cantidad de seguridad que un
 ms.assetid: 0bad2bfd-6930-42fc-beb0-bce32440b0b5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8c468408a22f1ea0c0fae67d7ce3d5f5b40f8a6342538614c1619acd40574ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 250661e4a8da42ffd91f37e282a39fbb52b6328a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118311155"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369759"
 ---
 # <a name="authentication-level"></a>Nivel de autenticación
 
-El nivel de autenticación controla la cantidad de seguridad que un cliente o servidor desea de su SSP. El nivel de autenticación se establece pasando un valor de RPC C AUTHN LEVEL xxx adecuado a \_ \_ \_ \_ [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) o [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) a través del *parámetro dwAuthnLevel.* Los niveles de autenticación del cliente y el servidor se comparan durante el protocolo de enlace y se usa la configuración de protección de seguridad de nivel superior para la conexión.
+El nivel de autenticación controla la cantidad de seguridad que un cliente o servidor desea de su SSP. El nivel de autenticación se establece pasando un valor de RPC C AUTHN LEVEL xxx adecuado a \_ \_ \_ \_ [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) o [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) a través del *parámetro dwAuthnLevel.* Los niveles de autenticación del cliente y el servidor se comparan durante el protocolo de enlace y la configuración de protección de seguridad de nivel superior se usa para la conexión.
 
 Los distintos niveles de autenticación se describen de la siguiente manera, desde la protección de seguridad de nivel más bajo a la más alta:
 
@@ -22,14 +22,14 @@ Los distintos niveles de autenticación se describen de la siguiente manera, des
 <span id="None__RPC_C_AUTHN_LEVEL_NONE_"></span><span id="none__rpc_c_authn_level_none_"></span><span id="NONE__RPC_C_AUTHN_LEVEL_NONE_"></span>Ninguno (RPC \_ C \_ AUTHN \_ LEVEL \_ NONE)
 </dt> <dd>
 
-No se realiza ninguna autenticación durante la comunicación entre el cliente y el servidor. Se omite toda la configuración de seguridad. Este nivel de autenticación solo se puede establecer si el nivel [de servicio de autenticación](com-authentication-service-constants.md) es RPC \_ C \_ AUTHN \_ NONE.
+No se realiza ninguna autenticación durante la comunicación entre el cliente y el servidor. Se omiten todas las opciones de seguridad. Este nivel de autenticación solo se puede establecer si el nivel [de servicio de autenticación](com-authentication-service-constants.md) es RPC \_ C \_ AUTHN \_ NONE.
 
 </dd> <dt>
 
 <span id="Default__RPC_C_AUTHN_LEVEL_DEFAULT_"></span><span id="default__rpc_c_authn_level_default_"></span><span id="DEFAULT__RPC_C_AUTHN_LEVEL_DEFAULT_"></span>Valor predeterminado (RPC \_ C \_ AUTHN \_ LEVEL \_ DEFAULT)
 </dt> <dd>
 
-COM elige el nivel de autenticación mediante su negociación normal de negociación de negociación de negociación de seguridad. Nunca elegirá un nivel de autenticación ninguno.
+COM elige el nivel de autenticación mediante su negociación normal de negociación de negociación de negociación de seguridad. Nunca elegirá un nivel de autenticación Ninguno.
 
 </dd> <dt>
 

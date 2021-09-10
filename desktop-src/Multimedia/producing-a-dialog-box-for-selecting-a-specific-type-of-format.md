@@ -14,16 +14,16 @@ keywords:
 - seleccionar tipos de formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f25f7b196fcb9462a3b61dd8e351ed75276c7df7bf46cec233dd8eac7deda5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bfc5d73d1b03f22923e6001d65898c05e2bd853e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037655"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370363"
 ---
 # <a name="producing-a-dialog-box-for-selecting-a-specific-type-of-format"></a>Generar un cuadro de diálogo para seleccionar un tipo específico de formato
 
-Es posible que desee que una aplicación permita al usuario seleccionar un formato de una lista restringida de formatos en un cuadro de diálogo. Las restricciones pueden limitar el número de canales, la velocidad de muestreo, la etiqueta de formato de audio de forma de onda o el número de bits por muestra. En todos estos casos, puede generar la lista mediante la función [**acmFormatChoose,**](/windows/desktop/api/Msacm/nf-msacm-acmformatchoose) estableciendo los **miembros fdwEnum** y **pwfxEnum** de la estructura [**ACMFORMATCHOOSE.**](/windows/win32/api/msacm/ns-msacm-acmformatchoose) El ejemplo siguiente ilustra este proceso.
+Es posible que desee que una aplicación permita al usuario seleccionar un formato de una lista restringida de formatos en un cuadro de diálogo. Las restricciones pueden limitar el número de canales, la velocidad de muestreo, la etiqueta de formato de audio de forma de onda o el número de bits por muestra. En todos estos casos, puede generar la lista mediante la función [**acmFormatChoose,**](/windows/desktop/api/Msacm/nf-msacm-acmformatchoose) estableciendo los miembros **fdwEnum** y **pwfxEnum** de la estructura [**ACMFORMATCHOOSE.**](/windows/win32/api/msacm/ns-msacm-acmformatchoose) El ejemplo siguiente ilustra este proceso.
 
 
 ```C++

@@ -6,16 +6,16 @@ keywords:
 - Funciones de devolución de llamada de AVICap, yield
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e87a3c986378bee05078b8cab28a0647827a1102ef1809558a47dcd5123af2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3666ea24a1d37402ffc13c09ca8ab95fcd19e1f7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369139"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372560"
 ---
 # <a name="yield-callback-functions"></a>Funciones de devolución de llamada yield
 
-Las aplicaciones pueden usar funciones de devolución de llamada yield durante la captura de streaming. (Una función de devolución de llamada yield normalmente consta de un bucle de mensajes que llama a [PeekMessage,](/windows/win32/api/winuser/nf-winuser-peekmessagea) [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage)y [DispatchMessage).](/windows/win32/api/winuser/nf-winuser-dispatchmessage) La ventana de captura llama a la función de devolución de llamada yield al menos una vez para cada fotograma de vídeo capturado, pero la velocidad exacta depende de la velocidad de fotogramas y la sobrecarga del controlador de captura y el disco.
+Las aplicaciones pueden usar funciones de devolución de llamada yield durante la captura de streaming. (Una función de devolución de llamada de rendimiento normalmente consta de un bucle de mensajes que llama a [PeekMessage,](/windows/win32/api/winuser/nf-winuser-peekmessagea) [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage)y [DispatchMessage).](/windows/win32/api/winuser/nf-winuser-dispatchmessage) La ventana de captura llama a la función de devolución de llamada yield al menos una vez para cada fotograma de vídeo capturado, pero la velocidad exacta depende de la velocidad de fotogramas y la sobrecarga del controlador de captura y el disco.
 
  
 

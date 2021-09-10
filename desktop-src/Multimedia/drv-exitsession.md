@@ -1,6 +1,6 @@
 ---
 title: DRV_EXITSESSION mensaje (Mmsystem.h)
-description: Notifica al controlador que Windows se está preparando para salir. El controlador debe prepararse para la terminación.
+description: Notifica al controlador que Windows está preparando la salida. El controlador debe prepararse para la terminación.
 ms.assetid: 8d200d64-b89b-47f1-ad21-ab86987efa4b
 keywords:
 - DRV_EXITSESSION mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03b8579c82392bf965474248730c62a520e16341965b7b7d4e91824e40675ff8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 236da457541af2d594bc708caf5b5ed07e58cc04
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119691595"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370484"
 ---
 # <a name="drv_exitsession-message"></a>Mensaje \_ EXITSESSION de DRV
 
-Notifica al controlador que Windows se está preparando para salir. El controlador debe prepararse para la terminación.
+Notifica al controlador que Windows está preparando la salida. El controlador debe prepararse para la terminación.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,7 +47,7 @@ Identificador de la instancia del controlador instalable.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se usan los parámetros *lParam1* y *lParam2.*
 

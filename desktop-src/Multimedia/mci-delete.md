@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ada80894f9260d0c37323d645694e10b0bcef92e52ebd670764bb9a0c436f837
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8c1b9f81712c842e06085c323ca2110c8e06784
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784585"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369986"
 ---
 # <a name="mci_delete-command"></a>Comando MCI \_ DELETE
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las marcas siguientes se aplican al tipo **de dispositivo digitalvideo:**
 
@@ -77,7 +77,7 @@ Las marcas siguientes se aplican al tipo **de dispositivo digitalvideo:**
 <span id="MCI_DGV_DELETE_AT"></span><span id="mci_dgv_delete_at"></span>MCI \_ DGV \_ DELETE \_ AT
 </dt> <dd>
 
-Se incluye un rectángulo en el **miembro rc** de la estructura identificada por *lpDelete*. El rectángulo especifica la parte de cada marco que se eliminará. Cuando se usa esta marca, el marco se conserva en el área de trabajo y el área especificada por el rectángulo se vuelve negra. Si se omite la marca, MCI DELETE tiene como valor predeterminado todo el marco y \_ lo quita del área de trabajo.
+Se incluye un rectángulo en el **miembro rc** de la estructura identificada por *lpDelete*. El rectángulo especifica la parte de cada marco que se eliminará. Cuando se usa esta marca, el marco se conserva en el área de trabajo y el área especificada por el rectángulo se vuelve negra. Si se omite la marca, MCI DELETE tiene como valor predeterminado todo el marco y lo quita \_ del área de trabajo.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Las marcas siguientes se aplican al tipo **de dispositivo waveaudio:**
 <span id="MCI_FROM"></span><span id="mci_from"></span>MCI \_ FROM
 </dt> <dd>
 
-Se incluye una ubicación inicial en el **miembro dwFrom** de la estructura identificada por *lpDelete*. Las unidades asignadas a los valores de posición se especifican con la marca MCI \_ SET TIME FORMAT de \_ \_ [MCI \_ SET](mci-set.md).
+Se incluye una ubicación inicial en el **miembro dwFrom** de la estructura identificada por *lpDelete*. Las unidades asignadas a los valores de posición se especifican con la marca MCI \_ SET TIME FORMAT de \_ \_ [MCI \_ SET.](mci-set.md)
 
 </dd> <dt>
 
@@ -147,7 +147,7 @@ En el caso de los dispositivos de audio de forma de onda, el parámetro *lpDelet
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

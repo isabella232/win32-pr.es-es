@@ -1,6 +1,6 @@
 ---
 title: MCI_STOP comando (Mmsystem.h)
-description: El comando MCI STOP detiene todas las secuencias de reproducción y grabación, descarga todos los búferes de reproducción y deja de \_ mostrar imágenes de vídeo. Los dispositivos cd audio, digital-video, secuenciador MIDI, videodisc, VCR y audio de onda reconocen este comando.
+description: El comando MCI STOP detiene todas las secuencias de reproducción y registro, descarga todos los búferes de reproducción y deja de \_ mostrar imágenes de vídeo. Los dispositivos cd audio, digital-video, secuenciador MIDI, videodisc, VCR y audio de onda reconocen este comando.
 ms.assetid: e5ae20b3-7439-4314-8354-d06e83b29729
 keywords:
 - MCI_STOP comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e02830dde544e025447cb72df6ff3720857985384ff6bd074c5e0718b114697c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ea5f2acbe39b0be64ebc640ae31ceede7591c7b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118374607"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369950"
 ---
 # <a name="mci_stop-command"></a>Comando MCI \_ STOP
 
-El comando MCI STOP detiene todas las secuencias de reproducción y grabación, descarga todos los búferes de reproducción y deja de \_ mostrar imágenes de vídeo. Los dispositivos cd audio, digital-video, secuenciador MIDI, videodisc, VCR y audio de onda reconocen este comando.
+El comando MCI STOP detiene todas las secuencias de reproducción y registro, descarga todos los búferes de reproducción y deja de \_ mostrar imágenes de vídeo. Los dispositivos cd audio, digital-video, secuenciador MIDI, videodisc, VCR y audio de onda reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,25 +60,25 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ 
 <span id="lpStop"></span><span id="lpstop"></span><span id="LPSTOP"></span>*lpStop*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La diferencia entre los comandos MCI STOP y \_ [MCI \_ PAUSE](mci-pause.md) depende del dispositivo. Si es posible, MCI PAUSE suspende la operación del dispositivo, pero deja el \_ dispositivo listo para reanudar la reproducción inmediatamente.
 
-En el caso del dispositivo de audio de CD, MCI STOP restablece la posición actual de la pista en cero; en \_ cambio, [MCI \_ PAUSE](mci-pause.md) mantiene la posición actual de la pista, lo que anticipa que el dispositivo reanudará la reproducción.
+En el caso del dispositivo de audio de CD, MCI STOP restablece la posición de la pista actual en cero; en \_ cambio, [MCI \_ PAUSE](mci-pause.md) mantiene la posición de la pista actual, con la expectativa de que el dispositivo reanudará la reproducción.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -86,11 +86,11 @@ En el caso del dispositivo de audio de CD, MCI STOP restablece la posición actu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

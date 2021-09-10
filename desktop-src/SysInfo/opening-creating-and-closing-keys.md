@@ -4,12 +4,12 @@ ms.assetid: 7b0b24d2-b54f-4243-95d0-2adbd87cb4df
 title: Apertura, creación y cierre de claves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 605d53a00506122c6350abd7f06e9166ed487de98c7910a3b7c3a913978492f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c3260c255240ce2c7fb5d13fe28126a1a3f5527
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117763967"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371876"
 ---
 # <a name="opening-creating-and-closing-keys"></a>Apertura, creación y cierre de claves
 

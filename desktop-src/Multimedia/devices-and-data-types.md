@@ -18,22 +18,22 @@ keywords:
 - audio de forma de onda, formatos de datos
 - interfaz de audio de forma de onda, formatos de datos
 - escribir datos de audio de forma de onda
-- audio de forma de onda, escribir datos
+- audio de onda, escribir datos
 - interfaz de audio de forma de onda, escribir datos
-- Datos de audio de forma de onda de PCM
+- Datos de audio y forma de onda de PCM
 - audio de forma de onda, datos de PCM
 - interfaz de audio de onda, datos de PCM
 - audio de onda, cierre de dispositivos de salida
-- interfaz de audio de onda, cerrar dispositivos de salida
+- interfaz de audio de onda, cierre de dispositivos de salida
 - cerrar dispositivos de salida de audio y forma de onda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 165f740e260c4e1a25fbd40cac9b8efd66ccd401c3e166dd1119b92c7b9999f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2abe0c2c20c52f4498316fb619885d41f85e41d6
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941273"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371210"
 ---
 # <a name="devices-and-data-types"></a>Dispositivos y tipos de datos
 
@@ -71,7 +71,7 @@ Después de determinar cuántos dispositivos de un tipo determinado están prese
 |------------------------------------------------|-------------------------------------------------------------------------|
 | [**auxGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetdevcaps)         | Recupera las funciones de un dispositivo de salida auxiliar especificado.      |
 | [**waveInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetdevcaps)   | Recupera las funciones de un dispositivo de entrada de audio de forma de onda especificado.  |
-| [**waveOutGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetdevcaps) | Recupera las funciones de un dispositivo de salida de audio de forma de onda especificado. |
+| [**waveOutGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetdevcaps) | Recupera las funcionalidades de un dispositivo de salida de audio de forma de onda especificado. |
 
 
 
@@ -116,7 +116,7 @@ Los siguientes tipos de datos se definen para las funciones de salida de audio d
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **HWAVEOUT**                         | Controle un dispositivo abierto de salida de audio de forma de onda.                                                                                                               |
 | [**FORMA DE ONDAATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) | Estructura que especifica los formatos de datos admitidos por un dispositivo de entrada de audio de forma de onda determinado. Esta estructura también se usa para dispositivos de entrada de audio de forma de onda. |
-| [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr)           | Estructura utilizada como encabezado para un bloque de datos de entrada de audio de forma de onda. Esta estructura también se usa para dispositivos de entrada de audio de forma de onda.                            |
+| [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr)           | Estructura que se usa como encabezado para un bloque de datos de entrada de audio de forma de onda. Esta estructura también se usa para dispositivos de entrada de audio de forma de onda.                            |
 | [**WAVEOUTCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-waveoutcaps)   | Estructura que se usa para consultar las funcionalidades de un dispositivo de salida de audio de forma de onda determinado.                                                                        |
 
 
@@ -139,7 +139,7 @@ Use la [**estructura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) par
 
 Después de enviar un bloque de datos a un dispositivo de salida mediante **waveOutWrite**, debe esperar hasta que el controlador de dispositivo finalice con el bloque de datos antes de liberarlo. Si va a enviar varios bloques de datos, debe supervisar la finalización de bloques de datos para saber cuándo enviar bloques adicionales. Para obtener más información sobre los bloques de datos, vea [Bloques de datos de audio](audio-data-blocks.md).
 
-## <a name="pcm-waveform-audio-data-format"></a>Formato de datos Waveform-Audio PCM
+## <a name="pcm-waveform-audio-data-format"></a>Formato de datos de Waveform-Audio PCM
 
 El **miembro lpData** de la [**estructura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) apunta a los ejemplos de datos de audio de forma de onda. En el caso de los datos pcm de 8 bits, cada muestra se representa mediante un solo byte de datos sin signo. Para los datos PCM de 16 bits, cada muestra se representa mediante un valor de 16 bits con firma. En la tabla siguiente se resumen los valores máximo, mínimo y punto medio para los datos de audio de forma de onda de PCM.
 

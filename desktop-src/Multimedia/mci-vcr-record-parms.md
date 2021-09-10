@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1b613c2b64bae1395b3fc402816145c0ef690801b9fd6402201198f7ff28a6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4089b6b7977959b5eb0d0ac60dd4e612b17b823d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038235"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369980"
 ---
 # <a name="mci_vcr_record_parms-structure"></a>Estructura MCI \_ VCR \_ RECORD \_ PARMS
 
@@ -46,7 +46,7 @@ typedef struct tagMCI_VCR_RECORD_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -67,11 +67,11 @@ Posición en la que se reproducirá.
 **dwAt**
 </dt> <dd>
 
-Valor de tiempo que afecta al [**comando MCI \_ RECORD**](mci-record.md) o [**MCI \_ CUE.**](mci-cue.md) En **el caso de MCI \_ RECORD,** es el momento en que comienza la grabación. Para **MCI \_ CUE**, es el momento en que el dispositivo cued alcanza la posición dada en **dwFrom**.
+Valor de hora que afecta al [**comando MCI \_ RECORD**](mci-record.md) o [**MCI \_ CUE.**](mci-cue.md) En **el caso de MCI \_ RECORD,** es el momento en que comienza la grabación. Para **MCI \_ CUE**, es la hora en que el dispositivo cued alcanza la posición dada en **dwFrom**.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las posiciones se especifican en el formato de hora actual.
 
@@ -93,7 +93,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

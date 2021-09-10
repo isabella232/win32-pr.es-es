@@ -4,12 +4,12 @@ description: Referencia de AVIFile
 ms.assetid: 73532d83-89c2-4911-8558-ce110e9f0f95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19b4bbda5374f5b1418c166aae5efcc06168b522b2cae0f3b6d2c8fe3c069c36
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0291d0ac5864a9b370e79a98fa061770d05bca03
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808325"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369847"
 ---
 # <a name="avifile-reference"></a>Referencia de AVIFile
 
@@ -43,14 +43,14 @@ En esta sección se describen las funciones, estructuras y macros de las aplicac
 -   [**AVIGetFromClipboard**](/windows/desktop/api/Vfw/nf-vfw-avigetfromclipboard)
 -   [**AVIClearClipboard**](/windows/desktop/api/Vfw/nf-vfw-aviclearclipboard)
 
-## <a name="opening-and-closing-streams"></a>Apertura y cierre de Secuencias
+## <a name="opening-and-closing-streams"></a>Apertura y cierre Secuencias
 
 -   [**AVIFileGetStream**](/windows/desktop/api/Vfw/nf-vfw-avifilegetstream)
 -   [**AVIStreamOpenFromFile**](/windows/desktop/api/Vfw/nf-vfw-avistreamopenfromfilea)
 -   [**AVIStreamAddRef**](/windows/desktop/api/Vfw/nf-vfw-avistreamaddref)
 -   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
 
-## <a name="reading-stream-information"></a>Leer información de secuencia
+## <a name="reading-stream-information"></a>Lectura de la información de stream
 
 -   [**AVISTREAMINFO**](/windows/desktop/api/Vfw/ns-vfw-avistreaminfoa)
 -   [**AVIStreamReadData**](/windows/desktop/api/Vfw/nf-vfw-avistreamreaddata)
@@ -68,7 +68,7 @@ En esta sección se describen las funciones, estructuras y macros de las aplicac
 -   [**AVIStreamGetFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframe)
 -   [**AVIStreamGetFrameClose**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframeclose)
 
-## <a name="creating-a-file-from-existing-streams"></a>Crear un archivo a partir de un Secuencias
+## <a name="creating-a-file-from-existing-streams"></a>Crear un archivo a partir de una Secuencias
 
 -   [**AVISave**](/windows/desktop/api/Vfw/nf-vfw-avisavea)
 -   [**AVISaveV**](/windows/desktop/api/Vfw/nf-vfw-avisaveva)
@@ -85,7 +85,7 @@ En esta sección se describen las funciones, estructuras y macros de las aplicac
 -   [**AVIStreamWriteData**](/windows/desktop/api/Vfw/nf-vfw-avistreamwritedata)
 -   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
 
-## <a name="finding-the-starting-position-in-a-stream"></a>Buscar la posición inicial en una secuencia
+## <a name="finding-the-starting-position-in-a-stream"></a>Buscar la posición inicial en un flujo
 
 -   [**AVIStreamStart**](/windows/desktop/api/Vfw/nf-vfw-avistreamstart)
 -   [**AVIStreamStartTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamstarttime)
@@ -95,7 +95,7 @@ En esta sección se describen las funciones, estructuras y macros de las aplicac
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
 -   [**AVIStreamEndTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamendtime)
 
-## <a name="finding-sample-and-key-frames"></a>Buscar fotogramas clave y de ejemplo
+## <a name="finding-sample-and-key-frames"></a>Buscar fotogramas clave y ejemplo
 
 -   [**AVIStreamFindSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamfindsample)
 -   [**AVIStreamIsKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamiskeyframe)
@@ -113,12 +113,12 @@ En esta sección se describen las funciones, estructuras y macros de las aplicac
 -   [**AVIStreamPrevSampleTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamprevsampletime)
 -   [**AVIStreamSampleToSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletosample)
 
-## <a name="switching-between-samples-and-time"></a>Cambiar entre muestras y hora
+## <a name="switching-between-samples-and-time"></a>Cambiar entre muestras y tiempo
 
 -   [**AVIStreamSampleToTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletotime)
 -   [**AVIStreamTimeToSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamtimetosample)
 
-## <a name="creating-temporary-streams"></a>Creación de un Secuencias
+## <a name="creating-temporary-streams"></a>Creación de una Secuencias
 
 -   [**AVIStreamCreate**](/windows/desktop/api/Vfw/nf-vfw-avistreamcreate)
 -   [**AVIMakeCompressedStream**](/windows/desktop/api/Vfw/nf-vfw-avimakecompressedstream)

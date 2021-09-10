@@ -1,5 +1,5 @@
 ---
-title: MCI_RESUME (Mmsystem.h)
+title: MCI_RESUME comando (Mmsystem.h)
 description: El comando RESUME de MCI \_ hace que un dispositivo en pausa reanude la operación en pausa.
 ms.assetid: 2df712c1-5005-4e89-a439-a651076bbb73
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4872162e4f4913d7165d9ec69e6cc1164b3be40919facacbfd1a94d569a46c89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd83b6d753cd223235b8b11f2d4b0be4c828ec28
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038345"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370081"
 ---
 # <a name="mci_resume-command"></a>Comando RESUME de MCI \_
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este comando reanuda la reproducción y grabación sin cambiar la posición de la pista actual establecida con [MCI \_ PLAY](mci-play.md) o [MCI \_ RECORD.](mci-record.md)
 
@@ -88,7 +88,7 @@ Este comando reanuda la reproducción y grabación sin cambiar la posición de l
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

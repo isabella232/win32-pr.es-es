@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 008d6b090968c4823ab14159772f5e8ba8531166a299bf1d9e90061739831d28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b7d87e391336b948d0c784048baeffa7bba88b29
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117985525"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370910"
 ---
-# <a name="mm_mim_open-message"></a>MM \_ MIM \_ open message
+# <a name="mm_mim_open-message"></a>Mm \_ MIM \_ mensaje OPEN
 
-El **mensaje MM MIM \_ \_ OPEN** se envía a una ventana cuando se abre un dispositivo de entrada MIDI.
+El **mensaje MM MIM \_ \_ OPEN** se envía a una ventana cuando se abre un dispositivo de entrada DE LÍNEA.
 
 
 ```C++
@@ -60,7 +60,7 @@ Este mensaje no devuelve un valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

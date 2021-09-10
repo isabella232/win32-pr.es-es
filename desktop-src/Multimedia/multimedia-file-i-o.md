@@ -9,7 +9,7 @@ keywords:
 - E/S de archivos multimedia, acerca de
 - E/S de archivo, acerca de
 - entrada y salida (E/S), acerca de
-- E/S (entrada y salida),acerca de
+- E/S (entrada y salida), acerca de
 - E/S en búfer
 - formato de archivo de intercambio de recursos (RIFF)
 - RIFF (formato de archivo de intercambio de recursos)
@@ -18,12 +18,12 @@ keywords:
 - E/S de memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30437732af68bb91942a92e8b98d126687e0ce9762b913a172afb9463cb3a488
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4dd646cb3195189765d1a5b020632cd26940f817
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136724"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371786"
 ---
 # <a name="multimedia-file-io"></a>E/S de archivos multimedia
 

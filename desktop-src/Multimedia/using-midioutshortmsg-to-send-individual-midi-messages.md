@@ -1,26 +1,26 @@
 ---
-title: Uso de midiOutShortMsg para enviar mensajes MIDI individuales
-description: Uso de midiOutShortMsg para enviar mensajes MIDI individuales
+title: Uso de midiOutShortMsg para enviar mensajes INDIVIDUALES DE MIDI
+description: Uso de midiOutShortMsg para enviar mensajes INDIVIDUALES DE MIDI
 ms.assetid: 7a8f7c6c-28ac-4aa6-9073-969fc8e59f4e
 keywords:
-- Interfaz digital de instrumentos musicales (MIDI), enviar mensajes
-- MIDI (interfaz digital de instrumentos musicales), enviar mensajes
+- Interfaz digital de instrumentar música (MIDI), enviar mensajes
+- MIDI (Interfaz digital de instrumentar música), enviar mensajes
 - envío de mensajes MIDI
-- Interfaz digital de instrumentos musicales (MIDI), función midiOutShortMsg
-- MIDI (interfaz digital de instrumentos musicales), función midiOutShortMsg
-- midiOutShortMsg función)
+- Interfaz digital de instrumentar música (MIDI),función midiOutShortMsg
+- MIDI (Interfaz digital de instrumentado),función midiOutShortMsg
+- función midiOutShortMsg
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 905b0ce924f9aebce67f515fc0714fdc855cbe33
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487650"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371084"
 ---
-# <a name="using-midioutshortmsg-to-send-individual-midi-messages"></a>Uso de midiOutShortMsg para enviar mensajes MIDI individuales
+# <a name="using-midioutshortmsg-to-send-individual-midi-messages"></a>Uso de midiOutShortMsg para enviar mensajes INDIVIDUALES DE MIDI
 
-En el ejemplo siguiente se usa la función [**midiOutShortMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutshortmsg) para enviar un evento MIDI especificado a un dispositivo de salida MIDI determinado:
+En el ejemplo siguiente se [**usa la función midiOutShortMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutshortmsg) para enviar un evento MIDI especificado a un dispositivo de salida DE MIDI determinado:
 
 
 ```C++
@@ -47,10 +47,10 @@ UINT sendMIDIEvent(HMIDIOUT hmo, BYTE bStatus, BYTE bData1,
 
 
 > [!Note]  
-> No es necesario que los controladores de salida MIDI comprueben los datos antes de enviarlos a un puerto de salida. Las aplicaciones deben asegurarse de que solo se envíen los datos válidos.
+> No es necesario que los controladores de salida de MIDI comprueben los datos antes de enviarlos a un puerto de salida. Las aplicaciones deben asegurarse de que solo se envían datos válidos.
 
- 
+ 
 
- 
+ 
 
- 
+ 

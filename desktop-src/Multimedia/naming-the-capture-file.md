@@ -7,12 +7,12 @@ keywords:
 - capFileAlloc (macro)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75c07653b854b4af476c22566aac5e9ecf27cb78b3dac5b317aab4b8f3f23a19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47ea091a36777e176124689ba57be6c0fb75d07d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118373320"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371378"
 ---
 # <a name="naming-the-capture-file"></a>Asignar un nombre al archivo de captura
 

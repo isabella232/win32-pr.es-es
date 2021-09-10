@@ -4,12 +4,12 @@ description: Si una clase está pensada para estar disponible para los clientes 
 ms.assetid: 6d78c2ce-56d8-4866-9801-35125ec9cac4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 017e4393a4c5422157c8f9b9e9b7f366c2fafc8cfe6af5722e451a3d1b9fa069
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4253c40cb3feb7e737368c947c0b20715f5becbd
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047863"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369560"
 ---
 # <a name="registering-a-class-at-installation"></a>Registro de una clase durante la instalación
 

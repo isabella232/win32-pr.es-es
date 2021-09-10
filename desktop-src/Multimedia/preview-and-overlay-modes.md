@@ -11,12 +11,12 @@ keywords:
 - CapPreviewScale macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9359b1380c5d6efe049bc4bea52a08a92f880af5d35558f4e65e21070f20c0cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af4dc293587160d950856fccb15709a11e9533bf
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118372374"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372457"
 ---
 # <a name="preview-and-overlay-modes"></a>Modos de vista previa y superposición
 
@@ -32,9 +32,9 @@ Hay tres mensajes para controlar la operación de vista previa.
 
 Cuando la vista previa y el escalado están habilitados, el fotograma de vídeo capturado se extiende a las dimensiones de la ventana de captura. Habilitar el modo de vista previa deshabilita automáticamente el modo de superposición.
 
-El modo de superposición es una función de hardware que muestra el contenido del búfer de captura en el monitor sin usar recursos de CPU. Puede habilitar y deshabilitar el modo de superposición enviando el mensaje [**WM \_ CAP SET \_ \_ OVERLAY**](wm-cap-set-overlay.md) (o la macro [**capOverlay)**](/windows/desktop/api/Vfw/nf-vfw-capoverlay) a una ventana de captura. Al habilitar el modo de superposición, se deshabilita automáticamente el modo de vista previa.
+El modo de superposición es una función de hardware que muestra el contenido del búfer de captura en el monitor sin usar recursos de CPU. Puede habilitar y deshabilitar el modo de superposición enviando el mensaje OVERLAY de [**WM \_ CAP \_ SET \_**](wm-cap-set-overlay.md) (o la macro [**capOverlay)**](/windows/desktop/api/Vfw/nf-vfw-capoverlay) a una ventana de captura. Al habilitar el modo de superposición, se deshabilita automáticamente el modo de vista previa.
 
-También puede establecer la posición de desplazamiento del fotograma de vídeo dentro del área de cliente de la ventana de captura para el modo de vista previa o el modo de superposición mediante el envío del mensaje [**WM \_ CAP SET \_ \_ SCROLL**](wm-cap-set-scroll.md) (o la macro [**capSetScrollPos)**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos) a una ventana de captura.
+También puede establecer la posición de desplazamiento del fotograma de vídeo dentro del área de cliente de la ventana de captura para el modo de vista previa o el modo de superposición mediante el envío del mensaje SCROLL de [**WM \_ CAP \_ SET \_**](wm-cap-set-scroll.md) (o la macro [**capSetScrollPos)**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos) a una ventana de captura.
 
  
 

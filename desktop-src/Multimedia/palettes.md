@@ -11,18 +11,18 @@ keywords:
 - Función DrawDibChangePalette
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3db474a9e983c442f21fd479342ac8b0786719f36f1494e307154c6cc0a0bd50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5935831d8996c424a386f86082282f9cf7c1c12
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893025"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372452"
 ---
 # <a name="palettes"></a>Paletas
 
 Las funciones DrawDib requieren que una aplicación responda a dos mensajes orientados a la paleta: [**WM \_ QUERYNEWPALETTE**](/windows/desktop/gdi/wm-querynewpalette) y [**WM \_ PALETTECHANGED.**](/windows/desktop/gdi/wm-palettechanged) Si la aplicación no tiene en cuenta la paleta, deberá agregar un controlador para cada uno de estos mensajes. Para obtener más información sobre cómo procesar los **mensajes WM \_ QUERYNEWPALETTE** y **WM \_ PALETTECHANGED,** vea [Adding Palette Message Handlers](adding-palette-message-handlers.md).
 
-Puede realizar la paleta DrawDib actual en el controlador de dominio mediante la [**función DrawDibRealize.**](/windows/desktop/api/Vfw/nf-vfw-drawdibrealize) Debe realizar la paleta en respuesta al mensaje [**WM \_ QUERYNEWPALETTE**](/windows/desktop/gdi/wm-querynewpalette) o [**WM \_ PALETTECHANGED,**](/windows/desktop/gdi/wm-palettechanged) o al prepararse para mostrar una secuencia de imágenes mediante la función [**DrawDibDraw.**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw)
+Puede realizar la paleta DrawDib actual en el controlador de dominio mediante la [**función DrawDibRealize.**](/windows/desktop/api/Vfw/nf-vfw-drawdibrealize) Debe darse cuenta de la paleta en respuesta al mensaje [**WM \_ QUERYNEWPALETTE**](/windows/desktop/gdi/wm-querynewpalette) o [**WM \_ PALETTECHANGED,**](/windows/desktop/gdi/wm-palettechanged) o al prepararse para mostrar una secuencia de imágenes mediante la función [**DrawDibDraw.**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw)
 
 Puede dibujar una imagen asignada a otra paleta mediante la [**función DrawDibSetPalette.**](/windows/desktop/api/Vfw/nf-vfw-drawdibsetpalette) Esta función obliga al controlador de dominio DrawDib a usar la paleta especificada, lo que puede afectar a la calidad de la imagen. Por ejemplo, una aplicación que tenga en cuenta la paleta podría haber realizado una paleta y debe impedir que DrawDib se dé cuenta de su propia paleta. La aplicación puede usar **DrawDibSetPalette para** notificar a DrawDib la paleta que se debe usar.
 

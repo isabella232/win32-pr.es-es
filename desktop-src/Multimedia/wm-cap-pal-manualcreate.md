@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8cc313cb6eae8e757d0777642bbc0ab72fe07fcfbf5b530a6479675c8ab3c07
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4dfd5b6588381ede0faaae539d3d8418b041f458
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119781296"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371468"
 ---
 # <a name="wm_cap_pal_manualcreate-message"></a>WM \_ CAP \_ PAL \_ MANUALCREATE message
 

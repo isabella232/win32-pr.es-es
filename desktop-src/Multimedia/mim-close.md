@@ -1,6 +1,6 @@
 ---
 title: MIM_CLOSE mensaje (Mmsystem.h)
-description: El MIM close se envía a una función de devolución de llamada de entrada DE MIDI cuando se cierra \_ un dispositivo de entrada DE MIDI.
+description: El MIM close se envía a una función de devolución de llamada de entrada DE MIDI cuando se cierra \_ un dispositivo de entrada DE LÍNEA.
 ms.assetid: c19ecd3a-c3a5-4f17-9d44-d0d71eefcb15
 keywords:
 - MIM_CLOSE mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3b1509573d5c69fd2e95cabeb8ba2c4059d5d37c9cfe3c957ec8b8f75f5abfa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5549d9bef1e802b0b34ab6437b1386519a25d349
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428175"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370772"
 ---
 # <a name="mim_close-message"></a>\_MIM Mensaje CLOSE
 
@@ -41,14 +41,14 @@ dwParam2 = reserved
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Reservado; no use.
+Reservado; no se usan.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Reservado; no use.
+Reservado; no se usan.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Reservado; no use.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 

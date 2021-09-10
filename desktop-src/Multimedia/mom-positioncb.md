@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d403d9d913628f6b00a7b36dba96d0f4d491f486ef9c3edf7a5c3d5a30c345f1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e5c9528e8f91778c53ed4761c98bb67d405ec14
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807005"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371095"
 ---
 # <a name="mom_positioncb-message"></a>Mensaje \_ MOM POSITIONCB
 
@@ -32,7 +32,7 @@ El **mensaje \_ MOM POSITION** se envía cuando se alcanza un evento **MEVT F \_
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Puntero a una estructura [**MIDIHDR que**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) identifica el búfer de entrada.
+Puntero a una estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) que identifica el búfer de entrada.
 
 </dd> <dt>
 
@@ -47,9 +47,9 @@ No se usa.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La reproducción del búfer de flujo continúa incluso mientras se ejecuta la función de devolución de llamada. Los eventos después del evento **MEVT \_ F \_ CALLBACK** en el búfer se programarán y enviarán a tiempo, independientemente de cuánto tiempo se dedó a la función de devolución de llamada.
+La reproducción del búfer de flujo continúa incluso mientras se ejecuta la función de devolución de llamada. Los eventos después del evento **MEVT \_ F \_ CALLBACK** en el búfer se programarán y enviarán a tiempo, independientemente de cuánto tiempo se dedó en la función de devolución de llamada.
 
 Si las devoluciones de llamada de posición se generan más rápidamente de lo que la aplicación puede procesarlas, el **miembro dwOffset** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) podría hacer referencia a un evento que la aplicación aún no ha procesado.
 
@@ -57,7 +57,7 @@ Si las devoluciones de llamada de posición se generan más rápidamente de lo q
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

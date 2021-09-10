@@ -11,16 +11,16 @@ keywords:
 - y frecuencias de sondeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 311109468485a8174d9567516e747ef786019cc105c378ee91b55fa2f123c5cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b317d5a0c8deb48b49224fd051ecb7ce5a0bbced
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118140453"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372295"
 ---
 # <a name="joystick-capabilities"></a>Funcionalidades de los juegos
 
-Los flechas pueden admitir el movimiento de dos o tres ejes y hasta cuatro botones. Los radios también admiten *diferentes intervalos de frecuencias de movimiento* y *sondeo.* El intervalo de movimiento es la distancia que puede moverse un controlador de adobo desde su posición de reposo a la posición más alejada de su posición de reposo. La frecuencia de sondeo es el intervalo de tiempo entre las consultas de rango.
+Los flechas pueden admitir el movimiento de dos o tres ejes y hasta cuatro botones. Los radios también admiten *diferentes intervalos de frecuencias de movimiento* y *sondeo.* El intervalo de movimiento es la distancia que puede moverse un controlador de adobo desde su posición de reposo a la posición más alejada de su posición de reposo. La frecuencia de sondeo es el intervalo de tiempo entre las consultas de hora.
 
 Los controladores de controladores de controladores pueden admitir uno o dos motores. Puede determinar el número de velocidades admitidas por un controlador driver de Driver mediante la [**funcióngetNumDevs.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs) Esta función devuelve un entero sin signo que contiene el número de velocidades admitidas o cero si no hay compatibilidad con los bytes. El valor devuelto no indica el número de nódros asociados al sistema.
 

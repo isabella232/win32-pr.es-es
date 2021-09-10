@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a6398d4773b6c92332e8a95996e4d81941a073fe
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467862"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369831"
 ---
 # <a name="cue-command"></a>Comando cue
 
@@ -54,7 +54,7 @@ Marca que prepara un dispositivo para reproducir o grabar. En la tabla siguiente
 
 
 
-| Valor | Pila | Pila | 
+| Value | Pila | Pila | 
 |-------|-----|-----|
 | digitalvideo | <ul><li>input</li><li>noshow</li></ul> | <ul><li>output</li><li>para <em>colocar</em></li></ul> | 
 | Vcr | <ul><li>desde <em>la posición</em></li><li>input</li><li>output</li></ul> | <ul><li>Predesplazamiento</li><li>reverse</li><li>para <em>colocar</em></li></ul> | 
@@ -69,7 +69,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 
 
 
-| Valor           | Significado                                                                                                                                                                                                                                                                                                        |
+| Value           | Significado                                                                                                                                                                                                                                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | desde *la posición* | Indica por dónde empezar.                                                                                                                                                                                                                                                                                      |
 | input           | Se prepara para la grabación. En el caso de los dispositivos de vídeo digital, esta marca se puede omitir si el origen de presentación actual ya es la entrada externa.                                                                                                                                                                  |
@@ -96,7 +96,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Aunque no es necesario, la emisión del comando cue antes de reproducir o grabar en algunos dispositivos podría reducir el retraso antes de que el dispositivo inicie la acción.
 
@@ -118,14 +118,14 @@ cue mysound input
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

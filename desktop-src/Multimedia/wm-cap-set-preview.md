@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a25bf7f1ce2a61cb104c1e1764f9bca9c82d3aa40d44cc8a1eef9ce435584271
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b4a7e490809efa2e2d9f1ad27bca697c6333e682
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369389"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371521"
 ---
 # <a name="wm_cap_set_preview-message"></a>Mensaje WM \_ CAP \_ SET \_ PREVIEW
 
@@ -49,7 +49,7 @@ Marca de vista previa. Especifique **TRUE para** este parámetro para habilitar 
 
 Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El modo de versión preliminar usa recursos de CPU considerables. Las aplicaciones pueden deshabilitar la vista previa o reducir la velocidad de vista previa cuando otra aplicación tiene el foco. El **miembro fLiveWindow** de la [**estructura CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) indica si el modo de vista previa está habilitado actualmente.
 
@@ -59,7 +59,7 @@ Al habilitar el modo de vista previa, se deshabilita automáticamente el modo de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -67,7 +67,7 @@ Al habilitar el modo de vista previa, se deshabilita automáticamente el modo de
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

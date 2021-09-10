@@ -1,33 +1,33 @@
 ---
-title: Compartir un procedimiento de e/s con otras aplicaciones
-description: Compartir un procedimiento de e/s con otras aplicaciones
+title: Uso compartido de un procedimiento de E/S con otras aplicaciones
+description: Uso compartido de un procedimiento de E/S con otras aplicaciones
 ms.assetid: 56e4804b-fe88-4b3b-93f6-f8e41048780d
 keywords:
-- e/s de archivos multimedia, procedimientos compartidos
-- e/s de archivos, procedimientos compartidos
-- entrada y salida (e/s), procedimientos compartidos
-- E/s (entrada y salida), procedimientos compartidos
-- compartir procedimientos de e/s con otras aplicaciones
-- mmioInstallIOProc función)
+- E/S de archivos multimedia, procedimientos compartidos
+- E/S de archivo, procedimientos compartidos
+- entrada y salida (E/S), procedimientos compartidos
+- E/S (entrada y salida), procedimientos compartidos
+- uso compartido de procedimientos de E/S con otras aplicaciones
+- Función mmioInstallIOProc
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: bd7931bde28338cc625c828128e05047d8ec3370
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420594"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371834"
 ---
-# <a name="sharing-an-io-procedure-with-other-applications"></a>Compartir un procedimiento de e/s con otras aplicaciones
+# <a name="sharing-an-io-procedure-with-other-applications"></a>Uso compartido de un procedimiento de E/S con otras aplicaciones
 
-Si desea compartir un procedimiento de e/s con otras aplicaciones, debe escribir una biblioteca de vínculos dinámicos (DLL) para la aplicación. Puede compartir el procedimiento de e/s mediante una de las siguientes acciones:
+Si desea compartir un procedimiento de E/S con otras aplicaciones, debe escribir una biblioteca de vínculos dinámicos (DLL) para la aplicación. Puede compartir el procedimiento de E/S realizando una de las siguientes acciones:
 
--   Incluya el código para el procedimiento de e/s en el archivo DLL.
--   Cree una función en el archivo DLL que llame a la función [**mmioInstallIOProc**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioinstallioproc) para instalar el procedimiento de e/s.
--   Exporte esta función en el archivo de definiciones de módulo de la DLL.
+-   Incluya el código para el procedimiento de E/S en el archivo DLL.
+-   Cree una función en el archivo DLL que llame a la [**función mmioInstallIOProc**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioinstallioproc) para instalar el procedimiento de E/S.
+-   Exporte esta función en el archivo module-definitions del archivo DLL.
 
-Para usar el procedimiento de e/s compartido, una aplicación debe llamar primero a la función en el archivo DLL para instalar el procedimiento de e/s.
+Para usar el procedimiento de E/S compartido, una aplicación debe llamar primero a la función en el archivo DLL para instalar el procedimiento de E/S.
 
- 
+ 
 
- 
+ 

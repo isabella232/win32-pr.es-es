@@ -3,7 +3,7 @@ title: comando configure
 description: El comando configure muestra un cuadro de diálogo que se usa para configurar el dispositivo. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 17d99992-f432-4b8a-ae98-2a70637c29c3
 keywords:
-- configurar comando Windows Multimedia
+- configure command Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c11adc5413844d46360e7abf63ec34a340efae470e2e71fef9ba80a89d60e4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 61f131159d389577e3c717e5630633bb46558d40
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144958"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369879"
 ---
 # <a name="configure-command"></a>comando configure
 
@@ -54,7 +54,7 @@ Puede ser "wait", "notify" o "test". Para obtener más información sobre estas 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

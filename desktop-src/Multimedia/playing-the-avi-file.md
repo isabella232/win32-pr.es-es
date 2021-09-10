@@ -6,16 +6,16 @@ keywords:
 - Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9e0c490a61bbd53dd62a8223a3ded1aa047ce071d1d2544a2b26d1a9152450b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 31754bd5f66b455abc76d363c5ff3e5e286e8040
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038025"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371738"
 ---
 # <a name="playing-the-avi-file"></a>Reproducción del archivo AVI
 
-Antes de usar la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para enviar el comando [**\_ MCI PLAY,**](mci-play.md) la aplicación asigna la memoria para la estructura, inicializa los miembros que usará y establece las marcas correspondientes a los miembros utilizados en la estructura. (Si la aplicación no establece una marca para un miembro de estructura, los controladores de MCI omiten el miembro). Por ejemplo, en el ejemplo siguiente se reproduce una película desde la posición inicial especificada por **dwFrom** hasta la posición final especificada por **dwTo**. (Si cualquiera de las posiciones es cero, el ejemplo se escribe para que no se utilice la posición).
+Antes de usar la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para enviar el comando [**\_ MCI PLAY,**](mci-play.md) la aplicación asigna la memoria de la estructura, inicializa los miembros que usará y establece las marcas correspondientes a los miembros utilizados en la estructura. (Si la aplicación no establece una marca para un miembro de estructura, los controladores de MCI omiten el miembro). Por ejemplo, en el ejemplo siguiente se reproduce una película desde la posición inicial especificada por **dwFrom** hasta la posición final especificada por **dwTo**. (Si cualquiera de las posiciones es cero, el ejemplo se escribe para que no se utilice la posición).
 
 
 ```C++

@@ -7,12 +7,12 @@ keywords:
 - Referencia de MCI, macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aabb60da73575f23c9fe15030335bd4593f4c53d65fbd7ae52b3816037ba9b28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28231e4b7082bdcf61578b787b4e7add2f9f2f8f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117803665"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370195"
 ---
 # <a name="mci-macros"></a>MCI Macros
 
@@ -24,7 +24,7 @@ Las macros siguientes se usan con MCI.
 -   [**MCI \_ MAKE \_ HMS**](mci-make-hms.md)
 -   [**MCI \_ MAKE \_ MSF**](mci-make-msf.md)
 -   [**MCI \_ MAKE \_ TMSF**](mci-make-tmsf.md)
--   [**MCI \_ MSF \_ FRAME**](/previous-versions//dd743438(v=vs.85))
+-   [**MARCO DE MSF de MCI \_ \_**](/previous-versions//dd743438(v=vs.85))
 -   [**MCI \_ MSF \_ MINUTE**](mci-msf-minute.md)
 -   [**MCI \_ MSF \_ SECOND**](mci-msf-second.md)
 -   [**MCI \_ TMSF \_ FRAME**](mci-tmsf-frame.md)

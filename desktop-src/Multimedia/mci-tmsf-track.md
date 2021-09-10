@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7090a2a9b652d7c989aadd70d8843ece04bf467bbbe353c22c3f76fee8a9712b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3fa8512169d0e5b3d6892dd1bf615a220143e6d4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118137956"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370231"
 ---
 # <a name="mci_tmsf_track-macro"></a>Macro \_ MCI TMSF \_ TRACK
 
-La macro **\_ MCI TMSF \_ TRACK** recupera el componente tracks de un parámetro que contiene información empaquetada de pistas, minutos, segundos y fotogramas (TMSF).
+La **macro \_ MCI TMSF \_ TRACK** recupera el componente tracks de un parámetro que contiene información empaquetada de pistas, minutos, segundos y fotogramas (TMSF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,9 +51,9 @@ Hora en formato TMSF.
 
 Devuelve el componente tracks de la información de TMSF especificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El tiempo en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene minutos, el siguiente byte menos significativo que contiene segundos y el byte más significativo que contiene fotogramas.
+La hora en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene minutos, el siguiente byte menos significativo que contiene segundos y el byte más significativo que contiene fotogramas.
 
 La **macro \_ MCI TMSF \_ TRACK** se define de la siguiente manera:
 
@@ -68,7 +68,7 @@ La **macro \_ MCI TMSF \_ TRACK** se define de la siguiente manera:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -80,7 +80,7 @@ La **macro \_ MCI TMSF \_ TRACK** se define de la siguiente manera:
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [MCI Macros](mci-macros.md)

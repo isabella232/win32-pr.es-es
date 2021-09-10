@@ -7,12 +7,12 @@ keywords:
 - Macro MCIWndPlayTo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1853c74cc4115cee72e4253e339f934e73b8d8e7e223f1b91e9992969c4ce3f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 518fc80588147c4ccbbca619452b714333a8a34d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785425"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372169"
 ---
 # <a name="defining-playback-scope"></a>Definición del ámbito de reproducción
 

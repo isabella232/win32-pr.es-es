@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2ea9624c70245c67f0f6a78af68bf291ae3ce60ba65ae2cd273008bbc914ec2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b99307bd7d61a70db594d0a696cceccd6d246a3
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118137662"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370736"
 ---
 # <a name="mciwndm_returnstring-message"></a>Mensaje RETURNSTRING de MCIWNDM \_
 
@@ -56,7 +56,7 @@ Puntero a un búfer definido por la aplicación para contener la cadena terminad
 
 Devuelve un entero correspondiente a la cadena MCI.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la cadena terminada en NULL es mayor que el búfer, la cadena se trunca.
 

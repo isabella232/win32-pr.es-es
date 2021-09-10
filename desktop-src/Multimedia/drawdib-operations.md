@@ -7,26 +7,26 @@ keywords:
 - DrawDib,accessing
 - DrawDib,opening
 - DrawDib,operations
-- DrawDib,device context (DC)
+- DrawDib, contexto de dispositivo (DC)
 - DC (contexto del dispositivo)
 - Función DrawDibOpen
 - Función DrawDibClose
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d331e2524c8b46c9e0781d1ff43a99b72a160a2b05acae7b853aabcbb9b8f0d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc366287cdf481d70ef03aa82df5ea248673280b
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941246"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372193"
 ---
 # <a name="drawdib-operations"></a>Operaciones DrawDib
 
-Puede acceder a todo el grupo de funciones DrawDib mediante la [**función DrawDibOpen.**](/windows/desktop/api/Vfw/nf-vfw-drawdibopen) Esta función carga la biblioteca de vínculos dinámicos (DLL), asigna recursos de memoria, crea un contexto de dispositivo DrawDib (DC) y mantiene un recuento de referencias del número de DC que se inicializan. **DrawDibOpen también** devuelve un identificador del nuevo controlador de dominio que se usa con las otras funciones DrawDib.
+Puede acceder a todo el grupo de funciones DrawDib mediante la [**función DrawDibOpen.**](/windows/desktop/api/Vfw/nf-vfw-drawdibopen) Esta función carga la biblioteca de vínculos dinámicos (DLL), asigna recursos de memoria, crea un contexto de dispositivo DrawDib (DC) y mantiene un recuento de referencias del número de dc que se inicializan. **DrawDibOpen también** devuelve un identificador del nuevo controlador de dominio que se usa con las otras funciones DrawDib.
 
-Puede liberar un controlador de dominio DrawDib cuando termine de usarlo mediante la [**función DrawDibClose.**](/windows/desktop/api/Vfw/nf-vfw-drawdibclose) **DrawDibClose también** disminuye el recuento de referencias de las aplicaciones que acceden al archivo DLL. La llamada **a DrawDibClose** debe ser la última función DrawDib de la aplicación.
+Puede liberar un controlador de dominio DrawDib cuando termine de usarlo mediante la [**función DrawDibClose.**](/windows/desktop/api/Vfw/nf-vfw-drawdibclose) **DrawDibClose también** disminuye el recuento de referencias de las aplicaciones que acceden al archivo DLL. La llamada a **DrawDibClose** debe ser la última función DrawDib de la aplicación.
 
-Puede crear tantos DCs DrawDib como desee. Puede usar varios DCs DrawDib para dibujar varios mapas de bits simultáneamente. También puede crear varios DC DrawDib, cada uno con características únicas, para que la aplicación pueda elegir y, a continuación, usar el controlador de dominio con la configuración más adecuada. Por ejemplo, puede crear dos DCs DrawDib en una aplicación: uno que muestre una imagen con su resolución normal y otro que muestre una parte ampliada de la imagen.
+Puede crear tantos DCs DrawDib como desee. Puede usar varios DCs DrawDib para dibujar varios mapas de bits simultáneamente. También puede crear varios DC DrawDib, cada uno con características únicas, para que la aplicación pueda elegir y, a continuación, usar el controlador de dominio con la configuración más adecuada. Por ejemplo, puede crear dos DCs DrawDib en una aplicación: uno que muestra una imagen con su resolución normal y el otro que muestra una parte ampliada de la imagen.
 
 Para ejecutarse de forma eficaz, las funciones DrawDib requieren información sobre el adaptador de pantalla y su controlador. El perfil de presentación se obtiene mediante la ejecución de una serie de pruebas en el adaptador de pantalla la primera vez que se tiene acceso al archivo DLL que contiene las funciones DrawDib. Las funciones DrawDib usan esta información para todas las aplicaciones. Puede repetir estas pruebas cuando sea necesario mediante la [**función DrawDibProfileDisplay.**](/windows/desktop/api/Vfw/nf-vfw-drawdibprofiledisplay)
 

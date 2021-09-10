@@ -4,12 +4,12 @@ description: En esta sección se proporciona un breve resumen de las reglas y di
 ms.assetid: c43fc385-bcd6-45fc-91b2-ad9827fdb15c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58d11d55a1e24c02208ebeecddd5a4f90b8b01fa4a53444e6554cfcff37165f4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5c1cde73527ac79a2e4442910e3053ed96748337
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070815"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369791"
 ---
 # <a name="interface-design-rules"></a>Reglas de diseño de interfaz
 

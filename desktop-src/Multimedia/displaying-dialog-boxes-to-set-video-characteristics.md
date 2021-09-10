@@ -7,12 +7,12 @@ keywords:
 - CapDriverGetCaps macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e6ebfa0f75f4bcec63a693636085f16c342e53761b2cb1e67a0e2536fa5cef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73eea12d69a3d23b0345bee3495d32cbb1ad0ffe
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144478"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371365"
 ---
 # <a name="displaying-dialog-boxes-to-set-video-characteristics"></a>Mostrar cuadros de diálogo para establecer características de vídeo
 

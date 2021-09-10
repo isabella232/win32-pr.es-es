@@ -1,6 +1,6 @@
 ---
-title: Modificadores
-description: Modificadores
+title: Conmutadores
+description: Conmutadores
 ms.assetid: ab92d30d-97ab-4229-aed8-1080b6e6dc88
 keywords:
 - mezcladores de audio, controles
@@ -17,14 +17,14 @@ keywords:
 - control mejorado estéreo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 336d2e23c5e6438fbc19208e3366283147462c2451a12e3ccdcae6c13fcd93d2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b1d65bb2a14a0e7dc527fab0e628035839855934
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805085"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372128"
 ---
-# <a name="switches"></a>Modificadores
+# <a name="switches"></a>Conmutadores
 
 Los controles switch son modificadores de dos estados. Estos controles usan la [**estructura \_ BOOLEAN MIXERCONTROLDETAILS**](/previous-versions//dd757295(v=vs.85)) para recuperar y establecer propiedades de control. En la tabla siguiente se describen los tipos de modificadores.
 
@@ -32,7 +32,7 @@ Los controles switch son modificadores de dos estados. Estos controles usan la [
 
 | Control         | Descripción                                                                                                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Boolean         | Modificador genérico. Se puede establecer en **TRUE** o **FALSE.**                                                                                                                                                                           |
+| Booleano         | Modificador genérico. Se puede establecer en **TRUE** o **FALSE.**                                                                                                                                                                           |
 | Botón          | Establezca en **TRUE para** todos los botones que el controlador debe controlar como si se hubieran presionado. Si el valor es **FALSE,** no se hace ninguna acción.                                                                                         |
 | Activado/Desactivado          | Un conmutador alternativo representado por un gráfico distinto del utilizado para el modificador booleano. Se puede establecer en ON u OFF.                                                                                                    |
 | Silencio            | Silencia una línea de audio (suprime el flujo de datos de la línea) o permite reproducir los datos de audio. Este conmutador se usa con frecuencia para ayudar a controlar las líneas que se alimentan en el mezclador.                                                        |

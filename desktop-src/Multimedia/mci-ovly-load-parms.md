@@ -1,6 +1,6 @@
 ---
 title: MCI_OVLY_LOAD_PARMS estructura (Mmsystem.h)
-description: La estructura MCI OVLY LOAD PARMS contiene información para el comando MCI LOAD para dispositivos \_ \_ de \_ \_ superposición de vídeo.
+description: La estructura MCI \_ OVLY \_ LOAD \_ PARMS contiene información para el comando MCI \_ LOAD para dispositivos de superposición de vídeo.
 ms.assetid: 701c27da-72bf-493d-a679-9e0bd210215d
 keywords:
 - MCI_OVLY_LOAD_PARMS estructura Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc966b51224246dbceda46927f605c214ba4809a1cca451813a1075811fa5225
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2029e92f7991f1ae5d8d0bdbabc76eef456a36ec
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039105"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370015"
 ---
 # <a name="mci_ovly_load_parms-structure"></a>Estructura \_ MCI OVLY \_ LOAD \_ PARMS
 
@@ -63,7 +63,7 @@ Identifica el área del búfer de vídeo que se actualizará. [Las estructuras R
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -83,7 +83,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
@@ -95,7 +95,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
 </dt> <dt>
 
-[Rect](/previous-versions//ms536136(v=vs.85))
+[RECT](/previous-versions//ms536136(v=vs.85))
 </dt> </dl>
 
  

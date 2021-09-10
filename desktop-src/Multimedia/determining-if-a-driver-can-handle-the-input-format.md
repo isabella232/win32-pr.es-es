@@ -8,12 +8,12 @@ keywords:
 - Macro ICDrawQuery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1453348c52ed8244ac81f830299a632f2fbe9cab03461303d9aa841dcd675666
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 07b3e2da69f8c061a7d0aefe847f40113d5104d8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119497295"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370388"
 ---
 # <a name="determining-if-a-driver-can-handle-the-input-format"></a>Determinar si un controlador puede controlar el formato de entrada
 

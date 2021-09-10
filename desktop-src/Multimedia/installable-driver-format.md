@@ -10,12 +10,12 @@ keywords:
 - formatos de controlador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c02f6bb2515d1f182146b84b7f0b971fa4b73fe2e2caf5abf63dfd4ddb272df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86fbbdcb8a49184dee6e9cf13c9f434506b1b48f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118140794"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372272"
 ---
 # <a name="installable-driver-format"></a>Formato de controlador instalable
 

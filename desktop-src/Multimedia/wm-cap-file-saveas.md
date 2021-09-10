@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a200b8e73d81072961ec4e6aa7c8e1dd989bf2d8c3e0480c75908a8761ee93b1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aca099fefab7ca0f4ef391b1b65e89938a947a01
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687015"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371432"
 ---
 # <a name="wm_cap_file_saveas-message"></a>Mensaje \_ \_ SAVEAS de ARCHIVO DE WM CAP \_
 
@@ -49,15 +49,15 @@ Puntero a la cadena terminada en NULL que contiene el nombre del archivo de dest
 
 Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**DE ERROR WM CAP SET \_ \_ \_ CALLBACK, \_**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje no cambia el nombre ni el contenido del archivo de captura actual.
 
 Si la operación de copia no se realiza correctamente debido a un error de disco completo, el archivo de destino se elimina automáticamente.
 
-Normalmente, un archivo de captura se preasigna para el segmento de captura más grande previsto y solo se puede usar una parte de él para capturar datos. Este mensaje copia solo la parte del archivo que contiene los datos de captura.
+Normalmente, se preasigna un archivo de captura para el segmento de captura más grande previsto y solo se puede usar una parte de él para capturar datos. Este mensaje copia solo la parte del archivo que contiene los datos de captura.
 
 ## <a name="requirements"></a>Requisitos
 

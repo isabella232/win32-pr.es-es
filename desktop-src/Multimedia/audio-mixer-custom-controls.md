@@ -11,12 +11,12 @@ keywords:
 - mezcladores, controles personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 618e6eb8109f60d83e71fa9f8bcd7ee03e275e452e8ff825ae46a19adf88c3d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35c6b6d747009df035e3911c2823e99e9436195e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375694"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371978"
 ---
 # <a name="audio-mixer-custom-controls"></a>Controles personalizados Mixer audio
 

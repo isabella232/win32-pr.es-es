@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_PUT_DEST mensaje (Vfw.h)
-description: El mensaje PUT DEST de MCIWNDM redefine las coordenadas del rectángulo de destino usado para acercar o ajustar las imágenes de un archivo AVI durante \_ \_ la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndPutDest.
+description: El mensaje PUT DEST de MCIWNDM redefine las coordenadas del rectángulo de destino que se usa para acercar o ajustar las imágenes de un \_ archivo AVI durante la \_ reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndPutDest.
 ms.assetid: 0b13d473-ef93-41a2-bbb2-09fbf264493e
 keywords:
 - MCIWNDM_PUT_DEST mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27eb2afdcec32d43b0352af1ead0b4c89715641fd370611542e1e5c6da9efa85
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba150f450f71c3593976f98c9935233918becd70
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118373583"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370729"
 ---
 # <a name="mciwndm_put_dest-message"></a>Mensaje PUT \_ DEST de MCIWNDM \_
 
-El **mensaje PUT \_ \_ DEST de MCIWNDM** redefine las coordenadas del rectángulo de destino usado para acercar o ajustar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPutDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest)
+El **mensaje PUT \_ \_ DEST de MCIWNDM** redefine las coordenadas del rectángulo de destino que se usa para acercar o ajustar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPutDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest)
 
 
 ```C++
@@ -47,13 +47,13 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que c
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -61,7 +61,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

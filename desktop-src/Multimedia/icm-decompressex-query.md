@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5ae734fa3590f9b11b816a6a3cec48eb544b00cb344cef94126cebb8a8f6b5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e5b2ef5999b9e0619ccbd9ccabd9bc5223b3bf2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987780"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370525"
 ---
 # <a name="icm_decompressex_query-message"></a>\_ICM Mensaje DE DECOMPRESSEX \_ QUERY
 
@@ -48,7 +48,7 @@ Puntero a una [**estructura ICDECOMPRESSEX**](/windows/desktop/api/Vfw/ns-vfw-ic
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Tamaño, en bytes, de [**ICDECOMPRESSEX.**](/windows/desktop/api/Vfw/ns-vfw-icdecompressex)
+Tamaño, en bytes, de [**ICDECOMPRESSEX**](/windows/desktop/api/Vfw/ns-vfw-icdecompressex).
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve ICERR \_ OK si se admite la descompresión especificada o ICERR \_ BADF
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

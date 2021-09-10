@@ -9,12 +9,12 @@ keywords:
 - MPC nivel 2, almacenamiento óptico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7501dc69f1239f9768717317c4bad74c0c15c76a815170939b21b72d55e558e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cb0c6cafe77b7a09af89b49d12d74ce718bbc39
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139721"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372325"
 ---
 # <a name="level-2-optical-storage"></a>Nivel 2 De Storage
 

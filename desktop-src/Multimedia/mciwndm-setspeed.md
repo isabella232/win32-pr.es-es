@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6de0d78fef7723dab0ae2e2d3923f73f872e38dfd9c3e0f42443f7141f020336
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 282bb3a2e135b674605be55aaccaa455d30edbcc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119782995"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370759"
 ---
-# <a name="mciwndm_setspeed-message"></a>Mensaje DE MCIWNDM \_ SETSPEED
+# <a name="mciwndm_setspeed-message"></a>Mensaje SETSPEED de MCIWNDM \_
 
 El **mensaje MCIWNDM \_ SETSPEED** establece la velocidad de reproducción de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetSpeed.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetspeed)
 
@@ -41,13 +41,13 @@ lParam = (LPARAM) (UINT) iSpeed;
 <span id="iSpeed"></span><span id="ispeed"></span><span id="ISPEED"></span>*Ispeed*
 </dt> <dd>
 
-Velocidad de reproducción. Especifique 1000 para velocidad normal, valores mayores para velocidades más rápidas y valores más pequeños para velocidades más lentas.
+Velocidad de reproducción. Especifique 1000 para la velocidad normal, valores más grandes para velocidades más rápidas y valores más pequeños para velocidades más lentas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ description: Trabajar con datos de vídeo comprimidos en una secuencia
 ms.assetid: b701e072-f162-438f-b607-aea7491a02f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7c09de239fa28f3d9739dafc953ce10c2a6f1d69c0c607aeb03bc388a0f3003
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0587ee6c12a93eb014368642ba1605f546129e0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118622095"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372475"
 ---
 # <a name="working-with-compressed-video-data-in-a-stream"></a>Trabajar con datos de vídeo comprimidos en una secuencia
 

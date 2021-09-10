@@ -1,6 +1,6 @@
 ---
 title: comando paste
-description: El comando paste copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando pegar copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: c09418e1-2535-40d1-8912-e5ece91ee673
 keywords:
 - comando paste Windows Multimedia
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73b93f042193c50a810ac23285224ddd234a23b2070f8db2d56d216fee037c37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 482fd744d7e6e163059330148b6e3f081d435880
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118373220"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370153"
 ---
 # <a name="paste-command"></a>comando paste
 
-El comando paste copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
+El comando pegar copia el contenido del Portapapeles en el área de trabajo. Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -53,14 +53,14 @@ Una o varias de las marcas siguientes.
 
 
 
-| Valor                 | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Value                 | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | en *rectángulo*        | Especifica la ubicación dentro del marco donde se pegan los datos. La esquina superior izquierda del *rectángulo* corresponde a la esquina superior izquierda de los datos agregados. Si el rectángulo tiene un tamaño distinto de cero en X o Y, el contenido del Portapapeles se escala en esas dimensiones cuando se pegan en el marco. Si se omite, el *rectángulo tiene* como valor predeterminado todo el marco. Si esta marca se especifica en modo de "inserción" (valor predeterminado), cualquier región fuera del rectángulo se pinta con un color sólido.                       |
 | secuencia *de* audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando . Si solo existe una secuencia de audio en el Portapapeles, los datos de audio se pegan en la secuencia *designada.* Si hay más de una secuencia de audio en el Portapapeles, la *secuencia* indica el número inicial de las secuencias de secuencia. Si usa esta marca y también quiere pegar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegan y conservan sus números de secuencia originales). |
 | insert                | Especifica que los datos se insertan en el área de trabajo. Los datos después del punto de inserción se mueven hacia delante en el área de trabajo para hacer espacio. Este es el valor predeterminado.                                                                                                                                                                                                                                                                                                                                                    |
 | sobrescribir             | Especifica que los datos se copian en el área de trabajo escribiendo sobre los datos existentes después del punto de inserción. Las marcas "insert" y "overwrite" afectan a si los fotogramas se destruyen o se mueven durante la operación de pegado, no a cómo se pegan los datos dentro de cada fotograma.                                                                                                                                                                                                                                              |
 | para *colocar*         | Especifica la posición en el área de trabajo en la que se pegan los datos. Si se omite, el valor predeterminado es la posición actual.                                                                                                                                                                                                                                                                                                                                                                                                    |
-| secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si solo existe una secuencia de vídeo en el Portapapeles, los datos de vídeo se pegan en la secuencia *designada.* Si hay más de una secuencia de vídeo en el Portapapeles, la *secuencia* indica el número inicial de las secuencias de secuencia. Si usa esta marca y también quiere pegar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegan y conservan sus números de secuencia originales). |
+| secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si solo existe una secuencia de vídeo en el Portapapeles, los datos de vídeo se pegan en la secuencia *designada.* Si existe más de una secuencia de vídeo en el Portapapeles, la *secuencia* indica el número inicial de las secuencias de secuencia. Si usa esta marca y también quiere pegar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegan y conservan sus números de secuencia originales). |
 
 
 
@@ -77,28 +77,28 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No hay señales presentes en los datos copiados del Portapapeles. El cambio se convierte en permanente solo cuando los datos se guardan explícitamente; sin embargo, la reproducción actúa como si se hubieran agregado los datos.
+No hay señales en los datos copiados del Portapapeles. El cambio se convierte en permanente solo cuando los datos se guardan explícitamente; sin embargo, la reproducción actúa como si se hubieran agregado los datos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

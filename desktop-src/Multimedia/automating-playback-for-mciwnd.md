@@ -6,12 +6,12 @@ keywords:
 - MCIWndCreate macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27328367e58ffa21a2f83abe8ecab9d9a4259e6fb61b7b0a36d3104adaea5d9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b9224cfa4f5a93488f226d1aefa83201b8b0637
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065605"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370820"
 ---
 # <a name="automating-playback-for-mciwnd"></a>Automatización de la reproducción para MCIWnd
 

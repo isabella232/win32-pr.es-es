@@ -6,12 +6,12 @@ keywords:
 - Com de clave del Registro InprocServer32
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9904aa636bbfb8dc0bc01cac85e041aedfcd34364bd62ac7b0e4e5a9f904750f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0daae9d495ad588e0dc710b63fe7d7ae9f48c11d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119567825"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369456"
 ---
 # <a name="inprocserver32"></a>InprocServer32
 
@@ -27,17 +27,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
          ThreadingModel = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **ThreadingModel** es un **valor \_ REG SZ** que especifica el modelo de subprocesos. Los valores posibles se muestran en la tabla siguiente.
 
 
 
-| Valor     | Descripción                                |
+| Value     | Descripción                                |
 |-----------|--------------------------------------------|
 | Apartamento | Apartamento de un solo subproceso                  |
 | Ambos      | Un solo subproceso o un apartamento multiproceso |
-| Gratis      | Apartamento multiproceso                    |
+| Gratuito      | Apartamento multiproceso                    |
 | Neutra   | Apartamento neutro                          |
 
 
@@ -46,17 +46,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 Debe usar el mismo valor para cada objeto proporcionado por el servidor en proceso.
 
-Si **ThreadingModel** no está presente o no está establecido en un valor, el servidor se carga en el primer apartamento que se inicializó en el proceso. Este apartamento se conoce a veces como el apartamento principal de un solo subproceso (STA). Si com inicializa el primer STA de un proceso, en lugar de una llamada explícita a [**CoInitialize**](/windows/desktop/api/Objbase/nf-objbase-coinitialize) o [**CoInitializeEx,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex)se denomina STA del host. Por ejemplo, COM crea un STA de host si un servidor en proceso que se va a cargar requiere un STA, pero actualmente no hay ningún STA en el proceso.
+Si **ThreadingModel** no está presente o no está establecido en un valor, el servidor se carga en el primer apartamento que se inicializó en el proceso. Este apartamento se conoce a veces como el apartamento principal de un solo subproceso (STA). Si com inicializa el primer STA de un proceso, en lugar de hacerlo mediante una llamada explícita a [**CoInitialize**](/windows/desktop/api/Objbase/nf-objbase-coinitialize) o [**CoInitializeEx,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex)se denomina STA del host. Por ejemplo, COM crea un STA de host si un servidor en proceso que se va a cargar requiere un STA, pero actualmente no hay ningún STA en el proceso.
 
 Siempre que sea posible, el servidor en proceso se carga en el mismo apartamento que el cliente que lo carga. Si el modelo de subprocesos del apartamento cliente no es compatible con el modelo especificado, el servidor se carga como se indica en la tabla siguiente.
 
 
 
-| Modelo de subprocesos del servidor | El servidor apartment se ejecuta en |
+| Modelo de subprocesos del servidor | El servidor de Apartamento se ejecuta en |
 |---------------------------|----------------------------|
 | <not specified>     | Sta principal                   |
 | Ambos                      | El mismo apartamento que el cliente   |
-| Gratis                      | Apartamento multiproceso    |
+| Gratuito                      | Apartamento multiproceso    |
 | Neutra                   | Apartamento neutro          |
 
 
@@ -67,17 +67,17 @@ Si el modelo de subprocesos del servidor es Apartment, el apartamento en el que 
 
 
 
-| El cliente de Apartment se ejecuta en | El servidor apartment se ejecuta en |
+| El cliente de Apartment se ejecuta en | El servidor de Apartamento se ejecuta en |
 |----------------------------|----------------------------|
 | Multiproceso              | Host STA                   |
-| Neutro (en subproceso STA)    | El mismo apartamento que el cliente   |
-| Neutro (en subproceso MTA)    | Host STA                   |
+| Neutral (en subproceso STA)    | El mismo apartamento que el cliente   |
+| Neutral (en subproceso MTA)    | Host STA                   |
 
 
 
  
 
-COM también puede crear un apartamento multiproceso de host (MTA). Si un cliente de un apartamento de un solo subproceso solicita un servidor en proceso cuyo modelo de subprocesos es Gratis cuando no hay MTA en el proceso, COM crea un MTA de host y carga el servidor en él.
+COM también puede crear un apartamento multiproceso de host (MTA). Si un cliente de un solo subproceso solicita un servidor en proceso cuyo modelo de subprocesamiento es Gratis cuando no hay MTA en el proceso, COM crea un MTA host y carga el servidor en él.
 
 Para un servidor en proceso de 32 bits, se deben registrar las claves [**InprocHandler32**](inprochandler32.md), [**InprocServer**](inprocserver.md), **InprocServer32** e [**Insertable.**](insertable.md) La **entrada InprocServer** solo es necesaria para la compatibilidad con versiones anteriores. Si falta, la clase sigue funcionando, pero no se puede cargar en aplicaciones de 16 bits.
 

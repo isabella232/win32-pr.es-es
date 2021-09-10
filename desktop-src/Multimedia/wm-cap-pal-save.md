@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_PAL_SAVE mensaje (Vfw.h)
-description: El mensaje \_ SAVE de WM CAP PAL guarda la paleta actual en un archivo de \_ \_ paleta. Normalmente, los archivos de paleta usan la extensión de nombre de archivo . Camarada. Puede enviar este mensaje explícitamente o mediante la macro capPaletteSave.
+description: El mensaje \_ SAVE de WM CAP PAL guarda la paleta actual en un archivo de \_ \_ paleta. Normalmente, los archivos de paleta usan la extensión de nombre de archivo . CAMARADA. Puede enviar este mensaje explícitamente o mediante la macro capPaletteSave.
 ms.assetid: b1fa3978-9147-403f-aa08-db1a803aa5ac
 keywords:
 - WM_CAP_PAL_SAVE mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ff8703eafcc3c612fbde5bac7d15433758aa3d6ee44ab47697ffb25f9324dfd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf5ea36b2eaf50b2555fa849a176d12d0932eed2
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891885"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371485"
 ---
 # <a name="wm_cap_pal_save-message"></a>Mensaje \_ SAVE de WM CAP \_ PAL \_
 
-El mensaje SAVE de **\_ WM CAP \_ PAL \_** guarda la paleta actual en un archivo de paleta. Normalmente, los archivos de paleta usan la extensión de nombre de archivo . Camarada. Puede enviar este mensaje explícitamente o mediante la [**macro capPaletteSave.**](/windows/desktop/api/Vfw/nf-vfw-cappalettesave)
+El mensaje SAVE de **\_ WM CAP \_ PAL \_** guarda la paleta actual en un archivo de paleta. Normalmente, los archivos de paleta usan la extensión de nombre de archivo . CAMARADA. Puede enviar este mensaje explícitamente o mediante la [**macro capPaletteSave.**](/windows/desktop/api/Vfw/nf-vfw-cappalettesave)
 
 
 ```C++

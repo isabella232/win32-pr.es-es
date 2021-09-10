@@ -3,30 +3,30 @@ title: Referencia MIDI
 description: Referencia MIDI
 ms.assetid: 6229a4a7-be42-4e2a-af9d-695c4759a4ef
 keywords:
-- Windows multimedia,Interfaz digital instrumenta de Música (MIDI)
-- multimedia, Interfaz digital instrumenta de Música (MIDI)
-- audio multimedia, interfaz digital instrumenta de Música (MIDI)
-- audio,Instrument Digital Interface (MIDI)
-- Windows multimedia,referencia de MIDI
+- Windows multimedia,Interfaz digital de instrumentar música (MIDI)
+- multimedia, Interfaz digital de instrumentar música (MIDI)
+- audio multimedia, interfaz digital de instrumentar música (MIDI)
+- audio,Interfaz digital de instrumentar música (MIDI)
+- Windows multimedia, referencia de MIDI
 - multimedia, referencia de MIDI
 - audio multimedia, referencia de MIDI
 - audio, referencia de MIDI
-- Interfaz digital instrumentable (MIDI), referencia
+- Interfaz digital de instrumentar música (MIDI), referencia
 - MIDI (Interfaz digital de instrumentar música), referencia
 - referencia de MIDI, acerca de
 - Referencia de MIDI, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8da65f193bbdc6b67d317fac7546d4f5d7826d89307d1800c565febf0c7a8b6d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c21542867faf1e09d68dc4fc81a50d25f56b5c5e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428355"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370778"
 ---
 # <a name="midi-reference"></a>Referencia MIDI
 
-En esta sección se describen las funciones, macros, mensajes y estructuras asociados a la interfaz digital de instrumentar música (MIDI). Estos elementos se agrupan como se muestra a continuación.
+En esta sección se describen las funciones, macros, mensajes y estructuras asociadas a la interfaz digital de instrumentar música (MIDI). Estos elementos se agrupan como se muestra a continuación.
 
 ## <a name="allocating-and-managing-buffers"></a>Asignación y administración de búferes
 
@@ -58,7 +58,7 @@ En esta sección se describen las funciones, macros, mensajes y estructuras asoc
 
 -   [**midiInGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-midiingeterrortext)
 -   [**midiOutGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgeterrortext)
--   [**\_MIM Error**](mim-error.md)
+-   [**\_MIM ERROR**](mim-error.md)
 -   [**\_MIM LONGERROR**](mim-longerror.md)
 -   [**MM \_ MIM \_ ERROR**](mm-mim-error.md)
 -   [**MM \_ MIM \_ LONGERROR**](mm-mim-longerror.md)
@@ -80,8 +80,8 @@ En esta sección se describen las funciones, macros, mensajes y estructuras asoc
 -   [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
 -   [**midiOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-midioutclose)
 -   [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen)
--   [**\_MIM Cerca**](mim-close.md)
--   [**\_MIM Abierto**](mim-open.md)
+-   [**\_MIM CERCA**](mim-close.md)
+-   [**\_MIM ABIERTO**](mim-open.md)
 -   [**MM \_ MIM \_ CLOSE**](mm-mim-close.md)
 -   [**MM \_ MIM \_ OPEN**](mm-mim-open.md)
 -   [**MM \_ MOM \_ CLOSE**](mm-mom-close.md)
@@ -124,7 +124,7 @@ En esta sección se describen las funciones, macros, mensajes y estructuras asoc
 -   [**midiInStop**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstop)
 -   [**MIDIPROPTEMPO**](/windows/win32/api/mmeapi/ns-mmeapi-midiproptempo)
 -   [**MIDIPROPTIMEDIV**](/windows/win32/api/mmeapi/ns-mmeapi-midiproptimediv)
--   [**\_MIM Datos**](mim-data.md)
+-   [**\_MIM DATOS**](mim-data.md)
 -   [**\_MIM LONGDATA**](mim-longdata.md)
 -   [**\_MIM MOREDATA**](mim-moredata.md)
 -   [**MM \_ MIM \_ DATA**](mm-mim-data.md)

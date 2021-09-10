@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 922c68340cd776c8c23c0c1b60c3aa4de67e4e713d27e54510d2bf0f6978f442
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6619131319863d1159a3bdb8bb85d366243544a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783745"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369920"
 ---
 # <a name="mci_where-command"></a>Comando WHERE de MCI \_
 
@@ -68,7 +68,7 @@ Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (L
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas adicionales se usan con el **tipo de dispositivo digitalvideo:**
 
@@ -88,7 +88,7 @@ Obtiene una descripción de la región rectangular del búfer de fotogramas en l
 
 </dd> <dt>
 
-<span id="MCI_DGV_WHERE_MAX"></span><span id="mci_dgv_where_max"></span>MCI \_ DGV \_ WHERE \_ MAX
+<span id="MCI_DGV_WHERE_MAX"></span><span id="mci_dgv_where_max"></span>MCI \_ DGV \_ DONDE \_ MAX
 </dt> <dd>
 
 Cuando se usa con MCI DGV WHERE DESTINATION o \_ \_ \_ MCI \_ DGV WHERE SOURCE, el rectángulo devuelto indica el ancho y alto máximos de \_ \_ la región especificada. Cuando se usa con MCI \_ DGV WHERE WINDOW, el rectángulo devuelto \_ indica el tamaño de toda la \_ pantalla.
@@ -98,7 +98,7 @@ Cuando se usa con MCI DGV WHERE DESTINATION o \_ \_ \_ MCI \_ DGV WHERE SOURCE, 
 <span id="MCI_DGV_WHERE_SOURCE"></span><span id="mci_dgv_where_source"></span>MCI \_ DGV \_ WHERE \_ SOURCE
 </dt> <dd>
 
-Obtiene una descripción de la región rectangular (recortada del búfer del marco) que se ajusta al rectángulo de destino en la pantalla.
+Obtiene una descripción de la región rectangular (recortada del búfer de marco) que se ajusta al rectángulo de destino en la pantalla.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpQue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -171,7 +171,7 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpQue
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

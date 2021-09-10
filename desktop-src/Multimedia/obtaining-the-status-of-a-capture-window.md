@@ -7,16 +7,16 @@ keywords:
 - Estructura CAPSTATUS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8effedac3950f0f57aaa6e57ccd5a93fe3044982c3d6ec6d6bb69b56024a1255
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 01f848898247ad8ea2ddbb0dde7a13c08b6a7274
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038375"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371557"
 ---
 # <a name="obtaining-the-status-of-a-capture-window"></a>Obtener el estado de una ventana de captura
 
-En el ejemplo siguiente se usa la función [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) para establecer el tamaño de la ventana de captura en las dimensiones generales de la secuencia de vídeo entrante en función de la información devuelta por la macro [**capGetStatus**](/windows/desktop/api/Vfw/nf-vfw-capgetstatus) en la [**estructura CAPSTATUS.**](/windows/win32/api/vfw/ns-vfw-capstatus)
+En el ejemplo siguiente se usa la función [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) para establecer el tamaño de la ventana de captura en las dimensiones generales de la secuencia de vídeo entrante en función de la información devuelta por la macro [**capGetStatus**](/windows/desktop/api/Vfw/nf-vfw-capgetstatus) en la estructura [**CAPSTATUS.**](/windows/win32/api/vfw/ns-vfw-capstatus)
 
 
 ```C++

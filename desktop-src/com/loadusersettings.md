@@ -3,15 +3,15 @@ title: LoadUserSettings
 description: Determina si COM cargará el perfil de usuario para los servidores COM que se ejecutan como identidad de aplicación de usuario de inicio.
 ms.assetid: 3e2b3249-3747-4d98-96da-f3e480a51d12
 keywords:
-- Valor del Registro LoadUserSettings COM
+- Valor del Registro COM LoadUserSettings
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4b82bd89015baa4c73c9200013e49c76523951218dfde62bbe39300eefdfe0a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5e14282b00bc2c2d9b989e19480047f115623d55
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119731045"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369731"
 ---
 # <a name="loadusersettings"></a>LoadUserSettings
 
@@ -25,7 +25,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
       LoadUserSettings = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ REG DWORD.** Si *el* valor es distinto de cero, COM carga el perfil de la cuenta de usuario con la que inicia el servidor COM. Si *el* valor es cero o no está presente, COM no cargará el perfil de la cuenta de usuario con la que inicia el servidor COM.
 

@@ -6,12 +6,12 @@ keywords:
 - Valor del Registro COM de LegacySecureReferences
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef3a4ab964d73fa4b194c734f28c23ff068239370088c090051464129b6caf14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2776bf3661013f1e622bbc2e1c553f2551c62808
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117736552"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369652"
 ---
 # <a name="legacysecurereferences"></a>LegacySecureReferences
 
@@ -24,7 +24,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
    LegacySecureReferences = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ SZ reg.** Un valor de "Y" o "y" indica que **AddRef** **y Release están** protegidos. Si este valor del Registro no está presente o se establece en un valor distinto de "Y" o "y", **AddRef** y **Release** no están protegidos. La habilitación de referencias seguras ralentiza las llamadas remotas.
 

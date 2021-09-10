@@ -4,18 +4,18 @@ description: Funciones de controlador
 ms.assetid: 39b00125-b705-4cad-9334-3860a93a4f05
 keywords:
 - Windows multimedia, funciones de controlador instalables
-- multimedia, funciones de controlador instalables
+- funciones de controlador multimedia, instalables
 - controladores instalables, funciones
-- referencia del controlador instalable, funciones
-- referencia para controladores instalables, funciones
+- referencia de controlador instalable, funciones
+- referencia de controladores instalables, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfe7933a37b23e6e8fa7611202d6859a2b9cc80196204d32333228c43feb2890
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7524b4877b82d2071af14ec1eea4f7d6d7e313c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144408"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372194"
 ---
 # <a name="driver-functions"></a>Funciones de controlador
 

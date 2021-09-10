@@ -7,18 +7,18 @@ keywords:
 - Referencia de MCI, cadenas de comandos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc2934f8770c7a68db7f1706705424d554bbd5f4840a7e19b0c57b695a9bad90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7298a1ad4d571446532f7198e5bd41ae988194e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784615"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369824"
 ---
 # <a name="mci-command-strings"></a>Cadenas de comandos de MCI
 
-Las siguientes cadenas de comandos se usan con MCI.
+Las cadenas de comandos siguientes se usan con MCI.
 
--   [**Romper**](break.md)
+-   [**break**](break.md)
 -   [**Capacidad**](capability.md)
 -   [**capturar**](capture.md)
 -   [**Cerca**](close.md)
@@ -29,18 +29,18 @@ Las siguientes cadenas de comandos se usan con MCI.
 -   [**Eliminar**](delete.md)
 -   [Escapar](escape.md)
 -   [**Congelar**](freeze.md)
--   [**Índice**](./windows-multimedia-start-page.md)
+-   [**índice**](./windows-multimedia-start-page.md)
 -   [**Información**](info.md)
 -   [**Lista**](list.md)
 -   [**Carga**](load.md)
 -   [**Marca**](mark.md)
 -   [**Monitor**](monitor.md)
--   [**abierto**](open.md)
--   [**pegar**](paste.md)
+-   [**Abierto**](open.md)
+-   [**Pegar**](paste.md)
 -   [**Pausa**](pause.md)
 -   [**Jugar**](play.md)
 -   [**Poner**](put.md)
--   [**Calidad**](quality.md)
+-   [**calidad**](quality.md)
 -   [**darse cuenta de**](realize.md)
 -   [**grabar**](record.md)
 -   [**reserva**](reserve.md)
@@ -53,7 +53,7 @@ Las siguientes cadenas de comandos se usan con MCI.
 -   [**settimecode**](settimecode.md)
 -   [**settuner**](settuner.md)
 -   [**setvideo**](setvideo.md)
--   [**signal**](signal.md)
+-   [**Señal**](signal.md)
 -   [**giro**](spin.md)
 -   [**status**](status.md)
 -   [**Paso**](step.md)
@@ -62,7 +62,7 @@ Las siguientes cadenas de comandos se usan con MCI.
 -   [**Deshacer**](undo.md)
 -   [**Descongelar**](unfreeze.md)
 -   [**actualizar**](update.md)
--   [**Dónde**](where.md)
+-   [**where**](where.md)
 -   [**Ventana**](window.md)
 
 ## <a name="related-topics"></a>Temas relacionados

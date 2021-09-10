@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DECOMPRESS_GET_FORMAT (VFW. h)
-description: El \_ \_ \_ mensaje de obtención de formato ICM descomprime solicita el formato de salida de los datos descomprimidos de un controlador de descompresión de vídeo. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressGetFormat.
+title: ICM_DECOMPRESS_GET_FORMAT mensaje (Vfw.h)
+description: El ICM mensaje GET FORMAT de DECOMPRESS solicita el formato de salida de los datos \_ \_ \_ descomprimidos de un controlador de descompresión de vídeo. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressGetFormat.
 ms.assetid: 51753f47-758b-4d3e-9a53-9db284da2473
 keywords:
-- Mensaje de ICM_DECOMPRESS_GET_FORMAT de Windows multimedia
+- ICM_DECOMPRESS_GET_FORMAT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: fc7eefa655646deae8e67fa16a87bfdb81a8b936
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079644"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370526"
 ---
-# <a name="icm_decompress_get_format-message"></a>Descompresión ICM \_ \_ Get \_ Format Message
+# <a name="icm_decompress_get_format-message"></a>\_ICM Mensaje GET \_ FORMAT de DECOMPRESS \_
 
-El mensaje de **\_ obtención de \_ \_ formato ICM descomprime** solicita el formato de salida de los datos descomprimidos de un controlador de descompresión de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat) .
+El ICM mensaje GET FORMAT de **\_ DECOMPRESS \_ \_** solicita el formato de salida de los datos descomprimidos desde un controlador de descompresión de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressGetFormat.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat)
 
 
 ```C++
@@ -41,14 +41,14 @@ lParam = (DWORD_PTR) (LPVOID) lpbiOutput;
 <span id="lpbiInput"></span><span id="lpbiinput"></span><span id="LPBIINPUT"></span>*lpbiInput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
 
 </dd> <dt>
 
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida. Puede especificar cero para solicitar solo el tamaño del formato de salida, como en la macro [**ICDecompressGetFormatSize**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize) .
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) para contener el formato de salida. Puede especificar cero para solicitar solo el tamaño del formato de salida, como en la macro [**ICDecompressGetFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize)
 
 </dd> </dl>
 
@@ -56,11 +56,11 @@ Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-
 
 Si *lpbiOutput* es cero, devuelve el tamaño de la estructura.
 
-Si *lpbiOutput* es distinto de cero, devuelve ICERR \_ OK si es correcto o un error en caso contrario.
+Si *lpbiOutput* es distinto de cero, devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Si *lpbiOutput* es distinto de cero, el controlador debe rellenar la estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) con el formato de salida predeterminado correspondiente al formato de entrada especificado para *lpbiInput*. Si el compresor puede generar varios formatos, el formato predeterminado debe ser el que conserva la mayor cantidad de información.
+Si *lpbiOutput* es distinto de cero, el controlador debe rellenar la estructura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) con el formato de salida predeterminado correspondiente al formato de entrada especificado para *lpbiInput.* Si el producto puede generar varios formatos, el formato predeterminado debe ser el que conserva la mayor cantidad de información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Si *lpbiOutput* es distinto de cero, el controlador debe rellenar la estructura 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

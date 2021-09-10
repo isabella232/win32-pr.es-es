@@ -8,12 +8,12 @@ keywords:
 - Función ICCompress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf638467e3685b24a65cd47492faed6660e77e5c49864a339a3874eb81e9b5af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b8f59a163a9b5a74d2d2fe984417069985fa86a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038685"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372254"
 ---
 # <a name="image-data-compression"></a>Image-Data compresión
 
@@ -37,7 +37,7 @@ Un producto recibe datos en un formato, los comprime y devuelve una versión com
 
 Si desea comprimir datos y la aplicación requiere un formato de salida específico, envíe el mensaje DE CONSULTA DE [**\_ COMPRESIÓN \_**](icm-compress-query.md) de ICM (o use la macro [**ICCompressQuery)**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) para consultar el objeto para determinar si admite los formatos de entrada y salida.
 
-Si el formato de salida no es importante para la aplicación, solo necesita encontrar un resalte que pueda controlar el formato de entrada. Para determinar si un manipulado puede controlar el formato de entrada, puede enviar ICM **\_ COMPRESS \_ QUERY**, **especificando NULL para** el parámetro *lParam.* Este mensaje no devuelve el formato de salida a la aplicación. La aplicación puede determinar el tamaño de búfer necesario para los datos que especifican el formato de compresión mediante el envío del mensaje [**\_ GET \_ \_ FORMAT**](icm-compress-get-format.md) de ICM COMPRESS (o usar la macro [**ICCompressGetFormatSize).**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformatsize) También puede recuperar los datos de formato enviando ICM \_ COMPRESS \_ GET FORMAT \_ (o la macro [**ICCompressGetFormat).**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat)
+Si el formato de salida no es importante para la aplicación, solo necesita encontrar un resalte que pueda controlar el formato de entrada. Para determinar si un ánima puede controlar el formato de entrada, puede enviar ICM **\_ COMPRESS \_ QUERY**, especificando **NULL para** el *parámetro lParam.* Este mensaje no devuelve el formato de salida a la aplicación. La aplicación puede determinar el tamaño de búfer necesario para los datos que especifican el formato de compresión mediante el envío del mensaje [**\_ GET \_ \_ FORMAT**](icm-compress-get-format.md) de ICM COMPRESS (o usar la macro [**ICCompressGetFormatSize).**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformatsize) También puede recuperar los datos de formato enviando ICM \_ COMPRESS \_ GET FORMAT \_ (o la macro [**ICCompressGetFormat).**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat)
 
 Si desea determinar el búfer más grande que podría requerir el compresión, envíe el mensaje [**\_ ICM COMPRESS GET \_ \_ SIZE**](icm-compress-get-size.md) (o use la macro [**ICCompressGetSize).**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetsize) Puede usar el número de bytes devueltos por la [**función ICSendMessage**](/windows/desktop/api/Vfw/nf-vfw-icsendmessage) para asignar un búfer para las posteriores compresiónes de imagen.
 
@@ -60,7 +60,7 @@ Cuando VCM devuelve el control a la aplicación después de comprimir un marco, 
 
 ## <a name="ending-compression"></a>Compresión final
 
-Una vez que la aplicación haya comprimido los datos, puede usar la macro [**ICCompressEnd**](/windows/desktop/api/Vfw/nf-vfw-iccompressend) para notificar al comprimidor que ha finalizado. Si desea reiniciar la compresión después de usar esta función, la aplicación debe reinicializar el reanimación mediante el envío del mensaje [**\_ ICM COMPRESS \_ BEGIN**](icm-compress-begin.md) (o usar la macro [**ICCompressBegin).**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin)
+Una vez que la aplicación haya comprimido los datos, puede usar la macro [**ICCompressEnd**](/windows/desktop/api/Vfw/nf-vfw-iccompressend) para notificar al comprimidor que ha finalizado. Si desea reiniciar la compresión después de usar esta función, la aplicación debe reinicializar la compresión mediante el envío del mensaje [**\_ ICM COMPRESS \_ BEGIN**](icm-compress-begin.md) (o usar la macro [**ICCompressBegin).**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin)
 
  
 

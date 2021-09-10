@@ -4,12 +4,12 @@ description: Responsabilidades del servidor COM
 ms.assetid: 9853bbf5-b989-45b7-8fa8-8cd2f0d48d3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5c6604a8f42804867e797087ffb346fe69152cb84440d052560c3f40a42140c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86b9d3104af80a7b2dca49dbbd5b55e66a613ee7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119854775"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369444"
 ---
 # <a name="com-server-responsibilities"></a>Responsabilidades del servidor COM
 

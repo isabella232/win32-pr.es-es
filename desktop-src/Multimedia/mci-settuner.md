@@ -1,6 +1,6 @@
 ---
 title: MCI_SETTUNER comando (Mmsystem.h)
-description: El comando SETTUNER de MCI \_ establece el canal actual en el afinador. Los dispositivos VCR reconocen este comando.
+description: El comando SETTUNER de MCI \_ establece el canal actual en el ajuste. Los dispositivos VCR reconocen este comando.
 ms.assetid: d9f4d6b8-ba73-40ec-a2f9-76adab0fd6f4
 keywords:
 - MCI_SETTUNER comando Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc0e4d812a89c8b7ca5a8e65b322e19dcb4f7d4e7e2ef8c49745ebb16e22af65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d5774a927e1f41cf5d3bf42d6e93e532e0c2961a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138111"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370094"
 ---
 # <a name="mci_settuner-command"></a>Comando \_ SETTUNER de MCI
 
-El comando SETTUNER de MCI \_ establece el canal actual en el afinador. Los dispositivos VCR reconocen este comando.
+El comando SETTUNER de MCI \_ establece el canal actual en el ajuste. Los dispositivos VCR reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -66,15 +66,15 @@ Puntero a una [**estructura \_ MCI VCR \_ SETTUNER \_ PARMS.**](mci-vcr-settuner
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las siguientes marcas adicionales se aplican a los dispositivos VCR:
 
 <dl> <dt>
 
-<span id="MCI_VCR_SETTUNER_CHANNEL"></span><span id="mci_vcr_settuner_channel"></span>MCI \_ VCR \_ SETTUNER \_ CHANNEL
+<span id="MCI_VCR_SETTUNER_CHANNEL"></span><span id="mci_vcr_settuner_channel"></span>CANAL \_ SETTUNER DE MCI VCR \_ \_
 </dt> <dd>
 
 El **miembro dwChannel** de la estructura identificada por *lpSetTuner* contiene el nuevo número de canal.
@@ -98,21 +98,21 @@ Busca un canal válido en la dirección inversa.
 <span id="MCI_VCR_SETTUNER_CHANNEL_SEEK_UP"></span><span id="mci_vcr_settuner_channel_seek_up"></span>MCI \_ VCR \_ SETTUNER \_ CHANNEL \_ SEEK \_ UP
 </dt> <dd>
 
-Busca un canal válido en la dirección hacia delante.
+Busca un canal válido en la dirección de avance.
 
 </dd> <dt>
 
 <span id="MCI_VCR_SETTUNER_CHANNEL_UP"></span><span id="mci_vcr_settuner_channel_up"></span>MCI \_ VCR \_ SETTUNER \_ CHANNEL \_ UP
 </dt> <dd>
 
-Incrementa el canal de tuner.
+Incrementa el canal del tuner.
 
 </dd> <dt>
 
 <span id="MCI_VCR_SETTUNER_NUMBER"></span><span id="mci_vcr_settuner_number"></span>MCI \_ VCR \_ SETTUNER \_ NUMBER
 </dt> <dd>
 
-El **miembro dwNumber** de la estructura identificada por *lpSetTuner* especifica qué afinador lógico se debe afectar con este comando.
+El **miembro dwNumber** de la estructura identificada por *lpSetTuner* especifica qué afinador lógico debe afectar con este comando.
 
 </dd> </dl>
 
@@ -132,7 +132,7 @@ El **miembro dwNumber** de la estructura identificada por *lpSetTuner* especific
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos de MCI](mci-commands.md)

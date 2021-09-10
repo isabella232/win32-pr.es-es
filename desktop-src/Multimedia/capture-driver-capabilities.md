@@ -8,12 +8,12 @@ keywords:
 - CAPDRIVERCAPS (estructura)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4260c696834814f8ed42fc78154a506f3f156f3df37c02ccbff337c651f0ef6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc87fb4f9cb439229721b6c10aa6207af601f9ab
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375385"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372031"
 ---
 # <a name="capture-driver-capabilities"></a>Capacidades del controlador de captura
 

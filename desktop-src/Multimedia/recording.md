@@ -6,12 +6,12 @@ keywords:
 - MCI_RECORD comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27033dde148a6f99a1168eea4d6c0a97aea82881638ccb6d6f5535632e897148
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4248b2d4bbdd984ad23a772f0adca04581afca1d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805515"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371636"
 ---
 # <a name="recording"></a>Grabación
 
@@ -27,7 +27,7 @@ Si registra con el modo de sobrescritura en un archivo existente, puede usar las
 
 Si no especifica una ubicación final, la grabación continúa hasta que se envía un comando [**stop**](stop.md) [**(MCI \_ STOP)**](mci-stop.md)o hasta que el controlador se queda sin espacio libre en disco. Si graba en un archivo nuevo, puede omitir la marca "from" o establecerla en cero para iniciar la grabación al principio de un nuevo archivo. Puede especificar una ubicación final para finalizar la grabación al grabar en un archivo nuevo.
 
-A [**veces,**](record.md) el comando de registro es preciso en solo 1 segundo de la ubicación inicial, como con los dispositivos VCR. Para grabar con más precisión, debe usar el [**comando cue**](cue.md) ([**MCI \_ CUE**](mci-cue.md)). Este comando lo reconocen los dispositivos digital-video, VCR y de audio de forma de onda. Para obtener más información acerca de cómo grabar con dispositivos VCR, vea [VcR Services](vcr-services.md).
+El [**comando de**](record.md) registro a veces es preciso en un solo segundo de la ubicación inicial, como con los dispositivos VCR. Para grabar con más precisión, debe usar el [**comando cue**](cue.md) ([**MCI \_ CUE**](mci-cue.md)). Este comando lo reconocen los dispositivos digital-video, VCR y de audio de forma de onda. Para obtener más información acerca de cómo grabar con dispositivos VCR, vea [VcR Services](vcr-services.md).
 
 ## <a name="saving-a-recorded-file"></a>Guardar un archivo grabado
 
@@ -40,9 +40,9 @@ Una vez completada la grabación, use el comando [**save**](save.md) (o [**MCI \
 
 ## <a name="checking-input-levels-pcm-only"></a>Comprobación de los niveles de entrada (solo PCM)
 
-Para obtener el nivel de la señal de entrada antes de grabar en un dispositivo de entrada de audio de forma de onda PCM (pulse code Desaconstura), use el comando [**status**](status.md) ([**MCI \_ STATUS**](mci-status.md)). Especifique la marca "level" (o la marca MCI STATUS ITEM y establezca el miembro dwItem de la estructura \_ \_ [**MCI \_ STATUS \_ PARMS**](mci-status-parms.md) en MCI WAVE  \_ STATUS \_ \_ LEVEL). Se devuelve el nivel medio de señal de entrada. El valor del canal izquierdo está en la palabra de orden superior y el valor de canal único o derecho está en la palabra de orden inferior.
+Para obtener el nivel de la señal de entrada antes de grabar en un dispositivo de entrada de audio de forma de onda PCM (pulse code Desaconstura), use el comando [**status**](status.md) ([**MCI \_ STATUS**](mci-status.md)). Especifique la marca "level" (o la marca MCI STATUS ITEM) y establezca el miembro dwItem de la estructura \_ \_ [**\_ MCI STATUS \_ PARMS**](mci-status-parms.md) en MCI WAVE  \_ STATUS \_ \_ LEVEL. Se devuelve el nivel medio de señal de entrada. El valor del canal izquierdo está en la palabra de orden superior y el valor de canal único o derecho está en la palabra de orden inferior.
 
-El nivel de entrada se representa como un valor sin signo. En el caso de las muestras de 8 bits, este valor está en el intervalo de 0 a 127 (0x7F). Para ejemplos de 16 bits, está en el intervalo de 0 a 32 767 (0x7FFF).
+El nivel de entrada se representa como un valor sin signo. En el caso de las muestras de 8 bits, este valor está en el intervalo de 0 a 127 (0x7F). En el caso de las muestras de 16 bits, está en el intervalo de 0 a 32 767 (0x7FFF).
 
  
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 805befc3f83c79b157e040004dcf382dccaf07b240b3b846892b8fb035f826ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58ef6590770e8a9ece3eb8abaffb4dbca0b1a4d4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135161"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371456"
 ---
 # <a name="wm_cap_get_status-message"></a>Mensaje \_ GET \_ STATUS \_ de WM CAP
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura CAPSTATUS.**](/windows/win32/api/vfw/ns-vfw-capstatu
 
 Devuelve **TRUE** si se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**estructura CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) contiene el estado actual de la ventana de captura. Dado que este estado es dinámico y cambia en respuesta a varios mensajes, la aplicación debe inicializar esta estructura después de enviar el mensaje [**\_ \_ DLG \_ VIDEOFORMAT**](wm-cap-dlg-videoformat.md) de WM CAP (o mediante la macro [**capDlgVideoFormat)**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat) y siempre que necesite habilitar elementos de menú o determinar el estado real de la ventana.
 
@@ -64,7 +64,7 @@ La [**estructura CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) contiene 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

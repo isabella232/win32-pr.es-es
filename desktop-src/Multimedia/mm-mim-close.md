@@ -1,6 +1,6 @@
 ---
 title: MM_MIM_CLOSE mensaje (Mmsystem.h)
-description: El mensaje MM \_ MIM CLOSE se envía a una ventana cuando se cierra un dispositivo de entrada DE \_ LÍNEA.
+description: El mensaje MM MIM CLOSE se envía a una ventana cuando se cierra un \_ dispositivo de entrada DE \_ MIDI.
 ms.assetid: 261021aa-4df6-44d8-aad3-5f98b1213459
 keywords:
 - MM_MIM_CLOSE mensaje Windows Multimedia
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87e1ee579f09fbd379f1fa353d602657194b0848d040210a713d0492a7e42311
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8ce511365b1faa49faefaf4ed25c5b8befb2288
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807395"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370891"
 ---
-# <a name="mm_mim_close-message"></a>Mensaje MM \_ MIM \_ CLOSE
+# <a name="mm_mim_close-message"></a>Mensaje \_ MM MIM \_ CLOSE
 
 El **mensaje MM MIM \_ \_ CLOSE** se envía a una ventana cuando se cierra un dispositivo de entrada DE LÍNEA.
 
@@ -41,14 +41,14 @@ lParam = reserved
 <span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*
 </dt> <dd>
 
-Identificador del dispositivo de entrada DE LÍNEA que se ha cerrado.
+Controle el dispositivo de entrada MIDI que se cerró.
 
 </dd> <dt>
 
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Reservado; no use.
+Reservado; no se usan.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Reservado; no use.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 
@@ -64,7 +64,7 @@ El identificador del dispositivo ya no es válido después de que se haya enviad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

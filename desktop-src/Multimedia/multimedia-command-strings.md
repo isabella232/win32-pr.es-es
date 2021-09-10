@@ -10,12 +10,12 @@ keywords:
 - cadenas de comandos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 986a1fc9e2a97671b04d8ba8a4a5cd033e176a94f6a8e898b4f899b7a9c707a7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae4ec8f9b0efa783028850a6cd03cbc0bed20caf
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038775"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370244"
 ---
 # <a name="multimedia-command-strings"></a>Cadenas de comandos multimedia
 
@@ -39,11 +39,11 @@ Las cadenas de comandos siguientes se usan con multimedia.
 -   [Marca](mark.md)
 -   [Monitor](monitor.md)
 -   [open](open.md)
--   [pegar](paste.md)
+-   [Pegar](paste.md)
 -   [pause](pause.md)
 -   [Jugar](play.md)
 -   [Poner](put.md)
--   [Calidad](quality.md)
+-   [calidad](quality.md)
 -   [darse cuenta de](realize.md)
 -   [record](record.md)
 -   [reserva](reserve.md)

@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de escritura de datos de la creación de perfiles
-description: Ejemplo de escritura de datos de la creación de perfiles
+title: Ejemplo de escritura de datos de forma de onda
+description: Ejemplo de escritura de datos de forma de onda
 ms.assetid: 8078e5b4-340b-409a-88f9-143b02efebc1
 keywords:
-- audio de onda, escribir datos de la información de onda
-- audio auxiliar, escribir datos de la creación de perfiles
-- escribir datos de la información de onda
+- audio de forma de onda, escribir datos de forma de onda
+- audio auxiliar, escribir datos de forma de onda
+- escribir datos de forma de onda
 - Estructura WAVEHDR
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f3ea78101c33ae7701bc30d70e55c788d826d5a4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077615"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371317"
 ---
-# <a name="example-of-writing-waveform-data"></a>Ejemplo de escritura de datos de la creación de perfiles
+# <a name="example-of-writing-waveform-data"></a>Ejemplo de escritura de datos de forma de onda
 
 En el ejemplo siguiente se muestran los pasos necesarios para asignar y configurar una estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) y escribir un bloque de datos en un dispositivo de salida de forma de onda.
 
@@ -136,6 +136,6 @@ void WriteWaveData(void)
 
 
 
- 
+ 
 
- 
+ 

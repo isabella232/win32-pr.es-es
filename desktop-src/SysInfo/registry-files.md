@@ -4,12 +4,12 @@ ms.assetid: a71a564d-934a-46e8-b555-989a6fa82337
 title: Archivos del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3a5caa34a075e4bffe48a542d02eec896ab28dd93fbdc2745dbc5a08effb9d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44916618946f6541495186aa5843799c9b864fbc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117763818"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371888"
 ---
 # <a name="registry-files"></a>Archivos del Registro
 

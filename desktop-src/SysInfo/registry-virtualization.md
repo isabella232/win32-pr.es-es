@@ -4,18 +4,18 @@ ms.assetid: dace2f65-df60-419a-8be8-ab60668e6396
 title: Virtualización del registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f14d8a82a12be74d3c5f2963e8b4edf47baaa85c4a8299e4ff632284bbac83fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 642bda46b43fc0b4f7efa60cfcd9e2178643811f
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117763592"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371905"
 ---
 # <a name="registry-virtualization"></a>Virtualización del registro
 
 *La virtualización del* registro es una tecnología de compatibilidad de aplicaciones que permite redirigir las operaciones de escritura de registros que tienen impacto global a ubicaciones por usuario. Este redireccionamiento es transparente para las aplicaciones que leen o escriben en el Registro. Se admite a partir de Windows Vista.
 
-Esta forma de virtualización es una tecnología de compatibilidad de aplicaciones provisional; Microsoft pretende quitarlo de versiones futuras del sistema operativo Windows a medida que más aplicaciones se hacen compatibles con Windows Vista y versiones posteriores de Windows. Por lo tanto, es importante que la aplicación no dependa del comportamiento de la virtualización del registro en el sistema.
+Esta forma de virtualización es una tecnología de compatibilidad de aplicaciones provisional; Microsoft pretende quitarlo de versiones futuras del sistema operativo Windows, ya que hay más aplicaciones compatibles con Windows Vista y versiones posteriores de Windows. Por lo tanto, es importante que la aplicación no dependa del comportamiento de la virtualización del registro en el sistema.
 
 La virtualización solo está pensada para proporcionar compatibilidad con las aplicaciones existentes. Las aplicaciones diseñadas para Windows Vista y versiones posteriores de Windows no deben escribir en áreas del sistema confidenciales ni confiar en la virtualización para solucionar problemas. Al actualizar el código existente para que se ejecute en Windows Vista y versiones posteriores de Windows, los desarrolladores deben asegurarse de que las aplicaciones solo almacenan datos en ubicaciones por usuario o en ubicaciones de equipo dentro de %alluserprofile% que usan correctamente una lista de control de acceso (ACL).
 
@@ -64,7 +64,7 @@ La virtualización del Registro solo está habilitada para lo siguiente:
 
 -   Procesos interactivos de 32 bits.
 -   Claves del software **HKEY \_ LOCAL \_ MACHINE \\**.
--   Claves en las que un administrador puede escribir. (Si un administrador no puede escribir en una clave, la aplicación habría tenido un error en versiones anteriores de Windows incluso si lo hubiera ejecutado un administrador).
+-   Claves en las que un administrador puede escribir. (Si un administrador no puede escribir en una clave, la aplicación habría fallado en versiones anteriores de Windows incluso si lo hubiera ejecutado un administrador).
 
 La virtualización del Registro está deshabilitada para lo siguiente:
 
@@ -80,7 +80,7 @@ La virtualización del Registro está deshabilitada para lo siguiente:
 
 ## <a name="controlling-registry-virtualization"></a>Control de la virtualización del registro
 
-Además de controlar la virtualización en el nivel de aplicación mediante **requestedExecutionLevel** en el manifiesto, un administrador puede habilitar o deshabilitar la virtualización por clave para las claves del **software HKEY \_ LOCAL \_ MACHINE. \\** Para ello, use la Reg.exe de la línea de comandos FLAGS con las marcas enumeradas en la tabla siguiente.
+Además de controlar la virtualización en el nivel de aplicación mediante **requestedExecutionLevel** en el manifiesto, un administrador puede habilitar o deshabilitar la virtualización por clave para las claves del **software HKEY \_ LOCAL \_ MACHINE. \\** Para ello, use la opción Reg.exe de la línea de comandos FLAGS con las marcas enumeradas en la tabla siguiente.
 
 
 

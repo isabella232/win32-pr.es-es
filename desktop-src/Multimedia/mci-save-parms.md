@@ -1,6 +1,6 @@
 ---
 title: MCI_SAVE_PARMS estructura (Mciapi.h)
-description: La estructura MCI \_ SAVE \_ PARMS contiene la información de nombre de archivo del comando MCI \_ SAVE.
+description: La estructura SAVE PARMS de MCI \_ contiene la información del nombre de archivo del comando SAVE de \_ \_ MCI.
 ms.assetid: fbaff175-e521-4b93-853a-f444726932d3
 keywords:
 - MCI_SAVE_PARMS estructura Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d87f581e753265796259fbd33bfeeba3d4c2957e107c7edeb8d08c063e34e32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6252788b1ffc251d2fa6a3f993f074edc31aaac
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038335"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370088"
 ---
-# <a name="mci_save_parms-structure"></a>Estructura \_ MCI SAVE \_ PARMS
+# <a name="mci_save_parms-structure"></a>Estructura de MCI \_ SAVE \_ PARMS
 
-La **estructura MCI \_ SAVE \_ PARMS** contiene la información de nombre de archivo del [**comando MCI \_ SAVE.**](mci-save.md)
+La **estructura \_ SAVE \_ PARMS de MCI** contiene la información del nombre de archivo del comando SAVE [**\_ de MCI.**](mci-save.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Nombre del archivo que se guardará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -75,7 +75,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

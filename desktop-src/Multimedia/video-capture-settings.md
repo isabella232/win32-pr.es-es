@@ -5,17 +5,17 @@ ms.assetid: f5c887ca-9430-4221-8748-5b389247b7a4
 keywords:
 - Estructura CAPTUREPARMS
 - WM_CAP_GET_SEQUENCE_SETUP mensaje
-- CapCaptureGetSetup (macro)
+- CapCaptureGetSetup macro
 - WM_CAP_SET_SEQUENCE_SETUP mensaje
-- CapCaptureSetSetup (macro)
+- CapCaptureSetSetup macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b50eb26170c8b1594d288cec903ef0c05867a24db2d5a89a6ad60f66eef4fd0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 990868502226a5c76867261d06e0dd538e165f93
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118135593"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372530"
 ---
 # <a name="video-capture-settings"></a>Captura de vídeo Configuración
 
@@ -29,7 +29,7 @@ La [**estructura CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) con
 -   Especifique el control de teclado o mouse para finalizar el streaming.
 -   Especifique el tipo de promedio de vídeo aplicado durante la captura.
 
-Puede recuperar la configuración de captura actual dentro de la estructura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) enviando el mensaje [**GET SEQUENCE \_ \_ \_ \_ SETUP**](wm-cap-get-sequence-setup.md) de WM CAP (o la macro [**capCaptureGetSetup)**](/windows/desktop/api/Vfw/nf-vfw-capcapturegetsetup) a una ventana de captura. Puede establecer una o varias configuraciones de captura actuales actualizando los miembros adecuados de la estructura **CAPTUREPARMS** y, a continuación, enviando el mensaje [**WM CAP SET SEQUENCE \_ \_ \_ \_ SETUP**](wm-cap-set-sequence-setup.md) (o la macro [**capCaptureSetSetup)**](/windows/desktop/api/Vfw/nf-vfw-capcapturesetsetup) y **CAPTUREPARMS** a una ventana de captura.
+Puede recuperar la configuración de captura actual dentro de la estructura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) enviando el mensaje [**GET SEQUENCE \_ \_ \_ \_ SETUP**](wm-cap-get-sequence-setup.md) de WM CAP (o la macro [**capCaptureGetSetup)**](/windows/desktop/api/Vfw/nf-vfw-capcapturegetsetup) a una ventana de captura. Puede establecer una o varias opciones de captura actuales actualizando los miembros adecuados de la estructura **CAPTUREPARMS** y enviando el mensaje [**WM CAP SET SEQUENCE \_ \_ \_ \_ SETUP**](wm-cap-set-sequence-setup.md) (o la macro [**capCaptureSetSetup)**](/windows/desktop/api/Vfw/nf-vfw-capcapturesetsetup) y **CAPTUREPARMS** a una ventana de captura.
 
  
 

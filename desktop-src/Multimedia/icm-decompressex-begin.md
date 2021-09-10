@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DECOMPRESSEX_BEGIN (VFW. h)
-description: El \_ mensaje de inicio DECOMPRESSEX de ICM notifica a \_ un controlador de compresión de vídeo que debe prepararse para descomprimir los datos.
+title: ICM_DECOMPRESSEX_BEGIN mensaje (Vfw.h)
+description: El ICM DECOMPRESSEX BEGIN notifica a un controlador de compresión de vídeo \_ que se prepare para \_ descomprimir los datos.
 ms.assetid: 35298274-91b5-4df0-b4b0-4a71d6a49990
 keywords:
-- Mensaje de ICM_DECOMPRESSEX_BEGIN de Windows multimedia
+- ICM_DECOMPRESSEX_BEGIN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 77ea082c91d48a9964348b762ce13631cd80af30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803367"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370513"
 ---
-# <a name="icm_decompressex_begin-message"></a>Mensaje de inicio de \_ DECOMPRESSEX ICM \_
+# <a name="icm_decompressex_begin-message"></a>\_ICM Mensaje BEGIN de \_ DECOMPRESSEX
 
-El mensaje de **\_ \_ Inicio DECOMPRESSEX de ICM** notifica a un controlador de compresión de vídeo que debe prepararse para descomprimir los datos.
+El **ICM \_ DECOMPRESSEX \_ BEGIN** notifica a un controlador de compresión de vídeo que se prepare para descomprimir los datos.
 
 
 ```C++
@@ -41,11 +41,11 @@ lParam = sizeof(ICDECOMPRESSEX);
 <span id="icdex"></span><span id="ICDEX"></span>*icdex*
 </dt> <dd>
 
-Puntero a una estructura [**ICDECOMPRESSEX**](/windows/desktop/api/Vfw/ns-vfw-icdecompressex) que contiene los formatos de entrada y salida.
+Puntero a una [**estructura ICDECOMPRESSEX**](/windows/desktop/api/Vfw/ns-vfw-icdecompressex) que contiene los formatos de entrada y salida.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
 Tamaño, en bytes, de [**ICDECOMPRESSEX**](/windows/desktop/api/Vfw/ns-vfw-icdecompressex).
@@ -58,11 +58,11 @@ Devuelve ICERR \_ OK si se admite la descompresión especificada o ICERR \_ BADF
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando el controlador recibe este mensaje, debe asignar búferes y realizar operaciones que consumen mucho tiempo para que pueda procesar los [**mensajes \_ DECOMPRESSEX ICM**](icm-decompressex.md) de forma eficaz.
+Cuando el controlador recibe este mensaje, debe asignar búferes y realizar las operaciones que requieren mucho tiempo para que pueda procesar ICM [**\_ mensajes DECOMPRESSEX**](icm-decompressex.md) de forma eficaz.
 
-Si desea que el controlador Descomprima los datos directamente en la pantalla, envíe el mensaje de [**\_ \_ Inicio de Draw de ICM**](icm-draw-begin.md) .
+Si desea que el controlador descomprima los datos directamente en la pantalla, envíe el [**ICM \_ DRAW \_ BEGIN.**](icm-draw-begin.md)
 
-Los mensajes de [**\_ \_ finalización**](icm-decompressex-end.md) de **DECOMPRESSEX de ICM \_ \_** y de fin de DECOMPRESSEX no se anidan. Si el controlador recibe **el \_ \_ Inicio de DECOMPRESSEX ICM** antes de que se detenga la descompresión con **ICM \_ DECOMPRESSEX \_ End**, debe reiniciar la descompresión con nuevos parámetros.
+Los **ICM \_ DECOMPRESSEX \_ BEGIN** y ICM los mensajes [**END de \_ DECOMPRESSEX \_**](icm-decompressex-end.md) no se anidan. Si el controlador recibe ICM **\_ DECOMPRESSEX \_ BEGIN** antes de detener la descompresión con ICM **\_ DECOMPRESSEX \_ END,** debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Los mensajes de [**\_ \_ finalización**](icm-decompressex-end.md) de **DECOMPRE
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

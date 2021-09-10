@@ -4,12 +4,12 @@ ms.assetid: fa85ff87-3d72-4f71-856a-f43df7d19aa8
 title: Espacio de Storage registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d00414edbd34452fd6943a4d73a2ebe85af5d38884ddd0ca77f1d8fb41ae6e0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90b776498528d6c7deaacd92f9e010758b5d57c0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118885083"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371899"
 ---
 # <a name="registry-storage-space"></a>Espacio de Storage registro
 
@@ -23,7 +23,7 @@ Las vistas de los archivos del Registro se asignan en la memoria del grupo pagin
 
 **Windows Server 2008 para 32 bits, Windows Vista con SP1 para 32 bits, Windows Vista, Windows Server 2003, Windows XP:** Las vistas de los archivos del Registro se asignan en el espacio de direcciones de caché del equipo. Por lo tanto, independientemente del tamaño de los datos del Registro, no se cobran más de 4 megabytes (MB).
 
-El tamaño máximo de un subárbol del Registro es de 2 GB, excepto el subárbol del sistema.
+El tamaño máximo de un subárbol del registro es de 2 GB, excepto el subárbol del sistema.
 
 **Windows Server 2003 con SP1, Windows Server 2003 y Windows XP:** No hay límites explícitos en la cantidad total de espacio que pueden consumir los subárboles en la memoria del grupo paginado y en el espacio en disco, aunque las cuotas del sistema pueden afectar al tamaño máximo real. El tamaño máximo de un subárbol del Registro estaba limitado a 2 GB a partir de Windows Server 2003 con Service Pack 2 (SP2).
 
@@ -32,7 +32,7 @@ El tamaño máximo del subárbol del sistema está limitado por la memoria físi
 | Sistema                      | Tamaño máximo del subárbol del sistema                                                                                                                                                                                                            |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sistemas basados en x86           | 50 por ciento de memoria física, hasta 400 MB. **Windows Server 2003 con SP2, Windows Server 2003 con SP1, Windows Server 2003 y Windows XP:** 25 por ciento de memoria física, hasta 200 MB.<br/>                                    |
-| Sistemas basados en x64           | 50 por ciento de memoria física, hasta 1,5 GB. **Windows Server 2003 con SP2:** 25 por ciento de memoria del sistema, hasta 200 MB.<br/> **Windows Server 2003 con SP1, Windows Server 2003 y Windows XP de 64** bits Edition: 32 MB.<br/> |
+| Sistemas basados en x64           | 50 por ciento de memoria física, hasta 1,5 GB. **Windows Server 2003 con SP2:** 25 por ciento de memoria del sistema, hasta 200 MB.<br/> **Windows Server 2003 con SP1, Windows Server 2003 y Windows XP edición de 64 bits:** 32 MB.<br/> |
 | Sistemas basados en Intel Itanium | 50 por ciento de memoria física, hasta 1 GB. **Windows Server 2008, Windows Vista, Windows Server 2003 con SP2, Windows Server 2003 con SP1, Windows Server 2003 y Windows XP edición de 64 bits:** 32 MB.<br/>                         |
 
 

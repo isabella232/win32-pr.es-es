@@ -4,12 +4,12 @@ description: Si eligió la serialización de proxy/código auxiliar para la apli
 ms.assetid: 939e6eed-2a2d-4d90-8fbb-c07142e7ba70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 634cb7a17551a4b7925d0be3065c71037cc1d7ae8bf28c10fcdaee74771c302e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37d4cafbe2be56d9e9a02a451e3daf905496c424
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048853"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369440"
 ---
 # <a name="building-and-registering-a-proxy-dll"></a>Compilar y registrar un archivo DLL de proxy
 
@@ -29,7 +29,7 @@ EXPORTS        DllGetClassObject      @1 PRIVATE
 
 Como alternativa, puede especificar estas funciones exportadas en la línea de comandos LINK del archivo Make.
 
-Las funciones exportadas se declaran en Rpcproxy.h, que incluye Dlldata.c, y las implementaciones predeterminadas forman parte de la biblioteca en tiempo de ejecución de RPC. COM usa estas funciones para crear un generador de clases, descargar archivos DLL (después de asegurarse de que no existen objetos o bloqueos), recuperar información sobre el archivo DLL de proxy y registrar automáticamente y anular el registro del archivo DLL de proxy. Para aprovechar estas funciones predefinidas, debe invocar la opción Cpreprocessor /D (o -D) al compilar los archivos Dlldata.c y Example p.c, como se muestra en el siguiente \_ archivo Make:
+Las funciones exportadas se declaran en Rpcproxy.h, que incluye Dlldata.c, y las implementaciones predeterminadas forman parte de la biblioteca en tiempo de ejecución de RPC. COM usa estas funciones para crear un generador de clases, descargar archivos DLL (después de asegurarse de que no existen objetos o bloqueos), recuperar información sobre el archivo DLL de proxy y registrar automáticamente y anular el registro del archivo DLL del proxy. Para aprovechar estas funciones predefinidas, debe invocar la opción Cpreprocessor /D (o -D) al compilar los archivos Dlldata.c y Example p.c, como se muestra en el siguiente \_ archivo Make:
 
 ``` syntax
 example.h example.tlb example_p.c example_i.c dlldata.c : example.idl

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6793aa6d0e0f3001a5c8c76b34ed6bbd1011ba17441fd709ee016d9d161a97b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59db02d69302127937a7203729de9cc8b98a58f4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119525385"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370711"
 ---
 # <a name="mciwndm_notifysize-message"></a>Mensaje NOTIFYSIZE de MCIWNDM \_
 
@@ -45,7 +45,7 @@ Identificador de la ventana MCIWnd.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede habilitar la notificación de cambios en el tamaño de una ventana de MCIWnd especificando el estilo de ventana MCIWNDF \_ NOTIFYSIZE.
 

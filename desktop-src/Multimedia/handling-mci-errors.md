@@ -6,16 +6,16 @@ keywords:
 - Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e2f3a9cc3e711db0d26f28c9ac7e3fd0a8c94eec96117a732f8024372bf9de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab8412c74153d5ddfb03a3aff895f9f2e0e73798
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118141027"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371714"
 ---
 # <a name="handling-mci-errors"></a>Control de errores de MCI
 
-Siempre debe comprobar el valor devuelto de la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Si indica un error, puede usar [**mciGetErrorString**](/previous-versions//dd757158(v=vs.85)) para obtener una descripción textual del error.
+Siempre debe comprobar el valor devuelto de la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Si indica un error, puede usar [**mciGetErrorString para**](/previous-versions//dd757158(v=vs.85)) obtener una descripción textual del error.
 
 En el ejemplo siguiente se pasa el código de error de MCI especificado por *dwError* a **mciGetErrorString** y, a continuación, se muestra la descripción del error textual resultante mediante la [función MessageBox.](/windows/win32/api/winuser/nf-winuser-messagebox)
 

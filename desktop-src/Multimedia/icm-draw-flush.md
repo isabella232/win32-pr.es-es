@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW_FLUSH mensaje (Vfw.h)
-description: El ICM DRAW FLUSH notifica a un controlador de representación que represente el contenido de los búferes de imagen que están \_ \_ esperando ser dibujados. Puede enviar este mensaje explícitamente o mediante la macro ICDrawFlush.
+description: El ICM DRAW FLUSH notifica a un controlador de representación que represente el contenido de los búferes de imagen que están a la espera \_ \_ de ser dibujados. Puede enviar este mensaje explícitamente o mediante la macro ICDrawFlush.
 ms.assetid: c29ed751-c773-4476-98fe-6edef3ff0cf4
 keywords:
 - ICM_DRAW_FLUSH mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7f8fe55b0fc5fd514573ff7d3314dbc82bc2217b08e0bf841b68b53b23fde12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38ec42c51222313f7d3599c3b4f264dbd21a9434
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117987405"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370543"
 ---
 # <a name="icm_draw_flush-message"></a>\_ICM Draw \_ FLUSH message
 
@@ -38,7 +38,7 @@ lParam = 0;
 
 Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje solo lo usa el hardware que realiza su propia descompresión asincrónica, control de tiempo y dibujo.
 
@@ -46,7 +46,7 @@ Este mensaje solo lo usa el hardware que realiza su propia descompresión asincr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |

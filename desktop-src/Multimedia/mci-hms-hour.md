@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97b8000e642d18f8499be5f8622a1cf7540fefbd041b7d34f23e1fd5e231815a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a7ecab8b5de7712a9c1a5ebd5c0a4401b264d7ee
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039275"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370190"
 ---
-# <a name="mci_hms_hour-macro"></a>Macro MCI \_ HMS \_ HOUR
+# <a name="mci_hms_hour-macro"></a>Macro \_ MCI HMS \_ HOUR
 
 La **macro \_ MCI HMS \_ HOUR** recupera el componente hours de un parámetro que contiene información empaquetada de horas/minutos/segundos (HMS).
 
@@ -51,9 +51,9 @@ Hora en formato HMS.
 
 Devuelve el componente hours de la información de HMS especificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El tiempo en formato HMS se expresa como un valor **DWORD** con el byte menos significativo que contiene horas, el siguiente byte menos significativo que contiene minutos y el siguiente byte menos significativo que contiene segundos. El byte más significativo no se usa.
+La hora en formato HMS se expresa como un valor **DWORD** con el byte menos significativo que contiene horas, el siguiente byte menos significativo que contiene minutos y el siguiente byte menos significativo que contiene segundos. El byte más significativo no se usa.
 
 La **macro \_ MCI HMS \_ HOUR** se define de la siguiente manera:
 
@@ -80,7 +80,7 @@ La **macro \_ MCI HMS \_ HOUR** se define de la siguiente manera:
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [MCI Macros](mci-macros.md)

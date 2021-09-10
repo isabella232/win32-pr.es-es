@@ -1,6 +1,6 @@
 ---
 title: MCI_RECORD_PARMS estructura (Mciapi.h)
-description: La estructura MCI \_ RECORD \_ PARMS contiene información de posicionamiento para el comando MCI \_ RECORD.
+description: La estructura MCI \_ RECORD \_ PARMS contiene información de posición para el comando MCI \_ RECORD.
 ms.assetid: 5d502cf8-3963-49d6-b515-d26e19195322
 keywords:
 - MCI_RECORD_PARMS estructura Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c531b5b186a6119a22cafc4e252424ace2e388b2545461b440cd7957694494b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b633ce192d0f4b2467cb744d614ea38056eafb60
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039085"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369974"
 ---
-# <a name="mci_record_parms-structure"></a>Estructura MCI \_ RECORD \_ PARMS
+# <a name="mci_record_parms-structure"></a>Estructura \_ parms de registro de MCI \_
 
-La **estructura MCI \_ RECORD \_ PARMS** contiene información de posicionamiento para el [**comando MCI \_ RECORD.**](mci-record.md)
+La **estructura MCI \_ RECORD \_ PARMS** contiene información de posición para el [**comando MCI \_ RECORD.**](mci-record.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Posición en la que se reproducirá.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -83,7 +83,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

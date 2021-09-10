@@ -1,6 +1,6 @@
 ---
 title: MM_MOM_OPEN mensaje (Mmsystem.h)
-description: El mensaje MM MOM OPEN se envía a una ventana cuando se abre un \_ dispositivo de salida DE \_ MIDI.
+description: El mensaje \_ MM MOM OPEN se envía a una ventana cuando se abre un dispositivo de salida DE \_ MIDI.
 ms.assetid: 1374a07c-02fa-4b43-82df-cbd96302aec5
 keywords:
 - MM_MOM_OPEN mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 842eaeeb6e18e6623f8c88d8f5c65527db36ee8370c48a4cb26edca55f6d5f5b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2f676dccf532290ab2153b888c20fad7b19d98d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065495"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371035"
 ---
 # <a name="mm_mom_open-message"></a>Mensaje \_ MM MOM \_ OPEN
 
@@ -41,14 +41,14 @@ lParam = reserved
 <span id="hOutput"></span><span id="houtput"></span><span id="HOUTPUT"></span>*hOutput*
 </dt> <dd>
 
-Identificador para el dispositivo de salida de MIDI.
+Identificador del dispositivo de salida de MIDI.
 
 </dd> <dt>
 
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Reservado; no se usan.
+Reservado; no use.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Este mensaje no devuelve un valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

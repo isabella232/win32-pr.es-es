@@ -6,12 +6,12 @@ keywords:
 - Valor del Registro COM de LegacyImpersonationLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd032e83290c18fc3a2588e382ade7730fa2ea39a7847e375b1e887cdbbb90f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74fa00494eb71e49c35bfa37b434afc5c999e73e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048083"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369639"
 ---
 # <a name="legacyimpersonationlevel"></a>LegacyImpersonationLevel
 
@@ -29,7 +29,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
    LegacyImpersonationLevel = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor REG \_ WORD** equivalente a las constantes RPC \_ C IMP \_ \_ LEVEL.
 

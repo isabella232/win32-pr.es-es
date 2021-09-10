@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f326b13d86f073074ef2c1119d449e297e65e7d3accb22d9858e5c1579493c01
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b39d3659d4577517726260f948563cd31ecc07bc
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037565"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370129"
 ---
 # <a name="record-command"></a>comando record
 
@@ -57,7 +57,7 @@ Marca para registrar datos. En la tabla siguiente se enumeran los tipos de dispo
 |--------------|--------------------------------------------------------|-----------------------------------------------------|
 | digitalvideo | at *rectangle* audio stream *stream from* *position* hold | inserción de sobrescritura *para colocar la secuencia* de streaming de *vídeo* |
 | sequencer    | desde *inserción de* posición                                  | sobrescribir a *la posición*                             |
-| Vcr          | at *time from* *position* initialize                     | insertar sobrescritura en *la posición*                      |
+| Vcr          | en el *momento de* la *inicialización de la* posición                     | insertar sobrescritura en *la posición*                      |
 | waveaudio    | desde *inserción de* posición                                  | sobrescribir a *la posición*                             |
 
 
@@ -98,7 +98,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La grabación se detiene cuando se [emite](stop.md) [un](pause.md) comando stop o pause. Para el controlador MCIWAVE, todos los datos registrados después de abrir un archivo se descartan si el archivo se cierra sin guardarlo.
 
@@ -127,7 +127,7 @@ record mysound
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

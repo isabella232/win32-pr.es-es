@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e4a728e3ca89e2b4ddc21809830d5af3be9a2b04e004f99d5a792a9be5da01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87f01fd96e2b25e191608c7c6abf70bfd842158d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117801897"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370255"
 ---
 # <a name="resume-command"></a>comando resume
 
-El comando resume continúa reproduciendo o grabando en un dispositivo que se ha pausado mediante el [comando pause.](pause.md) Los dispositivos de vídeo digital, VCR y audio de onda reconocen este comando. Aunque los dispositivos cd audio, secuenciador MIDI y videodisc también reconocen este comando, los controladores de dispositivo MCICDA, MCISEQ y MCIPIONR no lo admiten.
+El comando resume continúa reproduciendo o grabando en un dispositivo que se ha pausado mediante el [comando pause.](pause.md) Los dispositivos de vídeo digital, VCR y audio de forma de onda reconocen este comando. Aunque los dispositivos cd audio, secuenciador MIDI y videodisc también reconocen este comando, los controladores de dispositivo MCICDA, MCISEQ y MCIPIONR no lo admiten.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -54,11 +54,11 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando continúa reproduciendo o grabando el dispositivo "new sound".
+El comando siguiente continúa reproduciendo o grabando el dispositivo "newsound".
 
 ``` syntax
 resume newsound
@@ -79,7 +79,7 @@ resume newsound
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

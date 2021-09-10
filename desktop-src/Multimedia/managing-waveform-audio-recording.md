@@ -7,21 +7,21 @@ keywords:
 - interfaz de audio de forma de onda, grabación
 - grabar audio de forma de onda, acerca de
 - Estructura WAVEHDR
-- waveInAddBuffer (función)
+- función waveInAddBuffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d798cb1b6a8a22f4c695bced89dd669346ad2bb6452179df1d3278af8681aa49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 539f722a705d489064d38eccdf6d89e80ccb1518
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118138938"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371294"
 ---
 # <a name="managing-waveform-audio-recording"></a>Administración de Waveform-Audio grabación
 
-Después de abrir un dispositivo de entrada de audio de forma de onda, puede empezar a grabar datos de audio de forma de onda. Los datos de audio de onda se graban en búferes proporcionados por la aplicación especificados por una [**estructura WAVEHDR.**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) Estos bloques de datos deben prepararse antes de que se utilicen; Para obtener más información, vea [Bloques de datos de audio.](audio-data-blocks.md)
+Después de abrir un dispositivo de entrada de audio de forma de onda, puede empezar a grabar datos de audio de forma de onda. Los datos de audio de forma de onda se graban en búferes proporcionados por la aplicación especificados por una [**estructura WAVEHDR.**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) Estos bloques de datos deben prepararse antes de que se utilicen; Para obtener más información, vea [Bloques de datos de audio.](audio-data-blocks.md)
 
-Windows proporciona las siguientes funciones para administrar la grabación de audio de forma de onda.
+Windows proporciona las siguientes funciones para administrar la grabación de audio con forma de onda.
 
 
 
@@ -40,7 +40,7 @@ Use la [**función waveInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-wavein
 
 Antes de empezar a grabar mediante [**waveInStart,**](/windows/win32/api/mmeapi/nf-mmeapi-waveinstart)debe enviar al menos un búfer al controlador o se podrían perder los datos entrantes.
 
-Antes de cerrar el dispositivo mediante [**waveInClose,**](/windows/win32/api/mmeapi/nf-mmeapi-waveinclose)llame a [**waveInReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveinreset) para marcar los bloques de datos pendientes como se está haciendo.
+Antes de cerrar el dispositivo mediante [**waveInClose,**](/windows/win32/api/mmeapi/nf-mmeapi-waveinclose)llame [**a waveInReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveinreset) para marcar los bloques de datos pendientes como se está haciendo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

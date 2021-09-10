@@ -6,12 +6,12 @@ keywords:
 - Valor del Registro AuthenticationLevel COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7968382ea97243c1116dd6785be34a0d1c3e6eafc6cb9ee13f16b939029a6611
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 697b04bcf4992c8a6943bcb515fa0a4eae616fec
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120535"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369628"
 ---
 # <a name="authenticationlevel"></a>AuthenticationLevel
 
@@ -25,7 +25,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
       AuthenticationLevel = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ REG DWORD** equivalente a las constantes RPC \_ C \_ AUTHN \_ LEVEL.
 
@@ -37,7 +37,7 @@ Se trata de **un valor \_ REG DWORD** equivalente a las constantes RPC \_ C \_ A
 | 2     | CONEXIÓN \_ DE NIVEL DE \_ AUTENTICACIÓN \_ DE \_ RPC C        |
 | 3     | LLAMADA \_ DE NIVEL DE \_ AUTENTICACIÓN \_ DE \_ RPC C           |
 | 4     | RPC \_ C \_ AUTHN \_ LEVEL \_ PKT            |
-| 5     | INTEGRIDAD PKT DE NIVEL DE \_ \_ \_ \_ AUTENTICACIÓN RPC \_ C |
+| 5     | RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ INTEGRITY |
 | 6     | RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY   |
 
 

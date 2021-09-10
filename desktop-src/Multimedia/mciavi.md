@@ -8,12 +8,12 @@ keywords:
 - Controlador MCIAVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d4a7a6bc8da314cc5cb891846e46289396fefb6be60d92ddd38f17ab1aff0ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be2e69cf2b0fd9ee71650c56b0d7d9efb50a46e4
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783435"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371630"
 ---
 # <a name="mciavi"></a>MCIAVI
 

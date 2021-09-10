@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f25e79903a694b6537e88d1c58994d1f39ccf958ea95f40f571a267239a055e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a616b31500a2c814edb3dd443586131ed0ffae7d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783838"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370171"
 ---
 # <a name="mci_vcr_step_parms-structure"></a>Estructura MCI \_ VCR \_ STEP \_ PARMS
 
@@ -44,18 +44,18 @@ typedef struct tagMCI_VCR_STEP_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **dwFrames**
 </dt> <dd>
 
-Número de fotogramas para saltar (la longitud de un solo paso) a medida que el comando [**MCI \_ STEP**](mci-step.md) avanza o retrocede a través del contenido.
+Número de fotogramas para saltar (la longitud de un solo paso) a medida que el comando [**MCI \_ STEP**](mci-step.md) avanza o retrocede por el contenido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -63,7 +63,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -75,7 +75,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**Mci**](mci.md)
+[**MCI**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

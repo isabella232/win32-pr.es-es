@@ -11,12 +11,12 @@ keywords:
 - timers,cancelling events
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab4e9a92a02dca8ffd4723685fc96cdb0f82fc34a0fa2e3481a71a51997c316
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1380b2868596e0177e806f5df5217bb839abe61c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119691804"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370975"
 ---
 # <a name="canceling-a-timer-event"></a>Cancelar un evento de temporizador
 

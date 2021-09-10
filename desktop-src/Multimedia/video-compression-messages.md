@@ -7,27 +7,27 @@ keywords:
 - VFW (vídeo para Windows),mensajes de VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd02ff74d104f67d67ab2949d28763a603ada73a3f23fba5435a2c83aeaad4d9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b86c94d120031e273789fb8f27e37eed6804b61
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119804285"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370417"
 ---
 # <a name="video-compression-messages"></a>Mensajes de compresión de vídeo
 
 Los mensajes siguientes se usan con compresión de vídeo.
 
--   [**\_ICM acerca de**](icm-about.md)
--   [**\_ICM Comprimir**](icm-compress.md)
+-   [**\_ICM ACERCA DE**](icm-about.md)
+-   [**\_ICM COMPRIMIR**](icm-compress.md)
 -   [**\_ICM COMPRESS \_ BEGIN**](icm-compress-begin.md)
 -   [**\_ICM COMPRESS \_ END**](icm-compress-end.md)
 -   [**\_ICM COMPRIMIR \_ INFORMACIÓN DE \_ FOTOGRAMAS**](icm-compress-frames-info.md)
 -   [**\_ICM COMPRESS \_ GET \_ FORMAT**](icm-compress-get-format.md)
 -   [**\_ICM COMPRIMIR \_ GET \_ SIZE**](icm-compress-get-size.md)
 -   [**\_ICM COMPRESS \_ QUERY**](icm-compress-query.md)
--   [**\_ICM Configurar**](icm-configure.md)
--   [**\_ICM Descomprimir**](icm-decompress.md)
+-   [**\_ICM CONFIGURAR**](icm-configure.md)
+-   [**\_ICM DESCOMPRIMIR**](icm-decompress.md)
 -   [**\_ICM DECOMPRESS \_ BEGIN**](icm-decompress-begin.md)
 -   [**\_ICM DESCOMPRESIÓN \_ FINAL**](icm-decompress-end.md)
 -   [**\_ICM OBTENER FORMATO DE DESCOMPRESIÓN \_ \_**](icm-decompress-get-format.md)
@@ -38,7 +38,7 @@ Los mensajes siguientes se usan con compresión de vídeo.
 -   [**\_ICM DECOMPRESSEX \_ BEGIN**](icm-decompressex-begin.md)
 -   [**\_ICM DECOMPRESSEX \_ END**](icm-decompressex-end.md)
 -   [**\_ICM CONSULTA \_ DECOMPRESSEX**](icm-decompressex-query.md)
--   [**\_ICM Dibujar**](icm-draw.md)
+-   [**\_ICM DIBUJAR**](icm-draw.md)
 -   [**\_ICM DRAW \_ BEGIN**](icm-draw-begin.md)
 -   [**\_ICM DRAW \_ CHANGEPALETTE**](icm-draw-changepalette.md)
 -   [**\_ICM DRAW \_ END**](icm-draw-end.md)
@@ -55,7 +55,7 @@ Los mensajes siguientes se usan con compresión de vídeo.
 -   [**\_ICM DRAW \_ STOP \_ PLAY**](icm-draw-stop-play.md)
 -   [**\_ICM DRAW \_ SUGGESTFORMAT**](icm-draw-suggestformat.md)
 -   [**\_ICM VENTANA \_ DIBUJAR**](icm-draw-window.md)
--   [**\_ICM Obtener**](icm-get.md)
+-   [**\_ICM OBTENER**](icm-get.md)
 -   [**\_ICM GETBUFFERSWANTED**](icm-getbufferswanted.md)
 -   [**\_ICM GETDEFAULTKEYFRAMERATE**](icm-getdefaultkeyframerate.md)
 -   [**\_ICM GETDEFAULTQUALITY**](icm-getdefaultquality.md)
@@ -70,7 +70,7 @@ Los mensajes siguientes se usan con compresión de vídeo.
 
 <dl> <dt>
 
-[Referencia del administrador de compresión de vídeo](video-compression-manager-reference.md)
+[Referencia del Administrador de compresión de vídeo](video-compression-manager-reference.md)
 </dt> </dl>
 
  

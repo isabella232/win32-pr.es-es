@@ -10,18 +10,18 @@ keywords:
 - MPC nivel 2, configuración mínima
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65a39f4c72bb79669187645e82fe11effd420ad70f86cc32abb2e6065dc47ffd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a543514aa89f6f9a6e1756de800ed8e387114538
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139701"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372319"
 ---
 # <a name="level-2-system-resources"></a>Recursos del sistema de nivel 2
 
 La configuración mínima para que un equipo cumpla la especificación de nivel 2 incluye los siguientes elementos:
 
--   Un microprocesador de 25 Mhz a 486SX con 4 MB de RAM
+-   Un microprocesador 486SX de 25 Mhz con 4 MB de RAM
 -   Una unidad de disquete de alta densidad de 3,5 pulgadas
 -   Una unidad de disco duro con al menos 160 MB de espacio en disco
 -   Un teclado de 101 teclas con un conector ESTÁNDAR DE LAN o uno que proporciona una funcionalidad idéntica mediante combinaciones de teclas
@@ -31,7 +31,7 @@ La configuración mínima para que un equipo cumpla la especificación de nivel 
 -   Un monitor de color con una resolución de pantalla de 640 por 480 píxeles con 65 536 colores
 -   Software del sistema que ofrece compatibilidad binaria con Windows 3.0 o Windows 3.1
 
-Además, el objetivo de rendimiento recomendado para el adaptador de vídeo (VGA+) es 1,2 millones de píxeles por segundo con un 40 % o menos del ancho de banda de CPU. Los mapas de bits independientes del dispositivo (DIB) que se usan para medir este objetivo de rendimiento tienen profundidades de color de 1, 4 y 8 bits, y pueden usar codificación de longitud de ejecución o no codificarse. Un segundo método para medir el rendimiento del vídeo es entregar imágenes de vídeo digital de 256 colores, 320 por 240 píxeles a 15 fotogramas por segundo.
+Además, el objetivo de rendimiento recomendado para el adaptador de vídeo (VGA+) es 1,2 millones de píxeles por segundo con un 40 % o menos del ancho de banda de cpu. Los mapas de bits independientes del dispositivo (DIB) que se usan para medir este objetivo de rendimiento tienen profundidades de color de 1, 4 y 8 bits, y pueden usar codificación de longitud de ejecución o no codificarse. Un segundo método para medir el rendimiento del vídeo es entregar imágenes de vídeo digital de 256 colores, 320 por 240 píxeles a 15 fotogramas por segundo.
 
  
 

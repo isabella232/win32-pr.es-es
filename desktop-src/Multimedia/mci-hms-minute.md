@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c763fe7ce16f6489fd4c5e1bc4a1059511f8ee32717ddec96a7f1e04f6f47404
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49c91d2dcb13ea6b206df2a0dbc0d6a2e7096e59
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117986453"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370196"
 ---
 # <a name="mci_hms_minute-macro"></a>Macro MCI \_ HMS \_ MINUTE
 
@@ -51,7 +51,7 @@ Hora en formato HMS.
 
 Devuelve el componente minutes de la información de HMS especificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tiempo en formato HMS se expresa como un valor **DWORD** con el byte menos significativo que contiene horas, el siguiente byte menos significativo que contiene minutos y el siguiente byte menos significativo que contiene segundos. El byte más significativo no se usa.
 
@@ -68,7 +68,7 @@ La **macro \_ MCI HMS \_ MINUTE** se define de la siguiente manera:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -80,7 +80,7 @@ La **macro \_ MCI HMS \_ MINUTE** se define de la siguiente manera:
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [MCI Macros](mci-macros.md)

@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW_STOP_PLAY mensaje (Vfw.h)
-description: El ICM \_ DRAW \_ STOP PLAY notifica a un controlador de \_ representación cuando se completa una operación de reproducción. Puede enviar este mensaje explícitamente o mediante la macro ICDrawStopPlay.
+description: El ICM \_ DRAW \_ STOP PLAY notifica a un controlador de representación cuando se completa una operación de \_ reproducción. Puede enviar este mensaje explícitamente o mediante la macro ICDrawStopPlay.
 ms.assetid: cfe2ee98-80d0-4554-bcbd-9873769da674
 keywords:
 - ICM_DRAW_STOP_PLAY mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb5ed2d437a3abc0d24972ee739905a72d2333509e7213973bab9459c7c947a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea3964b623c93d452ab7bf9a32c6b9d9b1573fec
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784985"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370573"
 ---
-# <a name="icm_draw_stop_play-message"></a>\_ICM Draw STOP PLAY message (DRAW \_ STOP \_ PLAY)
+# <a name="icm_draw_stop_play-message"></a>\_ICM Mensaje DRAW \_ STOP \_ PLAY
 
-El **ICM DRAW STOP \_ \_ \_ PLAY** notifica a un controlador de representación cuando se completa una operación de reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawStopPlay.**](/windows/desktop/api/Vfw/nf-vfw-icdrawstopplay)
+El **ICM draw stop \_ \_ \_ play** notifica a un controlador de representación cuando se completa una operación de reproducción. Puede enviar este mensaje explícitamente o mediante la [**macro ICDrawStopPlay.**](/windows/desktop/api/Vfw/nf-vfw-icdrawstopplay)
 
 
 ```C++
@@ -38,9 +38,9 @@ lParam = 0;
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use este mensaje cuando se complete la operación de reproducción. Use el ICM [**\_ DRAW STOP \_ para**](icm-draw-stop.md) finalizar el tiempo.
+Use este mensaje cuando se complete la operación de reproducción. Use el ICM [**\_ DRAW \_ STOP**](icm-draw-stop.md) para finalizar el tiempo.
 
 ## <a name="requirements"></a>Requisitos
 

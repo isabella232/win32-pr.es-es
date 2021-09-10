@@ -6,12 +6,12 @@ keywords:
 - MCI_TRACK marca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 717513ad3bc81812751683936913f61cb9615d4d211c40c53ac7eb6c24e36b17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9fb71e57ee1b2d7e300f0567359ab5d435cb310e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117801819"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371750"
 ---
 # <a name="retrieving-compact-disc-track-specific-information"></a>Recuperar información de disco compacto Track-Specific disco
 

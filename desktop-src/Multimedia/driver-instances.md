@@ -8,12 +8,12 @@ keywords:
 - varias instancias de controlador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: deea546ffb7cd848993f8aac569d3624f87988b583ea47cab7bb16451cc6ed1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37148dcb12fbfa2984d4e55424102b5985165d9d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118941202"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372200"
 ---
 # <a name="driver-instances"></a>Instancias de controlador
 
@@ -29,7 +29,7 @@ Al procesar el mensaje DRV OPEN, el controlador asigna la memoria o los recursos
 
 Muchos controladores instalables procesan el segundo parámetro del mensaje DRV OPEN, lo que proporciona al sistema y a las aplicaciones los medios para enviar información adicional al controlador al \_ abrir una instancia. El parámetro puede ser un valor único o una dirección de una estructura que contiene un conjunto de valores. Al procesar DRV OPEN, el controlador comprueba el parámetro para determinar si es un valor y usa los valores especificados, si los hay, para completar la creación \_ de la instancia.
 
-El sistema envía un [**mensaje DRV \_ CLOSE**](drv-close.md) cada vez que se cierra una instancia. El identificador de instancia enviado con el mensaje identifica la instancia que se va a cerrar. Cuando se cierra la última instancia restante, el sistema envía los mensajes DRV \_ CLOSE, [**DRV \_ DISABLE**](drv-disable.md)y [**DRV \_ FREE**](drv-free.md) en ese orden. El mensaje DRV CLOSE indica al controlador que cierre la instancia y los mensajes DRV DISABLE y DRV FREE notifican al controlador que ahora está deshabilitado y se liberará inmediatamente de la \_ \_ \_ memoria.
+El sistema envía un [**mensaje DRV \_ CLOSE**](drv-close.md) cada vez que se cierra una instancia. El identificador de instancia enviado con el mensaje identifica la instancia que se va a cerrar. Cuando se cierra la última instancia restante, el sistema envía los mensajes DRV \_ CLOSE, [**DRV \_ DISABLE**](drv-disable.md)y [**DRV \_ FREE**](drv-free.md) en ese orden. El mensaje DRV CLOSE indica al controlador que cierre la instancia y los mensajes DRV DISABLE y DRV FREE notifican al controlador que ahora está deshabilitado y se liberará inmediatamente de \_ \_ la \_ memoria.
 
 Al procesar el mensaje DRV CLOSE, el controlador normalmente libera la memoria o los recursos \_ asignados para la instancia. Al procesar el mensaje DISABLE de DRV, el controlador coloca cualquier hardware en un estado inactivo, lo que puede incluir la eliminación \_ de controladores de interrupción. Al procesar el mensaje DRV FREE, el controlador libera la memoria o los recursos \_ que todavía están asignados.
 

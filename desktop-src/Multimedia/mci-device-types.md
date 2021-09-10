@@ -14,33 +14,33 @@ keywords:
 - Referencia de MCI, tipos de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 164ee826a02adade5bc6e28db4a7a5b6180c4c1634d551b1451a91009ec40e4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b618e396b146dce820ed011b351c49b0e47394e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119784565"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370016"
 ---
 # <a name="mci-device-types"></a>Tipos de dispositivos MCI
 
-Los valores siguientes identifican los dispositivos en las estructuras y mensajes de MCI:
+Los valores siguientes identifican los dispositivos en los mensajes y estructuras de MCI:
 
 
 
-| Valor                         | Significado                       |
+| Value                         | Significado                       |
 |-------------------------------|-------------------------------|
 | MCI \_ ALL \_ DEVICE \_ ID          | Cualquier dispositivo                    |
 | ANIMACIÓN \_ MCI DEVTYPE \_       | Dispositivo de reproducción de animación     |
-| AUDIO DE \_ CD MCI DEVTYPE \_ \_       | Dispositivo de audio de CD               |
+| MCI \_ DEVTYPE \_ CD \_ AUDIO       | Dispositivo de audio de CD               |
 | DAT \_ DE TIPO DEVTYPE de MCI \_             | Dispositivo de cinta de audio digital     |
 | VÍDEO DIGITAL \_ DE MCI DEVTYPE \_ \_  | Dispositivo de reproducción de vídeo digital |
 | MCI \_ DEVTYPE \_ OTHER           | Dispositivo no definido              |
-| SUPERPOSICIÓN \_ DE DEVTYPE DE MCI \_         | Dispositivo de superposición de vídeo          |
+| SUPERPOSICIÓN \_ MCI DEVTYPE \_         | Dispositivo de superposición de vídeo          |
 | ANALIZADOR \_ DE MCI DEVTYPE \_         | Dispositivo de escáner                |
-| SECUENCIADOR \_ DEVTYPE DE MCI \_       | Dispositivo secuenciador MIDI         |
-| VCR \_ DEVTYPE de MCI \_             | Grabadora de vídeo       |
-| VÍDEO \_ DEVTYPE DE \_ MCIDISC       | Reproductor de Videodisc              |
-| AUDIO DE \_ FORMA DE ONDA DE DEVTYPE \_ DE MCI \_ | Dispositivo de audio de forma de onda         |
+| MCI \_ DEVTYPE \_ SEQUENCER       | Dispositivo secuenciador DE LÍNEA         |
+| MCI \_ DEVTYPE \_ VCR             | Grabadora de vídeo       |
+| VÍDEO \_ DEVTYPE \_ DE MCIDISC       | Reproductor de Videodisc              |
+| AUDIO DE \_ FORMA DE ONDA DE DEVTYPE \_ \_ DE MCI | Dispositivo de audio de onda         |
 
 
 

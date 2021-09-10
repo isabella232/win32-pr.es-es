@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 645d7a660df8d22cb2adb70a775d5431eb31dc986b502bb4dbb36b1963ce06f8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5daefea2c550a1d0cf807ae03840c38ae8b2567c
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119429276"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370658"
 ---
 # <a name="mciwndm_getmode-message"></a>Mensaje GETMODE de MCIWNDM \_
 
@@ -56,7 +56,7 @@ Puntero al búfer definido por la aplicación que se usa para devolver el modo.
 
 Devuelve un entero correspondiente a la constante MCI que define el modo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la cadena terminada en NULL que describe el modo es mayor que el búfer, se trunca.
 
@@ -66,10 +66,10 @@ No todos los dispositivos pueden funcionar en todos los modo. Por ejemplo, el di
 
 | Modo de funcionamiento | Constante MCI          |
 |----------------|-----------------------|
-| no está listo      | EL MODO MCI \_ \_ NO ESTÁ \_ LISTO |
+| no está listo      | MODO MCI \_ \_ NO \_ LISTO |
 | abierto           | MODO MCI \_ \_ ABIERTO       |
 | en pausa         | PAUSA DEL MODO MCI \_ \_      |
-| reproducción        | REPRODUCCIÓN EN \_ MODO \_ MCI       |
+| reproducción        | REPRODUCCIÓN EN MODO MCI \_ \_       |
 | grabación      | REGISTRO DEL MODO MCI \_ \_     |
 | buscar        | MCI \_ MODE \_ SEEK       |
 | stopped        | MCI \_ MODE \_ STOP       |
@@ -82,7 +82,7 @@ No todos los dispositivos pueden funcionar en todos los modo. Por ejemplo, el di
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -90,7 +90,7 @@ No todos los dispositivos pueden funcionar en todos los modo. Por ejemplo, el di
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

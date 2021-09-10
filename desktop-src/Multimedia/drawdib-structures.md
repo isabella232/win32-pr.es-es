@@ -6,18 +6,18 @@ keywords:
 - Windows multimedia, estructuras DrawDib
 - estructuras multimedia, DrawDib
 - Vídeo para Windows (VFW), estructuras DrawDib
-- VFW (vídeo para Windows), estructuras DrawDib
+- VFW (vídeo para Windows),estructuras DrawDib
 - DrawDib,structures
 - DrawDib reference,structures
 - referencia de DrawDib,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08d020b40399a148a08243d6e547ee7ba35418a1d17e0b233bcaa5c3bd9bd545
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8e725b4a241780f3837d264a5ed2a7e9ee60406
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375192"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372182"
 ---
 # <a name="drawdib-structures"></a>Estructuras DrawDib
 

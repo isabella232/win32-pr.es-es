@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61004706c8dfacb05ad47c6ddf261ac813d58f5076dfdd4e134896b3f8c646e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7cf0104204dc0306615ead91be036459cdf3c11d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037945"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370724"
 ---
 # <a name="mciwndm_playto-message"></a>Mensaje PLAYTO de MCIWNDM \_
 
@@ -47,11 +47,11 @@ Ubicación final. Las unidades de la ubicación final dependen del formato de ho
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta macro se define mediante las macros [**MCIWndSeek**](/windows/desktop/api/Vfw/nf-vfw-mciwndseek) y [**MCIWndPlayTo,**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto) que a su vez usan el comando [ \_ MCI SEEK](mci-seek.md) y el mensaje **\_ PLAYTO de MCIWNDM.**
+Esta macro se define mediante las macros [**MCIWndSeek**](/windows/desktop/api/Vfw/nf-vfw-mciwndseek) y [**MCIWndPlayTo,**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto) que a su vez usan el comando [MCI \_ SEEK](mci-seek.md) y el mensaje **MCIWNDM \_ PLAYTO.**
 
 También puede especificar una ubicación inicial y final para la reproducción mediante la macro [**MCIWndPlayFromTo.**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto)
 

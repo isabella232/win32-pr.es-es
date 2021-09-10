@@ -1,73 +1,73 @@
 ---
-title: Comandos MCI
-description: Comandos MCI
+title: Comandos de MCI
+description: Comandos de MCI
 ms.assetid: af1633c6-f0f5-462f-b0d3-4f071ab0c15a
 keywords:
-- Comandos MCI, referencia
+- Comandos de MCI, referencia
 - Referencia de MCI, comandos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1d6e082f7aecabb9b1f1dd5b0a6cdaf633f1a775
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903331"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369908"
 ---
-# <a name="mci-commands"></a>Comandos MCI
+# <a name="mci-commands"></a>Comandos de MCI
 
 Los siguientes comandos se usan con MCI.
 
--   [**interrupción de MCI \_**](mci-break.md)
--   [**captura de MCI \_**](mci-capture.md)
--   [**\_cerrar MCI**](mci-close.md)
--   [**configuración de MCI \_**](mci-configure.md)
--   [**copia de MCI \_**](mci-copy.md)
--   [**\_pista MCI**](mci-cue.md)
--   [**corte de MCI \_**](mci-cut.md)
--   [**eliminación de MCI \_**](mci-delete.md)
--   [**ESCAPE de MCI \_**](mci-escape.md)
--   [**inmovilización de MCI \_**](mci-freeze.md)
+-   [**MCI \_ BREAK**](mci-break.md)
+-   [**MCI \_ CAPTURE**](mci-capture.md)
+-   [**MCI \_ CLOSE**](mci-close.md)
+-   [**MCI \_ CONFIGURE**](mci-configure.md)
+-   [**COPIA \_ DE MCI**](mci-copy.md)
+-   [**MCI \_ CUE**](mci-cue.md)
+-   [**MCI \_ CUT**](mci-cut.md)
+-   [**MCI \_ DELETE**](mci-delete.md)
+-   [**MCI \_ ESCAPE**](mci-escape.md)
+-   [**INMOVILIZACIÓN DE MCI \_**](mci-freeze.md)
 -   [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md)
--   [**Índice de MCI \_**](mci-index.md)
--   [**información de MCI \_**](mci-info.md)
--   [**lista de MCI \_**](mci-list.md)
--   [**carga de MCI \_**](mci-load.md)
--   [**marca de MCI \_**](mci-mark.md)
--   [**MONITOR de MCI \_**](mci-monitor.md)
--   [**MCI \_ abierto**](mci-open.md)
--   [**\_pegar MCI**](mci-paste.md)
--   [**pausa de MCI \_**](mci-pause.md)
--   [**reproducción de MCI \_**](mci-play.md)
--   [**colocación de MCI \_**](mci-put.md)
--   [**calidad de MCI \_**](mci-quality.md)
--   [**\_obtener MCI**](mci-realize.md)
--   [**registro de MCI \_**](mci-record.md)
--   [**Reserva de MCI \_**](mci-reserve.md)
--   [**restauración de MCI \_**](mci-restore.md)
--   [**\_reanudación de MCI**](mci-resume.md)
--   [**\_Guardar MCI**](mci-save.md)
--   [**búsqueda de MCI \_**](mci-seek.md)
--   [**MCI \_ set**](mci-set.md)
+-   [**ÍNDICE \_ de MCI**](mci-index.md)
+-   [**INFORMACIÓN \_ de MCI**](mci-info.md)
+-   [**LISTA \_ de MCI**](mci-list.md)
+-   [**MCI \_ LOAD**](mci-load.md)
+-   [**MCI \_ MARK**](mci-mark.md)
+-   [**MCI \_ MONITOR**](mci-monitor.md)
+-   [**MCI \_ OPEN**](mci-open.md)
+-   [**PEGAR DE \_ MCI**](mci-paste.md)
+-   [**PAUSA \_ DE MCI**](mci-pause.md)
+-   [**MCI \_ PLAY**](mci-play.md)
+-   [**MCI \_ PUT**](mci-put.md)
+-   [**MCI \_ QUALITY**](mci-quality.md)
+-   [**MCI \_ REALIZE**](mci-realize.md)
+-   [**REGISTRO \_ de MCI**](mci-record.md)
+-   [**MCI \_ RESERVE**](mci-reserve.md)
+-   [**RESTAURACIÓN DE MCI \_**](mci-restore.md)
+-   [**MCI \_ RESUME**](mci-resume.md)
+-   [**MCI \_ SAVE**](mci-save.md)
+-   [**MCI \_ SEEK**](mci-seek.md)
+-   [**MCI \_ SET**](mci-set.md)
 -   [**MCI \_ SETAUDIO**](mci-setaudio.md)
 -   [**MCI \_ SETTIMECODE**](mci-settimecode.md)
 -   [**MCI \_ SETTUNER**](mci-settuner.md)
 -   [**MCI \_ SETVIDEO**](mci-setvideo.md)
--   [**señal de MCI \_**](mci-signal.md)
--   [**giro de MCI \_**](mci-spin.md)
--   [**Estado de MCI \_**](mci-status.md)
--   [**\_paso MCI**](mci-step.md)
--   [**detención de MCI \_**](mci-stop.md)
--   [**MCI \_ SYSINFO**](mci-sysinfo.md)
--   [**deshacer MCI \_**](mci-undo.md)
--   [**desbloqueo de MCI \_**](mci-unfreeze.md)
--   [**actualización de MCI \_**](mci-update.md)
--   [**MCI \_ donde**](mci-where.md)
--   [**\_ventana MCI**](mci-window.md)
+-   [**MCI \_ SIGNAL**](mci-signal.md)
+-   [**GIRO \_ DE MCI**](mci-spin.md)
+-   [**ESTADO \_ DE MCI**](mci-status.md)
+-   [**PASO \_ de MCI**](mci-step.md)
+-   [**MCI \_ STOP**](mci-stop.md)
+-   [**SYSINFO de MCI \_**](mci-sysinfo.md)
+-   [**MCI \_ UNDO**](mci-undo.md)
+-   [**MCI \_ UNFREEZE**](mci-unfreeze.md)
+-   [**MCI \_ UPDATE**](mci-update.md)
+-   [**MCI \_ WHERE**](mci-where.md)
+-   [**VENTANA \_ de MCI**](mci-window.md)
 
- 
+ 
 
- 
+ 
 
 
 

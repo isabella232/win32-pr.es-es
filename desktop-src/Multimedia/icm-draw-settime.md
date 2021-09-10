@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW_SETTIME mensaje (Vfw.h)
-description: El ICM DRAW SETTIME proporciona información de sincronización a un controlador de representación que \_ controla el tiempo de dibujo de \_ fotogramas.
+description: El ICM \_ DRAW SETTIME proporciona información de sincronización a un controlador \_ de representación que controla el tiempo de dibujo de fotogramas.
 ms.assetid: 211e8ecc-ef36-4598-aa1d-cb0a06e64f14
 keywords:
 - ICM_DRAW_SETTIME mensaje Windows Multimedia
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62c291b736b0138386c235703c29fffdae470d011f55284e8aaac4c4cfd604a4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ce1e37709477ba6080219e5225b3fde02dfed75
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119691145"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370561"
 ---
 # <a name="icm_draw_settime-message"></a>\_ICM Draw \_ SETTIME message
 
@@ -41,7 +41,7 @@ lParam = 0;
 <span id="lpTime"></span><span id="lptime"></span><span id="LPTIME"></span>*lpTime*
 </dt> <dd>
 
-Número de ejemplo del marco que se representará.
+Número de muestra del marco que se representará.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Número de ejemplo del marco que se representará.
 
 Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, el controlador compara el valor especificado con el número de fotograma asociado a la hora de su reloj interno e intenta sincronizar los dos si la diferencia es significativa.
 

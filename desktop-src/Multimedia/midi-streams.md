@@ -1,43 +1,43 @@
 ---
-title: Flujos MIDI
-description: Flujos MIDI
+title: Secuencias DE MIDI
+description: Secuencias DE MIDI
 ms.assetid: 622472d9-2888-407f-bdaa-4943896c0bac
 keywords:
-- Interfaz digital de instrumentos musicales (MIDI), secuencias
-- MIDI (interfaz digital de instrumentos musicales), secuencias
-- búferes de secuencia, flujos MIDI
+- Interfaz digital de instrumentaciones de música (MIDI),streams
+- MIDI (Interfaz digital instrumenta instrumentable), secuencias
+- búferes de secuencias, secuencias DE MIDI
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 4237e1590f3af2e15a3b0b9fedea2fea4c9c40fc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104149251"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371042"
 ---
-# <a name="midi-streams"></a>Flujos MIDI
+# <a name="midi-streams"></a>Secuencias DE MIDI
 
-Los eventos MIDI se producen en el contexto de un flujo de datos MIDI. Aunque una aplicación puede utilizar varias secuencias para definir datos musicales, el asignador MIDI no reconoce varias secuencias. La mayoría de las aplicaciones que usan secuencias usan una sola secuencia MIDI.
+Los eventos DE MIDI se producen en el contexto de una secuencia de datos DE MIDI. Aunque una aplicación puede usar varias secuencias para definir datos de música, el asignador de MIDI no reconoce varias secuencias. La mayoría de las aplicaciones que usan secuencias usan una única secuencia DE MIDI.
 
-Las siguientes funciones de funcionan con secuencias.
+Las siguientes funciones funcionan con secuencias.
 
 
 
 | Value                                            | Significado                                                                 |
 |--------------------------------------------------|-------------------------------------------------------------------------|
-| [**midiStreamClose**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamclose)       | Cierra una secuencia MIDI.                                                   |
-| [**midiStreamOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamopen)         | Abre un flujo MIDI y recupera un identificador.                             |
-| [**midiStreamOut**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout)           | Reproduce o pone en cola un flujo (búfer) de datos MIDI en un dispositivo de salida MIDI. |
-| [**midiStreamPause**](/windows/win32/api/mmeapi/nf-mmeapi-midistreampause)       | Pausa la reproducción de una secuencia MIDI especificada.                             |
-| [**midiStreamPosition**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamposition) | Recupera la posición actual en una secuencia MIDI.                        |
-| [**midiStreamProperty**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamproperty) | Establece y recupera las propiedades de la secuencia.                                   |
-| [**midiStreamRestart**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamrestart)   | Reinicia la reproducción de una secuencia MIDI en pausa.                              |
-| [**midiStreamStop**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamstop)         | Desactiva todas las notas en todos los canales MIDI de la secuencia MIDI especificada. |
+| [**midiStreamClose**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamclose)       | Cierra una secuencia de MIDI.                                                   |
+| [**midiStreamOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamopen)         | Abre una secuencia de MIDI y recupera un identificador.                             |
+| [**midiStreamOut**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamout)           | Reproduce o pone en cola un flujo (búfer) de datos DE MIDI en un dispositivo de salida DE MIDI. |
+| [**midiStreamPause**](/windows/win32/api/mmeapi/nf-mmeapi-midistreampause)       | Pausa la reproducción de una secuencia DE MIDI especificada.                             |
+| [**midiStreamPosition**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamposition) | Recupera la posición actual en una secuencia DE MIDI.                        |
+| [**midiStreamProperty**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamproperty) | Establece y recupera las propiedades del flujo.                                   |
+| [**midiStreamRestart**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamrestart)   | Reinicia la reproducción de una secuencia DE MIDI en pausa.                              |
+| [**midiStreamStop**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamstop)         | Desactiva todas las notas de todos los canales MIDI para la secuencia DE MIDI especificada. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

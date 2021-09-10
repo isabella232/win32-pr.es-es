@@ -4,12 +4,12 @@ description: Creación de una File-Handler en un archivo DLL
 ms.assetid: 0cf7ef72-c675-4a67-97b3-18cccfb7ddc1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0023de28f660473a1747ff05528ec5360674754b5c0bcd34f5ae3a28cc39412f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c95a462d9c2f56abb5985904c4acc1fb12d10877
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144758"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371677"
 ---
 # <a name="creating-a-file-handler-instance-in-a-dll"></a>Creación de una File-Handler en un archivo DLL
 

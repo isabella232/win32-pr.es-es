@@ -10,16 +10,16 @@ keywords:
 - referencia de AVIFile,macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25356bd7086a24ee82b2252e8a5d80b051680c431fd8b1b11e36afddcf5cf406
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3963c8d937e8fabdaf9006d349a1ab6b1a103ab8
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375622"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372001"
 ---
 # <a name="avifile-macros"></a>AVIFile Macros
 
-Las siguientes macros se usan con AVIFile.
+Las macros siguientes se usan con AVIFile.
 
 -   [**AVIStreamDataSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamdatasize)
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)

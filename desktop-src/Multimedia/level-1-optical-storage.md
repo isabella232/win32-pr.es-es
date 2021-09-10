@@ -1,22 +1,22 @@
 ---
-title: Nivel 1 De Storage
-description: Nivel 1 De Storage
+title: 'Nivel 1: Storage'
+description: 'Nivel 1: Storage'
 ms.assetid: 4ba0b3fa-d9ed-4058-896e-18c9d6707839
 keywords:
 - Equipo multimedia (MPC), nivel 1
-- MPC (Equipo multimedia), nivel 1
+- MPC (equipo multimedia), nivel 1
 - Consejo de marketing de PC multimedia, nivel 1
 - MPC nivel 1, almacenamiento óptico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3a36b14ab23c636a3cdbdae7eb5b6da749947c3c0353873a5e35bc5b81c6f4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98189cd6ab9ffde07b5f2682ef0723828b947f55
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118139873"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372308"
 ---
-# <a name="level-1-optical-storage"></a>Nivel 1 De Storage
+# <a name="level-1-optical-storage"></a>Nivel 1: Storage
 
 El dispositivo de almacenamiento óptico de rendimiento mínimo es una unidad de CD-ROM que cumple los criterios siguientes:
 

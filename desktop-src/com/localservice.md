@@ -6,12 +6,12 @@ keywords:
 - Valor del Registro LocalService COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e454566ac505907f66fad585062bc67f41c865df45b30405b83e5faadef7f9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31f630c7c0a6f5e3bbf4b9c26ad82e5a104be238
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117736471"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369472"
 ---
 # <a name="localservice"></a>LocalService (Servicio local)
 
@@ -25,7 +25,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
       LocalService = name
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Además de ejecutarse como un archivo ejecutable de servidor local (EXE), un objeto COM también puede optar por empaquetarse para ejecutarse como una aplicación de servicio cuando lo activa un cliente local o remoto. Los servicios admiten numerosas características administrativas útiles e integradas en la interfaz de usuario, como el inicio, la detención, la pausa y el reinicio locales y remotos, así como la capacidad de establecer que el servidor se ejecute en una cuenta de usuario y una estación de ventana específicas.
 

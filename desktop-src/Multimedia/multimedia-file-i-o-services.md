@@ -10,12 +10,12 @@ keywords:
 - E/S (entrada y salida),servicios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb2e9951b0c6602757aba93f44e9f41871f999b8165a435cd8cef32421e9f901
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd193bb0c94565832de023b2b7d13470c6073d23
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118136734"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372391"
 ---
 # <a name="multimedia-file-io-services"></a>Servicios de E/S de archivos multimedia
 

@@ -4,12 +4,12 @@ description: Identidad de servicio
 ms.assetid: 1d21d4eb-27e1-482b-9ceb-cea1d266df83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c47c2516d720fd1e4dc40962a1735aafc2e893853255917964a95f607db4b56a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31211dac1940f6caff34c52e2ea1e74af269c980
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118309326"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369556"
 ---
 # <a name="service-identity"></a>Identidad de servicio
 

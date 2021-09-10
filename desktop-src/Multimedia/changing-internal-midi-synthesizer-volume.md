@@ -8,25 +8,25 @@ keywords:
 - reproducir archivos MIDI, sintetizadores internos
 - sintetizadores INTERNOS DE MIDI
 - Interfaz digital instrumentable (MIDI), cambio de volumen
-- MIDI (Interfaz digital de instrumentado), cambio de volumen
+- MIDI (Interfaz digital instrumentable), cambio de volumen
 - reproducir archivos MIDI, cambiar volumen
 - cambiar el volumen de MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 646c7e17a7e8c0a6902e26dd8bbfdf8eb89c39297fdacdf062749d8c47a3d487
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2369b13483ce6fa45d82ee177282a0de5e86538e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808215"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370988"
 ---
 # <a name="changing-internal-midi-synthesizer-volume"></a>Cambiar el volumen interno del síntesis DE MIDI
 
-Windows proporciona las siguientes funciones para recuperar y establecer el nivel de volumen de los dispositivos de síntesis DE MIDI internos:
+Windows proporciona las siguientes funciones para recuperar y establecer el nivel de volumen de los dispositivos de síntesis MIDI internos:
 
 
 
-| Valor                                        | Significado                                                                       |
+| Value                                        | Significado                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------|
 | [**midiOutGetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetvolume) | Recupera el nivel de volumen del dispositivo de síntesis MIDI interno especificado. |
 | [**midiOutSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-midioutsetvolume) | Establece el nivel de volumen del dispositivo de síntesis MIDI interno especificado.      |
@@ -41,7 +41,7 @@ A menos que la aplicación esté diseñada para ser una aplicación maestra de c
 
 El volumen se especifica como un valor doubleword. Los 16 bits superiores especifican el volumen relativo del canal derecho y los 16 bits inferiores especifican el volumen relativo del canal izquierdo.
 
-En el caso de los dispositivos que no admiten cambios de volumen individuales en los canales izquierdo y derecho, los 16 bits inferiores especifican el nivel de volumen y los 16 bits superiores se omiten. Los valores del nivel de volumen van 0x0 (silencio) a 0xFFFF (volumen máximo) y se interpretan logarítmicamente. El aumento del volumen percibido es el mismo al aumentar el nivel de volumen de 0x5000 a 0x6000, ya que va de 0x4000 a 0x5000.
+En el caso de los dispositivos que no admiten cambios de volumen individuales en los canales izquierdo y derecho, los 16 bits inferiores especifican el nivel de volumen y los 16 bits superiores se omiten. Los valores del nivel de volumen van 0x0 (silencio) a 0xFFFF (volumen máximo) y se interpretan logarítmicamente. El aumento de volumen percibido es el mismo al aumentar el nivel de volumen de 0x5000 a 0x6000, ya que va de 0x4000 a 0x5000.
 
  
 

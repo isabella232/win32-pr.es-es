@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_DRIVER_CONNECT mensaje (Vfw.h)
-description: El mensaje WM \_ CAP DRIVER CONNECT conecta una ventana de captura a un controlador de \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverConnect.
+description: El mensaje \_ WM CAP DRIVER CONNECT conecta una ventana de captura a un controlador de \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capDriverConnect.
 ms.assetid: 8804bb3c-d06c-4ddc-b116-3d292205a52d
 keywords:
 - WM_CAP_DRIVER_CONNECT mensaje Windows Multimedia
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8b0e54d496302488db653505321778bcd22546bd2ed9b2180aa0e15cb6969f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d73fdeb89968926429f7225912e3d1b3b348e287
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118622634"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371407"
 ---
-# <a name="wm_cap_driver_connect-message"></a>Mensaje \_ WM CAP DRIVER \_ \_ CONNECT
+# <a name="wm_cap_driver_connect-message"></a>Mensaje \_ DE CONEXIÓN DEL \_ CONTROLADOR \_ WM CAP
 
 El **mensaje WM CAP DRIVER \_ \_ \_ CONNECT** conecta una ventana de captura a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capDriverConnect.**](/windows/desktop/api/Vfw/nf-vfw-capdriverconnect)
 
@@ -47,7 +47,7 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si se realiza **correctamente o FALSE** si el controlador de captura especificado no se puede conectar a la ventana de captura.
+Devuelve **TRUE si** se realiza **correctamente o FALSE** si el controlador de captura especificado no se puede conectar a la ventana de captura.
 
 ## <a name="remarks"></a>Observaciones
 

@@ -12,16 +12,16 @@ keywords:
 - Especificación general del modo MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3559a57b55dfd45eeaf59ffd2f12967509473028dc3e298c30b37d6602719742
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8df7e02dea62696f1076bd4e5e3030081b0dbe3a
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805345"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370807"
 ---
 # <a name="standard-midi-patch-assignments"></a>Asignaciones de revisiones ESTÁNDAR DE MIDI
 
-Las asignaciones de revisiones estándar de MIDI para la creación de archivos MIDI para su uso con Windows se basan en la especificación del modo GENERAL DE LA ASOCIACIÓN DE FABRICANTES DE MIDI (MMA). A continuación se encuentran las asignaciones de revisiones estándar de MIDI.
+Las asignaciones de revisiones estándar de MIDI para la creación de archivos MIDI para su uso con Windows se basan en la especificación del modo MIDI general de la Asociación de fabricantes de MIDI (MMA). A continuación se encuentran las asignaciones de revisiones estándar de MIDI.
 
 
 

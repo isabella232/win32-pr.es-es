@@ -7,16 +7,16 @@ keywords:
 - VFW (vídeo para Windows),captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bdb30233b194ffa58a72aa43c796d6d0b7673d09d5030135d28cb0b230b5f89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6824cf098565d59798ef49a10befd1091ac2384e
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145167"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124371330"
 ---
 # <a name="about-video-capture"></a>Acerca de la captura de vídeo
 
-AVICap admite la captura de vídeo de streaming y la captura de fotograma único en tiempo real. Además, AVICap proporciona control de los orígenes de vídeo que son dispositivos de interfaz de control multimedia (MCI) para que el usuario pueda controlar (a través de una aplicación) las posiciones de inicio y detenerse de un origen de vídeo, y aumentar la operación de captura para incluir la captura de fotogramas de paso.
+AVICap admite la captura de vídeo de streaming y la captura de un solo fotograma en tiempo real. Además, AVICap proporciona control de los orígenes de vídeo que son dispositivos de la interfaz de control multimedia (MCI) para que el usuario pueda controlar (a través de una aplicación) las posiciones de inicio y detenerse de un origen de vídeo, y aumentar la operación de captura para incluir la captura de fotogramas paso a paso.
 
 Las ventanas que se crean mediante la clase de ventana AVICap pueden realizar las siguientes tareas:
 

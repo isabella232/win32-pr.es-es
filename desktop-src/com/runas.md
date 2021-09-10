@@ -1,21 +1,21 @@
 ---
 title: RunAs
-description: Configura una clase para que se ejecute en una cuenta de usuario específica cuando lo active un cliente remoto sin que se escriba como una aplicación de servicio.
+description: Configura una clase para que se ejecute con una cuenta de usuario específica cuando lo active un cliente remoto sin que se escriba como una aplicación de servicio.
 ms.assetid: 2325a7da-8acd-41f4-a658-36a02532505a
 keywords:
-- Valor del Registro RunAs COM
+- Com de valor del Registro RunAs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14a8a0ab70c48354a44781cbade8299d0a7769e80dc6ca8219898d8f543330ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3139d12864eb92cc153b919dc4b9b9a4059379d
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117918396"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124369712"
 ---
 # <a name="runas"></a>RunAs
 
-Configura una clase para que se ejecute en una cuenta de usuario específica cuando lo active un cliente remoto sin que se escriba como una aplicación de servicio.
+Configura una clase para que se ejecute con una cuenta de usuario específica cuando lo active un cliente remoto sin que se escriba como una aplicación de servicio.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
@@ -25,9 +25,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
       RunAs = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor especifica el nombre de usuario y debe tener el formato *UserName*, Domain* UserName o de la cadena ***\\**  "Interactive User". También puede especificar las cadenas "nt authority \\ localservice" (para Servicio local) y "nt authority \\ networkservice" (para Servicio de red). También puede especificar la cadena "nt authority \\ system"* cuando { AppID GUID*} hace referencia a un servidor COM que ya se ha iniciado o que tiene una entrada en la tabla \_ de clases. Sin embargo, no puede usar "nt authority \\ system" con un servidor COM que aún no se haya iniciado. La contraseña predeterminada para "nt authority \\ localservice", "nt authority \\ networkservice" y "nt authority \\ system" es "" (cadena vacía).
+El valor especifica el nombre de usuario y debe tener el formato *UserName*, Domain* UserName o de la cadena ***\\**  "Interactive User". También puede especificar las cadenas "nt authority \\ localservice" (para Servicio local) y "nt authority \\ networkservice" (para Servicio de red). También puede especificar la cadena "nt authority \\ system"* cuando { AppID GUID*} hace referencia a un servidor COM que ya se ha iniciado o que tiene una entrada en la \_ tabla de clases. Sin embargo, no puede usar "nt authority \\ system" con un servidor COM que aún no se haya iniciado. La contraseña predeterminada para "nt authority \\ localservice", "nt authority \\ networkservice" y "nt authority \\ system" es "" (cadena vacía).
 
 > [!Note]  
 > A Windows Vista, ya no se necesita una contraseña vacía para configurar las opciones "nt authority \\ localservice", "nt authority \\ networkservice" y "nt authority \\ system" **RunAs.**
@@ -38,11 +38,11 @@ Es posible que las clases configuradas para ejecutarse como un usuario determina
 
 El nombre de usuario se toma del valor **RunAs** bajo la clave **AppID de la** clase. Si el nombre de usuario es "Usuario interactivo", el servidor se ejecuta en la identidad del usuario que ha iniciado sesión actualmente y está conectado al escritorio interactivo.
 
-De lo contrario, la contraseña se recupera de una parte del registro que solo está disponible para los administradores del equipo y para el sistema. A continuación, el nombre de usuario y la contraseña se usan para crear una sesión de inicio de sesión en la que se ejecuta el servidor. Cuando se inicia de esta manera, el usuario se ejecuta con su propia estación de escritorio y ventana y no comparte identificadores de ventana, el Portapapeles u otros elementos de interfaz de usuario con el usuario interactivo u otro usuario que se ejecuta en otras cuentas de usuario.
+De lo contrario, la contraseña se recupera de una parte del registro que solo está disponible para los administradores del equipo y para el sistema. A continuación, el nombre de usuario y la contraseña se usan para crear una sesión de inicio de sesión en la que se ejecuta el servidor. Cuando se inicia de esta manera, el usuario se ejecuta con su propia estación de escritorio y ventana y no comparte identificadores de ventana, el Portapapeles u otros elementos de la interfaz de usuario con el usuario interactivo u otro usuario que se ejecuta en otras cuentas de usuario.
 
 Para establecer una contraseña para una **clase RunAs,** debe usar la herramienta administrativa DCOMCNFG instalada en el directorio del sistema.
 
-En el caso de las identidades **RunAs** que usan los servidores DCOM, la cuenta de usuario especificada en el valor debe tener los derechos para iniciar sesión como un trabajo por lotes. Este derecho se puede agregar mediante la herramienta administrativa directiva de seguridad local. Vaya a **Directivas locales y** abra **Asignación de derechos de usuario.** Seleccione **Iniciar sesión como un trabajo por lotes** y agregue la cuenta de usuario.
+Para **las identidades RunAs** usadas por los servidores DCOM, la cuenta de usuario especificada en el valor debe tener los derechos para iniciar sesión como un trabajo por lotes. Este derecho se puede agregar mediante la herramienta administrativa directiva de seguridad local. Vaya a **Directivas locales y** abra **Asignación de derechos de usuario.** Seleccione **Iniciar sesión como un trabajo por lotes** y agregue la cuenta de usuario.
 
 El **valor RunAs** no se usa para los servidores configurados para ejecutarse como servicios. Los servicios COM que necesitan ejecutarse con una identidad que no sea LocalSystem deben establecer el nombre de usuario y la contraseña adecuados mediante el applet del panel de control de servicios o las funciones del controlador de servicio. (Para obtener más información sobre estas funciones, vea [Servicios](/windows/desktop/Services/services)).
 

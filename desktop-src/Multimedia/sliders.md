@@ -10,15 +10,15 @@ keywords:
 - controles deslizantes
 - MIXERCONTROLDETAILS_SIGNED estructura
 - control de panorámica
-- Control de panorámica QSound
+- Control de panorámica Q Sound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e902e3ead0416cb4b2a7d56d289f91779563109cb9494784635affc75069dfe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4d1d7644255e2fa9ee6384cbb5102df81c2a1eb0
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805355"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124372134"
 ---
 # <a name="sliders-windows-multimedia"></a>Controles deslizantes (Windows Multimedia)
 
@@ -28,9 +28,9 @@ Los controles deslizantes suelen ser controles horizontales que se pueden ajusta
 
 | Control    | Descripción                                                                                                               |
 |------------|---------------------------------------------------------------------------------------------------------------------------|
-| Control deslizante     | Tiene un intervalo de –32 768 a 32 767. El controlador mezclador define los límites de este control.                               |
-| Movimiento panorámico        | Tiene un intervalo de –32 768 a 32 767. El controlador mezclador define los límites de este control, con 0 como valor de rango medio. |
-| QSound Pan | Proporciona un control de sonido expandido a través de QSound. Este control tiene un intervalo de –15 a 15.                               |
+| Control deslizante     | Tiene un intervalo de -32 768 a 32 767. El controlador mezclador define los límites de este control.                               |
+| Movimiento panorámico        | Tiene un intervalo de -32 768 a 32 767. El controlador mezclador define los límites de este control, con 0 como valor de rango medio. |
+| Q Sound Pan | Proporciona un control de sonido expandido a través de Q Sound. Este control tiene un intervalo de –15 a 15.                               |
 
 
 

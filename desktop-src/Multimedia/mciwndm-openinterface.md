@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_OPENINTERFACE mensaje (Vfw.h)
-description: El mensaje MCIWNDM OPENINTERFACE adjunta el flujo de datos o el archivo asociado a la interfaz especificada \_ a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
+description: El mensaje OPENINTERFACE de MCIWNDM asocia el flujo de datos o el archivo asociado a la interfaz especificada \_ a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
 ms.assetid: 73cbd637-d315-4b39-a978-2b72aed1f303
 keywords:
 - MCIWNDM_OPENINTERFACE mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83097ad6301dbfdb4636a8478c2df8e544207df334efd27fe9695f15e0693533
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c40453f4d587429508a5aae19bc432fc46088ae
+ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118373589"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124370717"
 ---
 # <a name="mciwndm_openinterface-message"></a>Mensaje OPENINTERFACE de MCIWNDM \_
 
-El **mensaje MCIWNDM \_ OPENINTERFACE** asocia el flujo de datos o el archivo asociado a la interfaz especificada a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndOpenInterface.**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface)
+El **mensaje \_ OPENINTERFACE de MCIWNDM** asocia el flujo de datos o el archivo asociado a la interfaz especificada a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndOpenInterface.**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface)
 
 
 ```C++
@@ -47,13 +47,13 @@ Puntero a una interfaz IAVI que apunta a un archivo o a un flujo de datos de un 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -61,7 +61,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
