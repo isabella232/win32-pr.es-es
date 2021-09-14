@@ -3,22 +3,22 @@ title: Instalación de visualizaciones
 description: Instalación de visualizaciones
 ms.assetid: ca391e38-def5-47da-81f7-94aa96530387
 keywords:
-- Reproductor de Windows Media complementos,visualizaciones
+- Reproductor de Windows Media complementos, visualizaciones
 - complementos, visualizaciones
-- visualizaciones, instalación
+- visualizaciones, instalar
 - visualizaciones personalizadas, instalar
-- instalación de visualizaciones
+- instalar visualizaciones
 - visualizaciones, registro
 - visualizaciones personalizadas, registro
 - registry,visualizations
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e36a13dae64857143a4d7a2edc4ece719164c3dc30dc8f21f907e2080a5afae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f1dc8f33d7b5f5b938bee6c89d946955509ab34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249567"
 ---
 # <a name="installing-visualizations"></a>Instalación de visualizaciones
 

@@ -15,13 +15,13 @@ api_location:
 - strmiids.lib
 - strmiids.dll
 ms.openlocfilehash: 14c573403bf946b54bbfcc74ae41145a3f1c5c7a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119523"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062315"
 ---
-# <a name="iamtimelineobjgetdirtyrange2-method"></a>IamTimelineObj::GetDirtyRange2 (método)
+# <a name="iamtimelineobjgetdirtyrange2-method"></a>Método IAMTimelineObj::GetDirtyRange2
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -64,7 +64,7 @@ Reservado.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -72,7 +72,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue Microsoft Windows SDK [Update para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -91,7 +91,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 <dl> <dt>
 
-[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
+[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> </dl>
 
  

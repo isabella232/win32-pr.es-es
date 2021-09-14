@@ -1,5 +1,5 @@
 ---
-description: Método de constructor que proporciona la asignación entre los tipos DWORD de formato multimedia de estilo antiguo y los subtipos GUID. Este método no usa ningún parámetro.
+description: Método de constructor que proporciona la asignación entre los tipos DWORD de formato multimedia de estilo antiguo y los subtipos GUID. Este método no usa parámetros.
 ms.assetid: 2152803c-f45f-43b0-9207-4eaeddf5eeb6
 title: 'Constructor FOURCCMap::FOURCCMap (Fourcc.h): sin parámetros'
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d856589146103e599a1cf67d2090dd64af7107d1c221c46b9c93852f989ade9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd37ac842ab46c0d46fb3db1567d42274a026c47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063268"
 ---
 # <a name="fourccmapfourccmap-constructor-fourcch---no-parameters"></a>Constructor FOURCCMap::FOURCCMap (Fourcc.h): sin parámetros
 
@@ -40,9 +40,9 @@ FOURCCMap();
 
 Este constructor no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si este objeto se construye con el código **FOURCC,** se crea un **GUID** para que coincida con él. Si este objeto se crea con un **GUID existente,** el **valor FOURCC** del objeto se establece en cero. A partir de entonces, el **valor FOURCC** se puede establecer o recuperar mediante las funciones miembro [**SetFOURCC**](fourccmap-setfourcc.md) y [**GetFOURCC,**](fourccmap-getfourcc.md) respectivamente.
+Si este objeto se construye con el código **FOURCC,** se crea un **GUID** para que coincida con él. Si este objeto se crea con un **GUID existente,** el **valor FOURCC** del objeto se establece en cero. A partir de entonces, **el valor FOURCC** se puede establecer o recuperar mediante las funciones miembro [**SetFOURCC**](fourccmap-setfourcc.md) y [**GetFOURCC,**](fourccmap-getfourcc.md) respectivamente.
 
 ## <a name="requirements"></a>Requisitos
 

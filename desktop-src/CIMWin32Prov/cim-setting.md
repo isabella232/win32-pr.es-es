@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b76fd28b99cf218b9d6276b80e070eabaa5d9aeef5c6016399f8b8336d2bb328
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1081bd93c95dfa90b6a4dfa6a87339e8e3172a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118421316"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062278"
 ---
 # <a name="cim_setting-class-cimwin32-wmi-providers"></a>CIM_Setting clase (proveedores WMI CIMWin32)
 
 La **clase CIM \_ Setting** representa parámetros operativos y relacionados con la configuración para uno o varios elementos del sistema administrados. Un elemento del sistema administrado puede tener varios objetos de configuración asociados. Los valores operativos actuales de los parámetros de un elemento se reflejan en las propiedades del propio elemento o en las propiedades de sus asociaciones. Estas propiedades no tienen que ser los mismos valores presentes en el objeto de configuración. Por ejemplo, un módem puede tener una velocidad en baudios de 56 kilobytes por segundo, pero funciona a 19,2 kilobytes por segundo.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Cim \_ Setting** tiene estos tipos de miembros:
 
@@ -104,7 +104,7 @@ Identificador por el que se conoce el objeto actual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase. Para las clases WMI derivadas de **la configuración \_ de CIM,** vea [Clases Win32](win32-provider.md).
 
@@ -114,7 +114,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d95210ebe5abaddabcc33b908baf1cb2c1498af7446f32d7ebcfa9500ebd329
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d18a27599c770eb55d889a21956312512ca804cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118674139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062231"
 ---
 # <a name="bn_pushed-notification-code"></a>Código de notificación PUSHED de BN \_
 
 Se envía cuando el estado de inserción de un botón se establece en pushed.
 
 > [!Note]  
-> Este código de notificación solo se proporciona por compatibilidad con versiones de 16 bits de Windows versiones anteriores a la versión 3.0. Las aplicaciones deben usar el [**estilo de botón \_ BS OWNERDRAW**](button-styles.md) y la [**estructura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) para esta tarea.
+> Este código de notificación solo se proporciona por compatibilidad con versiones de 16 bits de Windows anterior a la versión 3.0. Las aplicaciones deben usar el [**estilo de botón \_ BS OWNERDRAW**](button-styles.md) y la [**estructura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) para esta tarea.
 
  
 
@@ -72,11 +72,11 @@ BN \_ PUSHED es el mismo que el código de notificación de [ \_ HILITE de BN.](
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

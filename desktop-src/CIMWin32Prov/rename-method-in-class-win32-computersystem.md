@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5f2a503cfac8e6cef8b32ee4e84cb8fa78f930d4e1126fcd0af488f3908c540f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2ca60021c921e47de3c7afd5b8ee0bb2ea5e6d12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062661"
 ---
 # <a name="rename-method-of-the-win32_computersystem-class"></a>Método Rename de la clase ComputerSystem de Win32 \_
 
 El **método Rename** cambia el nombre de un equipo.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,13 +61,13 @@ Contraseña que se usará al conectarse al controlador de dominio si el *paráme
 *UserName* \[ En\]
 </dt> <dd>
 
-Cadena que especifica el nombre de cuenta que se usará al conectarse al controlador de dominio. La cadena debe terminar en **null** y debe especificar un nombre NetBIOS de dominio y una cuenta de usuario, por ejemplo, "NOMBREDENOMBREDE DOMAIN" o ", que es un nombre principal de usuario \\ someone@domainname.com (UPN). Si el **parámetro UserName** es **NULL,** WMI usa el contexto del autor de la llamada. Vea la sección Comentarios de este tema para obtener más información sobre los *parámetros Password* *y UserName.*
+Cadena que especifica el nombre de cuenta que se usará al conectarse al controlador de dominio. La cadena debe terminar en null y debe especificar un nombre NetBIOS de dominio y una cuenta de usuario, por ejemplo, "NOMBREDENOMBREDENOMBREDENOMBRE" o " ", que es un nombre principal de usuario \\ someone@domainname.com (UPN). Si el **parámetro UserName** es **NULL,** WMI usa el contexto del autor de la llamada. Vea la sección Comentarios de este tema para obtener más información sobre los *parámetros Password* *y UserName.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un 0 (cero) si se realiza correctamente. Un valor devuelto distinto de cero indica un error. Si se realiza correctamente, se requiere un reinicio. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor 0 (cero) si se realiza correctamente. Un valor devuelto distinto de cero indica un error. Si se realiza correctamente, se requiere un reinicio. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -77,17 +77,17 @@ Devuelve un 0 (cero) si se realiza correctamente. Un valor devuelto distinto de 
 **Otros** (1 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Puede usar el método **Rename** para cambiar el nombre de un equipo si es miembro del grupo de administradores local. Sin embargo, no puede usar el método de forma remota para los equipos de dominio.
+Puede usar el método **Rename** para cambiar el nombre de un equipo si es miembro del grupo de administradores local. Sin embargo, no puede usar el método de forma remota para equipos de dominio.
 
-Si se especifican los parámetros *Password* y *UserName,* la conexión a WMI debe usar el nivel de autenticación RPC **C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY** **(wbemAuthenticationLevelPktPrivacy** para script y Visual Basic (VB)).
+Si se especifican los parámetros *Password* y *UserName,* la conexión a WMI debe usar el nivel de autenticación RPC **C \_ \_ \_ \_ AUTHN LEVEL PKT \_ PRIVACY** (**wbemAuthenticationLevelPktPrivacy** para el nivel de autenticación script y Visual Basic (VB)).
 
 Para conectarse a un equipo remoto y especificar credenciales, use la conexión de objeto de localizador, que es IWbemLocator para C++, y SWbemLocator para script y VB. No use la conexión de moniker.
 
-Para conectarse a un equipo local, no puede especificar una contraseña o una entidad de autenticación, como Kerberos. Solo puede especificar la contraseña y la entidad en las conexiones a equipos remotos.
+Para conectarse a un equipo local, no puede especificar una contraseña o una entidad de autenticación, como Kerberos. Solo puede especificar la contraseña y la autoridad en las conexiones a equipos remotos.
 
-Si el nivel de autenticación es demasiado bajo cuando se especifican Password y *UserName,* WMI devuelve el error **WBEM \_ E ENCRYPTED CONNECTION \_ \_ \_ REQUIRED** para C/C++, **y wbemErrEncryptedConnectionRequired** para script y VB. 
+Si el nivel de autenticación es demasiado bajo cuando se especifican Password y *UserName,* WMI devuelve el error **WBEM \_ E ENCRYPTED CONNECTION \_ \_ \_ REQUIRED** para C/C++, y **wbemErrEncryptedConnectionRequired** para script y VB. 
 
 Para obtener más información, [**vea SWbemLocator \_ ConnectServer,**](/windows/desktop/WmiSdk/swbemlocator-connectserver)[**IWbemLocator::ConnectServer**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemlocator-connectserver)y [Constructing a Moniker String](/windows/desktop/WmiSdk/constructing-a-moniker-string).
 
@@ -409,7 +409,7 @@ return 0; // Program successfully completed.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -419,7 +419,7 @@ return 0; // Program successfully completed.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

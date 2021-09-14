@@ -4,14 +4,14 @@ ms.assetid: 08fd7119-d225-4a78-b2cd-8b58887c9139
 title: IMR_COMPOSITIONWINDOW de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fc5f1f45652a2f58386a50284e3bf2cfec182c6f4ad89641dcc27a63cf12b78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6af0481ccebc59968fe85a489c856388a04dbece
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117810058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063110"
 ---
-# <a name="imr_compositionwindow-notification-code"></a>Código de notificación de IMR \_ COMPOSITIONWINDOW
+# <a name="imr_compositionwindow-notification-code"></a>Código de notificación DE IMR \_ COMPOSITIONWINDOW
 
 Notifica a una aplicación cuando un IME seleccionado necesita información sobre la ventana de composición. La aplicación recibe este comando a través del mensaje [**WM \_ IME \_ REQUEST**](wm-ime-request.md) con parámetros establecidos como se muestra a continuación.
 
@@ -44,7 +44,7 @@ Puntero a un búfer que contiene una [**estructura COMPOSITIONFORM.**](/windows/
 
 Devuelve un valor distinto de cero si la aplicación rellena la [**estructura COMPOSITIONFORM.**](/windows/win32/api/imm/ns-imm-compositionform) De lo contrario, el comando devuelve 0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El IME puede enviar este comando a una ventana que ha borrado la marca SHOWUICOMPOSITIONWINDOW de ISC en el controlador de mensajes SETCONTEXT de \_ [**WM \_ IME. \_**](wm-ime-setcontext.md)
 
@@ -60,7 +60,7 @@ El IME puede enviar este comando a una ventana que ha borrado la marca SHOWUICOM
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a751c7ed9d10547d34ec491f2e90e5ca6f1ab1f19bc1221c04b15da427da4570
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7b46838278414442d6c6fc64687fe21e02732e83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119832525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062482"
 ---
 # <a name="cmediacontrolgettypeinfocount-method"></a>Método CMediaControl.GetTypeInfoCount
 
-Recupera el número de interfaces de información de tipos proporcionadas por un objeto .
+Recupera el número de interfaces de información de tipo proporcionadas por un objeto .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT GetTypeInfoCount(
 *pctinfo* 
 </dt> <dd>
 
-Puntero al número de interfaces de información de tipos que proporciona el objeto . Si el objeto proporciona información de tipo, este número es 1; De lo contrario, el número es 0.
+Puntero al número de interfaces de información de tipo que proporciona el objeto . Si el objeto proporciona información de tipo, este número es 1; De lo contrario, el número es 0.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Devuelve E \_ POINTER si *pctinfo* no es válido; de lo contrario, devuelve S \_
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 1406ade4-77d8-49a7-8f36-cc49ff007a26
 title: Anclar conexiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cfcd407e785e15f4243f3113a63569f8b4b84de517cdde0f63a88eaef79f85c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b509abddf4a915b65dfd322f76b4afb132a7f835
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119432295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063180"
 ---
 # <a name="pin-connections"></a>Anclar conexiones
 
@@ -17,7 +17,7 @@ Los filtros se conectan en sus pines, a través de la [**interfaz IPin.**](/wind
 
 Una aplicación conecta filtros llamando a métodos en el Administrador de filtros Graph, nunca llamando a métodos en los filtros o anclados ellos mismos. La aplicación puede especificar directamente los filtros que se conectarán mediante una llamada al método [**IFilterGraph::ConnectDirect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-connectdirect) o [**IGraphBuilder::Conectar;**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-connect) o puede conectar filtros indirectamente, mediante un método de creación de grafos como [**IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile).
 
-Para que la conexión se realiza correctamente, ambos filtros deben estar en el gráfico de filtros. La aplicación puede agregar un filtro al gráfico llamando al [**método IFilterGraph::AddFilter.**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) El Administrador Graph filtros también puede agregar filtros al gráfico. Cuando se agrega un filtro, el Administrador de Graph llama al método [**IBaseFilter::JoinFilterGraph**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph) del filtro para notificarlo.
+Para que la conexión se realiza correctamente, ambos filtros deben estar en el gráfico de filtros. La aplicación puede agregar un filtro al gráfico llamando al [**método IFilterGraph::AddFilter.**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) El Administrador Graph filtros también puede agregar filtros al gráfico. Cuando se agrega un filtro, filter Graph Manager llama al método [**IBaseFilter::JoinFilterGraph**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph) del filtro para notificarlo.
 
 El esquema general del proceso de conexión es el siguiente:
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 5e926de8c35f2db144bb244e842897c93581c61fc80e8139ac3bf71eb796fdff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f4092baced94dcf222202ec5f12619c83a183bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817031"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063214"
 ---
 # <a name="ixml2dexreadxml-method"></a>IXml2Dex::ReadXML (método)
 
@@ -62,7 +62,7 @@ Reservado.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.

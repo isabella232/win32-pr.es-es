@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ca5832246e90e1df207754dc33380547b8193829394d81e6b2b757fccf79a91
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b23bad7e445eebc78ecf8a849ddde8fc23746131
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119502315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063198"
 ---
 # <a name="loadoleaut32-function"></a>Función LoadOLEAut32
 
@@ -44,7 +44,7 @@ Esta función no tiene parámetros.
 
 Devuelve un identificador a una instancia dll de Automation.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el destructor [**CBaseObject**](cbaseobject.md) destruye el objeto que cargó OleAut32.dll, descargará la biblioteca si todavía está cargado.
 
@@ -59,7 +59,7 @@ Cuando el destructor [**CBaseObject**](cbaseobject.md) destruye el objeto que ca
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 74e576e0586b5ce861311da5b98840e2d8da8c8385dd4f9e20474731f7bb5165
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c095a702269084a938887ef9717253df4653aea0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062652"
 ---
 # <a name="rename-method-of-the-win32_shortcutfile-class"></a>Método Rename de la clase ShortcutFile de Win32 \_
 
 El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Rename** cambia el nombre del archivo de método abreviado (o directorio) especificado en la ruta de acceso del objeto. No se admite un cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 Rename(
 *FileName* \[ En\]
 </dt> <dd>
 
-Nombre nuevo completo del archivo (o directorio).
+Nuevo nombre completo del archivo (o directorio).
 
 Ejemplo: c: \\ temp \\newfile.txt
 
@@ -152,7 +152,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -162,7 +162,7 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

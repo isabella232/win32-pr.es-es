@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CTransformFilter.~CTransformFilter: método destructor.'
+description: 'Destructor CTransformFilter.~CTransformFilter: método Destructor.'
 ms.assetid: 17f4dacb-a262-44de-9bef-55da87e07a63
 title: Destructor CTransformFilter.~CTransformFilter (Transfrm.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8dc746215ad351ddb5c6458e9634cd93d0ccb3b055236ebc5445714f981816b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ae8142dd6fccc0acd6d69b524a232bddaf701b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063290"
 ---
 # <a name="ctransformfilterctransformfilter-destructor"></a>Destructor CTransformFilter.~CTransformFilter
 
@@ -47,7 +47,7 @@ Método destructor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

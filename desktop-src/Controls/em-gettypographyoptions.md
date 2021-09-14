@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d575550e2c239ee5b689deb5874a9803c581151b54100ab227a24d4f29941973
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d692639ba6c8cea758abe694faed3a46e3f65be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117831176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062180"
 ---
 # <a name="em_gettypographyoptions-message"></a>Mensaje \_ EM GETTYPOGRAPHYOPTIONS
 
@@ -47,7 +47,7 @@ No se usa; debe ser cero.
 
 Devuelve las opciones de tipografía actuales. Para obtener una lista de opciones, [**vea EM \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede activar la separación de línea avanzada mediante el envío [**del mensaje EM \_ SETTYPOGRAPHYOPTIONS.**](em-settypographyoptions.md) El control de edición enriquecido también puede desactivar automáticamente la separación de línea avanzada y normal si es necesario para determinados idiomas.
 
@@ -55,12 +55,12 @@ Puede activar la separación de línea avanzada mediante el envío [**del mensaj
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
 | Redistribuible<br/>          | Rich Edit 3.0<br/>                                                              |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

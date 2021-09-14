@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6476e7949c9cad8e9ba13a562bf93fe7e3ffff39fe34cbe1101193bf9bc18289
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9402ad973a08afed4d338cfdc7b5df7fb14b9f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062471"
 ---
 # <a name="cmediaeventgettypeinfocount-method"></a>Método CMediaEvent.GetTypeInfoCount
 
@@ -45,7 +45,7 @@ HRESULT GetTypeInfoCount(
 *pctinfo* 
 </dt> <dd>
 
-Puntero al número de interfaces de información de tipo que proporciona el objeto . Si el objeto proporciona información de tipo, este número es 1; De lo contrario, el número es 0.
+Puntero al número de interfaces de información de tipos que proporciona el objeto . Si el objeto proporciona información de tipo, este número es 1; De lo contrario, el número es 0.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Devuelve E \_ POINTER si *pctinfo* no es válido; de lo contrario, devuelve S \_
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

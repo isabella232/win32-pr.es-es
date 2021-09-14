@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 4dcb2146c8db8eda0280b3ff7a34a19faf4ac172036ae7a4e61131b50fde2d0a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce0b6520163fcb07bb990b7a5a9fe742d976a899
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120090195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256916"
 ---
 # <a name="automatic-jump-list-sample"></a>Ejemplo de lista de accesos directos automática
 
@@ -35,7 +35,7 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows 7               |
-| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
 
 
 
@@ -43,7 +43,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo AutomaticJumpList](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/AutomaticJumpList) |
 

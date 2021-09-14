@@ -4,12 +4,12 @@ description: Muestrea datos del elemento o textura especificados mediante la dir
 ms.assetid: FC0DF03E-9C21-4E88-96ED-EEFE86017E7C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9193930aadf8874c759fde3beac7d7da4c9d01b709f6e0b1840b36fe0675ef8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72e82696ecc5b01847f87b39cbfeba0c665bcde4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118790793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240819"
 ---
 # <a name="sample_b-sm4---asm"></a>ejemplo \_ b (sm4 - asm)
 
@@ -32,13 +32,13 @@ Muestrea datos del elemento o textura especificados mediante la dirección espec
 | <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[en \] Un conjunto de coordenadas de textura. Para más información, consulte la [instrucción de](sample--sm4---asm-.md) ejemplo.<br/> |
 | <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[en \] Un registro de textura. Para más información, consulte la **instrucción de** ejemplo.<br/>                                 |
 | <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[en \] Un registro de sampler. Para más información, consulte la **instrucción de** ejemplo.<br/>                                 |
-| <span id="srcLODBias"></span><span id="srclodbias"></span><span id="SRCLODBIAS"></span>*srcLODBias*<br/>     | \[en \] Vea la sección Comentarios **para** obtener información sobre este parámetro.<br/>                                        |
+| <span id="srcLODBias"></span><span id="srclodbias"></span><span id="SRCLODBIAS"></span>*srcLODBias*<br/>     | \[en \] Vea la sección **Comentarios** para obtener información sobre este parámetro.<br/>                                        |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los datos de origen pueden provienen de cualquier tipo de recurso, que no sea Búferes. Se aplica un sesgo adicional al nivel de detalle calculado como parte de la ejecución de la instrucción.
 
@@ -70,12 +70,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

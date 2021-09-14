@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 81f93b4ee22c12495b77c0a71b4a4602c7f93255446874e89a51678598ba8c67
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe077b2c69f603eef8737cbf7ea8c514e9b90c85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118655351"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062481"
 ---
 # <a name="cmediacontrolinvoke-method"></a>Método CMediaControl.Invoke
 
@@ -120,7 +120,7 @@ Devuelve DISP \_ E \_ UNKNOWNINTERFACE si *riid* no es IID \_ NULL. Devuelve uno
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

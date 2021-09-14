@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e32b472d63b9d2d779c97b64833f354e7d4d2eaed034d3a213ae4e101f7beb3b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2deeb63fc6648d07b3d870888d6d2eabc6fb0490
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117858274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256899"
 ---
 # <a name="execute-command-verb-sample"></a>Ejemplo de verbo Execute Command
 
@@ -39,7 +39,7 @@ Este método es el preferido para las implementaciones de verbo porque proporcio
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows 7               |
-| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
 
 
 
@@ -47,7 +47,7 @@ Este método es el preferido para las implementaciones de verbo porque proporcio
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo ExecuteCommandVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/ExecuteCommandVerb) |
 

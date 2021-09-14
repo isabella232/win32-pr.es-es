@@ -4,12 +4,12 @@ ms.assetid: 40df7410-64d6-4edd-8009-d9c3d2aca920
 title: Almacenamiento local para el subproceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a32c1630fb5690fc3ade4d319e7787c5287b27c270a9b43e3825e547e68bd4c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e17d2ff7a1ff253ce5a20b3921cc9605bf2989f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117793009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062793"
 ---
 # <a name="thread-local-storage"></a>Almacenamiento local para el subproceso
 

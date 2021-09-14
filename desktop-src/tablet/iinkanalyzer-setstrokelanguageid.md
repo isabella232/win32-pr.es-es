@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: fc91d7d8a710d2640c31e639146bd6a2fd1deac854420d7ceac1bbfdd778022c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e103683d85ff971a8f0daff2574e97672dd5a84b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119091485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256731"
 ---
 # <a name="iinkanalyzersetstrokelanguageid-method"></a>IInkAnalyzer::SetStrokeLanguageId (método)
 
@@ -58,7 +58,7 @@ Identificador de configuración regional que se asignará al trazo.
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La configuración regional de un trazo se establece al agregar el trazo llamando al método [**IInkAnalyzer::AddStroke**](iinkanalyzer-addstroke.md), [**IInkAnalyzer::AddStrokeForLanguage ( Método**](iinkanalyzer-addstrokeforlanguage.md)), [**IInkAnalyzer::AddStrokes (Método)**](iinkanalyzer-addstrokes.md)o [**IInkAnalyzer::AddStrokesForLanguage (Método**](iinkanalyzer-addstrokesforlanguage.md)). Para obtener la configuración regional asignada actualmente a un trazo, llame al método [**IInkAnalyzer::GetStrokeLanguageId**](iinkanalyzer-getstrokelanguageid.md).
 
@@ -76,11 +76,11 @@ Para obtener más información sobre los identificadores de idioma, vea [Constan
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

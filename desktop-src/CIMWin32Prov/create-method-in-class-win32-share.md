@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 582e255223b6eb971fd447c7884ff730662a1b344c107791b1a57a074c2c1354
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d7a74838d9f6c532d3433240a5b8a70846b63776
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119504775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062274"
 ---
 # <a name="create-method-of-the-win32_share-class"></a>Método Create de la clase Win32 \_ Share
 
-El **método Crear** clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) inicia el uso compartido de un recurso de servidor.   
+El **método create** WMI [class](/windows/desktop/WmiSdk/retrieving-a-class) inicia el uso compartido de un recurso de servidor.   
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Ejemplo, "C: \\ Archivos de programa".
 *Nombre* \[ En\]
 </dt> <dd>
 
-Pasa el alias a una ruta de acceso configurada como recurso compartido en un sistema informático que ejecuta Windows.
+Pasa el alias a una ruta de acceso configurada como un recurso compartido en un sistema informático que ejecuta Windows.
 
 Ejemplo, "public".
 
@@ -129,7 +129,7 @@ Pasa el tipo de recurso que se comparte. Los tipos incluyen unidades de disco, c
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*MaximumAllowed* \[ in, opcional\]
+*MaximumAllowed* \[ en, opcional\]
 </dt> <dd>
 
 Limite el número máximo de usuarios que pueden usar simultáneamente este recurso.
@@ -138,30 +138,30 @@ Ejemplo: 10. Este parámetro es opcional.
 
 </dd> <dt>
 
-*Descripción* \[ in, opcional\]
+*Descripción* \[ en, opcional\]
 </dt> <dd>
 
 Comentario opcional para describir el recurso que se comparte. Este parámetro es opcional.
 
 </dd> <dt>
 
-*Contraseña* \[ in, opcional\]
+*Contraseña* \[ en, opcional\]
 </dt> <dd>
 
 Contraseña (cuando el servidor se ejecuta con seguridad de nivel de recurso compartido) para el recurso compartido. Si el servidor se ejecuta con seguridad de nivel de usuario, se omite este parámetro. Este parámetro es opcional.
 
 </dd> <dt>
 
-*Acceso* \[ in, opcional\]
+*Acceso* \[ en, opcional\]
 </dt> <dd>
 
-Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre los permisos, el propietario y las funcionalidades de acceso del recurso. Si no se proporciona este parámetro o es **NULL,** todos tienen acceso de lectura al recurso compartido. Para obtener más información, [**vea Seguridad de Win32Descriptor \_ y**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Cambio de la seguridad [de acceso en objetos protegibles.](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
+Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre los permisos, el propietario y las funcionalidades de acceso del recurso. Si no se proporciona este parámetro o es **NULL,** todos los usuarios tienen acceso de lectura al recurso compartido. Para obtener más información, vea [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) y [Changing Access Security on Securable Objects](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -189,7 +189,7 @@ Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro va
 **Ruta de acceso redirigida** (23)
 </dt> <dt>
 
-**Dispositivo o directorio desconocidos** (24)
+**Dispositivo o directorio desconocido** (24)
 </dt> <dt>
 
 **Nombre de red no encontrado** (25)
@@ -198,7 +198,7 @@ Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro va
 **Otros** (26 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Create** es un método estático.
 
@@ -206,7 +206,7 @@ Solo los miembros del grupo local Administradores u Operadores de cuenta o aquel
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo exportar e importar archivos compartidos](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) de PowerShell exporta e importa recursos compartidos de archivos y establece permisos de recurso compartido. De forma similar, el [ejemplo Crear un recurso compartido](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) y Establecer permisos también crea un nuevo recurso compartido y establece los permisos de recurso compartido.
+El [ejemplo de PowerShell Export and Import Fileshares exporta](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) e importa recursos compartidos de archivos y establece permisos de recurso compartido. De forma similar, [el ejemplo Crear un recurso compartido](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) y Establecer permisos también crea un nuevo recurso compartido y establece los permisos de recurso compartido.
 
 El siguiente código de PowerShell crea un recurso compartido.
 
@@ -310,7 +310,7 @@ catch (SystemException e)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -320,7 +320,7 @@ catch (SystemException e)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

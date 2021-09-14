@@ -13,11 +13,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 57c89b2376f1bae68d55c76d7731b6ee78f6bf7d
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371798"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063011"
 ---
 # <a name="accessing-a-file-io-buffer"></a>Acceso a un búfer de E/S de archivo
 

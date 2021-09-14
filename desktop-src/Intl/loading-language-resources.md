@@ -4,12 +4,12 @@ ms.assetid: 2655b2a3-2926-43f6-aef4-8b756c02a162
 title: Carga de recursos de lenguaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eebf027476658872fe392fe60699da1a586f9297f39a191898b1e132439962c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: af6917f03e773a470288fb4c9577812e0b38868b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120106935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063084"
 ---
 # <a name="loading-language-resources"></a>Carga de recursos de lenguaje
 

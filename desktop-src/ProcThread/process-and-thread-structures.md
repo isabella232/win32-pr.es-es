@@ -4,12 +4,12 @@ ms.assetid: dbb50193-4c67-494e-9c46-2ac3106fac9a
 title: Estructuras de procesos y subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b5893340c72ee46eff43b16db936025fbb5463fbe0cc10e2eba1829962269d1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 59b2b4a8209c3f1f9fb3163c849fa2c229d2bdf5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062822"
 ---
 # <a name="process-and-thread-structures"></a>Estructuras de procesos y subprocesos
 
@@ -24,7 +24,7 @@ Las estructuras siguientes se usan con procesos y subprocesos:
 -   [**DESCRIPTOR DE \_ CACHÉ**](/windows/desktop/api/WinNT/ns-winnt-cache_descriptor)
 -   [**CONTADORES \_ DE E/S**](/windows/desktop/api/WinNT/ns-winnt-io_counters)
 -   [**PREFERENCIA DE \_ ORIENTACIÓN**](/windows/desktop/api/WinUser/ne-winuser-orientation_preference)
--   [**Peb**](/windows/desktop/api/Winternl/ns-winternl-peb)
+-   [**PEB**](/windows/desktop/api/Winternl/ns-winternl-peb)
 -   [**PEB \_ LDR \_ DATA**](/windows/desktop/api/Winternl/ns-winternl-peb_ldr_data)
 -   [**INFORMACIÓN \_ DEL PROCESO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information)
 -   [**INFORMACIÓN DE \_ AGOTAMIENTO DE LA MEMORIA DE \_ \_ PROCESO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_memory_exhaustion_info)
@@ -68,9 +68,9 @@ La siguiente estructura se usa para crear [un dispatcherQueueController.](/uwp/a
 
 Las estructuras siguientes se usan con objetos de trabajo:
 
--   [**PUERTO DE FINALIZACIÓN ASOCIADO DE JOBOBJECT \_ \_ \_**](/windows/desktop/api/WinNT/ns-winnt-jobobject_associate_completion_port)
+-   [**JOBOBJECT \_ ASSOCIATE \_ COMPLETION \_ PORT**](/windows/desktop/api/WinNT/ns-winnt-jobobject_associate_completion_port)
 -   [**INFORMACIÓN DE CONTABILIDAD BÁSICA DE JOBOBJECT \_ \_ \_**](/windows/desktop/api/WinNT/ns-winnt-jobobject_basic_accounting_information)
--   [**INFORMACIÓN BÁSICA DE JOBOBJECT \_ \_ Y CONTABILIDAD DE \_ \_ \_ E/S**](/windows/desktop/api/WinNT/ns-winnt-jobobject_basic_and_io_accounting_information)
+-   [**INFORMACIÓN BÁSICA Y \_ \_ DE CONTABILIDAD DE \_ E/S \_ DE \_ JOBOBJECT**](/windows/desktop/api/WinNT/ns-winnt-jobobject_basic_and_io_accounting_information)
 -   [**INFORMACIÓN DE LÍMITE BÁSICO DE JOBOBJECT \_ \_ \_**](/windows/desktop/api/WinNT/ns-winnt-jobobject_basic_limit_information)
 -   [**JOBOBJECT \_ BASIC \_ PROCESS \_ ID \_ LIST**](/windows/desktop/api/WinNT/ns-winnt-jobobject_basic_process_id_list)
 -   [**RESTRICCIONES DE LA \_ INTERFAZ DE USUARIO BÁSICA \_ \_ DE JOBOBJECT**](/windows/desktop/api/WinNT/ns-winnt-jobobject_basic_ui_restrictions)

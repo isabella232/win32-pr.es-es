@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5c48a21a1bba0c6dd1af3fd567ea853dc922591c553ea11a935fb705ad65bf6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b55d5b1d781e7749df97bd0c9f7782f56545dbee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118411399"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061840"
 ---
-# <a name="lvm_getgroupinfo-message"></a>Mensaje GETGROUPINFO de LVM \_
+# <a name="lvm_getgroupinfo-message"></a>Mensaje \_ GETGROUPINFO de LVM
 
 Obtiene información de grupo.
 
@@ -39,9 +39,9 @@ Obtiene información de grupo.
 
 Devuelve el identificador del grupo si se realiza correctamente o -1 en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de intentar recuperar el encabezado de un grupo, asegúrese primero de que el grupo no tiene el estilo \_ LBGS NOHEADER.
+Antes de intentar recuperar el encabezado de un grupo, primero asegúrese de que el grupo no tiene el estilo \_ LBGS NOHEADER.
 
 > [!Note]  
 > Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
@@ -52,11 +52,11 @@ Antes de intentar recuperar el encabezado de un grupo, asegúrese primero de que
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 99a1f3c60dcafdda219dc8a05f5523d7c2386249ff500bbb9abb463294ca7239
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 21e603e15f598c6d493e179a147391cb941a6c7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119767155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062312"
 ---
 # <a name="irenderenginegetgroupoutputpin-method"></a>IRenderEngine::GetGroupOutputPin (método)
 
@@ -80,7 +80,7 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de llamar a este método, llame [**a IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md) para compilar el front-end del gráfico. Cada grupo representa un único flujo multimedia y el front-end tiene un pin de salida correspondiente.
 
@@ -96,7 +96,7 @@ Si el método devuelve S \_ OK, la **interfaz IPin** que devuelve tiene un recue
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -111,7 +111,7 @@ Si el método devuelve S \_ OK, la **interfaz IPin** que devuelve tiene un recue
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

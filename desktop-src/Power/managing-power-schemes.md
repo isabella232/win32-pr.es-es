@@ -4,12 +4,12 @@ ms.assetid: b79e7b64-be56-4165-af59-a8251284d029
 title: Administración de esquemas de energía
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab4717fd8efc91a520e178baac6ad9138028f306386ed2ee1141b76a423b16e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 867d7509e9a04e948818ff7a3a13638a5c9933b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062849"
 ---
 # <a name="power-scheme-management"></a>Administración de esquemas de energía
 

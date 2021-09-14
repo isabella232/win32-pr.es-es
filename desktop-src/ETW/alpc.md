@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 435b55c44f06b6be062653a45e14a1a890e026371d8bd8e649c87ce3542118c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a4b09a8bab9280de8fb4c91368f5d6d93f7944a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063167"
 ---
 # <a name="alpc-class"></a>ALPC (clase)
 
@@ -34,25 +34,25 @@ class ALPC : MSNT_SystemTrace
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase ALPC** no define ningún miembro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para habilitar eventos de llamada a procedimientos locales avanzados en una sesión de registro del kernel de NT, especifique la marca **\_ EVENT TRACE FLAG \_ \_ ALPC** en el miembro **EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea)
+Para habilitar eventos de llamada a procedimientos locales avanzados en una sesión de registro del kernel de NT, especifique la marca **\_ \_ \_ ALPC EVENT TRACE FLAG** en el miembro **EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea)
 
-Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos ALPC llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**ALPCGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid.* Use los siguientes tipos de eventos para identificar el evento ALPC real al consumir eventos.
+Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos ALPC llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y [**especificando ALPCGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid.* Use los siguientes tipos de eventos para identificar el evento ALPC real al consumir eventos.
 
 
 
 | Tipo de evento           | Descripción                                                                                                                                         |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Valor de tipo de evento, 33 | Evento de envío de mensajes. La [**clase MOF ALPC \_ Send \_ Message**](alpc-send-message.md) define los datos del evento para este evento.                           |
-| Valor de tipo de evento, 34 | Evento de recepción de mensajes. La [**clase ALPC \_ Receive \_ Message**](alpc-receive-message.md) MOF define los datos de evento para este evento.                  |
-| Valor de tipo de evento, 35 | Espere el evento de respuesta. La [**clase ALPC \_ Wait For \_ \_ Reply**](alpc-wait-for-reply.md) MOF define los datos de evento para este evento.                    |
-| Valor de tipo de evento, 36 | Espere a que se produce un nuevo evento de mensaje. La [**clase MOF ALPC \_ Wait For New \_ \_ \_ Message**](alpc-wait-for-new-message.md) define los datos de evento para este evento. |
-| Valor de tipo de evento, 37 | Detenga el evento en espera. La [**clase MOF ALPC \_ Unwait**](alpc-unwait.md) define los datos de evento para este evento.                                        |
+| Valor del tipo de evento, 33 | Enviar evento de mensaje. La [**clase ALPC \_ Send \_ Message**](alpc-send-message.md) MOF define los datos de evento para este evento.                           |
+| Valor del tipo de evento, 34 | Evento de recepción de mensajes. La [**clase ALPC \_ Receive \_ Message**](alpc-receive-message.md) MOF define los datos de evento para este evento.                  |
+| Valor de tipo de evento, 35 | Espere al evento de respuesta. La [**clase ALPC \_ Wait For \_ \_ Reply**](alpc-wait-for-reply.md) MOF define los datos de evento para este evento.                    |
+| Valor de tipo de evento, 36 | Espere a un nuevo evento de mensaje. La [**clase ALPC \_ Wait For \_ New \_ \_ Message**](alpc-wait-for-new-message.md) MOF define los datos de evento para este evento. |
+| Valor de tipo de evento, 37 | Detener el evento de espera. La [**clase MOF ALPC \_ Unwait**](alpc-unwait.md) define los datos de evento para este evento.                                        |
 
 
 
@@ -62,7 +62,7 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

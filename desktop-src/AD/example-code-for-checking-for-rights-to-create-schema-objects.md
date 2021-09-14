@@ -1,22 +1,22 @@
 ---
 title: Código de ejemplo para comprobar los derechos para crear objetos de esquema
-description: En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo allowedChildClassesEffective en el contenedor de esquema (el puntero IAD al contenedor de esquema se pasa como parámetro) para las clases attributeSchema y classSchema.
+description: En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo allowedChildClassesEffective en el contenedor de esquemas (el puntero IAD al contenedor de esquemas se pasa como parámetro) para las clases attributeSchema y classSchema.
 ms.assetid: 3abc2351-a3cf-4a6c-9a13-15dd51723883
 ms.tgt_platform: multiple
 keywords:
 - Código de ejemplo para comprobar los derechos para crear objetos de esquema de AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0200253fe10f91db1c1e67fbfc727d9165ecb8430aa4e2f648de9d3a1b8c73bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bef0d4958313a189a0a50c0b4233fdb4a30aaf75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118694487"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062295"
 ---
 # <a name="example-code-for-checking-for-rights-to-create-schema-objects"></a>Código de ejemplo para comprobar los derechos para crear objetos de esquema
 
-En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo **allowedChildClassesEffective** en el contenedor de esquema (el puntero IAD al contenedor de esquema se pasa como parámetro) para las clases **attributeSchema** y **classSchema.** Devuelve **S \_ OK si** ambas clases aparecen en **allowedChildClassesEffective.** Si ambos no lo están, devuelve **S \_ FALSE.**
+En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo **allowedChildClassesEffective** en el contenedor de esquemas (el puntero IAD al contenedor de esquemas se pasa como parámetro) para las clases **attributeSchema** y **classSchema.** Devuelve **S \_ OK si** ambas clases aparecen en **allowedChildClassesEffective.** Si ambos no lo están, devuelve **S \_ FALSE**.
 
 
 ```C++

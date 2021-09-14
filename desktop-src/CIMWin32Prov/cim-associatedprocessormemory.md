@@ -1,5 +1,5 @@
 ---
-description: La clase AssociatedProcessorMemory de CIM asocia el procesador y la memoria del sistema, o la memoria \_ caché de un procesador.
+description: La clase AssociatedProcessorMemory de CIM asocia el procesador y la memoria del sistema, o la memoria caché \_ de un procesador.
 ms.assetid: a4c28a0a-e4cc-4db2-bd77-b7b5023eace6
 ms.tgt_platform: multiple
 title: CIM_AssociatedProcessorMemory clase
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 23b2ee879752365e3100866a4ea82a33b01a2236f4f3266539e79b3ee37b94e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f35cdca92cb15e1c6fff215ff1363844e0d47012
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062753"
 ---
-# <a name="cim_associatedprocessormemory-class"></a>Cim \_ AssociatedProcessorMemory (clase)
+# <a name="cim_associatedprocessormemory-class"></a>\_Cim AssociatedProcessorMemory (clase)
 
 La **clase \_ AssociatedProcessorMemory** de CIM asocia el procesador y la memoria del sistema, o la memoria caché de un procesador.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_AssociatedProcessorMemory : CIM_AssociatedMemory
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ AssociatedProcessorMemory** de CIM tiene estos tipos de miembros:
 
@@ -70,7 +70,7 @@ Tipo de acceso: solo lectura
 
 Memoria [**CIM \_ que**](cim-memory.md) describe la memoria instalada en un dispositivo o asociada a él.
 
-Esta propiedad se hereda de [**\_ CIM AssociatedMemory.**](cim-associatedmemory.md)
+Esta propiedad se hereda de [**CIM \_ AssociatedMemory.**](cim-associatedmemory.md)
 
 </dd> <dt>
 
@@ -99,26 +99,26 @@ Tipo de datos: **Procesador CIM \_**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Procesador [**CIM \_ que**](cim-processor.md) describe el procesador que tiene acceso a la memoria o usa la memoria caché.
+Procesador [**CIM \_ que**](cim-processor.md) describe el procesador que accede a la memoria o usa la memoria caché.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ CIM AssociatedProcessorMemory** se deriva de [**CIM \_ AssociatedMemory**](cim-associatedmemory.md).
+La **clase \_ AssociatedProcessorMemory** de CIM se deriva de [**CIM \_ AssociatedMemory.**](cim-associatedmemory.md)
 
 WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ AssociatedProcessorMemory**, vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -128,7 +128,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

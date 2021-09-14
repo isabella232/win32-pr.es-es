@@ -4,12 +4,12 @@ ms.assetid: 3aeead47-78da-4ab3-9126-2fbe9e341e48
 title: Uso del modo de interpolación para controlar la calidad de la imagen durante el escalado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92fefe314ef680a54f9d885bb185c77b3349e84cbe5f7bcf347cf9ff3fa0a4ed
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d34a829f2edf2f341f50bee771d909f7c4eef98e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063412"
 ---
 # <a name="using-interpolation-mode-to-control-image-quality-during-scaling"></a>Uso del modo de interpolación para controlar la calidad de la imagen durante el escalado
 

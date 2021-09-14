@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9bf30b9d2aaad9f879baf5b0122589150ebff814a73f2f3c85c2ca72c6886308
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1dc28ddae8d493f1b30234241bfc835e28e5521
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062392"
 ---
 # <a name="crendererinputpinallocator-method"></a>Método CRendererInputPin.Allocator
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve un puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador o **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve la variable [**miembro CBaseInputPin::m \_ pAllocator.**](cbaseinputpin-m-pallocator.md) El método no incrementa el recuento de referencias en la interfaz . Este método es estrictamente un método de accessor.
 
@@ -59,7 +59,7 @@ Este método devuelve la variable [**miembro CBaseInputPin::m \_ pAllocator.**](
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

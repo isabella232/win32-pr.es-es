@@ -4,12 +4,12 @@ ms.assetid: 141afdbe-b5a7-47dc-b505-46089a5eda75
 title: Escuchar eventos del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a02d9d5ae20ac70e648071dfef904cb1ac7983c79c4aca3b02309ce1d20ac52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1429e652140cc9624d324401edef7817dad40ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119031823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256544"
 ---
 # <a name="listening-to-system-events"></a>Escuchar eventos del sistema
 

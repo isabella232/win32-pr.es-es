@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8fb896429e53c16b30dbc4301f2e54fca5a2087dc1c89635fa33395f68ba0f5b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0ce8a0d44730fa35b38cf6d738edd26168284a46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119871505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062435"
 ---
 # <a name="coutputqueuereceive-method"></a>Método COutputQueue.Receive
 
@@ -64,7 +64,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al [**método COutputQueue::ReceiveMultiple.**](coutputqueue-receivemultiple.md)
 
@@ -79,7 +79,7 @@ Este método llama al [**método COutputQueue::ReceiveMultiple.**](coutputqueue-
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

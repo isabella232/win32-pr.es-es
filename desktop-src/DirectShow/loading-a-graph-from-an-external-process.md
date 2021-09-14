@@ -4,12 +4,12 @@ ms.assetid: 1c657c7f-46d7-4feb-88a7-4a3227c9070b
 title: Cargar un Graph desde un proceso externo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e92fdaebb9ce3cb6615153daf66a8991477bf76e16ac3298e8e8b2fb59d74b4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eac42db3a87b00b1cb8f3a9ae5297215ae9bd3fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119831065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063209"
 ---
 # <a name="loading-a-graph-from-an-external-process"></a>Cargar un Graph desde un proceso externo
 
@@ -25,7 +25,7 @@ GraphEdit puede cargar un gráfico de filtro creado por un proceso externo. Con 
 
  
 
-La aplicación debe registrar la instancia del gráfico de filtros en la tabla de objetos en ejecución (ROT). ROT es una tabla de consulta accesible globalmente que realiza un seguimiento de los objetos en ejecución. Los objetos se registran en ROT mediante moniker. Para conectarse al gráfico, GraphEdit busca monikers en ROT cuyo nombre para mostrar coincida con un formato determinado:
+La aplicación debe registrar la instancia del gráfico de filtros en la tabla de objetos en ejecución (ROT). ROT es una tabla de consulta accesible globalmente que realiza un seguimiento de los objetos en ejecución. Los objetos se registran en rot mediante moniker. Para conectarse al gráfico, GraphEdit busca monikers en ROT cuyo nombre para mostrar coincide con un formato determinado:
 
 
 ```C++
@@ -34,9 +34,9 @@ La aplicación debe registrar la instancia del gráfico de filtros en la tabla d
 
 
 
-donde *X* es la dirección hexadecimal del Administrador de Graph filtro e *Y* es el identificador de proceso, también en hexadecimal.
+donde *X* es la dirección hexadecimal del Administrador de Graph filtros e *Y* es el identificador de proceso, también en hexadecimal.
 
-Cuando la aplicación cree por primera vez el gráfico de filtros, llame a la siguiente función:
+Cuando la aplicación cree por primera vez el gráfico de filtro, llame a la siguiente función:
 
 
 ```C++
@@ -116,7 +116,7 @@ pGraph->Release();
 
 
 
-Para ver el gráfico de filtros en GraphEdit, ejecute la aplicación y GraphEdit al mismo tiempo. En el menú GraphEdit **File (GráficoEditar** **archivo), haga clic Conectar en Remote Graph...** En el **Conectar cuadro Graph** de diálogo Para Graph, seleccione el identificador de proceso (pid) de la aplicación y haga clic en **Aceptar.** GraphEdit carga el gráfico de filtros y lo muestra. No use ninguna otra función de GraphEdit en este gráfico, ya que podría provocar resultados inesperados. Por ejemplo, no agregue ni quite filtros, ni detenga e inicie el gráfico. Cierre GraphEdit antes de salir de la aplicación.
+Para ver el gráfico de filtros en GraphEdit, ejecute la aplicación y GraphEdit al mismo tiempo. En el menú GraphEdit **File (Editar** archivo), **haga clic Conectar en Remote Graph...** En el **Conectar de diálogo Graph,** seleccione el identificador de proceso (pid) de la aplicación y haga clic en **Aceptar.** GraphEdit carga el gráfico de filtros y lo muestra. No use ninguna otra función de GraphEdit en este grafo, ya que podría provocar resultados inesperados. Por ejemplo, no agregue ni quite filtros, ni detenga e inicie el gráfico. Cierre GraphEdit antes de salir de la aplicación.
 
 > [!Note]  
 > La aplicación puede alcanzar varias aserciones cuando se cierra. Puede pasarlos por alto.
@@ -129,7 +129,7 @@ En la ilustración siguiente se muestra **Conectar cuadro de diálogo Graph** de
 
 Cuando GraphEdit carga el gráfico, se ejecuta en el contexto de la aplicación de destino. Por lo tanto, GraphEdit podría bloquearse porque está esperando el subproceso. Por ejemplo, esto puede ocurrir si está avanzando por el código en el depurador.
 
-Esta característica solo debe usarse en las compilaciones de depuración de la aplicación, no en las compilaciones comerciales, ya que permite a otras aplicaciones ver o controlar el gráfico de filtros.
+Esta característica solo debe usarse en compilaciones de depuración de la aplicación, no en compilaciones comerciales, porque permite que otras aplicaciones puedan ver o controlar el gráfico de filtros.
 
 ## <a name="connecting-to-a-remote-graph-from-the-command-line"></a>Conectarse a un Graph remoto desde la línea de comandos
 
@@ -148,7 +148,7 @@ donde *moniker* es un moniker creado mediante la función AddToRot, descrita ant
 
 <dl> <dt>
 
-[Simulación Graph building con GraphEdit](simulating-graph-building-with-graphedit.md)
+[Simulación de Graph compilar con GraphEdit](simulating-graph-building-with-graphedit.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: fcc970a9-fa42-4952-a8eb-5a89d8e733f7
 title: System.GPS.DestDistance Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85b0b51bc9a793861f924abf4f2f3cf8134f93ea3354802241d6d202e36eacb0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e472fa96b3a86aedf5634c47e8358f42dcae1339
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119087875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256479"
 ---
 # <a name="systemgpsdestdistance-proxy"></a>System.GPS.DestDistance Proxy
 

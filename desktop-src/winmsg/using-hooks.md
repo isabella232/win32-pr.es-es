@@ -4,25 +4,25 @@ ms.assetid: f0ca9e41-a9f7-435f-a601-f0959adcb514
 title: Uso de enlaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34539855a30a67964acfe671c29de3cacdf23314cbb51bb80027d4b388e47b5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d65d457b4549601aa89c3dae5b6e05c1fe0afed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117849635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256401"
 ---
 # <a name="using-hooks"></a>Uso de enlaces
 
-En los ejemplos de código siguientes se muestra cómo realizar las siguientes tareas asociadas a los enlaces:
+En los ejemplos de código siguientes se muestra cómo realizar las siguientes tareas asociadas a enlaces:
 
--   [Instalación y publicación de procedimientos de enlace](#installing-and-releasing-hook-procedures)
+-   [Instalación y liberación de procedimientos de enlace](#installing-and-releasing-hook-procedures)
 -   [Supervisión de eventos del sistema](#monitoring-system-events)
 
-## <a name="installing-and-releasing-hook-procedures"></a>Instalación y publicación de procedimientos de enlace
+## <a name="installing-and-releasing-hook-procedures"></a>Instalación y liberación de procedimientos de enlace
 
 Puede instalar un procedimiento de enlace llamando a la función [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) y especificando el tipo de enlace que llama al procedimiento, si el procedimiento debe asociarse con todos los subprocesos del mismo escritorio que el subproceso que realiza la llamada o con un subproceso determinado, y un puntero al punto de entrada del procedimiento.
 
-Debe colocar un procedimiento de enlace global en un archivo DLL independiente de la aplicación que instala el procedimiento de enlace. La aplicación de instalación debe tener el identificador del módulo DLL para poder instalar el procedimiento de enlace. Para recuperar un identificador para el módulo DLL, llame a la [**función LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con el nombre del archivo DLL. Después de obtener el identificador, puede llamar a la [**función GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para recuperar un puntero al procedimiento de enlace. Por último, use [**SetWindowsHookEx para**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) instalar la dirección del procedimiento de enlace en la cadena de enlace adecuada. **SetWindowsHookEx** pasa el identificador del módulo, un puntero al punto de entrada del procedimiento de enlace y 0 para el identificador del subproceso, lo que indica que el procedimiento de enlace debe estar asociado a todos los subprocesos del mismo escritorio que el subproceso que realiza la llamada. Esta secuencia se muestra en el ejemplo siguiente.
+Debe colocar un procedimiento de enlace global en un archivo DLL independiente de la aplicación que instala el procedimiento de enlace. La aplicación de instalación debe tener el identificador del módulo DLL para poder instalar el procedimiento de enlace. Para recuperar un identificador para el módulo DLL, llame a la [**función LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con el nombre del archivo DLL. Después de obtener el identificador, puede llamar a la función [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para recuperar un puntero al procedimiento de enlace. Por último, use [**SetWindowsHookEx para**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) instalar la dirección del procedimiento de enlace en la cadena de enlace adecuada. **SetWindowsHookEx** pasa el identificador del módulo, un puntero al punto de entrada del procedimiento de enlace y 0 para el identificador del subproceso, lo que indica que el procedimiento de enlace debe asociarse a todos los subprocesos del mismo escritorio que el subproceso que realiza la llamada. Esta secuencia se muestra en el ejemplo siguiente.
 
 ``` syntax
 HOOKPROC hkprcSysMsg;
@@ -39,25 +39,25 @@ hhookSysMsg = SetWindowsHookEx(
                     0); 
 ```
 
-Puede liberar un procedimiento de enlace específico del subproceso (quitar su dirección de la cadena de enlace) llamando a la función [**UnhookWindowsHookEx,**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex) especificando el identificador del procedimiento de enlace que se va a liberar. Libere un procedimiento de enlace en cuanto la aplicación ya no lo necesite.
+Puede liberar un procedimiento de enlace específico del subproceso (quitar su dirección de la cadena de enlace) llamando a la función [**UnhookWindowsHookEx,**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex) especificando el identificador para el procedimiento de enlace que se va a liberar. Libere un procedimiento de enlace en cuanto la aplicación ya no lo necesite.
 
-Puede liberar un procedimiento de enlace global mediante [**UnhookWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex), pero esta función no libera el archivo DLL que contiene el procedimiento de enlace. Esto se debe a que se llama a los procedimientos de enlace global en el contexto de proceso de todas las aplicaciones del escritorio, lo que provoca una llamada implícita a la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) para todos esos procesos. Dado que no se puede realizar una llamada a la función [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) para otro proceso, no hay ninguna manera de liberar el archivo DLL. El sistema libera finalmente el archivo DLL después de que todos los procesos vinculados explícitamente al archivo DLL han finalizado o llamado **a FreeLibrary** y todos los procesos que llamaron al procedimiento de enlace han reanudado el procesamiento fuera del archivo DLL.
+Puede liberar un procedimiento de enlace global mediante [**UnhookWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex), pero esta función no libera el archivo DLL que contiene el procedimiento de enlace. Esto se debe a que se llama a los procedimientos de enlace global en el contexto de proceso de cada aplicación del escritorio, lo que provoca una llamada implícita a la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) para todos esos procesos. Dado que no se puede realizar una llamada a la función [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) para otro proceso, no hay ninguna manera de liberar el archivo DLL. El sistema libera finalmente el archivo DLL después de que todos los procesos vinculados explícitamente al archivo DLL han finalizado o llamado **a FreeLibrary** y todos los procesos que llamaron al procedimiento de enlace han reanudado el procesamiento fuera del archivo DLL.
 
-Un método alternativo para instalar un procedimiento de enlace global consiste en proporcionar una función de instalación en el archivo DLL, junto con el procedimiento de enlace. Con este método, la aplicación de instalación no necesita el identificador del módulo DLL. Al vincular con el archivo DLL, la aplicación obtiene acceso a la función de instalación. La función de instalación puede proporcionar el identificador del módulo DLL y otros detalles en la llamada a [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa). El archivo DLL también puede contener una función que libera el procedimiento de enlace global; la aplicación puede llamar a esta función de liberación de enlaces al finalizar.
+Un método alternativo para instalar un procedimiento de enlace global consiste en proporcionar una función de instalación en el archivo DLL, junto con el procedimiento de enlace. Con este método, la aplicación de instalación no necesita el identificador del módulo DLL. Al vincular con el archivo DLL, la aplicación obtiene acceso a la función de instalación. La función de instalación puede proporcionar el identificador del módulo DLL y otros detalles en la llamada a [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa). El archivo DLL también puede contener una función que libera el procedimiento de enlace global; La aplicación puede llamar a esta función de liberación de enlaces al finalizar.
 
 ## <a name="monitoring-system-events"></a>Supervisión de eventos del sistema
 
-En el ejemplo siguiente se usan diversos procedimientos de enlace específicos del subproceso para supervisar el sistema en busca de eventos que afecten a un subproceso. Muestra cómo procesar eventos para los siguientes tipos de procedimientos de enlace:
+En el ejemplo siguiente se usa una variedad de procedimientos de enlace específicos del subproceso para supervisar el sistema en busca de eventos que afectan a un subproceso. Muestra cómo procesar eventos para los siguientes tipos de procedimientos de enlace:
 
 -   **WH \_ CALLWNDPROC**
 -   **WH \_ CBT**
 -   **DEPURACIÓN \_ DE WH**
 -   **WH \_ GETMESSAGE**
--   **TECLADO \_ WH**
+-   **WH \_ KEYBOARD**
 -   **WH \_ MOUSE**
 -   **WH \_ MSGFILTER**
 
-El usuario puede instalar y quitar un procedimiento de enlace mediante el menú . Cuando se instala un procedimiento de enlace y se produce un evento supervisado por el procedimiento, el procedimiento escribe información sobre el evento en el área cliente de la ventana principal de la aplicación.
+El usuario puede instalar y quitar un procedimiento de enlace mediante el menú. Cuando se instala un procedimiento de enlace y se produce un evento supervisado por el procedimiento, el procedimiento escribe información sobre el evento en el área cliente de la ventana principal de la aplicación.
 
 
 ```

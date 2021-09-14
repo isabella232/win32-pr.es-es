@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 746fb01102642f2d3e6b254ac741c284143aaecfd401fc220bf7a9d97d93e64e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ef9fcd176463aa8b0bc69fabbd74d78d4ca17cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119813375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062418"
 ---
 # <a name="cpersiststreamgetsizemax-method"></a>Método CPersistStream.GetSizeMax
 
@@ -53,7 +53,7 @@ Puntero al tamaño en bytes necesario para guardar esta secuencia, incluido el n
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro implementa el **método IPersistStream::GetSizeMax.**
 
@@ -68,7 +68,7 @@ Esta función miembro implementa el **método IPersistStream::GetSizeMax.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

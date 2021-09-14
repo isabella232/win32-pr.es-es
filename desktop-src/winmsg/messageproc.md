@@ -32,12 +32,12 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 6da307d00c9291ab8c27b97c5012c9887b5c12fcbc541beb5a9b7e8c176ec5a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00a1d1c52d50d0d9a028829181c886a813112a15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118200787"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256406"
 ---
 # <a name="messageproc-function"></a>Función MessageProc
 
@@ -48,7 +48,7 @@ El sistema llama a esta función después de que se produzca un evento de entrad
 El procedimiento de enlace puede supervisar los mensajes de un cuadro de diálogo, un cuadro de mensaje, un menú o una barra de desplazamiento creados por una aplicación determinada o todas las aplicaciones.
 
 El **tipo HOOKPROC** define un puntero a esta función de devolución de llamada.
-**MessageProc** es un marcador de posición para el nombre de la función definida por la aplicación o definida por la biblioteca.
+**MessageProc** es un marcador de posición para el nombre de función definido por la aplicación o definido por la biblioteca.
 
 ```cpp
 LRESULT CALLBACK MessageProc(
@@ -96,7 +96,7 @@ Si *el* código es menor que cero, el procedimiento de enlace debe devolver el v
 Si *el* código es mayor o igual que cero y el procedimiento de enlace no procesó el mensaje, se recomienda encarecidamente llamar a **CallNextHookEx** y devolver el valor que devuelve. De lo contrario, otras aplicaciones que [WH_MSGFILTER](about-hooks.md) enlaces no recibirán notificaciones de enlace y pueden comportarse incorrectamente como resultado.
 Si el procedimiento de enlace procesó el mensaje, puede devolver un valor distinto de cero para evitar que el sistema pase el mensaje al resto de la cadena de enlace o al procedimiento de ventana de destino.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación instala el procedimiento de  enlace especificando el tipo de enlace WH_MSGFILTER y un puntero al procedimiento de enlace en una llamada a la función **SetWindowsHookEx.**
 
@@ -108,6 +108,6 @@ Si una aplicación que usa la DDEML y realiza transacciones sincrónicas debe pr
 
 [SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
 
-[Msg](/windows/win32/api/winuser/ns-winuser-msg)
+[MSG](/windows/win32/api/winuser/ns-winuser-msg)
 
 [Enlaces](hooks.md)

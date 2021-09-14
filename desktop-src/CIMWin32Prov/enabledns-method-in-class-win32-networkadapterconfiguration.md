@@ -1,5 +1,5 @@
 ---
-description: El método estático de la clase WMI EnableDNS habilita el Sistema de nombres de dominio (DNS) para el servicio.
+description: El método estático de la clase WMI EnableDNS habilita el sistema de nombres de dominio (DNS) para el servicio.
 ms.assetid: 083dccb1-eb38-4ae5-a252-0001759c0f50
 ms.tgt_platform: multiple
 title: Método EnableDNS de la Win32_NetworkAdapterConfiguration clase
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8dfe86439e9760fb06e8cd29e9140e73e71030744b064408df6275ced4a2e30c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc217211455d8804de47b2b3ffc761d4328fa49a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118676601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062713"
 ---
 # <a name="enabledns-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableDNS de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDNS** habilita el sistema de nombres de dominio (DNS) para el servicio.
+El método estático de la clase WMI **EnableDNS** [](/windows/desktop/WmiSdk/retrieving-a-class) habilita el sistema de nombres de dominio (DNS) para el servicio.
 
 En este tema se usa la sintaxis Managed Object Format (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
@@ -45,7 +45,7 @@ uint32 EnableDNS(
 
 <dl> <dt>
 
-*DNSHostName* \[ en, opcional\]
+*DNSHostName* \[ in, opcional\]
 </dt> <dd>
 
 Nombre del host DNS que habilita este método.
@@ -54,7 +54,7 @@ Ejemplo: "corpdns"
 
 </dd> <dt>
 
-*DNSDomain* \[ en, opcional\]
+*DNSDomain* \[ in, opcional\]
 </dt> <dd>
 
 Representa un nombre de organización seguido de un punto y una extensión que indica el tipo de organización.
@@ -63,17 +63,17 @@ Ejemplo: "microsoft.com"
 
 </dd> <dt>
 
-*DNSServerSearchOrder* \[ en, opcional\]
+*DNSServerSearchOrder* \[ in, opcional\]
 </dt> <dd>
 
-Lista de direcciones IP de servidor para consultar los servidores DNS.
+Lista de direcciones IP del servidor para consultar los servidores DNS.
 
 </dd> <dt>
 
-*DNSDomainSuffixSearchOrder* \[ en, opcional\]
+*DNSDomainSuffixSearchOrder* \[ in, opcional\]
 </dt> <dd>
 
-Sufijo de dominio DNS que se anexa a un nombre de host durante la resolución de nombres. Al resolver un nombre de dominio completo (FQDN) a partir de un nombre de solo host, el sistema anexa el nombre de dominio local. Si la resolución de nombres no se realiza correctamente, el sistema usa la lista de sufijos de dominio para crear FQDN adicionales en el orden indicado y, a continuación, consulta los servidores DNS para cada uno.
+Sufijo de dominio DNS que se anexa a un nombre de host durante la resolución de nombres. Al resolver un nombre de dominio completo (FQDN) a partir de un nombre de solo host, el sistema anexa el nombre de dominio local. Si la resolución de nombres no se realiza correctamente, el sistema usa la lista de sufijos de dominio para crear FQDN adicionales en el orden indicado y, a continuación, consulta los servidores DNS para cada uno de ellos.
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no es necesario reiniciar.
+Finalización correcta, no se requiere reinicio.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Finalización correcta, reinicio necesario.
 
 64
 
-Método no compatible con esta plataforma.
+Método no admitido en esta plataforma.
 
 </dd> <dt>
 
@@ -268,7 +268,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
@@ -286,7 +286,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco o red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
@@ -308,7 +308,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -340,7 +340,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de límites.
+Parámetro fuera de los límites.
 
 </dd> <dt>
 
@@ -349,11 +349,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -407,7 +407,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
@@ -434,7 +434,7 @@ DHCP no habilitado en el adaptador.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de código siguiente, tomado del ejemplo de código [Enable DNS on All Network Adapters](https://Gallery.TechNet.Microsoft.Com/c5736a48-71cc-4483-9605-d71d222740ac) VBScript (Habilitar DNS en todos los adaptadores de red VBScript) de la Galería de TechNet, habilita DNS para todos los adaptadores de red de un equipo.
+El ejemplo de código siguiente, tomado del ejemplo de código [ENABLE DNS on All Network Adapters](https://Gallery.TechNet.Microsoft.Com/c5736a48-71cc-4483-9605-d71d222740ac) VBScript (Habilitar DNS en todos los adaptadores de red VBScript) de la Galería de TechNet, habilita DNS para todos los adaptadores de red de un equipo.
 
 
 ```VB
@@ -466,7 +466,7 @@ objNetworkSettings.EnableDNS strHostName, , , arrDNSSuffixes
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -476,7 +476,7 @@ objNetworkSettings.EnableDNS strHostName, , , arrDNSSuffixes
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

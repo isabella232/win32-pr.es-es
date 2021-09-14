@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dac29acc878df097ed6a8376ea2184b09b83e6323b5114cb57a9df537c556047
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a69c05b11c5f3c623824783ed13f42c0a3eab801
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119322635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063395"
 ---
 # <a name="cim_applicationsystem-class"></a>Clase \_ ApplicationSystem de CIM
 
 La **clase \_ Cim ApplicationSystem** representa una aplicación o un sistema de software que admite una función empresarial determinada que se puede administrar como una unidad independiente. Este sistema se puede descomponer en sus componentes funcionales mediante la [**clase \_ CIM SoftwareFeature.**](cim-softwarefeature.md) Las características de software para una aplicación o sistema de software determinados se encuentran mediante la asociación [**\_ CIM ApplicationSystemSoftwareFeature.**](cim-applicationsystemsoftwarefeature.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -61,7 +61,7 @@ class CIM_ApplicationSystem : CIM_System
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ApplicationSystem de CIM** tiene estos tipos de miembros:
 
@@ -187,7 +187,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cómo se puede acceder al propietario del sistema principal (por ejemplo, el número de teléfono o la dirección de correo electrónico).
+Cómo se puede llegar al propietario del sistema principal (por ejemplo, el número de teléfono o la dirección de correo electrónico).
 
 Esta propiedad se hereda del [**sistema CIM. \_**](cim-system.md)
 
@@ -334,7 +334,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Cim ApplicationSystem** se deriva del [**sistema \_ CIM.**](cim-system.md)
 
@@ -356,7 +356,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

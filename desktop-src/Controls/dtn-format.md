@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75fb4279f6ec6b95ded673083a024d32785dd5156588852663e6c307f8351dc4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4fadd11b090777d2226eeed85f32d2062e8340e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062525"
 ---
 # <a name="dtn_format-notification-code"></a>Código de notificación \_ DE DTN FORMAT
 
@@ -51,7 +51,7 @@ Puntero a una estructura [**NMDATETIMEFORMAT**](/windows/win32/api/commctrl/ns-c
 
 El propietario del control debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control de este código de notificación permite al propietario del control proporcionar una cadena personalizada que el control mostrará. (Para obtener información adicional sobre los campos de devolución de llamada, vea [Campos de devolución de llamada).](date-and-time-picker-controls.md)
 
@@ -63,7 +63,7 @@ El control de este código de notificación permite al propietario del control p
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **DTN \_ FORMATW** (Unicode) y **DTN \_ FORMATA** (ANSI)<br/>                     |
 
 

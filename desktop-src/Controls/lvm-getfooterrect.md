@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39bc2c5cd724c9b5b4885b99123489e49ead52243d43388e7eb22808fb43a826
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31df3a1b7b29e5ad9191da9e990e04daec99e948
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118411464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061850"
 ---
 # <a name="lvm_getfooterrect-message"></a>Mensaje \_ GETFOOTERRECT de LVM
 
@@ -51,11 +51,11 @@ Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

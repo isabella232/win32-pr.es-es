@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4687db225a616adef6d1c756ae9295e2c273c0315f37d119c7bacd0c226233e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 797dcb94e227861642de2a05e6edf24f675bb4e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119539725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062505"
 ---
 # <a name="cdynamicoutputpinstreamingthreadusingoutputpin-method"></a>Método CDynamicOutputPin.StreamingThreadUsingOutputPin
 
@@ -42,9 +42,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si un subproceso realiza una operación de streaming en el pin. De lo contrario, **devuelve FALSE.**
+Devuelve **TRUE** si un subproceso realiza una operación de streaming en el pin. De lo contrario, **devuelve FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si algún subproceso ha devuelto correctamente desde el método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) y no ha realizado una llamada correspondiente al método [**CDynamicOutputPin::StopUsingOutputPin,**](cdynamicoutputpin-stopusingoutputpin.md) este método devuelve **TRUE**.
 
@@ -59,7 +59,7 @@ Si algún subproceso ha devuelto correctamente desde el método [**CDynamicOutpu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

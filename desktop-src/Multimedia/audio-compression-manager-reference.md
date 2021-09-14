@@ -7,22 +7,22 @@ keywords:
 - multimedia, referencia de ACM
 - audio multimedia, referencia de ACM
 - audio, referencia de ACM)
-- administrador de compresión de audio (ACM), referencia
+- Administrador de compresión de audio (ACM), referencia
 - ACM (administrador de compresión de audio), referencia
 - Referencia de ACM, acerca de
 - referencia de ACM, acerca de
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0d365b0a69ecd94a07811b24762aa4bffdc8c9f1
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062989"
 ---
 # <a name="audio-compression-manager-reference"></a>Referencia del Administrador de compresión de audio
 
-En esta sección se describen las funciones, estructuras y mensajes asociados al ACM. Estos elementos se agrupan como se muestra a continuación.
+En esta sección se describen las funciones, las estructuras y los mensajes asociados al ACM. Estos elementos se agrupan como se muestra a continuación.
 
 ## <a name="drivers"></a>Controladores
 
@@ -33,7 +33,7 @@ En esta sección se describen las funciones, estructuras y mensajes asociados al
 -   [**acmDriverEnumCallback**](/windows/win32/api/msacm/nc-msacm-acmdriverenumcb)
 -   [**acmDriverID**](/windows/desktop/api/Msacm/nf-msacm-acmdriverid)
 -   [**acmDriverMessage**](/windows/desktop/api/Msacm/nf-msacm-acmdrivermessage)
--   [**acmDriverAbrir**](/windows/desktop/api/Msacm/nf-msacm-acmdriveropen)
+-   [**acmDriverOpen**](/windows/desktop/api/Msacm/nf-msacm-acmdriveropen)
 -   [**acmDriverPriority**](/windows/desktop/api/Msacm/nf-msacm-acmdriverpriority)
 -   [**acmDriverProc**](/windows/desktop/api/Msacm/nc-msacm-acmdriverproc)
 -   [**acmDriverRemove**](/windows/desktop/api/Msacm/nf-msacm-acmdriverremove)

@@ -1,21 +1,21 @@
 ---
-title: Cómo crear un cuadro de Owner-Drawn de datos
+title: Cómo crear un cuadro de Owner-Drawn lista de aplicaciones
 description: En este tema se muestra cómo implementar un cuadro de lista dibujado por el propietario.
 ms.assetid: AE6E8943-DC03-4A21-9F0A-9C70C6BD7481
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2994c88aec9f3c11ae856136103cf3327d53a2b72c5b2e8903e187ece01bf0f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81b48a56ca188fb2c277cc822dcb9a343205a331
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118413203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062219"
 ---
-# <a name="how-to-create-an-owner-drawn-list-box"></a>Cómo crear un cuadro de Owner-Drawn de datos
+# <a name="how-to-create-an-owner-drawn-list-box"></a>Cómo crear un cuadro de Owner-Drawn lista de aplicaciones
 
 En este tema se muestra cómo implementar un cuadro de lista dibujado por el propietario.
 
-En el ejemplo de código de C++ de este tema se muestra cómo dibujar un cuadro de lista que contiene cinco elementos dibujados por el propietario: cuatro implementos de dibujo y una bifurcación. Cada elemento de lista aparece como un mapa de bits seguido del nombre del objeto. Un botón solicita al usuario que seleccione un elemento que no sea como los demás. Al elegir el botón con la bifurcación seleccionada se muestra el mensaje "You're right!" (Tiene razón). y cierra el cuadro de diálogo. Al elegir el botón con cualquier otro elemento de lista seleccionado, se muestra el mensaje "Intentarlo de nuevo". no encontrada".
+En el ejemplo de código de C++ de este tema se muestra cómo dibujar un cuadro de lista que contiene cinco elementos dibujados por el propietario: cuatro implementos de dibujo y una bifurcación. Cada elemento de lista aparece como un mapa de bits seguido del nombre del objeto. Un botón solicita al usuario que seleccione un elemento que no sea como los demás. Al elegir el botón con la bifurcación seleccionada se muestra el mensaje "You're right!" (Tiene razón). y cierra el cuadro de diálogo. Al elegir el botón con cualquier otro elemento de lista seleccionado, se muestra un mensaje "Intentarlo de nuevo". "Hola mundo".
 
 El cuadro de lista tiene los [**estilos \_ LBS OWNERDRAWFIXED**](list-box-styles.md) y [**LBS \_ HASSTRINGS,**](list-box-styles.md) además de los estilos de cuadro de lista estándar.
 

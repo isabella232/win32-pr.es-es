@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 7e14514c31f81327d9d0c0217479d2ce746c61ed58c9f71e1b2fa6f19f4e31ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4252e4df579bc73e9f082630f9f98b83e3b57f47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257031"
 ---
 # <a name="ishelldispatchcascadewindows-method"></a>Método IShellDispatch.CascadeWindows
 
@@ -55,9 +55,9 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método se implementa y se accede a este método a través [**del método Shell.CascadeWindows.**](shell-cascadewindows.md)
+Este método se implementa y se accede a través del [**método Shell.CascadeWindows.**](shell-cascadewindows.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -115,12 +115,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

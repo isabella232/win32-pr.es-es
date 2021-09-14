@@ -13,22 +13,22 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: db556faf5cba75fe74af6c46f5c0f0a72fa34f279135e33381892812b3cf4735
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49eeb04b1568bbef785f7d750315e0ea39491d92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118220750"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256724"
 ---
 # <a name="inkanalyzer-class"></a>InkAnalyzer (clase)
 
 Implementa la [**interfaz IInkAnalyzer.**](iinkanalyzer.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta clase implementa la [**interfaz COM IInkAnalyzer.**](iinkanalyzer.md)
 
-[ \_ IAnalysisEvents es](-ianalysisevents.md) el origen predeterminado de eventos y proporciona eventos estándar para [**IInkAnalyzer.**](iinkanalyzer.md)
+[ \_ IAnalysisEvents](-ianalysisevents.md) es el origen predeterminado de eventos y proporciona eventos estándar para [**IInkAnalyzer.**](iinkanalyzer.md)
 
 [**\_ IAnalysisProxyEvents proporciona**](-ianalysisproxyevents.md) los eventos de proxy de datos para [**IInkAnalyzer.**](iinkanalyzer.md) Para obtener más información, vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
@@ -36,11 +36,11 @@ Esta clase implementa la [**interfaz COM IInkAnalyzer.**](iinkanalyzer.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

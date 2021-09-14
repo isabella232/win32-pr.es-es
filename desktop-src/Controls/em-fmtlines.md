@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e0c0c410f13a33f0e387098178b42faaf3269c36d11f75e765eb753fa9d0844
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c12a22ee8c30ffa74705f670a16caa3651e9b44
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119545105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062214"
 ---
 # <a name="em_fmtlines-message"></a>Mensaje \_ DE EM FMTLINES
 
@@ -47,7 +47,7 @@ Este parámetro no se utiliza.
 
 El valor devuelto es idéntico al *parámetro wParam.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje solo afecta al búfer devuelto por el [**mensaje EM \_ GETHANDLE**](em-gethandle.md) y al texto devuelto por el [**mensaje \_ GETTEXT de WM.**](/windows/desktop/winmsg/wm-gettext) No tiene ningún efecto en la presentación del texto dentro del control de edición.
 
@@ -64,15 +64,15 @@ El **mensaje EM \_ FMTLINES** no afecta a una línea que termina con un salto de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

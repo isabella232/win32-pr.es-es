@@ -23,16 +23,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dc98f826ddae09bd507517e564ec2d9387d6bf17147d5eac36596bdb9d1e81ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2af601799095192d7af4ffedce0c8e0cd28bff21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062252"
 ---
-# <a name="win32_account-class"></a>Clase De \_ cuenta win32
+# <a name="win32_account-class"></a>Clase de cuenta \_ win32
 
-La clase WMI **\_ abstracta Cuenta win32** contiene información sobre las cuentas de usuario y las cuentas de grupo conocidas por el sistema informático que ejecuta Windows. [](/windows/desktop/WmiSdk/retrieving-a-class) Los nombres de usuario o grupo reconocidos por Windows dominio son descendientes (o miembros) de esta clase.
+La **clase WMI \_ abstracta Cuenta win32** contiene información sobre las cuentas de usuario y las cuentas de grupo conocidas por el sistema informático que ejecuta Windows. [](/windows/desktop/WmiSdk/retrieving-a-class) Los nombres de usuario o grupo reconocidos por Windows dominio son descendientes (o miembros) de esta clase.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -54,7 +54,7 @@ class Win32_Account : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cuenta win32** tiene estos tipos de miembros:
 
@@ -62,7 +62,7 @@ La **clase \_ Cuenta win32** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Cuenta win32** tiene estas propiedades.
+La **clase \_ Win32 Account** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -150,7 +150,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Si **es TRUE,** la cuenta se define en el equipo local. Para recuperar solo las cuentas definidas en el equipo local, diseñe una consulta que incluya la condición "LocalAccount=**TRUE".**
+Si **es TRUE,** la cuenta se define en la máquina local. Para recuperar solo las cuentas definidas en el equipo local, diseñe una consulta que incluya la condición "LocalAccount=**TRUE".**
 
 </dd> <dt>
 
@@ -179,10 +179,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Security Identifiers (SIDs)")
+Calificadores: [**Corregido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Identificadores de seguridad \| (SID) de Win32API")
 </dt> </dl>
 
-Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (por ejemplo, un dominio Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cuando se ha usado un SID como identificador único de un usuario o grupo, no se puede usar de nuevo para identificar a otro usuario o grupo.
+Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (por ejemplo, un dominio de Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cuando se ha usado un SID como identificador único de un usuario o grupo, no se puede volver a usar para identificar a otro usuario o grupo.
 
 </dd> <dt>
 
@@ -195,7 +195,7 @@ Tipo de datos: **uint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Access Control Enumeration Types \| SID NAME \_ \_ USE")
+Calificadores: [**Corregido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API Access Control tipos de enumeración \| \| SID \_ NAME \_ USE")
 </dt> </dl>
 
 Valores enumerados que especifican el tipo de identificador de seguridad (SID).
@@ -279,7 +279,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente, pero predice un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". Este último, "Servicio", se puede aplicar durante la resilvering de reflejo de un disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente, pero predice un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", se puede aplicar durante la resilvering reflejada de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de la [**clase \_ ManagedSystemElement de CIM.**](cim-managedsystemelement.md)
 
@@ -310,7 +310,7 @@ Los valores son:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -324,14 +324,14 @@ Los valores son:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -373,7 +373,7 @@ Los valores son:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Account de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
@@ -411,7 +411,7 @@ El siguiente código de PowerShell recupera las cuentas de dominio.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

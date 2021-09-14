@@ -4,12 +4,12 @@ ms.assetid: e0ca356e-f8c1-4845-ae1e-ce2ae8987515
 title: Control de nombres de dominio internacionalizados (IDN)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6310cf74e39758dc6974a1247fe9a5b506276f5c3da55d546d6bc6c2b5a8c992
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95e853f0ea3f62fc3e5ee848431417cc031eaa5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119898595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063132"
 ---
 # <a name="handling-internationalized-domain-names-idns"></a>Control de nombres de dominio internacionalizados (IDN)
 
@@ -39,7 +39,7 @@ NLS también define varias funciones de API que se pueden usar para mitigar algu
 -   [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa), [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex). Recuperar información de configuración regional. El uso de las funciones *con LCType* establecido en [LOCALE \_ SSCRIPTS](locale-sscripts.md) proporciona una lista de scripts que se usan normalmente para una configuración regional determinada.
 -   [**VerifyScripts**](/windows/desktop/api/Winnls/nf-winnls-verifyscripts). Compara listas de scripts. Para comprobar con varias configuraciones regionales, la aplicación puede realizar varias llamadas a [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) o [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) y [**VerifyScripts.**](/windows/desktop/api/Winnls/nf-winnls-verifyscripts)
 
-En el caso de las aplicaciones que se ejecutan en Windows XP y Windows Server 2003, las funciones [**DownlevelGetLocaleScripts,**](downlevelgetlocalescripts.md) [**DownlevelGetStringScripts**](downlevelgetstringscripts.md)y [**DownlevelVerifyScripts**](downlevelverifyscripts.md) desempeñan un rol similar a las funciones enumeradas anteriormente en mitigación del riesgo de seguridad. La descarga "Api de mitigación de nombres de dominio [internacionalizados (IDN) de Microsoft"](https://www.microsoft.com/downloads/details.aspx?FamilyID=AD6158D7-DDBA-416A-9109-07607425A815&displaylang=en) está disponible en el Centro [de descarga de MSDN.](https://www.microsoft.com/?ref=go)
+En el caso de las aplicaciones que se ejecutan en Windows XP y Windows Server 2003, las funciones [**DownlevelGetLocaleScripts,**](downlevelgetlocalescripts.md) [**DownlevelGetStringScripts**](downlevelgetstringscripts.md)y [**DownlevelVerifyScripts**](downlevelverifyscripts.md) desempeñan un rol similar al de las funciones enumeradas anteriormente en mitigación del riesgo de seguridad. La descarga "Api de mitigación de nombres de dominio [internacionalizados (IDN) de Microsoft"](https://www.microsoft.com/downloads/details.aspx?FamilyID=AD6158D7-DDBA-416A-9109-07607425A815&displaylang=en) está disponible en el Centro [de descarga de MSDN.](https://www.microsoft.com/?ref=go)
 
 ## <a name="handle-unicode-strings"></a>Controlar cadenas Unicode
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65d9dc5ac5fe3750fb3a6af8658a5ddb30274764cc891438162434a44651322a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4249f6224099c3d2a36a3b26244c9b804be519c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118578851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241064"
 ---
 # <a name="editboxfontstyle"></a>EDITBOX.fontStyle
 
@@ -33,7 +33,7 @@ Este atributo es una cadena de **lectura** y escritura que contiene uno o varios
 
 
 
-| Valor     | Descripción           |
+| Value     | Descripción           |
 |-----------|-----------------------|
 | Negrita      | Estilo de fuente en negrita.      |
 | Cursiva    | Estilo de fuente cursiva.    |
@@ -45,7 +45,7 @@ Este atributo es una cadena de **lectura** y escritura que contiene uno o varios
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede usar cualquier combinación de los valores, separados por espacios. El estilo Normal tiene prioridad sobre todos los demás valores y se omitirán los demás especificados junto con Normal.
 
@@ -55,7 +55,7 @@ Con fines de representación, Normal es el estilo de fuente predeterminado. El v
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 

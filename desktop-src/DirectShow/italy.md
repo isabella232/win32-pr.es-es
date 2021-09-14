@@ -4,12 +4,12 @@ ms.assetid: 955fb828-4290-4e60-a5db-d3f243b86d8d
 title: Italia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f10e7b6bad33e092da60877116c9306d6b9c2594f128aff77b0045847689816
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1e74092318cfbc889f9173685176d48d6b72fc0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063232"
 ---
 # <a name="italy"></a>Italia
 

@@ -3,15 +3,15 @@ title: Diseño del Registro de enrutamiento y acceso remoto
 description: La sintaxis siguiente muestra un diseño del Registro de ejemplo para el servicio de enrutador.
 ms.assetid: 5464c2f7-6bb8-4838-939d-d58508715505
 keywords:
-- RRAS del servicio de enrutamiento y acceso remoto, diseño del Registro de enrutamiento y acceso remoto
+- RRAS del servicio de enrutamiento y acceso remoto, enrutamiento y diseño del Registro de acceso remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd3388c2a11f69a473a334105d2872872b98b17b4956f12f886e50ada89f406f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f6ed72b569a8fe2efe1423ce2429c31cd0a0a65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120027405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062769"
 ---
 # <a name="routing-and-remote-access-registry-layout"></a>Diseño del Registro de enrutamiento y acceso remoto
 

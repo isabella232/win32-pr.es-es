@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 176a31c3acf846c4112e7bcb7bd457872e1e4086b4a8d214ccc7a175e7891feb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 62a32eb177c80d10a876a4b163c8a1609104fbea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119697474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062494"
 ---
 # <a name="cgenericlistaddhead-method-wxlisth---pobj-parameter"></a>Método CGenericList.AddHead (Wxlist.h): parámetro pObj
 
@@ -60,7 +60,7 @@ Devuelve un valor POSITION que indica la nueva posición de la cabeza. Si se pro
 | Encabezado | Wxlist.h (incluir Secuencias.h) |
 | Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Obtenga información sobre el host del Protocolo de autenticación 
 ms.assetid: caaef367-2952-44fc-ac4c-f0db6387850e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62bd43feec10cfadf4aee071ff5f7fe98da5d579878231b9ba3e86287bf4dbab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f007435c43969ad0f195b0a6a1e697ab817d9c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117719820"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240765"
 ---
 # <a name="extensible-authentication-protocol-host"></a>Host de protocolo de autenticación extensible
 

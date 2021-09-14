@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 68a6c03fbad6002d20f7ab84ac5aea3f7205183b613b66cd18d7cdf8b03678ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7774fcd1b3ef451fffb34ce9ad10d404e8ea95b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118958980"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062702"
 ---
 # <a name="invoke-method-of-the-cim_check-class"></a>Método Invoke de la clase \_ CIM Check
 
@@ -32,7 +32,7 @@ Para obtener más información sobre cómo el método evalúa una comprobación 
 
  
 
-En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Este método no tiene parámetros.
 
 Devuelve un valor de 0 (cero) si se ejecuta correctamente, 1 (uno) si no se admite el método y cualquier otro número para indicar un error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
@@ -61,7 +61,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

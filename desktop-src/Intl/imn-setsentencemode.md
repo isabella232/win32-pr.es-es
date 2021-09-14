@@ -4,14 +4,14 @@ ms.assetid: 72455193-cd17-45f8-b19c-a1f735ff81bf
 title: IMN_SETSENTENCEMODE de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30a5fa976bbd28e86d5b46eec074e5ed802cc0a32e1c7c1c86b0e01a4629fe13
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0130c5b3d7284112e64cca698b358650f51f3642
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118145951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063112"
 ---
-# <a name="imn_setsentencemode-notification-code"></a>Código de notificación \_ DE IMN SETSENTENCEMODE
+# <a name="imn_setsentencemode-notification-code"></a>Código de notificación DE IMN \_ SETSENTENCEMODE
 
 Notifica a una aplicación cuando se actualiza el modo de oración del contexto de entrada. La aplicación recibe este comando a través del mensaje [**\_ WM IME \_ NOTIFY**](wm-ime-notify.md) con la configuración de parámetros, como se muestra a continuación.
 
@@ -44,7 +44,7 @@ No se usa.
 
 Este comando no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación puede obtener información sobre el modo de oración mediante la [**función ImmGetConversionStatus.**](/windows/desktop/api/Imm/nf-imm-immgetconversionstatus)
 
@@ -52,7 +52,7 @@ La aplicación puede obtener información sobre el modo de oración mediante la 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
@@ -60,7 +60,7 @@ La aplicación puede obtener información sobre el modo de oración mediante la 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,14 +4,14 @@ ms.assetid: 1a007bed-15e5-4400-9d2f-32e37e1765d2
 title: IMR_DOCUMENTFEED de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbef4c83d35fa02e2c879d76b9520df6d01588c07cb725b13e66888e9dd27722
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc4fe46f95b7ad17ba7bb7850ec3fb9ca980519f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118948782"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063109"
 ---
-# <a name="imr_documentfeed-notification-code"></a>Código de notificación \_ de IMR DOCUMENTFEED
+# <a name="imr_documentfeed-notification-code"></a>Código de \_ notificación DE IMR DOCUMENTFEED
 
 Notifica a una aplicación cuando el IME seleccionado necesita la cadena convertida de la aplicación. La aplicación recibe este comando a través del mensaje [**WM \_ IME \_ REQUEST**](wm-ime-request.md) con parámetros establecidos como se muestra a continuación.
 
@@ -36,7 +36,7 @@ Establezca en IMR \_ DOCUMENTFEED.
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntero a un búfer que contiene la [**estructura RECONVERTSTRING.**](/windows/win32/api/imm/ns-imm-reconvertstring)
+Puntero a un búfer para contener la [**estructura RECONVERTSTRING.**](/windows/win32/api/imm/ns-imm-reconvertstring)
 
 </dd> </dl>
 
@@ -44,7 +44,7 @@ Puntero a un búfer que contiene la [**estructura RECONVERTSTRING.**](/windows/w
 
 Devuelve la estructura de cadena de reconversión actual. Si *lParam se* establece en **NULL,** la aplicación devuelve el tamaño necesario para que el búfer mantenga la estructura. El comando devuelve 0 si no se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El IME almacena en caché las cadenas convertida para una mayor precisión de conversión. Una limitación del almacenamiento en caché del IME es que pierde la cadena convertida en las siguientes circunstancias:
 
@@ -66,7 +66,7 @@ Con el **comando \_ DOCUMENTFEED de IMR,** el IME puede actualizar sus cadenas a
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bc16b806782055328fe576851e0b227d2178289c1d3cece35f7ce6f1f2e66d00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00f05d4f3e2fcb369c3ecda83cc4fd9659ee69ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119578235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063375"
 ---
 # <a name="setpowerstate-method-of-the-cim_usbhub-class"></a>Método SetPowerState de la clase \_ CIM USBHub
 
 El **método SetPowerState** de la clase CIM USBHub establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo \_ en ese estado. En una subclase, el conjunto de códigos de retorno posibles debe especificarse mediante un [**calificador ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) en el método . Las cadenas a las que se traduce el contenido de **ValueMap** también deben especificarse en la subclase como calificador de **matriz Values.** Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -106,7 +106,7 @@ Especifica cuándo se debe establecer el estado de energía, ya sea como un valo
 
 Devuelve 0 (cero) si se realiza correctamente, 1 (uno) si no se admite la solicitud *PowerState* y *Time* especificadas y otro valor si se produjo cualquier otro error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
@@ -116,7 +116,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -126,7 +126,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

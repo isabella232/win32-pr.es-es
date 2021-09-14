@@ -1,5 +1,5 @@
 ---
-description: Intenta colocar el servicio administrado por el controlador del sistema lógico en estado pausado.
+description: Intenta colocar el servicio administrado por el controlador del sistema lógico en estado en pausa.
 ms.assetid: f5e960c1-868b-4b7b-9ea5-0fb8a9cfbafa
 ms.tgt_platform: multiple
 title: Método PauseService de la Win32_SystemDriver clase
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 087ffcda8aaa64588485015ed211713b0248cee73107a4c3726c278d61aba8e8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a85c49a8ea81cc9af9a99f238bdafb473ca85050
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062689"
 ---
 # <a name="pauseservice-method-of-the-win32_systemdriver-class"></a>Método PauseService de la clase \_ SystemDriver de Win32
 
-El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio administrado por el controlador del sistema lógico en estado pausado.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio administrado por el controlador del sistema lógico en estado en pausa.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -84,7 +84,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** property) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**Propiedad** State) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -249,7 +249,7 @@ $Return = $usbPrintDriver.PauseService()
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

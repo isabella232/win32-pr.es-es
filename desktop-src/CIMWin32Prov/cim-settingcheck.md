@@ -29,18 +29,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 2be1e96bc47889387e760ec082e50207c496cdeb
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062275"
 ---
 # <a name="cim_settingcheck-class"></a>Cim \_ SettingCheck (clase)
 
 La **clase CIM \_ SettingCheck** especifica la información necesaria para comprobar un archivo de configuración determinado para una entrada específica que contiene un valor igual al valor especificado. Se supone que todas las comparaciones no tienen en cuenta mayúsculas de minúsculas.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -69,7 +69,7 @@ class CIM_SettingCheck : CIM_Check
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SettingCheck de CIM** tiene estos tipos de miembros:
 
@@ -897,7 +897,7 @@ Esta propiedad se hereda de la [**clase \_ CHECK de CIM.**](cim-check.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
@@ -917,7 +917,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

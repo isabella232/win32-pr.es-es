@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 8a3e53e514f80f89f1b1e97c1edde9b86add0db7a29de9443c5a1b48085a40fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9437626341f0ac57136645d40a8389436e8af1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063170"
 ---
 # <a name="alpc_send_message-class"></a>ALPC \_ Send \_ Message (clase)
 
@@ -36,7 +36,7 @@ class ALPC_Send_Message : ALPC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase ALPC \_ Send \_ Message** tiene estos tipos de miembros:
 
@@ -65,7 +65,7 @@ Identificador del mensaje.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

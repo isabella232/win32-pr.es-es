@@ -4,16 +4,16 @@ ms.assetid: dffda43a-5831-4889-864f-81351b9e2bb3
 title: Crear archivos ASF en DirectShow (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0569f5460e0cf31d4986e23bb2a576c48d68da03d3bbb7f33d05fe15877c180
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d4614ed813c2e9f51c77cd8773739188aa5d4d07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120108105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063292"
 ---
 # <a name="creating-asf-files-in-directshow-directshow"></a>Crear archivos ASF en DirectShow (DirectShow)
 
-En esta sección se describe cómo usar el filtro DirectShow [WM ASF Writer](wm-asf-writer-filter.md) para crear archivos en formato de sistemas avanzados (ASF). ASF es un formato de contenedor que puede contener cualquier tipo de datos comprimidos o sin comprimir. Windows Los archivos de formato multimedia son archivos ASF que usan determinados códecs, tal como se especifica en Windows Kit de desarrollo de software (SDK) de formato multimedia. Estos archivos usan las extensiones ".wma" para Windows archivos de audio multimedia y ".wmv" para Windows archivos de vídeo multimedia.
+En esta sección se describe cómo usar el filtro DirectShow [WM ASF Writer](wm-asf-writer-filter.md) para crear archivos en formato de sistemas avanzados (ASF). ASF es un formato de contenedor que puede contener cualquier tipo de datos comprimidos o sin comprimir. Windows Los archivos de formato multimedia son archivos ASF que usan determinados códecs, tal y como se especifica en Windows Kit de desarrollo de software (SDK) de formato multimedia. Estos archivos usan las extensiones ".wma" para Windows archivos de audio multimedia y ".wmv" para Windows archivos de vídeo multimedia.
 
 Este tema contiene las siguientes secciones:
 

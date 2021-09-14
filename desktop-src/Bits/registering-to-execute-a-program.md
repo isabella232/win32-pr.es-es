@@ -7,12 +7,12 @@ keywords:
 - registro para bits de notificación de línea de comandos
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: db86f67ad899d190b24d74bfb04c501ca7881351cfb2f37ef53300666622c317
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7831a959a73112b21bdf3e0fbc2b7d3dd4f6a447
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063410"
 ---
 # <a name="registering-to-execute-a-program"></a>Registro para ejecutar un programa
 
@@ -25,13 +25,13 @@ Puede registrarse para que BITS ejecute un programa basado en el trabajo transfe
 
 3.  Llame al [**método IBackgroundCopyJob::SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) para especificar cuándo se ejecuta la línea de comandos.
 
-    Solo puede especificar las marcas de eventos BG \_ NOTIFY JOB TRANSFERRED y BG NOTIFY JOB \_ \_ \_ \_ \_ ERROR. Se omite \_ la marca BG NOTIFY JOB \_ \_ MODIFICATION.
+    Solo puede especificar las marcas de eventos BG \_ NOTIFY JOB TRANSFERRED y BG NOTIFY JOB \_ \_ \_ \_ \_ ERROR. Se omite la marca BG \_ NOTIFY \_ JOB \_ MODIFICATION.
 
-Tenga en cuenta que BITS no ejecutará el programa si también se registró para recibir devoluciones de llamada [COM](registering-a-com-callback.md) y el puntero de interfaz de devolución de llamada es válido o el método de notificación al que llama BITS devuelve un código correcto. Sin embargo, si el método de notificación devuelve un código de error, como E \_ FAIL, BITS ejecutará la línea de comandos.
+Tenga en cuenta que BITS no ejecutará el programa si también se registró para recibir devoluciones de llamada [COM](registering-a-com-callback.md) y el puntero de interfaz de devolución de llamada es válido o el método de notificación que llama a BITS devuelve un código correcto. Sin embargo, si el método de notificación devuelve un código de error, como E \_ FAIL, BITS ejecutará la línea de comandos.
 
 BITS llama a [**la función CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) para iniciar el programa. Si especifica una cadena de parámetro, el primer parámetro debe ser el nombre del programa.
 
-En el ejemplo siguiente se muestra cómo registrarse para ejecutar un programa cuando se produce el evento transferido por el trabajo. En el ejemplo se supone que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
+En el ejemplo siguiente se muestra cómo registrarse para ejecutar un programa cuando se produce el evento transferido por el trabajo. En el ejemplo se da por supuesto que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
 
 
 ```C++
@@ -70,7 +70,7 @@ if (SUCCEEDED(hr))
 
 
 
-Cuando el estado del trabajo se convierte en BG \_ JOB \_ STATE \_ TRANSFERRED, BITS ejecuta el programa especificado en pProgram. El ejemplo siguiente es una implementación sencilla de un programa que toma un identificador de trabajo como argumento. El programa supone que se le pasa el número correcto de argumentos.
+Cuando el estado del trabajo se convierte en BG \_ JOB \_ STATE \_ TRANSFERRED, BITS ejecuta el programa especificado en pProgram. El ejemplo siguiente es una implementación sencilla de un programa que toma un identificador de trabajo como argumento. El programa supone que se pasa el número correcto de argumentos.
 
 
 ```C++

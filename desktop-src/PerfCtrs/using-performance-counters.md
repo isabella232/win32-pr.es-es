@@ -4,12 +4,12 @@ ms.assetid: fff8bc4a-3d7a-4d70-ba03-347f9f063c84
 title: Uso de contadores de rendimiento
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 18bb017a34fb23188c20e81bce28c171c50dcb4d43cd52d458e92be99b7d03a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abc055a34f0937e056d1d983354fc0a3edf182a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062873"
 ---
 # <a name="using-performance-counters"></a>Uso de contadores de rendimiento
 
@@ -22,7 +22,7 @@ Los proveedores de **contadores de** rendimiento son componentes de software que
 - Use [clases de contadores de](/windows/desktop/WmiSdk/monitoring-performance-data) rendimiento wmi cuando desee recopilar datos de contadores de un sistema local o remoto mediante WMI.
 - Use [las API del proveedor de contadores de](providing-counter-data.md) rendimiento cuando desee publicar datos de contadores de rendimiento desde el componente de software.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Acerca de los contadores de rendimiento](about-performance-counters.md)
 

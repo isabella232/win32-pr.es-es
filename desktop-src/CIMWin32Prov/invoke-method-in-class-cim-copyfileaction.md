@@ -1,5 +1,5 @@
 ---
-description: El método Invoke de la clase \_ CopyFileAction de CIM realiza una acción determinada. Los detalles sobre cómo el método realiza la acción son específicos de la implementación. Este método se hereda de la acción \_ CIM.
+description: El método Invoke de la \_ clase CopyFileAction de CIM realiza una acción determinada. Los detalles sobre cómo el método realiza la acción son específicos de la implementación. Este método se hereda de la acción \_ CIM.
 ms.assetid: b948e9ed-332d-4ac5-be7f-88b7f46f5f1d
 ms.tgt_platform: multiple
 title: Método Invoke de la CIM_CopyFileAction clase
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 66b3e66db91be28eb16d92266bc7ab4acba0de56ede57da1b6c375ee91de5adc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b88ddafd0420a40af8b815aab26849572cb7c019
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118675766"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062703"
 ---
-# <a name="invoke-method-of-the-cim_copyfileaction-class"></a>Método Invoke de la clase \_ CopyFileAction de CIM
+# <a name="invoke-method-of-the-cim_copyfileaction-class"></a>Método Invoke de la \_ clase CopyFileAction de CIM
 
 El **método Invoke** de la clase [**\_ CopyFileAction de CIM**](cim-copyfileaction.md) realiza una acción determinada. Los detalles sobre cómo el método realiza la acción son específicos de la implementación. Este método se hereda de la [**acción \_ CIM**](cim-action.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro núme
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

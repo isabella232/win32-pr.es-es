@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b5bbc459a020758398eef8de3db8d809378a1a88095c69fd91a170ce3930e3b9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 87a57e53a85e4433ae325fc2ed441211db75b79f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119816665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062251"
 ---
 # <a name="win32_allocatedresource-class"></a>Clase AllocatedResource de Win32 \_
 
@@ -42,7 +42,7 @@ class Win32_AllocatedResource : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ AllocatedResource de Win32** tiene estos tipos de miembros:
 
@@ -86,7 +86,7 @@ Un [**\_ dispositivo lógico CIM**](cim-logicaldevice.md) que representa las pro
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ AllocatedResource de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 
@@ -104,7 +104,7 @@ La **clase \_ AllocatedResource de Win32** se deriva de [**la dependencia CIM \_
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

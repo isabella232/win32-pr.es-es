@@ -1,5 +1,5 @@
 ---
-description: La clase Cim ApplicationSystemSoftwareFeature representa una asociación que identifica las características \_ de software que constituye un sistema de aplicación determinado. Las características de software se pueden incluir en distintos productos.
+description: La clase CIM ApplicationSystemSoftwareFeature representa una asociación que identifica las características de \_ software que constituye un sistema de aplicación determinado. Las características de software se pueden incluir en diferentes productos.
 ms.assetid: e40d0d64-f9f0-4c05-aef6-c759256e408b
 ms.tgt_platform: multiple
 title: CIM_ApplicationSystemSoftwareFeature clase
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d751a4564e8ed7357abd9dae5b4773e7180c66a5d0a89781a40d672715e69b11
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6b13a15370b19583eef61fb36fda2d63fcb61989
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119322575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063396"
 ---
 # <a name="cim_applicationsystemsoftwarefeature-class"></a>Cim \_ ApplicationSystemSoftwareFeature (clase)
 
-La **clase \_ Cim ApplicationSystemSoftwareFeature** representa una asociación que identifica las características de software que constituye un sistema de aplicación determinado. Las características de software se pueden incluir en distintos productos.
+La **clase \_ CIM ApplicationSystemSoftwareFeature** representa una asociación que identifica las características de software que constituye un sistema de aplicación determinado. Las características de software se pueden incluir en diferentes productos.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_ApplicationSystemSoftwareFeature : CIM_SystemComponent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim ApplicationSystemSoftwareFeature** tiene estos tipos de miembros:
 
@@ -60,7 +60,7 @@ La **clase \_ Cim ApplicationSystemSoftwareFeature** tiene estas propiedades.
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ ApplicationSystem**
+Tipo de datos: **Cim \_ ApplicationSystem**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -69,7 +69,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Un [**sistema de aplicación \_ CIM**](cim-applicationsystem.md) que contiene el sistema primario de la asociación.
+Un [**sistema de \_ aplicación CIM**](cim-applicationsystem.md) que contiene el sistema primario de la asociación.
 
 </dd> <dt>
 
@@ -89,13 +89,13 @@ Cim [**\_ SoftwareFeature**](cim-softwarefeature.md) que contiene el elemento se
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Cim ApplicationSystemSoftwareFeature** se deriva de [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

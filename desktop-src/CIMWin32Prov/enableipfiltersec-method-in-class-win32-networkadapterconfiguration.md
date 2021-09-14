@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a529b0628c70cacaf822045e173ddda9205c3c7c9dd726f2a12f0d29410d4cec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3429e2c2ba78e013da9195961b76ff84ffda9b68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062710"
 ---
 # <a name="enableipfiltersec-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableIPFilterSec de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableIPFilterSec** se usa para habilitar la seguridad de protocolo de Internet (IPsec) globalmente en todos los adaptadores de red enlazados a IP.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -404,7 +404,7 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Con la seguridad habilitada, las características de seguridad operativa de cualquier adaptador de red se pueden controlar mediante el método [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) específico del adaptador de red.
 
@@ -430,7 +430,7 @@ objNetworkSettings.EnableIPFilterSec(True)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -1,5 +1,5 @@
 ---
-description: La clase \_ Cim ServiceServiceDependency representa una asociación entre dos servicios.
+description: La clase CIM \_ ServiceServiceDependency representa una asociación entre dos servicios.
 ms.assetid: 0fb43fb3-2c05-4762-b339-2dcc090ed38d
 ms.tgt_platform: multiple
 title: CIM_ServiceServiceDependency clase
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: abe08007a92959276216cac0a592d79c72147b7db0f31a51cb1673c030d1a7de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fdc8ea1a3324395e5230ca6d47487b61c8c02ba9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062279"
 ---
 # <a name="cim_serviceservicedependency-class"></a>Clase \_ ServiceServiceDependency de CIM
 
-La **clase \_ Cim ServiceServiceDependency** representa una asociación entre dos servicios. El servicio asociado debe estar presente, debe haber finalizado o debe estar ausente para que el otro servicio funcione. Por ejemplo, los servicios de arranque pueden depender de los servicios de BIOS, disco e inicialización subyacentes. Para los servicios de inicialización, el servicio de arranque depende de que se completen los servicios de inicialización. En el caso de los servicios de disco, los servicios de arranque pueden usar realmente los SAP de este servicio. Esta dependencia de uso se modela en la [**\_ asociación Cim ServiceSAPDependency.**](cim-servicesapdependency.md)
+La **clase CIM \_ ServiceServiceDependency** representa una asociación entre dos servicios. El servicio asociado debe estar presente, debe haber finalizado o debe estar ausente para que el otro servicio funcione. Por ejemplo, los servicios de arranque pueden depender de los servicios de BIOS, disco e inicialización subyacentes. Para los servicios de inicialización, el servicio de arranque depende de que se completen los servicios de inicialización. En el caso de los servicios de disco, los servicios de arranque pueden usar realmente los SAP de este servicio. Esta dependencia de uso se modela en la [**\_ asociación Cim ServiceSAPDependency.**](cim-servicesapdependency.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,15 +47,15 @@ class CIM_ServiceServiceDependency : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ ServiceServiceDependency** de CIM tiene estos tipos de miembros:
+La **clase CIM \_ ServiceServiceDependency** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Cim ServiceServiceDependency** tiene estas propiedades.
+La **clase CIM \_ ServiceServiceDependency** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Tipo de datos: **Servicio CIM \_**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
 Un [**servicio CIM \_**](cim-service.md) que describe el servicio que depende de un servicio subyacente.
@@ -153,13 +153,13 @@ No se debe iniciar el servicio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ ServiceServiceDependency**, vea [Clases win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ ServiceServiceDependency**, vea [Clases win32.](win32-provider.md)
 
-La **clase \_ ServiceServiceDependency** de CIM se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
+La **clase \_ SERVICEServiceDependency** de CIM se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -175,7 +175,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

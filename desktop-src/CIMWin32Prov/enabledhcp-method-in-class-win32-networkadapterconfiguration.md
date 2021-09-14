@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d5be73abab17303cce7a9a0e4ae2beab9bdb53df6a45d0162a575ce167ee1df8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 002dedd3b0165053fea98dda035316676af638f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118676581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062712"
 ---
 # <a name="enabledhcp-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableDHCP de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableDHCP** habilita el Protocolo de configuración dinámica de host (DHCP) para el servicio con este adaptador de red. DHCP permite asignar dinámicamente direcciones IP.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -312,11 +312,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -476,7 +476,7 @@ else
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

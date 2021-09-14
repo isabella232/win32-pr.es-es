@@ -4,12 +4,12 @@ ms.assetid: 6b3d0a2f-acff-47a7-bc9f-6e9d659f683c
 title: Métodos Bitmap.ApplyEffect
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: a2bbb51a337113f1933b8043bd387ac41beded2628afa89b56e281c433df2ad8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4276cbd1ac3fd684c9df25bcd9456f41254b79f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119717655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063462"
 ---
 # <a name="bitmapapplyeffect-methods"></a>Métodos Bitmap.ApplyEffect
 

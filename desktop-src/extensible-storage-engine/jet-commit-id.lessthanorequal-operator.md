@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: operador JET_COMMIT_ID.LessThanOrEqual'
-title: JET_COMMIT_ID operador.LessThanOrEqual (Microsoft.Isam.Esent.Interop.Windows8)
+title: operador JET_COMMIT_ID.LessThanOrEqual (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'LessThanOrEqual operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID.op_LessThanOrEqual(Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID,Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_commit_id.op_lessthanorequal(v=EXCHG.10)
@@ -25,16 +25,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2ee9b0db01098f53591d7f81983ad3b187ce94f9056f20aedc32a67d7dccbd7e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 872ded299fc36295ea56500605f23af37feb0962
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117895124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063490"
 ---
 # <a name="jet_commit_idlessthanorequal-operator"></a>operador JET_COMMIT_ID.LessThanOrEqual
 
-Determine si un commitid es anterior a otro commitid.
+Determine si un commitid está delante de otro commitid.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -81,7 +81,7 @@ public static bool operator <=(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si lhs es anterior o igual a rhs.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

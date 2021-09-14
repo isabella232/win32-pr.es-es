@@ -4,12 +4,12 @@ ms.assetid: 72f69ad2-15d9-4191-a8aa-4c23a2392006
 title: Comprobador de archivos de sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2f751aa30c06dbff90b8d5221974236b45edf9f0f278c144f755568a0040f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da4e0d67f6de6aba62fe262969d7f30db0c45335
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118330287"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249470"
 ---
 # <a name="system-file-checker"></a>Comprobador de archivos de sistema
 
@@ -17,7 +17,7 @@ La utilidad de comprobación de archivos del sistema, Sfc.exe, permite a los adm
 
 Los archivos críticos para reiniciar Windows que no coincidan con la versión Windows esperada se pueden reemplazar por las versiones correctas. Si se repara un archivo, también se repararán los datos del Registro correspondientes. Los archivos protegidos no son críticos para Windows no se reparan.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 A continuación se muestra la sintaxis de la línea de comandos para Sfc.
 
@@ -86,7 +86,7 @@ Este valor no se admite.
 
 </dd> <dt>
 
-<span id="_QUIET"></span><span id="_quiet"></span>/quiet
+<span id="_QUIET"></span><span id="_quiet"></span>/QUIET
 </dt> <dd>
 
 Este valor no se admite.
@@ -160,7 +160,7 @@ Sfc establece el siguiente valor del Registro:
 
 Para obtener más información, vea [Valores del Registro WFP](wfp-registry-values.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo Windows Vista, puede establecer la variable de entorno **\_ \_ LOGFILE** de SEGUIMIENTO DE WINDOWS en la ubicación de un directorio válido para recibir un archivo de registro.
 

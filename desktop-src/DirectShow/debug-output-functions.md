@@ -5,11 +5,11 @@ title: Funciones de salida de depuración
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6ee1bdbc9cce98ce1704b62a8354b81951df33c4
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062371"
 ---
 # <a name="debug-output-functions"></a>Funciones de salida de depuración
 
@@ -59,7 +59,7 @@ DirectShow define varios tipos de mensaje, que se muestran en la tabla siguiente
 
 
 
-| Valor                   | Descripción                                             |
+| Value                   | Descripción                                             |
 |-------------------------|---------------------------------------------------------|
 | ERROR \_ DE REGISTRO              | Notificación de error.                                     |
 | BLOQUEO DE \_ REGISTROS            | Bloqueo y desbloqueo de secciones críticas.             |
@@ -84,11 +84,11 @@ Cada módulo puede establecer su propio nivel de depuración para cada tipo de m
 
 **HKEY \_ LOCAL \_ MACHINE** \\ **&lt; DebugRoot &gt;** \\ **&lt; ModuleName &gt;** \\ **&lt; MessageType &gt;**
 
-donde *<Message Type>* es el tipo de mensaje menos el inicial "LOG"; por \_ ejemplo, **LOCKING** para los mensajes LOG \_ LOCKING. Cuando se carga un módulo, la biblioteca de depuración encuentra los niveles de registro del módulo en el Registro. Si las claves del Registro no existen, la biblioteca de depuración las crea.
+donde *<Message Type>* es el tipo de mensaje menos el "LOG" \_ inicial; por ejemplo, **LOCKING** para los mensajes LOG \_ LOCKING. Cuando se carga un módulo, la biblioteca de depuración encuentra los niveles de registro del módulo en el Registro. Si las claves del Registro no existen, la biblioteca de depuración las crea.
 
 Un módulo también puede establecer sus propios niveles en tiempo de ejecución mediante la [**función DbgSetModuleLevel.**](dbgsetmodulelevel.md) Para enviar un mensaje a la salida de depuración, llame a la [**macro DbgLog.**](dbglog.md) En el ejemplo siguiente se crea un mensaje de nivel 3 de tipo LOG \_ TRACE:
 
-También puede especificar niveles de registro globales con la siguiente clave del Registro:
+También puede especificar niveles de registro globales, con la siguiente clave del Registro:
 
 
 ```C++

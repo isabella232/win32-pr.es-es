@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 619a3cd277425b555bc64139c3e59c959cc6abd19d6da22c2129830c38496a24
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1cd3f4e53c61fef1f030f654bbb0363cd7c97381
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953344"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063279"
 ---
 # <a name="dbglog-macro"></a>Macro DbgLog
 
@@ -74,9 +74,9 @@ Argumentos adicionales para la cadena de formato.
 
 Esta macro no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el registro de depuración de cualquiera de los tipos de mensaje está establecido en el nivel especificado o superior, esta macro envía la cadena con formato a la ubicación de salida de depuración.
+Si el registro de depuración de cualquiera de los tipos de mensaje se establece en el nivel especificado o superior, esta macro envía la cadena con formato a la ubicación de salida de depuración.
 
 La macro agrega automáticamente un carácter de nueva línea a la cadena de salida.
 
@@ -102,7 +102,7 @@ DbgLog((LOG_TRACE, 3, TEXT("Connected input pin %d"), nPinNumber));
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

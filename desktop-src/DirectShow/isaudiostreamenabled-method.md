@@ -4,12 +4,12 @@ ms.assetid: df6c69a7-6eb0-4662-a3aa-f3f895b42cbc
 title: Método IsAudioStreamEnabled
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2131376346f2a0311fc5acd8e0051292a12fb0145b44226363c7d891a5ef3c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c92df59479e5729c392eb25b6c6c075a52b4835b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817480"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063248"
 ---
 # <a name="isaudiostreamenabled-method"></a>Método IsAudioStreamEnabled
 
@@ -39,7 +39,7 @@ Especifica la secuencia de audio como un valor entero de 0 a 7.
 
 Devuelve un valor booleano que indica si la secuencia de audio especificada está disponible para el título actual. True significa que está disponible.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Aunque un disco puede contener hasta ocho secuencias de audio independientes, cada secuencia no está necesariamente disponible para cada título. Por ejemplo, un título de película principal podría tener tres secuencias de audio para inglés, español y japonés, pero el título "Próximas carreras" podría tener solo una secuencia de audio en inglés. Compruebe siempre que una secuencia está disponible para un título antes de establecer la [**propiedad CurrentAudioStream.**](currentaudiostream-property.md)
 

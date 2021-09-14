@@ -1,6 +1,6 @@
 ---
 title: LVM_GETFOCUSEDGROUP mensaje (Commctrl.h)
-description: Obtiene el grupo que tiene el foco. Envíe este mensaje explícitamente o mediante la macro \_ ListView GetFocusedGroup.
+description: Obtiene el grupo que tiene el foco. Envíe este mensaje explícitamente o mediante la \_ macro ListView GetFocusedGroup.
 ms.assetid: c1902f35-84b7-4f46-89a6-e48148f06172
 keywords:
 - LVM_GETFOCUSEDGROUP controles de Windows mensaje
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9b253405683c058518706e92e62f09041ae4db0e4bee426aa653103bda2188c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e0d12eb637ec1a421a5eaff58636df7bef8f449
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119877435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061852"
 ---
 # <a name="lvm_getfocusedgroup-message"></a>Mensaje \_ GETFOCUSEDGROUP de LVM
 
@@ -37,7 +37,7 @@ Obtiene el grupo que tiene el foco. Envíe este mensaje explícitamente o median
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el índice del grupo con el estado LVGS FOCUSED o -1 si no hay ningún grupo con el estado \_ LVGS \_ FOCUSED.
+Devuelve el índice del grupo con el estado LVGS FOCUSED, o -1 si no hay ningún grupo con el estado \_ LVGS \_ FOCUSED.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Devuelve el índice del grupo con el estado LVGS FOCUSED o -1 si no hay ningún 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
