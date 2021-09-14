@@ -4,12 +4,12 @@ description: Un cliente NAP es un equipo que ejecuta Windows XP con Service Pack
 ms.assetid: 163c33c9-b18b-49f9-a2a1-fd90a1dc0826
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be876cf7f0cf53c1c3c5885d94c43f45c1f79759d80490a0647d5e7d7678fba9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15862eaa6ae4f4c1f79c53cf9d540aedec295e8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161262"
 ---
 # <a name="nap-client-architecture"></a>Arquitectura de cliente NAP
 
@@ -38,7 +38,7 @@ La arquitectura de cliente NAP consta de lo siguiente:
 
     Mantiene la información de estado de mantenimiento actual del cliente NAP y facilita la comunicación entre las capas NAP EC y SHA. El agente NAP se proporciona con la plataforma NAP.
 
--   API del agente de estado del sistema
+-   API del agente de mantenimiento del sistema
 
     Proporciona un conjunto de funciones que permiten a los SHA registrarse con el agente NAP, indicar el estado de mantenimiento del sistema, responder a las consultas del estado de mantenimiento del sistema del agente NAP y para que el Agente NAP pase información de corrección de estado del sistema a un SHA. La API de SHA permite a los proveedores crear e instalar SHA adicionales. La API de SHA se proporciona con la plataforma NAP. Vea las siguientes interfaces nap: [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md), [**INapSystemHealthAgentCallback**](inapsystemhealthagentcallback.md)e [**INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md).
 
@@ -46,19 +46,19 @@ Para indicar el estado de mantenimiento de un SHA específico, un SHA crea una i
 
 En las secciones siguientes se describen los componentes de la arquitectura de cliente NAP con más detalle.
 
-## <a name="nap-enforcement-client"></a>Cliente de cumplimiento de NAP
+## <a name="nap-enforcement-client"></a>Cliente de cumplimiento nap
 
 Un cliente de cumplimiento nap (EC) solicita algún nivel de acceso a una red, pasa el estado de mantenimiento del equipo a un punto de cumplimiento nap que proporciona el acceso a la red. Los puntos de cumplimiento de NAP son equipos o dispositivos de acceso a la red que usan NAP o se pueden usar con NAP para requerir la evaluación del estado de mantenimiento de un cliente NAP y proporcionar acceso o comunicación de red restringidos. Si el estado del equipo no es compatible, NAP EC indica el estado restringido del cliente NAP a otros componentes de la arquitectura de cliente NAP.
 
 Los ECs de NAP para la plataforma NAP proporcionados en Windows XP con SP3, Windows Vista y Windows Server 2008 son los siguientes:
 
 -   Una EC de NAP de IPsec para comunicaciones protegidas por IPsec.
--   Una EC DE NAP de EAPHost para conexiones autenticadas por 802.1X.
+-   Una EC de NAP de EAPHost para conexiones autenticadas por 802.1X.
 -   Una VPN NAP EC para conexiones VPN de acceso remoto.
 -   Una EC NAP de DHCP para la configuración de direcciones IPv4 basadas en DHCP.
 -   Nap EC de puerta de enlace de TS para conexiones de puerta de enlace de TS.
 
-Para Windows XP con SP3, hay TARJETAS NAP independientes para conexiones cableadas e inalámbricas autenticadas con 802.1X.
+Para Windows XP con SP3, hay TARJETAS NAP independientes para conexiones cableadas e inalámbricas autenticadas por 802.1X.
 
 ### <a name="ipsec-nap-ec"></a>IPsec NAP EC
 
@@ -74,7 +74,7 @@ EAPHost NAP EC es un componente que obtiene el SSoH del agente NAP y lo envía c
 
 ### <a name="vpn-nap-ec"></a>VPN NAP EC
 
-VPN NAP EC es una funcionalidad del servicio Connection Manager de acceso remoto que obtiene el SSoH del agente NAP y lo envía como un mensaje PEAP-TLV para las conexiones VPN de acceso remoto. La VPN NAP EC se conoce como la EC de cuarentena de acceso remoto en el complemento Configuración de cliente NAP.
+LA VPN NAP EC es una funcionalidad del servicio Connection Manager de acceso remoto que obtiene el SSoH del agente NAP y lo envía como un mensaje PEAP-TLV para las conexiones VPN de acceso remoto. La VPN NAP EC se conoce como EC de cuarentena de acceso remoto en el complemento Configuración de cliente NAP.
 
 ### <a name="dhcp-nap-ec"></a>DHCP NAP EC
 
@@ -82,7 +82,7 @@ NAP EC de DHCP es una funcionalidad del servicio cliente DHCP que usa mensajes D
 
 ## <a name="system-health-agent"></a>Agente de mantenimiento del sistema
 
-Un agente de mantenimiento del sistema (SHA) realiza actualizaciones de estado del sistema y publica su estado en forma de SoH para el agente NAP. El SoH contiene información que el servidor de directivas de mantenimiento nap puede usar para comprobar que el equipo cliente está en el estado de mantenimiento necesario. Un SHA coincide con un validador de estado del sistema (SHV) en el lado servidor de la arquitectura de la plataforma NAP. La SHV correspondiente puede devolver una respuesta SoH (SoHR) al cliente NAP, que pasa la EC de NAP y el agente NAP al SHA, informándose de lo que debe hacer si sha no se encuentra en un estado de mantenimiento necesario. Por ejemplo, el SoHR enviado por una SHV antivirus podría indicar al antivirus SHA correspondiente que consulte un servidor de firmas antivirus para obtener la versión más reciente del archivo de firma antivirus. El SoHR también puede incluir el nombre o la dirección IP del servidor de firma antivirus que se consulta.
+Un agente de mantenimiento del sistema (SHA) realiza actualizaciones de estado del sistema y publica su estado en forma de SoH para el agente NAP. El SoH contiene información que el servidor de directivas de mantenimiento nap puede usar para comprobar que el equipo cliente está en el estado de mantenimiento necesario. Un SHA coincide con un validador de estado del sistema (SHV) en el lado servidor de la arquitectura de la plataforma NAP. El SHV correspondiente puede devolver una respuesta SoH (SoHR) al cliente NAP, que pasa la EC de NAP y el agente NAP al SHA, lo que le informa de lo que debe hacer si sha no está en un estado de mantenimiento necesario. Por ejemplo, el SoHR enviado por un SHV antivirus podría indicar al antivirus SHA correspondiente que consulte un servidor de firmas antivirus para obtener la versión más reciente del archivo de firma antivirus. El SoHR también puede incluir el nombre o la dirección IP del servidor de firma antivirus que se consulta.
 
 Un SHA puede usar un cliente de directiva instalado localmente para ayudar en las funciones de administración de estado del sistema junto con un servidor de directivas. Por ejemplo, una actualización de software SHA puede usar el software cliente de software instalado localmente (el cliente de directiva) para realizar la comprobación de versiones y las funciones de instalación y actualización con el servidor de actualización de software (el servidor de directivas).
 
@@ -90,7 +90,7 @@ Un SHA puede usar un cliente de directiva instalado localmente para ayudar en la
 
 El agente NAP proporciona los siguientes servicios:
 
--   Recopila los soH de cada SHA y los almacena en caché. La memoria caché de SoH se actualiza cada vez que sha proporciona un SoH nuevo o actualizado.
+-   Recopila los SoH de cada SHA y los almacena en caché. La memoria caché de SoH se actualiza cada vez que sha proporciona un SoH nuevo o actualizado.
 -   Almacena el SSoH y lo proporciona a los ECs de NAP a petición.
 -   Pasa notificaciones a las SHA cuando cambia el estado restringido.
 -   Mantiene el estado restringido del sistema y recopila información de estado de cada SHA.

@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2a4c70412311be5ea4843a823e961fae34de2974f7365f51286ff6da36e41dcb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eeda91433e0e1474e936902da115e15c37e32e09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273316"
 ---
 # <a name="cbasemediafiltergetstate-method"></a>Método CBaseMediaFilter.GetState
 
-El `GetState` método recupera el estado del objeto (en ejecución, detenido o en pausa). Este método implementa el [**método IMediaFilter::GetState.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-getstate)
+El método recupera el estado del objeto `GetState` (en ejecución, detenido o en pausa). Este método implementa el [**método IMediaFilter::GetState.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-getstate)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Puntero a una variable que recibe un miembro del tipo enumerado [**FILTER \_ STA
 
 Devuelve S \_ OK o E \_ POINTER.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la clase base, todas las transiciones de estado son sincrónicas y se omite el parámetro *dwMilliSecsTimeout.* Si una clase derivada realiza transiciones de estado asincrónicas, debe invalidar este método para esperar durante las transiciones de estado, con un tiempo de espera de *dwMilliSecsTimeout* milisegundos.
 
@@ -76,7 +76,7 @@ En la clase base, todas las transiciones de estado son sincrónicas y se omite e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: c57212ea-1b7b-4861-8e93-18c9b0f87317
 title: Referencia de Unscribe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 873a3b83005f146608c970989b412654c854ff8e2f312903dd57fadac4a05bcb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 39f0a3286f7783ab93798d26062457e65f42d383
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119582155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254931"
 ---
 # <a name="uniscribe-reference"></a>Referencia de Unscribe
 

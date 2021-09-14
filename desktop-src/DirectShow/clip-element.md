@@ -4,17 +4,17 @@ ms.assetid: 40323e64-ad5f-4646-bad7-2a4e7d0ddcf6
 title: clip (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b94ffdbd3d9b49d961cdefdd64de9a212858c5da4859c3beddb77db0ab732d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d937f942ba7b564e65b0e37d9c11929805287da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118655519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273028"
 ---
 # <a name="clip-element"></a>clip (Elemento)
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -41,7 +41,7 @@ ms.locfileid: "118655519"
 
 El **atributo clsid** especifica el CLSID de un filtro de origen que se usará como origen. No especifique los atributos **src** **y clsid** dentro del mismo `clip` elemento.
 
-Especifique al menos un atributo de hora de inicio **(start** o **mstart)** y un atributo de tiempo de detenerse **(stop** o **mstop).** Si uno de los atributos de hora de inicio no está especificado, el valor predeterminado es 0 (el principio de la escala de tiempo para **start** o el principio del clip para **mstart).** Si uno de los atributos de tiempo de detenerse no está especificado, DES asume una velocidad de reproducción normal y calcula el tiempo de detenerse no especificado en consecuencia. Si se especifican ambos tiempos de detenerse, la reproducción es más rápida o más lenta de lo normal, si es necesario.
+Especifique al menos un atributo de hora de inicio **(start** o **mstart)** y un atributo de tiempo de detenerse **(stop** o **mstop).** Si uno de los atributos de hora de inicio no está especificado, el valor predeterminado es 0 (el principio de la escala de tiempo para **start** o el principio del clip para **mstart**). Si uno de los atributos de tiempo de detenerse no está especificado, DES asume una velocidad de reproducción normal y calcula el tiempo de detenerse no especificado en consecuencia. Si se especifican ambos tiempos de detenerse, la reproducción es más rápida o más lenta de lo normal, si es necesario.
 
 En el ejemplo siguiente, la duración de la escala de tiempo es de siete segundos **(detener** menos **iniciar**). Se supone que la velocidad de reproducción es normal, por lo que el tiempo de detenerse de los medios es predeterminado de 10 segundos (la duración más **mstart).**
 

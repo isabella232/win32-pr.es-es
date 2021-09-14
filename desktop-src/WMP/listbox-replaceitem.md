@@ -3,7 +3,7 @@ title: LISTBOX.replaceItem
 description: El método replaceItem reemplaza el texto del índice especificado por el texto especificado.
 ms.assetid: 8dc05dc6-4f89-4ae6-8a28-cbc418449694
 keywords:
-- ListBOX.replaceItem Reproductor de Windows Media
+- LISTBOX.replaceItem Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4524b479490dff81b9a114ca957c7c40282ded130d2bf35dba8c58a6197eab17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74592feb9bc58e23853b886ee2383744e36b9cff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358954"
 ---
 # <a name="listboxreplaceitem"></a>LISTBOX.replaceItem
 
@@ -60,7 +60,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f0575acefd4ce5bdde25c591b6b5749888b0be19ef5cd10f1d66189b9d2bb014
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 01597228ddbadec6c1b0db481719fb690584b7fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273236"
 ---
 # <a name="cbasemediafiltersetsyncsource-method"></a>Método CBaseMediaFilter.SetSyncSource
 
@@ -45,7 +45,7 @@ HRESULT SetSyncSource(
 *Pclock* 
 </dt> <dd>
 
-Puntero a la interfaz [**IReferenceClock del**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) reloj o **NULL.**
+Puntero a la interfaz [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) del reloj o **NULL.**
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Devuelve S \_ OK.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

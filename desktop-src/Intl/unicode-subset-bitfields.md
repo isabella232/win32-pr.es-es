@@ -4,12 +4,12 @@ ms.assetid: f897dfc7-3e78-48dc-8d3d-6929e2f4ec4d
 title: Campos de bits de subconjunto Unicode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f0fa4791e62f397e62a99a78d41dbcdc67c55299a650b1bc78bea685205399
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fced251b1bf8e04dd4c0d7d7cb0dca15c8bdfa6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119787995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254973"
 ---
 # <a name="unicode-subset-bitfields"></a>Campos de bits de subconjunto Unicode
 
@@ -339,7 +339,7 @@ Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**F
 <tr class="odd">
 <td>42</td>
 <td>2460 - 24FF</td>
-<td>Caracteres alfanuméricos incluidos</td>
+<td>Alfanuméricos incluidos</td>
 </tr>
 <tr class="even">
 <td>43</td>
@@ -369,7 +369,7 @@ Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**F
 <tr class="odd">
 <td>48</td>
 <td>3000 - 303F</td>
-<td>Símbolos y signos de puntuación CJK</td>
+<td>Símbolos y signos de puntuación de CJK</td>
 </tr>
 <tr class="even">
 <td>49</td>
@@ -605,7 +605,7 @@ Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**F
 </tr>
 <tr class="odd">
 <td>19E0 - 19FF</td>
-<td>Símbolos de Jemer</td>
+<td>Símbolos de jemer</td>
 
 </tr>
 <tr class="even">
@@ -653,7 +653,7 @@ Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**F
 <tr class="even">
 <td>85</td>
 <td>10300 - 1032F</td>
-<td>Cursiva anterior</td>
+<td>Cursiva antigua</td>
 </tr>
 <tr class="odd">
 <td>86</td>
@@ -669,7 +669,7 @@ Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**F
 <td rowspan="3">88${REMOVE}$<br />
 </td>
 <td>1D000 - 1D0FF</td>
-<td>Símbolos musicales bizantinos</td>
+<td>Símbolos músicanos bizantinas</td>
 </tr>
 <tr class="even">
 <td>1D100 - 1D1FF</td>
@@ -746,12 +746,12 @@ Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**F
 <tr class="even">
 <td>99</td>
 <td>4DC0 - 4DFF</td>
-<td>Símbolos de hexágonos de agrupación</td>
+<td>Símbolos de hexágramas de agrupación</td>
 </tr>
 <tr class="odd">
 <td>100</td>
 <td>A800 - A82F</td>
-<td>Syloti Nagri</td>
+<td>Syloti Navia</td>
 </tr>
 <tr class="even">
 <td rowspan="3">101${REMOVE}$<br />
@@ -797,7 +797,7 @@ Los campos de bits del subconjunto Unicode (USB) se usan en las estructuras [**F
 <tr class="even">
 <td>107</td>
 <td>10800 - 1083F</td>
-<td>Silabario chipriota</td>
+<td>Silabario de Chipriot</td>
 </tr>
 <tr class="odd">
 <td>108</td>

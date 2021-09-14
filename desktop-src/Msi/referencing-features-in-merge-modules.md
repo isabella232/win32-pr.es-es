@@ -4,12 +4,12 @@ ms.assetid: f2891457-efef-4319-bd09-5de7fcf32d21
 title: Hacer referencia a características en módulos de combinación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2857b71fd651955319457092d9cf689ded954af758e7906b44a761dfa6ad782
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01640902912aae7d2ca3c6519c92bbdb563a9473
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069702"
 ---
 # <a name="referencing-features-in-merge-modules"></a>Hacer referencia a características en módulos de combinación
 

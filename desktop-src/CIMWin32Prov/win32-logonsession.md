@@ -1,5 +1,5 @@
 ---
-description: Describe la sesión de inicio de sesión o las sesiones asociadas a un usuario que ha iniciado sesión en un equipo que ejecuta Windows.
+description: Describe la sesión de inicio de sesión o las sesiones asociadas a un usuario que inició sesión en un sistema informático que ejecuta Windows.
 ms.assetid: d09a115b-95a3-47c7-a04d-c810d044ccc8
 ms.tgt_platform: multiple
 title: Win32_LogonSession clase
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 85cbc80050fafe887fa99974c41666c7189b2b12c21559aac0255870b2a697d5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 78e14bbd41c2fd8bb0c10a7bfeeda0dc9d426b0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273420"
 ---
 # <a name="win32_logonsession-class"></a>Clase LogonSession de Win32 \_
 
-La clase WMI **\_ LogonSession de Win32** (consulte Recuperación de una clase WMI ) describe la sesión de inicio de sesión o las sesiones asociadas [a](/windows/desktop/wmisdk/retrieving-a-class)un usuario que ha iniciado sesión en un sistema informático que ejecuta Windows.
+La clase WMI **\_ LogonSession de Win32** (consulte Recuperación de una clase [WMI)](/windows/desktop/wmisdk/retrieving-a-class)describe la sesión de inicio de sesión o las sesiones asociadas a un usuario que inició sesión en un sistema informático que ejecuta Windows.
 
-La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ class Win32_LogonSession : Win32_Session
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LogonSession de Win32** tiene estos tipos de miembros:
 
@@ -142,7 +142,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identificador asignado a la sesión de inicio de sesión.
@@ -176,7 +176,7 @@ Solo lo usa la cuenta del sistema.
 
 </dt> <dd>
 
-Destinado a los usuarios que usan la máquina de forma interactiva, como un usuario que ha iniciado sesión en un servidor terminal, un shell remoto o un proceso similar.
+Destinado a los usuarios que usan interactivamente la máquina, como un usuario que ha iniciado sesión en un servidor terminal, un shell remoto o un proceso similar.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ Destinado a los usuarios que usan la máquina de forma interactiva, como un usua
 
 </dt> <dd>
 
-Diseñado para que los servidores de alto rendimiento autentiquen contraseñas de texto no cifrada. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
+Destinado a servidores de alto rendimiento para autenticar contraseñas de texto no cifrada. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
 
 </dd> <dt>
 
@@ -198,7 +198,7 @@ Diseñado para que los servidores de alto rendimiento autentiquen contraseñas d
 
 </dt> <dd>
 
-Destinado a servidores por lotes, donde los procesos se pueden ejecutar en nombre de un usuario sin su intervención directa; o para servidores de mayor rendimiento que procesan muchos intentos de autenticación de texto no texto a la vez, como servidores web o de correo. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
+Destinado a servidores por lotes, donde los procesos se pueden ejecutar en nombre de un usuario sin su intervención directa; o para servidores de mayor rendimiento que procesan muchos intentos de autenticación de texto no texto a la vez, como servidores web o de correo electrónico. LogonUser no almacena en caché las credenciales para este tipo de inicio de sesión.
 
 </dd> <dt>
 
@@ -226,12 +226,12 @@ Indica un inicio de sesión de tipo proxy.
 
 <span id="Unlock"></span><span id="unlock"></span><span id="UNLOCK"></span>
 
-<span id="Unlock"></span><span id="unlock"></span><span id="UNLOCK"></span>**Desbloqueo** (7)
+<span id="Unlock"></span><span id="unlock"></span><span id="UNLOCK"></span>**Desbloquear** (7)
 
 
 </dt> <dd>
 
-Este tipo de inicio de sesión está pensado para el registro de archivos DLL de GINA en usuarios que usan la máquina de forma interactiva. Este tipo de inicio de sesión permite generar un registro de auditoría único que muestra cuándo se desbloqueó la estación de trabajo.
+Este tipo de inicio de sesión está pensado para el registro de archivos DLL de GINA en los usuarios que usan interactivamente la máquina. Este tipo de inicio de sesión permite generar un registro de auditoría único que muestra cuándo se desbloqueó la estación de trabajo.
 
 </dd> <dt>
 
@@ -242,7 +242,7 @@ Este tipo de inicio de sesión está pensado para el registro de archivos DLL de
 
 </dt> <dd>
 
-Conserva el nombre y la contraseña en los paquetes de autenticación, lo que permite al servidor realizar conexiones a otros servidores de red mientras suplanta al cliente. Esto permite a un servidor aceptar credenciales de texto no definido de un cliente, llamar a LogonUser, comprobar que el usuario puede acceder al sistema a través de la red y seguir comunicándose con otros servidores.
+Conserva el nombre y la contraseña en los paquetes de autenticación, lo que permite al servidor realizar conexiones a otros servidores de red mientras suplanta al cliente. Esto permite que un servidor acepte credenciales de texto no definido de un cliente, llame a LogonUser, compruebe que el usuario puede acceder al sistema a través de la red y, a continuación, comunicarse con otros servidores.
 
 </dd> <dt>
 
@@ -312,7 +312,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -350,7 +350,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -484,7 +484,7 @@ $servers = gci servers.txt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

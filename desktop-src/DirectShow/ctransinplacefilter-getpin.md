@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e4bef01168eb7bad9a1ffc8e5e8555ecd5e8804893269723c8dba72a066b3c50
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1075f2a14c58b085b73f2e4283458286c118a7ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255273"
 ---
 # <a name="ctransinplacefiltergetpin-method"></a>Método CTransInPlaceFilter.GetPin
 
@@ -53,7 +53,7 @@ Número del pin especificado, indexado a partir de cero. En este filtro, el pin 
 
 Devuelve un puntero al objeto [**CBasePin**](cbasepin.md) que implementa el pin o **NULL** si se produce un error en el método.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CTransformFilter::GetPin.**](ctransformfilter-getpin.md) La primera vez que se llama al método, crea ambos pines.
 
@@ -72,7 +72,7 @@ Si el filtro usa los pines [**CTransInPlaceInputPin**](ctransinplaceinputpin.md)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

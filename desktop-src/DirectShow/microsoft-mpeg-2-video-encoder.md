@@ -1,17 +1,17 @@
 ---
 description: El filtro Microsoft MPEG-2 Video Encoder codifica vídeo MPEG-2 y MPEG-1.
 ms.assetid: d52c1299-0641-405c-8960-edd738b56823
-title: Codificador de vídeo Microsoft MPEG-2 (Wmcodecdsp.h)
+title: Microsoft MPEG-2 Video Encoder (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: c7f7b70b9a754aefda3158ae355eb84c24b71b7e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255105"
 ---
-# <a name="microsoft-mpeg-2-video-encoder"></a>Codificador de vídeo Microsoft MPEG-2
+# <a name="microsoft-mpeg-2-video-encoder"></a>Codificador de vídeo MPEG-2 de Microsoft
 
 El filtro Microsoft MPEG-2 Video Encoder codifica vídeo MPEG-2 y MPEG-1.
 
@@ -40,7 +40,7 @@ Interfaces de pin de entrada
 
 Tipos de medios de pin de salida
 
-**MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ VIDEO**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ PROGRAM**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**<br/> **MEDIATYPE \_ Vídeo**, **VÍDEO \_ MPEG2 \_ DE MEDIASUBTYPE**<br/>
+**MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ VIDEO**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ PROGRAM**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**<br/> **MEDIATYPE \_ Vídeo**, **VÍDEO MEDIASUBTYPE \_ MPEG2 \_**<br/>
 
 Interfaces de pin de salida
 
@@ -56,7 +56,7 @@ msmpeg2enc.dll
 
 [Mérito](merit.md)
 
-**NO USE EL VALOR DE NO \_ \_ \_ USE.**
+**NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.**
 
 [Categoría de filtro](filter-categories.md)
 
@@ -66,7 +66,7 @@ msmpeg2enc.dll
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El codificador de vídeo MPEG-2 puede generar los siguientes tipos de salida:
 
@@ -74,14 +74,14 @@ El codificador de vídeo MPEG-2 puede generar los siguientes tipos de salida:
 -   Vídeo en una secuencia de programa MPEG-2
 -   Vídeo en una secuencia de transporte MPEG-2
 
-Admite los siguientes perfiles y niveles MPEG-2:
+Admite los siguientes perfiles y niveles mpeg-2:
 
 
 
-| Perfil        | Niveles                     | Comentarios                                            |
+| Perfil        | Niveles                     | Observaciones                                            |
 |----------------|----------------------------|----------------------------------------------------|
 | Perfil simple | Método Main                       |                                                    |
-| Perfil Main   | Baja, Principal, Alta, Alta-1440 |                                                    |
+| Perfil Main   | Bajo, Principal, Alto, Alto-1440 |                                                    |
 | Perfil alto   | Main, High, High-1440      | Sin escalabilidad o compatibilidad con 4:2:2/4:4:4 (solo 4:2:0) |
 | Perfil 4:2:2  | Main, High                 | Sin escalabilidad ni compatibilidad con 4:2:2 (solo 4:2:0)       |
 
@@ -91,7 +91,7 @@ Admite los siguientes perfiles y niveles MPEG-2:
 
 ### <a name="codec-properties"></a>Propiedades del códec
 
-El filtro admite las siguientes propiedades a través [**de ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi).
+El filtro admite las siguientes propiedades a través [**de ICodecAPI.**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 
 
 
@@ -114,21 +114,21 @@ El filtro admite las siguientes propiedades a través [**de ICodecAPI**](/window
 | [**AVEncMPVFrameFieldMode**](avencmpvframefieldmode-property.md)                             | Modo de fotograma                                                       |                                                                                                                                                                                                                      |
 | [**AVEncMPVGenerateHeaderSeqDispExt**](avencmpvgenerateheaderseqdispext-property.md)         | **TRUE**                                                         |                                                                                                                                                                                                                      |
 | [**AVEncMPVGenerateHeaderSeqExt**](avencmpvgenerateheaderseqext-property.md)                 | **TRUE**                                                         |                                                                                                                                                                                                                      |
-| [**AVEncMPVGOPOpen**](avencmpvgopopen-property.md)                                           | **FALSE**                                                        |                                                                                                                                                                                                                      |
+| [**AVEncMPVGOPAbrir**](avencmpvgopopen-property.md)                                           | **FALSE**                                                        |                                                                                                                                                                                                                      |
 | [**AVEncMPVGOPSInSeq**](avencmpvgopsinseq-property.md)                                       | 1                                                                | 0 — 1                                                                                                                                                                                                                |
-| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md)                                           | 18 fotogramas (36 campos) para HRS; 15 fotogramas (30 campos) en caso contrario. | 1 — 30; vea Comentarios                                                                                                                                                                                                  |
+| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md)                                           | 18 fotogramas (36 campos) para BLES; 15 fotogramas (30 campos) en caso contrario. | 1 — 30; vea Comentarios                                                                                                                                                                                                  |
 | [**AVEncMPVIntraDCPrecision**](avencmpvintradcprecision-property.md)                         | 9                                                                | 8 — 10                                                                                                                                                                                                               |
 | [**AVEncMPVLevel**](avencmpvlevel-property.md)                                               | Alto                                                             |                                                                                                                                                                                                                      |
 | [**AVEncMPVProfile**](avencmpvprofile-property.md)                                           | Método Main                                                             |                                                                                                                                                                                                                      |
 | [**AVEncVideoDefaultUpperFieldDominant**](avencvideodefaultupperfielddominant-property.md)   | **TRUE**                                                         |                                                                                                                                                                                                                      |
-| [**AVEncVideoForceSourceScanType**](avencvideoforcesourcescantype-property.md)               | Interlaced                                                       | **eAVEncVideoSourceScan \_ entrelazado**<br/> **eAVEncVideoSourceScan \_ Progresiva**<br/>                                                                                                                   |
+| [**AVEncVideoForceSourceScanType**](avencvideoforcesourcescantype-property.md)               | Interlaced                                                       | **eAVEncVideoSourceScan \_ entrelazado**<br/> **eAVEncVideoSourceScan \_ progresiva**<br/>                                                                                                                   |
 | [**AVEncVideoInputChromaResolution**](avencvideoinputchromaresolution-property.md)           | 4:2:0                                                            | **eAVEncVideoChromaResolution \_ 420** (4:2:0)<br/> **eAVEncVideoChromaResolution \_ SameAsSource**<br/>                                                                                                     |
 | [**AVEncVideoInputChromaSubsampling**](avencvideoinputchromasubsampling-property.md)         | Igual que el origen                                                   |                                                                                                                                                                                                                      |
 | [**AVEncVideoInputColorNorange**](avencvideoinputcolornominalrange-property.md)         | Igual que el origen                                                   |                                                                                                                                                                                                                      |
 | [**AVEncVideoInputColorPrimaries**](avencvideoinputcolorprimaries-property.md)               | Igual que el origen                                                   |                                                                                                                                                                                                                      |
 | [**AVEncVideoInputColorTransferFunction**](avencvideoinputcolortransferfunction-property.md) | Igual que el origen                                                   |                                                                                                                                                                                                                      |
 | [**AVEncVideoInputColorTransferMatrix**](avencvideoinputcolortransfermatrix-property.md)     | Igual que el origen                                                   |                                                                                                                                                                                                                      |
-| [**AVEncVideoMaxKeyframeDistance**](avencvideomaxkeyframedistance-property.md)               | [**AVEncMPVGOPSize:**](avencmpvgopsize-property.md) 1          | 0 o [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) : 1                                                                                                                                                         |
+| [**AVEncVideoMaxKeyframeDistance**](avencvideomaxkeyframedistance-property.md)               | [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) - 1          | 0 o [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) - 1                                                                                                                                                         |
 | [**AVEncVideoNoOfFieldsToEncode**](avencvideonooffieldstoencode-property.md)                 | 0                                                                |                                                                                                                                                                                                                      |
 | [**AVEncVideoOutputChromaResolution**](avencvideooutputchromaresolution-property.md)         | 4:2:0                                                            | **eAVEncVideoChromaResolution \_ 420** (4:2:0)<br/> **eAVEncVideoChromaResolution \_ SameAsSource**<br/>                                                                                                     |
 | [**AVEncVideoOutputFrameRate**](avencvideooutputframerate-property.md)                       |                                                                  | Debe ser igual que la velocidad de fotogramas de entrada.                                                                                                                                                                            |
@@ -155,23 +155,23 @@ Es posible establecer propiedades mientras se ejecuta el gráfico de filtros. Ha
 
 Al codificar vídeo MPEG-1, el codificador establece automáticamente el código de marca de parámetros restringidos de 1 bit en el encabezado de secuencia si se cumplen todas las restricciones. **\_ \_**
 
-Si es necesario, el codificador redondea las dimensiones de vídeo de entrada para que las dimensiones de vídeo de salida coincidan con los requisitos de MPEG. En el caso del vídeo progresiva, las dimensiones de salida se redondea hasta un múltiplo de 16 tanto en ancho como en alto. En el caso del vídeo entrelazado, el ancho se redondea hasta un múltiplo de 16 y el alto se redondea hasta un múltiplo de 32. Esta operación de redondeo usa el relleno según sea necesario.
+Si es necesario, el codificador redondea las dimensiones de vídeo de entrada para que las dimensiones de vídeo de salida coincidan con los requisitos mpeg. En el caso del vídeo progresiva, las dimensiones de salida se redondea hasta un múltiplo de 16 tanto en ancho como en alto. En el caso del vídeo entrelazado, el ancho se redondea hasta un múltiplo de 16 y el alto se redondea hasta un múltiplo de 32. Esta operación de redondeo usa el relleno según sea necesario.
 
-Si el vídeo está entrelazado, el codificador realiza la detección automática de teleconferencia (3:2 de extracción). El vídeo de entrada puede contener pares de imágenes de campo, además de marcos entrelazados.
+Si el vídeo está entrelazado, el codificador realiza la detección automática de teleactividad (3:2 de extracción). El vídeo de entrada puede contener pares de imágenes de campo, además de fotogramas entrelazados.
 
 El formato interno del codificador es 4:2:0 IYUV (idéntico a I420). Puede realizar la conversión de color de los formatos de vídeo YUY2, YV12, UYVY y RGB-24.
 
-Para restringir la secuencia de bits a un formato de destino (DVD o VCD), establezca la [**propiedad AVEncCommonFormatConstraint.**](avenccommonformatconstraint-property.md) Si esta propiedad tiene un valor distinto de **\_ GUID AVEncCommonFormatUnSpecified,** el codificador limita la sintaxis MPEG a la permitida por el formato de destino.
+Para restringir la secuencia de bits a un formato de destino (DVD o VCD), establezca la propiedad [**AVEncCommonFormatConstraint.**](avenccommonformatconstraint-property.md) Si esta propiedad tiene un valor distinto de **\_ GUID AVEncCommonFormatUnSpecified,** el codificador limita la sintaxis MPEG a la permitida por el formato de destino.
 
-Para la codificación en vivo, establezca la propiedad [**AVEncCommonQualityVsSpeed**](avenccommonqualityvsspeed-property.md) en cero. Esto hace que el codificador optimice la velocidad.
+Para la codificación en directo, establezca la propiedad [**AVEncCommonQualityVsSpeed**](avenccommonqualityvsspeed-property.md) en cero. Esto hace que el codificador optimice la velocidad.
 
 ### <a name="encoding-modes"></a>Modos de codificación
 
 El codificador admite varios modos de codificación:
 
 -   Velocidad de bits constante de un paso (CBR).
--   Velocidad de bits variable basada en la calidad de un solo paso (VBR), mediante un tamaño de paso de cuantificador constante. En este modo, el codificador intenta cumplir un nivel de calidad de destino, hasta una velocidad de bits máxima.
--   VBR con restricción máxima de un solo paso. En este modo, el codificador intenta lograr una velocidad de bits media objetivo dentro de determinados límites internos.
+-   Velocidad de bits variable basada en la calidad de un paso (VBR), mediante un tamaño de paso de cuantificador constante. En este modo, el codificador intenta alcanzar un nivel de calidad de destino, hasta una velocidad de bits máxima.
+-   VBR con restricción máxima de un paso. En este modo, el codificador intenta lograr una velocidad de bits media objetivo dentro de determinados límites internos.
 
 Para configurar el modo de codificación, establezca las siguientes propiedades:
 
@@ -181,7 +181,7 @@ Para configurar el modo de codificación, establezca las siguientes propiedades:
 | Modo | Propiedades | 
 |------|------------|
 | CBR | <a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_CBR</strong><br /><a href="avenccommonqualityvsspeed-property.md"><strong>AVEncCommonQualityVsSpeed</strong></a><br /><a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a><br /> | 
-| VBR basado en calidad | <a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_Quality</strong><br /><a href="avenccommonquality-property.md"><strong>AVEncCommonQuality</strong></a><br /><a href="avenccommonmaxbitrate-property.md"><strong>AVEncCommonMaxBitRate</strong></a><br /><blockquote>[!Note]<br />En este modo, no se usan las propiedades <a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a> y <a href="avenccommonminbitrate-property.md"><strong>AVEncCommonMinBitRate.</strong></a> Se supone que la velocidad de bits mínima es cero.</blockquote><br /> | 
+| VBR basada en calidad | <a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_Quality</strong><br /><a href="avenccommonquality-property.md"><strong>AVEncCommonQuality</strong></a><br /><a href="avenccommonmaxbitrate-property.md"><strong>AVEncCommonMaxBitRate</strong></a><br /><blockquote>[!Note]<br />En este modo, no se usan las propiedades <a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a> y <a href="avenccommonminbitrate-property.md"><strong>AVEncCommonMinBitRate.</strong></a> Se supone que la velocidad de bits mínima es cero.</blockquote><br /> | 
 | VBR con restricciones máximas | <a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_PeakConstrainedVBR</strong><br /><a href="avenccommonmultipassmode-property.md"><strong>AVEncCommonMultipassMode</strong></a> = 1<br /><a href="avenccommonminbitrate-property.md"><strong>AVEncCommonMinBitRate</strong></a><br /><a href="avenccommonmaxbitrate-property.md"><strong>AVEncCommonMaxBitRate</strong></a><br /><a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a><br /> | 
 
 
@@ -196,20 +196,20 @@ Para configurar el modo de codificación, establezca las siguientes propiedades:
 
 ### <a name="aspect-ratio"></a>Relación de aspecto
 
-La relación de aspecto de presentación y la relación de aspecto de píxeles (PAR) están relacionadas con la fórmula siguiente:
+La relación de aspecto de la pantalla y la relación de aspecto de píxeles (PAR) están relacionadas con la siguiente fórmula:
 
-<dl> Relación de aspecto de presentación = par × (ancho de imagen/alto de imagen)  
+<dl> Relación de aspecto de la pantalla = par × (ancho de imagen/alto de la imagen)  
 </dl>
 
-El codificador usa esta fórmula para calcular el valor de la relación de aspecto de las secuencias de bits MPEG-1 o la información de relación de aspecto para las secuencias de \_ \_ bits \_ \_ MPEG-2. (Vea ISO/IEC 11172 e ISO/IEC 138181-2, respectivamente).
+El codificador usa esta fórmula para calcular el valor de la relación de aspecto de los flujos de bits MPEG-1 o la información de relación de aspecto para \_ \_ las \_ \_ secuencias de bits MPEG-2. (Vea ISO/IEC 11172 e ISO/IEC 138181-2, respectivamente).
 
-El codificador prueba la siguiente configuración, en orden:
+El codificador intenta la siguiente configuración, en orden:
 
-1.  Si la aplicación establece la propiedad [**AVEncVideoPixelAspectRatio**](avencvideopixelaspectratio-property.md) en cualquier momento antes de que se ejecute el gráfico de filtros, esta propiedad se usa para el PAR.
-2.  De lo contrario, si los miembros **dwPictAspectRatioX** y **dwPictAspectRatioY** de la estructura [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) son distintos de cero, estos miembros se usan para la relación de aspecto de presentación y el PAR se calcula a partir de la relación de aspecto de presentación.
-3.  Si ninguno de estos valores está presente, se supone que el PAR es 1,0 y la relación de aspecto de la presentación se calcula en consecuencia.
+1.  Si la aplicación establece la [**propiedad AVEncVideoPixelAspectRatio**](avencvideopixelaspectratio-property.md) en cualquier momento antes de que se ejecute el gráfico de filtro, esta propiedad se usa para el PAR.
+2.  De lo contrario, si los miembros **dwPictAspectRatioX** y **dwPictAspectRatioY** de la estructura [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) no son cero, estos miembros se usan para la relación de aspecto de la pantalla y el PAR se calcula a partir de la relación de aspecto de la pantalla.
+3.  Si ninguno de estos valores está presente, se supone que el PAR es 1,0 y la relación de aspecto de la pantalla se calcula en consecuencia.
 
-En el modo de codificación en vivo [**(AVEncCommonQualityVsSpeed**](avenccommonqualityvsspeed-property.md) igual a cero), la relación de aspecto de la presentación debe ser 4:3 o 16:9, con un valor predeterminado de 4:3. Si la relación de aspecto de presentación calculada no es 4:3 ni 16:9, el codificador usa el valor 4:3.
+En el modo de codificación en vivo [**(AVEncCommonQualityVsSpeed**](avenccommonqualityvsspeed-property.md) igual a cero), la relación de aspecto de la pantalla debe ser 4:3 o 16:9, con un valor predeterminado de 4:3. Si la relación de aspecto de la pantalla calculada no es 4:3 o 16:9, el codificador usa el valor 4:3.
 
 ### <a name="gop-structure"></a>Estructura de GOP
 
@@ -226,9 +226,9 @@ En función de esta configuración, el codificador genera una de las siguientes 
 | [**AVEncVideoMaxKeyframeDistance**](avencvideomaxkeyframedistance-property.md) | [**AVEncMPVDefaultBPictureCount**](avencmpvdefaultbpicturecount-property.md) | Estructura de GOP |
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------|
 | 0                                                                               | 0                                                                             | IIII...       |
-| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) - 1                         | 0                                                                             | IPPP...       |
-| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) - 1                         | 1                                                                             | IBPBP...      |
-| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) - 1                         | 2                                                                             | IBBPBBP...    |
+| [**AVEncMPVGOPSize:**](avencmpvgopsize-property.md) 1                         | 0                                                                             | IPPP...       |
+| [**AVEncMPVGOPSize:**](avencmpvgopsize-property.md) 1                         | 1                                                                             | IBPBP...      |
+| [**AVEncMPVGOPSize:**](avencmpvgopsize-property.md) 1                         | 2                                                                             | IBBPBBP...    |
 
 
 
@@ -236,7 +236,7 @@ En función de esta configuración, el codificador genera una de las siguientes 
 
 La estructura predeterminada de GOP es IBBPBBP... con un tamaño de GOP de 15 fotogramas.
 
-Si la aplicación restringe el formato de destino a DVD (a través de la propiedad [**AVEncCommonFormatConstraint)**](avenccommonformatconstraint-property.md) y establece la propiedad [**AVEncInputVideoSystem**](avencinputvideosystem-property.md) en CLUS o PAL, el codificador admite los siguientes tamaños de GOP:
+Si la aplicación restringe el formato de destino a DVD (a través de la propiedad [**AVEncCommonFormatConstraint)**](avenccommonformatconstraint-property.md) y establece la propiedad [**AVEncInputVideoSystem**](avencinputvideosystem-property.md) en INPUT o PAL, el codificador admite los siguientes tamaños de GOP:
 
 
 
@@ -255,7 +255,7 @@ Establecer el valor de una propiedad de códec puede cambiar el intervalo válid
 
 1.  Llame [**a ICodecAPI::RegisterForEvent**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-registerforevent) con el valor **CODECAPI \_ CHANGELISTS**.
 2.  Use la [**interfaz IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) para supervisar eventos del gráfico de filtros.
-3.  Si cambia el intervalo o el valor predeterminado de una propiedad, el codificador envía un evento [**\_ EC CODECAPI \_ EVENT**](ec-codecapi-event.md) con una lista de propiedades modificadas.
+3.  Si cambia el intervalo o el valor predeterminado de una propiedad, el codificador envía un evento [**EC \_ CODECAPI \_ EVENT**](ec-codecapi-event.md) con una lista de propiedades modificadas.
 
 ### <a name="iencoderapi-support"></a>Compatibilidad con IEncoderAPI
 
@@ -267,7 +267,7 @@ Por compatibilidad con versiones anteriores, el filtro admite las siguientes pro
 |--------------------------------|------------------------------------------------------------------------------------------|
 | **VELOCIDAD DE BITS DE ENCAPIPARAM \_**       | Equivalente a [**AVEncCommonMeanBitRate.**](avenccommonmeanbitrate-property.md)         |
 | **VELOCIDAD DE BITS MÁXIMA DE ENCAPIPARAM \_ \_** | Equivalente a [**AVEncCommonMaxBitRate.**](avenccommonmaxbitrate-property.md)           |
-| **MODO DE VELOCIDAD DE BITS ENCAPIPARAM \_ \_** | Equivalente a [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md). |
+| **MODO DE VELOCIDAD \_ DE BITS ENCAPIPARAM \_** | Equivalente a [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md). |
 
 
 
@@ -277,7 +277,7 @@ Al establecer la **propiedad ENCAPIPARAM \_ BITRATE \_ MODE,** los valores se as
 
 
 
-| **MODO DE VELOCIDAD DE BITS ENCAPIPARAM \_ \_** | [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) |
+| **MODO DE VELOCIDAD \_ DE BITS ENCAPIPARAM \_** | [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) |
 |--------------------------------|---------------------------------------------------------------------------|
 | **ConstantBitRate**            | **CBR eAVEncCommonRateControlMode \_**                                      |
 | **VariableBitRateAverage**     | Vea la Nota.                                                                 |
@@ -296,7 +296,7 @@ Al obtener la **propiedad ENCAPIPARAM \_ BITRATE \_ MODE,** los valores se asign
 
 
 
-| [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) | **MODO DE VELOCIDAD DE BITS ENCAPIPARAM \_ \_** |
+| [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) | **MODO DE VELOCIDAD \_ DE BITS ENCAPIPARAM \_** |
 |---------------------------------------------------------------------------|--------------------------------|
 | **CBR eAVEncCommonRateControlMode \_**                                      | **ConstantBitRate**            |
 | **Calidad de eAVEncCommonRateControlMode \_**                                  | **VariableBitRatePeak**        |
@@ -310,7 +310,7 @@ Al obtener la **propiedad ENCAPIPARAM \_ BITRATE \_ MODE,** los valores se asign
 
 Actualmente, el codificador no admite ninguna de las siguientes características:
 
--   Generación de paquetes de flujo básico en paquetes (PES).
+-   Generación de paquetes de secuencia elemental en paquetes (PES).
 -   Conversión de velocidad de fotogramas. El flujo de entrada debe tener una velocidad de fotogramas válida para una secuencia de bits MPEG-2.
 -   Extensiones de velocidad de fotogramas para MPEG-2 (extensión de velocidad **\_ de \_ \_ fotogramas n**, extensión de velocidad de **\_ \_ \_ fotogramas d**).
 -   Posiciones del búfer de entrada/salida (VBV) para un clip.
@@ -325,7 +325,7 @@ El codificador introduce una latencia de codificación de al menos un GOP.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ desktop apps only\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                                                                     |

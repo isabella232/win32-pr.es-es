@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_BKINFO métodos'
+description: 'Más información sobre: métodos JET_BKINFO datos'
 title: JET_BKINFO métodos
 TOCTitle: JET_BKINFO methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_BKINFO
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39511949
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 38713eae7b8f87ff2a1901552a14e5f1bd8b7ba435cb8f55337991df891cb0d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68b7c9fe0060a1da4a456d4ae47b8883d964b078
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118255956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358830"
 ---
 # <a name="jet_bkinfo-methods"></a>JET_BKINFO métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_BKINFO](./jet-bkinfo-structure2.md) expone los miembros siguientes.
+El [JET_BKINFO](./jet-bkinfo-structure2.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 

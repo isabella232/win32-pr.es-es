@@ -1,19 +1,19 @@
 ---
 title: Tareas iniciales (Microsoft Active Accessibility)
-description: Microsoft Active Accessibility es un conjunto de interfaces de Modelo de objetos componentes (COM) y elementos de API que proporcionan una manera confiable de exponer y recopilar información sobre los elementos de interfaz de usuario basados en Microsoft Windows y el contenido web.
+description: Microsoft Active Accessibility es un conjunto de interfaces de modelo de objetos componentes (COM) y elementos de API que proporcionan una manera confiable de exponer y recopilar información sobre los elementos de interfaz de usuario basados en Microsoft Windows y el contenido web.
 ms.assetid: 13148049-dbb0-4529-b1d7-0c41ebeb7543
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a88b91d43b7d507cce01979d2d0b6c488caa6c5f1e7c2d05bae9d8eefb49e598
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 65713143e241a11d29782a4adc0f919ab9ebc3e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120122225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358946"
 ---
 # <a name="getting-started-microsoft-active-accessibility"></a>Tareas iniciales (Microsoft Active Accessibility)
 
-Microsoft Active Accessibility es un conjunto de interfaces de Modelo de objetos componentes (COM) y elementos de API que proporcionan una manera confiable de exponer y recopilar información sobre los elementos de interfaz de usuario basados en Microsoft Windows y el contenido web. Con esta información, los proveedores de tecnología de asistencia pueden representar la interfaz de usuario en formatos alternativos, como voz o Manipulación, y las aplicaciones de comando y control de voz pueden manipular la interfaz de forma remota. Microsoft Active Accessibility se basa en Windows tecnología y solo se puede usar junto con controles basados en Windows y otras Windows aplicaciones.
+Microsoft Active Accessibility es un conjunto de interfaces de modelo de objetos componentes (COM) y elementos de API que proporcionan una manera confiable de exponer y recopilar información sobre los elementos de interfaz de usuario basados en Microsoft Windows y el contenido web. Con esta información, los proveedores de tecnología de asistencia pueden representar la interfaz de usuario en formatos alternativos, como voz o Manipulación, y las aplicaciones de comando y control de voz pueden manipular la interfaz de forma remota. Microsoft Active Accessibility se basa Windows tecnología y solo se puede usar junto con controles basados en Windows y otras Windows aplicaciones.
 
 Esta documentación está organizada para satisfacer las necesidades de los desarrolladores que no están familiarizados con los Microsoft Active Accessibility. A continuación se describen las secciones principales de la documentación:
 

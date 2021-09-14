@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c92e83c8daf5bf129a9aa8330bcc53caa88537f2395aeceebd8b5da2037c5b18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8af11545db1a3ed839f409deb141e5d910abe198
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255104"
 ---
-# <a name="isamplegrabbercbbuffercb-method"></a>ISampleGrabberCB::BufferCB (método)
+# <a name="isamplegrabbercbbuffercb-method"></a>ISampleGrabberCB::BufferCB (Método)
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -50,7 +50,7 @@ HRESULT BufferCB(
 *SampleTime* 
 </dt> <dd>
 
-Hora de inicio del ejemplo, en segundos.
+Hora de inicio de la muestra, en segundos.
 
 </dd> <dt>
 
@@ -70,9 +70,9 @@ Longitud del búfer al que apunta *pBuffer*, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si se realiza correctamente o un código de error **HRESULT** de lo contrario.
+Devuelve S \_ OK si se realiza correctamente o un código de error **HRESULT** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método de devolución de llamada recibe un puntero a los datos del ejemplo multimedia más reciente.
 
@@ -104,14 +104,14 @@ Para configurar la devolución de llamada, llame [**a ISampleGrabber::SetCallbac
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> <dt>
 
-[**ISampleGrabberCB (interfaz)**](isamplegrabbercb.md)
+[**Interfaz ISampleGrabberCB**](isamplegrabbercb.md)
 </dt> </dl>
 
  

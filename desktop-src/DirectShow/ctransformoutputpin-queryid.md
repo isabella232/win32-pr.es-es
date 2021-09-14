@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 56da848f3829f56d93d7d0383dc7fdc1ec6d5bfd995c2c74507d05eb13801fb4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d4c2d222ca4dd184adfe41f9f610b10f15ee9f02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119584815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255333"
 ---
 # <a name="ctransformoutputpinqueryid-method"></a>Método CTransformOutputPin.QueryId
 
@@ -57,7 +57,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 | Código devuelto                                                                                   | Descripción                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Success<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>       |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | **Argumento de** puntero NULL<br/> |
 
@@ -65,7 +65,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El identificador de pin se usa para la persistencia del grafo. El identificador de pin de esta clase es Out. Esta clase invalida el comportamiento de la [**clase CBasePin.**](cbasepin.md) En la **clase CBasePin,** el identificador de pin es el mismo que el nombre del pin, especificado en el constructor de clase. En la **clase CTransformInputPin,** el identificador de pin y el nombre del pin no son los mismos.
 

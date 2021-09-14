@@ -4,12 +4,12 @@ ms.assetid: 374450bb-316c-4fe6-abb1-cd8a8a31f284
 title: Acción RegisterTypeLibraries
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac42c831c8413f297d3df2302523a2372b11d1efcffe82ce0d3a82da722832cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 469cc18fc2842a3258804fc012c48a49085f1598
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118626768"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069685"
 ---
 # <a name="registertypelibraries-action"></a>Acción RegisterTypeLibraries
 
@@ -31,7 +31,7 @@ La acción RegisterTypeLibraries debe ir después de [la acción InstallFiles.](
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción RegisterTypeLibraries requiere que el lenguaje de biblioteca de tipos se cree correctamente en el campo Idioma de la tabla TypeLib. La creación incorrecta del campo Idioma puede hacer que el instalador no pueda registrar una biblioteca de tipos válida de otro modo.
 

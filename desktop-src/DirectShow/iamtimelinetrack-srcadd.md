@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e705f840a073ee6796776f6f68c7b57df0bd972facf8f7a586792519735bfb3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e3d1d727fb6a99e3dea9ec2659838df1bfcd392b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117998755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255116"
 ---
-# <a name="iamtimelinetracksrcadd-method"></a>IAMTimelineTrack::SrcAdd (método)
+# <a name="iamtimelinetracksrcadd-method"></a>IamTimelineTrack::SrcAdd (método)
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -48,7 +48,7 @@ HRESULT SrcAdd(
 *pSrc* 
 </dt> <dd>
 
-Puntero a la interfaz [**IAMTimelineObj del**](iamtimelineobj.md) objeto de origen.
+Puntero a la interfaz [**IAMTimelineObj del objeto**](iamtimelineobj.md) de origen.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Puntero a la interfaz [**IAMTimelineObj del**](iamtimelineobj.md) objeto de orig
 
 Devuelve S \_ OK si se realiza correctamente. Devuelve E \_ NOINTERFACE si el objeto no es un objeto de origen. De lo contrario, devuelve **un valor HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Establezca las horas de inicio y de detenerse del origen antes de llamar a este método. (Llame [**a IAMTimelineObj::SetStartStop).**](iamtimelineobj-setstartstop.md)
 
@@ -68,7 +68,7 @@ Actualmente, DES no puede representar simultáneamente más de 75 orígenes comp
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -83,14 +83,14 @@ Actualmente, DES no puede representar simultáneamente más de 75 orígenes comp
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineTrack (interfaz)**](iamtimelinetrack.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

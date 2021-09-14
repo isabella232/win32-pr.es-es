@@ -1,19 +1,19 @@
 ---
-description: En la tabla de este tema se identifican las versiones publicadas del Windows Installer. Para obtener más información, vea Valores de propiedad del sistema operativo.
+description: En la tabla de este tema se identifican las versiones publicadas del Windows instalador. Para obtener más información, vea Valores de propiedad del sistema operativo.
 ms.assetid: f79e2e56-12e3-42ca-aac0-d61351d1397b
 title: Versiones publicadas de Windows Installer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88a6279d4cdd914ff94d46765dead1c9e2e7afa978039216f9399edbdbd2d525
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a123ca90cb7612b5319364bc39db5badf07e2db1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069663"
 ---
 # <a name="released-versions-of-windows-installer"></a>Versiones publicadas de Windows Installer
 
-En la tabla de este tema se identifican las versiones publicadas del Windows Installer. Para obtener más información, vea [Valores de propiedad del sistema operativo](operating-system-property-values.md).
+En la tabla de este tema se identifican las versiones publicadas del Windows instalador. Para obtener más información, vea [Valores de propiedad del sistema operativo.](operating-system-property-values.md)
 
 
 
@@ -45,7 +45,7 @@ En la tabla de este tema se identifican las versiones publicadas del Windows Ins
 
 Windows Server 2012 o Windows 8 incluye Windows Installer 5.0.
 
-Para obtener información sobre cómo determinar la versión Windows Installer, vea [Determinar la Windows del instalador.](determining-the-windows-installer-version.md)
+Para obtener información sobre cómo determinar la versión del instalador Windows, vea [Determinar la Windows del instalador.](determining-the-windows-installer-version.md)
 
 Para obtener una lista de los cambios en cada una de las versiones Windows Installer, vea Novedades [de Windows Installer](what-s-new-in-windows-installer.md).
 

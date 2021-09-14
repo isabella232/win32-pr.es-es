@@ -4,12 +4,12 @@ ms.assetid: 4a6be647-3e73-47a1-acfa-7d6d0a2fb2f4
 title: Tabla PublishComponent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0abd7567e8327aa36a120fd5a13115cb191e1660566e9d480446295dca53cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bb0edfd811873242629c36257fdce5a80fe9d91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118376388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069731"
 ---
 # <a name="publishcomponent-table"></a>Tabla PublishComponent
 
@@ -22,7 +22,7 @@ La tabla PublishComponent tiene las columnas siguientes.
 | Columna      | Tipo                         | Clave | Nullable |
 |-------------|------------------------------|-----|----------|
 | Componentid | [GUID](guid.md)             | Y   | N        |
-| Qualifier   | [Texto](text.md)             | Y   | N        |
+| Calificador:   | [Texto](text.md)             | Y   | N        |
 | Componente\_ | [Identificador](identifier.md) | Y   | N        |
 | AppData     | [Texto](text.md)             | N   | Y        |
 | Característica\_   | [Identificador](identifier.md) | N   | N        |
@@ -70,7 +70,7 @@ Clave externa en la columna uno de la [tabla Característica](feature-table.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se hace referencia a esta tabla cuando se ejecuta [la acción PublishComponents](publishcomponents-action.md) o [la acción UnpublishComponents.](unpublishcomponents-action.md)
 

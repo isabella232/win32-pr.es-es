@@ -1,6 +1,6 @@
 ---
 title: WOM_CLOSE mensaje (Mmsystem.h)
-description: El mensaje WOM CLOSE se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se cierra un \_ dispositivo de salida de audio de forma de onda. El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
+description: El mensaje WOM CLOSE se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se cierra un dispositivo \_ de salida de audio de forma de onda. El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 ms.assetid: ac20216a-6a60-4e62-8241-3ca6f33567f1
 keywords:
 - WOM_CLOSE mensaje Windows Multimedia
@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a802d6eceed018fa0c25591ee9e4b38708e1787e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161317"
 ---
-# <a name="wom_close-message"></a>Mensaje WOM \_ CLOSE
+# <a name="wom_close-message"></a>Mensaje DE CIERRE DE WOM \_
 
 El **mensaje WOM \_ CLOSE** se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se cierra un dispositivo de salida de audio de forma de onda. El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 
@@ -68,7 +68,7 @@ Este mensaje no devuelve un valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

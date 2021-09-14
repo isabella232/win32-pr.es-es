@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3894e701b22f6380e591eccf978e84a1321f57a84485cea8a6e3116181f3f2c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7dc0edc642687518979eab1d47c69af039bc3173
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255387"
 ---
-# <a name="ctransformoutputpincheckmediatype-method"></a>Método CTransformOutputPin.CheckMediaType
+# <a name="ctransformoutputpincheckmediatype-method"></a>CTransformOutputPin.CheckMediaType (método)
 
 El `CheckMediaType` método determina si el pin acepta un tipo de medio específico.
 
@@ -64,7 +64,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método implementa el método [**CBasePin::CheckMediaType**](cbasepin-checkmediatype.md) virtual puro. Se produce un error en el método si el pin de entrada del filtro no está conectado. De lo contrario, llama al método [**CTransformFilter::CheckTransform**](ctransformfilter-checktransform.md) del filtro, que también es virtual puro. La clase derivada del filtro debe implementar **CheckTransform**, que determina si el tipo de medio de salida propuesto es compatible con el tipo de medio de entrada.
 

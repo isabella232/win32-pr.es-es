@@ -4,12 +4,12 @@ ms.assetid: 4681715e-9918-4d7b-8f33-1cca2bb34eb7
 title: Tabla TargetImages (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec35a9090f89e93e807cda9429ae48d8cc28d175acc4c83e97150e3a98ce5fb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bbb8e7bae92fbc25b217808aaae709f079d65dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069615"
 ---
 # <a name="targetimages-table-patchwizdll"></a>Tabla TargetImages (Patchwiz.dll)
 
@@ -23,12 +23,12 @@ La tabla TargetImages tiene las columnas siguientes.
 
 | Columna                | Tipo    | Clave | Nullable |
 |-----------------------|---------|-----|----------|
-| Destino                | texto    | Y   | N        |
-| MsiPath               | texto    |     | N        |
-| SymbolPaths           | texto    |     | Y        |
-| Upgraded              | texto    |     | N        |
+| Destino                | text    | Y   | N        |
+| MsiPath               | text    |     | N        |
+| SymbolPaths           | text    |     | Y        |
+| Upgraded              | text    |     | N        |
 | Pedido                 | integer |     | N        |
-| ProductValidateFlags  | texto    |     | Y        |
+| ProductValidateFlags  | text    |     | Y        |
 | IgnoreMissingSrcFiles | integer |     | N        |
 
 
@@ -42,7 +42,7 @@ La tabla TargetImages tiene las columnas siguientes.
 <span id="Target"></span><span id="target"></span><span id="TARGET"></span>Objetivo
 </dt> <dd>
 
-Identificador de una imagen de destino. El paquete de revisión actualiza la imagen de destino especificada en esta columna a la imagen actualizada especificada en la columna Actualizado. Hay una o varias imágenes de destino para cada imagen actualizada. La imagen de destino debe ser una imagen de configuración completamente sin comprimir del producto, como una imagen administrativa o una imagen de instalación sin comprimir en un CD-ROM. Tenga en cuenta [que la función UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) no genera revisiones binarias para los archivos de los archivadores. El valor de este campo se usa con el valor del campo Actualizado para generar los nombres de las transformaciones que el instalador agrega al paquete de revisión.
+Identificador de una imagen de destino. El paquete de revisión actualiza la imagen de destino especificada en esta columna a la imagen actualizada especificada en la columna Actualizado. Hay una o varias imágenes de destino para cada imagen actualizada. La imagen de destino debe ser una imagen de configuración completamente sin comprimir del producto, como una imagen administrativa o una imagen de configuración sin comprimir en un CD-ROM. Tenga en cuenta [que la función UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) no genera revisiones binarias para los archivos de los archivadores. El valor de este campo se usa con el valor del campo Actualizado para generar los nombres de las transformaciones que el instalador agrega al paquete de revisión.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ El campo ProductValidateFlags se usa para especificar la comprobación del produ
 <span id="IgnoreMissingSrcFiles"></span><span id="ignoremissingsrcfiles"></span><span id="IGNOREMISSINGSRCFILES"></span>IgnoreMissingSrcFiles
 </dt> <dd>
 
-Si este campo se establece en un valor distinto de cero, el instalador omite los archivos que faltan en la imagen de destino y no se modifican durante la aplicación de revisiones. Esto permite realizar revisiones sin necesidad de toda la imagen; solo se requieren los archivos modificados del producto y .msi archivo. Esto puede reducir el tiempo necesario para generar la revisión.
+Si este campo se establece en un valor distinto de cero, el instalador omite los archivos que faltan en la imagen de destino y no se modifican durante la aplicación de revisiones. Esto permite realizar revisiones sin necesidad de toda la imagen. solo se requieren los archivos modificados del producto y .msi archivo. Esto puede reducir el tiempo necesario para generar la revisión.
 
 > [!Note]  
 > No use el valor IgnoreMissingSrcFiles con TrustMsi establecido en 1 en la [tabla Properties](properties-table-patchwiz-dll-.md).
@@ -93,7 +93,7 @@ Si este campo se establece en un valor distinto de cero, el instalador omite los
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta tabla acepta variables de entorno como rutas de acceso a partir de la versión 4.0 de Patchwiz.dll.
 

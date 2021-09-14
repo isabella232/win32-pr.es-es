@@ -4,12 +4,12 @@ ms.assetid: e9ef684d-e22c-43b3-a5ea-75a4cce663c1
 title: Uso de acciones personalizadas de 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70d94e5d6118c0f2f5dcf5a297718e135cce25a69bea0f48a2d4ea5df4cc0463
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d1465f1b82d18c8e07d95e6d3ab08e9da6827bf1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119809115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069600"
 ---
 # <a name="using-64-bit-custom-actions"></a>Uso de acciones personalizadas de 64 bits
 

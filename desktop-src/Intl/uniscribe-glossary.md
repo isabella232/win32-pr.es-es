@@ -4,12 +4,12 @@ ms.assetid: 48c766e5-a69d-47d2-a885-f24b80e910d8
 title: Glosario de Uniscribe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 808ff2e9620810fe2ec344a037437e6ce8d62bff9460a53cf7b777cedc9d46b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e154e65c103ce6e4287ac8aa2e76e0be4206f9fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254948"
 ---
 # <a name="uniscribe-glossary"></a>Glosario de Uniscribe
 
@@ -64,7 +64,7 @@ Un script complejo es un [script](#complex-script) con cualquiera de las siguien
 -   Tiene caracteres combinados.
 -   Tiene reglas especializadas de separación de palabras y justificación.
 -   Filtra las combinaciones de caracteres no válidas.
--   No se admite en el núcleo de Windows y, por lo tanto, puede requerir la [reserva de fuentes](#font-fallback).
+-   No se admite en el núcleo Windows fuentes y, por lo tanto, puede requerir la [reserva de fuentes](#font-fallback).
 
 En algunos scripts complejos, el orden de los glifos podría ser bastante diferente del orden de los caracteres Unicode subyacentes que representan. Consulte [Acerca de los scripts complejos](about-complex-scripts.md) para obtener más detalles.
 
@@ -89,7 +89,7 @@ Un glifo es una sola unidad de presentación en una fuente. Para OpenType, esta 
 
 Un elemento tiene un [único script y](#complex-script) dirección. La [**función ScriptItemize**](/windows/desktop/api/Usp10/nf-usp10-scriptitemize) [**o ScriptItemizeOpenType**](/windows/desktop/api/usp10/nf-usp10-scriptitemizeopentype) puede analizar un párrafo en elementos. Un elemento no es necesariamente una [ejecución](#run). Puede contener caracteres de varios estilos. La información de elementos y ejecución debe combinarse para determinar [los intervalos](#range).
 
-## <a name="lrm"></a>Lrm
+## <a name="lrm"></a>LRM
 
 LRM indica la marca de izquierda a derecha (punto de código Unicode U+200E). Esta marca especifica que los caracteres que lo sigue en orden lógico se deben representar de izquierda a derecha.
 
@@ -101,7 +101,7 @@ LTR indica de izquierda a derecha.
 
 Un intervalo es un caso especial de una [ejecución](#run). Se encuentra completamente dentro de un [elemento](#item). Por lo tanto, si un elemento se divide en ejecuciones, cada una de esas ejecuciones es un intervalo.
 
-## <a name="rlm"></a>Rlm
+## <a name="rlm"></a>RLM
 
 RLM indica la MARCA DE DERECHA A IZQUIERDA (punto de código Unicode U+200F). Esta marca indica que los caracteres que lo sigue en orden lógico se deben representar de derecha a izquierda.
 
@@ -113,11 +113,11 @@ RTL indica de derecha a izquierda.
 
 Una ejecución es un fragmento de texto para que Uniscribe se represente. Debe tener un estilo único, es decir, fuente, tamaño y color, pero se puede dibujar a partir de una variedad de [scripts](#complex-script). Una ejecución puede contener contenido de izquierda a derecha y de derecha a izquierda.
 
-## <a name="nads"></a>Nads
+## <a name="nads"></a>NADS
 
 NADS indica NATIONAL DIGIT SHAPES (punto de código Unicode U+206E). El término especifica que los dígitos europeos (U+0030 a U+0039) se deben representar como dígitos nacionales. Consulte [Formas de dígitos](digit-shapes.md) para obtener más información sobre los dígitos nacionales.
 
-## <a name="nods"></a>Cabecea
+## <a name="nods"></a>CABECEA
 
 NODS indica FORMAS DE DÍGITO NOMINAL (punto de código Unicode U+206F). El término especifica que los dígitos europeos (U+0030 a U+0039) se deben representar normalmente, no como dígitos nacionales.
 

@@ -1,7 +1,7 @@
 ---
 description: 'CBaseMediaFilter::m_tStart miembro: tiempo de referencia que corresponde al tiempo de secuencia 0.'
 ms.assetid: e80d2fe0-48fb-494e-9450-b5cae2ec9c9f
-title: CBaseMediaFilter::m_tStart miembro (Amfilter.h)
+title: Miembro CBaseMediaFilter::m_tStart (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a30467af33f2e77fdb51d9feaabadb3b4669cd5e93e7570e75f4fbcf4c3e72fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdea1f0cdf804c870a712991a09b2a8325d3c34e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118658898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273252"
 ---
 # <a name="cbasemediafilterm_tstart-member"></a>Miembro TStart de CBaseMediaFilter::m \_
 
@@ -47,7 +47,7 @@ CRefTime m_tStart;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

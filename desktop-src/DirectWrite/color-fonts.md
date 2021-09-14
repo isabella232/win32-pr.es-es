@@ -4,12 +4,12 @@ description: En este tema se describen las fuentes de color, su compatibilidad c
 ms.assetid: 74e096c4-9d1c-8854-e9ee-f8b11ac1c71a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5c0154e528ab8471d40f4771db5479ca9233320177386adbbd849162dbcd598
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6774089cc1f0bed1349edc940c6a1ae715d052c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119329534"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255087"
 ---
 # <a name="color-fonts"></a>Fuentes de colores
 
@@ -33,7 +33,7 @@ Las fuentes de color, también conocidas como fuentes de color o fuentes tótice
 
 Las fuentes con las que probablemente esté más familiarizado no son fuentes de color. Estas fuentes definen solo la forma de los glifos que contienen, ya sea con contornos vectoriales o mapas de bits monocromáticos. En el momento del dibujo, un representador de texto rellena la forma del glifo con un único color (el color de fuente) especificado por la aplicación o el documento que se representa. Las fuentes de color, por otro lado, contienen información de color además de información de forma. Algunos enfoques permiten a los diseñadores de fuentes ofrecer varias paletas de colores, lo que proporciona flexibilidad a la fuente de color.
 
-En el ejemplo siguiente se muestra un glifo de la fuente Segoe UI fuente de color Emoji. El glifo se representa en monocromo a la izquierda y en color a la derecha.
+En el ejemplo siguiente se muestra un glifo de la Segoe UI fuente de color Emoji. El glifo se representa en monocromo a la izquierda y en color a la derecha.
 
 ![Muestra glifos en paralelo, el glifo izquierdo representado en monocromo, a la derecha en la fuente de color Emoji de Segoe U I.](images/color-font-cat.png)
 
@@ -89,7 +89,7 @@ Las fuentes de color se representan de forma predeterminada en sitios web y apli
 
 La aplicación puede usar los métodos de dibujo de texto de nivel superior de Direct2D [**(DrawText**](../direct2d/id2d1devicecontext4-drawtext-overload.md) y [**DrawTextLayout)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawtextlayout)o puede usar técnicas de nivel inferior para dibujar ejecuciones de glifo directamente. En cualquier caso, la aplicación requiere cambios de código para controlar los glifos de color correctamente. Si la aplicación usa las API **DrawText** y **DrawTextLayout** de Direct2D, tenga en cuenta que no representan glifos de color de forma predeterminada. Esto es para evitar cambios de comportamiento inesperados en las aplicaciones de representación de texto que se diseñaron antes de la compatibilidad con fuentes de color.
 
-Para participar en la representación del glifo de color, pase la marca de opciones [**D2D1 \_ DRAW TEXT OPTIONS ENABLE COLOR \_ \_ \_ \_ \_ FONT**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options) al método de dibujo. En el ejemplo de código siguiente se muestra cómo llamar al método DrawText de Direct2D para representar una cadena en una fuente de color:
+Para participar en la representación de glifos de color, pase la marca de opciones [**D2D1 \_ DRAW TEXT OPTIONS ENABLE COLOR \_ \_ \_ \_ \_ FONT**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options) al método de dibujo. En el ejemplo de código siguiente se muestra cómo llamar al método DrawText de Direct2D para representar una cadena en una fuente de color:
 
 
 ```C++
@@ -234,7 +234,7 @@ args.DrawingSession.DrawText(
 [**Método IDWriteFactory4::TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun)
 
 
-[**Método ID2D1DeviceContext4::D rawText**](../direct2d/id2d1devicecontext4-drawtext-overload.md)
+[**Id2D1DeviceContext4::D rawText (método)**](../direct2d/id2d1devicecontext4-drawtext-overload.md)
 
 
  

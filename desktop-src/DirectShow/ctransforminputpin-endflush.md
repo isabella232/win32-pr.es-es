@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bca2231f36c3d37f58bb740ddf55132d1c63babba6054629b2a76cc5d7866646
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5e080b4531d05160bebd42a68145842c4783bea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255452"
 ---
 # <a name="ctransforminputpinendflush-method"></a>Método CTransformInputPin.EndFlush
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al método [**CTransformFilter::EndFlush**](ctransformfilter-endflush.md) del filtro para entregar la llamada de nivel inferior. A continuación, llama al método [**CBaseInputPin::EndFlush del**](cbaseinputpin-endflush.md) pin.
 

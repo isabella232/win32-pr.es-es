@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98fb678a2df7c79e40c5ecf39b0a059ebc9e44f4f3f603e1d1a6551446204aa1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d6b14af4b0d1f33933db8ca2fd1835e9711edad9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119767585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255290"
 ---
 # <a name="ctransinplacefilterctransinplacefilter-constructor"></a>Constructor CTransInPlaceFilter.CTransInPlaceFilter
 
@@ -77,7 +77,7 @@ ignorado.
 *bModifiesData* 
 </dt> <dd>
 
-Valor booleano que especifica si el filtro modifica los datos de entrada. Si **es TRUE,** el filtro modifica los datos. De lo contrario, el filtro pasa los datos de bajada sin cambios.
+Valor booleano que especifica si el filtro modifica los datos de entrada. Si **es TRUE,** el filtro modifica los datos. De lo contrario, el filtro pasa los datos de nivel inferior sin modificar.
 
 </dd> </dl>
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d9c0c90780e4bcd35da2d410f7b4743547cbd8d31ac06293c411f2415e4e408
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a50a2ae9fe4ca77198f9e63548f709e0f571fdb0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119877955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273375"
 ---
 # <a name="dtm_getrange-message"></a>Mensaje \_ GETRANGE de DTM
 
@@ -43,7 +43,7 @@ Puntero a una matriz de dos elementos de [**estructuras SYSTEMTIME.**](/windows/
 
 Devuelve un **valor DWORD** que es una combinación de GDTR \_ MIN o GDTR \_ MAX. El primer elemento de la [**matriz SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) contiene el tiempo mínimo permitido si se establece GDTR \_ MIN. El segundo elemento de la **matriz SYSTEMTIME** contiene el tiempo máximo permitido si se establece GDTR \_ MAX.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El selector de fecha y hora muestra solo las fechas y horas que se encuentran dentro del intervalo especificado, lo que impide que el usuario seleccione una fecha y hora que se encuentran fuera del intervalo. Si el [**mensaje \_ SETSYSTEMTIME de DTM**](dtm-setsystemtime.md) especifica una fecha y hora que se encuentran fuera del intervalo, se producirá un error.
 
@@ -55,7 +55,7 @@ El selector de fecha y hora muestra solo las fechas y horas que se encuentran de
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

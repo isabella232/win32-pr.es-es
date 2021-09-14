@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 24f5ff7e56422afb40e85040de3d496a45143b5683af0c3882f5fc0a04688666
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a2f2b91d81dfbdd4f385d8f38104c365c44b318
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118655594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273076"
 ---
 # <a name="cimagesamplem_binit-member"></a>Miembro CImageSample::m \_ bInit
 
@@ -47,7 +47,7 @@ BOOL m_bInit;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de8630d4189ccbbf0d90b402ebeda6b785192c098aaa1e6d29c8c2a2dac2a3d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb9261884b8940b571876502741fcc52e1c40a33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273127"
 ---
-# <a name="cimageallocatornotifymediatype-method"></a>CImageAllocator.NotifyMediaType (método)
+# <a name="cimageallocatornotifymediatype-method"></a>Método CImageAllocator.NotifyMediaType
 
 El `NotifyMediaType` método informa al objeto del tipo de medio actual.
 
@@ -53,11 +53,11 @@ Puntero a un [**objeto CMediaType**](cmediatype.md) o **NULL** para borrar el ti
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El filtro propietario debe llamar a este método siempre que cambie el tipo de medio. Normalmente esto sucede cuando el pin se conecta por primera vez y después de un cambio de formato dinámico. El asignador usa el tipo de medio para validar las propiedades de asignador propuestas y también cuando crea ejemplos multimedia.
+El filtro propietario debe llamar a este método siempre que cambie el tipo de medio. Normalmente esto sucede cuando se conecta por primera vez el pin y después de un cambio de formato dinámico. El asignador usa el tipo de medio para validar las propiedades de asignador propuestas y también cuando crea ejemplos multimedia.
 
-El **objeto CImageAllocator** almacena el *puntero pMediaType* en la variable **miembro m \_ pMediaType.** Por lo tanto, si el autor de la llamada necesita liberar el objeto **CMediaType,** debe actualizar el asignador llamando de nuevo a este método, ya sea con un nuevo puntero o con un **valor NULL.** De lo contrario, se puede producir un error cuando el asignador intenta hacer referencia al puntero antiguo.
+El **objeto CImageAllocator** almacena el *puntero pMediaType* en la variable **miembro m \_ pMediaType.** Por lo tanto, si el autor de la llamada necesita liberar el objeto **CMediaType,** debe actualizar el asignador llamando de nuevo a este método, ya sea con un nuevo puntero o con un **valor NULL.** De lo contrario, se puede producir un error cuando el asignador intenta hacer referencia al puntero anterior.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ El **objeto CImageAllocator** almacena el *puntero pMediaType* en la variable **
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

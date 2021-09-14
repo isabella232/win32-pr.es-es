@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f270797c224617c02b14752b15bbdb54b64a7457670e0b26bae54c39a93657eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20c4484b2666b25b5d713ede450a9a5a99f93348
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273116"
 ---
 # <a name="cimagepalettemakepalette-method"></a>Método CImagePalette.MakePalette
 
@@ -53,7 +53,7 @@ Puntero a una [**estructura VIDEOINFOHEADER**](/previous-versions/windows/deskto
 *szDevice* 
 </dt> <dd>
 
-Puntero a una cadena que contiene el nombre del dispositivo para mostrar, tal como lo devuelve la función **EnumDisplayDevices de** GDI. Para usar el dispositivo de pantalla principal, establezca este parámetro en **NULL.**
+Puntero a una cadena que contiene el nombre del dispositivo para mostrar, tal y como devuelve la función **EnumDisplayDevices de** GDI. Para usar el dispositivo de visualización principal, establezca este parámetro en **NULL.**
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Si se realiza correctamente, devuelve un identificador a la paleta. De lo contra
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

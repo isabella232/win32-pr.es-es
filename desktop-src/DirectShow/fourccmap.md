@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: a0ba22ce288535a8d940a5f70275f0152ffa559090d820b77df06ed3d1a9178d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b9254986bebadeffafaa832817f59194bfc58e12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255123"
 ---
 # <a name="fourccmap-class"></a>FOURCCMap (clase)
 
@@ -27,7 +27,7 @@ La **clase FOURCCMap proporciona** la conversión entre subtipos de medios **GUI
 
 `XXXXXXXX-0000-0010-8000-00AA00389B71`
 
-Esta clase simplifica la conversión entre **GUID** y **FOURCC.** Esto es solo por compatibilidad. Se recomienda que todos los nuevos subtipos de medios se represente mediante **GUID** creados por Guidgen.exe o una herramienta similar, y no mediante la asignación **de FOURCC** s.
+Esta clase simplifica la conversión entre **GUID** y **FOURCC.** Esto es solo por compatibilidad. Se recomienda que todos los nuevos subtipos multimedia se represente mediante **GUID** creados por Guidgen.exe o una herramienta similar, y no mediante la asignación **de FOURCC** s.
 
 El objeto se deriva de un **GUID**, sin miembros de datos adicionales, y se puede convertir a un **GUID**. Se puede pasar un **FOURCC al** objeto en tiempo de construcción. El constructor predeterminado inicializará **fourcc** en cero.
 

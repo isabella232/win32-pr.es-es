@@ -4,12 +4,12 @@ ms.assetid: 9cd5f418-404c-40f5-aa51-ef4d2a5f238e
 title: Uso de Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23ebb6e2297c82e8643eb79ce66991b32fdf27e46fc723113a2866c79b2f8377
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 04edc73a3524d45eeead4cd6c0d508925e6caa5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069806"
 ---
 # <a name="using-streams"></a>Uso de Secuencias
 
@@ -100,7 +100,7 @@ This is TestFile:Stream
 
 <dl> <dt>
 
-[Archivos Secuencias](file-streams.md)
+[Archivo Secuencias](file-streams.md)
 </dt> </dl>
 
  

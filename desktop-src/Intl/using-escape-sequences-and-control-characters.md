@@ -4,12 +4,12 @@ ms.assetid: 4be0fd47-0903-44d3-a323-0adc6e9c0cc9
 title: Usar secuencias de escape y caracteres de control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ea89997a8f94a9fdd573b2c8360dbdd5342d38ca8bd2e7a133aa29943c07e9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4211a487a31d5a79454d7be15159f48cdc3d5beb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118389924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254889"
 ---
 # <a name="using-escape-sequences-and-control-characters"></a>Usar secuencias de escape y caracteres de control
 

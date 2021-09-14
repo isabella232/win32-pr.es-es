@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 31a7ca4b87a9196a8b59ec00cdc0e458855fa1db4e1e8f7b5bfd233924475519
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e738636cecd8031962ae31ebf54ac258d868013
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273356"
 ---
 # <a name="cbasecontrolvideoget_videoheight-method"></a>Método CBaseControlVideo.get \_ VideoHeight
 
@@ -53,9 +53,9 @@ Puntero al alto del vídeo nativo, en píxeles.
 
 Devuelve NOERROR si se realiza correctamente o \_ E OUTOFMEMORY si no hay suficiente memoria disponible.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función miembro implementa el [**método IBasicVideo::get \_ VideoHeight.**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_videoheight) Llama al [**CBaseControlVideo::GetVideoFormat**](cbasecontrolvideo-getvideoformat.md) virtual puro para recuperar la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) de la clase derivada.
+Esta función miembro implementa el [**método IBasicVideo::get \_ VideoHeight.**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_videoheight) Llama al [**CBaseControlVideo virtual puro::GetVideoFormat para**](cbasecontrolvideo-getvideoformat.md) recuperar la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) de la clase derivada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Esta función miembro implementa el [**método IBasicVideo::get \_ VideoHeight.*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

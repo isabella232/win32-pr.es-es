@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el método EsentResource.Dispose (booleano)
+description: 'Más información sobre: Método EsentResource.Dispose (booleano)'
 title: Método EsentResource.Dispose (booleano)
 TOCTitle: Dispose method (Boolean)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.Dispose(System.Boolean)
@@ -20,16 +20,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9cc2f9fab375e2ae2b9a27611192c3db9e3bba4eb272de1dfca243d13bf7766f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf74291bf4c54ffa1d61c28bf7caff1e8c2b231b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119477335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358840"
 ---
 # <a name="esentresourcedispose-method-boolean"></a>Método EsentResource.Dispose (booleano)
 
-Llamado por Dispose y el finalizador.
+Lo llaman Dispose y el finalizador.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)

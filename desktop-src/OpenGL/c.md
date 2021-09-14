@@ -21,12 +21,12 @@ keywords:
 - posición de trama actual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39007e4719e1f4507555bf5aafa3187a897756d1d33580e9facc8fa0f6d8fa3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73c9534052533745b1037aa80f26f435a163ee46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161135"
 ---
 # <a name="c-opengl"></a>C (OpenGL)
 
@@ -44,7 +44,7 @@ Equipo desde el que se emiten los comandos OpenGL. El equipo que emite comandos 
 <span id="opengl_client_memory"></span><span id="OPENGL_CLIENT_MEMORY"></span>**memoria de cliente**
 </dt> <dd>
 
-Memoria principal (donde se almacenan las variables de programa) del equipo cliente.
+La memoria principal (donde se almacenan las variables de programa) del equipo cliente.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Eliminar la parte de una primitiva geométrica que está fuera del espacio medio
 <span id="opengl_color_index"></span><span id="OPENGL_COLOR_INDEX"></span>**índice de color**
 </dt> <dd>
 
-Valor único que representa un color por nombre, en lugar de por valor. Los índices de color OpenGL se tratan como valores continuos (por ejemplo, números de punto flotante) mientras que en ellos se realizan operaciones como interpolación y dithering. Sin embargo, los índices de color almacenados en el búfer de fotogramas siempre son valores enteros. Los índices de punto flotante se convierten en enteros redondeando al valor entero más cercano.
+Valor único que representa un color por nombre, en lugar de por valor. Los índices de color OpenGL se tratan como valores continuos (por ejemplo, números de punto flotante), mientras que en ellos se realizan operaciones como interpolación y dithering. Sin embargo, los índices de color almacenados en el búfer de fotogramas siempre son valores enteros. Los índices de punto flotante se convierten en enteros redondeando al valor entero más cercano.
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Valor único continuo (por ejemplo, punto flotante) que representa una intensida
 <span id="opengl_context"></span><span id="OPENGL_CONTEXT"></span>**Contexto**
 </dt> <dd>
 
-Un conjunto completo de variables de estado OpenGL. Tenga en cuenta que el contenido del búfer de fotogramas no forma parte del estado OpenGL, pero que la configuración del búfer de fotogramas es .
+Conjunto completo de variables de estado OpenGL. Tenga en cuenta que el contenido del búfer de fotogramas no forma parte del estado OpenGL, sino que la configuración del búfer de fotogramas es .
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ La región convexa más pequeña que incluye un grupo de puntos especificado. En
 <span id="opengl_coordinate_system"></span><span id="OPENGL_COORDINATE_SYSTEM"></span>**sistema de coordenadas**
 </dt> <dd>
 
-En un espacio n-dimensional, conjunto de vectores n-linealmente independientes anclados a un punto (denominado origen). Un grupo de coordenadas especifica un punto en spaceEn n-dimensional space, un conjunto de n vectores independientes linealmente delimitados a un punto (denominado origen). Un grupo de coordenadas especifica un punto en el espacio (o un vector desde el origen) indicando la distancia que hay que recorrer a lo largo de cada vector para alcanzar el punto (o el extremo del vector). (o un vector del origen) indicando la distancia a la que se desplaza cada vector para alcanzar el punto (o la punta del vector).
+En un espacio n-dimensional, conjunto de vectores n-linealmente independientes anclados a un punto (denominado origen). Un grupo de coordenadas especifica un punto en el espacioEn el espacio de n dimensiones, un conjunto de n vectores independientes linealmente delimitados a un punto (denominado origen). Un grupo de coordenadas especifica un punto en el espacio (o un vector desde el origen) indicando la distancia que hay que recorrer a lo largo de cada vector para alcanzar el punto (o el extremo del vector). (o un vector del origen) indicando la distancia a la que se desplaza cada vector para alcanzar el punto (o la punta del vector).
 
 </dd> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 6b082559-bcfa-4098-b072-27ee78092833
 title: Usar una acción personalizada para iniciar un archivo instalado al final de la instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 108ae06dae331660fe5c4f1ff8740a5fdb7e76f5eab27794fafcd7a4495296ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e5c039d58830ce6a01f76a0946bced474e5091b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118141492"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069589"
 ---
 # <a name="using-a-custom-action-to-launch-an-installed-file-at-the-end-of-the-installation"></a>Usar una acción personalizada para iniciar un archivo instalado al final de la instalación
 
@@ -20,9 +20,9 @@ El ejemplo debe cumplir las especificaciones siguientes.
 -   El instalador ejecuta la acción personalizada solo si se usa el [*nivel de*](f-gly.md) interfaz de usuario completo para instalar una aplicación.
 -   El instalador ejecuta la acción personalizada solo si el componente que contiene el archivo HTML está instalado para ejecutarse localmente en el equipo.
 -   La acción personalizada solo se ejecuta en la primera instalación de la aplicación.
--   No se produce un error en la instalación si se produce un error en la acción personalizada.
+-   La instalación no produce un error si se produce un error en la acción personalizada.
 
-El ejemplo incluye un componente hipotético denominado Tutorial que controla al menos un recurso, un archivo denominado tutorial.htm. El identificador de este archivo en la columna Archivo de la tabla Archivo es Tutorial. En la siguiente explicación se da por supuesto que ya ha creado los recursos necesarios para Tutorial y que ha realizado todas las entradas necesarias en las tablas [Feature](feature-table.md), [Component](component-table.md), [File](file-table.md), [Directory](directory-table.md)y [FeatureComponents](featurecomponents-table.md) para instalar este componente. Para obtener más información, vea [Un ejemplo de instalación](an-installation-example.md).
+El ejemplo incluye un componente hipotético denominado Tutorial que controla al menos un recurso, un archivo denominado tutorial.htm. El identificador de este archivo en la columna Archivo de la tabla Archivo es Tutorial. En la siguiente explicación se da por supuesto que ya ha creado los recursos necesarios para el Tutorial y que ha realizado todas las entradas necesarias en las tablas [Feature](feature-table.md), [Component](component-table.md), [File](file-table.md), [Directory](directory-table.md)y [FeatureComponents](featurecomponents-table.md) para instalar este componente. Para obtener más información, vea [Un ejemplo de instalación](an-installation-example.md).
 
 Los temas siguientes contienen información sobre cómo crear las acciones personalizadas necesarias y agregarlas a un paquete de instalación.
 

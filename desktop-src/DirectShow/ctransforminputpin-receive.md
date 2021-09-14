@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 51ae6614544cd7045689f674ce90e672e3bce4ea8ee36486775892f95a5385fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a6a3c5dd4c9f11d45e1b719498d515a536e5ef8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255429"
 ---
 # <a name="ctransforminputpinreceive-method"></a>Método CTransformInputPin.Receive
 
@@ -64,9 +64,9 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método llama al método [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) del pin, que comprueba el estado de streaming del pin y comprueba los cambios de formato en el tipo de medio. A continuación, llama al método [**CTransformFilter::Receive**](ctransformfilter-receive.md) del filtro, que procesa el ejemplo y lo entrega de nivel inferior.
+Este método llama al método [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) del pin, que comprueba el estado de streaming del pin y comprueba si hay cambios de formato en el tipo de medio. A continuación, llama al método [**CTransformFilter::Receive**](ctransformfilter-receive.md) del filtro, que procesa el ejemplo y lo entrega de nivel inferior.
 
 Si el filtro necesita tener acceso al ejemplo después de que este método vuelva, debe contener un recuento de referencias llamando al método **IUnknown::AddRef** en el ejemplo. Por ejemplo, algunos filtros de descodificador necesitan el ejemplo actual para descodificar el ejemplo siguiente.
 

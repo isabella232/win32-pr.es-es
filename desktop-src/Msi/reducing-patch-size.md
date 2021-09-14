@@ -4,24 +4,24 @@ ms.assetid: ab5b193d-79ce-4ed4-af53-89a4197197c1
 title: Reducción del tamaño de revisión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f9024307ecb0971b02c93036dd0de2aefbe797dcf5645f0f07045c4df8956a8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4fa365e831ab8685073347dc254bac58269135f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119534094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069705"
 ---
 # <a name="reducing-patch-size"></a>Reducción del tamaño de revisión
 
 A partir de Windows Installer versión 3.0, los autores de revisiones pueden usar la línea base del producto almacenada en caché por el instalador para dar servicio más fácilmente a las aplicaciones con revisiones diferenciales más pequeñas. En muchos casos, una revisión [*diferencial*](d-gly.md) que entrega información de mantenimiento a una aplicación puede ser significativamente menor que una revisión de archivo completo o un paquete de instalación que entrega la misma información.
 
-**Windows Installer 2.0:** No se admite. A partir Windows Installer 3.0, el instalador guarda selectivamente información de línea base sobre los archivos cuando se actualizan.
+**Windows Installer 2.0:** No se admite. A partir Windows Installer 3.0, el instalador guarda selectivamente la información de línea base sobre los archivos cuando se actualizan.
 
 Windows El instalador proporciona tres métodos para actualizar y atender [aplicaciones:](small-updates.md)actualizaciones pequeñas, actualizaciones [secundarias](minor-upgrades.md)y [actualizaciones principales.](major-upgrades.md) Una actualización pequeña también se conoce como actualización de ingeniería de corrección rápida (QFE), y una actualización secundaria también se conoce como actualización de Service Pack (SP). Una actualización principal típica quita una aplicación anterior e instala una nueva aplicación. Windows El instalador puede entregar información de mantenimiento [a](patch-packages.md) las aplicaciones como un paquete de instalación [(.msi](installation-package.md) archivo) o como un paquete de revisión (archivo .msp).
 
 Un paquete de revisión del instalador de Windows que proporciona información de mantenimiento para una actualización pequeña o una actualización secundaria suele ser mucho menor que el paquete de instalación equivalente que proporciona la misma información de mantenimiento. Se recomienda usar paquetes de revisión para la distribución de actualizaciones pequeñas y secundarias. Se recomienda usar un paquete de instalación para la distribución de una actualización principal.
 
-Windows Las revisiones del instalador (archivos .msp) se pueden generar a partir de archivos completos o a partir de diferencias de archivo (también denominadas diferencias de archivo). Una Windows installer generada a partir de diferencias de archivo puede ser mucho menor que la revisión de archivo completo equivalente. Todas las versiones del instalador Windows pueden usar revisiones de archivos completos o revisiones diferenciales.
+Windows Las revisiones del instalador (archivos .msp) se pueden generar a partir de archivos completos o a partir de diferencias de archivo (también denominadas diferencias de archivo). Una Windows installer generada a partir de diferencias de archivo puede ser mucho menor que la revisión de archivo completo equivalente. Todas las versiones de Windows Installer pueden usar revisiones de archivos completos o revisiones diferenciales.
 
 A partir Windows installer versión 3.0, el instalador guarda selectivamente la información de línea base sobre los archivos cuando se actualizan. La información sobre la aplicación base original (la versión RTM) y la actualización secundaria más reciente (Service Pack) se guardan en una ubicación privada cuando la aplicación está instalada o recibe una actualización secundaria.
 
@@ -34,7 +34,7 @@ El instalador hace lo siguiente para minimizar el tamaño de la memoria caché d
 -   Cuando el último servicio de la aplicación fue una actualización pequeña (QFE), la aplicación no está en un nivel de línea base y, como máximo, tres copias de un archivo pueden estar presentes en el equipo. La primera copia del archivo se encuentra en el directorio de destino de la instalación. La segunda copia del archivo se encuentra en la memoria caché de línea base rtm. La última copia del archivo se encuentra en la caché de línea base más reciente.
 -   La memoria caché de línea base de la aplicación se quita cuando se desinstala el producto.
 
-A partir Windows installer versión 3.0, el instalador puede usar la caché de línea base cuando se aplican revisiones a la aplicación. La información de línea base se puede usar para aplicar una revisión diferencial o para revertir un archivo a una versión anterior durante una desinstalación de revisiones. Esto puede permitir que los autores de revisiones se beneficien de revisiones diferenciales más pequeñas. Si el instalador encuentra que la revisión diferencial no se puede aplicar al archivo de destino, el instalador puede intentar usar un archivo guardado en la caché de línea base como punto de partida. El instalador solo tiene que solicitar el origen de instalación original después de probar todas las posibilidades de la memoria caché.
+A partir Windows installer versión 3.0, el instalador puede usar la memoria caché de línea base cuando se aplican revisiones a la aplicación. La información de línea base se puede usar para aplicar una revisión diferencial o para revertir un archivo a una versión anterior durante una desinstalación de revisiones. Esto puede permitir que los autores de revisiones se beneficien de revisiones diferenciales más pequeñas. Si el instalador encuentra que la revisión diferencial no se puede aplicar al archivo de destino, el instalador puede intentar usar un archivo guardado en la caché de línea base como punto de partida. El instalador solo tiene que solicitar el origen de instalación original después de probar todas las posibilidades de la memoria caché.
 
 El cumplimiento de las siguientes directrices puede ayudar a los autores de revisiones a usar las revisiones de Windows Installer versión 3.0 y la memoria caché de línea de base para crear revisiones diferenciales más pequeñas:
 

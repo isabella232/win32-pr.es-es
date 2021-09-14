@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9b012966b61f018656b61134b4f889b2ba38ac70ca7e56751c332b1eb16a1564
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db7c7484489ecbc87e908dc6eb1c3de156cda665
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273436"
 ---
 # <a name="win32_logicalprogramgroup-class"></a>Clase LogicalProgramGroup de Win32 \_
 
-La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ LogicalProgramGroup de Win32** representa un grupo de programas en un sistema informático que ejecuta Windows. Por ejemplo, Accesorios o Inicio.
+La **clase WMI \_ LogicalProgramGroup** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa un grupo de programas en un sistema informático que ejecuta Windows. Por ejemplo, Accesorios o Inicio.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ class Win32_LogicalProgramGroup : Win32_ProgramGroupOrItem
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LogicalProgramGroup de Win32** tiene estos tipos de miembros:
 
@@ -98,7 +98,7 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 
 </dd> <dt>
 
-**Groupname**
+**NombreDeGrupo**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -166,7 +166,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -197,7 +197,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -211,14 +211,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -272,17 +272,17 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| CWbemProviderGlue (Métodos de clase \| [**GetAllInstances")**](/windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getallinstances)
 </dt> </dl>
 
-Usuarios que pueden acceder al grupo Windows programa. Los grupos de programas se implementan como carpetas de archivos en Win32.
+Usuarios que pueden acceder a la Windows grupo de programas. Los grupos de programas se implementan como carpetas de archivos en Win32.
 
 Ejemplo: "Todos los usuarios"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ LogicalProgramGroup de Win32** se deriva de [**Win32 \_ ProgramGroupOrItem**](win32-programgrouporitem.md).
+La **clase \_ LogicalProgramGroup de Win32** se deriva de [**\_ ProgramGroupOrItem de Win32.**](win32-programgrouporitem.md)
 
-El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, [vea Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
+El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -298,7 +298,7 @@ El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

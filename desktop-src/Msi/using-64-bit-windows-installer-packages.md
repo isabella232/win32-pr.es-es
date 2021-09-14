@@ -1,21 +1,21 @@
 ---
-description: Siga las instrucciones siguientes al crear un paquete de 64 bits Windows Installer.
+description: Cumpla las siguientes directrices al crear un paquete de 64 bits Windows Installer.
 ms.assetid: e7dfd188-fd4d-49d6-8cf5-c17182b697ca
 title: Uso de paquetes de instalador de Windows de 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9c3bca5c666f7a6a0f1757efca40a26b1406d4241abf7d32a066c2d7fa01b92
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b46ab8a9668d816ea99bd92c2575e9ea6367352
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119809095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069595"
 ---
 # <a name="using-64-bit-windows-installer-packages"></a>Uso de paquetes de instalador de Windows de 64 bits
 
 Al crear aplicaciones o paquetes del instalador de Windows de [64](64-bit-windows-installer-packages.md) bits que llaman a Windows Installer para instalar paquetes de 64 bits, haga lo siguiente:
 
--   Use un esquema Windows base de datos del instalador de 200 o superior. Especifique que la versión 2.0 es la versión mínima del instalador necesaria para instalar el paquete estableciendo la propiedad [**Resumen**](page-count-summary.md) de recuento de páginas en el entero 200. Las versiones Windows installer anteriores rechazan los intentos de instalar paquetes de 64 bits. En el caso de los paquetes de 64 bits en la plataforma Arm64, el esquema de base de datos Windows Installer debe ser 500 o superior.
+-   Use un esquema Windows base de datos del instalador de 200 o superior. Especifique que la versión 2.0 es la versión mínima del instalador necesaria para instalar el paquete estableciendo la propiedad [**Resumen**](page-count-summary.md) de recuento de páginas en el entero 200. Las versiones Windows installer anteriores rechazan los intentos de instalar paquetes de 64 bits. Para los paquetes de 64 bits en la plataforma Arm64, el esquema de base de datos Windows Installer debe ser 500 o superior.
 -   Indique en la [**propiedad Resumen de**](template-summary.md) plantilla del flujo de información de resumen del paquete que se trata de un paquete de 64 bits. Escriba "Intel64" en el campo de plataforma de la propiedad **Resumen** de plantilla si el paquete se va a ejecutar en un procesador Intel64. Escriba "x64" si el paquete se va a ejecutar en un procesador extendido de 64 bits. Escriba "Arm64" si el paquete se va a ejecutar en un procesador Arm64. Un paquete no se puede marcar como compatible con las  plataformas Intel64 y x64; un valor de propiedad Resumen de plantilla de "Intel64,x64" no es válido. Un paquete no se puede marcar como compatible con plataformas de  32 y 64 bits, los valores de propiedad Resumen de plantilla de "Intel,x64" o "Intel,Intel64" no son válidos.
 -   Identifique cada componente de 64 bits estableciendo **msidbComponentAttributes64bit en** la columna Atributos de la [tabla Component.](component-table.md)
 -   Use instrucciones condicionales opcionales que comprueben la versión del sistema operativo de 64 bits haciendo referencia a la [**propiedad VersionNT64.**](versionnt64.md) Windows El instalador establece esta propiedad en la versión de Windows de 64 bits y deja VersionNT64 sin definir si el sistema operativo no es de 64 Windows. Para obtener más información, [vea Using Properties in Conditional Statements](using-properties-in-conditional-statements.md).

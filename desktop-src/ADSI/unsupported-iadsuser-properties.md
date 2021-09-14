@@ -8,31 +8,31 @@ keywords:
 - ADSI del proveedor WinNT, objeto de usuario, propiedades IADsUser no admitidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 015a03f8bbe4029a886d83ab714f102ba5a7f4b6aa2804d5aae2da315c333c7e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5d5b3e3c42f80754203f635e04dea258d7623234
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254768"
 ---
 # <a name="unsupported-iadsuser-properties"></a>Propiedades IADsUser no admitidas
 
 La [**interfaz IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) implementada por el proveedor ADSI de WinNT admite todas las propiedades [IADsUser,](iadsuser-property-methods.md) excepto lo siguiente. Para obtener o modificar estas propiedades, use el proveedor LDAP.
 
 -   [**BadLoginAddress**](iadsuser-property-methods.md)
--   [**Departamento**](iadsuser-property-methods.md)
+-   [**department**](iadsuser-property-methods.md)
 -   [**División**](iadsuser-property-methods.md)
 -   [**EmailAddress**](iadsuser-property-methods.md)
 -   [**Employeeid**](iadsuser-property-methods.md)
 -   [**FaxNumber**](iadsuser-property-methods.md)
--   [**Apellido**](iadsuser-property-methods.md)
+-   [**FirstName**](iadsuser-property-methods.md)
 -   [**GraceLoginsAllowed**](iadsuser-property-methods.md)
 -   [**GraceLoginsRemaining**](iadsuser-property-methods.md)
 -   [**Página principal**](iadsuser-property-methods.md)
--   [**Idiomas**](iadsuser-property-methods.md)
+-   [**Lenguajes**](iadsuser-property-methods.md)
 -   [**LastFailedLogin**](iadsuser-property-methods.md)
--   [**Apellido**](iadsuser-property-methods.md)
--   [**director**](iadsuser-property-methods.md)
+-   [**LastName**](iadsuser-property-methods.md)
+-   [**Director**](iadsuser-property-methods.md)
 -   [**NamePrefix**](iadsuser-property-methods.md)
 -   [**Sufijonombre**](iadsuser-property-methods.md)
 -   [**OfficeLocations**](iadsuser-property-methods.md)

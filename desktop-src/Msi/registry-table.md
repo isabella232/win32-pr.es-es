@@ -4,18 +4,18 @@ ms.assetid: 809ffd02-cf97-42d8-aed9-c13a14dcd8b4
 title: Tabla del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6b76fbc52357cdba68dfdcdda37e6edb3032086bf101788db0cdc69c0281264
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b16cb2084716ea8cb9830056808e9c6be7da667f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069682"
 ---
 # <a name="registry-table"></a>Tabla del Registro
 
 La tabla Registro contiene la información del Registro que la aplicación debe establecer en el registro del sistema.
 
-La tabla Registry tiene las columnas siguientes.
+La tabla Registry tiene las siguientes columnas.
 
 
 
@@ -39,7 +39,7 @@ La tabla Registry tiene las columnas siguientes.
 <span id="Registry"></span><span id="registry"></span><span id="REGISTRY"></span>Registro
 </dt> <dd>
 
-Clave principal usada para identificar un registro del Registro.
+Clave principal usada para identificar un registro.
 
 </dd> <dt>
 
@@ -52,8 +52,8 @@ Clave raíz predefinida para el valor del Registro. Escriba un valor de -1 en es
 
 | Constante                          | Hexadecimal | Decimal | Clave raíz                                                                                                                                                                                                                                                                                                                                     |
 |-----------------------------------|-------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (ninguno)                            | \- 0x001    | -1      | Si se trata de una instalación por usuario, el valor del Registro se escribe en **HKEY \_ CURRENT \_ USER**. Si se trata de una instalación por máquina, el valor del Registro se escribe en **HKEY \_ LOCAL \_ MACHINE**. Tenga en cuenta que se especifica una instalación por máquina estableciendo la [**propiedad ALLUSERS**](allusers.md) en 1.<br/>                |
-| **msidbRegistryRootClassesRoot**  | 0x000       | 0       | **HKEY \_ CLASSES \_ ROOT** El instalador escribe o quita el valor del subárbol Clases de **\\ software \\ HKCU** durante la instalación en el contexto de instalación [por usuario](installation-context.md).<br/> El instalador escribe o quita el valor del subárbol **HKLM \\ Software \\ Classes** durante las instalaciones por máquina.<br/> |
+| (ninguno)                            | \- 0x001    | -1      | Si se trata de una instalación por usuario, el valor del Registro se escribe en **HKEY \_ CURRENT \_ USER**. Si se trata de una instalación por equipo, el valor del Registro se escribe en **HKEY \_ LOCAL \_ MACHINE**. Tenga en cuenta que se especifica una instalación por equipo estableciendo la [**propiedad ALLUSERS**](allusers.md) en 1.<br/>                |
+| **msidbRegistryRootClassesRoot**  | 0x000       | 0       | **HKEY \_ CLASSES \_ ROOT** El instalador escribe o quita el valor del subárbol Clases de **\\ software \\ HKCU** durante la instalación en el contexto de instalación [por usuario](installation-context.md).<br/> El instalador escribe o quita el valor del subárbol Clases de **\\ software \\ HKLM** durante las instalaciones por máquina.<br/> |
 | **msidbRegistryRootCurrentUser**  | 0x001       | 1       | **USUARIO ACTUAL DE HKEY \_ \_**                                                                                                                                                                                                                                                                                                                      |
 | **msidbRegistryRootLocalMachine** | 0x002       | 2       | **HKEY \_ LOCAL \_ MACHINE**                                                                                                                                                                                                                                                                                                                     |
 | **msidbRegistryRootUsers**        | 0x003       | 3       | **USUARIOS DE \_ HKEY**                                                                                                                                                                                                                                                                                                                              |
@@ -62,7 +62,7 @@ Clave raíz predefinida para el valor del Registro. Escriba un valor de -1 en es
 
  
 
-Tenga en cuenta que se recomienda que las entradas del Registro escritas en el subárbol **HKCU** hacen referencia a un componente que tiene el bit RegistryKeyPath establecido en la columna Atributos de la [tabla Component](component-table.md). Esto garantiza que el instalador escribe las entradas del Registro necesarias cuando hay varios usuarios en el mismo equipo.
+Tenga en cuenta que se recomienda que las entradas del Registro escritas en el subárbol **HKCU** hacen referencia a un componente con el bit RegistryKeyPath establecido en la columna Atributos de la [tabla Component](component-table.md). Esto garantiza que el instalador escribe las entradas del Registro necesarias cuando hay varios usuarios en el mismo equipo.
 
 </dd> <dt>
 
@@ -92,14 +92,14 @@ Si la columna Valor es Null, las cadenas que se muestran en la tabla siguiente d
 
  
 
-Tenga en cuenta que se debe usar la tabla [RemoveRegistry](removeregistry-table.md) si se va a eliminar una clave del Registro instalada, con sus valores y subclaves, cuando se instala el componente.
+Tenga en cuenta que la tabla [RemoveRegistry](removeregistry-table.md) debe usarse si se va a eliminar una clave del Registro instalada, con sus valores y subclaves, cuando se instala el componente.
 
 </dd> <dt>
 
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valor
 </dt> <dd>
 
-Esta columna es el valor localizable del Registro. El campo tiene [formato](formatted.md). Si el valor está asociado a uno de los prefijos siguientes (es decir, value ), el valor se interpreta como se \# % describe en la tabla. Tenga en cuenta que cada prefijo comienza con un signo de número ( \# ). Si el valor comienza con dos o más signos numéricos consecutivos ( ), el primero se omite y el valor se interpreta \# y almacena como una \# cadena.
+Esta columna es el valor localizable del Registro. El campo tiene [el formato](formatted.md). Si el valor está asociado a uno de los prefijos siguientes (es decir, valor ), el valor se interpreta como se \# % describe en la tabla. Tenga en cuenta que cada prefijo comienza con un signo de número ( \# ). Si el valor comienza con dos o más signos numéricos consecutivos ( ), el primero se omite y el valor se \# interpreta y se almacena como una \# cadena.
 
 
 
@@ -113,9 +113,9 @@ Esta columna es el valor localizable del Registro. El campo tiene [formato](form
 
  
 
--   Si el valor contiene la tilde de secuencia , el valor se interpreta como una lista de cadenas delimitada por NULL \[ ~ \] (REG \_ MULTI \_ SZ). Por ejemplo, para especificar una lista que contenga las tres cadenas a, b y c, use "a \[ ~ \] b \[ ~ \] c".
--   La secuencia \[ ~ \] dentro del valor separa las cadenas individuales y se interpreta y almacena como un carácter null.
--   Si precede \[ ~ a la lista de cadenas, las cadenas se anexarán a cualquier cadena de valor \] del Registro existente. Si ya se produce una cadena anexada en el valor del Registro, se quita la aparición original de la cadena.
+-   Si el valor contiene la tilde de secuencia , el valor se interpreta como una lista de cadenas delimitada por null \[ ~ \] (REG \_ MULTI \_ SZ). Por ejemplo, para especificar una lista que contenga las tres cadenas a, b y c, use "a \[ ~ \] b \[ ~ \] c".
+-   La secuencia \[ ~ \] dentro del valor separa las cadenas individuales y se interpreta y almacena como un carácter NULL.
+-   Si precede a la lista de cadenas, las cadenas se anexarán a las cadenas de valor \[ ~ \] del Registro existentes. Si ya se produce una cadena anexa en el valor del Registro, se quita la aparición original de la cadena.
 -   Si sigue al final de la lista de \[ cadenas, las cadenas se anteponen a cualquier cadena de valor ~ \] del Registro existente. Si ya se produce una cadena de anteponer en el valor del Registro, se quita la repetición original de la cadena.
 -   Si está al principio y al final o al principio ni al final de la lista de cadenas, las cadenas reemplazarán las cadenas de valor \[ ~ \] del Registro existentes.
 -   De lo contrario, el valor se interpreta y se almacena como una cadena (REG \_ SZ).
@@ -129,7 +129,7 @@ Clave externa en la primera columna de la [tabla Component](component-table.md) 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las [acciones WriteRegistryValues](writeregistryvalues-action.md) y [RemoveRegistryValues](removeregistryvalues-action.md) de las tablas de secuencia [*procesan*](s-gly.md) la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 

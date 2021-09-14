@@ -4,12 +4,12 @@ ms.assetid: 127d83a2-b651-42ef-ac7c-a7fa1b15cf27
 title: Buscar un archivo en una ubicación específica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b131708e5f9ff37474864aa5d6ef13abcab8f0d162563ca810c7e31fe2c41c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72ad4e456d331119b698d8e6e696e86b953006eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069642"
 ---
 # <a name="searching-for-a-file-in-a-specific-location"></a>Buscar un archivo en una ubicación específica
 
@@ -37,7 +37,7 @@ ms.locfileid: "120041155"
 
     | Propiedad         | Firma          |
     |------------------|--------------------|
-    | Myapp<br/> | AppFile<br/> |
+    | MYAPP<br/> | AppFile<br/> |
 
     
 
@@ -57,7 +57,7 @@ ms.locfileid: "120041155"
 
      
 
-4.  Incluya la acción AppSearch en la secuencia de acciones. Si MyApp.exe está instalado en la ubicación C: Archivos de programa MyProducts Projects, el instalador establece la propiedad \\ \\ \\ \\ MYAPP en la ubicación del archivo.
+4.  Incluya la acción AppSearch en la secuencia de acciones. Si MyApp.exe está instalado en C: Archivos de programa MyProducts Projects bin, el instalador establece la propiedad \\ \\ \\ \\ MYAPP en la ubicación del archivo.
 
  
 

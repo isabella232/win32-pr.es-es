@@ -1,19 +1,19 @@
 ---
-description: En las páginas siguientes se muestra la lista de cambios Windows Installer API Windows Installer.
+description: En las páginas siguientes se muestra la lista de Windows Installer API Windows versión del instalador.
 ms.assetid: 6e1bdfb5-1a6a-414f-a93c-cf87b18b6663
 title: Novedades del instalador de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5053ca1066eda7de7cf1e252519ec58f510c2797962794c2ded8f3f943daf05
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6854eb67056003abbb6f790972f77a053f8f278f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119498755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069583"
 ---
 # <a name="whats-new-in-windows-installer"></a>Novedades del instalador de Windows
 
-En las páginas siguientes se muestra la lista de cambios Windows Installer API Windows Installer.
+En las páginas siguientes se muestra la lista de Windows Installer API Windows versión del instalador.
 
 En este tema se identifican las adiciones y los cambios que están disponibles en Windows Installer 5.0.
 
@@ -23,7 +23,7 @@ En este tema se identifican las adiciones y los cambios que están disponibles e
   
 </dl>
 
-En estos temas se Windows las características del instalador que no son compatibles con versiones anteriores del Windows instalador.
+En estos temas se Windows características del instalador que no son compatibles con versiones anteriores del Windows instalador.
 
 <dl>
 

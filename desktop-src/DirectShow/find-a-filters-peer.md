@@ -4,12 +4,12 @@ ms.assetid: 74d9fe65-f7f4-4971-9550-27884ac4146b
 title: Buscar un filtro del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60d2f20a7145d2365e7ee1ec261ea861ddc5fa1eb01d0c3b2503f6f53fa25815
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1717f6ad61ad7310fdaa11ea5baaab4dcb7f8011
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118401769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255129"
 ---
 # <a name="find-a-filters-peer"></a>Buscar un filtro del mismo nivel
 
@@ -204,7 +204,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Técnicas Graph-Building generales](general-graph-building-techniques.md)
+[Técnicas de Graph-Building generales](general-graph-building-techniques.md)
 </dt> </dl>
 
  

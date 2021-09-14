@@ -4,12 +4,12 @@ ms.assetid: c8aa84a8-5525-4a12-898f-63dc30113b13
 title: Buscar un archivo en todas las unidades fijas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d460cd55fe54a98c6a02e23e49af9ea9838c7651262fa03f868bdb76acc2d506
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83b79c7f2999d4ee7937790dc68470210f1d4b2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069649"
 ---
 # <a name="searching-all-fixed-drives-for-a-file"></a>Buscar un archivo en todas las unidades fijas
 
@@ -37,7 +37,7 @@ ms.locfileid: "120041255"
 
     | Propiedad         | Firma          |
     |------------------|--------------------|
-    | Myapp<br/> | AppFile<br/> |
+    | MYAPP<br/> | AppFile<br/> |
 
     
 

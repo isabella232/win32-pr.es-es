@@ -4,12 +4,12 @@ ms.assetid: f8b60a75-9c0e-41c5-b6af-6a05a26b2d71
 title: Acción RegisterClassInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1a0983b77c517cb2084b21d6d1500ec9b2a54b45d403c43f65bcc29505e2afe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd916772bc236dfc86df336347514c10d5dfbce7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069701"
 ---
 # <a name="registerclassinfo-action"></a>Acción RegisterClassInfo
 
@@ -19,18 +19,18 @@ La acción RegisterClassInfo administra el registro de información de clase COM
 
 La acción RegisterClassInfo debe ir después de [la acción InstallFiles](installfiles-action.md) y [la acción UnregisterClassInfo.](unregisterclassinfo-action.md)
 
-La secuenciación de las acciones del siguiente grupo está restringida. Si algún subconjunto de estas acciones se produce junto en una tabla de secuencias, debe tener el mismo orden de secuencia relativo que se muestra:
+La secuenciación de las acciones del siguiente grupo está restringida. Si algún subconjunto de estas acciones se produce conjuntamente en una tabla de secuencias, deben tener el mismo orden de secuencia relativo que se muestra:
 
 -   [UnregisterClassInfo](unregisterclassinfo-action.md)
 -   [UnregisterExtensionInfo](unregisterextensioninfo-action.md)
 -   [UnregisterProgIdInfo](unregisterprogidinfo-action.md)
--   [Anulación del registroMIMEInfo](unregistermimeinfo-action.md)
+-   [UnregisterMIMEInfo](unregistermimeinfo-action.md)
 -   RegisterClassInfo
 -   [RegisterExtensionInfo](registerextensioninfo-action.md)
 -   [RegisterProgIdInfo](registerprogidinfo-action.md)
 -   [RegisterMIMEInfo](registermimeinfo-action.md)
 
-Por ejemplo, RegisterClassInfo debe ir después [de UnregisterMIMEInfo en](unregistermimeinfo-action.md) la tabla de secuencia.
+Por ejemplo, RegisterClassInfo debe ir después de [UnregisterMIMEInfo en](unregistermimeinfo-action.md) la tabla de secuencia.
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -44,15 +44,15 @@ Por ejemplo, RegisterClassInfo debe ir después [de UnregisterMIMEInfo en](unreg
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el sistema admite la instalación a petición de servidores OLE, [](class-table.md) RegisterClassInfo registra todas las clases COM de la tabla Clase asociada a una característica seleccionada para instalarse o anunciarse. De lo contrario, esta acción solo registra las clases COM asociadas a una característica seleccionada para la instalación.
+Si el sistema admite la instalación a petición de servidores OLE, RegisterClassInfo registra todas las clases COM de la tabla [Class](class-table.md) asociada a una característica seleccionada para instalarse o anunciarse. De lo contrario, esta acción solo registra las clases COM asociadas a una característica seleccionada para la instalación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Propiedad OLEAdvtSupport**](oleadvtsupport.md)
+[**OleAdvtSupport, propiedad**](oleadvtsupport.md)
 </dt> </dl>
 
  

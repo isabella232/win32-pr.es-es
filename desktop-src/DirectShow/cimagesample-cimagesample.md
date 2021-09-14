@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4eeb15ec42daed1fa835eff28a4953b223d9782859bfcc23b174dee8fee65019
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecab52e347e03b698adccb79b77da879d26612b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118402535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273087"
 ---
 # <a name="cimagesamplecimagesample-constructor"></a>Constructor CImageSample.CImageSample
 
@@ -81,7 +81,7 @@ Longitud del búfer.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**clase CImageAllocator**](cimageallocator.md) crea una DIB mediante un objeto de asignación de archivos que está respaldo por el archivo de paginación del sistema operativo. El identificador del objeto de asignación de archivos se almacena en el **miembro hMapping** de la **estructura m \_ DibData.**
 

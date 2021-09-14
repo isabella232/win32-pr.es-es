@@ -4,14 +4,14 @@ ms.assetid: 6de1c4c2-d910-487c-8b82-408cb6e02c44
 title: WM_IME_COMPOSITION mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb1212d3fcbdee239c122c26bdd19814d156f9c886883ed381f2e8f6f2a59839
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c8d795c1e270be978927e3b93743de5fece7021b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119811595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254811"
 ---
-# <a name="wm_ime_composition-message"></a>Mensaje WM \_ IME \_ COMPOSITION
+# <a name="wm_ime_composition-message"></a>Mensaje COMPOSITION \_ de WM IME \_
 
 Se envía a una aplicación cuando el IME cambia el estado de composición como resultado de una pulsación de tecla. Una ventana recibe este mensaje a través de su [*función WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -34,7 +34,7 @@ LRESULT CALLBACK WindowProc(
 *Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
 </dd> <dt>
 
@@ -48,7 +48,7 @@ Carácter DBCS que representa el cambio más reciente en la cadena de composici�
 *lParam* 
 </dt> <dd>
 
-Valor que especifica cómo ha cambiado la cadena o el carácter de composición. Este parámetro puede ser uno o varios de los valores siguientes. Para obtener más información sobre estos valores, vea [Valores de cadena de composición de IME.](ime-composition-string-values.md)
+Valor que especifica cómo ha cambiado la cadena de composición o el carácter. Este parámetro puede ser uno o varios de los valores siguientes. Para obtener más información sobre estos valores, vea [Valores de cadena de composición de IME](ime-composition-string-values.md).
 
 <dl><span id="GCS_COMPATTR"></span><span id="gcs_compattr"></span><dt>
 
@@ -92,7 +92,7 @@ El *parámetro lParam* también puede tener uno o varios de los valores siguient
 
 
 
-| Valor                                                                                                                                                            | Significado                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Value                                                                                                                                                            | Significado                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="CS_INSERTCHAR"></span><span id="cs_insertchar"></span><dl> <dt>**CS \_ INSERTCHAR**</dt> </dl>    | Inserte el *carácter de composición wParam* en el punto de inserción actual. Una aplicación debe mostrar el carácter de composición si procesa este mensaje.<br/>                                                                                                                                                                                                                                |
 | <span id="CS_NOMOVECARET"></span><span id="cs_nomovecaret"></span><dl> <dt>**CS \_ NOMOVECARET**</dt> </dl> | No mueva la posición del cursor de cursor como resultado del procesamiento del mensaje. Por ejemplo, si un IME especifica una combinación de CS INSERTCHAR y \_ CS NOMOVECARET, la aplicación debe insertar el carácter especificado en la posición del cursor de inserción actual, pero no debe mover el carácter de inserción a la siguiente \_ posición. Un mensaje WM \_ IME \_ COMPOSITION posterior con GCS \_ RESULTSTR reemplazará este carácter.<br/> |
@@ -107,13 +107,13 @@ El *parámetro lParam* también puede tener uno o varios de los valores siguient
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación debe procesar este mensaje si muestra los propios caracteres de composición. De lo contrario, debería enviar el mensaje a la ventana de IME.
 
-Si la aplicación ha creado una ventana IME, debe pasar este mensaje a esa ventana. La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  procesa este mensaje al pasarlo a la ventana predeterminada de IME. La ventana IME procesa este mensaje actualizando su apariencia en función de la marca de cambio especificada. Una aplicación puede llamar a [**ImmGetCompositionString para**](/windows/desktop/api/Imm/nf-imm-immgetcompositionstringa) recuperar el nuevo estado de composición.
+Si la aplicación ha creado una ventana de IME, debe pasar este mensaje a esa ventana. La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  procesa este mensaje al pasarlo a la ventana predeterminada de IME. La ventana IME procesa este mensaje actualizando su apariencia en función de la marca de cambio especificada. Una aplicación puede llamar a [**ImmGetCompositionString para**](/windows/desktop/api/Imm/nf-imm-immgetcompositionstringa) recuperar el nuevo estado de composición.
 
-Si no se establece ninguno de los valores de GCS, el mensaje indica que se ha cancelado la composición actual y que las aplicaciones que dibujan la cadena de composición deben \_ eliminar la cadena.
+Si no se establece ninguno de los valores de GCS, el mensaje indica que se ha cancelado la composición actual y las aplicaciones que dibujan la cadena de composición deben \_ eliminar la cadena.
 
 ## <a name="requirements"></a>Requisitos
 

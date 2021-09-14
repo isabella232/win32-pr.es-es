@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ccfd0cd3ffa7b66dd52d56072afe7c5be23411f45f3eb5f7b02a3f69e6af34b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b68af47d2c168221f8621dec7b5ba42a2611cab9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255405"
 ---
 # <a name="ctransformoutputpinctransformoutputpin-destructor"></a>Destructor CTransformOutputPin.~CTransformOutputPin
 

@@ -7,12 +7,12 @@ keywords:
 - Protección de acceso a la red, página de inicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc1e5b5121566c3626ee7a9f2ba5d85efc1bf6cff17b412cd99874ae9b346780
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b99348428a867be5bf846fd40b030b844460cdc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161239"
 ---
 # <a name="network-access-protection"></a>Protección de acceso a redes
 
@@ -23,7 +23,7 @@ ms.locfileid: "118939133"
 
  
 
-Protección de acceso a redes (NAP) es un conjunto de componentes del sistema operativo que proporcionan una plataforma para el acceso protegido a redes privadas. La plataforma NAP proporciona una manera integrada de evaluar el estado de mantenimiento del sistema de un cliente de red que intenta conectarse o comunicarse en una red y restringir el acceso del cliente de red hasta que se cumplen los requisitos de la directiva de mantenimiento.
+Protección de acceso a redes (NAP) es un conjunto de componentes del sistema operativo que proporcionan una plataforma para el acceso protegido a redes privadas. La plataforma NAP proporciona una manera integrada de evaluar el estado de mantenimiento del sistema de un cliente de red que está intentando conectarse o comunicarse en una red y restringir el acceso del cliente de red hasta que se cumplen los requisitos de la directiva de mantenimiento.
 
 NAP es una plataforma extensible que proporciona una infraestructura y un conjunto de API para agregar componentes que almacenan, informan, validan y corrigen el estado de mantenimiento del sistema de un equipo. Por sí misma, la plataforma NAP no proporciona componentes para acumular y evaluar los atributos del estado de mantenimiento de un equipo. Otros componentes, conocidos como agentes de mantenimiento del sistema (SHA) y validadores de estado del sistema (SHV), proporcionan validación de directivas de red y cumplimiento de directivas de red.
 
@@ -52,7 +52,7 @@ La plataforma NAP requiere servidores de infraestructura NAP que ejecuten Window
 | Tema                                         | Descripción                                                                       |
 |-----------------------------------------------|-----------------------------------------------------------------------------------|
 | [Acerca de NAP](about-nap.md)<br/>         | Información general sobre la API nap.<br/>                                     |
-| [Con NAP](using-nap.md)<br/>         | Ejemplos de uso de la API nap.<br/>                                            |
+| [Con NAP](using-nap.md)<br/>         | Ejemplos de uso para la API NAP.<br/>                                            |
 | [Referencia de NAP](nap-reference.md)<br/> | Documentación de interfaces NAP, estructuras y otros elementos de código.<br/> |
 
 

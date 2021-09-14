@@ -1,19 +1,19 @@
 ---
-description: Las aplicaciones deben usar el carácter separador de líneas (0x2028) y el carácter separador de párrafos (0x2029) para dividir el texto sin formato. Se inicia una nueva línea después de cada separador de línea. Se inicia un nuevo párrafo detrás de cada separador de párrafo.
+description: Las aplicaciones deben usar el carácter separador de líneas (0x2028) y el carácter separador de párrafos (0x2029) para dividir texto sin formato. Se inicia una nueva línea después de cada separador de línea. Se inicia un nuevo párrafo detrás de cada separador de párrafo.
 ms.assetid: 086aca6c-8d1f-4e54-9e1c-642be50b303c
 title: Usar separadores de líneas y párrafos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 857d7cae4dc7bd720ca94e9780bcb83588650b3df578cd0216e2424c1b28d5af
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f2c9511ba2a8889b3c9139daf1d088d91ed746db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254853"
 ---
 # <a name="using-line-and-paragraph-separators"></a>Usar separadores de líneas y párrafos
 
-Las aplicaciones deben usar el carácter separador de líneas (0x2028) y el carácter separador de párrafos (0x2029) para dividir el texto sin formato. Se inicia una nueva línea después de cada separador de línea. Se inicia un nuevo párrafo detrás de cada separador de párrafo.
+Las aplicaciones deben usar el carácter separador de líneas (0x2028) y el carácter separador de párrafos (0x2029) para dividir texto sin formato. Se inicia una nueva línea después de cada separador de línea. Se inicia un nuevo párrafo detrás de cada separador de párrafo.
 
 No es necesario iniciar la primera línea o párrafo de un archivo con estos caracteres, ni finalizar la última línea o párrafo con ellos. Esto indica que hay una línea o párrafo vacíos en esa ubicación.
 

@@ -4,12 +4,12 @@ ms.assetid: 1f4215b2-dc71-4e6e-bc2e-3b43316806b9
 title: Tabla de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0a7f72d1ee8cbbf05e39754ba1d06700f7b5d5f2e03c0a7ef3cb9b03b7d00f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 612ab63aa36de6cf91ec8176eefec84cef591c55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069741"
 ---
 # <a name="property-table"></a>Tabla de propiedades
 
@@ -42,15 +42,15 @@ Nombre de una propiedad. Vea [Propiedades](properties.md).
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valor
 </dt> <dd>
 
-Valor de cadena localizable para la propiedad . Nunca puede ser Null o una cadena vacía.
+Valor de cadena localizable para la propiedad . Puede que nunca sea Null o una cadena vacía.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Tenga en cuenta que no se puede usar la tabla Property para establecer una propiedad en el valor de otra propiedad. El instalador no hace nada en la cadena de texto especificada en la columna Valor antes de establecer la propiedad en la columna Propiedad . Si se especifica FirstProperty en la columna Property y SecondProperty en la columna Value, el valor de FirstProperty se establece en la cadena de texto " SecondProperty " y no en el valor de la \[ \] propiedad \[ \] SecondProperty. Esto es necesario para evitar la creación de referencias circulares en la tabla Property. En su lugar, puede establecer una propiedad en otra mediante un [tipo de acción personalizada 51](custom-action-type-51.md).
+Tenga en cuenta que no puede usar la tabla Property para establecer una propiedad en el valor de otra propiedad. El instalador no hace nada con la cadena de texto especificada en la columna Valor antes de establecer la propiedad en la columna Propiedad . Si FirstProperty se especifica en la columna Property y SecondProperty en la columna Value, el valor de FirstProperty se establece en la cadena de texto " SecondProperty " y no en el valor de la \[ \] propiedad \[ \] SecondProperty. Esto es necesario para evitar la creación de referencias circulares en la tabla Property. En su lugar, puede establecer una propiedad en otra mediante un [tipo de acción personalizada 51](custom-action-type-51.md).
 
-Tenga en cuenta que [**la propiedad AdminProperties**](adminproperties.md) se puede usar para invalidar los valores de la tabla Property durante [una instalación administrativa.](administrative-installation.md)
+Tenga en cuenta [**que la propiedad AdminProperties**](adminproperties.md) se puede usar para invalidar los valores de la tabla Property durante [una instalación administrativa.](administrative-installation.md)
 
 No use propiedades para contraseñas u otra información que deba permanecer segura. El instalador puede escribir el valor de una propiedad creada en la tabla Property o creada en tiempo de ejecución en un registro o en el registro del sistema.
 

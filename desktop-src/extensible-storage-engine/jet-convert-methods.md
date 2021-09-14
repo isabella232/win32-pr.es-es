@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: métodos JET_CONVERT'
-title: Métodos JET_CONVERT
+description: 'Más información sobre: JET_CONVERT métodos'
+title: JET_CONVERT métodos
 TOCTitle: JET_CONVERT methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_CONVERT
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_convert_methods(v=EXCHG.10)
@@ -8,20 +8,20 @@ ms:contentKeyID: 55103542
 ms.date: 07/30/2014
 ms.topic: article
 ms.openlocfilehash: df4223ba850aa0f75abae7e6b4ff1099e7d72b3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358827"
 ---
-# <a name="jet_convert-methods"></a>Métodos JET_CONVERT
+# <a name="jet_convert-methods"></a>JET_CONVERT métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-**Nota: esta API ya está obsoleta.**
+**NOTA: Esta API ahora está obsoleta.**
 
-El tipo de [JET_CONVERT](./jet-convert-class.md) expone los siguientes miembros.
+El [JET_CONVERT](./jet-convert-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -41,7 +41,7 @@ El tipo de [JET_CONVERT](./jet-convert-class.md) expone los siguientes miembros.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -51,7 +51,7 @@ El tipo de [JET_CONVERT](./jet-convert-class.md) expone los siguientes miembros.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -70,10 +70,10 @@ El tipo de [JET_CONVERT](./jet-convert-class.md) expone los siguientes miembros.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_CONVERT (clase)](./jet-convert-class.md)
+[JET_CONVERT clase](./jet-convert-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

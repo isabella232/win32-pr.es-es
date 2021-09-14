@@ -4,16 +4,16 @@ ms.assetid: ae8ab98f-dc3b-414d-85c9-6bf204c2f776
 title: Interfaz de usuario Language Management
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5aaf20ca6183109f81572eeb706673812fc988eca87ea2522f437eafd22774b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 852fe20d3edb9795c2c2a9d3ec45c1e8ffe053ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119631845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254918"
 ---
 # <a name="user-interface-language-management"></a>Interfaz de usuario Language Management
 
-LA INTERFAZ de usuario permite que las aplicaciones administren los lenguajes de la interfaz de usuario de dos maneras. Una aplicación puede usar un enfoque simple para la administración de idiomas de forma predeterminada en la configuración de idioma del sistema operativo. Como alternativa, la aplicación puede admitir sus propios idiomas desde los que el usuario puede seleccionar. La API de MUI también permite que la aplicación acceda directamente a los idiomas y listas de idiomas admitidos por el sistema operativo y mantenidos por el cargador de recursos. En el resto de este tema se definen los idiomas admitidos por el sistema y el mecanismo de reserva de idioma.
+LA INTERFAZ de usuario permite que las aplicaciones administren los lenguajes de la interfaz de usuario de dos maneras. Una aplicación puede usar un enfoque simple para la administración de idiomas de forma predeterminada en la configuración de idioma del sistema operativo. Como alternativa, la aplicación puede admitir sus propios idiomas desde los que el usuario puede seleccionar. La API DE MOMENTO también permite que la aplicación acceda directamente a idiomas y listas de idiomas compatibles con el sistema operativo y mantenidos por el cargador de recursos. En el resto de este tema se definen los idiomas admitidos por el sistema y el mecanismo de reserva de idioma.
 
 ## <a name="languages-maintained-by-the-operating-system"></a>Idiomas mantenidos por el sistema operativo
 
@@ -34,7 +34,7 @@ El sistema operativo define el idioma de la interfaz de usuario  del sistema com
 
  
 
-No hay ninguna función DE ACUERDO disponible para establecer el idioma de la interfaz de usuario del sistema. Para recuperar este valor, una aplicación destinada a Windows Vista y versiones posteriores puede llamar a [**GetSystemPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-getsystempreferreduilanguages) y obtener el primer idioma en la lista de idiomas de interfaz de usuario preferidos del sistema. Las aplicaciones destinadas a sistemas operativos anteriores a Windows Vista no pueden usar [**GetSystemPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-getsystempreferreduilanguages) y deben basarse en la suposición de que el lenguaje de interfaz de usuario del sistema siempre es el mismo que el idioma predeterminado de la interfaz de usuario del sistema.
+No hay ninguna función DE ACUERDO disponible para establecer el idioma de la interfaz de usuario del sistema. Para recuperar este valor, una aplicación destinada a Windows Vista y versiones posteriores puede llamar a [**GetSystemPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-getsystempreferreduilanguages) y obtener el primer idioma en la lista de idiomas de interfaz de usuario preferidos del sistema. Las aplicaciones destinadas a sistemas operativos anteriores Windows Vista no pueden usar [**GetSystemPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-getsystempreferreduilanguages) y deben basarse en la suposición de que el lenguaje de interfaz de usuario del sistema siempre es el mismo que el idioma predeterminado de la interfaz de usuario del sistema.
 
 ### <a name="user-ui-language"></a>Lenguaje de interfaz de usuario de usuario
 
@@ -42,7 +42,7 @@ El idioma de la interfaz de usuario de usuario determina el idioma de la interfa
 
 En Windows Vista y versiones posteriores, el idioma de la interfaz de usuario de usuario es el primer idioma de la lista de idiomas de interfaz de usuario preferidos por el usuario. Tenga en cuenta que los idiomas de reserva se pueden usar si determinados recursos no están disponibles en este idioma.
 
-En los sistemas operativos Windows Vista, el idioma de la interfaz de usuario de usuario suele ser el mismo que el idioma predeterminado de la interfaz de usuario del sistema. Sin embargo, para Windows DEA, los dos idiomas pueden ser diferentes.
+En los sistemas operativos Windows vista previos, el idioma de la interfaz de usuario del usuario suele ser el mismo que el idioma predeterminado de la interfaz de usuario del sistema. Sin embargo, para Windows DEA, los dos idiomas pueden ser diferentes.
 
 Para recuperar el lenguaje de interfaz de usuario de usuario, una aplicación puede llamar a [**GetUserDefaultUILanguage**](/windows/desktop/api/Winnls/nf-winnls-getuserdefaultuilanguage) o [**GetUserPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-getuserpreferreduilanguages). La aplicación no puede cambiar el idioma de la interfaz de usuario del usuario, ya que no hay ninguna función para establecerlo.
 
@@ -58,7 +58,7 @@ El cargador de recursos usa una lista de idiomas de interfaz de usuario preferid
 
 ### <a name="process-preferred-ui-languages-list"></a>Procesar lista de idiomas de interfaz de usuario preferidos
 
-En Windows Vista y versiones posteriores, el cargador de recursos mantiene una lista de idiomas de interfaz de usuario preferidos del proceso que consta de hasta cinco idiomas válidos establecidos por un proceso en ejecución para una aplicación DE JAVA. La aplicación puede establecer los idiomas con una llamada a [**SetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages). La aplicación puede recuperar los idiomas llamando a [**GetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-getprocesspreferreduilanguages).
+En Windows Vista y versiones posteriores, el cargador de recursos mantiene una lista de idiomas de interfaz de usuario preferidos del proceso que consta de un máximo de cinco idiomas válidos establecidos por un proceso en ejecución para una aplicación DE INTERFAZ DE USUARIO. La aplicación puede establecer los idiomas con una llamada a [**SetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages). La aplicación puede recuperar los idiomas llamando a [**GetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-getprocesspreferreduilanguages).
 
 ### <a name="thread-preferred-ui-languages-list"></a>Lista de idiomas de interfaz de usuario preferidos para subprocesos
 
@@ -68,9 +68,9 @@ Para establecer los lenguajes de interfaz de usuario preferidos del subproceso, 
 
 ## <a name="neutral-language-representation"></a>Representación de idioma neutro
 
-Un idioma neutro se representa como el idioma por sí solo, sin región ni configuración regional. Por ejemplo, la representación neutra del idioma inglés (Canadá), en-CA, se representa como "en". Aunque un idioma neutro no está asociado a los aspectos de una región o configuración regional, puede asociarlo a un conjunto de recursos. Normalmente, un recurso de lenguaje neutro se basa en el uso en la región más frecuente para el idioma.
+Un idioma neutro se representa como el idioma por sí solo, sin región ni configuración regional. Por ejemplo, la representación neutra del idioma inglés (Canadá), en-CA, se representa como "en". Aunque un idioma neutro no está asociado a los aspectos de una región o configuración regional, puede asociarlo a un conjunto de recursos. Normalmente, un recurso de idioma neutro se basa en el uso en la región más frecuente para el idioma.
 
-Como ilustración, supongamos que la aplicación DEA localiza recursos en alemán para alemán (Suiza) representados como de-CH y alemán (Alemania) representados como de-AT, al tiempo que se construye un conjunto completo de recursos para alemán (Alemania) representado como de-DE. Debe tomar decisiones para esta aplicación teniendo en cuenta los archivos de recursos completos. Si la aplicación duplica los recursos de de-DE como recursos de lenguaje neutro, debe proporcionar un idioma de reserva para el cargador de recursos. Si el cargador no encuentra un archivo de recursos específico del idioma concreto para de-CH o para de-AT, vuelve a los recursos "de" neutrales del idioma. Estos recursos probablemente sean más adecuados que los recursos para un idioma completamente diferente, por ejemplo, inglés (Estados Unidos), que son las únicas posibles reservaciones.
+Como ilustración, supongamos que la aplicación DEA localiza recursos en alemán para alemán (Suiza) representados como de-CH y alemán (Alemania) representados como de-AT, al tiempo que se construye un conjunto completo de recursos para alemán (Alemania) representado como de-DE. Debe tomar decisiones para esta aplicación teniendo en cuenta los archivos de recursos completos. Si la aplicación duplica los recursos de de-DE como recursos de lenguaje neutro, debe proporcionar un idioma de reserva para el cargador de recursos. Si el cargador no encuentra un archivo de recursos específico del idioma concreto para de-CH o para de-AT, vuelve a los recursos "de" neutrales del idioma. Estos recursos son probablemente más adecuados que los recursos para un idioma completamente diferente, por ejemplo, inglés (Estados Unidos), que son las únicas posibles reservaciones.
 
 Como otro ejemplo, es posible que una aplicación no se localice en absoluto para La 1.0. Sin embargo, la compatibilidad con una preferencia de idioma de inglés (en-BZ), representada como en-BZ, permite que la aplicación vuelva a los recursos "en".
 

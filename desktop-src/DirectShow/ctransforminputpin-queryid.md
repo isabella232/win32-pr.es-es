@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8bb7fa42453e15137be6770332496ea1f39c04c3a6055af00300da9bd6194961
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8407e649814fcb12f699c2362f0f89137e941d19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255428"
 ---
 # <a name="ctransforminputpinqueryid-method"></a>Método CTransformInputPin.QueryId
 
@@ -65,9 +65,9 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El identificador de pin se usa para la persistencia del grafo. El identificador de pin de esta clase es In. Esta clase invalida el comportamiento de la [**clase CBasePin.**](cbasepin.md) En la **clase CBasePin,** el identificador de pin es el mismo que el nombre del pin, especificado en el constructor de clase. En la **clase CTransformInputPin,** el identificador de pin y el nombre del pin no son iguales.
+El identificador de pin se usa para la persistencia del grafo. El identificador de pin de esta clase es In. Esta clase invalida el comportamiento de la [**clase CBasePin.**](cbasepin.md) En la **clase CBasePin,** el identificador de pin es el mismo que el nombre del pin, especificado en el constructor de clase. En la **clase CTransformInputPin,** el identificador de pin y el nombre del pin no son los mismos.
 
 ## <a name="requirements"></a>Requisitos
 

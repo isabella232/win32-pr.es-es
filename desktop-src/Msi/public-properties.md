@@ -4,12 +4,12 @@ ms.assetid: 032aa55f-d97a-4455-bd32-571b0e05763b
 title: Propiedades públicas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0138db2fcbe664ac9a4064379486c42c3d52a6896fc53a608b99192a8d70c75
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 822dfc55e0ab659e5580580edd04eb156540cb61
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119828435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069732"
 ---
 # <a name="public-properties"></a>Propiedades públicas
 

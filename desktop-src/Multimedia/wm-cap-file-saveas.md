@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: aca099fefab7ca0f4ef391b1b65e89938a947a01
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371432"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161360"
 ---
 # <a name="wm_cap_file_saveas-message"></a>Mensaje \_ \_ SAVEAS de ARCHIVO DE WM CAP \_
 
@@ -71,7 +71,7 @@ Normalmente, se preasigna un archivo de captura para el segmento de captura más
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

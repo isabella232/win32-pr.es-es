@@ -4,12 +4,12 @@ description: La propiedad Name es una cadena que usan los clientes para identifi
 ms.assetid: 7533955a-9538-4ead-a6ca-f61dd1b4d5c5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce046ef693e9e52323cdb7484bbdc291127b958d88857de6a8be4522b88e33de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e93d8b90190f81179d681600f4b1bfacf4665e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133778"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070678"
 ---
 # <a name="name-property"></a>Propiedad Name
 

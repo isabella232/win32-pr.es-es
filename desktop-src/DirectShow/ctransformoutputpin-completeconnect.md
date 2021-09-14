@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8383756197e076bc309e9f05e02c9c495a084644faa24959e5a7de2ac61a1c47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ab3d7e56473094b31c0d97d0e15c083ff61a21d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255386"
 ---
 # <a name="ctransformoutputpincompleteconnect-method"></a>Método CTransformOutputPin.CompleteConnect
 
@@ -53,7 +53,7 @@ Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del
 
 Devuelve S \_ OK u otro valor **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBaseOutputPin::CompleteConnect.**](cbaseoutputpin-completeconnect.md) Llama al método [**CTransformFilter::CompleteConnect**](ctransformfilter-completeconnect.md) del filtro, que devuelve S \_ OK en la clase base. La clase derivada puede invalidar el **método CTransformFilter::CompleteConnect** para realizar comprobaciones adicionales.
 

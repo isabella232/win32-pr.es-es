@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9832ddc0a68936461f9fe9ee8a70a7da3227f93e9b0bc9f7328d4cc2f95c2f28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd4bc52db99b88c4d6f16c549fbb558bb6423730
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117823675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273167"
 ---
 # <a name="cbaseoutputpincompleteconnect-method"></a>Método CBaseOutputPin.CompleteConnect
 
@@ -53,7 +53,7 @@ Puntero al pin de entrada.
 
 Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBasePin::CompleteConnect.**](cbasepin-completeconnect.md) Llama al [**método DecideAllocator,**](cbaseoutputpin-decideallocator.md) que selecciona el asignador de memoria que se va a usar para esta conexión.
 

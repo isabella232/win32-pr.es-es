@@ -5,11 +5,11 @@ title: deallocator, elemento
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ba2617ce92dcd0c2763f77b0bc6f0fb5c1beea1c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122881055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358930"
 ---
 # <a name="deallocator-element"></a>deallocator, elemento
 
@@ -39,7 +39,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tipo deallocator debe incluirse en un par de etiquetas &lt; de desasignador. &gt; </deallocator> Las cadenas siguientes son valores de desasignador válidos:
 
@@ -55,7 +55,7 @@ El tipo deallocator debe incluirse en un par de etiquetas &lt; de desasignador. 
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

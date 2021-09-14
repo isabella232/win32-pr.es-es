@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 69cff051ecab1a93d9fdceac20143bef7d1959ff523aa5893e5ae9c633aa80f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a55e493c737b5a5864ec0a8dd38eee3abbfa586
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255344"
 ---
 # <a name="ctransformoutputpinnotify-method"></a>CTransformOutputPin.Notify (método)
 
@@ -53,7 +53,7 @@ Puntero a la [**interfaz IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ib
 *Q* 
 </dt> <dd>
 
-[**Estructura de**](/windows/win32/api/strmif/ns-strmif-quality) calidad que contiene el mensaje de control de calidad.
+[**Estructura**](/windows/win32/api/strmif/ns-strmif-quality) de calidad que contiene el mensaje de control de calidad.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al método [**CTransformFilter::AlterQuality del**](ctransformfilter-alterquality.md) filtro. Si el filtro no controla el mensaje de calidad, este método llama al método [**CBaseInputPin::P assNotify**](cbaseinputpin-passnotify.md) en el pin de entrada del filtro. El **método PassNotify** pasa el mensaje de calidad ascendente (o a un administrador de calidad personalizado, si se instaló uno).
 

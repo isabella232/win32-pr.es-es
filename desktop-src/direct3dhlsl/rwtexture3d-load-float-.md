@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d233559739e86a1cf5a8cbdc9af18ea6c12550c5f6118d63b5382689cd80bba2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 70f001cbea05f21a96bfbf1b5bdbf43a1d7da07d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119671895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358858"
 ---
 # <a name="rwtexture3dloadint-function"></a>Función RWTexture3D::Load(int)
 
@@ -54,7 +54,7 @@ Escriba:
 
 El tipo de valor devuelto coincide con el tipo de la declaración para el [**objeto RWTexture3D.**](sm5-object-rwtexture3d.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -68,7 +68,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

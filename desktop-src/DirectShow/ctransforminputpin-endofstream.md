@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 44c71c29d66a8837118e25fb99813eabdc08d7bcd4295028985810ff01edb22c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2035d0261447826098162f480ddc959544b101b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255447"
 ---
 # <a name="ctransforminputpinendofstream-method"></a>Método CTransformInputPin.EndOfStream
 
@@ -58,7 +58,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al método [**CTransformFilter::EndOfStream**](ctransformfilter-endofstream.md) del filtro para entregar la notificación de fin de flujo de bajada.
 

@@ -1,15 +1,15 @@
 ---
-description: Obtenga detalles sobre el esquema PrintCapabilities. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga detalles sobre el esquema PrintCapabilities. Este tema no está al día. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 45782478-cfbd-4155-9bb4-3badfeef3595
 title: Detalles del esquema PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e41c8d8a651b102e5ead31186a36dacc30818bb3d0d13222ce7d9da382313522
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c8af59b640f12c9dc4836340714e7bc0632e994
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117868607"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358967"
 ---
 # <a name="details-of-the-printcapabilities-schema"></a>Detalles del esquema PrintCapabilities
 

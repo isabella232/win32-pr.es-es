@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 45b8e95d1c29055c90046ae019a343b445a86f6629a8b190823e7c6a4f483e66
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1afd78ba17e444520d8dec81eac05fffa103aede
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273439"
 ---
 # <a name="win32_logicalprogramgroupitem-class"></a>Clase \_ LogicalProgramGroupItem de Win32
 
@@ -46,7 +46,7 @@ class Win32_LogicalProgramGroupItem : Win32_ProgramGroupOrItem
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LogicalProgramGroupItem de Win32** tiene estos tipos de miembros:
 
@@ -126,7 +126,7 @@ Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nam
 
 Instancia dentro de un sistema informático. Los grupos de programas se implementan como carpetas de archivos en Win32. Se deben proporcionar nombres de ruta de acceso completos.
 
-Ejemplo: "C: Users \\ \\ *someone* \\ AppData Roaming Microsoft Windows Menú Inicio \\ Accesorios \\ \\ \\ \\ \\ \\ NotePad.Lnk"
+Ejemplo: "C: Users \\ \\ *someone* \\ AppData Roaming Microsoft Windows Menú Inicio \\ Programas \\ \\ \\ \\ \\ \\ NotePad.Lnk"
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ LogicalProgramGroupItem de Win32** se deriva de [**\_ ProgramGroupOrItem de Win32.**](win32-programgrouporitem.md)
 
@@ -258,7 +258,7 @@ El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

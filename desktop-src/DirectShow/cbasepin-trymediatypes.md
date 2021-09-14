@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1a4d4e33ca339c1ade344bb2ca9531bea381d14b4381773673b07e522437e90a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 19b8da39d07b8aae9401bdc6ccf2eecb5d3a1e88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120108625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255572"
 ---
 # <a name="cbasepintrymediatypes-method"></a>Método CBasePin.TryMediaTypes
 
@@ -47,14 +47,14 @@ virtual HRESULT TryMediaTypes(
 *pReceivePin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin receptor.
+Puntero a la interfaz IPin del [**pin receptor.**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> <dt>
 
 *Pmt* 
 </dt> <dd>
 
-Puntero a un [**objeto CMediaType**](cmediatype.md) que limita los posibles tipos multimedia, o **NULL.**
+Puntero a un [**objeto CMediaType**](cmediatype.md) que limita los posibles tipos de medios, o **NULL.**
 
 </dd> <dt>
 
@@ -74,17 +74,17 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 | Código devuelto                                                                                                  | Descripción                                       |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                         | Correcto.<br/>                               |
-| <dl> <dt>**VFW \_ E NO HAY TIPOS \_ \_ \_ ACEPTABLES**</dt> </dl> | No se encontró un tipo de medio aceptable.<br/> |
+| <dl> <dt>**VFW \_ E \_ NO \_ ACCEPTABLE \_ TYPES**</dt> </dl> | No se encontró un tipo de medio aceptable.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para cada tipo de medio devuelto por la interfaz **IEnumMediaTypes,** este método intenta una conexión llamando al [**método CBasePin::AttemptConnection.**](cbasepin-attemptconnection.md)
+Para cada tipo de medio devuelto por la **interfaz IEnumMediaTypes,** este método intenta una conexión llamando al [**método CBasePin::AttemptConnection.**](cbasepin-attemptconnection.md)
 
-Si el *parámetro pmt* no es **NULL,** el pin omite los tipos de medios que no coinciden con este tipo. El *parámetro pmt* puede especificar un tipo de medio parcial. Un tipo de medio parcial tiene un valor de GUID \_ NULL para el tipo principal, el subtipo o el formato. El valor \_ NULL de GUID coincide con cualquier tipo, similar a un valor de "carácter comodín".
+Si el *parámetro pmt* no es **NULL,** el pin omite los tipos de medios que no coinciden con este tipo. El *parámetro pmt* puede especificar un tipo de medio parcial. Un tipo de medio parcial tiene un valor DE GUID \_ NULL para el tipo principal, el subtipo o el formato. El valor \_ NULL de GUID coincide con cualquier tipo, similar a un valor de "carácter comodín".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,7 +97,7 @@ Si el *parámetro pmt* no es **NULL,** el pin omite los tipos de medios que no c
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

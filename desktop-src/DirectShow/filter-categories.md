@@ -5,11 +5,11 @@ title: Categorías de filtro
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: eb4e8c2b5e5f9e477633774cb24e707aa9d71060
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476331"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255147"
 ---
 # <a name="filter-categories"></a>Categorías de filtro
 
@@ -23,7 +23,7 @@ En las tablas siguientes se muestran los CLID de las DirectShow de filtro.
 
 ## <a name="directshow-filter-categories"></a>DirectShow Categorías de filtro
 
-El asignador de filtros enumera las categorías [enumeradas aquí.](filter-mapper.md) Sin embargo, de forma predeterminada, el Asignador de filtros omite las categorías con el valor DE NO \_ \_ USAR \_ ORAO menos. Para obtener más información, [**vea IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters). Todas las categorías enumeradas aquí también se pueden enumerar con el enumerador [de dispositivos del sistema](system-device-enumerator.md).
+El asignador de filtros enumera las categorías [enumeradas aquí.](filter-mapper.md) Sin embargo, de forma predeterminada, el asignador de filtros omite las categorías con los valores DE NO USAR NI USAR NI \_ \_ \_ MENOS. Para obtener más información, [**vea IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters). Todas las categorías enumeradas aquí también se pueden enumerar con el enumerador [de dispositivos del sistema](system-device-enumerator.md).
 
 Las siguientes categorías se declaran en Uuids.h. Incluya el archivo de encabezado Dshow.h.
 
@@ -33,21 +33,21 @@ Las siguientes categorías se declaran en Uuids.h. Incluya el archivo de encabez
 | Nombre descriptivo | CLSID | Mérito | 
 |---------------|-------|-------|
 | Orígenes de captura de audio | <strong>CLSID_AudioInputDeviceCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
-| Sonidos de sonido | <strong>CLSID_AudioCompressorCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
+| Audio Desafuerciones | <strong>CLSID_AudioCompressorCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Representadores de audio | <strong>CLSID_AudioRendererCategory</strong> | <strong>MERIT_NORMAL</strong> | 
 | Filtros de control de dispositivos | <strong>CLSID_DeviceControlCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | DirectShow Filtros | <strong>CLSID_LegacyAmFilterCategory</strong> | <strong>MERIT_NORMAL</strong> | 
 | Representadores externos | <strong>CLSID_TransmitCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Representadores de Midi | <strong>CLSID_MidiRendererCategory</strong> | <strong>MERIT_NORMAL</strong> | 
 | Orígenes de captura de vídeo | <strong>CLSID_VideoInputDeviceCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
-| Video-Inserciones | <strong>CLSID_VideoCompressorCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
+| Vídeos desafuerados | <strong>CLSID_VideoCompressorCategory</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Dispositivos de descompresión de flujos de WDM | <strong>CLSID_DVDHWDecodersCategory</strong><blockquote>[!Note]<br />Esta categoría contiene descodificadores de DVD de hardware.</blockquote><br /> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Dispositivos de captura de streaming de WDM | <strong>AM_KSCATEGORY_CAPTURE</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Dispositivos de barra cruzada de streaming de WDM | <strong>AM_KSCATEGORY_CROSSBAR</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Dispositivos de representación de streaming de WDM | <strong>AM_KSCATEGORY_RENDER</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
-| Dispositivos de tee/divisor de streaming de WDM | <strong>AM_KSCATEGORY_SPLITTER</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
+| Dispositivos wdm streaming tee/splitter | <strong>AM_KSCATEGORY_SPLITTER</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Dispositivos de audio de WDM Streaming TV | <strong>AM_KSCATEGORY_TVAUDIO</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
-| Dispositivos de tuner de TV de streaming de WDM | <strong>AM_KSCATEGORY_TVTUNER</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
+| Dispositivos de tuner de WDM Streaming TV | <strong>AM_KSCATEGORY_TVTUNER</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 | Códecs de VBI de streaming de WDM | <strong>AM_KSCATEGORY_VBICODEC</strong> | <strong>MERIT_DO_NOT_USE</strong> | 
 
 
@@ -76,10 +76,10 @@ Las siguientes categorías se declaran en el archivo de encabezado Bdamedia.h. I
 
 | Nombre descriptivo                       | CLSID                                       | Mérito                   |
 |-------------------------------------|---------------------------------------------|-------------------------|
-| Proveedores de red BDA               | **PROVEEDOR DE RED \_ KSCATEGORY BDA \_ \_**      | **PROCEDIMIENTO \_ NORMAL**       |
-| Componentes receptores de BDA             | **COMPONENTE RECEPTOR \_ DE KSCATEGORY BDA \_ \_**    | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
-| Filtros de representación de BDA               | **RECEPTOR \_ IP KSCATEGORY \_**                    | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
-| Filtros de origen BDA                  | **KSCATEGORY \_ BDA \_ NETWORK \_ TUNER**         | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
+| Proveedores de red BDA               | **PROVEEDOR DE RED \_ KSCATEGORY BDA \_ \_**      | **NORMAL DE LA OPERACIÓN DE \_ NORMALIZACIÓN**       |
+| Componentes receptores de BDA             | **KSCATEGORY \_ BDA \_ RECEIVER \_ COMPONENT**    | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
+| Filtros de representación de BDA               | **RECEPTOR \_ IP KSCATEGORY \_**                    | **NO USE EL VALOR DE NO \_ \_ \_ USE.** |
+| Filtros de origen BDA                  | **KSCATEGORY \_ BDA \_ NETWORK \_ TUNER**         | **NO USE EL VALOR DE NO \_ \_ \_ USE.** |
 | Representadores de información de transporte BDA | **INFORMACIÓN DE TRANSPORTE \_ DE KSCATEGORY BDA \_ \_** | **NORMAL DE LA OPERACIÓN DE \_ NORMALIZACIÓN**       |
 
 
@@ -101,8 +101,8 @@ Las siguientes categorías se declaran en el archivo de encabezado Qedit.h.
 
 | Nombre descriptivo            | CLID                             | Mérito                   |
 |--------------------------|----------------------------------|-------------------------|
-| Efectos de vídeo (1 entrada)  | **CLSID \_ VideoEffects1Category** | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
-| Efectos de vídeo (2 entradas) | **CLSID \_ VideoEffects2Category** | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
+| Efectos de vídeo (1 entrada)  | **CLSID \_ VideoEffects1Category** | **NO USE EL VALOR DE NO \_ \_ \_ USE.** |
+| Efectos de vídeo (2 entradas) | **CLSID \_ VideoEffects2Category** | **NO USE EL VALOR DE NO \_ \_ \_ USE.** |
 
 
 
@@ -121,8 +121,8 @@ Las siguientes categorías se declaran en el archivo de encabezado Uuids.h. Incl
 
 | Nombre descriptivo       | CLID                                | Mérito                   |
 |---------------------|-------------------------------------|-------------------------|
-| Codificadores EncAPI     | **CLSID \_ MediaEncoderCategory**     | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
-| Multiplexores de EncAPI | **CLSID \_ MediaMultiplexerCategory** | **NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.** |
+| Codificadores encAPI     | **CLSID \_ MediaEncoderCategory**     | **NO USE EL VALOR DE NO \_ \_ \_ USE.** |
+| Multiplexores de EncAPI | **CLSID \_ MediaMultiplexerCategory** | **NO USE EL VALOR DE NO \_ \_ \_ USE.** |
 
 
 
@@ -177,7 +177,7 @@ Además, algunas de las categorías de DMO se asignan a DirectShow de filtro par
 
  
 
-Tenga en cuenta que las categorías de efecto de vídeo y efecto de audio no están asignadas a DirectShow categorías.
+Tenga en cuenta que las categorías de efecto de vídeo y efecto de audio no están asignadas a ninguna DirectShow categorías.
 
 ## <a name="related-topics"></a>Temas relacionados
 

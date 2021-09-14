@@ -1,15 +1,15 @@
 ---
-description: En este tema se describe cómo implementar un archivo DLL para un filtro DirectShow, mediante las DirectShow base.
+description: En este tema se describe cómo implementar un archivo DLL para un filtro DirectShow, mediante el uso de DirectShow clases base.
 ms.assetid: d47980d1-6d0c-4b0d-a875-7b072562944a
 title: Generadores de clases y plantillas de fábrica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b9329a0b8cfd22a316add88664604df190ae96c765359c723aa2302c5b1fa1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e02699a8ff0740ddcf1d86b8514fd45dac9e32ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118402223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273039"
 ---
 # <a name="class-factories-and-factory-templates"></a>Generadores de clases y plantillas de fábrica
 

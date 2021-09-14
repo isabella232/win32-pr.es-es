@@ -4,12 +4,12 @@ ms.assetid: 9eb8af78-612f-406c-ab92-4623b10a510e
 title: Acerca del asistente de IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77445eb999b08bda038fbffc4de5d440b7a3e79c3fa921d50f6da4ccc1f42237
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e50587b4abdcbad0cddd6d6ce3281c908fdebef4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119014193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254787"
 ---
 # <a name="about-ip-helper"></a>Acerca del asistente de IP
 

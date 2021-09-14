@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a3aed2c887bc7a452cda978e96cd369a71cad4fab60a72e0c914ebe9d9790a41
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: acabb6deeb6577fa04479fc4014e210d4a5654d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273164"
 ---
 # <a name="cbasevideorendererjoinfiltergraph-method"></a>Método CBaseVideoRenderer.JoinFilterGraph
 
@@ -61,9 +61,9 @@ Puntero al nombre del filtro que se va a agregar.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función miembro invalida la función [**miembro CBaseFilter::JoinFilterGraph.**](cbasefilter-joinfiltergraph.md) Si el filtro deja el gráfico de filtros *(pGraph* es **NULL),** envía una notificación de eventos [**EC WINDOW \_ \_ DESTROYED**](ec-window-destroyed.md) para que el administrador de recursos no se mantenga en el representador como un objeto de foco.
+Esta función miembro invalida la función miembro [**CBaseFilter::JoinFilterGraph.**](cbasefilter-joinfiltergraph.md) Si el filtro deja el gráfico de filtros *(pGraph* es **NULL),** envía una notificación de eventos [**EC WINDOW \_ \_ DESTROYED**](ec-window-destroyed.md) para que el administrador de recursos no se mantenga en el representador como un objeto de foco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Esta función miembro invalida la función [**miembro CBaseFilter::JoinFilterGra
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

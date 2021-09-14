@@ -17,14 +17,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6e421a8bd596869ac06af61f05ed1af8c633fb23b95e576398de6418620249c7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 63ca227269dab249be755da22288ce41696a19e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120050665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255056"
 ---
-# <a name="diskio_typegroup3-class"></a>DiskIo \_ TypeGroup3 (clase)
+# <a name="diskio_typegroup3-class"></a>Clase \_ TypeGroup3 de DiskIo
 
 Esta clase es la clase de tipo de evento para los eventos de vaciado de E/S de disco.
 
@@ -44,7 +44,7 @@ class DiskIo_TypeGroup3 : DiskIo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase DiskIo \_ TypeGroup3** tiene estos tipos de miembros:
 
@@ -123,13 +123,13 @@ Puede contener una o varias de las siguientes marcas de paquetes de solicitud de
  **IRP \_ NOCACHE**
 </dt><span id="__IRP_PAGING_IO"></span><span id="__irp_paging_io"></span><dt>
 
- **E/S \_ DE PAGINACIÓN DE \_ IRP**
+ **E/S \_ DE PAGINACIÓN \_ DE IRP**
 </dt><span id="__IRP_MOUNT_COMPLETION"></span><span id="__irp_mount_completion"></span><dt>
 
  **FINALIZACIÓN DEL MONTAJE DE IRP \_ \_**
 </dt><span id="__IRP_SYNCHRONOUS_API"></span><span id="__irp_synchronous_api"></span><dt>
 
- **API \_ SINCRÓNICA de IRP \_**
+ **API \_ SINCRÓNICA DE IRP \_**
 </dt><span id="__IRP_ASSOCIATED_IRP"></span><span id="__irp_associated_irp"></span><dt>
 
  **IRP \_ ASOCIADO \_ A IRP**
@@ -141,25 +141,25 @@ Puede contener una o varias de las siguientes marcas de paquetes de solicitud de
 **BÚFER DE \_ DESASIGNAR IRP \_**
 </dt><span id="__IRP_INPUT_OPERATION"></span><span id="__irp_input_operation"></span><dt>
 
- **OPERACIÓN DE ENTRADA \_ DE \_ IRP**
+ **OPERACIÓN DE \_ ENTRADA DE \_ IRP**
 </dt><span id="__IRP_SYNCHRONOUS_PAGING_IO"></span><span id="__irp_synchronous_paging_io"></span><dt>
 
- **E/S \_ DE \_ PAGINACIÓN SINCRÓNICA DE IRP \_**
+ **E/S \_ DE \_ PAGINACIÓN SINCRÓNICA \_ DE IRP**
 </dt><span id="__IRP_CREATE_OPERATION"></span><span id="__irp_create_operation"></span><dt>
 
- **OPERACIÓN CREATE DE IRP \_ \_**
+ **OPERACIÓN DE CREACIÓN DE IRP \_ \_**
 </dt><span id="IRP_READ_OPERATION"></span><span id="irp_read_operation"></span><dt>
 
 **OPERACIÓN DE \_ LECTURA DE \_ IRP**
 </dt><span id="__IRP_WRITE_OPERATION"></span><span id="__irp_write_operation"></span><dt>
 
- **OPERACIÓN DE ESCRITURA \_ DE \_ IRP**
+ **OPERACIÓN DE \_ ESCRITURA DE \_ IRP**
 </dt><span id="__IRP_CLOSE_OPERATION"></span><span id="__irp_close_operation"></span><dt>
 
  **OPERACIÓN DE \_ CIERRE DE \_ IRP**
 </dt><span id="__IRP_DEFER_IO_COMPLETION"></span><span id="__irp_defer_io_completion"></span><dt>
 
- **IRP \_ DEFER \_ IO \_ COMPLETION**
+ **IRP \_ APLAZAR LA \_ FINALIZACIÓN DE \_ E/S**
 </dt> </dl>
 
 </dd> <dt>
@@ -193,7 +193,7 @@ Identificador del subproceso emisor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

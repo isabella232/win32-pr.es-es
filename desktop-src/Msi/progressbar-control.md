@@ -4,12 +4,12 @@ ms.assetid: 0d366a1b-3c7e-4590-8557-c6a7d1fcd426
 title: Control ProgressBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c531a0edcf822c3a4cc75ec6516f1b871e2db6cb7122bb74178d59850710843
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6a2f04cb969708b849623bb3cbd130b77bc292cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119913185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069752"
 ---
 # <a name="progressbar-control"></a>Control ProgressBar
 
@@ -19,7 +19,7 @@ Para obtener información relacionada, [vea Crear un control ProgressBar y](auth
 
 ## <a name="control-attributes"></a>Atributos de control
 
-Puede usar los siguientes atributos con este control. Para cambiar el valor de un atributo mediante un evento, suscriba el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumézcalo en la columna Attribute . Escriba el identificador de ControlEvent en la columna Evento.
+Puede usar los siguientes atributos con este control. Para cambiar el valor de un atributo mediante un evento, suscriba el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumézcalo en la columna Atributo . Escriba el identificador de ControlEvent en la columna Evento.
 
 
 
@@ -37,7 +37,7 @@ Puede usar los siguientes atributos con este control. Para cambiar el valor de u
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este control se puede crear a partir de la clase PROGRESS \_ CLASS mediante la función [**CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Tiene los **estilos WS \_ CHILD** y **WS \_ GROUP.**
 

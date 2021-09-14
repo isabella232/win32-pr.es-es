@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3df5da0ee6e80dd1da147563ef698a520222531de5cee9656ec52cb14301f66e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6cbfad0a33384249ab474d6376ffc110294bca6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255410"
 ---
 # <a name="ctransforminputpin-class"></a>CTransformInputPin (clase)
 
@@ -52,7 +52,7 @@ Normalmente, no es necesario derivar de esta clase. La mayoría de los métodos 
 | [**EndFlush**](ctransforminputpin-endflush.md)                      | Finaliza una operación de vaciado.                                                                |
 | [**NewSegment**](ctransforminputpin-newsegment.md)                  | Notifica al pin que los ejemplos de medios recibidos después de esta llamada se agrupan como un segmento. |
 | Métodos IMemInputPin                                                 | Descripción                                                                            |
-| [**Recibir**](ctransforminputpin-receive.md)                        | Recibe el siguiente ejemplo multimedia en la secuencia.                                          |
+| [**Recepción**](ctransforminputpin-receive.md)                        | Recibe el siguiente ejemplo multimedia en la secuencia.                                          |
 
 
 

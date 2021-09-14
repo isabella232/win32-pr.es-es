@@ -1,5 +1,5 @@
 ---
-description: 'Método CBaseMediaFilter.StreamTime: el método StreamTime recupera el tiempo de transmisión actual.'
+description: 'Método CBaseMediaFilter.StreamTime: el método StreamTime recupera el tiempo de secuencia actual.'
 ms.assetid: 2e1ff6f1-9815-4ee6-97e8-a5ab5f472b27
 title: Método CBaseMediaFilter.StreamTime (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 99205cb7065b7bd57d0f49a7f4942df8c1548ba5d4b4f8b26c8a13387ddc7d1e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a90bb7d97825c14f11c75dd42d696fa302f8e3d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120076595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273223"
 ---
 # <a name="cbasemediafilterstreamtime-method"></a>Método CBaseMediaFilter.StreamTime
 
@@ -64,9 +64,9 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La hora de la secuencia se define como la hora de referencia actual (según lo indicado por el reloj de referencia) menos la hora de inicio (especificada por [**CBaseMediaFilter::m \_ tStart**](cbasemediafilter-m-tstart.md)). La marca de tiempo de un ejemplo multimedia especifica el tiempo de secuencia en el que se debe representar. Si aún no se ha representado un ejemplo con una marca de tiempo inferior a la hora de transmisión actual, es tarde.
+La hora de la secuencia se define como la hora de referencia actual (según lo indicado por el reloj de referencia) menos la hora de inicio (especificada por [**CBaseMediaFilter::m \_ tStart).**](cbasemediafilter-m-tstart.md) La marca de tiempo de un ejemplo multimedia especifica el tiempo de secuencia en el que se debe representar. Si aún no se ha representado un ejemplo con una marca de tiempo inferior a la hora de transmisión actual, es tarde.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,7 +79,7 @@ La hora de la secuencia se define como la hora de referencia actual (según lo i
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

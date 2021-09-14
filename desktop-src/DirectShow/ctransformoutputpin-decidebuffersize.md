@@ -1,5 +1,5 @@
 ---
-description: 'Método CTransformOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos de búfer.'
+description: 'Método CTransformOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos del búfer.'
 ms.assetid: cdf9e384-623e-46a6-b123-d881fe21fb09
 title: Método CTransformOutputPin.DecideBufferSize (Transfrm.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3c6ea09c348fa465e1bffac2bdf426b635ed4cb4b76013a053ab775e78199612
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1bc84eaf5e95a19436de5429ce018352cdaa286e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255368"
 ---
 # <a name="ctransformoutputpindecidebuffersize-method"></a>Método CTransformOutputPin.DecideBufferSize
 
@@ -61,9 +61,9 @@ Puntero a [**una estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método invalida el método [**CBaseOutputPin::D ecideBufferSize.**](cbaseoutputpin-decidebuffersize.md) Llama al método [**CTransformFilter::D ecideBufferSize**](ctransformfilter-decidebuffersize.md) puro del filtro, que la clase derivada del filtro debe implementar.
+Este método invalida el [**método CBaseOutputPin::D ecideBufferSize.**](cbaseoutputpin-decidebuffersize.md) Llama al método [**CTransformFilter::D ecideBufferSize**](ctransformfilter-decidebuffersize.md) virtual puro del filtro, que la clase derivada del filtro debe implementar.
 
 ## <a name="requirements"></a>Requisitos
 

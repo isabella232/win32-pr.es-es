@@ -4,12 +4,12 @@ description: Las siguientes funciones permiten a los desarrolladores de software
 ms.assetid: c2774e05-82f4-4d40-a80c-ad773bb03ca7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23a46ef79627583efd4d5fb0e0b63dd8e7283c1889e942197679037be38754e2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6d3a039768b77d69072111f814cb871115bcca24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161197"
 ---
 # <a name="ndf-functions"></a>Funciones de NDF
 

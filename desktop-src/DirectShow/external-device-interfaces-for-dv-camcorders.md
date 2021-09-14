@@ -1,23 +1,23 @@
 ---
-description: Interfaces de dispositivos externos para cámaras de vídeo DV
+description: Interfaces de dispositivos externos para videocambaciones DV
 ms.assetid: 001321c5-70c7-4baa-ba5a-1e424ca0d647
-title: Interfaces de dispositivos externos para cámaras de vídeo DV
+title: Interfaces de dispositivos externos para videocambaciones DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb80a89356a18d25f1fb3536cdc8f6e95be4e1947433d1c0437f1d80d47c8008
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e5e7106ec6e9b744da0d1f71958aeb895ec8df1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119651525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255206"
 ---
-# <a name="external-device-interfaces-for-dv-camcorders"></a>Interfaces de dispositivos externos para cámaras de vídeo DV
+# <a name="external-device-interfaces-for-dv-camcorders"></a>Interfaces de dispositivos externos para videocambaciones DV
 
 El [filtro captura de vídeo de WDM](wdm-video-capture-filter.md) expone tres interfaces para controlar una cámara de vídeo.
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |------------------------------------------------|-------------------------------------------------|
 | [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice)           | Interfaz base para el control de dispositivo externo. |
 | [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)     | Controla las funciones de VCR.                     |
@@ -28,7 +28,7 @@ El [filtro captura de vídeo de WDM](wdm-video-capture-filter.md) expone tres in
  
 
 > [!Note]  
-> Para usar estas interfaces con el controlador de cámara de vídeo MSDV, incluya el archivo de encabezado XPrtDefs.h en el proyecto.
+> Para usar estas interfaces con el controlador de la cámara de vídeo MSDV, incluya el archivo de encabezado XPrtDefs.h en el proyecto.
 
  
 
@@ -67,7 +67,7 @@ MyDevCap.bHasTimecode = (SUCCEEDED(hr));
 
 <dl> <dt>
 
-[Control de una videocamba de DV](controlling-a-dv-camcorder.md)
+[Control de una cámara dv](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 76c19a883e7cfb416e557a23cf2a689e46dab36641ffc98cde5cbe5fe460f686
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e893b4e1c7d4f396644a468d3d71fa3046fb712
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255465"
 ---
 # <a name="ctransforminputpinctransforminputpin-constructor"></a>Constructor CTransformInputPin.CTransformInputPin
 
@@ -62,7 +62,7 @@ Puntero al filtro que creó este pin, que debe ser un [**objeto CTransformFilter
 *Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto. El valor solo se cambia si se produce un error.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto . El valor solo se cambia si se produce un error.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Cadena de caracteres anchos que contiene el nombre del pin.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *parámetro pName* especifica el nombre del pin, que devuelve el [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) Sin embargo, la cadena no se usa para el identificador de pin. El identificador de pin de esta clase siempre es "In". Para obtener más información, vea [**QueryId**](ctransforminputpin-queryid.md).
 

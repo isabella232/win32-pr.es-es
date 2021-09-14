@@ -1,7 +1,7 @@
 ---
-description: Identificador de clase (CLSID) del objeto.
+description: Identificador de clase (CLSID) del objeto .
 ms.assetid: d4816dad-c6cc-419e-8e9b-43edb4bf9928
-title: Miembro CBaseMediaFilter::m_clsid (Amfilter.h)
+title: CBaseMediaFilter::m_clsid miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a166757e7e9a487eb06a6fd604d65bac2cd064d672fa7a013d0afb83553d0d23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c461f0ebe6eeb7f84c4e5b485626c33ffcd3d91e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273295"
 ---
-# <a name="cbasemediafilterm_clsid-member"></a>Miembro clsid CBaseMediaFilter::m \_
+# <a name="cbasemediafilterm_clsid-member"></a>CBaseMediaFilter::m \_ clsid member
 
-Identificador de clase (CLSID) del objeto.
+Identificador de clase (CLSID) del objeto .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ CLSID m_clsid;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

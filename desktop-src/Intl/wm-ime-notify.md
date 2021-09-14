@@ -4,12 +4,12 @@ ms.assetid: 20e064b8-2baf-4b4c-8341-36c3e4643eff
 title: WM_IME_NOTIFY mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a072ff41b5731662afa94e387ec48de7d14bc245906e581303fe976dcf455708
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca5ab1b2a1fd62d159ab4f216bf9b1bb6892ed69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119014223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254804"
 ---
 # <a name="wm_ime_notify-message"></a>WM_IME_NOTIFY mensaje
 
@@ -34,7 +34,7 @@ LRESULT CALLBACK WindowProc(
 *Hwnd* 
 </dt> <dd>
 
-Identificador a ventana.
+Identificador de la ventana.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Datos específicos del comando, con formato dependiente del valor del *parámetr
 
 El valor devuelto depende del comando enviado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación procesa este mensaje si es responsable de administrar la ventana de IME.
 

@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: c191483efff015bb3038ec28e576c82d9a0adda6ed498b676f09927e36e9a46f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2cb3181052b3c12f49928ef9c2d31cffd0a0ef5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119487125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358859"
 ---
-# <a name="rwtexture2darrayload-methods"></a>RWTexture2DArray::Load (métodos)
+# <a name="rwtexture2darrayload-methods"></a>RWTexture2DArray::Load (Métodos)
 
 Lee datos de textura de [**RWTexture2DArray**](sm5-object-rwtexture2darray.md).
 
@@ -34,7 +34,7 @@ Lee datos de textura de [**RWTexture2DArray**](sm5-object-rwtexture2darray.md).
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

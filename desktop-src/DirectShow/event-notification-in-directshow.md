@@ -4,12 +4,12 @@ ms.assetid: 301116a5-24e3-4c6d-8c80-bec77c7d62d7
 title: Notificación de eventos en DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c143d8db8c379d796c9ea3619e8df624d03312996f2ba63d1987693e37e787c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d21d004261595bdbd352cb2f93a0c40cec3b4894
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255237"
 ---
 # <a name="event-notification-in-directshow"></a>Notificación de eventos en DirectShow
 

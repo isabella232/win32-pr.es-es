@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inst
 ms:contentKeyID: 55103291
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1db9933e6e0a14b770e4250fc7e1faf564d3266ee258bfa71671093dceee763a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0ac2b8aa959b8fa07f06e2de86dcfc173bab15ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119721165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358834"
 ---
 # <a name="instanceparameters-properties"></a>Propiedades instanceParameters
 
@@ -160,12 +160,12 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350973(v=exchg.10).md">MaxTransactionSize</a></td>
-<td>Obtiene o establece el porcentaje de almacén de versiones que puede usar la transacción más antigua antes <a href="hh564840(v=exchg.10).md">de VersionStoreOutOfMemory</a> (valor predeterminado = 100).</td>
+<td>Obtiene o establece el porcentaje de almacén de versiones que puede usar la transacción más antigua antes de <a href="hh564840(v=exchg.10).md">VersionStoreOutOfMemory</a> (valor predeterminado = 100).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350975(v=exchg.10).md">MaxVerPages</a></td>
-<td>Obtiene o establece el número máximo de páginas del almacén de versiones reservadas para esta instancia.</td>
+<td>Obtiene o establece el número máximo de páginas de almacén de versiones reservadas para esta instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -185,7 +185,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350979(v=exchg.10).md">PreferredVerPages</a></td>
-<td>Obtiene o establece el número preferido de páginas de almacén de versiones reservadas para esta instancia. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se utilice para tareas en segundo plano opcionales, como reclamar espacio eliminado en la base de datos, se sacrificará para conservar espacio para la información transaccional.</td>
+<td>Obtiene o establece el número preferido de páginas de almacén de versiones reservadas para esta instancia. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se utilice para tareas en segundo plano opcionales, como reclamar el espacio eliminado en la base de datos, se sacrificará en su lugar para conservar espacio para la información transaccional.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -215,7 +215,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350985(v=exchg.10).md">WaypointLatency</a></td>
-<td>Obtiene o establece un número de registros para los que Esent aplazará los vaciados de la base de datos. Esto se puede usar para aumentar la capacidad de recuperación de la base de datos si los errores hacen que se pierdan los archivos de registro. Se admite Windows 7 y versiones 2. Se omite en Windows XP, Windows Server 2003, Windows Vista y Windows Server 2008.</td>
+<td>Obtiene o establece un número de registros para los que esent aplazará los vaciados de la base de datos. Esto se puede usar para aumentar la capacidad de recuperación de la base de datos si los errores hacen que se pierdan archivos de registro. Se admite Windows 7 y versiones 2. Se omite en Windows XP, Windows Server 2003, Windows Vista y Windows Server 2008.</td>
 </tr>
 </tbody>
 </table>
@@ -223,7 +223,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

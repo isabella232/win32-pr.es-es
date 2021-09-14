@@ -1,17 +1,17 @@
 ---
 description: Direct3D 9 admite texturas de paleta a través de un conjunto de 256 paletas de entrada asociadas al objeto IDirect3DDevice9.
 ms.assetid: dea4b4bc-7eba-40fa-9c2c-0851fe7e231b
-title: Paletas de textura (Direct3D 9)
+title: Paletas de texturas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d755abb638ab1dd94e25edd98b2daef5e65d5a54cca7baf21a74e7d06173eed9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a0fbb1c5d6766b879b898145ec2385a41d94b8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118291170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358865"
 ---
-# <a name="texture-palettes-direct3d-9"></a>Paletas de textura (Direct3D 9)
+# <a name="texture-palettes-direct3d-9"></a>Paletas de texturas (Direct3D 9)
 
 Direct3D 9 admite texturas de paleta a través de un conjunto de 256 paletas de entrada asociadas al objeto [**IDirect3DDevice9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) Una paleta se hace actual mediante una llamada [**al método IDirect3DDevice9::SetCurrentTexturePalette.**](/windows/desktop/api) La paleta actual se usa para traducir todas las texturas de paleta para todas las fases de textura activas. [**IDirect3DDevice9::SetPaletteEntries**](/windows/desktop/api) actualiza todas las 256 entradas de una paleta. Cada entrada es una [**estructura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) con el formato D3DFMT \_ A8R8G8B8. Todas las entradas tienen como valor predeterminado 0xFFFFFFFF.
 

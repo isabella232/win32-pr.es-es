@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: CIM_MagnetoOpticalDrive métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23724de43d7463a722e834d63170eb0a133efc2320bcafc9a80ca78bc92995b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1eaad8b8dfc95f690bd2a7bdffbc2a1c079885f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119548255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254745"
 ---
 # <a name="cim_magnetoopticaldrive-methods"></a>\_Métodos de Cim MagnetoOpticalDrive
 

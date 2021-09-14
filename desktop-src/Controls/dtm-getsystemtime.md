@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00555079a018f0ed2d8c16fb3efdf23fd710656f318f1bb2bd66a167b25ce135
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e14d8c998720cc987a03877e1918e97304bf769
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119877885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273372"
 ---
 # <a name="dtm_getsystemtime-message"></a>Mensaje GETSYSTEMTIME de DTM \_
 
@@ -51,7 +51,7 @@ Devuelve GDT VALID si la información de hora se ha colocado \_ correctamente *e
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

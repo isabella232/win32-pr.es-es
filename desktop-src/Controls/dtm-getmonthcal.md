@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62c91538c9a60d0ecc3db43436ef029c9a3fbd9e35ca33bbfa67e586ad137ef7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 99609ed3a437990889066da9a3424ef147c3d6b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119878085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273383"
 ---
 # <a name="dtm_getmonthcal-message"></a>Mensaje \_ GETMONTHCAL de DTM
 
@@ -39,7 +39,7 @@ Obtiene el identificador del control de calendario del mes secundario del select
 
 Devuelve el identificador al control de calendario del mes secundario de un control DTP si se realiza correctamente o **NULL** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los controles DTP crean un control de calendario de mes secundario cuando el usuario hace clic en la flecha desplegable[(notificación DTN \_ DROPDOWN).](dtn-dropdown.md) Cuando ya no se necesita el calendario mensual, se destruye (se envía una notificación [ \_ DE CIERRE](dtn-closeup.md) DE DTN al destruirse). Por lo tanto, la aplicación no debe basarse en un identificador estático para el calendario del mes secundario del control DTP.
 
@@ -51,11 +51,11 @@ Los controles DTP crean un control de calendario de mes secundario cuando el usu
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

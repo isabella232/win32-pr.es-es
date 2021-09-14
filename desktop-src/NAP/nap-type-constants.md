@@ -1,6 +1,6 @@
 ---
 title: Constantes de tipo NAP (NapTypes.h)
-description: Se definen las siguientes constantes nap.
+description: Se definen las siguientes constantes NAP.
 ms.assetid: 2727487c-8c6a-4cd9-b6d8-253191a7d7f6
 topic_type:
 - apiref
@@ -37,12 +37,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f0201f29d19969de6050ce3eeebf29a7bee73792dcc6b61b2359e5660db12d4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85692a7ccc9cbb602a34da714a5eeb488ea5c4a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119685925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161249"
 ---
 # <a name="nap-type-constants"></a>Constantes de tipo NAP
 
@@ -51,7 +51,7 @@ ms.locfileid: "119685925"
 
  
 
-Se definen las siguientes constantes nap.
+Se definen las siguientes constantes NAP.
 
 Las siguientes constantes nap se definen en NapTypes.h:
 
@@ -400,15 +400,15 @@ Intervalo de valores posibles para el tamaño máximo de un paquete SoH.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                                |
-| Header<br/>                   | <dl> <dt>NapTypes.h; </dt> <dt>NapEnforcementClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapTypes.h; </dt> <dt>NapEnforcementClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

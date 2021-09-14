@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5c6f645d134ccf5fa786ff59cf0bc6cd37211af0cb2571bbc9955e5bb6367a97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b429c5fd4d3d0e0e28cd0662fbee0a1ac926ddc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255518"
 ---
 # <a name="cimagepalettecopypalette-method"></a>Método CImagePalette.CopyPalette
 
@@ -61,7 +61,7 @@ Puntero al tipo de medio de destino.
 
 Devuelve S \_ OK si se copió la paleta. Devuelve S FALSE si el tipo de medio de origen \_ o de destino no tiene una paleta.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tipo de medio *pDest* debe ser un formato con una profundidad de color de 8 bits o menos. El *tipo de medio pSrc* puede ser cualquier tipo [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) con una paleta, incluidos YUV y formatos de color verdadero con entradas de paleta. El método copia las entradas de la paleta de *pSrc* en una nueva paleta y asocia la nueva paleta a *pDest.*
 
@@ -76,7 +76,7 @@ El tipo de medio *pDest* debe ser un formato con una profundidad de color de 8 b
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
 title: WM_CAP_SET_CALLBACK_VIDEOSTREAM mensaje (Vfw.h)
-description: El mensaje \_ VIDEOSTREAM DE DEVOLUCIÓN DE LLAMADA DE WM CAP SET \_ establece una función \_ de \_ devolución de llamada en la aplicación.
+description: El mensaje \_ WM CAP \_ SET \_ CALLBACK \_ VIDEOSTREAM establece una función de devolución de llamada en la aplicación.
 ms.assetid: 590089b8-7a8d-476b-9b81-f96bf73b0369
 keywords:
-- WM_CAP_SET_CALLBACK_VIDEOSTREAM mensaje Windows Multimedia
+- WM_CAP_SET_CALLBACK_VIDEOSTREAM de Windows multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: cde1d2b44ba3786f2d17934e6e92e0894d8d3bba
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371492"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161334"
 ---
 # <a name="wm_cap_set_callback_videostream-message"></a>Mensaje \_ \_ VIDEOSTREAM DE \_ DEVOLUCIÓN DE LLAMADA DE \_ WM CAP SET
 
-El **mensaje \_ VIDEOSTREAM DE \_ \_ DEVOLUCIÓN DE LLAMADA \_** DE WM CAP SET establece una función de devolución de llamada en la aplicación. AVICap llama a este procedimiento durante la captura de streaming cuando se rellena un búfer de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetCallbackOnVideoStream.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonvideostream)
+El **mensaje WM CAP SET \_ \_ \_ CALLBACK \_ VIDEOSTREAM** establece una función de devolución de llamada en la aplicación. AVICap llama a este procedimiento durante la captura de streaming cuando se rellena un búfer de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetCallbackOnVideoStream.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonvideostream)
 
 
 ```C++
@@ -41,13 +41,13 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntero a la función de devolución de llamada video-stream, de tipo [**capVideoStreamCallback.**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback) Especifique **NULL** para este parámetro para deshabilitar una función de devolución de llamada de secuencia de vídeo instalada previamente.
+Puntero a la función de devolución de llamada video-stream, de tipo [**capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **NULL para** este parámetro para deshabilitar una función de devolución de llamada de secuencia de vídeo instalada previamente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **si** la captura de streaming o una sesión de captura de un solo fotograma están en curso.
+Devuelve **TRUE si** se realiza **correctamente o FALSE si** la captura de streaming o una sesión de captura de un solo fotograma está en curso.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -67,7 +67,7 @@ Si se usa una función de devolución de llamada de secuencia de vídeo para la 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

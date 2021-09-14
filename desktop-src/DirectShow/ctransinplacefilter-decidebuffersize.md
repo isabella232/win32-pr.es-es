@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5ea1034db2965e736224348707bfc9c3d7dcd27fd37fa5c511d147635b9d51cb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b3ffb3ec7b1ef59c6e7f3d49e39fbe69e8cc1c08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119831375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255285"
 ---
 # <a name="ctransinplacefilterdecidebuffersize-method"></a>Método CTransInPlaceFilter.DecideBufferSize
 
@@ -46,14 +46,14 @@ HRESULT DecideBufferSize(
 *pAlloc* 
 </dt> <dd>
 
-Puntero al objeto [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) usado por el pin de salida.
+Puntero al [**objeto IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) usado por el pin de salida.
 
 </dd> <dt>
 
 *pProperties* 
 </dt> <dd>
 
-Puntero a las propiedades de asignador solicitadas para el recuento, el tamaño y la alineación, tal y como especifica la [**estructura ALLOCATOR \_ PROPERTIES.**](/windows/win32/api/strmif/ns-strmif-allocator_properties)
+Puntero a las propiedades de asignador solicitadas para count, size y alignment, tal y como especifica la [**estructura ALLOCATOR \_ PROPERTIES.**](/windows/win32/api/strmif/ns-strmif-allocator_properties)
 
 </dd> </dl>
 
@@ -72,9 +72,9 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se llama a este método cuando **la clase CTransInPlaceFilter** necesita proporcionar un tamaño de búfer al filtro de nivel inferior. Si el **filtro CTransInPlaceFilter** ya está conectado en sentido ascendente, usa las propiedades del asignador en la conexión de pin ascendente. De lo contrario, establece el tamaño del búfer en 1 byte como un valor de posición temporal. Cuando se conecta el filtro ascendente, la **clase CTransInPlaceFilter** vuelve a negociar el asignador de nivel inferior. Para obtener más información sobre el proceso de conexión de anclar en esta clase, vea [**CTransInPlaceFilter (Clase).**](ctransinplacefilter.md)
+Se llama a este método cuando **la clase CTransInPlaceFilter** necesita proporcionar un tamaño de búfer al filtro de nivel inferior. Si el **filtro CTransInPlaceFilter** ya está conectado ascendente, usa las propiedades del asignador en la conexión de pin ascendente. De lo contrario, establece el tamaño del búfer en 1 byte como un valor de colocación temporal. Cuando se conecta el filtro ascendente, la **clase CTransInPlaceFilter** vuelve a negociar el asignador de nivel inferior. Para obtener más información sobre el proceso de conexión de anclar en esta clase, vea [**CTransInPlaceFilter (Clase).**](ctransinplacefilter.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,7 +87,7 @@ Se llama a este método cuando **la clase CTransInPlaceFilter** necesita proporc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

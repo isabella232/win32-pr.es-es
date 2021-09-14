@@ -1,5 +1,5 @@
 ---
-description: El método NewSegment notifica al pin que los ejemplos multimedia recibidos después de esta llamada se agrupan como un segmento. Este método implementa el método IPin::NewSegment.
+description: El método NewSegment notifica al pin que los ejemplos de medios recibidos después de esta llamada se agrupan como un segmento. Este método implementa el método IPin::NewSegment.
 ms.assetid: 8925b8b5-13dd-4127-82d8-96525bd4d6fc
 title: Método CTransformInputPin.NewSegment (Transfrm.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c522755fe898717f0c06af9698be07ab2ebca491666982d6ff62756ef48ae08f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25c455fe5ec6ddf9157e991b70b468ace653daa9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255440"
 ---
 # <a name="ctransforminputpinnewsegment-method"></a>Método CTransformInputPin.NewSegment
 
-El `NewSegment` método notifica al pin que los ejemplos multimedia recibidos después de esta llamada se agrupan como un segmento. Este método implementa el [**método IPin::NewSegment.**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)
+El `NewSegment` método notifica al pin que los ejemplos de medios recibidos después de esta llamada se agrupan como un segmento. Este método implementa el [**método IPin::NewSegment.**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ Hora de inicio del segmento.
 *tStop* 
 </dt> <dd>
 
-Tiempo de detenerse del segmento.
+Hora de detenerse del segmento.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Velocidad del segmento.
 
 Devuelve S \_ OK u otro valor **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBasePin::NewSegment.**](cbasepin-newsegment.md) Llama al método [**CTransformFilter::NewSegment**](ctransformfilter-newsegment.md) del filtro para entregar la llamada de nivel inferior.
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 268316dd9b7f37894f60ed45878c7de9bbc8d379301daa7bbefedcadd0b8e77f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: faeeed7ea8af58103e74d9b8c3690523c893282f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118661382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273364"
 ---
 # <a name="cbasecontrolvideoget_videowidth-method"></a>Método CBaseControlVideo.get \_ VideoWidth
 
@@ -68,7 +68,7 @@ Esta función miembro implementa el [**método IBasicVideo::get \_ VideoWidth.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

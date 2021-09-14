@@ -45,19 +45,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 457bf0e094e4196c2ff60b05581daf5dc6a51349530d3563119962e01c94c40d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a06d2abd1c4ad92d751afa6c8aa47c0cfaa8b1f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119548275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254751"
 ---
 # <a name="cim_logicalfile-class"></a>Cim \_ LogicalFile (clase)
 
 La **clase \_ LogicalFile** de CIM representa una colección con nombre de datos, que puede ser código ejecutable, que se encuentra en un sistema de archivos en una extensión de almacenamiento.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -103,35 +103,35 @@ class CIM_LogicalFile : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ LogicalFile de CIM** tiene estos tipos de miembros:
+La **clase \_ LogicalFile** de CIM tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ LogicalFile de CIM** tiene estos métodos.
+La **clase \_ LogicalFile** de CIM tiene estos métodos.
 
 
 
 | Método                                                                                             | Descripción                                                                                                                                              |
 |:---------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-cim-logicalfile.md)     | Cambia los permisos de seguridad para el archivo lógico especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                   |
-| [**ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-cim-logicalfile.md) | Cambia los permisos de seguridad para el archivo lógico especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                   |
-| [**Comprimir**](compress-method-in-class-cim-logicalfile.md)                                       | Comprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                              |
-| [**CompressEx**](compressex-method-in-class-cim-logicalfile.md)                                   | Comprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                              |
-| [**Copiar**](copy-method-in-class-cim-logicalfile.md)                                               | Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. No implementado por WMI.<br/> |
-| [**CopyEx**](copyex-method-in-class-cim-logicalfile.md)                                           | Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. No implementado por WMI.<br/> |
-| [**Eliminar**](delete-method-in-class-cim-logicalfile.md)                                           | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                                 |
-| [**DeleteEx**](deleteex-method-in-class-cim-logicalfile.md)                                       | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                                 |
-| [**GetEffectivePermission**](geteffectivepermission-method-in-class-cim-logicalfile.md)           | Determina si el autor de la llamada tiene los permisos agregados especificados por el **argumento Permission.** No implementado por WMI.<br/>                |
-| [**Renombrar**](rename-method-in-class-cim-logicalfile.md)                                           | Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                                 |
-| [**TakeOwnerShip**](takeownership-method-in-class-cim-logicalfile.md)                             | Obtiene la propiedad del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                    |
-| [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-logicalfile.md)                         | Obtiene la propiedad del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                    |
-| [**Descomprimir**](uncompress-method-in-class-cim-logicalfile.md)                                   | Descomprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                            |
-| [**UncompressEx**](uncompressex-method-in-class-cim-logicalfile.md)                               | Descomprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No implementado por WMI.<br/>                                            |
+| [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-cim-logicalfile.md)     | Cambia los permisos de seguridad para el archivo lógico especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                   |
+| [**ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-cim-logicalfile.md) | Cambia los permisos de seguridad para el archivo lógico especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                   |
+| [**Comprimir**](compress-method-in-class-cim-logicalfile.md)                                       | Comprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                              |
+| [**CompressEx**](compressex-method-in-class-cim-logicalfile.md)                                   | Comprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                              |
+| [**Copiar**](copy-method-in-class-cim-logicalfile.md)                                               | Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. Wmi no implementa .<br/> |
+| [**CopyEx**](copyex-method-in-class-cim-logicalfile.md)                                           | Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. Wmi no implementa .<br/> |
+| [**Eliminar**](delete-method-in-class-cim-logicalfile.md)                                           | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                 |
+| [**DeleteEx**](deleteex-method-in-class-cim-logicalfile.md)                                       | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                 |
+| [**GetEffectivePermission**](geteffectivepermission-method-in-class-cim-logicalfile.md)           | Determina si el autor de la llamada tiene los permisos agregados especificados por el **argumento Permission.** Wmi no implementa .<br/>                |
+| [**Cambiar nombre**](rename-method-in-class-cim-logicalfile.md)                                           | Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                 |
+| [**TakeOwnerShip**](takeownership-method-in-class-cim-logicalfile.md)                             | Obtiene la propiedad del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                    |
+| [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-logicalfile.md)                         | Obtiene la propiedad del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                    |
+| [**Descomprimir**](uncompress-method-in-class-cim-logicalfile.md)                                   | Descomprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                            |
+| [**UncompressEx**](uncompressex-method-in-class-cim-logicalfile.md)                               | Descomprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                            |
 
 
 
@@ -155,10 +155,10 @@ Tipo de acceso: solo lectura
 Calificadores: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Access Rights")
 </dt> </dl>
 
-Máscara de bits que representa los derechos de acceso necesarios para acceder o realizar operaciones específicas en el archivo. Para obtener valores de bits, [**vea File and Directory Access Rights Constants**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants).
+Máscara de bits que representa los derechos de acceso necesarios para acceder al archivo o realizar operaciones específicas en el archivo. Para obtener valores de bits, vea Constantes de derechos de [**acceso a archivos y directorios.**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)
 
 > [!Note]  
-> En los volúmenes FAT, se devuelve el valor **\_ FULL ACCESS** en su lugar, lo que indica que no se ha establecido ninguna seguridad en el objeto .
+> En los volúmenes FAT, se devuelve el valor **\_ FULL ACCESS** en su lugar, lo que indica que no se ha establecido ninguna seguridad en el objeto.
 
  
 
@@ -180,7 +180,7 @@ Máscara de bits que representa los derechos de acceso necesarios para acceder o
 
 <span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__or_file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>
 
-**FILE \_ APPEND \_ DATA (archivo) o \_ SUBDIRECTORIO ADD DE ARCHIVO \_ (directorio)** (4)
+**FILE \_ APPEND \_ DATA (archivo) o \_ SUBDIRECTORIO AGREGAR ARCHIVO \_ (directorio)** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -215,14 +215,14 @@ Máscara de bits que representa los derechos de acceso necesarios para acceder o
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-**FILE \_ LEER \_ ATRIBUTOS** (128)
+**FILE \_ ATRIBUTOS \_ DE LECTURA** (128)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-**FILE \_ ATRIBUTOS \_ DE ESCRITURA** (256)
+**FILE \_ ATRIBUTOS \_ DE** ESCRITURA (256)
 
 
 </dt> <dd></dd> <dt>
@@ -243,14 +243,14 @@ Máscara de bits que representa los derechos de acceso necesarios para acceder o
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-**WRITE \_ DAC** (262144)
+**ESCRITURA \_ DAC** (262144)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-**WRITE \_ OWNER** (524288)
+**ESCRITURA \_ OWNER** (524288)
 
 
 </dt> <dd></dd> <dt>
@@ -276,7 +276,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Should Be Archived")
 </dt> </dl>
 
-Si **es True**, el archivo se debe archivar.
+Si **es True,** el archivo debe archivarse.
 
 </dd> <dt>
 
@@ -674,7 +674,7 @@ La propiedad Name es una cadena que representa el nombre heredado que actúa com
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -846,7 +846,7 @@ Si **es True**, se puede escribir el archivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ LogicalFile** de CIM se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
@@ -858,7 +858,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec6a5e12d12b12f22cf1089d85ed4c07656da86cda071d8645355890996e2cd9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0ae558238b94402150e5cb15373d202065e485e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255555"
 ---
 # <a name="cbasevideorenderercbasevideorenderer-constructor"></a>Constructor CBaseVideoRenderer.CBaseVideoRenderer
 
@@ -84,7 +84,7 @@ Puntero a un **valor HRESULT.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

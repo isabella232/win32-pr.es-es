@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CBaseMediaFilter.~CBaseMediaFilter: método destructor.'
+description: 'Destructor CBaseMediaFilter.~CBaseMediaFilter: método Destructor.'
 ms.assetid: f6e272c3-bb6c-4730-aa2b-a94bc5971db6
 title: Destructor CBaseMediaFilter.~CBaseMediaFilter (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 997d6f7836b1657199b2b83e9b1ed758669dcf7264faa5b85ab3f9d999a6d741
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 93e5b967d0e2f41671f5924f7e92d06bae36ec1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119341625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273340"
 ---
 # <a name="cbasemediafiltercbasemediafilter-destructor"></a>Destructor CBaseMediaFilter.~CBaseMediaFilter
 
@@ -36,7 +36,7 @@ Método destructor.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Detenga siempre el objeto antes de destruirlo.
 

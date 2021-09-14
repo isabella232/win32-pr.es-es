@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 10f3e0dd09b37821a00f2c10f99c0ea6d509ff388e9d7394a8b2c4958438f979
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bec068622683172116bf8c4f6e88450d5752920
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364850"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161140"
 ---
-# <a name="labeled_dword-structure"></a>Estructura \_ DWORD ETIQUETADA
+# <a name="labeled_dword-structure"></a>LabelED \_ DWORD (estructura)
 
 La **estructura LABELED \_ DWORD** define una etiqueta que se muestra cuando se detecta un valor de propiedad DWORD específico.
 
@@ -36,7 +36,7 @@ typedef struct _LABELED_DWORD {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ Descripción textual o etiqueta que se muestra cuando se detecta el valor DWORD 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **miembro lpLabeledDwordTable** de la estructura [SET](set.md) apunta a una matriz de estructuras **SET** que definen uno o varios miembros **Label** de los pares de valores DWORD. Los pares se usan cuando se desea mostrar una etiqueta en lugar de un valor DWORD específico que se encuentra en el paquete de protocolo.
 
@@ -62,7 +62,7 @@ El **miembro lpLabeledDwordTable** de la estructura [SET](set.md) apunta a una m
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

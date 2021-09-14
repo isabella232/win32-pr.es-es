@@ -4,18 +4,18 @@ ms.assetid: 819e4e90-0bc3-41ba-851d-1d4c52b6eeea
 title: Tipo de propiedad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6446b5a0ef5f2cf1bc969f531a3b8c35e6990a2ca3eee3c0002e4f62fbf4cea9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36236c78160abbfe3ad64c6b801a3cdbdbb98b48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145338"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069740"
 ---
 # <a name="property-type"></a>Tipo de propiedad
 
 El tipo de propiedad de [tipo semántico](semantic-types.md) es uno de los [tipos de formato de clave](key-format-types.md). Este tipo consta de una clave externa en la [tabla Property proporcionada](property-table.md) por el usuario.
 
-La herramienta de combinación debe sustituir un identificador Windows [instalador válido](identifier.md) para los elementos de este tipo. Mergemod.dll aplica esta restricción y es la herramienta de combinación la que debe asegurarse de que el usuario proporciona una clave válida en la tabla Property. Las claves principales de la tabla Property son los nombres de propiedad.
+La herramienta de combinación debe sustituir un identificador Windows [instalador válido](identifier.md) para los elementos de este tipo. Mergemod.dll no aplica esta restricción y es la herramienta de combinación la que debe asegurarse de que el usuario proporciona una clave válida en la tabla Property. Las claves principales de la tabla Property son los nombres de propiedad.
 
 Null es un valor válido para este tipo a menos que msmConfigItemNonNullable se haya incluido en el campo Atributos de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
 

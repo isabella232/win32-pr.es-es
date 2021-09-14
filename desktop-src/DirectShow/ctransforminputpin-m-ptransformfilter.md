@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 67ece8674f2dd80e35fd51373e563dab408850426ef3f9fa5d625aa8ecccadde
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dc532977c34f897f248cb3011584ffd936e4fb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255446"
 ---
 # <a name="ctransforminputpinm_ptransformfilter-member"></a>Miembro CTransformInputPin::m \_ pTransformFilter
 

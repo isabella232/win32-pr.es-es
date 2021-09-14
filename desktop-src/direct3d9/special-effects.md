@@ -4,12 +4,12 @@ ms.assetid: 8a120ff4-1252-4c4f-93fc-ea59bb7a1168
 title: Efectos especiales (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3177f44b4c557eb42be42ffef8acac6108f8f68a8d9fcb072ebac6cee44af25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c853193e5cf34bfedb4eb7e01b5e89dc8467d99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118092192"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358885"
 ---
 # <a name="special-effects-direct3d-9"></a>Efectos especiales (Direct3D 9)
 
@@ -32,7 +32,7 @@ Este tema contiene ejemplos de efectos especiales que se logran con el procesami
 
     
 
--   Configure el rasterizador para usar coordenadas de textura 2D.
+-   Configure el rasterizador para que use coordenadas de textura 2D.
     ```
     SetTextureStageState(0, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_COUNT2);
     ```
@@ -94,7 +94,7 @@ Este tema contiene ejemplos de efectos especiales que se logran con el procesami
 
 ## <a name="performing-environment-mapping-with-a-cubic-environment-map"></a>Realización de una asignación de entorno con un mapa de entorno cúbica
 
--   Use la marca \_ TCI CAMERASPACEREFLECTIONVECTOR de D3DTSS para indicar al sistema que genere automáticamente coordenadas de textura como vectores de reflexión para la asignación \_ cúbica.
+-   Use la marca \_ TCI CAMERASPACEREFLECTIONVECTOR de D3DTSS para indicar al sistema que genere automáticamente coordenadas de textura como vectores de reflexión para la \_ asignación cúbica.
     ```
     SetTextureStageState(0, D3DTSS_TEXCOORDINDEX, D3DTSS_TCI_CAMERASPACEREFLECTIONVECTOR);
     ```

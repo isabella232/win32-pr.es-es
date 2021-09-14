@@ -4,20 +4,20 @@ ms.assetid: aca3bbd2-440a-405f-bddc-5f9cc831b811
 title: Patchwiz.dll
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de7a099a95eb6b42341b7f440f15fadb42e6a5ea8bbf69ff4d61b1fcaa28d21
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c6dc1135a9e2c09bb8a96e041f77bae39f0057ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120129175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069790"
 ---
 # <a name="patchwizdll"></a>Patchwiz.dll
 
-Para generar un paquete de revisión, se recomienda usar una herramienta de creación de revisiones, comoMsimsp.exe[ y ](msimsp-exe.md) Patchwiz.dll. Patchwiz.dll versión 4.0 es compatible con paquetes y revisiones que se crearon con versiones anteriores del Patchwiz.dll. La herramienta Patchwiz.dll solo está disponible en los componentes del SDK de Windows [para desarrolladores Windows installer .](platform-sdk-components-for-windows-installer-developers.md)
+Para generar un paquete de revisión, se recomienda usar una herramienta de creación de revisiones, comoMsimsp.exe[ y ](msimsp-exe.md) Patchwiz.dll. Patchwiz.dll versión 4.0 es compatible con paquetes y revisiones que se crearon con versiones anteriores del Patchwiz.dll. La herramienta Patchwiz.dll solo está disponible en los componentes del SDK de Windows [para Windows instalador de .](platform-sdk-components-for-windows-installer-developers.md)
 
 Patchwiz.dll versión 4.0 tiene una nueva función, [UiCreatePatchPackageEx (Patchwiz.dll),](uicreatepatchpackageex--patchwiz-dll-.md)que amplía la funcionalidad de [UiCreatePatchPackage (Patchwiz.dll).](uicreatepatchpackage-patchwiz-dll-.md) Estas funciones toman un archivo de propiedades de creación de revisiones (archivo .debian) y generan un paquete [de revisión del instalador](patch-packages.md).
 
-El archivo .jpeg es un archivo de base de datos binario con el mismo formato que una base de datos Windows Installer (.msi archivo), pero con un esquema de base de datos diferente. Por lo tanto, se puede crear un archivo .debian con las mismas herramientas que se usan para una base de datos del instalador.
+El archivo .xsd es un archivo de base de datos binario con el mismo formato que una base de datos Windows Installer (.msi archivo), pero con un esquema de base de datos diferente. Por lo tanto, se puede crear un archivo .debian con las mismas herramientas que se usan para una base de datos del instalador.
 
 Puede crear un archivo .debian mediante un editor de tablas, como [Orca.exe,](orca-exe.md) para escribir información en la base de datos .installer en blanco proporcionada con el SDK del instalador de Windows, Template.debian. Para obtener más información, vea [A Small Update Patching Example](a-small-update-patching-example.md).
 

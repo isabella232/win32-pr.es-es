@@ -1,5 +1,5 @@
 ---
-description: El método UsingDifferentAllocators determina si los pins de entrada y salida usan distintos asignadores.
+description: El método UsingDifferentAllocators determina si los pins de entrada y salida usan asignadores diferentes.
 ms.assetid: 75feaa6e-6395-4d47-ae92-10a857f8764b
 title: Método CTransInPlaceFilter.UsingDifferentAllocators (Transip.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0033c0f5ded1fe741d27397078367049d72061c40a993833f714686d9f8a96fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f20802836adb665614e2bbfb8cb79bdccd5a36ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953424"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255314"
 ---
-# <a name="ctransinplacefilterusingdifferentallocators-method"></a>Método CTransInPlaceFilter.UsingDifferentAllocators
+# <a name="ctransinplacefilterusingdifferentallocators-method"></a>CTransInPlaceFilter.UsingDifferentAllocators (método)
 
-El `UsingDifferentAllocators` método determina si las clavijas de entrada y salida usan distintos asignadores.
+El `UsingDifferentAllocators` método determina si los pins de entrada y salida usan asignadores diferentes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si las clavijas de entrada y salida usan distintos asignadores, o **FALSE en caso** contrario.
+Devuelve **TRUE** si las patillas de entrada y salida usan asignadores diferentes o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve **TRUE** si las clavijas de entrada y salida usan distintos asignadores
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

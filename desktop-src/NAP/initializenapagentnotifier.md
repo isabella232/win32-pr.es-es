@@ -3,7 +3,7 @@ title: Función InitializeNapAgentNotifier (NapUtil.h)
 description: Suscribe el proceso de llamada a las notificaciones de cambio de estado de NapAgent y a las notificaciones de cambio de estado de cuarentena.
 ms.assetid: 24180194-50d7-4f54-845d-25402af9cf9a
 keywords:
-- Función InitializeNapAgentNotifier NAP
+- Función Nap de InitializeNapAgentNotifier
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ac2d874f6138bcc1fbc97952d4464e56e05b0a497c7b0ff98e9c05e8c8434e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f59c4c342f693038040f374bbdbcdb8ab226f74d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118133460"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161270"
 ---
 # <a name="initializenapagentnotifier-function"></a>Función InitializeNapAgentNotifier
 
@@ -75,7 +75,7 @@ Identificador de evento que se usa para la notificación. El autor de la llamada
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función no es segura para los subprocesos.
 
@@ -87,16 +87,16 @@ Una vez que un proceso no requiere más notificaciones, el proceso debe llamar a
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

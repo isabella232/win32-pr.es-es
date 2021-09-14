@@ -18,12 +18,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 054cb165a7c59f91bf7df31561a8a5c24a25b2a0acda39d4cb5f35791f30ea25
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a32a3ee275c32dde7d9f1484aa99dddeaf97a2e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273444"
 ---
 # <a name="win32_logicaldisktopartition-class"></a>Clase LogicalDiskToPartition de Win32 \_
 
@@ -44,7 +44,7 @@ class Win32_LogicalDiskToPartition : CIM_LogicalDiskBasedOnPartition
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LogicalDiskToPartition de Win32** tiene estos tipos de miembros:
 
@@ -122,7 +122,7 @@ Esta propiedad se hereda de [**CIM \_ BasedOn.**](cim-basedon.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ LogicalDiskToPartition de Win32** se deriva de [**CIM \_ LogicalDiskBasedOnPartition**](cim-logicaldiskbasedonpartition.md).
 
@@ -464,7 +464,7 @@ BOOL wmi_close()
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

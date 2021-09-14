@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 450bc401a00c38b1f6782641dc5e869e6f3812abe5fb79f151c0ed3ad52eb939
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11281e69b70b2d87d354138a6313c8bca6673944
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118472073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358964"
 ---
-# <a name="driver_info_5-structure"></a>Driver \_ INFO \_ 5 (estructura)
+# <a name="driver_info_5-structure"></a>Estructura \_ DRIVER INFO \_ 5
 
 La **estructura DRIVER INFO \_ \_ 5** contiene información del controlador de impresora.
 
@@ -45,7 +45,7 @@ typedef struct _DRIVER_INFO_5 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una
 **pDataFile**
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene los datos del controlador (por ejemplo, C: \\ DRIVERS \\ Qms810.ppd).
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene datos de controlador (por ejemplo, C: \\ DRIVERS \\ Qms810.ppd).
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Número de veces que el archivo de controlador para este controlador se ha actua
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -125,14 +125,14 @@ Número de veces que el archivo de controlador para este controlador se ha actua
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrinterDriver**](addprinterdriver.md)

@@ -1,5 +1,5 @@
 ---
-description: El método GetDIBData recupera información sobre el mapa de bits independiente del dispositivo GDI (DIB) que administra este objeto.
+description: El método GetDIBData recupera información sobre el mapa de bits independiente del dispositivo (DIB) GDI que administra este objeto.
 ms.assetid: ec337336-69ec-47ff-a522-42c0388f9bc0
 title: Método CImageSample.GetDIBData (Winutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 894d75512c6c7909f617e13999e7290efea663fa843bf64424aad8371965de75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0fd198152e7c0042a6d48cf942a48745540960d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118655604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273084"
 ---
 # <a name="cimagesamplegetdibdata-method"></a>Método CImageSample.GetDIBData
 
@@ -59,7 +59,7 @@ El autor de la llamada debe **inicializar la estructura DIBDATA** antes de llama
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

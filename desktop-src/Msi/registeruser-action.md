@@ -4,12 +4,12 @@ ms.assetid: da615cb4-d36d-4180-8f97-c9f83c0df1c6
 title: Acción RegisterUser
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f89d43d18839e806939b7a084d37840b9895fdc81efb79fc03867eebe4c5c57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 686628d29094f951994b072ad4451a383a405965
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118626720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069680"
 ---
 # <a name="registeruser-action"></a>Acción RegisterUser
 
@@ -31,7 +31,7 @@ No hay restricciones de secuencia.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción RegisterUser no se realiza durante una instalación administrativa. Si la acción [ValidateProductID](validateproductid-action.md)no valida el identificador de producto especificado por el usuario , la propiedad [**ProductID**](productid.md) no se establece y esta acción no hace nada.
 
@@ -39,10 +39,10 @@ La acción RegisterUser no se realiza durante una instalación administrativa. S
 
 <dl> <dt>
 
-[**nombre de usuario**](username.md)
+[**NOMBRE DE USUARIO**](username.md)
 </dt> <dt>
 
-[**Companyname**](companyname.md)
+[**COMPANYNAME**](companyname.md)
 </dt> <dt>
 
 [**Productid**](productid.md)

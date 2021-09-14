@@ -4,12 +4,12 @@ ms.assetid: 339ffcd9-7724-4c92-b241-afbed81d9380
 title: Códigos de notificación de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54792e433535ceefad416033d7758f4398b7777951173256c9be9b83913d61f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9c41abc3ffc7a93a39e7a97fb210b491ad4fc58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255248"
 ---
 # <a name="event-notification-codes"></a>Códigos de notificación de eventos
 
@@ -17,7 +17,7 @@ En esta sección se enumeran DirectShow eventos que no son específicos de DVD. 
 
 Los filtros envían eventos al Administrador de Graph filtro mediante una llamada [**al método IMediaEventSink::Notify.**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) Filter Graph Manager controla algunos eventos y pone en cola otros para la aplicación. La aplicación los recupera llamando al [**método IMediaEvent::GetEvent.**](/windows/desktop/api/Control/nf-control-imediaevent-getevent)
 
-En las secciones siguientes, cada entrada muestra el código de evento, el significado de los parámetros de evento y la acción predeterminada del Administrador de filtros Graph para el evento, si lo hay. Para invalidar la acción predeterminada, llame a [**IMediaEvent::CancelDefaultHandling**](/windows/desktop/api/Control/nf-control-imediaevent-canceldefaulthandling). Los códigos de evento se definen en los archivos de encabezado Evcode.h y Audevcod.h. Si no hay ninguna acción predeterminada, filter Graph Manager reenvía automáticamente el evento a la aplicación (a través de la cola de eventos).
+En las secciones siguientes, cada entrada muestra el código de evento, el significado de los parámetros de evento y la acción predeterminada de Filter Graph Manager para el evento, si lo hay. Para invalidar la acción predeterminada, llame a [**IMediaEvent::CancelDefaultHandling**](/windows/desktop/api/Control/nf-control-imediaevent-canceldefaulthandling). Los códigos de evento se definen en los archivos de encabezado Evcode.h y Audevcod.h. Si no hay ninguna acción predeterminada, filter Graph Manager reenvía automáticamente el evento a la aplicación (a través de la cola de eventos).
 
 **Eventos personalizados**
 
@@ -38,8 +38,8 @@ Los filtros pueden definir eventos personalizados con códigos de evento en el i
 | [**EC \_ CLOCK \_ UNSET**](ec-clock-unset.md)                              | El proveedor de reloj se desconectó.                                                                                      |
 | [**EVENTO \_ CODECAPI \_ DE EC**](ec-codecapi-event.md)                        | Enviado por un codificador para indicar un evento de codificación.                                                                           |
 | [**EC \_ COMPLETE**](ec-complete.md)                                     | Se han representado todos los datos de una secuencia determinada.                                                                      |
-| [**EC \_ CONTENTPROPERTY \_ HA CAMBIADO**](ec-contentproperty-changed.md)      | No compatible.                                                                                                            |
-| [**DISPOSITIVO \_ EC \_ PERDIDO**](ec-device-lost.md)                              | Un Plug and Play se quitó o ha vuelto a estar disponible.                                                         |
+| [**EC \_ CONTENTPROPERTY \_ CHANGED**](ec-contentproperty-changed.md)      | No compatible.                                                                                                            |
+| [**DISPOSITIVO \_ EC \_ PERDIDO**](ec-device-lost.md)                              | Se quitó Plug and Play dispositivo o ha vuelto a estar disponible.                                                         |
 | [**EC \_ DISPLAY \_ CHANGED**](ec-display-changed.md)                      | El modo de presentación ha cambiado.                                                                                             |
 | [**FIN \_ DE SEGMENTO DE \_ \_ EC**](ec-end-of-segment.md)                       | Se ha alcanzado el final de un segmento.                                                                                    |
 | [**EC \_ EOS \_ SOON**](ec-eos-soon.md)                                    | No compatible.                                                                                                            |
@@ -58,7 +58,7 @@ Los filtros pueden definir eventos personalizados con códigos de evento en el i
 | [**VENTANA \_ DE NOTIFICACIÓN DE \_ EC**](ec-notify-window.md)                          | Notifica a un filtro la ventana del representador de vídeo.                                                                         |
 | [**EVENTO \_ OLE \_ DE EC**](ec-ole-event.md)                                  | Un filtro pasa una cadena de texto a la aplicación.                                                                     |
 | [**ARCHIVO \_ DE APERTURA DE \_ EC**](ec-opening-file.md)                            | El gráfico está abriendo un archivo o ha terminado de abrir un archivo.                                                              |
-| [**CAMBIO DE \_ LA PALETA \_ DE EC**](ec-palette-changed.md)                      | La paleta de vídeos ha cambiado.                                                                                            |
+| [**CAMBIO \_ DE LA PALETA DE \_ EC**](ec-palette-changed.md)                      | La paleta de vídeos ha cambiado.                                                                                            |
 | [**EC \_ PAUSED**](ec-paused.md)                                         | Se ha completado una solicitud de pausa.                                                                                            |
 | [**EC \_ PLEASE \_ REOPEN**](ec-please-reopen.md)                          | El archivo de origen ha cambiado.                                                                                              |
 | [**EC \_ PREPROCESS \_ COMPLETE**](ec-preprocess-complete.md)              | Enviado por el [filtro WM ASF Writer](wm-asf-writer-filter.md) cuando completa el procesamiento previo para la codificación multipass. |
@@ -74,7 +74,7 @@ Los filtros pueden definir eventos personalizados con códigos de evento en el i
 | [**ERROR \_ DE SNDDEV \_ DE \_ EC**](ec-snddev-in-error.md)                     | Se ha producido un error de dispositivo en un filtro de captura de audio.                                                                   |
 | [**\_ERROR DE SALIDA DE SNDDEV DE \_ \_ EC**](ec-snddev-out-error.md)                   | Se ha producido un error de dispositivo en un filtro de representador de audio.                                                                  |
 | [**EC \_ STARVATION**](ec-starvation.md)                                 | Un filtro no recibe suficientes datos.                                                                                    |
-| [**CAMBIO \_ DE ESTADO DE \_ EC**](ec-state-change.md)                            | El gráfico de filtros ha cambiado de estado.                                                                                       |
+| [**CAMBIO \_ DE ESTADO DE LA \_ EC**](ec-state-change.md)                            | El gráfico de filtros ha cambiado de estado.                                                                                       |
 | [**ESTADO \_ DE LA EC**](ec-status.md)                                         | Contiene dos cadenas de estado arbitrarias.                                                                                    |
 | [**PASO \_ DE EC \_ COMPLETADO**](ec-step-complete.md)                          | Un filtro que realiza la ejecución paso a paso del marco ha escalonado el número especificado de fotogramas.                                            |
 | [**EC \_ STREAM \_ CONTROL \_ STARTED**](ec-stream-control-started.md)       | Un comando stream-control start ha tenido efecto.                                                                          |

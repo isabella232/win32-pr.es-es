@@ -4,12 +4,12 @@ ms.assetid: ca5bcdee-ea13-4745-a565-5426c462892d
 title: Unicode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c99a7af4d4fbb6b7783f97ceba37b1bf6b0bf54811beaf9c7c2348ec0125c73b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 88facae63fbb365fd6f38cb09464de735e0759b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254966"
 ---
 # <a name="unicode"></a>Unicode
 
@@ -24,11 +24,11 @@ En comparación con los mecanismos anteriores para controlar los datos de caract
 -   Define asignaciones cruzadas a otros estándares.
 -   Define varias codificaciones de su único juego de caracteres: UTF-7, UTF-8, UTF-16 y UTF-32. La conversión de datos entre estas codificaciones no tiene pérdidas.
 
-Unicode admite numerosos scripts usados por lenguajes de todo el mundo, así como un gran número de símbolos técnicos y caracteres especiales que se usan en la publicación. Los scripts admitidos incluyen, entre otros, latín, griego, cirílico, hebreo, árabe, devalino, tailandés, han, hangul, hiragana y katakana. Los idiomas admitidos incluyen, entre otros, alemán, francés, inglés, griego, ruso, hebreo, árabe, hindi, tailandés, chino, coreano y japonés. Unicode actualmente puede representar la gran mayoría de los caracteres en el uso de equipos modernos en todo el mundo y se sigue actualizando para que sea aún más completo.
+Unicode admite numerosos scripts usados por lenguajes de todo el mundo, así como un gran número de símbolos técnicos y caracteres especiales que se usan en la publicación. Los scripts admitidos incluyen, entre otros, latín, griego, cirílico, hebreo, árabe, devaguíai, tailandés, han, hangul, hiragana y katakana. Los idiomas admitidos incluyen, entre otros, alemán, francés, inglés, griego, ruso, hebreo, árabe, hindi, tailandés, chino, coreano y japonés. Unicode actualmente puede representar la gran mayoría de los caracteres en el uso de equipos modernos en todo el mundo y se sigue actualizando para que sea aún más completo.
 
 Las funciones habilitadas para Unicode se describen [en Convenciones para prototipos de función](conventions-for-function-prototypes.md). Estas funciones usan la codificación UTF-16 (caracteres anchos), que es la codificación más común de Unicode y la que se usa para la codificación Unicode nativa en Windows sistemas operativos. Cada valor de código tiene 16 bits [](code-pages.md) de ancho, a diferencia del enfoque anterior de la página de códigos para los datos de caracteres y cadenas, que usa valores de código de 8 bits. El uso de 16 bits permite la codificación directa de 65 536 caracteres. De hecho, el universo de símbolos usados para transcribir idiomas humanos es incluso mayor que eso, y los puntos de código UTF-16 del intervalo U+D800 a U+DFFF se usan para formar pares suplentes, que constituyen codificaciones de 32 bits de caracteres adicionales. Consulte [Suplentes y caracteres adicionales para](surrogates-and-supplementary-characters.md) obtener más información.
 
-El juego de caracteres Unicode incluye numerosos caracteres combinados, como U+0308 ("ö"), una diéresis o umlaut combinados. Unicode a menudo puede representar el mismo glifo en un formato "'composed' o ''descomposed'": por ejemplo, la forma compuesta de "º" es el único punto de código Unicode "º" (U+00C4), mientras que su forma descompuesta es "A" + " conversiones" (U+0041 U+0308). Unicode no define un formulario compuesto para cada glifo. Por ejemplo, la "o" minúscula de La infiel con circunflejo y tilde ("ỗ") se representa mediante U+006f U+0302 U+0303 (o + Circunflejo + Tilde). Para obtener más información sobre la combinación de caracteres y problemas relacionados, vea [Using Unicode Normalization to Represent Strings](using-unicode-normalization-to-represent-strings.md).
+El juego de caracteres Unicode incluye numerosos caracteres combinados, como U+0308 ("ö"), una diéresis o umlaut combinados. Unicode a menudo puede representar el mismo glifo en un formato "'composed' o ''descomposed'": por ejemplo, la forma compuesta de "º" es el único punto de código Unicode "º" (U+00C4), mientras que su forma descompuesta es "A" + " conversiones" (U+0041 U+0308). Unicode no define un formulario compuesto para cada glifo. Por ejemplo, la minúscula "o" con circunflejo y tilde ("ỗ") se representa mediante U+006f U+0302 U+0303 (o + Circunflejo + Tilde). Para obtener más información sobre la combinación de caracteres y problemas relacionados, vea [Using Unicode Normalization to Represent Strings](using-unicode-normalization-to-represent-strings.md).
 
 Para la compatibilidad con entornos de 8 y 7 bits, Unicode también se puede codificar como UTF-8 y UTF-7, respectivamente. Aunque las funciones habilitadas para Unicode en Windows usan UTF-16, también es posible trabajar con datos codificados en UTF-8 o UTF-7, que se admiten en Windows como páginas de códigos de juego de caracteres multibyte [.](code-pages.md)
 

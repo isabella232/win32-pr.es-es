@@ -1,5 +1,5 @@
 ---
-description: Contiene una matriz de BLOB.
+description: Contiene una matriz de blobs.
 ms.assetid: e87f493b-f160-4316-b369-75d20c735213
 title: BLOB_TABLE estructura (Netmon.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: e0615ad9c11657a47d9eaa87035207cb499634cd4ded6ae484d6f5d256c23e15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32bacc925381f1c7ed30aa66247671b67e31b7e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161155"
 ---
 # <a name="blob_table-structure"></a>Estructura \_ BLOB TABLE
 
-La **estructura BLOB \_ TABLE** contiene una matriz de BLOB.
+La **estructura \_ BLOB TABLE** contiene una matriz de blobs.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,14 +36,14 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **dwNumBlobs**
 </dt> <dd>
 
-Indicador que siguen muchos BLOB.
+Indicador que siguen muchos blobs.
 
 </dd> <dt>
 

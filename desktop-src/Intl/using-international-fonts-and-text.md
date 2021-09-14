@@ -4,12 +4,12 @@ ms.assetid: 77b8c200-2682-4651-855a-602f768edc9b
 title: Enumeración y selección de fuentes internacionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b28e2dca3937f3513a930f157a364d466f761ed54a53d09c3e2b8b1c89bb30
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63e5d0d07a0953f72f097f8578f5e32b3ee49093
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254858"
 ---
 # <a name="international-font-enumeration-and-selection"></a>Enumeración y selección de fuentes internacionales
 
@@ -31,7 +31,7 @@ Si desea mostrar solo las fuentes que cubren un juego de caracteres determinado,
 
 Por último, al igual que con cualquier otro campo del cuadro de diálogo Fuente, puede elegir mostrar un cuadro de lista de scripts en blanco. Esta funcionalidad es útil si el usuario ha resaltado varias fuentes diferentes que abarcan varios conjuntos de caracteres. En este caso, llamaría a [**ChooseFont**](/previous-versions/windows/desktop/legacy/ms646914(v=vs.85)) con la **marca CF \_ NOSCRIPTSEL.**
 
-A partir Windows 7, [**ChooseFont**](/previous-versions/windows/desktop/legacy/ms646914(v=vs.85)) implementa compatibilidad para ocultar fuentes de listas de selección de fuentes. **ChooseFont** solo enumerará las fuentes mostradas y filtrará las fuentes ocultas mientras se muestran las fuentes en el cuadro de lista. La marca adicional (**CF \_ INACTIVEFONTS**) en el miembro flags de la estructura [**ChooseFont**](/previous-versions/windows/desktop/legacy/ms646914(v=vs.85)) se agrega para permitirle mostrar todas las fuentes instaladas en la lista de fuentes, igual que **ChooseFont** se comportó antes de Windows 7. Para obtener más información sobre las diferencias de comportamiento en Windows 7 para la función **ChooseFont,** vea [**ChooseFont() Win32 Common Dialog**](../win7appqual/choosefont-win32-common-dialog.md) (Cuadro de diálogo común de Win32) en Windows [7 Application Quality Cookbook](../win7appqual/windows-7-application-quality-cookbook.md)(Guía de calidad de aplicaciones de Windows 7). Consulte la **función ChooseFont** y **la estructura CHOOSEFONT para** ver las diferencias de experiencia del usuario final Windows 7.
+A partir Windows 7, [**ChooseFont**](/previous-versions/windows/desktop/legacy/ms646914(v=vs.85)) implementa compatibilidad para ocultar fuentes de listas de selección de fuentes. **ChooseFont** solo enumerará las fuentes mostradas y filtrará las fuentes ocultas mientras se muestran las fuentes en el cuadro de lista. La marca adicional **(CF \_ INACTIVEFONTS)** en el miembro flags de la estructura [**ChooseFont**](/previous-versions/windows/desktop/legacy/ms646914(v=vs.85)) se agrega para que pueda mostrar todas las fuentes instaladas en la lista de fuentes, igual que **ChooseFont** se comportó antes de Windows 7. Para obtener más información sobre las diferencias de comportamiento en Windows 7 para la función **ChooseFont,** vea [**ChooseFont() Win32 Common Dialog**](../win7appqual/choosefont-win32-common-dialog.md) (Cuadro de diálogo común de Win32) en la guía de calidad de la aplicación [Windows 7](../win7appqual/windows-7-application-quality-cookbook.md). Consulte la **función ChooseFont** y **la estructura CHOOSEFONT** para ver las diferencias de experiencia del usuario final Windows 7.
 
 Tenga en cuenta que los juegos de caracteres son una noción heredada correspondiente a los juegos de caracteres anteriores a Unicode. En este momento, no hay ningún mecanismo para filtrar fuentes basadas en scripts Unicode o intervalos de caracteres.
 
@@ -57,7 +57,7 @@ Windows 7 presenta la cinta de opciones Windows, que incluye un conjunto de cont
 [**CHOOSEFONT (estructura)**](/windows/win32/api/commdlg/ns-commdlg-choosefonta)
 </dt> <dt>
 
-[**Controles de fuente en la Windows ribbon de Ribbon**](../windowsribbon/windowsribbon-element-fontcontrol.md)
+[**Controles de fuente en Windows cinta de opciones de Ribbon**](../windowsribbon/windowsribbon-element-fontcontrol.md)
 </dt> <dt>
 
 [**Cuadro de diálogo común chooseFont() Win32**](../win7appqual/choosefont-win32-common-dialog.md)

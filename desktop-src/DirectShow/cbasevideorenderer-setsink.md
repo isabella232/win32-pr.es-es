@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5b5fef3eb6bd1b959c6c7246e4aeebf5b42a01ddcecd211f3e1d7860102a6381
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9658ab4a1099e7baaef0a3e1a0ae3c0d495e89e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119697905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255549"
 ---
 # <a name="cbasevideorenderersetsink-method"></a>Método CBaseVideoRenderer.SetSink
 
@@ -53,7 +53,7 @@ Puntero al [**objeto IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iq
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro implementa el [**método IQualityControl::SetSink**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-setsink) en el representador de vídeo.
 
@@ -68,7 +68,7 @@ Esta función miembro implementa el [**método IQualityControl::SetSink**](/wind
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

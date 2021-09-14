@@ -4,12 +4,12 @@ description: En el ejemplo siguiente se configura un agente de mantenimiento del
 ms.assetid: 7c96e1ca-f9b2-40e6-bd89-c8ef77b48dfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94625e99f604fd282a5b1177992f6e9e413b30d35f61767ad7231315dddfab53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef60b7ab9e390289a9bc1a2c3a00dd81ccf46240
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161233"
 ---
 # <a name="setting-up-a-simple-sha"></a>Configuración de un SHA simple
 
@@ -21,7 +21,7 @@ ms.locfileid: "119780745"
 En el ejemplo siguiente se configura un agente de mantenimiento del sistema (SHA) simple y se muestran dos acciones opcionales: notificación de cambio de declaración de estado (SoH) y vaciado de la memoria caché de SoH. Tenga en cuenta que el procesamiento de errores no se incluye en la función main() para simplificar este ejemplo.
 
 > [!Note]  
-> El SDK de NAP también contiene un conjunto completo de código de ejemplo, que se encuentra en ... \\ Ejemplos \\ de NAP de NetDS... \\ directorio de la instalación del SDK. Este conjunto de ejemplo incluye un SHA, un validador de estado del sistema (SHV) y un cliente de cumplimiento (EC). Tiene escenarios NAP completos en funcionamiento que configura la comunicación entre SHA-SHV y SHA-EC.
+> El SDK de NAP también contiene un conjunto completo de código de ejemplo, que se encuentra en ... \\ Ejemplos \\ de NAP de NetDS... \\ directorio de la instalación del SDK. Este conjunto de ejemplo incluye sha, validador de estado del sistema (SHV) y cliente de cumplimiento (EC). Tiene escenarios NAP completos en funcionamiento que configura la comunicación entre SHA-SHV y SHA-EC.
 
  
 

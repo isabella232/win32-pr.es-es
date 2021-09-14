@@ -13,11 +13,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8df7e02dea62696f1076bd4e5e3030081b0dbe3a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370807"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161375"
 ---
 # <a name="standard-midi-patch-assignments"></a>Asignaciones de revisiones ESTÁNDAR DE MIDI
 
@@ -25,11 +25,11 @@ Las asignaciones de revisiones estándar de MIDI para la creación de archivos M
 
 
 
-| Piano                      | Ándestic Descaperático      | Órgano                |
+| Piano                      | Semánticos      | Órgano                |
 |----------------------------|---------------------------|----------------------|
 | 0 Sonido general     | 8 Celesta                 | 16 Organ     |
 | 1 Sonido acústico brillante    | 9 Glondelspiel            | 17 Organo percusivo  |
-| 2 Eléctricos grand-grand-     | Cuadro de Música 10              | 18 Rock organ        |
+| 2 Electric grand grandón     | Cuadro de Música 10              | 18 Rock organ        |
 | 3Finaky-tonk transcripción         | 11 Vibraciónphone             | 19 Organo Desalado      |
 | 4 Rhodes( 16:00)             | 12 Marmba                | 20 reed organ (20 reed organ)        |
 | 5 Desasistido           | 13 Xylophone              | 21 Acordeón         |
@@ -55,7 +55,7 @@ Las asignaciones de revisiones estándar de MIDI para la creación de archivos M
 | 55 Orchestra hit           | 63 Synth. lugar 2         | 71 Honor          |
 | **Pipa**                   | **Synth Lead**            | **Panel de Synth**        |
 | 72 Desa.                 | 80 Clientes potenciales 1 (cuadrado)        | 88 Panel 1 (nueva edad)   |
-| 73 Desa eso                   | 81 Lead 2 (sawtooth)      | 89 Panel 2 (caliente)      |
+| 73 Desautía                   | 81 Lead 2 (sawtooth)      | 89 Panel 2 (caliente)      |
 | 74 Recorder                | 82 Lead 3 (calliope lead) | 90 Panel 3 (polysynth) |
 | 75 Panorámica               | 83 Lead 4 (chiff lead)    | 91 Panel 4 (cámara)     |
 | 76 Botella de botella             | 84 Lead 5 (charang)       | 92 Panel 5 (inclinado)     |

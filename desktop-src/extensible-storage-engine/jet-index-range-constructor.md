@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: constructor de JET_INDEX_RANGE'
+description: 'Más información sobre: JET_INDEX_RANGE constructor'
 title: JET_INDEX_RANGE constructor (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JET_INDEX_RANGE constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE.#ctor
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bdaf3bca87ec0cf3cbf53dae05cef18d387d1d733b9a09496259ebbe226f96b0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ea89c9198b24531199a0945267ba0ddd7f837ce6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358824"
 ---
 # <a name="jet_index_range-constructor"></a>JET_INDEX_RANGE constructor
 
@@ -50,7 +50,7 @@ Dim instance As New JET_INDEX_RANGE()
 public JET_INDEX_RANGE()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

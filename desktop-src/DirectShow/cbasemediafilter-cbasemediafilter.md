@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 264363ebb7194504dd16a94c0835bab0a4fe0163edd31329b77853510c9523db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f123c7af29c6420de6004132180eba8dbf33fa72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273348"
 ---
 # <a name="cbasemediafiltercbasemediafilter-constructor"></a>Constructor CBaseMediaFilter.CBaseMediaFilter
 
@@ -73,11 +73,11 @@ Identificador de clase del objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si otro objeto contiene o agrega el `CBaseMediaFilter` objeto, el **bloqueo CCritSec** podría ser externo al `CBaseMediaFilter` objeto . En ese caso, pase un puntero al bloqueo en *pLock*.
 
-De lo contrario, puede:
+De lo contrario, puede hacer lo siguiente:
 
 -   Derive una clase que herede y `CBaseMediaFilter` **CCritSec**. Para *pLock*, pase el puntero this.
 -   Derive una clase que hereda `CBaseMediaFilter` y contiene una variable miembro **CCritSec.** Para *pLock*, pase la dirección de esa variable.
@@ -93,7 +93,7 @@ De lo contrario, puede:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

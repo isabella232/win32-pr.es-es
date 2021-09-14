@@ -4,12 +4,12 @@ ms.assetid: 35da0ac3-4e68-4d37-a987-405fc15d0cbf
 title: Iluminación especular (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84597b63ebd064fbe27ae90b673e9c91166be96f6f45b039ba29a16de9011054
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b16d71bd8d814e104cf8a90d1d1fe9b15ba10f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118520176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358884"
 ---
 # <a name="specular-lighting-direct3d-9"></a>Iluminación especular (Direct3D 9)
 
@@ -37,7 +37,7 @@ En la tabla siguiente se identifican las variables, sus tipos y sus intervalos.
 | Sum          | N/D           | N/D           | Suma del componente especular de cada luz.                                                                       |
 | N            | N/D           | D3DVECTOR     | Vértice normal.                                                                                                      |
 | H            | N/D           | D3DVECTOR     | Vector a medio camino. Consulte la sección sobre el vector medio.                                                             |
-| <sup>P</sup> | 0,0           | FLOAT         | Potencia de reflexión especular. El intervalo es de 0 a +infinito                                                                  |
+| <sup>P</sup> | 0,0           | FLOAT         | Potencia de reflexión especular. El intervalo es de 0 a +infinito.                                                                  |
 | Ls           | (0,0,0,0)     | D3DCOLORVALUE | Color especular claro.                                                                                               |
 | Atten        | N/D           | FLOAT         | Valor de atenuación ligera. Consulte [Atenuación y factor spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md) |
 | Zona         | N/D           | FLOAT         | Factor spotlight. Consulte [Atenuación y factor spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md)        |
@@ -69,7 +69,7 @@ Los componentes especulares se fijan para que estén entre 0 y 255, una vez que 
 
 ## <a name="the-halfway-vector"></a>Vector a mitad de camino
 
-El vector medio (H) existe a medio camino entre dos vectores: el vector de un vértice de objeto a la fuente de luz y el vector de un vértice de objeto a la posición de la cámara. Direct3D proporciona dos maneras de calcular el vector medio. Cuando LOCALVIEWER de D3DRS se establece en TRUE, el sistema calcula el vector a medio camino usando la posición de la cámara y la posición del vértice, junto con el vector de dirección \_ de la luz.  En la fórmula siguiente se muestra esto.
+El vector medio (H) existe a medio camino entre dos vectores: el vector de un vértice de objeto a la fuente de luz y el vector de un vértice de objeto a la posición de la cámara. Direct3D proporciona dos maneras de calcular el vector medio. Cuando LOCALVIEWER de D3DRS se establece en TRUE, el sistema calcula el vector a medio camino usando la posición de la cámara y la posición del vértice, junto con el vector de dirección de \_ la luz.  En la fórmula siguiente se muestra esto.
 
 **H = norm(norm(Cp - Vp) + L <sub>dir</sub>)**
 

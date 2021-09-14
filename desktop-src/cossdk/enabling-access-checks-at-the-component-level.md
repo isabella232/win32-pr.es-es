@@ -4,12 +4,12 @@ ms.assetid: b9ff5296-9076-4492-833c-7402b7090f8f
 title: Habilitar comprobaciones de acceso en el nivel de componente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3063873923d3d4c491312ca4efccd9bcd665b46bf1bdfc882b69dbe4942757f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5da2de5f9d2f4f2d39f43330c8320c0bb0218bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358904"
 ---
 # <a name="enabling-access-checks-at-the-component-level"></a>Habilitar comprobaciones de acceso en el nivel de componente
 
@@ -27,7 +27,7 @@ De forma predeterminada, al instalar un componente, se habilitan las comprobacio
 
 4.  Seleccione **Aplicar comprobaciones de acceso de nivel de componente** para aplicar comprobaciones de nivel de componente.
 
-5.  Haga clic en **Aceptar**.
+5.  Haga clic en **OK**.
 
 La nueva configuración se aplica la próxima vez que se inicia la aplicación.
 

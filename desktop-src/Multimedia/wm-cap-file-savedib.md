@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_FILE_SAVEDIB mensaje (Vfw.h)
-description: El mensaje SAVEDIB DEL ARCHIVO CAP de WM \_ copia el marco actual en un archivo \_ \_ DIB. Puede enviar este mensaje explícitamente o mediante la macro capFileSaveDIB.
+description: El mensaje SAVEDIB DEL ARCHIVO DE CAP DE WM \_ copia el marco actual en un archivo \_ \_ DIB. Puede enviar este mensaje explícitamente o mediante la macro capFileSaveDIB.
 ms.assetid: bf6d343b-9236-4e68-bbda-2ed6e197a5cb
 keywords:
 - WM_CAP_FILE_SAVEDIB mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 2155febfdac1b3f24133df47ce206c8e5ec33d3a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371437"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161359"
 ---
-# <a name="wm_cap_file_savedib-message"></a>Mensaje \_ \_ SAVEDIB DEL ARCHIVO CAP \_ de WM
+# <a name="wm_cap_file_savedib-message"></a>Mensaje \_ SAVEDIB DE ARCHIVO DE CAP \_ DE WM \_
 
-El **mensaje \_ \_ \_ SAVEDIB DEL ARCHIVO CAP de WM** copia el marco actual en un archivo DIB. Puede enviar este mensaje explícitamente o mediante la [**macro capFileSaveDIB.**](/windows/desktop/api/Vfw/nf-vfw-capfilesavedib)
+El **mensaje \_ \_ \_ SAVEDIB DEL ARCHIVO DE CAP** DE WM copia el marco actual en un archivo DIB. Puede enviar este mensaje explícitamente o mediante la [**macro capFileSaveDIB.**](/windows/desktop/api/Vfw/nf-vfw-capfilesavedib)
 
 
 ```C++
@@ -47,13 +47,13 @@ Puntero a la cadena terminada en NULL que contiene el nombre del archivo DIB de 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**DE ERROR WM CAP SET \_ \_ \_ CALLBACK, \_**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
 ## <a name="remarks"></a>Observaciones
 
-Si el controlador de captura proporciona fotogramas en un formato comprimido, esta llamada intenta descomprimir el fotograma antes de escribir el archivo.
+Si el controlador de captura proporciona fotogramas en un formato comprimido, esta llamada intenta descomprimir el marco antes de escribir el archivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Si el controlador de captura proporciona fotogramas en un formato comprimido, es
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: La infraestructura de diagnóstico inalámbrica integrada tiene dos
 ms.assetid: b54f836d-4fae-4e71-bf7b-af5a6e9e615c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3b7ac72cb42b12a96e5c57db0897a13d49d76370126e119ac2f5ed457d55c9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bde49561c68044157c9d518571b8241c49dcf25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118133450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161229"
 ---
 # <a name="80211-wireless-diagnostics-extensible-helper-classes"></a>802.11 Clases auxiliares extensibles de diagnóstico inalámbrico
 
@@ -18,7 +18,7 @@ La infraestructura de diagnóstico inalámbrica integrada tiene dos puntos de ex
 | Clase auxiliar primaria                                | Propósito                                                           |
 |----------------------------------------------------|-------------------------------------------------------------------|
 | Revised Native Wifi (RNWF) Extensible Helper Class | Diagnostica problemas relacionados con las extensiones de conectividad 802.11.       |
-| L2Security Extensible Helper (clase auxiliar)                 | Diagnostica problemas relacionados con las extensiones del protocolo de seguridad de nivel 2. |
+| L2Security Extensible Helper Class                 | Diagnostica problemas relacionados con las extensiones del protocolo de seguridad de nivel 2. |
 
 
 
@@ -64,13 +64,13 @@ Los dos atributos clave proporcionados por la clase auxiliar RNWF son el GUID de
 
  
 
-El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que debe registrar el tercero en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
+El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe registrarse en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
 
 En la tabla siguiente se enumeran los atributos correspondientes para la clase auxiliar extensible RNWF.
 
 
 
-| Nombre          | Tipo    | Valor                         |
+| Nombre          | Tipo    | Value                         |
 |---------------|---------|-------------------------------|
 | DiagnosticsID | REG \_ SZ | \[Cadena GUID de DiagnosticsID \_ \_ |
 
@@ -78,7 +78,7 @@ En la tabla siguiente se enumeran los atributos correspondientes para la clase a
 
  
 
-## <a name="l2security-extensible-helper-class"></a>L2Security Extensible Helper (clase auxiliar)
+## <a name="l2security-extensible-helper-class"></a>L2Security Extensible Helper Class
 
 Nombre de clase del asistente primario
 
@@ -113,13 +113,13 @@ Los dos atributos clave proporcionados por la clase auxiliar de seguridad de niv
 
  
 
-El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que debe registrar el tercero en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
+El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe registrarse en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
 
 En la tabla siguiente se enumeran los atributos correspondientes para la clase auxiliar extensible seguridad de capa 2.
 
 
 
-| Nombre          | Tipo    | Valor                         |
+| Nombre          | Tipo    | Value                         |
 |---------------|---------|-------------------------------|
 | DiagnosticsID | REG \_ SZ | \[Cadena GUID de DiagnosticsID \_ \_ |
 
@@ -131,7 +131,7 @@ En la tabla siguiente se enumeran los atributos correspondientes para la clase a
 
 **DiagnosticsID**
 
-802.11 Diagnósticos inalámbricos consultará *diagnosticsID* desde el servicio Wi-Fi nativo principal para averiguar si hay extensiones inalámbricas de terceros o módulos de seguridad instalados e implicados en la conexión. A continuación, diagnósticos inalámbricos proporcionarán hipótesis a estas clases auxiliares de terceros mediante *DiagnosticsID* como atributo de coincidencia. Las clases auxiliares de terceros deben incluirse e instalarse con el paquete de controladores asociado. *DiagnosticsID se* definirá en el archivo INF de miniporte como una clave del Registro en la [directiva AddReg.](https://msdn.microsoft.com/library/ms794514.aspx)
+802.11 Diagnósticos inalámbricos consultará *diagnosticsID* desde el servicio Wi-Fi nativo principal para averiguar si hay extensiones inalámbricas de terceros o módulos de seguridad instalados e implicados en la conexión. A continuación, diagnósticos inalámbricos proporcionarán hipótesis a estas clases auxiliares de terceros mediante *DiagnosticsID* como atributo de coincidencia. Las clases auxiliares de terceros deben incluirse e instalarse con el paquete de controladores asociado. *DiagnosticsID se* definirá en el archivo INF de miniportador como una clave del Registro en la [directiva AddReg.](https://msdn.microsoft.com/library/ms794514.aspx)
 
 ``` syntax
 HKR,Ndi\IHVExtensions, DiagnosticsID,0, "<Diagnostics ID GUID>"

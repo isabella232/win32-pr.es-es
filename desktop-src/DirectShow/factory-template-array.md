@@ -4,12 +4,12 @@ ms.assetid: 310afccd-42a6-426e-b455-7bf98062bf36
 title: Matriz de plantillas de fábrica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1888a2a054473865c713d96cdfa5706c35229dc938f23513a95066176ab138c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 645f2c8d05f37ab64142747755d6a0e7727f4b11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118401850"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255188"
 ---
 # <a name="factory-template-array"></a>Matriz de plantillas de fábrica
 
@@ -68,7 +68,7 @@ int g_cTemplates = sizeof(g_Templates) / sizeof(g_Templates[0]);
 
 
 
-El `CreateInstance` método llama al constructor de clase y devuelve un puntero a la nueva instancia de clase. El parámetro *pUnk* es un puntero al [**IUnknown que**](/windows/desktop/api/unknwn/nn-unknwn-iunknown)agrega . Simplemente puede pasar este parámetro al constructor de clase. El parámetro *pHr* es un puntero a un valor HRESULT. El constructor de clase establece esto en un valor adecuado, pero si se produce un error en el constructor, establezca el valor en E \_ OUTOFMEMORY.
+El `CreateInstance` método llama al constructor de clase y devuelve un puntero a la nueva instancia de clase. El parámetro *pUnk* es un puntero al [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown)que agrega . Simplemente puede pasar este parámetro al constructor de clase. El parámetro *pHr* es un puntero a un valor HRESULT. El constructor de clase establece esto en un valor adecuado, pero si se produce un error en el constructor, establezca el valor en E \_ OUTOFMEMORY.
 
 La [**macro NAME**](name.md) genera una cadena en las compilaciones de depuración, pero se resuelve como NULL **en** las compilaciones comerciales. Se usa en este ejemplo para dar al componente un nombre que aparece en los registros de depuración, pero que no ocupa memoria en la versión final.
 
@@ -78,7 +78,7 @@ El `CreateInstance` método puede tener cualquier nombre, porque el generador de
 
 <dl> <dt>
 
-[Cómo crear un archivo DIRECTSHOW DLL de filtro](how-to-create-a-dll.md)
+[Cómo crear un archivo DIRECTSHOW dll de filtro](how-to-create-a-dll.md)
 </dt> </dl>
 
  

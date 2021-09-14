@@ -4,14 +4,14 @@ description: Realiza un filtro de comparación. Esta instrucción se comporta co
 ms.assetid: 5F11F091-AF2F-4293-88C7-824F11FE01E4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b2866bdfddf91f9bd6ab1bbccbc9d76de071065b3cf28c1093cb1fdb041f3db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24ec2889dd3ea4c86af51c8e36bf2e302c6ad4dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119981505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358854"
 ---
-# <a name="sample_c_lz-sm4---asm"></a>sample \_ c \_ lz (sm4 - asm)
+# <a name="sample_c_lz-sm4---asm"></a>ejemplo \_ de c \_ lz (sm4 - asm)
 
 Realiza un filtro de comparación. Esta instrucción se comporta como [c de \_ ejemplo,](sample-c--sm4---asm-.md)excepto que LOD es 0 y se omiten los derivados.
 
@@ -38,9 +38,9 @@ Realiza un filtro de comparación. Esta instrucción se comporta como [c de \_ e
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-"lz" significa nivel cero. Dado que se omiten los derivados, esta instrucción está disponible en sombreadores que no sean el sombreador de píxeles.
+"lz" significa level-zero. Dado que se omiten los derivados, esta instrucción está disponible en sombreadores que no sean el sombreador de píxeles.
 
 Si esta instrucción se usa con una textura mipmapped, se muestrea LOD 0, a menos que el muestreador tenga una fijación lod que coloca el LOD en otro lugar, o si hay un sesgo de LOD, que simplemente sesgo a partir de 0. Dado que se omiten los derivados, el filtrado anisotropico se comporta como filtrado isotropico.
 
@@ -68,12 +68,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

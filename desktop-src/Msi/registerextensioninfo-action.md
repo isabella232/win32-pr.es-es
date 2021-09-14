@@ -4,12 +4,12 @@ ms.assetid: 3c243ca3-9fa7-41ec-968e-7954d7d45432
 title: Acción RegisterExtensionInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0541fc512c2300b0cb37f4a23305a3d312a4e60208890507fb7c6112e00c94
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0310344b6579ef65faac41238bb607ce98411b52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069696"
 ---
 # <a name="registerextensioninfo-action"></a>Acción RegisterExtensionInfo
 
@@ -44,9 +44,9 @@ Por ejemplo, RegisterExtensionInfo debe ir después [de UnregisterMIMEInfo en](u
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el sistema admite la instalación a petición para los servidores [](extension-table.md) de extensiones, RegisterExtensionInfo registra todos los servidores de extensiones en la tabla De extensión asociada a las características establecidas para la instalación o el anuncio. De lo contrario, esta acción solo registra los servidores de extensión asociados a las características establecidas en la instalación.
+Si el sistema admite la instalación a petición de los servidores [](extension-table.md) de extensiones, RegisterExtensionInfo registra todos los servidores de extensión en la tabla Extensión asociada a las características establecidas para la instalación o el anuncio. De lo contrario, esta acción solo registra los servidores de extensión asociados a las características establecidas en la instalación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

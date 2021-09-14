@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0d7c2f68ca8753826776c804ff63e11454110d9d5287f29a61343ce4c2dcec85
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a75cbcf1d629b997584cff35ebd4095094fe8607
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273247"
 ---
 # <a name="cbasemediafilterpause-method"></a>Método CBaseMediaFilter.Pause
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En la clase base, este método establece la variable miembro [**State CBaseMediaFilter::m \_**](cbasemediafilter-m-state.md) en State \_ Paused, pero no hace nada más.
+En la clase base, este método establece la variable miembro [**CBaseMediaFilter::m \_ State**](cbasemediafilter-m-state.md) en State \_ Paused, pero no hace nada más.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ En la clase base, este método establece la variable miembro [**State CBaseMedia
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

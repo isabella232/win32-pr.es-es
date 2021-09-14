@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 871a8e4a04ec1dc31f3240b539a943c9c1733f083166fa4b7e6f6b52d14a466c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5db5e78d198cc9f66aa5de6fdb0160e325b82591
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118401805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255224"
 ---
 # <a name="execute_assert-macro"></a>Execute \_ ASSERT macro
 
@@ -50,7 +50,7 @@ Expresión que se va a evaluar.
 
 Esta macro no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A diferencia de la macro [**ASSERT,**](assert.md) esta macro evalúa la expresión en las compilaciones comerciales. En las compilaciones de depuración, si la expresión es **FALSE,** la macro muestra un cuadro de mensaje con el texto de la expresión, el nombre del archivo de origen y el número de línea. El usuario puede omitir la aserción, escribir el depurador o salir de la aplicación.
 

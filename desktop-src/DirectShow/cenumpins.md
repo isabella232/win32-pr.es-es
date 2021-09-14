@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7135a07aedb879503d36011b274bdeab8035924b91bb5d9bc656d6d89dfbe201
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5dde02c31ed0ef72e6df36a6cf0364b7f184304e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119567014"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255525"
 ---
 # <a name="cenumpins-class"></a>CEnumPins (clase)
 
@@ -44,10 +44,10 @@ Si el filtro crea o destruye de forma dinámica los pins, incrementa la versión
 | [**CEnumPins**](cenumpins-cenumpins.md)   | Método constructor.                                             |
 | [**~CEnumPins**](cenumpins--cenumpins.md) | Método destructor. Virtual.                                     |
 | Métodos de IEnumPins                          | Descripción                                                     |
-| [**Clon**](cenumpins-clone.md)           | Realiza una copia del enumerador con el mismo estado de enumeración. |
+| [**Clonar**](cenumpins-clone.md)           | Realiza una copia del enumerador con el mismo estado de enumeración. |
 | [**Next**](cenumpins-next.md)             | Recupera un número especificado de pines.                           |
-| [**Restablecer**](cenumpins-reset.md)           | Restablece la secuencia de enumeración al principio.               |
-| [**Omitir**](cenumpins-skip.md)             | Omite un número especificado de pines.                          |
+| [**Reset**](cenumpins-reset.md)           | Restablece la secuencia de enumeración al principio.               |
+| [**Saltar**](cenumpins-skip.md)             | Omite un número especificado de pines.                          |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: b53f1cf5-3659-407e-8279-5c94333f3017
 title: Creación de una aplicación auxiliar de IP básica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e8c5db341bbc14b60f47654b887b0345bbbc96a097463c63a1d0bba9e648ef3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: baae961f8ffb6aa899e96fd05f0cb9f0c41469ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069793"
 ---
 # <a name="creating-a-basic-ip-helper-application"></a>Creación de una aplicación auxiliar de IP básica
 
@@ -49,9 +49,9 @@ ms.locfileid: "120086465"
     >
     > En microsoft Windows Software Development Kit (SDK) publicado para Windows Vista y versiones posteriores, la organización de los archivos de encabezado ha cambiado. Algunas de las estructuras se definen ahora en los archivos de encabezado *Ipmib.h,* *Tcpmib.h* y *Udpmib.h,* no en el archivo de encabezado *Iprtmidb.h.* El *archivo de encabezado Ipmib.h* incluye automáticamente el archivo de encabezado *Ifmib.h.* Tenga en cuenta que estos archivos de encabezado se incluyen automáticamente en *Iprtmidb.h,* que se incluye automáticamente en el archivo de encabezado *Iphlpapi.h.*
     >
-    > La mayoría de las aplicaciones que usan las API del asistente de IP requieren el archivo de encabezado *Winsock2.h* para Windows Sockets 2.0. Cuando se requiere el archivo de encabezado *Winsock2.h,* la línea include de este archivo debe colocarse antes de la línea include del archivo de encabezado \# \# *Iphlpapi.h.*
+    > La mayoría de las aplicaciones que usan las API auxiliares de IP requieren el archivo de encabezado *Winsock2.h* para Windows Sockets 2.0. Cuando se requiere el archivo de encabezado *Winsock2.h,* la línea include de este archivo debe colocarse antes de la línea include del archivo de encabezado \# \# *Iphlpapi.h.*
     >
-    > El archivo de *encabezado Winsock2.h* incluye internamente elementos principales del archivo de encabezado *Windows.h,* por lo que no suele haber una línea de include para el archivo de encabezado \# *Windows.h* en las aplicaciones auxiliares de IP. Si se necesita una línea de include para el archivo de encabezado Windows.h, debe ir precedida de la \# macro DEFINE  \# WIN32 LEAN AND \_ \_ \_ MEAN. Por motivos históricos, *el encabezado Windows.h* incluye de forma predeterminada el archivo de encabezado *Winsock.h* para Windows Sockets 1.1. Las declaraciones del archivo de encabezado *Winsock.h* para Windows Sockets 1.1 estarán en conflicto con las declaraciones del archivo de encabezado *Winsock2.h* que requiere Windows Sockets 2.0. La macro WIN32 LEAN AND MEAN impide que el archivo de encabezado Winsock.h se incluya en \_ el archivo de encabezado \_ \_ *Windows.h.*  A continuación se muestra un ejemplo que ilustra esto.
+    > El archivo de encabezado *Winsock2.h* incluye internamente elementos principales del archivo de encabezado *Windows.h,* por lo que no suele haber una línea de include para el archivo de encabezado \# *Windows.h* en las aplicaciones auxiliares de IP. Si se necesita una línea de include para el archivo de encabezado Windows.h, debe ir precedida de la \# macro DEFINE  \# WIN32 LEAN AND \_ \_ \_ MEAN. Por motivos históricos, *el encabezado Windows.h* incluye de forma predeterminada el archivo de encabezado *Winsock.h* para Windows Sockets 1.1. Las declaraciones del archivo de encabezado *Winsock.h* para Windows Sockets 1.1 estarán en conflicto con las declaraciones del archivo de encabezado *Winsock2.h* requerido por Windows Sockets 2.0. La macro WIN32 LEAN AND MEAN impide que el archivo de encabezado Winsock.h se incluya en \_ el archivo de encabezado \_ \_ *Windows.h.*  A continuación se muestra un ejemplo que ilustra esto.
 
      
 
@@ -84,7 +84,7 @@ ms.locfileid: "120086465"
 
     > [!Note]
     >
-    > El *archivo de encabezado Stdio.h* es necesario para el uso de varias funciones estándar de C en esta aplicación auxiliar de IP básica.
+    > El *archivo de encabezado Stdio.h* es necesario para el uso de varias funciones estándar de C en esta aplicación del asistente de IP básica.
 
      
 

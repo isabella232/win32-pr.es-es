@@ -4,18 +4,18 @@ ms.assetid: 546f5b7d-3bcd-4e97-a012-daca6ae7bca1
 title: Buscar una interfaz en un filtro o un pin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17314f7e44e4b2c4f412dd0d152e038203268c29d585cd684ddde9eb34992a2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d264a35e0c33ba53f6a8df7f69113f3358a9737
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117819567"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255135"
 ---
 # <a name="find-an-interface-on-a-filter-or-pin"></a>Buscar una interfaz en un filtro o un pin
 
-Para muchas operaciones en DirectShow, la aplicación llama a métodos en filter Graph Manager. Sin embargo, en algunas situaciones, la aplicación debe llamar a un método directamente en un filtro o un pin. Por ejemplo, muchos filtros exponen interfaces especializadas que se usan para configurar el filtro.
+Para muchas operaciones en DirectShow, la aplicación llama a métodos en el Administrador de Graph Filtros. Sin embargo, en algunas situaciones, la aplicación debe llamar a un método directamente en un filtro o un pin. Por ejemplo, muchos filtros exponen interfaces especializadas que se usan para configurar el filtro.
 
-En el caso de una interfaz de filtro, es posible que ya tenga un puntero a la interfaz [**IBaseFilter del**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) filtro. En ese caso, simplemente use **QueryInterface** para obtener la otra interfaz. Sin embargo, el Administrador de filtros Graph podría agregar algunos filtros al gráfico. (Para más información, consulte [Intelligent Conectar).](intelligent-connect.md) En ese caso, use la [**interfaz IEnumFilters**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) para recorrer en bucle todos los filtros del gráfico y consultar cada uno a su vez. La siguiente función muestra lo siguiente:
+En el caso de una interfaz de filtro, es posible que ya tenga un puntero a la interfaz [**IBaseFilter del**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) filtro. En ese caso, simplemente use **QueryInterface** para obtener la otra interfaz. Pero el Administrador de filtros puede Graph agregar algunos filtros al gráfico. (Para obtener más información, vea [Intelligent Conectar).](intelligent-connect.md) En ese caso, use la [**interfaz IEnumFilters**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) para recorrer en bucle todos los filtros del gráfico y consultar cada uno a su vez. La siguiente función muestra lo siguiente:
 
 
 ```C++
@@ -85,7 +85,7 @@ HRESULT FindPinInterface(
 
 
 
-La función siguiente busca una interfaz en un filtro o un pin:
+La siguiente función busca una interfaz en un filtro o un pin:
 
 
 ```C++
@@ -125,7 +125,7 @@ HRESULT FindInterfaceAnywhere(
 
 
 
-Tenga en cuenta que todas las funciones que se muestran aquí se detienen en el primer **objeto QueryInterface correcto.**
+Tenga en cuenta que todas las funciones que se muestran aquí se detienen en el primer **elemento QueryInterface correcto.**
 
 ## <a name="related-topics"></a>Temas relacionados
 

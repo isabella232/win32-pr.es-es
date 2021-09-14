@@ -4,12 +4,12 @@ ms.assetid: ae39b0e1-d2ae-449e-89db-0a2b24171531
 title: Teselación (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aedc6b435c2993e213e8a4445682725ddb4d460c146afbe420da996e3dbb887
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82378caac1218158ffc1834c9a9b56fb8cbd250e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119984835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358879"
 ---
 # <a name="tessellation-direct3d-9"></a>Teselación (Direct3D 9)
 
@@ -17,11 +17,11 @@ ms.locfileid: "119984835"
 
 Se ha mejorado la unidad de teselador. Ahora puede usarlo para:
 
--   Realice una teselación adaptable de todas las primitivas de orden superior.
--   Buscar valores de desplazamiento por vértice de un mapa de desplazamiento y pasarlos a un sombreador de vértices.
+-   Realice la teselación adaptable de todas las primitivas de orden superior.
+-   Busque los valores de desplazamiento por vértice de un mapa de desplazamiento y pásenlos a un sombreador de vértices.
 -   Admite la teselación de revisión de rectángulos. Esto se especifica mediante una declaración de vértice mediante D3DDECLMETHOD \_ PARTIALU o D3DDECLMETHOD \_ PARTIALV. Si se usa una declaración de vértice que contiene estos métodos para dibujar una revisión de triángulo, se producirá un error [**en IDirect3DDevice9::D rawTriPatch.**](/windows/desktop/api) Para obtener más información sobre las declaraciones de vértices, [**vea D3DVERTEXELEMENT9**](d3dvertexelement9.md).
 
-En DirectX 8.x, lo que se denominaba ORDER era realmente el grado. En Direct3D 9, [**D3DDEGREETYPE**](./d3ddegreetype.md)especifica ahora el grado.
+En DirectX 8.x, lo que se llamaba ORDER era realmente el grado. En Direct3D 9, [**D3DDEGREETYPE**](./d3ddegreetype.md)especifica ahora el grado.
 
 
 ```
@@ -73,21 +73,21 @@ Los controladores deben corregir los errores de compilación que se producen a p
 
 ## <a name="adaptive-tessellation"></a>Teselación adaptable
 
-La teselación adaptable se puede aplicar a primitivas de orden alto, como N revisiones, revisiones de rectángulo y revisiones de triángulo. Esta característica está habilitada por D3DRS ENABLEADAPTIVETESSELLATION y ofrece una revisión adaptable, en función del valor de profundidad del vértice de control en el espacio \_ ocular.
+La teselación adaptable se puede aplicar a primitivas de orden alto, incluidas N revisiones, revisiones de rectángulo y revisiones de triángulo. Esta característica está habilitada por D3DRS ENABLEADAPTIVETESSELLATION y presenta una revisión de forma adaptable, en función del valor de profundidad del vértice de control en el espacio de los \_ ojos.
 
-Las coordenadas z (Zi) de los vértices de control (Vi), que se transforman en espacio para los ojos (Zieye) mediante la realización de un producto de puntos con un vector 4, se usan como valores de profundidad. La aplicación especifica el vector 4D (Mdm) mediante cuatro estados de representación \_ (D3DRS ADAPTIVETESS \_ X, D3DRS \_ ADAPTIVETESS \_ Y, D3DRS \_ ADAPTIVETESS \_ Z y D3DRS \_ ADAPTIVETESS \_ W). Este vector 4 podría ser la tercera columna del mundo concatenado y ver matrices. También se puede usar para aplicar una escala a Zieye.
+Las coordenadas z (Zi) de los vértices de control (Vi), que se transforman en espacio de los ojos (Zieye) mediante la realización de un producto de puntos con un vector 4, se usan como valores de profundidad. La aplicación especifica el vector 4D (Mdm) mediante cuatro estados de representación \_ (D3DRS ADAPTIVETESS \_ X, D3DRS \_ ADAPTIVETESS \_ Y, D3DRS \_ ADAPTIVETESS \_ Z y D3DRS \_ ADAPTIVETESS \_ W). Este vector 4 podría ser la tercera columna del mundo concatenado y ver matrices. También se puede usar para aplicar una escala a Zieye.
 
-Se supone que la función para calcular un nivel de teselación Ti de Zieye es (MaxTessellationLevel/Zieye), lo que significa que MaxTessellationLevel es el nivel de teselación en Z = 1 en el espacio de los ojos. MaxTessellationLevel es igual a un valor establecido por [**IDirect3DDevice9::SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode) para N revisiones y, en el caso de las revisiones RT, es igual a pNumSegs. A continuación, el nivel de teselación se fija en valores, definidos por los dos estados de representación adicionales D3DRS \_ MINTESSELLATIONLEVEL y D3DRS MAXTESSELLATIONLEVEL, que definen los niveles de teselación mínimo y máximo a los que se va a \_ fijar. Las ti de cada vértice a lo largo de un borde de una revisión se promedian para obtener un nivel de teselación para ese borde. El algoritmo para calcular ti para revisiones de rectángulos, revisiones de triángulo y N revisiones difiere en qué vértices de control se usan para calcular el nivel de teselación.
+Se supone que la función para calcular un nivel de teselación Ti de Zieye es (MaxTessellationLevel/Zieye), lo que significa que MaxTessellationLevel es el nivel de teselación en Z = 1 en el espacio de los ojos. MaxTessellationLevel es igual a un valor establecido por [**IDirect3DDevice9::SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode) para N revisiones y, en el caso de las revisiones RT, es igual a pNumSegs. A continuación, el nivel de teselación se fija en valores, definidos por los dos estados de representación adicionales D3DRS \_ MINTESSELLATIONLEVEL y D3DRS MAXTESSELLATIONLEVEL, que definen los niveles de teselación mínimo y máximo a los que se va a \_ fijar. Las ti de cada vértice a lo largo de un borde de una revisión se promedian para obtener un nivel de teselación para ese borde. El algoritmo para calcular Ti para revisiones de rectángulos, revisiones de triángulos y N revisiones difiere en qué vértices de control se usan para calcular el nivel de teselación.
 
-Para las revisiones de rectángulo con una base B-spline, se usan los cuatro vértices de control más externos. Por ejemplo, con orden CUBIC de D3DORDER: los vértices \_ (1,1) y (1,width-2) se usan con pNumSegs 0, los vértices \[ \] (1,width-2) y (height-2,height-2) se usan con pNumSeg 1 , los \[ \] vértices (alto-2, ancho-2) y (1,width-2) se usan con pNumSegs 2 y los \[ \] vértices (2,1) y (1,1) se usan con pNumSegs \[ \] 3.
+Para las revisiones de rectángulo con una base B-spline, se usan los cuatro vértices de control más externos. Por ejemplo, con orden CUBIC de D3DORDER: los \_ vértices (1,1) y (1,width-2) se usan con pNumSegs 0, los vértices \[ \] (1,width-2) y (height-2,height-2) se usan con pNumSeg 1 , los \[ \] vértices (height-2, width-2) y (1,width-2) se usan con pNumSegs 2 y los \[ \] vértices (2,1) y (1,1) se usan con pNumSegs \[ \] 3.
 
-Para las revisiones de triángulo, se usan los vértices de revisión de esquina. Con el orden CUBIC de D3DORDER: los vértices (0) y (9) se usan con \_ pNumSegs \[ 0, los vértices (9) y (6) se usan con \] pNumSegs 1 y los vértices (6) y (0) se usan con \[ \] pNumSegs \[ \] 3.
+Para las revisiones de triángulo, se usan los vértices de revisión de esquina. Con el orden CUBIC de D3DORDER: los vértices (0) y (9) se usan con \_ pNumSegs 0, los vértices (9) y (6) se usan con \[ \] pNumSegs 1 y los vértices \[ \] (6) y (0) se usan con pNumSegs \[ \] 3.
 
 En el caso de las N revisiones, se usan los vértices del triángulo.
 
 Para las revisiones de rectángulo y triángulo con una base Bézier, se usan los vértices de control de esquina.
 
-Control de velocidad de teselación por vértice. Opcionalmente, una aplicación puede proporcionar un único valor de punto flotante positivo por vértice, que se puede usar para controlar la velocidad de teselación. Esto se proporciona mediante D3DDECLUSAGE TESSFACTOR, para el que el índice de uso debe ser 0 y el tipo de entrada debe ser \_ D3DDECLTYPE \_ FLOAT1. Esto se multiplica por el nivel de teselación por vértice.
+Control de velocidad de teselación por vértice. Opcionalmente, una aplicación puede proporcionar un único valor de punto flotante positivo por vértice, que se puede usar para controlar la velocidad de teselación. Esto se proporciona mediante D3DDECLUSAGE TESSFACTOR, para el que el índice de uso debe ser 0 y el tipo de entrada debe ser \_ D3DDECLTYPE \_ FLOAT1. Esto se multiplica al nivel de teselación por vértice.
 
 ### <a name="math"></a>Matemáticas
 
@@ -107,7 +107,7 @@ if Te < D3DRS_MINTESSELLATIONLEVEL, then Te = D3DRS_MINTESSELLATIONLEVEL
 
 
 
-Cuando D3DRS \_ ENABLEADAPTIVETESSELLATION es **TRUE,** las primitivas de triángulo (listas de triángulos, ventiladores, franjas) se dibujan como N revisiones, [**IDirect3DDevice9::SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode) tiene un valor establecido inferior a 1,0.
+Cuando D3DRS \_ ENABLEADAPTIVETESSELLATION es **TRUE,** las primitivas de triángulo (listas de triángulos, ventiladores, franjas) se dibujan como N revisiones, [**IDirect3DDevice9::SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode) tiene un valor establecido menor que 1,0.
 
 ### <a name="api-changes"></a>Cambios de API
 

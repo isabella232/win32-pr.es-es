@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f186f71d0382d75d2360d0742806421de5e50b8dd4a768bd27306bf338e7fbce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d18924a31e116f6b2dafa6ab6683f67911876b91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358822"
 ---
 # <a name="jet_rstmapdeepclone-method"></a>JET_RSTMAP. Método DeepClone
 
@@ -63,7 +63,7 @@ Copia en profundidad del objeto.
 
 [IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

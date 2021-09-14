@@ -24,12 +24,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23820190cf476cdc0d27f0e4641752dc135cab0f808d37f60adc95b919429671
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a5f748ab45b51ce69393c0719fac9a712201f19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161240"
 ---
 # <a name="nap-vendor-constants"></a>Constantes de proveedor nap
 
@@ -167,7 +167,7 @@ Los siguientes id. de componente interno de Nap de Microsoft se definen en NapMi
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
-| Header<br/>                   | <dl> <dt>NapMicrosoftVendorIds.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapMicrosoftVendorIds.h</dt> </dl> |
 
 
 

@@ -3,8 +3,8 @@ title: MPSCAN_RESULT estructura (MpClient.h)
 description: Resultados de un examen.
 ms.assetid: 9031A371-092A-4175-BE1D-90442A5BED2D
 keywords:
-- MPSCAN_RESULT estructura heredada de Windows entorno
-- PMPSCAN_RESULT puntero de estructura Legacy Windows Environment Features
+- MPSCAN_RESULT estructura heredada de Windows environment
+- PMPSCAN_RESULT puntero de estructura heredado Windows características del entorno
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a41efd40529976d4b7fe639c4907729ed39ae261f5ac644faf1a36e1a213a97e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7be60df7993732bafcd7c44ac2fb581c111aed6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118747156"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358970"
 ---
-# <a name="mpscan_result-structure"></a>Estructura DE RESULTADOS de MPSCAN \_
+# <a name="mpscan_result-structure"></a>Estructura DE RESULTADOS DE MPSCAN \_
 
 Resultados de un examen.
 
@@ -44,7 +44,7 @@ typedef struct tagMPSCAN_RESULT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -110,7 +110,7 @@ Tipo: **[ **MPTHREAT \_ STATS**](mpthreat-stats.md)**
 
 </dd> <dd>
 
-Estadísticas relacionadas con amenazas. Consulte [**MPTHREAT \_ STATS**](mpthreat-stats.md).
+Estadísticas relacionadas con amenazas. Vea [**MPTHREAT \_ STATS**](mpthreat-stats.md).
 
 </dd> <dt>
 
@@ -140,19 +140,19 @@ Versión de la firma usada para el examen.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**MPRESOURCE \_ STATS**](mpresource-stats.md)
+[**ESTADÍSTICAS DE MPRESOURCE \_**](mpresource-stats.md)
 </dt> <dt>
 
 [**TIPO \_ MPSCAN**](mpscan-type.md)

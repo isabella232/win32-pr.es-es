@@ -1,36 +1,36 @@
 ---
-description: Windows Installer realiza las siguientes acciones durante la eliminación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, \_ el componente compartido es un archivo dll compartido por la \_ aplicación de componentes y otros ejecutables de cliente.
+description: Windows El instalador realiza las siguientes acciones durante la eliminación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, El componente \_ compartido es un archivo DLL compartido por la aplicación de componentes y otros \_ ejecutables de cliente.
 ms.assetid: 26343a01-9a06-43d5-bbe3-959faf51739d
 title: Eliminación de componentes aislados
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: adf19769067230b82f68a35f7b9fbedcd1c56440
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069655"
 ---
 # <a name="removal-of-isolated-components"></a>Eliminación de componentes aislados
 
-Windows Installer realiza las siguientes acciones durante la eliminación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, \_ el componente compartido es un archivo dll compartido por la \_ aplicación de componentes y otros ejecutables de cliente.
+Windows El instalador realiza las siguientes acciones durante la eliminación de una aplicación cuando el paquete contiene componentes aislados. Normalmente, El componente \_ compartido es un archivo DLL compartido por la aplicación de componentes y otros \_ ejecutables de cliente.
 
 ## <a name="uninstall"></a>Desinstalación
 
--   Quite los archivos de componentes \_ compartidos de la carpeta que contiene la aplicación de componentes \_ solo si \_ también se está quitando la aplicación de componentes.
--   Si el bit msidbComponentAttributesSharedDllRefCount se establece en la [tabla de componentes](component-table.md) , se reduce el recuento de SharedDLL.
--   Quite el. Archivo de cero bytes LOCAL de la carpeta que contiene la aplicación de componentes \_ .
--   Quite \_ la aplicación de componentes de la lista de clientes de componentes \_ compartidos.
--   Quite todos los recursos de la aplicación de componentes de la \_ forma habitual.
+-   Quite los archivos de Componente compartido de la carpeta que contiene Aplicación de componente solo si también \_ \_ se está \_ quitando la aplicación de componentes.
+-   Si el bit msidbComponentAttributesSharedDllRefCount se establece en la tabla [Component,](component-table.md) disminuye el recuento de referencias de SharedDLL.
+-   Quite el . Archivo local de cero bytes de la carpeta que contiene aplicación de \_ componentes.
+-   Quite Aplicación \_ de componente de la lista de cliente de Componente \_ compartido.
+-   Quite todos los recursos de aplicación de \_ componentes como de costumbre.
 
-Si quedan otros productos en la lista de clientes del componente \_ compartido:
+Si quedan otros productos en la lista de clientes de Componente \_ compartido:
 
--   No se quita ningún archivo de la ubicación compartida del componente \_ compartido.
+-   Quite ningún archivo de la ubicación compartida de Component \_ Shared.
 
-Si el recuento de SharedDLL del componente \_ compartido es 0 después de haber disminuido, o si no hay otros clientes restantes del componente \_ compartido:
+Si el recuento de referencias de SharedDLL para Component Shared es 0 después de disminuir, o si no hay ningún otro cliente restante de \_ Component \_ Shared:
 
--   Quite los archivos del componente \_ compartido de la ubicación compartida.
--   Procesa todas las acciones de desinstalación con respecto a este componente.
+-   Quite los archivos de Component \_ Shared de la ubicación compartida.
+-   Procese todas las acciones de desinstalación con respecto a este componente.
 
  
 

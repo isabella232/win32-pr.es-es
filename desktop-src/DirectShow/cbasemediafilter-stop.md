@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: effe2df53508cd9c1f6523356eb7296458208c3ee0e61c1dd12c94bd87b6ad31
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22bb45234c8be832f8ea30ed70b50c8f4919b7e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273228"
 ---
 # <a name="cbasemediafilterstop-method"></a>Método CBaseMediaFilter.Stop
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la clase base, este método establece la variable miembro [**CBaseMediaFilter::m \_ State**](cbasemediafilter-m-state.md) en State Stopped, pero \_ no hace nada más.
 
@@ -59,7 +59,7 @@ En la clase base, este método establece la variable miembro [**CBaseMediaFilter
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

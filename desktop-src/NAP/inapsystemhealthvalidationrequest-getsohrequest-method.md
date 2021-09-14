@@ -17,11 +17,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e9c140af202de263e99f0fa8ec72186da6e995ec
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161290"
 ---
 # <a name="inapsystemhealthvalidationrequestgetsohrequest-method"></a>INapSystemHealthValidationRequest::GetSoHRequest (método)
 
@@ -58,7 +58,7 @@ Puntero a un puntero a una [**estructura SoHRequest.**](/windows/win32/api/napty
 *napSystemGenerated* \[ out\]
 </dt> <dd>
 
-Valor **BOOL que** es **TRUE si** NapAgent creó el SoH en nombre de SHA y **FALSE** en caso contrario. Se usa principalmente para indicar un error sha en la SHV.
+Un **VALOR BOOL** que es **TRUE** si NapAgent creó el SoH en nombre de SHA y **FALSE** en caso contrario. Se usa principalmente para indicar un error sha en la SHV.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *parámetro sohRequest* puede devolver **NULL** si el cliente no envió [**un SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) a shv. En ese escenario, shv puede rellenar un **SoHResponse** con el código de error [**de NAP E MISSING \_ \_ \_ SOH**](nap-error-constants.md).
 
@@ -92,7 +92,7 @@ Si el *parámetro napSystemGenerated* es **TRUE,** el formato *de SoHRequest* es
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
@@ -102,7 +102,7 @@ Si el *parámetro napSystemGenerated* es **TRUE,** el formato *de SoHRequest* es
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

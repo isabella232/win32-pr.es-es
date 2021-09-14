@@ -4,12 +4,12 @@ ms.assetid: 243438fd-5bb2-4b2a-8b33-803029085adb
 title: Estructuras de unidirección
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c2a144cde1c324afd31469ada75388779dd9ec8998dd897fcc2a817aa6550b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b142c78f3e3b5e326f28dee7c566a77ebf56bbc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118389952"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254936"
 ---
 # <a name="uniscribe-structures"></a>Estructuras de unidirección
 

@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a1ec5bdbe5ab91b14c294f715aa4fc4fe26ad2a42cd63892f60288456af10505
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e4b015891a37c5cc92bbf102482f48306d537bb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273447"
 ---
 # <a name="win32_logicaldiskrootdirectory-class"></a>Clase LogicalDiskRootDirectory de Win32 \_
 
 La clase WMI **de asociación \_ LogicalDiskRootDirectory** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona un disco lógico y su estructura de directorios.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ class Win32_LogicalDiskRootDirectory : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LogicalDiskRootDirectory de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa las propiedades de la estructura de 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ LogicalDiskRootDirectory de Win32** se deriva del [**componente CIM \_**](cim-component.md).
 
@@ -102,7 +102,7 @@ La **clase \_ LogicalDiskRootDirectory de Win32** se deriva del [**componente CI
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

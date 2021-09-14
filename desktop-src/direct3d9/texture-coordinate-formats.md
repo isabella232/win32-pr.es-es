@@ -4,18 +4,18 @@ ms.assetid: d841af62-41b0-4b80-960b-4630b9a7210c
 title: Formatos de coordenadas de textura (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c48ec28b9c99357fe8825f5ff79da3c8869719389c4a4bc4874c5740fc71f42
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c95eada1cf21f0a4db38589794b08b88023e72d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118519888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358873"
 ---
 # <a name="texture-coordinate-formats-direct3d-9"></a>Formatos de coordenadas de textura (Direct3D 9)
 
-Las coordenadas de textura en Direct3D pueden incluir uno, dos, tres o cuatro elementos de punto flotante para direccionar texturas con distintos niveles de dimensión. Una textura 1D, una superficie de textura con dimensiones de 1 por n elementos de textura, se dirige mediante una coordenada de textura. El caso más común, las texturas 2D, se abordan con dos coordenadas de textura que normalmente se denominan you y v. Direct3D admite dos tipos de texturas 3D, mapas de entorno cúbica y texturas de volumen. Los mapas de entornos cúbicas no son realmente 3D, pero se abordan con un vector de tres elementos. Para más información, consulte [Asignación de entorno cúbica (Direct3D 9).](cubic-environment-mapping.md)
+Las coordenadas de textura en Direct3D pueden incluir uno, dos, tres o cuatro elementos de punto flotante para direccionar texturas con distintos niveles de dimensión. Una textura 1D , una superficie de textura con dimensiones de 1 por n elementos de textura, se dirige mediante una coordenada de textura. El caso más común, las texturas 2D, se abordan con dos coordenadas de textura que normalmente se denominan usted y v. Direct3D admite dos tipos de texturas 3D, mapas de entorno cúbica y texturas de volumen. Los mapas de entornos cúbicas no son realmente 3D, pero se abordan con un vector de 3 elementos. Para obtener más información, [vea Asignación de entorno cúbica (Direct3D 9).](cubic-environment-mapping.md)
 
-Como se describe en Códigos FVF de función fija [(Direct3D 9),](fixed-function-fvf-codes.md)las aplicaciones codifican coordenadas de textura en formato de vértice. El formato de vértice puede incluir varios conjuntos de coordenadas de textura. Use D3DFVF \_ TEX0 a D3DFVF \_ TEX8 [D3DFVF](d3dfvf.md) para describir un formato de vértice que no incluye coordenadas de textura o hasta ocho conjuntos.
+Como se describe en Códigos FVF de función fija [(Direct3D 9),](fixed-function-fvf-codes.md)las aplicaciones codifican las coordenadas de textura en formato de vértice. El formato de vértice puede incluir varios conjuntos de coordenadas de textura. Use D3DFVF \_ TEXAS0 a D3DFVF \_ TEX8 [D3DFVF](d3dfvf.md) para describir un formato de vértice que no incluya coordenadas de textura o hasta ocho conjuntos.
 
 Cada conjunto de coordenadas de textura puede tener entre uno y cuatro elementos. Las marcas \_ TEXTUREFORMAT1 a D3DFVF TEXTUREFORMAT4 de D3DFVF describen el número de elementos de una coordenada de textura en un conjunto, pero estas marcas no las usan \_ ellos mismos. En su lugar, el conjunto de macros [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) usa estas marcas para crear patrones de bits que describen el número de elementos usados por un conjunto determinado de coordenadas de textura en el formato de vértice. Estas macros aceptan un único parámetro que identifica el índice del conjunto de coordenadas cuyo número de elementos se está definindo. En el ejemplo siguiente se muestra cómo se usan estas macros.
 
@@ -40,7 +40,7 @@ typedef struct CVF
 
 
 > [!Note]  
-> A excepción de los mapas de entorno cúbica y las texturas de volumen, los rasterizadores no pueden dirigir las texturas utilizando más de dos elementos. Las aplicaciones pueden proporcionar hasta tres elementos para una coordenada de textura, pero solo si la textura es un mapa de cubo, una textura de volumen o se usa la marca de transformación de textura PROJECTED de D3DTTFF. \_ La marca D3DTTFF PROJECTED hace que el rasterizador divida los dos primeros elementos por el \_ tercer elemento (o n). Para obtener más información, vea [Transformaciones de coordenadas de textura (Direct3D 9).](texture-coordinate-transformations.md)
+> A excepción de los mapas de entorno cúbica y las texturas de volumen, los rasterizadores no pueden abordar las texturas utilizando más de dos elementos. Las aplicaciones pueden proporcionar hasta tres elementos para una coordenada de textura, pero solo si la textura es un mapa de cubo, una textura de volumen o se usa la marca de transformación de textura D3DTTFF \_ PROJECTED. La marca D3DTTFF PROJECTED hace que el rasterizador divida los dos primeros elementos por \_ el tercer elemento (o n). Para obtener más información, vea [Transformaciones de coordenadas de textura (Direct3D 9).](texture-coordinate-transformations.md)
 
  
 
