@@ -1,12 +1,12 @@
 ---
-title: Método IsTSinTSCGroup de la clase Win32_TSLicenseServer
-description: Recupera si un servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto) es miembro del grupo local Terminal Server equipos en el servidor de licencias de Escritorio remoto.
+title: Método IsTSinTSCGroup de la Win32_TSLicenseServer clase
+description: Recupera si un servidor Escritorio remoto host de sesión (host de sesión de Escritorio remoto) es miembro del grupo local Equipos de Terminal Server en el Escritorio remoto de licencias.
 ms.assetid: 61c39928-3a2b-4a36-ae4e-b9597a12d5e7
 ms.tgt_platform: multiple
 keywords:
 - Método IsTSinTSCGroup Servicios de Escritorio remoto
-- Método IsTSinTSCGroup Servicios de Escritorio remoto, clase Win32_TSLicenseServer
-- Win32_TSLicenseServer de clase Servicios de Escritorio remoto, método IsTSinTSCGroup
+- Método IsTSinTSCGroup Servicios de Escritorio remoto , Win32_TSLicenseServer clase
+- Win32_TSLicenseServer clase Servicios de Escritorio remoto , método IsTSinTSCGroup
 topic_type:
 - apiref
 api_name:
@@ -18,15 +18,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d666457f053c8fd48abd904d099bfbfa93a0de6d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968188"
 ---
-# <a name="istsintscgroup-method-of-the-win32_tslicenseserver-class"></a>Método IsTSinTSCGroup de la \_ clase TSLicenseServer de Win32
+# <a name="istsintscgroup-method-of-the-win32_tslicenseserver-class"></a>Método IsTSinTSCGroup de la clase TSLicenseServer de Win32 \_
 
-Recupera si un servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto) es miembro del grupo local Terminal Server equipos en el servidor de licencias de Escritorio remoto.
+Recupera si un servidor Escritorio remoto host de sesión (host de sesión de Escritorio remoto) es miembro del grupo local Equipos de Terminal Server en el Escritorio remoto de licencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,29 +44,29 @@ uint32 IsTSinTSCGroup(
 
 <dl> <dt>
 
-*tsname* \[ de\]
+*tsname* \[ En\]
 </dt> <dd>
 
-Nombre del servidor host de sesión de escritorio remoto.
+Nombre del servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
-*IsMember* \[ enuncia\]
+*IsMember* \[ out\]
 </dt> <dd>
 
-Valor booleano que indica si el servidor host de sesión de escritorio remoto es miembro del grupo local de Terminal Server equipos.
+Valor booleano que indica si el servidor host de sesión de Escritorio remoto es miembro del grupo local Equipos de Terminal Server.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Observaciones
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,12 +77,12 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

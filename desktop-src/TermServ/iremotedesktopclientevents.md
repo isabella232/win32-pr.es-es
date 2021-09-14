@@ -1,5 +1,5 @@
 ---
-title: Interfaz IRemoteDesktopClientEvents
+title: IRemoteDesktopClientEvents (interfaz)
 description: Proporciona métodos que reciben información del servidor relacionada con eventos de control de cliente.
 ms.assetid: CF1DA4C8-94A5-4E6A-AEB7-6F46117E9DF2
 ms.tgt_platform: multiple
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bae11edf7e6c603c534afb75fe5c90bcc868f1e359f1d78748dd94b18b5627e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7533ee7fea7c522b6129bda06891630c3e5ad15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119657075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968207"
 ---
-# <a name="iremotedesktopclientevents-interface"></a>Interfaz IRemoteDesktopClientEvents
+# <a name="iremotedesktopclientevents-interface"></a>IRemoteDesktopClientEvents (interfaz)
 
-Proporciona métodos que reciben información del servidor relacionada con eventos de control de cliente. Entre los eventos se incluyen la conexión y desconexión, las solicitudes de modo de pantalla completa, el inicio de sesión correcto y las condiciones de error.
+Proporciona métodos que reciben información del servidor relacionada con eventos de control de cliente. Los eventos incluyen la conexión y desconexión, las solicitudes de modo de pantalla completa, el inicio de sesión correcto y las condiciones de error.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IRemoteDesktopClientEvents** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRemoteDesktopClientEvents** también tiene estos tipos de miembros:
 
@@ -42,7 +42,7 @@ La **interfaz IRemoteDesktopClientEvents** tiene estos métodos.
 | Método                                                                                      | Descripción                                                                                                                                                         |
 |:--------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**OnAdminMessageReceived**](iremotedesktopclientevents-onadminmessagereceived.md)         | Se llama cuando el control de cliente recibe un mensaje administrativo. <br/>                                                                                      |
-| [**OnAutoReconnected**](iremotedesktopclientevents-onautoreconnected.md)                   | Se llama cuando el control de cliente se ha vuelto a conectar automáticamente a una sesión remota. <br/>                                                                       |
+| [**OnAutoReconnected**](iremotedesktopclientevents-onautoreconnected.md)                   | Se llama cuando el control de cliente se vuelve a conectar automáticamente a una sesión remota. <br/>                                                                       |
 | [**OnAutoReconnecting**](iremotedesktopclientevents-onautoreconnecting.md)                 | Se llama cuando el control de cliente intenta restablecer automáticamente una conexión a una sesión remota. <br/>                                                  |
 | [**OnConnected**](iremotedesktopclientevents-onconnected.md)                               | Se llama cuando el control de cliente se ha conectado a una sesión remota.<br/>                                                                                        |
 | [**OnConnecting**](iremotedesktopclientevents-onconnecting.md)                             | Se llama cuando el control de cliente intenta establecer una conexión a una sesión remota. <br/>                                                                  |
@@ -64,7 +64,7 @@ La **interfaz IRemoteDesktopClientEvents** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                 |
@@ -75,11 +75,11 @@ La **interfaz IRemoteDesktopClientEvents** tiene estos métodos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Escritorio remoto ActiveX referencia de control](remote-desktop-activex-control-reference.md)
+[Escritorio remoto ActiveX de control](remote-desktop-activex-control-reference.md)
 </dt> </dl>
 
  

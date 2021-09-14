@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df2de56a612c748db720e485d9f1e6e5750c9fc3281500dfddd751f41aed1641
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33307adf103536cce5841effe2843a7c48fda357
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118854013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968212"
 ---
-# <a name="imstscaxeventsonauthenticationwarningdisplayed-method"></a>Método IMsTscAxEvents::OnAuthenticationWarningDisplayed
+# <a name="imstscaxeventsonauthenticationwarningdisplayed-method"></a>IMsTscAxEvents::OnAuthenticationWarningDisplayed (método)
 
 Se llama antes de ActiveX control muestra un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo de error de certificado).
 
@@ -45,9 +45,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si es necesario, la propiedad [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md) de la interfaz [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) se puede usar para asegurarse de que el cuadro de diálogo de autenticación modal que se va a mostrar esté primario en una ventana especificada (esto puede ser necesario para impedir que los usuarios usen otros cuadros de diálogo mientras se muestra el cuadro de diálogo de autenticación). De forma predeterminada, el elemento primario es la ActiveX de control.
+Si es necesario, se puede usar la propiedad [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md) de la interfaz [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) para asegurarse de que el cuadro de diálogo de autenticación modal que se va a mostrar esté primario en una ventana especificada (esto puede ser necesario para evitar que los usuarios usen otros cuadros de diálogo mientras se muestra el cuadro de diálogo de autenticación). De forma predeterminada, el elemento primario es ActiveX ventana de control.
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -55,7 +55,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008, Windows Server 2008 con SP1<br/>                           |

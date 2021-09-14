@@ -1,23 +1,23 @@
 ---
-title: Propiedad IMsRdpClientAdvancedSettings2 EnableAutoReconnect
-description: Especifica si se debe permitir que el control de cliente se vuelva a conectar automáticamente a una sesión en caso de desconexión de red.
+title: Propiedad EnableAutoReconnect de IMsRdpClientAdvancedSettings2
+description: Especifica si se va a permitir que el control de cliente se vuelva a conectar automáticamente a una sesión en caso de una desconexión de red.
 ms.assetid: 9d820f78-bf7f-479a-ae6f-be0f0abe549c
 ms.tgt_platform: multiple
 keywords:
 - Propiedad EnableAutoReconnect Servicios de Escritorio remoto
-- Propiedad EnableAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Propiedad EnableAutoReconnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad EnableAutoReconnect
-- Propiedad EnableAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Propiedad EnableAutoReconnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad EnableAutoReconnect
-- Propiedad EnableAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Propiedad EnableAutoReconnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad EnableAutoReconnect
-- Propiedad EnableAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Propiedad EnableAutoReconnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad EnableAutoReconnect
-- Propiedad EnableAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Propiedad EnableAutoReconnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad EnableAutoReconnect
-- Propiedad EnableAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Propiedad EnableAutoReconnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad EnableAutoReconnect
-- Propiedad EnableAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Propiedad EnableAutoReconnect Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad EnableAutoReconnect
 topic_type:
 - apiref
@@ -49,20 +49,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2786146c974860d540db041943791b3fb81c4f3687f40285f0c570eba85bcdf4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f8d4a1345395b5b5843872df256fe7a113094e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118352960"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968304"
 ---
-# <a name="imsrdpclientadvancedsettings2enableautoreconnect-property"></a>Propiedad IMsRdpClientAdvancedSettings2::EnableAutoReconnect
+# <a name="imsrdpclientadvancedsettings2enableautoreconnect-property"></a>IMsRdpClientAdvancedSettings2::EnableAutoReconnect, propiedad
 
-Especifica si se debe permitir que el control de cliente se vuelva a conectar automáticamente a una sesión en caso de desconexión de red.
+Especifica si se va a permitir que el control de cliente se vuelva a conectar automáticamente a una sesión en caso de una desconexión de red.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -85,7 +85,7 @@ Establezca en **VARIANT \_ TRUE para** habilitar la reconexión automática y en
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad no se puede establecer cuando el control está conectado.
 
@@ -95,7 +95,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                   |
@@ -105,7 +105,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

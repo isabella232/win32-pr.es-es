@@ -5,12 +5,12 @@ ms.assetid: D8035924-736D-495D-BF78-950DAEB69774
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85a3c5df2f8a083e8fe41da53035f4de43b58e5ef1e7948dee8e93f617e17bdf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe59ebb3eb2fb077b53074024100c4f0861cf197
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968216"
 ---
 # <a name="iremotedesktopclientevents-methods"></a>Métodos IRemoteDesktopClientEvents
 
@@ -55,7 +55,7 @@ Se llama cuando el control de cliente ha actualizado su estado.
 
 </dd> <dt>
 
-[**Método OnAutoReconnecting**](iremotedesktopclientevents-onautoreconnecting.md)
+[**OnAutoReconnecting (método)**](iremotedesktopclientevents-onautoreconnecting.md)
 </dt> <dd>
 
 Se llama cuando el control de cliente intenta restablecer automáticamente una conexión a una sesión remota.
@@ -65,7 +65,7 @@ Se llama cuando el control de cliente intenta restablecer automáticamente una c
 [**Método OnAutoReconnected**](iremotedesktopclientevents-onautoreconnected.md)
 </dt> <dd>
 
-Se llama cuando el control de cliente se vuelve a conectar automáticamente a una sesión remota.
+Se llama cuando el control de cliente se ha vuelto a conectar automáticamente a una sesión remota.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Se llama antes de que el control muestre un cuadro de diálogo.
 [**Método OnDialogDismissed**](iremotedesktopclientevents-ondialogdismissed.md)
 </dt> <dd>
 
-Se llama después de descartar un cuadro de diálogo mostrado por el control de cliente.
+Se llama después de que se descarte un cuadro de diálogo mostrado por el control de cliente.
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Se llama cuando se presionan combinaciones de teclas especiales en la sesión re
 [**Método OnRemoteDesktopSizeChanged**](iremotedesktopclientevents-onremotedesktopsizechanged.md)
 </dt> <dd>
 
-Se llama cuando cambia el tamaño del escritorio remoto.
+Se llama cuando el tamaño del escritorio remoto ha cambiado.
 
 </dd> <dt>
 

@@ -1,11 +1,11 @@
 ---
 title: Propiedad Clipboard de la interfaz IMsRdpClientNonScriptable7
-description: Obtiene el controlador del Portapapeles que se usa para sincronizar los Portapapeles locales y remotos si está habilitada la sincronización manual del Portapapeles.
+description: Obtiene el controlador del Portapapeles usado para sincronizar los Portapapeles locales y remotos si está habilitada la sincronización manual del Portapapeles.
 ms.tgt_platform: multiple
 keywords:
-- Propiedades del Portapapeles Servicios de Escritorio remoto
-- Propiedad clipboard Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable7
-- Interfaz IMsRdpClientNonScriptable7 Servicios de Escritorio remoto propiedad , Clipboard
+- Propiedad clipboard Servicios de Escritorio remoto
+- Propiedad clipboard Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable7
+- Interfaz IMsRdpClientNonScriptable7 Servicios de Escritorio remoto , propiedad clipboard
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 236666cbef369c4f2353ff524ceb7544e62f50d4a7e4a7ac59f3882057a92f48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 770930eb780b3ce8684608ffcdc0c13c1630cab0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968263"
 ---
-# <a name="imsrdpclientnonscriptable7clipboard-property"></a>IMsRdpClientNonScriptable7::Clipboard, propiedad
+# <a name="imsrdpclientnonscriptable7clipboard-property"></a>Propiedad IMsRdpClientNonScriptable7::Clipboard
 
-Obtiene el controlador del Portapapeles que se usa para sincronizar los Portapapeles locales y remotos si está habilitada la sincronización manual del Portapapeles.
+Obtiene el controlador del Portapapeles usado para sincronizar los Portapapeles locales y remotos si está habilitada la sincronización manual del Portapapeles.
 
 Esta propiedad es de solo lectura.
 
@@ -40,7 +40,7 @@ HRESULT get_Clipboard(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-[IMsRdpClipboard](imsrdpclipboard.md) que representa el controlador del Portapapeles que se usa para sincronizar los Portapapeles locales y remotos si está habilitada la sincronización manual del Portapapeles (es decir, el valor de la propiedad [ManualClipboardSyncEnabled](imsrdpextendedsettings-property.md) se establece en **True).**
+[IMsRdpClipboard](imsrdpclipboard.md) que representa el controlador del Portapapeles usado para sincronizar los Portapapeles locales y remotos si está habilitada la sincronización manual del Portapapeles (es decir, el valor de la propiedad [ManualClipboardSyncEnabled](imsrdpextendedsettings-property.md) se establece en **True).**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ HRESULT get_Clipboard(
 | Archivo DLL                  | MsTscAx.dll     |
 | IID                      | IID \_ IMsRdpClientNonScriptable7 se define como 71B4A60A-FE21-46D8-A39B-8E32BA0C5ECC          |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

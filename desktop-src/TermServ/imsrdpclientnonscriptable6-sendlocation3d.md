@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 33a33be48462f72008b273d2666b535479f7ba38a8a4b51e6405b4eee01d9878
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c63e779b6d6d090544af40a7ee6d9c05f8c49494
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118855239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968268"
 ---
 # <a name="imsrdpclientnonscriptable6sendlocation3d-method"></a>Método IMsRdpClientNonScriptable6::SendLocation3D
 
@@ -64,7 +64,7 @@ Devuelve **S \_ OK si** se realiza correctamente.
 | Archivo DLL                  | MsTscAx.dll     |
 | IID                      | IID \_ IMsRdpClientNonScriptable6 se define como 05293249-B28B-4DB8-BE64-1B2F496B910E            |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

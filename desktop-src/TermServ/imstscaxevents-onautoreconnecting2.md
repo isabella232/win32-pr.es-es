@@ -1,6 +1,6 @@
 ---
 title: Método IMsTscAxEvents OnAutoReconnecting2
-description: Se llama cuando un cliente está en proceso de volver a conectar automáticamente una sesión con un servidor Escritorio remoto host de sesión (host de sesión de Escritorio remoto). | Método IMsTscAxEvents OnAutoReconnecting2
+description: Se llama cuando un cliente está en proceso de volver a conectar automáticamente una sesión con un servidor Escritorio remoto host de sesión de escritorio remoto. | Método IMsTscAxEvents OnAutoReconnecting2
 ms.assetid: 20F69798-5397-440C-9D0D-45AE417623A7
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 194c21fc8ddc6f93ac4816752956f8de5a1d5df71b3af98ddadf8aba48e421a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 901bb196922d1772782ab7f1c911c96573c88b36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119512495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968219"
 ---
 # <a name="imstscaxeventsonautoreconnecting2-method"></a>Método IMsTscAxEvents::OnAutoReconnecting2
 
-Se llama cuando un cliente está en proceso de volver a conectar automáticamente una sesión con un servidor Escritorio remoto host de sesión (host de sesión de Escritorio remoto). Se trata de una versión mejorada del [**método OnAutoReconnecting.**](-imstscaxevents--onautoreconnecting.md)
+Se llama cuando un cliente está en proceso de volver a conectar automáticamente una sesión con un servidor Escritorio remoto host de sesión de escritorio remoto. Se trata de una versión mejorada del [**método OnAutoReconnecting.**](-imstscaxevents--onautoreconnecting.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -91,7 +91,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

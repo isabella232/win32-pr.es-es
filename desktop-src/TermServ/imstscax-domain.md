@@ -12,7 +12,7 @@ keywords:
 - Propiedad de Servicios de Escritorio remoto , interfaz IMsRdpClient2
 - Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad Domain
 - Propiedad de Servicios de Escritorio remoto , interfaz IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad Domain
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad domain
 - Propiedad de Servicios de Escritorio remoto , interfaz IMsRdpClient4
 - Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad Domain
 - Propiedad de Servicios de Escritorio remoto , interfaz IMsRdpClient5
@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 498098b57ef5ecb19958f6ef0e082022a92f15bab7f1fbfc74bef62d928e8726
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: faf95c02de10fe8db38a53b75d4d20cf796020f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968256"
 ---
 # <a name="imstscaxdomain-property"></a>Propiedad IMsTscAx::D omain
 
@@ -77,7 +77,7 @@ Especifica el dominio en el que el usuario actual inicia sesión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -100,9 +100,9 @@ Nuevo nombre de dominio.
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Establecer la **propiedad Domain** es opcional. Si no está establecido, el usuario puede elegir un dominio cuando aparezca Windows cuadro de diálogo Inicio de sesión durante la conexión.
+Establecer la **propiedad Domain** es opcional. Si no se establece, el usuario puede elegir un dominio cuando aparezca el Windows de diálogo Inicio de sesión durante la conexión.
 
 El **método get \_ Domain** asigna la memoria necesaria para el búfer al que apunta el *parámetro pDomain.* La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Esto no es necesario para Visual Basic y clientes de scripting.
 
@@ -124,7 +124,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -5,7 +5,7 @@ ms.assetid: e9c0f5ec-1b2f-4e09-8169-4316fd394443
 ms.tgt_platform: multiple
 keywords:
 - Propiedad GatewaySupportUrl Servicios de Escritorio remoto
-- Propiedad GatewaySupportUrl Servicios de Escritorio remoto interfaz , IMsRdpClientTransportSettings2
+- Propiedad GatewaySupportUrl Servicios de Escritorio remoto , interfaz IMsRdpClientTransportSettings2
 - Interfaz IMsRdpClientTransportSettings2 Servicios de Escritorio remoto , propiedad GatewaySupportUrl
 topic_type:
 - apiref
@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2833962f66fb6fab2597629877c5990c9234eb5b2dfe076073bedc2ceab9fd65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4212dd03d5fb217753e14c2869973bda87476367
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119770695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968227"
 ---
 # <a name="imsrdpclienttransportsettings2gatewaysupporturl-property"></a>Propiedad IMsRdpClientTransportSettings2::GatewaySupportUrl
 
@@ -32,7 +32,7 @@ Especifica o recupera la dirección web del sitio que proporciona soporte técni
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -65,7 +65,7 @@ Especifica o recupera la dirección web del sitio que proporciona soporte técni
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

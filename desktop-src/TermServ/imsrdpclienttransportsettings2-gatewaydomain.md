@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb2eaa76ff0ea1c1184e0718028a80f41852aeaa50fa471adbf0543eef4c574
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5088780fbbaa4ab86fc416a3e9aa353920cc25e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119771425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968252"
 ---
 # <a name="imsrdpclienttransportsettings2gatewaydomain-property"></a>Propiedad IMsRdpClientTransportSettings2::GatewayDomain
 
@@ -32,7 +32,7 @@ Especifica o recupera el nombre de dominio de un usuario que se proporciona al s
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -69,7 +69,7 @@ Devuelve **S \_ OK si** se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

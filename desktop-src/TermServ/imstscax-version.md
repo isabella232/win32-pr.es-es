@@ -1,5 +1,5 @@
 ---
-title: IMsTscAx Version, propiedad
+title: Propiedad IMsTscAx Version
 description: Especifica el número de versión del control actual.
 ms.assetid: 91ddeb4c-9d61-41e7-af96-95b0c4884682
 ms.tgt_platform: multiple
@@ -17,13 +17,13 @@ keywords:
 - Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad Version
 - Propiedad version Servicios de Escritorio remoto , interfaz IMsRdpClient5
 - Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad Version
-- Propiedad version Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Propiedad version Servicios de Escritorio remoto , interfaz IMsRdpClient6
 - Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad Version
-- Propiedad version Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Propiedad version Servicios de Escritorio remoto , interfaz IMsRdpClient7
 - Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad Version
-- Propiedad version Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Propiedad version Servicios de Escritorio remoto , interfaz IMsRdpClient8
 - Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad Version
-- Propiedad version Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Propiedad version Servicios de Escritorio remoto , interfaz IMsRdpClient9
 - Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad Version
 topic_type:
 - apiref
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8911eaaf8af95e0f3ca1fde254250bcc781e71450b7d96ce8dc342b36298d88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff25f274d1f076c9c4119648ccb9cc6d82f43b33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119770855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968247"
 ---
 # <a name="imstscaxversion-property"></a>Propiedad IMsTscAx::Version
 
@@ -86,9 +86,9 @@ El número de versión.
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método asigna la memoria necesaria para el búfer al que apunta el *parámetro pVersion.* La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Esto no es necesario para los clientes Visual Basic y scripting.
+Este método asigna la memoria necesaria para el búfer al que apunta el *parámetro pVersion.* La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Esto no es necesario para Visual Basic y clientes de scripting.
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -96,17 +96,17 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx se define como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx se define como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

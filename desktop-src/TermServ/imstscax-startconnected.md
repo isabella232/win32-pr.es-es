@@ -1,29 +1,29 @@
 ---
 title: Propiedad StartConnected de IMsTscAx
-description: Indica si el control establecerá la conexión de servidor Escritorio remoto host de sesión de Escritorio remoto inmediatamente después del inicio.
+description: Indica si el control establecerá la conexión de servidor Escritorio remoto host de sesión (host de sesión de Escritorio remoto) inmediatamente después del inicio.
 ms.assetid: cf2956c0-be4f-4f80-a14b-253ae8117824
 ms.tgt_platform: multiple
 keywords:
 - Propiedad StartConnected Servicios de Escritorio remoto
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsTscAx
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsTscAx
 - Interfaz IMsTscAx Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient
 - Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient2
 - Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient3
 - Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient4
 - Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient5
 - Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient6
 - Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient7
 - Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient8
 - Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad StartConnected
-- Propiedad StartConnected Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Propiedad StartConnected Servicios de Escritorio remoto , interfaz IMsRdpClient9
 - Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad StartConnected
 topic_type:
 - apiref
@@ -65,19 +65,19 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9bdae5535d079335354306e47ed8378fa09450d9
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968251"
 ---
-# <a name="imstscaxstartconnected-property"></a>IMsTscAx::StartConnected, propiedad
+# <a name="imstscaxstartconnected-property"></a>Propiedad IMsTscAx::StartConnected
 
-Indica si el control establecerá la conexión de servidor Escritorio remoto host de sesión de Escritorio remoto inmediatamente después del inicio.
+Indica si el control establecerá la conexión de servidor Escritorio remoto host de sesión (host de sesión de Escritorio remoto) inmediatamente después del inicio.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -100,11 +100,11 @@ Establezca este parámetro en **TRUE si** el control debe conectarse inmediatame
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta propiedad es más útil cuando las propiedades del control se establecen en la lista de parámetros de una etiqueta OBJECT, en lugar de a través de &lt; &gt; llamadas de script.
+Esta propiedad es más útil cuando las propiedades de control se establecen en la lista de parámetros de una etiqueta OBJECT, en lugar de a través &lt; &gt; de llamadas de script.
 
-Esta propiedad solo se puede usar si el nombre del servidor también se especifica mediante la propiedad de servidor. Este parámetro debe establecerse antes de que se inicie el control, por ejemplo, incluyéndolo en la lista de parámetros de una etiqueta OBJECT cuando se usa el control desde una &lt; &gt; página web.
+Esta propiedad solo se puede usar si el nombre del servidor también se especifica mediante la propiedad de servidor. Este parámetro debe establecerse antes de que se inicie el control, por ejemplo, incluyéndolo en la lista de parámetros de una etiqueta OBJECT cuando se usa el &lt; control desde una página &gt; web.
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -112,13 +112,13 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx se define como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx se define como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 
@@ -153,7 +153,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 [**IMsRdpClient9**](imsrdpclient9.md)
 </dt> <dt>
 
-[Insertar el control Escritorio remoto ActiveX en una página web](embedding-the-remote-desktop-activex-control-in-a-web-page.md)
+[Inserción del control Escritorio remoto ActiveX en una página web](embedding-the-remote-desktop-activex-control-in-a-web-page.md)
 </dt> <dt>
 
 [**IMsTscAx**](imstscax-interface.md)

@@ -5,12 +5,12 @@ ms.assetid: C1C8242F-B628-44A8-8A68-F9F789783A2C
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eea30f4964f5668276521c1f04f44cd08b5cc0f96d04bc0b1cfc4a58eae897b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aea1d9122359e75d6ba417d4a3e5b7d640934602
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968192"
 ---
 # <a name="iremotedesktopclientsettings-methods"></a>Métodos IRemoteDesktopClientSettings
 

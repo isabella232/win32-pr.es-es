@@ -5,26 +5,26 @@ ms.assetid: 0747eab0-9d62-4c10-b02d-fc65ca2f752e
 ms.tgt_platform: multiple
 keywords:
 - Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsTscAx
-- Interfaz IMsTscAx Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient
 - Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient2
 - Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient8
 - Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
 topic_type:
 - apiref
 api_name:
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc03fb9cff3a99d77006989b7adade40a15ad4bb4d63e6f940092b765b1e250f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de0601ac64ab0ca55f3d92ec460861a4347f70b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119771065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968255"
 ---
 # <a name="imstscaxsecuredsettingsenabled-property"></a>Propiedad IMsTscAx::SecuredSettingsEnabled
 
@@ -86,11 +86,11 @@ El valor de este parámetro es **TRUE si** la interfaz está disponible y **FALS
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método para consultar si la [**interfaz IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponible antes de recuperar la [**propiedad SecuredSettings.**](imstscax-securedsettings.md)
 
-Consulte Proporcionar [seguridad de cliente RDP](providing-for-rdp-client-security.md) para obtener una lista de zonas de seguridad de direcciones URL restringidas.
+Consulte Proporcionar [seguridad de cliente RDP](providing-for-rdp-client-security.md) para obtener una lista de las zonas de seguridad de direcciones URL restringidas.
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -98,17 +98,17 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx se define como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx se define como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

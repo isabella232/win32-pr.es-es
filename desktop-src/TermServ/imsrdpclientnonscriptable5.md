@@ -1,5 +1,5 @@
 ---
-title: Interfaz IMsRdpClientNonScriptable5
+title: IMsRdpClientNonScriptable5 (interfaz)
 description: Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la interfaz IMsRdpClientNonScriptable4.
 ms.assetid: 41b8c624-0451-4a7e-bc80-d0bf269e33c6
 ms.tgt_platform: multiple
@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb7f3407f0dc6b1bc8dc04c6c4a72cda95db6b6b1def088a18908a730b96600
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ec338dbe07c4733bf80207298f23f388bf8f77c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968292"
 ---
-# <a name="imsrdpclientnonscriptable5-interface"></a>Interfaz IMsRdpClientNonScriptable5
+# <a name="imsrdpclientnonscriptable5-interface"></a>IMsRdpClientNonScriptable5 (interfaz)
 
-Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la [**interfaz IMsRdpClientNonScriptable4.**](imsrdpclientnonscriptable4.md) Solo se puede acceder a los métodos de esta interfaz a través de vtable; no están disponibles para su uso en clientes que pueden incluir scripts.
+Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la [**interfaz IMsRdpClientNonScriptable4.**](imsrdpclientnonscriptable4.md) Solo se puede acceder a los métodos de esta interfaz a través de la tabla virtual; no están disponibles para su uso en clientes que pueden incluir scripts.
 
 Para obtener una instancia de esta interfaz, llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el objeto [**IMsTscAx**](imstscax-interface.md) y pase **\_ IID IMsRdpClientNonScriptable5**.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClientNonScriptable5** hereda de [**IMsRdpClientNonScriptable4**](imsrdpclientnonscriptable4.md). **IMsRdpClientNonScriptable5** también tiene estos tipos de miembros:
 
@@ -43,14 +43,14 @@ La **interfaz IMsRdpClientNonScriptable5** tiene estas propiedades.
 
 | Propiedad                                                                                                         | Tipo de acceso           | Descripción                                                                                                             |
 |:-----------------------------------------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------------|
-| [**AllowPromptingForCredentials**](imsrdpclientnonscriptable5-allowpromptingforcredentials.md)<br/>       | Lectura/escritura<br/> | Especifica si el control Escritorio remoto ActiveX puede solicitar credenciales al usuario.<br/>                    |
+| [**AllowPromptingForCredentials**](imsrdpclientnonscriptable5-allowpromptingforcredentials.md)<br/>       | Lectura y escritura<br/> | Especifica si el control Escritorio remoto ActiveX puede solicitar credenciales al usuario.<br/>                    |
 | [**DisableConnectionBar**](imsrdpclientnonscriptable5-disableconnectionbar.md)<br/>                       | Solo escritura<br/> | Especifica si el control Escritorio remoto ActiveX debe deshabilitar la barra de conexión.<br/>                      |
-| [**DisableRemoteAppCapsCheck**](imsrdpclientnonscriptable5-disableremoteappcapscheck.md)<br/>             | Lectura/escritura<br/> | Especifica si el control Escritorio remoto ActiveX no debe comprobar las funcionalidades de RemoteApp en el servidor.<br/> |
+| [**DisableRemoteAppCapsCheck**](imsrdpclientnonscriptable5-disableremoteappcapscheck.md)<br/>             | Lectura y escritura<br/> | Especifica si el control Escritorio remoto ActiveX no debe comprobar las funcionalidades de RemoteApp del servidor.<br/> |
 | [**GetRemoteMonitorsBoundingBox**](imsrdpclientnonscriptable5-getremotemonitorsboundingbox.md)<br/>       | Solo lectura<br/>  | Especifica el rectángulo delimitador del monitor remoto.<br/>                                                      |
 | [**RemoteMonitorCount**](imsrdpclientnonscriptable5-remotemonitorcount.md)<br/>                           | Solo lectura<br/>  | Especifica el número de monitores remotos.<br/>                                                                     |
 | [**RemoteMonitorLayoutMatchesLocal**](imsrdpclientnonscriptable5-remotemonitorlayoutmatcheslocal.md)<br/> | Solo lectura<br/>  | Especifica si el diseño del monitor remoto es idéntico al diseño del monitor local.<br/>                             |
-| [**UseMultimon**](imsrdpclientnonscriptable5-usemultimon.md)<br/>                                         | Lectura/escritura<br/> | Especifica si el control Escritorio remoto ActiveX debe usar varios monitores.<br/>                           |
-| [**WarnAboutDirectXRedirection**](imsrdpclientnonscriptable5-warnaboutdirectxredirection.md)<br/>         | Lectura/escritura<br/> | No se usa esta propiedad.<br/>                                                                                   |
+| [**UseMultimon**](imsrdpclientnonscriptable5-usemultimon.md)<br/>                                         | Lectura y escritura<br/> | Especifica si el control Escritorio remoto ActiveX debe usar varios monitores.<br/>                           |
+| [**WarnAboutDirectXRedirection**](imsrdpclientnonscriptable5-warnaboutdirectxredirection.md)<br/>         | Lectura y escritura<br/> | No se usa esta propiedad.<br/>                                                                                   |
 
 
 
@@ -71,7 +71,7 @@ La **interfaz IMsRdpClientNonScriptable5** tiene estas propiedades.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

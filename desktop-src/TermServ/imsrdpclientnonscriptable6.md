@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 6beede518b346ff4934730eb6fa8c3ed9f80dec980be031f9d09e774aeb359a6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0d6793452ebf59f1974831aef0fa10f2469d8e92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968267"
 ---
 # <a name="imsrdpclientnonscriptable6-interface"></a>Interfaz IMsRdpClientNonScriptable6
 
@@ -28,7 +28,7 @@ Proporciona acceso a las propiedades noscriptables de la sesión remota de un cl
 
 Para obtener una instancia de esta interfaz, llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el objeto [**IMsTscAx**](imstscax-interface.md) y pase **\_ IID IMsRdpClientNonScriptable6**.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClientNonScriptable6** hereda de [**IMsRdpClientNonScriptable5.**](imsrdpclientnonscriptable5.md) **IMsRdpClientNonScriptable6** también tiene estos tipos de miembros:
 
@@ -54,7 +54,7 @@ La **interfaz IMsRdpClientNonScriptable6** tiene estos métodos.
 | CLSID                    | CLSID \_ MsRdpClient12 se define como 0BDA33B8-9AF1-4065-989E-5A7F1ACF09D8<br/> CLSID \_ MsRdpClient12NotSafeForScripting se define como 3BB805C2-D9E2-4174-8A1E-C87D69563662<br/> CLSID \_ MsRdpClient11 se define como 22A7E88C-5BF5-4DE6-B687-60F7331DF190<br/> CLSID \_ MsRdpClient11NotSafeForScripting se define como 1DF7C823-B2D4-4B54-975A-F2AC5D7CF8B8<br/>  |
 | IID                      | IID \_ IMsRdpClientNonScriptable6 se define como 05293249-B28B-4DB8-BE64-1B2F496B910E            |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
