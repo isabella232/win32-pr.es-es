@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d26cf0ff32380d6d0fb1daaa7e10e06159664b98778a074327c5a6d8654fd270
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1877d9864a76334c2b2e00fc7822adb09b91028b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119321355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974214"
 ---
 # <a name="cim_directoryspecificationfile-class"></a>Cim \_ DirectorySpecificationFile (clase)
 
 La **\_ asociación Cim DirectorySpecificationFile** representa el directorio que contiene el archivo especificado haciendo referencia a la [**clase \_ DirectorySpecification de CIM.**](cim-directoryspecification.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_DirectorySpecificationFile
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ DirectorySpecificationFile** tiene estos tipos de miembros:
 
@@ -53,7 +53,7 @@ La **clase CIM \_ DirectorySpecificationFile** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase CIM \_ DirectorySpecificationFile** tiene estas propiedades.
+La **clase Cim \_ DirectorySpecificationFile** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -76,24 +76,24 @@ Referencia a la especificación del directorio.
 **FileSpecification**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ FileSpecification**
+Tipo de datos: **Cim \_ FileSpecification**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia a la especificación de archivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
