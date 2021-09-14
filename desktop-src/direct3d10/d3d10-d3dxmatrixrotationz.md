@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ee87285765ccecd6a31e6a5ee8ae68bf59a45cea0ffc4fc52e11351e20b62388
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b952e310dd463d07a35fb294c4a50168361658a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118541266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970075"
 ---
 # <a name="d3dxmatrixrotationz-function-d3dx10mathh"></a>Función D3DXMatrixRotationZ (D3DX10Math.h)
 
@@ -65,7 +65,7 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX girada alrededor del eje Z.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixRotationZ se puede usar como parámetro para otra función.
 

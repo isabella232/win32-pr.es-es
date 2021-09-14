@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 09978c38c3e4be7ad8a86ccfccb43387ed4ac48232e39e1ed19001d806362c88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eee64e51d4717a9fe0983be849c78f99602cac9f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119304805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162986"
 ---
 # <a name="id2d1geometrycomparewithgeometry-methods"></a>Métodos ID2D1Geometry::CompareWithGeometry
 
@@ -37,7 +37,7 @@ Describe la intersección entre esta geometría y la geometría especificada.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al interpretar el  valor de relación devuelto, es importante recordar que el miembro [**D2D1 \_ GEOMETRY RELATION \_ IS \_ \_ CONTAINED**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_geometry_relation) del tipo de enumeración **D2D1 \_ GEOMETRY \_ RELATION** significa que esta geometría se encuentra dentro de *inputGeometry,* no que esta geometría contiene *inputGeometry.*
 

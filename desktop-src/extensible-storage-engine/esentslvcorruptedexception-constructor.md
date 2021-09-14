@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f4809004ba2ab70c71eff9cf0cc34cb75398b7ca40eb0f5ae6ff295a262692dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9803d253e9e43de178aac05a516228d1d4084dda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965907"
 ---
 # <a name="esentslvcorruptedexception-constructor"></a>Constructor EsentSLVCorruptedException
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVCorruptedException()
 public EsentSLVCorruptedException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

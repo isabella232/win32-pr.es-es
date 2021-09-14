@@ -4,45 +4,45 @@ ms.assetid: 59332096-bdfe-4208-b99a-1f434652f287
 title: Filtro de representador de pantalla completa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5013bee81d92c1ade3da4574f576f519b94c025c60c563ab70a35d0956e82865
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3d331ff6f31d1c985c7e255b23381a289931da60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120102785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061165"
 ---
 # <a name="full-screen-renderer-filter"></a>Filtro de representador de pantalla completa
 
 El filtro Representador de pantalla completa proporciona representación de vídeo a pantalla completa en hardware anterior. Las tarjetas de vídeo más recientes pueden ampliar el vídeo de forma lo suficientemente eficaz como para que el representador de pantalla completa no sea necesario. Por lo tanto, el uso de este filtro está ahora en desuso.
 
-No agregue manualmente este filtro al gráfico de filtros. Si una aplicación llama a [**IVideoWindow::p ut \_ FullScreenMode,**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode)el Administrador de filtros Graph selecciona automáticamente el representador de vídeo adecuado para el modo de pantalla completa. La selección es transparente para la aplicación. Con las tarjetas de vídeo actuales, Graph administrador de filtros no es probable que seleccione el representador de pantalla completa.
+No agregue manualmente este filtro al gráfico de filtros. Si una aplicación llama a [**IVideoWindow::p ut \_ FullScreenMode**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode), filter Graph Manager selecciona automáticamente el representador de vídeo adecuado para el modo de pantalla completa. La selección es transparente para la aplicación. Con las tarjetas de vídeo actuales, es poco probable que Graph Administrador de filtros seleccione el representador de pantalla completa.
 
 
 
 | Etiqueta | Value |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) [**IFullScreenVideoEx,**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-ifullscreenvideoex) [**IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IQualityControl,**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) [**IQualProp**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop) |
-| Tipos de medios de pin de entrada                    | MEDIATYPE \_ Video, MEDIASUBTYPE \_ Null                                                                                                                                                                                                               |
+| Tipos de medios de pin de entrada                    | VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ Null                                                                                                                                                                                                               |
 | Interfaces de pin de entrada                     | [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                             |
 | Tipos de medios de pin de salida                   | No aplicable                                                                                                                                                                                                                                     |
 | Interfaces de pin de salida                    | No aplicable                                                                                                                                                                                                                                     |
 | Filtrar CLSID                             | CLSID \_ ModexRenderer                                                                                                                                                                                                                               |
 | CLSID de la página de propiedades                      | CLSID \_ ModexProperties                                                                                                                                                                                                                             |
 | Executable                               | quartz.dll                                                                                                                                                                                                                                         |
-| [Mérito](merit.md)                       | NO ES \_ PROBABLE QUE SE PRODUZCAN                                                                                                                                                                                                                                    |
+| [Mérito](merit.md)                       | NO ES \_ PROBABLE QUE SE PRODUZCA UN GRAN                                                                                                                                                                                                                                    |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                                                                                                                      |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El representador de pantalla completa admite un conjunto estático de modos de presentación. Sin embargo, es posible que la tarjeta de vídeo del sistema del usuario no admita todos los modo. Para determinar si la tarjeta admite un modo determinado, llame al [**método IFullScreenVideoEx::IsModeAvailable.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-ismodeavailable) También puede deshabilitar un modo de presentación determinado mediante programación llamando a [**IFullScreenVideoEx::SetEnabled**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-setenabled). El representador de pantalla completa admite actualmente los modos de presentación que se muestran en la tabla siguiente:
+El representador de pantalla completa admite un conjunto estático de modos de presentación. Sin embargo, es posible que la tarjeta de vídeo del sistema del usuario no admita todos los modos. Para determinar si la tarjeta admite un modo determinado, llame al [**método IFullScreenVideoEx::IsModeAvailable.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-ismodeavailable) También puede deshabilitar un modo de presentación determinado mediante programación, llamando a [**IFullScreenVideoEx::SetEnabled**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-setenabled). El representador de pantalla completa admite actualmente los modos de presentación que se muestran en la tabla siguiente:
 
 
 
-| Modo | Ancho | Alto | Profundidad en bits |
+| Mode | Ancho | Alto | Profundidad en bits |
 |------|-------|--------|-----------|
 | 0    | 320   | 200    | 16        |
 | 1    | 320   | 200    | 8         |
@@ -65,11 +65,11 @@ El representador de pantalla completa admite un conjunto estático de modos de p
 
  
 
-(Todos los modos son RGB). Sin embargo, esta lista está sujeta a cambios. Use el [**método IFullScreenVideoEx::GetModeInfo**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getmodeinfo) para obtener información sobre los modos. El representador de pantalla completa siempre elige el modo de resolución más bajo disponible, limitado por una propiedad denominada factor de *recorte*, que determina la cantidad del vídeo que el representador de pantalla completa puede recortar. Para obtener más información, [**vea IFullScreenVideoEx::GetClipFactor**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getclipfactor).
+(Todos los modos son RGB). Sin embargo, esta lista está sujeta a cambios. Use el [**método IFullScreenVideoEx::GetModeInfo**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getmodeinfo) para obtener información sobre los modos. El representador de pantalla completa siempre elige el modo de resolución más baja disponible, limitado por una propiedad denominada factor de *recorte*, que determina la cantidad del vídeo que el representador de pantalla completa puede recortar. Para obtener más información, [**vea IFullScreenVideoEx::GetClipFactor**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getclipfactor).
 
 Cuando la aplicación ejecuta o pausa el gráfico de filtros, el representador de pantalla completa cambia al modo de presentación elegido. Cuando se detiene el gráfico, el representador de pantalla completa restaura el modo de presentación original.
 
-El representador de pantalla completa solo puede funcionar como la ventana activa en primer plano. Si el usuario cambia a otra aplicación, el representador de pantalla completa oculta el vídeo minimizando u ocultando la ventana de vídeo.
+El representador de pantalla completa solo puede funcionar como la ventana activa de primer plano. Si el usuario cambia a otra aplicación, el representador de pantalla completa oculta el vídeo minimizando u ocultando la ventana de vídeo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

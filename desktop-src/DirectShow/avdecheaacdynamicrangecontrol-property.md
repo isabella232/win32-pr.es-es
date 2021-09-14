@@ -4,12 +4,12 @@ ms.assetid: b7cf092a-6bb8-454c-a78c-fb2334ac4820
 title: Propiedad AVDecHEAACDynamicRangeControl (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea798877999c2c0f60d38bce629aba630f348b9c7ccf7268dcb0a6ba575ee076
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 096284ab12ff29b39aba98e6b3fda4eb8cf13ca2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118664113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162129"
 ---
 # <a name="avdecheaacdynamicrangecontrol-property"></a>Propiedad AVDecHEAACDynamicRangeControl
 
@@ -37,11 +37,11 @@ El valor de esta propiedad es un miembro de la [**enumeración eAVDecHEAACDynami
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

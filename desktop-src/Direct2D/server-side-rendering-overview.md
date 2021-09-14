@@ -6,12 +6,12 @@ keywords:
 - Direct2D, representación del lado servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65991d2437939ce7f1d218022e0c3c57649405a18e2c1b9d073635b5b37d1a2c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9a35c9df619ee43d11c90c171598c87b6e447dd5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162590"
 ---
 # <a name="using-direct2d-for-server-side-rendering"></a>Uso de Direct2D para Server-Side Rendering
 
@@ -19,7 +19,7 @@ Direct2D es adecuado para aplicaciones gráficas que requieren representación d
 
 -   [Requisitos de Server-Side Rendering](#requirements-for-server-side-rendering)
 -   [Opciones para las API disponibles](#options-for-available-apis)
-    -   [Gdi](#gdi)
+    -   [GDI](#gdi)
     -   [GDI+](#gdi)
     -   [Direct2D](#using-direct2d-for-server-side-rendering)
 -   [Uso de Direct2D para Server-Side Rendering](#how-to-use-direct2d-for-server-side-rendering)
@@ -29,57 +29,57 @@ Direct2D es adecuado para aplicaciones gráficas que requieren representación d
 -   [Conclusión](#conclusion)
 -   [Temas relacionados](#related-topics)
 
-## <a name="requirements-for-server-side-rendering"></a>Requisitos para Server-Side Rendering
+## <a name="requirements-for-server-side-rendering"></a>Requisitos de Server-Side Rendering
 
-El siguiente es un escenario típico para un servidor de gráficos: los gráficos y gráficos se representan en un servidor y se entregan como mapas de bits en respuesta a las solicitudes web. El servidor podría estar equipado con una tarjeta gráfica de gama baja o sin tarjeta gráfica.
+El siguiente es un escenario típico para un servidor de gráficos: los gráficos y gráficos se representan en un servidor y se entregan como mapas de bits en respuesta a las solicitudes web. El servidor podría estar equipado con una tarjeta gráfica de gama baja o sin tarjeta gráfica en absoluto.
 
-En este escenario se revelan tres requisitos de aplicación. En primer lugar, la aplicación debe controlar varias solicitudes simultáneas de forma eficaz, especialmente en servidores de varios núcleos. En segundo lugar, la aplicación debe usar la representación de software cuando se ejecuta en servidores con una tarjeta gráfica de gama baja o sin tarjeta gráfica. Por último, la aplicación debe ejecutarse como un servicio en la sesión 0 para que no requiera que un usuario inicie sesión. Para obtener más información sobre la sesión 0, vea Impacto del aislamiento de la sesión [0](https://www.microsoft.com/whdc/system/sysinternals/Session0Changes.mspx)en los servicios y controladores en Windows .
+Este escenario revela tres requisitos de aplicación. En primer lugar, la aplicación debe controlar varias solicitudes simultáneas de forma eficaz, especialmente en servidores de varios núcleos. En segundo lugar, la aplicación debe usar la representación de software cuando se ejecuta en servidores con una tarjeta gráfica de gama baja o sin tarjeta gráfica. Por último, la aplicación debe ejecutarse como un servicio en la sesión 0 para que no sea necesario que un usuario inicie sesión. Para obtener más información sobre la sesión 0, vea Impacto del aislamiento de la [sesión 0](https://www.microsoft.com/whdc/system/sysinternals/Session0Changes.mspx)en los servicios y controladores Windows .
 
 ## <a name="options-for-available-apis"></a>Opciones para las API disponibles
 
-Hay tres opciones para la representación del lado servidor: GDI, GDI+ y Direct2D. Al igual que GDI y GDI+, Direct2D es una API de representación 2D nativa que proporciona a las aplicaciones más control sobre el uso de dispositivos gráficos. Además, Direct2D admite de forma única un generador multiproceso y de un solo subproceso. En las secciones siguientes se compara cada API en términos de calidades de dibujo y representación del lado servidor multiproceso.
+Hay tres opciones para la representación del lado servidor: GDI, GDI+ y Direct2D. Al igual que GDI y GDI+, Direct2D es una API de representación 2D nativa que proporciona a las aplicaciones más control sobre el uso de dispositivos gráficos. Además, Direct2D admite de forma única un generador multiproceso y un único subproceso. En las secciones siguientes se compara cada API en cuanto a calidades de dibujo y representación del lado servidor multiproceso.
 
 ### <a name="gdi"></a>GDI
 
-A diferencia de Direct2D GDI+, GDI no admite características de dibujo de alta calidad. Por ejemplo, GDI no admite suavizado de contorno para crear líneas suavizadas y solo tiene compatibilidad limitada con la transparencia. En función de los resultados de las pruebas de rendimiento de gráficos en Windows 7 y Windows Server 2008 R2, Direct2D escala más eficazmente que GDI, a pesar del rediseño de los bloqueos en GDI. Para obtener más información sobre estos resultados de pruebas, vea [Engineering Windows 7 Graphics Performance](/archive/blogs/e7/engineering-windows-7-graphics-performance).
+A diferencia de Direct2D GDI+, GDI no admite características de dibujo de alta calidad. Por ejemplo, GDI no admite suavizado de contorno para crear líneas suavizadas y solo tiene compatibilidad limitada para la transparencia. En función de los resultados de las pruebas de rendimiento de gráficos en Windows 7 y Windows Server 2008 R2, Direct2D escala más eficazmente que GDI, a pesar del rediseño de los bloqueos en GDI. Para obtener más información sobre estos resultados de pruebas, vea [Engineering Windows 7 Graphics Performance](/archive/blogs/e7/engineering-windows-7-graphics-performance).
 
-Además, las aplicaciones que usan GDI están limitadas a 10240 identificadores GDI por proceso y 65536 identificadores GDI por sesión. El motivo es que internamente Windows una palabra de 16 bits para almacenar el índice de identificadores para cada sesión.
+Además, las aplicaciones que usan GDI se limitan a 10240 identificadores GDI por proceso y 65536 identificadores GDI por sesión. El motivo es que internamente Windows un word de 16 bits para almacenar el índice de identificadores para cada sesión.
 
 ### <a name="gdi"></a>GDI+
 
-Aunque GDI+ admite suavizado de contorno y combinación alfa para el dibujo de alta calidad, el problema principal con GDI+ para escenarios de servidor es que no admite la ejecución en la sesión 0. Puesto que la sesión 0 solo admite funcionalidad no interactiva, las funciones que interactúan directa o indirectamente con los dispositivos de visualización recibirán errores. Entre los ejemplos específicos de funciones se incluyen no solo los que se ocupa de los dispositivos de visualización, sino también los que se ocupa indirectamente de los controladores de dispositivos.
+Aunque GDI+ admite suavizado de contorno y combinación alfa para dibujar de alta calidad, el problema principal con GDI+ para escenarios de servidor es que no admite la ejecución en la sesión 0. Puesto que la sesión 0 solo admite funcionalidad no interactiva, las funciones que interactúan directa o indirectamente con los dispositivos de visualización recibirán errores. Entre los ejemplos específicos de funciones se incluyen no solo los que se ocupa de los dispositivos de visualización, sino también los que se enfrentan indirectamente a los controladores de dispositivos.
 
-De forma similar a GDI, GDI+ está limitado por su mecanismo de bloqueo. Los mecanismos de bloqueo de GDI+ son los mismos en Windows 7 y Windows Server 2008 R2 que en versiones anteriores.
+Al igual que GDI, GDI+ está limitado por su mecanismo de bloqueo. Los mecanismos de bloqueo de GDI+ son los mismos en Windows 7 y Windows Server 2008 R2 que en versiones anteriores.
 
 ### <a name="direct2d"></a>Direct2D
 
-Direct2D es una API de gráficos 2D acelerada por hardware, en modo inmediato que proporciona un alto rendimiento y una representación de alta calidad. Ofrece una fábrica de un solo subproceso y multiproceso y el escalado lineal de la representación de software por curso.
+Direct2D es una API de gráficos 2D acelerada por hardware, en modo inmediato que proporciona un alto rendimiento y una representación de alta calidad. Ofrece una fábrica multiproceso y de un solo subproceso y el escalado lineal de la representación de software por curso.
 
-Para ello, Direct2D define una interfaz de generador raíz. Como regla, un objeto creado en un generador solo se puede usar con otros objetos creados a partir del mismo generador. El autor de la llamada puede solicitar un generador multiproceso o de subproceso único cuando se crea. Si se solicita un generador de un solo subproceso, no se realiza ningún bloqueo de subprocesos. Si el autor de la llamada solicita un generador multiproceso, se adquiere un bloqueo de subproceso en todo el generador cada vez que se realiza una llamada a Direct2D.
+Para ello, Direct2D define una interfaz de generador raíz. Como regla general, un objeto creado en un generador solo se puede usar con otros objetos creados a partir del mismo generador. El autor de la llamada puede solicitar un generador multiproceso o de subproceso único cuando se crea. Si se solicita un generador de un solo subproceso, no se realiza ningún bloqueo de subprocesos. Si el autor de la llamada solicita un generador multiproceso, se adquiere un bloqueo de subproceso en toda la fábrica cada vez que se realiza una llamada a Direct2D.
 
 Además, el bloqueo de subprocesos en Direct2D es más granular que en GDI y GDI+, por lo que el aumento del número de subprocesos tiene un impacto mínimo en el rendimiento.
 
 ## <a name="how-to-use-direct2d-for-server-side-rendering"></a>Uso de Direct2D para Server-Side Rendering
 
-En las secciones siguientes se describe cómo usar la representación de software, cómo usar de forma óptima un generador multiproceso y de subproceso único y cómo dibujar y guardar un dibujo complejo en un archivo.
+En las secciones siguientes se describe cómo usar la representación de software, cómo usar de forma óptima un generador multiproceso y un único subproceso, y cómo dibujar y guardar un dibujo complejo en un archivo.
 
 ### <a name="software-rendering"></a>Representación de software
 
-Las aplicaciones del lado servidor usan la representación de software mediante la creación del destino de representación [IWICBitmap,](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) con el tipo de destino de representación establecido en D2D1 RENDER TARGET TYPE SOFTWARE o \_ \_ \_ \_ D2D1 \_ RENDER TARGET TYPE \_ \_ \_ DEFAULT. Para obtener más información sobre los destinos de representación de [IWICBitmap,](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) vea el [**método ID2D1Factory::CreateWicBitmapRenderTarget;**](id2d1factory-createwicbitmaprendertarget.md) Para obtener más información sobre los tipos de destino de representación, vea [**D2D1 \_ RENDER \_ TARGET \_ TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type).
+Las aplicaciones del lado servidor usan la representación de software mediante la creación del destino de representación [IWICBitmap,](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) con el tipo de destino de representación establecido en D2D1 RENDER TARGET TYPE SOFTWARE o \_ \_ \_ \_ D2D1 \_ RENDER TARGET TYPE \_ \_ \_ DEFAULT. Para obtener más información sobre los destinos de representación de [IWICBitmap,](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) vea el método [**ID2D1Factory::CreateWicBitmapRenderTarget;**](id2d1factory-createwicbitmaprendertarget.md) Para obtener más información sobre los tipos de destino de representación, vea [**D2D1 \_ RENDER \_ TARGET \_ TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type).
 
 ### <a name="multithreading"></a>Subprocesamiento múltiple
 
-Saber cómo crear y compartir factorías y representar destinos entre subprocesos puede afectar significativamente al rendimiento de una aplicación. Las tres cifras siguientes muestran tres enfoques variados. El enfoque óptimo se muestra en la figura 3.
+Saber cómo crear y compartir generadores y representar destinos entre subprocesos puede afectar significativamente al rendimiento de una aplicación. Las tres cifras siguientes muestran tres enfoques variados. El enfoque óptimo se muestra en la figura 3.
 
 ![Diagrama de multithreading de direct2d con un único destino de representación.](images/server-side-rendering-1.png)
 
-En la figura 1, distintos subprocesos comparten el mismo generador y el mismo destino de representación. Este enfoque puede dar lugar a resultados impredecibles en casos en los que varios subprocesos cambian simultáneamente el estado del destino de representación compartido, como establecer simultáneamente la matriz de transformación. Dado que el bloqueo interno en Direct2D no sincroniza un recurso compartido como destinos de representación, este enfoque puede provocar un error en la llamada [**a BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) en el subproceso 1, ya que en el subproceso 2, la llamada **a BeginDraw** ya usa el destino de representación compartido.
+En la figura 1, distintos subprocesos comparten el mismo generador y el mismo destino de representación. Este enfoque puede dar lugar a resultados impredecibles en casos en los que varios subprocesos cambian simultáneamente el estado del destino de representación compartido, como establecer simultáneamente la matriz de transformación. Dado que el bloqueo interno en Direct2D no sincroniza un recurso compartido como destinos de representación, este enfoque puede provocar un error en la llamada a [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) en el subproceso 1, ya que en el subproceso 2, la llamada **a BeginDraw** ya usa el destino de representación compartido.
 
-![Diagrama de multithreading direct2d con varios destinos de representación.](images/server-side-rendering-2.png)
+![Diagrama de multithreading de direct2d con varios destinos de representación.](images/server-side-rendering-2.png)
 
-Para evitar los resultados impredecibles que se encuentran en la figura 1, en la figura 2 se muestra un generador multiproceso con cada subproceso con su propio destino de representación. Este enfoque funciona, pero funciona eficazmente como una aplicación de un solo subproceso. El motivo es que el bloqueo de todo el generador solo se aplica al nivel de operación de dibujo y, por tanto, se serializan todas las llamadas de dibujo en el mismo generador. Como resultado, el subproceso 1 se bloquea al intentar entrar en una llamada de dibujo, mientras que el subproceso 2 está en medio de ejecutar otra llamada de dibujo.
+Para evitar los resultados impredecibles que se encuentran en la figura 1, la figura 2 muestra un generador multiproceso con cada subproceso con su propio destino de representación. Este enfoque funciona, pero funciona de forma eficaz como una aplicación de un solo subproceso. El motivo es que el bloqueo de toda la fábrica solo se aplica al nivel de operación de dibujo y, por tanto, se serializan todas las llamadas de dibujo de la misma fábrica. Como resultado, el subproceso 1 se bloquea al intentar escribir una llamada de dibujo, mientras que el subproceso 2 está en medio de ejecutar otra llamada de dibujo.
 
-![Diagrama de multithreading direct2d con varias fábricas y varios destinos de representación.](images/server-side-rendering-3.png)
+![Diagrama de multithreading direct2d con varias factorías y varios destinos de representación.](images/server-side-rendering-3.png)
 
 En la figura 3 se muestra el enfoque óptimo, donde se usan un generador de un solo subproceso y un destino de representación de un solo subproceso. Puesto que no se realiza ningún bloqueo al usar un generador de un solo subproceso, las operaciones de dibujo de cada subproceso se pueden ejecutar simultáneamente para lograr un rendimiento óptimo.
 
@@ -89,7 +89,7 @@ Para generar un archivo de mapa de bits mediante la representación de software,
 
 ![imagen de salida de ejemplo.](images/saveasimagefile-sample.png)
 
-Este ejemplo de código crea primero un [IWICBitmap y](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) un destino de representación [IWICBitmap.](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) A continuación, representa un dibujo con texto, una geometría de trazado que representa un cristal de hora y un cristal de hora transformado en un mapa de bits de WIC. A continuación, [usa IWICStream::InitializeFromFilename para](/windows/win32/api/wincodec/nf-wincodec-iwicstream-initializefromfilename) guardar el mapa de bits en un archivo. Si la aplicación necesita guardar el mapa de bits en memoria, use [IWICStream::InitializeFromMemory en su](/windows/win32/api/wincodec/nf-wincodec-iwicstream-initializefrommemory) lugar. Por último, usa [IWICBitmapFrameEncode para](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframeencode) codificar el mapa de bits.
+Este ejemplo de código crea primero un [IWICBitmap y](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) un destino de representación [IWICBitmap.](/windows/win32/api/wincodec/nn-wincodec-iwicbitmap) A continuación, representa un dibujo con texto, una geometría de trazado que representa un cristal de hora y un cristal de hora transformado en un mapa de bits de WIC. A continuación, [usa IWICStream::InitializeFromFilename para](/windows/win32/api/wincodec/nf-wincodec-iwicstream-initializefromfilename) guardar el mapa de bits en un archivo. Si la aplicación necesita guardar el mapa de bits en la memoria, use [IWICStream::InitializeFromMemory en su](/windows/win32/api/wincodec/nf-wincodec-iwicstream-initializefrommemory) lugar. Por último, usa [IWICBitmapFrameEncode para](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframeencode) codificar el mapa de bits.
 
 
 ```C++
@@ -298,7 +298,7 @@ if (SUCCEEDED(hr))
 
 ## <a name="conclusion"></a>Conclusión
 
-Como se ha visto anteriormente, el uso de Direct2D para la representación del lado servidor es sencillo y sencillo. Además, proporciona una representación de alta calidad y altamente paralelable que se puede ejecutar en entornos con pocos privilegios del servidor.
+Como se ha visto anteriormente, el uso de Direct2D para la representación del lado servidor es sencillo y sencillo. Además, proporciona una representación de alta calidad y altamente paralelizable que se puede ejecutar en entornos con pocos privilegios del servidor.
 
 ## <a name="related-topics"></a>Temas relacionados
 

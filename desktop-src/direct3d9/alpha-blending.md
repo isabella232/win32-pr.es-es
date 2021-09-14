@@ -4,12 +4,12 @@ ms.assetid: 553b0bc8-1bd8-4282-9260-cdc5f2b8788d
 title: Combinación alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 081c194b9eae85dca5599f2bf9f779d1cd896c8a37641df5105bb049b4a5bc22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd79c622778e17c5acb9b17d52b6d5db278b1508
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060789"
 ---
 # <a name="alpha-blending-direct3d-9"></a>Combinación alfa (Direct3D 9)
 

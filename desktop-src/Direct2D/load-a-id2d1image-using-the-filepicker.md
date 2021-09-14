@@ -1,22 +1,22 @@
 ---
 title: Carga de una imagen en efectos de Direct2D mediante FilePicker
-description: Muestra cómo usar el Windows Storage selectores de archivosOpenPicker para cargar una imagen en efectos de Direct2D.
+description: Muestra cómo usar el selector de Windows Storage AbrirPicker para cargar una imagen en efectos de Direct2D.
 ms.assetid: 42158EF0-2FC8-45F3-8C92-E12318D4724F
 keywords:
 - FileOpenPicker
 - FilePicker
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05bb23faf2b9d50f12219f3b99c07ec835558addc55e67d4843dee049946a60d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4346cc0e337374fa41313cb77debf4faca781669
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160536"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162718"
 ---
 # <a name="how-to-load-an-image-into-direct2d-effects-using-the-filepicker"></a>Carga de una imagen en efectos de Direct2D mediante FilePicker
 
-Muestra cómo usar el [**Windows::Storage::P ickers::FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) para cargar una imagen en efectos [de Direct2D.](effects-overview.md) Si desea permitir que el usuario seleccione un archivo de imagen del almacenamiento en una aplicación de Windows Store, se recomienda usar [**FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker).
+Muestra cómo usar [**el Windows::Storage::P ickers::FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) para cargar una imagen en efectos [de Direct2D.](effects-overview.md) Si desea permitir que el usuario seleccione un archivo de imagen del almacenamiento en una aplicación de Windows Store, se recomienda usar [**FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker).
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -26,7 +26,7 @@ Muestra cómo usar el [**Windows::Storage::P ickers::FileOpenPicker**](/uwp/api/
 -   [Efectos de Direct2D](effects-overview.md)
 -   [**Windows::Storage::P ickers::FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   Necesita un objeto [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) para crear efectos.
 -   Necesita un objeto [**IWICImagingFactory para**](/windows/desktop/api/wincodec/nn-wincodec-iwicimagingfactory) crear objetos WIC.
@@ -35,7 +35,7 @@ Muestra cómo usar el [**Windows::Storage::P ickers::FileOpenPicker**](/uwp/api/
 
 ### <a name="step-1-open-the-file-picker"></a>Paso 1: Abrir el selector de archivos
 
-Cree un [**objeto FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) y establezca *ViewMode*, *SuggestedStartLocation* y *FileTypeFilter* para seleccionar imágenes. Llame al [**método PickSingleFileAsync.**](/uwp/api/windows.storage.pickers.fileopenpicker.picksinglefileasync)
+Cree un [**objeto FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) y establezca *ViewMode,* *SuggestedStartLocation* y *FileTypeFilter* para seleccionar imágenes. Llame al [**método PickSingleFileAsync.**](/uwp/api/windows.storage.pickers.fileopenpicker.picksinglefileasync)
 
 
 ```C++
@@ -98,7 +98,7 @@ Use la [**función CreateStreamOverRandomAccessStream**](/windows/desktop/api/sh
 
 
 > [!Note]  
-> Para usar [**la función CreateStreamOverRandomAccessStream,**](/windows/desktop/api/shcore/nf-shcore-createstreamoverrandomaccessstream) debe incluir *shcore.h* en el proyecto.
+> Para usar la [**función CreateStreamOverRandomAccessStream,**](/windows/desktop/api/shcore/nf-shcore-createstreamoverrandomaccessstream) debe incluir *shcore.h* en el proyecto.
 
  
 
@@ -135,7 +135,7 @@ Obtenga el primer fotograma de la imagen del descodificador mediante el método 
 
 ### <a name="step-5-create-a-wic-converter-and-initialize"></a>Paso 5: Crear un convertidor de WIC e inicializar
 
-Convierta la imagen al formato de color BGRA mediante [WIC](/windows/desktop/wic/-wic-api). [IWICBitmapFrameDecode](/windows/desktop/wic/-wic-imp-iwicbitmapframedecode) devolverá el formato de píxel nativo de la imagen, al igual que los JPEG se almacenan en GUID \_ WICPixelFormat24bppBGR. Sin embargo, como optimización del rendimiento con Direct2D, se recomienda convertir a WICPixelFormat32bppPBGRA.
+Convierta la imagen al formato de color BGRA mediante [WIC](/windows/desktop/wic/-wic-api). [IWICBitmapFrameDecode](/windows/desktop/wic/-wic-imp-iwicbitmapframedecode) devolverá el formato de píxel nativo de la imagen, como los JPEG se almacenan en GUID \_ WICPixelFormat24bppBGR. Sin embargo, como optimización del rendimiento con Direct2D, se recomienda convertir a WICPixelFormat32bppPBGRA.
 
 1.  Cree un [**objeto IWICFormatConverter**](/windows/desktop/api/wincodec/nn-wincodec-iwicformatconverter) mediante el [**método IWICImagingFactory::CreateFormatConverter.**](/windows/desktop/api/wincodec/nf-wincodec-iwicimagingfactory-createformatconverter)
 
@@ -170,9 +170,9 @@ La [**interfaz IWICFormatConverter se**](/windows/desktop/api/wincodec/nn-wincod
 
 ### <a name="step-6-create-effect-and-pass-in-an-iwicbitmapsource"></a>Paso 6: Crear efecto y pasar un IWICBitmapSource
 
-Use el [**método CreateEffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect) para crear un [objeto](bitmap-source.md) [**ID2D1Effect**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1effect) de origen de mapa de bits mediante el [contexto del dispositivo Direct2D](getting-started-with-direct2d.md) [](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext).
+Use el [**método CreateEffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect) para crear un [objeto](bitmap-source.md) [**ID2D1Effect**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1effect) de origen de mapa de bits mediante el [contexto del dispositivo Direct2D](getting-started-with-direct2d.md) [**.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext)
 
-Use el [**método ID2D1Effect::SetValue**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_constbyte_uint32)) para establecer la propiedad *D2D1 \_ BITMAPSOURCE \_ PROP \_ WIC BITMAP \_ \_ SOURCE* en el convertidor [de formato WIC](/windows/desktop/wic/-wic-api) [](/windows/desktop/api/wincodec/nn-wincodec-iwicformatconverter).
+Use el [**método ID2D1Effect::SetValue**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_constbyte_uint32)) para establecer la propiedad *\_ BITMAPSOURCE \_ PROP \_ WIC BITMAP \_ \_ SOURCE de D2D1* en el convertidor [**de formato**](/windows/desktop/api/wincodec/nn-wincodec-iwicformatconverter) [WIC](/windows/desktop/wic/-wic-api) .
 
 > [!Note]  
 > El [efecto de origen del](bitmap-source.md) mapa de bits no toma una entrada del método [**SetInput**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1effect-setinput) como muchos efectos de [Direct2D.](effects-overview.md) En su lugar, [**el objeto IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) se especifica como una propiedad.
@@ -196,7 +196,7 @@ Use el [**método ID2D1Effect::SetValue**](/windows/win32/api/d2d1_1/nf-d2d1_1-i
 
 
 
-Ahora que tiene el efecto [de origen del](bitmap-source.md) mapa de bits, puede usarlo como entrada para cualquier [**ID2D1Effect**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1effect) y crear un gráfico de efectos.
+Ahora que tiene el efecto [de origen de mapa](bitmap-source.md) de bits, puede usarlo como entrada para cualquier [**id2D1Effect**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1effect) y crear un gráfico de efectos.
 
 ## <a name="complete-example"></a>Ejemplo completo
 

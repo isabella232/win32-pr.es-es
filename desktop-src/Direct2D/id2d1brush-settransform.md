@@ -3,7 +3,7 @@ title: Métodos SetTransform de ID2D1Brush (D2d1 \_ 1.h)
 description: Establece la transformación aplicada al pincel.
 ms.assetid: 57afadc1-88c9-4a5b-a83f-63c4c69182a7
 keywords:
-- Métodos SetTransform de Direct2D
+- Métodos SetTransform Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: a5a30d4051303667402fdd1143f5a813d7515223c8093a5913294e6dd1722273
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 89d0da76368fac2d2335cabda1f6d0a6130b499f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163106"
 ---
 # <a name="id2d1brushsettransform-methods"></a>Métodos ID2D1Brush::SetTransform
 
@@ -34,17 +34,17 @@ Establece la transformación aplicada al pincel.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se pinta con un pincel, se pinta en el espacio de coordenadas del destino de representación. Los pinceles no se posicionan automáticamente para alinearse con el objeto que se está pintando. De forma predeterminada, comienzan a pintar en el origen (0, 0) del destino de representación.
+Cuando se pinta con un pincel, se pinta en el espacio de coordenadas del destino de representación. Los pinceles no se posicionan automáticamente para alinearse con el objeto que se está pintando; De forma predeterminada, comienzan a pintar en el origen (0, 0) del destino de representación.
 
-Puede "mover" el degradado definido por [**id2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) a un área de destino estableciendo su punto inicial y punto final. Del mismo modo, puede mover el degradado definido por [**un ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) cambiando su centro y sus radii.
+Puede "mover" el degradado definido por [**id2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) a un área de destino estableciendo su punto inicial y punto final. Del mismo modo, puede mover el degradado definido por [**id2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) cambiando su centro y sus radii.
 
-Para alinear el contenido de [**un objeto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) con el área que se está pintando, puede usar el método **SetTransform** para traducir el mapa de bits a la ubicación deseada. Esta transformación solo afecta al pincel; no afecta a ningún otro contenido dibujado por el destino de representación.
+Para alinear el contenido de [**un objeto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) con el área que se va a pintar, puede usar el método **SetTransform** para traducir el mapa de bits a la ubicación deseada. Esta transformación solo afecta al pincel; no afecta a ningún otro contenido dibujado por el destino de representación.
 
-En las ilustraciones siguientes se muestra el efecto de usar [**id2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) para rellenar un rectángulo ubicado en (100, 100). La ilustración de la izquierda muestra el resultado de rellenar el rectángulo sin transformar el pincel: el mapa de bits se dibuja en el origen del destino de representación. Como resultado, solo aparece una parte del mapa de bits en el rectángulo.
+En las ilustraciones siguientes se muestra el efecto de usar [**id2D1BitmapBrush para**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) rellenar un rectángulo situado en (100, 100). La ilustración de la izquierda muestra el resultado de rellenar el rectángulo sin transformar el pincel: el mapa de bits se dibuja en el origen del destino de representación. Como resultado, solo aparece una parte del mapa de bits en el rectángulo.
 
-En la ilustración de la derecha se muestra el resultado de transformar [**id2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) para que su contenido se desplaza 50 píxeles hacia la derecha y 50 píxeles hacia abajo. El mapa de bits ahora rellena el rectángulo.
+En la ilustración de la derecha se muestra el resultado de transformar [**id2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) para que su contenido se desplaza 50 píxeles a la derecha y 50 píxeles hacia abajo. El mapa de bits ahora rellena el rectángulo.
 
 ![ilustración de dos cuadrados, uno con un mapa de bits sin un pincel transformado y otro con un pincel transformado](images/brushes-ovw-transform.png)
 
@@ -120,7 +120,7 @@ D2D1_RECT_F rcTransformedBrushRect = D2D1::RectF(100, 100, 200, 200);
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

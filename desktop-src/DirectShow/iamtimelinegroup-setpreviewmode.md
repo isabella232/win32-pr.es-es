@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 2f4c53372066ec28f3782fe53148eaba99489187c3be9b9ccf73195a7b1e6da9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe03e6be3572b6cc660e51c27551a316db990d80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119756315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892052"
 ---
 # <a name="iamtimelinegroupsetpreviewmode-method"></a>Método IAMTimelineGroup::SetPreviewMode
 
@@ -56,9 +56,9 @@ Modo de vista previa. Si **es TRUE,** el grupo está en modo de vista previa. Si
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En el modo de vista previa, los fotogramas se descartan durante efectos lentos o transiciones para mantener el vídeo sincronizado con el audio. Como resultado, el vídeo podría parecer descortesado. En el modo de creación, se representa cada fotograma. El modo de creación es adecuado para escribir archivos; Para la versión preliminar en pantalla, es posible que el vídeo no esté sincronizado con el audio.
+En el modo de vista previa, los fotogramas se descartan durante efectos lentos o transiciones para mantener el vídeo sincronizado con el audio. Como resultado, el vídeo podría parecer descortado. En el modo de creación, se representa cada fotograma. El modo de creación es adecuado para escribir archivos; Para la versión preliminar en pantalla, el vídeo podría estar sin sincronizar con el audio.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -81,14 +81,14 @@ En el modo de vista previa, los fotogramas se descartan durante efectos lentos o
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IAMTimelineGroup (interfaz)**](iamtimelinegroup.md)
+[**IamTimelineGroup (interfaz)**](iamtimelinegroup.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

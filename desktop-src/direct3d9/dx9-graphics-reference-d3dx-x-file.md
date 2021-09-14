@@ -4,12 +4,12 @@ ms.assetid: 726dffe9-682f-445b-92a7-2246ad4e3848
 title: Referencia de archivo X
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6c760b402e77d0b521fb22eb845de5fc0650d7325a093b97e8f48b30b2ee6fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a757c8d6a656fb161929983fed18706a7a172c5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060670"
 ---
 # <a name="x-file-reference"></a>Referencia de archivo X
 

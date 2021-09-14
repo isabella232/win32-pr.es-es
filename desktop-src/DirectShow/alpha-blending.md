@@ -1,15 +1,15 @@
 ---
-description: Alpha Blending
+description: Combinación alfa
 ms.assetid: 56618e74-32cc-48f8-83b6-4fc31ab6fc36
 title: Combinación alfa (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ffe2a81affdfb4fec8cd8363330cd0505851eedb96bbf635fe754c50610df82
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4293448849926cfc6723495619137262e004636e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162378"
 ---
 # <a name="alpha-blending-directshow"></a>Combinación alfa (DirectShow)
 
@@ -30,11 +30,11 @@ A continuación, necesita datos de vídeo que contengan un canal alfa. Hay varia
 
 -   Puede usar un archivo AVI que ya tenga vídeo RGB de 32 bits con datos alfa. Actualmente, alpha no se admite para archivos de código fuente MPEG o Microsoft Windows Media Format (WMF).
 -   DES admite archivos de mapa de bits de 32 bits (.bmp) y Targa (.tga) con datos alfa.
--   Puede escribir un filtro de origen personalizado que cree datos RGB de 32 bits con alfa. El tipo de medio de salida debe **ser MEDIASUBTYPE \_ ARGB32.** Use el filtro como subobjeto en un objeto de origen de escala de tiempo.
+-   Puede escribir un filtro de origen personalizado que cree datos RGB de 32 bits con alfa. El tipo de medio de salida debe **ser MEDIASUBTYPE \_ ARGB32**. Use el filtro como subobjeto en un objeto de origen de escala de tiempo.
 
-Si el origen de vídeo no tiene alfa, puede usar un efecto que cree datos alfa. El [efecto de establecedor alfa](alpha-setter-effect.md) establece el canal alfa para toda la imagen en un valor constante. Para variar el alfa a lo largo del tiempo, use la [**interfaz IPropertySetter**](ipropertysetter.md) con el efecto Alfa Setter. El origen original no tiene que ser de 32 bits, siempre y cuando el tipo de medio sin comprimir del grupo sea **MEDIASUBTYPE \_ ARGB32.**
+Si el origen de vídeo no tiene alfa, puede usar un efecto que cree datos alfa. El [efecto de establecedor alfa](alpha-setter-effect.md) establece el canal alfa para toda la imagen en un valor constante. Para variar el alfa a lo largo del tiempo, use la [**interfaz IPropertySetter**](ipropertysetter.md) con el efecto Alfa Setter. El origen original no tiene que ser de 32 bits, siempre y cuando el tipo de medio sin comprimir del grupo **sea MEDIASUBTYPE \_ ARGB32**.
 
-Por último, pase el vídeo a un efecto o transición que realice la combinación alfa. [La transición compositora](compositor-transition.md) realiza la combinación alfa y [la](key-transition.md) transición de clave puede ser clave por valor alfa.
+Por último, pase el vídeo a un efecto o transición que realice la mezcla alfa. La [transición compositor realiza](compositor-transition.md) la combinación alfa y la transición de clave puede claver por valor alfa. [](key-transition.md)
 
 El siguiente proyecto XTL de ejemplo realiza la combinación alfa:
 

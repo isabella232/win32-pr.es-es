@@ -4,12 +4,12 @@ description: En este tema se muestra cómo usar IWICImageEncoder para guardar co
 ms.assetid: F0D8BFC7-723A-4577-B2DF-4D656A18E2FC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6020b29be3771575919ccb0200718e8e608afded584471625cfa922aee8da8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b19146d838474046fd634cb5524ddf2367fd1d6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162598"
 ---
 # <a name="how-to-save-direct2d-content-to-an-image-file"></a>Cómo guardar el contenido de Direct2D en un archivo de imagen
 
@@ -23,7 +23,7 @@ En este tema se muestra cómo usar [**IWICImageEncoder**](/windows/desktop/api/w
 -   [Efectos de Direct2D](effects-overview.md)
 -   [**Windows::Storage::P ickers::FileSavePicker**](/uwp/api/Windows.Storage.Pickers.FileSavePicker)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   Necesita un [**objeto ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) y un objeto que contenga contenido de [Direct2D](./direct2d-portal.md) que implemente [**ID2D1Image,**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) como [**ID2D1Effect**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1effect) o [**ID2D1Bitmap1.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1bitmap1)
 
@@ -157,7 +157,7 @@ DX::ThrowIfFailed(
 
 
 
-Llame [**a IWICImagingFactory2::CreateImageEncoder**](/windows/desktop/api/wincodec/nf-wincodec-iwicimagingfactory2-createimageencoder). El primer parámetro es [**id2D1Device**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device) y debe ser el dispositivo en el que se creó la imagen que desea codificar: no se pueden mezclar imágenes de dominios de recursos diferentes dentro de un único [**IWICImageEncoder.**](/windows/desktop/api/wincodec/nn-wincodec-iwicimageencoder)
+Llame [**a IWICImagingFactory2::CreateImageEncoder**](/windows/desktop/api/wincodec/nf-wincodec-iwicimagingfactory2-createimageencoder). El primer parámetro es [**ID2D1Device**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device) y debe ser el dispositivo en el que se creó la imagen que desea codificar: no se pueden mezclar imágenes de dominios de recursos diferentes dentro de un único [**IWICImageEncoder.**](/windows/desktop/api/wincodec/nn-wincodec-iwicimageencoder)
 
 
 ```C++
@@ -196,7 +196,7 @@ Escriba la [imagen de Direct2D](./direct2d-portal.md) en el marco. En este fragm
 
  
 
-Confirme la WIC y transmita los recursos para finalizar la operación.
+Confirme el WIC y los recursos de transmisión para finalizar la operación.
 
 
 ```C++

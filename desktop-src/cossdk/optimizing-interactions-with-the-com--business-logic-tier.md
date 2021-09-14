@@ -4,12 +4,12 @@ ms.assetid: 71e4bde4-f592-4bc5-9e96-6b3f58915d29
 title: Optimización de interacciones con el nivel de lógica de negocios de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fc8127e41682a5be4e14c6c22a6dff640c25029d04bec426c22ab8c92c53106
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a64243cb8b76a61ddc5386228edb89407c07b3f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117916226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966936"
 ---
 # <a name="optimizing-interactions-with-the-com-business-logic-tier"></a>Optimización de interacciones con el nivel de lógica de negocios de COM+
 

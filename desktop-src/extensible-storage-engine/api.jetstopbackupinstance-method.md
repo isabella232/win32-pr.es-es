@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetStopBackupInstance (método)'
-title: Método API. JetStopBackupInstance
+description: Más información sobre el método Api.JetStopBackupInstance
+title: Método Api.JetStopBackupInstance
 TOCTitle: 'JetStopBackupInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetStopBackupInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetstopbackupinstance(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 69b6b98b21dba4cffb37827b2965b4e62197121f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279272"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969444"
 ---
-# <a name="apijetstopbackupinstance-method"></a>Método API. JetStopBackupInstance
+# <a name="apijetstopbackupinstance-method"></a>Método Api.JetStopBackupInstance
 
-Impide que la actividad relacionada con la copia de seguridad de secuencias continúe en una instancia en ejecución específica, con lo que finaliza la copia de seguridad de streaming de una manera predecible.
+Impide que la actividad relacionada con la copia de seguridad de streaming continúe en una instancia en ejecución específica, finalizando así la copia de seguridad de streaming de una manera predecible.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,16 +58,16 @@ public static void JetStopBackupInstance(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     La instancia de que se utilizará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

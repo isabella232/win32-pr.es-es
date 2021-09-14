@@ -1,19 +1,19 @@
 ---
 title: Información general sobre las realizaciones de geometría
-description: En este tema se describe cómo usar las realizaciones de geometría de Direct2D para mejorar el rendimiento de representación de geometría de la aplicación en determinados escenarios.
+description: En este tema se describe cómo usar las realizaciones de geometría de Direct2D para mejorar el rendimiento de la representación de geometría de la aplicación en determinados escenarios.
 ms.assetid: E8C4C4E5-3102-4F53-847E-A4C2D12A6921
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5108537e9ea9b38bebaab590178d990b44e611e56e82690e9d91ad9b56c19372
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b903e047ee58a803a7584aaca407281fc803e30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119260144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163254"
 ---
 # <a name="geometry-realizations-overview"></a>Información general sobre las realizaciones de geometría
 
-En este tema se describe cómo usar las realizaciones de geometría de [Direct2D](direct2d-portal.md) para mejorar el rendimiento de representación de geometría de la aplicación en determinados escenarios.
+En este tema se describe cómo usar las realizaciones de geometría de [Direct2D](direct2d-portal.md) para mejorar el rendimiento de la representación de geometría de la aplicación en determinados escenarios.
 
 Contiene las secciones siguientes:
 
@@ -36,18 +36,18 @@ Las realizaciones de geometría, introducidas en Windows 8.1, son un nuevo tipo 
 
 Cuando [Direct2D](direct2d-portal.md) representa un objeto [**ID2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) debe convertir esa geometría en una forma que el hardware gráfico entienda a través de un proceso denominado teselación. Normalmente, Direct2D debe cambiar la geometría de cada marco que se dibuja, aunque no cambie. Si la aplicación representa la misma geometría en cada fotograma, la teselación repetida representa el esfuerzo de cálculo desperdiciado. Es más eficaz desde el punto de vista computacional almacenar en caché la teselación, o incluso la rasterización completa, de la geometría, y dibujar esa representación en caché de cada fotograma en lugar de volver a tesonear repetidamente.
 
-Una manera común de que los desarrolladores resuelvan este problema es almacenar en caché la rasterización completa de la geometría. En concreto, es habitual crear un nuevo mapa de bits, rasterizar la geometría a ese mapa de bits y, a continuación, dibujar ese mapa de bits en la escena según sea necesario. (Este enfoque se describe en la sección [Representación de geometría](improving-direct2d-performance.md) de Mejora del rendimiento de las aplicaciones de Direct2D). Aunque este enfoque es muy eficaz a nivel computacional, tiene algunas desventajas:
+Una manera común de que los desarrolladores resuelvan este problema es almacenar en caché la rasterización completa de la geometría. En concreto, es habitual crear un mapa de bits, rasterizar la geometría a ese mapa de bits y, a continuación, dibujar ese mapa de bits en la escena según sea necesario. (Este enfoque se describe en la sección [Representación de geometría](improving-direct2d-performance.md) de Mejora del rendimiento de las aplicaciones de Direct2D). Aunque este enfoque es muy eficaz a nivel computacional, tiene algunas desventajas:
 
 -   El mapa de bits almacenado en caché es sensible a los cambios en la transformación aplicada a la escena. Por ejemplo, el escalado de la rasterización puede dar lugar a artefactos de escalado perceptibles. La mitigación de estos artefactos con algoritmos de escalado de alta calidad puede ser costosa desde el punto de conexión computacional.
 -   El mapa de bits almacenado en caché consume una cantidad significativa de memoria, especialmente si se rasteriza a una alta resolución.
 
-Las realizaciones de geometría proporcionan una manera alternativa de almacenar en caché la geometría que evita los inconvenientes anteriores. Las realizaciones de geometría no se representan mediante píxeles (como es el caso de una rasterización completa), sino por puntos en un plano matemático. Por esta razón, son menos sensibles que las rasterizaciones completa para el escalado y otra manipulación, y consumen significativamente menos memoria.
+Las realizaciones de geometría proporcionan una manera alternativa de almacenar en caché la geometría que evita los inconvenientes anteriores. Las realizaciones de geometría no se representan mediante píxeles (como es el caso con una rasterización completa), sino por puntos en un plano matemático. Por esta razón, son menos sensibles que las rasterizaciones completa para el escalado y otra manipulación, y consumen significativamente menos memoria.
 
 ## <a name="when-to-use-geometry-realizations"></a>Cuándo usar realizaciones de geometría
 
 Considere la posibilidad de usar realizaciones de geometría cuando la aplicación represente geometrías complejas cuyas formas cambian con poca frecuencia, pero que pueden estar sujetas a transformaciones cambiantes.
 
-Por ejemplo, considere una aplicación de asignación que muestra un mapa estático, pero que permite al usuario acercar y alejar. Esta aplicación puede beneficiarse del uso de realizaciones de geometría. Dado que las geometrías que se representan permanecen estáticas, resulta útil almacenarlas en caché para guardar el trabajo de teselación. Sin embargo, dado que los mapas se escalan cuando el usuario se acerca, el almacenamiento en caché de una rasterización completa no es ideal, debido al escalado de artefactos. El almacenamiento en caché de las realizaciones de geometría permitiría a la aplicación evitar el trabajo de teselación al tiempo que se mantiene una alta calidad visual durante el escalado.
+Por ejemplo, considere una aplicación de asignación que muestra un mapa estático, pero que permite al usuario acercar y alejar. Esta aplicación puede beneficiarse del uso de realizaciones de geometría. Puesto que las geometrías que se representan permanecen estáticas, resulta útil almacenarlas en caché para guardar el trabajo de teselación. Pero dado que los mapas se escalan cuando el usuario se acerca, el almacenamiento en caché de una rasterización completa no es ideal, debido al escalado de artefactos. El almacenamiento en caché de las realizaciones de geometría permitiría a la aplicación evitar el trabajo de teselación al tiempo que se mantiene una alta calidad visual durante el escalado.
 
 Por otro lado, considere una aplicación de aidoscope con geometría animada que cambia continuamente. Es probable que esta aplicación no se beneficie del uso de realizaciones de geometría. Dado que las propias formas cambian de marco a marco, no resulta útil almacenar en caché sus teselaciones. El mejor enfoque para esta aplicación es dibujar [**objetos ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) directamente.
 
@@ -99,7 +99,7 @@ Si la aplicación no realiza ningún escalado en las realizaciones de geometría
 
 
 
-### <a name="using-geometry-realizations-in-apps-that-scale-by-a-small-amount"></a>Uso de realizaciones de geometría en aplicaciones que escalan en una pequeña cantidad
+### <a name="using-geometry-realizations-in-apps-that-scale-by-a-small-amount"></a>Uso de realizaciones de geometría en aplicaciones que se escalan en una pequeña cantidad
 
 Si la aplicación puede escalar verticalmente una realización de geometría solo en una pequeña cantidad (por ejemplo, hasta 2 o 3 veces), puede ser adecuado simplemente crear la realización de geometría una vez, con una tolerancia de aplanado proporcionalmente inferior a la predeterminada. Esto crea una realización de mayor fidelidad que se puede escalar verticalmente significativamente antes de incurrir en artefactos de escalado. La conclusión es que dibujar la realización de mayor fidelidad requiere más trabajo.
 
@@ -124,7 +124,7 @@ Por ejemplo, supongamos que sabe que la aplicación nunca escalará una realizac
 
 Si la aplicación puede escalar o reducir verticalmente una realización de geometría en grandes cantidades (por ejemplo, 10 veces o más), es más complicado controlar el escalado adecuadamente.
 
-En la mayoría de estas aplicaciones, el enfoque recomendado es volver a crear la realización de geometría con tolerancias de aplanación progresivamente inferiores a medida que la escena se escala verticalmente, con el fin de mantener la fidelidad visual y evitar el escalado de artefactos. Del mismo modo, a medida que la escena se escala verticalmente, la aplicación debe volver a crear las realizaciones de geometría con tolerancias de aplanación progresivamente superiores, con el fin de evitar la representación desaprobada de detalles que no son visibles. La aplicación no debe volver a crear las realizaciones de geometría cada vez que cambia la escala, ya que al hacerlo se contrae el propósito de almacenar en caché el trabajo de teselación. En su lugar, la aplicación debe volver a crear las realizaciones de geometría con menos frecuencia: por ejemplo, después de cada dos veces mayor o menor escala.
+En la mayoría de estas aplicaciones, el enfoque recomendado es volver a crear la realización de geometría con tolerancias de aplanación progresivamente inferiores a medida que la escena se escala verticalmente, con el fin de mantener la fidelidad visual y evitar el escalado de artefactos. Del mismo modo, a medida que la escena se escala verticalmente, la aplicación debe volver a crear las realizaciones de geometría con tolerancias de aplanación progresivamente mayores, con el fin de evitar la representación desaprobada de detalles que no son visibles. La aplicación no debe volver a crear las realizaciones de geometría cada vez que cambia la escala, ya que al hacerlo se contrae el propósito de almacenar en caché el trabajo de teselación. En su lugar, la aplicación debe volver a crear las realizaciones de geometría con menos frecuencia: por ejemplo, después de cada dos veces mayor o menor escala.
 
 Cada vez que la escala cambia en una aplicación en respuesta a la interacción del usuario, la aplicación podría comparar la nueva escala con la escala en la que se crearon por última vez las realizaciones de geometría (almacenadas, por ejemplo, en un **miembro m \_ lastScale).** Si los dos valores están cerca (en este caso, dentro de un factor de 2), no se toma ninguna otra acción. Pero si los dos valores no están cerca, se vuelve a crear la realización de geometría. La [**función ComputeFlatteningTolerance**](/previous-versions/windows/desktop/legacy/dn280327(v=vs.85)) se usa para calcular una tolerancia de aplanado adecuada para la nueva escala y **m \_ lastScale** se actualiza a la nueva escala.
 

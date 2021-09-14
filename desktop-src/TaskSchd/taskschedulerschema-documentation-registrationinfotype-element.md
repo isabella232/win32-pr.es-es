@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6cb8c2a78450fffa467ea659b55015f064310783ae21b067093de9473612fcc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3407a6611886f867734dc7f32cd867a2930d3d2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118356873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891508"
 ---
 # <a name="documentation-registrationinfotype-element"></a>Elemento Documentation (registrationInfoType)
 
@@ -43,9 +43,9 @@ El **elemento Documentation** se define mediante el tipo complejo [**registratio
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para las aplicaciones de scripting, se especifica documentación de tareas adicional mediante el uso de [**laRegistrationInfo.Docpropiedad umentation.**](registrationinfo-documentation.md)
+Para las aplicaciones de scripting, se especifica documentación de tareas adicional mediante la [**propiedad RegistrationInfo.Documentation.**](registrationinfo-documentation.md)
 
 En el caso de las aplicaciones de C++, se especifica documentación de tareas adicional mediante la [**propiedad IRegistrationInfo::D ocumentation.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_documentation)
 
@@ -53,7 +53,7 @@ En el caso de las aplicaciones de C++, se especifica documentación de tareas ad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 44b3a738de31edf373deb65ea9991e1e1502f47c
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060730"
 ---
 # <a name="d3dxmatrixlookatrh-function-d3dx9mathh"></a>Función D3DXMatrixLookAtRH (D3dx9math.h)
 
@@ -85,11 +85,11 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de mirada derecha.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixLookAtRH** se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```

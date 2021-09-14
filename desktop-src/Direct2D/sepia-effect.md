@@ -1,17 +1,17 @@
 ---
-title: Efecto Sepia
+title: Efecto sepia
 description: Convierte una imagen a tonos sepia.
 ms.assetid: fe321be9-6ade-bd0c-1c66-cc8042e5a5e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c30b2fcd49b30306b055f60bb3e4262a22740d8efa168ade428698c7b23ce10d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf6ead1d439e86cbd35be14d1f0ae32923de408d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118664992"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162593"
 ---
-# <a name="sepia-effect"></a>Efecto Sepia
+# <a name="sepia-effect"></a>Efecto sepia
 
 Convierte una imagen a tonos sepia.
 
@@ -55,11 +55,11 @@ Las propiedades del efecto sepia se definen mediante la [**enumeración \_ SEPIA
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 

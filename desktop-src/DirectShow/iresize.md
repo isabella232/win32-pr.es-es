@@ -1,5 +1,5 @@
 ---
-description: La interfaz IResize debe ser compatible con cualquier filtro personalizado de cambio de tamaño de vídeo DirectShow Editing Services (DES). Para establecer un filtro de cambio de tamaño personalizado, llame al método IRenderEngine2::SetResizerGUID en el motor de representación.
+description: La interfaz IResize debe ser compatible con cualquier filtro de cambio de tamaño de vídeo personalizado DirectShow Editing Services (DES). Para establecer un filtro de cambio de tamaño personalizado, llame al método IRenderEngine2::SetResizerGUID en el motor de representación.
 ms.assetid: 4740dbff-0881-45e8-b382-98ed9d055403
 title: Interfaz IResize (Qedit.h)
 ms.topic: reference
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 19aabd7c04cb5350ef3da87e1a20db6b75f6546f0fbcf5af3422c152bcafcf5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b9684ed6f2d2901159dde5a79bb4563ca0b2bda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061063"
 ---
-# <a name="iresize-interface"></a>Interfaz IResize
+# <a name="iresize-interface"></a>IResize (interfaz)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-La interfaz debe ser compatible con cualquier filtro personalizado de cambio de tamaño de `IResize` vídeo DirectShow Editing Services (DES). Para establecer un filtro de cambio de tamaño personalizado, llame al método [**IRenderEngine2::SetResizerGUID**](irenderengine2-setresizerguid.md) en el motor de representación.
+La interfaz debe ser compatible con cualquier filtro de cambio de tamaño de vídeo personalizado `IResize` para DirectShow Editing Services (DES). Para establecer un filtro de cambio de tamaño personalizado, llame al [**método IRenderEngine2::SetResizerGUID**](irenderengine2-setresizerguid.md) en el motor de representación.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IResize** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IResize** también tiene estos tipos de miembros:
 
@@ -54,7 +54,7 @@ La **interfaz IResize** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -70,10 +70,10 @@ La **interfaz IResize** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Version<br/> | DirectX 9.0 o posterior<br/>                                                         |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 

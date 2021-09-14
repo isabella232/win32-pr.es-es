@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c785b7db7b44177469596450ee75a460e2bc6224b191a2811baf95380bea25a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb30885efe9e018bf8792b38facdc086c5473b3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889540"
 ---
 # <a name="body-element"></a>body (Elemento)
 
@@ -46,9 +46,9 @@ Este elemento no tiene atributos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El contenido de una lista de reproducción se organiza dentro **de un elemento seq** que se encuentra dentro del **elemento body.** Normalmente hay un elemento **seq** que define un conjunto  estático de elementos multimedia y contiene elementos multimedia, o hay uno que define un conjunto dinámico de elementos multimedia y contiene un **elemento smartPlaylist.**
+El contenido de una lista de reproducción se organiza dentro **de un elemento seq** que se encuentra dentro del **elemento body.** Normalmente hay un elemento **seq** que define un conjunto  estático de elementos multimedia y contiene elementos multimedia, o bien hay uno que define un conjunto dinámico de elementos multimedia y contiene un elemento **smartPlaylist.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -81,7 +81,7 @@ El contenido de una lista de reproducción se organiza dentro **de un elemento s
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -91,10 +91,10 @@ El contenido de una lista de reproducción se organiza dentro **de un elemento s
 [**seq (Elemento)**](seq-element.md)
 </dt> <dt>
 
-[**elemento smartPlaylist**](smartplaylist-element.md)
+[**Elemento smartPlaylist**](smartplaylist-element.md)
 </dt> <dt>
 
-[**smil (elemento)**](smil-element.md)
+[**smil (Elemento)**](smil-element.md)
 </dt> <dt>
 
 [**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)

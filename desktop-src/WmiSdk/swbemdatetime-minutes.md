@@ -17,12 +17,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 5a6150dcdee6051fdfb8737618f4735cfe1e568da05ec35a6cd935be197a56ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cce55d731916d0e8180de1bde495566d4ed22c49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965267"
 ---
 # <a name="swbemdatetimeminutes-property"></a>Propiedad SWbemDateTime.Minutes
 
@@ -32,7 +32,7 @@ Para obtener una explicación de esta sintaxis, vea [Document Conventions for th
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -56,23 +56,23 @@ El valor no estaba en el intervalo de 0 a 59.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la propiedad **SWbemDateTime.Minutes** se establece en 1, la propiedad [**SWbemDateTime.Seconds**](swbemdatetime-seconds.md) contiene un valor que se desplaza un segundo por un error de redondeo que se produce cuando un valor **datetime** cim se traduce en un valor **VT \_ DATE.** Si la **propiedad Minutes** se establece en 0 en su lugar, la **propiedad Seconds** devuelve el valor correcto.
+Si la propiedad **SWbemDateTime.Minutes** se establece en 1, la propiedad [**SWbemDateTime.Seconds**](swbemdatetime-seconds.md) contiene un valor que se desplaza por un segundo, un error de redondeo que se produce cuando un valor **datetime** cim se convierte en un valor **VT \_ DATE.** Si la **propiedad Minutes** se establece en 0 en su lugar, la **propiedad Seconds** devuelve el valor correcto.
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Tareas wmi:](wmi-tasks--dates-and-times.md)fechas y horas. Para obtener una descripción del formato **CIM DATETIME,** vea [Formato de fecha y hora](date-and-time-format.md).
+Para obtener ejemplos de cómo usar el objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Wmi Tasks: Dates and Times](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato **DATETIME de** CIM, vea [Formato de fecha y hora](date-and-time-format.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
@@ -90,7 +90,7 @@ Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) p
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[**Datetime**](datetime.md)
+[**DATETIME**](datetime.md)
 </dt> </dl>
 
  

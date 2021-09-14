@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 72b4f16c80ff9c09b6ac47215624b2e2d6c158d7964095c391f3ed3321e067c6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ad08c8b42b4dba99d324c00aff0a062ff0ef66b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163046"
 ---
 # <a name="id2d1devicecontext4drawtext-methods"></a>Métodos ID2D1DeviceContext4::D rawText
 
@@ -34,7 +34,7 @@ Dibuja el texto dentro del rectángulo de diseño especificado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

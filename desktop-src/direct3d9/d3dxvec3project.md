@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3Project (D3dx9math.h): proyecta un vector 3D desde el espacio del objeto en el espacio de pantalla.'
+description: 'Función D3DXVec3Project (D3dx9math.h): proyecta un vector 3D desde el espacio de objetos en el espacio de la pantalla.'
 ms.assetid: b012771d-052f-4bf9-b39c-387d8a63fa59
 title: Función D3DXVec3Project (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1bb0d7b962dd4595ec9246c036d4ff9e459e062f366b6e62f46cce1a5a3ebab9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5a9abcb54c883d74bde831570b9df0b40fedfae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118803817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060681"
 ---
 # <a name="d3dxvec3project-function-d3dx9mathh"></a>Función D3DXVec3Project (D3dx9math.h)
 
@@ -105,7 +105,7 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
 Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el vector proyectado desde el espacio del objeto al espacio de pantalla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3Project** se puede usar como parámetro para otra función.
 

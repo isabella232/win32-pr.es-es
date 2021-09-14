@@ -1,27 +1,27 @@
 ---
 description: 'Más información sobre: Miembros de EsentIndexMustException'
-title: Miembros de EsentIndexMustExceptionException
+title: Miembros de EsentIndexMustException
 TOCTitle: EsentIndexMustStayException members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.EsentIndexMustStayException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentindexmuststayexception_members(v=EXCHG.10)
 ms:contentKeyID: 55101763
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: ca7ff66ec50b197a84f47df0bee259ee94a672d526c4b0f837313ee30066fa7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04e200269e647355d0e8dc98d979bc1792aa9719
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117710268"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964556"
 ---
-# <a name="esentindexmuststayexception-members"></a>Miembros de EsentIndexMustExceptionException
+# <a name="esentindexmuststayexception-members"></a>Miembros de EsentIndexMustException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones indexMustException.
+Clase base para JET_err. Excepciones IndexMustException.
 
-El [tipo EsentIndexMustException expone](./esentindexmuststayexception-class.md) los siguientes miembros.
+El [tipo EsentIndexMustException expone](./esentindexmuststayexception-class.md) los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

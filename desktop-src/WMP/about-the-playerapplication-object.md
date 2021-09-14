@@ -13,12 +13,12 @@ keywords:
 - Objeto PlayerApplication
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d49d4817e9184a9386dac9cf37e944b60104d44d19e068ea5b610795d8e0998
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7d197614ba75a51bdc8ec5398ca757e410f918a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119956756"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890233"
 ---
 # <a name="about-the-playerapplication-object"></a>Acerca del objeto PlayerApplication
 

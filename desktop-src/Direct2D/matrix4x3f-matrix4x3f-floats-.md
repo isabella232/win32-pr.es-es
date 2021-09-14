@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a75cd618595ec6d993daaa0dd25bf50469c1a4c237f54016aa0157b0f5b47df5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7858a0d5a6204e3f966205c7cf6dab6e68180524
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118955584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162694"
 ---
 # <a name="matrix4x3fmatrix4x3ffloat-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Constructor Matrix4x3F::Matrix4x3F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)
 
@@ -167,17 +167,17 @@ Valor de la cuarta fila y tercera columna de la matriz.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma solo para Windows de escritorio de Vista \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y platform update for Windows Vista \[ desktop apps only\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma solo para aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                           |
 | Espacio de nombres<br/>                | D2D1<br/>                                                                                                                   |
-| Header<br/>                   | <dl> <dt>D2d1 \_ helper.h</dt> </dl>                                         |
+| Encabezado<br/>                   | <dl> <dt>D2d1 \_ helper.h</dt> </dl>                                         |
 | Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                               |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

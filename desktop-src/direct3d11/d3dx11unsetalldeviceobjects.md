@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11UnsetAllDeviceObjects (D3DX11core.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar el método ClearState ID3D11DeviceContext.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar el método ID3D11DeviceContext ClearState.
 ms.assetid: 0e52bbca-f171-477f-89b0-ba56a2cfa096
 keywords:
 - Función D3DX11UnsetAllDeviceObjects Direct3D 11
@@ -15,12 +15,12 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e046bbb67cfaf5e13a22e5b704e202c21ebc8fa82dfde3a21fb83f09dfc3a345
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8ac7e33bfef7f8470f616ac07b3aa90463f3f3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118535980"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060845"
 ---
 # <a name="d3dx11unsetalldeviceobjects-function"></a>Función D3DX11UnsetAllDeviceObjects
 
@@ -34,7 +34,7 @@ ms.locfileid: "118535980"
 
  
 
-Quita todos los recursos del dispositivo estableciendo sus punteros en **NULL.** Se debe llamar a este método durante el cierre de la aplicación. Ayuda a garantizar que, cuando se liberan todos sus recursos, ninguno de ellos está enlazado al dispositivo.
+Quita todos los recursos del dispositivo estableciendo sus punteros en **NULL.** Se debe llamar a esto durante el apagado de la aplicación. Ayuda a garantizar que, cuando se liberan todos sus recursos, ninguno de ellos está enlazado al dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 

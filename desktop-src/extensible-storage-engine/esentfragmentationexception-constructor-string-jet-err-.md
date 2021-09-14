@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Constructor EsentFragmentationException (String, JET_err)'
+description: 'Más información sobre: Constructor esentFragmentationException (String, JET_err)'
 title: EsentFragmentationException constructor (String, JET_err)
 TOCTitle: EsentFragmentationException constructor (String, JET_err)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFragmentationException.#ctor(System.String,Microsoft.Isam.Esent.Interop.JET_err)
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d3343957dd19fc67d13fd46d5e64281c7d056993493d002691d08daa0f000664
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3c6492ac4055b985194b3849090672d471390cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120065305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963260"
 ---
 # <a name="esentfragmentationexception-constructor-string-jet_err"></a>EsentFragmentationException constructor (String, JET_err)
 
@@ -71,7 +71,7 @@ protected EsentFragmentationException(
     
     Código de error de la excepción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -4,12 +4,12 @@ ms.assetid: d6283bf0-0460-4519-9a56-fd4c78cfaabc
 title: Acerca de los ejemplos y asignadores de medios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e9390bd99ab019effa40f9edca1f8d9e03ea73c5b0085ed8b1bc13f013cad6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9105228e70f82aaa7c36b7e7d28cf7e748e1e2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119430285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162473"
 ---
 # <a name="about-media-samples-and-allocators"></a>Acerca de los ejemplos y asignadores de medios
 
@@ -33,7 +33,7 @@ Mientras un filtro usa un búfer, contiene el recuento de referencias en el ejem
 Para obtener más información, vea los temas siguientes:
 
 -   En el [tema Ejemplos y asignadores](samples-and-allocators.md) se proporciona una descripción más detallada de cómo funcionan los asignadores.
--   En el [tema Data Flow del filtro Graph](data-flow-in-the-filter-graph.md) proporciona información general sobre el flujo de datos en DirectShow.
+-   El tema [Data Flow en el filtro Graph](data-flow-in-the-filter-graph.md) proporciona información general sobre el flujo de datos en DirectShow.
 
 Los temas siguientes están destinados a desarrolladores que escriben sus propios filtros personalizados:
 
@@ -44,7 +44,7 @@ Los temas siguientes están destinados a desarrolladores que escriben sus propio
 
 <dl> <dt>
 
-[El filtro Graph sus componentes](the-filter-graph-and-its-components.md)
+[El filtro Graph y sus componentes](the-filter-graph-and-its-components.md)
 </dt> </dl>
 
  

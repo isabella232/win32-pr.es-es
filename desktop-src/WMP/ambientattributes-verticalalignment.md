@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a116a8883fe1d591f5c68050e4a5ab738a3cf913322ae7c671c71a507f2c924d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 88de2f5f54b95b14827fabb2bafb89ff6974966b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119956395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889929"
 ---
 # <a name="ambientattributesverticalalignment"></a>AmbientAttributes.verticalAlignment
 
@@ -44,7 +44,7 @@ Este atributo es una cadena de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A menos **que verticalAlignment** se establezca en "center", el control conserva su distancia original desde el borde especificado, o desde ambos bordes si se especifica "stretch" y se puede cambiar el tamaño del control. Si el control no es ajustable y se especifica "stretch", la región en la que se puede hacer clic se extiende en su lugar.
 
@@ -60,7 +60,7 @@ Puede establecer cualquier combinación de los **atributos horizontalAlignment**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

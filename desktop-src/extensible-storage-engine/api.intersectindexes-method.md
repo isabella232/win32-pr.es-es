@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 88bcc872fc557e3942a119845206661bd48705317163520924059af5456f6e00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dfe5784ecd5ab517e183f8eeeb5f79315fe585a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963404"
 ---
 # <a name="apiintersectindexes-method"></a>Método Api.IntersectIndexes
 
@@ -81,7 +81,7 @@ public static IEnumerable<byte[]> IntersectIndexes(
 Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<\[\]\>  
 Marcadores de los registros que se encuentran en todos los intervalos de índice. Los marcadores se devuelven en orden de clave principal.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Clase EsentKeyNotMadeException'
-title: Clase EsentKeyNotException
+title: Clase EsentKeyNotMadeException
 TOCTitle: EsentKeyNotMadeException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentKeyNotMadeException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentkeynotmadeexception(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 90527fd1b5b0f696ed0f19408342d09a6e3f6595b6bcce5a23bbaf92fbd07469
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e77be995e6f06aaa7058455f9e0f64bd9721f6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118264748"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969408"
 ---
-# <a name="esentkeynotmadeexception-class"></a>Clase EsentKeyNotException
+# <a name="esentkeynotmadeexception-class"></a>Clase EsentKeyNotMadeException
 
 Clase base para JET_err. Excepciones KeyNotMade.
 
@@ -43,12 +43,12 @@ Clase base para JET_err. Excepciones KeyNotMade.
       [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
           [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
-            Microsoft.Isam.Esent.Interop.EsentKeyNotException  
+            Microsoft.Isam.Esent.Interop.EsentKeyNotMadeException  
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -72,6 +72,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de EsentKeyNotException](./esentkeynotmadeexception-members.md)
+[Miembros de EsentKeyNotMadeException](./esentkeynotmadeexception-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

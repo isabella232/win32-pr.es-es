@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_PIPELINE_STATE_STREAM_SAMPLE_MASK estructura (D3dx12. h)
-description: Una estructura de aplicación auxiliar que se usa para describir una máscara de ejemplo como un solo objeto adecuado para una descripción de flujo.
+title: CD3DX12_PIPELINE_STATE_STREAM_SAMPLE_MASK estructura (D3dx12.h)
+description: Estructura auxiliar que se usa para describir una máscara de ejemplo como un único objeto adecuado para una descripción de secuencia.
 ms.assetid: 20116DA1-F56D-42CA-A846-42509FAF88C1
 keywords:
-- Estructura de CD3DX12_PIPELINE_STATE_STREAM_SAMPLE_MASK
+- CD3DX12_PIPELINE_STATE_STREAM_SAMPLE_MASK estructura
 topic_type:
 - apiref
 api_name:
@@ -16,15 +16,15 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 868a498bec1bbf8c4f55f320765272d04cbdd81c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698406"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969840"
 ---
-# <a name="cd3dx12_pipeline_state_stream_sample_mask-structure"></a>CD3DX12 \_ estructura de la secuencia de estado de canalización de \_ \_ \_ ejemplo \_
+# <a name="cd3dx12_pipeline_state_stream_sample_mask-structure"></a>Estructura DE MÁSCARA DE EJEMPLO DE \_ FLUJO DE ESTADO DE \_ \_ CANALIZACIÓN \_ \_ CD3DX12
 
-Una estructura de aplicación auxiliar que se usa para describir una máscara de ejemplo como un solo objeto adecuado para una descripción de flujo.
+Estructura auxiliar que se usa para describir una máscara de ejemplo como un único objeto adecuado para una descripción de secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,41 +40,41 @@ struct CD3DX12_PIPELINE_STATE_STREAM_SAMPLE_MASK {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**\_Máscara de \_ \_ ejemplo de flujo de estado de canalización CD3DX12 \_ \_**
+**MÁSCARA DE EJEMPLO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**
 </dt> <dd>
 
-Crea una instancia nueva, no inicializada, de una máscara de ejemplo de flujo de estado de la \_ canalización CD3DX12 \_ \_ \_ \_ .
+Crea una nueva instancia sin inicializar de una MÁSCARA DE EJEMPLO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12. \_ \_ \_ \_ \_
 
 </dd> <dt>
 
-**\_Máscara de ejemplo de flujo de estado de canalización CD3DX12 \_ \_ \_ \_ (uint const &i)**
+**CD3DX12 \_ PIPELINE STATE STREAM SAMPLE \_ \_ \_ \_ MASK(UINT const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ máscara de ejemplo de flujo de estado de canalización CD3DX12 \_ \_ \_ \_ , inicializada con un tipo de subobjeto de **tipo de \_ \_ subobjeto de estado de canalización D3D12 \_ \_ \_ \_ máscara de ejemplo** y datos de subobjeto copiados de *i*, una máscara de ejemplo **uint** .
+Crea una nueva instancia de UNA MÁSCARA DE EJEMPLO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializada con un \_ \_ tipo de subobjeto \_ \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE SAMPLE \_ \_ \_ MASK** y datos de subobjeto  copiados de i , una máscara de ejemplo UINT.
 
 </dd> <dt>
 
-**Operator = (UINT const& i)**
+**operator=(UINT const& i)**
 </dt> <dd>
 
 Operador de asignación de copia.
 
 </dd> <dt>
 
-**Operator UINT () Const**
+**operador UINT() const**
 </dt> <dd>
 
-Conversión implícita a una máscara de ejemplo **uint** .
+Conversión implícita a una **máscara de ejemplo UINT.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-\_La CD3DX12 \_ \_ \_ de ejemplo de secuencia de estado de canalización \_ es una especialización de TypeDef de la plantilla de [**\_ \_ \_ \_ subobjeto de flujo de estado de canalización CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
+CD3DX12 PIPELINE STATE STREAM SAMPLE MASK es una especialización typedef de la plantilla \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
 
 ```C++
@@ -91,21 +91,21 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<UINT, D3D12_PIPELINE_STATE_SUBOB
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**Subobjeto de \_ flujo de estado de canalización CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de CANALización D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

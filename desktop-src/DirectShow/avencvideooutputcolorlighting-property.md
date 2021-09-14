@@ -4,12 +4,12 @@ ms.assetid: 67b69d02-db5d-474c-9df4-146c5283d76e
 title: Propiedad AVEncVideoOutputColorLighting (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0216d8d075050a31e5aa1a6225bd46ce6295d2f41658f88526573a3929b5c570
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98b3c9ae40e35de92028001b7e5ad74a3376747f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119274915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161740"
 ---
 # <a name="avencvideooutputcolorlighting-property"></a>Propiedad AVEncVideoOutputColorLighting
 
@@ -35,13 +35,13 @@ El valor de esta propiedad es un miembro de la [**enumeración eAVEncVideoColorL
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
-| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP de 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

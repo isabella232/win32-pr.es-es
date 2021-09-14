@@ -6,16 +6,16 @@ keywords:
 - desenfoque direccional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2a43dcaa60f8627473444572ec36a13c3949e9430c9befbb5c064b51d7813bc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0e1c098d17929563cf69f4e61416fa0d93a88dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119260444"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163333"
 ---
 # <a name="directional-blur-effect"></a>Efecto de desenfoque direccional
 
-El efecto de desenfoque direccional es similar al [desenfoque gaussiano,](gaussian-blur.md)salvo que se puede sesgar el desenfoque en una dirección determinada. Puede usar este efecto para que una imagen parezca si está en movimiento o para resaltar una imagen animada.
+El efecto de desenfoque direccional es similar al [desenfoque gaussiano,](gaussian-blur.md)salvo que se puede sesgar el desenfoque en una dirección determinada. Puede usar este efecto para que una imagen tenga un aspecto similar a si está en movimiento o para resaltar una imagen animada.
 
 El CLSID para este efecto es CLSID \_ D2D1DirectionalBlur.
 
@@ -62,9 +62,9 @@ m_d2dContext->EndDraw();
 
 | Enumeración de nombre para mostrar e índice                                                       | Descripción                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| StandardDeviation<br/> D2D1 \_ DIRECTIONALBLUR \_ PROP \_ STANDARD \_ DEVIATION<br/> | Cantidad de desenfoque que se va a aplicar a la imagen. Puede calcular el radio de desenfoque del kernel multiplicando la desviación estándar por 3. Las unidades de la desviación estándar y el radio de desenfoque son DIP. Un valor de 0 DIP deshabilita este efecto. El tipo es FLOAT.<br/> El valor predeterminado es 3,0f.<br/>                                                                            |
-| Ángulo<br/> D2D1 \_ DIRECTIONALBLUR \_ PROP \_ ANGLE<br/>                           | Ángulo del desenfoque con respecto al eje X, en la dirección en sentido contrario a las agujas del reloj. Las unidades se especifican en grados.<br/> El kernel de desenfoque se genera primero con el mismo proceso que para el efecto [de desenfoque gaussiano.](gaussian-blur.md) A continuación, los valores del kernel se transforman según el ángulo de desenfoque.<br/> El tipo es FLOAT.<br/> El valor predeterminado es 0,0f.<br/> |
-| Optimization<br/> D2D1 \_ DIRECTIONALBLUR \_ PROP \_ OPTIMIZATION<br/>             | Modo de optimización. Consulte [Modos de optimización](#optimization-modes) para obtener más información.<br/> El tipo es D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION.<br/> El valor predeterminado es D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ BALANCED. <br/>                                                                                                                                                         |
+| StandardDeviation<br/> DESVIACIÓN ESTÁNDAR DE LA PROPIEDAD DIRECTIONALBLUR D2D1 \_ \_ \_ \_<br/> | Cantidad de desenfoque que se va a aplicar a la imagen. Puede calcular el radio de desenfoque del kernel multiplicando la desviación estándar por 3. Las unidades de desviación estándar y radio de desenfoque son DIP. Un valor de 0 DIP deshabilita este efecto. El tipo es FLOAT.<br/> El valor predeterminado es 3,0f.<br/>                                                                            |
+| Ángulo<br/> ÁNGULO DE PROP \_ DIRECCIONAL D2D1BLUR \_ \_<br/>                           | Ángulo del desenfoque con respecto al eje X, en la dirección en sentido contrario a las agujas del reloj. Las unidades se especifican en grados.<br/> El kernel de desenfoque se genera primero con el mismo proceso que para el [efecto de desenfoque gaussiano.](gaussian-blur.md) A continuación, los valores del kernel se transforman según el ángulo de desenfoque.<br/> El tipo es FLOAT.<br/> El valor predeterminado es 0,0f.<br/> |
+| Optimization<br/> OPTIMIZACIÓN DE LA PROPIEDAD DIRECTIONALBLUR D2D1 \_ \_ \_<br/>             | Modo de optimización. Consulte [Modos de optimización](#optimization-modes) para obtener más información.<br/> El tipo es D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION.<br/> El valor predeterminado es D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ BALANCED. <br/>                                                                                                                                                         |
 | BorderMode<br/> D2D1 \_ DIRECTIONALBLUR \_ PROP \_ BORDER \_ MODE<br/>               | Modo que se usa para calcular el borde de la imagen, de forma flexible o dura. Consulte [Modos de borde](#border-modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ MODE \_ SOFT.<br/>                                                                                                                                                                 |
 
 
@@ -77,9 +77,9 @@ m_d2dContext->EndDraw();
 
 | Nombre                                          | Descripción                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| VELOCIDAD DE OPTIMIZACIÓN \_ DIRECCIONAL DE D2D1BLUR \_ \_    | Aplica optimizaciones internas, como el escalado previo en radios relativamente pequeños. Usa el filtrado lineal.                                  |
+| VELOCIDAD DE OPTIMIZACIÓN \_ DIRECTIONALBLUR D2D1 \_ \_    | Aplica optimizaciones internas, como el escalado previo a radios relativamente pequeños. Usa el filtrado lineal.                                  |
 | D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ BALANCED | Usa los mismos umbrales de optimización que el modo velocidad, pero usa el filtrado trilineal.                                                    |
-| D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ QUALITY  | Solo usa optimizaciones internas con radii de desenfoque grandes, donde es menos probable que las aproximaciones sean visibles. Usa el filtrado trilineal. |
+| D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ QUALITY  | Solo usa optimizaciones internas con radios de desenfoque grandes, donde es menos probable que las aproximaciones sean visibles. Usa el filtrado trilineal. |
 
 
 
@@ -100,14 +100,14 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Mapa de bits de salida
 
-El tamaño del mapa de bits de salida aumenta en función de la desviación estándar, el ángulo del efecto y el modo de borde. Si el modo de borde se establece en D2D1 BORDER MODE SOFT, el tamaño del mapa de bits de salida aumenta por el tamaño del kernel de desenfoque, representado \_ \_ en \_ píxeles. Estas ecuaciones se pueden usar para calcular el tamaño del mapa de bits de salida.
+El tamaño del mapa de bits de salida aumenta en función de la desviación estándar, el ángulo del efecto y el modo de borde. Si el modo de borde se establece en D2D1 BORDER MODE SOFT, el tamaño del mapa de bits de salida aumenta según el tamaño del kernel de desenfoque, representado \_ \_ en \_ píxeles. Estas ecuaciones se pueden usar para calcular el tamaño del mapa de bits de salida.
 
 
 
 | Requisito | Value |
 |------------------------|-------------------------------------------------------------------|
-| Crecimiento del mapa de bits de salida X | StandardDeviation (DIP) \* 6 \* ((USER PPP) / 96) \* cos(Angle)) |
-| Crecimiento del mapa de bits de salida Y | StandardDeviation (DIP) \* 6 \* ((USER PPP) / 96) \* sin(Angle)) |
+| Crecimiento del mapa de bits de salida X | StandardDeviation (DIP) \* 6 \* ((User DPI) / 96) \* cos(Angle)) |
+| Crecimiento del mapa de bits de salida Y | StandardDeviation (DIP) \* 6 \* ((PPP de usuario) / 96) \* sin(Angle)) |
 
 
 
@@ -119,9 +119,9 @@ El tamaño del mapa de bits de salida aumenta en función de la desviación est�
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

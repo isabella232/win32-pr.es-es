@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fb839b75af14237b03d3f35ffc71b10d16617df4728b80bd8f465b24bed6b062
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51ce7d0da7f72315924172651a9276acf7ab4cb4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118675007"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968812"
 ---
 # <a name="win32_pnpdevicepropertybinary-class"></a>Clase Win32 \_ PnPDevicePropertyBinary
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertyBinary : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PnPDevicePropertyBinary de Win32** tiene estos tipos de miembros:
 
@@ -94,7 +94,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par clave Name-Value que identifica la **propiedad** Data.
+Valor del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -115,7 +115,7 @@ Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceprop
 
 </dd> <dt>
 
-**Type**
+**Tipo**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Uint32**
@@ -512,7 +512,7 @@ Los valores posibles son.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

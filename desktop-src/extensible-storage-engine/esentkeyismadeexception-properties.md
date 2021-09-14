@@ -1,25 +1,25 @@
 ---
-description: 'Más información sobre: Propiedades de EsentKeyIsException'
-title: Propiedades de EsentKeyIsException
+description: 'Más información sobre: Propiedades de EsentKeyIsMadeException'
+title: Propiedades de EsentKeyIsMadeException
 TOCTitle: EsentKeyIsMadeException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentKeyIsMadeException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentkeyismadeexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102117
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5986584ab774a28ef3109bd4fe13a87d626788636498a24dc17cda894c4a6da5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 661cd5095639999cab2b6b103870820f5b8a149f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966112"
 ---
-# <a name="esentkeyismadeexception-properties"></a>Propiedades de EsentKeyIsException
+# <a name="esentkeyismadeexception-properties"></a>Propiedades de EsentKeyIsMadeException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentKeyIsException](./esentkeyismadeexception-class.md) expone los miembros siguientes.
+El [tipo EsentKeyIsMadeException](./esentkeyismadeexception-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -34,7 +34,7 @@ El [tipo EsentKeyIsException](./esentkeyismadeexception-class.md) expone los mie
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,10 +83,10 @@ El [tipo EsentKeyIsException](./esentkeyismadeexception-class.md) expone los mie
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase EsentKeyIsException](./esentkeyismadeexception-class.md)
+[Clase EsentKeyIsMadeException](./esentkeyismadeexception-class.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

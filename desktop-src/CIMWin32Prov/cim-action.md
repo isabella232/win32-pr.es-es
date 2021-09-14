@@ -24,18 +24,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 346c3d0e0100c0c61040b047849a7a81e430e8c6
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122881199"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968907"
 ---
 # <a name="cim_action-class"></a>Cim \_ Action (clase)
 
 Una **\_ clase de acción CIM** es una operación que forma parte de un proceso para crear un elemento de software en su siguiente estado o para eliminar el elemento de software en el estado actual.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -59,7 +59,7 @@ class CIM_Action
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Acción** cim tiene estos tipos de miembros:
 
@@ -712,7 +712,7 @@ Mac OS 9
 
 </dt> <dd>
 
-Ser so
+Ser sistema operativo
 
 </dd> <dt>
 
@@ -799,7 +799,7 @@ La versión de la operación debe tener uno de los formatos siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase. Vea [Clases win32 para](win32-provider.md) obtener clases derivadas de la acción **\_ CIM**.
 
@@ -809,7 +809,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

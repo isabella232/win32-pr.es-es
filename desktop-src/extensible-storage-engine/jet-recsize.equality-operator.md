@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8c7b0c34f94d0c59f30283cca3315466ed75ad489719a5d883f7597dd3614fb7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f95ee6975a71e40d702b1f68c47ad6831881ffa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119038753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969063"
 ---
 # <a name="jet_recsizeequality-operator"></a>JET_RECSIZE. Operador de igualdad
 
@@ -81,7 +81,7 @@ public static bool operator ==(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

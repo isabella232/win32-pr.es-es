@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a828ef50956d9ab5336dfe88fa12bed9f7541633ec4589a9c556511e8487a9e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e597da8ea1ed4a4291142065e8e06f89d2664e03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117734267"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969863"
 ---
 # <a name="cd3dx12_pipeline_state_stream_primitive_topology-structure"></a>Estructura DE TOPOLOGÍA PRIMITIVA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_
 
@@ -40,21 +40,21 @@ struct CD3DX12_PIPELINE_STATE_STREAM_PRIMITIVE_TOPOLOGY {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **TOPOLOGÍA PRIMITIVA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**
 </dt> <dd>
 
-Crea una nueva instancia sin inicializar de una TOPOLOGÍA PRIMITIVA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12. \_ \_ \_ \_ \_
+Crea una nueva instancia sin inicializar de una TOPOLOGÍA PRIMITIVA CD3DX12 \_ PIPELINE \_ STATE \_ \_ \_ STREAM.
 
 </dd> <dt>
 
 **TOPOLOGÍA PRIMITIVA DE FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ \_ CD3DX12(TIPO DE TOPOLOGÍA PRIMITIVA \_ D3D12 \_ \_ \_ const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de una TOPOLOGÍA PRIMITIVA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializada con un \_ \_ tipo de subobjeto \_ \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE PRIMITIVE \_ \_ \_ TOPOLOGY** y datos de subobjetos copiados de i , una estructura DE TIPO [**\_ \_ TOPOLOGY \_ PRIMITIVO D3D12.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)
+Crea una nueva instancia de una TOPOLOGÍA PRIMITIVA DE STREAM DE ESTADO DE CANALIZACIÓN CD3DX12, inicializada con un \_ \_ tipo de subobjeto \_ \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE PRIMITIVE \_ \_ \_ TOPOLOGY** y datos de subobjetos copiados de i , una estructura [**D3D12 \_ PRIMITIVE \_ TOPOLOGY \_ TYPE.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)
 
 </dd> <dt>
 
@@ -68,11 +68,11 @@ Operador de asignación de copia.
 **operador D3D12 \_ PRIMITIVE \_ TOPOLOGY \_ TYPE() const**
 </dt> <dd>
 
-Conversión implícita a una [**estructura TYPE DE TOPOLOGÍA \_ PRIMITIVA \_ \_ D3D12.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)
+Conversión implícita a una estructura DE TIPO DE TOPOLOGÍA PRIMITIVA [**\_ \_ \_ D3D12.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 CD3DX12 PIPELINE STATE STREAM PRIMITIVE TOPOLOGY es una especialización typedef de la plantilla \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
@@ -95,7 +95,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_PRIMITIVE_TOPOLOGY_TYPE, D
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_PRIMITIVE_TOPOLOGY_TYPE, D
 [**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE SUBOBJETO DE ESTADO \_ \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

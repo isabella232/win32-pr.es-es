@@ -4,12 +4,12 @@ ms.assetid: 741f4c05-49f8-4c76-be5c-ce5b496124bb
 title: Agregar texturas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c2b60ea80702ffc339fe753dec3ad9b72170b03bc8f23598e545e17bc71209d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aee0090b5990c2093a41efbd15eb998401ce2607
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060791"
 ---
 # <a name="adding-textures-direct3d-9"></a>Agregar texturas (Direct3D 9)
 

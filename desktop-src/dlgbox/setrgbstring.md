@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8322bb07300ce188684f5097232563e80721fadf0f614c24ac5f7b2d034c1fff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dea5489aaa6fafcaa19a97a44d81fd85abb178d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964603"
 ---
 # <a name="setrgbstring-message"></a>Mensaje SETRGBSTRING
 
@@ -56,7 +56,7 @@ Valor RGB del color que se selecciona en el **cuadro de diálogo** Color. Puede 
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si *lParam coincide* con uno de los colores básicos o uno de los 16 colores personalizados, el procedimiento del cuadro de diálogo selecciona ese color. El procedimiento del cuadro de diálogo también actualiza todos los controles de la extensión de color personalizado del cuadro de diálogo **Color,** si está abierto.
 
@@ -90,7 +90,7 @@ SendMessage(hdlg, uiSetRGB, 0, (LPARAM) RGB(0, 0, 255));
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

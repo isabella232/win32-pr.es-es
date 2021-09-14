@@ -1,6 +1,6 @@
 ---
 title: texbeml - ps
-description: Aplicar una transformación de mapa de entorno de protuberancia falsa con corrección de luminosidad. Para ello, se modifican los datos de dirección de textura del registro de destino, mediante datos de alteración de direcciones (du,dv), una matriz de entorno de protuberancia 2D y luminosidad.
+description: Aplicar una transformación de mapa de entorno de protuberancia falsa con corrección de luminosidad. Esto se logra mediante la modificación de los datos de dirección de textura del registro de destino, mediante datos de alteración de direcciones (du,dv), una matriz de entorno de protuberancia 2D y luminosidad.
 ms.assetid: 345a0b77-8d4e-4a0b-a31a-1153f8cb5961
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c549e93829c3165d4921342d4e74a8dc15bc1518f7c88aa205f8afc889fae95e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d97877c67970f43a995fcfbe21d9aead2d792e09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118788069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966447"
 ---
 # <a name="texbeml---ps"></a>texbeml - ps
 
-Aplicar una transformación de mapa de entorno de protuberancia falsa con corrección de luminosidad. Para ello, se modifican los datos de dirección de textura del registro de destino, mediante datos de alteración de direcciones (du,dv), una matriz de entorno de protuberancia 2D y luminosidad.
+Aplicar una transformación de mapa de entorno de protuberancia falsa con corrección de luminosidad. Esto se logra mediante la modificación de los datos de dirección de textura del registro de destino, mediante datos de alteración de direcciones (du,dv), una matriz de entorno de protuberancia 2D y luminosidad.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,12 +31,12 @@ Aplicar una transformación de mapa de entorno de protuberancia falsa con correc
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -101,7 +101,7 @@ t(m)<sub>RGBA</sub> = t(m)<sub>RGBA</sub>\*
 
 D3DTSS \_ BUMPENVLOFFSET(stage m)\]
 
-Los datos de registro leídos por una instrucción [de tipo "texbem"](texbem---ps.md) o "texbeml" no se pueden leer más adelante, excepto por otro objeto texbem o texbeml.
+Los datos de registro leídos por una instrucción [de tipo "texbem"](texbem---ps.md) o "texbeml" no se pueden leer más adelante, excepto por otro tipo de archivo.
 
 
 ```

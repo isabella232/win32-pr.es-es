@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: da16c90ee5757ec72ee98932164a7281194553e63b4921ca42c666f660f7f904
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1914ae9317d686e369f1cb2c7eb36ab54a29845f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044633"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060696"
 ---
 # <a name="d3dxvec2minimize-function"></a>Función D3DXVec2Minimize
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
 Puntero a una [**estructura D3DXVECTOR2**](d3dxvector2.md) que se conste de los componentes más pequeños de los dos vectores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec2Minimize** se puede usar como parámetro para otra función.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

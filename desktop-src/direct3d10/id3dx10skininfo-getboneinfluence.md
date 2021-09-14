@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9b53f642b6e62bb37c6979602b1ae66e09ffc2eb42a6d47c70c6b895a01ba273
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b2f7e6b75e9c0f9f08463b6dacf9d7c9d72f4f28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965068"
 ---
 # <a name="id3dx10skininfogetboneinfluence-method"></a>Método ID3DX10SkinInfo::GetIonalInfluence
 
@@ -56,7 +56,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice en la lista de vértices del tejido que influye.
+Índice de la lista de vértices que influye en el tejido.
 
 </dd> <dt>
 
@@ -75,9 +75,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser E \_ INVALIDARG.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use ID3DX10SkinInfo::GetIonalInfluenceCount para averiguar cuántos vértices influye el infierto.
+Use ID3DX10SkinInfo::GetIonalInfluenceCount para averiguar cuántos vértices influye el influjo de la ingle.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Use ID3DX10SkinInfo::GetIonalInfluenceCount para averiguar cuántos vértices in
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

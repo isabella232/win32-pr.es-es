@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 2e884390-56e4-45ae-b1c9-c58503d6f2dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6102dc3ab10e48e5373bff2bcbe5e13ae3ca49a59417f05aae45d2106e0a3e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4fd2fdaf284fee71724d7b9bb4ac4b5ad1100c82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117825635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163370"
 ---
 # <a name="direct2d-glossary"></a>Glosario de Direct2D
 
@@ -72,7 +72,7 @@ Tecnología de visualización de fuentes que mejora considerablemente la resoluc
 
 </dd> <dt>
 
-<span id="direct2d.direct2d_glossary_dc"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_DC"></span>**Dc**
+<span id="direct2d.direct2d_glossary_dc"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_DC"></span>**DC**
 </dt> <dd>
 
 Consulte la definición de: contexto de dispositivo.
@@ -135,7 +135,7 @@ Para generar una aproximación poligonal de una geometría (potencialmente curva
 
 </dd> <dt>
 
-<span id="direct2d.direct2d_glossary_gdi"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_GDI"></span>**Gdi**
+<span id="direct2d.direct2d_glossary_gdi"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_GDI"></span>**GDI**
 </dt> <dd>
 
 Vea la definición de: Interfaz de dispositivo gráfico (GDI).
@@ -205,10 +205,10 @@ Referencia a un contexto de dispositivo GDI.
 
 </dd> <dt>
 
-<span id="direct2d.direct2d_glossary_hdc"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_HDC"></span>**Hdc**
+<span id="direct2d.direct2d_glossary_hdc"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_HDC"></span>**HDC**
 </dt> <dd>
 
-Vea definition for: handle to a device context (Definición de: identificador para un contexto de dispositivo).
+Consulte la definición de: identificador para un contexto de dispositivo.
 
 </dd> <dt>
 
@@ -229,7 +229,7 @@ Técnica de suavizado de contorno que procesa una escena completa.
 <span id="direct2d.direct2d_glossary_opacity_mask"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_OPACITY_MASK"></span>**máscara de opacidad**
 </dt> <dd>
 
-Máscara, descrita por un pincel o mapa de bits, que se aplica a otro objeto para que ese objeto sea parcial o completamente transparente. Una máscara de opacidad usa información de canal alfa para especificar cómo se combinan los píxeles de origen del objeto en el destino de destino final. Las partes transparentes de la máscara indican las áreas donde está oculta la imagen subyacente, mientras que las partes opacas de la máscara indican dónde se permite el objeto enmascarado.
+Máscara, descrita por un pincel o mapa de bits, que se aplica a otro objeto para que ese objeto sea parcial o completamente transparente. Una máscara de opacidad usa información de canal alfa para especificar cómo se combinan los píxeles de origen del objeto en el destino de destino final. Las partes transparentes de la máscara indican las áreas donde se oculta la imagen subyacente, mientras que las partes opacas de la máscara indican dónde se permite el objeto enmascarado.
 
 </dd> <dt>
 
@@ -310,7 +310,7 @@ Formato de documento, descrito por el XML Paper Specification, que se puede usar
 
 </dd> <dt>
 
-<span id="direct2d.direct2d_glossary_xps"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_XPS"></span>**Xps**
+<span id="direct2d.direct2d_glossary_xps"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_XPS"></span>**XPS**
 </dt> <dd>
 
 Vea la definición de: XML Paper Specification (XPS).

@@ -1,5 +1,5 @@
 ---
-description: La propiedad Identifier de un objeto SWbemPrivilege es un entero WbemPrivilegeEnum que representa el privilegio que se va a establecer o recuperar. Esta propiedad es de solo lectura.
+description: La propiedad Identifier de un objeto SWbemPrivilege es un entero WbemPrivilegeEnum que representa el privilegio que se establece o recupera. Esta propiedad es de solo lectura.
 ms.assetid: d370c3ae-6acf-409a-846a-42a74f1a3c02
 ms.tgt_platform: multiple
 title: Propiedad SWbemPrivilege.Identifier (Wbemdisp.h)
@@ -17,14 +17,14 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: de38aa4f02abdea316791dbf79289a9c977e08f17eb35a78d91bc4c67608c903
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2906c8f3f49c42471bd05978b35ce33f2cdf11dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967039"
 ---
-# <a name="swbemprivilegeidentifier-property"></a>Propiedad SWbemPrivilege.Identifier
+# <a name="swbemprivilegeidentifier-property"></a>SWbemPrivilege.Identifier, propiedad
 
 La **propiedad Identifier** de un objeto [**SWbemPrivilege**](swbemprivilege.md) es un entero [WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) que representa el privilegio que se establece o recupera. Esta propiedad es de solo lectura.
 
@@ -32,7 +32,7 @@ Para obtener una explicación de esta sintaxis, vea [Document Conventions for th
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -51,7 +51,7 @@ SWbemPrivilege.Identifier As Integer
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPrivilege<br/>                                                        |
@@ -59,7 +59,7 @@ SWbemPrivilege.Identifier As Integer
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

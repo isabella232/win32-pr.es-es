@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f8c7f65c9f2096339e0131d5d54c2fd65fb7e52849219f06f6a60fd44c518751
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 22898880e5cef5669defae89cda4f7d9818f9f1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964739"
 ---
 # <a name="id3dxtextureshadergetconstantdesc-method"></a>Método ID3DXTextureShader::GetConstantDesc
 
@@ -47,7 +47,7 @@ HRESULT GetConstantDesc(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de una constante. Vea [D3DXHANDLE.](d3dxfx.md)
+Identificador único de una constante. Vea [D3DXHANDLE](d3dxfx.md).
 
 </dd> <dt>
 
@@ -73,9 +73,9 @@ La entrada proporcionada debe ser el tamaño máximo de la matriz. La salida es 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los muestreadores pueden aparecer más de una vez en una tabla constante, por lo que este método puede devolver una matriz de descripciones cada una con un índice de registro diferente.
 
@@ -90,7 +90,7 @@ Los muestreadores pueden aparecer más de una vez en una tabla constante, por lo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

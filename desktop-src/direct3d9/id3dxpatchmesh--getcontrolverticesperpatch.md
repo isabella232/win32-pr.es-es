@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 849bf8a4defa0f8f44d26f0234d8d3d8a02f97000f6580eb764f5eb0fcf86919
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54fa2ff2800ad22b869b9828bf8b1603c8ce141f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120789"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060555"
 ---
 # <a name="id3dxpatchmeshgetcontrolverticesperpatch-method"></a>Método ID3DXPatchMesh::GetControlVerticesPerPatch
 

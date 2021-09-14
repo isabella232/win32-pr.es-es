@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b9fd1b19f977dd0ea2249462461e6e80a06a056ba031fd8c04192dd617544ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b94c2612b231e24aaec855b6ebd1f9a0498b63c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891060"
 ---
 # <a name="imsrdpclientextendeddisconnectreason-property"></a>Propiedad IMsRdpClient::ExtendedDisconnectReason
 
@@ -86,7 +86,7 @@ Puntero al [**valor ExtendedDisconnectReasonCode**](extendeddisconnectreasoncode
 
 Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, se llama a este método en el controlador de eventos [**IMsTscAxEvents::OnDisconnected**](imstscaxevents-ondisconnected.md) para recuperar información adicional sobre el evento de desconexión.
 
@@ -106,7 +106,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: f969be42-d541-4e8d-aec4-eb9508bcc7cf
 title: Generación precisa de perfiles de llamadas de la API de Direct3D (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6457e47da58a3614270f89eefa1cfa33fbf30cf26544c1013d010696a68e4602
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cdb6d60fcc1b3ace4112dbf7028d91e2c9c8b345
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118097497"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060796"
 ---
 # <a name="accurately-profiling-direct3d-api-calls-direct3d-9"></a>Generación precisa de perfiles de llamadas de la API de Direct3D (Direct3D 9)
 
@@ -34,7 +34,7 @@ La información proporcionada aquí se basa en la suposición de que tiene conoc
 Un profiler informa sobre la cantidad de tiempo empleado en cada llamada API. Esto se hace para mejorar el rendimiento mediante la búsqueda y el ajuste de las zonas de acceso más populares. Hay diferentes tipos de generadores de perfiles y técnicas de generación de perfiles.
 
 -   Un profiler de muestreo se queda inactivo la mayor parte del tiempo, lo que hace que, a intervalos específicos, muestree (o registre) las funciones que se ejecutan. Devuelve el porcentaje de tiempo empleado en cada llamada. Por lo general, un profiler de muestreo no es muy invasivo para la aplicación y tiene un impacto mínimo en la sobrecarga de la aplicación.
--   Un profiler de instrumentación mide el tiempo real que tarda una llamada en devolverse. Requiere compilar delimitadores start y stop en una aplicación. Un profiler de instrumentación es comparativamente más invasivo para una aplicación que un profiler de muestreo.
+-   Un profiler de instrumentación mide el tiempo real que se tarda en devolver una llamada. Requiere compilar delimitadores start y stop en una aplicación. Un profiler de instrumentación es comparativamente más invasivo para una aplicación que un profiler de muestreo.
 -   También es posible usar una técnica de generación de perfiles personalizada con un temporizador de alto rendimiento. Esto genera resultados muy similares a los de un generador de perfiles de instrumentación.
 
 El tipo de generador de perfiles o la técnica de generación de perfiles que se usa solo forma parte del desafío de generar medidas precisas.
@@ -43,7 +43,7 @@ La generación de perfiles proporciona respuestas que le ayudan a presupuestar e
 
 -   Una CPU de 2 GHz (que dedica el 50 % de su representación de tiempo) se limita a llamar a esta API 1 millón de veces por segundo.
 -   Para lograr 30 fotogramas por segundo, no puede llamar a esta API más de 33 000 veces por fotograma.
--   Solo puede representar objetos de 3,3 K por fotograma (suponiendo que 10 de estas llamadas API para la secuencia de representación de cada objeto).
+-   Solo puede representar 3,3 000 objetos por fotograma (suponiendo que 10 de estas llamadas API para la secuencia de representación de cada objeto).
 
 En otras palabras, si tuviera tiempo suficiente por llamada API, podría responder a una pregunta de presupuestos, como el número de primitivas que se pueden representar de forma interactiva. Pero los números sin procesar devueltos por un profiler instrumentador no responderán con precisión a las preguntas de presupuesto. Esto se debe a que la canalización de gráficos tiene problemas de diseño complejos, como el número de componentes que deben funcionar, el número de procesadores que controlan cómo fluye el trabajo entre los componentes y las estrategias de optimización implementadas en el tiempo de ejecución y en un controlador que están diseñados para que la canalización sea más eficaz.
 
@@ -65,17 +65,17 @@ En el siguiente diagrama conceptual se muestran los distintos componentes por lo
 
 La aplicación invoca Direct3D, que controla la escena, controla las interacciones del usuario y determina cómo se realiza la representación. Todo este trabajo se especifica en la secuencia de representación, que se envía al tiempo de ejecución mediante llamadas a la API de Direct3D. La secuencia de representación es virtualmente independiente del hardware (es decir, las llamadas API son independientes del hardware, pero una aplicación tiene conocimiento de las características que admite una tarjeta de vídeo).
 
-El tiempo de ejecución convierte estas llamadas en un formato independiente del dispositivo. El tiempo de ejecución controla toda la comunicación entre la aplicación y el controlador, de modo que una aplicación se ejecutará en más de un fragmento de hardware compatible (en función de las características necesarias). Al medir una llamada de función, un profiler de instrumentación mide el tiempo empleado en una función, así como el tiempo que la función debe devolver. Una limitación de un generador de perfiles de instrumentación es que puede no incluir el tiempo que tarda un controlador en enviar el trabajo resultante a la tarjeta de vídeo ni el tiempo para que la tarjeta de vídeo procese el trabajo. En otras palabras, un generador de perfiles de instrumentación no puede atribuir todo el trabajo asociado a cada llamada de función.
+El tiempo de ejecución convierte estas llamadas en un formato independiente del dispositivo. El tiempo de ejecución controla toda la comunicación entre la aplicación y el controlador, de modo que una aplicación se ejecutará en más de un fragmento de hardware compatible (en función de las características necesarias). Al medir una llamada de función, un profiler de instrumentación mide el tiempo empleado en una función, así como el tiempo que la función debe devolver. Una limitación de un profiler de instrumentación es que puede no incluir el tiempo que tarda un controlador en enviar el trabajo resultante a la tarjeta de vídeo ni el tiempo para que la tarjeta de vídeo procese el trabajo. En otras palabras, un generador de perfiles de instrumentación no puede atribuir todo el trabajo asociado a cada llamada de función.
 
 El controlador de software usa conocimientos específicos de hardware sobre la tarjeta de vídeo para convertir los comandos independientes del dispositivo en una secuencia de comandos de tarjeta de vídeo. Los controladores también pueden optimizar la secuencia de comandos que se envían a la tarjeta de vídeo, de modo que la representación en la tarjeta de vídeo se realiza de forma eficaz. Estas optimizaciones pueden causar problemas de generación de perfiles porque la cantidad de trabajo realizado no es la que parece ser (es posible que tenga que comprender las optimizaciones para tenerlas en cuenta). Normalmente, el controlador devuelve el control al tiempo de ejecución antes de que la tarjeta de vídeo haya terminado de procesar todos los comandos.
 
 La tarjeta de vídeo realiza la mayor parte de la representación mediante la combinación de datos de los búferes de vértice e índice, texturas, información de estado de representación y los comandos de gráficos. Cuando finaliza la representación de la tarjeta de vídeo, se completa el trabajo creado a partir de la secuencia de representación.
 
-Cada componente (el tiempo de ejecución, el controlador y la tarjeta de vídeo) debe procesar cada llamada a la API de Direct3D para representar cualquier cosa.
+Cada componente debe procesar cada llamada a la API de Direct3D (el tiempo de ejecución, el controlador y la tarjeta de vídeo) para representar cualquier cosa.
 
 ### <a name="there-is-more-than-one-processor-controlling-the-components"></a>Hay más de un procesador que controla los componentes
 
-La relación entre estos componentes es incluso más compleja, ya que la aplicación, el tiempo de ejecución y el controlador están controlados por un procesador y la tarjeta de vídeo se controla mediante un procesador independiente. En el diagrama siguiente se muestran dos tipos de procesadores: una unidad de procesamiento central (CPU) y una unidad de procesamiento gráfico (GPU).
+La relación entre estos componentes es aún más compleja, ya que la aplicación, el tiempo de ejecución y el controlador se controlan mediante un procesador y la tarjeta de vídeo se controla mediante un procesador independiente. En el diagrama siguiente se muestran dos tipos de procesadores: una unidad de procesamiento central (CPU) y una unidad de procesamiento gráfico (GPU).
 
 ![diagrama de una CPU y una GPU y sus componentes](images/microbenchmarkprocessors.png)
 
@@ -116,32 +116,32 @@ Number of cycles for DrawPrimitive    : 950,500
 
 
 
-El profiler devuelve el número de ciclos de CPU necesarios para procesar el trabajo asociado a cada llamada (recuerde que la GPU no está incluida en estos números porque la GPU todavía no ha empezado a trabajar en estos comandos). Dado [**que IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) requería casi un millón de ciclos para procesarse, podría concluir que no es muy eficaz. Sin embargo, pronto verá por qué esta conclusión es incorrecta y cómo puede generar resultados que se pueden usar para la presupuestación.
+El profiler devuelve el número de ciclos de CPU necesarios para procesar el trabajo asociado a cada llamada (recuerde que la GPU no está incluida en estos números porque la GPU todavía no ha empezado a trabajar en estos comandos). Dado [**que IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) requería casi un millón de ciclos para procesar, podría concluir que no es muy eficaz. Sin embargo, pronto verá por qué esta conclusión es incorrecta y cómo puede generar resultados que se pueden usar para la presupuestación.
 
 ### <a name="measuring-state-changes-requires-careful-render-sequences"></a>La medición de los cambios de estado requiere secuencias de representación cuidadosas
 
-Todas las llamadas que no son [**IDirect3DDevice9::D rawPrimitive,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) [**DrawIndexedPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawindexedprimitive)o [**Clear**](/windows/desktop/api) (como [**SetTexture,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) [**SetVertexDeclaration**](/windows/desktop/api)y [**SetRenderState)**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate)producen un cambio de estado. Cada cambio de estado establece el estado de canalización que controla cómo se realizará la representación.
+Todas las llamadas que no son [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive), [**DrawIndexedPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawindexedprimitive)o [**Clear**](/windows/desktop/api) (como [**SetTexture,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) [**SetVertexDeclaration**](/windows/desktop/api)y [**SetRenderState)**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate)producen un cambio de estado. Cada cambio de estado establece el estado de canalización que controla cómo se realizará la representación.
 
 Las optimizaciones en tiempo de ejecución o el controlador están diseñadas para acelerar la representación reduciendo la cantidad de trabajo necesario. A continuación se muestra un par de optimizaciones de cambios de estado que pueden causar promedios de perfil:
 
 -   Un controlador (o el tiempo de ejecución) podría guardar un cambio de estado como un estado local. Dado que el controlador podría funcionar en un algoritmo "diferido" (posponer el trabajo hasta que sea absolutamente necesario), el trabajo asociado a algunos cambios de estado podría retrasarse.
 -   El tiempo de ejecución (o un controlador) puede quitar los cambios de estado mediante la optimización. Un ejemplo de esto podría ser quitar un cambio de estado redundante que deshabilite la iluminación porque la iluminación se ha deshabilitado previamente.
 
-No hay ninguna manera infalible de ver una secuencia de representación y concluir qué cambios de estado establecerán un bit desaplazado y aplazarán el trabajo, o simplemente se quitarán mediante la optimización. Incluso si pudiera identificar los cambios de estado optimizados en el tiempo de ejecución o el controlador actuales, es probable que se actualice el tiempo de ejecución o el controlador de mañana. Tampoco sabe fácilmente cuál era el estado anterior, por lo que es difícil identificar los cambios de estado redundantes. La única manera de comprobar el costo de un cambio de estado es medir la secuencia de representación que incluye los cambios de estado.
+No hay ninguna manera infalible de ver una secuencia de representación y concluir qué cambios de estado establecerán un bit desaplazado y aplazarán el trabajo, o simplemente se quitarán mediante la optimización. Aunque pueda identificar cambios de estado optimizados en el tiempo de ejecución o el controlador de hoy, es probable que el entorno de ejecución o el controlador de mañana se actualicen. Tampoco sabe fácilmente cuál era el estado anterior, por lo que es difícil identificar cambios de estado redundantes. La única manera de comprobar el costo de un cambio de estado es medir la secuencia de representación que incluye los cambios de estado.
 
 Como puede ver, las complicaciones causadas por tener varios procesadores, los comandos que procesa más de un componente y las optimizaciones integradas en los componentes dificultan la predicción de la generación de perfiles. En la sección siguiente, se abordará cada uno de estos desafíos de generación de perfiles. Se mostrarán secuencias de representación de Direct3D de ejemplo, con las técnicas de medición que lo acompañan. Con este conocimiento, podrá generar medidas precisas y repetibles en llamadas individuales.
 
 ## <a name="how-to-accurately-profile-a-direct3d-render-sequence"></a>Cómo crear perfiles precisos de una secuencia de representación de Direct3D
 
-Ahora que se han resaltado algunos de los desafíos de generación de perfiles, en esta sección se muestran técnicas que le ayudarán a generar medidas de perfil que se pueden usar para la generación de presupuestos. Las medidas de generación de perfiles precisas y repetibles son posibles si comprende la relación entre los componentes controlados por la CPU y cómo evitar las optimizaciones de rendimiento implementadas por el motor en tiempo de ejecución y el controlador.
+Ahora que se han resaltado algunos de los desafíos de generación de perfiles, en esta sección se mostrarán técnicas que le ayudarán a generar medidas de perfil que se pueden usar para la generación de presupuestos. Las medidas de generación de perfiles precisas y repetibles son posibles si comprende la relación entre los componentes controlados por la CPU y cómo evitar las optimizaciones de rendimiento implementadas por el motor en tiempo de ejecución y el controlador.
 
-Para empezar, debe poder medir con precisión el tiempo de ejecución de una sola llamada API.
+Para comenzar, debe poder medir con precisión el tiempo de ejecución de una sola llamada API.
 
 ### <a name="pick-an-accurate-measurement-tool-like-queryperformancecounter"></a>Selección de una herramienta de medida precisa como QueryPerformanceCounter
 
-Microsoft Windows sistema operativo incluye un temporizador de alta resolución que se puede usar para medir los tiempos transcurridos de alta resolución. El valor actual de uno de estos temporizadores se puede devolver mediante [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter). Después de invocar **QueryPerformanceCounter** para devolver los valores de inicio y de devolución, la diferencia entre los dos valores se puede convertir al tiempo transcurrido real (en segundos) mediante **QueryPerformanceCounter**.
+El sistema Windows microsoft incluye un temporizador de alta resolución que se puede usar para medir los tiempos transcurridos de alta resolución. El valor actual de uno de estos temporizadores se puede devolver [**mediante QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter). Después de invocar **QueryPerformanceCounter** para devolver valores de inicio y de detenerse, la diferencia entre los dos valores se puede convertir al tiempo transcurrido real (en segundos) mediante **QueryPerformanceCounter**.
 
-Las ventajas de usar [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) son que está disponible en Windows y es fácil de usar. Basta con rodear las llamadas con una llamada a **QueryPerformanceCounter** y guardar los valores de inicio y de detenerse. Por lo tanto, en este documento se muestra cómo usar **QueryPerformanceCounter** para crear perfiles de tiempos de ejecución, de forma similar a la forma en que lo mediría un generador de perfiles de instrumentación. Este es un ejemplo que muestra cómo insertar **QueryPerformanceCounter en** el código fuente:
+Las ventajas de usar [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) son que está disponible en Windows y es fácil de usar. Basta con rodear las llamadas con **una llamada a QueryPerformanceCounter** y guardar los valores de inicio y de detenerse. Por lo tanto, en este documento se muestra cómo usar **QueryPerformanceCounter** para crear perfiles de tiempos de ejecución, de forma similar a como lo mediría un generador de perfiles instrumentador. Este es un ejemplo que muestra cómo insertar **QueryPerformanceCounter en** el código fuente:
 
 
 ```
@@ -167,7 +167,7 @@ Las ventajas de usar [**QueryPerformanceCounter**](/windows/win32/api/profileapi
 
 Ejemplo 2: Implementación de generación de perfiles personalizada con QPC
 
-start y stop son dos enteros grandes que contendrán los valores start y stop devueltos por el temporizador de alto rendimiento. Observe que se llama a QueryPerformanceCounter(&start) justo antes de llamar a [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) y QueryPerformanceCounter(&stop) justo después de [**DrawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) Después de obtener el valor de devolución, se llama a QueryPerformanceFrequency para devolver freq, que es la frecuencia del temporizador de alta resolución. En este ejemplo hipotético, supongamos que obtiene los siguientes resultados para start, stop y freq:
+start y stop son dos enteros grandes que contendrán los valores start y stop devueltos por el temporizador de alto rendimiento. Observe que se llama a QueryPerformanceCounter(&start) justo antes de llamar a [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) y QueryPerformanceCounter(&stop) justo después de [**DrawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) Después de obtener el valor stop, se llama a QueryPerformanceFrequency para devolver freq, que es la frecuencia del temporizador de alta resolución. En este ejemplo hipotético, supongamos que obtiene los siguientes resultados para start, stop y freq:
 
 
 
@@ -193,7 +193,7 @@ Puede convertir estos valores en el número de ciclos que se tardan en ejecutar 
 
 
 
-En otras palabras, se tardan aproximadamente 4568 ciclos de reloj en procesar [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) y [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) en esta máquina de 2 GHz. Puede convertir estos valores al tiempo real que tardó en ejecutar todas las llamadas de esta forma:
+En otras palabras, se tardan unos 4568 ciclos de reloj en procesar [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) y [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) en esta máquina de 2 GHz. Puede convertir estos valores en el tiempo real que tardó en ejecutar todas las llamadas de esta forma:
 
 
 ```
@@ -203,47 +203,47 @@ En otras palabras, se tardan aproximadamente 4568 ciclos de reloj en procesar [*
 
 
 
-El uso de QueryPerformanceCounter requiere que agregue medidas de inicio y de detenerse a la secuencia de representación y use QueryPerformanceFrequency para convertir la diferencia (número de tics) en el número de ciclos de CPU o en la hora real. Identificar la técnica de medición es un buen inicio para desarrollar una implementación de generación de perfiles personalizada. Pero antes de empezar a realizar medidas, debe saber cómo tratar con la tarjeta de vídeo.
+El uso de QueryPerformanceCounter requiere que agregue medidas de inicio y de detenerse a la secuencia de representación y use QueryPerformanceFrequency para convertir la diferencia (número de tics) en el número de ciclos de CPU o en tiempo real. Identificar la técnica de medición es un buen inicio para desarrollar una implementación de generación de perfiles personalizada. Pero antes de empezar a realizar medidas, debe saber cómo tratar con la tarjeta de vídeo.
 
 ### <a name="focus-on-cpu-measurements"></a>Centrarse en las medidas de CPU
 
 Como se indicó anteriormente, la CPU y la GPU funcionan en paralelo para procesar el trabajo generado por las llamadas API. Una aplicación real requiere la generación de perfiles de ambos tipos de procesadores para averiguar si la aplicación está limitada por CPU o por GPU. Dado que el rendimiento de GPU es específico del proveedor, sería muy difícil generar resultados en este documento que cubren la variedad de tarjetas de vídeo disponibles.
 
-En su lugar, este documento se centrará solo en la generación de perfiles del trabajo realizado por la CPU mediante una técnica personalizada para medir el tiempo de ejecución y el trabajo del controlador. El trabajo de GPU se reducirá a una cantidad insignificante, de modo que los resultados de la CPU sean más visibles. Una ventaja de este enfoque es que esta técnica produce resultados en el Apéndice que debería poder correlacionar con las medidas. Para reducir el trabajo que requiere la tarjeta de vídeo a un nivel insignificante, basta con reducir el trabajo de representación a la menor cantidad posible. Esto se puede lograr limitando las llamadas a draw para representar un único triángulo y se puede restringir aún más para que cada triángulo solo contenga un píxel.
+En su lugar, este documento se centrará únicamente en la generación de perfiles del trabajo realizado por la CPU mediante una técnica personalizada para medir el tiempo de ejecución y el trabajo del controlador. El trabajo de GPU se reducirá a una cantidad insignificante, de modo que los resultados de la CPU sean más visibles. Una ventaja de este enfoque es que esta técnica produce resultados en el Apéndice que debería poder correlacionar con las medidas. Para reducir el trabajo que requiere la tarjeta de vídeo a un nivel insignificante, basta con reducir el trabajo de representación a la menor cantidad posible. Esto se puede lograr limitando las llamadas a draw para representar un único triángulo y se puede restringir aún más para que cada triángulo solo contenga un píxel.
 
-La unidad de medida usada en este documento para medir el trabajo de CPU será el número de ciclos de reloj de CPU en lugar de la hora real. Los ciclos de reloj de CPU tienen la ventaja de que es más portátil (para aplicaciones con cpu limitada) que el tiempo real transcurrido entre máquinas con velocidades de CPU diferentes. Esto se puede convertir fácilmente a la hora real si lo desea.
+La unidad de medida usada en este documento para medir el trabajo de CPU será el número de ciclos de reloj de CPU en lugar de la hora real. Los ciclos de reloj de CPU tienen la ventaja de que son más portátiles (para aplicaciones con cpu limitada) que el tiempo real transcurrido entre máquinas con diferentes velocidades de CPU. Esto se puede convertir fácilmente a la hora real si lo desea.
 
 En este documento no se tratan temas relacionados con el equilibrio de la carga de trabajo entre la CPU y la GPU. Recuerde que el objetivo de este documento no es medir el rendimiento general de una aplicación, sino mostrar cómo medir con precisión el tiempo que tardan el tiempo en tiempo de ejecución y el controlador para procesar las llamadas API. Con estas medidas precisas, puede asumir la tarea de presupuestar la CPU para comprender determinados escenarios de rendimiento.
 
-### <a name="controlling-runtime-and-driver-optimizations"></a>Controlar las optimizaciones de controladores y tiempo de ejecución
+### <a name="controlling-runtime-and-driver-optimizations"></a>Controlar las optimizaciones de tiempo de ejecución y controladores
 
-Con una técnica de medición identificada y una estrategia para reducir el trabajo de GPU, el siguiente paso es comprender las optimizaciones del motor en tiempo de ejecución y del controlador que se encuentran en el camino al generar perfiles.
+Con una técnica de medición identificada y una estrategia para reducir el trabajo de GPU, el siguiente paso es comprender las optimizaciones del motor en tiempo de ejecución y del controlador que se entornecen al generar perfiles.
 
-El trabajo de CPU se puede dividir en tres cubos: el trabajo de la aplicación, el trabajo en tiempo de ejecución y el trabajo del controlador. Ignore el trabajo de la aplicación, ya que está bajo control del programador. Desde el punto de vista de la aplicación, el tiempo de ejecución y el controlador son como las caja negra, ya que la aplicación no tiene control sobre lo que se implementa en ellas. La clave es comprender las técnicas de optimización que se pueden implementar en el tiempo de ejecución y el controlador. Si no entiende estas optimizaciones, es muy fácil llegar a una conclusión incorrecta sobre la cantidad de trabajo que la CPU está realizando en función de las medidas del perfil. En concreto, hay dos temas relacionados con algo denominado búfer de comandos y lo que puede hacer para ofuscar la generación de perfiles. Estos temas son:
+El trabajo de CPU se puede dividir en tres depósitos: el trabajo de la aplicación, el trabajo en tiempo de ejecución y el trabajo del controlador. Ignore el trabajo de la aplicación, ya que está bajo control del programador. Desde el punto de vista de la aplicación, el tiempo de ejecución y el controlador son como las caja negra, ya que la aplicación no tiene control sobre lo que se implementa en ellas. La clave es comprender las técnicas de optimización que se pueden implementar en el tiempo de ejecución y el controlador. Si no entiende estas optimizaciones, es muy fácil saltar a una conclusión incorrecta sobre la cantidad de trabajo que la CPU está realizando en función de las medidas del perfil. En concreto, hay dos temas relacionados con algo denominado búfer de comandos y lo que puede hacer para ofuscar la generación de perfiles. Estos temas son:
 
--   Optimización en tiempo de ejecución con el búfer de comandos. El búfer de comandos es una optimización en tiempo de ejecución que reduce el impacto de una transición en modo. Para controlar el tiempo de la transición de modo, vea [Controlar el búfer de comandos](#controlling-the-command-buffer).
--   Negación de los efectos de tiempo del búfer de comandos. El tiempo transcurrido de una transición en modo puede tener un gran impacto en las medidas de generación de perfiles. La estrategia para esto es hacer que la secuencia de representación [sea grande en comparación con la transición de modo](#make-the-render-sequence-large-compared-to-the-mode-transition).
+-   Optimización en tiempo de ejecución con el búfer de comandos. El búfer de comandos es una optimización en tiempo de ejecución que reduce el impacto de una transición de modo. Para controlar el tiempo de la transición de modo, vea [Controlar el búfer de comandos](#controlling-the-command-buffer).
+-   Negación de los efectos de control de tiempo del búfer de comandos. El tiempo transcurrido de una transición de modo puede tener un gran impacto en las medidas de generación de perfiles. La estrategia para esto es hacer que la secuencia de representación [sea grande en comparación con la transición de modo](#make-the-render-sequence-large-compared-to-the-mode-transition).
 
 ### <a name="controlling-the-command-buffer"></a>Controlar el búfer de comandos
 
 Cuando una aplicación realiza una llamada API, el tiempo de ejecución convierte la llamada API a un formato independiente del dispositivo (al que llamaremos un comando) y la almacena en el búfer de comandos. El búfer de comandos se agrega al diagrama siguiente.
 
-![diagrama de componentes de CPU, incluido un búfer de comandos](images/microbenchmarkcommandbuffer2.png)
+![diagrama de componentes de cpu, incluido un búfer de comandos](images/microbenchmarkcommandbuffer2.png)
 
 Cada vez que la aplicación realiza otra llamada API, el tiempo de ejecución repite esta secuencia y agrega otro comando al búfer de comandos. En algún momento, el tiempo de ejecución vacía el búfer (enviando los comandos al controlador). En Windows XP, al vaciar el búfer de comandos se produce una transición de modo a medida que el sistema operativo cambia del entorno de ejecución (que se ejecuta en modo de usuario) al controlador (que se ejecuta en modo kernel), como se muestra en el diagrama siguiente.
 
 -   modo de usuario: modo de procesador sin privilegios que ejecuta el código de la aplicación. Las aplicaciones en modo de usuario no pueden obtener acceso a los datos del sistema excepto a través de los servicios del sistema.
--   modo kernel: el modo de procesador con privilegios en el que Windows código ejecutivo basado en kernel. Un controlador o subproceso que se ejecuta en modo kernel tiene acceso a toda la memoria del sistema, acceso directo al hardware e instrucciones de CPU para realizar E/S con el hardware.
+-   modo kernel: el modo de procesador con privilegios en el que Windows código ejecutivo basado en el kernel. Un controlador o subproceso que se ejecuta en modo kernel tiene acceso a toda la memoria del sistema, acceso directo al hardware y las instrucciones de CPU para realizar E/S con el hardware.
 
 ![diagrama de transiciones entre el modo de usuario y el modo kernel](images/microbenchmarkcommandbuffer3.png)
 
-La transición se produce cada vez que la CPU cambia del usuario al modo kernel (y viceversa) y el número de ciclos que requiere es grande en comparación con una llamada API individual. Si el tiempo de ejecución envió cada llamada API al controlador cuando se invocó, cada llamada API incurriría en el costo de una transición en modo.
+La transición se produce cada vez que la CPU cambia del modo de usuario al modo kernel (y viceversa) y el número de ciclos que requiere es grande en comparación con una llamada API individual. Si el tiempo de ejecución envió cada llamada API al controlador cuando se invocó, cada llamada API incurriría en el costo de una transición de modo.
 
-En su lugar, el búfer de comandos es una optimización en tiempo de ejecución diseñada para reducir el costo efectivo de la transición en modo. El búfer de comandos pone en cola muchos comandos de controlador como preparación para una transición en modo único. Cuando el tiempo de ejecución agrega un comando al búfer de comandos, el control se devuelve a la aplicación. Un profiler no tiene forma de saber que los comandos del controlador probablemente ni siquiera se hayan enviado todavía al controlador. Como resultado, los números devueltos por un profiler de instrumentación fuera de uso son confusos, ya que mide el trabajo en tiempo de ejecución, pero no el trabajo del controlador asociado.
+En su lugar, el búfer de comandos es una optimización en tiempo de ejecución diseñada para reducir el costo efectivo de la transición de modo. El búfer de comandos pone en cola muchos comandos de controlador como preparación para una transición de modo único. Cuando el tiempo de ejecución agrega un comando al búfer de comandos, el control se devuelve a la aplicación. Un profiler no tiene ninguna manera de saber que los comandos del controlador probablemente ni siquiera se hayan enviado todavía al controlador. Como resultado, los números devueltos por un profiler de instrumentación fuera de uso son engañosos, ya que mide el trabajo en tiempo de ejecución, pero no el trabajo del controlador asociado.
 
-### <a name="profile-results-without-a-mode-transition"></a>Resultados del perfil sin transición de modo
+### <a name="profile-results-without-a-mode-transition"></a>Resultados del perfil sin una transición de modo
 
-Con la secuencia de representación del ejemplo 2, estas son algunas medidas de control de tiempo típicas que ilustran la magnitud de una transición en modo. Suponiendo que las llamadas [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) y [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) no provocan una transición de modo, un profiler de instrumentación estándar podría devolver resultados similares a los siguientes:
+Con la secuencia de representación del ejemplo 2, estas son algunas medidas de control de tiempo típicas que ilustran la magnitud de una transición de modo. Suponiendo que [**las llamadas SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) y [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) no provocan una transición de modo, un profiler de instrumentación estándar podría devolver resultados similares a los siguientes:
 
 
 ```
@@ -253,11 +253,11 @@ Number of cycles for DrawPrimitive        : 900
 
 
 
-Cada uno de estos números es la cantidad de tiempo que el tiempo de ejecución tarda en agregar estas llamadas al búfer de comandos. Puesto que no hay ninguna transición de modo, el controlador aún no ha realizado ningún trabajo. Los resultados del generador de perfiles son precisos, pero no miden todo el trabajo que la secuencia de representación finalmente hará que la CPU realice.
+Cada uno de estos números es la cantidad de tiempo que tarda el runtime en agregar estas llamadas al búfer de comandos. Puesto que no hay ninguna transición de modo, el controlador aún no ha realizado ningún trabajo. Los resultados del profiler son precisos, pero no miden todo el trabajo que la secuencia de representación finalmente hará que la CPU realice.
 
 ### <a name="profile-results-with-a-mode-transition"></a>Resultados del perfil con una transición de modo
 
-Ahora, mire lo que sucede en el mismo ejemplo cuando se produce una transición de modo. Esta vez, suponga [**que SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) [**y DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) provocan una transición de modo. Una vez más, un profiler de instrumentación fuera de la plataforma podría devolver resultados similares a estos:
+Ahora, mire lo que sucede en el mismo ejemplo cuando se produce una transición de modo. Esta vez, suponga [**que SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) [**y DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) provocan una transición de modo. Una vez más, un profiler de instrumentación fuera de la plataforma podría devolver resultados similares a los siguientes:
 
 
 ```
@@ -270,13 +270,13 @@ Number of cycles for DrawPrimitive        : 946,900
 El tiempo medido para [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) es aproximadamente el mismo, pero el aumento drástico de la cantidad de tiempo empleado en [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) se debe a la transición del modo. Esto es lo que sucede:
 
 1.  Suponga que el búfer de comandos tiene espacio para un comando antes de que se inicie la secuencia de representación.
-2.  [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) se convierte a un formato independiente del dispositivo y se agrega al búfer de comandos. En este escenario, esta llamada rellena el búfer de comandos.
+2.  [**SetTexture se**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) convierte a un formato independiente del dispositivo y se agrega al búfer de comandos. En este escenario, esta llamada rellena el búfer de comandos.
 3.  El tiempo de ejecución intenta agregar [**DrawPrimitive al**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) búfer de comandos, pero no puede, porque está lleno. En su lugar, el tiempo de ejecución vacía el búfer de comandos. Esto provoca la transición en modo kernel. Suponga que la transición tarda aproximadamente 5000 ciclos. Este tiempo contribuye al tiempo empleado en **DrawPrimitive.**
-4.  A continuación, el controlador procesa el trabajo asociado a todos los comandos que se vaciaron del búfer de comandos. Suponga que el tiempo del controlador para procesar los comandos que casi llenan el búfer de comandos es de aproximadamente 935 000 ciclos. Suponga que el trabajo del controlador asociado [**a SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) es de aproximadamente 2750 ciclos. Este tiempo contribuye al tiempo empleado en [**DrawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
-5.  Cuando el controlador finaliza su trabajo, la transición en modo de usuario devuelve el control al tiempo de ejecución. El búfer de comandos ahora está vacío. Suponga que la transición tarda aproximadamente 5000 ciclos.
-6.  La secuencia de representación finaliza mediante la conversión [**de DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) y su incorporación al búfer de comandos. Supongamos que esto tarda aproximadamente 900 ciclos. Este tiempo contribuye al tiempo empleado en **DrawPrimitive.**
+4.  A continuación, el controlador procesa el trabajo asociado a todos los comandos que se vaciaron del búfer de comandos. Suponga que el tiempo del controlador para procesar los comandos que casi llenan el búfer de comandos es de aproximadamente 935 000 ciclos. Suponga que el trabajo del controlador asociado a [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) es de aproximadamente 2750 ciclos. Este tiempo contribuye al tiempo empleado en [**DrawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
+5.  Cuando el controlador finaliza su trabajo, la transición de modo de usuario devuelve el control al tiempo de ejecución. El búfer de comandos ahora está vacío. Suponga que la transición tarda aproximadamente 5000 ciclos.
+6.  La secuencia de representación finaliza al convertir [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) y agregarla al búfer de comandos. Supongamos que esto tarda aproximadamente 900 ciclos. Este tiempo contribuye al tiempo empleado en **DrawPrimitive.**
 
-Al resumir los resultados, verá lo siguiente:
+Para resumir los resultados, verá lo siguiente:
 
 
 ```
@@ -287,13 +287,13 @@ DrawPrimitive = 947,950
 
 
 
-Al igual que la medida de [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) sin la transición de modo (900 ciclos), la medida de **DrawPrimitive** con la transición de modo (947 950 ciclos) es precisa, pero no sirve para presupuestos del trabajo de CPU. El resultado contiene el trabajo en tiempo de ejecución correcto, el trabajo del controlador para [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture), el trabajo del controlador para los comandos que precedieron a **SetTexture** y dos transiciones de modo. Sin embargo, a la medida le falta el trabajo del controlador **DrawPrimitive.**
+Al igual que la medida de [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) sin la transición de modo (900 ciclos), la medida para **DrawPrimitive** con la transición de modo (947 950 ciclos) es precisa, pero no sirve para presupuestos de trabajo de CPU. El resultado contiene el trabajo en tiempo de ejecución correcto, el trabajo del controlador para [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture), el trabajo del controlador para los comandos que precedieron a **SetTexture** y dos transiciones de modo. Sin embargo, a la medida le falta el trabajo del controlador **DrawPrimitive.**
 
-Una transición de modo podría producirse en respuesta a cualquier llamada. Depende de lo que estaba anteriormente en el búfer de comandos. Debe controlar la transición de modo para comprender cuánto trabajo de CPU (tiempo de ejecución y controlador) está asociado a cada llamada. Para ello, necesita un mecanismo para controlar el búfer de comandos y el tiempo de la transición en modo.
+Podría producirse una transición de modo en respuesta a cualquier llamada. Depende de lo que se encontraba anteriormente en el búfer de comandos. Debe controlar la transición de modo para comprender cuánto trabajo de CPU (tiempo de ejecución y controlador) está asociado a cada llamada. Para ello, necesita un mecanismo para controlar el búfer de comandos y el tiempo de la transición de modo.
 
-### <a name="the-query-mechanism"></a>Mecanismo de consulta
+### <a name="the-query-mechanism"></a>El mecanismo de consulta
 
-El mecanismo de consulta de Microsoft Direct3D 9 se diseñó para permitir que el tiempo de ejecución consultara la GPU para ver el progreso y devolver determinados datos de la GPU. Durante la generación de perfiles, si el trabajo de GPU se minimiza para que tenga un impacto insignificante en el rendimiento, puede devolver el estado de la GPU para ayudar a medir el trabajo del controlador. Después de todo, el trabajo del controlador se completa cuando la GPU ha visto los comandos del controlador. Además, se puede hacer que el mecanismo de consulta controle dos características del búfer de comandos que son importantes para la generación de perfiles: cuando el búfer de comandos se vacía y cuánto trabajo hay en el búfer.
+El mecanismo de consulta de Microsoft Direct3D 9 se diseñó para permitir que el tiempo de ejecución consultara la GPU para ver el progreso y devolver determinados datos de la GPU. Durante la generación de perfiles, si el trabajo de GPU se minimiza para que tenga un impacto insignificante en el rendimiento, puede devolver el estado de la GPU para ayudar a medir el trabajo del controlador. Después de todo, el trabajo del controlador se completa cuando la GPU ha visto los comandos del controlador. Además, se puede hacer que el mecanismo de consulta controle dos características de búfer de comandos que son importantes para la generación de perfiles: cuando el búfer de comandos se vacía y cuánto trabajo hay en el búfer.
 
 Esta es la misma secuencia de representación mediante el mecanismo de consulta:
 
@@ -337,12 +337,12 @@ Ejemplo 3: Usar una consulta para controlar el búfer de comandos
 Esta es una explicación más detallada de cada una de estas líneas de código:
 
 1.  Cree una consulta de eventos mediante la creación de un objeto de consulta con D3DQUERYTYPE \_ EVENT.
-2.  Agregue un marcador de evento de consulta al búfer de comandos mediante una llamada [**a Issue**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue)([**D3DISSUE \_ END**](d3dissue-end.md)). Este marcador indica al controlador que realice un seguimiento cuando la GPU termine de ejecutar los comandos anteriores al marcador.
-3.  La primera llamada vacía el búfer de comandos porque llamar a [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) con [**D3DGETDATA \_ FLUSH**](d3dgetdata-flush.md) obliga a vaciar el búfer de comandos. Cada llamada posterior está comprobando la GPU para ver cuándo termina de procesar todo el trabajo del búfer de comandos. Este bucle no devuelve S \_ OK hasta que la GPU está inactiva.
+2.  Agregue un marcador de evento de consulta al búfer de comandos mediante una llamada [**a Issue**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue)([**D3DISSUE \_ END**](d3dissue-end.md)). Este marcador indica al controlador que realice el seguimiento cuando la GPU termine de ejecutar los comandos anteriores al marcador.
+3.  La primera llamada vacía el búfer de comandos porque llamar a [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) con [**D3DGETDATA \_ FLUSH**](d3dgetdata-flush.md) obliga a vaciar el búfer de comandos. Cada llamada posterior está comprobando la GPU para ver cuándo finaliza el procesamiento de todo el trabajo del búfer de comandos. Este bucle no devuelve S \_ OK hasta que la GPU está inactiva.
 4.  Muestrear la hora de inicio.
-5.  Invoque las llamadas API de las que se está haciendo el perfil.
+5.  Invoque las llamadas API de las que se está perfilado.
 6.  Agregue un segundo marcador de evento de consulta al búfer de comandos. Este marcador se usará para realizar un seguimiento de la finalización de las llamadas.
-7.  La primera llamada vacía el búfer de comandos porque llamar a [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) con [**D3DGETDATA \_ FLUSH**](d3dgetdata-flush.md) obliga a vaciar el búfer de comandos. Cuando la GPU termina de procesar todo el trabajo del búfer de comandos, **GetData** devuelve S OK y el bucle se cierra porque \_ la GPU está inactiva.
+7.  La primera llamada vacía el búfer de comandos porque llamar a [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) con [**D3DGETDATA \_ FLUSH**](d3dgetdata-flush.md) obliga a vaciar el búfer de comandos. Cuando la GPU termina de procesar todo el trabajo del búfer de comandos, **GetData** devuelve S OK y el bucle se cierra porque la \_ GPU está inactiva.
 8.  Muestrear la hora de detenerse.
 
 Estos son los resultados medidos con QueryPerformanceCounter y QueryPerformanceFrequency:
@@ -382,20 +382,20 @@ Number of cycles for GetData              : 16,450
 
 
 
-El mecanismo de consulta nos ha permitido controlar el tiempo de ejecución y el trabajo del controlador que se está mide. Para comprender cada uno de estos números, esto es lo que sucede en respuesta a cada una de las llamadas API, junto con los intervalos estimados:
+El mecanismo de consulta nos ha permitido controlar el tiempo de ejecución y el trabajo del controlador que se está mide. Para comprender cada uno de estos números, esto es lo que sucede en respuesta a cada una de las llamadas API, junto con los tiempos estimados:
 
-1.  La primera llamada vacía el búfer de comandos mediante una [**llamada a GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) con [**D3DGETDATA \_ FLUSH**](d3dgetdata-flush.md). Cuando la GPU termina de procesar todo el trabajo del búfer de comandos, **GetData** devuelve S OK y el bucle se cierra porque \_ la GPU está inactiva.
-2.  La secuencia de representación se inicia mediante la conversión [**de SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) a un formato independiente del dispositivo y su adición al búfer de comandos. Supongamos que esto tarda unos 100 ciclos.
+1.  La primera llamada vacía el búfer de comandos mediante una llamada [**a GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) con [**D3DGETDATA \_ FLUSH**](d3dgetdata-flush.md). Cuando la GPU termina de procesar todo el trabajo del búfer de comandos, **GetData** devuelve S OK y el bucle se cierra porque la \_ GPU está inactiva.
+2.  La secuencia de representación comienza convirtiendo [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) a un formato independiente del dispositivo y agregándole al búfer de comandos. Suponga que esto tarda unos 100 ciclos.
 3.  [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) se convierte y se agrega al búfer de comandos. Supongamos que esto tarda aproximadamente 900 ciclos.
-4.  [**El**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue) problema agrega un marcador de consulta al búfer de comandos. Supongamos que esto tarda aproximadamente 200 ciclos.
-5.  [**GetData hace**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) que el búfer de comandos se vacie, lo que fuerza la transición en modo kernel. Supongamos que esto tarda aproximadamente 5000 ciclos.
+4.  [**El problema**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue) agrega un marcador de consulta al búfer de comandos. Suponga que esto tarda aproximadamente 200 ciclos.
+5.  [**GetData hace**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) que el búfer de comandos se vacie, lo que fuerza la transición en modo kernel. Suponga que esto tarda aproximadamente 5000 ciclos.
 6.  A continuación, el controlador procesa el trabajo asociado a las cuatro llamadas. Suponga que el tiempo del controlador para procesar [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) es de aproximadamente 2964 ciclos, [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) es de aproximadamente 3600 ciclos, [**el**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-issue) problema es de unos 200 ciclos. Por lo tanto, el tiempo total del controlador para los cuatro comandos es de aproximadamente 6450 ciclos.
     > [!Note]  
     > El controlador también tarda un poco en ver cuál es el estado de la GPU. Dado que el trabajo de GPU es trivial, la GPU ya debe realizarse. [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) devolverá S \_ OK en función de la probabilidad de que la GPU haya finalizado.
 
      
 
-7.  Cuando el controlador finaliza su trabajo, la transición en modo de usuario devuelve el control al tiempo de ejecución. El búfer de comandos ahora está vacío. Supongamos que esto tarda aproximadamente 5000 ciclos.
+7.  Cuando el controlador finaliza su trabajo, la transición de modo de usuario devuelve el control al tiempo de ejecución. El búfer de comandos ahora está vacío. Suponga que esto tarda aproximadamente 5000 ciclos.
 
 Los números de [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) incluyen:
 
@@ -411,19 +411,19 @@ driver work = 2964       + 3600          + 200   = 6450 cycles
 
 
 
-El mecanismo de consulta utilizado en combinación con QueryPerformanceCounter mide todo el trabajo de CPU. Esto se realiza con una combinación de marcadores de consulta y comparaciones de estado de consulta. Los marcadores de consulta de inicio y detención agregados al búfer de comandos se usan para controlar la cantidad de trabajo que hay en el búfer. Al esperar hasta que se devuelve el código de retorno correcto, la medida de inicio se realiza justo antes de que se inicie una secuencia de representación limpia y la medida de detenerse se realiza justo después de que el controlador haya finalizado el trabajo asociado al contenido del búfer de comandos. Esto captura de forma eficaz el trabajo de CPU realizado por el tiempo de ejecución y el controlador.
+El mecanismo de consulta utilizado en combinación con QueryPerformanceCounter mide todo el trabajo de CPU. Esto se hace con una combinación de marcadores de consulta y comparaciones de estado de consulta. Los marcadores de consulta de inicio y detenerse agregados al búfer de comandos se usan para controlar la cantidad de trabajo que hay en el búfer. Al esperar hasta que se devuelve el código de retorno correcto, la medida de inicio se realiza justo antes de que se inicie una secuencia de representación limpia y la medida de detenerse se realiza justo después de que el controlador haya finalizado el trabajo asociado al contenido del búfer de comandos. Esto captura de forma eficaz el trabajo de CPU realizado por el tiempo de ejecución, así como el controlador.
 
-Ahora que conoce el búfer de comandos y el efecto que puede tener en la generación de perfiles, debe saber que hay algunas otras condiciones que pueden hacer que el tiempo de ejecución vacíe el búfer de comandos. Debe tener cuidado con ellos en las secuencias de representación. Algunas de estas condiciones son en respuesta a las llamadas API y otras son en respuesta a los cambios de recursos en el tiempo de ejecución. Cualquiera de las condiciones siguientes provocará una transición de modo:
+Ahora que conoce el búfer de comandos y el efecto que puede tener en la generación de perfiles, debe saber que hay algunas otras condiciones que pueden hacer que el tiempo de ejecución vacíe el búfer de comandos. Debe estar atento a ellos en las secuencias de representación. Algunas de estas condiciones son en respuesta a las llamadas API y otras son respuesta a los cambios de recursos en el tiempo de ejecución. Cualquiera de las condiciones siguientes provocará una transición de modo:
 
--   Cuando se llama a uno de los métodos de bloqueo ([**Lock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-lock)) en un búfer de vértices, búfer de índice o textura (en determinadas condiciones con determinadas marcas).
+-   Cuando se llama a uno de los métodos de bloqueo [**(Bloqueo)**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-lock)en un búfer de vértices, búfer de índice o textura (en determinadas condiciones con determinadas marcas).
 -   Cuando se crea un búfer de dispositivo o vértice, búfer de índice o textura.
--   Cuando la última versión destruye un búfer de dispositivo o vértice, búfer de índice o textura.
+-   Cuando la última versión destruye un dispositivo o búfer de vértices, búfer de índice o textura.
 -   Cuando [**se llama a ValidateDevice.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-validatedevice)
--   Cuando [**se llama**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present) a Present.
+-   Cuando se llama a [**Present.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)
 -   Cuando se llena el búfer de comandos.
 -   Cuando [**se llama a GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) con D3DGETDATA \_ FLUSH.
 
-Tenga cuidado de observar estas condiciones en las secuencias de representación. Cada vez que se agrega una transición de modo, se agregarán 10 000 ciclos de trabajo del controlador a las medidas de generación de perfiles. Además, el búfer de comandos no tiene un tamaño estático. El tiempo de ejecución puede cambiar el tamaño del búfer en respuesta a la cantidad de trabajo que genera la aplicación. Se trata de otra optimización que depende de una secuencia de representación.
+Tenga cuidado de observar estas condiciones en las secuencias de representación. Cada vez que se agrega una transición de modo, se agregarán 10 000 ciclos de trabajo del controlador a las medidas de generación de perfiles. Además, el búfer de comandos no tiene un tamaño estático. El tiempo de ejecución puede cambiar el tamaño del búfer en respuesta a la cantidad de trabajo que está generando la aplicación. Se trata de otra optimización que depende de una secuencia de representación.
 
 Por lo tanto, tenga cuidado de controlar las transiciones de modo durante la generación de perfiles. El mecanismo de consulta ofrece un método sólido para vaciar el búfer de comandos para que pueda controlar el tiempo de la transición en modo, así como la cantidad de trabajo que contiene el búfer. Sin embargo, incluso esta técnica se puede mejorar reduciendo el tiempo de transición del modo para que sea insignificante con respecto al resultado medido.
 
@@ -589,11 +589,11 @@ Cada iteración del bucle contiene un cambio de estado y una llamada a draw. Res
 
 Este es el número medio de ciclos para agregar [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) a esta secuencia de representación. Esta misma técnica se puede aplicar a otros cambios de estado.
 
-¿Por [**qué SetTexture se denomina**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) simple cambio de estado? Dado que el estado que se establece está restringido para que la canalización haga la misma cantidad de trabajo cada vez que se cambia el estado. Restringir ambas texturas al mismo tamaño y formato garantiza la misma cantidad de trabajo para cada **llamada a SetTexture.**
+¿Por [**qué setTexture se**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) denomina un cambio de estado simple? Dado que el estado que se establece está restringido para que la canalización haga la misma cantidad de trabajo cada vez que se cambia el estado. Restringir ambas texturas al mismo tamaño y formato garantiza la misma cantidad de trabajo para cada **llamada a SetTexture.**
 
 ### <a name="profiling-a-state-change-that-needs-to-be-toggled"></a>Generación de perfiles de un cambio de estado que debe alternarse
 
-Hay otros cambios de estado que hacen que la cantidad de trabajo realizado por la canalización de gráficos cambie para cada iteración del bucle de representación. Por ejemplo, si la prueba z está habilitada, cada color de píxel actualiza un destino de representación solo después de probar el valor z del nuevo píxel con el valor z del píxel existente. Si la prueba z está deshabilitada, esta prueba por píxel no se realiza y la salida se escribe mucho más rápido. La habilitación o deshabilitación del estado de prueba z cambia drásticamente la cantidad de trabajo realizado (tanto por la CPU como por la GPU) durante la representación.
+Hay otros cambios de estado que hacen que la cantidad de trabajo realizado por la canalización de gráficos cambie para cada iteración del bucle de representación. Por ejemplo, si la prueba z está habilitada, cada color de píxel actualiza un destino de representación solo después de que se prueba el valor z del nuevo píxel con respecto al valor z del píxel existente. Si la prueba z está deshabilitada, esta prueba por píxel no se realiza y la salida se escribe mucho más rápido. La habilitación o deshabilitación del estado de prueba z cambia drásticamente la cantidad de trabajo realizado (tanto por la CPU como por la GPU) durante la representación.
 
 [**SetRenderState requiere**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) un estado de representación determinado y un valor de estado para habilitar o deshabilitar las pruebas z. El valor de estado concreto se evalúa en tiempo de ejecución para determinar cuánto trabajo es necesario. Es difícil medir este cambio de estado en un bucle de representación y seguir condición previamente el estado de la canalización para que cambie. La única solución es alternar el cambio de estado durante la secuencia de representación.
 
@@ -744,7 +744,7 @@ La generación de perfiles de cualquiera de estos cambios de estado en una secue
 
  
 
-o
+or
 
 
 
@@ -801,7 +801,7 @@ DrawPrimitive(D3DPT_TRIANGLELIST, 0, 7); // Draw 7 primitives, vertices 0 - 20
 
 Ejemplo 5b: una sola llamada a draw concatenada
 
-El tiempo de ejecución concatenará ambas llamadas a draw concretas en una sola llamada, lo que reduce el trabajo del controlador en un 50 % porque el controlador ahora solo necesitará procesar una llamada a draw.
+El tiempo de ejecución concatenará ambas llamadas a draw concretas en una sola llamada, lo que reduce el trabajo del controlador en un 50 %, ya que el controlador solo tendrá que procesar una llamada a draw.
 
 En general, el tiempo de ejecución concatenará dos o más llamadas [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) de back-to-back cuando:
 
@@ -855,7 +855,7 @@ El bucle recorre en iteración 1500 triángulos, estableciendo una textura y dib
 
 Ejemplo 5d: Ejemplo 5c con el cambio de estado fuera del bucle
 
-Mover [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) fuera del bucle de representación reduce la cantidad de trabajo asociado a **SetTexture,** ya que se llama una vez en lugar de 1500 veces. Un efecto secundario menos obvio es que el trabajo de [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) también se reduce de 1500 llamadas a 1 llamada porque se cumplen todas las condiciones para concatenar llamadas draw. Cuando se procesa la secuencia de representación, el tiempo de ejecución procesará 1500 llamadas en una sola llamada de controlador. Al mover esta línea de código, la cantidad de trabajo del controlador se ha reducido drásticamente:
+Mover [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) fuera del bucle de representación reduce la cantidad de trabajo asociado a **SetTexture,** ya que se llama una vez en lugar de 1500 veces. Un efecto secundario menos obvio es que el trabajo de [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) también se reduce de 1500 llamadas a 1 llamada porque se cumplen todas las condiciones para concatenar llamadas a draw. Cuando se procesa la secuencia de representación, el tiempo de ejecución procesará 1500 llamadas en una sola llamada de controlador. Al mover esta línea de código, la cantidad de trabajo del controlador se ha reducido drásticamente:
 
 
 ```
@@ -872,45 +872,45 @@ driver  work = 1 SetTexture + 1 DrawPrimitive
 
 
 
-Estos resultados son completamente correctos, pero son muy engañosos en el contexto de la pregunta original. La optimización de llamadas a draw ha provocado que la cantidad de trabajo del controlador se reduzca drásticamente. Este es un problema común al realizar la generación de perfiles personalizada. Al eliminar las llamadas de una secuencia de representación, tenga cuidado de evitar la concatenación de llamadas a draw. De hecho, este escenario es un ejemplo eficaz de la cantidad de mejora en el rendimiento del controlador posible por esta optimización en tiempo de ejecución.
+Estos resultados son completamente correctos, pero son muy confusos en el contexto de la pregunta original. La optimización de llamadas a draw ha provocado que la cantidad de trabajo del controlador se reduzca drásticamente. Se trata de un problema común al realizar la generación de perfiles personalizada. Al eliminar las llamadas de una secuencia de representación, tenga cuidado de evitar la concatenación de llamadas a draw. De hecho, este escenario es un ejemplo eficaz de la cantidad de mejora en el rendimiento del controlador posible por esta optimización en tiempo de ejecución.
 
-Por lo tanto, ahora sabe cómo medir los cambios de estado. Empiece generando [**perfiles drawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) A continuación, agregue cada cambio de estado adicional a la secuencia (en algunos casos agregando una llamada y, en otros casos, agregando dos llamadas) y mida la diferencia entre las dos secuencias. Puede convertir los resultados en tics, ciclos o tiempo. Al igual que la medición de secuencias de representación con QueryPerformanceCounter, medir los cambios de estado individuales se basa en el mecanismo de consulta para controlar el búfer de comandos y colocar los cambios de estado en un bucle para minimizar el impacto de las transiciones en modo. Esta técnica mide el costo de alternar un estado, ya que el profiler devuelve el promedio de habilitación y deshabilitación del estado.
+Por lo tanto, ahora sabe cómo medir los cambios de estado. Empiece generando [**perfiles drawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) A continuación, agregue cada cambio de estado adicional a la secuencia (en algunos casos agregando una llamada y, en otros casos, agregando dos llamadas) y mida la diferencia entre las dos secuencias. Puede convertir los resultados en tics, ciclos o tiempo. Al igual que la medición de secuencias de representación con QueryPerformanceCounter, la medición de los cambios de estado individuales se basa en el mecanismo de consulta para controlar el búfer de comandos y colocar los cambios de estado en un bucle para minimizar el impacto de las transiciones en modo. Esta técnica mide el costo de alternar un estado, ya que el profiler devuelve el promedio de habilitación y deshabilitación del estado.
 
-Con esta funcionalidad, puede empezar a generar secuencias de representación arbitrarias y medir con precisión el tiempo de ejecución y el trabajo del controlador asociados. A continuación, los números se pueden usar para responder preguntas presupuestas como "cuántas más de estas llamadas" se pueden realizar en la secuencia de representación mientras se mantiene una velocidad de fotogramas razonable, suponiendo escenarios con cpu limitada.
+Con esta funcionalidad, puede empezar a generar secuencias de representación arbitrarias y medir con precisión el tiempo de ejecución asociado y el trabajo del controlador. A continuación, los números se pueden usar para responder a preguntas presupuestadas, como "cuántas más de estas llamadas" se pueden realizar en la secuencia de representación mientras se mantiene una velocidad de fotogramas razonable, suponiendo escenarios con CPU limitada.
 
 ## <a name="summary"></a>Resumen
 
-En este documento se muestra cómo controlar el búfer de comandos para que se puedan perfiles de llamadas individuales con precisión. Los números de generación de perfiles se pueden generar en tics, ciclos o tiempo absoluto. Representan la cantidad de trabajo en tiempo de ejecución y controlador asociado a cada llamada API.
+En este documento se muestra cómo controlar el búfer de comandos para que se puedan perfiles de llamadas individuales con precisión. Los números de generación de perfiles se pueden generar en tics, ciclos o tiempo absoluto. Representan la cantidad de tiempo de ejecución y el trabajo del controlador asociados a cada llamada API.
 
 Empiece generando perfiles de una llamada \* a Draw Primitive en una secuencia de representación. Recuerde:
 
-1.  Use QueryPerformanceCounter para medir el número de tics por llamada API. Use QueryPerformanceFrequency para convertir los resultados en ciclos o tiempo si lo desea.
-2.  Use el mecanismo de consulta para vaciar el búfer de comandos antes de comenzar.
-3.  Incluya la secuencia de representación en un bucle para minimizar el impacto de la transición de modo.
+1.  Use QueryPerformanceCounter para medir el número de tics por llamada API. Use QueryPerformanceFrequency para convertir los resultados en ciclos u horas si lo desea.
+2.  Use el mecanismo de consulta para vaciar el búfer de comandos antes de iniciar.
+3.  Incluya la secuencia de representación en un bucle para minimizar el impacto de la transición en modo.
 4.  Use el mecanismo de consulta para medir cuándo la GPU ha completado su trabajo.
 5.  Tenga cuidado con la concatenación en tiempo de ejecución que tendrá un impacto importante en la cantidad de trabajo realizado.
 
-Esto proporciona un rendimiento de línea base [**para DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) que se puede usar para compilar a partir de . Para perfiles de un cambio de estado, siga estas sugerencias adicionales:
+Esto proporciona un rendimiento de línea de base [**para DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) que se puede usar para compilar. Para perfiles de un cambio de estado, siga estas sugerencias adicionales:
 
 1.  Agregue el cambio de estado a un perfil de secuencia de representación conocido de la nueva secuencia. Puesto que las pruebas se realizan en un bucle, esto requiere establecer el estado dos veces en valores opuestos (como habilitar y deshabilitar por ejemplo).
 2.  Compare la diferencia en los tiempos de ciclo entre las dos secuencias.
 3.  Para los cambios de estado que cambian significativamente la canalización (como [**SetTexture),**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture)resta la diferencia entre las dos secuencias para obtener el tiempo para el cambio de estado.
-4.  Para los cambios de estado que cambian significativamente la canalización (y, por lo tanto, requieren estados de cambio como [**SetRenderState),**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate)resta la diferencia entre las secuencias de representación y divida entre 2. Esto generará el número medio de ciclos para cada cambio de estado.
+4.  Para los cambios de estado que cambian significativamente la canalización (y, por lo tanto, requieren alternar estados como [**SetRenderState),**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate)resta la diferencia entre las secuencias de representación y divida entre 2. Esto generará el número medio de ciclos para cada cambio de estado.
 
-Pero tenga cuidado con las optimizaciones que provocan resultados inesperados al generar perfiles. Las optimizaciones de cambios de estado pueden establecer estados desaplazados, lo que hace que el trabajo se aplaza. Esto puede provocar resultados de perfiles que no son tan intuitivos como se esperaba. Las llamadas a draw que se concatenan reducirán drásticamente el trabajo del controlador, lo que puede dar lugar a conclusiones erróneas. Las secuencias de representación planeadas cuidadosamente se usan para evitar que se produzcan cambios de estado y dibujar concatenaciones de llamadas. El truco es evitar que las optimizaciones se den durante la generación de perfiles para que los números que genere sean números de presupuesto razonables.
+Pero tenga cuidado con las optimizaciones que provocan resultados inesperados al generar perfiles. Las optimizaciones de cambios de estado pueden establecer estados desaplazados, lo que hace que el trabajo se aplaza. Esto puede provocar resultados del perfil que no son tan intuitivos como se esperaba. Las llamadas a draw que se concatenan reducirán drásticamente el trabajo del controlador, lo que puede dar lugar a conclusiones erróneas. Las secuencias de representación planeadas cuidadosamente se usan para evitar que se produzcan concatenaciones de llamadas de dibujo y cambio de estado. El truco es evitar que las optimizaciones se generen durante la generación de perfiles para que los números que genere sean números de presupuesto razonables.
 
 > [!Note]  
-> Duplicar esta estrategia de generación de perfiles en una aplicación sin el mecanismo de consulta es más difícil. Antes de Direct3D 9, la única manera predecible de vaciar el búfer de comandos es bloquear una superficie activa (como un destino de representación) para esperar hasta que la GPU esté inactiva. Esto se debe a que el bloqueo de una superficie obliga al tiempo de ejecución a vaciar el búfer de comandos en caso de que haya comandos de representación en el búfer que deba actualizar la superficie antes de que se bloquee, además de esperar a que finalice la GPU. Esta técnica es funcional, aunque es más ofuscible que usar el mecanismo de consulta introducido en Direct3D 9.
+> Duplicar esta estrategia de generación de perfiles en una aplicación sin el mecanismo de consulta es más difícil. Antes de Direct3D 9, la única manera predecible de vaciar el búfer de comandos es bloquear una superficie activa (como un destino de representación) para esperar hasta que la GPU esté inactiva. Esto se debe a que el bloqueo de una superficie obliga al tiempo de ejecución a vaciar el búfer de comandos en caso de que haya comandos de representación en el búfer que deba actualizar la superficie antes de que se bloquee, además de esperar a que finalice la GPU. Esta técnica es funcional, aunque es más obtrusiva que usar el mecanismo de consulta introducido en Direct3D 9.
 
  
 
 ## <a name="appendix"></a>Apéndice
 
-Los números de esta tabla son un intervalo de aproximaciones para la cantidad de tiempo de ejecución y trabajo del controlador asociado a cada uno de estos cambios de estado. Las aproximaciones se basan en medidas reales realizadas en los controladores mediante las técnicas que se muestran en el documento. Estos números se generaron mediante el entorno de ejecución de Direct3D 9 y dependen del controlador.
+Los números de esta tabla son una serie de aproximaciones para la cantidad de tiempo de ejecución y trabajo del controlador asociados a cada uno de estos cambios de estado. Las aproximaciones se basan en medidas reales realizadas en los controladores mediante las técnicas que se muestran en el documento. Estos números se generaron mediante el entorno de ejecución de Direct3D 9 y dependen del controlador.
 
-Las técnicas de este documento están diseñadas para medir el tiempo de ejecución y el trabajo del controlador. En general, no es práctico proporcionar resultados que coincidan con el rendimiento de la CPU y la GPU en cada aplicación, ya que esto requeriría una matriz exhaustiva de secuencias de representación. Además, es especialmente difícil realizar pruebas comparativas del rendimiento de la GPU porque depende en gran medida de la configuración del estado en la canalización antes de la secuencia de representación. Por ejemplo, habilitar la combinación alfa no afecta poco a la cantidad de trabajo de CPU necesario, pero puede tener un gran impacto en la cantidad de trabajo realizado por la GPU. Por lo tanto, las técnicas de este documento restringen el trabajo de GPU a la cantidad mínima posible limitando la cantidad de datos que se deben representar. Esto significa que los números de la tabla coincidirán más estrechamente con los resultados obtenidos de las aplicaciones que tienen cpu limitada (en lugar de una aplicación que está limitada por la GPU).
+Las técnicas de este documento están diseñadas para medir el tiempo de ejecución y el trabajo del controlador. En general, no es práctico proporcionar resultados que coincidan con el rendimiento de la CPU y la GPU en cada aplicación, ya que esto requeriría una matriz exhaustiva de secuencias de representación. Además, es especialmente difícil realizar pruebas comparativas del rendimiento de la GPU porque depende en gran medida del estado configurado en la canalización antes de la secuencia de representación. Por ejemplo, habilitar la mezcla alfa no afecta poco a la cantidad de trabajo de CPU necesario, pero puede tener un gran impacto en la cantidad de trabajo realizado por la GPU. Por lo tanto, las técnicas de este documento restringen el trabajo de GPU a la cantidad mínima posible limitando la cantidad de datos que se deben representar. Esto significa que los números de la tabla coincidirán más estrechamente con los resultados obtenidos de las aplicaciones que tienen cpu limitada (en lugar de una aplicación que está limitada por la GPU).
 
-Se recomienda usar las técnicas presentadas para cubrir los escenarios y configuraciones más importantes para usted. Los valores de la tabla se pueden usar para comparar con los números generados. Dado que cada controlador varía, la única manera de generar los números reales que verá es generar resultados de generación de perfiles mediante sus escenarios.
+Se recomienda usar las técnicas presentadas para cubrir los escenarios y configuraciones más importantes para usted. Los valores de la tabla se pueden usar para compararlos con los números generados. Dado que cada controlador varía, la única manera de generar los números reales que verá es generar resultados de generación de perfiles mediante sus escenarios.
 
 
 
@@ -926,14 +926,14 @@ Se recomienda usar las técnicas presentadas para cubrir los escenarios y config
 | NORMALIZENORMALS                     | 2200 - 8100              |
 | LightEnable                          | 1300 - 9000              |
 | SetStreamSource                      | 3700 - 5800              |
-| Iluminación                             | 1700 - 7500              |
-| DIFFUSEMATERIALSOURCE                | 900 - 8300               |
+| ILUMINACIÓN                             | 1700 - 7500              |
+| DIFUSOMATERIALSOURCE                | 900 - 8300               |
 | AMBIENTMATERIALSOURCE                | 900 - 8200               |
 | COLORVERTEX                          | 800 - 7800               |
 | SetLight                             | 2200 - 5100              |
 | SetTransform                         | 3200 - 3750              |
 | SetIndices                           | 900 - 5600               |
-| Ambiente                              | 1150 - 4800              |
+| AMBIENTE                              | 1150 - 4800              |
 | SetTexture                           | 2500 - 3100              |
 | SPECULARMATERIALSOURCE               | 900 - 4600               |
 | EMISSIVEMATERIALSOURCE               | 900 - 4500               |
@@ -947,7 +947,7 @@ Se recomienda usar las técnicas presentadas para cubrir los escenarios y config
 | COLORARG2                            | 1300 - 2000              |
 | COLORARG1                            | 1300 - 1980              |
 | CULLMODE                             | 500 - 2570               |
-| Recorte                             | 500 - 2550               |
+| RECORTE                             | 500 - 2550               |
 | DrawIndexedPrimitive                 | 1200 - 1400              |
 | ADDRESSV                             | 1090 - 1500              |
 | ADDRESSU                             | 1070 - 1500              |

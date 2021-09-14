@@ -4,18 +4,18 @@ description: Direct2D proporciona la interfaz ID2D1PathGeometry para describir f
 ms.assetid: d7aad487-04e0-448d-bedf-b8dfadc7bbe9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e222d3d94eb1f9e944a1c5113baf938a7c3da6e86751a7be748798ace12a9611
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68a163e85d76a65f6b807ad1e4a9c9f740a32bf1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163165"
 ---
 # <a name="how-to-draw-and-fill-a-complex-shape"></a>Dibujar y rellenar una forma compleja
 
 Direct2D proporciona la [**interfaz ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) para describir formas complejas que pueden contener curvas, arcos y líneas. En este tema se describe cómo definir y representar una geometría de ruta de acceso.
 
-Para definir una geometría de ruta de acceso, use primero el método [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para crear la geometría de ruta de acceso y, a continuación, use el método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) de la geometría de ruta de acceso para recuperar un [**elemento ID2D1GeometrySink.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) A continuación, puede agregar líneas, curvas y arcos llamando a los distintos métodos Add del receptor.
+Para definir una geometría de ruta de acceso, use primero el método [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para crear la geometría de ruta de acceso y, a continuación, use el método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) de la geometría de ruta de acceso para recuperar un [**id2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink). A continuación, puede agregar líneas, curvas y arcos llamando a los distintos métodos Add del receptor.
 
 En el ejemplo siguiente se crea [**un id2D1PathGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)se recupera un receptor y se usa para definir una forma de reloj de reloj.
 
@@ -67,7 +67,7 @@ if (SUCCEEDED(hr))
 }
 ```
 
-Tenga en cuenta que [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) es un recurso independiente del dispositivo y, por tanto, se puede crear una vez y conservarse durante la vida útil de la aplicación. (Para obtener más información sobre los distintos tipos de recursos, vea Información [general sobre los recursos).](resources-and-resource-domains.md)
+Tenga en cuenta que [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) es un recurso independiente del dispositivo y, por tanto, se puede crear una vez y conservarse durante la vida útil de la aplicación. (Para obtener más información sobre los distintos tipos de recursos, vea Información [general sobre recursos).](resources-and-resource-domains.md)
 
 En el ejemplo siguiente se crean dos pinceles que se usarán para pintar el contorno y el relleno de la geometría del trazado.
 
@@ -134,4 +134,4 @@ void DemoApp::RenderGeometryExample()
 }
 ```
 
-En este ejemplo se ha omitido el código. Para obtener más información sobre las geometrías, vea Información [general sobre geometrías.](direct2d-geometries-overview.md)
+El código se ha omitido en este ejemplo. Para obtener más información sobre las geometrías, vea Información [general sobre geometrías.](direct2d-geometries-overview.md)

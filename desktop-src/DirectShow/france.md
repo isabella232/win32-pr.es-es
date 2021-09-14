@@ -4,12 +4,12 @@ ms.assetid: 852ead0e-3539-483d-943d-1779f7358ba5
 title: Francia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f977adeb65300d4e064604c11318e962778db6e6893535cd650cccf4016de0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 825efa71702dfe617325586d657665a302076369
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118401508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061176"
 ---
 # <a name="france"></a>Francia
 
@@ -431,7 +431,7 @@ Los índices de frecuencia de las tablas de Francia no son adecuados para su uso
 
 <dl> <dt>
 
-[Ajuste de televisión análoga internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

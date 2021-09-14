@@ -1,6 +1,6 @@
 ---
 title: Win32_TSGatewayResourceAuthorizationPolicy clase
-description: Describe una directiva Escritorio remoto autorización de recursos de escritorio remoto (RD \ 160; RAP). Un escritorio remoto \ 160; RAP se usa para decidir si un usuario está autorizado para conectarse a un recurso especificado a través de Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
+description: Describe una directiva Escritorio remoto autorización de recursos de escritorio remoto \160; RAP). Un escritorio remoto \ 160; RAP se usa para decidir si un usuario está autorizado para conectarse a un recurso especificado a través de Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: 284a868d-7856-4a25-ba7b-b4beba8ffffc
 ms.tgt_platform: multiple
 keywords:
@@ -24,12 +24,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9748ddc4feccd504d823025ea70877004417717d625c904ccae4445f05e6eb03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c262cb1ce3351c89dc5d7edf3b0d106116e83b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118999825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890617"
 ---
 # <a name="win32_tsgatewayresourceauthorizationpolicy-class"></a>Clase \_ TSGatewayResourceAuthorizationPolicy de Win32
 
@@ -52,7 +52,7 @@ class Win32_TSGatewayResourceAuthorizationPolicy
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSGatewayResourceAuthorizationPolicy de Win32** tiene estos tipos de miembros:
 
@@ -68,7 +68,7 @@ La **clase \_ TSGatewayResourceAuthorizationPolicy de Win32** tiene estos métod
 | Método                                                                                          | Descripción                                                                                                         |
 |:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
 | [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md)       | Agrega los nombres de grupo de usuarios especificados a los grupos de usuarios existentes en **la propiedad UserGroupNames.**<br/>      |
-| [**Crear**](create-win32-tsgatewayresourceauthorizationpolicy.md)                             | Crea un ARCHIVO DE ESCRITORIO REMOTO.<br/>                                                                                       |
+| [**Crear**](create-win32-tsgatewayresourceauthorizationpolicy.md)                             | Crea un RAP de Escritorio remoto.<br/>                                                                                       |
 | [**Eliminar**](delete-win32-tsgatewayresourceauthorizationpolicy.md)                             | Elimina el RAP de Escritorio remoto actual.<br/>                                                                              |
 | [**RemoveUserGroupNames**](removeusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md) | Quita los nombres de grupo de usuarios especificados de los grupos de usuarios existentes en **la propiedad UserGroupNames.**<br/> |
 | [**SetDescription**](setdescription-win32-tsgatewayresourceauthorizationpolicy.md)             | Establece la **propiedad Description** para RD RAP.<br/>                                                        |
@@ -102,7 +102,7 @@ Descripción del RD RAP. Esta propiedad se cambia con el [**método SetDescripti
 
 </dd> <dt>
 
-**Habilitado**
+**Enabled**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -111,7 +111,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si este RAP de Escritorio remoto está habilitado. Esta propiedad se cambia con el [**método SetEnabled.**](setenabled-win32-tsgatewayresourceauthorizationpolicy.md)
+Indica si este RD RAP está habilitado. Esta propiedad se cambia con el [**método SetEnabled.**](setenabled-win32-tsgatewayresourceauthorizationpolicy.md)
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre de RD RAP. Esta propiedad se cambia con el [**método SetName.**](setname-win32-tsgatewayresourceauthorizationpolicy.md)
@@ -153,7 +153,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Lista de nombres de protocolo separados por punto y coma que están habilitados para esta directiva. Los nombres deben coincidir con la devolución del [**método GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md) de la [**clase \_ TSGatewayServerSettings de Win32.**](win32-tsgatewayserversettings.md)
+Lista de nombres de protocolo separados por punto y coma que están habilitados para esta directiva. Los nombres deben coincidir con la devolución del [**método GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md) de la clase [**\_ TSGatewayServerSettings de Win32.**](win32-tsgatewayserversettings.md)
 
 </dd> <dt>
 
@@ -215,15 +215,15 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Lista separada por punto y coma de nombres de grupo de usuarios. Si el usuario pertenece a cualquiera de estos grupos de usuarios, se permitirá el acceso. Esta propiedad se cambia con los [**métodos SetUserGroupNames,**](setusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md) [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md)y [**RemoveUserGroupNames.**](removeusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md)
+Lista de nombres de grupos de usuarios separados por punto y coma. Si el usuario pertenece a cualquiera de estos grupos de usuarios, se permitirá el acceso. Esta propiedad se cambia con los [**métodos SetUserGroupNames**](setusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md), [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md)y [**RemoveUserGroupNames.**](removeusergroupnames-win32-tsgatewayresourceauthorizationpolicy.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para usar esta clase.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las clases Windows Management Instrumentation (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -233,17 +233,17 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
+[**TSGatewayConnection de Win32 \_**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
 [**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
@@ -252,13 +252,13 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 [**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayRADIUSServer**](win32-tsgatewayradiusserver.md)
+[**TSGatewayRADIUSServer de Win32 \_**](win32-tsgatewayradiusserver.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
+[**TSGatewayResourceGroup de Win32 \_**](win32-tsgatewayresourcegroup.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**TSGatewayServerSettings de Win32 \_**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

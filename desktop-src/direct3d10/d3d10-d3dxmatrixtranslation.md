@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 5e6b5daf7bc3504e9ab79bc9ea5db70057e1b1e0f7dc20e8fd53a09958c2deb7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7abf55e5b51091de5d823ba837cdc8ad51e3940b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120028705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970055"
 ---
 # <a name="d3dxmatrixtranslation-function-d3dx10mathh"></a>Función D3DXMatrixTranslation (D3DX10Math.h)
 
@@ -96,7 +96,7 @@ Matriz de traslación.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

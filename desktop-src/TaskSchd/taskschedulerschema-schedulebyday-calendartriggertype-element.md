@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f29cc4b702ba93aec44e3460279976f50c5563463accfb58b920ad79b757126a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 614777ede63605dc7ed6936bda952c6071bda371
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118131587"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968684"
 ---
 # <a name="schedulebyday-calendartriggertype-element"></a>Elemento ScheduleByDay (calendarTriggerType)
 
@@ -53,7 +53,7 @@ El tipo complejo [**calendarTriggerType**](taskschedulerschema-calendartriggerty
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los tipos de elemento complejo [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) definen el elemento secundario enumerado anteriormente.
 
@@ -93,7 +93,7 @@ Para obtener un ejemplo completo del XML de una tarea que especifica una program
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

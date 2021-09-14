@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfe2387b6cc071e9146176e6cf8b84da1870c0671572f184fea7e6cbadef03d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9335817b9c954958c97294a88291f83bf0e967d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060828"
 ---
 # <a name="id3dx11effectdepthstencilvariablegetbackingstore-method"></a>Método ID3DX11EffectDepthStencilVariable::GetBackingStore
 
@@ -68,7 +68,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las variables de efecto se guardan en memoria en el almacén de respaldo; cuando se aplica una técnica, los valores de la tienda de respaldo se copian en el dispositivo. Los datos de almacenamiento de respaldo se pueden usar para volver a crear la variable cuando sea necesario.
 
@@ -88,7 +88,7 @@ Las variables de efecto se guardan en memoria en el almacén de respaldo; cuando
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: f46e82bd-70b3-46a2-8246-a1eadfdc589d
 title: Impedir que un paquete antiguo se instale en una versión más reciente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e992cc1e32d2b25e5af587c00ca4f8ee28e4b09fd3100cb12b382ae90f8c1d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 320ab062c4ffbc740d85c59ece3d3baaa63f4209
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161453"
 ---
 # <a name="preventing-an-old-package-from-installing-over-a-newer-version"></a>Impedir que un paquete antiguo se instale en una versión más reciente
 
@@ -31,7 +31,7 @@ Windows Los paquetes de actualización del instalador se pueden crear para que l
 
     
 
-    | UpgradeCode                            | VersionMin | VersionMax | Lenguaje | Atributos                                | Quitar | ActionProperty  |
+    | UpgradeCode                            | VersionMin | VersionMax | Lenguaje | Atributos                                | Remove | ActionProperty  |
     |----------------------------------------|------------|------------|----------|-------------------------------------------|--------|-----------------|
     | {E7BE6D45-49FF-4701-A17E-BDCC98CE180D} | 3.0        |            |          | msidbUpgradeAttributesOnlyDetect          |        | NEWPRODUCTFOUND |
     | {E7BE6D45-49FF-4701-A17E-BDCC98CE180D} | 1.0        | 3.0        |          | msidbUpgradeAttributesVersionMinInclusive |        | UPGRADEFOUND    |

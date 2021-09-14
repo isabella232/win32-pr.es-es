@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbea7c787ac2e2aa7d988e052e2ca548a49a338c9b9f981ce73d51c40e0b4edd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37f5d9669370e6df03d783ae1cb82a5eeb5a9142
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118300654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060874"
 ---
 # <a name="d3dx11_normalmap_flag-enumeration"></a>Enumeración D3DX11 \_ NORMALMAP \_ FLAG
 
@@ -31,7 +31,7 @@ ms.locfileid: "118300654"
 
 Opciones de mapa normales. Puede combinar cualquier número de estas marcas mediante una operación OR bit a bit.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -85,7 +85,7 @@ Calcula el término de oclusión por píxel y lo codifica en el alfa. Un alfa de
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**D3DX11ComputeNormalMap**](d3dx11computenormalmap.md)usa estas marcas.
 

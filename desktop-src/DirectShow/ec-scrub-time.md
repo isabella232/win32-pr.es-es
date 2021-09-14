@@ -4,12 +4,12 @@ ms.assetid: 2c2ef8b8-7bee-4cd8-ad87-b48d6a48aa0e
 title: EC_SCRUB_TIME (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d4d3cc09d286f6955dda30aeb77288b75e90e8c66777a5f9f16246507f64b45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 530362520f8e80ef06a769383f82dee1d60d66c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161512"
 ---
 # <a name="ec_scrub_time"></a>HORA DE \_ LIMPIEZA \_ DE EC
 
@@ -37,7 +37,7 @@ Especifica la marca de tiempo para el paso de fotograma más reciente.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El presentador del filtro [**Representador de**](enhanced-video-renderer-filter.md) vídeo mejorado (EVR) envía este mensaje al EVR cuando completa un paso de fotograma.
 
@@ -51,7 +51,7 @@ El presentador del filtro [**Representador de**](enhanced-video-renderer-filter.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

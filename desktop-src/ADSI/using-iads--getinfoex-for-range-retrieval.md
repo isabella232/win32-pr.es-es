@@ -1,6 +1,6 @@
 ---
 title: Uso de IAD GetInfoEx para la recuperación de intervalos
-description: El método IADs.GetInfoEx se puede usar para recuperar un intervalo de valores de atributo. El intervalo de valores que se va a recuperar se especifica en la matriz de nombres de atributo que se pasa al método .
+description: El método IADs.GetInfoEx se puede usar para recuperar un intervalo de valores de atributo. El intervalo de valores que se van a recuperar se especifica en la matriz de nombres de atributo que se pasa al método .
 ms.assetid: 2098862f-e5ec-4912-a941-8faceade22ee
 ms.tgt_platform: multiple
 keywords:
@@ -8,16 +8,16 @@ keywords:
 - IADs GetInfoEx ADSI , mediante para la recuperación de intervalos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 218f6cf8c0b0346a5b5554f870f5729bd55f8b221a3ebe0e425305333ee00cf0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50681facd811adf26a89754fecb5490ee059eed6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119082199"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970388"
 ---
 # <a name="using-iadsgetinfoex-for-range-retrieval"></a>Uso de IADs::GetInfoEx para la recuperación de intervalos
 
-El [**método IADs.GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) se puede usar para recuperar un intervalo de valores de atributo. El intervalo de valores que se va a recuperar se especifica en la matriz de nombres de atributo que se pasa al método .
+El [**método IADs.GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) se puede usar para recuperar un intervalo de valores de atributo. El intervalo de valores que se van a recuperar se especifica en la matriz de nombres de atributo que se pasa al método .
 
 Los especificadores de intervalo para una consulta de propiedades requieren el formato siguiente:
 

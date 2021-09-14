@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 29c143a1ca4996b0fbc643bfa1ec44157742d19b0badcc6c0f0b0340d0a3d6ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ccd4806bfa368fafa481500d3bd28e0ff55b7d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117910292"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969723"
 ---
 # <a name="d3dxvec4minimize-function"></a>Función D3DXVec4Minimize
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
 Puntero a una [**estructura D3DXVECTOR4**](d3dxvector4.md) que se conste de los componentes más pequeños de los dos vectores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec4Minimize** se puede usar como parámetro para otra función.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

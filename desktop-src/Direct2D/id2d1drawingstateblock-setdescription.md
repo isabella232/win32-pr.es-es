@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 1a32ae7231975bc34f24eed06b1ff09e3a398f174b3345ec8f97e15ed97b709b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7f3430f9475a95ac600212145bbc106708977499
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163038"
 ---
 # <a name="id2d1drawingstateblocksetdescription-methods"></a>Métodos ID2D1DrawingStateBlock::SetDescription
 
@@ -46,7 +46,7 @@ Especifica la parte del modo de suavizado de contorno, la transformación y las 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

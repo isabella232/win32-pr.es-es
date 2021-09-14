@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: e92d91c13718462487eb3dac07ba1d5fc61a2d428bf610dd9575b080d375676d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 33cf03258933055aa18aecb42fffe4d8f33b1e51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119857455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963768"
 ---
 # <a name="d3dfillmode-enumeration"></a>D3DFILLMODE (enumeración)
 
 Define constantes que describen el modo de relleno.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -42,7 +42,7 @@ typedef enum D3DFILLMODE {
 
 <dl> <dt>
 
-<span id="D3DFILL_POINT"></span><span id="d3dfill_point"></span>**PUNTO D3DFILL \_**
+<span id="D3DFILL_POINT"></span><span id="d3dfill_point"></span>**D3DFILL \_ POINT**
 </dt> <dd>
 
 Puntos de relleno.
@@ -52,25 +52,25 @@ Puntos de relleno.
 <span id="D3DFILL_WIREFRAME"></span><span id="d3dfill_wireframe"></span>**D3DFILL \_ WIREFRAME**
 </dt> <dd>
 
-Rellene los wireframes.
+Rellene wireframes.
 
 </dd> <dt>
 
 <span id="D3DFILL_SOLID"></span><span id="d3dfill_solid"></span>**D3DFILL \_ SOLID**
 </dt> <dd>
 
-Rellene los sólidos.
+Rellenar los sólidos.
 
 </dd> <dt>
 
 <span id="D3DFILL_FORCE_DWORD"></span><span id="d3dfill_force_dword"></span>**D3DFILL \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El estado de representación FILLMODE de D3DRS usa los valores \_ de este tipo enumerado.
 
@@ -84,7 +84,7 @@ El estado de representación FILLMODE de D3DRS usa los valores \_ de este tipo e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

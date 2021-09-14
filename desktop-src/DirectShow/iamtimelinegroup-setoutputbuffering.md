@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8187918a4f6d04df9c8c0eaff387a092f18181071ce6ba41c83de44fcb095bbe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ab249c1a6af63b0fc0f2ee535daeab1dec9cd558
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119915195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892076"
 ---
 # <a name="iamtimelinegroupsetoutputbuffering-method"></a>IamTimelineGroup::SetOutputBuffering (método)
 
@@ -56,7 +56,7 @@ Número de fotogramas que se almacenarán en búfer durante la versión prelimin
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un búfer mayor requiere más memoria, pero puede dar lugar a una vista previa más fluida, especialmente durante los efectos o transiciones que requieren más tiempo para representarse. El búfer predeterminado es de 30 fotogramas.
 
@@ -81,7 +81,7 @@ Un búfer mayor requiere más memoria, pero puede dar lugar a una vista previa m
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

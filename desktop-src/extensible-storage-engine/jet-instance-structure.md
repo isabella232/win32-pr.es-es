@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_INSTANCE'
-title: Estructura de JET_INSTANCE
+description: 'Más información sobre: estructura JET_INSTANCE datos'
+title: JET_INSTANCE estructura
 TOCTitle: JET_INSTANCE structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_INSTANCE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: a676c0815ba20b725da0216a7c9a145c1c1cfd68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965707"
 ---
-# <a name="jet_instance-structure"></a>Estructura de JET_INSTANCE
+# <a name="jet_instance-structure"></a>JET_INSTANCE estructura
 
-Un JET_INSTANCE contiene un identificador para la instancia de la base de datos que se va a usar para las llamadas a la API de JET.
+Un JET_INSTANCE contiene un identificador para la instancia de la base de datos que se usará para las llamadas a la API jet.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,10 +57,10 @@ public struct JET_INSTANCE : IEquatable<JET_INSTANCE>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_INSTANCE](./jet-instance-members.md)
+[JET_INSTANCE miembros](./jet-instance-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

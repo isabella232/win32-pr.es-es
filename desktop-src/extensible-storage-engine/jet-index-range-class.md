@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_INDEX_RANGE (clase)'
-title: Clase JET_INDEX_RANGE (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_INDEX_RANGE clase'
+title: JET_INDEX_RANGE (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_INDEX_RANGE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_range(v=EXCHG.10)
@@ -25,23 +25,23 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 09f281e4061a993188e249ca4b341485e81be2ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817198"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969128"
 ---
-# <a name="jet_index_range-class"></a>JET_INDEX_RANGE (clase)
+# <a name="jet_index_range-class"></a>JET_INDEX_RANGE clase
 
-Contiene la definición de [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).
+Contiene la definición [de JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit).](./windows8api.jetprereadindexranges-method.md)
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,10 +60,10 @@ public class JET_INDEX_RANGE
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_INDEX_RANGE](./jet-index-range-members.md)
+[JET_INDEX_RANGE miembros](./jet-index-range-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

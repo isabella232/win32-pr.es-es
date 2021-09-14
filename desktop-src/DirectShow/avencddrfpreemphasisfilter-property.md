@@ -1,15 +1,15 @@
 ---
 description: Especifica la configuración de protección de sobremodulación de radiofrecuencia en una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 ms.assetid: 2befb216-8735-4aed-80e7-22e31b2b147e
-title: Propiedad AVEncDDRFPreEmphasisFilter (Codecapi.h)
+title: Propiedad AVEncDRFPreEmphasisFilter (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 234d9e9bd612acfe365025bbdd99e8a5d7d706c090856b4d86f2834e0975fbdd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5a1cf48bfebd7374471e3d9a2a318d35e303cfc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120103395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161901"
 ---
 # <a name="avencddrfpreemphasisfilter-property"></a>Propiedad AVEncDDRFPreEmphasisFilter
 
@@ -31,13 +31,13 @@ Esta propiedad es de lectura y escritura.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio aplicaciones para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

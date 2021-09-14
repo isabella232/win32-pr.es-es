@@ -4,16 +4,16 @@ description: Determina si el sistema operativo (SO) admite un tipo de notificaci
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 0c5097f89583f0f6b04e0e8fb033446aae45743a8fb5a7fe9134f34bcc5e05fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78730167e7ec139733ee1e4011d2e5e59c32782b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119118709"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966340"
 ---
 # <a name="idxcoreadapterfactoryisnotificationtypesupported-method"></a>IDXCoreAdapterFactory::IsNotificationTypeSupported (método)
 
-Determina si el sistema operativo (SO) admite un tipo de notificación especificado. Para obtener instrucciones de programación y ejemplos de código, vea [Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
+Determina si el sistema operativo (SO) admite un tipo de notificación especificado. Para obtener instrucciones de programación y ejemplos de código, [vea Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -28,7 +28,7 @@ virtual bool STDMETHODCALLTYPE IsNotificationTypeSupported(
 
 Tipo: **[DXCoreNotificationType](./ne-dxcore_interface-dxcorenotificationtype.md)**
 
-Tipo de notificación para la que está consultando sobre la compatibilidad. Consulte la tabla de [DXCoreNotificationType para](./ne-dxcore_interface-dxcorenotificationtype.md) obtener información sobre los tipos de notificación.
+Tipo de notificación para la que está consultando el soporte técnico. Consulte la tabla de [DXCoreNotificationType para](./ne-dxcore_interface-dxcorenotificationtype.md) obtener información sobre los tipos de notificación.
 
 ## <a name="returns"></a>Devoluciones
 
@@ -36,7 +36,7 @@ Tipo: **bool**
 
 Devuelve `true` si el sistema admite el tipo de notificación. De lo contrario, devuelve `false`.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede llamar a **IsNotificationTypeSupported** para determinar si esta versión del sistema operativo conoce un tipo de notificación determinado. Por ejemplo, un tipo de notificación que se introduce en una versión determinada de Windows es desconocido para las versiones anteriores de Windows.
 

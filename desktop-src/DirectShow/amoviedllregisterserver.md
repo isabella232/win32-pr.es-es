@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d09c566a9a97b1b755c81ca7483251a23dd0b0fed037c38d5e5a5cc06216c155
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81b6e73b1988d3eb97abdf9a5d2415ecbd62d8c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118002032"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162325"
 ---
 # <a name="amoviedllregisterserver-function"></a>Función AMovieDllRegisterServer
 
@@ -55,7 +55,7 @@ Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

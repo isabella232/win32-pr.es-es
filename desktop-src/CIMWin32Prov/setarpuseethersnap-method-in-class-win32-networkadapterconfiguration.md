@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 57efc6b624e10cf06d024418e3bd29104b8d50c986c2e74401dc66c4cab64ae2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 52e3ce42948d5c40bbde3329b37ee3fa506c47ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119760185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970299"
 ---
 # <a name="setarpuseethersnap-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetArpUseEtherSNAP de la clase \_ NetworkAdapterConfiguration de Win32
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -404,19 +404,19 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, la pila transmite paquetes en formato Ethernet Digital, Intel, Intel (DIX). Siempre recibe ambos formatos.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo [de código Modify ARP Queries to Use EtherSNAP](https://Gallery.TechNet.Microsoft.Com/2fe24075-fdb1-486d-8c0b-d25075fd8f21) VBScript de la Galería de TechNet usa **SetArpUseEtherSNAP para** configurar los adaptadores de red en un equipo para usar la codificación SNAP 802.3 para paquetes Ethernet.
+El ejemplo de código Modify ARP Queries to Use EtherSNAP VBScript (Modificar consultas ARP para usar [VbScript de EtherSNAP)](https://Gallery.TechNet.Microsoft.Com/2fe24075-fdb1-486d-8c0b-d25075fd8f21) en la Galería de TechNet usa **SetArpUseEtherSNAP para** configurar los adaptadores de red en un equipo para usar la codificación SNAP 802.3 para paquetes Ethernet.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -426,7 +426,7 @@ El ejemplo [de código Modify ARP Queries to Use EtherSNAP](https://Gallery.Tech
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -436,7 +436,7 @@ El ejemplo [de código Modify ARP Queries to Use EtherSNAP](https://Gallery.Tech
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

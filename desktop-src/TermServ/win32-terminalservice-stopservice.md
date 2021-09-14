@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método StopService Servicios de Escritorio remoto
 - Método StopService Servicios de Escritorio remoto , Win32_Service clase
-- Win32_Service clase Servicios de Escritorio remoto , método StopService
+- Win32_Service clase Servicios de Escritorio remoto método , StopService
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4edbdb9e3b7fa48476f70e550bf1255de344880df440381fcd48adefa2f68d6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e1b21db330bb9111b96fb244200845cb83b3153
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118604365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890732"
 ---
-# <a name="stopservice-method-of-the-win32_service-class-sdoiash-for-the-terminal-service"></a>Método StopService de la Win32_Service clase (Sdoias.h) para terminal service
+# <a name="stopservice-method-of-the-win32_service-class-sdoiash-for-the-terminal-service"></a>Método StopService de Win32_Service clase (Sdoias.h) para terminal service
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **StopService** coloca el servicio, representado por el objeto [**\_ TerminalService de Win32,**](win32-terminalservice.md) en estado detenido.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -224,7 +224,7 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de determinar qué servicios se pueden detener o pausar, puede usar los métodos **StopService** y [**PauseService**](win32-terminalservice-pauseservice.md) para detener y pausar los servicios. La decisión de detener un servicio en lugar de pausarlo, o viceversa, depende de varios factores, incluidos los siguientes:
 
@@ -248,18 +248,18 @@ El ejemplo de VBScript Detener un servicio y [Sus dependientes](https://Gallery.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
-| Header<br/>                   | <dl> <dt>Sdoias.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Sdoias.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

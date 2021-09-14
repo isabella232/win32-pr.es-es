@@ -1,6 +1,6 @@
 ---
 title: Función CBCreateClientInstance (Cbclient.h)
-description: Crea una instancia del cliente RPC Conexión a Escritorio remoto Broker.
+description: Crea una instancia del Conexión a Escritorio remoto RPC de Broker.
 ms.assetid: 700E47BC-C547-44AB-8607-B9797D542AA7
 ms.tgt_platform: multiple
 keywords:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59b0873fac5b33370333ec8f5774e5b8dbbcd896f6afb9777a6dd74dd6913dcc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2b30f2d236bcc90dfa4977f54d56a5d1717d18a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118610152"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891329"
 ---
 # <a name="cbcreateclientinstance-function"></a>Función CBCreateClientInstance
 
-Crea una instancia del cliente RPC Conexión a Escritorio remoto Broker.
+Crea una instancia del Conexión a Escritorio remoto RPC de Broker.
 
 ## <a name="syntax"></a>Sintaxis
 

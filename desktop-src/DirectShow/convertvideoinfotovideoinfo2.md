@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3f1865652edf01a612ba7d1a46520f92a8461c9ba53a80395e27e6252e0018ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54611c83c30ad65a806a077dc51c933a9f881636
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161560"
 ---
 # <a name="convertvideoinfotovideoinfo2-function"></a>Función ConvertVideoInfoToVideoInfo2
 
@@ -53,7 +53,7 @@ Puntero a la [**estructura AM MEDIA TYPE \_ \_ que**](/windows/win32/api/strmif/
 
 Devuelve S \_ OK o E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función asigna una nueva estructura **VIDEOINFOHEADER2,** copia los miembros de la estructura **VIDEOINFOHEADER** en ella y reemplaza la estructura anterior por la nueva estructura en el bloque de formato del tipo de medio.
 
@@ -68,7 +68,7 @@ Esta función asigna una nueva estructura **VIDEOINFOHEADER2,** copia los miembr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

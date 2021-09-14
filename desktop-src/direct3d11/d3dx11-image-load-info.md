@@ -4,7 +4,7 @@ description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) e
 ms.assetid: 6cd2f590-4e15-41e6-9f04-cd91eeb082db
 keywords:
 - D3DX11_IMAGE_LOAD_INFO estructura direct3D 11
-- LPD3DX11_IMAGE_LOAD_INFO puntero de estructura direct3D 11
+- LPD3DX11_IMAGE_LOAD_INFO puntero de estructura de directorio Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c45bc3b9ec948c869b121190f52435a257141f1e5a6e9f36c347ab29bafb5522
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2905d135a515f4ef90557ac74c35665623462439
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118536862"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060875"
 ---
 # <a name="d3dx11_image_load_info-structure"></a>Estructura D3DX11 \_ IMAGE \_ LOAD \_ INFO
 
@@ -54,7 +54,7 @@ typedef struct D3DX11_IMAGE_LOAD_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -98,7 +98,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-El nivel de mapa mip de resolución más alto de la textura. Si es mayor que 0, después de cargar la textura FirstMipLevel se asignará al nivel 0 de mipmap.
+El nivel de mapa mip de resolución más alto de la textura. Si es mayor que 0, después de cargar la textura FirstMipLevel se asignará al nivel de mapa mip 0.
 
 </dd> <dt>
 
@@ -197,11 +197,11 @@ Tipo: **[ **D3DX11 \_ IMAGE \_ INFO**](d3dx11-image-info.md)\***
 
 </dd> <dd>
 
-Información sobre la imagen original. Vea [**D3DX11 IMAGE INFO ( Información de imagen de D3DX11). \_ \_**](d3dx11-image-info.md) Se puede obtener con [**D3DX11GetImageInfoFromFile,**](d3dx11getimageinfofromfile.md) [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
+Información sobre la imagen original. Vea [**D3DX11 \_ IMAGE \_ INFO**](d3dx11-image-info.md). Se puede obtener con [**D3DX11GetImageInfoFromFile,**](d3dx11getimageinfofromfile.md) [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al inicializar la estructura, puede establecer cualquier miembro en D3DX11 DEFAULT y D3DX la inicializará con un valor predeterminado de la textura de origen cuando se cargue \_ la textura.
 

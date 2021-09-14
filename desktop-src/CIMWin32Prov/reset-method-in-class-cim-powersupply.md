@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6a7f054102a1dd1c3ec611963ad676ec11af48d55ee9f76b73b346f671c203b2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c1bb483c35c56f8d50a16ff50f5b44e1b9ac52db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965372"
 ---
 # <a name="reset-method-of-the-cim_powersupply-class"></a>Método Reset de la clase \_ Cim PowerSupply
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (cero) si no se admite la solicitud y algún otro valor si se produjo un error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
@@ -57,7 +57,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -67,7 +67,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

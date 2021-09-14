@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3418d05371da651894c59461c7b467a5da5435c76d8dddc48caf4c050c498a81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba2b9642bcc142c4d0dd759ff2801207617524fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060545"
 ---
 # <a name="id3dxpatchmeshgetnumvertices-method"></a>Método ID3DXPatchMesh::GetNumVertices
 
@@ -55,7 +55,7 @@ Número de vértices.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

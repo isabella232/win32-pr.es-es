@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 18790ad7fa550ad3cd9383de7bc5d0639c3bbf1ddb218152aa7e90dac3e6a411
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72a92ea3d6b6d4b828e409cd08b896f54c4aa053
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119977465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969451"
 ---
 # <a name="apijetsetsystemparameter-method-jet_instance-jet_sesid-jet_param-intptr-string"></a>Método Api.JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, IntPtr, String)
 
@@ -72,7 +72,7 @@ public static JET_wrn JetSetSystemParameter(
   - instance  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia en la que se establece la opción o [Nil](./jet-instance.nil-property.md) para establecer la opción en todas las instancias.
+    Instancia en la que se establece la opción o [Nil para](./jet-instance.nil-property.md) establecer la opción en todas las instancias.
 
 <!-- end list -->
 
@@ -107,7 +107,7 @@ public static JET_wrn JetSetSystemParameter(
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Código de advertencia de ESENT.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

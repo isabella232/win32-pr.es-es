@@ -1,9 +1,9 @@
 ---
-title: Métodos DrawRectangle ID2D1RenderTarget (D2d1 \_ 1. h)
+title: Métodos Id2D1RenderTarget DrawRectangle (D2d1 \_ 1.h)
 description: Dibuja el contorno de un rectángulo que tiene las dimensiones y el estilo de trazo especificados.
 ms.assetid: 3f8c0754-fa68-4b5b-812f-24d8b544ba6e
 keywords:
-- DrawRectangle (métodos) Direct2D
+- Métodos DrawRectangle de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,13 +13,13 @@ api_type:
 ms.date: 07/02/2019
 ms.topic: reference
 ms.openlocfilehash: 4c1f846ca0bc1ddcb52696667edcb87291ae05df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162809"
 ---
-# <a name="id2d1rendertargetdrawrectangle-methods"></a>ID2D1RenderTarget::D rawRectangle métodos)
+# <a name="id2d1rendertargetdrawrectangle-methods"></a>Métodos ID2D1RenderTarget::D rawRectangle
 
 Dibuja el contorno de un rectángulo que tiene las dimensiones y el estilo de trazo especificados.
 
@@ -29,20 +29,20 @@ Dibuja el contorno de un rectángulo que tiene las dimensiones y el estilo de tr
 
 | Método                                                                                                                                                                   | Descripción                                                                                      |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
-| [**DrawRectangle (D2D1 \_ Rect \_ F&, ID2D1Brush \* , Float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle))  | Dibuja el contorno de un rectángulo que tiene las dimensiones y el estilo de trazo especificados. <br/> |
-| [**DrawRectangle (D2D1 \_ Rect \_ F \* , ID2D1Brush \* , Float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)) | Dibuja el contorno de un rectángulo que tiene las dimensiones y el estilo de trazo especificados. <br/> |
+| [**DrawRectangle(D2D1 \_ RECT \_ F&,ID2D1Brush \* ,FLOAT,ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle))  | Dibuja el contorno de un rectángulo que tiene las dimensiones y el estilo de trazo especificados. <br/> |
+| [**DrawRectangle(D2D1 \_ RECT \_ F \* ,ID2D1Brush \* ,FLOAT,ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)) | Dibuja el contorno de un rectángulo que tiene las dimensiones y el estilo de trazo especificados. <br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando se produce un error en este método, no devuelve un código de error. Para determinar si un método de dibujo (como **DrawRectangle**) produjo un error, compruebe el resultado devuelto por el método [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget:: Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Cuando se produce un error en este método, no devuelve un código de error. Para determinar si se ha producido un error en un método de dibujo (como **DrawRectangle),** compruebe el resultado devuelto por el método [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa un [**ID2D1HwndRenderTarget**](/previous-versions/windows/desktop/legacy/dd371275(v=vs.85)) para dibujar y rellenar varios rectángulos. En este ejemplo se genera el resultado que se muestra en la ilustración siguiente.
+En el ejemplo siguiente se [**usa un ID2D1HwndRenderTarget**](/previous-versions/windows/desktop/legacy/dd371275(v=vs.85)) para dibujar y rellenar varios rectángulos. En este ejemplo se genera la salida que se muestra en la ilustración siguiente.
 
-![Ilustración de dos rectángulos en un fondo de cuadrícula](images/drawrectangleexample-small.png)
+![ilustración de dos rectángulos en un fondo de cuadrícula](images/drawrectangleexample-small.png)
 
 
 ```C++
@@ -126,7 +126,7 @@ HRESULT DemoApp::OnRender()
 
 
 
-Para ver un tutorial relacionado, consulte [creación de una aplicación de Direct2D simple](direct2d-quickstart.md).
+Para ver un tutorial relacionado, consulte [Creación de una aplicación direct2D simple.](direct2d-quickstart.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -134,23 +134,23 @@ Para ver un tutorial relacionado, consulte [creación de una aplicación de Dire
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1 \_ 1. h (incluir D2d1. h)</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl>                   |
+| Encabezado<br/>  | <dl> <dt>D2d1 \_ 1.h (incluir D2d1.h)</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl>                   |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl>                   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 </dt> <dt>
 
-[Crear una aplicación de Direct2D simple](direct2d-quickstart.md)
+[Creación de una aplicación direct2D simple](direct2d-quickstart.md)
 </dt> <dt>
 
-[Cómo dibujar y rellenar una forma básica](how-to-draw-an-ellipse.md)
+[Dibujar y rellenar una forma básica](how-to-draw-an-ellipse.md)
 </dt> </dl>
 
 �

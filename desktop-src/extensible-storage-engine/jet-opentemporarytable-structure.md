@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 625de51bf265be02fa48beb2872797cd5bd6ba26
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962935"
 ---
 # <a name="jet_opentemporarytable-structure"></a>JET_OPENTEMPORARYTABLE estructura
 
@@ -47,7 +47,7 @@ La **JET_OPENTEMPORARYTABLE** estructura contiene una colección fácilmente ext
     } JET_OPENTEMPORARYTABLE;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -88,13 +88,13 @@ Grupo de bits que especifica cero o más de las opciones siguientes.
 
 | <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitTTIndexed</p> | <p>Esta opción solicita que la tabla temporal sea lo suficientemente flexible como para permitir el uso de <a href="gg294103(v=exchg.10).md">JetSeek</a> para buscar registros por clave de índice.</p><p>Si esta funcionalidad no es necesaria, es mejor no solicitarla. Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará lugar a un rendimiento mejorado.</p> | 
-| <p>JET_bitTTUnique</p> | <p>Solicita que los registros con claves de índice duplicadas se quiten del conjunto final de registros de la tabla temporal.</p><p>Antes de Windows Server 2003, el motor de base de datos siempre supusía que esta opción estaba en vigor debido al hecho de que todos los índices clúster también deben ser una clave principal y, por tanto, deben ser únicos. A partir de Windows Server 2003, ahora es posible crear una tabla temporal que no quite duplicados cuando también se especifique la opción JET_bitTTForwardOnly servidor.</p><p>No es posible saber qué duplicado se realizará correctamente y qué duplicados se descartarán, en general. Sin embargo, cuando JET_bitTTErrorOnDuplicateInsertion se solicita la opción , el primer registro con una clave de índice determinada que se va a insertar en la tabla temporal siempre se realizará correctamente.</p> | 
-| <p>JET_bitTTUpdatable</p> | <p>Solicita que la tabla temporal sea lo suficientemente flexible como para permitir que los registros que se han insertado previamente se cambien posteriormente. Si esta funcionalidad no es necesaria, es mejor no solicitarla.</p><p>Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará lugar a un rendimiento mejorado.</p> | 
-| <p>JET_bitTTScrollable</p> | <p>Solicita que la tabla temporal sea lo suficientemente flexible como para permitir que los registros se digitalizarán en orden y dirección arbitrarios <a href="gg294117(v=exchg.10).md">mediante JetMove</a>.</p><p>Si esta funcionalidad no es necesaria, es mejor no solicitarla. Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará lugar a un rendimiento mejorado.</p> | 
+| <p>JET_bitTTIndexed</p> | <p>Esta opción solicita que la tabla temporal sea lo suficientemente flexible como para permitir el uso de <a href="gg294103(v=exchg.10).md">JetSeek</a> para buscar registros por clave de índice.</p><p>Si esta funcionalidad no es necesaria, es mejor no solicitarla. Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará como resultado un rendimiento mejorado.</p> | 
+| <p>JET_bitTTUnique</p> | <p>Solicita que los registros con claves de índice duplicadas se quiten del conjunto final de registros de la tabla temporal.</p><p>Antes de Windows Server 2003, el motor de base de datos siempre supusía que esta opción estaba en vigor debido al hecho de que todos los índices clúster también deben ser una clave principal y, por tanto, deben ser únicos. A partir Windows Server 2003, ahora es posible crear una tabla temporal que no quite duplicados cuando también se especifique la opción JET_bitTTForwardOnly servidor.</p><p>No es posible saber qué duplicado se realizará correctamente y qué duplicados se descartarán, en general. Sin embargo, cuando JET_bitTTErrorOnDuplicateInsertion se solicita la opción , el primer registro con una clave de índice determinada que se va a insertar en la tabla temporal siempre se realizará correctamente.</p> | 
+| <p>JET_bitTTUpdatable</p> | <p>Solicita que la tabla temporal sea lo suficientemente flexible como para permitir que los registros que se han insertado previamente se cambien posteriormente. Si esta funcionalidad no es necesaria, es mejor no solicitarla.</p><p>Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará como resultado un rendimiento mejorado.</p> | 
+| <p>JET_bitTTScrollable</p> | <p>Solicita que la tabla temporal sea lo suficientemente flexible como para permitir que los registros se digitalizarán en orden y dirección arbitrarios <a href="gg294117(v=exchg.10).md">mediante JetMove</a>.</p><p>Si esta funcionalidad no es necesaria, es mejor no solicitarla. Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará como resultado un rendimiento mejorado.</p> | 
 | <p>JET_bitTTSortNullsHigh</p> | <p>Solicita que los <strong>valores de columna</strong> de clave NULL se ordenan más cerca del final del índice que los valores de columna de clave no NULL.</p> | 
 | <p>JET_bitTTForceMaterialization</p> | <p>Obliga al administrador de tablas temporales a abandonar la búsqueda de la mejor estrategia para usar la administración de la tabla temporal que dará lugar a un rendimiento mejorado.</p> | 
-| <p>JET_bitTTErrorOnDuplicateInsertion</p> | <p>Cualquier intento de insertar un registro con la misma clave de índice que un registro insertado previamente producirá un error JET_errKeyDuplicate. Si no se solicita esta opción, se detecta inmediatamente un duplicado y se produce un error, o se quita de forma silenciosa más adelante, en función de la estrategia elegida por el motor de base de datos para implementar la tabla temporal, en función de la funcionalidad solicitada.</p><p>Si esta funcionalidad no es necesaria, es mejor no solicitarla. Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará lugar a un rendimiento mejorado.</p> | 
+| <p>JET_bitTTErrorOnDuplicateInsertion</p> | <p>Cualquier intento de insertar un registro con la misma clave de índice que un registro insertado previamente producirá un error JET_errKeyDuplicate. Si no se solicita esta opción, se detecta inmediatamente un duplicado y se produce un error, o se quita de forma silenciosa más adelante, en función de la estrategia elegida por el motor de base de datos para implementar la tabla temporal, en función de la funcionalidad solicitada.</p><p>Si esta funcionalidad no es necesaria, es mejor no solicitarla. Si no se solicita esta funcionalidad, es posible que el administrador de tablas temporales pueda elegir una estrategia para administrar la tabla temporal que dará como resultado un rendimiento mejorado.</p> | 
 | <p>JET_bitTTForwardOnly</p> | <p>La tabla temporal solo se crea si el administrador de tablas temporales puede usar la implementación optimizada para los resultados intermedios de la consulta. Si alguna característica de la tabla temporal impediría el uso de esta optimización, se producirá un error en la operación JET_errCannotMaterializeForwardOnlySort.</p><p>Un efecto secundario de esta opción es permitir que la tabla temporal contenga registros con claves de índice duplicadas. Consulte JET_bitTTUnique para obtener más información.</p><p><strong>Windows Server 2003:</strong> Esta opción solo está disponible en Windows Server 2003 y versiones posteriores.</p> | 
 
 
@@ -143,4 +143,4 @@ Identificador de tabla para la tabla temporal creada como resultado de una llama
 [JET_COLUMNID](./jet-columnid.md)  
 [JET_TABLEID](./jet-tableid.md)  
 [JetOpenTemporaryTable](./jetopentemporarytable-function.md)  
-[Parámetros extensibles Storage del sistema del motor de base de datos](./extensible-storage-engine-system-parameters.md)
+[Parámetros del sistema Storage motor de motor extensible](./extensible-storage-engine-system-parameters.md)

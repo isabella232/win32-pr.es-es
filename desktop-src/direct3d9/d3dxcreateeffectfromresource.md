@@ -15,11 +15,11 @@ api_location:
 - D3dx9.lib
 - D3dx9.dll
 ms.openlocfilehash: f2a84d2da1f3ca88a117c0150e7b27485838c300
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970872"
 ---
 # <a name="d3dxcreateeffectfromresource-function"></a>Función D3DXCreateEffectFromResource
 
@@ -93,12 +93,12 @@ Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Si *hSrcModule contiene* un efecto de texto, las marcas pueden ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo *contrario, hSrcModule* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
+Si *hSrcModule* contiene un efecto de texto, flags puede ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) de lo contrario, *hSrcModule* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
 
 </dd> <dt>
 
@@ -135,13 +135,13 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve como LPCSTR.
 
 La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXCreateEffectFromResourceW. De lo contrario, la llamada de función se resuelve en D3DXCreateEffectFromResourceA porque se usan cadenas ANSI.
 
-D3DXCreateEffectFromResource carga datos de un recurso de tipo RT \_ RCDATA. Vea MSDN para obtener más información sobre los recursos de Windows.
+D3DXCreateEffectFromResource carga datos de un recurso de tipo RT \_ RCDATA. Vea MSDN para obtener más información sobre Windows recursos.
 
 ## <a name="requirements"></a>Requisitos
 

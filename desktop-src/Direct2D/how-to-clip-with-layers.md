@@ -5,12 +5,12 @@ ms.assetid: eaeb6cfd-de62-46f1-972d-a11e0ccc11d9
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 0c2258938020593014b5b6f5ea77516e7770f8589601cf4139971b3532b22fff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 979281fb7fa6e034894bffaecbd6246fe8a9aa94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163194"
 ---
 # <a name="how-to-clip-to-a-geometric-mask"></a>Cómo recortar a una máscara geométrica
 

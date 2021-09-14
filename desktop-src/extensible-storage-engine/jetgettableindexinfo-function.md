@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 2066e3d20ef98d71c4c891d941d322e993b309e5
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965539"
 ---
 # <a name="jetgettableindexinfo-function"></a>Función JetGetTableIndexInfo
 
@@ -76,9 +76,9 @@ Especifica qué información se almacenará en *pvResult*. Los valores válidos 
 
 | <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_IdxInfo</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269185(v=exchg.10).md">JET_INDEXLIST</a> estructura. Si se ejecuta correctamente, <a href="gg269185(v=exchg.10).md">JET_INDEXLIST</a> estructura recibe información sobre el índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
+| <p>JET_IdxInfo</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269185(v=exchg.10).md">JET_INDEXLIST</a> estructura. Si se ejecuta <a href="gg269185(v=exchg.10).md">correctamente, JET_INDEXLIST</a> estructura recibe información sobre el índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
 | <p>JET_IdxInfoLCID</p> | <p><em>pvResult</em> se interpreta como un LCID. Si se ejecuta correctamente, el LCID contiene el identificador de configuración regional del índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
-| <p>JET_IdxInfoList</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269185(v=exchg.10).md">JET_INDEXLIST</a> estructura. Si se ejecuta correctamente, <a href="gg269185(v=exchg.10).md">JET_INDEXLIST</a> estructura recibe información sobre el índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
+| <p>JET_IdxInfoList</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269185(v=exchg.10).md">JET_INDEXLIST</a> estructura. Si se ejecuta <a href="gg269185(v=exchg.10).md">correctamente, JET_INDEXLIST</a> estructura recibe información sobre el índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
 | <p>JET_IdxInfoOLC</p> | <p>JET_IdxInfoOLC está obsoleto.</p> | 
 | <p>JET_IdxInfoResetOLC</p> | <p>JET_IdxInfoResetOLC está obsoleto.</p> | 
 | <p>JET_IdxInfoSpaceAlloc</p> | <p><em>pvResult</em> se interpreta como ULONG. Si se ejecuta correctamente, ULONG contiene el uso de espacio del índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
@@ -86,8 +86,8 @@ Especifica qué información se almacenará en *pvResult*. Los valores válidos 
 | <p>JET_IdxInfoLangid</p> | <p>JET_IdxInfoLangid está en desuso. Use JET_IdxInfoLCID en su lugar y la macro <a href="/windows/win32/api/winnt/nf-winnt-langidfromlcid">LANGIDFROMLCID</a> en su lugar.</p> | 
 | <p>JET_IdxInfoCount</p> | <p><em>pvResult</em> se interpreta como ULONG. Si se ejecuta correctamente, el ULONG contiene el recuento de índices en la tabla especificada. <em>szIndexName</em> se omite. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
 | <p>JET_IdxInfoVarSegMac</p> | <p><em>pvResult</em> se interpreta como USHORT. Si se ejecuta correctamente, USHORT contiene el valor <em>de cbVarSegMac</em> usado cuando se creó el índice. Consulte <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> para obtener una descripción de <em>cbVarSegMac</em>. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
-| <p>JET_IdxInfoIndexId</p> | <p><em>pvResult</em> se interpreta como <a href="gg269327(v=exchg.10).md">una</a>JET_INDEXID . Si se ejecuta <a href="gg269327(v=exchg.10).md">correctamente, JET_INDEXID</a> estructura recibe información sobre el índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
-| <p>JET_IdxInfoKeyMost</p> | <p><em>pvResult</em> se interpreta como USHORT. Si se ejecuta correctamente, USHORT contiene el valor de cbKeyMost usado cuando se creó el índice. Vea la <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> para obtener una descripción de cbKeyMost. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
+| <p>JET_IdxInfoIndexId</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269327(v=exchg.10).md">JET_INDEXID</a>. Si se ejecuta <a href="gg269327(v=exchg.10).md">correctamente, JET_INDEXID</a> estructura recibe información sobre el índice. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
+| <p>JET_IdxInfoKeyMost</p> | <p><em>pvResult</em> se interpreta como USHORT. Si se ejecuta correctamente, USHORT contiene el valor de cbKeyMost usado cuando se creó el índice. Consulte la <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> estructura para obtener una descripción de cbKeyMost. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p> | 
 | <p>JET_IdxInfoCreateIndex</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269186(v=exchg.10).md">JET_INDEXCREATE</a> estructura. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p><p><strong>Windows 7:</strong> JET_IdxInfoCreateIndex se introdujo en Windows 7.</p> | 
 | <p>JET_IdxInfoCreateIndex2</p> | <p><em>pvResult</em> se interpreta como una <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> estructura. En caso de error, el contenido <em>de pvBuffer</em> no está definido.</p><p><strong>Windows 7:</strong> JET_IdxInfoCreateIndex2 se introdujo en Windows 7.</p> | 
 
@@ -119,8 +119,8 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetTableIndexInfoW</strong> (Unicode) y <strong>JetGetTableIndexInfoA</strong> (ANSI).</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetGetTableIndexInfoW</strong> (Unicode) y <strong>JetGetTableIndexInfoA</strong> (ANSI).</p> | 
 
 
 

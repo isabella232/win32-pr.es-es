@@ -4,12 +4,12 @@ ms.assetid: b3206b30-56b4-4d56-a778-af3a6b3b8d9c
 title: Referencia de semántica y anotaciones estándar de DirectX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6da1489f92fce16e4717d501a64ab862fb9292c271397aa4a77e00e74c2e7952
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c989f4aed7c01c62d6133e01fe035223b74c8d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119373644"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060667"
 ---
 # <a name="directx-standard-annotations-and-semantics-reference"></a>Referencia de semántica y anotaciones estándar de DirectX
 

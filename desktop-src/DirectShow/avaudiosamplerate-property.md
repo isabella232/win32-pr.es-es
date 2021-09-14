@@ -4,14 +4,14 @@ ms.assetid: 9819d6bb-751b-4b47-aa2d-23d7f86c1d3d
 title: Propiedad AVAudioSampleRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7528b1920884666da15c154044ec15577ec93881b9aab3875f7ba5a0418cb7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 816ef69a91f24444aad1f15780b30a70572743d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118159986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162170"
 ---
-# <a name="avaudiosamplerate-property"></a>AvAudioSampleRate, propiedad
+# <a name="avaudiosamplerate-property"></a>Propiedad AVAudioSampleRate
 
 Obtiene la velocidad de muestreo de la secuencia de bits de audio, en muestras por segundos.
 
@@ -35,13 +35,13 @@ El conjunto de valores posibles depende de la implementación del descodificador
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio aplicaciones para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

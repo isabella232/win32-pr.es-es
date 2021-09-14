@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: d19f3215e3aade39e3b889b0b4f61e8d0ddfe13cbbae423617ebb37ee81f5ac3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c630ae24b33b9ca262e9f7ecba194a66f1b70b2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118786887"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963504"
 ---
 # <a name="texture2darraysamplecmp-methods"></a>Métodos Texture2DArray::SampleCmp
 

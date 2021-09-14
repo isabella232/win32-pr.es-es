@@ -4,12 +4,12 @@ ms.assetid: cbb2cc10-a39f-40a1-91ab-e79ba4ee3cc6
 title: Métodos de color
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34f59425aadce243bd32cdf3a8ac600cb3a92638b9565d4e1aa5d2de1227ff80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2ed6f9146ef64d687512366fd6dabe19e5fcba3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119037073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962591"
 ---
 # <a name="color-methods"></a>Métodos de color
 

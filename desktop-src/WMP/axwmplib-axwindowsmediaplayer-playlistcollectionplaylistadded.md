@@ -1,9 +1,9 @@
 ---
-title: Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer
-description: El evento PlaylistCollectionPlaylistAdded tiene lugar cuando se agrega una lista de reproducción a la colección de listas de reproducción. | Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer
+title: Evento PlaylistCollectionPlaylist Agregado del objeto AxWindowsMediaPlayer
+description: El evento PlaylistCollectionPlaylistAdded tiene lugar cuando se agrega una lista de reproducción a la colección de listas de reproducción. | Evento PlaylistCollectionPlaylist Agregado del objeto AxWindowsMediaPlayer
 ms.assetid: 13d3bc86-6655-4536-a58f-327eabb2b8f9
 keywords:
-- Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer Reproductor de Windows Media
+- PlaylistCollectionPlaylist Evento agregado del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d5223d5864aa8be9019b2219ef09917a1c63cf16d87a48aef9543246d5197a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b019e58ae8955f6df894101956e4776c2cd71626
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118581830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889628"
 ---
-# <a name="playlistcollectionplaylistadded-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylist agregado del objeto AxWindowsMediaPlayer
+# <a name="playlistcollectionplaylistadded-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylist Agregado del objeto AxWindowsMediaPlayer
 
 El evento PlaylistCollectionPlaylistAdded tiene lugar cuando se agrega una lista de reproducción a la colección de listas de reproducción.
 
@@ -53,7 +53,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El nombre de la lista de reproducción que se agregó se puede usar para recuperar la lista de reproducción correspondiente mediante IWMPPlaylistCollection. **Método getByName.**
 
@@ -61,7 +61,7 @@ El nombre de la lista de reproducción que se agregó se puede usar para recuper
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |

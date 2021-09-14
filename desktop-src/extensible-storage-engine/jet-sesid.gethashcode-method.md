@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 393b15b2da836e33f76cd4945bdafec7d8727270e75df2d08bf5756c96c55d9b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 284fdb74df8238ea88812e4e85d638b8a43972c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965559"
 ---
 # <a name="jet_sesidgethashcode-method"></a>JET_SESID. Método GetHashCode
 
@@ -59,7 +59,7 @@ public override int GetHashCode()
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 Código hash de esta instancia.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

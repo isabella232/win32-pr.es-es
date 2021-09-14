@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b00c641f0fb9a9f68217de8a21a732b4b45a8e4417104be981ffd90161f7340
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5b389c5c82296e95ecfb3900518af4a2c7ddd7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118586805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890364"
 ---
 # <a name="_videoinfoheader-structure"></a>\_Estructura VIDEOINFOHEADER
 
@@ -41,7 +41,7 @@ typedef struct _tagVIDEOINFOHEADER {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

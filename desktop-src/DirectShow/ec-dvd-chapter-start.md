@@ -1,5 +1,5 @@
 ---
-description: Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio \_ DE DOMINIO \_ de DVD.
+description: Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio DE \_ DOMINIO \_ de DVD.
 ms.assetid: c0745615-d527-4d93-9118-30419c6c811e
 title: EC_DVD_CHAPTER_START (Dvdevcode.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 9570964efa52380c06034716f0c199cde0498a2c0aeb0502f9db250f87a6ca3a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 87a4408f1631d8a23cf42e790688856d6c246393
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061177"
 ---
 # <a name="ec_dvd_chapter_start"></a>INICIO DEL \_ CAPÍTULO DE DVD DE \_ \_ EC
 
-Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio \_ DE DOMINIO \_ de DVD.
+Indica que el reproductor de DVD inició la reproducción de un nuevo programa en el dominio DE \_ DOMINIO \_ de DVD.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -42,7 +42,7 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo las películas lineales simples señalan este evento.
 
@@ -58,7 +58,7 @@ Este evento se genera en el dominio de título.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

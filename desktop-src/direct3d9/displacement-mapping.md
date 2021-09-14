@@ -4,12 +4,12 @@ ms.assetid: d6f16ff2-5a66-48a3-82c4-523faaafa6ae
 title: Asignación de desplazamiento (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87b559c2c4758b773c48c0b556b6d61af54549f1b30e5c2693a24c4c27856c13
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b687583b0109223d8c2dac807425e235ddf280e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118523774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964963"
 ---
 # <a name="displacement-mapping-direct3d-9"></a>Asignación de desplazamiento (Direct3D 9)
 
@@ -27,7 +27,7 @@ El mapa se puede presamplear o no, lo que significa que se puede ordenar de una 
 
 -   Los mapas de desplazamiento son análogos a los mapas de textura, pero el motor de vértices accede a ellos.
 -   Hay una fase de muestreo adicional en la primera parte de la canalización de vértices que puede muestrear un mapa de desplazamiento. La API SetSamplerState habitual accede a esta fase, pero el número de fase es D3DDMAPSAMPLER = 256.
--   SetSamplerState(D3DDMAPSAMPLER, ...) puede establecer el estado del sampler de mapa de desplazamiento. Api.
+-   SetSamplerState(D3DDMAPSAMPLER, ...) puede establecer el estado del sampler de mapa de desplazamiento. API.
 -   La textura del mapa de desplazamiento se establece mediante la API SetTexture(D3DDMAPSAMPLER, texture).
 -   El mapa se puede muestrear previamente o no. Esto significa que se puede ordenar de una manera determinada que permite la búsqueda de los valores de desplazamiento sin filtrar.
 -   Los cambios en la estructura de declaración permiten especificar la coordenada de textura usada para buscar el mapa de textura. Por ejemplo, Stream0, Offset, FLOAT2, LOOKUP, Valor de \_ desplazamiento. Esto indica al teselador que use el vector float 2D en stream0 en un desplazamiento determinado como coordenada de textura para buscar el mapa de desplazamiento y asociarle la semántica de uso de valores de \_ desplazamiento. La declaración del sombreador de vértices contendrá una línea similar a {dcl texture0, v0} que indica que la semántica texture0 se asociará al registro de \_ entrada v0. El valor de desplazamiento que se busca se copia en el registro de entrada v0.

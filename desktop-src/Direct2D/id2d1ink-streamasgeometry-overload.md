@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: fed8f2a9adc8ec228769b4b11834b5750ac05d5b8eac29c0c9dc6feddf1e3f8b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e2978bf39c1e2f7a7490216149e4bde16d54769b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162901"
 ---
 # <a name="id2d1inkstreamasgeometry-methods"></a>Métodos ID2D1Ink::StreamAsGeometry
 
@@ -36,7 +36,7 @@ Recupera una representación geométrica de este objeto de entrada de lápiz.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

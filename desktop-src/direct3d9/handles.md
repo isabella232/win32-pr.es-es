@@ -1,39 +1,39 @@
 ---
-description: Los identificadores proporcionan un medio eficaz para hacer referencia a las técnicas, las pasadas, las anotaciones y los parámetros con ID3DXEffectCompiler o ID3DXEffect.
+description: Los identificadores proporcionan un medio eficaz para hacer referencia a las técnicas, los pases, las anotaciones y los parámetros con ID3DXEffectCompiler o ID3DXEffect.
 ms.assetid: 2494ecf9-88a7-43dc-a75b-ed743b11993a
 title: Identificadores (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d9e0dbbcbbc38685cae7c89b334bfb5458bc8386
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537222"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060640"
 ---
 # <a name="handles-direct3d-9"></a>Identificadores (Direct3D 9)
 
-Los identificadores proporcionan un medio eficaz para hacer referencia a las técnicas, las pasadas, las anotaciones y los parámetros con [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) o [**ID3DXEffect**](id3dxeffect.md). Se generan dinámicamente cuando se llama a funciones de la forma de la \[ función de anotación de parámetro Get Parameter \| \| \| \| \] \[ ByName \| BySemantic \| Element \] .
+Los identificadores proporcionan un medio eficaz para hacer referencia a las técnicas, los pases, las anotaciones y los parámetros [**con ID3DXEffectCompiler**](id3dxeffectcompiler.md) [**o ID3DXEffect**](id3dxeffect.md). Se generan dinámicamente al llamar a funciones con el formato Get \[ Parameter Annotation Function Technique Pass \| \| \| \| \] \[ ByName \| BySemantic \| Element \] .
 
-Mientras se ejecuta un programa, la generación de un identificador al mismo objeto varias veces devolverá el mismo identificador cada vez. Pero no se base en el punto de estancia constante al ejecutar el programa varias veces. Tenga en cuenta también que los identificadores generados por diferentes instancias de [**ID3DXEffect**](id3dxeffect.md) y [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) serán diferentes.
+Al ejecutar un programa, la generación de un identificador para el mismo objeto varias veces devolverá el mismo identificador cada vez. Pero no confíe en que el identificador se mantiene constante al ejecutar el programa varias veces. Tenga en cuenta también que los identificadores generados por diferentes instancias de [**ID3DXEffect**](id3dxeffect.md) e [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) serán diferentes.
 
 Si ve los archivos de encabezado, observará que los identificadores (D3DXHANDLEs) son técnicamente punteros de cadena.
 
-Los identificadores que se pasan a funciones como GetParameter \[ ByName \| Element \| BySemantic \] o GetAnnotation \[ ByName \] pueden tener tres formatos:
+Los identificadores que se pasan a funciones como GetParameter \[ ByName \| Element \| BySemantic o \] GetAnnotation \[ ByName pueden tener tres \] formas:
 
-1.  Identificadores devueltos por funciones como GetParameter \[ ByName \| elemento \| BySemantic \] .
-2.  Cadenas como MyVariableName, MyTechniqueName o myArray \[ 0 \] .
-3.  Identificador = **null**. Hay cuatro casos.
-    -   Si es un valor devuelto por un método, el método no encontró el identificador.
-    -   Si se pasa un identificador **nulo** como el primer parámetro del \[ elemento BySemantic de GetParameter ByName \| \| \] , la función devuelve un parámetro de nivel superior. Por el contrario, si el identificador no es **null**, la función devuelve un miembro de estructura o un elemento identificado por el identificador.
-    -   Si se pasa un identificador **null** como primer argumento de ValidateTechnique o el segundo argumento de IsParameterUsed, se valida la técnica actual.
-    -   Si se pasa un identificador **null** como primer argumento de FindNextValidTechnique, la búsqueda de una técnica válida comienza en la primera técnica del efecto.
+1.  Identificadores devueltos por funciones como GetParameter \[ ByName \| Element \| BySemantic. \]
+2.  Cadenas como MyVariableName, MyTechniqueName o MyArray \[ \] 0.
+3.  Identificador = **NULL.** Hay cuatro casos.
+    -   Si es un valor devuelto de método, el método no pudo encontrar el identificador.
+    -   Si se **pasa un** identificador NULL como primer parámetro del elemento \[ \| \| BySemantic GetParameter ByName , la función \] devuelve un parámetro de nivel superior. Por el contrario, si el identificador no es **NULL,** la función devuelve un miembro o elemento de estructura identificado por el identificador.
+    -   Si se **pasa un** identificador NULL como el primer argumento de ValidateTechnique o el segundo argumento de IsParameterUsed, se valida la técnica actual.
+    -   Si se **pasa un** identificador NULL como primer argumento de FindNextValidTechnique, la búsqueda de una técnica válida se inicia en la primera técnica del efecto.
 
-Sugerencia de rendimiento al principio de la aplicación, realice un paso de inicialización para generar identificadores a partir de las cadenas. A partir de ese momento, use solo los controladores. Pasar cadenas en lugar de identificadores generados es más lento.
+Sugerencia de rendimiento Al principio de la aplicación, realice un paso de inicialización para generar identificadores a partir de las cadenas. A partir de ese momento, use solo identificadores. Pasar cadenas en lugar de identificadores generados es más lento.
 
 ## <a name="examples"></a>Ejemplos
 
-Estos son algunos ejemplos en los que se usa la \[ técnica de función de anotación de parámetro Get \| \| \| \| Pass \] \[ ByName \| BySemantic \| \] Functions para generar identificadores.
+Estos son algunos ejemplos que usan las funciones Get \[ Parameter Annotation Function Technique Pass \| \| \| \| \] \[ ByName \| BySemantic \| Element para generar \] identificadores.
 
 
 ```

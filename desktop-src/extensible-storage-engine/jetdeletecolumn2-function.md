@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: e2e74c507483791f3090b43e436e01ce7b5173e0
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962788"
 ---
 # <a name="jetdeletecolumn2-function"></a>Función JetDeleteColumn2
 
@@ -68,7 +68,7 @@ Grupo de bits que especifica cero o más de las opciones siguientes.
 
 | <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitDeleteColumnIgnoreTemplateColumns</p> | <p>Si JET_bitDeleteColumIgnoreTemplateColumns, la API solo intentará eliminar las columnas de la tabla derivada. Si existe una columna con ese nombre en la tabla base, se omitirá.</p> | 
+| <p>JET_bitDeleteColumnIgnoreTemplateColumns</p> | <p>Si JET_bitDeleteColumIgnoreTemplateColumns, la API solo intentará eliminar columnas de la tabla derivada. Si existe una columna con ese nombre en la tabla base, se omitirá.</p> | 
 
 
 
@@ -102,7 +102,7 @@ Llamar [a JetDeleteColumn](./jetdeletecolumn-function.md) es idéntico a llamar 
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetDeleteColumn2W</strong> (Unicode) y <strong>JetDeleteColumn2A</strong> (ANSI).</p> | 
 
 

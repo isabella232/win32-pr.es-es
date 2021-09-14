@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee5ccac1c53cac63936531ac791a30edac6f86b7fd658121869d5e358fe23e20
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c4ea8f029265ff6725febe7817d6b8cc61807640
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969087"
 ---
 # <a name="jet_opentemporarytabletableid-property"></a>JET_OPENTEMPORARYTABLE.tableid, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el identificador de tabla para la tabla temporal creada como resultado d
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

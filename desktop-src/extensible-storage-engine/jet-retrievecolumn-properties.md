@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_RETRIEVECOLUMN propiedades'
+description: 'Más información sobre: propiedades JET_RETRIEVECOLUMN datos'
 title: JET_RETRIEVECOLUMN propiedades
 TOCTitle: JET_RETRIEVECOLUMN properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103808
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c1e902b7e79111f3e9d9bf0160880d95c3957804de981fd56bbc36db5a9c3fc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a42337e361fc7cbef60db70662ab7388c678903
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119107349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962876"
 ---
 # <a name="jet_retrievecolumn-properties"></a>JET_RETRIEVECOLUMN propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) expone los miembros siguientes.
+El [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) tipo expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -40,17 +40,17 @@ El [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) expone los miembros sigui
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335228(v=exchg.10).md">cbData</a></td>
-<td>Obtiene o establece el tamaño del búfer <a href="dn351040(v=exchg.10).md">pvData,</a> en bytes. La operación de recuperación de columnas no almacenará más datos en pvData que cbData.</td>
+<td>Obtiene o establece el tamaño del búfer <a href="dn351040(v=exchg.10).md">pvData,</a> en bytes. La operación de recuperación de columna no almacenará más datos en pvData que cbData.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335230(v=exchg.10).md">columnid</a></td>
-<td>Obtiene o establece el identificador de columna de la columna que se va a recuperar.</td>
+<td>Obtiene o establece el identificador de columna para la columna que se va a recuperar.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335229(v=exchg.10).md">columnidNextTagged</a></td>
-<td>Obtiene el columnid de la columna etiquetada, con varios valores o dispersa cuando se recuperan todas las columnas etiquetadas pasando 0 como columnid.</td>
+<td>Obtiene el columnid de la columna etiquetada, multivalor o dispersa cuando se recuperan todas las columnas etiquetadas pasando 0 como columnid.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -70,12 +70,12 @@ El [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) expone los miembros sigui
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335234(v=exchg.10).md">ibLongValue</a></td>
-<td>Obtiene o establece el desplazamiento en el primer byte que se va a recuperar de una columna de tipo <a href="hh577895(v=exchg.10).md">LongBinary</a> <a href="hh577895(v=exchg.10).md">o LongText.</a></td>
+<td>Obtiene o establece el desplazamiento en el primer byte que se va a recuperar de una columna de tipo <a href="hh577895(v=exchg.10).md">LongBinary</a> <a href="hh577895(v=exchg.10).md">o LongText</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351039(v=exchg.10).md">itagSequence</a></td>
-<td>Obtiene o establece el número de secuencia de los valores contenidos en una columna con varios valores. Si la itagSequence es 0, se devuelve el número de instancias de una columna con varios valores en lugar de cualquier dato de columna.</td>
+<td>Obtiene o establece el número de secuencia de los valores contenidos en una columna con varios valores. Si itagSequence es 0, se devuelve el número de instancias de una columna con varios valores en lugar de cualquier dato de columna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>

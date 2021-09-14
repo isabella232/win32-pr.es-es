@@ -5,11 +5,11 @@ ms.assetid: 96466756-c135-4ee5-a48c-f31129878473
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b057657508b3060506c15c68308ea6a5332e5099
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060929"
 ---
 # <a name="implementing-iclassfactory"></a>Implementación de IClassFactory
 
@@ -20,9 +20,9 @@ Como resultado, todos los servidores deben implementar los métodos de la [**int
 -   [**CreateInstance**](/windows/desktop/api/Unknwn/nf-unknwn-iclassfactory-createinstance). Este método debe crear una instancia sin inicializar del objeto y devolver un puntero a una interfaz solicitada en el objeto .
 -   [**LockServer**](/windows/win32/api/unknwn/nf-unknwn-iclassfactory-lockserver). Este método simplemente incrementa el recuento de referencias en el objeto de clase para asegurarse de que el servidor permanece en memoria y no se apaga antes de que el cliente esté listo para que lo haga.
 
-Para permitir que un servidor sea responsable de su propia licencia, COM define [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfactory2), que hereda su definición de [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory). Por lo tanto, un servidor que **implementa IClassFactory2** debe, por definición, implementar los métodos de **IClassFactory**.
+Para permitir que un servidor sea responsable de sus propias licencias, COM define [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfactory2), que hereda su definición de [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory). Por lo tanto, un servidor que **implementa IClassFactory2** debe, por definición, implementar los métodos **de IClassFactory**.
 
-COM también proporciona funciones auxiliares para implementar servidores fuera de proceso. Para obtener más información, vea [Asistentes de implementación](out-of-process-server-implementation-helpers.md)de servidor fuera de proceso .
+COM también proporciona funciones auxiliares para implementar servidores fuera de proceso. Para obtener más información, vea [Asistentes de implementación de servidor fuera de proceso](out-of-process-server-implementation-helpers.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

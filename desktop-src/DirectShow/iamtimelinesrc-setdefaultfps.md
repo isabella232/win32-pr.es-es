@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5eda06b5aeb327de21b72332cd26a71884369b9c4171e1b0611f0e6259f9c1ce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fd15f0606b1a4e4ee1aacdb1b3f56d63a024708b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119915015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061094"
 ---
 # <a name="iamtimelinesrcsetdefaultfps-method"></a>Método IAMTimelineSrc::SetDefaultFPS
 
@@ -28,7 +28,7 @@ ms.locfileid: "119915015"
 
  
 
-El método establece la velocidad de fotogramas predeterminada `SetDefaultFPS` del objeto de origen.
+El `SetDefaultFPS` método establece la velocidad de fotogramas predeterminada del objeto de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,11 +56,11 @@ Velocidad de fotogramas predeterminada, en fotogramas por segundo.
 
 Devuelve S \_ OK si se realiza correctamente o E \_ INVALIDARG si la velocidad de fotogramas especificada es menor que cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El motor de representación usa este valor si no puede determinar la velocidad de fotogramas del archivo de origen original.
 
-Llame a este método solo para los archivos de código fuente sin una velocidad de fotogramas predefinida. En el caso de los archivos JPEG y de mapa de bits, la velocidad de fotogramas predeterminada es cero, lo que hace que el origen se represente como una imagen fija. Para usar la imagen como primer fotograma de una secuencia DIB, establezca la velocidad de fotogramas en un valor mayor que cero. Para obtener más información, [vea Trabajar con orígenes](working-with-sources.md).
+Llame a este método solo para los archivos de origen sin una velocidad de fotogramas predefinida. En el caso de los archivos JPEG y de mapa de bits, la velocidad de fotogramas predeterminada es cero, lo que hace que el origen se represente como una imagen fija. Para usar la imagen como primer fotograma de una secuencia DIB, establezca la velocidad de fotogramas en un valor mayor que cero. Para obtener más información, vea [Trabajar con orígenes.](working-with-sources.md)
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -68,7 +68,7 @@ Llame a este método solo para los archivos de código fuente sin una velocidad 
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -83,14 +83,14 @@ Llame a este método solo para los archivos de código fuente sin una velocidad 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

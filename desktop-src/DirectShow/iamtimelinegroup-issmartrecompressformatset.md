@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e37dfd551f92e0be10ae80f123ce0df0011aa09d2b74313c6a72b2706d7f8a16
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 078649fd42cd44596ff27558b29d14b6f8cbeddc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120107835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892097"
 ---
 # <a name="iamtimelinegroupissmartrecompressformatset-method"></a>IamTimelineGroup::IsSmartRecompressFormatSet (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "120107835"
 
  
 
-El `IsSmartRecompressFormatSet` método determina si se estableció un formato de recompresión inteligente para el grupo.
+El método determina si se estableció un formato de `IsSmartRecompressFormatSet` recompresión inteligente para el grupo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Recibe un valor booleano que indica si se estableció un formato de compresión.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,14 +79,14 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IamTimelineGroup (interfaz)**](iamtimelinegroup.md)
+[**IAMTimelineGroup (interfaz)**](iamtimelinegroup.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

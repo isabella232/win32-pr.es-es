@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48f160ca3433e42ee78c973312439b3e269fc49bf10e6dfafb93ae4e6f17e99f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5cf3085065f10225c98071d5259480eb58216e75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118582787"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889836"
 ---
 # <a name="automenushow"></a>AUTOMENU.show
 
@@ -43,15 +43,15 @@ Especifique siempre este valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **cuadro Panel de acceso** rápido aparece en la  ubicación especificada por los atributos izquierdo **y** superior del elemento **AUTOMENU.**
+El **cuadro Panel de acceso** rápido aparece en la ubicación especificada por los atributos izquierdo y superior del elemento  **AUTOMENU.** 
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: cbb6c5b19ed6116c59642e8dc5c0aa8eabf4800b066904f2132c7d182f2b7bbd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 94225faf957b2eac3388422d74df3cfdb8bf6d90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965163"
 ---
 # <a name="ieventsubscription3-interface"></a>Interfaz IEventSubscription3
 
@@ -31,7 +31,7 @@ No es necesario implementar la interfaz **IEventSubscription3.** Una clase de ob
 
 El [sistema de eventos COM+](com--events.md) usa esta interfaz para obtener información sobre suscripciones individuales.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IEventSubscription3** hereda de **IEventSubscription2.** **IEventSubscription3** también tiene estos tipos de miembros:
 
@@ -45,10 +45,10 @@ La **interfaz IEventSubscription3** tiene estas propiedades.
 
 | Propiedad                                                                                  | Tipo de acceso           | Descripción                                                |
 |:------------------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------|
-| [**EventClassApplicationID**](ieventsubscription3-eventclassapplicationid.md)<br/> | Lectura/escritura<br/> | GUID de aplicación del objeto de clase de eventos.<br/> |
-| [**EventClassPartitionID**](ieventsubscription3-eventclasspartitionid.md)<br/>     | Lectura/escritura<br/> | GUID de partición del objeto de clase de eventos.<br/>   |
-| [**SubscriberApplicationID**](ieventsubscription3-subscriberapplicationid.md)<br/> | Lectura/escritura<br/> | GUID de aplicación del suscriptor.<br/>         |
-| [**SubscriberPartitionID**](ieventsubscription3-subscriberpartitionid.md)<br/>     | Lectura/escritura<br/> | GUID de partición del suscriptor.<br/>           |
+| [**EventClassApplicationID**](ieventsubscription3-eventclassapplicationid.md)<br/> | Lectura y escritura<br/> | GUID de aplicación del objeto de clase de eventos.<br/> |
+| [**EventClassPartitionID**](ieventsubscription3-eventclasspartitionid.md)<br/>     | Lectura y escritura<br/> | GUID de partición del objeto de clase de eventos.<br/>   |
+| [**SubscriberApplicationID**](ieventsubscription3-subscriberapplicationid.md)<br/> | Lectura y escritura<br/> | GUID de aplicación del suscriptor.<br/>         |
+| [**SubscriberPartitionID**](ieventsubscription3-subscriberpartitionid.md)<br/>     | Lectura y escritura<br/> | GUID de partición del suscriptor.<br/>           |
 
 
 
@@ -58,14 +58,14 @@ La **interfaz IEventSubscription3** tiene estas propiedades.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

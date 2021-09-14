@@ -4,25 +4,25 @@ ms.assetid: 15690E05-9AF7-41A3-AF7C-8DB7C5FB9BE4
 title: Introducción
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f791589d73447798a7721c52164a2002b48a792959c698b835039293ce6004d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84879e6373f4bfeb5a7e4b6a6138423d7688afe2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970092"
 ---
-# <a name="get-started-with-desktop-windows-apps-that-use-the-win32-api"></a>Introducción a las aplicaciones de Windows escritorio que usan la API Win32
+# <a name="get-started-with-desktop-windows-apps-that-use-the-win32-api"></a>Introducción a las aplicaciones de Windows escritorio que usan la API win32
 
 Win32 API (también conocida como la API de Windows) es la plataforma original para aplicaciones Windows en C y C++ nativas que requieren acceso directo a Windows y al hardware. Proporciona una experiencia de desarrollo de primera clase sin depender de un entorno de tiempo de ejecución administrado como .NET y WinRT (para aplicaciones para UWP para Windows 10). Esto hace que Win32 API sea la plataforma preferida para las aplicaciones que necesitan el mayor nivel de rendimiento y acceso directo al hardware del sistema.
 
 > [!NOTE]
-> En esta documentación se explica cómo crear aplicaciones de Windows escritorio con la API Win32. La API Win32 es una de las varias plataformas de aplicaciones que puede usar para compilar aplicaciones de escritorio Windows aplicaciones. Para obtener más información sobre otras plataformas de aplicaciones, [vea Elegir la plataforma.](/windows/apps/desktop/choose-your-platform)
+> En esta documentación se explica cómo crear aplicaciones de escritorio Windows con la API Win32. La API win32 es una de las distintas plataformas de aplicaciones que puede usar para compilar aplicaciones de Windows escritorio. Para obtener más información sobre otras plataformas de aplicaciones, [vea Elegir la plataforma.](/windows/apps/desktop/choose-your-platform)
 
 ## <a name="get-set-up"></a>Prepárate
 
-Siga estas instrucciones y empiece a crear aplicaciones de escritorio para Windows 10 que usan la API Win32.
+Siga estas instrucciones y comience a crear aplicaciones de escritorio para Windows 10 que usan la API Win32.
 
-1. Descargue o actualice Visual Studio 2019. Si todavía no tienes Visual Studio 2019, puedes instalar Microsoft Visual Studio Community 2019 de forma gratuita. Al instalar Visual Studio, asegúrese de seleccionar la opción **Desarrollo de escritorio con C++.** Para ver los vínculos de descarga, consulte [nuestra página Descargas.](https://developer.microsoft.com/windows/downloads)
+1. Descargue o actualice Visual Studio 2019. Si todavía no tienes Visual Studio 2019, puedes instalar Microsoft Visual Studio Community 2019 de forma gratuita. Al instalar Visual Studio, asegúrese de seleccionar la opción **Desarrollo para el escritorio con C++.** Para ver los vínculos de descarga, consulte [nuestra página Descargas.](https://developer.microsoft.com/windows/downloads)
 
     > [!NOTE]
     > Al instalar Visual Studio, opcionalmente puede seleccionar las opciones desarrollo de escritorio de **.NET** y Desarrollo de plataforma **universal de Windows** para acceder a otros tipos de proyecto y plataformas de aplicaciones para compilar aplicaciones de escritorio Windows.
@@ -30,7 +30,7 @@ Siga estas instrucciones y empiece a crear aplicaciones de escritorio para Windo
 2. Si quiere compilar la aplicación de escritorio en un paquete [MSIX](/windows/msix/desktop/desktop-to-uwp-root) y probar o depurar la aplicación empaquetada en el equipo de desarrollo, deberá habilitar el modo de desarrollador en [el equipo.](/windows/uwp/get-started/enable-your-device-for-development)
 
 > [!NOTE]
-> Para los scripts que puede usar para configurar el equipo de desarrollo e instalar otras características o paquetes, consulte este [GitHub proyecto](https://github.com/Microsoft/windows-dev-box-setup-scripts).
+> Para los scripts que puede usar para configurar el equipo de desarrollo e instalar otras características o paquetes, consulte [este GitHub proyecto](https://github.com/Microsoft/windows-dev-box-setup-scripts).
 
 ## <a name="learn-how-to-create-desktop-apps-using-the-win32-api"></a>Aprenda a crear aplicaciones de escritorio mediante la API Win32
 
@@ -38,9 +38,9 @@ Si no está de acuerdo con la creación de aplicaciones de escritorio con la API
 
 | Tema        | Descripción      |
 |---------------|-----------------|
-| [Creación de la primera aplicación Win32 de C++](LearnWin32/learn-to-program-for-windows.md)    | En este tutorial se enseña a escribir un Windows en C++ mediante Win32 y LAS API COM.  |
+| [Creación de la primera aplicación Win32 de C++](LearnWin32/learn-to-program-for-windows.md)    | En este tutorial se enseña a escribir un programa Windows en C++ mediante Win32 y LAS API COM.  |
 | [Creación de la primera aplicación mediante DirectX](direct3dgetstarted/building-your-first-directx-app.md) | Este tutorial básico le ayudará a empezar a trabajar con el desarrollo de aplicaciones de DirectX.            |
-| [Guía de programación de Windows de 64 bits](WinProg64/programming-guide-for-64-bit-windows.md)    | Describe la programación de versiones de 64 bits del Windows operativo. |
+| [Guía de programación de Windows de 64 bits](WinProg64/programming-guide-for-64-bit-windows.md)    | Describe la programación para versiones de 64 bits del Windows operativo. |
 | [Uso de los Windows encabezados](WinProg/using-the-windows-headers.md)     | Proporciona información general sobre algunas de las convenciones usadas en los archivos Windows encabezado. |
 
 También puede examinar los ejemplos [de la aplicación de escritorio.](https://github.com/Microsoft/Windows-classic-samples)
@@ -49,7 +49,7 @@ También puede examinar los ejemplos [de la aplicación de escritorio.](https://
 
 Si tienes una aplicación Win32 de escritorio existente, hay muchas características en la Plataforma universal de Windows (UWP) que puedes usar para ofrecer la mejor experiencia posible en Windows 10. Por ejemplo, a partir Windows 10, versión 1903, puedes hospedar controles XAML de UWP en tu aplicación Win32 de escritorio mediante una característica denominada Islas XAML.
 
-La mayoría de estas características de UWP están disponibles como componentes modulares que puede adoptar en la aplicación de escritorio a su propio ritmo sin tener que volver a escribir toda la aplicación. Puede mejorar la aplicación de escritorio existente si elige qué partes de Windows 10 y UWP adoptar.
+La mayoría de estas características de UWP están disponibles como componentes modulares que puede adoptar en la aplicación de escritorio a su propio ritmo sin tener que volver a escribir toda la aplicación. Puedes mejorar tu aplicación de escritorio existente si eliges qué partes de Windows 10 y UWP debes adoptar.
 
 Para más información, consulta [Modernización de las aplicaciones de escritorio](/windows/apps/desktop/modernize).
 

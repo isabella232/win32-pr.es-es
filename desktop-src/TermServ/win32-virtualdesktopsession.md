@@ -24,12 +24,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01e039df658ded4534e3e2582f08ba4e5f5a04530d810349fff5633730a84332
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f343c1dc022dcb4759f813de956ade27e1aff213
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119137428"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890604"
 ---
 # <a name="win32_virtualdesktopsession-class"></a>Clase VirtualDesktopSession de Win32 \_
 
@@ -54,7 +54,7 @@ class Win32_VirtualDesktopSession
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ VirtualDesktopSession de Win32** tiene estos tipos de miembros:
 
@@ -160,7 +160,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el nombre de la cuenta de usuario asignada a la sesión.
+Obtiene el nombre de la cuenta de usuario que está asignada a la sesión.
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Obtiene el nombre de la máquina virtual que está asignada a la sesión.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

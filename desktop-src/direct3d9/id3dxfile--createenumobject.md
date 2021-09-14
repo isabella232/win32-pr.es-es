@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 528ab441da6cd4370de4ecad5d8490e6e74b5977672d0c7d4126cea1b7bab8fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a58a3341bacf9b323cc5753f8e9e51c4b703b966
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964756"
 ---
 # <a name="id3dxfilecreateenumobject-method"></a>Método ID3DXFile::CreateEnumObject
 
@@ -81,9 +81,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADVALUE, D3DXFERR \_ PARSEERROR.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Después de usar este método, use uno de los [**métodos ID3DXFileEnumObject**](id3dxfileenumobject.md) para recuperar un objeto de datos.
+Después de usar este método, use uno de [**los métodos ID3DXFileEnumObject**](id3dxfileenumobject.md) para recuperar un objeto de datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +96,7 @@ Después de usar este método, use uno de los [**métodos ID3DXFileEnumObject**]
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

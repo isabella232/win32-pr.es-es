@@ -1,6 +1,6 @@
 ---
 title: Métodos ID2D1RenderTarget CreateCompatibleRenderTarget (D2d1.h)
-description: Crea un nuevo destino de representación de mapa de bits para su uso durante el dibujo intermedio fuera de pantalla que es compatible con el destino de representación actual.
+description: Crea un nuevo destino de representación de mapa de bits para usarlo durante el dibujo fuera de pantalla intermedio que es compatible con el destino de representación actual.
 ms.assetid: 4a799a7c-0d2f-460f-99f9-24c6cf7c4537
 keywords:
 - Métodos CreateCompatibleRenderTarget de Direct2D
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 9015586109ff5015743874d18b604de919a9464a655383cf4d47aabb7b7acf35
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0f0de8478d2ab3ee2e7142bd0e197053dc58ac2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119432785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162846"
 ---
 # <a name="id2d1rendertargetcreatecompatiblerendertarget-methods"></a>Métodos ID2D1RenderTarget::CreateCompatibleRenderTarget
 
-Crea un nuevo destino de representación de mapa de bits para su uso durante el dibujo intermedio fuera de pantalla que es compatible con el destino de representación actual.
+Crea un nuevo destino de representación de mapa de bits para usarlo durante el dibujo fuera de pantalla intermedio que es compatible con el destino de representación actual.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,18 +29,18 @@ Crea un nuevo destino de representación de mapa de bits para su uso durante el 
 
 | Método                                                                                                                                                                                                                        | Descripción                                                                                                                                                                                                                                            |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,D2D1 \_ PIXEL \_ FORMAT,D2D1 \_ COMPATIBLE RENDER TARGET \_ \_ \_ OPTIONS,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget))       | Crea un destino de representación de mapa de bits para usarlo durante el dibujo intermedio fuera de pantalla que es compatible con el destino de representación actual.<br/>                                                                                                             |
-| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE F , \_ \* D2D1 \_ SIZE \_ \* U, D2D1 \_ PIXEL FORMAT \_ \* ,D2D1 \_ COMPATIBLE RENDER TARGET \_ \_ \_ OPTIONS,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget)) | Crea un destino de representación de mapa de bits para usarlo durante el dibujo intermedio fuera de pantalla que es compatible con el destino de representación actual. <br/>                                                                                                            |
-| [**CreateCompatibleRenderTarget(ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget))                                                                                                 | Crea un nuevo destino de representación de mapa de bits para su uso durante el dibujo intermedio fuera de pantalla que es compatible con el destino de representación actual y tiene el mismo tamaño, PPP y formato de píxel (pero no el modo alfa) que el destino de representación actual. <br/>         |
-| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_id2d1bitmaprendertarget))                                                                                   | Crea un nuevo destino de representación de mapa de bits para su uso durante el dibujo intermedio fuera de pantalla que es compatible con el destino de representación actual y tiene el mismo formato de píxel (pero no el modo alfa) que el destino de representación actual. <br/>                        |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,D2D1 \_ PIXEL \_ FORMAT,D2D1 \_ COMPATIBLE RENDER TARGET \_ \_ \_ OPTIONS,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget))       | Crea un destino de representación de mapa de bits para usarlo durante el dibujo fuera de pantalla intermedio que es compatible con el destino de representación actual.<br/>                                                                                                             |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F \* ,D2D1 \_ SIZE \_ \* U,D2D1 \_ PIXEL FORMAT \_ \* ,D2D1 \_ COMPATIBLE RENDER TARGET \_ \_ \_ OPTIONS,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget)) | Crea un destino de representación de mapa de bits para usarlo durante el dibujo fuera de pantalla intermedio que es compatible con el destino de representación actual. <br/>                                                                                                            |
+| [**CreateCompatibleRenderTarget(ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget))                                                                                                 | Crea un nuevo destino de representación de mapa de bits para su uso durante el dibujo fuera de pantalla intermedio que es compatible con el destino de representación actual y tiene el mismo tamaño, PPP y formato de píxel (pero no el modo alfa) que el destino de representación actual. <br/>         |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_id2d1bitmaprendertarget))                                                                                   | Crea un nuevo destino de representación de mapa de bits para su uso durante el dibujo fuera de pantalla intermedio que es compatible con el destino de representación actual y tiene el mismo formato de píxel (pero no el modo alfa) que el destino de representación actual. <br/>                        |
 | [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_id2d1bitmaprendertarget))                                                                     | Crea un destino de representación de mapa de bits para usarlo durante el dibujo intermedio fuera de la pantalla que es compatible con el destino de representación actual. El nuevo destino de representación de mapa de bits tiene el mismo formato de píxel (pero no el modo alfa) que el destino de representación actual. <br/> |
-| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,D2D1 \_ PIXEL \_ FORMAT,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_id2d1bitmaprendertarget))                                                 | Crea un destino de representación de mapa de bits para usarlo durante el dibujo intermedio fuera de pantalla que es compatible con el destino de representación actual. <br/>                                                                                                            |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,D2D1 \_ PIXEL \_ FORMAT,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_id2d1bitmaprendertarget))                                                 | Crea un destino de representación de mapa de bits para usarlo durante el dibujo fuera de pantalla intermedio que es compatible con el destino de representación actual. <br/>                                                                                                            |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **el método CreateCompatibleRenderTarget** para crear un [**id2D1BitmapRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmaprendertarget) y se usa para dibujar un patrón de cuadrícula. El patrón de cuadrícula se usa como origen de [**un objeto ID2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush)
+En el ejemplo siguiente se usa el **método CreateCompatibleRenderTarget** para crear un [**ID2D1BitmapRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmaprendertarget) y se usa para dibujar un patrón de cuadrícula. El patrón de cuadrícula se usa como origen de [**id2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush)
 
 
 ```C++
@@ -110,7 +110,7 @@ m_pRenderTarget->FillRectangle(
 
 
 
-El código se ha omitido en este ejemplo.
+En este ejemplo se ha omitido el código.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -124,7 +124,7 @@ El código se ha omitido en este ejemplo.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

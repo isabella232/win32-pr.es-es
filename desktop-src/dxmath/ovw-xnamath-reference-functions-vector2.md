@@ -1,19 +1,19 @@
 ---
-description: Enumera las funciones de vector 2D proporcionadas por DirectXMath.
+description: Enumera las funciones vectoriales 2D proporcionadas por DirectXMath.
 ms.assetid: be3d90d2-828e-9b05-3427-93c9457ee61d
-title: Funciones vectoriales 2D de la biblioteca DirectXMath
+title: Funciones vectoriales 2D de la biblioteca 2D de DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b877df843296fc4ac32d71061aff6ec3f69748d6a4c358a7e713c20caeac54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ede8828e6d03664afabd1035ae404c1934d99ee9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966268"
 ---
-# <a name="directxmath-library-2d-vector-functions"></a>Funciones vectoriales 2D de la biblioteca DirectXMath
+# <a name="directxmath-library-2d-vector-functions"></a>Funciones vectoriales 2D de la biblioteca 2D de DirectXMath
 
-Enumera las funciones de vector 2D proporcionadas por DirectXMath.
+Enumera las funciones vectoriales 2D proporcionadas por DirectXMath.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -22,8 +22,8 @@ Enumera las funciones de vector 2D proporcionadas por DirectXMath.
 | Tema                                                                                                                           | Descripción                                              |
 |---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Funciones de comparación de vectores 2D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector2-comparison.md)<br/>         | Enumera las funciones de comparación de vectores 2D.<br/>     |
-| [Funciones geométricas vectoriales 2D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector2-geometric.md)<br/>           | Enumera las funciones geométricas vectoriales 2D.<br/>      |
-| [Funciones de transformación vector 2D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector2-transformation.md)<br/> | Enumera las funciones de transformación de vectores 2D.<br/> |
+| [Funciones geométricas de vectores 2D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector2-geometric.md)<br/>           | Enumera las funciones geométricas del vector 2D.<br/>      |
+| [Funciones de transformación de vectores 2D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector2-transformation.md)<br/> | Enumera las funciones de transformación de vectores 2D.<br/> |
 
 
 
@@ -33,7 +33,7 @@ Enumera las funciones de vector 2D proporcionadas por DirectXMath.
 
 <dl> <dt>
 
-[Funciones de la biblioteca DirectXMath](ovw-xnamath-reference-functions.md)
+[Funciones de biblioteca de DirectXMath](ovw-xnamath-reference-functions.md)
 </dt> </dl>
 
  

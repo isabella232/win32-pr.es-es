@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: a351c9e1b4fc36c816e87aeaae79a591bb43768a4e098bf315990fc1e1794fe4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6e7fe86f041a818db77c28ed9461d8c8fb48ad64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162838"
 ---
 # <a name="id2d1rendertargetcreatelayer-methods"></a>Métodos ID2D1RenderTarget::CreateLayer
 
@@ -35,7 +35,7 @@ Crea un recurso de capa que se puede usar con este destino de representación y 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La capa cambia automáticamente de tamaño, según sea necesario.
 
@@ -96,7 +96,7 @@ HRESULT DemoApp::RenderWithLayer(ID2D1RenderTarget *pRT)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

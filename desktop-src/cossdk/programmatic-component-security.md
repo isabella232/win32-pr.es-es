@@ -4,12 +4,12 @@ ms.assetid: 6117970c-5dbd-485e-978e-3aa96e42b359
 title: Seguridad de componentes mediante programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b3fc8813b6aff98f19e7c051067f3246c25b336ea7a99a2371f03c7f3f50883
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 31622608e4d4f54aeb53b403b5d8711ff9c6a9af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119462115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966931"
 ---
 # <a name="programmatic-component-security"></a>Seguridad de componentes mediante programación
 

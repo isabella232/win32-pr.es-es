@@ -6,12 +6,12 @@ keywords:
 - Direct2D, ejemplo de código de rectángulo de dibujo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3fd732d1d18cd731f6e6caa46f456f4896f47f778f8edc824442dfee5f6ac4f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43442e57ed0949bdf39fc05ce1a69fded42b4b3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117825436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163354"
 ---
 # <a name="direct2d-quickstart-for-windows-8"></a>Inicio rápido de Direct2D para Windows 8
 
@@ -91,7 +91,7 @@ Además de los encabezados necesarios para la aplicación, incluya los encabezad
 
 ## <a name="step-2-create-an-id2d1factory1"></a>Paso 2: Crear un ID2D1Factory1
 
-Una de las primeras cosas que hace cualquier ejemplo de Direct2D es crear un [**ID2D1Factory1**](/windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1factory1).
+Una de las primeras cosas que hace cualquier ejemplo de Direct2D es crear un [**id2D1Factory1**](/windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1factory1).
 
 
 ```C++
@@ -143,7 +143,7 @@ Después de crear un generador, úselo para crear un dispositivo Direct2D y, a c
 
 Un contexto de dispositivo es un dispositivo que puede realizar operaciones de dibujo y crear recursos de dibujo dependientes del dispositivo, como pinceles. También se usa el contexto del dispositivo para vincular [**un ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) a una superficie DXGI para usarla como destino de representación. El contexto del dispositivo se puede representar en distintos tipos de destinos.
 
-El código aquí declara las propiedades del mapa de bits que se vincula a una cadena de intercambio DXGI que se representa en [**una instancia de CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow). El [**método ID2D1DeviceContext::CreateBitmapFromDxgiSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1)) obtiene una superficie de Direct2D de la superficie DXGI. Esto hace que todo lo representado en el id. de destino [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) se represente en la superficie de la cadena de intercambio.
+El código aquí declara las propiedades del mapa de bits que se vinculan a una cadena de intercambio DXGI que se representa en [**una instancia de CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow). El [**método ID2D1DeviceContext::CreateBitmapFromDxgiSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1)) obtiene una superficie de Direct2D de la superficie DXGI. Esto hace que todo lo representado en el id. de destino [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) se represente en la superficie de la cadena de intercambio.
 
 Una vez que tenga la superficie de Direct2D, use el método [**ID2D1DeviceContext::SetTarget**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-settarget) para establecerla como destino de representación activo.
 
@@ -200,9 +200,9 @@ DX::ThrowIfFailed(
 
 Un pincel es un objeto que pinta un área, como el trazo de una forma o el relleno de una geometría. El pincel de este ejemplo pinta un área con un color sólido predefinido, negro.
 
-Direct2D también proporciona otros tipos de pinceles: pinceles de [](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) degradado para pintar degradados lineales y radiales, un [](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1imagebrush) pincel de mapa de bits para pintar con mapas de bits y patrones y, a partir de Windows 8, un pincel de imagen para pintar con una imagen representado.
+Direct2D también proporciona otros tipos de pinceles: pinceles de [](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) degradado para pintar degradados radiales y lineales, un [](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1imagebrush) pincel de mapa de bits para pintar con mapas de bits y patrones y, a partir de Windows 8, un pincel de imagen para pintar con una imagen representado.
 
-Algunas API de dibujo proporcionan lápices para dibujar contornos y pinceles para rellenar formas. Direct2D es diferente: no proporciona un objeto de lápiz, sino que usa un pincel para dibujar contornos y rellenar formas. Al dibujar contornos, use la interfaz [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) o, a partir de Windows 8 la interfaz [**ID2D1StrokeStyle1,**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1strokestyle1) con un pincel para controlar las operaciones de acargotado de ruta de acceso.
+Algunas API de dibujo proporcionan lápices para dibujar contornos y pinceles para rellenar formas. Direct2D es diferente: no proporciona un objeto de lápiz, sino que usa un pincel para dibujar contornos y rellenar formas. Al dibujar contornos, use la interfaz [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) o, a partir de Windows 8 la interfaz [**ID2D1StrokeStyle1,**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1strokestyle1) con un pincel para controlar las operaciones de acariciamiento de ruta de acceso.
 
 Un pincel solo se puede usar con el destino de representación que lo creó y con otros destinos de representación en el mismo dominio de recursos. En general, debe crear pinceles una vez y conservarlos durante la vida útil del destino de representación que los creó. [**ID2D1SolidColorBrush es**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) la excepción única; Dado que es relativamente económico crearlo, puede crear un **objeto ID2D1SolidColorBrush** cada vez que dibuje un marco, sin que se note el rendimiento. También puede usar un único **ID2D1SolidColorBrush** y cambiar su color o opacidad cada vez que lo use.
 
@@ -238,11 +238,11 @@ El [**método DrawRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget
 
 Debe llamar al [**método BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) antes de emitir los comandos de dibujo y debe llamar al método [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) una vez que haya terminado de emitir comandos de dibujo. El **método EndDraw** devuelve un **HRESULT** que indica si los comandos de dibujo se ejecutaron correctamente. Si no se realiza correctamente, la función auxiliar ThrowIfFailed producirá una excepción.
 
-El [**método IDXGISwapChain::P resent**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-present) intercambia la superficie de búfer con la superficie de pantalla para mostrar el resultado.
+El [**método IDXGISwapChain::P resent**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-present) intercambia la superficie de búfer con la superficie en pantalla para mostrar el resultado.
 
 ## <a name="example-code"></a>Ejemplo de código
 
-El código de este tema muestra los elementos básicos de una aplicación direct2D. Por brevedad, el tema omite el marco de trabajo de la aplicación y el código de control de errores que es característica de una aplicación bien escrita.
+El código de este tema muestra los elementos básicos de una aplicación de Direct2D. Por brevedad, el tema omite el marco de trabajo de la aplicación y el código de control de errores que es característica de una aplicación bien escrita.
 
  
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 37df0c93a17dadc2f6d6fbf94a662b89bf9630a0b0861f5bf5a0c676f7d369fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b0fb5104e56afbcc4dd25e28981f0c382d7888e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952444"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061066"
 ---
 # <a name="ixml2dexreadxmlfile-method"></a>IXml2Dex::ReadXMLFile (método)
 
@@ -75,7 +75,7 @@ Devuelve un valor HRESULT. Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no borra los objetos existentes de la escala de tiempo antes de insertar los nuevos objetos definidos en el archivo XML. Si necesita actualizar una escala de tiempo existente, llame primero [**a IAMTimeline::ClearAllGroups.**](iamtimeline-clearallgroups.md)
 
@@ -95,13 +95,13 @@ Este método no borra los objetos existentes de la escala de tiempo antes de ins
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Internet Explorer 4.0 o posterior<br/>                                               |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Version<br/> | Internet Explorer 4.0 o posterior<br/>                                               |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: e6173abf04f42b0632441b436706318796a5d0af758928e61dd3f19d30bda881
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da8f9c1c8bb3aa74c0ab22a5cc701e7d835898de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120027975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970991"
 ---
 # <a name="d3dmultisample_type-enumeration"></a>D3DMULTISAMPLE \_ TYPE (enumeración)
 
 Define los niveles de multimuestreo de escena completa que el dispositivo puede aplicar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -182,7 +182,7 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Además de habilitar la multimuestreo de escena completa en [**IDirect3DDevice9::Reset**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset) time, habrá estados de representación que activarán y desactivarán varios aspectos en niveles específicos.
 
@@ -209,7 +209,7 @@ No es una buena práctica cambiar de un tipo multimuestreo a otro para aumentar 
 
 D3DMULTISAMPLE NONE permite efectos de intercambio distintos de \_ descartar, bloquear, entre otros.
 
-Si el dispositivo de pantalla admite multimuestreo enmascarable (más de una muestra para un formato de destino de representación de varias muestras más compatibilidad con suavizado de contorno) o simplemente multimuestreo no enmascarable (solo compatibilidad con suavizado de contorno), el controlador del dispositivo proporciona el número de niveles de calidad para el tipo de varias muestras D3DMULTISAMPLE \_ NONMASKABLE. Las aplicaciones que solo usan multimuestreo con fines de suavizado de contorno solo necesitan consultar el número de niveles de calidad de varias muestras no enmascarables que admite el controlador.
+Si el dispositivo para mostrar admite el multimuestreo enmascarable (más de una muestra para un formato de destino de representación de varias muestras más compatibilidad con suavizado de contorno) o simplemente multimuestreo no enmascarable (solo compatibilidad con antialias), el controlador del dispositivo proporciona el número de niveles de calidad para el tipo de varias muestras D3DMULTISAMPLE \_ NONMASKABLE. Las aplicaciones que solo usan multimuestreo con fines de suavizado de contorno solo necesitan consultar el número de niveles de calidad de varias muestras no enmascarables que admite el controlador.
 
 Los niveles de calidad admitidos por el dispositivo se pueden obtener con el parámetro pQualityLevels [**de IDirect3D9::CheckDeviceMultiSampleType**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdevicemultisampletype). Los niveles de calidad utilizados por la aplicación se establecen con el parámetro MultiSampleQuality de [**IDirect3DDevice9::CreateDepthStencilSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createdepthstencilsurface) e [**IDirect3DDevice9::CreateRenderTarget**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createrendertarget).
 
@@ -225,7 +225,7 @@ Consulte D3DRS \_ MULTISAMPLEMASK para obtener información sobre el multimuestr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

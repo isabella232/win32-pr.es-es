@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Ks.h
-ms.openlocfilehash: 80a7b6f046edd1cd7f602487a11d6a79c375276814f9374f4142d148699bb8b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f523d378a54311845781c144b33e131d5875e41e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118397249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061030"
 ---
 # <a name="kstopology_connection-structure"></a>Estructura DE CONEXIÓN KSTOPOLOGY \_
 
@@ -40,7 +40,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ typedef struct {
 **FromNodePin**
 </dt> <dd>
 
-Si el valor del campo **FromNode** es KSFILTER NODE, este campo especifica el \_ índice del pin ascendente. De lo contrario, este campo se omite.
+Si el valor del **campo FromNode** es KSFILTER NODE, este campo especifica el \_ índice del pin ascendente. De lo contrario, este campo se omite.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Si el valor del campo **FromNode** es KSFILTER NODE, este campo especifica el \_
 **ToNodePin**
 </dt> <dd>
 
-Si el valor del **campo ToNode** es KSFILTER NODE, este campo especifica el índice del \_ pin de bajada. De lo contrario, este campo se omite.
+Si el valor del **campo ToNode** es KSFILTER NODE, este campo especifica el índice del \_ pin de nivel inferior. De lo contrario, este campo se omite.
 
 </dd> </dl>
 

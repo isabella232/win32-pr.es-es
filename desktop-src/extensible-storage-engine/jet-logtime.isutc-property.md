@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_LOGTIME. Propiedad IsUtc'
+description: 'Más información sobre: JET_LOGTIME. Propiedad IsUtc'
 title: JET_LOGTIME. Propiedad IsUtc
 TOCTitle: 'IsUtc property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_LOGTIME.IsUtc
@@ -26,18 +26,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 0142ce9c79b2828fcb00b953f1e689d31ee571d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969100"
 ---
 # <a name="jet_logtimeisutc-property"></a>JET_LOGTIME. Propiedad IsUtc
 
-Obtiene un valor que indica si la JET_LOGTIME está en UTC.
+Obtiene un valor que indica si el JET_LOGTIME está en UTC.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,14 +58,14 @@ public bool IsUtc { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LOGTIME](./jet-logtime-structure2.md)
+[JET_LOGTIME estructura](./jet-logtime-structure2.md)
 
-[Miembros de JET_LOGTIME](./jet-logtime-members.md)
+[JET_LOGTIME miembros](./jet-logtime-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: d0b3f2b56a360d1e7ca729978700649eb41724f9207890884bb89b2fdce0214b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6b8167c6f532dace18e2be6d71723a0544dbb710
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120093615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969107"
 ---
 # <a name="jet_logtimeequals-method"></a>JET_LOGTIME. Método Equals
 

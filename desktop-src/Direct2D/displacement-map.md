@@ -6,12 +6,12 @@ keywords:
 - efecto de mapa de desplazamiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73888d8168e411bf0f8daee1f2e04801353ee8358d27ba4d5cc9b1f71630a762
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd0ad2deb0c584ccc9c55faebd60f803d66efa42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119833024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163318"
 ---
 # <a name="displacement-map-effect"></a>Efecto de mapa de desplazamiento
 
@@ -63,16 +63,16 @@ m_d2dContext->EndDraw();
 
 Las ubicaciones de los píxeles de la salida se determinan mediante esta fórmula:
 
-C' (x,y)=C(x+ scale \* (XChannelSelector(Bitmap Bitmap (x,y))-0.5),y+ scale \* (YChannelSelector(Bitmap (x,y))-0.5))
+C' (x,y)=Escala de C(x+ (XChannelSelector(Mapa de bits de desplazamiento \* (x,y))-0,5),escala y+ \* (YChannelSelector(Mapa de bits de desplazamiento (x,y))-0,5))
 
 Donde:<dl> *C (x, y)* es el píxel de salida en (x, y).  
 *C (x, y)* es el píxel de entrada en (x, y).  
 *Mapa de bits de desplazamiento (x, y)* es la intensidad de píxeles de desplazamiento en las coordenadas especificadas.  
-*XChannelSelecto la* intensidad del canal RGBA seleccionado del mapa de bits de desplazamiento que desplaza la imagen de entrada en la dirección X.  
-*YChannelSelecto la* intensidad del canal RGBA seleccionado del mapa de bits de desplazamiento que desplaza la imagen de entrada en la dirección Y.  
+*XChannelSelector la* intensidad del canal RGBA seleccionado del mapa de bits de desplazamiento que desplaza la imagen de entrada en la dirección X.  
+*YChannelSelector la* intensidad del canal RGBA seleccionado del mapa de bits de desplazamiento que desplaza la imagen de entrada en la dirección Y.  
 </dl>
 
-El efecto vuelve a muestrear la imagen de entrada según la propiedad de escala y la intensidad de la imagen de desplazamiento. Usa la interpolación bilineal si el muestreo de entre píxeles de la imagen de entrada.
+El efecto vuelve a muestrear la imagen de entrada según la propiedad scale y la intensidad de la imagen de desplazamiento. Usa la interpolación bilineal si el muestreo desde entre píxeles de la imagen de entrada.
 
 Este efecto funciona en imágenes alfa rectas y premultiplicadas. El formato alfa de salida es el mismo que el formato de entrada.
 
@@ -82,9 +82,9 @@ Este efecto funciona en imágenes alfa rectas y premultiplicadas. El formato alf
 
 | Enumeración de nombre para mostrar e índice                                                   | Tipo y valor predeterminado                                                   | Descripción                                                                                                                                                                               |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Escala<br/> ESCALA DE PROP DE MAPA DE DESPLAZAMIENTO D2D1 \_ \_ \_<br/>                       | FLOAT<br/> 0,0f<br/>                                         | Multiplica la intensidad del canal seleccionado a partir de la imagen de desplazamiento. Cuanto mayor sea el valor de esta propiedad, más desplazará el efecto a los píxeles.<br/>                       |
-| XChannelSelect<br/> SELECCIÓN DE CANAL X DE PROP X DE LA PROPIEDAD DE MAPA DE DESPLAZAMIENTO \_ \_ \_ \_ D2D1 \_<br/> | SELECTOR DE CANALES D2D1 \_ \_<br/> SELECTOR DE CANAL D2D1 \_ \_ \_ A<br/> | El efecto extrae la intensidad de este canal de color y la usa para desplazar espacialmente la imagen en la dirección X. Consulte [Canales de color](#color-channels) para obtener más información.<br/> |
-| YChannelSelect<br/> SELECCIÓN DEL CANAL DE \_ PROP Y DEL MAPA DE DESPLAZAMIENTO \_ \_ \_ D2D1 \_<br/> | SELECTOR DE CANALES D2D1 \_ \_<br/> SELECTOR DE CANAL D2D1 \_ \_ \_ A<br/> | El efecto extrae la intensidad de este canal de color y la usa para desplazar espacialmente la imagen en la dirección Y. Consulte [Canales de color](#color-channels) para obtener más información.<br/> |
+| Escala<br/> ESCALA DE PROP \_ DE LA ASIGNACIÓN DE MAPAS DE DESPLAZAMIENTO \_ D2D1 \_<br/>                       | FLOAT<br/> 0,0f<br/>                                         | Multiplica la intensidad del canal seleccionado a partir de la imagen de desplazamiento. Cuanto mayor sea el valor de esta propiedad, más se desplazarán los píxeles.<br/>                       |
+| XChannelSelect<br/> SELECCIÓN DE CANAL \_ X DE LA PROPIEDAD DE MAPA DE DESPLAZAMIENTO \_ \_ \_ D2D1 \_<br/> | SELECTOR DE CANALES D2D1 \_ \_<br/> SELECTOR DE CANALES D2D1 \_ \_ \_ A<br/> | El efecto extrae la intensidad de este canal de color y la usa para desplazar espacialmente la imagen en la dirección X. Consulte [Canales de color](#color-channels) para obtener más información.<br/> |
+| YChannelSelect<br/> SELECCIÓN DEL CANAL DE PROP Y DE LA PROPIEDAD \_ DE MAPA DE DESPLAZAMIENTO \_ \_ \_ D2D1 \_<br/> | SELECTOR DE CANALES D2D1 \_ \_<br/> SELECTOR DE CANALES D2D1 \_ \_ \_ A<br/> | El efecto extrae la intensidad de este canal de color y la usa para desplazar espacialmente la imagen en la dirección Y. Consulte [Canales de color](#color-channels) para obtener más información.<br/> |
 
 
 
@@ -97,9 +97,9 @@ Este efecto funciona en imágenes alfa rectas y premultiplicadas. El formato alf
 | Enumeración                | Descripción                                                      |
 |----------------------------|------------------------------------------------------------------|
 | SELECTOR DE CANALES D2D1 \_ \_ \_ R | El efecto extrae la salida de intensidad del canal rojo.   |
-| SELECTOR DE CANAL D2D1 \_ \_ \_ G | El efecto extrae la salida de intensidad del canal verde. |
+| SELECTOR DE CANALES D2D1 \_ \_ \_ G | El efecto extrae la salida de intensidad del canal verde. |
 | SELECTOR DE CANALES D2D1 \_ \_ \_ B | El efecto extrae la salida de intensidad del canal azul.  |
-| SELECTOR DE CANAL D2D1 \_ \_ \_ A | El efecto extrae la salida de intensidad del canal alfa. |
+| SELECTOR DE CANALES D2D1 \_ \_ \_ A | El efecto extrae la salida de intensidad del canal alfa. |
 
 
 
@@ -111,7 +111,7 @@ Puede determinar el tamaño máximo del mapa de bits de salida con estas ecuacio
 
 ¿Mapa de bits de salida? Pixels=(Input Bitmap Size?( DIP)+Escala) \* (PPP de usuario/96)
 
-Output Bitmap<sub>y</sub> Pixels=(Input Bitmap Size y (DIP) + Scale) (Tamaño de mapa de bits<sub>de entrada y</sub>(DIP) + Escala) \* (PPP/96 del usuario)
+Output Bitmap<sub>y</sub> Pixels=(Input Bitmap Size<sub>y</sub>(DIP) + Scale) \* (User DPI/96)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -119,9 +119,9 @@ Output Bitmap<sub>y</sub> Pixels=(Input Bitmap Size y (DIP) + Scale) (Tamaño de
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio Windows aplicaciones de la \| Tienda\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio Windows aplicaciones de la \| Tienda\] |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

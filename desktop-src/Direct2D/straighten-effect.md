@@ -4,12 +4,12 @@ description: Gira y, opcionalmente, escala una imagen.
 ms.assetid: aa37cdf1-bbb6-db4e-45a7-67c7cc16b7b4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31d777859fa35dc3dafc3507586e76309049fa170e42bb29f4b214cc704fd24c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a8e521ca4c0c452301c0f8031c94ba8c22efe80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118664972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162569"
 ---
 # <a name="straighten-effect"></a>Efecto de enderez
 
@@ -54,11 +54,11 @@ Las propiedades del efecto de enderez se definen mediante la [**enumeración \_ 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 

@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método StartService Servicios de Escritorio remoto
 - Método StartService Servicios de Escritorio remoto , Win32_Service clase
-- Win32_Service clase Servicios de Escritorio remoto método , StartService
+- Win32_Service clase Servicios de Escritorio remoto , método StartService
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a1a921f863ea2e06b7c84cf5ed66424d37f70be34f71c7c5975c95ff3d4308e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce4bd12150223d7cdc1340b7557ba309a1e07da4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119514365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890745"
 ---
 # <a name="startservice-method-of-the-win32_service-class-remote-desktop-services"></a>Método StartService de la clase Win32_Service (Servicios de Escritorio remoto)
 
 El **método StartService** intenta colocar el servicio al que se hace referencia en su estado de inicio.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -224,13 +224,13 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Aunque puede parecer que no hay ninguna diferencia práctica entre un servicio que se detiene y un servicio que está en pausa, los dos estados aparecen de forma diferente al SCM. Un servicio detenido es un servicio que no se está ejecutando y debe pasar por todo el procedimiento de inicio del servicio. Sin embargo, un servicio en pausa todavía se está ejecutando, pero se ha suspendido su funcionamiento. Por este problema, un servicio en pausa no necesita pasar por todo el procedimiento de inicio del servicio, sino que necesita un procedimiento diferente para reanudar el funcionamiento.
+Aunque puede parecer que no hay ninguna diferencia práctica entre un servicio que se detiene y un servicio que está en pausa, los dos estados aparecen de forma diferente al SCM. Un servicio detenido es un servicio que no se está ejecutando y debe pasar por todo el procedimiento de inicio del servicio. Sin embargo, un servicio en pausa todavía se está ejecutando, pero se ha suspendido su funcionamiento. Por este problema, un servicio en pausa no necesita pasar por todo el procedimiento de inicio del servicio, pero necesita un procedimiento diferente para reanudar el funcionamiento.
 
-Debe usar el método adecuado para iniciar un servicio que se ha detenido o para reanudar un servicio que se ha pausado. Los [**métodos \_ del servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service) **StartService** y [**ResumeService**](win32-terminalservice-resumeservice.md) deben usarse en las situaciones siguientes:
+Debe usar el método adecuado para iniciar un servicio que se ha detenido o para reanudar un servicio que se ha pausado. Los [**métodos de \_ servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service) **StartService** y [**ResumeService**](win32-terminalservice-resumeservice.md) deben usarse en las situaciones siguientes:
 
--   Si un servicio está detenido actualmente, debe usar el **método StartService** para reiniciarlo. [**ResumeService**](win32-terminalservice-resumeservice.md) no puede iniciar un servicio que está detenido actualmente.
+-   Si un servicio está detenido actualmente, debe usar el **método StartService** para reiniciarlo. [**ResumeService**](win32-terminalservice-resumeservice.md) no puede iniciar un servicio que esté detenido actualmente.
 -   Si un servicio está en pausa, debe usar [**ResumeService**](win32-terminalservice-resumeservice.md). Si usa el **método StartService** en un servicio en pausa, recibirá el mensaje "El servicio ya se está ejecutando". Sin embargo, el servicio permanece en pausa hasta que se le envía el código de control de servicio de reanudación.
 
 Si inicia un servicio detenido que depende de otro servicio, se inician ambos servicios. Cuando se inicia un servicio con este método, los servicios dependientes no se inician automáticamente. Debe usar la clase de asociación [**Win32 \_ DependentService**](/windows/desktop/CIMWin32Prov/win32-dependentservice) y la consulta [Associators Of](/windows/desktop/WmiSdk/associators-of-statement) para buscar los dependientes e iniciarlos por separado.
@@ -239,17 +239,17 @@ Si inicia un servicio detenido que depende de otro servicio, se inician ambos se
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

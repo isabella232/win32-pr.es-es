@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00ef5c7c9a00475ead0904cbf62d6d21fd647ce0de9fe402d1499dac7ee1bd09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1987ef25688e83a48059805f79af4dc8a88c1ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124670"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060847"
 ---
 # <a name="d3dx11preprocessshaderfromfile-function"></a>Función D3DX11PreprocessShaderFromFile
 
 > [!Note]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store.
 
  
 
@@ -80,7 +80,7 @@ Matriz terminada en NULL de macros de sombreador; establezca esta opción **en N
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Puntero a una interfaz include; establezca este valor **en NULL** para especificar que no hay ningún archivo de include.
+Puntero a una interfaz include; establezca esta opción **en NULL** para especificar que no hay ningún archivo de incluir.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Puntero a una interfaz include; establezca este valor **en NULL** para especific
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolverse hasta que se complete.
+Puntero a una interfaz de bombeo de subprocesos [**(vea ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolverse hasta que se complete.
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Puntero a la memoria que contiene el sombreador nocompilado.
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un puntero a la memoria que contiene errores de creación de efectos, si se ha producido alguno.
+Dirección de un puntero a la memoria que contiene errores de creación de efecto, si se ha producido alguno.
 
 </dd> <dt>
 
@@ -137,7 +137,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Di
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

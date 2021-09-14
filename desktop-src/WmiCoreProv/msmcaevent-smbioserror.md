@@ -1,5 +1,5 @@
 ---
-description: Indica un error de BIOS del sistema de comprobación de máquina (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
+description: Indica un error de BIOS del sistema de machine check architecture (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
 ms.assetid: b451ca45-6208-4445-b9f1-b4e3174837a4
 title: MSMCAEvent_SMBIOSError clase
 ms.topic: reference
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: fccb38a73585db71c6418929a35458f26b9749159e537de47a298d920b318e08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 709d480e8865c5d5bde2a9f5e8de45f138e66548
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118558400"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889228"
 ---
-# <a name="msmcaevent_smbioserror-class"></a>Clase \_ SMBIOSError de MSMCAEvent
+# <a name="msmcaevent_smbioserror-class"></a>Clase MSMCAEvent \_ SMBIOSError
 
-La **clase \_ SMBIOSError de MSMCAEvent** indica un error de BIOS del sistema Machine Check Architecture (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
+La **clase \_ SMBIOSError de MSMCAEvent** indica un error de BIOS del sistema machine check architecture (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
 
 La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -58,15 +58,15 @@ class MSMCAEvent_SMBIOSError : WMIEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ SMBIOSError de MSMCAEvent** tiene estos tipos de miembros:
+La **clase MSMCAEvent \_ SMBIOSError** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ SMBIOSError de MSMCAEvent** tiene estas propiedades.
+La **clase MSMCAEvent \_ SMBIOSError** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -122,7 +122,7 @@ Nivel de gravedad del error notificado.
 
 
 
-| Valor                                                                                                | Significado                |
+| Value                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperable<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Grave<br/>       |
@@ -172,7 +172,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de bytes que contiene el registro de errores sin formato. Número de elementos de la matriz que especifica **la** propiedad Size.
+Matriz de bytes que contiene el registro de error sin formato. Número de elementos de la matriz que especifica **la** propiedad Size.
 
 </dd> <dt>
 
@@ -185,9 +185,9 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de registro del registro de errores de este error.
+Identificador de registro del registro de errores para este error.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -217,7 +217,7 @@ Tipo de evento.
 
 
 
-| Valor                                                                                                  | Significado                                                                                                                     |
+| Value                                                                                                  | Significado                                                                                                                     |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl>   | Reservado.<br/>                                                                                                        |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>   | Error de memoria ECC de un solo bit.<br/>                                                                                     |
@@ -231,8 +231,8 @@ Tipo de evento.
 | <span id="9"></span><dl> <dt>**9**</dt> </dl>   | Error de paridad de PCI.<br/>                                                                                                |
 | <span id="10"></span><dl> <dt>**10**</dt> </dl> | Error del sistema PCI.<br/>                                                                                                |
 | <span id="11"></span><dl> <dt>**11**</dt> </dl> | Error de CPU.<br/>                                                                                                     |
-| <span id="12"></span><dl> <dt>**12**</dt> </dl> | Tiempo de espera del temporizador de error de EISA.<br/>                                                                                    |
-| <span id="13"></span><dl> <dt>**13**</dt> </dl> | Registro de memoria corregible deshabilitado.<br/>                                                                                 |
+| <span id="12"></span><dl> <dt>**12**</dt> </dl> | Tiempo de espera del temporizador a prueba de errores de EISA.<br/>                                                                                    |
+| <span id="13"></span><dl> <dt>**13**</dt> </dl> | Registro de memoria corregida deshabilitada.<br/>                                                                                 |
 | <span id="14"></span><dl> <dt>**14**</dt> </dl> | Registro deshabilitado para un tipo de evento específico. Demasiados errores del mismo tipo recibidos en un breve período de tiempo.<br/> |
 | <span id="15"></span><dl> <dt>**15**</dt> </dl> | Reservado.<br/>                                                                                                        |
 | <span id="16"></span><dl> <dt>**16**</dt> </dl> | Se superó el límite del sistema (por ejemplo, se superó el umbral de voltaje o temperatura).<br/>                                  |
@@ -242,7 +242,7 @@ Tipo de evento.
 | <span id="20"></span><dl> <dt>**20**</dt> </dl> | Sistema reconfigurado.<br/>                                                                                             |
 | <span id="21"></span><dl> <dt>**21**</dt> </dl> | Error complejo de CPU no correcible.<br/>                                                                                 |
 | <span id="22"></span><dl> <dt>**22**</dt> </dl> | Restablecimiento o borrado del área de registro.<br/>                                                                                       |
-| <span id="23"></span><dl> <dt>**23**</dt> </dl> | Arranque del sistema. Si se implementa, se garantiza que esta entrada de registro será la primera escrita en cualquier arranque del sistema.<br/>        |
+| <span id="23"></span><dl> <dt>**23**</dt> </dl> | Arranque del sistema. Si se implementa, se garantiza que esta entrada de registro es la primera escrita en cualquier arranque del sistema.<br/>        |
 
 
 
@@ -272,13 +272,13 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Bits de validación usados para indicar la validez de los campos posteriores. Un valor de 1 (0x1) significa que **EL EVENTO SMBIOS \_** es válido.
+Bits de validación usados para indicar la validez de los campos subsiguientes. Un valor de 1 (0x1) significa que **el evento SMBIOS \_** es válido.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase MSMCAEvent \_ SMBIOSError** se deriva de [**WMIEvent**](wmievent.md).
 
@@ -286,7 +286,7 @@ La **clase MSMCAEvent \_ SMBIOSError** se deriva de [**WMIEvent**](wmievent.md).
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |

@@ -1,6 +1,6 @@
 ---
 title: Compatibilidad con enlaces en tiempo de tarde
-description: Cuando la compatibilidad con el enlace en tiempo de tarde está en su lugar, cada llamada de función debe pasar a través de la interfaz ADSI IDispatch, antes de que se vuelva a enrutar a la extensión adecuada.
+description: Cuando se dispone de compatibilidad con el enlace en tiempo de tarde, cada llamada de función debe pasar por la interfaz ADSI IDispatch, antes de que se vuelva a enrutar a la extensión adecuada.
 ms.assetid: fbdc6234-9381-4d64-bf02-05e393b3e0bd
 ms.tgt_platform: multiple
 keywords:
@@ -9,16 +9,16 @@ keywords:
 - enlace de AD, compatibilidad con enlaces en tiempo de tarde
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bff8a66764e49e912e7d4db61356c997516b8d2192046912e673640e9567e415
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0e4dd1de0000d9edbe3e73cbc47b81d094d48c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970415"
 ---
 # <a name="late-binding-support"></a>Compatibilidad con enlaces en tiempo de tarde
 
-Cuando la compatibilidad con el enlace en tiempo de tarde está en su lugar, cada llamada de función debe pasar a través de la interfaz [**ADSI IDispatch,**](/windows/win32/api/oaidl/nn-oaidl-idispatch) antes de que se vuelva a enrutar a la extensión adecuada.
+Cuando se dispone de compatibilidad con el enlace en tiempo de tarde, cada llamada de función debe pasar por la interfaz [**ADSI IDispatch,**](/windows/win32/api/oaidl/nn-oaidl-idispatch) antes de que se vuelva a enrutar a la extensión adecuada.
 
 Tenga en cuenta el siguiente código de ejemplo.
 

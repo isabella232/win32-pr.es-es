@@ -6,12 +6,12 @@ keywords:
 - Direct2D, cómo usar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ace9e9250466c45af7a1bcac6da3d9d12fbe8dd05cc828275c7ecd2f047c890e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a54d44419631f9f4f272fba310723522e508fbaa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163133"
 ---
 # <a name="how-to-topics-direct2d"></a>Temas de ayuda (Direct2D)
 
@@ -24,7 +24,7 @@ Los temas de esta sección proporcionan ejemplos que muestran cómo realizar div
 | Tema                                                                                                                                             | Descripción                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Cómo recortar a una máscara geométrica](how-to-clip-with-layers.md)<br/>                                                                         | Muestra cómo recortar una región con capas.<br/>                                                                                                                                                                               |
-| [Cómo recortar con los rects alineados del eje](how-to-clip-with-axis-aligned-rects.md)<br/>                                                         | Muestra cómo recortar una región con un rectángulo de recorte alineado con el eje.<br/>                                                                                                                                                       |
+| [Cómo recortar con rects alineados en el eje](how-to-clip-with-axis-aligned-rects.md)<br/>                                                         | Muestra cómo recortar una región con un rectángulo de recorte alineado con el eje.<br/>                                                                                                                                                       |
 | [Dibujar un mapa de bits](how-to-draw-a-bitmap.md)<br/>                                                                                       | Muestra cómo representar mapas de bits con Direct2D.<br/>                                                                                                                                                                            |
 | [Dibujar y rellenar una forma básica](how-to-draw-an-ellipse.md)<br/>                                                                       | En este tema se describe cómo dibujar una forma básica.<br/>                                                                                                                                                                       |
 | [Dibujar y rellenar una forma compleja](how-to-draw-and-fill-a-complex-shape.md)<br/>                                                       | Direct2D proporciona la [**interfaz ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) para describir formas complejas que pueden contener curvas, arcos y líneas. En este tema se describe cómo definir y representar una geometría de ruta de acceso.<br/> |

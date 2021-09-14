@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c9e5ab793dfaadb868cc09cfbe25e59c02dc338b470992b81ab1990581e5c19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9417d9dd39f958e4a4caf68ef368d231a2097de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161578"
 ---
 # <a name="containspalette-function"></a>Función ContainsPalette
 
@@ -65,7 +65,7 @@ Devuelve **TRUE** si bitdepth es 8 o menos (**bmiHeader.biBitCount**), o si el n
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

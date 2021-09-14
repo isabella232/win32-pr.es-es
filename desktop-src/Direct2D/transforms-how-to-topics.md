@@ -4,12 +4,12 @@ description: Proporciona ejemplos que muestran cómo aplicar varias transformaci
 ms.assetid: 0cb63411-42b2-44be-a2cf-dacf7bdcf39d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c632d2c200d19f362e5392edb6106a3dcf53443d9ffdadfa5409376d6dc9d25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b61cca0be774c2d29bbf962e6b8f0fed3e0317b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160344"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162529"
 ---
 # <a name="transforms-how-to-topics"></a>Temas de cómo transformar
 

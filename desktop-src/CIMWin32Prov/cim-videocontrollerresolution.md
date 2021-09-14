@@ -1,5 +1,5 @@
 ---
-description: La clase CIM \_ VideoControllerResolution representa los distintos modos de vídeo que puede admitir un controlador de vídeo.
+description: La clase CIM VideoControllerResolution representa los distintos modos de vídeo que puede admitir un \_ controlador de vídeo.
 ms.assetid: 954ac3fe-9777-460c-8929-853f19379256
 ms.tgt_platform: multiple
 title: CIM_VideoControllerResolution clase
@@ -24,21 +24,21 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: af943df981ca2043e83dfcdd3daade0a1c13b63222a163d7e6ecf1d6110396e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d448d92d79163bc6a4e1056e88434081c5878159
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118420382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968868"
 ---
 # <a name="cim_videocontrollerresolution-class"></a>Cim \_ VideoControllerResolution (clase)
 
 La **clase CIM \_ VideoControllerResolution** representa los distintos modos de vídeo que puede admitir un controlador de vídeo. Los modos de vídeo se definen mediante las posibles resoluciones horizontales y verticales, la frecuencia de actualización, el modo de examen y el número de configuraciones de color compatibles con un controlador. Las resoluciones reales en uso son los valores especificados en el [**objeto \_ VideoController de CIM.**](cim-videocontroller.md)
 
-El hardware que no es compatible con Windows modelo de controlador de visualización (WDDM) devuelve valores de propiedad inexactos para las instancias de esta clase.
+El hardware que no es compatible con Windows modelo de controlador de pantalla (WDDM) devuelve valores de propiedad inexactos para instancias de esta clase.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -63,7 +63,7 @@ class CIM_VideoControllerResolution : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ VideoControllerResolution** tiene estos tipos de miembros:
 
@@ -71,7 +71,7 @@ La **clase CIM \_ VideoControllerResolution** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ CIM VideoControllerResolution** tiene estas propiedades.
+La **clase CIM \_ VideoControllerResolution** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -89,7 +89,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentHorizontalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Monitor Resolutions \| 002.2"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentHorizontalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.2"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
 Resolución horizontal, en píxeles.
@@ -136,7 +136,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MaxRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Monitor Resolutions \| 002.7"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia de actualización máxima cuando se admite un intervalo de velocidades en las resoluciones especificadas, en hertz.
+Frecuencia de actualización máxima cuando se admite un intervalo de tarifas en las resoluciones especificadas, en hercios.
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MinRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Monitor Resolutions \| 002.6"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia de actualización mínima cuando se admite un intervalo de tarifas en las resoluciones especificadas, en hertz.
+Frecuencia de actualización mínima cuando se admite un intervalo de tarifas en las resoluciones especificadas, en hercios.
 
 </dd> <dt>
 
@@ -170,7 +170,7 @@ Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualif
 
 Número de colores admitidos en la resolución actual.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -199,7 +199,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentScanMode**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.5")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentScanMode**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Resoluciones del monitor DMTF \| \| 002.5")
 </dt> </dl>
 
 Modo de examen en el que funciona el controlador.
@@ -234,7 +234,7 @@ Modo de examen en el que funciona el controlador.
 
 </dt> <dd>
 
-Operación sin entrelazar
+Operación no entrelazada
 
 </dd> <dt>
 
@@ -279,19 +279,19 @@ Resolución vertical del controlador, en píxeles.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-WMI implementa la **clase \_ Cim VideoControllerResolution.** La **clase \_ CIM VideoControllerResolution** es una clase dinámica.
+WMI implementa la **clase \_ CIM VideoControllerResolution.** La **clase CIM \_ VideoControllerResolution** es una clase dinámica.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
-Tenga en cuenta que esta clase es una clase base. Si está intentando acceder al controlador de vídeo a través de WMI, puede que desee usar [**\_ VideoController de Win32 en su**](win32-videocontroller.md) lugar.
+Tenga en cuenta que esta clase es una clase base. Si está intentando acceder al controlador de vídeo a través de WMI, puede usar [**\_ VideoController win32**](win32-videocontroller.md) en su lugar.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

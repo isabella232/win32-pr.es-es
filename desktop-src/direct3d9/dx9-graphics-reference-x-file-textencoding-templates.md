@@ -5,11 +5,11 @@ title: Plantillas (formato de archivo X, codificación de texto)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e164b92c6c5738ad98b138941b1b2fda6c332068
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122881030"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060654"
 ---
 # <a name="templates-x-file-format-text-encoding"></a>Plantillas (formato de archivo X, codificación de texto)
 
@@ -34,7 +34,7 @@ template <template-name> {
 
 
 
-El nombre de la plantilla es un nombre alfanumérico que puede incluir el carácter de subrayado ( \_ ). No debe comenzar con un dígito. EL UUID es un identificador único universal con el formato estándar distributed Computing Environment de Open Software Foundation y entre corchetes angulares (< >). Por ejemplo: <3D82AB43-62DA-11cf-AB39-0020AF71E433>.
+El nombre de la plantilla es un nombre alfanumérico que puede incluir el carácter de subrayado ( \_ ). No debe comenzar con un dígito. El UUID es un identificador único universal con el formato estándar distributed Computing Environment de Open Software Foundation y entre corchetes angulares (< >). Por ejemplo: <3D82AB43-62DA-11cf-AB39-0020AF71E433>.
 
 ## <a name="template-members"></a>Miembros de plantilla
 
