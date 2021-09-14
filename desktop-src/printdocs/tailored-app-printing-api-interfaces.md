@@ -4,12 +4,12 @@ ms.assetid: 576B4527-A753-4A73-899B-896DCB8B8945
 title: Imprimir interfaces de API de paquetes de documentos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc37fa31cbda1be6927cbb24bf4b5707d10d9f2d74ed152ef630a2ad6ed588c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adc495be5c58598d00250568ff852cf4f897e0b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118470127"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268319"
 ---
 # <a name="print-document-package-api-interfaces"></a>Imprimir interfaces de API de paquetes de documentos
 

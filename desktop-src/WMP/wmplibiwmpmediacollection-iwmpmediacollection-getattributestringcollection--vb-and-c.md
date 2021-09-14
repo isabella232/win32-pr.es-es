@@ -5,7 +5,7 @@ ms.assetid: 5ac19c04-75db-4618-9c4e-b20e2f709024
 keywords:
 - Método getAttributeStringCollection Reproductor de Windows Media
 - Método getAttributeStringCollection Reproductor de Windows Media , interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Reproductor de Windows Media , método getAttributeStringCollection
+- Interfaz IWMPMediaCollection Reproductor de Windows Media método , getAttributeStringCollection
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 508630ee8a377e1542f823c1afb21521206369aa3ce489c58afae47efa268880
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bef25cd811890e82273fd5d634633e25e7ec460c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331947"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172709"
 ---
 # <a name="iwmpmediacollectiongetattributestringcollection-method"></a>IWMPMediaCollection::getAttributeStringCollection (método)
 
@@ -73,9 +73,9 @@ Implements IWMPMediaCollection.getAttributeStringCollection
 
 Interfaz **WMPLib.IWMPStringCollection** para los valores recuperados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
 
@@ -157,7 +157,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -165,7 +165,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

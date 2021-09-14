@@ -6,12 +6,12 @@ keywords:
 - Herramienta de edición de sonidos de información lingüística
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2be9633ddcaa67b97de42484e91b2d98d50150eb3103659267869f355b58f32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1f4bb631af298c87b247b5a339218602adcfa08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269444"
 ---
 # <a name="using-the-linguistic-information-sound-editing-tool"></a>Uso de la herramienta de edición de sonidos de información lingüística
 

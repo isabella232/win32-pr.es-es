@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4ab81ab72ce5fd73c029b2e49e973780a54b3272e832cd5d9de9014a3867607c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3ad1285faa2d3079c29848ed3a79a3e3bb128d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118008831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174381"
 ---
 # <a name="win32_pnpdevicepropertysint32-class"></a>Clase Win32 \_ PnPDevicePropertySint32
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertySint32 : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ PnPDevicePropertySint32** tiene estos tipos de miembros:
 
@@ -57,7 +57,7 @@ La **clase Win32 \_ PnPDevicePropertySint32** tiene estas propiedades.
 
 <dl> <dt>
 
-**Datos**
+**Data**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Sint32**

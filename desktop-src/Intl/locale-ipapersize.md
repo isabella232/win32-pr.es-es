@@ -4,12 +4,12 @@ ms.assetid: 049f5b31-f2f8-4036-b331-3c7a9087aa4a
 title: LOCALE_IPAPERSIZE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f5fb49ed2bd785467c77b9a5829dd644abcede1767c84f3045828710fc76fd8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 353a89eab58d3f4790c512498a3048165265217f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118948520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274452"
 ---
 # <a name="locale_ipapersize"></a>LOCALE \_ IPAPERSIZE
 

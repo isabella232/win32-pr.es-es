@@ -1,5 +1,5 @@
 ---
-description: La clase UnitaryComputerSystem de CIM representa un equipo de escritorio, móvil, equipo de red, servidor u otro tipo de sistema \_ de equipo de nodo único.
+description: La clase CIM UnitaryComputerSystem representa un equipo de escritorio, móvil, equipo de red, servidor u otro tipo de \_ sistema de equipo de nodo único.
 ms.assetid: c696050d-c921-4056-adc7-e4a2e9f4e119
 ms.tgt_platform: multiple
 title: CIM_UnitaryComputerSystem clase
@@ -30,19 +30,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c128cefe67da15f017ae21dfd7293b86c0deedf04eb1da35018475a2ed37d002
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e14812fda7971ffe045e8e36752c983cf5350402
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174522"
 ---
 # <a name="cim_unitarycomputersystem-class"></a>Cim \_ UnitaryComputerSystem (clase)
 
-La **clase \_ UnitaryComputerSystem** de CIM representa un equipo de escritorio, móvil, equipo de red, servidor u otro tipo de sistema de equipo de nodo único.
+La **clase CIM \_ UnitaryComputerSystem** representa un equipo de escritorio, móvil, equipo de red, servidor u otro tipo de sistema de equipo de nodo único.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -73,7 +73,7 @@ class CIM_UnitaryComputerSystem : CIM_ComputerSystem
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ UnitaryComputerSystem de CIM** tiene estos tipos de miembros:
 
@@ -88,7 +88,7 @@ La **clase \_ UnitaryComputerSystem de CIM** tiene estos métodos.
 
 | Método                                                                           | Descripción                                                                                                                              |
 |:---------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**SetPowerState**](setpowerstate-method-in-class-cim-unitarycomputersystem.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-unitarycomputersystem.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. Wmi no implementa .<br/> |
 
 
 
@@ -96,7 +96,7 @@ La **clase \_ UnitaryComputerSystem de CIM** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ UnitaryComputerSystem de CIM** tiene estas propiedades.
+La **clase \_ CIM UnitaryComputerSystem** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -127,7 +127,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
@@ -225,7 +225,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El [**objeto \_ ComputerSystem**](cim-computersystem.md) de CIM y sus derivados son objetos de nivel superior de CIM que proporcionan el ámbito de numerosos componentes y requieren claves del [**sistema CIM \_ únicas.**](cim-system.md) Se define una heurística para crear el nombre del sistema de equipo **CIM \_** en un intento de generar siempre el mismo nombre del sistema, independientemente del protocolo de detección. Esto evita problemas de inventario y administración en los que el mismo recurso o entidad se detecta varias veces, pero no se puede resolver en un solo objeto. Esta propiedad identifica cómo se generó el nombre del sistema mediante la heurística de subclase. La heurística se describe en la especificación del modelo común CIM V2 y se supone que las reglas documentadas se recorren para determinar y asignar un nombre. La **lista de valores NameFormat** define el orden de precedencia para asignar el nombre del sistema con varias reglas que se asignan al mismo valor. Tenga en cuenta que **el nombre del sistema \_ del** equipo CIM que se calcula mediante la heurística es el valor de clave del sistema. Se pueden asignar y usar otros nombres para el sistema de equipos **CIM \_** que mejor se adapten a la empresa, mediante alias.
+El [**objeto \_ ComputerSystem**](cim-computersystem.md) de CIM y sus derivados son objetos de nivel superior de CIM que proporcionan el ámbito de numerosos componentes y requieren claves [**del sistema CIM \_ únicas.**](cim-system.md) Se define una heurística para crear el nombre del sistema de equipo **CIM \_** en un intento de generar siempre el mismo nombre del sistema, independientemente del protocolo de detección. Esto evita problemas de inventario y administración en los que el mismo recurso o entidad se detecta varias veces, pero no se puede resolver en un solo objeto. Esta propiedad identifica cómo se generó el nombre del sistema mediante la subclase heurística. La heurística se describe en la especificación del modelo común CIM V2 y se supone que las reglas documentadas se recorren para determinar y asignar un nombre. La **lista de valores NameFormat** define el orden de precedencia para asignar el nombre del sistema con varias reglas que se asignan al mismo valor. Tenga en cuenta que el nombre **\_ del sistema de** equipo CIM que se calcula mediante la heurística es el valor de clave del sistema. Se pueden asignar y usar otros nombres para el **\_ sistema de** equipos CIM que mejor se adapten a la empresa, mediante alias.
 
 Esta propiedad se hereda del [**sistema CIM. \_**](cim-system.md)
 
@@ -347,7 +347,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **\_ CIM LogicalDevice.**
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -401,7 +401,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -475,7 +475,7 @@ Desconocido.
 
 </dt> <dd>
 
-Potencia completa.
+Energía completa.
 
 </dd> <dt>
 
@@ -711,7 +711,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -774,7 +774,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ UnitaryComputerSystem de CIM** se deriva de CIM [**\_ ComputerSystem**](cim-computersystem.md).
 

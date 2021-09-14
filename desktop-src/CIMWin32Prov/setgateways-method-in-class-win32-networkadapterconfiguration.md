@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 190076822a181d7b0731cb1e7b42eb0cd9d35e37c64aa0736245d1e58994763b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 215bfa736a0f9d67ae587ac1f0e1b4aa394b85d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174093"
 ---
-# <a name="setgateways-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetGateways de la clase \_ NetworkAdapterConfiguration de Win32
+# <a name="setgateways-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetGateways de la clase NetworkAdapterConfiguration de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetGateways** especifica una lista de puertas de enlace para enrutar paquetes a una subred diferente de la subred a la que está conectado el adaptador de red.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,11 +46,11 @@ uint32 SetGateways(
 *DefaultIPGateway* \[ En\]
 </dt> <dd>
 
-Lista de direcciones IP a puertas de enlace en las que se enrutados los paquetes de red.
+Lista de direcciones IP a las puertas de enlace donde se enrutados los paquetes de red.
 
 </dd> <dt>
 
-*GatewayCostMetric* \[ in, opcional\]
+*GatewayCostMetric* \[ en, opcional\]
 </dt> <dd>
 
 Asigna un valor que oscila entre 1 y 9999, que se usa para calcular las rutas más rápidas y confiables. Los valores de este parámetro se corresponden con los valores del *parámetro DefaultIPGateway.* El valor predeterminado de una puerta de enlace es 1.
@@ -77,12 +77,12 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido cuando la NIC está en modo DHCP.
+Método no compatible cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
@@ -233,14 +233,14 @@ Método no admitido cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**Error de límites de número de marco/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
 
 </dd> <dt>
 
-**Tipo de fotograma no válido**
+**Tipo de marco no válido**
 </dt> <dd>
 
 87
@@ -275,7 +275,7 @@ Método no admitido cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -317,7 +317,7 @@ Método no admitido cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
@@ -338,9 +338,9 @@ Método no admitido cuando la NIC está en modo DHCP.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método solo funciona cuando la tarjeta de interfaz de red (NIC) está en modo IP estático.
+Este método solo funciona cuando la tarjeta de interfaz de red (NIC) está en el modo IP estático.
 
 Para borrar la puerta de enlace, establezca la puerta de enlace en la misma dirección IP que usa en [**EnableStatic.**](enablestatic-method-in-class-win32-networkadapterconfiguration.md)
 
@@ -376,7 +376,7 @@ La [dirección IP estática y, a continuación, unirse a un dominio de](https://
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

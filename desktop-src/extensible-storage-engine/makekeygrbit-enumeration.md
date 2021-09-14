@@ -44,12 +44,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5adfb504237710277a75e3c5ecb12e00e8bf54042a01ca1b794a63f2795f3db0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c19a8c24b5adc4e8655c5372bd9c374e8674e9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118071859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269636"
 ---
 # <a name="makekeygrbit-enumeration"></a>MakeKeyGrbit (enumeración)
 
@@ -75,7 +75,7 @@ Dim instance As MakeKeyGrbit
 public enum MakeKeyGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -88,7 +88,7 @@ public enum MakeKeyGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
@@ -114,7 +114,7 @@ public enum MakeKeyGrbit
 <tr class="even">
 <td></td>
 <td>SubStrLimit</td>
-<td>Esta opción indica que la clave de búsqueda debe construirse de forma que la columna de clave actual se considere un carácter comodín de prefijo y que todas las columnas de clave que vienen después de la columna de clave actual se consideren como caracteres comodín.</td>
+<td>Esta opción indica que la clave de búsqueda debe construirse de forma que la columna de clave actual se considere un carácter comodín de prefijo y que las columnas de clave que vienen después de la columna de clave actual se consideren como caracteres comodín.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -140,7 +140,7 @@ public enum MakeKeyGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

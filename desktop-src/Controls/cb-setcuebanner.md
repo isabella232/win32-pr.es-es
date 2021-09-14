@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb546b7113247f09d8929364984d5e73c3e28b6541d2ca04bd631405040bf6fb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d5799b1b1be5e938ce1e234948a1f7d878122f30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174177"
 ---
 # <a name="cb_setcuebanner-message"></a>Mensaje \_ DE CB SETCUEBANNER
 
@@ -47,7 +47,7 @@ Puntero a un búfer de cadena Unicode terminada en NULL que contiene el texto.
 
 Devuelve 1 si se realiza correctamente o, de lo contrario, devuelve un valor de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El banner de indicación es texto que se muestra en el control de edición de un cuadro combinado cuando no hay ninguna selección.
 
@@ -55,11 +55,11 @@ El banner de indicación es texto que se muestra en el control de edición de un
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

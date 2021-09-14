@@ -4,12 +4,12 @@ ms.assetid: 44af5e03-5f0a-4564-b9d6-b8c935df35b2
 title: Atributos en Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f46cc919f426ff7b0862de73d8852291d25b7e31f2b5d67d7a4955369be6d17
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6e7893586aa1e966b95c1af5d04246bbb0c82ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269404"
 ---
 # <a name="attributes-in-media-foundation"></a>Atributos en Media Foundation
 
@@ -126,9 +126,9 @@ Para escribir un almacén de atributos en una secuencia, llame a [**MFSerializeA
 
 Media Foundation proporciona una implementación de [**existencias deATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes), que se obtiene mediante una llamada a la [**función MFCreateAttributes.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) En la mayoría de las situaciones, debe usar esta implementación y no proporcionar su propia implementación personalizada.
 
-Hay una situación en la que es posible que tenga que implementar la interfaz [**DEATTRIBUTEAttributes:**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) si implementa una segunda interfaz que hereda **LOSATTRIBUTE.** En ese caso, debe proporcionar implementaciones para los **métodos DEATTRIBUTES heredados** por la segunda interfaz.
+Hay una situación en la que es posible que necesite implementar la interfaz [**DEATTRIBUTE:**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) si implementa una segunda interfaz que hereda **LOSATTRIBUTE.** En ese caso, debe proporcionar implementaciones para los **métodos DEATTRIBUTEATTRIBUTE heredados** por la segunda interfaz.
 
-En esta situación, se recomienda ajustar la implementación de Media Foundation existente [**deATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes). En el código siguiente se muestra una plantilla de clase que contiene un puntero **DE TIPO IMFAttributes** y encapsula todos los **métodos IMFAttributes,** excepto **los métodos IUnknown.**
+En esta situación, se recomienda encapsular la implementación de Media Foundation [**existente deATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes). En el código siguiente se muestra una plantilla de clase que contiene un puntero **DE TIPO IMFAttributes** y encapsula todos los **métodos IMFAttributes,** excepto **los métodos IUnknown.**
 
 
 ```C++

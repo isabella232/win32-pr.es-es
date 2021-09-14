@@ -4,12 +4,12 @@ ms.assetid: b19f0ca0-65ca-4a3b-97e3-dbd1aafe77d9
 title: DMO Ejemplo de demostración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4244626f17c4158d9349e4161ac4627c1a594f0952e80dcf82d88bd08693fff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e162589a9c7b389c9831755cef77f30a7d271740
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117821079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173774"
 ---
 # <a name="dmo-demo-sample"></a>DMO Ejemplo de demostración
 

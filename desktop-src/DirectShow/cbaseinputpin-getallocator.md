@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 119f3ffaa5863584b55210306b38b011c758f9bab0febac47547bdfe469b5ac0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72aaf6bb4c1ff8bf108086a8a42a618267c4bc06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173826"
 ---
 # <a name="cbaseinputpingetallocator-method"></a>CBaseInputPin.GetAllocator (método)
 
@@ -53,7 +53,7 @@ Dirección de una variable que recibe un puntero a la interfaz [**IMemAllocator 
 
 Devuelve S \_ OK si se realiza correctamente o un código de error de la función **CoCreateInstance.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método crea un [**objeto CMemAllocator.**](cmemallocator.md) Invalide este método si el filtro usa un asignador de un pin de nivel inferior o un asignador personalizado.
 

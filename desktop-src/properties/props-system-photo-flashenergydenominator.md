@@ -4,12 +4,12 @@ ms.assetid: 87e82d71-fa6b-4e67-971d-7b17149fca2c
 title: System.Photo.FlashEnergyDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80166bc3067175254f4e1fe8354153bf7841b067042b6a67129318bbeb181558
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 77bc6bee23841d0ce11ce956ca80853ab2fc49af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267975"
 ---
 # <a name="systemphotoflashenergydenominator"></a>System.Photo.FlashEnergyDenominator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

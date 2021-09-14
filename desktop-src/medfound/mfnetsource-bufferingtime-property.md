@@ -4,12 +4,12 @@ ms.assetid: 186b55fc-d1b1-4187-a748-efaee114eca9
 title: MFNETSOURCE_BUFFERINGTIME propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b6de79344913d77a30dc05dcad4e4f8dd3608e0d35009b1d8e5254e08790993
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21c165e58ebd5f2aec0f1ca7ce38281f8c94896d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118243812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269052"
 ---
 # <a name="mfnetsource_bufferingtime-property"></a>Propiedad MFNETSOURCE \_ BUFFERINGTIME
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La constante **MFNETSOURCE \_ BUFFERINGTIME** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
@@ -43,11 +43,11 @@ El valor predeterminado de esta propiedad es 5 segundos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

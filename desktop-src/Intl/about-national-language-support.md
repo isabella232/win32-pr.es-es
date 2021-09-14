@@ -4,12 +4,12 @@ ms.assetid: 1bf4d6f4-af86-440e-9179-2ff17b09766a
 title: Acerca de la compatibilidad con idiomas nacionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74aebb76c1b1dcb264a9e25e947966475866b9faf41e0806c90397baff79aabc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 70ddc96a07ae57caa6b20dd0559d19f4454f0ace
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120107415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274868"
 ---
 # <a name="about-national-language-support"></a>Acerca de la compatibilidad con idiomas nacionales
 
@@ -28,7 +28,7 @@ En esta sección se tratan los siguientes temas:
 -   [Configuraciones regionales e idiomas](locales-and-languages.md)
 -   [Terminología de NLS](nls-terminology.md)
 -   [Ordenación](sorting.md)
--   [Hora y fecha](time-and-date.md)
+-   [Fecha y hora](time-and-date.md)
 
  
 

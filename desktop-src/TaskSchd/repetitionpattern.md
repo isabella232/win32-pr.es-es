@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06583aaef7f41a2752ace9c67599c1d299b72f87cb9984674994ede10d89525b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84b88588238c9a7e4158fe21bca8904bf6f39b51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119872404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172857"
 ---
 # <a name="repetitionpattern-object"></a>Objeto RepetitionPattern
 
 Objeto de scripting que define la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto RepetitionPattern** tiene estos tipos de miembros:
 
@@ -42,29 +42,29 @@ El **objeto RepetitionPattern** tiene estas propiedades.
 
 | Propiedad                                                                    | Tipo de acceso           | Descripción                                                                                                                                        |
 |:----------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Duration**](repetitionpattern-duration.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece cuánto tiempo se repite el patrón.<br/>                                                                                          |
-| [**Intervalo**](repetitionpattern-interval.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece la cantidad de tiempo entre cada reinicio de la tarea.<br/>                                                                       |
-| [**StopAtDurationEnd**](repetitionpattern-stopatdurationend.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un valor booleano que indica si una instancia en ejecución de la tarea se detiene al final de la duración del patrón de repetición.<br/> |
+| [**Duration**](repetitionpattern-duration.md)<br/>                   | Lectura y escritura<br/> | Obtiene o establece cuánto tiempo se repite el patrón.<br/>                                                                                          |
+| [**Intervalo**](repetitionpattern-interval.md)<br/>                   | Lectura y escritura<br/> | Obtiene o establece la cantidad de tiempo entre cada reinicio de la tarea.<br/>                                                                       |
+| [**StopAtDurationEnd**](repetitionpattern-stopatdurationend.md)<br/> | Lectura y escritura<br/> | Obtiene o establece un valor booleano que indica si una instancia en ejecución de la tarea se detiene al final de la duración del patrón de repetición.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si especifica una duración de repetición para una tarea, también debe especificar el intervalo de repetición.
 
-Si registra una tarea que contiene un desencadenador con un intervalo de repetición igual a un minuto y una duración de repetición igual a cuatro minutos, la tarea se inicia cinco veces. Las cinco repeticiones se pueden definir mediante el siguiente patrón.
+Si registra una tarea que contiene un desencadenador con un intervalo de repetición igual a un minuto y una duración de repetición igual a cuatro minutos, la tarea se iniciará cinco veces. Las cinco repeticiones se pueden definir mediante el siguiente patrón.
 
 1.  Una tarea se inicia al principio del primer minuto.
 2.  La siguiente tarea se inicia al final del primer minuto.
-3.  La tarea siguiente se inicia al final del segundo minuto.
+3.  La siguiente tarea se inicia al final del segundo minuto.
 4.  La siguiente tarea se inicia al final del tercer minuto.
 5.  La siguiente tarea se inicia al final del cuarto minuto.
 
-**Windows Server 2003, Windows XP y Windows 2000:** Si registra una tarea que contiene un desencadenador con un intervalo de repetición igual a un minuto y una duración de repetición igual a cuatro minutos, la tarea se inicia cuatro veces.
+**Windows Server 2003, Windows XP y Windows 2000:** Si registra una tarea que contiene un desencadenador con un intervalo de repetición igual a un minuto y una duración de repetición igual a cuatro minutos, la tarea se iniciará cuatro veces.
 
-Al leer o escribir XML para una tarea, el patrón de repetición se especifica mediante el elemento [**Repetition**](taskschedulerschema-repetition-triggerbasetype-element.md) del Programador de tareas esquema.
+Al leer o escribir XML para una tarea, el patrón de repetición se especifica mediante el [**elemento Repetition**](taskschedulerschema-repetition-triggerbasetype-element.md) del Programador de tareas esquema.
 
 ## <a name="examples"></a>Ejemplos
 

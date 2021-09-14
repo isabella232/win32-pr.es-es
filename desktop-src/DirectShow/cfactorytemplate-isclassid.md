@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 38714c6c6a97c46a14d1e381fdf49ddbc723d04ee217a09c9554b39d4eb22491
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94564d7e9db52f8be22717a10f73fffb7fb6fa14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266596"
 ---
 # <a name="cfactorytemplateisclassid-method"></a>CFactoryTemplate.IsClassID (método)
 
@@ -64,7 +64,7 @@ Devuelve **TRUE** si el *parámetro rclsid* es el mismo CLSID que la variable mi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

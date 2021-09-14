@@ -4,12 +4,12 @@ ms.assetid: 5d60c902-5fb0-419b-b54d-5e3b543c5df8
 title: DMO Tipos enumerados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e61e83a36bf52db26a9d30f57585873f8190c8d909ed7d5bb1c7a49181058e8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf887187a031f5ea1fcdd89bc810d45c9ff80099
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119148767"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173777"
 ---
 # <a name="dmo-enumerated-types"></a>DMO Tipos enumerados
 

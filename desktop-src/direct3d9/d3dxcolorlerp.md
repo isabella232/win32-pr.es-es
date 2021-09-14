@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fa0134ca1c3cf88e0e25f253cca4ebeb16a89b5bdaa982cf4e9e96e85bfb1d35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3521ee9e76aecd486093f903d336c08553e0e4ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170478"
 ---
 # <a name="d3dxcolorlerp-function"></a>Función D3DXColorLerp
 
@@ -85,7 +85,7 @@ Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
 Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado de la interpolación lineal.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXColorLerp** se puede usar como parámetro para otra función.
 

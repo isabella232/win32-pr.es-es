@@ -4,12 +4,12 @@ ms.assetid: 2a341039-60dd-4e6c-9ef3-bf482ca53917
 title: SpawnDialog ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2b0dd281e4306fab7c62d218781c2ad932b82f22b335d662181fb65891eeb5f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 71aec632332a87d047913b618aa2c39843849e5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119628035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266047"
 ---
 # <a name="spawndialog-controlevent"></a>SpawnDialog ControlEvent
 

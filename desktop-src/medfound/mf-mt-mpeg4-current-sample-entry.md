@@ -4,12 +4,12 @@ ms.assetid: c8c36abf-6905-4874-a6d2-90dd0725421b
 title: MF_MT_MPEG4_CURRENT_SAMPLE_ENTRY atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 660f74c1f9335556b514607cc2100f7ef59a00fba84f6cfe90412b91e1ff500a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02c1f2a43eef1a520a49f5cfbb889f13149fa249
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117877039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269140"
 ---
 # <a name="mf_mt_mpeg4_current_sample_entry-attribute"></a>Atributo MF \_ MT \_ MPEG4 \_ CURRENT SAMPLE \_ \_ ENTRY
 
@@ -29,7 +29,7 @@ Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/d
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En un archivo MP4 o 3GP, el cuadro de descripción de ejemplo describe la codificación usada para una secuencia en el archivo. El cuadro de descripción de ejemplo puede contener varias entradas. Este atributo especifica qué entrada se va a usar. El valor es un índice de base cero en la lista.
 
@@ -45,13 +45,13 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows aplicaciones de escritorio 7 \[ \| aplicaciones para UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

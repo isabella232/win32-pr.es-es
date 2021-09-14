@@ -4,31 +4,31 @@ ms.assetid: d17137f9-b206-4ced-82e5-96a7d927c89b
 title: Access Control (API de WPD)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83caa01b08409afd196ea0507cb47986928a1d947b6ff7907640e4f9bd5b390f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1a7820f38a41cbf9ff0199e5fde8de8ed3609063
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119657915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266919"
 ---
 # <a name="access-control-wpd-api"></a>Access Control (API de WPD)
 
-El Windows Driver Model (WDM) admite la restricción del acceso del dispositivo a través de listas de Access Control (ACL) en los nodos de dispositivo Plug and Play (PnP). Esto significa que los proveedores y administradores de red pueden restringir el acceso a cualquier tipo de dispositivo. Cuando una aplicación abre un identificador para un controlador mediante una llamada a [**IPortableDevice::Open**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-open), el Administrador de E/S del controlador comprueba si el usuario determinado tiene el acceso necesario y, de forma similar, realiza comprobaciones de acceso cuando se envían E/S ICTL al controlador desde ese identificador.
+El Windows Driver Model (WDM) admite la restricción del acceso de dispositivos a través de listas de Access Control (ACL) en los nodos de dispositivo Plug and Play (PnP). Esto significa que los proveedores y administradores de red pueden restringir el acceso a cualquier tipo de dispositivo. Cuando una aplicación abre un identificador para un controlador mediante una llamada a [**IPortableDevice::Open**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-open), el Administrador de E/S del controlador comprueba si el usuario determinado tiene el acceso necesario y, de forma similar, realiza comprobaciones de acceso cuando se envían ICTL al controlador desde ese identificador.
 
-Por ejemplo, un administrador de red podría restringir a los usuarios invitados el acceso de solo lectura para dispositivos portátiles, mientras que podría conceder a los usuarios autenticados acceso de lectura y escritura. En este caso, implica que si un invitado emitió un comando WPD que requería acceso de lectura y escritura (como Eliminar objeto); se produciría un error con Acceso denegado, mientras que si un usuario autenticado emitiese el mismo comando, se realizaría correctamente.
+Por ejemplo, un administrador de red podría restringir a los usuarios invitados el acceso de solo lectura para dispositivos portátiles, mientras que podría conceder a los usuarios autenticados acceso de lectura y escritura. En este caso, implica que si un invitado emitió un comando WPD que requería acceso de lectura y escritura (como Eliminar objeto); se produciría un error con acceso denegado, mientras que si un usuario autenticado emitiese el mismo comando, se realizaría correctamente.
 
-Las entradas directiva de grupo para controlar el acceso al almacenamiento extraíble y a los dispositivos portátiles no son más que una manera sencilla para que los administradores apliquen las ACL de nodo de dispositivo PnP a toda una clase de dispositivos a la vez (por ejemplo, aplicar el directiva de grupo denegar el acceso de escritura a dispositivos portátiles ajustaría las ACL de todos los dispositivos WPD para denegar el acceso de escritura).
+Las entradas directiva de grupo para controlar el acceso a dispositivos portátiles y de almacenamiento extraíbles no son más que una manera sencilla para que los administradores apliquen las ACL de nodo de dispositivo PnP a toda una clase de dispositivos a la vez (por ejemplo, aplicar el directiva de grupo "Denegar el acceso de escritura a dispositivos portátiles" ajustaría las ACL de todos los dispositivos WPD para denegar el acceso de escritura).
 
 ## <a name="io-control-codes-in-wpd"></a>Códigos de control de E/S en WPD
 
-Las aplicaciones WPD se comunican con los controladores abriendo identificadores de dispositivo y enviando códigos de control de E/S (IOCTL). Estas E/SCL constan de cuatro secciones:
+Las aplicaciones WPD se comunican con los controladores abriendo identificadores de dispositivo y enviando códigos de control de E/S (IOCTL). Estas ICTL constan de cuatro secciones:
 
 1.  Tipo de dispositivo
 2.  Código de función
 3.  Buffer (método)
 4.  Tipo de acceso
 
-La cuarta sección, el tipo de acceso, especifica el requisito de acceso específico para el comando especificado. El administrador de E/S del controlador usa estos datos para realizar la comprobación Access Control lista de direcciones (ACL).
+La cuarta sección, tipo de acceso, especifica el requisito de acceso específico para el comando especificado. El administrador de E/S del controlador usa estos datos para realizar la comprobación Access Control lista de direcciones (ACL).
 
 Por lo tanto, si una IOCTL se definió como:
 
@@ -50,7 +50,7 @@ Y, si una IOCTL se definió como:
 
 
 
-El administrador de E/S del controlador comprobaría que el propietario del identificador del dispositivo tiene acceso de lectura y escritura al dispositivo cuando se envía este mensaje.
+El administrador de E/S del controlador comprobaría que el propietario del identificador de dispositivo tiene acceso de lectura y escritura al dispositivo cuando se envía este mensaje.
 
 ## <a name="related-topics"></a>Temas relacionados
 

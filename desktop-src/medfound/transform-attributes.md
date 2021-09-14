@@ -4,12 +4,12 @@ ms.assetid: 9beb1306-1378-499c-b9e1-c768a7b4c8bc
 title: Transformar atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80d5b7a5f4ff6174a48058c81fe1cdea382b18c058985da803efa4110eb12e29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e68240f5341319db2b06ad6160cf8153f107eca9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268676"
 ---
 # <a name="transform-attributes"></a>Transformar atributos
 
@@ -44,7 +44,7 @@ Los atributos siguientes se aplican [a Media Foundation transformaciones automá
 | [Atributo MFT \_ PREFERRED \_ \_ OUTPUTTYPE](mft-preferred-outputtype-attribute.md)                               | Especifica el formato de salida preferido para un codificador.                                                                                                                                         | Objetos de activación de MFT      |
 | [Atributo \_ LOCAL DE PROCESO \_ de \_ MFT](mft-process-local-attribute.md)                                             | Especifica si un MFT solo se registra en el proceso de la aplicación.                                                                                                                     | Objetos de activación de MFT      |
 | [MFT \_ REMUX \_ MARK \_ I \_ PICTURE \_ AS \_ CLEAN \_ POINT](mft-remux-mark-i-picture-as-clean-point.md)                 | Especifica si el archivo MFT de remux de vídeo H.264 debe marcar I pictures como punto limpio para mejorar la capacidad de búsqueda. Esto tiene la posibilidad de daños en las búsquedas en archivos MP4 finales no conformes. | Objetos de activación de MFT      |
-| [MFT \_ SUPPORT \_ 3DVIDEO](mft-support-3dvideo.md)                                                              | Especifica si una transformación Media Foundation (MFT) admite vídeo estereogido 3D.                                                                                                          | Objetos de activación de MFT      |
+| [MFT \_ SUPPORT \_ 3DVIDEO](mft-support-3dvideo.md)                                                              | Especifica si una transformación Media Foundation (MFT) admite vídeo estereocopiado 3D.                                                                                                          | Objetos de activación de MFT      |
 | [**MFT \_ ADMITE EL CAMBIO DE FORMATO \_ \_ \_ DINÁMICO**](mft-support-dynamic-format-change-attribute.md)                  | Especifica si una transformación Media Foundation (MFT) admite cambios de formato dinámicos.                                                                                                         | MFT                        |
 | [Atributo \_ CLSID de transformación de MFT \_ \_](mft-transform-clsid-attribute.md)                                         | Contiene el identificador de clase (CLSID) de un MFT.                                                                                                                                              | Objetos de activación de MFT      |
 

@@ -4,12 +4,12 @@ ms.assetid: 09ec2e8a-bd50-4f82-8ce3-a1c61f48ddb7
 title: Elemento Text
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae4e9fa123f1f43bd92d902158fc3fbc5b1c1de8e074b57aadeb339a0a7b6f15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 570f613a06f9fe814bfb1acbdbdba040dbc1119f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119819945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267652"
 ---
 # <a name="text-element"></a>Elemento Text
 
@@ -47,12 +47,12 @@ No hay ningún atributo cuando se usa [**con TitleInfo**](titleinfo-element.md) 
 
 
 
-| Atributo  | Tipo                      | Requerido | Descripción                                                                             | Valores posibles           |
+| Atributo  | Tipo                      | Obligatorio | Descripción                                                                             | Valores posibles           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
-| **Top** (Principales)    | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
-| **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
-| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite del elemento.                                         | Cualquier entero no negativo. |
+| **Left**   | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
+| **Top** (Principales)    | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
+| **Width**  | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
+| **Height** | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite del elemento.                                         | Cualquier entero no negativo. |
 
 
 

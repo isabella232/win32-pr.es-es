@@ -42,12 +42,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 62a8f09d6b96e12d75b30c80e5553d3138bcb342f7ca06b53920d897aaa51c57
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 10f56034161a9313eed1b7d302ab790d153c0ee6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174382"
 ---
 # <a name="win32_printjob-class"></a>Clase PrintJob de Win32 \_
 
@@ -91,7 +91,7 @@ class Win32_PrintJob : CIM_Job
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PrintJob de Win32** tiene estos tipos de miembros:
 
@@ -146,7 +146,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que indica si el documento se imprime en color o monocromo. Algunas impresoras de color tienen la capacidad de imprimir con un color negro verdadero en lugar de una combinación de amarillo, cian y rojo. El negro verdadero suele crear texto más oscuro y más nítido para los documentos. Esta opción solo es útil para impresoras de color que admiten la impresión en negro verdadero.
+Cadena que indica si el documento se imprime en color o monocromo. Algunas impresoras de color tienen la capacidad de imprimir con un color negro verdadero en lugar de una combinación de amarillo, ánime ycolor. El negro verdadero suele crear texto más oscuro y más nítido para los documentos. Esta opción solo es útil para las impresoras de color que admiten la impresión en negro verdadero.
 
 Los valores son:
 
@@ -339,7 +339,7 @@ Tipo de acceso: solo lectura
 
 Usuario que envió el trabajo.
 
-Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
+Esta propiedad se hereda del trabajo [**\_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -414,7 +414,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Parámetros opcionales que se enviarán al procesador de impresión. Para obtener más información, vea la **propiedad PrintProcessor.**
+Parámetros opcionales que se envían al procesador de impresión. Para obtener más información, vea la **propiedad PrintProcessor.**
 
 </dd> <dt>
 
@@ -442,7 +442,7 @@ Tipo de acceso: solo lectura
 
 Importancia de la ejecución de un trabajo.
 
-Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
+Esta propiedad se hereda del trabajo [**\_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -455,7 +455,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) (bytes)
+Calificadores: [**Unidades**](../wmisdk/standard-qualifiers.md) (bytes)
 </dt> </dl>
 
 Tamaño del trabajo de impresión.
@@ -473,7 +473,7 @@ Tipo de acceso: solo lectura
 
 Hora a la que comenzó el trabajo.
 
-Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
+Esta propiedad se hereda del trabajo [**\_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -491,7 +491,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayNa
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -522,7 +522,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -536,14 +536,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -678,7 +678,7 @@ Solicitud de \_ \_ intervención del usuario
 2048 (0x800)
 </dt> <dd>
 
-Reiniciar
+Reinicio
 
 </dd> </dl>
 
@@ -695,7 +695,7 @@ Tipo de acceso: solo lectura
 
 Hora a la que se envió el trabajo.
 
-Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
+Esta propiedad se hereda del trabajo [**\_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -721,13 +721,13 @@ Tipo de datos: **datetime**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Hora en la que el trabajo no es válido o se debe detener.
+Hora en la que el trabajo no es válido o debe detenerse.
 
-Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
+Esta propiedad se hereda del trabajo [**\_ cim**](cim-job.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ PrintJob de Win32** se deriva del [**trabajo \_ CIM**](cim-job.md).
 

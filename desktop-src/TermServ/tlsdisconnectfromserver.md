@@ -15,12 +15,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95911536eda4bd87e45fd034626cf83d88f4d9fc768e4837316ee93abfe3c3d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 265a6b04186bd640943cf2b348dda7afcf8f712a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119869415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170618"
 ---
 # <a name="tlsdisconnectfromserver-function"></a>Función TLSDisconnectFromServer
 
@@ -57,7 +57,7 @@ Identificador de un Escritorio remoto de licencias que se abre mediante una llam
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame a **la función TLSDisconnectFromServer** como parte de la rutina de limpieza del programa para cerrar todos los identificadores de servidor que abren las llamadas a la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 

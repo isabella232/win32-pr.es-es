@@ -1,5 +1,5 @@
 ---
-description: La clase NetworkAdapter de Win32 \_ está en desuso. En su lugar, use la clase MSFT \_ NetAdapter. La clase NetworkAdapterWMI de Win32 representa un adaptador de red de un equipo \_ que ejecuta Windows sistema operativo.
+description: La clase NetworkAdapter de Win32 \_ está en desuso. En su lugar, use \_ la clase MSFT NetAdapter. La clase NetworkAdapterWMI de Win32 representa un adaptador de red de un equipo que ejecuta \_ Windows sistema operativo.
 ms.assetid: f79cb2a1-a249-479d-a495-37a44fdea995
 ms.tgt_platform: multiple
 title: Win32_NetworkAdapter clase
@@ -56,18 +56,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 55ee65b151778dbfbb4bb8e09fabfb3ae59392966344b951586cd9e08dd1f984
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 22718802370995cc0515e3f63e731cc86d37eb0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174009"
 ---
 # <a name="win32_networkadapter-class"></a>Clase NetworkAdapter de Win32 \_
 
-La **clase \_ NetworkAdapter de Win32** está en desuso. En su lugar, use [**la clase MSFT \_ NetAdapter.**](/previous-versions/windows/desktop/legacy/hh968170(v=vs.85)) La **clase WMI \_ NetworkAdapter**[de](../wmisdk/retrieving-a-class.md) Win32 representa un adaptador de red de un equipo que ejecuta Windows sistema operativo.
+La **clase \_ NetworkAdapter de Win32** está en desuso. En su lugar, use [**\_ la clase MSFT NetAdapter.**](/previous-versions/windows/desktop/legacy/hh968170(v=vs.85)) La **clase WMI \_ NetworkAdapter**[de](../wmisdk/retrieving-a-class.md) Win32 representa un adaptador de red de un equipo que ejecuta Windows sistema operativo.
 
-**Win32 \_ NetworkAdapter** solo proporciona datos IPv4. Para obtener más información, [vea Compatibilidad con IPv6 e IPv4 en WMI.](../wmisdk/ipv6-and-ipv4-support-in-wmi.md)
+**Win32 \_ NetworkAdapter** solo proporciona datos IPv4. Para obtener más información, vea [Compatibilidad con IPv6 e IPv4 en WMI.](../wmisdk/ipv6-and-ipv4-support-in-wmi.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -120,7 +120,7 @@ class Win32_NetworkAdapter : CIM_NetworkAdapter
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ NetworkAdapter de Win32** tiene estos tipos de miembros:
 
@@ -138,7 +138,7 @@ La **clase \_ NetworkAdapter de Win32** tiene estos métodos.
 | [**Desactivar**](disable-method-in-class-win32-networkadapter.md) | Deshabilita el adaptador de red.<br/>                                                                                                                                                                                        |
 | [**Habilitar**](enable-method-in-class-win32-networkadapter.md)   | Habilita el adaptador de red.<br/>                                                                                                                                                                                         |
 | **Reset**                                                       | Sin implementar. Para obtener más información sobre cómo implementar este método, vea el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ NetworkAdapter**](cim-networkadapter.md).<br/>                 |
-| **SetPowerState**                                               | Sin implementar. Para obtener más información sobre cómo implementar este método, vea el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**\_ CIM NetworkAdapter**](cim-networkadapter.md).<br/> |
+| **SetPowerState**                                               | Sin implementar. Para obtener más información sobre cómo implementar este método, vea el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**CIM \_ NetworkAdapter**](cim-networkadapter.md).<br/> |
 
 
 
@@ -238,7 +238,7 @@ Medio de red en uso. Los adaptadores de red son los siguientes:
 
 <span id="Infrared_Wireless"></span><span id="infrared_wireless"></span><span id="INFRARED_WIRELESS"></span>
 
-**Desasoyte** inalámbrico ("Wireless insócito")
+**Desasoyción** inalámbrica ("Wireless de cámara")
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ Medio de red en uso. Devuelve la misma información que la **propiedad AdapterTy
 
 <span id="Ethernet_using_DIX_header_format"></span><span id="ethernet_using_dix_header_format"></span><span id="ETHERNET_USING_DIX_HEADER_FORMAT"></span>
 
-**Ethernet con el formato de encabezado DIX** (5)
+**Ethernet mediante el formato de encabezado DIX** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -347,14 +347,14 @@ Medio de red en uso. Devuelve la misma información que la **propiedad AdapterTy
 
 <span id="Wireless"></span><span id="wireless"></span><span id="WIRELESS"></span>
 
-**Inalámbrico** (9)
+**Inalámbrica** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Infrared_Wireless"></span><span id="infrared_wireless"></span><span id="INFRARED_WIRELESS"></span>
 
-**Wireless Desarroba** (10)
+**Wireless de alta** velocidad (10)
 
 
 </dt> <dd></dd> <dt>
@@ -395,7 +395,7 @@ Si **es True**, el adaptador de red puede determinar automáticamente la velocid
 
 Esta propiedad se hereda de [**CIM \_ NetworkAdapter**](cim-networkadapter.md).
 
-Esta propiedad aún no se ha implementado. Devuelve un **valor NULL** de forma predeterminada.
+Esta propiedad aún no se ha implementado. Devuelve un **valor NULL de** forma predeterminada.
 
 </dd> <dt>
 
@@ -413,7 +413,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMT
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -433,12 +433,12 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
 
-Energía completa o en ejecución
+En ejecución o con energía completa
 
 </dd> <dt>
 
@@ -500,7 +500,7 @@ Energía completa o en ejecución
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -859,7 +859,7 @@ Es posible que el Registro esté dañado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows quita este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
@@ -886,7 +886,7 @@ El dispositivo está deshabilitado.
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware.
+Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware.
 
 </dd> <dt>
 
@@ -958,12 +958,12 @@ El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso IRQ que usa otro dispositivo.
+El dispositivo usa un recurso IRQ que está usando otro dispositivo.
 
 </dd> <dt>
 
@@ -994,7 +994,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Si **es True,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1007,12 +1007,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [ **Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1048,7 +1048,7 @@ Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/s
 
 Identificador único del adaptador de red de otros dispositivos del sistema.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1061,9 +1061,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es True,** ahora se borra el error **notificado en LastErrorCode.**
+Si **es True**, ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1078,7 +1078,7 @@ Tipo de acceso: solo lectura
 
 Más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1091,7 +1091,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador único global de la conexión.
+Identificador único global para la conexión.
 
 </dd> <dt>
 
@@ -1104,7 +1104,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Clase de control CurrentControlSet del sistema Win32Registry \| \\ \\ \\ \\ \\ \\ \\ \\ {4D36E972-E325-11CE-BFC1-08002BE10318}")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Clase de control Win32Registry \| System \\ \\ CurrentControlSet \\ \\ \\ \\ \\ \\ {4D36E972-E325-11CE-BFC1-08002BE10318}")
 </dt> </dl>
 
 Número de índice del adaptador de red, almacenado en el registro del sistema.
@@ -1129,7 +1129,7 @@ Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor p
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
-Esta propiedad aún no se ha implementado. Devuelve un **valor NULL** de forma predeterminada.
+Esta propiedad aún no se ha implementado. Devuelve un **valor NULL de** forma predeterminada.
 
 </dd> <dt>
 
@@ -1173,7 +1173,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1186,7 +1186,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Input and Output Functions \| [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funciones de entrada y salida del dispositivo Win32API \| \| [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)")
 </dt> </dl>
 
 Dirección de control de acceso multimedia para este adaptador de red. Una dirección MAC es un número único de 48 bits asignado al adaptador de red por el fabricante. Identifica de forma única este adaptador de red y se usa para asignar comunicaciones de red TCP/IP.
@@ -1220,10 +1220,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Puerto de bus DMTF \| \| 001,9 \| Número máximo de datos adjuntos")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Puerto de bus DMTF \| \| 001.9 \| Número máximo de datos adjuntos")
 </dt> </dl>
 
-Número máximo de puertos direccionables directamente admitidos por este adaptador de red. Se debe usar un valor de 0 (cero) si se desconoce el número.
+Número máximo de puertos direccionables directamente compatibles con este adaptador de red. Se debe usar un valor de 0 (cero) si se desconoce el número.
 
 </dd> <dt>
 
@@ -1243,9 +1243,9 @@ Velocidad máxima, en bits por segundo, para el adaptador de red.
 
 Esta propiedad se hereda de [**CIM \_ NetworkAdapter**](cim-networkadapter.md).
 
-Esta propiedad aún no se ha implementado. Devuelve un **valor NULL** de forma predeterminada.
+Esta propiedad aún no se ha implementado. Devuelve un **valor NULL de** forma predeterminada.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -1258,7 +1258,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1276,7 +1276,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Nombre de la conexión de red tal como aparece en el programa **Conexiones Panel de control** red.
+Nombre de la conexión de red tal como aparece en el programa **Conexiones** Panel de control red.
 
 </dd> <dt>
 
@@ -1337,7 +1337,7 @@ Estado de la conexión del adaptador de red a la red.
 
 <span id="Hardware_Malfunction"></span><span id="hardware_malfunction"></span><span id="HARDWARE_MALFUNCTION"></span>
 
-**Funcionamiento incorrecto de** hardware (6)
+**Funcionamiento incorrecto del** hardware (6)
 
 
 </dt> <dd></dd> <dt>
@@ -1402,7 +1402,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el adaptador está habilitado o no. Si **es True**, el adaptador está habilitado. Puede habilitar o deshabilitar la NIC mediante los métodos [**Enable**](enable-method-in-class-win32-networkadapter.md) [**y Disable.**](disable-method-in-class-win32-networkadapter.md)
+Indica si el adaptador está habilitado o no. Si **es True**, el adaptador está habilitado. Puede habilitar o deshabilitar la NIC mediante los métodos [**Habilitar**](enable-method-in-class-win32-networkadapter.md) [**y**](disable-method-in-class-win32-networkadapter.md) Deshabilitar.
 
 </dd> <dt>
 
@@ -1422,7 +1422,7 @@ Matriz de direcciones de red para un adaptador.
 
 Esta propiedad se hereda de [**CIM \_ NetworkAdapter**](cim-networkadapter.md).
 
-Esta propiedad aún no se ha implementado. Devuelve un **valor NULL** de forma predeterminada.
+Esta propiedad aún no se ha implementado. Devuelve un **valor NULL de** forma predeterminada.
 
 </dd> <dt>
 
@@ -1442,7 +1442,7 @@ Dirección de red codificada de forma segura en un adaptador. Esta dirección co
 
 Esta propiedad se hereda de [**CIM \_ NetworkAdapter**](cim-networkadapter.md).
 
-Esta propiedad aún no se ha implementado. Devuelve un **valor NULL** de forma predeterminada.
+Esta propiedad aún no se ha implementado. Devuelve un **valor NULL de** forma predeterminada.
 
 </dd> <dt>
 
@@ -1473,7 +1473,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1490,7 +1490,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1568,7 +1568,7 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 Se admiten Power-On tiempo
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -1585,7 +1585,7 @@ Tipo de acceso: solo lectura
 
 Si **es True,** el dispositivo se puede administrar mediante energía (se puede poner en modo de suspensión, y así sucesivamente). La propiedad no indica que las características de administración de energía están habilitadas actualmente, solo que el dispositivo lógico es capaz de la administración de energía.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1607,7 +1607,7 @@ Ejemplo: "Fast EtherLink XL"
 
 </dd> <dt>
 
-**ServiceName**
+**Servicename**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -1634,14 +1634,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| RFC1213-MIB.ifSpeed", "MIF. Adaptador de red DMTF \| 802 Puerto \| 001.5"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bits por segundo")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| RFC1213-MIB.ifSpeed", "MIF. Adaptador de red DMTF \| 802 Puerto \| 001.5"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bits por segundo")
 </dt> </dl>
 
-Estimación del ancho de banda actual en bits por segundo. Para los puntos de conexión que varían en ancho de banda o para aquellos en los que no se puede realizar una estimación precisa, esta propiedad debe contener el ancho de banda nominal.
+Estimación del ancho de banda actual en bits por segundo. Para los puntos de conexión que varían en ancho de banda o para aquellos en los que no se puede realizar ninguna estimación precisa, esta propiedad debe contener el ancho de banda nominal.
 
 Esta propiedad se hereda de [**CIM \_ NetworkAdapter**](cim-networkadapter.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -1700,14 +1700,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1758,12 +1758,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Estado operativo DMTF \| \| 003.3")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1813,12 +1813,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Valor de la propiedad **CreationClassName del** equipo de ámbito.
+Valor de la propiedad **CreationClassName** del equipo de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1831,12 +1831,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1856,17 +1856,17 @@ Fecha y hora en que se restablecó por última vez el adaptador de red.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ NetworkAdapter de Win32** se deriva de [**CIM \_ NetworkAdapter**](cim-networkadapter.md).
 
-En la lista siguiente se describen las clases Associator **para Win32 \_ NetworkAdapter**:
+En la lista siguiente se describen las clases Associator para **Win32 \_ NetworkAdapter**:
 
 -   [**Win32 \_ PnPEntity**](win32-pnpentity.md)
 -   [**Equipo \_ Win32System**](win32-computersystem.md)
 -   [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 -   [**Win32 \_ IRQResource**](win32-irqresource.md)
--   [**Win32 \_ DeviceMemoryAddress**](win32-devicememoryaddress.md)
+-   [**DeviceMemoryAddress de Win32 \_**](win32-devicememoryaddress.md)
 -   [**Win32 \_ PortResource**](win32-portresource.md)
 -   [**Win32 \_ NetworkProtocol**](win32-networkprotocol.md)
 -   [**Win32 \_ SystemDriver**](win32-systemdriver.md)
@@ -1910,11 +1910,11 @@ También puede usar el procedimiento siguiente para buscar el adaptador predeter
 
 ## <a name="examples"></a>Ejemplos
 
-En [el ejemplo de código](https://Gallery.TechNet.Microsoft.Com/Two-WMI-Functions-94c31b5f) de PowerShell Two WMI Functions (Dos funciones WMI) de la Galería de TechNet se usa **\_ NetworkAdapter de Win32** para volver a crear Windows cmdlet [Get-NetAdapter.](/powershell/module/netadapter/get-netadapter?view=win10-ps)
+El [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/Two-WMI-Functions-94c31b5f) de PowerShell Two WMI Functions de la Galería de TechNet usa **\_ NetworkAdapter win32** para volver a crear Windows cmdlet [Get-NetAdapter.](/powershell/module/netadapter/get-netadapter?view=win10-ps)
 
-El ejemplo de PowerShell [Get-ComputerInfo - Query Computer Info From Local/Remote Computers - (WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) en la Galería de TechNet usa una serie de llamadas a hardware y software, incluido **Win32 \_ NetworkAdapter**, para mostrar información sobre un sistema local o remoto.
+El ejemplo de PowerShell [Get-ComputerInfo - Query Computer Info From Local/Remote Computers - (WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) en la Galería de TechNet usa una serie de llamadas al hardware y software, incluido **Win32 \_ NetworkAdapter,** para mostrar información sobre un sistema local o remoto.
 
-En el ejemplo de código C siguiente se usa el espacio \# [de nombres Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) para recuperar los adaptadores de red actuales en el equipo local.
+En el ejemplo de código C \# siguiente se usa el espacio de nombres [Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) para recuperar los adaptadores de red actuales en el equipo local.
 
 
 ```CSharp
@@ -1939,10 +1939,10 @@ static void QueryInstanceFunc()
 
 
 
-En el ejemplo de código C \# siguiente se usa el espacio de nombres para recuperar los https://msdn.microsoft.com/library/system.management.aspx adaptadores de red actuales en el equipo local.
+En el siguiente ejemplo de código de C \# se usa el espacio de nombres para recuperar los https://msdn.microsoft.com/library/system.management.aspx adaptadores de red actuales en el equipo local.
 
 > [!Note]  
-> https://msdn.microsoft.com/library/system.management.aspxcontiene las clases originales usadas para tener acceso a WMI; sin embargo, se consideran más lentos y, por lo general, no se escalan, así como sus homólogos [de Microsoft.Management.Infrastructure.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85))
+> https://msdn.microsoft.com/library/system.management.aspxcontiene las clases originales usadas para tener acceso a WMI; sin embargo, se consideran más lentos y, por lo general, no escalan, así como sus [homólogos de Microsoft.Management.Infrastructure.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85))
 
  
 
@@ -1971,7 +1971,7 @@ using System.Management;
 
 
 
-En el siguiente ejemplo de código VBScript se describe cómo recuperar los adaptadores de red actuales en el equipo local.
+En el ejemplo de código de VBScript siguiente se describe cómo recuperar los adaptadores de red actuales en el equipo local.
 
 
 ```VB

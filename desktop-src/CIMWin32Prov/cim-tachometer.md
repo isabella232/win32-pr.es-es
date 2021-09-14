@@ -1,5 +1,5 @@
 ---
-description: La clase \_ CIM Tachometer existe por compatibilidad con versiones anteriores con definiciones de esquema CIM anteriores.
+description: La clase \_ Tachometer de CIM existe por compatibilidad con versiones anteriores con definiciones de esquema CIM anteriores.
 ms.assetid: 30b7c23e-05c6-4fd6-80bc-3f729855ab45
 ms.tgt_platform: multiple
 title: CIM_Tachometer clase
@@ -49,23 +49,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2066d2f592d4d1d2dac50aee868da233bd41dd71b635b17744d4d3abe9a76595
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f761d7ef18ef7e27a46d6b5e8a5a00442752561
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119547835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174566"
 ---
 # <a name="cim_tachometer-class"></a>Cim \_ Tachometer (clase)
 
-La **clase \_ CIM Tachometer** existe por compatibilidad con versiones anteriores con definiciones de esquema CIM anteriores. Con las adiciones a las [**clases \_ CIM Sensor**](cim-sensor.md) y CIM [**\_ NumericSensor**](cim-numericsensor.md) en la versión 2.2, ya no es necesario. Un tachometer se puede definir estableciendo la propiedad **SensorType,** heredada del **\_ sensor CIM,** en 5 ("Tachometer"). Otras propiedades de esta clase están codificadas de forma permanente en valores constantes que corresponden a las definiciones de la jerarquía del sensor.
+La **clase \_ Tachometer de CIM** existe por compatibilidad con versiones anteriores con definiciones de esquema CIM anteriores. Con las adiciones a las [**clases \_ CIM Sensor**](cim-sensor.md) y CIM [**\_ NumericSensor**](cim-numericsensor.md) en la versión 2.2, ya no es necesario. Un tachometer se puede definir estableciendo la propiedad **SensorType,** heredada del **\_ sensor CIM,** en 5 ("Tachometer"). Otras propiedades de esta clase están codificadas de forma permanente en valores constantes que se corresponden con las definiciones de la jerarquía del sensor.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -111,7 +111,7 @@ class CIM_Tachometer : CIM_NumericSensor
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM Tachometer** tiene estos tipos de miembros:
 
@@ -126,8 +126,8 @@ La **clase \_ CIM Tachometer** tiene estos métodos.
 
 | Método                                                                | Descripción                                                                                                                              |
 |:----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-tachometer.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
-| [**SetPowerState**](setpowerstate-method-in-class-cim-tachometer.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
+| [**Reset**](reset-method-in-class-cim-tachometer.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                               |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-tachometer.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. Wmi no implementa .<br/> |
 
 
 
@@ -151,9 +151,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("centésimas de porcentaje")
 </dt> </dl>
 
-Precisión del sensor para la propiedad medida. Su valor se registra como centésimas más o menos de un porcentaje. Esta propiedad y las propiedades **Resolución** **y Tolerancia** se usan para calcular el valor real de la propiedad física medida. La precisión puede variar en función de si el dispositivo es lineal sobre su intervalo dinámico.
+Precisión del sensor para la propiedad medida. Su valor se registra como centésimas más o menos de un porcentaje. Esta propiedad y las propiedades **Resolución** y **Tolerancia** se usan para calcular el valor real de la propiedad física medida. La precisión puede variar en función de si el dispositivo es lineal sobre su intervalo dinámico.
 
-Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -166,12 +166,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. \|HOST-RESOURCES-MIB.hrDeviceStatus de IETF")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -191,12 +191,12 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
 
-Energía completa o en ejecución
+En ejecución o con energía completa
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ Energía completa o en ejecución
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -327,7 +327,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
 
 
 </dt> <dd>
@@ -338,7 +338,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
 
 
 </dt> <dd>
@@ -349,12 +349,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo está silencioso.
+El dispositivo es silencioso.
 
 </dd> </dl>
 
@@ -392,7 +392,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -566,7 +566,7 @@ El dispositivo no funciona correctamente debido a un posible problema de nueva e
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificar todos los recursos que usa este dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows puede identificar todos los recursos que usa este dispositivo.** (16)
 
 
 </dt> <dd>
@@ -617,7 +617,7 @@ El Registro puede estar dañado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
@@ -752,7 +752,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -770,7 +770,7 @@ Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifie
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -783,12 +783,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("CurrentReading"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("CurrentReading"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
 </dt> </dl>
 
 Valor actual indicado por el sensor.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -819,12 +819,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Dirección u otra información de identificación para dar un nombre único al dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -839,7 +839,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** ahora se borra el error notificado en la propiedad **LastErrorCode.**
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -854,7 +854,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona información sobre el error registrado en la **propiedad LastErrorCode** y las acciones correctivas que se deben realizar.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -887,7 +887,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el sensor es lineal sobre su intervalo dinámico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -902,7 +902,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -915,12 +915,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdCritical"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdCritical"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
-Valor de umbral que especifica los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está entre **LowerThresholdCritical** y **LowerThresholdFatal,** el estado actual es crítico.
+Valor de umbral que especifica los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está entre **LowerThresholdCritical** y **LowerThresholdFatal,** el estado actual es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -933,12 +933,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdFatal"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdFatal"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
-Valor de umbral que especifica los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está por debajo **de LowerThresholdFatal,** el estado actual es grave.
+Valor de umbral que especifica los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está por debajo **de LowerThresholdFatal**, el estado actual es grave.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -951,12 +951,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdNonCritical"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdNonCritical"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
-Valor de umbral que especifica los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si la **propiedad CurrentReading** está entre **LowerThresholdNonCritical** y **LowerThresholdCritical,** el estado actual no es crítico.
+Valor de umbral que especifica los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si la **propiedad CurrentReading** está entre **LowerThresholdNonCritical** y **LowerThresholdCritical,** el estado actual no es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -969,12 +969,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("MaxReadable"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("MaxReadable"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
 Valor más grande de la propiedad medida que puede leer el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -987,12 +987,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("MinReadable"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("MinReadable"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
 </dt> </dl>
 
 Valor más pequeño de la propiedad medida que puede leer el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1005,7 +1005,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1023,12 +1023,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("NominalReading"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("NominalReading"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
 </dt> </dl>
 
 Valor esperado o normal para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1041,12 +1041,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMax"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMax"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
 Intervalo máximo normal para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1059,7 +1059,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMin"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMin"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
 Intervalo mínimo normal para el sensor numérico.
@@ -1080,7 +1080,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Win32 Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Win32 Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1151,7 +1151,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1190,7 +1190,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.** Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.** Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1260,7 +1260,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -1274,7 +1274,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1330,7 +1330,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1380,12 +1380,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1398,12 +1398,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1439,7 +1439,7 @@ Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) 
 
 Valor de umbral que especifica los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está entre **UpperThresholdCritical** y **UpperThresholdFatal,** el estado actual es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1452,12 +1452,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("UpperThresholdFatal"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("UpperThresholdFatal"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
-Valor de umbral que especifica los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está por encima **de UpperThresholdFatal,** el estado actual es grave.
+Valor de umbral que especifica los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está por encima **de UpperThresholdFatal**, el estado actual es grave.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1470,28 +1470,28 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("UpperThresholdNonCritical"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("revoluciones por minuto")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("UpperThresholdNonCritical"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("revolutions per minute")
 </dt> </dl>
 
-Valor de umbral que especifica los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si la **propiedad CurrentReading** está entre **UpperThresholdNonCritical** y **UpperThresholdCritical,** el estado actual no es crítico.
+Valor de umbral que especifica los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si la **propiedad CurrentReading** está entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si la **propiedad CurrentReading** está entre **UpperThresholdNonCritical** y **UpperThresholdCritical,** el estado actual no es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ Tachometer** de CIM se deriva de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+La **clase \_ CIM Tachometer** se deriva de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

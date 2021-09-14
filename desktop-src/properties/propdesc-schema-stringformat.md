@@ -5,17 +5,17 @@ title: stringFormat
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6eb40ec92ed7b31486062b5cca027eb5257e07af
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631912"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268231"
 ---
 # <a name="stringformat"></a>stringFormat
 
 Especifica cómo [**IPropertyDescription::FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) debe dar formato al valor de la propiedad como una cadena. Esto solo es aplicable si <displayInfo displayType="String"> . Solo debe haber un [elemento stringFormat]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [stringFormat,]() la configuración predeterminada del atributo se aplica a la descripción de la propiedad.
+Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [stringFormat,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
 
 ## <a name="syntax"></a>Sintaxis
 

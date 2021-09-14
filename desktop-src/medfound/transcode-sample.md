@@ -4,12 +4,12 @@ ms.assetid: 1e958f26-3ac1-4b20-abf5-d8a65ba38112
 title: Ejemplo de transcodificación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b2d185d5a486493053d0b85ae48257cc6a7a2640aea9cd5cfc839616cd7e690
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 528ef8dbed6d6ae18f534210caa5a2cc57516c75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268671"
 ---
 # <a name="transcode-sample"></a>Ejemplo de transcodificación
 

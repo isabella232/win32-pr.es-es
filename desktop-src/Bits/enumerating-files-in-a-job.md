@@ -3,26 +3,26 @@ title: Enumerar archivos en un trabajo
 description: Para enumerar los archivos de un trabajo, llame al método IBackgroundCopyJob EnumFiles. El método devuelve un puntero de interfaz IEnumBackgroundCopyFiles que se usa para enumerar los archivos.
 ms.assetid: 0e1fa024-4576-434c-bc5f-518d246b5faa
 keywords:
-- bits de trabajo de transferencia, enumeración de archivos
+- transferir BITS de trabajo, enumerar archivos
 - enumerar bits de archivos
 - enumerar BITS , archivos
 - BITS de transferencia de archivos, enumerando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01a986b8a8869008db34e97c1cc7e0cd733c301f5cdc57ce4ef6e313ff382479
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0db704e47a0e075801de2434ed30ba6fb8d8c91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119801465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266655"
 ---
 # <a name="enumerating-files-in-a-job"></a>Enumerar archivos en un trabajo
 
 Para enumerar los archivos de un trabajo, llame al [**método IBackgroundCopyJob::EnumFiles.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles) El método devuelve un [**puntero de interfaz IEnumBackgroundCopyFiles**](/windows/desktop/api/Bits/nn-bits-ienumbackgroundcopyfiles) que se usa para enumerar los archivos.
 
-Tenga en cuenta que la lista enumerada es una instantánea de los archivos del trabajo en el momento en que se llama al método [**EnumFiles.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles) Sin embargo, los valores de propiedad de esos objetos de archivo reflejan los valores actuales del archivo.
+Tenga en cuenta que la lista enumerada es una instantánea de los archivos del trabajo en el momento en que se llama [**al método EnumFiles.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles) Sin embargo, los valores de propiedad de esos objetos de archivo reflejan los valores actuales del archivo.
 
-En el ejemplo siguiente se muestra cómo enumerar los archivos de un trabajo y recuperar sus propiedades. En el ejemplo se da por supuesto que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
+En el ejemplo siguiente se muestra cómo enumerar los archivos de un trabajo y recuperar sus propiedades. En el ejemplo se supone que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
 
 
 ```C++

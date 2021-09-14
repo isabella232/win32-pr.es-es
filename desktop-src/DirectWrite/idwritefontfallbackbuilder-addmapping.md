@@ -1,11 +1,11 @@
 ---
 title: Método AddMapping de IDWriteFontFallbackBuilder
-description: Anexa una asignación única a la lista. Llame a esto una vez para cada asignación adicional.
+description: Anexa una asignación única a la lista. Llámela una vez para cada asignación adicional.
 ms.assetid: FCA3CD9C-9FB3-49BD-B4D1-53AEAAAAEE8A
 keywords:
 - Escritura directa del método AddMapping
 - Método AddMapping Direct Write , interfaz IDWriteFontFallbackBuilder
-- IdWriteFontFallbackBuilder interface Direct Write , AddMapping (método)
+- IdWriteFontFallbackBuilder interface Direct Write , AddMapping (Método AddMapping)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b6496ac9ef9bdfa574cc2c4710ed4620fd855dbf5eff2b22885b32bf343d141
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a084aa2a9df0e34741c8bf5f39ae00933d49cfe7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173750"
 ---
 # <a name="idwritefontfallbackbuilderaddmapping-method"></a>Método IDWriteFontFallbackBuilder::AddMapping
 
-Anexa una asignación única a la lista. Llame a esto una vez para cada asignación adicional.
+Anexa una asignación única a la lista. Llámela una vez para cada asignación adicional.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -85,7 +85,7 @@ Número de nombres de familia de destino.
 
 </dd> <dt>
 
-*fontCollection* \[ in, opcional\]
+*fontCollection* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection)**
@@ -94,7 +94,7 @@ Colección de fuentes explícita opcional para esta asignación.
 
 </dd> <dt>
 
-*localeName* \[ in, opcional\]
+*localeName* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **const \* WCHAR**
@@ -103,7 +103,7 @@ Configuración regional del contexto.
 
 </dd> <dt>
 
-*baseFamilyName* \[ in, opcional\]
+*baseFamilyName* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **const \* WCHAR**
@@ -117,7 +117,7 @@ Nombre de familia base con el que se debe coincidir, si procede.
 
 Tipo: **FLOAT**
 
-Factor de escala por el que se multiplica la fuente de destino del resultado.
+Factor de escala por el que multiplicar la fuente de destino de resultado.
 
 </dd> </dl>
 
@@ -131,10 +131,10 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                          |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/> |
 | Biblioteca<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |

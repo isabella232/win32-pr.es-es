@@ -4,12 +4,12 @@ ms.assetid: 0a016542-306e-48b4-8b0c-b9e4e915513e
 title: WPCEVENT_IM_CONTACT evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: baac4bf5648b27f2e8d446a79bb2d90d52f0aac416e30d031d3b81d430a6927b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9747f7ede57f7a1d77af0f0e8e5425401ee32b36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268404"
 ---
 # <a name="wpcevent_im_contact-event"></a>Evento WPCEVENT \_ IM \_ CONTACT
 
@@ -90,11 +90,11 @@ Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

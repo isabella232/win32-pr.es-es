@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdcfd965af6ac6201687ca8c7ecc7584085b7810a2c0ca11bbc70c1b04403c5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2f37992201d5d19397724071f8c2a4b8e851aac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117929869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172717"
 ---
 # <a name="iwmpmedia3getiteminfobytype-method"></a>IWMPMedia3::getItemInfoByType (método)
 
@@ -82,7 +82,7 @@ Implements IWMPMedia3.getItemInfoByType
 
 Objeto **System.Object** que es el valor del atributo. El tipo al que se va a convertir este objeto depende del tipo del atributo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve los metadatos de un elemento multimedia digital individual o un elemento multimedia que forma parte de una lista de reproducción.
 
@@ -100,7 +100,7 @@ Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb9f0d33cea662f35cdbbfb0b414d0254883cd619d55832550abdec3668ef070
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 152183ced46b55bcdf2038399583c1ecac8c5678
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119741385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272076"
 ---
 # <a name="glmap2f-function"></a>Función glMap2f
 
@@ -157,7 +157,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los evaluadores proporcionan una manera de usar la asignación polinómica o polinómica racionalizada para generar vértices, normales, coordenadas de textura y colores. Los valores generados por un evaluador se envían a otras fases del procesamiento de OpenGL como si se hubieran presentado mediante los comandos [**glVertex**](glvertex-functions.md), [**glNormal**](glnormal-functions.md), [**glTexCoord**](gltexcoord-functions.md)y [**glColor,**](glcolor-functions.md) salvo que los valores generados no actualizan las coordenadas normales, de textura o de color actuales.
 
@@ -233,7 +233,7 @@ Las funciones siguientes recuperan información relacionada **con glMap2**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

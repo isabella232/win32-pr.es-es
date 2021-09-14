@@ -5,17 +5,17 @@ title: searchInfo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: bbcfc901dfb4610210c4990c962b5251710e5653
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465632"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268247"
 ---
 # <a name="searchinfo"></a>searchInfo
 
 Especifica cómo configurar el motor de búsqueda Windows con respecto a una definición de propiedad determinada. Si no se proporciona ningún elemento [searchInfo,]() la propiedad no se incluye en el motor de Windows búsqueda. Este elemento ha cambiado para Windows 7.
 
-## <a name="syntax-for-windows-7"></a>Sintaxis para Windows 7
+## <a name="syntax-for-windows-7"></a>Sintaxis de Windows 7
 
 
 ```
@@ -89,7 +89,7 @@ Especifica cómo configurar el motor de búsqueda Windows con respecto a una def
 
 | Elemento primario                                                   | Elementos secundarios |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | Ninguno           |
+| [propertyDescription](./propdesc-schema-propertydescription.md) | None           |
 
 
 
@@ -103,9 +103,9 @@ Especifica cómo configurar el motor de búsqueda Windows con respecto a una def
 | Atributo | Descripción | 
 |-----------|-------------|
 | inInvertedIndex | Público. Opcional. Indica si el valor de propiedad debe almacenarse en el índice invertido. Esto permite a los usuarios finales realizar consultas de texto completo sobre los valores de esta propiedad. El valor predeterminado es "false". | 
-| isColumn | Público. Opcional. Indica si la propiedad también debe almacenarse en la base de datos de búsqueda de Windows como una columna, para que los proveedores de software independientes (ISV) puedan crear consultas basadas en predicados (por ejemplo, "Select * Where "System.Title"='qqq'"). Si el creador del esquema quiere permitir que los usuarios finales (o desarrolladores) creen consultas basadas en predicados en las propiedades, debe establecerse en "true". El valor predeterminado es "false". | 
+| isColumn | Público. Opcional. Indica si la propiedad también debe almacenarse en la base de datos de búsqueda de Windows como una columna, de modo que los proveedores de software independientes (ISV) puedan crear consultas basadas en predicados (por ejemplo, "Select * Where "System.Title"='qqq'"). Si el creador del esquema quiere permitir que los usuarios finales (o desarrolladores) creen consultas basadas en predicados en las propiedades, debe establecerse en "true". El valor predeterminado es "false". | 
 | isColumnSparse | Público. Opcional. El valor predeterminado es "true". Si la propiedad tiene varios valores, este atributo siempre es "true". | 
-| columnIndexType | Público. Opcional. Para optimizar la ordenación y la agrupación, Windows motor de búsqueda puede crear índices secundarios para las propiedades que tienen isColumn="true". Este atributo solo es útil cuando inInvertedIndex es "true" en Windows Vista o cuando isColumn es "true" en Windows 7. Si los usuarios tienden a ordenar la propiedad con frecuencia, se debe especificar este atributo. El valor predeterminado de Windows Vista es "NotIndexed". El valor predeterminado de Windows 7 es "OnDemand". Los valores siguientes son válidos.<ul><li><strong>NotIndexed:</strong>nunca cree un índice de valor.</li><li><strong>OnDisk:</strong>compile un índice de valor de forma predeterminada para esta propiedad.</li><li><strong>OnDiskAll</strong> (solo Windows 7 y versiones posteriores): cree un índice de valor de forma predeterminada para esta propiedad y, si es una propiedad de vector, también un índice de valor para todos los valores de vector concatenados.</li><li><strong>OnDiskVector</strong> (solo Windows 7 y versiones posteriores): cree un índice de valor de forma predeterminada para los valores de vector concatenados.</li><li><strong>OnDemand</strong> (solo Windows 7 y versiones posteriores): solo se crean índices de valor por demanda, es decir, solo la primera vez que se usan para una consulta.</li></ul> | 
+| columnIndexType | Público. Opcional. Para optimizar la ordenación y la agrupación, Windows motor de búsqueda puede crear índices secundarios para las propiedades que tienen isColumn="true". Este atributo solo es útil cuando inInvertedIndex es "true" en Windows Vista o cuando isColumn es "true" en Windows 7. Si los usuarios tienden a ordenar la propiedad con frecuencia, se debe especificar este atributo. El valor predeterminado de Windows Vista es "NotIndexed". El valor predeterminado de Windows 7 es "OnDemand". Los valores siguientes son válidos.<ul><li><strong>NotIndexed:</strong>nunca cree un índice de valor.</li><li><strong>OnDisk:</strong>compile un índice de valor de forma predeterminada para esta propiedad.</li><li><strong>OnDiskAll</strong> (Windows 7 y versiones posteriores): compile un índice de valor de forma predeterminada para esta propiedad y, si es una propiedad de vector, también un índice de valor para todos los valores de vector concatenados.</li><li><strong>OnDiskVector</strong> (Windows 7 y versiones posteriores): cree un índice de valor de forma predeterminada para los valores de vector concatenados.</li><li><strong>OnDemand</strong> (Windows 7 y versiones posteriores): solo se crean índices de valor por demanda, es decir, solo la primera vez que se usan para una consulta.</li></ul> | 
 | Maxsize | Público. Opcional. Tamaño máximo, en bytes, permitido para una determinada propiedad que se almacena en la base de Windows de búsqueda. El valor predeterminado es:<ul><li><strong>Windows Vista:</strong>128 bytes</li><li><strong>Windows 7 y versiones posteriores:</strong>512 bytes</li></ul>Tenga en cuenta que este tamaño máximo se mide en bytes, no en caracteres. El número máximo de caracteres depende de su codificación.<br /> | 
 | teclas de acceso | <strong>Windows 7 y versiones posteriores.</strong> Público. Opcional. Lista de valores mnemotécnicos que se pueden usar para hacer referencia a la propiedad en las consultas de búsqueda. La lista está delimitada por '|Carácter '. | 
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 618823054914a609a451d6a0fe77ed6380e2d95982e14158f5965bf3f9c82260
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3adb270d9bbd9194822181314a697fa1d267a127
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119601925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268492"
 ---
 # <a name="mrmcreateconfig-function"></a>Función MrmCreateConfig
 
@@ -85,13 +85,13 @@ Es \_ correcto si la función se ha hecho correctamente; de lo contrario, algún
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
-| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

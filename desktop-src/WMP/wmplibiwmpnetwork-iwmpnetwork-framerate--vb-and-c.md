@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3169cc21eee2317da45db3cb3ca9ceffffa01c85479312defe63cda1fa09796f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c338a116588fa9f1c552feff15f220e08b0f66e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119956165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170545"
 ---
 # <a name="iwmpnetworkframerate-property"></a>Propiedad IWMPNetwork::frameRate
 
 La **propiedad frameRate** obtiene la velocidad de fotogramas de vídeo actual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -53,7 +53,7 @@ Public ReadOnly Property frameRate As System.Int32
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de velocidad de fotogramas actual se devuelve en fotogramas por cien segundos. Por ejemplo, un valor de 2998 indica 29,98 fotogramas por segundo (fps).
 

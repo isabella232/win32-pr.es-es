@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: c8e5848b04b5b87a09d43f1705c48c34adc13eb99017b14260f89357226750c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a26bb072b0b4a1f048ded76fbd52ffc6d42de62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120044245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074733"
 ---
 # <a name="getfiles-object"></a>Objeto GetFiles
 
 El **objeto GetFiles** recupera los archivos necesarios en un lenguaje determinado del módulo. Requiere que se realicen determinadas acciones a través del [objeto Merge antes](merge-object.md) de que todas las partes de esta interfaz devuelvan resultados válidos.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto GetFiles** tiene estos tipos de miembros:
 
@@ -37,7 +37,7 @@ El **objeto GetFiles** tiene estas propiedades.
 
 
 
-| Propiedad                                               | Descripción                                                                                                                                                     |
+| Propiedad.                                               | Descripción                                                                                                                                                     |
 |:-------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ModuleFiles**](getfiles-modulefiles.md)<br/> | [**La propiedad ModuleFiles**](getfiles-modulefiles.md) devuelve todas las claves principales de la [tabla File](file-table.md) para el módulo abierto actualmente.<br/> |
 
@@ -68,7 +68,7 @@ interface **IMsmGetFiles: IDispatch**
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

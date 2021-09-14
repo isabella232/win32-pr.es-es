@@ -1,21 +1,21 @@
 ---
-description: El mensaje de DEVMODECHANGE de WM \_ se envía a todas las ventanas de nivel superior cada vez que el usuario cambia la configuración del modo de dispositivo.
+description: El mensaje WM DEVMODECHANGE se envía a todas las ventanas de nivel superior cada vez que \_ el usuario cambia la configuración del modo de dispositivo.
 ms.assetid: 06b625a8-7584-4a98-b8e7-f1de668c274e
-title: Mensaje de WM_DEVMODECHANGE (Winuser. h)
+title: WM_DEVMODECHANGE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 068e74264a7492bbb1e685fe6de110e909698374
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072445"
 ---
-# <a name="wm_devmodechange-message"></a>Mensaje de DEVMODECHANGE de WM \_
+# <a name="wm_devmodechange-message"></a>Mensaje \_ WM DEVMODECHANGE
 
-El mensaje de **\_ DEVMODECHANGE de WM** se envía a todas las ventanas de nivel superior cada vez que el usuario cambia la configuración del modo de dispositivo.
+El **mensaje \_ WM DEVMODECHANGE** se envía a todas las ventanas de nivel superior cada vez que el usuario cambia la configuración del modo de dispositivo.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -33,7 +33,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador a una ventana.
@@ -43,7 +43,7 @@ Identificador a una ventana.
 *uMsg* 
 </dt> <dd>
 
-DEVMODECHANGE de WM \_
+WM \_ DEVMODECHANGE
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Una aplicación debe devolver cero si procesa este mensaje.
 
 ## <a name="remarks"></a>Observaciones
 
-Este mensaje no se puede enviar directamente a una ventana. Para enviar el mensaje de **\_ DEVMODECHANGE de WM** a todas las ventanas de nivel superior, use la función [**SendMessageTimeout**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) con el parámetro *hWnd* establecido en la \_ difusión HWND.
+Este mensaje no se puede enviar directamente a una ventana. Para enviar el **mensaje \_ WM DEVMODECHANGE** a todas las ventanas de nivel superior, use la función [**SendMessageTimeout**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) con el parámetro *hWnd* establecido en HWND \_ BROADCAST.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,11 +77,11 @@ Este mensaje no se puede enviar directamente a una ventana. Para enviar el mensa
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9051b4f645744416f290906559e054405726f36f9616e8f38f3cfbae357137dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f748425b4c8363feee737d18c750b3a1d91121b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267287"
 ---
 # <a name="commandlabeldescription-property"></a>Propiedad Command.LabelDescription
 
@@ -55,7 +55,7 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -68,9 +68,9 @@ Puede producirse como máximo una vez para cada [**comando**](windowsribbon-elem
 
  
 
-La longitud máxima es sin enlazar.
+La longitud máxima no está desenlazada.
 
-Si no se proporciona ningún valor para **Command.LabelDescription,** [**se**](windowsribbon-element-string.md) requiere el elemento secundario String.
+Si no se proporciona ningún valor para **Command.LabelDescription**, se requiere el [**elemento**](windowsribbon-element-string.md) secundario String.
 
 > [!Note]  
 > Si **Command.LabelDescription contiene** un valor y un elemento secundario [**String,**](windowsribbon-element-string.md) **String** tiene prioridad.
@@ -153,7 +153,7 @@ En el ejemplo siguiente se muestra un manifiesto de comandos del Portapapeles co
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |

@@ -4,12 +4,12 @@ ms.assetid: 584c0670-9051-4d03-9635-c8fadc8798c3
 title: Atributos de nodo de topología
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2ffd366c03607c4fc6646a09dae8571e6e4847a45b985f4996d28c15a828937
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 904213752c0a3444bc4c9ea2b5cf2d5c21c8bd83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268716"
 ---
 # <a name="topology-node-attributes"></a>Atributos de nodo de topología
 

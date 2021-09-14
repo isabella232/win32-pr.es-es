@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1672c8d60cfdf8b831cfbcae9a1da1de5a6baa6225f220856ea579f7857c6650
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 30179610e6eee121a86119fa347067b40ef04c2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119440055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174449"
 ---
 # <a name="setforwardbuffermemory-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetForwardBufferMemory de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetForwardBufferMemory** se usa para especificar cuánta dirección IP de memoria se asigna para almacenar datos de paquetes en la cola de paquetes del enrutador.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
@@ -406,7 +406,7 @@ DHCP no habilitado en el adaptador.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando se llena este espacio de búfer, el enrutador comienza a descartar paquetes aleatoriamente de su cola.
+Cuando se rellena este espacio de búfer, el enrutador comienza a descartar paquetes aleatoriamente de su cola.
 
 Los búferes de datos de cola de paquetes tienen una longitud de 256 bytes, por lo que el valor del parámetro *ForwardBufferMemory* debe ser un múltiplo de 256. Varios búferes están encadenados para paquetes más grandes. El encabezado IP de un paquete se almacena por separado. Este parámetro se omite y no se asignan búferes si el enrutador IP no está habilitado. El tamaño del búfer puede oscilar entre la unidad de transmisión máxima (MTU) de la red y un valor menor que 0xFFFFFFFF.
 

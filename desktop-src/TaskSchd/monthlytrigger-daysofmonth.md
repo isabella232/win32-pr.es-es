@@ -4,7 +4,7 @@ description: Para el scripting, obtiene o establece los días del mes durante lo
 ms.assetid: 4da80d0f-ae0c-4e56-b51b-6ee6ab309d7c
 keywords:
 - Propiedad DaysOfMonth Programador de tareas
-- Propiedad DaysOfMonth Programador de tareas objeto , MonthlyTrigger
+- Propiedad DaysOfMonth Programador de tareas , objeto MonthlyTrigger
 - Objeto MonthlyTrigger Programador de tareas propiedad , DaysOfMonth
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b256295b98105f79b144285d4aec77768f0648fc327be8be29d3f203586fe484
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81a3bd671266cfbe459218367fadf20fd52f94a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170670"
 ---
 # <a name="monthlytriggerdaysofmonth-property"></a>MonthlyTrigger.DaysOfMonth, propiedad
 
 Para el scripting, obtiene o establece los días del mes durante los que se ejecuta la tarea.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,7 +40,7 @@ MonthlyTrigger.DaysOfMonth As long
 
 Máscara bit a bit que indica los días del mes durante los que se ejecuta la tarea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

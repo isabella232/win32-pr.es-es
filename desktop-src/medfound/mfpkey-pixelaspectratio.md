@@ -4,12 +4,12 @@ ms.assetid: cc259ab4-6371-4309-99a3-51bb1aa3d63a
 title: MFPKEY_PIXELASPECTRATIO propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f269273d00ec33a977a39b51eb78f5b817ca650724cd0f099c0f734a5ac45e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b1a8220cf58e2e67ab41f9213bab8d5db75bb00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118973564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268836"
 ---
 # <a name="mfpkey_pixelaspectratio-property"></a>Propiedad PIXELASPECTRATIO de MFPKEY \_
 
@@ -27,7 +27,7 @@ VT \_ UI8
 
 -   [DSP de cambio de tamaño de vídeo](videoresizer.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Almacena el numerador en los 4 bytes más altos y el denominador en los 4 bytes inferiores.
 
@@ -39,11 +39,11 @@ Almacena el numerador en los 4 bytes más altos y el denominador en los 4 bytes 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

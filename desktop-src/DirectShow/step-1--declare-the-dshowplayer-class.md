@@ -4,16 +4,16 @@ ms.assetid: 3ccd201d-e60d-40bf-a602-6d42df03b36b
 title: 'Paso 1: Declarar la clase DShowPlayer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02cbf35e9c71df9d71ab3df7cdbb3edf5d3f25bb5e77a01734f7d842fc3097f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22ff36a76be8017f7b468815cf572514900f8d11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118951894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275087"
 ---
 # <a name="step-1-declare-the-dshowplayer-class"></a>Paso 1: Declarar la clase DShowPlayer
 
-Este tema es el paso 1 del tutorial [Reproducción de audio](audio-video-playback-in-directshow.md)y vídeo en DirectShow . El código completo se muestra en el tema DirectShow [ejemplo de reproducción.](directshow-playback-example.md)
+Este tema es el paso 1 del tutorial [Reproducción de audio](audio-video-playback-in-directshow.md)y vídeo en DirectShow . El código completo se muestra en el tema DirectShow [Ejemplo de reproducción](directshow-playback-example.md).
 
 En este tutorial, la `DShowPlayer` clase administra todas las DirectShow funcionalidad. Esta clase se declara como folows.
 
@@ -81,7 +81,7 @@ private:
 Notas:
 
 -   La `PlaybackState` enumeración describe el estado actual del `DShowPlayer` objeto .
--   La constante WM \_ GRAPH EVENT define un mensaje de ventana \_ privada. Este mensaje se usa para notificar a la aplicación sobre eventos de gráfico de filtro. Vea [Paso 6: Controlar Graph eventos](step-6--handle-graph-events.md).
+-   La constante WM \_ GRAPH EVENT define un mensaje de ventana \_ privada. Este mensaje se usa para notificar a la aplicación sobre eventos de gráfico de filtro. Vea [Step 6: Handle Graph Events](step-6--handle-graph-events.md).
 -   `GraphEventFN` es un puntero a una función de devolución de llamada para controlar eventos de gráfico de filtro. La aplicación implementa esta función de devolución de llamada.
 -   La *variable miembro m \_ pVideo* proporciona un contenedor para los distintos DirectShow de vídeo. Vea [Paso 2: Declarar CVideoRenderer y clases derivadas](step-2--declare-cvideorenderer-and-derived-classes.md).
 -   A lo largo de este tutorial, se usa la función [SafeRelease](../medfound/saferelease.md) para liberar punteros de interfaz COM.

@@ -4,12 +4,12 @@ ms.assetid: dd53bd44-5dbf-44e9-9945-093995508f44
 title: 'Programa C de ejemplo: comprobar la firma de un archivo PE'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec2f2aa5261924fcb9744848f4d9455b2aad69c28ad03360370f621886a9339d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90bdea6dbb2b14e9f153cebc7948166da18f9208
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173258"
 ---
 # <a name="example-c-program-verifying-the-signature-of-a-pe-file"></a>Programa C de ejemplo: comprobar la firma de un archivo PE
 

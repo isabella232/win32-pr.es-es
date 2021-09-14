@@ -1,9 +1,9 @@
 ---
-title: Valores de diferencia de modo (msctf. h)
-description: Los valores predefinidos siguientes son posibles valores para la \_ propiedad MODEBIAS de prop de GUID \_ .
+title: Valores de sesgo de modo (Msctf.h)
+description: Los siguientes valores predefinidos son valores posibles para la \_ propiedad GUID PROP \_ MODEBIAS.
 ms.assetid: 1a96ed78-923d-454d-a30b-f4673a97a142
 keywords:
-- Valores de diferencia de modo marco de trabajo de servicios de texto
+- Valores de sesgo de modo Text Services Framework
 topic_type:
 - apiref
 api_name:
@@ -15,120 +15,120 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 15ff45f63658ab678f4197750edd149c6b0806fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170714"
 ---
 # <a name="mode-bias-values"></a>Valores de sesgo de modo
 
-Los valores predefinidos siguientes son posibles valores para la propiedad [ \_ \_ MODEBIAS de prop de GUID](predefined-properties.md) .
+Los siguientes valores predefinidos son valores posibles para la [ \_ propiedad GUID PROP \_ MODEBIAS.](predefined-properties.md)
 
 <dl> <dt>
 
-<span id="GUID_MODEBIAS_NONE_____________"></span><span id="guid_modebias_none_____________"></span>GUID \_ MODEBIAS \_ ninguno 
+<span id="GUID_MODEBIAS_NONE_____________"></span><span id="guid_modebias_none_____________"></span>GUID \_ MODEBIAS \_ NONE 
 </dt> <dd>
 
-No hay ninguna diferencia de modo.
+No hay ningún sesgo de modo.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_FILENAME_____________"></span><span id="guid_modebias_filename_____________"></span>GUID \_ MODEBIAS \_ nombre de archivo 
+<span id="GUID_MODEBIAS_FILENAME_____________"></span><span id="guid_modebias_filename_____________"></span>NOMBRE DE \_ ARCHIVO DE MODEBIAS \_ GUID 
 </dt> <dd>
 
-La diferencia es con un nombre de archivo.
+El sesgo es para un nombre de archivo.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_NAME_____________"></span><span id="guid_modebias_name_____________"></span>\_nombre de MODEBIAS GUID \_ 
+<span id="GUID_MODEBIAS_NAME_____________"></span><span id="guid_modebias_name_____________"></span>GUID \_ MODEBIAS \_ NAME 
 </dt> <dd>
 
-La diferencia es con un nombre.
+El sesgo es para un nombre.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_READING_____________"></span><span id="guid_modebias_reading_____________"></span>\_lectura de MODEBIAS de GUID \_ 
+<span id="GUID_MODEBIAS_READING_____________"></span><span id="guid_modebias_reading_____________"></span>LECTURA \_ DE MODEBIAS \_ DE GUID 
 </dt> <dd>
 
-La diferencia es con la lectura.
+El sesgo es para la lectura.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_DATETIME_____________"></span><span id="guid_modebias_datetime_____________"></span>GUID \_ MODEBIAS \_ DateTime 
+<span id="GUID_MODEBIAS_DATETIME_____________"></span><span id="guid_modebias_datetime_____________"></span>GUID \_ MODEBIAS \_ DATETIME 
 </dt> <dd>
 
-La diferencia es una fecha o una hora.
+El sesgo es una fecha u hora.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_CONVERSATION_____________"></span><span id="guid_modebias_conversation_____________"></span>\_MODEBIAS de \_ conversación GUID 
+<span id="GUID_MODEBIAS_CONVERSATION_____________"></span><span id="guid_modebias_conversation_____________"></span>GUID \_ MODEBIAS \_ CONVERSATION 
 </dt> <dd>
 
-La diferencia es a una conversación.
+El sesgo es para una conversación.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_NUMERIC_____________"></span><span id="guid_modebias_numeric_____________"></span>GUID \_ MODEBIAS \_ numérico 
+<span id="GUID_MODEBIAS_NUMERIC_____________"></span><span id="guid_modebias_numeric_____________"></span>GUID \_ MODEBIAS \_ NUMERIC 
 </dt> <dd>
 
-La diferencia es un número.
+El sesgo es para un número.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_HIRAGANA_____________"></span><span id="guid_modebias_hiragana_____________"></span>GUID \_ MODEBIAS \_ hiragana 
+<span id="GUID_MODEBIAS_HIRAGANA_____________"></span><span id="guid_modebias_hiragana_____________"></span>GUID \_ MODEBIAS \_ HIRAGANA 
 </dt> <dd>
 
-La diferencia es con las cadenas hiragana.
+El sesgo es para las cadenas hiragana.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_KATAKANA_____________"></span><span id="guid_modebias_katakana_____________"></span>GUID \_ MODEBIAS \_ katakana 
+<span id="GUID_MODEBIAS_KATAKANA_____________"></span><span id="guid_modebias_katakana_____________"></span>GUID \_ MODEBIAS \_ KATAKANA 
 </dt> <dd>
 
-La diferencia es a las cadenas katakana.
+El sesgo es para las cadenas katakana.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_CHINESE_____________"></span><span id="guid_modebias_chinese_____________"></span>GUID \_ MODEBIAS \_ chino 
+<span id="GUID_MODEBIAS_CHINESE_____________"></span><span id="guid_modebias_chinese_____________"></span>CHINO \_ MODEBIAS \_ GUID 
 </dt> <dd>
 
-La diferencia es para los caracteres chinos.
+El sesgo es para los caracteres chino.
 
 </dd> <dt>
 
 <span id="GUID_MODEBIAS_HANGUL_____________"></span><span id="guid_modebias_hangul_____________"></span>GUID \_ MODEBIAS \_ HANGUL 
 </dt> <dd>
 
-La diferencia se debe a los caracteres hangul.
+El sesgo es para los caracteres Hangul.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_HALFWIDTHKATAKANA_____________"></span><span id="guid_modebias_halfwidthkatakana_____________"></span>GUID \_ MODEBIAS \_ HALFWIDTHKATAKANA 
+<span id="GUID_MODEBIAS_HALFWIDTHKATAKANA_____________"></span><span id="guid_modebias_halfwidthkatakana_____________"></span>GUID \_ MODEBIAS \_ HALFWIDTHAKANA 
 </dt> <dd>
 
-La diferencia se debe a las cadenas katakana de ancho medio.
+El sesgo es para las cadenas katakana de ancho medio.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_FULLWIDTHALPHANUMERIC_____________"></span><span id="guid_modebias_fullwidthalphanumeric_____________"></span>GUID \_ MODEBIAS \_ FULLWIDTHALPHANUMERIC 
+<span id="GUID_MODEBIAS_FULLWIDTHALPHANUMERIC_____________"></span><span id="guid_modebias_fullwidthalphanumeric_____________"></span>GUID \_ MODEBIAS \_ FULLWIDPHANUMERIC 
 </dt> <dd>
 
-La diferencia se debe a los caracteres alfanuméricos de ancho completo.
+El sesgo es para caracteres alfanuméricos de ancho completo.
 
 </dd> <dt>
 
-<span id="GUID_MODEBIAS_HALFWIDTHALPHANUMERIC_____________"></span><span id="guid_modebias_halfwidthalphanumeric_____________"></span>GUID \_ MODEBIAS \_ HALFWIDTHALPHANUMERIC 
+<span id="GUID_MODEBIAS_HALFWIDTHALPHANUMERIC_____________"></span><span id="guid_modebias_halfwidthalphanumeric_____________"></span>GUID \_ MODEBIAS \_ HALFWIDPHANUMERIC 
 </dt> <dd>
 
-La diferencia se debe a caracteres alfanuméricos de ancho medio.
+El sesgo es para caracteres alfanuméricos de ancho medio.
 
 </dd> <dt>
 
 <span id="GUID_MODEBIAS_FULLWIDTHHANGUL_____________"></span><span id="guid_modebias_fullwidthhangul_____________"></span>GUID \_ MODEBIAS \_ FULLWIDTHHANGUL 
 </dt> <dd>
 
-La diferencia se debe a los caracteres hangul de ancho completo.
+El sesgo es para los caracteres Hangul de ancho completo.
 
 </dd> </dl>
 
@@ -140,9 +140,9 @@ La diferencia se debe a los caracteres hangul de ancho completo.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                      |
-| Encabezado<br/>                   | <dl> <dt>Msctf. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msctf. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                      |
+| Encabezado<br/>                   | <dl> <dt>Msctf.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Msctf.idl</dt> </dl> |
 
 
 

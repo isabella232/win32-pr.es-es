@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: bb9dad1962cace623a4a52991d3650451a0a6d5f660aad88e46c4fe393ce4e4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b368f30b04734b2d253a7d5f2aa64f0d61c930e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118142114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072135"
 ---
 # <a name="installerlasterrorrecord-method"></a>Método Installer.LastErrorRecord
 
@@ -41,21 +41,21 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**objeto Record**](record-object.md) se restablece después de la ejecución de esta función de cualquier función que genere un registro de error.
 
 Solo las siguientes funciones designadas generan un registro de error:
 
 -   [**Método OpenDatabase (objeto Installer)**](installer-opendatabase.md)
--   [**Confirmar**](database-commit.md)
+-   [**Commit**](database-commit.md)
 -   [**Openview**](database-openview.md)
 -   [**Importar**](database-import.md)
 -   [**Exportación**](database-export.md)
 -   [**Combinar**](database-merge.md)
 -   [**GenerateTransform**](database-generatetransform.md)
 -   [**ApplyTransform**](database-applytransform.md)
--   [**Ejecutar**](view-execute.md)
+-   [**Execute**](view-execute.md)
 -   [**Modificar**](view-modify.md)
 -   [**SetStream**](record-setstream.md)
 -   [**SummaryInformation**](database-summaryinformation.md)
@@ -107,11 +107,11 @@ End If
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

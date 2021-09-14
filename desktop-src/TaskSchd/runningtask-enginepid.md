@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eed259ccc92e954ae1acde076f0cc09167d15071ea71a33039e7298479875b5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bd725c44fc85e82d3693d9467956d3040aad2bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117759079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172830"
 ---
 # <a name="runningtaskenginepid-property"></a>Propiedad RunningTask.EnginePID
 
@@ -40,9 +40,9 @@ RunningTask.EnginePID As Integer
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Identificador de proceso para el motor que ejecuta la tarea.
+Identificador de proceso del motor que ejecuta la tarea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El identificador de proceso devuelto por esta propiedad no se puede anexar directamente a una cadena. El valor devuelto debe convertirse primero en un valor entero llamando a la [función CInt](/previous-versions//fctcwhw9(v=vs.85)) en el valor devuelto.
 

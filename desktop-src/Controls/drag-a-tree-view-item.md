@@ -4,12 +4,12 @@ description: En este tema se muestra el código para controlar el arrastre y la 
 ms.assetid: 989BBC27-C025-4C54-9972-4725F04A5E95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23ee7cfc9d4fa7a6e73abd042df583ae9175de8583b050ff9621b7d2789e0d73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80cedc5f7ec750270ec5d9fb6f567bf473f8c13b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118413119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174133"
 ---
 # <a name="how-to-drag-a-tree-view-item"></a>Cómo arrastrar un elemento Tree-View de datos
 

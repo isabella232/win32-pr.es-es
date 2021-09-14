@@ -5,11 +5,11 @@ ms.assetid: d925f71c-fc5a-4ff2-8f5d-9434c162b4b4
 ms.topic: article
 ms.date: 10/20/2020
 ms.openlocfilehash: 04610b75e8ca4ea7602d00b840bbbd9002397d9e
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267431"
 ---
 # <a name="first-experience"></a>Primera experiencia
 
@@ -20,7 +20,7 @@ En la primera experiencia ideal, los usuarios instalan el programa y lo usan de 
 
 Una interfaz de usuario de primera experiencia ayuda a los usuarios a pasar de su primera exposición a un nuevo programa o característica al uso diario.
 
-En el caso de los programas de Windows, la primera experiencia inicial se produce cuando los usuarios ejecutan el programa de instalación. Programa de instalación normalmente:
+Para Windows, la primera experiencia inicial se produce cuando los usuarios ejecutan el programa de instalación. Programa de instalación normalmente:
 
 -   Requerir que el usuario acepte un Contrato de licencia de usuario final (CLUF).
 -   Pida una clave de producto.
@@ -30,7 +30,7 @@ En el caso de los programas de Windows, la primera experiencia inicial se produc
 
 ![captura de pantalla del cuadro de diálogo "Type your product key" (Escribir la clave de producto) ](images/exper-first-exper-image1.png)
 
-Parte de una experiencia de instalación típica de Windows.
+Parte de una experiencia Windows configuración típica.
 
 A continuación, la primera experiencia continúa con el primer uso del programa o la característica. Esta primera experiencia de uso puede:
 
@@ -81,7 +81,7 @@ Este ideal se puede obtener para la mayoría de los programas, por lo que debe p
 
 Las preguntas requieren respuestas que deben responderse antes de que los usuarios puedan continuar. Las preguntas durante la primera experiencia son obstáculos que los usuarios deben saltar para poder usar el programa de forma productiva. Por el contrario, las opciones son opcionales. Los usuarios no tienen que responder a ellos o pueden elegir verlos solo cuando quieran.
 
-Por lo tanto, la configuración que se presenta en el flujo principal de un asistente para la instalación son preguntas, mientras que la configuración fuera del flujo de instalación principal o en un cuadro de diálogo de opciones de programa son opciones. Las preguntas innecesarias hacen que la primera experiencia del programa sea complicada y larga, lo que elimina de forma eficaz la anticipación positiva y los usuarios emocionantes tienen que empezar a trabajar con el programa.
+Por lo tanto, la configuración que se presenta en el flujo principal de un asistente de instalación son preguntas, mientras que la configuración fuera del flujo de instalación principal o en un cuadro de diálogo de opciones de programa son opciones. Las preguntas innecesarias hacen que la primera experiencia del programa sea complicada y larga, lo que elimina de forma eficaz la anticipación positiva y los usuarios emocionantes tienen que empezar a trabajar con el programa.
 
 ### <a name="use-the-first-experience-when-you-must"></a>Use la primera experiencia cuando deba
 
@@ -94,7 +94,7 @@ Presente la configuración y las tareas a los usuarios durante las primeras expe
 | Preguntas de configuración<br/>                  | Seleccione los valores predeterminados adecuados.<br/> Permitir que los usuarios cambien de las opciones del programa.<br/> Proporcione rutas de instalación típicas frente a rutas de instalación personalizadas. <br/> |
 | Preguntas de primer uso<br/>              | Seleccione los valores predeterminados adecuados y permita que los usuarios cambien de las opciones del programa.<br/>                                                            |
 | Tareas de primer uso<br/>                  | En su lugar, presente contextualmente.<br/>                                                                                                           |
-| Anuncios de características de primer uso<br/> | Hacer que las tareas más comunes e importantes se detecte y contextualmente.<br/>                                                                   |
+| Anuncios de características de primer uso<br/> | Haga que las tareas más comunes e importantes se detecte y contextualmente.<br/>                                                                   |
 | Tutoriales de primer uso<br/>              | Haga que las características del programa se explican por sí solas.<br/>                                                                                                 |
 | Registro de productos<br/>             | Proporcione el comando en el menú Ayuda y en el cuadro Acerca de.<br/>                                                                                             |
 
@@ -106,7 +106,7 @@ Presente la configuración y las tareas a los usuarios durante las primeras expe
 
 Mantenga su primera experiencia lo más sencilla posible. Haga que el programa funcione de inmediato. Elija valores predeterminados seguros, seguros y prácticos y haga preguntas durante la instalación y el primer uso solo cuando sea necesario.
 
-Solo tiene una oportunidad de crear una buena primera impresión y esa primera impresión es duradera.
+Solo tiene una oportunidad de hacer una buena primera impresión y esa primera impresión es duradera.
 
 ## <a name="guidelines"></a>Directrices
 
@@ -117,7 +117,7 @@ Solo tiene una oportunidad de crear una buena primera impresión y esa primera i
 
 ![captura de pantalla del cuadro de diálogo "Type a computer name" (Escribir un nombre de equipo) ](images/exper-first-exper-image3.png)
 
-Windows pide a los usuarios el nombre del equipo y la elección del fondo durante la instalación, ya que esta configuración ayuda a formar una conexión emocional con el producto.
+Windows solicita a los usuarios el nombre del equipo y la elección del fondo durante la instalación, ya que esta configuración ayuda a formar una conexión emocional con el producto.
 
 -   **Use la experiencia de configuración para** tareas y configuraciones si se aplican a todos los usuarios o si cambiar la configuración requiere elevación.
 -   **Use la primera experiencia de uso para** las tareas y la configuración si se aplican a usuarios individuales.
@@ -137,14 +137,14 @@ Windows pide a los usuarios el nombre del equipo y la elección del fondo durant
     Una experiencia de configuración que facilita el flujo de tareas principales si el usuario no pretende personalizar la instalación.
 
 -   **No sobrecargar a los usuarios con tareas y configuraciones:**
-    -   **Empiece por algo simple.** Comience con una configuración sencilla de personalización y avance hacia tareas y configuraciones más complejas y técnicas. Por ejemplo, el programa de instalación de Windows comienza con información personal y termina con la configuración de red.
+    -   **Empiece por algo simple.** Comience con una configuración sencilla de personalización y avance hacia tareas y configuraciones más complejas y técnicas. Por ejemplo, Windows configuración comienza con información personal y termina con la configuración de red.
     -   **Use una primera experiencia contextual para** las tareas y la configuración si solo se aplican a características que no son fundamentales para el programa principal.
 
         ![captura de pantalla del cuadro de diálogo "Configuración de audio y vídeo" ](images/exper-first-exper-image6.png)
 
-        Windows Live Messenger tiene una configuración contextual para audio y vídeo porque las usan las características secundarias.
+        Windows Live Messenger una configuración contextual para audio y vídeo porque las usan las características secundarias.
 
--   **No presente todo a la vez.** Consolide para usar una sola interfaz de usuario en lugar de varias superficies de interfaz de usuario, o bien muestre tareas en momentos diferentes en lugar de todas a la vez.
+-   **No presente todo a la vez.** Consolide para usar una sola interfaz de usuario en lugar de varias superficies de interfaz de usuario, o muestre las tareas en momentos diferentes en lugar de todas a la vez.
 
     **Incorrecto:**
 
@@ -155,19 +155,19 @@ Windows pide a los usuarios el nombre del equipo y la elección del fondo durant
 -   **Expresar preguntas y opciones en términos de objetivos y tareas de los usuarios, no en términos de tecnología.** Proporcione opciones que los usuarios entiendan y diferencian claramente. Asegúrese de proporcionar suficiente información a los usuarios para tomar decisiones informadas.
 -   **Si la necesidad de información personal no es obvia, explique por qué el programa necesita la información y cómo se usará.**
 
-    ![captura de pantalla de texto que indica el uso de la dirección de correo electrónico ](images/exper-first-exper-image8.png)
+    ![captura de pantalla del texto que indica el uso de la dirección de correo electrónico ](images/exper-first-exper-image8.png)
 
     En este ejemplo, una aplicación de comercio electrónico explica cómo se usará la información personal.
 
--   **Presentar las primeras experiencias a pantalla completa solo si los usuarios no pueden realizar otras tareas de forma productiva.** Por ejemplo, el programa de instalación de Windows se presenta a pantalla completa para disuadir a los usuarios de realizar otras tareas mientras se instala Windows. La mayoría de las primeras experiencias no deben ser de pantalla completa.
+-   **Presentar las primeras experiencias a pantalla completa solo si los usuarios no pueden realizar otras tareas de forma productiva.** Por ejemplo, Windows configuración se presenta a pantalla completa para disuadir a los usuarios de realizar otras tareas mientras Windows se está instalando. La mayoría de las primeras experiencias no deben ser de pantalla completa.
 
 ### <a name="settings"></a>Configuración
 
 -   **Para todas las configuraciones, seleccione el valor más seguro (para evitar la pérdida de datos o del sistema), el valor más seguro y privado de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione el valor más probable o conveniente. Elegir valores predeterminados buenos es una manera eficaz de simplificar la primera experiencia.
 -   **Requerir que los usuarios opten por:**
 
-    -   Configuración con implicaciones legales, como contratos de licencias de usuario final (EUA). Esta configuración no puede tener selecciones predeterminadas.
-    -   Características que realizan cambios automáticos en la configuración del sistema, como las actualizaciones automáticas de Windows.
+    -   Configuración con implicaciones legales, como contratos de licencia de usuario final (EUA). Esta configuración no puede tener selecciones predeterminadas.
+    -   Características que realizan cambios automáticos en la configuración del sistema, como Windows actualizaciones automáticas.
     -   Características que revelan información de identificación personal (PII) o información del sistema.
     -   Cambios en el escritorio del usuario más allá de agregar entradas al menú Inicio, como agregar iconos al escritorio o a la barra de inicio rápido.
     -   Software opcional, como mejoras de productos, suscripciones y productos de terceros.
@@ -183,10 +183,10 @@ Windows pide a los usuarios el nombre del equipo y la elección del fondo durant
 
 -   **Ayudar a los usuarios a superar el tiempo de espera de forma productiva.**
     -   Si el tiempo de espera suele oscilar entre uno y dos minutos, considere la posibilidad de proporcionar información útil mientras los usuarios esperan, como una presentación de las novedades durante la instalación.
-    -   Si el tiempo de espera suele ser superior a dos minutos, facilita a los usuarios la realización de otras tareas. Muestre el tiempo de espera estimado, recomiende que los usuarios hagan otra cosa mientras tanto y que la finalización de la tarea sea obvia cambiando significativamente la pantalla.
+    -   Si el tiempo de espera suele ser superior a dos minutos, facilita a los usuarios la realización de otras tareas. Muestre el tiempo de espera estimado, recomiende que los usuarios hagan otra cosa mientras tanto y que la finalización de tareas sea obvia cambiando la pantalla significativamente.
 -   **Replantearse la presentación de tutoriales durante la primera experiencia.** Lo más probable es que los usuarios quieran usar el programa de inmediato y estén interesados en los tutoriales en un momento posterior.
 -   **No use notificaciones de anuncios de características en la primera experiencia.** En lugar de usar una notificación de anuncio de [características,](mess-notif.md)diseñe la característica para que sea más fácil de detectar en contextos en los que sea necesaria o no haga nada especial y permita que los usuarios descubran la característica por sí mismos.
--   **No use ninguna notificación durante la experiencia inicial de Windows.** Para mejorar su primera experiencia, Windows 7 suprime todas las notificaciones mostradas durante las primeras horas de uso. Diseñe el programa suponiendo que los usuarios no verán dichas notificaciones.
+-   **No use ninguna notificación durante la experiencia Windows inicio.** Para mejorar su primera experiencia, Windows 7 suprime todas las notificaciones mostradas durante las primeras horas de uso. Diseñe el programa suponiendo que los usuarios no verán dichas notificaciones.
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection2 getPlaylistByQuery (método)
-description: El método getPlaylistByQuery devuelve una interfaz IWMPPlaylist que proporciona acceso a elementos multimedia que coinciden con las condiciones de consulta.
+title: Método IWMPMediaCollection2 getPlaylistByQuery
+description: El método getPlaylistByQuery devuelve una interfaz IWMPPlaylist que proporciona acceso a los elementos multimedia que coinciden con las condiciones de consulta.
 ms.assetid: ebbb631f-1faa-4c89-8c1d-cc2b128126b8
 keywords:
 - Método getPlaylistByQuery Reproductor de Windows Media
 - Método getPlaylistByQuery Reproductor de Windows Media , interfaz IWMPMediaCollection2
-- Interfaz IWMPMediaCollection2 Reproductor de Windows Media método , getPlaylistByQuery
+- Interfaz IWMPMediaCollection2 Reproductor de Windows Media , método getPlaylistByQuery
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acd80467c78aac832c5ac2784281abcf07975a1956ee304c734b2b45b82901fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 109f6e49e77d1cfa8c6d3b45bef1d011faf21a8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172690"
 ---
 # <a name="iwmpmediacollection2getplaylistbyquery-method"></a>IWMPMediaCollection2::getPlaylistByQuery (método)
 
@@ -91,17 +91,17 @@ Valor **System.Boolean** que indica si la lista de reproducción debe ordenarse 
 
 Interfaz **WMPLib.IWMPPlaylist** para la lista de reproducción recuperada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las consultas compuestas **que usan IWMPQuery** no distinguen mayúsculas de minúsculas.
 
-Cuando la consulta compuesta especificada por el *parámetro pQuery* contiene una condición creada en el **atributo MediaType,** esa condición se omite. Siempre se usa el valor del *parámetro bstrMediaType.* Por ejemplo, si la consulta compuesta contiene la condición "MediaType Equals audio" y el valor del parámetro *bstrMediaType* es "video", la lista de reproducción resultante solo contendrá elementos de vídeo.
+Cuando la consulta compuesta especificada por el parámetro *pQuery* contiene una condición creada en el **atributo MediaType,** esa condición se omite. Siempre se usa el valor del *parámetro bstrMediaType.* Por ejemplo, si la consulta compuesta contiene la condición "MediaType Equals audio" y el valor del parámetro *bstrMediaType* es "video", la lista de reproducción resultante solo contendrá elementos de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

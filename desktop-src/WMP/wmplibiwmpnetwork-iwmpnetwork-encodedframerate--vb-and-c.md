@@ -3,7 +3,7 @@ title: Propiedad IWMPNetwork encodedFrameRate
 description: La propiedad encodedFrameRate obtiene la velocidad de fotogramas de vídeo especificada por el autor del contenido.
 ms.assetid: 4faf5675-5bf3-485d-802f-a1f900ddae63
 keywords:
-- propiedad encodedFrameRate Reproductor de Windows Media
+- Propiedad encodedFrameRate Reproductor de Windows Media
 - Propiedad encodedFrameRate Reproductor de Windows Media , interfaz IWMPNetwork
 - Interfaz IWMPNetwork Reproductor de Windows Media , propiedad encodedFrameRate
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33f8a08572f65e1e44027ed25d84acfe7d917f92bf4bb63d5d9b8cca1e1201d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b4176a9c2492d0ce34ffd0936c48dbdef065d1b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170546"
 ---
 # <a name="iwmpnetworkencodedframerate-property"></a>Propiedad IWMPNetwork::encodedFrameRate
 
 La **propiedad encodedFrameRate** obtiene la velocidad de fotogramas de vídeo especificada por el autor del contenido.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp

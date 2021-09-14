@@ -4,12 +4,12 @@ ms.assetid: 80c10bc2-b7e3-4f24-8bac-826149a376c7
 title: Tareas iniciales con el desarrollo de Windows internacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c346f03717b5f50c27911891daaea8aa4ed55ce199e7ca807690d2f3185d8114
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36cc77a86b652f1b713b29517b513cddc26ed801
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118949434"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274623"
 ---
 # <a name="getting-started-with-international-windows-development"></a>Tareas iniciales con el desarrollo de Windows internacional
 
@@ -21,11 +21,11 @@ Si escribe aplicaciones para los usuarios en una sola configuración regional, e
 
 Esta sección le ayuda a empezar a trabajar en el desarrollo internacional. Presenta vínculos a temas que proporcionan información general sobre los requisitos previos de internacionalización. Resume las tecnologías que ofrece el SDK para el soporte técnico de clientes de todo el mundo. Por último, en esta sección se proporciona una aplicación de ejemplo que resuelve un problema que a menudo se produce al escribir software global.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Debe familiarizarse con los problemas que surgen al desarrollar software internacional para Windows. Comience con estas información general.
 
--   [Descripción de la internacionalización](understanding-internationalization.md) explica la dificultad agregada de desarrollar aplicaciones listas para el mundo y define términos clave.
+-   [En Descripción de la internacionalización](understanding-internationalization.md) se explica la dificultad agregada de desarrollar aplicaciones listas para el mundo y se definen términos clave.
 -   El [tema Get World-Ready](https://msdn.microsoft.com/goglobal/bb895995.aspx) le lleva a directrices y procedimientos recomendados que puede conocer o profundizar según sea necesario.
 -   La [lista de comprobación de](internationalization-checklist.md) internacionalización resume las acciones que debe realizar para crear una aplicación lista para el mundo.
 -   La seguridad siempre es un problema en el desarrollo de software, pero debe tener en cuenta otros problemas al desarrollar software internacional. Echar un vistazo a [Consideraciones de seguridad: Características internacionales](security-considerations--international-features.md).
@@ -34,7 +34,7 @@ Tenga en cuenta también los artículos más amplios que se pueden encontrar en 
 
 ## <a name="learning-paths"></a>Rutas de aprendizaje
 
-La ruta de acceso que sigue a continuación para aprender a crear software internacional depende de los escenarios a los que se enfrenta. Los escenarios siguientes se basan en los presentados en el tema de la sección principal, [Internacionalización para Windows Aplicaciones .](international-support.md)
+La ruta de acceso que sigue a continuación para aprender a crear software internacional depende de los escenarios a los que se enfrenta. Los escenarios siguientes se basan en los presentados en el tema de la sección principal, [Internacionalización para Windows Aplicaciones](international-support.md).
 
 -   **Cree aplicaciones que se puedan implementar en varias regiones en varios idiomas.**
 
@@ -61,7 +61,7 @@ La ruta de acceso que sigue a continuación para aprender a crear software inter
 
 -   **Mostrar objetos dependientes de la referencia cultural en formatos adecuados.**
 
-    Las aplicaciones internacionales deben usar la configuración regional para ordenar las cadenas correctamente y mostrar información que distingue la referencia cultural, como la hora, las fechas y la moneda.
+    Las aplicaciones internacionales deben usar la configuración regional para ordenar correctamente las cadenas y mostrar información que distingue la referencia cultural, como la hora, las fechas y la moneda.
 
     -   Explore el [Centro de conocimientos de compatibilidad con idiomas nacionales](./national-language-support-reference.md).
     -   Examine la documentación de [Compatibilidad con idiomas nacionales (NLS).](national-language-support.md)
@@ -75,7 +75,7 @@ La ruta de acceso que sigue a continuación para aprender a crear software inter
 
 ## <a name="internationalization-technologies-in-the-sdk"></a>Tecnologías de internacionalización en el SDK
 
-La sección Compatibilidad internacional de desarrollo del SDK proporciona tecnologías que permiten a la aplicación enumerar idiomas, configuraciones regionales y formatos específicos de la configuración regional. Puede usarlos en aplicaciones Win32 de Microsoft que escriba en C o C++.
+La sección Compatibilidad internacional de desarrollo del SDK proporciona tecnologías que permiten a la aplicación enumerar idiomas, configuraciones regionales y formatos específicos de la configuración regional. Puede usarlos en aplicaciones de Microsoft Win32 que escriba en C o C++.
 
 Los [Servicios lingüísticos extendidos](extended-linguistic-services.md) ofrecen tecnología de microsoft para la identificación de idiomas y scripts en texto. La aplicación puede determinar los servicios disponibles en función de la categoría, así como del idioma de entrada y salida, el script y el tipo de contenido.
 

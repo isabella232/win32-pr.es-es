@@ -1,17 +1,17 @@
 ---
-description: Funciones de clase Window
+description: Funciones de la clase Window
 ms.assetid: 6d9b4e43-227e-41d0-9c3d-10ae04de6314
-title: Funciones de clase Window
+title: Funciones de la clase Window
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecc17be1d6da42ee26e7af51416af86e9e4f9403b09d56478eb8a2d1786ae62c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6f321dbb5c157e03c2a811cc065ca3fcce0c606
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267199"
 ---
-# <a name="window-class-functions"></a>Funciones de clase Window
+# <a name="window-class-functions"></a>Funciones de la clase Window
 
 -   [**GetClassInfo**](/windows/win32/api/winuser/nf-winuser-getclassinfoa)
 -   [**GetClassInfoEx**](/windows/win32/api/winuser/nf-winuser-getclassinfoexa)

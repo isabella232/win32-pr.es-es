@@ -4,12 +4,12 @@ ms.assetid: d34b4a4e-118f-4c49-b01b-1daae25db701
 title: Argumentos de la línea de comandos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a18c90f4500fcda12aaa4bf49f4ba52712fe507e18610c213b36b1da87069f9c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5ed2c604c22b23eb1602749f3f966be2e227e09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119765465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274783"
 ---
 # <a name="command-line-arguments"></a>Argumentos de la línea de comandos
 

@@ -1,23 +1,23 @@
 ---
 title: MulticastUdpClientExample6
-description: En este ejemplo se muestra un cliente UDP que multidifusión de una solicitud y, a continuación, espera los mensajes de respuesta de los servidores, mediante IPv6.
+description: En este ejemplo se muestra un cliente UDP que multidifusión de una solicitud y, a continuación, espera los mensajes de respuesta de los servidores mediante IPv6.
 ms.assetid: bd19bd5f-0617-4524-aa48-3d0c28c97747
 keywords:
 - MulticastUdpClientExample6 Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3e43d321fffefbdf29acd93d0ccd1a6deea99f5dd37cffd0c92311a717fc606
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d36b8a2117f91e43b0e4ecbbcce12cbe1c8cd2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119444515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266759"
 ---
 # <a name="multicastudpclientexample6"></a>MulticastUdpClientExample6
 
-En este ejemplo se muestra un cliente UDP que multidifusión de una solicitud y, a continuación, espera los mensajes de respuesta de los servidores, mediante IPv6.
+En este ejemplo se muestra un cliente UDP que multidifusión de una solicitud y, a continuación, espera los mensajes de respuesta de los servidores mediante IPv6.
 
 -   [MulticastUdpClient6.cpp](#multicastudpclient6cpp)
 -   [PurchaseOrder.wsdl](#purchaseorderwsdl)

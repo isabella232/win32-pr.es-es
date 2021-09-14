@@ -8,12 +8,12 @@ keywords:
 - ADSI del proveedor LDAP, ejemplos de administración de usuarios, contraseña nunca expira
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa48145fa2b78c7685cdf52ab58b1e681df48c7d10a80f0ac7462fa7d4cb868
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94c0d9eb42d37c1bcc7d65495fa0d72609060407
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117838935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174614"
 ---
 # <a name="password-never-expires-ldap-provider"></a>Contraseña nunca expira (proveedor LDAP)
 

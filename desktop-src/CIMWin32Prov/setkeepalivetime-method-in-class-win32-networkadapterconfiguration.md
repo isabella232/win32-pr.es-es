@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2aa9ea7474c3c53f2f073c263de0be987be3161704957105cdb2cca903706f95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1dc2674f3c09626749b4c7ac6151349401670e27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174082"
 ---
 # <a name="setkeepalivetime-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetKeepAliveTime de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método estático de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetKeepAliveTime** se usa para establecer la frecuencia con la que TCP intenta comprobar que una conexión inactiva sigue estando disponible mediante el envío de un paquete Keep Alive.
+El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetKeepAliveTime** se usa para establecer la frecuencia con la que TCP intenta comprobar que una conexión inactiva sigue estando disponible mediante el envío de un paquete Keep Alive.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 SetKeepAliveTime(
 *KeepAliveTime* \[ En\]
 </dt> <dd>
 
-Intervalo, en milisegundos, el TCP espera para comprobar que una conexión inactiva sigue disponible.
+Intervalo, en milisegundos, el TCP espera para comprobar que una conexión inactiva sigue estando disponible.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no es necesario reiniciar.
+Finalización correcta, no se requiere reinicio.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Finalización correcta, reinicio necesario.
 
 64
 
-Método no compatible con esta plataforma.
+Método no admitido en esta plataforma.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco o red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
@@ -404,19 +404,19 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el sistema remoto sigue siendo accesible y funcionando, confirmará la transmisión Keep Alive. Los paquetes Keep Alive no se envían de forma predeterminada. Una aplicación puede habilitar esta característica en una conexión.
+Si el sistema remoto sigue siendo accesible y funciona, confirmará la transmisión Keep Alive. Los paquetes Keep Alive no se envían de forma predeterminada. Una aplicación puede habilitar esta característica en una conexión.
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo Modify Keep Alive Time for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/35c1b0ac-285d-4baa-be6e-d3fb0b461676) VBScript (Modificar el tiempo de conexión de todos los adaptadores de red de VBScript) configura el tiempo de conexión de todos los adaptadores de red de un equipo en 300 000 milisegundos (5 minutos).
+El [ejemplo modify Keep Alive Time for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/35c1b0ac-285d-4baa-be6e-d3fb0b461676) VBScript (Modificar el tiempo de conexión para todos los adaptadores de red de VBScript) configura el tiempo de vida de todos los adaptadores de red de un equipo en 300 000 milisegundos (5 minutos).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -426,7 +426,7 @@ El [ejemplo Modify Keep Alive Time for All Network Adapters](https://Gallery.Tec
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -436,7 +436,7 @@ El [ejemplo Modify Keep Alive Time for All Network Adapters](https://Gallery.Tec
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

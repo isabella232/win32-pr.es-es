@@ -4,12 +4,12 @@ ms.assetid: b6aaafeb-30d1-453e-a70c-dcaa01fea1cf
 title: Directorio de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b77a7c63e234460394005aac416d41ff7845470139ba2cb8b700132bea0118c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee525e4d910de1c75516c6aaa27ca41a6cfa17c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118904834"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173354"
 ---
 # <a name="certificate-directory"></a>Directorio de certificados
 

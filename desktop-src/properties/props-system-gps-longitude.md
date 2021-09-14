@@ -4,12 +4,12 @@ ms.assetid: ef28141f-1b63-4694-b6df-fcc11ce7e50b
 title: System.GPS.Longitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf12d65c2776c3740360c4cb298048621a877d58999eaddd6e219c682e5a0c9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e65431412b0d46ad7b68100febd4d6e8efd31a17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267988"
 ---
 # <a name="systemgpslongitude"></a>System.GPS.Longitude
 
@@ -47,11 +47,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
-El requisito de una referencia de cadena indirecta específica para el atributo de labelInfo se agregó para Windows Vista con `label` Service Pack 1 (SP1). 
+El requisito de una referencia de cadena indirecta específica para el atributo de labelInfo se agregó `label` para Windows Vista con Service Pack 1 (SP1). 
 
 ## <a name="related-topics"></a>Temas relacionados
 

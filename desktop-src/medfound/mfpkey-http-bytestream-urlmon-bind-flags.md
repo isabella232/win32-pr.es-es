@@ -1,25 +1,25 @@
 ---
-description: Establece las marcas de enlace del moniker para la secuencia de bytes HTTP Microsoft Media Foundation.
+description: Establece las marcas de enlace del moniker para la Microsoft Media Foundation de bytes HTTP.
 ms.assetid: 9426D235-65E1-40BA-94E9-CF0C49263E6F
-title: Propiedad MFPKEY_HTTP_ByteStream_Urlmon_Bind_Flags (Mfidl. h)
+title: MFPKEY_HTTP_ByteStream_Urlmon_Bind_Flags propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 32863929b92f16a809468055db81361f8116196e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268999"
 ---
-# <a name="mfpkey_http_bytestream_urlmon_bind_flags-property"></a>MFPKEY \_ http \_ ByteStream \_ \_ propiedad flags de enlace de urlmon \_
+# <a name="mfpkey_http_bytestream_urlmon_bind_flags-property"></a>Propiedad MFPKEY \_ HTTP \_ ByteStream \_ Urlmon \_ Bind \_ Flags
 
-Establece las marcas de enlace del moniker para la secuencia de bytes HTTP Microsoft Media Foundation.
+Establece las marcas de enlace del moniker para la Microsoft Media Foundation de bytes HTTP.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
@@ -33,9 +33,9 @@ VT \_ UI4
 
 ## <a name="remarks"></a>Observaciones
 
-Utilice esta propiedad para configurar la secuencia de bytes HTTP Media Foundation. Para establecer la propiedad, pase un puntero [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) a la resolución de origen. Para obtener más información, consulte [configuración de un origen de medios](configuring-a-media-source.md).
+Use esta propiedad para configurar el flujo Media Foundation de bytes HTTP. Para establecer la propiedad , pase un [**puntero IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) al solucionador de origen. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
-El valor de esta propiedad es **una operación OR bit a bit** de las marcas de la enumeración **BINDF** . Esta propiedad solo se aplica cuando la propiedad [MFPKEY \_ http \_ ByteStream \_ enable \_ urlmon](mfpkey-http-bytestream-enable-urlmon.md) está establecida en **Variant \_ true**.
+El valor de esta propiedad es un **OR** bit a bit de marcas de la **enumeración BINDF.** Esta propiedad solo se aplica cuando la propiedad [ \_ MFPKEY HTTP \_ ByteStream Enable \_ \_ Urlmon](mfpkey-http-bytestream-enable-urlmon.md) está establecida en **VARIANT \_ TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,15 +43,15 @@ El valor de esta propiedad es **una operación OR bit a bit** de las marcas de l
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mfidl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

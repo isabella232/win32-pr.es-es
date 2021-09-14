@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d28fcbe9c437d686b4f19383635fcbd9d2e0b954359cdb4e0af1b66a11c16764
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5708c7ce80930c0924b560cc7b84e5af45ad7962
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119700055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174438"
 ---
 # <a name="settcpnumconnections-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpNumConnections de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpNumConnections** se usa para establecer el número máximo de conexiones que TCP puede tener abiertas simultáneamente.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 SetTcpNumConnections(
 *TcpNumConnections* \[ En\]
 </dt> <dd>
 
-Número máximo de conexiones que TCP puede tener abiertas simultáneamente. El intervalo válido de valores es 0 - 0xFFFFFE.
+Número máximo de conexiones que TCP puede tener abiertas simultáneamente. El intervalo válido de valores es 0- 0xFFFFFE.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no se requiere reinicio.
+Finalización correcta, no es necesario reiniciar.
 
 </dd> <dt>
 
@@ -73,12 +73,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión dhcp.
+No se puede renovar la concesión DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-Ip no habilitada en el adaptador.
+IP no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de fotograma no válido**
+**Tipo de marco no válido**
 </dt> <dd>
 
 87
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de límites.
+Parámetro fuera de los límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
@@ -406,13 +406,13 @@ DHCP no habilitado en el adaptador.
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo Modify the Allowed Number of TCP Connections](https://Gallery.TechNet.Microsoft.Com/016d09f3-28aa-47eb-b439-100b89999bab) VBScript (Modificar el número permitido de conexiones TCP de VBScript) establece el número máximo permitido de conexiones TCP abiertas simultáneamente en un equipo en 10.
+El [ejemplo Modificar el número permitido](https://Gallery.TechNet.Microsoft.Com/016d09f3-28aa-47eb-b439-100b89999bab) de conexiones TCP de VBScript establece el número máximo permitido de conexiones TCP abiertas simultáneamente en un equipo en 10.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -432,7 +432,7 @@ El [ejemplo Modify the Allowed Number of TCP Connections](https://Gallery.TechNe
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

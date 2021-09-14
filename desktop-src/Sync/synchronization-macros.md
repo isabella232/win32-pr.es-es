@@ -4,12 +4,12 @@ ms.assetid: d62901dd-c897-4f5e-8049-f69375bb7d8e
 title: Macros de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a857ae4b2ca4ffdd1bd41d67412fafee213258176ac3cf329c5ef97565b5208
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dae10856ada5bcdb75c5bb2876e828382b77478
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118885967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170746"
 ---
 # <a name="synchronization-macros"></a>Macros de sincronización
 

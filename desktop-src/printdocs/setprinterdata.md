@@ -17,12 +17,12 @@ api_location:
 - Winspool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 7b28c61030271b9de2e946fd59cddf5253a80cd4faec40ee66ceb2ae6cefdce3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36af84fe665d68fd7996a0b81fbbf291314cc69e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118233954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268356"
 ---
 # <a name="setprinterdata-function"></a>Función SetPrinterData
 
@@ -94,7 +94,7 @@ Si la función se realiza correctamente, el valor devuelto es **ERROR \_ SUCCESS
 
 Si se produce un error en la función, el valor devuelto es un valor de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
@@ -118,7 +118,7 @@ Si *hPrinter* es un identificador de un servidor de impresión, *pValueName* pue
 | **PRIORIDAD DEL SUBPROCESO DE PUERTO SPLREG \_ \_ \_**                                  |                                                                                                                                                                                                                                 |
 | **GRUPOS DE AISLAMIENTO \_ DE CONTROLADORES DE IMPRESIÓN \_ \_ DE \_ SPLREG**                        | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
 | **TIEMPO DE AISLAMIENTO DEL CONTROLADOR DE IMPRESIÓN SPLREG \_ \_ ANTES DEL \_ \_ \_ \_ RECICLAJE**         | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
-| **SPLREG PRINT DRIVER ISOLATION MAX OBJECTS BEFORE RECYCLE (OBJETOS MÁXIMOS DE AISLAMIENTO DEL CONTROLADOR DE IMPRESIÓN SPLREG \_ \_ ANTES DEL \_ \_ \_ \_ \_ RECICLAJE)** | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
+| **SPLREG \_ PRINT \_ DRIVER \_ ISOLATION \_ MAX \_ OBJECTS \_ BEFORE \_ RECYCLE** | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
 | **TIEMPO DE ESPERA DE \_ INACTIVIDAD DE \_ AISLAMIENTO DEL CONTROLADOR DE IMPRESIÓN \_ \_ \_ SPLREG**                 | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
 | **DIRECTIVA DE EJECUCIÓN DE \_ AISLAMIENTO DEL CONTROLADOR DE IMPRESIÓN \_ \_ \_ SPLREG \_**             | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
 | **DIRECTIVA DE INVALIDACIÓN \_ DEL AISLAMIENTO DEL CONTROLADOR DE IMPRESIÓN \_ \_ \_ SPLREG \_**              | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
@@ -144,7 +144,7 @@ Los siguientes valores de *pValueName determinan* el comportamiento de impresió
 
  
 
-El tiempo especificado en **SPLREG \_ RESTART JOB ON POOL \_ \_ \_ \_ ERROR** es un tiempo mínimo. El tiempo real puede ser mayor, dependiendo de la siguiente configuración del monitor de puerto, que son valores del Registro en esta clave del Registro:
+El tiempo especificado en **SPLREG \_ RESTART JOB ON POOL \_ \_ \_ \_ ERROR** es un tiempo mínimo. El tiempo real puede ser mayor, dependiendo de la siguiente configuración del monitor de puerto, que son los valores del Registro bajo esta clave del Registro:
 
 **HKLM \\ SYSTEM \\ CurrentControlSet \\ Control Print Monitors Monitor \\ \\ \\ < *Ports* > \\**
 
@@ -161,7 +161,7 @@ Llame a [**la función RegSetValueEx**](/windows/win32/api/winreg/nf-winreg-regs
 
  
 
-En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que se envían a un servidor de impresión se representan en el cliente de forma predeterminada. La representación del lado cliente de un trabajo de impresión se puede configurar para cada impresora estableciendo los valores siguientes en *pValueName*.
+En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que se envían a un servidor de impresión se representan en el cliente de forma predeterminada. La representación del lado cliente de un trabajo de impresión se puede configurar para cada impresora estableciendo los siguientes valores en *pValueName*.
 
 
 
@@ -178,7 +178,7 @@ En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -189,7 +189,7 @@ En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 59b8f55ebb5543c73e0d7a9c9ee800fabfc483d8
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370502"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074232"
 ---
 # <a name="icm_decompress_begin-message"></a>\_ICM Mensaje BEGIN de \_ DECOMPRESS
 
@@ -62,7 +62,7 @@ Cuando el controlador recibe este mensaje, debe asignar búferes y realizar las 
 
 Si desea que el controlador descomprima los datos directamente en la pantalla, envíe el [**ICM \_ DRAW.**](icm-draw.md)
 
-Los **ICM \_ DECOMPRESS \_ BEGIN** [**y ICM \_ end de \_ DECOMPRESS**](icm-decompress-end.md) no anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con **ICM \_ DECOMPRESS \_ END**, debe reiniciar la descompresión con nuevos parámetros.
+Los **ICM \_ DECOMPRESS \_ BEGIN** [**y ICM \_ end de \_ DECOMPRESS**](icm-decompress-end.md) no se anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con **ICM \_ DECOMPRESS \_ END**, debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Los **ICM \_ DECOMPRESS \_ BEGIN** [**y ICM \_ end de \_ DECOMPRESS**](icm-decom
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

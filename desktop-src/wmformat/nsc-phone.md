@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5621ab3f1eddecb9ca24cf2780dcafa50718de2c4ecc1558d6ea52248a26870
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 40417d750b60b9fcfcfbd5522d42a453ee07af96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117654471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266996"
 ---
 # <a name="nsc_phone"></a>NSC \_ Teléfono
 
@@ -29,16 +29,16 @@ g \_ wszWMNSCPhone
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE TIPO WMT \_ \_**
+**CADENA DE \_ TIPO \_ WMT**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Lista de atributos**](attribute-list.md)
 </dt> <dt>
 
-[**Atributos de estación de multidifusión**](multicast-station-attributes.md)
+[**Atributos de la estación de multidifusión**](multicast-station-attributes.md)
 </dt> </dl>
 
  

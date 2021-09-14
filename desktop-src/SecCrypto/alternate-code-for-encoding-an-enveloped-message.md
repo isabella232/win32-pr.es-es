@@ -4,12 +4,12 @@ ms.assetid: ba174e3c-bc2f-48bd-a1bf-fec491dc0ce3
 title: Código alternativo para codificar un mensaje con sobres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e80c57b5de2191809e3e3ec9df439f6a30a4e17d1442ea6775394c210d1ada0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f974623c526603744bf2b0179352605ed783056
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117773699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173293"
 ---
 # <a name="alternate-code-for-encoding-an-enveloped-message"></a>Código alternativo para codificar un mensaje con sobres
 
@@ -29,7 +29,7 @@ En este ejemplo se muestran las siguientes funciones de CryptoAPI:
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 -   [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
-En este ejemplo también se usan las [**funciones MyHandleError**](myhandleerror.md) y [**GetSignerCert**](getsignercert.md). El código de C para estas funciones se incluye en el ejemplo. Para obtener código que muestra estas y otras funciones auxiliares, [vea De uso general Functions](general-purpose-functions.md).
+En este ejemplo también se usan las [**funciones MyHandleError**](myhandleerror.md) [**y GetSignerCert**](getsignercert.md). El código de C para estas funciones se incluye en el ejemplo. Para obtener código que muestra estas y otras funciones auxiliares, [vea De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

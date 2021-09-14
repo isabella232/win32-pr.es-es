@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 896d282426c11f40fe949c73f44eb963a399c5c210e839198527f9bc903e2fdf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c3121d15b1482bdedf19a814a42e3309265909f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118413698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173905"
 ---
 # <a name="cben_getdispinfo-notification-code"></a>Código de \_ notificación GETDISPINFO de CBEN
 
@@ -51,9 +51,9 @@ Puntero a una [**estructura NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-com
 
 La aplicación que procesa este código de notificación debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La [**estructura NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) contiene una [**estructura COMBOBOXEXITEM.**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) El **miembro** mask especifica la información solicitada por el control.
+La [**estructura NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) contiene una [**estructura COMBOBOXEXITEM.**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) El **miembro** mask especifica la información solicitada por el control .
 
 Rellene los miembros adecuados de la estructura para devolver la información solicitada al control. Si el controlador de mensajes establece el miembro **mask** de la estructura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) en CBEIF DI SETITEM, el control almacena la información y no la \_ \_ volverá a solicitar.
 
@@ -61,11 +61,11 @@ Rellene los miembros adecuados de la estructura para devolver la información so
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **CBEN \_ GETDISPINFOW** (Unicode) y **CBEN \_ GETDISPINFOA** (ANSI)<br/>         |
 
 

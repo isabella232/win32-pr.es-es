@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3640ff73eeadd1bf59eecc29045b0434f0885b7dc1eef319d6e6ee040442abdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8409cec50089111184f96e4463f57cc9c4fbae07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170542"
 ---
 # <a name="iwmpnetworkframesskipped-property"></a>IWMPNetwork::framesSkipped, propiedad
 
 La **propiedad framesSkipped** obtiene el número total de fotogramas omitido durante la reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp

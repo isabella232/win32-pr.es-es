@@ -4,12 +4,12 @@ ms.assetid: 9d1f52ef-ff49-4c0d-a48a-93aeccbe7f2b
 title: WPCEVENT_EMAIL_CONTACT evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d84a450c53705dae2db777081f7177f43505e0481ae38a67c1b90e507fa4a5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0974030e53756b44f2be2e8550707161f2d6d461
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268420"
 ---
 # <a name="wpcevent_email_contact-event"></a>Evento WPCEVENT \_ EMAIL \_ CONTACT
 
@@ -43,7 +43,7 @@ Versión de la aplicación de correo electrónico que genera el evento.
 *OldName* 
 </dt> <dd>
 
-Nombre de la cuenta de correo electrónico anterior, si se ha eliminado o cambiado.
+El nombre de la cuenta de correo electrónico anterior, si se elimina o cambia.
 
 </dd> <dt>
 
@@ -90,11 +90,11 @@ Nombre de la cuenta de correo electrónico de este usuario.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
 description: Microsoft proporciona el paquete de autenticación MSV1 0 para los inicios de sesión de máquina \_ local que no requieren autenticación personalizada.
 ms.assetid: 8b85588d-0a79-43af-b526-7a5fc8248f99
-title: MSV1_0 de autenticación
+title: MSV1_0 Authentication Package
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12366ecf2ce213b1221fe310e77f9f019c859c038a47d332c8b702639662bc53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 662ae65f60bec61c30b12271a34dc9d3c2883d94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118921760"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173457"
 ---
 # <a name="msv1_0-authentication-package"></a>Paquete de autenticación MSV1 \_ 0
 

@@ -4,12 +4,12 @@ ms.assetid: 46af4c11-042c-4580-ba9d-3aee6172de56
 title: MF_TOPOLOGY_PLAYBACK_MAX_DIMS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e98575a32b1d68414cb4d94a547273aa4986e03dc707023d5c40f9860b77b5a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d1fc6a57c5e031bc6f35f36e688bd44986f541b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119604785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269071"
 ---
 # <a name="mf_topology_playback_max_dims-attribute"></a>Atributo DIMS MAX DE REPRODUCCIÓN DE TOPOLOGÍA \_ \_ \_ \_ MF
 
@@ -29,7 +29,7 @@ Para establecer este atributo, llame a [**MFSetAttributeSize**](/windows/desktop
 
 [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El cargador de topologías usa este atributo para optimizar la canalización antes de que se inicie la reproducción. Si establece este atributo, establezca también el atributo [ \_ MF TOPOLOGY STATIC PLAYBACK \_ \_ \_ OPTIMIZATIONS](mf-topology-static-playback-optimizations.md) en **TRUE.**
 
@@ -41,15 +41,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

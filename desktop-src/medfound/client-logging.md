@@ -5,17 +5,17 @@ title: Registro de cliente (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3874c413f61b3495dc7e67f082a83e789a7a1357
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122483091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269356"
 ---
 # <a name="client-logging-microsoft-media-foundation"></a>Registro de cliente (Microsoft Media Foundation)
 
 El origen de red admite el registro de cliente, que proporciona una manera de que el servidor multimedia realice un seguimiento de la actividad de los clientes que se conectan a él. Los registros de cliente permiten a un servidor registrar estadísticas de conexión, representación y streaming. Estos registros los pueden usar los proveedores de contenido en varios escenarios, como para realizar un seguimiento del uso del servidor multimedia y generar facturación, o para entregar contenido de calidad adecuada en función de la velocidad de la red del cliente.
 
-Un archivo de registro contiene varias entradas de eventos de cliente. Cada entrada de registro contiene una serie de campos delimitados por espacios. Hay dos tipos de registros de cliente: *representación* (reproducción) y *streaming* (recepción). Dado que el contenido se puede reproducir y transmitir simultáneamente, el cliente puede enviar una combinación de ambos tipos de datos de registro. En algunos casos, pueden existir dos entradas de registro para la misma sesión. Por ejemplo, cuando fast cache está habilitado, el cliente puede terminar de recibir el contenido transmitido antes de terminar de representarlo. En ese caso, los datos de registro de streaming se enviarían antes que los datos de registro de representación.
+Un archivo de registro contiene varias entradas de eventos de cliente. Cada entrada de registro contiene una serie de campos delimitados por espacios. Hay dos tipos de registros de cliente: *representación* (reproducción) y *streaming* (recepción). Dado que el contenido se puede reproducir y transmitir simultáneamente, el cliente puede enviar una combinación de ambos tipos de datos de registro. En algunos casos, pueden existir dos entradas de registro para la misma sesión. Por ejemplo, cuando Fast Cache está habilitado, el cliente puede terminar de recibir el contenido transmitido antes de terminar de representarlo. En ese caso, los datos de registro de streaming se enviarían antes que los datos de registro de representación.
 
 El cliente envía los datos de registro de representación al servidor cuando el cliente cambia de cualquier estado de reproducción (reproducción, avance rápido o rebobinado) a un estado no reproduciendo (detenerse, pausar, finalizar la secuencia e iniciar la secuencia). Cuando se envían datos para un registro de representación, se realiza una conexión directamente al servidor multimedia o a un servidor proxy configurado.
 
@@ -23,13 +23,13 @@ Si el contenido se almacena en un archivo de caché local temporal en el equipo 
 
 El cliente envía datos de registro de streaming al servidor para indicar cómo el cliente recibió el contenido, pero no cómo se representó. El cliente puede enviar el registro de streaming mucho antes de que el cliente termine de representar el contenido.
 
-En este tema no se proporciona información sobre todos los campos de registro. Para obtener una referencia completa, vea [Windows estructura de datos de registro multimedia](/openspecs/windows_protocols/ms-wmlog/42c620eb-0d77-4350-b070-bcd1e182fe84).
+En este tema no se proporciona información sobre todos los campos de registro. Para obtener una referencia completa, [vea Windows estructura de datos de registro multimedia](/openspecs/windows_protocols/ms-wmlog/42c620eb-0d77-4350-b070-bcd1e182fe84).
 
 ## <a name="configuring-log-fields"></a>Configuración de campos de registro
 
 Media Foundation permite al cliente configurar el origen de red mediante propiedades. La aplicación debe establecer las propiedades adecuadas en un almacén de propiedades y pasarla a uno de los métodos de resolución de origen. El solucionador de origen crea el origen de red como se solicitó y abre una conexión con el servidor. Si la conexión es correcta, el cliente envía información sobre sí mismo.
 
-En la tabla siguiente se describen los campos de registro y las propiedades correspondientes que una aplicación puede establecer a través de la resolución de origen. Esta información no cambia durante la sesión.
+En la tabla siguiente se describen los campos de registro y las propiedades correspondientes que una aplicación puede establecer a través del solucionador de origen. Esta información no cambia durante la sesión.
 
 
 
@@ -40,7 +40,7 @@ En la tabla siguiente se describen los campos de registro y las propiedades corr
 | c-playerversion | Número de versión del reproductor que se envía al principio de la conexión. El cliente puede enviar esta información al servidor en la <a href="mfnetsource-playerversion-property.md"><strong>MFNETSOURCE_PLAYERVERSION</strong></a> propiedad .<br /> El cliente envía esta información al servidor al principio de la conexión.<br /> | 
 | cs(User-Agent) | Tipo de explorador usado si el reproductor se insertó en un explorador. El cliente puede establecer este valor en la <a href="mfnetsource-browseruseragent-property.md"><strong>MFNETSOURCE_BROWSERUSERAGENT</strong></a> propiedad .<br /> Si el reproductor no está incrustado, este campo hace referencia al agente de usuario del cliente que generó el registro. En este caso, el cliente debe establecer la <a href="mfnetsource-playeruseragent-property.md"><strong>MFNETSOURCE_PLAYERUSERAGENT</strong></a> propiedad .<br /> El cliente envía esta información al servidor al principio de la conexión.<br /> Valor de ejemplo: "Mozilla/4.0_(compatible;_MSIE_4.01;_Windows_98)"<br /> | 
 | cs(Referer) | Dirección URL de la página web en la que se insertó el reproductor (si se insertó). El cliente puede enviar esta información al servidor en la <a href="mfnetsource-browserwebpage-property.md"><strong>MFNETSOURCE_BROWSERWEBPAGE</strong></a> propiedad .<br /> El cliente envía esta información al servidor al final de la conexión.<br /> Valor de ejemplo: " https://www.example.microsoft.com "<br /> | 
-| c-hostexe | Para las entradas de registro del reproductor, el programa host (.exe) que se ha ejecutado. Por ejemplo, una página web en un explorador, un applet Visual Basic microsoft o un reproductor independiente. El cliente puede enviar esta información al servidor en la <a href="mfnetsource-hostexe-property.md"><strong>MFNETSOURCE_HOSTEXE</strong></a> propiedad .<br /> El cliente envía esta información al servidor al final de la conexión.<br /> Valores de ejemplo:<br /><ul><li>"iexplore.exe"</li><li>"myplayer.exe"</li></ul> | 
+| c-hostexe | Para las entradas de registro del reproductor, el programa host (.exe) que se ha ejecutado. Por ejemplo, una página web en un explorador, un applet Visual Basic Microsoft o un reproductor independiente. El cliente puede enviar esta información al servidor en la <a href="mfnetsource-hostexe-property.md"><strong>MFNETSOURCE_HOSTEXE</strong></a> propiedad .<br /> El cliente envía esta información al servidor al final de la conexión.<br /> Valores de ejemplo:<br /><ul><li>"iexplore.exe"</li><li>"myplayer.exe"</li></ul> | 
 | c-hostexever | Número de versión del programa host (.exe). El cliente puede enviar esta información al servidor en la <a href="mfnetsource-hostversion-property.md"><strong>MFNETSOURCE_HOSTVERSION</strong></a> propiedad .<br /> El cliente envía esta información al servidor al final de la conexión.<br /> | 
 
 
@@ -139,24 +139,24 @@ HRESULT GetPacketsReceived(IMFMediaSession *pSession, DWORD *pcPackets)
 
 
 
-En la lista siguiente se describen algunos de los identificadores de estadísticas de red definidos en [**MFNETSOURCE \_ STATISTICS \_ IDS**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids).
+En la lista siguiente se describen algunos de los identificadores de estadísticas de red definidos en [**MFNETSOURCE \_ \_ STATISTICS IDS**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids).
 
 
 
 | Identificador de estadísticas de red              | Descripción                                                                                                                                                                                                                |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **ID. \_ DE AVGBANDWIDTHBPS DE \_ MFNETSOURCE**       | Ancho de banda medio (en bits por segundo) en el que el cliente estaba conectado al servidor. El valor se calcula a lo largo de toda la duración de la conexión.                                                              |
-| **ID. \_ DE MFNETSOURCE \_ BUFFERINGCOUNT**        | Número de veces que el cliente ha almacenado en búfer durante la reproducción de la secuencia.                                                                                                                                                              |
+| **ID. \_ DE MFNETSOURCE \_ BUFFERINGCOUNT**        | Número de veces que el cliente se almacena en búfer mientras se reproduce la secuencia.                                                                                                                                                              |
 | **MFNETSOURCE \_ BYTESRECEIVED \_ ID**         | Número de bytes recibidos por el cliente del servidor. El valor no incluye ninguna sobrecarga agregada por la pila de red. El mismo contenido transmitido mediante protocolos diferentes puede dar lugar a valores diferentes. |
 | **ID. DE \_ MFNETSOURCE LINKBANDWIDTH \_**         | Ancho de banda máximo disponible del cliente en bits por segundo.                                                                                                                                                              |
 | **ID. \_ DE LOSTPACKETS DE MFNETSOURCE \_**           | Número de paquetes enviados por el servidor pero perdidos durante la transmisión y nunca reproducida por el cliente. El valor no incluye paquetes TCP o UDP.                                                                          |
 | **ID. \_ DE RECVPACKETS DE MFNETSOURCE \_**           | Número de paquetes recibidos del servidor El valor no incluye paquetes TCP o UDP.                                                                                                                                  |
 | **ID. \_ DE MFNETSOURCE RECOVEREDBYECCPACKETS \_** | Paquetes perdidos en la red que se repararon y recuperaron en la capa de cliente. Este valor no incluye paquetes TCP o UDP.                                                                                          |
 | **ID. \_ DE RESENDSREQUESTED DE \_ MFNETSOURCE**      | Número de solicitudes realizadas por el cliente para recibir nuevos paquetes. Este valor no incluye paquetes TCP o UDP.                                                                                                          |
-| **ID. \_ DE MFNETSOURCE RECOVEREDPACKETS \_**      | Número de paquetes recuperados porque se han reenviado a través de UDP. Este valor no incluye paquetes TCP o UDP. Este campo contiene un cero a menos que el cliente use el reenenlaz de UDP.                                        |
+| **MFNETSOURCE \_ RECOVEREDPACKETS \_ ID**      | Número de paquetes recuperados porque se han reenviado a través de UDP. Este valor no incluye paquetes TCP o UDP. Este campo contiene un cero a menos que el cliente use el reenenlaz de UDP.                                        |
 | **ID. \_ DE BUFFERPROGRESS DE \_ MFNETSOURCE**        | Porcentaje del búfer de reproducción rellenado durante el almacenamiento en búfer.                                                                                                                                                              |
-| **ID. DE \_ PROTOCOLO \_ MFNETSOURCE**              | Protocolo utilizado para acceder a la secuencia. Esto puede diferir del protocolo solicitado por el cliente.                                                                                                                             |
-| **ID. DE \_ TRANSPORTE DE MFNETSOURCE \_**             | Protocolo de transporte utilizado para entregar la secuencia. Debe ser UDP o TCP.                                                                                                                                             |
+| **ID. DE \_ PROTOCOLO \_ MFNETSOURCE**              | Protocolo usado para acceder a la secuencia. Esto puede diferir del protocolo solicitado por el cliente.                                                                                                                             |
+| **ID. DE \_ TRANSPORTE DE MFNETSOURCE \_**             | Protocolo de transporte usado para entregar la secuencia. Debe ser UDP o TCP.                                                                                                                                             |
 
 
 

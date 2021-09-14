@@ -5,15 +5,15 @@ ms.assetid: ea6d8696-fd43-4d3c-bfec-3602658a08a7
 keywords:
 - UnTypedClientExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72c7a7148705eba20485c852ea7dcaa45e820e1efb06af067dc8a64ac1cf251a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d66e1fcb2a26ddb0f55aa87f0aa6c4a3ace3a945
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120109815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266751"
 ---
 # <a name="untypedclientexample"></a>UnTypedClientExample
 

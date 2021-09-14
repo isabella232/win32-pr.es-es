@@ -10,16 +10,16 @@ keywords:
 - GDI (Interfaz de dispositivo gráfico)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bd7fca876f560b9f791f80e3e97ccd57d232aa6f038cea5189c36b10c787a8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41c7c99e6bfac0aabddd4a1568b64cd425ccb25b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119902665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274916"
 ---
 # <a name="interoperating-with-gdi"></a>Interoperación con GDI
 
-[DirectWrite](direct-write-portal.md) proporciona una ruta de migración del modelo de fuente de GDI y cierta interoperabilidad con él, así como interfaces para representar texto en un mapa de bits que se puede dibujar en una ventana.
+[DirectWrite](direct-write-portal.md) proporciona una ruta de migración a partir del modelo de fuente de GDI y cierta interoperabilidad con él, así como interfaces para representar texto en un mapa de bits que se puede dibujar en una ventana.
 
 Esta información general contiene las siguientes partes:
 
@@ -30,11 +30,11 @@ Esta información general contiene las siguientes partes:
 
 ## <a name="introduction"></a>Introducción
 
-[DirectWrite](direct-write-portal.md) proporciona métodos para convertir entre la estructura LOGFONT de GDI y DirectWrite interfaces de fuente. Esto le permite usar GDI para algunas o todas las enumeraciones y selecciones de fuentes, al tiempo que aprovecha la funcionalidad mejorada y el rendimiento de DirectWrite. DirectWrite también tiene interfaces para representar en un mapa de bits si desea mostrar texto en una superficie GDI.
+[DirectWrite](direct-write-portal.md) proporciona métodos para convertir entre la estructura LOGFONT de GDI y DirectWrite interfaces de fuente. Esto le permite usar GDI para algunas o todas las enumeraciones y selecciones de fuentes, al tiempo que aprovecha la funcionalidad y el rendimiento mejorados de DirectWrite. DirectWrite interfaces para representar un mapa de bits si desea mostrar texto en una superficie GDI.
 
 ## <a name="part-1-idwritegdiinterop"></a>Parte 1: IDWriteGdiInterop
 
-La [**interfaz IDWriteGdiInterop**](/windows/win32/api/dwrite/nn-dwrite-idwritegdiinterop) se usa para convertir [](direct-write-portal.md) entre estructuras de fuentes GDI e interfaces de fuente DirectWrite, y también para crear un objeto [**IDWriteBitmapRenderTarget.**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) Obtenga un **objeto IDWriteGdiInterop** mediante el método [**IDWriteFactory::GetGdiInterop,**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-getgdiinterop) como se muestra en el código siguiente.
+La [**interfaz IDWriteGdiInterop**](/windows/win32/api/dwrite/nn-dwrite-idwritegdiinterop) se usa para convertir entre estructuras de fuentes GDI e interfaces de fuente [DirectWrite,](direct-write-portal.md) y también para crear un objeto [**IDWriteBitmapRenderTarget.**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) Obtenga un **objeto IDWriteGdiInterop** mediante el método [**IDWriteFactory::GetGdiInterop,**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-getgdiinterop) como se muestra en el código siguiente.
 
 
 ```C++
@@ -49,7 +49,7 @@ if (SUCCEEDED(hr))
 
 ## <a name="part-2-font-objects"></a>Parte 2: Objetos de fuente
 
-GDI usa la estructura LOGFONT para almacenar información sobre la fuente y el estilo de texto. El [**método IDWriteGdiInterop::CreateFontFromLOGFONT**](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createfontfromlogfont) convertirá una estructura LOGFONT en un objeto [**IDWriteFont,**](/windows/win32/api/dwrite/nn-dwrite-idwritefont) como se muestra en el código siguiente.
+GDI usa la estructura LOGFONT para almacenar información sobre la fuente y el estilo del texto. El [**método IDWriteGdiInterop::CreateFontFromLOGFONT**](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createfontfromlogfont) convertirá una estructura LOGFONT en un objeto [**IDWriteFont,**](/windows/win32/api/dwrite/nn-dwrite-idwritefont) como se muestra en el código siguiente.
 
 
 ```C++

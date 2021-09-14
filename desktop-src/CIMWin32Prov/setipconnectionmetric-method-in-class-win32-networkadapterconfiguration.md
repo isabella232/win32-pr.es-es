@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 08e27a392ac4b6b31849f0863fa8149730bbfcec5fc4c1fec0e15a4919509f70
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 73d6dde0a8faea2aeaf0982459e3c377bb1ac51d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174089"
 ---
 # <a name="setipconnectionmetric-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPConnectionMetric de la clase \_ NetworkAdapterConfiguration de Win32
 
 El **método SetIPConnectionMetric** se usa para establecer la métrica de enrutamiento asociada a este adaptador enlazado a IP.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,12 +73,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92

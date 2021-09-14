@@ -1,5 +1,5 @@
 ---
-description: La clase WMI MemoryDevice de Win32 representa las propiedades de un dispositivo de memoria del sistema del \_ equipo y sus direcciones asignadas asociadas.
+description: La clase WMI MemoryDevice de Win32 representa las propiedades de un dispositivo de memoria del sistema del equipo \_ y sus direcciones asignadas asociadas.
 ms.assetid: d609dca5-2f5f-4f23-8fcc-bcc197d6c24b
 ms.tgt_platform: multiple
 title: Win32_MemoryDevice clase
@@ -55,12 +55,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f0034eadf00819ab5e31d066d585425ca9902ec5e17ec83b973783f5109283ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 277b868f1b92b9f7c6a0c520c77ab76fac6b544d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174017"
 ---
 # <a name="win32_memorydevice-class"></a>Clase MemoryDevice de Win32 \_
 
@@ -116,7 +116,7 @@ class Win32_MemoryDevice : Win32_SMBIOSMemory
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ MemoryDevice de Win32** tiene estos tipos de miembros:
 
@@ -923,7 +923,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dirección final asignada al dispositivo de memoria SMBIOS \| 19") \| \|
 </dt> </dl>
 
-Dirección final a la que hace referencia una aplicación o sistema operativo. Un controlador de memoria asigna esta dirección de memoria para este objeto de memoria.
+Dirección final a la que hace referencia una aplicación o sistema operativo. Una controladora de memoria asigna esta dirección de memoria para este objeto de memoria.
 
 Esta propiedad se hereda de [**Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
@@ -940,7 +940,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Operación de error de información de error de memoria de tipo SMBIOS \| 18 de \| 32 \| bits")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Operación de error de información de error de memoria de 32 bits de tipo SMBIOS \| \| \| 18")
 </dt> </dl>
 
 Tipo de operación de acceso a memoria que produjo el último error. Esta propiedad solo es válida cuando **ErrorInfo** no está establecido en 3.
@@ -995,7 +995,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dirección de error de información de error de memoria de tipo SMBIOS \| 18 \| de 32 \| bits")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dirección de error de información de error de memoria de 32 bits de tipo SMBIOS \| \| \| 18")
 </dt> </dl>
 
 Dirección del último error de memoria. Esta propiedad solo se usa cuando **ErrorInfo** no está establecido en 3.
@@ -1150,7 +1150,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Memoria CIM \_**](cim-memory.md).**OtherErrorDescription**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo SMBIOS \| 18 32 bits Tipo de error de información de error de \| \| memoria")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Memory**](cim-memory.md).**OtherErrorDescription**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 18 \| 32-bit Memory Error Information \| Error Type")
 </dt> </dl>
 
 Tipo de error que se produjo más recientemente. Los valores 12-14, que indican si se puede corregir un error, no se usan con esta propiedad, pero esta información se encuentra en la **propiedad CorrectableError.**
@@ -1203,7 +1203,7 @@ Esta propiedad se hereda de [**Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 <span id="Double-Bit_Error"></span><span id="double-bit_error"></span><span id="DOUBLE-BIT_ERROR"></span>
 
-**Error de doble bit** (7)
+**Error de doble bits** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -1252,7 +1252,7 @@ Esta propiedad se hereda de [**Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 <span id="Uncorrectable_error"></span><span id="uncorrectable_error"></span><span id="UNCORRECTABLE_ERROR"></span>
 
-**Error irrecorrible** (14)
+**Error irrecorrectable** (14)
 
 
 </dt> <dd></dd> </dl>
@@ -1288,7 +1288,7 @@ Los valores son:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -1352,11 +1352,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 18 \| 32-bit Memory Error \| Information Error Resolution"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Cantidad de datos determinados realmente para provocar el error. Esta propiedad no se usa cuando la **propiedad ErrorInfo** se establece en 3.
+Cantidad de datos determinada realmente para provocar el error. Esta propiedad no se usa cuando la **propiedad ErrorInfo** se establece en 3.
 
 Esta propiedad se hereda de [**Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -1387,7 +1387,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
 Tamaño de los datos (que contienen el último error) que se transfieren. Esta propiedad se establece en 0 (cero) si no hay ningún error.
@@ -1425,7 +1425,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1438,7 +1438,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1459,11 +1459,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
 </dt> </dl>
 
-Número total de bloques consecutivos, cada uno de los cuales bloquea el tamaño del valor contenido en la **propiedad BlockSize,** que forman esta extensión de almacenamiento. El tamaño total de la extensión de almacenamiento se puede calcular multiplicando el valor de la propiedad **BlockSize** por el valor de esta propiedad. Si el valor de **BlockSize** es 1, esta propiedad es el tamaño total de la extensión de almacenamiento.
+Número total de bloques consecutivos, cada uno de los cuales bloquea el tamaño del valor contenido en la **propiedad BlockSize,** que forman esta extensión de almacenamiento. El tamaño total de la extensión de almacenamiento se puede calcular multiplicando el valor de la **propiedad BlockSize** por el valor de esta propiedad. Si el valor de **BlockSize** es 1, esta propiedad es el tamaño total de la extensión de almacenamiento.
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -1476,7 +1476,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Memoria CIM \_**](cim-memory.md).**ErrorInfo**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Memory**](cim-memory.md).**ErrorInfo**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS")
 </dt> </dl>
 
 Más información cuando la **propiedad ErrorInfo** se establece en 1.
@@ -1499,7 +1499,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 Ejemplo: \* "PNP030b"
 
@@ -1570,7 +1570,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1662,7 +1662,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1693,7 +1693,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -1865,7 +1865,7 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ MemoryDevice de Win32** se deriva de [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
 

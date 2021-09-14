@@ -4,12 +4,12 @@ ms.assetid: f9a36315-083c-4ebb-9d36-d55fc1f21621
 title: MFNETSOURCE_CACHEENABLED propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6954359ed91fe402d785fec9e63f470c31abc85432e519b2e06bcb1d679933dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ad6f38398e44eaa25da7a5b1f88a76edb8e40924
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120113635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269047"
 ---
 # <a name="mfnetsource_cacheenabled-property"></a>Propiedad MFNETSOURCE \_ CACHEENABLED
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La constante **MFNETSOURCE \_ CACHEENABLED** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
@@ -47,11 +47,11 @@ El valor predeterminado de esta propiedad es **TRUE.**
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

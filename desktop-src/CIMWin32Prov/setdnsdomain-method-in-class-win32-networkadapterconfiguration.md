@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a5fd02168c19a5424ef455380bd9e1251f2e8f6c48a9dd8ea5ec4e9e1a1b1e4d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c440d8cb5c720bf6922707f04bc75e2383755c1e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174469"
 ---
 # <a name="setdnsdomain-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDNSDomain de la clase NetworkAdapterConfiguration de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDNSDomain** permite establecer el dominio DNS.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,12 +75,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -314,7 +314,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -323,11 +323,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -381,7 +381,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
@@ -406,17 +406,17 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se trata de una llamada al método dependiente de la instancia que se aplica por adaptador. La configuración se aplica al adaptador de destino.
+Se trata de una llamada de método dependiente de la instancia que se aplica por adaptador. La configuración se aplica al adaptador de destino.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de [código DE](https://Gallery.TechNet.Microsoft.Com/6044a0a4-d320-4c18-a94b-c125796d219b) VBScript Asignar el dominio DNS para un adaptador de red en la galería de TechNet usa **SetDNSDomain** para establecer el dominio DNS para un adaptador de red enlazado a TCP/IP.
+El ejemplo de [código DESCRIPT](https://Gallery.TechNet.Microsoft.Com/6044a0a4-d320-4c18-a94b-c125796d219b) Asignar el dominio DNS para un adaptador de red en la galería de TechNet usa **SetDNSDomain** para establecer el dominio DNS de un adaptador de red enlazado a TCP/IP.
 
 El [ejemplo de código Modify the TCP/IP Configuration for a Computer](https://Gallery.TechNet.Microsoft.Com/3d5ae334-1d75-4cea-8079-78c6bd836faf) VBScript de la Galería de TechNet usa **SetDNSDomain** para modificar la configuración de TCP/IP para un adaptador de red.
 
-El [ejemplo Habilitar dhcp Configuración](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) en un equipo VBScript en la Galería de TechNet usa **SetDNSDomain** para configurar todas las opciones que normalmente se necesitan para habilitar DHCP en un equipo.
+El [ejemplo Enable DHCP Configuración on a Computer](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) VBScript sample on TechNet Gallery (Habilitar dhcp en un equipo VBScript en la Galería de TechNet) usa **SetDNSDomain** para configurar todas las opciones que normalmente se requieren para habilitar DHCP en un equipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -442,7 +442,7 @@ El [ejemplo Habilitar dhcp Configuración](https://Gallery.TechNet.Microsoft.Com
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

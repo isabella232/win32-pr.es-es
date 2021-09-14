@@ -1,5 +1,5 @@
 ---
-description: El método PreparePerformanceData establece los valores m \_ trLate y m \_ trFrame del marco actual.
+description: El método PreparePerformanceData establece los valores \_ m trLate y m \_ trFrame del marco actual.
 ms.assetid: c4c5701b-eccd-4259-a1d1-7c5000f6b2df
 title: Método CBaseVideoRenderer.PreparePerformanceData (Renbase.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8cb276b37e64b6bb34751ed2d034666f7ceeddd90d8e52e47b2a1fca499ff9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12dd61dee7416ce8ca7ac07cba62cbc769df5973
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118658339"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173782"
 ---
 # <a name="cbasevideorendererprepareperformancedata-method"></a>Método CBaseVideoRenderer.PreparePerformanceData
 
@@ -46,7 +46,7 @@ void PreparePerformanceData(
 *trLate* 
 </dt> <dd>
 
-Valor que indica el retraso de la muestra más allá de su tiempo de vencimiento, en unidades de tiempo de referencia.
+Valor que indica el retraso de la muestra más allá de su tiempo debido, en unidades de tiempo de referencia.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función miembro establece **m \_ trLate en** el valor de *trLate* y **m \_ trFrame** en el valor *de trFrame*.
+Esta función miembro establece **m \_ trLate en** el valor de *trLate* y **m \_ trFrame** en el valor de *trFrame*.
 
 Cuando se llama a la función miembro [**CBaseVideoRenderer::RecordFrameLateness**](cbasevideorenderer-recordframelateness.md) desde [**CBaseVideoRenderer::OnRenderStart**](cbasevideorenderer-onrenderstart.md) o [**CBaseVideoRenderer::OnDirectRender**](cbasevideorenderer-ondirectrender.md), pasa los valores **de m \_ trLate** y **m \_ trFrame** para que actualice las estadísticas. `PreparePerformanceData` Se llama desde [**CBaseVideoRenderer::OnWaitEnd para**](cbasevideorenderer-onwaitend.md) establecer estos valores de miembro de datos.
 

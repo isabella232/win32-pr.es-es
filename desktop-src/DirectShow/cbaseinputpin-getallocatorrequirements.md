@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 57b085cd82c45fd78ddaa4794084cba775e1c80cd8b9e3b8df4c9680379ba462
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0239d226ea57ed5953fa65b925eeffaa0b13df1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119586375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173825"
 ---
 # <a name="cbaseinputpingetallocatorrequirements-method"></a>Método CBaseInputPin.GetAllocatorRequirements
 
@@ -53,7 +53,7 @@ Puntero a una [**estructura ALLOCATOR \_ PROPERTIES,**](/windows/win32/api/strmi
 
 Devuelve E \_ NOTIMPL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando un pin de salida inicializa un asignador de memoria, puede llamar a este método para determinar si el pin de entrada tiene algún requisito de búfer. Para obtener más información, [**vea CBaseOutputPin::D ecideAllocator**](cbaseoutputpin-decideallocator.md).
 

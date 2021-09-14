@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: constructor de JET_SETCOLUMN'
+description: 'Más información sobre: JET_SETCOLUMN constructor'
 title: JET_SETCOLUMN constructor
 TOCTitle: 'JET_SETCOLUMN constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SETCOLUMN.#ctor
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5b766cd2f42717cf22e18ea38e1866c841e4c808219d80494e7e675e05f7ce9e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e60c7a1675fec6880587b0c178565e6e217c416
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119616475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174633"
 ---
 # <a name="jet_setcolumn-constructor"></a>JET_SETCOLUMN constructor
 

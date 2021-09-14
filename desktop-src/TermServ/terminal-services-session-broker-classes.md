@@ -1,20 +1,20 @@
 ---
 title: Conexión a Escritorio remoto Broker
-description: El proveedor WMI Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) proporciona las clases siguientes.
+description: El Conexión a Escritorio remoto WMI de Agente de Conexión a Escritorio remoto (Agente de conexión a Escritorio remoto) proporciona las clases siguientes.
 ms.assetid: cabec269-b8e5-406e-a608-5f3313c4e874
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cae14a57e8b8fedec45b261e142bfdbdbd1691f8df424b9076160f31baa287a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a573898a21727c53f4586d483b58492573485f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119869995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170626"
 ---
 # <a name="remote-desktop-connection-broker-classes"></a>Conexión a Escritorio remoto Broker
 
-El proveedor WMI Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) proporciona las clases siguientes.
+El Conexión a Escritorio remoto WMI de Agente de Conexión a Escritorio remoto (Agente de conexión a Escritorio remoto) proporciona las clases siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

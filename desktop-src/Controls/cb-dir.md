@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: defa19ffdebfb448e1a89c141da0b275c1df1bffdcfa9e3914293400d706b7ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98cbea5bb88614d5606dd3d5cb165be59f632556
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119577125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173973"
 ---
 # <a name="cb_dir-message"></a>Mensaje \_ de dir. de CB
 
@@ -36,7 +36,7 @@ Atributos de los archivos o directorios que se van a agregar al cuadro combinado
 
 
 
-| Valor                                                                                                                                                         | Significado                                                                                                                                        |
+| Value                                                                                                                                                         | Significado                                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DDL_ARCHIVE"></span><span id="ddl_archive"></span><dl> <dt>**DDL \_ ARCHIVE**</dt> </dl>       | Incluye archivos archivados.<br/>                                                                                                            |
 | <span id="DDL_DIRECTORY"></span><span id="ddl_directory"></span><dl> <dt>**DIRECTORIO \_ DDL**</dt> </dl> | Incluye subdirectorios, que se incluyen entre corchetes ( \[ \] ).<br/>                                                             |
@@ -66,7 +66,7 @@ Si el mensaje se realiza correctamente, el valor devuelto es el índice de base 
 
 Si se produce un error, el valor devuelto es CB \_ ERR. Si no hay suficiente espacio para almacenar las nuevas cadenas, el valor devuelto es CB \_ ERRSPACE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si *wParam* incluye la marca DDL DIRECTORY y lParam especifica todos los subdirectorios de un directorio de primer nivel, como C: TEMP, el cuadro de lista siempre incluirá una \_ entrada  \\ \\ \* ".." para el directorio raíz. Esto es así incluso si el directorio raíz tiene atributos ocultos o del sistema y no se especifican las marcas DDL HIDDEN y \_ DDL \_ SYSTEM. El directorio raíz de un volumen NTFS tiene atributos ocultos y del sistema.
 
@@ -76,11 +76,11 @@ La lista muestra nombres de archivo largos, si los hay.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

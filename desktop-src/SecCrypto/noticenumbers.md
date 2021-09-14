@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Capicom.dll
 ms.openlocfilehash: b2bd6e653eabe9b25588fd29517ac94e0c878fdb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090763"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173174"
 ---
 # <a name="noticenumbers-object"></a>Objeto NoticeNumbers
 
@@ -34,7 +34,7 @@ El **objeto NoticeNumbers** se usa para realizar las siguientes tareas:
 -   Recuperar un objeto [**Extension**](extension.md) específico de la colección.
 -   Recorrer en iteración la colección.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto NoticeNumbers** tiene estos tipos de miembros:
 
@@ -49,14 +49,14 @@ El **objeto NoticeNumbers** tiene estas propiedades.
 | Propiedad                                              | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
 |:------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](noticenumbers-newenum.md)<br/> | Solo lectura<br/> | Recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](noticenumbers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de [**objetos Extension**](extension.md) de la colección.<br/>                                                                                                                                    |
-| [**Elemento**](noticenumbers-item.md)<br/>         | Solo lectura<br/> | Recupera el objeto [**Extension**](extension.md) que representa el número de aviso indexado de la colección.<br/> Esta es la propiedad predeterminada.<br/>                                                            |
+| [**Count**](noticenumbers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de [**objetos Extension**](extension.md) de la colección.<br/>                                                                                                                                    |
+| [**Artículo**](noticenumbers-item.md)<br/>         | Solo lectura<br/> | Recupera el objeto [**Extension**](extension.md) que representa el número de aviso indexado de la colección.<br/> Esta es la propiedad predeterminada.<br/>                                                            |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se puede crear el objeto **NoticeNumbers.**
 
@@ -66,7 +66,7 @@ El objeto NoticeNumbers se usa en la [**propiedad Qualifier.NoticeNumbers.**](qu
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |

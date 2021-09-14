@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 81c2ba3a56ba9c09a2ce7b23bcad1a83880e61256402c291b5aebde9988218c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a0126266fc33dca030abad65ccf9f0d35f6e195
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266415"
 ---
 # <a name="iamfilterdatacreatefilterdata-method"></a>IamFilterData::CreateFilterData (método)
 
@@ -73,7 +73,7 @@ Puntero a una variable que recibe el tamaño de los datos binarios, en bytes.
 
 Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El encabezado Fil \_ data.h se encuentra en el directorio [Mapper Sample](mapper-sample.md) del SDK Windows.
@@ -91,7 +91,7 @@ Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

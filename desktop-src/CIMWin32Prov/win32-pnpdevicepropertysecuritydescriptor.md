@@ -1,5 +1,5 @@
 ---
-description: Representa una propiedad de dispositivo PnP de tipo Win32 \_ SecurityDescriptor.
+description: Representa una propiedad de dispositivo PnP de tipo \_ SecurityDescriptor de Win32.
 ms.assetid: 05D94627-0B1F-443E-A5C0-D7FC95318250
 ms.tgt_platform: multiple
 title: Win32_PnPDevicePropertySecurityDescriptor clase
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 262a9a8bc7670a11b77e199745dc51d74eef48d8083cadf13938c0e4f52867cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9346f78a9492dff201d0278e0be33f2a0873c16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118008895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174405"
 ---
-# <a name="win32_pnpdevicepropertysecuritydescriptor-class"></a>Clase Win32 \_ PnPDevicePropertySecurityDescriptor
+# <a name="win32_pnpdevicepropertysecuritydescriptor-class"></a>Clase \_ PnPDevicePropertySecurityDescriptor de Win32
 
-Representa una propiedad de dispositivo PnP de tipo [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor).
+Representa una propiedad de dispositivo PnP de tipo [**Win32 \_ SecurityDescriptor.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertySecurityDescriptor : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PnPDevicePropertySecurityDescriptor de Win32** tiene estos tipos de miembros:
 
@@ -57,7 +57,7 @@ La **clase \_ PnPDevicePropertySecurityDescriptor de Win32** tiene estas propied
 
 <dl> <dt>
 
-**Datos**
+**Data**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **[ **Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)**
@@ -81,7 +81,7 @@ Tipo de acceso: solo lectura
 
 Identifica el dispositivo PnP.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Tipo de acceso: solo lectura
 
 Valor del par clave Name-Value que identifica la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
@@ -109,9 +109,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value clave que identifica la **propiedad** Data.
+Nombre del par clave Name-Value que identifica la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Tipo de acceso: solo lectura
 
 Tipo de la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 Los valores posibles son.
 
@@ -477,7 +477,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Desconocido: check in devpropdef.h** (4120)
+**Desconocido: comprobación de devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>

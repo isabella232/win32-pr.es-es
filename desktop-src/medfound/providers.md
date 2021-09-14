@@ -1,17 +1,17 @@
 ---
 description: Contiene una lista de proveedores de seguimiento para MFTrace.
 ms.assetid: ee483f0a-5a90-4150-ada4-0b63ae312523
-title: providers, elemento
+title: Elemento providers
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dadf2d0fe65d0b072787132d5263bb894a6d273a9299cfc77e96fcff01d89170
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d38a86bf3ca8ffa1ea9e3da20e0244e7abec8513
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268764"
 ---
-# <a name="providers-element"></a>providers, elemento
+# <a name="providers-element"></a>Elemento providers
 
 Contiene una lista de proveedores de seguimiento [para MFTrace.](mftrace.md)
 
@@ -62,7 +62,7 @@ No hay elementos primarios.
     :::column-end:::
 :::row-end:::
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

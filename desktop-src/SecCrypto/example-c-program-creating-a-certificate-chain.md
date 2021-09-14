@@ -4,21 +4,21 @@ ms.assetid: 960f2bb9-130f-494f-9af0-0ab8ae3eb6e2
 title: 'Programa C de ejemplo: Crear una cadena de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59bbc8e447a23a950280cb4cb9b9f20e7a7d4d09bb2384de19ca510c403dedd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1857540f16cddfa754a0765d273a944e9a4a9044
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765569"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173229"
 ---
 # <a name="example-c-program-creating-a-certificate-chain"></a>Programa C de ejemplo: Crear una cadena de certificados
 
-En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor se usa para generar cadenas de certificados para cada uno de los certificados de un [*almacén de certificados*](../secgloss/c-gly.md).
+En el ejemplo siguiente se crea e instala un motor de cadena de certificados no predeterminado. El motor se usa para compilar cadenas de certificados para cada uno de los certificados de un [*almacén de certificados.*](../secgloss/c-gly.md)
 
 En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Preparar la creación de un motor de cadena de certificados no predeterminado mediante la declaración e inicialización de una estructura de datos [**CERT \_ CHAIN ENGINE \_ \_ CONFIG.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config)
--   Crear el motor de búsqueda [**mediante CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
+-   Preparar la creación de un motor de cadena de certificados no predeterminado declarando e inicializando una estructura de datos [**CERT \_ CHAIN ENGINE \_ \_ CONFIG.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config)
+-   Creación del motor de búsqueda [**mediante CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
 -   Uso [**de CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) para abrir el almacén Mi sistema.
 -   Recuperar todos los certificados del almacén abierto mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) en un bucle.
 -   Para cada certificado del almacén abierto, recuperando el nombre del firmante del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).

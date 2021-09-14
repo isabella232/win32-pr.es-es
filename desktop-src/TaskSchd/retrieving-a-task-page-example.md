@@ -6,12 +6,12 @@ keywords:
 - recuperar la página de tareas Programador de tareas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2d619f76b4de416fe2bef9faa679851c613df05e427d6203a6a91936644ad07
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd570edf3309b9b9ff0eada291d02a10850885ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119872275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172854"
 ---
 # <a name="retrieving-a-task-page-example"></a>Ejemplo de la recuperación de una página de tareas
 

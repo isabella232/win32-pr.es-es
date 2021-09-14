@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: e197126a99023fb96c2798343b391d53de4f6cd97aaaa141918f0fe705e5ad1e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6cb8db60b5818f5bc2bc38892912e9ec40af1eb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118045322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267700"
 ---
 # <a name="ianalysisregiongetregionscans-method"></a>IAnalysisRegion::GetRegionScans (método)
 
@@ -58,9 +58,9 @@ Puntero a una matriz de rectángulos que define el área de [**IAnalysisRegion**
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si *pRegionScans se* pasa como **NULL,** el **método GetRegionScans** devuelve S **\_ OK** y el número de rectángulos se devuelve en *pulCount.*
+Si *pRegionScans se* pasa como **NULL,** el método **GetRegionScans** devuelve **S \_ OK** y el número de rectángulos se devuelve *en pulCount*.
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, use [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar la memoria de \* *pRegionScans* cuando ya no necesite la información.
@@ -73,7 +73,7 @@ La unión de los rectángulos devueltos representa el área de [**IAnalysisRegio
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo obtener los rectángulos que definen el área de [**IAnalysisRegion**](ianalysisregion.md)y cómo obtener `region` solo el número de rectángulos.
+En el ejemplo siguiente se muestra cómo obtener los rectángulos que definen el área de [**IAnalysisRegion**](ianalysisregion.md)y cómo obtener solo el `region` número de rectángulos.
 
 
 ```C++
@@ -97,16 +97,16 @@ region->GetRegionScans(&number, NULL);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

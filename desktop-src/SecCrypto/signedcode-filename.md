@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 981ff6e1343f836ef145d1dac8c66b93d7a89c885a04cb2fe024740d7e35a53d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6e31e57376f987b2b5cb47e5e6bd8a0d5e85fba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173109"
 ---
 # <a name="signedcodefilename-property"></a>Propiedad SignedCode.FileName
 
@@ -26,7 +26,7 @@ ms.locfileid: "118900385"
 
 La **propiedad FileName** establece o recupera la ruta de acceso al archivo ejecutable. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -39,7 +39,7 @@ SignedCode.FileName As String
 
 Ruta de acceso al archivo ejecutable.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se modifica el valor de **la propiedad FileName,** se restablece el estado de todo [**el objeto SignedCode.**](signedcode.md)
 
@@ -47,14 +47,14 @@ Si se modifica el valor de **la propiedad FileName,** se restablece el estado de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

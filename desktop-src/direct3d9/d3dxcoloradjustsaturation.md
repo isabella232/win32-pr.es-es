@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 71ed9b6ebdefe41b466bb790cc4d0226991ce2866aee9fed765c19c87f6085b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 878cdd83a04f594da3133eda314486af96ac3d56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170481"
 ---
 # <a name="d3dxcoloradjustsaturation-function-d3dx9mathh"></a>Función D3DXColorAdjustSaturation (D3dx9math.h)
 
@@ -65,7 +65,7 @@ Puntero a una estructura [**D3DXCOLOR de**](d3dxcolor.md) origen.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de saturación. Este parámetro interpola linealmente entre el color convertido en escala de grises y el color original, pC. No hay límites en el valor de s. Si s es 0, el color devuelto es el color de escala de grises. Si s es 1, el color devuelto es el color original.
+Valor de saturación. Este parámetro interpola linealmente entre el color convertido a escala de grises y el color original, pC. No hay límites en el valor de s. Si s es 0, el color devuelto es el color de escala de grises. Si s es 1, el color devuelto es el color original.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
 Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado del ajuste de saturación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El canal alfa de entrada se copia, sin modificar, en el canal alfa de salida.
 

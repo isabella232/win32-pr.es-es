@@ -1,21 +1,21 @@
 ---
-description: Algunas aplicaciones escalan imágenes; Es decir, muestran vistas ampliadas o reducidas de una imagen. Por ejemplo, una aplicación de dibujo puede proporcionar una característica de zoom que permite al usuario ver y editar un dibujo píxel a píxel.
+description: Algunas aplicaciones escalan imágenes; es decir, muestran vistas ampliadas o reducidas de una imagen. Por ejemplo, una aplicación de dibujo puede proporcionar una característica de zoom que permite al usuario ver y editar un dibujo píxel a píxel.
 ms.assetid: ab7d5224-62de-40a8-909f-564f61c45d01
 title: Escalado de una imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd7445c64bcf7ca4332612de0689e9ebeb55850372a5be2b4fb19c1593bbf339
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 40ce5d1584c905bbf46f10e29e512af95ddbc55c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119613745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072453"
 ---
 # <a name="scaling-an-image"></a>Escalado de una imagen
 
-Algunas aplicaciones escalan imágenes; Es decir, muestran vistas ampliadas o reducidas de una imagen. Por ejemplo, una aplicación de dibujo puede proporcionar una característica de zoom que permite al usuario ver y editar un dibujo píxel a píxel.
+Algunas aplicaciones escalan imágenes; es decir, muestran vistas ampliadas o reducidas de una imagen. Por ejemplo, una aplicación de dibujo puede proporcionar una característica de zoom que permite al usuario ver y editar un dibujo píxel a píxel.
 
-Las aplicaciones escalan imágenes mediante una llamada a [**la función StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) Al igual [**que la función BitBlt,**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) **StretchBlt** copia los datos de mapa de bits de un mapa de bits en un contexto de dispositivo de origen [**(DC)**](/windows/desktop/api/Winuser/nf-winuser-getdcex)en un mapa de bits de un controlador de dominio de destino. Sin embargo, a diferencia **de la función BitBlt,** **StretchBlt** escala la imagen en función de las dimensiones especificadas de los rectángulos de origen y de destino. Si el rectángulo de origen es mayor que el rectángulo de destino, la imagen resultante parecerá que se ha reducido; Si el rectángulo de origen es menor que el rectángulo de destino, la imagen resultante parecerá que se ha expandido.
+Las aplicaciones escalan imágenes mediante una llamada a [**la función StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) Al igual [**que la función BitBlt,**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) **StretchBlt** copia los datos de mapa de bits de un mapa de bits en un contexto de dispositivo de origen [**(DC)**](/windows/desktop/api/Winuser/nf-winuser-getdcex)en un mapa de bits de un controlador de dominio de destino. Sin embargo, a diferencia de la función **BitBlt,** **StretchBlt** escala la imagen en función de las dimensiones especificadas de los rectángulos de origen y destino. Si el rectángulo de origen es mayor que el rectángulo de destino, la imagen resultante parecerá que se ha reducido; Si el rectángulo de origen es menor que el rectángulo de destino, la imagen resultante parecerá que se ha expandido.
 
 Si el rectángulo de destino es menor que el rectángulo de origen, [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) quita los datos de color de la imagen según un modo de ajuste especificado, como se muestra en la tabla siguiente.
 
@@ -23,18 +23,18 @@ Si el rectángulo de destino es menor que el rectángulo de origen, [**StretchBl
 
 | Modo stretch | Método                                                                                                                    |
 |--------------|---------------------------------------------------------------------------------------------------------------------------|
-| BLACKONWHITE | Realiza una operación AND lógica en los datos de color para los píxeles eliminados y los datos de color para los píxeles restantes. |
-| WHITEONBLACK | Realiza una operación OR lógica en los datos de color para los píxeles eliminados y los datos de color para los píxeles restantes.  |
+| BLACKONWHITE | Realiza una operación LÓGICA AND en los datos de color de los píxeles eliminados y los datos de color para los píxeles restantes. |
+| WHITEONBLACK | Realiza una operación OR lógica en los datos de color de los píxeles eliminados y los datos de color para los píxeles restantes.  |
 | COLORONCOLOR | Elimina completamente los datos de color de los píxeles eliminados.                                                               |
-| Semitonos     | Aproxima los datos de color originales (origen) en el destino.                                                         |
+| SEMITONOS     | Aproxima los datos de color originales (origen) en el destino.                                                         |
 
 
 
  
 
-Establezca el modo de ajuste llamando a la [**función SetStretchBltMode.**](/windows/desktop/api/Wingdi/nf-wingdi-setstretchbltmode)
+Para establecer el modo de ajuste, llame a la [**función SetStretchBltMode.**](/windows/desktop/api/Wingdi/nf-wingdi-setstretchbltmode)
 
-El código de ejemplo siguiente se toma de una aplicación que muestra los cuatro modos de extensión disponibles con la [**función StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)
+El código de ejemplo siguiente se toma de una aplicación que muestra los cuatro modos de stretch disponibles con la [**función StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)
 
 
 ```C++

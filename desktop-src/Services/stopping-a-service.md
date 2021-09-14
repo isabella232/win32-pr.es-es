@@ -1,21 +1,21 @@
 ---
-description: Un programa de control de servicios puede detener un servicio mediante la función ControlService para enviar una \_ solicitud de detención del control de servicio \_ .
+description: Un programa de control de servicio puede detener un servicio mediante la función ControlService para enviar una solicitud SERVICE \_ CONTROL \_ STOP.
 ms.assetid: fe16d2a8-3e66-49cc-b9c7-fffbc206e8d3
 title: Detener un servicio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dfb9625dd674623823341c1465964095de7efaf8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170789"
 ---
 # <a name="stopping-a-service"></a>Detener un servicio
 
-Un [programa de control de servicios](service-control-programs.md) puede detener un servicio mediante la función [**ControlService**](/windows/desktop/api/Winsvc/nf-winsvc-controlservice) para enviar una \_ solicitud de detención del control de servicio \_ . Si el [Administrador de control de servicios](service-control-manager.md) (SCM) recibe \_ una \_ solicitud de detención de control de servicio para un servicio, indica al servicio que se detenga reenviando la solicitud a la función [**ServiceMain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) del servicio. Sin embargo, si el SCM determina que otros servicios en ejecución dependen del servicio especificado, no reenviará la solicitud de detención. En su lugar, devuelve los \_ servicios dependientes del error \_ \_ que se ejecutan. Por lo tanto, para detener este servicio mediante programación, primero debe enumerar y detener los servicios dependientes.
+Un [programa de control de](service-control-programs.md) servicio puede detener un servicio mediante la función [**ControlService**](/windows/desktop/api/Winsvc/nf-winsvc-controlservice) para enviar una solicitud SERVICE \_ CONTROL \_ STOP. Si el [administrador de control](service-control-manager.md) de servicios (SCM) recibe una solicitud SERVICE CONTROL STOP para un servicio, indica al servicio que se detenga reenviando la solicitud a la función \_ \_ [**ServiceMain del**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) servicio. Sin embargo, si el SCM determina que otros servicios en ejecución dependen del servicio especificado, no reenviará la solicitud de detenerse. En su lugar, devuelve ERROR \_ DEPENDENT \_ SERVICES \_ RUNNING. Por lo tanto, para detener este servicio mediante programación, primero debe enumerar y detener sus servicios dependientes.
 
-La función DoStopSvc del ejemplo siguiente muestra cómo detener un servicio y los servicios dependientes. La variable szSvcName es una variable global que contiene el nombre del servicio que se va a detener. Para obtener el ejemplo completo en el que se establece esta variable, vea [SvcControl. cpp](svccontrol-cpp.md).
+La función DoStopSvc del ejemplo siguiente muestra cómo detener un servicio y los servicios dependientes. La variable szSvcName es una variable global que contiene el nombre del servicio que se va a detener. Para obtener el ejemplo completo que establece esta variable, [vea SvcControl.cpp](svccontrol-cpp.md).
 
 
 ```C++
@@ -276,7 +276,7 @@ BOOL __stdcall StopDependentServices()
 
 <dl> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

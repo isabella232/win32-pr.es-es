@@ -36,18 +36,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b2ce4673b6739639475264f79a60a7fd1b1c7bc5a0f16153d22305a77812759a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b46f3b4bd37770a5f3a7c1a2d2faa93d49bc079a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119504375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174421"
 ---
 # <a name="win32_baseservice-class"></a>Clase BaseService de Win32 \_
 
-La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) abstracta **\_ Win32 BaseService** representa objetos ejecutables que se instalan en una base de datos del Registro mantenida por el Administrador de control de servicios. El archivo ejecutable asociado a un servicio se puede iniciar en tiempo de arranque mediante un programa de arranque o el sistema. El Administrador de control de servicios también puede iniciarlo a petición. Cualquier servicio o proceso que no sea propiedad de un usuario específico y que proporciona una interfaz a alguna funcionalidad compatible con el sistema informático, es un descendiente (o miembro) de esta clase.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) abstracta **Win32 \_ BaseService** representa objetos ejecutables que se instalan en una base de datos del Registro mantenida por el Administrador de control de servicios. Un programa de arranque o el sistema pueden iniciar el archivo ejecutable asociado a un servicio en tiempo de arranque. El Administrador de control de servicios también puede iniciarlo a petición. Cualquier servicio o proceso que no sea propiedad de un usuario específico y que proporciona una interfaz a alguna funcionalidad compatible con el sistema informático, es un descendiente (o miembro) de esta clase.
 
-Ejemplo: el servicio cliente del protocolo de configuración dinámica de host (DHCP) en un sistema de equipo que ejecuta Windows Server.
+Ejemplo: el servicio cliente del protocolo de configuración dinámica de host (DHCP) en un sistema informático que ejecuta Windows Server.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -82,7 +82,7 @@ class Win32_BaseService : CIM_Service
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ BaseService de Win32** tiene estos tipos de miembros:
 
@@ -91,7 +91,7 @@ La **clase \_ BaseService de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ BaseService win32** tiene estos métodos.
+La **clase \_ BaseService de Win32** tiene estos métodos.
 
 
 
@@ -99,7 +99,7 @@ La **clase \_ BaseService win32** tiene estos métodos.
 |:-----------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
 | [**Change**](change-method-in-class-win32-baseservice.md)                         | Modifica un servicio.<br/>                                                |
 | [**ChangeStartMode**](changestartmode-method-in-class-win32-baseservice.md)       | Modifica el modo de inicio de un servicio.<br/>                              |
-| [**Creación**](create-method-in-class-win32-baseservice.md)                         | Crea un nuevo servicio.<br/>                                             |
+| [**Crear**](create-method-in-class-win32-baseservice.md)                         | Crea un nuevo servicio.<br/>                                             |
 | [**Eliminar**](delete-method-in-class-win32-baseservice.md)                         | Elimina un servicio existente.<br/>                                       |
 | [**InterrogateService**](interrogateservice-method-in-class-win32-baseservice.md) | Solicita que el servicio actualice su estado al administrador de servicios.<br/> |
 | [**PauseService**](pauseservice-method-in-class-win32-baseservice.md)             | Intenta poner el servicio en estado de pausa.<br/>                 |
@@ -180,7 +180,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre de clase")
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
 Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
@@ -232,7 +232,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/desktop/api/winsvc/ns-winsvc-query_service_configa) \| lpDisplayName"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre para mostrar")
 </dt> </dl>
 
-Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva en el Administrador de control de servicios. Las comparaciones **de DisplayName** siempre no tienen en cuenta las mayúsculas y minúsculas.
+Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva en el Administrador de control de servicios. Las comparaciones **de DisplayName** siempre no tienen en cuenta mayúsculas de minúsculas.
 
 Restricciones: acepta el mismo valor que la **propiedad Name.**
 
@@ -496,7 +496,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("StartMode"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Start Mode")
 </dt> </dl>
 
-Modo de inicio del Windows base.
+Modo de inicio del servicio Windows base.
 
 Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
@@ -509,7 +509,7 @@ Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
 </dt> <dd>
 
-Controlador de dispositivo iniciado por el cargador de sistema operativo (válido solo para los servicios de controladores).
+Controlador de dispositivo iniciado por el cargador de sistema operativo (válido solo para los servicios de controlador).
 
 </dd> <dt>
 
@@ -809,7 +809,7 @@ Valor de etiqueta único para este servicio del grupo. Un valor de 0 (cero) indi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ BaseService de Win32** se deriva del [**servicio CIM \_**](cim-service.md).
 

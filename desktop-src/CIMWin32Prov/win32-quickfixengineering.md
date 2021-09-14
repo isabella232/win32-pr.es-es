@@ -1,5 +1,5 @@
 ---
-description: QuickFixEngineering de Win32 \_&\# 8194; La clase WMI representa una pequeña actualización de todo el sistema, conocida normalmente como actualización de ingeniería de corrección rápida (QFE), que se aplica al sistema operativo actual.
+description: QuickFixEngineering de Win32 \_&\# 8194; La clase WMI representa una pequeña actualización de todo el sistema, que normalmente se conoce como actualización de ingeniería de corrección rápida (QFE), aplicada al sistema operativo actual.
 ms.assetid: 84aed428-7620-4f7a-941f-f9d683020d8a
 ms.tgt_platform: multiple
 title: Win32_QuickFixEngineering clase
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15110b5801555947eed434b8148aec3cc753f6eec359f32b96cd67a5b2649f31
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e9db31dd452161a31575b6f7184a34c35dea71e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118675017"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174342"
 ---
 # <a name="win32_quickfixengineering-class"></a>Clase \_ QuickFixEngineering de Win32
 
-La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ QuickFixEngineering de Win32** representa una pequeña actualización de todo el sistema, conocida normalmente como actualización de ingeniería de corrección rápida (QFE), que se aplica al sistema operativo actual. Esta clase devuelve solo las actualizaciones proporcionadas por el servicio basado en componentes (CBS). Estas actualizaciones no aparecen en el Registro. Las actualizaciones proporcionadas por Microsoft Windows Installer (MSI) o el sitio de actualización de Windows ( ) no se devuelven mediante [https://update.microsoft.com](https://update.microsoft.com/) **\_ QuickFixEngineering de Win32.**
+La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ QuickFixEngineering de Win32** representa una pequeña actualización de todo el sistema, que normalmente se conoce como actualización de ingeniería de corrección rápida (QFE), aplicada al sistema operativo actual. Esta clase devuelve solo las actualizaciones proporcionadas por servicio basado en componentes (CBS). Estas actualizaciones no aparecen en el Registro. Las actualizaciones proporcionadas por Microsoft Windows Installer (MSI) o el sitio de actualización de Windows ( ) no se devuelven mediante [https://update.microsoft.com](https://update.microsoft.com/) **\_ QuickFixEngineering de Win32.**
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -58,7 +58,7 @@ class Win32_QuickFixEngineering : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ QuickFixEngineering de Win32** tiene estos tipos de miembros:
 
@@ -97,7 +97,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**propagado**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Calificadores: clave CIM , [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**propagado**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md). [**\_**](../wmisdk/standard-wmi-qualifiers.md)**Name**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
 Nombre local del sistema del equipo. El valor de esta propiedad procede de la [**clase \_ ComputerSystem de CIM.**](cim-computersystem.md)
@@ -203,7 +203,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Reg
 Fecha en que se instaló la actualización. Si se desconoce este valor, la propiedad está vacía.
 
 > [!Note]  
-> Esta propiedad puede usar formatos diferentes, dependiendo de cuándo se instaló QuickFix. La mayoría de los sistemas usan un formato de fecha estándar, como "23-10-2013". Sin embargo, algunos sistemas pueden devolver un valor hexadecimal de 64 bits en el formato [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) de Win32.
+> Esta propiedad puede usar formatos diferentes, dependiendo de cuándo se haya instalado QuickFix. La mayoría de los sistemas usan un formato de fecha estándar, como "23-10-2013". Sin embargo, algunos sistemas pueden devolver un valor hexadecimal de 64 bits en el formato [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) de Win32.
 
  
 
@@ -218,10 +218,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se encuentra en subclases, esta propiedad se puede invalidar para que sea una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -257,7 +257,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayNa
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -288,7 +288,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -302,14 +302,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -357,7 +357,7 @@ La **clase \_ QuickFixEngineering de Win32** se deriva de [**CIM \_ LogicalEleme
 
 Dado que las actualizaciones se almacenan en dos lugares, una enumeración de esta clase puede producir duplicados.
 
-Una corrección de acceso es una revisión temporal del sistema operativo producida por el grupo Corrección rápida Engineering de Microsoft. Al igual que los Service Pack, las correcciones rápidas representan los cambios realizados en una versión de Windows después de que se haya publicado el sistema operativo.
+Una corrección de acceso es una revisión temporal del sistema operativo producida por el grupo Corrección rápida Ingeniería en Microsoft. Al igual que los Service Pack, las correcciones rápidas representan los cambios realizados en una versión de Windows después de que se haya publicado el sistema operativo.
 
 A diferencia de los Service Pack, las correcciones rápidas no están diseñadas para la instalación de paquetes en todos los equipos. En su lugar, se desarrollan para abordar problemas muy específicos, a menudo para configuraciones de equipo específicas.
 

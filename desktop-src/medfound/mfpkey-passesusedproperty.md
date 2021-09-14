@@ -4,14 +4,14 @@ ms.assetid: 71a21976-ed92-4cd6-946c-fa6268895531
 title: MFPKEY_PASSESUSED propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94ab020c4b683dc87ced3ffda8665b6b0e62b65cf81001c23c00b39f64ba146b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6cb09949049db1910a419becec3423b0bb7c365
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117873057"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268844"
 ---
-# <a name="mfpkey_passesused-property"></a>Propiedad \_ PASSESUSED de MFPKEY
+# <a name="mfpkey_passesused-property"></a>Propiedad PASSESUSED de MFPKEY \_
 
 Especifica el número de pases que usará el codificador para codificar el contenido. Lectura y escritura.
 
@@ -27,7 +27,7 @@ VT \_ I4
 
 1
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este valor no puede superar el valor de [MFPKEY \_ PASSESRECOMMENDED](mfpkey-passesrecommendedproperty.md).
 
@@ -35,15 +35,15 @@ Este valor no puede superar el valor de [MFPKEY \_ PASSESRECOMMENDED](mfpkey-pas
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

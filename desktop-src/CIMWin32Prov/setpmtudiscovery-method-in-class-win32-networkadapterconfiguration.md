@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0ae4c4d7818a0cbd344d95b342fcdccd179b2b2b2b6538a57c451b47bda60306
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ef3bc9ad5d6203077275f3665c4b0efc98265fbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174053"
 ---
-# <a name="setpmtudiscovery-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetPMTUDiscovery de la clase NetworkAdapterConfiguration de Win32 \_
+# <a name="setpmtudiscovery-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetPMTUDiscovery de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetPMTUDiscovery** se usa para habilitar la detección de unidad de transmisión máxima (MTU) a través de la ruta de acceso a un host remoto.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no es necesario reiniciar.
+Finalización correcta, no se requiere reinicio.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco o red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
@@ -404,13 +404,13 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al detectar la MTU de ruta de acceso y limitar los segmentos TCP a este tamaño, TCP puede eliminar la fragmentación en los enrutadores a lo largo de la ruta de acceso que conectan redes con diferentes MTU. La fragmentación afecta negativamente al rendimiento de TCP y a la congestión de la red. Establecer este parámetro en **FALSE hace** que se utilice una MTU de 576 bytes para todas las conexiones que no están en las máquinas de la subred local.
+Al detectar la MTU de ruta de acceso y limitar los segmentos TCP a este tamaño, TCP puede eliminar la fragmentación en los enrutadores a lo largo de la ruta de acceso que conectan redes con diferentes MTU. La fragmentación afecta negativamente al rendimiento de TCP y a la congestión de la red. Si se establece este parámetro en **FALSE,** se usará una MTU de 576 bytes para todas las conexiones que no están en las máquinas de la subred local.
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo Enable PMTU Discovery on all Network Adapters](https://Gallery.TechNet.Microsoft.Com/dd68dc8d-d452-484c-add7-2da5c87c3568) VBScript (Habilitar la detección de PMTU en todos los adaptadores de red de VBScript) permite que un equipo detecte automáticamente la unidad de transmisión máxima en una red.
+El [ejemplo Enable PMTU Discovery on all Network Adapters](https://Gallery.TechNet.Microsoft.Com/dd68dc8d-d452-484c-add7-2da5c87c3568) VBScript (Habilitar detección de PMTU en todos los adaptadores de red de VBScript) permite que un equipo detecte automáticamente la unidad de transmisión máxima en una red.
 
 ## <a name="requirements"></a>Requisitos
 

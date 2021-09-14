@@ -4,12 +4,12 @@ ms.assetid: 18b62bee-b167-4499-aae4-21e215cb6377
 title: LOCALE_SDATE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76e55e232d5b5a6960e15b648703b9bd6accb6cb7f89353670d02c3c2b789f93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 257a6da36b3d3e756c01468dec51526e56c7ec8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118391541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274372"
 ---
 # <a name="locale_sdate"></a>LOCALE \_ SDATE
 

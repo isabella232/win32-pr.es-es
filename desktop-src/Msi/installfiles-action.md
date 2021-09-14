@@ -4,12 +4,12 @@ ms.assetid: 187ad82f-13f5-4ea3-913c-2ae7561a6ee6
 title: Acción InstallFiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8df2a62deb253314e84e72cd84e88052f1175db7451807c3f266542e29c10c7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c2a0206ec5a64974f27375e175f25ce1888b430
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118629936"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072065"
 ---
 # <a name="installfiles-action"></a>Acción InstallFiles
 
@@ -33,7 +33,7 @@ La acción InstallFiles debe ir después de [la acción InstallValidate](install
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción InstallFiles funciona en los archivos especificados en la [tabla File](file-table.md). Cada archivo se instala en función del estado de instalación del componente asociado del archivo en la [tabla Component](component-table.md). Solo los archivos cuyos componentes se resuelven en **el estado msiInstallStatelocal** son aptos para la copia.
 

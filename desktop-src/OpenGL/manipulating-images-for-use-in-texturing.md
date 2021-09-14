@@ -12,12 +12,12 @@ keywords:
 - Biblioteca GLU, imágenes de textura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dbe948dc3dbe84c9c2e89e02a43b45cf22d34af0198e422a883afd8f3384606
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16726493bbcb6e0116e4c158e470029f34f5b652
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119553915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265703"
 ---
 # <a name="manipulating-images-for-use-in-texturing"></a>Manipulación de imágenes para su uso en texturing
 

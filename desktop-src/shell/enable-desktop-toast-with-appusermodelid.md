@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbSyntax
-ms.openlocfilehash: 517c2b72e830c00b105048adc63923291f896cd5d0d77569c91b1aa12e034e60
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd02a0ec6512aa7637f0d6b2b281e1b862e61d3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118459797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267924"
 ---
 # <a name="how-to-enable-desktop-toast-notifications-through-an-appusermodelid"></a>Cómo habilitar las notificaciones del sistema del escritorio a través de AppUserModelID
 
-En este tema se muestra cómo crear un acceso directo para la aplicación, asignarle un [AppUserModelID](appids.md)e instalarlo en el pantalla Inicio. Se recomienda encarecidamente que haga esto en el instalador Windows en lugar de en el código de la aplicación. Sin un acceso directo válido instalado en el pantalla Inicio o en **Todos** los programas , no se puede generar una notificación del sistema desde una aplicación de escritorio.
+En este tema se muestra cómo crear un acceso directo para la aplicación, asignarle un [AppUserModelID](appids.md)e instalarlo en el pantalla Inicio. Se recomienda encarecidamente que lo haga en el instalador Windows en lugar de en el código de la aplicación. Sin un acceso directo válido instalado en el pantalla Inicio o en **Todos** los programas , no se puede generar una notificación del sistema desde una aplicación de escritorio.
 
 > [!Note]  
 > Los métodos de ejemplo usados en este tema se toman del ejemplo [del sistema de escritorio](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DesktopToasts).
@@ -31,12 +31,12 @@ En este tema se muestra cómo crear un acceso directo para la aplicación, asign
 
 -   COM
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   Bibliotecas
     -   C++: Runtime.object.lib
     -   C \# : Windows. Winmd
--   C \# : Windows code pack de API para Microsoft .NET Framework
+-   C: \# Windows de código de API para Microsoft .NET Framework
 -   Una versión de Microsoft Visual Studio admite al menos Windows 8
 
 ## <a name="instructions"></a>Instructions
@@ -144,7 +144,7 @@ HRESULT DesktopToastsApp::InstallShortcut(_In_z_ wchar_t *shortcutPath)
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Como alternativa al enfoque que se muestra en este tema, puede usar un marco como Windows Installer XML (WiX) para generar el acceso directo e implementarlo como parte del instalador de Windows. En ese caso, este código debe incluirse en msi en lugar de en el código de la aplicación. Para más información, consulte el archivo de configuración de WiX de ejemplo incluido en el ejemplo Envío de [notificaciones del sistema desde aplicaciones de](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208)) escritorio.
 
@@ -161,7 +161,7 @@ Como alternativa al enfoque que se muestra en este tema, puede usar un marco com
 [Id. de modelo de usuario de aplicación (AppUserModelID)](appids.md)
 </dt> <dt>
 
-[Cómo: Instalar las herramientas xml Windows installer (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
+[Cómo: Instalar las herramientas Windows Installer XML (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
 </dt> <dt>
 
 [Esquema XML del sistema](/uwp/schemas/tiles/toastschema/schema-root)

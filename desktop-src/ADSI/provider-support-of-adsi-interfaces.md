@@ -28,12 +28,12 @@ keywords:
 - Compatibilidad del proveedor con IADsPrintQueueOperations
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c393cb8476830617a300f33eac741bd27b3cacbd686442dd4def5bf6c35526e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf12803929d96a61aac6603be2c528084c91693c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118178834"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174586"
 ---
 # <a name="provider-support-of-adsi-interfaces"></a>Compatibilidad del proveedor con interfaces ADSI
 
@@ -127,22 +127,22 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**EmailAddress**](iadsuser-property-methods.md)           | Compatible     | No compatible   |
 | [**Employeeid**](iadsuser-property-methods.md)             | Compatible     | No compatible   |
 | [**FaxNumber**](iadsuser-property-methods.md)              | Compatible     | No compatible   |
-| [**Nombre**](iadsuser-property-methods.md)              | Compatible     | No compatible   |
+| [**FirstName**](iadsuser-property-methods.md)              | Compatible     | No compatible   |
 | [**FullName**](iadsuser-property-methods.md)               | Compatible     | Compatible     |
 | [**GraceLoginsAllowed**](iadsuser-property-methods.md)     | No compatible | No compatible   |
 | [**GraceLoginsRemaining**](iadsuser-property-methods.md)   | No compatible | No compatible   |
 | [**HomeDirectory**](iadsuser-property-methods.md)          | Compatible     | Compatible     |
 | [**Página principal**](iadsuser-property-methods.md)               | Compatible     | No compatible   |
 | [**IsAccountLocked**](iadsuser-property-methods.md)        | Compatible     | Compatible     |
-| [**Idiomas**](iadsuser-property-methods.md)              | No compatible | No compatible   |
+| [**Lenguajes**](iadsuser-property-methods.md)              | No compatible | No compatible   |
 | [**LastFailedLogin**](iadsuser-property-methods.md)        | Compatible     | No compatible   |
 | [**LastLogin**](iadsuser-property-methods.md)              | Compatible     | Compatible     |
 | [**LastLogoff**](iadsuser-property-methods.md)             | Compatible     | Compatible     |
-| [**Apellidos**](iadsuser-property-methods.md)               | Compatible     | No compatible   |
+| [**LastName**](iadsuser-property-methods.md)               | Compatible     | No compatible   |
 | [**LoginHours**](iadsuser-property-methods.md)             | Compatible     | Compatible     |
 | [**LoginScript**](iadsuser-property-methods.md)            | Compatible     | Compatible     |
 | [**LoginWorkstations**](iadsuser-property-methods.md)      | Compatible     | Compatible     |
-| [**director**](iadsuser-property-methods.md)                | Compatible     | No compatible   |
+| [**Director**](iadsuser-property-methods.md)                | Compatible     | No compatible   |
 | [**MaxLogins**](iadsuser-property-methods.md)              | No compatible   | No compatible   |
 | [**MaxStorage**](iadsuser-property-methods.md)             | Compatible     | Compatible     |
 | [**NamePrefix**](iadsuser-property-methods.md)             | Compatible     | No compatible   |
@@ -176,7 +176,7 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | Propiedades                                     | LDAP                    | Winnt       |
 |------------------------------------------------|-------------------------|-------------|
 | [**ComputerID**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaz no admitida | No compatible |
-| [**Departamento**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaz no admitida | No compatible |
+| [**department**](/windows/desktop/api/Iads/nn-iads-iadscomputer)             | Interfaz no admitida | No compatible |
 | [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadscomputer)            | Interfaz no admitida | No compatible |
 | [**División**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaz no admitida | Compatible   |
 | [**Ubicación**](/windows/desktop/api/Iads/nn-iads-iadscomputer)               | Interfaz no admitida | No compatible |
@@ -191,7 +191,7 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**ProcessorCount**](/windows/desktop/api/Iads/nn-iads-iadscomputer)         | Interfaz no admitida | Compatible   |
 | [**Role**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                   | Interfaz no admitida | No compatible |
 | [**Sitio**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                   | Interfaz no admitida | No compatible |
-| [**StorageCapacity**](/windows/desktop/api/Iads/nn-iads-iadscomputer)        | Interfaz no admitida | No compatible |
+| [**StorageCapacity**](/windows/desktop/api/Iads/nn-iads-iadscomputer)        | No se admite la interfaz | No compatible |
 
 
 
@@ -203,8 +203,8 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Propiedad                                   | LDAP                    | Winnt           |
 |--------------------------------------------|-------------------------|-----------------|
-| [**Apagado**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations) | Interfaz no admitida | No implementado |
-| [**Estado**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)   | Interfaz no admitida | No implementado |
+| [**Apagado**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations) | No se admite la interfaz | No implementado |
+| [**Estado**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)   | No se admite la interfaz | No implementado |
 
 
 
@@ -216,15 +216,15 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Propiedad                                         | LDAP                    | Winnt           |
 |--------------------------------------------------|-------------------------|-----------------|
-| [**IsWorkgroup**](/windows/desktop/api/Iads/nn-iads-iadsdomain)                | Interfaz no admitida | No implementado |
-| [**MinPasswordLength**](/windows/desktop/api/Iads/nn-iads-iadsdomain)          | Interfaz no admitida | Compatible       |
-| [**MinPasswordAge**](/windows/desktop/api/Iads/nn-iads-iadsdomain)             | Interfaz no admitida | Compatible       |
-| [**MaxpasswordAge**](/windows/desktop/api/Iads/nn-iads-iadsdomain)             | Interfaz no admitida | Compatible       |
-| [**MaxBadPasswordsAllowed**](/windows/desktop/api/Iads/nn-iads-iadsdomain)     | Interfaz no admitida | Compatible       |
-| [**PasswordHistoryLength**](/windows/desktop/api/Iads/nn-iads-iadsdomain)      | Interfaz no admitida | Compatible       |
-| [**PasswordAttributes**](/windows/desktop/api/Iads/nn-iads-iadsdomain)         | Interfaz no admitida | No compatible     |
-| [**AutoUnlockInterval**](/windows/desktop/api/Iads/nn-iads-iadsdomain)         | Interfaz no admitida | Compatible       |
-| [**LockoutObservationInterval**](/windows/desktop/api/Iads/nn-iads-iadsdomain) | Interfaz no admitida | Compatible       |
+| [**IsWorkgroup**](/windows/desktop/api/Iads/nn-iads-iadsdomain)                | No se admite la interfaz | No implementado |
+| [**MinPasswordLength**](/windows/desktop/api/Iads/nn-iads-iadsdomain)          | No se admite la interfaz | Compatible       |
+| [**MinPasswordAge**](/windows/desktop/api/Iads/nn-iads-iadsdomain)             | No se admite la interfaz | Compatible       |
+| [**MaxpasswordAge**](/windows/desktop/api/Iads/nn-iads-iadsdomain)             | No se admite la interfaz | Compatible       |
+| [**MaxBadPasswordsAllowed**](/windows/desktop/api/Iads/nn-iads-iadsdomain)     | No se admite la interfaz | Compatible       |
+| [**PasswordHistoryLength**](/windows/desktop/api/Iads/nn-iads-iadsdomain)      | No se admite la interfaz | Compatible       |
+| [**PasswordAttributes**](/windows/desktop/api/Iads/nn-iads-iadsdomain)         | No se admite la interfaz | No compatible     |
+| [**AutoUnlockInterval**](/windows/desktop/api/Iads/nn-iads-iadsdomain)         | No se admite la interfaz | Compatible       |
+| [**LockoutObservationInterval**](/windows/desktop/api/Iads/nn-iads-iadsdomain) | No se admite la interfaz | Compatible       |
 
 
 
@@ -236,8 +236,8 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Propiedad                                | LDAP                    | Winnt     |
 |-----------------------------------------|-------------------------|-----------|
-| [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadsfileservice)  | Interfaz no admitida | Compatible |
-| [**MaxUserCount**](/windows/desktop/api/Iads/nn-iads-iadsfileservice) | Interfaz no admitida | Compatible |
+| [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadsfileservice)  | No se admite la interfaz | Compatible |
+| [**MaxUserCount**](/windows/desktop/api/Iads/nn-iads-iadsfileservice) | No se admite la interfaz | Compatible |
 
 
 
@@ -262,15 +262,15 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | Propiedad                                   | LDAP               | Winnt           |
 |--------------------------------------------|--------------------|-----------------|
 | [**PrimaryInterface**](/windows/desktop/api/Iads/nn-iads-iadsclass)      | Compatible          | Compatible       |
-| [**Clsid**](/windows/desktop/api/Iads/nn-iads-iadsclass)                 | Compatible          | Compatible       |
-| [**Oid**](/windows/desktop/api/Iads/nn-iads-iadsclass)                   | Compatible          | Compatible       |
-| [**Abstracto**](/windows/desktop/api/Iads/nn-iads-iadsclass)              | Compatible          | Compatible       |
+| [**CLSID**](/windows/desktop/api/Iads/nn-iads-iadsclass)                 | Compatible          | Compatible       |
+| [**OID**](/windows/desktop/api/Iads/nn-iads-iadsclass)                   | Compatible          | Compatible       |
+| [**Descripción breve**](/windows/desktop/api/Iads/nn-iads-iadsclass)              | Compatible          | Compatible       |
 | [**Auxiliar**](/windows/desktop/api/Iads/nn-iads-iadsclass)             | Compatible          | Compatible       |
-| [**MandatoryProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)   | Compatible          | Compatible       |
+| [**Propiedades obligatorias**](/windows/desktop/api/Iads/nn-iads-iadsclass)   | Compatible          | Compatible       |
 | [**OptionalProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)    | Compatible          | Compatible       |
 | [**NamingProperties**](/windows/desktop/api/Iads/nn-iads-iadsclass)      | Compatible          | No implementado |
 | [**DerivedFrom**](/windows/desktop/api/Iads/nn-iads-iadsclass)           | Compatible          | No compatible     |
-| [**AuxDerivedFrom**](/windows/desktop/api/Iads/nn-iads-iadsclass)        | Compatible          | No compatible     |
+| [**AuxiliarDerivedFrom**](/windows/desktop/api/Iads/nn-iads-iadsclass)        | Compatible          | No compatible     |
 | [**PossibleSuperiors**](/windows/desktop/api/Iads/nn-iads-iadsclass)     | Compatible          | Compatible       |
 | [**Containment**](/windows/desktop/api/Iads/nn-iads-iadsclass)           | Compatible con lectura | Compatible       |
 | [**Contenedor**](/windows/desktop/api/Iads/nn-iads-iadsclass)             | Compatible con lectura | Compatible       |
@@ -289,8 +289,8 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Propiedad                            | LDAP      | Winnt     |
 |-------------------------------------|-----------|-----------|
-| [**Oid**](/windows/desktop/api/Iads/nn-iads-iadsproperty)         | Compatible | Compatible |
-| [**Syntax**](/windows/desktop/api/Iads/nn-iads-iadsproperty)      | Compatible | Compatible |
+| [**OID**](/windows/desktop/api/Iads/nn-iads-iadsproperty)         | Compatible | Compatible |
+| [**Sintaxis**](/windows/desktop/api/Iads/nn-iads-iadsproperty)      | Compatible | Compatible |
 | [**MaxRange**](/windows/desktop/api/Iads/nn-iads-iadsproperty)    | Compatible | Compatible |
 | [**MinRange**](/windows/desktop/api/Iads/nn-iads-iadsproperty)    | Compatible | Compatible |
 | [**Multivalor**](/windows/desktop/api/Iads/nn-iads-iadsproperty) | Compatible | Compatible |
@@ -317,9 +317,9 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Propiedad                        | LDAP            | Winnt           |
 |---------------------------------|-----------------|-----------------|
-| [**Contar**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | No implementado | No implementado |
+| [**Count**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | No implementado | No implementado |
 | [**Sugerencias**](/windows/desktop/api/Iads/nn-iads-iadscontainer)  | Compatible       | No implementado |
-| [**Filtrar**](/windows/desktop/api/Iads/nn-iads-iadscontainer) | Compatible       | Compatible       |
+| [**Filtro**](/windows/desktop/api/Iads/nn-iads-iadscontainer) | Compatible       | Compatible       |
 
 
 
@@ -346,7 +346,7 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**Máscara de acceso**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Compatible | No compatible |
 | [**AccessType**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Compatible | No compatible |
 | [**AccessFlags**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)         | Compatible | No compatible |
-| [**Banderas**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)               | Compatible | No compatible |
+| [**Marcas**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)               | Compatible | No compatible |
 | [**ObjectType**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)          | Compatible | No compatible |
 | [**InheritedObjectType**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) | Compatible | No compatible |
 | [**Fideicomisario**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)             | Compatible | No compatible |
@@ -401,8 +401,8 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Método                                           | LDAP      | Winnt                   |
 |--------------------------------------------------|-----------|-------------------------|
-| [**GetOption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-getoption) | Compatible | No se admite la interfaz |
-| [**Setoption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-setoption) | Compatible | No se admite la interfaz |
+| [**GetOption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-getoption) | Compatible | Interfaz no admitida |
+| [**Setoption**](/windows/desktop/api/Iads/nf-iads-iadsobjectoptions-setoption) | Compatible | Interfaz no admitida |
 
 
 
@@ -414,10 +414,10 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Método                                                | LDAP                    | Winnt       |
 |-------------------------------------------------------|-------------------------|-------------|
-| [**Añadir**](/windows/desktop/api/Iads/nf-iads-iadscollection-add)                     | No se admite la interfaz | No compatible |
-| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscollection-get__newenum) | No se admite la interfaz | Compatible   |
-| [**Getobject**](/windows/desktop/api/Iads/nf-iads-iadscollection-getobject)         | No se admite la interfaz | Compatible   |
-| [**Quitar**](/windows/desktop/api/Iads/nf-iads-iadscollection-remove)               | No se admite la interfaz | Compatible   |
+| [**Add (Agregar)**](/windows/desktop/api/Iads/nf-iads-iadscollection-add)                     | Interfaz no admitida | No compatible |
+| [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscollection-get__newenum) | Interfaz no admitida | Compatible   |
+| [**Getobject**](/windows/desktop/api/Iads/nf-iads-iadscollection-getobject)         | Interfaz no admitida | Compatible   |
+| [**Remove**](/windows/desktop/api/Iads/nf-iads-iadscollection-remove)               | Interfaz no admitida | Compatible   |
 
 
 
@@ -429,8 +429,8 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 
 | Propiedad                                           | LDAP                                                      | Winnt       |
 |----------------------------------------------------|-----------------------------------------------------------|-------------|
-| [**Contar**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                       | Compatible con GroupCollection, pero no con UserCollection | No compatible |
-| [**Filtrar**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                      | Compatible                                                 | Compatible   |
+| [**Count**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                       | Compatible con GroupCollection, pero no con UserCollection | No compatible |
+| [**Filtro**](/windows/desktop/api/Iads/nn-iads-iadsmembers)                      | Compatible                                                 | Compatible   |
 | Método                                             | LDAP                                                      | Winnt       |
 | [**get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsmembers-get__newenum) | Compatible                                                 | Compatible   |
 
@@ -471,7 +471,7 @@ Para obtener más información sobre qué propiedad o método se admite para cad
 | [**PrintProcessor**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)     | No compatible | Compatible   |
 | [**Descripción**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)        | Compatible   | Compatible   |
 | [**Ubicación**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Compatible   | Compatible   |
-| [**Starttime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Compatible   | Compatible   |
+| [**StartTime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Compatible   | Compatible   |
 | [**UntilTime**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)          | Compatible   | Compatible   |
 | [**DefaultJobPriority**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue) | No compatible | Compatible   |
 | [**Priority**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)           | Compatible   | Compatible   |

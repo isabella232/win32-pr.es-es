@@ -4,12 +4,12 @@ ms.assetid: d878bf4a-33c4-4c68-bd74-b7884d6680a5
 title: ICE64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 573be78a477aa36cbb562df988368045f0e959760684496c0b9bee6ba410c486
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d103498a56bea26415f4f841d5ec78b5dfe370f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074564"
 ---
 # <a name="ice64"></a>ICE64
 

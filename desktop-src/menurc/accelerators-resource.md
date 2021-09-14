@@ -3,7 +3,7 @@ title: Recurso ACCELERATORS
 description: Define uno o varios aceleradores para una aplicación. Un acelerador es una pulsación de tecla definida por la aplicación para proporcionar al usuario una manera rápida de realizar una tarea.
 ms.assetid: 5953ee2d-b7a7-45d2-8445-4cba1207e272
 keywords:
-- Menús de recursos de ACCELERATORS y otros recursos
+- Menús de recursos ACCELERATORS y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e7ba2d19bbab6346f7a62afe56269f762cd94f7ef1730654fb6ac1abf317e4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2aeb09ca52438f7b2f4903e5403eeb722e5d7d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118235744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268559"
 ---
 # <a name="accelerators-resource"></a>Recurso ACCELERATORS
 
@@ -48,7 +48,7 @@ Cero o más de las siguientes instrucciones.
 | .                                                        | Descripción                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CHARACTERISTICS**](characteristics-statement.md) *dword*     | Información definida por el usuario sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**CHARACTERISTICS**](characteristics-statement.md). |
-| [**Language**](language-statement.md) *language*, *sublanguage* | Especifica el idioma del recurso. Para obtener más información, vea [**LANGUAGE**](language-statement.md).                                                                              |
+| [**Language**](language-statement.md) *Language*, *sublanguage* | Especifica el idioma del recurso. Para obtener más información, vea [**LANGUAGE**](language-statement.md).                                                                              |
 | [**VERSION**](version-statement.md) *dword*                     | Número de versión definido por el usuario para el recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**VERSION**](version-statement.md).              |
 
 
@@ -99,10 +99,10 @@ opciones que definen el acelerador. Este parámetro puede ser uno o varios de lo
 
 | Opción                             | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **NOINVERT**                       | Especifica que no se resalta ningún elemento de menú de nivel superior cuando se usa el acelerador. Esto resulta útil al definir aceleradores para acciones como el desplazamiento que no corresponden a un elemento de menú. Si **se omite NOINVERT,** se resaltará un elemento de menú de nivel superior (si es posible) cuando se usa el acelerador. Este atributo está obsoleto y se conserva solo por compatibilidad con versiones anteriores con archivos de recursos diseñados para archivos de 16 bits Windows. |
+| **NOINVERT**                       | Especifica que no se resalta ningún elemento de menú de nivel superior cuando se usa el acelerador. Esto resulta útil al definir aceleradores para acciones como el desplazamiento que no corresponden a un elemento de menú. Si **se omite NOINVERT,** se resaltará un elemento de menú de nivel superior (si es posible) cuando se usa el acelerador. Este atributo está obsoleto y se conserva solo por compatibilidad con versiones anteriores con archivos de recursos diseñados para archivos de 16 Windows. |
 | **ALT**                            | Hace que el acelerador se active solo si la tecla ALT está presionada. Solo se aplica a las claves virtuales.                                                                                                                                                                                                                                                                                                                                            |
-| **Cambio**                          | Hace que el acelerador se active solo si la tecla MAYÚS está fuera de servicio. Solo se aplica a las claves virtuales                                                                                                                                                                                                                                                                                                                                           |
-| [**Control**](control-control.md) | Define el carácter como un carácter de control (el acelerador solo se activa si la tecla CONTROL está fuera de servicio). Esto tiene el mismo efecto que usar un carácter de intercalación (^) antes del carácter de acelerador en el *parámetro de* evento. Solo se aplica a las claves virtuales                                                                                                                                                                                           |
+| **CAMBIO**                          | Hace que el acelerador se active solo si la tecla MAYÚS está fuera de servicio. Solo se aplica a las claves virtuales                                                                                                                                                                                                                                                                                                                                           |
+| [**CONTROL**](control-control.md) | Define el carácter como un carácter de control (el acelerador solo se activa si la tecla CONTROL está fuera de servicio). Esto tiene el mismo efecto que usar un carácter de intercalación (^) antes del carácter de acelerador en el *parámetro de* evento. Solo se aplica a las claves virtuales                                                                                                                                                                                           |
 
 
 
@@ -110,9 +110,9 @@ opciones que definen el acelerador. Este parámetro puede ser uno o varios de lo
 
 </dd> </dl>
 
-Algunos atributos también se admiten por compatibilidad con versiones anteriores. Para obtener más información, vea [Atributos de recursos comunes.](common-resource-attributes.md)
+Algunos atributos también se admiten por compatibilidad con versiones anteriores. Para más información, consulte [Atributos de recursos comunes.](common-resource-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**función TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora) se usa para traducir los mensajes del acelerador de la cola de la aplicación en mensajes [**WM \_ COMMAND**](./wm-command.md) [**o WM \_ SYSCOMMAND.**](./wm-syscommand.md)
 
@@ -140,7 +140,7 @@ En el ejemplo siguiente se muestra el uso de teclas de aceleración.
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -150,16 +150,16 @@ En el ejemplo siguiente se muestra el uso de teclas de aceleración.
 [**TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora)
 </dt> <dt>
 
-[**Características**](characteristics-statement.md)
+[**CARACTERÍSTICAS**](characteristics-statement.md)
 </dt> <dt>
 
-[**Diálogo**](dialog-resource.md)
+[**DIÁLOGO**](dialog-resource.md)
 </dt> <dt>
 
-[**Lengua**](language-statement.md)
+[**LENGUA**](language-statement.md)
 </dt> <dt>
 
-[**Menú**](menu-resource.md)
+[**MENÚ**](menu-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
@@ -168,7 +168,7 @@ En el ejemplo siguiente se muestra el uso de teclas de aceleración.
 [**STRINGTABLE**](stringtable-resource.md)
 </dt> <dt>
 
-[**Versión**](version-statement.md)
+[**VERSIÓN**](version-statement.md)
 </dt> </dl>
 
  

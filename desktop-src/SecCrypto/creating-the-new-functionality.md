@@ -4,12 +4,12 @@ ms.assetid: eb4c1352-1432-4f45-a309-fa17b694a35e
 title: Creación de la nueva funcionalidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ccd528e7e9cf62896c74de07f042dec0e77a7dba5fe5fee32b9b1e2eb229da7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d660c14e99247c7d17f57100858b104d1cbcc9ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117768888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173281"
 ---
 # <a name="creating-the-new-functionality"></a>Creación de la nueva funcionalidad
 

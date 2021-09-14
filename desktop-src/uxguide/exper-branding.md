@@ -1,28 +1,28 @@
 ---
 title: Personal de marca de software
-description: La personal de marca es el posicionamiento emocional de un producto según lo perciben sus clientes. La personalización de marca correcta requiere la creación de aptitudes de una imagen de producto y no se consigue solo a través de logotipos de productos y combinaciones de colores.
+description: La personal de marca es el posicionamiento emocional de un producto que perciben sus clientes. La personalización de marca correcta requiere la creación habilidosa de una imagen de producto y no se consigue solo a través de logotipos de productos y combinaciones de colores.
 ms.assetid: 49c10879-2f3a-4dff-b628-8d70e389fae6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 91d1446d3d3f499f0b56f857b4e2806e266e32df1bb4120d93416eb1cb225581
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea9954c7ce0c082cf6b1b692cdccf5a7d6a3a132
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119090583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267436"
 ---
 # <a name="software-branding"></a>Personal de marca de software
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-La personal de marca es el posicionamiento emocional de un producto según lo perciben sus clientes. La personalización de marca correcta requiere la creación de aptitudes de una imagen de producto y no se consigue solo a través de logotipos de productos y combinaciones de colores.
+La personal de marca es el posicionamiento emocional de un producto que perciben sus clientes. La personalización de marca correcta requiere la creación habilidosa de una imagen de producto y no se consigue solo a través de logotipos de productos y combinaciones de colores.
 
-La personal de marca es el posicionamiento emocional de un producto según lo perciben sus clientes. La personalación de marca del producto se logra a través de una combinación de factores, como el nombre y el logotipo del producto, el uso del color, el texto, los gráficos y el sonido, el estilo de otros elementos de diseño, el marketing y, lo que es más importante, los atributos de la propia experiencia del producto.
+La personal de marca es el posicionamiento emocional de un producto que perciben sus clientes. La marca de producto se logra a través de una combinación de factores, como el nombre y el logotipo del producto, el uso del color, el texto, los gráficos y el sonido, el estilo de otros elementos de diseño, el marketing y, lo que es más importante, los atributos de la propia experiencia del producto.
 
-La personalización de marca correcta requiere la creación de una imagen de producto con habilidad y no se consigue simplemente mediante la creación de un logotipo de producto en cada superficie y el uso de la combinación de colores del producto en cada oportunidad. En su lugar, la personalizar de marca significativa y de alta calidad que mejore la experiencia de los usuarios será mucho más satisfactoria.
+La personalización de marca correcta requiere la creación de aptitudes de una imagen de producto y no se consigue simplemente mediante la creación de un logotipo de producto en cada superficie y el uso de la combinación de colores del producto en cada oportunidad. En su lugar, la personalizar una marca significativa y de alta calidad que mejore la experiencia de los usuarios será mucho más correcta.
 
-**Nota:** Las directrices relacionadas [con iconos,](vis-icons.md) [fuentes,](vis-fonts.md) [colores,](vis-color.md) [animaciones,](vis-animations.md) [sonidos](https://msdn.microsoft.com/library/windows/desktop/aa511278.aspx)y marcos [de ventana](win-window-frames.md) se presentan en artículos independientes.
+**Nota:** Las instrucciones relacionadas con [iconos,](vis-icons.md) [fuentes,](vis-fonts.md) [colores,](vis-color.md) [animaciones,](vis-animations.md) [sonidos](https://msdn.microsoft.com/library/windows/desktop/aa511278.aspx)y marcos [de ventana](win-window-frames.md) se presentan en artículos independientes.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
@@ -30,14 +30,14 @@ En un marketplace competitivo, las empresas marcan sus productos para ayudar a d
 
 ### <a name="attributes-of-good-software-branding"></a>Atributos de una buena personal de marca de software
 
-Cuando esté bien hecho, la personalizado de marca de software tiene estos atributos:
+Cuando esté bien hecho, la personal de marca de software tiene estos atributos:
 
 -   Establece un estilo y una personalidad claros y distintos.
 -   Crea una conexión emocional.
--   Tiene alta calidad.
+-   Tiene una alta calidad.
 -   Se coloca estratégicamente y se ejecuta de forma coherente.
 -   Se alinea con la estrategia general de la marca.
--   Es de larga duración... tan agradable la milésima vez como la primera.
+-   Es de larga duración... tan divertida la milésima vez como la primera.
 
 Por el contrario, los intentos deficientes de personal de marca de software tienen estos atributos:
 
@@ -46,17 +46,17 @@ Por el contrario, los intentos deficientes de personal de marca de software tien
 -   Es molesto.
 -   Está en todas partes.
 -   Tiene un aspecto personalizado sin ninguna ventaja para el usuario.
--   Se vuelve rápidamente agotador.
+-   Se vuelve rápidamente pesado.
 
-### <a name="start-with-the-product-itself"></a>Empezar con el propio producto
+### <a name="start-with-the-product-itself"></a>Comience con el propio producto.
 
-La personalción de marca de software correcta comienza con el diseño del propio producto. Un programa bien diseñado ha diseñado cuidadosamente la funcionalidad dirigida a un público objetivo adecuado. La funcionalidad única y la atención especial a los detalles hacen que las instrucciones de personalidad de marca son eficaces. Para obtener más información, [vea How to Design a Great User Experience](how-to-design-desktop-ux.md).
+La personalación de marca de software correcta comienza con el diseño del propio producto. Un programa bien diseñado tiene una funcionalidad diseñada cuidadosamente dirigida a un público objetivo adecuado. La funcionalidad única y la atención especial a los detalles hacen eficaces declaraciones de personalidad de marca. Para obtener más información, [vea How to Design a Great User Experience](how-to-design-desktop-ux.md).
 
-### <a name="carefully-choose-the-products-name"></a>Elegir cuidadosamente el nombre del producto
+### <a name="carefully-choose-the-products-name"></a>Elija cuidadosamente el nombre del producto.
 
-Los nombres de productos excelentes impulsan marcas seguras. Un nombre de producto de software excelente es fácil de recordar y transmite de forma concisa la ventaja del producto, proporcionando distinción en un mercado abarrotado. Contrate a un profesional de personalización de marca para que le ayude a elegir el nombre de producto correcto. A largo plazo, un nombre bien elegido es mucho más importante para el trabajo de personalización de marca que detalles como logotipos, combinaciones de colores y tema de control.
+Los nombres de productos excelentes impulsan marcas seguras. Un nombre de producto de software excelente es fácil de recordar y transmite de forma concisa la ventaja del producto, lo que proporciona distinción en un mercado abarrotado. Contrate a un profesional de personalización de marca para que le ayude a elegir el nombre de producto adecuado. A largo plazo, un nombre bien elegido es mucho más importante para el trabajo de personalización de marca que los detalles como logotipos, combinaciones de colores y control de los aspectos.
 
-### <a name="what-to-brand"></a>Qué se va a marcar
+### <a name="what-to-brand"></a>Qué marca se va a marcar
 
 Los elementos de personal de marca de software se pueden clasificar de la siguiente manera:
 
@@ -71,12 +71,12 @@ Los elementos de personal de marca de software se pueden clasificar de la siguie
 
 Algunos elementos de personal de marca principales de Windows Vista.
 
-Los elementos de personal de marca principales tienden a llamar mucho la atención, por lo que deben usarse con moderación. **Limite el uso de elementos de personal de marca principales a algunas experiencias estratégicas.** No se recomiendan sonidos específicos del producto para la mayoría de los programas.
+Los elementos de personal de marca principales tienden a llamar mucha atención, por lo que deben usarse con moderación. **Limite el uso de elementos de personal de marca principales a algunas experiencias estratégicas.** No se recomiendan sonidos específicos del producto para la mayoría de los programas.
 
 **Secundario**
 
 -   Formas de elementos
--   Estilos gráficos y iconos
+-   Estilos gráficos y de icono
 -   Elementos gráficos secundarios
 -   Colores de énfénfes
 -   Animaciones
@@ -84,49 +84,49 @@ Los elementos de personal de marca principales tienden a llamar mucho la atenci�
 -   Shadows
 -   Fondos y transparencia
 
-![cifras de marcas y calendarios usados para la personalción de marca ](images/exper-branding-image3.png)
+![cifras de stamps y calendarios usados para la personalción de marca ](images/exper-branding-image3.png)
 
-![figura de diseño en colores sólidos y primarios ](images/exper-branding-image4.png)![figura de diseño azul y verde con forma de cinta de opciones ](images/exper-branding-image5.png)
+![figura de diseño en colores sólidos y primarios ](images/exper-branding-image4.png)![ilustración de diseño de cinta de opciones azul y verde ](images/exper-branding-image5.png)
 
 Algunos elementos de personal de marca secundarios de Windows Vista.
 
-Los elementos de personalidad de marca secundarios tienden a ser más sutiles y, por eso, se pueden usar con más frecuencia. Aunque algunos de estos elementos secundarios de personalismo de marca pueden no tener mucho impacto individualmente, cuando se reúnen pueden proporcionar el carácter y el estilo del producto. Las transiciones pueden tener más impacto que los gráficos fijos, que los usuarios aprenden a ignorar con el tiempo. Prefiere el nivel secundario de personal de marca sobre el nivel principal.
+Los elementos de personalidad de marca secundarios tienden a ser más sutiles y, por eso, se pueden usar con más frecuencia. Aunque es posible que algunos de estos elementos de personalismo de marca secundarios no tengan mucho impacto individualmente, cuando se reúnen pueden proporcionar el carácter y el estilo del producto. Las transiciones pueden tener más impacto que los gráficos fijos, que los usuarios aprenden a omitir con el tiempo. Prefiere el nivel secundario de personal de marca en lugar del nivel principal.
 
 **Terciario**
 
-Por último, hay otra categoría de elementos de personal de marca que hay que tener en cuenta.
+Por último, hay otra categoría de elementos de personal de marca que se deben tener en cuenta.
 
 -   Marcos de ventana personalizados
 -   Controles personalizados
 
-Aunque es adecuado que determinados tipos de programas (como juegos) creen una experiencia completamente distinta y envolvente basada en controles y ventanas personalizados, la mayoría de los programas deben usar las variedades estándar. Hacer que los programas parezcan extraños y actúen como extraños no hace que se cree una identidad de marca segura. En su lugar, el objetivo debe ser crear un programa con carácter, un producto que destaca mientras se adapta.
+Aunque es adecuado que determinados tipos de programas (como juegos) creen una experiencia completamente distinta y envolvente basada en controles y ventanas personalizados, la mayoría de los programas deben usar las variedades estándar. Hacer que los programas parezcan extraños y actúen como extraños no hace que sea una identidad de marca sólida. En su lugar, el objetivo debe ser crear un programa con carácter, un producto que destaca al ajustarse.
 
-### <a name="where-to-brand"></a>Dónde se va a marcar
+### <a name="where-to-brand"></a>Dónde se debe marcar
 
-No todo debe tener marca. Algunos elementos de personal de marca colocados estratégicamente pueden dar una impresión más eficaz que la cobertura de elementos de personal de marca sin coordinación en todas partes.
+No es necesario usar la marca de todo. Algunos elementos de personal de marca colocados estratégicamente pueden dar una impresión más eficaz que la cobertura de elementos de personal de marca sin coordinación en todas partes.
 
-Centre su trabajo de personalización de marca en las experiencias especiales del programa. Estos son los lugares que tienen el impacto más emocional, como:
+Centre su esfuerzo de personalización de marca en las experiencias especiales del programa. Estos son los lugares que tienen el mayor impacto emocional, como:
 
--   La [primera experimenta](exper-first-exper.md), especialmente cuando el programa se usa por primera vez.
+-   La [primera experiencia](exper-first-exper.md)es , especialmente cuando el programa se usa por primera vez.
 -   Ventana principal o página principal.
 -   Inicio y finalización de tareas importantes.
 -   Transiciones importantes entre tareas o áreas de programa.
 -   Tiempo de espera durante las tareas de ejecución larga.
--   Inicie sesión y cierre sesión.
+-   Inicie sesión y cierre la sesión.
 
 ### <a name="where-not-to-brand"></a>¿Dónde no se debe marcar?
 
-Aunque puede usar cualquier elemento del programa como una oportunidad de personalización de marca, no use [](glossary.md)el escritorio de Windows (incluido el área de trabajo [,](glossary.md)la barra de inicio rápido o el área de [notificación)](winenv-notification.md)para la personalización de marca.
+[Aunque](glossary.md)puede usar cualquier elemento del programa como una oportunidad de personalización de marca, no use el escritorio de Windows (incluido el área de trabajo [,](glossary.md)la barra de inicio rápido o el área de [notificación)](winenv-notification.md)para la personalización de marca.
 
-**El escritorio es el punto de entrada del usuario para Windows. Deje el usuario en control.** Use estos puntos de entrada adecuadamente: nunca los vea como maneras de promover el conocimiento del programa o su marca. Para obtener más información, vea [Escritorio.](winenv-desktop.md)
+**El escritorio es el punto de entrada del usuario Windows. Deje el usuario bajo control.** Use estos puntos de entrada adecuadamente: nunca los vea como maneras de promover el reconocimiento del programa o su marca. Para obtener más información, vea [Escritorio.](winenv-desktop.md)
 
 ### <a name="use-branding-professionals"></a>Uso de profesionales de personalización de marca
 
-La personalización de marca es una aptitud especializada que realizan mejor los profesionales experimentados. Es mucho mejor exponer a los usuarios a una personalidad de marca mínima que usar una amplia personalidad de marca que sea ineficaz e ineficaz. Trabaje con su equipo de marketing y personal de marca para crear una buena experiencia de personal de marca de un extremo a otro.
+La personalización de marca es una aptitud especializada que realizan mejor los profesionales experimentados. Es mucho mejor exponer a los usuarios a una personalidad mínima de marca que usar una amplia personalidad de marca que sea ineficaz e ineficaz. Trabaje con su equipo de marketing y personal de marca para crear una buena experiencia de personal de marca de un extremo a otro.
 
 **Si solo hace cinco cosas...**
 
-1.  Comience con el diseño del producto. La declaración de personal de marca más eficaz es satisfacer especialmente bien las necesidades de los clientes.
+1.  Comience con el diseño del producto. La declaración de personal de marca más eficaz es satisfacer las necesidades de los clientes especialmente bien.
 2.  Elija un buen nombre de producto que sea fácil de recordar, distintivo y transmita concisamente la ventaja del producto.
 3.  Piense en la personalización de marca en términos de experiencias y en la realización de una conexión emocional, no de logotipos de productos y combinaciones de colores.
 4.  Prefiere elementos de personal de marca secundarios. Limite el uso de elementos de personal de marca principales a algunas experiencias estratégicas.
@@ -136,14 +136,14 @@ La personalización de marca es una aptitud especializada que realizan mejor los
 
 ### <a name="general"></a>General
 
--   **Elija un buen nombre de producto que sea fácil de recordar, distintivo y que transmita de forma concisa la ventaja del producto.** Esta será la base de su marca.
+-   **Elija un buen nombre de producto que sea fácil de recordar, distintivo y transmita concisamente la ventaja del producto.** Esta será la base de su marca.
 -   **Centre su esfuerzo de personalización de marca en las experiencias especiales del programa,** como:
     -   La [primera experimenta](exper-first-exper.md), especialmente durante la instalación y cuando se usa el programa por primera vez.
     -   Ventana principal o página principal.
     -   Inicio y finalización de tareas importantes.
     -   Transiciones importantes entre tareas o áreas de programa.
     -   Inicie sesión y cierre la sesión.
--   **Prefiere elementos de personal de marca secundarios.** Limite el uso de elementos de personal de marca principales a algunas experiencias estratégicas. Por ejemplo, considere la posibilidad de usar gráficos secundarios, transiciones y color en lugar de logotipos. Además, evite elementos de personal de marca principales destacados en lugares en los que los usuarios dedican mucho tiempo, ya que se pueden percibir como desordenados.
+-   **Prefiere elementos de personal de marca secundarios.** Limite el uso de elementos de personal de marca principales a algunas experiencias estratégicas. Por ejemplo, considere la posibilidad de usar gráficos secundarios, transiciones y color en lugar de logotipos. Además, evite elementos de personal de marca principales destacados en lugares en los que los usuarios dedican mucho tiempo, ya que pueden ser percibidos como desordenados.
 
     **Aceptable:**
 
@@ -195,11 +195,11 @@ La personalización de marca es una aptitud especializada que realizan mejor los
 ### <a name="splash-screens"></a>Pantallas de presentación
 
 -   **No use pantallas de presentación para personal de marca.** Evite usar pantallas de presentación porque pueden hacer que los usuarios asocie el programa con un rendimiento deficiente. Úsenlos solo para proporcionar comentarios y reducir la percepción de tiempo para los programas que tienen tiempos de carga inusualmente largos.
--   **No use pantallas de presentación animadas.** A menudo, los usuarios asumen que la pantalla de presentación animada es la razón de un largo tiempo de carga. Con demasiada frecuencia, esa suposición es correcta.
+-   **No use pantallas de presentación animadas.** A menudo, los usuarios suponen que la pantalla de presentación animada es el motivo de un largo tiempo de carga. Con demasiada frecuencia, esa suposición es correcta.
 
 ### <a name="sound"></a>Sonido
 
--   **Por lo general, el sonido no se recomienda solo para personal de marca.** Si usa sonido para la personal de marca:
+-   **Por lo general, el sonido no se recomienda solo para la personalción de marca.** Si usa sonido para la personal de marca:
     -   **Reproducir un sonido solo al iniciar el programa,** pero solo si el usuario inició el programa.
     -   **Sincronice el sonido con un evento visual, como** una transición de interfaz de usuario como la presentación de una ventana de programa.
 

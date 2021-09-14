@@ -4,12 +4,12 @@ ms.assetid: 1dfd5557-3f3b-4d59-9df6-e73cb1157619
 title: MFPKEY_COLORCONV_SRCTOP propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab32b1ae9093c72ef9c5d7fb19505881f6afa78b8bc45e4a86a72d87ee72184
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1f4b0eca375fa0f28f26f5b19ad31596678fbfab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120113485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269031"
 ---
 # <a name="mfpkey_colorconv_srctop-property"></a>Propiedad MFPKEY \_ COLORCONV \_ SRCTOP
 
@@ -35,11 +35,11 @@ VT \_ I4
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3be2b2174a4f6e76a211e0da43dab85e81c490495173f2d2323caa71a463de79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf9b202da786f6ec87ceca9816c2a4fc86776577
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170477"
 ---
 # <a name="d3dxcolormodulate-function"></a>Función D3DXColorModulate
 
@@ -75,9 +75,9 @@ Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
 Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación de combinación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXColorModulate** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXColorModulate** se puede usar como parámetro para otra función.
 
 Esta función combina dos colores multiplicando los componentes de color correspondientes, como se muestra en el ejemplo siguiente.
 

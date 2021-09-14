@@ -1,7 +1,7 @@
 ---
 description: 'Método IPortableDeviceValuesCollection::Add: el método Add agrega un elemento a la colección.'
 ms.assetid: 3b06abc4-f0ab-4b02-b3a7-360615f86a2a
-title: IPortableDeviceValuesCollection::Add (método, PortableDeviceTypes.h)
+title: Método IPortableDeviceValuesCollection::Add (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 9cc105ae553d78dd6c8a12219be8e2c42cba1e236c25a0392457b36553bd4e40
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 765100e1272fc6766e9f305f37f3b699bd96beb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266876"
 ---
-# <a name="iportabledevicevaluescollectionadd-method"></a>IPortableDeviceValuesCollection::Add (Método)
+# <a name="iportabledevicevaluescollectionadd-method"></a>IPortableDeviceValuesCollection::Add (método)
 
 El **método Add** agrega un elemento a la colección.
 
@@ -73,7 +73,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
