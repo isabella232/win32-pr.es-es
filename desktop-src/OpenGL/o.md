@@ -9,12 +9,12 @@ keywords:
 - Orthográfico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67ac321052535e531a8ec465f497500433996a4138e061e6b4baef2aae84cd59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f52c65f05f0d8ee87b8b56d295556039b5686c74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144167"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265639"
 ---
 # <a name="o-opengl"></a>O (OpenGL)
 

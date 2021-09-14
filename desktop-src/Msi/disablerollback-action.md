@@ -4,12 +4,12 @@ ms.assetid: 5510b393-1f2e-44ba-97f5-663674d55b20
 title: Acción DisableRollback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cbe500e3b810e5b06802e3a0face1da9b76441099a407882da08d5911a37d60
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 740e838a6dca2d97db616703faf24c590ab69bc4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119745375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158538"
 ---
 # <a name="disablerollback-action"></a>Acción DisableRollback
 
@@ -19,7 +19,7 @@ La acción DisableRollback deshabilita [la reversión](rollback-installation.md)
 
 No hay restricciones de secuencia.
 
-## <a name="actiondata-message"></a>ActionData Message
+## <a name="actiondata-message"></a>Mensaje ActionData
 
 No hay ningún mensaje ActionData.
 

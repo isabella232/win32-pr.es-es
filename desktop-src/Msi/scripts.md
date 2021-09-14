@@ -4,12 +4,12 @@ ms.assetid: d859713f-b8b8-4eb0-b678-52b5d880bd20
 title: Scripts
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af49e1863d43956e8ec799e467d8391873458d1879f78455abda9ee06fb739aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 114a11c12e94dd2f3285757bd01167f14b412ac6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274124"
 ---
 # <a name="scripts"></a>Scripts
 
@@ -26,7 +26,7 @@ Los siguientes tipos de acción personalizados básicos llaman a funciones escri
 | Tipo de acción personalizada                                 | Descripción                                                                                    |
 |----------------------------------------------------|------------------------------------------------------------------------------------------------|
 | [Tipo de acción personalizada 5](custom-action-type-5.md)   | JScript archivo almacenado en una secuencia de tabla binaria.                                                  |
-| [Tipo de acción personalizada 21](custom-action-type-21.md) | JScript que se instala con un producto.                                                 |
+| [Tipo de acción personalizada 21](custom-action-type-21.md) | JScript archivo que se instala con un producto.                                                 |
 | [Tipo de acción personalizada 53](custom-action-type-53.md) | JScript texto especificado por un valor de propiedad.                                                    |
 | [Tipo de acción personalizada 37](custom-action-type-37.md) | JScript texto almacenado en la columna Destino de la [tabla CustomAction.](customaction-table.md)  |
 | [Tipo de acción personalizada 6](custom-action-type-6.md)   | Archivo VBScript almacenado en una [secuencia de tabla](binary-table.md) binaria.                             |
@@ -39,7 +39,7 @@ Los siguientes tipos de acción personalizados básicos llaman a funciones escri
  
 
 > [!Note]  
-> El instalador ejecuta acciones personalizadas de script directamente y no usa el host Windows script. El **objeto WScript** no se puede usar dentro de una acción personalizada de script porque este objeto lo proporciona Windows host de script. Los objetos del modelo de objetos host de script de Windows solo se pueden usar en acciones personalizadas si el host de script de Windows está instalado en el equipo mediante la creación de nuevas instancias del objeto , con una llamada a CreateObject y proporcionando el ProgId del objeto (por ejemplo, "WScript.Shell"). Según el tipo de acción personalizada de script, se puede denegar el acceso a algunos objetos y métodos del modelo de objetos host de script de Windows por motivos de seguridad.
+> El instalador ejecuta acciones personalizadas de script directamente y no usa el host Windows script. El **objeto WScript** no se puede usar dentro de una acción personalizada de script porque este objeto lo proporciona Windows host de script. Los objetos del modelo de objetos host de script de Windows solo se pueden usar en acciones personalizadas si el host de script de Windows está instalado en el equipo mediante la creación de nuevas instancias del objeto , con una llamada a CreateObject y proporcionando el ProgId del objeto (por ejemplo, "WScript.Shell"). Según el tipo de acción personalizada de script, se puede denegar el acceso a algunos objetos y métodos del modelo de objetos Windows Host de script por motivos de seguridad.
 
  
 

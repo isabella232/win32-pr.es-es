@@ -4,12 +4,12 @@ ms.assetid: aff466b2-6e10-4d61-a78d-bad827a470ee
 title: ToolTipMaxWidth (propiedad)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcde8f12500eb80364d128a85e8306271ed57e305d6f54f515dc0a3257211cd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a12d1e87265c88ffb6524b68be887c346237b9a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118951604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275071"
 ---
 # <a name="tooltipmaxwidth-property"></a>ToolTipMaxWidth (propiedad)
 
@@ -28,7 +28,7 @@ La propiedad establece o recupera el ancho máximo de la información sobre herr
 
 Devuelve el ancho máximo de la información sobre herramientas de la aplicación como un entero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es de lectura y escritura con un valor predeterminado de 200 píxeles.
 

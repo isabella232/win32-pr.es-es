@@ -4,12 +4,12 @@ ms.assetid: fb1ef0ba-5183-4708-a47d-26c83584df6c
 title: Atributo de control FixedSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40094001115dc6e196e66075abe7ace7c93c8e715818ad34235f80caf8306a06
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b4ee044860b79e56998da68dc6ddf4926e9115ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119649705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074773"
 ---
 # <a name="fixedsize-control-attribute"></a>Atributo de control FixedSize
 
@@ -29,7 +29,7 @@ Si no se establece este bit, la imagen se ajusta para ajustarse al control.
 
 [RadioButtonGroup](radiobuttongroup-control.md)
 
-## <a name="value"></a>Valor
+## <a name="value"></a>Value
 
 
 
@@ -41,9 +41,9 @@ Si no se establece este bit, la imagen se ajusta para ajustarse al control.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para establecer este atributo en un control, incluya el bit FixedSize en la columna Atributos del registro del control en la [tabla Control](control-table.md).
+Para establecer este atributo en un control , incluya el bit FixedSize en la columna Attributes del registro del control en la [tabla Control](control-table.md).
 
 Establecer el bit FixedSize no tiene ningún efecto [](icon-control-attribute.md) en [checkBox,](checkbox-control.md) [](bitmap-control-attribute.md) [PushButton](pushbutton-control.md)o [RadioButtonGroup](radiobuttongroup-control.md) si no se han establecido ni el mapa de bits ni el icono.
 

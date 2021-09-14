@@ -5,16 +5,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 9494758a-af8c-4056-991e-31e152c181f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9abed3641ca5bd3b4bec8924fd18366233ecc3e2955925346fc79ecbe3cb99e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 600cd9f77e56c0d64b17e0853b850244ab3c2564
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259748"
 ---
 # <a name="i-rpc"></a>I (RPC)
 
-[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H I J K L [M](l-glos.md) [N](m-glos.md) [](n-glos.md) [O](o-glos.md) [P P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
+[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H I J K [L](l-glos.md) M [N](m-glos.md) [O](n-glos.md) [](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
 
 <dl> <dt>
 
@@ -49,7 +49,7 @@ Protocolo de comunicaciones de capa de red sin conexión. Consulte también [*da
 <span id="_rpc_ipx_glos"></span><span id="_RPC_IPX_GLOS"></span>**Internetwork Packet Exchange (IPX)**
 </dt> <dd>
 
-Protocolo de comunicación NetWare deCard que usa sockets [*de datagramas*](d-glos.md) para enrutar paquetes de información a través de redes de área local y redes de área extensa.
+Protocolo de comunicación NetWare deCard que usa [*sockets de datagramas*](d-glos.md) para enrutar paquetes de información a través de redes de área local y redes de área extensa.
 
 </dd> <dt>
 

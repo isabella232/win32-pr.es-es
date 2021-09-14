@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b12d3565938dbc963a720333bbbba23a42d0d2e775297af4de3c2f2c1362760e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fbf69bfb16f9c83462bbe6b53c86f319b3d09623
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071479"
 ---
 # <a name="gluendpolygon-function"></a>función gluEndPolygon
 
@@ -53,7 +53,7 @@ Objeto de teselación (creado [**con gluNewTess**](glunewtess.md)).
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use [**gluBeginPolygon y**](glubeginpolygon.md) **gluEndPolygon** para delimitar la definición de un polígono no convexa.
 
@@ -61,7 +61,7 @@ Use [**gluBeginPolygon y**](glubeginpolygon.md) **gluEndPolygon** para delimitar
 2.  Defina los contornos del polígono mediante una llamada [**a gluTessVertex**](glutessvertex.md) para cada vértice y [**gluNextContour**](glunextcontour.md) para iniciar cada nuevo contorno.
 3.  Llame **a gluEndPolygon** para indicar el final de la definición.
 
-    Una vez que se llama a **gluEndPolygon,** el polígono se tesela y los triángulos resultantes se describen a través de devoluciones de llamada. Para obtener descripciones de las funciones de devolución de llamada, [*vea gluTessCallback*](glutess.md).
+    Una vez que se llama a **gluEndPolygon,** el polígono se tesela y los triángulos resultantes se describen mediante devoluciones de llamada. Para obtener descripciones de las funciones de devolución de llamada, [*vea gluTessCallback*](glutess.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -84,7 +84,7 @@ gluEndPolygon(tess);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

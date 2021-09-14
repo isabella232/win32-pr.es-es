@@ -4,16 +4,16 @@ ms.assetid: 221aae7b-3a7c-4995-ae78-50d97de436d8
 title: Nombres de configuración regional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fed4c09900544e96c0f05166d1f4054972e9d8ff89fc108c185695a7506859bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9808db94615cba4416c12995b9c969eaaf5a3fee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119147408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274436"
 ---
 # <a name="locale-names"></a>Nombres de configuración regional
 
-Un [nombre de configuración](locales-and-languages.md) regional se basa en las convenciones de etiquetado de idioma de RFC 4646 (Windows Vista y versiones posteriores) y se representa mediante [LOCALE \_ SNAME](locale-sname.md). Por lo general, se usa `<language>-<REGION>` el patrón . En este caso, el idioma es un código de idioma ISO 639 en minúsculas. Los códigos de ISO 639-1 se usan cuando están disponibles. De lo contrario, se usan códigos de ISO 639-2/T. REGION especifica un identificador de país o región ISO 3166-1 en mayúsculas. Por ejemplo, el nombre de la configuración regional para inglés (Estados Unidos) es "en-US" y el nombre de la configuración regional de Divehi (Vanos) es "dv-MV".
+Un [nombre de configuración](locales-and-languages.md) regional se basa en las convenciones de etiquetado de idioma de RFC 4646 (Windows Vista y versiones posteriores) y se representa mediante [LOCALE \_ SNAME](locale-sname.md). Por lo general, se usa `<language>-<REGION>` el patrón . En este caso, el idioma es un código de idioma ISO 639 en minúsculas. Los códigos de ISO 639-1 se usan cuando están disponibles. De lo contrario, se usan códigos de ISO 639-2/T. REGION especifica un identificador de país o región ISO 3166-1 en mayúsculas. Por ejemplo, el nombre de la configuración regional para inglés (Estados Unidos) es "en-US" y el nombre de la configuración regional de Divehi (Vervas) es "dv-MV".
 
 > [!Note]  
 > La constante [LOCALE \_ NAME MAX \_ \_ LENGTH](locale-name-constants.md) proporciona la longitud máxima de un nombre de configuración regional. Incluye espacio para un carácter nulo de terminación.

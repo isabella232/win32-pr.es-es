@@ -17,14 +17,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 917cf6fc56b15fc3bb07a76b6256499894a3af566e8c40ba61ca6759db7eac11
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b9b119fd601fbb6788f34640fde8c779c4a2bff9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071177"
 ---
-# <a name="winbio_ansi_381_img_acq-constants"></a>Constantes ACQ de IMG DE WINBIO \_ ANSI \_ 381 \_ \_
+# <a name="winbio_ansi_381_img_acq-constants"></a>Constantes DE ACQ de IMG DE WINBIO \_ ANSI \_ 381 \_ \_
 
 Las siguientes constantes se pueden usar para especificar los niveles de adquisición de imágenes:
 
@@ -39,7 +39,7 @@ Las siguientes constantes se pueden usar para especificar los niveles de adquisi
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

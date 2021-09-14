@@ -4,12 +4,12 @@ ms.assetid: d959769d-113f-4af2-89d4-ad3f5322de33
 title: Tabla MsiShortcutProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d7cf51d8016cdc87008a6cc9a20daee1f35131af7ea0f5827c67da7f45a6e46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f295feabd6ff9b1677fdcf47791959b0fbb8a920
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118944432"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074361"
 ---
 # <a name="msishortcutproperty-table"></a>Tabla MsiShortcutProperty
 
@@ -68,7 +68,7 @@ Se pueden establecer varias propiedades en un acceso directo. Si la misma propie
 
 Windows El instalador solo puede establecer propiedades de acceso directo cuando el acceso directo está instalado o reinstalado. Una revisión que no reinstala un acceso directo que ya se ha instalado no actualiza las propiedades del acceso directo. Una revisión puede actualizar las propiedades incluyendo una tabla [de métodos abreviados](shortcut-table.md) en el paquete de revisión y reinstalando el acceso directo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [Windows mensaje](windows-installer-error-messages.md) de error 1946 del instalador se devuelve como una advertencia y la instalación continúa si Windows Installer no puede establecer una propiedad de acceso directo especificada en la tabla MsiShortcutProperty.
 

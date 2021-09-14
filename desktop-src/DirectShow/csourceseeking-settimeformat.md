@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b4fc3e4fef02b5ed2a0d531c48d9503d4703d16e4353f46ff5b233bc12ebab16
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fdb3889ecfa5bdcd49b4054822a2b2d09df58fa6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119526125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072254"
 ---
 # <a name="csourceseekingsettimeformat-method"></a>Método CSourceSeeking.SetTimeFormat
 
@@ -45,7 +45,7 @@ HRESULT SetTimeFormat(
 *pFormat* 
 </dt> <dd>
 
-Puntero a un GUID de formato de hora. Consulte [**GUID de formato de hora.**](time-format-guids.md)
+Puntero a un GUID de formato de hora. Consulte [**GUID de formato de hora**](time-format-guids.md).
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El único formato de hora admitido por la clase base es TIME \_ FORMAT \_ MEDIA TIME \_ (unidades de 100 nanosegundos).
 
@@ -80,7 +80,7 @@ El único formato de hora admitido por la clase base es TIME \_ FORMAT \_ MEDIA 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

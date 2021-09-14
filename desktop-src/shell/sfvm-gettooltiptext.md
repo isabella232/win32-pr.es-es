@@ -4,12 +4,12 @@ ms.assetid: 29849218-0d30-4412-86c8-5d320bc5dd26
 title: SFVM_GETTOOLTIPTEXT mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3350d1f772cd78c97f7b57b47084c761808583dfe5396fafcdad336291a3a717
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ffea70f6051ec435e14640ac70d2e9617b11305
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117858227"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262492"
 ---
 # <a name="sfvm_gettooltiptext-message"></a>Mensaje \_ GETTOOLTIPTEXT de SFVM
 
@@ -50,7 +50,7 @@ Cadena terminada en NULL que contiene el texto de ayuda.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

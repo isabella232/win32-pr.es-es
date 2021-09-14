@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: d63cd0ed883862b727379b6fed3574d26f444eaf
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263572"
 ---
 # <a name="jetinit3-function"></a>Función JetInit3
 
@@ -68,7 +68,7 @@ Grupo de bits que especifica cero o más de las opciones enumeradas y definidas 
 | <p>JET_bitReplayIgnoreMissingDB</p> | <p>Este valor permite al usuario ejecutar la recuperación en un conjunto de archivos de registro, incluso en ausencia de las bases de datos que se asociaron al conjunto de archivos de registro en algún momento.</p> | 
 | <p>JET_bitRecoveryWithoutUndo</p> | <p>Este valor permite al usuario realizar la recuperación, pero solo hasta (sin incluir) la fase de deshacer. Con este valor, se pueden copiar y aplicar registros de transacciones adicionales.</p> | 
 | <p>JET_bitTruncateLogsAfterRecovery</p> | <p>Este valor hace que los archivos de registro se truncan durante una recuperación de software correcta.</p> | 
-| <p>JET_bitReplayMissingMapEntryDB</p> | <p>Este valor hace que una entrada de mapa de base de datos que falta se ajuste de forma predeterminada a la misma ubicación.</p> | 
+| <p>JET_bitReplayMissingMapEntryDB</p> | <p>Este valor hace que una entrada del mapa de base de datos que falta se ajuste de forma predeterminada a la misma ubicación.</p> | 
 | <p>JET_bitReplayIgnoreLostLogs</p> | <p>Este valor hace que los registros perdidos desde el final de la secuencia de registro se ignoren durante una recuperación.</p><p><strong>Windows 7:JET_bitReplayIgnoreLostLogs</strong> se introdujo en Windows 7.</p> | 
 
 
@@ -82,9 +82,9 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 Una instancia de debe inicializarse con una llamada a la función **JetInit3** antes de que la pueda usar cualquier otra que no sea la [función JetSetSystemParameter.](./jetsetsystemparameter-function.md)
 
-Una llamada a la función [JetTerm](./jetterm-function.md) destruye una instancia de , incluso si esa instancia nunca se inicializó mediante la [función JetInit.](./jetinit-function.md) Una instancia de es la unidad de capacidad de recuperación del motor de base de datos. Controla el ciclo de vida de todos los archivos usados para proteger la integridad de los datos en un conjunto de archivos de base de datos. Estos archivos incluyen el archivo de punto de comprobación y los archivos de registro de transacciones. Tenga en cuenta que no se debe llamar a [JetTerm](./jetterm-function.md) si se produce un error **en la función JetInit3.** Sin embargo, todavía se debe llamar a [JetTerm](./jetterm-function.md) para todas las instancias creadas por **JetCreateInstance2** si nunca se llamó a **JetInit3** o **si JetInit3** se realiza correctamente.
+Una instancia se destruye mediante una llamada a la función [JetTerm,](./jetterm-function.md) incluso si esa instancia nunca se inicializó mediante la [función JetInit.](./jetinit-function.md) Una instancia de es la unidad de capacidad de recuperación del motor de base de datos. Controla el ciclo de vida de todos los archivos usados para proteger la integridad de los datos en un conjunto de archivos de base de datos. Estos archivos incluyen el archivo de punto de comprobación y los archivos de registro de transacciones. Tenga en cuenta que no se debe llamar a [JetTerm](./jetterm-function.md) si se produce un error **en la función JetInit3.** Sin embargo, todavía se debe llamar a [JetTerm](./jetterm-function.md) para todas las instancias creadas por **JetCreateInstance2** si nunca se llamó a **JetInit3** o **si JetInit3** se realiza correctamente.
 
-Si la recuperación se ejecuta en un conjunto de registros para los que no están presentes todas las bases de datos relacionadas (lo que devolverá el error JET_errAttachedDatabaseMismatch en circunstancias normales) y el cliente desea que la recuperación continúe a pesar de las bases de datos que faltan, el error JET_bitReplayIgnoreMissingDB se usa para continuar con la recuperación de las bases de datos disponibles.
+Si la recuperación se ejecuta en un conjunto de registros para los que no están presentes todas las bases de datos relacionadas (lo que devolverá el error JET_errAttachedDatabaseMismatch en circunstancias normales) y el cliente desea que la recuperación continúe a pesar de las bases de datos que faltan, el error de JET_bitReplayIgnoreMissingDB se usa para continuar con la recuperación de las bases de datos disponibles.
 
 Dado que la recuperación de bloqueos no suele producirse en la misma máquina (y con la misma configuración) que en el momento del bloqueo, una base de datos normalmente no cambia de ubicación. En determinados escenarios, como mover archivos a un equipo diferente o restaurar la copia de seguridad de instantáneas en ubicaciones diferentes, esto ya no es cierto. La **función JetInit3** permite especificar una asignación (mediante las estructuras [JET_RSTINFO](./jet-rstinfo-structure.md) y [JET_RSTMAP)](./jet-rstmap-structure.md) entre la ubicación de base de datos antigua y su nueva ubicación. De hecho, solo necesita la nueva ubicación siempre y cuando los archivos de base de datos estén presentes en esa ubicación. Tan pronto como conozca las ubicaciones de las bases de datos restauradas, la firma de la base de datos se usará para identificar la base de datos a través del proceso de restauración. Solo necesitará la ubicación original de la base de datos si necesita volver a crear una base de datos, en cuyo caso se conoce la firma.
 
@@ -98,7 +98,7 @@ Para obtener más información, vea la sección "Comentarios" del [tema JetInit.
 | Requisito | Value |
 |------------|----------|
 | <p>Remoto</p> | <p>Requiere Windows Vista.</p> | 
-| <p>Server</p> | <p>Requiere Windows Server 2008.</p> | 
+| <p>Servidor</p> | <p>Requiere Windows Server 2008.</p> | 
 | <p>Encabezado</p> | <p>Declarado en Esent.h.</p> | 
 | <p>Biblioteca</p> | <p>Usa ESENT.lib.</p> | 
 | <p>Archivo DLL</p> | <p>Requiere ESENT.dll.</p> | 

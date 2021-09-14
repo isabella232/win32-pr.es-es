@@ -4,18 +4,18 @@ ms.assetid: f0199137-0a40-40ca-b3cf-ff8eef4309cc
 title: ICEM11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 157248d62f43a0b1a791220e2aeb917ba8273d31b93de69078f9876cddbd2748
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 403a36435ce2367fc356934740e6d022f5457698
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074472"
 ---
 # <a name="icem11"></a>ICEM11
 
 ICEM11 comprueba que un módulo de combinación configurable muestra la tabla [ModuleConfiguration](moduleconfiguration-table.md) y la tabla [ModuleSubstitution](modulesubstitution-table.md) en la [tabla ModuleIgnoreTable](moduleignoretable-table.md) del módulo. Esto garantiza que las herramientas de combinación que no reconocen módulos de combinación configurables (versión 2.0 anterior) no copian estas tablas en la base de datos de destino.
 
-Este ICEM está disponible en el archivo Mergemod.uu proporcionado en el SDK de Windows Installer 2.0 y versiones posteriores. Para obtener más información, [consulte Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
+Este ICEM está disponible en el archivo Mergemod.cub proporcionado en el SDK de Windows Installer 2.0 y versiones posteriores. Para obtener más información, [consulte Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
 
 ## <a name="result"></a>Resultado
 
@@ -46,7 +46,7 @@ table. These tables must be listed in the ModuleIgnoreTable table.
 
 
 
-| Tabla   | Fila              | Columna | Valor        |
+| Tabla   | Row              | Columna | Valor        |
 |---------|------------------|--------|--------------|
 | Control | Dialog1; Control1 | Texto   | \[IconKey1\] |
 

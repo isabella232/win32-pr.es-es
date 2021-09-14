@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b7d87e391336b948d0c784048baeffa7bba88b29
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370910"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265884"
 ---
 # <a name="mm_mim_open-message"></a>Mm \_ MIM \_ mensaje OPEN
 
@@ -41,14 +41,14 @@ lParam = reserved
 <span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*
 </dt> <dd>
 
-Controle el dispositivo de entrada de MIDI que se abrió.
+Identificador del dispositivo de entrada DE LÍNEA que se abrió.
 
 </dd> <dt>
 
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Reservado; no se usan.
+Reservado; no use.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Este mensaje no devuelve un valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: aa38dbe5-411d-432e-b3fe-09994fc59c75
 title: Ejemplos de consultas de base de datos mediante SQL y script
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f137927ba47c4fae5eef4534b7dfab1fa5c8fa1af2ba28d27669cc4605f836b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbd839151b40ddd5e9a265c6c370c27a4a9fd125
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158439"
 ---
 # <a name="examples-of-database-queries-using-sql-and-script"></a>Ejemplos de consultas de base de datos mediante SQL y script
 
@@ -17,15 +17,15 @@ En el kit de desarrollo de software (SDK) de Windows [Installer](platform-sdk-co
 
 **Eliminación de un registro de una tabla**
 
-La siguiente línea de comandos elimina el registro que tiene la clave principal RED de la [tabla Característica](feature-table.md) de la base de Test.msi datos.
+La siguiente línea de comandos elimina el registro que tiene la clave principal RED de la [tabla Característica](feature-table.md) de la base Test.msi datos.
 
-**Cscript WiRunSQL.vbs Test.msi "DELETE FROM \` Feature WHERE Feature \` \` \` . \` Característica \` ='RED'"**
+**Cscript WiRunSQL.vbs Test.msi "DELETE FROM \` Feature \` WHERE Feature \` \` . \` Característica \` ='RED'"**
 
 **Agregar una tabla a una base de datos**
 
 La siguiente línea de comandos agrega la [tabla Directory](directory-table.md) a la base Test.msi datos.
 
-**CScript WiRunSQL.vbs Test.msi "CREATE TABLE Directory \` \` ( \` Directory \` CHAR(72) NOT NULL, \` Directory Parent \_ \` CHAR(72), \` DefaultDir \` CHAR(255) NOT NULL LOCALIZABLE PRIMARY KEY \` Directory \` )"**
+**CScript WiRunSQL.vbs Test.msi "CREATE TABLE \` Directory ( \` Directory \` \` CHAR(72) NOT NULL, \` Directory Parent \_ \` CHAR(72), \` DefaultDir \` CHAR(255) NOT NULL LOCALIZABLE PRIMARY KEY \` Directory \` )"**
 
 **Eliminación de una tabla de una base de datos**
 
@@ -41,7 +41,7 @@ La siguiente línea de comandos agrega la columna Test a la [tabla CustomAction]
 
 **Insertar un nuevo registro en una tabla**
 
-La siguiente línea de comandos inserta un nuevo registro en la [tabla Característica](feature-table.md) de la base de Test.msi datos.
+La siguiente línea de comandos inserta un nuevo registro en la [tabla Característica](feature-table.md) de la base Test.msi datos.
 
 **Cscript WiRunSQL.vbs Test.msi "INSERT INTO \` Feature ( Feature \` \` \` . \` Característica \` , \` Característica \` . \` Elemento \_ primario de la característica , Característica \` \` \` . \` Title \` , \` Feature \` . \` Descripción \` , \` Característica \` . \` Mostrar \` , \` Característica \` . \` Nivel \` , \` Característica \` . \` Directorio \_ \` , Característica \` \` . \` Attributes \` ) VALUES ('Pista', 'Deportes','Pingos','Jugador',25,3,'SPORTDIR',2)"**
 
@@ -63,15 +63,15 @@ Tenga en cuenta que los datos binarios no se pueden insertar en una tabla direct
 
 **Modificación de un registro existente en una tabla**
 
-La siguiente línea de comandos cambia el valor existente en el campo Título a "Rendimientos". El registro actualizado tiene "Elementos" como clave principal y se encuentra en la tabla Característica de la base de Test.msi datos.
+La siguiente línea de comandos cambia el valor existente en el campo Título a "Rendimientos". El registro actualizado tiene "Ness" como clave principal y se encuentra en la tabla Feature de la base Test.msi datos.
 
-**Cscript WiRunSQL.vbs Test.msi "Update \` Feature \` SET Feature \` \` . \` Title \` ='Performances' WHERE \` Feature \` . \` Característica \` ='Seba'"**
+**Cscript WiRunSQL.vbs Test.msi "UPDATE \` Feature SET Feature \` \` \` . \` Title \` ='Performances' WHERE \` Feature \` . \` Característica \` ='Sela'"**
 
 **Selección de un grupo de registros**
 
 La siguiente línea de comandos selecciona el nombre y el tipo de todos los controles que pertenecen a ErrorDialog en la base de Test.msi datos.
 
-**CScript WiRunSQL.vbs Test.msi "SELECT \` Control , Type FROM Control WHERE Dialog \` \` \` \` \` \` \_ \` ='ErrorDialog' "**
+**CScript WiRunSQL.vbs Test.msi "SELECT \` Control \` , Type FROM Control WHERE Dialog \` \` \` \` \` \_ \` ='ErrorDialog' "**
 
 **Mantener una tabla en memoria**
 

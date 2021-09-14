@@ -4,7 +4,7 @@ description: Datos pasados a la función de devolución de llamada.
 ms.assetid: EA8E6C1E-F80B-4247-B073-C78D49A354CF
 keywords:
 - MPCALLBACK_DATA estructura heredada de Windows environment
-- PMPCALLBACK_DATA puntero de estructura heredado Windows características del entorno
+- PMPCALLBACK_DATA puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d1eb129101c341485a1e6b5763a0325cbf586a6e51e5e2875b4465696c39df8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9741ca479eeb9770a3ae8c2aedbc51a8a2643033
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117883657"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269476"
 ---
-# <a name="mpcallback_data-structure"></a>Estructura DE DATOS MPCALLBACK \_
+# <a name="mpcallback_data-structure"></a>Estructura DE DATOS \_ MPCALLBACK
 
 Datos pasados a la función de devolución de llamada.
 
@@ -57,7 +57,7 @@ typedef struct tagMPCALLBACK_DATA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ Tipo de datos especial de devolución de llamada.
 
 </dd> <dt>
 
-**Datos**
+**Data**
 </dt> <dd>
 
 Datos especiales de devolución de llamada. El puntero a la estructura adecuada depende del valor de **Type**.
@@ -119,7 +119,7 @@ Tipo: **PMPSTATUS \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ STATUS**. Vea [**DATOS DE MPSTATUS \_**](mpstatus-data.md).
+Cuando **escriba**  ==  **MPCALLBACK \_ STATUS**. Vea [**MPSTATUS \_ DATA**](mpstatus-data.md).
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Tipo: **PMPSCAN \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ SCAN**. Vea [**MPSCAN \_ DATA**](mpscan-data.md).
+Cuando **escriba**  ==  **MPCALLBACK \_ SCAN**. Consulte [**MPSCAN \_ DATA**](mpscan-data.md).
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Tipo: **PMPCLEAN \_ PRECHECK \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ PRECHECK**. Consulte [**MPCLEAN \_ PRECHECK \_ DATA**](mpclean-precheck-data.md).
+Cuando **escriba**  ==  **MPCALLBACK \_ PRECHECK**. Vea [**MPCLEAN \_ PRECHECK \_ DATA**](mpclean-precheck-data.md).
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Tipo: **PMPTHREAT \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ THREAT**. Vea [**MPTHREAT \_ DATA**](mpthreat-data.md).
+Cuando **escriba**  ==  **MPCALLBACK \_ THREAT**. Vea [**DATOS DE MPTHREAT \_**](mpthreat-data.md).
 
 </dd> <dt>
 
@@ -185,7 +185,7 @@ Tipo: **PMPSAMPLE \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ SAMPLE**. Vea [**MPSAMPLE \_ DATA**](mpsample-data.md).
+Cuando escriba  ==  **MPCALLBACK \_ SAMPLE**. Vea [**MPSAMPLE \_ DATA**](mpsample-data.md).
 
 </dd> <dt>
 
@@ -196,7 +196,7 @@ Tipo: **PMPRESERVED \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ RESERVED**. Vea [**MPRESERVED \_ DATA**](mpreserved-data.md).
+Cuando **escriba**  ==  **MPCALLBACK \_ RESERVED.** Vea [**MPRESERVED \_ DATA**](mpreserved-data.md).
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Tipo: **PMPCONFIGURATION \_ DATA**
 
 </dd> <dd>
 
-Cuando escriba  ==  **MPCALLBACK \_ CONFIGURATION \_ NOTIFICATION**. Vea [**DATOS DE MPCONFIGURATION \_**](mpconfiguration-data.md).
+Cuando escriba  ==  **MPCALLBACK \_ CONFIGURATION \_ NOTIFICATION**. Vea [**MPCONFIGURATION \_ DATA**](mpconfiguration-data.md).
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ Tipo: **PMPFASTPATH \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ FASTPATH**. Vea [**MPFASTPATH \_ DATA**](mpfastpath-data.md).
+Cuando **escriba**  ==  **MPCALLBACK \_ FASTPATH**. Consulte [**MPFASTPATH \_ DATA**](mpfastpath-data.md).
 
 </dd> <dt>
 
@@ -229,7 +229,7 @@ Tipo: **PMPEXPIRATION \_ DATA**
 
 </dd> <dd>
 
-Cuando escriba  ==  **MPCALLBACK \_ PRODUCT \_ EXPIRATION**. Vea [**MPEXPIRATION \_ DATA**](mpexpiration-data.md).
+Cuando escriba  ==  **MPCALLBACK \_ PRODUCT \_ EXPIRATION**. Vea [**DATOS DE MPEXPIRATION \_**](mpexpiration-data.md).
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ Tipo: **DATOS PRIVADOS de \_ \_ PMPIQUE**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ NIS \_ PRIVATE.** Consulte [**DATOS PRIVADOS \_ DE \_ MPZON.**](mpnis-private-data.md)
+Cuando **escriba**  ==  **MPCALLBACK \_ NIS \_ PRIVATE.** Consulte [**DATOS PRIVADOS \_ de \_ MPNIS.**](mpnis-private-data.md)
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ Tipo: **PMPENDOFLIFE \_ DATA**
 
 </dd> <dd>
 
-Cuando **escriba**  ==  **MPCALLBACK \_ ENDOFLIFE**. Vea [**MPENDOFLIFE \_ DATA**](mpendoflife-data.md).
+Cuando **escriba**  ==  **MPCALLBACK \_ ENDOFLIFE**. Vea [**DATOS DE MPENDOFLIFE \_**](mpendoflife-data.md).
 
 </dd> <dt>
 
@@ -281,11 +281,11 @@ Cuando **escriba**  ==  **MPCALLBACK \_ MALWARETOAST**. Vea [**MPMALWARETOAST \_
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -293,10 +293,10 @@ Cuando **escriba**  ==  **MPCALLBACK \_ MALWARETOAST**. Vea [**MPMALWARETOAST \_
 
 <dl> <dt>
 
-[**TIPO \_ MPCALLBACK**](mpcallback-type.md)
+[**TIPO DE DEVOLUCIÓN DE \_ LLAMADA MPCALLBACK**](mpcallback-type.md)
 </dt> <dt>
 
-[**DATOS \_ MPCLEAN**](mpclean-data.md)
+[**MPCLEAN \_ DATA**](mpclean-data.md)
 </dt> <dt>
 
 [**MPCLEAN \_ PRECHECK \_ DATA**](mpclean-precheck-data.md)
@@ -311,7 +311,7 @@ Cuando **escriba**  ==  **MPCALLBACK \_ MALWARETOAST**. Vea [**MPMALWARETOAST \_
 [**DATOS DE \_ MPEXPIRATION**](mpexpiration-data.md)
 </dt> <dt>
 
-[**DATOS DE \_ MPFASTPATH**](mpfastpath-data.md)
+[**DATOS \_ MPFASTPATH**](mpfastpath-data.md)
 </dt> <dt>
 
 [**DATOS DE \_ MPHEALTH**](mphealth-data.md)
@@ -320,22 +320,22 @@ Cuando **escriba**  ==  **MPCALLBACK \_ MALWARETOAST**. Vea [**MPMALWARETOAST \_
 [**DATOS MPMALWARETOAST \_**](mpmalwaretoast-data.md)
 </dt> <dt>
 
-[**DATOS PRIVADOS DE MPNIS \_ \_**](mpnis-private-data.md)
+[**DATOS PRIVADOS DE MPNI \_ \_**](mpnis-private-data.md)
 </dt> <dt>
 
 [**MPNOTIFY**](mpnotify.md)
 </dt> <dt>
 
-[**DATOS ALMACENADOS EN \_ MPRESERVED**](mpreserved-data.md)
+[**DATOS \_ MPRESERVED**](mpreserved-data.md)
 </dt> <dt>
 
-[**DATOS DE \_ MPSAMPLE**](mpsample-data.md)
+[**DATOS \_ MPSAMPLE**](mpsample-data.md)
 </dt> <dt>
 
-[**DATOS \_ DE MPSCAN**](mpscan-data.md)
+[**DATOS DE \_ MPSCAN**](mpscan-data.md)
 </dt> <dt>
 
-[**DATOS DE \_ MPSIGUPDATE**](mpsigupdate-data.md)
+[**MPSIGUPDATE \_ DATA**](mpsigupdate-data.md)
 </dt> <dt>
 
 [**DATOS DE \_ MPSTATUS**](mpstatus-data.md)

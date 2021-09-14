@@ -1,10 +1,10 @@
 ---
 title: Método INapSystemHealthAgentCallback CompareSoHRequests (NapSystemHealthAgent.h)
-description: Sha lo usa para comparar las solicitudes de SoH.
+description: SHA lo usa para comparar las solicitudes SoH.
 ms.assetid: 14ba189a-e745-44b0-b729-522087d4e08b
 keywords:
 - Nap del método CompareSoHRequests
-- Método NAP de CompareSoHRequests, interfaz INapSystemHealthAgentCallback
+- CompareSoHRequests method NAP , INapSystemHealthAgentCallback interface
 - INapSystemHealthAgentCallback interface NAP , CompareSoHRequests method
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3af26786c8ef021794876d8876ae5d8faee65b8cbbfc39b434b000ff502c64c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c6713f3de47cfbde6df67662f89ab3c094d0674
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939440"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071645"
 ---
 # <a name="inapsystemhealthagentcallbackcomparesohrequests-method"></a>Método INapSystemHealthAgentCallback::CompareSoHRequests
 
@@ -59,14 +59,14 @@ Puntero a [**SoHRequest a**](/windows/win32/api/naptypes/ns-naptypes-soh) la izq
 *rhs* \[ En\]
 </dt> <dd>
 
-Puntero a [**SoHRequest a**](/windows/win32/api/naptypes/ns-naptypes-soh) la derecha de la operación de comparación.
+Puntero a [**SoHRequest a la**](/windows/win32/api/naptypes/ns-naptypes-soh) derecha de la operación de comparación.
 
 </dd> <dt>
 
 *isEqual* \[ out\]
 </dt> <dd>
 
-Puntero a un **BOOL que** es **TRUE si** *lhs* y *rhs* son semánticamente iguales y **FALSE en** caso contrario.
+Puntero a un **BOOL que** es **TRUE si** *lhs* y *rhs* son semánticamente iguales y **FALSE** en caso contrario.
 
 </dd> </dl>
 
@@ -85,15 +85,15 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El sistema NAP declara este método de devolución de llamada y lo va a implementar el escritor SHA.
 
-Sha debe comparar los SoH y devolver **TRUE** si los SoH son semánticamente iguales. NapAgent usa esta información para determinar si se debe iniciar un intercambio de SoH debido al cambio de estado de la máquina cliente.
+Sha debe comparar los SoH y devolver **TRUE** si los SoHs son semánticamente iguales. NapAgent usa esta información para determinar si se debe iniciar un intercambio de SoH debido al cambio de estado de la máquina cliente.
 
-Si los SHA han puesto los ID incrementales o las marcas de tiempo en su SoH, los SoH pueden ser semánticamente iguales (es decir, pueden transmitir la misma información de estado), pero pueden ser diferentes en cuanto a bytes. Las SHA deben implementar esta función para comprobar la igualdad semántica de los SoH.
+Si las SHA han puesto los ID incrementales o las marcas de tiempo en su SoH, los SoH pueden ser iguales semánticamente (es decir, pueden transmitir la misma información de estado), pero pueden ser desiguales en cuanto a bytes. Las SHA deben implementar esta función para comprobar la igualdad semántica de los SoH.
 
-Si los SHA no han puesto marcas de tiempo o identificadores en sus SoH, pueden optar por no implementar esta función y devolver **E \_ NOTIMPL**. En este caso, NapAgent realiza una comparación por bytes en [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh).
+Si las SHA no han puesto marcas de tiempo o identificadores en sus soHs, pueden optar por no implementar esta función y devolver **E \_ NOTIMPL**. En este caso, NapAgent realiza una comparación por bytes en [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Si los SHA no han puesto marcas de tiempo o identificadores en sus SoH, pueden o
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

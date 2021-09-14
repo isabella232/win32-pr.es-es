@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 6adaa0f4884ad275137a6c949dbc466416006f33bb6603dc61e87153d9b23361
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58ad88c9f975455bdd2d77a0ef8ee028d9027d9f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071571"
 ---
 # <a name="lanprofile-element"></a>Elemento LANProfile
 
@@ -76,14 +76,14 @@ El espacio de nombres de destino para el elemento LANProfile es `https://www.mic
 
 | Elemento                                                                 | Tipo    | Descripción                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Msm**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contiene la configuración del módulo específico del medio (MSM). <br/>                                                                               |
+| [**MSM**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contiene la configuración del módulo específico del medio (MSM). <br/>                                                                               |
 | [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Especifica si el servicio de configuración automática para redes cableadas intentará la autenticación de puerto mediante 802.1X. <br/>      |
 | [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1X para la autenticación de puertos. <br/> |
 | [**Seguridad**](lan-profileschema-security-msm-element.md)              |         | Contiene la configuración de seguridad. <br/>                                                                                                  |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para ver la lista de elementos secundarios en una estructura similar a un árbol, vea Elementos de esquema de [perfil DE \_ LAN.](lan-profileschema-elements.md)
 

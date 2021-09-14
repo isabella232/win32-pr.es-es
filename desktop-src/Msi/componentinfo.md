@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a59aa1d9f7bdc5babc29461ca90c01b6fe604482cb78ba6549e782b1e34d54b5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1890ff127f60188deae8fdad251e44b3edb614f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119252005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158829"
 ---
 # <a name="componentinfo-object"></a>Objeto ComponentInfo
 
 El objeto ComponentInfo representa detalles adicionales sobre un componente que se pueden obtener a través de una llamada desde MsiGetComponentPathEx.
 
-**[Windows Instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Este objeto está disponible a partir de Windows Installer 5.0.
+**[Windows instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Este objeto está disponible a partir de Windows Installer 5.0.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto ComponentInfo** tiene estos tipos de miembros:
 
@@ -38,10 +38,10 @@ El **objeto ComponentInfo** tiene estas propiedades.
 
 
 
-| Propiedad                                                        | Descripción                                                 |
+| Propiedad.                                                        | Descripción                                                 |
 |:----------------------------------------------------------------|:------------------------------------------------------------|
 | [**ComponentCode**](componentinfo-componentcode.md)<br/> | Código de componente del componente en cuestión.<br/> |
-| [**Path**](componentinfo-componentcode.md)<br/>          | Ruta de acceso del componente.<br/>                       |
+| [**Camino**](componentinfo-componentcode.md)<br/>          | Ruta de acceso del componente.<br/>                       |
 | [**Estado**](componentinfo-state.md)<br/>                 | Estado del componente.<br/>                      |
 
 
@@ -60,7 +60,7 @@ El **objeto ComponentInfo** tiene estas propiedades.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

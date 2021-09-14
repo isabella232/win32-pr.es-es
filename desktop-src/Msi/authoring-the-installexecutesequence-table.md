@@ -4,12 +4,12 @@ ms.assetid: 245b576b-96cc-4eab-8848-5ff78ba32873
 title: Creación de la tabla InstallExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ff6b8a551b141b5fc3f4d15318f2a6d98ff834cd33a572d542563adf55447b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7aa09895d5e5d2543b5594f4795734d26163a4f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118639176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159011"
 ---
 # <a name="authoring-the-installexecutesequence-table"></a>Creación de la tabla InstallExecuteSequence
 

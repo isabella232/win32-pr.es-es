@@ -4,12 +4,12 @@ ms.assetid: 10064f5c-5563-44f8-afb5-c6c77991e13c
 title: Desarrollo de aplicaciones DE LAN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32cc647069577a2ff3b137573b85308aa66e685df2310c2ea01973d19d1dc0d0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fb4a3278b4cc70969c1aa968de895d99fd3363a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119822775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274732"
 ---
 # <a name="development-of-mui-applications"></a>Desarrollo de aplicaciones DE LAN
 
@@ -37,7 +37,7 @@ Al planear la aplicación DEA, primero debe decidir los idiomas de la interfaz d
 En esta sección se describen las posibilidades de crear los recursos del lenguaje de interfaz de usuario para la aplicación. Para obtener más información, vea [Preparar recursos.](preparing-resources.md)
 
 > [!Note]  
-> En los sistemas operativos Windows Vista, normalmente se crean aplicaciones estáticas y empaquetadas por separado localizadas de un solo idioma con los idiomas admitidos por las secciones de recursos incluidas en los archivos ejecutables. Este tipo de implementación está obsoleto en gran medida y se recomienda elegir una de las otras técnicas de creación de recursos que se describen en esta sección, compatible con Windows Vista y versiones posteriores. A continuación, se puede hacer que la aplicación se ejecute en sistemas operativos Windows Vista mediante el uso [**de LoadMUILibrary**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya).
+> En los sistemas operativos Windows Vista, normalmente se crean aplicaciones estáticas y empaquetadas por separado localizadas en un solo idioma con los idiomas admitidos por las secciones de recursos incluidas en los archivos ejecutables. Este tipo de implementación está obsoleto en gran medida y se recomienda elegir una de las otras técnicas de creación de recursos que se describen en esta sección, compatible con Windows Vista y versiones posteriores. A continuación, se puede hacer que la aplicación se ejecute en sistemas operativos Windows Vista mediante el uso de [**LoadMUILibrary**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya).
 
  
 

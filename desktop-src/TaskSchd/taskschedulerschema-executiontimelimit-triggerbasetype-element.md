@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 6e958c6a2b873bb78e66645ce2a2ae8100e2acbc
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259375"
 ---
 # <a name="executiontimelimit-triggerbasetype-element"></a>Elemento ExecutionTimeLimit (triggerBaseType)
 
@@ -48,9 +48,9 @@ El tipo complejo [**triggerBaseType**](taskschedulerschema-boottriggertype-compl
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para el desarrollo de scripting, el límite de tiempo de ejecución se especifica medianteTrigger.Exe [**propiedad cutionTimeLimit**](trigger-executiontimelimit.md) heredada por todos los objetos de desencadenador.
+Para el desarrollo de scripting, el límite de tiempo de ejecución se especifica mediante la propiedad [**Trigger.ExecutionTimeLimit**](trigger-executiontimelimit.md) heredada por todos los objetos de desencadenador.
 
 Para el desarrollo de C++, el límite de tiempo de ejecución se especifica mediante la propiedad [**ITrigger::ExecutionTimeLimit**](/windows/desktop/api/taskschd/nf-taskschd-itrigger-get_executiontimelimit) heredada por todas las interfaces de desencadenador.
 
@@ -58,14 +58,14 @@ Para el desarrollo de C++, el límite de tiempo de ejecución se especifica medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

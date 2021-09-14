@@ -10,11 +10,11 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: b30a1c6cb31038d69c9feb85f0382fd5f4bb89bf
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786711"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262527"
 ---
 # <a name="explorer-data-provider-sample"></a>Ejemplo del proveedor de datos de Explorer
 
@@ -44,7 +44,7 @@ En este tema se incluyen las siguientes secciones.
 
 | Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Ejemplo de ExplorerDataProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility/explorerdataprovider) |
+| GitHub  | [Ejemplo ExplorerDataProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility/explorerdataprovider) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
@@ -53,14 +53,14 @@ Para compilar el ejemplo desde el símbolo del sistema:
 1.  Abra la ventana del símbolo del sistema y vaya al directorio **del proyecto ExplorerDataProvider.**
 2.  Escriba `msbuild ExplorerDataProvider.sln`.
 
-Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
+Para compilar el ejemplo mediante Microsoft Visual Studio (preferido):
 
-1.  Abra Windows explorer y vaya al directorio del proyecto **ExplorerDataProvider.**
+1.  Abra Windows explorador y vaya al directorio del proyecto **ExplorerDataProvider.**
 2.  Haga doble clic en el icono del archivo ExplorerDataProvider.sln para abrir el proyecto en Visual Studio.
 3.  En el menú **Compilar**, seleccione **Compilar solución**. El archivo DLL se compilará en el directorio \\ debug o \\ release predeterminado.
 
 > [!Note]  
-> En la versión de este ejemplo incluida en el SDK de Windows, la configuración de la compilación de versión de  64 bits no incluye el archivo ExplorerDataProvider.def en la opción Archivo de definición de módulo del vinculador. Debe especificar ese archivo usted mismo antes de compilarlo en un entorno de 64 bits. Agregue la línea a la sección VCLinkerTool (comienza en la línea `ModuleDefinitionFile="ExplorerDataProvider.def"` 329) del archivo ExplorerDataProvider.vcproj como se muestra aquí:
+> En la versión de este ejemplo incluida en el SDK de Windows, la configuración de la compilación de versión de 64 bits no incluye el archivo ExplorerDataProvider.def en la opción Archivo de definición de módulo del vinculador.  Debe especificar ese archivo usted mismo antes de compilarlo en un entorno de 64 bits. Agregue la línea a la sección VCLinkerTool (comienza en la línea `ModuleDefinitionFile="ExplorerDataProvider.def"` 329) del archivo ExplorerDataProvider.vcproj como se muestra aquí:
 >
 > 
 >
@@ -70,13 +70,13 @@ Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
 >
 > 
 >
-> La versión de este ejemplo que se puede descargar de la Galería de código se ha corregido para este problema y no se requiere ninguna acción adicional por su parte.
+> La versión de este ejemplo descargable de la Galería de código se ha corregido para este problema y no se requiere ninguna acción adicional por su parte.
 >
 >  
 >
 > ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 >
-> 1.  Vaya al directorio que contiene el nuevo archivo .dll y .propdesc, mediante el símbolo del sistema o Windows Explorador.
+> 1.  Vaya al directorio que contiene el nuevo archivo .dll y .propdesc, mediante el símbolo del sistema o Windows Explorer.
 > 2.  En la línea de comandos, escriba `regsvr32.exe` .
 >     > [!Note]  
 >     > Si ejecuta este comando desde un símbolo del sistema con privilegios elevados, el registro automático también registrará automáticamente el archivo .propdesc. Si se ejecuta desde un símbolo del sistema sin privilegios elevados, la extensión de espacio de nombres funcionará, pero sin funcionalidad de propiedad personalizada.

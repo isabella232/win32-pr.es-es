@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d275f848bb29c9cac4930f738a9a123cc6aa3a8e80a77b746f2495d44f68cf96
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e52d206c9e0cbff19f26e38a2a02f04ea0acc03d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119988045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374439"
 ---
 # <a name="setdiffvhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetDiffVHDPath de la clase RDMSDeploymentSettings de Win32 \_
 
@@ -46,13 +46,13 @@ uint32 SetDiffVHDPath(
 *DirectoryPath* \[ En\]
 </dt> <dd>
 
-Nueva ruta de acceso de disco de diferenciación.
+Nueva ruta de acceso del disco de diferenciación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 

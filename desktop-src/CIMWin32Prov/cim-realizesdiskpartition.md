@@ -17,23 +17,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9e81cd96906cd7981ea7fdc7da54a728cb0efb22f0bed8269c735c642ad79cb0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d138aafd179f5fefa40896fe4b9e6a0426b34422
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261687"
 ---
-# <a name="cim_realizesdiskpartition-class"></a>CIM \_ RealizesDiskPartition (clase)
+# <a name="cim_realizesdiskpartition-class"></a>Cim \_ RealizesDiskPartition (clase)
 
 La **clase CIM \_ RealizesDiskPartition** representa una partición de disco en un medio físico que modela la creación de particiones en una unidad SCSI o IDE sin procesar.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ class CIM_RealizesDiskPartition : CIM_Realizes
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ RealizesDiskPartition** tiene estos tipos de miembros:
 
@@ -106,7 +106,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase CIM \_ RealizesDiskPartition** se deriva de [**CIM \_ Realizes**](cim-realizes.md).
 
@@ -128,7 +128,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

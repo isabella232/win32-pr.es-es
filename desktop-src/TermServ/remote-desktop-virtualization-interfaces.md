@@ -1,20 +1,20 @@
 ---
 title: Escritorio remoto interfaces de virtualización
-description: La API Escritorio remoto Virtualization admite las interfaces siguientes.
+description: La ESCRITORIO REMOTO Virtualization API admite las interfaces siguientes.
 ms.assetid: 150a3c9a-d504-4854-adaa-92e3a7e8ea70
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4627b29bcb5fba6518d89a4d92eca48e2665a6bda98f724a0219de5fca884f4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 26674bfb4af3d858ed914ea48e210c7506d5f454
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118851851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374666"
 ---
 # <a name="remote-desktop-virtualization-interfaces"></a>Escritorio remoto interfaces de virtualización
 
-La API Escritorio remoto Virtualization admite las interfaces siguientes.
+La ESCRITORIO REMOTO Virtualization API admite las interfaces siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -58,21 +58,21 @@ Se puede usar para definir propiedades personalizadas de un entorno que hospeda 
 [**ITsSbFilterPluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbfilterpluginstore)
 </dt> <dd>
 
-Filtrar almacén de complementos
+Filtrar el almacén de complementos
 
 </dd> <dt>
 
 [**ITsSbGenericNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbgenericnotifysink)
 </dt> <dd>
 
-Expone métodos que informan de la finalización a y obtiene el tiempo de espera del Agente de conexión a Escritorio remoto.
+Expone métodos que notifican la finalización a y obtienen el tiempo de espera del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
 [**ITsSbGlobalStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbglobalstore)
 </dt> <dd>
 
-Expone métodos que consultan equipos de destino, sesiones, entornos y granjas de servidores que se han agregado al almacén del Agente de conexión a Escritorio remoto.
+Expone métodos que consultan equipos, sesiones, entornos y granjas de servidores de destino que se han agregado al almacén del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -83,10 +83,10 @@ Expone métodos y propiedades que almacenan el nombre de destino devuelto por un
 
 </dd> <dt>
 
-[**ITsSbLoadBalancing**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalancing)
+[**Equilibrio de carga de ITsSb**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalancing)
 </dt> <dd>
 
-Expone métodos que puede usar para proporcionar un algoritmo de equilibrio de carga personalizado.
+Expone los métodos que puede usar para proporcionar un algoritmo de equilibrio de carga personalizado.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Expone métodos que devuelven el resultado de un algoritmo de equilibrio de carg
 [**ITsSbOrchestration**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestration)
 </dt> <dd>
 
-Expone los métodos que usa el Agente de conexión a Escritorio remoto para asegurarse de que el destino está listo antes de que se le redirija un cliente.
+Expone los métodos que usa el Agente de conexión a Escritorio remoto para asegurarse de que el destino está listo antes de que se redirija a él un cliente.
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Expone métodos que inicializan y finalizan complementos.
 [**ITsSbPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbpluginnotifysink)
 </dt> <dd>
 
-Expone métodos que notifican al Agente de conexión a Escritorio remoto la inicialización o finalización de un complemento.
+Expone métodos que notifican al Agente de conexión a Escritorio remoto sobre la inicialización o finalización de un complemento.
 
 </dd> <dt>
 
@@ -191,7 +191,7 @@ Expone los métodos que usa el Agente de conexión a Escritorio remoto para noti
 [**ITsSbResourcePlugin**](/windows/win32/api/sbtsv/nn-sbtsv-itssbresourceplugin)
 </dt> <dd>
 
-Expone métodos que amplían las funciones del Agente de conexión a Escritorio remoto.
+Expone métodos que amplían las funcionalidades del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -254,7 +254,7 @@ Expone las propiedades que usa Conexión a Escritorio remoto Broker para estable
 [**ITsSbTaskPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtaskplugin)
 </dt> <dd>
 
-Expone métodos que actualizan la cola de tareas para Conexión a Escritorio remoto complementos de Broker.
+Expone métodos que actualizan la cola de tareas para los complementos Conexión a Escritorio remoto Broker.
 
 </dd> <dt>
 

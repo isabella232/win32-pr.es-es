@@ -4,12 +4,12 @@ description: Hay tres métodos que se usan para obtener información de ruta del
 ms.assetid: 8c943b4e-5c1a-4db5-babf-5f7ef9e9fa6a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77431f25ff28f37c102a208079933c97052c9d3da69b51d15e392ba5f43db0bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2eaeb3a1e3c7d90975e5233780e662bbcc7d3bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117788148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273612"
 ---
 # <a name="retrieving-route-information"></a>Recuperar información de ruta
 

@@ -1,9 +1,9 @@
 ---
-title: WINBIO_CREDENTIAL_FORMAT enumeración (Tipos \_ de Winbio.h)
-description: Define marcas que se pueden usar para especificar el formato de credenciales del usuario final.
+title: WINBIO_CREDENTIAL_FORMAT enumeración (Winbio \_ types.h)
+description: Define las marcas que se pueden usar para especificar el formato de credenciales del usuario final.
 ms.assetid: f107e000-98a2-44f0-aa5e-d13b5d9c8d43
 keywords:
-- WINBIO_CREDENTIAL_FORMAT enumeración Windows API de Biometric Framework
+- WINBIO_CREDENTIAL_FORMAT enumeración Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82185bdb9d8170abbdba04e758010443dc8be6a37e198edb27a137024dacf9af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa28ea56c7af9f78947e64587740300a70f763ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118910828"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071156"
 ---
-# <a name="winbio_credential_format-enumeration"></a>Enumeración \_ CREDENTIAL FORMAT de WINBIO \_
+# <a name="winbio_credential_format-enumeration"></a>Enumeración WINBIO \_ CREDENTIAL \_ FORMAT
 
-Define marcas que se pueden usar para especificar el formato de credenciales del usuario final. Esta enumeración la usa la [**función WinBioSetCredential.**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential)
+Define las marcas que se pueden usar para especificar el formato de credenciales del usuario final. La función [**WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential) usa esta enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ La contraseña está en un formato comprimido.
 
 </dd> <dt>
 
-<span id="WINBIO_PASSWORD_PROTECTED"></span><span id="winbio_password_protected"></span>**PROTECCIÓN CON \_ CONTRASEÑA DE \_ WINBIO**
+<span id="WINBIO_PASSWORD_PROTECTED"></span><span id="winbio_password_protected"></span>**WINBIO \_ PASSWORD \_ PROTECTED**
 </dt> <dd>
 
 La credencial de contraseña se ha ajustado [**con CredProtect.**](/windows/desktop/api/wincred/nf-wincred-credprotecta)
@@ -71,7 +71,7 @@ La credencial de contraseña se ha ajustado [**con CredProtect.**](/windows/desk
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 10af1857-d59f-490d-9b50-49619b1e892c
 title: Instalación de varias revisiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65dc6b65997bd6bcb2b9f4c8da5022adda9a38b0b93401dc507397421799d260
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d4edb8d085ede6aee81690bf67bd9c5e19780ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072043"
 ---
 # <a name="installing-multiple-patches"></a>Instalación de varias revisiones
 
@@ -25,13 +25,13 @@ La [**función MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msid
 
 Cuando el paquete de revisión no tiene una tabla [MsiPatchSequence,](msipatchsequence-table.md) el instalador siempre aplica las revisiones en el orden en que se proporcionan al sistema.
 
-Cuando el paquete de revisión contiene una mezcla de revisiones con información de secuencia en la tabla [MsiPatchSequence](msipatchsequence-table.md) y algunas revisiones sin esta información Windows, la versión 3.0 del instalador secuencia las revisiones en el orden descrito en la sección siguiente: [Secuenciar revisiones](sequencing-patches.md).
+Cuando el paquete de revisión contiene una combinación de revisiones con información de secuencia en la tabla [MsiPatchSequence](msipatchsequence-table.md) y algunas revisiones sin esta información Windows, la versión 3.0 del instalador secuencia las revisiones en el orden descrito en la sección siguiente: [Secuenciar revisiones](sequencing-patches.md).
 
 Un Windows installer no puede instalar más de 127 revisiones al instalar o actualizar una aplicación. Cuando se necesitan muchas actualizaciones, se deben combinar y las revisiones obsoletas anteriores deben eliminarse de la secuencia de aplicación de revisiones.
 
 Una revisión que no se debe usar se puede eliminar de la secuencia de aplicación de revisiones. Esto evita que se aplique la revisión cuando se aplica la aplicación de destino. Esto es diferente de quitar una revisión que ya se ha aplicado a una aplicación. Para obtener más información sobre cómo eliminar revisiones de la secuencia de aplicación de revisiones, vea [Eliminación de revisiones.](eliminating-patches.md) Para obtener información sobre cómo quitar las revisiones aplicadas, vea [Quitar revisiones.](removing-patches.md)
 
-Para obtener un ejemplo de cómo Windows instalador aplica varias revisiones cuando todas tienen tablas [MsiPatchSequence,](msipatchsequence-table.md) vea [ejemplo de varias revisiones](multiple-patching-example.md).
+Para obtener un ejemplo de cómo Windows Installer aplica varias revisiones cuando todas tienen tablas [MsiPatchSequence,](msipatchsequence-table.md) vea ejemplo de [varias revisiones](multiple-patching-example.md).
 
  
 

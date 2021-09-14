@@ -1,20 +1,20 @@
 ---
 title: Escritorio remoto de virtualización
-description: La ESCRITORIO REMOTO Virtualization API admite las siguientes estructuras.
+description: La API Escritorio remoto Virtualization admite las siguientes estructuras.
 ms.assetid: 04bfba72-4118-4a1c-af8f-c19994521695
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de33d9c6e37be54c63ae17af62575c2f8201194e4c88f14bfef1613a5fde6f46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: faa066f955c596ca2a454934458b626ab2280f52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117756132"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374659"
 ---
 # <a name="remote-desktop-virtualization-structures"></a>Escritorio remoto de virtualización
 
-La ESCRITORIO REMOTO Virtualization API admite las siguientes estructuras.
+La API Escritorio remoto Virtualization admite las siguientes estructuras.
 
 ## <a name="in-this-section"></a>En esta sección
 

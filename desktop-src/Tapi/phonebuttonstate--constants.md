@@ -4,12 +4,12 @@ ms.assetid: f1196e31-65c6-4ade-a0b7-c7758ce97be1
 title: PHONEBUTTONSTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95070eb24b5189b44f07a8ba2d2d7ed7d8234ec14a97889f09c0fe29ac72eed9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c2b1cc2f669fb5c1171834f46e11a161e9390eab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120100515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071072"
 ---
 # <a name="phonebuttonstate_-constants"></a>PHONEBUTTONSTATE_ constantes
 
@@ -57,7 +57,7 @@ El botón está en estado "up".
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -70,7 +70,7 @@ Por compatibilidad con versiones anteriores, es responsabilidad del proveedor de
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

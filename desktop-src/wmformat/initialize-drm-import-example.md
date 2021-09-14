@@ -7,14 +7,14 @@ keywords:
 - Windows SDK de formato multimedia, importar
 - Windows SDK de formato multimedia, código de ejemplo
 - Windows SDK de formato multimedia, ejemplos de código
-- administración de derechos digitales (DRM), importación
+- administración de derechos digitales (DRM),importar
 - DRM (administración de derechos digitales),importar
-- administración de derechos digitales (DRM), inicializar importación
+- administración de derechos digitales (DRM), inicializar la importación
 - DRM (administración de derechos digitales), inicializar la importación
-- digital rights management (DRM), código de ejemplo
+- administración de derechos digitales (DRM),código de ejemplo
 - DRM (administración de derechos digitales),código de ejemplo
-- administración de derechos digitales (DRM), ejemplos de código
-- DRM (administración de derechos digitales), ejemplos de código
+- administración de derechos digitales (DRM),ejemplos de código
+- DRM (administración de derechos digitales),ejemplos de código
 - API extendidas de cliente DRM, inicializar importación
 - API extendidas de cliente, inicializar importación
 - API extendidas de cliente DRM, importar
@@ -25,12 +25,12 @@ keywords:
 - API extendidas de cliente, ejemplos de código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e91d0aac6e9d54dac4cd52de7d84140a9e6af580084bd22ccc0af7283900d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 450eeaa128c17d0d64511dd028cda3ce1c4f28c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118702126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262140"
 ---
 # <a name="initialize-drm-import-example"></a>Ejemplo de inicialización de importación de DRM
 

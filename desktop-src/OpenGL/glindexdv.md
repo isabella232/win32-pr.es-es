@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a534eb0eb87818fb77eaf1e0c46a760dc4ef71f446c00dbc9a24d5d6fef33e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2512e9100c4b3f68f644eb51c3d5d460787f49b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119493544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260124"
 ---
 # <a name="glindexdv-function"></a>Función glIndexdv
 
@@ -51,7 +51,7 @@ Puntero a una matriz de un solo elemento que contiene el nuevo valor para el ín
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glIndexdv** actualiza el índice de color actual (con un solo valor). Toma un argumento: el nuevo valor para el índice de color actual.
 
@@ -63,13 +63,13 @@ El índice actual se puede actualizar en cualquier momento. En concreto, se pued
 
 La función siguiente recupera información relacionada con **glIndexdv**:
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ CURRENT \_ INDEX
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ INDEX
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -79,7 +79,7 @@ La función siguiente recupera información relacionada con **glIndexdv**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

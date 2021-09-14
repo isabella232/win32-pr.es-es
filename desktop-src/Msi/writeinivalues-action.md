@@ -1,19 +1,19 @@
 ---
 description: La acción WriteIniValues escribe la información .ini archivo que la aplicación necesita escribir en sus .ini archivos.
 ms.assetid: ec54db54-293c-4db3-81af-6e8669f27310
-title: WriteIniValues (Acción)
+title: WriteIniValues (acción)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce2551725e7b12a697e35b08b403011044bbd631b3ff5bf3d0a5923ecb4c99e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd96e86c361c7fe83b6ad33959149e82fb9d7969
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118942103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071802"
 ---
-# <a name="writeinivalues-action"></a>WriteIniValues (Acción)
+# <a name="writeinivalues-action"></a>WriteIniValues (acción)
 
-La acción WriteIniValues escribe la información .ini archivo que la aplicación necesita escribir en sus .ini archivos. La escritura de esta información se encuentra en la tabla [Component](component-table.md). Se escribe .ini valor si el componente correspondiente se ha establecido para instalarse localmente o ejecutarse desde el origen.
+La acción WriteIniValues escribe la información .ini archivo que la aplicación necesita escribir en sus .ini archivos. La escritura de esta información se encuentra en la tabla [Component](component-table.md). Se .ini valor si el componente correspondiente se ha establecido para instalarse localmente o ejecutarse desde el origen.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
@@ -27,8 +27,8 @@ La acción InstallValidate debe ir antes de la acción WriteIniValues. Si hay un
 |-------|-----------------------------------------|
 | \[1\] | Identificador de .ini archivo.                |
 | \[2\] | .ini clave de archivo en la sección siguiente. |
-| \[3\] | Elemento quitado de .ini archivo.            |
-| \[4\] | Valor quitado del .ini archivo.           |
+| \[3\] | Elemento quitado del .ini archivo.            |
+| \[4\] | Valor quitado de .ini archivo.           |
 
 
 

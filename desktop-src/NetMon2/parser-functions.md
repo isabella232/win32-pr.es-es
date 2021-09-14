@@ -4,12 +4,12 @@ ms.assetid: 4e9a9314-8d64-46c0-ad98-bdb9dc4c225a
 title: Funciones del analizador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d70c3ad44ad809a323af8acde732af3b142759d3686d78c496f47e92cb8e209
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db9a502778247a3daad5f11dd8d0e2a3312d586d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119676845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265727"
 ---
 # <a name="parser-functions"></a>Funciones del analizador
 

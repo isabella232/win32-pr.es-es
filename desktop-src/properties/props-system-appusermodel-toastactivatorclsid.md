@@ -1,19 +1,19 @@
 ---
-description: Se usa para crear una interfaz INotificationActivationCallback para notificar las activaciones del sistema.
+description: Se usa para cocrear una interfaz INotificationActivationCallback para notificar las activaciones del sistema.
 ms.assetid: 134dc14e-6034-4ec2-8a25-8493b7f3d84a
 title: System.AppUserModel.ToastActivatorCLSID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c036721f0badf399fac1eb9c906692f16e1d509461859547eac9145c71bd765
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9029cca50f7187bcd52db47757ea9e2b26f02e80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118055880"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262911"
 ---
 # <a name="systemappusermodeltoastactivatorclsid"></a>System.AppUserModel.ToastActivatorCLSID
 
-Se usa para crear una interfaz INotificationActivationCallback para notificar las activaciones del sistema.
+Se usa para cocrear una interfaz INotificationActivationCallback para notificar las activaciones del sistema.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

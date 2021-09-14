@@ -4,12 +4,12 @@ ms.assetid: 76d9a21d-73bc-41fc-8ed0-7d7d7deff815
 title: UiCreatePatchPackageEx (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e9c610aa6b03990eb4bb9fb34ce84568c9164a88ff2455b9c649436b3d327c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac61371d1e7bf1809880c8f10a403d1730adc8e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071822"
 ---
 # <a name="uicreatepatchpackageex-patchwizdll"></a>UiCreatePatchPackageEx (Patchwiz.dll)
 
@@ -110,7 +110,7 @@ Reservado. Este parámetro debe establecerse en cero.
 
 Vea la tabla en [Valores devueltos para UiCreatePatchPackage.](return-values-for-uicreatepatchpackage.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener un ejemplo de creación de un archivo .msi y el uso de [UiCreatePatchPackage](uicreatepatchpackage-patchwiz-dll-.md) para generar un paquete de revisión de Windows Installer, vea la sección [A Small Update Patching Example](a-small-update-patching-example.md).
 

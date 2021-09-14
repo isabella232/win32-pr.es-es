@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 69dc3209e4e3f11d48e12de52ea35a267b1963b333e0dcd0ab5caa43429e4844
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64a7c032b0384be84194ad3b0549c05eb81d53f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118271119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263751"
 ---
 # <a name="esentdatabasenotfoundexception-constructor"></a>Constructor EsentDatabaseNotFoundException
 

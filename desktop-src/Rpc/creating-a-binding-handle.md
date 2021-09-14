@@ -1,23 +1,23 @@
 ---
 title: Crear un identificador de enlace
-description: El programa cliente de una aplicación distribuida debe crear un identificador de enlace que indique al tiempo de ejecución rpc qué servidor debe ponerse en contacto y cómo se debe ponerse en contacto con el servidor.
+description: El programa cliente de una aplicación distribuida debe crear un identificador de enlace que indique al tiempo de ejecución de RPC qué servidor debe ponerse en contacto y cómo se debe ponerse en contacto con el servidor.
 ms.assetid: 52c5d0bd-f9b4-4d3f-ac7f-f9b4fb919846
 keywords:
-- Llamada a procedimiento remoto RPC, tareas, creación de un identificador de enlace
+- Llamada a procedimiento remoto RPC , tareas, creación de un identificador de enlace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50b1d805a765649f640ff10f8cb825264e3402c8938786d183b0be351036c971
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9eddced351642d916f90cd5c127d0e51b764f7ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259836"
 ---
 # <a name="creating-a-binding-handle"></a>Crear un identificador de enlace
 
-El programa cliente de una aplicación distribuida debe crear un identificador de enlace que indique al tiempo de ejecución rpc qué servidor debe ponerse en contacto y cómo se debe ponerse en contacto con el servidor.
+El programa cliente de una aplicación distribuida debe crear un identificador de enlace que indique al tiempo de ejecución de RPC qué servidor debe ponerse en contacto y cómo se debe ponerse en contacto con el servidor.
 
-El fragmento de código siguiente muestra un enfoque común para crear un identificador de enlace:
+En el fragmento de código siguiente se muestra un enfoque común para crear un identificador de enlace:
 
 
 ```C++

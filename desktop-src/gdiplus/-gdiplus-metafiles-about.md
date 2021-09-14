@@ -4,16 +4,16 @@ ms.assetid: a9f9bac4-f3c7-44a1-9f0f-59ff1a27b077
 title: Metarchivos (GDI+)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 190d03edd8857da3e840c2b3fde04314fa1fb1ddb01c8e69c684bccecf3e708d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae75c2185670563f9a9e624d868da5b0e299cbec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072420"
 ---
 # <a name="metafiles-gdi"></a>Metarchivos (GDI+)
 
-Windows GDI+ proporciona la [**clase Metafile**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) para que pueda registrar y mostrar metarchivos. Un metarchivo, también denominado imagen vectorial, es una imagen que se almacena como una secuencia de comandos y configuraciones de dibujo. Los comandos y la configuración registrados en un **objeto metarchivo** se pueden almacenar en memoria o guardarse en un archivo o secuencia.
+Windows GDI+ proporciona la [**clase Metafile**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) para que pueda registrar y mostrar metarchivos. Un metarchivo, también denominado imagen vectorial, es una imagen que se almacena como una secuencia de comandos y configuraciones de dibujo. Los comandos y la configuración registrados en un objeto **metarchivo** se pueden almacenar en memoria o guardarse en un archivo o secuencia.
 
 GDI+ pueden mostrar metarchivos que se han almacenado en los siguientes formatos:
 
@@ -23,9 +23,9 @@ GDI+ pueden mostrar metarchivos que se han almacenado en los siguientes formatos
 
 GDI+ puede registrar metarchivos en los formatos EMF y EMF+, pero no en el formato WMF.
 
-EMF+ es una extensión de EMF que permite almacenar GDI+ registros. Hay dos variaciones en el formato EMF+: EMF+ Only y EMF+ Dual. EMF+ Solo los metarchivos contienen GDI+ registros. Estos metarchivos se pueden mostrar GDI+, pero no Windows Interfaz de dispositivo gráfico (GDI). Los metarchivos duales de EMF+ contienen GDI+ y GDI. Cada GDI+ registro en un metarchivo dual emf+ se empareja con un registro GDI alternativo. Estos metarchivos se pueden mostrar mediante GDI+ o GDI.
+EMF+ es una extensión de EMF que permite almacenar GDI+ registros. Hay dos variaciones en el formato EMF+: EMF+ Only y EMF+ Dual. EMF+ Solo los metarchivos contienen GDI+ registros. Estos metarchivos se pueden mostrar mediante GDI+, pero no Windows Interfaz de dispositivo gráfico (GDI). Los metarchivos duales de EMF+ contienen GDI+ y GDI. Cada GDI+ registro de un metarchivo dual emf+ se empareja con un registro GDI alternativo. Estos metarchivos se pueden mostrar mediante GDI+ o GDI.
 
-En el ejemplo siguiente se registra una configuración y un comando de dibujo en un archivo de disco. Tenga en cuenta que en el ejemplo se crea un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) y que el constructor del objeto **Graphics** recibe la dirección de un objeto [**Metarchivo**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) como argumento.
+En el ejemplo siguiente se registra una configuración y un comando de dibujo en un archivo de disco. Tenga en cuenta que en el ejemplo se crea un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) y que el constructor del objeto **Graphics** recibe la dirección de un objeto [**Metarchivo**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) como argumento.
 
 
 ```
@@ -41,7 +41,7 @@ delete myMetafile;
 
 
 
-Como se muestra en el ejemplo anterior, la [**clase Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) es la clave para registrar las instrucciones y la configuración en un [**objeto Metarchivo.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) Cualquier llamada realizada a un método de un **objeto Graphics** se puede registrar en un **objeto Metarchivo.** Del mismo modo, puede establecer cualquier propiedad de un objeto **Graphics** y registrar esa configuración en un **objeto Metarchivo.** La grabación finaliza cuando el **objeto Graphics** se elimina o sale del ámbito.
+Como se muestra en el ejemplo anterior, la [**clase Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) es la clave para grabar instrucciones y configuraciones en un [**objeto Metarchivo.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) Cualquier llamada realizada a un método de un **objeto Graphics** se puede registrar en un **objeto Metarchivo.** Del mismo modo, puede establecer cualquier propiedad de un objeto **Graphics** y registrar esa configuración en un **objeto Metarchivo.** La grabación finaliza cuando se elimina **el objeto Graphics** o se sale del ámbito.
 
 En el ejemplo siguiente se muestra el metarchivo creado en el ejemplo anterior. El metarchivo se muestra con la esquina superior izquierda en (100, 100).
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d90d64e0fd275f57252cd435ae5dc42abfe8ba17613e1b20425fc27c515509e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf6792cf65ab3aecb74bff82282daa0d8fb2bdc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139188"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259164"
 ---
 # <a name="march-monthstype-element"></a>Elemento March (monthsType)
 
@@ -67,7 +67,7 @@ El siguiente XML define un calendario de meses que ejecuta la tarea en marzo.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 60ab9253-ec0f-4c97-a475-ce2a74d469c4
 title: Datos de formato mostrados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d843214804e50d6baa7bd60f49da170dbe561029e0643c5a57c8677da3735936
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 017946dab9db443cf7083109dd75ccee1f6d278a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117982471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071559"
 ---
 # <a name="formatting-displayed-data"></a>Datos de formato mostrados
 

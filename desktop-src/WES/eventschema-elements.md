@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f0cbd79f0ce89ace1189ca0bc13dbb2df4bf8b053dbddc62e52b391cc58080bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34149fae8ac273565f98c3f39adb31b61b406ade
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117936792"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374383"
 ---
 # <a name="event-schema-elements"></a>Elementos de esquema de eventos
 
@@ -64,7 +64,7 @@ Estos son los elementos que define el esquema de eventos. Esta sección contiene
 | [**SequenceNumber (DebugDataType)**](eventschema-sequencenumber-debugdatatype-element.md)                 | Número de secuencia local o global del mensaje de seguimiento.<br/>                                                                                                                                   |
 | [**SubComponent (DebugDataType)**](eventschema-subcomponent-debugdatatype-element.md)                     | Especifica el campo de seguimiento de depuración WPP SubComponentName que se usa en eventos de depuración en canales de depuración.                                                                                                 |
 | [**System (EventType)**](eventschema-system-eventtype-element.md)                                         | Contiene información que identifica el proveedor y cómo se ha habilitado, el evento, el canal en el que se escribió el evento y la información del sistema, como los identidades de proceso y subproceso.<br/> |
-| [**Task (RenderingInfoType)**](eventschema-task-renderingtype-element.md)                                 | Cadena de mensaje representado de la tarea especificada en el evento .<br/>                                                                                                                             |
+| [**Tarea (RenderingInfoType)**](eventschema-task-renderingtype-element.md)                                 | Cadena de mensaje representado de la tarea especificada en el evento .<br/>                                                                                                                             |
 | [**Tarea (SystemPropertiesType)**](eventschema-task-systempropertiestype-element.md)                       | Tarea definida en el evento .<br/>                                                                                                                                                              |
 | [**TimeCreated (SystemPropertiesType)**](eventschema-timecreated-systempropertiestype-element.md)         | Marca de tiempo que identifica cuándo se registró el evento.<br/>                                                                                                                                   |
 | [**UserData (EventType)**](eventschema-userdata-eventtype-element.md)                                     | Contiene los datos del evento.<br/>                                                                                                                                                                    |

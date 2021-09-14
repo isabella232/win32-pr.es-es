@@ -4,12 +4,12 @@ ms.assetid: a1990e5a-c2c2-4ecc-a206-f818b179fc80
 title: LOCALE_SENG* Constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 982cd8c174e83a5f62da39cacf6790ff19606ad39ebc1d54451b35c825371790
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85f77180b7cf89039ddfd87fcfba9e89a8098b29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120106245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274364"
 ---
 # <a name="locale_seng-constants"></a>Constantes \_ SENG de LOCALE \*
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: cf7eda662fe46c703535fb7c2f00bd90acdfe636178e9217b72217dc23c8036c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b3de498791a634ea651da46ba9c95557ca12b87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117998684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072191"
 ---
 # <a name="iamtimelinetransablegettransattime2-method"></a>Método IAMTimelineTransable::GetTransAtTime2
 
@@ -79,13 +79,13 @@ Devuelve uno de los siguientes **valores HRESULT:**
 | <dl> <dt>**S \_ FALSE**</dt> </dl>      | No se encontró ninguna transición.<br/>   |
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Se encontró la transición.<br/>      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Argumento no válido.<br/>          |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | Argumento de puntero **NULL.**<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | **Argumento de** puntero NULL.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -108,7 +108,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

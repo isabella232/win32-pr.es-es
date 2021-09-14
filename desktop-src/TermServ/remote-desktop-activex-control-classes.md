@@ -5,12 +5,12 @@ ms.assetid: 5680DFB3-63EC-4F34-B1A6-08E1521A1827
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d6b82eaa4d96786d35b20726fafc23b8e51440e40d9feaf6ef906d85b12207d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe04f54a377799ede752c0f7868f822faed044a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118851985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374718"
 ---
 # <a name="remote-desktop-activex-control-classes"></a>Escritorio remoto ActiveX clases de control
 
@@ -198,7 +198,7 @@ Control de cliente de Microsoft Terminal Services: versión 1
 [**RemoteDesktopClient**](remotedesktopclient.md)
 </dt> <dd>
 
-Implementa el control de Escritorio remoto de aplicaciones de Microsoft Windows Store: versión 1
+Implementa el control de cliente Windows app Escritorio remoto Store de Microsoft: versión 1
 
 </dd> </dl>
 

@@ -9,11 +9,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 533f2165afdb3173ea0f8c603764f25d0fa625fe
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071741"
 ---
 # <a name="using-the-editing-functions-and-putting-a-file-on-the-clipboard"></a>Usar las funciones de edición y colocar un archivo en el Portapapeles
 

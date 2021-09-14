@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: c99ef5b648c5503743de6f51ce7d035d75dbe1f3e5593d473a374813f4000566
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcbd61476458b5ed906ee57af6ab22b35f0378d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071611"
 ---
 # <a name="dot11_cipher_algorithm-enumeration"></a>Enumeración \_ DOT11 CIPHER \_ ALGORITHM
 
 El **tipo enumerado DOT11 \_ CIPHER \_ ALGORITHM** define un algoritmo de cifrado para el cifrado y descifrado de datos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -86,7 +86,7 @@ Especifica un algoritmo de cifrado WEP con una clave de cifrado de 104 bits.
 <span id="DOT11_CIPHER_ALGO_WPA_USE_GROUP"></span><span id="dot11_cipher_algo_wpa_use_group"></span>**GRUPO DE USO \_ DE WPA DE ALGORITMO DE CIFRADO \_ \_ DOT11 \_ \_**
 </dt> <dd>
 
-Especifica un conjunto Wi-Fi cifrado de clave de grupo de uso de acceso protegido (WPA). Para obtener más información sobre el conjunto de cifrado Usar clave de grupo, consulte la cláusula 7.3.2.25.1 del estándar IEEE 802.11i-2004.
+Especifica un Wi-Fi de cifrado de clave de grupo de uso de acceso protegido (WPA). Para obtener más información sobre el conjunto de cifrado Usar clave de grupo, consulte la cláusula 7.3.2.25.1 del estándar IEEE 802.11i-2004.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Especifica el final del intervalo que se usa para definir algoritmos de cifrado 
 | Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                        |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                         |
-| Header<br/>                   | <dl> <dt>Wlantypes.h (incluye Windot11.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wlantypes.h (incluye Windot11.h)</dt> </dl> |
 
 
 

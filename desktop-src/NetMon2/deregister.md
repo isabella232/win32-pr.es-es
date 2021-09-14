@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: cb06ab6e08a674a186bcdb260140915c378db9affc13b17db33d9132109cec78
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9458ff74f29cd8eb7a75da0a3628a2dd1519ba43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260503"
 ---
 # <a name="deregister-callback-function"></a>Anular el registro de la función de devolución de llamada
 
@@ -50,7 +50,7 @@ Identificador del protocolo para una base de datos específica.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Monitor de red llama a **Deregister después** de pasar toda la información de captura al archivo DLL del analizador. El archivo DLL del analizador debe implementar una **función Deregister** para cada protocolo que admita el analizador.
 
@@ -80,7 +80,7 @@ Al implementar **Deregister**, el archivo DLL del analizador debe llamar a la [f
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

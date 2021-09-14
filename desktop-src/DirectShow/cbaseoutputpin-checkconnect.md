@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ca35cb98f279674285610fbd06b0399e93a68d59749fe4129475ab8bd970824a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ea5ad32de18046f3d23145d82e971391c3e304c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118658868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261540"
 ---
 # <a name="cbaseoutputpincheckconnect-method"></a>Método CBaseOutputPin.CheckConnect
 
@@ -59,7 +59,7 @@ Devuelve uno de los siguientes **valores HRESULT.**
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                      | Correcto.<br/>                                                         |
 | <dl> <dt>**E \_ NOINTERFACE**</dt> </dl>             | El pin de entrada no admite [**IMemInputPin.**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)<br/> |
-| <dl> <dt>**VFW \_ E DIRECCIÓN NO \_ \_ VÁLIDA**</dt> </dl> | Las direcciones del pin no son compatibles.<br/>                               |
+| <dl> <dt>**DIRECCIÓN NO VÁLIDA DE VFW \_ E \_ \_**</dt> </dl> | Las direcciones de anclar no son compatibles.<br/>                               |
 
 
 
@@ -80,7 +80,7 @@ Este método llama al método [**CBasePin::CheckConnect**](cbasepin-checkconnect
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

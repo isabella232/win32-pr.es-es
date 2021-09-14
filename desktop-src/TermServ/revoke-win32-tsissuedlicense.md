@@ -1,12 +1,12 @@
 ---
-title: Método REVOKE de la clase Win32_TSIssuedLicense
-description: Revoca el Servicios de Escritorio remoto licencias de acceso de cliente por dispositivo (RDS \ 160; Cal por dispositivo) representadas por el \_ objeto TSIssuedLicense de Win32. No es una función estática.
+title: Método Revoke de la Win32_TSIssuedLicense clase
+description: Revoca las Servicios de Escritorio remoto de acceso de cliente por dispositivo (RDS \ 160; CAL por dispositivo) representadas por el objeto \_ TSIssuedLicense de Win32. No se trata de una función estática.
 ms.assetid: b1eb7448-5d8e-4c2d-ba52-9363e8e0297a
 ms.tgt_platform: multiple
 keywords:
-- Método REVOKE Servicios de Escritorio remoto
-- Método REVOKE Servicios de Escritorio remoto, clase Win32_TSIssuedLicense
-- Clase Win32_TSIssuedLicense Servicios de Escritorio remoto, método REVOKE
+- Revocación del método Servicios de Escritorio remoto
+- Método Revoke Servicios de Escritorio remoto , Win32_TSIssuedLicense clase
+- Win32_TSIssuedLicense clase Servicios de Escritorio remoto método , Revoke
 topic_type:
 - apiref
 api_name:
@@ -18,15 +18,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 63993ede5346f5b3cb56fcfa458d4cdce7dd58b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803866"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374543"
 ---
-# <a name="revoke-method-of-the-win32_tsissuedlicense-class"></a>Método REVOKE de la \_ clase Win32 TSIssuedLicense
+# <a name="revoke-method-of-the-win32_tsissuedlicense-class"></a>Método Revoke de la clase \_ TSIssuedLicense de Win32
 
-Revoca el Servicios de Escritorio remoto licencias de acceso de cliente por dispositivo (cal por dispositivo de RDS) representadas por el objeto [**\_ TSIssuedLicense de Win32**](win32-tsissuedlicense.md) . No es una función estática.
+Revoca las Servicios de Escritorio remoto de acceso de cliente por dispositivo (CAL de RDS por dispositivo) representadas por el objeto [**\_ TSIssuedLicense de Win32.**](win32-tsissuedlicense.md) No se trata de una función estática.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,27 +44,27 @@ uint32 Revoke(
 
 <dl> <dt>
 
-*RevokableCals* \[ enuncia\]
+*RevokableCals* \[ out\]
 </dt> <dd>
 
-Número de cal de RDS del mismo tipo que el objeto actual que se puede revocar.
+Número de CAL de RDS del mismo tipo que el objeto actual que se puede revocar.
 
 </dd> <dt>
 
-*NextRevokeAllowedOn* \[ enuncia\]
+*NextRevokeAllowedOn* \[ out\]
 </dt> <dd>
 
-Fecha en la que el administrador puede intentar revocar las licencias. Este parámetro solo contiene datos válidos cuando se ha producido un error en la llamada al método **REVOKE** porque se ha alcanzado el número máximo de revocación.
+Fecha en que el administrador puede intentar revocar las licencias. Este parámetro solo contiene datos válidos cuando se **ha dado** error en la llamada al método Revoke porque se ha alcanzado el número máximo de revocaciones.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Solo se pueden revocar las cal por dispositivo de RDS.
+Solo se pueden revocar las CAL de RDS por dispositivo.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

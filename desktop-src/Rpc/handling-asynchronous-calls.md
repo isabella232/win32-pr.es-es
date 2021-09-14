@@ -4,12 +4,12 @@ description: La rutina de administrador de una función asincrónica siempre rec
 ms.assetid: 4f38b68b-0bea-4fa7-8c7e-dd09e7daf8bf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bc05efd8c94a8b67ad68f2d19cacd6c46ed16e80ad6bbdf6df5b475b4dc68eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e04dc7feed0d7bee47f6fa51583cf8de3a8e42f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259791"
 ---
 # <a name="handling-asynchronous-calls"></a>Control de llamadas asincrónicas
 

@@ -4,12 +4,12 @@ ms.assetid: 076d7c14-e302-4465-aed5-27a4b1f70ac8
 title: Tabla InstallUISequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2234ddcad587a495eceb79cc4511100f483bcfd96b388164f6e3c2d6a39eca3c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19a4d8d3033645ac1f414e3aff67be2a26d7a6ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072025"
 ---
 # <a name="installuisequence-table"></a>Tabla InstallUISequence
 
@@ -71,11 +71,11 @@ Un valor positivo representa la posición de la secuencia. Un valor NULL indica 
 
  
 
-Cero, todos los demás números negativos o un valor Null indican que la acción nunca se ejecuta.
+Cero, todos los demás números negativos o un valor NULL indican que la acción nunca se ejecuta.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El texto localizado asociado para la presentación o el registro del progreso se especifica en la [tabla ActionText](actiontext-table.md).
 

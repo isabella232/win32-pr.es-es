@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 6228b836f85251dda7f43d6c3b421d486b727c6bdc6c319b9cf7ca1e37d34a91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d083b768e8dcf54236945755f4b26ecf13409b40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072180"
 ---
 # <a name="iamtimelinetransable-interface"></a>IamTimelineTransable (interfaz)
 
@@ -35,7 +35,7 @@ La `IAMTimelineTransable` interfaz agrega transiciones a un objeto en [DirectSho
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IAMTimelineTransable** hereda de [**la interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineTransable** también tiene estos tipos de miembros:
 
@@ -50,7 +50,7 @@ La **interfaz IAMTimelineTransable** tiene estos métodos.
 | Método                                                          | Descripción                                                                                                                        |
 |:----------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | [**GetNextTrans**](iamtimelinetransable-getnexttrans.md)       | Recupera la primera transición que aparece en el momento especificado o posterior.<br/>                                             |
-| [**GetNextTrans2**](iamtimelinetransable-getnexttrans2.md)     | Recupera la primera transición que aparece a la hora especificada o posterior, con el tiempo especificado como **un valor REFTIME.**<br/> |
+| [**GetNextTrans2**](iamtimelinetransable-getnexttrans2.md)     | Recupera la primera transición que aparece a la hora especificada o posterior, con el tiempo especificado como valor **REFTIME.**<br/> |
 | [**GetTransAtTime**](iamtimelinetransable-gettransattime.md)   | Recupera la transición más cercana a la hora especificada.<br/>                                                                 |
 | [**GetTransAtTime2**](iamtimelinetransable-gettransattime2.md) | Recupera la transición más cercana a la hora especificada, dada como un **valor REFTIME.**<br/>                                   |
 | [**TransAdd**](iamtimelinetransable-transadd.md)               | Agrega una transición al objeto .<br/>                                                                                        |
@@ -60,7 +60,7 @@ La **interfaz IAMTimelineTransable** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -68,7 +68,7 @@ La **interfaz IAMTimelineTransable** tiene estos métodos.
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 5fc344f8-4492-4878-802a-94606c5f33e0
 title: Cuando uso VBR con restricciones máximas, la velocidad de bits media recuperada del objeto de códec es mayor que la velocidad de bits máxima. ¿Cómo es posible?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa27e1a03c12f854486c65d7959c66f6592da4c3fea84936ee671a911f7fa46d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa2bb2e09f5210baf8817553377fc832b9826b4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120011955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263159"
 ---
 # <a name="when-i-use-peak-constrained-vbr-the-average-bit-rate-retrieved-from-the-codec-object-is-larger-than-the-peak-bit-rate-how-is-that-possible"></a>Cuando uso VBR con restricciones máximas, la velocidad de bits media recuperada del objeto de códec es mayor que la velocidad de bits máxima. ¿Cómo es posible?
 

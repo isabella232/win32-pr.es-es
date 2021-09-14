@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: fa0ade829cff2359e074a4c2faf9942e94aa5e063f0cce841a5a0f0a84a5f3e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4436be457adcca37ba40f15bbe0ecd6b0445fb2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118143734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158792"
 ---
 # <a name="configurableitem-object"></a>Objeto ConfigurableItem
 
 El **objeto ConfigurableItem representa** una sola fila de la tabla [ModuleConfiguration](moduleconfiguration-table.md). Se trata de un único "atributo" configurable del módulo. La interfaz consta de propiedades de solo lectura, una para cada columna de la tabla ModuleConfiguration. La definición de interfaz es la siguiente.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto ConfigurableItem** tiene estos tipos de miembros:
 
@@ -37,7 +37,7 @@ El **objeto ConfigurableItem** tiene estas propiedades.
 
 
 
-| Propiedad                                                         | Descripción                                                                                                                               |
+| Propiedad.                                                         | Descripción                                                                                                                               |
 |:-----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Atributos**](configurableitem-attributes.md)<br/>     | Devuelve el valor del campo Atributos del registro de este objeto en la tabla ModuleConfiguration.<br/>                            |
 | [**Contexto**](configurableitem-context.md)<br/>           | Devuelve el valor del campo Context del registro de este objeto en la tabla ModuleConfiguration.<br/>                               |
@@ -48,7 +48,7 @@ El **objeto ConfigurableItem** tiene estas propiedades.
 | [**HelpKeyword**](configurableitem-helpkeyword.md)<br/>   | Devuelve el valor del campo HelpKeyword del registro de este objeto en la tabla ModuleConfiguration.<br/>                           |
 | [**HelpLocation**](configurableitem-helplocation.md)<br/> | Devuelve el valor del campo HelpLocation del registro de este objeto en la tabla ModuleConfiguration.<br/>                          |
 | [**Nombre**](configurableitem-name.md)<br/>                 | Devuelve el valor del campo Nombre del registro de este objeto en la [tabla ModuleConfiguration](moduleconfiguration-table.md).<br/> |
-| [**Tipo**](configurableitem-type.md)<br/>                 | Devuelve el valor del campo Type del registro de este objeto en la tabla ModuleConfiguration.<br/>                                  |
+| [**Tipo**](configurableitem-type.md)<br/>                 | Devuelve el valor del campo Tipo del registro de este objeto en la tabla ModuleConfiguration.<br/>                                  |
 
 
 
@@ -74,10 +74,10 @@ interface **IMsmConfigurableItem: IDispatch**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 7267f658-103d-4290-8ebf-b78866bd1fe8
 title: Uso de GetNPPBlobTable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d5b31031ad18930c44bffe1efd980834f6c854b144f718891b66bd7df31b3f4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8432f0f3c2cb23056eee4a94b75da5de85cd6c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119962795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260335"
 ---
 # <a name="using-getnppblobtable"></a>Uso de GetNPPBlobTable
 

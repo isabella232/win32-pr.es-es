@@ -4,12 +4,12 @@ ms.assetid: 45c804bf-6d15-416a-b106-d8bb3f4c547d
 title: Propiedad MSIDISABLERMRESTART
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d46bdaee34b154ccaacddc36dcb08113fce9e3f749090eb80176080a60235e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1215822b26bb9bd48fa52ee46806bc288a2986b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120042795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071864"
 ---
 # <a name="msidisablermrestart-property"></a>Propiedad MSIDISABLERMRESTART
 
@@ -28,7 +28,7 @@ La **propiedad MSIDISABLERMRESTART** determina cómo se deben apagar y reiniciar
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad MSIDISABLERMRESTART** se omite si [el Administrador de](../rstmgr/restart-manager-portal.md) reinicio no está disponible o deshabilitado.
 
@@ -38,7 +38,7 @@ La **propiedad MSIDISABLERMRESTART** se omite si [el Administrador de](../rstmgr
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre el Service Pack mínimo requerido por una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre el Service Pack mínimo requerido por una Windows Installer.<br/> |
 
 
 

@@ -13,12 +13,12 @@ keywords:
 - funciones de textura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efcfbd28098ec81e6518273f222f6b04c13cb8a0c0ecfcec97f039de8074e162
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e3e9db3aa5a8aa62ba1e581d8a005c1ea6fa72d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119491475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260079"
 ---
 # <a name="gltexcoord-functions"></a>funciones glTexCoord
 

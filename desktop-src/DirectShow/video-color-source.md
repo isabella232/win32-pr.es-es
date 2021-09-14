@@ -4,12 +4,12 @@ ms.assetid: e6addd55-06ca-4d4b-b2b0-fde281fab244
 title: Origen de color de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 331640a9240ef0ea16ff565180503066f22ce5ae2550fa1e1ec524dcf05c8fa5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56e9c751d74a78b027d50f033acb3709d18fe8f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119071939"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274956"
 ---
 # <a name="video-color-source"></a>Origen de color de vídeo
 
@@ -28,7 +28,7 @@ Propiedades
 
 
 
-| Propiedad | Tipo      | Valor predeterminado | Descripción                                   |
+| Propiedad. | Tipo      | Valor predeterminado | Descripción                                   |
 |----------|-----------|---------|-----------------------------------------------|
 | "Color"  | **DWORD** | 0       | Especifica el color que se generará. Vea la sección Comentarios. |
 
@@ -36,7 +36,7 @@ Propiedades
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El origen de color de vídeo se usa con objetos de origen. En primer lugar, cree un nuevo objeto de origen. A continuación, establezca el GUID del subobjeto del objeto de origen en CLSID ColorSource, llamando al \_ [**método IAMTimelineObj::SetSubObjectGUID.**](iamtimelineobj-setsubobjectguid.md)
 

@@ -4,12 +4,12 @@ ms.assetid: f287c1cf-c464-42a3-985d-f892db5e1f5f
 title: Referencia de ICE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 209054d9c278ef28e685131157cfe6fd0951154fec88ab5a876d5898c3bf1722
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53c249692150923ebd7752c2c69e306ebcc69d2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118946686"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074691"
 ---
 # <a name="ice-reference"></a>Referencia de ICE
 
@@ -17,7 +17,7 @@ Se usa un ICE para validar los paquetes de instalación. En la tabla de este tem
 
 
 
-| Hielo                   | Descripción                                                                                                                                                                                                                                             |
+| HIELO                   | Descripción                                                                                                                                                                                                                                             |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [ICE01](ice01.md)    | Prueba simple del mecanismo ICE.                                                                                                                                                                                                                           |
 | [ICE02](ice02.md)    | Prueba de referencia circular para File-Component, Registry-Component KeyPaths.                                                                                                                                                                                |
@@ -72,7 +72,7 @@ Se usa un ICE para validar los paquetes de instalación. En la tabla de este tem
 | [ICE53](ice53.md)    | Comprueba las entradas del Registro que escriben información del instalador privado o valores de directiva.                                                                                                                                                                  |
 | [ICE54](ice54.md)    | Comprueba si hay componentes que usan archivos complementarios como archivo de ruta de acceso de clave.                                                                                                                                                                                     |
 | [ICE55](ice55.md)    | Comprueba que los objetos LockPermission existen y tienen permisos válidos.                                                                                                                                                                                    |
-| [ICE56](ice56.md)    | Valida que la estructura de directorios del .msi archivo tiene una única raíz válida.                                                                                                                                                                        |
+| [ICE56](ice56.md)    | Valida que la estructura de directorios .msi archivo tiene una única raíz válida.                                                                                                                                                                        |
 | [ICE57](ice57.md)    | Valida que los componentes individuales no mezclan datos por equipo y por usuario.                                                                                                                                                                          |
 | [ICE58](ice58.md)    | Comprueba que la [tabla multimedia](media-table.md) no tiene más de 80 filas.                                                                                                                                                                        |
 | [ICE59](ice59.md)    | Comprueba que los accesos directos anunciados pertenecen a componentes instalados por la característica de destino del acceso directo.                                                                                                                                         |
@@ -80,7 +80,7 @@ Se usa un ICE para validar los paquetes de instalación. En la tabla de este tem
 | [ICE61](ice61.md)    | Comprueba la [tabla de actualización](upgrade-table.md).                                                                                                                                                                                                          |
 | [ICE62](ice62.md)    | Realiza comprobaciones exhaustivas en [la tabla IsolatedComponent para los](isolatedcomponent-table.md) datos que pueden provocar un comportamiento inesperado.                                                                                                                    |
 | [ICE63](ice63.md)    | Comprueba si la secuenciación de la acción RemoveExistingProducts es correcta.                                                                                                                                                                                      |
-| [ICE64](ice64.md)    | Comprueba que los directorios nuevos del perfil de usuario se quitan en escenarios móviles.                                                                                                                                                                       |
+| [ICE64](ice64.md)    | Comprueba que los nuevos directorios del perfil de usuario se quitan en escenarios de itinerancia.                                                                                                                                                                       |
 | [ICE65](ice65.md)    | Comprueba que la [tabla de entorno](environment-table.md) no tiene valores de prefijo o anexados no válidos.                                                                                                                                               |
 | [ICE66](ice66.md)    | Usa las tablas de la base de datos para determinar qué esquema debe usar la base de datos.                                                                                                                                                                     |
 | [ICE67](ice67.md)    | Comprueba que el destino de un acceso directo no anunciado pertenece al mismo componente que el propio acceso directo, o que los atributos del componente de destino garantizan que no cambia las ubicaciones de instalación.                                         |
@@ -107,11 +107,11 @@ Se usa un ICE para validar los paquetes de instalación. En la tabla de este tem
 | [ICE88](ice88.md)    | Valida la columna DirProperty de [la tabla IniFile](inifile-table.md).                                                                                                                                                                                 |
 | [ICE89](ice89.md)    | Valida que el valor de la columna Progid Parent de la tabla ProgId es una clave externa válida en la \_ columna ProgId de la tabla ProgId. [](progid-table.md)                                                                                                |
 | [ICE90](ice90.md)    | Envía una advertencia si encuentra que el directorio de un acceso directo se ha especificado como una propiedad pública.                                                                                                                                                        |
-| [ICE91](ice91.md)    | Envía una advertencia si un archivo, .ini o un archivo de acceso directo está instalado en un directorio de perfil por usuario que no varía en función de la [**propiedad ALLUSERS.**](allusers.md)                                                                            |
+| [ICE91](ice91.md)    | Envía una advertencia si se instala un archivo, .ini o un archivo de acceso directo en un directorio de perfil por usuario que no varía en función de la [**propiedad ALLUSERS.**](allusers.md)                                                                            |
 | [ICE92](ice92.md)    | Comprueba que un componente sin un GUID de identificador de componente no se especifica también como componente permanente. Comprueba que ningún componente tiene los atributos **msidbComponentAttributesPermanent** y **msidbComponentAttributesUninstallOnSupersedence.** |
 | [ICE93](ice93.md)    | Emite una advertencia si una acción personalizada usa el mismo nombre que una acción estándar.                                                                                                                                                                            |
-| [ICE94](ice94.md)    | Emite una advertencia si hay accesos directos sin invertir que apunten a un archivo de ensamblado en la caché global de ensamblados.                                                                                                                                     |
-| [ICE95](ice95.md)    | Comprueba la [tabla de control](control-table.md) y la tabla [BBControl para](bbcontrol-table.md) comprobar que los controles de la pantalla caben en todas las estaciones.                                                                                             |
+| [ICE94](ice94.md)    | Emite una advertencia si hay accesos directos sin invertir que apuntan a un archivo de ensamblado en la caché global de ensamblados.                                                                                                                                     |
+| [ICE95](ice95.md)    | Comprueba la [tabla de control](control-table.md) y la tabla [BBControl para](bbcontrol-table.md) comprobar que los controles de los paneles caben en todas las estaciones.                                                                                             |
 | [ICE96](ice96.md)    | Comprueba que la [acción PublishFeatures y](publishfeatures-action.md) la acción [PublishProduct](publishproduct-action.md) se han especificado en la [tabla AdvtExecuteSequence](advtexecutesequence-table.md).                                        |
 | [ICE97](ice97.md)    | Comprueba que dos componentes no aíslan un componente compartido en el mismo directorio.                                                                                                                                                                   |
 | [ICE98](ice98.md)    | Comprueba el campo de descripción de la [tabla ODBCDataSource para](odbcdatasource-table.md) un origen de datos ODBC.                                                                                                                                         |

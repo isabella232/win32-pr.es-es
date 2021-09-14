@@ -3,7 +3,7 @@ title: MP_HASH_TYPE enumeración (MpClient.h)
 description: Tipos hash posibles.
 ms.assetid: 46432C40-6DE1-4FB8-B7C1-C2712CCEB208
 keywords:
-- MP_HASH_TYPE enumeración heredadas Windows environment features
+- MP_HASH_TYPE enumeración de características de entorno de Windows heredado
 - PMP_HASH_TYPE puntero de enumeración Heredados Windows Environment Features
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a98e048b77953a90051de947b2b500c4ab1c07f29138418418edfdce5f5ebad7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 40c36e709d165845b729673df4aaea1042a7ee49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269471"
 ---
 # <a name="mp_hash_type-enumeration"></a>Enumeración \_ MP HASH \_ TYPE
 
 Tipos hash posibles.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -88,7 +88,7 @@ SHA 256
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

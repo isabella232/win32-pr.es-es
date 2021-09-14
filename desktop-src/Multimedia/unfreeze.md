@@ -1,6 +1,6 @@
 ---
 title: comando unfreeze
-description: El comando unfreeze vuelve a deshabilitar la adquisición de vídeo en el búfer de fotogramas después de que el comando freeze lo haya deshabilitado. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
+description: El comando unfreeze vuelve a liberar la adquisición de vídeo en el búfer de fotogramas después de que el comando freeze lo haya deshabilitado. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
 ms.assetid: ca90c299-2003-44cb-a879-4bc767480965
 keywords:
 - descongelar el comando Windows Multimedia
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 155ba6b65fb08411d8404920c8f3337d1bddbcb1
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369887"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260588"
 ---
 # <a name="unfreeze-command"></a>comando unfreeze
 
-El comando unfreeze vuelve a deshabilitar la adquisición de vídeo en el búfer de fotogramas después de que el comando freeze lo [haya](freeze.md) deshabilitado. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
+El comando unfreeze vuelve a liberar la adquisición de vídeo en el búfer de fotogramas después de que el comando [freeze](freeze.md) lo haya deshabilitado. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -69,9 +69,9 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 
 | Value          | Significado                                                                                                                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en *rectángulo* | Especifica la región en la que se volverá a habilitar la adquisición de vídeo. El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2*. Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
+| en *rectángulo* | Especifica la región en la que se volverá a habilitar la adquisición de vídeo. El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2.* Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
 | input          | Descongele la imagen de entrada.                                                                                                                                                                                                                                                                  |
-| output         | Descongele la imagen de salida. Si no se da "entrada" ni "salida", se supone "salida".                                                                                                                                                                                                  |
+| output         | Descongele la imagen de salida. Si no se da "entrada" ni "salida", se supone que "salida".                                                                                                                                                                                                  |
 
 
 
@@ -88,7 +88,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -109,7 +109,7 @@ unfreeze vboard at 10 20 90 165
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

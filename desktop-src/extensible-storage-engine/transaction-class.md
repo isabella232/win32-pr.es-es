@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase de transacción'
+description: 'Más información sobre: Clase Transaction'
 title: Transaction, clase
 TOCTitle: Transaction class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Transaction
@@ -25,24 +25,24 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: e155b8b11876c08574882e7c421088a82186b5c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269623"
 ---
 # <a name="transaction-class"></a>Transaction, clase
 
-Una clase que encapsula una transacción en un JET_SESID.
+Clase que encapsula una transacción en un JET_SESID.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. EsentResource](./esentresource-class.md)  
-    Microsoft. ISAM. esent. Interop. Transaction  
+  [Microsoft.Isam.Esent.Interop.EsentResource](./esentresource-class.md)  
+    Microsoft.Isam.Esent.Interop.Transaction  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,10 +62,10 @@ public class Transaction : EsentResource
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Miembros de transacción](./transaction-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

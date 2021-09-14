@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - wzcsapi.h
-ms.openlocfilehash: 8e93a9a0214e9ca46e6ae6872e0d341cd703ed9331622dfbc27bd5a949ece61c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e08efc8c95374f268efe21f963357e9c4f34ae35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119801315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071600"
 ---
 # <a name="intf_entry-structure"></a>Estructura INTF \_ ENTRY
 
@@ -54,7 +54,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -128,7 +128,7 @@ En la tabla siguiente se muestran los valores posibles para el parámetro basán
 
 
 
-| Valor                                                                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                                                                                                 |
+| Value                                                                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                                                                                                 |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="Ndis802_11AuthModeOpen"></span><span id="ndis802_11authmodeopen"></span><span id="NDIS802_11AUTHMODEOPEN"></span><dl> <dt>**Ndis802 \_ 11AuthModeAbrir**</dt> <dt>1</dt> </dl>                         | Autenticación del sistema abierto IEEE 802.11.<br/>                                                                                                                                                                                                      |
 | <span id="Ndis802_11AuthModeShared"></span><span id="ndis802_11authmodeshared"></span><span id="NDIS802_11AUTHMODESHARED"></span><dl> <dt>**Ndis802 \_ 11AuthModeShared**</dt> <dt>2</dt> </dl>                 | Autenticación compartida IEEE 802.11 que usa una clave de privacidad equivalente cableada (WEP) previamente compartida. <br/>                                                                                                                                                |
@@ -170,7 +170,7 @@ En la tabla siguiente se muestran los valores de bits posibles.
 | <span id="INTFCTL_OIDSSUPP_"></span><span id="intfctl_oidssupp_"></span><dl> <dt> **INTFCTL \_ OIDSSUPP**</dt> <dt>0x2000</dt> </dl> | Indica si el controlador NIC admite todos los 802.11 OID requeridos por WZCSVC para funcionar.<br/>                                                                                                                                                                                    |
 | <span id="INTFCTL_VOLATILE_"></span><span id="intfctl_volatile_"></span><dl> <dt> **InTFCTL \_ VOLATILE**</dt> <dt>0x1000</dt> </dl> | Indica si los parámetros de servicio para esta interfaz deben conservarse en el Registro. <br/> Si se establece este valor, estos parámetros son volátiles y no deben conservarse en el Registro.<br/>                                                                 |
 | <span id="INTFCTL_POLICY_"></span><span id="intfctl_policy_"></span><dl> <dt> **Directiva de \_ INTFCTL**</dt> <dt>0x0800</dt> </dl>       | Indica si una directiva de grupo inserta los parámetros de servicio para esta interfaz.<br/> Si se establece este valor, la directiva de grupo inserta los parámetros de servicio en el equipo local.<br/>                                                                         |
-| <span id="INTFCTL_8021XSUPP"></span><span id="intfctl_8021xsupp"></span><dl> <dt>**INTFCTL \_ 8021XSUPP**</dt> <dt>0x1000</dt> </dl> | Indica si está habilitada la compatibilidad con 802.1X.<br/>                                                                                                                                                                                                                                     |
+| <span id="INTFCTL_8021XSUPP"></span><span id="intfctl_8021xsupp"></span><dl> <dt>**INTFCTL \_ 8021XSUPP**</dt> <dt>0x1000</dt> </dl> | Indica si la compatibilidad con 802.1X está habilitada.<br/>                                                                                                                                                                                                                                     |
 
 
 
@@ -185,11 +185,11 @@ Máscara de bits de marcas dinámicas que controlan el comportamiento dinámico 
 
 Estos bits son útiles para desencadenar cambios dinámicos y temporales en la forma en que WZCSVC actúa en la interfaz. Ninguno de estos bits se conserva en el Registro, por lo que la configuración no sobrevivirá a un reinicio del sistema o a que un dispositivo deshabilite y habilite la secuencia.
 
-En la tabla siguiente se muestran los posibles valores de bits.
+En la tabla siguiente se muestran los valores de bits posibles.
 
 
 
-| Valor                                                                                                                                                                                                                            | Significado                                                                                                                                            |
+| Value                                                                                                                                                                                                                            | Significado                                                                                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="INTFDYN_NOSCAN"></span><span id="intfdyn_noscan"></span><dl> <dt>**INTFDYN \_ Noscan**</dt> <dt>0x00000001</dt> </dl> | Indica que WZCSVC no debe solicitar que la interfaz realice un examen activo, sino que use los valores almacenados en caché en el controlador NIC.<br/> |
 
@@ -206,9 +206,9 @@ Especifica las funcionalidades del controlador.
 
 
 
-| Valor                                                                                                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Value                                                                                                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="INTFCAP_MAX_CIPHER_MASK"></span><span id="intfcap_max_cipher_mask"></span><dl> <dt>**INTFCAP \_ MAX \_ CIPHER \_ MASK**</dt> <dt>0x000000ff</dt> </dl> | Los bits de orden inferior de este miembro se usan para indicar el cifrado máximo admitido. Los valores posibles son algunos de los valores de enumeración definidos en la estructura **NDIS \_ 802 \_ 11 \_ WEP \_ STATUS** en el archivo de encabezado *NtDDNdis.h* incluido en el SDK de Windows.<br/> El valor Ndis802 \_ 11Encryption1Enabled (2) indica que se admite WEP. No se admiten TKIP y AES, y una clave de transmisión puede estar disponible o no. <br/> El valor Ndis802 \_ 11Encryption2Enabled (9) indica que se admiten TKIP y WEP. No se admite AES y hay disponible una clave de transmisión. <br/> El valor Ndis802 \_ 11Encryption3Enabled (11) indica que se admiten AES, TKIP y WEP, y hay disponible una clave de transmisión. <br/> Ndis802 11EncryptionNotSupported (8) indica que no se admite la clave \_ WEP. <br/> |
+| <span id="INTFCAP_MAX_CIPHER_MASK"></span><span id="intfcap_max_cipher_mask"></span><dl> <dt>**INTFCAP \_ MAX \_ CIPHER \_ MASK**</dt> <dt>0x000000ff</dt> </dl> | Los bits de orden inferior de este miembro se usan para indicar el cifrado máximo que se admite. Los valores posibles son algunos de los valores de enumeración definidos en la estructura **NDIS \_ 802 \_ 11 \_ WEP \_ STATUS** en el archivo de encabezado *NtDDNdis.h* incluido en el SDK de Windows.<br/> El valor Ndis802 \_ 11Encryption1Enabled (2) indica que se admite WEP. TKIP y AES no se admiten y una clave de transmisión puede estar disponible o no. <br/> El valor Ndis802 \_ 11Encryption2Enabled (9) indica que se admiten TKIP y WEP. No se admite AES y hay disponible una clave de transmisión. <br/> El valor Ndis802 \_ 11Encryption3Enabled (11) indica que se admiteN AES, TKIP y WEP, y hay disponible una clave de transmisión. <br/> Ndis802 11EncryptionNotSupported (8) indica que no se admite la clave \_ WEP. <br/> |
 | <span id="INTFCAP_SSN"></span><span id="intfcap_ssn"></span><dl> <dt>**INTFCAP \_ SSN**</dt> <dt>0x00000100</dt> </dl>                                       | Indica la compatibilidad con Simple Secure Network (SSN), que es un subconjunto de 802.11i. <br/> SSN cambia la clave de cifrado periódicamente, en lugar del estándar WEP (Wired Equivalent Privacy), que usa una clave estática. Para que SSN funcione, el cifrado máximo admitido debe ser al menos TKIP. SSN fue desarrollado por un consorcio de proveedores en 2002 como un enfoque provisional para mejorar la seguridad de LAN inalámbrica mientras se completaba el estándar IEEE 802.11i.<br/>                                                                                                                                                                                                                                                                                                                                                                                            |
 | <span id="INTFCAP_80211I"></span><span id="intfcap_80211i"></span><dl> <dt>**INTFCAP \_ 80211I**</dt> <dt>0x00000200</dt> </dl>                              | Indica la compatibilidad con el estándar IEEE 802.11i.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
@@ -223,7 +223,7 @@ Especifica las funcionalidades del controlador.
 
 Un conjunto de funcionalidades para 802.11i.
 
-La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdNicCapabilities** cuando se llama a con la marca **CAPABILITIES de INTF \_** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el **miembro pData** de la **estructura RAW \_ DATA** contiene una estructura **CAPABILITY INTF \_ 80211. \_**
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdNicCapabilities** cuando se llama con la marca CAPABILITIES de **INTF \_** pasada en el *parámetro dwInflags.* Si la llamada de función se realiza correctamente, el **miembro pData** de la estructura **RAW \_ DATA** contiene una estructura **CAPABILITY DE INTF \_ 80211. \_**
 
 </dd> <dt>
 
@@ -232,7 +232,7 @@ La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdNic
 
 Datos binarios que contienen el SSID 802.11 configurado actualmente en la interfaz.
 
-La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdSSID** cuando se llama con la marca **INTF \_ SSID** pasada en el *parámetro dwInflags.* Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene el miembro **SsidLength** de una estructura **\_ \_ \_ SSID NDIS 802 11** y el miembro **pData** de la estructura **RAW \_ DATA** contiene el miembro **Ssid** de una estructura **\_ \_ \_ SSID NDIS 802 11.**
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdSSID** cuando se llama con la marca **\_ INTF SSID** pasada en el *parámetro dwInflags.* Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene el miembro **SsidLength** de una estructura **\_ \_ \_ SSID NDIS 802 11** y el miembro **pData** de la estructura **RAW \_ DATA** contiene el miembro **Ssid** de una estructura **SSID de NDIS \_ 802 \_ 11. \_**
 
 La **estructura \_ \_ \_ SSID NDIS 802 11** se define en el archivo de encabezado *Ntddndis.h.*
 
@@ -243,7 +243,7 @@ La **estructura \_ \_ \_ SSID NDIS 802 11** se define en el archivo de encabezad
 
 Datos binarios que contienen el BSSID 802.11 configurado en la interfaz.
 
-La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdBSSID** cuando se llama con la marca **\_ BSSID de INTF** pasada en el *parámetro dwInflags.* Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene el tamaño de una estructura **NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS** y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura **NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS.**
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdBSSID** cuando se llama con la marca **\_ INTF BSSID** pasada en el *parámetro dwInflags.* Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene el tamaño de una estructura **MAC ADDRESS de NDIS \_ 802 \_ 11 \_ \_** y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura **NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS.**
 
 La **estructura NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS** se define en el archivo de encabezado *Ntddndis.h.*
 
@@ -254,7 +254,7 @@ La **estructura NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS** se define en el archivo de
 
 Datos binarios que contienen la lista de SSID que WZCSVC recuperó por última vez.
 
-La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdBSSIDList** cuando se llama a con la marca **\_ INTF BSSIDLIST** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene la longitud del búfer con los datos devueltos y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura CONFIG LIST de **WZC \_ 802 \_ \_ \_ 11.**
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdBSSIDList** cuando se llama con la marca **\_ INTF BSSIDLIST** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene la longitud del búfer con los datos devueltos y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura CONFIG LIST de **WZC \_ 802 \_ \_ \_ 11.**
 
 </dd> <dt>
 
@@ -263,20 +263,20 @@ La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdBSS
 
 Datos binarios que contienen la lista de redes preferidas configuradas para esta interfaz.
 
-La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdStSSIDList** cuando se llama a con la marca **\_ PREFLIST de INTF** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene la longitud del búfer con los datos devueltos y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura CONFIG LIST de **WZC \_ 802 \_ \_ \_ 11.**
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdStSSIDList** cuando se llama con la marca **\_ PREFLIST de INTF** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene la longitud del búfer con los datos devueltos y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura CONFIG LIST de **WZC \_ 802 \_ \_ \_ 11.**
 
-Si una de las redes preferidas está conectada actualmente, el miembro **dwCtlFlags** de la estructura **\_ WZC WLAN \_ CONFIG** de la red tendrá el conjunto de bits **WZCCTL \_ MEDIA \_ CONNECTED** (0x0400).
+Si una de las redes preferidas está conectada actualmente, el miembro **dwCtlFlags** de la estructura config de **\_ WZC WLAN \_** para la red tendrá el conjunto de bits **WZCCTL \_ MEDIA \_ CONNECTED** (0x0400).
 
 </dd> <dt>
 
 **rdCtrlData**
 </dt> <dd>
 
-Datos binarios usados con otras marcas de control, al establecer parámetros adicionales en la interfaz.
+Datos binarios usados con otras marcas de control, al establecer parámetros adicionales en la interfaz .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las funciones [**WZCQueryInterface**](wzcqueryinterface.md) y [**WZCRefreshInterface**](wzcrefreshinterface.md) usan la estructura **INTF \_ ENTRY.**
 
@@ -293,10 +293,10 @@ typedef struct
 
 
 
-El *miembro pData* apunta a datos binarios. *dwDataLen indica* el número de bytes a los que apunta *pData.*
+El *miembro pData* apunta a datos binarios. *DwDataLen indica* el número de bytes a los que apunta *pData*.
 
 > [!Note]  
-> El *archivo de encabezado Wzcsapi.h* no está disponible en Windows SDK.
+> El *archivo de encabezado Wzcsapi.h* no está disponible en el SDK Windows.
 
  
 
@@ -304,13 +304,13 @@ El *miembro pData* apunta a datos binarios. *dwDataLen indica* el número de byt
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                 |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP con SP3<br/>                                                       |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl> |
 
 
 
