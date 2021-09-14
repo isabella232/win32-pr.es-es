@@ -4,12 +4,12 @@ description: La API DE SNMP define los siguientes tipos de datos.
 ms.assetid: 147c24e2-cc7b-422c-822b-a2892d1ab044
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 561a6c3e63f1ad38f9552b48ed7ca879e7f82e060796391da127757821e7a299
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c50ef59a1c2b2f39f34564610efdd05fe4808478
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073817"
 ---
 # <a name="snmp-data-types"></a>Tipos de datos SNMP
 
@@ -40,7 +40,7 @@ La API DE SNMP define los siguientes tipos de datos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

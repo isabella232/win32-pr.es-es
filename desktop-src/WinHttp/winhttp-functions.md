@@ -1,17 +1,17 @@
 ---
 description: En este tema se identifican las funciones que proporciona WinHTTP.
 ms.assetid: dcb56d5d-ed0d-49bb-95bf-940a49c033f1
-title: Funciones WinHTTP
+title: Funciones de WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e3fdd7a0e6e42dcc30a214d429744ffadc1345e8a88fcc70a35a5f7ccace95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41e45289230c1cc22a7f8799dfbbe1dafddccf38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073148"
 ---
-# <a name="winhttp-functions"></a>Funciones WinHTTP
+# <a name="winhttp-functions"></a>Funciones de WinHTTP
 
 WinHTTP proporciona las siguientes funciones:
 
@@ -69,7 +69,7 @@ Crea un identificador para que [**lo use WinHttpGetProxyForUrlEx.**](/windows/de
 [**WinHttpCreateUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl)
 </dt> <dd>
 
-Crea una dirección URL a partir de elementos componentes, por ejemplo, el nombre de host y la ruta de acceso.
+Crea una dirección URL a partir de componentes, por ejemplo, el nombre de host y la ruta de acceso.
 
 </dd> <dt>
 
@@ -300,7 +300,7 @@ Obtiene el estado de cierre enviado por un servidor.
 [**WinHttpWebSocketReceive**](/windows/desktop/api/winhttp/nf-winhttp-winhttpwebsocketreceive)
 </dt> <dd>
 
-Recibe datos de una conexión webSocket.
+Recibe datos de una conexión de WebSocket.
 
 </dd> <dt>
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ea26938ea986436a35d7a3bdab552e4e25faf95edc9fa7efedca06efef34f26a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 004bca3eb0890c2ec74e6881d6ed4b007a3fa581
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118258528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072546"
 ---
 # <a name="esentspavailextcorruptedexception-class"></a>Clase EsentSPAvailExtCorruptedException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones SPAvailExtCorrupted.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

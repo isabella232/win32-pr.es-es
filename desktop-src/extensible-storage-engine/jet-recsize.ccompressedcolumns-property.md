@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 80a058cc12174b9247524ccd88060a9aa17ba561a95b036010040a4786d0d47c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 448a18afc5a986fb34128dc4113fddef4448486a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118763750"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072496"
 ---
 # <a name="jet_recsizeccompressedcolumns-property"></a>JET_RECSIZE.cCompressedColumns, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el número total de columnas del registro que se comprimen.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

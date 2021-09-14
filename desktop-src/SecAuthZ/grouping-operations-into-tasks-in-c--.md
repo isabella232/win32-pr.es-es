@@ -4,18 +4,18 @@ ms.assetid: a9a0202e-44c9-4192-8ff8-e22bddf26cfe
 title: Agrupación de operaciones en tareas en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adfcfee2368a04fcd1b97faa6c27184371e047d0753080894c87d93c69957c5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c869db5dc5acbd4a7e7f9401ebbf97dea481c40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119672085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073693"
 ---
 # <a name="grouping-operations-into-tasks-in-c"></a>Agrupación de operaciones en tareas en C++
 
-En el Administrador de autorización, una tarea es una acción de alto nivel que los usuarios de una aplicación deben completar. Las tareas se realizan en operaciones, que son funciones y métodos de bajo nivel de la aplicación. A continuación, se asigna una tarea a los roles que deben realizar esa tarea. Una tarea se representa mediante un [**objeto IAzTask.**](/windows/desktop/api/Azroles/nn-azroles-iaztask) Para obtener más información sobre las operaciones y las tareas, vea [Operaciones y tareas](operations-and-tasks.md).
+En el Administrador de autorización, una tarea es una acción de alto nivel que los usuarios de una aplicación deben completar. Las tareas se realizan en operaciones, que son funciones y métodos de bajo nivel de la aplicación. A continuación, se asigna una tarea a los roles que deben realizar esa tarea. Una tarea se representa mediante un [**objeto IAzTask.**](/windows/desktop/api/Azroles/nn-azroles-iaztask) Para obtener más información sobre las operaciones y las tareas, vea [Operaciones y tareas.](operations-and-tasks.md)
 
-En el ejemplo siguiente se muestra cómo agrupar las operaciones para crear una tarea. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada Expense y que esta aplicación contiene operaciones definidas en el tema Definición de operaciones en [C++.](defining-operations-in-c--.md)
+En el ejemplo siguiente se muestra cómo agrupar las operaciones para crear una tarea. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada Expense y que esta aplicación contiene operaciones definidas en el tema [Defining Operations in C++](defining-operations-in-c--.md).
 
 
 ```C++

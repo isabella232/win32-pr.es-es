@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 92fdcb9c6eff502dc5f19cb62d92af5d4db60e15890667c894f96cfb55a9e5ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 907e94a731b2ec150a331347480c461d0d0fa319
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119132918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073132"
 ---
 # <a name="winhttprequest-object"></a>Objeto WinHttpRequest
 
@@ -50,7 +50,7 @@ Ejemplos de código tomados [de la propiedad IWinHttpRequest::Status](iwinhttpre
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto WinHttpRequest** tiene estos tipos de miembros:
 
@@ -66,7 +66,7 @@ El **objeto WinHttpRequest** tiene estos eventos.
 
 | Evento                                                                            | Descripción                                                          |
 |:---------------------------------------------------------------------------------|:---------------------------------------------------------------------|
-| [**OnError**](iwinhttprequestevents-onerror.md)                                 | Se produce cuando se produce un error en tiempo de ejecución en la aplicación.<br/> |
+| [**OnError**](iwinhttprequestevents-onerror.md)                                 | Se produce cuando hay un error en tiempo de ejecución en la aplicación.<br/> |
 | [**OnResponseDataAvailable**](iwinhttprequestevents-onresponsedataavailable.md) | Se produce cuando los datos están disponibles en la respuesta.<br/>          |
 | [**OnResponseFinished**](iwinhttprequestevents-onresponsefinished.md)           | Se produce cuando se completan los datos de respuesta.<br/>                |
 | [**OnResponseStart**](iwinhttprequestevents-onresponsestart.md)                 | Se produce cuando los datos de respuesta comienzan a recibirse.<br/>      |
@@ -86,11 +86,11 @@ El **objeto WinHttpRequest** tiene estos métodos.
 | [**Aborta**](iwinhttprequest-abort.md)                                 | Anula un [método WinHTTP](about-winhttp.md) [**Send.**](iwinhttprequest-send.md)<br/>                                                              |
 | [**GetAllResponseHeaders**](iwinhttprequest-getallresponseheaders.md) | Recupera todos los encabezados de respuesta HTTP.<br/>                                                                                                            |
 | [**GetResponseHeader**](iwinhttprequest-getresponseheader.md)         | Recupera los encabezados de respuesta HTTP.<br/>                                                                                                            |
-| [**Abierto**](iwinhttprequest-open.md)                                   | Abre una conexión HTTP a un recurso HTTP.<br/>                                                                                                   |
-| [**Enviar**](iwinhttprequest-send.md)                                   | Envía una solicitud HTTP a un servidor HTTP.<br/>                                                                                                        |
+| [**Abrir**](iwinhttprequest-open.md)                                   | Abre una conexión HTTP a un recurso HTTP.<br/>                                                                                                   |
+| [**Envío**](iwinhttprequest-send.md)                                   | Envía una solicitud HTTP a un servidor HTTP.<br/>                                                                                                        |
 | [**SetAutoLogonPolicy**](iwinhttprequest-setautologonpolicy.md)       | Establece la directiva de [inicio de sesión automático actual.](authentication-in-winhttp.md)<br/>                                                |
 | [**SetClientCertificate**](iwinhttprequest-setclientcertificate.md)   | Selecciona un certificado de cliente que se enviará a un servidor https (Protocolo seguro de transferencia de hipertexto).<br/>                                                    |
-| [**SetCredentials**](iwinhttprequest-setcredentials.md)               | Establece las credenciales que se usarán con un servidor HTTP, ya sea un servidor de origen o un servidor proxy.<br/>                                                             |
+| [**SetCredentials**](iwinhttprequest-setcredentials.md)               | Establece las credenciales que se usarán con un servidor HTTP, ya sea un origen o un servidor proxy.<br/>                                                             |
 | [**SetProxy**](iwinhttprequest-setproxy.md)                           | Establece la información del servidor proxy.<br/>                                                                                                                  |
 | [**SetRequestHeader**](iwinhttprequest-setrequestheader.md)           | Agrega, cambia o elimina un encabezado de solicitud HTTP.<br/>                                                                                               |
 | [**SetTimeouts**](iwinhttprequest-settimeouts.md)                     | Especifica, en milisegundos, los componentes de tiempo de espera individuales de una operación de envío y recepción.<br/>                                                     |
@@ -106,9 +106,9 @@ El **objeto WinHttpRequest** tiene estas propiedades.
 
 
 
-| Propiedad                                                            | Tipo de acceso           | Descripción                                                                     |
+| Propiedad.                                                            | Tipo de acceso           | Descripción                                                                     |
 |:--------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------|
-| [**Opción**](iwinhttprequest-option.md)<br/>                 | Lectura/escritura<br/> | Establece o recupera un valor de opción WinHTTP.<br/>                            |
+| [**Opción**](iwinhttprequest-option.md)<br/>                 | Lectura y escritura<br/> | Establece o recupera un valor de opción WinHTTP.<br/>                            |
 | [**ResponseBody**](iwinhttprequest-responsebody.md)<br/>     | Solo lectura<br/>  | Recupera el cuerpo de la entidad de respuesta como una matriz de bytes sin signo.<br/>    |
 | [**ResponseStream**](iwinhttprequest-responsestream.md)<br/> | Solo lectura<br/>  | Recupera el cuerpo de la entidad de respuesta como [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream).<br/> |
 | [**ResponseText**](iwinhttprequest-responsetext.md)<br/>     | Solo lectura<br/>  | Recupera el cuerpo de la entidad de respuesta como texto.<br/>                          |
@@ -119,7 +119,7 @@ El **objeto WinHttpRequest** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **objeto WinHttpRequest** usa la [**interfaz IErrorInfo**](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) para proporcionar datos de error. Se puede obtener una descripción y un valor de error numérico con el objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) en Microsoft Visual Basic Scripting Edition (VBScript) y el objeto [Error](https://msdn.microsoft.com/library/dww52sbt.aspx) en Microsoft JScript. Los 16 bits inferiores de un número de error corresponden a los valores encontrados en [**Mensajes de error**](error-messages.md).
 
@@ -137,7 +137,7 @@ El **objeto WinHttpRequest** usa la [**interfaz IErrorInfo**](/previous-versions
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 

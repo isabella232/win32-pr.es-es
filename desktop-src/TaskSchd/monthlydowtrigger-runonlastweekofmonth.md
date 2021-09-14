@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb04247bdb991a71f3b535e3524163549384a207aafd5e85b162aef6b5ab0198
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c67852d305d89e7d75481c8c2080a972123bfc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119659565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073425"
 ---
 # <a name="monthlydowtriggerrunonlastweekofmonth-property"></a>MonthlyDOWTrigger.RunOnLastWeekOfMonth, propiedad
 
 Para el scripting, obtiene o establece un valor booleano que indica que la tarea se ejecuta en la última semana del mes.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -44,7 +44,7 @@ True indica que la tarea se ejecuta en la última semana del mes; de lo contrari
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

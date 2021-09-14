@@ -4,12 +4,12 @@ description: En la lista siguiente se incluyen todas las funciones de WinINet.
 ms.assetid: 2e0da5c6-29e4-47b5-8ed2-8712c9ca2c97
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e087fe0f83577924e8ad6b752e8ad4ed5d250d1c9da2a368273c5eb2af9e921c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ed50afee0920a9a0d5012c830744d9bee6865050
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120071655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073127"
 ---
 # <a name="wininet-functions"></a>Funciones de WinINet
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5064e788d89de6e5143ad826a4f61a4afd802931c6964193c8fa46626edf955d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 701aa4c89ee6a9d657721d872565c9b2056bb435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117729599"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072755"
 ---
 # <a name="id3dxprtengineshadowrayintersects-method"></a>Método ID3DXPRTEngine::ShadowRayIntersects
 
@@ -65,7 +65,7 @@ Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 Devuelve **TRUE** si el rayo forma una intersección con la malla actual; de lo contrario, **devuelve FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use [**ID3DXPRTEngine::SetMinMaxIntersection**](id3dxprtengine--setminmaxintersection.md) para establecer las distancias mínima y máxima de intersección con el rayo.
 
@@ -82,7 +82,7 @@ Este método se ejecuta más rápido que [**ID3DXPRTEngine::ClosestRayIntersects
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

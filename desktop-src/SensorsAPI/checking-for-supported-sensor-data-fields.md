@@ -1,17 +1,17 @@
 ---
 description: En este tema se describe cómo comprobar que un sensor puede proporcionar un conjunto determinado de campos de datos.
 ms.assetid: 918ba4a3-d2ac-47ee-ba29-f7ddf67ffbc5
-title: Comprobación de los campos de datos de sensor admitidos
+title: Comprobación de los campos de datos del sensor admitidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa75c474dc4cd38d34074872765abc77a7dae00d18e8cc37d74cde70b6f22a95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5cfd9cf42d1008ec1bb0e2785ec5113c5a817105
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118890270"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073556"
 ---
-# <a name="checking-for-supported-sensor-data-fields"></a>Comprobación de los campos de datos de sensor admitidos
+# <a name="checking-for-supported-sensor-data-fields"></a>Comprobación de los campos de datos del sensor admitidos
 
 En este tema se describe cómo comprobar que un sensor puede proporcionar un conjunto determinado de campos de datos.
 

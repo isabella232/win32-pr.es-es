@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: ff8bd1d23315894a3e858a536d10883f2fedcced792575157de824c02f3217ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5539ef2529a4f3af86d34ae0e9d44cd31a8f4289
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118907186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073644"
 ---
 # <a name="sslchangenotify-function"></a>Función SslChangeNotify
 
-La **función SslChangeNotify** no está implementada y no se puede usar.
+La **función SslChangeNotify** no se implementa y no se puede usar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **NTE \_ NOT \_ SUPPORTED.**
+Devuelve **NTE \_ NOT \_ SUPPORTED**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Devuelve **NTE \_ NOT \_ SUPPORTED.**
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

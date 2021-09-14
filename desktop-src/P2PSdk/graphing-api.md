@@ -4,12 +4,12 @@ ms.assetid: d590f31a-d036-40cf-a1be-00396b2d6740
 title: Graphing API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b3cb6399b6bf2fb3ea8eeb80d9cd4cafa0f9d8cf6ffea058a6af9cefd66d7b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01719e2413f92e5681a36d8b867332f187a3e85d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073920"
 ---
 # <a name="graphing-api"></a>Graphing API
 

@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 590979677e79073466f7511b3f382a4bfcebc8bf0fd8ad4cb10f6dcd957db28a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e932f0adb325c4c2f9f88e9f80d75ecaecd3ca85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135378"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073270"
 ---
 # <a name="iwmpsettingsisavailable-vb-and-c"></a>IWMPSettings.isAvailable (VB y C#)
 
@@ -76,9 +76,9 @@ System.Boolean get_isAvailable (
 
 Valor **System.Boolean** que indica si se puede realizar la acción especificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**IWMPSettings.isIdentical** es una propiedad de Visual Basic que toma un parámetro . En C# se conoce como el **método IWMPSettings.get \_ isIdentical.**
+**IWMPSettings.isIdentical es** una propiedad de Visual Basic que toma un parámetro . En C# se conoce como el **método IWMPSettings.get \_ isIdentical.**
 
 ## <a name="examples"></a>Ejemplos
 

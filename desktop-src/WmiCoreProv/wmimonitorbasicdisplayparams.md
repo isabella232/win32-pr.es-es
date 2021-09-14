@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 958eb9134062d5380a2afda77eeaad3034a2da7430d2f6a3094916ceae211e4f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e457757a3542bbfc8ded7536396458ef3e592714
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117926787"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073091"
 ---
 # <a name="wmimonitorbasicdisplayparams-class"></a>Clase WmiMonitorBasicDisplayParams
 
-La clase WMI **WmiMonitorBasicDisplayParams** representa las características de presentación básicas de un monitor de equipo. El valor de la **propiedad VideoInputType** indica si el monitor es análogo o digital. Los datos de esta clase corresponden a los datos del bloque Basic Display Parameters/Features del estándar E-EDID (Enhanced Extended Display Identification Data, E-EDID) de Video Electronics Standard Association (VESA) Enhanced Display Identification Data (E-EDID).
+La clase WMI **WmiMonitorBasicDisplayParams** representa las características de presentación básicas de un monitor de equipo. El valor de la **propiedad VideoInputType** indica si el monitor es análogo o digital. Los datos de esta clase corresponden a los datos del bloque Basic Display Parameters/Features del estándar E-EDID (Enhanced Extended Display Identification Data, E-EDID) de Video Electronics Standard Association (VESA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ class WmiMonitorBasicDisplayParams : MSMonitorClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WmiMonitorBasicDisplayParams** tiene estos tipos de miembros:
 
@@ -80,7 +80,7 @@ Tipo de datos: **uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Mostrar la característica de transferencia (100 \* Gamma-100).
+Muestra la característica de transferencia (100 \* Gamma-100).
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Tipo de entrada de vídeo.
 
 
 
-| Valor                                                                              | Significado            |
+| Value                                                                              | Significado            |
 |------------------------------------------------------------------------------------|--------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Analógico<br/>  |
 | <dl> <dt>1 (0x1)</dt> </dl> | Digital<br/> |
@@ -163,15 +163,15 @@ Tipo de entrada de vídeo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**MaxHorizontalImageSize** y **MaxVerticalImageSize** representan las dimensiones de imagen máximas que el monitor puede mostrar correctamente para todo el conjunto de combinaciones de formato y control de tiempo admitidas. La dimensión de imagen máxima se define mediante VESA Video Image Area Definition (VIAD) Standard y se redondea al más cercano. El sistema del equipo host puede usar estos datos para seleccionar el tamaño de la imagen y la relación de aspecto que permitirán escalar correctamente el texto. Tenga en cuenta que, si alguno de estos campos o ambos son cero, el sistema no realiza ninguna suposición sobre el tamaño de presentación. Por ejemplo, el tamaño de una presentación de proyección puede ser indeterminado.
+**MaxHorizontalImageSize** y **MaxVerticalImageSize** representan las dimensiones de imagen máximas que el monitor puede mostrar correctamente para todo el conjunto de combinaciones de formato y tiempo admitidas. La dimensión de imagen máxima se define mediante el estándar de definición de área de imagen de vídeo (VIAD) de VESA y se redondea al centímetros más cercano. El sistema del equipo host puede usar estos datos para seleccionar el tamaño de la imagen y la relación de aspecto que permitirán escalar correctamente el texto. Tenga en cuenta que, si alguno de estos campos o ambos son cero, el sistema no hace ninguna suposición sobre el tamaño de presentación. Por ejemplo, el tamaño de una presentación de proyección puede ser indeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

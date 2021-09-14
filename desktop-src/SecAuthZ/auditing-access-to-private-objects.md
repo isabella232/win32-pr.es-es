@@ -4,12 +4,12 @@ ms.assetid: 4edee246-4fa7-4947-9737-34198f36e3ab
 title: Auditoría del acceso a objetos privados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eac3a38a9f0af292a77a539491e0cea5f1faf40b570f34a35371ad43a7abe757
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3669841714fe9c24f6346404bc8634222bc4557e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117784596"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073712"
 ---
 # <a name="auditing-access-to-private-objects"></a>Auditoría del acceso a objetos privados
 

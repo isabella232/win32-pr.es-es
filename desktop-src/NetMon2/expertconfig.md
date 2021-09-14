@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 93b47054fd5b8103d5bbe0d762db87f285a5f01690d0b93f6da14d215e404a06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 293bdf4c792c10232564a7ba6386df430e81ecb5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118366915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074162"
 ---
 # <a name="expertconfig-structure"></a>Estructura EXPERTCONFIG
 
@@ -36,7 +36,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -50,7 +50,7 @@ Longitud total de la estructura, incluidos los cuatro bytes usados para el miemb
 **RawConfigData**
 </dt> <dd>
 
-Datos de configuración. El experto debe agregar los datos de configuración. Por ejemplo, suponga que tenía una estructura de datos similar a esta.
+Datos de configuración. El experto debe agregar los datos de configuración. Por ejemplo, supongamos que tenía una estructura de datos similar a esta.
 
 ``` syntax
 typedef struct
@@ -90,7 +90,7 @@ BOOL WINAPI Configure(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

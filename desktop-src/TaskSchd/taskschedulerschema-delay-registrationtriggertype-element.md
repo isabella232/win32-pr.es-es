@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cd7ba3e9fd0fb71da628ee15bc0f1bdf6281e74ef20f259faf7a5a63504a6f12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4fe1a580a0e69c8e4816022971b2d0bc143544cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118131854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073408"
 ---
 # <a name="delay-registrationtriggertype-element"></a>Elemento Delay (registrationTriggerType)
 
@@ -42,7 +42,7 @@ El tipo complejo [**registrationTriggerType**](taskschedulerschema-registrationt
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripting, el retraso del desencadenador de registro se especifica mediante la [**propiedad RegistrationTrigger.Delay.**](registrationtrigger-delay.md)
 
@@ -70,7 +70,7 @@ El xml siguiente define un retraso del desencadenador de registro que permite un
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

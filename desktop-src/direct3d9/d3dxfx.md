@@ -5,11 +5,11 @@ title: D3DXFX
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6858f659b1561a526a284b3ea2dca0e1d9a11a31
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072781"
 ---
 # <a name="d3dxfx"></a>D3DXFX
 

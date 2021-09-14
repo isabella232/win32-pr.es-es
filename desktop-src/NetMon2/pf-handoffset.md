@@ -1,5 +1,5 @@
 ---
-description: La estructura HANDOFFSET PF define los protocolos que se entregan al analizador o los protocolos a los que el analizador \_ entrega.
+description: La estructura PF HANDOFFSET define los protocolos que se entregan al analizador o los protocolos a los que entrega \_ el analizador.
 ms.assetid: 2fda399d-a09e-47b4-bb2e-95996de9f950
 title: PF_HANDOFFSET estructura (Netmon.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 68e3f3608ac1aeff0f6d54ee7c94c39b76b0df08bb7dc41b05063f9cf53c48a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1b5dc9620f3b1860b27af973432aa4218c05b63b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074098"
 ---
 # <a name="pf_handoffset-structure"></a>Estructura \_ HANDOFFSET PF
 
-La **estructura \_ HANDOFFSET** PF define los protocolos que se entregan al analizador o los protocolos a los que el analizador entrega.
+La **\_ estructura PF HANDOFFSET** define los protocolos que se entregan al analizador o los protocolos a los que entrega el analizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ typedef struct _PF_HANDOFFSET {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ Matriz de [estructuras \_ PF HANDOFFENTRY](pf-handoffentry.md) que definen cada 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [estructura \_ PF PARSERINFO](pf-parserinfo.md) usa la **estructura PF \_ HANDOFFSET** para enumerar lo siguiente:
 
@@ -75,7 +75,7 @@ La **estructura \_ PF HANDOFFSET** debe asignarse mediante **HeapAlloc**.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,16 +4,16 @@ ms.assetid: d75bc507-3502-417c-af05-cbff807a5778
 title: Operaciones y tareas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e8e60923e9631e37087a28a6a19747dc63249ff2f1ae8224c20e859e1f13c25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a198d8844a9f34030b8b6a40eba759eed4057119
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118912416"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073685"
 ---
 # <a name="operations-and-tasks"></a>Operaciones y tareas
 
-Una operación es una acción de equipo de bajo nivel. En la API de Authorization Manager, una operación se representa mediante un [**objeto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) En general, las operaciones son demasiadas en número y de nivel demasiado bajo para facilitar la administración. Agrupa las operaciones en tareas para simplificar la administración de la directiva de autorización.
+Una operación es una acción de equipo de bajo nivel. En la API del Administrador de autorización, una operación se representa mediante un [**objeto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) En general, las operaciones son demasiadas en número y de nivel demasiado bajo para facilitar la administración. Agrupa las operaciones en tareas para simplificar la administración de la directiva de autorización.
 
 Una tarea se representa mediante un [**objeto IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) y puede contener uno o varios [**objetos IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Un **objeto IAzTask** también puede contener otros **objetos IAzTask,** por lo que las tareas se pueden anidar. Para facilitar la administración, un **objeto IAzTask** debe representar una tarea que un usuario real desea realizar.
 

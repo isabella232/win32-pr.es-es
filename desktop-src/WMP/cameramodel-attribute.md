@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09c9b9f204c41392005f5d7e0722bfa7d9e597e95613d0cce2dc18aca0a4c4ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 533f0fc33c391f51b3e109cb27c0a6cae78a79db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119864225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073274"
 ---
 # <a name="cameramodel-attribute"></a>Atributo CameraModel
 
@@ -27,7 +27,7 @@ El **atributo CameraModel** es una cadena que representa el modelo de la cámara
 
 -   [Elementos de fotos](photo-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 

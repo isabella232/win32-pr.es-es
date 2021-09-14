@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c3c7e6ff41d1b556e224e4c46850c4ba35239199294570ea2ef51ea3a124d5b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed321b84e9e7bfbeb4dccb4d97219f6be21389c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118333769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073224"
 ---
 # <a name="recordingtimemonth-attribute"></a>Atributo RecordingTimeMonth
 
@@ -29,7 +29,7 @@ El **atributo RecordingTimeMonth** es la parte del mes de la fecha de la grabaci
 -   [Elementos de fotos](photo-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 
@@ -39,13 +39,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

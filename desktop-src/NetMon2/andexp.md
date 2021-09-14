@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 7ee2ac65e10e0dc9be46ab103fe21abcc78dc403302b298f3eb2fc83000802cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d27d5bdd51a45b31f518271053f44b45917cdeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117982957"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074167"
 ---
 # <a name="andexp-structure"></a>Estructura ANDEXP
 
@@ -36,7 +36,7 @@ typedef struct _ANDEXP {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ Matriz de elementos de coincidencia de patrón. Tenga en cuenta que **cada estru
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los patrones de la matriz **PatternMatch** MAX PATTERNS se unen como elementos del mismo nivel en \[ instrucciones OR \_ \] lógicas con el formato
 
@@ -66,7 +66,7 @@ Para obtener más información sobre cómo implementar esta estructura, vea [Cap
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -74,7 +74,7 @@ Para obtener más información sobre cómo implementar esta estructura, vea [Cap
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

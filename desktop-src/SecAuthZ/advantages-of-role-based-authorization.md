@@ -4,12 +4,12 @@ ms.assetid: 04b44f71-0174-4571-80cd-55179355bd53
 title: Ventajas de la autorización basada en roles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ae1aa88231068d378f098d8ed760e8f9491d2ba10f2fbf5b9951e97cbdd0e0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8f3fdf9ee9f2c441b74cdaf087b4af545020464
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118914350"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073718"
 ---
 # <a name="advantages-of-role-based-authorization"></a>Ventajas de la autorización basada en roles
 

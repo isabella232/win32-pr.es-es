@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo de código siguiente se muestra la creación de una llamada de conferencia simple. Para obtener información sobre las videoconferencias multimedia de multidifusión IP, consulte Acerca de las conferencias de telefonía IP de encuentro.
+description: En el ejemplo de código siguiente se muestra la creación de una llamada de conferencia simple. Para obtener información sobre las videoconferencias multimedia de multidifusión IP, consulte About Rendezvous IP Telephony Conferencing (Acerca de la conferencia de telefonía IP de Encuentro).
 ms.assetid: fb55853d-b882-41c8-99e6-bfa897b2dabf
-title: Crear una conferencia sencilla
+title: Creación de una conferencia simple
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3aa0bfd8fede9fa61aedb6b630a2451803e2257d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073506"
 ---
-# <a name="create-a-simple-conference"></a>Crear una conferencia sencilla
+# <a name="create-a-simple-conference"></a>Creación de una conferencia simple
 
-En el ejemplo de código siguiente se muestra la creación de una llamada de conferencia simple. Para obtener información sobre las videoconferencias multimedia de multidifusión IP, consulte Acerca de las [conferencias de telefonía IP de encuentro](about-rendezvous-ip-telephony-conferencing.md).
+En el ejemplo de código siguiente se muestra la creación de una llamada de conferencia simple. Para obtener información sobre las videoconferencias multimedia de multidifusión IP, vea [About Rendezvous IP Telephony Conferencing](about-rendezvous-ip-telephony-conferencing.md).
 
-Antes de usar este ejemplo de código, una llamada debe estar en curso y debe realizar las operaciones en [realizar una llamada](make-a-call.md) o [recibir una llamada](receive-a-call.md) .
+Antes de usar este ejemplo de código, debe haber una [](make-a-call.md) llamada [en](receive-a-call.md) curso y debe realizar las operaciones realizadas en Realizar una llamada o Recibir una llamada.
 
 > [!Note]  
 > Este ejemplo no tiene la comprobación de errores y las versiones adecuadas para el código de producción.

@@ -6,12 +6,12 @@ keywords:
 - Almacenar conjuntos de propiedades estructurados Storage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beae3d03889415fd920cb34d065c0ffd33e813b170d45dd73ae7c4d548f9296d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60710b84b52fcc709f8ba3ad1e930d6f5a50a4cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119661785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073535"
 ---
 # <a name="storing-property-sets"></a>Almacenar conjuntos de propiedades
 

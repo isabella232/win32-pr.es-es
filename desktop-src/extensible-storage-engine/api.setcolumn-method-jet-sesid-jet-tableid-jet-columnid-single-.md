@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5ed002e5922305c9003e13b7960a0ac0f3e0e043d0b71da2425f59dbf998daf9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e57a42a46b9247133c1427f3ae270645f6133523
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118982925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072620"
 ---
 # <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-single"></a>Método Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Single)
 
@@ -80,7 +80,7 @@ public static void SetColumn(
   - columnid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Columnid que se establece.
+    Columnid que se establecerá.
 
 <!-- end list -->
 
@@ -89,11 +89,11 @@ public static void SetColumn(
     
     Datos que se van a establecer.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

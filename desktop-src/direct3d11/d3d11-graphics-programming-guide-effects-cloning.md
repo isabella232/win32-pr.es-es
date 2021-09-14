@@ -4,12 +4,12 @@ description: La clonación de un efecto crea una segunda copia casi idéntica de
 ms.assetid: e3870363-5ee8-4fdc-a489-cdaeef8c9c39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 195b4e9a42e595558acc4c512f8662c11b2acde7873e123b242ee272eeea7e8c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68607d3cc9f00a346fcfa65c255f3caa51dea384
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118538009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072970"
 ---
 # <a name="cloning-an-effect"></a>Clonación de un efecto
 

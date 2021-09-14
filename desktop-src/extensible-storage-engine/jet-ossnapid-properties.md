@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39510824
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 29aabdc5c133c75be86001deaecacea7e6722c61c4d842d779929bd60df7f2fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a4672518d3a7d29fa239a31a226c68d06fbd7ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118073958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072501"
 ---
 # <a name="jet_ossnapid-properties"></a>JET_OSSNAPID propiedades
 
@@ -43,7 +43,7 @@ El [JET_OSSNAPID](./jet-ossnapid-structure.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

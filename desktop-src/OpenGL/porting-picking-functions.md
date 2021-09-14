@@ -1,6 +1,6 @@
 ---
-title: Porte de funciones de selección
-description: Todas las funciones de selección de IRIS GL tienen equivalentes de OpenGL, a excepción de clearhitcode. En la tabla siguiente se enumeran las funciones de selección de IRIS GL y sus funciones OpenGL equivalentes.
+title: Porting Picking Functions
+description: Todas las funciones de selección de IRIS GL tienen equivalentes openGL, a excepción de clearhitcode. En la tabla siguiente se enumeran las funciones de selección de IRIS GL y sus funciones openGL equivalentes.
 ms.assetid: f8fbd0c2-14bf-47bc-be7f-eeef346dbac1
 keywords:
 - Porte de IRIS GL, selección
@@ -10,20 +10,20 @@ keywords:
 - Recogiendo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5be2cbeed54a18e7f1d3f26ec01dca2ad352aa4e190fbdc667ed75a60badec29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db4c0ea6011860f7d5010dd0bb7d5d23b671d99a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074003"
 ---
-# <a name="porting-picking-functions"></a>Porte de funciones de selección
+# <a name="porting-picking-functions"></a>Porting Picking Functions
 
-Todas las funciones de selección de IRIS GL tienen equivalentes de OpenGL, a excepción **de clearhitcode.** En la tabla siguiente se enumeran las funciones de selección de IRIS GL y sus funciones OpenGL equivalentes.
+Todas las funciones de selección de IRIS GL tienen equivalentes openGL, a excepción **de clearhitcode**. En la tabla siguiente se enumeran las funciones de selección de IRIS GL y sus funciones openGL equivalentes.
 
 
 
-| Función GL de IRIS                | Función OpenGL                                                                           | Significado                                |
+| Función IRIS GL                | Función OpenGL                                                                           | Significado                                |
 |---------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------|
 | **clearhitcode**                | No compatible.                                                                            | Borra la variable global y el código de acceso.    |
 | **selección de selección**<br/>       | [**glRenderMode**](glrendermode.md) ( GL \_ SELECT )                                       | Cambia al modo de selección o selección. |

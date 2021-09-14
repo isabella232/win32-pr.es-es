@@ -4,20 +4,20 @@ description: Para identificar el proveedor de red que posee un recurso, una apli
 ms.assetid: 4bddb55c-181d-4c6f-bd92-9c27d6b894bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2bfe214e8a07f65dfb8e4bcdfc9152e5827570318e10789767426c52c98bad1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bcf21e48be540f5307fc1ebd2359aea7ff03cbe0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073166"
 ---
 # <a name="retrieving-information-about-a-network-resource"></a>Recuperar información sobre un recurso de red
 
 Para identificar el proveedor de red que posee un recurso, una aplicación puede llamar a la función [**WNetGetResourceInformation,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetresourceinformationa) como se muestra en el ejemplo de código siguiente.
 
-El ejemplo siguiente es una función (CheckServer) que toma un nombre de servidor como parámetro y devuelve información sobre ese servidor. En primer lugar, la función llama a [**la función ZeroMemory**](/previous-versions/windows/desktop/legacy/aa366920(v=vs.85)) para inicializar el contenido de un bloque de memoria en cero. A continuación, el ejemplo llama a la función [**WNetGetResourceInformation**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetresourceinformationa) y especifica un búfer lo suficientemente grande como para contener solo una [**estructura NETRESOURCE.**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) La rutina incluye el procesamiento de errores para controlar el caso cuando un búfer de este tamaño no es suficiente para contener las cadenas de longitud variable a las que apuntan los miembros de la estructura **NETRESOURCE.** Si se produce este error, el ejemplo asigna memoria suficiente y llama de nuevo **a WNetGetResourceInformation.** Por último, el ejemplo libera la memoria asignada.
+El ejemplo siguiente es una función (CheckServer) que toma un nombre de servidor como parámetro y devuelve información sobre ese servidor. En primer lugar, la función llama a la función [**ZeroMemory**](/previous-versions/windows/desktop/legacy/aa366920(v=vs.85)) para inicializar el contenido de un bloque de memoria en cero. A continuación, el ejemplo llama a la función [**WNetGetResourceInformation,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetresourceinformationa) especificando un búfer lo suficientemente grande como para contener solo una [**estructura NETRESOURCE.**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) La rutina incluye el procesamiento de errores para controlar el caso cuando un búfer de este tamaño no es suficiente para contener las cadenas de longitud variable a las que apuntan los miembros de la estructura **NETRESOURCE.** Si se produce este error, el ejemplo asigna memoria suficiente y llama de nuevo **a WNetGetResourceInformation.** Por último, el ejemplo libera la memoria asignada.
 
-Tenga en cuenta que en el ejemplo se da por supuesto que el parámetro *pszServer* apunta a un nombre de servidor que reconoce uno de los proveedores de red del equipo local.
+Tenga en cuenta que en el ejemplo se supone que el parámetro *pszServer* apunta a un nombre de servidor que reconoce uno de los proveedores de red del equipo local.
 
 
 ```C++

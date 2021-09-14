@@ -4,16 +4,16 @@ ms.assetid: 5f710fd8-33de-47c0-a8b2-baf3008c4ed7
 title: Derechos de acceso para Access-Token objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ac3145aef5fcf3a20f2569ac02df0de0638c2be1f42f5e1a74785d8ae1aedb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 469081d2caa4e5ff7c9b7c55b4c09c31cff1acac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785480"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073747"
 ---
 # <a name="access-rights-for-access-token-objects"></a>Derechos de acceso para Access-Token objetos
 
-Una aplicación no puede cambiar la lista de control de acceso de un objeto a menos que la aplicación tenga los derechos para hacerlo. Estos derechos se controlan mediante un descriptor de seguridad en el token de acceso para el objeto . Para obtener más información sobre la seguridad, [vea Access Control modelo](access-control-model.md).
+Una aplicación no puede cambiar la lista de control de acceso de un objeto a menos que la aplicación tenga los derechos para hacerlo. Estos derechos se controlan mediante un descriptor de seguridad en el token de acceso para el objeto . Para obtener más información sobre la seguridad, [vea Access Control Modelo](access-control-model.md).
 
 Para obtener o establecer el [descriptor de seguridad de](security-descriptors.md) un [*token*](/windows/desktop/SecGloss/a-gly)de acceso, llame a las funciones [**GetKernelObjectSecurity**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-getkernelobjectsecurity) y [**SetKernelObjectSecurity.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setkernelobjectsecurity)
 
@@ -27,7 +27,7 @@ Los siguientes son derechos de acceso válidos para objetos de token de acceso:
 
     | Value                     | Significado                                                                                                                                                                                                                                                                           |
     |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | TOKEN \_ ADJUST \_ DEFAULT    | Necesario para cambiar el propietario predeterminado, el grupo principal o la DACL de un token de acceso.                                                                                                                                                                                                  |
+    | AJUSTE PREDETERMINADO \_ DEL \_ TOKEN    | Necesario para cambiar el propietario predeterminado, el grupo principal o la DACL de un token de acceso.                                                                                                                                                                                                  |
     | GRUPOS DE \_ AJUSTE DE \_ TOKEN     | Necesario para ajustar los atributos de los grupos en un token de acceso.                                                                                                                                                                                                               |
     | PRIVILEGIOS \_ DE \_ AJUSTE DE TOKEN | Necesario para habilitar o deshabilitar los privilegios en un token de acceso.                                                                                                                                                                                                                  |
     | TOKEN \_ ADJUST \_ SESSIONID  | Necesario para ajustar el identificador de sesión de un token de acceso. Se SE \_ el privilegio TCB \_ NAME.                                                                                                                                                                                    |

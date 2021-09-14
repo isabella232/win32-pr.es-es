@@ -4,12 +4,12 @@ ms.assetid: 95d83030-b1de-4f09-b9d0-f443d9672ca1
 description: 'Más información sobre: Componentes de Teredo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a9bbf8c8f7ad244749d45b091bc52773bcbd9b307c5929fc2fcbfce370d8cfb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b4b4de66f38d5eb64b8321b6bb89e78fbb763e60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117942371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073385"
 ---
 # <a name="teredo-components"></a>Componentes de Teredo
 
@@ -23,13 +23,13 @@ Windows XP con Service Pack 1 (SP1) con Advanced Networking Pack, Windows XP con
 
 ## <a name="teredo-servers"></a>Servidores de Teredo
 
-Un servidor Teredo es un nodo IPv6/IPv4 que está conectado a Internet IPv4 e Internet IPv6, y admite una interfaz de tunelización de Teredo a través de la cual se reciben los paquetes. El rol general del servidor de Teredo es ayudar en la configuración de direcciones de los clientes de Teredo y facilitar la comunicación inicial entre los clientes de Teredo y otros clientes de Teredo o entre los clientes de Teredo y los hosts de solo IPv6. El servidor de Teredo escucha el tráfico de Teredo en el puerto UDP 3544.
+Un servidor de Teredo es un nodo IPv6/IPv4 que está conectado a Internet IPv4 e Internet IPv6, y admite una interfaz de tunelización de Teredo a través de la cual se reciben los paquetes. El rol general del servidor de Teredo es ayudar en la configuración de direcciones de los clientes de Teredo y facilitar la comunicación inicial entre los clientes de Teredo y otros clientes de Teredo o entre los clientes de Teredo y los hosts de solo IPv6. El servidor de Teredo escucha el tráfico de Teredo en el puerto UDP 3544.
 
-A diferencia del cliente, el servidor teredo no se incluye con las plataformas operativas de Microsoft. Para facilitar la comunicación Windows equipos cliente de Teredo basados en dispositivos, Microsoft ha implementado servidores Teredo en Internet IPv4.
+A diferencia del cliente, el servidor teredo no se incluye con las plataformas operativas de Microsoft. Para facilitar la comunicación Windows equipos cliente de Teredo basados en la nube, Microsoft ha implementado servidores Teredo en Internet IPv4.
 
 ## <a name="teredo-relays"></a>Retransmisiones de Teredo
 
-Una retransmisión de Teredo es un enrutador IPv6/IPv4 que puede reenviar paquetes entre clientes de Teredo en Internet IPv4 (mediante una interfaz de tunelización de Teredo) y hosts solo IPv6. En algunos casos, la retransmisión de Teredo interactúa con un servidor de Teredo para facilitar la comunicación inicial entre los clientes de Teredo y los hosts solo IPv6. La retransmisión de Teredo escucha el tráfico de Teredo en el puerto UDP 3544.
+Una retransmisión de Teredo es un enrutador IPv6/IPv4 que puede reenviar paquetes entre clientes de Teredo en Internet IPv4 (mediante una interfaz de tunelización de Teredo) y hosts solo IPv6. En algunos casos, la retransmisión de Teredo interactúa con un servidor de Teredo para facilitar la comunicación inicial entre los clientes de Teredo y los hosts de solo IPv6. La retransmisión de Teredo escucha el tráfico de Teredo en el puerto UDP 3544.
 
 Al igual que el servidor de Teredo, las plataformas operativas de Microsoft no incluyen la funcionalidad de retransmisión de Teredo. Microsoft no planea actualmente implementar retransmisiones de Teredo en Internet IPv4. Las retransmisiones de Teredo no son necesarias para comunicarse con retransmisiones específicas del host de Teredo.
 

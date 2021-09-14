@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 60fc768a1b93a752a91d431e79fb3e875416ac2b82b2bad5603e3d4cddaccbaf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d4d4c1bb1ad7ecb45b640c16322e297f9f640ef1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074138"
 ---
 # <a name="idelaydcgetconversationstatistics-method"></a>Método IDelaydC::GetConversationStatistics
 
@@ -98,7 +98,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se puede llamar a este método mientras la captura de datos está en curso; cuando la captura actual está en pausa, las llamadas a este método no se realizará correctamente. Para iniciar una captura, llame al [método IDelaydC::Start.](idelaydc-start.md)
 
@@ -117,7 +117,7 @@ Para recuperar otros tipos de estadísticas, llame a [IDelaydC::GetTotalStatisti
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

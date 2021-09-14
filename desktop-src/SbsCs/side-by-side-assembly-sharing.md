@@ -4,12 +4,12 @@ ms.assetid: 2b9c6511-ae79-498f-a20c-ccb32a623d42
 title: Uso compartido de ensamblados en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59dcfbb40040b51fc2e17d3707d4a76c7ea5ddadf1806e41b7a7fbd81860ae15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a94295baf2c29733c0ec366f9476a4dbf5cc3f40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141827"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073805"
 ---
 # <a name="side-by-side-assembly-sharing"></a>Uso compartido de ensamblados en paralelo
 

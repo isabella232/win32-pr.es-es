@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 283cab8580e3c456a3d75727ab55f2f61dc623d91b593559aa0eb2ec07e4b26e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39d51df93a04efa8631fcfbd583075d7e3500bff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074157"
 ---
 # <a name="formatpropertyinstance-function"></a>Función FormatPropertyInstance
 
@@ -56,7 +56,7 @@ Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto es un código de error de NMerr.h.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El archivo DLL del analizador llama indirectamente a la función **FormatPropertyInstance** cuando el formateador genérico tiene que dar formato a los datos para mostrarse en el panel de detalles de la interfaz Monitor de red usuario. Para llamar **a FormatPropertyInstance,** es posible especificarlo en el **miembro InstanceData** de la [estructura PROPERTYINFO](propertyinfo.md) al definir la propiedad .
 
@@ -81,11 +81,11 @@ Para obtener más información y un ejemplo de cómo implementar [formatproperti
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propertyinfo](propertyinfo.md)
+[PROPERTYINFO](propertyinfo.md)
 </dt> <dt>
 
 [PROPERTYINST](propertyinst.md)

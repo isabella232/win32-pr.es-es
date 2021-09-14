@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 878265cb51614e8b3f56974882773de13fc8389fe8aa8522b018a6e50f3af433
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b102aca5971656232fae02684aeab30322d208b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072651"
 ---
 # <a name="apijetcomputestats-method"></a>Método Api.JetComputeStats
 
@@ -72,11 +72,11 @@ public static void JetComputeStats(
     
     Tabla en la que se calcularán las estadísticas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

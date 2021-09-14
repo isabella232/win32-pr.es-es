@@ -7,12 +7,12 @@ keywords:
 - Constantes SNMP, SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aafd752c2f2ef115d669544359c9470fc87edf046fc282055e0a2755dea8a6ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5e060c3979f2176120d285b60438bb89e51d208
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119009023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073821"
 ---
 # <a name="snmp-constants"></a>Constantes SNMP
 

@@ -1,19 +1,19 @@
 ---
 description: En este tema se identifican las constantes que usa WinHTTP.
 ms.assetid: 460f1463-57a8-47eb-9957-17976757bd7f
-title: Constantes WinHTTP
+title: Constantes de WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3f25ba011fdc97d55bae57c38a937a08177a6cefe2ecaaef3f85e2486e90956
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e37b0e4de7aa3df5e155933bea2be25386c1637
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073152"
 ---
-# <a name="winhttp-constants"></a>Constantes WinHTTP
+# <a name="winhttp-constants"></a>Constantes de WinHTTP
 
-WinHTTP usa las siguientes constantes:
+WinHTTP usa las constantes siguientes:
 
 <dl>
 
@@ -29,25 +29,25 @@ Mensajes de error específicos de las funciones WinHTTP. Estas funciones tambié
 [**Códigos de estado HTTP**](http-status-codes.md)
 </dt> <dd>
 
-Constantes y valores correspondientes que indican códigos de estado HTTP devueltos por servidores en Internet.
+Constantes y valores correspondientes que indican códigos de estado HTTP devueltos por los servidores en Internet.
 
 </dd> <dt>
 
 [**Marcas de opción**](option-flags.md)
 </dt> <dd>
 
-Marcas de opción admitidas [**por WinHttpQueryOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryoption) [**y WinHttpSetOption.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) Todas las marcas de opción válidas tienen un valor mayor o igual que WINHTTP FIRST OPTION y menor o \_ \_ igual que WINHTTP LAST \_ \_ OPTION.
+Marcas de opción compatibles [**con WinHttpQueryOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryoption) [**y WinHttpSetOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption). Todas las marcas de opción válidas tienen un valor mayor o igual que WINHTTP FIRST OPTION y menor o \_ \_ igual que WINHTTP LAST \_ \_ OPTION.
 
 </dd> <dt>
 
 [**PUERTO DE \_ INTERNET**](internet-port.md)
 </dt> <dd>
 
-Valor DE WORD que indica el puerto.
+Valor de WORD que indica el puerto.
 
 </dd> <dt>
 
-[**ESQUEMA \_ DE INTERNET**](internet-scheme.md)
+[**ESQUEMA DE \_ INTERNET**](internet-scheme.md)
 </dt> <dd>
 
 Esquemas de Internet compatibles con WinHTTP.
@@ -60,7 +60,7 @@ Esquemas de Internet compatibles con WinHTTP.
 </dt>
 <dd>
 
-Atributos y modificadores usados [**por WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders).
+Atributos y modificadores usados [**por WinHttpQueryHeaders.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders)
 </dd>
 
 <dt>
@@ -69,7 +69,7 @@ Atributos y modificadores usados [**por WinHttpQueryHeaders**](/windows/desktop/
 </dt>
 <dd>
 
-Tiene un valor de 0x00000001. Indica a [WinHttpAddRequestHeadersEx](/windows/win32/api/winhttp/nf-winhttp-winhttpaddrequestheadersex) que las cadenas pasadas son cadenas Unicode.
+Tiene un valor de 0x00000001. Indica a [WinHttpAddRequestHeadersEx](/windows/win32/api/winhttp/nf-winhttp-winhttpaddrequestheadersex) que las cadenas que se pasan son cadenas Unicode.
 </dd>
 
 <dt>
@@ -78,7 +78,7 @@ Tiene un valor de 0x00000001. Indica a [WinHttpAddRequestHeadersEx](/windows/win
 </dt>
 <dd>
 
-Tiene un valor de 0x0000000000000001ull. Indica a [WinHttpReadDataEx](/windows/win32/api/winhttp/nf-winhttp-winhttpreaddataex) que no complete la llamada hasta que se haya rellenado el búfer de datos proporcionado o se complete la respuesta. Pasar esta marca hace que el comportamiento de **WinHttpReadDataEx** sea equivalente al de [WinHttpReadData.](/windows/win32/api/winhttp/nf-winhttp-winhttpreaddata)
+Tiene un valor de 0x00000000000000001ull. Indica a [WinHttpReadDataEx](/windows/win32/api/winhttp/nf-winhttp-winhttpreaddataex) que no complete la llamada hasta que se haya rellenado el búfer de datos proporcionado o se complete la respuesta. Pasar esta marca hace que el comportamiento de **WinHttpReadDataEx** sea equivalente al de [WinHttpReadData.](/windows/win32/api/winhttp/nf-winhttp-winhttpreaddata)
 </dd>
 
 </dl>

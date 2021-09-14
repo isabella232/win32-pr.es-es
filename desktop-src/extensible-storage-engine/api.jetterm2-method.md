@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f269bc28cf9e8b42b8c0922985cb137b05f1f52b82404320e2277e0e4954733d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e8a4aa8c96f9a4d0242657fe7126abf1388a7f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072640"
 ---
 # <a name="apijetterm2-method"></a>Método Api.JetTerm2
 
@@ -63,7 +63,7 @@ public static void JetTerm2(
   - instance  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia que se finalizará.
+    Instancia de que se finaliza.
 
 <!-- end list -->
 
@@ -72,7 +72,7 @@ public static void JetTerm2(
     
     Opciones de terminación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

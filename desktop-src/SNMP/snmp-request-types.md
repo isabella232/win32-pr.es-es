@@ -18,12 +18,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74c4dfdfc6d65e63b8cd00956627eef9e831c46c6979e44634067b1e29defc4e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c37b0064b66fd31f3dbd07dfb593b3fa5900e1e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073807"
 ---
 # <a name="snmp-request-types"></a>Tipos de solicitud SNMP
 
@@ -38,10 +38,10 @@ Los tipos de solicitud SNMP se usan para describir la operación que el servicio
 | <span id="SNMP_EXTENSION_GET"></span><span id="snmp_extension_get"></span><dl> <dt>**SNMP \_ EXTENSIÓN \_ GET**</dt> <dt>SNMP \_ PDU \_ GET</dt> </dl>                       | Recupere el valor de los valores de las variables especificadas.<br/>                                                                                                                                                                                         |
 | <span id="SNMP_EXTENSION_GET_NEXT"></span><span id="snmp_extension_get_next"></span><dl> <dt>**SNMP \_ EXTENSIÓN \_ GET \_ NEXT**</dt> <dt>SNMP \_ PDU \_ GETNEXT</dt> </dl>   | Recupere el valor o los valores del sucesor lexicográfico de las variables especificadas.<br/>                                                                                                                                                          |
 | <span id="SNMP_EXTENSION_GET_BULK"></span><span id="snmp_extension_get_bulk"></span><dl> <dt>**SNMP \_ EXTENSIÓN \_ GET \_ BULK**</dt> <dt>SNMP \_ PDU \_ GETBULK</dt> </dl>   | Busque y recupere varios valores con una única solicitud.<br/>                                                                                                                                                                                       |
-| <span id="SNMP_EXTENSION_SET_TEST"></span><span id="snmp_extension_set_test"></span><dl> <dt>**PRUEBA DEL \_ CONJUNTO \_ DE EXTENSIONES \_ DE SNMP**</dt> </dl>                                                                           | Valide los valores de las variables especificadas. Esta operación maximiza la probabilidad de una operación de escritura correcta durante la solicitud COMMIT. Para obtener más información, vea la [**función SnmpExtensionQueryEx.**](/windows/desktop/api/Snmp/nf-snmp-snmpextensionqueryex)<br/> |
-| <span id="SNMP_EXTENSION_SET_COMMIT"></span><span id="snmp_extension_set_commit"></span><dl> <dt>**SNMP \_ CONJUNTO DE \_ EXTENSIONES \_ COMMIT**</dt> <dt>SNMP \_ PDU \_ SET</dt> </dl> | Escriba los nuevos valores en las variables especificadas.<br/>                                                                                                                                                                                                 |
+| <span id="SNMP_EXTENSION_SET_TEST"></span><span id="snmp_extension_set_test"></span><dl> <dt>**SNMP \_ EXTENSION \_ SET \_ TEST**</dt> </dl>                                                                           | Valide los valores de las variables especificadas. Esta operación maximiza la probabilidad de una operación de escritura correcta durante la solicitud COMMIT. Para obtener más información, vea la [**función SnmpExtensionQueryEx.**](/windows/desktop/api/Snmp/nf-snmp-snmpextensionqueryex)<br/> |
+| <span id="SNMP_EXTENSION_SET_COMMIT"></span><span id="snmp_extension_set_commit"></span><dl> <dt>**SNMP \_ CONJUNTO \_ DE EXTENSIONES COMMIT \_ SNMP**</dt> <dt> \_ PDU \_ SET</dt> </dl> | Escriba los nuevos valores en las variables especificadas.<br/>                                                                                                                                                                                                 |
 | <span id="SNMP_EXTENSION_SET_UNDO"></span><span id="snmp_extension_set_undo"></span><dl> <dt>**DESHACER \_ CONJUNTO DE EXTENSIONES \_ \_ SNMP**</dt> </dl>                                                                           | Restablezca los valores de las variables especificadas a sus valores antes de la solicitud COMMIT.<br/>                                                                                                                                                           |
-| <span id="SNMP_EXTENSION_SET_CLEANUP"></span><span id="snmp_extension_set_cleanup"></span><dl> <dt>**LIMPIEZA \_ DEL CONJUNTO DE EXTENSIONES \_ \_ SNMP**</dt> </dl>                                                                  | Libere los recursos asignados en las solicitudes y operaciones anteriores.<br/>                                                                                                                                                                             |
+| <span id="SNMP_EXTENSION_SET_CLEANUP"></span><span id="snmp_extension_set_cleanup"></span><dl> <dt>**LIMPIEZA \_ DEL CONJUNTO DE EXTENSIONES \_ \_ SNMP**</dt> </dl>                                                                  | Liberar los recursos asignados en solicitudes y operaciones anteriores.<br/>                                                                                                                                                                             |
 
 
 
@@ -57,7 +57,7 @@ Los tipos de solicitud SNMP se usan para describir la operación que el servicio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,25 +1,25 @@
 ---
 title: Recepción del tráfico solicitado a través de Teredo
-description: Muchas aplicaciones como Microsoft Internet Explorer y Microsoft Outlook solo inician conexiones a Internet.
+description: Muchas aplicaciones, como Microsoft Internet Explorer y Microsoft Outlook solo inician conexiones a Internet.
 ms.assetid: bff5d65e-050d-4b09-9982-8024612ffa6e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f003755f49d04113108f83c8d3eff67084364ad6dfcf8e9f40cf1bf7e142e0a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 035d067afeb9c62795efb5acd0bb28adc3afcb16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073386"
 ---
 # <a name="receiving-solicited-traffic-over-teredo"></a>Recepción del tráfico solicitado a través de Teredo
 
-Muchas aplicaciones como Microsoft Internet Explorer y Microsoft Outlook solo inician conexiones a Internet. Para estas aplicaciones, [Teredo](about-teredo.md) puede proporcionar conectividad sin problemas a través de IPv6 en ausencia de otras interfaces IPv6. Además, se puede recibir tráfico solicitado a través de la interfaz de Teredo en las plataformas anteriores de Microsoft Windows XP con Service Pack 2 (SP2) y Windows Server 2003.
+Muchas aplicaciones, como Microsoft Internet Explorer y Microsoft Outlook solo inician conexiones a Internet. Para estas aplicaciones, [Teredo](about-teredo.md) puede proporcionar conectividad sin problemas a través de IPv6 en ausencia de otras interfaces IPv6. Además, se puede recibir tráfico solicitado a través de la interfaz de Teredo en las plataformas anteriores de Microsoft Windows XP con Service Pack 2 (SP2) y Windows Server 2003.
 
 En la siguiente documentación se explica cómo estas aplicaciones logran la conectividad y las circunstancias en las que se usa Teredo.
 
 ## <a name="obtaining-a-destination-address"></a>Obtener una dirección de destino
 
-Una aplicación intenta obtener la dirección de destino mediante varios métodos, como Sistema de nombres de dominio (DNS) o Protocolo de resolución de nombres del mismo nivel (PNRP). La aplicación puede obtener varias direcciones IP IPv4 e IPv6 mediante estos métodos. Las API típicas que se usan para obtener direcciones IP incluyen la API de Windows XP [**GetHostByName**](/windows/desktop/api/wsipv6ok/nf-wsipv6ok-gethostbyname) y la nueva api Windows Vista API [**GetAddrInfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo). Por ejemplo, el uso de la API GetAddrInfo con el parámetro de la familia *ai \_* establecido en AF INET6, ya que la sugerencia addrinfo/protocol permite al usuario consultar específicamente las direcciones IPv6 de los servidores \_ DNS. La [**API DnsQuery**](/windows/desktop/api/windns/nf-windns-dnsquery_a) con el tipo DNS TYPE AAAA también se puede usar para consultar los registros AAAA de los servidores \_ \_ DNS.
+Una aplicación intenta obtener la dirección de destino mediante varios métodos, como Sistema de nombres de dominio (DNS) o Protocolo de resolución de nombres del mismo nivel (PNRP). La aplicación puede obtener varias direcciones IP IPv4 e IPv6 mediante estos métodos. Las API típicas que se usan para obtener direcciones IP incluyen la API [**getHostByName**](/windows/desktop/api/wsipv6ok/nf-wsipv6ok-gethostbyname) de Windows XP y la nueva Windows [**GetAddrInfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo)de la API de Vista. Por ejemplo, el uso de la API GetAddrInfo con el parámetro de la familia *ai \_* establecido en AF INET6, ya que la sugerencia addrinfo/protocol permite al usuario consultar específicamente las direcciones IPv6 de los servidores \_ DNS. La [**API DnsQuery**](/windows/desktop/api/windns/nf-windns-dnsquery_a) con el tipo DNS TYPE AAAA también se puede usar para consultar los registros AAAA de los servidores \_ \_ DNS.
 
 ## <a name="establishing-a-connection"></a>Establecer una conexión
 
@@ -32,7 +32,7 @@ Una conexión establecida con Teredo se describe como "sin problemas" porque se 
 
 Cuando una aplicación intenta conectarse a un destino mediante direcciones IPv6, se producirá lo siguiente:
 
--   La aplicación obtiene una lista de direcciones IPv6 mediante una llamada a la API [**GetAdaptersAddresses.**](/windows/desktop/api/iphlpapi/nf-iphlpapi-getadaptersaddresses) La Windows Vista devuelve una lista de todas las interfaces según el criterio de ordenación especificado en [RFC 3484](https://www.irt.org/rfc/rfc3484.htm). Como resultado, las interfaces IPv6 y 6to4 IPv6 se mostrarán antes que la interfaz Teredo. Sin embargo, cuando la conectividad IPv6 o 6to4 nativa no esté disponible, Teredo será la única interfaz compatible con IPv6 que se muestra.
+-   La aplicación obtiene una lista de direcciones IPv6 mediante una llamada a la API [**GetAdaptersAddresses.**](/windows/desktop/api/iphlpapi/nf-iphlpapi-getadaptersaddresses) La Windows Vista devuelve una lista de todas las interfaces en función del criterio de ordenación especificado en [RFC 3484.](https://www.irt.org/rfc/rfc3484.htm) Como resultado, las interfaces IPv6 y 6to4 IPv6 se mostrarán antes que la interfaz Teredo. Sin embargo, cuando la conectividad IPv6 o 6to4 nativa no esté disponible, Teredo será la única interfaz compatible con IPv6 que se muestra.
 
     Es importante recordar que una aplicación puede usar cualquier interfaz proporcionada por la pila de Windows Vista; sin embargo, la ordenación de la lista de interfaces devuelta suele dar lugar a que Teredo se esté intentando en último lugar.
 

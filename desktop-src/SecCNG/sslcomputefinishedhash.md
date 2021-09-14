@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: e0f23a58111bfcebbe668cd3b6c50a135da0dae240907f09a65d60ef1cebdda8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 365f3c849b0a499d2bd875c8d234bbda1911eb71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118907146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073639"
 ---
 # <a name="sslcomputefinishedhash-function"></a>Función SslComputeFinishedHash
 
@@ -47,7 +47,7 @@ SECURITY_STATUS WINAPI SslComputeFinishedHash(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo SSL.
+Identificador de la instancia del proveedor del protocolo SSL.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Una de las siguientes constantes.
 
 | Value                                                                                                                                                                                                                                                      | Significado                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <span id="NCRYPT_SSL_CLIENT_FLAG"></span><span id="ncrypt_ssl_client_flag"></span><dl> <dt>**NCRYPT \_ Marca \_ de \_ CLIENTE SSL**</dt> <dt>0x00000001</dt> </dl> | Especifica que se trata de una llamada de cliente.<br/> |
+| <span id="NCRYPT_SSL_CLIENT_FLAG"></span><span id="ncrypt_ssl_client_flag"></span><dl> <dt>**NCRYPT \_ Marca \_ de \_ cliente SSL**</dt> <dt>0x00000001</dt> </dl> | Especifica que se trata de una llamada de cliente.<br/> |
 | <span id="NCRYPT_SSL_SERVER_FLAG"></span><span id="ncrypt_ssl_server_flag"></span><dl> <dt>**NCRYPT \_ MARCA \_ DE \_ SERVIDOR SSL**</dt> <dt>0x00000002</dt> </dl> | Especifica que se trata de una llamada de servidor.<br/> |
 
 
@@ -117,13 +117,13 @@ Si se produce un error en la función, devuelve un valor de error distinto de ce
 
 La **función SslComputeFinishedHash** es una de las tres funciones que se usan para generar un hash que se usará durante el protocolo de enlace SSL.
 
-1.  Se llama a la función [**SslCreateHandshakeHash**](sslcreatehandshakehash.md) para obtener un identificador hash.
-2.  La [**función SslHashHandshake**](sslhashhandshake.md) se llama varias veces con el identificador hash para agregar datos al hash.
-3.  Se **llama a la función SslComputeFinishedHash** con el identificador hash para obtener la síntesis de los datos con hash.
+1.  Se [**llama a la función SslCreateHandshakeHash**](sslcreatehandshakehash.md) para obtener un identificador hash.
+2.  Se [**llama a la función SslHashHandshake**](sslhashhandshake.md) varias veces con el identificador hash para agregar datos al hash.
+3.  Se **llama a la función SslComputeFinishedHash** con el identificador hash para obtener el resumen de los datos con hash.
 
 El valor hash se calcula mediante el algoritmo hash del secreto maestro con un hash de todos los mensajes de protocolo de enlace anteriores enviados o recibidos.
 
-El valor de *cbOutput* determina la longitud de los datos hash. Cuando se [*usa el protocolo*](/windows/desktop/SecGloss/t-gly) TLS 1.0 de seguridad de la capa de transporte, siempre debe ser 12 (bytes). Para obtener más información, [vea La versión 1.0](https://www.ietf.org/rfc/rfc2246.txt)del protocolo TLS.
+El valor de *cbOutput* determina la longitud de los datos hash. Cuando se usa el protocolo TLS [*(Protocolo*](/windows/desktop/SecGloss/t-gly) de seguridad de la capa de transporte) 1.0, siempre debe ser 12 (bytes). Para obtener más información, [vea La versión 1.0](https://www.ietf.org/rfc/rfc2246.txt)del protocolo TLS.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -133,7 +133,7 @@ El valor de *cbOutput* determina la longitud de los datos hash. Cuando se [*usa 
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102676
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d7cb416505ed37b3bd4cebcb09cb2cff34e9e10e0c4f2ebf52ede69b672ea283
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 12497e2f460b415313e93d286275279d79a8488a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119722025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072568"
 ---
 # <a name="esentrunninginoneinstancemodeexception-properties"></a>Propiedades de EsentRunningInOneInstanceModeException
 
@@ -34,7 +34,7 @@ El [tipo EsentRunningInOneInstanceModeException](./esentrunninginoneinstancemode
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentRunningInOneInstanceModeException](./esentrunninginoneinstancemode
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

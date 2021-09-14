@@ -7,12 +7,12 @@ keywords:
 - SNMP de referencia, SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22886fad7c60f2d17df8181d4e3f775fe1dcd859dc2db0ae2c142b20af2f5c1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83c1741e838e5d0a571a83a0cded001580290276
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119886415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073809"
 ---
 # <a name="snmp-reference"></a>Referencia de SNMP
 

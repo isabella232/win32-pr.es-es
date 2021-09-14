@@ -5,12 +5,12 @@ ms.assetid: CB0065EF-4E53-4E16-9F7E-09A261C360FB
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e93ca7fb75e65c58aee2b2dffbb220830e2911f2c8d7ce9186a09926fa11373f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 086a14beec32447cb91e2a345f4fecda8d5480fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117912249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072887"
 ---
 # <a name="resource-binding"></a>Enlace de recursos
 

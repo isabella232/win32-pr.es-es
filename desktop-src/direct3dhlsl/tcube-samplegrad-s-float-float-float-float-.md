@@ -3,7 +3,7 @@ title: Función SampleGrad::SampleGrad(S,float,float,float,float) para TextureCu
 description: Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Para TextureCube
 ms.assetid: C5BC71FA-63E3-4DE2-9202-B9C79789AE8E
 keywords:
-- Función HLSL de SampleGrad
+- Función SampleGrad HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ebaa411ccb6075cfe9aab429912c3644c50e2c8bf1db99faec3328f318700268
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4a51c49d9373dc210cbf216089e4c82835bf2c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119043303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072668"
 ---
 # <a name="samplegradsamplegradsfloatfloatfloatfloat-function-for-texturecube"></a>Función SampleGrad::SampleGrad(S,float,float,float,float) para TextureCube
 
@@ -61,7 +61,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 
 
-| Texture-Object type                    | Tipo de parámetro |
+| Texture-Object tipo                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -83,7 +83,7 @@ Velocidad de cambio de la geometría de la superficie en la dirección x. El tip
 
 
 
-| Texture-Object type                      | Tipo de parámetro |
+| Texture-Object tipo                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -105,7 +105,7 @@ Velocidad de cambio de la geometría de la superficie en la dirección y. El tip
 
 
 
-| Texture-Object type                      | Tipo de parámetro |
+| Texture-Object tipo                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -123,7 +123,7 @@ Velocidad de cambio de la geometría de la superficie en la dirección y. El tip
 
 Tipo: **float**
 
-Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual acceda a un nivel de mip inferior a 2,0f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
 
 </dd> </dl>
 
@@ -131,9 +131,9 @@ Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pa
 
 Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: dbf3d9c0-dea8-449d-8ff2-9f8c538d9e00
 title: ITStreamControl (MSPI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6bb7f53d81c3bee2a0391ac3b8a2f8b832aca6dc42f325201b42de7e3e1221c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 612fd2fa14b9c159e29ddc5dc1a79b626ab6b624
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118864163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073483"
 ---
 # <a name="itstreamcontrol-mspi"></a>ITStreamControl (MSPI)
 

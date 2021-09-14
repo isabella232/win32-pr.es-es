@@ -7,16 +7,16 @@ keywords:
 - RRAS, identificadores de familia de protocolos y RRAS de Routing Table Manager versión 1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bb5187c66a5caaf2c36b1bd1cbd886b1f80cf826444f1d4137c6b45c3e72397
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fc0b297bc0b5d1b6f669df19e069c08216cdb998
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119740985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073846"
 ---
 # <a name="routing-table-manager-version-1-protocol-family-identifiers"></a>Identificadores de familia de protocolos de La versión 1 del Administrador de tablas de enrutamiento
 
-**Windows Server 2003:** Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las nuevas aplicaciones deben usar la API de Routing Table Manager versión 2.
+**Windows Server 2003:** Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las nuevas aplicaciones deben usar la API de Routing Table Manager versión 2.
 
 Los siguientes identificadores de transporte se enumeran en Rtm.h. Use estos identificadores con la API RTMv1.
 

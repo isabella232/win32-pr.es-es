@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47d05a477a446a64c0d3f29891512a415a6f0090768355b316109b9ecc49cfe7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec756ce34bd3fff7e1077c8d0e8be45955515bec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073278"
 ---
 # <a name="callletters-attribute"></a>Atributo CallLetters
 
@@ -27,7 +27,7 @@ El **atributo CallLetters** es las letras de llamada de la estación de radio.
 
 -   [Elementos de radio](radio-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

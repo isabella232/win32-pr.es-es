@@ -1,5 +1,5 @@
 ---
-description: Contiene información sobre un proveedor de servicios criptográficos de tarjeta inteligente (CSP).
+description: Contiene información sobre un proveedor de servicios criptográficos (CSP) de tarjeta inteligente.
 ms.assetid: b3e6722a-25dd-4137-b224-4082e846ddec
 title: KERB_SMARTCARD_CSP_INFO estructura
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 190c3e770a50acb7363fb10c469a7400831bc7b512d2b8158d687c83403b6df9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 03b1a8084e291dde5a4f1f2017e4e97f57640bca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073775"
 ---
-# <a name="kerb_smartcard_csp_info-structure"></a>Estructura DE \_ INFORMACIÓN de CSP de TARJETA INTELIGENTE \_ \_ DE KERB
+# <a name="kerb_smartcard_csp_info-structure"></a>Estructura DE \_ INFORMACIÓN de CSP de TARJETA INTELIGENTE \_ \_ KERB
 
-La estructura DE INFORMACIÓN de CSP de TARJETA INTELIGENTE **\_ \_ \_ DE KERB** contiene información sobre un proveedor de servicios [*criptográficos*](../secgloss/c-gly.md) de tarjeta inteligente (CSP).
+La **estructura KERB \_ SMARTCARD CSP \_ \_ INFO** contiene información sobre un proveedor de [*servicios criptográficos*](../secgloss/c-gly.md) (CSP) de tarjeta inteligente.
 
 Esta estructura no se declara en un encabezado público.
 
@@ -48,7 +48,7 @@ typedef struct _KERB_SMARTCARD_CSP_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -152,9 +152,9 @@ Los nombres que no se proporcionan deben representarse en este búfer mediante c
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se serializa esta estructura, los miembros de la estructura deben alinearse con límites que son múltiplo de 2 bytes.
+Cuando se serializa esta estructura, los miembros de la estructura deben estar alineados con límites que son múltiplo de 2 bytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -167,11 +167,11 @@ Cuando se serializa esta estructura, los miembros de la estructura deben alinear
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**INICIO DE SESIÓN \_ DE CERTIFICADO KERB \_**](/windows/desktop/api/Ntsecapi/ns-ntsecapi-kerb_certificate_logon)
+[**INICIO DE \_ SESIÓN DE CERTIFICADO \_ KERB**](/windows/desktop/api/Ntsecapi/ns-ntsecapi-kerb_certificate_logon)
 </dt> </dl>
 
  

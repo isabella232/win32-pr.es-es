@@ -1,19 +1,19 @@
 ---
-description: La API de tabla de enrutamiento distribuido (DRT) utiliza las siguientes funciones.
+description: La API de tabla de enrutamiento distribuido (DRT) usa las siguientes funciones.
 ms.assetid: 1ceff217-d410-47fa-99a2-8588f001859e
 title: Funciones de tabla de enrutamiento distribuido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00501a1a04a3acba23fe55f90acfbf7ca8fee7427c36ea1d36d8800fb8787321
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5cd48c3a60f458285ce5f607f9ab6bcf7a557cd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073939"
 ---
 # <a name="distributed-routing-table-functions"></a>Funciones de tabla de enrutamiento distribuido
 
-La API de tabla de enrutamiento distribuido (DRT) utiliza las siguientes funciones.
+La API de tabla de enrutamiento distribuido (DRT) usa las siguientes funciones.
 
 ## <a name="lifetime-management-functions"></a>Funciones de administración de duración
 
@@ -38,13 +38,13 @@ La API de tabla de enrutamiento distribuido (DRT) utiliza las siguientes funcion
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | [**DrtCreatePnrpBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtcreatepnrpbootstrapresolver)           | Crea un solucionador de arranque basado en el protocolo PNRP.                                                                              |
 | [**DrtDeletePnrpBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtdeletepnrpbootstrapresolver)           | Elimina un solucionador de arranque basado en el protocolo PNRP.                                                                              |
-| [**DrtCreateDnsBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtcreatednsbootstrapresolver)             | Crea un proveedor de arranque que se pondrá en contacto con un host conocido por su nombre.                                                             |
+| [**DrtCreateDnsBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtcreatednsbootstrapresolver)             | Crea un proveedor de arranque que se pondrá en contacto con un host conocido por nombre.                                                             |
 | [**DrtDeleteDnsBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtdeletednsbootstrapresolver)             | Elimina un proveedor de arranque que se pondrá en contacto con un host conocido por nombre.                                                             |
 | [**DrtCreateIpv6UdpTransport**](/windows/desktop/api/drt/nf-drt-drtcreateipv6udptransport)                     | Crea un transporte basado en el protocolo UDP IPv6.                                                                                   |
 | [**DrtDeleteIpv6UdpTransport**](/windows/desktop/api/drt/nf-drt-drtdeleteipv6udptransport)                     | Elimina un transporte basado en el protocolo UDP IPv6.                                                                                   |
 | [**DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider) | Crea un proveedor de seguridad de claves derivadas para el DRT.                                                                                  |
 | [**DrtCreateDerivedKey**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkey)                                 | Crea una clave que [**DrtRegisterKey**](/windows/desktop/api/drt/nf-drt-drtregisterkey) puede usar cuando el DRT usa un proveedor de seguridad de claves derivado. |
-| [**DrtDeleteDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtdeletederivedkeysecurityprovider) | Elimina un proveedor de seguridad de claves derivadas para el DRT.                                                                                  |
+| [**DrtDeleteDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtdeletederivedkeysecurityprovider) | Elimina un proveedor de seguridad de clave derivada para el DRT.                                                                                  |
 | [**DrtCreateNullSecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatenullsecurityprovider)             | Crea un proveedor de seguridad NULL. Este proveedor de seguridad no requiere nodos para autenticar claves.                                 |
 | [**DrtDeleteNullSecurityProvider**](/windows/desktop/api/drt/nf-drt-drtdeletenullsecurityprovider)             | Elimina un proveedor de seguridad null.                                                                                                     |
 
@@ -101,7 +101,7 @@ La API de tabla de enrutamiento distribuido (DRT) utiliza las siguientes funcion
 
 <dl> <dt>
 
-[Enumeraciones de tablas de enrutamiento distribuido](distributed-routing-table-enumerations.md)
+[Enumeraciones de tabla de enrutamiento distribuido](distributed-routing-table-enumerations.md)
 </dt> <dt>
 
 [Estructuras de tabla de enrutamiento distribuido](distributed-routing-table-structures.md)

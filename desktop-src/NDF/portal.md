@@ -4,12 +4,12 @@ description: El Marco de diagnóstico de redes (NDF) proporciona una manera para
 ms.assetid: 61dfb66b-4bc6-43a9-ad61-698f5cd67f4a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2397331e76fb5aa85478b6ab516216f2e0b7fb05e115ccdbebd0daa6565c8674
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0342ee4cb285f0a0f1c76c74b3bdc5b412b07e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119801915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074207"
 ---
 # <a name="network-diagnostics-framework"></a>Marco de diagnóstico de redes
 

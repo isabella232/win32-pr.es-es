@@ -8,12 +8,12 @@ keywords:
 - máscaras, vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c16600c5d45f573a14b586ccefcc799ef82ec07f65ed78ae80dc6bf8564ca0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb3e67876383a1c8df742c885109ec186b087c73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118117985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073203"
 ---
 # <a name="the-video-display"></a>La pantalla de vídeo
 

@@ -4,12 +4,12 @@ ms.assetid: 458466ee-cbf4-4bdc-a305-208a1788bed4
 title: Modelo kerberos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59110e197df9872843d27163b7df4855c93a83eab912560fe19a00ed39bbff65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b0447541c7cd40a4134bb62977248c70e8681d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073772"
 ---
 # <a name="kerberos-model"></a>Modelo kerberos
 

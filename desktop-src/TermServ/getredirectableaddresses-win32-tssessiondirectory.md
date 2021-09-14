@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método GetRedirectableAddresses Servicios de Escritorio remoto
 - Método GetRedirectableAddresses Servicios de Escritorio remoto , Win32_TSSessionDirectory clase
-- Win32_TSSessionDirectory clase Servicios de Escritorio remoto , método GetRedirectableAddresses
+- Win32_TSSessionDirectory clase Servicios de Escritorio remoto método , GetRedirectableAddresses
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ff3e5dda8459361855c6ff2b287b71cbe02136b906e7defc816d4e7df727a08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd5348c11b5f2aba442f7f13ef06488c6d849be3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073344"
 ---
 # <a name="getredirectableaddresses-method-of-the-win32_tssessiondirectory-class"></a>Método GetRedirectableAddresses de la clase TSSessionDirectory de Win32 \_
 
@@ -86,11 +86,11 @@ Lista de nombres de conexión de red asociados a las direcciones que están disp
 
 Tipo: **uint32**
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 

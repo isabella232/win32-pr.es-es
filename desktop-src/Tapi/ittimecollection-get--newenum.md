@@ -1,19 +1,19 @@
 ---
-description: 'ITTimeCollection::get__NewEnum método : el método get \_ \_ NewEnum devuelve un enumerador para la colección.'
+description: 'ItTimeCollection::get__NewEnum método : el método get \_ \_ NewEnum devuelve un enumerador para la colección.'
 ms.assetid: 0c2d739d-736d-4773-9747-1107546a973c
 title: Método ITTimeCollection::get__NewEnum (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ba76f1d10e2cb9ee937ec688af3e87e0bb9310df9fc39afaef64e60ea55b1dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: acfc9d616efb58c6173f2c9c6e5913d27776958c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119991905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073472"
 ---
 # <a name="ittimecollectionget__newenum-method"></a>ItTimeCollection::get \_ \_ NewEnum (método)
 
-\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 El **método get \_ \_ NewEnum** devuelve un enumerador para la colección.
 
@@ -61,9 +61,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método es intercambiable con [**get \_ EnumerationIf,**](ittimecollection-get-enumerationif.md) salvo que devuelve **IUnknown en** lugar de [**IEnumTime.**](ienumtime.md)
+Este método es intercambiable con [**get \_ EnumerationIf, salvo**](ittimecollection-get-enumerationif.md) que devuelve **IUnknown en** lugar de [**IEnumTime.**](ienumtime.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Este método es intercambiable con [**get \_ EnumerationIf,**](ittimecollection-
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 

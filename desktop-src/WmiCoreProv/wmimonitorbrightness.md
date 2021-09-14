@@ -18,12 +18,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 10343b33e5bc1881440af9d13029913d470880289e71b4c7a33fb4748e56ef73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8d16c8dc20291a03fb205441c8826c85125970c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118821526"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073090"
 ---
 # <a name="wmimonitorbrightness-class"></a>Clase WmiMonitorBrightness
 
@@ -42,7 +42,7 @@ class WmiMonitorBrightness : MSMonitorClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WmiMonitorBrightness** tiene estos tipos de miembros:
 
@@ -127,13 +127,13 @@ Ejemplo: 101
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener más información y ejemplos de código sobre el uso de esta clase en PowerShell, vea Usar PowerShell para informar y establecer el brillo [del monitor.](https://blogs.technet.com/b/heyscriptingguy/archive/2013/07/25/use-powershell-to-report-and-set-monitor-brightness.aspx)
+Para obtener más información y ejemplos de código sobre el uso de esta clase en PowerShell, vea [Usar PowerShell para](https://blogs.technet.com/b/heyscriptingguy/archive/2013/07/25/use-powershell-to-report-and-set-monitor-brightness.aspx)informar y establecer el brillo del monitor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -143,7 +143,7 @@ Para obtener más información y ejemplos de código sobre el uso de esta clase 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

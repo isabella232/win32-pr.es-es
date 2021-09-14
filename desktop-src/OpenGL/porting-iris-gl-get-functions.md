@@ -1,20 +1,20 @@
 ---
 title: Porting IRIS GL Get Functions
-description: IRIS GL \ 0034;get \ 0034; las funciones toman la forma siguiente
+description: IRIS GL \ 0034;get \ 0034; Las funciones toman la forma siguiente
 ms.assetid: 5bd6aa13-b41d-4f89-91dc-cc47481ac7b7
 keywords:
 - Porte de IRIS GL, obtener funciones
 - porting from IRIS GL,get functions
-- porting to OpenGL from IRIS GL,get functions
+- porte a OpenGL desde IRIS GL, obtener funciones
 - Porte de OpenGL desde IRIS GL, obtener funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdfe9159e0207198fa94959729bd0c95439bb91b5dd55a8a1f9adf3b048d7bb1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 594b12bb1738846b98d33137dd8b623f0405ec40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119485565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074021"
 ---
 # <a name="porting-iris-gl-get-functions"></a>Porting IRIS GL Get Functions
 
@@ -51,7 +51,7 @@ Las funciones tienen la sintaxis siguiente:
 glGet<Datatype>v( value, *data );
 ```
 
-donde *value* es de tipo **GLenum** y data es de tipo **GLdatatype**. Cuando se llama **a glGet** y devuelve un tipo diferente del tipo esperado, el tipo se convierte correctamente. Para obtener una lista completa de **los parámetros glGet,** [**consulte glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md).
+donde *value* es de tipo **GLenum y** data es de tipo **GLdatatype.** Cuando se llama **a glGet** y devuelve un tipo diferente del tipo esperado, el tipo se convierte correctamente. Para obtener una lista completa de **los parámetros glGet,** [**vea glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md).
 
  
 

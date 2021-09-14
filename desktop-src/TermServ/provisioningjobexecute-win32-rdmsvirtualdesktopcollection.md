@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd22c40ea19ce6e30f7e2accd2414f134a5a622ef29d605e2abe2183091eb538
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c632a6bdc5fc5c4a128941d8a6c8b4379ddf9629
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117940609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073319"
 ---
 # <a name="provisioningjobexecute-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método ProvisioningJobExecute de la clase \_ RDMSVirtualDesktopCollection de Win32
 

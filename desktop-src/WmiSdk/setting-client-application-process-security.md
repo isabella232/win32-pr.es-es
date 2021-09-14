@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Establecer la seguridad del proceso de la aplicación cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7be6b3f6e632ade53700bbe81afc7698a06fe2ff038e0c57c1b4a7eed44afa68
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8bfa0a42390ffa433cff01300b0976d40553665c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117739481"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073061"
 ---
 # <a name="setting-client-application-process-security"></a>Establecer la seguridad del proceso de la aplicación cliente
 
@@ -29,7 +29,7 @@ En el procedimiento siguiente se describen los pasos que debe realizar para esta
 1.  Determine los niveles de seguridad necesarios para los Windows operativos en los que se ejecuta la aplicación cliente.
 2.  Llame a la función COM [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) para establecer la seguridad predeterminada para el proceso en el que se ejecuta la aplicación cliente. Esto declara la cantidad de seguridad que requieren otras aplicaciones para acceder al proceso en el que se ejecuta la aplicación.
 3.  Si necesita cambiar la seguridad en un proxy individual, por ejemplo, en otra llamada a [**IWbemServices,**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices)llame a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
-4.  Si necesita controlar el hardware remoto o un objeto del sistema que requiera más privilegios, use la función [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) para habilitar los privilegios necesarios. Tenga en cuenta que no se puede habilitar un privilegio que el proceso aún no tiene asignado. Para obtener más información, vea [Comprobar el acceso a objetos privados.](/windows/desktop/SecAuthZ/checking-access-to-private-objects)
+4.  Si necesita controlar el hardware remoto o un objeto del sistema que requiere más privilegios, use la función [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) para habilitar los privilegios necesarios. Tenga en cuenta que no se puede habilitar un privilegio que el proceso aún no tiene asignado. Para obtener más información, vea [Comprobar el acceso a objetos privados.](/windows/desktop/SecAuthZ/checking-access-to-private-objects)
 
 Para obtener más información sobre cómo establecer el nivel de seguridad de proceso predeterminado, vea Establecer el nivel de seguridad de proceso predeterminado mediante [C++](setting-the-default-process-security-level-using-c-.md) y Establecer el nivel de seguridad de proceso [predeterminado mediante VBScript](setting-the-default-process-security-level-using-vbscript.md).
 

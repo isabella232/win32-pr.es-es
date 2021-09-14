@@ -4,12 +4,12 @@ ms.assetid: c9aff246-fe11-4d82-b944-b10c3d9ae170
 title: Listas de control de acceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7021767830dead84f2ea965c46ca205257a2f18443f352ec85becc0139e30e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f3a788f02f8a04711be7db8268833375b2519d0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073759"
 ---
 # <a name="access-control-lists"></a>Listas de control de acceso
 

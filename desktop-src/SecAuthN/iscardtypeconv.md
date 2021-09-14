@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 7fbf009eeeb4f104e5bf09ba8e33b6b2b76eb889a0e44e7594172c697b438d09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8863d29e3ee0f4298410c332329b30fe37dd5048
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120013595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073784"
 ---
 # <a name="iscardtypeconv-interface"></a>Interfaz ISCardTypeConv
 
@@ -26,7 +26,7 @@ ms.locfileid: "120013595"
 
 La **interfaz ISCardTypeConv** proporciona los métodos necesarios para admitir a los usuarios de las otras interfaces COM [*de tarjeta*](../secgloss/s-gly.md) inteligente. Esta interfaz solo se proporciona por compatibilidad con versiones anteriores y ya no se debe usar.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ISCardTypeConv** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ISCardTypeConv** también tiene estos tipos de miembros:
 
@@ -59,13 +59,13 @@ La **interfaz ISCardTypeConv** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardTypeConv se define como \_ 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |

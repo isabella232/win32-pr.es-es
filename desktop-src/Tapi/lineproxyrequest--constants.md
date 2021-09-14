@@ -4,12 +4,12 @@ ms.assetid: 5c05a567-cc65-411e-b049-919a442c5c57
 title: LINEPROXYREQUEST_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b869027bd801079774f2caf35de47bcf6d883dd568b30f66bd4bda37fae43c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eba34a3a7f7b1f41f0c32783c4132afcfafef1aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119003043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073468"
 ---
 # <a name="lineproxyrequest_-constants"></a>Constantes \_ LINEPROXYREQUEST
 
@@ -224,7 +224,7 @@ Asociado a [**lineSetQueueMeasurementPeriod.**](/windows/desktop/api/Tapi/nf-tap
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

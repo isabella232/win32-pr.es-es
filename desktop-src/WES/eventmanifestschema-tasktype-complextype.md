@@ -3,7 +3,7 @@ title: Tipo complejo TaskType
 description: Define un componente o subcomponente de una aplicación. | Tipo complejo TaskType
 ms.assetid: d117636d-6363-43b6-ac5a-52234ac7c729
 keywords:
-- Tipo complejo TaskType EventLog
+- EventLog de tipo complejo TaskType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42a8b3dfd91b879eec37040c314d15b8b3c802b2c4b674f7a573314659d5d51b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ccad6813624d0a27a093ff4baa7fc8b9a6aa8b14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073300"
 ---
 # <a name="tasktype-complex-type"></a>Tipo complejo TaskType
 
@@ -81,7 +81,7 @@ Define un componente o subcomponente de una aplicación.
 | message   | [**strTableRef**](eventmanifestschema-strtableref-simpletype.md) | Nombre para mostrar localizado de la tarea. La cadena de mensaje hace referencia a una cadena localizada en la [**sección stringTable**](eventmanifestschema-stringtable-resources-element.md) del manifiesto. <br/>                                                                                                   |
 | name      | **QName**                                                         | Nombre de la tarea.<br/>                                                                                                                                                                                                                                                                                 |
 | símbolo    | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se usará para hacer referencia a la tarea en la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para la tarea en el archivo de encabezado que genera el compilador. Si no especifica un símbolo, el compilador genera uno automáticamente.<br/> |
-| value     | [**UInt16Type**](eventmanifestschema-hexint16type-simpletype.md) | Valor numérico que identifica de forma única esta tarea dentro de la lista de tareas que define el proveedor. El valor debe estar en el intervalo entre 1 y 239.<br/>                                                                                                                                             |
+| value     | [**UInt16Type**](eventmanifestschema-hexint16type-simpletype.md) | Valor numérico que identifica de forma única esta tarea dentro de la lista de tareas que define el proveedor. El valor debe estar en el intervalo de 1 a 239.<br/>                                                                                                                                             |
 
 
 

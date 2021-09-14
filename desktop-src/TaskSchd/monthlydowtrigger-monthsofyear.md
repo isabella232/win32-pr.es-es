@@ -3,8 +3,8 @@ title: MonthlyDOWTrigger.MonthsOfYear, propiedad
 description: Para el scripting, obtiene o establece los meses del año durante los que se ejecuta la tarea. | MonthlyDOWTrigger.MonthsOfYear, propiedad
 ms.assetid: 4ab7ab43-9c9b-4cd3-be8f-1989b83e8cf3
 keywords:
-- Propiedades MonthsOfYear Programador de tareas
-- Propiedad MonthsOfYear Programador de tareas objeto , MonthlyDOWTrigger
+- Propiedad MonthsOfYear Programador de tareas
+- Propiedad MonthsOfYear Programador de tareas , objeto MonthlyDOWTrigger
 - Objeto MonthlyDOWTrigger Programador de tareas propiedad , MonthsOfYear
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f8dc9752cf241218a95a9816824bc6ccf560f47c3445df9e5f40406381de3b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c345cd3de12d7dba3450f62bdb18bfdcee496b13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119253831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073430"
 ---
 # <a name="monthlydowtriggermonthsofyear-property"></a>MonthlyDOWTrigger.MonthsOfYear, propiedad
 
@@ -46,7 +46,7 @@ En la tabla siguiente se muestra la asignación de la máscara bit a bit utiliza
 
 
 
-| Month (Mes)     | Valor hexadecimal | Valor decimal |
+| Mes     | Valor hexadecimal | Valor decimal |
 |-----------|-----------|---------------|
 | January   | 0X01      | 1             |
 | February  | 0x02      | 2             |

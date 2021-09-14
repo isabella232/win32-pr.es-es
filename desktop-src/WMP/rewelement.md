@@ -1,6 +1,6 @@
 ---
 title: REWELEMENT
-description: Se trata de un ELEMENTO BUTTONELEMENT predefinido con los siguientes valores predeterminados. | REWELEMENT
+description: Se trata de un BUTTONELEMENT predefinido con los siguientes valores predeterminados. | REWELEMENT
 ms.assetid: 828c295b-3b01-4ddd-b0cd-59309ede5d84
 keywords:
 - ReWELEMENT Reproductor de Windows Media
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 572474e52035f38d0a222ad8d090f9502d572d00455da12de9265e1fc89b7ffb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab72674decf5505a5fe0259eaa9f98731bed2b16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119646725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073215"
 ---
 # <a name="rewelement"></a>REWELEMENT
 
-Se trata de un **ELEMENTO BUTTONELEMENT predefinido** con los siguientes valores predeterminados.
+Se trata de un **BUTTONELEMENT predefinido** con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:player.controls.fastReverse()"
@@ -31,15 +31,15 @@ cursor="system"
 enabled="wmpenabled:player.controls.fastReverse"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Todas las propiedades de **este BUTTONELEMENT** se pueden invalidar especificándolos explícitamente.
+Todas las propiedades de **este BUTTONELEMENT** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

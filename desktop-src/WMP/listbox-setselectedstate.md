@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c03702df06aa6faf885ec0d4bda01651f4e6ab2d8163047f0756ef5806b108ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95ca3b5a1b81224d99aace1cefb9da0d616eedc2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119616915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073259"
 ---
 # <a name="listboxsetselectedstate"></a>LISTBOX.setSelectedState
 
@@ -42,7 +42,7 @@ El **método setSelectedState** selecciona o anula la selección del elemento co
 <span id="selected"></span><span id="SELECTED"></span>*Seleccionado*
 </dt> <dd>
 
-**Valor** booleano que indica si el elemento se va a seleccionar (true) o no seleccionar (false).
+**Valor** booleano que indica si el elemento se va a seleccionar (true) o no seleccionado (false).
 
 </dd> </dl>
 
@@ -50,7 +50,7 @@ El **método setSelectedState** selecciona o anula la selección del elemento co
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se usa para seleccionar o anular la selección de varias líneas.
 
@@ -58,7 +58,7 @@ Se usa para seleccionar o anular la selección de varias líneas.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af3531034c86f72514b6a6f67a2a10b3d71c86009d465d53d2d61df49bd5f19f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a9ac0b82441abef8af1b4f6c8e3bd48b89a8cb6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119476015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073335"
 ---
 # <a name="getstringarraydeploymentsetting-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetStringArrayDeploymentSetting de la clase RDMSDeploymentSettings de Win32 \_
 

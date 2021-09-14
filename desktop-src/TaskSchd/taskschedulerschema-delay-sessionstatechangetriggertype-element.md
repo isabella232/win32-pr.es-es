@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3834b40446509b2b5fe9219947c227a5819e62c1bf398e0ddda7dbb7b4da8ca5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03f230465f2e2b49ce83f1af358dfa1f84f21433
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117942813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073406"
 ---
 # <a name="delay-sessionstatechangetriggertype-element"></a>Elemento Delay (sessionStateChangeTriggerType)
 
@@ -42,7 +42,7 @@ El tipo complejo [**sessionStateChangeTriggerType**](taskschedulerschema-session
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripting, el retraso del desencadenador de cambio de estado de sesión se especifica mediante la [**propiedad SessionStateChangeTrigger.Delay.**](sessionstatechangetrigger-delay.md)
 
@@ -52,7 +52,7 @@ Para el desarrollo de C++, el retraso del desencadenador de cambio de estado de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

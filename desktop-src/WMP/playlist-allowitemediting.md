@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a3f07c3212cddeb45ff4ba4c5c6c268483025e782b41d79c8cc51765aa6d00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8949b02a9a0be61ea3dbf2e54fa01b2bb9521e19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118571495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073253"
 ---
 # <a name="playlistallowitemediting"></a>PLAYLIST.allowItemEditing
 
@@ -33,7 +33,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                           |
+| Value | Descripción                           |
 |-------|---------------------------------------|
 | true  | Predeterminada. Se permite la edición en contexto. |
 | false | No se permite la edición en contexto.      |
@@ -46,13 +46,13 @@ Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

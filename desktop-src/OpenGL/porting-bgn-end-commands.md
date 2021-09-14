@@ -1,26 +1,26 @@
 ---
 title: Porting bgn/end Commands
-description: IRIS GL usa el paradigma de inicio y fin, pero tiene una función diferente para cada primitiva de gráficos.
+description: IRIS GL usa el paradigma de inicio y fin, pero tiene una función diferente para cada primitivo gráfico.
 ms.assetid: 4191344b-614a-42d6-8a31-7a708f17371e
 keywords:
-- Comandos porting,bgn/end de IRIS GL
-- porting from IRIS GL,bgn/end commands
+- Porte de IRIS GL, comandos bgn/end
+- porting from IRIS GL,bgn/end commands (porting from IRIS GL,bgn/end commands)
 - porting to OpenGL from IRIS GL,bgn/end commands (porting to OpenGL from IRIS GL,bgn/end commands)
-- Porte de OpenGL desde comandos IRIS GL,bgn/end
+- Porte de OpenGL desde IRIS GL, comandos bgn/end
 - funciones de dibujo, comandos bgn/end
 - comandos bgn/end
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c63084b1f05d984fdc19254edaadaca9098d13f974a433f5c6ff7c5d370ec223
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c25118d4e5050ea22d4b18fab596dfb9c92f562e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119485975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074023"
 ---
 # <a name="porting-bgnend-commands"></a>Porting bgn/end Commands
 
-IRIS GL usa el paradigma de inicio y fin, pero tiene una función diferente para cada primitiva de gráficos. Por ejemplo, probablemente use **bgnpolygon** y **endpolygon** para dibujar polígonos, y **bgnline** y **endline** para dibujar líneas. En OpenGL, se usa la [**estructura glBegin**](glbegin.md)  /  [**glEnd**](glend.md) para ambos. En OpenGL, para dibujar la mayoría de los objetos geométricos, se incluye una serie de funciones que especifican vértices, normales, texturas y colores entre pares de **llamadas glBegin** y **glEnd.** Por ejemplo:
+IRIS GL usa el paradigma de inicio y fin, pero tiene una función diferente para cada primitivo gráfico. Por ejemplo, probablemente use **bgnpolygon** y **endpolygon** para dibujar polígonos, y **bgnline** y **endline** para dibujar líneas. En OpenGL, se usa la [**estructura glBegin**](glbegin.md)  /  [**glEnd**](glend.md) para ambos. En OpenGL se dibujan la mayoría de los objetos geométricos mediante la especificación de una serie de funciones que especifican vértices, normales, texturas y colores entre pares de **llamadas glBegin** y **glEnd.** Por ejemplo:
 
 ``` syntax
 void glBegin( GLenum mode) ; 
@@ -49,32 +49,32 @@ Con OpenGL, puede dibujar diferentes objetos geométricos especificando parámet
 
 
 
-| Función IRIS GL  | Valor del modo glBegin | Significado                                                                                  |
+| Función GL de IRIS  | Valor del modo glBegin | Significado                                                                                  |
 |-------------------|-----------------------|------------------------------------------------------------------------------------------|
-| **bgnpoint**      | PUNTOS \_ DE GL            | Puntos individuales.                                                                       |
-| **bgnline**       | FRANJA \_ DE LÍNEA DE \_ GL       | Serie de segmentos de línea conectados.                                                       |
+| **bgnpoint**      | PUNTOS \_ GL            | Puntos individuales.                                                                       |
+| **bgnline**       | FRANJA \_ DE LÍNEA \_ GL       | Serie de segmentos de línea conectados.                                                       |
 | **bgnclosedline** | BUCLE \_ DE LÍNEA \_ GL        | Serie de segmentos de línea conectados, con un segmento agregado entre el primer y el último vértice. |
-|                   | LÍNEAS \_ DE GL             | Pares de vértices interpretados como segmentos de línea individuales.                               |
+|                   | LÍNEAS \_ GL             | Pares de vértices interpretados como segmentos de línea individuales.                               |
 | **bgnpolygon**    | POLÍGONO \_ GL           | Límite de un polígono convexa simple.                                                     |
 |                   | TRIÁNGULOS \_ GL         | Triples de vértices interpretados como triángulos.                                            |
-| **bgntmesh**      | FRANJA \_ DE \_ TRIÁNGULOS GL   | Franjas vinculadas de triángulos.                                                              |
-|                   | VENTILADOR \_ DE TRIÁNGULO \_ GL     | Ventiladores vinculados de triángulos.                                                                |
-|                   | GL \_ QUADS             | Restos de vértices interpretados como cuadrículos.                                    |
-| **bgnqstrip**     | GL \_ QUAD \_ STRIP       | Franjas vinculadas de cuadrrículos.                                                         |
+| **bgntmesh**      | FRANJA \_ DE TRIÁNGULO \_ GL   | Franjas vinculadas de triángulos.                                                              |
+|                   | GL \_ TRIANGLE \_ FAN     | Ventiladores vinculados de triángulos.                                                                |
+|                   | GL \_ QUADS             | Triángulos de vértices interpretados como cuadríteros.                                    |
+| **bgnqstrip**     | GL \_ QUAD \_ STRIP       | Franjas vinculadas de cuadriláteros.                                                         |
 
 
 
  
 
-Para obtener una explicación detallada de las diferencias entre las mallas de triángulo, las franjas y los ventiladores, vea [Porting Triangles](porting-triangles.md).
+Para obtener una explicación detallada de las diferencias entre las mallas de triángulos, las bandas y los ventiladores, vea [Porting Triangles](porting-triangles.md).
 
 No hay ningún límite en el número de vértices que puede especificar entre un [**par glBegin**](glbegin.md)  /  [**glEnd.**](glend.md)
 
-Además de especificar vértices dentro de un par **glBegin**  /  **glEnd,** puede especificar unas coordenadas de textura normales y actuales y un color actual. En la tabla siguiente se enumeran los comandos válidos dentro de **un par glBegin**  /  **glEnd.**
+Además de especificar vértices dentro de un par **glBegin**  /  **glEnd,** puede especificar las coordenadas de textura actuales normales y actuales, así como un color actual. En la tabla siguiente se enumeran los comandos válidos dentro de **un par glBegin**  /  **glEnd.**
 
 
 
-| Función IRIS GL        | Función OpenGL                                                      | Significado                                          |
+| Función GL de IRIS        | Función OpenGL                                                      | Significado                                          |
 |-------------------------|----------------------------------------------------------------------|--------------------------------------------------|
 | **v2,** **v3,** **v4**  | [glVertex](glvertex-functions.md)                                   | Establece coordenadas de vértice.                         |
 | **RGBcolor**, **cpack** | [glColor](glcolor-functions.md)                                     | Establece el color actual.                              |
@@ -92,7 +92,7 @@ Además de especificar vértices dentro de un par **glBegin**  /  **glEnd,** pue
 
 > [!Note]
 >
-> Si usa una función OpenGL que no sea la que aparece en la tabla anterior dentro de un par [**glBegin**](glbegin.md)glEnd, se obtienen resultados impredecibles  /  [](glend.md) o, posiblemente, un error.
+> Si usa cualquier función OpenGL que no sea la enumerada en la tabla anterior dentro de un par [**glBegin**](glbegin.md)glEnd, se obtienen resultados impredecibles  /  [](glend.md) o, posiblemente, un error.
 
  
 

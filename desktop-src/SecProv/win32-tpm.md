@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 53fbe055e469dc4327ae747ab3e20873724923980f1e765d266a5f8143b545c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8d6eac9fba875484ba2f08e149608c9994a1087
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119004023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073584"
 ---
 # <a name="win32_tpm-class"></a>Clase Tpm de Win32 \_
 
-La **clase \_ Tpm de Win32** representa el Módulo de plataforma segura (TPM), un chip de seguridad de hardware que proporciona una raíz de confianza para un sistema informático.
+La **clase \_ Tpm win32** representa el Módulo de plataforma segura (TPM), un chip de seguridad de hardware que proporciona una raíz de confianza para un sistema informático.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ class Win32_Tpm
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Tpm de Win32** tiene estos tipos de miembros:
 
@@ -83,7 +83,7 @@ La **clase \_ Tpm de Win32** tiene estos métodos.
 | [**IsOwnershipAllowed**](isownershipallowed-win32-tpm.md)                               | Indica si se puede instalar un propietario de TPM.<br/>                                                                                                                                  |
 | [**IsPhysicalClearDisabled**](isphysicalcleardisabled-win32-tpm.md)                     | Indica si una operación de presencia física de TPM puede borrar el TPM.<br/>                                                                                                           |
 | [**IsPhysicalPresenceHardwareEnabled**](isphysicalpresencehardwareenabled-win32-tpm.md) | Indica si este equipo admite una ruta de acceso de hardware dedicada para señalar la presencia física.<br/>                                                                                  |
-| [**IsSrkAuthCompatible**](issrkauthcompatible-win32-tpm.md)                             | Indica si la Storage clave raíz (SRK) es compatible con Windows.<br/>                                                                                           |
+| [**IsSrkAuthCompatible**](issrkauthcompatible-win32-tpm.md)                             | Indica si la autorización Storage clave raíz (SRK) es compatible con Windows.<br/>                                                                                           |
 | [**RemoveBlockedCommand**](removeblockedcommand-win32-tpm.md)                           | Quita un comando tpm de la lista local de comandos bloqueados por Windows.<br/>                                                                                                        |
 | [**ResetAuthLockOut**](resetauthlockout-win32-tpm.md)                                   | Restablece el período de tiempo de espera u otro mecanismo que los fabricantes de TPM implementan para protegerse frente a ataques de diccionario en el TPM.<br/>                                                 |
 | [**ResetSrkAuth**](resetsrkauth-win32-tpm.md)                                           | Restablece el valor Storage autorización de clave raíz (SRK) para que sea compatible con Windows.<br/>                                                                                             |
@@ -131,7 +131,7 @@ Tipo de acceso: solo lectura
 
 Indica si el TPM está habilitado.
 
-**True** si el dispositivo está habilitado (es decir, si **IsEnabled \_ InitialValue** es true); de lo contrario, **false.**
+**True** si el dispositivo está habilitado (es decir, si **IsEnabled \_ InitialValue** es true); en caso contrario, **false.**
 
 Este valor se almacena cuando se crea una instancia de la clase . Es posible que el TPM cambie el estado entre la creación de instancias y cuando se comprueba este valor. Para comprobar si el TPM está habilitado en tiempo real, use el [**método IsEnabled.**](isenabled-win32-tpm.md)
 
@@ -186,7 +186,7 @@ Tipo de acceso: solo lectura
 
 La versión del TPM, según lo especificado por el fabricante.
 
-Cuando los datos no están disponibles, se devuelve "No compatible".
+Cuando los datos no están disponibles, se devuelve "No admitido".
 
 </dd> <dt>
 
@@ -201,7 +201,7 @@ Tipo de acceso: solo lectura
 
 Otra información de versión específica del fabricante para el TPM.
 
-Cuando los datos no están disponibles, se devuelve "No compatible".
+Cuando los datos no están disponibles, se devuelve "No admitido".
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ La versión de la interfaz de presencia física, un mecanismo de comunicación q
 
 Esta interfaz debe estar disponible para ejecutar operaciones de presencia física de TPM. Los métodos de Tpm de **Win32 \_** [**SetPhysicalPresenceRequest,**](setphysicalpresencerequest-win32-tpm.md) [**GetPhysicalPresenceRequest,**](getphysicalpresencerequest-win32-tpm.md) [**GetPhysicalPresenceTransition**](getphysicalpresencetransition-win32-tpm.md)y [**GetPhysicalPresenceResponse**](getphysicalpresenceresponse-win32-tpm.md) exponen las funcionalidades de la interfaz de presencia física.
 
-Cuando los datos no están disponibles, se devuelve "No compatible".
+Cuando los datos no están disponibles, se devuelve "No admitido".
 
 </dd> <dt>
 
@@ -231,15 +231,15 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Versión de la especificación Trusted Computing Group (TCG) que el TPM admite. Este valor incluye la versión principal y secundaria de la especificación TCG, el nivel de revisión de especificación y el nivel de revisión de erratas. Todos los valores están en formato hexadecimal. Por ejemplo, una información de versión de "1.2, 2, 0" indica que el dispositivo se implementó en la especificación TCG versión 1.2, nivel de revisión 2 y sin erratas.
+Versión de la especificación Trusted Computing Group (TCG) que el TPM admite. Este valor incluye la versión principal y secundaria de la especificación TCG, el nivel de revisión de especificación y el nivel de revisión errata. Todos los valores están en hexadecimal. Por ejemplo, una información de versión de "1.2, 2, 0" indica que el dispositivo se implementó en la especificación TCG versión 1.2, nivel de revisión 2 y sin erratas.
 
-Cuando los datos no están disponibles, se devuelve "No compatible".
+Cuando los datos no están disponibles, se devuelve "No admitido".
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 

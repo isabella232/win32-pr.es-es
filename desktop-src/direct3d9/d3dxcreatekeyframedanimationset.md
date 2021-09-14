@@ -1,5 +1,5 @@
 ---
-description: Crea una interfaz de conjunto de animación enmarcada con clave ID3DXKeyframedAnimationSet.
+description: Crea una interfaz de conjunto de animaciones con fotogramas clave ID3DXKeyframedAnimationSet.
 ms.assetid: 7b4fffdc-696c-400c-a0cc-fc755fd25b75
 title: Función D3DXCreateKeyframedAnimationSet (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c4fbfb31b712e1521930fa468bae315a443105f3a6bc0863fe3267f9586f874a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f3eb45e999d25c776014c3df5824e0468d03ffd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118804571"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072828"
 ---
 # <a name="d3dxcreatekeyframedanimationset-function"></a>Función D3DXCreateKeyframedAnimationSet
 
-Crea una interfaz de conjunto de animación enmarcada con clave [**ID3DXKeyframedAnimationSet.**](id3dxkeyframedanimationset.md)
+Crea una interfaz de conjunto de animaciones con fotogramas clave [**ID3DXKeyframedAnimationSet.**](id3dxkeyframedanimationset.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Puntero al nombre del conjunto de animaciones.
 
 Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Número de pasos de fotogramas clave que transcurren por segundo.
+Número de pasos de fotograma clave que transcurren por segundo.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Número de pasos de fotogramas clave que transcurren por segundo.
 
 Tipo: **[ **D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md)**
 
-Tipo del bucle de reproducción del conjunto de animación. Vea [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md).
+Tipo del bucle de reproducción del conjunto de animaciones. Vea [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md).
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Número de claves de devolución de llamada.
 
 Tipo: **const [**LPD3DXKEY \_ CALLBACK**](d3dxkey-callback.md) \***
 
-Puntero a una estructura [**de devolución de llamada D3DXKEY \_**](d3dxkey-callback.md) que almacena los datos de devolución de llamada del usuario.
+Puntero a una estructura [**de devolución de llamada D3DXKEY \_**](d3dxkey-callback.md) que almacena datos de devolución de llamada de usuario.
 
 </dd> <dt>
 

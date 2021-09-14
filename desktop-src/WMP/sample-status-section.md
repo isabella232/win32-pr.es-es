@@ -10,12 +10,12 @@ keywords:
 - archivos de definición de máscara, sección Estado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bac02a4784f2198dd51372a8afc405684ae16b2882c6176c4fe2d77e7af42732
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7868b44f0c3014d82ef4fa9ae1f80e30bdf2d6be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073214"
 ---
 # <a name="sample-status-section"></a>Sección de estado de ejemplo
 
@@ -37,7 +37,7 @@ Las líneas siguientes muestran una sección de estado típica de un archivo de 
 
 <dl> <dt>
 
-[**Estado**](status.md)
+[**Status**](status.md)
 </dt> </dl>
 
  

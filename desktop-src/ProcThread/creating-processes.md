@@ -3,13 +3,13 @@ description: La función CreateProcess crea un nuevo proceso, que se ejecuta ind
 ms.assetid: 4c3f76a3-e9f5-4d73-b5ef-eabfa9d6e4d4
 title: Crear procesos
 ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: be8e5e4340f5c956e964b74ab134a7618a4c4bf0fa44eee1989a0457741d7bc6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.date: 09/09/2021
+ms.openlocfilehash: eb5becd6862bf5b113d64db7e6bd56c4753c189b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073888"
 ---
 # <a name="creating-processes"></a>Crear procesos
 

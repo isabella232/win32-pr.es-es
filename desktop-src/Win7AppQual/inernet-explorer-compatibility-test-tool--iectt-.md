@@ -4,25 +4,25 @@ ms.assetid: 11169540-555A-48A9-A4CD-535D5765C005
 title: Herramienta de prueba de compatibilidad de Internet Explorer (IECTT)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12209664dc5aca037b30d938f9c25c9a0e25d02d84019c1a3cb43056a3af06df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3a35b3120e95c668f2808c9c525d0c1d4f89f8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073165"
 ---
 # <a name="internet-explorer-compatibility-test-tool-iectt"></a>Herramienta de prueba de compatibilidad de Internet Explorer (IECTT)
 
-La Internet Explorer de prueba de compatibilidad de aplicaciones (IECTT) es un componente de la herramienta de compatibilidad de [aplicaciones de Microsoft Toolkit](/windows-hardware/get-started/adk-install). Esta herramienta puede ayudarle a diagnosticar problemas en las aplicaciones web mediante la visualización de problemas en tiempo real y, opcionalmente, la carga de los resultados en una base de datos ACT. Los resultados incluyen detalles sobre posibles problemas de compatibilidad y vínculos para obtener más información sobre cada problema de compatibilidad. IECTT también permite excluir problemas y modificar los atributos disponibles.
+La Internet Explorer de prueba de compatibilidad de aplicaciones (IECTT) es un componente de La compatibilidad de aplicaciones [de Microsoft Toolkit](/windows-hardware/get-started/adk-install). Esta herramienta puede ayudarle a diagnosticar problemas en las aplicaciones web mostrando problemas en tiempo real y, opcionalmente, cargando los resultados en una base de datos act. Los resultados incluyen detalles sobre posibles problemas de compatibilidad y vínculos para obtener más información sobre cada problema de compatibilidad. IECTT también permite excluir problemas y modificar los atributos disponibles.
 
 ## <a name="to-open-iectt"></a>Para abrir IECTT
 
 1.  Instale la compatibilidad [de aplicaciones de Microsoft Toolkit](/windows-hardware/get-started/adk-install).
-2.  Haga clic **en** Inicio , seleccione Programas **,** seleccione Compatibilidad de aplicaciones de Microsoft Toolkit **5.6**, elija Herramientas de desarrollador y evaluador **y,** a continuación, haga clic en Internet Explorer **Herramienta** de prueba de compatibilidad .
+2.  Haga clic **en** Inicio , seleccione **Programas,** Compatibilidad de aplicaciones de Microsoft **Toolkit 5.6,** Herramientas de desarrollador y evaluador **y,** a continuación, haga clic en **Internet Explorer Herramienta** de prueba de compatibilidad .
 
 En las secciones siguientes se describen escenarios comunes de IECTT.
 
-## <a name="view-issues-in-real-time"></a>Visualización de problemas en tiempo real
+## <a name="view-issues-in-real-time"></a>Ver problemas en tiempo real
 
 Puede buscar y ver los problemas basados en web en tiempo real, mientras prueba los sitios web y las aplicaciones web en Windows Internet Explorer 7 y Windows Internet Explorer 8. Después de completar las pruebas, puede ver los resultados en la pantalla **Datos en directo** de IECTT.
 
@@ -37,12 +37,12 @@ Puede recopilar datos de compatibilidad relacionados con el sitio web y la aplic
 **Para recopilar los datos de compatibilidad**
 
 1.  Cierre todas las ventanas de Windows Internet Explorer activas.
-2.  En IECTT, en la barra de herramientas Internet Explorer herramientas de prueba **de compatibilidad,** haga clic **en Habilitar**.
-3.  Abra una Internet Explorer 7 u Internet Explorer 8.
+2.  En IECTT, en la barra de herramientas **de la Internet Explorer de pruebas de** compatibilidad, haga clic en **Habilitar**.
+3.  Abra una Internet Explorer 7 o Internet Explorer 8.
 
     Aparece un mensaje que indica que el registro de evaluación de compatibilidad está activado.
 
-4.  Visite los sitios web o las aplicaciones web que su organización necesita para su uso. A medida que visita cada sitio, la herramienta IECTT muestra, en tiempo real, los posibles problemas de compatibilidad.
+4.  Visite los sitios web o las aplicaciones web necesarias para su uso por parte de su organización. A medida que visita cada sitio, la herramienta IECTT muestra, en tiempo real, sus posibles problemas de compatibilidad.
 5.  En la barra **Internet Explorer herramienta de prueba de compatibilidad,** haga clic en **Deshabilitar** cuando haya terminado.
 
     El proceso de registro de compatibilidad finaliza y se detiene.
@@ -53,13 +53,13 @@ Puede filtrar cualquiera de los resultados de IECTT por nombre de objeto, por ti
 
 **Para filtrar los resultados del problema**
 
-1.  En la pantalla **Internet Explorer Herramienta de prueba de compatibilidad,** haga clic en **Filtrar.**
+1.  En la pantalla **Internet Explorer de prueba de compatibilidad,** haga clic en **Filtrar.**
 
     Aparece **el cuadro de diálogo** Filtro de problemas.
 
 2.  Escriba el nombre del objeto que desea ver en el cuadro Escriba el nombre del objeto para **ver los problemas.**
 
-Para obtener más información sobre esta herramienta y otras herramientas de desarrolladores, vea ¿Qué es la herramienta de prueba de compatibilidad de [Internet Explorer?](/previous-versions/windows/it-pro/windows-7/cc721989(v=ws.10)) en MSDN Library y la entrada de blog Registro de compatibilidad de aplicaciones en [IE8.](/archive/blogs/ie/application-compatibility-logging-in-ie8)
+Para obtener más información sobre esta herramienta y otras herramientas para desarrolladores, vea [¿Qué](/previous-versions/windows/it-pro/windows-7/cc721989(v=ws.10)) es la herramienta de prueba de compatibilidad de Internet Explorer? en MSDN Library y la entrada de blog Registro de compatibilidad de aplicaciones en [IE8.](/archive/blogs/ie/application-compatibility-logging-in-ie8)
 
 ## <a name="related-topics"></a>Temas relacionados
 

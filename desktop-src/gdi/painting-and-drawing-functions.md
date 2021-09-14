@@ -4,12 +4,12 @@ ms.assetid: ec18323e-c13b-4328-83bf-9e4ed4a712b8
 title: Funciones de dibujo y dibujo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a51b8acb0ea187c17d220d80f105ad6ae49371688d4eb8671c2a8eb5949b6e0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 162ce40c88766a81320f72ea7c2e4a84dd92c478
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119666625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072476"
 ---
 # <a name="painting-and-drawing-functions"></a>Funciones de dibujo y dibujo
 
@@ -38,14 +38,14 @@ Las siguientes funciones se usan con dibujo y dibujo.
 | [**GetROP2**](/windows/desktop/api/Wingdi/nf-wingdi-getrop2)                     | Obtiene el modo de combinación de primer plano de un contexto de dispositivo.                                                           |
 | [**GetUpdateRect**](/windows/desktop/api/Winuser/nf-winuser-getupdaterect)         | Obtiene las coordenadas del rectángulo más pequeño que incluye la región de actualización de una ventana.                 |
 | [**GetUpdateRgn**](/windows/desktop/api/Winuser/nf-winuser-getupdatergn)           | Obtiene la región de actualización de una ventana.                                                                         |
-| [**GetWindowDC**](/windows/desktop/api/Winuser/nf-winuser-getwindowdc)             | Obtiene el contexto del dispositivo para una ventana, incluida la barra de título, los menús y las barras de desplazamiento.                          |
+| [**GetWindowDC**](/windows/desktop/api/Winuser/nf-winuser-getwindowdc)             | Obtiene el contexto de dispositivo de una ventana, incluida la barra de título, los menús y las barras de desplazamiento.                          |
 | [**GetWindowRgn**](/windows/desktop/api/Winuser/nf-winuser-getwindowrgn)           | Obtiene una copia de la región de ventana de una ventana.                                                               |
 | [**GetWindowRgnBox**](/windows/desktop/api/Winuser/nf-winuser-getwindowrgnbox)     | Obtiene las dimensiones del rectángulo delimitador más ajustado para la región de ventana de una ventana.                   |
 | [**GrayString**](/windows/desktop/api/Winuser/nf-winuser-graystringa)               | Dibuja texto gris en una ubicación.                                                                              |
 | [**InvalidateRect**](/windows/desktop/api/Winuser/nf-winuser-invalidaterect)       | Agrega un rectángulo a la región de actualización de una ventana.                                                               |
 | [**InvalidateRgn**](/windows/desktop/api/Winuser/nf-winuser-invalidatergn)         | Invalida el área de cliente dentro de una región.                                                                |
 | [**LockWindowUpdate**](/windows/desktop/api/Winuser/nf-winuser-lockwindowupdate)   | Deshabilita o habilita el dibujo en una ventana.                                                                    |
-| [**OutputProc**](/windows/desktop/api/Winuser/nc-winuser-graystringproc)               | Función de devolución de llamada usada con la [**función GrayString.**](/windows/desktop/api/Winuser/nf-winuser-graystringa) Se usa para dibujar una cadena.   |
+| [**OutputProc**](/windows/desktop/api/Winuser/nc-winuser-graystringproc)               | Función de devolución de llamada usada con [**la función GrayString.**](/windows/desktop/api/Winuser/nf-winuser-graystringa) Se usa para dibujar una cadena.   |
 | [**PaintDesktop**](/windows/desktop/api/Winuser/nf-winuser-paintdesktop)           | Rellena la región de recorte en un contexto de dispositivo con un patrón.                                               |
 | [**Volver a dibujarWindow**](/windows/desktop/api/Winuser/nf-winuser-redrawwindow)           | Actualiza una región en el área de cliente de una ventana.                                                                 |
 | [**SetBkColor**](/windows/desktop/api/Wingdi/nf-wingdi-setbkcolor)               | Establece el fondo en un valor de color.                                                                       |

@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4e34e95483d382b9fbb97596a7172c94a1a047bfbec0856a3ea17befc1459bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e3f475c0a05d43cf0fbdd7097c1ee083f9040b07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139438"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073444"
 ---
 # <a name="idlesettingsstoponidleend-property"></a>Propiedad IdleSettings.StopOnIdleEnd
 
 Para el scripting, obtiene o establece un valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,7 +40,7 @@ IdleSettings.StopOnIdleEnd As Boolean
 
 Valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al leer o escribir XML para una tarea, esta configuración se especifica en el [**elemento StopOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) del Programador de tareas esquema.
 

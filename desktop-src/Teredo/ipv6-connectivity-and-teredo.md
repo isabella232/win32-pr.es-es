@@ -4,12 +4,12 @@ description: Conectividad IPv6 y Teredo
 ms.assetid: f5c55a2b-ab87-490b-8143-59c6aedc5c9b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3520490828da5bef43ee33c026d7ec3adec711634a2b663ab425fa112fb82f61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39fb03f47c44dacf17f6f1f9284ddee0baa3dbf5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119515835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073393"
 ---
 # <a name="ipv6-connectivity-and-teredo"></a>Conectividad IPv6 y Teredo
 

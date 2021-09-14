@@ -1,19 +1,19 @@
 ---
-description: Los objetos de búfer de vértices permiten que las aplicaciones accedan directamente a la memoria asignada para los datos de vértice.
+description: Los objetos de búfer de vértices permiten a las aplicaciones acceder directamente a la memoria asignada para los datos de vértices.
 ms.assetid: 63d255b7-fa7d-411b-9cdb-52113f30c933
 title: Acceso al contenido de un búfer de vértices (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7f186a85ae0f025d274c50a62d2a83e943bc3b772b2907b5baa1bcac6e0b3bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1b5e4a4986e064d3736f83567f5dd6d479d0dbc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119987475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072837"
 ---
 # <a name="accessing-the-contents-of-a-vertex-buffer-direct3d-9"></a>Acceso al contenido de un búfer de vértices (Direct3D 9)
 
-Los objetos de búfer de vértices permiten que las aplicaciones accedan directamente a la memoria asignada para los datos de vértice. Puede recuperar un puntero a la memoria del búfer de vértices llamando al método [**IDirect3DVertexBuffer9::Lock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-lock) y, a continuación, accediendo a la memoria según sea necesario para rellenar el búfer con nuevos datos de vértices o para leer los datos que ya contiene. El **método IDirect3DVertexBuffer9::Lock** acepta cuatro parámetros. El primero, *OffsetToLock*, es el desplazamiento en los datos del vértice. El segundo parámetro es el tamaño, medido en bytes, de los datos del vértice. El tercer parámetro aceptado es la dirección de un puntero que apunta a los datos del vértice, si la llamada se realiza correctamente.
+Los objetos de búfer de vértices permiten a las aplicaciones acceder directamente a la memoria asignada para los datos de vértices. Puede recuperar un puntero a la memoria del búfer de vértices llamando al método [**IDirect3DVertexBuffer9::Lock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-lock) y, a continuación, accediendo a la memoria según sea necesario para rellenar el búfer con nuevos datos de vértices o para leer los datos que ya contiene. El **método IDirect3DVertexBuffer9::Lock** acepta cuatro parámetros. El primero, *OffsetToLock*, es el desplazamiento en los datos del vértice. El segundo parámetro es el tamaño, medido en bytes, de los datos del vértice. El tercer parámetro aceptado es la dirección de un puntero que apunta a los datos del vértice, si la llamada se realiza correctamente.
 
 El último parámetro, *Flags*, indica al sistema cómo se debe bloquear la memoria. Especifique constantes para el *parámetro Flags según* la forma en que se accederá a los datos del vértice. Asegúrese de que el valor elegido para [**D3DUSAGE**](d3dusage.md) coincide con el valor elegido para [D3DLOCK](d3dlock.md). Por ejemplo, si va a crear un búfer de vértices solo con acceso de escritura, no tiene sentido intentar leer los datos especificando D3DLOCK \_ READONLY. El uso inteligente de estas marcas permite al controlador bloquear la memoria y proporcionar el mejor rendimiento, dado el tipo de acceso solicitado.
 

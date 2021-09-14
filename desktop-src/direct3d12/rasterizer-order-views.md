@@ -5,12 +5,12 @@ ms.assetid: D308BF3E-8CBE-4DF0-B020-4D202E858D99
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 214098f70608d5f20d24edb1312593c6215abea12efecfc6eea97148e8855cce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a19988d3f3eec39e8fc298a2fc13031ecc29e3e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118300986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072918"
 ---
 # <a name="rasterizer-ordered-views"></a>Vistas ordenadas por rasterizador
 

@@ -4,12 +4,12 @@ ms.assetid: 44b85bbc-9594-4f68-b930-51a28422b571
 title: Creación de una identidad del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de7d7e2a1bfba386ede4bf3f10e8b009794c3e17676abc65d797d42e203f214f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ab240b9fa1265ba03bfb1ce584dabed92988620
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073945"
 ---
 # <a name="creating-a-peer-identity"></a>Creación de una identidad del mismo nivel
 

@@ -4,12 +4,12 @@ description: En Windows 7, netsh.exe se puede usar desde un símbolo del sistema
 ms.assetid: f0f0fc7b-7cfa-43c7-89a3-3b80050875f8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07c4be1c89c496245cb67bec4aef8614f5efef5db003e6c79cef2e54314c3071
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c1cf869f60b69e227e78e19e8e05d3765ddb67d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118133258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074190"
 ---
 # <a name="using-netsh-to-manage-traces"></a>Uso de Netsh para administrar seguimientos
 
@@ -37,13 +37,13 @@ Cuando se detiene el seguimiento, se generan dos archivos de forma predeterminad
 
 Los eventos de seguimiento se recopilan en el archivo ETL, que se puede ver mediante herramientas como Monitor de red. El archivo ETL se denominará nettrace.etl de forma predeterminada, o puede especificar un nombre diferente incluyendo **tracefile=filename.etl** al iniciar el seguimiento.
 
-El .cab contiene información completa sobre el software y el hardware del sistema, como la información del adaptador, la compilación, el sistema operativo y la configuración inalámbrica. El .cab se denominará nettrace.cab de forma predeterminada, a menos que se especifique otro nombre como se indicó anteriormente.
+El .cab archivo contiene información completa sobre el software y el hardware del sistema, como la información del adaptador, la compilación, el sistema operativo y la configuración inalámbrica. El .cab se denominará nettrace.cab de forma predeterminada, a menos que se especifique otro nombre como se indicó anteriormente.
 
-Este .cab archivo contendrá dos archivos, que siempre tendrán el mismo nombre. Report.etl es otra copia de la misma información incluida en nettrace.etl. El report.htmarchivo l incluye información adicional sobre los eventos de seguimiento y la otra información recopilada. Para recibir la mayoría de los detalles disponibles, incluya el informe **de comandos = sí al** iniciar un seguimiento.
+Este .cab archivo contendrá dos archivos, que siempre tendrán el mismo nombre. Report.etl es otra copia de la misma información incluida en nettrace.etl. El report.html archivo incluye información adicional sobre los eventos de seguimiento y la otra información recopilada. Para recibir la mayoría de los detalles disponibles, incluya el informe **de comandos = sí al** iniciar un seguimiento.
 
 ## <a name="using-filters-to-reduce-the-amount-of-data-in-the-etl-trace-file"></a>Uso de filtros para reducir la cantidad de datos en el archivo de seguimiento ETL
 
-Cuando se suceden capturas durante un largo período de tiempo, el archivo de seguimiento ETL puede llegar a ser muy grande. En escenarios en los que se habilitan varios proveedores, lo que da lugar a un tráfico elevado, las restricciones de búfer de ETW pueden provocar que se desasoyen algunos seguimientos. Aparte de esta consideración, reducir la cantidad de datos en el archivo de seguimiento ETL puede ayudar a facilitar la solución de problemas al reducir la cantidad de datos que se deben revisar.
+Cuando se suceden capturas durante un largo período de tiempo, el archivo de seguimiento ETL puede llegar a ser muy grande. En escenarios en los que se habilitan varios proveedores, lo que da lugar a un tráfico elevado, las restricciones de búfer ETW pueden provocar que se desasoyen algunos seguimientos. Aparte de esta consideración, reducir la cantidad de datos en el archivo de seguimiento ETL puede ayudar a facilitar la solución de problemas al reducir la cantidad de datos que se deben revisar.
 
 Los filtros de seguimiento de Netsh se pueden usar para reducir el tamaño del archivo de seguimiento ETL. Estos filtros de seguimiento son niveles etw y palabras clave que se pueden aplicar a proveedores individuales.
 
@@ -55,11 +55,11 @@ En este ejemplo, el nivel se establece en 5, lo que significa que se mostrará e
 
 
 
-| Nivel      | Configuración              | Descripción                                                                           |
+| Nivel      | Parámetro              | Descripción                                                                           |
 |-------|---------------|----------------------------------------------------------------------------|
 | 1     | Crítico      | Solo se mostrarán los eventos críticos.                                        |
 | 2     | Errors        | Se mostrarán los eventos y errores críticos.                                  |
-| 3     | Advertencias      | Se mostrarán los eventos críticos, los errores y las advertencias.                       |
+| 3     | Advertencias      | Se mostrarán eventos críticos, errores y advertencias.                       |
 | 4     | Informativo | Se mostrarán eventos críticos, errores, advertencias y eventos informativos. |
 | 5     | Verbose       | Se mostrarán todos los eventos.                                                  |
 
@@ -67,7 +67,7 @@ En este ejemplo, el nivel se establece en 5, lo que significa que se mostrará e
 
  
 
-Las palabras clave **ut:ReceivePath** y **ut:SentPath** filtran los eventos para mostrar solo los eventos de seguimiento en la ruta de acceso de recepción o envío. Para encontrar una lista completa de palabras clave para un proveedor específico, escriba **netsh trace show provider** seguido del nombre del proveedor. Por ejemplo, al escribir **netsh trace show provider Microsoft-Windows-TCPIP** se mostrará información sobre el proveedor Microsoft-Windows-TCPIP, incluida una lista de palabras clave.
+Las palabras clave **ut:ReceivePath** y **ut:SentPath** filtran los eventos para mostrar solo los eventos de seguimiento en la ruta de acceso de recepción o envío. Para encontrar una lista completa de palabras clave para un proveedor específico, escriba **netsh trace show provider** seguido del nombre del proveedor. Por ejemplo, si escribe **netsh trace show provider Microsoft-Windows-TCPIP,** se mostrará información sobre el proveedor Microsoft-Windows-TCPIP, incluida una lista de palabras clave.
 
 Netsh también admite la funcionalidad de filtrado de paquetes (similar a Monitor de red) cuando la captura de paquetes está activada (estableciendo **capture = yes**). El filtrado de paquetes se puede usar para capturar un número limitado de paquetes en un archivo de seguimiento. Por ejemplo, **netsh trace start capture = yes ipv4.address == x.x.x.x** , donde x.x.x.x es la dirección IP, solo capturará paquetes con tráfico ipv4 con esa dirección de origen o destino específica.
 

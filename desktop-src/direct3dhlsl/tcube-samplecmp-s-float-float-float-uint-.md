@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c90105c0e1fe030e0aede0e93ec89ba1c7b42fb218b9cf4a274f472dc9279428
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b73bf86b0c24feae87ea0bb4150d313fff604002
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118284656"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072673"
 ---
 # <a name="samplecmpsamplecmpsfloatfloatfloatuint-function-for-texturecube"></a>Función SampleCmp::SampleCmp(S,float,float,float,uint) para TextureCube
 

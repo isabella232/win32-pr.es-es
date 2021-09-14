@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0687c15e16fd150f14f9dfc17ee4ebb8b30cf5fd25f450424443742e8384215a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aaebd60ecfeeb849c537505f7af3e9a0d5d49da3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118084846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072631"
 ---
 # <a name="apijetupdate-method"></a>Método Api.JetUpdate
 
@@ -40,12 +40,12 @@ Incluir miembros heredados
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn334036(v=exchg.10).md">JetUpdate(JET_SESID, JET_TABLEID)</a></td>
-<td>La función JetUpdate realiza una operación de actualización, incluida la inserción de una nueva fila en una tabla o la actualización de una fila existente. La eliminación de una fila de tabla se realiza mediante una llamada <a href="dn292131(v=exchg.10).md">a JetDelete(JET_SESID, JET_TABLEID).</a></td>
+<td>La función JetUpdate realiza una operación de actualización que incluye la inserción de una nueva fila en una tabla o la actualización de una fila existente. La eliminación de una fila de tabla se realiza mediante una llamada <a href="dn292131(v=exchg.10).md">a JetDelete(JET_SESID, JET_TABLEID).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn334023(v=exchg.10).md">JetUpdate(JET_SESID, JET_TABLEID, [], Int32, Int32)</a></td>
-<td>La función JetUpdate realiza una operación de actualización, incluida la inserción de una nueva fila en una tabla o la actualización de una fila existente. La eliminación de una fila de tabla se realiza mediante una llamada <a href="dn292131(v=exchg.10).md">a JetDelete(JET_SESID, JET_TABLEID).</a></td>
+<td>La función JetUpdate realiza una operación de actualización que incluye la inserción de una nueva fila en una tabla o la actualización de una fila existente. La eliminación de una fila de tabla se realiza mediante una llamada <a href="dn292131(v=exchg.10).md">a JetDelete(JET_SESID, JET_TABLEID).</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,11 +53,11 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

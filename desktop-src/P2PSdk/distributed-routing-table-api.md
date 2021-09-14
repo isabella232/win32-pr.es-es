@@ -4,12 +4,12 @@ ms.assetid: 17422d71-4c6d-458b-87b6-b31fc2b5bda5
 title: Enrutamiento distribuido Table API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9adabac4e2e885a7ac635daf5de2dfbacc94dafd4972a6b35f1f4649c3428e92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9f8c2b435e1c0c813fb279c40b9bbfa9afb6b23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073942"
 ---
 # <a name="distributed-routing-table-api"></a>Enrutamiento distribuido Table API
 
@@ -22,7 +22,7 @@ Una aplicación que utiliza DRT puede realizar lo siguiente:
 -   Busque claves y recupere las direcciones IP y los datos de aplicación asociados a ellas. Esta funcionalidad se puede usar para construir tablas hash distribuidas (DHT), sistemas de resolución de nombres sin servidor y redes de malla superpuestas de muchas topologías.
 
 > [!Note]  
-> Los administradores y usuarios de las aplicaciones habilitadas para DRT deben hacer que los usuarios finales de sus aplicaciones conozcan la información que se publica. Los servidores de Microsoft no se emplean con esta tecnología y la información no se envía a Microsoft.
+> Los administradores y usuarios de las aplicaciones habilitadas para DRT deben hacer que los usuarios finales de sus aplicaciones conozcan la información que se publica. Esta tecnología no emplea los servidores de Microsoft y la información no se envía a Microsoft.
 
  
 

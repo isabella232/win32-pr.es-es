@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 392e0bb2940c36b541f63f55dac418312489f231d785f82014ade82c20602fbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69b140a2b65d47d563fd88f49d6818efc13613f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118343617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073307"
 ---
 # <a name="metadatatype-complex-type"></a>Tipo complejo MetadataType
 
@@ -107,7 +107,7 @@ Define los tipos de metadatos que puede definir en la sección de metadatos del 
 
 | Elemento                                                                       | Tipo                                                                       | Descripción                                                                                                                                                      |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Canales**](eventmanifestschema-channels-metadatatype-element.md)         | [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) | Define una lista de canales en los que los proveedores pueden registrar eventos. A continuación, un proveedor puede importar uno o varios de los canales en su manifiesto.<br/>               |
+| [**channels**](eventmanifestschema-channels-metadatatype-element.md)         | [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) | Define una lista de canales en los que los proveedores pueden registrar eventos. A continuación, un proveedor puede importar uno o varios de los canales en su manifiesto.<br/>               |
 | [**Palabras clave**](eventmanifestschema-keywords-metadatatype-element.md)         | [**KeywordListType**](eventmanifestschema-keywordlisttype-complextype.md) | Define una lista de palabras clave que determinan la categoría de eventos que escribe el proveedor.<br/>                                                            |
 | [**Niveles**](eventmanifestschema-levels-metadatatype-element.md)             | [**LevelListType**](eventmanifestschema-levellisttype-complextype.md)     | Define una lista de niveles que especifican la gravedad de un evento.<br/>                                                                                       |
 | **message**                                                                   |                                                                            | Define una cadena de mensaje.<br/>                                                                                                                             |
@@ -126,14 +126,14 @@ Define los tipos de metadatos que puede definir en la sección de metadatos del 
 | Nombre    | Tipo                                                              | Descripción                                                                                        |
 |---------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | message | [**strTableRef**](eventmanifestschema-strtableref-simpletype.md) | Referencia a la cadena localizada en la tabla de cadenas.<br/>                                |
-| mId     | xs:string                                                         | No se usa.<br/>                                                                               |
+| mId     | xs:string                                                         | No se utiliza.<br/>                                                                               |
 | name    | anyURI                                                            | Uri del metarchivo. <br/>                                                              |
 | símbolo  | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Nombre simbólico que desea que el compilador de mensajes cree para esta cadena de mensaje.<br/> |
 | value   | [**UInt32Type**](eventmanifestschema-hexint32type-simpletype.md) | Número que se va a usar como identificador de mensaje para este mensaje.<br/>                           |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Aunque puede crear un manifiesto que contenga una sección de metadatos, el servicio no lo usará; los únicos metadatos que el servicio reconoce son los metadatos que se encuentran en el Winmeta.xml archivo.
 
@@ -141,7 +141,7 @@ Aunque puede crear un manifiesto que contenga una sección de metadatos, el serv
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

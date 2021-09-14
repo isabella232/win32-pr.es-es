@@ -1,6 +1,6 @@
 ---
-title: Mensajes de error (Wininet. h)
-description: Las funciones WinINet devuelven códigos de error cuando corresponda. Los errores siguientes son específicos de las funciones de WinINet.
+title: Mensajes de error (Wininet.h)
+description: Las funciones de WinINet devuelven códigos de error cuando corresponda. Los errores siguientes son específicos de las funciones de WinINet.
 ms.assetid: 338bf65f-ebe5-4434-8407-9ab2a4c8d381
 topic_type:
 - apiref
@@ -109,19 +109,19 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d43fcaba7f0404ad002d2a94ac8291c95b0f7440
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073125"
 ---
-# <a name="error-messages-winineth"></a>Mensajes de error (Wininet. h)
+# <a name="error-messages-winineth"></a>Mensajes de error (Wininet.h)
 
-Las funciones WinINet devuelven códigos de error cuando corresponda. Los errores siguientes son específicos de las funciones de WinINet.
+Las funciones de WinINet devuelven códigos de error cuando corresponda. Los errores siguientes son específicos de las funciones de WinINet.
 
 <dl> <dt>
 
-<span id="ERROR_FTP_DROPPED"></span><span id="error_ftp_dropped"></span>**ERROR de \_ FTP \_ eliminado**
+<span id="ERROR_FTP_DROPPED"></span><span id="error_ftp_dropped"></span>**ERROR \_ FTP \_ ELIMINADO**
 </dt> <dd> <dl> <dt>
 
 12111
@@ -129,12 +129,12 @@ Las funciones WinINet devuelven códigos de error cuando corresponda. Los errore
 
 
 
-No se completó la operación FTP porque se anuló la sesión.
+La operación FTP no se completó porque se anuló la sesión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FTP_NO_PASSIVE_MODE"></span><span id="error_ftp_no_passive_mode"></span>**ERROR \_ FTP \_ no \_ \_ modo pasivo**
+<span id="ERROR_FTP_NO_PASSIVE_MODE"></span><span id="error_ftp_no_passive_mode"></span>**ERROR \_ FTP SIN MODO \_ \_ \_ PASIVO**
 </dt> <dd> <dl> <dt>
 
 12112
@@ -147,7 +147,7 @@ El modo pasivo no está disponible en el servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FTP_TRANSFER_IN_PROGRESS"></span><span id="error_ftp_transfer_in_progress"></span>**ERROR \_ \_ en la transferencia FTP \_ en \_ curso**
+<span id="ERROR_FTP_TRANSFER_IN_PROGRESS"></span><span id="error_ftp_transfer_in_progress"></span>**ERROR \_ TRANSFERENCIA FTP EN \_ \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 12110
@@ -155,12 +155,12 @@ El modo pasivo no está disponible en el servidor.
 
 
 
-No se puede realizar la operación solicitada en el identificador de sesión FTP porque ya hay una operación en curso.
+La operación solicitada no se puede realizar en el identificador de sesión FTP porque ya hay una operación en curso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_ATTRIBUTE_NOT_FOUND"></span><span id="error_gopher_attribute_not_found"></span>**\_ \_ \_ no \_ se encontró el atributo Gopher de error**
+<span id="ERROR_GOPHER_ATTRIBUTE_NOT_FOUND"></span><span id="error_gopher_attribute_not_found"></span>**ERROR \_ NO SE ENCONTRÓ EL ATRIBUTO \_ \_ \_ GOPHER**
 </dt> <dd> <dl> <dt>
 
 12137
@@ -171,14 +171,14 @@ No se puede realizar la operación solicitada en el identificador de sesión FTP
 No se pudo encontrar el atributo solicitado.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_DATA_ERROR"></span><span id="error_gopher_data_error"></span>**error \_ de \_ datos de Gopher \_**
+<span id="ERROR_GOPHER_DATA_ERROR"></span><span id="error_gopher_data_error"></span>**ERROR \_ GOPHER \_ DATA \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 12132
@@ -186,17 +186,17 @@ No se pudo encontrar el atributo solicitado.
 
 
 
-Se detectó un error al recibir datos del servidor gopher.
+Se detectó un error al recibir datos del servidor Gopher.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_END_OF_DATA"></span><span id="error_gopher_end_of_data"></span>**ERROR \_ \_ de fin \_ de \_ datos de Gopher**
+<span id="ERROR_GOPHER_END_OF_DATA"></span><span id="error_gopher_end_of_data"></span>**ERROR \_ GOPHER \_ END \_ OF \_ DATA**
 </dt> <dd> <dl> <dt>
 
 12133
@@ -207,14 +207,14 @@ Se detectó un error al recibir datos del servidor gopher.
 Se ha alcanzado el final de los datos.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_INCORRECT_LOCATOR_TYPE"></span><span id="error_gopher_incorrect_locator_type"></span>**ERROR \_ de \_ \_ tipo de localizador incorrecto de Gopher \_**
+<span id="ERROR_GOPHER_INCORRECT_LOCATOR_TYPE"></span><span id="error_gopher_incorrect_locator_type"></span>**ERROR \_ GOPHER \_ INCORRECT \_ LOCATOR \_ TYPE**
 </dt> <dd> <dl> <dt>
 
 12135
@@ -225,14 +225,14 @@ Se ha alcanzado el final de los datos.
 El tipo del localizador no es correcto para esta operación.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_INVALID_LOCATOR"></span><span id="error_gopher_invalid_locator"></span>**ERROR \_ de \_ localizador Gopher no válido \_**
+<span id="ERROR_GOPHER_INVALID_LOCATOR"></span><span id="error_gopher_invalid_locator"></span>**ERROR \_ GOPHER \_ INVALID \_ LOCATOR**
 </dt> <dd> <dl> <dt>
 
 12134
@@ -243,14 +243,14 @@ El tipo del localizador no es correcto para esta operación.
 El localizador proporcionado no es válido.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_NOT_FILE"></span><span id="error_gopher_not_file"></span>**ERROR: \_ Gopher no es un \_ \_ archivo**
+<span id="ERROR_GOPHER_NOT_FILE"></span><span id="error_gopher_not_file"></span>**ERROR \_ GOPHER \_ NOT \_ FILE**
 </dt> <dd> <dl> <dt>
 
 12131
@@ -258,17 +258,17 @@ El localizador proporcionado no es válido.
 
 
 
-La solicitud se debe realizar para un localizador de archivos.
+La solicitud debe realizarse para un localizador de archivos.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_NOT_GOPHER_PLUS"></span><span id="error_gopher_not_gopher_plus"></span>**ERROR \_ Gopher \_ no \_ Gopher \_ Plus**
+<span id="ERROR_GOPHER_NOT_GOPHER_PLUS"></span><span id="error_gopher_not_gopher_plus"></span>**ERROR \_ GOPHER \_ NOT \_ GOPHER \_ PLUS**
 </dt> <dd> <dl> <dt>
 
 12136
@@ -276,17 +276,17 @@ La solicitud se debe realizar para un localizador de archivos.
 
 
 
-La operación solicitada solo se puede realizar en un servidor gopher + o con un localizador que especifique una operación Gopher +.
+La operación solicitada solo se puede realizar en un servidor Gopher+ o con un localizador que especifique una operación Gopher+.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_PROTOCOL_ERROR"></span><span id="error_gopher_protocol_error"></span>**error \_ de \_ Protocolo \_ Gopher**
+<span id="ERROR_GOPHER_PROTOCOL_ERROR"></span><span id="error_gopher_protocol_error"></span>**ERROR \_ DE PROTOCOLO GOPHER \_ \_**
 </dt> <dd> <dl> <dt>
 
 12130
@@ -294,17 +294,17 @@ La operación solicitada solo se puede realizar en un servidor gopher + o con un
 
 
 
-Se detectó un error al analizar los datos devueltos desde el servidor gopher.
+Se detectó un error al analizar los datos devueltos desde el servidor Gopher.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GOPHER_UNKNOWN_LOCATOR"></span><span id="error_gopher_unknown_locator"></span>**\_localizador de error Gopher \_ desconocido \_**
+<span id="ERROR_GOPHER_UNKNOWN_LOCATOR"></span><span id="error_gopher_unknown_locator"></span>**ERROR \_ GOPHER \_ UNKNOWN \_ LOCATOR**
 </dt> <dd> <dl> <dt>
 
 12138
@@ -312,17 +312,17 @@ Se detectó un error al analizar los datos devueltos desde el servidor gopher.
 
 
 
-Se desconoce el tipo de localizador.
+El tipo de localizador es desconocido.
 
 > [!Note]  
-> Solo Windows XP y Windows Server 2003 R2 y versiones anteriores.
+> Windows XP y Windows Server 2003 R2 y versiones anteriores solo.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_COOKIE_DECLINED"></span><span id="error_http_cookie_declined"></span>**ERROR \_ de \_ cookie HTTP \_ rechazada**
+<span id="ERROR_HTTP_COOKIE_DECLINED"></span><span id="error_http_cookie_declined"></span>**ERROR \_ HTTP \_ COOKIE \_ RECHAZADA**
 </dt> <dd> <dl> <dt>
 
 12162
@@ -335,7 +335,7 @@ El servidor rechazó la cookie HTTP.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_COOKIE_NEEDS_CONFIRMATION"></span><span id="error_http_cookie_needs_confirmation"></span>**ERROR \_ la \_ cookie HTTP \_ requiere \_ confirmación**
+<span id="ERROR_HTTP_COOKIE_NEEDS_CONFIRMATION"></span><span id="error_http_cookie_needs_confirmation"></span>**ERROR \_ HTTP \_ COOKIE \_ NEEDS \_ CONFIRMATION**
 </dt> <dd> <dl> <dt>
 
 12161
@@ -346,14 +346,14 @@ El servidor rechazó la cookie HTTP.
 La cookie HTTP requiere confirmación.
 
 > [!Note]  
-> Windows Vista y Windows Server 2008 y versiones anteriores solo.
+> Windows Vista y Windows Server 2008 y versiones anteriores.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_DOWNLEVEL_SERVER"></span><span id="error_http_downlevel_server"></span>**ERROR \_ de \_ servidor de nivel inferior http \_**
+<span id="ERROR_HTTP_DOWNLEVEL_SERVER"></span><span id="error_http_downlevel_server"></span>**ERROR \_ HTTP \_ DOWNLEVEL \_ SERVER**
 </dt> <dd> <dl> <dt>
 
 12151
@@ -361,12 +361,12 @@ La cookie HTTP requiere confirmación.
 
 
 
-El servidor no devolvió ningún encabezado.
+El servidor no deseó ningún encabezado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_HEADER_ALREADY_EXISTS"></span><span id="error_http_header_already_exists"></span>**el \_ encabezado HTTP de error \_ \_ ya \_ existe**
+<span id="ERROR_HTTP_HEADER_ALREADY_EXISTS"></span><span id="error_http_header_already_exists"></span>**EL \_ ENCABEZADO HTTP DE ERROR YA \_ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 12155
@@ -379,7 +379,7 @@ No se pudo agregar el encabezado porque ya existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_HEADER_NOT_FOUND"></span><span id="error_http_header_not_found"></span>**\_ \_ \_ no \_ se encontró el encabezado HTTP de error**
+<span id="ERROR_HTTP_HEADER_NOT_FOUND"></span><span id="error_http_header_not_found"></span>**ERROR \_ ENCABEZADO HTTP NO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 12150
@@ -392,7 +392,7 @@ No se pudo encontrar el encabezado solicitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_INVALID_HEADER"></span><span id="error_http_invalid_header"></span>**ERROR en el \_ \_ encabezado HTTP no válido \_**
+<span id="ERROR_HTTP_INVALID_HEADER"></span><span id="error_http_invalid_header"></span>**ERROR \_ HTTP \_ INVALID \_ HEADER**
 </dt> <dd> <dl> <dt>
 
 12153
@@ -405,7 +405,7 @@ El encabezado proporcionado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_INVALID_QUERY_REQUEST"></span><span id="error_http_invalid_query_request"></span>**ERROR \_ de \_ \_ solicitud de consulta no válida http \_**
+<span id="ERROR_HTTP_INVALID_QUERY_REQUEST"></span><span id="error_http_invalid_query_request"></span>**ERROR \_ HTTP \_ INVALID \_ QUERY \_ REQUEST**
 </dt> <dd> <dl> <dt>
 
 12154
@@ -418,7 +418,7 @@ La solicitud realizada a [**HttpQueryInfo**](/windows/desktop/api/Wininet/nf-win
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_INVALID_SERVER_RESPONSE"></span><span id="error_http_invalid_server_response"></span>**ERROR \_ de \_ \_ respuesta del servidor HTTP no válida \_**
+<span id="ERROR_HTTP_INVALID_SERVER_RESPONSE"></span><span id="error_http_invalid_server_response"></span>**ERROR \_ HTTP \_ INVALID \_ SERVER \_ RESPONSE**
 </dt> <dd> <dl> <dt>
 
 12152
@@ -431,7 +431,7 @@ No se pudo analizar la respuesta del servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_NOT_REDIRECTED"></span><span id="error_http_not_redirected"></span>**ERROR \_ \_ no \_ Redirigido http**
+<span id="ERROR_HTTP_NOT_REDIRECTED"></span><span id="error_http_not_redirected"></span>**ERROR \_ HTTP \_ NO \_ REDIRIGIDO**
 </dt> <dd> <dl> <dt>
 
 12160
@@ -439,12 +439,12 @@ No se pudo analizar la respuesta del servidor.
 
 
 
-No se redirigió la solicitud HTTP.
+No se redirija la solicitud HTTP.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_REDIRECT_FAILED"></span><span id="error_http_redirect_failed"></span>**ERROR \_ de \_ redirección \_ http**
+<span id="ERROR_HTTP_REDIRECT_FAILED"></span><span id="error_http_redirect_failed"></span>**ERROR \_ HTTP \_ REDIRECT \_ FAILED**
 </dt> <dd> <dl> <dt>
 
 12156
@@ -452,12 +452,12 @@ No se redirigió la solicitud HTTP.
 
 
 
-Se produjo un error en el redireccionamiento porque el esquema ha cambiado (por ejemplo, HTTP a FTP) o todos los intentos de redirigir el error (el valor predeterminado es cinco intentos).
+Error de redirección porque el esquema ha cambiado (por ejemplo, HTTP a FTP) o todos los intentos realizados para redirigir no se pudieron realizar (el valor predeterminado es cinco intentos).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HTTP_REDIRECT_NEEDS_CONFIRMATION"></span><span id="error_http_redirect_needs_confirmation"></span>**ERROR \_ el \_ redireccionamiento http \_ necesita \_ confirmación**
+<span id="ERROR_HTTP_REDIRECT_NEEDS_CONFIRMATION"></span><span id="error_http_redirect_needs_confirmation"></span>**ERROR \_ HTTP \_ REDIRECT \_ NEEDS \_ CONFIRMATION**
 </dt> <dd> <dl> <dt>
 
 12168
@@ -465,12 +465,12 @@ Se produjo un error en el redireccionamiento porque el esquema ha cambiado (por 
 
 
 
-La redirección requiere confirmación del usuario.
+El redireccionamiento requiere confirmación del usuario.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_ASYNC_THREAD_FAILED"></span><span id="error_internet_async_thread_failed"></span>**ERROR \_ de \_ \_ subproceso asincrónico de Internet \_**
+<span id="ERROR_INTERNET_ASYNC_THREAD_FAILED"></span><span id="error_internet_async_thread_failed"></span>**ERROR \_ INTERNET \_ ASYNC \_ THREAD \_ FAILED**
 </dt> <dd> <dl> <dt>
 
 12047
@@ -483,7 +483,7 @@ La aplicación no pudo iniciar un subproceso asincrónico.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_BAD_AUTO_PROXY_SCRIPT"></span><span id="error_internet_bad_auto_proxy_script"></span>**ERROR en el \_ \_ \_ script de proxy automático incorrecto \_ \_ de Internet**
+<span id="ERROR_INTERNET_BAD_AUTO_PROXY_SCRIPT"></span><span id="error_internet_bad_auto_proxy_script"></span>**ERROR \_ INTERNET \_ BAD \_ AUTO \_ PROXY \_ SCRIPT**
 </dt> <dd> <dl> <dt>
 
 12166
@@ -496,7 +496,7 @@ Se produjo un error en el script de configuración automática del proxy.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_BAD_OPTION_LENGTH"></span><span id="error_internet_bad_option_length"></span>**ERROR \_ de \_ \_ longitud de opción incorrecta de Internet \_**
+<span id="ERROR_INTERNET_BAD_OPTION_LENGTH"></span><span id="error_internet_bad_option_length"></span>**ERROR \_ INTERNET \_ BAD \_ OPTION \_ LENGTH**
 </dt> <dd> <dl> <dt>
 
 12010
@@ -504,12 +504,12 @@ Se produjo un error en el script de configuración automática del proxy.
 
 
 
-La longitud de una opción proporcionada a [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) o [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) no es correcta para el tipo de opción especificada.
+La longitud de una opción proporcionada a [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) o [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) es incorrecta para el tipo de opción especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_BAD_REGISTRY_PARAMETER"></span><span id="error_internet_bad_registry_parameter"></span>**\_parámetro de \_ error \_ del registro de Internet incorrecto \_**
+<span id="ERROR_INTERNET_BAD_REGISTRY_PARAMETER"></span><span id="error_internet_bad_registry_parameter"></span>**ERROR \_ INTERNET \_ BAD \_ REGISTRY \_ PARAMETER**
 </dt> <dd> <dl> <dt>
 
 12022
@@ -517,12 +517,12 @@ La longitud de una opción proporcionada a [**InternetQueryOption**](/windows/de
 
 
 
-Se encontró un valor de registro necesario, pero es de un tipo incorrecto o tiene un valor no válido.
+Se ha localizado un valor del Registro necesario, pero es un tipo incorrecto o tiene un valor no válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_CANNOT_CONNECT"></span><span id="error_internet_cannot_connect"></span>**ERROR \_ Internet \_ no se puede \_ conectar**
+<span id="ERROR_INTERNET_CANNOT_CONNECT"></span><span id="error_internet_cannot_connect"></span>**ERROR \_ INTERNET NO SE PUEDE \_ \_ CONECTAR**
 </dt> <dd> <dl> <dt>
 
 12029
@@ -535,7 +535,7 @@ Error al intentar conectarse al servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_CHG_POST_IS_NON_SECURE"></span><span id="error_internet_chg_post_is_non_secure"></span>**ERROR el \_ envío de correo de Internet \_ \_ \_ \_ no es \_ seguro**
+<span id="ERROR_INTERNET_CHG_POST_IS_NON_SECURE"></span><span id="error_internet_chg_post_is_non_secure"></span>**ERROR \_ INTERNET \_ CHG \_ POST \_ IS \_ NON \_ SECURE**
 </dt> <dd> <dl> <dt>
 
 12042
@@ -548,7 +548,7 @@ La aplicación está publicando e intentando cambiar varias líneas de texto en 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_CLIENT_AUTH_CERT_NEEDED"></span><span id="error_internet_client_auth_cert_needed"></span>**ERROR \_ de \_ certificado de autenticación de cliente de Internet \_ \_ \_ necesario**
+<span id="ERROR_INTERNET_CLIENT_AUTH_CERT_NEEDED"></span><span id="error_internet_client_auth_cert_needed"></span>**ERROR \_ SE NECESITA EL CERTIFICADO DE \_ \_ AUTENTICACIÓN DE CLIENTE DE \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12044
@@ -556,12 +556,12 @@ La aplicación está publicando e intentando cambiar varias líneas de texto en 
 
 
 
-El servidor está solicitando la autenticación del cliente.
+El servidor solicita la autenticación de cliente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_CLIENT_AUTH_NOT_SETUP"></span><span id="error_internet_client_auth_not_setup"></span>**ERROR \_ \_ no se \_ \_ ha \_ configurado la autenticación de cliente de Internet**
+<span id="ERROR_INTERNET_CLIENT_AUTH_NOT_SETUP"></span><span id="error_internet_client_auth_not_setup"></span>**ERROR: \_ NO SE HA CONFIGURADO LA \_ \_ AUTENTICACIÓN DE CLIENTE DE \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12046
@@ -569,12 +569,12 @@ El servidor está solicitando la autenticación del cliente.
 
 
 
-La autorización del cliente no está configurada en este equipo.
+La autorización de cliente no está configurada en este equipo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_CONNECTION_ABORTED"></span><span id="error_internet_connection_aborted"></span>**ERROR \_ de \_ conexión a Internet \_ anulada**
+<span id="ERROR_INTERNET_CONNECTION_ABORTED"></span><span id="error_internet_connection_aborted"></span>**ERROR DE \_ CONEXIÓN A INTERNET \_ \_ ANULADA**
 </dt> <dd> <dl> <dt>
 
 12030
@@ -587,7 +587,7 @@ La conexión con el servidor ha finalizado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_CONNECTION_RESET"></span><span id="error_internet_connection_reset"></span>**ERROR \_ de \_ restablecimiento de conexión a Internet \_**
+<span id="ERROR_INTERNET_CONNECTION_RESET"></span><span id="error_internet_connection_reset"></span>**ERROR DE \_ \_ RESTABLECIMIENTO DE CONEXIÓN A \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12031
@@ -600,7 +600,7 @@ Se ha restablecido la conexión con el servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_DECODING_FAILED"></span><span id="error_internet_decoding_failed"></span>**ERROR \_ de \_ descodificación de Internet \_**
+<span id="ERROR_INTERNET_DECODING_FAILED"></span><span id="error_internet_decoding_failed"></span>**ERROR AL \_ \_ DESCODAR INTERNET \_**
 </dt> <dd> <dl> <dt>
 
 12175
@@ -608,12 +608,12 @@ Se ha restablecido la conexión con el servidor.
 
 
 
-WinINet no pudo realizar la descodificación de contenido en la respuesta. Para obtener más información, vea el tema sobre [**codificación de contenido**](content-encoding.md) .
+WinINet no pudo realizar la decodificación de contenido en la respuesta. Para obtener más información, vea el [**tema Codificación de**](content-encoding.md) contenido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_DIALOG_PENDING"></span><span id="error_internet_dialog_pending"></span>**ERROR en el \_ cuadro de diálogo de Internet \_ \_ pendiente**
+<span id="ERROR_INTERNET_DIALOG_PENDING"></span><span id="error_internet_dialog_pending"></span>**CUADRO DE \_ DIÁLOGO DE INTERNET DE ERROR \_ \_ PENDIENTE**
 </dt> <dd> <dl> <dt>
 
 12049
@@ -626,7 +626,7 @@ Otro subproceso tiene un cuadro de diálogo de contraseña en curso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_DISCONNECTED"></span><span id="error_internet_disconnected"></span>**ERROR de \_ Internet \_ desconectado**
+<span id="ERROR_INTERNET_DISCONNECTED"></span><span id="error_internet_disconnected"></span>**ERROR \_ INTERNET \_ DESCONECTADO**
 </dt> <dd> <dl> <dt>
 
 12163
@@ -634,12 +634,12 @@ Otro subproceso tiene un cuadro de diálogo de contraseña en curso.
 
 
 
-Se perdió la conexión a Internet.
+Se ha perdido la conexión a Internet.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_EXTENDED_ERROR"></span><span id="error_internet_extended_error"></span>**error de error \_ extendido de Internet \_ \_**
+<span id="ERROR_INTERNET_EXTENDED_ERROR"></span><span id="error_internet_extended_error"></span>**ERROR \_ INTERNET \_ EXTENDED \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 12003
@@ -647,12 +647,12 @@ Se perdió la conexión a Internet.
 
 
 
-Se devolvió un error extendido desde el servidor. Suele ser una cadena o un búfer que contiene un mensaje de error detallado. Llame a [**InternetGetLastResponseInfo**](/windows/desktop/api/Wininet/nf-wininet-internetgetlastresponseinfoa) para recuperar el texto del error.
+Se devolvió un error extendido desde el servidor. Suele ser una cadena o búfer que contiene un mensaje de error detallado. Llame [**a InternetGetLastResponseInfo para**](/windows/desktop/api/Wininet/nf-wininet-internetgetlastresponseinfoa) recuperar el texto del error.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_FAILED_DUETOSECURITYCHECK"></span><span id="error_internet_failed_duetosecuritycheck"></span>**ERROR \_ de \_ Internet \_ DUETOSECURITYCHECK**
+<span id="ERROR_INTERNET_FAILED_DUETOSECURITYCHECK"></span><span id="error_internet_failed_duetosecuritycheck"></span>**ERROR \_ ERROR DE INTERNET \_ \_ DUETOSECURITYCHECK**
 </dt> <dd> <dl> <dt>
 
 12171
@@ -660,12 +660,12 @@ Se devolvió un error extendido desde el servidor. Suele ser una cadena o un bú
 
 
 
-Error de la función debido a una comprobación de seguridad.
+Error en la función debido a una comprobación de seguridad.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_FORCE_RETRY"></span><span id="error_internet_force_retry"></span>**ERROR \_ de \_ reintento de Internet Force \_**
+<span id="ERROR_INTERNET_FORCE_RETRY"></span><span id="error_internet_force_retry"></span>**ERROR \_ INTERNET \_ FORCE \_ RETRY**
 </dt> <dd> <dl> <dt>
 
 12032
@@ -673,12 +673,12 @@ Error de la función debido a una comprobación de seguridad.
 
 
 
-La función debe rehacer la solicitud.
+La función debe volver a hacer la solicitud.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_FORTEZZA_LOGIN_NEEDED"></span><span id="error_internet_fortezza_login_needed"></span>**ERROR \_ de \_ Inicio de sesión de Fortezza de Internet \_ \_ necesario**
+<span id="ERROR_INTERNET_FORTEZZA_LOGIN_NEEDED"></span><span id="error_internet_fortezza_login_needed"></span>**ERROR \_ INTERNET \_ FORTEZZA \_ LOGIN \_ NEEDED**
 </dt> <dd> <dl> <dt>
 
 12054
@@ -686,12 +686,12 @@ La función debe rehacer la solicitud.
 
 
 
-El recurso solicitado requiere autenticación Fortezza.
+El recurso solicitado requiere la autenticación de Fortezza.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_HANDLE_EXISTS"></span><span id="error_internet_handle_exists"></span>**ERROR \_ el \_ identificador de Internet \_ existe**
+<span id="ERROR_INTERNET_HANDLE_EXISTS"></span><span id="error_internet_handle_exists"></span>**ERROR EXISTE \_ EL IDENTIFICADOR DE INTERNET \_ \_**
 </dt> <dd> <dl> <dt>
 
 12036
@@ -699,12 +699,12 @@ El recurso solicitado requiere autenticación Fortezza.
 
 
 
-No se pudo realizar la solicitud porque el identificador ya existe.
+Error en la solicitud porque el identificador ya existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_HTTP_TO_HTTPS_ON_REDIR"></span><span id="error_internet_http_to_https_on_redir"></span>**ERROR \_ de Internet de \_ http \_ a \_ https \_ en \_ redir**
+<span id="ERROR_INTERNET_HTTP_TO_HTTPS_ON_REDIR"></span><span id="error_internet_http_to_https_on_redir"></span>**ERROR \_ DE HTTP DE INTERNET A HTTPS EN \_ \_ \_ \_ \_ REDIR**
 </dt> <dd> <dl> <dt>
 
 12039
@@ -712,12 +712,12 @@ No se pudo realizar la solicitud porque el identificador ya existe.
 
 
 
-La aplicación se mueve de una conexión que no es SSL a una conexión SSL debido a una redirección.
+La aplicación se está moviendo de un no SSL a una conexión SSL debido a una redirección.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_HTTPS_HTTP_SUBMIT_REDIR"></span><span id="error_internet_https_http_submit_redir"></span>**ERROR \_ de \_ envío de http de \_ envío http de HTTPS de \_ Internet \_**
+<span id="ERROR_INTERNET_HTTPS_HTTP_SUBMIT_REDIR"></span><span id="error_internet_https_http_submit_redir"></span>**ERROR \_ INTERNET \_ HTTPS \_ HTTP \_ SUBMIT \_ REDIR**
 </dt> <dd> <dl> <dt>
 
 12052
@@ -725,12 +725,12 @@ La aplicación se mueve de una conexión que no es SSL a una conexión SSL debid
 
 
 
-Los datos que se envían a una conexión SSL se redirigen a una conexión que no es SSL.
+Los datos que se envían a una conexión SSL se redirigen a una conexión no SSL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_HTTPS_TO_HTTP_ON_REDIR"></span><span id="error_internet_https_to_http_on_redir"></span>**ERROR \_ \_ de Internet HTTPS \_ a \_ http \_ en \_ redir**
+<span id="ERROR_INTERNET_HTTPS_TO_HTTP_ON_REDIR"></span><span id="error_internet_https_to_http_on_redir"></span>**ERROR \_ HTTPS DE INTERNET A HTTP EN \_ \_ \_ \_ \_ REDIR**
 </dt> <dd> <dl> <dt>
 
 12040
@@ -738,12 +738,12 @@ Los datos que se envían a una conexión SSL se redirigen a una conexión que no
 
 
 
-La aplicación se mueve de un SSL a una conexión que no es SSL debido a una redirección.
+La aplicación se está moviendo de una conexión SSL a una conexión no SSL debido a una redirección.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INCORRECT_FORMAT"></span><span id="error_internet_incorrect_format"></span>**ERROR de Internet con un \_ \_ \_ formato incorrecto**
+<span id="ERROR_INTERNET_INCORRECT_FORMAT"></span><span id="error_internet_incorrect_format"></span>**ERROR \_ DE FORMATO INCORRECTO DE \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12027
@@ -756,7 +756,7 @@ El formato de la solicitud no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INCORRECT_HANDLE_STATE"></span><span id="error_internet_incorrect_handle_state"></span>**ERROR \_ de \_ \_ Estado de identificador incorrecto de Internet \_**
+<span id="ERROR_INTERNET_INCORRECT_HANDLE_STATE"></span><span id="error_internet_incorrect_handle_state"></span>**ERROR \_ ESTADO DE IDENTIFICADOR INCORRECTO DE \_ \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12019
@@ -764,12 +764,12 @@ El formato de la solicitud no es válido.
 
 
 
-No se puede realizar la operación solicitada porque el identificador proporcionado no tiene el estado correcto.
+No se puede realizar la operación solicitada porque el identificador proporcionado no está en el estado correcto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INCORRECT_HANDLE_TYPE"></span><span id="error_internet_incorrect_handle_type"></span>**ERROR \_ de \_ \_ tipo de identificador incorrecto de Internet \_**
+<span id="ERROR_INTERNET_INCORRECT_HANDLE_TYPE"></span><span id="error_internet_incorrect_handle_type"></span>**ERROR \_ INTERNET INCORRECT HANDLE TYPE (TIPO DE IDENTIFICADOR INCORRECTO DE INTERNET DE \_ \_ \_ ERROR)**
 </dt> <dd> <dl> <dt>
 
 12018
@@ -777,12 +777,12 @@ No se puede realizar la operación solicitada porque el identificador proporcion
 
 
 
-El tipo de identificador proporcionado no es correcto para esta operación.
+El tipo de identificador proporcionado es incorrecto para esta operación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INCORRECT_PASSWORD"></span><span id="error_internet_incorrect_password"></span>**ERROR de \_ Internet: \_ \_ contraseña incorrecta**
+<span id="ERROR_INTERNET_INCORRECT_PASSWORD"></span><span id="error_internet_incorrect_password"></span>**ERROR \_ DE CONTRASEÑA INCORRECTA DE \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12014
@@ -795,7 +795,7 @@ No se pudo completar la solicitud de conexión e inicio de sesión en un servido
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INCORRECT_USER_NAME"></span><span id="error_internet_incorrect_user_name"></span>**ERROR \_ de \_ \_ nombre de usuario incorrecto de Internet \_**
+<span id="ERROR_INTERNET_INCORRECT_USER_NAME"></span><span id="error_internet_incorrect_user_name"></span>**ERROR \_ NOMBRE DE USUARIO INCORRECTO DE \_ \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12013
@@ -803,12 +803,12 @@ No se pudo completar la solicitud de conexión e inicio de sesión en un servido
 
 
 
-No se pudo completar la solicitud de conexión e inicio de sesión en un servidor FTP porque el nombre de usuario proporcionado no es correcto.
+No se pudo completar la solicitud de conexión e inicio de sesión en un servidor FTP porque el nombre de usuario proporcionado es incorrecto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INSERT_CDROM"></span><span id="error_internet_insert_cdrom"></span>**ERROR de \_ Internet \_ Insert \_ CDROM**
+<span id="ERROR_INTERNET_INSERT_CDROM"></span><span id="error_internet_insert_cdrom"></span>**ERROR \_ INTERNET \_ INSERT \_ CDROM**
 </dt> <dd> <dl> <dt>
 
 12053
@@ -819,14 +819,14 @@ No se pudo completar la solicitud de conexión e inicio de sesión en un servido
 La solicitud requiere que se inserte un CD-ROM en la unidad de CD-ROM para localizar el recurso solicitado.
 
 > [!Note]  
-> Windows Vista y Windows Server 2008 y versiones anteriores solo.
+> Windows Vista y Windows Server 2008 y versiones anteriores.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INTERNAL_ERROR"></span><span id="error_internet_internal_error"></span>**error interno de ERROR de \_ Internet \_ \_**
+<span id="ERROR_INTERNET_INTERNAL_ERROR"></span><span id="error_internet_internal_error"></span>**ERROR \_ ERROR INTERNO DE \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12004
@@ -839,7 +839,7 @@ Se ha producido un error interno.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INVALID_CA"></span><span id="error_internet_invalid_ca"></span>**ERROR \_ de \_ CA no válida de Internet \_**
+<span id="ERROR_INTERNET_INVALID_CA"></span><span id="error_internet_invalid_ca"></span>**ERROR \_ INTERNET \_ INVALID \_ CA**
 </dt> <dd> <dl> <dt>
 
 12045
@@ -847,12 +847,12 @@ Se ha producido un error interno.
 
 
 
-La función no está familiarizada con la entidad de certificación que generó el certificado del servidor.
+La función no está familiar con la entidad de certificación que generó el certificado del servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INVALID_OPERATION"></span><span id="error_internet_invalid_operation"></span>**ERROR en una \_ \_ operación no válida de Internet \_**
+<span id="ERROR_INTERNET_INVALID_OPERATION"></span><span id="error_internet_invalid_operation"></span>**ERROR \_ OPERACIÓN DE INTERNET NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 12016
@@ -865,7 +865,7 @@ La operación solicitada no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INVALID_OPTION"></span><span id="error_internet_invalid_option"></span>**ERROR \_ de \_ opción no válida de Internet \_**
+<span id="ERROR_INTERNET_INVALID_OPTION"></span><span id="error_internet_invalid_option"></span>**ERROR \_ INTERNET \_ INVALID \_ OPTION**
 </dt> <dd> <dl> <dt>
 
 12009
@@ -878,7 +878,7 @@ Una solicitud a [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-winine
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INVALID_PROXY_REQUEST"></span><span id="error_internet_invalid_proxy_request"></span>**ERROR \_ de \_ \_ solicitud de proxy no válida de Internet \_**
+<span id="ERROR_INTERNET_INVALID_PROXY_REQUEST"></span><span id="error_internet_invalid_proxy_request"></span>**ERROR \_ SOLICITUD DE PROXY NO VÁLIDA DE \_ \_ INTERNET \_**
 </dt> <dd> <dl> <dt>
 
 12033
@@ -891,7 +891,7 @@ La solicitud al proxy no era válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_INVALID_URL"></span><span id="error_internet_invalid_url"></span>**ERROR \_ de \_ dirección URL no válida de Internet \_**
+<span id="ERROR_INTERNET_INVALID_URL"></span><span id="error_internet_invalid_url"></span>**ERROR \_ DIRECCIÓN URL NO VÁLIDA DE \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12005
@@ -904,7 +904,7 @@ La dirección URL no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_ITEM_NOT_FOUND"></span><span id="error_internet_item_not_found"></span>**ERROR \_ \_ \_ no \_ se encontró el elemento de Internet**
+<span id="ERROR_INTERNET_ITEM_NOT_FOUND"></span><span id="error_internet_item_not_found"></span>**ERROR \_ NO SE ENCONTRÓ EL ELEMENTO DE \_ \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12028
@@ -912,12 +912,12 @@ La dirección URL no es válida.
 
 
 
-No se encontró el elemento solicitado.
+No se pudo encontrar el elemento solicitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_LOGIN_FAILURE"></span><span id="error_internet_login_failure"></span>**ERROR \_ de \_ Inicio de sesión en Internet \_**
+<span id="ERROR_INTERNET_LOGIN_FAILURE"></span><span id="error_internet_login_failure"></span>**ERROR DE \_ INICIO DE SESIÓN DE INTERNET \_ \_**
 </dt> <dd> <dl> <dt>
 
 12015
@@ -930,7 +930,7 @@ Error en la solicitud de conexión e inicio de sesión en un servidor FTP.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_LOGIN_FAILURE_DISPLAY_ENTITY_BODY"></span><span id="error_internet_login_failure_display_entity_body"></span>**ERROR de \_ Inicio de sesión en Internet \_ \_ \_ Mostrar \_ cuerpo de entidad \_**
+<span id="ERROR_INTERNET_LOGIN_FAILURE_DISPLAY_ENTITY_BODY"></span><span id="error_internet_login_failure_display_entity_body"></span>**ERROR DE \_ INICIO DE SESIÓN DE INTERNET MOSTRAR CUERPO DE LA \_ \_ \_ \_ \_ ENTIDAD**
 </dt> <dd> <dl> <dt>
 
 12174
@@ -938,12 +938,12 @@ Error en la solicitud de conexión e inicio de sesión en un servidor FTP.
 
 
 
-El encabezado de Resumen de MS-Logoff se ha devuelto desde el sitio Web. Este encabezado indica específicamente el paquete de síntesis para purgar las credenciales del territorio asociado. Este error solo se devolverá si se ha establecido la opción error de [Inicio de sesión para mostrar el \_ \_ \_ \_ \_ \_ \_ cuerpo](option-flags.md) de la entidad en Internet. de lo contrario, se devolverá **un error de \_ Inicio de \_ sesión \_ de Internet** .
+El MS-Logoff de resumen se ha devuelto desde el sitio web. Este encabezado indica específicamente al paquete de resumen que purgue las credenciales para el dominio kerberos asociado. Este error solo se devolverá si se ha establecido la opción [INTERNET ERROR MASK LOGIN FAILURE DISPLAY ENTITY \_ \_ \_ \_ \_ \_ \_ BODY;](option-flags.md) de lo contrario, se devuelve **ERROR INTERNET LOGIN \_ \_ \_ FAILURE.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_MIXED_SECURITY"></span><span id="error_internet_mixed_security"></span>**ERROR \_ de \_ seguridad mixta de Internet \_**
+<span id="ERROR_INTERNET_MIXED_SECURITY"></span><span id="error_internet_mixed_security"></span>**ERROR \_ SEGURIDAD MIXTA DE INTERNET \_ \_**
 </dt> <dd> <dl> <dt>
 
 12041
@@ -951,12 +951,12 @@ El encabezado de Resumen de MS-Logoff se ha devuelto desde el sitio Web. Este en
 
 
 
-El contenido no es totalmente seguro. Es posible que parte del contenido que se está viendo proviene de servidores no seguros.
+El contenido no es completamente seguro. Parte del contenido que se está visualizando puede haber procede de servidores no seguros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NAME_NOT_RESOLVED"></span><span id="error_internet_name_not_resolved"></span>**ERROR \_ de \_ nombre de Internet \_ no \_ resuelto**
+<span id="ERROR_INTERNET_NAME_NOT_RESOLVED"></span><span id="error_internet_name_not_resolved"></span>**ERROR \_ NOMBRE DE INTERNET NO \_ \_ \_ RESUELTO**
 </dt> <dd> <dl> <dt>
 
 12007
@@ -969,7 +969,7 @@ No se pudo resolver el nombre del servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NEED_MSN_SSPI_PKG"></span><span id="error_internet_need_msn_sspi_pkg"></span>**ERROR de \_ Internet: \_ \_ \_ paquete SSPI de MSN \_**
+<span id="ERROR_INTERNET_NEED_MSN_SSPI_PKG"></span><span id="error_internet_need_msn_sspi_pkg"></span>**ERROR \_ INTERNET \_ NEED \_ MSN \_ SSPI \_ PKG**
 </dt> <dd> <dl> <dt>
 
 12173
@@ -982,7 +982,7 @@ No implementado actualmente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NEED_UI"></span><span id="error_internet_need_ui"></span>**ERROR de Internet con la \_ \_ interfaz de \_ usuario**
+<span id="ERROR_INTERNET_NEED_UI"></span><span id="error_internet_need_ui"></span>**ERROR \_ INTERNET \_ NEED \_ UI**
 </dt> <dd> <dl> <dt>
 
 12034
@@ -993,14 +993,14 @@ No implementado actualmente.
 Se ha solicitado una interfaz de usuario u otra operación de bloqueo.
 
 > [!Note]  
-> Windows Vista y Windows Server 2008 y versiones anteriores solo.
+> Windows Vista y Windows Server 2008 y versiones anteriores.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NO_CALLBACK"></span><span id="error_internet_no_callback"></span>**ERROR de \_ Internet \_ sin devolución de \_ llamada**
+<span id="ERROR_INTERNET_NO_CALLBACK"></span><span id="error_internet_no_callback"></span>**ERROR \_ INTERNET \_ NO \_ CALLBACK**
 </dt> <dd> <dl> <dt>
 
 12025
@@ -1013,7 +1013,7 @@ No se pudo realizar una solicitud asincrónica porque no se ha establecido una f
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NO_CONTEXT"></span><span id="error_internet_no_context"></span>**ERROR de \_ Internet \_ sin \_ contexto**
+<span id="ERROR_INTERNET_NO_CONTEXT"></span><span id="error_internet_no_context"></span>**ERROR \_ INTERNET \_ NO \_ CONTEXT**
 </dt> <dd> <dl> <dt>
 
 12024
@@ -1026,7 +1026,7 @@ No se pudo realizar una solicitud asincrónica porque se proporcionó un valor d
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NO_DIRECT_ACCESS"></span><span id="error_internet_no_direct_access"></span>**ERROR \_ de \_ Internet \_ sin \_ acceso directo**
+<span id="ERROR_INTERNET_NO_DIRECT_ACCESS"></span><span id="error_internet_no_direct_access"></span>**ERROR \_ INTERNET \_ NO \_ DIRECT \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 12023
@@ -1034,12 +1034,12 @@ No se pudo realizar una solicitud asincrónica porque se proporcionó un valor d
 
 
 
-No se puede realizar el acceso directo a la red en este momento.
+En este momento no se puede realizar el acceso directo a la red.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NOT_INITIALIZED"></span><span id="error_internet_not_initialized"></span>**ERROR \_ Internet \_ no \_ inicializado**
+<span id="ERROR_INTERNET_NOT_INITIALIZED"></span><span id="error_internet_not_initialized"></span>**ERROR \_ INTERNET \_ NO \_ INICIALIZADO**
 </dt> <dd> <dl> <dt>
 
 12172
@@ -1047,12 +1047,12 @@ No se puede realizar el acceso directo a la red en este momento.
 
 
 
-No se ha producido la inicialización de la API WinINet. Indica que aún no se ha llamado a una función de nivel superior, como [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena).
+No se ha producido la inicialización de la API de WinINet. Indica que aún no se ha llamado a una función de nivel superior, [**como InternetOpen.**](/windows/desktop/api/Wininet/nf-wininet-internetopena)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_NOT_PROXY_REQUEST"></span><span id="error_internet_not_proxy_request"></span>**ERROR \_ de \_ \_ solicitud de proxy \_ de Internet**
+<span id="ERROR_INTERNET_NOT_PROXY_REQUEST"></span><span id="error_internet_not_proxy_request"></span>**ERROR \_ INTERNET \_ NOT \_ PROXY \_ REQUEST**
 </dt> <dd> <dl> <dt>
 
 12020
@@ -1060,12 +1060,12 @@ No se ha producido la inicialización de la API WinINet. Indica que aún no se h
 
 
 
-No se puede realizar la solicitud a través de un proxy.
+La solicitud no se puede realizar a través de un proxy.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_OPERATION_CANCELLED"></span><span id="error_internet_operation_cancelled"></span>**ERROR \_ de \_ operación de Internet \_ cancelada**
+<span id="ERROR_INTERNET_OPERATION_CANCELLED"></span><span id="error_internet_operation_cancelled"></span>**ERROR \_ OPERACIÓN DE INTERNET \_ \_ CANCELADA**
 </dt> <dd> <dl> <dt>
 
 12017
@@ -1078,7 +1078,7 @@ La operación se canceló, normalmente porque el identificador en el que estaba 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_OPTION_NOT_SETTABLE"></span><span id="error_internet_option_not_settable"></span>**ERROR \_ de \_ opción de Internet \_ no \_ configurable**
+<span id="ERROR_INTERNET_OPTION_NOT_SETTABLE"></span><span id="error_internet_option_not_settable"></span>**ERROR \_ INTERNET \_ OPTION \_ NOT \_ SETTABLE**
 </dt> <dd> <dl> <dt>
 
 12011
@@ -1091,7 +1091,7 @@ No se puede establecer la opción solicitada, solo se consulta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_OUT_OF_HANDLES"></span><span id="error_internet_out_of_handles"></span>**ERROR \_ \_ de Internet \_ sin \_ identificadores**
+<span id="ERROR_INTERNET_OUT_OF_HANDLES"></span><span id="error_internet_out_of_handles"></span>**ERROR \_ INTERNET FUERA DE \_ \_ \_ IDENTIFICADORES**
 </dt> <dd> <dl> <dt>
 
 12001
@@ -1099,12 +1099,12 @@ No se puede establecer la opción solicitada, solo se consulta.
 
 
 
-No se pueden generar más identificadores en este momento.
+En este momento no se podrían generar más identificadores.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_POST_IS_NON_SECURE"></span><span id="error_internet_post_is_non_secure"></span>**ERROR: la \_ publicación en Internet \_ \_ \_ no es \_ segura**
+<span id="ERROR_INTERNET_POST_IS_NON_SECURE"></span><span id="error_internet_post_is_non_secure"></span>**ERROR \_ INTERNET \_ POST \_ IS \_ NON \_ SECURE**
 </dt> <dd> <dl> <dt>
 
 12043
@@ -1117,7 +1117,7 @@ La aplicación está publicando datos en un servidor que no es seguro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_PROTOCOL_NOT_FOUND"></span><span id="error_internet_protocol_not_found"></span>**ERROR \_ de \_ Protocolo de Internet \_ no \_ encontrado**
+<span id="ERROR_INTERNET_PROTOCOL_NOT_FOUND"></span><span id="error_internet_protocol_not_found"></span>**ERROR \_ PROTOCOLO DE INTERNET NO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 12008
@@ -1130,7 +1130,7 @@ No se pudo encontrar el protocolo solicitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_PROXY_SERVER_UNREACHABLE"></span><span id="error_internet_proxy_server_unreachable"></span>**ERROR no se \_ \_ \_ \_ puede tener acceso al servidor proxy de Internet**
+<span id="ERROR_INTERNET_PROXY_SERVER_UNREACHABLE"></span><span id="error_internet_proxy_server_unreachable"></span>**ERROR \_ AL QUE NO SE PUEDE ACCEDER AL SERVIDOR PROXY DE \_ \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12165
@@ -1138,12 +1138,12 @@ No se pudo encontrar el protocolo solicitado.
 
 
 
-No se puede establecer contacto con el servidor proxy designado.
+No se puede acceder al servidor proxy designado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_REDIRECT_SCHEME_CHANGE"></span><span id="error_internet_redirect_scheme_change"></span>**ERROR \_ de \_ cambio de esquema de redirección de Internet \_ \_**
+<span id="ERROR_INTERNET_REDIRECT_SCHEME_CHANGE"></span><span id="error_internet_redirect_scheme_change"></span>**ERROR \_ INTERNET \_ REDIRECT \_ SCHEME \_ CHANGE**
 </dt> <dd> <dl> <dt>
 
 12048
@@ -1151,12 +1151,12 @@ No se puede establecer contacto con el servidor proxy designado.
 
 
 
-La función no pudo controlar el redireccionamiento porque el esquema ha cambiado (por ejemplo, HTTP a FTP).
+La función no pudo controlar el redireccionamiento porque el esquema cambió (por ejemplo, HTTP a FTP).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_REGISTRY_VALUE_NOT_FOUND"></span><span id="error_internet_registry_value_not_found"></span>**ERROR \_ \_ \_ \_ no \_ se encontró el valor del registro de Internet**
+<span id="ERROR_INTERNET_REGISTRY_VALUE_NOT_FOUND"></span><span id="error_internet_registry_value_not_found"></span>**ERROR \_ NO SE ENCONTRÓ EL VALOR DEL REGISTRO DE \_ \_ \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12021
@@ -1164,12 +1164,12 @@ La función no pudo controlar el redireccionamiento porque el esquema ha cambiad
 
 
 
-No se pudo encontrar un valor del registro requerido.
+No se pudo encontrar un valor del Registro necesario.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_REQUEST_PENDING"></span><span id="error_internet_request_pending"></span>**ERROR \_ de \_ solicitud de Internet \_ pendiente**
+<span id="ERROR_INTERNET_REQUEST_PENDING"></span><span id="error_internet_request_pending"></span>**SOLICITUD DE \_ INTERNET DE ERROR \_ \_ PENDIENTE**
 </dt> <dd> <dl> <dt>
 
 12026
@@ -1182,7 +1182,7 @@ No se pudo completar la operación necesaria porque una o varias solicitudes est
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_RETRY_DIALOG"></span><span id="error_internet_retry_dialog"></span>**cuadro de diálogo ERROR de \_ \_ reintento de Internet \_**
+<span id="ERROR_INTERNET_RETRY_DIALOG"></span><span id="error_internet_retry_dialog"></span>**CUADRO DE \_ DIÁLOGO DE REINTENTO DE INTERNET DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 12050
@@ -1190,12 +1190,12 @@ No se pudo completar la operación necesaria porque una o varias solicitudes est
 
 
 
-Se debe reintentar el cuadro de diálogo.
+El cuadro de diálogo debe reinterse.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SEC_CERT_CN_INVALID"></span><span id="error_internet_sec_cert_cn_invalid"></span>**ERROR \_ de \_ \_ certificado CN de Internet \_ \_ no válido**
+<span id="ERROR_INTERNET_SEC_CERT_CN_INVALID"></span><span id="error_internet_sec_cert_cn_invalid"></span>**ERROR \_ INTERNET \_ SEC \_ CERT \_ CN \_ INVALID**
 </dt> <dd> <dl> <dt>
 
 12038
@@ -1203,12 +1203,12 @@ Se debe reintentar el cuadro de diálogo.
 
 
 
-El nombre común del certificado SSL (campo Nombre de host) es incorrecto por ejemplo, si escribió www.server.com y el nombre común en el certificado indica www.different.com.
+El nombre común del certificado SSL (campo de nombre de host) es incorrecto, por ejemplo, si escribió www.server.com y el nombre común del certificado indica www.different.com.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SEC_CERT_DATE_INVALID"></span><span id="error_internet_sec_cert_date_invalid"></span>**ERROR la \_ fecha de certificado de Internet \_ s \_ \_ \_ no es válida**
+<span id="ERROR_INTERNET_SEC_CERT_DATE_INVALID"></span><span id="error_internet_sec_cert_date_invalid"></span>**ERROR \_ INTERNET \_ SEC \_ CERT \_ DATE \_ INVALID**
 </dt> <dd> <dl> <dt>
 
 12037
@@ -1216,12 +1216,12 @@ El nombre común del certificado SSL (campo Nombre de host) es incorrecto por ej
 
 
 
-La fecha del certificado SSL que se recibió del servidor es incorrecta. El certificado ha expirado.
+La fecha de certificado SSL que se recibió del servidor es mala. El certificado ha expirado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SEC_CERT_ERRORS"></span><span id="error_internet_sec_cert_errors"></span>**errores de certificado de ERROR de \_ Internet \_ s \_ \_**
+<span id="ERROR_INTERNET_SEC_CERT_ERRORS"></span><span id="error_internet_sec_cert_errors"></span>**ERROR \_ ERRORES DE CERTIFICADO DE INTERNET \_ SEC \_ \_**
 </dt> <dd> <dl> <dt>
 
 12055
@@ -1234,7 +1234,7 @@ El certificado SSL contiene errores.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SEC_CERT_NO_REV"></span><span id="error_internet_sec_cert_no_rev"></span>**ERROR de Internet en el \_ \_ \_ certificado. \_ no \_ Rev**
+<span id="ERROR_INTERNET_SEC_CERT_NO_REV"></span><span id="error_internet_sec_cert_no_rev"></span>**ERROR \_ INTERNET \_ SEC \_ CERT \_ NO \_ REV**
 </dt> <dd> <dl> <dt>
 
 12056
@@ -1247,7 +1247,7 @@ No se revocó el certificado SSL.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SEC_CERT_REV_FAILED"></span><span id="error_internet_sec_cert_rev_failed"></span>**ERROR de ERROR de \_ revisión de certificado por Internet \_ s \_ \_ \_**
+<span id="ERROR_INTERNET_SEC_CERT_REV_FAILED"></span><span id="error_internet_sec_cert_rev_failed"></span>**ERROR \_ INTERNET \_ SEC \_ CERT \_ REV \_ FAILED**
 </dt> <dd> <dl> <dt>
 
 12057
@@ -1255,12 +1255,12 @@ No se revocó el certificado SSL.
 
 
 
-No se pudo revocar el certificado SSL.
+Error de revocación del certificado SSL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SEC_CERT_REVOKED"></span><span id="error_internet_sec_cert_revoked"></span>**ERROR \_ Internet \_ s \_ certificado \_ revocado**
+<span id="ERROR_INTERNET_SEC_CERT_REVOKED"></span><span id="error_internet_sec_cert_revoked"></span>**ERROR \_ INTERNET \_ SEC \_ CERT \_ REVOKED**
 </dt> <dd> <dl> <dt>
 
 12170
@@ -1273,7 +1273,7 @@ Se revocó el certificado SSL.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SEC_INVALID_CERT"></span><span id="error_internet_sec_invalid_cert"></span>**ERROR en \_ Internet: \_ \_ certificado no válido \_**
+<span id="ERROR_INTERNET_SEC_INVALID_CERT"></span><span id="error_internet_sec_invalid_cert"></span>**ERROR \_ INTERNET \_ SEC \_ INVALID \_ CERT**
 </dt> <dd> <dl> <dt>
 
 12169
@@ -1286,7 +1286,7 @@ El certificado SSL no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SECURITY_CHANNEL_ERROR"></span><span id="error_internet_security_channel_error"></span>**error \_ de \_ canal de seguridad de Internet error \_ \_**
+<span id="ERROR_INTERNET_SECURITY_CHANNEL_ERROR"></span><span id="error_internet_security_channel_error"></span>**ERROR DE \_ CANAL DE SEGURIDAD DE \_ \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12157
@@ -1299,7 +1299,7 @@ La aplicación experimentó un error interno al cargar las bibliotecas SSL.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SERVER_UNREACHABLE"></span><span id="error_internet_server_unreachable"></span>**ERROR \_ de \_ servidor de Internet \_ inaccesible**
+<span id="ERROR_INTERNET_SERVER_UNREACHABLE"></span><span id="error_internet_server_unreachable"></span>**ERROR \_ INTERNET \_ SERVER \_ UNREACHABLE**
 </dt> <dd> <dl> <dt>
 
 12164
@@ -1307,12 +1307,12 @@ La aplicación experimentó un error interno al cargar las bibliotecas SSL.
 
 
 
-No se puede tener acceso al sitio web o servidor indicado.
+El sitio web o servidor indicado no es accesible.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_SHUTDOWN"></span><span id="error_internet_shutdown"></span>**ERROR \_ de \_ apagado por Internet**
+<span id="ERROR_INTERNET_SHUTDOWN"></span><span id="error_internet_shutdown"></span>**ERROR \_ DE APAGADO DE \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 12012
@@ -1320,12 +1320,12 @@ No se puede tener acceso al sitio web o servidor indicado.
 
 
 
-La compatibilidad con WinINet se está cerrando o descargando.
+La compatibilidad con WinINet se está apagando o descargando.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_TCPIP_NOT_INSTALLED"></span><span id="error_internet_tcpip_not_installed"></span>**ERROR de \_ Internet \_ TCPIP \_ no \_ instalado**
+<span id="ERROR_INTERNET_TCPIP_NOT_INSTALLED"></span><span id="error_internet_tcpip_not_installed"></span>**ERROR \_ \_ TCPIP DE INTERNET \_ \_ NO INSTALADO**
 </dt> <dd> <dl> <dt>
 
 12159
@@ -1333,12 +1333,12 @@ La compatibilidad con WinINet se está cerrando o descargando.
 
 
 
-La pila de protocolos necesaria no está cargada y la aplicación no puede iniciar WinSock.
+No se carga la pila de protocolos necesaria y la aplicación no puede iniciar WinSock.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_TIMEOUT"></span><span id="error_internet_timeout"></span>**ERROR \_ de \_ tiempo de espera de Internet**
+<span id="ERROR_INTERNET_TIMEOUT"></span><span id="error_internet_timeout"></span>**ERROR \_ INTERNET \_ TIMEOUT**
 </dt> <dd> <dl> <dt>
 
 12002
@@ -1351,7 +1351,7 @@ La solicitud ha agotado el tiempo de espera.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_UNABLE_TO_CACHE_FILE"></span><span id="error_internet_unable_to_cache_file"></span>**ERROR: \_ Internet \_ no puede \_ almacenar en caché el \_ \_ archivo**
+<span id="ERROR_INTERNET_UNABLE_TO_CACHE_FILE"></span><span id="error_internet_unable_to_cache_file"></span>**ERROR \_ INTERNET \_ UNABLE \_ TO \_ CACHE \_ FILE**
 </dt> <dd> <dl> <dt>
 
 12158
@@ -1364,7 +1364,7 @@ La función no pudo almacenar en caché el archivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_UNABLE_TO_DOWNLOAD_SCRIPT"></span><span id="error_internet_unable_to_download_script"></span>**ERROR \_ Internet \_ no se puede \_ \_ descargar el \_ script**
+<span id="ERROR_INTERNET_UNABLE_TO_DOWNLOAD_SCRIPT"></span><span id="error_internet_unable_to_download_script"></span>**ERROR \_ INTERNET NO PUEDE DESCARGAR EL \_ \_ \_ \_ SCRIPT**
 </dt> <dd> <dl> <dt>
 
 12167
@@ -1372,12 +1372,12 @@ La función no pudo almacenar en caché el archivo.
 
 
 
-No se pudo descargar el script de configuración automática del proxy. La marca de INTERNET \_ \_ debe \_ almacenar la marca de solicitud en caché \_ .
+No se pudo descargar el script de configuración automática del proxy. Se estableció la marca \_ INTERNET FLAG MUST CACHE \_ \_ \_ REQUEST.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERNET_UNRECOGNIZED_SCHEME"></span><span id="error_internet_unrecognized_scheme"></span>**ERROR \_ : \_ esquema desconocido de Internet \_**
+<span id="ERROR_INTERNET_UNRECOGNIZED_SCHEME"></span><span id="error_internet_unrecognized_scheme"></span>**ERROR \_ INTERNET \_ UNRECOGNIZED \_ SCHEME**
 </dt> <dd> <dl> <dt>
 
 12006
@@ -1385,55 +1385,55 @@ No se pudo descargar el script de configuración automática del proxy. La marca
 
 
 
-No se reconoció el esquema de la dirección URL o no se admite.
+No se pudo reconocer el esquema de dirección URL o no se admite.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_HANDLE"></span><span id="error_invalid_handle"></span>**ERROR \_ de \_ identificador no válido**
+<span id="ERROR_INVALID_HANDLE"></span><span id="error_invalid_handle"></span>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 
 
 El identificador que se pasó a la API se ha invalidado o cerrado.
 
-**Encabezado:** Declarado en Winerror. h
+**Encabezado:** Declarado en Winerror.h
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MORE_DATA"></span><span id="error_more_data"></span>**ERROR \_ más \_ datos**
+<span id="ERROR_MORE_DATA"></span><span id="error_more_data"></span>**ERROR \_ MÁS \_ DATOS**
 </dt> <dd> <dl> <dt>
 
 
 
 More data is available (Hyper-V no pudo generar el conjunto de instantáneas de VSS para la máquina virtual: hay más datos disponibles).
 
-**Encabezado:** Declarado en Winerror. h
+**Encabezado:** Declarado en Winerror.h
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_MORE_FILES"></span><span id="error_no_more_files"></span>**ERROR: \_ no hay \_ más \_ archivos**
+<span id="ERROR_NO_MORE_FILES"></span><span id="error_no_more_files"></span>**ERROR \_ NO \_ MÁS \_ ARCHIVOS**
 </dt> <dd> <dl> <dt>
 
 
 
-No se encontraron más archivos.
+No se han encontrado más archivos.
 
-**Encabezado:** Declarado en Winerror. h
+**Encabezado:** Declarado en Winerror.h
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_MORE_ITEMS"></span><span id="error_no_more_items"></span>**\_no hay \_ más \_ elementos de error**
+<span id="ERROR_NO_MORE_ITEMS"></span><span id="error_no_more_items"></span>**ERROR \_ NO \_ MÁS \_ ELEMENTOS**
 </dt> <dd> <dl> <dt>
 
 
 
 No se han encontrado más elementos.
 
-**Encabezado:** Declarado en Winerror. h
+**Encabezado:** Declarado en Winerror.h
 
 
 </dt> </dl> </dd> </dl>
@@ -1441,7 +1441,7 @@ No se han encontrado más elementos.
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows servicios HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 
@@ -1453,7 +1453,7 @@ No se han encontrado más elementos.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wininet. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
 
 
 

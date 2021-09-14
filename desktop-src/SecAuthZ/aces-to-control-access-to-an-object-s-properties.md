@@ -4,12 +4,12 @@ ms.assetid: 79dd4a45-c42c-4775-93ce-6e3206894d63
 title: ACE para controlar el acceso a las propiedades de objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fddd5d78ff5b02bbbe4b9b7a7ce0b77d7be263f9fd3926f44411469af2bb3c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1068ceb994e72deedcb795586ddf712fe9c1893
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785261"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073733"
 ---
 # <a name="aces-to-control-access-to-an-objects-properties"></a>ACE para controlar el acceso a las propiedades de un objeto
 
@@ -36,17 +36,17 @@ Para ello, establezca las ACE en la DACL del objeto como se muestra en la tabla 
 
 | Fideicomisario  | GUID de objeto    | Tipo ace                  | Derechos de acceso                                             |
 |----------|----------------|---------------------------|-----------------------------------------------------------|
-| Grupo A  | Ninguno           | ACE con acceso permitido        | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
-| Todos. | Conjunto de propiedades 1 | ACE de objeto con acceso permitido | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
-| Todos. | Propiedad C     | ACE de objeto con acceso permitido | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| Grupo A  | None           | ACE con acceso permitido        | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| Todos | Conjunto de propiedades 1 | ACE de objeto con acceso permitido | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| Todos | Propiedad C     | ACE de objeto con acceso permitido | ADS \_ RIGHT \_ DS \_ READ \_ PROP \| ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
 
 
 
  
 
-La ACE del grupo A no tiene un GUID de objeto, lo que significa que permite el acceso a todas las propiedades del objeto. La ACE específica del objeto para el conjunto de propiedades 1 permite que todos los usuarios accedan a las propiedades A y B. La otra ACE específica del objeto permite que todos los usuarios accedan a la propiedad C. Tenga en cuenta que, aunque esta DACL no tiene ninguna ACE con acceso denegado, deniega implícitamente el acceso de la propiedad D a todos los usuarios excepto el grupo A.
+La ACE del grupo A no tiene un GUID de objeto, lo que significa que permite el acceso a todas las propiedades del objeto. La ACE específica del objeto para el conjunto de propiedades 1 permite a todos acceder a las propiedades A y B. La otra ACE específica del objeto permite que todos los usuarios accedan a la propiedad C. Tenga en cuenta que, aunque esta DACL no tiene ninguna ACE con acceso denegado, deniega implícitamente el acceso de la propiedad D a todos los usuarios excepto el grupo A.
 
-Cuando un usuario intenta acceder a la propiedad de un objeto, el sistema comprueba las ACE, en orden, hasta que se concede, deniega o no hay más ACE, en cuyo caso el acceso se deniega implícitamente.
+Cuando un usuario intenta acceder a la propiedad de un objeto, el sistema comprueba las ACE, en orden, hasta que el acceso solicitado se concede explícitamente, se deniega o no hay más ACE, en cuyo caso el acceso se deniega implícitamente.
 
 El sistema evalúa:
 

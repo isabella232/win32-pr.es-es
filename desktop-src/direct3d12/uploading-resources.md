@@ -6,11 +6,11 @@ ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b03d4755124bbadcdd255a6e99739b710845ab14
-ms.sourcegitcommit: a30d0436a84986234df673c6def6694d5a8579f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113563785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072852"
 ---
 # <a name="uploading-different-types-of-resources"></a>Carga de diferentes tipos de recursos
 
@@ -265,7 +265,7 @@ UINT Align(UINT uLocation, UINT uAlign)
 }
 ```
 
-Tenga en cuenta el uso de las estructuras [**auxiliares CD3DX12_HEAP_PROPERTIES**](cd3dx12-heap-properties.md) y [**CD3DX12_RESOURCE_DESC**](cd3dx12-resource-desc.md).
+Tenga en cuenta el uso de las estructuras [**auxiliares CD3DX12_HEAP_PROPERTIES**](cd3dx12-heap-properties.md) [**y CD3DX12_RESOURCE_DESC**](cd3dx12-resource-desc.md).
 
 ## <a name="constants"></a>Constantes
 
@@ -291,7 +291,7 @@ Los recursos reservados son equivalentes a los recursos en mosaico de Direct3D 1
 
 ### <a name="placed-resources"></a>Recursos colocados
 
-Como novedad de Direct3D 12, puede crear montones independientes de los recursos. Después, puede buscar varios recursos dentro de un único montón. Puede hacerlo sin crear recursos en mosaico o reservados, lo que permite las funcionalidades de todos los tipos de recursos que la aplicación puede crear directamente. Es posible que se superpongan varios recursos y debe usar [**id3D12GraphicsCommandList::ResourceBarcommand**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) para volver a usar la memoria física correctamente. Consulte [**ID3D12Device::CreatePlacedResource**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createplacedresource).
+Como novedad de Direct3D 12, puede crear montones independientes de los recursos. Después, puede buscar varios recursos dentro de un único montón. Puede hacerlo sin crear recursos en mosaico o reservados, lo que permite las funcionalidades de todos los tipos de recursos que la aplicación puede crear directamente. Es posible que varios recursos se superpongan y debe usar [**id3D12GraphicsCommandList::ResourceBarcommand**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) para volver a usar la memoria física correctamente. Consulte [**ID3D12Device::CreatePlacedResource**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createplacedresource).
 
 ## <a name="resource-size-reflection"></a>Reflexión del tamaño de los recursos
 

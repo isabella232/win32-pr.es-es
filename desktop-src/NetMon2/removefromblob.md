@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 09c9c7f5ada320f33d38cd9e935add7e47721c554fbeed11c35a1b73248d963c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a23e4e7e6e6d5c85b1284f8aaba49c1f8eae728d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074088"
 ---
 # <a name="removefromblob-function"></a>Función RemoveFromBlob
 
@@ -59,14 +59,14 @@ Puntero al nombre **del** propietario.
 *pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre **de** categoría. Un valor de parámetro **NULL** indica que el autor de la llamada está intentando eliminar la información **de propietario** dada y todas sus entradas secundarias. Tenga en cuenta que si el *valor del parámetro pCategoryName* **es NULL,** el *parámetro pTagName* también debe ser **NULL.**
+Puntero al nombre **de** categoría. Un valor de parámetro **NULL** indica que el autor de la llamada está intentando eliminar la información de **propietario** dada y todas sus entradas secundarias. Tenga en cuenta que si el *valor del parámetro pCategoryName* es **NULL,** el *parámetro pTagName* también debe ser **NULL.**
 
 </dd> <dt>
 
 *pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre **de la** etiqueta. Un valor  _pTagName_ NULL indica que el autor de la llamada está intentando eliminar la categoría dada y todas sus entradas secundarias. Si el valor del parámetro no es **NULL,** el autor de la llamada pide que solo se eliminen las entradas **de** etiqueta especificadas.
+Puntero al nombre **de etiqueta.** Un **valor**_pTagName_ NULL indica que el autor de la llamada está intentando eliminar la categoría dada **y** todas sus entradas secundarias. Si el valor del parámetro no es **NULL,** el autor de la llamada solicita que solo se eliminen las entradas **de** etiqueta especificadas.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

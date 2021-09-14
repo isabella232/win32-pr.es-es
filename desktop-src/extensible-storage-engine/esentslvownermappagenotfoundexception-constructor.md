@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85b29d0cecee551549f5de330d5379856dbf57e44458c76f685393d606824659
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f24eab90f560b0e49d953588bc9f224ab289392
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072557"
 ---
 # <a name="esentslvownermappagenotfoundexception-constructor"></a>Constructor EsentSLVOwnerMapPageNotFoundException
 

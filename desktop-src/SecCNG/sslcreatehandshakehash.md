@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: ea481a5b577c41eafddf9db8d80b4a3a1fe42d801bf96ed8cbc57127a4a8d91e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8affda999278ce2d4a740293a7532643a6c564ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073636"
 ---
 # <a name="sslcreatehandshakehash-function"></a>Función SslCreateHandshakeHash
 
@@ -46,7 +46,7 @@ SECURITY_STATUS WINAPI SslCreateHandshakeHash(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia [*del proveedor de protocolos Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+Identificador de la instancia [*del proveedor de protocolos Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) de protocolos (SSL).
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ La **función SslCreateHandshakeHash** es una de las tres funciones que se usan 
 
 1.  Se llama a la función **SslCreateHandshakeHash** para obtener un identificador hash.
 2.  La [**función SslHashHandshake**](sslhashhandshake.md) se llama varias veces con el identificador hash para agregar datos al hash.
-3.  Se [**llama a la función SslComputeFinishedHash**](sslcomputefinishedhash.md) con el identificador hash para obtener la síntesis de los datos con hash.
+3.  Se llama a la función [**SslComputeFinishedHash**](sslcomputefinishedhash.md) con el identificador hash para obtener la síntesis de los datos con hash.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -119,7 +119,7 @@ La **función SslCreateHandshakeHash** es una de las tres funciones que se usan 
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

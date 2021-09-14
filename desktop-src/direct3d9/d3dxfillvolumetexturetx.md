@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXFillVolumeTextureTX: usa una función compilada de lenguaje de sombreador de alto nivel (HLSL) para rellenar cada textura de cada nivel de mapa mipmap de una textura.'
+description: 'Función D3DXFillVolumeTextureTX: usa una función compilada de lenguaje de sombreador de alto nivel (HLSL) para rellenar cada texel de cada nivel de mapa mipmap de una textura.'
 ms.assetid: f082e1d2-c433-482c-9288-58e5c558cdc5
 title: Función D3DXFillVolumeTextureTX (D3dx9tex.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ead11a9febce994d729eab83a3906c4d6dcd4db6b1193ba49ea1a0e172dc5e6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30aac53aa6451885bbd4ae2cac63050b01157974
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072793"
 ---
 # <a name="d3dxfillvolumetexturetx-function"></a>Función D3DXFillVolumeTextureTX
 
-Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada textura de cada nivel de mapa mip de una textura.
+Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada texel de cada nivel de mapa mip de una textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,9 +65,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ NOTAVAILABLE, D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El destino de textura debe ser una función HLSL que tome la semántica siguiente:
+El destino de textura debe ser una función HLSL que tome contiene la semántica siguiente:
 
 -   Un parámetro de entrada debe usar una semántica POSITION.
 -   Un parámetro de entrada debe usar una semántica PSIZE.
@@ -86,7 +86,7 @@ Los parámetros de entrada pueden estar en cualquier orden. Para obtener un ejem
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

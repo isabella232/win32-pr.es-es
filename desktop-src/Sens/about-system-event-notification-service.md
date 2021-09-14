@@ -4,16 +4,16 @@ ms.assetid: f313588f-6257-4a0d-b95a-aabc0bc64b53
 title: Acerca del servicio de notificación de eventos del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b4492676353b43c3ccecca170c2870abd4efafc98e27e9ccebdd5ecc41b697d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2cb132273420c1504b51b004f770abbe0e04c912
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118890752"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073581"
 ---
 # <a name="about-system-event-notification-service"></a>Acerca del servicio de notificación de eventos del sistema
 
-Las aplicaciones diseñadas para su uso por los usuarios móviles requieren un conjunto único de notificaciones y funciones de conectividad, y en el pasado se requerían aplicaciones individuales para implementar estas características internamente. El Servicio de notificación de eventos del sistema (SENS) ahora proporciona estas funcionalidades en el sistema operativo, lo que crea una interfaz uniforme de conectividad y notificación para las aplicaciones. SENS, Synchronization Manager y El almacenamiento en caché del lado cliente se combinan para proporcionar la infraestructura para admitir totalmente la informática móvil.
+Las aplicaciones diseñadas para su uso por los usuarios móviles requieren un conjunto único de notificaciones y funciones de conectividad, y en el pasado se requerían aplicaciones individuales para implementar estas características internamente. El Servicio de notificación de eventos del sistema (SENS) ahora proporciona estas funcionalidades en el sistema operativo, lo que crea una interfaz uniforme de notificación y conectividad para las aplicaciones. SENS, Synchronization Manager y El almacenamiento en caché del lado cliente se combinan para proporcionar la infraestructura para admitir completamente la informática móvil.
 
 Los temas de esta sección ofrecen información general sobre SENS:
 

@@ -5,12 +5,12 @@ ms.assetid: C2323482-D06D-43B7-9BDE-BFB9A6A6B70D
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a789ba8fa913b6852d8f7528183a71da31095d69539a79b2351e5b9ab7d3462
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2d65dd8db64dd829a7a318717e44a64ea189c7a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120119525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072936"
 ---
 # <a name="example-code-in-the-d3d12-reference"></a>Código de ejemplo en la referencia D3D12
 

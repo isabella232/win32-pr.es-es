@@ -4,12 +4,12 @@ ms.assetid: 6203922f-9594-4e5c-9baa-8b27ac30978f
 title: Conexiones, atenuaciones y deslizamientos (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc6d6df834ad19fa4b00b6e4706d0884227bc4af33c6a25ec09cba14757e1248
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2ad837ea846ca43d61102ce426d415270d2f27f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119607474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072762"
 ---
 # <a name="dissolves-fades-and-swipes-direct3d-9"></a>Conexiones, atenuaciones y deslizamientos (Direct3D 9)
 

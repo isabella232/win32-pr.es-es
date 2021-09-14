@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 035dbb8f2098a92826678eebb9ec08999c00989125edbd6f9c4d1852d0345e2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a11f0ee588ed05f0a7ecf14e07bf20fc62039c4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073225"
 ---
 # <a name="recordingtime-attribute"></a>Atributo RecordingTime
 
@@ -29,7 +29,7 @@ El **atributo RecordingTime** es la fecha y hora de la grabación original, para
 -   [Elementos de fotos](photo-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

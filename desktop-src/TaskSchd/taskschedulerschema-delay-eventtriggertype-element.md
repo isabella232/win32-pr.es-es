@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f9c9523b450d5f1ea86bdf09afba26604ebfe8055661fc18c439b4e30c97169d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de1117ff4f7e0f823b1b213721521e1b526125bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118357113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073412"
 ---
 # <a name="delay-eventtriggertype-element"></a>Elemento Delay (eventTriggerType)
 
@@ -42,7 +42,7 @@ El tipo complejo [**eventTriggerType**](taskschedulerschema-eventtriggertype-com
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripts, la propiedad [**EventTrigger.Delay**](eventtrigger-delay.md) especifica el retraso del desencadenador de eventos.
 
@@ -52,14 +52,14 @@ Para el desarrollo de C++, la propiedad [**IEventTrigger::D elay**](/windows/des
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

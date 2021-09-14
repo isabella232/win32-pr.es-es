@@ -4,7 +4,7 @@ description: La estructura \_ RAS PORT \_ 0 contiene información que describe u
 ms.assetid: 750fc705-0770-427b-b7d6-7876b8b9118a
 keywords:
 - RAS_PORT_0 ras de estructura
-- PRAS_PORT_0 de estructura ras
+- PRAS_PORT_0 puntero ras de estructura
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67891ccd65aaa56fc41dd077ae46bd4bf61f816cdc02afeb65964886cbaf9562
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80d66725415d86aea44138f23fb3748e3187820f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119673135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073881"
 ---
 # <a name="ras_port_0-structure"></a>Estructura \_ RAS PORT \_ 0
 
@@ -49,7 +49,7 @@ typedef struct _RAS_PORT_0 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -95,7 +95,7 @@ Especifica un conjunto de marcas de bits que especifican la naturaleza de la con
 
 
 
-| Valor                                                                                                                                                                        | Significado                                                                                                                                                                                                                                                                                                                                                                                    |
+| Value                                                                                                                                                                        | Significado                                                                                                                                                                                                                                                                                                                                                                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="GATEWAY_ACTIVE"></span><span id="gateway_active"></span><dl> <dt>**PUERTA DE \_ ENLACE ACTIVA**</dt> </dl>             | Si se establece esta marca, la puerta de enlace NetBIOS está activa en el servidor.<br/>                                                                                                                                                                                                                                                                                                               |
 | <span id="MESSENGER_PRESENT"></span><span id="messenger_present"></span><dl> <dt>**MESSENGER \_ PRESENT**</dt> </dl>    | Si se establece esta marca, el servicio messenger se ejecuta en el cliente remoto.<br/>                                                                                                                                                                                                                                                                                                     |
@@ -129,7 +129,7 @@ Cadena Unicode terminada en NULL que especifica el nombre del equipo cliente rem
 **dwStartSessionTime**
 </dt> <dd>
 
-Especifica el tiempo, en segundos desde el 1 de enero de 1970, que el cliente se conectó al servidor RAS en este puerto. Use las funciones de hora estándar para dar formato a este valor para su presentación.
+Especifica el tiempo, en segundos a partir del 1 de enero de 1970, que el cliente se conectó al servidor RAS en este puerto. Use las funciones de hora estándar para dar formato a este valor para su presentación.
 
 </dd> <dt>
 
@@ -151,17 +151,17 @@ Especifica una marca que es distinta de cero si el servidor RAS asociado a este 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

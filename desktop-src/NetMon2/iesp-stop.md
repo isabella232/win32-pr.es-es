@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d22333bcaad688fa9ebb805857db3673f48e70591e1d8953274598acef2b368b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac262d8da5ab218db7300ea38da59d5c738421c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074121"
 ---
 # <a name="iespstop-method"></a>IESP::Stop (método)
 
@@ -65,9 +65,9 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se **llama al método IESP::Stop,** Monitor de red detiene la captura de datos y cierra el [*archivo de captura.*](c.md) (El nombre del archivo de captura se devolvió cuando se llamó a [IESP::Start).](iesp-start.md) Ahora puede ver el contenido del archivo de captura.
+Cuando se **llama al método IESP::Stop,** Monitor de red la captura de datos y cierra el [*archivo de captura.*](c.md) (El nombre del archivo de captura se devolvió cuando se llamó a [IESP::Start).](iesp-start.md) Ahora puede ver el contenido del archivo de captura.
 
 Cuando detenga y reinicie la captura, asegúrese de llamar al método [IESP::Configure](iesp-configure.md) cada vez que llame a [IESP::Start](iesp-start.md) para reiniciar la captura.
 
@@ -84,7 +84,7 @@ Cuando detenga y reinicie la captura, asegúrese de llamar al método [IESP::Con
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -97,7 +97,7 @@ Cuando detenga y reinicie la captura, asegúrese de llamar al método [IESP::Con
 [IESP::Start](iesp-start.md)
 </dt> <dt>
 
-[Estadísticas](statistics.md)
+[ESTADÍSTICAS](statistics.md)
 </dt> </dl>
 
  

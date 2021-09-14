@@ -12,18 +12,18 @@ api_name:
 - ReportHit
 api_type:
 - NA
-ms.openlocfilehash: 8714cabc02f70ca12bcc78493de3a61482ba5aed5490087d309f6ec091cecf75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58d109f184974f76c533aaeee055f1ebf21d10eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118528113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072891"
 ---
 # <a name="reporthit-function"></a>Función ReportHit
 
 Lo llama un [sombreador de intersección](intersection-shader.md) para notificar una intersección de rayos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 Esta definición de función intrínseca es equivalente a la siguiente plantilla de función:
 
 ```
@@ -41,19 +41,19 @@ Valor float que especifica la distancia paramétrica de la intersección.
 
 `HitKind`
 
-Entero sin signo que identifica el tipo de impacto que se produjo.  Se trata de un valor especificado por el usuario en el intervalo de 0 a 127.  Cualquier sombreador de impacto [](closest-hit-shader.md) [o](any-hit-shader.md) más cercano puede leer el valor con el **intrínseco HitKind.**
+Entero sin signo que identifica el tipo de impacto que se produjo.  Se trata de un valor especificado por el usuario en el intervalo de 0 a 127.  Cualquier sombreador de [impactos o](any-hit-shader.md) más cercanos puede leer el valor con el [](closest-hit-shader.md) **intrínseco HitKind.**
 
 `Attributes`
 
-Estructura de atributo de [**intersección**](intersection-attributes.md) definida por el usuario que especifica los atributos de intersección.  
+Estructura de atributo de intersección definida por el [**usuario**](intersection-attributes.md) que especifica los atributos de intersección.  
 
 ## <a name="return-value"></a>Valor devuelto
 
-**bool** True si se aceptó la pulsación.  Se rechaza una pulsación si *THit* está fuera del intervalo de rayos actual o cualquier sombreador de llamadas llama [**a IgnoreHit**](ignorehit-function.md).  **RayTMin** y **RayTCurrent** definen el intervalo de rayo actual.
+**bool** True si se aceptó la pulsación.  Se rechaza una pulsación si *THit* está fuera del intervalo de rayos actual o cualquier sombreador de llamadas llama [**a IgnoreHit**](ignorehit-function.md).  **RayTMin** y RayTCurrent definen el intervalo de **rayos actual.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
+Se puede llamar a esta función desde los siguientes tipos de sombreador:
 
 * [**Sombreador de intersección**](intersection-shader.md)
 

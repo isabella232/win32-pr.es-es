@@ -5,12 +5,12 @@ ms.assetid: CC4C6594-D48F-40C1-93EE-9F98532BC038
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 09/25/2019
-ms.openlocfilehash: e76c5c1295dab8858ff04830030efb479fe3ae8a09bcdb37ff8c4820f4fd08c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d7d3985c880c4d1732a96b98ac6d3c6579dab8e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119728825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072940"
 ---
 # <a name="multi-adapter-systems"></a>Sistemas de varios adaptadores
 

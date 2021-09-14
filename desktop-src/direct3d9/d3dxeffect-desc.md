@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: 0b30ad0348a5c799690d668e036724d30808c2998eee9d762fa2ad3fc8106c91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8e7a3a2adf19514e2e4d1c6f61dbea888ce033d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118298598"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072823"
 ---
 # <a name="d3dxeffect_desc-structure"></a>D3DXEFFECT \_ DESC (estructura)
 
@@ -38,7 +38,7 @@ typedef struct D3DXEFFECT_DESC {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -86,7 +86,7 @@ Número de funciones que pueden representar el efecto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un objeto de efecto puede contener varias técnicas de representación y parámetros para el mismo efecto.
 

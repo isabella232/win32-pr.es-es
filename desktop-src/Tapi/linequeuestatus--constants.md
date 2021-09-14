@@ -4,14 +4,14 @@ ms.assetid: 97f70742-8f5a-43bd-aef4-a28f1cc94bb2
 title: LINEQUEUESTATUS_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cec8159ff836bd8eee76b74d2b8ac2808d188da84d2b6742cb5ddde10f405f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22da21ddfb07cee57e45a271e9573c591b4334ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073470"
 ---
-# <a name="linequeuestatus_-constants"></a>LineQUEUESTATUS \_ (Constantes)
+# <a name="linequeuestatus_-constants"></a>LineQUEUESTATUS \_ (constantes)
 
 Las **constantes LINEQUEUESTATUS \_ indican** el cambio de estado de una cola de ACD en un controlador de agente.
 
@@ -51,10 +51,10 @@ Actualización de información sobre la cola de ACD.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

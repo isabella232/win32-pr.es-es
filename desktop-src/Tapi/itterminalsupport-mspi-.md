@@ -4,12 +4,12 @@ ms.assetid: 39cb9734-3e70-4e37-9358-c638c6618c11
 title: ITTerminalSupport (MSPI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed707a239de9da9bbb695c6eaf6da260e03d37e5e35eec4f085bf3879cf939df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63822f55742d5a4c7a0114abeb625f2393a51ae7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073473"
 ---
 # <a name="itterminalsupport-mspi"></a>ITTerminalSupport (MSPI)
 

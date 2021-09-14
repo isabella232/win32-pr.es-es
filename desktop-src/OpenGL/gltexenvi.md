@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c976eec51bed7087b1202ae4e4fd9a07435bfa4d6fd0d1fe2b964426bdf0ba5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c013b0e4805042ed0967e02df83f143d8bcfd991
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119490605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074024"
 ---
 # <a name="gltexenvi-function"></a>Función glTexEnvi
 
@@ -75,18 +75,18 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *target* o *pname* no era uno de los valores definidos aceptados, o cuando *los parámetros* deberían haber tenido un valor constante definido (basado en el valor de *pname)* y no.<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *target* o *pname* no era uno de los valores definidos aceptados, o cuando *los parámetros* deberían haber tenido un valor constante definido (basado en el valor de *pname)* y no lo hizo.<br/> |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/>                                             |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un entorno de textura especifica cómo se interpretan los valores de textura cuando se textura un fragmento. El *parámetro de* destino debe ser GL TEXTURE \_ \_ ENV. El *parámetro pname* es GL \_ TEXTURE \_ ENV \_ MODE. Se definen tres funciones de textura: \_ GLMODULTE, GL \_ DECAL y GL \_ BLEND.
 
-Una función de textura actúa sobre el fragmento que se va a texturar mediante el valor de imagen de textura que se aplica al fragmento (vea [**glTexParameter)**](gltexparameter-functions.md)y genera un color RGBA para ese fragmento. En la tabla siguiente se muestra cómo se genera el color RGBA para cada una de las tres funciones de textura que se pueden elegir. *C* es un triple de valores de color (RGB) y *A* es el valor alfa asociado. Los valores RGBA extraídos de una imagen de textura se encuentran en el \[ intervalo 0, \] 1. El subíndice *f* hace referencia al fragmento entrante, el subíndice *t* a la imagen de textura, el subíndice *c* al color del entorno de textura y el subíndice *v* indica un valor generado por la función de textura.
+Una función de textura actúa sobre el fragmento que se va a texturar mediante el valor de imagen de textura que se aplica al fragmento (vea [**glTexParameter)**](gltexparameter-functions.md)y genera un color RGBA para ese fragmento. En la tabla siguiente se muestra cómo se genera el color RGBA para cada una de las tres funciones de textura que se pueden elegir. *C* es un triple de valores de color (RGB) y *A* es el valor alfa asociado. Los valores RGBA extraídos de una imagen de textura se encuentran en el \[ intervalo 0, 1 \] . El subíndice *f* hace referencia al fragmento entrante, el subíndice *t* a la imagen de textura, el subíndice *c* al color del entorno de textura y el subíndice *v* indica un valor generado por la función de textura.
 
-Una imagen de textura puede tener hasta cuatro componentes por elemento de textura (vea [**glTexImage1D**](glteximage1d.md) y [**glTexImage2D).**](glteximage2d.md) En una imagen de un componente, Lt indica ese único componente. ¿Una imagen de dos componentes usa *L?*  y *A?* . Una imagen de tres componentes solo tiene un valor de color, *C?* . ¿Una imagen de cuatro componentes tiene un valor de color *C?*  y un valor alfa *A?* .
+Una imagen de textura puede tener hasta cuatro componentes por elemento de textura (vea [**glTexImage1D**](glteximage1d.md) y [**glTexImage2D).**](glteximage2d.md) En una imagen de un componente, Lt indica ese componente único. ¿Una imagen de dos componentes usa *L?*  y *A?* . ¿Una imagen de tres componentes solo tiene un valor de color, *C?* . ¿Una imagen de cuatro componentes tiene un valor de color *C?*  y un valor alfa *A?* .
 
 
 
@@ -163,7 +163,7 @@ Una imagen de textura puede tener hasta cuatro componentes por elemento de textu
 
  
 
-Gl \_ TEXTURE \_ ENV MODE tiene como valor predeterminado \_ \_ GLMODULTE.
+El \_ valor predeterminado del modo GL TEXTURE \_ ENV es \_ \_ GLMODULTE.
 
 La función siguiente recupera información relacionada con **glTexEnvi**:
 
@@ -173,7 +173,7 @@ La función siguiente recupera información relacionada con **glTexEnvi**:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -183,7 +183,7 @@ La función siguiente recupera información relacionada con **glTexEnvi**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

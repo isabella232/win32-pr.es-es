@@ -4,12 +4,12 @@ ms.assetid: a8e083ab-b5e3-4186-99fb-cbb536e9d529
 title: Devoluciones de llamada de Graphing API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0604c03ce768372e4f6fa81abfe69184ef45f49f41a2907d652b77b97902b6f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c11f4f559307e457822cd0e7ce18ef4b44119697
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073924"
 ---
 # <a name="graphing-api-callbacks"></a>Devoluciones de llamada de Graphing API
 

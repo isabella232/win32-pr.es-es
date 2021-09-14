@@ -4,12 +4,12 @@ ms.assetid: 287e85ed-a324-4785-872a-26e4ab37986d
 title: Consideraciones de seguridad de WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b80d813fa5b50cb9c880598d3187c697412d1dab1d7fdd80b4507d17d03eff6a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc06725ba03631eb4d5e5c29f8cfa0aae69b5022
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119955695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073139"
 ---
 # <a name="winhttp-security-considerations"></a>Consideraciones de seguridad de WinHTTP
 
@@ -27,7 +27,7 @@ Las siguientes consideraciones de seguridad se aplican a las aplicaciones que us
 -   **La comprobación de revocación de certificados debe solicitarse explícitamente.** De forma predeterminada, al realizar la autenticación de certificados, WinHTTP no comprueba si se ha revocado el certificado del servidor. La comprobación de revocación de certificados se puede habilitar [**mediante WinHttpSetOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption).
 -   **Las aplicaciones deben asegurarse de que una sesión se asigna a una única identidad.** Una sesión WinHTTP debe asignarse a una sola identidad; Es decir, se usa una sesión WinHTTP para administrar la actividad de Internet de un solo usuario autenticado o de un grupo de usuarios anónimos. Sin embargo, dado que WinHTTP no aplica esta asignación automáticamente, la aplicación debe tomar medidas para asegurarse de que solo interviene una única identidad.
 -   **Las operaciones en un identificador de solicitud WinHTTP deben sincronizarse.** Por ejemplo, una aplicación debe evitar cerrar un identificador de solicitud en un subproceso mientras otro subproceso envía o recibe una solicitud. Para finalizar una solicitud asincrónica, cierre el identificador de solicitud durante una notificación de devolución de llamada. Para finalizar una solicitud sincrónica, cierre el identificador cuando se devuelva la llamada WinHTTP anterior.
--   **Los archivos de seguimiento contienen información confidencial.** Los archivos de seguimiento se protegen mediante listas de Access-Control (ACL) para que solo el administrador local o la cuenta de usuario que lo creó pueda acceder a los archivos de seguimiento. Evite poner en peligro los archivos de seguimiento por cualquier acceso no autorizado.
+-   **Los archivos de seguimiento contienen información confidencial.** Los archivos de seguimiento se protegen mediante listas de Access-Control (ACL), de modo que normalmente solo el administrador local o la cuenta de usuario que lo creó pueda acceder a ellos. Evite poner en peligro los archivos de seguimiento por cualquier acceso no autorizado.
 -   **Evite pasar datos confidenciales a través** [**de WinHttpSetOption.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) No proporcione un nombre de usuario, una contraseña o ninguna otra credencial a **WinHttpSetOption** porque no tiene control sobre el esquema de autenticación que se usa y los datos confidenciales podrían enviarse inesperadamente en texto no definido. Use [**WinHttpQueryAuthSchemes**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryauthschemes) y **WinHttpSetCredentials** en lugar de **WinHttpSetOption** para establecer las credenciales.
 -   **El redireccionamiento automático puede suponer un riesgo para la seguridad.** De forma predeterminada, el redireccionamiento (un mensaje 302) se sigue automáticamente incluso para post. Para evitar la posibilidad de redirecciones falsos, las aplicaciones deben deshabilitar la redirección automática o supervisar la redireccionamiento en las devoluciones de llamada al publicar información confidencial.
 -   **Los encabezados definidos por el usuario se transfieren entre redirecciones sin cambios.** Los encabezados definidos por el usuario, como las cookies agregadas con **WinHTTPAddRequestHeaders,** se transfieren a través de redirecciones sin modificaciones, mientras que los encabezados generados por WinHTTP se actualizan automáticamente. Si la transferencia de un encabezado definido por el usuario a través de redireccionamientos supone un riesgo de seguridad, use la devolución de llamada [*\_ \_ CALLBACK*](/windows/win32/api/winhttp/nc-winhttp-winhttp_status_callback) DE ESTADO WINHTTP con la finalización de REDIRECCIÓN DE ESTADO DE DEVOLUCIÓN DE LLAMADA **WINHTTP \_ \_ \_** para modificar el encabezado en cuestión cada vez que se produzca una redirección.

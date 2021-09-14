@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1bd18652630ad14f9b888db6a810d8da1eb42a18fb9d2caa6726414aa9054702
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a820bad3d68cfb0a697f795a9fd7326c9e52abe9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118357156"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073409"
 ---
 # <a name="delay-logontriggertype-element"></a>Elemento Delay (logonTriggerType)
 
@@ -42,24 +42,24 @@ El tipo complejo [**logonTriggerType**](taskschedulerschema-logontriggertype-com
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripting, el retraso del desencadenador de inicio de sesión se especifica mediante la [**propiedad LogonTrigger.Delay.**](logontrigger-delay.md)
 
-Para el desarrollo de C++, el identificador de usuario para el desencadenador de inicio de sesión se especifica mediante la [**propiedad ILogonTrigger::D elay.**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_delay)
+Para el desarrollo de C++, el identificador de usuario para el desencadenador logon se especifica mediante la [**propiedad ILogonTrigger::D elay.**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_delay)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

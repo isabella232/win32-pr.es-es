@@ -5,12 +5,12 @@ ms.assetid: 8FE42C1C-7F1D-4E70-A7EE-D5EC67237327
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9be1f6cd024fe4f8a1121a1f4e43aae6c9bf2984f099cf2ea33ec45b758e3b03
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 04a7a32576efa4d93a8d26aa57282f06e0d5a02f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072885"
 ---
 # <a name="root-signature-version-11"></a>Versión 1.1 de la firma raíz
 
@@ -139,9 +139,9 @@ En las tablas siguientes se resumen las combinaciones de marcas que se pueden em
 | DATOS \_ ESTÁTICOS                                                   | Tanto los descriptores como los datos son estáticos. Esto maximiza el potencial de optimización del controlador.                                                                                                                                                                                                                                                          |
 | VOLÁTILES \_ DE DATOS                                                 | Los descriptores son estáticos y los datos son volátiles.                                                                                                                                                                                                                                                                                                     |
 | DATOS \_ \_ ESTÁTICOS MIENTRAS \_ SE ESTABLECE EN \_ \_ EJECUCIÓN                          | Los descriptores son estáticos y los datos son estáticos mientras se establecen en ejecución.                                                                                                                                                                                                                                                                                      |
-| DESCRIPTORES \_ VOLATILE                                          | Los descriptores son volátiles y se realizan suposiciones predeterminadas sobre los datos: para SRV/CBV: DATA STATIC WHILE SET AT EXECUTE y para \_ \_ \_ \_ \_ UAV: DATA \_ VOLATILE.                                                                                                                                                                                              |
+| DESCRIPTORES \_ VOLÁTILES                                          | Los descriptores son volátiles y se realizan suposiciones predeterminadas sobre los datos: para SRV/CBV: DATA STATIC WHILE SET AT EXECUTE y para \_ \_ \_ \_ \_ UAV: DATA \_ VOLATILE.                                                                                                                                                                                              |
 | DESCRIPTORES \_ \| VOLÁTILES DE \_ DATOS VOLÁTILES                        | Tanto los descriptores como los datos son volátiles, equivalentes a root signature 1.0.                                                                                                                                                                                                                                                                            |
-| DESCRIPTORES \_ VOLATILE DATA STATIC WHILE SET AT \| \_ \_ \_ \_ \_ EXECUTE | Los descriptores son volátiles, pero tenga en cuenta que todavía no les permite cambiar durante la ejecución de la lista de comandos. Por lo tanto, es válido combinar la declaración adicional de que los datos son estáticos mientras se establecen a través de la tabla de descriptores raíz durante la ejecución: los descriptores subyacentes son realmente estáticos durante más tiempo del que se está con la promesa de que los datos son estáticos. |
+| DESCRIPTORES \_ VOLATILE DATA STATIC WHILE SET AT \| \_ \_ \_ \_ \_ EXECUTE | Los descriptores son volátiles, pero tenga en cuenta que todavía no les permite cambiar durante la ejecución de la lista de comandos. Por lo tanto, es válido combinar la declaración adicional de que los datos son estáticos mientras se establecen a través de la tabla de descriptores raíz durante la ejecución: los descriptores subyacentes son estáticos durante más tiempo de lo que se está con la promesa de que los datos son estáticos. |
 
 
 
@@ -152,9 +152,9 @@ En las tablas siguientes se resumen las combinaciones de marcas que se pueden em
 | Configuración válida de MARCAS DE \_ \_ DESCRIPTOR RAÍZ D3D12 \_                                                  |  Descripción                                                                                                                                                                                                                 |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sin marcas establecidas                                      | Suposiciones predeterminadas para los datos: para SRV/CBV: DATA \_ STATIC WHILE SET AT EXECUTE y para \_ \_ \_ \_ UAV: DATA \_ VOLATILE. Estos valores predeterminados para SRV/CBV se ajustarán de forma segura a los patrones de uso de la mayoría de las firmas raíz. |
-| DATOS \_ ESTÁTICOS                                      | Los datos son estáticos, el mejor potencial para la optimización del controlador.                                                                                                                                                       |
-| DATOS \_ \_ ESTÁTICOS MIENTRAS \_ SE ESTABLECE EN \_ \_ EJECUCIÓN             | Los datos son estáticos mientras se establecen en ejecución.                                                                                                                                                                              |
-| VOLÁTILES \_ DE DATOS                                    | Equivalente a root signature 1.0.                                                                                                                                                                                 |
+| DATA \_ STATIC                                      | Los datos son estáticos, el mejor potencial para la optimización del controlador.                                                                                                                                                       |
+| DATOS \_ ESTÁTICOS \_ MIENTRAS SE ESTABLECE \_ EN \_ \_ EJECUCIÓN             | Los datos son estáticos mientras se establecen en ejecución.                                                                                                                                                                              |
+| DATOS \_ VOLÁTILES                                    | Equivalente a Root Signature 1.0.                                                                                                                                                                                 |
 
 
 
@@ -168,9 +168,9 @@ Las siguientes llamadas API habilitan la versión 1.1.
 
 Estas enumeraciones contienen las marcas de clave para especificar el descriptor y la inestabilidad de los datos.
 
--   [**D3D \_ ROOT \_ SIGNATURE \_ VERSION:**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version) identificadores de versión.
--   [**D3D12 \_ DESCRIPTOR \_ RANGE \_ FLAGS:**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_flags) intervalo de marcas que determina si los descriptores o los datos son volátiles o estáticos.
--   [**D3D12 \_ MARCAS \_ DE DESCRIPTOR \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) RAÍZ: un intervalo similar de marcas a [**D3D12 \_ DESCRIPTOR RANGE \_ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_flags), salvo que solo las marcas de datos se aplican a los descriptores raíz.
+-   [**D3D \_ ROOT \_ SIGNATURE \_ VERSION :**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version) identificadores de versión.
+-   [**D3D12 \_ DESCRIPTOR \_ RANGE \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_flags) : un intervalo de marcas que determina si los descriptores o los datos son volátiles o estáticos.
+-   [**D3D12 \_ MARCAS \_ DE DESCRIPTOR \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) RAÍZ: un intervalo similar de marcas a [**D3D12 \_ DESCRIPTOR RANGE \_ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_flags), salvo que solo se aplican marcas de datos a descriptores raíz.
 
 ### <a name="structures"></a>Estructuras
 
@@ -183,47 +183,47 @@ Las estructuras actualizadas (de la versión 1.0) contienen referencias a las ma
     -   [**D3D12 \_ ROOT \_ SIGNATURE \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc1)
     -   [**D3D12 \_ DESCRIPTOR \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1)
     -   [**D3D12 \_ ROOT \_ DESCRIPTOR \_ TABLE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1)
-    -   [**DESCRIPTOR RAÍZ D3D121 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1)
+    -   [**D3D12 \_ ROOT \_ DESCRIPTOR1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1)
     -   [**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
 
 ### <a name="functions"></a>Functions
 
-Los métodos enumerados aquí reemplazan a las funciones [**originales D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature) y [**D3D12CreateRootSignatureDeserializer,**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createrootsignaturedeserializer) ya que están diseñadas para funcionar en cualquier versión de la firma raíz. El formulario serializado es lo que se pasa a la API [**CreateRootSignature.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature) Si se ha creado un sombreador con una firma raíz en él, el sombreador compilado ya contendrá una firma raíz serializada en él.
+Los métodos enumerados aquí reemplazan a las funciones [**originales D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature) y [**D3D12CreateRootSignatureDeserializer,**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createrootsignaturedeserializer) ya que están diseñadas para funcionar en cualquier versión de la firma raíz. El formulario serializado es lo que se pasa a la API [**CreateRootSignature.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature) Si se ha creado un sombreador con una firma raíz en él, el sombreador compilado ya contendrá una firma raíz serializada.
 
--   [**D3D12SerializeVersionedRootSignature:**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializeversionedrootsignature) si una aplicación genera de forma procedimiento la estructura de datos [**D3D12 \_ \_ VERSIONED ROOT \_ SIGNATURE,**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) debe crear el formulario serializado mediante esta función.
--   [**D3D12CreateVersionedRootSignatureDeserializer:**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createversionedrootsignaturedeserializer) genera una interfaz que puede devolver la estructura de datos deserializado a través de [**GetUnconvertedRootSignatureDesc**](/windows/desktop/api/d3d12/nf-d3d12-id3d12versionedrootsignaturedeserializer-getunconvertedrootsignaturedesc).
+-   [**D3D12SerializeVersionedRootSignature:**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializeversionedrootsignature) si una aplicación genera por procedimientos la estructura de datos [**D3D12 \_ \_ VERSIONED ROOT \_ SIGNATURE,**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) debe crear el formulario serializado mediante esta función.
+-   [**D3D12CreateVersionedRootSignatureDeserializer:**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createversionedrootsignaturedeserializer) genera una interfaz que puede devolver la estructura de datos deserializado a través de [**GetUnconvertedRootSignatureDesc.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12versionedrootsignaturedeserializer-getunconvertedrootsignaturedesc)
 
 ### <a name="methods"></a>Métodos
 
 La [**interfaz ID3D12VersionedRootSignatureDeserializer**](/windows/desktop/api/d3d12/nn-d3d12-id3d12versionedrootsignaturedeserializer) se crea para deserializar la estructura de datos de firma raíz.
 
--   [**GetRootSignatureDescAtVersion:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12versionedrootsignaturedeserializer-getrootsignaturedescatversion) convierte las estructuras de descripción de la firma raíz en una versión solicitada.
--   [**GetUnconvertedRootSignatureDesc:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12versionedrootsignaturedeserializer-getunconvertedrootsignaturedesc) devuelve un puntero a una estructura [**\_ \_ \_ \_ DESC D3D12 VERSIONED ROOT SIGNATURE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc)
+-   [**GetRootSignatureDescAtVersion:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12versionedrootsignaturedeserializer-getrootsignaturedescatversion) convierte las estructuras de descripción de firma raíz en una versión solicitada.
+-   [**GetUnconvertedRootSignatureDesc:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12versionedrootsignaturedeserializer-getunconvertedrootsignaturedesc) devuelve un puntero a una estructura [**D3D12 \_ \_ VERSIONED ROOT \_ SIGNATURE \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc)
 
 ### <a name="helper-structures"></a>Estructuras auxiliares
 
-Se han agregado estructuras auxiliares para ayudar en la inicialización de algunas de las estructuras de la versión 1.1.
+Las estructuras auxiliares se han agregado para ayudar en la inicialización de algunas de las estructuras de la versión 1.1.
 
 -   CD3DX12 \_ DESCRIPTOR \_ RANGE1
 -   CD3DX12 \_ ROOT \_ PARAMETER1
 -   CD3DX12 \_ STATIC \_ SAMPLER1
 -   CD3DX12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC
 
-Consulte [Estructuras y funciones auxiliares para D3D12.](helper-structures-and-functions-for-d3d12.md)
+Consulte Estructuras [y funciones auxiliares para D3D12.](helper-structures-and-functions-for-d3d12.md)
 
 ## <a name="consequences-of-violating-static-ness-flags"></a>Consecuencias de infringir las marcas de integridad estática
 
 El descriptor y las marcas de datos descritas anteriormente (así como los valores predeterminados implícitos por la ausencia de marcas concretas) definen una promesa de la aplicación al controlador sobre cómo se comportará. Si una aplicación infringe la promesa, este comportamiento no es válido: los resultados son indefinidos y pueden ser diferentes en distintos controladores y hardware.
 
-La capa de depuración tiene opciones para validar que las aplicaciones respetan sus promesas, incluidas las promesas predeterminadas que se incluyen con el uso de la firma raíz versión 1.1 sin establecer ninguna marca.
+La capa de depuración tiene opciones para validar que las aplicaciones respetan sus promesas, incluidas las promesas predeterminadas que incluyen el uso de la firma raíz versión 1.1 sin establecer ninguna marca.
 
 ## <a name="version-management"></a>Administración de versiones
 
 Al compilar firmas raíz asociadas a sombreadores, los compiladores HLSL más recientes compilarán de forma predeterminada la firma raíz en la versión 1.1, mientras que los compiladores HLSL antiguos solo admiten la versión 1.0. Tenga en cuenta que las firmas raíz 1.1 no funcionarán en los so que no admiten la firma raíz 1.1.
 
-La versión de firma raíz compilada con un sombreador se puede forzar a una versión determinada mediante `/force_rootsig_ver <version>` . Forzar la versión se realizará correctamente si el compilador puede conservar el comportamiento de la firma raíz que se compila en la versión forzada, por ejemplo, quitando marcas no admitidas en la firma raíz que solo sirven para fines de optimización, pero no afectan al comportamiento.
+La versión de firma raíz compilada con un sombreador se puede forzar a una versión determinada mediante `/force_rootsig_ver <version>` . Forzar la versión se realizará correctamente si el compilador puede conservar el comportamiento de la firma raíz que se compila en la versión forzada, por ejemplo, quitando marcas no admitidas en la firma raíz que sirven solo para fines de optimización, pero que no afectan al comportamiento.
 
-De este modo, por ejemplo, una aplicación puede compilar una firma raíz 1.1 para 1.0 y 1.1 al compilar la aplicación y seleccionar la versión adecuada en tiempo de ejecución en función del nivel de compatibilidad del sistema operativo. Sin embargo, sería más eficaz para una aplicación compilar firmas raíz individualmente (especialmente si se necesitan varias versiones), independientemente de los sombreadores. Incluso si los sombreadores no se compilan inicialmente con una firma raíz adjunta, la ventaja de la validación del compilador de la compatibilidad de la firma raíz con un sombreador se puede conservar mediante la opción `/verifyrootsignature` del compilador. Más adelante en tiempo de ejecución, los PSO se pueden crear mediante sombreadores que no tienen firmas raíz en ellos mientras se pasa la firma raíz deseada (quizás la versión adecuada compatible con el sistema operativo) como un parámetro independiente.
+De este modo, una aplicación puede, por ejemplo, compilar una firma raíz 1.1 en 1.0 y 1.1 al compilar la aplicación y seleccionar la versión adecuada en tiempo de ejecución en función del nivel de compatibilidad del sistema operativo. Sin embargo, sería más eficaz el espacio para que una aplicación compilara firmas raíz individualmente (especialmente si se necesitan varias versiones), independientemente de los sombreadores. Incluso si los sombreadores no se compilan inicialmente con una firma raíz adjunta, la ventaja de la validación del compilador de la compatibilidad de la firma raíz con un sombreador se puede conservar mediante la opción `/verifyrootsignature` del compilador. Más adelante en tiempo de ejecución, los PSO se pueden crear mediante sombreadores que no tienen firmas raíz en ellos mientras se pasa la firma raíz deseada (quizás la versión adecuada compatible con el sistema operativo) como un parámetro independiente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

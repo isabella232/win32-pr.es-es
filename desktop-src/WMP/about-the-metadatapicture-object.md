@@ -4,7 +4,7 @@ description: Acerca del objeto MetadataPicture
 ms.assetid: 522f6491-e84a-4cde-98db-e55742ed50a2
 keywords:
 - Reproductor de Windows Media,MetadataPicture, objeto
-- Reproductor de Windows Media modelo de objetos, objeto MetadataPicture
+- Reproductor de Windows Media de objetos, objeto MetadataPicture
 - object model,MetadataPicture object
 - Reproductor de Windows Media ActiveX control,MetadataPicture, objeto
 - ActiveX control,MetadataPicture, objeto
@@ -13,16 +13,16 @@ keywords:
 - Objeto MetadataPicture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6f0002080b62c97f347f1679431adbc3450efef4d6563a5c606d257d4391c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ad7a96a856ffc4546d2cbd8f828c7c0ec904018
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119956765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073290"
 ---
 # <a name="about-the-metadatapicture-object"></a>Acerca del objeto MetadataPicture
 
-El **atributo de metadatos WM/Picture** proporciona información detallada sobre las imágenes de metadatos, como el arte del álbum. El **objeto MetadataPicture** proporciona una manera de recuperar los datos individuales relacionados con la imagen. Es posible que piense en el **atributo de metadatos WM/Picture** como un atributo compuesto. Cuando se usa *Media*. **getItemInfoByType para** recuperar información sobre una imagen de metadatos, se recupera un objeto **MetadataPicture** que tiene propiedades que contienen los datos individuales.
+El **atributo de metadatos WM/Picture** proporciona información detallada sobre las imágenes de metadatos, como el arte del álbum. El **objeto MetadataPicture** proporciona una manera de recuperar los datos individuales relacionados con la imagen. Es posible que piense en el **atributo de metadatos WM/Picture** como un atributo compuesto. Cuando se usa *Media*. **getItemInfoByType para recuperar** información sobre una imagen de metadatos, se recupera un objeto **MetadataPicture** que tiene propiedades que contienen los datos individuales.
 
 ## <a name="related-topics"></a>Temas relacionados
 

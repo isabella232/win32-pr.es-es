@@ -4,7 +4,7 @@ description: La estructura \_ RAS PORT STATISTICS informa de las estadísticas q
 ms.assetid: c42c7059-ff92-4f49-a86e-2f47a083aa8e
 keywords:
 - RAS_PORT_STATISTICS ras de estructura
-- PRAS_PORT_STATISTICS puntero ras de estructura
+- PRAS_PORT_STATISTICS de estructura ras
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d6c2329f7b6423d24f81d421d3078aae5495992796d607c1a8f22d82d4b1e48
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85e60fb001da3f8401e47c366eecc86aced22b77
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073872"
 ---
 # <a name="ras_port_statistics-structure"></a>Estructura \_ RAS PORT \_ STATISTICS
 
@@ -68,7 +68,7 @@ typedef struct _RAS_PORT_STATISTICS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -138,7 +138,7 @@ Especifica el número total de errores de trama en la conexión. Se produce un e
 **dwBufferOverrunErr**
 </dt> <dd>
 
-Especifica el número total de errores de saturación del búfer en la conexión. Se produce un error de saturación del búfer cuando el equipo de envío transmite caracteres más rápido de lo que el equipo receptor puede dar cabida a ellos. Si este problema persiste, reduzca la velocidad de conexión de BPS en el cliente.
+Especifica el número total de errores de saturación del búfer en la conexión. Se produce un error de saturación del búfer cuando el equipo de envío transmite caracteres más rápido de lo que el equipo receptor puede alojarlos. Si este problema persiste, reduzca la velocidad de conexión de BPS en el cliente.
 
 </dd> <dt>
 
@@ -236,7 +236,7 @@ Especifica el número total de errores de trama en el puerto. Se produce un erro
 **dwPortBufferOverrunErr**
 </dt> <dd>
 
-Especifica el número total de errores de saturación del búfer en el puerto. Se produce un error de saturación del búfer cuando el equipo de envío transmite caracteres más rápido de lo que el equipo receptor puede dar cabida a ellos. Si este problema persiste, reduzca la velocidad de conexión de BPS en el cliente.
+Especifica el número total de errores de saturación del búfer en el puerto. Se produce un error de saturación del búfer cuando el equipo de envío transmite caracteres más rápido de lo que el equipo receptor puede alojarlos. Si este problema persiste, reduzca la velocidad de conexión de BPS en el cliente.
 
 </dd> <dt>
 
@@ -278,11 +278,11 @@ Especifica el número total de bytes recibidos comprimidos por el puerto. Si el 
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

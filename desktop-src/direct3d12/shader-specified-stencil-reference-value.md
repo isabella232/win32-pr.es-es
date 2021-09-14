@@ -5,18 +5,18 @@ ms.assetid: F58B1930-F12E-4FA4-A15C-A3C2B8705033
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 012c405a8ee28781d8e69d61da037a385781feeb2255aa544259c45615cb8c69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0fee212d7c2573402ad38bc19040e5c60a89c090
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072872"
 ---
 # <a name="shader-specified-stencil-reference-value-direct3d-12-graphics"></a>Valor de referencia de galería de símbolos especificado por el sombreador (gráficos de Direct3D 12)
 
 La habilitación de sombreadores de píxeles para generar el valor de referencia de la galería de símbolos, en lugar de usar el especificado por la API, permite un control muy granular sobre las operaciones de galería de símbolos.
 
-Normalmente, el método [**ID3D12GraphicsCommandList::OMSetStencilRef**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetstencilref) especifica el valor de referencia de la galería de símbolos. Este método establece el valor de referencia de galería de símbolos en una granularidad por dibujo. Sin embargo, el sombreador de píxeles puede sobrescribir este valor.
+Normalmente, el método [**ID3D12GraphicsCommandList::OMSetStencilRef**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetstencilref) especifica el valor de referencia de la galería de símbolos. Este método establece el valor de referencia de la galería de símbolos en una granularidad por dibujo. Sin embargo, el sombreador de píxeles puede sobrescribir este valor.
 
 Esta característica D3D12 (y D3D11.3) permite a los desarrolladores leer y usar el valor de referencia de galería de símbolos *(SV \_ StencilRef)* que se genera desde un sombreador de píxeles, lo que permite una granularidad por píxel o por ejemplo.
 

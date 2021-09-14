@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 6aaf8b3afc35f7bbf1fc2f8b1028a1218c630ce49a7c80638f93ece0545b4e64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99f6804ef1dad4f37bd2727da2e91e801fb0ece2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117926777"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073095"
 ---
 # <a name="wmievent-class"></a>Clase WMIEvent
 
 La **clase WMIEvent** es una clase base de la que se derivan todas las clases de eventos WMI.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ class WMIEvent : __ExtrinsicEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WMIEvent** tiene estos tipos de miembros:
 
@@ -79,7 +79,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase WMIEvent** se deriva de [**\_ \_ ExtrinsicEvent**](/windows/desktop/WmiSdk/--extrinsicevent).
 
@@ -87,7 +87,7 @@ La **clase WMIEvent** se deriva de [**\_ \_ ExtrinsicEvent**](/windows/desktop/W
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                                                                                        |
@@ -97,7 +97,7 @@ La **clase WMIEvent** se deriva de [**\_ \_ ExtrinsicEvent**](/windows/desktop/W
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -39,12 +39,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: a8f103bf5a23f6e157fc9ecca697c0d1ce7c47bd71be20458d816ca74819dc10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06094b24b6b8197eab89b65cd5a9a83f46b39f95
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118558410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073103"
 ---
 # <a name="videomodedescriptor-class"></a>VideoModeDescriptor (clase)
 
@@ -84,7 +84,7 @@ class VideoModeDescriptor : WmiMonitorSupportedVideoModes
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase VideoModeDescriptor** tiene estos tipos de miembros:
 
@@ -109,11 +109,11 @@ Tipo de polaridad compuesta. Se trata de la polaridad de los pulsos de sincroniz
 
 
 
-| Valor                                                                              | Significado                                                                    |
+| Value                                                                              | Significado                                                                    |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | La polaridad compuesta es positiva.<br/>                                 |
 | <dl> <dt>1 (0x1)</dt> </dl> | La polaridad compuesta es negativa.<br/>                                 |
-| <dl> <dt>2 (0x2)</dt> </dl> | No es aplicable. El tipo de sincronización de señal debe ser compuesto digitalmente.<br/> |
+| <dl> <dt>2 (0x2)</dt> </dl> | No aplicable. El tipo de sincronización de señal debe ser compuesto digitalmente.<br/> |
 
 
 
@@ -186,11 +186,11 @@ Tipo de polaridad horizontal.
 
 
 
-| Valor                                                                              | Significado                                                                   |
+| Value                                                                              | Significado                                                                   |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | La polaridad horizontal es positiva.<br/>                               |
 | <dl> <dt>1 (0x1)</dt> </dl> | La polaridad horizontal es negativa.<br/>                               |
-| <dl> <dt>2 (0x2)</dt> </dl> | No es aplicable. El tipo de sincronización de señal debe ser independiente digitalmente.<br/> |
+| <dl> <dt>2 (0x2)</dt> </dl> | No aplicable. El tipo de sincronización de señal debe ser independiente digitalmente.<br/> |
 
 
 
@@ -276,11 +276,11 @@ Indica qué tipo de serranía es necesario, si procede.
 
 
 
-| Valor                                                                              | Significado                                                                                                  |
+| Value                                                                              | Significado                                                                                                  |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | El controlador debe proporcionar sincronización horizontal durante la sincronización vertical.<br/>                                 |
 | <dl> <dt>1 (0x1)</dt> </dl> | El controlador no debe proporcionar sincronización horizontal durante la sincronización vertical.<br/>                             |
-| <dl> <dt>2 (0x2)</dt> </dl> | No es aplicable. El tipo de sincronización de señal debe ser así, compuesto análogo o compuesto digital.<br/> |
+| <dl> <dt>2 (0x2)</dt> </dl> | No aplicable. El tipo de sincronización de señales debe ser así, compuesto análogo o compuesto digital.<br/> |
 
 
 
@@ -301,11 +301,11 @@ Indica qué líneas de señal de vídeo se deben sincronizar, si procede.
 
 
 
-| Valor                                                                              | Significado                                                                           |
+| Value                                                                              | Significado                                                                           |
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | El pulso de sincronización debe aparecer en las tres líneas de señal de vídeo.<br/>                  |
 | <dl> <dt>1 (0x1)</dt> </dl> | El pulso de sincronización solo debe aparecer en la línea de señal de vídeo verde.<br/>          |
-| <dl> <dt>2 (0x2)</dt> </dl> | No es aplicable. El tipo de sincronización de señales debe ser compuesto analógico de rencrones.<br/> |
+| <dl> <dt>2 (0x2)</dt> </dl> | No aplicable. El tipo de sincronización de señal debe ser compuesto análogo de toba.<br/> |
 
 
 
@@ -339,7 +339,7 @@ Tipo de modo estéreo. En la tabla siguiente se enumeran los valores posibles.
 
 
 
-| Valor                                                                              | Significado                                                             |
+| Value                                                                              | Significado                                                             |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Sin estéreo.<br/>                                               |
 | <dl> <dt>1 (0x1)</dt> </dl> | Estéreo secuencial de campo con imagen derecha en sincronización estéreo.<br/> |
@@ -368,10 +368,10 @@ Tipo de sincronización de señal. En la tabla siguiente se enumeran los valores
 
 
 
-| Valor                                                                              | Significado                             |
+| Value                                                                              | Significado                             |
 |------------------------------------------------------------------------------------|-------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Compuesto análogo<br/>         |
-| <dl> <dt>1 (0x1)</dt> </dl> | Composite analógico de Resalte<br/> |
+| <dl> <dt>1 (0x1)</dt> </dl> | Compuesto análogo de Fuente<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl> | Compuesto digital<br/>        |
 | <dl> <dt>3 (0x3)</dt> </dl> | Digital Separate<br/>         |
 
@@ -446,11 +446,11 @@ Tipo de polaridad vertical.
 
 
 
-| Valor                                                                              | Significado                                                                   |
+| Value                                                                              | Significado                                                                   |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | La polaridad vertical es positiva.<br/>                                 |
 | <dl> <dt>1 (0x1)</dt> </dl> | La polaridad vertical es negativa<br/>                                  |
-| <dl> <dt>2 (0x2)</dt> </dl> | No es aplicable. El tipo de sincronización de señal debe ser digital independiente.<br/> |
+| <dl> <dt>2 (0x2)</dt> </dl> | No aplicable. El tipo de sincronización de señal debe ser independiente digitalmente.<br/> |
 
 
 
@@ -523,17 +523,17 @@ Tipo estándar de vídeo.
 
 
 
-| Valor                                                                                | Significado                                                                                                        |
+| Value                                                                                | Significado                                                                                                        |
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl>   | Otros<br/>                                                                                               |
-| <dl> <dt>1 (0x1)</dt> </dl>   | VESA DMT. De la especificación de control de tiempo del monitor de pantalla de Video Electronics Standard Association (VESA).<br/> |
+| <dl> <dt>1 (0x1)</dt> </dl>   | VESA DMT. En video electronics standard association (VESA) display monitor timings specification (Especificación de control de tiempo del monitor de pantalla de Video Electronics Standard Association [VESA]).<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl>   | VESA GTF. Del estándar fórmula de control de tiempo generalizado de VESA.<br/>                                            |
-| <dl> <dt>3 (0x3)</dt> </dl>   | VESA CVT/From VESA Coordinated Video Timings standard(VesA CVT/From VESA Coordinated Video Timings standard).<br/>                                             |
+| <dl> <dt>3 (0x3)</dt> </dl>   | VESA CVT/From VESA Coordinated Video Timings standard( VeSA CVT/From VESA Coordinated Video Timings standard).<br/>                                             |
 | <dl> <dt>4 (0x4)</dt> </dl>   | IBM<br/>                                                                                                 |
-| <dl> <dt>5 (0x5)</dt> </dl>   | manzana<br/>                                                                                               |
-| <dl> <dt>6 (0x6)</dt> </dl>   | NO M<br/>                                                                                              |
-| <dl> <dt>7 (0x7)</dt> </dl>   | J de JJ<br/>                                                                                              |
-| <dl> <dt>8 (0x8)</dt> </dl>   | ESTOS 433<br/>                                                                                            |
+| <dl> <dt>5 (0x5)</dt> </dl>   | MANZANA<br/>                                                                                               |
+| <dl> <dt>6 (0x6)</dt> </dl>   | HAN M<br/>                                                                                              |
+| <dl> <dt>7 (0x7)</dt> </dl>   | JJ J<br/>                                                                                              |
+| <dl> <dt>8 (0x8)</dt> </dl>   | HAN 433<br/>                                                                                            |
 | <dl> <dt>9 (0x9)</dt> </dl>   | PAL B<br/>                                                                                               |
 | <dl> <dt>10 (0xA)</dt> </dl>  | PAL B1<br/>                                                                                              |
 | <dl> <dt>11 (0xB)</dt> </dl>  | PAL G<br/>                                                                                               |
@@ -564,7 +564,7 @@ Tipo estándar de vídeo.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

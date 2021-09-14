@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bcae8595315d43737d88d6a302bcac3a328418abd19d77b96bd13ee5ef66496
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac32704ea240ccfc4d4de913b940e098ff8f4de4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118502658"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072657"
 ---
-# <a name="wm_dwmncrenderingchanged-message"></a>Mensaje \_ DWMNCRENDERINGCHANGED de WM
+# <a name="wm_dwmncrenderingchanged-message"></a>Mensaje \_ WM DWMNCRENDERINGCHANGED
 
 Se envía cuando ha cambiado la directiva de representación del área que no es de cliente.
 
@@ -32,14 +32,14 @@ Se envía cuando ha cambiado la directiva de representación del área que no es
 *wParam* 
 </dt> <dd>
 
-Especifica si la representación de DWM está habilitada para el área que no es de cliente de la ventana. **TRUE** si está habilitado; de lo contrario, **FALSE**.
+Especifica si la representación de DWM está habilitada para el área no cliente de la ventana. **TRUE** si está habilitado; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se usa.
+No se utiliza.
 
 </dd> </dl>
 
@@ -47,7 +47,7 @@ No se usa.
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -57,11 +57,11 @@ Las [**funciones DwmGetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

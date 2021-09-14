@@ -5,16 +5,16 @@ ms.assetid: 180c29d4-a305-45ac-8989-6226dccb75d5
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bde36cb70f937559dce20a73a485ec109a2cf6c6ae6c687655963c70e6ce22b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85494e26c391095fbf97e8e408ee6b6181756c03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119681235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073363"
 ---
 # <a name="remote-desktop-protocol-provider-interfaces"></a>Protocolo de escritorio remoto interfaces de proveedor de servicios
 
-Las siguientes interfaces son compatibles con la API Protocolo de escritorio remoto provider.
+Las siguientes interfaces son compatibles con Protocolo de escritorio remoto PROVIDER API.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -37,7 +37,7 @@ Expone métodos que proporcionan información sobre el estado de una conexión d
 [**IWRdsProtocolLicenseConnection**](/windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwrdsprotocollicenseconnection)
 </dt> <dd>
 
-Expone los métodos usados por Servicios de Escritorio remoto servicio para realizar el protocolo de enlace de licencias durante una secuencia de conexión.
+Expone los métodos utilizados por el servicio Servicios de Escritorio remoto para realizar el protocolo de enlace de licencias durante una secuencia de conexión.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Las interfaces siguientes han quedado en desuso y ya no se deben usar. Para los 
 
 <dl> <dt>
 
-[referencia Protocolo de escritorio remoto proveedor de recursos](custom-remote-protocol-reference.md)
+[referencia Protocolo de escritorio remoto proveedor de servicios](custom-remote-protocol-reference.md)
 </dt> <dt>
 
 [Protocolo de escritorio remoto provider enumerations](custom-remote-protocol-enumerations.md)

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d08b15eb2b8112afcef6c98a841a249672df2ae3fbb7f36ceea513d53a5b0478
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b17e42e75072033f952c7ef790365d6a363a5b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118351627"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073314"
 ---
 # <a name="iremotedesktopclienteventsonstatuschanged-method"></a>IRemoteDesktopClientEvents::OnStatusChanged (método)
 
@@ -70,7 +70,7 @@ Este método no devuelve ningún valor.
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                 |
-| Header<br/>                   | <dl> <dt>Locationapi.h</dt> </dl>       |
+| Encabezado<br/>                   | <dl> <dt>Locationapi.h</dt> </dl>       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | IID<br/>                      | DIID \_ IRemoteDesktopClientEvents se define como 079863B7-6D47-4105-8BFE-0CDCB360E67D<br/> |

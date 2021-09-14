@@ -4,12 +4,12 @@ ms.assetid: c26dac1d-9a75-440a-a0ef-a2029f138f3b
 title: Marcas de información de consulta (Winhttp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c66fd75ad1258123c3047dee4cafa4e57cb4dadd6675eb02deaa307085acbd55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b3d8a7f95f0e093f175901e4bed30f4055a04b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073162"
 ---
 # <a name="query-info-flags-winhttph"></a>Marcas de información de consulta (Winhttp.h)
 
@@ -224,7 +224,7 @@ Recupera una síntesis MD5 del cuerpo de la entidad con el fin de proporcionar u
 
 
 
-Recupera la ubicación en el cuerpo completo de la entidad donde se debe insertar el cuerpo parcial de la entidad y el tamaño total del cuerpo completo de la entidad.
+Recupera la ubicación en el cuerpo completo de la entidad donde se debe insertar el cuerpo de la entidad parcial y el tamaño total del cuerpo completo de la entidad.
 
 
 </dt> </dl> </dd> <dt>
@@ -279,7 +279,7 @@ Hace [**que WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttp
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_DATE"></span><span id="winhttp_query_date"></span>**FECHA DE \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_DATE"></span><span id="winhttp_query_date"></span>**FECHA DE CONSULTA WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -364,7 +364,7 @@ Recupera el host de Internet y el número de puerto del recurso que se solicita.
 
 
 
-Recupera el contenido del If-Match campo request-header.
+Recupera el contenido del campo If-Match de encabezado de solicitud.
 
 
 </dt> </dl> </dd> <dt>
@@ -394,7 +394,7 @@ Recupera el contenido del campo de encabezado de solicitud If-None-Match.
 
 
 
-Recupera el contenido del If-Range campo request-header. Este encabezado permite a la aplicación cliente comprobar si la entidad relacionada con una copia parcial de la entidad en la memoria caché de la aplicación cliente no se ha actualizado. Si la entidad no se ha actualizado, envíe los elementos que faltan en la aplicación cliente. Si la entidad se ha actualizado, envíe toda la entidad actualizada.
+Recupera el contenido del campo If-Range de encabezado de solicitud. Este encabezado permite a la aplicación cliente comprobar si la entidad relacionada con una copia parcial de la entidad en la memoria caché de la aplicación cliente no se ha actualizado. Si la entidad no se ha actualizado, envíe los elementos que faltan en la aplicación cliente. Si la entidad se ha actualizado, envíe toda la entidad actualizada.
 
 
 </dt> </dl> </dd> <dt>
@@ -434,7 +434,7 @@ Recibe la fecha y hora en que se modificó por última vez el recurso. El servid
 
 
 
-Recupera el URI absoluto usado en un encabezado de respuesta location.
+Recupera el URI absoluto usado en un encabezado de respuesta Location.
 
 
 </dt> </dl> </dd> <dt>
@@ -449,7 +449,7 @@ Indica el valor máximo de un valor DE CONSULTA \_ \_ \* WINHTTP. No es una marc
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_MAX_FORWARDS"></span><span id="winhttp_query_max_forwards"></span>**REENVÍOS \_ MÁXIMOS \_ DE CONSULTAS WINHTTP \_**
+<span id="WINHTTP_QUERY_MAX_FORWARDS"></span><span id="winhttp_query_max_forwards"></span>**REENVÍOS \_ \_ MÁXIMOS DE CONSULTAS \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -469,17 +469,17 @@ No compatible.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_MIME_VERSION"></span><span id="winhttp_query_mime_version"></span>**VERSIÓN MIME \_ DE CONSULTA \_ \_ WINHTTP**
+<span id="WINHTTP_QUERY_MIME_VERSION"></span><span id="winhttp_query_mime_version"></span>**VERSIÓN MIME \_ DE CONSULTA \_ WINHTTP \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Recibe la versión del protocolo Mime (Multipurpose Internet Mail Extensions) que se usó para construir el mensaje.
+Recibe la versión del protocolo Multipurpose Internet Mail Extensions (MIME) que se usó para construir el mensaje.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_ORIG_URI"></span><span id="winhttp_query_orig_uri"></span>**URI DE \_ ORIG DE \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_ORIG_URI"></span><span id="winhttp_query_orig_uri"></span>**URI DE \_ \_ ORIG DE CONSULTA WINHTTP \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -489,12 +489,12 @@ Obsoleto. Se mantiene para la compatibilidad de aplicaciones heredadas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_PRAGMA"></span><span id="winhttp_query_pragma"></span>**\_PRAGMA DE \_ CONSULTA WINHTTP**
+<span id="WINHTTP_QUERY_PRAGMA"></span><span id="winhttp_query_pragma"></span>**\_PRAGMA DE CONSULTA \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Recibe las directivas específicas de la implementación que se pueden aplicar a cualquier destinatario a lo largo de la cadena de solicitud/respuesta.
+Recibe las directivas específicas de la implementación que podrían aplicarse a cualquier destinatario a lo largo de la cadena de solicitud/respuesta.
 
 
 </dt> </dl> </dd> <dt>
@@ -509,7 +509,7 @@ Recupera el esquema de autenticación y el dominio kerberos devueltos por el pro
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_PROXY_AUTHORIZATION"></span><span id="winhttp_query_proxy_authorization"></span>**AUTORIZACIÓN DE \_ \_ PROXY DE CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_PROXY_AUTHORIZATION"></span><span id="winhttp_query_proxy_authorization"></span>**AUTORIZACIÓN DEL \_ PROXY DE \_ CONSULTA \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -529,7 +529,7 @@ Recupera el Proxy-Connection encabezado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_PROXY_SUPPORT"></span><span id="winhttp_query_proxy_support"></span>**COMPATIBILIDAD CON PROXY \_ DE \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_PROXY_SUPPORT"></span><span id="winhttp_query_proxy_support"></span>**COMPATIBILIDAD CON EL \_ \_ PROXY DE CONSULTA \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -549,7 +549,7 @@ Recibe verbos HTTP disponibles en este servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_RANGE"></span><span id="winhttp_query_range"></span>**INTERVALO DE \_ CONSULTAS \_ WINHTTP**
+<span id="WINHTTP_QUERY_RANGE"></span><span id="winhttp_query_range"></span>**INTERVALO DE CONSULTAS WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -559,12 +559,12 @@ Recupera el intervalo de bytes de una entidad.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_RAW_HEADERS"></span><span id="winhttp_query_raw_headers"></span>**ENCABEZADOS SIN \_ PROCESAR \_ DE CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_RAW_HEADERS"></span><span id="winhttp_query_raw_headers"></span>**ENCABEZADOS SIN \_ \_ PROCESAR DE CONSULTA \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Recibe todos los encabezados devueltos por el servidor. Cada encabezado finaliza con \\ "0". Un \\ "0" adicional finaliza la lista de encabezados.
+Recibe todos los encabezados devueltos por el servidor. Cada encabezado termina con \\ "0". Un \\ "0" adicional finaliza la lista de encabezados.
 
 
 </dt> </dl> </dd> <dt>
@@ -649,7 +649,7 @@ Recibe el código de estado devuelto por el servidor. Para obtener una lista de 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_STATUS_TEXT"></span><span id="winhttp_query_status_text"></span>**TEXTO DE ESTADO \_ DE \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_STATUS_TEXT"></span><span id="winhttp_query_status_text"></span>**TEXTO DE ESTADO \_ \_ DE CONSULTA \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -659,7 +659,7 @@ Recibe texto adicional devuelto por el servidor en la línea de respuesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_TITLE"></span><span id="winhttp_query_title"></span>**TÍTULO DE \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_TITLE"></span><span id="winhttp_query_title"></span>**TÍTULO DE CONSULTA \_ \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -719,7 +719,7 @@ Recupera información sobre el agente de usuario que realizó la solicitud.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_VARY"></span><span id="winhttp_query_vary"></span>**VARIAR LA \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_VARY"></span><span id="winhttp_query_vary"></span>**LAS CONSULTAS WINHTTP \_ \_ VARÍAN**
 </dt> <dd> <dl> <dt>
 
 
@@ -729,7 +729,7 @@ Recupera el encabezado que indica que la entidad se seleccionó de una serie de 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_VERSION"></span><span id="winhttp_query_version"></span>**VERSIÓN DE \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_VERSION"></span><span id="winhttp_query_version"></span>**VERSIÓN DE CONSULTA WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -739,7 +739,7 @@ Recupera la versión HTTP que está presente en la línea de estado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_VIA"></span><span id="winhttp_query_via"></span>**CONSULTA WINHTTP \_ \_ A TRAVÉS DE**
+<span id="WINHTTP_QUERY_VIA"></span><span id="winhttp_query_via"></span>**CONSULTA WINHTTP \_ A \_ TRAVÉS DE**
 </dt> <dd> <dl> <dt>
 
 
@@ -759,7 +759,7 @@ Recupera información adicional sobre el estado de una respuesta que podría no 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_WWW_AUTHENTICATE"></span><span id="winhttp_query_www_authenticate"></span>**CONSULTA WINHTTP \_ \_ WWW \_ AUTHENTICATE**
+<span id="WINHTTP_QUERY_WWW_AUTHENTICATE"></span><span id="winhttp_query_www_authenticate"></span>**AUTENTICACIÓN WWW DE \_ LA \_ CONSULTA \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -773,7 +773,7 @@ Las marcas modificadoras se usan junto con una marca de atributo para modificar 
 
 <dl> <dt>
 
-<span id="WINHTTP_QUERY_FLAG_NUMBER"></span><span id="winhttp_query_flag_number"></span>**NÚMERO DE MARCA \_ DE \_ CONSULTA \_ WINHTTP**
+<span id="WINHTTP_QUERY_FLAG_NUMBER"></span><span id="winhttp_query_flag_number"></span>**NÚMERO DE MARCA \_ \_ DE CONSULTA \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -793,7 +793,7 @@ Consulta solo encabezados de solicitud.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_FLAG_SYSTEMTIME"></span><span id="winhttp_query_flag_systemtime"></span>**MARCA DE \_ CONSULTA \_ \_ WINHTTP SYSTEMTIME**
+<span id="WINHTTP_QUERY_FLAG_SYSTEMTIME"></span><span id="winhttp_query_flag_systemtime"></span>**MARCA DE CONSULTA WINHTTP \_ \_ \_ SYSTEMTIME**
 </dt> <dd> <dl> <dt>
 
 
@@ -807,7 +807,7 @@ Devuelve el valor de encabezado como [**una estructura SYSTEMTIME,**](/windows/w
 </dt> <dd> <dl> <dt>
 
 
-Consulta los finalizadores de respuesta. Antes de consultar los finalizadores de respuesta, debe llamar a [**WinHttpReadData**](/windows/win32/api/Winhttp/nf-winhttp-winhttpreaddata) hasta que devuelva 0 bytes leídos.
+Consulta los finalizadores de respuesta. Antes de consultar los finalizadores de respuesta, debe llamar [**a WinHttpReadData**](/windows/win32/api/Winhttp/nf-winhttp-winhttpreaddata) hasta que devuelva 0 bytes leídos.
 
 
 </dt> </dl> </dd> </dl>
@@ -823,12 +823,12 @@ De forma predeterminada, [**WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]      |
-| Servidor mínimo compatible | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]   |
-| Header                   | <dl> <dt>Winhttp.h</dt> </dl> |
+| Cliente mínimo compatible | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]      |
+| Servidor mínimo compatible | Windows Server 2003, Windows 2000 Server con solo aplicaciones de escritorio sp3 \[\]   |
+| Encabezado                   | <dl> <dt>Winhttp.h</dt> </dl> |
 
 ## <a name="see-also"></a>Vea también
 
-* [Versiones winHTTP](winhttp-versions.md)
+* [Versiones de WinHTTP](winhttp-versions.md)

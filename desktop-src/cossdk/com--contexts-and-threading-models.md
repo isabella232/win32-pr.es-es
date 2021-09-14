@@ -1,22 +1,22 @@
 ---
-description: Contextos COM+ y modelos de subprocesamiento
+description: Contextos y modelos de subprocesamiento de COM+
 ms.assetid: 50ccf75e-2652-4254-a771-af83cc9248b3
-title: Contextos COM+ y modelos de subprocesamiento
+title: Contextos y modelos de subprocesamiento de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07c691eafff76b64fb67fa22c2c3ac59eba483d479d6f2c19940091e7c7e685d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0ba93fa62cc4c9f2f7e01ef23b5c551e4aecac6f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072994"
 ---
-# <a name="com-contexts-and-threading-models"></a>Contextos COM+ y modelos de subprocesamiento
+# <a name="com-contexts-and-threading-models"></a>Contextos y modelos de subprocesamiento de COM+
 
-En los temas siguientes se tratan los contextos de COM+ y cómo COM+ usa los modelos de subprocesos COM.
+En los temas siguientes se tratan los contextos de COM+ y cómo COM+ usa los modelos de subprocesamiento COM.
 
--   [Contextos COM+](com--contexts.md)
--   [Modelos de subprocesos COM+](com--threading-models.md)
+-   [Contextos de COM+](com--contexts.md)
+-   [Modelos de subprocesamiento de COM+](com--threading-models.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

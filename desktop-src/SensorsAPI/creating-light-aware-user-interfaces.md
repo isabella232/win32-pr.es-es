@@ -4,12 +4,12 @@ ms.assetid: c84075b2-ae41-4915-a0f6-3a9c017ae0b8
 title: Creación de Light-Aware interfaces de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bd97bb304c3a8718ae4b32d8b9100a1e7eb7a18240b9089c112272f588ee209
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a4b6d404e366cb898114fe61729ab1ad722feb3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118890295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073557"
 ---
 # <a name="creating-light-aware-user-interfaces"></a>Creación de Light-Aware interfaces de usuario
 
@@ -17,7 +17,7 @@ En esta sección se trata el uso de datos del sensor de luz ambiente y cómo se 
 
 Los sensores de luz ambiental exponen datos que se pueden usar para determinar varios aspectos de las condiciones de iluminación donde se encuentra el sensor. Los sensores de luz ambiental pueden exponer el brillo general de un entorno (iluminación) y otros aspectos de la luz circundante, como la temperatura del color o la coloración.
 
-Los equipos pueden ser más útiles de varias maneras cuando el sistema responde a las condiciones de iluminación. Esto incluye controlar el brillo de la pantalla del equipo (una nueva característica totalmente compatible en Windows 7), ajustar automáticamente el nivel de iluminación de los teclados iluminados e incluso el control de brillo para otras luces (como la iluminación de botones, las luces de actividad, y así sucesivamente).
+Los equipos pueden ser más útiles de varias maneras cuando el sistema responde a las condiciones de iluminación. Esto incluye controlar el brillo de la pantalla del equipo (una nueva característica totalmente compatible en Windows 7), ajustar automáticamente el nivel de iluminación de los teclados iluminados e incluso el control de brillo para otras luces (como la iluminación de botones, las luces de actividad, entre otras).
 
 Los programas de usuario final también pueden beneficiarse de los sensores de luz. Los programas pueden aplicar un tema adecuado para una condición de iluminación determinada, como un tema al aire libre específico y un tema interior. Quizás el aspecto más importante de la integración del sensor de luz con los programas es la legibilidad y las optimizaciones de legibilidad basadas en condiciones de iluminación.
 
@@ -42,7 +42,7 @@ En el resto de esta sección, explorará algunas cosas que puede hacer para opti
 ## <a name="in-this-section"></a>En esta sección
 
 -   [Aspectos básicos de Light-Aware interfaces de usuario](fundamentals-of-light-aware-user-interfaces.md)
--   [Ejemplos de Light-Aware interfaces de usuario](examples-of-light-aware-user-interfaces.md)
+-   [Ejemplos de interfaces Light-Aware usuario](examples-of-light-aware-user-interfaces.md)
 -   [Optimización de la experiencia del usuario](optimizing-the-user-experience.md)
 -   [Descripción e interpretación de los valores de Trass](understanding-and-interpreting-lux-values.md)
 -   [Uso de datos del sensor de luz](handling-data-from-multiple-light-sensors.md)

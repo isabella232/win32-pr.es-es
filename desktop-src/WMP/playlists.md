@@ -17,15 +17,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0933a5525d2085185ddf151da3c4765040305a22
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073250"
 ---
 # <a name="playlists"></a>Listas
 
-El Reproductor de Windows Media de objetos de control de ActiveX 6.4 incluye cuatro métodos y una propiedad para trabajar con listas de reproducción Windows metarchivo multimedia:
+El Reproductor de Windows Media de objetos de control de ActiveX 6.4 incluye cuatro métodos y una propiedad para trabajar con listas de reproducción de metarchivo multimedia de Windows:
 
 -   *Player6*. **GetCurrentEntry**
 -   *Player6*. **SetCurrentEntry**
@@ -35,7 +35,7 @@ El Reproductor de Windows Media de objetos de control de ActiveX 6.4 incluye cua
 
 Juntos, proporcionan una funcionalidad limitada para navegar por un metarchivo de lista de reproducción con una extensión de nombre de archivo .asx y recuperar información sobre las entradas contenidas en la lista de reproducción.
 
-Reproductor de Windows Media 7 introdujo "Media Library". La biblioteca permite a los usuarios organizar su contenido multimedia digital, así como crear listas de reproducción personalizadas que se pueden administrar desde la interfaz gráfica de usuario del reproductor. El modelo de objetos de control ActiveX de Reproductor de Windows Media 7 o posterior proporciona compatibilidad para trabajar con listas de reproducción de biblioteca, así como listas de reproducción contenidas en metarchivos multimedia de Windows con una extensión de nombre de archivo .asx.
+Reproductor de Windows Media 7 introdujo "Media Library". La biblioteca permite a los usuarios organizar su contenido multimedia digital, así como crear listas de reproducción personalizadas que se pueden administrar desde la interfaz gráfica de usuario del reproductor. El modelo de objetos de control ActiveX 7 o posterior de Reproductor de Windows Media proporciona compatibilidad para trabajar con listas de reproducción de biblioteca, así como listas de reproducción contenidas en metarchivos multimedia de Windows con una extensión de nombre de archivo .asx.
 
 > [!Note]  
 > Por motivos de seguridad, el usuario debe conceder derechos de acceso a la biblioteca para que el programa pueda manipular su contenido. Los derechos de acceso solo se pueden solicitar y conceder a través Reproductor de Windows Media modelo de objetos de la serie 9 o posterior. Para obtener más información sobre los derechos de acceso, vea [Acceso a la biblioteca](library-access.md).
@@ -65,7 +65,7 @@ WMP9.currentPlaylist = pl;
 
 Con más frecuencia, querrá trabajar con la lista de reproducción actual. Aunque es posible usar varios objetos de lista de reproducción, el reproductor solo puede recuperar *uno.* **Propiedad currentPlaylist** en un momento dado: la que Reproductor de Windows Media está procesando en ese momento.
 
-Cuando Reproductor de Windows Media 7 o posterior reproduce un metarchivo multimedia de Windows con una extensión de nombre de archivo .asx, primero crea un objeto **Lista de** reproducción. A continuación, rellena el objeto con la información de la lista de reproducción .asx y, a continuación, hace que ese objeto **de** lista de reproducción sea la lista de reproducción actual. Esto significa que puede usar las propiedades y los métodos asociados al objeto **Lista** de reproducción para manipular listas de reproducción .asx exactamente como controlaría las listas de reproducción de la biblioteca. Por ejemplo, para recuperar el número de entradas de una lista de reproducción .asx mediante el modelo de objetos de la versión 6.4, use *player6*. **Propiedad EntryCount:**
+Cuando Reproductor de Windows Media 7 o posterior reproduce un metarchivo multimedia de Windows con una extensión de nombre de archivo .asx, primero crea un objeto **Playlist.** A continuación, rellena el objeto con la información de la lista de reproducción .asx y, a continuación, hace que ese objeto **de** lista de reproducción sea la lista de reproducción actual. Esto significa que puede usar las propiedades y los métodos asociados al objeto **Lista** de reproducción para manipular listas de reproducción .asx exactamente como controlaría las listas de reproducción de la biblioteca. Por ejemplo, para recuperar el número de entradas de una lista de reproducción .asx mediante el modelo de objetos de la versión 6.4, use *player6*. **Propiedad EntryCount:**
 
 
 ```C++
@@ -134,7 +134,7 @@ WMP6.SetCurrentEntry(2);
 
 
 
-Los índices de entrada de lista de reproducción se basan en cero Reproductor de Windows Media 7 o posterior; para convertir la segunda entrada en una lista de reproducción de metarchivo en la actual, al usar el modelo de objetos Reproductor de Windows Media 7 o posterior, use la sintaxis siguiente:
+Los índices de entrada de lista de reproducción se basan en cero Reproductor de Windows Media 7 o posterior; para que la segunda entrada de un metarchivo sea la actual, al usar el modelo de objetos Reproductor de Windows Media 7 o posterior, use la sintaxis siguiente:
 
 
 ```C++

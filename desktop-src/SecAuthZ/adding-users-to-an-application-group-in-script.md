@@ -1,5 +1,5 @@
 ---
-description: Un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que se pueden anidar grupos de usuarios. Un grupo de aplicaciones se representa mediante un objeto IAzApplicationGroup.
+description: Un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que los grupos de usuarios se pueden anidar. Un grupo de aplicaciones se representa mediante un objeto IAzApplicationGroup.
 ms.assetid: 9ec5b55e-3d66-44f6-9b59-a5e66192d8ac
 title: Agregar usuarios a un grupo de aplicaciones en script
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 18c990e3140dcfc6a4cbc2d57379431075387f43af8fbb0b22f344ffd0b9a30b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fd92a69a236e6b4d04d5bb0a1a8b961c699d434
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117784946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073728"
 ---
 # <a name="adding-users-to-an-application-group-in-script"></a>Agregar usuarios a un grupo de aplicaciones en script
 
-En el Administrador de autorización, un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que se pueden anidar grupos de usuarios. Un grupo de aplicaciones se representa mediante un [**objeto IAzApplicationGroup.**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup)
+En el Administrador de autorización, un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que los grupos de usuarios se pueden anidar. Un grupo de aplicaciones se representa mediante un [**objeto IAzApplicationGroup.**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup)
 
 **Para permitir que los miembros de un grupo de aplicaciones realicen una tarea o un conjunto de tareas**
 

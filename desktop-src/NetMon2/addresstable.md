@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: c1c766e29033136954abab69755e1231e610983314cdaa01da3957889af5eb33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41acab19f83fdcc88a384c0407b666a7f641a598
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074173"
 ---
 # <a name="addresstable-structure"></a>AddressTABLE (estructura)
 
@@ -37,7 +37,7 @@ typedef struct _ADDRESSTABLE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Matriz de pares de direcciones. Tenga en cuenta que solo puede almacenar hasta o
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use esta estructura como parte del proceso de construcción del filtro de captura. Para obtener más información sobre cómo implementar esta estructura, vea [Capturar filtros](capture-filters.md).
 
@@ -70,7 +70,7 @@ Use esta estructura como parte del proceso de construcción del filtro de captur
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

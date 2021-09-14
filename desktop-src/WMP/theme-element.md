@@ -10,12 +10,12 @@ keywords:
 - elements,THEME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c15091ffa93e3ae64a06979580931c27bdf4c1cd2e26c7acc206d76de8b0fc4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8cd0d40b4b020cf5416569417401af9e4f3a33b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119507395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073194"
 ---
 # <a name="theme-element"></a>ELEMENTO THEME
 

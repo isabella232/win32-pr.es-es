@@ -5,12 +5,12 @@ ms.assetid: 345fd6e7-ae14-422f-bcc1-7837b867747e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c91fae358cc343e3ca27942f80bd50aa58539054e6aba2b86df9ff30d8d79c26
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 89fa13e2490bb1b0809015842d7565dad1324684
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119737865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073355"
 ---
 # <a name="remote-desktop-protocol-provider-unions"></a>Protocolo de escritorio remoto de proveedor de servicios
 

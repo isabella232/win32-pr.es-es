@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6a1dabc2e1e0bbe0d65da2000e2cb70c4e4bb421fdaf5196c1682f856e54e826
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db3f4a26803242f4ac9d3cb1de09805f9dd57012
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119482775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072636"
 ---
 # <a name="apijetunregistercallback-method"></a>Método Api.JetUnregisterCallback
 
@@ -84,7 +84,7 @@ public static void JetUnregisterCallback(
   - cbtyp  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_cbtyp](./jet-cbtyp-enumeration.md)  
     
-    Los motivos de devolución de llamada por los que la aplicación ya no desea recibir notificaciones.
+    Las razones de devolución de llamada por las que la aplicación ya no desea recibir notificaciones.
 
 <!-- end list -->
 
@@ -93,11 +93,11 @@ public static void JetUnregisterCallback(
     
     Identificador de la devolución de llamada registrada devuelta por [JetRegisterCallback(JET_SESID, JET_TABLEID, JET_cbtyp, JET_CALLBACK, IntPtr, JET_HANDLE).](./api.jetregistercallback-method.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

@@ -4,12 +4,12 @@ ms.assetid: d477afed-4a14-49b2-8728-d3049de18989
 title: Devoluciones de llamada WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6636affb0328f08024229fe318932fdadc59b4a683bda546d6e440b90d7e86a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d7b848b1c11519883e5a986885f94316a6de0a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117743888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073142"
 ---
 # <a name="winhttp-callbacks"></a>Devoluciones de llamada WinHTTP
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d4fbe1cb336df2792f74e8fc85cb1ec6f331b5c48f75e6876b6f697d40a3dd5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2a1b2dbbe50b9579964c41225fb84e0688acc151
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073317"
 ---
 # <a name="iremotedesktopclienteventsonlogincompleted-method"></a>IRemoteDesktopClientEvents::OnLoginCompleted (método)
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5e270f3069e3b20a727bcb5bcf738284ec2c59707255560201632c360c8c0fe9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b4a1b5e6aeaa77c0bdfe12b1d5b68fde018f236
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118857545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073420"
 ---
 # <a name="daysofweektype-complex-type"></a>Tipo complejo daysOfWeekType
 
@@ -86,7 +86,7 @@ Define los elementos secundarios y la información de secuenciación para los el
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
@@ -97,7 +97,7 @@ Define los elementos secundarios y la información de secuenciación para los el
 
 <dl> <dt>
 
-[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

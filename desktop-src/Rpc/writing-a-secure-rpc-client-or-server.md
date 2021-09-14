@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, procedimientos recomendados, escritura de un cliente o servidor seguro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b752d8dab216691105e428833c83bce28b974f121ddcc77861fbb6671d72dd22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac006f82a0db8abcd7184b2453a970521004145b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073826"
 ---
 # <a name="writing-a-secure-rpc-client-or-server"></a>Escritura de un cliente o servidor RPC seguro
 
@@ -33,7 +33,7 @@ Esta sección se divide en los temas siguientes:
 -   [Identificadores de contexto strict y type strict](strict-and-type-strict-context-handles.md)
 -   [No confiar en el mismo nivel](do-not-trust-your-peer.md)
 -   [No usar la seguridad de los puntos de conexión](do-not-use-endpoint-security.md)
--   [Tenga cuidado con otros puntos de conexión RPC que se ejecutan en el mismo proceso](be-wary-of-other-rpc-endpoints-running-in-the-same-process.md)
+-   [Tenga cuidado con otros puntos de conexión RPC que se ejecutan en el mismo proceso.](be-wary-of-other-rpc-endpoints-running-in-the-same-process.md)
 -   [Compruebe que el servidor Quién que dice ser](verify-the-server-is-who-it-claims-to-be.md)
 -   [Usar secuencias de protocolo estándar](use-mainstream-protocol-sequences.md)
 -   [¿Qué tan seguro es mi servidor RPC ahora?](how-secure-is-my-rpc-server-now.md)

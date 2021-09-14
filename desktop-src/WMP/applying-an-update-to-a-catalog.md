@@ -3,31 +3,31 @@ title: Aplicar una actualización a un catálogo
 description: Aplicar una actualización a un catálogo
 ms.assetid: 4aedb0d6-36c7-425c-b6d3-e16161cf6828
 keywords:
-- Reproductor de Windows Media en línea, aplicar actualizaciones a catálogos
+- Reproductor de Windows Media en línea, aplicar actualizaciones a los catálogos
 - tiendas en línea, aplicación de actualizaciones a catálogos
 - tiendas en línea de tipo 1, aplicación de actualizaciones a catálogos
 - Reproductor de Windows Media en línea, actualizar catálogos
 - tiendas en línea, actualizar catálogos
 - tiendas en línea de tipo 1, actualizar catálogos
-- Reproductor de Windows Media en línea, actualizaciones del catálogo
-- tiendas en línea, actualizaciones del catálogo
-- tiendas en línea de tipo 1, actualizaciones del catálogo
+- Reproductor de Windows Media en línea, actualizaciones de catálogo
+- tiendas en línea, actualizaciones de catálogo
+- tiendas en línea de tipo 1, actualizaciones de catálogo
 - actualizaciones del catálogo
 - actualizar catálogos
 - aplicación de actualizaciones a catálogos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 114b5b341df1101b221a3d8227bf0526bfa32af744f1dca7b0a53ca2d7793c46
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d468edb7d09b8804fa924f7c31fc1be45d27c8fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073287"
 ---
 # <a name="applying-an-update-to-a-catalog"></a>Aplicar una actualización a un catálogo
 
 > [!Note]  
-> Normalmente, esto no se hace excepto con fines de diagnóstico, por ejemplo, para ayudar a comprobar que un archivo de diferencia es válido. El catálogo generado de esta manera no está comprimido y no se debe pasar a Reproductor de Windows Media.
+> Normalmente, esto no se hace excepto con fines de diagnóstico, por ejemplo, para ayudar a comprobar que un archivo de diferencia es válido. El catálogo generado de esta manera no está comprimido y no debe pasarse a Reproductor de Windows Media.
 
  
 

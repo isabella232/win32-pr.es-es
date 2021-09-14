@@ -1,48 +1,48 @@
 ---
-title: Porte de curvas DE LABS DE PORTE
-description: Las funciones De OpenGL para dibujar curvas DE COLOR SON muy similares a las funciones GL de IRIS. Puede especificar secuencias de contención y puntos de control mediante una función gluNurbsCurve, que debe estar contenida dentro de un par gluBeginCurve/gluEndCurve.
+title: Porte de curvas DE COLORERBS
+description: Las funciones de OpenGL para dibujar curvas DE ASEBS son muy similares a las funciones GL de IRIS. Las secuencias de secuencias y los puntos de control se especifican mediante una función gluNurbsCurve, que debe estar dentro de un par gluBeginCurve/gluEndCurve.
 ms.assetid: 954e8029-06bd-4072-9b84-53ecba1d05da
 keywords:
-- Porte de IRIS GL, curvas DE COLORYBS
+- Porte de IRIS GL, curvas DE ASEBS
 - porte de curvas IRIS GL,GLBS
-- porte a OpenGL desde IRIS GL, curvas DE IRISBS
-- Porte de OpenGL desde iris gl,curvas DE IRISBS
-- Curvas DE LAS CURVAS DE LAS CURVAS DE COLOR
+- porte a OpenGL desde curvas IRIS GL,GLBS
+- Porte de OpenGL desde curvas IRIS GL,GLBS
+- Curvas DE CURVAS DE CURVAS
 - curvas
 - Porte de IRIS GL, curvas
-- porte desde IRIS GL, curvas
+- porting from IRIS GL,curves
 - porte a OpenGL desde IRIS GL, curvas
 - Porte de OpenGL desde IRIS GL, curvas
-- SPLINEBS (B-spline no uniforme)
-- Spline B no uniforme lógica (SPLINE) (SPLINEBS)
+- SPLINEBS (spline B no uniforme lógica)
+- Spline B no uniforme lógica (SPLINEBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d9aa43bcc40c2b6a93eb5690abe4265f792a58a2520e579d536a08520ca4f29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4f539e466ce8ade17d135c9369e1f641831792e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074007"
 ---
-# <a name="porting-nurbs-curves"></a>Porte de curvas DE LABS DE PORTE
+# <a name="porting-nurbs-curves"></a>Porte de curvas DE COLORERBS
 
-Las funciones De OpenGL para dibujar curvas DE COLOR SON muy similares a las funciones GL de IRIS. Puede especificar secuencias de contención y puntos de control mediante una función [**gluNurbsCurve,**](glunurbscurve.md) que debe estar contenida dentro de un par [**gluBeginCurve**](glubegincurve.md)  /  [**gluEndCurve.**](gluendcurve.md)
+Las funciones de OpenGL para dibujar curvas DE ASEBS son muy similares a las funciones GL de IRIS. Las secuencias de secuencias y los puntos de control se especifican mediante una función [**gluNurbsCurve,**](glunurbscurve.md) que debe incluirse dentro de un par [**gluBeginCurve**](glubegincurve.md)  /  [**gluEndCurve.**](gluendcurve.md)
 
 En la tabla siguiente se enumeran las funciones GL de IRIS para dibujar curvas DE AMMBS y sus funciones OpenGL equivalentes.
 
 
 
-| Función GL de IRIS | Función OpenGL                        | Significado                     |
+| Función IRIS GL | Función OpenGL                        | Significado                     |
 |------------------|----------------------------------------|-----------------------------|
 | **bgncurve**     | [**gluBeginCurve**](glubegincurve.md) | Comienza una definición de curva.  |
-| **ybscurve**   | [**gluNurbsCurve**](glunurbscurve.md) | Especifica los atributos de curva. |
+| **ybscurve**   | [**gluNurbsCurve**](glunurbscurve.md) | Especifica atributos de curva. |
 | **endcurve**     | [**gluEndCurve**](gluendcurve.md)     | Finaliza una definición de curva.    |
 
 
 
  
 
-Asocie las coordenadas de posición, textura y color mediante la presentación de cada una como **un gluNurbsCurve** independiente dentro del par de inicio y fin. No puede realizar más de una llamada a **gluNurbsCurve** para cada fragmento de datos de color, posición y textura dentro de un único par **gluBeginCurve/gluEndCurve.** Debe realizar exactamente una llamada para describir la posición de la curva (una descripción DE GL \_ MAP1 VERTEX 3 o \_ GL \_ \_ MAP1 VERTEX \_ \_ 4). Cuando se llama **a gluEndCurve**, la curva se tesela en segmentos de línea y, a continuación, se representa.
+Asocie las coordenadas de posición, textura y color mediante la presentación de cada una como **un gluNurbsCurve** independiente dentro del par inicial y final. No puede realizar más de una llamada a **gluNurbsCurve** para cada fragmento de datos de color, posición y textura dentro de un único par **gluBeginCurve/gluEndCurve.** Debe realizar exactamente una llamada para describir la posición de la curva (una descripción DE GL \_ MAP1 VERTEX 3 o \_ GL \_ \_ MAP1 VERTEX \_ \_ 4). Cuando se llama **a gluEndCurve,** la curva se tesela en segmentos de línea y, a continuación, se representa.
 
 En la tabla siguiente se enumeran los tipos de curva IRIS GL y OpenGL GLBS.
 

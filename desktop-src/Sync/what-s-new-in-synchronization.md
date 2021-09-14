@@ -4,12 +4,12 @@ ms.assetid: 16cd98d2-adc5-4a14-ad39-a0c5b4cc00cc
 title: Novedades de la sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e998e4c925fdfc702e0a54ec9fce53ab24577c97f563670fc1710dd1308a21e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4702ba10126d9c0eeeb85462195680b074918584
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117959063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073532"
 ---
 # <a name="whats-new-in-synchronization"></a>Novedades de la sincronización
 
@@ -45,7 +45,7 @@ Recupera los resultados de una operación superpuesta en el archivo, canalizaci�
 [**InitializeSynchronizationBarrona**](/windows/desktop/api/synchapi/nf-synchapi-entersynchronizationbarrier)
 </dt> <dd>
 
-Especifica el número máximo de subprocesos y número de número de subprocesos para una nueva barrera de sincronización.
+Especifica el número máximo de subprocesos y número de giros para una nueva barrera de sincronización.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Espera a que cambie el valor de la dirección especificada.
 [**WakeByAddressAll**](/windows/desktop/api/SynchAPI/nf-synchapi-wakebyaddressall)
 </dt> <dd>
 
-Reactiva todos los subprocesos que esperan a que cambie el valor de una dirección.
+Reactiva todos los subprocesos que están esperando a que cambie el valor de una dirección.
 
 </dd> <dt>
 
@@ -84,14 +84,14 @@ Realiza una operación de suma atómica en los valores **LONG** especificados. L
 [**InterlockedAddNoFence64**](/previous-versions/windows/desktop/legacy/hh972630(v=vs.85))
 </dt> <dd>
 
-Realiza una operación de suma atómica en los valores **LONGLONG** especificados. La operación se realiza de forma atómica, pero sin usar barreras de memoria.
+Realiza una operación de suma atómica en los valores **LONGLONG especificados.** La operación se realiza de forma atómica, pero sin usar barreras de memoria.
 
 </dd> <dt>
 
 [**InterlockedAndNoFence**](/previous-versions/windows/desktop/legacy/hh972634(v=vs.85))
 </dt> <dd>
 
-Realiza una operación AND atómica en los valores **LONG especificados.** La operación se realiza de forma atómica, pero sin usar barreras de memoria.
+Realiza una operación AND atómica en los valores **LONG** especificados. La operación se realiza de forma atómica, pero sin usar barreras de memoria.
 
 </dd> <dt>
 
@@ -126,14 +126,14 @@ Prueba el bit especificado del valor **LONG64** especificado y lo complementa. L
 [**InterlockedBitTestAndResetAcquire**](/previous-versions/windows/desktop/legacy/hh972636(v=vs.85))
 </dt> <dd>
 
-Prueba el bit especificado del valor **LONG** especificado y lo establece en 0. La operación es atómica y se realiza con la semántica de adquisición de ordenación de memoria.
+Comprueba el bit especificado del valor **LONG** especificado y lo establece en 0. La operación es atómica y se realiza con la semántica de adquisición de ordenación de memoria.
 
 </dd> <dt>
 
 [**InterlockedBitTestAndResetRelease**](/previous-versions/windows/desktop/legacy/hh972637(v=vs.85))
 </dt> <dd>
 
-Prueba el bit especificado del valor **LONG** especificado y lo establece en 0. La operación es atómica y se realiza mediante la semántica de liberación de memoria.
+Comprueba el bit especificado del valor **LONG** especificado y lo establece en 0. La operación es atómica y se realiza mediante la semántica de liberación de memoria.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Realiza una operación atómica de comparación e intercambio en los valores esp
 [**InterlockedCompareExchange16Acquire**](/previous-versions/windows/desktop/legacy/hh972642(v=vs.85))
 </dt> <dd>
 
-Realiza una operación atómica de comparación e intercambio en los valores especificados. La función compara dos valores de 16 bits especificados e intercambia con otro valor de 16 bits en función del resultado de la comparación. La operación se realiza con la semántica de adquisición de ordenación de memoria.
+Realiza una operación atómica de comparación e intercambio en los valores especificados. La función compara dos valores de 16 bits especificados e intercambia con otro valor de 16 bits en función del resultado de la comparación. La operación se realiza con la adquisición de semántica de ordenación de memoria.
 
 </dd> <dt>
 
@@ -224,7 +224,7 @@ Disminuye (disminuye en uno) el valor de la variable de 16 bits especificada com
 [**InterlockedDecrement16Acquire**](/previous-versions/windows/desktop/legacy/hh972649(v=vs.85))
 </dt> <dd>
 
-Disminuye (disminuye en uno) el valor de la variable de 16 bits especificada como una operación atómica. La operación se realiza con la semántica de adquisición de ordenación de memoria.
+Disminuye (disminuye en uno) el valor de la variable de 16 bits especificada como una operación atómica. La operación se realiza con la adquisición de semántica de ordenación de memoria.
 
 </dd> <dt>
 
@@ -287,7 +287,7 @@ Establece una variable de 64 bits en el valor especificado como una operación a
 [**InterlockedExchangePointerNoFence**](/previous-versions/windows/desktop/legacy/hh972661(v=vs.85))
 </dt> <dd>
 
-Intercambia de forma atómica un par de direcciones. La operación se realiza de forma atómica, pero sin usar barreras de memoria.
+Intercambia atómicamente un par de direcciones. La operación se realiza de forma atómica, pero sin usar barreras de memoria.
 
 </dd> <dt>
 

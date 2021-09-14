@@ -4,12 +4,12 @@ ms.assetid: bf98318b-4d87-44cc-85a1-68faf5547e06
 title: Conceptos de reciclaje de aplicaciones COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba6a635487427fce3f17203f11426261996348a5e4057ab8bceebcae552d51bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab37376ff3bc6d03f454f63822641ed69fad0b47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129267"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072999"
 ---
 # <a name="com-application-recycling-concepts"></a>Conceptos de reciclaje de aplicaciones COM+
 
@@ -24,9 +24,9 @@ El reciclaje de aplicaciones funciona mediante la creación de un duplicado del 
 
 Puede configurar el reciclaje de aplicaciones de forma administrativa, mediante la herramienta administrativa Servicios de componentes o mediante programación, a través del SDK administrativo de COM+. Puede reciclar procesos en función de varios criterios, determinados por las siguientes propiedades de un objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) en la [**colección Applications:**](applications.md)
 
--   **RecycleLifetimeLimit.** El número máximo de minutos que un proceso puede ejecutarse antes de reciclarse. El intervalo válido es de 0 a 30 240 minutos (21 días). El número predeterminado de minutos es 0, lo que indica que el proceso no reciclará para alcanzar un límite de duración.
+-   **RecycleLifetimeLimit.** El número máximo de minutos que un proceso puede ejecutarse antes de reciclarse. El intervalo válido es de 0 a 30 240 minutos (21 días). El número predeterminado de minutos es 0, lo que indica que el proceso no reciclará al alcanzar un límite de duración.
 -   **RecycleMemoryLimit.** Cantidad máxima de uso de memoria de proceso (en kilobytes) antes de reciclar el proceso. Si el uso de memoria del proceso supera el número especificado durante más de un minuto, el proceso se recicla. El intervalo válido es de 0 a 1.048.576 KB. La cantidad predeterminada de uso de memoria es de 0 KB, lo que indica que el proceso no reciclará al alcanzar un límite de memoria.
--   **RecycleCallLimit.** Número máximo de llamadas que los objetos de aplicación pueden aceptar antes de reciclar el proceso. El intervalo válido es de 0 a 1.048.576 llamadas. El número predeterminado de llamadas es 0, lo que indica que el proceso no reciclará para alcanzar un límite de llamadas.
+-   **RecycleCallLimit.** Número máximo de llamadas que los objetos de aplicación pueden aceptar antes de reciclar el proceso. El intervalo válido es de 0 a 1.048.576 llamadas. El número predeterminado de llamadas es 0, lo que indica que el proceso no reciclará al alcanzar un límite de llamadas.
 -   **RecycleActivationLimit.** Número máximo de activaciones de objetos de aplicación que se aceptan antes de reciclar el proceso. El intervalo válido es de 0 a 1.048.576 activaciones. El número predeterminado de activaciones es 0, lo que indica que el proceso no reciclará al alcanzar un límite de activación.
 
 Además, la propiedad RecycleExpirationTimeout del objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) se usa para forzar el cierre de un proceso reciclado. Indica el número de minutos que hay que esperar a que se liberen todas las referencias externas a los objetos del proceso reciclado antes de cerrar forzadamente el proceso. El intervalo válido es de 1 a 1440 minutos (24 horas) y el tiempo de espera de expiración predeterminado es de 15 minutos. Este valor sólo se usa cuando ya se ha determinado que un proceso se reciclará en función de otros criterios.

@@ -4,12 +4,12 @@ ms.assetid: 95e5750f-fdc5-41f3-a4ce-9593a7081e95
 title: Clave Storage recuperación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e81b2100f005f0ff293e34a3f4c0a7460b7a4d4e9c2b15fbe0b3577b5e52394a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5abfd6319353440c580d53990075a71613a1eba9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118907695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073658"
 ---
 # <a name="key-storage-and-retrieval"></a>Clave Storage recuperación
 
@@ -28,7 +28,7 @@ Para cumplir los requisitos de criterios comunes (CC), las claves de larga durac
 
 El aislamiento de claves está habilitado de forma predeterminada en Windows Server 2008 y Windows Vista. La característica de aislamiento de claves no está disponible en plataformas anteriores a estas. Además, los KSP de terceros no se cargan en el servicio de aislamiento de claves (proceso LSA). Solo el KSP de Microsoft se carga en el servicio de aislamiento de claves.
 
-El proceso LSA se usa como proceso de aislamiento de claves para maximizar el rendimiento. Todo el acceso a las claves privadas pasa por el enrutador de almacenamiento de claves, que expone un conjunto completo de funciones para administrar y usar claves privadas.
+El proceso LSA se usa como proceso de aislamiento de claves para maximizar el rendimiento. Todo el acceso a las claves privadas pasa a través del enrutador de almacenamiento de claves, que expone un conjunto completo de funciones para administrar y usar claves privadas.
 
 CNG almacena la parte pública de la clave almacenada por separado de la parte privada. La parte pública de un par de claves también se mantiene en el servicio de aislamiento de claves y se accede a esta mediante la llamada a procedimiento remoto local (LRPC). El enrutador de almacenamiento de claves usa LRPC al llamar al proceso de aislamiento de claves. Todo el acceso a las claves privadas pasa a través del enrutador de clave privada y el CNG lo audita.
 
@@ -53,7 +53,7 @@ CNG admite los siguientes algoritmos clave.
 | Algoritmo | Longitud de clave/hash (bits)             |
 |-----------|------------------------------------|
 | RSA       | De 512 a 16384, en incrementos de 64 bits |
-| Dh        | De 512 a 16384, en incrementos de 64 bits |
+| DH        | De 512 a 16384, en incrementos de 64 bits |
 | DSA       | De 512 a 1024, en incrementos de 64 bits  |
 | ECDSA     | P-256, P-384, P-521 (curvas NIST)  |
 | ECDH      | P-256, P-384, P-521 (curvas NIST)  |
@@ -85,7 +85,7 @@ Los CSP de CryptoAPI heredados de Microsoft almacenan claves privadas en los dir
 
  
 
-CNG almacena las claves privadas en los directorios siguientes.
+CNG almacena claves privadas en los directorios siguientes.
 
 | Tipo de clave                | Directorio                                                          |
 |-------------------------|--------------------------------------------------------------------|
@@ -101,16 +101,16 @@ CNG almacena las claves privadas en los directorios siguientes.
 
 Estas son algunas de las diferencias entre los contenedores de claves CryptoAPI y CNG.
 
--   CNG usa nombres de archivo diferentes para los archivos de clave que los archivos de clave creados por el Rsaenh.dll y Dssenh.dll LOSPS heredados. Los archivos de clave heredados también tienen la extensión .key, pero los archivos de clave CNG no tienen la extensión .key.
--   CNG es totalmente compatible con los nombres de contenedor de claves Unicode; CNG usa un hash del nombre del contenedor Unicode, mientras que CryptoAPI usa un hash del nombre del contenedor ANSI.
+-   CNG usa nombres de archivo diferentes para los archivos de clave que los archivos de clave creados por el Rsaenh.dll y Dssenh.dll LOS CSP heredados. Los archivos de clave heredados también tienen la extensión .key, pero los archivos de clave CNG no tienen la extensión .key.
+-   CNG admite totalmente nombres de contenedor de claves Unicode; CNG usa un hash del nombre del contenedor Unicode, mientras que CryptoAPI usa un hash del nombre del contenedor ANSI.
 -   CNG es más flexible con respecto a los pares de claves RSA. Por ejemplo, CNG admite exponentes públicos de más de 32 bits de longitud y admite claves en las que p y q tienen longitudes diferentes.
--   En CryptoAPI, el archivo contenedor de claves se almacena en un directorio cuyo nombre es el equivalente textual del SID del usuario. Este ya no es el caso de CNG, que elimina la dificultad de mover usuarios de un dominio a otro sin perder todas sus claves privadas.
--   Los nombres de clave y KSP de CNG se limitan a los caracteres Unicode **MAX \_ PATH.** El CSP de CryptoAPI y los nombres de clave se limitan a **los caracteres ANSI MAX \_ PATH.**
--   CNG ofrece la funcionalidad de propiedades de clave definidas por el usuario. Los usuarios pueden crear y asociar propiedades personalizadas con claves y almacenarlas con claves persistentes.
+-   En CryptoAPI, el archivo de contenedor de claves se almacena en un directorio cuyo nombre es el equivalente textual del SID del usuario. Este ya no es el caso de CNG, que elimina la dificultad de mover usuarios de un dominio a otro sin perder todas sus claves privadas.
+-   El KSP de CNG y los nombres de clave están limitados a caracteres Unicode **\_ MAX PATH.** El CSP de CryptoAPI y los nombres de clave se limitan a **los caracteres ANSI MAX \_ PATH.**
+-   CNG ofrece la funcionalidad de las propiedades de clave definidas por el usuario. Los usuarios pueden crear y asociar propiedades personalizadas con claves y almacenarlas con claves persistentes.
 
-Al conservar una clave, CNG puede crear dos archivos. El primer archivo contiene la clave privada en el nuevo formato CNG y siempre se crea. Este archivo no es utilizable por los CSP de CryptoAPI heredados. El segundo archivo contiene la misma clave privada en el contenedor de claves CryptoAPI heredado. El segundo archivo se ajusta al formato y la ubicación que usa Rsaenh.dll. La creación del segundo archivo solo se produce si se especifica la marca **NCRYPT \_ WRITE KEY TO \_ \_ \_ LEGACY STORE \_ \_ FLAG** cuando se llama a la función [**NCryptFinalizeKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey) para finalizar una clave RSA. Esta característica no es compatible con las claves DSA y DH.
+Al conservar una clave, CNG puede crear dos archivos. El primer archivo contiene la clave privada en el nuevo formato CNG y siempre se crea. Los CSP de CryptoAPI heredados no pueden hacer uso de este archivo. El segundo archivo contiene la misma clave privada en el contenedor de claves CryptoAPI heredado. El segundo archivo se ajusta al formato y la ubicación que usa Rsaenh.dll. La creación del segundo archivo solo se produce si se especifica la marca **NCRYPT \_ WRITE KEY TO \_ \_ \_ LEGACY STORE \_ \_ FLAG** cuando se llama a la función [**NCryptFinalizeKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey) para finalizar una clave RSA. Esta característica no es compatible con las claves DSA y DH.
 
-Cuando una aplicación intenta abrir una clave persistente existente, CNG intenta abrir primero el archivo CNG nativo. Si este archivo no existe, CNG intenta encontrar una clave correspondiente en el contenedor de claves CryptoAPI heredado.
+Cuando una aplicación intenta abrir una clave persistente existente, CNG primero intenta abrir el archivo CNG nativo. Si este archivo no existe, CNG intenta encontrar una clave correspondiente en el contenedor de claves CryptoAPI heredado.
 
 Al mover o copiar claves CryptoAPI de una máquina de origen a una máquina de destino con Windows Herramienta de migración de estado de usuario (USMT), CNG no podrá acceder a las claves de la máquina de destino. Para acceder a estas claves migradas, debe usar CryptoAPI.
 

@@ -17,18 +17,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 2b7ac9f8c474a1aee55d0dd70a5a838102aec66bc8b3ba3d867070430c38a3ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6cafc16ddbc91181cc2114def07a193941988228
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118821869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073107"
 ---
 # <a name="msmcainfo_rawmcadata-class"></a>Clase RawMCAData de MSMCAInfo \_
 
 **MSMCAInfo \_ RawMCAData especifica** los registros de arquitectura de comprobación de máquina (MCA) sin procesar. Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,15 +42,15 @@ class MSMCAInfo_RawMCAData : MSMCAInfo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ RawMCAData de MSMCAInfo** tiene estos tipos de miembros:
+La **clase \_ RawMCAData MSMCAInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ RawMCAData de MSMCAInfo** tiene estas propiedades.
+La **clase \_ RawMCAData MSMCAInfo** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -99,17 +99,17 @@ Identificador único de esta instancia de la clase .
 **Registros**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Matriz de entrada MSMCAInfo \_**
+Tipo de datos: **matriz de entrada MSMCAInfo \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de registros de errores de MCA. La propiedad Count especifica el número de registros de error de MCA en la **matriz.**
+Matriz de registros de errores de MCA. La propiedad Count especifica el número de registros de error de MCA en **la matriz.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ RawMCAData de MSMCAInfo** se deriva de [**MSMCAInfo**](msmcainfo.md).
 
@@ -117,7 +117,7 @@ La **clase \_ RawMCAData de MSMCAInfo** se deriva de [**MSMCAInfo**](msmcainfo.m
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
@@ -127,7 +127,7 @@ La **clase \_ RawMCAData de MSMCAInfo** se deriva de [**MSMCAInfo**](msmcainfo.m
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

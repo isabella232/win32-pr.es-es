@@ -1,5 +1,5 @@
 ---
-description: Comprueba y descarga un ActiveX objeto .
+description: Comprueba y descarga un objeto ActiveX.
 ms.assetid: a477c6dc-32a7-4d17-a997-6df4967d6c55
 title: IeAxiService::Initialize (Método)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 911d955f84d81b225a1b4062e47b2b9b6ab6d058aa6df2e6a72a8d40242345a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b2e388f955c968220223519150fc4dc5b7af4a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119414895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073694"
 ---
 # <a name="ieaxiserviceinitialize-method"></a>IeAxiService::Initialize (Método)
 
-El **método Initialize** comprueba y descarga un ActiveX objeto . Si el objeto cumple los requisitos de directiva, este método inicializa un objeto del sistema que instala ActiveX objeto.
+El **método Initialize** comprueba y descarga un ActiveX objeto . Si el objeto cumple los requisitos de directiva, este método inicializa un objeto del sistema que instala el objeto ActiveX.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,21 +61,21 @@ Identificador de proceso del proceso que realiza la llamada.
 *bstrDesktop* \[ En\]
 </dt> <dd>
 
-El escritorio del objeto.
+El escritorio para el objeto .
 
 </dd> <dt>
 
 *bstrClsID* \[ En\]
 </dt> <dd>
 
-Identificador de clase del objeto ActiveX instalar.
+Identificador de clase del objeto ActiveX que se debe instalar.
 
 </dd> <dt>
 
 *bstrURL* \[ En\]
 </dt> <dd>
 
-Dirección URL del objeto ActiveX instalar.
+Dirección URL del objeto ActiveX que se instalará.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Contexto que se puede usar para compartir información de estado en llamadas a o
 *ppISyncBrokerInterface* \[ out\]
 </dt> <dd>
 
-Puntero a la instancia de la [**interfaz IeAxiSystemInstaller**](ieaxisysteminstaller.md) que instala el control ActiveX control .
+Puntero a la instancia de la [**interfaz IeAxiSystemInstaller**](ieaxisysteminstaller.md) que instala ActiveX control .
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
 | Código o valor devuelto                                                                                                                                                              | Descripción                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**TRUST \_ E \_ ASUNTO \_ NO \_ DE**</dt> <dt>CONFIANZA 0x800B0004</dt> </dl> | El ActiveX no debe instalarse.<br/> |
+| <dl> <dt>**TRUST \_ E \_ ASUNTO NO DE \_ \_ CONFIANZA**</dt> <dt>0x800B0004</dt> </dl> | El ActiveX no debe instalarse.<br/> |
 
 
 
@@ -113,9 +113,9 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
 | IID<br/>                      | IID \_ IeAxiService se define como E9E92380-9ECD-4982-A0EB-6815A56CCF27<br/>                           |
 

@@ -6,12 +6,12 @@ keywords:
 - Protocolo simple de administración de redes (SNMP)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f71d4467f8e8b3a185f461e77efb18c6dd5969d782cbb1cf0674a942870f91d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc48963e11e66e22258d9985320979b1c74b8b54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119009053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073823"
 ---
 # <a name="simple-network-management-protocol-snmp"></a>Protocolo simple de administración de redes (SNMP)
 

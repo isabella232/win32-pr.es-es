@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Establecer la autenticación mediante C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d7b0ef3bcd1e9908815c94dacc3815fec77eaea33f2da48119dbe3178563eae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 293d317ac521d36bf7ff616a0340f86c364ce885
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118315622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073062"
 ---
 # <a name="setting-authentication-using-c"></a>Establecer la autenticación mediante C++
 
@@ -18,7 +18,7 @@ Una de las tareas principales de [**IWbemLocator::ConnectServer**](/windows/desk
 
 Un proveedor puede establecer la seguridad en un espacio de nombres para que no se devuelva ningún dato a menos que use la privacidad de paquetes **(PktPrivacy)** en la conexión a ese espacio de nombres. Esto garantiza que los datos se cifran a medida que cruzan la red. Si intenta establecer un nivel de autenticación inferior, recibirá un mensaje de acceso denegado. Para obtener más información, vea [Setting Namepace Security Descriptors](setting-namespace-security-descriptors.md).
 
-Para obtener más información sobre cómo establecer la autenticación en scripting, vea [Establecer el nivel de seguridad de proceso predeterminado mediante VBScript.](setting-the-default-process-security-level-using-vbscript.md)
+Para obtener más información sobre cómo establecer la autenticación en el scripting, vea [Establecer el nivel de seguridad de proceso predeterminado mediante VBScript.](setting-the-default-process-security-level-using-vbscript.md)
 
 ## <a name="setting-security-on-a-remote-iunknown-interface"></a>Establecer la seguridad en una interfaz IUnknown remota
 

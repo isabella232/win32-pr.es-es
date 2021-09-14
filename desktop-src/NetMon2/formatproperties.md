@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: 6bb0bc74a52569edbb922aa93edd27b53106073ffdafa3a6cacc5808aab71eef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 61707b49fa88490e1aa22ac89f33dfd97ec20cbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074158"
 ---
 # <a name="formatproperties-callback-function"></a>Función de devolución de llamada FormatProperties
 
@@ -84,9 +84,9 @@ Si la función se realiza correctamente, el valor devuelto es **TRUE.**
 
 Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Monitor de red llama a la **función FormatProperties** para mostrar datos en el panel de detalles de la interfaz Monitor de red usuario. Normalmente, se llama a **FormatProperties** para dar formato a la línea de resumen de un protocolo y, a continuación, para dar formato a todas las instancias de propiedad del protocolo dentro de un marco. Sin embargo, Monitor de red no garantiza el número de veces que llama a **FormatProperties** para un analizador específico.
+Monitor de red llama a **la función FormatProperties** para mostrar datos en el panel de detalles de la interfaz Monitor de red usuario. Normalmente, se llama a **FormatProperties** para dar formato a la línea de resumen de un protocolo y, a continuación, para dar formato a todas las instancias de propiedad del protocolo dentro de un marco. Sin embargo, Monitor de red no garantiza el número de veces que llama a **FormatProperties** para un analizador específico.
 
 Durante la implementación de la función **FormatProperties,** el analizador llama indirectamente a la función [FormatPropertyInstance](formatpropertyinstance.md) para usar el formateador genérico que proporciona Monitor de red o puede llamar a un procedimiento de formateador personalizado definido por el analizador. Se debe llamar a uno de los formateadores para cada estructura [PROPERTYINST](propertyinst.md) pasada al archivo DLL del analizador en el *parámetro lpPropInst.*
 
@@ -96,7 +96,7 @@ Durante la implementación de la función **FormatProperties,** el analizador ll
 |-------------------------------------------------------------|--------------------------------------------------------------------|
 | Qué son los analizadores y cómo funcionan con Monitor de red.   | [Analizadores](parsers.md)                                             |
 | Qué puntos de entrada se incluyen en el archivo DLL del analizador.          | [Arquitectura dll del analizador](parser-dll-architecture.md)             |
-| La implementación de **FormatProperties**  incluye un ejemplo. | [Implementación de FormatProperties](implementing-formatproperties.md) |
+| La implementación de **FormatProperties**  incluye un ejemplo. | [Implementar FormatProperties](implementing-formatproperties.md) |
 | Cómo el formateador genérico da formato a diferentes tipos de datos.  | [Salida de formateador genérico](generic-formatter-output.md)           |
 
 
@@ -115,14 +115,14 @@ Durante la implementación de la función **FormatProperties,** el analizador ll
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [FormatPropertyInstance](formatpropertyinstance.md)
 </dt> <dt>
 
-[Propertyinfo](propertyinfo.md)
+[PROPERTYINFO](propertyinfo.md)
 </dt> <dt>
 
 [PROPERTYINST](propertyinst.md)

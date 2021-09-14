@@ -4,12 +4,12 @@ ms.assetid: b69e5087-7849-4cbc-a97b-204a26fdd044
 title: Versiones de WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa4b426023ca240f10d3f56358213b3ed701910d8fb1b716441ae254b2cc774c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac19a57c68c5e9e727daa129959dcd735b5839df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073134"
 ---
 # <a name="winhttp-versions"></a>Versiones de WinHTTP
 

@@ -1,12 +1,12 @@
 ---
-title: Método OnKeyCombinationPressed de IRemoteDesktopClientEvents
+title: Método IRemoteDesktopClientEvents OnKeyCombinationPressed
 description: Se llama cuando se presionan combinaciones de teclas especiales en la sesión remota.
 ms.assetid: 0A4EAD6C-5DA9-4ED3-BA79-92AE5AE81C9F
 ms.tgt_platform: multiple
 keywords:
 - Método OnKeyCombinationPressed Servicios de Escritorio remoto
 - Método OnKeyCombinationPressed Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto , método OnKeyCombinationPressed
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnKeyCombinationPressed
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e175bc0d65126c11cbcb97d0b73accd48ff92b02e38cca6e3ac35ebcce1ae961
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 192cad6323578a9bde9fe38af1d2b1d2cf83473c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119515105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073325"
 ---
-# <a name="iremotedesktopclienteventsonkeycombinationpressed-method"></a>IRemoteDesktopClientEvents::OnKeyCombinationPressed (Método)
+# <a name="iremotedesktopclienteventsonkeycombinationpressed-method"></a>IRemoteDesktopClientEvents::OnKeyCombinationPressed (método)
 
 Se llama cuando se presionan combinaciones de teclas especiales en la sesión remota.
 

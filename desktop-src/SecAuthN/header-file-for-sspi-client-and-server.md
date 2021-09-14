@@ -4,12 +4,12 @@ ms.assetid: 358c2cd6-674b-4d70-9657-800b0d1b2fe7
 title: Archivo de encabezado para el cliente y el servidor de SSPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ba76283b2686ecde8a6e453c5c376f8589a78dccf9e740b381f89fc5ef4db21
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 75f2702186f7a0a9def4405890f39f588dbbfa84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073794"
 ---
 # <a name="header-file-for-sspi-client-and-server"></a>Archivo de encabezado para el cliente y el servidor de SSPI
 

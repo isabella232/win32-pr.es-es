@@ -3,15 +3,15 @@ title: ProgID
 description: Obtenga información sobre HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID clave del Registro, que asocia un ProgID a un CLSID.
 ms.assetid: 89060943-7007-418b-a544-effbad548e87
 keywords:
-- Com de clave del Registro ProgID
+- COM de clave del Registro ProgID
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f2d56295db12bbf8a4d629112636814fa60df481
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369596"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073047"
 ---
 # <a name="progid"></a>ProgID
 

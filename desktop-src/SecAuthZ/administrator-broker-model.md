@@ -4,12 +4,12 @@ ms.assetid: 1e661915-5797-421d-b96f-72949f441aba
 title: Modelo de agente de administrador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c67a68c823221226f56d01b750ab74a70ca30530f44cd174e333c3e4d7cbaa3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5299d35c995fb56f969fc5983864cfc93b25b6c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117784947"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073724"
 ---
 # <a name="administrator-broker-model"></a>Modelo de agente de administrador
 
@@ -21,7 +21,7 @@ El programa administrativo no está completamente aislado del programa de usuari
 
 Los siguientes son posibles usos para el modelo de agente de administrador:
 
--   Asistentes para desarrollo. Cuando un asistente de hardware determina que un controlador necesario no está instalado en el equipo o se encuentra en la ubicación aprobada de la empresa, llama a una aplicación con privilegios elevados con la capacidad de mover un controlador al almacén del equipo.
+-   Asistentes para desarrollo. Cuando un asistente de hardware determina que un controlador necesario no está instalado en el equipo o se encuentra en la ubicación aprobada de la empresa, llama a una aplicación con privilegios elevados con la capacidad de mover un controlador al almacén de equipos.
 -   Autorun.exe a Setup.exe. Cuando un usuario ejecuta software desde un CD, Autorun.exe, que se ejecuta como un usuario estándar, inicia Setup.exe, que se ejecuta como administrador, para instalar el software en el equipo.
 
 Estos son los inconvenientes de usar el modelo de agente de administrador:

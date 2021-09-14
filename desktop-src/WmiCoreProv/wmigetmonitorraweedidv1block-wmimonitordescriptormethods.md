@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: dacd0c44a6c0fa8270a65155583f8041616f98674d0798db8b13a72d13751653
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1af1ddb86a90ea9029d5cba408745fe3dafa69dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118558090"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073094"
 ---
 # <a name="wmigetmonitorraweedidv1block-method-of-the-wmimonitordescriptormethods-class"></a>Método WmiGetMonitorRawEEdidV1Block de la clase WmiMonitorDescriptorMethods
 
@@ -55,7 +55,7 @@ Tipo de bloque de datos. En la tabla siguiente se enumeran los posibles valores 
 
 
 
-| Valor                                                                                 | Significado                    |
+| Value                                                                                 | Significado                    |
 |---------------------------------------------------------------------------------------|----------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl>    | No inicializado<br/>   |
 | <dl> <dt>1 (0x1)</dt> </dl>    | Bloque base EDID<br/> |
@@ -122,7 +122,7 @@ static void Main(string[] args)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

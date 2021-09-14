@@ -3,19 +3,19 @@ title: Método LaunchPage
 description: Método LaunchPage
 ms.assetid: f0f93535-5afc-4777-9188-5bbac63ddc6b
 keywords:
-- Reproductor de Windows Media complementos, método LaunchPage
+- Reproductor de Windows Media complementos,método LaunchPage
 - plug-ins,LaunchPage (método)
 - complementos de interfaz de usuario, método LaunchPage
 - Complementos de interfaz de usuario, método LaunchPage
 - Método LaunchPage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11a22e1f4b136711a6f4336fbe54d6d90e4bb18b24a88645587311a0b4046f6f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f04974eba1ba5c86300de44acd2ba6e2920954f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119762725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073211"
 ---
 # <a name="the-launchpage-method"></a>Método LaunchPage
 
@@ -23,7 +23,7 @@ El método LaunchPage proporciona la funcionalidad principal del complemento, qu
 
 El método OnSearch llama a este método mediante el objeto **Media** actual.
 
-El código siguiente se usa para implementar este método:
+Para implementar este método se usa el código siguiente:
 
 
 ```C++

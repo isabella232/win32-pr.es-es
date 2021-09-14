@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a2f0d2ab00c1a5422912c9fa37abe88585e5352fd7003da4fbcf918c511b293
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6211be67110200b1cd419b99fe76b5ce98d5408d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119511668"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073330"
 ---
 # <a name="iremotedesktopclienteventsonconnecting-method"></a>IRemoteDesktopClientEvents::OnConnecting (método)
 

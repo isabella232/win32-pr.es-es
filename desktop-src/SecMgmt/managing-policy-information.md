@@ -1,25 +1,25 @@
 ---
-description: LSA proporciona funciones que los administradores pueden usar para consultar y establecer información global de directivas para el equipo local y el dominio.
+description: El LSA proporciona funciones que los administradores pueden usar para consultar y establecer información de directiva global para el equipo local y el dominio.
 ms.assetid: bbe27d16-0a6b-435a-ae80-5e983047b511
-title: Administrar la información de directivas
+title: Administración de la información de directiva
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8fdc76137f41c592370dbeecafd243f11012cb1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668318"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073605"
 ---
-# <a name="managing-policy-information"></a>Administrar la información de directivas
+# <a name="managing-policy-information"></a>Administración de la información de directiva
 
-LSA proporciona funciones que los administradores pueden usar para consultar y establecer información global de directivas para el equipo local y el dominio.
+El LSA proporciona funciones que los administradores pueden usar para consultar y establecer información de directiva global para el equipo local y el dominio.
 
-Antes de poder administrar la información de directivas, la aplicación debe obtener un identificador para el objeto de [**Directiva**](policy-object.md) local, como se muestra en [abrir un identificador de objeto de directiva](opening-a-policy-object-handle.md). Este identificador es necesario para las funciones que administran la información de directivas.
+Para poder administrar la información de la directiva, la aplicación debe obtener un identificador para el objeto [**de**](policy-object.md) directiva local, como se muestra en Apertura de un [identificador de objeto de directiva](opening-a-policy-object-handle.md). Este identificador lo requieren las funciones que administran la información de la directiva.
 
-Para recuperar información acerca de la Directiva de seguridad local, llame a [**LsaQueryInformationPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaqueryinformationpolicy). Para establecer la Directiva de seguridad local, llame a [**LsaSetInformationPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsasetinformationpolicy). La descripción de la enumeración de la [**\_ \_ clase de información de directiva**](/windows/desktop/api/Ntsecapi/ne-ntsecapi-policy_information_class) detalla los tipos de información de directivas que se pueden consultar o establecer.
+Para recuperar información sobre la directiva de seguridad local, llame a [**LsaQueryInformationPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsaqueryinformationpolicy). Para establecer la directiva de seguridad local, llame [**a LsaSetInformationPolicy**](/windows/desktop/api/ntsecapi/nf-ntsecapi-lsasetinformationpolicy). La descripción de la [**enumeración POLICY \_ INFORMATION \_ CLASS**](/windows/desktop/api/Ntsecapi/ne-ntsecapi-policy_information_class) detalla los tipos de información de directiva que se pueden consultar o establecer.
 
-En el ejemplo siguiente se muestra cómo obtener la información de dominio de la cuenta de un sistema, dado un identificador para el objeto de [**Directiva**](policy-object.md) del sistema.
+En el ejemplo siguiente se muestra cómo obtener información de dominio de cuenta de un sistema, dado un identificador al objeto [**Policy del**](policy-object.md) sistema.
 
 
 ```C++

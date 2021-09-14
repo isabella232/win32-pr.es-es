@@ -20,16 +20,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 46be2130cbb57cc216f570e944d6959ae355780134f90bc94101d01d6f38bb16
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c07e722abf0c6a291d42bc094ba7a2a7c5238cfb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119617605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072518"
 ---
 # <a name="jet_dbinfomiscequals-method-object"></a>JET_DBINFOMISC. Método Equals (Object)
 
-Determina si el objeto [especificado](/dotnet/api/system.object) es igual que el objeto [actual.](/dotnet/api/system.object)
+Determina si el objeto [especificado](/dotnet/api/system.object) es igual al objeto [actual.](/dotnet/api/system.object)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -67,7 +67,7 @@ public override bool Equals(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si el objeto [especificado](/dotnet/api/system.object) es igual al objeto [actual](/dotnet/api/system.object); de lo contrario, false.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

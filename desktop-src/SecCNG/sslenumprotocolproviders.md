@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: c0e20bd98f8f3e76d4185cf2a3aa52985d73f66ff1ea61ed50bf67552330290d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94c8648950af20a97bcc34b614aee0d0f716b043
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073621"
 ---
 # <a name="sslenumprotocolproviders-function"></a>Función SslEnumProtocolProviders
 
-La **función SslEnumProtocolProviders** devuelve una matriz de proveedores de protocolos [*Capa de sockets seguros de*](/windows/desktop/SecGloss/s-gly) protocolos (SSL) instalados.
+La **función SslEnumProtocolProviders** devuelve una matriz de proveedores de [*protocolos Capa de sockets seguros (SSL)*](/windows/desktop/SecGloss/s-gly) instalados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -94,7 +94,7 @@ Cuando haya terminado de usar la matriz de estructuras [**NCryptProviderName,**]
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

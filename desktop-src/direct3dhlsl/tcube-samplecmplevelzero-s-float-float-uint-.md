@@ -1,6 +1,6 @@
 ---
 title: Función SampleCmpLevelZero::SampleCmpLevelZero(S,float,float,uint) para TextureCube
-description: Muestrea solo una textura en el nivel 0 de mapa mip y compara el resultado con un valor de comparación. Devuelve el estado de la operación. Para TextureCube.
+description: Muestrea una textura solo en el nivel 0 del mapa mip y compara el resultado con un valor de comparación. Devuelve el estado de la operación. Para TextureCube.
 ms.assetid: FE40307D-B9BE-434F-A6EF-7CA3C5BC7D70
 keywords:
 - Función HLSL de SampleCmpLevelZero
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5970b2a03a3004269b8ef758569aa6ac222bb60032dcb91e121a342e58cef886
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ff58c51919e575260c71f7b58d8f3d0fda6c1dd1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120117995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072674"
 ---
 # <a name="samplecmplevelzerosamplecmplevelzerosfloatfloatuint-function-for-texturecube"></a>Función SampleCmpLevelZero::SampleCmpLevelZero(S,float,float,uint) para TextureCube
 
-Muestrea solo una textura en el nivel 0 de mapa mip y compara el resultado con un valor de comparación. Devuelve el estado de la operación.
+Muestrea una textura solo en el nivel 0 del mapa mip y compara el resultado con un valor de comparación. Devuelve el estado de la operación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -87,7 +87,7 @@ Valor de punto flotante que se usará como valor de comparación.
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se han tomado valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi
 
 Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

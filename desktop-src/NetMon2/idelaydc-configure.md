@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: a8d1bacb5629f03eb472f730f5df7ee00c5a4e469702f617d5b33c673606c76b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0fa91c5b46d2eb7ca21ba14aa00b274d52e77eb1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117981337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074142"
 ---
 # <a name="idelaydcconfigure-method"></a>IDelaydC::Configure (método)
 
@@ -51,41 +51,41 @@ Controle el BLOB que contiene la información de configuración.
 *hErrorBlob* \[ out\]
 </dt> <dd>
 
-Controlar un blob de error que contiene información de error adicional. Para obtener información sobre el contenido de un blob de error, vea la sección Comentarios de este tema.
+Controlar un blob de error que contiene información de error adicional. Para obtener información sobre el contenido de un BLOB de error, vea la sección Comentarios de este tema .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método es correcto, el valor devuelto es NMERR \_ SUCCESS.
+Si este método se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                                      | Descripción                                                                               |
 |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>                  | El NPP informa de que se ha iniciado la sesión de captura.<br/>                          |
-| <dl> <dt>**DISCO NMERR \_ \_ NO CORREGIDO \_ \_ LOCALMENTE**</dt> </dl>    |                                                                                           |
+| <dl> <dt>**DISCO NMERR \_ \_ NO FIJO \_ \_ LOCAL**</dt> </dl>    |                                                                                           |
 | <dl> <dt>**NMERR \_ NO PUDO CREAR \_ \_ \_ MEMORIA**</dt> </dl> |                                                                                           |
-| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE \_ MEMORIA**</dt> </dl>            | No había memoria disponible. Apague las ventanas para liberar recursos.<br/>               |
+| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE LA \_ MEMORIA**</dt> </dl>            | No había memoria disponible. Apague las ventanas para liberar recursos.<br/>               |
 | <dl> <dt>**NMERR \_ INVALID \_ PARAMETER**</dt> </dl>         | El BLOB de configuración especificado por el parámetro hConfiguration no es válido.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe aplicar este método para reiniciar un NPP que se ha iniciado, detenido, pero no desconectado.
 
-El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron comprender o encontrar en el BLOB de configuración especificado en *hConfigurationBlob*. El blob de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada Monitor de red no se encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
+El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron entender ni encontrar en el BLOB de configuración especificado en *hConfigurationBlob*. El BLOB de error devuelto contiene información de error que la aplicación puede usar para solucionar problemas. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada Monitor de red no se encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -94,7 +94,7 @@ El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

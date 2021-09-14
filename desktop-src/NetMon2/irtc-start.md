@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 17ccb07a97112cab4390dc1eece2bf6fce51acf1c80244ed03253b5a2f6112b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ee30112baf7813c983230fb90cd15ea7f52e2bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074116"
 ---
 # <a name="irtcstart-method"></a>IRTC::Start (método)
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
@@ -57,7 +57,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al reiniciar la captura mediante los métodos IRTC::Start e [IRTC::Stop,](irtc-stop.md) debe llamar al método [IRTC::Configure](irtc-configure.md) para volver a configurar la conexión cada vez que llame a IRTC::Start para reiniciar la captura de datos.
 
@@ -79,7 +79,7 @@ Al reiniciar la captura mediante los métodos IRTC::Start e [IRTC::Stop,](irtc-s
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

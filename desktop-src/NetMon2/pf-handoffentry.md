@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: faf98490424754d6ae2223ca063e0e3a4eec69c113b1a220e9657b7db5edbb8a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ad431e936265be96831778f9949ae67ef737beb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074099"
 ---
 # <a name="pf_handoffentry-structure"></a>Estructura \_ PF HANDOFFENTRY
 
@@ -39,7 +39,7 @@ typedef struct _PF_HANDOFFENTRY {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ Base numérica del valor de protocolo especificado en **dwHandOffValue.** La **f
 
 
 
-| Valor                                                                                                                                                                                                                        | Significado                     |
+| Value                                                                                                                                                                                                                        | Significado                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
 | <span id="HANDOFF_VALUE_FORMAT_BASE_UNKNOWN"></span><span id="handoff_value_format_base_unknown"></span><dl> <dt>**BASE DESCONOCIDA DEL \_ FORMATO DE VALOR DE \_ \_ ENTREGA \_**</dt> </dl> | Base desconocida<br/>     |
 | <span id="HANDOFF_VALUE_FORMAT_BASE_DECIMAL"></span><span id="handoff_value_format_base_decimal"></span><dl> <dt>**HANDOFF \_ VALUE \_ FORMAT \_ BASE \_ DECIMAL**</dt> </dl> | Base decimal<br/>     |
@@ -90,7 +90,7 @@ Base numérica del valor de protocolo especificado en **dwHandOffValue.** La **f
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la estructura [PF \_ HANDOFFSET](pf-handoffset.md) se usa una matriz de las estructuras **\_ PF HANDOFFENTRY.**
 
@@ -106,7 +106,7 @@ En la estructura [PF \_ HANDOFFSET](pf-handoffset.md) se usa una matriz de las e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

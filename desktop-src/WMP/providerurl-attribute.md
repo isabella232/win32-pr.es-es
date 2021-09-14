@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c370d8d234b4e9d7f0d234f0163dd4e41a10a8cc1686ec231686bb4d2b7f28e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c438ce67ac14ec79fe50cb0c931a5c5d437babd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073240"
 ---
 # <a name="providerurl-attribute"></a>Atributo ProviderURL
 
@@ -28,7 +28,7 @@ El **atributo ProviderURL** es la dirección de la página principal del proveed
 -   [Elementos de audio](audio-item-attributes.md)
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la base de datos de biblioteca (o caché).
 

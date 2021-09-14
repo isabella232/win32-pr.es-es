@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e4f491d857eb4ca0fde629b780f22a7795b79f593f94332fb923003520cec706
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cee7cfc48f62b58caf63125404fb07209b399fc1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118357214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073405"
 ---
 # <a name="deleteexpiredtaskafter-settingstype-element"></a>Elemento DeleteExpiredTaskAfter (settingsType)
 
@@ -44,7 +44,7 @@ El **elemento DeleteExpiredTaskAfter** se define mediante el [**tipo complejo se
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de C++, [**vea DeleteExpiredTaskAfter Property of ITaskSettings ( Propiedad DeleteExpiredTaskAfter de ITaskSettings).**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_deleteexpiredtaskafter)
 
@@ -52,7 +52,7 @@ Para el desarrollo de scripts, [**vea TaskSettings.DeleteExpiredTaskAfter.**](ta
 
 ## <a name="examples"></a>Ejemplos
 
-El xml siguiente define un elemento de configuración que elimina una tarea expirada después de una semana.
+El siguiente XML define un elemento de configuración que elimina una tarea expirada después de una semana.
 
 
 ```XML
@@ -67,14 +67,14 @@ El xml siguiente define un elemento de configuración que elimina una tarea expi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

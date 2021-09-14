@@ -1,10 +1,10 @@
 ---
-title: MonthlyDOWTrigger.RandomDelay, propiedad
-description: Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | MonthlyDOWTrigger.RandomDelay, propiedad
+title: Propiedad MonthlyDOWTrigger.RandomDelay
+description: Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | Propiedad MonthlyDOWTrigger.RandomDelay
 ms.assetid: e5cb6c1d-8003-43f4-bf35-da490a6097f0
 keywords:
 - Propiedad RandomDelay Programador de tareas
-- Propiedad RandomDelay Programador de tareas objeto , MonthlyDOWTrigger
+- Propiedad RandomDelay Programador de tareas , objeto MonthlyDOWTrigger
 - Objeto MonthlyDOWTrigger Programador de tareas , propiedad RandomDelay
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f40fd85ca528476d37861a93230e5074ba87f6a3258a140c2616aa98625d4b96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e781941e927547a4ea25935fb21299777c34b3ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119253835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073426"
 ---
-# <a name="monthlydowtriggerrandomdelay-property"></a>MonthlyDOWTrigger.RandomDelay, propiedad
+# <a name="monthlydowtriggerrandomdelay-property"></a>Propiedad MonthlyDOWTrigger.RandomDelay
 
-Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
+Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
 
 ## <a name="syntax"></a>Sintaxis
 

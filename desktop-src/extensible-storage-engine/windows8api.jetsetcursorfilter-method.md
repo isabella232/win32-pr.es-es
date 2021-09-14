@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aedf0a5a37edf43c2c41935167be8be767a0ed597cf77c9845d0bb6ebca89bf3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0137c25ee6ab548537d797af0a00a7ffcd1f6d5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119038503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072481"
 ---
 # <a name="windows8apijetsetcursorfilter-method"></a>Método Windows8Api.JetSetCursorFilter
 
@@ -84,7 +84,7 @@ public static void JetSetCursorFilter(
   - filters  
     Tipo: \[\]  
     
-    Filtros de registros simples.
+    Filtros de registro simples.
 
 <!-- end list -->
 
@@ -93,7 +93,7 @@ public static void JetSetCursorFilter(
     
     Opciones de movimiento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

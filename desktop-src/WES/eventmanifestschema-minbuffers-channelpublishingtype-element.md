@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 12d693b7f04356ac9103cb6ce85efcf9470a34b026b61007aeb4ecf88d49a119
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce941da1e74df8a51a2900de4507e1277f4e34c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118120690"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073304"
 ---
 # <a name="minbuffers-channelpublishingtype-element"></a>elemento minBuffers (ChannelPublishingType)
 

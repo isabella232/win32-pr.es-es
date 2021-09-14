@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 19d5560b57cfaa2a3fd3fa5167d13fa1722fe3f7dd736f19742e2efc895e15e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e12524971e8b713d4d17817a8a7c7602017bd68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118857315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073419"
 ---
 # <a name="deadline-element"></a>Elemento Deadline
 
@@ -55,7 +55,7 @@ El tipo complejo [**maintenanceSettingsType**](taskschedulerschema-maintenancese
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para la programación de C++, esta configuración inactiva se especifica mediante la [**propiedad IMaintenanceSettings::D eadline.**](/windows/desktop/api/Taskschd/nf-taskschd-imaintenancesettings-get_deadline)
 
@@ -77,7 +77,7 @@ El siguiente XML define un calendario de meses que ejecuta la tarea en marzo.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>           |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/> |

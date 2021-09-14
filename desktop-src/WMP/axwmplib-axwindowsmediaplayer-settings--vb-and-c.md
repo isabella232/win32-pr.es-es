@@ -3,8 +3,8 @@ title: Propiedad AxWindowsMediaPlayer.settings
 description: La propiedad settings obtiene una interfaz IWMPSettings que proporciona una manera de modificar varios Reproductor de Windows Media configuración.
 ms.assetid: f9009239-3308-4ef6-8818-0267dfa97b65
 keywords:
-- configuración de la propiedad Reproductor de Windows Media
-- propiedad settings Reproductor de Windows Media , clase AxWindowsMediaPlayer
+- propiedades settings Reproductor de Windows Media
+- propiedad settings Reproductor de Windows Media clase , AxWindowsMediaPlayer
 - Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad settings
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b216d979160a2e77cb013d96e02cf76c09eefca400c9b4524d50258ee2dfb886
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bf60f8ed3cc429faab1d43106e8676e77947bcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118581732"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073285"
 ---
 # <a name="axwindowsmediaplayersettings-property"></a>Propiedad AxWindowsMediaPlayer.settings
 
@@ -54,7 +54,7 @@ Interfaz WMPLib.IWMPSettings.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -62,7 +62,7 @@ Interfaz WMPLib.IWMPSettings.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

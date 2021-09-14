@@ -4,12 +4,12 @@ description: Microsoft proporciona acceso a la funcionalidad de NDF a través de
 ms.assetid: db06b9a9-a64a-43ff-9b77-95230208cfd6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d85d1386971207330579f5395989e14c4b2315dc578f5bb3509695b99d6e215a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ca74a8a80f7babca75182625ec71dc1ec47cbc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118133236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074196"
 ---
 # <a name="using-ndf-functionality"></a>Uso de la funcionalidad de NDF
 
@@ -40,7 +40,7 @@ Hay dos maneras de iniciar la funcionalidad de diagnóstico y reparación.
 
 -   Uso de un Interfaz de usuario personalizado (solo Windows 7 y versiones posteriores)
 
-    Hay diferentes funciones disponibles para su uso en escenarios en los que no se muestra ninguna interfaz de usuario o donde no se usa la experiencia estándar de Windows (como Media Center, aplicaciones insertadas y el símbolo del sistema). Esta opción omite la funcionalidad de experiencia del usuario proporcionada en el Asistente para NDF, que incluye la limitación de los resultados a causas raíz totalmente compatibles, así como la heurística para presentar reparaciones al usuario en el orden recomendado. Al usar estas funciones, debe proporcionar cualquiera de estas funcionalidades usted mismo. También debe asegurarse de liberar la memoria que usan los resultados del diagnóstico.
+    Hay diferentes funciones disponibles para su uso en escenarios en los que no se muestra ninguna interfaz de usuario o en los que no se usa la experiencia estándar de Windows (como Media Center, aplicaciones insertadas y el símbolo del sistema). Esta opción omite la funcionalidad de experiencia del usuario proporcionada en el Asistente para NDF, que incluye la limitación de los resultados a causas raíz totalmente compatibles, así como la heurística para presentar reparaciones al usuario en el orden recomendado. Al usar estas funciones, debe proporcionar cualquiera de estas funcionalidades usted mismo. También debe asegurarse de liberar la memoria que usan los resultados del diagnóstico.
 
     Para comenzar el diagnóstico, llame a [**la función NdfDiagnoseIncident.**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfdiagnoseincident) Los problemas encontrados se devolverán a la aplicación como una colección de estructuras [**RootCauseInfo**](/windows/win32/api/ndattrib/ns-ndattrib-rootcauseinfo) que describen las causas principales identificadas y las posibles reparaciones.
 
@@ -48,7 +48,7 @@ Hay dos maneras de iniciar la funcionalidad de diagnóstico y reparación.
 
     En algunos casos, una reparación se puede realizar correctamente, pero no resolverá el problema. En tales casos, se recomienda cerrar el incidente existente y, a continuación, abrir uno nuevo. Esto garantizará que se identifiquen los nuevos problemas sin máscara de la reparación inicial. Por ejemplo, supongamos que no había redes inalámbricas visibles. Después de restablecer el adaptador, las redes inalámbricas son visibles, pero ninguna de ellas está en la lista preferida. Se trata de un nuevo problema que requeriría un nuevo diagnóstico para identificar. Si este segundo intento de diagnóstico no identifica problemas adicionales, se puede intentar una reparación diferente para resolver el problema original o se puede informar al usuario de que el problema no se pudo resolver.
 
-    [**NdfDiagnoseIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfdiagnoseincident) y [**NdfRepairIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfrepairincident) son API sincrónicas. Si desea cancelar la actividad iniciada por estas funciones, llame a [**NdfCancelIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfcancelincident) desde otro subproceso. La función devolverá en el siguiente punto de detención disponible en el proceso de diagnóstico o reparación.
+    [**NdfDiagnoseIncident y**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfdiagnoseincident) [**NdfRepairIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfrepairincident) son API sincrónicas. Si desea cancelar la actividad iniciada por estas funciones, llame a [**NdfCancelIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfcancelincident) desde otro subproceso. La función devolverá en el siguiente punto de detención disponible en el proceso de diagnóstico o reparación.
 
     En cualquier momento, puede llamar opcionalmente a [**NdfGetTraceFile**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfgettracefile) para recuperar una copia del registro de NDF para la sesión de diagnóstico actual e incluirla con los registros de aplicación. El registro se vacía una vez recuperado y las llamadas posteriores solo recuperarán los eventos que se produjeron después de la última llamada a esta función.
 

@@ -9,12 +9,12 @@ keywords:
 - guía de programación, tipo 1 tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ae0032be2b02c22b95353dd3a0953fd50ba255b650ef8b35260216c0d20d9ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cea04cb188a68c85173b5b1682235b6964840d46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118834244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073248"
 ---
 # <a name="programming-guide-for-type-1-online-stores"></a>Guía de programación para almacenes en línea de tipo 1
 
@@ -33,7 +33,7 @@ Esta sección contiene los temas siguientes para ayudarle a crear una tienda en 
 | [Creación del complemento para una tienda en línea de tipo 1](building-the-plug-in-for-a-type-1-online-store.md)                 | Explica cómo crear el complemento necesario para una tienda en línea de tipo 1.                                                                          |
 | [Mostrar cuadros de diálogo](displaying-dialog-boxes.md)                                                               | Explica cómo invocar cuadros de diálogo mediante Reproductor de Windows Media.                                                                              |
 | [Administración del inicio de sesión](managing-login.md)                                                                                 | Explica cómo interactuar con los Reproductor de Windows Media de la interfaz de usuario que permiten a los usuarios iniciar sesión en la tienda en línea y cerrarla.         |
-| [Compra de contenido multimedia](purchasing-media-content.md)                                                             | Explica cómo Reproductor de Windows Media el complemento de la tienda en línea interactúan cuando el usuario compra contenido multimedia.                               |
+| [Compra de contenido multimedia](purchasing-media-content.md)                                                             | Explica cómo Reproductor de Windows Media y el complemento de la tienda en línea interactúan cuando el usuario adquiere contenido multimedia.                               |
 | [Descargar contenido multimedia](downloading-media-content.md)                                                           | Explica cómo Reproductor de Windows Media el complemento de la tienda en línea interactúan cuando el usuario descarga contenido multimedia.                               |
 | [Actualización de licencias](updating-licenses.md)                                                                           | Explica cómo Reproductor de Windows Media y el complemento de la tienda en línea interactúan para mantener actualizadas las licencias multimedia del usuario.                           |
 | [Actualización de dispositivos portátiles](updating-portable-devices.md)                                                           | Explica cómo Reproductor de Windows Media el complemento de la tienda en línea interactúan cuando el contenido multimedia se mueve entre el equipo y un dispositivo portátil. |

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1a71d6a31e3df645532cc73f836c3645621bb8f94c6115c56018c5eed3839313
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 419dc0e7b4266a2fe32557c52ed4323b51a25843
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072797"
 ---
 # <a name="d3dxfilltexturetx-function"></a>Función D3DXFillTextureTX
 
-Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada elemento texel de cada nivel de mapa mip de una textura.
+Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada texel de cada nivel de mapa mip de una textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,9 +65,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ NOTAVAILABLE, D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El destino de textura debe ser una función HLSL que tome la semántica siguiente:
+El destino de textura debe ser una función HLSL que tome contiene la semántica siguiente:
 
 -   Un parámetro de entrada debe usar una semántica POSITION.
 -   Un parámetro de entrada debe usar una semántica PSIZE.
@@ -101,7 +101,7 @@ float4 TextureGradientFill(
 
 
 
-Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, pero se debe representar ambas semánticas de entrada.
+Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, pero ambas semánticas de entrada deben representarse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,7 +114,7 @@ Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

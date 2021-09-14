@@ -4,12 +4,12 @@ ms.assetid: 1527bea2-ec72-4532-9725-0310db68b876
 title: Enumeraciones WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f179360dfcced70f66138012c98ec454257dd38622fc64dac4391834e7820fe8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 229fe5d29ea908fdee18e63e4369b91edb39f05b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117744056"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073151"
 ---
 # <a name="winhttp-enumerations"></a>Enumeraciones WinHTTP
 

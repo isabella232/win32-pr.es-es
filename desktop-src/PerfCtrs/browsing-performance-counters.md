@@ -4,12 +4,12 @@ ms.assetid: 44c5cfa8-6449-45d8-ac30-979b99c086de
 title: Examinar contadores de rendimiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a07a7b1557d1f923d1cc8011f11e6b43aac8130c517f2cab04787abdb9e2cd17
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b73ceac3faf0cddc251d7e7ebdbccff5e905519d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119978895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073905"
 ---
 # <a name="browsing-performance-counters"></a>Examinar contadores de rendimiento
 

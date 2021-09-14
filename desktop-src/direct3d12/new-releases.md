@@ -6,11 +6,11 @@ ms.localizationpriority: high
 ms.topic: article
 ms.date: 12/05/2019
 ms.openlocfilehash: 0ab45610eee3a2199fc91af639cee8175cc13030
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121813089"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072938"
 ---
 # <a name="whats-new-in-direct3d-12"></a>Novedades de Direct3D 12
 
@@ -27,7 +27,7 @@ Para obtener información sobre cómo obtener e instalar Direct3D, vea Configura
 Estas características y API se agregaron o actualizaron para Windows 10 versión 1903 (10.0; Compilación 18362) &mdash; también conocida como Actualización de mayo de 2019 de Windows 10.
 
 - [Sombreado de velocidad variable (VRS).](./vrs.md) Le permite asignar rendimiento o potencia de representación a velocidades que varían en la imagen representada.
-- [Modelo de sombreador HLSL 6.4.](../direct3dhlsl/hlsl-shader-model-6-4-features-for-direct3d-12.md) Describe los intrínsecos de aprendizaje automático agregados al modelo de sombreador HLSL 6.4.
+- [Modelo de sombreador HLSL 6.4](../direct3dhlsl/hlsl-shader-model-6-4-features-for-direct3d-12.md). Describe los intrínsecos de aprendizaje automático agregados al modelo de sombreador HLSL 6.4.
 - [**D3D12_DRED_VERSION enumeración.**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dred_version) Define constantes que especifican una versión de Datos extendidos quitados del dispositivo (DRED).
 - [**D3D12_FEATURE_DATA_D3D12_OPTIONS6**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options6) estructura. Indica el nivel de compatibilidad que proporciona el adaptador para los metacomandos.
 - [**D3D12_FEATURE_DATA_QUERY_META_COMMAND**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_query_meta_command) estructura. Indica el nivel de compatibilidad que proporciona el adaptador para los metacomandos.
@@ -39,9 +39,9 @@ Estas características y API se agregaron o actualizaron para Windows 10 versió
 
 La [**D3D_SHADER_MODEL**](/windows/win32/api/d3d12/ne-d3d12-d3d_shader_model) enumeración se ha actualizado con la adición de **la constante D3D_SHADER_MODEL_6_5** (una característica de nivel experimental).
 
-La [**D3D12_COMMAND_LIST_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_list_type) enumeración se ha actualizado con la adición de **la D3D12_COMMAND_LIST_TYPE_VIDEO_ENCODE** constante.
+La [**D3D12_COMMAND_LIST_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_list_type) enumeración se ha actualizado con la adición de la **D3D12_COMMAND_LIST_TYPE_VIDEO_ENCODE** constante.
 
-La [**D3D12_FEATURE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_feature) enumeración se ha actualizado con la adición de **D3D12_FEATURE_D3D12_OPTIONS6** y **D3D12_FEATURE_QUERY_META_COMMAND** constantes.
+La [**D3D12_FEATURE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_feature) enumeración se ha actualizado con la adición de **las D3D12_FEATURE_D3D12_OPTIONS6** y **D3D12_FEATURE_QUERY_META_COMMAND** constantes.
 
 La [**D3D12_RESOURCE_STATES**](/windows/win32/api/d3d12/ne-d3d12-d3d12_resource_states) enumeración se ha actualizado con la adición de **la D3D12_RESOURCE_STATE_SHADING_RATE_SOURCE** constante.
 
@@ -82,7 +82,7 @@ Estos temas se han agregado a la documentación de Direct3D Windows 10, versión
 -   Algunas características nuevas de Direct3D 11 se describen en [Características de Direct3D 11.4.](../direct3d11/direct3d-11-4-features.md)
 -   [**AtomicCopyBufferUINT**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-atomiccopybufferuint) y [**AtomicCopyBufferUINT64**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-atomiccopybufferuint64) permiten el bloqueo en tiempo de **espera** para reducir la latencia pervieved.
 -   [**ID3D12Device2::CreatePipelineState**](/windows/win32/api/d3d12/nf-d3d12-id3d12device2-createpipelinestate) y [**OMSetDepthBounds**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-omsetdepthbounds) habilitan las pruebas de **límites de profundidad** en hardware compatible.
--   [**ResolveSubresourceRegion permite**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-resolvesubresourceregion) la **resolución parcial de** los subrecursos para ayudar a optimizar el rendimiento.
+-   [**ResolveSubresourceRegion permite**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-resolvesubresourceregion) **la resolución parcial de** los subrecursos para ayudar a optimizar el rendimiento.
 -   [**SetSamplePositions permite**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-setsamplepositions) **posiciones de ejemplo programables** en el hardware compatible.
 
 ## <a name="november-2016-documentation-update"></a>Actualización de documentación de noviembre de 2016
@@ -95,7 +95,7 @@ Estos temas se han agregado a la documentación de Direct3D Windows 10, versión
 
 -   Una nueva sección de guía titulada Descripción de la capa de depuración [D3D12](understanding-the-d3d12-debug-layer.md).
 
-    Se describen tres nuevas interfaces de capa de depuración (en modo de vista previa): [**ID3D12Debug1**](/windows/win32/api/d3d12sdklayers/nn-d3d12sdklayers-id3d12debug1), [**ID3D12DebugCommandList1**](/windows/win32/api/d3d12sdklayers/nn-d3d12sdklayers-id3d12debugcommandlist1), [**ID3D12DebugDevice1**](/windows/win32/api/d3d12sdklayers/nn-d3d12sdklayers-id3d12debugdevice1).
+    Se describen tres nuevas interfaces de capa de depuración (en modo de vista previa): [**ID3D12Debug1,**](/windows/win32/api/d3d12sdklayers/nn-d3d12sdklayers-id3d12debug1) [**ID3D12DebugCommandList1**](/windows/win32/api/d3d12sdklayers/nn-d3d12sdklayers-id3d12debugcommandlist1), [**ID3D12DebugDevice1**](/windows/win32/api/d3d12sdklayers/nn-d3d12sdklayers-id3d12debugdevice1).
 
 ## <a name="august-2016-documentation-update-1"></a>Actualización 1 de la documentación de agosto de 2016
 
@@ -115,7 +115,7 @@ Estos temas se han agregado a la documentación de Direct3D Windows 10, versión
 -   Consulte información general sobre el modelo de sombreador [HLSL 6.0,](../direct3dhlsl/hlsl-shader-model-6-0-features-for-direct3d-12.md)que describe las operaciones intrínsecas de onda para sombreadores de cálculo y píxeles multiproceso.
 -   El uso de [**ID3D12Device::SetStablePowerState**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-setstablepowerstate) ha cambiado.
 -   Algunas características nuevas de Direct3D 11 se describen en [Características de Direct3D 11.4.](../direct3d11/direct3d-11-4-features.md)
--   Se ha actualizado la gama de bibliotecas admitidas para Direct3D 12. Consulte la sección Herramientas y **bibliotecas admitidas** de Instalación del entorno de programación de [Direct3D 12.](directx-12-programming-environment-set-up.md)
+-   Se ha actualizado la gama de bibliotecas admitidas para Direct3D 12. Consulte la sección Herramientas y **bibliotecas admitidas** de Configuración del entorno de programación de [Direct3D 12.](directx-12-programming-environment-set-up.md)
 -   [Uso de DirectX con pantallas de alto rango dinámico y color avanzado](../direct3darticles/high-dynamic-range.md)
 -   [Se muestra la frecuencia de actualización variable](../direct3ddxgi/variable-refresh-rate-displays.md)
 -   [Mejoras de DXGI 1.5](../direct3ddxgi/dxgi-1-5-improvements.md)

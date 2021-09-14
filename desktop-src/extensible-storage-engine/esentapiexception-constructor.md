@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Constructor de EsentApiException'
-title: Constructor EsentApiException
+title: Constructor de EsentApiException
 TOCTitle: 'EsentApiException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentApiException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentapiexception.esentapiexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: ceb80ee7778389e9dc79b732fba73d8c986483f160822492b05a6a26630a9fa5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 442facd9bec7c56e90738c95e1feb7fbc8f34b3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117716113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072614"
 ---
-# <a name="esentapiexception-constructor"></a>Constructor EsentApiException
+# <a name="esentapiexception-constructor"></a>Constructor de EsentApiException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 533d69b198ecff24dc48926669cbd0476ae1ce1f73abfc76ba711a30456e43ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 842ef9fde56ff6b4c420034b861aa8c151e7e6b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117981428"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074146"
 ---
 # <a name="handofftable-structure"></a>HANDOFFTABLE (estructura)
 
@@ -39,7 +39,7 @@ typedef struct HANDOFFTABLE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -64,9 +64,9 @@ Tabla handoff.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta estructura y sus estructuras HANDOFFENTRY asociadas se rellenan mediante Monitor de red cuando Monitor de red crea una tabla de entrega.
+Esta estructura, y sus estructuras HANDOFFENTRY asociadas, se rellenan mediante Monitor de red cuando Monitor de red crea una tabla de entrega.
 
 La información de protocolo que se usa al crear una tabla de entrega se proporciona en un archivo .ini proporcionado por la aplicación cuando se llama a [**CreateHandoffTable.**](createhandofftable.md)
 
@@ -74,7 +74,7 @@ La información de protocolo que se usa al crear una tabla de entrega se proporc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -82,7 +82,7 @@ La información de protocolo que se usa al crear una tabla de entrega se proporc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

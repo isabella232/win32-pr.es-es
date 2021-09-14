@@ -6,12 +6,12 @@ keywords:
 - Windows Animation Windows Animation ,samples
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9119ab7333f1f5d74b9be9998ad26b36139f9a92d88fec856d3f4572d12f431
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c2fe31e7fa12feab010bec3da710d4b2b80dd1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119656155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073310"
 ---
 # <a name="windows-animation-samples"></a>Windows Ejemplos de animación
 

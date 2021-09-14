@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 4bd3f0a17b7bf9799630c0eec1c8140cc20a993f4f004819aa5433f7c8109efc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5047f29a9afbe5bb18db213f90e559b5e11d273
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117911379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072834"
 ---
-# <a name="d3dcolor_rgba-macro"></a>Macro D3DCOLOR \_ RGBA
+# <a name="d3dcolor_rgba-macro"></a>Macro RGBA D3DCOLOR \_
 
 Inicializa un color con los valores rojo, verde, azul y alfa proporcionados.
 
@@ -45,28 +45,28 @@ D3DCOLOR D3DCOLOR_RGBA(
 *r* 
 </dt> <dd>
 
-Componente rojo del color. Este valor debe estar entre 0 y 255.
+Componente rojo del color. Este valor debe estar en el intervalo de 0 a 255.
 
 </dd> <dt>
 
 *g* 
 </dt> <dd>
 
-Componente verde del color. Este valor debe estar entre 0 y 255.
+Componente verde del color. Este valor debe estar en el intervalo de 0 a 255.
 
 </dd> <dt>
 
 *b* 
 </dt> <dd>
 
-Componente azul del color. Este valor debe estar entre 0 y 255.
+Componente azul del color. Este valor debe estar en el intervalo de 0 a 255.
 
 </dd> <dt>
 
 *Un* 
 </dt> <dd>
 
-Componente alfa del color. Este valor debe estar entre 0 y 255.
+Componente alfa del color. Este valor debe estar en el intervalo de 0 a 255.
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ Devuelve el [**valor D3DCOLOR**](d3dcolor.md) que corresponde a los valores RGBA
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,20 +1,20 @@
 ---
-title: Cargas de la vista de acceso sin ordenar (UAV) con tipo
-description: Obtenga información sobre la carga con tipo de vista de acceso desordenado (UAV) en Direct3D 12. La carga con tipo UAV es la capacidad de un sombreador de leer desde un UAV con un DXGI_FORMAT.
+title: Cargas de la vista de acceso sin ordenar con tipo (UAV)
+description: Obtenga información sobre la carga con tipo de vista de acceso desordenado (UAV) en Direct3D 12. La carga con tipo UAV es la capacidad de un sombreador de leer desde un UAV con una DXGI_FORMAT.
 ms.assetid: 6106D15E-EAF6-4583-B4F2-7CC7EE30DE15
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3bd45c1b2c14aa85ec9b9ab65cd6d6a9f33cb5e0995ac20b779b84aa7bed640
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 96128354132a58e0b8648fba2b4e1e6babb95535
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123482"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072858"
 ---
-# <a name="typed-unordered-access-view-uav-loads"></a>Cargas de la vista de acceso sin ordenar (UAV) con tipo
+# <a name="typed-unordered-access-view-uav-loads"></a>Cargas de la vista de acceso sin ordenar con tipo (UAV)
 
-La carga con tipo de vista de acceso no ordenado (UAV) es la capacidad de un sombreador de leer desde un UAV con un [**FORMATO DXGI \_ específico.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+La carga con tipo de vista de acceso sin ordenar (UAV) es la capacidad de un sombreador de leer desde un UAV con un [**FORMATO DXGI \_ específico.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 -   [Información general](#overview)
 -   [Formatos admitidos y llamadas API](#supported-formats-and-api-calls)
@@ -24,19 +24,19 @@ La carga con tipo de vista de acceso no ordenado (UAV) es la capacidad de un som
 
 ## <a name="overview"></a>Información general
 
-Una vista de acceso desordenado (UAV) es una vista de un recurso de acceso desordenado (que puede incluir búferes, texturas y matrices de texturas, aunque sin muestreo múltiple). Un UAV permite el acceso de lectura y escritura sin ordenar temporalmente desde varios subprocesos. Esto significa que varios subprocesos pueden leer o escribir simultáneamente este tipo de recurso sin generar conflictos de memoria. Este acceso simultáneo se controla mediante el uso de [Funciones atómicas](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-atomic-functions).
+Una vista de acceso no ordenado (UAV) es una vista de un recurso de acceso desordenado (que puede incluir búferes, texturas y matrices de texturas, aunque sin muestreo múltiple). Un UAV permite el acceso de lectura y escritura sin ordenar temporalmente desde varios subprocesos. Esto significa que varios subprocesos pueden leer o escribir simultáneamente este tipo de recurso sin generar conflictos de memoria. Este acceso simultáneo se controla mediante el uso de [funciones atómicas](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-atomic-functions).
 
 D3D12 (y D3D11.3) se expande en la lista de formatos que se pueden usar con cargas UAV con tipo.
 
 ## <a name="supported-formats-and-api-calls"></a>Formatos admitidos y llamadas API
 
-Anteriormente, los tres formatos siguientes eran compatibles con cargas UAV con tipo y eran necesarios para el hardware D3D11.0. Se admiten para todo el hardware D3D11.3 y D3D12.
+Anteriormente, los tres formatos siguientes admiten cargas UAV con tipo y eran necesarias para el hardware D3D11.0. Se admiten para todo el hardware D3D11.3 y D3D12.
 
 -   R32 \_ FLOAT
 -   R32 \_ UINT
 -   R32 \_ SINT
 
-Los siguientes formatos se admiten como un conjunto en hardware D3D12 o D3D11.3, por lo que si se admite alguno, se admiten todos.
+Los siguientes formatos se admiten como un conjunto en hardware D3D12 o D3D11.3, por lo que, si se admite alguno, se admiten todos.
 
 -   R32G32B32A32 \_ FLOAT
 -   R32G32B32A32 \_ UINT
@@ -82,7 +82,7 @@ Los siguientes formatos se admiten opcionalmente e individualmente en hardware D
 -   B5G5R5A1 \_ UNORM
 -   B4G4R4A4 \_ UNORM
 
-Para determinar la compatibilidad con cualquier formato adicional, llame a [**CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) con la estructura [**D3D12 \_ FEATURE DATA \_ \_ D3D12 \_ OPTIONS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) como primer parámetro (consulte [Capability Querying](capability-querying.md)). El *campo TypedUAVLoadAdditionalFormats* se establecerá si se admite la lista "compatible como conjunto" anterior. Realice una segunda llamada a **CheckFeatureSupport** mediante una estructura [**D3D12 \_ FEATURE DATA FORMAT \_ \_ \_ SUPPORT**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_format_support) (comprobando la estructura devuelta con el miembro D3D12 FORMAT SUPPORT2 UAV TYPED LOAD de la enumeración \_ \_ \_ \_ \_ [**D3D12 \_ FORMAT \_ SUPPORT2)**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_format_support2) para determinar la compatibilidad en la lista de formatos compatibles opcionalmente mencionados anteriormente, por ejemplo:
+Para determinar la compatibilidad con cualquier formato adicional, llame a [**CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) con la estructura [**D3D12 \_ FEATURE DATA \_ \_ D3D12 \_ OPTIONS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) como primer parámetro (consulte [Capability Querying](capability-querying.md)). El *campo TypedUAVLoadAdditionalFormats* se establecerá si se admite la lista "compatible como conjunto" anterior. Realice una segunda llamada a **CheckFeatureSupport** mediante una estructura FEATURE FORMAT SUPPORT de [**D3D12 FEATURE \_ DATA \_ \_ \_ (comprobando**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_format_support) la estructura devuelta con el miembro D3D12 FORMAT SUPPORT2 UAV TYPED LOAD de la enumeración \_ \_ \_ \_ \_ [**D3D12 \_ FORMAT \_ SUPPORT2)**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_format_support2) para determinar la compatibilidad en la lista de formatos admitidos opcionalmente mencionados anteriormente, por ejemplo:
 
 ``` syntax
 D3D12_FEATURE_DATA_D3D12_OPTIONS FeatureData;
@@ -122,7 +122,7 @@ float4 main() : SV_Target
 
 ## <a name="using-unorm-and-snorm-typed-uav-loads-from-hlsl"></a>Uso de cargas UAV con tipo UNORM y SNORM desde HLSL
 
-Al usar cargas UAV con tipo para leer desde un recurso UNORM o SNORM, debe declarar correctamente el tipo de elemento del objeto HLSL como `unorm` o `snorm` . Se especifica como un comportamiento indefinido para no coincide el tipo de elemento declarado en HLSL con el tipo de datos de recurso subyacente. Por ejemplo, si usa cargas UAV con tipo en un recurso de búfer con datos unorm R8, debe declarar el tipo de \_ elemento como `unorm float` :
+Al usar cargas UAV con tipo para leer desde un recurso UNORM o SNORM, debe declarar correctamente el tipo de elemento del objeto HLSL como `unorm` o `snorm` . Se especifica como comportamiento indefinido para que el tipo de elemento declarado en HLSL no coincide con el tipo de datos de recurso subyacente. Por ejemplo, si usa cargas UAV con tipo en un recurso de búfer con datos UNORM R8, debe declarar el tipo de \_ elemento como `unorm float` :
 
 ``` syntax
 RWBuffer<unorm float> uav;

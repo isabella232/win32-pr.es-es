@@ -1,19 +1,19 @@
 ---
-description: En el Administrador de autorización, un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que se pueden anidar grupos de usuarios.
+description: En el Administrador de autorización, un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que los grupos de usuarios se pueden anidar.
 ms.assetid: b01883d6-eae6-4f3a-b269-90c22827f116
 title: Agregar usuarios a un grupo de aplicaciones en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f8031ceea265240cb9fbefc7236ad301b64f86f2306f7fd9a819b6d8e257a85
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7fa08ddd93ba1743a20e3eb14a5f62344741c90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117784901"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073727"
 ---
 # <a name="adding-users-to-an-application-group-in-c"></a>Agregar usuarios a un grupo de aplicaciones en C++
 
-En el Administrador de autorización, un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que se pueden anidar grupos de usuarios. Un grupo de aplicaciones se representa mediante un [**objeto IAzApplicationGroup.**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup)
+En el Administrador de autorización, un grupo de aplicaciones es un grupo de usuarios y grupos de usuarios. Un grupo de aplicaciones puede contener otros grupos de aplicaciones, por lo que los grupos de usuarios se pueden anidar. Un grupo de aplicaciones se representa mediante un [**objeto IAzApplicationGroup.**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup)
 
 Para permitir que los miembros de un grupo de aplicaciones realicen una tarea o un conjunto de tareas, asigne ese grupo de aplicaciones a un rol que contenga esas tareas. Los roles se representan mediante [**objetos IAzRole.**](/windows/desktop/api/Azroles/nn-azroles-iazrole)
 

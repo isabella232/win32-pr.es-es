@@ -4,12 +4,12 @@ ms.assetid: efd16cca-ac63-4bfa-bc6c-d7465cc374ee
 title: Enumeración de nubes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c651fcfd003e4cafdf9b0f04c7cfc993a1e677b03630a61556523eed8c3aaece
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f958a2cc958c10bd85e674b43a3b41354fc344c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011563"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073927"
 ---
 # <a name="enumerating-clouds"></a>Enumeración de nubes
 

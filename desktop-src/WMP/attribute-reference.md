@@ -3,9 +3,9 @@ title: Referencia de atributos
 description: Referencia de atributos
 ms.assetid: a333ee0d-8f74-4517-b4c7-b1d8f95df2fc
 keywords:
-- Reproductor de Windows Media,attributes para elementos multimedia
+- Reproductor de Windows Media,atributos para elementos multimedia
 - Reproductor de Windows Media Móvil, atributos para elementos multimedia
-- Reproductor de Windows Media modelo de objetos, referencia
+- Reproductor de Windows Media modelo de objetos,reference
 - object model,reference
 - ActiveX control,reference
 - Reproductor de Windows Media ActiveX control,reference
@@ -19,12 +19,12 @@ keywords:
 - attributes,reference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6238540430a68513bfca40e804d4df74cb350142221092228c06562ff899a4fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0e101c579cf53838adeccdb23cf4342afaa2725
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118583026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073286"
 ---
 # <a name="attribute-reference"></a>Referencia de atributos
 
@@ -51,7 +51,7 @@ La referencia Reproductor de Windows Media de atributos documenta los atributos 
 
  
 
-Para obtener más información sobre los atributos de metadatos, vea las Windows instrucciones de uso de [metadatos multimedia.](/previous-versions/ms867702(v=msdn.10))
+Para obtener más información sobre los atributos de metadatos, vea las instrucciones Windows uso de [metadatos multimedia](/previous-versions/ms867702(v=msdn.10)).
 
  
 

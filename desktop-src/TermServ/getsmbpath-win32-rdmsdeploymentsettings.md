@@ -1,12 +1,12 @@
 ---
-title: Método GetSMBPath de la clase Win32_RDMSDeploymentSettings
-description: Recupera la ruta de acceso UNC al recurso compartido de SMB en el que se implementan las máquinas virtuales de la colección de escritorios virtuales.
+title: Método GetSMBPath de la Win32_RDMSDeploymentSettings clase
+description: Recupera la ruta de acceso UNC al recurso compartido SMB en el que se implementan las máquinas virtuales de la colección de escritorios virtuales.
 ms.assetid: 0a5d3c11-6a77-48f7-a3ea-6f82725ff01f
 ms.tgt_platform: multiple
 keywords:
 - Método GetSMBPath Servicios de Escritorio remoto
-- Método GetSMBPath Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetSMBPath
+- Método GetSMBPath Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método GetSMBPath
 topic_type:
 - apiref
 api_name:
@@ -18,15 +18,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: aa1738faf82a6405018495dd762ba9585daa3e1b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422629"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073340"
 ---
-# <a name="getsmbpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetSMBPath de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getsmbpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetSMBPath de la clase RDMSDeploymentSettings de Win32 \_
 
-Recupera la ruta de acceso UNC al recurso compartido de SMB en el que se implementan las máquinas virtuales de la colección de escritorios virtuales.
+Recupera la ruta de acceso UNC al recurso compartido SMB en el que se implementan las máquinas virtuales de la colección de escritorios virtuales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ uint32 GetSMBPath(
 
 <dl> <dt>
 
-*DirectoryPath* \[ enuncia\]
+*DirectoryPath* \[ out\]
 </dt> <dd>
 
-Recibe una ruta de acceso con formato UNC al recurso compartido de SMB.
+Recibe una ruta de acceso con formato UNC al recurso compartido SMB.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

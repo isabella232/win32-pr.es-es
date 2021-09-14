@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 6bb92e2ae9a00c06e799c2e7378a40de09160e9bf94625e15a5a0e2091a5dae1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 286a331f4baeb1dde79a720385c61606835248f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074101"
 ---
 # <a name="patternmatch-structure"></a>PATTERNMATCH (estructura)
 
@@ -40,7 +40,7 @@ typedef struct _PATTERNMATCH {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -53,8 +53,8 @@ Marcas de coincidencia de patrones:
 
 | Value                                                                                                                                                                                                                                                                                           | Significado                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <span id="PATTERN_MATCH_FLAGS_NOT"></span><span id="pattern_match_flags_not"></span><dl> <dt>**PATRÓN \_ MARCAS \_ DE COINCIDENCIA NO \_ 0X00000001**</dt> <dt></dt> </dl>                                   | Cuando se establece, esta marca conserva los fotogramas que carecen del patrón especificado en el lugar adecuado.<br/> |
-| <span id="PATTERN_MATCH_FLAGS_PORT_SPECIFIED"></span><span id="pattern_match_flags_port_specified"></span><dl> <dt>**PATRÓN \_ PUERTO \_ DE MARCAS DE COINCIDENCIA \_ \_ ESPECIFICADO**</dt> <dt>0X00000008</dt> </dl> | Busca un valor de número de puerto.<br/>                                                             |
+| <span id="PATTERN_MATCH_FLAGS_NOT"></span><span id="pattern_match_flags_not"></span><dl> <dt>**PATTERN \_ MARCAS \_ DE COINCIDENCIA NO \_ 0X00000001**</dt> <dt></dt> </dl>                                   | Cuando se establece, esta marca conserva los fotogramas que carecen del patrón especificado en el lugar adecuado.<br/> |
+| <span id="PATTERN_MATCH_FLAGS_PORT_SPECIFIED"></span><span id="pattern_match_flags_port_specified"></span><dl> <dt>**PATTERN \_ PUERTO \_ DE MARCAS DE COINCIDENCIA ESPECIFICADO \_ \_ 0X00000008**</dt> <dt></dt> </dl> | Busca un valor de número de puerto.<br/>                                                             |
 
 
 
@@ -71,10 +71,10 @@ Tipos de desplazamiento, que pueden ser uno de los siguientes:
 
 | Value                                                                                                                                                                                                                                                       | Significado                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="OFFSET_BASIS_RELATIVE_TO_FRAME"></span><span id="offset_basis_relative_to_frame"></span><dl> <dt>**BASE \_ DE DESPLAZAMIENTO EN RELACIÓN CON \_ \_ \_ FRAME**</dt> </dl>                                         | Establece un desplazamiento, en bytes, con respecto al inicio del marco.<br/>                   |
-| <span id="OFFSET_BASIS_RELATIVE_TO_EFFECTIVE_PROTOCOL"></span><span id="offset_basis_relative_to_effective_protocol"></span><dl> <dt>**BASE \_ DE DESPLAZAMIENTO RELATIVA AL PROTOCOLO \_ \_ \_ \_ EFECTIVO**</dt> </dl> | Establece un desplazamiento, en bytes, con respecto al inicio del protocolo al que se hace referencia.<br/> |
+| <span id="OFFSET_BASIS_RELATIVE_TO_FRAME"></span><span id="offset_basis_relative_to_frame"></span><dl> <dt>**BASE \_ DE DESPLAZAMIENTO RELATIVA AL \_ \_ \_ MARCO**</dt> </dl>                                         | Establece un desplazamiento, en bytes, relativo al inicio del marco.<br/>                   |
+| <span id="OFFSET_BASIS_RELATIVE_TO_EFFECTIVE_PROTOCOL"></span><span id="offset_basis_relative_to_effective_protocol"></span><dl> <dt>**BASE \_ DE DESPLAZAMIENTO EN RELACIÓN CON EL PROTOCOLO \_ \_ \_ \_ EFECTIVO**</dt> </dl> | Establece un desplazamiento, en bytes, relativo al inicio del protocolo al que se hace referencia.<br/> |
 | <span id="OFFSET_BASIS_RELATIVE_TO_IPX"></span><span id="offset_basis_relative_to_ipx"></span><dl> <dt>**BASE \_ DE DESPLAZAMIENTO RELATIVA A \_ \_ \_ IPX**</dt> </dl>                                               | Establece un desplazamiento, en bytes, solo relativo a IPX.<br/>                             |
-| <span id="OFFSET_BASIS_RELATIVE_TO_IP"></span><span id="offset_basis_relative_to_ip"></span><dl> <dt>**BASE \_ DE DESPLAZAMIENTO RELATIVA A \_ \_ \_ IP**</dt> </dl>                                                  | Establece un desplazamiento, en bytes, solo en relación con la dirección IP.<br/>                              |
+| <span id="OFFSET_BASIS_RELATIVE_TO_IP"></span><span id="offset_basis_relative_to_ip"></span><dl> <dt>**BASE \_ DE DESPLAZAMIENTO RELATIVA A \_ \_ \_ IP**</dt> </dl>                                                  | Establece un desplazamiento, en bytes, solo relativo a IP.<br/>                              |
 
 
 
@@ -92,7 +92,7 @@ Valor de puerto, si se especifica.
 **Offset**
 </dt> <dd>
 
-Desplazamiento, en bytes, con respecto a **OffsetBasis**.
+Desplazamiento, en bytes, relativo a **OffsetBasis.**
 
 </dd> <dt>
 
@@ -110,9 +110,9 @@ Patrón que se debe coincidir.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta estructura se usa para construir un filtro de captura. Para obtener más información sobre cómo implementar esta estructura, vea [Capturar filtros](capture-filters.md).
+Esta estructura se usa para construir un filtro de captura. Para obtener más información sobre cómo implementar esta estructura, vea [Filtros de captura](capture-filters.md).
 
 Un filtro de captura puede contener hasta cuatro **estructuras PATTERNMATCH.**
 
@@ -128,7 +128,7 @@ Un filtro de captura puede contener hasta cuatro **estructuras PATTERNMATCH.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
