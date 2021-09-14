@@ -1,11 +1,11 @@
 ---
 title: Método INapSystemHealthValidationRequest GetCorrelationId (NapSystemHealthValidator.h)
-description: Lo usan los validadores de estado del sistema (SHV) para recuperar el identificador de correlación. A continuación, la SHV debe registrar esta información.
+description: Los validadores de estado del sistema (SHV) usan para recuperar el identificador de correlación. A continuación, el SHV debe registrar esta información.
 ms.assetid: 72603d24-219e-4bb0-9b2b-b58d42939da8
 keywords:
 - Método NAP de GetCorrelationId
-- Método NAP de GetCorrelationId , interfaz INapSystemHealthValidationRequest
-- INapSystemHealthValidationRequest interface NAP , GetCorrelationId (método)
+- Método NAP de GetCorrelationId, interfaz INapSystemHealthValidationRequest
+- INapSystemHealthValidationRequest interface NAP , GetCorrelationId method
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a890e6091a3803b2af984cf95c2559db2979dfeb674d0904496421e7d0ad710
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1095a2c3eec90ff33613b6d37b43f31fdabd107
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161295"
 ---
 # <a name="inapsystemhealthvalidationrequestgetcorrelationid-method"></a>INapSystemHealthValidationRequest::GetCorrelationId (método)
 
@@ -30,7 +30,7 @@ ms.locfileid: "119780815"
 
  
 
-Los validadores de estado del sistema (SHV) usan el método **INapSystemHealthValidationRequest::GetCorrelationId** para recuperar el identificador de correlación. A continuación, la SHV debe registrar esta información.
+Los validadores de estado del sistema (SHV) usan el método **INapSystemHealthValidationRequest::GetCorrelationId** para recuperar el identificador de correlación. A continuación, el SHV debe registrar esta información.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ HRESULT GetCorrelationId(
 *correlationId* \[ out\]
 </dt> <dd>
 
-Puntero a un [**correlationId único**](/windows/win32/api/naptypes/ns-naptypes-correlationid) para el intercambio de SoH.
+Puntero a un [**correlationId único**](/windows/win32/api/naptypes/ns-naptypes-correlationid) para el intercambio soH.
 
 </dd> </dl>
 
@@ -74,17 +74,17 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

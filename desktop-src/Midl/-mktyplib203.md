@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc887560401986b9a7d5e0f0aa7c8b36d61874bf245a88ade7a149cd084f1ee3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84e8fd972355c2f6d37300c60f4bf74e76bf4396
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119014153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159741"
 ---
 # <a name="mktyplib203-switch"></a>Modificador /mktyplib203
 
@@ -31,7 +31,7 @@ midl /mktyplib203
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar el modificador **/mktyplib203,** el archivo de entrada debe seguir exactamente la sintaxis de ODL, lo que significa que no se puede colocar ninguna instrucción fuera del bloque de biblioteca. Ejemplos
 
@@ -39,7 +39,7 @@ Para usar el modificador **/mktyplib203,** el archivo de entrada debe seguir exa
 
 **midl /mktyplib203 oldhabit.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

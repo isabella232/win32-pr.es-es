@@ -4,12 +4,12 @@ ms.assetid: 8985fee5-7b63-46ab-b229-046e2f0ee004
 title: Evento InkEdit.MouseDown (Inked.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a1adb35b6d431007fb4bdc259d72ddce25e3bc480a6596d2c4658cd19a3789e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78e684fe2d75e5eaaf2b0064e8c7c78cbfe281a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118717955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256706"
 ---
 # <a name="inkeditmousedown-event"></a>Evento InkEdit.MouseDown
 
@@ -33,14 +33,14 @@ HRESULT MouseDown(
 
 <dl> <dt>
 
-*Botón* 
+*Button* 
 </dt> <dd>
 
 Miembro de la [**enumeración MouseButton**](/windows/desktop/api/inked/ne-inked-mousebutton) que indica qué botones del mouse se han presionado.
 
 
 
-| Valor                                                                                                                                                            | Significado                                           |
+| Value                                                                                                                                                            | Significado                                           |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | <span id="NO_BUTTON_"></span><span id="no_button_"></span><dl> <dt>**NO \_ BUTTON**</dt> </dl>             | Predeterminada. No se presionó ningún botón del mouse. <br/> |
 | <span id="LEFT_BUTTON_"></span><span id="left_button_"></span><dl> <dt>**LEFT \_ BUTTON**</dt> </dl>       | Se presionó el botón primario del mouse. <br/>    |
@@ -60,7 +60,7 @@ Miembro de la [**enumeración InkShiftKeyModifierFlags**](/windows/desktop/api/m
 
 
 
-| Valor                                                                                                                                                                                     | Significado                                                          |
+| Value                                                                                                                                                                                     | Significado                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**IKM \_ Shift**</dt> </dl>             | Especifica que la tecla MAYÚS se usó como modificador. <br/> |
 | <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Control**</dt> </dl> | Especifica que la tecla CTRL se usó como modificador. <br/>  |
@@ -90,7 +90,7 @@ Coordenada y actual, en píxeles, del puntero del mouse.
 
 Si este evento se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se presiona un botón del mouse mientras el puntero está sobre un control [InkEdit,](inkedit-control-reference.md) ese control captura el mouse y recibe todos los eventos del mouse hasta e incluyendo el último [**evento MouseUp.**](inkedit-mouseup.md) Esto implica que es posible que las coordenadas del puntero del mouse (x, y) devueltas por un evento del mouse no siempre se encontraran en el área interna del objeto que las recibe.
 
@@ -102,11 +102,11 @@ Este método de evento se define en la **\_ interfaz IInkEditEvents.** La **\_ i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>Inked.h (también requiere \_ i.c con entrada manuscrita)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Inked.h (también requiere \_ i.c con entrada manuscrita)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
@@ -124,7 +124,7 @@ Este método de evento se define en la **\_ interfaz IInkEditEvents.** La **\_ i
 [**InkShiftKeyModifierFlags (Enumeración)**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags)
 </dt> <dt>
 
-[**MouseMove Event \[ InkEdit (Control)\]**](inkedit-mousemove.md)
+[**MouseMove Event \[ InkEdit Control\]**](inkedit-mousemove.md)
 </dt> <dt>
 
 [**MouseUp Event \[ InkEdit (Control)\]**](inkedit-mouseup.md)

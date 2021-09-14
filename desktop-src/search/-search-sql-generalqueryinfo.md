@@ -4,12 +4,12 @@ ms.assetid: f390c793-cb61-492c-8797-da0df0a36ece
 title: Información general del lenguaje de consulta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf40bab6675abffee7d2073c2aff4443aa852de34e5dc232753201da6759de9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 305c34085d64f7242e4bb90d6bcd191228f65071
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119944645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257102"
 ---
 # <a name="general-query-language-information"></a>Información general del lenguaje de consulta
 

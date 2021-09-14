@@ -4,12 +4,12 @@ ms.assetid: 8a00e312-1c5b-4adc-9970-6d16fb5dd437
 title: System.Contact.JA.CompanyNamePhonetic
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92ba51c67264c0d754b00276830158898cd0b9629e1a8b6cbe917a6c154de199
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2e56f53feedf304953cb134f25e39c1f8ba8934
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119823185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257364"
 ---
 # <a name="systemcontactjacompanynamephonetic"></a>System.Contact.JA.CompanyNamePhonetic
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

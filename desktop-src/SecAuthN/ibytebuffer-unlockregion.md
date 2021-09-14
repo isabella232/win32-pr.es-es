@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 798569621c1a46e73ea6fd8e2f4f3333c3a0cbcef32618797fcba39d35b55bf6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 92e49ba000177326ad14d3b83002613a15e96e18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160992"
 ---
 # <a name="ibytebufferunlockregion-method"></a>IByteBuffer::UnlockRegion (método)
 
@@ -68,7 +68,7 @@ Restricciones de acceso previamente colocadas en el intervalo.
 
 El valor devuelto es **un valor HRESULT.** Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método IByteBuffer::UnlockRegion** desbloquea una región bloqueada previamente mediante el [**método IByteBuffer::LockRegion.**](ibytebuffer-lockregion.md) Posteriormente, las regiones bloqueadas se deben desbloquear explícitamente llamando a **IByteBuffer::UnlockRegion** con exactamente los mismos valores para los parámetros *libOffset*, *cb* y *dwLockType.* La región debe desbloquearse antes de liberar la secuencia. Dos regiones adyacentes no se pueden bloquear por separado y, a continuación, desbloquearse con una sola llamada de desbloqueo.
 
@@ -98,7 +98,7 @@ if (FAILED(hr))
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer se define como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |

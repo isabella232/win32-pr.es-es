@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39514138
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a0e9a73b25818dc02b6c199382eedaca973709bdf19377f443c52b4b4c730eb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f75057adf56a6fb1d899afba15a6880b0b08eed7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119473975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969115"
 ---
 # <a name="jet_instance-members"></a>JET_INSTANCE miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Un JET_INSTANCE contiene un identificador para la instancia de la base de datos que se usará para las llamadas a la API jet.
+Un JET_INSTANCE contiene un identificador para la instancia de la base de datos que se usará para las llamadas a la API de JET.
 
 El [JET_INSTANCE](./jet-instance-structure.md) expone los miembros siguientes.
 

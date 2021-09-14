@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102513
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 04a1c91e5ebe873a19ee3213005c8be2b99287124d39c89537a180f2fc911c03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c7399b3e429e1aac2bb171abde230474307ee80e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118775046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963100"
 ---
 # <a name="esentrecordformatconversionfailedexception-methods"></a>Métodos de EsentRecordFormatConversionFailedException 
 

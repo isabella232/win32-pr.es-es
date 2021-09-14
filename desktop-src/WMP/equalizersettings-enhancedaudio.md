@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ac8579490f76648d2f1664e8cac4e6e473035c820ab0f2f7e8881e5424d5834
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 641e00c1b5020ebc705cdd5a00109b94dc3b72cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240974"
 ---
 # <a name="equalizersettingsenhancedaudio"></a>EQUALIZERSETTINGS.enhancedAudio
 
@@ -52,7 +52,7 @@ Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

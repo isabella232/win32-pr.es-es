@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1795068aae1a5a8c3e793b828d5a80dbab369e16f9c5383af367b66d0febc738
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 553d99dee7dd08218680fc0b43e6e12237c4f8fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067462"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159697"
 ---
 # <a name="zp-switch"></a>Modificador /Zp
 
@@ -38,7 +38,7 @@ Especifica el nivel de empaquetado de las estructuras en el sistema de destino. 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **modificador /Zp** designa el nivel de empaquetado de las estructuras en el sistema de destino. El valor de nivel de empaquetado corresponde al valor de la opción **/Zp** usado por el compilador de Microsoft C/C++. Para obtener más información, consulte la documentación de programación de Microsoft C/C++.
 
@@ -55,7 +55,7 @@ El nivel de empaquetado predeterminado que se usa cuando no se especifica el mod
 
 **midl /Zp4 filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

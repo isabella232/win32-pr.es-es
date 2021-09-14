@@ -4,12 +4,12 @@ ms.assetid: 38c73501-6376-41bb-8ad0-8f94ad42dfc9
 title: System.Link.Status
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e9e227582049a719b13849f178b7f4afa1e63ca74576b68b526d5c2e39935e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df9b4a6b398ba022f9f62a0860262028ced49a55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117683568"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257186"
 ---
 # <a name="systemlinkstatus"></a>System.Link.Status
 
@@ -73,7 +73,7 @@ propertyDescription
             defineName = LINK_STATUS_BROKEN
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -4,12 +4,12 @@ ms.assetid: 93ef3098-b3cc-4b24-ae82-1c10d937f14f
 title: Máscaras de acceso a transacciones (WinNT.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faafcce45944e37418191254fc5a2b81d00d9248b27ea5e8753fe8e34a734754
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6b815bcb04a97dbd059c85c6c615a7d607bf77ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119520645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160022"
 ---
 # <a name="transaction-access-masks"></a>Máscaras de acceso a transacciones
 
@@ -17,7 +17,7 @@ KTM define las siguientes máscaras de acceso a transacciones que se usarán al 
 
 <dl> <dt>
 
-<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**INFORMACIÓN DE \_ CONSULTA \_ DE TRANSACCIONES**
+<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**INFORMACIÓN DE \_ CONSULTA DE \_ TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 0x000001
@@ -51,7 +51,7 @@ El autor de la llamada puede establecer la información de la transacción.
 
 
 
-El autor de la llamada puede list en esta transacción.
+El autor de la llamada puede alistarse en esta transacción.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ El autor de la llamada puede revertir esta transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**PROPAGACIÓN DE \_ TRANSACCIÓN**
+<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**PROPAGACIÓN \_ DE TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x000020
@@ -142,12 +142,12 @@ El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_
 
 
 
-El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ REQUIRED,** **TRANSACTION GENERIC \_ \_ READ,** **TRANSACTION GENERIC \_ \_ WRITE** y **TRANSACTION GENERIC \_ \_ EXECUTE.**
+El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ REQUIRED,** **TRANSACTION GENERIC \_ \_ READ,** **TRANSACTION GENERIC \_ \_ WRITE** y **TRANSACTION GENERIC \_ \_ EXECUTE**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**DERECHOS DE \_ TRANSACTION RESOURCE \_ \_ MANAGER**
+<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**DERECHOS DE \_ RESOURCE \_ MANAGER DE \_ TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 0x120037
@@ -155,24 +155,24 @@ El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ RE
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **TRANSACTION \_ GENERIC \_ READ,** **STANDARD RIGHTS \_ \_ WRITE,** **TRANSACTION SET \_ \_ INFORMATION**, **TRANSACTION \_ ROLLBACK,** **TRANSACTION \_ ENLIST,** **TRANSACTION \_ PROPAGATE** y **SYNCHRONIZE.**
+El autor de la llamada tiene los siguientes privilegios: **TRANSACTION \_ GENERIC \_ READ**, **STANDARD RIGHTS \_ \_ WRITE**, **TRANSACTION SET \_ \_ INFORMATION**, **TRANSACTION \_ ROLLBACK**, **TRANSACTION \_ ENLIST,** **TRANSACTION \_ PROPAGATE** y **SYNCHRONIZE**.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se recomienda que los administradores de recursos, al realizar la alta en una transacción, **especifiquen LOS DERECHOS DE TRANSACTION \_ RESOURCE \_ MANAGER \_** al abrir una transacción.
+Se recomienda que los administradores de recursos, al realizar la alta en una transacción, **especifiquen TRANSACTION \_ RESOURCE MANAGER \_ \_ RIGHTS** al abrir una transacción.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                     |
-| Header<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
 
 
 

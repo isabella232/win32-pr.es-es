@@ -4,22 +4,22 @@ description: Elemento EQUALIZERSETTINGS
 ms.assetid: 521f1c95-7904-4085-a8bc-5399d667dfb1
 keywords:
 - Reproductor de Windows Media máscaras, elemento EQUALIZERSETTINGS
-- elemento skins,EQUALIZERSETTINGS
+- skins,ELEMENTO EQUALIZERSETTINGS
 - Elemento EQUALIZERSETTINGS
 - referencia para máscaras, elemento EQUALIZERSETTINGS
 - elements,EQUALIZERSETTINGS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: facd5d9630536947614166bc8444ad38e33020920ce679180824ef9a3b007bc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae20500dfba656450c3102ee80b4a06e089fe8ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241004"
 ---
 # <a name="equalizersettings-element"></a>Elemento EQUALIZERSETTINGS
 
-El **elemento EQUALIZERSETTINGS** proporciona una manera de manipular el equalizer gráfico y otras configuraciones de audio de Reproductor de Windows Media mediante los atributos y el método enumerados aquí.
+El **elemento EQUALIZERSETTINGS** proporciona una manera de manipular el igualador gráfico y otras configuraciones de audio de Reproductor de Windows Media mediante los atributos y el método enumerados aquí.
 
 El **elemento EQUALIZERSETTINGS** admite los atributos siguientes.
 
@@ -28,13 +28,13 @@ El **elemento EQUALIZERSETTINGS** admite los atributos siguientes.
 | Atributo                                                          | Descripción                                                                                             |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | [bandas](equalizersettings-bands.md)                               | Recupera el número de bandas de frecuencia admitidas.                                                      |
-| [Bypass](equalizersettings-bypass.md)                             | Especifica o recupera un valor que indica si el filtro de equalizer se omite en el gráfico de filtros. |
+| [Bypass](equalizersettings-bypass.md)                             | Especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros. |
 | [Crossfade](equalizersettings-crossfade.md)                       | Especifica o recupera un valor que indica si está habilitada la atenuación cruzada.                                |
 | [crossFadeWindow](equalizersettings-crossfadewindow.md)           | Especifica o recupera la cantidad de superposición de atenuación cruzada en milisegundos.                                |
 | [currentPreset](equalizersettings-currentpreset.md)               | Especifica o recupera el índice del valor preestablecido actual.                                                 |
 | [currentPresetTitle](equalizersettings-currentpresettitle.md)     | Recupera el título del valor preestablecido actual.                                                              |
 | [currentSpeakerName](equalizersettings-currentspeakername.md)     | Recupera el nombre de la configuración actual del hablante.                                                      |
-| [enableSplineTension](equalizersettings-enablesplinetension.md)   | Especifica o recupera un valor que indica si la curva spline está habilitada o deshabilitada.                |
+| [enableSplineTension](equalizersettings-enablesplinetension.md)   | Especifica o recupera un valor que indica si la tensión de spline está habilitada o deshabilitada.                |
 | [enhancedAudio](equalizersettings-enhancedaudio.md)               | Especifica o recupera un valor que indica si el audio mejorado está activado.                          |
 | [gainLevels](equalizersettings-gainlevels.md)                     | Especifica o recupera el nivel de ganancia de la banda correspondiente al índice proporcionado.                  |
 | [gainLevel1](equalizersettings-gainlevel1.md)                     | Especifica o recupera el nivel de ganancia de la banda 1.                                                        |
@@ -48,11 +48,11 @@ El **elemento EQUALIZERSETTINGS** admite los atributos siguientes.
 | [gainLevel9](equalizersettings-gainlevel9.md)                     | Especifica o recupera el nivel de ganancia de la banda 9.                                                        |
 | [gainLevel10](equalizersettings-gainlevel10.md)                   | Especifica o recupera el nivel de ganancia de la banda 10.                                                       |
 | [Normalización](equalizersettings-normalization.md)               | Especifica o recupera un valor que indica si la normalización está habilitada.                             |
-| [normalizationAverage](equalizersettings-normalizationaverage.md) | Recupera el valor de normalización promedio.                                                              |
+| [normalizationAverage](equalizersettings-normalizationaverage.md) | Recupera el valor medio de normalización.                                                              |
 | [normalizationPeak](equalizersettings-normalizationpeak.md)       | Recupera el valor de normalización máxima.                                                                 |
 | [presetCount](equalizersettings-presetcount.md)                   | Recupera el número de valores preestablecidos disponibles.                                                              |
 | [speakerSize](equalizersettings-speakersize.md)                   | Especifica o recupera el índice del tamaño del altavoz actual.                                           |
-| [splineTension](equalizersettings-splinetension.md)               | Especifica o recupera la curva spline para el control de igualador.                                    |
+| [splineTension](equalizersettings-splinetension.md)               | Especifica o recupera la curva spline del control de igualador.                                    |
 | [truBassLevel](equalizersettings-trubasslevel.md)                 | Especifica o recupera el nivel de TruBass de SRS.                                                           |
 | [wowLevel](equalizersettings-wowlevel.md)                         | Especifica o recupera el nivel de efecto WOW de SRS.                                                        |
 
@@ -75,7 +75,7 @@ El **elemento EQUALIZERSETTINGS** admite los métodos siguientes.
 
  
 
-El **elemento EQUALIZERSETTINGS** puede implementar los [controladores de eventos \_ onchange](attribute-onchange.md) del atributo.
+El **elemento EQUALIZERSETTINGS** puede implementar los [controladores de eventos \_ onchange](attribute-onchange.md) del atributo .
 
 ## <a name="related-topics"></a>Temas relacionados
 

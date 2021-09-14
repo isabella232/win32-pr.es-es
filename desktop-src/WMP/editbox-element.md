@@ -6,20 +6,20 @@ keywords:
 - Reproductor de Windows Media máscaras, elemento EDITBOX
 - skins,ELEMENTO EDITBOX
 - Elemento EDITBOX
-- referencia de máscaras,elemento EDITBOX
+- referencia de máscaras, elemento EDITBOX
 - elements,EDITBOX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b8832163b46c5c1f6a2b0e0369b44d885dc97822b0f8fab3b90326e56a8db21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 572e6421c5c94643a1ea256a4660bdb97a765ef7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241076"
 ---
 # <a name="editbox-element"></a>Elemento EDITBOX
 
-El **elemento EDITBOX** proporciona una manera para que los usuarios escriban texto dentro de una máscara.
+El **elemento EDITBOX** proporciona una manera de que los usuarios escriban texto dentro de una máscara.
 
 El **elemento EDITBOX** admite los atributos siguientes.
 
@@ -57,13 +57,13 @@ El **elemento EDITBOX** admite los métodos siguientes.
 | [getSelectionEnd](editbox-getselectionend.md)     | Recupera la posición final del texto seleccionado en el control de cuadro de edición.                         |
 | [getSelectionStart](editbox-getselectionstart.md) | Recupera la posición inicial del texto seleccionado en el control de cuadro de edición.                       |
 | [replaceSelection](editbox-replaceselection.md)   | Reemplaza la selección actual por el texto especificado.                                             |
-| [setSelection](editbox-setselection.md)           | Selecciona el texto del control de cuadro de edición desde el índice inicial especificado hasta el índice final especificado. |
+| [setSelection](editbox-setselection.md)           | Selecciona el texto del control de cuadro de edición del índice inicial especificado al índice final especificado. |
 
 
 
  
 
-El **elemento EDITBOX** admite los atributos de ambiente y puede implementar todos los controladores de eventos de ambiente con la excepción de **onclick**. Para obtener más información, vea [Atributos ambientales](ambient-attributes.md) y [controladores de eventos de ambiente.](ambient-event-handlers.md)
+El **elemento EDITBOX admite** los atributos de ambiente y puede implementar todos los controladores de eventos ambientales con la excepción de **onclick**. Para obtener más información, vea [Atributos de ambiente](ambient-attributes.md) y Controladores de eventos [ambientales.](ambient-event-handlers.md)
 
 > [!Note]  
 > Este elemento requiere Reproductor de Windows Media para Windows XP o posterior.

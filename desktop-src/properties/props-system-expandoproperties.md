@@ -1,19 +1,19 @@
 ---
-description: Propiedades que no están almacenadas en el propio elemento, donde las propiedades tienen el formato de una secuencia que contiene serializEDPROPSTORAGE.
+description: Propiedades que no se almacenan en el propio elemento, donde las propiedades tienen el formato de una secuencia que contiene SERIALIZEDPROPSTORAGE.
 ms.assetid: 6ab4f33a-5247-4706-95c9-39c84ef2aa56
 title: System.ExpandoProperties
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c02abc4f1ebf38ce2f9730c08b8b91a32e6148270ce484b3cd0ae1e171d4427
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b16cf94a7e670dd498fb65acfb01f09a83fa9502
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120091265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257210"
 ---
 # <a name="systemexpandoproperties"></a>System.ExpandoProperties
 
-Propiedades que no están almacenadas en el propio elemento, donde las propiedades tienen el formato de una secuencia que contiene serializEDPROPSTORAGE.
+Propiedades que no se almacenan en el propio elemento, donde las propiedades tienen el formato de una secuencia que contiene SERIALIZEDPROPSTORAGE.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

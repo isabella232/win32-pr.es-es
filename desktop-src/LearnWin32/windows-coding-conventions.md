@@ -4,16 +4,16 @@ description: Si no está Windows programación, puede ser desconcertante la prim
 ms.assetid: 466a66db-7681-4fce-9672-07849cd1b096
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b78c24f38f9f2f410c044637ca3aa59d4baa39e9b671b3485c5b85899b69c2fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 365a9c8509d7cb799bafdfa70c326f1074b64d93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118387400"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159918"
 ---
 # <a name="windows-coding-conventions"></a>Windows Convenciones de codificación
 
-Si no está Windows programación, puede ser desconcertante la primera vez que vea un Windows programa. El código se rellena con definiciones de tipos extraños, como **DWORD \_ PTR** y **LPRECT,** y las variables tienen nombres como *hWnd* y *pwsz* (denominada notación húngaro). Merece la pena aprovechar un momento para conocer algunas de las convenciones Windows codificación.
+Si no está Windows programación, puede ser desconcertante la primera vez que vea un Windows programa. El código se rellena con definiciones de tipos extraños, como **DWORD \_ PTR** y **LPRECT,** y las variables tienen nombres como *hWnd* y *pwsz* (denominada notación húngaro). Merece la pena aprovechar un momento para conocer algunas de las convenciones de codificación Windows código.
 
 La gran mayoría de Windows API están formadas por funciones o interfaces de Modelo de objetos componentes (COM). Muy pocos Windows API se proporcionan como clases de C++. (Una excepción importante es GDI+, una de las API de gráficos 2D).
 
@@ -99,11 +99,11 @@ PRECT  rect;  // Also the same.
 
 
 
-Históricamente, *P* significa "puntero" y *LP* significa "puntero largo". Los punteros largos (también *denominados punteros lejanos)* son una retención de Windows de 16 bits, cuando eran necesarios para abordar intervalos de memoria fuera del segmento actual. El *prefijo LP* se conserva para que sea más fácil porte código de 16 bits a código de 32 Windows. Hoy en día no hay ninguna distinción: un puntero es un puntero.
+Históricamente, *P* significa "puntero" y *LP* significa "puntero largo". Los punteros largos (también *denominados punteros lejanos)* son una retención de Windows de 16 bits, cuando eran necesarios para abordar intervalos de memoria fuera del segmento actual. El *prefijo LP* se conserva para facilitar la portabilidad de código de 16 bits a código de 32 Windows. Hoy en día no hay ninguna distinción: un puntero es un puntero.
 
 ### <a name="pointer-precision-types"></a>Tipos de precisión de puntero
 
-Los siguientes tipos de datos siempre tienen el tamaño de un puntero, es decir, 32 bits de ancho en aplicaciones de 32 bits y 64 bits de ancho en aplicaciones de 64 bits. El tamaño se determina en tiempo de compilación. Cuando una aplicación de 32 bits se ejecuta en archivos de 64 Windows, estos tipos de datos siguen teniendo 4 bytes de ancho. (Una aplicación de 64 bits no se puede ejecutar en aplicaciones de 32 Windows, por lo que no se produce la situación inversa).
+Los siguientes tipos de datos siempre tienen el tamaño de un puntero, es decir, 32 bits de ancho en aplicaciones de 32 bits y 64 bits de ancho en aplicaciones de 64 bits. El tamaño se determina en tiempo de compilación. Cuando una aplicación de 32 bits se ejecuta en archivos de 64 Windows, estos tipos de datos siguen teniendo 4 bytes de ancho. (Una aplicación de 64 bits no se puede ejecutar en archivos de 32 Windows, por lo que no se produce la situación inversa).
 
 -   **DWORD \_ PTR**
 -   **INT \_ PTR**

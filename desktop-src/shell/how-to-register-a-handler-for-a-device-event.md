@@ -4,16 +4,16 @@ ms.assetid: 84B12B5C-C179-4124-A1FC-B90D120336BF
 title: Cómo registrar un controlador para un evento de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a13abe8917d93ac6a4801e0c11cb7223da25e362923df229180b8c8e6211ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34ef15071b349afa3f863e7c57b64c280c2aef8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117859604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257049"
 ---
 # <a name="how-to-register-a-handler-for-a-device-event"></a>Cómo registrar un controlador para un evento de dispositivo
 
-Los controladores definen la parte del software de Reproducción automática. Definen el icono y el nombre descriptivo del software, así como el componente Modelo de objetos componentes (COM) para crear instancias y cómo inicializar el componente en respuesta a un evento. Cada controlador de un evento específico se registra como un valor en la clave **EventHandler** adecuada. Cuando se detecta ese evento, se solicita al usuario que elija un controlador de una lista de todos los controladores registrados para ese evento.
+Los controladores definen la parte de software de Reproducción automática. Definen el icono y el nombre descriptivo del software, así como el componente Modelo de objetos componentes (COM) para crear instancias y cómo inicializar el componente en respuesta a un evento. Cada controlador de un evento específico se registra como un valor bajo la clave **EventHandler** adecuada. Cuando se detecta ese evento, se solicita al usuario que elija un controlador de una lista de todos los controladores registrados para ese evento.
 
 ## <a name="instructions"></a>Instructions
 
@@ -45,13 +45,13 @@ HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER
 
  
 
-Puede escribir el valor Action como un valor literal, por ejemplo"Reproducir música", como se muestra en este ejemplo, o como un nombre de archivo con una cadena de recursos. También puede especificar el valor proveedor como un valor literal o como un nombre de archivo con una cadena de recurso. Reproducción automática combina el valor action y el valor provider con la palabra "using" para crear un título descriptivo que se muestra en la interfaz de usuario. En el ejemplo, el título resultante es "Reproducir música con Reproductor de Windows Media".
+Puede escribir el valor action como un valor literal, por ejemplo"Reproducir música", como se muestra en este ejemplo, o como un nombre de archivo con una cadena de recurso. También puede escribir el valor proveedor como un valor literal o como un nombre de archivo con una cadena de recurso. Reproducción automática combina el valor action y el valor provider con la palabra "using" para crear un título descriptivo que se muestra en la interfaz de usuario. En el ejemplo, el título resultante es "Reproducir música con Reproductor de Windows Media".
 
 El valor DefaultIcon apunta a un archivo .ico o a un recurso de un archivo binario. Si el valor numérico que sigue al nombre de archivo binario es cero o mayor, es el valor de índice del icono en ese archivo binario. Si es un valor negativo, es el identificador de recurso del icono. Se recomiendan valores de índice negativos. No se necesita ningún valor en el caso de un archivo .ico. Se recomienda usar variables de entorno en la ruta de acceso.
 
 El valor InitCmdLine pasa sin modificar a través del método [**IHWEventHandler::Initialize**](/windows/desktop/api/Shobjidl/nf-shobjidl-ihweventhandler-initialize) antes de llamar a cualquier otro método.
 
-En el ejemplo siguiente se muestran las subclaves y los valores que se usan para un dispositivo que se puede leer directamente, como una unidad de CD-ROM u otro disco extraíble. De nuevo, el controlador de ejemplo se **denomina MyHandler.**
+En el ejemplo siguiente se muestran las subclaves y los valores que se usan para un dispositivo que se puede leer directamente, como una unidad de CD-ROM u otro disco extraíble. De nuevo, el controlador de ejemplo se denomina **MyHandler.**
 
 ```
 HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER
@@ -83,9 +83,9 @@ HKEY_CLASSES_ROOT
                Clsid = {F1ABE2B5-C073-4dba-B6EB-FD7A5111DD8F}
 ```
 
-La [**función CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) usa el CLSID para implementar la aplicación adecuada.
+La [**función CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) usa clsid para implementar la aplicación adecuada.
 
-Después de definir el controlador de cualquiera de estas dos maneras, debe registrarlo para un evento específico. Para ello, proporcione el nombre del controlador como un valor para la clave de ese evento en **EventHandlers**. En el ejemplo siguiente se muestra cómo **registrar MyHandler** como controlador para el evento GenericVolumeArrival. No tiene ningún valor de datos asignado.
+Después de definir el controlador de cualquiera de estas dos maneras, debe registrarlo para un evento específico. Para ello, proporcione el nombre del controlador como un valor para la clave de ese evento en **EventHandlers**. En el ejemplo siguiente se muestra cómo registrar **MyHandler** como controlador para el evento GenericVolumeArrival. No tiene ningún valor de datos asignado.
 
 ```
 HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER

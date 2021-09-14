@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fafcd3400df351ac9dd8f50a1b4c4fb31f5a1ef14924f55588d3b9b1866c65a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb41866aa194461fd4edf72fdba8f4dad5de8766
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161120"
 ---
 # <a name="coloring-state-variables"></a>Variables de estado de la opción de coloreado
 
@@ -25,7 +25,7 @@ ms.locfileid: "119063295"
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Color de color rojo                                                                      |
+| Descripción:     | Color de color de color blanco                                                                      |
 | Grupo de atributos: | luz                                                                            |
 | Valor inicial:   | 0,0,0,0                                                                        |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -38,7 +38,7 @@ ms.locfileid: "119063295"
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Índice de indexación de indexación                                                                      |
+| Descripción:     | Índice de indexación                                                                      |
 | Grupo de atributos: | luz                                                                            |
 | Valor inicial:   | 0                                                                              |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -47,7 +47,7 @@ ms.locfileid: "119063295"
 
  
 
-</dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>DENSIDAD \_ GL \_ DE GL</dt> <dd> 
+</dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>DENSIDAD \_ DE GL GL \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
@@ -64,7 +64,7 @@ ms.locfileid: "119063295"
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Inicio lineal de la matriz                                                               |
+| Descripción:     | Inicio lineal de la curva                                                               |
 | Grupo de atributos: | luz                                                                            |
 | Valor inicial:   | 0,0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -73,7 +73,7 @@ ms.locfileid: "119063295"
 
  
 
-</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ END DE GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ FOG \_ END</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ ms.locfileid: "119063295"
 
  
 
-</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>MODO \_ GL GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>MODO \_ GL \_</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
@@ -104,7 +104,7 @@ ms.locfileid: "119063295"
 | Propiedad | Value |
 |------------------|------------------------------------|
 | Descripción:     | True si está habilitado                |
-| Grupo de atributos: | y habilitar                         |
+| Grupo de atributos: | habilitar/habilitar                         |
 | Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
@@ -112,7 +112,7 @@ ms.locfileid: "119063295"
 
  
 
-</dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>MODELO \_ GL SHADE \_</dt> <dd> 
+</dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>MODELO \_ DE SOMBRA DE \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff38ee7634f31da7717bfca015ebaacd88796d9c8186faef155704a449bbb07
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0472f90f94b5c4ba56948848476b6585502427c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118838630"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241022"
 ---
 # <a name="equalizersettingscrossfade"></a>EQUALIZERSETTINGS.crossFade
 
@@ -33,7 +33,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                      |
+| Value | Descripción                      |
 |-------|----------------------------------|
 | true  | El atenuado cruzado está habilitado.           |
 | false | Predeterminada. La atenuación cruzada está deshabilitada. |
@@ -42,7 +42,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El atenuado cruzado es una característica de procesamiento de audio que reduce gradualmente el volumen de un elemento multimedia cerca del final de su reproducción mientras se inicia simultáneamente la reproducción del siguiente elemento multimedia en el volumen mínimo y aumenta gradualmente al volumen normal. El atributo **crossFadeWindow** especifica la superposición entre el inicio del segundo elemento multimedia y el final del primer elemento multimedia.
 
@@ -50,7 +50,7 @@ El atenuado cruzado es una característica de procesamiento de audio que reduce 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

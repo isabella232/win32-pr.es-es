@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 171da30962a58ab05921709289d2bb096b98eb5d040b813dcfc9c96a96f4a876
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f472828f4f7e12d45ac25323b4d816031757a2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118838587"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241010"
 ---
 # <a name="equalizersettingscurrentpresettitle"></a>EQUALIZERSETTINGS.currentPresetTitle
 
@@ -35,7 +35,7 @@ Este atributo es una cadena de solo **lectura.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

@@ -4,12 +4,12 @@ ms.assetid: 75cd83a5-4b77-4ca9-b595-e32d0dd609d0
 title: Prevención de ejecución de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02facfbd94f6a1b63a998895d8c9bde7bcdeaf88e498e778ed994125c312bba4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8bc53febb383ef2789c2798b091960c2d20856d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119963265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159876"
 ---
 # <a name="data-execution-prevention"></a>Prevención de ejecución de datos
 

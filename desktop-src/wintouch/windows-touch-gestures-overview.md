@@ -9,12 +9,12 @@ keywords:
 - gestos, compatibilidad heredada
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: f2a0f6229afe4ad0d894a1cc2d40489f5d8371de3d7c42cefdccde619119df75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2290477aa8b26e937fe6d5f300ed1fea32872f5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119587264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247431"
 ---
 # <a name="windows-touch-gestures-overview"></a>Windows Información general sobre gestos táctiles
 
@@ -54,7 +54,7 @@ Las marcas siguientes indican los distintos estados de los gestos y se almacenan
 | GF_END     | 0x00000004 | Ha finalizado un gesto.          |
 
 > [!Note]  
-> La mayoría de las aplicaciones **deben omitir GID_BEGIN** y **GID_END** y pasarlas [a DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca) El controlador de gestos predeterminado usa estos mensajes. El comportamiento de la aplicación es indefinido **cuando una** aplicación de GID_BEGIN y **GID_END** los mensajes de aplicación.
+> La mayoría de las aplicaciones **deben omitir GID_BEGIN** y **GID_END** y pasarlas [a DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca). El controlador de gestos predeterminado usa estos mensajes. El comportamiento de la aplicación es indefinido **cuando GID_BEGIN** y **GID_END** los mensajes son consumidos por una aplicación de terceros.
 
 En la tabla siguiente se indican los distintos identificadores de los gestos. 
 
@@ -77,7 +77,7 @@ Los miembros de la estructura [**GESTUREINFO**](/windows/win32/api/winuser/ns-wi
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | **GID_ZOOM**         | Indica la distancia entre los dos puntos.            | Indica el centro del zoom.   |
 | **GID_PAN**          | Indica la distancia entre los dos puntos.            | Indica la posición actual del panorámica.                    |
-| **GID_ROTATE**       | Indica el ángulo de rotación si se **establece GF_BEGIN** marca de rotación. De lo contrario, este es el cambio de ángulo desde que se inició la rotación. Se firma para indicar la dirección de la rotación. Use las [**macros GID_ROTATE_ANGLE_FROM_ARGUMENT**](/windows/desktop/api/winuser/nf-winuser-gid_rotate_angle_from_argument) y [**GID_ROTATE_ANGLE_TO_ARGUMENT**](/windows/desktop/api/winuser/nf-winuser-gid_rotate_angle_to_argument) para obtener y establecer el valor de ángulo. | Esto indica el centro de la rotación, que es el punto estacional en el que se gira el objeto de destino. |
+| **GID_ROTATE**       | Indica el ángulo de rotación si se **establece GF_BEGIN** marca de rotación. De lo contrario, este es el cambio de ángulo desde que se inició la rotación. Se firma para indicar la dirección de la rotación. Use las [**macros GID_ROTATE_ANGLE_FROM_ARGUMENT**](/windows/desktop/api/winuser/nf-winuser-gid_rotate_angle_from_argument) [**y GID_ROTATE_ANGLE_TO_ARGUMENT**](/windows/desktop/api/winuser/nf-winuser-gid_rotate_angle_to_argument) para obtener y establecer el valor de ángulo. | Esto indica el centro de la rotación, que es el punto estacional en el que se gira el objeto de destino. |
 | **GID_TWOFINGERTAP** | Indica la distancia entre los dos dedos.           | Indica el centro de los dos dedos.                      |
 | **GID_PRESSANDTAP**  | Indica la diferencia entre el primer dedo y el segundo dedo. Este valor se almacena en una **estructura POINT** en los 32 bits inferiores del *miembro ullArguments.*                        | Indica la posición en la que baja el primer dedo.   |
 

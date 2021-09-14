@@ -1,5 +1,5 @@
 ---
-title: Buscar con ActiveX objetos de datos (ADO)
+title: Buscar con ActiveX datos de datos (ADO)
 description: El ActiveX de objetos de datos (ADO) consta de objetos enumerados en la tabla siguiente.
 ms.assetid: 27298f53-a652-49f2-a6e6-d92c7c6022af
 ms.tgt_platform: multiple
@@ -8,14 +8,14 @@ keywords:
 - Búsqueda con ActiveX ADSI de objetos de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52eba3dd5bc9013500aa4def7a31104d1408d4818b78a35ff75f09f2454f4d21
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e9e73f630892169c7086daf9bb1e7b6c13bfdf0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119770455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172146"
 ---
-# <a name="searching-with-activex-data-objects-ado"></a>Buscar con ActiveX objetos de datos (ADO)
+# <a name="searching-with-activex-data-objects-ado"></a>Buscar con ActiveX datos de datos (ADO)
 
 El ActiveX de objetos de datos (ADO) consta de objetos enumerados en la tabla siguiente.
 
@@ -24,9 +24,9 @@ El ActiveX de objetos de datos (ADO) consta de objetos enumerados en la tabla si
 | Object         | Descripción                                                                                                                        |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------|
 | **Connection** | Una conexión abierta a un OLE DB de datos como ADSI.                                                                          |
-| **Comando**    | Define un comando específico que se ejecutará en el origen de datos.                                                                         |
+| **Comando**    | Define un comando específico para ejecutarse en el origen de datos.                                                                         |
 | **Parámetro**  | Colección opcional para cualquier parámetro que se proporcione al objeto de comando.                                                        |
-| **Recordset**  | Un conjunto de registros de una tabla, un objeto de comando o SQL sintaxis. Se puede crear un conjunto de registros sin ningún objeto de conexión subyacente. |
+| **Recordset**  | Conjunto de registros de una tabla, un objeto de comando o SQL sintaxis. Se puede crear un conjunto de registros sin ningún objeto de conexión subyacente. |
 | **Campo**      | Una sola columna de datos en un conjunto de registros.                                                                                            |
 | **Propiedad**   | Colección de valores proporcionados por el proveedor para ADO.                                                                           |
 | **Error**      | Contiene datos sobre errores de acceso a datos. Se actualiza cuando se produce un error en una sola operación.                                      |
@@ -37,7 +37,7 @@ El ActiveX de objetos de datos (ADO) consta de objetos enumerados en la tabla si
 
 Para que ADO se comunique con ADSI, debe haber, al menos, dos objetos ADO: **Connection** y **RecordSet.** Estos objetos ADO sirven para autenticar a los usuarios y enumerar los resultados, respectivamente. Normalmente, también usará un objeto **Command** para mantener una conexión activa, especificar parámetros de consulta, como el tamaño de página y el ámbito de búsqueda, y realizar una consulta. Para obtener más información sobre la sintaxis de filtro de búsqueda, vea [Sintaxis de filtro de búsqueda.](search-filter-syntax.md)
 
-El **objeto Connection** carga el OLE DB y valida las credenciales de usuario. En Visual Basic, llame a la **función CreateObject** con "ADODB. Connection" para crear una instancia de un objeto **Connection** y, a continuación, establezca la propiedad **Provider** del objeto **Connection** en "ADsDSOObject". "ADODB. Connection" es el ProgID del objeto **Connection** y "ADsDSOObject" es el nombre del proveedor OLE DB en ADSI. Si no se especifica ninguna credencial, se usan las credenciales del usuario que ha iniciado sesión actualmente.
+El **objeto Connection** carga el OLE DB y valida las credenciales de usuario. En Visual Basic, llame a **la función CreateObject** con "ADODB. Connection" para crear una instancia de un objeto **Connection** y, a continuación, establezca la propiedad **Provider** del objeto **Connection** en "ADsDSOObject". "ADODB. Connection" es el ProgID del objeto **Connection** y "ADsDSOObject" es el nombre del proveedor de OLE DB en ADSI. Si no se especifica ninguna credencial, se usan las credenciales del usuario que ha iniciado sesión actualmente.
 
 En el ejemplo de código siguiente se muestra cómo crear una instancia de un **objeto Connection.**
 
@@ -61,7 +61,7 @@ con.Provider = "ADsDSOObject"
 
 
 
-En el ejemplo de código siguiente se muestra cómo crear una instancia de un **objeto Connection.** Tenga en cuenta que debe incluir la biblioteca de tipos de ADO (msadoXX.dll) como una de las referencias del proyecto Visual Basic.
+En el ejemplo de código siguiente se muestra cómo crear una instancia de un **objeto Connection.** Tenga en cuenta que debe incluir la biblioteca de tipos de ADO (msadoXX.dll) como una de las referencias en el proyecto Visual Basic.
 
 
 ```VB
@@ -80,13 +80,13 @@ Especifique los datos de autenticación de usuario estableciendo las propiedades
 | "Id. de usuario"          | Cadena que identifica al usuario cuyo contexto de seguridad se usa al realizar la búsqueda. Para obtener más información sobre el formato de la cadena de nombre de usuario, vea [**IADsOpenDSObject::OpenDSObject**](/windows/desktop/api/Iads/nf-iads-iadsopendsobject-opendsobject). Si no se especifica, el valor predeterminado es el usuario que ha iniciado sesión o el usuario suplantado por el proceso de llamada. |
 | "Password"         | Cadena que especifica la contraseña del usuario identificado por "Id. de usuario".                                                                                                                                                                                                                                                                      |
 | "Cifrar contraseña" | Valor booleano que especifica si la contraseña está cifrada. El valor predeterminado es **false**.                                                                                                                                                                                                                                                    |
-| "Marca ADSI"        | Conjunto de marcas de la enumeración [**ADS \_ AUTHENTICATION \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_authentication_enum) que especifican las opciones de autenticación de enlace. El valor predeterminado es cero.                                                                                                                                                                         |
+| "AdsI Flag"        | Conjunto de marcas de la enumeración [**ADS \_ AUTHENTICATION \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_authentication_enum) que especifican las opciones de autenticación de enlace. El valor predeterminado es cero.                                                                                                                                                                         |
 
 
 
  
 
-En el ejemplo de código siguiente se muestra cómo se establecen las propiedades antes de crear el **objeto Command.**
+En el ejemplo de código siguiente se muestra cómo se establecen las propiedades antes de crear el **objeto** Command.
 
 
 ```VB
@@ -114,7 +114,7 @@ command.CommandText =
 
 
 
-En el ejemplo de código siguiente, incluya la biblioteca de tipos ADO (msadoXX.dll) como una de las referencias.
+En el ejemplo de código siguiente, incluya la biblioteca de tipos de ADO (msadoXX.dll) como una de las referencias.
 
 
 ```VB
@@ -131,15 +131,15 @@ Las opciones de búsqueda **para el objeto Command** se especifican estableciend
 
 | Propiedad con nombre      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Asincrónico"      | Valor booleano que especifica si la búsqueda es sincrónica o asincrónica. El valor predeterminado es False (sincrónico). Una búsqueda sincrónica se bloquea hasta que el servidor devuelve el resultado completo o, para una búsqueda paginada, toda la página. Una búsqueda asincrónica se bloquea hasta que hay disponible una fila de los resultados de la búsqueda o hasta que transcurre el tiempo especificado por la propiedad "Timeout".                           |
-| "Resultados de caché"     | Valor booleano que especifica si el resultado debe almacenarse en caché en el lado cliente. El valor predeterminado es **true**; ADSI almacena en caché el conjunto de resultados. Desactivar esta opción puede ser conveniente para conjuntos de resultados grandes.                                                                                                                                                                                                    |
-| "Referencias de búsqueda"   | Valor de la [**enumeración \_ ADS REFERRAL \_ REFERRALS \_**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum) que especifica cómo la búsqueda busca referencias. El valor predeterminado es **ADS \_ CHASE \_ REFERRALS \_ NEVER**. Para obtener más información sobre esta propiedad, vea [Referencias](/windows/desktop/AD/referrals).<br/>                                                                                                                                           |
+| "Asincrónico"      | Valor booleano que especifica si la búsqueda es sincrónica o asincrónica. El valor predeterminado es False (sincrónico). Una búsqueda sincrónica se bloquea hasta que el servidor devuelve el resultado completo o, para una búsqueda paginada, toda la página. Una búsqueda asincrónica se bloquea hasta que haya disponible una fila de los resultados de la búsqueda o hasta que transcurra el tiempo especificado por la propiedad "Timeout".                           |
+| "Resultados de caché"     | Valor booleano que especifica si el resultado debe almacenarse en caché en el lado cliente. El valor predeterminado es **true**; ADSI almacena en caché el conjunto de resultados. Desactivar esta opción puede ser conveniente para grandes conjuntos de resultados.                                                                                                                                                                                                    |
+| "Referencias de búsqueda"   | Valor de la [**enumeración \_ ADS CHASE \_ REFERRALS \_ que**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum) especifica cómo la búsqueda busca referencias. El valor predeterminado es **ADS \_ CHASE \_ REFERRALS \_ NEVER**. Para obtener más información sobre esta propiedad, vea [Referencias](/windows/desktop/AD/referrals).<br/>                                                                                                                                           |
 | "Solo nombres de columna" | Valor booleano que indica que la búsqueda debe recuperar solo el nombre de los atributos a los que se han asignado valores. El valor predeterminado es **false**.                                                                                                                                                                                                                                                       |
 | "Deref Aliases"     | Valor booleano que especifica si se resuelven los alias de los objetos encontrados. El valor predeterminado es **false**.                                                                                                                                                                                                                                                                                                        |
-| "Tamaño de página"         | Valor entero que activa la paginación y especifica el número máximo de objetos que se devuelven en un conjunto de resultados. El valor predeterminado no es ningún tamaño de página. Para obtener más información, vea [Recuperación de conjuntos de resultados grandes](retrieving-large-results-sets.md).                                                                                                                                                                       |
-| "SearchScope"       | Valor de la [**enumeración \_ ADS SCOPEENUM**](/windows/win32/api/iads/ne-iads-ads_scopeenum) que especifica el ámbito de búsqueda. El valor predeterminado es **ADS \_ SCOPE \_ SUBTREE.**                                                                                                                                                                                                                                                                  |
+| "Tamaño de página"         | Valor entero que activa la paginación y especifica el número máximo de objetos que se devuelven en un conjunto de resultados. El valor predeterminado no es ningún tamaño de página. Para obtener más información, [vea Retrieving Large Results Sets](retrieving-large-results-sets.md).                                                                                                                                                                       |
+| "SearchScope"       | Valor de la [**enumeración \_ ADS SCOPEENUM**](/windows/win32/api/iads/ne-iads-ads_scopeenum) que especifica el ámbito de búsqueda. El valor predeterminado es **ADS \_ SCOPE \_ SUBTREE**.                                                                                                                                                                                                                                                                  |
 | "Límite de tamaño"        | Valor entero que especifica el límite de tamaño de la búsqueda. Por Active Directory, el límite de tamaño especifica el número máximo de objetos devueltos. El servidor deja de buscar cuando se alcanza el límite de tamaño y devuelve los resultados acumulados. El valor predeterminado no es ningún límite.                                                                                                                                  |
-| "Ordenar"           | Cadena que especifica una lista separada por comas de atributos que se usarán como claves de ordenación. Esta propiedad solo funciona para servidores de directorio que admiten el control LDAP para la ordenación del lado servidor. Active Directory admite el control de ordenación, pero puede afectar al rendimiento del servidor, especialmente si el conjunto de resultados es grande. Tenga en cuenta que Active Directory solo admite una única clave de ordenación. El valor predeterminado no es ninguna ordenación. |
+| "Ordenar por"           | Cadena que especifica una lista separada por comas de atributos que se usarán como claves de ordenación. Esta propiedad solo funciona para los servidores de directorio que admiten el control LDAP para la ordenación del lado servidor. Active Directory admite el control de ordenación, pero puede afectar al rendimiento del servidor, especialmente si el conjunto de resultados es grande. Tenga en cuenta que Active Directory solo admite una única clave de ordenación. El valor predeterminado no es ninguna ordenación. |
 | "Límite de tiempo"        | Valor entero que especifica el límite de tiempo, en segundos, para la búsqueda. Cuando se alcanza el límite de tiempo, el servidor deja de buscar y devuelve los resultados acumulados. El valor predeterminado no es ningún límite de tiempo.                                                                                                                                                                                                      |
 | "Tiempo de espera"           | Valor entero que especifica el valor de tiempo de espera del lado cliente, en segundos. Este valor indica el tiempo que el cliente espera los resultados del servidor antes de detener la búsqueda. El valor predeterminado no es tiempo de espera.                                                                                                                                                                                                  |
 

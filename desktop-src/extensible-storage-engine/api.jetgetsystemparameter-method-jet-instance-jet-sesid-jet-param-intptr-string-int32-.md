@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6188db63795513d0fb207621a15ca9dd11798e619c5d9c5b7bb0d915e59ace77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25e8430931cbf45c84d65fb68ae877ed96e7cea8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969488"
 ---
 # <a name="apijetgetsystemparameter-method-jet_instance-jet_sesid-jet_param-intptr-string-int32"></a>Método Api.JetGetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, IntPtr, String, Int32)
 
@@ -76,7 +76,7 @@ public static JET_wrn JetGetSystemParameter(
   - instance  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia de la que se recuperarán las opciones.
+    Instancia de la que se recuperan las opciones.
 
 <!-- end list -->
 
@@ -116,17 +116,17 @@ public static JET_wrn JetGetSystemParameter(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Código de advertencia de ESENT.  
+Un código de advertencia de ESENT.  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [ErrorToString](./jet-param-enumeration.md) pasa el número de error en paramValue, por lo que es un parámetro ref y no un parámetro out.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

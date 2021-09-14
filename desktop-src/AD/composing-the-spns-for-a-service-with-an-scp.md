@@ -5,15 +5,15 @@ ms.assetid: cbaa11ba-d32b-46cf-86a4-9050bb1be3a6
 ms.tgt_platform: multiple
 keywords:
 - Crear los SPN para un servicio con un SCP AD
-- Nombre de entidad de seguridad de servicio AD , composición de SPN para un servicio con un SCP
+- Nombre de entidad de seguridad de servicio AD, composición de SPN para un servicio con un SCP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e48175bc5fa3d686aab104f8e025d66d7900162235292ed5b853c3284285cd9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0a9c44bc603372af35e874acfea4c1e12a2433d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118022225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970416"
 ---
 # <a name="composing-the-spns-for-a-service-with-an-scp"></a>Crear los SPN para un servicio con un SCP
 

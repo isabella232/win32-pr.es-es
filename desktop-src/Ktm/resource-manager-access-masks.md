@@ -1,28 +1,28 @@
 ---
-description: KTM define las siguientes máscaras de acceso de alta que se usarán al abrir un administrador de recursos.
+description: KTM define las siguientes máscaras de acceso de registro que se usarán al abrir un administrador de recursos.
 ms.assetid: 6b901b73-516d-4f27-b258-3b93a8f9675f
 title: Resource Manager máscaras de acceso (WinNT.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12ede54d5d49533e70aa9cda2d9c4a363d61f1fdbd894108a5b83f2c5e9efc98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f0f579a96ed80de100a5cb41cb9c4e9b847a060
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146488"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160023"
 ---
 # <a name="resource-manager-access-masks"></a>Resource Manager máscaras de acceso
 
-KTM define las siguientes máscaras de acceso de alta que se usarán al abrir un administrador de recursos.
+KTM define las siguientes máscaras de acceso de registro que se usarán al abrir un administrador de recursos.
 
 <dl> <dt>
 
-<span id="RESOURCEMANAGER_QUERY_INFORMATION"></span><span id="resourcemanager_query_information"></span>**INFORMACIÓN DE CONSULTA \_ DE \_ RESOURCEMANAGER**
+<span id="RESOURCEMANAGER_QUERY_INFORMATION"></span><span id="resourcemanager_query_information"></span>**INFORMACIÓN DE \_ CONSULTA DE \_ RESOURCEMANAGER**
 </dt> <dd> <dl> <dt>
 
 
 
-El autor de la llamada puede consultar la información del administrador de recursos (RM).
+El autor de la llamada puede consultar la información del Administrador de recursos (RM).
 
 
 </dt> </dl> </dd> <dt>
@@ -52,12 +52,12 @@ El autor de la llamada puede recuperar el RM especificado.
 
 
 
-El autor de la llamada puede hacer una lista de rms en una transacción.
+El autor de la llamada puede hacer una lista de un rm en una transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RESOURCEMANAGER_GET_NOTIFICATION"></span><span id="resourcemanager_get_notification"></span>**RESOURCEMANAGER \_ GET \_ NOTIFICATION**
+<span id="RESOURCEMANAGER_GET_NOTIFICATION"></span><span id="resourcemanager_get_notification"></span>**NOTIFICACIÓN GET DE RESOURCEMANAGER \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -87,7 +87,7 @@ El autor de la llamada tiene los siguientes privilegios: STANDARD \_ RIGHTS \_ W
 
 </dt> </dl> </dd> <dt>
 
-<span id="RESOURCEMANAGER_GENERIC_EXECUTE"></span><span id="resourcemanager_generic_execute"></span>**EJECUCIÓN GENÉRICA DE RESOURCEMANAGER \_ \_**
+<span id="RESOURCEMANAGER_GENERIC_EXECUTE"></span><span id="resourcemanager_generic_execute"></span>**RESOURCEMANAGER \_ GENERIC \_ EXECUTE**
 </dt> <dd> <dl> <dt>
 
 
@@ -115,7 +115,7 @@ El autor de la llamada tiene el siguiente privilegio: STANDARD \_ RIGHTS \_ REQU
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                     |
-| Header<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
 
 
 

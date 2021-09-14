@@ -5,11 +5,11 @@ title: Descodificador de audio Dolby
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 1ae38516edd935def5d9b2b041c942a729c45c61
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248546"
 ---
 # <a name="dolby-audio-decoder"></a>Descodificador de audio Dolby
 
@@ -19,7 +19,7 @@ El descodificador de audio Dolby [es Media Foundation transformación](media-fou
 -   Dolby Digital Plus, también denominado AC-3 mejorado (E-AC-3)
 
 > [!IMPORTANT]
-> Para las versiones de Windows anteriores a Windows 8, la implementación de Microsoft de la tecnología Dolby Digital está restringida en términos del programa de licencias Dolby Digital para su uso por parte de las aplicaciones de Microsoft.
+> Para las versiones de Windows anteriores a Windows 8, la implementación de Microsoft de la tecnología Dolby Digital está restringida en términos del programa de licencias Dolby Digital para que las usen las aplicaciones de Microsoft.
 
  
 
@@ -149,7 +149,7 @@ El descodificador de audio Dolby implementa [**el método IMFTransform::GetAttri
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El descodificador solo acepta secuencias Dolby sin procesar, tal como se define en A/52B. No se admiten cargas como paquetes Secuencias paquetes (PES). Para Dolby Digital Plus, el descodificador descodifica hasta 5,1 canales. En Windows 10, las secuencias de canal 7.1 se descodifican sin mezclen. En versiones anteriores del sistema operativo, si la secuencia es de 7.1 canales, solo se descodificará la mezcla de canales 5.1. Si la secuencia es Dolby Digital Plus con más de una subtransmisión independiente, solo se descodifica la subsección independiente 0. El descodificador omite otras subdiciones independientes. Además, el descodificador omite todas las subdiciones dependientes. El descodificador admite el descifrado y descodificación de secuencias protegidas por la tecnología Rights Management digital (DRM).
 
@@ -171,7 +171,7 @@ El descodificador MFT se registra con la marca **MFT \_ ENUM \_ FLAG \_ FIELDOFU
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
@@ -179,7 +179,7 @@ El descodificador MFT se registra con la marca **MFT \_ ENUM \_ FLAG \_ FIELDOFU
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

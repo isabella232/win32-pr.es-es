@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1274226ae9768d45bb11e1a1f5b55caeddcc247a74a7ac08e03e3fcdacb0e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e0e9c1d7f27c56f81905081fd9ef24c8c490391b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159757"
 ---
 # <a name="dlldata-switch"></a>Modificador /dlldata
 
@@ -38,7 +38,7 @@ Nombre del archivo de origen de C que el compilador MIDL generará para el archi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El archivo especificado por *file-name* debe estar vinculado al archivo DLL de proxy. El archivo dlldata contiene los puntos de entrada y las estructuras de datos requeridas por el generador de clases para el archivo DLL de proxy. Estas estructuras de datos especifican las interfaces de objeto contenidas en el archivo DLL de proxy. El archivo dlldata también especifica el identificador de clase del generador de clases para el archivo DLL de proxy. Este es siempre el UUID (IID) de la primera interfaz del primer archivo proxy (por orden alfabético).
 
@@ -48,7 +48,7 @@ Se debe especificar el mismo archivo dlldata al invocar MIDL en todos los archiv
 
 **midl /dlldata data.c**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Media Streaming API proporciona las interfaces siguientes.
 ms.assetid: 1E25B452-D23C-4A1D-BC39-A5B719DF2C5D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb21c5c17502c887f78fa223ec2a2f8f814d3998bb75b81812eb4de9919f7342
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6cdb1893af3170ae9ec5989498a007230992361
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248493"
 ---
 # <a name="media-streaming-interfaces"></a>Interfaces de streaming multimedia
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 50b92be11400d1dbb223115f11334e2a596e94e9df1fd018ce16e4a646c84825
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e7de57cde928760c15dd671010880e824c8979f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119516105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968644"
 ---
 # <a name="stopifgoingonbatteries-settingstype-element"></a>Elemento StopIfGoingOnBatteries (settingsType)
 
@@ -44,9 +44,9 @@ El **elemento StopIfGoingOnBatteries** se define mediante el [**tipo complejo se
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor predeterminado para este elemento es False. Tenga en cuenta que el valor predeterminado ha cambiado con respecto a las versiones anteriores de Programador de tareas.
+El valor predeterminado de este elemento es False. Tenga en cuenta que el valor predeterminado ha cambiado con respecto a las versiones anteriores de Programador de tareas.
 
 Para el desarrollo de scripting, esta configuración se especifica mediante la [**propiedad TaskSettings.StopIfGoingOnBatteries.**](tasksettings-stopifgoingonbatteries.md)
 
@@ -54,7 +54,7 @@ Para el desarrollo de C++, esta configuración se especifica mediante la [**prop
 
 ## <a name="examples"></a>Ejemplos
 
-El xml siguiente define un elemento de configuración que permite una terminación de la tarea.
+El xml siguiente define un elemento de configuración que permite una terminación de la tarea de forma fija.
 
 
 ```XML
@@ -69,14 +69,14 @@ El xml siguiente define un elemento de configuración que permite una terminaci�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: Se produce cuando se presiona una tecla y está en la posición de abajo mientras el control InkPicture tiene el foco.
+description: Se produce cuando se presiona una tecla y se encuentra en la posición de abajo mientras el control InkPicture tiene el foco.
 ms.assetid: d83823ea-d863-4eb7-8f6b-fa7a3396e64b
 title: Evento InkPicture.KeyDown (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a9cf86a8efaacd1094330861bff63d38ae03ef056f4686a1286e06c8aca1ef5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b5d6bd3555aeec98ac28555c1674dfef32ecc53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118451114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256586"
 ---
 # <a name="inkpicturekeydown-event"></a>Evento InkPicture.KeyDown
 
@@ -49,7 +49,7 @@ Estado de la tecla MAYÚS.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEKeyDown.
 
@@ -57,11 +57,11 @@ Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

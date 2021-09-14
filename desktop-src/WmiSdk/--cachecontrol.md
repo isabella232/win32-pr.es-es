@@ -1,5 +1,5 @@
 ---
-description: Class es la clase base abstracta para las clases que se usan para determinar cuándo WMI debe liberar un objeto de Modelo de objetos componentes (COM).
+description: Clase es la clase base abstracta para las clases que se usan para determinar cuándo WMI debe liberar un objeto De modelo de objetos componentes (COM).
 ms.assetid: 32631610-8c0e-4f04-b0b2-62e5f8e23ef4
 ms.tgt_platform: multiple
 title: __CacheControl clase
@@ -14,16 +14,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 429e973d83e1f213b011998c75dfbfabd81fb7bb4921f0f8b9f61bcedd6080c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe5358630a7ac5eb48751135d39c2fd998196bf7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967179"
 ---
-# <a name="__cachecontrol-class"></a>\_\_Clase CacheControl
+# <a name="__cachecontrol-class"></a>\_\_CacheControl (clase)
 
-La clase del sistema **\_ \_ CacheControl** es la clase base abstracta para las clases que se usan para determinar cuándo WMI debe liberar un objeto del Modelo de objetos componentes (COM). Nunca se crean instancias de esta clase. La **\_ \_ clase CacheControl** solo se encuentra en el espacio de nombres raíz. Para obtener más información sobre el uso de esta clase, vea [Unloading a Provider](unloading-a-provider.md).
+La **\_ \_ clase del sistema CacheControl** es la clase base abstracta para las clases que se usan para determinar cuándo WMI debe liberar un objeto De modelo de objetos componentes (COM). Nunca se crean instancias de esta clase. La **\_ \_ clase CacheControl** solo se encuentra en el espacio de nombres raíz. Para obtener más información sobre el uso de esta clase, vea [Descargar un proveedor](unloading-a-provider.md).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -36,11 +36,11 @@ class __CacheControl : __SystemClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase CacheControl** no define ningún miembro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **\_ \_ clase CacheControl** se deriva de [**\_ \_ SystemClass**](--systemclass.md).
 
@@ -48,7 +48,7 @@ La **\_ \_ clase CacheControl** se deriva de [**\_ \_ SystemClass**](--systemcla
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -56,7 +56,7 @@ La **\_ \_ clase CacheControl** se deriva de [**\_ \_ SystemClass**](--systemcla
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

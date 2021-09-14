@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: f7b70d3e33f67c8c0a457f85df91e83e374a3ef4d0f0b1a0af1c5c41ea81c2ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb990830583f6684502438f132c1c98f5741a0ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119611135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172290"
 ---
 # <a name="nddeisvalidapptopiclist-function"></a>Función NDdeIsValidAppTopicList
 
@@ -56,7 +56,7 @@ Si el *parámetro targetTopic* tiene una sintaxis válida, el valor devuelto es 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**NDdeShareAdd**](nddeshareadd.md) también llama a esta función cuando crea el recurso compartido de DDE.
 
@@ -64,7 +64,7 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                      |
@@ -75,7 +75,7 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

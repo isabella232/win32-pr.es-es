@@ -4,28 +4,28 @@ ms.assetid: 00f93036-05c9-4585-842a-a42a7faea2a5
 title: 'Programa C de ejemplo: configuración y obtención de parámetros de clave de sesión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4047db45cfb9a1d0650b600e914329bcea22662741f0a29e2936eac69c3f0b46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6be59b8b47c5becd8576a409d659f99d97b7ee3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171061"
 ---
 # <a name="example-c-program-setting-and-getting-session-key-parameters"></a>Programa C de ejemplo: configuración y obtención de parámetros de clave de sesión
 
-En el ejemplo siguiente se crea una clave de sesión aleatoria, se obtienen e imprimen algunos parámetros predeterminados de esa clave, se establece un nuevo parámetro en la clave original y, a continuación, se obtiene e imprime el valor de ese nuevo parámetro. Limpia mediante la destrucción de la clave de sesión y la liberación del contexto criptográfico.
+En el ejemplo siguiente se crea una clave de sesión aleatoria, se obtienen e imprimen algunos parámetros predeterminados de esa clave, se establece un nuevo parámetro en la clave original y, a continuación, se obtiene e imprime el valor de ese nuevo parámetro. Se limpia mediante la destrucción de la clave de sesión y la liberación del contexto criptográfico.
 
 En este ejemplo se muestra el uso de las siguientes tareas y funciones:
 
--   Acceso a un CSP mediante [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Acceso a un CSP [**mediante CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
 -   Presentación de un búfer con bytes aleatorios [**mediante CryptGenRandom**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenrandom).
--   Crear una clave de sesión mediante [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey).
--   Obtener el valor de los parámetros clave mediante [**CryptGetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyparam).
+-   Crear una clave de sesión [**mediante CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey).
+-   Obtener el valor de los parámetros de clave [**mediante CryptGetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyparam).
 -   Usar [**CryptSetKeyParam para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) modificar el proceso de generación de claves.
 -   Destruir las claves mediante [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey).
--   Liberar el CSP con [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext).
+-   Publicación del CSP con [**CryptReleaseContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
-En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra [en De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

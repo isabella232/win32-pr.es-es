@@ -4,12 +4,12 @@ ms.assetid: effe4080-63c1-4f35-a5e3-e7e60754b28f
 title: 'Programa C de ejemplo: codificación y codificación de un mensaje con hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1119ff8c54e0a181e5b99cdb70b6a3a62825a7d2b05879a85547bee4bcb7c310
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5904a684d02a81acba1502162c779b9f124d3dbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171109"
 ---
 # <a name="example-c-program-encoding-and-decoding-a-hashed-message"></a>Programa C de ejemplo: codificación y codificación de un mensaje con hash
 

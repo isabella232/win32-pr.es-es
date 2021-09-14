@@ -1,9 +1,9 @@
 ---
-title: modificador/app_config
-description: El \_ modificador/App config selecciona el modo de configuración de la aplicación, que permite usar algunas palabras clave ACF en el archivo IDL. Con este modificador de compilador de MIDL, puede omitir ACF y especificar una interfaz en un solo archivo IDL.
+title: Modificador /app_config
+description: El modificador /app config selecciona el modo de configuración de la aplicación, que le permite usar algunas palabras clave \_ de ACF en el archivo IDL. Con este modificador del compilador MIDL, puede omitir el ACF y especificar una interfaz en un único archivo IDL.
 ms.assetid: 8d12a0ed-7eaa-4ebc-a961-b726aefefadc
 keywords:
-- /app_config modificador MIDL
+- /app_config switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -13,50 +13,50 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 717d5234bd419fec7107a6d983ece026b4558935
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159775"
 ---
-# <a name="app_config-switch"></a>\_modificador de configuración de/App
+# <a name="app_config-switch"></a>Modificador /app \_ config
 
-El modificador **/App \_ config** selecciona el modo de configuración de la aplicación, que permite usar algunas palabras clave ACF en el archivo IDL. Con este modificador de compilador de MIDL, puede omitir ACF y especificar una interfaz en un solo archivo IDL.
+El **modificador /app \_ config** selecciona el modo de configuración de la aplicación, que le permite usar algunas palabras clave de ACF en el archivo IDL. Con este modificador del compilador MIDL, puede omitir el ACF y especificar una interfaz en un único archivo IDL.
 
 ``` syntax
 midl /app_config
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 Este modificador no tiene parámetros.
 
 ## <a name="remarks"></a>Observaciones
 
-Microsoft RPC admite el uso de los siguientes atributos ACF en el archivo IDL:
+Rpc de Microsoft admite el uso de los siguientes atributos de ACF en el archivo IDL:
 
--   \_Identificador implícito
--   \_Identificador automático
--   \_Identificador explícito
+-   Identificador \_ implícito
+-   Identificador \_ automático
+-   Identificador \_ explícito
 
-Las versiones futuras de Microsoft RPC pueden admitir el uso de otros atributos ACF en el archivo IDL. La opción de **\_ configuración/App** representa una extensión de Microsoft para la especificación de OSF-DCE y, como tal, es mutuamente excluyente con la opción [**/OSF**](-osf.md) .
+Las versiones futuras de RPC de Microsoft pueden admitir el uso de otros atributos de ACF en el archivo IDL. La **opción /app \_ config** representa una extensión de Microsoft para la especificación OSF-DCE y, como tal, es mutuamente excluyente con la [**opción /osf.**](-osf.md)
 
-Para obtener más información relacionada con el modificador **/App \_ config** , vea archivo de configuración de la [aplicación (ACF)](application-configuration-file-acf-.md) y [archivo de definición de interfaz (IDL)](interface-definition-idl-file.md).
+Para obtener más información relacionada con el modificador **/app \_ config,** vea Archivo de configuración de [aplicaciones (ACF)](application-configuration-file-acf-.md) y Archivo de definición de [interfaz (IDL).](interface-definition-idl-file.md)
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/APP \_ config nombreDeArchivo. idl**
+**midl /app \_ config filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

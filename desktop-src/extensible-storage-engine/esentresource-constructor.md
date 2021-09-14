@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentResource'
-title: Constructor de EsentResource
+description: 'Más información sobre: Constructor de EsentResource'
+title: Constructor EsentResource
 TOCTitle: 'EsentResource constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.esentresource(v=EXCHG.10)
@@ -25,16 +25,16 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 5745404317c5f42670209f48fd8a26d40065a637
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963083"
 ---
-# <a name="esentresource-constructor"></a>Constructor de EsentResource
+# <a name="esentresource-constructor"></a>Constructor EsentResource
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,4 +58,4 @@ protected EsentResource()
 
 [Miembros de EsentResource](./esentresource-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

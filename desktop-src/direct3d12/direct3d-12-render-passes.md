@@ -4,12 +4,12 @@ description: La característica de pases de representación ayuda al representad
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/15/2018
-ms.openlocfilehash: 96ed14cecd518a3e03672f2667306ee0a4b8d64999aab01aa72aae04975f0a83
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f776729f17ac0017d713c6f37bc71de7302a7c08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249141"
 ---
 # <a name="direct3d-12-render-passes"></a>Pases de representación de Direct3D 12
 
@@ -25,16 +25,16 @@ Un controlador de pantalla escrito expresamente para aprovechar la característi
 
 Estos son los escenarios en los que los pases de representación están diseñados para proporcionar valor.
 
-### <a name="allow-your-application-to-avoid-unnecessary-loadsstores-of-resources-fromto-main-memory-on-a-tile-based-deferred-rendering-tbdr-architecture"></a>Permitir que la aplicación evite cargas o almacenes innecesarios de recursos desde y hacia la memoria principal en una arquitectura de Tile-Based de representación diferida (TBDR)
+### <a name="allow-your-application-to-avoid-unnecessary-loadsstores-of-resources-fromto-main-memory-on-a-tile-based-deferred-rendering-tbdr-architecture"></a>Permitir que la aplicación evite cargas o almacenes innecesarios de recursos desde o hacia la memoria principal en una arquitectura de Tile-Based de representación diferida (TBDR)
 
-Una de las propuestas de valor de los pases de representación es que proporciona una ubicación central para indicar las dependencias de datos de la aplicación para un conjunto de operaciones de representación. Estas dependencias de datos permiten al controlador de visualización inspeccionar estos datos en tiempo de enlace o barrera, así como emitir instrucciones que minimicen las cargas o almacenes de recursos desde y hacia la memoria principal.
+Una de las propuestas de valor de los pases de representación es que proporciona una ubicación central para indicar las dependencias de datos de la aplicación para un conjunto de operaciones de representación. Estas dependencias de datos permiten al controlador de visualización inspeccionar estos datos en tiempo de enlace o barrera, y emitir instrucciones que minimicen las cargas o almacenes de recursos desde y hacia la memoria principal.
 
 ### <a name="allow-your-tbdr-architecture-to-opportunistically-persistent-resources-in-on-chip-cache-across-render-passes-even-in-separate-command-lists"></a>Permita que la arquitectura de TBDR sea oportunistamente persistente en la caché en chip a través de pases de representación (incluso en listas de comandos independientes).
 
 > [!NOTE]
 > En concreto, este escenario se limita a los casos en los que se escribe en los mismos destinos de representación en varias listas de comandos.
 
-Un patrón de representación común es que la aplicación se represente en los mismos destinos de representación en varias listas de comandos en serie, aunque los comandos de representación se generen en paralelo. El uso de pases de representación en este escenario permite combinar estas pasadas de tal manera (dado que la aplicación sabe que reanudará la representación en la lista de comandos de ejecución inmediata) que el controlador para mostrar puede evitar un vaciado en la memoria principal en los límites de la lista de comandos.
+Un patrón de representación común es que la aplicación se represente en los mismos destinos de representación en varias listas de comandos en serie, aunque los comandos de representación se generen en paralelo. El uso de pases de representación en este escenario permite combinar estos pases de tal manera (dado que la aplicación sabe que reanudará la representación en la lista de comandos de ejecución inmediata) que el controlador para mostrar puede evitar un vaciado en la memoria principal en los límites de la lista de comandos.
 
 ## <a name="your-applications-responsibilities"></a>Responsabilidades de la aplicación
 
@@ -84,9 +84,9 @@ void render_passes(::ID3D12GraphicsCommandList4 * pIGCL4,
 }
 ```
 
-Establezca el primer campo [](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_render_target_desc) de la estructura D3D12_RENDER_PASS_RENDER_TARGET_DESC en el identificador del descriptor de CPU correspondiente a una o varias vistas de destino de representación (RTV). De forma similar, [**D3D12_RENDER_PASS_DEPTH_STENCIL_DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_depth_stencil_desc) contiene el identificador del descriptor de CPU correspondiente a una vista de galería de símbolos de profundidad (DSV). Esos identificadores de descriptor de CPU son los mismos que se pasarían a [**ID3D12GraphicsCommandList::OMSetRenderTargets.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetrendertargets) Y, al igual que **con OMSetRenderTargets,** los descriptores de CPU se alinean desde sus respectivos montones (descriptor de CPU) en el momento de la llamada a **BeginRenderPass**. 
+Establezca el primer campo de la estructura D3D12_RENDER_PASS_RENDER_TARGET_DESC [**en**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_render_target_desc) el identificador del descriptor de CPU correspondiente a una o varias vistas de destino de representación (RTV). De forma similar, [**D3D12_RENDER_PASS_DEPTH_STENCIL_DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_depth_stencil_desc) contiene el identificador del descriptor de CPU correspondiente a una vista de galería de símbolos de profundidad (DSV). Esos identificadores de descriptor de CPU son los mismos que se pasarían a [**ID3D12GraphicsCommandList::OMSetRenderTargets.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetrendertargets) Y, al igual que **con OMSetRenderTargets,** los descriptores de CPU se alinean desde sus respectivos montones (descriptor de CPU) en el momento de la llamada a **BeginRenderPass**. 
 
-Los RTV y DSV no se heredan en en el paso de representación. En su lugar, deben establecerse. Tampoco se propagan los RTV y DSV declarados en **BeginRenderPass** a la lista de comandos. En su lugar, se encuentran en un estado indefinido después del paso de representación.
+Los RTV y DSV no se heredan en en el paso de representación. En su lugar, deben establecerse. Ni los RTV y DSV declarados en **BeginRenderPass** se propagan a la lista de comandos. En su lugar, se encuentran en un estado indefinido después del paso de representación.
 
 ### <a name="render-passes-and-workloads"></a>Representaciones de pases y cargas de trabajo
 
@@ -119,28 +119,28 @@ Por lo tanto, estas API no están permitidos dentro de un paso de representació
 
 ### <a name="render-passes-and-resource-barriers"></a>Representa las barreras de recursos y los pases
 
-No puede leer ni consumir una escritura que se haya producido dentro del mismo paso de representación. Ciertas barreras no se ajustan a  esta restricción, por ejemplo, de **\* D3D12_RESOURCE_STATE_RENDER_TARGET a _SHADER_RESOURCE** en el destino de representación enlazado actualmente (y la capa de depuración producirá un error en ese efecto). Sin embargo, esa misma barrera en  un destino de representación que se escribió fuera del paso de representación actual es compatible, porque las escrituras se completarán antes del inicio del paso de representación actual.
-Es posible que se beneficie de conocer ciertas optimizaciones que un controlador de pantalla puede realizar en este sentido. Dada una carga de trabajo compatible, un controlador de pantalla podría mover las barreras detectadas en el paso de representación al principio del paso de representación. Allí, se pueden coalir (y no interferir con ninguna operación de tiling/binning). Se trata de una optimización válida siempre que todas las escrituras finalicen antes de que se inicie el paso de representación actual.
+No puede leer ni consumir una escritura que se haya producido dentro del mismo paso de representación. Ciertas barreras no se ajustan a esta restricción, por ejemplo, de **D3D12_RESOURCE_STATE_RENDER_TARGET** **\* a _SHADER_RESOURCE** en el destino de representación enlazado actualmente (y la capa de depuración producirá un error en ese efecto). Pero esa misma barrera en un  destino de representación que se escribió fuera del paso de representación actual es compatible, porque las escrituras se completarán antes del inicio del paso de representación actual.
+Es posible que se beneficie de conocer ciertas optimizaciones que un controlador de pantalla puede realizar en este sentido. Dada una carga de trabajo compatible, un controlador de pantalla podría mover las barreras detectadas en el paso de representación al principio del paso de representación. Allí, se pueden coalir (y no interferir con las operaciones de tiling/binning). Se trata de una optimización válida siempre que todas las escrituras finalicen antes de que se inicie el paso de representación actual.
 
-Este es un ejemplo más completo de optimización de controladores, en el que se da por supuesto que tiene un motor de representación que tiene un diseño de enlace de recursos anterior a Direct3D 12 que hace barreras a petición en función de cómo se enlazan los &mdash; recursos.  Al escribir en una vista de acceso no ordenado (UAV) hacia el final de un fotograma (que se consumirá en el fotograma siguiente), es posible que el motor deje el recurso en el estado **D3D12_RESOURCE_STATE_UNORDERED_ACCESS** al finalizar el fotograma. En el marco siguiente, cuando el motor vaya a enlazar el recurso como una vista de recursos de sombreador (SRV), verá que el recurso no está en el estado correcto y emitirá una barrera de **D3D12_RESOURCE_STATE_UNORDERED_ACCESS** a **D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE**. Si esa barrera se produce dentro del paso de representación, el controlador de  pantalla se justifica en el supuesto de que todas las escrituras ya  se han producido fuera de este paso de representación actual y, por tanto, (y aquí es donde entra en juego la optimización), el controlador de pantalla podría mover la barrera hasta el inicio del paso de representación. Una vez más, esto es válido, siempre y cuando el código se ajuste a la restricción de lectura y escritura descrita en esta sección y en la última.
+Este es un ejemplo más completo de optimización de controladores, en el que se da por supuesto que tiene un motor de representación que tiene un diseño de enlace de recursos anterior a Direct3D 12 que hace barreras a petición en función de cómo se enlazan los &mdash; recursos.  Al escribir en una vista de acceso no ordenado (UAV) hacia el final de un fotograma (que se consumirá en el fotograma siguiente), es posible que el motor deje el recurso en el estado **D3D12_RESOURCE_STATE_UNORDERED_ACCESS** al final del fotograma. En el marco siguiente, cuando el motor vaya a enlazar el recurso como una vista de recursos de sombreador (SRV), verá que el recurso no está en el estado correcto y emitirá una barrera de **D3D12_RESOURCE_STATE_UNORDERED_ACCESS** a **D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE**. Si esa barrera se produce dentro del paso de representación, el controlador de  pantalla se justifica en el supuesto de que todas las escrituras ya  se han producido fuera de este paso de representación actual y, por tanto, (y aquí es donde entra en juego la optimización), el controlador de pantalla podría mover la barrera hasta el inicio del paso de representación. Una vez más, esto es válido, siempre y cuando el código se ajuste a la restricción de lectura y escritura descrita en esta sección y en la última.
 
 
 Estos son ejemplos de barreras compatibles.
-- **D3D12_RESOURCE_STATE_UNORDERED_ACCESS** para **D3D12_RESOURCE_STATE_INDIRECT_ARGUMENT**.
+- **D3D12_RESOURCE_STATE_UNORDERED_ACCESS** a **D3D12_RESOURCE_STATE_INDIRECT_ARGUMENT**.
 - **D3D12_RESOURCE_STATE_COPY_DEST** a **\* _SHADER_RESOURCE**.
 
 Y estos son ejemplos de barreras no compatibles.
 
 - **D3D12_RESOURCE_STATE_RENDER_TARGET** a cualquier estado de lectura en RTV o DSV enlazados actualmente.
-- **D3D12_RESOURCE_STATE_DEPTH_WRITE** a cualquier estado de lectura en RTV o DSV enlazados actualmente.
+- **D3D12_RESOURCE_STATE_DEPTH_WRITE** a cualquier estado de lectura en RTV/DSV enlazados actualmente.
 - Cualquier barrera de alias.
 - Barreras de la vista de acceso no ordenado (UAV). 
 
 ### <a name="resource-access-declaration"></a>Declaración de acceso a recursos
 
-En **el momento de BeginRenderPass,** además de declarar todos los recursos que sirven como RTV o DSV dentro de ese paso, también debe especificar sus características de acceso inicial y final.  Como puede ver en el [](#declare-your-output-bindings) ejemplo de código de la sección Declaración de los enlaces de salida anterior, lo hace con las estructuras [**D3D12_RENDER_PASS_RENDER_TARGET_DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_render_target_desc) y [**D3D12_RENDER_PASS_DEPTH_STENCIL_DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_depth_stencil_desc) salida.
+En **el momento de BeginRenderPass,** además de declarar todos los recursos que sirven como RTV o DSV dentro de ese paso, también debe especificar sus características de acceso inicial y final.  Como puede ver en el [](#declare-your-output-bindings) ejemplo de código de la sección Declaración [](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_render_target_desc) de los enlaces de salida anterior, puede hacerlo con las estructuras D3D12_RENDER_PASS_RENDER_TARGET_DESC y [**D3D12_RENDER_PASS_DEPTH_STENCIL_DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_depth_stencil_desc) salida.
 
-Para obtener más información, vea [**las estructuras D3D12_RENDER_PASS_BEGINNING_ACCESS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_beginning_access) y [**D3D12_RENDER_PASS_ENDING_ACCESS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_ending_access) y las [**D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_beginning_access_type) y [**D3D12_RENDER_PASS_ENDING_ACCESS_TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_ending_access_type) enumeraciones.
+Para obtener más información, vea las [**estructuras D3D12_RENDER_PASS_BEGINNING_ACCESS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_beginning_access) y [**D3D12_RENDER_PASS_ENDING_ACCESS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_ending_access) y las D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE [**y**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_beginning_access_type) [**D3D12_RENDER_PASS_ENDING_ACCESS_TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_ending_access_type) enumeraciones.
 
 ### <a name="render-pass-flags"></a>Representar marcas de paso
 
@@ -158,7 +158,7 @@ enum D3D12_RENDER_PASS_FLAGS
 
 #### <a name="uav-writes-within-a-render-pass"></a>Escrituras UAV dentro de un paso de representación
 
-Las escrituras de la vista de acceso desordenado (UAV) se permiten dentro de un paso de representación, pero debe indicar específicamente que va a emitir escrituras UAV dentro del paso de representación especificando **D3D12_RENDER_PASS_FLAG_ALLOW_UAV_WRITES**, para que el controlador de pantalla pueda rechazar el tiling si es necesario.
+Las escrituras de vista de acceso desordenado (UAV) se permiten dentro de un paso de representación, pero debe indicar específicamente que va a emitir escrituras de UAV dentro del paso de representación especificando **D3D12_RENDER_PASS_FLAG_ALLOW_UAV_WRITES**, para que el controlador de pantalla pueda rechazar el tiling si es necesario.
 
 Los accesos UAV deben seguir la restricción de escritura y lectura descrita anteriormente (las escrituras en un paso de representación no son válidas para leer hasta un paso de representación posterior). No se permiten barreras UAV dentro de un paso de representación.
 
@@ -191,4 +191,4 @@ D3D12_RENDER_PASS_TIER get_render_passes_tier(::ID3D12Device * pIDevice)
 
 Debido a la lógica de asignación del tiempo de ejecución, la función de los pases de representación siempre. Pero, dependiendo de la compatibilidad con características, no siempre proporcionarán una ventaja. Puede usar código similar al ejemplo de código anterior para determinar si merece la pena emitir comandos como pasos de representación y cuando definitivamente no es una ventaja (es decir, cuando el tiempo de ejecución solo se asigna a la superficie de API existente). Realizar esta comprobación es especialmente importante si usa [D3D11On12](/windows/desktop/direct3d12/direct3d-11-on-12)).
 
-Para obtener una descripción de los tres niveles de compatibilidad, consulte la [**D3D12_RENDER_PASS_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_render_pass_tier) enumeración.
+Para obtener una descripción de los tres niveles de compatibilidad, consulte la [**enumeración D3D12_RENDER_PASS_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_render_pass_tier) datos.

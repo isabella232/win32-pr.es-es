@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85e17f12658e4cd007ba010707456461f632f06a557bf3dd64680a5bac366be0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a34a6c2922c0041f0720b498855b15c4aed23f8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119977795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240753"
 ---
 # <a name="apijetresetsessioncontext-method"></a>Método Api.JetResetSessionContext
 
@@ -62,7 +62,7 @@ public static void JetResetSessionContext(
     
     Sesión que se usará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,19 +1,19 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. DestDistance.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.DestDistance.
 ms.assetid: 1bd72acb-f462-454d-aec2-72d5b4517de3
-title: Directiva de metadatos de la foto System. GPS. DestDistance
+title: Directiva de metadatos de fotos System.GPS.DestDistance
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ecc71c89ae6270f5babf08637f54baaf2cb57aae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256478"
 ---
-# <a name="systemgpsdestdistance-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. DestDistance
+# <a name="systemgpsdestdistance-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DestDistance
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. DestDistance](../properties/props-system-gps-destdistance.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.DestDistance.](../properties/props-system-gps-destdistance.md)
 
 ### <a name="pkey"></a>PKEY
 
@@ -27,13 +27,13 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se genera a partir de System. GPS. DestDistanceNumerator y System. GPS. DestDistanceDenominator. No se puede escribir directamente. Se reconcilian los valores de los distintos esquemas.
+Este valor se genera a partir de System.GPS.DestDistanceNumerator y System.GPS.DestDistanceDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -41,22 +41,22 @@ Este valor se genera a partir de System. GPS. DestDistanceNumerator y System. GP
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 26} |             |
+| 1     | /app1/ifd/gps/{ushort=26} |             |
 | 2     | /xmp/exif:GPSDestDistance |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 26} |             |
+| 1     | /app1/ifd/gps/{ushort=26} |             |
 | 2     | /xmp/exif:GPSDestDistance |             |
 
 
@@ -67,9 +67,9 @@ Este valor se genera a partir de System. GPS. DestDistanceNumerator y System. GP
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 26} |
+| 1     | /app1/ifd/gps/{ushort=26} |
 | 2     | /xmp/exif:gpsdestdistance |
 
 
@@ -82,22 +82,22 @@ Este valor se genera a partir de System. GPS. DestDistanceNumerator y System. GP
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 26}          |             |
+| 1     | /ifd/gps/{ushort=26}          |             |
 | 2     | /ifd/xmp/exif:GPSDestDistance |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 26}          |             |
+| 1     | /ifd/gps/{ushort=26}          |             |
 | 2     | /ifd/xmp/exif:GPSDestDistance |             |
 
 
@@ -108,9 +108,9 @@ Este valor se genera a partir de System. GPS. DestDistanceNumerator y System. GP
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /IFD/GPS/{ushort = 26}          |
+| 1     | /ifd/gps/{ushort=26}          |
 | 2     | /ifd/xmp/exif:gpsdestdistance |
 
 
@@ -123,7 +123,7 @@ Este valor se genera a partir de System. GPS. DestDistanceNumerator y System. GP
 
 <dl> <dt>
 
-[System. GPS. DestDistance](../properties/props-system-gps-destdistance.md)
+[System.GPS.DestDistance](../properties/props-system-gps-destdistance.md)
 </dt> </dl>
 
  

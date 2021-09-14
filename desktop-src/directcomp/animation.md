@@ -4,12 +4,12 @@ description: En este tema se de abordan los conceptos básicos de la animación 
 ms.assetid: 65DA3971-97C0-4B59-BC67-287AAEAAE340
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75b1f021d5a11fac70f47d5fe87f9389d2ad3e3108d224835fb295a8c3216354
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f7462a10fd83b45c1b90450fdde806ef306a2f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970439"
 ---
 # <a name="animation-directcomposition"></a>Animación (DirectComposition)
 

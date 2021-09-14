@@ -1,6 +1,6 @@
 ---
 title: DRM_SourceID
-description: El atributo SourceID de DRM \_ contiene un identificador que asocia contenido protegido a un origen.
+description: El atributo SourceID de DRM \_ contiene un identificador que asocia el contenido protegido a un origen.
 ms.assetid: 69a07b3f-df75-4b05-bddb-924af516a962
 keywords:
 - DRM_SourceID windows Media Format
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80d9294cfdc76ff9210ad080bf3079bdfdb70ffb64faf35e2ef3e4164064a2b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e3ea60249ea9326499de7eaa7422d9362e7f0b2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119085946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247365"
 ---
 # <a name="drm_sourceid"></a>ID de origen de DRM \_
 
-El **atributo \_ SourceID de DRM** contiene un identificador que asocia contenido protegido a un origen.
+El **atributo \_ SourceID de DRM** contiene un identificador que asocia el contenido protegido a un origen.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -31,11 +31,11 @@ g \_ wszWMDRM \_ SourceID
 
 **DWORD \_ DE TIPO \_ WMT**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los identificadores de origen se usan para diferenciar el contenido protegido de forma no estándar del contenido protegido mediante DRM Windows Media.
+Los identificadores de origen se usan para diferenciar el contenido que está protegido de forma no estándar del contenido protegido mediante drm Windows multimedia.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

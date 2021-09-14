@@ -1,19 +1,19 @@
 ---
-description: Wi-Fi dirección de interfaz directa.
+description: Wi-Fi dirección de la interfaz directa.
 ms.assetid: bc4245f4-2452-479c-8e93-df8b3a517920
-title: System. Devices. WiFiDirect. InterfaceAddress
+title: System.Devices.WiFiDirect.InterfaceAddress
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c723fc3c3aabbc1e94463d85f68bce7a2f35e7bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248247"
 ---
-# <a name="systemdeviceswifidirectinterfaceaddress"></a>System. Devices. WiFiDirect. InterfaceAddress
+# <a name="systemdeviceswifidirectinterfaceaddress"></a>System.Devices.WiFiDirect.InterfaceAddress
 
-Wi-Fi dirección de interfaz directa
+Wi-Fi de la interfaz directa
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

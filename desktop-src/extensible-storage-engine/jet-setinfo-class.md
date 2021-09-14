@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_SETINFO (clase)'
-title: JET_SETINFO (clase)
+description: 'Más información sobre: JET_SETINFO clase'
+title: JET_SETINFO clase
 TOCTitle: JET_SETINFO class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SETINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setinfo(v=EXCHG.10)
@@ -25,23 +25,23 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 3334ebf3b71989ad62aeeee04b0af2fcb5787260
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969040"
 ---
-# <a name="jet_setinfo-class"></a>JET_SETINFO (clase)
+# <a name="jet_setinfo-class"></a>JET_SETINFO clase
 
-Configuración de JetSetColumn.
+Configuración para JetSetColumn.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_SETINFO  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,10 +64,10 @@ public class JET_SETINFO : IContentEquatable<JET_SETINFO>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_SETINFO](./jet-setinfo-members.md)
+[JET_SETINFO miembros](./jet-setinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

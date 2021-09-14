@@ -4,12 +4,12 @@ ms.assetid: 9365da4c-3667-49f0-838f-f099d28dab44
 title: Convertir un objeto de entrada de lápiz de texto en lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eef543fda3ed53123e99ee042aed67af9cedfef3533ae47bc40d8dd284a73675
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b8c7fe4a7847834fffda2df9c4ab94293756cee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256808"
 ---
 # <a name="converting-a-text-ink-object-to-ink"></a>Convertir un objeto de entrada de lápiz de texto en lápiz
 
@@ -17,7 +17,7 @@ Implementación de la conversión de un objeto de entrada manuscrita de texto (t
 
 ## <a name="to-convert-from-a-text-ink-object-to-ink"></a>Para convertir un objeto de entrada de lápiz de texto en lápiz
 
-1.  Use la [interfaz IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) para escribir el contenido del objeto de entrada manuscrita de texto en una secuencia. El objeto de entrada de lápiz de texto usa el formato serializado de entrada de lápiz para escribir en el secuenciador.
+1.  Use la [interfaz IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) para escribir el contenido del objeto de entrada manuscrita de texto en una secuencia. El objeto de entrada de lápiz de texto usa el formato serializado de entrada de lápiz para escribir en el aire.
 2.  Lea el contenido de la secuencia en una matriz BYTE.
 3.  Use el método Load del [**objeto**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load) [**InkDisp**](inkdisp-class.md) para cargar el contenido de la secuencia en el **objeto InkDisp.**
 
@@ -25,7 +25,7 @@ Implementación de la conversión de un objeto de entrada manuscrita de texto (t
 
 El fragmento de código siguiente convierte un objeto de entrada de lápiz de texto en lápiz.
 
-En primer lugar, el código obtiene un objeto de entrada manuscrita de texto.
+En primer lugar, el código obtiene un objeto de entrada de lápiz de texto.
 
 
 ```C++

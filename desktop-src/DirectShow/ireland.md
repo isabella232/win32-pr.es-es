@@ -4,12 +4,12 @@ ms.assetid: be60ca37-9f3a-44cd-8646-28fcbda5e79e
 title: Irlanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40b8335c2ac38555996d76713b70ce369710724e7e5b7fd827a0769abf0ddedb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b004a811a59a6e2556cdd4187728e5842bea1a46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160149"
 ---
 # <a name="ireland"></a>Irlanda
 
@@ -204,7 +204,7 @@ Los índices de frecuencia de las tablas de Irlanda no son adecuados para su uso
 
 <dl> <dt>
 
-[Ajuste de televisión análoga internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

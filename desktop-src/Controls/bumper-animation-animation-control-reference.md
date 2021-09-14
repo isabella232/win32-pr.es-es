@@ -4,12 +4,12 @@ description: Referencia de controles de animación
 ms.assetid: 7b624de9-d60d-4254-abe0-02d52b5d0121
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2c26c8bdc5eb6ad6dca3853b9773c14d7a5cf4dd7aeaa04044c70bdc065e072
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6cb3bdd541f373fee1c6f20eaff3c2fd961fa4d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118674081"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160298"
 ---
 # <a name="animation-control-reference"></a>Referencia de controles de animación
 

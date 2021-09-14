@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a9c368e761e6f8004e553a0843c98e3861ef55d01f7a48843be748df4806c168
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ccec714557934ca32a878e21fb2a75d24a211a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249356"
 ---
 # <a name="localizing-property-values"></a>Localización de valores de propiedad
 

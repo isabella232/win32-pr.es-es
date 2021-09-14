@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102925
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5bda814c6710982a2fda1fab0f9690ab1dcb519100cd18c7f6f56f3dd859ed67
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da525024d67784831332e6f053be0ae3aa1285b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118771628"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969299"
 ---
 # <a name="esentslvstreamingfilefullexception-methods"></a>Métodos de EsentSLVStreamingFileFullException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception-class.md) expone los miembros siguientes.
+El [tipo EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception-class.md) expone los siguientes miembros.
 
 ## <a name="methods"></a>Métodos
 

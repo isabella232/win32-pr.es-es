@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh475861(v=EXCHG.10)
 ms:contentKeyID: 37033567
 ms.date: 04/11/2016
 ms.topic: article
-ms.openlocfilehash: 7652bf39f620322d1c5ebc4b806438d182fd7c64
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c02d9f8081040293bd154137163e13cc9d313a32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477171"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248799"
 ---
 # <a name="jet_errinfobasic_w-structure"></a>JET_ERRINFOBASIC_W estructura
 
@@ -36,7 +36,7 @@ typedef struct {
 } JET_ERRINFOBASIC_W;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -48,7 +48,7 @@ Valor de error que se evaluó, tal como se pasó para el *argumento pvResult* a 
 
 **errcatMostSpecific**
 
-La constante de nivel [JET_ERRCAT](./jet-errcat.md) que está asociada al error; es decir, la categoría de nivel hoja de la jerarquía de categorías documentada [en JET_ERRCAT](./jet-errcat.md).
+El nivel más [bajo JET_ERRCAT](./jet-errcat.md) constante asociada al error; es decir, la categoría de nivel hoja de la jerarquía de categorías documentada [en JET_ERRCAT](./jet-errcat.md).
 
 **rgCategoricalHierarchy \[ 8\]**
 
@@ -65,5 +65,9 @@ Reservado.
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows 8 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows 8 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 

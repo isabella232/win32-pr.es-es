@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\states.htm
 title: Estados (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27a268c442e028d14133131fc691486dccfa84102a6d73be071e8b7d415ece0d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 646334654052ebe19d01ed4a20984966712a8b31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160428"
 ---
 # <a name="states-direct3d-9"></a>Estados (Direct3D 9)
 

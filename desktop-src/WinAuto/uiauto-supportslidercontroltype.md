@@ -3,30 +3,30 @@ title: Tipo de control deslizante
 description: En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo de control Slider.
 ms.assetid: dc7bef7a-b68c-4184-a9e7-745bb41b592e
 keywords:
-- Automatización de la interfaz de usuario, compatibilidad con el tipo de control Slider
+- Automatización de la interfaz de usuario,compatibilidad con el tipo de control Slider
 - Automatización de la interfaz de usuario, tipo de control Slider
 - Automatización de la interfaz de usuario estructura de árbol para el tipo de control Slider
-- Automatización de la interfaz de usuario,properties para tipo de control Slider
+- Automatización de la interfaz de usuario,properties para el tipo de control Slider
 - Automatización de la interfaz de usuario,patrones de control para el tipo de control Slider
 - Automatización de la interfaz de usuario,events para el tipo de control Slider
 - estructuras de árbol, tipo de control Slider
 - properties,Slider (tipo de control)
-- patrones de control, tipo de control Slider
+- patrones de control, Tipo de control deslizante
 - events,Slider (tipo de control)
 - Compatibilidad con el tipo de control Slider
 - Slider (tipo de control)
 - tipos de control, estructura de árbol para tipo de control Slider
-- tipos de control, patrones de control para tipo de control Slider
+- tipos de control, patrones de control para el tipo de control Slider
 - tipos de control, compatibilidad con Slider
 - tipos de control, Control deslizante
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 354217323ba4c3c59e416f7b9c36661d8ffe8a77
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472881"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242289"
 ---
 # <a name="slider-control-type"></a>Tipo de control deslizante
 
@@ -34,7 +34,7 @@ En este tema se proporciona información sobre microsoft Automatización de la i
 
 Un control deslizante es un control compuesto con botones que permiten al usuario establecer un intervalo numérico o seleccionar entre un conjunto de elementos.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo **de** control Slider. Los Automatización de la interfaz de usuario se aplican a todos los controles deslizantes en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo **de** control Slider. Los Automatización de la interfaz de usuario se aplican a todos los controles deslizantes en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles deslizantes y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el árbol Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles deslizantes y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
@@ -62,22 +62,22 @@ En la tabla siguiente se muestra un control y una vista de contenido típicos de
 
 ## <a name="relevant-properties"></a>Propiedades pertinentes
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles deslizantes. Para obtener más información sobre Automatización de la interfaz de usuario, vea [Retrieving Properties from Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles deslizantes. Para obtener más información sobre Automatización de la interfaz de usuario propiedades, vea [Recuperar propiedades de Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor      | Notas                                                                                                                                                                                                                          |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value      | Notas                                                                                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                                                   |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                   |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas. | El rectángulo exterior que contiene el control completo.                                                                                                                                                                       |
-| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas. | La mayoría de los controles deslizantes deben devolver el error [**\_ UIA E \_ NOCLICKABLEPOINT**](uiauto-error-codes.md) porque todo el rectángulo delimitador del control deslizante está ocupado por controles secundarios. |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas. | La mayoría de los controles deslizantes deben devolver el error [**UIA \_ E \_ NOCLICKABLEPOINT**](uiauto-error-codes.md) porque todo el rectángulo delimitador del control deslizante está ocupado por controles secundarios. |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Slider** | Este valor es el mismo para todos los marcos de trabajo.                                                                                                                                                                                     |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control deslizante siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                                                                           |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control deslizante siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                                                                                           |
-| [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad. Los secundarios (botones y control) de un control deslizante nunca deben tomar el foco. El foco siempre debe permanecer en el propio control deslizante.       |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control deslizante siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario control deslizante.                                                                                                                                           |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control deslizante siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                                                                                           |
+| [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad. Los secundarios (botones y thumb) de un control deslizante nunca deben tomar el foco. El foco siempre debe permanecer en el propio control deslizante.       |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas. | Si hay una etiqueta de texto estático asociada al control , esta propiedad debe exponer una referencia a ese control. Si el control de texto es un subcomponente de otro control, no tendrá una **propiedad LabeledBy** establecida.   |
-| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Slider. El valor predeterminado es "slider" para en-US o inglés (Estados Unidos).                                                                                             |
-| [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas. | El nombre del control deslizante se genera normalmente a partir de una etiqueta de texto estático. Si no hay una etiqueta de texto estático, el desarrollador de la aplicación debe asignar un valor de propiedad para **Name.**                              |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Slider. El valor predeterminado es "slider" para en-US o Inglés (Estados Unidos).                                                                                             |
+| [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas. | El nombre del control deslizante normalmente se genera a partir de una etiqueta de texto estático. Si no hay una etiqueta de texto estático, el desarrollador de la aplicación debe asignar un valor de propiedad para **Name.**                              |
 
 
 

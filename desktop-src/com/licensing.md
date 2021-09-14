@@ -4,12 +4,12 @@ description: Licencias
 ms.assetid: a77c0141-62b4-4032-a734-5a55da6a50e0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3058bd6bb543f2f3fc97f2e6a851b456638128c6e731050237aa0d36b12d681
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 06066365d2cf00a7b5db6d6ca755261e5a9470fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119567745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249308"
 ---
 # <a name="licensing"></a>Licencias
 

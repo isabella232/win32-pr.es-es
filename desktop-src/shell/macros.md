@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 0b43e4fb60f8cd1d486bd6c6eaab7dee657449331025c24a322803ca086b0ee1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 085bca918cfa6ca1441272c3c9181226ef603ac7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118049244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256982"
 ---
 # <a name="shell-macros"></a>Shell Macros
 

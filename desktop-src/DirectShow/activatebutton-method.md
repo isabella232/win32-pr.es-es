@@ -4,12 +4,12 @@ ms.assetid: 1da486a0-dadc-4c92-b3d3-83aeace01e39
 title: ActivateButton (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64853a191f688758deb42061e95c91308ff88c00fe9482cce677f8b00926f26f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c8a463a3aad1ee0dcabc0e5daaa4a4969efa37aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162406"
 ---
 # <a name="activatebutton-method"></a>ActivateButton (método)
 
@@ -28,7 +28,7 @@ El método ActivateButton activa el botón de menú seleccionado.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método al implementar el control personalizado del mouse después de establecer [**DisableAutoMouseProcessing en**](disableautomouseprocessing-property.md) **true.**
 

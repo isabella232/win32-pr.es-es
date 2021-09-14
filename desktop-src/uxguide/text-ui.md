@@ -5,11 +5,11 @@ ms.assetid: db42fe22-9baf-453a-9b89-9bbb251b0b6f
 ms.topic: article
 ms.date: 10/20/2020
 ms.openlocfilehash: 0d1d9a6166a6a0a0f0dae267ce6c0eda0d901d0d
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256526"
 ---
 # <a name="user-interface-text"></a>Interfaz de usuario text
 
@@ -49,14 +49,14 @@ Los desarrolladores de software suelen pensar que el texto se relega a la docume
 
 ### <a name="a-design-model-for-ui-text"></a>Un modelo de diseño para el texto de la interfaz de usuario
 
-Cuando piense en el texto de la interfaz de usuario y su ubicación en las superficies de la interfaz de usuario, tenga en cuenta estos hechos:
+A medida que piense en el texto de la interfaz de usuario y su ubicación en las superficies de la interfaz de usuario, tenga en cuenta estos hechos:
 
 -   Durante la lectura inmersiva centrada, las personas leen en un orden de izquierda a derecha, de arriba a abajo (en las culturas occidental).
 -   Cuando se usa software, los usuarios no están inmersos en la propia interfaz de usuario, sino en su trabajo. Por lo tanto, los usuarios no leen el texto de la interfaz de usuario que lo analizan.
 -   Al examinar una ventana, es posible que parezca que los usuarios leen texto cuando en realidad lo filtran. A menudo no comprenden realmente el texto de la interfaz de usuario a menos que perciban la necesidad de.
 -   Dentro de una ventana, los distintos elementos de la interfaz de usuario reciben distintos niveles de atención. Los usuarios tienden a leer primero las etiquetas de control, especialmente aquellas que parecen pertinentes para completar la tarea en cuestión. Por el contrario, los usuarios tienden a leer texto estático solo cuando creen que lo necesitan.
 
-En el caso de un modelo de diseño general, no suponga que los usuarios leen cuidadosamente el texto en un orden de izquierda a derecha, de arriba a abajo. En su lugar, suponga que los usuarios empiezan por examinar rápidamente toda la ventana y, a continuación, leen el texto de la interfaz de usuario en aproximadamente el orden siguiente:
+En el caso de un modelo de diseño general, no suponga que los usuarios leen cuidadosamente el texto en un orden de arriba a abajo de izquierda a derecha. En su lugar, suponga que los usuarios empiezan por examinar rápidamente toda la ventana y, a continuación, leen el texto de la interfaz de usuario en aproximadamente el orden siguiente:
 
 -   Controles interactivos en el centro
 -   Botones [de confirmación](glossary.md)
@@ -77,7 +77,7 @@ Revise cada ventana y elimine palabras e instrucciones duplicadas, tanto dentro 
 
 ### <a name="avoid-over-communication"></a>Evitar la comunicación en exceso
 
-Incluso si el texto no es redundante, puede ser demasiado wordy en un esfuerzo por explicar cada detalle. **El exceso de texto desaconseja leer el ojo tiende a omitirlo de forma irónica, lo que provoca menos comunicación en lugar de más.** En el texto de la interfaz de usuario, comunique de forma concisa la información esencial. Si se necesita más información para algunos usuarios o algunos escenarios, proporcione un vínculo al contenido de ayuda más detallado [o](winenv-help.md)quizás a una entrada de glosario para aclarar un término.
+Aunque el texto no sea redundante, puede ser demasiado wordy en un esfuerzo por explicar cada detalle. **El exceso de texto desaconseja leer el ojo tiende a omitirlo de forma irónica, lo que provoca menos comunicación en lugar de más.** En el texto de la interfaz de usuario, comunique de forma concisa la información esencial. Si se necesita más información para algunos usuarios o algunos escenarios, proporcione un vínculo a contenido de Ayuda más detallado [o](winenv-help.md)quizás a una entrada de glosario para aclarar un término.
 
 **Incorrecto:**
 
@@ -89,7 +89,7 @@ Para evitar texto que desaconseja la lectura, puede crear el texto para hacer qu
 
 ### <a name="use-the-inverted-pyramid"></a>Uso de la pirámide invertida
 
-La escritura académica suele usar un estilo estructural "piramidal" que basa los hechos, trabaja con esos hechos y se acumula hasta una conclusión que forma una estructura similar a la piramidal. Por el contrario, los escritores usan un estilo de "pirámide invertida" que comienza con la conclusión de la "conclusión" fundamental que deben tener los lectores. A continuación, rellena progresivamente más detalles que los lectores pueden estar interesados en quizás solo para examinar. La ventaja de este estilo es que llega directamente al punto y permite a los lectores dejar de leer en cualquier momento que elijan y seguir con la información esencial.
+La escritura académica suele usar un estilo estructural "piramidal" que basa los hechos, trabaja con esos hechos y se acumula hasta una conclusión que forma una estructura similar a la piramidal. Por el contrario, los investigadores usan un estilo de "pirámide invertida" que comienza con la conclusión de la "conclusión" fundamental que deben tener los lectores. A continuación, rellena progresivamente más detalles que los lectores pueden estar interesados en quizás solo para examinar. La ventaja de este estilo es que llega directamente al punto y permite a los lectores dejar de leer en cualquier momento que elijan y seguir con la información esencial.
 
 Debe aplicar la estructura piramidal invertida al texto de la interfaz de usuario. Llegue directamente al punto con la información esencial, deje que los usuarios dejen de leer en el momento que elijan y use un vínculo de Ayuda para presentar el resto de la pirámide.
 
@@ -137,7 +137,7 @@ En este ejemplo, la información esencial está en la consulta del texto de inst
 ### <a name="text-fonts-sizes-and-colors"></a>Fuentes, tamaños y colores de texto
 
 -   **Use texto azul solo para vínculos e instrucciones principales.**
--   **Use texto verde solo para direcciones URL en los resultados de la búsqueda.**
+-   **Use texto verde solo para las direcciones URL en los resultados de la búsqueda.**
 
 Las siguientes fuentes y colores son los valores predeterminados para Windows.
 
@@ -189,13 +189,13 @@ Para obtener más información y ejemplos, vea [Fuentes](vis-fonts.md) y [colore
 
     Los términos documento y archivo se suelen usar indistintamente.
 
--   Use para [avisos en](glossary.md) cuadros [de texto y](ctrl-text-boxes.md) listas [desplegables editables.](/windows/desktop/uxguide/ctrl-drop)
+-   Use para [avisos en](glossary.md) cuadros [de texto](ctrl-text-boxes.md) y [listas desplegables editables.](/windows/desktop/uxguide/ctrl-drop)
 
     ![captura de pantalla del cuadro de texto de búsqueda ](images/text-ui-image26.png)
 
     En este ejemplo, el símbolo del sistema del cuadro Buscar tiene el formato de texto cursiva.
 
--   Use con moderación para resaltar palabras específicas para ayudar a comprender.
+-   Use con moderación para resaltar palabras específicas para ayudar en la comprensión.
 -   **No todas las fuentes admiten cursiva, por lo que nunca debe ser fundamental comprender el texto.**
 
 **Negrita cursiva**
@@ -205,14 +205,14 @@ Para obtener más información y ejemplos, vea [Fuentes](vis-fonts.md) y [colore
 **Subrayar**
 
 -   No use, excepto los vínculos.
--   No use para énfasis. Use cursiva en su lugar.
+-   No use como énfasis. Use cursiva en su lugar.
 
 ### <a name="punctuation&quot;></a>Signos de puntuación
 
-**Puntos**
+**Períodos**
 
 -   **No coloque al final de las etiquetas de control, las instrucciones principales ni los vínculos de Ayuda.**
--   Coloque al final de instrucciones complementarias, explicaciones complementarias o cualquier otro texto estático que forte una oración completa.
+-   Coloque al final de instrucciones complementarias, explicaciones complementarias o cualquier otro texto estático que forte una frase completa.
 
 **Signos de interrogación**
 
@@ -221,11 +221,11 @@ Para obtener más información y ejemplos, vea [Fuentes](vis-fonts.md) y [colore
 **Signos de exclamación**
 
 -   En aplicaciones empresariales, evite.
-    -   **Excepciones:** Los signos de exclamación se usan a veces en el contexto de la finalización de la descarga (&quot;Done!") y para llamar la atención sobre el contenido web ("New!").
+    -   **Excepciones:** A veces, los signos de exclamación se usan en el contexto de la finalización de la descarga (&quot;Done!") y para llamar la atención sobre el contenido web ("New!").
 
 **Comas**
 
--   En una lista de tres o más elementos, coloque siempre una coma después del elemento siguiente al último de la lista.
+-   En una lista de tres o más elementos, coloque siempre una coma después del último elemento de la lista.
 
 **Colones**
 
@@ -234,8 +234,8 @@ Para obtener más información y ejemplos, vea [Fuentes](vis-fonts.md) y [colore
 
 **Elipses**
 
--   **Los puntos suspensivos significan incompleta.** Use puntos suspensivos en el texto de la interfaz de usuario de la siguiente manera:
-    -   **Comandos:** Indique que un comando necesita información adicional. No use puntos suspensivos siempre que una acción muestre otra ventana solo cuando se requiera información adicional. Para obtener más información, vea [Botones de comandos](ctrl-command-buttons.md).
+-   **Los puntos suspensivos significan falta de integridad.** Use puntos suspensivos en el texto de la interfaz de usuario como se muestra a continuación:
+    -   **Comandos:** Indique que un comando necesita información adicional. No use puntos suspensivos cada vez que una acción muestre otra ventana solo cuando se requiera información adicional. Para obtener más información, vea [Botones de comandos](ctrl-command-buttons.md).
     -   **Datos:** Indique que el texto está truncado.
     -   **Etiquetas:** Indique que una tarea está en curso (por ejemplo, "Búsqueda...").
 
@@ -243,25 +243,25 @@ Para obtener más información y ejemplos, vea [Fuentes](vis-fonts.md) y [colore
 
 -   **No haga que los puntos suspensivos se hagan interactivos.** Para mostrar texto truncado, permita a los usuarios cambiar el tamaño del control para ver más texto o usar un [control de divulgación progresiva en su](ctrl-progressive-disclosure-controls.md) lugar.
 
-**Comillas y apóstrofos**
+**Comillas y apóstrofes**
 
 -   Para hacer referencia al texto literalmente, use el formato cursiva en lugar de las comillas.
 -   Coloque los títulos de ventana y las etiquetas de control entre comillas solo si es necesario para evitar confusiones y no se puede dar formato con negrita en su lugar.
--   En el caso de las comillas, se prefieren comillas dobles (" "); evite las comillas simples.
+-   En el caso de las comillas, se prefieren comillas dobles (" "); evite comillas simples.
 
     **Correcto:**
 
-    ¿Está seguro de que desea eliminar la "carpeta cat de Sparky"?
+    ¿Está seguro de que quiere eliminar la "carpeta cat de Sparky"?
 
     **Incorrecto:**
 
-    ¿Está seguro de que desea eliminar la carpeta cat de Sparky?
+    ¿Está seguro de que quiere eliminar la carpeta cat de Sparky?
 
 ### <a name="capitalization"></a>Uso de mayúsculas
 
--   **Use mayúsculas de estilo de título para títulos, mayúsculas de estilo oración para todos los demás elementos de la interfaz de usuario.** Esto es más adecuado para el [tono Windows .](text-style-tone.md)
+-   **Use mayúsculas y mayúsculas de estilo de título para los títulos, mayúsculas y mayúsculas de estilo oración para todos los demás elementos de la interfaz de usuario.** Esto es más adecuado para el [tono Windows .](text-style-tone.md)
 
-    -   **Excepción:** En el caso de las aplicaciones heredadas, puede usar mayúsculas de estilo de título para botones de comandos, menús y encabezados de columna si es necesario para evitar mezclar estilos de mayúsculas.
+    -   **Excepción:** En el caso de las aplicaciones heredadas, puede usar mayúsculas y mayúsculas de estilo de título para los botones de comando, los menús y los encabezados de columna, si es necesario, para evitar mezclar estilos de mayúsculas.
 
         ![captura de pantalla de la hoja de propiedades genérica ](images/text-ui-image27.png)
 
@@ -271,38 +271,38 @@ Para obtener más información y ejemplos, vea [Fuentes](vis-fonts.md) y [colore
 
     En este ejemplo genérico se muestran las mayúsculas y las puntuaciones correctas para los diálogos.
 
--   **Para los nombres de características y tecnologías, sea conservador en mayúsculas.** Normalmente, solo los componentes principales se deben incluir en mayúsculas (con mayúsculas de estilo de título).
+-   **En el caso de los nombres de características y tecnologías, sea conservador en mayúsculas.** Normalmente, solo los componentes principales deben incluirse en mayúsculas (con mayúsculas de estilo de título).
 
     **Correcto:**
 
     Analysis Services, cubos, dimensiones
 
-    Analysis Services es un componente principal de SQL Server, por lo que la mayúscula de estilo de título es adecuada; Los cubos y las dimensiones son elementos comunes del software de análisis de base de datos, por lo que no es necesario capitalizarlos.
+    Analysis Services es un componente principal de SQL Server, por lo que la mayúscula y la mayúscula del estilo de título es adecuada; Los cubos y las dimensiones son elementos comunes del software de análisis de base de datos, por lo que no es necesario capitalizarlos.
 
--   **Para los nombres de características y tecnologías, sea coherente en mayúsculas.** Si el nombre aparece más de una vez en una pantalla de interfaz de usuario, siempre debería aparecer de la misma manera. Del mismo modo, en todas las pantallas de interfaz de usuario del programa, el nombre debe presentarse de forma coherente.
+-   **En el caso de los nombres de características y tecnologías, sea coherente en mayúsculas.** Si el nombre aparece más de una vez en una pantalla de interfaz de usuario, siempre debe aparecer de la misma manera. Del mismo modo, en todas las pantallas de la interfaz de usuario del programa, el nombre debe presentarse de forma coherente.
 -   No en mayúsculas los nombres de los elementos genéricos de la interfaz de usuario, como la barra de herramientas, el menú, la barra de desplazamiento, el botón y el icono.
     -   **Excepciones:** Barra de direcciones, Barra de vínculos.
 -   No use todas las letras mayúsculas para las teclas de teclado. En su lugar, siga la mayúscula que usan los teclados estándar o en minúsculas si la tecla no está etiquetada en el teclado.
 
     **Correcto:**
 
-    barra espaciadora, Tab, Entrar, Subir página, Ctrl+Alt+Supr
+    barra espaciadora, Tabulación, Entrar, Página arriba, Ctrl+Alt+Supr
 
     **Incorrecto:**
 
     BARRA ESPACIADORA, TABULACIÓN, ENTRAR, PG ARRIBA, CTRL+ALT+SUPR
 
--   **No use todas las letras mayúsculas como énfasis.** Los estudios han demostrado que esto es difícil de leer y los usuarios tienden a considerarlo "insensibilidad". Para las advertencias, use un icono de advertencia y una explicación clara de la situación. No es necesario agregar, por ejemplo, el término ADVERTENCIA en todas las letras mayúsculas.
+-   **No use todas las letras mayúsculas para el énfasis.** Los estudios han demostrado que esto es difícil de leer y los usuarios tienden a considerarlo "insensibilidad". Para las advertencias, use un icono de advertencia y una explicación clara de la situación. No es necesario agregar, por ejemplo, el término ADVERTENCIA en todas las letras mayúsculas.
 
 Para obtener más información, vea la sección "Texto" o "Etiquetas" en las directrices de componentes de interfaz de usuario específicos.
 
 ### <a name="dates-and-times"></a>Fechas y horas
 
--   **No codifite de forma hard-code el formato de fechas y horas.** Respete la elección del usuario de la configuración regional y las opciones de personalización para los formatos de fecha y hora. El usuario los selecciona en el elemento del panel de control Región e Idioma.
+-   **No codifie de forma codificada el formato de fechas y horas.** Respetar la elección del usuario de la configuración regional y las opciones de personalización para los formatos de fecha y hora. El usuario los selecciona en el elemento del panel de control Región e idioma.
 
-    ![captura de pantalla con formato de fecha: lunes, 6 de julio de 2009](images/text-ui-image29.png)![captura de pantalla de formato de fecha: 6 de julio de 2009](images/text-ui-image30.png)
+    ![captura de pantalla con formato de fecha: lunes, 6 de julio de 2009](images/text-ui-image29.png)![captura de pantalla con formato de fecha: 6 de julio de 2009](images/text-ui-image30.png)
 
-    En estos ejemplos de Microsoft Outlook, ambos formatos para la fecha larga son correctos. Reflejan las distintas opciones que los usuarios han realizado en el elemento del panel de control Región e Idioma.
+    En estos ejemplos de Microsoft Outlook, ambos formatos para la fecha larga son correctos. Reflejan las distintas opciones que los usuarios han realizado en el elemento del panel de control Región e idioma.
 
 -   **Use el formato de fecha larga para escenarios que se benefician de tener información adicional.** Use el formato de fecha corta para los contextos que no tienen espacio suficiente para el formato largo. Aunque los usuarios eligen qué información les gustaría incluir en los formatos largo y corto, los diseñadores eligen qué formato mostrar en sus programas en función del escenario y el contexto.
 
@@ -314,10 +314,10 @@ Para obtener más información, vea la sección "Texto" o "Etiquetas" en las dir
 
 La globalización significa crear documentos o productos que se puedan usar en cualquier país, región o referencia cultural. La localización significa adaptar documentos o productos para su uso en una configuración regional que no sea el país o región de origen. Considere la globalización y localización al escribir texto de la interfaz de usuario. El programa puede traducirse a otros idiomas y usarse en culturas muy diferentes de las suyas propias.
 
--   Para los controles con contenido variable (como vistas de lista y vistas de árbol), elija un ancho adecuado para **los datos válidos más largos.**
--   Incluya espacio suficiente en la superficie de la interfaz de usuario para un **30 %** adicional (hasta un 200 % para texto más corto) para cualquier texto (pero no números) que se localizará. La traducción de un idioma a otro suele cambiar la longitud de línea del texto.
+-   Para los controles con contenido variable (como vistas de lista y vistas de árbol), elija un ancho adecuado **para los datos válidos más largos.**
+-   Incluya espacio suficiente en la superficie de la interfaz de usuario para un **30** % adicional (hasta un 200 % para texto más corto) para cualquier texto (pero no números) que se localizará. La traducción de un idioma a otro suele cambiar la longitud de línea del texto.
 -   No cree cadenas a partir de subcadenas en tiempo de ejecución. En su lugar, use oraciones completas para que no haya ambigüedad para el traductor.
--   **No use un control subordinado, los valores que contiene o su etiqueta de unidades para crear una frase o frase.** Este diseño no es localizable porque la estructura de oraciones varía según el lenguaje.
+-   **No use un control subordinado, los valores que contiene ni su etiqueta de unidades para crear una frase o frase.** Este diseño no es localizable porque la estructura de oraciones varía según el lenguaje.
 
     **Incorrecto:**
 
@@ -329,36 +329,36 @@ La globalización significa crear documentos o productos que se puedan usar en c
 
     En el ejemplo incorrecto, el cuadro de texto se coloca dentro de la etiqueta de casilla.
 
--   No haga que solo una parte de una frase sea un vínculo, ya que, cuando se traduce, es posible que ese texto no permanezca junto. Por lo tanto, el texto del vínculo debe formar una oración completa por sí mismo.
+-   No haga que solo una parte de una frase sea un vínculo, porque cuando se traduce, es posible que ese texto no permanezca junto. Por lo tanto, el texto del vínculo debe formar una oración completa por sí mismo.
     -   **Excepción:** Los vínculos de glosario se pueden insertar en línea, como parte de una oración.
 
-Para más información, consulte el Centro [para desarrolladores globales de Go.](https://msdn.microsoft.com/goglobal/)
+Para obtener más información, vea [El Centro para desarrolladores globales de Go](https://msdn.microsoft.com/goglobal/).
 
 ### <a name="title-bar-text"></a>Texto de la barra de título
 
--   Elija el texto de la barra de título según el tipo de ventana:
-    -   **Ventanas de programa** centradas en documentos de nivel superior: Use un formato de "nombre de programa de nombre de documento". Los nombres de documento se muestran primero para dar una sensación centrada en el documento.
+-   Elija el texto de la barra de título en función del tipo de ventana:
+    -   **Ventanas de programa centradas en documentos de nivel superior:** Use un formato de "nombre de programa de nombre de documento". Los nombres de documento se muestran primero para dar una sensación centrada en el documento.
     -   **Ventanas de programa de nivel superior que no están centradas en documentos:** Mostrar solo el nombre del programa.
     -   **Cuadros de diálogo:** Muestra el comando, la característica o el programa desde el que llegó el cuadro de diálogo. No use el título para explicar el propósito del cuadro de diálogo que es el propósito de las instrucciones principales. Para obtener más instrucciones, vea [Cuadros de diálogo](win-dialog-box.md).
-    -   **Asistentes:** Muestra el nombre del asistente. Tenga en cuenta que la palabra "asistente" no debe incluirse en los nombres del asistente. Para obtener más instrucciones, vea [Asistentes](win-wizards.md).
+    -   **Asistentes:** Muestra el nombre del asistente. Tenga en cuenta que la palabra "asistente" no debe incluirse en los nombres del asistente. Para obtener más instrucciones, vea [Asistentes.](win-wizards.md)
 -   **Para las ventanas de programa de nivel superior, si el título y el icono de la barra de título se muestran de forma destacada cerca de la parte superior de la ventana, puede ocultar el título y el icono de la barra de título para evitar redundancia.** Sin embargo, todavía tiene que establecer un título adecuado internamente para que lo use Windows.
--   **Para los cuadros de diálogo, no incluya las palabras "diálogo" o "progreso" en los títulos.** Estos conceptos están implícitos y dejar estas palabras desactivadas hace que los títulos sean más fáciles de examinar para los usuarios.
+-   **En el caso de los cuadros de diálogo, no incluya las palabras "diálogo" o "progreso" en los títulos.** Estos conceptos están implícitos y dejar estas palabras desactivadas hace que los títulos sean más fáciles de examinar para los usuarios.
 
 ### <a name="main-instructions"></a>Instrucciones principales
 
--   **Use la instrucción principal para explicar concisamente qué deben hacer los usuarios en una ventana o página determinadas.** Las instrucciones principales buenas comunican el objetivo del usuario en lugar de centrarse solo en manipular la interfaz de usuario.
--   **Expresar la instrucción principal en forma de una dirección imperativa o una pregunta específica.**
+-   **Use la instrucción principal para explicar concisamente lo que los usuarios deben hacer en una ventana o página determinadas.** Las instrucciones principales buenas comunican el objetivo del usuario en lugar de centrarse solo en manipular la interfaz de usuario.
+-   **Expresar la instrucción principal en forma de dirección imperativa o pregunta específica.**
 
     **Incorrecto:**
 
     ![captura de pantalla del nombre del programa como instrucción principal ](images/text-ui-image34.png)
 
-    En este ejemplo, la instrucción principal simplemente indica el nombre del programa; no invita explícitamente a realizar un curso de acción para el usuario.
+    En este ejemplo, la instrucción principal simplemente indica el nombre del programa; no invita explícitamente a un curso de acción que el usuario debe realizar.
 
-    **Excepciones:** Los mensajes de error, los mensajes de advertencia y las confirmaciones pueden usar estructuras de oración diferentes en sus instrucciones principales.
+    **Excepciones:** Los mensajes de error, los mensajes de advertencia y las confirmaciones pueden usar estructuras de oraciones diferentes en sus instrucciones principales.
 
 -   **Use verbos específicos siempre que sea posible.** Los verbos específicos (ejemplos: conectar, guardar, instalar) son más significativos para los usuarios que los genéricos (ejemplos: configurar, administrar, establecer).
-    -   Para las páginas del panel de control y las páginas del asistente, si no puede usar un verbo específico, puede que prefiera omitir el verbo por completo.
+    -   En el caso de las páginas del panel de control y las páginas del asistente, si no puede usar un verbo específico, puede que prefiera omitir el verbo por completo.
 
         **Aceptable:**
 
@@ -376,21 +376,21 @@ Para más información, consulte el Centro [para desarrolladores globales de Go.
 
     En este ejemplo, el contexto de la interfaz de usuario ya está muy claro; no es necesario agregar texto de instrucción principal.
 
--   **Sea conciso y use solo una sola oración completa.** Pare la instrucción principal hasta la información esencial. Si tiene que explicar algo más, considere la posibilidad de usar una instrucción complementaria.
+-   **Sea conciso y use solo una sola frase completa.** Ordene la instrucción principal hasta la información esencial. Si tiene que explicar algo más, considere la posibilidad de usar una instrucción complementaria.
 -   Use mayúsculas de estilo de frase.
 -   **No incluya períodos finales si la instrucción es una instrucción .** Si la instrucción es una pregunta, incluya un signo de interrogación final.
--   **En el caso de los diálogos de progreso, use** una frase de error que explique brevemente la operación en curso y termine con puntos suspensivos. Ejemplo: "Imprimir las imágenes..."
--   **Sugerencia:** Puede evaluar una instrucción principal mediante la lectura de lo que podría decir a un amigo al explicar qué hacer con la ventana o página. Si responder con la instrucción principal sería poco natural, poco útil o difícil, vuelva a trabajar la instrucción.
+-   **En el caso de los diálogos de progreso, use** una frase de oración que explique brevemente la operación en curso y termine con puntos suspensivos. Ejemplo: "Impresión de imágenes..."
+-   **Sugerencia:** Puede evaluar una instrucción principal mediante la lectura de lo que le podría decir a un amigo al explicar qué hacer con la ventana o página. Si responder con la instrucción principal sería poco natural, poco útil o difícil, volver a trabajar la instrucción.
 
-Para obtener más información, consulte la sección "Instrucción principal" en las directrices de componentes de interfaz de usuario específicos.
+Para obtener más información, vea la sección "Instrucción principal" de las directrices específicas de los componentes de la interfaz de usuario.
 
 ### <a name="supplemental-instructions"></a>Instrucciones complementarias
 
 -   Cuando sea necesario, use una instrucción complementaria para presentar información adicional útil para comprender o **usar la ventana o página,** como:
-    -   Proporcionar contexto para explicar por qué se muestra la ventana si se inicia el programa o el sistema.
-    -   Información de calificación que ayuda a los usuarios a decidir cómo actuar en la instrucción principal.
-    -   Definir terminología importante.
--   **No use una instrucción complementaria si no es necesaria.** Prefiere comunicar todo con la instrucción principal si puede hacerlo de forma concisa.
+    -   Proporcionar contexto para explicar por qué se muestra la ventana si está iniciada por el sistema o por el programa.
+    -   Información de calificación que ayuda a los usuarios a decidir cómo actuar sobre la instrucción principal.
+    -   Definición de terminología importante.
+-   **No use una instrucción complementaria si no es necesario.** Prefiere comunicar todo con la instrucción principal si puede hacerlo de forma concisa.
 -   **No repita la instrucción principal con una redacción ligeramente diferente.** En su lugar, omita la instrucción complementaria si no hay nada más que agregar.
 -   Use oraciones completas y mayúsculas de estilo oración.
 
@@ -400,7 +400,7 @@ Para obtener más información, consulte la sección "Instrucción principal" en
     -   Los cuadros de texto y las listas desplegables se pueden etiquetar mediante avisos.
     -   Por lo general, los controles de divulgación progresiva no están etiquetados.
     -   **Los controles subordinados usan la etiqueta de su control asociado.** Los controles de giro siempre son controles subordinados.
-    -   **Omita las etiquetas de control que vuelvan a restablecer la instrucción principal.** En este caso, la instrucción principal toma la clave de acceso.
+    -   **Omita las etiquetas de control que restablecen la instrucción principal.** En este caso, la instrucción principal toma la clave de acceso.
 
         **Aceptable:**
 
@@ -415,12 +415,12 @@ Para obtener más información, consulte la sección "Instrucción principal" en
         En este ejemplo, se quita la etiqueta redundante, por lo que la instrucción principal toma la clave de acceso.
 
 -   Colocación de etiquetas:
-    -   El propio control etiqueta directamente los globos, las casillas, los botones de comando, los cuadros de grupo, los vínculos, las pestañas y las sugerencias.
-    -   Las listas desplegables, los cuadros de lista, las vistas de lista, las barras de progreso, los controles deslizantes, los cuadros de texto y las vistas de árbol se etiquetan arriba, vacían a la izquierda o a la izquierda.
+    -   El propio control etiqueta directamente los globos, las casillas, los botones de comando, las casillas de grupo, los vínculos, las pestañas y las sugerencias.
+    -   Las listas desplegables, los cuadros de lista, las vistas de lista, las barras de progreso, los controles deslizantes, los cuadros de texto y las vistas de árbol se etiquetan arriba, se vacían a la izquierda o a la izquierda.
     -   Los controles de divulgación progresiva normalmente no están etiquetados. Los botones de contenido adicional se etiquetan a la derecha.
 -   **Asigne una clave de acceso única para cada control interactivo, excepto** para los vínculos. Para obtener más información, vea [Teclado](inter-keyboard.md).
 -   **Mantenga las etiquetas breves.** Sin embargo, tenga en cuenta que agregar una palabra o dos a una etiqueta puede ayudar a la claridad y, a veces, elimina la necesidad de explicaciones complementarias.
--   **Prefiere etiquetas específicas sobre las genéricas.** Lo ideal es que los usuarios no tengan que leer nada más para comprender la etiqueta.
+-   **Prefiere etiquetas específicas en lugar de genéricas.** Lo ideal es que los usuarios no tengan que leer nada más para comprender la etiqueta.
 
     **Incorrecto:**
 
@@ -428,12 +428,12 @@ Para obtener más información, consulte la sección "Instrucción principal" en
 
     **Correcto:**
 
-    ![captura de pantalla del botón publicar comando ](images/text-ui-image39.png)
+    ![captura de pantalla del botón de comando publicar ](images/text-ui-image39.png)
 
     En el ejemplo correcto, se usa una etiqueta específica para el botón de confirmación.
 
 -   **Para las listas de etiquetas,** como los botones de radio, use expresiones paralelas e intente mantener la longitud aproximadamente igual para todas las etiquetas.
--   **Para las listas de etiquetas, centre el texto de la etiqueta en las diferencias entre las opciones.** Si todas las opciones tienen el mismo texto introductorio, mueva ese texto a la etiqueta de grupo.
+-   **En el caso de las listas de etiquetas, centre el texto de la etiqueta en las diferencias entre las opciones.** Si todas las opciones tienen el mismo texto introductorio, mueva ese texto a la etiqueta de grupo.
 
     **Incorrecto:**
 
@@ -445,9 +445,9 @@ Para obtener más información, consulte la sección "Instrucción principal" en
 
     El ejemplo correcto mueve la expresión introductoria idéntica a la etiqueta, por lo que las dos opciones se diferencian más claramente.
 
--   **En general, prefiere expresiones positivas.** Por ejemplo, use do en lugar de do not y notify en lugar de no notificar.
-    -   **Excepción:** La etiqueta de casilla "Don't show this message again" (No volver a mostrar este mensaje) se usa ampliamente.
--   **Omita los verbos informativos que se aplican a todos los controles del tipo especificado.** En su lugar, centre las etiquetas en lo que es único sobre los controles. Por ejemplo, no significa que los usuarios necesiten escribir en un control de cuadro de texto o que los usuarios necesiten hacer clic en un vínculo.
+-   **En general, prefiere expresiones positivas.** Por ejemplo, use do en lugar de do, y notify en lugar de no notificar.
+    -   **Excepción:** La etiqueta de casilla "No volver a mostrar este mensaje" se usa ampliamente.
+-   **Omita los verbos informativos que se aplican a todos los controles del tipo especificado.** En su lugar, centre las etiquetas en lo que es único sobre los controles. Por ejemplo, no hay que decir que los usuarios necesitan escribir en un control de cuadro de texto o que los usuarios necesitan hacer clic en un vínculo.
 
     **Incorrecto:**
 
@@ -461,7 +461,7 @@ Para obtener más información, consulte la sección "Instrucción principal" en
 
 -   En algunos casos, las siguientes anotaciones entre paréntesis para controlar las etiquetas pueden resultar útiles:
     -   **Si una opción es opcional, considere la posibilidad de agregar "(optional)" a la etiqueta.**
-    -   **Si se recomienda encarecidamente una opción, agregue "(recommended)" a la etiqueta.** Esto significa que la configuración es opcional, pero debe establecerse de todos modos.
+    -   **Si se recomienda encarecidamente una opción, agregue "(recommended)" a la etiqueta.** Si lo hace, el valor es opcional, pero debe establecerse de todos modos.
     -   **Si una opción está pensada solo para usuarios avanzados, considere la posibilidad de agregar "(advanced)" a la etiqueta.**
 -   Puede especificar unidades (segundos, conexiones, entre paréntesis) después de la etiqueta.
 
@@ -473,7 +473,7 @@ Para obtener más información, vea la sección "Texto" o "Etiquetas" en las dir
 
 ### <a name="supplemental-explanations"></a>Explicaciones complementarias
 
--   **Use explicaciones complementarias cuando los controles requieran más información de la que puede transmitir su etiqueta.** Pero no use una explicación complementaria si no es necesario prefiere comunicarse todo con la etiqueta de control si puede hacerlo de forma concisa. Normalmente, las explicaciones complementarias se usan con vínculos de comandos, botones de radio y casillas.
+-   **Use explicaciones complementarias cuando los controles requieran más información de la que puede transmitir su etiqueta.** Pero no use una explicación complementaria si no es necesario preferir comunicar todo con la etiqueta de control si puede hacerlo de forma concisa. Normalmente, las explicaciones complementarias se usan con vínculos de comandos, botones de radio y casillas.
 -   Cuando sea necesario, **use negrita en las etiquetas de control para** facilitar el examen del texto cuando haya explicaciones complementarias.
 
     ![captura de pantalla del cuadro de diálogo configuración de seguridad ](images/text-ui-image45.png)
@@ -504,15 +504,15 @@ En la tabla siguiente se muestran las etiquetas de botón de confirmación más 
 | Etiqueta | Value |
 |--------|-------|
 | <strong>Etiqueta de botón</strong><br /> | <strong>Significado</strong><br /> | <strong>Cuándo se deben usar</strong><br /> | <strong>Clave de acceso</strong><br /> | 
-| <strong>OK (CORRECTO)</strong><br /> | <ul><li>En los cuadros de diálogo: aplique los cambios o confirme en la tarea y cierre la ventana.</li><li>En las ventanas de propiedades de propietario: aplique los cambios pendientes (realizados desde que se abrió la ventana o la última vez que se apliquen) y cierre la ventana.</li><li>En ventanas de propiedades de propiedad: mantenga los cambios, cierre la ventana y aplique los cambios cuando se apliquen los cambios de la ventana de propietario.</li></ul> | <ul><li>Se usa con ventanas que no son específicas de tareas, como hojas de propiedades.</li><li>En el caso de las ventanas que se usan para realizar una tarea específica, use una etiqueta específica en su lugar que comience con un verbo (ejemplo: Imprimir).</li><li>Para las ventanas en las que los usuarios no pueden realizar cambios, use Cerrar.</li></ul> | Entrar<br /> | 
-| <strong>Sí/No</strong><br /> | Sí es la respuesta afirmativa a una pregunta sí o ninguna, mientras que No es la respuesta negativa.<br /> | <ul><li>Use los botones Sí y No solo para responder a preguntas sí o no. Nunca use Aceptar y Cancelar para preguntas sí o ninguna.</li><li>Prefiere respuestas específicas sobre los botones Sí y No. Aunque no hay ningún problema con el uso de Sí y No, las respuestas específicas se pueden entender más rápidamente, lo que da lugar a una toma de decisiones eficaz.</li><li>Sin embargo, considere la posibilidad de usar respuestas Sí y No si la expresión de respuestas específicas resulta larga o difícil.</li><li>No use los botones Sí y No si el significado de la respuesta No es claro. Si es así, use respuestas específicas en su lugar.</li><li>Sí y No siempre se deben usar como un par.</li></ul> | Y and N<br /> | 
-| <strong>Cancelar</strong><br /> | <ul><li>En los cuadros de diálogo: descarte todos los cambios o el trabajo en curso, vuelva al estado anterior (sin ningún efecto secundario perceptible) y cierre la ventana.</li><li>En las hojas de propiedades: descarte todos los cambios pendientes (realizados desde que se abrió la ventana o la última vez que se apliquen) y cierre la ventana.</li><li>En los elementos del panel de control: descarte todos los cambios o el trabajo en curso, vuelva al estado anterior y vuelva a la página central desde la que se inició la tarea. Si no hay ninguna página central de este tipo, cierre la ventana del elemento del panel de control en su lugar.</li></ul> | <ul><li>Use cuando se puedan descartar todos los cambios o acciones pendientes y se pueda deshacer cualquier efecto secundario.</li><li>Para los cambios que no se pueden descartar, use Cerrar. Para las acciones en curso que se pueden detener, use Detener. Si inicialmente se pueden descartar cambios o acciones, puede usar Cancelar inicialmente y, después, cambiar a Cerrar o Detener una vez que no se pueda deshacer.</li></ul> | Esc<br /> | 
-| <strong>Cerrar</strong><br /> | Cierre la ventana. Los cambios o efectos secundarios no se descartan.<br /> | <ul><li>Use cuando no se puedan descartar los cambios o efectos secundarios. Use Cerrar en lugar de Cancelar para las ventanas principales.</li><li>Use para ventanas en las que los usuarios no puedan realizar cambios.</li></ul> | Alt+F4, Ctrl+F4<br /> | 
-| <strong>Detención</strong><br /> | Detenga una tarea en ejecución y cierre la ventana. No se descartan los trabajos en curso ni los efectos secundarios.<br /> | <ul><li>Use cuando el trabajo esté en curso y los efectos secundarios no se puedan descartar o no, normalmente con barras de progreso o animaciones.</li></ul> | Esc<br /> | 
+| <strong>OK (CORRECTO)</strong><br /> | <ul><li>En los cuadros de diálogo: aplique los cambios o confirme en la tarea y cierre la ventana.</li><li>En las ventanas de propiedades de propietario: aplique los cambios pendientes (realizados desde que se abrió la ventana o la última vez que se apliquen) y cierre la ventana.</li><li>En ventanas de propiedades propias: mantenga los cambios, cierre la ventana y aplique los cambios cuando se apliquen los cambios de la ventana propietaria.</li></ul> | <ul><li>Se usa con ventanas que no son específicas de tareas, como hojas de propiedades.</li><li>En el caso de las ventanas que se usan para realizar una tarea específica, use una etiqueta específica en su lugar que comience con un verbo (ejemplo: Imprimir).</li><li>Para ventanas en las que los usuarios no pueden realizar cambios, use Cerrar.</li></ul> | Escriba<br /> | 
+| <strong>Sí/No</strong><br /> | Sí es la respuesta afirmativa a una pregunta sí o ninguna, mientras que No es la respuesta negativa.<br /> | <ul><li>Use los botones Sí y No solo para responder a preguntas sí o ninguna. No use nunca Ok (Aceptar) y Cancel (Cancelar) para preguntas sí o ninguna.</li><li>Prefiere respuestas específicas sobre los botones Sí y No. Aunque no hay ningún problema con el uso de Sí y No, las respuestas específicas se pueden entender más rápidamente, lo que da lugar a una toma de decisiones eficaz.</li><li>Sin embargo, considere la posibilidad de usar respuestas Sí y No si la expresión de respuestas específicas resulta larga o difícil.</li><li>No use los botones Sí y No si el significado de la respuesta No es claro. Si es así, use respuestas específicas en su lugar.</li><li>Sí y No siempre se deben usar como un par.</li></ul> | Y and N<br /> | 
+| <strong>Cancelar</strong><br /> | <ul><li>En los cuadros de diálogo: descarte todos los cambios o el trabajo en curso, vuelva al estado anterior (sin ningún efecto secundario perceptible) y cierre la ventana.</li><li>En hojas de propiedades: descarte todos los cambios pendientes (realizados desde que se abrió la ventana o la última aplicación) y cierre la ventana.</li><li>En los elementos del panel de control: descarte todos los cambios o el trabajo en curso, vuelva al estado anterior y vuelva a la página central desde la que se inició la tarea. Si no hay ninguna página central de este tipo, cierre la ventana de elementos del panel de control en su lugar.</li></ul> | <ul><li>Use cuando se puedan descartar todos los cambios o acciones pendientes y se pueda deshacer cualquier efecto secundario.</li><li>Para los cambios que no se pueden descartar, use Cerrar. Para las acciones en curso que se pueden detener, use Detener. Si inicialmente se pueden descartar cambios o acciones, puede usar Cancelar inicialmente y, a continuación, cambiar a Cerrar o Detener una vez que no se pueda deshacer.</li></ul> | Esc<br /> | 
+| <strong>Cerrar</strong><br /> | Cierre la ventana. Los cambios o efectos secundarios no se descartan.<br /> | <ul><li>Use cuando no se puedan descartar los cambios o los efectos secundarios. Use Cerrar en lugar de Cancelar para las ventanas principales.</li><li>Se usa para ventanas en las que los usuarios no pueden realizar cambios.</li></ul> | Alt+F4, Ctrl+F4<br /> | 
+| <strong>Detención</strong><br /> | Detenga una tarea en ejecución actualmente y cierre la ventana. No se descartan los trabajos en curso ni los efectos secundarios.<br /> | <ul><li>Use cuando el trabajo en curso y los efectos secundarios no se puedan descartar o no, normalmente con barras de progreso o animaciones.</li></ul> | Esc<br /> | 
 | <strong>Aplicar</strong><br /> | En las hojas de propiedades del propietario: aplique los cambios pendientes (realizados desde que se abrió la ventana o la última vez que se apliquen), pero deje la ventana abierta. Esto permite a los usuarios evaluar los cambios antes de cerrar la hoja de propiedades. En hojas de propiedades de propiedad: no use.<br /> | <ul><li>Use solo en hojas de propiedades.</li><li>Proporcione un botón Aplicar solo si la hoja de propiedades tiene valores (al menos uno) con efectos que los usuarios pueden evaluar de forma significativa. Normalmente, los botones Aplicar se usan cuando la configuración realiza cambios visibles. Los usuarios deben poder aplicar un cambio, evaluarlo y realizar más cambios en función de esa evaluación. Si no es así, quite el botón Aplicar en lugar de deshabilitarlo.</li></ul> | A<br /> | 
-| <strong>Siguiente</strong><br /> | En asistentes y tareas de varios pasos: avance al paso siguiente sin confirmar la tarea.<br /> | <ul><li>Use solo en asistentes y tareas de varios pasos para avanzar al paso siguiente sin compromiso.</li><li>El efecto de un botón Siguiente siempre se puede deshacer haciendo clic en Atrás.</li></ul> | N<br /> | 
-| <strong>Finalizar</strong><br /> | En asistentes y tareas de varios pasos: cierre la ventana. Si la tarea aún no se ha realizado, realice la tarea. Si esa tarea ya se ha realizado, no se descartan los cambios o efectos secundarios.<br /> | <ul><li>Use solo en asistentes y tareas de varios pasos. Sin embargo, se desaconseja el uso de Finish porque normalmente hay un botón de confirmación mejor y más específico:<ul><li>Si al hacer clic en el botón se confirma en la tarea (por lo que la tarea aún no se ha realizado), use una etiqueta específica que comience con un verbo (ejemplos: Imprimir, Conectar, Iniciar) que sea una respuesta a la instrucción principal.</li><li>Si la tarea ya se ha realizado en el asistente, use Cerrar en su lugar.</li></ul></li><li>Sin embargo, puede usar Finalizar cuando:<ul><li>La etiqueta específica sigue siendo genérica, como Guardar, Seleccionar, Elegir u Obtener.</li><li>La tarea implica cambiar una configuración o una colección de valores.</li></ul></li></ul> | Entrar<br /> | 
-| <strong>Listo</strong><br /> | No es aplicable.<br /> | <ul><li>No lo use. La realización de un comando es gramaticalmente incorrecta.</li></ul> | No es aplicable.<br /> | 
+| <strong>Siguiente</strong><br /> | En asistentes y tareas de varios pasos: avance al paso siguiente sin confirmar la tarea.<br /> | <ul><li>Use solo en asistentes y tareas de varios pasos para avanzar al paso siguiente sin compromiso.</li><li>El efecto de un botón Siguiente siempre se puede deshacer haciendo clic en Atrás.</li></ul> | No<br /> | 
+| <strong>Finalizar</strong><br /> | En asistentes y tareas de varios pasos: cierre la ventana. Si la tarea aún no se ha realizado, realice la tarea. Si esa tarea ya se ha realizado, los cambios o efectos secundarios no se descartan.<br /> | <ul><li>Use solo en asistentes y tareas de varios pasos. Sin embargo, se desaconseja el uso de Finalizar porque normalmente hay un botón de confirmación mejor y más específico:<ul><li>Si al hacer clic en el botón se confirma en la tarea (por lo que la tarea aún no se ha realizado), use una etiqueta específica que comience por un verbo (ejemplos: Imprimir, Conectar, Iniciar) que sea una respuesta a la instrucción principal.</li><li>Si la tarea ya se ha realizado en el asistente, use Cerrar en su lugar.</li></ul></li><li>Sin embargo, puede usar Finalizar cuando:<ul><li>La etiqueta específica sigue siendo genérica, como Guardar, Seleccionar, Elegir u Obtener.</li><li>La tarea implica cambiar una configuración o una colección de configuraciones.</li></ul></li></ul> | Escriba<br /> | 
+| <strong>Listo</strong><br /> | No aplicable.<br /> | <ul><li>No lo use. Hecho como un comando es gramaticalmente incorrecto.</li></ul> | No aplicable.<br /> | 
 
 
 

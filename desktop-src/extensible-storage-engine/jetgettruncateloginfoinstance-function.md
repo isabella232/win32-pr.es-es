@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 4123b64143e34bb316d94e367b2af26e3e3481ba
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962784"
 ---
 # <a name="jetgettruncateloginfoinstance-function"></a>JetGetTruncateLogInfoInstance (Función)
 
@@ -105,7 +105,7 @@ Esta API no devuelve un error o una advertencia si el búfer de salida es demasi
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetGetTruncateLogInfoInstanceW</strong> (Unicode) y <strong>JetGetTruncateLogInfoInstanceA</strong> (ANSI).</p> | 
 
 

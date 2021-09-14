@@ -4,16 +4,16 @@ ms.assetid: 22b1eb48-e1ef-4694-a1dc-b2de326989c8
 title: Método ITMediaCollection::get__NewEnum (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 759ac5a36324e80e4f2ef3ab49f7e8617aa5d3f5faecb61ca7f8c2de82827354
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6683ce0a00f0128cb959dd5a2c39e8b06382f65d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119682685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160656"
 ---
 # <a name="itmediacollectionget__newenum-method"></a>ItMediaCollection::get \_ \_ NewEnum (método)
 
-\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 El **método get \_ \_ NewEnum** devuelve un enumerador para la colección.
 
@@ -61,7 +61,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método es intercambiable con [**get \_ EnumerationIf, salvo**](itmediacollection-get-enumerationif.md) que devuelve **IUnknown en** lugar de [**IEnumMedia.**](ienummedia.md)
 
@@ -69,16 +69,16 @@ Este método es intercambiable con [**get \_ EnumerationIf, salvo**](itmediacoll
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

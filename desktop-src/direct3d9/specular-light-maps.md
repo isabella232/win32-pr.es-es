@@ -4,12 +4,12 @@ ms.assetid: cea53131-1e2e-4389-80fd-ef5a0d068703
 title: Specular Light Mapas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05362eb4c0b79ebb980a6c0acb1607713765a446c0ef27823ae0e648cef88d68
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d55b4bf34baae0e73c2d072d62470533fc99827a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120026105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160434"
 ---
 # <a name="specular-light-maps-direct3d-9"></a>Specular Light Mapas (Direct3D 9)
 

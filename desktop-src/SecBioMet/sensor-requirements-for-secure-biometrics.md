@@ -4,12 +4,12 @@ description: Requisitos del sensor para la biométrica segura
 ms.assetid: 6D5709E9-7B6B-4D6C-BF85-C6FB5DF5A7EE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba76ee3b114f79d3c60adfa252f59cd2b8f98aa135e50faf93cf5ecf7314ad99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82f4e41f8300a124115c2b6cd380f904f216f491
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118911797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160807"
 ---
 # <a name="sensor-requirements-for-secure-biometrics"></a>Requisitos del sensor para la biométrica segura
 
@@ -19,7 +19,7 @@ Para ello, usamos autorizaciones basadas en sesión de TPM 2.0 y el sensor que r
 
 Para realizar una autenticación, el Windows Biometric Framework abre una sesión con el TPM y obtiene un nonce. El nonce se pasa al sensor seguro como parte de una operación de coincidencia segura. El sensor realiza la coincidencia en el entorno de ejecución de confianza y, si se realiza correctamente, calcula un HMAC sobre ese valor nonce y la identidad del usuario que se identificó.
 
-El marco biométrico de Windows puede usar este HMAC para realizar operaciones criptográficas en el TPM para el usuario identificado. El HMAC es de corta duración y expira después de unos segundos.
+Este HMAC lo puede usar el Windows Biometric Framework para realizar operaciones criptográficas en el TPM para el usuario que se identificó. El HMAC es de corta duración y expira después de unos segundos.
 
 Con este protocolo, después del aprovisionamiento inicial, no se incluye ningún dato confidencial en el sistema operativo. El TPM y el sensor seguro mantienen secretos, y lo único que se expone durante la autenticación es el HMAC de corta duración.
 

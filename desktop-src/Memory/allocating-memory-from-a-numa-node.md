@@ -4,12 +4,12 @@ ms.assetid: df025b35-fb6b-4987-806e-9c76e6b130a1
 title: Asignación de memoria desde un nodo NUMA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7d6f845b5b071b48561c18aab81848bee1bb36675bff1ca2f634b46c291f066
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d5eb4a9af260c9d8b28a6bf83fa37744a85d5d4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159897"
 ---
 # <a name="allocating-memory-from-a-numa-node"></a>Asignación de memoria desde un nodo NUMA
 
