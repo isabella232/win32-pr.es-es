@@ -10,11 +10,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ee7237afb37b30ccf8c96ddac95f0e81e148703d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967587"
 ---
 # <a name="listcsv"></a>list.csv
 
@@ -27,7 +27,7 @@ La columna Formato de la tabla siguiente describe la forma en que se formatea ca
 
 | Campo | Requerido | Formato | Descripción | 
 |-------|----------|--------|-------------|
-| ListID | Sí | Entero no negativo. | Identificador de lista, único en list.csv. Debe ser no negativo y menor que 2^32. <strong>Mostrar un nodo de lista en el control de vista de árbol:</strong> Si listID es 0, 1, 2, 3, 4, 5, 6 o 7, la lista aparecerá como un nodo personalizado en el nodo de nivel superior de la tienda en línea en el control de vista de árbol del reproductor. Los nodos personalizados aparecen delante de los nodos estándar en el nodo de nivel superior del almacén en línea y listID los coloca en orden ascendente. Por ejemplo, si hay tres nodos personalizados, con listIDs de 1, 3 y 5, se mostrarán primero, segundo y tercero bajo el nodo de nivel superior de la tienda en línea.<br /> | 
+| ListID | Sí | Entero no negativo. | Identificador de lista, único dentro de list.csv. Debe ser no negativo y menor que 2^32. <strong>Mostrar un nodo de lista en el control de vista de árbol:</strong> Si listID es 0, 1, 2, 3, 4, 5, 6 o 7, la lista aparecerá como un nodo personalizado en el nodo de nivel superior de la tienda en línea en el control de vista de árbol del reproductor. Los nodos personalizados aparecen delante de los nodos estándar en el nodo de nivel superior del almacén en línea y listID los coloca en orden ascendente. Por ejemplo, si hay tres nodos personalizados, con listIDs de 1, 3 y 5, se mostrarán primero, segundo y tercero bajo el nodo de nivel superior de la tienda en línea.<br /> | 
 | ListTitle | No | Cadena Unicode. Ejemplo: Diez aciertos principales<br /> | Título de la lista. | 
 | ListSubtitle | No | Cadena de Unicode | Muestra el título alternativo, que se muestra en la segunda línea de la vista Icono. | 
 | ListDescription | Sí | Cadena de Unicode | Enumerar texto descriptivo para mostrar (que se muestra en las páginas de propiedades). | 

@@ -4,7 +4,7 @@ description: El método CleanDataStore inicia el proceso de limpieza del almacé
 ms.assetid: aad99137-6d2b-4612-8014-9783035af929
 keywords:
 - Método CleanDataStore windows Media Administrador de dispositivos
-- Método CleanDataStore windows Media Administrador de dispositivos interfaz , IWMDRMDevice
+- Método CleanDataStore de Windows Media Administrador de dispositivos , interfaz IWMDRMDevice
 - Interfaz IWMDRMDevice windows Media Administrador de dispositivos , método CleanDataStore
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9decc999d1ecb6c97359d1c4c169b84e7f67da88f5fa25bfe2cb17b2c31f9fd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5aed9608a7428245edd84602ea5e7252861d938
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119766645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967844"
 ---
 # <a name="iwmdrmdevicecleandatastore-method"></a>IWMDRMDevice::CleanDataStore (método)
 
@@ -75,11 +75,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IWMDRMDevice (interfaz)**](iwmdrmdevice.md)
+[**Interfaz IWMDRMDevice**](iwmdrmdevice.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5dcb53be16f2a3422e88328561f9cb2a9613b1ee3860ad8a23cf922d01afd9aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d18dcbfee95b1e8c96c3074efe41ae3769b8e1a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119647025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967340"
 ---
 # <a name="onmousemove"></a>Onmousemove
 
@@ -28,7 +28,7 @@ El **controlador de eventos onmousemove** controla un evento que se produce cuan
 onmousemove
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **elemento VIDEO** cuando *VIDEO*. **windowless** es false o el elemento **EFFECTS** cuando *EFFECTS*. **windowed** es true.
 
@@ -36,13 +36,13 @@ Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **eleme
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -11,12 +11,12 @@ keywords:
 - Ejemplo de complemento DSP de eco, recurso de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d37dc88fe2c1b85dfc08727a00e744f1c5c16a2f25a4c5d429b2ab13898b0fcb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09caa800376a7962a11912bc582a091f0de52c16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967468"
 ---
 # <a name="modifying-the-echo-dialog-resource"></a>Modificar el recurso del cuadro de diálogo Eco
 
@@ -127,7 +127,7 @@ A continuación, agregue un nuevo recurso de cadena para el mensaje de error de 
 
 4.  Cierre el cuadro de diálogo Propiedades de cadena .
 
-Hay otros dos valores que deseará cambiar en la tabla de cadenas. IDS FRIENDLYNAME es el nombre que aparece en la Reproductor de Windows Media \_ de usuario para identificar el complemento. IDS \_ DESCRIPTION le permite decir al usuario sobre el complemento. Ambas cadenas se pasan como parámetros a la función **IWMPMediaPluginRegistrar::WMPRegisterPlayerPlugin,** a la que se llama en el método DllRegisterServer de Echodll.cpp.
+Hay otros dos valores que deseará cambiar en la tabla de cadenas. IDS FRIENDLYNAME es el nombre que aparece en la interfaz \_ Reproductor de Windows Media usuario para identificar el complemento. IDS \_ DESCRIPTION le permite decir al usuario sobre el complemento. Ambas cadenas se pasan como parámetros a la función **IWMPMediaPluginRegistrar::WMPRegisterPlayerPlugin,** a la que se llama en el método DllRegisterServer de Echodll.cpp.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f08494ccde9b0a25d7f862580c3ff1d828b7502c902fc101f16e0960d322163
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bf41d3d309069f5b5891597fd3b5c898cc18063
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119870195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968100"
 ---
 # <a name="msrdpclient-class"></a>Clase MsRdpClient
 
@@ -53,7 +53,7 @@ La **clase MsRdpClient** tiene estos métodos.
 | [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)                             | Crea un objeto de canal virtual del lado cliente para cada nombre de canal virtual especificado.<br/>                                                                                                                                                                                              |
 | [**Desconectar**](imstscax-disconnect.md)                                                   | Desconecta la conexión activa.<br/>                                                                                                                                                                                                                                                 |
 | [**GetVirtualChannelOptions**](imsrdpclient-getvirtualchanneloptions.md)                   | Recupera las opciones establecidas para un canal virtual.<br/>                                                                                                                                                                                                                                   |
-| [**NotifyRedirectDeviceChange**](imsrdpclientnonscriptable-notifyredirectdevicechange.md)  | Notifica al módulo de redirección de dispositivos Escritorio remoto ActiveX control que se ha producido un cambio de dispositivo en el sistema. Este método pasa [**notificaciones DE WM \_ DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) al control .<br/>                                                        |
+| [**NotifyRedirectDeviceChange**](imsrdpclientnonscriptable-notifyredirectdevicechange.md)  | Notifica al módulo de redirección de dispositivos Escritorio remoto ActiveX control que se ha producido un cambio de dispositivo en el sistema. Este método pasa [**notificaciones \_ DE WM DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) al control .<br/>                                                        |
 | [**OnAuthenticationWarningDismissed**](imstscaxevents-onauthenticationwarningdismissed.md) | Se llama después de ActiveX control muestra un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo de error de certificado).<br/>                                                                                                                                                             |
 | [**OnAuthenticationWarningDisplayed**](imstscaxevents-onauthenticationwarningdisplayed.md) | Se llama antes de ActiveX control muestra un cuadro de diálogo de autenticación (por ejemplo, el cuadro de diálogo de error de certificado).<br/>                                                                                                                                                            |
 | [**OnAutoReconnected**](imstscaxevents-onautoreconnected.md)                               | Se llama cuando el control de cliente se vuelve a conectar automáticamente a una sesión remota.<br/>                                                                                                                                                                                                  |
@@ -106,29 +106,29 @@ La **clase MsRdpClient** tiene estas propiedades.
 |:-------------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AdvancedSettings**](imstscax-advancedsettings.md)<br/>                     | Solo lectura<br/>  | Puntero [**de interfaz IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md)<br/>                                                                       |
 | [**AdvancedSettings2**](imsrdpclient-advancedsettings2.md)<br/>               | Solo lectura<br/>  | Puntero a la [**interfaz IMsRdpClientAdvancedSettings,**](imsrdpclientadvancedsettings-interface.md) que se usa para establecer la configuración avanzada para el control de cliente.<br/> |
-| [**BinaryPassword**](imstscnonscriptable-binarypassword.md)<br/>              | Lectura/escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
-| [**BinarySalt**](imstscnonscriptable-binarysalt.md)<br/>                      | Lectura/escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
+| [**BinaryPassword**](imstscnonscriptable-binarypassword.md)<br/>              | Lectura y escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
+| [**BinarySalt**](imstscnonscriptable-binarysalt.md)<br/>                      | Lectura y escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
 | [**CipherStrength**](imstscax-cipherstrength.md)<br/>                         | Solo lectura<br/>  | La intensidad de cifrado máxima del control actual.<br/>                                                                                                        |
-| [**ClearTextPassword**](imstscnonscriptable-cleartextpassword.md)<br/>        | Solo escritura<br/> | El Escritorio remoto ActiveX contraseña de control, en formato de texto no cifrado.<br/>                                                                                              |
-| [**Colordepth**](imsrdpclient-colordepth.md)<br/>                             | Lectura/escritura<br/> | Profundidad de color del control actual.<br/>                                                                                                                            |
+| [**ClearTextPassword**](imstscnonscriptable-cleartextpassword.md)<br/>        | Solo escritura<br/> | La Escritorio remoto ActiveX de control, en formato de texto no cifrado.<br/>                                                                                              |
+| [**Colordepth**](imsrdpclient-colordepth.md)<br/>                             | Lectura y escritura<br/> | Profundidad de color del control actual.<br/>                                                                                                                            |
 | [**Conectado**](imstscax-connected.md)<br/>                                   | Solo lectura<br/>  | Estado de conexión del control actual.<br/>                                                                                                                   |
-| [**ConnectingText**](imstscax-connectingtext.md)<br/>                         | Lectura/escritura<br/> | Texto que aparece centrado en el control mientras se conecta el control.<br/>                                                                                 |
-| [**DesktopHeight**](imstscax-desktopheight.md)<br/>                           | Lectura/escritura<br/> | Alto del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                        |
-| [**DesktopWidth**](imstscax-desktopwidth.md)<br/>                             | Lectura/escritura<br/> | Ancho del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                         |
-| [**DisconnectedText**](imstscax-disconnectedtext.md)<br/>                     | Lectura/escritura<br/> | Texto que aparece centrado en el control antes de finalizar una conexión.<br/>                                                                               |
-| [**Domain**](imstscax-domain.md)<br/>                                         | Lectura/escritura<br/> | Dominio en el que el usuario actual inicia sesión.<br/>                                                                                                                  |
+| [**ConnectingText**](imstscax-connectingtext.md)<br/>                         | Lectura y escritura<br/> | Texto que aparece centrado en el control mientras se conecta el control.<br/>                                                                                 |
+| [**DesktopHeight**](imstscax-desktopheight.md)<br/>                           | Lectura y escritura<br/> | Alto del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                        |
+| [**DesktopWidth**](imstscax-desktopwidth.md)<br/>                             | Lectura y escritura<br/> | Ancho del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                         |
+| [**DisconnectedText**](imstscax-disconnectedtext.md)<br/>                     | Lectura y escritura<br/> | Texto que aparece centrado en el control antes de finalizar una conexión.<br/>                                                                               |
+| [**Dominio**](imstscax-domain.md)<br/>                                         | Lectura y escritura<br/> | Dominio en el que el usuario actual inicia sesión.<br/>                                                                                                                  |
 | [**ExtendedDisconnectReason**](imsrdpclient-extendeddisconnectreason.md)<br/> | Solo lectura<br/>  | Información ampliada sobre el motivo de desconexión del control de cliente.<br/>                                                                                      |
-| [**Fullscreen**](imsrdpclient-fullscreen.md)<br/>                             | Lectura/escritura<br/> | Indica si el control está en modo de pantalla completa.<br/>                                                                                                          |
+| [**Fullscreen**](imsrdpclient-fullscreen.md)<br/>                             | Lectura y escritura<br/> | Indica si el control está en modo de pantalla completa.<br/>                                                                                                          |
 | [**FullScreenTitle**](imstscax-fullscreentitle.md)<br/>                       | Solo escritura<br/> | Título de la ventana que se muestra cuando el control está en modo de pantalla completa.<br/>                                                                                            |
 | [**HorizontalScrollBarVisible**](imstscax-horizontalscrollbarvisible.md)<br/> | Solo lectura<br/>  | Indica si el control ha mostrado una barra de desplazamiento horizontal.<br/>                                                                                           |
-| [**PortablePassword**](imstscnonscriptable-portablepassword.md)<br/>          | Lectura/escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
-| [**PortableSalt**](imstscnonscriptable-portablesalt.md)<br/>                  | Lectura/escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
+| [**PortablePassword**](imstscnonscriptable-portablepassword.md)<br/>          | Lectura y escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
+| [**PortableSalt**](imstscnonscriptable-portablesalt.md)<br/>                  | Lectura y escritura<br/> | Esta propiedad no es compatible.<br/>                                                                                                                                |
 | [**SecuredSettings**](imstscax-securedsettings.md)<br/>                       | Solo lectura<br/>  | Puntero [**de interfaz IMsTscSecuredSettings.**](imstscsecuredsettings-interface.md)<br/>                                                                          |
 | [**SecuredSettings2**](imsrdpclient-securedsettings2.md)<br/>                 | Solo lectura<br/>  | Puntero a la [**interfaz IMsRdpClientSecuredSettings,**](imsrdpclientsecuredsettings-interface.md) que se usa para establecer la configuración segura para el control de cliente.<br/>    |
 | [**SecuredSettingsEnabled**](imstscax-securedsettingsenabled.md)<br/>         | Solo lectura<br/>  | Indica si la [**interfaz IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponible.<br/>                                                 |
-| [**Servidor**](imstscax-server.md)<br/>                                         | Lectura/escritura<br/> | Nombre del servidor al que está conectado el control actual.<br/>                                                                                              |
-| [**StartConnected**](imstscax-startconnected.md)<br/>                         | Lectura/escritura<br/> | Indica si el control establecerá la conexión del servidor host de sesión de Escritorio remoto inmediatamente después del inicio.<br/>                                                   |
-| [**nombre de usuario**](imstscax-username.md)<br/>                                     | Lectura/escritura<br/> | Credencial de inicio de sesión de nombre de usuario.<br/>                                                                                                                                |
+| [**Servidor**](imstscax-server.md)<br/>                                         | Lectura y escritura<br/> | Nombre del servidor al que está conectado el control actual.<br/>                                                                                              |
+| [**StartConnected**](imstscax-startconnected.md)<br/>                         | Lectura y escritura<br/> | Indica si el control establecerá la conexión del servidor host de sesión de Escritorio remoto inmediatamente después del inicio.<br/>                                                   |
+| [**Nombre de usuario**](imstscax-username.md)<br/>                                     | Lectura y escritura<br/> | Credencial de inicio de sesión de nombre de usuario.<br/>                                                                                                                                |
 | [**Versión**](imstscax-version.md)<br/>                                       | Solo lectura<br/>  | Número de versión del control actual.<br/>                                                                                                                     |
 | [**VerticalScrollBarVisible**](imstscax-verticalscrollbarvisible.md)<br/>     | Solo lectura<br/>  | Indica si el control muestra una barra de desplazamiento vertical.<br/>                                                                                                  |
 
@@ -150,7 +150,7 @@ La **clase MsRdpClient** tiene estas propiedades.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

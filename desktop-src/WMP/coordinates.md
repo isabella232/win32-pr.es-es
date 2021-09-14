@@ -10,23 +10,23 @@ keywords:
 - coordenadas en mapas de bits en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3bdcde6edb7646b649317c09880b09a26a3ec3748c3f111a28491932caf3683
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ec50f0a3d02e42ad3995bb0919fb97dac319a5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117750597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967672"
 ---
 # <a name="coordinates"></a>Coordenadas
 
-Esto define las coordenadas x e y de la imagen con respecto al archivo de fondo. Se requieren dos enteros positivos, separados por una coma. Hay dos tipos de coordenadas que debe usar, en función del tipo de imagen que defina. En la tabla siguiente se muestran los valores de coordenadas permitidos para los tipos de mapa de bits.
+Esto define las coordenadas x e y de la imagen en relación con el archivo de fondo. Se requieren dos enteros positivos, separados por una coma. Hay dos tipos de coordenadas que debe usar, en función del tipo de imagen que defina. En la tabla siguiente se muestran los valores de coordenadas permitidos para los tipos de mapa de bits.
 
 
 
 | Tipo de mapa de bits               | Valores de coordenadas                                                             |
 |---------------------------|-------------------------------------------------------------------------------|
 | Fondo o Super       | 0,0                                                                           |
-| Deshabilitado, inserción o región | Esquina superior izquierda de la imagen con respecto a la imagen de fondo, en píxeles. |
+| Deshabilitado, Inserción o Región | Esquina superior izquierda de la imagen con respecto a la imagen de fondo, en píxeles. |
 
 
 

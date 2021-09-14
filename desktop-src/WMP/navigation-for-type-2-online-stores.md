@@ -9,12 +9,12 @@ keywords:
 - navegar por las tiendas en línea de tipo 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e89acd7bc0881064a30270709e02c12982b7633dd99b0aa5de816bf2e2172eb4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1cfb75b09a55f8c6178622388d957dd2b528bae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118574377"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967451"
 ---
 # <a name="navigation-for-type-2-online-stores"></a>Navegación para almacenes en línea de tipo 2
 

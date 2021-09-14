@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3725ef2ea1c3a2c84bb5d087527b0370fff6385e0638e764f1180ff756712130
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 900943a30295631dafcb49a5fe866e3728c22a11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119967165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882569"
 ---
 # <a name="windows7grbits-class"></a>Clase Windows7Grbits
 
-Grbits que se han agregado a la versión Windows 7 de ESENT.
+Grbits que se han agregado a la Windows 7 de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -43,7 +43,7 @@ Grbits que se han agregado a la versión Windows 7 de ESENT.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -60,7 +60,7 @@ public static class Windows7Grbits
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

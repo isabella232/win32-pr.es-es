@@ -1,6 +1,6 @@
 ---
 title: onfocus
-description: El controlador de eventos onfocus controla un evento que tiene lugar cuando el elemento recibe el foco del teclado.
+description: El controlador de eventos onfocus controla un evento que se produce cuando el elemento recibe el foco del teclado.
 ms.assetid: 02162494-cd80-4854-b75c-35b5e9891b0b
 keywords:
 - onfocus Reproductor de Windows Media
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e794187a8aa1119200bc31e8849f3172fcd472736c9c3e9bfc08604f23b222ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14b6dd9f2ad61e24e83c9e4300c9fdd4c91fa762
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119647185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967352"
 ---
 # <a name="onfocus"></a>onfocus
 
-El **controlador de eventos onfocus** controla un evento que tiene lugar cuando el elemento recibe el foco del teclado.
+El **controlador de eventos onfocus** controla un evento que se produce cuando el elemento recibe el foco del teclado.
 
 ``` syntax
 onfocus
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **controlador de eventos onfocus** no es aplicable al elemento **EFFECTS** ni al **elemento POPUP.**
 
@@ -36,13 +36,13 @@ El **controlador de eventos onfocus** no es aplicable al elemento **EFFECTS** ni
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

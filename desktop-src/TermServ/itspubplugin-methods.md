@@ -1,18 +1,18 @@
 ---
-title: Métodos ItsPubPlugin
+title: Métodos de ItsPubPlugin
 description: La interfaz ItsPubPlugin expone los métodos siguientes.
 ms.assetid: F62784D1-0563-43A1-AD1E-825EAD1D39E8
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5223eb479e7f09f077def0ae45c266537b68ab898e9620b62269dd577fcdc1fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09a8fcb71f59e4d7f05992dd918521fa980b07d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118128715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968168"
 ---
-# <a name="itspubplugin-methods"></a>Métodos ItsPubPlugin
+# <a name="itspubplugin-methods"></a>Métodos de ItsPubPlugin
 
 La [**interfaz ItsPubPlugin**](/windows/desktop/api/tspubplugincom/nn-tspubplugincom-itspubplugin) expone los métodos siguientes.
 

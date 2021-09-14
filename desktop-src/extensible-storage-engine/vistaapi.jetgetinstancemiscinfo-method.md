@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f0e8532d46556bb2d36bff822ce1e68ffe48ab633df925ae26b2ba24e9023417
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 204beee343a717d5b45d8003e123bbbe186437d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119471275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882612"
 ---
 # <a name="vistaapijetgetinstancemiscinfo-method"></a>Método VistaApi.JetGetInstanceMiscInfo
 
@@ -83,7 +83,7 @@ public static void JetGetInstanceMiscInfo(
     
     Tipo de información que se recuperará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -11,12 +11,12 @@ keywords:
 - registrar proveedores de servicios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f480fff04d34cf671bdc37e3bcded92c73f20d31d2fb67e4d6e41593a724d392
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1226b724b06990fc1e000a522e3a61672789cf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118584305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967787"
 ---
 # <a name="registering-the-service-provider"></a>Registro del proveedor de servicios
 
@@ -24,7 +24,7 @@ Además de registrarse como un objeto COM, un proveedor de servicios debe regist
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Device Manager\Plugins\SP\<             `
 
-En esta clave, < *nombre del* proveedor de > es el nombre del archivo DLL; Por ejemplo, el proveedor de servicios de ejemplo usa MsHDSP. La clave ProgID debe tener un valor de cadena que corresponda al CLSID del proveedor de servicios. Por ejemplo, el proveedor de servicios de ejemplo tiene el valor "MDServiceProviderHD.MDServiceProviderHD".
+En esta clave, < *nombre del* proveedor de servicios > es el nombre del archivo DLL; Por ejemplo, el proveedor de servicios de ejemplo usa MsHDSP. La clave ProgID debe tener un valor de cadena que se corresponda con el CLSID del proveedor de servicios. Por ejemplo, el proveedor de servicios de ejemplo tiene el valor "MDServiceProviderHD.MDServiceProviderHD".
 
 La implementación del proveedor de servicios de ejemplo de DLLRegisterServer en Mdsp.cpp agrega esta clave del Registro al registrar el archivo DLL del proveedor de servicios de ejemplo.
 

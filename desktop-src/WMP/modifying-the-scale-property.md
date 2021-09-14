@@ -6,22 +6,22 @@ keywords:
 - Reproductor de Windows Media complementos, propiedades de ejemplo de eco
 - complementos, propiedades de ejemplo de eco
 - complementos de procesamiento de señales digitales, propiedades de ejemplo de eco
-- Complementos DE DSP, propiedades de ejemplo de eco
-- Ejemplo de complemento DSP de eco, propiedad de escala
+- Complementos de DSP, propiedades de ejemplo de eco
+- Ejemplo de complemento DSP de eco, propiedad scale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b10073e01213469dcb6a85ddffd378421fddb6ae8f2fd432b9822c3a5046fdd5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd91e2315db9d0d1e14d2aec55f79a8b05c442ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118574622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967463"
 ---
 # <a name="modifying-the-scale-property"></a>Modificar la propiedad Scale
 
 La implementación predeterminada del asistente expone la propiedad scale. Puede cambiar la implementación existente para exponer la propiedad delay time en su lugar.
 
-En primer lugar, use el ejemplo siguiente para cambiar los prototipos de función para obtener escala y \_ colocar la escala en \_ Echo.h. Cambie el nombre de los métodos y los tipos de datos de los parámetros:
+En primer lugar, use el ejemplo siguiente para cambiar los prototipos de función para obtener escala \_ y colocar la escala en \_ Echo.h. Cambie el nombre de los métodos y los tipos de datos de los parámetros:
 
 
 ```C++
@@ -33,7 +33,7 @@ STDMETHOD(put_delay)(DWORD newVal);
 
 
 
-A continuación, cambie las implementaciones de los métodos get scale y \_ \_ scale en Echo.cpp. Haga que el código coincida con los ejemplos siguientes:
+A continuación, cambie las implementaciones de los métodos get \_ scale y scale en \_ Echo.cpp. Haga que el código coincida con los ejemplos siguientes:
 
 
 ```C++
@@ -62,7 +62,7 @@ STDMETHODIMP CEcho::put_delay(DWORD newVal)
 
 
 
-El código de ejemplo anterior cambia los nombres de método y los tipos de datos de parámetro. El nombre de la variable miembro debe haber cambiado anteriormente. No olvide cambiar los comentarios que introducen cada método también.
+El código de ejemplo anterior cambia los nombres de método y los tipos de datos de parámetro. El nombre de la variable miembro debe haber cambiado previamente. Recuerde cambiar también los comentarios que introducen cada método.
 
 Ahora, cambie la definición de la interfaz. El código siguiente reemplaza el código de la declaración de interfaz IEcho en Echo.idl:
 

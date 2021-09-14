@@ -8,18 +8,18 @@ keywords:
 - Reproductor de Windows Media complementos, conectarse
 - complementos, conectarse
 - complementos de procesamiento de señales digitales, conexión
-- Complementos de DSP, conexión
+- Complementos DE DSP, conexión
 - complementos de procesamiento de señales digitales, entradas del Registro
 - Complementos de DSP, entradas del Registro
 - registry,DSP plug-ins
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4d266f1715147d3c7631909e8e23e3e7b1f786337c998d188968a96f6c26b62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8fa0851e271631e2c37bf716c427b5af34ade14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967747"
 ---
 # <a name="connecting-to-windows-media-player"></a>Conexión a Reproductor de Windows Media
 

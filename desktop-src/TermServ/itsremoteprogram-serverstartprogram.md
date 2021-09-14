@@ -6,11 +6,11 @@ ms.tgt_platform: multiple
 keywords:
 - Método ServerStartProgram Servicios de Escritorio remoto
 - Método ServerStartProgram Servicios de Escritorio remoto , interfaz ITSRemoteProgram
-- Interfaz ITSRemoteProgram Servicios de Escritorio remoto , método ServerStartProgram
+- Interfaz ITSRemoteProgram Servicios de Escritorio remoto método , ServerStartProgram
 - Método ServerStartProgram Servicios de Escritorio remoto , interfaz ITSRemoteProgram2
-- Interfaz ITSRemoteProgram2 Servicios de Escritorio remoto , método ServerStartProgram
+- Interfaz ITSRemoteProgram2 Servicios de Escritorio remoto método , ServerStartProgram
 - Método ServerStartProgram Servicios de Escritorio remoto , interfaz ITSRemoteProgram3
-- Interfaz ITSRemoteProgram3 Servicios de Escritorio remoto , método ServerStartProgram
+- Interfaz ITSRemoteProgram3 Servicios de Escritorio remoto método , ServerStartProgram
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c789a9963086128e93546415247cfb3db69afe59c67a445b851ee5cf3687d16c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f18917eeb2eb3c60c1a35683b20f7e4604eddde
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117756861"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968143"
 ---
 # <a name="itsremoteprogramserverstartprogram-method"></a>Método ITSRemoteProgram::ServerStartProgram
 
-Especifica un programa RemoteApp que se iniciará en la sesión remota. Esta función debe invocarse en una sesión conectada (después de recibir la notificación conectada a la sesión en el cliente). Cualquier número de programas RemoteApp se puede iniciar en una sesión. Una sesión de RemoteApp se espera si no se inicia ningún programa RemoteApp en la sesión dentro del límite de tiempo de espera, que es de dos minutos para Windows Server 2008.
+Especifica un programa RemoteApp que se iniciará en la sesión remota. Esta función debe invocarse en una sesión conectada (después de que se reciba la notificación conectada de sesión en el cliente). Cualquier número de programas remoteApp se puede iniciar en una sesión. Una sesión de RemoteApp se tiempos de espera si no se inicia ningún programa RemoteApp en la sesión dentro del límite de tiempo de espera, que es de dos minutos para Windows Server 2008.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ Ruta de acceso del archivo ejecutable del programa RemoteApp en el servidor.
 *bstrFilePath* \[ En\]
 </dt> <dd>
 
-Ruta de acceso de un archivo que se abre en el servidor a través de una asociación de archivos, por ejemplo, "C: \\ \\ Documentos \\ \\MyReport.docx". Si especifica *bstrFilePath*, no debe especificar el *parámetro bstrExecutablePath* y viceversa. Solo debe especificar uno de los parámetros.
+Ruta de acceso de un archivo que se abre en el servidor mediante una asociación de archivos, por ejemplo "C: \\ \\ Documentos \\ \\MyReport.docx". Si especifica *bstrFilePath*, no debe especificar el *parámetro bstrExecutablePath* y viceversa. Solo debe especificar uno de los parámetros.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Indica si el servidor debe expandir las variables de entorno en la ruta de acces
 *bstrArguments* \[ En\]
 </dt> <dd>
 
-Argumentos de línea de comandos para el programa RemoteApp especificados en *bstrExecutablePath*. Establezca esta opción **en NULL** si no se especifica *bstrExecutablePath.*
+Argumentos de línea de comandos para el programa RemoteApp que se especifican en *bstrExecutablePath*. Establezca esta opción **en NULL** si no se especifica *bstrExecutablePath.*
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Devuelve **S \_ OK si** se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

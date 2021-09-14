@@ -1,6 +1,6 @@
 ---
 title: Método MoveUp de la Win32_TSGatewayRADIUSServer clase
-description: Mueve este servidor Servicio de autenticación remota telefónica de usuario (RADIUS) una posición hacia arriba en el orden de prioridad.
+description: Mueve esta Servicio de autenticación remota telefónica de usuario servidor (RADIUS) una posición hacia arriba en el orden de prioridad.
 ms.assetid: 060bb90d-72c0-4364-a44f-c6368434b174
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2850c587a9e610fd1e2b935f9a5d8ca0cb60f5b17054249db082dd67c656ee5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca93eee44abd147576c6e678dce871ae4d49d921
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118350661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968104"
 ---
 # <a name="moveup-method-of-the-win32_tsgatewayradiusserver-class"></a>Método MoveUp de la clase \_ TSGatewayRADIUSServer de Win32
 
-Mueve este servidor Servicio de autenticación remota telefónica de usuario (RADIUS) una posición hacia arriba en el orden de prioridad. Este método disminuye la propiedad **Priority** del servidor RADIUS actual e incrementa la propiedad **Priority** del servidor RADIUS que precede al servidor RADIUS actual.
+Mueve esta Servicio de autenticación remota telefónica de usuario servidor (RADIUS) una posición hacia arriba en el orden de prioridad. Este método disminuye la propiedad **Priority** del servidor RADIUS actual e incrementa la propiedad **Priority** del servidor RADIUS que precede al servidor RADIUS actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,9 +43,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
@@ -55,7 +55,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
@@ -65,7 +65,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

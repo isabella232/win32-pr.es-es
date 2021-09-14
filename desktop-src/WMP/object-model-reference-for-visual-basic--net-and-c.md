@@ -14,7 +14,7 @@ keywords:
 - Reproductor de Windows Media,Visual Basic .NET
 - Reproductor de Windows Media Mobile,Visual Basic .NET
 - Reproductor de Windows Media de objetos, Visual Basic .NET
-- object model,Visual Basic .NET
+- modelo de objetos, Visual Basic .NET
 - Reproductor de Windows Media ActiveX control, Visual Basic .NET
 - Reproductor de Windows Media Control de ActiveX móvil, Visual Basic .NET
 - ActiveX control, Visual Basic .NET
@@ -35,12 +35,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 720b9dc7755c383e4a4dfc657095524abb55ec726773c935071a773e09eb7df5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf17c796173abc03261555fda264bc3868bd1964
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119647295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967376"
 ---
 # <a name="object-model-reference-for-visual-basic-net-and-c"></a>Referencia del modelo de objetos Visual Basic .NET y C #
 
@@ -49,7 +49,7 @@ ms.locfileid: "119647295"
 
  
 
-En esta sección de referencia se proporciona documentación para el objeto **AxWindowsMediaPlayer** y para las interfaces del Reproductor de Windows Media ActiveX control. Esta funcionalidad está disponible cuando se usa el control Reproductor de Windows Media ActiveX a través de la interoperabilidad COM en una Visual Studio .NET 2002 o posterior.
+En esta sección de referencia se proporciona documentación para el objeto **AxWindowsMediaPlayer** y para las interfaces para Reproductor de Windows Media ActiveX control. Esta funcionalidad está disponible cuando se usa el control Reproductor de Windows Media ActiveX a través de la interoperabilidad COM en una Visual Studio .NET 2002 o posterior.
 
 Para obtener una demostración del uso del control Reproductor de Windows Media con el .NET Framework, consulte los ejemplos de Visual Basic y C# incluidos con este SDK.
 
@@ -65,7 +65,7 @@ En las secciones siguientes se documentan Visual Basic objetos e interfaces de .
 | Sección                                                                                | Descripción                                                                                                                    |
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | [Objeto AxWindowsMediaPlayer (VB y C#)](axwindowsmediaplayer-object--vb-and-c.md)  | Enumera las propiedades, métodos y eventos disponibles para los programadores de .NET para el objeto raíz del control Reproductor de Windows Media control. |
-| [Interfaces para Visual Basic .NET y C #](interfaces-for-visual-basic--net-and-c.md) | Enumera las interfaces disponibles para los programadores de .NET que usan el control Reproductor de Windows Media ActiveX.                           |
+| [Interfaces para Visual Basic .NET y C #](interfaces-for-visual-basic--net-and-c.md) | Enumera las interfaces disponibles para los programadores de .NET que usan Reproductor de Windows Media ActiveX control.                           |
 
 
 

@@ -21,12 +21,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: efca4d299edc40cfb94820fbb1aae7115329c0f3fcbd2859db0bbbc56d7a0d4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6877b869be8ca38ef9266aedf9318103d0e547ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118341892"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967728"
 ---
 # <a name="controlling-the-playback-experience"></a>Controlar la experiencia de reproducción
 
@@ -63,7 +63,7 @@ Recordará que el parámetro HTMLView se puede aplicar a cada **elemento ENTRY**
 
 ## <a name="url-and-file-script-command-types-are-disabled-by-default"></a>Los tipos de comandos url y script FILE están deshabilitados de forma predeterminada
 
-Reproductor de Windows Media serie 9 o posterior proporciona opciones que permiten al usuario especificar si los comandos de script de tipo URL y FILE se pueden ejecutar. De forma predeterminada, ambos tipos de comandos de script no se ejecutan. Si usa tipos de comandos de script personalizados, seguirán en ejecución, independientemente de la configuración del usuario. Si debe usar comandos de script de tipo URL y FILE, debe pedir al usuario que cambie la configuración. Para cambiar la configuración, haga clic **en Herramientas**, **opciones** y **seguridad.**
+Reproductor de Windows Media serie 9 o posterior proporciona una configuración que permite al usuario especificar si los comandos de script de tipo URL y FILE se pueden ejecutar. De forma predeterminada, ambos tipos de comandos de script no se ejecutan. Si usa tipos de comandos de script personalizados, seguirán en ejecución, independientemente de la configuración del usuario. Si debe usar comandos de script de tipo URL y FILE, debe pedir al usuario que cambie la configuración. Para cambiar la configuración, haga clic **en Herramientas**, **opciones** y **seguridad.**
 
 ## <a name="reopening-an-htmlview-does-not-reload-the-webpage"></a>Al volver a abrir una vista HTML, no se vuelve a cargar la página web.
 

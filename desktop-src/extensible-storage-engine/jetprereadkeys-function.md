@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 24547a7970270943546e5fcfbc026ff24be144b0
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986648"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882689"
 ---
 # <a name="jetprereadkeys-function"></a>JetPrereadKeys (Función)
 
@@ -34,7 +34,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 La **función JetPrereadKeys** lee los valores de clave para mejorar el rendimiento de la limpieza del almacén de versiones.
 
-**Windows 7: la función PrereadKeys** se introdujo en Windows 7.
+**Windows 7: La función PrereadKeys** se introdujo en Windows 7.
 
 ```cpp
     JET_ERR JET_API JetPrereadKeys(
@@ -80,7 +80,7 @@ Debe ser JET_bitPrereadForward o JET_bitPrereadBackward. Si grbit es JET_bitPrer
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 Se pueden devolver varios errores de E/S junto con estos errores de uso de api:
 
@@ -104,5 +104,5 @@ Se pueden devolver varios errores de E/S junto con estos errores de uso de api:
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 R2.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 

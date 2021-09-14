@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: ffba035cc5f69ec33eb08129f25c07d1f40e7e3b0aa3a7c2bb7f77e3ea890c67
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9861cba9188b08abdde2c6dec8392a8a448d510
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118069766"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882572"
 ---
 # <a name="windows7apijetprereadkeys-method"></a>Método Windows7Api.JetPrereadKeys
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

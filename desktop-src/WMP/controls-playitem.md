@@ -5,7 +5,7 @@ ms.assetid: 410e315d-8d5f-4f45-82a7-4249e656c809
 keywords:
 - Método playItem Reproductor de Windows Media
 - método playItem Reproductor de Windows Media , clase Controls
-- Controla la clase Reproductor de Windows Media método , playItem
+- Controla la clase Reproductor de Windows Media , método playItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6ea371b2e2593ccf9b16d555c60a150ddb6229a2fd884b894d7be41eb61830c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9096e378a328f43147a0a94d97034c8e566b611
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967680"
 ---
 # <a name="controlsplayitem-method"></a>Método Controls.playItem
 
@@ -53,9 +53,9 @@ Controls.playItem(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El elemento multimedia se cargará y reproducirá automáticamente, independientemente del valor de la *Configuración*. **propiedad autoStart.** Para cargar un elemento sin reproducirlo automáticamente, *establezca Configuración*. **autoStart** a false y asigna un valor al *reproductor*. **Dirección URL**, después **de** la cual se puede llamar a play para empezar a reproducir el elemento.
+El elemento multimedia se cargará y reproducirá automáticamente, independientemente del valor de la *Configuración*. **propiedad autoStart.** Para cargar un elemento sin reproducirlo automáticamente, establezca *Configuración*. **autoStart** a false y asigna un valor al *reproductor*. **Dirección URL**, después **de** la cual se puede llamar a play para empezar a reproducir el elemento.
 
 Nota
 
@@ -92,7 +92,7 @@ Player.controls.playItem(media);
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

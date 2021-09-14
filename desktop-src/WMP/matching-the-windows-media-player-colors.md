@@ -1,15 +1,15 @@
 ---
-title: Coincidencia de los Reproductor de Windows Media colores
-description: Coincidencia de los Reproductor de Windows Media colores
+title: Coincidencia de los colores Reproductor de Windows Media datos
+description: Coincidencia de los colores Reproductor de Windows Media datos
 ms.assetid: b4d1da08-a4cf-46dd-82a5-40562bb3c049
 keywords:
 - Reproductor de Windows Media en línea, que coinciden Reproductor de Windows Media colores
-- online stores,matching Reproductor de Windows Media colors
+- tiendas en línea, colores Reproductor de Windows Media coincidencia
 - tiendas en línea de tipo 1, que coinciden Reproductor de Windows Media colores
 - tiendas en línea de tipo 2, que coinciden Reproductor de Windows Media colores
 - Reproductor de Windows Media en línea, Reproductor de Windows Media coincidencia de colores
-- online stores,Reproductor de Windows Media color matching
-- tipo 1 tiendas en línea, Reproductor de Windows Media coincidencia de colores
+- tiendas en línea, Reproductor de Windows Media coincidencia de colores
+- tiendas en línea de tipo 1, Reproductor de Windows Media coincidencia de colores
 - tipo 2 tiendas en línea, Reproductor de Windows Media coincidencia de colores
 - Reproductor de Windows Media en línea, coincidencia de colores para Reproductor de Windows Media
 - tiendas en línea, coincidencia de colores para Reproductor de Windows Media
@@ -21,14 +21,14 @@ keywords:
 - Reproductor de Windows Media, coincidencia de colores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3dbb7ed8b73973d35bc8ad884109c569d1c4738d038cf48f657068c5bde51bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eedf3e5df7c02f498c0dc21aeeed16c99452003c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135188"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967503"
 ---
-# <a name="matching-the-windows-media-player-colors"></a>Coincidencia de los Reproductor de Windows Media colores
+# <a name="matching-the-windows-media-player-colors"></a>Coincidencia de los colores Reproductor de Windows Media datos
 
 Hacer que la página web de la tienda en línea coincida Reproductor de Windows Media combinación de colores es fácil. Simplemente controle **el evento External.OnColorChange.** Para especificar una función para controlar el evento, use código como el siguiente cuando se cargue la página web:
 
@@ -53,7 +53,7 @@ function OnAppColor()
 
 
 
-También hay otras propiedades de color disponibles para su uso. Vea [External Object for Type 2 Online Stores (Objeto externo para almacenes en línea de tipo 2).](external-object-for-type-2-online-stores.md)
+También hay otras propiedades de color disponibles para su uso. Vea External Object for Type 2 Online Stores ( Objeto externo [para almacenes en línea de tipo 2).](external-object-for-type-2-online-stores.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -65,7 +65,7 @@ También hay otras propiedades de color disponibles para su uso. Vea [External O
 [**Evento External.OnColorChange**](external-oncolorchange-event.md)
 </dt> <dt>
 
-[**Información común a las tiendas en línea de tipo 1 y tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
+[**Información común a los almacenes en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> </dl>
 
  

@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 0986633a450052431dfcef1426488dddc0417d33
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882705"
 ---
 # <a name="jetossnapshottruncateloginstance-function"></a>JetOSSnapshotTruncateLogInstance (Función)
 
@@ -34,7 +34,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 La **función JetOSSnapshotTruncateLogInstance** trunca el registro de una instancia especificada durante una sesión de instantánea.
 
-**Windows Vista:****JetOSSnapshotTruncateLogInstance** se introdujo en Windows Vista.  
+**Windows Vista:****JetOSSnapshotTruncateLogInstance** se presenta en Windows Vista.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotTruncateLogInstance(
@@ -56,7 +56,7 @@ Instancia de que se usará para esta llamada.
 
 *grbit*
 
-Opciones de esta llamada. Este parámetro puede tener una combinación de los siguientes valores.
+Opciones para esta llamada. Este parámetro puede tener una combinación de los valores siguientes.
 
 *grbit* puede ser uno de los siguientes valores:
 
@@ -77,11 +77,11 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errInvalidGrbit</p> | <p>El <em>parámetro grbit</em> no es válido.</p> | 
-| <p>JET_errOSSnapshotInvalidSequence</p> | <p>La sesión de instantánea no está en el estado en el que se puede producir un truncamiento. Las posibles causas son:</p><ul><li><p>La llamada se completa después de que se haya completado el tiempo de espera de la sesión de instantánea.</p></li><li><p>La sesión se especificó como una instantánea de copia.</p></li></ul> | 
+| <p>JET_errOSSnapshotInvalidSequence</p> | <p>La sesión de instantánea no está en el estado en el que se puede producir un truncamiento. Las posibles causas son:</p><ul><li><p>La llamada se completa después de que se haya completado el tiempo de espera de la sesión de instantáneas.</p></li><li><p>La sesión se especificó como una instantánea de copia.</p></li></ul> | 
 
 
 
-Si esta función se realiza correctamente, los archivos de registro de una o todas las instancias que forman parte de la sesión de instantáneas se truncarán, si es posible.
+Si esta función se realiza correctamente, los archivos de registro de una o todas las instancias que forman parte de la sesión de instantánea se truncarán, si es posible.
 
 #### <a name="remarks"></a>Observaciones
 
@@ -96,14 +96,14 @@ Solo se debe llamar a esta función si la instantánea se creó con la JET_bitCo
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte también
 
 [Parámetros de control de errores](./error-handling-parameters.md)  
-[Errores extensibles Storage motor de instalación](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de datos](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotEnd](./jetossnapshotend-function.md)  
 [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md)  

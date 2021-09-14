@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9db8cd6755d0fe2e1199cca16350451273c2bd7618f35b597687b5fbc35c70fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 490dc249a042487f348937b5ee00804578293381
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119647225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967383"
 ---
 # <a name="onblur"></a>onblur
 
@@ -28,7 +28,7 @@ El **controlador de eventos onblur** controla un evento que se produce cuando el
 onblur
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **controlador de eventos onblur** no es aplicable al elemento **EFFECTS** ni al **elemento POPUP.**
 
@@ -36,13 +36,13 @@ El **controlador de eventos onblur** no es aplicable al elemento **EFFECTS** ni 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

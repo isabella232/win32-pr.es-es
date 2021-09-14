@@ -5,7 +5,7 @@ ms.assetid: 9e142c89-92bf-476f-bae7-b94f5b5ebe01
 keywords:
 - Método getLanguageName Reproductor de Windows Media
 - Método getLanguageName Reproductor de Windows Media , clase Controls
-- Clase Controls Reproductor de Windows Media método , getLanguageName
+- Clase Controls Reproductor de Windows Media , método getLanguageName
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e747860c60313a66eecf8b7d6bd289ffb47f282c8c8d7633716e5c4e60ca7674
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 798a6b22f344953df716e4df4ed8a9a0daff2a7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967700"
 ---
 # <a name="controlsgetlanguagename-method"></a>Método Controls.getLanguageName
 
@@ -53,7 +53,7 @@ strRetVal = Controls.getLanguageName(
 
 Este método devuelve una **cadena**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un LCID identifica de forma única un dialecto de idioma determinado, denominado configuración regional.
 
@@ -70,7 +70,7 @@ Para Windows contenido basado en medios, las propiedades y los métodos relacion
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

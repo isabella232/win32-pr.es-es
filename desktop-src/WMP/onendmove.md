@@ -1,6 +1,6 @@
 ---
 title: onendmove
-description: El controlador de eventos onendmove controla un evento que tiene lugar cuando un elemento completa una operación moveTo.
+description: El controlador de eventos onendmove controla un evento que se produce cuando un elemento completa una operación moveTo.
 ms.assetid: d0891e3d-6342-4d19-903e-c14e05ae3ba8
 keywords:
 - onendmove Reproductor de Windows Media
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dca7e73816ea6380d404549248d0928fbbd13af8dcb0a20b6996b5ee3da36710
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 047055a06f2f96e30254c780d71d9ed027ee3c3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117747863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967368"
 ---
 # <a name="onendmove"></a>onendmove
 
-El **controlador de eventos onendmove** controla un evento que tiene lugar cuando un elemento completa una operación moveTo.
+El **controlador de eventos onendmove** controla un evento que se produce cuando un elemento completa una operación moveTo.
 
 ``` syntax
 onendmove
@@ -38,7 +38,7 @@ onendmove
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

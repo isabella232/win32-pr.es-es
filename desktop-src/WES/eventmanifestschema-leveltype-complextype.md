@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b80e034f6b77f869207ecb785edbb935841eed2dba6bde73ad88c441dabf15cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 237b38890283769e9aac20c9b3a3703ff4b72d3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967887"
 ---
 # <a name="leveltype-complex-type"></a>Tipo complejo LevelType
 
@@ -66,13 +66,13 @@ Define un valor de gravedad que determina el nivel de detalle de los eventos que
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estos son los valores de nivel predefinidos que puede usar. Estos valores se definen en el archivo Winmeta.xml que se incluye en Windows SDK.
 
 
 
-| Nombre              | Valor | Símbolo                    | Descripción                                                             |
+| Nombre              | Value | Símbolo                    | Descripción                                                             |
 |-------------------|-------|---------------------------|-------------------------------------------------------------------------|
 | win:Critical      | 1     | NIVEL CRÍTICO DE WINEVENT \_ \_ | Identifica un evento de salida o finalización anómalo.<br/>            |
 | win:Error         | 2     | ERROR DE \_ NIVEL DE WINEVENT \_    | Identifica un evento de error grave.<br/>                             |
@@ -90,7 +90,7 @@ Los números más altos implican que también se obtienen niveles más bajos. Po
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

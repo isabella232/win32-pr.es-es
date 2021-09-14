@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9e453844ed929f90d0d2b0fa4691adb5f392a4937eeec5fe8ad4f9f451ab6b2d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ed2741994f8030df705b642a56b95a2275639d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117889586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882516"
 ---
 # <a name="windows7grbitsenableattachdbbackgroundmaintenance-field"></a>Campo Windows7Grbits.EnableAttachDbBackgroundMaintenance
 
@@ -53,7 +53,7 @@ value = Windows7Grbits.EnableAttachDbBackgroundMaintenance
 public const AttachDatabaseGrbit EnableAttachDbBackgroundMaintenance
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ae69bcd5ff7d806db5bcaf1e7fd978fc43881d8b390ada7922f394f4f7225b4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be07d2cc8a7720f686ca5ae0847870b27279b8da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119647205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967380"
 ---
 # <a name="onclick"></a>Onclick
 
@@ -28,7 +28,7 @@ El **controlador de eventos onclick** controla un evento que se produce cuando e
 onclick
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este controlador de eventos no es aplicable al elemento **PLAYLIST,** **el elemento POPUP,** el **elemento VIDEO,** el **elemento LISTBOX,** cuando *VIDEO*. **windowless** es false o el elemento **EFFECTS** cuando *EFFECTS*. **windowed** es true.
 
@@ -36,13 +36,13 @@ Este controlador de eventos no es aplicable al elemento **PLAYLIST,** **el eleme
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: Onmouseover
-description: El controlador de eventos onmouseover controla un evento que se produce cuando el usuario coloca por primera vez el puntero sobre el elemento.
+description: El controlador de eventos onmouseover controla un evento que se produce cuando el usuario coloca por primera vez el puntero sobre el elemento .
 ms.assetid: b62da27e-0bdf-46b5-b956-cb20c29df1c2
 keywords:
 - onmouseover Reproductor de Windows Media
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6d59809a7b0d1a5530359f6e8d288e21d0c13e67ac7ee9dc9b2537eb43183a7f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 82163d74f060d9f57be2decb78c517844c1f5b3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119468035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967328"
 ---
 # <a name="onmouseover"></a>Onmouseover
 
-El **controlador de eventos onmouseover** controla un evento que se produce cuando el usuario coloca por primera vez el puntero sobre el elemento.
+El **controlador de eventos onmouseover** controla un evento que se produce cuando el usuario coloca por primera vez el puntero sobre el elemento .
 
 ``` syntax
 onmouseover
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este controlador de eventos no es aplicable al elemento **PLAYLIST.**
 
@@ -36,7 +36,7 @@ Este controlador de eventos no es aplicable al elemento **PLAYLIST.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 

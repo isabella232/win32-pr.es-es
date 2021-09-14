@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b6d9a0670da79d90b2ffc912004cca21aae3ff70e6461dd3d7b57958399c70b7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 672fa745c9fb68961b281b3d89c9afe3edbf1ca2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967344"
 ---
 # <a name="onmousedown"></a>onmousedown
 
@@ -28,7 +28,7 @@ El **controlador de eventos onmousedown** controla un evento que se produce cuan
 onmousedown
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **elemento VIDEO** cuando *VIDEO*. **windowless** es false o el elemento **EFFECTS** cuando *EFFECTS*. **windowed** es true.
 
@@ -42,7 +42,7 @@ Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **eleme
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

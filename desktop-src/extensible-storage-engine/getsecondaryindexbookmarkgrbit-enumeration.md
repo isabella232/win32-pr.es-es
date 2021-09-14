@@ -26,16 +26,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5a507403bdd2ec76631ff001752e62e5b4d808904da03bbf53902a53a6d40cab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65510386e2b335d5c2e06ec647360b8383424784
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119968765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883084"
 ---
 # <a name="getsecondaryindexbookmarkgrbit-enumeration"></a>GetSecondaryIndexBookmarkGrbit (enumeración)
 
-Opciones de [JetGetSecondaryIndexBookmark(JET_SESID, JET_TABLEID, , \[ \] Int32, Int32, \[ \] , Int32, Int32, GetSecondaryIndexBookmarkGrbit)](./api.jetgetsecondaryindexbookmark-method.md).
+Opciones para [JetGetSecondaryIndexBookmark(JET_SESID, JET_TABLEID, , \[ \] Int32, Int32, \[ \] , Int32, Int32, GetSecondaryIndexBookmarkGrbit).](./api.jetgetsecondaryindexbookmark-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
@@ -57,7 +57,7 @@ Dim instance As GetSecondaryIndexBookmarkGrbit
 public enum GetSecondaryIndexBookmarkGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -77,7 +77,7 @@ public enum GetSecondaryIndexBookmarkGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

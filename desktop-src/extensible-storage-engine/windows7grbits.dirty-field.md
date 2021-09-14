@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el campo Windows7Grbits.Dirty
+description: 'Más información sobre: Campo Windows7Grbits.Dirty'
 title: Campo Windows7Grbits.Dirty (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Dirty field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits.Dirty
@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8674734b872b644a9a221e4182ecafc5c02924f4044d977052b442ed271de5e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78def02b1bbca06802d69c4c6c336f3bd4eeaeb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119470885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882529"
 ---
 # <a name="windows7grbitsdirty-field"></a>Campo Windows7Grbits.Dirty
 
-Finalizar sin vaciar la memoria caché de la base de datos.
+Finalice sin vaciar la memoria caché de la base de datos.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -53,7 +53,7 @@ value = Windows7Grbits.Dirty
 public const TermGrbit Dirty
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

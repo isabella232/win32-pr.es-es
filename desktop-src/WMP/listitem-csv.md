@@ -9,12 +9,12 @@ keywords:
 - listitem.csv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb6894bb30cac5dfc30ce2e98a91965de193611420291be301e3e5c06dd5509d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe080c5b9426d5394a7d05c1bd293bba84014b0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967588"
 ---
 # <a name="listitemcsv"></a>listitem.csv
 

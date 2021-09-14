@@ -1,15 +1,15 @@
 ---
-description: Página de navegación para los requisitos del proveedor de servicios de espacio de nombres Windows Sockets (Winsock).
+description: Página de navegación para los Windows proveedor de servicios de espacio de nombres de sockets de Windows (Winsock).
 ms.assetid: 0a9ed385-0717-4002-8800-fdd44e6f74e1
 title: Requisitos del proveedor de servicios del espacio de nombres Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b9dc1321ea60e416b1b3e99850d73b0c5d9cea58f5d612ff126a4ed68e4c04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b98275425cf2b963391c9b2e224d5ec157f1ca60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967236"
 ---
 # <a name="winsock-namespace-service-provider-requirements"></a>Requisitos del proveedor de servicios del espacio de nombres Winsock
 

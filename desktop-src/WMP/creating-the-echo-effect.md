@@ -11,12 +11,12 @@ keywords:
 - Ejemplo de complemento DSP de eco, creación del efecto de eco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcb79b5be53f391854f38ce9aeba1c1bbff61ed2c0a982395c7063ff53146760
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e978562ff4cdee016f92409d183990cd4bb178b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119902295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967627"
 ---
 # <a name="creating-the-echo-effect"></a>Creación del efecto de eco
 
@@ -86,7 +86,7 @@ Recuerde que los punteros del código de 16 bits se han convertido al tipo **sho
 
 ## <a name="retrieve-a-sample-from-the-delay-buffer"></a>Recuperación de un ejemplo del búfer de retraso
 
-A continuación, recupere una muestra única del búfer de retraso. Para el código de 8 bits, los ejemplos de retraso se almacenan en su intervalo nativo de 0 a 255. El código siguiente, que debe agregar, recupera un ejemplo de retraso de 8 bits:
+A continuación, recupere un solo ejemplo del búfer de retraso. Para el código de 8 bits, los ejemplos de retraso se almacenan en su intervalo nativo de 0 a 255. El código siguiente, que debe agregar, recupera un ejemplo de retraso de 8 bits:
 
 
 ```C++
@@ -110,7 +110,7 @@ int delay = *pwDelayPointer;
 
 ## <a name="write-the-input-sample-to-the-delay-buffer"></a>Escribir el ejemplo de entrada en el búfer de retraso
 
-Ahora, debe almacenar el ejemplo de entrada en el búfer de retraso en la misma ubicación desde la que recuperó la muestra de retraso. A continuación se muestra el código que debe agregar para el audio de 8 bits:
+Ahora, debe almacenar el ejemplo de entrada en el búfer de retraso en la misma ubicación desde la que recuperó el ejemplo de retraso. A continuación se muestra el código que debe agregar para el audio de 8 bits:
 
 
 ```C++

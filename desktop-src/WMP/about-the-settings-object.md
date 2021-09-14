@@ -13,16 +13,16 @@ keywords:
 - Configuración objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b74b8bd9db946a2915486647fa5831158198bef6115a34b6bb9fb81177f433de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b20dae51d42e6c67a59ddc23dca19bc7f4180001
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118583677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967771"
 ---
 # <a name="about-the-settings-object"></a>Acerca del objeto Configuración
 
-El **Configuración** control controla la configuración del control, como el volumen, el recuento de reproducción, la exclusión mutua, entre otros. Solo se accede a él a través **de Configuración** propiedad del **objeto Player.** La **Configuración** devuelve el **Configuración** objeto . Solo puede acceder a las propiedades del objeto **Configuración** después de crearlo. Por ejemplo, para obtener el valor de la **propiedad Volume,** debe usar el código siguiente:
+El **Configuración** control controla la configuración del control, como el volumen, el recuento de reproducción, la exclusión mutua, y así sucesivamente. Solo se accede a él a través de **Configuración** propiedad del **objeto Player.** La **Configuración** devuelve el **Configuración** objeto . Solo puede acceder a las propiedades del **objeto Configuración** después de crearlo. Por ejemplo, para obtener el valor de la **propiedad Volume,** debe usar el código siguiente:
 
 
 ```C++

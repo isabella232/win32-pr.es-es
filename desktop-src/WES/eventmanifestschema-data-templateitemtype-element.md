@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 60b5ca3675a735ba742f953e3e880fd9db4def579962e83581b415ecb0b99f15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 632d2ef1d9ba31d923a16eacf82bee480433c14b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118589667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967907"
 ---
 # <a name="data-templateitemtype-element"></a>elemento data (TemplateItemType)
 
@@ -30,7 +30,7 @@ Define un elemento de datos que desea incluir con el evento .
  />
 ```
 
-El **elemento** de datos se define mediante el [**tipo complejo TemplateItemType.**](eventmanifestschema-templateitemtype-complextype.md)
+El **tipo** complejo [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) define el elemento de datos.
 
 ## <a name="requirements"></a>Requisitos
 

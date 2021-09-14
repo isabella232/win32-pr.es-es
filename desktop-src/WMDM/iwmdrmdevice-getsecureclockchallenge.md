@@ -4,8 +4,8 @@ description: El método GetSecureClockChallenge recupera el resultado del desaf�
 ms.assetid: cbef160c-91a3-47d1-9d7a-e649ce2c77ff
 keywords:
 - Método GetSecureClockChallenge windows Media Administrador de dispositivos
-- Método GetSecureClockChallenge windows Media Administrador de dispositivos , interfaz IWMDRMDevice
-- IWMDRMDispositivo windows Media Administrador de dispositivos , método GetSecureClockChallenge
+- Método GetSecureClockChallenge windows Media Administrador de dispositivos interfaz , IWMDRMDevice
+- Interfaz IWMDRMDevice windows Media Administrador de dispositivos , método GetSecureClockChallenge
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaed21ddffb9c2001c3b57d32d34ac9106ede7cecaff723cb95d8cee1c428fb5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d7e57165f75a23d13d847e028deb69de383e2855
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967840"
 ---
 # <a name="iwmdrmdevicegetsecureclockchallenge-method"></a>IWMDRMDevice::GetSecureClockChallenge (método)
 
@@ -83,7 +83,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -11,18 +11,18 @@ keywords:
 - uso de contenido de medición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 029bae2bcdd69f9dc58c4a64317f974538c672b1d27597fbdc1915074aff0278
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 649eee810e7bbdbc2ea93a32c6368ec345fa7364
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967812"
 ---
 # <a name="metering-content-usage"></a>Uso de contenido de medición
 
-Con Windows media 10, ahora puede medir el uso de contenido en un dispositivo portátil. Si una licencia Windows Media 10 permite la medición, el dispositivo puede almacenar el recuento de reproducción de las canciones y cargar el uso de nuevo en el emisor de licencias a través de Internet. Este sistema permite a los proveedores de contenido ajustar sus cuotas de canon mediante la medición precisa del uso del contenido.
+Con Windows media 10, ahora puede medir el uso de contenido en un dispositivo portátil. Si una licencia Windows Media 10 permite la medición, el dispositivo puede almacenar el recuento de reproducción de las canciones y cargar el uso al emisor de licencias a través de Internet. Este sistema permite a los proveedores de contenido ajustar sus cuotas de canon mediante la medición precisa del uso del contenido.
 
-Para medir el contenido, la aplicación debe tener un certificado de medición proporcionado por un servicio de licencias basado en el SDK Windows Media Rights Manager 10. Solo se puede medir el contenido con licencia de este mismo servicio. Para obtener más información sobre cómo funciona la medición y cómo crear un servicio de medición de licencias, consulte la documentación del SDK de [Windows Media Rights Manager](/previous-versions/ms986509(v=msdn.10)) en MSDN. El SDK se puede adquirir rellenando la información necesaria en la página de licencias Windows [multimedia](https://www.microsoft.com/licensing/default).
+Para medir el contenido, la aplicación debe tener un certificado de medición proporcionado por un servicio de licencias basado en el SDK Windows Media Rights Manager 10. Solo se puede medir el contenido con licencia de este mismo servicio. Para obtener más información sobre cómo funciona la medición y cómo crear un servicio de medición de licencias, consulte la documentación del SDK de [Windows Media Rights Manager](/previous-versions/ms986509(v=msdn.10)) en MSDN. El SDK se puede adquirir rellenando la información necesaria en la página de licencias de Windows [multimedia](https://www.microsoft.com/licensing/default).
 
 Una aplicación puede tener la medición integrada, o bien puede compilar un complemento COM para una aplicación existente, como Reproductor de Windows Media, si la aplicación acepta complementos de medición.
 
@@ -32,7 +32,7 @@ La adquisición de datos de medición desde un dispositivo puede ser lenta. Por 
 
 Los pasos siguientes muestran cómo una aplicación puede medir el uso de contenido.
 
-1.  Dado que la medición solo está disponible en los dispositivos que admiten Windows Media DRM 10 para dispositivos portátiles, la aplicación debe llamar en algún momento a **QueryDeviceStatus**, como se describe en Control de contenido protegido en la aplicación [,](handling-protected-content-in-the-application.md)para asegurarse de que el dispositivo es válido y actualizado.
+1.  Dado que la medición solo está disponible en dispositivos que admiten Windows Media DRM 10 para dispositivos portátiles, la aplicación debe llamar en algún momento a **QueryDeviceStatus**, como se describe en Control de contenido protegido en la aplicación [,](handling-protected-content-in-the-application.md)para asegurarse de que el dispositivo es válido y actualizado.
 2.  Solicite información de medición del dispositivo mediante una [**llamada a IWMDRMDeviceApp::GenerateMeterChallenge**](iwmdrmdeviceapp-generatemeterchallenge.md).
 3.  Envíe los datos de medición recuperados al servicio de medición en la dirección URL recuperada por **GenerateMeterChallenge**. El formato de los datos enviados al servicio depende del scripting de ese servicio en particular. Por ejemplo, algunos servicios pueden requerir los datos enviados como un comando POST como un par nombre-valor. El proveedor de servicios debe permitirle conocer sus requisitos de formato concretos.
 4.  Obtenga una respuesta del servicio de medición y envíela al dispositivo mediante una llamada a [**IWMDRMDeviceApp::P rocessMeterResponse**](iwmdrmdeviceapp-processmeterresponse.md). Esto hace que el dispositivo restablezca los recuentos de reproducción y también devuelve un valor que indica si existen más datos de medición en el dispositivo que se deben recuperar llamando de nuevo a **GenerateMeterChallenge.**

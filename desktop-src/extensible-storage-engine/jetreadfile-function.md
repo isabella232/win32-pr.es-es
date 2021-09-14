@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 0c670a6ed5cdcbb4b0fa4ead2415a1e55121dfce
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985858"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882684"
 ---
 # <a name="jetreadfile-function"></a>JetReadFile (Función)
 
@@ -97,7 +97,7 @@ No se admiten **varias llamadas simultáneas a JetReadFile** con el mismo identi
 
 Si la instancia está configurada de forma que la limpieza de páginas de la base de datos esté habilitada (consulte JET_paramZeroDatabaseDuringBackup en Parámetros del sistema), los datos eliminados se quitarán de la base de datos como efecto secundario de una llamada a **JetReadFile** en el archivo de base de datos.
 
-Es muy importante comprender cómo interactúan la copia de seguridad y los datos dañados. Si el motor de base de datos detecta daños en los datos durante una copia de seguridad, se producirá un error en la copia de seguridad de la base de datos afectada o de toda la instancia. Se trata de una decisión de diseño consciente diseñada para protegerse contra la pérdida de datos. Si el motor de base de datos permitió que una copia de seguridad se realizara correctamente donde había daños en los datos, es posible que se descartara como resultado una copia de seguridad anterior sin corregir. Esto sería desafortunado, ya que sería posible corregir los daños en los datos en la instancia de live mediante la restauración de esa copia de seguridad y la reproducción de todos los archivos de registro de transacciones en esa base de datos. En este escenario de pérdida de datos cero se supone que el registro circular no está habilitado [(vea JET_paramCircularLog](./transaction-log-parameters.md) parámetros [del sistema](./extensible-storage-engine-system-parameters.md)).
+Es muy importante comprender cómo interactúan la copia de seguridad y los datos dañados. Si el motor de base de datos detecta daños en los datos durante una copia de seguridad, se producirá un error en la copia de seguridad de la base de datos afectada o de toda la instancia. Se trata de una decisión de diseño consciente diseñada para protegerse contra la pérdida de datos. Si el motor de base de datos permitió que una copia de seguridad se realizara correctamente donde había daños en los datos, es posible que se descartara como resultado una copia de seguridad anterior sin corregir. Esto sería desafortunado, ya que sería posible corregir los daños en los datos en la instancia de live mediante la restauración de esa copia de seguridad y la reproducción de todos los archivos de registro de transacciones en esa base de datos. En este escenario de pérdida de datos cero se supone que el registro circular no está habilitado [(vea JET_paramCircularLog](./transaction-log-parameters.md) en [Parámetros del sistema](./extensible-storage-engine-system-parameters.md)).
 
 También es importante comprender que, cuando haya daños en los datos, la copia de seguridad de streaming será el lugar más probable en el que se detectará primero. Este es el caso porque la copia de seguridad de streaming es el único proceso que examina de forma rutinaria cada página del archivo de base de datos. También es probable que la copia de seguridad de streaming sea el primer proceso para detectar los primeros signos de error de hardware, como se manifestó por errores intermitentes de daños en los datos. Esto se debe a la cantidad de datos recuperados por la copia de seguridad, así como a la velocidad a la que se recuperan.
 
@@ -112,7 +112,7 @@ El motor de base de datos detecta daños en los datos mediante el uso de sumas d
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

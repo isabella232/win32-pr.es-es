@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2a0fadc400bf23bd3fff8bd4b627215cedd8b98b12b688fbe64dbc703fc89fc4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cff822551bd2687308dde12df1f4e0e381f58046
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119719955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882860"
 ---
 # <a name="jet_recposcontentequals-method"></a>JET_RECPOS. Método ContentEquals
 
@@ -61,7 +61,7 @@ public bool ContentEquals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_RECPOS](./jet-recpos-class.md)  
     
     Instancia de que se va a comparar con esta instancia.
@@ -75,7 +75,7 @@ True si las dos instancias son iguales.
 
 [IContentEquatable \<T\> . ContentEquals(T)](./icontentequatable-t-.contentequals-method.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

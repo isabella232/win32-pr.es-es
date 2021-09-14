@@ -9,12 +9,12 @@ keywords:
 - controles deslizantes en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d85a789bbd90003b59e1a9b9dcf8fffcf4a126c38138f7a051c24125780f8c83
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d0f205d46af003589fcc2c3b741a253ea08fae12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119902335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967656"
 ---
 # <a name="creating-custom-sliders"></a>Crear controles deslizantes personalizados
 
@@ -38,7 +38,7 @@ Puede crear controles deslizantes personalizados en cualquier forma que desee. E
 
 
 
-Esto configura un valor inicial para el control deslizante. Se presentan dos mapas de bits nuevos. Uno es el mapa de bits de escala de grises (slider.bmp) que define los valores que se usarán al hacer clic en él y el otro (slider.bmp) que determina en qué imagen se mostrará cuando se haga clic en una parte determinada de la escala de grises.
+Esto configura un valor inicial para el control deslizante. Se presentan dos nuevos mapas de bits. Uno es el mapa de bits de escala de grises (slider.bmp) que define los valores que se usarán al hacer clic en él y el otro (slider.bmp) que determina qué imagen se mostrará cuando se haga clic en una parte determinada de la escala de grises.
 
 El valor inicial se determina mediante la escucha del volumen con wmpprop y, a continuación, el volumen se puede cambiar cuando el usuario hace clic en una parte del control deslizante que desencadena un cambio en el valor.
 

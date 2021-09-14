@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e5a01e97364aa47182e38e3e3066895c771e2d5edb6c480e8108cb168e7f8cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83b757528cfb14a01854346854a342ee9faced65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967664"
 ---
 # <a name="copyright-element"></a>Elemento COPYRIGHT
 
@@ -75,11 +75,11 @@ Si el metarchivo está codificado mediante UTF-8, los símbolos de copyright y m
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/>                                 |
-| Header<br/>  | <dl> <dt>Msfeeds.h</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Msfeeds.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-title: Elemento level (LevelListType)
+title: elemento level (LevelListType)
 description: Define un valor de gravedad que determina el nivel de detalle de los eventos durante el registro.
 ms.assetid: 898b4784-7acc-45b5-8ff9-485e919fe9c6
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 61f8e979e4bc7de7b017b75976ad47b3bf4f4c7cfde46bbaa9e1fc698bc92db3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 469ed05f6acb7b4189afdadda772982441fdb435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967888"
 ---
-# <a name="level-levellisttype-element"></a>Elemento level (LevelListType)
+# <a name="level-levellisttype-element"></a>elemento level (LevelListType)
 
 Define un valor de gravedad que determina el nivel de detalle de los eventos durante el registro.
 
@@ -43,7 +43,7 @@ El **elemento level** se define mediante el tipo complejo [**LevelListType.**](e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

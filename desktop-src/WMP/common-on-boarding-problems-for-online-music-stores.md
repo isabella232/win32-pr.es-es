@@ -6,12 +6,12 @@ keywords:
 - Reproductor de Windows Media Tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32c4cb38f088f463d6bea8ca15b3a92cea9610cc8541f27d55c48df07f9286d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f600d1035e0fd20be7786af4d4ffed4482138a72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119763965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967764"
 ---
 # <a name="common-on-boarding-problems-for-online-music-stores"></a>Problemas comunes de incorporación para las tiendas de Música en línea
 
@@ -29,7 +29,7 @@ A continuación se muestra una lista de Reproductor de Windows Media problemas d
 3.  Los evaluadores de Microsoft deben tener el poder adquisitivo adecuado. El equipo de validación de Microsoft ejecutará varios escenarios de compra que van desde compras pequeñas hasta compras muy grandes. Debe proporcionar una manera fácil de actuar como consumidores dentro de su tienda. Esto puede abarcar desde proporcionar una variedad de cuentas hasta proporcionar una tarjeta de crédito ficticia. Por ejemplo, una tienda producirá un error en RC2 si un evaluador de validación intenta comprar un álbum, pero solo tiene crédito suficiente para comprar una sola pista.
 4.  Si usa controles ActiveX dentro de las páginas de servicio, asegúrese de que se instalan y desinstalan correctamente, tanto en todas las versiones aplicables de Windows. No hacerlo es un problema típico. A menudo, los desarrolladores y evaluadores de una tienda en línea tienen los controles ActiveX registrados en sus propios equipos, pero olvidan instalar los controles en el equipo del usuario.
 
-    Si la tienda instala un complemento o un control ActiveX, debe proporcionar al usuario una manera fácil de desinstalarlo. Por ejemplo, Microsoft ha descubierto recientemente que algunas tiendas en línea instalaron controles ActiveX en Reproductor de Windows Media 11 para Windows Vista que no se pudieron quitar mediante el menú Agregar o quitar programas. Después de una investigación, Microsoft ha descubierto que los ActiveX se pueden quitar a través del administrador de complementos de Internet Explorer. Es importante que comunique (al menos a través de un archivo de Ayuda) la manera de instalar y desinstalar ActiveX controles y complementos.
+    Si la tienda instala un complemento o un control ActiveX, debe proporcionar al usuario una manera fácil de desinstalarlo. Por ejemplo, Microsoft ha descubierto recientemente que algunas tiendas en línea instalaron controles ActiveX en Reproductor de Windows Media 11 para Windows Vista que no se pudieron quitar mediante el menú Agregar o quitar programas. Después de una investigación, Microsoft encontró que los ActiveX se podían quitar a través del administrador de complementos de Internet Explorer. Es importante que comunique (como mínimo a través de un archivo de Ayuda) la manera de instalar y desinstalar ActiveX controles y complementos.
 
     Para obtener más información sobre cómo integrar su tienda con la infraestructura de seguridad en Windows Vista, consulte el artículo titulado "Procedimientos recomendados para desarrolladores e instrucciones para aplicaciones en un entorno con privilegios [mínimos".](/previous-versions/aa905330(v=msdn.10))
 

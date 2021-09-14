@@ -1,12 +1,12 @@
 ---
 title: Método SetDisableForcibleLogoff de la Win32_TerminalServiceSetting clase
-description: 'Método SetDisableForcibleLogoff de la Win32_TerminalServiceSetting clase : este método no se admite.'
+description: 'Método SetDisableForcibleLogoff de la Win32_TerminalServiceSetting : este método no se admite.'
 ms.assetid: 1b7ac0f2-c242-4ca8-bc4d-8111e63851eb
 ms.tgt_platform: multiple
 keywords:
 - Método SetDisableForcibleLogoff Servicios de Escritorio remoto
 - Método SetDisableForcibleLogoff Servicios de Escritorio remoto , Win32_TerminalServiceSetting clase
-- Win32_TerminalServiceSetting clase Servicios de Escritorio remoto método , SetDisableForcibleLogoff
+- Win32_TerminalServiceSetting clase Servicios de Escritorio remoto , método SetDisableForcibleLogoff
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7760e48648cab149b435760da062ea4aa60c5e4107dfb062cd86a151fc234470
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4be6ace10853ec282f5ab17b1f5f5921ef2c0d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119867835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967964"
 ---
 # <a name="setdisableforciblelogoff-method-of-the-win32_terminalservicesetting-class"></a>Método SetDisableForcibleLogoff de la clase \_ TerminalServiceSetting de Win32
 
@@ -48,7 +48,7 @@ uint32 SetDisableForcibleLogoff(
 *DisableForcibleLogoff* \[ En\]
 </dt> <dd>
 
-Marca la deshabilitación o habilitación de la propiedad **DisableForcibleLogoff,** que determina si un administrador que ha iniciado sesión en la consola se puede desactivar forzosamente.
+Marca al deshabilitar o habilitar la propiedad **DisableForcibleLogoff,** que determina si un administrador que ha iniciado sesión en la consola se puede desactivar forzosamente.
 
 <dt>
 
@@ -59,7 +59,7 @@ Marca la deshabilitación o habilitación de la propiedad **DisableForcibleLogof
 
 </dt> <dd>
 
-Deshabilite la propiedad . El administrador conectado puede estar cerrado forzadamente.
+Deshabilite la propiedad . El administrador conectado se puede desactivar forzadamente.
 
 </dd> <dt>
 
@@ -88,13 +88,13 @@ Devuelve Success si se ejecuta correctamente; de lo contrario, devuelve un códi
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Fin de compatibilidad de cliente<br/>    | Windows Vista<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

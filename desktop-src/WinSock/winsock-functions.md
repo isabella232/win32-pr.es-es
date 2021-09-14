@@ -4,12 +4,12 @@ ms.assetid: edafb5f9-09fe-4f8e-9651-4002b6f622f4
 title: Funciones Winsock
 ms.topic: article
 ms.date: 10/01/2019
-ms.openlocfilehash: 5057a2fa7ff113da3c8e5f9077f9dfb1df83c3a390546b9d49d2d4b94db3625e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9bf2205c970eeaaf4e64867565d58680b28298c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119860725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967260"
 ---
 # <a name="winsock-functions"></a>Funciones Winsock
 
@@ -26,7 +26,7 @@ En la lista siguiente se proporcionan descripciones concisas de cada función Wi
 | [**DisconnectEx**](/previous-versions/windows/desktop/legacy/ms737757(v=vs.85)) | Cierra una conexión en un socket y permite reutilizar el identificador de socket. |
 | [**EnumProtocols**](/windows/win32/api/Nspapi/nf-nspapi-enumprotocolsa) | Recupera información sobre un conjunto especificado de protocolos de red que están activos en un host local. |
 | [**freeaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfo) | Libera la información de dirección que la [**función getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) asigna dinámicamente en [**estructuras addrinfo.**](/windows/win32/api/ws2def/ns-ws2def-addrinfoa) |
-| [**FreeAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfoex) | Libera información de direcciones que la [**función GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) asigna dinámicamente en [**estructuras addrinfoex.**](/windows/win32/api/Ws2def/ns-ws2def-addrinfoexw) |
+| [**FreeAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfoex) | Libera información de dirección que la [**función GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) asigna dinámicamente en [**estructuras addrinfoex.**](/windows/win32/api/Ws2def/ns-ws2def-addrinfoexw) |
 | [**FreeAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfow) | Libera información de dirección que la [**función GetAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfow) asigna dinámicamente en [**estructuras addrinfoW.**](/windows/win32/api/Ws2def/ns-ws2def-addrinfow) |
 | [**y \_ strerror**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-gai_strerrora) | Ayuda a imprimir mensajes de error en función de los errores de EAI \_ \* devueltos por la [**función getaddrinfo.**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) |
 | [**GetAcceptExSockaddrs**](/windows/win32/api/mswsock/nf-mswsock-getacceptexsockaddrs) | Analiza los datos obtenidos de una llamada a la [**función AcceptEx.**](/windows/win32/api/mswsock/nf-mswsock-acceptex) |
@@ -89,7 +89,7 @@ En la lista siguiente se proporcionan descripciones concisas de cada función Wi
 | [**Enviar**](/windows/win32/api/Winsock2/nf-winsock2-send) | Envía datos en un socket conectado. |
 | [**sendto**](/windows/win32/api/winsock/nf-winsock-sendto) | Envía datos a un destino específico. |
 | [**SetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-setaddrinfoexa) | Registra un nombre de host y servicio junto con las direcciones asociadas con un proveedor de espacio de nombres específico. |
-| [**setipv4sourcefilter**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-setipv4sourcefilter) | Establece el estado del filtro de multidifusión para un socket IPv4. |
+| [**setipv4sourcefilter**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-setipv4sourcefilter) | Establece el estado de filtro de multidifusión para un socket IPv4. |
 | [**SetService**](/windows/win32/api/Nspapi/nf-nspapi-setservicea) | Registra o quita del registro un servicio de red dentro de uno o varios espacios de nombres. También puede agregar o quitar un tipo de servicio de red dentro de uno o varios espacios de nombres. |
 | [**SetSocketMediaStreamingMode**](/windows/win32/api/Socketapi/nf-socketapi-setsocketmediastreamingmode) | Indica si la red se va a usar para transferir medios de streaming que requieren calidad de servicio. |
 | [**setsockopt**](/windows/win32/api/winsock/nf-winsock-setsockopt) | Establece una opción de socket. |
@@ -118,28 +118,28 @@ En la lista siguiente se proporcionan descripciones concisas de cada función Wi
 | [**WSADuplicateSocket**](/windows/win32/api/Winsock2/nf-winsock2-wsaduplicatesocketa) | Devuelve una estructura que se puede usar para crear un nuevo descriptor de socket para un socket compartido. |
 | [**WSAEnumNameSpaceProviders**](/windows/win32/api/Winsock2/nf-winsock2-wsaenumnamespaceprovidersa) | Recupera información sobre los espacios de nombres disponibles. |
 | [**WSAEnumNameSpaceProvidersEx**](/windows/win32/api/Winsock2/nf-winsock2-wsaenumnamespaceprovidersexa) | Recupera información sobre los espacios de nombres disponibles. |
-| [**WSAEnumNetworkEvents**](/windows/win32/api/Winsock2/nf-winsock2-wsaenumnetworkevents) | Detecta las repeticiones de eventos de red para el socket indicado, borra los registros de eventos de red internos y restablece los objetos de evento (opcional). |
+| [**WSAEnumNetworkEvents**](/windows/win32/api/Winsock2/nf-winsock2-wsaenumnetworkevents) | Detecta repeticiones de eventos de red para el socket indicado, borra los registros de eventos de red internos y restablece los objetos de evento (opcional). |
 | [**WSAEnumProtocols**](/windows/win32/api/Winsock2/nf-winsock2-wsaenumprotocolsa) | Recupera información sobre los protocolos de transporte disponibles. |
-| [**WSAEventSelect**](/windows/win32/api/Winsock2/nf-winsock2-wsaeventselect) | Especifica un objeto de evento que se va a asociar al conjunto especificado de eventos de \_ red FD XXX. |
+| [**WSAEventSelect**](/windows/win32/api/Winsock2/nf-winsock2-wsaeventselect) | Especifica un objeto de evento que se va a asociar al conjunto especificado de eventos de red \_ XXX de FD. |
 | [**\_\_WSAFDIsSet**](/windows/win32/api/winsock/nf-winsock-__wsafdisset) | Especifica si un socket se incluye en un conjunto de descriptores de socket. |
 | [**WSAGetFailConnectOnIcmpError**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsagetfailconnectonicmperror) | Consulta el estado de la opción [**TCP_FAIL_CONNECT_ON_ICMP_ERROR**](./ipproto-tcp-socket-options.md) socket. |
 | [**WSAGetIcmpErrorInfo**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsageticmperrorinfo) | Consulta la dirección de origen de un error ICMP recibido en un socket TCP durante la configuración de la conexión. |
-| [**WSAGetIPUserMtu**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsagetipusermtu) | Recupera la MTU de capa IP definida por el usuario para un socket. |
+| [**WSAGetIPUserMtu**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsagetipusermtu) | Recupera la MTU de la capa IP definida por el usuario para un socket. |
 | [**WSAGetLastError**](/windows/win32/api/winsock/nf-winsock-wsagetlasterror) | Devuelve el estado de error de la última operación que produjo un error. |
 | [**WSAGetOverlappedResult**](/windows/win32/api/Winsock2/nf-winsock2-wsagetoverlappedresult) | Recupera los resultados de una operación superpuesta en el socket especificado. |
 | [**WSAGetQOSByName**](/windows/win32/api/Winsock2/nf-winsock2-wsagetqosbyname) | Inicializa una estructura [**qos basada**](/windows/win32/api/winsock2/ns-winsock2-qos) en una plantilla con nombre o proporciona un búfer para recuperar una enumeración de los nombres de plantilla disponibles. |
 | [**WSAGetServiceClassInfo**](/windows/win32/api/Winsock2/nf-winsock2-wsagetserviceclassinfoa) | Recupera la información de clase (esquema) relativa a una clase de servicio especificada de un proveedor de espacios de nombres especificado. |
 | [**WSAGetServiceClassNameByClassId**](/windows/win32/api/Winsock2/nf-winsock2-wsagetserviceclassnamebyclassida) | Recupera el nombre del servicio asociado al tipo especificado. |
-| [**WSAGetUdpRecvMaxCoalescedSize**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsagetudprecvmaxcoalescedsize) | Recupera el tamaño máximo de un mensaje recibido y conjunción para un socket UDP. |
+| [**WSAGetUdpRecvMaxCoalescedSize**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsagetudprecvmaxcoalescedsize) | Recupera el tamaño máximo de un mensaje coalesced recibido para un socket UDP. |
 | [**WSAGetUdpSendMessageSize**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsagetudpsendmessagesize) | Recupera el tamaño del mensaje de segmentación para un socket UDP. |
 | [**WSAHtonl**](/windows/win32/api/Winsock2/nf-winsock2-wsahtonl) | Convierte un valor u \_ long del orden de bytes del host al orden de bytes de red. |
 | [**WSAHtons**](/windows/win32/api/Winsock2/nf-winsock2-wsahtons) | Convierte un valor u \_ short del orden de bytes del host al orden de bytes de red. |
-| [**WSAImpersonateSocketPeer**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-wsaimpersonatesocketpeer) | Se usa para suplantar la entidad de seguridad correspondiente a un socket del mismo nivel con el fin de realizar la autorización en el nivel de aplicación. |
+| [**WSAImpersonateSocketPeer**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-wsaimpersonatesocketpeer) | Se usa para suplantar la entidad de seguridad correspondiente a un socket del mismo nivel con el fin de realizar la autorización de nivel de aplicación. |
 | [**WSAInstallServiceClass**](/windows/win32/api/Winsock2/nf-winsock2-wsainstallserviceclassa) | Registra un esquema de clase de servicio dentro de un espacio de nombres. |
 | [**WSAIoctl**](/windows/win32/api/Winsock2/nf-winsock2-wsaioctl) | Controla el modo de un socket. |
-| [**WSAJoinLeaf**](/windows/win32/api/Winsock2/nf-winsock2-wsajoinleaf) | Une un nodo hoja en una sesión de varios puntos, intercambia datos de conexión y especifica la calidad de servicio necesaria en función de las estructuras especificadas. |
-| [**WSALookupServiceBegin**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupservicebegina) | Inicia una consulta de cliente que está restringida por la información contenida en una [**estructura WSAQUERYSET.**](/windows/win32/api/Winsock2/ns-winsock2-wsaquerysetw) |
-| [**WSALookupServiceEnd**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupserviceend) | Libera el identificador usado por las llamadas anteriores a [**WSALookupServiceBegin**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupservicebegina) y [**WSALookupServiceNext.**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupservicenexta) |
+| [**WSAJoinLeaf**](/windows/win32/api/Winsock2/nf-winsock2-wsajoinleaf) | Une un nodo hoja en una sesión multipunto, intercambia datos de conexión y especifica la calidad de servicio necesaria en función de las estructuras especificadas. |
+| [**WSALookupServiceBegin**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupservicebegina) | Inicia una consulta de cliente restringida por la información contenida en una [**estructura WSAQUERYSET.**](/windows/win32/api/Winsock2/ns-winsock2-wsaquerysetw) |
+| [**WSALookupServiceEnd**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupserviceend) | Libera el identificador usado por las llamadas anteriores a [**WSALookupServiceBegin**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupservicebegina) y [**WSALookupServiceNext**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupservicenexta). |
 | [**WSALookupServiceNext**](/windows/win32/api/Winsock2/nf-winsock2-wsalookupservicenexta) | Recupere la información de servicio solicitada. |
 | [**WSANSPIoctl**](/windows/win32/api/Winsock2/nf-winsock2-wsanspioctl) | Desarrolladores para realizar llamadas de control de E/S a un espacio de nombres registrado. |
 | [**WSANtohl**](/windows/win32/api/Winsock2/nf-winsock2-wsantohl) | Convierte un valor u \_ long del orden de bytes de red al orden de bytes del host. |
@@ -153,14 +153,14 @@ En la lista siguiente se proporcionan descripciones concisas de cada función Wi
 | [**WSARecvFrom**](/windows/win32/api/Winsock2/nf-winsock2-wsarecvfrom) | Recibe un datagrama y almacena la dirección de origen. |
 | [**LPFN_WSARECVMSG (WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) | Recibe datos e información de control opcional de sockets conectados y no conectados. |
 | [**WSARemoveServiceClass**](/windows/win32/api/Winsock2/nf-winsock2-wsaremoveserviceclass) | Quita permanentemente el esquema de clase de servicio del Registro. |
-| [**WSAResetEvent**](/windows/win32/api/Winsock2/nf-winsock2-wsaresetevent) | Restablece el estado del objeto de evento especificado a no con signo. |
+| [**WSAResetEvent**](/windows/win32/api/Winsock2/nf-winsock2-wsaresetevent) | Restablece el estado del objeto de evento especificado en nonsignaled. |
 | [**WSARevertImpersonation**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-wsarevertimpersonation) | Finaliza la suplantación de un socket del mismo nivel. |
 | [**WSASend**](/windows/win32/api/Winsock2/nf-winsock2-wsasend) | Envía datos en un socket conectado. |
 | [**WSASendDisconnect**](/windows/win32/api/Winsock2/nf-winsock2-wsasenddisconnect) | Inicia la terminación de la conexión para el socket y envía los datos de desconexión. |
 | [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) | Envía datos e información de control opcional desde sockets conectados y no conectados. |
-| [**WSASendTo**](/windows/win32/api/Winsock2/nf-winsock2-wsasendto) | Envía datos a un destino específico, mediante E/S superpuesta, si procede. |
+| [**WSASendTo**](/windows/win32/api/Winsock2/nf-winsock2-wsasendto) | Envía datos a un destino específico, mediante E/S superpuesta cuando corresponda. |
 | [**WSASetEvent**](/windows/win32/api/Winsock2/nf-winsock2-wsasetevent) | Establece el estado del objeto de evento especificado en señalado. |
-| [**WSASetFailConnectOnIcmpError**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetfailconnectonicmperror) | Establece el estado de [**la**](./ipproto-tcp-socket-options.md) TCP_FAIL_CONNECT_ON_ICMP_ERROR de socket. |
+| [**WSASetFailConnectOnIcmpError**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetfailconnectonicmperror) | Establece el estado de la opción [**TCP_FAIL_CONNECT_ON_ICMP_ERROR**](./ipproto-tcp-socket-options.md) socket. |
 | [**WSASetIPUserMtu**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetipusermtu) | Establece la MTU de capa IP definida por el usuario en un socket. |
 | [**WSASetLastError**](/windows/win32/api/winsock/nf-winsock-wsasetlasterror) | Establece el código de error. |
 | [**WSASetService**](/windows/win32/api/Winsock2/nf-winsock2-wsasetservicea) | Registra o quita del registro una instancia de servicio dentro de uno o varios espacios de nombres. |

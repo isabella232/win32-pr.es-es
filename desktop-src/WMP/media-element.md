@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c67f4321d85ec52babbc6f24c2cd9e3512f7c970eb3360ba2ddfd7ba53f82152
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e693c8b17345d3ba7875d48b83b5e3e90d682dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967496"
 ---
 # <a name="media-element"></a>elemento media
 
@@ -54,7 +54,7 @@ El **elemento multimedia** especifica uno de los elementos multimedia de una lis
 | Hierarchy | Elementos               |
 |-----------|------------------------|
 | Parent    | [Seq](seq-element.md) |
-| Elemento secundario     | Ninguno                   |
+| Elemento secundario     | None                   |
 
 
 
@@ -62,7 +62,7 @@ El **elemento multimedia** especifica uno de los elementos multimedia de una lis
 
 ## <a name="remarks"></a>Observaciones
 
-El **atributo cid** (el identificador de contenido) se rellena mediante el Reproductor de Windows Media como una manera de identificar de forma única un fragmento de contenido multimedia incluso si se han cambiado sus atributos de metadatos. Esto permite compartir listas de reproducción entre equipos, ya que el contenido se puede identificar en otro equipo y la ruta de acceso a él se puede "reparar automáticamente" mediante la lista de reproducción de Windows Media. El **atributo tid** (el identificador de seguimiento) usa el sistema de archivos Windows para reparar automáticamente la ruta de acceso al medio si se cambia el nombre o la ubicación del archivo.
+El **atributo cid** (el identificador de contenido) se rellena mediante el Reproductor de Windows Media como una manera de identificar de forma única un fragmento de contenido multimedia incluso si se han cambiado sus atributos de metadatos. Esto permite el uso compartido de listas de reproducción entre equipos, ya que el contenido se puede identificar en otro equipo y la ruta de acceso a él puede ser "reparada automáticamente" por la lista de reproducción multimedia de Windows. El **atributo tid** (el identificador de seguimiento) usa el sistema de archivos Windows para reparar automáticamente la ruta de acceso al medio si se cambia el nombre o la ubicación del archivo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -88,7 +88,7 @@ El **atributo cid** (el identificador de contenido) se rellena mediante el Repro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

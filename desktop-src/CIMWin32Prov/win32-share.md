@@ -24,12 +24,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 258116c3d6f01db938033056069aa036a3eaad23e44b31d80838ad26f570faa7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e871880da5aa9819de4a9eaaf3c6f074bd198d23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117834165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892473"
 ---
 # <a name="win32_share-class"></a>Win32 \_ Share (clase)
 
@@ -56,7 +56,7 @@ class Win32_Share : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ Share** tiene estos tipos de miembros:
 
@@ -206,7 +206,7 @@ Windows ejemplo de 2008: \\ "SERVER01 \\ public": Windows Server 2008 requiere q
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -290,7 +290,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -344,7 +344,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/win32/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ type")
 </dt> </dl>
 
-Tipo de recurso que se comparte. Entre los tipos se incluyen: unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales.
+Tipo de recurso que se comparte. Los tipos incluyen: unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales.
 
 <dt>
 
@@ -406,7 +406,7 @@ Tipo de recurso que se comparte. Entre los tipos se incluyen: unidades de disco,
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase Win32 \_ Share** se deriva de CIM [**\_ LogicalElement**](cim-logicalelement.md).
 
@@ -416,11 +416,11 @@ En función de los permisos de seguridad, es posible que no pueda recuperar toda
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de[código del Centro de scripts](https://Gallery.TechNet.Microsoft.Com/scriptcenter/List-Share-Permissions-83f8c419) se enumeran todos los recursos compartidos de un equipo y se enumeran todos los permisos de recurso compartido para cada recurso compartido.
+En el siguiente ejemplo de código del[Centro de scripts](https://Gallery.TechNet.Microsoft.Com/scriptcenter/List-Share-Permissions-83f8c419) se enumeran todos los recursos compartidos de un equipo y se enumeran todos los permisos de recurso compartido para cada recurso compartido.
 
-El [ejemplo Get Share Information similar a Win32 \_ Share](https://Gallery.TechNet.Microsoft.Com/Get-Share-Information-5cc71b2c) PowerShell consulta Win32 \_ Share y proporciona los resultados.
+El ejemplo Obtener información de recurso compartido similar a [Win32 \_ Share](https://Gallery.TechNet.Microsoft.Com/Get-Share-Information-5cc71b2c) powerShell consulta Win32 \_ Share y proporciona los resultados.
 
-En el siguiente ejemplo de PowerShell se muestran los recursos compartidos en el sistema local.
+En el ejemplo de PowerShell siguiente se muestran los recursos compartidos en el sistema local.
 
 
 ```PowerShell
@@ -440,7 +440,7 @@ gwmi -q "SELECT * FROM Win32_Share WHERE Name != 'ADMIN$' AND Name != 'IPC$'"
 
 
 
-En el siguiente ejemplo de VBScript se muestran los recursos compartidos en el sistema local.
+En el ejemplo de VBScript siguiente se muestran los recursos compartidos en el sistema local.
 
 
 ```VB
@@ -461,7 +461,7 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

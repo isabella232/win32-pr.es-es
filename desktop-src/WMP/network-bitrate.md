@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec142885bdd718903e956f8e86b59c3753cb024ecccc5efb2f8494797ea6a818
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4373d667ea41d55b5b0e12f1a47289f15d7b115b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967423"
 ---
 # <a name="networkbitrate"></a>Network.bitRate
 
 La **propiedad bitRate** recupera la velocidad de bits actual que se recibe.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
-*player*. *red*. **bitRate**
+*player*. *network*. **bitRate**
 
 ## <a name="possible-values"></a>Valores posibles
 
 Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este valor es una combinación de las velocidades de bits de las secuencias de audio y vídeo actuales.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se usa *Network*. **bitRate** para mostrar la velocidad de bits del medio actual. La información se muestra en un DIV HTML creado con id. = "BR". El **objeto Player** se creó con id. = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **bitRate** para mostrar la velocidad de bits del medio actual. La información se muestra en una DIV HTML creada con id. = "BR". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -76,7 +76,7 @@ En el ejemplo JScript siguiente se usa *Network*. **bitRate** para mostrar la ve
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

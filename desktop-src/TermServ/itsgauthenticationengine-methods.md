@@ -5,12 +5,12 @@ ms.assetid: 5F0396FF-8C62-4FC6-8CD3-06B28D5BC328
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83945c213f03cd468fc97f272afe4b05243205d2d99ed9d92ef63db40e7356ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 251ea2ff3ee1bdc9923e6c2308f5852f835421e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118129127"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968179"
 ---
 # <a name="itsgauthenticationengine-methods"></a>Métodos ITSGAuthenticationEngine
 

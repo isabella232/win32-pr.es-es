@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9a7a3f2f5dbac86426f0b5819cc9532eb0c8cdeb64c4f96c8fb9808c0c4fa7ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5019e2066c87960db1cf5375e1cfb69575a44528
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118254174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882908"
 ---
 # <a name="jet_objectlistcolumnidgrbit-property"></a>JET_OBJECTLIST.columnidgrbit, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el columnid de la columna de la tabla temporal que almacena los bits grb
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

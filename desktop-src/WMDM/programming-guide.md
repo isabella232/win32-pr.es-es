@@ -1,13 +1,13 @@
 ---
 title: Guía de programación de WMDM
-description: Obtenga información sobre las acciones que debe realizar una aplicación o proveedor de servicios Windows de Administrador de dispositivos media.
+description: Obtenga información sobre las acciones que debe realizar una aplicación o un proveedor de servicios Windows de Administrador de dispositivos media.
 ms.assetid: 8834cc4e-0e2d-4776-8676-f4b6e1614a4b
 keywords:
-- Windows Guía de programación Administrador de dispositivos multimedia
+- Windows Guía Administrador de dispositivos,programación
 - Administrador de dispositivos,guía de programación
 - Windows Aplicaciones Administrador de dispositivos multimedia, aplicaciones de escritorio
-- Administrador de dispositivos aplicaciones de escritorio
-- Windows Media Administrador de dispositivos,proveedores de servicios
+- Administrador de dispositivos,aplicaciones de escritorio
+- Windows Media Administrador de dispositivos, proveedores de servicios
 - Administrador de dispositivos,proveedores de servicios
 - aplicaciones de escritorio, guía de programación
 - proveedores de servicios, guía de programación
@@ -16,12 +16,12 @@ keywords:
 - guía de programación, Windows media Administrador de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 619328a641ef86b76da5108793a1601ea7358e5191f682917a732ef2b11e5a1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9aee52448ff8e390762f495a864ef81d8841ec58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119766345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967799"
 ---
 # <a name="wmdm-programming-guide"></a>Guía de programación de WMDM
 

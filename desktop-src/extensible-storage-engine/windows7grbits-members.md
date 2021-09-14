@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104375
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: faa2e59d368c7b2bf58ca9c7ea7a083561943b90e00e39ab452002e7a0cea68f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2211927cadf48cd8fc47adab71951f9da141926d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117701217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882540"
 ---
 # <a name="windows7grbits-members"></a>Miembros de Windows7Grbits
 
@@ -105,7 +105,7 @@ El [tipo Windows7Grbits](./windows7grbits-class.md) expone los siguientes miembr
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

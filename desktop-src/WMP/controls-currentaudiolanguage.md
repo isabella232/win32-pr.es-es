@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63c5eb53c9f408a9d50a7f738434e5dcd30fc804970b3e1ea95c985c90d62063
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1bc84c7d4c14bb742a6db37feca59fb9d0db0e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117750617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967724"
 ---
 # <a name="controlscurrentaudiolanguage"></a>Controls.currentAudioLanguage
 
@@ -34,7 +34,7 @@ player.controls.currentAudioLanguage
 
 Esta propiedad es un número de lectura y **escritura** (**long**).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un LCID identifica de forma única un dialecto de idioma determinado, denominado configuración regional.
 
@@ -55,7 +55,7 @@ Al trabajar con contenido de DVD, la especificación de un LCID hará que se sel
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

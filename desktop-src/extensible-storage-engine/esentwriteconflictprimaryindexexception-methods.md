@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103202
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0d96d093f2b16fb526d7227ea9e1ac144e90612e5bd790e2393bf141e2686aa5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad3f68392ac9520920be504edb04b95a9de95992
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118768282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883100"
 ---
 # <a name="esentwriteconflictprimaryindexexception-methods"></a>Métodos de EsentWriteConflictPrimaryIndexException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentWriteConflictPrimaryIndexException](./esentwriteconflictprimaryindexexception-class.md) expone los siguientes miembros.
+El [tipo EsentWriteConflictPrimaryIndexException](./esentwriteconflictprimaryindexexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 

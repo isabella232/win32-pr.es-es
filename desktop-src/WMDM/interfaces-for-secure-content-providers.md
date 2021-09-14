@@ -11,7 +11,7 @@ keywords:
 - Windows Proveedor Administrador de dispositivos de contenido seguro (SCP)
 - Administrador de dispositivos proveedor de contenido seguro (SCP)
 - referencia de programación, proveedor de contenido seguro (SCP)
-- referencia de Windows media Administrador de dispositivos proveedor de contenido seguro (SCP)
+- referencia de Windows de Administrador de dispositivos de contenido seguro (SCP)
 - proveedor de contenido seguro (SCP)
 - SCP (proveedor de contenido seguro)
 - Windows Media Administrador de dispositivos,SCP interfaces
@@ -21,12 +21,12 @@ keywords:
 - Interfaces de SCP, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a80b74cfc50fb6dcf328379c5c46696dc2ee097e2ed5c2507a2a4f14676efd85
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14e4483a5bfb62e165b1bc17e588dfe3bd5b73f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119247345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967848"
 ---
 # <a name="interfaces-for-secure-content-providers"></a>Interfaces para proveedores de contenido seguro
 

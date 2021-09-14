@@ -5,12 +5,12 @@ ms.assetid: BF315663-8C4D-4477-A8ED-0F0D77B9BBDC
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a21e7bee8c78eb951ac49aad4aa4ae7c85af183859d8eb40669f9a14e8bb309f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97fd875c4e35b1682b1704bcf983da4b5d23dab2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118128634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968159"
 ---
 # <a name="itspubplugin-properties"></a>Propiedades de ItsPubPlugin
 

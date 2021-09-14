@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_RSTINFO constructor'
+description: 'Más información sobre: constructor de JET_RSTINFO'
 title: JET_RSTINFO constructor
 TOCTitle: 'JET_RSTINFO constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RSTINFO.#ctor
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 26196aa5f640a91424179df32e2aaed16423f3c312281652c6f8870fe21b2553
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f26ae112cd33988e838fbb48a64ebfcbd7cb4607
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119038673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882833"
 ---
 # <a name="jet_rstinfo-constructor"></a>JET_RSTINFO constructor
 
@@ -50,7 +50,7 @@ Dim instance As New JET_RSTINFO()
 public JET_RSTINFO()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

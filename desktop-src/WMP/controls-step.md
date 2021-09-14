@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4626ff80aee55ad6c22be7580a07ef2319afb6792a8c11b815d72af23b5727fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43fc50ea28bde95efef6e6261788fdcc62df6089
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118839830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967675"
 ---
 # <a name="controlsstep-method"></a>Método Controls.step
 
@@ -53,7 +53,7 @@ Controls.step(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Actualmente, este método solo admite los parámetros 1 o -1, por lo que solo puede ir paso a paso un fotograma a la vez.
 
@@ -63,7 +63,7 @@ Actualmente, este método solo admite los parámetros 1 o -1, por lo que solo pu
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media para Windows XP o posterior.<br/>                           |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

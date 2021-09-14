@@ -4,12 +4,12 @@ ms.assetid: 7a4daba0-3497-482b-b7eb-d5596d314062
 title: Enumeraciones winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26e13dc72b1ef137832060c8d64a5b7702e4f5b426435ac5661dab95b44b9a89
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bb6743474df2bca12937cf944a12b9543c72036f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119733145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967264"
 ---
 # <a name="winsock-enumerations"></a>Enumeraciones winsock
 
@@ -19,7 +19,7 @@ En la lista siguiente se proporcionan descripciones concisas de cada enumeració
 |-|-|
 | [**ESTADO DEL \_ DESENCADENADOR DEL CANAL DE \_ \_ CONTROL**](/windows/win32/api/mstcpip/ne-mstcpip-control_channel_trigger_status) | Especifica el estado de una consulta para la configuración de transporte **\_ NOTIFICATION \_ \_ CAPABILITY** en TIEMPO REAL para un socket TCP que se usa con [**ControlChannelTrigger**](/uwp/api/Windows.Networking.Sockets.ControlChannelTrigger) para recibir notificaciones de red en segundo plano en una aplicación en tiempo de ejecución de Windows. |
 | [**MÉTODO eWINDOW \_ ADVANCE \_**](/windows/win32/api/wsrm/ne-wsrm-ewindow_advance_method) | Especifica el modo de avance de ventana utilizado para Reliable Multicast. |
-| [**Garantizar**](./guarantee-2.md) | Ya no se usa. |
+| [**GARANTIZAR**](./guarantee-2.md) | Ya no se usa. |
 | [**TIPO \_ DE MODO DE \_ MULTIDIFUSIÓN**](/windows/win32/api/ws2ipdef/ne-ws2ipdef-multicast_mode_type) | Especifica el modo de filtro para las direcciones de grupo de multidifusión. |
 | [**NIVEL DE PROVEEDOR \_ \_ NAPI**](/windows/win32/api/nsemail/ne-nsemail-napi_provider_level) | Especifica el nivel de autoridad del proveedor de un proveedor de espacios de nombres NS \_ EMAIL para un dominio determinado. |
 | [**TIPO DE \_ PROVEEDOR \_ NAPI**](/windows/win32/api/nsemail/ne-nsemail-napi_provider_type) | Especifica el tipo de hospedaje esperado para un proveedor de espacios de nombres. |

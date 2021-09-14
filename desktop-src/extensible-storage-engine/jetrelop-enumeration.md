@@ -42,16 +42,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2288a77ac455cb5c12b5f12ca0d9d89c392179a8780a5bcdcc46d112818617f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7839e0223eb9dd773ca9a5d10b5210b10b0a944a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117891050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882673"
 ---
 # <a name="jetrelop-enumeration"></a>Enumeración JetRestone
 
-Operación de comparación para el filtro definido como [JET_INDEX_COLUMN](./jet-index-column-class.md).
+Operación de comparación para el filtro definido [como JET_INDEX_COLUMN](./jet-index-column-class.md).
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -69,7 +69,7 @@ Dim instance As JetRelop
 public enum JetRelop
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -82,7 +82,7 @@ public enum JetRelop
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Es igual que</td>
+<td>es igual a</td>
 <td>Acepte solo las filas que tengan un valor de columna igual al valor especificado.</td>
 </tr>
 <tr class="even">
@@ -93,7 +93,7 @@ public enum JetRelop
 <tr class="odd">
 <td></td>
 <td>NotEquals</td>
-<td>Acepte solo las filas que tengan un valor de columna no igual al valor especificado.</td>
+<td>Acepte solo las filas que tengan un valor de columna que no sea igual al valor especificado.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -122,14 +122,14 @@ public enum JetRelop
 </tr>
 <tr class="odd">
 <td></td>
-<td>Máscara de bitsNotEqualsZero</td>
+<td>BitmaskNotEqualsZero</td>
 <td>Acepte solo las filas que tengan el valor de columna ANDed con una máscara de bits determinada que produce un valor distinto de cero.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

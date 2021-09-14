@@ -1,22 +1,22 @@
 ---
-title: Creación del super archivo
-description: Creación del super archivo
+title: Creación del super file
+description: Creación del super file
 ms.assetid: 7c2ad3a6-e749-4cb5-9f72-17273fdcd00d
 keywords:
-- Reproductor de Windows Media Máscaras móviles, archivos super
+- Reproductor de Windows Media Máscaras móviles, archivos Super
 - skins,Super files
 - crear máscaras, archivos super
-- Archivos super en máscaras
+- Super files in skins
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d300097c3ffd7cd83d540dadd01c89057258f55be639cdbe8c940783831b13d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10b9b282036b1613dd2e59e225a3d8370b1651cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119651685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967599"
 ---
-# <a name="creating-the-super-file"></a>Creación del super archivo
+# <a name="creating-the-super-file"></a>Creación del super file
 
 El archivo Super contiene la imagen deshabilitada para las barras de seguimiento.
 

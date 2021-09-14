@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40bd97ae2efe7513bc69d308a29356cfc7b141ecc84b816bdc7fad68d79aa785
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4783d86160070fc61202f97b4cf3882f2cebcfb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119616882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967431"
 ---
 # <a name="networkbandwidth"></a>Network.bandWidth
 
 La **propiedad bandWidth** recupera el ancho de banda actual del clip.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
-*player*. *network*. **bandWidth**
+*player*. *red*. **bandWidth**
 
 ## <a name="possible-values"></a>Valores posibles
 
 Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad devuelve cero si *player*. **La propiedad URL** no está establecida. Esta propiedad solo es válida para los medios de streaming.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo JScript de Microsoft se usa *Network*. **bandWidth para** mostrar el ancho de banda de medios actual. La información se muestra en una DIV HTML creada con id. = "BW". El **objeto Player** se creó con id. = "Player".
+En el siguiente ejemplo JScript microsoft usa *Network*. **bandWidth para** mostrar el ancho de banda de medios actual. La información se muestra en un DIV HTML creado con id. = "BW". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -72,14 +72,14 @@ En el siguiente ejemplo JScript de Microsoft se usa *Network*. **bandWidth para*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

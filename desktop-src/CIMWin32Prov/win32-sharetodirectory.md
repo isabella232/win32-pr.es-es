@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d041209dcdbd1d9a39d08acb75180ec9cf292f01934c21762418571d44a32460
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f02e5e1ce125a2c8495327a08c14c94ac9f48567
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892476"
 ---
 # <a name="win32_sharetodirectory-class"></a>Clase ShareToDirectory de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_ShareToDirectory
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ShareToDirectory de Win32** tiene estos tipos de miembros:
 
@@ -98,7 +98,7 @@ Referencia a la instancia de que representa las propiedades del directorio que s
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

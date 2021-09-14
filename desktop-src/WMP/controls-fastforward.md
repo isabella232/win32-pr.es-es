@@ -1,11 +1,11 @@
 ---
 title: Método Controls.fastForward
-description: El método fastForward inicia la reproducción rápida del elemento multimedia en la dirección hacia delante. | Controls.fastForward (método)
+description: El método fastForward inicia la reproducción rápida del elemento multimedia en la dirección hacia delante. | Método Controls.fastForward
 ms.assetid: 69cee803-f76b-4a8c-a2c2-1870665afaf9
 keywords:
 - Método fastForward Reproductor de Windows Media
-- Método fastForward Reproductor de Windows Media , clase Controls
-- Clase Controls Reproductor de Windows Media , método fastForward
+- Método fastForward Reproductor de Windows Media , Clase Controls
+- Controla la clase Reproductor de Windows Media método , fastForward
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8b35c2a31c26259a12638d09c968b90ea42f93c692bf4c24af9dc987a6df3bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20d033b8b025955e57a9c3ebed00a6d7a92a666e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118341821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967703"
 ---
 # <a name="controlsfastforward-method"></a>Método Controls.fastForward
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **método fastForward** reproduce el clip cinco veces la velocidad normal. La invocación **de fastForward** cambia el *Configuración*. **propiedad** rate a 5,0. Si **posteriormente** se cambia la velocidad, o si se llama a **play** o **stop,** Reproductor de Windows Media el reenvío rápido.
+El **método fastForward** reproduce el clip a una velocidad cinco veces mayor que la normal. La invocación **de fastForward** cambia el *Configuración*. **propiedad** rate a 5,0. Si **posteriormente** se cambia la velocidad, o si se llama a **play** o **stop,** Reproductor de Windows Media el reenvío rápido.
 
-El **método fastForward** no funciona para difusión en vivo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, llame a **isAvailable**("FastForward").
+El **método fastForward** no funciona para difusiones en directo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, llame a **isAvailable**("FastForward").
 
 ## <a name="examples"></a>Ejemplos
 
@@ -73,7 +73,7 @@ En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **fastForward** 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
@@ -84,7 +84,7 @@ En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **fastForward** 
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
 [**Controls.isAvailable**](controls-isavailable.md)

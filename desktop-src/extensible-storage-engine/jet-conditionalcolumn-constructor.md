@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 99a0d12b93ff20cefdc1bb8620728a8213214c6a766c1968b994998d9b745dd7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70b8252a10c0b40f91d4b0c2c8d6a9e06e9d6c76
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119833965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883028"
 ---
 # <a name="jet_conditionalcolumn-constructor"></a>JET_CONDITIONALCOLUMN constructor
 
@@ -50,7 +50,7 @@ Dim instance As New JET_CONDITIONALCOLUMN()
 public JET_CONDITIONALCOLUMN()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

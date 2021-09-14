@@ -1,6 +1,6 @@
 ---
 title: Controls.currentPosition
-description: La propiedad currentPosition especifica o recupera la posición actual en el elemento multimedia en segundos desde el principio.
+description: La propiedad currentPosition especifica o recupera la posición actual del elemento multimedia en segundos desde el principio.
 ms.assetid: 374ad144-3f74-4d1b-bec5-1cd0f03777b7
 keywords:
 - Controls.currentPosition Reproductor de Windows Media
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be64d23b65a396cfb15e9f7b19b4571bdb26cbb7f308241e9a381375b9d26a40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12c690c102bb95c1a58785f18d727ffdae2a82c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118341882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967711"
 ---
 # <a name="controlscurrentposition"></a>Controls.currentPosition
 
-La **propiedad currentPosition** especifica o recupera la posición actual en el elemento multimedia en segundos desde el principio.
+La **propiedad currentPosition** especifica o recupera la posición actual del elemento multimedia en segundos desde el principio.
 
 ``` syntax
 player.controls.currentPosition
@@ -56,7 +56,7 @@ En el ejemplo siguiente se **usa currentPosition** para buscar una posición pro
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
@@ -67,7 +67,7 @@ En el ejemplo siguiente se **usa currentPosition** para buscar una posición pro
 
 <dl> <dt>
 
-[**Objeto Controls**](controls-object.md)
+[**Controls (objeto)**](controls-object.md)
 </dt> </dl>
 
  

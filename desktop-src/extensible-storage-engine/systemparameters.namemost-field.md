@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Campo SystemParameters.NameMost'
+description: Más información sobre el campo SystemParameters.NameMost
 title: Campo SystemParameters.NameMost
 TOCTitle: NameMost field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.NameMost
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: faebf0b510de48b149eb11e16e3600a610f1b309c277c7be1d185bad926eb820
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b238542b48ca903110fc43e724cb672024a0cc9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118070948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882649"
 ---
 # <a name="systemparametersnamemost-field"></a>Campo SystemParameters.NameMost
 
@@ -53,7 +53,7 @@ value = SystemParameters.NameMost
 public const int NameMost
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

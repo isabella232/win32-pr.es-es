@@ -3,9 +3,9 @@ title: Método Controls.next
 description: El método siguiente establece el elemento actual en el siguiente elemento de la lista de reproducción.
 ms.assetid: 67436c76-8fb9-4350-86f3-67f5e9e6dca1
 keywords:
-- siguiente método Reproductor de Windows Media
-- método next Reproductor de Windows Media , Clase Controls
-- Controla la clase Reproductor de Windows Media método , next
+- next method Reproductor de Windows Media
+- next method Reproductor de Windows Media , Controls (Clase)
+- Clase Controls Reproductor de Windows Media , método next
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a40c063163b0dadaa3db2d0d6281ace64312f68ee999763e6b27d4bd98f84d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f58e6d11eafe38b4ab26e0275bd5c986cd4e4a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967696"
 ---
 # <a name="controlsnext-method"></a>Método Controls.next
 
@@ -44,17 +44,17 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la lista de reproducción  está en la última entrada cuando se invoca la siguiente, la primera entrada de la lista de reproducción se convertirá en la actual.
+Si la lista de reproducción  está en la última entrada cuando se invoca next, la primera entrada de la lista de reproducción se convertirá en la actual.
 
 En el caso de las listas de reproducción del lado servidor, este método omite el siguiente elemento de la lista de reproducción del lado servidor, no la lista de reproducción del cliente.
 
-Al reproducir un DVD, este método omite el siguiente capítulo lógico de la secuencia de reproducción, que puede no ser el siguiente capítulo de la lista de reproducción. Al reproducir los archivos de DVD, este método omite al siguiente todavía.
+Al reproducir un DVD, este método omite el siguiente capítulo lógico de la secuencia de reproducción, que puede no ser el siguiente capítulo de la lista de reproducción. Al reproducir los archivos de DVD, este método pasa al siguiente modo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **junto** a para desplazarse al siguiente elemento de la lista de reproducción actual. El **objeto Player** se creó con id. = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **next** para pasar al siguiente elemento de la lista de reproducción actual. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -83,11 +83,11 @@ En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **junto** a para
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto Controls**](controls-object.md)
+[**Controls (objeto)**](controls-object.md)
 </dt> <dt>
 
 [**Controls.previous**](controls-previous.md)

@@ -4,12 +4,12 @@ ms.assetid: d4cf1462-2e83-49a5-b698-350ff37aa497
 title: Windows Arquitectura de sockets 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7ad3dd29f692df94e1f66c13c00c75eeca36fb04d18c5f2e95e67b91773698f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ae85ad58a4206d75144e47662bd563fb3235eb1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967292"
 ---
 # <a name="windows-sockets-2-architecture"></a>Windows Arquitectura de sockets 2
 

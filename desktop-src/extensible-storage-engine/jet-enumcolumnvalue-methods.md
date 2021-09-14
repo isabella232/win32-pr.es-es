@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_ENUMCOLUMNVALUE métodos'
+description: 'Obtenga más información sobre: JET_ENUMCOLUMNVALUE métodos'
 title: JET_ENUMCOLUMNVALUE métodos
 TOCTitle: JET_ENUMCOLUMNVALUE methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNVALUE
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103624
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: eda515556b2f5b4a3364e757d1c46ad62a1c24ed67ada3359cf72bf6c0133dd1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 920de6d261d8c2d6ca04bfacfe827cf87e062ace
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119667855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883001"
 ---
 # <a name="jet_enumcolumnvalue-methods"></a>JET_ENUMCOLUMNVALUE métodos
 
@@ -60,7 +60,7 @@ El [JET_ENUMCOLUMNVALUE](./jet-enumcolumnvalue-class.md) expone los miembros sig
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335096(v=exchg.10).md">ToString</a></td>
-<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335142(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn335142(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ El [JET_ENUMCOLUMNVALUE](./jet-enumcolumnvalue-class.md) expone los miembros sig
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

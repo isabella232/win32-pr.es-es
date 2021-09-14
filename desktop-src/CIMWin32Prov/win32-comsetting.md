@@ -1,5 +1,5 @@
 ---
-description: La clase WMI abstracta COMSetting de Win32 representa la configuración asociada a un componente del Modelo de objetos componentes \_ (COM) o a una aplicación COM.
+description: La clase WMI abstracta COMSetting de Win32 representa la configuración asociada a un componente de Modelo de objetos componentes \_ (COM) o a una aplicación COM.
 ms.assetid: e8cdbee8-41ab-4aff-b17b-707667138411
 ms.tgt_platform: multiple
 title: Win32_COMSetting clase
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f2082420d4d86c9d7ab35dc03782580e5478845507be0e454f441e3784ec824a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ec7932117d1ff0bc058d2b9a131f77ff9e040bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119656295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892481"
 ---
 # <a name="win32_comsetting-class"></a>Clase COMSetting de Win32 \_
 
-La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) abstracta **\_ COMSetting de Win32** representa la configuración asociada a un componente del Modelo de objetos componentes (COM) o a una aplicación COM.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) abstracta **\_ COMSetting de Win32** representa la configuración asociada a un componente de Modelo de objetos componentes (COM) o a una aplicación COM.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -42,7 +42,7 @@ class Win32_COMSetting : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ COMSetting de Win32** tiene estos tipos de miembros:
 
@@ -68,7 +68,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -101,11 +101,11 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ COMSetting de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
@@ -123,7 +123,7 @@ La **clase \_ COMSetting de Win32** se deriva de [**cim \_ setting**](cim-settin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

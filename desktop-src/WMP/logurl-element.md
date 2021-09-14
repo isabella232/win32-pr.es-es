@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fad38d8272c2f4d8a8e7a8f3f06e4d8db149f0d314e93b32d6f8d330e281f268
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f5fc4a5259f009e7298c0609fc4e6fa8c533b94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117934595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967568"
 ---
 # <a name="logurl-element"></a>Elemento LOGURL
 
@@ -114,7 +114,7 @@ https://www.proseware.com/some/arbitrary/path/My_WMS_Logging_Page.asp?PubPoint=F
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

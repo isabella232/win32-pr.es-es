@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 68f2e2f134b700bcaa4ee0251043d635c5a12059f396eae36ef42c81e0ddbffb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b297479329d02d8a30b79c502619cb0fd0b6f624
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119110175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882964"
 ---
 # <a name="jet_enumcolumnvaluecbdata-property"></a>JET_ENUMCOLUMNVALUE.cbData, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el tamaño del valor de columna de la columna.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

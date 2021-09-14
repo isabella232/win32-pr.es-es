@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMDRMDevice
-description: Esta interfaz no está diseñada para ser implementada por un proveedor de servicios, pero se proporciona para fines de documentación completa. La interfaz IWMDRMDevice permite que un proveedor de contenido seguro se comunique con dispositivos que usan DRM 10 de Windows Media para dispositivos portátiles.
+title: IWMDRMDevice (interfaz)
+description: Esta interfaz no está pensada para ser implementada por un proveedor de servicios, pero se proporciona con fines de documentación completa. La interfaz IWMDRMDevice permite a un proveedor de contenido seguro comunicarse con dispositivos que usan Windows Media DRM 10 para dispositivos portátiles.
 ms.assetid: ebad4acd-16cc-433f-a5e0-fcae59030f55
 keywords:
-- Interfaz IWMDRMDevice windows Media Administrador de dispositivos
-- Interfaz IWMDRMDevice windows Media Administrador de dispositivos , descrito
+- Interfaz IWMDRMDispositivo windows Media Administrador de dispositivos
+- Interfaz IWMDRMDispositivo windows Media Administrador de dispositivos , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,22 +14,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fee40eb6fdada2374b0f571a201ff53fb38f41de7f3cac5eeaa2159475bfdb11
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca240f01f552dfdedb0145e49f61f2ead1f18832
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967819"
 ---
-# <a name="iwmdrmdevice-interface"></a>Interfaz IWMDRMDevice
+# <a name="iwmdrmdevice-interface"></a>IWMDRMDevice (interfaz)
 
-Esta interfaz no está diseñada para ser implementada por un proveedor de servicios, pero se proporciona para fines de documentación completa.
+Esta interfaz no está pensada para ser implementada por un proveedor de servicios, pero se proporciona con fines de documentación completa.
 
-La **interfaz IWMDRMDevice** permite que un proveedor de contenido seguro se comunique con dispositivos que usan DRM 10 de Windows Media para dispositivos portátiles.
+La **interfaz IWMDRMDevice** permite que un proveedor de contenido seguro se comunique con los dispositivos que usan Windows Drm multimedia 10 para dispositivos portátiles.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz IWMDRMDevice** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMDevice** también tiene estos tipos de miembros:
+La **interfaz IWMDRMDevice** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMDevice también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -47,7 +47,7 @@ La **interfaz IWMDRMDevice** tiene estos métodos.
 | [**GetSecureClock**](iwmdrmdevice-getsecureclock.md)                   | Recupera el reloj seguro.<br/>                                                       |
 | [**GetSecureClockChallenge**](iwmdrmdevice-getsecureclockchallenge.md) | Recupera el desafío de reloj seguro.<br/>                                             |
 | [**GetSyncList**](iwmdrmdevice-getsynclist.md)                         | Recupera la lista de sincronización de licencias.<br/>                                       |
-| [**IsWMDRMDevice**](iwmdrmdevice-iswmdrmdevice.md)                     | Determina si el dispositivo admite Drm 10 de Windows Media para dispositivos portátiles.<br/> |
+| [**IsWMDRMDevice**](iwmdrmdevice-iswmdrmdevice.md)                     | Determina si el dispositivo admite Windows DRM 10 multimedia para dispositivos portátiles.<br/> |
 | [**SetLicenseResponse**](iwmdrmdevice-setlicenseresponse.md)           | Establece la respuesta de licencia.<br/>                                                        |
 | [**SetMeterResponse**](iwmdrmdevice-setmeterresponse.md)               | Establece la respuesta de medición.<br/>                                                       |
 | [**SetSecureClockResponse**](iwmdrmdevice-setsecureclockresponse.md)   | Establece la respuesta del reloj seguro.<br/>                                                   |
@@ -56,7 +56,7 @@ La **interfaz IWMDRMDevice** tiene estos métodos.
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

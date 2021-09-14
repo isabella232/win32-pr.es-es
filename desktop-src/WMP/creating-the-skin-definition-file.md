@@ -10,12 +10,12 @@ keywords:
 - archivos de definición de máscara, crear
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db4424b8d97041e5cdc38285c2a073b266441a68c1dac221a9a1d386993b8036
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b66c76ab8e135f09db1684bb07f7a0a6909961d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117936384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967592"
 ---
 # <a name="creating-the-skin-definition-file"></a>Creación del archivo de definición de máscara
 
@@ -24,7 +24,7 @@ El archivo de definición de máscara es un archivo de texto simple. Puede crear
 Las secciones siguientes le guiarán en la creación de un archivo de definición de máscara:
 
 -   [Estructura XML del archivo de definición de máscara](skin-definition-file-xml-structure.md)
--   [Comience con THEME y VIEW](start-with-theme-and-view.md)
+-   [Comience con THEME y VIEW.](start-with-theme-and-view.md)
 -   [Agregar BUTTONGROUP](adding-buttongroup.md)
 -   [Adición de Play BUTTONELEMENT](adding-the-play-buttonelement.md)
 -   [Adición de Close BUTTONELEMENT](adding-the-close-buttonelement.md)

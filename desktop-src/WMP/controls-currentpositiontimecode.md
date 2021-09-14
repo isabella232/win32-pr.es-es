@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dd0dcdf4c5337cf8dc447452ce9667c261a9c7ea4b11f98753a294bca20c6af
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2e2a4ddeb0849a829ff7a16fd80ff4891cfe56c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119736545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967704"
 ---
 # <a name="controlscurrentpositiontimecode"></a>Controls.currentPositionTimecode
 
@@ -34,15 +34,15 @@ player.controls.currentPositionTimecode
 
 Esta propiedad es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El código de tiempo SMPTE proporciona una manera estándar de identificar un fotograma de vídeo individual, que es útil para sincronizar la reproducción. Si un archivo multimedia digital admite código de tiempo SMPTE, Reproductor de Windows Media recuperar la información de posición del código de hora actual o buscar un fotograma de vídeo identificado por una cadena de código de hora **determinada.**
+El código de tiempo SMPTE proporciona una manera estándar de identificar un fotograma de vídeo individual, que es útil para sincronizar la reproducción. Si un archivo multimedia digital admite código de tiempo SMPTE, Reproductor de Windows Media recuperar la información de posición del código de hora actual o buscar en un fotograma de vídeo identificado por una cadena de código de hora **determinada.**
 
 El código de tiempo de SMPTE identifica un fotograma determinado por el número de horas, minutos, segundos y fotogramas que lo separan de un marco de referencia determinado que el fotograma designa como tiempo cero. Normalmente, el período de tiempo cero es el inicio del archivo y un valor de código de tiempo de SMPTE determinado representa el tiempo transcurrido desde el inicio del archivo.
 
 El código de **hora Cadena** está en el intervalo \[ *de formato* \] *hh*:*mm*:*ss*.*ff,* \[ *donde range* \] representa el intervalo, *hh* representa horas, *mm* representa minutos, *ss* representa segundos y *ff* representa fotogramas. Al especificar un valor mediante **currentPositionTimecode**, debe incluir los ocho dígitos usando ceros como marcadores de posición.
 
-El especificador de intervalo corresponde al miembro wRange de la Windows formato multimedia \[  \] **WMT \_ TIMECODE \_ EXTENSION \_ DATA.**  Para obtener más información sobre los intervalos de código de tiempo, consulte el SDK Windows Media Format.
+El especificador de intervalo corresponde al miembro wRange de la estructura Windows formato multimedia \[  \] **WMT \_ TIMECODE \_ EXTENSION \_ DATA.**  Para obtener más información sobre los intervalos de código de tiempo, consulte el SDK Windows Media Format.
 
 La especificación y recuperación **de currentPositionTimecode** solo se admite para los archivos que contienen información de código de tiempo de SMPTE.
 
@@ -63,14 +63,14 @@ Player.controls.currentPositionTimecode = "[00000]01:00:30.05";
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

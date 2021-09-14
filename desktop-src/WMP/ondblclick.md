@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bb6245a53efbac9086d1c59410c88844f23b03778e343fb45e927412299374f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27097937ce1ef5ec1f5c9cac2831099616cd88b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967371"
 ---
 # <a name="ondblclick"></a>ondblclick
 
@@ -28,7 +28,7 @@ El **controlador de eventos ondblclick** controla un evento que se produce cuand
 ondblclick
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **elemento POPUP** y el **elemento VIDEO** cuando *VIDEO*. **windowless** es false o el elemento **EFFECTS** cuando *EFFECTS*. **windowed** es true.
 
@@ -36,13 +36,13 @@ Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **eleme
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

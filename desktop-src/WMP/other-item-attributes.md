@@ -14,12 +14,12 @@ keywords:
 - atributos, otros elementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c64a3289cec8490c801a530f001aef818498239864b34bfa7e81601b4f1d226
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28622c9a55091376f618874889b8d2e6897e2172
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118573708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967300"
 ---
 # <a name="other-item-attributes"></a>Otros atributos de elemento
 

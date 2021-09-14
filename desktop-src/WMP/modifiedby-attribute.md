@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8afaddd2ed99af6d8b853da60c544694937600b480d6e620bfa2ab4637427fd4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf44c318628283627d4bf2f730c143081cee0990
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119647645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967491"
 ---
 # <a name="modifiedby-attribute"></a>Atributo ModifiedBy
 
@@ -29,7 +29,7 @@ El **atributo ModifiedBy** es una cadena que indica si el usuario ha modificado 
 
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en el archivo multimedia digital.
 
@@ -39,13 +39,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [**método Me
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

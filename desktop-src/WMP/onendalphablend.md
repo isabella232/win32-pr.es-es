@@ -1,5 +1,5 @@
 ---
-title: oneefphablend
+title: onephablend
 description: El controlador de eventos onephphablend controla un evento que se produce cuando un elemento completa una operación alphaBlendTo.
 ms.assetid: 3d075ce5-3e95-4a00-bc77-068b88d6c54e
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d77f6a488546760f61fb04d57f01fe5ee3a74a23b8b8d975b791ae22a5e2304a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81780d8a59d386513b97d137d43eb170c93034f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119647215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967367"
 ---
-# <a name="onendalphablend"></a>oneefphablend
+# <a name="onendalphablend"></a>onephablend
 
 El **controlador de eventos onephphablend** controla un evento que se produce cuando un elemento completa una operación alphaBlendTo.
 
@@ -32,13 +32,13 @@ onendalphablend
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

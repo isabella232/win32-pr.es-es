@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ccccf8ffe17bdcbf25c89830e34e7a52294a6c661bc4b7d9193afd215246cf9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a916afa90d1db310041f9b92be94d3af9154df4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119766635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967836"
 ---
 # <a name="iwmdrmdevicegetmeterchallenge-method"></a>IWMDRMDevice::GetMeterChallenge (método)
 
@@ -80,7 +80,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los datos de medición se recopilan y almacenan en el almacén de datos DRM del dispositivo para el contenido con la medición habilitada. Se grabarán acciones como play. Cuando se llama a esta función, el dispositivo recopila los datos de medición en el almacén de datos DRM en forma de documento XML y los envía al equipo host. Si hay demasiados datos, se envían en fases.
 
@@ -97,7 +97,7 @@ Cuando el equipo host recibe los datos de medición, envía los datos a través 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,23 +6,23 @@ keywords:
 - Reproductor de Windows Media Máscaras móviles, marques
 - máscaras, marques
 - referencia de máscaras, marques
-- marques en máscaras, acerca de
+- marquees en máscaras, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d13d733f0cbf76cf6acdb29e57ce78f783ffd99933455d360a34f79dff6d9143
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7efa2db2c6079d47d207240b18a57ebbf7e41ae1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119508454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967511"
 ---
 # <a name="marquee"></a>Marquesina
 
 Un marco es un cuadro de presentación de texto de desplazamiento que muestra información de uno o varios cuadros de presentación de texto. No es necesario agregar una marquesina, pero puede ser muy útil si tiene información detallada que desea mostrar al usuario en un espacio limitado.
 
-El texto de la marquesina se desplazará solo si se cumplen las dos condiciones siguientes:
+El texto del marco solo se desplazará si se cumplen las dos condiciones siguientes:
 
--   Tiene más texto para mostrar en la marquesina que el ancho del cuadro de presentación de marquesina.
+-   Tiene más texto para mostrar en el marco que el ancho del cuadro de presentación de marquesina.
 -   El elemento multimedia está detenido o en pausa.
 
 La sección Marquee del archivo de definición de máscara debe comenzar con esta línea:
@@ -36,7 +36,7 @@ La sección Marquee del archivo de definición de máscara debe comenzar con est
 
 
 > [!Note]  
-> Para mantener la compatibilidad con versiones de Reproductor de Windows Media Mobile anteriores a Reproductor de Windows Media 10 Mobile, el uso de "Tiempo" en un archivo de definición de máscara todavía se considera válido.
+> Para mantener la compatibilidad con las versiones de Reproductor de Windows Media Mobile anteriores a Reproductor de Windows Media 10 Mobile, el uso de "Ándes" en un archivo de definición de máscara todavía se considera válido.
 
  
 
@@ -64,7 +64,7 @@ Puede usar la siguiente plantilla para la sección Marquee del archivo de defini
 Debe usar el orden siguiente para obtener información en cada línea de la sección Marquee (se requiere cada parte de la línea):
 
 1.  [Ubicación de marquesina](marquee-location.md)
-2.  [Fuente marquesa](marquee-font.md)
+2.  [Fuente marquesina](marquee-font.md)
 3.  [Color de marquesina](marquee-color.md)
 4.  [Combinaciones de texto](text-combinations.md)
 

@@ -1,12 +1,12 @@
 ---
 title: Método Update de la Win32_TSGatewayResourceAuthorizationPolicy clase
-description: Actualiza la directiva Escritorio remoto autorización de recursos de escritorio remoto \160; RAP).
+description: Actualiza la directiva Escritorio remoto autorización de recursos de escritorio remoto (RD \ 160; RAP).
 ms.assetid: af997bb8-6027-4f37-80fb-e89622840a2b
 ms.tgt_platform: multiple
 keywords:
-- Actualización del método Servicios de Escritorio remoto
-- Método Update Servicios de Escritorio remoto , Win32_TSGatewayResourceAuthorizationPolicy clase
-- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto método , Update
+- Actualizar método Servicios de Escritorio remoto
+- Update method Servicios de Escritorio remoto , Win32_TSGatewayResourceAuthorizationPolicy class
+- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto , Método Update
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 330bf14759f7cdef129a4c34b32acde1d610619c7f54f7d6ec95789e6bec390f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 904d5fa092cddfbfda1c94f1810a6f6da1a9a8a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967991"
 ---
 # <a name="update-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método Update de la clase \_ TSGatewayResourceAuthorizationPolicy de Win32
 
-Actualiza la directiva de Escritorio remoto autorización de recursos de escritorio remoto (RD RAP).
+Actualiza la directiva Escritorio remoto autorización de recursos de escritorio remoto (RD RAP).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ uint32 Update(
 *Nombre* \[ En\]
 </dt> <dd>
 
-Nombre del ARCHIVO DE ESCRITORIO REMOTO.
+Nombre de RD RAP.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Un grupo de recursos
 "CG"
 </dt> <dd>
 
-Grupo de equipos, tal como se almacena Active Directory Domain Services.
+Grupo de equipos, tal como se almacena en Active Directory Domain Services.
 
 </dd> <dt>
 
@@ -109,14 +109,14 @@ Todos los recursos.
 *UserGroupNames* \[ En\]
 </dt> <dd>
 
-Lista separada por punto y coma de nombres de grupo de usuarios. Los nombres tienen el formato *Dominio \\ UserGroupName*. Si el usuario pertenece a cualquiera de estos grupos de usuarios, se permitirá el acceso.
+Lista de nombres de grupos de usuarios separados por punto y coma. Los nombres tienen el formato *Dominio \\ UserGroupName*. Si el usuario pertenece a cualquiera de estos grupos de usuarios, se permitirá el acceso.
 
 </dd> <dt>
 
 *ProtocolNames* \[ En\]
 </dt> <dd>
 
-Lista separada por punto y coma de nombres de protocolo que están habilitados para esta directiva. Los nombres deben coincidir con la devolución del [**método GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md) de la clase [**\_ TSGatewayServerSettings de Win32.**](win32-tsgatewayserversettings.md)
+Lista separada por punto y coma de los nombres de protocolo que están habilitados para esta directiva. Los nombres deben coincidir con la devolución del [**método GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md) de la clase [**\_ TSGatewayServerSettings de Win32.**](win32-tsgatewayserversettings.md)
 
 </dd> <dt>
 
@@ -129,13 +129,13 @@ Lista separada por punto y coma de números de puerto que están habilitados par
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las clases Windows Management Instrumentation (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,13 +145,13 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

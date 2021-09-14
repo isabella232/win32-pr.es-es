@@ -9,7 +9,7 @@ keywords:
 - Reproductor de Windows Media en línea, ubicaciones de biblioteca
 - tiendas en línea, ubicaciones de biblioteca
 - tiendas en línea de tipo 1, ubicaciones de biblioteca
-- Reproductor de Windows Media en línea,elementos seleccionados
+- Reproductor de Windows Media en línea, elementos seleccionados
 - tiendas en línea, elementos seleccionados
 - tiendas en línea de tipo 1, elementos seleccionados
 - Reproductor de Windows Media biblioteca, ubicaciones
@@ -18,12 +18,12 @@ keywords:
 - library,selected items
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6532c6417b6e95632aa21fa8d4a3a9ed943ad844eb1324f34eb80191043eeb80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d665b11e7509e369224d3e85db30dddb4a988a14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967583"
 ---
 # <a name="location-and-selected-item"></a>Ubicación y elemento seleccionado
 
@@ -35,7 +35,7 @@ Reproductor de Windows Media usa los cinco elementos siguientes para caracteriza
 -   tipo de elemento seleccionado
 -   Id. de elemento seleccionado
 
-Normalmente, puede pensar en la vista en Reproductor de Windows Media como un contenedor de elementos. El contenedor tiene un tipo y un elemento tiene un tipo. Todos los elementos de un contenedor tienen el mismo tipo. Tanto los tipos de ubicación como los tipos de elemento se especifican mediante las constantes [de ubicación de la biblioteca](library-location-constants.md). Por ejemplo, si la vista actual muestra un álbum individual, el tipo de ubicación de la biblioteca es CPAlbumID y, como un álbum contiene pistas, el tipo de elemento seleccionado es CPTrackID.
+Normalmente, puede pensar en la vista en Reproductor de Windows Media como un contenedor de elementos. El contenedor tiene un tipo y un elemento tiene un tipo. Todos los elementos de un contenedor tienen el mismo tipo. Los tipos de ubicación y los tipos de elemento se especifican mediante las constantes [de ubicación de la biblioteca](library-location-constants.md). Por ejemplo, si la vista actual muestra un álbum individual, el tipo de ubicación de la biblioteca es CPAlbumID y, como un álbum contiene pistas, el tipo de elemento seleccionado es CPTrackID.
 
 En la tabla siguiente se muestran los tipos de ubicación y elemento de varios contenedores.
 
@@ -56,7 +56,7 @@ En la tabla siguiente se muestran los tipos de ubicación y elemento de varios c
 
 Las pestañas de Reproductor de Windows Media representan tareas diferentes. El reproductor muestra el contenido de la tienda en línea en tres paneles de tareas diferentes: **Biblioteca,** **Grabar** y **Sincronizar.** El panel de tareas Biblioteca también se denomina **panel de** tareas Examinar. A veces, un panel de tareas se denomina  *característica*, por lo que es posible que vea términos como Característica de grabación y Característica *de sincronización* en esta documentación.
 
-En los ejemplos siguientes se muestra cómo Reproductor de Windows Media utiliza los cinco fragmentos de información (tarea, tipo de ubicación de biblioteca, identificador de ubicación de biblioteca, tipo de elemento seleccionado, id. de elemento seleccionado) para caracterizar distintas vistas.
+En los ejemplos siguientes se muestra cómo Reproductor de Windows Media utiliza los cinco fragmentos de información (tarea, tipo de ubicación de biblioteca, identificador de ubicación de biblioteca, tipo de elemento seleccionado, id. de elemento seleccionado) para caracterizar las distintas vistas.
 
 En el **panel de** tareas Grabar, el reproductor muestra un álbum como un contenedor de pistas. El álbum tiene un identificador de 250. En la vista, el elemento seleccionado es la pista que tiene un identificador de 800. Tenga en cuenta que 800 es el identificador de la pista en el catálogo de la tienda en línea, no el número de la pista del álbum.
 

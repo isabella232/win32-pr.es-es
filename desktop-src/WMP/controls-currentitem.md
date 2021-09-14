@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66dc0ad047213e0fbba7dbdd7336e67b8d015e39aba510ac37bd3701462413ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81658665cb6f31acd327f5050a733a2fc3c70371
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967708"
 ---
 # <a name="controlscurrentitem"></a>Controls.currentItem
 
@@ -34,7 +34,7 @@ player.controls.currentItem
 
 Esta propiedad es un objeto Multimedia de lectura **y** escritura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método solo funciona con elementos del *Reproductor de*. **currentPlaylist**. No se admite la llamada a **currentItem** con una referencia a un elemento multimedia guardado.
 
@@ -71,7 +71,7 @@ En el JScript siguiente se usa **currentItem** para establecer el elemento multi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

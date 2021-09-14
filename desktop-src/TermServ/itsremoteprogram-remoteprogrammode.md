@@ -1,5 +1,5 @@
 ---
-title: Propiedad ITSRemoteProgram RemoteProgramMode
+title: ItsRemoteProgram RemoteProgramMode, propiedad
 description: Modo remoteApp Windows Server 2008 R2.
 ms.assetid: 9ebdf966-db9c-4a14-8469-f8b153c6ea78
 ms.tgt_platform: multiple
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c36f450e6cbfec3922a56a42bc2f1f61466774eeff46c0987b6fad4ca9dc9731
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e8582824e2f6349e37b125ffd974847b602ad6fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968136"
 ---
-# <a name="itsremoteprogramremoteprogrammode-property"></a>Propiedad ITSRemoteProgram::RemoteProgramMode
+# <a name="itsremoteprogramremoteprogrammode-property"></a>ITSRemoteProgram::RemoteProgramMode, propiedad
 
 Modo remoteApp Windows Server 2008 R2.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -59,7 +59,7 @@ HRESULT get_RemoteProgramMode(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El modo RemoteApp. Si se establece en **VARIANT \_ TRUE,** el modo RemoteApp está habilitado y la sesión remota hospedará programas remoteApp. Si se establece en **VARIANT \_ FALSE** (valor predeterminado), el modo RemoteApp no está habilitado. La sesión remota hospedará un escritorio remoto.
+Modo RemoteApp. Si se establece en **VARIANT \_ TRUE,** el modo RemoteApp está habilitado y la sesión remota hospedará programas RemoteApp. Si se establece **en VARIANT \_ FALSE** (valor predeterminado), el modo RemoteApp no está habilitado. La sesión remota hospedará un escritorio remoto.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -79,7 +79,7 @@ Devuelve **S \_ OK si** se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

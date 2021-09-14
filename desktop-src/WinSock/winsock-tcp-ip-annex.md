@@ -4,12 +4,12 @@ ms.assetid: ff92750b-453e-4328-821c-1098de8e6125
 title: Anexo TCP/IP de Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a5cc403f0ff7f7e6b1daeb979ae9b7ec6ab3c3bed455843cec7ae4f43469975
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4fd86a016ed80d9c71ac1647323508cb4dc7b08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118822369"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967216"
 ---
 # <a name="winsock-tcpip-annex"></a>Anexo TCP/IP de Winsock
 

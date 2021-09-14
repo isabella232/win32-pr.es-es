@@ -18,12 +18,12 @@ keywords:
 - paneles de tareas de servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d57422b388a3818579f868d2eb717701209ae55e3effb9aac255dbff6990973b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c7a1dbe89cc38748bf4b217efff8ed417a86e2be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118836355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967459"
 ---
 # <a name="navigating-from-windows-media-player-features"></a>Navegar desde Reproductor de Windows Media características
 

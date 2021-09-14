@@ -19,19 +19,19 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fba09bc0bfb806a8785ea1c009f2bfbb7eb5105c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0ff2d9e7c538e8aa8cc862fe9a72c0308e497fd4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882692"
 ---
 # <a name="jetprereadindexranges-function"></a>JetPrereadIndexRanges (Función)
 
 
 _**Se aplica a:** Windows | Windows Servidor_
 
-La **función JetPrereadIndexRanges** prelega los índices para mejorar el rendimiento.
+La **función JetPrereadIndexRanges** prelecta los índices para mejorar el rendimiento.
 
 La **función JetPrereadIndexRanges** se introdujo en el Windows 8 operativo.
 
@@ -56,7 +56,7 @@ Contexto de sesión de base de datos que se usará para la llamada API.
 
 *tableid*
 
-Tabla con la que se emitirán los preleciones.
+Tabla con la que se emiten las lecturas previas.
 
 *rgIndexRanges*
 
@@ -72,7 +72,7 @@ Número de intervalos de claves que se han leído previamente.
 
 *rgcolumnidPreread*
 
-Lista de id. de columna para las columnas de valor largo que se deben leer previamente. De forma predeterminada, solo se leerá previamente el registro en la página. Si las columnas de valores largos fuera de página deben leerse previamente, sus id. de columna deben pasarse a través de este parámetro.
+Lista de los id. de columna para las columnas de valor largo que se deben leer previamente. De forma predeterminada, solo se leerá previamente el registro en la página. Si es necesario leer previamente las columnas de valores largos fuera de página, sus id. de columna deben pasarse a través de este parámetro.
 
 *ccolumnidPreread*
 
@@ -83,18 +83,18 @@ Número de id. de columna para las columnas de valor largo que se deben leer pre
 Grupo de bits que especifica cero o más de los valores de dirección de lectura previa enumerados en la tabla siguiente.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>Adelante</p> | <p>Leer previamente hacia delante.</p> | 
+| <p>Adelante</p> | <p>Leer previamente.</p> | 
 | <p>Atrás</p> | <p>Leer previamente hacia atrás.</p> | 
 | <p>FirstPageOnly</p> | <p>Leer previamente solo la primera página de cualquier columna larga.</p> | 
-| <p>NormalizedKey</p> | <p>Clave o marcador normalizado proporcionado en lugar del valor de columna.</p> | 
+| <p>NormalizedKey</p> | <p>Clave o marcador normalizado proporcionados en lugar del valor de columna.</p> | 
 
 
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los códigos de retorno enumerados en la tabla siguiente. Para obtener más información sobre los posibles errores extensibles Storage Engine (ESE), vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los códigos de retorno enumerados en la tabla siguiente. Para obtener más información sobre los posibles errores extensibles Storage Engine (ESE), vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -103,14 +103,20 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los c
 
 
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Si los registros con los intervalos de claves especificados no están en la caché del búfer, debe iniciar lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.
+Si los registros con los intervalos de claves especificados no están en la caché del búfer, debe iniciar lecturas asincrónicas para incluir los registros en la caché del búfer de base de datos.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2012.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2012.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

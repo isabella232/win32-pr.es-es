@@ -9,12 +9,12 @@ keywords:
 - marquees en máscaras, fuentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ec6b0c6bc4b51a5158c967a4890a13a62108d341585d8e93443a15a636f9b1c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9b912fdaa91c84b4b6ec38fcd6716f7f4b3102c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117934564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967532"
 ---
 # <a name="marquee-font"></a>Fuente marquesina
 
@@ -45,7 +45,7 @@ Los únicos valores permitidos se muestran en la tabla siguiente.
 
 
 
-| Valor | Descripción |
+| Value | Descripción |
 |-------|-------------|
 | B     | Negrita        |
 | N     | Normal      |

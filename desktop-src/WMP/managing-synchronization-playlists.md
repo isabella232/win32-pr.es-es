@@ -6,9 +6,9 @@ keywords:
 - Reproductor de Windows Media dispositivos portátiles
 - Reproductor de Windows Media de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Reproductor de Windows Media ActiveX, dispositivos portátiles
-- ActiveX, dispositivos portátiles
-- Reproductor de Windows Media Control ActiveX dispositivos móviles, dispositivos portátiles
+- Reproductor de Windows Media ActiveX control, dispositivos portátiles
+- ActiveX control, dispositivos portátiles
+- Reproductor de Windows Media Control de ActiveX móviles, dispositivos portátiles
 - Reproductor de Windows Media Dispositivos móviles y portátiles
 - dispositivos portátiles, administración de listas de reproducción de sincronización
 - sincronización de dispositivos, listas de reproducción
@@ -26,12 +26,12 @@ keywords:
 - listas de reproducción de sincronización, administración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10253d7f08c618d62079ccc1767fdaf85560861eae68d39cd897e7959eaffcad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be0fe084918c0b69b827dbb941388246cbd177ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967544"
 ---
 # <a name="managing-synchronization-playlists"></a>Administración de listas de reproducción de sincronización
 

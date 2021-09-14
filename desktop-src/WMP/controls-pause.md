@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e152807803d6ab6d002a3f57ac595d060f60e7391af1a3806ad5c2ea76781fcc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 898efb51355a1301bc76717f6d0184d0b30d619d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117936691"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967683"
 ---
 # <a name="controlspause-method"></a>Método Controls.pause
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando un archivo está en pausa, Reproductor de Windows Media no entrega ningún recurso del sistema, como el dispositivo de audio.
 
-Ciertos tipos de medios no se pueden pausar, como las secuencias en vivo. Para determinar si se puede pausar un tipo de medio determinado, use *Controles*. **isAvailable('Pause')**.
+Algunos tipos de medios no se pueden pausar, como las secuencias en vivo. Para determinar si se puede pausar un tipo de medio determinado, use *Controles*. **isAvailable('Pause')**.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -73,18 +73,18 @@ En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **la pausa para*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objeto Controls**](controls-object.md)
+[**Controls (objeto)**](controls-object.md)
 </dt> <dt>
 
 [**Controls.isAvailable**](controls-isavailable.md)

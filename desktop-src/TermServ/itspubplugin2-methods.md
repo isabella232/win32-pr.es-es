@@ -1,18 +1,18 @@
 ---
-title: Métodos de ItsPubPlugin2
+title: Métodos ItsPubPlugin2
 description: La interfaz ItsPubPlugin2 expone los métodos siguientes.
 ms.assetid: EF06E6F7-51F9-4B6C-8D37-D1CC8CA0BF38
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64833a83ea263c417dd0d3f61de4cdb11b63b5ae9693401af5703987a26240d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 693d002ae269dd2529b50e50f821c8a9b947c49f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118128607"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968147"
 ---
-# <a name="itspubplugin2-methods"></a>Métodos de ItsPubPlugin2
+# <a name="itspubplugin2-methods"></a>Métodos ItsPubPlugin2
 
 La [**interfaz ItsPubPlugin2**](/windows/desktop/api/tspubplugin2com/nn-tspubplugin2com-itspubplugin2) expone los métodos siguientes.
 
@@ -23,7 +23,7 @@ La [**interfaz ItsPubPlugin2**](/windows/desktop/api/tspubplugin2com/nn-tspubplu
 [**Método DeletePersonalDesktopAssignment**](/windows/desktop/api/tspubplugin2com/nf-tspubplugin2com-itspubplugin2-deletepersonaldesktopassignment)
 </dt> <dd>
 
-Se llama para eliminar una asignación entre el usuario especificado y una máquina virtual en una colección de escritorios virtuales personales.
+Se llama para eliminar una asignación entre el usuario especificado y una máquina virtual de una colección de escritorios virtuales personales.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Recupera una lista de recursos asignados al usuario especificado.
 [**Método ResolvePersonalDesktop**](/windows/desktop/api/tspubplugin2com/nf-tspubplugin2com-itspubplugin2-resolvepersonaldesktop)
 </dt> <dd>
 
-Se llama para resolver una asignación entre el usuario especificado y una máquina virtual en una colección de escritorios virtuales personales.
+Se llama para resolver una asignación entre el usuario especificado y una máquina virtual de una colección de escritorios virtuales personales.
 
 </dd> </dl>
 

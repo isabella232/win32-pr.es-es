@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b719771f265347da59ce4d8c5990a5b9dc5a72315780def0fd3a34b108e18169
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfec99c109dfd3f69e22caf13071b77cd41f61bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117756814"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968144"
 ---
 # <a name="itsremoteprogram-interface"></a>Interfaz ITSRemoteProgram
 
 Incluye métodos para establecer y recuperar el modo RemoteApp y los parámetros de inicio de un programa RemoteApp, como la ruta de acceso del archivo ejecutable y el directorio de trabajo.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ITSRemoteProgram** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ITSRemoteProgram también** tiene estos tipos de miembros:
 
@@ -56,7 +56,7 @@ La **interfaz ITSRemoteProgram** tiene estas propiedades.
 
 | Propiedad                                                                   | Tipo de acceso           | Descripción                    |
 |:---------------------------------------------------------------------------|:----------------------|:-------------------------------|
-| [**RemoteProgramMode**](itsremoteprogram-remoteprogrammode.md)<br/> | Lectura/escritura<br/> | Modo RemoteApp.<br/> |
+| [**RemoteProgramMode**](itsremoteprogram-remoteprogrammode.md)<br/> | Lectura y escritura<br/> | El modo RemoteApp.<br/> |
 
 
 
@@ -76,7 +76,7 @@ La **interfaz ITSRemoteProgram** tiene estas propiedades.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -44,12 +44,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 735b033017958816e8e9a40caea935847104fdcbe3e9acf3128890d88685d09e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba5646c6ac9abf41fddc023ad39884e611681a71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119867855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967984"
 ---
 # <a name="win32_terminalservice-class"></a>Clase TerminalService de Win32 \_
 
@@ -94,7 +94,7 @@ class Win32_TerminalService : Win32_Service
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TerminalService de Win32** tiene estos tipos de miembros:
 
@@ -198,7 +198,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/desktop/api/winsvc/ns-winsvc-service_status) \| dwCheckPoint"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Check Point Count")
 </dt> </dl>
 
-Valor que el servicio incrementa periódicamente para informar de su progreso durante una operación larga de inicio, detenerse, pausar o continuar. Por ejemplo, el servicio incrementa este valor a medida que completa cada paso de su inicialización cuando se inicia. El programa de interfaz de usuario que invoca la operación en el servicio usa este valor para realizar un seguimiento del progreso del servicio durante una operación larga. Este valor no es válido y debe ser cero cuando el servicio no tenga pendiente una operación de inicio, detenerse, pausar o continuar.
+Valor que el servicio incrementa periódicamente para informar de su progreso durante una operación larga de inicio, detenerse, pausar o continuar. Por ejemplo, el servicio incrementa este valor a medida que completa cada paso de su inicialización cuando se inicia. El programa de interfaz de usuario que invoca la operación en el servicio usa este valor para realizar un seguimiento del progreso del servicio durante una operación larga. Este valor no es válido y debe ser cero cuando el servicio no tiene una operación de inicio, detenerse, pausar o continuar pendiente.
 
 Esta propiedad se hereda del [**servicio Win32. \_**](/windows/desktop/CIMWin32Prov/win32-service)
 
@@ -234,7 +234,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures SERVICE \| [**\_ DELAYED AUTO START \_ \_ \_ INFO**](/windows/desktop/api/winsvc/ns-winsvc-service_delayed_auto_start_info) \| fDelayedAutostart"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Delayed Auto-Start")
 </dt> </dl>
 
-Si **es True**, el servicio se inicia después de que se inicien otros servicios de inicio automático más un breve retraso.
+Si **es True,** el servicio se inicia después de que se inicien otros servicios de inicio automático más un breve retraso.
 
 **Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows Server 2016 y Windows 10.
 
@@ -303,7 +303,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/desktop/api/winsvc/ns-winsvc-query_service_configa) \| lpDisplayName"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre para mostrar")
 </dt> </dl>
 
-Nombre del servicio tal como se ve en el complemento Servicios. Esta cadena tiene una longitud máxima de 256 caracteres. Tenga en cuenta que el nombre para mostrar y el nombre del servicio (que se almacena en el Registro) no siempre son iguales. Por ejemplo, el servicio cliente DHCP tiene el nombre de servicio Dhcp, pero el nombre para mostrar cliente DHCP. El nombre se conserva en el Administrador de control de servicios. Sin embargo, [**las comparaciones de DisplayName**](/windows/desktop/CIMWin32Prov/win32-service) siempre no tienen en cuenta mayúsculas de minúsculas.
+Nombre del servicio tal como se ve en el complemento Servicios. Esta cadena tiene una longitud máxima de 256 caracteres. Tenga en cuenta que el nombre para mostrar y el nombre del servicio (que se almacenan en el Registro) no siempre son iguales. Por ejemplo, el servicio cliente DHCP tiene el nombre de servicio Dhcp, pero el nombre para mostrar cliente DHCP. El nombre se conserva en el Administrador de control de servicios. Sin embargo, [**las comparaciones de DisplayName**](/windows/desktop/CIMWin32Prov/win32-service) siempre no tienen en cuenta las mayúsculas y minúsculas.
 
 Restricción: acepta el mismo valor que la [**propiedad Name.**](/windows/desktop/CIMWin32Prov/win32-service)
 
@@ -325,7 +325,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/desktop/api/winsvc/ns-winsvc-query_service_configa) \| dwErrorControl"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Gravedad del error de inicio")
 </dt> </dl>
 
-Gravedad del error si este servicio no se inicia durante el inicio. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
+Gravedad del error si este servicio no se puede iniciar durante el inicio. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
 
 <dt>
 
@@ -347,7 +347,7 @@ No se notifica al usuario.
 
 </dt> <dd>
 
-Se notifica al usuario. Normalmente, se trata de una pantalla de cuadro de mensaje que notifica al usuario el problema.
+Se notifica al usuario. Normalmente, se trata de una presentación de cuadro de mensaje que notifica al usuario el problema.
 
 </dd> <dt>
 
@@ -375,7 +375,7 @@ El sistema intenta reiniciarse con una configuración válida. Si el servicio no
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** ("Unknown")
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconocido** ("Desconocido")
 
 
 </dt> <dd>
@@ -400,7 +400,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/desktop/api/winsvc/ns-winsvc-service_status) \| dwWin32ExitCode"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Código de salida")
 </dt> </dl>
 
-Windows código de error que define los errores detectados al iniciar o detener el servicio. Esta propiedad se establece en **ERROR \_ SERVICE SPECIFIC \_ \_ ERROR** (1066) cuando el error es único para el servicio representado por esta clase y la información sobre el error está disponible en la [**propiedad ServiceSpecificExitCode.**](/windows/desktop/CIMWin32Prov/win32-service) El servicio establece este valor en **NO \_ ERROR cuando se** ejecuta y, de nuevo, en la finalización normal.
+Windows código de error que define los errores detectados al iniciar o detener el servicio. Esta propiedad se establece en **\_ ERROR SERVICE SPECIFIC \_ \_ ERROR** (1066) cuando el error es único para el servicio representado por esta clase y la información sobre el error está disponible en la propiedad [**ServiceSpecificExitCode.**](/windows/desktop/CIMWin32Prov/win32-service) El servicio establece este valor en **NO \_ ERROR** cuando se ejecuta y, de nuevo, en la finalización normal.
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](/windows/desktop/CIMWin32Prov/win32-baseservice)
 
@@ -454,9 +454,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/desktop/api/winsvc/ns-winsvc-query_service_configa) \| lpBinaryPathName"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre de ruta de acceso del archivo")
 </dt> </dl>
 
-Ruta de acceso completa al archivo binario de servicio que implementa el servicio.
+Ruta de acceso completa al archivo binario del servicio que implementa el servicio.
 
-Ejemplo: \\ "SystemRoot \\ System32 \\ drivers \\afd.sys"
+Ejemplo: " \\ SystemRoot \\ System32 \\ drivers \\afd.sys"
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](/windows/desktop/CIMWin32Prov/win32-baseservice)
 
@@ -494,7 +494,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/desktop/api/winsvc/ns-winsvc-service_status) \| dwServiceSpecificExitCode"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Código de salida específico del servidor")
 </dt> </dl>
 
-Código de error específico del servicio para los errores que se producen mientras el servicio se está iniciando o deteniendo. El servicio representado por esta clase define los códigos de salida. Este valor solo se establece cuando el valor [**de la propiedad ExitCode**](/windows/desktop/CIMWin32Prov/win32-service) es **ERROR SERVICE SPECIFIC \_ \_ \_ ERROR** (1066).
+Código de error específico del servicio para los errores que se producen mientras el servicio se inicia o se detiene. El servicio representado por esta clase define los códigos de salida. Este valor solo se establece cuando el valor [**de la propiedad ExitCode**](/windows/desktop/CIMWin32Prov/win32-service) es **ERROR SERVICE SPECIFIC \_ \_ \_ ERROR** (1066).
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](/windows/desktop/CIMWin32Prov/win32-baseservice)
 
@@ -509,7 +509,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/desktop/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Service Type")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/desktop/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo de servicio")
 </dt> </dl>
 
 Tipo de servicio proporcionado a los procesos de llamada.
@@ -527,7 +527,7 @@ Los valores son:
 
 <span id="File_System_Driver"></span><span id="file_system_driver"></span><span id="FILE_SYSTEM_DRIVER"></span>
 
-**Controlador del sistema de archivos** ("controlador del sistema de archivos")
+**Controlador del sistema de archivos** ("Controlador del sistema de archivos")
 
 
 </dt> <dd></dd> <dt>
@@ -562,7 +562,7 @@ Los valores son:
 
 <span id="Interactive_Process"></span><span id="interactive_process"></span><span id="INTERACTIVE_PROCESS"></span>
 
-**Proceso interactivo** ("proceso interactivo")
+**Proceso interactivo** ("Proceso interactivo")
 
 
 </dt> <dd></dd> </dl>
@@ -601,7 +601,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Modo de inicio")
 </dt> </dl>
 
-Modo de inicio del Windows base.
+Modo de inicio del servicio Windows base.
 
 <dt>
 
@@ -612,7 +612,7 @@ Modo de inicio del Windows base.
 
 </dt> <dd>
 
-Controlador de dispositivo iniciado por el cargador de sistema operativo (válido solo para los servicios de controladores).
+Controlador de dispositivo iniciado por el cargador de sistema operativo (válido solo para los servicios de controlador).
 
 </dd> <dt>
 
@@ -676,7 +676,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/desktop/api/winsvc/ns-winsvc-query_service_configa) \| lpServiceStartName"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Starting Account Name")
 </dt> </dl>
 
-Nombre de cuenta con el que se ejecuta un servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato "NombredeUsuario de nombreDe DomainName" o \\ Formato UPN (" *Username@DomainName* "). El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, ". \\ Nombre de usuario" se puede especificar. En el caso de los controladores de nivel de sistema o kernel, [**StartName**](/windows/desktop/CIMWin32Prov/win32-service) contiene el nombre del objeto de controlador (es decir, \\ "FileSystem \\ Rdr" o \\ "Driver Xns") que el sistema de E/S usa para cargar el controlador de \\ dispositivo. Además, si **se especifica NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio.
+Nombre de cuenta con el que se ejecuta un servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato "NombredeUsuario de nombreDe DomainName" o \\ Formato UPN (" *Username@DomainName* "). El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, ". \\ Nombre de usuario" se puede especificar. En el caso de los controladores de kernel o de nivel de sistema, [**StartName**](/windows/desktop/CIMWin32Prov/win32-service) contiene el nombre del objeto de controlador (es decir, \\ "FileSystem \\ Rdr" o \\ "Driver Xns") que el sistema de E/S usa para cargar el controlador de \\ dispositivo. Además, si **se especifica NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio.
 
 Ejemplo: "DWDOM \\ Admin"
 
@@ -922,7 +922,7 @@ Valor de etiqueta único para este servicio del grupo. Un valor de 0 (cero) indi
 
 **HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **GroupOrderList**    
 
-Las etiquetas solo se evalúan para los servicios de tipo de inicio del controlador kernel y del controlador del sistema de archivos que tienen modos de inicio de arranque o del sistema.
+Las etiquetas solo se evalúan para los servicios de tipo de inicio del controlador kernel y del controlador del sistema de archivos que tienen modos de inicio de arranque o sistema.
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](/windows/desktop/CIMWin32Prov/win32-baseservice)
 
@@ -953,21 +953,21 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/desktop/api/winsvc/ns-winsvc-service_status) \| dwWaitHint"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Estimated Wait Time")
 </dt> </dl>
 
-Tiempo estimado necesario, en milisegundos, para una operación pendiente de inicio, detenerse, pausar o continuar. Una vez transcurrido el tiempo especificado, el servicio realiza su siguiente llamada al método **SetServiceStatus** con un valor [**de CheckPoint**](/windows/desktop/CIMWin32Prov/win32-service) incrementado o un cambio en **CurrentState**. Si se supera la cantidad de tiempo especificada por **WaitHint** y **CheckPoint** no se ha incrementado o **CurrentState** no ha cambiado, el administrador de control de servicios o el programa de control de servicios asumen que se ha producido un error.
+Tiempo estimado necesario, en milisegundos, para una operación pendiente de inicio, detenerse, pausar o continuar. Una vez transcurrido el tiempo especificado, el servicio realiza su siguiente llamada al método **SetServiceStatus** con un valor [**de CheckPoint**](/windows/desktop/CIMWin32Prov/win32-service) incrementado o un cambio en **CurrentState**. Si la cantidad de tiempo especificada por **WaitHint** pasa y **CheckPoint** no se ha incrementado o **CurrentState** no ha cambiado, el administrador de control de servicios o el programa de control de servicios asumen que se ha producido un error.
 
 Esta propiedad se hereda del [**servicio Win32. \_**](/windows/desktop/CIMWin32Prov/win32-service)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Puesto que **la clase \_ TerminalService de Win32** es una subclase de la clase [**Servicio Win32, \_**](/windows/desktop/CIMWin32Prov/win32-service) la clase hereda todas las propiedades y métodos del **servicio Win32. \_**
+Puesto que **la clase \_ TerminalService de Win32** es una subclase de la clase De servicio [**Win32, \_**](/windows/desktop/CIMWin32Prov/win32-service) la clase hereda todas las propiedades y métodos del **servicio Win32. \_**
 
-[**Win32 \_ TerminalServiceSetting está**](win32-terminalservicesetting.md) asociado a **\_ TerminalService de Win32** como la **propiedad Setting** de la asociación [**\_ TerminalServiceToSetting de Win32.**](win32-terminalservicetosetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md) está asociado a **Win32 \_ TerminalService como** la **propiedad Setting** de la asociación [**\_ TerminalServiceToSetting de Win32.**](win32-terminalservicetosetting.md)
 
-[**Win32 \_ TSSessionDirectory está**](win32-tssessiondirectory.md) asociado a **\_ TerminalService de Win32** como la **propiedad Setting** de la asociación [**\_ TSSessionDirectorySetting de Win32.**](win32-tssessiondirectorysetting.md)
+[**Win32 \_ TSSessionDirectory está**](win32-tssessiondirectory.md) asociado a **\_ TerminalService win32** como la **propiedad Setting** de la asociación [**\_ TSSessionDirectorySetting de Win32.**](win32-tssessiondirectorysetting.md)
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las clases Windows Management Instrumentation (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -983,20 +983,20 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Servicio \_ Win32**](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
-[**Terminal De \_ Win32ServiceToSetting**](win32-terminalservicetosetting.md)
+[**TerminalServiceToSetting de Win32 \_**](win32-terminalservicetosetting.md)
 </dt> <dt>
 
 [**Win32 \_ TSSessionDirectory**](win32-tssessiondirectory.md)
 </dt> <dt>
 
-[**BaseService de Win32 \_**](/windows/desktop/CIMWin32Prov/win32-baseservice)
+[**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice)
 </dt> <dt>
 
 [**Servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)

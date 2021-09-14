@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 60920995e72fdc1f45dcc6c083be7bcc1a91b3fa
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: da7acc706017c0346e5a701144d60bcbbfd7cf40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882817"
 ---
 # <a name="jet_sesid"></a>JET_SESID
 
@@ -41,7 +41,7 @@ JET_SESID
 
 Null **o** [JET_sesidNil](./invalid-handle-constants.md) pueden usarse para indicar un identificador de sesión no válido.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Una sesión es el contexto de transacción del motor de base de datos. Se puede usar para iniciar, confirmar o anular transacciones que afectan a la visibilidad y durabilidad de los cambios realizados por esta u otras sesiones.
 
@@ -54,7 +54,11 @@ Cada sesión solo puede ser utilizada por un subproceso a la vez. Además, el co
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

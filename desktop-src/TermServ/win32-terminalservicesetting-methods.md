@@ -5,12 +5,12 @@ ms.assetid: B25BD6DE-077C-46FB-8F09-A875B6FAEE3E
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2519d5a9c15599c76a8aad0c5f794e4bce380a8db3820b946f77ac10414c86c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c37986603a05995465c38de3ae498870f07435b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118848044"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967971"
 ---
 # <a name="win32_terminalservicesetting-methods"></a>Métodos \_ TerminalServiceSetting de Win32
 

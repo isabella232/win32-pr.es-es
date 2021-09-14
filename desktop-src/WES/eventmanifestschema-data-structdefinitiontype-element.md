@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a9b0e0206d0b8f2e5eeec65dc8a7f7bb71a7e757d101d0941dd2500ca64a4750
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd2fbffb39fe795e15a8cb06641132ee880b6867
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118589877"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967912"
 ---
 # <a name="data-structdefinitiontype-element"></a>elemento data (StructDefinitionType)
 

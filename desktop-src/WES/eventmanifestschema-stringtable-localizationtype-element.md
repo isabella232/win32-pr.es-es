@@ -1,9 +1,9 @@
 ---
-title: elemento stringTable (LocalizationType)
-description: Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto. | elemento stringTable (LocalizationType)
+title: Elemento stringTable (LocalizationType)
+description: Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto. | Elemento stringTable (LocalizationType)
 ms.assetid: 00144c76-c8de-448a-9884-2c95c4b73f53
 keywords:
-- elemento stringTable EventLog
+- Elemento stringTable EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 66dd0bedca88909efed3f2a6b1968a34df774ac78bc4929894a3b8708d80919d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1cbaca6e0d496e248a5c870ef7e51c9553a58f56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967880"
 ---
-# <a name="stringtable-localizationtype-element"></a>elemento stringTable (LocalizationType)
+# <a name="stringtable-localizationtype-element"></a>Elemento stringTable (LocalizationType)
 
 Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto.
 
@@ -43,7 +43,7 @@ El tipo complejo [**LocalizationType**](eventmanifestschema-localizationtype-com
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -20,12 +20,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c0a2ae6fe4b647e8a5c19fc6f30562973b3280f37cd3af3a1b9d9093771959de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f234851cabf071ed2308fb5c96df2b53b60b9d45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118118869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967571"
 ---
 # <a name="logging-stream-data"></a>Registro de datos de flujo
 

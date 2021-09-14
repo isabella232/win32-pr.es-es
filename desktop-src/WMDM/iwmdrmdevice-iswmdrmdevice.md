@@ -1,11 +1,11 @@
 ---
 title: Método IWMDRMDevice IsWMDRMDevice
-description: El método IsWMDRMDevice determina si el dispositivo admite Windows Drm multimedia 10 para dispositivos portátiles.
+description: El método IsWMDRMDevice determina si el dispositivo admite Windows DRM multimedia 10 para dispositivos portátiles.
 ms.assetid: 247e7a77-e805-4848-893f-f5522c161232
 keywords:
 - Método IsWMDRMDevice windows Media Administrador de dispositivos
-- Método IsWMDRMDevice windows Media Administrador de dispositivos interfaz , IWMDRMDevice
-- Interfaz IWMDRMDevice windows Media Administrador de dispositivos método , IsWMDRMDevice
+- Método IsWMDRMDevice windows Media Administrador de dispositivos , interfaz IWMDRMDevice
+- Interfaz IWMDRMDevice windows Media Administrador de dispositivos , método IsWMDRMDevice
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60ee225267ce2301e9a2dad392d72ce72b0e698872cd3fd54ab3e50a07043477
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ca9cb79598ea41a996748e383c8fdfc63364dd6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967823"
 ---
 # <a name="iwmdrmdeviceiswmdrmdevice-method"></a>IWMDRMDevice::IsWMDRMDevice (método)
 
-El **método IsWMDRMDevice** determina si el dispositivo admite Windows DRM 10 multimedia para dispositivos portátiles.
+El **método IsWMDRMDevice** determina si el dispositivo admite Windows DRM multimedia 10 para dispositivos portátiles.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ HRESULT IsWMDRMDevice(
 *pdwVersion* \[ out\]
 </dt> <dd>
 
-Versión de Windows DRM 10 de multimedia para dispositivos portátiles, que tiene el valor de 0x00010000.
+Versión de Windows Drm multimedia 10 para dispositivos portátiles, que tiene el valor de 0x00010000.
 
 </dd> </dl>
 
@@ -75,11 +75,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IWMDRMDevice (interfaz)**](iwmdrmdevice.md)
+[**Interfaz IWMDRMDevice**](iwmdrmdevice.md)
 </dt> </dl>
 
  

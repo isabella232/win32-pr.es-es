@@ -2,7 +2,7 @@
 description: El método de clase RESUME WMI continúa con un trabajo de impresión en pausa.
 ms.assetid: acfbca2b-19af-4339-bbca-834db50c3d8d
 ms.tgt_platform: multiple
-title: Método Resume de la Win32_PrintJob clase
+title: Método Resume de la clase Win32_PrintJob reanudación
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1dfc86b9b42c4373467fca89a46b2b4d8f42074e64836c554b325c8aebddf915
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f8ca1602eb29e1e18d83d2e8b79760d13f63e101
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119588215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892537"
 ---
 # <a name="resume-method-of-the-win32_printjob-class"></a>Método Resume de la clase PrintJob de Win32 \_
 
 El **método de** clase RESUME [WMI](/windows/desktop/WmiSdk/retrieving-a-class) continúa con un trabajo de impresión en pausa.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -94,7 +94,7 @@ Next
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

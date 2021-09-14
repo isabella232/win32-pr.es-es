@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc5be4f15cee03097abcb52c50e3206d51872c8886970a49dbd20628f4b7beae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 81973261d156328aa1f306c26dd8bd9bdd20511f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119866375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968107"
 ---
 # <a name="moveup-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método MoveUp de la clase \_ TSGatewayConnectionAuthorizationPolicy de Win32
 
-Mueve la directiva Escritorio remoto autorización de conexión (CAP de Escritorio remoto) actual una posición hacia arriba en el orden en que se evalúan las CA de Escritorio remoto. Este método disminuye la propiedad **Order** del CAP de Escritorio remoto actual e incrementa la propiedad **Order** del CAP de Rd anterior al CAP de Rd actual.
+Mueve la directiva Escritorio remoto autorización de conexión (CAP de Escritorio remoto) actual una posición hacia arriba en el orden en que se evalúan las CA de Escritorio remoto. Este método disminuye la propiedad **Order** del CAP de Escritorio remoto actual e incrementa la propiedad **Order** del CAP de Escritorio remoto que precedía al CAP de Escritorio remoto actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,9 +43,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
@@ -59,17 +59,17 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy de Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> <dt>
 
 [**MoveDown**](movedown-win32-tsgatewayconnectionauthorizationpolicy.md)

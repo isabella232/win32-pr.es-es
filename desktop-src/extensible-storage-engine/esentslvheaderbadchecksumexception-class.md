@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e77ff7f51741a7c2fe29d175ea95302db43554168cd891334a6e2c8c5340a2c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 995669e2d43b804df921b8279f6b21195dc44273
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119476945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883153"
 ---
 # <a name="esentslvheaderbadchecksumexception-class"></a>Clase EsentSLVHeaderBadChecksumException
 
@@ -66,7 +66,7 @@ public sealed class EsentSLVHeaderBadChecksumException : EsentObsoleteException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

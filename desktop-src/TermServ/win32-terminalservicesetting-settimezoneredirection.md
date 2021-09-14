@@ -1,6 +1,6 @@
 ---
 title: Método SetTimeZoneRedirection de la Win32_TerminalServiceSetting clase
-description: El método SetTimeZoneRedirection establece la propiedad TimeZoneRedirection, que permite que el equipo cliente redirija su configuración de zona horaria a la Servicios de Escritorio remoto predeterminada.
+description: El método SetTimeZoneRedirection establece la propiedad TimeZoneRedirection, que permite que el equipo cliente redirija su configuración de zona horaria a la Servicios de Escritorio remoto sesión.
 ms.assetid: 4ae149b7-b7de-4530-a142-7253dd1e0d07
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 802cd4741f4ea30f378492075f69dfa21dfce54688fbc7ff9e72b957689d7c7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2761567c724abf129ac881188bc468b228d7fd11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117755646"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967940"
 ---
 # <a name="settimezoneredirection-method-of-the-win32_terminalservicesetting-class"></a>Método SetTimeZoneRedirection de la clase \_ TerminalServiceSetting de Win32
 
-El **método SetTimeZoneRedirection** establece la propiedad **TimeZoneRedirection,** que permite al equipo cliente redirigir su configuración de zona horaria a Servicios de Escritorio remoto sesión.
+El **método SetTimeZoneRedirection** establece la propiedad **TimeZoneRedirection,** que permite al equipo cliente redirigir su configuración de zona horaria a la Servicios de Escritorio remoto predeterminada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,13 +76,13 @@ Habilita la **propiedad TimeZoneRedirection.** La zona horaria del cliente se re
 
 Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-De forma predeterminada, la zona horaria de la sesión Servicios de Escritorio remoto es la misma que la zona horaria del servidor Escritorio remoto Session Host (Host de sesión de Escritorio remoto). Los equipos cliente no pueden redirigir la información de zona horaria.
+De forma predeterminada, la zona horaria de la sesión Servicios de Escritorio remoto es la misma que la zona horaria del servidor Escritorio remoto session host (host de sesión de Escritorio remoto). Los equipos cliente no pueden redirigir la información de zona horaria.
 
 Si el redireccionamiento de zona horaria está deshabilitado, las nuevas sesiones heredan la zona horaria del servidor. Cuando se vuelve a conectar una sesión, la sesión conserva la zona horaria que tenía antes de desconectarse.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,7 +98,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

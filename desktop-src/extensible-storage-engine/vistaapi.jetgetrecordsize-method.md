@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d439bc8fe9823a69748d61b2b2c327b0f15a8c7114f7b7a7311e0a7e16f35d14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37576e39d83270dcac3333e4d1f78fce32bb2669
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118484494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126882604"
 ---
 # <a name="vistaapijetgetrecordsize-method"></a>Método VistaApi.JetGetRecordSize
 
@@ -77,7 +77,7 @@ public static void JetGetRecordSize(
   - tableid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se usará para la llamada API. El cursor debe colocarse en un registro o tener preparada una actualización.
+    Cursor que se usará para la llamada API. El cursor debe estar situado en un registro o tener preparada una actualización.
 
 <!-- end list -->
 

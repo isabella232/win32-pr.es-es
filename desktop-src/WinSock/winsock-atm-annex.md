@@ -4,12 +4,12 @@ ms.assetid: 532a876c-9b31-410e-9331-5e8aa98ccaee
 title: Anexo del cajero automático de Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90f55c71b830fa8a5f27f083af0263c62766e7b037e433c04b73bfea5ba12960
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63ec056cc2b84c9449ed466a60a15683df29744b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118822451"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967268"
 ---
 # <a name="winsock-atm-annex"></a>Anexo del cajero automático de Winsock
 
