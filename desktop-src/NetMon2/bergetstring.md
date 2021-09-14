@@ -1,7 +1,7 @@
 ---
 description: La función BERGetString descodifica una cadena codificada en BER.
 ms.assetid: 1f72f061-c0ed-4634-9709-e08c2b9468bb
-title: Función BERGetString (Netmon. h)
+title: Función BERGetString (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Nmapi.dll
 ms.openlocfilehash: 6f8f864b8042ad49502ae53061e157575192e7bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909422"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169345"
 ---
-# <a name="bergetstring-function"></a>BERGetString función)
+# <a name="bergetstring-function"></a>Función BERGetString
 
-La función **BERGetString** descodifica una cadena codificada en BER.
+La **función BERGetString** descodifica una cadena codificada en BER.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,15 +74,15 @@ Puntero a la longitud de la cadena.
 *ppNext* 
 </dt> <dd>
 
-Puntero al puntero de la siguiente entrada de BER.
+Puntero al puntero de la siguiente entrada BER.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función es correcta (es decir, si se descodifica una cadena con codificación BER válida), el valor devuelto es **true**.
+Si la función se realiza correctamente (es decir, si se descodifica una cadena válida con codificación BER), el valor devuelto es **TRUE.**
 
-Si la función no es correcta, el valor devuelto es **false**.
+Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Si la función no es correcta, el valor devuelto es **false**.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Analizador. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Parser.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl>  |
 
 

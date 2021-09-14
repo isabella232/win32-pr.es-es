@@ -15,20 +15,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe76f0b0b92286d5a4b7db5126706fd55bdb6f580c11fda1dcaa55a47be4678c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59e90e899e8084f7fbc6b0b6f11067061eaa807b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118129174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168658"
 ---
 # <a name="irdvtaskplugin-interface"></a>Interfaz IRDVTaskPlugin
 
-La **interfaz IRDVTaskPlugin** se implementa mediante  un agente de tareas de actualización de máquina virtual para permitir que el agente de tareas administre las actualizaciones del sistema de una máquina virtual. El agente de desencadenador usa esta *interfaz,* que se implementa mediante el sistema host.
+La **interfaz IRDVTaskPlugin** se implementa mediante  un agente de tareas de actualización de máquina virtual para permitir que el agente de tareas administre las actualizaciones del sistema de una máquina virtual. El agente de desencadenador usa esta interfaz *,* que se implementa mediante el sistema host.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz IRDVTaskPlugin** hereda de [**la interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRDVTaskPlugin** también tiene estos tipos de miembros:
+La **interfaz IRDVTaskPlugin** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRDVTaskPlugin** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
@@ -43,7 +43,7 @@ La **interfaz IRDVTaskPlugin** tiene estos métodos.
 |:------------------------------------------------|:-------------------------------------------------------------------|
 | [**Inicialización**](irdvtaskplugin-initialize.md) | Se llama para inicializar el agente de tareas.<br/>                    |
 | [**StartTask**](irdvtaskplugin-starttask.md)   | Se llama para iniciar la tarea de actualización en la máquina virtual.<br/> |
-| [**Terminate**](irdvtaskplugin-terminate.md)   | Se llama cuando se cierra el agente de tareas.<br/>          |
+| [**Terminate**](irdvtaskplugin-terminate.md)   | Se llama cuando se está cerrando el agente de tareas.<br/>          |
 
 
 
@@ -63,7 +63,7 @@ La **interfaz IRDVTaskPlugin** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El agente de tareas se ejecuta en la máquina virtual cuando esa máquina virtual está programada para una actualización del sistema. El agente de tareas actualiza la máquina virtual cuando se [**llama al método StartTask.**](irdvtaskplugin-starttask.md)
 
@@ -77,7 +77,7 @@ En esta clave del Registro, agregue los valores siguientes:
 
 | Nombre                     | Tipo                      | Descripción                                                                   |
 |--------------------------|---------------------------|-------------------------------------------------------------------------------|
-| **Clsid**<br/>     | **REG \_ SZ**<br/>    | Cadena que representa el **CLSID** del agente de tareas.<br/>          |
+| **CLSID**<br/>     | **REG \_ SZ**<br/>    | Cadena que representa el **CLSID** del agente de tareas.<br/>          |
 | **IsEnabled**<br/> | **REG \_ DWORD**<br/> | 0 si el agente de tareas está deshabilitado o 1 si el agente de tareas está habilitado.<br/> |
 
 
@@ -89,7 +89,7 @@ En esta clave del Registro, agregue los valores siguientes:
 
  
 
-Aunque esta interfaz se admite en los sistemas operativos identificados en los requisitos siguientes, solo se usará si la máquina virtual se hospeda en Windows Server 2012.
+Aunque esta interfaz se admite en los sistemas operativos identificados en los siguientes requisitos, solo se usará si la máquina virtual se hospeda en Windows Server 2012.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,7 +97,7 @@ Aunque esta interfaz se admite en los sistemas operativos identificados en los r
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 

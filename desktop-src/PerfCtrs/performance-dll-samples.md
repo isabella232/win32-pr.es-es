@@ -4,12 +4,12 @@ ms.assetid: 862be53a-3d58-42b9-adf0-2f913dc6fb06
 title: Ejemplos de DLL de rendimiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b94e77ed35b1c328879ad5f83dded45fe92bf4a62ae15c794e5d9d9b23daeda1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13e2210899651a065218474eb49175553a05aa8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169137"
 ---
 # <a name="performance-dll-samples"></a>Ejemplos de DLL de rendimiento
 

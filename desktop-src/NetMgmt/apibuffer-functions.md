@@ -4,12 +4,12 @@ description: Las funciones apiBuffer de administración de red se usan para admi
 ms.assetid: bf2fe8aa-dda6-4f6b-9c52-d7a96b96da18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b0778c216860fe16a673e1bdcc2ac470cbb52a128f0e08d4d32d98df929bc7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b316c6b2ee2d4095c15d5e859dd0069978c7ff91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169366"
 ---
 # <a name="apibuffer-functions"></a>Funciones de ApiBuffer
 
@@ -30,7 +30,7 @@ Las funciones apiBuffer se enumeran a continuación.
 
  
 
-En el caso de las funciones remotables que devuelven información al autor de la llamada, la biblioteca rpc en tiempo de ejecución asigna el búfer que contiene la información de devolución. Cuando el autor de la llamada haya terminado de procesar la información, debe llamar a la [**función NetApiBufferFree**](/windows/desktop/api/Lmapibuf/nf-lmapibuf-netapibufferfree) para liberar el búfer asignado.
+Para las funciones remotables que devuelven información al autor de la llamada, la biblioteca en tiempo de ejecución rpc asigna el búfer que contiene la información de devolución. Cuando el autor de la llamada haya terminado de procesar la información, debe llamar a la [**función NetApiBufferFree**](/windows/desktop/api/Lmapibuf/nf-lmapibuf-netapibufferfree) para liberar el búfer asignado.
 
  
 

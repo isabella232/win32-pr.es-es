@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 00269c22497d04763c349ad5d5c0106c45d8dc47a369481c48b8ab440c70f3f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d2f1bf5aa2901316db380e2cfd011b11c420035
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168417"
 ---
 # <a name="eapmethod-eaphostusercredentials-element"></a>Elemento EapMethod (EapHostUserCredentials)
 
@@ -37,14 +37,14 @@ El **elemento EapMethod** se define mediante el [**elemento EapHostUserCredentia
 
 
 
-| Rol | Versión mínima del sistema operativo admitida |
+| Role | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
-| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ El **elemento EapMethod** se define mediante el [**elemento EapHostUserCredentia
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
+[esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
 </dt> </dl>
 
  

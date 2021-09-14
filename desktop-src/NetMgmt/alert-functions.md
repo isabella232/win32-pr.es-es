@@ -4,12 +4,12 @@ description: Las funciones de alerta de administración de red notifican a las a
 ms.assetid: e131191b-7413-45ff-84cd-b3a873d33ca1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 411a9bab5f8b74b5dc6e83d9a3c09cdcaeebf66d34c265ad27639e7aab8d7c00
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80fde863b27bebc8bf815c939f7edf96cd998442
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169374"
 ---
 # <a name="alert-functions"></a>Funciones de alerta
 
@@ -26,7 +26,7 @@ Las funciones de alerta se enumeran a continuación.
 | Función                                   | Descripción                                                                                                                                                                                            |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**NetAlertRaise**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraise)     | Notifica a todos los clientes registrados que se ha producido un evento determinado.                                                                                                                                  |
-| [**NetAlertRaiseEx**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraiseex) | Simplifica la notificación a los clientes registrados de que se ha producido un evento determinado, ya que, a diferencia de **NetAlertRaise,** **NetAlertRaiseEx** no requiere una [**estructura DE ALERTA \_ DE STD.**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert) |
+| [**NetAlertRaiseEx**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraiseex) | Simplifica la notificación a los clientes registrados de que se ha producido un evento determinado, porque, a diferencia de **NetAlertRaise,** **NetAlertRaiseEx** no requiere una [**estructura DE \_ ALERTAS DE STD.**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert) |
 
 
 
@@ -46,7 +46,7 @@ The LMALERT. El archivo H predefine las siguientes clases de alerta (tipos de ev
 
 Puede definir otras clases de alertas para aplicaciones de red según sea necesario. Por ejemplo, si una aplicación de un servidor escribe rutinariamente grandes cantidades de datos en una unidad de disco, la aplicación corre el riesgo de rellenar el disco. En este caso, es posible que desee agregar el evento "sin espacio libre en disco" para desencadenar una alerta que notifica a la aplicación que se detenga o finalice el proceso que está llenando el disco. El nombre del evento de una alerta puede ser cualquier cadena de texto.
 
-Cuando se genera una alerta con una llamada a la función [**NetAlertRaise,**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraise) los datos del mensaje deben constar de una estructura de encabezado DE ALERTA DE [**\_ STD,**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert) seguida de datos de longitud fija adicionales específicos de la alerta en una estructura ADMIN [**OTHER \_ \_ INFO,**](/windows/desktop/api/Lmalert/ns-lmalert-admin_other_info) [**ERRLOG OTHER \_ \_ INFO,**](/windows/desktop/api/Lmalert/ns-lmalert-errlog_other_info) [**PRINT OTHER \_ \_ INFO**](/windows/desktop/api/Lmalert/ns-lmalert-print_other_info)o [**USER OTHER \_ \_ INFO.**](/windows/desktop/api/Lmalert/ns-lmalert-user_other_info) Los datos de longitud variable adicionales pueden seguir la estructura específica de la alerta. (Las llamadas a [**la función NetAlertRaiseEx**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraiseex) no requieren una **estructura STD \_ ALERT).** La aplicación que realiza la llamada debe asignar la memoria para todas las estructuras y datos de longitud variable, y liberar la memoria después de que se devuelva la llamada.
+Cuando se genera una alerta con una llamada a la función [**NetAlertRaise,**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraise) los datos del mensaje deben constar de una estructura de encabezado DE ALERTA DE [**\_ STD,**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert) seguida de datos de longitud fija adicionales específicos de la alerta en una estructura ADMIN [**OTHER \_ \_ INFO,**](/windows/desktop/api/Lmalert/ns-lmalert-admin_other_info) [**ERRLOG OTHER \_ \_ INFO,**](/windows/desktop/api/Lmalert/ns-lmalert-errlog_other_info) [**PRINT OTHER \_ \_ INFO**](/windows/desktop/api/Lmalert/ns-lmalert-print_other_info)o [**USER OTHER \_ \_ INFO.**](/windows/desktop/api/Lmalert/ns-lmalert-user_other_info) Los datos de longitud variable adicionales pueden seguir la estructura específica de la alerta. (Las llamadas a [**la función NetAlertRaiseEx**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraiseex) no requieren una **estructura STD \_ ALERT).** La aplicación que realiza la llamada debe asignar la memoria para todas las estructuras y los datos de longitud variable, y liberar la memoria después de que se devuelva la llamada.
 
 Las macros siguientes están disponibles para su uso con búferes de datos de alerta.
 
@@ -61,7 +61,7 @@ Las macros siguientes están disponibles para su uso con búferes de datos de al
 
  
 
-En lugar de usar las funciones de alerta de administración de red, puede usar el SDK Windows Management Instrumentation (WMI) para la notificación de eventos. Para obtener más información sobre las plataformas que admiten el modelo de eventos WMI, vea Eventos de infraestructura y [supervisión de](/windows/desktop/WmiSdk/monitoring-events) [WMI](/windows/desktop/WmiSdk/wmi-infrastructure) en la documentación de WMI.
+En lugar de usar las funciones de alerta de administración de red, es posible que pueda usar el SDK Windows Management Instrumentation (WMI) para la notificación de eventos. Para obtener más información sobre las plataformas que admiten el modelo de eventos WMI, vea Eventos de infraestructura y [supervisión de](/windows/desktop/WmiSdk/monitoring-events) [WMI](/windows/desktop/WmiSdk/wmi-infrastructure) en la documentación de WMI.
 
  
 

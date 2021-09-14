@@ -5,12 +5,12 @@ ms.assetid: 6A68AC6D-7E3C-4580-B5F8-32A1DA8E0749
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b812a8000d22608c432345903a5faebce3572348635cff42fdcc761118010202
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4a7c64074e58a557e0e0fceca5ad2f1ef51dc333
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168642"
 ---
 # <a name="itssbbasenotifysink-methods"></a>Métodos ITsSbBaseNotifySink
 

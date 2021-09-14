@@ -59,12 +59,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58ce750f5f5dd9043648681558666df27528b22cdc7481426eca15fb0a5873a5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0747f37cd5e85c62946c9b8e3a1587f736dd8af9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168729"
 ---
 # <a name="imstscadvancedsettingsdisablerdpdr-property"></a>IMsTscAdvancedSettings::D isableRdpdr
 
@@ -72,7 +72,7 @@ Especifica si está habilitada la redirección de impresoras y portapapeles.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -95,7 +95,7 @@ Establezca este parámetro en **TRUE para** deshabilitar el redireccionamiento o
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 

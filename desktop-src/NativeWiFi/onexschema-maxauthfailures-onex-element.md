@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 9cb48479b2fe26ecb2667812cc6ee2048226c0665c25b12e25e8c7edbc35dac2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 31dae7a8805275254a1d398108128380b1aa2e54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169442"
 ---
 # <a name="maxauthfailures-onex-element"></a>Elemento maxAuthFailures (OneX)
 
@@ -25,7 +25,7 @@ El elemento maxAuthFailures (OneX) especifica el número máximo de errores de a
 
 Este elemento es opcional. Cuando maxAuthFailures no se especifica en un perfil, se usa un valor de uno.
 
-**Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
 
 ``` syntax
 <xs:element name="maxAuthFailures">
@@ -50,7 +50,7 @@ El **elemento maxAuthFailures** se define mediante el [**elemento OneX.**](onexs
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

@@ -4,12 +4,12 @@ ms.assetid: 163291ce-78bd-43ee-98ca-564ce91c520c
 title: Ventajas de la multitarea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 811bab71242022babc2a555225a9d02b248f42a03db28cfe1f636f4feb8fb962
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 119e327ba07a226a8422c61a100d6ff000b48ed9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169101"
 ---
 # <a name="advantages-of-multitasking"></a>Ventajas de la multitarea
 

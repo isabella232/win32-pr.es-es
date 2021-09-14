@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 5e8fd0afbd901d48386859e9b5d3557a173cfe6a23d749dc776992a4aedebed1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b96832fa647fde920a70ac3d6608c8ebb0048892
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117783749"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168982"
 ---
 # <a name="authzgetcentralaccesspolicycallback-callback-function"></a>Función de devolución de llamada AuthzGetCentralAccessPolicyCallback
 
@@ -45,21 +45,21 @@ BOOL CALLBACK AuthzGetCentralAccessPolicyCallback (
 *hAuthzClientContext* \[ En\]
 </dt> <dd>
 
-Identificador del contexto de cliente.
+Controlar el contexto de cliente.
 
 </dd> <dt>
 
 *capid* \[ En\]
 </dt> <dd>
 
-Identificador de la directiva de acceso central que se debe recuperar.
+Identificador de la directiva de acceso central que se recuperará.
 
 </dd> <dt>
 
-*pArgs* \[ in, opcional\]
+*pArgs* \[ en, opcional\]
 </dt> <dd>
 
-Argumentos opcionales que se pasaron a la función [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) a través del **miembro OptionalArguments** de la estructura [**AUTHZ \_ ACCESS \_ REQUEST.**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
+Argumentos opcionales que se pasaron a la función [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) a través del **miembro OptionalArguments** de la estructura [**ACCESS REQUEST \_ \_ de AUTHZ.**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
 
 </dd> <dt>
 
@@ -79,9 +79,9 @@ Puntero a la directiva de acceso central (CAP) que se usará para evaluar el acc
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, la función devuelve **TRUE**.
+Si la función se realiza correctamente, la función devuelve **TRUE.**
 
-Si la función no puede realizar la evaluación, devuelve **FALSE.** Use [**SetLastError para**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) devolver un error a la función de comprobación de acceso.
+Si la función no puede realizar la evaluación, devuelve **FALSE**. Use [**SetLastError para**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) devolver un error a la función de comprobación de acceso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,11 +95,11 @@ Si la función no puede realizar la evaluación, devuelve **FALSE.** Use [**SetL
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**SOLICITUD DE ACCESO DE AUTHZ \_ \_**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
+[**SOLICITUD DE ACCESO \_ DE \_ AUTHZ**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
 </dt> <dt>
 
 [**INFORMACIÓN DE \_ AUTHZ INIT \_**](/windows/desktop/api/Authz/ns-authz-authz_init_info)

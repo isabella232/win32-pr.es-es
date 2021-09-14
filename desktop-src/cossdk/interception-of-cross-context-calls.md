@@ -4,12 +4,12 @@ ms.assetid: 9e234b41-f269-4674-adc4-12018277a14b
 title: Interceptación de llamadas entre contextos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3a969479419b75313f8b439f3cf9ffc7b94946e9007752ccc4e99a54cd6ad7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d70bc8bff83d02b13656f9854f0e6d16cd4e173
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118547842"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168538"
 ---
 # <a name="interception-of-cross-context-calls"></a>Interceptación de llamadas entre contextos
 

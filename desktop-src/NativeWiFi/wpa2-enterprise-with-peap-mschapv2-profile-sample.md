@@ -1,23 +1,23 @@
 ---
 description: Usa el protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2, con WPA2-Enterprise.
 ms.assetid: fcbc74a6-1990-45a0-af2e-1c343a84497a
-title: WPA2-Enterprise con PEAP-MSCHAPv2 de perfil
+title: WPA2-Enterprise con el PEAP-MSCHAPv2 de perfil
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: bd05ac34992244eedae08f9c76becd5b2c95564e
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169406"
 ---
-# <a name="wpa2-enterprise-with-peap-mschapv2-profile-sample"></a>WPA2-Enterprise con PEAP-MSCHAPv2 de perfil
+# <a name="wpa2-enterprise-with-peap-mschapv2-profile-sample"></a>WPA2-Enterprise con el PEAP-MSCHAPv2 de perfil
 
-Este perfil de ejemplo usa el Protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con *UserName* Contraseña para autenticarse en la **/**  red. Se pide al usuario que escriba las credenciales.
+Este perfil de ejemplo usa el Protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con *UserName* Contraseña para autenticarse en **/**  la red. Se pide al usuario que escriba las credenciales.
 
-Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido 2 que se ejecuta en modo Enterprise (WPA2-Enterprise). El WPA2-Enterprise de seguridad utiliza 802.1X para el intercambio de autenticación con el back-end. El Estándar de cifrado avanzado cifrado (AES) se usa para el cifrado.
+Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido 2 que se ejecuta en Enterprise modo (WPA2-Enterprise). El WPA2-Enterprise de seguridad usa 802.1X para el intercambio de autenticación con el back-end. El Estándar de cifrado avanzado cifrado de Estándar de cifrado avanzado (AES) se usa para el cifrado.
 
-**Windows XP con SP3 e API de LAN inalámbrica para Windows XP con SP2:** Se [**omite**](wlan-profileschema-name-wlanprofile-element.md) el elemento secundario name del elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md) El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del nombre [**secundario**](wlan-profileschema-name-ssid-element.md) del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
+Windows XP con SP3 y la API de LAN inalámbrica **para Windows XP con SP2:** Se [**omite**](wlan-profileschema-name-wlanprofile-element.md) el elemento secundario name del elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md) El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del elemento secundario [**name**](wlan-profileschema-name-ssid-element.md) del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

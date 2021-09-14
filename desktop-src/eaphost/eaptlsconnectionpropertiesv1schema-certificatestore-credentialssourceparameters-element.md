@@ -1,6 +1,6 @@
 ---
 title: Elemento CertificateStore (CredentialsSourceParameters)
-description: Indica que EAP-TLS debe leer el certificado de Mi almacén del usuario o de la máquina que se autentica.
+description: Indica que EAP-TLS debe leer el certificado de My Store del usuario o de la máquina que se autentica.
 ms.assetid: 6b15c7cc-b686-4419-a962-e3dd6b4b84a6
 keywords:
 - Elemento EAPHost de CertificateStore
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8fb3d2b5c9d50ea8b63c513e4fd9e7297afe236c5ccd16711d9bf4371e76a8d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc7c8841fe275d19752f8b774de5766b95824339
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274297"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168413"
 ---
 # <a name="certificatestore-credentialssourceparameters-element"></a>Elemento CertificateStore (CredentialsSourceParameters)
 
@@ -33,7 +33,7 @@ El **elemento CertificateStore (CredentialsSourceParameters)** indica que EAP-TL
 
 El tipo complejo [**CredentialsSourceParameters**](eaptlsconnectionpropertiesv1schema-credentialssourceparameters-complextype.md) define el elemento **CertificateStore.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los **elementos CertificateStore** [**y SmartCard**](eaptlsconnectionpropertiesv1schema-smartcard-credentialssourceparameters-element.md) no se pueden usar simultáneamente.
 
@@ -41,14 +41,14 @@ Los **elementos CertificateStore** [**y SmartCard**](eaptlsconnectionpropertiesv
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ Los **elementos CertificateStore** [**y SmartCard**](eaptlsconnectionpropertiesv
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Eaptlsconnectionpropertiesv1 Schema Elements](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> </dl>
 
  

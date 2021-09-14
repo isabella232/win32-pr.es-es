@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec6961e6c911b24df2e6c3adbea14b31a2ce8e5a66a9be9082357db957e646a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 94bd3c1e5bb588ffb276b336cd945f32a0c19afd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119511335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168621"
 ---
 # <a name="itssbclientconnectionusername-property"></a>Propiedad ITsSbClientConnection::UserName
 
@@ -50,11 +50,11 @@ Puntero a un nombre de usuario. Cuando haya terminado de usar la cadena, descon�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

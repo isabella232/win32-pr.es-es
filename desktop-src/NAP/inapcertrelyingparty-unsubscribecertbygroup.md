@@ -3,8 +3,8 @@ title: Método INapCertRelyingParty UnSubscribeCertByGroup (NapCertRelyingParty.
 description: Cancela la suscripción a un servidor de certificados de mantenimiento (HCS).
 ms.assetid: 2b26b110-8aba-487e-bd49-c6afc6af11f8
 keywords:
-- Método NAP UnSubscribeCertByGroup
-- Método UNSubscribeCertByGroup NAP, interfaz INapCertRelyingParty
+- Nap del método UnSubscribeCertByGroup
+- UnSubscribeCertByGroup, método NAP, interfaz INapCertRelyingParty
 - INapCertRelyingParty interface NAP , UnSubscribeCertByGroup (método)
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d8b9f5398ba63c0e6108adfefd51d0546180db4536dbd95615e5b15dddde523
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b01bbad5ef48b5f709f93f018c56b5798907d08c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118940223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169482"
 ---
 # <a name="inapcertrelyingpartyunsubscribecertbygroup-method"></a>INapCertRelyingParty::UnSubscribeCertByGroup (método)
 
@@ -30,7 +30,7 @@ ms.locfileid: "118940223"
 
  
 
-El **método UnSubscribeCertByGroup** cancela la suscripción de un servidor de certificados de mantenimiento (HCS).
+El **método UnSubscribeCertByGroup** cancela la suscripción a un servidor de certificados de mantenimiento (HCS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ HRESULT UnSubscribeCertByGroup(
  *id* \[ en\]
 </dt> <dd>
 
-[**EnforcementEntityId que**](nap-datatypes.md) contiene el identificador del cliente de cumplimiento que no se está suscribiendo.
+[**Un valor EnforcementEntityId**](nap-datatypes.md) que contiene el identificador del cliente de cumplimiento que no se está suscribiendo.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Debe ser **NULL.**
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los siguientes códigos de error en función del resultado de esta operación.
+Devuelve uno de los siguientes códigos de error según el resultado de esta operación.
 
 
 
@@ -78,11 +78,11 @@ Devuelve uno de los siguientes códigos de error en función del resultado de es
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si no hay ningún otro suscriptor a HCS, NapAgent eliminará los certificados de mantenimiento correspondientes del almacén de la máquina local.
+Si no hay ningún otro suscriptor en HCS, NapAgent eliminará los certificados de mantenimiento correspondientes del almacén de máquinas locales.
 
-Antes de llamar a este método, llame [**a SubscribeCertByGroup**](inapcertrelyingparty-subscribecertbygroup.md).
+Antes de llamar a este método, [**llame a SubscribeCertByGroup**](inapcertrelyingparty-subscribecertbygroup.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Antes de llamar a este método, llame [**a SubscribeCertByGroup**](inapcertrelyi
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
-| Header<br/>                   | <dl> <dt>NapCertRelyingParty.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapCertRelyingParty.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapCertRelyingParty.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapCertRelyingParty.idl</dt> </dl> |
 
 
 

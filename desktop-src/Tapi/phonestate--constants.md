@@ -4,16 +4,16 @@ ms.assetid: 5db53dd4-606a-40b9-9159-b67a0ea1e400
 title: PHONESTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 675a68e252e32cba718f9e506e7d45c95210348c1b9951877d79a30dfae8a462
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6346251f6947aebb2a5941389843e2abcec77c4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168874"
 ---
 # <a name="phonestate_-constants"></a>Constantes \_ PHONESTATE
 
-Las **constantes \_ de marca** de bits PHONESTATE describen varios elementos de estado para un dispositivo de teléfono.
+Las constantes de marca de bits **PHONESTATE \_** describen varios elementos de estado para un dispositivo de teléfono.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las **constantes \_ de marca** de bits PHONESTATE describen varios elementos de 
 
 
 
-Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**PHONECAPS**](/windows/desktop/api/Tapi/ns-tapi-phonecaps) han cambiado. La aplicación debe usar [**phoneGetDevCaps para**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**PHONE \_ STATE**](phone-state.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión de API anterior recibirán mensajes PHONE STATE que especifican \_ PHONESTATE REINIT, lo que les obliga a apagar y reinicializar su conexión a TAPI para obtener la información \_ actualizada.
+Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**PHONECAPS**](/windows/desktop/api/Tapi/ns-tapi-phonecaps) han cambiado. La aplicación debe usar [**phoneGetDevCaps para**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**PHONE \_ STATE**](phone-state.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1.4 o posterior de TAPI; las aplicaciones que negocian una versión de API anterior recibirán mensajes PHONE STATE que especifican \_ PHONESTATE REINIT, lo que les obliga a cerrar y reinicializar su conexión a TAPI para obtener la información \_ actualizada.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Indica que, debido a los cambios de configuración realizados por el usuario u o
 
 
 
-La conexión entre el dispositivo de teléfono y TAPI se acaba de realizar. Esto sucede cuando se invoca TAPI por primera vez o cuando la conexión del teléfono al equipo está conectada con TAPI activo.
+La conexión entre el dispositivo telefónico y TAPI se acaba de realizar. Esto sucede cuando se invoca TAPI por primera vez o cuando el cable que conecta el teléfono al equipo está conectado con TAPI activo.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ La información específica del dispositivo del teléfono ha cambiado.
 
 
 
-La conexión entre el dispositivo de teléfono y TAPI se ha roto. Esto sucede cuando el cable que conecta el teléfono establecido al equipo se desconecta mientras TAPI está activo.
+La conexión entre el dispositivo telefónico y TAPI se ha roto. Esto sucede cuando el cable que conecta el teléfono establecido al equipo se desconecta mientras TAPI está activo.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ La presentación del teléfono ha cambiado.
 
 
 
-La configuración de la ganancia del micrófono del conjunto de manos ha cambiado.
+Ha cambiado la configuración de la ganancia del micrófono del terminal.
 
 
 </dt> </dl> </dd> <dt>
@@ -162,7 +162,7 @@ Teléfono los elementos de estado distintos de los enumerados a continuación ha
 
 
 
-Número de propietarios del dispositivo de teléfono.
+Número de propietarios del dispositivo telefónico.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,7 +192,7 @@ Indica que el proveedor de servicios quita el dispositivo del sistema (lo más p
 
 
 
-El uso del dispositivo de teléfono de la aplicación se reanuda después de haberse suspendido durante algún tiempo.
+El uso del dispositivo telefónico de la aplicación se reanuda después de haberse suspendido durante algún tiempo.
 
 
 </dt> </dl> </dd> <dt>
@@ -257,7 +257,7 @@ El uso del teléfono de la aplicación se suspende temporalmente.
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -265,10 +265,10 @@ Sin extensibilidad. Los 32 bits están reservados.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

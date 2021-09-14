@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0d3f059a40c5ec7bb35b90ec4cddf584d586ace3a039e7c48e5957ee3606ba79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0981f02df3b807ab56fa20922d1e245f00c2df34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119107119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168345"
 ---
 # <a name="systemparameterscachesize-property"></a>Propiedad SystemParameters.CacheSize
 
@@ -40,7 +40,7 @@ Obtiene o establece el tamaño de la caché de base de datos en páginas. De for
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -63,7 +63,7 @@ public static int CacheSize { get; set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

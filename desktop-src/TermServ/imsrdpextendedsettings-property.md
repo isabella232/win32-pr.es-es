@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7deeb0e4d6d0f393bae09bacc9ff6709defe51bf6ca6128cbeb64e2f4f6e35cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1eadc8ce59e5a2bd50a4e61ad75b5124b24c21b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119138508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168778"
 ---
 # <a name="imsrdpextendedsettingsproperty-property"></a>IMsRdpExtendedSettings::P roperty
 
@@ -32,7 +32,7 @@ Contiene una propiedad con nombre.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -53,12 +53,12 @@ HRESULT get_Property(
 
 Valor de propiedad con nombre.
 
-| Nombre de propiedad | Tipo de datos | Access | Se puede cambiar después de iniciar la conexión | Descripción |
+| Nombre de propiedad | Tipo de datos | Acceso | Se puede cambiar después de iniciar la conexión | Descripción |
 |----------|-----------|--------|-----------------------------------------|-------------|
-| ConnectToChildSession | **VT \_ BOOL** | Lectura/Escritura | Sí | Al establecer esta propiedad en **True,** el control de cliente se conecta a la sesión secundaria en el equipo local en lugar de a un servidor remoto. Si esta propiedad se establece en **true**, no puede conectarse a un servidor remoto porque todas las conexiones se redirigen a localhost. Para obtener más información sobre las sesiones secundarias, vea [Sesiones secundarias](child-sessions.md). |
+| ConnectToChildSession | **VT \_ BOOL** | Lectura/Escritura | Sí | Establecer esta propiedad en **True hace** que el control de cliente se conecte a la sesión secundaria en el equipo local en lugar de a un servidor remoto. Si esta propiedad se establece en **true**, no puede conectarse a un servidor remoto porque todas las conexiones se redirigen a localhost. Para obtener más información sobre las sesiones secundarias, vea [Sesiones secundarias.](child-sessions.md) |
 | DisableCredentialsDelegation | **VT \_ BOOL** | Lectura/Escritura | No | Si **es True,** las credenciales no se envían al servidor remoto. |
-| EnableFrameBufferRedirection | **VT \_ BOOL** | Lectura/Escritura | No | Si es **True,** se intenta la redirección del búfer de fotogramas. Para una conexión de bucle atrás (el mismo equipo es cliente y servidor), el redireccionamiento del búfer de fotogramas permite que la memoria del búfer de fotogramas se comparta entre las sesiones. |
-| EnableHardwareMode | **VT \_ BOOL**  | Solo escritura | No | Si **es True,** se intenta la ayuda de hardware con la decodificación de gráficos. |
+| EnableFrameBufferRedirection | **VT \_ BOOL** | Lectura/Escritura | No | Si es **True,** se intenta la redirección del búfer de fotogramas. Para una conexión de bucleback (el mismo equipo es cliente y servidor), el redireccionamiento del búfer de marco permite que la memoria del búfer de fotogramas se comparta entre las sesiones. |
+| EnableHardwareMode | **VT \_ BOOL**  | Solo escritura | No | Si **es True,** se intenta la ayuda de hardware con la decodización de gráficos. |
 | IgnoreCursors | **VT \_ BOOL** | Solo escritura | No | Si **es True,** se omiten los cursores enviados por el servidor remoto. |
 | ManualClipboardSyncEnabled | **VT \_ BOOL** | Lectura/Escritura | Sí | Establecer esta propiedad en **True significa** que los portapapeles locales y remotos no se mantendrán sincronizados automáticamente. En su lugar, la interfaz [**IMsRdpClipboard**](imsrdpclipboard.md) debe usarse para sincronizar los formatos del Portapapeles local con el Portapapeles remoto y el Portapapeles remoto con el Portapapeles local. |
 | ZoomLevel | ***VT \_ UI4** | Lectura/Escritura | Sí | Implementa la característica Zoom mediante el control de ActiveX RDP. La característica Zoom está disponible en el **menú Sistema** de RDP. La **propiedad ZoomLevel** no tiene ningún efecto en el modo RemoteApp y el modo de pantalla completa. [**IMsRdpClientAdvancedSettings::SmartSizing**](imsrdpclientadvancedsettings-smartsizing.md) y **ZoomLevel** son mutuamente excluyentes. |

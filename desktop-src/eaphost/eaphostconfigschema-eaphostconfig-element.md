@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c34ddd1607a59c0425f7ec789bedb4981a05983ead276a14308fbf6aaadf26de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 125b5fa2cab8bf3f9da12bd842a1a102beee3fb0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168421"
 ---
 # <a name="eaphostconfig-element"></a>Elemento EapHostConfig
 
@@ -65,7 +65,7 @@ Los [**elementos Config**](eaphostconfigschema-config-eaphostconfig-element.md) 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **elemento processContents** permite futuras mejoras en el esquema. El **elemento processContents** es opcional.
 
@@ -73,14 +73,14 @@ El **elemento processContents** permite futuras mejoras en el esquema. El **elem
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

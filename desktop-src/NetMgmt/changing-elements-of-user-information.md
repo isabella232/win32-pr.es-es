@@ -4,12 +4,12 @@ description: Las funciones de administración de red proporcionan una variedad d
 ms.assetid: dc126431-57b0-467b-9f56-1e66a647c7b1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd3161bb4d689b70f85f6c20c7c302779d0f685e8bcace43cffdee68b2cda2d4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5e1aa6ec8d7fed30d38d25adc67974d8bad8ab1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169365"
 ---
 # <a name="changing-elements-of-user-information"></a>Cambiar elementos de la información del usuario
 
@@ -157,7 +157,7 @@ else
 
 En el fragmento de código siguiente se muestra cómo establecer marcas de usuario con una llamada a la [**función NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) El [**tema USER INFO \_ \_ 1008**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1008) contiene una lista de valores válidos para las marcas y una descripción de cada marca.
 
-Tenga en cuenta que la marca UF SCRIPT debe establecerse para las redes \_ WINDOWS NT, Windows 2000, Windows XP y LAN Manager. Si intenta establecer otras marcas sin establecer UF SCRIPT en estas redes, se producirá un error en la \_ función [**NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo)
+Tenga en cuenta que la marca UF SCRIPT debe establecerse para las redes \_ Windows NT, Windows 2000, Windows XP y LAN Manager. Si intenta establecer otras marcas sin establecer UF SCRIPT en estas redes, se producirá un error en la \_ función [**NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo)
 
 
 ```C++

@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1489690632b0ef1bf05a529d84ed5c96afb6c442c82744f964c9a89e9286299d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0ba55a02c5d984bc87aa05caffd42b3a3b965c43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168750"
 ---
 # <a name="imsrdpworkspace-interface"></a>Interfaz IMsRdpWorkspace
 
 Expone métodos que administran Conexión de RemoteApp y Escritorio credenciales y conexiones. Esta interfaz se implementa mediante el Servicios de Escritorio remoto web Access Control. Este control es un contenedor alrededor del cliente de Conexión a Escritorio remoto (MsTscAx.dll) y el proxy en tiempo de ejecución de Conexiones de Escritorio y RemoteApp (Tswbprxy.exe).
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpWorkspace** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IMsRdpWorkspace** también tiene estos tipos de miembros:
 

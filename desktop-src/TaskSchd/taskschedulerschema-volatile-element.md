@@ -1,6 +1,6 @@
 ---
 title: Elemento Volatile
-description: Indica si la tarea se deshabilita automáticamente cada vez que Windows inicio.
+description: Indica si la tarea se deshabilita automáticamente cada vez Windows inicio.
 ms.assetid: E0298876-2A96-401D-B857-69758AF980E5
 keywords:
 - Elemento volatile Programador de tareas
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 496e95fe98ecb2890d19bde0b99e171ab20b045a47bf69840dd78f501bfbc309
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca697bd0dff3a1fffd0b92a29d2fc88f1d4ed433
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119872105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168822"
 ---
 # <a name="volatile-element"></a>Elemento Volatile
 
-Indica si la tarea se deshabilita automáticamente cada vez que Windows inicio.
+Indica si la tarea se deshabilita automáticamente cada vez Windows inicio.
 
 ``` syntax
 <xs:element name="Volatile"
@@ -45,7 +45,7 @@ El **elemento Volatile** se define mediante el tipo complejo [**settingsType.**]
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para la programación de C++, esta configuración inactiva se especifica mediante la [**propiedad ITaskSettings3::Volatile.**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_volatile)
 

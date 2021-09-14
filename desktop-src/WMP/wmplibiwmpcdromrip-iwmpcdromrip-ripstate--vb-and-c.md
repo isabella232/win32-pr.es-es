@@ -1,10 +1,10 @@
 ---
 title: IWMPCdromRip ripState, propiedad
-description: La propiedad ripState obtiene un valor de enumeración que indica el estado actual del proceso de layout.
+description: La propiedad ripState obtiene un valor de enumeración que indica el estado actual del proceso de unmanaged.
 ms.assetid: eacf36d9-725c-47cf-9f90-6241feeb67bc
 keywords:
 - propiedad ripState Reproductor de Windows Media
-- Propiedad ripState Reproductor de Windows Media , interfaz IWMPCdromRip
+- Propiedad ripState Reproductor de Windows Media interfaz , IWMPCdromRip
 - Interfaz IWMPCdromRip Reproductor de Windows Media , propiedad ripState
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3405741d7e5b80aaba6fd6826fe1271ceed379b15fef3e78d7ba8fc1d13dc87e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0245ea8ff7d863faa1f44c8d0578777ae6cd605
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117930409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168581"
 ---
 # <a name="iwmpcdromripripstate-property"></a>IWMPCdromRip::ripState, propiedad
 
 La **propiedad ripState** obtiene un valor de enumeración que indica el estado actual del proceso de unmanaged.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -52,7 +52,7 @@ Public ReadOnly Property ripState As WMPRipState
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

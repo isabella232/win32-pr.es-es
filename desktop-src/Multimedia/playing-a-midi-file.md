@@ -5,15 +5,15 @@ ms.assetid: a11b432f-de31-4637-a9cd-eef5fad7591a
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c7ce9638a5f26a2d701798f72229877dc2758829
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371731"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169613"
 ---
 # <a name="playing-a-midi-file"></a>Reproducir un archivo MIDI
 
-En el ejemplo siguiente se abre un dispositivo secuenciador de MIDI, se comprueba que el asignador DE MIDI se seleccionó como puerto de salida, se reproduce el archivo MIDI especificado por el parámetro *lpszMIDIFileName* y se cierra el dispositivo una vez completada la reproducción. Usa la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
+En el ejemplo siguiente se abre un dispositivo secuenciador MIDI, se comprueba que se seleccionó el asignador de MIDI como puerto de salida, se reproduce el archivo MIDI especificado por el parámetro *lpszMIDIFileName* y se cierra el dispositivo una vez completada la reproducción. Usa la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++

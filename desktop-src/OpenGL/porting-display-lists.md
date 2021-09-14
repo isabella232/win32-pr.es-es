@@ -10,12 +10,12 @@ keywords:
 - mostrar listas, porte desde IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 858f1f3be180b3ef09c81bb8d61b18705fc9485742d7384562eecff142f4bfb8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 461000e6d785f0d03bbbc8f738eba60768bc5d74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117980807"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169177"
 ---
 # <a name="porting-display-lists"></a>Porte de listas de presentación
 

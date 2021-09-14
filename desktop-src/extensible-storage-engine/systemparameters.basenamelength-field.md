@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el campo SystemParameters.BaseNameLength
+description: 'Más información sobre: Campo SystemParameters.BaseNameLength'
 title: Campo SystemParameters.BaseNameLength
 TOCTitle: BaseNameLength field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.BaseNameLength
@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 752aef95613b1d91536034b7e6d7bdcc5082623b436cc3b448ce8403cb586a3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 688e6efcf51fc874e89140c2543fcca9d26c194c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117890653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168357"
 ---
 # <a name="systemparametersbasenamelength-field"></a>Campo SystemParameters.BaseNameLength
 
-Longitud del prefijo utilizado para dar nombre a los archivos usados por el motor de base de datos.
+Longitud del prefijo utilizado para dar nombre a los archivos utilizados por el motor de base de datos.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -53,7 +53,7 @@ value = SystemParameters.BaseNameLength
 public const int BaseNameLength
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

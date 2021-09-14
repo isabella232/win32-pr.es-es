@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 9e7bf14cd7eae73ac1e5c8e21f8036574628932032a1545f8ac1c653dbbf8adb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3770ad0fd3db7d1c076b5d1f286c1fdbdc2707a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169310"
 ---
 # <a name="getframecapturehandle-function"></a>Función GetFrameCaptureHandle
 
@@ -52,7 +52,7 @@ Si la función se realiza correctamente, el valor devuelto es un identificador d
 
 Si la función no se realiza correctamente, el valor devuelto es 0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetFrameCaptureHandle.**
 

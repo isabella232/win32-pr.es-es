@@ -6,12 +6,12 @@ keywords:
 - Restart Manager Restart Mgr , reference, structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2d86d74872d83b7c161cf694a6d9da6c8a27b758f8174fa20adcfa1a8f1c374
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea75c0556cc81c220a8233a41fbbe741385dd69a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169009"
 ---
 # <a name="restart-manager-structures"></a>Reiniciar estructuras del administrador
 

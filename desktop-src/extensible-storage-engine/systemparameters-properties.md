@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.syst
 ms:contentKeyID: 55104035
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 13b2735f699fe2943dcb63bf262c8c708e61df754ed6799f2fb948119755d2e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12e18b6c045758c8e9fd7ffb91f728c78dcf2e24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117890683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168358"
 ---
 # <a name="systemparameters-properties"></a>Propiedades de SystemParameters
 
@@ -60,7 +60,7 @@ El [tipo SystemParameters](./systemparameters-class.md) expone los miembros sigu
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351218(v=exchg.10).md">Configuración</a></td>
-<td>Obtiene o establece un valor que especifica los valores predeterminados para todo el conjunto de parámetros del sistema. Cuando este parámetro se establece en una configuración específica, todos los valores de parámetros del sistema se restablecen a sus valores predeterminados para esa configuración. Si la configuración se establece para una instancia específica, los parámetros globales del sistema no se restablecerán a sus valores predeterminados. Configuración pequeña (0): el motor de base de datos está optimizado para su uso en memoria. Configuración heredada (1): el motor de base de datos tiene sus valores predeterminados tradicionales. Compatible con Windows Vista y versiones 2. Se omite en Windows XP y Windows Server 2003.</td>
+<td>Obtiene o establece un valor que especifica los valores predeterminados para todo el conjunto de parámetros del sistema. Cuando este parámetro se establece en una configuración específica, todos los valores de parámetros del sistema se restablecen a sus valores predeterminados para esa configuración. Si la configuración se establece para una instancia específica, los parámetros globales del sistema no se restablecerán a sus valores predeterminados. Configuración pequeña (0): el motor de base de datos está optimizado para su uso en memoria. Configuración heredada (1): el motor de base de datos tiene sus valores predeterminados tradicionales. Se admite Windows Vista y versiones 2. Se omite en Windows XP y Windows Server 2003.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -70,7 +70,7 @@ El [tipo SystemParameters](./systemparameters-class.md) expone los miembros sigu
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351221(v=exchg.10).md">EnableAdvanced</a></td>
-<td>Obtiene o establece un valor que indica si el motor de base de datos acepta o rechaza los cambios en un subconjunto de los parámetros del sistema. Este parámetro se usa junto con <a href="dn351218(v=exchg.10).md">Configuration</a> para evitar que algunos parámetros del sistema se establezcan fuera de los valores predeterminados de la configuración seleccionada. Compatible con Windows Vista y versiones 2. Se omite en Windows XP y Windows Server 2003.</td>
+<td>Obtiene o establece un valor que indica si el motor de base de datos acepta o rechaza los cambios en un subconjunto de los parámetros del sistema. Este parámetro se usa junto con <a href="dn351218(v=exchg.10).md">Configuration</a> para evitar que algunos parámetros del sistema se establezcan fuera de los valores predeterminados de la configuración seleccionada. Se admite Windows Vista y versiones 2. Se omite en Windows XP y Windows Server 2003.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -140,7 +140,7 @@ El [tipo SystemParameters](./systemparameters-class.md) expone los miembros sigu
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351161(v=exchg.10).md">StartFlushThreshold</a></td>
-<td>Obtiene o establece el umbral en el que la caché de páginas de la base de datos comienza a expulsar páginas de la memoria caché para hacer espacio para las páginas que no están almacenadas en caché. Cuando el número de búferes de página de la memoria caché cae por debajo de este umbral, se inicia un proceso en segundo plano para reponer ese grupo de búferes disponibles. Este umbral siempre es relativo al tamaño máximo de caché establecido por JET_paramCacheSizeMax. Este umbral también debe ser siempre menor que el umbral de detección establecido por JET_paramStopFlushThreshold. El alto de distancia del umbral de inicio determinará el tiempo de respuesta que debe tener la caché de páginas de la base de datos para generar búferes disponibles antes de que la aplicación los necesite. Un umbral de inicio alto dará al proceso en segundo plano más tiempo para reaccionar. Sin embargo, un umbral de inicio alto implica un umbral de detección mayor y eso reducirá el tamaño efectivo de la caché de páginas de la base de datos.</td>
+<td>Obtiene o establece el umbral en el que la memoria caché de páginas de la base de datos comienza a expulsar páginas de la memoria caché para hacer espacio para las páginas que no están almacenadas en caché. Cuando el número de búferes de página de la memoria caché cae por debajo de este umbral, se inicia un proceso en segundo plano para reponer ese grupo de búferes disponibles. Este umbral siempre es relativo al tamaño máximo de caché establecido por JET_paramCacheSizeMax. Este umbral también debe ser siempre menor que el umbral de detección establecido por JET_paramStopFlushThreshold. El alto de distancia del umbral de inicio determinará el tiempo de respuesta que debe tener la caché de páginas de la base de datos para generar búferes disponibles antes de que la aplicación los necesite. Un umbral de inicio alto dará al proceso en segundo plano más tiempo para reaccionar. Sin embargo, un umbral de inicio alto implica un umbral de detección mayor y eso reducirá el tamaño efectivo de la caché de páginas de la base de datos.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>

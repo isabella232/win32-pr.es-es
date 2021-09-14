@@ -1,25 +1,25 @@
 ---
 title: Porte de listas de presentación editadas
-description: Aunque no puede editar las listas de presentación de OpenGL, puede obtener resultados similares anidando listas de visualización y, a continuación, destruyendo y creando nuevas versiones de las sublistas.
+description: Aunque no puede editar las listas de presentación de OpenGL, puede obtener resultados similares anidando listas de presentación y, a continuación, destruyendo y creando nuevas versiones de las sublistas.
 ms.assetid: b7f7ffed-c3de-43d4-bff2-f244faa3a27a
 keywords:
-- Porte de IRIS GL, mostrar listas
+- Porte de IRIS GL, listas de visualización
 - porting from IRIS GL,display lists
-- porting to OpenGL from IRIS GL,display lists
+- porte a OpenGL desde IRIS GL, mostrar listas
 - Porte de OpenGL desde IRIS GL, mostrar listas
-- display lists,porting from IRIS GL
+- mostrar listas, porte desde IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13f1630b0560091482d47f85e038d908dcfab202ae772c4d35dc388324b46075
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5555c850d4695ba3732b61c0a41b7aedd8af0a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119485585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169169"
 ---
 # <a name="porting-edited-display-lists"></a>Porte de listas de presentación editadas
 
-Aunque no puede editar las listas de presentación de OpenGL, puede obtener resultados similares anidando listas de visualización y, a continuación, destruyendo y creando nuevas versiones de las sublistas. Por ejemplo:
+Aunque no puede editar las listas de presentación de OpenGL, puede obtener resultados similares anidando listas de presentación y, a continuación, destruyendo y creando nuevas versiones de las sublistas. Por ejemplo:
 
 ``` syntax
 glNewList (1, GL_COMPILE); 

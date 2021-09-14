@@ -1,5 +1,5 @@
 ---
-title: Interfaz IMsRdpInputSink
+title: IMsRdpInputSink (interfaz)
 description: Receptor de entrada de Escritorio remoto.
 ms.assetid: ec30b64a-63bb-4f8f-8979-ab2ef9ece6b0
 ms.tgt_platform: multiple
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2167106577a005f6e4ba13ee77edcdbc77302efad9de00395fc7360ade4c5720
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cad3112b3bb6df92bfb7e403e779773a2203f2cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119058852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168773"
 ---
-# <a name="imsrdpinputsink-interface"></a>Interfaz IMsRdpInputSink
+# <a name="imsrdpinputsink-interface"></a>IMsRdpInputSink (interfaz)
 
 Receptor de entrada de Escritorio remoto.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpInputSink** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMsRdpInputSink** también tiene estos tipos de miembros:
 

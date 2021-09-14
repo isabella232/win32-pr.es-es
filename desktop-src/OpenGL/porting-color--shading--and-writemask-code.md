@@ -17,12 +17,12 @@ keywords:
 - Porte de OpenGL desde IRIS GL, máscara de escritura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9d3fcb9cf47b45b4b1174cb20e3259dbb883c2fd0414d255a418c52b50fa28e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9f8bc35986bc0f9d7076411fecbd9c1fa5d7bfbc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119485785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169205"
 ---
 # <a name="porting-color-shading-and-writemask-code"></a>Porting Color, Shading, and Writemask Code
 
@@ -33,7 +33,7 @@ Al portear el color, el sombreado y escribir código de máscara en OpenGL, teng
 -   No hay ningún equivalente simple para **cpack**.
 -   Es posible que tenga que traducir el código que incluye las funciones **c** o **color** a [**glClearColor**](glclearcolor.md) o [**glClearIndex en**](glclearindex.md) lugar de **glColor** o **glIndex**.
 -   La máscara de escritura RGBA se aplica a cada componente, pero no a cada bit.
--   IRIS GL proporciona constantes de color definidas: BLACK, BLUE, RED, GREEN, MAGENTA,CIAN, YELLOW y WHITE. OpenGL no proporciona estas constantes.
+-   IRIS GL proporciona constantes de color definidas: BLACK, BLUE, RED, GREEN, YELLOW, YELLOW y WHITE. OpenGL no proporciona estas constantes.
 
 En este tema se incluye información sobre lo siguiente.
 

@@ -1,7 +1,7 @@
 ---
-description: La función GetEnabledProtocols devuelve una tabla de todos los protocolos que están marcados como habilitados.
+description: La función GetEnabledProtocols devuelve una tabla de todos los protocolos marcados como Habilitado.
 ms.assetid: 11feac64-c770-47b2-a740-fc372e97b8ed
-title: Función GetEnabledProtocols (Netmon. h)
+title: Función GetEnabledProtocols (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Nmapi.dll
 ms.openlocfilehash: 284d6c87bf5a3b26d6c3f379a710966be21006d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652367"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169318"
 ---
-# <a name="getenabledprotocols-function"></a>GetEnabledProtocols función)
+# <a name="getenabledprotocols-function"></a>Función GetEnabledProtocols
 
-La función **GetEnabledProtocols** devuelve una tabla de todos los protocolos que están marcados como habilitados.
+La **función GetEnabledProtocols** devuelve una tabla de todos los protocolos marcados como Habilitado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ LPPROTOCOLTABLE WINAPI GetEnabledProtocols(
 
 <dl> <dt>
 
-*hCapture* \[ de\]
+*hCapture* \[ En\]
 </dt> <dd>
 
 Identificador de la captura.
@@ -48,13 +48,13 @@ Identificador de la captura.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es un puntero a una estructura [PROTOCOLTABLE](protocoltable.md) que enumera todos los protocolos habilitados en la captura.
+Si la función es correcta, el valor devuelto es un puntero a una estructura [PROTOCOLTABLE](protocoltable.md) que enumera todos los protocolos habilitados en la captura.
 
-Si la función no se realiza correctamente, el valor devuelto es **null**.
+Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
 ## <a name="remarks"></a>Observaciones
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetEnabledProtocols** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetEnabledProtocols.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **Ge
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

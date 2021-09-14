@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: da7ff72414a1702a1849f76f658f0fbf85116b9b831e800148d5a6165da7ac17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba62f3341b18ddfdbf09af4eec701322d901ab79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169285"
 ---
 # <a name="irtcconnect-method"></a>IRTC::Conectar método
 
@@ -68,22 +68,22 @@ Dirección de la función de devolución de llamada de marco del usuario, que se
 *UserContext* \[ En\]
 </dt> <dd>
 
-Valor que se pasa cuando se llama a la función de devolución de llamada de marco y estado del usuario. Si se especifican ambas funciones de devolución de llamada, deben usar el mismo valor de contexto de usuario. El valor de este parámetro suele ser HWND o un puntero "this".
+Valor pasado cuando se llama al estado del usuario y a la función de devolución de llamada de marco. Si se especifican ambas funciones de devolución de llamada, deben usar el mismo valor de contexto de usuario. El valor de este parámetro suele ser HWND o un puntero "this".
 
 </dd> <dt>
 
 *hErrorBlob* \[ out\]
 </dt> <dd>
 
-Controlar un blob de error que contiene información de error adicional. Vea Comentarios en la parte inferior de este tema para obtener información sobre lo que se encuentra en el blob de errores.
+Controlar un blob de error que contiene información de error adicional. Vea Comentarios en la parte inferior de este tema para obtener información sobre lo que hay en el blob de error.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método es correcto, el valor devuelto es NMERR \_ SUCCESS.
+Si este método se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IRTC::Configure):**
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IRTC::Configure):**
 
 
 
@@ -91,30 +91,30 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 |---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ YA \_ CONECTADO**</dt> </dl>            | Esta instancia del objeto COM de NPP ya está conectada a la red.<br/>                                                                                                                                                                                                          |
 | <dl> <dt>**ERROR DE CONVERSIÓN \_ DE \_ BLOBS DE NMERR \_**</dt> </dl>       | El BLOB de configuración está dañado. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                                       |
-| <dl> <dt>**LA ENTRADA DE BLOB DE NMERR \_ \_ NO \_ \_ \_ EXISTE**</dt> </dl> | El BLOB de entrada especificado por el *parámetro hInputBlob* carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la llamada **IRTC::Conectar** **o IRTC::Configure.** Mire el blob de error devuelto por *hErrorBlob para* determinar qué entrada no se encontró.<br/> |
+| <dl> <dt>**LA ENTRADA DE BLOB DE NMERR \_ \_ NO \_ \_ \_ EXISTE**</dt> </dl> | El BLOB de entrada especificado por el *parámetro hInputBlob* carece de una entrada necesaria para realizar esta operación. La llamada **IRTC::Conectar** **o IRTC::Configure** puede generar este error. Mire el blob de error devuelto por *hErrorBlob para* determinar qué entrada no se encontró.<br/> |
 | <dl> <dt>**BLOB DE NMERR \_ \_ NO \_ INICIALIZADO**</dt> </dl>        | No se ha llamado a la función **CreateBlob.** La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                         |
 | <dl> <dt>**CADENA DE BLOB DE NMERR \_ \_ NO \_ VÁLIDA**</dt> </dl>         | La cadena no termina en NULL. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                                       |
-| <dl> <dt>**DESENCADENADOR NO ILEGAL \_ DE NMERR \_**</dt> </dl>              | La parte del desencadenador del BLOB de entrada está dañada. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                        |
+| <dl> <dt>**DESENCADENADOR NO ES DE NMERR \_ \_**</dt> </dl>              | La parte del desencadenador del BLOB de entrada está dañada. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                        |
 | <dl> <dt>**BLOB NO VÁLIDO DE NMERR \_ \_**</dt> </dl>                 | El objeto especificado en *hInputBlob* no es un BLOB. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                      |
-| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE \_ MEMORIA**</dt> </dl>               | La memoria necesaria para realizar esta operación no está disponible. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                              |
-| <dl> <dt>**TIEMPO DE ESPERA DE NMERR \_**</dt> </dl>                       | Se ha pasado el tiempo de espera de la solicitud. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                                               |
-| <dl> <dt>**BLOB DE NIVEL SUPERIOR \_ NMERR \_**</dt> </dl>                 | El número de versión del BLOB especificado en *hInputBlob* es incorrecto. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                   |
+| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE LA \_ MEMORIA**</dt> </dl>               | La memoria necesaria para realizar esta operación no está disponible. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                              |
+| <dl> <dt>**TIEMPO DE ESPERA de NMERR \_**</dt> </dl>                       | Se ha producido un tiempo de espera de la solicitud. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                                               |
+| <dl> <dt>**BLOB DE \_ NMERR UPLEVEL \_**</dt> </dl>                 | El número de versión del BLOB especificado en *hInputBlob* es incorrecto. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                   |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se **llama Conectar** método , el NPP llama automáticamente al método **IRTC::Configure** mediante el BLOB proporcionado por *hInputBlob*. Tenga en cuenta que los códigos de error devueltos por la llamada a **IRTC::Configure** se devuelven y devuelven mediante la **llamada a IRTC::Conectar** llamada.
+Cuando se **Conectar** al método , el NPP llama automáticamente al método **IRTC::Configure** mediante el BLOB proporcionado por *hInputBlob*. Tenga en cuenta que los códigos de error devueltos por la llamada a **IRTC::Configure** se devuelven y devuelve la llamada **IRTC::Conectar.**
 
 Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que al conectarse a la red mediante este método, debe seguir usando la **interfaz IRTC** para capturar fotogramas.
 
 Al llamar a esta función, debe especificar una función de devolución de llamada de estado o marco, incluso si solo actúa como marcador de posición.
 
-El BLOB de entrada especificado por *hInputBlob* se puede obtener llamando a los métodos **GetNPPBlobFromUI**, **GetNPPBlobTable** y **SelectNPPBlobFromTable.**
+El BLOB de entrada especificado por *hInputBlob* se puede obtener llamando a los métodos **GetNPPBlobFromUI,** **GetNPPBlobTable** y **SelectNPPBlobFromTable.**
 
-El blob de error devuelto en *hErrorBlob* contiene información de error que el desarrollador o la aplicación pueden usar para solucionar problemas. El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron comprender o encontrar en el BLOB de entrada especificado en *hInputBlob*. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada Monitor de red no se encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
+El BLOB de error devuelto en *hErrorBlob* contiene información de error que el desarrollador o la aplicación pueden usar para solucionar problemas. El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron entender ni encontrar en el BLOB de entrada especificado en *hInputBlob*. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada Monitor de red no se encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
 
 
 
@@ -130,7 +130,7 @@ El blob de error devuelto en *hErrorBlob* contiene información de error que el 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |

@@ -4,12 +4,12 @@ ms.assetid: 44479f5d-2e92-4802-a633-3e0bb7d61e94
 title: Uso de Device Power API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1aff8239c1cd0ffc8d5e8abaf0133a9ca42bb3a01a5b6fc2acef7850929a8484
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cabd7a54efc0979360a863dc9c0cf16d69d8d22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169130"
 ---
 # <a name="using-the-device-power-api"></a>Uso de Device Power API
 
@@ -23,11 +23,11 @@ Si [**se llama a DevicePowerOpen,**](/windows/desktop/api/PowrProf/nf-powrprof-d
 
 ## <a name="enumerating-devices"></a>Enumeración de dispositivos
 
-La [**función DevicePowerEnumDevices**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerenumdevices) detecta si la lista de dispositivos está abierta y, si no es así, la abre. **DevicePowerEnumDevices** enumera los dispositivos en función de los criterios de búsqueda especificados. Si la función abrió la lista de dispositivos, se cerrará antes de que se devuelva la función.
+La [**función DevicePowerEnumDevices**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerenumdevices) detecta si la lista de dispositivos está abierta y, si no es así, la abre. **DevicePowerEnumDevices** enumera los dispositivos según los criterios de búsqueda especificados. Si la función abrió la lista de dispositivos, se cierra antes de que se devuelva la función.
 
-## <a name="enabling-and-disabling-a-device-from-waking-the-system"></a>Habilitación y deshabilitación de un dispositivo para que no se desabilite el sistema
+## <a name="enabling-and-disabling-a-device-from-waking-the-system"></a>Habilitación y deshabilitación de un dispositivo para evitar la activación del sistema
 
-La [**función DevicePowerSetDeviceState,**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowersetdevicestate) similar a [**DevicePowerEnumDevices,**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerenumdevices)detecta si la lista de dispositivos está abierta y, si no, la abre. **A continuación, DevicePowerSetDeviceState** establece los criterios especificados para el dispositivo especificado. Si la función abrió la lista de dispositivos, se cerrará antes de que se devuelva la función.
+La [**función DevicePowerSetDeviceState,**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowersetdevicestate) similar a [**DevicePowerEnumDevices,**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerenumdevices)detecta si la lista de dispositivos está abierta y, si no es así, la abre. **DevicePowerSetDeviceState** establece los criterios especificados para el dispositivo especificado. Si la función abrió la lista de dispositivos, se cierra antes de que se devuelva la función.
 
 ## <a name="example-code"></a>Código de ejemplo
 
@@ -99,7 +99,7 @@ int __cdecl main()
 
 
 
-En este ejemplo, la lista de dispositivos se abre una vez y se cierra una vez. Si no se llama a las funciones [**DevicePowerOpen**](/windows/desktop/api/PowrProf/nf-powrprof-devicepoweropen) y [**DevicePowerClose,**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerclose) cada llamada a [**DevicePowerEnumDevices**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerenumdevices) y [**DevicePowerSetDeviceState**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowersetdevicestate)habría abierto y cerrado la lista de dispositivos. Al usar **DevicePowerOpen** y **DevicePowerClose,** hemos guardado la apertura de la lista de dispositivos dos veces innecesarias.
+En este ejemplo, la lista de dispositivos se abre una vez y se cierra una vez. Si no se llamara a las funciones [**DevicePowerOpen**](/windows/desktop/api/PowrProf/nf-powrprof-devicepoweropen) y [**DevicePowerClose,**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerclose) cada llamada a [**DevicePowerEnumDevices**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowerenumdevices) y [**DevicePowerSetDeviceState**](/windows/desktop/api/PowrProf/nf-powrprof-devicepowersetdevicestate)habría abierto y cerrado la lista de dispositivos. Al usar **DevicePowerOpen y** **DevicePowerClose,** hemos guardado la apertura de la lista de dispositivos dos veces innecesarias.
 
  
 

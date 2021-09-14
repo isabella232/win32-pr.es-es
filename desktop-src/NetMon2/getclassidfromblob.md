@@ -1,7 +1,7 @@
 ---
 description: La función GetClassIDFromBlob recupera un valor de identificador de clase con nombre de un BLOB.
 ms.assetid: fef29a42-ccd3-4655-958c-d150e5bcd0d7
-title: Función GetClassIDFromBlob (Netmon. h)
+title: Función GetClassIDFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Npptools.dll
 ms.openlocfilehash: 70122422c47a986058322ca8d17082093e02a4b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169326"
 ---
-# <a name="getclassidfromblob-function"></a>GetClassIDFromBlob función)
+# <a name="getclassidfromblob-function"></a>Función GetClassIDFromBlob
 
-La función **GetClassIDFromBlob** recupera un valor de identificador de clase con nombre de un BLOB.
+La **función GetClassIDFromBlob** recupera un valor de identificador de clase con nombre de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,46 +43,46 @@ DWORD GetClassIDFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del propietario del BLOB.
+Puntero al nombre del propietario de BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la categoría de BLOB.
+Puntero al nombre de la categoría BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la etiqueta de BLOB.
+Puntero al nombre de la etiqueta BLOB.
 
 </dd> <dt>
 
-*pClsID* \[ enuncia\]
+*pClsID* \[ out\]
 </dt> <dd>
 
-Puntero al identificador de clase de BLOB.
+Puntero al identificador de clase BLOB.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que describe el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Si la función no es correcta, el valor devuelto es un valor de NMERR que descri
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

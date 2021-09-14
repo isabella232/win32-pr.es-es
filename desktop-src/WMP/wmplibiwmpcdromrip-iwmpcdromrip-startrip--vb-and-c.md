@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6686d3911123eee91dabec1f8750be7f80a6d8dc9c434d893560278ad291ded
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 327ac9009cf1b8fb9ccfbcc460cde78ef40b3802
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168578"
 ---
 # <a name="iwmpcdromripstartrip-method"></a>IWMPCdromRip::startRip (método)
 
@@ -53,15 +53,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El uso de la interfaz **IWMPCdromRip** de un CD tiene el mismo efecto que la música de arras mediante Reproductor de Windows Media interfaz de usuario. El contenido desmesado se agrega automáticamente a la biblioteca según las preferencias del usuario. Para obtener más información sobre las preferencias del usuario para la ala de CD, vea " Alegar música de CDs" en Reproductor de Windows Media Ayuda.
+El uso de la interfaz **IWMPCdromRip** de un CD tiene el mismo efecto que la música de arras mediante Reproductor de Windows Media interfaz de usuario. El contenido desmesado se agrega automáticamente a la biblioteca según las preferencias del usuario. Para obtener más información acerca de las preferencias del usuario para la registro de CD, vea " Alegar música de CDs" en Reproductor de Windows Media Ayuda.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

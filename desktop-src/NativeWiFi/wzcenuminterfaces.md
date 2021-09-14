@@ -1,7 +1,7 @@
 ---
-description: Enumera todas las interfaces LAN inalámbricas administradas por el servicio de configuración inalámbrica cero.
+description: Enumera todas las interfaces laN inalámbricas administradas por el servicio Configuración inalámbrica cero.
 ms.assetid: ef8a6a3e-042a-4219-baed-a82bb3e983ae
-title: Función WZCEnumInterfaces (wzcsapi. h)
+title: Función WZCEnumInterfaces (Wzcsapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - Wzcsapi.dll
 ms.openlocfilehash: b2a2c886f59843dd1bf1316053c603faf4cc112a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169389"
 ---
-# <a name="wzcenuminterfaces-function"></a>WZCEnumInterfaces función)
+# <a name="wzcenuminterfaces-function"></a>Función WZCEnumInterfaces
 
-\[**WZCEnumInterfaces** ya no es compatible con Windows Vista y windows Server 2008. En su lugar, use la función [**WlanEnumInterfaces**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanenuminterfaces) . Para obtener más información, consulte [acerca de la API WiFi nativa](about-the-native-wifi-api.md).\]
+\[**WZCEnumInterfaces** ya no se admite a partir de Windows Vista y Windows Server 2008. En su lugar, use [**la función WlanEnumInterfaces.**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanenuminterfaces) Para obtener más información, vea [Acerca de la API de Wi-Fi nativa.](about-the-native-wifi-api.md)\]
 
-La función **WZCEnumInterfaces** enumera todas las interfaces LAN inalámbricas administradas por el servicio de configuración inalámbrica rápida.
+La **función WZCEnumInterfaces** enumera todas las interfaces LAN inalámbricas administradas por el servicio configuración inalámbrica cero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,25 +42,25 @@ DWORD WZCEnumInterfaces(
 
 <dl> <dt>
 
-*pSrvAddr* \[ de\]
+*pSrvAddr* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena que contiene el nombre del equipo en el que se va a ejecutar esta función. Si este parámetro es **null**, el servicio de configuración inalámbrica cero se enumera en el equipo local.
+Puntero a una cadena que contiene el nombre del equipo en el que se va a ejecutar esta función. Si este parámetro es **NULL,** el servicio configuración inalámbrica cero se enumera en el equipo local.
 
-Si el parámetro *pSrvAddr* especificado es un equipo remoto, el equipo remoto debe admitir llamadas RPC remotas.
+Si el *parámetro pSrvAddr* especificado es un equipo remoto, el equipo remoto debe admitir llamadas RPC remotas.
 
 </dd> <dt>
 
-*pIntfs* \[ enuncia\]
+*pIntfs* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ tabla de claves de INTFS**](intfs-key-table.md) que contiene una tabla de información de clave para todas las interfaces.
+Puntero a una [**estructura INTFS \_ KEY \_ TABLE**](intfs-key-table.md) que contiene una tabla de información clave para todas las interfaces.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
 Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes códigos de retorno.
 
@@ -68,11 +68,11 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
 | Código devuelto                                                                                               | Descripción                                                                                                                                                   |
 |-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ERROR de la \_ arena \_**</dt> </dl>      | Los bloques de control de almacenamiento se han destruido. Se devuelve este error si el servicio de configuración inalámbrica cero no ha inicializado objetos internos.<br/> |
-| <dl> <dt>**RPC \_ S \_ desconocido \_ si**</dt> </dl>        | Se desconoce la interfaz.<br/> Se devuelve este error si no se inicia el servicio de configuración inalámbrica cero.<br/>                             |
-| <dl> <dt>**\_puntero de \_ \_ referencia null \_ de RPC X**</dt> </dl> | Se pasó un puntero de referencia nulo al código auxiliar.<br/> Se devuelve este error si el parámetro *pIntfs* es **null**.<br/>                          |
-| <dl> <dt>**ERROR \_ de \_ memoria insuficiente \_**</dt> </dl> | No hay suficiente memoria disponible para procesar esta solicitud y asignar memoria para los resultados de la consulta.<br/>                                                  |
-| <dl> <dt>**Estado de RPC \_**</dt> </dl>                | Varios códigos de error.<br/>                                                                                                                               |
+| <dl> <dt>**ERROR \_ DE LA \_ PAPELERA**</dt> </dl>      | Los bloques de control de almacenamiento se destruyeron. Este error se devuelve si el servicio configuración inalámbrica cero no ha inicializado objetos internos.<br/> |
+| <dl> <dt>**RPC \_ S \_ UNKNOWN \_ IF**</dt> </dl>        | La interfaz es desconocida.<br/> Este error se devuelve si no se inicia el servicio configuración inalámbrica cero.<br/>                             |
+| <dl> <dt>**RPC \_ X \_ NULL \_ REF \_ POINTER**</dt> </dl> | Se pasó un puntero de referencia null al código auxiliar.<br/> Este error se devuelve si el *parámetro pIntfs* es **NULL.**<br/>                          |
+| <dl> <dt>**ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**</dt> </dl> | No hay suficiente memoria disponible para procesar esta solicitud y asignar memoria para los resultados de la consulta.<br/>                                                  |
+| <dl> <dt>**ESTADO \_ RPC**</dt> </dl>                | Varios códigos de error.<br/>                                                                                                                               |
 
 
 
@@ -80,23 +80,23 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
 ## <a name="remarks"></a>Observaciones
 
-El miembro **dwNumIntfs** de la estructura de la [**\_ \_ tabla de claves INTFS**](intfs-key-table.md) a la que apunta *pIntf* debe establecerse en 0 antes de llamar a la función **WZCEnumInterfaces** . Además, el miembro **pIntfs** debe establecerse en **null**.
+El **miembro dwNumIntfs** de la estructura [**INTFS \_ KEY \_ TABLE**](intfs-key-table.md) a la que apunta *pIntf* debe establecerse en 0 antes de llamar a la función **WZCEnumInterfaces.** Además, el **miembro pIntfs** debe establecerse en **NULL.**
 
-En el caso de las llamadas posteriores a otras funciones de configuración inalámbricas cero, una aplicación debe identificar la interfaz en la que está funcionando proporcionando la información de clave pertinente devuelta por la función **WZCEnumInterfaces** .
+Para las llamadas posteriores a otras funciones de configuración inalámbrica cero, una aplicación debe identificar la interfaz en la que está funcionando proporcionando la información clave pertinente devuelta por la función **WZCEnumInterfaces.**
 
-Si **WZCEnumInterfaces** devuelve un error \_ , el llamador debe llamar a [**LocalFree**](/windows/win32/api/winbase/nf-winbase-localfree) para liberar los búferes internos asignados para los datos devueltos cuando ya no se necesite esta información.
+Si **WZCEnumInterfaces** devuelve ERROR SUCCESS, el autor de la llamada debe llamar a LocalFree para liberar los búferes internos asignados para los datos devueltos una vez que esta información ya no sea \_ necesaria. [](/windows/win32/api/winbase/nf-winbase-localfree)
 
 > [!Note]  
-> El archivo de encabezado *wzcsapi. h* y el archivo de biblioteca de importación *wzcsapi. lib* no están disponibles en el Windows SDK.
+> El *archivo de encabezado Wzcsapi.h* y el archivo de biblioteca de importación *Wzcsapi.lib* no están disponibles en Windows SDK.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se enumeran las interfaces LAN inalámbricas en el equipo local administrado por el servicio de configuración inalámbrica cero y se imprime el valor de la interfaz GUID para cada interfaz.
+En el ejemplo siguiente se enumeran las interfaces laN inalámbricas en el equipo local administrado por el servicio configuración inalámbrica cero e imprime el valor del GUID de interfaz para cada interfaz.
 
 > [!Note]  
-> En este ejemplo se producirá un error en Windows Vista y versiones posteriores.
+> Este ejemplo producirá un error en Windows Vista y versiones posteriores.
 
  
 
@@ -234,12 +234,12 @@ int wmain()
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP con SP3<br/>                                                         |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Wzcsapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Wzcsapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Wzcsapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wzcsapi.dll</dt> </dl> |
 
 
@@ -248,10 +248,10 @@ int wmain()
 
 <dl> <dt>
 
-[**\_tabla de claves de INTFS \_**](intfs-key-table.md)
+[**TABLA DE CLAVES \_ \_ INTFS**](intfs-key-table.md)
 </dt> <dt>
 
-[**\_entrada de clave de Intf \_**](intf-key-entry.md)
+[**ENTRADA DE \_ CLAVE \_ INTF**](intf-key-entry.md)
 </dt> <dt>
 
 [**WZCEapolGetInterfaceParams**](wzceapolgetinterfaceparams.md)

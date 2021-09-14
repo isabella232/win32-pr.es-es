@@ -1,5 +1,5 @@
 ---
-title: Propiedad IMsRdpClientAdvancedSettings HotKeyFullScreen
+title: IMsRdpClientAdvancedSettings HotKeyFullScreen, propiedad
 description: Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de la tecla de acceso rápido para cambiar al modo de pantalla completa.
 ms.assetid: 75fda212-ec68-4b68-b7db-2bfcdee7a7de
 ms.tgt_platform: multiple
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3276551c826c09b60c94a637194358093dafe7ce67094af085093f65d91e1668
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed9c53dd0c6dff9e47b87ea8c8697c20b3613a14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119871005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168781"
 ---
 # <a name="imsrdpclientadvancedsettingshotkeyfullscreen-property"></a>IMsRdpClientAdvancedSettings::HotKeyFullScreen, propiedad
 
@@ -67,7 +67,7 @@ Especifica el código de clave virtual que se agregará a CTRL+ALT para determin
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -90,7 +90,7 @@ Nuevo código de clave virtual. **VK \_ CANCEL** es el valor predeterminado.
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 

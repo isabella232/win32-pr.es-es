@@ -4,12 +4,12 @@ description: Todas las demás cosas son iguales, use RPC \_ C \_ AUTHN \_ GSS \_
 ms.assetid: 921975ae-17e7-433a-bbc5-e6b95989d31a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1b89bdb10eb95952183b2a992fd12a668e79b0716f3c453f597d2241323c4ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33248d989031390b1b57730c637829922d15166a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169010"
 ---
 # <a name="which-security-provider-to-use"></a>Qué proveedor de seguridad se va a usar
 

@@ -4,25 +4,25 @@ description: Especifica el nombre del archivo que contiene los datos de icono a 
 ms.assetid: 2b6ac2ad-9745-4b80-a415-4840cd8aa8b3
 ms.tgt_platform: multiple
 keywords:
-- Propiedad IconFile Servicios de Escritorio remoto
-- Propiedad IconFile Servicios de Escritorio remoto , interfaz IMsTscAdvancedSettings
-- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad IconFile
-- Propiedad IconFile Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
-- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad IconFile
-- Interfaz IconFile Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings2
-- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad IconFile
-- Interfaz IconFile Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings3
-- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad IconFile
-- Interfaz IconFile Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings4
-- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad IconFile
-- Propiedad IconFile Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
-- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad IconFile
-- Propiedad IconFile Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
-- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad IconFile
-- Propiedad IconFile Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
-- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad IconFile
-- Interfaz IconFile Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings8
-- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad IconFile
+- IconFile, propiedad Servicios de Escritorio remoto
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsTscAdvancedSettings
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto propiedad , IconFile
+- Propiedad IconFile Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto propiedad , IconFile
 topic_type:
 - apiref
 api_name:
@@ -50,12 +50,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4700c549fa82f932ed12e3f4eeb02f2d557db3f940b394e0f2f875ac6dd7dffb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d8f996e70873d5584bb80bbf4f40f71a7deae8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119000695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168726"
 ---
 # <a name="imstscadvancedsettingsiconfile-property"></a>Propiedad IMsTscAdvancedSettings::IconFile
 
@@ -68,7 +68,7 @@ Especifica el nombre del archivo que contiene los datos de icono a los que se te
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -87,7 +87,7 @@ Ruta de acceso completa del archivo de icono o un archivo que contiene datos de 
 
 Devuelve **S \_ FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La extensión de nombre de archivo de un archivo de icono es ".ico".
 

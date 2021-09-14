@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c2d8f19c1d06ba726809d658860850dfd4fdf0360695e01aea91df6cfa14b152
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2688824d9fc3c7c5c84bc2432cc81d26b3de8a22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274287"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168414"
 ---
 # <a name="eaphostusercredentials-schema"></a>Esquema eaphostusercredentials
 

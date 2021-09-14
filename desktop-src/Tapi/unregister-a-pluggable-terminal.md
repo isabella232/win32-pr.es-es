@@ -4,12 +4,12 @@ ms.assetid: a5567c3b-edc0-427a-9751-ba221611e92c
 title: Anulación del registro de un terminal conectable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3068cd6d749dda2f1b6618672a1aabaace72ba6c3ef137c1c47952209c87f9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb53f27dc7b468fd4288fd407faee00ab1ece8ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119518115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168850"
 ---
 # <a name="unregister-a-pluggable-terminal"></a>Anulación del registro de un terminal conectable
 

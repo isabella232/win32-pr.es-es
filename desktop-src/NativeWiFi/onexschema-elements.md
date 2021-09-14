@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c20e6bf2b15fa53e5567d02bf3a88135b66fe7de80a171310249ddb941aedb16
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b7f3e7bac256b915d0e134720fc63b3519b21e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118619990"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169446"
 ---
 # <a name="onex-schema-elements"></a>Elementos de esquema de OneX
 

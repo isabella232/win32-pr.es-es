@@ -1,9 +1,9 @@
 ---
 title: comando step
-description: El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
+description: El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos videodisc en formato Digital-Video, VCR y VCR reconocen este comando.
 ms.assetid: 6017ace5-cde9-42a0-bb2f-f85d7847adc5
 keywords:
-- Comando step Windows Multimedia
+- comando step Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 6203d0b2d5dea401e8197e1261946955cd28618a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169497"
 ---
 # <a name="step-command"></a>comando step
 
-El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
+El comando step avanza o invierte la reproducción de uno o varios fotogramas. La acción predeterminada es avanzar un fotograma. Los dispositivos videodisc en formato Digital-Video, VCR y VCR reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -55,8 +55,8 @@ Una o las dos marcas siguientes.
 
 | Value       | Significado                                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
-| por *fotogramas* | Indica el número de fotogramas que se debe ir paso a paso. Si especifica un valor de *fotogramas negativos,* no puede especificar la marca "reverse". |
-| reverse     | Paso a paso inverso de los fotogramas.                                                                                              |
+| por *fotogramas* | Indica el número de fotogramas que se deban step. Si especifica un valor de *fotogramas negativos,* no puede especificar la marca "reverse". |
+| reverse     | Paso a paso de los fotogramas en orden inverso.                                                                                              |
 
 
 
@@ -73,7 +73,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

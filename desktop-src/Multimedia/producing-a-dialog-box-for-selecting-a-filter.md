@@ -15,15 +15,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 87225c1aebf2a06c738a1b48b03b94ed81bf6c2d
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370351"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169542"
 ---
 # <a name="producing-a-dialog-box-for-selecting-a-filter"></a>Generar un cuadro de diálogo para seleccionar un filtro
 
-Una aplicación puede permitir a los usuarios seleccionar una operación de filtro arbitraria y aplicarla a los datos de audio de forma de onda. En el ejemplo siguiente, la aplicación asigna un búfer para contener el filtro y, a continuación, usa la función [**acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) para seleccionar el filtro. Se debe llamar a las funciones de este ejemplo con la etiqueta de filtro o filtro adecuada.
+Una aplicación puede permitir a los usuarios seleccionar una operación de filtro arbitraria y aplicarla a datos de audio de forma de onda. En el ejemplo siguiente, la aplicación asigna un búfer para contener el filtro y, a continuación, usa la función [**acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) para seleccionar el filtro. Se debe llamar a las funciones de este ejemplo con la etiqueta de filtro o filtro adecuada.
 
 
 ```C++

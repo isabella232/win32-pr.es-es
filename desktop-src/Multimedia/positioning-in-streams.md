@@ -9,11 +9,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5252aa938d32c323da9fcf7ae106d11db0ff2fb4
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372440"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169577"
 ---
 # <a name="positioning-in-streams"></a>Posicionamiento en Secuencias
 
@@ -27,7 +27,7 @@ Puede recuperar la longitud de la secuencia mediante la [**función AVIStreamLen
 
 En una secuencia de vídeo, cada ejemplo suele corresponder a un fotograma de vídeo. Sin embargo, puede haber ejemplos para los que no haya datos de vídeo. Si llama a la [**función AVIStreamRead**](/windows/desktop/api/Vfw/nf-vfw-avistreamread) especificando una de esas posiciones, devuelve una longitud de datos de 0 bytes. Puede encontrar ejemplos que contengan datos mediante la [**función AVIStreamFindSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamfindsample) y especificando la marca FIND \_ ANY.
 
-En una secuencia de audio, cada muestra corresponde a un bloque de datos de datos de audio. Por ejemplo, si los datos de audio tienen un formato ADPCM de 22 kHz (adaptive differential pulse Code Estallación), cada muestra de **AVIStreamLength** corresponde a un bloque de 256 bytes de datos de audio comprimidos. Este bloque de datos de audio contiene aproximadamente 500 muestras de audio cuando se descomprimen. Sin embargo, las funciones y macros de AVIFile tratan cada bloque de 256 bytes como un solo ejemplo.
+En una secuencia de audio, cada muestra corresponde a un bloque de datos de datos de audio. Por ejemplo, si los datos de audio tienen un formato ADPCM de 22 kHz (adaptive differential pulse Code Estallación), cada muestra de **AVIStreamLength** corresponde a un bloque de 256 bytes de datos de audio comprimidos. Este bloque de datos de audio contiene aproximadamente 500 muestras de audio cuando se descomprimen. Sin embargo, las funciones y macros de AVIFile tratan cada bloque de 256 bytes como una sola muestra.
 
 > [!Note]  
 > Las posiciones válidas dentro de un flujo van desde el principio hasta el final de la secuencia, que es la suma del punto inicial de la secuencia y su longitud. La posición representada por la suma de la posición inicial y la longitud corresponde a una hora después de que se hayan representado los últimos datos; no contiene ningún dato. Puede recuperar el número de ejemplo que representa el final de la secuencia mediante la [**macro AVIStreamEnd.**](/windows/desktop/api/Vfw/nf-vfw-avistreamend) Puede recuperar el valor de hora en milisegundos que representa el final de la secuencia mediante la macro [**AVIStreamEndTime.**](/windows/desktop/api/Vfw/nf-vfw-avistreamendtime)
@@ -65,11 +65,11 @@ Varias macros que usan funciones AVIFile complementan las características de b�
 
 ## <a name="switching-between-samples-and-time"></a>Cambiar entre muestras y tiempo
 
-Puede determinar el tiempo transcurrido desde el principio de una secuencia a un ejemplo mediante la [**función AVIStreamSampleToTime.**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletotime) Esta función convierte el número de muestra en un valor de tiempo expresado en milisegundos. Para un fotograma de vídeo (que abarca varios milisegundos), este valor representa el momento en que la muestra comienza a reproducirse desde que comenzó la reproducción y supone que el clip de vídeo se reproduce a velocidad normal. Para una muestra de audio (que tiene varias muestras en un milisegundo), el valor de tiempo corresponde a la hora a la que la muestra comienza a reproducirse y asume que la secuencia de audio se reproduce a velocidad normal.
+Puede determinar el tiempo transcurrido desde el principio de una secuencia a un ejemplo mediante la [**función AVIStreamSampleToTime.**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletotime) Esta función convierte el número de muestra en un valor de tiempo expresado en milisegundos. Para un fotograma de vídeo (que abarca varios milisegundos), este valor representa el tiempo que comienza a reproducirse la muestra desde que comenzó la reproducción y supone que el clip de vídeo se reproduce a velocidad normal. Para una muestra de audio (que tiene varias muestras en un milisegundo), el valor de tiempo corresponde a la hora a la que la muestra comienza a reproducirse y asume que la secuencia de audio se reproduce a velocidad normal.
 
 Por el contrario, puede encontrar el número de ejemplo asociado a un valor de hora mediante la [**función AVIStreamTimeToSample.**](/windows/desktop/api/Vfw/nf-vfw-avistreamtimetosample) Esta función convierte el valor de milisegundos en un número de ejemplo y supone que el clip de vídeo se reproduce a velocidad normal.
 
-Dado **que AVIStreamSampleToTime** devuelve la hora a la que comienza a reproducirse un fotograma, la relación entre **AVIStreamSampleToTime** y **AVIStreamTimeToSample** no es realmente inversa. Determinan la posición de un archivo de forma más acuso que la hora. Por ejemplo, dos muestras de audio consecutivas podrían reproducirse en el mismo milisegundo. El **uso de AVIStreamSampleToTime para** convertir los números de ejemplo daría como resultado valores de tiempo idénticos. Si vuelve a convertir el valor de tiempo en un número de ejemplo mediante **AVIStreamTimeToSample**, se hace referencia a un solo ejemplo.
+Dado **que AVIStreamSampleToTime** devuelve la hora a la que comienza a reproducirse un fotograma, la relación entre **AVIStreamSampleToTime** y **AVIStreamTimeToSample** no es realmente inversa. Determinan la posición de un archivo de forma más acuso que la hora. Por ejemplo, dos muestras de audio consecutivas podrían reproducirse en el mismo milisegundo. El **uso de AVIStreamSampleToTime para** convertir los números de ejemplo daría como resultado valores de tiempo idénticos. Si vuelve a convertir el valor de tiempo en un número de muestra mediante **AVIStreamTimeToSample**, se hace referencia a un solo ejemplo.
 
  
 

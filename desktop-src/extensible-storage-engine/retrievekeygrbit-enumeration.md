@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 453eb70ad2e4a7b9437442bb9481be4c59e18aabfa434adc1f1f67db0571510e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef6a2820e0ca12552cb766536fd2ce703a6d95e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118071687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168365"
 ---
 # <a name="retrievekeygrbit-enumeration"></a>RetrieveKeyGrbit (enumeración)
 
@@ -59,7 +59,7 @@ Dim instance As RetrieveKeyGrbit
 public enum RetrieveKeyGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -72,7 +72,7 @@ public enum RetrieveKeyGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">

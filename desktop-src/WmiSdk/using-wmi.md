@@ -6,11 +6,11 @@ title: Uso de WMI
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 82d1556d321441c7e6a3191bf95e85db356e7ba9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168550"
 ---
 # <a name="using-wmi"></a>Uso de WMI
 
@@ -42,7 +42,7 @@ En el procedimiento siguiente se describe cómo obtener datos de WMI escribiendo
     
 | Idioma de la aplicación | Tema | 
 |----------------------|-------|
-| Scripts escritos en el hospedaje ActiveX script de Microsoft, incluidos Visual Basic Scripting Edition (VBScript) y Perl<br /> | <a href="scripting-api-for-wmi.md">API de scripting para WMI.</a><br /> Comience por <a href="creating-a-wmi-script.md">Crear un script WMI</a>.<br /> Para obtener ejemplos de código de script, vea <a href="wmi-tasks-for-scripts-and-applications.md">Tareas wmi para scripts y</a> aplicaciones y el repositorio de scripts de TechNet <a href="https://www.microsoft.com/technet/scriptcenter">ScriptCenter.</a><br /> | 
+| Scripts escritos en El ActiveX de scripts de Microsoft, incluidos Visual Basic Scripting Edition (VBScript) y Perl<br /> | <a href="scripting-api-for-wmi.md">API de scripting para WMI.</a><br /> Comience por <a href="creating-a-wmi-script.md">Crear un script WMI</a>.<br /> Para obtener ejemplos de código de script, vea <a href="wmi-tasks-for-scripts-and-applications.md">Tareas wmi para scripts y</a> aplicaciones y el repositorio de scripts de TechNet <a href="https://www.microsoft.com/technet/scriptcenter">ScriptCenter.</a><br /> | 
 | Windows PowerShell<br /> | <a href="/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-7">Tareas iniciales con Windows PowerShell</a><br /> Cmdlets de PowerShell wmi, como <a href="/previous-versions//dd315295(v=technet.10)">Get-WmiObject</a>.<br /> | 
 | Visual Basic aplicaciones<br /> | <a href="scripting-api-for-wmi.md">API de scripting para WMI.</a><br /> | 
 | páginas Active Server<br /> | <a href="scripting-api-for-wmi.md">API de scripting para WMI.</a><br /> Comience por <a href="creating-active-server-pages-for-wmi.md">Crear Active Server para WMI.</a><br /> | 
@@ -110,7 +110,7 @@ En el procedimiento siguiente se describe cómo proporcionar datos a WMI mediant
 
     -   Usar WMI en el .NET Framework para crear un proveedor de código administrado.
 
-        Este enfoque crea un proveedor de código administrado. Los proveedores de código administrado se pueden escribir en cualquier lenguaje .NET Framework, son más fáciles de escribir que los proveedores COM de WMI y pueden obtener datos de las clases basadas en [*CIM*](gloss-c.md)de WMI, como [Clases Win32](/windows/desktop/CIMWin32Prov/win32-provider). Sin embargo, el .NET Framework WMI tiene algunas limitaciones. Para obtener más información, vea [Administrar aplicaciones mediante WMI.](/previous-versions/dotnet/netframework-1.1/aa720264(v=vs.71))
+        Este enfoque crea un proveedor de código administrado. Los proveedores de código administrado se pueden escribir en cualquier lenguaje .NET Framework, son más fáciles de escribir que los proveedores COM de WMI y pueden obtener datos de las clases basadas en [*CIM*](gloss-c.md)de WMI, como Clases [Win32](/windows/desktop/CIMWin32Prov/win32-provider). Sin embargo, el .NET Framework WMI tiene algunas limitaciones. Para obtener más información, vea [Administrar aplicaciones mediante WMI.](/previous-versions/dotnet/netframework-1.1/aa720264(v=vs.71))
 
     -   No se recomienda [usar las clases del marco](wmi-c-classes.md) de trabajo del proveedor.
 
@@ -122,7 +122,7 @@ En el procedimiento siguiente se describe cómo proporcionar datos a WMI mediant
     |---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
     | Proveedor COM en el mismo proceso que WMI<br/>            | [Proporcionar datos a WMI](providing-data-to-wmi.md)<br/>                                           |
     | Proveedor desacoplado COM<br/>                             | [Incorporación de un proveedor en una aplicación](incorporating-a-provider-in-an-application.md)<br/> |
-    | .NET Framework proveedor en C# o Visual Basic.NET<br/> | [Administración de aplicaciones mediante WMI](/previous-versions/dotnet/netframework-1.1/aa720264(v=vs.71))<br/>            |
+    | .NET Framework en C# o Visual Basic.NET<br/> | [Administración de aplicaciones mediante WMI](/previous-versions/dotnet/netframework-1.1/aa720264(v=vs.71))<br/>            |
 
     
 
@@ -137,11 +137,11 @@ En los temas siguientes se proporciona información sobre el uso de WMI para sup
 | Tema                                                                                                                                           | Descripción                                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)<br/>                                                 | Describe cómo encontrar la clase WMI y los procedimientos correctos que se usan en scripts y aplicaciones que realizan tareas comunes de administración de equipos y redes, como agregar una nueva conexión de impresora para un equipo remoto o buscar todas las revisiones instaladas en un equipo.<br/>                                                                            |
-| [Crear una aplicación WMI o un script](creating-a-wmi-application-or-script.md)<br/>                                                     | Cualquier lenguaje de scripting, como VBScript o Perl, que funcione con ActiveX objetos pueden acceder a datos WMI. Las aplicaciones pueden acceder a WMI en C++, mediante la [API COM](com-api-for-wmi.md) para WMI o en Visual Basic, mediante la biblioteca de tipos Wbemdisp.tlb y scripting API para [WMI.](scripting-api-for-wmi.md)[](using-the-wmi-scripting-type-library.md)<br/> |
-| [Conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md)<br/>                                                 | Describe cómo los scripts, las aplicaciones y los proveedores pueden establecer conexiones a WMI en equipos remotos para obtener datos o controlar hardware y software.<br/>                                                                                                                                                                                                   |
-| [Conectarse a WMI en un equipo remoto mediante Windows PowerShell](connecting-to-wmi-on-a-remote-computer-by-using-powershell.md)<br/> | Describe cómo usar Windows PowerShell establecer conexiones a WMI en equipos remotos para obtener datos o para controlar hardware y software.<br/>                                                                                                                                                                                                            |
+| [Crear una aplicación WMI o un script](creating-a-wmi-application-or-script.md)<br/>                                                     | Cualquier lenguaje de scripting, como VBScript o Perl, que funciona con objetos ActiveX pueden acceder a datos WMI. Las aplicaciones pueden acceder a WMI en C++, mediante la [API COM](com-api-for-wmi.md) para WMI o en Visual Basic, mediante la biblioteca de tipos Wbemdisp.tlb y scripting API para [WMI.](scripting-api-for-wmi.md)[](using-the-wmi-scripting-type-library.md)<br/> |
+| [Conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md)<br/>                                                 | Describe cómo los scripts, las aplicaciones y los proveedores pueden establecer conexiones con WMI en equipos remotos para obtener datos o controlar el hardware y el software.<br/>                                                                                                                                                                                                   |
+| [Conectarse a WMI en un equipo remoto mediante Windows PowerShell](connecting-to-wmi-on-a-remote-computer-by-using-powershell.md)<br/> | Describe cómo usar Windows PowerShell establecer conexiones a WMI en equipos remotos para obtener datos o para controlar el hardware y el software.<br/>                                                                                                                                                                                                            |
 | [Supervisión de eventos](monitoring-events.md)<br/>                                                                                           | Describe cómo obtener notificaciones de eventos mediante la creación de consumidores de eventos WMI temporales o permanentes.<br/>                                                                                                                                                                                                                                                           |
-| [Proporcionar datos a WMI](providing-data-to-wmi.md)<br/>                                                                                   | WMI proporciona datos de administración dinámica a scripts de cliente y aplicaciones obteniendo datos de proveedores.<br/>                                                                                                                                                                                                                                                    |
+| [Proporcionar datos a WMI](providing-data-to-wmi.md)<br/>                                                                                   | WMI proporciona datos de administración dinámica a scripts y aplicaciones cliente obteniendo de proveedores.<br/>                                                                                                                                                                                                                                                    |
 | [Obtener y proporcionar datos en un equipo de 64 bits](getting-and-providing-data-on-a-64-bit-computer.md)<br/>                               | Describe cómo acceder a proveedores no predeterminados y consideraciones para los escritores de proveedores en sistemas de 64 bits.<br/>                                                                                                                                                                                                                                                    |
 
 

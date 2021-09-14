@@ -4,12 +4,12 @@ ms.assetid: 72f5d30a-efd5-4bf5-8057-cb73e5aa0514
 title: 'Programa C de ejemplo: firma de un hash y comprobación de la firma hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32668476939460ecba4d1894bf64be56d9563d6848d9490c93ddb1a7a6091d56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 000db2504b6a7046d040f6519f78de55e5b98c3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140858"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168938"
 ---
 # <a name="example-c-program-signing-a-hash-and-verifying-the-hash-signature"></a>Programa C de ejemplo: firma de un hash y comprobación de la firma hash
 

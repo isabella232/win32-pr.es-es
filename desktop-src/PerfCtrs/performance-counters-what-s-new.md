@@ -4,12 +4,12 @@ ms.assetid: 14bdae6c-9dcd-401e-8c43-5391e00cf7e3
 title: Novedades (contadores de rendimiento)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2c86a6a9ea644f1c650137cc392a2d54b6e8eedb34881d6b759d7b6c51635d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f0c1189a185351eabae438a01c6f111952f164e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119674705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169141"
 ---
 # <a name="whats-new-with-performance-counters"></a>Novedades de los contadores de rendimiento
 
@@ -54,7 +54,7 @@ Se han agregado las siguientes funciones para esta versión:
 
 Se agregaron las siguientes estructuras para esta versión:
 
-- [IDENTIDAD DEL \_ CONTADOR DE RENDIMIENTO \_](/windows/desktop/api/Perflib/ns-perflib-perf_counter_identity)
+- [IDENTIDAD DEL CONTADOR DE RENDIMIENTO \_ \_](/windows/desktop/api/Perflib/ns-perflib-perf_counter_identity)
 - [INFORMACIÓN DEL \_ CONTADOR DE \_ RENDIMIENTO](/windows/desktop/api/Perflib/ns-perflib-perf_counter_info)
 - [INFORMACIÓN DEL \_ CONJUNTO DE CONTADORES DE \_ RENDIMIENTO](/windows/desktop/api/Perflib/ns-perflib-perf_counterset_info)
 - [INSTANCIA DE \_ CONJUNTO DE CONTADORES DE \_ PERF](/windows/desktop/api/Perflib/ns-perflib-perf_counterset_instance)

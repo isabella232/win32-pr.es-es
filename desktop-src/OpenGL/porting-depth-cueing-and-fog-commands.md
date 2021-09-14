@@ -10,21 +10,21 @@ keywords:
 - Porte de IRIS GL, iris
 - porting from IRIS GL,gl
 - porte a OpenGL desde IRIS GL, iris
-- Porte de OpenGL desde IRIS GL,iris
+- Porte de OpenGL desde IRIS GL,gl
 - indicaciones de profundidad
 - luz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05cb71e15b109b792f892f00f506f654ddd0bfd25118c3bef268e245c6588777
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5fd9f65a29e0ae594bf9344cd960d3fc2b9aa646
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169189"
 ---
 # <a name="porting-depth-cueing-and-fog-commands"></a>Porting Depth Cueing and Fog Commands
 
-Al portear comandos de indicaciones de profundidad y de orden de detalle, tenga en cuenta los siguientes puntos:
+Al portear comandos de indicaciones de profundidad y de sonido, tenga en cuenta los siguientes puntos:
 
 -   La llamada a IRIS **GL,vertex,** establece un modo y los parámetros que afectan a ese modo. En OpenGL, se llama [**a glFog**](glfog.md) una vez para establecer el modo y, a continuación, dos o más veces para establecer varios parámetros.
 -   En OpenGL, la indicación de profundidad no es una característica independiente. Use la cola lineal en lugar de la indicación de profundidad. (En esta sección se proporciona un ejemplo de cómo hacerlo). Las siguientes funciones GL de IRIS no tienen ningún equivalente directo de OpenGL:
@@ -87,7 +87,7 @@ donde **sqrt** es la operación de raíz cuadrada, **log** es el logaritmo natur
 Para cambiar entre calcular el ángulo en modo por píxel y el modo por vértice, use [**glHint**](glhint.md)(GL \_ \_ HINT, *hintMode).* Hay dos modos de sugerencias disponibles:
 
 -   Cálculo \_ de píxeles DE GL NICEST por píxel
--   Cálculo \_ gl fastest por vértice de vértice
+-   Cálculo gl \_ fastest por vértice de vértice
 
 En la tabla siguiente se enumeran los modos iris gl y sus equivalentes de OpenGL.
 

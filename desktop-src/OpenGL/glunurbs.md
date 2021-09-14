@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1da7ebc999d44911cb345b051213a12865e608db7b7fe66e33eb1bb567ef7a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 40a716724546ef0df4300bedb9aba44f7a23f530
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169217"
 ---
-# <a name="glunurbscallback-function"></a>Función gluNurbsCallback
+# <a name="glunurbscallback-function"></a>función gluNurbsCallback
 
 La **función gluNurbsCallback** define una devolución de llamada para un objeto B-Spline racionalizado no uniforme [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
@@ -52,7 +52,7 @@ El objeto RGBBS (creado [**con gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 *Que* 
 </dt> <dd>
 
-Devolución de llamada que se está definindo. El único valor válido es GLU \_ ERROR. El significado de GLU ERROR significa que se llama a la función de \_ error cuando se encuentra un error. Su único argumento es de **tipo GLenum** e indica el error específico que se produjo. Hay 37 errores únicos de LABS, denominados GLU \_ GLU GLUBS ERROR1 a \_ TRAVÉS DE \_ GLUBS \_ ERROR37. Las cadenas de caracteres que describen estos errores se pueden recuperar [**con gluErrorString.**](gluerrorstring.md)
+Devolución de llamada que se está definindo. El único valor válido es GLU \_ ERROR. El significado de GLU ERROR significa que se llama a la función \_ de error cuando se encuentra un error. Su único argumento es de **tipo GLenum** e indica el error específico que se produjo. Hay 37 errores únicos de LABS, denominados GLU \_ GLU GLUBS \_ ERROR1 a TRAVÉS DE \_ GLUBS \_ ERROR37. Las cadenas de caracteres que describen estos errores se pueden recuperar [**con gluErrorString.**](gluerrorstring.md)
 
 </dd> <dt>
 
@@ -67,15 +67,15 @@ Puntero a la función de devolución de llamada.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use **gluNurbsCallback para** definir una devolución de llamada que usará un objeto RECORDSETBS. Si la devolución de llamada especificada ya está definida, se reemplaza. Si *fn* es **NULL**, se borra cualquier devolución de llamada existente.
+Use **gluNurbsCallback para** definir una devolución de llamada que va a usar un objeto RECORDSETBS. Si la devolución de llamada especificada ya está definida, se reemplaza. Si *fn* es **NULL**, se borra cualquier devolución de llamada existente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

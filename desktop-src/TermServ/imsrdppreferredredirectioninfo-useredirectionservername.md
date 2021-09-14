@@ -1,11 +1,11 @@
 ---
 title: Propiedad IMsRdpPreferredRedirectionInfo UseRedirectionServerName
-description: Obtiene y establece si se debe usar el nombre del servidor de redirección.
+description: Obtiene y establece si se debe usar el nombre del servidor de redireccionamiento.
 ms.assetid: D2239600-D75D-40FB-A6D0-4C7C4C5163E3
 ms.tgt_platform: multiple
 keywords:
 - UseRedirectionServerName, propiedad Servicios de Escritorio remoto
-- Propiedad UseRedirectionServerName Servicios de Escritorio remoto , interfaz IMsRdpPreferredRedirectionInfo
+- Propiedad UseRedirectionServerName Servicios de Escritorio remoto interfaz , IMsRdpPreferredRedirectionInfo
 - Interfaz IMsRdpPreferredRedirectionInfo Servicios de Escritorio remoto , propiedad UseRedirectionServerName
 topic_type:
 - apiref
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1bb57bacafbc3061cee6cb49b09a8fdbf8187026a378deff605b90472ed6394
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d1635273078a2d09ca01c219ebf7eaa482eeb7a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119513255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168769"
 ---
 # <a name="imsrdppreferredredirectioninfouseredirectionservername-property"></a>Propiedad IMsRdpPreferredRedirectionInfo::UseRedirectionServerName
 
-Obtiene y establece si se debe usar el nombre del servidor de redirección.
+Obtiene y establece si se debe usar el nombre del servidor de redireccionamiento.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -49,7 +49,7 @@ HRESULT get_UseRedirectionServerName(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si se va a usar el nombre del servidor de redirección.
+Si se va a usar el nombre del servidor de redireccionamiento.
 
 ## <a name="requirements"></a>Requisitos
 

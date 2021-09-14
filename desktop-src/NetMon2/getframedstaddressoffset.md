@@ -1,7 +1,7 @@
 ---
 description: La función GetFrameDstAddressOffset devuelve el desplazamiento a la dirección de destino de un fotograma determinado.
 ms.assetid: 8922d7d0-1a23-47ac-886b-fcc0bcaa6ba7
-title: Función GetFrameDstAddressOffset (Netmon. h)
+title: Función GetFrameDstAddressOffset (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Nmapi.dll
 ms.openlocfilehash: 8358afdbb303baf623cef6fc32e00d758570d30c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169306"
 ---
-# <a name="getframedstaddressoffset-function"></a>GetFrameDstAddressOffset función)
+# <a name="getframedstaddressoffset-function"></a>Función GetFrameDstAddressOffset
 
-La función **GetFrameDstAddressOffset** devuelve el desplazamiento a la dirección de destino de un fotograma determinado.
+La **función GetFrameDstAddressOffset** devuelve el desplazamiento a la dirección de destino de un fotograma determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,23 +41,23 @@ DWORD WINAPI GetFrameDstAddressOffset(
 
 <dl> <dt>
 
-*hFrame* \[ de\]
+*hFrame* \[ En\]
 </dt> <dd>
 
 Identificador del marco.
 
 </dd> <dt>
 
-*AddressType* \[ de\]
+*AddressType* \[ En\]
 </dt> <dd>
 
 Tipo de la dirección de destino. Especifique uno de los valores siguientes:
 
-tipo de dirección Ethernet de tipo dirección IP escriba dirección IP tipo de dirección TOKENRING tipo de dirección FDDI tipo de dirección de XNS tipo de dirección \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ IP Vines tipo de dirección \_ IP \_ \_ ATM.
+TIPO DE DIRECCIÓN TIPO DE DIRECCIÓN ETHERNET TIPO DE DIRECCIÓN IP TIPO DE DIRECCIÓN \_ \_ IPX TOKENRING ADDRESS \_ TYPE \_ \_ \_ \_ \_ \_ \_ FDDI ADDRESS TYPE \_ \_ XNS ADDRESS \_ TYPE \_ HEXADECIMALS IP ADDRESS TYPE \_ \_ \_ ATM.
 
 </dd> <dt>
 
-*AddressLength* \[ de\]
+*AddressLength* \[ En\]
 </dt> <dd>
 
 Longitud de la dirección de destino, en bytes.
@@ -72,9 +72,9 @@ Si la función no se realiza correctamente, el valor devuelto es menos uno (-1).
 
 ## <a name="remarks"></a>Observaciones
 
-Si el parámetro *AddressType* está establecido en el \_ tipo de dirección \_ Ethernet, el valor devuelto de la función **GetFrameDstAddressOffset** siempre es cero. El desplazamiento de una dirección Ethernet siempre es cero.
+Si el *parámetro AddressType* se establece en ADDRESS TYPE ETHERNET, el valor devuelto de la función \_ \_ **GetFrameDstAddressOffset** siempre es cero. El desplazamiento de una dirección Ethernet siempre es cero.
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetFrameDstAddressOffset** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetFrameDstAddressOffset.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,8 +84,8 @@ Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **Ge
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

@@ -5,24 +5,24 @@ ms.assetid: 274774b3-0442-4a46-95f8-7857f885bfdb
 ms.tgt_platform: multiple
 keywords:
 - Comprimir propiedades Servicios de Escritorio remoto
-- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsTscAdvancedSettings
+- Propiedad Compress Servicios de Escritorio remoto , interfaz IMsTscAdvancedSettings
 - Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad Compress
-- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Propiedad Compress Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad Compress
 - Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad Compress
 - Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
-- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad Compress
-- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
-- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad Compress
-- Comprimir propiedad Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
-- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad Compress
-- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
-- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad Compress
-- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
-- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad Compress
-- Comprimir propiedades Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
-- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad Compress
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto propiedad , Compress
+- Interfaz Compress Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto propiedad , Compress
+- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto propiedad , Compress
+- Propiedad Compress Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto propiedad , Compress
+- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto propiedad , Compress
+- Comprimir propiedades Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto propiedad , Compress
 topic_type:
 - apiref
 api_name:
@@ -59,20 +59,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d954fc039ec8edf4a43b391df29e79fe3a064cbbc856f0b14a011acc517e3d75
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c588784d9b06bd2e8e1605a96c8aa9fd157c10eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168734"
 ---
-# <a name="imstscadvancedsettingscompress-property"></a>Propiedad IMsTscAdvancedSettings::Compress
+# <a name="imstscadvancedsettingscompress-property"></a>IMsTscAdvancedSettings::Compress, propiedad
 
 Especifica si la compresión está habilitada.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -95,7 +95,7 @@ Establezca este parámetro en 0 para deshabilitar la compresión o un valor dist
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 

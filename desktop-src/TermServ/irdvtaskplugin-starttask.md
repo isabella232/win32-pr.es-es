@@ -5,7 +5,7 @@ ms.assetid: c1e9f18b-1e83-4a29-8646-8adde94e8c14
 ms.tgt_platform: multiple
 keywords:
 - Método StartTask Servicios de Escritorio remoto
-- Método StartTask Servicios de Escritorio remoto , interfaz IRDVTaskPlugin
+- Método StartTask Servicios de Escritorio remoto interfaz , IRDVTaskPlugin
 - Interfaz IRDVTaskPlugin Servicios de Escritorio remoto , método StartTask
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0e0bb9104ee1bbd3f0f6c2e8cc04b691205f2e40cb2221b79b5e9f251492a3a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51c499549378700a90d8fc78d075bc07c1f874cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118129262"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168662"
 ---
 # <a name="irdvtaskpluginstarttask-method"></a>IrDVTaskPlugin::StartTask (método)
 
@@ -75,7 +75,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 

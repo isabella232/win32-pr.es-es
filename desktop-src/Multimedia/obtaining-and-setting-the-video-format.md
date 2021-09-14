@@ -8,15 +8,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6890c3a1d653d43d24c5baa0790cc0d26040685b
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169653"
 ---
 # <a name="obtaining-and-setting-the-video-format"></a>Obtener y establecer el formato de vídeo
 
-La [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) es de longitud variable para dar cabida a formatos de datos estándar y comprimidos. Dado que esta estructura es de longitud variable, las aplicaciones siempre deben consultar el tamaño de la estructura y asignar memoria antes de recuperar el formato de vídeo actual. En el ejemplo siguiente se usa la macro [**capGetVideoFormatSize**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformatsize) para recuperar el tamaño del búfer y, a continuación, se llama a la macro [**capGetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformat) para recuperar el formato de vídeo actual.
+La [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) es de longitud variable para dar cabida a formatos de datos estándar y comprimidos. Dado que esta estructura tiene una longitud variable, las aplicaciones siempre deben consultar el tamaño de la estructura y asignar memoria antes de recuperar el formato de vídeo actual. En el ejemplo siguiente se usa la macro [**capGetVideoFormatSize**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformatsize) para recuperar el tamaño del búfer y, a continuación, se llama a la macro [**capGetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetvideoformat) para recuperar el formato de vídeo actual.
 
 
 ```C++

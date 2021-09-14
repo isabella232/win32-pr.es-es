@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33cc1c3c8a13a21135ee834950e8c0a60d2794cd4b1edb618e5e67c0744fe3e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18018c8f8fc5e7d017809cf5fe109db7c52712c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168634"
 ---
 # <a name="itssbclientconnectionenvironment-property"></a>Propiedad ITsSbClientConnection::Environment
 
@@ -48,7 +48,7 @@ Puntero a un puntero a un objeto de entorno [**ITsSbEnvironment.**](/windows/des
 
 ## <a name="error-codes"></a>Códigos de error
 
-Si el método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve **un valor HRESULT** que indica el error. Los valores posibles incluyen, entre otros, los de la lista siguiente.
+Si el método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un **valor HRESULT** que indica el error. Los valores posibles incluyen, entre otros, los de la lista siguiente.
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ No se encontró el entorno.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un complemento de orquestación puede llamar a este método para recuperar información del entorno sobre una máquina virtual de destino.
 
@@ -67,11 +67,11 @@ Un complemento de orquestación puede llamar a este método para recuperar infor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

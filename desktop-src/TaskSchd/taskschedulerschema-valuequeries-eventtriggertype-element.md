@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fecf58696618f1f0f359754bc29aa10680dd1717fe55ffe9fc3e87d0b361b76f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4448693c1c1ab19b2ea13050cc9ab817bdc25e7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118355348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168841"
 ---
 # <a name="valuequeries-eventtriggertype-element"></a>Elemento ValueQueries (eventTriggerType)
 
@@ -43,21 +43,21 @@ El tipo complejo [**eventTriggerType**](taskschedulerschema-eventtriggertype-com
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de C++, [**vea Propiedad ValueQueries de IEventTrigger.**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_valuequeries)
 
-Para el desarrollo de scripts, [**consulte EventTrigger.ValueQueries**](eventtrigger-valuequeries.md).
+Para el desarrollo de scripts, [**vea EventTrigger.ValueQueries.**](eventtrigger-valuequeries.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador de eventos mediante este elemento, vea Ejemplo de desencadenador de [eventos (XML).](/previous-versions//aa446889(v=vs.85))
+Para obtener un ejemplo completo del XML para una tarea que especifica un desencadenador de eventos mediante este elemento, vea Ejemplo de desencadenador de [eventos (XML).](/previous-versions//aa446889(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

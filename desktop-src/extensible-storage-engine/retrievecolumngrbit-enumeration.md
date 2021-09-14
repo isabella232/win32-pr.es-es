@@ -38,12 +38,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7bd59f610b2ff1423b82539c61eff3d9d770a03d6f8291a1bae53b372fff318f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a223a288b8ad2d2e976be3bb9f2f524f78b9a8fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117890673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168366"
 ---
 # <a name="retrievecolumngrbit-enumeration"></a>RetrieveColumnGrbit (enumeración)
 
@@ -69,7 +69,7 @@ Dim instance As RetrieveColumnGrbit
 public enum RetrieveColumnGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -82,7 +82,7 @@ public enum RetrieveColumnGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
@@ -103,7 +103,7 @@ public enum RetrieveColumnGrbit
 <tr class="odd">
 <td></td>
 <td>RetrieveTag</td>
-<td>Esta opción se usa para recuperar el número de secuencia de un valor de columna con varios valores en JET_RETINFO.itagSequence. Recuperar el número de secuencia puede ser una operación costosa y solo se debe realizar si es necesario.</td>
+<td>Esta opción se usa para recuperar el número de secuencia de un valor de columna de varios valores en JET_RETINFO.itagSequence. Recuperar el número de secuencia puede ser una operación costosa y solo se debe realizar si es necesario.</td>
 </tr>
 <tr class="even">
 <td></td>

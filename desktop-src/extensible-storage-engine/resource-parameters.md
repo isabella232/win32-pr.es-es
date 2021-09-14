@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: a2575f6b6cbdd49380422cb955ad64e246bf6ccf
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168369"
 ---
 # <a name="resource-parameters"></a>Parámetros de recursos
 
@@ -123,7 +123,7 @@ Este parámetro reserva el número solicitado de recursos de cursor para su uso 
 | <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
 | <p>Afecta al rendimiento:</p> | <p>No</p> | 
 | <p>Afecta a los recursos:</p> | <p>Sí</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -152,7 +152,7 @@ Este parámetro controla el número máximo de instancias que se pueden crear en
 *JET_paramMaxOpenTables*  
 6  
 
-Este parámetro reserva el número solicitado de recursos de árbol B+ para su uso por una instancia de . Esta configuración afectará al número de tablas que se pueden usar al mismo tiempo. Este parámetro debe establecerse en relación con el esquema físico de las bases de datos en uso por el motor de base de datos, por lo que esta configuración no es tan sencilla como podría ser.
+Este parámetro reserva el número solicitado de recursos de árbol B+ para que lo use una instancia de . Esta configuración afectará al número de tablas que se pueden usar al mismo tiempo. Este parámetro debe establecerse en relación con el esquema físico de las bases de datos en uso por el motor de base de datos, por lo que esta configuración no es tan sencilla como podría ser.
 
 En general, necesitará dos recursos más un recurso por índice secundario por tabla en uso simultáneo por la aplicación.
 
@@ -178,7 +178,7 @@ En general, necesitará dos recursos más un recurso por índice secundario por 
 *JET_paramMaxSessions*  
 5  
 
-Este parámetro reserva el número solicitado de recursos de sesión para su uso por una instancia de . Un recurso de sesión corresponde directamente a un [JET_SESID](./jet-sesid.md) de datos. Esta configuración afectará al número de sesiones que se pueden usar al mismo tiempo.
+Este parámetro reserva el número solicitado de recursos de sesión para que los use una instancia de . Un recurso de sesión corresponde directamente a un [tipo JET_SESID](./jet-sesid.md) datos. Esta configuración afectará al número de sesiones que se pueden usar al mismo tiempo.
 
 **Windows 2000, Windows XP y Windows Server 2003:**  Los valores grandes para este parámetro consumirán espacio de direcciones y pueden aumentar el uso de memoria.
 
@@ -195,7 +195,7 @@ Este parámetro reserva el número solicitado de recursos de sesión para su uso
 | <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
 | <p>Afecta al rendimiento:</p> | <p>No</p> | 
 | <p>Afecta a los recursos:</p> | <p>Sí</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -223,7 +223,7 @@ Este parámetro reserva el número solicitado de recursos de tabla temporal para
 | <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
 | <p>Afecta al rendimiento:</p> | <p>No</p> | 
 | <p>Afecta a los recursos:</p> | <p>Sí</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -253,7 +253,7 @@ Cada página del almacén de versiones configurada por este parámetro tiene un 
 | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | 
 | <p>Afecta al rendimiento:</p> | <p>No</p> | 
 | <p>Afecta a los recursos:</p> | <p>Sí</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -301,14 +301,14 @@ Si este parámetro se establece en cero, se establecerá de forma predeterminada
 | <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>Sí</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
 *JET_paramPreferredVerPages*  
 63  
 
-Este parámetro representa un umbral relativo a JET_paramMaxVerPages **que** controla el uso discrecional de páginas de versión por parte del motor de base de datos. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se utilice para tareas en segundo plano opcionales, como reclamar el espacio eliminado en la base de datos, se sacrificará en su lugar para conservar espacio para la información transaccional.
+Este parámetro representa un umbral relativo a **JET_paramMaxVerPages** que controla el uso discrecional de páginas de versión por parte del motor de base de datos. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se utilice para tareas en segundo plano opcionales, como reclamar el espacio eliminado en la base de datos, se sacrificará en su lugar para conservar espacio para la información transaccional.
 
 **Windows 2000, Windows XP y Windows Server 2003:**  Establecer este parámetro en cero establecería el umbral en el 90 % **de JET_paramMaxVerPages**.
 
@@ -333,7 +333,7 @@ Cada página del almacén de versiones configurada por este parámetro tiene un 
 | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>Sí</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 

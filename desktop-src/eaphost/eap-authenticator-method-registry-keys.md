@@ -4,37 +4,37 @@ description: Obtenga información sobre los valores Authenticator del registro d
 ms.assetid: 9374f9f7-b088-4e3a-ac96-8ccbeda87bb7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1db88a910a40519533ffddae40c1e1cc04d36b62f3d3ad6543ddd4a2999373e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a710ca6f09914c8d111c42a8323a9c39c51f898
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168454"
 ---
 # <a name="eap-authenticator-method-registry-values"></a>Valores del Registro Authenticator eap
 
-Se requieren valores específicos del Registro para los métodos autenticadores eap.
+Se requieren valores específicos del Registro para los métodos de autenticación EAP.
 
 ## <a name="eap-authenticator-method-dll-paths"></a>Rutas de acceso Authenticator DLL del método EAP
 
 La ruta de acceso siguiente especifica la ubicación del Registro para los archivos DLL normales del método autenticador EAP.
 
-**Métodos eaphost de \\ HKLM System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
+**Métodos eaphost de HKLM \\ System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
 
-Por ejemplo, una ruta de acceso de registro de instalación del método autenticador eap dado un **AuthorId** de "311" (que indica que "Microsoft" es el autor) y un **EapTypeId** de "40", aparece como sigue.
+Por ejemplo, una ruta de acceso de registro de instalación del método autenticador EAP dado un **AuthorId** de "311" (que indica que "Microsoft" es el autor) y un **EapTypeId** de "40", aparece como se indica a continuación.
 
 **HkLM \\ System \\ CCS Services \\ \\ Eaphost Methods \\ \\ 311 \\ 40**
 
 La ruta de acceso siguiente especifica la ubicación del Registro para los archivos DLL extendidos del método autenticador EAP.
 
-**Métodos eaphost de \\ HKLM System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ 254 \\ *&lt; &gt; VendorId* \\ * &lt; VendorType&gt;***
+**Métodos eaphost de HKLM \\ System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ 254 \\ *&lt; &gt; VendorId* \\ * &lt; VendorType&gt;***
 
-Por ejemplo, una ruta de acceso de registro de instalación del método autenticador eap dado un **AuthorId** de "311" (que indica que "Microsoft" es el autor), un **VendorId** de "311" y **un EapTypeId** de "40", aparece como sigue.
+Por ejemplo, una ruta de acceso de registro de instalación del método autenticador EAP dado un **AuthorId** de "311" (que indica que "Microsoft" es el autor), un **VendorId** de "311" y **un EapTypeId** de "40", aparece como se indica a continuación.
 
 **HkLM \\ System \\ CCS Services \\ \\ Eaphost Methods \\ \\ 311 \\ 254 \\ 311 \\ 40**
 
 > [!Note]  
-> Para obtener más información sobre la asignación de tipos de método EAP, vea la sección 6.2 de [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016).
+> Para obtener más información sobre la asignación de tipos de método EAP, vea la sección 6.2 de [RFC 3748.](https://go.microsoft.com/fwlink/p/?linkid=84016)
 
  
 
@@ -45,7 +45,7 @@ Se requieren los siguientes valores del Registro del método autenticador.
 -   [AuthenticatorDllPath](#authenticatordllpath)
 -   [AuthenticatorFriendlyName](#authenticatorfriendlyname)
 
-Además de los valores del Registro anteriores, se recomienda el siguiente valor del Registro del método autenticador.
+Además de los valores anteriores del Registro, se recomienda el siguiente valor del Registro del método autenticador.
 
 -   [Propiedades](#properties)
 
@@ -61,7 +61,7 @@ Los valores restantes del Registro del método autenticador son opcionales.
 | Valor constante | AuthenticatorDllPath                                                                                          |
 |----------------|---------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG \_ EXPAND \_ SZ                                                                                               |
-| Descripción    | Ruta de acceso al archivo DLL del método autenticador EAP. Por ejemplo, %SystemRoot% \\ system32 \\ &lt; name of DLL \_ \_ &gt;.dll. |
+| Descripción    | Ruta de acceso al archivo DLL del método autenticador EAP. Por ejemplo, %SystemRoot% \\ system32 \\ &lt; nombre del archivo \_ DLL \_ &gt;.dll. |
 
 
 
@@ -123,7 +123,7 @@ Los valores restantes del Registro del método autenticador son opcionales.
 
 <dl> <dt>
 
-[Claves del Registro del método del mismo nivel de EAP](eap-peer-method-registry-keys.md)
+[Claves del Registro del método del mismo nivel eap](eap-peer-method-registry-keys.md)
 </dt> <dt>
 
 [Configuración del Registro para tipos de EAP expandido](registry-keys-for-eap-methods.md)

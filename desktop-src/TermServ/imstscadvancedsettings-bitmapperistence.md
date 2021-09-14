@@ -1,28 +1,28 @@
 ---
-title: Propiedad BitmapPeristence de IMsTscAdvancedSettings
-description: Especifica si está habilitado el almacenamiento en caché de mapas de bits.
+title: IMsTscAdvancedSettings BitmapPeristence, propiedad
+description: Especifica si el almacenamiento en caché de mapa de bits está habilitado.
 ms.assetid: 8cabeae8-26bc-4d33-82cc-47bb201d79b6
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsTscAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsTscAdvancedSettings, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad BitmapPeristence
-- Propiedad BitmapPeristence Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsTscAdvancedSettings
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad BitmapPeristence
+- Propiedad BitmapPeristence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BitmapPeristence
 topic_type:
 - apiref
 api_name:
@@ -60,18 +60,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a543d24b200d8fa484939d5ffeabfeeac0b5f73f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168741"
 ---
-# <a name="imstscadvancedsettingsbitmapperistence-property"></a>IMsTscAdvancedSettings:: BitmapPeristence (propiedad)
+# <a name="imstscadvancedsettingsbitmapperistence-property"></a>Propiedad IMsTscAdvancedSettings::BitmapPeristence
 
-Especifica si está habilitado el almacenamiento en caché de mapas de bits. El almacenamiento en caché persistente puede mejorar el rendimiento pero requiere espacio adicional en disco.
+Especifica si el almacenamiento en caché de mapa de bits está habilitado. El almacenamiento en caché persistente puede mejorar el rendimiento, pero requiere más espacio en disco.
 
 > [!Note]  
-> El error ortográfico en el nombre de la propiedad y su parámetro está en la versión de lanzamiento del control.
+> El error ortográfico en el nombre de la propiedad y su parámetro está en la versión publicada del control.
 
  
 
@@ -98,11 +98,11 @@ Establezca este parámetro en 0 para deshabilitar el almacenamiento en caché o 
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

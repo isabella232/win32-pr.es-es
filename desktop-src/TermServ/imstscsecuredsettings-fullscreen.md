@@ -1,14 +1,14 @@
 ---
-title: Propiedad IMsTscSecuredSettings Fullscreen
+title: Propiedad de pantalla completa IMsTscSecuredSettings
 description: Especifica el estado de pantalla completa del control de cliente.
 ms.assetid: f65c2fa3-b2d0-4e64-bf1e-08394c91eda8
 ms.tgt_platform: multiple
 keywords:
-- Propiedad fullScreen Servicios de Escritorio remoto
-- Propiedad fullScreen Servicios de Escritorio remoto, interfaz IMsTscSecuredSettings
-- Interfaz IMsTscSecuredSettings Servicios de Escritorio remoto, propiedad fullScreen
-- Propiedad fullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientSecuredSettings
-- Interfaz IMsRdpClientSecuredSettings Servicios de Escritorio remoto, propiedad fullScreen
+- Propiedades de pantalla completa Servicios de Escritorio remoto
+- Propiedad de pantalla Servicios de Escritorio remoto , interfaz IMsTscSecuredSettings
+- Interfaz IMsTscSecuredSettings Servicios de Escritorio remoto , propiedad Fullscreen
+- Propiedad de pantalla Servicios de Escritorio remoto , interfaz IMsRdpClientSecuredSettings
+- Interfaz IMsRdpClientSecuredSettings Servicios de Escritorio remoto , propiedad Fullscreen
 topic_type:
 - apiref
 api_name:
@@ -25,13 +25,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 22c3b3208edf3476fcd110d7729d97d9817cb929
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676927"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168714"
 ---
-# <a name="imstscsecuredsettingsfullscreen-property"></a>IMsTscSecuredSettings:: Fullscreen (propiedad)
+# <a name="imstscsecuredsettingsfullscreen-property"></a>Propiedad IMsTscSecuredSettings::Fullscreen
 
 Especifica el estado de pantalla completa del control de cliente.
 
@@ -54,23 +54,23 @@ HRESULT get_Fullscreen(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **true** si el control debe usar el modo de pantalla completa y **false** en caso contrario.
+Establezca este parámetro en **TRUE si** el control debe usar el modo de pantalla completa y **FALSE en** caso contrario.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de este método, consulte [proporcionar seguridad de cliente RDP](providing-for-rdp-client-security.md).
+Para obtener más información sobre este método, vea [Proporcionar seguridad de cliente RDP.](providing-for-rdp-client-security.md)
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
-Tenga en cuenta que aunque el uso de esta propiedad está restringido a las zonas de seguridad de direcciones URL permitidas de Internet Explorer, un usuario siempre puede cambiar al modo de pantalla completa después de que se haya establecido la conexión presionando la combinación de [teclas de método abreviado](terminal-services-shortcut-keys.md) del modo de pantalla completa (Ctrl + Alt + inter).
+Tenga en cuenta que aunque el uso de esta propiedad está restringido a las zonas de seguridad de url de Internet Explorer permitidas, [](terminal-services-shortcut-keys.md) un usuario siempre puede cambiar al modo de pantalla completa una vez establecida la conexión presionando la combinación de teclas de método abreviado de modo de pantalla completa (CTRL+ALT+BREAK).
 
 Se puede llamar a este método mientras se establece la conexión de cliente.
 
-Debe llamar al método [**IMsRdpClientNonScriptable3::p UT \_ ConnectionBarText**](imsrdpclientnonscriptable3-connectionbartext.md) antes de llamar al método de **\_ pantalla completa IMsTscSecuredSettings::p UT** o al método de [**\_ pantalla completa IMsRdpClient::p UT**](imsrdpclient-fullscreen.md) .
+Debe llamar al método [**IMsRdpClientNonScriptable3::p ut \_ ConnectionBarText**](imsrdpclientnonscriptable3-connectionbartext.md) antes de llamar al método **IMsTscSecuredSettings::p ut \_ Fullscreen** o al método [**IMsRdpClient::p ut \_ Fullscreen.**](imsrdpclient-fullscreen.md)
 
 ## <a name="requirements"></a>Requisitos
 

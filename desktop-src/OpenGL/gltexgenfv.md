@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22e7e7760eacc22f7ea47fa2e6fa2d9d9dab02d1499236dd02985d6f818d54f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4d5394b6385246f296a472ce51f2727e2738845
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118613333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169254"
 ---
 # <a name="gltexgenfv-function"></a>Función glTexGenfv
 
@@ -79,12 +79,12 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *coord* o *pname* no era un valor definido aceptado, o *pname* era GL TEXTURE GEN MODE y params no era un \_ \_ valor definido \_ aceptado. <br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *coord o* *pname* no era un valor definido aceptado, o *pname* era GL TEXTURE GEN MODE y params no era un \_ valor definido \_ \_ aceptado. <br/> |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). <br/>                 |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glTexGen** selecciona una función de generación de coordenadas de textura o proporciona coeficientes para una de las funciones. El *parámetro coord* denomina una de las coordenadas de textura (s,t,r,q) y debe ser uno de estos símbolos: GL \_ S, GL T, GL R o GL \_ \_ \_ Q. El *parámetro pname* debe ser una de las tres constantes simbólicas: GL \_ TEXTURE GEN \_ \_ MODE, GL OBJECT PLANE o GL \_ EYE \_ \_ \_ PLANE. Si *pname es* GL OBJECT PLANE o \_ GL EYE \_ \_ \_ PLANE, *param* contiene coeficientes para la función de generación de textura correspondiente.
 
@@ -106,7 +106,7 @@ y x?, y?, z?, and w? son las coordenadas de los ojos del vértice, p1, p2, p3 y 
 
 Tenga en cuenta que los valores de *param* definen un plano de referencia en coordenadas de los ojos. La matriz modelview que se les aplica puede no ser la misma en vigor cuando se transforman los vértices de polígono. Esta función establece un campo de coordenadas de textura que puede generar líneas dinámicas de contorno en objetos en movimiento.
 
-Si *pname es* GL SPHERE MAP y coord es GL S o GL T, las coordenadas de textura s y t se generan \_ como se muestra a \_  \_ \_ continuación. Vamos a ser el vector de unidad que apunta desde el origen al vértice del polígono (en coordenadas de los ojos). Deje que n sea el normal actual, después de la transformación a las coordenadas de los ojos. Let f = (fx ( ) fy ( ) fz)T be the reflection vector such that
+Si *pname* es GL SPHERE MAP y coord es GL S o GL T, las coordenadas de textura s y t se generan \_ como se muestra a \_  \_ \_ continuación. Vamos a ser el vector de unidad que apunta desde el origen al vértice del polígono (en coordenadas de los ojos). Deje que n sea el normal actual, después de la transformación a las coordenadas de los ojos. Let f = (fx ( ) fy ( ) fz)T be the reflection vector such that
 
 ![Ecuación que muestra el vector de reflexión como una función de vector de unidad y normal actual.](images/tex05.png)
 
@@ -135,7 +135,7 @@ Las siguientes funciones recuperan información relacionada con glTexGen:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

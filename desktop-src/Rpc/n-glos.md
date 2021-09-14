@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: b004002f-ae52-4ae8-a570-19241bfcee51
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a5e2fc71e075eea1ac51d26afc447c369b11414a1b980990b2123addd3380ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 547012dcbd9b1044c09d3f039b0a72946cb65bef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169086"
 ---
 # <a name="n-rpc"></a>N (RPC)
 
@@ -35,7 +35,7 @@ Colección de directrices para la computación distribuida. Los protocolos de co
 <span id="_rpc_nsi_glos"></span><span id="_RPC_NSI_GLOS"></span>**Name Service Independent (NSI)**
 </dt> <dd>
 
-Estándar para funciones de API que permite que una aplicación distribuida acceda a los elementos de base de datos rpc name-service a través de varios proveedores de servicios de nombres, como OSF-DCE Servicio de directorio de celdas o Microsoft Locator. Consulte también [–interface daemon](/windows) (nsid).
+Estándar para funciones de API que permite que una aplicación distribuida acceda a elementos de base de datos de servicio de nombres RPC a través de varios proveedores de servicios de nombres, como OSF-DCE Servicio de directorio de celdas o Microsoft Locator. Consulte también [–interface daemon](/windows) (nsid).
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Interfaz de software entre el sistema operativo Microsoft MS-DOS, el bus de E/S 
 <span id="_rpc_ndr_glos"></span><span id="_RPC_NDR_GLOS"></span>**Representación de datos de red (BAND)**
 </dt> <dd>
 
-Formato estándar usado durante la transmisión de red que es independiente del formato de tipo de datos en cualquier arquitectura de equipo determinada. Los datos transmitidos incluyen información que especifica su formato JPEG.
+Formato estándar utilizado durante la transmisión de red que es independiente del formato de tipo de datos en cualquier arquitectura de equipo determinada. Los datos transmitidos incluyen información que especifica su formato JPEG.
 
 </dd> <dt>
 

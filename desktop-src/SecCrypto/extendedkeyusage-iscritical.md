@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: a5e5b52d0901222ae3dbf7daac87be2d59a90152c9aa4e0a78f023af1a6848a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5331922567af3b9a34517ab5059fa03ad9904270
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168934"
 ---
 # <a name="extendedkeyusageiscritical-property"></a>Propiedad ExtendedKeyUsage.IsCritical
 
@@ -26,7 +26,7 @@ ms.locfileid: "119007393"
 
 La **propiedad IsCritical** devuelve un valor booleano que indica si la extensión EKU está marcada como crítica.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

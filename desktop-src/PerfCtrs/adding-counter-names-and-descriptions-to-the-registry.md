@@ -4,12 +4,12 @@ ms.assetid: 6fdaccb0-45bc-48f2-8f63-3df0bdf1dca4
 title: Adición de nombres y descripciones de contadores al registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e58333e9694b9aa74ff1d5ade6a399aaa813e7735ea315be529587e813fec0fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e9d2c97ebe80a8ef2a8396ca42583cbad874859
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117794060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169157"
 ---
 # <a name="adding-counter-names-and-descriptions-to-the-registry"></a>Adición de nombres y descripciones de contadores al registro
 
@@ -96,7 +96,7 @@ Las `DriverName` claves y son `SymbolFile` necesarias.
 
 En `[objects]` la sección se proporciona una lista de los objetos de rendimiento que admite el proveedor. Se usa para determinar si cada símbolo de la `[text]` sección hace referencia a un objeto o a un contador.
 
-Para cada objeto (conjunto de contadores) admitido por el proveedor, agregue una clave denominada a la sección , donde es el nombre del objeto y es el identificador de idioma de uno de los `<symbol>_<langid>_NAME=` `[objects]` `<symbol>` `<langid>` idiomas admitidos. El valor se omite.
+Para cada objeto (contraconjunto) admitido por el proveedor, agregue una clave denominada a la sección , donde es el nombre del objeto y es el identificador de idioma de uno de los `<symbol>_<langid>_NAME=` `[objects]` `<symbol>` `<langid>` idiomas admitidos. El valor se omite.
 
 > [!IMPORTANT]
 > La `[objects]` sección mejora el rendimiento del sistema. Aunque la sección objects es opcional, siempre debe incluir esta sección en el .INI archivo. Si incluye esta sección, solo se llama al archivo DLL de rendimiento si admite el objeto solicitado. Si no incluye la sección de objetos, se llama al archivo DLL para cada consulta porque el sistema no sabe qué objetos admite el proveedor. Si no se incluye la sección de objeto, **lodctr** genera un mensaje en el registro de eventos de la aplicación que indica que el archivo .INI no contenía una sección de objetos. El identificador de evento de este mensaje es 2000.
@@ -115,7 +115,7 @@ Los idiomas chino y portugués requieren los identificadores principal y subidio
 
 La `[text]` sección proporciona el nombre y las cadenas de ayuda para los objetos y contadores.
 
-Para cada objeto o contador, y para cada idioma admitido, debe proporcionar una clave NAME (que contiene el nombre o la cadena de título para el objeto o contador) y, opcionalmente, puede proporcionar una clave HELP (que contiene la cadena de descripción o explicación del objeto o contador). Las claves deben tener el nombre y , donde es la constante simbólica para el objeto o contador (como se define en el archivo .h de constante simbólica) y es el identificador de idioma utilizado para `<symbol>_<langid>_NAME` `<symbol>_<langid>_HELP` esta `<symbol>` `<langid>` cadena.
+Para cada objeto o contador, y para cada idioma admitido, debe proporcionar una clave NAME (que contiene el nombre o la cadena de título para el objeto o contador) y, opcionalmente, puede proporcionar una clave HELP (que contiene la cadena de descripción o explicación del objeto o contador). Las claves deben tener el nombre y , donde es la constante simbólica para el objeto o contador (como se define en el archivo .h de constante simbólica) y es el identificador de lenguaje utilizado para `<symbol>_<langid>_NAME` `<symbol>_<langid>_HELP` esta `<symbol>` `<langid>` cadena.
 
 Por ejemplo, las cadenas en inglés para un contador con símbolo `MY_COUNTER` se especificarían como:
 

@@ -4,12 +4,12 @@ ms.assetid: b428688c-7b16-48c7-8d89-55d066496d1c
 title: Cambio de variables de entorno
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f274752ab7b8e2a6becdf5ac13a3c9e754f7581fd0787927eb6bc759c7f4d08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e13054afff996c4f8128fdc58f9d6dfadc35cc84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169097"
 ---
 # <a name="changing-environment-variables"></a>Cambio de variables de entorno
 

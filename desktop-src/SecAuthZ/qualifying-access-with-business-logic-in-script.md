@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5b77ff1d6d520780d30efab5619c3e9bc3c896ad88315fba56e3a19e05d3ae97
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 65ee69e0572c0f480cded2930ea81ac6da710b6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168942"
 ---
 # <a name="qualifying-access-with-business-logic-in-script"></a>Calificar el acceso con lógica de negocios en el script
 
 Use scripts de reglas de negocios para proporcionar lógica en tiempo de ejecución para comprobar el acceso. Para obtener más información sobre las reglas de negocios, [vea Business Rules](business-rules.md).
 
-Para asignar una regla de negocio a una tarea, establezca primero la propiedad [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) del objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) que representa la tarea. El script debe escribirse mediante el lenguaje de programación Visual Basic Scripting Edition (VBScript) o JScript software de desarrollo. Después de especificar el lenguaje de script, establezca la propiedad [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) del objeto **IAzTask** con una representación de cadena del script.
+Para asignar una regla de negocios a una tarea, establezca primero la propiedad [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) del objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) que representa la tarea. El script debe escribirse mediante el lenguaje de programación Visual Basic Scripting Edition (VBScript) o JScript software de desarrollo. Después de especificar el lenguaje de script, establezca la propiedad [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) del **objeto IAzTask** con una representación de cadena del script.
 
-Al comprobar el acceso de una operación contenida en una tarea que tiene una regla de negocios asociada, la aplicación debe crear dos matrices del mismo tamaño que los parámetros *varParameterNames* y *varParameterValues* del método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de un objeto [**IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) Para obtener información sobre cómo crear un contexto de cliente, vea [Establecer un contexto de cliente en el script](establishing-a-client-context-in-script.md).
+Al comprobar el acceso de una operación contenida en una tarea que tiene una regla de negocios asociada, la aplicación debe crear dos matrices del mismo tamaño que los parámetros *varParameterNames* y *varParameterValues* del método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de un objeto [**IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) Para obtener información sobre cómo crear un contexto de cliente, vea [Establecer un contexto de cliente en script](establishing-a-client-context-in-script.md).
 
-El [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) crea un [**objeto AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) que se pasa al script de regla de negocios. A continuación, el script [**establece la propiedad BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) del **objeto AzBizRuleContext.** Un valor true **indica** que se concede acceso y un valor **false** indica que se deniega el acceso.
+El [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) crea un [**objeto AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) que se pasa al script de regla de negocios. A continuación, el script [**establece la propiedad BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) del **objeto AzBizRuleContext.** Un valor true **indica** que se concede acceso y un valor de **False** indica que se deniega el acceso.
 
 No se puede asignar un script de regla de negocios a un [**objeto IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) contenido en un objeto [**IAzScope**](/windows/desktop/api/Azroles/nn-azroles-iazscope) delegado.
 

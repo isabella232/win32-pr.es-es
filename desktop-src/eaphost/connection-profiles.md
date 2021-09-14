@@ -4,12 +4,12 @@ description: Obtenga información sobre las propiedades de conexión. Consulte l
 ms.assetid: 95c8f5d5-75c5-48c7-b6af-e9908df56c71
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b7c7c10bd4f5e310b9442298499e6818592755c5d80a8103fc00e63e9bd5b45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b48462748acd346b765afa0134c1d384df0e503
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118498634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168457"
 ---
 # <a name="connection-properties"></a>Propiedades de conexión
 

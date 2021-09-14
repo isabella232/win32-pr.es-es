@@ -4,12 +4,12 @@ description: Tradicionalmente, tener un sistema monolítico ejecutado en varios 
 ms.assetid: 6055bcef-e34c-4f2d-92b9-9aec75cf3cec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 859b2a0a83e7f12bd7caf372e60acf2736a114a0cdf46893830032a47a548019
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82cd1ea3301d68e77562a63c542bc075692e5192
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118924182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169049"
 ---
 # <a name="the-model-for-distributed-systems"></a>Modelo para sistemas distribuidos
 
@@ -23,7 +23,7 @@ La opacidad de la nube se mantiene porque las operaciones informáticas se invoc
 
 Con este paradigma, la mecánica de un sistema distribuido, parecido a la nube, se puede dividir en muchos intercambios de paquetes individuales o conversaciones entre nodos individuales.
 
-Los sistemas cliente-servidor tradicionales tienen dos nodos con roles fijos y responsabilidades. Los sistemas distribuidos modernamente pueden tener más de dos nodos y sus roles suelen ser dinámicos. En una conversación, un nodo puede ser un cliente, mientras que en otra conversación el nodo puede ser el servidor. En muchos casos, el consumidor final de la funcionalidad expuesta es un cliente con un usuario sentado en un teclado que observa la salida. En otros casos, las funciones del sistema distribuido desatendidas, realizando operaciones en segundo plano.
+Los sistemas cliente-servidor tradicionales tienen dos nodos con roles fijos y responsabilidades. Los sistemas distribuidos modernamente pueden tener más de dos nodos y sus roles suelen ser dinámicos. En una conversación, un nodo puede ser un cliente, mientras que en otra conversación el nodo puede ser el servidor. En muchos casos, el consumidor final de la funcionalidad expuesta es un cliente con un usuario sentado en un teclado, viendo la salida. En otros casos, las funciones del sistema distribuido desatendidas, realizando operaciones en segundo plano.
 
 Es posible que el sistema distribuido no tenga clientes y servidores dedicados para cada intercambio de paquetes determinado, pero es importante recordar que hay un autor de llamada (o iniciador, cualquiera de los cuales a menudo se conoce como cliente). También está el destinatario de la llamada (a menudo denominado servidor). No es necesario tener intercambios de paquetes de dos maneras en el formato de solicitud-respuesta de un sistema distribuido; a menudo, los mensajes se envían solo de una manera.
 

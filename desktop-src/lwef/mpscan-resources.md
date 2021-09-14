@@ -1,10 +1,10 @@
 ---
 title: MPSCAN_RESOURCES estructura (MpClient.h)
-description: Información de recursos que se pasa durante una operación de examen.
+description: Información de recursos pasada durante una operación de examen.
 ms.assetid: D97712A6-547D-44CC-B55D-039A5CCE20BF
 keywords:
 - MPSCAN_RESOURCES estructura heredada de Windows environment
-- PMPSCAN_RESOURCES puntero de estructura heredado Windows environment Features
+- PMPSCAN_RESOURCES puntero de estructura heredado Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd70b442e7179d516d2e9c60b81e6c52b0f696f5719a255871e8687773bf71ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69ee9ea259bca6bf66eb81fcd17b13d509d5a065
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118747354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168306"
 ---
 # <a name="mpscan_resources-structure"></a>Estructura DE RECURSOS DE MPSCAN \_
 
-Información de recursos que se pasa durante una operación de examen.
+Información de recursos pasada durante una operación de examen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ typedef struct tagMPSCAN_RESOURCES {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Matriz de recursos. Vea [**MPRESOURCE \_ INFO**](mpresource-info.md).
+Matriz de recursos. Consulte [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> </dl>
 
@@ -68,15 +68,15 @@ Matriz de recursos. Vea [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

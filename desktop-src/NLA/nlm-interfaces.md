@@ -4,12 +4,12 @@ description: NLM Interfaces
 ms.assetid: 57cc2a07-4551-428c-a303-9b1a4510f225
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07751a3f28c713b699cf60aa391d7141b19db0fcafd3ef13437f951c944dcb04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 322086a2860ff9bade47c9971662931f9ecada60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117798512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169466"
 ---
 # <a name="nlm-interfaces"></a>NLM Interfaces
 
@@ -25,7 +25,7 @@ Las siguientes son las interfaces NLM.
 | [**INetworkConnectionCostEvents**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkconnectioncostevents) | Se usa para notificar a una aplicación los eventos de cambio de estado del plan de datos y de costos para una conexión.                                                                                                                               |
 | [**INetworkConnectionEvents**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkconnectionevents)         | Interfaz de receptor que un cliente implementa para recibir eventos relacionados con las conexiones de red. Las aplicaciones que están interesadas en eventos de nivel inferior, como los cambios de autenticación, implementan esta interfaz.       |
 | [**INetworkCostManager**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkcostmanager)                   | Se usa para consultar la información de estado del plan de datos y costo de todo el equipo asociada a una conexión que se usa para la conectividad a Internet en toda la máquina o al primer salto de enrutamiento a un destino específico de una conexión. |
-| [**INetworkCostManagerEvents**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkcostmanagerevents)       | Se usa para notificar a una aplicación los eventos relacionados con el costo y el plan de datos de todo el equipo.                                                                                                                                         |
+| [**INetworkCostManagerEvents**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkcostmanagerevents)       | Se usa para notificar a una aplicación los eventos relacionados con el costo de todo el equipo y el plan de datos.                                                                                                                                         |
 | [**INetworkEvents**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworkevents)                             | Interfaz de receptor que un cliente implementa para recibir eventos relacionados con la red. Estas API son todas las funciones de devolución de llamada a las que se llama automáticamente cuando se inician los eventos respectivos.                                  |
 | [**INetworkListManager**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworklistmanager)                   | Proporciona un conjunto de métodos para realizar funciones de administración de listas de redes.                                                                                                                                                  |
 | [**INetworkListManagerEvents**](/windows/desktop/api/Netlistmgr/nn-netlistmgr-inetworklistmanagerevents)       | Interfaz de receptor que un cliente implementa para recibir eventos relacionados con el Administrador de listas de redes. Las aplicaciones que están interesadas en eventos de nivel más pormenorizados, como la conectividad a Internet, implementan la interfaz .   |

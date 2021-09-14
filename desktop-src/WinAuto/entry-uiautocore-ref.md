@@ -1,15 +1,15 @@
 ---
 title: Referencia (Automatización de la interfaz de usuario)
-description: En esta sección se proporciona información de referencia sobre microsoft Automatización de la interfaz de usuario \ 32; Api.
+description: En esta sección se proporciona información de referencia sobre microsoft Automatización de la interfaz de usuario \ 32; API.
 ms.assetid: d17e6a95-a923-4e27-aad1-4d95d0b0808d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf007a188a6719b1318d01c826a82ad52f1fb414318bffa08667f4861fd0f7b5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ade82e67e0e69e288bf115f79ac61fbed407db30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120071825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168569"
 ---
 # <a name="reference-ui-automation"></a>Referencia (Automatización de la interfaz de usuario)
 

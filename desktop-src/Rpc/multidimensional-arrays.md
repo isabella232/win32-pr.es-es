@@ -4,12 +4,12 @@ description: Los atributos de matriz también se pueden usar con matrices multid
 ms.assetid: a01b904c-fbe8-4af4-8393-6864f7ef7364
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52f7dac2b6d093fa56383ecaf976a83acf13fec9aa0c3820c1d608ccb69e9e9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6eb7bcf94d97e1f35fdd6ab432ea5869e47f79ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118928093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169090"
 ---
 # <a name="multidimensional-arrays"></a>Matrices multidimensionales
 
@@ -29,7 +29,7 @@ interface multiarray
 }
 ```
 
-La matriz anterior es una matriz compatible (de tamaño d1size) de 30 matrices de elementos (con elementos d2len incluidos para cada una). La coma entre paréntesis del atributo size especifica que el valor de d1size se aplica a la primera dimensión de la \[ [**\_**](/windows/desktop/Midl/size-is) \] matriz. Del mismo modo, el comando entre paréntesis de la longitud es attribute indica que el valor de d2len se aplica a la segunda dimensión \[ [**\_**](/windows/desktop/Midl/length-is) de \] la matriz.
+La matriz anterior es una matriz compatible (de tamaño d1size) de 30 matrices de elementos (con elementos d2len incluidos para cada una). La coma entre paréntesis del atributo size is especifica que el valor de d1size se aplica a la primera dimensión de la \[ [**\_**](/windows/desktop/Midl/size-is) \] matriz. Del mismo modo, el comando entre paréntesis de longitud es attribute indica que el valor de d2len se aplica a la segunda dimensión \[ [**\_**](/windows/desktop/Midl/length-is) de \] la matriz.
 
 El compilador midl 2.0 proporciona dos métodos para serializar parámetros: modo mixto (/**so**) y totalmente interpretado (/**Oif** o /**Oicf**). De forma predeterminada, el compilador MIDL compila interfaces en modo mixto. No es necesario especificar explícitamente el modificador [**/Os**](/windows/desktop/Midl/-os) para obtener la serialización en modo mixto.
 
@@ -58,7 +58,7 @@ interface multiarray
 
 En el ejemplo anterior, la variable ptr2d es un puntero a un bloque de punteros de tamaño d1len, cada uno de los cuales apunta a punteros d2len a **long.**
 
-Las matrices multidimensionales no son equivalentes a las matrices de punteros. Una matriz multidimensional es un bloque de datos único y grande en memoria. Una matriz de punteros solo contiene un bloque de punteros en la matriz. Los datos a los que apuntan los punteros pueden estar en cualquier lugar de la memoria. Además, la sintaxis de ANSI C solo permite que la dimensión de matriz más significativa (más a la izquierda) no se pueda especificar en una matriz multidimensional. Por lo tanto, lo siguiente es una instrucción válida:
+Las matrices multidimensionales no son equivalentes a las matrices de punteros. Una matriz multidimensional es un único bloque grande de datos en memoria. Una matriz de punteros solo contiene un bloque de punteros en la matriz. Los datos a los que apuntan los punteros pueden estar en cualquier lugar de la memoria. Además, la sintaxis ANSI C permite que solo la dimensión de matriz más significativa (más a la izquierda) no se pueda especificar en una matriz multidimensional. Por lo tanto, lo siguiente es una instrucción válida:
 
 `long a1[] [20]`
 

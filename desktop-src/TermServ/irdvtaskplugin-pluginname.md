@@ -4,7 +4,7 @@ description: Contiene el nombre para mostrar del agente de tareas.
 ms.assetid: 6f414270-e90b-4075-80fe-f918acbdd205
 ms.tgt_platform: multiple
 keywords:
-- Extensión de la propiedad PluginName Servicios de Escritorio remoto
+- Propiedad PluginName Servicios de Escritorio remoto
 - Propiedad PluginName Servicios de Escritorio remoto interfaz , IRDVTaskPlugin
 - Interfaz IRDVTaskPlugin Servicios de Escritorio remoto , propiedad PluginName
 topic_type:
@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 078934c8f19085bf233df78501798a8416ceadf7ba6a0b663cb14b8a8c46b223
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0262472e37a8ff3e5b9bb153d2e94f4e52029b14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118129336"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168673"
 ---
 # <a name="irdvtaskpluginpluginname-property"></a>IRDVTaskPlugin::P luginName
 
@@ -50,11 +50,11 @@ Nombre para mostrar del agente de tareas.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>                                                             |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                           |
-| Header<br/>                   | <dl> <dt>Tspubplugincom.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Tspubplugincom.h</dt> </dl> |
 
 
 

@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 1ad7ce342c1e0053622bfb77161ecd1e5d81c25d09af179108065b445dd4dc35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d42af1912365a4237889e4e46d0fb3343377c772
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118365080"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169281"
 ---
-# <a name="irtcpause-method"></a>IRTC::P ause (método)
+# <a name="irtcpause-method"></a>Método IRTC::P ause
 
 El **método Pause** pausa la captura actual.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
@@ -57,19 +57,19 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Mientras la captura está en estado en pausa, los fotogramas nuevos no se capturan hasta que se llama al método [IRTC::Resume](irtc-resume.md) para reiniciar la captura.
+Mientras la captura está en estado en pausa, no se capturan nuevos fotogramas hasta que se llama al método [IRTC::Resume](irtc-resume.md) para reiniciar la captura.
 
 Cuando se usan los métodos **IRTC::P ause** e **IRTC::Resume** para controlar la captura, Monitor de red continúa agregando [*estadísticas*](c.md) de conversación cada vez que se ejecuta la captura.
 
-Para reiniciar la llamada de [captura, llame a IRTC::Resume.](irtc-resume.md) Para detener la captura, llame [a IRTC::Stop](irtc-stop.md).
+Para reiniciar la llamada de captura [IRTC::Resume](irtc-resume.md). Para detener la captura, llame [a IRTC::Stop](irtc-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |

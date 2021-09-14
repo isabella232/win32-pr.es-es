@@ -4,12 +4,12 @@ ms.assetid: fc8c631e-076c-4745-8db0-90f46a202e6a
 title: Configuración de servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34f64b5cef835e1c7efef10c12555c81c132e707c8d1fb2814a7fcb95cf6d71c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5019469e17fdd0807aa101c7d1e4d6f6019da783
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118889085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168897"
 ---
 # <a name="service-configuration"></a>Configuración de servicio
 

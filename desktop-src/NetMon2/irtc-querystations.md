@@ -1,5 +1,5 @@
 ---
-description: Proporciona una lista de todos los equipos que actualmente usan Monitor de red para capturar datos de red.
+description: Proporciona una lista de todos los equipos que usan actualmente Monitor de red para capturar datos de red.
 ms.assetid: 57e7b8e1-99b8-4194-b6dc-401235be4ef4
 title: Método IRTC::QueryStations (Netmon.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 951bdc096a432ae57004962f21c60d37f5fc44fec548a7e3364a5f8b28696da0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a0cebd789284dd41c293424a70686f30eb4601d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169274"
 ---
 # <a name="irtcquerystations-method"></a>IrTC::QueryStations (método)
 
@@ -43,9 +43,9 @@ HRESULT STDMETHODCALLTYPE QueryStations(
 *lpQueryTable* \[ in, out\]
 </dt> <dd>
 
-Puntero a una [**estructura QUERYTABLE.**](querytable.md) En la entrada, esta estructura debe contener el número máximo de equipos que desea Monitor de red y una matriz de [**estructuras STATIONQUERY.**](stationquery.md)
+Puntero a una [**estructura QUERYTABLE.**](querytable.md) En la entrada, esta estructura debe contener el número máximo de equipos que Monitor de red devolver y una matriz de [**estructuras STATIONQUERY.**](stationquery.md)
 
-En la salida, esta estructura devuelve el número de equipos que capturan datos y una [**estructura STATIONQUERY**](stationquery.md) para cada equipo encontrado. Tenga en cuenta que esto puede incluir equipos que usan versiones de Monitor de red anteriores a la versión 2.0.
+En la salida, esta estructura devuelve el número de equipos que capturan datos y una [**estructura STATIONQUERY**](stationquery.md) para cada equipo encontrado. Tenga en cuenta que esto puede incluir equipos que usan versiones de Monitor de red que son anteriores a la versión 2.0.
 
 </dd> </dl>
 
@@ -53,23 +53,23 @@ En la salida, esta estructura devuelve el número de equipos que capturan datos 
 
 Si el método es correcto, el valor devuelto es **NMERR \_ SUCCESS**.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                           | Descripción                                                          |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE LA \_ MEMORIA**</dt> </dl> | La memoria necesaria para procesar esta consulta no está disponible.<br/> |
+| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE \_ MEMORIA**</dt> </dl> | La memoria necesaria para procesar esta consulta no está disponible.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se puede llamar a este método en cualquier momento después de llamar al método [**CreateNPPInterface.**](createnppinterface.md) Una llamada a este método es una llamada sincrónica, que puede tardar varios segundos en completarse mientras Monitor de red espera a que los equipos remotos respondan a la consulta. Solo se pueden consultar los equipos de la subred local.
+Se puede llamar a este método en cualquier momento después de llamar al [**método CreateNPPInterface.**](createnppinterface.md) Una llamada a este método es una llamada sincrónica, que puede tardar varios segundos en completarse mientras Monitor de red espera a que los equipos remotos respondan a la consulta. Solo se pueden consultar los equipos de la subred local.
 
-El usuario debe asignar la memoria para la [**estructura QUERYTABLE**](querytable.md) y liberar esa memoria después de que la tabla ya no sea necesaria. Este requisito incluye la memoria necesaria para la [**matriz STATIONQUERY**](stationquery.md) utilizada en **QUERYTABLE.**
+El usuario debe asignar la memoria para la [**estructura QUERYTABLE**](querytable.md) y liberar esa memoria después de que la tabla ya no sea necesaria. Este requisito incluye la memoria necesaria para la [**matriz STATIONQUERY**](stationquery.md) usada en **QUERYTABLE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ El usuario debe asignar la memoria para la [**estructura QUERYTABLE**](querytabl
 [**IRTC**](irtc.md)
 </dt> <dt>
 
-[**Querytable**](querytable.md)
+[**QUERYTABLE**](querytable.md)
 </dt> <dt>
 
 [**STATIONQUERY**](stationquery.md)

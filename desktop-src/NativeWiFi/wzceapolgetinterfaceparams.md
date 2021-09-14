@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Wzcsapi.dll
-ms.openlocfilehash: fa401e1b045b56b41f7406851c927c316b19d5486adc903af667383465bfd19f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc89fd2defb75662fa90b5ed00c7969d483da590
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117983932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169394"
 ---
 # <a name="wzceapolgetinterfaceparams-function"></a>Función WZCEapolGetInterfaceParams
 
@@ -86,12 +86,12 @@ Puntero a una estructura [**EAPOL \_ INTF \_ PARAMS**](eapol-intf-params.md) que
 
 Devuelve ERROR \_ SUCCESS si la operación se completa correctamente; de lo contrario, devuelve uno de los Windows de error del sistema.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si **WZCEapolGetInterfaceParams** devuelve ERROR SUCCESS, el autor de la llamada debe llamar a LocalFree para liberar los búferes internos asignados para los datos devueltos una vez que esta información ya no sea \_ necesaria. [](/windows/win32/api/winbase/nf-winbase-localfree)
 
 > [!Note]  
-> El *archivo de encabezado Wzcsapi.h y* el archivo de biblioteca de importación *Wzcsapi.lib* no están disponibles en el SDK Windows.
+> El *archivo de encabezado Wzcsapi.h* y el archivo de biblioteca de importación *Wzcsapi.lib* no están disponibles en Windows SDK.
 
  
 
@@ -99,13 +99,13 @@ Si **WZCEapolGetInterfaceParams** devuelve ERROR SUCCESS, el autor de la llamada
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP con SP3<br/>                                                         |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
-| Header<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Wzcsapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wzcsapi.dll</dt> </dl> |
 

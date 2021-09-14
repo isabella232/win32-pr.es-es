@@ -4,9 +4,9 @@ description: Se llama para inicializar el agente de tareas.
 ms.assetid: eef813e6-ecca-400a-a9f3-efca6bd81161
 ms.tgt_platform: multiple
 keywords:
-- Inicialización del método Servicios de Escritorio remoto
-- Inicializar método Servicios de Escritorio remoto interfaz , IRDVTaskPlugin
-- Interfaz IRDVTaskPlugin Servicios de Escritorio remoto método , Initialize
+- Inicializar método Servicios de Escritorio remoto
+- Inicializar método Servicios de Escritorio remoto , interfaz IRDVTaskPlugin
+- Interfaz IRDVTaskPlugin Servicios de Escritorio remoto , Método Initialize
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c14f4a002a0b33e403c02dba74385edd21e211fb27bcfb144c7a9ddc080a40fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9530be7334e1f3fefa7f73007334e448362a95ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118606108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168674"
 ---
-# <a name="irdvtaskplugininitialize-method"></a>IRDVTaskPlugin::Initialize (método)
+# <a name="irdvtaskplugininitialize-method"></a>IrDVTaskPlugin::Initialize (método)
 
 Se llama para inicializar el agente de tareas.
 
@@ -47,7 +47,7 @@ HRESULT Initialize(
 
 Tipo: **[ **IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md)\***
 
-Puntero a una [**interfaz IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) que el agente de tareas usa para comunicarse con el agente de desencadenador. Debe liberar esta interfaz cuando ya no sea necesaria.
+Puntero a una [**interfaz IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) que el agente de tareas usa para comunicarse con el agente desencadenador. Debe liberar esta interfaz cuando ya no sea necesaria.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 

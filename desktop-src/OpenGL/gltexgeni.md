@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efaca73e4d9c7f4637f00f74e9cf58b8291fc3d266ef93d288acfe989f8a45c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20bb1121a8f125f06bf8e6e18f56c96fbeeb692d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169249"
 ---
 # <a name="gltexgeni-function"></a>Función glTexGeni
 
@@ -81,7 +81,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glTexGen** selecciona una función de generación de coordenadas de textura o proporciona coeficientes para una de las funciones. El *parámetro coord* denomina una de las coordenadas de textura (s,t,r,q) y debe ser uno de estos símbolos: GL \_ S, GL T, GL R o GL \_ \_ \_ Q. El *parámetro pname* debe ser una de las tres constantes simbólicas: GL \_ TEXTURE GEN \_ \_ MODE, GL OBJECT PLANE o GL \_ EYE \_ \_ \_ PLANE. Si *pname es* GL TEXTURE GEN MODE, param especifica un modo, uno de \_ GL OBJECT \_ \_  \_ \_ LINEAR, GL EYE LINEAR \_ o GL SPHERE \_ \_ \_ MAP. Si *pname es* GL OBJECT PLANE o \_ GL EYE \_ \_ \_ PLANE, *param* contiene coeficientes para la función de generación de textura correspondiente.
 
@@ -91,7 +91,7 @@ Si la función de generación de texturas es GL \_ OBJECT \_ LINEAR, la función
 
 se usa , donde g es el valor calculado para la coordenada denominada en coord; p1, p2, p3 y p4 son los cuatro valores proporcionados en params. y x?, y?, z?, and w? son las coordenadas de objeto del vértice. Puede usar esta función para el terreno del mapa de texturas mediante el nivel del mar como un plano de referencia (definido por p1, p2, p3 y p4). La función de generación de coordenadas GL OBJECT LINEAR calcula la altitud de un vértice del terreno como su distancia desde el nivel del mar; esa altitud se usa para indexar la imagen de textura para asignar la nieve blanca a los picos y el verde a los \_ \_ montes, por ejemplo.
 
-Si la función de generación de texturas es GL \_ EYE \_ LINEAR, la función
+Si la función de generación de textura es GL \_ EYE \_ LINEAR, la función
 
 ! [Ecuación que muestra la función glTexGen cuando la función de generación de texturas GL_EYE_LINEAR].
 
@@ -99,7 +99,7 @@ se usa, donde
 
 ![Ecuación que muestra las coordenadas oculares del vértice.](images/tex03.png)
 
-y x?, y?, z?, and w? son las coordenadas de los ojos del vértice, p1, p2, p3 y p4 son los valores proporcionados en *param* y M es la matriz modelview cuando se llama **a glTexGen**. Si M está mal condición o es singular, las coordenadas de textura generadas por la función resultante pueden ser inexactas o indefinidos.
+y x?, y?, z?, and w? son las coordenadas de los ojos del vértice, p1, p2, p3 y p4 son los valores proporcionados en *param* y M es la matriz modelview cuando se llama **a glTexGen**. Si M está mal condición o singular, las coordenadas de textura generadas por la función resultante pueden ser inexactas o indefinidos.
 
 Tenga en cuenta que los valores *de param* definen un plano de referencia en coordenadas de los ojos. La matriz modelview que se les aplica puede no ser la misma en vigor cuando se transforman los vértices del polígono. Esta función establece un campo de coordenadas de textura que puede generar líneas de contorno dinámicas en objetos en movimiento.
 
@@ -132,7 +132,7 @@ Las siguientes funciones recuperan información relacionada con glTexGen:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

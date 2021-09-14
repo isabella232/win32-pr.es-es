@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, referencia, otros tipos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45b4b3f04ae25af92a6e0a80c8d4727a45dc7306ce54ee5e69361587de875fda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 173adedfc53bebe6c1985e2dd750b71ab8de9373
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169061"
 ---
 # <a name="other-rpc-types"></a>Otros tipos RPC
 
@@ -24,8 +24,8 @@ Esta sección contiene información sobre los siguientes tipos RPC que no son es
 -   [**IDENTIFICADOR \_ DE RPC EP \_ \_ INQ**](rpc-ep-inq-handle.md)
 -   [**RPC \_ IF \_ HANDLE**](rpc-if-handle.md)
 -   [**RPC \_ MGR \_ EPV**](rpc-mgr-epv.md)
--   [**IDENTIFICADOR \_ DE RPC NS \_**](rpc-ns-handle.md)
--   [**ESTADO \_ DE RPC**](rpc-status.md)
+-   [**IDENTIFICADOR \_ DE NS \_ RPC**](rpc-ns-handle.md)
+-   [**ESTADO \_ RPC**](rpc-status.md)
 -   [Enlace de cadena](string-binding.md)
 -   [UUID de cadena](string-uuid.md)
 

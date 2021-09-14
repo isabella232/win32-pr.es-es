@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: de0d7e9f49db66e2505ac18394dd5b9da72ed3f67b1cf6da84885d68c54d1c74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c3ab61908c510cf0720f141829b5493727771bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168410"
 ---
 # <a name="eaptlsconnectionpropertiesv1-schema-complex-types"></a>Tipos complejos de esquema eaptlsconnectionpropertiesv1
 

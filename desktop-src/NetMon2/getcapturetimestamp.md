@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 93ae1c94a5e83d0029aba4403ad4ba23db0f4006bb5b9be68cc469939e63c734
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 855aa8b5432fd06bb25571fcb48c091dcfe502f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118366640"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169338"
 ---
 # <a name="getcapturetimestamp-function"></a>Función GetCaptureTimeStamp
 
@@ -52,9 +52,9 @@ Si la función se realiza correctamente, el valor devuelto es un puntero a una [
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función GetCaptureTimeStamp** devuelve la hora en que el proveedor de paquetes de red (NPP) comienza a recopilar datos, no cuando el experto carga la captura para su análisis.
+La **función GetCaptureTimeStamp** devuelve la hora a la que el proveedor de paquetes de red (NPP) comienza a recopilar datos, no cuando el experto carga la captura para su análisis.
 
 No sobrescriba los datos de la **estructura SYSTEMTIME.** Los datos forman parte de la captura. Al intentar modificar los datos, se produce una infracción de acceso.
 
@@ -64,7 +64,7 @@ No sobrescriba los datos de la **estructura SYSTEMTIME.** Los datos forman parte
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -74,7 +74,7 @@ No sobrescriba los datos de la **estructura SYSTEMTIME.** Los datos forman parte
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 4d81492e64127e61e8750b86964c2a6c541c409dacc232a031c152376943263f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 064985f0f3b9a235dc1c00d683fe4b11371df87d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169325"
 ---
 # <a name="getdwordfromblob-function"></a>Función GetDwordFromBlob
 

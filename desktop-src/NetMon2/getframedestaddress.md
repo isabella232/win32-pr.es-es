@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: d7719392794027567521ce3e9c1bd1caf8ecbf76110f76ad0e54e0dd6549aae4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afec32f0e0fc66ccd5a1d78cc9769b0e742f1e6f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118366630"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169309"
 ---
 # <a name="getframedestaddress-function"></a>Función GetFrameDestAddress
 
@@ -45,7 +45,7 @@ DWORD WINAPI GetFrameDestAddress(
 *hFrame* 
 </dt> <dd>
 
-Identificador del marco al que se obtiene un puntero.
+Identificador del marco al que se debe obtener un puntero.
 
 </dd> <dt>
 
@@ -66,14 +66,14 @@ Un tipo de dirección, como ADDRESS \_ TYPE ETHERNET o ADDRESS TYPE \_ \_ \_ IP.
 *Marcas* 
 </dt> <dd>
 
-Marcas usadas para modificar los datos de dirección de destino devueltos.
+Marcas usadas para modificar los datos de direcciones de destino devueltos.
 
 
 
 | Value                                                                                                                                                                                                           | Significado                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="ADDRESSTYPE_FLAGS_NORMALIZE"></span><span id="addresstype_flags_normalize"></span><dl> <dt>**NORMALIZACIÓN DE \_ MARCAS DE TIPO DE \_ DIRECCIÓN**</dt> </dl>        | Cancela el enrutamiento y los BIT de grupo.<br/>                   |
-| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**MARCAS DE TIPO \_ DE DIRECCIÓN \_ BIT \_ INVERSO**</dt> </dl> | Convierte las direcciones de red del anillo de token de vuelta a la normalidad.<br/> |
+| <span id="ADDRESSTYPE_FLAGS_NORMALIZE"></span><span id="addresstype_flags_normalize"></span><dl> <dt>**NORMALIZACIÓN DE \_ LAS MARCAS ADDRESSTYPE \_**</dt> </dl>        | Cancela el enrutamiento y los BIT de grupo.<br/>                   |
+| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**ADDRESSTYPE \_ MARCA BIT \_ \_ REVERSE**</dt> </dl> | Convierte las direcciones de red de anillo de token de vuelta a la normalidad.<br/> |
 
 
 
@@ -83,7 +83,7 @@ Marcas usadas para modificar los datos de dirección de destino devueltos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor *lpAddress* es válido y el valor devuelto es BHERR \_ SUCCESS.
+Si la función se realiza correctamente, el *valor lpAddress* es válido y el valor devuelto es BHERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto es un código de error.
 
@@ -98,9 +98,9 @@ Si la función no se realiza correctamente, el valor devuelto es un código de e
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se **permite el tipo de dirección ADDRESS TYPE FIND \_ \_ \_ HIGHEST.** Cuando se usa este tipo de dirección, la función busca la dirección IP DE IPX, XNS, IP o SARS antes de devolver la dirección ETHERNET, TOKENRING o FDDI. Este enfoque es útil para protocolos y entornos en los que se pueden multiplexadas dos NIC en una sola dirección de servidor.
+Se permite el tipo de dirección **\_ ADDRESS TYPE FIND \_ \_ HIGHEST.** Cuando se usa este tipo de dirección, la función busca la dirección IPX, XNS, IP o HEXADECIMALS antes de devolver la dirección ETHERNET, TOKENRING o FDDI. Este enfoque es útil para los protocolos y en entornos en los que se pueden multiplexación dos NIC en una sola dirección de servidor.
 
 ## <a name="requirements"></a>Requisitos
 

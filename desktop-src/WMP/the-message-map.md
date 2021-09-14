@@ -1,6 +1,6 @@
 ---
-title: Mapa de mensajes
-description: Mapa de mensajes
+title: El mapa de mensajes
+description: El mapa de mensajes
 ms.assetid: 4640b0f5-625e-4a9e-86f5-3e75d0afb40d
 keywords:
 - Reproductor de Windows Media complementos,mapa de mensajes
@@ -9,14 +9,14 @@ keywords:
 - Complementos de interfaz de usuario, mapa de mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03ec00689257ee60ada8f9bdf027b1cd34e43d243492e8d8ce5b5b38d2d89044
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ea7fc04caf752383368ab6e51ae19c82e8c3515
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118831578"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168609"
 ---
-# <a name="the-message-map"></a>Mapa de mensajes
+# <a name="the-message-map"></a>El mapa de mensajes
 
 La ventana del complemento responde a varios eventos mediante una llamada a métodos asignados a los mensajes de evento correspondientes. El asistente proporciona una asignación para que se llame a OnPaint y OnEraseBackground en el momento adecuado. Para crear el **botón Buscar** y responder a los clics de él, la sección del mapa de mensajes se modifica de la siguiente manera:
 

@@ -1,5 +1,5 @@
 ---
-description: Especifica el tipo de credenciales utilizado para la autenticación.
+description: Especifica el tipo de credenciales usadas para la autenticación.
 ms.assetid: a56ce888-ec07-4ce8-a540-6d1890cb338d
 title: Elemento authMode (OneX)
 ms.topic: reference
@@ -13,32 +13,32 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: d699b27746226c3eb1550cfd9250e229b40a22e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687432"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169462"
 ---
 # <a name="authmode-onex-element"></a>Elemento authMode (OneX)
 
-El elemento authMode (OneX) especifica el tipo de credenciales que se usan para la autenticación. La siguiente tabla describe los posibles valores.
+El elemento authMode (OneX) especifica el tipo de credenciales usadas para la autenticación. La siguiente tabla describe los posibles valores.
 
 
 
 | Value         | Descripción                                                                                                                                                             |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| machineOrUser | Usar credenciales de equipo o de usuario. Cuando un usuario ha iniciado sesión, se usan las credenciales del usuario para la autenticación. Cuando ningún usuario ha iniciado sesión, se usan las credenciales del equipo. |
-| equipo       | Usar solo credenciales de equipo.                                                                                                                                           |
-| usuario          | Usar solo credenciales de usuario.                                                                                                                                              |
-| guest         | Usar solo credenciales de invitado (vacío).                                                                                                                                     |
+| machineOrUser | Use credenciales de equipo o usuario. Cuando un usuario ha iniciado sesión, las credenciales del usuario se usan para la autenticación. Cuando ningún usuario ha iniciado sesión, se usan las credenciales del equipo. |
+| equipo       | Use solo credenciales de máquina.                                                                                                                                           |
+| usuario          | Use solo credenciales de usuario.                                                                                                                                              |
+| guest         | Use solo credenciales de invitado (vacías).                                                                                                                                     |
 
 
 
  
 
-Este elemento es opcional. Cuando authMode no se especifica en un perfil, se usa un valor de `machineOrUser` .
+Este elemento es opcional. Cuando no se especifica authMode en un perfil, se usa `machineOrUser` un valor de .
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
 
 ``` syntax
 <xs:element name="authMode">
@@ -63,11 +63,11 @@ Este elemento es opcional. Cuando authMode no se especifica en un perfil, se usa
 </xs:element>
 ```
 
-El elemento **authMode** se define mediante el elemento [**Onex**](onexschema-onex-element.md) .
+El **elemento authMode** se define mediante el [**elemento OneX.**](onexschema-onex-element.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Este parámetro se puede establecer en la línea de comandos mediante el comando **netsh wlan set ProfileParameter** Para obtener más información, consulte [comandos Netsh para red de área local inalámbrica (WLAN)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755301(v=ws.10)).
+Este parámetro se puede establecer en la línea de comandos mediante el **comando netsh wlan set profileparameter.** Para obtener más información, [vea Netsh Commands for Wireless Local Area Network (wlan) (Comandos netsh para redes inalámbricas de área local [wlan]).](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755301(v=ws.10))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Este parámetro se puede establecer en la línea de comandos mediante el comando
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -87,13 +87,13 @@ Este parámetro se puede establecer en la línea de comandos mediante el comando
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

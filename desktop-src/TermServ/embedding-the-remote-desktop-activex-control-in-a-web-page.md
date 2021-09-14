@@ -5,12 +5,12 @@ ms.assetid: fad0f81f-bb04-4900-aeb8-0be503efa591
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8cb5fffe6bed04d99fcfac7d48f28300c3714affa3ea1df25bda27334988752
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d180c6ed95bc0f75f2f10305f00dc1d63be25e80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168802"
 ---
 # <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a>Inserción del control Escritorio remoto ActiveX en una página web
 
@@ -466,7 +466,7 @@ end sub
 
 
 
-EL CLSID es para el control ActiveX que hospeda Conexión a Escritorio remoto (RDP) 6.0. Este ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).
+El CLSID es para el control ActiveX que hospeda Conexión a Escritorio remoto (RDP) 6.0. Este ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

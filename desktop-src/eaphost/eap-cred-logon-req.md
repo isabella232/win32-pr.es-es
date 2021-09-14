@@ -6,14 +6,14 @@ keywords:
 - EAP_CRED_LOGON_REQ
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 719abbed6c16deb6d3bfd61811f3f24253181364fe89f5823ee682bafef001e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2af29daa9d68e4cd2dd78f101585c2fa14d25200
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118785628"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168442"
 ---
-# <a name="eap_cred_logon_req"></a>EAP \_ CRED \_ LOGON \_ REQ
+# <a name="eap_cred_logon_req"></a>SOLICITUD \_ DE INICIO DE SESIÓN \_ CRED \_ DE EAP
 
 La **estructura \_ \_ \_ REQ DE EAP CRED LOGON** almacena las credenciales de seguridad de EAP dentro de una estructura DE [**MATRIZ DE CAMPO DE ENTRADA DE CONFIGURACIÓN \_ \_ \_ \_ DE EAP.**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array)
 
@@ -33,9 +33,9 @@ La estructura **\_ \_ \_ REQ EAP CRED LOGON** almacena las credenciales de segur
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **estructura \_ \_ \_ REQ DE EAP CRED LOGON** se usa para admitir el inicio de sesión único (SSO).
+La **estructura \_ \_ \_ REQ EAP CRED LOGON** se usa para admitir el inicio de sesión único (SSO).
 
 La **estructura \_ \_ \_ REQ DE EAP CRED LOGON** es idéntica a la estructura [**\_ \_ \_ RESP DE EAP CRED LOGON.**](eap-cred-logon-resp.md)
 
@@ -43,15 +43,15 @@ La **estructura \_ \_ \_ REQ DE EAP CRED LOGON** es idéntica a la estructura [*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

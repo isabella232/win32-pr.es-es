@@ -1,5 +1,5 @@
 ---
-description: Crea un objeto de guardado. En desuso.
+description: Crea un objeto save. En desuso.
 ms.assetid: 50a7dbde-1dd4-4aae-a9ab-97d6f99618c0
 title: Método IDirectXFile::CreateSaveObject (DXFile.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: c3646f54b1f232c6eec3e1b3d06441a8e6a7c090f784e3c4c016f7f1bcfc3b03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 848010a1f701b39f5cc77a126272bc019ed01f4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119491855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168490"
 ---
 # <a name="idirectxfilecreatesaveobject-method"></a>IDirectXFile::CreateSaveObject (método)
 
-Crea un objeto de guardado. En desuso.
+Crea un objeto save. En desuso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Puntero al nombre del archivo que se usará para guardar datos.
 
 Tipo: **[ **DXFILEFORMAT**](dxfile.md)**
 
-Indica el formato que se usará al guardar el archivo DirectX. Este valor puede ser una de las marcas XXX de DXFILEFORMAT \_ en [constantes DXFILE](dxfile.md). Para obtener más información, vea la sección Comentarios.
+Indica el formato que se usará al guardar el archivo DirectX. Este valor puede ser una de las marcas \_ DXFILEFORMAT xxx en constantes [DXFILE](dxfile.md). Para obtener más información, vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: DXFILEERR \_ BADALLOC, DXFILEERR \_ BADFILE, DXFILEERR \_ BADVALUE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de usar este método, use métodos de la [**interfaz IDirectXFileSaveObject**](idirectxfilesaveobject.md) para crear objetos de datos y guardar plantillas o datos.
 

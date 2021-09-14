@@ -4,16 +4,16 @@ description: Reproducir Waveform-Audio archivos
 ms.assetid: 9bac8493-3304-46d5-ac4f-dac0f6fea173
 keywords:
 - audio de forma de onda, reproducir archivos
-- interfaz de audio de onda, reproducir archivos
+- interfaz de audio de forma de onda, reproducir archivos
 - reproducir archivos de audio de forma de onda, acerca de
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a5fb6b2fb67e52374351063d330ffdf392529389
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371204"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169581"
 ---
 # <a name="playing-waveform-audio-files"></a>Reproducir Waveform-Audio archivos
 

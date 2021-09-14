@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5fdff7ad1c1e129da2de930f786d995cb8eab4c9d6ba6b58847303721980ab4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85fb7759c5e235575935df642f6fa1cfd53202a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134418"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168594"
 ---
 # <a name="userlastplayedtime-attribute"></a>Atributo UserLastPlayedTime
 
@@ -30,7 +30,7 @@ El **atributo UserLastPlayedTime** es la fecha y hora en que se ha reproducido e
 -   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

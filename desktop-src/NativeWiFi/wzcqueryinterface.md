@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Wzcsapi.dll
-ms.openlocfilehash: 3dd7ce876501486b9bec4dbad63ce5812b910b32b9dcdaa1eb80aff3e7cc415e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36457eebf5c38b32bb46eb8cfa44cae104f1bc6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117797415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169386"
 ---
 # <a name="wzcqueryinterface-function"></a>Función WZCQueryInterface
 
@@ -62,11 +62,11 @@ Campos que se consultarán. Se trata de una máscara de bits que puede contener 
 
 
 
-| Valor                                                                                                                                                                                                                                     | Significado                                                                                                                                                                                                                                                    |
+| Value                                                                                                                                                                                                                                     | Significado                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="INTF_DYNFLAGS"></span><span id="intf_dynflags"></span><dl> <dt>**INTF \_ DYNFLAGS**</dt> <dt>0x00000010</dt> </dl>             | Devuelve el valor del **miembro dwDynFlags** en la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta el *parámetro pIntf.*<br/>                                                                                                          |
 | <span id="INTF_DESCR"></span><span id="intf_descr"></span><dl> <dt>**INTF \_ DESCR**</dt> <dt>0x00010000</dt> </dl>                      | Devuelve el valor del **miembro wszDescr** en la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta el *parámetro pIntf.*<br/>                                                                                                            |
-| <span id="INTF_NDISMEDIA"></span><span id="intf_ndismedia"></span><dl> <dt>**INTF \_ NDISMEDIA**</dt> <dt>0x00020000</dt> </dl>          | Devuelve los valores de los **miembros ulMediaState**, **ulMediaType** y **ulPhysicalMediaType** de la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta *el parámetro pIntf.*<br/>                                                        |
+| <span id="INTF_NDISMEDIA"></span><span id="intf_ndismedia"></span><dl> <dt>**INTF \_ NDISMEDIA**</dt> <dt>0x00020000</dt> </dl>          | Devuelve los valores de los miembros **ulMediaState**, **ulMediaType** y **ulPhysicalMediaType** de la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta *el parámetro pIntf.*<br/>                                                        |
 | <span id="INTF_PREFLIST"></span><span id="intf_preflist"></span><dl> <dt>**INTF \_ PreFLIST**</dt> <dt>0x00040000</dt> </dl>             | Devuelve la lista preferida de redes en el **miembro rdStSSIDList** de la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta el *parámetro pIntf.*<br/>                                                                                    |
 | <span id="INTF_CAPABILITIES"></span><span id="intf_capabilities"></span><dl> <dt>**INTF \_ FUNCIONALIDADES**</dt> <dt>0x00080000</dt> </dl> | Devuelve los valores de los **miembros dwCapabilities** y **rdNicCapabilities** de la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta el *parámetro pIntf.*<br/>                                                                      |
 | <span id="INTF_INFRAMODE"></span><span id="intf_inframode"></span><dl> <dt>**INTF \_ Inframode**</dt> <dt>0x00200000</dt> </dl>          | Devuelve el valor del **miembro nInfraMode** en la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta el *parámetro pIntf.*<br/> El **miembro nInfraMode** solo es válido en algunos estados de contexto de interfaz.<br/>                     |
@@ -116,7 +116,7 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **miembro wszGuid** de la estructura [**INTF \_ ENTRY**](intf-entry.md) a la que apunta el parámetro *pIntf* debe contener un GUID de interfaz para una interfaz LAN inalámbrica. Se puede recuperar una lista de interfaces LAN inalámbricas mediante una llamada a la [**función WZCEnumInterfaces.**](wzcenuminterfaces.md)
 
@@ -137,19 +137,19 @@ Si la función **WZCQueryInterface** devuelve ERROR SUCCESS, el autor de la llam
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP con SP3<br/>                                                         |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
-| Header<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Wzcsapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wzcsapi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

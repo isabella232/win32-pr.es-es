@@ -4,12 +4,12 @@ ms.assetid: 46452909-ac0e-4c06-8542-0b94d00e6556
 title: WM_POWERBROADCAST mensaje (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38b57a6c21aeae03a8b42deb8af10d5ce88e96f92a33b632d71285fa4c0c986a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b205a146b731bdf8cf9adc1563621232c24c10b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169110"
 ---
 # <a name="wm_powerbroadcast-message"></a>Mensaje \_ DE WM POWERBROADCAST
 
@@ -36,7 +36,7 @@ LRESULT CALLBACK WindowProc(
 *Hwnd* 
 </dt> <dd>
 
-Identificador a ventana.
+Identificador de la ventana.
 
 </dd> <dt>
   
@@ -64,7 +64,7 @@ Evento de administración de energía. Este parámetro puede ser uno de los sigu
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="PBT_APMPOWERSTATUSCHANGE"></span><span id="pbt_apmpowerstatuschange"></span><dl> <dt>**[PBT \_ APMPOWERSTATUSCHANGE](pbt-apmpowerstatuschange.md)**</dt> <dt>10 (0xA)</dt> </dl> | El estado de energía ha cambiado.<br/>                                                                                                                                                                        |
 | <span id="PBT_APMRESUMEAUTOMATIC"></span><span id="pbt_apmresumeautomatic"></span><dl> <dt>**[PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md)**</dt> <dt>18 (0x12)</dt> </dl>        | La operación se reanuda automáticamente desde un estado de bajo consumo. Este mensaje se envía cada vez que se reanuda el sistema.<br/>                                                                                  |
-| <span id="PBT_APMRESUMESUSPEND"></span><span id="pbt_apmresumesuspend"></span><dl> <dt>**[PBT \_ APMRESUMESUSPEND](pbt-apmresumesuspend.md)**</dt> <dt>7 (0x7)</dt> </dl>                  | La operación se reanuda desde un estado de bajo consumo. Este mensaje se envía después de [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) si la reanudación se desencadena mediante la entrada del usuario, como presionar una tecla.<br/> |
+| <span id="PBT_APMRESUMESUSPEND"></span><span id="pbt_apmresumesuspend"></span><dl> <dt>**[PBT \_ APMRESUMESUSPEND](pbt-apmresumesuspend.md)**</dt> <dt>7 (0x7)</dt> </dl>                  | La operación se reanuda desde un estado de bajo consumo. Este mensaje se envía después de [ \_ PBT APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) si la reanudación se desencadena mediante la entrada del usuario, como presionar una tecla.<br/> |
 | <span id="PBT_APMSUSPEND"></span><span id="pbt_apmsuspend"></span><dl> <dt>**[PBT \_ APMSUSPEND](pbt-apmsuspend.md)**</dt> <dt>4 (0x4)</dt> </dl>                                          | El sistema suspende la operación.<br/>                                                                                                                                                                  |
 | <span id="PBT_POWERSETTINGCHANGE"></span><span id="pbt_powersettingchange"></span><dl> <dt>**[PBT \_ POWERSETTINGCHANGE](pbt-powersettingchange.md)**</dt> <dt>32787 (0x8013)</dt> </dl>   | Se ha recibido un evento de cambio de configuración de energía. <br/>                                                                                                                                                 |
 
@@ -79,7 +79,7 @@ Evento de administración de energía. Este parámetro puede ser uno de los sigu
 
 Datos específicos del evento. Para la mayoría de los eventos, este parámetro está reservado y no se usa.
 
-Si el *parámetro wParam* es [PBT \_ POWERSETTINGCHANGE](pbt-powersettingchange.md), el parámetro *lParam* es un puntero a una [**estructura DE CONFIGURACIÓN DE POWERBROADCAST. \_**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
+Si el *parámetro wParam* es [PBT \_ POWERSETTINGCHANGE,](pbt-powersettingchange.md)el parámetro *lParam* es un puntero a una [**estructura SETTING DE POWERBROADCAST. \_**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Si el *parámetro wParam* es [PBT \_ POWERSETTINGCHANGE](pbt-powersettingchange.
 
 Una aplicación debe devolver **TRUE** si procesa este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El sistema siempre envía un mensaje [ \_ PBT APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) cada vez que se reanuda el sistema. Si el sistema se reanuda en respuesta a la entrada del usuario, como presionar una tecla, el sistema también envía un mensaje **\_ PBT APMRESUMESUSPEND** después de enviar PBT \_ APMRESUMEAUTOMATIC.
 
@@ -108,9 +108,9 @@ Los mensajes siguientes no se admiten en ninguno de los sistemas operativos espe
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                              |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 

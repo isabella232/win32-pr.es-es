@@ -3,7 +3,7 @@ title: Función ProcessIsolineTessFactors
 description: Genera los factores de teselación redondeados para una isolínea.
 ms.assetid: 0816b3e0-cb03-4a7a-9732-e84c637b3d48
 keywords:
-- Función HLSL de ProcessIsolineTessFactors
+- Función ProcessIsolineTessFactors HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34c6f4d579ee7fbaee9416d7a607e3856a7793021cca7149723d3d6e5a2b4a49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10da0e5bf0f2138c57da3fcfe962bc6a88800068
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168466"
 ---
 # <a name="processisolinetessfactors-function"></a>Función ProcessIsolineTessFactors
 
@@ -71,7 +71,7 @@ Factor de detalle redondeado que se fija a un intervalo que puede usar el tesela
 
 Tipo: **float**
 
-Factor de densidad redondeado que se fija a un intervalo que puede usar el teselador.
+Factor de densidad redondeado con fijación a un intervalo que puede usar el teselador.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Factor de densidad redondeado que se fija a un intervalo que puede usar el tesel
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -89,7 +89,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | sí       |
 
 
 
@@ -99,7 +99,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
@@ -114,7 +114,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

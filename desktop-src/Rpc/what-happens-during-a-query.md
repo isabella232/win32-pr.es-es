@@ -1,17 +1,17 @@
 ---
-title: Qué ocurre durante una consulta
+title: ¿Qué ocurre durante una consulta?
 description: En esta sección se describe cómo la red controla la consulta cuando un cliente de 32 bits busca un nombre en su propio dominio.
 ms.assetid: a8a88743-a245-4258-af05-9261c214ab50
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7377df4ced562bc166fedbf489724a2a4a042855391db45841b5de5cf5af906
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6e26fb9aaef0aac2ff66260d51f756725566dee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169013"
 ---
-# <a name="what-happens-during-a-query"></a>Qué ocurre durante una consulta
+# <a name="what-happens-during-a-query"></a>¿Qué ocurre durante una consulta?
 
 En esta sección se describe cómo la red controla la consulta cuando un cliente de 32 bits busca un nombre en su propio dominio.
 

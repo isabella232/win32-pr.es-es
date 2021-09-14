@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c7c6635f4c7c4e6f82aa9c001fd60c7a4bbdc30b0b9b5878d320c77a1f2f1531
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a0714931860cf8dcce767995f9766bb5440743e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118484991"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168337"
 ---
 # <a name="systemparametersenablefilecache-property"></a>Propiedad SystemParameters.EnableFileCache
 
@@ -40,7 +40,7 @@ Obtiene o establece un valor que indica si el motor de base de datos debe usar l
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -63,7 +63,7 @@ public static bool EnableFileCache { get; set; }
 
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,19 +1,19 @@
 ---
 title: Requisitos para las funciones de administración de redes en Dominio de Active Directory controladores
-description: Si llama a una de las funciones de administración de red enumeradas en este tema en un controlador de dominio que ejecuta Active Directory, se permite o se deniega el acceso a un objeto protegible en función de la lista de control de acceso (ACL) del objeto.
+description: Si llama a una de las funciones de administración de red enumeradas en este tema en un controlador de dominio que ejecuta Active Directory, se permite o deniega el acceso a un objeto protegible en función de la lista de control de acceso (ACL) del objeto.
 ms.assetid: 4dfb3180-3ca5-4e22-b7a1-4e6b132431fb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67326708e2b3c83d1e41ace30c2813ccd2449193530fd4affca450d8a0538961
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8c6b646290ef6352a529a37243a6ea30c8b0d39
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117983264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169350"
 ---
 # <a name="requirements-for-network-management-functions-on-active-directory-domain-controllers"></a>Requisitos para las funciones de administración de redes en Dominio de Active Directory controladores
 
-Si llama [a](/windows/desktop/SecAuthZ/securable-objects) una de las funciones de administración de red enumeradas en este tema en un controlador de dominio que ejecuta Active Directory, se permite o deniega el acceso a un objeto protegible en función de la lista de [control](/windows/desktop/SecAuthZ/access-control-lists) de acceso (ACL) del objeto. (Las ACL se especifican en el directorio).
+Si llama [a](/windows/desktop/SecAuthZ/securable-objects) una de las funciones de administración de red enumeradas en este tema en un controlador de dominio que ejecuta Active Directory, se permite o se deniega el acceso a un objeto protegible en función de la lista de [control](/windows/desktop/SecAuthZ/access-control-lists) de acceso (ACL) del objeto. (Las ACL se especifican en el directorio).
 
 Se aplican distintos requisitos de acceso a las consultas de información y a las actualizaciones de información.
 

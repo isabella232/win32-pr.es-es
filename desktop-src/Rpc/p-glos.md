@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 3cee5b7a-535d-4a35-8ed1-7cadb479e76c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b9b7d0ff9854bb961301dafed88391b8cd89a25110c55a1e906eff9c530559c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 132e38076ff2150bb0f0b0cfecaf5533e3191b37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169054"
 ---
 # <a name="p-rpc"></a>P (RPC)
 
@@ -35,7 +35,7 @@ Vea [*serialización*](s-glos.md).
 <span id="_rpc_pipe_glos"></span><span id="_RPC_PIPE_GLOS"></span>**Pipa**
 </dt> <dd>
 
-Constructor de tipo [*IDL*](i-glos.md)que admite la transmisión de un flujo de datos de tipo abierto entre aplicaciones cliente y servidor.
+Constructor de tipo [*IDL*](i-glos.md)que admite la transmisión de un flujo de datos de final abierto entre aplicaciones cliente y servidor.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Base de datos de Message Queue Information Service (MQIS) para un sitio determin
 <span id="_rpc_procedure_serialization_glos"></span><span id="_RPC_PROCEDURE_SERIALIZATION_GLOS"></span>**serialización de procedimientos**
 </dt> <dd>
 
-Serialización [*de datos*](s-glos.md) que usa un código auxiliar de serialización generado por MIDL para realizar la codificación y la codificación de uno o varios tipos con una sola llamada a procedimiento. La serialización de procedimientos se realiza aplicando los atributos de codificación y descodificación a un prototipo de función \[ [](/windows/desktop/Midl/encode) \] en el archivo \[ [](/windows/desktop/Midl/decode) \] ACF. Consulte también [*serialización de tipos.*](t-glos.md)
+Serialización [*de datos*](s-glos.md) que usa un código auxiliar de serialización generado por MIDL para realizar la codificación y la codificación de uno o varios tipos con una sola llamada a procedimiento. La serialización de procedimientos se realiza aplicando los atributos de codificación y descodificación a un prototipo de \[ [](/windows/desktop/Midl/encode) \] función en \[ [](/windows/desktop/Midl/decode) \] el archivo ACF. Consulte también [*serialización de tipos.*](t-glos.md)
 
 </dd> <dt>
 

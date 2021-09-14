@@ -3,19 +3,19 @@ title: Uso de identificadores de contexto
 description: Esta sección hace referencia a Windows 2000 y Windows XP.
 ms.assetid: a1f0408c-7739-4fca-b9b2-f045dad0c392
 keywords:
-- Llamada a procedimiento remoto RPC, procedimientos recomendados, uso de identificadores de contexto
+- Llamada a procedimiento remoto RPC, procedimientos recomendados, mediante identificadores de contexto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b11fff47b99e784b1669e5ea026f7dba4967c976cbe11aad8c02cb40d34fd820
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e757014599924a4085802345cf6a72e797f17ed2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169042"
 ---
 # <a name="using-context-handles"></a>Uso de identificadores de contexto
 
-Esta sección hace referencia a Windows 2000 y Windows XP. En algunos casos, la información solo Windows XP; estos casos se anotan como tales. La información de esta sección se divide en los temas siguientes:
+Esta sección hace referencia a Windows 2000 y Windows XP. En algunos casos, la información solo Windows XP; esos casos se anotan como tales. La información de esta sección se divide en los temas siguientes:
 
 -   [Mantener el estado en el servidor entre llamadas](maintaining-state-on-the-server-between-calls.md)
 -   [Descargar un servidor con identificadores de contexto pendientes](unloading-a-server-with-outstanding-context-handles.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración ResizeDatabaseGrbit'
-title: Enumeración ResizeDatabaseGrbit (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Enumeración ResizeDatabaseGrbit'
+title: Enumeración ResizeDatabaseGrbit (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: ResizeDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.ResizeDatabaseGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.resizedatabasegrbit(v=EXCHG.10)
@@ -29,20 +29,20 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 51d703f96882136e2b88f1a2df37609573c725e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168373"
 ---
-# <a name="resizedatabasegrbit-enumeration"></a>Enumeración ResizeDatabaseGrbit
+# <a name="resizedatabasegrbit-enumeration"></a>ResizeDatabaseGrbit (enumeración)
 
-Opciones para [JetResizeDatabase (JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit)](./windows8api.jetresizedatabase-method.md).
+Opciones de [JetResizeDatabase(JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit)](./windows8api.jetresizedatabase-method.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Dim instance As ResizeDatabaseGrbit
 public enum ResizeDatabaseGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -78,7 +78,7 @@ public enum ResizeDatabaseGrbit
 <tr class="even">
 <td></td>
 <td>OnlyGrow</td>
-<td>Crezca solo la base de datos. Si la llamada de cambiar tamaño reduciría la base de datos, no haga nada.</td>
+<td>Aumentar solo la base de datos. Si la llamada de cambio de tamaño reduciría la base de datos, no haga nada.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum ResizeDatabaseGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

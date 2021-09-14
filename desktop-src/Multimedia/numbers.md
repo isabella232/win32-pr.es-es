@@ -7,7 +7,7 @@ keywords:
 - mezcladores de audio, números
 - mezcladores, controles
 - mezcladores, números
-- controles number
+- controles de número
 - MIXERCONTROLDETAILS_SIGNED estructura
 - MIXERCONTROLDETAILS_UNSIGNED estructura
 - control decibel
@@ -17,11 +17,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f02c4ffd40f1058fae51af3798135840394be918
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169650"
 ---
 # <a name="numbers-windows-multimedia"></a>Números (Windows Multimedia)
 
@@ -33,7 +33,7 @@ Los controles de número permiten al usuario escribir datos numéricos asociados
 |----------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Firmado   | Permite valores enteros especificados en el intervalo de – 231 a (231 –1).                                                               |
 | Sin signo | Permite valores enteros especificados en el intervalo de 0 a (232 –1).                                                                   |
-| Decibelio  | Permite especificar valores de decibelios enteros, en décimas de decibelios. El intervalo de valores de este control es de -32 768 a 32 767. |
+| Decibelio  | Permite especificar valores de decibelios enteros, en décimas de decibelios. El intervalo de valores de este control es de -32.768 a 32.767. |
 | Percent  | Permite especificar valores como porcentajes.                                                                                         |
 
 

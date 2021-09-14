@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf1a9e4099740b46b8a773bf6a96b0d7e955505330c36db398960eca226ec824
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc8128c2b991f978cbece2d3bc37e851611d3420
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168645"
 ---
 # <a name="itsremoteprogram3-interface"></a>Interfaz ITSRemoteProgram3
 
 Define propiedades y métodos para su uso con RemoteApp.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ITSRemoteProgram3** hereda de **ITSRemoteProgram2.** **ITSRemoteProgram3** también tiene estos tipos de miembros:
 
@@ -51,7 +51,7 @@ La **interfaz ITSRemoteProgram3** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                         |

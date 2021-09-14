@@ -38,12 +38,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f56b403bb5fd754e95786c2a1d4012ccbbacd3e103b1ee02fbf290ff05d30d3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46129dc4736b50e8b6a650cc7a59f9b238da56e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117942047"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168794"
 ---
 # <a name="imsrdpclient5msrdpclientshell-property"></a>Propiedad IMsRdpClient5::MsRdpClientShell
 
@@ -70,7 +70,7 @@ Puntero [**de interfaz IMsRdpClientShell.**](imsrdpclientshell.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -80,7 +80,7 @@ Puntero [**de interfaz IMsRdpClientShell.**](imsrdpclientshell.md)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

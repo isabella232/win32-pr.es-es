@@ -4,12 +4,12 @@ ms.assetid: 055458cf-9fc7-4a16-be14-1122b3cf0251
 title: Acerca de los procesos y subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62cbce9375d3c27fd58d6bab48c11fe2bdb825dfc729c2176dd2f14eba0a958e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 650eab4421971bdc08e71c031aec433ed84471bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169105"
 ---
 # <a name="about-processes-and-threads"></a>Acerca de los procesos y subprocesos
 
@@ -17,7 +17,7 @@ Cada *proceso* proporciona los recursos necesarios para ejecutar un programa. Un
 
 Un *subproceso* es la entidad dentro de un proceso que se puede programar para su ejecución. Todos los subprocesos de un proceso comparten su espacio de direcciones virtuales y los recursos del sistema. Además, cada subproceso mantiene controladores de excepciones, una prioridad de programación, almacenamiento local de subprocesos, un identificador de subproceso único y un conjunto de estructuras que el sistema usará para guardar el contexto del subproceso hasta que se programe. El *contexto del subproceso* incluye el conjunto de registros de máquina del subproceso, la pila de kernel, un bloque de entorno de subproceso y una pila de usuario en el espacio de direcciones del proceso del subproceso. Los subprocesos también pueden tener su propio contexto de seguridad, que se puede usar para suplantar a los clientes.
 
-Microsoft Windows admite *la multitarea* preferente, lo que crea el efecto de la ejecución simultánea de varios subprocesos de varios procesos. En un equipo con varios procesadores, el sistema puede ejecutar simultáneamente tantos subprocesos como haya procesadores en el equipo.
+Microsoft Windows admite *la multitarea* preferente, lo que crea el efecto de la ejecución simultánea de varios subprocesos de varios procesos. En un equipo multiprocesador, el sistema puede ejecutar simultáneamente tantos subprocesos como haya procesadores en el equipo.
 
 Un *objeto de trabajo* permite administrar grupos de procesos como una unidad. Los objetos de trabajo son objetos utilizables, protegibles y compartibles que controlan los atributos de los procesos asociados a ellos. Las operaciones realizadas en el objeto de trabajo afectan a todos los procesos asociados al objeto de trabajo.
 

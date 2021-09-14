@@ -11,18 +11,18 @@ keywords:
 - Posiciones de trama
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2354264ed5ad022c0657c95a31007ad33df2882d3c9ab2c44cfafeea99b53d4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dd7e7cbbaf0a22385c83569775758e24f70cd210
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119485795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169206"
 ---
 # <a name="port-code-that-needs-a-current-graphics-position"></a>Código de puerto que necesita una posición de gráficos actual
 
 OpenGL no mantiene una posición de gráficos actual. Las funciones GL de IRIS que dependen de la posición de gráficos actual, como mover **,** dibujar y **rmv,** no tienen equivalentes en OpenGL.
 
-Las versiones anteriores de IRIS GL incluían comandos de dibujo que se basaban en la posición de gráficos actual, aunque no se ha desaconsejado su uso. Tendrá que volver a escribir el código si se ha basado en la posición actual de los gráficos de cualquier manera, o si ha usado cualquiera de las rutinas siguientes:
+Las versiones anteriores de IRIS GL incluían comandos de dibujo que se basaban en la posición de gráficos actual, aunque se ha desaconsejado su uso. Tendrá que volver a escribir el código si se ha basado en la posición actual de los gráficos de cualquier manera, o si ha usado cualquiera de las rutinas siguientes:
 
 -   **dibujar** y **mover**
 -   **pmv,** **pdr** y **pclos**

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a4889f0292cf9e97b74db5c1d35f2bc8242acdadb608db2404bda5dcff1a62b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7c430358b5ba7f66c5a79b08ae01925141e659f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118296148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168522"
 ---
 # <a name="id3dxcompressedanimationsetgetcallbackkeys-method"></a>Método ID3DXCompressedAnimationSet::GetCallbackKeys
 
@@ -45,7 +45,7 @@ HRESULT GetCallbackKeys(
 
 Tipo: **[ **LPD3DXKEY \_ CALLBACK**](d3dxkey-callback.md)**
 
-Puntero a una matriz asignada por el usuario de estructuras de devolución de llamada [**D3DXKEY \_**](d3dxkey-callback.md) que el método va a rellenar con datos de devolución de llamada.
+Puntero a una matriz asignada por el usuario de estructuras [**D3DXKEY \_ CALLBACK**](d3dxkey-callback.md) que el método va a rellenar con datos de devolución de llamada.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a una matriz asignada por el usuario de estructuras de devolución de ll
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

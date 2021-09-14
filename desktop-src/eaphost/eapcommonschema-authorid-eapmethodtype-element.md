@@ -3,7 +3,7 @@ title: Elemento AuthorId (EapMethodType)
 description: Obtenga información sobre el elemento AuthorId (EapMethodType). El elemento AuthorID (EapMethodType) hace referencia al autor del método.
 ms.assetid: 1eb16a50-25b8-4883-b9ff-fde329d8dd81
 keywords:
-- Elemento AuthorId EAPHost
+- Elemento EAPHost de AuthorId
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f15c5fc981592bb82f9ad52d590f12ac0b1f4b20af3537a511d01dd0a8cc15e4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1c9a756d8ad1fc88154d3d99d4304de6dd50166b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120021755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168441"
 ---
 # <a name="authorid-eapmethodtype-element"></a>Elemento AuthorId (EapMethodType)
 
@@ -35,7 +35,7 @@ AuthorId es un número único emitido por internet Assigned Numbers Authority (I
 
 El tipo complejo [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) define el elemento **AuthorId.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los **elementos AuthorId** y [**VendorId**](eapcommonschema-vendorid-eapmethodtype-element.md) no necesitan ser iguales para un método determinado.
 
@@ -43,9 +43,9 @@ Los **elementos AuthorId** y [**VendorId**](eapcommonschema-vendorid-eapmethodty
 
 
 
-| Rol | Versión mínima admitida del sistema operativo |
+| Role | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 

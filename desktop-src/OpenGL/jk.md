@@ -7,12 +7,12 @@ keywords:
 - japones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2c71773d538b3da755a9a2682355b5b5012cea5d608c31c0291e46b11f442bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d9c898697d13b5a6e59e44ded64ad17d6e217bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169209"
 ---
 # <a name="j-k"></a>J K
 

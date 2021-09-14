@@ -6,11 +6,11 @@ ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
 ms.openlocfilehash: 5da0a0e6f9ad3b0559fdf2d8e375e6d25e7d2fdf
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168949"
 ---
 # <a name="privilege-constants-authorization"></a>Constantes de privilegios (autorización)
 
@@ -66,14 +66,14 @@ Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-cla
 | <span id="SE_PROF_SINGLE_PROCESS_NAME"></span><span id="se_prof_single_process_name"></span><dl><dt><strong>SE_PROF_SINGLE_PROCESS_NAME</strong></dt><dt>TEXT("SeProfileSingleProcessPrivilege")</dt></dl> | Necesario para recopilar información de generación de perfiles para un único proceso. <br /> Derecho de usuario: perfil de proceso único.<br /> | 
 | <span id="SE_RELABEL_NAME"></span><span id="se_relabel_name"></span><dl><dt><strong>SE_RELABEL_NAME</strong></dt><dt>TEXT("SeRelabelPrivilege")</dt></dl> | Necesario para modificar el nivel de integridad obligatorio de un objeto .<br /> Derecho de usuario: modifique una etiqueta de objeto.<br /> | 
 | <span id="SE_REMOTE_SHUTDOWN_NAME"></span><span id="se_remote_shutdown_name"></span><dl><dt><strong>SE_REMOTE_SHUTDOWN_NAME</strong></dt><dt>TEXT("SeRemoteShutdownPrivilege")</dt></dl> | Necesario para apagar un sistema mediante una solicitud de red. <br /> Derecho de usuario: forzar el apagado desde un sistema remoto.<br /> | 
-| <span id="SE_RESTORE_NAME"></span><span id="se_restore_name"></span><dl><dt><strong>SE_RESTORE_NAME</strong></dt><dt>TEXT("SeRestorePrivilege")</dt></dl> | Necesario para realizar operaciones de restauración. Este privilegio hace que el sistema conceda todo el control de acceso de escritura a cualquier archivo, independientemente de la ACL especificada para el archivo. Cualquier solicitud de acceso que no sea de escritura se sigue evaluando con la ACL. Además, este privilegio le permite establecer cualquier SID de grupo o usuario válido como propietario de un archivo. La función <a href="/windows/desktop/api/winreg/nf-winreg-regloadkeya"><strong>RegLoadKey</strong></a> requiere este privilegio. Si se mantiene este privilegio, se conceden los siguientes derechos de acceso:<br /><ul><li>WRITE_DAC</li><li>WRITE_OWNER</li><li>ACCESS_SYSTEM_SECURITY</li><li>FILE_GENERIC_WRITE</li><li>FILE_ADD_FILE</li><li>FILE_ADD_SUBDIRECTORY</li><li>Delete</li></ul>Derecho de usuario: restaure archivos y directorios.<br />Si el archivo se encuentra en una unidad extraíble y la opción "Auditar Storage extraíble" está habilitada, el SE_SECURITY_NAME debe tener ACCESS_SYSTEM_SECURITY.<br /> | 
+| <span id="SE_RESTORE_NAME"></span><span id="se_restore_name"></span><dl><dt><strong>SE_RESTORE_NAME</strong></dt><dt>TEXT("SeRestorePrivilege")</dt></dl> | Necesario para realizar operaciones de restauración. Este privilegio hace que el sistema conceda todo el control de acceso de escritura a cualquier archivo, independientemente de la ACL especificada para el archivo. Cualquier solicitud de acceso que no sea de escritura se sigue evaluando con la ACL. Además, este privilegio le permite establecer cualquier SID de grupo o usuario válido como propietario de un archivo. La función <a href="/windows/desktop/api/winreg/nf-winreg-regloadkeya"><strong>RegLoadKey</strong></a> requiere este privilegio. Si se mantiene este privilegio, se conceden los siguientes derechos de acceso:<br /><ul><li>WRITE_DAC</li><li>WRITE_OWNER</li><li>ACCESS_SYSTEM_SECURITY</li><li>FILE_GENERIC_WRITE</li><li>FILE_ADD_FILE</li><li>FILE_ADD_SUBDIRECTORY</li><li>DELETE</li></ul>Derecho de usuario: restaurar archivos y directorios.<br />Si el archivo se encuentra en una unidad extraíble y la opción "Auditar Storage extraíble" está habilitada, el SE_SECURITY_NAME debe tener ACCESS_SYSTEM_SECURITY.<br /> | 
 | <span id="SE_SECURITY_NAME"></span><span id="se_security_name"></span><dl><dt><strong>SE_SECURITY_NAME</strong></dt><dt>TEXT("SeSecurityPrivilege")</dt></dl> | Necesario para realizar una serie de funciones relacionadas con la seguridad, como controlar y ver mensajes de auditoría. Este privilegio identifica a su titular como operador de seguridad. <br /> Derecho de usuario: administre el registro de auditoría y seguridad.<br /> | 
 | <span id="SE_SHUTDOWN_NAME"></span><span id="se_shutdown_name"></span><dl><dt><strong>SE_SHUTDOWN_NAME</strong></dt><dt>TEXT("SeShutdownPrivilege")</dt></dl> | Necesario para apagar un sistema local. <br /> Derecho de usuario: apague el sistema.<br /> | 
 | <span id="SE_SYNC_AGENT_NAME"></span><span id="se_sync_agent_name"></span><dl><dt><strong>SE_SYNC_AGENT_NAME</strong></dt><dt>TEXT("SeSyncAgentPrivilege")</dt></dl> | Necesario para que un controlador de dominio use los <a href="/windows/desktop/SecGloss/l-gly"><em>servicios ligeros de sincronización de directorios del Protocolo</em></a> ligero de acceso a directorios. Este privilegio permite que el titular lea todos los objetos y propiedades del directorio, independientemente de la protección de los objetos y propiedades. De forma predeterminada, se asigna a las cuentas Administrador y LocalSystem en controladores de dominio. <br /> Derecho de usuario: sincronice los datos del servicio de directorio.<br /> | 
 | <span id="SE_SYSTEM_ENVIRONMENT_NAME"></span><span id="se_system_environment_name"></span><dl><dt><strong>SE_SYSTEM_ENVIRONMENT_NAME</strong></dt><dt>TEXT("SeSystemEnvironmentPrivilege")</dt></dl> | Necesario para modificar la RAM no volátil de los sistemas que usan este tipo de memoria para almacenar información de configuración. <br /> Derecho de usuario: modifique los valores del entorno de firmware.<br /> | 
 | <span id="SE_SYSTEM_PROFILE_NAME"></span><span id="se_system_profile_name"></span><dl><dt><strong>SE_SYSTEM_PROFILE_NAME</strong></dt><dt>TEXT("SeSystemProfilePrivilege")</dt></dl> | Necesario para recopilar información de generación de perfiles para todo el sistema. <br /> Derecho de usuario: rendimiento del sistema de perfiles.<br /> | 
 | <span id="SE_SYSTEMTIME_NAME"></span><span id="se_systemtime_name"></span><dl><dt><strong>SE_SYSTEMTIME_NAME</strong></dt><dt>TEXT("SeSystemtimePrivilege")</dt></dl> | Necesario para modificar la hora del sistema. <br /> Derecho de usuario: cambie la hora del sistema.<br /> | 
-| <span id="SE_TAKE_OWNERSHIP_NAME"></span><span id="se_take_ownership_name"></span><dl><dt><strong>SE_TAKE_OWNERSHIP_NAME</strong></dt><dt>TEXT("SeTakeOwnershipPrivilege")</dt></dl> | Necesario para tomar posesión de un objeto sin que se le conceda acceso discrecional. Este privilegio permite establecer el valor de propietario solo en los valores que el titular puede asignar legítimamente como propietario de un objeto. <br /> Derecho de usuario: tome posesión de archivos u otros objetos.<br /> | 
+| <span id="SE_TAKE_OWNERSHIP_NAME"></span><span id="se_take_ownership_name"></span><dl><dt><strong>SE_TAKE_OWNERSHIP_NAME</strong></dt><dt>TEXT("SeTakeOwnershipPrivilege")</dt></dl> | Necesario para tomar posesión de un objeto sin que se le conceda acceso discrecional. Este privilegio permite establecer el valor del propietario solo en los valores que el titular puede asignar legítimamente como propietario de un objeto. <br /> Derecho de usuario: tome posesión de archivos u otros objetos.<br /> | 
 | <span id="SE_TCB_NAME"></span><span id="se_tcb_name"></span><dl><dt><strong>SE_TCB_NAME</strong></dt><dt>TEXT("SeTcbPrivilege")</dt></dl> | Este privilegio identifica a su titular como parte de la base de equipos de confianza. A algunos subsistemas protegidos de confianza se les concede este privilegio. <br /> Derecho de usuario: actúa como parte del sistema operativo.<br /> | 
 | <span id="SE_TIME_ZONE_NAME"></span><span id="se_time_zone_name"></span><dl><dt><strong>SE_TIME_ZONE_NAME</strong></dt><dt>TEXT("SeTimeZonePrivilege")</dt></dl> | Necesario para ajustar la zona horaria asociada al reloj interno del equipo.<br /> Derecho de usuario: cambie la zona horaria.<br /> | 
 | <span id="SE_TRUSTED_CREDMAN_ACCESS_NAME"></span><span id="se_trusted_credman_access_name"></span><dl><dt><strong>SE_TRUSTED_CREDMAN_ACCESS_NAME</strong></dt><dt>TEXT("SeTrustedCredManAccessPrivilege")</dt></dl> | Necesario para acceder a Administrador de credenciales como llamador de confianza.<br /> Derecho de usuario: acceda Administrador de credenciales como llamador de confianza.<br /> | 
@@ -83,7 +83,7 @@ Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-cla
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las constantes de privilegios se definen como cadenas en Winnt.h. Por ejemplo, la SE \_ AUDIT NAME se define como \_ "SeAuditPrivilege".
 
@@ -91,7 +91,7 @@ Las constantes de privilegios se definen como cadenas en Winnt.h. Por ejemplo, l
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
@@ -99,7 +99,7 @@ Las constantes de privilegios se definen como cadenas en Winnt.h. Por ejemplo, l
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

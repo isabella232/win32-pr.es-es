@@ -4,7 +4,7 @@ description: Estadísticas relacionadas con amenazas.
 ms.assetid: 78B7E2A8-1BB4-4610-8E90-1F8ECBE740A8
 keywords:
 - MPTHREAT_STATS estructura heredada de Windows environment
-- PMPTHREAT_STATS puntero de estructura heredados Windows environment features
+- PMPTHREAT_STATS puntero de estructura heredado Windows environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7671b45dc09c8aca494ad270aa69fc386ef3d7c03d5144fdc3e89b4f657bb07b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21a2eef7acde5fbeac2cf9951dfad3e6923ccea2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118975945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168297"
 ---
 # <a name="mpthreat_stats-structure"></a>Estructura DE \_ ESTADÍSTICAS DE MPTHREAT
 
@@ -39,7 +39,7 @@ typedef struct tagMPTHREAT_STATS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Campos reservados para uso futuro.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

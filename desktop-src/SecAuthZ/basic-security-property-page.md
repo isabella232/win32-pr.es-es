@@ -4,12 +4,12 @@ ms.assetid: 6623fe7e-e91d-49c7-9ad0-7791c178d12b
 title: Página de propiedades Seguridad básica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a8628b0b096e24a3a7baef94f5ab9913c2cd89825bb15bf6b19d18cd81d1033
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f839058d8cd9c9a4c9d1a20dab96620d1e731d23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117783712"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168978"
 ---
 # <a name="basic-security-property-page"></a>Página de propiedades Seguridad básica
 

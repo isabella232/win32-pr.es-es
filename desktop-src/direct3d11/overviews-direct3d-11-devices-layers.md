@@ -4,12 +4,12 @@ description: El entorno de ejecución de Direct3D 11 se construye con capas, emp
 ms.assetid: c545983c-5351-42a9-82e5-deea73aa035f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f59d0405d53526b8fb0b93e52fd1a53b5c17839f6c58df919bac335b21ad2477
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb05658860e678e8020392cb046a634e3b03c7c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124370"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168530"
 ---
 # <a name="software-layers"></a>Capas de software
 
@@ -33,7 +33,7 @@ La capa principal existe de forma predeterminada; proporcionar una asignación m
 
 La capa de depuración proporciona una amplia validación adicional de parámetros y coherencia (como validar la vinculación del sombreador y el enlace de recursos, validar la coherencia de los parámetros y notificar descripciones de errores).
 
-Para crear un dispositivo que admita la capa de depuración, debe instalar el SDK de DirectX (para obtener D3D11SDKLayers.dll) y, a continuación, especificar la marca **D3D11 \_ CREATE \_ DEVICE \_ DEBUG** al llamar a la función [**D3D11CreateDevice**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) o a la función [**D3D11CreateDeviceAndSwapChain.**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) Si ejecuta la aplicación con la capa de depuración habilitada, la aplicación será considerablemente más lenta. Sin embargo, para asegurarse de que la aplicación está limpia de errores y advertencias antes de enviarla, use la capa de depuración. Para más información, consulte [Uso de la capa de depuración para depurar aplicaciones.](using-the-debug-layer-to-test-apps.md)
+Para crear un dispositivo que admita la capa de depuración, debe instalar el SDK de DirectX (para obtener D3D11SDKLayers.dll) y, a continuación, especificar la marca **CREATE \_ DEVICE \_ \_ DEBUG de D3D11** al llamar a la función [**D3D11CreateDevice**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) o a la función [**D3D11CreateDeviceAndSwapChain.**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) Si ejecuta la aplicación con la capa de depuración habilitada, la aplicación será considerablemente más lenta. Sin embargo, para asegurarse de que la aplicación está limpia de errores y advertencias antes de enviarla, use la capa de depuración. Para más información, consulte [Uso de la capa de depuración para depurar aplicaciones.](using-the-debug-layer-to-test-apps.md)
 
 
 > [!Note]  
@@ -51,7 +51,7 @@ Para crear un dispositivo que admita la capa de depuración, debe instalar el SD
 
 Como alternativa, puede habilitar o deshabilitar la marca de depuración mediante el Panel de control [DirectX](/previous-versions//bb219725(v=vs.85)) incluido como parte del SDK de DirectX.
 
-Cuando la capa de depuración enumera pérdidas de memoria, genera una lista de punteros de interfaz de objeto junto con sus nombres descriptivos. El nombre descriptivo predeterminado es " &lt; sin nombre &gt; ". Puede establecer el nombre descriptivo mediante el método [**ID3D11DeviceChild::SetPrivateData**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicechild-setprivatedata) y el GUID **WKPDID \_ D3DDebugObjectName** que se encuentra en D3Dcommon.h. Por ejemplo, para nombrar pTexture con un nombre SDKLayer mytexture.jpg, use el código siguiente:
+Cuando la capa de depuración enumera pérdidas de memoria, genera una lista de punteros de interfaz de objeto junto con sus nombres descriptivos. El nombre descriptivo predeterminado es " &lt; sin nombre &gt; ". Puede establecer el nombre descriptivo mediante el método [**ID3D11DeviceChild::SetPrivateData**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicechild-setprivatedata) y el GUID **WKPDID \_ D3DDebugObjectName** que se encuentra en D3Dcommon.h. Por ejemplo, para nombrar pTexture con un nombre SDKLayer de mytexture.jpg, use el código siguiente:
 
 
 ```

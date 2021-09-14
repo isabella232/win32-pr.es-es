@@ -5,12 +5,12 @@ ms.assetid: 465b8ff4-4622-4638-9c5a-102a43afad6f
 title: U (API de telefonía)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96be6e039c41845b7d4d9b22f231d97e7e1af3be0f4c56760a778819e9a5c15f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72372c7070ab0f8f1cca27e5c92b38594fcef64f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120011945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168854"
 ---
 # <a name="u-telephony-api"></a>U (API de telefonía)
 

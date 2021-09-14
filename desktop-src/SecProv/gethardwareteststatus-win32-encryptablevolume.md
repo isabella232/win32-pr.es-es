@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
 ms.openlocfilehash: 32d0d477459dbc7352d1d8f6779c5c76cfbd537d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475361"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168909"
 ---
 # <a name="gethardwareteststatus-method-of-the-win32_encryptablevolume-class"></a>Método GetHardwareTestStatus de la clase EncryptableVolume de Win32 \_
 
@@ -52,7 +52,7 @@ Especifica si hay una prueba de hardware pendiente, así como si se ha realizado
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="NotFailed_and_NonePending"></span><span id="notfailed_and_nonepending"></span><span id="NOTFAILED_AND_NONEPENDING"></span><dl><dt><strong>NotFailed_and_NonePending</strong></dt><dt>0</dt></dl> | Si se solicitó una prueba, la prueba se ha hecho correctamente en el último reinicio del equipo y el cifrado del volumen está ahora en curso. Para conocer el estado de cifrado, consulte el <a href="getconversionstatus-win32-encryptablevolume.md"><strong>método GetConversionStatus.</strong></a> De lo contrario, no se ejecutó ninguna prueba en el último reinicio del equipo y no hay ninguna pendiente. <br /> | 
 | <span id="Failed"></span><span id="failed"></span><span id="FAILED"></span><dl><dt><strong>Error</strong></dt><dt>1</dt></dl> | No se hizo el cifrado del volumen. Se quitaron todos los protectores de clave.<br /> Para resolver una prueba con errores:<br /><ul><li>Consulte la información del <em>parámetro TestError.</em></li><li>Agregue protectores de clave y vuelva a usar <a href="encryptafterhardwaretest-win32-encryptablevolume.md"><strong>el método EncryptAfterHardwareTest.</strong></a></li></ul> | 
@@ -74,7 +74,7 @@ Especifica el error de la última prueba de hardware completada.
 
 
 
-| Valor                                                                                               | Significado                                                                                                                                                                                                                                                                                                                                                  |
+| Value                                                                                               | Significado                                                                                                                                                                                                                                                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl>                        | No se produjo ningún error o no se ejecutó ninguna prueba de hardware en el último reinicio del equipo.<br/>                                                                                                                                                                                                                                                                      |
 | <dl> <dt> 2150694972 (0x8031003C)</dt> </dl> | NO SE ENCONTRÓ EL ARCHIVO DE CLAVE DE FVE \_ \_ \_ E \_<br/> No se encontró una unidad flash USB con un archivo de clave externa. Si este error persiste, el equipo no puede leer unidades USB durante el reinicio. Es posible que no pueda usar claves externas para desbloquear el volumen del sistema operativo durante el reinicio.<br/>                                                                |
@@ -106,7 +106,7 @@ En la tabla siguiente se enumeran algunos de los códigos de retorno comunes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para solicitar una prueba de hardware, use el [**método EncryptAfterHardwareTest.**](encryptafterhardwaretest-win32-encryptablevolume.md)
 
@@ -124,22 +124,22 @@ Una prueba correcta determina que:
 
 Los resultados de las pruebas de hardware no estarán disponibles después de los cambios en la conversión o después del siguiente reinicio del equipo. Compruebe el registro de eventos del sistema para obtener información sobre las pruebas de hardware que se ejecutaban anteriormente en el equipo.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

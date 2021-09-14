@@ -1,5 +1,5 @@
 ---
-title: Constantes de error de CERT de EAP \_ (Eaphosterror.h)
+title: Constantes de error de EAP \_ CERT (Eaphosterror.h)
 description: Defina errores relacionados con certificados comunes a todas las tecnologías de API de EAPHost.
 ms.assetid: 12f626e1-520a-4aba-954b-769c3062a38c
 topic_type:
@@ -22,14 +22,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b373b3d28ce3c46cab92fa2a089e49e8158010681da3960e1cc4f0b58c4c2a8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0543636f36d823b5557ad2f5a5f7cb000d93259a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168445"
 ---
-# <a name="eap_cert-error-constants"></a>Constantes \_ de error de EAP CERT
+# <a name="eap_cert-error-constants"></a>Constantes de error de EAP \_ CERT
 
 Estas constantes definen errores relacionados con certificados comunes a todas las tecnologías de API de EAPHost.
 
@@ -43,7 +43,7 @@ Estas constantes definen errores relacionados con certificados comunes a todas l
 
 
 
-Define el límite de los informes de errores; se producirá cualquier error de certificado entre **\_ EAP CERT \_ \_ FIRST** y **\_ EAP CERT \_ \_ LAST.**
+Define el límite de los informes de errores; cualquier error de certificado se producirá entre **\_ EAP CERT \_ \_ FIRST** y **\_ EAP CERT \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
@@ -56,12 +56,12 @@ Define el límite de los informes de errores; se producirá cualquier error de c
 
 
 
-Define el límite de los informes de errores; se producirá cualquier error de certificado entre **\_ EAP CERT \_ \_ FIRST** y **\_ EAP CERT \_ \_ LAST.**
+Define el límite de los informes de errores; cualquier error de certificado se producirá entre **\_ EAP CERT \_ \_ FIRST** y **\_ EAP CERT \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_NOT_FOUND"></span><span id="_eap_cert_not_found"></span>**\_NO SE \_ ENCONTRÓ \_ EL CERTIFICADO \_ DE EAP**
+<span id="_EAP_CERT_NOT_FOUND"></span><span id="_eap_cert_not_found"></span>**\_NO SE \_ ENCONTRÓ EL CERTIFICADO DE \_ \_ EAP**
 </dt> <dd> <dl> <dt>
 
 0x1
@@ -87,7 +87,7 @@ El certificado de usuario no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_EXPIRED"></span><span id="_eap_cert_expired"></span>**\_CERTIFICADO DE EAP \_ \_ EXPIRADO**
+<span id="_EAP_CERT_EXPIRED"></span><span id="_eap_cert_expired"></span>**\_EAP \_ CERT EXPIRED (CERTIFICADO EAP \_ EXPIRADO)**
 </dt> <dd> <dl> <dt>
 
 0x3
@@ -139,7 +139,7 @@ Se rechazó el certificado de usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_NAME_REQUIRED"></span><span id="_eap_cert_name_required"></span>**\_SE REQUIERE \_ EL NOMBRE DEL CERTIFICADO \_ \_ DE EAP**
+<span id="_EAP_CERT_NAME_REQUIRED"></span><span id="_eap_cert_name_required"></span>**\_SE REQUIERE \_ EL NOMBRE DEL CERTIFICADO \_ \_ EAP**
 </dt> <dd> <dl> <dt>
 
 0x7
@@ -186,7 +186,7 @@ Define el límite de los informes de errores; cualquier error general de EAP se 
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
-| Header<br/>                   | <dl> <dt>Eaphosterror.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Eaphosterror.h</dt> </dl> |
 
 
 

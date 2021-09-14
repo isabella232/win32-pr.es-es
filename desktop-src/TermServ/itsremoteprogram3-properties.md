@@ -5,12 +5,12 @@ ms.assetid: 8A023C91-8A8E-4B49-A199-132E6A542662
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 971e5c3826f598be6180428aabf9de322a1c76152650047f48ea22c7f59d3a27
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e7e4d3371265cd058a00bc5057da94539379d638
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168650"
 ---
 # <a name="itsremoteprogram3-properties"></a>Propiedades de ITSRemoteProgram3
 

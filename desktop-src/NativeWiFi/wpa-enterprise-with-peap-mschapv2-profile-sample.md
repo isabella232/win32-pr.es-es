@@ -4,18 +4,18 @@ ms.assetid: e344c360-4ab5-4a5f-a1b2-b0fa890b8666
 title: WPA-Enterprise con el PEAP-MSCHAPv2 de perfil
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6bd504f803795613b545c64025df3094346ea2478dd729b91ec8cec69f45c3b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 364cc7a9cc85e4c5e2ef908c0ac2a4726d6c5a96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117797435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169421"
 ---
 # <a name="wpa-enterprise-with-peap-mschapv2-profile-sample"></a>WPA-Enterprise con el PEAP-MSCHAPv2 de perfil
 
 Este perfil de ejemplo usa el protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con la contraseña *UserName* para autenticarse en **/**  la red. Se pide al usuario que escriba las credenciales.
 
-Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido que se ejecuta Enterprise modo de acceso remoto (WPA-Enterprise). El WPA-Enterprise de seguridad usa 802.1X para el intercambio de autenticación con el back-end. El Protocolo de integridad de clave temporal (TKIP) se usa para el cifrado.
+Este ejemplo está configurado para usar la Wi-Fi de acceso protegido que se ejecuta en modo Enterprise (WPA-Enterprise). El WPA-Enterprise de seguridad usa 802.1X para el intercambio de autenticación con el back-end. El Protocolo de integridad de clave temporal (TKIP) se usa para el cifrado.
 
 **Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Se [**omite**](wlan-profileschema-name-wlanprofile-element.md) el elemento secundario name del elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md) El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del nombre [**secundario**](wlan-profileschema-name-ssid-element.md) del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 

@@ -4,8 +4,8 @@ description: Especifica si el modo de entrada en segundo plano está habilitado.
 ms.assetid: 2b57ebe9-3aad-400c-bcfb-d01c759b453d
 ms.tgt_platform: multiple
 keywords:
-- AllowBackgroundInput, propiedad Servicios de Escritorio remoto
-- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsTscAdvancedSettings
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto , interfaz IMsTscAdvancedSettings
 - Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad allowBackgroundInput
 - Propiedad allowBackgroundInput Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad allowBackgroundInput
@@ -59,12 +59,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b79df16c3bcd1120344bc6189ace324e434ad4cbd7a831757e455e26f6d10902
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 938725ea1aa3d774d5993be695ac8568963897fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119657435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168738"
 ---
 # <a name="imstscadvancedsettingsallowbackgroundinput-property"></a>Propiedad IMsTscAdvancedSettings::allowBackgroundInput
 
@@ -72,7 +72,7 @@ Especifica si el modo de entrada en segundo plano está habilitado. Cuando la en
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -95,7 +95,7 @@ Establezca este parámetro en 0 para deshabilitar el modo de entrada en segundo 
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -103,7 +103,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |

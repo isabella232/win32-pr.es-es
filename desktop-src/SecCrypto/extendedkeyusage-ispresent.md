@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 43c561e6c848380326151af12aebf584fb53eb7332c8e6c0d61074da03f7d3de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 785fa3c973e7f90eeab20bd76826b9e5bf612891
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168933"
 ---
 # <a name="extendedkeyusageispresent-property"></a>Propiedad ExtendedKeyUsage.IsPresent
 
@@ -26,7 +26,7 @@ ms.locfileid: "119007343"
 
 La **propiedad IsPresent** devuelve un valor booleano que indica si la extensión EKU está presente. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

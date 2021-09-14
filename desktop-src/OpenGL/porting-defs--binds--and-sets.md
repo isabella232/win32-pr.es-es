@@ -7,7 +7,7 @@ keywords:
 - porte desde IRIS GL, definiciones
 - porte a OpenGL desde IRIS GL, definiciones
 - Porte de OpenGL desde IRIS GL, definiciones
-- Porte de IRIS GL,binds
+- Porte de IRIS GL, binds
 - portar desde IRIS GL,binds
 - portar a OpenGL desde IRIS GL, enlaza
 - Portar OpenGL desde IRIS GL, enlaza
@@ -20,12 +20,12 @@ keywords:
 - conjuntos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a4c3776d3e5eb8000a4e81578bb5df95658a37e0793944a9cda6923fc7a2e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0f9a88253390ee99f5b5870fd7a09e272f1c549
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169190"
 ---
 # <a name="porting-defs-binds-and-sets"></a>Portar defs, binds y sets
 
@@ -54,7 +54,7 @@ lmbind(MATERIAL, 1);
 
 
 
-El siguiente ejemplo de código OpenGL define el mismo material en una lista de visualización a la que hace referencia el número de lista definido **por MYMATERIAL.**
+El siguiente ejemplo de código OpenGL define el mismo material en una lista de visualización a la que hace referencia el número de lista definido **por MYMATERIAL**.
 
 
 ```C++

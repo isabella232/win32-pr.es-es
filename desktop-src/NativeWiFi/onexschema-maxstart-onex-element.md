@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 7c50945b8de53b6d058556e3b5c995d3ec17bfdc8f8d55ec3dc2e6e56089b2a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14bf40538eafb3c8e78b68b7a435d0d37d401960
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169433"
 ---
 # <a name="maxstart-onex-element"></a>Elemento maxStart (OneX)
 
@@ -25,7 +25,7 @@ El elemento maxStart (OneX) especifica el número máximo de EAPOL-Start mensaje
 
 Este elemento es opcional. Cuando maxStart no se especifica en un perfil, se usa un valor de 3 mensajes.
 
-**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
+**Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
 
 ``` syntax
 <xs:element name="maxStart">
@@ -44,13 +44,13 @@ Este elemento es opcional. Cuando maxStart no se especifica en un perfil, se usa
 </xs:element>
 ```
 
-El **elemento maxStart** se define mediante el [**elemento OneX.**](onexschema-onex-element.md)
+El **elemento maxStart** se define mediante [**el elemento OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

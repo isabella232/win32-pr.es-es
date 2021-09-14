@@ -13,11 +13,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0c9d0024e3dfa9b0bda79f209abd9b81e89ad11c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370976"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169502"
 ---
 # <a name="starting-a-single-timer-event"></a>Iniciar un evento de temporizador único
 
@@ -26,7 +26,7 @@ ms.locfileid: "124370976"
 
  
 
-Para iniciar un evento de temporizador único, llame a la función [**timeSetEvent**](/previous-versions//dd757634(v=vs.85)) y especifique la cantidad de tiempo antes de que se produzca la devolución de llamada, la resolución, la dirección de la función de devolución de llamada (vea [**TimeProc)**](/previous-versions//dd757631(v=vs.85))y los datos de usuario que se suministrarán con la función de devolución de llamada. Una aplicación puede usar una función como la siguiente para iniciar un evento de temporizador único.
+Para iniciar un evento de temporizador único, llame a la función [**timeSetEvent,**](/previous-versions//dd757634(v=vs.85)) especificando la cantidad de tiempo antes de que se produzca la devolución de llamada, la resolución, la dirección de la función de devolución de llamada (vea [**TimeProc)**](/previous-versions//dd757631(v=vs.85))y los datos de usuario que se deben proporcionar con la función de devolución de llamada. Una aplicación puede usar una función como la siguiente para iniciar un evento de temporizador único.
 
 
 ```C++
