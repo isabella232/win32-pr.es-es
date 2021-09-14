@@ -20,12 +20,12 @@ keywords:
 - DRM (administración de derechos digitales), archivos protegidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37cd09e61dbd5515d643cbffe8cce809d0f828e8d153858c78ee52db7e714344
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 642e9f580c3dffa1d3785985d548a5f971cfc218
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117844918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256184"
 ---
 # <a name="viewing-attributes-of-protected-files"></a>Ver atributos de archivos protegidos
 

@@ -1,19 +1,19 @@
 ---
-description: En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que genera una voz maestra estéreo para lograr el desplazamiento panorámico entre los hablantes izquierdo y derecho.
+description: En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que se genera en una voz maestra estéreo con el fin de lograr el movimiento panorámico entre los altavoces izquierdo y derecho.
 ms.assetid: d87db173-6de0-09eb-7767-df619c88acfd
 title: 'Cómo: Desplazar un sonido'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e91ff27dfe7c951f95c37fed194a83dac09de8ccec7e37ebc5ad35ca548199
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4136d6e30cba1e6b0bc669fef5518d2a56f868f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118696274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255945"
 ---
 # <a name="how-to-pan-a-sound"></a>Cómo: Desplazar un sonido
 
-En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que genera una voz maestra estéreo para lograr el desplazamiento panorámico entre los hablantes izquierdo y derecho.
+En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que se genera en una voz maestra estéreo con el fin de lograr el movimiento panorámico entre los altavoces izquierdo y derecho.
 
 ## <a name="to-setup-panning"></a>Para configurar el movimiento panorámico
 
@@ -26,7 +26,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 
     
 
-2.  Cree una matriz para contener la matriz de salida. El tamaño mínimo de la matriz de salida es el número de canales de la voz de origen multiplicado por el número de canales de la voz de salida. En este caso, una matriz de ocho elementos controlará una salida de voz mono a cualquier formato de salida de hasta 7,1 sonido envolvente.
+2.  Cree una matriz para contener la matriz de salida. El tamaño mínimo de la matriz de salida es el número de canales de la voz de origen multiplicado por el número de canales de la voz de salida. En este caso, una matriz de ocho elementos controlará una salida de voz mono en cualquier formato de salida de hasta 7.1 sonido envolvente.
 
     ```
     float outputMatrix[ 8 ];
@@ -35,7 +35,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 
     
 
-3.  Calcule los niveles de envío en función del movimiento panorámico deseado entre los hablantes izquierdo y derecho. En este ejemplo, los valores de panorámica oscilarán entre -1 y 1 con -1 que indica todo el sonido al altavoz izquierdo y 1 indica todo el sonido al altavoz derecho.
+3.  Calcule los niveles de envío en función del movimiento panorámico deseado entre los altavoces izquierdo y derecho. En este ejemplo, los valores de panorámica oscilarán entre -1 y 1 con -1 que indica todo el sonido en el altavoz izquierdo y 1 indica todo el sonido al altavoz derecho.
 
     ```
     // pan of -1.0 indicates all left speaker, 
@@ -46,7 +46,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 
     
 
-4.  Establezca los índices de matriz de salida correspondientes a los altavoces izquierdo y derecho con los valores calculados en el paso anterior. Los altavoces izquierdo y derecho se determinan mediante la búsqueda de la máscara de canal devuelta por [**IXAudio2MasteringVoice::GetChannelMask**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2masteringvoice-getchannelmask). Puesto que los canales siempre se deben codificar en el orden especificado en la página de referencia [**DE LAATEXTENSIBLE,**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) es posible determinar el índice de matriz correspondiente a un orador individual.
+4.  Establezca los índices de matriz de salida correspondientes a los altavoces izquierdo y derecho con los valores calculados en el paso anterior. Los altavoces izquierdo y derecho se determinan al mirar la máscara de canal devuelta por [**IXAudio2MasteringVoice::GetChannelMask**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2masteringvoice-getchannelmask). Puesto que los canales siempre se deben codificar en el orden especificado en la página de referencia [**DESUSOTEXTENSIBLE,**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) es posible determinar el índice de matriz correspondiente a un hablante individual.
 
     ```
     switch (dwChannelMask)

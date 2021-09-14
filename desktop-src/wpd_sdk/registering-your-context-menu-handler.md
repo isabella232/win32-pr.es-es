@@ -4,12 +4,12 @@ ms.assetid: 0023004b-b6b3-486a-8b8c-8e63c5731206
 title: Registrar el controlador de menú contextual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 027e01d4b3bc58727579b77345d3f1b8eed668e5b858e49eb4859a40db9ad2d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aafd2798683b4bc291653bca34996f143fc36842
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083549"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256113"
 ---
 # <a name="registering-your-context-menu-handler"></a>Registrar el controlador de menú contextual
 
@@ -41,15 +41,15 @@ En el ejemplo anterior se registra el visor de imágenes de shell con el espacio
 | **WPDContextMenu.Video**               | VÍDEO DE \_ TIPO \_ DE CONTENIDO \_ WPD                                                                                      | .asf<br/> .avi <br/> .dvr-ms <br/> .mpeg <br/> .mpg <br/> .wmv <br/> |
 | **WPDContextMenu.Playlist**<br/> | LISTA DE REPRODUCCIÓN \_ DE TIPO DE CONTENIDO \_ WPD \_                                                                                   | .wpl <br/> .m3u <br/> .mpl <br/> .asx <br/> .pls <br/>                     |
 | **WPDContextMenu.Document**            | DOCUMENTO DE \_ TIPO DE CONTENIDO DE \_ \_ WPD                                                                                   | .doc <br/> .txt <br/> .rtf <br/> .xls <br/> .ppt <br/>                     |
-| **WPDContextMenu.Contact**<br/>  | CONTACTO DE TIPO \_ \_ DE CONTENIDO WPD \_                                                                                    | Ninguno                                                                                                     |
-| **WPDContextMenu.Email**               | CORREO ELECTRÓNICO DE \_ TIPO DE CONTENIDO DE \_ \_ WPD                                                                                      | Ninguno                                                                                                     |
-| **WPDContextMenu.Appointment**         | CITA DE TIPO \_ DE \_ CONTENIDO WPD \_                                                                                | Ninguno                                                                                                     |
-| **WPDContextMenu.Task**                | TAREA TIPO \_ DE \_ CONTENIDO \_ WPD                                                                                       | Ninguno                                                                                                     |
-| **WPDContextMenu.Memo**                | WPD \_ CONTENT \_ TYPE \_ MEMO                                                                                       | Ninguno                                                                                                     |
-| **WPDContextMenu.ImageAlbum**          | WPD \_ CONTENT \_ TYPE \_ IMAGE \_ ALBUM                                                                               | Ninguno                                                                                                     |
-| **WPDContextMenu.AudioAlbum**          | WPD \_ CONTENT \_ TYPE \_ AUDIO \_ ALBUM                                                                               | Ninguno                                                                                                     |
-| **WPDContextMenu.VideoAlbum**          | WPD \_ CONTENT \_ TYPE \_ VIDEO \_ ALBUM                                                                               | Ninguno                                                                                                     |
-| **WPDContextMenu.MixedAlbum**          | WPD \_ CONTENT \_ TYPE \_ MIXED \_ CONTENT \_ ALBUM                                                                      | Ninguno                                                                                                     |
+| **WPDContextMenu.Contact**<br/>  | CONTACTO DE TIPO \_ \_ DE CONTENIDO WPD \_                                                                                    | None                                                                                                     |
+| **WPDContextMenu.Email**               | CORREO ELECTRÓNICO DE \_ TIPO DE CONTENIDO DE \_ \_ WPD                                                                                      | None                                                                                                     |
+| **WPDContextMenu.Appointment**         | CITA DE TIPO \_ DE \_ CONTENIDO WPD \_                                                                                | None                                                                                                     |
+| **WPDContextMenu.Task**                | TAREA TIPO \_ DE \_ CONTENIDO \_ WPD                                                                                       | None                                                                                                     |
+| **WPDContextMenu.Memo**                | WPD \_ CONTENT \_ TYPE \_ MEMO                                                                                       | None                                                                                                     |
+| **WPDContextMenu.ImageAlbum**          | WPD \_ CONTENT \_ TYPE \_ IMAGE \_ ALBUM                                                                               | None                                                                                                     |
+| **WPDContextMenu.AudioAlbum**          | WPD \_ CONTENT \_ TYPE \_ AUDIO \_ ALBUM                                                                               | None                                                                                                     |
+| **WPDContextMenu.VideoAlbum**          | WPD \_ CONTENT \_ TYPE \_ VIDEO \_ ALBUM                                                                               | None                                                                                                     |
+| **WPDContextMenu.MixedAlbum**          | WPD \_ CONTENT \_ TYPE \_ MIXED \_ CONTENT \_ ALBUM                                                                      | None                                                                                                     |
 | **WPDContextMenu.Generic**             | TIPO DE \_ CONTENIDO \_ WPD \_ SIN ESPECIFICAR                                                                                | Todas las demás extensiones de archivo                                                                                |
 
 

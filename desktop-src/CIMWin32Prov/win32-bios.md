@@ -45,12 +45,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bda0a1a07de4411b9a8c683fb2c7e84156b658361df4f2eaf3aa5709c6d11a95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 53c1e953c9c1348a133cf4755ab04f6024c42034
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119504295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255741"
 ---
 # <a name="win32_bios-class"></a>Win32 \_ BIOS (clase)
 
@@ -98,7 +98,7 @@ class Win32_BIOS : CIM_BIOSElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ BIOS Win32** tiene estos tipos de miembros:
 
@@ -281,7 +281,7 @@ BIOS es actualizable (Flash)
 
 </dt> <dd>
 
-Int 13h - Japanese Floppy for NEC 9800 1.2mb (3.5, 1k Bytes/Sector, 360 RPM) is supported
+Int 13h : se admite el disquete japonés para NEC 9800 1,2 mb (3,5, 1 k bytes/sector, 360 RPM)
 
 </dd> <dt>
 
@@ -298,7 +298,7 @@ Int 13h : se admite el disquete japonés para Toshiba de 1,2 mb (3,5, 360 RPM)
 
 <span id="Int_13h_-_5.25_____360_KB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25_____360_kb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25_____360_KB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_13h_-_5.25_____360_KB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25_____360_kb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25_____360_KB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h - 5,25 " /360 KB Floppy Services are supported (22) (Int 13h - 5,25 \\ " /360 KB Floppy Services are supported** (22)
+<span id="Int_13h_-_5.25_____360_KB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25_____360_kb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25_____360_KB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h - 5,25 " /360 KB Floppy Services are supported (22) (Int 13h - 5.25 \\ " /360 KB Floppy Services are supported** (22)
 
 
 </dt> <dd>
@@ -331,7 +331,7 @@ Int 13h - 3.5 / 720 KB Floppy Services are supported
 
 <span id="Int_13h_-_3.5_____2.88_MB_Floppy_Services_are_supported"></span><span id="int_13h_-_3.5_____2.88_mb_floppy_services_are_supported"></span><span id="INT_13H_-_3.5_____2.88_MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_13h_-_3.5_____2.88_MB_Floppy_Services_are_supported"></span><span id="int_13h_-_3.5_____2.88_mb_floppy_services_are_supported"></span><span id="INT_13H_-_3.5_____2.88_MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h - 3.5 " / 2.88 MB Floppy Services are supported (25) (Int 13h - 3.5 " /2.88 MB Floppy Services are supported (25) (Int 13h - 3.5 \\ " /2.88 MB Floppy Services are supported** (25)
+<span id="Int_13h_-_3.5_____2.88_MB_Floppy_Services_are_supported"></span><span id="int_13h_-_3.5_____2.88_mb_floppy_services_are_supported"></span><span id="INT_13H_-_3.5_____2.88_MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h - 3.5 \\ " / 2.88 MB Floppy Services are supported (25) (Int 13h - 3.5 " / 2.88 MB Floppy Services are supported** (25)
 
 
 </dt> <dd>
@@ -370,7 +370,7 @@ Int 13h - 3.5 / 2.88 MB Floppy Services are supported
 
 <span id="Int_10h__CGA_Mono_Video_Services_are_supported"></span><span id="int_10h__cga_mono_video_services_are_supported"></span><span id="INT_10H__CGA_MONO_VIDEO_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_10h__CGA_Mono_Video_Services_are_supported"></span><span id="int_10h__cga_mono_video_services_are_supported"></span><span id="INT_10H__CGA_MONO_VIDEO_SERVICES_ARE_SUPPORTED"></span>**Int 10h, CGA/Mono Video Services son compatibles** (30)
+<span id="Int_10h__CGA_Mono_Video_Services_are_supported"></span><span id="int_10h__cga_mono_video_services_are_supported"></span><span id="INT_10H__CGA_MONO_VIDEO_SERVICES_ARE_SUPPORTED"></span>**Int 10h, se admiteN CGA/Mono Video Services** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -592,12 +592,12 @@ Tipo de datos: **uint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SmBIOS \| type 0 Embedded Controller Firmware Minor \| Release")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 Embedded Controller Firmware Minor \| Release")
 </dt> </dl>
 
 La versión secundaria del firmware del controlador incrustado.
 
-Este valor procede del miembro **Embedded Controller Firmware Minor Release** de la estructura información de **BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Embedded Controller Firmware Minor Release** de la estructura información de **BIOS** de la información de SMBIOS.
 
 **Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
@@ -615,7 +615,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.7")
 </dt> </dl>
 
-Identificador del fabricante para este elemento de software. A menudo, esto será una unidad de almacén (SKU) o un número de pieza.
+Identificador del fabricante para este elemento de software. A menudo, será una unidad de mantenimiento de existencias (SKU) o un número de pieza.
 
 Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
@@ -630,7 +630,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("lenguajes instalables de tipo SMBIOS \| 13") \|
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("idiomas instalables de tipo SMBIOS \| 13") \|
 </dt> </dl>
 
 Número de idiomas disponibles para la instalación en este sistema. El lenguaje puede determinar propiedades como la necesidad de texto Unicode y bidireccional.
@@ -682,10 +682,10 @@ Tipo de datos: **Matriz de** cadenas
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings ("cadenas**](/windows/desktop/WmiSdk/standard-qualifiers) de lenguaje de tipo SMBIOS \| 13") \|
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("cadenas de idioma de tipo SMBIOS \| 13") \|
 </dt> </dl>
 
-Matriz de nombres de idiomas disponibles instalables por BIOS.
+Matriz de nombres de idiomas disponibles que se pueden instalar mediante BIOS.
 
 </dd> <dt>
 
@@ -698,12 +698,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.2")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS del \| sistema DMTF \| 001.2")
 </dt> </dl>
 
 Fabricante de este elemento de software.
 
-Este valor procede del miembro **Vendor de** la estructura de información **del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Vendor de** la estructura información **del BIOS** en la información de SMBIOS.
 
 Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
@@ -721,7 +721,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre usado para identificar este elemento de software.
+Nombre utilizado para identificar este elemento de software.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -739,7 +739,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Registra el fabricante y el tipo de sistema operativo de un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 (Other). Cuando **TargetOperatingSystem** tiene un valor de 1, **OtherTargetOS** debe tener un valor distinto de null. Para todos los demás valores **de TargetOperatingSystem**, **OtherTargetOS** es **NULL.**
+Registra el fabricante y el tipo de sistema operativo de un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 (Other). Cuando **TargetOperatingSystem** tiene un valor de 1, **OtherTargetOS** debe tener un valor distinto deull. Para todos los demás valores **de TargetOperatingSystem**, **OtherTargetOS** es **NULL.**
 
 Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
@@ -757,9 +757,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.9")
 </dt> </dl>
 
-Si **es TRUE,** este es el BIOS principal del sistema del equipo.
+Si **es TRUE,** este es el BIOS principal del sistema informático.
 
-Esta propiedad se hereda de [**CIM \_ BIOSElement**](cim-bioselement.md).
+Esta propiedad se hereda de [**CIM \_ BIOSElement.**](cim-bioselement.md)
 
 </dd> <dt>
 
@@ -774,7 +774,7 @@ Tipo de acceso: solo lectura
 
 Fecha de lanzamiento de Windows BIOS en el formato de hora universal coordinada (UTC) de AAAAMMDDHHMMSS. MMMMMM(+-)OOO.
 
-Este valor procede del miembro **Bios Release Date** de la estructura información del **BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Bios Release Date (Fecha de** lanzamiento del BIOS) de la estructura información del **BIOS** en la información de SMBIOS.
 
 </dd> <dt>
 
@@ -942,7 +942,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1550,7 +1550,7 @@ Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ BIOS Win32** se deriva de [**CIM \_ BIOSElement**](cim-bioselement.md).
 
@@ -1560,7 +1560,7 @@ Las propiedades de la clase **\_ BIOS Win32** pueden cambiar para un sistema inf
 
 El ejemplo de PowerShell [Get-ComputerInfo - Query Computer Info From Local/Remote Computers - (WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) en la Galería de TechNet usa una serie de llamadas a hardware y software, incluido **el \_ BIOS win32,** para mostrar información sobre un sistema local o remoto.
 
-El ejemplo de VBScript Generar información del sistema como jerarquía [XML](https://Gallery.TechNet.Microsoft.Com/Generate-system-information-3f40629f) en la Galería de TechNet usa una serie de llamadas al hardware y software, incluido el **BIOS win32, \_** para generar una representación XML de un sistema mediante una salida XML manual.
+El ejemplo de VBScript Generar información del sistema como jerarquía [XML](https://Gallery.TechNet.Microsoft.Com/Generate-system-information-3f40629f) en la Galería de TechNet usa una serie de llamadas al hardware y software, incluido el **BIOS de Win32, \_** para generar una representación XML de un sistema mediante una salida XML manual.
 
 En el siguiente ejemplo de código de PowerShell se **usa \_ el BIOS Win32** para devolver características del BIOS.
 
@@ -1726,7 +1726,7 @@ Version               :  DELL   - 27d60a0d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1736,7 +1736,7 @@ Version               :  DELL   - 27d60a0d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

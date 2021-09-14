@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cf7ac41d626eceee048afc4671a5e171e7164adfbd9a941b1b70bc85ea988c3f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa219687dabcf9124662e3269d157fb0a163a6a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255608"
 ---
 # <a name="cbasecontrolvideochecksourcerect-method"></a>Método CBaseControlVideo.CheckSourceRect
 
@@ -53,7 +53,7 @@ Puntero al rectángulo de origen que se comprobará.
 
 Devuelve E \_ INVALIDARG si no es válido; de lo contrario, devuelve NOERROR (S \_ OK).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro comprueba que el rectángulo de origen solicitado no supera el vídeo de origen disponible. Las coordenadas izquierda y superior no pueden ser negativas, y el ancho y el alto no pueden superar la derecha y la parte inferior del vídeo.
 
@@ -68,7 +68,7 @@ Esta función miembro comprueba que el rectángulo de origen solicitado no super
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

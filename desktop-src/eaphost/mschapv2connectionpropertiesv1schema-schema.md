@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9d32c4c8c20f9f7efa281d5ff5c9323b4db385262af3ee1e219d86bd11c678a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27a049038f3405b5fafb59a14ccadb54032cca50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118086240"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127373971"
 ---
 # <a name="mschapv2connectionpropertiesv1-schema"></a>Esquema mschapv2connectionpropertiesv1
 
-El esquema mschapv2connectionpropertiesv1 define los datos de configuración de autenticación mediante el protocolo de autenticación de protocolo de autenticación de desafío de Microsoft versión 2 (MS-CHAPv2).
+El esquema mschapv2connectionpropertiesv1 define los datos de configuración de autenticación mediante el protocolo de autenticación de protocolo de enlace de desafío de Microsoft versión 2 (MS-CHAPv2).
 
 -   [Elementos de esquema mschapv2connectionpropertiesv1](mschapv2connectionpropertiesv1schema-elements.md)
 

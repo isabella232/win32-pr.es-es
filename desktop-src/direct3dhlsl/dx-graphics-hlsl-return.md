@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b8b7a8cc846e165c1c0bafa435bd4f4fe655ace5605b03b9821a08109fd65431
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 876c69f3ecfcf1ee1c8391ccc503b2316056b37a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119726465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360809"
 ---
 # <a name="return-statement"></a>return (Instrucción)
 
@@ -105,7 +105,7 @@ VS_OUTPUT VertexShader_Tutorial_1(float4 inPos : POSITION )
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

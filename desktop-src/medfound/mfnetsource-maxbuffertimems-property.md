@@ -4,12 +4,12 @@ ms.assetid: bd776dc2-341a-4d87-8a06-8063daf53ede
 title: MFNETSOURCE_MAXBUFFERTIMEMS propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99d0bf07da8b931ee5487715a4b4430e5ed4384142fc69678a075275d9c7757b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8f98cd17f33bb893dacd02b2a00669f3d2355e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118243437"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361150"
 ---
 # <a name="mfnetsource_maxbuffertimems-property"></a>Propiedad MFNETSOURCE \_ MAXBUFFERTIMEMS
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La constante **MFNETSOURCE \_ MAXBUFFERTIMEMS** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
@@ -43,11 +43,11 @@ El valor predeterminado de esta propiedad es 40 000 milisegundos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

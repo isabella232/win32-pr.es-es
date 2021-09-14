@@ -13,12 +13,12 @@ keywords:
 - redistribution,detecting setup status
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 250ab87fd81592b868e1dbf13106577f83e680796310aff246f0c1483fa847cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6add696f2b2989de1e77d48504a1d540634213d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931406"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256334"
 ---
 # <a name="detecting-setup-status"></a>Detección del estado de la instalación
 

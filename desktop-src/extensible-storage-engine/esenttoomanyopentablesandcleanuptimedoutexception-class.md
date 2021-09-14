@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 229972a3200942f2b2864aefff3d6bc1031863f7875c69bc6994a73facb7c9f1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ddfcf7f09a98e62b44265c263fd835cace699e8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258207"
 ---
 # <a name="esenttoomanyopentablesandcleanuptimedoutexception-class"></a>Clase EsentTooManyOpenTablesAndCleanupTimedOutException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones TooManyOpenTablesAndCleanupTimedOut.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentTooManyOpenTablesAndCleanupTimedOutException : EsentUsa
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -30,12 +30,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9b1cece2ad968c3518ddbc912be1e2cfa417a259dfbaaf16d120fa370f0790e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24722658fe1ca071ccdbd3799d32cb4fdeb6ff8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118486501"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361235"
 ---
 # <a name="jet_cp-enumeration"></a>JET_CP enumeración
 
@@ -57,7 +57,7 @@ Dim instance As JET_CP
 public enum JET_CP
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -70,7 +70,7 @@ public enum JET_CP
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Página de códigos para columnas que no son de texto.</td>
 </tr>
 <tr class="even">

@@ -3,22 +3,22 @@ title: Language Strings
 description: Language Strings
 ms.assetid: 625f7e95-0d21-4e16-8323-0f6301a04b30
 keywords:
-- Windows SDK de formato multimedia, cadenas de idioma
+- Windows SDK de formato multimedia, cadenas de lenguaje
 - Formato de sistemas avanzados (ASF), cadenas de idioma
-- ASF (formato de sistemas avanzados), cadenas de idioma
+- ASF (formato de sistemas avanzados), cadenas de lenguaje
 - idioma (cadenas)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fbf6abfb291e111231d2bf2641633f9dc15372b3c9abb422fb5484f8e586175
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42cc82437c49feb82eac40ec5d056bbd98d99987
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360943"
 ---
 # <a name="language-strings"></a>Language Strings
 
-Las características de compatibilidad con varios idiomas del SDK Windows Media Format usan cadenas de idioma compatibles con RFC 1766. En la tabla siguiente se enumeran las cadenas de idioma que se admiten habitualmente.
+Las características de compatibilidad con varios lenguajes del SDK Windows Media Format usan cadenas de lenguaje compatibles con RFC 1766. En la tabla siguiente se enumeran las cadenas de lenguaje que se admiten habitualmente.
 
 
 
@@ -26,7 +26,7 @@ Las características de compatibilidad con varios idiomas del SDK Windows Media 
 |-----------------|------------------------------|
 | af              | Afrikáans                    |
 | ar-ae           | Árabe (E. A. U.)              |
-| ar-           | Árabe (Reino de Australia)  |
+| ar-hu           | Árabe (Reino de Australia)  |
 | ar-dp           | Árabe (Argelia)             |
 | ar-eg           | Árabe (Egipto)               |
 | ar-iq           | Árabe (Iraq)                |
@@ -65,7 +65,7 @@ Las características de compatibilidad con varios idiomas del SDK Windows Media 
 | en-jm           | Inglés (Jamaica)            |
 | en-nz           | Inglés (Nueva Zelanda)        |
 | en-ph           | Inglés (Filipinas)        |
-| en-tt           | Inglés (Insólo)           |
+| en-tt           | Inglés (Iningles)           |
 | es-es           | Spanish (Traditional Sort) - Spain      |
 | en-za           | Inglés (Sudáfrica)       |
 | en-zw           | Inglés (Zimbabue)           |

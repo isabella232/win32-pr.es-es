@@ -8,16 +8,16 @@ keywords:
 - ASF (formato de sistemas avanzados),introducción al formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ee075330e9c68ef1fbdadea12c70fd8deec584f99f8dadd31cb55070dc11eee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2858ae1845629c25b52d4c15b5ce7fbb5eb82146
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119930565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360931"
 ---
 # <a name="overview-of-the-asf-format"></a>Información general del formato ASF
 
-El formato de sistemas avanzados (ASF) es un formato de archivo extensible diseñado principalmente para almacenar y reproducir secuencias de medios digitales sincronizadas y transmitirlas a través de redes. ASF es el formato de contenedor para Windows audio multimedia y Windows contenido basado en Vídeo multimedia. La extensión wma o wmv se usa para especificar un archivo ASF que contiene contenido codificado con los códecs Windows Media Audio o Windows Media Video. El SDK Windows Media Format se puede usar para crear y leer archivos multimedia de Windows, así como archivos ASF que contienen otros tipos de datos comprimidos o sin comprimir.
+El formato de sistemas avanzados (ASF) es un formato de archivo extensible diseñado principalmente para almacenar y reproducir secuencias de medios digitales sincronizadas y transmitirlas a través de redes. ASF es el formato de contenedor para Windows audio multimedia y Windows contenido basado en vídeo multimedia. La extensión wma o wmv se usa para especificar un archivo ASF que contiene contenido codificado con los códecs Windows Media Audio o Windows Media Video. El SDK Windows Media Format se puede usar para crear y leer archivos multimedia Windows, así como archivos ASF que contienen otros tipos de datos comprimidos o sin comprimir.
 
 En esta sección se proporciona una descripción general del formato ASF como información de fondo. Dado que los objetos lector y escritor controlan todas las tareas de formato y análisis de archivos de bajo nivel, no es necesario tener un conocimiento detallado de ASF antes de usar este SDK para crear archivos ASF. La especificación completa de ASF se puede encontrar en el [sitio web de Microsoft](https://download.microsoft.com/download/7/9/0/790fecaa-f64a-4a5e-a430-0bccdab3f1b4/ASF_Specification.doc).
 

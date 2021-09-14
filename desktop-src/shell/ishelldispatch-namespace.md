@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d870d6e4de6ac43c66a275bd9f5be54880badae8b7a575f13587c11c5c9b757f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1db0a3969350b4be4bc32e027bf2000036e099f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119942365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361055"
 ---
 # <a name="ishelldispatchnamespace-method"></a>Método IShellDispatch.NameSpace
 
@@ -54,7 +54,7 @@ IShellDispatch.NameSpace( _
 
 Tipo: **Variant**
 
-Carpeta para la que se va a crear el [**objeto Folder.**](folder.md) Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript ni JScript. En esos casos, los valores numéricos deben usarse en su lugar.
+Carpeta para la que se va a crear el [**objeto Folder.**](folder.md) Puede ser una cadena que especifica la ruta de acceso de la carpeta o uno de los valores [**de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Tipo: **[ **Carpeta**](folder.md)\*\***
 
 Referencia de objeto al [**objeto Folder**](folder.md) de la carpeta especificada. Si la carpeta no se ha creado correctamente, este valor devuelve **null.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se implementa y se accede a través del [**método Shell.NameSpace.**](shell-namespace.md)
 
@@ -154,10 +154,10 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

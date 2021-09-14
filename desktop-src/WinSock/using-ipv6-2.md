@@ -1,15 +1,15 @@
 ---
-description: En Windows XP posterior, se proporciona una nueva herramienta de línea de comandos para configurar y administrar IPv4. Esta herramienta usa el comando \# &0034;netsh interface ip&0034; para configurar y administrar \# IPv4.
+description: En Windows XP posterior, se proporciona una nueva herramienta de línea de comandos para configurar y administrar IPv4. Esta herramienta usa el &\# 0034;netsh interface ip&0034; para configurar y administrar \# IPv4.
 ms.assetid: d27eb0c2-4ae0-42d1-b92e-055a1c232e1c
 title: Usar IPv6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 675441d1ae18e287541ad4c354aca19c3779fb14f3630ac1636cd360024fcd31
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f759d938ebebbc0ddfbb2326dfb10932c16310a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118559211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361306"
 ---
 # <a name="using-ipv6"></a>Usar IPv6
 
@@ -17,7 +17,7 @@ En Windows XP posterior, se proporciona una nueva herramienta de línea de coman
 
 En Windows XP con Service Pack 1 (SP1) y versiones posteriores, esta nueva herramienta de línea de comandos se mejoró para admitir la configuración y administración de IPv6. Esta herramienta mejorada es el comando "netsh interface ipv6". Los cambios de configuración realizados mediante Netsh.exe comandos son permanentes y no se pierden cuando se reinicia el equipo o el protocolo IPv6.
 
-El comando siguiente está disponible en Windows XP con SP1 y versiones posteriores para consultar y configurar IPv6 en un equipo local:
+El siguiente comando está disponible en Windows XP con SP1 y versiones posteriores para consultar y configurar IPv6 en un equipo local:
 
 -   [Netsh.exe](netsh-exe.md)
 

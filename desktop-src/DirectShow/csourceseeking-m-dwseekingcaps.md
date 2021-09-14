@@ -1,5 +1,5 @@
 ---
-description: Búsqueda de funcionalidades.
+description: Capacidades de búsqueda.
 ms.assetid: c849db20-7567-41e0-9a57-85070a6e6a3a
 title: CSourceSeeking::m_dwSeekingCaps miembro (Ctlutil.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98044f8a05c22022f66e6014be591d99ec57451e33e8f2d7d464e6793bec19e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4addb06b120801b0d5e697c7df93ab8ba620bbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361355"
 ---
 # <a name="csourceseekingm_dwseekingcaps-member"></a>Miembro CSourceSeeking::m \_ dwSeekingCaps
 
-Búsqueda de funcionalidades.
+Capacidades de búsqueda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ DWORD m_dwSeekingCaps;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, el valor se establece en la combinación bit a bit de las marcas siguientes:
 
@@ -59,7 +59,7 @@ Si el filtro admite un conjunto diferente de funcionalidades, invalide este valo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

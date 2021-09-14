@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103095
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cacb18c15b7c1c073f88716659f1a771edffc1eb4212bc97cc509dfca89d318d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 615d1b6d63ad2145ca7bea0459ef4976d52d06b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119732375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258188"
 ---
 # <a name="esenttoomanyopentablesexception-methods"></a>Métodos de EsentTooManyOpenTablesException 
 
@@ -78,7 +78,7 @@ El [tipo EsentTooManyOpenTablesException](./esenttoomanyopentablesexception-clas
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

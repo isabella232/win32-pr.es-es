@@ -6,18 +6,18 @@ keywords:
 - Windows SDK de formato multimedia, administración de derechos digitales (DRM)
 - administración de derechos digitales (DRM), claves
 - DRM (administración de derechos digitales), claves
-- administración de derechos digitales (DRM),KID
+- administración de derechos digitales (DRM), KID
 - DRM (administración de derechos digitales),KID
 - identificador de clave (KID)
 - KID (identificador de clave)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae448cd0c973ad11b55df6365039240ebe2c6ebadb3eda5f70b7f8dd1bfbfbc7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca7f74521fdf0f6cc268b8af1259f8468087f45b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119929965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360941"
 ---
 # <a name="key-and-key-id"></a>Clave e identificador de clave
 

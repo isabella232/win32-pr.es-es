@@ -13,16 +13,16 @@ keywords:
 - revocación de licencias de contenido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a5acac14eaaf95996b7768b81d449847eeb7469c063d604317438fa26090939
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47f2794401f1bc136d2f2cd828839bf1e82b663a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360936"
 ---
 # <a name="license-revocation-windows-media-format-sdk"></a>Revocación de licencias (Windows SDK de formato multimedia)
 
-El SDK Windows Media Format proporciona métodos por los que una aplicación puede interactuar con el sitio web de un emisor de licencias para revocar una licencia de contenido.
+El SDK Windows Media Format proporciona métodos mediante los cuales una aplicación puede interactuar con el sitio web de un emisor de licencias para revocar una licencia de contenido.
 
 Un escenario típico para la revocación de licencias es cuando un usuario proporciona un equipo antiguo a otra persona. En este caso, el usuario original puede tener muchas licencias para el contenido protegido almacenado en el equipo, aunque ese usuario ya no use el equipo. La revocación de licencias permite al usuario original quitar las licencias del equipo.
 

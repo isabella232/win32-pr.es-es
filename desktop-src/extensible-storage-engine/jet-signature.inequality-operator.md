@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8b0741308777389787f299f377160431dbbd29ca51b368e477fde04dc54337f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 646b97f37aea55ee3e9d1aa24e80b9d26ea82469
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118253031"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360742"
 ---
 # <a name="jet_signatureinequality-operator"></a>JET_SIGNATURE. Operador de desigualdad
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102258
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 408f6cee627f7e616047d13b0185889b7e025035efbe7bf21aff4b4c8cf8d09e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbf4cffbab80f786de5f7653a37cc5602ed0bdbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119836400"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360758"
 ---
 # <a name="esentmultivaluedcolumnmustbetaggedexception-methods"></a>Métodos de EsentMultiValuedColumnMustBeTaggedException 
 
@@ -78,7 +78,7 @@ El [tipo EsentMultiValuedColumnMustBeTaggedException](./esentmultivaluedcolumnmu
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

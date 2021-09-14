@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0d7b4dd7c2f292b41eaee18bd2dc0b8914783516c4cdc9f9bc913542e0ebcaff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6bf0744481a123998b64693d669e9cb7255599f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119671475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360787"
 ---
 # <a name="partitioning"></a>creación de particiones
 
@@ -27,7 +27,7 @@ partitioning(X)
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede ser **entero,** **fraccionamiento \_ incluso**, **\_ impar fraccionrio** o **pow2.**
 

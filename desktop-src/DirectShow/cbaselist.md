@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5616edd16921bb2ae4d1a0b7ad67f5bbec3fba560594d4710512bd2cec6f275f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6aa4a3c80cd583bd3cc83a2a0adedecb6caaf7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117823715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361388"
 ---
 # <a name="cbaselist-class"></a>CBaseList (clase)
 
@@ -33,7 +33,7 @@ La **clase CBaseList** se modela después de la **clase CObList** en la bibliote
 
 La lista no requiere ninguna compatibilidad con los objetos que contiene. No realiza ninguna administración de almacenamiento ni copia en los objetos. Los objetos pueden estar en varias listas.
 
-Aproximadamente la mitad de los métodos de esta clase actúan sobre objetos individuales. Estos métodos tienen el sufijo : I en el nombre del método. Los otros métodos actúan en listas enteras. Por ejemplo, el [**método CBaseList::AddAfter**](cbaselist-addafter.md) anexa una lista a otra lista. Las operaciones de objeto único devuelven valores POSITION o **NULL en caso** de error. Las operaciones de lista **devuelven TRUE si** se realiza **correctamente** o FALSE de lo contrario.
+Aproximadamente la mitad de los métodos de esta clase actúan sobre objetos individuales. Estos métodos tienen el sufijo : I en el nombre del método. Los otros métodos actúan en listas enteras. Por ejemplo, el [**método CBaseList::AddAfter**](cbaselist-addafter.md) anexa una lista a otra lista. Las operaciones de objeto único devuelven valores POSITION o **NULL en** caso de error. Las operaciones de lista **devuelven TRUE si** se realiza **correctamente o FALSE** en caso contrario.
 
 
 

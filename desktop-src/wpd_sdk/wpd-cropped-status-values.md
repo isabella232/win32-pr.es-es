@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 881fcde3a6da5f649190f12be7df760c584934deba2a769353798b695292c638
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f324fd90e58e486a12bffebde9f844d96c3ed83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117652709"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256094"
 ---
 # <a name="wpd_cropped_status_values-enumeration"></a>Enumeración \_ WPD CROPPED \_ STATUS \_ VALUES
 
 El **tipo de enumeración \_ WPD CROPPED \_ STATUS \_ VALUES** describe el estado de recorte de una imagen.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -62,7 +62,7 @@ La imagen no se ha recortado ni debe estar recortada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Indica el estado recortado de una imagen. Esta enumeración la usa la [propiedad \_ WPD IMAGE \_ CROPPED \_ STATUS.](image-properties.md)
 
@@ -76,7 +76,7 @@ Indica el estado recortado de una imagen. Esta enumeración la usa la [propiedad
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

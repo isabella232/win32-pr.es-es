@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 920a06b713a4a30dd9036a1792f1d6286f9d6528d21da46d3b35aeca7c3aca93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d92f0364fd9da033f32d418bf28466d1e4d67b56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118270775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361255"
 ---
 # <a name="esentdecompressionfailedexception-constructor"></a>Constructor EsentDecompressionFailedException
 

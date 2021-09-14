@@ -4,12 +4,12 @@ ms.assetid: 0A83CFC0-7EAA-464B-BA39-50DF220AF683
 title: MF_BYTESTREAM_EFFECTIVE_URL atributo (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98f26ece6ef4b0c4b25629f6669296cec56e23a4bf28b7e284b343e16c0df512
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b95e01238f04c30f72d55f940b3f3105863247ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127364107"
 ---
 # <a name="mf_bytestream_effective_url-attribute"></a>Atributo \_ MF BYTESTREAM \_ EFFECTIVE \_ URL
 
@@ -27,7 +27,7 @@ Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetString**](/wind
 
 [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La dirección URL efectiva puede diferir de la dirección URL original si la dirección URL original contiene información adicional, como cadenas de búsqueda o delimitadores, o si se redirija la solicitud.
 
@@ -39,11 +39,11 @@ La dirección URL efectiva puede diferir de la dirección URL original si la dir
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                      |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfobjects.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfobjects.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

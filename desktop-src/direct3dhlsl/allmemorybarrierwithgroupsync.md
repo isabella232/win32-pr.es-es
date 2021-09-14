@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 69d3c146ff04597b7eca13dd5cbef93dc1c79f81709353bf5b4fa1a993a8da22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fc005545485b7f894729ab6c7d7975acfd5b6d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119626695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360837"
 ---
 # <a name="allmemorybarrierwithgroupsync-function"></a>Función AllMemoryBargroupWithGroupSync
 
@@ -38,7 +38,7 @@ Esta función no tiene parámetros.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una barrera de memoria garantiza que se han completado las operaciones de memoria pendientes. Los subprocesos se sincronizan en las barreras groupsync. Esto puede detener un subproceso o subprocesos si las operaciones de memoria están en curso.
 
@@ -50,7 +50,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | sí       |
 
 
 
@@ -68,7 +68,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,27 +1,27 @@
 ---
-description: Paquete de código fuente auxiliar de vídeo (PEL) en un tipo de medio de vídeo digital (DV).
+description: Paquete de origen auxiliar de vídeo (PEL) en un tipo de medio de vídeo digital (DV).
 ms.assetid: 4263032f-9093-4c7a-9ca0-14f8dc0d1aef
 title: MF_MT_DV_VAUX_SRC_PACK atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d0b79e0ba124e0ce3b196c8753777e6fe01b061aefe7c7d1d6b1cb4459deada
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d0db4d10c7603a2374366fce83cd6f541e4637ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119714655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127364026"
 ---
-# <a name="mf_mt_dv_vaux_src_pack-attribute"></a>Atributo \_ \_ \_ \_ SRC \_ PACK de MF MT DV MF
+# <a name="mf_mt_dv_vaux_src_pack-attribute"></a>Atributo MF \_ MT DV MF \_ \_ \_ SRC \_ PACK
 
-Paquete de código fuente auxiliar de vídeo (PEL) en un tipo de medio de vídeo digital (DV).
+Paquete de origen auxiliar de vídeo (PEL) en un tipo de medio de vídeo digital (DV).
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo corresponde al miembro **dwDVVVvSrc** de la DirectShow [**DVINFO.**](/windows/win32/api/strmif/ns-strmif-dvinfo)
+Este atributo corresponde al miembro **dwDVVVvSrc** de la estructura [**DirectShow DVINFO.**](/windows/win32/api/strmif/ns-strmif-dvinfo)
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -32,12 +32,12 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
-| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -53,7 +53,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo multimedia](media-type-attributes.md)
+[Atributos de tipo de medio](media-type-attributes.md)
 </dt> </dl>
 
  

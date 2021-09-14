@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d444ffde525677715f64bd9641cc8fb3cf9513e2c8805a6be28b280aaa12e015
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd3a278760f2598df52d251a9e3558a72f954ceb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118802392"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360855"
 ---
 # <a name="id3dxkeyframedanimationsetcompress-method"></a>Método ID3DXKeyframedAnimationSet::Compress
 
@@ -48,7 +48,7 @@ HRESULT Compress(
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Uno de los [**valores D3DXCOMPRESSION \_ FLAGS**](./d3dxcompression-flags.md) que definen el modo de compresión utilizado para almacenar datos de conjunto de animación comprimidos. D3DXCOMPRESS \_ DEFAULT es el único valor admitido actualmente.
+Uno de los [**valores D3DXCOMPRESSION \_ FLAGS**](./d3dxcompression-flags.md) que definen el modo de compresión utilizado para almacenar datos comprimidos del conjunto de animaciones. D3DXCOMPRESS \_ DEFAULT es el único valor admitido actualmente.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Relación de pérdida de compresión deseada, en el intervalo de 0 a 1.
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)**
 
-Puntero a una jerarquía de marcos de transformación [**D3DXFRAME.**](d3dxframe.md) Puede ser **NULL.**
+Puntero a una [**jerarquía de marco de transformación D3DXFRAME.**](d3dxframe.md) Puede ser **NULL.**
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntero a una jerarquía de marcos de transformación [**D3DXFRAME.**](d3dxframe
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero al conjunto [**de animación comprimida ID3DXBuffer.**](id3dxbuffer.md)
+Dirección de un puntero al conjunto de [**animación comprimida ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Dirección de un puntero al conjunto [**de animación comprimida ID3DXBuffer.**]
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,17 +1,17 @@
 ---
-title: Configurar
+title: Configuración
 description: A los usuarios no les gusta instalar software, por lo que las experiencias de configuración modernas deben ser sencillas, eficaces y sin problemas.
 ms.assetid: ed0265a6-4c39-4a1f-9493-e316a6519df7
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 905411c5ae08d2112943088d514ab300abb19ec2b8081158ebdfd896fc2c61ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e5de6f15dd797dd1d1362d1b515122b78c770f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119818359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360997"
 ---
-# <a name="setup"></a>Configurar
+# <a name="setup"></a>Configuración
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
@@ -34,7 +34,7 @@ La experiencia de configuración combinada con el primer uso del programa se con
 
 Aunque todos los programas Windows Microsoft necesitan algún tipo de programa de instalación, puede elegir dónde colocar la configuración del programa:
 
--   Configurar
+-   Configuración
 -   Primer uso del programa
 -   Opciones de programa centralizadas
 -   En el contexto del uso de la característica
@@ -85,7 +85,7 @@ Bienvenido, siguiente, siguiente, siguiente, siguiente, instalar, finalizar, enh
 
 Si los usuarios describen la configuración del programa con palabras como rápidas y sencillas, son insociados al pralizar la experiencia. Prefiere usar el programa en lugar de configurarlo.
 
-**Revise el diseño de la configuración para ver preguntas no esenciales, opciones, páginas y rutas de acceso, y no tenga problemas para eliminarlos.** Realice investigaciones de usuario para averiguar qué opciones necesitan realmente los usuarios y asegúrese de que no hacen clic sin sentido en el botón Siguiente en todas las páginas. Aplazar cualquier opción o pregunta que se aborde mejor en el contexto del programa en ejecución.
+**Revise el diseño de la configuración en busca de preguntas, opciones, páginas y rutas de acceso no esenciales y no tenga problemas para eliminarlos.** Realice investigaciones de usuario para averiguar qué opciones necesitan realmente los usuarios y asegúrese de que no hacen clic sin sentido en el botón Siguiente en todas las páginas. Aplazar cualquier opción o pregunta que se aborde mejor en el contexto del programa en ejecución.
 
 Muchos programas de instalación ofrecen páginas estándar no porque sean necesarias o útiles, sino porque son estándar. Por ejemplo, las páginas de bienvenida, las páginas de resumen y las páginas de enhorabuena suelen simplemente agregar clics. En su lugar, el programa de instalación solo debe agregar páginas si son necesarias para completar la tarea de instalación. Para obtener instrucciones sobre los tipos de páginas de configuración y cómo evaluarlas, consulte [Tipos de página](#page-types) más adelante en este artículo.
 
@@ -93,9 +93,9 @@ Muchos programas de instalación ofrecen páginas estándar no porque sean neces
 
 En este ejemplo, el programa de instalación elimina la página principal tradicional y pasa directamente a la empresa.
 
-Aunque podría ser necesario ofrecer diferentes ramas de configuración (una experiencia rápida y típica y una experiencia personalizada más controlable), asegúrese de que tiene suficientes opciones personalizadas para garantizar la complejidad adicional. No agregue ramas a menos que tenga que hacerlo. Algunas opciones no importantes de una rama personalizada sugieren la necesidad de reorganizar el diseño de la instalación.
+Aunque podría ser necesario ofrecer diferentes ramas de configuración (una experiencia rápida, típica y una experiencia personalizada más controlable), asegúrese de que tiene suficientes opciones personalizadas para garantizar la complejidad adicional. No agregue ramas a menos que tenga que hacerlo. Algunas opciones no importantes de una rama personalizada sugieren la necesidad de reorganizar el diseño de la instalación.
 
-Otra razón para simplificar la configuración es que los usuarios sin experiencia a veces sobreanalizan las opciones, temiendo que una elección incorrecta pueda ser irreversible o destructiva. Obligar a los usuarios a tomar decisiones sobre cosas que no les importan o que no entienden pueden hacer que se sientan cómodos, cómodos e incluso frustrados. No es una buena primera impresión. Es mejor hacerlo rápidamente, sentirse cómodo y seguro a medida que exploran las características del programa y tomar mejores decisiones sobre las opciones de características en ese momento. Para obtener más instrucciones, consulte [Streamlining setup (Configuración de streamlining)](#streamlining-setup) más adelante en este artículo.
+Otra razón para simplificar la configuración es que los usuarios sin experiencia a veces sobreanalizan las opciones, temiendo que una elección incorrecta pueda ser irreversible o destructiva. Obligar a los usuarios a tomar decisiones sobre cosas que no les importan o que no entienden pueden hacer que se sientan cómodos, cómodos e incluso frustrados. No es una buena primera impresión. Es mejor hacerlo rápidamente, sentirse cómodo y seguro a medida que exploran las características del programa y tomar mejores decisiones sobre las opciones de características en ese momento. Para obtener más instrucciones, consulte [Streamlining setup (Configuración de Streamlining)](#streamlining-setup) más adelante en este artículo.
 
 Procure que su experiencia de configuración sea [lo más sencilla posible, pero no más sencilla.](/previous-versions//dn742474(v=vs.85)) Los programas dirigidos a usuarios muy técnicos pueden necesitar una configuración compleja. Por ejemplo, el equipo de Microsoft SQL Server ha detectado que los administradores de bases de datos prefieren conservar el control sobre muchas opciones de configuración, como las ubicaciones de archivo. Además, SQL Server es una aplicación empresarial de gran tamaño, con una serie de componentes que difieren ampliamente en propósito y funcionalidad. Por lo tanto, aunque queremos que todo sea sencillo, la configuración debe reflejar la complejidad del producto y las expectativas y necesidades de sus usuarios.
 
@@ -103,7 +103,7 @@ Aun así, estos programas de instalación complejos deben ser la excepción, no 
 
 ### <a name="setup-phases"></a>Fases de configuración
 
-Los programas de instalación bien diseñados permiten a los usuarios realizar otras actividades durante la tarea lenta de descargar y copiar archivos. Para ejecutar desatendido, los programas de instalación están diseñados para tener cuatro fases independientes:
+Los programas de instalación bien diseñados permiten a los usuarios realizar otras actividades durante la tarea lenta de descargar y copiar archivos. Para ejecutarse desatendidamente, los programas de instalación están diseñados para tener cuatro fases independientes:
 
 -   **Fase de decisión.** Los usuarios indican cómo quieren que el programa esté instalado y configurado.
 -   **Fase de descarga.** Para los programas descargados de Internet. Si el programa tiene varias aplicaciones o versiones, los usuarios indican qué descargar durante la fase de decisión.
@@ -114,7 +114,7 @@ Dado que la fase de instalación puede tardar mucho tiempo, esta fase debe dise�
 
 **Incorrecto:**
 
-![captura de pantalla de € ¿Instalar informes automáticos? diálogo ](images/exper-setup-image3.png)
+![captura de pantalla de € install auto-reporting? diálogo ](images/exper-setup-image3.png)
 
 En este ejemplo, el programa de instalación interrumpe el progreso para hacer una pregunta que se debería haber hecho durante la fase de decisión.
 
@@ -198,7 +198,7 @@ Para obtener más instrucciones, consulte [Control de cuentas de usuario.](winen
 -   **Evite reiniciar Windows.** La mayoría de los programas deben instalarse sin reiniciar Windows. La razón principal por la que las instalaciones o actualizaciones del programa requieren un reinicio del sistema es que algunos de los archivos implicados están siendo usados actualmente por un programa en ejecución. En este caso, una alternativa mejor es hacer que los usuarios conozcan la situación, permitir que los usuarios cierren estos programas y reintentar la acción. Para obtener más información sobre cómo evitar reinicios, vea [Restart Manager](../rstmgr/restart-manager-portal.md).
 -   **Si el programa de instalación debe reiniciar Windows:**
     -   **Use un solo reinicio.** Retrase el reinicio requerido por los requisitos previos hasta que el programa y sus actualizaciones estén completamente instalados.
-    -   **Permitir que los usuarios determinen cuándo ocurre.** No reinicie el Windows automáticamente, ya que los usuarios pueden perder el trabajo. Asegúrese de que los usuarios tengan claro que tienen una opción.
+    -   **Permitir que los usuarios determinen cuándo ocurre.** No reinicie los Windows automáticamente, ya que los usuarios pueden perder el trabajo. Asegúrese de que los usuarios tengan claro que tienen una opción.
 
         **Incorrecto:**
 
@@ -221,82 +221,82 @@ Para obtener más instrucciones, consulte [Control de cuentas de usuario.](winen
 
         En este ejemplo, Reproductor de Windows Media opciones de privacidad por usuario en el primer uso del programa.
 
-    -   No pregunte a los usuarios sobre el estado del sistema. Detecte esta información automáticamente en su lugar y pida a los usuarios que comprueben solo si hay una razón para cambiar.
+    -   No haga preguntas a los usuarios sobre el estado del sistema. Detecte esta información automáticamente en su lugar y pida a los usuarios que comprueben solo si hay una razón para cambiar.
     -   No haga preguntas sobre detalles no importantes. Por ejemplo, para los Windows típicos, es seguro suponer que debe copiar archivos de programa en la carpeta Archivos de programa.
 
         **Incorrecto:**
 
-        ![captura de pantalla del cuadro de diálogo con ubicación de instalación ](images/exper-setup-image8.png)
+        ![captura de pantalla del cuadro de diálogo con la ubicación de instalación ](images/exper-setup-image8.png)
 
-        En este ejemplo, el programa de instalación debe simplificarse mediante la eliminación de la solicitud de entrada de ubicación de archivo. Dado el tamaño del programa, a la mayoría de los usuarios no les importa y simplemente haga clic en Siguiente.
+        En este ejemplo, el programa de instalación se debe simplificar mediante la eliminación de la solicitud de entrada de ubicación de archivo. Dado el tamaño del programa, a la mayoría de los usuarios no les importa y simplemente haga clic en Siguiente.
 
-    -   No pida permiso para hacer lo que no debería hacer de todos modos. Por ejemplo, la mayoría de los programas no deben incluir una opción para colocar el icono de programa en el escritorio.
-    -   No confirme la cancelación del programa de instalación. Si los usuarios hacen clic en Cancelar durante la instalación, suponga que la cancelación fue intencionada y cierre el programa sin confirmación. Si lo hace, se corre el riesgo de perder mucho tiempo o esfuerzo, permita a los usuarios reiniciar el programa de instalación y retomar el lugar donde lo dejaron.
+    -   No pida permiso para hacer lo que no debe hacer de todos modos. Por ejemplo, la mayoría de los programas no deben incluir una opción para colocar el icono de programa en el escritorio.
+    -   No confirme la cancelación del programa de instalación. Si los usuarios hacen clic en Cancelar durante la instalación, suponga que la cancelación fue intencionada y cierre el programa sin confirmación. Si lo hace, se corre el riesgo de perder mucho tiempo o esfuerzo, permitir que los usuarios reinicien el programa de instalación y vuelvan donde lo dejaron.
 
 -   **Optimice para la instalación desatendida.**
     -   Presente todas las opciones y preguntas durante la fase de decisión.
-    -   En las fases de descarga e instalación, retrase la intervención del usuario en los problemas detectados hasta el final de la fase. Al hacerlo, los usuarios pueden dejar la instalación desatendida hasta que vuelvan a su comodidad.
+    -   En las fases de descarga e instalación, se retrasa la intervención del usuario en los problemas detectados hasta el final de la fase. Al hacerlo, los usuarios pueden dejar la instalación desatendida hasta que vuelvan a su comodidad.
 -   **Elimine las páginas innecesarias.** Si la mayoría de los usuarios siempre hace clic en Siguiente en una página, considere la posibilidad de deshacerse de la página. Para obtener instrucciones sobre cómo eliminar determinados tipos de páginas, vea [Tipos de página](#page-types).
 -   **Elimine el texto innecesario.**
     -   Quite el texto redundante de las instrucciones y etiquetas.
     -   No explique los conceptos básicos Windows uso, como:
         -   Cómo interactuar con controles (ejemplos: Para empezar, haga clic en Siguiente; Para obtener más opciones, haga clic en Opciones; Para obtener más información, haga clic en Ayuda).
-        -   Cómo funcionan los asistentes (por ejemplo: si desea revisar o cambiar cualquier configuración, haga clic en Atrás).
+        -   Cómo funcionan los asistentes (ejemplo: si desea revisar o cambiar cualquier configuración, haga clic en Atrás).
         -   Cómo funciona la instalación (ejemplo: este programa copiará los archivos de programa en el disco duro...).
 -   **Elimine los esfuerzos innecesarios.**
     -   Proporcione buenos valores predeterminados:
         -   Por lo general, seleccione la respuesta más segura y privada para que sea la predeterminada.
-        -   Si la seguridad y la privacidad no son factores, seleccione la respuesta más probable o adecuada.
+        -   Si la seguridad y la privacidad no son factores, seleccione la respuesta más probable o conveniente.
 
             ![captura de pantalla del cuadro de diálogo con el nombre y la empresa mostrados ](images/exper-setup-image9.png)
 
             En este ejemplo, el nombre de usuario y la organización proporcionados de forma predeterminada se obtienen del Registro.
 
-        -   Si se recomienda encarecidamente una opción, considere la posibilidad de seleccionarla de forma predeterminada o agregar "(recomendado)" a su etiqueta.
+        -   Si se recomienda encarecidamente una opción, considere la posibilidad de seleccionarla de forma predeterminada o agregar "(recommended)" a su etiqueta.
 
     -   Avanzar páginas automáticamente cuando una página no tiene ninguna entrada y la tarea se realiza correctamente, como con las páginas de descarga, instalación, progreso y actualizaciones. Una vez que se haya realizado el paso, permanezca en estas páginas solo para mostrar problemas.
-    -   Cuando sea práctico, inicie el programa automáticamente cuando finalice la instalación, en lugar de mostrar una página Enhorabuena o Finalización. Cuando la instalación se ejecuta de forma interactiva, suponga que el usuario está instalando el programa para ejecutarlo inmediatamente, por lo que la ejecución del programa es el mejor comentario para mostrar que la instalación se ha completado. La ejecución automática del programa no es práctica cuando el programa de instalación instala más de un programa (por ejemplo, un conjunto de aplicaciones que consta de muchos programas), cuando el programa de instalación no se ejecuta de forma interactiva o cuando el proceso de instalación no se completa después de la instalación.
+    -   Cuando sea práctico, inicie el programa automáticamente cuando finalice la instalación, en lugar de mostrar una página Enhorabuena o Finalización. Cuando el programa de instalación se ejecuta de forma interactiva, suponga que el usuario está instalando el programa para ejecutarlo inmediatamente, por lo que la ejecución del programa es el mejor comentario para mostrar que la instalación se ha completado. La ejecución automática del programa no es práctica cuando el programa de instalación instala más de un programa (por ejemplo, un conjunto de aplicaciones que consta de muchos programas), cuando el programa de instalación no se ejecuta de forma interactiva o cuando el proceso de instalación no se completa después de la instalación.
 
 ### <a name="page-types"></a>Tipos de página
 
-**Páginas de bienvenida y Tareas iniciales de bienvenida**
+**Páginas de bienvenida Tareas iniciales de bienvenida**
 
--   **Elimine las páginas de bienvenida.** Aunque es excelente sentirse bienvenido, los usuarios normalmente simplemente hacen clic en Siguiente sin leer. Y dado que los usuarios normalmente omiten estas páginas sin leer, el texto hace poco más que lo obvio, por diseño.
+-   **Elimine las páginas de bienvenida.** Aunque es excelente sentirse bienvenido, los usuarios normalmente simplemente hacen clic en Siguiente sin leer. Y dado que los usuarios normalmente omiten estas páginas sin leer, el texto hace poco más que decir lo obvio, por diseño.
 
     **Incorrecto:**
 
-    ![captura de pantalla de la pantalla de bienvenida con next y cancel ](images/exper-setup-image10.png)
+    ![captura de pantalla de la pantalla de bienvenida con siguiente y cancelar ](images/exper-setup-image10.png)
 
     En este ejemplo, no hay nada que hacer para el usuario, pero haga clic en Siguiente.
 
--   **Use una página Tareas iniciales solo si debe informar a los usuarios sobre los requisitos previos para la instalación.** Estos requisitos previos incluyen la instalación del software o el hardware necesarios, la realización de los cambios y actualizaciones de configuración del sistema necesarios, la realización de una copia de seguridad del sistema para protegerse frente a la pérdida de datos u la obtención de la información necesaria que es probable que el usuario ya no tenga.
+-   **Use una página Tareas iniciales solo si debe informar a los usuarios sobre los requisitos previos para la instalación.** Estos requisitos previos incluyen la instalación del software o hardware necesario, la realización de los cambios y actualizaciones de configuración del sistema necesarios, la realización de una copia de seguridad del sistema para protegerse contra la pérdida de datos o la obtención de la información necesaria que el usuario no probablemente ya tenga.
 -   **Siempre que sea práctico, proporcione la capacidad de cumplir los requisitos previos directamente desde el programa de instalación.** Los usuarios deben tener que realizar los pasos manualmente solo si no hay ninguna alternativa.
--   Si no se usa una página Tareas iniciales página principal o una página de inicio de sesión, incluya el nombre y la descripción del programa en la que sea la primera página **del programa de instalación.** Puede usar el lenguaje de bienvenida como texto introductorio, siempre y cuando el propósito de la página sea claro.
+-   Si no se usa Tareas iniciales página principal o de inicio de sesión, incluya el nombre y la descripción del programa en la primera página **del programa de instalación.** Puede usar el lenguaje de bienvenida como texto introductorio siempre que el propósito de la página sea claro.
 
 **Páginas de términos de licencia**
 
--   **Escriba los términos de licencia con texto claro y conciso.** Use lenguaje sin formato. Evite "legales".
--   **Presente mediante un formato fácil de leer y examinar.** No use fragmentos largos de texto en mayúsculas.
+-   **Escriba los términos de licencia con texto claro y conciso.** Use lenguaje sin formato. Evite "legale".
+-   **Presente con un formato fácil de leer y examinar.** No use fragmentos largos de texto en mayúsculas.
 
     **Incorrecto:**
 
     ![captura de pantalla de los términos de licencia en mayúsculas ](images/exper-setup-image11.png)
 
-    En este ejemplo, el texto en mayúsculas y el tamaño de fuente grande dificultan la lectura de los términos, lo que obliga a los usuarios a desplazarse más de lo necesario.
+    En este ejemplo, el texto en mayúscula y el tamaño de fuente grande dificultan la lectura de los términos, lo que obliga a los usuarios a desplazarse más de lo necesario.
 
 -   **Requerir consentimiento explícito para aceptar los términos de licencia.** La aceptación de la licencia nunca debe seleccionarse de forma predeterminada. Si se usan botones de radio para indicar la aceptación, deje las opciones desactivadas de forma predeterminada y exija a los usuarios que acepten los términos antes de habilitar el botón Siguiente.
 
     ![captura de pantalla del cuadro de diálogo con el botón siguiente atenuado ](images/exper-setup-image12.png)
 
-    En este ejemplo, el botón Siguiente está deshabilitado hasta que los usuarios han aceptado explícitamente los términos de licencia.
+    En este ejemplo, el botón Siguiente se deshabilita hasta que los usuarios han aceptado explícitamente los términos de licencia.
 
--   **No es necesario que los usuarios se desplacen a la parte inferior del texto de los términos de licencia antes de habilitar el botón Siguiente.** Esto impone una carga innecesaria a los usuarios para comprender por qué el botón Siguiente está deshabilitado.
+-   **No exija que los usuarios se desplacen a la parte inferior del texto de los términos de licencia antes de que se habilite el botón Siguiente.** Esto impone una carga innecesaria a los usuarios para comprender por qué se deshabilita el botón Siguiente.
 -   **Proporcione un comando Imprimir,** ya sea con un botón de comando o un menú contextual. Presente los términos en un formato optimizado para la impresión.
 
 **Páginas de registro de productos**
 
 -   **Requerir que los usuarios se registren solo si deben para poder usar el programa.** Explique claramente por qué los usuarios deben registrarse.
--   **Proporcione un registro opcional solo si hay una ventaja clara para** el usuario, como notificar a los usuarios las actualizaciones de productos. Deje esta opción desactivada de forma predeterminada.
+-   **Proporcione un registro opcional solo si hay una ventaja clara para** el usuario, como notificar a los usuarios las actualizaciones del producto. Deje esta opción desactivada de forma predeterminada.
 -   **Permitir que los usuarios se registren más adelante.** Proporcione un máximo de tres recordatorios y permita a los usuarios descartar los recordatorios con un solo clic.
 
 **Páginas de ámbito (típicas, personalizadas o mínimas)**
@@ -304,26 +304,26 @@ Para obtener más instrucciones, consulte [Control de cuentas de usuario.](winen
 -   **Prefiere eliminar esta página.** Suponga que la mayoría de los usuarios quieren la experiencia de configuración típica (y diseñe esa experiencia para que funcione bien para la mayoría de los usuarios).
 -   Si debe incluir una página de ámbito:
     -   **Explicar las diferencias entre las opciones en términos de funcionalidad y espacio en disco.** Los usuarios confían en la claridad de la información de la página de ámbito para asegurarse de que hacen la elección correcta.
-    -   **Asegúrese de que las opciones personalizadas solo son necesarias para un pequeño porcentaje de usuarios, mientras que la mayoría de los usuarios pueden omitirlas de forma segura.** Si no es así, las opciones deben estar en la ruta de configuración típica.
+    -   **Asegúrese de que las opciones personalizadas son necesarias solo para un pequeño porcentaje de usuarios, mientras que la mayoría de los usuarios pueden omitirlas de forma segura.** Si no es así, las opciones deben estar en la ruta de acceso de instalación típica.
     -   **Si los usuarios eligen opciones personalizadas, seleccione las opciones de instalación típicas de forma predeterminada.** Los usuarios consideran la instalación típica como la línea de base y desean personalizar agregando o quitando opciones de esa línea base.
--   Si debe usar una opción de instalación personalizada, considere la posibilidad de usar el tamaño y la ubicación relativos de los botones para guiar a la mayoría de los usuarios **a la instalación típica.**
+-   Si debe usar una opción de instalación personalizada, considere la posibilidad de usar el tamaño de botón relativo y la selección de ubicación para guiar a la mayoría de los usuarios **a la instalación típica.**
 
     ![captura de pantalla del cuadro de diálogo con el botón de instalación grande ](images/exper-setup-image13.png)
 
-    En este ejemplo, el diseño de páginas refuerza visualmente el hecho de que la mayoría de los usuarios deben optar por la instalación típica.
+    En este ejemplo, el diseño de página refuerza visualmente el hecho de que la mayoría de los usuarios deben optar por la instalación típica.
 
 **Páginas de entrada**
 
--   **Reduzca el número de opciones de configuración haciendo lo correcto de forma predeterminada.** Para obtener información sobre cómo eliminar opciones, consulte [Streamlining setup ( Configuración de streamlining).](#streamlining-setup)
--   **Proporcione valores predeterminados aceptables siempre que sea posible.** Elija valores predeterminados que sean seguros y privados, y que sean aceptables para la mayoría de los usuarios sin cambios.
--   **A menos que el programa tenga requisitos inusuales, esfuércse por tener una sola página de preguntas y opciones.** Pero si el programa requiere varias páginas de preguntas y opciones, debe mostrarlas en el flujo de páginas del asistente principal. No intente reducir técnicamente el número de páginas colocando opciones en cuadros de diálogo o usando pestañas.
+-   **Reduzca el número de opciones de configuración haciendo lo correcto de forma predeterminada.** Para obtener maneras de eliminar opciones, vea [Streamlining setup ( Configuración de streamlining).](#streamlining-setup)
+-   **Proporcione valores predeterminados aceptables siempre que sea posible.** Elija valores predeterminados que sean seguros y privados y que sean aceptables para la mayoría de los usuarios sin cambios.
+-   **A menos que el programa tenga requisitos inusuales, esfuérctese por tener una sola página de preguntas y opciones.** Pero si el programa requiere varias páginas de preguntas y opciones, se muestran en el flujo de página del asistente principal. No intente reducir el número de páginas técnicamente colocando opciones en cuadros de diálogo o usando pestañas.
 -   ![captura de pantalla del cuadro de diálogo de configuración con cuatro opciones ](images/exper-setup-image14.png)
 -   En este ejemplo, las opciones se limitan a una sola página.
 -   **Valide la entrada lo antes posible:**
     -   Prohíba los caracteres no válidos en la entrada.
     -   Use [globos para](ctrl-balloons.md) notificar problemas con cuadros de texto no válidos.
     -   Valide los campos relacionados de una página cuando los usuarios hacen clic en Siguiente.
-    -   Valide los campos relacionados entre las páginas de entrada en cuanto se puedan detectar problemas.
+    -   Valide los campos relacionados entre las páginas de entrada tan pronto como se puedan detectar problemas.
 -   **Dé a todas las rutas de acceso de archivo editables un botón Examinar.** Permitir a los usuarios especificar rutas de acceso de red.
 -   **Para la página de entrada final, etiquete el botón de confirmación Instalar, no Siguiente.** Cuando se inicia la instalación, los usuarios no deben desapreorse. Antes del punto de confirmación, asegúrese de que los usuarios pueden cambiar fácilmente cualquier configuración.
 
@@ -340,10 +340,10 @@ Para obtener más instrucciones, consulte [Control de cuentas de usuario.](winen
 
     Página de progreso típica.
 
--   **Use una sola barra de progreso determinada.** Siga las [instrucciones de la barra de progreso determinadas,](progress-bars.md)entre las que se incluyen:
+-   **Use una sola barra de progreso determinada.** Siga las [directrices de la barra de progreso determinadas,](progress-bars.md)entre las que se incluyen:
     -   Indique claramente la finalización. No permita que una barra de progreso vaya al 100 % a menos que se haya completado la operación.
-    -   No reinicie el progreso. Una barra de progreso pierde su valor si se reinicia (quizás porque se completa un paso de la operación) porque los usuarios no tienen forma de saber cuándo se completará la operación. En su lugar, haga que todos los pasos de la operación compartan una parte del progreso y que la barra de progreso finalice una vez.
--   **Proporcione una descripción concisa del paso actual encima de la barra de progreso.** Para instalaciones rápidas, este texto no es necesario; la barra de progreso por sí sola es suficiente. Para las instalaciones que requieren un minuto o más, el texto puede ser útil para los usuarios que asistan a la instalación.
+    -   No reinicie el progreso. Una barra de progreso pierde su valor si se reinicia (quizás porque se completa un paso de la operación) porque los usuarios no tienen forma de saber cuándo se completará la operación. En su lugar, haga que todos los pasos de la operación compartan una parte del progreso y que la barra de progreso se complete una vez.
+-   **Proporcione una descripción concisa del paso actual encima de la barra de progreso.** Para instalaciones rápidas, este texto no es necesario; la barra de progreso por sí sola es suficiente. Para las instalaciones que requieren un minuto o más, el texto puede ser útil para los usuarios que asisten a la instalación.
     -   **Use fragmentos de oración, normalmente empezando por un verbo y terminando con puntos suspensivos.** Ejemplos: Copiar archivos..., Instalar los componentes necesarios...
     -   **Coloque el texto encima de la barra, no debajo.**
 
@@ -353,7 +353,7 @@ Para obtener más instrucciones, consulte [Control de cuentas de usuario.](winen
 
         En este ejemplo, el texto explicativo debe aparecer encima de la barra de progreso.
 
-    -   **Evite abarrote la página de progreso con detalles innecesarios.** Esta página no es para [soporte](#handle-technical-support-strategically)técnico, por lo que no es necesario mostrar GUID de registro ni archivos específicos copiados.
+    -   **Evite abarrote la página de progreso con detalles innecesarios.** Esta página no es para [soporte](#handle-technical-support-strategically)técnico, por lo que no es necesario mostrar guid de registro o archivos específicos copiados.
 
         **Incorrecto:**
 
@@ -363,22 +363,22 @@ Para obtener más instrucciones, consulte [Control de cuentas de usuario.](winen
 
 **Páginas de error**
 
--   **Si se produce un error en el programa de instalación con un problema significativo, muestre una página de error que explique los problemas junto con los pasos prácticos para resolverlos.** Muestra la página con un icono de error. No use un cuadro de diálogo para este propósito.
+-   **Si se produce un error en la instalación con un problema significativo, muestre una página de error que explique los problemas junto con los pasos prácticos para resolverlos.** Muestra la página con un icono de error. No use un cuadro de diálogo para este propósito.
 
     ![captura de pantalla de la página de error y el icono ](images/exper-setup-image18.png)
 
     En este ejemplo, el error de instalación se explica en una página de error, junto con algunos pasos para resolver el problema.
 
--   **Si la instalación se completa con un problema recuperable menor, presente el problema como una tarea adicional en lugar de un error.** Use un lenguaje positivo, orientado al éxito y alentador, no términos como error, error o problema. No use un icono de error.
+-   **Si el programa de instalación se completa con un problema recuperable menor, presente el problema como una tarea adicional en lugar de un error.** Use un lenguaje positivo, orientado al éxito y alentador, no términos como error, error o problema. No use un icono de error.
 
 **Páginas de finalización/enhorabuena**
 
--   **Al instalar un único programa de forma interactiva, inicie el programa (y cierre el Asistente para la instalación) para indicar que la instalación se ha realizado correctamente, en lugar de mostrar una página de finalización. Excepciones:**
+-   **Al instalar un único programa de forma interactiva, inicie el programa (y cierre el Asistente para instalación) para indicar que la instalación se ha realizado correctamente, en lugar de mostrar una página de finalización. Excepciones:**
     -   Las configuraciones que se ejecutan desde la línea de comandos no deben iniciar programas.
     -   Las actualizaciones automáticas (por ejemplo, Windows update) no deben iniciar programas.
     -   La instalación de directivas de grupo no debe iniciar programas.
     -   Cualquier escenario de configuración profesional de TI (porque no se instala para su propio uso).
--   **Si la instalación tiene pasos de seguimiento después de la instalación, enuméguelos en una página Finalización.** Pero para justificar una página Finalización, asegúrese de que es probable que los usuarios realicen los pasos y que los pasos realmente deben indicarse (es decir, no son obvios).
+-   **Si el programa de instalación tiene pasos de seguimiento después de la instalación, enuméguelos en una página Finalización.** Pero para justificar una página Finalización, asegúrese de que es probable que los usuarios realicen los pasos y que los pasos realmente deben indicarse (es decir, no son obvios).
 
     **Incorrecto:**
 
@@ -388,37 +388,37 @@ Para obtener más instrucciones, consulte [Control de cuentas de usuario.](winen
 
 -   **Al instalar un conjunto de programas, muestre una página Finalización para indicar que se ha completado correctamente y los pasos de seguimiento que puedan ser necesarios.**
 
-    ![captura de pantalla de la página final de configuración del conjunto de aplicaciones de office ](images/exper-setup-image20.png)
+    ![captura de pantalla de la página final de configuración del conjunto de aplicaciones de Office ](images/exper-setup-image20.png)
 
     En este ejemplo, el programa de instalación ha instalado varios programas, por lo que no tiene sentido iniciar un programa determinado automáticamente. Una página Finalización es más adecuada.
 
 ### <a name="leaving-users-in-control"></a>Dejar a los usuarios bajo control
 
--   **No recopila información personal, como la que se usa con fines de marketing.** El programa de instalación no es una oportunidad para insertar su propia agenda, realizar ventas cruzadas de otras ofertas de programas ni realizar investigaciones de mercado. puede dañar la relación de confianza con los usuarios de esta manera.
--   **No fuerce a los usuarios a no instalar características opcionales.** En su lugar, [permita que opten por](glossary.md) participar. Por ejemplo, los usuarios deben elegir explícitamente instalar un Windows Desktop Desktop Desktop.
--   **Permitir a los usuarios agregar o quitar características opcionales mediante el programa de instalación después de la instalación inicial.** Los usuarios pueden realizar esta tarea mediante el elemento **Desinstalar o cambiar un** panel de control de programa.
--   **En el caso de las iniciativas de mejora de la experiencia del cliente, explique qué datos se transmiten, cómo se usan y cuánto tiempo se mantienen.** Use un vínculo a un tema de Ayuda de declaración de privacidad para este propósito.
+-   **No recopila información personal, como la que se usa con fines de marketing.** El programa de instalación no es una oportunidad para impulsar su propia agenda, realizar ventas cruzadas de otras ofertas de programas ni realizar investigaciones de mercado. puede dañar la relación de confianza con los usuarios de esta manera.
+-   **No fuerce a los usuarios a no instalar características opcionales.** En su lugar, [permita que opten por](glossary.md) participar. Por ejemplo, los usuarios deben elegir explícitamente instalar un Windows Desktop Desktop.
+-   **Permitir a los usuarios agregar o quitar características opcionales mediante el programa de instalación después de la instalación inicial.** Los usuarios pueden realizar esta tarea mediante el elemento **Desinstalar o cambiar un** elemento del panel de control del programa.
+-   **Para las iniciativas de mejora de la experiencia del cliente, explique qué datos se transmiten, cómo se usan y cuánto tiempo se mantienen.** Use un vínculo a un tema de Ayuda de declaración de privacidad para este propósito.
 -   **Evite el uso de sonido,** ya que muchos escenarios de instalación son desatendidos y porque el sonido puede distraer innecesariamente incluso durante las instalaciones atendidas.
 
 ### <a name="security"></a>Seguridad
 
--   **Para la instalación basada en Internet, proporcione las actualizaciones de seguridad automáticamente durante la instalación inicial.** Los usuarios no deben tener que actualizarse como un paso independiente.
+-   **Para la instalación basada en Internet, proporcione las actualizaciones de seguridad automáticamente durante la instalación inicial.** Los usuarios no deben tener que actualizar como un paso independiente.
 -   **Evite recomendar que los usuarios desactiven los firewalls como requisito previo para instalar el programa.**
 -   Si se debe desactivar un firewall, haga lo siguiente:
     -   **Limite la duración de esta condición al menor tiempo posible.**
-    -   **Señalar explícitamente cuándo los usuarios pueden volver a activar el firewall.**
+    -   **Señale explícitamente cuándo los usuarios pueden volver a activar el firewall.**
 
 ### <a name="uninstall"></a>Desinstalación
 
 -   **La desinstalación debe quitar todos los seguimientos de un programa, incluidos los siguientes:**
     -   Archivos de programa, incluido el programa de instalación.
-    -   menú Inicio entradas.
-    -   Iconos de escritorio inicio rápido iconos (si los hay).
+    -   menú Inicio entrada.
+    -   Iconos de escritorio y inicio rápido (si los hay).
     -   La configuración del Registro.
     -   Asociaciones de archivo.
 -   **La desinstalación debe dejar lo siguiente:**
     -   Archivos creados por el usuario, como archivos de documento.
-    -   Bibliotecas de vínculos dinámicos compartidas almacenadas en la carpeta System.
+    -   Bibliotecas compartidas de vínculos dinámicos almacenadas en la carpeta System.
 
 ### <a name="help-and-support"></a>Ayuda y soporte técnico
 

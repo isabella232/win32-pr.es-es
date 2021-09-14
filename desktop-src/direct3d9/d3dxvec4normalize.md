@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 78984c393d7caf259b4c310a31e01ed8fcbd4d47
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374043"
 ---
 # <a name="d3dxvec4normalize-function-d3dx9mathh"></a>Función D3DXVec4Normalize (D3dx9math.h)
 
@@ -65,7 +65,7 @@ Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
 Puntero a una [**estructura D3DXVECTOR4**](d3dxvector4.md) que es la versión normalizada del vector.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec4Normalize** se puede usar como parámetro para otra función.
 
@@ -80,7 +80,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

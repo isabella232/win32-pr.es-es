@@ -16,17 +16,17 @@ keywords:
 - cambiar el tamaño de la superficie virtual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc7fd2ac653fe46ea4530a39e5dad364e312845b6950a2051b39896f7fbb1e61
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9f4bd30bfbd1de91444b7076184db597cd7a8c82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119787955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360780"
 ---
 # <a name="composition-surface"></a>Superficie de composición
 
 > [!NOTE]
-> Para las aplicaciones de Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 En este tema se describen los tipos de superficies que admite Microsoft DirectComposition.
 
@@ -87,7 +87,7 @@ DirectComposition expone la interfaz [**IDCompositionVirtualSurface**](/windows/
 
 Cuando se inicializa una superficie virtual, no cuenta con el respaldo de asignaciones reales. En otras palabras, no contiene ningún bit. DirectComposition asigna iconos (es decir, objetos de superficie de composición) después de que la aplicación empiece a actualizar la superficie. La aplicación actualiza la superficie virtual llamando a [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw) y especificando la región de interés con respecto a las coordenadas de la superficie virtual. A continuación, DirectComposition asigna los iconos necesarios para contener la actualización y devuelve la superficie de composición y el desplazamiento que se actualizarán.
 
-Al igual que con las superficies lógicas, puede llamar a [**BeginDraw,**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw) [**SuspendDraw,**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw) y [**EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw) en una superficie virtual. Además, DirectComposition expone métodos que puede usar para cambiar el tamaño y recortar una superficie virtual existente.
+Al igual que con las superficies lógicas, puede llamar a [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw), [**SuspendDraw,**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw) y [**EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw) en una superficie virtual. Además, DirectComposition expone métodos que puede usar para cambiar el tamaño y recortar una superficie virtual existente.
 
 ### <a name="resizing-a-virtual-surface"></a>Redimensionamiento de una superficie virtual
 

@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fdc28e6eaf71156504306b247a1a2a3797423f9a7e3bde6d4040ecb1297e09da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1adae07e3e2ebbca085981ca03a3b6449e2ffd9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118794826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360832"
 ---
 # <a name="bem---ps"></a>bem - ps
 
 Aplicar una transformación de mapa de entorno de protuberancia falsa.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,13 +31,13 @@ Aplicar una transformación de mapa de entorno de protuberancia falsa.
 
  
 
-where
+, donde
 
 -   dst.rg dst es el registro de destino. Se debe usar la máscara de escritura del componente rojo y verde.
 -   src0 es un registro de origen.
 -   src1 es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -49,7 +49,7 @@ where
 
  
 
-Esta instrucción realiza el cálculo siguiente.
+Esta instrucción realiza el siguiente cálculo.
 
 
 ```
@@ -66,17 +66,17 @@ dest.g = src0.g + D3DTSS_BUMPENVMAT01(stage n) * src1.r
 Reglas para usar bem:
 
 1.  bem debe aparecer en la primera fase de un sombreador (es decir, antes de un marcador de fase).
-2.  bem consume dos ranuras de instrucciones aritméticas.
+2.  bem consume dos espacios de instrucciones aritméticas.
 3.  Solo se permite un uso de esta instrucción por sombreador.
 4.  La máscara de escritura de destino debe ser .rg /.xy.
 5.  Esta instrucción no se puede emitir de forma coe emitida.
-6.  Aparte de la restricción de que la máscara de escritura de destino sea .rg, los modificadores de origen src0, src1 y modificadores de instrucción no están entrenados.
+6.  Aparte de la restricción de que la máscara de escritura de destino sea .rg, los modificadores de origen src0, src1 y los modificadores de instrucción no están entrelazados.
 
 ## <a name="instruction-information"></a>Información de instrucciones
 
 
 
-| Requisito                         | Valor           |
+| Requisito                         | Value           |
 |--------------------------|------------|
 | Sistema operativo mínimo | Windows 98 |
 

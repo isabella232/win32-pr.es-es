@@ -1,5 +1,5 @@
 ---
-description: La clase WMI Win32 PointingDevice representa un dispositivo de entrada que se usa para apuntar y seleccionar regiones en la pantalla de un sistema informático que \_ ejecuta Windows.
+description: La clase WMI Win32 PointingDevice representa un dispositivo de entrada que se usa para apuntar y seleccionar regiones en la pantalla de un sistema informático que ejecuta \_ Windows.
 ms.assetid: ed81abe3-3d8f-48aa-ab64-9e6c87e44f64
 ms.tgt_platform: multiple
 title: Win32_PointingDevice clase
@@ -49,16 +49,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: acf2c33c3561d6024afd196c86eee4aa61af492ec43a4f8a827dfea6fb1d5d4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e4f2359e19476dfae111fc361f48e6f73d8cfac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118417061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255650"
 ---
 # <a name="win32_pointingdevice-class"></a>Clase PointingDevice de Win32 \_
 
-La clase [WMI](../wmisdk/retrieving-a-class.md) **Win32 \_ PointingDevice** representa un dispositivo de entrada que se usa para apuntar y seleccionar regiones en la presentación de un sistema informático que ejecuta Windows. Cualquier dispositivo utilizado para manipular un puntero o apuntar a la pantalla en un sistema informático que ejecuta Windows es miembro de esta clase.
+La clase [WMI](../wmisdk/retrieving-a-class.md) **Win32 \_ PointingDevice** representa un dispositivo de entrada que se usa para señalar y seleccionar regiones en la pantalla de un sistema informático que ejecuta Windows. Cualquier dispositivo utilizado para manipular un puntero o apuntar a la pantalla en un sistema informático que Windows es miembro de esta clase.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -104,7 +104,7 @@ class Win32_PointingDevice : CIM_PointingDevice
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PointingDevice de Win32** tiene estos tipos de miembros:
 
@@ -502,7 +502,7 @@ Error en el dispositivo.
 
 </dt> <dd>
 
-El dispositivo no encuentra suficientes recursos gratuitos para usarlos.
+El dispositivo no puede encontrar suficientes recursos gratuitos para usarlos.
 
 </dd> <dt>
 
@@ -530,12 +530,12 @@ El dispositivo no puede funcionar correctamente hasta que se reinicie el equipo.
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de enumeración.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de nueva enumeración.** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente debido a un posible problema de enumeración.
+El dispositivo no funciona correctamente debido a un posible problema de nueva enumeración.
 
 </dd> <dt>
 
@@ -563,12 +563,12 @@ El dispositivo solicita un tipo de recurso desconocido.
 
 <span id="Reinstall_the_drivers_for_this_device."></span><span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>
 
-<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores para este dispositivo.** (18)
+<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores de este dispositivo.** (18)
 
 
 </dt> <dd>
 
-Los controladores de dispositivo deben volver a instalarse.
+Los controladores de dispositivos deben volver a instalarse.
 
 </dd> <dt>
 
@@ -586,18 +586,18 @@ Los controladores de dispositivo deben volver a instalarse.
 
 </dt> <dd>
 
-Es posible que el Registro esté dañado.
+El Registro puede estar dañado.
 
 </dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows quita este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
+Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
 
 </dd> <dt>
 
@@ -619,7 +619,7 @@ El dispositivo está deshabilitado.
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware.
+Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware.
 
 </dd> <dt>
 
@@ -691,12 +691,12 @@ El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso IRQ que usa otro dispositivo.
+El dispositivo usa un recurso IRQ que está usando otro dispositivo.
 
 </dd> <dt>
 
@@ -727,7 +727,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -740,12 +740,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [ **Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -781,7 +781,7 @@ Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/s
 
 Identificador único del dispositivo que apunta con otros dispositivos del sistema.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -794,7 +794,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 21 \| Interface")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("interfaz smbios \| de tipo 21") \|
 </dt> </dl>
 
 Tipo de interfaz que se usa para el dispositivo que apunta.
@@ -831,7 +831,7 @@ Tipo de interfaz que se usa para el dispositivo que apunta.
 
 <span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>
 
-**Insondes** (5)
+**Desarroba** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -859,14 +859,14 @@ Tipo de interfaz que se usa para el dispositivo que apunta.
 
 <span id="Bus_mouse_DB-9"></span><span id="bus_mouse_db-9"></span><span id="BUS_MOUSE_DB-9"></span>
 
-**Db-9 del mouse de** bus (160)
+**Bus mouse DB-9** (160)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bus_mouse_micro-DIN"></span><span id="bus_mouse_micro-din"></span><span id="BUS_MOUSE_MICRO-DIN"></span>
 
-**Microprocesador del mouse de bus** (161)
+**Micro-USB del mouse de** bus (161)
 
 
 </dt> <dd></dd> <dt>
@@ -889,7 +889,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Functions \| SystemParametersInfo"), [**Units**](../wmisdk/standard-qualifiers.md) ("bloques")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Functions \| SystemParametersInfo"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("")
 </dt> </dl>
 
 Uno de los dos valores de aceleración. La sensibilidad del dispositivo que apunta se duplica (alterna del primer al segundo valor) cuando el dispositivo que apunta mueve una distancia mayor que este valor de umbral.
@@ -905,9 +905,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** ahora se borra el error **notificado en LastErrorCode.**
+Si **es TRUE,** ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -922,7 +922,7 @@ Tipo de acceso: solo lectura
 
 Más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -935,9 +935,9 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Configuración del dispositivo que apunta para el funcionamiento izquierdo o derecho.
+Configuración del dispositivo que apunta para la operación a la izquierda o a la derecha.
 
-Esta propiedad se hereda de [**CIM \_ PointingDevice.**](cim-pointingdevice.md)
+Esta propiedad se hereda de [**CIM \_ PointingDevice**](cim-pointingdevice.md).
 
 <dt>
 
@@ -968,7 +968,7 @@ Right-Handed operación
 
 <span id="Left_Handed_Operation"></span><span id="left_handed_operation"></span><span id="LEFT_HANDED_OPERATION"></span>
 
-<span id="Left_Handed_Operation"></span><span id="left_handed_operation"></span><span id="LEFT_HANDED_OPERATION"></span>**Operación con mano izquierda** (3)
+<span id="Left_Handed_Operation"></span><span id="left_handed_operation"></span><span id="LEFT_HANDED_OPERATION"></span>**Operación de mano izquierda** (3)
 
 
 </dt> <dd>
@@ -991,7 +991,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HKEY \_ LOCAL MACHINE SYSTEM \_ \\ \\ \\ \\ ControlSet001 Control Class \\ \\ \\ \\ \| DriverDesc")
 </dt> </dl>
 
-Tipo de hardware usado para el Windows que apunta.
+Tipo de hardware usado para el Windows dispositivo que apunta.
 
 Ejemplo: "MICROSOFT PS2 MOUSE"
 
@@ -1009,7 +1009,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HKEY \_ LOCAL MACHINE \_ \\ \\ SYSTEM \\ \\ CurrentControlSet Control \\ \\ \\ \\ Class \| InfPath")
 </dt> </dl>
 
-Nombre del archivo .inf para el Windows que apunta.
+Nombre del archivo .inf para el Windows dispositivo que apunta.
 
 Ejemplo: "ab.inf"
 
@@ -1024,10 +1024,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HKEY \_ LOCAL MACHINE \_ \\ \\ SYSTEM \\ \\ CurrentControlSet \\ \\ (clase de control \\ \\ \| InfSection)
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Clase de control Win32Registry \| HKEY \_ LOCAL MACHINE \_ \\ \\ SYSTEM \\ \\ CurrentControlSet \\ \\ \\ \\ \| InfSection")
 </dt> </dl>
 
-Sección del archivo .inf que contiene información de configuración para el Windows que apunta.
+Sección del archivo .inf que contiene información de configuración para el Windows dispositivo que apunta.
 
 </dd> <dt>
 
@@ -1075,7 +1075,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1106,7 +1106,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1124,9 +1124,9 @@ Tipo de datos: **uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de botones en el dispositivo que apunta.
+Número de botones del dispositivo que apunta.
 
-Esta propiedad se hereda de [**CIM \_ PointingDevice.**](cim-pointingdevice.md)
+Esta propiedad se hereda de [**CIM \_ PointingDevice**](cim-pointingdevice.md).
 
 Ejemplo: 2
 
@@ -1146,7 +1146,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1166,7 +1166,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMT
 
 Tipo de dispositivo que apunta.
 
-Esta propiedad se hereda de [**CIM \_ PointingDevice.**](cim-pointingdevice.md)
+Esta propiedad se hereda de [**CIM \_ PointingDevice**](cim-pointingdevice.md).
 
 <dt>
 
@@ -1304,7 +1304,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](../wmisdk/designing-managed-object-format--mof--classes.md)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](../wmisdk/designing-managed-object-format--mof--classes.md).
 
 </dd> <dt>
 
@@ -1358,7 +1358,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Functions \| SystemParametersInfo"), [**unidades**](../wmisdk/standard-qualifiers.md) ("")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Información del sistema Functions \| SystemParametersInfo"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("")
 </dt> </dl>
 
 Uno de los dos valores de umbral de aceleración. El sistema duplica la velocidad del movimiento del puntero cuando el dispositivo de puntero mueve una distancia mayor que este valor. Dado que este aumento de velocidad se produce después de que se haya cumplido el valor **DoubleSpeedThreshold,** el puntero se mueve de forma eficaz a cuatro veces su velocidad original.
@@ -1379,7 +1379,7 @@ Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("recuentos por 
 
 Resolución de seguimiento.
 
-Esta propiedad se hereda de [**CIM \_ PointingDevice.**](cim-pointingdevice.md)
+Esta propiedad se hereda de [**CIM \_ PointingDevice**](cim-pointingdevice.md).
 
 Ejemplo: 0
 
@@ -1571,10 +1571,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| MouseSynchIn100ns"), [**unidades**](../wmisdk/standard-qualifiers.md) ("100 nanosegundos")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| MouseSynchIn100ns"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanoseconds")
 </dt> </dl>
 
-Período de tiempo después del cual se supone que la siguiente interrupción indica el inicio de un nuevo paquete de dispositivo (se descartan los paquetes parciales). En caso de que se pierda una interrupción, esto permite que el controlador de dispositivo que apunta sincronice su representación interna del estado del paquete con el estado de hardware.
+Período de tiempo después del cual se supone que la siguiente interrupción indica el inicio de un nuevo paquete de dispositivo (se descartan los paquetes parciales). En caso de que se pierda una interrupción, esto permite que el controlador del dispositivo que apunta sincronice su representación interna del estado del paquete con el estado de hardware.
 
 </dd> <dt>
 
@@ -1587,12 +1587,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Valor de la propiedad **CreationClassName** del equipo de ámbito.
+Valor de la propiedad **CreationClassName del** equipo de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1605,16 +1605,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ PointingDevice de Win32** se deriva de [**CIM \_ PointingDevice**](cim-pointingdevice.md).
 
@@ -1622,7 +1622,7 @@ La **clase \_ PointingDevice de Win32** se deriva de [**CIM \_ PointingDevice**]
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

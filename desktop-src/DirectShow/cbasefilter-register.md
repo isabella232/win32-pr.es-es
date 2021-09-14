@@ -1,5 +1,5 @@
 ---
-description: El método Register agrega el filtro al Registro.
+description: El método Register agrega el filtro al registro.
 ms.assetid: 934e421a-25a6-40fa-a48b-6d7331f34b78
 title: Método CBaseFilter.Register (Amfilter.h)
 ms.topic: reference
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 168d84d3bfc90fb710ae65a3b887eeb5575db407361a256c48161f0f7968a53c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1bd7ba5a57d670ef28ffda022c95c7dc5b12df77
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118403528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361403"
 ---
 # <a name="cbasefilterregister-method"></a>Método CBaseFilter.Register
 
-El `Register` método agrega el filtro al Registro.
+El `Register` método agrega el filtro al registro.
 
 > [!Note]  
-> Este método está obsoleto. Se deben registrar nuevos filtros mediante la [**función AMovieDllRegisterServer2.**](amoviedllregisterserver2.md) Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md).
+> Este método está obsoleto. Los nuevos filtros deben registrarse mediante la [**función AMovieDllRegisterServer2.**](amoviedllregisterserver2.md) Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
  
 

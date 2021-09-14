@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e7b2f9a2a5247ec49c463f37d4e4d7caf58237ece97ec8968e31749d3d080cf8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d9aae4e4ef916916f54bddea814844f23ed7315
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255818"
 ---
 # <a name="cim_systemcomponent-class-cimwin32-wmi-providers"></a>CIM_SystemComponent clase (proveedores WMI CIMWin32)
 
 La **clase \_ SystemComponent** de CIM es una clase de asociación Modelo de información común (CIM) que establece relaciones entre un sistema y los elementos del sistema administrado de los que se compone.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ class CIM_SystemComponent : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemComponent de CIM** tiene estos tipos de miembros:
 
@@ -66,7 +66,7 @@ Tipo de datos: **Sistema CIM \_**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
 Sistema [**CIM \_ que**](cim-system.md) describe el sistema primario de la asociación.
@@ -85,15 +85,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Elemento [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) que describe el elemento secundario que es un componente de un sistema.
+[**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) que describe el elemento secundario que es un componente de un sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **\_ SYSTEMComponent de CIM,** vea [Clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ SystemComponent,** vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

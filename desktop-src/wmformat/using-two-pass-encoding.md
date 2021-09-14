@@ -8,23 +8,23 @@ keywords:
 - codificación de dos pases, acerca de
 - Codificación de 2 pases, acerca de
 - códecs, codificación de dos pases
-- Codificación de dos pases, interfaz IWMWriterPreprocess
+- codificación de dos pases, interfaz IWMWriterPreprocess
 - Codificación de 2 pases, interfaz IWMWriterPreprocess
 - IWMWriterPreprocess
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd0683af636197b3f8116fca4dea85ce15609d2c99b0d9e0c11dfe0a2662a424
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c3794856f47c1656cc53006268c41a063cdde96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117653840"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360920"
 ---
 # <a name="using-two-pass-encoding-windows-media-format-11-sdk"></a>Uso de Two-Pass codificación (Windows SDK de formato multimedia 11)
 
-Algunos códecs admiten la codificación de dos pases para determinados formatos. En algunos casos, un códec requiere codificar un formato especificado mediante dos pases. Cuando se usa la codificación de dos pases, se envían los ejemplos de la secuencia al códec antes de que pase la codificación. El códec analiza los ejemplos y configura el paso de codificación en función del análisis. Esto da como resultado un archivo codificado de forma más eficaz.
+Algunos códecs admiten la codificación de dos pases para determinados formatos. En algunos casos, un códec requiere que se codifica un formato especificado mediante dos pases. Cuando se usa la codificación de dos pases, se envían los ejemplos de la secuencia al códec antes del paso de codificación. El códec analiza los ejemplos y configura el paso de codificación en función del análisis. Esto da como resultado un archivo codificado de forma más eficaz.
 
-Para determinar si un códec admite la codificación de un paso, o dos pases, o ambos, para un formato determinado, llame a [**IWMCodecInfo3::SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting) con g wszNumPasses y el valor adecuado y, a continuación, enumere los formatos para ver si se devuelve el que \_ desea. Para obtener más información sobre los códecs Windows media que admiten la codificación de dos pases, vea [Elegir un método de codificación](choosing-an-encoding-method.md).
+Para determinar si un códec admite la codificación de un paso, o dos pases, o ambos, para un formato determinado, llame a [**IWMCodecInfo3::SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting) con g wszNumPasses y el valor adecuado y, a continuación, enumere los formatos para ver si se devuelve el que \_ desea. Para obtener más información sobre los códecs Windows media que admiten la codificación de dos pases, vea [Elección de un método de codificación](choosing-an-encoding-method.md).
 
 Puede usar la codificación de dos pases con el SDK Windows Media Format llamando a métodos de la [**interfaz IWMWriterPreprocess.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpreprocess)
 

@@ -4,12 +4,12 @@ description: En las siguientes aplicaciones de ejemplo se muestra cómo usar Mic
 ms.assetid: E2794CE7-20A3-4388-B1DC-D9822C970774
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1fd6fcb3665ab04c5a724d9b0d78b355b891ed34aee9164b2f9b69170697362
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 889ceb9a6f9383930b9231c9c19a2b610fba2815
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119980325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360779"
 ---
 # <a name="directcomposition-samples"></a>Ejemplos de DirectComposition
 

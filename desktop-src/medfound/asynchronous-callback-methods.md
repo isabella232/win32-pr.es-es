@@ -4,12 +4,12 @@ ms.assetid: ea778eaa-6460-4a93-bd6a-1857ea8b6230
 title: Métodos de devolución de llamada asincrónicos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e59fec2423d6bc1b02a3f5ce05855419596bc92ea54062303ebd1315d087e489
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0064873a5b026b6910597ebc9911f56f00584b03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119606715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361179"
 ---
 # <a name="asynchronous-callback-methods"></a>Métodos de devolución de llamada asincrónicos
 
@@ -36,13 +36,13 @@ En esta sección se describe cómo implementar la interfaz de devolución de lla
 
 <dl> <dt>
 
-[**INTERFAZ DE DEVOLUCIÓN DE LLAMADA DE LA CLASE DE MÉTODOS DE DE**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)
+[**INTERFAZ DE DEVOLUCIÓNASYNCCALLBACK**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)
 </dt> <dt>
 
-[**Interfaz DENASYNCResult**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult)
+[**INTERFAZ DESASYNCRESULT**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult)
 </dt> <dt>
 
-[Media Foundation API de plataforma](media-foundation-platform-apis.md)
+[Media Foundation API de plataforma de aplicaciones](media-foundation-platform-apis.md)
 </dt> </dl>
 
  

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 060cbf39d53365baf9b6c01f2ba71364006df180c6ff12b845bf157a8bb076c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83f5d194338debff3af9ff3097b52f3aef273dbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118770800"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258303"
 ---
 # <a name="esentspacehintsinvalidexception-constructor"></a>Constructor EsentSpaceHintsInvalidException
 

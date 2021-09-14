@@ -4,12 +4,12 @@ ms.assetid: 5072d308-d376-4141-96df-dbef23fb9f9b
 title: Mover contenido en el dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0830dab93b4ac0cd11f988c34edef24b1eb11b8869f63efdc4b0b518fc9380b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3eb4a9638e656d5cab8437448d64b79947df337b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119928375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256143"
 ---
 # <a name="moving-content-on-the-device"></a>Mover contenido en el dispositivo
 

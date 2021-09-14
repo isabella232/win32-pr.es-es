@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6259e6ce00b0a2f93e0b71d6b44d1c6ed4aa65eaadca21ed0a78f1d16d98a42b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0555733f53b4870a43dbcbf36c69061db19490a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361402"
 ---
-# <a name="cbasefilterrun-method"></a>CBaseFilter.Run (método)
+# <a name="cbasefilterrun-method"></a>Método CBaseFilter.Run
 
 El `Run` método ejecuta el filtro. Este método implementa el [**método IMediaFilter::Run.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run)
 
@@ -45,7 +45,7 @@ HRESULT Run(
 *tStart* 
 </dt> <dd>
 
-Hora de referencia correspondiente al tiempo de secuencia 0.
+Tiempo de referencia correspondiente al tiempo de secuencia 0.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Hora de referencia correspondiente al tiempo de secuencia 0.
 
 Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se detiene el filtro, este método pausa el filtro llamando al método [**CBaseFilter::P ause.**](cbasefilter-pause.md) A continuación, llama [**al método CBasePin::Run**](cbasepin-run.md) en cada uno de los pines conectados del filtro. Por último, establece la variable [**miembro de estado CBaseFilter::m \_**](cbasefilter-m-state.md) en State \_ Running.
 
-El tiempo de secuencia se calcula como el tiempo de referencia actual menos *tStart.* Un ejemplo multimedia con una marca de tiempo de cero debe representarse en el *momento tStart*.
+El tiempo de secuencia se calcula como el tiempo de referencia actual menos *tStart*. Un ejemplo multimedia con una marca de tiempo de cero debe representarse en el *momento tStart*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ El tiempo de secuencia se calcula como el tiempo de referencia actual menos *tSt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

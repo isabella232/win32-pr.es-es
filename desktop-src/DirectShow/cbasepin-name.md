@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0bb519e67bf1def3abeb98bcfea1310d9b6fe68f06e891e44f925e267982f2e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0294baf2c7a399bf7e75bb69bbb2b46723e5d002
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119429885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361386"
 ---
 # <a name="cbasepinname-method"></a>CBasePin.Name método
 
@@ -55,7 +55,7 @@ Devuelve el valor de la variable [**miembro CBasePin::m \_ pName.**](cbasepin-m-
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

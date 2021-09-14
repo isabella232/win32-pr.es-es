@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba381997eda20c447b018a5df32aeeae2b4ec23a1cba63cacc777c03ec39e8ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e41ffe3b766cf553691f7bf7de354fa7d6bfb479
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361406"
 ---
 # <a name="cbasedispatchcbasedispatch-constructor"></a>Constructor CBaseDispatch.CBaseDispatch
 
@@ -51,7 +51,7 @@ Este constructor no tiene parámetros.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

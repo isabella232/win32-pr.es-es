@@ -3,7 +3,7 @@ title: Propiedad Command.Comment
 description: Representa un comentario, o anotación, para un comando.
 ms.assetid: 4ac5c7d4-9627-4703-bd3c-594d9497ba24
 keywords:
-- Barra de opciones de la Windows Command.Comment
+- Command.Comment, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eef6b5366f61f15fda808ca60264de5d28322b8b41a2d6e986e36282a95fbd6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0f7df2131234623dd30fc90339634a932eca5bd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360974"
 ---
 # <a name="commandcomment-property"></a>Propiedad Command.Comment
 
@@ -47,7 +47,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -55,13 +55,13 @@ Puede producirse como máximo una vez para cada [**comando**](windowsribbon-elem
 
 El comentario está asociado a una definición de comando en el archivo de encabezado de la cinta de opciones, por ejemplo, `#define cmdSave 25003 /* Save */` .
 
-Este elemento contiene un valor de tipo *xs:string*.
+Este elemento contiene un valor de tipo *xs:string.*
 
 La longitud máxima es de 250 caracteres.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un [**elemento Command**](windowsribbon-element-command.md) con una **declaración Command.Comment.**
+En el ejemplo siguiente se muestra el marcado de [**un elemento Command**](windowsribbon-element-command.md) con una declaración **Command.Comment.**
 
 
 ```XML
@@ -91,7 +91,7 @@ En el ejemplo siguiente se muestra el marcado de un [**elemento Command**](windo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 

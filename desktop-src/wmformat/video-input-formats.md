@@ -14,12 +14,12 @@ keywords:
 - Windows Códec Media Video 9, formatos de entrada de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dd9bb451e0998ceec562cedb58b21ef3895e1ed8a83e705a92af42eda326f60
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c5113ee3cbd9c9235104f858968db20ebc29e3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118028529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256190"
 ---
 # <a name="video-input-formats"></a>Formatos de entrada de vídeo
 

@@ -5,15 +5,15 @@ ms.assetid: 2681bffc-ba07-4822-b265-2bf7f95297d4
 keywords:
 - Información general sobre seguridad Web Services for Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6928afd51ded7104e909994f8b625b931da6a157e859c890066c73074ae7d16
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 741e98ef023c0bae146b5fde582484f2dd133df6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360900"
 ---
 # <a name="security-overview"></a>Información general sobre seguridad
 
@@ -39,14 +39,14 @@ Los errores en la descripción de seguridad, como enlaces no admitidos, propieda
 
 ## <a name="selecting-security-bindings"></a>Selección de enlaces de seguridad
 
-Al diseñar la seguridad de una aplicación, la decisión principal es la selección de los enlaces de seguridad que se incluirán en la descripción de seguridad. Estas son algunas directrices para elegir enlaces de seguridad adecuados para el escenario de seguridad de una aplicación. Una heurística útil es comprender primero qué tipos de credenciales de seguridad (por ejemplo, certificados [**X.509**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_credential), nombre de usuario o contraseñas de dominio de Windows, nombre de usuario y contraseñas definidos por la [**aplicación)**](/windows/desktop/api/WebServices/ns-webservices-ws_username_credential)estarán disponibles para la aplicación y, [**después,**](/windows/desktop/api/WebServices/ns-webservices-ws_windows_integrated_auth_credential)elegir un enlace de seguridad que pueda usar ese tipo de credencial.
+Al diseñar la seguridad de una aplicación, la decisión principal es la selección de los enlaces de seguridad que se incluirán en la descripción de seguridad. Estas son algunas directrices para elegir enlaces de seguridad adecuados para el escenario de seguridad de una aplicación. Una heurística útil es comprender primero qué tipos de credenciales de seguridad (por ejemplo, certificados [**X.509**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_credential), nombre de usuario/contraseñas de dominio de [**Windows,**](/windows/desktop/api/WebServices/ns-webservices-ws_windows_integrated_auth_credential)nombre de usuario y contraseñas definidos por la [**aplicación)**](/windows/desktop/api/WebServices/ns-webservices-ws_username_credential)estarán disponibles para la aplicación y, a continuación, elegir un enlace de seguridad que pueda usar ese tipo de credencial.
 
 -   La seguridad de transporte, donde se aplica la seguridad en el nivel de flujo de bytes de transporte (por debajo de los límites del mensaje SOAP), es la primera opción que se debe tener en cuenta.
     -   Para escenarios de Internet y para aquellos escenarios de intranet en los que se puede implementar un certificado X.509 en el servidor, la aplicación puede usar [**WS \_ SSL TRANSPORT SECURITY \_ \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding). En el ejemplo siguiente se muestra esta opción. Cliente: [HttpClientWithSslExample](httpclientwithsslexample.md) Server: [HttpServerWithSslExample](httpserverwithsslexample.md).
 
         Si se desea la autenticación de cliente a través de la autenticación de encabezado HTTP, se puede agregar un ENLACE DE SEGURIDAD DE [**\_ \_ \_ AUTENTICACIÓN \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_http_header_auth_security_binding) DE ENCABEZADO HTTP de WS para proporcionar esa funcionalidad.
 
-    -   En los escenarios de intranet Windows protocolos de autenticación integrada como Kerberos, NTLM y SPNEGO son adecuados, la aplicación puede usar [**WS \_ TCP \_ SSPI \_ TRANSPORT SECURITY \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding). En el ejemplo siguiente se muestra esta opción: [Client: RequestReplyTcpClientWithWindowsTransportSecurityExample](requestreplytcpclientwithwindowstransportsecurityexample.md) Server: [RequestReplyTcpServerWithWindowsTransportSecurityExample](requestreplytcpserverwithwindowstransportsecurityexample.md).
+    -   Para escenarios de intranet Windows protocolos de autenticación integrada como Kerberos, NTLM y SPNEGO son adecuados, la aplicación puede usar [**WS \_ TCP \_ SSPI \_ TRANSPORT SECURITY \_ \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding). En el ejemplo siguiente se muestra esta opción: [Client: RequestReplyTcpClientWithWindowsTransportSecurityExample](requestreplytcpclientwithwindowstransportsecurityexample.md) Server: [RequestReplyTcpServerWithWindowsTransportSecurityExample](requestreplytcpserverwithwindowstransportsecurityexample.md).
 
         Cliente sobre canalizaciones con nombre: [RequestReplyNamedPipesClientWithWindowsTransportSecurityExample](requestreplynamedpipesclientwithwindowstransportsecurityexample.md)
 
@@ -111,30 +111,30 @@ Al usar la aplicación WWSAPI API para seguridad, las aplicaciones se enfrentan 
 <span id="Accidental_misconfiguration"></span><span id="accidental_misconfiguration"></span><span id="ACCIDENTAL_MISCONFIGURATION"></span>Error de configuración accidental
 </dt> <dd>
 
-WWSAPI admite una variedad de opciones de configuración relacionadas con la seguridad. Vea por ejemplo el identificador [**de propiedad de enlace de seguridad \_ \_ \_ \_ de WS**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_property_id). Algunas de estas opciones, como **WS \_ SECURITY BINDING PROPERTY ALLOW ANONYMOUS \_ \_ \_ \_ \_ CLIENTS** permiten a la aplicación reducir el nivel predeterminado de seguridad proporcionado por los distintos enlaces de seguridad. El uso de estas opciones debe evaluarse cuidadosamente para asegurarse de que no haya vectores de ataque resultantes.
+WWSAPI admite una variedad de opciones de configuración relacionadas con la seguridad. Vea por ejemplo el identificador [**de PROPIEDAD DE ENLACE DE SEGURIDAD \_ \_ \_ \_ de WS**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_property_id). Algunas de estas opciones, como **WS \_ SECURITY BINDING PROPERTY ALLOW ANONYMOUS \_ \_ \_ \_ \_ CLIENTS** permiten a la aplicación reducir el nivel predeterminado de seguridad proporcionado por los distintos enlaces de seguridad. El uso de estas opciones debe evaluarse cuidadosamente para asegurarse de que no haya vectores de ataque resultantes.
 
-Además, como se describió anteriormente, WWSAPI permite que una aplicación deshabilite deliberadamente determinados pasos necesarios para proteger completamente un intercambio de mensajes, como permitir deshabilitar el cifrado aunque se transmitan credenciales de seguridad. Esto permite habilitar determinados escenarios específicos y no debe usarse para la comunicación general. El nivel de protección de [**WS \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_protection_level) debe reducirse específicamente para habilitar estos escenarios, y las aplicaciones no deben cambiar ese valor a menos que sea absolutamente necesario, ya que al hacerlo se deshabilitarán muchas comprobaciones diseñadas para garantizar una configuración segura.
+Además, como se ha descrito anteriormente, WWSAPI permite que una aplicación deshabilite deliberadamente determinados pasos necesarios para proteger completamente un intercambio de mensajes, como permitir deshabilitar el cifrado aunque se transmitan credenciales de seguridad. Esto permite habilitar determinados escenarios específicos y no debe usarse para la comunicación general. [**WS \_ PROTECTION \_ LEVEL**](/windows/desktop/api/WebServices/ne-webservices-ws_protection_level) debe reducirse específicamente para habilitar estos escenarios y las aplicaciones no deben cambiar ese valor a menos que sea absolutamente necesario, ya que al hacerlo se deshabilitarán muchas comprobaciones diseñadas para garantizar una configuración segura.
 
 </dd> <dt>
 
 <span id="Storing_confidential_information_in_memory"></span><span id="storing_confidential_information_in_memory"></span><span id="STORING_CONFIDENTIAL_INFORMATION_IN_MEMORY"></span>Almacenamiento de información confidencial en memoria
 </dt> <dd>
 
-La información confidencial, como las contraseñas, que se almacena en memoria es vulnerable a ser extraída por un atacante con privilegios mediante, por ejemplo, el archivo de página. WWSAPI realiza una copia de las credenciales proporcionadas y cifra esa copia, dejando los datos originales desprotegidos. Es responsabilidad de la aplicación proteger la instancia original. Además, la copia cifrada se descifra brevemente mientras se usa, lo que abre una ventana para extraerla.
+La información confidencial, como las contraseñas, que se almacena en memoria es vulnerable a ser extraída por un atacante con privilegios mediante, por ejemplo, el archivo de página. WWSAPI realiza una copia de las credenciales proporcionadas y cifra esa copia, dejando los datos originales sin protección. Es responsabilidad de la aplicación proteger la instancia original. Además, la copia cifrada se descifra brevemente mientras se usa, lo que abre una ventana para extraerla.
 
 </dd> <dt>
 
 <span id="Denial_of_service"></span><span id="denial_of_service"></span><span id="DENIAL_OF_SERVICE"></span>Denegación de servicio
 </dt> <dd>
 
-El procesamiento de seguridad puede consumir recursos significativos. Cada enlace de seguridad adicional aumenta esos costos. WWSAPI anula el procesamiento de seguridad en cuanto se produce un error de comprobación de seguridad, pero es posible que determinadas comprobaciones, como las decisiones de autorización, no se realicen hasta que se haya realizado un trabajo significativo.
+El procesamiento de seguridad puede consumir recursos significativos. Cada enlace de seguridad adicional aumenta esos costos. WWSAPI anula el procesamiento de seguridad en cuanto se encuentra un error de comprobación de seguridad, pero es posible que determinadas comprobaciones, como las decisiones de autorización, no se realicen hasta que se haya realizado un trabajo significativo.
 
-Mientras se procesa un mensaje en el servidor, el estado de seguridad se almacena en el montón de mensajes. La aplicación puede limitar el consumo de memoria durante el procesamiento de seguridad reduciendo el tamaño de ese montón a través de PROPIEDADES DEL MONTÓN DE LA PROPIEDAD DE MENSAJE de \_ \_ \_ \_ WS. Además, ciertos enlaces de seguridad como WS SECURITY CONTEXT MESSAGE SECURITY BINDING pueden hacer que el servidor asigne recursos en \_ \_ nombre del \_ \_ \_ cliente. Los límites de esos recursos se pueden configurar mediante los siguientes valores de id. de propiedad de [**enlace de seguridad \_ \_ \_ \_ de WS:**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_property_id)
+Mientras se procesa un mensaje en el servidor, el estado de seguridad se almacena en el montón de mensajes. La aplicación puede limitar el consumo de memoria durante el procesamiento de seguridad mediante la reducción del tamaño de ese montón a través de PROPIEDADES \_ DE MONTÓN DE WS MESSAGE \_ \_ \_ PROPERTY. Además, determinados enlaces de seguridad, como WS SECURITY CONTEXT MESSAGE SECURITY BINDING, pueden hacer que el servidor asigne recursos en \_ \_ nombre del \_ \_ \_ cliente. Los límites de esos recursos se pueden configurar mediante los siguientes valores de identificador DE [**PROPIEDAD DE ENLACE DE SEGURIDAD \_ \_ \_ \_ de WS:**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_property_id)
 
 -   CONTEXTO DE SEGURIDAD MÁXIMO DE CONTEXTOS PENDIENTES DE LA PROPIEDAD DE ENLACE DE SEGURIDAD DE \_ \_ \_ \_ \_ \_ \_ \_ WS
--   CONTEXTOS ACTIVOS MÁXIMOS DE CONTEXTOS ACTIVOS DE LA PROPIEDAD DE ENLACE DE SEGURIDAD DE \_ \_ \_ \_ \_ \_ \_ \_ WS
--   INTERVALO DE RENOVACIÓN \_ DEL CONTEXTO DE SEGURIDAD DE LA PROPIEDAD \_ \_ \_ WS \_ \_ SECURITY BINDING \_
--   WS \_ SECURITY \_ BINDING \_ PROPERTY \_ SECURITY \_ CONTEXT \_ ROLLOVER \_ INTERVAL
+-   CONTEXTOS ACTIVOS MÁXIMOS DE CONTEXTO ACTIVO DE LA PROPIEDAD DE ENLACE DE \_ \_ SEGURIDAD \_ \_ \_ \_ \_ \_ WS
+-   INTERVALO DE RENOVACIÓN \_ DEL CONTEXTO DE SEGURIDAD DE LA PROPIEDAD DE ENLACE DE \_ \_ \_ \_ \_ \_ SEGURIDAD WS
+-   INTERVALO DE SUCIÓN DE CONTEXTO DE SEGURIDAD DE LA PROPIEDAD DE ENLACE DE \_ \_ SEGURIDAD \_ \_ \_ \_ \_ WS
 
 Establecer esos límites en valores bajos reduce el consumo máximo de memoria, pero puede provocar que los clientes legítimos se rechacen cuando se alcanza la cuota.
 

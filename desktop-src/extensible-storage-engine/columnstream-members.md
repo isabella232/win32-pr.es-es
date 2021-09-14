@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Miembros columnStream'
+description: 'Más información sobre: Miembros ColumnStream'
 title: 'Miembros de ColumnStream '
 TOCTitle: ColumnStream members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.ColumnStream
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.colu
 ms:contentKeyID: 55101147
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 4053991221a768e486862b3bb86c9cae193407f5815c662d723871a65654db2a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f35c0e000329bc98e2f9fd5873cd724516271d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258431"
 ---
 # <a name="columnstream-members"></a>Miembros de ColumnStream 
 
@@ -249,7 +249,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

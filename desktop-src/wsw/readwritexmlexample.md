@@ -5,15 +5,15 @@ ms.assetid: e9802e3c-c8a0-4b68-bba5-cdafb7250298
 keywords:
 - ReadWriteXmlExample Web Services for Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d10ce422a8a5406c13974404353166d695f82ff978d87e838c56d0ceda353381
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3d83230f690098958ea396e830aaa54dace1f73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119545795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256023"
 ---
 # <a name="readwritexmlexample"></a>ReadWriteXmlExample
 

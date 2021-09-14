@@ -1,88 +1,88 @@
 ---
 title: Glosario (conceptos básicos de diseño)
-description: Un glosario de términos usados en las directrices de la experiencia del usuario para las aplicaciones de escritorio de Windows.
+description: Glosario de términos usados en las directrices de la experiencia de usuario para Windows aplicaciones de escritorio.
 ms.assetid: 9f35f9be-6165-4d98-a2e6-26fb4fc91eae
 ms.topic: article
 ms.date: 10/20/2020
 ms.openlocfilehash: 3009940612d0b42ae8ee225e8db59ebabdbf35fa
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105698008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360991"
 ---
 # <a name="glossary-design-basics"></a>Glosario (conceptos básicos de diseño)
 
 > [!NOTE]
-> Esta guía de diseño se ha creado para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de la guía se sigue aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [Guía de diseño actual](/windows/uwp/design/).
+> Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-[A](#alink) \| [B](#b) \| [C](#c) \| [D](#d) \| [E](#e) \| [F](#f) \| [G](#g) \| [H](#h) \| [](#i) \| [J](#j) \| [K](#k) \| [l](#l) \| [M](#m)\|
+[A](#alink) \| [B](#b) \| [C](#c) \| [D](#d) \| [E](#e) \| [F](#f) \| [G](#g) H \| [](#h) \| [I](#i) J \| [](#j) \| [K](#k) \| [L](#l) \| [M](#m)\|
 
-[N](#n) \| [O](#o) \| [p](#p) \| [Q](#q) \| [R](#r) \| [S](#s) \| [T](#t) \| [U](#u) \| [V](#v) \| [W](#w) \| [X](#x) \| [Y](#y) \| [Z](#z)
+[N](#n) \| [O](#o) \| [P](#p) \| [Q](#q) \| [R](#r) \| [S](#s) \| [T](#t) \| [U](#u) \| [V](#v) \| [W](#w) \| [X](#x) \| [Y](#y) \| [Z](#z)
 
 ## <a name=""></a><a name="alink">A</a>
 
-**Cuadro acerca de**
+**Cuadro Acerca de**
 
-Cuadro de diálogo que proporciona información general del programa, como la identificación de la versión, el copyright, los contratos de licencia y las formas de obtener acceso al soporte técnico.
+Cuadro de diálogo que proporciona información general del programa, como la identificación de la versión, los derechos de autor, los contratos de licencia y las formas de acceder al soporte técnico.
 
-**por encima del pliegue**
+**por encima del plegado**
 
-Metáfora de diseño de pantalla tomada del periodismo de periódico. El contenido que se encuentra por encima del doblez del periódico debe ser especialmente interesante para las ventas de la venta. Del mismo modo, en el diseño de pantalla, el contenido más importante debe estar visible sin desplazarse. Los usuarios deben estar motivados para dedicar tiempo a desplazarse más allá del contenido que encuentren inicialmente "por encima del pliegue".
+Metáfora de diseño de pantalla tomada del periodismo de periódico. El contenido sobre el plegado del periódico debe ser especialmente atractivo para impulsar las ventas. Del mismo modo, en el diseño de la pantalla, el contenido más importante debe estar visible sin desplazarse. Los usuarios deben estar motivados a tardar el tiempo en desplazarse más allá del contenido que encuentran inicialmente "por encima del plegado".
 
 **clave de acceso**
 
-Clave alfanumérica que, cuando se combina con la tecla Alt, activa un control. Las teclas de acceso se indican mediante la subrayación de uno de los caracteres de la etiqueta del control. Por ejemplo, al presionar ALT + O se activa un control cuya etiqueta es "Open" y cuya clave de acceso asignada es "O". Las claves de acceso no distinguen mayúsculas de minúsculas. El efecto de activar un control depende del tipo de control.
+Clave alfanumérica que, cuando se combina con la tecla Alt, activa un control . Las claves de acceso se indican mediante la subrayado de uno de los caracteres de la etiqueta del control. Por ejemplo, al presionar Alt+O se activa un control cuya etiqueta es "Open" y cuya clave de acceso asignada es "O". Las claves de acceso no distinguen mayúsculas de minúsculas. El efecto de activar un control depende del tipo de control.
 
-A diferencia de las teclas de método abreviado, que están pensadas principalmente para usuarios avanzados, las teclas de acceso están diseñadas para mejorar la accesibilidad. Dado que están documentados directamente dentro de la interfaz de usuario (UI), no se pueden asignar siempre de forma coherente y no pretenden memorizarse.
+A diferencia de las teclas de método abreviado, que están pensadas principalmente para usuarios avanzados, las claves de acceso están diseñadas para mejorar la accesibilidad. Dado que se documentan directamente dentro de la propia interfaz de usuario , no siempre se pueden asignar de forma coherente y no están diseñados para ser memorizados.
 
-**Monitor activo**
+**monitor activo**
 
-Monitor en el que se está ejecutando el programa activo.
+Monitor en el que se ejecuta el programa activo.
 
 **barra de direcciones**
 
 Un elemento de navegación, que normalmente aparece en la parte superior de una ventana, que muestra y permite a los usuarios cambiar su ubicación actual. Vea también: [barra de ruta de navegación](#b).
 
-**asequibilidad**
+**affordance**
 
-Propiedades visuales de un objeto que indican cómo se puede usar o en las que se puede actuar. Por ejemplo, los botones de comando tienen la apariencia visual de los botones del mundo real, lo que sugiere insertar o hacer clic.
+Propiedades visuales de un objeto que indican cómo se puede usar o actuar. Por ejemplo, los botones de comando tienen la apariencia visual de los botones del mundo real, lo que sugiere insertar o hacer clic.
 
 **application**
 
-Programa que se usa para realizar un conjunto relacionado de tareas de usuario; suele ser relativamente complejo y sofisticado. Vea también: [programa](#p).
+Un programa que se usa para realizar un conjunto relacionado de tareas de usuario; a menudo relativamente compleja y sofisticada. Vea también: [programa](#p).
 
 **clave de aplicación**
 
-Tecla del teclado con un gráfico de menú contextual. Esta clave se usa para mostrar el menú contextual del elemento seleccionado.
+Tecla de teclado con un gráfico de menú contextual. Esta clave se usa para mostrar el menú contextual del elemento seleccionado.
 
 **menú de la aplicación**
 
-Un control que presenta un menú de comandos que implica realizar algo en o con un documento o área de trabajo, como comandos relacionados con archivos.
+Control que presenta un menú de comandos que implican hacer algo con un documento o área de trabajo, como comandos relacionados con archivos.
 
-Muestra el menú contextual de la selección actual (igual que presionar Mayús + F10).
+Muestra el menú contextual de la selección actual (lo mismo que presionar Mayús+F10).
 
-**agrupación de aplicaciones**
+**application theming**
 
-Usar técnicas visuales relacionadas, como controles personalizados, para crear una apariencia o personalización de marca únicas para una aplicación.
+Usar técnicas visuales relacionadas, como controles personalizados, para crear una apariencia única o personalización de marca para una aplicación.
 
 **relación de aspecto**
 
-Expresión de la relación entre el ancho de un objeto y su alto. Por ejemplo, el televisor de alta definición usa una relación de aspecto de 16:9.
+Expresión de la relación entre el ancho de un objeto y su alto. Por ejemplo, la televisión de alta definición usa una relación de aspecto de 16:9.
 
-**Autocompletar**
+**autocompletar**
 
-Tipo de lista que se utiliza en los cuadros de texto y listas desplegables editables en las que se pueden extrapolar y rellenar automáticamente las entradas probables a partir de que se han escrito previamente. Los usuarios escriben una cantidad mínima de texto para rellenar la lista de autocompletar.
+Tipo de lista que se usa en cuadros de texto y listas desplegables editables en las que la entrada probable se puede extrapolar y rellenar automáticamente desde que se haya escrito anteriormente. Los usuarios escriben una cantidad mínima de texto para rellenar la lista de autocompletar.
 
-**salida automática**
+**auto-exit**
 
-Cuadro de texto en el que el foco de entrada se mueve automáticamente al siguiente cuadro de texto relacionado en cuanto un usuario escribe el último carácter.
+Cuadro de texto en el que el foco de entrada se mueve automáticamente al siguiente cuadro de texto relacionado en cuanto un usuario escriba el último carácter.
 
 ## <a name="b"></a>B
 
-**LDM**
+**Globo**
 
-Un control común de Windows que informa a los usuarios de un problema no crítico o una condición especial.
+Un control Windows que informa a los usuarios de un problema no crítico o una condición especial.
 
 **barra de ruta de navegación**
 
@@ -90,25 +90,25 @@ Un elemento de navegación, que normalmente aparece en la parte superior de una 
 
 ## <a name="c"></a>C
 
-**casilla de verificación**
+**casilla**
 
-Un control común de Windows que permite a los usuarios decidir entre opciones claramente diferentes, como alternar o desactivar una opción.
+Un control Windows que permite a los usuarios decidir entre opciones claramente distintas, como alternar una opción activa o desactivada.
 
-**botón**
+**Chevron**
 
-Control o botón pequeño que indica que hay más elementos que se pueden mostrar en el espacio asignado. Los usuarios hacen clic en el botón de contenido adicional para ver los elementos adicionales.
+Un pequeño control o botón que indica que hay más elementos de los que se pueden mostrar en el espacio asignado. Los usuarios hacen clic en el botón de contenido adicional para ver los elementos adicionales.
 
 **ventana secundaria**
 
-Ventana, como un control o un panel, que se encuentra completamente dentro de otra ventana, a la que se hace referencia como ventana primaria. Vea también: [ventana primaria](#p), [ventana propiedad](#o).
+Una ventana, como un control o un panel, que se encuentra completamente dentro de otra ventana, denominada ventana primaria. Vea también: ventana [primaria](#p), [ventana de propiedad](#o).
 
-**Desactivado**
+**Despejado**
 
-En una casilla, indica que la opción no está establecida. Vea también: [seleccionado](#s), [Estado mixto](#m).
+En una casilla, indica que la opción no está establecida. Vea también: [seleccionado](#s), [estado mixto](#m).
 
 **cuadro combinado**
 
-Un control común de Windows que combina las características de una lista desplegable o un cuadro de lista estándar, y un cuadro de texto editable. Vea también: [cuadro de lista](#l), [lista](#d)desplegable.
+Un control Windows que combina las características de una lista desplegable o un cuadro de lista estándar, y un cuadro de texto editable. Vea también: [cuadro de lista](#l), lista [desplegable](#d).
 
 **área de comandos**
 
@@ -116,63 +116,63 @@ Un control común de Windows que combina las características de una lista despl
 
 **botón de comando**
 
-Un control común de Windows que permite a los usuarios iniciar una acción inmediatamente.
+Un control Windows que permite a los usuarios iniciar una acción inmediatamente.
 
 **vínculo de comando**
 
-Control que se usa para elegir entre un conjunto de opciones relacionadas mutuamente excluyentes. En su estado normal, los vínculos de comandos tienen una apariencia ligera similar a la de los hipervínculos, pero su comportamiento es más similar a los botones de comando.
+Control que se usa para elegir entre un conjunto de opciones mutuamente excluyentes y relacionadas. En su estado normal, los vínculos de comandos tienen un aspecto ligero similar a los hipervínculos, pero su comportamiento es más similar a los botones de comando.
 
 **botón confirmar**
 
-Un botón de comando que se usa para confirmar una tarea, pasar al siguiente paso en una tarea de varios pasos o cancelar una tarea. Vea también: área de comandos.
+Botón de comando que se usa para confirmar una tarea, continuar con el paso siguiente en una tarea de varios pasos o cancelar una tarea. Vea también: área de comandos.
 
-**Página de confirmación**
+**página de confirmación**
 
-Un tipo de página del asistente en la que los usuarios se confirman para realizar la tarea. Después de hacerlo, no se puede deshacer la tarea haciendo clic en los botones atrás o cancelar.
+Tipo de página del asistente en la que los usuarios se comprometen a realizar la tarea. Después de hacerlo, la tarea no se puede deshacer haciendo clic en los botones Atrás o Cancelar.
 
-**Página finalización**
+**página de finalización**
 
-Página del asistente que se usa para indicar el final de un asistente. A veces se usa en lugar de las páginas de enhorabuena. Vea también: Página de enhorabuena.
+Página del asistente que se usa para indicar el final de un asistente. A veces se usa en lugar de páginas de enhorabuena. Consulte también: página de enhorabuena.
 
-**Página de enhorabuena**
+**página de enhorabuena**
 
-Página del asistente que se usa para indicar el final de un asistente. Estas páginas ya no se recomiendan. Los asistentes finalizan de forma más eficaz con una página de confirmación o, si es necesario, con una página de seguimiento o de finalización. Vea también: Página de confirmación, página de finalización, [Página de seguimiento](#f).
+Página del asistente que se usa para indicar el final de un asistente. Estas páginas ya no se recomiendan. Los asistentes concluyen de forma más eficaz con una página de confirmación o, si es necesario, una página de seguimiento o finalización. Vea también: página de confirmación, página de finalización, [página de seguimiento](#f).
 
 **Interfaz de usuario de consentimiento**
 
-Cuadro de diálogo usado por el control de cuentas de usuario (UAC) que permite a los administradores protegidos elevar sus privilegios temporalmente.
+Cuadro de diálogo que usa el Control de cuentas de usuario (UAC) que permite a los administradores protegidos elevar temporalmente sus privilegios.
 
-**restricción**
+**Restricción**
 
-En los controles que implican los datos proporcionados por el usuario, como los cuadros de texto, las restricciones de entrada son una manera valiosa de evitar errores. Por ejemplo, si la única entrada válida para un control determinado es numérica, el control puede utilizar las restricciones de valor adecuadas para aplicar este requisito.
+En los controles que implican la entrada del usuario, como los cuadros de texto, las restricciones de entrada son una manera valiosa de evitar errores. Por ejemplo, si la única entrada válida para un control determinado es numérica, el control puede usar las restricciones de valor adecuadas para aplicar este requisito.
 
 **área de contenido**
 
-Parte de las superficies de la interfaz de usuario, como cuadros de diálogo, elementos del panel de control y asistentes, dedicada a presentar opciones, proporcionar información y describir controles. Distintivo del área de comandos, el panel de tareas y el área de navegación.
+La parte de las superficies de interfaz de usuario, como cuadros de diálogo, elementos del panel de control y asistentes, dedicada a presentar opciones, proporcionar información y describir controles. Se distingue del área de comandos, el panel de tareas y el área de navegación.
 
 **pestaña contextual**
 
-Pestaña que contiene una colección de comandos que solo son relevantes cuando el usuario ha seleccionado un tipo de objeto determinado. Vea también: [cinta](#r)de opciones.
+Pestaña que contiene una colección de comandos que solo son pertinentes cuando el usuario ha seleccionado un tipo de objeto determinado. Vea también: Cinta [de opciones](#r).
 
 **Control Panel (Panel de control)**
 
-Programa de Windows que recopila y muestra a los usuarios las características de nivel de sistema del equipo, incluida la instalación y configuración de hardware y software. En el panel de control, los usuarios pueden hacer clic en elementos individuales para configurar características de nivel de sistema y realizar tareas relacionadas. Vea también: elemento del panel de control.
+Un Windows que recopila y muestra a los usuarios las características de nivel de sistema del equipo, incluida la configuración y configuración de hardware y software. Desde Panel de control, los usuarios pueden hacer clic en elementos individuales para configurar características de nivel de sistema y realizar tareas relacionadas. Vea también: elemento del panel de control.
 
 **elemento del panel de control**
 
-Característica individual disponible en el panel de control. Por ejemplo, los programas y la facilidad de acceso son dos elementos del panel de control.
+Una característica individual disponible en Panel de control. Por ejemplo, Programas y Accesibilidad son dos elementos del panel de control.
 
 **Interfaz de usuario de credenciales**
 
-Cuadro de diálogo usado por el control de cuentas de usuario (UAC) que permite a los usuarios estándar solicitar la elevación temporal de sus privilegios.
+Cuadro de diálogo que usa el Control de cuentas de usuario (UAC) que permite a los usuarios estándar solicitar la elevación temporal de sus privilegios.
 
 **crítica**
 
-Grado más alto de gravedad. Por ejemplo, en los mensajes de error y ADVERTENCIA, las circunstancias críticas pueden implicar pérdida de datos, pérdida de privacidad o pérdida de integridad del sistema.
+El mayor grado de gravedad. Por ejemplo, en los mensajes de error y advertencia, las circunstancias críticas pueden implicar la pérdida de datos, la pérdida de privacidad o la pérdida de integridad del sistema.
 
 **icono personalizado**
 
-Representación gráfica única de un programa (en oposición a un icono del sistema de Windows).
+Representación gráfica única de un programa (en lugar de un icono Windows sistema).
 
 **objetos visuales personalizados**
 
@@ -182,107 +182,107 @@ Gráficos, animaciones, iconos y otros elementos visuales desarrollados especial
 
 **botón o vínculo de comando predeterminado**
 
-Botón o vínculo de comando que se invoca cuando los usuarios presionan la tecla entrar. El desarrollador asigna el botón de comando o el vínculo predeterminados, pero cualquier botón o vínculo de comando se convierte en el valor predeterminado cuando los usuarios la pestaña.
+Botón de comando o vínculo que se invoca cuando los usuarios presionan la tecla Entrar. El desarrollador asigna el botón o vínculo de comando predeterminado, pero cualquier botón de comando o vínculo se convierte en el valor predeterminado cuando los usuarios le tabulan.
 
 **monitor predeterminado**
 
-Monitor con el menú Inicio, la barra de tareas y el área de notificación.
+Monitor con la menú Inicio, la barra de tareas y el área de notificación.
 
-**modelo de confirmación diferida**
+**modelo de confirmación retrasada**
 
-El modelo de confirmación que usan las páginas radiales del elemento del panel de control, donde los cambios no se realizan hasta que los usuarios los confirman explícitamente haciendo clic en un botón confirmar Por lo tanto, los usuarios pueden abandonar una tarea, desplazarse con el botón atrás, cerrar o la barra de direcciones. Vea también: [modelo de confirmación inmediata](#i).
+Modelo de confirmación que usan las páginas de radio de elementos del panel de control en las que los cambios no se realizan hasta que los usuarios confirman explícitamente que hacen clic en un botón de confirmación. Por lo tanto, los usuarios pueden abandonar una tarea, desplazándose por la botón Atrás, Cerrar o la barra de direcciones. Vea también: [Modelo de confirmación inmediata](#i).
 
-**edición**
+**Escritorio**
 
-El área de trabajo en pantalla que proporciona Windows, análoga a un escritorio físico. Vea también: [área de trabajo](#w).
+El área de trabajo en pantalla proporcionada por Windows, análoga a un escritorio físico. Vea también: [área de trabajo](#w).
 
 **comando destructivo**
 
-Acción que tiene un efecto generalizado y que no se puede deshacer fácilmente, o que no se percibe de inmediato.
+Una acción que tiene un efecto generalizado y no se puede deshacer fácilmente o que no se aprecia inmediatamente.
 
 **panel de detalles**
 
-Panel situado en la parte inferior de una ventana del explorador de Windows que muestra los detalles (si existen) de los elementos seleccionados; de lo contrario, muestra detalles acerca de la carpeta. Por ejemplo, la Galería fotográfica de Windows muestra el nombre de la imagen, el tipo de archivo, la fecha de toma, las etiquetas, la clasificación, las dimensiones y el tamaño del archivo. Vea también: [Panel de vista previa](#p).
+El panel de la parte inferior de una ventana Windows Explorer que muestra detalles (si los hay) sobre los elementos seleccionados; de lo contrario, muestra detalles sobre la carpeta. Por ejemplo, Windows Galería de fotos muestra el nombre de la imagen, el tipo de archivo, la fecha de toma, las etiquetas, la clasificación, las dimensiones y el tamaño del archivo. Vea también: Panel [de vista previa](#p).
 
 **cuadro de diálogo**
 
-Una ventana secundaria que permite a los usuarios realizar un comando, preguntar a los usuarios o proporcionar información sobre el progreso o los usuarios.
+Una ventana secundaria que permite a los usuarios realizar un comando, hacer una pregunta a los usuarios o proporcionar a los usuarios información o comentarios de progreso.
 
 **selector de cuadro de diálogo**
 
-En una cinta de opciones, un botón situado en la parte inferior de algunos grupos que abre un cuadro de diálogo con características relacionadas con el grupo. Vea también: [cinta](#r)de opciones.
+En una cinta de opciones, un botón en la parte inferior de algunos grupos que abre un cuadro de diálogo con características relacionadas con el grupo. Vea también: Cinta [de opciones](#r).
 
-**unidad de cuadro de diálogo**
+**unidad de diálogo**
 
-Una unidad de cuadro de diálogo (DLU) es la medida independiente del dispositivo que se va a usar para el diseño en función de la fuente del sistema actual.
+Una unidad de diálogo (DLU) es la medida independiente del dispositivo que se va a usar para el diseño en función de la fuente del sistema actual.
 
-**manipulación directa**
+**Manipulación directa**
 
-Interacción directa entre el usuario y los objetos de la interfaz de usuario (por ejemplo, iconos, controles y elementos de navegación). El mouse y el toque son métodos comunes de manipulación directa.
+Interacción directa entre el usuario y los objetos de la interfaz de usuario (como iconos, controles y elementos de navegación). El mouse y la entrada táctil son métodos comunes de manipulación directa.
 
 **ventana acoplada**
 
-Una ventana que aparece en una ubicación fija en el borde de la ventana propietaria. Vea también: [ventana flotante](#f).
+Ventana que aparece en una ubicación fija en el borde de su ventana de propietario. Vea también: [ventana flotante.](#f)
 
 **flecha desplegable**
 
-La flecha asociada a listas desplegables, cuadros combinados, botones de expansión y botones de menú, que indican que los usuarios pueden ver la lista asociada haciendo clic en la flecha.
+Flecha asociada a listas desplegables, cuadros combinados, botones de división y botones de menú, lo que indica que los usuarios pueden ver la lista asociada haciendo clic en la flecha.
 
 **lista desplegable**
 
-Un control común de Windows que permite a los usuarios seleccionar entre una lista de valores mutuamente excluyentes. A diferencia de un cuadro de lista, esta lista de opciones disponibles suele estar oculta.
+Un control Windows que permite a los usuarios seleccionar entre una lista de valores mutuamente excluyentes. A diferencia de un cuadro de lista, esta lista de opciones disponibles normalmente está oculta.
 
 ## <a name="e"></a>E
 
 **resolución efectiva**
 
-Resolución física de un monitor normalizada por la configuración de PPP (puntos por pulgada) actual. En 96 PPP, la resolución efectiva es la misma que la resolución física, pero en otros PPP, la resolución eficaz se debe escalar proporcionalmente. Por lo general, la resolución eficaz se puede calcular mediante la siguiente ecuación:
+Resolución física de un monitor normalizada por la configuración actual de ppp (puntos por pulgada). A 96 ppp, la resolución efectiva es la misma que la resolución física, pero en otros valores de ppp, la resolución efectiva se debe escalar proporcionalmente. Por lo general, la resolución efectiva se puede calcular mediante la ecuación siguiente:
 
-Resolución efectiva = resolución física x (96/valor de PPP actual)
+Resolución efectiva = Resolución física x (configuración de 96 /ppp actual)
 
-Vea también: [píxeles relativos](#r), [resolución física](#p).
+Vea también: [píxeles relativos,](#r) [resolución física.](#p)
 
-**Administrador elevado**
+**administrador con privilegios elevados**
 
-En control de cuentas de usuario, los administradores con privilegios elevados tienen privilegios de administrador. Sin la elevación, los administradores se ejecutan en su estado con privilegios mínimos. El cuadro de diálogo de la interfaz de usuario de consentimiento se utiliza para elevar los administradores a un estado elevado solo cuando sea necesario. Vea también: [Administrador protegido](#p), [usuario estándar](#s).
+En Control de cuentas de usuario, los administradores con privilegios elevados tienen sus privilegios de administrador. Sin elevar, los administradores se ejecutan en su estado con privilegios mínimos. El cuadro de diálogo Consent UI (Interfaz de usuario de consentimiento) se usa para elevar a los administradores al estado con privilegios elevados solo cuando sea necesario. Consulte también: [administrador protegido,](#p) [usuario estándar.](#s)
 
 **información sobre herramientas mejorada**
 
-Ventana emergente que explica de manera concisa el comando al que se apunta. Al igual que la información sobre herramientas normal, la información sobre herramientas mejorada puede proporcionar la tecla de método abreviado para el comando. Pero a diferencia de la información sobre herramientas normal, también pueden proporcionar información adicional, gráficos y un indicador que ayuda está disponible. También pueden utilizar texto enriquecido y separadores. Vea también: [información sobre herramientas](#t).
+Ventana emergente que explica concisamente el comando al que se apunta. Al igual que la información sobre herramientas normal, la información sobre herramientas mejorada puede proporcionar la tecla de método abreviado para el comando. Pero a diferencia de la información sobre herramientas normal, también pueden proporcionar información complementaria, gráficos y un indicador de que la Ayuda está disponible. También pueden usar texto enriquecido y separadores. Vea también: información [sobre herramientas.](#t)
 
 **error**
 
-Estado en el que se ha producido un problema. Vea también: [ADVERTENCIA](#w).
+Estado en el que se ha producido un problema. Vea también: [advertencia](#w).
 
-**encabezados expansibles**
+**encabezados ampliables**
 
-Patrón de cheurón de divulgación progresiva en el que se puede expandir o contraer un encabezado para mostrar u ocultar un grupo de elementos. Vea también: [divulgación progresiva](#p).
+Patrón de contenido adicional de divulgación progresiva en el que se puede expandir o contraer un encabezado para mostrar u ocultar un grupo de elementos. Vea también: [divulgación progresiva.](#p)
 
 **selección extendida**
 
-En las vistas de lista y los cuadros de lista, un modo de selección múltiple en el que se puede extender la selección de un solo elemento arrastrando o presionando Mayús + clic o Ctrl + clic para seleccionar grupos de valores contiguos o no adyacentes, respectivamente. Vea también: [selección múltiple](#m).
+En las vistas de lista y los cuadros de lista, un modo de selección múltiple donde la selección de un solo elemento se puede extender arrastrando o con Mayús+clic o Ctrl+clic para seleccionar grupos de valores contiguos o no adyacentes, respectivamente. Vea también: [selección múltiple.](#m)
 
 ## <a name="f"></a>F
 
-**Plaza**
+**Película**
 
-Trazo rápido y sencillo de un dedo o un lápiz en una pantalla. Un gesto se reconoce como un gesto y se interpreta como un comando de navegación o de edición.
+Trazo rápido y directo de un dedo o un lápiz en una pantalla. Un gesto se reconoce como gesto y se interpreta como un comando de navegación o edición.
 
 **ventana flotante**
 
-Ventana que puede aparecer en cualquier parte de la pantalla que el usuario desea. Vea también: [ventana acoplada](#d).
+Ventana que puede aparecer en cualquier parte de la pantalla que el usuario quiera. Vea también: [ventana acoplada.](#d)
 
-**plegable**
+**Flyout**
 
-Ventana emergente que muestra más información de forma temporal. En el escritorio de Windows, los controles flotantes se muestran al hacer clic en un gadget y se descartan haciendo clic en cualquier lugar fuera del control flotante. Puede usar los controles flotantes en los Estados acoplado y flotante.
+Ventana emergente que muestra temporalmente más información. En el escritorio Windows, los menús desplegables se muestran haciendo clic en un ala y descartando haciendo clic en cualquier lugar fuera del flyout. Puede usar los flotantes en los estados acoplado y flotante.
 
-**Página de seguimiento**
+**página de seguimiento**
 
-Página del asistente que se usa para presentar tareas relacionadas que es probable que los usuarios realicen como seguimiento. A veces se usa en lugar de las páginas de enhorabuena.
+Página del asistente que se usa para presentar las tareas relacionadas que es probable que los usuarios realicen como seguimiento. A veces se usa en lugar de páginas de enhorabuena.
 
-**tipo**
+**Fuente**
 
-Un conjunto de atributos para los caracteres de texto.
+Conjunto de atributos para caracteres de texto.
 
 **pantalla completa**
 
@@ -290,201 +290,201 @@ Ventana maximizada que no tiene un marco.
 
 ## <a name="g"></a>G
 
-**gadget**
+**Gadget**
 
-Una pequeña aplicación hospedada en el escritorio del usuario. Vea también: [Sidebar](#s).
+Una aplicación pequeña sencilla hospedada en el escritorio del usuario. Vea también: [Barra lateral](#s).
 
 **Galería**
 
-Una lista de comandos u opciones presentados gráficamente. Una galería basada en resultados ilustra el efecto de los comandos u opciones en lugar de los propios comandos. Se puede etiquetar o agrupar. Por ejemplo, las opciones de formato se pueden presentar en una galería de miniaturas.
+Lista de comandos u opciones presentados gráficamente. Una galería basada en resultados muestra el efecto de los comandos u opciones en lugar de los propios comandos. Se puede etiquetar o agrupar. Por ejemplo, las opciones de formato se pueden presentar en una galería de miniaturas.
 
-**hacia**
+**Gesto**
 
-Movimiento rápido de un dedo o un lápiz en una pantalla que el equipo interpreta como un comando, en lugar de como movimiento, escritura o dibujo del mouse.
+Movimiento rápido de un dedo o un lápiz en una pantalla que el equipo interpreta como un comando, en lugar de como movimiento del mouse, escritura o dibujo.
 
-**Página de introducción**
+**página de introducción**
 
-Una página opcional del asistente que describe los requisitos previos para ejecutar el asistente correctamente o explica el propósito del asistente.
+Una página del asistente opcional que describe los requisitos previos para ejecutar el asistente correctamente o explica el propósito del asistente.
 
-**cristal**
+**Vidrio**
 
-Una opción de marco de ventana caracterizada por translucence, ayudando a los usuarios a centrarse en el contenido y la funcionalidad, en lugar de en la interfaz que lo rodea.
+Una opción de marco de ventana caracterizada por la translucencia, lo que ayuda a los usuarios a centrarse en el contenido y la funcionalidad en lugar de en la interfaz que lo rodea.
 
-**Pictogram**
+**Glifo**
 
-Término genérico que se usa para hacer referencia a cualquier gráfico o imagen simbólica. Las flechas, las comillas angulares y las viñetas son glifos que se suelen usar en Windows.
+Término genérico que se usa para hacer referencia a cualquier gráfico o imagen simbólica. Las flechas, los botones de contenido adicional y las viñetas son glifos que se usan normalmente en Windows.
 
 **cuadro de grupo**
 
-Un control común de Windows que muestra las relaciones entre un conjunto de controles relacionados.
+Un control Windows que muestra las relaciones entre un conjunto de controles relacionados.
 
 ## <a name="h"></a>H
 
 **reconocimiento de escritura a mano**
 
-Software que convierte la tinta en texto.
+Software que convierte la entrada de lápiz en texto.
 
 **Ayuda**
 
-Asistencia al usuario de una naturaleza más detallada que la que está disponible en la interfaz de usuario principal. Normalmente, se tiene acceso a él desde un menú o haciendo clic en un vínculo o icono de ayuda. este contenido puede adoptar una variedad de formas, incluidos procedimientos paso a paso, texto conceptual o más tutoriales guiados por visualmente.
+Asistencia al usuario de una naturaleza más detallada de la que está disponible en la interfaz de usuario principal. Normalmente, al que se accede desde un menú o haciendo clic en un vínculo o icono de Ayuda, este contenido puede tener diversas formas, incluidos procedimientos paso a paso, texto conceptual o tutoriales guiados más basados visualmente.
 
 **modo de contraste alto**
 
-Una configuración de pantalla especial que proporciona un contraste extremo para los elementos visuales de primer plano y de fondo (negro en blanco o blanco en negro). Especialmente útil para la accesibilidad.
+Una configuración de presentación especial que proporciona un contraste extremo para los elementos visuales de primer plano y de fondo (ya sea negro sobre blanco o blanco sobre negro). Especialmente útil para la accesibilidad.
 
-**Página del concentrador**
+**página del centro**
 
-En los elementos del panel de control, una página de concentrador presenta opciones de alto nivel, como las tareas que se usan con más frecuencia (como con las páginas de concentrador basadas en tareas) o los objetos disponibles (como con las páginas de concentrador basadas en objetos). Los usuarios pueden navegar a las páginas de radios para realizar tareas específicas. Vea también: [Página radios](#s).
+En los elementos del panel de control, una página central presenta opciones de alto nivel, como las tareas más usadas (como con las páginas centrales basadas en tareas) o los objetos disponibles (como con las páginas centrales basadas en objetos). Los usuarios pueden navegar a páginas de radio para realizar tareas específicas. Consulte también: [página de radio](#s).
 
-**Página concentrador híbrido**
+**página del centro híbrido**
 
-En los elementos del panel de control, una página de concentrador híbrido es una página de concentrador que también tiene algunas propiedades o comandos directamente en ella. Se recomienda encarecidamente usar páginas de concentrador híbrido cuando es más probable que los usuarios usen el elemento del panel de control para tener acceso a esas propiedades y comandos.
+En los elementos del panel de control, una página de centro híbrido es una página central que también tiene algunas propiedades o comandos directamente en ella. Las páginas del centro híbrido se recomiendan encarecidamente cuando es más probable que los usuarios usen el elemento del panel de control para acceder a esas propiedades y comandos.
 
 ## <a name="i"></a>I
 
 **modelo de confirmación inmediata**
 
-Modelo de confirmación usado por las páginas del concentrador híbrido en el que los cambios surten efecto tan pronto como los usuarios los realizan. No se usan botones de confirmación en este modelo. Vea también: [modelo de confirmación diferida](#d).
+El modelo de confirmación que usan las páginas del centro híbrido donde los cambios se hacen efectivos en cuanto los usuarios los hacen. Los botones de confirmación no se usan en este modelo. Vea también: [modelo de confirmación retrasada.](#d)
 
-**mensaje en contexto**
+**mensaje in-place**
 
-Mensaje que aparece en el contexto de la superficie de la interfaz de usuario actual, en lugar de una ventana independiente. A diferencia de las ventanas independientes, los mensajes en contexto requieren un espacio de pantalla o un diseño dinámico.
+Mensaje que aparece en el contexto de la superficie de la interfaz de usuario actual, en lugar de una ventana independiente. A diferencia de las ventanas independientes, los mensajes en posición requieren espacio de pantalla disponible o diseño dinámico.
 
 **cuadro de diálogo indirecto**
 
-Un cuadro de diálogo se muestra fuera de contexto, ya sea como resultado indirecto de una tarea o como resultado de un problema con un sistema o un proceso en segundo plano.
+Cuadro de diálogo que se muestra fuera de contexto, ya sea como resultado indirecto de una tarea o como resultado de un problema con un sistema o proceso en segundo plano.
 
-**interfaz de usuario induce**
+**interfaz de usuario integrada**
 
-Una interfaz de usuario que interrumpe una tarea compleja en unos pasos sencillos, explicados claramente, con un propósito claro.
+Una interfaz de usuario que divide una tarea compleja en pasos sencillos, fáciles de explicar y claramente indicados con un propósito claro.
 
-**recuadro informativo**
+**información sobre información**
 
-Pequeña ventana emergente que describe de manera concisa el objeto al que se apunta, como las descripciones de los controles de barra de herramientas, los iconos, los gráficos, los vínculos, los objetos del explorador de Windows, los elementos del menú Inicio y los botones de la barra de tareas. Recuadros informativos son una forma de divulgación progresiva, lo que elimina la necesidad de tener texto descriptivo en pantalla en todo momento.
+Una pequeña ventana emergente que describe de forma concisa el objeto al que se apunta, como descripciones de controles de barra de herramientas, iconos, gráficos, vínculos, objetos del Explorador de Windows, elementos de menú Inicio y botones de la barra de tareas. La información sobre información es una forma de divulgación progresiva, lo que elimina la necesidad de tener texto descriptivo en pantalla en todo momento.
 
-**imprenta**
+**Tinta**
 
-La salida sin formato para un lápiz. Esta tinta digital puede mantenerse tal como está escrita o puede convertirse en texto mediante el software de reconocimiento de escritura a mano.
+Salida sin procesar de un lápiz. Esta entrada de lápiz digital se puede mantener igual de escrita o se puede convertir en texto mediante software de reconocimiento de escritura a mano.
 
-**en línea**
+**Inline**
 
-Colocación de los vínculos o mensajes directamente en el contexto de su interfaz de usuario relacionada. Por ejemplo, un vínculo insertado se produce dentro de otro texto en lugar de por separado.
+Colocación de vínculos o mensajes directamente en el contexto de su interfaz de usuario relacionada. Por ejemplo, un vínculo en línea se produce dentro de otro texto en lugar de por separado.
 
 **foco de entrada**
 
-Ubicación en la que el usuario dirige actualmente la entrada. Tenga en cuenta que, si se resalta una ubicación en la interfaz de usuario, no significa necesariamente que esta ubicación tenga el foco de entrada.
+Ubicación en la que el usuario dirige actualmente la entrada. Tenga en cuenta que el hecho de que una ubicación de la interfaz de usuario esté resaltada no significa necesariamente que esta ubicación tenga el foco de entrada.
 
-**repetición**
+**Ejemplo**
 
-Una sesión de programa. Por ejemplo, Windows Internet Explorer permite a los usuarios ejecutar varias instancias del programa, ya que los usuarios pueden tener varias sesiones independientes en ejecución a la vez. La configuración se puede guardar en las sesiones del programa. Vea también: [persistencia](#p).
+Una sesión de programa. Por ejemplo, Windows Internet Explorer permite a los usuarios ejecutar varias instancias del programa porque los usuarios pueden tener varias sesiones independientes ejecutándose a la vez. Configuración se pueden guardar entre sesiones de programa. Vea también: [persistencia.](#p)
 
 ## <a name="j"></a>J
 
 ## <a name="k"></a>K
 
-**KeyTip**
+**keytip**
 
-En una cinta de opciones, mecanismo utilizado para mostrar las teclas de acceso. Las teclas de acceso aparecen en forma de una pequeña sugerencia sobre cada comando o grupo, en lugar de las letras subrayadas que se usan normalmente para mostrar las teclas de acceso. Vea también: [clave de acceso](#alink).
+En una cinta de opciones, el mecanismo que se usa para mostrar las claves de acceso. Las claves de acceso aparecen en forma de una pequeña propina sobre cada comando o grupo, en lugar de las letras subrayadas que se suelen usar para mostrar las claves de acceso. Consulte también: clave [de acceso](#alink).
 
 ## <a name="l"></a>L
 
 **modo horizontal**
 
-Opción de presentación que orienta un objeto para que sea más grande que el alto. Vea también: [modo vertical](#p).
+Opción de presentación que orienta un objeto para que sea más ancho que alto. Vea también: [modo vertical](#p).
 
 **cuenta de usuario con privilegios mínimos**
 
-Una cuenta de usuario que normalmente se ejecuta con privilegios mínimos. Vea también: [control de cuentas de usuario](#u).
+Una cuenta de usuario que normalmente se ejecuta con privilegios mínimos. Consulte también: Control [de cuentas de usuario](#u).
 
 **cuadro de lista**
 
-Un control común de Windows que permite a los usuarios seleccionar entre un conjunto de valores presentados en una lista, que, a diferencia de una lista desplegable, siempre está visible. Admite selecciones únicas o múltiples.
+Un control Windows que permite a los usuarios seleccionar entre un conjunto de valores presentados en una lista, que, a diferencia de una lista desplegable, siempre es visible. Admite una o varias selecciones.
 
 **vista de lista**
 
-Un control común de Windows que permite a los usuarios ver e interactuar con una colección de objetos de datos, mediante una selección única o una selección múltiple.
+Un control Windows que permite a los usuarios ver e interactuar con una colección de objetos de datos, mediante una selección única o una selección múltiple.
 
-**vista previa dinámica**
+**versión preliminar en directo**
 
-Técnica de vista previa que muestra el efecto de un comando inmediatamente al seleccionar o mantener el mouse sin el usuario que confirma la acción. Por ejemplo, las opciones de formato, como temas, fuentes y colores, se benefician de las vistas previas dinámicas al mostrar a los usuarios el efecto con un esfuerzo mínimo.
+Técnica de vista previa que muestra el efecto de un comando inmediatamente al seleccionar o mantener el puntero sin que el usuario confirme la acción. Por ejemplo, las opciones de formato, como temas, fuentes y colores, se benefician de las vistas previas en directo al mostrar a los usuarios el efecto con un esfuerzo mínimo.
 
 **localización**
 
-El proceso de adaptar software para diferentes países, idiomas, culturas o mercados.
+Proceso de adaptación de software para distintos países, idiomas, culturas o mercados.
 
 **archivo de registro**
 
-Repositorio basado en archivos para obtener información acerca de los distintos tipos de actividad de un equipo. A menudo, los administradores consultan los archivos de registro; Normalmente, los usuarios normales no lo hacen.
+Un repositorio basado en archivos para obtener información de diversos tipos sobre la actividad en un sistema informático. Los administradores suelen consultar los archivos de registro; Normalmente, los usuarios normales no lo hacen.
 
 ## <a name="m"></a>M
 
 **instrucción principal**
 
-Texto que se muestra de manera destacada que explica brevemente qué hacer en la ventana o la página. La instrucción debe ser una instrucción específica, una dirección imperativa o una pregunta. Las buenas instrucciones principales comunican el objetivo del usuario en lugar de centrarse simplemente en manipular la interfaz de usuario.
+Texto que se muestra de forma destacada que explica concisamente qué hacer en la ventana o página. La instrucción debe ser una instrucción específica, una dirección imperativa o una pregunta. Las instrucciones principales buenas comunican el objetivo del usuario en lugar de centrarse solo en manipular la interfaz de usuario.
 
 **entorno administrado**
 
-Entorno de equipo en red administrado por un departamento de ti o un proveedor de terceros, en lugar de por usuarios individuales. Los administradores pueden optimizar el rendimiento y aplicar las actualizaciones del sistema operativo y de la aplicación, entre otras tareas.
+Un entorno de equipo en red administrado por un departamento de TI o un proveedor de terceros, en lugar de por usuarios individuales. Los administradores pueden optimizar el rendimiento y aplicar actualizaciones del sistema operativo y de la aplicación, entre otras tareas.
 
-**manipula**
+**Manipulación**
 
-Un tipo de interacción táctil en la que la entrada se corresponde directamente con el modo en que el objeto que se toca reaccionaría de forma natural a la acción en el mundo real.
+Tipo de interacción táctil en la que la entrada corresponde directamente a cómo el objeto que se va a tocar reaccionaría de forma natural a la acción en el mundo real.
 
-**maximizar**
+**Maximizar**
 
-Para mostrar una ventana en su tamaño más grande. Vea también: minimizar, [ventana restaurada](#r).
+Para mostrar una ventana con su tamaño más grande. Vea también: minimizar la ventana [restaurada.](#r)
 
-**MENU**
+**Menú**
 
 Lista de comandos u opciones disponibles para los usuarios en el contexto actual.
 
 **cuadro de mensaje**
 
-Una ventana secundaria que se muestra para informar a un usuario sobre una condición determinada.
+Ventana secundaria que se muestra para informar a un usuario sobre una condición determinada.
 
-**minibarra de herramientas**
+**mini-barra de herramientas**
 
-Barra de herramientas contextual que se muestra al mantener el mouse.
+Barra de herramientas contextual que se muestra al mantener el puntero.
 
-**miniMIZE**
+**Minimizar**
 
-Para ocultar una ventana. Vea también: maximizar, [ventana restaurada](#r).
+Para ocultar una ventana. Vea también: maximizar la [ventana restaurada.](#r)
 
-**Estado mixto**
+**estado mixto**
 
-En el caso de las casillas de verificación que se aplican a un grupo de elementos, un estado mixto indica que algunos de los elementos están seleccionados y otros se han borrado.
+Para las casillas que se aplican a un grupo de elementos, un estado mixto indica que algunos de los elementos están seleccionados y que otros están desactivados.
 
-**DoModal**
+**Modal**
 
-Interacción restrictiva o limitada debido al funcionamiento en un modo. Modal suele describir una ventana secundaria que restringe la interacción de un usuario con la ventana propietaria. Vea también: modelo no modal.
+Interacción restrictiva o limitada debido a que funciona en un modo. Modal suele describir una ventana secundaria que restringe la interacción de un usuario con la ventana de propietario. Consulte también: modeless.
 
-**no modal**
+**modeless**
 
-Interacción no restrictiva o no limitada. El modelo no modal suele describir una ventana secundaria que no restringe la interacción del usuario con la ventana propietaria. Vea también: modal.
+Interacción no restrictiva o no limitada. A menudo, Modeless describe una ventana secundaria que no restringe la interacción de un usuario con la ventana del propietario. Vea también: modal.
 
 **selección múltiple**
 
-La capacidad de los usuarios de elegir más de un objeto en una lista o un árbol.
+La capacidad de los usuarios de elegir más de un objeto en una lista o árbol.
 
 ## <a name="n"></a>N
 
-**evento no crítico del sistema**
+**evento del sistema no crítico**
 
-Un tipo de evento del sistema que no requiere atención inmediata, que suele pertenecer al estado del sistema. Vea también: [crítico](#c).
+Tipo de evento del sistema que no requiere atención inmediata, a menudo perteneciente al estado del sistema. Vea también: [crítico.](#c)
 
 **notificación**
 
-Información de una naturaleza no crítica que se muestra brevemente al usuario; una notificación adopta la forma de un globo de un icono en el área de notificación de la barra de tareas.
+Información de naturaleza no crítica que se muestra brevemente al usuario; una notificación toma la forma de un globo de un icono en el área de notificación de la barra de tareas.
 
 ## <a name="o"></a>O
 
-**participación**
+**participar**
 
-La capacidad de los usuarios de seleccionar características opcionales explícitamente. Menos intrusivo para los usuarios que la cancelación, especialmente en el caso de las características relacionadas con la privacidad y la marketing, ya que no hay presunción de voluntad de los usuarios. Vea también: rechazar, opciones.
+La capacidad de los usuarios para seleccionar características opcionales explícitamente. Menos intrusivo para los usuarios que la exclusión, especialmente para las características relacionadas con la privacidad y el marketing, porque no hay ninguna deserción de los deseo de los usuarios. Consulte también: rechazar opciones.
 
-**rechazar**
+**no participar**
 
-La capacidad de los usuarios de quitar características que no desean borrando su selección. Es más intrusivo para los usuarios que participar, especialmente en el caso de las características relacionadas con la privacidad y el marketing, ya que hay una suposición de los deseos de los usuarios. Vea también: participación, opciones.
+La posibilidad de que los usuarios quiten las características que no quieren borrando su selección. Más intrusivo para los usuarios que participar, especialmente para las características relacionadas con la privacidad y el marketing, porque se supone que los usuarios desean. Vea también: participar en las opciones.
 
 **options**
 
@@ -492,288 +492,288 @@ Opciones disponibles para los usuarios para personalizar un programa. Por ejempl
 
 **interfaz de usuario fuera de contexto**
 
-Cualquier interfaz de usuario mostrada en una ventana emergente que no esté directamente relacionada con la actividad actual del usuario. Por ejemplo, las notificaciones y la interfaz de usuario de consentimiento para el Access Control de usuario no son de contexto.
+Cualquier interfaz de usuario que se muestre en una ventana emergente que no esté directamente relacionada con la actividad actual del usuario. Por ejemplo, las notificaciones y la interfaz de usuario de consentimiento Access Control usuario son la interfaz de usuario fuera de contexto.
 
-**ventana propiedad**
+**ventana de propiedad**
 
-Una ventana secundaria que se utiliza para realizar una tarea auxiliar. No es una ventana de nivel superior (por lo que no se muestra en la barra de tareas). en su lugar, es "propiedad" de la ventana propietaria. Por ejemplo, la mayoría de los cuadros de diálogo son ventanas de propiedad. Vea también: [ventana secundaria](#c), ventana propietaria.
+Ventana secundaria que se usa para realizar una tarea auxiliar. No es una ventana de nivel superior (por lo que no se muestra en la barra de tareas); en su lugar, es "propiedad" de su ventana propietaria. Por ejemplo, la mayoría de los cuadros de diálogo son ventanas de propiedad. Vea también: ventana [secundaria ,](#c)ventana de propietario.
 
-**control propietario**
+**control de propietario**
 
-El origen de una sugerencia, un globo o un control flotante. Por ejemplo, un cuadro de texto que tiene restricciones de entrada podría mostrar un globo para informar a los usuarios de estas limitaciones. En este caso, el cuadro de texto se considera el control propietario.
+Origen de una propina, un globo o un control flotante. Por ejemplo, un cuadro de texto con restricciones de entrada podría mostrar un globo para que el usuario conozca estas limitaciones. En este caso, el cuadro de texto se considera el control propietario.
 
-**ventana propietaria**
+**ventana del propietario**
 
-Ventana de la que se origina una ventana propietaria. Aparece debajo de la ventana de propiedad en orden Z. Vea también: ventana de propiedad, [ventana primaria](#p), [orden Z](#z).
+Ventana desde la que se origina una ventana de propiedad. Aparece debajo de la ventana propiedad en orden Z. Vea también: ventana de propiedad, [ventana primaria,](#p) [orden Z.](#z)
 
 ## <a name="p"></a>P
 
 **page**
 
-Unidad básica de navegación para la interfaz de usuario basada en tareas, como asistentes, hojas de propiedades, elementos del panel de control y sitios Web. Los usuarios realizan tareas navegando de una página a una en una sola ventana host. Vea también: flujo de páginas, [ventana](#w).
+Una unidad básica de navegación para la interfaz de usuario basada en tareas, como asistentes, hojas de propiedades, elementos del panel de control y sitios web. Los usuarios realizan tareas navegando de página a página dentro de una sola ventana host. Vea también: flujo de página, [ventana](#w).
 
 **flujo de página**
 
-Colección de páginas en las que los usuarios realizan una tarea. Vea también: página, [tarea](#t), [Asistente](#w), [Panel de control](#c).
+Colección de páginas en las que los usuarios realizan una tarea. Vea también: página, [tarea](#t), [asistente](#w), [Panel de control](#c).
 
 **control de espacio de página**
 
-Permite a los usuarios ver e interactuar con una colección de objetos organizada jerárquicamente. Los controles de espacio de página son como los controles de árbol, pero tienen una apariencia visual ligeramente diferente. Se usan principalmente en el explorador de Windows.
+Permite a los usuarios ver e interactuar con una colección de objetos organizada jerárquicamente. Los controles de espacio de página son como controles de árbol, pero tienen una apariencia visual ligeramente diferente. Se usan principalmente en Windows Explorer.
 
 **ventana de paleta**
 
-Una ventana secundaria no modal que muestra una barra de herramientas u otras opciones, como colores, patrones, fuentes o atributos de fuente.
+Ventana secundaria modelada que muestra una barra de herramientas u otras opciones, como colores, patrones, fuentes o atributos de fuente.
 
-**lateral**
+**cacerola**
 
-Para mover una escena, como un mapa o una fotografía, en dos dimensiones arrastrándolas directamente. Esto difiere del desplazamiento de dos maneras: el contenido desplazado normalmente tiene una dimensión predominante y, a menudo, solo se desplaza a lo largo de esa dimensión. y el desplazamiento del contenido de la Convención aparecen con barras de desplazamiento que el usuario arrastra en la dirección opuesta del movimiento de desplazamiento.
+Para mover una escena, como un mapa o una foto, en dos dimensiones arrastrándola directamente. Esto difiere del desplazamiento de dos maneras: el contenido de desplazamiento suele tener una dimensión predominante y, a menudo, solo se desplaza a lo largo de esa dimensión. y el contenido de desplazamiento aparece convencionalmente con barras de desplazamiento que el usuario arrastra en la dirección opuesta del movimiento de desplazamiento.
 
-**dvrefSQLPane**
+**Panel**
 
-Área rectangular dentro de una ventana que los usuarios pueden cambiar, cambiar de tamaño, ocultar o cerrar. Los paneles siempre se acoplan al lado de la ventana primaria. Pueden ser adyacentes a otros paneles, pero nunca se superponen. Al desacoplar un panel, se convierte en una ventana secundaria. Vea también: [Window](#w).
+Área rectangular dentro de una ventana que los usuarios pueden mover, cambiar de tamaño, ocultar o cerrar. Los paneles siempre están acoplados al lado de su ventana primaria. Pueden ser adyacentes a otros paneles, pero nunca se superponen. Desacoplar un panel lo convierte en una ventana secundaria. Vea también: [ventana](#w).
 
 **ventana primaria**
 
-Contenedor de ventanas secundarias (como controles o paneles). Vea también: [ventana propietaria](#o).
+Contenedor de ventanas secundarias (como controles o paneles). Vea también: [ventana de propietario.](#o)
 
-**lápiz**
+**Pluma**
 
-Lápiz óptico que se usa para apuntar, gestos, entradas de texto simple y escritura a mano de forma libre. Los lápices tienen una punta nítida, suave que admite apuntar, escribir o dibujar en tinta de forma precisa. También pueden tener un botón de pluma opcional (se usa para realizar clics con el botón derecho) y un borrador (que se usa para borrar la entrada manuscrita).
+Lápiz que se usa para apuntar, gestos, entrada de texto simple y escritura a mano de forma libre. Los lápices tienen una punta fina y suave que admite la señalación, escritura o dibujo precisos en la entrada de lápiz. También pueden tener un botón de lápiz opcional (que se usa para realizar clics con el botón derecho) y un borrador (que se usa para borrar la entrada de lápiz).
 
-**Persistence**
+**Persistencia**
 
-El principio de que el estado o las propiedades de un objeto se conservan automáticamente.
+Principio de que el estado o las propiedades de un objeto se conservan automáticamente.
 
-**personal**
+**Personalización**
 
-Personalización de una experiencia principal que es fundamental para la identificación personal del usuario con un programa. Por el contrario, las opciones normales y las propiedades no son cruciales para la identificación personal del usuario con un programa.
+Personalizar una experiencia básica que es fundamental para la identificación personal del usuario con un programa. Por el contrario, las opciones y propiedades normales no son fundamentales para la identificación personal del usuario con un programa.
 
 **roles**
 
-Descripciones detalladas de personas imaginarias. Los roles se crean a partir de datos muy especificados y muy específicos sobre personas reales.
+Descripciones detalladas de personas imaginarias. Los roles se construyen a partir de datos bien comprendidos y muy especificados sobre personas reales.
 
-**Resolución física**
+**resolución física**
 
-Píxeles horizontales y verticales que puede mostrar el hardware de un monitor del equipo.
+Píxeles horizontales y verticales que puede mostrar el hardware de un monitor de equipo.
 
 **botón de grupo emergente**
 
-En una cinta de opciones, botón de menú que consolida todos los comandos y opciones de un grupo. Se usa para mostrar las cintas de opciones en espacios pequeños.
+En una cinta de opciones, un botón de menú que consolida todos los comandos y opciones dentro de un grupo. Se usa para mostrar cintas de opciones en espacios pequeños.
 
 **modo vertical**
 
-Opción de presentación que orienta un objeto para que sea más alto que el ancho. Vea también: [modo horizontal](#l).
+Opción de presentación que orienta un objeto para que sea más alto que ancho. Vea también: [modo horizontal](#l).
 
-**preferencia**
+**Preferencias**
 
-No use. En su lugar, use [Opciones](#o) o propiedades.
+No lo use. Use [opciones o](#o) propiedades en su lugar.
 
 **versión preliminar**
 
-Representación de lo que verán los usuarios cuando seleccionen una opción. Las vistas previas se pueden mostrar estáticamente como parte de la opción o después de la solicitud con un botón de vista previa o aplicar.
+Representación de lo que verán los usuarios cuando seleccionen una opción. Las vistas previas se pueden mostrar estáticamente como parte de la opción o a petición con un botón Vista previa o Aplicar.
 
 **panel de vista previa**
 
-Un panel de ventana que se usa para mostrar vistas previas y otros datos sobre los objetos seleccionados.
+Panel de ventana que se usa para mostrar vistas previas y otros datos sobre los objetos seleccionados.
 
 **comando principal**
 
-Una acción central que cumple el propósito principal de una ventana. Por ejemplo, imprimir es un comando principal para un cuadro de diálogo Imprimir. Vea también: [comando secundario](#s).
+Acción central que cumple el propósito principal de una ventana. Por ejemplo, Imprimir es un comando principal para un cuadro de diálogo Imprimir. Vea también: [comando secundario](#s).
 
 **barra de herramientas principal**
 
-Colección de comandos diseñada para ser lo suficientemente completa como para impedir el uso de una barra de menús. Vea también: [barra de herramientas complementaria](#s).
+Colección de comandos diseñados para ser lo suficientemente completos como para impedir el uso de una barra de menús. Vea también: barra [de herramientas complementaria](#s).
 
 **ventana principal**
 
-Una ventana principal no tiene ventana propietaria y se muestra en la barra de tareas. Las ventanas de programa principales siempre son ventanas principales. Vea también: [ventana secundaria](#s).
+Una ventana principal no tiene ninguna ventana de propietario y se muestra en la barra de tareas. Las ventanas principales del programa siempre son ventanas principales. Vea también: [ventana secundaria](#s).
 
-**introduce**
+**Programa**
 
-Secuencia de instrucciones que se puede ejecutar en un equipo. Entre los tipos comunes de programas se incluyen aplicaciones de productividad, aplicaciones de consumidor, juegos, quioscos y utilidades.
+Secuencia de instrucciones que puede ejecutar un equipo. Los tipos comunes de programas incluyen aplicaciones de productividad, aplicaciones de consumidor, juegos, quioscos y utilidades.
 
 **barra de progreso**
 
-Un control común de Windows que muestra el progreso de una operación determinada como una barra gráfica.
+Un control Windows que muestra el progreso de una operación determinada como una barra gráfica.
 
-**revelación progresiva**
+**divulgación progresiva**
 
-Técnica que permite a los usuarios Mostrar información de uso menos frecuente (normalmente, datos, opciones o comandos) según sea necesario. Por ejemplo, si a veces se necesitan más opciones, los usuarios pueden exponerlas en contexto haciendo clic en un botón de contenido adicional.
+Técnica que permite a los usuarios mostrar información menos usada (normalmente, datos, opciones o comandos) según sea necesario. Por ejemplo, si a veces se necesitan más opciones, los usuarios pueden exponerlas en contexto haciendo clic en un botón de contenido adicional.
 
-**escalado progresivo**
+**escalación progresiva**
 
-Secuencia en la que la interfaz de usuario usada para informar a los usuarios pasa a ser progresivamente más molesta cuando el evento se vuelve más crítico. Por ejemplo, se puede usar una notificación para un evento que los usuarios puedan omitir al principio. A medida que la situación sea crítica, se debería usar una interfaz de usuario más molesta, como un cuadro de diálogo modal.
+Secuencia en la que la interfaz de usuario usada para informar a los usuarios se vuelve progresivamente más obtrusiva a medida que el evento se vuelve más crítico. Por ejemplo, se puede usar una notificación para un evento que los usuarios pueden omitir de forma segura al principio. A medida que la situación se vuelve crítica, se debe usar una interfaz de usuario más obtrusiva, como un cuadro de diálogo modal.
 
 **prompt**
 
-Una etiqueta o instrucción corta colocada dentro de un cuadro de texto o una lista desplegable editable como su valor predeterminado. A diferencia del texto estático, los mensajes desaparecen una vez que los usuarios escriben algo en el control o obtienen el foco de entrada.
+Una etiqueta o instrucción corta colocada dentro de un cuadro de texto o lista desplegable modificable como su valor predeterminado. A diferencia del texto estático, los mensajes desaparecen cuando los usuarios escriben algo en el control o obtienen el foco de entrada.
 
 **properties**
 
-Configuración de un objeto que los usuarios pueden cambiar, como el nombre de un archivo y el estado de solo lectura, así como los atributos de un objeto que los usuarios no pueden cambiar directamente, como el tamaño de un archivo y la fecha de creación. Normalmente, las propiedades definen el estado, el valor o la apariencia de un objeto.
+Configuración de un objeto que los usuarios pueden cambiar, como el nombre de un archivo y el estado de solo lectura, así como los atributos de un objeto que los usuarios no pueden cambiar directamente, como el tamaño y la fecha de creación de un archivo. Normalmente, las propiedades definen el estado, el valor o la apariencia de un objeto.
 
-**Administrador protegido**
+**administrador protegido**
 
-En control de cuentas de usuario, un administrador que se ejecuta en su estado con privilegios mínimos. Vea también: [Administrador con privilegios elevados](#e), [usuario estándar](#s).
+En Control de cuentas de usuario, un administrador que se ejecuta en su estado con menos privilegios. Consulte también: [administrador con privilegios elevados,](#e) [usuario estándar.](#s)
 
 ## <a name="q"></a>Q
 
 **Barra de herramientas de acceso rápido**
 
-Una pequeña barra de herramientas personalizable que muestra comandos usados con frecuencia.
+Una barra de herramientas pequeña y personalizable que muestra los comandos usados con frecuencia.
 
-**Barra de inicio rápido**
+**inicio rápido de datos**
 
-Un punto de acceso directo en el escritorio de Windows, situado junto al botón Inicio, que se ha rellenado con iconos para los programas de elección del usuario. Se quitó en Windows 7.
+Un punto de acceso directo en Windows escritorio, ubicado junto a la botón Inicio, rellenado con iconos para los programas que elija el usuario. Se ha quitado Windows 7.
 
 ## <a name="r"></a>R
 
 **botón de radio**
 
-Un control común de Windows que permite a los usuarios seleccionar entre un conjunto de opciones relacionadas mutuamente excluyentes.
+Un control Windows que permite a los usuarios seleccionar entre un conjunto de opciones relacionadas mutuamente excluyentes.
 
 **píxeles relativos**
 
-Una métrica independiente del dispositivo que es igual que un píxel físico a 96 PPP (puntos por pulgada), pero que se escala proporcionalmente en otras ppp. Vea también: [resolución efectiva](#e).
+Métrica independiente del dispositivo que es la misma que un píxel físico a 96 ppp (puntos por pulgada), pero que se escala proporcionalmente en otros ppp. Vea también: [resolución efectiva](#e).
 
 **ventana restaurada**
 
-Ventana visible de pantalla parcial, ni maximizada ni minimizada. Vea también: [maximizar](#m), minimizar.
+Una ventana de pantalla parcial visible, ni maximizada ni minimizada. Vea también: [maximizar](#m), minimizar.
 
-**cable**
+**Cinta**
 
-Un contenedor con pestañas de comandos y opciones, situado en la parte superior de una ventana o área de trabajo, y con una ubicación y un alto fijos. Las cintas de opciones suelen tener un menú aplicación y una barra de herramientas de acceso rápido. Vea también: [menú](#m), [barra de herramientas](#t).
+Contenedor con pestañas de comandos y opciones, ubicado en la parte superior de una ventana o área de trabajo y con una ubicación y altura fijas. Las cintas de opciones suelen tener un menú Aplicación y una barra de herramientas de acceso rápido. Vea también: menú [, barra](#m) [de herramientas](#t).
 
 **acción de riesgo**
 
-Una acción de calidad de usuario que puede tener consecuencias negativas y que no se puede deshacer fácilmente. Las acciones de riesgo incluyen acciones que pueden perjudicar la seguridad de un equipo, afectar al acceso a un equipo o provocar una pérdida imprevista de datos.
+Calidad de la acción del usuario que puede tener consecuencias negativas y no se puede deshacer fácilmente. Las acciones de riesgo incluyen acciones que pueden dañar la seguridad de un equipo, afectar al acceso a un equipo o provocar una pérdida involuntaria de datos.
 
 ## <a name="s"></a>S
 
-**Ruta de exploración**
+**ruta de acceso de examen**
 
-Es probable que los usuarios de la ruta realicen la detección para buscar elementos en una ventana. Especialmente importante si los usuarios no están dedicados a la lectura envolvente del texto.
+Es probable que los usuarios de la ruta tomen medidas para buscar cosas en una ventana. Especialmente importante si los usuarios no se dedican a la lectura inmersiva de texto.
 
 **lector de pantalla**
 
-Tecnología de asistencia que permite a los usuarios con discapacidades visuales interpretar y navegar por una interfaz de usuario mediante la transformación de objetos visuales en audio. Por lo tanto, el texto, los controles, los menús, las barras de herramientas, los gráficos y otros elementos de pantalla se pronuncian por la voz en equipo del lector de pantalla.
+Tecnología de asistencia que permite a los usuarios con discapacidades visuales interpretar y navegar por una interfaz de usuario mediante la transformación de objetos visuales en audio. Por lo tanto, el texto, los controles, los menús, las barras de herramientas, los gráficos y otros elementos de pantalla se pronuncian mediante la voz computerizada del lector de pantalla.
 
 **barra de desplazamiento**
 
-Control que permite a los usuarios desplazarse por el contenido de una ventana, ya sea vertical u horizontalmente.
+Control que permite a los usuarios desplazar el contenido de una ventana, ya sea vertical u horizontalmente.
 
 **comando secundario**
 
-Una acción periférica que, al mismo tiempo, no es esencial para el propósito de la ventana. Por ejemplo, buscar impresora o instalar impresora son comandos secundarios para un cuadro de diálogo Imprimir. Vea también: [comando principal](#p).
+Una acción periférico que, aunque resulta útil, no es esencial para el propósito de la ventana. Por ejemplo, Buscar impresora o Instalar impresora son comandos secundarios para un cuadro de diálogo Imprimir. Vea también: [comando principal](#p).
 
 **ventana secundaria**
 
-Una ventana que tiene una ventana propietaria y, por tanto, no se muestra en la barra de tareas. Vea también: [ventana principal](#p).
+Una ventana que tiene una ventana de propietario y, por consiguiente, no se muestra en la barra de tareas. Vea también: [ventana principal](#p).
 
 **escritorio seguro**
 
-Entorno protegido que está aislado de programas que se ejecutan en el sistema y que se usa para aumentar la seguridad de tareas muy seguras como el inicio de sesión, los cambios de contraseña y la interfaz de usuario de elevación de UAC. Vea también: [control de cuentas de usuario](#u).
+Un entorno protegido aislado de los programas que se ejecutan en el sistema, que se usa para aumentar la seguridad de las tareas altamente seguras, como el inicio de sesión, los cambios de contraseña y la interfaz de usuario de elevación de UAC. Consulte también: Control [de cuentas de usuario](#u).
 
-**Escudo de seguridad**
+**escudo de seguridad**
 
-Un icono de escudo que se usa para la personalización de marca de seguridad.
+Icono de escudo que se usa para la personal de marca de seguridad.
 
 **seleccionado**
 
-Elegido por el usuario para realizar una operación; destaca.
+Elegido por el usuario para realizar una operación; destacado.
 
-**capitalización de estilo de oraciones**
+**mayúsculas de estilo oración**
 
-Para el capitalización de estilo de oraciones:
+Para la mayúscula y la frase:
 
--   Ponga siempre en mayúscula la primera palabra de una oración nueva.
--   No ponga en mayúscula la palabra detrás de un signo de dos puntos a menos que la palabra sea un nombre adecuado o el texto que sigue a los dos puntos sea una oración completa.
--   No ponga en mayúsculas la palabra que sigue a em-Dash a menos que sea un nombre apropiado, incluso si el texto que sigue al guión es una oración completa.
--   Ponga siempre en mayúsculas la primera palabra de una oración nueva después de cualquier signo de puntuación final. Vuelva a escribir las oraciones que comienzan con una palabra en minúsculas que distingue mayúsculas de minúsculas.
+-   Siempre debe capitalizar la primera palabra de una nueva oración.
+-   No en mayúsculas la palabra que sigue a dos puntos a menos que la palabra sea un nombre adecuado o que el texto que sigue a los dos puntos sea una frase completa.
+-   No en mayúsculas la palabra que sigue a un guion em a menos que sea un nombre adecuado, incluso si el texto que sigue al guión es una oración completa.
+-   Siempre debe poner en mayúscula la primera palabra de una nueva frase después de cualquier signo de puntuación final. Reescriba las oraciones que comienzan por una palabra en minúsculas que distingue mayúsculas de minúsculas.
 
 **settings**
 
-Valores específicos que se han elegido (ya sea por el usuario o de forma predeterminada) para configurar un programa o un objeto.
+Valores específicos elegidos (ya sea por el usuario o de forma predeterminada) para configurar un programa u objeto.
 
 **tecla de método abreviado**
 
-Claves o combinaciones de claves que los usuarios pueden presionar para obtener acceso rápido a las acciones que realizan con frecuencia. Las combinaciones de teclas Ctrl + y las teclas de función (F1 a F12) suelen ser las mejores opciones para las teclas de método abreviado. Por definición, una tecla de método abreviado es el equivalente del teclado de la funcionalidad que se admite adecuadamente en otro lugar de la interfaz. Por lo tanto, evite usar una tecla de método abreviado como la única manera de tener acceso a una operación determinada.
+Teclas o combinaciones de teclas que los usuarios pueden presionar para obtener acceso rápido a las acciones que realizan con frecuencia. Las combinaciones ctrl+letras y las teclas de función (F1 a F12) suelen ser las mejores opciones para las teclas de método abreviado. Por definición, una tecla de método abreviado es el equivalente de teclado de la funcionalidad que se admite adecuadamente en otra parte de la interfaz. Por lo tanto, evite usar una tecla de método abreviado como única manera de acceder a una operación determinada.
 
-A diferencia de las claves de acceso, que están diseñadas para mejorar la accesibilidad, las teclas de método abreviado se han diseñado principalmente para usuarios avanzados. Dado que no se documentan directamente en la propia interfaz de usuario (aunque pueden estar documentadas en menús y en la información sobre herramientas de la barra de herramientas), están diseñados para memorizarse y, por tanto, deben asignarse de forma coherente dentro de las aplicaciones y en distintas aplicaciones.
+A diferencia de las claves de acceso, que están diseñadas para mejorar la accesibilidad, las teclas de método abreviado están diseñadas principalmente para usuarios avanzados. Dado que no se documentan directamente dentro de la propia interfaz de usuario (aunque se puedan documentar en menús e información sobre herramientas de la barra de herramientas), están diseñados para que se memorizan y, por tanto, deben asignarse de forma coherente dentro de las aplicaciones y en distintas aplicaciones.
 
-**Lateral**
+**Barra lateral**
 
-Una región en el lateral del escritorio del usuario que se usa para mostrar gadgets en Windows Vista. Vea también: [gadget](#g).
+Región del lado del escritorio del usuario que se usa para mostrar los dispositivos en Windows Vista. Vea también: [.](#g)
 
-**error de un solo punto**
+**error de punto único**
 
-Error de entrada del usuario relacionado con un solo control. Por ejemplo, escribir un número de tarjeta de crédito incorrecto es un error de un solo punto, mientras que un inicio de sesión incorrecto es un error de doble punto, porque el nombre de usuario o la contraseña podrían ser el problema.
+Error de entrada del usuario relacionado con un control único. Por ejemplo, escribir un número de tarjeta de crédito incorrecto es un error de punto único, mientras que un inicio de sesión incorrecto es un error de doble punto, ya que el nombre de usuario o la contraseña podrían ser el problema.
 
-**hasta**
+**Deslizador**
 
-Un control común de Windows que muestra y establece un valor de un intervalo continuo de valores posibles, como brillo o volumen.
+Un control Windows que muestra y establece un valor de un intervalo continuo de valores posibles, como el brillo o el volumen.
 
 **experiencia especial**
 
-En los programas, las experiencias especiales se relacionan con la función principal del programa, algo único sobre el programa o, de lo contrario, hacer una conexión emocional a los usuarios. Por ejemplo, la reproducción de audio o vídeo es una experiencia especial para un reproductor de media.
+En los programas, las experiencias especiales se relacionan con la función principal del programa, algo único sobre el programa o, de lo contrario, hacen una conexión emocional con los usuarios. Por ejemplo, reproducir un audio o vídeo es una experiencia especial para un reproductor multimedia.
 
-**cuadro de número**
+**cuadro de giro**
 
-Combinación de un cuadro de texto y su control de número asociado. Los usuarios hacen clic en la flecha arriba o abajo de un cuadro de número para aumentar o disminuir un valor numérico. A diferencia de los controles deslizantes, que se usan para cantidades relativas, los cuadros de número solo se usan para los valores numéricos exactos conocidos.
+Combinación de un cuadro de texto y su control de número asociado. Los usuarios hacen clic en la flecha arriba o abajo de un cuadro de número para aumentar o disminuir un valor numérico. A diferencia de los controles deslizantes, que se usan para cantidades relativas, los cuadros de número solo se usan para valores numéricos exactos conocidos.
 
-**control de número**
+**control de giro**
 
 Control en el que los usuarios hacen clic para cambiar los valores. Los controles de número usan flechas arriba y abajo para aumentar o disminuir el valor.
 
 **pantalla de presentación**
 
-La imagen de la pantalla de transición que aparece como un programa está en proceso de inicio.
+La imagen de pantalla de transición que aparece como un programa está en proceso de inicio.
 
-**botón de expansión**
+**botón de división**
 
-Un botón de comando bipartite que incluye un botón pequeño con un triángulo que apunta hacia abajo en la parte derecha del botón principal. Los usuarios hacen clic en el triángulo para mostrar las variaciones de un comando en un menú desplegable. Vea también: [botón de comando](#c).
+Botón de comando bipartito que incluye un botón pequeño con un triángulo que apunta hacia abajo en la parte más derecha del botón principal. Los usuarios hacen clic en el triángulo para mostrar las variaciones de un comando en un menú desplegable. Vea también: [botón de comando](#c).
 
-**Página de radios**
+**página de radio**
 
-En los elementos del panel de control, las páginas radiales son el lugar en el que los usuarios realizan tareas. Dos tipos de páginas radiales son las páginas de tareas y las páginas de formulario: las páginas de tareas presentan una tarea o un paso en una tarea con una instrucción principal específica basada en tareas. las páginas de formulario presentan una colección de propiedades y tareas relacionadas basadas en una instrucción principal general. Vea también: [Página de concentrador](#h).
+En los elementos del panel de control, las páginas de radio son el lugar en el que los usuarios realizan tareas. Dos tipos de páginas de radio son páginas de tareas y páginas de formulario: las páginas de tareas presentan una tarea o un paso en una tarea con una instrucción principal específica basada en tareas; Las páginas de formulario presentan una colección de propiedades y tareas relacionadas basadas en una instrucción principal general. Consulte también: [página central](#h).
 
 **usuario estándar**
 
-En control de cuentas de usuario, los usuarios estándar tienen los privilegios mínimos en el equipo y deben solicitar permiso de un administrador en el equipo para poder realizar tareas administrativas. A diferencia de los administradores protegidos, los usuarios estándar no pueden elevarse por sí mismos. Vea también: [Administrador con privilegios elevados](#e), [Administrador protegido](#p).
+En control de cuentas de usuario, los usuarios estándar tienen los privilegios mínimos en el equipo y deben solicitar permiso a un administrador en el equipo para realizar tareas administrativas. A diferencia de los administradores protegidos, los usuarios estándar no pueden elevarse por sí mismos. Consulte también: [administrador con privilegios elevados](#e)y [administrador protegido.](#p)
 
 **texto estático**
 
-Texto de la interfaz de usuario que no forma parte de un control interactivo. Incluye etiquetas, instrucciones principales, instrucciones adicionales y explicaciones complementarias.
+Texto de la interfaz de usuario que no forma parte de un control interactivo. Incluye etiquetas, instrucciones principales, instrucciones complementarias y explicaciones complementarias.
 
 **instrucciones complementarias**
 
-Forma opcional de texto de la interfaz de usuario que agrega información, detalle o contexto a la instrucción principal. Vea también: [instrucción principal](#m).
+Forma opcional de texto de interfaz de usuario que agrega información, detalles o contexto a la instrucción principal. Vea también: [instrucción principal](#m).
 
 **barra de herramientas complementaria**
 
-Colección de comandos diseñada para trabajar junto con una barra de menús. Vea también: [barra de herramientas principal](#p).
+Colección de comandos diseñados para funcionar junto con una barra de menús. Vea también: barra [de herramientas principal](#p).
 
 **color del sistema**
 
-Un color definido por Windows para un fin específico, al que se tiene acceso mediante la interfaz de programación de aplicaciones (API) GetSysColor. Por ejemplo, \_ la ventana de color define el color de fondo de la ventana y el color \_ WINDOWTEXT define el color del texto de la ventana. Los colores del sistema no son tan ricos como los colores del tema. Vea también: [color del tema](#t).
+Color definido por Windows para un propósito específico, al que se accede mediante la interfaz de programación de aplicaciones (API) GetSysColor. Por ejemplo, COLOR WINDOW define el color de fondo de la ventana \_ y COLOR \_ WINDOWTEXT define el color de texto de la ventana. Los colores del sistema no son tan enriquecidos como los colores del tema. Vea también: [color del tema](#t).
 
-**menú sistema**
+**menú del sistema**
 
-Colección de comandos básicos de la ventana, como movimiento, tamaño, maximizar, minimizar y cerrar, disponible en el icono del programa en la barra de título, o haciendo clic con el botón derecho en un botón de la barra de tareas.
+Colección de comandos básicos de ventana, como mover, tamaño, maximizar, minimizar y cerrar, disponible en el icono del programa en la barra de título o haciendo clic con el botón derecho en un botón de la barra de tareas.
 
 ## <a name="t"></a>T
 
-**cuadro de diálogo con pestañas**
+**Cuadro de diálogo con pestañas**
 
-Cuadro de diálogo que contiene información relacionada en páginas con etiquetas independientes (pestañas). A diferencia de las hojas de propiedades, que a menudo contienen pestañas, los cuadros de diálogo con pestañas no se usan para mostrar las propiedades de un objeto. Vea también: [propiedades](#p).
+Cuadro de diálogo que contiene información relacionada en páginas etiquetadas independientes (pestañas). A diferencia de las hojas de propiedades, que a menudo también contienen pestañas, los cuadros de diálogo con pestañas no se usan para mostrar las propiedades de un objeto. Vea también: [propiedades](#p).
 
-**Task**
+**Tarea**
 
-Una unidad de actividad de usuario, a menudo representada por una sola superficie de la interfaz de usuario (como un cuadro de diálogo), o una secuencia de páginas (como un asistente).
+Una unidad de actividad de usuario, representada a menudo por una sola superficie de interfaz de usuario (por ejemplo, un cuadro de diálogo) o una secuencia de páginas (como un asistente).
 
-**cuadro de diálogo tarea**
+**cuadro de diálogo de tarea**
 
-Cuadro de diálogo implementado mediante la API de diálogo de tarea. Requiere Windows Vista o posterior.
+Cuadro de diálogo implementado mediante la API de diálogo de tareas. Requiere Windows Vista o posterior.
 
 **flujo de tareas**
 
@@ -781,72 +781,72 @@ Secuencia de páginas que ayuda a los usuarios a realizar una tarea, ya sea en u
 
 **vínculo de tarea**
 
-Un vínculo que se usa para iniciar una tarea, a diferencia de los vínculos que navegan a otras páginas o ventanas, eligen opciones o muestran ayuda.
+Vínculo que se usa para iniciar una tarea, a diferencia de los vínculos que navegan a otras páginas o ventanas, eligen opciones o muestran la Ayuda.
 
 **panel de tareas**
 
-Tipo de interfaz de usuario similar a un cuadro de diálogo, salvo que se presenta en un panel de ventana en lugar de en una ventana independiente. Como resultado, los paneles de tareas tienen una sensación más directa y contextual que los cuadros de diálogo. Un panel de tareas puede contener un menú para proporcionar al usuario un pequeño conjunto de comandos relacionados con el objeto o el modo de programa seleccionado.
+Un tipo de interfaz de usuario similar a un cuadro de diálogo, salvo que se presenta dentro de un panel de ventana en lugar de en una ventana independiente. Como resultado, los paneles de tareas tienen una sensación más directa y contextual que los cuadros de diálogo. Un panel de tareas puede contener un menú para proporcionar al usuario un pequeño conjunto de comandos relacionados con el objeto o el modo de programa seleccionados.
 
-**situada**
+**Barra**
 
-Punto de acceso para ejecutar programas que tienen una presencia de escritorio. Los usuarios interactúan con controles denominados botones de la barra de tareas para mostrar, ocultar y minimizar las ventanas de programa.
+Punto de acceso para ejecutar programas que tienen presencia en el escritorio. Los usuarios interactúan con controles denominados botones de la barra de tareas para mostrar, ocultar y minimizar las ventanas de programa.
 
 **cuadro de texto**
 
-Control diseñado específicamente para la entrada de texto. permite a los usuarios ver, escribir o modificar texto o números.
+Control diseñado específicamente para la entrada textual; permite a los usuarios ver, escribir o editar texto o números.
 
 **color del tema**
 
-Un color definido por Windows para un propósito específico, al que se tiene acceso mediante la API GetThemeColor, junto con partes, Estados y colores. Por ejemplo, el elemento Windows define un FillColor y un TextColor. Los colores del tema son más ricos que los colores del sistema, pero requieren que el servicio de tema se esté ejecutando. Vea también: [color del sistema](#s).
+Color definido por Windows para un propósito específico, al que se accede mediante getThemeColor API junto con partes, estados y colores. Por ejemplo, la parte de windows define fillColor y TextColor. Los colores de tema son más enriquecidos que los colores del sistema, pero requieren que el servicio de temas se esté ejecutando. Vea también: [color del sistema.](#s)
 
-**capitalización de estilo de título**
+**title-style capitalization**
 
-Para el capitalización de estilo de título:
+Para mayúsculas de estilo de título:
 
--   Ponga en mayúsculas todos los nombres, verbos (incluidos y otros formatos de para), adverbios (como y cuándo), adjetivos (incluidos esto y eso) y pronombres (incluido su).
--   Poner en mayúsculas la primera y la última palabra, independientemente de sus partes de voz (por ejemplo, el texto que se va a buscar).
--   Poner en mayúsculas las preposiciones que forman parte de una frase verbal (por ejemplo, realizar una copia de seguridad del disco).
--   No ponga en mayúscula los artículos (a,,,), a menos que el artículo sea la primera palabra del título.
--   No aproveche las conjunciones de coordenadas (y, pero, para, ni, ni), a menos que la conjunción sea la primera palabra del título.
--   No ponga en mayúsculas las preposiciones de cuatro o menos letras, a menos que la posición preposicionada sea la primera palabra del título.
--   No lo ponga en mayúsculas en una frase infinita (por ejemplo, cómo formatear el disco duro), a menos que la frase sea la primera palabra del título.
--   Poner en mayúscula la segunda palabra en palabras compuestas si es un sustantivo o un adjetivo adecuado, una "e-palabra" o las palabras tienen el mismo peso (por ejemplo, comercio electrónico, referencia cruzada, software anterior a Microsoft, acceso de lectura y escritura, tiempo de ejecución). No ponga en mayúscula la segunda palabra si es otra parte de la voz, como una posición de preposición u otra palabra secundaria (por ejemplo, complemento, procedimientos, desactivación).
--   Aproveche la interfaz de usuario y los términos de la interfaz de programación de aplicaciones que normalmente no haría en mayúsculas, a menos que distingan mayúsculas de minúsculas (por ejemplo, el comando fdisk). Siga las mayúsculas y minúsculas de las palabras clave tradicionales y otros términos especiales en los lenguajes de programación (por ejemplo, la función printf, mediante las directivas de pares y de alineación).
--   Ponga en mayúscula solo la primera palabra de cada encabezado de columna.
+-   Incluya en mayúsculas todos los nombres, verbos (incluido is y otras formas de ser), adverbs (incluidos y cuándo), adjetivos (incluidos esto y eso) y pronombres (incluido su).
+-   Capitalice la primera y la última palabra, independientemente de sus partes de la voz (por ejemplo, El texto que se buscará).
+-   Capitalice las preposiciones que forman parte de una frase verbal (por ejemplo, Hacer una copia de seguridad del disco).
+-   No en mayúsculas los artículos (a, an, the), a menos que el artículo sea la primera palabra del título.
+-   No en mayúsculas las conjunciones de coordenadas (y, pero, para, ni, o ), a menos que la conjunción sea la primera palabra del título.
+-   No en mayúsculas las preposiciones de cuatro letras o menos, a menos que la preposición sea la primera palabra del título.
+-   No haga mayúsculas en en una frase infinitiva (por ejemplo, Cómo dar formato al disco duro), a menos que la frase sea la primera palabra del título.
+-   Escriba en mayúscula la segunda palabra en palabras compuestas si es un nombre o un adjetivo adecuado, una "palabra electrónica" o las palabras tienen el mismo peso (por ejemplo, comercio electrónico, referencia cruzada, software anterior a Microsoft, acceso de lectura/escritura, tiempo de ejecución). No utilice mayúsculas en la segunda palabra si es otra parte de la voz, como una preposición u otra palabra secundaria (por ejemplo, Complemento, Cómo, Quitar).
+-   Utilice mayúsculas y minúsculas en los términos de interfaz de usuario y de interfaz de programación de aplicaciones que normalmente no se usarían en mayúsculas y minúsculas, a menos que distinguen mayúsculas de minúsculas (por ejemplo, el comando fdisk). Siga el uso tradicional de mayúsculas y palabras clave y otros términos especiales en lenguajes de programación (por ejemplo, La función printf, Usar las directivas EVEN y ALIGN).
+-   Haga mayúsculas solo la primera palabra de cada encabezado de columna.
 
-**barra**
+**Barra**
 
-Una presentación gráfica de los comandos optimizados para el acceso eficaz.
+Presentación gráfica de comandos optimizados para un acceso eficaz.
 
-**herramienta**
+**Descripción**
 
-Pequeña ventana emergente que etiqueta el control sin etiqueta al que se apunta, como los controles de barra de herramientas o los botones de comando sin etiquetar.
+Una pequeña ventana emergente que etiqueta el control sin etiquetar al que se apunta, como los controles de barra de herramientas sin etiqueta o los botones de comando.
 
-**entradas**
+**Tocar**
 
-Interacción directa con un equipo que se muestra con un dedo.
+Interacción directa con una pantalla de equipo con un dedo.
 
 ## <a name="u"></a>U
 
 **estudio de facilidad de uso**
 
-Una técnica de investigación que ayuda a mejorar la experiencia del usuario mediante la prueba del diseño de la interfaz de usuario y la recopilación de comentarios de usuarios de destino reales. Los estudios de facilidad de uso pueden abarcar desde técnicas formales de configuración, como laboratorios de uso, hasta técnicas informales en configuraciones como la propia oficina del usuario. Pero las constantes de estos estudios son: capturar información de los participantes; evaluación de esa información para patrones y tendencias significativos; y, por último, implementar los cambios lógicos que abordan los problemas identificados en el estudio.
+Una técnica de investigación que le ayuda a mejorar la experiencia del usuario mediante la prueba del diseño de la interfaz de usuario y la recopilación de comentarios de usuarios de destino reales. Los estudios de facilidad de uso pueden abarcar desde técnicas formales en configuraciones como laboratorios de facilidad de uso hasta técnicas informales en configuraciones como la propia oficina del usuario. Pero las constantes de estos estudios son: capturar información de los participantes; evaluar esa información para tendencias y patrones significativos; y, por último, la implementación de cambios lógicos que abordan los problemas identificados en el estudio.
 
 **Control de cuentas de usuario**
 
-Con el control de cuentas de usuario (o UAC, anteriormente conocido como "cuenta de usuario con privilegios mínimos" o LUA) habilitado, los administradores interactivos normalmente se ejecutan con menos privilegios de usuario, pero pueden realizar tareas de elevación automática para llevar a cabo tareas administrativas dando su consentimiento explícito con la interfaz de usuario de consentimiento. Estas tareas administrativas incluyen instalar software y controladores, cambiar la configuración de todo el sistema, ver o cambiar otras cuentas de usuario y ejecutar herramientas administrativas.
+Con el Control de cuentas de usuario (o UAC, anteriormente conocido como "Cuenta de usuario con privilegios mínimos" o LUA) habilitado, los administradores interactivos normalmente se ejecutan con menos privilegios de usuario, pero pueden elevarse automáticamente para realizar tareas administrativas dando consentimiento explícito con la interfaz de usuario de consentimiento. Estas tareas administrativas incluyen la instalación de software y controladores, el cambio de la configuración de todo el sistema, la visualización o el cambio de otras cuentas de usuario y la ejecución de herramientas administrativas.
 
 **Escudo de control de cuentas de usuario**
 
-Un icono de escudo que se usa para indicar que un comando u opción necesita elevación para el control de cuentas de usuario.
+Icono de escudo que se usa para indicar que un comando o opción necesita elevación para el Control de cuentas de usuario.
 
 **problema de entrada del usuario**
 
-Error resultante de los datos proporcionados por el usuario. Los problemas de los datos proporcionados por el usuario suelen ser no críticos porque deben corregirse antes de continuar.
+Error resultante de la entrada del usuario. Los problemas de entrada del usuario normalmente no son críticos porque deben corregirse antes de continuar.
 
 **escenario de usuario**
 
-Una descripción de un objetivo de usuario, un problema o una tarea en un conjunto específico de circunstancias.
+Descripción de un objetivo, problema o tarea de un usuario en un conjunto específico de circunstancias.
 
 ## <a name="v"></a>V
 
@@ -854,31 +854,31 @@ Una descripción de un objetivo de usuario, un problema o una tarea en un conjun
 
 **warning**
 
-Un mensaje que describe una condición que puede provocar un problema en el futuro. Las advertencias no son errores ni preguntas. En Windows Vista y versiones posteriores, los mensajes de advertencia se muestran normalmente en los cuadros de diálogo de tarea, incluyen una instrucción principal clara y concisa y, por lo general, incluyen un icono de advertencia estándar para el refuerzo visual del texto.
+Mensaje que describe una condición que podría causar un problema en el futuro. Las advertencias no son errores ni preguntas. En Windows Vista y versiones posteriores, los mensajes de advertencia se muestran normalmente en los diálogos de tareas, incluyen una instrucción principal clara y concisa y normalmente incluyen un icono de advertencia estándar para el refuerzo visual del texto.
 
-**Página principal**
+**página principal**
 
-La primera página de un asistente, que se usa para explicar el propósito del asistente. Ya no se recomiendan las páginas de bienvenida. Los usuarios tienen una experiencia más eficaz sin estas páginas.
+Primera página de un asistente, que se usa para explicar el propósito del asistente. Ya no se recomiendan las páginas de bienvenida. Los usuarios tienen una experiencia más eficaz sin estas páginas.
 
-**ventana**
+**Ventana**
 
-Área rectangular de la pantalla de un equipo en la que aparecen los programas y el contenido. Una ventana puede moverse, cambiarse de tamaño, minimizarse o cerrarse; puede superponerse a otras ventanas. Al acoplar una ventana secundaria, se convierte en un panel. Vea también: [Panel](#p).
+Área rectangular de la pantalla de un equipo en la que aparecen los programas y el contenido. Una ventana se puede mover, cambiar de tamaño, minimizar o cerrar; puede superponerse a otras ventanas. Al acoplar una ventana secundaria, se convierte en un panel. Vea también: [panel](#p).
 
 **Tecla del logotipo de Windows**
 
-Tecla modificadora con el logotipo de Windows en él. Esta clave se usa para varios métodos abreviados de Windows y está reservada para su uso en Windows. Por ejemplo, al presionar la tecla del logotipo de Windows se muestra u oculta el menú Inicio de Windows.
+Tecla modificadora con el Windows logotipo. Esta clave se usa para una serie de accesos directos Windows accesos directos y se reserva para Windows uso. Por ejemplo, al presionar la tecla Windows logotipo se muestra u oculta la Windows menú Inicio.
 
-**alambres**
+**Wireframes**
 
-Un boceto de la interfaz de usuario que muestra la funcionalidad y el diseño de una ventana, pero no su apariencia finalizada. Una trama de alambres usa solo segmentos de línea, controles y texto, sin colores, gráficos complejos o el uso de temas.
+Una simulación de interfaz de usuario que muestra la funcionalidad y el diseño de una ventana, pero no su apariencia finalizada. Un wireframe solo usa segmentos de línea, controles y texto, sin color, gráficos complejos o el uso de temas.
 
-**para**
+**hechicero**
 
-Secuencia de páginas que guía a los usuarios a través de una tarea de varios pasos, que se realiza con poca frecuencia. Los asistentes efectivos reducen la información necesaria para realizar la tarea en comparación con las interfaces de IU alternativas.
+Secuencia de páginas que guía a los usuarios a través de una tarea de varios pasos que se realiza con poca frecuencia. Los asistentes eficaces reducen los conocimientos necesarios para realizar la tarea en comparación con las UI alternativas.
 
 **Área de trabajo de**
 
-Área en pantalla en la que los usuarios pueden realizar su trabajo, así como almacenar programas, documentos y sus métodos abreviados. Vea también: [escritorio](#d).
+Área en pantalla donde los usuarios pueden realizar su trabajo, así como almacenar programas, documentos y sus accesos directos. Consulte también: [escritorio.](#d)
 
 ## <a name="x"></a>X
 
@@ -888,7 +888,7 @@ Secuencia de páginas que guía a los usuarios a través de una tarea de varios 
 
 **Orden Z**
 
-La relación en capas de las ventanas en la pantalla.
+Relación por capas de ventanas en la pantalla.
 
  
 

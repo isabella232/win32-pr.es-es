@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 747c4631bc2c24a6550904e36e58a6fc02547bc010da7fa1d08b896c6c17489c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e71acf200a95bba05b7298a5824bfa353e4a90b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119657465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256077"
 ---
 # <a name="wpd_device_types-enumeration"></a>Enumeración \_ WPD DEVICE \_ TYPES
 
 El tipo de enumeración **\_ WPD DEVICE \_ TYPES** describe los diferentes tipos de Windows Portable Device (WPD) que se usan normalmente para determinar la clasificación básica y la apariencia visual de un dispositivo portátil.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -62,7 +62,7 @@ Un dispositivo de cámara, como una cámara digital.
 <span id="WPD_DEVICE_TYPE_MEDIA_PLAYER"></span><span id="wpd_device_type_media_player"></span>**REPRODUCTOR MULTIMEDIA \_ DE TIPO DE DISPOSITIVO \_ \_ \_ WPD**
 </dt> <dd>
 
-Un dispositivo de reproductor multimedia que admite la reproducción de audio, vídeo o visualización de imágenes, como un reproductor de música portátil o un centro multimedia portátil. No todo esto se clasifica funcionalmente como un REPRODUCTOR MULTIMEDIA WPD \_ DEVICE \_ \_ \_ TYPE. Por ejemplo, los dispositivos portátiles del reproductor de música se clasifican como WPD \_ DEVICE \_ TYPE MEDIA \_ \_ PLAYER.
+Un dispositivo de reproductor multimedia que admite la reproducción de audio, vídeo o visualización de imágenes, como un reproductor de música portátil o un centro multimedia portátil. No todo esto funcionalmente se clasifica como un REPRODUCTOR MULTIMEDIA \_ WPD DEVICE \_ \_ \_ TYPE. Por ejemplo, los dispositivos portátiles del reproductor de música se clasifican como WPD \_ DEVICE \_ TYPE MEDIA \_ \_ PLAYER.
 
 </dd> <dt>
 
@@ -94,9 +94,9 @@ Un dispositivo de grabadora de audio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**WPD \_ LOS \_ TIPOS DE** DISPOSITIVO se leen mediante la interfaz [**IPortableDeviceManager.**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) Las aplicaciones WPD pueden usar estos valores para determinar la apariencia visual genérica del dispositivo. Es decir, se muestra una imagen de cámara para dispositivos parecidos a cámara, se muestra una imagen de teléfono móvil para dispositivos de tipo teléfono, y así sucesivamente.
+**WPD \_ LOS \_ TIPOS DE** DISPOSITIVO se leen mediante la interfaz [**IPortableDeviceManager.**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) Las aplicaciones WPD pueden usar estos valores para determinar la apariencia visual genérica del dispositivo. Es decir, se muestra una imagen de cámara para dispositivos de cámara, una imagen de teléfono móvil para dispositivos de tipo teléfono, y así sucesivamente.
 
 > [!Note]  
 > Las aplicaciones DE WPD deben usar las funciones del dispositivo portátil para determinar funcionalmente, no el valor **\_ DE WPD DEVICE \_ TYPES.**
@@ -113,7 +113,7 @@ Un dispositivo de grabadora de audio.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

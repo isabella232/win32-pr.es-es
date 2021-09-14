@@ -4,12 +4,12 @@ description: Funciones de control
 ms.assetid: 9774a320-1d00-48a4-ba13-fb1cd683a635
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebf94310ccfc0dd7698d8d90dfd2771fa135bf90d5dd6dc0cec958a7a5347ce9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7099afab5c035e394eafc30c4475dbe6bc97cec5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255627"
 ---
 # <a name="control-functions"></a>Funciones de control
 
@@ -26,7 +26,7 @@ ms.locfileid: "119917075"
 -   [**DPA \_ EnumCallback**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_enumcallback)
 -   [**DPA \_ GetPtr**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_getptr)
 -   [**DPA \_ GetPtrIndex**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_getptrindex)
--   [**GetSize de DPA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_getsize)
+-   [**DPA \_ GetSize**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_getsize)
 -   [**Crecimiento \_ de DPA**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_grow)
 -   [**DPA \_ InsertPtr**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_insertptr)
 -   [**LoadStream de DPA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dpa_loadstream)
@@ -47,7 +47,7 @@ ms.locfileid: "119917075"
 -   [**DSA \_ EnumCallback**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_enumcallback)
 -   [**GetItem de DSA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_getitem)
 -   [**GetItemPtr de DSA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_getitemptr)
--   [**GetSize de DSA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_getsize)
+-   [**DSA \_ GetSize**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_getsize)
 -   [**InsertItem de DSA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_insertitem)
 -   [**SetItem de DSA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_setitem)
 -   [**Ordenación de DSA \_**](/windows/desktop/api/dpa_dsa/nf-dpa_dsa-dsa_sort)

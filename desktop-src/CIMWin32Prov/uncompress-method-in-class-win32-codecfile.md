@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b87a1cf186eeee3af227e84aad3553386d5a1d8bd33f73f664aeffab4bc1af59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d1ffcf99877781c7070b42dac5ffe9ef83af2d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255764"
 ---
-# <a name="uncompress-method-of-the-win32_codecfile-class"></a>Método Descomprimir de la clase CodecFile de Win32 \_
+# <a name="uncompress-method-of-the-win32_codecfile-class"></a>Método Uncompress de la clase CodecFile de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Uncompress** descomprime el archivo de códec lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Ha habido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -151,14 +151,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**CodecFile de Win32 \_**](win32-codecfile.md)
+[**CódecFile de \_ Win32**](win32-codecfile.md)
 </dt> </dl>
 
  

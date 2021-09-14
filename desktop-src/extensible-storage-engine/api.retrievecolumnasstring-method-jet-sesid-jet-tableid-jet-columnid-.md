@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b30148932b460a64d28f689e7c7546bf17e7a0614862cbce61daea493eae615b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64500e9827d55fab4771963b95dbfd0efffdc5c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118084532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361266"
 ---
 # <a name="apiretrievecolumnasstring-method-jet_sesid-jet_tableid-jet_columnid"></a>Método Api.RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID)
 
@@ -87,7 +87,7 @@ public static string RetrieveColumnAsString(
 Tipo: [System.String](/dotnet/api/system.string)  
 Los datos recuperados de la columna como una cadena. Null si la columna es NULL.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

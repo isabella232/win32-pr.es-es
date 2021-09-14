@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - DXGItype.h
-ms.openlocfilehash: 2c1ef7bd65645fa68e699b6f70894e72452a707eac29ab0d35e56364a66604bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0447d6470401d4136fbfd36f6d9c089e331b14b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119627425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360850"
 ---
 # <a name="dxgi_rgba-structure"></a>Estructura \_ RGBA de DXGI
 
@@ -38,7 +38,7 @@ typedef struct _DXGI_RGBA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ Valor de punto flotante que especifica el componente alfa de un color. Este valo
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede establecer los miembros de esta estructura en valores fuera del intervalo de 0 a 1 para implementar algunos efectos inusuales. Los valores mayores que 1 producen luces fuertes que tienden a apagar una escena. Los valores negativos producen luces oscuras que realmente quitan la luz de una escena.
 
@@ -91,13 +91,13 @@ Puede usar **DXGI \_ RGBA** con [**IDXGISwapChain1::SetBackgroundColor**](/windo
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de escritorio \[ \| para UWP\]<br/>                        |
+| Cliente mínimo compatible<br/> | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/>                        |
 | Servidor mínimo compatible<br/> | Windows Server 2012 y actualización de plataforma para Windows aplicaciones de escritorio de UWP de Server 2008 R2 \[ \|\]<br/> |
-| Header<br/>                   | <dl> <dt>DXGItype.h</dt> </dl>                      |
+| Encabezado<br/>                   | <dl> <dt>DXGItype.h</dt> </dl>                      |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

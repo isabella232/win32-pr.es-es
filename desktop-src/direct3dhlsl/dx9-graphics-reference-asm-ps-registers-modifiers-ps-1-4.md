@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 63a0cfd212767a0219af83d734d3562edacc84901098afcf77c786d8895f32d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af2097ee682aec7da0ca36df9e4b465fb360f814
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118512881"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360798"
 ---
 # <a name="ps_1_4-source-register-modifiers-for-texld-texcrd"></a>ps \_ 1 \_ 4 source register modifiers for texld, texcrd
 
@@ -22,7 +22,7 @@ Las instrucciones de dirección de textura de la versión 1 4 del sombreador de 
 
 ## <a name="source-register-modifiers-for-texld-and-texcrd"></a>Modificadores de registro de origen para regld y texcrd
 
-Estos modificadores proporcionan funcionalidad de división projective dividiendo los valores x e y entre los valores z o w.
+Estos modificadores proporcionan funcionalidad de división projective dividiendo los valores x e y por los valores z o w.
 
 
 
@@ -37,7 +37,7 @@ Estos modificadores proporcionan funcionalidad de división projective dividiend
 
  
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 El \_ modificador abstracto \_ o db hace lo siguiente:
 

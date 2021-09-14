@@ -5,15 +5,15 @@ ms.assetid: aa092156-30ae-4f8a-baa2-450f38a78153
 keywords:
 - Servicios web de serialización para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ecfa82844a45c6a5c2fcdabbc867c08d5531fd7c9d92a16c5eb8cbd9090af01
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 63f986c6cec9a035424aaafe1c51f4dc0d3ee014
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119440715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360896"
 ---
 # <a name="serialization"></a>Serialización
 
@@ -60,7 +60,7 @@ Las devoluciones de llamada siguientes se usan con la serialización:
 Las enumeraciones siguientes se usan con serialización:
 
 -   [**ASIGNACIÓN DE \_ CAMPOS WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping)
--   [**OPCIONES DE \_ CAMPO WS \_**](/windows/win32/api/webservices/ne-webservices-ws_xml_reader_encoding_type)
+-   [**OPCIONES DEL \_ CAMPO WS \_**](/windows/win32/api/webservices/ne-webservices-ws_xml_reader_encoding_type)
 -   [**WS \_ READ \_ OPTION**](/windows/desktop/api/WebServices/ne-webservices-ws_read_option)
 -   [**WS \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_type)
 -   [**ASIGNACIÓN DE TIPOS DE WS \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_type_mapping)
@@ -84,7 +84,7 @@ Las estructuras siguientes se usan con serialización:
 -   [**DESCRIPCIÓN DE LA \_ MATRIZ WS CHAR \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_char_array_description)
 -   [**DESCRIPCIÓN DEL \_ TIPO \_ PERSONALIZADO DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_custom_type_description)
 -   [**DESCRIPCIÓN \_ DE DATETIME DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_datetime_description)
--   [**WS \_ DECIMAL \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_decimal_description)
+-   [**DESCRIPCIÓN DECIMAL DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_decimal_description)
 -   [**VALOR PREDETERMINADO DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_default_value)
 -   [**WS \_ DOUBLE \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_double_description)
 -   [**DESCRIPCIÓN DE LA DURACIÓN DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_duration_description)
@@ -94,7 +94,7 @@ Las estructuras siguientes se usan con serialización:
 -   [**WS \_ ENUM \_ VALUE**](/windows/desktop/api/WebServices/ns-webservices-ws_enum_value)
 -   [**DESCRIPCIÓN DEL ERROR DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_fault_description)
 -   [**DESCRIPCIÓN DEL \_ CAMPO WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_field_description)
--   [**DESCRIPCIÓN \_ DE WS FLOAT \_**](/windows/desktop/api/WebServices/ns-webservices-ws_float_description)
+-   [**DESCRIPCIÓN DE \_ WS FLOAT \_**](/windows/desktop/api/WebServices/ns-webservices-ws_float_description)
 -   [**DESCRIPCIÓN DEL GUID de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_guid_description)
 -   [**WS \_ INT16 \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_int16_description)
 -   [**WS \_ INT32 \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_int32_description)
@@ -106,7 +106,7 @@ Las estructuras siguientes se usan con serialización:
 -   [**WS \_ TIMESPAN \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_timespan_description)
 -   [**DESCRIPCIÓN DE \_ WS UINT16 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint16_description)
 -   [**DESCRIPCIÓN DE \_ WS UINT32 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint32_description)
--   [**DESCRIPCIÓN DE \_ WS UINT64 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint64_description)
+-   [**DESCRIPCIÓN \_ DE WS UINT64 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint64_description)
 -   [**DESCRIPCIÓN \_ DE WS \_ UINT8**](/windows/desktop/api/WebServices/ns-webservices-ws_uint8_description)
 -   [**DESCRIPCIÓN DE WS \_ UNION \_**](/windows/desktop/api/WebServices/ns-webservices-ws_union_description)
 -   [**DESCRIPCIÓN DEL \_ CAMPO WS UNION \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_union_field_description)

@@ -4,12 +4,12 @@ ms.assetid: db38c31c-6ae4-4401-82b8-7fd220c1678c
 title: WM_INPUTLANGCHANGEREQUEST mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 644fa4764c5172edc34f16509c6a6b00be6356b80c460a08233be8aa64ef69c6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b1df361c479978083c29281764e65c48b131c22b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256388"
 ---
 # <a name="wm_inputlangchangerequest-message"></a>Mensaje \_ INPUTLANGCHANGEREQUEST de WM
 
@@ -37,7 +37,7 @@ Nueva configuración regional de entrada. Este parámetro puede ser una combinac
 
 | Value                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="INPUTLANGCHANGE_BACKWARD"></span><span id="inputlangchange_backward"></span><dl> <dt>**INPUTLANGCHANGE \_ Backward**</dt> <dt>0x0004</dt> </dl>       | Se usó una tecla de acceso para elegir la configuración regional de entrada anterior en la lista instalada de configuraciones regionales de entrada. Esta marca no se puede usar con la marca INPUTLANGCHANGE \_ FORWARD.<br/> |
+| <span id="INPUTLANGCHANGE_BACKWARD"></span><span id="inputlangchange_backward"></span><dl> <dt>**INPUTLANGCHANGE \_ Backward**</dt> <dt>0x0004</dt> </dl>       | Se usó una tecla de acceso derecho para elegir la configuración regional de entrada anterior en la lista instalada de configuraciones regionales de entrada. Esta marca no se puede usar con la marca INPUTLANGCHANGE \_ FORWARD.<br/> |
 | <span id="INPUTLANGCHANGE_FORWARD"></span><span id="inputlangchange_forward"></span><dl> <dt>**INPUTLANGCHANGE \_ Reenvío**</dt> <dt>0x0002</dt> </dl>          | Se usó una tecla de acceso derecho para elegir la siguiente configuración regional de entrada en la lista instalada de configuraciones regionales de entrada. Esta marca no se puede usar con la marca INPUTLANGCHANGE \_ BACKWARD.<br/>    |
 | <span id="INPUTLANGCHANGE_SYSCHARSET"></span><span id="inputlangchange_syscharset"></span><dl> <dt>**INPUTLANGCHANGE \_ SysCHARSET**</dt> <dt>0x0001</dt> </dl> | El diseño del teclado de la nueva configuración regional de entrada se puede usar con el juego de caracteres del sistema.<br/>                                                                               |
 
@@ -60,11 +60,11 @@ Tipo: **LRESULT**
 
 Este mensaje se publica, no se envía, a la aplicación, por lo que se omite el valor devuelto. Para aceptar el cambio, la aplicación debe pasar el mensaje [**a DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca). Para rechazar el cambio, la aplicación debe devolver cero sin llamar **a DefWindowProc**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) recibe el mensaje **\_ INPUTLANGCHANGEREQUEST** de WM, activa la nueva configuración regional de entrada y notifica a la aplicación el cambio mediante el envío del [**mensaje \_ INPUTLANGCHANGE de WM.**](wm-inputlangchange.md)
 
-El indicador de idioma solo está presente en la barra de tareas si ha instalado más de un diseño de teclado y si ha habilitado el indicador mediante la aplicación del panel de control Teclado.
+El indicador de idioma solo está presente en la barra de tareas si ha instalado más de un diseño de teclado y si ha habilitado el indicador mediante la aplicación Panel de control de teclado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ El indicador de idioma solo está presente en la barra de tareas si ha instalado
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

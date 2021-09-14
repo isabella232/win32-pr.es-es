@@ -4,16 +4,16 @@ ms.assetid: a8f41f0d-b284-aefa-923b-471b13b4a3ec
 title: 'Cómo: integrar X3DAudio con XAudio2'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c940acbe78e8d4ca4247f77500adeeca7c9619057a3008dea50fc8b55a9f364e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7dc54fa5f673e319712808ca6d2b587b8ad2d0fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962694"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255962"
 ---
 # <a name="how-to-integrate-x3daudio-with-xaudio2"></a>Cómo: integrar X3DAudio con XAudio2
 
-En este tema se muestra cómo integrar X3DAudio con XAudio2. Puede usar X3DAudio para proporcionar los valores de volumen y tono para las voces XAudio2 y los parámetros para el efecto de reverberación integrado de XAudio2. En este tema se supone que ha creado un gráfico de audio como se describe en [Cómo:](how-to--build-a-basic-audio-processing-graph.md)Compilar un procesamiento de audio básico Graph . Si aún no ha creado un gráfico de audio, se producirá un error [**en X3DAudioInitialize.**](/windows/desktop/api/x3daudio/nf-x3daudio-x3daudioinitialize)
+En este tema se muestra cómo integrar X3DAudio con XAudio2. Puede usar X3DAudio para proporcionar los valores de volumen y tono para las voces XAudio2 y los parámetros para el efecto de reverberación integrado de XAudio2. En este tema se da por supuesto que ha creado un gráfico de audio como se describe en [Cómo: Compilar](how-to--build-a-basic-audio-processing-graph.md)un procesamiento de audio básico Graph . Si aún no ha creado un gráfico de audio, se producirá un error [**en X3DAudioInitialize.**](/windows/desktop/api/x3daudio/nf-x3daudio-x3daudioinitialize)
 
 **Para inicializar X3DAudio**
 
@@ -33,7 +33,7 @@ En este tema se muestra cómo integrar X3DAudio con XAudio2. Puede usar X3DAudio
 
 2.  Cree instancias de las estructuras [**X3DAUDIO \_ LISTENER y**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_listener) [**X3DAUDIO \_ EMITTER.**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_emitter)
 
-    La [**estructura del agente de \_ escucha X3DAUDIO**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_listener) representa la posición de lo que escucha el sonido. Por lo general, esta es la posición de la cámara o una posición cercana a ella. La [**estructura \_ EMITTER X3DAUDIO**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_emitter) representa la posición de la cosa que hace el sonido. Habrá una estructura **emitter \_ X3DAUDIO** para cada sonido del que se realiza el seguimiento.
+    La [**estructura del agente de \_ escucha X3DAUDIO**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_listener) representa la posición de lo que escucha el sonido. Por lo general, esta es la posición de la cámara o una posición cercana a ella. La [**estructura emisor \_ X3DAUDIO**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_emitter) representa la posición de la cosa que hace el sonido. Habrá una estructura **emitter \_ X3DAUDIO** para cada sonido del que se realiza el seguimiento.
 
     Los miembros de las estructuras que no se actualizarán en un bucle de juego se deben inicializar aquí. La mayoría de los miembros de las estructuras simplemente se pueden inicializar en cero. Sin embargo, algunos miembros [**de X3DAUDIO \_ EMITTER**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_emitter) deben establecerse para inicializarse en valores distintos de cero. El miembro ChannelCount del emisor **X3DAUDIO \_** debe inicializarse en el número de canales de la voz que representa el emisor. Además, el miembro CurveDistanceScaler de **X3DAUDIO \_ EMITTER** debe estar en el intervalo FLT \_ MIN a FLT \_ MAX.
 
@@ -67,7 +67,7 @@ En este tema se muestra cómo integrar X3DAudio con XAudio2. Puede usar X3DAudio
 
 Realice estos pasos una vez cada dos o tres fotogramas para calcular la nueva configuración y aplicarlos. En este ejemplo, una voz de origen se envía directamente a la voz maestra y a una voz de submezcla con un efecto de reverberación aplicado.
 
-**Para usar X3DAudio para calcular y aplicar una nueva configuración de audio 3D**
+**Para usar X3DAudio para calcular y aplicar la nueva configuración de audio 3D**
 
 1.  Actualice las [**estructuras X3DAUDIO \_ LISTENER y**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_listener) [**X3DAUDIO \_ EMITTER**](/windows/desktop/api/x3daudio/ns-x3daudio-x3daudio_emitter) con su posición, velocidad y orientación actuales.
 

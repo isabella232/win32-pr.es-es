@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 8366f90fe41eaa92d826f4d761fe8cdf58304f54e1f57cb074ae94d6fd9f1ea9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c70f68dc04adcb454fcc7c5ae301f0dabf60c28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118696283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256064"
 ---
 # <a name="wpdattributeform-enumeration"></a>WpdAttributeForm (enumeración)
 
 El **tipo de enumeración WpdAttributeForm** describe cómo una propiedad almacena sus valores.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -78,7 +78,7 @@ El valor de propiedad representa un identificador de objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta enumeración la usa la [propiedad \_ WPD PROPERTY \_ ATTRIBUTE \_ FORM](attributes.md) para describir cómo se almacenan los datos de una propiedad.
 

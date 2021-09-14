@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd85a3b74ee28e5faa8df5fc264d50366803f4073ec97a36920577d417e4f97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d6c66c54ab9528a458910def5978ec83b191654
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084702"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256263"
 ---
 # <a name="iwmdrmsecuritygetmachinecertificate-method"></a>IWMDRMSecurity::GetMachineCertificate (método)
 
@@ -53,7 +53,7 @@ Tipo de certificado que se recuperará. Establezca en uno de los valores de la t
 
 
 
-| Valor                        | Descripción                                                                           |
+| Value                        | Descripción                                                                           |
 |------------------------------|---------------------------------------------------------------------------------------|
 | TIPO DE CERTIFICADO WMDRM \_ \_ \_ V1 | El certificado se recuperará en el formato utilizado por los componentes heredados.            |
 | TIPO DE CERTIFICADO WMDRM \_ \_ \_ V2 | El certificado se recuperará en el formato utilizado por los componentes Windows Vista. |
@@ -78,7 +78,7 @@ Dirección de una variable que recibe un puntero a los datos del certificado. Se
 
 </dd> <dt>
 
-*certificatecertificate* \[ in, out\]
+*certificateCertificate* \[ in, out\]
 </dt> <dd>
 
 Tamaño del certificado en bytes. Si *ppbCertificate* es **NULL,** este valor se establecerá en el tamaño del certificado. Si *ppbCertificate* no es **NULL,** este valor debe establecerse en el tamaño del búfer.

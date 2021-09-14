@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 3a4e8119955f46a5547873019d75209903dbf1efc9a40ed427c501ffee1cbf14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36f8914be3fce6b461e5267562e6f3ef40aa5fef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118968524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361032"
 ---
-# <a name="shellopen-method"></a>Método Shell.Open
+# <a name="shellopen-method"></a>Shell.Open (método)
 
 Abre la carpeta especificada.
 
@@ -54,7 +54,7 @@ Shell.Open( _
 
 Tipo: **Variant**
 
-Cadena que especifica la ruta de acceso de la carpeta o uno de los [**valores de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres de constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
+Cadena que especifica la ruta de acceso de la carpeta o uno de los [**valores de ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Tenga en cuenta que los nombres constantes que se encuentran en **ShellSpecialFolderConstants** están disponibles en Visual Basic, pero no en VBScript o JScript. En esos casos, los valores numéricos deben usarse en su lugar.
 
 Si *vDir* se establece en uno de [**los shellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) y la carpeta especial no existe, esta función creará la carpeta.
 
@@ -62,7 +62,7 @@ Si *vDir* se establece en uno de [**los shellSpecialFolderConstants**](/windows/
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **muestra Abrir** en uso. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra Abrir** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -124,12 +124,12 @@ End Sub
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 4db2e7fc-0a87-0344-a07c-3abf2b21af32
 title: 'Cómo: inicializar XAudio2'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eb55425c92e6d28a2689fb388869bbf42339d14bec3550e3f9e17798c1af68f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4a613c1ae2b7c3a7f0c55ab5349a0a605aaeb2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255963"
 ---
 # <a name="how-to-initialize-xaudio2"></a>Cómo: inicializar XAudio2
 
@@ -17,7 +17,7 @@ XAudio2 se inicializa para la reproducción de audio mediante la creación de un
 
 **Para inicializar XAudio2**
 
-1.  Asegúrese de que ha inicializado COM. Para una Windows Store, esto se realiza como parte de la inicialización del entorno Windows ejecución. De lo contrario, [**use CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
+1.  Asegúrese de que ha inicializado COM. Para una Windows Store, esto se realiza como parte de la inicialización de la Windows runtime. De lo contrario, [**use CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
 
     ```
     HRESULT hr;
@@ -52,7 +52,7 @@ XAudio2 se inicializa para la reproducción de audio mediante la creación de un
 
 ## <a name="notes-for-windows-store-apps"></a>Notas de las Windows Store
 
-Se recomienda usar un [](/previous-versions/visualstudio/visual-studio-2012/hh279674(v=vs.110)) puntero inteligente para administrar la duración de los objetos XAUDIO2 de una manera segura para excepciones. Para Windows store, puede usar la plantilla de puntero inteligente [**ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) de la biblioteca de plantillas de C++ de Windows Runtime (WRL).
+Se recomienda usar un [](/previous-versions/visualstudio/visual-studio-2012/hh279674(v=vs.110)) puntero inteligente para administrar la duración de los objetos XAUDIO2 de una manera segura para excepciones. Para Windows store, puede usar la plantilla de puntero inteligente [**ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) de la biblioteca de plantillas de C++ (WRL) de Windows Runtime.
 
 
 ```C++

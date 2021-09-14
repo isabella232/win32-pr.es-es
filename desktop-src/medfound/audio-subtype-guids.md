@@ -5,11 +5,11 @@ title: GUID de subtipo de audio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d26b61dc7c8bb828deb6278b037dd6128afcaf1f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122483121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361176"
 ---
 # <a name="audio-subtype-guids"></a>GUID de subtipo de audio
 
@@ -31,29 +31,29 @@ Cuando se usen estos subtipos, establezca el atributo [MF \_ MT MAJOR \_ \_ TYPE
 | <strong>MFAudioFormat_AMR_WP</strong> | Se admite en Windows 8.1 y versiones posteriores.<br /> | WAVE_FORMAT_AMR_WP | 
 | <strong>MFAudioFormat_Dolby_AC3</strong> | Dolby Digital (AC-3).<br /> El mismo valor GUID <strong>MEDIASUBTYPE_DOLBY_AC3</strong>, que se define en ksuuids.h<br /> | Ninguno. | 
 | <strong>MFAudioFormat_Dolby_AC3_SPDIF</strong> | Audio Dolby AC-3 a través de la interfaz digital de Dolby/Dolby (S/PDIF).<br /> Este valor GUID es idéntico a los subtipos siguientes:<br /><ul><li><strong>KSDATAFORMAT_SUBTYPE_IEC61937_DOLBY_DIGITAL</strong>, definido en ksmedia.h.</li><li><strong>MEDIASUBTYPE_DOLBY_AC3_SPDIF</strong>, definido en uuids.h.</li></ul> | WAVE_FORMAT_DOLBY_AC3_SPDIF (0x0092) | 
-| <strong>MFAudioFormat_Dolby_DDPlus</strong> | Dolby Digital Plus.<br /> El mismo valor GUID <strong>MEDIASUBTYPE_DOLBY_DDPLUS</strong>, que se define en wmcodecdsp.h.<br /> | Ninguno | 
+| <strong>MFAudioFormat_Dolby_DDPlus</strong> | Dolby Digital Plus.<br /> El mismo valor GUID <strong>MEDIASUBTYPE_DOLBY_DDPLUS</strong>, que se define en wmcodecdsp.h.<br /> | None | 
 | <strong>MFAudioFormat_DRM</strong> | Datos de audio cifrados usados con la ruta de acceso de audio segura. | WAVE_FORMAT_DRM (0x0009) | 
 | <strong>MFAudioFormat_DTS</strong> | Audio de Digital Theater Systems (DTS). | WAVE_FORMAT_DTS (0x0008) | 
 | <strong>MFAudioFormat_FLAC</strong> | Códec de audio sin pérdida de datos gratuito<br /> Se admite en Windows 10 y versiones posteriores.<br /> | WAVE_FORMAT_FLAC (0xF1AC) | 
 | <strong>MFAudioFormat_Float</strong> | Audio de punto flotante IEEE sin comprimir. | WAVE_FORMAT_IEEE_FLOAT (0x0003) | 
-| <strong>MFAudioFormat_Float_SpatialObjects</strong> | Audio de punto flotante IEEE sin comprimir. | Ninguno | 
+| <strong>MFAudioFormat_Float_SpatialObjects</strong> | Audio de punto flotante IEEE sin comprimir. | None | 
 | <strong>MFAudioFormat_MP3</strong> | MPEG Audio Layer-3 (MP3). | WAVE_FORMAT_MPEGLAYER3 (0x0055) | 
 | <strong>MFAudioFormat_MPEG</strong> | Carga de audio MPEG-1. | WAVE_FORMAT_MPEG (0x0050) | 
 | <strong>MFAudioFormat_MSP1</strong> | Windows Códec media Audio 9 Voice. | WAVE_FORMAT_WMAVOICE9 (0x000A) | 
 | <strong>MFAudioFormat_Opus</strong> | Opus<br /> Se admite en Windows 10 y versiones posteriores.<br /> | WAVE_FORMAT_OPUS (0x704F) | 
 | <strong>MFAudioFormat_PCM</strong> | Audio PCM sin comprimir. | WAVE_FORMAT_PCM (1) | 
-| <strong>MFAudioFormat_QCELP</strong> | Audio QCELP (Qualcomm Code Excited Linear Prediction). | Ninguno | 
+| <strong>MFAudioFormat_QCELP</strong> | Audio QCELP (Qualcomm Code Excited Linear Prediction). | None | 
 | <strong>MFAudioFormat_WMASPDIF</strong> | Windows Códec de Professional Multimedia Audio 9 a través de S/PDIF. | WAVE_FORMAT_WMASPDIF (0x0164) | 
-| <strong>MFAudioFormat_WMAudio_Lossless</strong> | Windows Códec sin pérdida de Media Audio 9 o Windows códec Media Audio 9.1. | WAVE_FORMAT_WMAUDIO_LOSSLESS (0x0163) | 
+| <strong>MFAudioFormat_WMAudio_Lossless</strong> | Windows Códec sin pérdida de Media Audio 9 Windows códec Media Audio 9.1. | WAVE_FORMAT_WMAUDIO_LOSSLESS (0x0163) | 
 | <strong>MFAudioFormat_WMAudioV8</strong> | Windows Códec Media Audio 8, Windows códec Media Audio 9 o Windows códec Media Audio 9.1. | WAVE_FORMAT_WMAUDIO2 (0x0161) | 
-| <strong>MFAudioFormat_WMAudioV9</strong> | Windows Códec de Professional media audio 9 o Windows media audio 9.1 Professional códec. | WAVE_FORMAT_WMAUDIO3 (0x0162) | 
+| <strong>MFAudioFormat_WMAudioV9</strong> | Windows Códec de Professional o códec Windows Media Audio 9.1 Professional de Media Audio 9.1. | WAVE_FORMAT_WMAUDIO3 (0x0162) | 
 
 
 
 
  
 
-Las etiquetas de formato enumeradas en la tercera columna de esta tabla se usan en la estructura **DEDATOX** y se definen en el archivo de encabezado mmreg.h.
+Las etiquetas de formato enumeradas en la tercera columna de esta tabla se usan en la estructura **DEDATOX** Y se definen en el archivo de encabezado mmreg.h.
 
 Dada una etiqueta de formato de audio, puede crear un GUID de subtipo de audio como se muestra a continuación:
 

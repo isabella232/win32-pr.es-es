@@ -6,12 +6,12 @@ keywords:
 - estructuras, Capa 11 de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74dfea7f801c357c16c31842166f1488a5b9306a503ecf74fc00967f2a7be672
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df8fa476d31fea9f77879f89604f591032476a59
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119126089"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361280"
 ---
 # <a name="layer-structures"></a>Estructuras de capa
 

@@ -1,23 +1,23 @@
 ---
 title: atomic_or (sm5 - asm)
-description: OR bit a bit atómico en la memoria.
+description: OR bit a bit atómico en memoria.
 ms.assetid: 5AFB96AA-267B-454E-9526-BA61A876ED42
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c9b86bbdb7d282c14b0e2d30f8e1f996b9c0f4d2f1a09de7b03e549327e309e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 245f1b02edd74712471206b095f0c8a9040962b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118794873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360834"
 ---
 # <a name="atomic_or-sm5---asm"></a>atomic \_ o (sm5 - asm)
 
-OR bit a bit atómico en la memoria.
+OR bit a bit atómico en memoria.
 
 
 
-| atomic \_ o dst, dstAddress \[ .swprendle, \] src0 \[ .select \_ (componente)\] |
+| atomic \_ o dst, dstAddress \[ .swzzle, \] src0 \[ .select \_ component\] |
 |--------------------------------------------------------------------|
 
 
@@ -28,7 +28,7 @@ OR bit a bit atómico en la memoria.
 
 | Elemento                                                                                                           | Descripción                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dst"></span><span id="DST"></span>*Dst*<br/>                                                   | \[en \] Los componentes de a OR con *src0*. Este valor debe ser una vista de acceso no ordenado (UAV) (u \# ). En el sombreador de proceso también puede ser memoria compartida de grupo de subprocesos (g \# ). <br/> |
+| <span id="dst"></span><span id="DST"></span>*Dst*<br/>                                                   | \[en \] Los componentes a OR con *src0*. Este valor debe ser una vista de acceso no ordenado (UAV) (u \# ). En el sombreador de proceso también puede ser memoria compartida de grupo de subprocesos (g \# ). <br/> |
 | <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[en \] La dirección de memoria.<br/>                                                                                                                                                |
 | <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[en \] Los componentes a OR con *dst*.<br/>                                                                                                                                   |
 
@@ -36,9 +36,9 @@ OR bit a bit atómico en la memoria.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta instrucción realiza un único componente or bit a bit de 32 bits de *src0* de operando en *dst* a 32 bits por dirección de componente *dstAddress,* realizado de forma atómica.
+Esta instrucción realiza un único componente de 32 bits or bit a bit de *operando src0* en *dst* a 32 bits por dirección de componente *dstAddress,* realizado de forma atómica.
 
 El número de componentes tomados de la dirección viene determinado por la dimensionalidad *de dst* u \# o g \# .
 
@@ -48,17 +48,17 @@ Si *dst* es g \# , debe declararse como sin formato o estructurado.
 
 No se devuelve nada al sombreador.
 
-Si la invocación del sombreador está inactiva, por ejemplo, si el píxel se ha descartado anteriormente en su ejecución o si solo existe una invocación de píxel o muestra para servir como asistente de un píxel o muestra real para derivados, esta instrucción no modifica la memoria *dst* en absoluto (silenciosamente).
+Si la invocación del sombreador está inactiva, por ejemplo, si el píxel se ha descartado anteriormente en su ejecución, o si solo existe una invocación de píxel o muestra para servir como asistente de un píxel o muestra real para derivados, esta instrucción no modifica la memoria *dst* en absoluto (silenciosamente).
 
-El direccionamiento fuera de los límites en u hace que no se escriba nada en la memoria, excepto si la u está estructurada y el desplazamiento de bytes en la estructura (segundo componente de la dirección) está causando el acceso fuera de límites, todo el contenido del UAV se queda \# \# sin definir.
+El direccionamiento fuera de los límites en u hace que no se escriba nada en la memoria, excepto si la u está estructurada y el desplazamiento de bytes en la estructura (segundo componente de la dirección) está causando el acceso fuera de los límites, todo el contenido del UAV se vuelve \# \# indefinido.
 
-Fuera de los límites que se direcciona en g (los límites de ese g concreto, en lugar de toda la memoria compartida) hace que todo el contenido de toda la memoria compartida se \# \# vuelva indefinido.
+El direccionamiento fuera de límites en g (los límites de ese g determinado, en lugar de toda la memoria compartida) hace que todo el contenido de toda la memoria compartida se vuelva \# \# indefinido.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -66,11 +66,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para el entorno de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
+Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -86,9 +86,9 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

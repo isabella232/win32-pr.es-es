@@ -4,12 +4,12 @@ ms.assetid: 81597594-eab2-4992-8d09-7409fba247fe
 title: System.RecordedTV.IsClosedCaptioningAvailable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89777a900f5e8129602f21d19bbcbc2de340792724b927b7229b7e50254090c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adcae0ce5a793a37fd65ba1c0cc71065a4b9858a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117682231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361076"
 ---
 # <a name="systemrecordedtvisclosedcaptioningavailable"></a>System.RecordedTV.IsClosedCaptioningAvailable
 
@@ -42,7 +42,7 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

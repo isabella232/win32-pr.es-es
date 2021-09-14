@@ -4,19 +4,19 @@ ms.assetid: 9c536c4e-fbf8-4c16-932f-e5863b7652fe
 title: Creación de topologías de reproducción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 563fcef0c9ba8b1a4a33aefc17c5cea744f051470bb04df0ab4699ed4af6fa8b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6f6d34e9237278766ccb1ee174ba6c09bf953933
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119600825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360714"
 ---
 # <a name="creating-playback-topologies"></a>Creación de topologías de reproducción
 
 En este tema se describe cómo crear una topología para la reproducción de audio o vídeo. Para la reproducción básica, puede crear una topología parcial, en la que los nodos de origen se conectan directamente a los nodos de salida. No es necesario insertar ningún nodo para las transformaciones intermedias, como descodificadores o convertidores de colores. La sesión multimedia usará el cargador de topologías para resolver la topología y el cargador de topologías insertará las transformaciones necesarias.
 
 -   [Creación de la topología](#creating-the-topology)
--   [Conexión Secuencias a receptores multimedia](#connecting-streams-to-media-sinks)
+-   [Conexión Secuencias receptores multimedia](#connecting-streams-to-media-sinks)
 -   [Creación del receptor multimedia](#creating-the-media-sink)
 -   [Pasos siguientes](#next-steps)
 -   [Temas relacionados](#related-topics)
@@ -100,7 +100,7 @@ Esta función lleva a cabo los pasos siguientes:
 2.  Llame [**a IMFPresentationDescriptor::GetStreamDescriptorCount**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorcount) para obtener el número de secuencias en la presentación.
 3.  Para cada secuencia, llame a la función definida por la `AddBranchToPartialTopology` aplicación a una rama de la topología. Esta función se muestra en la sección siguiente.
 
-## <a name="connecting-streams-to-media-sinks"></a>Conexión Secuencias a receptores multimedia
+## <a name="connecting-streams-to-media-sinks"></a>Conexión Secuencias receptores multimedia
 
 Para cada secuencia seleccionada, agregue un nodo de origen y un nodo de salida y, a continuación, conecte los dos nodos. El nodo de origen representa la secuencia. El nodo de salida representa el [representador de](enhanced-video-renderer.md) vídeo mejorado (EVR) o el [representador de audio de](streaming-audio-renderer.md) streaming (SAR).
 

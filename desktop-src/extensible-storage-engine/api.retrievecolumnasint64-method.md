@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 28ea894ca80144a0a2a5e372946e4c38b1edf9dbc4eea90479147b0356b3bcc4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c67ca3b29f4c81dd56092fa7587d086fa5c938f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042523"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361267"
 ---
 # <a name="apiretrievecolumnasint64-method"></a>Método Api.RetrieveColumnAsInt64
 
@@ -53,11 +53,11 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

@@ -2,7 +2,7 @@
 description: Intenta enviar un código de control definido por el usuario a un servicio.
 ms.assetid: d181dbf8-e1ad-47b2-9e64-4aabc77e64bd
 ms.tgt_platform: multiple
-title: Método UserControlService de la clase Win32_BaseService
+title: Método UserControlService de la Win32_BaseService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,17 +15,17 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 55647524c8ba561716441976fe6654b933e1900b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255752"
 ---
-# <a name="usercontrolservice-method-of-the-win32_baseservice-class"></a>Método UserControlService de la \_ clase BaseService de Win32
+# <a name="usercontrolservice-method-of-the-win32_baseservice-class"></a>Método UserControlService de la clase BaseService Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) intenta enviar un código de control definido por el usuario a un servicio.
+El [método de clase](/windows/desktop/WmiSdk/retrieving-a-class) WMI intenta enviar un código de control definido por el usuario a un servicio.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ uint32 UserControlService(
 
 <dl> <dt>
 
-*ControlCode* \[ de\]
+*ControlCode* \[ En\]
 </dt> <dd>
 
-Valor que especifica un comando de control para un servicio. Por ejemplo, un comando de control es un comando de "pausa" o "continuar". El valor puede ser un código predefinido, o un valor y una acción que define el servicio. Estos son los códigos de control predefinidos:
+Valor que especifica un comando de control para un servicio. Por ejemplo, un comando de control es un comando de "pausa" o "continuar". El valor puede ser un código predefinido o un valor y una acción que define el servicio. Estos son los códigos de control predefinidos:
 
 <dt>
 
 <span id="SERVICE_CONTROL_CONTINUE"></span><span id="service_control_continue"></span>
 
-<span id="SERVICE_CONTROL_CONTINUE"></span><span id="service_control_continue"></span>**\_continuar con el control de servicio \_**
+<span id="SERVICE_CONTROL_CONTINUE"></span><span id="service_control_continue"></span>**CONTINUAR \_ CON EL CONTROL DE \_ SERVICIO**
 
 
 </dt> <dd>
@@ -62,7 +62,7 @@ Notifica a un servicio en pausa que se reanude.
 
 <span id="SERVICE_CONTROL_INTERROGATE"></span><span id="service_control_interrogate"></span>
 
-<span id="SERVICE_CONTROL_INTERROGATE"></span><span id="service_control_interrogate"></span>**\_interrogación de control de servicio \_**
+<span id="SERVICE_CONTROL_INTERROGATE"></span><span id="service_control_interrogate"></span>**SERVICE \_ CONTROL \_ INTERROGATE**
 
 
 </dt> <dd>
@@ -73,7 +73,7 @@ Notifica a un servicio que informe de la información de estado actual al admini
 
 <span id="SERVICE_CONTROL_NETBINDADD"></span><span id="service_control_netbindadd"></span>
 
-<span id="SERVICE_CONTROL_NETBINDADD"></span><span id="service_control_netbindadd"></span>**\_NETBINDADD de control de servicio \_**
+<span id="SERVICE_CONTROL_NETBINDADD"></span><span id="service_control_netbindadd"></span>**CONTROL \_ DE \_ SERVICIO NETBINDADD**
 
 
 </dt> <dd>
@@ -84,7 +84,7 @@ Notifica a un servicio de red que hay un nuevo componente para el enlace.
 
 <span id="SERVICE_CONTROL_NETBINDDISABLE"></span><span id="service_control_netbinddisable"></span>
 
-<span id="SERVICE_CONTROL_NETBINDDISABLE"></span><span id="service_control_netbinddisable"></span>**\_NETBINDDISABLE de control de servicio \_**
+<span id="SERVICE_CONTROL_NETBINDDISABLE"></span><span id="service_control_netbinddisable"></span>**CONTROL \_ DE \_ SERVICIO NETBINDDISABLE**
 
 
 </dt> <dd>
@@ -95,18 +95,18 @@ Notifica a un servicio de red que uno de sus enlaces está deshabilitado.
 
 <span id="SERVICE_CONTROL_NETBINDENABLE"></span><span id="service_control_netbindenable"></span>
 
-<span id="SERVICE_CONTROL_NETBINDENABLE"></span><span id="service_control_netbindenable"></span>**\_NETBINDENABLE de control de servicio \_**
+<span id="SERVICE_CONTROL_NETBINDENABLE"></span><span id="service_control_netbindenable"></span>**CONTROL \_ DE \_ SERVICIO NETBINDENABLE**
 
 
 </dt> <dd>
 
-Notifica a un servicio de red que se ha habilitado un enlace deshabilitado.
+Notifica a un servicio de red que un enlace deshabilitado está habilitado.
 
 </dd> <dt>
 
 <span id="SERVICE_CONTROL_NETBINDREMOVE"></span><span id="service_control_netbindremove"></span>
 
-<span id="SERVICE_CONTROL_NETBINDREMOVE"></span><span id="service_control_netbindremove"></span>**\_NETBINDREMOVE de control de servicio \_**
+<span id="SERVICE_CONTROL_NETBINDREMOVE"></span><span id="service_control_netbindremove"></span>**CONTROL \_ DE \_ SERVICIO NETBINDREMOVE**
 
 
 </dt> <dd>
@@ -117,29 +117,29 @@ Notifica a un servicio de red que se ha quitado un componente para el enlace.
 
 <span id="SERVICE_CONTROL_PARAMCHANGE"></span><span id="service_control_paramchange"></span>
 
-<span id="SERVICE_CONTROL_PARAMCHANGE"></span><span id="service_control_paramchange"></span>**\_PARAMCHANGE de control de servicio \_**
+<span id="SERVICE_CONTROL_PARAMCHANGE"></span><span id="service_control_paramchange"></span>**\_PARAMCHANGE DE CONTROL DE \_ SERVICIO**
 
 
 </dt> <dd>
 
-Notifica a un servicio que se han modificado sus parámetros de inicio.
+Notifica a un servicio que se han cambiado sus parámetros de inicio.
 
 </dd> <dt>
 
 <span id="SERVICE_CONTROL_PAUSE"></span><span id="service_control_pause"></span>
 
-<span id="SERVICE_CONTROL_PAUSE"></span><span id="service_control_pause"></span>**\_pausa de control de servicio \_**
+<span id="SERVICE_CONTROL_PAUSE"></span><span id="service_control_pause"></span>**PAUSA \_ DE CONTROL DE \_ SERVICIO**
 
 
 </dt> <dd>
 
-Notifica a un servicio que se PAUSE.
+Notifica a un servicio que se pause.
 
 </dd> <dt>
 
 <span id="SERVICE_CONTROL_STOP"></span><span id="service_control_stop"></span>
 
-<span id="SERVICE_CONTROL_STOP"></span><span id="service_control_stop"></span>**\_detención del control de servicio \_**
+<span id="SERVICE_CONTROL_STOP"></span><span id="service_control_stop"></span>**SERVICE \_ CONTROL \_ STOP**
 
 
 </dt> <dd>
@@ -204,7 +204,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 
 5
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** Property) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** property) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -240,11 +240,11 @@ Proceso interactivo.
 
 9
 
-No se encuentra la ruta de acceso al directorio del archivo ejecutable del servicio.
+No se encuentra la ruta de acceso del directorio al archivo ejecutable del servicio.
 
 </dd> <dt>
 
-**El servicio ya se está ejecutando**
+**Servicio que ya se está ejecutando**
 </dt> <dd>
 
 10
@@ -316,7 +316,7 @@ No hay ningún subproceso de ejecución para el servicio.
 
 </dd> <dt>
 
-**Estado dependencia circular**
+**Dependencia circular de estado**
 </dt> <dd>
 
 18
@@ -325,7 +325,7 @@ Hay dependencias circulares al iniciarse el servicio.
 
 </dd> <dt>
 
-**Estado nombre duplicado**
+**Nombre duplicado de estado**
 </dt> <dd>
 
 19
@@ -334,7 +334,7 @@ Hay un servicio que se ejecuta con el mismo nombre.
 
 </dd> <dt>
 
-**Estado nombre no válido**
+**Nombre no válido del estado**
 </dt> <dd>
 
 20
@@ -343,7 +343,7 @@ Hay caracteres no válidos en el nombre del servicio.
 
 </dd> <dt>
 
-**Estado parámetro no válido**
+**Parámetro Status Invalid**
 </dt> <dd>
 
 21
@@ -352,12 +352,12 @@ Se han pasado parámetros no válidos al servicio.
 
 </dd> <dt>
 
-**Estado cuenta de servicio no válida**
+**Cuenta de servicio de estado no válida**
 </dt> <dd>
 
 22
 
-La cuenta con la que se ejecuta este servicio no es válida o no tiene permisos para ejecutar el servicio.
+La cuenta en la que se ejecuta este servicio no es válida o no tiene los permisos para ejecutar el servicio.
 
 </dd> <dt>
 
@@ -370,7 +370,7 @@ El servicio existe en la base de datos de servicios disponibles del sistema.
 
 </dd> <dt>
 
-**Servicio ya pausado**
+**Servicio ya en pausa**
 </dt> <dd>
 
 24
@@ -394,13 +394,13 @@ El servicio se encuentra en pausa actualmente en el sistema.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

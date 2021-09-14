@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5ea62391df07ed0e5e2c27752f668fda95a19d17dc6322fb7375ef5d3ed440f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3703ffa29183937874c40053bd3c7ae3c85d75d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360888"
 ---
-# <a name="iwmpnetworkreceptionquality-property"></a>IWMPNetwork::receptionQuality, propiedad
+# <a name="iwmpnetworkreceptionquality-property"></a>Propiedad IWMPNetwork::receptionQuality
 
 La **propiedad receptionQuality** obtiene el porcentaje de paquetes no perdidos en los últimos 30 segundos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,17 +48,17 @@ Public ReadOnly Property receptionQuality As System.Int32
 
 **System.Int32 que** es la calidad de recepción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El número de paquetes recibidos, perdidos y recuperados durante el streaming se supervisa una vez cada segundo. La **propiedad receptionQuality** obtiene el porcentaje de paquetes no perdidos durante los últimos 30 segundos.
+El número de paquetes recibidos, perdidos y recuperados durante el streaming se supervisa una vez cada segundo. La **propiedad receptionQuality** obtiene el porcentaje de paquetes que no se pierden durante los últimos 30 segundos.
 
-Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece en cero. El valor no se restablece si la reproducción está en pausa.
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece a cero. El valor no se restablece si la reproducción está en pausa.
 
 Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la **propiedad AxWindowsMediaPlayer.URL.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa receptionQuality** para mostrar el porcentaje de paquetes recibidos en una etiqueta, en respuesta al **evento PlayStateChange.** En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo siguiente se **usa receivedQuality para** mostrar el porcentaje de paquetes recibidos en una etiqueta, en respuesta al **evento PlayStateChange.** En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -140,7 +140,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

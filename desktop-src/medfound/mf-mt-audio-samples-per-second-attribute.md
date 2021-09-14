@@ -4,12 +4,12 @@ ms.assetid: f640016d-595e-4b20-8ce8-23a029c2b064
 title: MF_MT_AUDIO_SAMPLES_PER_SECOND atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b9fdf7e7d121e34f676e3d6fbfc2b9c7ae1004562b700b903cb4bc1f2a467e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93a91b44ba4c55bf2512eefddfe3bc7a18d2eddd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118973604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361156"
 ---
 # <a name="mf_mt_audio_samples_per_second-attribute"></a>Atributo MF \_ MT AUDIO SAMPLES PER \_ \_ \_ \_ SECOND
 
@@ -19,7 +19,7 @@ Número de muestras de audio por segundo en un tipo de medio de audio.
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo corresponde al miembro **nSamplesPerSec** de la [**estructuraSAMPLEATEX.**](/previous-versions/dd757713(v=vs.85))
 
@@ -33,11 +33,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -5,11 +5,11 @@ ms.assetid: 84478b56-0306-491a-9545-0849b06d8342
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5e268f45465139e49afe0f81a64eeeb93939734e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361288"
 ---
 # <a name="10level9-id3d11devicecontext-methods"></a>Métodos 10Level9 ID3D11DeviceContext
 
@@ -73,7 +73,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 | Nivel de característica | Diferencias de comportamiento | 
 |---------------|----------------------|
-| D3D_FEATURE_LEVEL_9_1 |  Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br /> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> No se pueden copiar texturas de volumen mipmapped. <br /> ${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_1 |  Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br /> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE no se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> No se pueden copiar texturas de volumen mipmapped. <br /> ${REMOVE}$<br /> | 
 | D3D_FEATURE_LEVEL_9_2 | 
 | D3D_FEATURE_LEVEL_9_3 | 
 
@@ -89,7 +89,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 | Nivel de característica | Diferencias de comportamiento | 
 |---------------|----------------------|
-| D3D_FEATURE_LEVEL_9_1 |  Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br /> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> ${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_1 |  Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br /> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE no se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> ${REMOVE}$<br /> | 
 | D3D_FEATURE_LEVEL_9_2 | 
 | D3D_FEATURE_LEVEL_9_3 | 
 
@@ -325,9 +325,9 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 | Nivel de característica | Diferencias de comportamiento | 
 |---------------|----------------------|
-| D3D_FEATURE_LEVEL_9_1 | No compatible${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_1 | No se admite${REMOVE}$<br /> | 
 | D3D_FEATURE_LEVEL_9_2 | 
-| D3D_FEATURE_LEVEL_9_3 | Es posible que el número de primitivas no supere 1048575.<br /> Las texturas no se pueden repetir en una primitiva más de 8192 veces.<br /> Los valores de índice no pueden superar 1048575.<br /><blockquote>[!Note]<br />Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced"><strong>DrawIndexedInstanced</strong></a> con un sombreador de vértices enlazado a la canalización y que no importa ningún dato por instancia, es posible que algún hardware gráfico de Direct3D 9 no dibuje nada. En concreto, si el sombreador de vértices no usa ningún dato por instancia, llamar a <strong>DrawIndexedInstanced</strong> con 1 instancia no equivale a llamar <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw"><strong>a Draw</strong></a>.</blockquote><br /> | 
+| D3D_FEATURE_LEVEL_9_3 | Es posible que el número de primitivas no supere 1048575.<br /> Las texturas no se pueden repetir en una primitiva más de 8192 veces.<br /> Los valores de índice no pueden superar 1048575.<br /><blockquote>[!Note]<br />Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced"><strong>DrawIndexedInstanced</strong></a> con un sombreador de vértices que está enlazado a la canalización y que no importa ningún dato por instancia, es posible que algún hardware gráfico de Direct3D 9 no dibuje nada. En concreto, si el sombreador de vértices no usa ningún dato por instancia, llamar a <strong>DrawIndexedInstanced</strong> con 1 instancia no equivale a llamar <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw"><strong>a Draw</strong></a>.</blockquote><br /> | 
 
 
 
@@ -547,7 +547,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 | Nivel de característica | Diferencias de comportamiento | 
 |---------------|----------------------|
-| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
 | D3D_FEATURE_LEVEL_9_2 | 
 | D3D_FEATURE_LEVEL_9_3 | 
 | D3D_FEATURE_LEVEL_10_0 | 
@@ -565,7 +565,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 | Nivel de característica | Diferencias de comportamiento | 
 |---------------|----------------------|
-| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
 | D3D_FEATURE_LEVEL_9_2 | 
 | D3D_FEATURE_LEVEL_9_3 | 
 | D3D_FEATURE_LEVEL_10_0 | 
@@ -583,7 +583,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 | Nivel de característica | Diferencias de comportamiento | 
 |---------------|----------------------|
-| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
 | D3D_FEATURE_LEVEL_9_2 | 
 | D3D_FEATURE_LEVEL_9_3 | 
 | D3D_FEATURE_LEVEL_10_0 | 
@@ -602,7 +602,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 | Nivel de característica | Diferencias de comportamiento | 
 |---------------|----------------------|
 | D3D_FEATURE_LEVEL_9_1 | El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br /> Solo permite búferes de índice con DXGI_FORMAT_R16_UINT formato. <br /> | 
-| D3D_FEATURE_LEVEL_9_2 |  El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br /> Permite búferes de índice con los DXGI_FORMAT_R16_UINT y DXGI_FORMAT_R32_UINT como D3D_FEATURE_LEVEL_10_0 y superiores. <br /> ${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 |  El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br /> Permite búferes de índice con los DXGI_FORMAT_R16_UINT y DXGI_FORMAT_R32_UINT formatos como D3D_FEATURE_LEVEL_10_0 y superiores. <br /> ${REMOVE}$<br /> | 
 | D3D_FEATURE_LEVEL_9_3 | 
 
 

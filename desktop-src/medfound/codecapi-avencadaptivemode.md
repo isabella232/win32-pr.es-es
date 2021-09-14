@@ -4,12 +4,12 @@ ms.assetid: 14B833BC-2188-48D6-AA27-B15F491D90CF
 title: CODECAPI_AVEncAdaptiveMode propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a1014e1f1cc526ee80295a183f33a840807cac27768afbb32326d5cd93d3f2d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b2405558fff76fa065324249583d4abcd445a91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118064766"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361167"
 ---
 # <a name="codecapi_avencadaptivemode-property"></a>Propiedad CODECAPI \_ AVEncAdaptiveMode
 
@@ -31,15 +31,15 @@ El valor de esta propiedad es un **OR** bit a bit de valores de la [**enumeraci�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,25 +1,25 @@
 ---
-description: Apertura de un servicio
+description: Abrir un servicio
 ms.assetid: 722d657d-332a-40df-ac30-bc2050deda74
-title: Apertura de un servicio
+title: Abrir un servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 578dfee696fd17b0e360d6e344844670ca92ac6b48152242492a458a9a279f56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8b273b8709a4d750085f14075d605f88ed0faa6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256119"
 ---
-# <a name="opening-a-service"></a>Apertura de un servicio
+# <a name="opening-a-service"></a>Abrir un servicio
 
-Para que la aplicación pueda realizar operaciones en un servicio, por ejemplo, enumerar contenido o recuperar descripciones de los métodos o eventos admitidos, debe abrir el servicio. En la aplicación WpdServicesApiSample, esta tarea se muestra en el módulo ServiceEnumeration.cpp mediante las interfaces descritas en la tabla siguiente.
+Para que la aplicación pueda realizar operaciones en un servicio, por ejemplo, enumerar contenido o recuperar descripciones de eventos o métodos admitidos, debe abrir el servicio. En la aplicación WpdServicesApiSample, esta tarea se muestra en el módulo ServiceEnumeration.cpp mediante las interfaces descritas en la tabla siguiente.
 
 
 
 | Interfaz                                                              | Descripción                                        |
 |------------------------------------------------------------------------|----------------------------------------------------|
-| [**IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) | Se usa para enumerar los servicios de un dispositivo.        |
+| [**IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) | Se usa para enumerar los servicios en un dispositivo.        |
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)               | Se usa para abrir una conexión a un servicio de dispositivo.     |
 | [**IPortableDeviceValues**](iportabledevicevalues.md)                 | Se usa para contener la información de cliente de la aplicación. |
 
@@ -27,11 +27,11 @@ Para que la aplicación pueda realizar operaciones en un servicio, por ejemplo, 
 
  
 
-El método que abre un servicio [**es IPortableDeviceService::Open.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open) Este método toma dos argumentos: un identificador plug-and-play (PnP) para el servicio y un objeto [**IPortableDeviceValues**](iportabledevicevalues.md) que contiene la información de cliente de la aplicación.
+El método que abre un servicio es [**IPortableDeviceService::Open.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open) Este método toma dos argumentos: un identificador plug-and-play (PnP) para el servicio y un objeto [**IPortableDeviceValues**](iportabledevicevalues.md) que contiene la información de cliente de la aplicación.
 
-Para obtener un identificador PnP para un servicio determinado, la aplicación llama al método [**IPortableDeviceServiceManager::GetDeviceServices.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemanager-getdeviceservices) Este método recupera una matriz de identificadores PnP para los servicios de un GUID de categoría de servicio (por ejemplo, contactos DE SERVICIO).
+Para obtener un identificador PnP para un servicio determinado, la aplicación llama al método [**IPortableDeviceServiceManager::GetDeviceServices.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemanager-getdeviceservices) Este método recupera una matriz de identificadores PnP para los servicios de un GUID de categoría de servicio (por ejemplo, CONTACTOS DE SERVICIO).
 
-La aplicación de servicio de ejemplo recupera un identificador PnP para los servicios contacts dentro del método **EnumerateContactsServices** del módulo ServiceEnumeration.cpp. El ejemplo de código siguiente se toma de este método.
+La aplicación de servicio de ejemplo recupera un identificador PnP para los servicios contacts en el método **EnumerateContactsServices** del módulo ServiceEnumeration.cpp. El ejemplo de código siguiente se toma de este método.
 
 
 ```C++
@@ -75,13 +75,13 @@ for (dwIndex = 0; dwIndex < cPnpDeviceIDs; dwIndex++)
 
 
 
-Una vez que la aplicación recupera el identificador pnP del servicio, puede configurar la información del cliente y llamar a [**IPortableDeviceService::Open**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open).
+Una vez que la aplicación recupera el identificador PnP para el servicio, puede configurar la información del cliente y llamar a [**IPortableDeviceService::Open**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open).
 
-En la aplicación de ejemplo, se llama a este método **en ChooseDeviceService** en el módulo ServiceEnumeration.cpp.
+En la aplicación de ejemplo, se llama a este método **dentro de ChooseDeviceService** en el módulo ServiceEnumeration.cpp.
 
-[**IPortableDeviceService admite**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dos CLID para **CoCreateInstance.** **CLSID \_ PortableDeviceService** devuelve un **puntero IPortableDeviceService** que no agrega el serializador de subproceso libre; **CLSID \_ PortableDeviceServiceFTM** es un nuevo CLSID que devuelve un puntero **IPortableDeviceService** que agrega el serializador de subproceso libre. De lo contrario, ambos punteros admiten la misma funcionalidad.
+[**IPortableDeviceService admite**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dos CLSID para **CoCreateInstance.** **CLSID \_ PortableDeviceService** devuelve un **puntero IPortableDeviceService** que no agrega el serializador de subproceso libre; **CLSID \_ PortableDeviceServiceFTM** es un nuevo CLSID que devuelve un puntero **IPortableDeviceService** que agrega el serializador de subproceso libre. En caso contrario, ambos punteros admiten la misma funcionalidad.
 
-Las aplicaciones que se usan en un solo subproceso deben usar **CLSID \_ PortableDeviceServiceFTM,** ya que esto elimina la sobrecarga de la serialización de punteros de interfaz. **CLSID \_ PortableDeviceService sigue** siendo compatible con las aplicaciones heredadas.
+Las aplicaciones que se usan en los departamentos de subproceso único deben usar **CLSID \_ PortableDeviceServiceFTM,** ya que esto elimina la sobrecarga de la serialización de punteros de interfaz. **CLSID \_ PortableDeviceService sigue** siendo compatible con las aplicaciones heredadas.
 
 
 ```C++
@@ -120,13 +120,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**IPortableDeviceService (Interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
+[**IPortableDeviceService (interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
 </dt> <dt>
 
-[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceServiceManager (Interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
+[**IPortableDeviceServiceManager (interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
 </dt> <dt>
 
 [WpdServicesApiSample](wpdapisample-sample-service-application.md)

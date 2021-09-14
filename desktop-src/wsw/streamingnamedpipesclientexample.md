@@ -4,12 +4,12 @@ description: En este ejemplo se muestra un cliente de canalizaciones con nombre 
 ms.assetid: 104816C1-532A-4163-81EE-D9F64F9C40AB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd78620c58ba81f21039c3dadd59e822c38906507a8e8fee4227a19d74ee2f5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc93fbcbb5f549c4cee032a14b035d1bfd534beb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119545735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256016"
 ---
 # <a name="streamingnamedpipesclientexample"></a>StreamingNamedPipesClientExample
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3d7c6b0e7820742356c00a47d928f5fe69a4b968b075f0f92c688216455532f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 455a10e8af567cf7c1adbf569700b00f769ef512
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118790666"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360786"
 ---
 # <a name="patchconstantfunc"></a>patchconstantfunc
 
@@ -27,15 +27,15 @@ patchconstantfunc("function_name")
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-*nombre \_ de* función es el nombre de una función independiente que genera los datos de revisión constante.
+*nombre \_ de* función es el nombre de una función independiente que genera los datos de constante de revisión.
 
 Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
@@ -50,7 +50,7 @@ Este atributo se admite en los siguientes tipos de sombreadores:
 [Atributos del modelo de sombreador 5](d3d11-graphics-reference-sm5-attributes.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

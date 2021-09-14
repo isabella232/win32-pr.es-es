@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 33b1a6f7dcc1297e415fe2e224ec39c58529f7619c9438586f28613a83ead1ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7a44fe02983038658247fedaec7122f09306548
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118091002"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258468"
 ---
 # <a name="operators"></a>Operadores
 
-Las expresiones son secuencias de [variables](dx-graphics-hlsl-variable-syntax.md) y literales puntuados por [operadores](dx-graphics-hlsl-statement-blocks.md). Los operadores determinan cómo se combinan, comparan, seleccionan, y así sucesivamente las variables y literales. Los operadores incluyen:
+Las expresiones son secuencias de [variables](dx-graphics-hlsl-variable-syntax.md) y literales puntuados por [operadores](dx-graphics-hlsl-statement-blocks.md). Los operadores determinan cómo se combinan, comparan, seleccionan, y así sucesivamente las variables y los literales. Los operadores incluyen:
 
 
 
@@ -27,9 +27,9 @@ Las expresiones son secuencias de [variables](dx-graphics-hlsl-variable-syntax.m
 | [Operadores aditivos y multiplicativos](#additive-and-multiplicative-operators) | +, -, \*, /, %                                                     |
 | [Operador array](#array-operator)                                               | \[i\]                                                              |
 | [Operadores de asignación](#assignment-operators)                                   | =, +=, -=, \*=, /=, %=                                             |
-| [Conversión binaria](#binary-casts)                                                   | Reglas de C para float e int, reglas de C o int o int para valores int para bool     |
+| [Conversión binaria](#binary-casts)                                                   | Reglas de C para float e int, reglas de C o funciones intrínsecas HLSL para bool     |
 | [Operadores bit a bit](#bitwise-operators)                                         | ~, <<, >>, &, \| , ^, <<=, >>=, &=, \| =, ^= |
-| [Operadores matemáticos booleanos](#boolean-math-operators)                               | & &, \| \| , ?:                                                      |
+| [Operadores matemáticos booleanos](#boolean-math-operators)                               | & &, , \| \| ?:                                                      |
 | [Operador de conversión](#cast-operator)                                                 | (tipo)                                                             |
 | [Operador de coma](#comma-operator)                                               | ,                                                                  |
 | [Operadores de comparación](#comparison-operators)                                   | <, >, ==, !=, <=, >=                                   |
@@ -41,7 +41,7 @@ Las expresiones son secuencias de [variables](dx-graphics-hlsl-variable-syntax.m
 
  
 
-Muchos de los operadores son por componente, lo que significa que la operación se realiza de forma independiente para cada componente de cada variable. Por ejemplo, una única variable de componente tiene una operación realizada. Por otro lado, una variable de cuatro componentes tiene cuatro operaciones realizadas, una para cada componente.
+Muchos de los operadores son por componente, lo que significa que la operación se realiza de forma independiente para cada componente de cada variable. Por ejemplo, una variable de componente única tiene una operación realizada. Por otro lado, una variable de cuatro componentes tiene cuatro operaciones realizadas, una para cada componente.
 
 Todos los operadores que hacen algo al valor, como + y \* , funcionan por componente.
 
@@ -64,7 +64,7 @@ if ( all(A4 < B4) )
 
 
 
-Los operadores de conversión binaria [**asfloat**](dx-graphics-hlsl-asfloat.md), [**asint**](dx-graphics-hlsl-asint.md), y así sucesivamente funcionan por componente, excepto [**para asdouble**](asdouble.md) cuyas reglas especiales están documentadas.
+Los operadores de conversión binaria [**asfloat**](dx-graphics-hlsl-asfloat.md), [**asint**](dx-graphics-hlsl-asint.md), y así sucesivamente funcionan por componente, excepto [**para asdouble**](asdouble.md) cuyas reglas especiales se documentan.
 
 Los operadores de selección, como los corchetes de punto, coma y matriz, no funcionan por componente.
 
@@ -80,7 +80,7 @@ Los operadores de conversión cambian el número de componentes. Las siguientes 
 
 ## <a name="additive-and-multiplicative-operators"></a>Operadores aditivos y multiplicativos
 
-Los operadores de suma y multiplicación son: +, -, \* , /, %
+Los operadores aditivos y multiplicativos son: +, -, \* , /, %
 
 
 ```
@@ -118,7 +118,7 @@ f3 = f2/f1;        // f3 = 2.0/1.0 = 2.0
 
 
 
-El operador de módulo devuelve el resto de una división. Esto genera resultados diferentes al usar números enteros y de punto flotante. Los restos enteros que son fraccionales se truncarán.
+El operador de módulo devuelve el resto de una división. Esto genera resultados diferentes cuando se usan números enteros y de punto flotante. Los restos enteros que son fraccionales se truncarán.
 
 
 ```
@@ -184,7 +184,7 @@ El primer índice es el índice de fila de base cero. El segundo índice es el �
 
 Los operadores de asignación son: =, +=, -=, \* =, /=
 
-A las variables se les pueden asignar valores literales:
+Se pueden asignar valores literales a las variables:
 
 
 ```
@@ -238,9 +238,9 @@ i1 /= 3;           // i1 = 1/3 = 0.333, which gets truncated to 0
 
 ## <a name="binary-casts"></a>Conversión binaria
 
-La operación de conversión entre int y float convertirá el valor numérico en las representaciones adecuadas siguiendo las reglas de C para truncar un tipo int. La conversión de un valor de float a int y de vuelta a float dará como resultado una conversión con pérdida en función de la precisión del destino.
+La operación de conversión entre int y float convertirá el valor numérico en las representaciones adecuadas siguiendo las reglas de C para truncar un tipo int. La conversión de un valor de float a int y de vuelta a float dará lugar a una conversión con pérdida en función de la precisión del destino.
 
-Las conversión binarias también se pueden realizar mediante funciones intrínsecas [**(DirectX HLSL),**](dx-graphics-hlsl-intrinsic-functions.md)que reinterpretan la representación de bits de un número en el tipo de datos de destino.
+Las conversión binarias también se pueden realizar mediante funciones intrínsecas [**(HLSL de DirectX),**](dx-graphics-hlsl-intrinsic-functions.md)que reinterpreta la representación de bits de un número en el tipo de datos de destino.
 
 
 ```
@@ -253,10 +253,10 @@ asuint()  // Cast to uint
 
 ## <a name="bitwise-operators"></a>Operadores bit a bit
 
-HLSL admite los siguientes operadores bit a bit, que tienen la misma prioridad que C con respecto a otros operadores. En la tabla siguiente se describen los operadores.
+HLSL admite los siguientes operadores bit a bit, que siguen la misma prioridad que C con respecto a otros operadores. En la tabla siguiente se describen los operadores.
 
 > [!Note]  
-> Los operadores bit a bit requieren [Shader Model 4 \_ 0](dx-graphics-hlsl-sm4.md) con Direct3D 10 y hardware superior.
+> Los operadores bit a bit [requieren Shader Model 4 \_ 0](dx-graphics-hlsl-sm4.md) con hardware direct3D 10 y superior.
 
  
 
@@ -264,15 +264,15 @@ HLSL admite los siguientes operadores bit a bit, que tienen la misma prioridad q
 
 | Operador          |  Función                 |
 |-----------|-------------------|
-| ~         | No lógico       |
+| ~         | NOT lógico       |
 | <<  | Desplazamiento a la izquierda        |
 | >>  | Desplazamiento a la derecha       |
 | &         | Logical And       |
 | \|        | Or lógico.        |
 | ^         | Xor lógico       |
 | <<= | Desplazamiento a la izquierda Igual  |
-| >>= | Desplazamiento a la derecha Igual |
-| &=        | Y iguales         |
+| >>= | Desplazamiento a la derecha igual |
+| &=        | E igual         |
 | \|=       | O igual          |
 | ^=        | Xor Equal         |
 
@@ -280,7 +280,7 @@ HLSL admite los siguientes operadores bit a bit, que tienen la misma prioridad q
 
  
 
-Los operadores bit a bit se definen para funcionar solo en tipos de datos int y uint. Al intentar usar operadores bit a bit en tipos de datos float o struct, se producirá un error.
+Los operadores bit a bit se definen para funcionar solo en tipos de datos int y uint. Si se intentan usar operadores bit a bit en tipos de datos float o struct, se producirá un error.
 
 ## <a name="boolean-math-operators"></a>Operadores matemáticos booleanos
 
@@ -300,7 +300,7 @@ A diferencia de la evaluación de cortocircuito de &&, y ?: en C, las expresione
 
 Los operadores booleanos funcionan por componente. Esto significa que si compara dos vectores, el resultado es un vector que contiene el resultado booleano de la comparación para cada componente.
 
-Para las expresiones que usan operadores booleanos, el tamaño y el tipo de componente de cada variable se promueven para que sean los mismos antes de que se produzca la operación. El tipo promocionado determina la resolución en la que tiene lugar la operación, así como el tipo de resultado de la expresión. Por ejemplo, una expresión int3 + float se promovería a float3 + float3 para la evaluación y su resultado sería de tipo float3.
+En el caso de las expresiones que usan operadores booleanos, el tamaño y el tipo de componente de cada variable se promueven para que sean los mismos antes de que se produzca la operación. El tipo promocionado determina la resolución en la que tiene lugar la operación, así como el tipo de resultado de la expresión. Por ejemplo, una expresión int3 + float se promovería a float3 + float3 para la evaluación, y su resultado sería del tipo float3.
 
 ## <a name="cast-operator"></a>Operador de conversión
 
@@ -308,7 +308,7 @@ Una expresión precedida de un nombre de tipo entre paréntesis es una conversi�
 
 Solo la conversión de tipos del lado derecho es legal. Por ejemplo, expresiones como `(int)myFloat = myInt;` no son válidas. En su lugar, use `myFloat = (float)myInt;`.
 
-El compilador también realiza la conversión de tipos implícita. Por ejemplo, las dos expresiones siguientes son equivalentes:
+El compilador también realiza la conversión implícita de tipos. Por ejemplo, las dos expresiones siguientes son equivalentes:
 
 
 ```
@@ -344,7 +344,7 @@ float4 x = 1;
 
 
 
-HLSL usa la promoción escalar en este caso, por lo que el resultado es como si se hubiera escrito de la siguiente manera:
+HLSL usa la promoción escalar en este caso, por lo que el resultado es como si se escribiera de la siguiente manera:
 
 
 ```
@@ -353,7 +353,7 @@ float4 x = float4(1,1,1,1);
 
 
 
-En este caso, dejar fuera el tipo float4 del lado derecho es probablemente un error que el compilador no pueda detectar porque se trata de una instrucción válida.
+En este caso, dejar el tipo float4 desde el lado derecho probablemente sea un error que el compilador no pueda detectar porque se trata de una instrucción válida.
 
 ## <a name="comparison-operators"></a>Operadores de comparación
 
@@ -390,7 +390,7 @@ if(color.a != 0)
 
 
 
-O bien, combine y compare valores mayores o iguales que (o menores o iguales que) cualquier valor escalar:
+O bien, combine y compare valores que sean mayores o iguales que (o menores o iguales que) cualquier valor escalar:
 
 
 ```
@@ -435,7 +435,7 @@ if ( all(A4 < B4) )
 
 Los operadores de prefijo y postfijo son: ++, --. Los operadores de prefijo cambian el contenido de la variable antes de evaluar la expresión. Los operadores de postfijo cambian el contenido de la variable después de evaluar la expresión.
 
-En este caso, un bucle usa el contenido de i para realizar un seguimiento del recuento de bucles.
+En este caso, un bucle usa el contenido de i para realizar un seguimiento del número de bucles.
 
 
 ```
@@ -449,7 +449,7 @@ for (int i = 0; i<4; )
 
 
 
-Dado que se usa el operador de incremento postfijo (++), arrayOfFloats i se multiplica por \[ \] 2 antes de que i se incremente. Esto podría reorganizarse ligeramente para usar el operador de incremento de prefijo. Este es más difícil de leer, aunque ambos ejemplos son equivalentes.
+Dado que se usa el operador de incremento postfijo (++), arrayOfFloats i se multiplica por \[ \] 2 antes de que se incremente i. Esto podría reorganizarse ligeramente para usar el operador de incremento de prefijo. Este es más difícil de leer, aunque ambos ejemplos son equivalentes.
 
 
 ```
@@ -465,7 +465,7 @@ for (int i = 0; i<4; )
 
 Dado que se usa el operador de prefijo (++), arrayOfFloats i+1 - 1 se multiplica por 2 después de \[ \] incrementar i.
 
-El operador de decremento de prefijo y decremento de postfijo (--) se aplican en la misma secuencia que el operador de incremento. La diferencia es que el decremento resta 1 en lugar de agregar 1.
+El operador de decremento y decremento de postfijo de prefijo (--) se aplica en la misma secuencia que el operador de incremento. La diferencia es que el decremento resta 1 en lugar de agregar 1.
 
 ## <a name="structure-operator"></a>Structure (Operador)
 
@@ -483,7 +483,7 @@ float4 z;
 
 
 
-Se puede leer de la siguiente forma:
+Se puede leer de esta forma:
 
 
 ```
@@ -511,7 +511,7 @@ pos.z = pos.x      // z = 2.0f
 
 Los operadores unaarios son: !, -, +
 
-Los operadores unarios operan en un solo operando.
+Los operadores unaarios operan en un solo operando.
 
 
 ```
@@ -528,7 +528,7 @@ int j = +i2;       // j = +2
 
 Cuando una expresión contiene más de un operador, la prioridad del operador determina el orden de evaluación. La prioridad del operador para HLSL sigue la misma prioridad que C.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las llaves ( {,} ) inician y finalizan un bloque de instrucciones. Cuando un bloque de instrucciones usa una sola instrucción, las llaves son opcionales.
 
@@ -536,7 +536,7 @@ Las llaves ( {,} ) inician y finalizan un bloque de instrucciones. Cuando un blo
 
 <dl> <dt>
 
-[Instrucciones (DirectX HLSL)](dx-graphics-hlsl-statements.md)
+[Instrucciones (HLSL de DirectX)](dx-graphics-hlsl-statements.md)
 </dt> </dl>
 
  

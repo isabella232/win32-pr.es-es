@@ -1,6 +1,6 @@
 ---
 title: CD3DX12_HEAP_DESC estructura (D3dx12.h)
-description: Una estructura auxiliar para permitir la inicialización sencilla de una estructura \_ DESC de MONTÓN de D3D12. \_
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura \_ DESC de MONTÓN de D3D12. \_
 ms.assetid: 38E0BA60-2BB0-4AC1-870A-10AB16E4C6E6
 keywords:
 - CD3DX12_HEAP_DESC estructura
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 347e44a8516b48dcd779d3ac19fbc9b5bbf5d37ad565f36a0b9b10a083d395c3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae5b2537d2571355f26c46f03aed3489fb2b6069
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360857"
 ---
 # <a name="cd3dx12_heap_desc-structure"></a>Cd3DX12 \_ HEAP \_ DESC (estructura)
 
-Una estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ \_ DESC de MONTÓN de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ \_ DESC de MONTÓN de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,58 +45,58 @@ struct CD3DX12_HEAP_DESC  : public D3D12_HEAP_DESC{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **CD3DX12 \_ HEAP \_ DESC()**
 </dt> <dd>
 
-Crea una nueva instancia de DESC de MONTÓN CD3DX12 sin \_ \_ inicializar.
+Crea una nueva instancia sin inicializar de un \_ DESC de MONTÓN DE CD3DX12. \_
 
 </dd> <dt>
 
 **EXPLICIT CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ HEAP \_ DESC &o)**
 </dt> <dd>
 
-Crea una nueva instancia de un DESC DESC de MONTÓN DE CD3DX12, inicializado con el contenido de otra estructura \_ \_ [**\_ \_ DESC de MONTÓN de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
+Crea una nueva instancia de un DESC DESC de HEAP CD3DX12, inicializado con el contenido de otra estructura \_ \_ [**\_ \_ DESC de MONTÓN de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
 
 </dd> <dt>
 
 **CD3DX12 \_ HEAP \_ DESC(UINT64 size, D3D12 \_ HEAP \_ PROPERTIES properties, UINT64 alignment = 0, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de cd3DX12 \_ HEAP \_ DESC, inicializando los parámetros siguientes:
+Crea una nueva instancia de un \_ DESC HEAP DESC de CD3DX12, \_ inicializando los parámetros siguientes:
 
 Tamaño de UINT64
 
-[**D3D12 \_ Propiedades \_ de HEAP**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
+[**D3D12 \_ Propiedades de \_ HEAP PROPERTIES**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
 
 (opt) Alineación de UINT64 = 0
 
-(opt) [**D3D12 \_ MARCAS DE \_ MONTÓN Flags**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
+(opt) [**D3D12 \_ Marcas de \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ HEAP \_ DESC(UINT64 size, D3D12 \_ HEAP \_ TYPE type, UINT64 alignment = 0, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
+**CD3DX12 \_ HEAP DESC(tamaño UINT64, tipo de TIPO DE MONTÓN \_ D3D12, alineación \_ de \_ UINT64 = 0, D3D12 MARCAS DE MONTÓN DE MONTÓN \_ = \_ D3D12 \_ HEAP FLAG \_ \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de cd3DX12 \_ HEAP \_ DESC, inicializando los parámetros siguientes:
+Crea una nueva instancia de un \_ DESC HEAP DESC de CD3DX12, \_ inicializando los parámetros siguientes:
 
 Tamaño de UINT64
 
-[**D3D12 \_ TIPO DE \_ MONTÓN**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
+[**D3D12 \_ Tipo de \_ TIPO DE MONTÓN**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
 
 (opt) Alineación de UINT64 = 0
 
-(opt) [**D3D12 \_ MARCAS DE \_ MONTÓN Flags**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
+(opt) [**D3D12 \_ Marcas de \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ HEAP \_ DESC(UINT64 size, D3D12 \_ CPU \_ PAGE \_ PROPERTY cpuPageProperty, D3D12 \_ MEMORY \_ POOL memoryPoolPreference, UINT64 alignment = 0, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
+**CD3DX12 \_ HEAP \_ DESC(tamaño UINT64, D3D12 \_ CPU PAGE PROPERTY \_ \_ cpuPageProperty, D3D12 \_ MEMORY POOL \_ memoryPoolPreference, alineación de UINT64 = 0, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP FLAG \_ \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de cd3DX12 \_ HEAP \_ DESC, inicializando los parámetros siguientes:
+Crea una nueva instancia de un \_ DESC HEAP DESC de CD3DX12, \_ inicializando los parámetros siguientes:
 
 Tamaño de UINT64
 
@@ -106,40 +106,40 @@ Tamaño de UINT64
 
 (opt) Alineación de UINT64 = 0
 
-(opt) [**D3D12 \_ MARCAS DE \_ MONTÓN Flags**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
+(opt) [**D3D12 \_ Marcas de \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
 
 </dd> <dt>
 
 **CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO& resAllocInfo, D3D12 \_ HEAP \_ PROPERTIES properties, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de cd3DX12 \_ HEAP \_ DESC, inicializando los parámetros siguientes:
+Crea una nueva instancia de un \_ DESC HEAP DESC de CD3DX12, \_ inicializando los parámetros siguientes:
 
 [**D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO&**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info) resAllocInfo
 
-[**D3D12 \_ Propiedades \_ de HEAP**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
+[**D3D12 \_ Propiedades de \_ HEAP PROPERTIES**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
 
-(opt) [**D3D12 \_ MARCAS DE \_ MONTÓN Flags**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
+(opt) [**D3D12 \_ Marcas de \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
 
 </dd> <dt>
 
 **CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO& resAllocInfo, D3D12 \_ HEAP \_ TYPE type, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de cd3DX12 \_ HEAP \_ DESC, inicializando los parámetros siguientes:
+Crea una nueva instancia de un \_ DESC HEAP DESC de CD3DX12, \_ inicializando los parámetros siguientes:
 
 [**D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO&**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info) resAllocInfo
 
-[**D3D12 \_ TIPO DE \_ MONTÓN**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
+[**D3D12 \_ Tipo de \_ TIPO DE MONTÓN**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
 
-(opt) [**D3D12 \_ MARCAS DE \_ MONTÓN Flags**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
+(opt) [**D3D12 \_ Marcas de \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
 
 </dd> <dt>
 
 **CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO& resAllocInfo, D3D12 \_ CPU \_ PAGE \_ PROPERTY cpuPageProperty, D3D12 \_ MEMORY \_ POOL memoryPoolPreference, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de cd3DX12 \_ HEAP \_ DESC, inicializando los parámetros siguientes:
+Crea una nueva instancia de un \_ DESC HEAP DESC de CD3DX12, \_ inicializando los parámetros siguientes:
 
 [**D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO&**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info) resAllocInfo
 
@@ -147,14 +147,14 @@ Crea una nueva instancia de cd3DX12 \_ HEAP \_ DESC, inicializando los parámetr
 
 [**D3D12 \_ MEMORY \_ POOL**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_memory_pool) memoryPoolPreference
 
-(opt) [**D3D12 \_ MARCAS DE \_ MONTÓN Flags**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
+(opt) [**D3D12 \_ Marcas de \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP \_ FLAG \_ NONE
 
 </dd> <dt>
 
 **operator const D3D12 \_ HEAP \_ DESC&() const**
 </dt> <dd>
 
-Define el & de paso por referencia para el tipo de estructura \_ \_ DESC HEAP CD3DX12.
+Define el & de paso por referencia para el tipo de estructura \_ DESC HEAP \_ CD3DX12.
 
 </dd> </dl>
 
@@ -168,7 +168,7 @@ Define el & de paso por referencia para el tipo de estructura \_ \_ DESC HEAP CD
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

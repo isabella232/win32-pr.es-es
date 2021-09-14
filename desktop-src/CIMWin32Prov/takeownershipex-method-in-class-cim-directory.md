@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5637e45c6dad7eec3f79ffd045a4a8d0dd3f3ba51ed5a60c09916c11802b1130
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b02a6c40e99405c150a372f8eb15fe648f2df60a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119332785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255800"
 ---
-# <a name="takeownershipex-method-of-the-cim_directory-class"></a>Método TakeOwnerShipEx de la clase \_ de directorio CIM
+# <a name="takeownershipex-method-of-the-cim_directory-class"></a>Método TakeOwnerShipEx de la clase \_ De directorio CIM
 
-El **método TakeOwnerShipEx** obtiene la propiedad del archivo de entrada de directorio lógico especificado en la ruta de acceso del objeto. Este método es una versión extendida del [**método TakeOwnerShip**](takeownership-method-in-class-cim-directory.md) y se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md). Si el archivo lógico es un directorio, este método actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
+El **método TakeOwnerShipEx** obtiene la propiedad del archivo de entrada del directorio lógico especificado en la ruta de acceso del objeto. Este método es una versión extendida del [**método TakeOwnerShip**](takeownership-method-in-class-cim-directory.md) y se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md). Si el archivo lógico es un directorio, este método actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,10 +63,10 @@ Cadena que representa el archivo secundario (o directorio) que se va a usar como
 
 </dd> <dt>
 
-*Recursiva* \[ En\]
+*Recursivo* \[ En\]
 </dt> <dd>
 
-Si **es True**, el método se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia de [**\_ directorio CIM.**](cim-directory.md) En el caso de las instancias de archivo, este parámetro se omite.
+Si **es True**, el método se aplica de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia del [**\_ directorio CIM.**](cim-directory.md) En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ Correcto.
 
 2
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ El objeto ya existe.
 
 11
 
-Sistema de archivos no NTFS.
+El sistema de archivos no es NTFS.
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Archivo de inicio no válido.
 
 17
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -193,11 +193,11 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -232,7 +232,7 @@ wscript.echo objOutParams.ReturnValue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -242,7 +242,7 @@ wscript.echo objOutParams.ReturnValue
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

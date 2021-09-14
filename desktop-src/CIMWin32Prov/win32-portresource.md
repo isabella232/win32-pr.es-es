@@ -1,5 +1,5 @@
 ---
-description: La clase WMI PortResource de Win32 \_ representa un puerto de E/S en un equipo que ejecuta Windows.
+description: La clase WMI PortResource de Win32 \_ representa un puerto de E/S en un sistema de equipo que ejecuta Windows.
 ms.assetid: 820f4f49-571c-4044-aefc-69bac5d59e6f
 ms.tgt_platform: multiple
 title: Win32_PortResource clase
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 732bd1255bf216abe3654d80abcde14b1e8b1180a69d0509663a6a83a2801895
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e3c08424dd1aee555068c78a9308afe732634c61
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119878585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255633"
 ---
 # <a name="win32_portresource-class"></a>Clase PortResource de Win32 \_
 
-La **clase WMI \_ PortResource** [de](../wmisdk/retrieving-a-class.md) Win32 representa un puerto de E/S en un equipo que ejecuta Windows.
+La clase WMI **\_ PortResource** [de](../wmisdk/retrieving-a-class.md) Win32 representa un puerto de E/S en un sistema de equipo que ejecuta Windows.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -58,7 +58,7 @@ class Win32_PortResource : Win32_SystemMemoryResource
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PortResource de Win32** tiene estos tipos de miembros:
 
@@ -116,7 +116,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
 Esta propiedad se hereda de [**\_ CIM MemoryMappedIO.**](cim-memorymappedio.md)
 
@@ -131,7 +131,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de equipo de ámbito.
@@ -149,7 +149,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nombre**"), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Nombre del sistema de equipo de ámbito.
@@ -185,14 +185,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. E/S asignada a memoria DMTF \| \| 001.2")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Memory Mapped I/O \| 001.2")
 </dt> </dl>
 
 Dirección final de E/S asignada a memoria.
 
 Esta propiedad se hereda de [**\_ CIM MemoryMappedIO.**](cim-memorymappedio.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -223,7 +223,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -241,14 +241,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("StartingAddress"), [**Key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. E/S asignada a memoria DMTF \| \| 001.1")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("StartingAddress"), [**Key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. E/S asignadas a memoria DMTF \| \| 001.1")
 </dt> </dl>
 
-Dirección inicial de E/S asignada a memoria. La propiedad de identificador de recurso de hardware debe establecerse en este valor para construir la clave de recurso de E/S asignada.
+Dirección inicial de E/S asignada a memoria. La propiedad del identificador de recursos de hardware debe establecerse en este valor para construir la clave de recurso de E/S asignada.
 
 Esta propiedad se hereda de [**\_ CIM MemoryMappedIO.**](cim-memorymappedio.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -264,7 +264,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -295,28 +295,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -358,7 +358,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ PortResource de Win32** se deriva de [**\_ SystemMemoryResource de Win32.**](win32-systemmemoryresource.md)
 
@@ -376,7 +376,7 @@ La **clase \_ PortResource de Win32** se deriva de [**\_ SystemMemoryResource de
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

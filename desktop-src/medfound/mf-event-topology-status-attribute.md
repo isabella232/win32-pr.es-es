@@ -4,12 +4,12 @@ ms.assetid: f7c93bad-1a64-45b0-ab5c-6edea4a1c0d1
 title: MF_EVENT_TOPOLOGY_STATUS atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fecee6003b0275301a29b32ac34d03db32a22017ab1e828536c0631327f79ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee3c6e00722239103058ca584ee1da28778511c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118973754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127364070"
 ---
 # <a name="mf_event_topology_status-attribute"></a>Atributo \_ MF EVENT \_ TOPOLOGY \_ STATUS
 
@@ -19,7 +19,7 @@ Especifica el estado de una topología durante la reproducción.
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de este atributo es un miembro de la [**enumeración MF \_ TOPOSTATUS.**](/windows/desktop/api/mfapi/ne-mfapi-mf_topostatus)
 
@@ -35,11 +35,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

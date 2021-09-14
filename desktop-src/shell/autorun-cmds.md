@@ -4,12 +4,12 @@ ms.assetid: 5b8fd559-b1be-4552-a7be-19ad107855af
 title: Entradas autorun.inf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 221e0a99e6352b5cfe50f3c3c0c2939933ff6c6f862e1a03b54127968b9c1838
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 56d93244f177d107bddc720fab1d0c774fd94735
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119937165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361061"
 ---
 # <a name="autoruninf-entries"></a>Entradas autorun.inf
 
@@ -79,9 +79,9 @@ action=@[filepath\]filename,-resourceID
 
     Identificador de la cadena dentro del archivo binario.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-La **clave** de acción solo se usa en Windows XP Service Pack 2 (SP2) o posterior. Solo se admite para unidades de tipo UNIDAD \_ EXTRAÍBLE y UNIDAD \_ FIJA. En el caso de DRIVE \_ REMOVABLE, se **requiere la** clave de acción. Se  omite un comando de acción en el archivo Autorun.inf de un CD de audio o DVD de película y estos medios se siguen comportando como en Windows XP Service Pack 1 (SP1) y versiones anteriores.
+La **clave** de acción solo se usa en Windows XP Service Pack 2 (SP2) o posterior. Solo se admite para unidades de tipo UNIDAD \_ EXTRAÍBLE y UNIDAD \_ FIJA. En el caso de DRIVE \_ REMOVABLE, se **requiere la** clave de acción. Se  omite un comando de acción en el archivo Autorun.inf de un CD de audio o DVD de película, y estos medios se siguen comportando como en Windows XP Service Pack 1 (SP1) y versiones anteriores.
 
 La cadena que se muestra en el cuadro de diálogo Reproducción  automática se construye combinando el texto especificado en la entrada de acción con texto codificado de forma precisa que asigna al proveedor el nombre proporcionado por el Shell. El [icono](#parameters) se muestra junto a él. Esta entrada siempre aparece como la primera opción en el cuadro de diálogo Reproducción automática y está seleccionada de forma predeterminada. Si el usuario acepta la opción , se inicia la aplicación especificada por la entrada [open](#parameters) o [shellexecute](#shellexecute) en el archivo Autorun.inf del medio. La **opción Realizar siempre la acción seleccionada** no está disponible en esta situación.
 
@@ -108,7 +108,7 @@ CustomEvent=CustomEventName
 
     Cadena de texto que contiene el nombre del evento de contenido de Reproducción automática. El nombre no debe tener más de 100 caracteres alfanuméricos.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Puede incluir un nombre de evento personalizado en el archivo Autorun.inf de un volumen. Cuando Reproducción automática solicita al usuario que una aplicación use con el volumen, solo muestra las aplicaciones que se han registrado para el nombre de evento personalizado especificado. Para obtener información sobre cómo puede registrar una aplicación como controlador para el evento de contenido de Reproducción automática personalizada, vea Inicio automático con [Reproducción](/previous-versions/windows/apps/hh452731(v=win.10)) automática o Registro de un [controlador de eventos.](how-to-register-an-event-handler.md)
 
@@ -138,7 +138,7 @@ icon=iconfilename[,index]
 
     Nombre de un archivo .ico, .bmp, .exe o .dll que contiene la información del icono. Si un archivo contiene más de un icono, también debe especificar el índice de base cero del icono.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 El icono, junto con la etiqueta , representa la unidad habilitada para ejecución automática en la Windows usuario. Por ejemplo, en Windows Explorer, la unidad se representa mediante este icono en lugar del icono de unidad estándar. El archivo del icono debe estar en el mismo directorio que el archivo especificado por el [comando open.](#parameters)
 
@@ -151,7 +151,7 @@ icon=MyProg.exe,1
 
 
 
-### <a name="label"></a>label
+### <a name="label"></a>etiqueta
 
 La **entrada** de etiqueta especifica una etiqueta de texto que representa la unidad habilitada para ejecución automática en Windows interfaz de usuario.
 
@@ -173,9 +173,9 @@ label=LabelText
 
  
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-La etiqueta, junto con un icono, representa la unidad habilitada para ejecución automática en Windows interfaz de usuario.
+La etiqueta, junto con un icono, representa la unidad habilitada para ejecución automática en la Windows usuario.
 
 En el ejemplo siguiente se especifica el valor "Mi etiqueta de unidad" como etiqueta de la unidad.
 
@@ -205,9 +205,9 @@ open=[exepath\]exefile [param1 [param2] ...]
 
 ### <a name="useautoplay"></a>UseAutoPlay
 
-En Windows XP, la **entrada UseAutoPlay** especifica que se debe usar AutoPlay en lugar de AutoRun.
+En Windows XP, la **entrada UseAutoPlay** especifica que se debe usar Reproducción automática en lugar de Ejecutar automáticamente.
 
-En Windows Vista y versiones posteriores, esta entrada hace que las acciones especificadas para AutoRun (mediante las entradas **open** o **shellexecute)** se supriman desde el cuadro de diálogo Reproducción automática. Esta entrada no tiene ningún efecto en las versiones de Windows anteriores a Windows XP.
+En Windows Vista y versiones posteriores, esta entrada hace que las acciones especificadas para AutoRun (mediante las entradas **open** o **shellexecute)** se supriman del cuadro de diálogo Reproducción automática. Esta entrada no tiene ningún efecto en las versiones de Windows anteriores a Windows XP.
 
 En Windows 8 y versiones posteriores, al especificar un valor de 0 se deshabilitará la reproducción automática para este dispositivo.
 
@@ -224,13 +224,13 @@ UseAutoPlay=1
 
 
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-Actualmente, **UseAutoPlay** solo es aplicable en Windows XP o versiones posteriores y solo en una unidad que [**GetDriveType**](/windows/win32/api/fileapi/nf-fileapi-getdrivetypea) determina que es de tipo **DRIVE \_ CDROM**.
+Actualmente, **UseAutoPlay** solo se aplica en Windows XP o versiones posteriores y solo en una unidad que [**GetDriveType**](/windows/win32/api/fileapi/nf-fileapi-getdrivetypea) determina que es de tipo **UNIDAD \_ CDROM**.
 
-Cuando se usa **UseAutoPlay,** cualquier acción especificada por las entradas **open** o **shellexecute** en Autorun.inf se omite en Windows XP y se omite en el cuadro de diálogo Reproducción automática en Windows Vista.
+Cuando se usa **UseAutoPlay,** cualquier  acción especificada por las entradas open o **shellexecute** en Autorun.inf se omite en Windows XP y se omite en el cuadro de diálogo Reproducción automática en Windows Vista.
 
-AutoRun se usa normalmente para ejecutar o cargar automáticamente algo contenido en el medio insertado, mientras que Reproducción automática presenta un cuadro de diálogo que incluye una lista de las acciones pertinentes que se pueden realizar y permite al usuario elegir qué acción realizar. Para obtener más información sobre la diferencia entre AutoRun y AutoPlay, consulte Creating [an AutoRun-enabled CD-ROM Application](autoplay.md) y [Using and Configuring AutoPlay](autoplay2k-using.md), respectivamente.
+AutoRun se usa normalmente para ejecutar o cargar automáticamente algo contenido en el medio insertado, mientras que Reproducción automática presenta un cuadro de diálogo que incluye una lista de las acciones pertinentes que se pueden realizar y permite al usuario elegir qué acción realizar. Para obtener más información sobre la diferencia entre AutoRun y AutoPlay, vea Creating [an AutoRun-enabled CD-ROM Application](autoplay.md) y [Using and Configuring AutoPlay](autoplay2k-using.md), respectivamente.
 
 ### <a name="usage-example"></a>Ejemplo de uso
 
@@ -246,10 +246,10 @@ shellexecute="Readme.txt"
 
 
 
-La acción realizada por el Shell cuando se inserta este CD depende de la versión de Windows en uso:
+La acción realizada por shell cuando se inserta este CD depende de la versión de Windows en uso:
 
--   En Windows XP o versiones anteriores, este CD se controla mediante AutoRun cuando se inserta. En este caso, se lee la entrada **shellexecute** y shell invoca el controlador de archivos asociado a .txt archivos; normalmente esto abriría Readme.txt en Bloc de notas.
--   En Windows Vista, la presencia de un archivo Autorun.inf con una entrada **shellexecute** hace que el medio se identifique como tipo de reproducción automática "Software y juegos". En este caso, al usuario se le presenta un cuadro de diálogo Reproducción automática que incluye la acción especificada por la entrada **shellexecute** (presentada como "Cargar Readme.txt" en el cuadro de diálogo), junto con las acciones predeterminadas asociadas a medios de tipo "Software y juegos".
+-   En Windows XP o versiones anteriores, autoejecución controla este CD cuando se inserta. En este caso, se lee **la entrada shellexecute** y shell invoca el controlador de archivos asociado a .txt archivos; normalmente esto abriría Readme.txt en Bloc de notas.
+-   En Windows Vista, la presencia de un archivo Autorun.inf con una entrada **shellexecute** hace que el medio se identifique como tipo de reproducción automática "Software y juegos". En este caso, se presenta al usuario un cuadro de diálogo Reproducción automática que incluye la acción especificada por la entrada **shellexecute** (presentada como "Cargar Readme.txt" en el cuadro de diálogo), junto con acciones predeterminadas asociadas a medios de tipo "Software y juegos".
 
 Para indicar que se debe usar Reproducción automática en lugar de Ejecutar automáticamente en Windows XP y que la acción especificada por la entrada AutoRun shellexecute debe suprimirse desde el cuadro de diálogo Reproducción automática en Windows Vista, inserte **UseAutoPlay** en el archivo Autorun.inf como se indica a continuación:
 
@@ -262,10 +262,10 @@ UseAutoPlay=1
 
 
 
-Una vez más, la acción realizada por el Shell cuando se inserta este CD depende de la versión de Windows en uso.
+Una vez más, la acción realizada por shell cuando se inserta este CD depende de la versión de Windows en uso.
 
--   En versiones de Windows anteriores a Windows XP, se sigue utilizando AutoRun y se realiza la acción especificada por **shellexecute,** como se describió anteriormente. (Tenga en cuenta que solo La ejecución automática está disponible en versiones de Windows anteriores a Windows XP).
--   En Windows XP, la **entrada UseAutoPlay** hace que AutoPlay se use en lugar de AutoRun. En este caso, Reproducción automática determina que el medio contiene un archivo Windows Media Audio (.wma) y clasifica el contenido como "Música archivos". El usuario aparece con un cuadro de diálogo Reproducción automática que contiene controladores registrados para el tipo de medio de reproducción automática "Música archivos"; La entrada AutoRun shellexecute se omite.
+-   En las versiones de Windows anteriores a Windows XP, se sigue utilizando AutoRun y se realiza la acción especificada por **shellexecute,** como se ha descrito anteriormente. (Tenga en cuenta que solo La ejecución automática está disponible en versiones de Windows anteriores a Windows XP).
+-   En Windows XP, la **entrada UseAutoPlay** hace que AutoPlay se use en lugar de AutoRun. En este caso, Reproducción automática determina que el medio contiene un archivo Windows Media Audio (.wma) y clasifica el contenido como "Música archivos". El usuario aparece con un cuadro de diálogo Reproducción automática que contiene controladores registrados para el tipo de medio "Música archivos". La entrada AutoRun shellexecute se omite.
 
 ### <a name="shellexecute"></a>shellexecute
 
@@ -292,13 +292,13 @@ shellexecute=[filepath\]filename[param1, [param2]...]
 
     Contiene los parámetros adicionales que se deben pasar a [**ShellExecuteEx.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa)
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-Esta entrada es similar a [abrir](#parameters), pero permite usar información de asociación [de](fa-intro.md) archivos para ejecutar la aplicación.
+Esta entrada es similar [a abrir](#parameters), pero permite usar información de asociación [de](fa-intro.md) archivos para ejecutar la aplicación.
 
 ### <a name="shell"></a>shell
 
-La **entrada** del shell especifica un comando predeterminado para el menú contextual de la unidad.
+La **entrada del** shell especifica un comando predeterminado para el menú contextual de la unidad.
 
 
 ```
@@ -311,13 +311,13 @@ shell=verb
 
 -   *Verbo*
 
-    Verbo que corresponde al comando de menú. El verbo y su comando de menú asociado deben definirse en el archivo Autorun.inf con una entrada [de \\ verbo de](#shellverb) shell.
+    Verbo que corresponde al comando de menú. El verbo y su comando de menú asociado deben definirse en el archivo Autorun.inf con una entrada [ \\ de verbo de](#shellverb) shell.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Cuando un usuario hace clic con el botón derecho en el icono de unidad, aparece un menú contextual. Si hay un archivo Autorun.inf, el comando de menú contextual predeterminado se toma de él. Este comando también se ejecuta cuando el usuario hace doble clic en el icono de la unidad.
 
-Para especificar el comando de menú contextual predeterminado, defina primero su verbo, cadena de comando y texto de menú con el [ \\ verbo de shell](#shellverb). A continuación, use shell para convertirla en el comando de menú contextual predeterminado. De lo contrario, el texto predeterminado del elemento de menú será "Reproducción automática", que inicia la aplicación especificada por la [entrada](#parameters) abierta.
+Para especificar el comando de menú contextual predeterminado, defina primero su verbo, cadena de comando y texto de menú con [el \\ verbo de shell](#shellverb). A continuación, use shell para convertirla en el comando de menú contextual predeterminado. De lo contrario, el texto predeterminado del elemento de menú será "Reproducción automática", que inicia la aplicación especificada por la [entrada](#parameters) abierta.
 
 ### <a name="shellverb"></a>verbo \\ shell
 
@@ -335,7 +335,7 @@ shell\verb=MenuText
 
 -   *Verbo*
 
-    Verbo del comando de menú. La **\\ entrada del**_comando_*_\\ del verbo_* del shell asocia el verbo a un archivo ejecutable. Los verbos no deben contener espacios incrustados. De forma predeterminada, *verbo* es el texto que se muestra en el menú contextual.
+    Verbo del comando de menú. La **\\ entrada del**_comando_*_\\ del verbo_* de shell asocia el verbo a un archivo ejecutable. Los verbos no deben contener espacios incrustados. De forma predeterminada, *verbo* es el texto que se muestra en el menú contextual.
 
 -   *Filename.exe*
 
@@ -345,15 +345,15 @@ shell\verb=MenuText
 
     Este parámetro especifica el texto que se muestra en el menú contextual. Si se omite, se *muestra* el verbo . *MenuText* puede ser de mayúsculas y minúsculas mixtas y puede contener espacios. Puede establecer una tecla de método abreviado para el elemento de menú colocando una y comercial (&) delante de la letra.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Cuando un usuario hace clic con el botón derecho en el icono de unidad, aparece un menú contextual. Agregar **entradas \\ de verbo** de shell al archivo Autorun.inf de la unidad permite agregar comandos a este menú contextual.
 
-Esta entrada tiene dos partes, que deben estar en líneas independientes. La primera parte es el **comando de \\ verbo**_de_*_\\ shell_*. Es obligatorio. Asocia una cadena, denominada *verbo*, a la aplicación que se va a iniciar cuando se ejecuta el comando. La segunda parte es la entrada **del \\ verbo**_shell._ Es opcional. Puede incluirlo para especificar el texto que se muestra en el menú contextual.
+Hay dos partes en esta entrada, que deben estar en líneas independientes. La primera parte es el **comando \\ del** verbo _de_*_\\ shell_*. Es obligatorio. Asocia una cadena, denominada *verbo*, a la aplicación que se va a iniciar cuando se ejecuta el comando. La segunda parte es la entrada **del verbo \\ de** shell. Es opcional. Puede incluirlo para especificar el texto que se muestra en el menú contextual.
 
-Para especificar un comando de menú contextual predeterminado, defina el verbo con el **\\ verbo de shell** y conséctelo como el comando predeterminado con la entrada [del](#autoruninf-entries) shell.
+Para especificar un comando de menú contextual predeterminado, defina el verbo con el **verbo de \\ shell** y conséctelo como el comando predeterminado con la entrada [del](#autoruninf-entries) shell.
 
-El fragmento Autorun.inf de ejemplo siguiente asocia el verbo *readit* con la cadena de comandos "Bloc de notas abc \\readme.txt". El texto del menú es "Léame" y "M" se define como la tecla de método abreviado del elemento. Cuando el usuario selecciona este comando, se abre el archivo abcreadme.txt de la \\ unidad con Microsoft Bloc de notas.
+El fragmento Autorun.inf de ejemplo siguiente asocia el verbo *readit* con la cadena de comandos "Bloc de notas abc \\readme.txt". El texto del menú es "Léame" y "M" se define como la tecla de método abreviado del elemento. Cuando el usuario selecciona este comando, se abre el archivo abc \\readme.txt de la unidad con Microsoft Bloc de notas.
 
 
 ```
@@ -365,11 +365,11 @@ shell\readit=Read &Me
 
 ## <a name="content-keys"></a>\[Claves de \] contenido
 
-Hay tres claves de tipo de archivo: **MusicFiles,** **PictureFiles** y **VideoFiles.**
+Hay tres claves de tipo de archivo: **MusicFiles**, **PictureFiles** y **VideoFiles.**
 
-Si uno de estos contenidos se establece en true a través de uno de los valores 1, y, yes, t o true sin distinción entre mayúsculas y minúsculas, la interfaz de usuario de Reproducción automática muestra los controladores asociados a ese tipo de contenido independientemente de si el contenido de ese tipo existe en el medio.
+Si uno de estos contenidos se establece en true a través de uno, los valores 1, y, sí, t o true no distinción entre mayúsculas y minúsculas, la interfaz de usuario reproducción automática muestra los controladores asociados a ese tipo de contenido independientemente de si el contenido de ese tipo existe en el medio.
 
-Si uno de estos contenidos se establece en false a través de uno de los valores 0, n, no, f o false que no tienen en cuenta las mayúsculas y minúsculas, la interfaz de usuario de Reproducción automática no muestra los controladores asociados a ese tipo de contenido aunque se detecte contenido de ese tipo en el medio.
+Si uno de estos contenidos se establece en false a través de uno, los valores 0, n, no, f o false que no tienen en cuenta mayúsculas de minúsculas, la interfaz de usuario de Reproducción automática no muestra los controladores asociados a ese tipo de contenido aunque se detecte contenido de ese tipo en el medio.
 
 El uso de esta sección está pensado para permitir que los autores de contenido comuniquen la intención del contenido a Reproducción automática. Por ejemplo, un CD se puede clasificar como que contiene solo contenido de música, aunque también tenga imágenes y vídeos y, de lo contrario, se vería como contenido mixto.
 
@@ -445,9 +445,9 @@ DriverPath=directorypath
 
 -   *directorypath*
 
-    Ruta de acceso a un directorio Windows busca archivos de controlador, junto con todos sus subdirectorios.
+    Ruta de acceso a un directorio que Windows busca archivos de controlador, junto con todos sus subdirectorios.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 No use letras de unidad en *directorypath* a medida que cambien de un equipo al siguiente.
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c35216656a8dcce76f00ce0050da828c89e861b5e2dedb6fab7eebd2ab2e8a1c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a97d60ba29b2451dea973b4ec0453f3a4df2ecdd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119983235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360825"
 ---
 # <a name="d3dx_int2_to_r16g16_sint-function"></a>Función SINT D3DX \_ INT2 \_ a \_ R16G16 \_
 

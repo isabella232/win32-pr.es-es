@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_PnPEntity métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da9d825831d256030170fe5ccf9562b36a7be1a576ad926f2dbf30d6771032f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3202f229d69226bf2ae458d9cc6f568cdc77f12c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118007903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255662"
 ---
 # <a name="win32_pnpentity-methods"></a>Métodos \_ pnPEntity de Win32
 

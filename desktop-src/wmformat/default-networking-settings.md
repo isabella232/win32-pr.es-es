@@ -11,12 +11,12 @@ keywords:
 - ASF (formato de sistemas avanzados), configuración de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 591bf4aa2154d5cc04a8a17b5fc75f290a8493a39d530d4246bc0338c2424e62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f4f219a60d9211b63eb124500c014452a0143d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256340"
 ---
 # <a name="default-networking-settings"></a>Configuración predeterminada de Configuración
 
@@ -27,7 +27,7 @@ En las tablas siguientes se describe la configuración predeterminada de los par
 | IWMReaderNetworkConfig                | Valor predeterminado              |
 |---------------------------------------|------------------------------|
 | Tiempo de almacenamiento en búfer                        | 5 segundos                    |
-| UseFixedUDPPort                       | FALSE                        |
+| UseFixedUDPPort                       | false                        |
 | FixedUDPPort                          | 0 (no válido)                |
 | ProxySetting: HTTP                    | EXPLORADOR DE CONFIGURACIÓN DE PROXY WMT \_ \_ \_ |
 | ProxySetting: MMS                     | CONFIGURACIÓN DE \_ PROXY WMT \_ \_ NONE    |
@@ -37,12 +37,12 @@ En las tablas siguientes se describe la configuración predeterminada de los par
 | ProxyPort: MMS                        | 1755                         |
 | ProxtPort: RTSP                       | 554                          |
 | ProxyExceptionList (HTTP, MMS, RTSP)  | ""                           |
-| ProxyBypassForLocal (HTTP, MMS, RTSP) | FALSE                        |
-| ForceRerunAutoDetection               | FALSE                        |
-| EnableMulticast                       | TRUE                         |
-| EnableHTTP                            | TRUE                         |
-| EnableTCP                             | TRUE                         |
-| EnableUDP                             | TRUE                         |
+| ProxyBypassForLocal (HTTP, MMS, RTSP) | false                        |
+| ForceRerunAutoDetection               | false                        |
+| EnableMulticast                       | true                         |
+| EnableHTTP                            | true                         |
+| EnableTCP                             | true                         |
+| EnableUDP                             | true                         |
 | Ancho de banda de conexión                  | 0 (detección automática)              |
 
 
@@ -54,10 +54,10 @@ En las tablas siguientes se describe la configuración predeterminada de los par
 | IWMReaderNetworkConfig2        | Valor predeterminado        |
 |--------------------------------|------------------------|
 | Duración del streaming acelerado | 100000000 (10 segundos) |
-| Habilitación del almacenamiento en caché de contenido         | TRUE                   |
-| Habilitación de la caché rápida              | TRUE                   |
-| Habilitación de los reenends                 | TRUE                   |
-| Habilitación de la simplificación de contenido        | TRUE                   |
+| Habilitación del almacenamiento en caché de contenido         | true                   |
+| Habilitación de la caché rápida              | true                   |
+| Habilitación de los reenends                 | true                   |
+| Habilitación de la simplificación de contenido        | true                   |
 | Límite de reconexión                | 25                     |
 
 
@@ -81,7 +81,7 @@ En las tablas siguientes se describe la configuración predeterminada de los par
 | IWMWriterAdvanced2  | Valor predeterminado             |
 |---------------------|-----------------------------|
 | Tamaño máximo del paquete | 1400                        |
-| Id. de cliente de registro       | FALSE                       |
+| Id. de cliente de registro       | false                       |
 | Modo de reproducción           | SELECCIÓN AUTOMÁTICA \_ DEL MODO DE REPRODUCCIÓN \_ \_ WMT |
 
 

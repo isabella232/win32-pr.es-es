@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f97c46400f1ba08f1b9e72b867cb66fda37e7bb4cd3a2b2b871271a6858a4a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a371a36e797e1bff17aff457e11b140e4775894
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118286570"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360822"
 ---
 # <a name="d3dx_r8g8b8a8_uint_to_uint4-function"></a>Función D3DX \_ R8G8B8A8 \_ UINT \_ a \_ UINT4
 
@@ -65,7 +65,7 @@ Datos del sombreador desempaquetar.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar DXGI \_ FORMAT para In-Place de imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

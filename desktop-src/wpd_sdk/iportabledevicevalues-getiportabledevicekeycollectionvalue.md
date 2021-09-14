@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 13a7ccde6a7cf5a73c78cc382341f7d750d9032cbfd8d69bdcfd3e318eeccece
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7868b71790f6dbb7525fcd1be49b197042a196f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118194106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256154"
 ---
-# <a name="iportabledevicevaluesgetiportabledevicekeycollectionvalue-method"></a>Método IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue
+# <a name="iportabledevicevaluesgetiportabledevicekeycollectionvalue-method"></a>IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue (método)
 
 El **método GetIPortableDeviceKeyCollectionValue** recupera un valor **IPortableDeviceKeyCollection** (tipo VT \_ UNKNOWN) especificado por una clave.
 
@@ -51,7 +51,7 @@ Clave **REFPROPERTYKEY** que especifica el elemento que se recuperará.
 *ppValue* \[ out\]
 </dt> <dd>
 
-Puntero al puntero de interfaz [**IPortableDeviceKeyCollection recuperado.**](iportabledevicekeycollection.md) El autor de la llamada es responsable de **llamar a Release** en la interfaz recuperada.
+Puntero al puntero de interfaz [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) recuperado. El autor de la llamada es responsable de **llamar a Release** en la interfaz recuperada.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [Recuperación de eventos de servicio admitidos.](retrieving-supported-events.md)
+Para obtener un ejemplo de cómo usar este método, vea [Recuperar eventos de servicio admitidos.](retrieving-supported-events.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de evento
 
 <dl> <dt>
 
-[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-setiportabledevicekeycollectionvalue.md)
@@ -99,7 +99,7 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de evento
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperar métodos de servicio admitidos](retrieving-supported-methods.md)
+[Recuperación de métodos de servicio admitidos](retrieving-supported-methods.md)
 </dt> </dl>
 
  

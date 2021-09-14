@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe6242d2c66b165be8c750d71c61020e9a6acc66f68654d73898fd5000ace3c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19a369bf9b70d9a43af8a48f13f1b8bbb87525b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118701474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256268"
 ---
 # <a name="iwmdrmindividualizationstatus-interface"></a>Interfaz IWMDRMIndividualizationStatus
 
@@ -29,7 +29,7 @@ Esta interfaz se entrega con eventos MEWMDRMIndividualizationProgress. Muchos de
 
 Para recuperar un puntero a una instancia de la interfaz **IWMDRMIndividualizationStatus,** primero debe llamar al método **IMFMediaEvent::GetValue** del evento progress. El valor que se recupera del evento es un puntero a la interfaz **IUnknown** del objeto que implementa la **interfaz IWMDRMIndividualizationStatus.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IWMDRMIndividualizationStatus** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMIndividualizationStatus** también tiene estos tipos de miembros:
 

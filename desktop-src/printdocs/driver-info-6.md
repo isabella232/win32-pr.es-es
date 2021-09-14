@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: fd90794fe4c6f41f8704cb626ddfcf9487c89da01afb8a2f8b1fddfe0efea43a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20edef2aca2c6948984f5195b16711b78112354a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361098"
 ---
 # <a name="driver_info_6-structure"></a>Estructura \_ DRIVER INFO \_ 6
 
@@ -53,7 +53,7 @@ typedef struct _DRIVER_INFO_6 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una
 **pDataFile**
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene los datos del controlador (por ejemplo, C: \\ DRIVERS \\ Qms810.ppd).
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene datos de controlador (por ejemplo, C: \\ DRIVERS \\ Qms810.ppd).
 
 </dd> <dt>
 
@@ -109,14 +109,14 @@ Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una
 **pDependentFiles**
 </dt> <dd>
 
-Puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL en el búfer contiene el nombre de un archivo del que depende el controlador. La secuencia de cadenas finaliza con una cadena vacía de longitud cero. Si **pDependentFiles** no es **NULL** y no contiene ningún nombre de archivo, apuntará a un búfer que contiene dos cadenas vacías.
+Puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL del búfer contiene el nombre de un archivo del que depende el controlador. Una cadena vacía de longitud cero finaliza la secuencia de cadenas. Si **pDependentFiles** no es **NULL** y no contiene ningún nombre de archivo, apuntará a un búfer que contiene dos cadenas vacías.
 
 </dd> <dt>
 
 **pMonitorName**
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica un monitor de lenguaje (por ejemplo, "monitor de PJL"). Este miembro puede ser **NULL** y debe especificarse solo para impresoras que puedan comunicarse bidireccionalmente.
+Puntero a una cadena terminada en NULL que especifica un monitor de lenguaje (por ejemplo, "monitor PJL"). Este miembro puede ser **NULL** y debe especificarse solo para impresoras que puedan comunicarse bidireccionalmente.
 
 </dd> <dt>
 
@@ -165,7 +165,7 @@ Puntero a una cadena terminada en NULL que especifica la dirección URL del fabr
 **pszHardwareID**
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica el identificador de hardware para el controlador de impresora.
+Puntero a una cadena terminada en NULL que especifica el identificador de hardware del controlador de impresora.
 
 </dd> <dt>
 
@@ -176,17 +176,17 @@ Puntero a una cadena terminada en NULL que especifica el proveedor del controlad
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las cadenas de estos miembros están contenidas en el archivo .inf que se usa para agregar el controlador.
 
-Si llama a  [**AddPrinterDriver**](addprinterdriver.md) o [**AddPrinterDriverEx**](addprinterdriverex.md) con *Level* no igual a 6 y, a continuación, llama a [**GetPrinterDriver**](getprinterdriver.md) o [**EnumPrinterDrivers**](enumprinterdrivers.md) con Level igual a 6, se devuelve la estructura DRIVER INFO **\_ \_ 6** con **pszMfgName**, **pszOEMUrl**, **pszHardwareID y** **pszProvider** establecido en **NULL,** **dwlDriverVersion** establecido en 0 y **ftDriverDate** establecido en (0,0).
+Si llama  a [**AddPrinterDriver**](addprinterdriver.md) o [**AddPrinterDriverEx**](addprinterdriverex.md) con *level* no igual a 6 y, a continuación, llama a [**GetPrinterDriver**](getprinterdriver.md) o [**EnumPrinterDrivers**](enumprinterdrivers.md) con Level igual a 6, la estructura DRIVER INFO **\_ \_ 6** se devuelve con **pszMfgName**, **pszOEMUrl**, **pszHardwareID y** **pszProvider** establecido en **NULL,** **dwlDriverVersion** establecido en 0 y **ftDriverDate** establecido en (0,0).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -202,7 +202,7 @@ Si llama a  [**AddPrinterDriver**](addprinterdriver.md) o [**AddPrinterDriverEx*
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrinterDriver**](addprinterdriver.md)

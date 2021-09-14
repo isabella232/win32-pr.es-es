@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c32fd2c7a12fc8146a01d3722b31b46bad01f61b526397806a5121b7381b069e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f4530869b9f68772c28fefd6130ff8e4b6ffbec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117861712"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361067"
 ---
 # <a name="abm_remove-message"></a>Mensaje REMOVE de ABM \_
 
@@ -47,7 +47,7 @@ Puntero a una [**estructura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shell
 
 Siempre devuelve **TRUE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje hace que el sistema envíe el mensaje de [**notificación \_ ABN POSCHANGED**](abn-poschanged.md) a todas las barras de aplicaciones.
 
@@ -55,7 +55,7 @@ Este mensaje hace que el sistema envíe el mensaje de [**notificación \_ ABN PO
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

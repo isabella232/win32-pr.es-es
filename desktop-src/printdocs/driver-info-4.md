@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d42f74ce58c126130bd28820283c0b4262d3e3ce6b05106ae9ff74bc280ae234
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b737947b19e93a6b8de0563128a0f1be412101ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119353935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361099"
 ---
 # <a name="driver_info_4-structure"></a>Driver \_ INFO \_ 4 (estructura)
 
@@ -47,7 +47,7 @@ typedef struct _DRIVER_INFO_4 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -141,7 +141,7 @@ Puntero a una cadena terminada en NULL que especifica nombres de controladores d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

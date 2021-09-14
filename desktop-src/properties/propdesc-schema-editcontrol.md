@@ -5,11 +5,11 @@ title: editControl
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 213d6fba3f03f90e0d5a2702226dd8596462b289
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361091"
 ---
 # <a name="editcontrol"></a>editControl
 
@@ -91,7 +91,7 @@ Si es , este elemento se omite porque no se puede editar una <typeInfo isInnate=
 </thead>
 <tbody>
 <tr class="odd">
-<td>Predeterminado</td>
+<td>Valor predeterminado</td>
 <td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; &quot; control Texto. 
 <table>
 <thead>

@@ -9,16 +9,16 @@ keywords:
 - ASF (formato de sistemas avanzados),Guía de programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d9de2bab3d832f97c59c7facf7904f3b5ac7cad932438fd53b0d03c32cf026d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f4ea4f6819a31693d7c9d149717324ef6dcc65a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117654393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360924"
 ---
 # <a name="windows-media-format-sdk-programming-guide"></a>Windows Guía de programación del SDK de formato multimedia
 
-La guía de programación está pensada para ayudarle a aprender a usar el Kit de desarrollo de software (SDK) de formato multimedia (SDK) de Microsoft Windows para compilar aplicaciones que funcionan con archivos mediante el formato de sistemas avanzados (ASF).
+La Guía de programación está pensada para ayudarle a aprender a usar el Kit de desarrollo de software (SDK) de formato multimedia (SDK) de Microsoft Windows para compilar aplicaciones que funcionan con archivos mediante el formato de sistemas avanzados (ASF).
 
 Puede usar el SDK Windows Media Format para crear aplicaciones que escriban secuencias multimedia digitales en y lean secuencias de archivos ASF. Este SDK también admite la edición de metadatos en archivos ASF. Además, este SDK se puede usar para leer y manipular metadatos en archivos MP3.
 

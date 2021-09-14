@@ -1,10 +1,10 @@
 ---
-title: DRM_OUTPUT_PROTECTION_EX estructura (wmdrmsdk. h)
-description: La estructura de protección de salida de DRM \_ \_ \_ contiene información sobre una tecnología de protección de la salida. Esta estructura extiende la \_ \_ protección de salida de DRM agregando un número de versión.
+title: DRM_OUTPUT_PROTECTION_EX estructura (Wmdrmsdk.h)
+description: La estructura DRM \_ OUTPUT PROTECTION EX contiene información sobre una tecnología de protección de \_ \_ salida. Esta estructura amplía DRM \_ OUTPUT \_ PROTECTION agregando un número de versión.
 ms.assetid: eeebf5da-172b-4781-8c44-00504a6961bf
 keywords:
-- DRM_OUTPUT_PROTECTION_EX estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- DRM_OUTPUT_PROTECTION_EX structure windows Media Format
+- Estructura de windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -16,15 +16,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: aeadbb845dc115b1faff858fe3a6ba0064eb425e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360950"
 ---
-# <a name="drm_output_protection_ex-structure"></a>\_Estructura de \_ protección de salida de DRM \_
+# <a name="drm_output_protection_ex-structure"></a>Estructura EX de DRM \_ OUTPUT \_ PROTECTION \_
 
-La estructura de protección de salida de DRM contiene información sobre una tecnología de protección de la salida. **\_ \_ \_** Esta estructura extiende **la \_ \_ protección de salida de DRM** agregando un número de versión.
+La **estructura DRM OUTPUT PROTECTION \_ \_ \_ EX** contiene información sobre una tecnología de protección de salida. Esta estructura amplía DRM **\_ OUTPUT \_ PROTECTION** agregando un número de versión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ typedef struct DRM_OUTPUT_PROTECTION_EX {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -53,7 +53,7 @@ Número de versión.
 **guidId**
 </dt> <dd>
 
-GUID que identifica la tecnología de protección de la salida.
+GUID que identifica la tecnología de protección de salida.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Datos de configuración de la tecnología.
 
 ## <a name="remarks"></a>Observaciones
 
-**DRM \_ La protección de salida de AUDIO \_ \_ \_ ex** y la **protección de salida de \_ vídeo DRM \_ \_ \_ ex** se definen como **\_ \_ protección de salida DRM** en instrucciones **typedef** .
+**DRM \_ PROTECCIÓN \_ DE SALIDA DE AUDIO \_ \_ EX** y **DRM VIDEO OUTPUT PROTECTION \_ \_ \_ \_ EX** se definen como **DRM OUTPUT PROTECTION \_ \_ en** **instrucciones typedef.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,15 +74,15 @@ Datos de configuración de la tecnología.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_protección de salida de DRM \_**](drm-output-protection.md)
+[**PROTECCIÓN DE SALIDA DE DRM \_ \_**](drm-output-protection.md)
 </dt> <dt>
 
 [**Estructuras**](drm-structures.md)

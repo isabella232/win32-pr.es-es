@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fbffdf47e019494570506dac164735a2471d0617daa190ad74fb3c8910a7dede
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe032d0614b1067c9351b643d457a718b4917a8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118659645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361391"
 ---
 # <a name="cbasefilter-class"></a>CBaseFilter (clase)
 
@@ -31,7 +31,7 @@ La `CBaseFilter` clase es una clase abstracta para implementar filtros. Para imp
 
 -   Derive una nueva clase de `CBaseFilter` .
 -   Incluya variables miembro que definan los pines en el filtro. Los pines deben heredar de la [**clase CBasePin.**](cbasepin.md)
--   Invalide el método virtual [**puro CBaseFilter::GetPin**](cbasefilter-getpin.md), que recupera los pines en el filtro.
+-   Invalide el método virtual [**puro CBaseFilter::GetPin**](cbasefilter-getpin.md), que recupera los pines del filtro.
 -   Invalide el método virtual [**puro CBaseFilter::GetPinCount**](cbasefilter-getpincount.md), que recupera el número de pines.
 -   Proporcione métodos para generar, procesar o representar ejemplos multimedia.
 
@@ -39,11 +39,11 @@ Varias clases base derivan de `CBaseFilter` , [**incluidos CSource**](csource.md
 
 
 
-| Variables miembro protegidas                                     | Descripción                                                                                        |
+| Variables de miembro protegido                                     | Descripción                                                                                        |
 |----------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [**estado de m \_**](cbasefilter-m-state.md)                        | Estado actual del filtro.                                                                       |
+| [**m \_ State**](cbasefilter-m-state.md)                        | Estado actual del filtro.                                                                       |
 | [**m \_ pClock**](cbasefilter-m-pclock.md)                      | Puntero al reloj de referencia del filtro.                                                           |
-| [**m \_ tStart**](cbasefilter-m-tstart.md)                      | Hora de referencia que corresponde al tiempo de secuencia 0.                                                  |
+| [**m \_ tStart**](cbasefilter-m-tstart.md)                      | Tiempo de referencia que corresponde al tiempo de secuencia 0.                                                  |
 | [**m \_ clsid**](cbasefilter-m-clsid.md)                        | Identificador de clase (CLSID) del filtro.                                                            |
 | [**m \_ pLock**](cbasefilter-m-plock.md)                        | Puntero a una sección crítica que se usa para serializar los cambios de estado.                             |
 | [**m \_ pName**](cbasefilter-m-pname.md)                        | Nombre del filtro.                                                                                       |
@@ -56,8 +56,8 @@ Varias clases base derivan de `CBaseFilter` , [**incluidos CSource**](csource.md
 | [**StreamTime**](cbasefilter-streamtime.md)                   | Recupera el tiempo de secuencia actual. Virtual.                                                        |
 | [**IsActive**](cbasefilter-isactive.md)                       | Determina si el filtro está activo actualmente (en ejecución o en pausa).                             |
 | [**IsStopped**](cbasefilter-isstopped.md)                     | Determina si el filtro está detenido actualmente.                                                |
-| [**NotifyEvent**](cbasefilter-notifyevent.md)                 | Envía una notificación de eventos al administrador de gráficos de filtro.                                           |
-| [**GetFilterGraph**](cbasefilter-getfiltergraph.md)           | Recupera un puntero al administrador de gráficos de filtro.                                                   |
+| [**NotifyEvent**](cbasefilter-notifyevent.md)                 | Envía una notificación de eventos al administrador de gráficos de filtros.                                           |
+| [**GetFilterGraph**](cbasefilter-getfiltergraph.md)           | Recupera un puntero al administrador de gráficos de filtros.                                                   |
 | [**ReconnectPin**](cbasefilter-reconnectpin.md)               | Interrumpe una conexión de pin existente y la vuelve a conectar al mismo pin, utilizando un tipo de medio especificado. |
 | [**GetPinVersion**](cbasefilter-getpinversion.md)             | Recupera un número de versión para el conjunto de pines de este filtro. Virtual.                            |
 | [**IncrementPinVersion**](cbasefilter-incrementpinversion.md) | Incrementa el número de versión en el conjunto de pines.                                                  |

@@ -1,5 +1,5 @@
 ---
-description: La clase CIM \_ StorageRedundancyGroup representa información de redundancia masiva relacionada con el almacenamiento.
+description: La clase Cim \_ StorageRedundancyGroup representa información de redundancia relacionada con el almacenamiento masivo.
 ms.assetid: 6bc81680-672a-4872-8951-11d7f10acbc7
 ms.tgt_platform: multiple
 title: CIM_StorageRedundancyGroup clase
@@ -22,19 +22,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 888da618a0c51fbbb81923e8ff5885d815c3327ab99f8bfa4f76571602059d9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bef8cb8029c62957446ee5d7aefcf67fe5d7acb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119817815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255854"
 ---
 # <a name="cim_storageredundancygroup-class"></a>Cim \_ StorageRedundancyGroup (clase)
 
-La **clase CIM \_ StorageRedundancyGroup representa** información de redundancia masiva relacionada con el almacenamiento. Storage los grupos de redundancia se usan para proteger los datos de usuario. Están hechos de una o varias extensiones físicas, o una o varias extensiones físicas agregadas. Storage pueden superponerse los grupos de redundancia; sin embargo, las extensiones subyacentes dentro de la superposición no deben contener ningún dato de comprobación.
+La **clase Cim \_ StorageRedundancyGroup representa** información de redundancia relacionada con el almacenamiento masivo. Storage los grupos de redundancia se usan para proteger los datos de usuario. Se consono de una o varias extensiones físicas, o una o varias extensiones físicas agregadas. Storage pueden superponerse los grupos de redundancia; sin embargo, las extensiones subyacentes dentro de la superposición no deben contener ningún dato de comprobación.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -57,7 +57,7 @@ class CIM_StorageRedundancyGroup : CIM_RedundancyGroup
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim StorageRedundancyGroup** tiene estos tipos de miembros:
 
@@ -101,7 +101,7 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/w
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**Cim \_ RedundancyGroup**](cim-redundancygroup.md).
+Esta propiedad se hereda de [**CIM \_ RedundancyGroup.**](cim-redundancygroup.md)
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -170,7 +170,7 @@ Tipo de acceso: solo lectura
 
 Información sobre el estado del grupo de redundancia.
 
-Esta propiedad se hereda de [**Cim \_ RedundancyGroup**](cim-redundancygroup.md).
+Esta propiedad se hereda de [**CIM \_ RedundancyGroup.**](cim-redundancygroup.md)
 
 <dt>
 
@@ -245,7 +245,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -276,7 +276,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -290,14 +290,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -413,7 +413,7 @@ Algoritmo utilizado para la redundancia y reconstrucción de datos. El valor 0 n
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Cim StorageRedundancyGroup** se deriva de [**Cim \_ RedundancyGroup**](cim-redundancygroup.md).
 
@@ -425,7 +425,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -435,7 +435,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

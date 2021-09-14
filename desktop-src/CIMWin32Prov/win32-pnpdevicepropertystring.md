@@ -2,7 +2,7 @@
 description: Representa una propiedad de dispositivo PnP de tipo cadena.
 ms.assetid: 10D5C2B1-E5B4-4A7E-BC5E-5F6A4ABDDBF7
 ms.tgt_platform: multiple
-title: Win32_PnPDevicePropertyString (clase)
+title: Win32_PnPDevicePropertyString clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,13 +20,13 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: ea9b0c0b9248af16f8bc0b629332429f54f46563
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255717"
 ---
-# <a name="win32_pnpdevicepropertystring-class"></a>\_Clase Win32 PnPDevicePropertyString
+# <a name="win32_pnpdevicepropertystring-class"></a>Clase \_ PnPDevicePropertyString de Win32
 
 Representa una propiedad de dispositivo PnP de tipo **cadena**.
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertyString : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PnPDevicePropertyString de Win32** tiene estos tipos de miembros:
 
@@ -70,7 +70,7 @@ Valor de propiedad.
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -94,13 +94,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par de Name-Value de claves que identifica la propiedad de **datos** .
+Valor del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
-**Clave**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -109,7 +109,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value de claves que identifica la propiedad de **datos** .
+Nombre del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -124,7 +124,7 @@ Tipo de datos: **Uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de la propiedad de **datos** .
+Tipo de la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -225,7 +225,7 @@ Los valores posibles son.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**GUID** (13)
+**Guid** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>26 –</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -337,14 +337,14 @@ Los valores posibles son.
 
 <span id="Int16Array"></span><span id="int16array"></span><span id="INT16ARRAY"></span>
 
-**, Int16array** (4100)
+**Int16Array** (4100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UInt16Array"></span><span id="uint16array"></span><span id="UINT16ARRAY"></span>
 
-**, Uint16array** (4101)
+**UInt16Array** (4101)
 
 
 </dt> <dd></dd> <dt>
@@ -477,7 +477,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Unknown-check en devpropdef. h** (4120)
+**Desconocido: check in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -494,7 +494,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>8218:4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -504,15 +504,15 @@ Los valores posibles son.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

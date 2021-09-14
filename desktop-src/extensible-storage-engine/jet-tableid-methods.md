@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_TABLEID métodos'
+description: 'Más información acerca de: JET_TABLEID métodos'
 title: JET_TABLEID métodos
 TOCTitle: JET_TABLEID methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_TABLEID
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39516259
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e7baa22d5f6695a3bde0b0618c7ca90e8fe4320f956a3fec40f12e23ef8a7ae3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb0b7eb4ab6332422cad15de8ea7953504a05eee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119729115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361226"
 ---
 # <a name="jet_tableid-methods"></a>JET_TABLEID métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_TABLEID](./jet-tableid-structure.md) expone los miembros siguientes.
+El [JET_TABLEID](./jet-tableid-structure.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [JET_TABLEID](./jet-tableid-structure.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

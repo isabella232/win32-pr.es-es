@@ -24,12 +24,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 96d6ca1c18e7a942c1185cb08d2a962b5a2457c529a2d090cb86b8bcfb8ec2b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef04e472e11c848aadb63c98b3dee2ea645a3ce7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255825"
 ---
 # <a name="cim_system-class-cimwin32-wmi-providers"></a>CIM_System clase (proveedores WMI CIMWin32)
 
@@ -38,7 +38,7 @@ La **clase \_ cim system** agrega un conjunto enumerable de elementos del sistem
 El **objeto del \_ sistema CIM** y sus derivados son objetos de nivel superior de CIM. Proporcionan el ámbito de numerosos componentes y deben tener claves del sistema únicas.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -63,7 +63,7 @@ class CIM_System : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim System** tiene estos tipos de miembros:
 
@@ -183,7 +183,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cómo se puede acceder al propietario del sistema principal (por ejemplo, el número de teléfono o la dirección de correo electrónico).
+Cómo se puede llegar al propietario del sistema principal (por ejemplo, el número de teléfono o la dirección de correo electrónico).
 
 </dd> <dt>
 
@@ -324,7 +324,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Cim System** se deriva de CIM [**\_ LogicalElement**](cim-logicalelement.md).
 
@@ -346,7 +346,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

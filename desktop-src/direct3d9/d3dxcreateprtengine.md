@@ -1,7 +1,7 @@
 ---
-description: Crea un objeto ID3DXPRTEngine que puede generar de forma eficaz simulaciones de transferencia Radiance (PRT) precalculadas de una escena 3D.
+description: Crea un objeto ID3DXPRTEngine que puede generar eficazmente simulaciones de transferencia de radiancia precalutadas (PRT) de una escena 3D.
 ms.assetid: fdfe02b5-03fb-4bee-a53b-012ae3572644
-title: Función D3DXCreatePRTEngine (D3DX9Mesh. h)
+title: Función D3DXCreatePRTEngine (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 7b76b58953de81041922659c3315bba9cdf7788b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361276"
 ---
-# <a name="d3dxcreateprtengine-function"></a>D3DXCreatePRTEngine función)
+# <a name="d3dxcreateprtengine-function"></a>Función D3DXCreatePRTEngine
 
-Crea un objeto [**ID3DXPRTEngine**](id3dxprtengine.md) que puede generar de forma eficaz simulaciones de transferencia Radiance (PRT) precalculadas de una escena 3D.
+Crea un [**objeto ID3DXPRTEngine**](id3dxprtengine.md) que puede generar eficazmente simulaciones de transferencia de radiancia precalutadas (PRT) de una escena 3D.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,39 +44,39 @@ HRESULT D3DXCreatePRTEngine(
 
 <dl> <dt>
 
-*pmesh* \[ de\]
+*pMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a un objeto de malla [**ID3DXMesh**](id3dxmesh.md) de entrada que modela la escena 3D. Esta malla debe tener una tabla de atributos en la que los vértices se encuentren en un atributo único.
+Puntero a un objeto de malla [**ID3DXMesh de**](id3dxmesh.md) entrada que modela la escena 3D. Esta malla debe tener una tabla de atributos en la que los vértices se encuentran en un atributo único.
 
 </dd> <dt>
 
-*pAdjacency* \[ de\]
+*pAdjacency* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero opcional a una matriz de tres DWORDs por cada tipo que se va a rellenar con índices de caras adyacentes. El número de bytes de esta matriz debe ser al menos ((3 \* [**GetNumFaces**](id3dxbasemesh--getnumfaces.md)) \* sizeof (DWORD)). Puede ser **null**.
+Puntero opcional a una matriz de tres DWORD por cara que se va a rellenar con índices faciales adyacentes. El número de bytes de esta matriz debe ser al menos ((3 \* [**GetNumFaces**](id3dxbasemesh--getnumfaces.md)) \* sizeof(DWORD)). Puede ser **NULL.**
 
 </dd> <dt>
 
-*ExtractUVs* \[ de\]
+*ExtractUVs* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Si **es true**, las texturas se usarán para almacenar vectores ALBEDOS o PRT.
+Si **es TRUE,** se usarán texturas para almacenar vectores albedos o PRT.
 
 </dd> <dt>
 
-*pBlockerMesh* \[ de\]
+*pBlockerMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a un objeto de malla [**ID3DXMesh**](id3dxmesh.md) opcional que bloquea la escena 3D. Puede ser **null**.
+Puntero a un objeto de malla [**ID3DXMesh**](id3dxmesh.md) opcional que bloquea la escena 3D. Puede ser **NULL.**
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Puntero a un objeto de malla [**ID3DXMesh**](id3dxmesh.md) opcional que bloquea 
 
 Tipo: **[ **LPD3DXPRTENGINE**](id3dxprtengine.md)**
 
-Puntero a un objeto [**ID3DXPRTEngine**](id3dxprtengine.md) de salida.
+Puntero a un objeto [**ID3DXPRTEngine de**](id3dxprtengine.md) salida.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Puntero a un objeto [**ID3DXPRTEngine**](id3dxprtengine.md) de salida.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Observaciones
 
-Use [**D3DXConcatenateMeshes**](d3dxconcatenatemeshes.md) para combinar varias mallas en una sola interfaz de malla.
+Use [**D3DXConcatenateMeshes**](d3dxconcatenatemeshes.md) para combinar varias mallas en una única interfaz de malla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,16 +105,16 @@ Use [**D3DXConcatenateMeshes**](d3dxconcatenatemeshes.md) para combinar varias m
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de transferencia Radiance precalculadas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funciones de transferencia de radiancia precalutadas](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> </dl>
 
  

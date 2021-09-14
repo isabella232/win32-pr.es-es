@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e2a6480823062863eb2dbdbce76a925585401d7f2f4d62bf562c42e9a39d162d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 618cadca1fbc31397aa136b035efdb903f0aa7f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361230"
 ---
 # <a name="jet_index_columntostring-method"></a>JET_INDEX_COLUMN. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el objeto [JET_INDEX_COLUMN](./jet-index-column-class.md).
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_INDEX_COLUMN](./jet-index-column-class.md).
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -59,7 +59,7 @@ public override string ToString()
 Tipo: [System.String](/dotnet/api/system.string)  
 Cadena [que](/dotnet/api/system.string) representa el objeto [JET_INDEX_COLUMN](./jet-index-column-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4a3a778c2d82be7cdc4cc34ebbb57566b241211b3f25b5a1d970faac5493ef1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c39faa22cb71b74247fc073daf22fa8a21580a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118008426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255734"
 ---
 # <a name="win32_pnpdevicepropertysint8array-class"></a>Clase \_ PnPDevicePropertySint8Array de Win32
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertySint8Array : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PnPDevicePropertySint8Array de Win32** tiene estos tipos de miembros:
 
@@ -57,7 +57,7 @@ La **clase \_ PnPDevicePropertySint8Array de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
-**Datos**
+**Data**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **matriz Sint8**
@@ -512,7 +512,7 @@ Los valores posibles son.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

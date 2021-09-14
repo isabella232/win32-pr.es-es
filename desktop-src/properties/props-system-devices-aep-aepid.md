@@ -4,12 +4,12 @@ ms.assetid: ff9a1588-2dde-4c43-a808-3368877a44a7
 title: System.Devices.Aep.AepId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e64826232734e9d68166d4d5a3d4561520aadb90f51e89fbed16bafb8a292904
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e55b03c9cb39551288acd391e064d1f414da2bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361086"
 ---
 # <a name="systemdevicesaepaepid"></a>System.Devices.Aep.AepId
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

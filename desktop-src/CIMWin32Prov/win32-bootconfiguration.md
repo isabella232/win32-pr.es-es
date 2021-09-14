@@ -1,5 +1,5 @@
 ---
-description: La clase WMI BootConfiguration de Win32 \_ representa la configuración de arranque de un sistema informático que ejecuta Windows.
+description: La clase WMI BootConfiguration de Win32 representa la configuración de arranque de un \_ sistema informático que ejecuta Windows.
 ms.assetid: c2db28dd-3feb-44bb-a532-c91cab980ba3
 ms.tgt_platform: multiple
 title: Win32_BootConfiguration clase
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: db18b6ebbd7ccc9e87bffb06cd2b40647e4a9509edc1c27779a0b55efc36b7e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 556688d7c80038f04dd5b94b7c61c5d6dfef3199
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119546525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255740"
 ---
 # <a name="win32_bootconfiguration-class"></a>Clase BootConfiguration de Win32 \_
 
-La clase WMI **\_ BootConfiguration** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa la configuración de arranque de un sistema informático que ejecuta Windows.
+La **clase WMI \_ BootConfiguration** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa la configuración de arranque de un sistema informático que ejecuta Windows.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -54,7 +54,7 @@ class Win32_BootConfiguration : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ BootConfiguration de Win32** tiene estos tipos de miembros:
 
@@ -98,7 +98,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
-Nombre de la configuración de arranque. Es un identificador de la configuración de arranque.
+Nombre de la configuración de arranque. Es un identificador para la configuración de arranque.
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -219,13 +219,13 @@ Ejemplo: "C: \\ TEMP"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ BootConfiguration de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo Enumerar las propiedades de configuración de arranque](https://Gallery.TechNet.Microsoft.Com/55c35de3-bb6a-47f0-89f9-d2c49ab4cf19) de un equipo Perl devuelve información de configuración de arranque para un equipo.
+El [ejemplo Enumerar las propiedades de configuración de arranque](https://Gallery.TechNet.Microsoft.Com/55c35de3-bb6a-47f0-89f9-d2c49ab4cf19) de un equipo perl devuelve información de configuración de arranque para un equipo.
 
 El siguiente ejemplo de VBScript devuelve información de configuración de arranque para un equipo.
 
@@ -253,7 +253,7 @@ Next
 
 
 
-En el ejemplo de código siguiente se muestra el uso de la clase WMI **\_ BootConfiguration de Win32.**
+En el ejemplo de código siguiente se muestra el uso de la **clase \_ WMI BootConfiguration de Win32.**
 
 
 ```PowerShell
@@ -274,7 +274,7 @@ $boot = Get-WMIObject Win32_BootConfiguration
 
 
 
-El ejemplo de código anterior crea la salida siguiente:
+El ejemplo de código anterior crea la siguiente salida:
 
 ``` syntax
 Boot Directory     : \WINDOWS
@@ -289,7 +289,7 @@ Temp Directory     : C:\WINDOWS\system32\config\systemprofile\Local Settings\Tem
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -299,7 +299,7 @@ Temp Directory     : C:\WINDOWS\system32\config\systemprofile\Local Settings\Tem
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -8,12 +8,12 @@ keywords:
 - ASF (formato de sistemas avanzados), extensiones de nombre de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ccd8c3b1b4ba27aa7360296fc336625cb0f51c4374bb77c06d349cb70a987c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bed1fb59379644711a3954dc5eb82707e0e42f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118704008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256317"
 ---
 # <a name="file-name-extension-guidelines"></a>Instrucciones de extensión de nombre de archivo
 
@@ -23,7 +23,7 @@ La extensión de nombre de archivo que debe usar para un archivo creado por una 
 
 Si el archivo contiene secuencias codificadas con códecs de terceros o datos no comprimidos no admitidos (incluidos datos arbitrarios), el archivo debe usar la extensión .asf.
 
-Si el archivo no contiene secuencias no admitidas y contiene una o varias secuencias de vídeo sin comprimir o codificadas con cualquier códec de vídeo de Windows Media, el archivo debe usar la extensión .wmv. Estos archivos también pueden incluir secuencias de audio PCM, secuencia Windows s de audio codificadas con cualquier códec de audio multimedia, secuencias de script y secuencias web.
+Si el archivo no contiene secuencias no admitidas y contiene una o varias secuencias de vídeo sin comprimir o codificadas con cualquier códec de vídeo multimedia de Windows, el archivo debe usar la extensión .wmv. Estos archivos también pueden incluir secuencias de audio PCM, secuencia Windows s de audio codificadas con cualquier códec de audio multimedia, secuencias de script y secuencias web.
 
 Si el archivo no contiene secuencias no admitidas ni secuencias de vídeo admitidas, y contiene una o varias secuencias de audio PCM sin comprimir o codificadas con cualquier códec de audio multimedia de Windows, el archivo debe usar la extensión .wma. Estos archivos también pueden contener secuencias de script y secuencias web.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7bec167a7afc438b73516feacd95fb3fea180efa6806788010d399638a474a55
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 91aaf2924638b1db5b0e8ec0782b90fa964a9543
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119241495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361278"
 ---
 # <a name="d3dxassembleshaderfromfile-function"></a>Función D3DXAssembleShaderFromFile
 
@@ -50,7 +50,7 @@ HRESULT D3DXAssembleShaderFromFile(
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -105,9 +105,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXAssembleShaderFromFileW. De lo contrario, la llamada de función se resuelve en D3DXAssembleShaderFromFileA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXAssembleShaderFromFileW. De lo contrario, la llamada de función se resuelve en D3DXAssembleShaderFromFileA porque se usan cadenas ANSI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ La configuración del compilador también determina la versión de la función. 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

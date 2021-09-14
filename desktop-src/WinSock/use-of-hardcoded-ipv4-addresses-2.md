@@ -4,12 +4,12 @@ ms.assetid: adb39f27-c219-43cd-9e86-b2d3b663c79c
 title: Uso de direcciones IPv4 codificadas de forma rígida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f0506f200776402464c4b2904435157c435ece7fc2c6d9e0b10bfd1c1d66491
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8205840b1c79afcaf375b81f3223a1c780cc03d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120121205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361309"
 ---
 # <a name="use-of-hardcoded-ipv4-addresses"></a>Uso de direcciones IPv4 codificadas de forma rígida
 
@@ -36,7 +36,7 @@ La *Checkv4.exe* puede ayudarle a encontrar cadenas literales comunes, pero pued
 
 <dl> <dt>
 
-[Guía de IPv6 para Windows sockets](ipv6-guide-for-windows-sockets-applications-2.md)
+[Guía de IPv6 para aplicaciones Windows Sockets](ipv6-guide-for-windows-sockets-applications-2.md)
 </dt> <dt>
 
 [Cambio de estructuras de datos para aplicaciones Winsock de IPv6](changing-data-structures-2.md)

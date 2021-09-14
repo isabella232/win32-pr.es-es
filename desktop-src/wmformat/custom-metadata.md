@@ -13,12 +13,12 @@ keywords:
 - IWMHeaderInfo3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdbbc9fdfc07500e43a3a3875bbb62a77ed176df7a1607a6cb902cef24160e9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a795ab184e5bd6120278f61c0d3654679fd79c28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119809455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256346"
 ---
 # <a name="custom-metadata"></a>Metadatos personalizados
 

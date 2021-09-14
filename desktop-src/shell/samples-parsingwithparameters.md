@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 5a559732a5a5b2b669402e2e0526dce1a08e37e4bfa31ba97cb41930a15b6cd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9d14b3aa5386f187b2f6cdf0a5d435e2e57d31e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118219841"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361040"
 ---
 # <a name="parsing-with-parameters-sample"></a>Ejemplo de análisis con parámetros
 
@@ -34,7 +34,7 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
-| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
 
 
 
@@ -44,7 +44,7 @@ Para obtener requisitos adicionales, consulte el archivo Léame incluido con el 
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo ParsingWithParameters](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ParsingWithParameters) |
 

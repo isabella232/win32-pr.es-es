@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c2fda8dc1c857bea9e217ac5e4a2b6cde0b6ccb199c60204121aa62e900ee8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8e07974477bf7f265eef9a488e2bbfd8ddd0027
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119086005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360952"
 ---
-# <a name="drm_licensestate_copytosdmidevice"></a>DRM \_ LicenseState \_ CopyToSDMIDevice
+# <a name="drm_licensestate_copytosdmidevice"></a>\_LicenseState \_ CopyToSDMIDevice de DRM
 
 La **propiedad \_ LicenseState \_ CopyToSDMIDevice** de DRM contiene una estructura [**WM LICENSE STATE \_ \_ \_ DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
 
@@ -31,7 +31,7 @@ g \_ wszWMDRM \_ LicenseState \_ CopyToSDMIDevice
 
 **BINARIO DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 

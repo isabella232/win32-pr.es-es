@@ -4,12 +4,12 @@ ms.assetid: 85795cdd-5a4f-4199-98bd-b5ce2299338b
 title: Transaccional frente a aplicaciones de streaming
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f0e55a21ba552ed768b29b784a557633edfc5734ec266893ede04fded76e538
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a000f3aa9c52fe6ce60622a613d6f4b9689b8bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118559506"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361318"
 ---
 # <a name="transactional-versus-streaming-applications"></a>Transaccional frente a aplicaciones de streaming
 

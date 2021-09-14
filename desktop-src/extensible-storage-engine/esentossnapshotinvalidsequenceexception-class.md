@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d4b77af3e2881fb1ec134114154c956e80a033354cae7995a800f87e09a397a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8de0731ab72e313ad6a6563e06d6204d196ffea7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117898810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127373890"
 ---
 # <a name="esentossnapshotinvalidsequenceexception-class"></a>Clase EsentOSSnapshotInvalidSequenceException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones de OSSnapshotInvalidSequence.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

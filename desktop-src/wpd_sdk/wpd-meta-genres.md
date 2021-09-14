@@ -1,5 +1,5 @@
 ---
-description: El tipo de \_ enumeración WPD META \_ GENRES describe un amplio tipo de género de un archivo multimedia.
+description: El tipo de \_ enumeración WPD META \_ GENRES describe un tipo de género amplio de un archivo multimedia.
 ms.assetid: a69cab70-5a45-4e75-abbd-230396c2b5ec
 title: WPD_META_GENRES enumeración (PortableDevice.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 679bc47e2e8439c7f4cd5c3bcf26e6d6897910cfbfcaaaae3fe6dec6c9e0b8f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f6ff4875474776df1e2436e0209e6d863f5b3e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118696525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256070"
 ---
-# <a name="wpd_meta_genres-enumeration"></a>Enumeración \_ META \_ GENRES de WPD
+# <a name="wpd_meta_genres-enumeration"></a>Enumeración \_ WPD META \_ GENRES
 
-El **tipo de \_ enumeración WPD META \_ GENRES** describe un amplio tipo de género de un archivo multimedia.
+El **tipo de \_ enumeración WPD META \_ GENRES** describe un tipo de género amplio de un archivo multimedia.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -64,31 +64,31 @@ El género no se ha establecido o no es aplicable.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_GENERIC_MUSIC_AUDIO_FILE"></span><span id="wpd_meta_genre_generic_music_audio_file"></span>**ARCHIVO DE \_ AUDIO DE MÚSICA \_ \_ \_ GENÉRICO \_ \_ WPD META GENRE**
+<span id="WPD_META_GENRE_GENERIC_MUSIC_AUDIO_FILE"></span><span id="wpd_meta_genre_generic_music_audio_file"></span>**ARCHIVO DE AUDIO GENÉRICO DE MÚSICA \_ WPD META \_ GENRE \_ \_ \_ \_**
 </dt> <dd>
 
 Se trata de un archivo de música genérico (solo audio).
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_GENERIC_NON_MUSIC_AUDIO_FILE"></span><span id="wpd_meta_genre_generic_non_music_audio_file"></span>**ARCHIVO DE AUDIO GENÉRICO NO MUSIC \_ DE META \_ GENRE \_ \_ \_ \_ DE WPD \_**
+<span id="WPD_META_GENRE_GENERIC_NON_MUSIC_AUDIO_FILE"></span><span id="wpd_meta_genre_generic_non_music_audio_file"></span>**ARCHIVO DE AUDIO GENÉRICO \_ NO MUSIC DE WPD META \_ \_ \_ \_ \_ \_ GENRE**
 </dt> <dd>
 
-Se trata de un archivo de audio genérico que no es de música, por ejemplo, un audiolibrón o voz.
+Se trata de un archivo de audio genérico que no es de música, por ejemplo, un audiolibrón de voz o audio.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_SPOKEN_WORD_AUDIO_BOOK_FILES"></span><span id="wpd_meta_genre_spoken_word_audio_book_files"></span>**ARCHIVOS DE \_ AUDIOLIBROS \_ DE PALABRAS \_ \_ HABLADAS DE \_ META-GÉNERO \_ \_ WPD**
+<span id="WPD_META_GENRE_SPOKEN_WORD_AUDIO_BOOK_FILES"></span><span id="wpd_meta_genre_spoken_word_audio_book_files"></span>**ARCHIVOS DE \_ AUDIOLIBROS DE PALABRAS HABLADAS DE META GENRE \_ \_ \_ \_ \_ WPD \_**
 </dt> <dd>
 
-Se trata de un archivo de audiolibros.
+Se trata de un archivo de audiolibrón.
 
 </dd> <dt>
 
 <span id="WPD_META_GENRE_SPOKEN_WORD_FILES_NON_AUDIO_BOOK"></span><span id="wpd_meta_genre_spoken_word_files_non_audio_book"></span>**WPD \_ META \_ GENRE \_ SPOKEN \_ WORD \_ FILES \_ NON \_ AUDIO \_ BOOK**
 </dt> <dd>
 
-Se trata de un archivo de audio de palabra hablada que no es un audiolibrón, por ejemplo, una charla o una voz.
+Se trata de un archivo de audio de palabra hablada que no es un audiolibrón, por ejemplo, una encuesta o una voz.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Se trata de un archivo de audio o vídeo de noticias.
 <span id="WPD_META_GENRE_SPOKEN_WORD_TALK_SHOWS"></span><span id="wpd_meta_genre_spoken_word_talk_shows"></span>**WPD \_ META \_ GENRE \_ SPOKEN \_ WORD \_ TALK \_ SHOWS**
 </dt> <dd>
 
-Se trata de una grabación de audio de un programa de presentación.
+Se trata de una grabación de audio de un programa de conversación.
 
 </dd> <dt>
 
@@ -113,49 +113,49 @@ Se trata de un archivo de vídeo genérico.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_NEWS_VIDEO_FILE"></span><span id="wpd_meta_genre_news_video_file"></span>**ARCHIVO DE \_ VÍDEO DE NOTICIAS DE GÉNERO META \_ \_ \_ \_ WPD**
+<span id="WPD_META_GENRE_NEWS_VIDEO_FILE"></span><span id="wpd_meta_genre_news_video_file"></span>**ARCHIVO DE \_ VÍDEO DE NOTICIAS DE META GENRE DE \_ \_ \_ \_ WPD**
 </dt> <dd>
 
 Se trata de un archivo de vídeo de noticias.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_MUSIC_VIDEO_FILE"></span><span id="wpd_meta_genre_music_video_file"></span>**ARCHIVO DE \_ VÍDEO DE MÚSICA DE META GENRE \_ \_ \_ DE \_ WPD**
+<span id="WPD_META_GENRE_MUSIC_VIDEO_FILE"></span><span id="wpd_meta_genre_music_video_file"></span>**ARCHIVO DE \_ VÍDEO DE MÚSICA DE META GENRE DE \_ \_ \_ \_ WPD**
 </dt> <dd>
 
 Se trata de un archivo de vídeo de música.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_HOME_VIDEO_FILE"></span><span id="wpd_meta_genre_home_video_file"></span>**ARCHIVO DE \_ VÍDEO PRINCIPAL WPD META \_ GENRE \_ \_ \_**
+<span id="WPD_META_GENRE_HOME_VIDEO_FILE"></span><span id="wpd_meta_genre_home_video_file"></span>**ARCHIVO DE \_ VÍDEO PRINCIPAL DE WPD META \_ GENRE \_ \_ \_**
 </dt> <dd>
 
 Se trata de un archivo de vídeo principal.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_FEATURE_FILM_VIDEO_FILE"></span><span id="wpd_meta_genre_feature_film_video_file"></span>**ARCHIVO DE \_ VÍDEO DE LA CARACTERÍSTICA DE GÉNERO \_ \_ META WPD \_ \_ \_**
+<span id="WPD_META_GENRE_FEATURE_FILM_VIDEO_FILE"></span><span id="wpd_meta_genre_feature_film_video_file"></span>**ARCHIVO DE VÍDEO DE LA CARACTERÍSTICA DE GÉNERO DE META \_ \_ \_ \_ WPD \_ \_**
 </dt> <dd>
 
 Se trata de un archivo de vídeo de películas de características.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_TELEVISION_VIDEO_FILE"></span><span id="wpd_meta_genre_television_video_file"></span>**ARCHIVO DE \_ VÍDEO DE TELEVISIÓN \_ \_ WPD \_ META GENRE \_**
+<span id="WPD_META_GENRE_TELEVISION_VIDEO_FILE"></span><span id="wpd_meta_genre_television_video_file"></span>**ARCHIVO DE \_ VÍDEO WPD META \_ GENRE \_ TV \_ \_**
 </dt> <dd>
 
 Se trata de un archivo de vídeo del programa de televisión.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_TRAINING_EDUCATIONAL_VIDEO_FILE"></span><span id="wpd_meta_genre_training_educational_video_file"></span>**ARCHIVO DE VÍDEO EDUCATIVO DE APRENDIZAJE DE META \_ \_ GENRE \_ \_ \_ DE \_ WPD**
+<span id="WPD_META_GENRE_TRAINING_EDUCATIONAL_VIDEO_FILE"></span><span id="wpd_meta_genre_training_educational_video_file"></span>**ARCHIVO DE \_ VÍDEO EDUCATIVO DE APRENDIZAJE DE META GENRE DE \_ \_ \_ \_ \_ WPD**
 </dt> <dd>
 
 Se trata de un archivo de vídeo educativo.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_PHOTO_MONTAGE_VIDEO_FILE"></span><span id="wpd_meta_genre_photo_montage_video_file"></span>**ARCHIVO DE \_ VÍDEO DE MONTAJE DE FOTOS \_ \_ WPD META \_ GENRE \_ \_**
+<span id="WPD_META_GENRE_PHOTO_MONTAGE_VIDEO_FILE"></span><span id="wpd_meta_genre_photo_montage_video_file"></span>**ARCHIVO DE \_ VÍDEO WPD META \_ GENRE PHOTO \_ \_ MONTAGE \_ \_**
 </dt> <dd>
 
 Se trata de un archivo de vídeo que incluye un montaje de fotos.
@@ -169,7 +169,7 @@ Se trata de un archivo sin audio o vídeo.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_AUDIO_PODCAST"></span><span id="wpd_meta_genre_audio_podcast"></span>**PODCAST DE \_ AUDIO WPD META \_ GENRE \_ \_**
+<span id="WPD_META_GENRE_AUDIO_PODCAST"></span><span id="wpd_meta_genre_audio_podcast"></span>**PODCAST DE \_ AUDIO DE WPD META \_ GENRE \_ \_**
 </dt> <dd>
 
 Se trata de un podcast de audio.
@@ -183,16 +183,16 @@ Se trata de un podcast de vídeo.
 
 </dd> <dt>
 
-<span id="WPD_META_GENRE_MIXED_PODCAST"></span><span id="wpd_meta_genre_mixed_podcast"></span>**PODCAST MIXTO \_ DE GÉNERO \_ META \_ WPD \_**
+<span id="WPD_META_GENRE_MIXED_PODCAST"></span><span id="wpd_meta_genre_mixed_podcast"></span>**PODCAST MIXTO \_ DE WPD META \_ \_ GENRE \_**
 </dt> <dd>
 
 Se trata de un podcast que contiene audio y vídeo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La propiedad META [GENRE de WPD MEDIA usa \_ \_ \_ esta](media-properties.md) enumeración.
+Esta enumeración la usa la [propiedad META GENRE \_ \_ \_ de WPD MEDIA.](media-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 

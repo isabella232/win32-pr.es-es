@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103995
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6f5802c42bbf32548e1d42e507013fc0235eafdd1bd989b75f628b43a1b327eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c79440fa5e04acefe54ed271460d6bd11bc57fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118252159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360741"
 ---
 # <a name="jet_tablecreate-properties"></a>JET_TABLECREATE propiedades
 
@@ -65,7 +65,7 @@ El [JET_TABLECREATE](./jet-tablecreate-class.md) expone los miembros siguientes.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351087(v=exchg.10).md">pLVSpacehints</a></td>
-<td>Obtiene o establece sugerencias de asignación, mantenimiento y uso de espacio para el árbol lv separado, de <a href="dn351095(v=exchg.10).md">tipo JET_SPACEHINTS</a>.</td>
+<td>Obtiene o establece sugerencias de asignación, mantenimiento y uso de espacio para el árbol lv <a href="dn351095(v=exchg.10).md">separado,</a>de tipo JET_SPACEHINTS .</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>

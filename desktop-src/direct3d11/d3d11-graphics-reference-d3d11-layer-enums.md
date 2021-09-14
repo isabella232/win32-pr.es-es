@@ -6,12 +6,12 @@ keywords:
 - enumeraciones, Capa 11 de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1af59a6ac6fae73cafdbee3f0d93d019d7a8ee0b472cd979e2ddcaeade387ef4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e1e1cca3fa500a529930c8d0c39005697045d18b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119460905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361282"
 ---
 # <a name="layer-enumerations"></a>Enumeraciones de capas
 

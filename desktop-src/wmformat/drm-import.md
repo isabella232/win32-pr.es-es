@@ -29,16 +29,16 @@ keywords:
 - CPS (sistema de protección de contenido)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 981e601c21dc3ee8f54e256c40453bf24580cf46c261d41ea5dd1d9afa1ffbbf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20fc20cfd682df975c10a8f39785c0e8d69610d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256322"
 ---
 # <a name="drm-import"></a>Importación de DRM
 
-En las secciones siguientes se explica cómo convertir contenido multimedia de un sistema de protección de contenido (CPS) de terceros a DRM Windows Multimedia. Este proceso se conoce como importación de DRM y consta básicamente de los pasos siguientes:
+En las secciones siguientes se explica cómo convertir contenido multimedia de un sistema de protección de contenido (CPS) de terceros a DRM Windows multimedia. Este proceso se conoce como importación de DRM y consta básicamente de los pasos siguientes:
 
 1.  Creación del archivo ASF.
 2.  Creación de la licencia.
@@ -50,7 +50,7 @@ La importación de DRM se explica en las secciones siguientes.
 
 | Sección                                                                              | Descripción                                                                          |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Importar material de clave y licencia](importing-license-and-key-material.md)         | Describe cómo emitir licencias localmente e importarlas en Windows DRM multimedia.      |
+| [Importación de licencias y material de clave](importing-license-and-key-material.md)         | Describe cómo emitir licencias localmente e importarlas en Windows DRM multimedia.      |
 | [Comprobación de la revocación de certificados](checking-certificate-revocation.md)               | Describe cómo comprobar la revocación de certificados.                                       |
 | [Creación de una licencia XMR](building-an-xmr-license.md)                               | Describe cómo crear una licencia XMR y pasarla al subsistema DRM.             |
 | [Creación e inicialización de un sistema de escritura DRM](creating-and-initializing-a-drm-writer.md) | Describe cómo inicializar un objeto de escritor de ASF para prepararse para la importación de DRM.          |

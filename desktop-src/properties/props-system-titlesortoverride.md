@@ -1,19 +1,19 @@
 ---
-description: Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System.Title. Esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar fonéticamente (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
+description: Este valor de cadena opcional permite reemplazar el criterio de ordenación estándar de System.Title. Esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar de forma fonética (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios no asiáticos, como permitir al usuario quitar artículos con fines de ordenación.
 ms.assetid: 1ed18c7f-2dde-4347-a53c-30dfacbabb40
 title: System.TitleSortOverride
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faf55520b4085fec55e668bb44dec259d5e8e43077b3438a247661c1c2999776
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a83713f5cd2f741d52c19303dee1bb4d2026163c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119945025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361071"
 ---
 # <a name="systemtitlesortoverride"></a>System.TitleSortOverride
 
-Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System.Title. Esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar fonéticamente (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
+Este valor de cadena opcional permite reemplazar el criterio de ordenación estándar de System.Title. Esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar de forma fonética (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios no asiáticos, como permitir al usuario quitar artículos con fines de ordenación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDiskException (SerializationInfo, StreamingContext)'
-title: Constructor EsentDiskException (SerializationInfo, StreamingContext)
+description: 'Más información sobre: Constructor EsentDiskException (SerializationInfo, StreamingContext)'
+title: EsentDiskException constructor (SerializationInfo, StreamingContext)
 TOCTitle: EsentDiskException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDiskException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdiskexception.esentdiskexception(v=EXCHG.10)
@@ -21,18 +21,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: c4abe19b16d9e6eb6d94d5b4fe1dd067b68c2c7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361506"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258380"
 ---
-# <a name="esentdiskexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentDiskException (SerializationInfo, StreamingContext)
+# <a name="esentdiskexception-constructor-serializationinfo-streamingcontext"></a>EsentDiskException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentDiskException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentDiskException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,18 +59,18 @@ protected EsentDiskException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -78,6 +78,6 @@ protected EsentDiskException(
 
 [Miembros de EsentDiskException](./esentdiskexception-members.md)
 
-[Sobrecarga EsentDiskException](./esentdiskexception-constructor.md)
+[Sobrecarga de EsentDiskException](./esentdiskexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

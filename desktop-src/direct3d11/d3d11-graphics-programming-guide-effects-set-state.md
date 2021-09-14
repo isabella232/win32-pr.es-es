@@ -4,12 +4,12 @@ description: Solo es necesario inicializar algunas constantes de efecto. Consult
 ms.assetid: f94ba82e-fc67-4e4d-a49d-20e1163bdff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa27e817299df9398bd6fa1752e636162d9b97f7b886a372b71c5d0845dff41
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 65c64f9e642e867e9398722d4590a4c2ce9193b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361289"
 ---
 # <a name="set-effect-state-direct3d-11"></a>Establecer el estado del efecto (Direct3D 11)
 

@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 81b9758932c2374cafd6241e67d3ec37aa883ee1
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361234"
 ---
 # <a name="jet_dateserial"></a>JET_DATESERIAL
 
@@ -39,7 +39,7 @@ El **JET_DATESERIAL** de datos representa una fecha en fracciones de días desde
 
 JET_DATESERIAL
 
-Contiene un número de punto flotante de precisión doble (8 bytes). Esto es igual que el tipo [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) de C++.
+Contiene un número de punto flotante de precisión doble (8 bytes). Esto es lo mismo que el tipo [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) de C++.
 
 ### <a name="requirements"></a>Requisitos
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 30aa7c12c9877414733666fdb9771eed43b9ae7b935f1a4951eb6e39f48be7a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 193acd73388640123ef0471d8391cb05e44cd4aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118270628"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361254"
 ---
 # <a name="esentdeletebackupfilefailexception-class"></a>Clase EsentDeleteBackupFileFailException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. DeleteBackupFileFail exceptions.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

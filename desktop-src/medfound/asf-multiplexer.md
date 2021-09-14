@@ -4,12 +4,12 @@ ms.assetid: 007a6da5-47cf-476a-b0f7-566a68ad19ce
 title: Multiplexor de ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86e1577f005004dbbe6bbb27e1ce7af346e56e134aff2b3201f5670175b015c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 362a1e0be72e8bc516e37ec83c36446177816f53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361190"
 ---
 # <a name="asf-multiplexer"></a>Multiplexor de ASF
 

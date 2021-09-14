@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 31593dda35e7fa33540faa3c954f1901e1afa227372b25326c0f36154d443153
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8b18e56c24fd0f3d3f86f217f547d626b74ded0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839737"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256238"
 ---
 # <a name="iwmdrmsecurity-interface"></a>Interfaz IWMDRMSecurity
 
@@ -27,7 +27,7 @@ La **interfaz IWMDRMSecurity** administra una variedad de información relaciona
 
 Para obtener una instancia de esta interfaz, llame [**a IWMDRMProvider::CreateObject**](iwmdrmprovider-createobject.md). Pase **IID \_ IWMDRMSecurity como** parámetro *riid.*
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IWMDRMSecurity** hereda de [**IWMDRMEventGenerator**](iwmdrmeventgenerator.md). **IWMDRMSecurity también** tiene estos tipos de miembros:
 
@@ -48,14 +48,14 @@ La **interfaz IWMDRMSecurity** tiene estos métodos.
 | [**GetRevocationData**](iwmdrmsecurity-getrevocationdata.md)                               | Recupera una lista de revocación de certificados del almacén local.<br/>                                         |
 | [**GetRevocationDataVersion**](iwmdrmsecurity-getrevocationdataversion.md)                 | Recupera el número de versión de una lista de revocación de certificados en el almacén local.<br/>                     |
 | [**GetSecurityVersion**](iwmdrmsecurity-getsecurityversion.md)                             | Recupera la versión del subsistema DRM en el equipo cliente.<br/>                                    |
-| [**PerformSecurityUpdate**](iwmdrmsecurity-performsecurityupdate.md)                       | Inicia una actualización de seguridad del subsistema DRM en el equipo cliente.<br/>                              |
+| [**PerformSecurityUpdate**](iwmdrmsecurity-performsecurityupdate.md)                       | Inicia una actualización de seguridad en el subsistema DRM en el equipo cliente.<br/>                              |
 | [**SetRevocationData**](iwmdrmsecurity-setrevocationdata.md)                               | Establece una lista de revocación de certificados en el almacén local.<br/>                                                |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

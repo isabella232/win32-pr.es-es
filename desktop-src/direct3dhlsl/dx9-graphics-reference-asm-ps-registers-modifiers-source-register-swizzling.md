@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2c0357a902c793165149da5c853ac953cf5989f8a472fe936c6c2b95cb9e3197
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ffc655129740f112a3ade9eb40c0bbe29dfc1fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118090118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360794"
 ---
 # <a name="source-register-swizzling-hlsl-ps-reference"></a>Swling del registro de origen (referencia de HLSL PS)
 
@@ -22,12 +22,12 @@ Swling hace referencia a la capacidad de copiar cualquier componente de registro
 
 ## <a name="source-swizzling"></a>Swling de origen
 
-El swzzle de origen permite que un componente individual de un registro de origen tome el valor de cualquiera de los cuatro componentes del mismo registro de origen antes de leer el registro para el cálculo.
+El swzzle de origen permite que un componente individual de un registro de origen tome el valor de cualquiera de los cuatro componentes del mismo registro de origen antes de que se lea el registro para el cálculo.
 
-Por ejemplo, el swzzle .zxxy significa:
+Por ejemplo, el swxxxxxxle .zxxy significa:
 
 -   El componente .x asumirá el valor del componente .z.
--   El componente .y asumirá el valor del componente .x.
+-   El componente .y asumirá el valor del componente .x
 -   El componente .z asumirá el valor del componente .x.
 -   El componente .w asumirá el valor del componente .y
 
@@ -68,11 +68,11 @@ Algunas instrucciones tienen restricciones para el swzzle de origen. Se enumeran
 
 ## <a name="arbitrary-swizzle"></a>Swzzle arbitrario
 
-Se pueden aplicar swzzles a los registros de origen en un orden arbitrario; Es decir, cualquier registro de origen puede tomar cualquier máscara de componente, en cualquier orden.
+Los swzzles se pueden aplicar a los registros de origen en un orden arbitrario; es decir, cualquier registro de origen puede tomar cualquier máscara de componente, en cualquier orden.
 
 ## <a name="replicate-swizzle"></a>Replicación de Swzzle
 
-Replicar swzzle copia un componente en otro. Es decir, debe especificarse exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes).
+Replicar swzzle copia un componente en otro. Es decir, se debe especificar exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes).
 
 ## <a name="related-topics"></a>Temas relacionados
 

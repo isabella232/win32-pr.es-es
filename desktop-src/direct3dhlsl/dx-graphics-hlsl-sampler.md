@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 237880ab84bedc1671fdbf0eaa87e08ad0ba85ce
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880611"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360808"
 ---
 # <a name="sampler-type"></a>Tipo de sampler
 
@@ -101,7 +101,7 @@ Diferencias entre Direct3D 9 y Direct3D 10 y versiones posteriores:
 
 </dd> <dt>
 
-<span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Textura* = <*variable de \_ textura>;*
+<span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Textura* = <*variable de textura \_>;*
 </dt> <dd>
 
 Solo Direct3D 9. Variable de textura. La *palabra clave Texture* es necesaria en el lado izquierdo; el nombre de la variable pertenece al lado derecho de la expresión entre corchetes angulares.
@@ -136,7 +136,7 @@ El lado derecho de cada expresión es el valor asignado a cada estado. Consulte 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al implementar un efecto, el estado del muestreador es uno de varios tipos de estado que es posible que tenga que configurar en la canalización para la representación. Para obtener una lista de todos los estados posibles que puede establecer en un efecto, vea:
 

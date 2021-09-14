@@ -34,12 +34,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a2453c1cb1009da0b097065686cd0ae4d23707febae8a9f6b01d9203d4579257
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dcf9eea51d3a65ad07879cca3e47ae79bde92d53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119816435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255638"
 ---
 # <a name="win32_portconnector-class"></a>Clase PortConnector de Win32 \_
 
@@ -76,7 +76,7 @@ class Win32_PortConnector : CIM_PhysicalConnector
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PortConnector de Win32** tiene estos tipos de miembros:
 
@@ -253,14 +253,14 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="ATA_3-1_2_Inch__40_pins_"></span><span id="ata_3-1_2_inch__40_pins_"></span><span id="ATA_3-1_2_INCH__40_PINS_"></span>
 
-<span id="ATA_3-1_2_Inch__40_pins_"></span><span id="ata_3-1_2_inch__40_pins_"></span><span id="ATA_3-1_2_INCH__40_PINS_"></span>**ATA de 3 a 1/2 pulgadas (40 pines)** (16)
+<span id="ATA_3-1_2_Inch__40_pins_"></span><span id="ata_3-1_2_inch__40_pins_"></span><span id="ATA_3-1_2_INCH__40_PINS_"></span>**ATA de 3-1/2 pulgadas (40 pines)** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATA_2-1_2_Inch__44_pins_"></span><span id="ata_2-1_2_inch__44_pins_"></span><span id="ATA_2-1_2_INCH__44_PINS_"></span>
 
-<span id="ATA_2-1_2_Inch__44_pins_"></span><span id="ata_2-1_2_inch__44_pins_"></span><span id="ATA_2-1_2_INCH__44_PINS_"></span>**ATA de 2 a 1/2 pulgadas (44 pines)** (17)
+<span id="ATA_2-1_2_Inch__44_pins_"></span><span id="ata_2-1_2_inch__44_pins_"></span><span id="ATA_2-1_2_INCH__44_PINS_"></span>**ATA de 2-1/2 pulgadas (44 pines)** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -379,21 +379,21 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="UTP_Category_3"></span><span id="utp_category_3"></span><span id="UTP_CATEGORY_3"></span>
 
-<span id="UTP_Category_3"></span><span id="utp_category_3"></span><span id="UTP_CATEGORY_3"></span>**Categoría UTP 3** (34)
+<span id="UTP_Category_3"></span><span id="utp_category_3"></span><span id="UTP_CATEGORY_3"></span>**Categoría 3 de UTP** (34)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UTP_Category_4"></span><span id="utp_category_4"></span><span id="UTP_CATEGORY_4"></span>
 
-<span id="UTP_Category_4"></span><span id="utp_category_4"></span><span id="UTP_CATEGORY_4"></span>**Categoría UTP 4** (35)
+<span id="UTP_Category_4"></span><span id="utp_category_4"></span><span id="UTP_CATEGORY_4"></span>**Categoría 4 de UTP** (35)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UTP_Category_5"></span><span id="utp_category_5"></span><span id="UTP_CATEGORY_5"></span>
 
-<span id="UTP_Category_5"></span><span id="utp_category_5"></span><span id="UTP_CATEGORY_5"></span>**Categoría UTP 5** (36)
+<span id="UTP_Category_5"></span><span id="utp_category_5"></span><span id="UTP_CATEGORY_5"></span>**Categoría 5 de UTP** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -421,7 +421,7 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="Fiber_MIC"></span><span id="fiber_mic"></span><span id="FIBER_MIC"></span>
 
-<span id="Fiber_MIC"></span><span id="fiber_mic"></span><span id="FIBER_MIC"></span>**Mic de** fibra (40)
+<span id="Fiber_MIC"></span><span id="fiber_mic"></span><span id="FIBER_MIC"></span>**MIC de** fibra (40)
 
 
 </dt> <dd></dd> <dt>
@@ -477,7 +477,7 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="PCMCIA_Type_I"></span><span id="pcmcia_type_i"></span><span id="PCMCIA_TYPE_I"></span>
 
-<span id="PCMCIA_Type_I"></span><span id="pcmcia_type_i"></span><span id="PCMCIA_TYPE_I"></span>**PCMCIA, tipo I** (48)
+<span id="PCMCIA_Type_I"></span><span id="pcmcia_type_i"></span><span id="PCMCIA_TYPE_I"></span>**PCMCIA tipo I** (48)
 
 
 </dt> <dd></dd> <dt>
@@ -491,7 +491,7 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="PCMCIA_Type_III"></span><span id="pcmcia_type_iii"></span><span id="PCMCIA_TYPE_III"></span>
 
-<span id="PCMCIA_Type_III"></span><span id="pcmcia_type_iii"></span><span id="PCMCIA_TYPE_III"></span>**PCMCIA Type III** (50)
+<span id="PCMCIA_Type_III"></span><span id="pcmcia_type_iii"></span><span id="PCMCIA_TYPE_III"></span>**PCMCIA tipo III** (50)
 
 
 </dt> <dd></dd> <dt>
@@ -547,21 +547,21 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="DIN"></span><span id="din"></span>
 
-<span id="DIN"></span><span id="din"></span>**DIN** (58)
+<span id="DIN"></span><span id="din"></span>**ENTRELAZ** (58)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-DIN"></span><span id="mini-din"></span><span id="MINI-DIN"></span>
 
-<span id="Mini-DIN"></span><span id="mini-din"></span><span id="MINI-DIN"></span>**Mini-DIN** (59)
+<span id="Mini-DIN"></span><span id="mini-din"></span><span id="MINI-DIN"></span>**Mini-LORÓN** (59)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Micro-DIN"></span><span id="micro-din"></span><span id="MICRO-DIN"></span>
 
-<span id="Micro-DIN"></span><span id="micro-din"></span><span id="MICRO-DIN"></span>**Micro-DIN** (60)
+<span id="Micro-DIN"></span><span id="micro-din"></span><span id="MICRO-DIN"></span>**Micro-PROCESADOR** (60)
 
 
 </dt> <dd></dd> <dt>
@@ -575,14 +575,14 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>
 
-<span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>**Desarroba** (62)
+<span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>**Insondes** (62)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HP-HIL"></span><span id="hp-hil"></span>
 
-<span id="HP-HIL"></span><span id="hp-hil"></span>**HP-UNO** (63)
+<span id="HP-HIL"></span><span id="hp-hil"></span>**HP-SUS** (63)
 
 
 </dt> <dd></dd> <dt>
@@ -610,28 +610,28 @@ Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnecto
 
 <span id="Mini-Centronics"></span><span id="mini-centronics"></span><span id="MINI-CENTRONICS"></span>
 
-<span id="Mini-Centronics"></span><span id="mini-centronics"></span><span id="MINI-CENTRONICS"></span>**Minicentros** (67)
+<span id="Mini-Centronics"></span><span id="mini-centronics"></span><span id="MINI-CENTRONICS"></span>**Minicentronics** (67)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-14"></span><span id="mini-centronics_type-14"></span><span id="MINI-CENTRONICS_TYPE-14"></span>
 
-<span id="Mini-Centronics_Type-14"></span><span id="mini-centronics_type-14"></span><span id="MINI-CENTRONICS_TYPE-14"></span>**Mini-Centronics Type-14** (68)
+<span id="Mini-Centronics_Type-14"></span><span id="mini-centronics_type-14"></span><span id="MINI-CENTRONICS_TYPE-14"></span>**Minicentronics type-14** (68)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-20"></span><span id="mini-centronics_type-20"></span><span id="MINI-CENTRONICS_TYPE-20"></span>
 
-<span id="Mini-Centronics_Type-20"></span><span id="mini-centronics_type-20"></span><span id="MINI-CENTRONICS_TYPE-20"></span>**Mini-Centronics Type-20** (69)
+<span id="Mini-Centronics_Type-20"></span><span id="mini-centronics_type-20"></span><span id="MINI-CENTRONICS_TYPE-20"></span>**Minicentronics type-20** (69)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-26"></span><span id="mini-centronics_type-26"></span><span id="MINI-CENTRONICS_TYPE-26"></span>
 
-<span id="Mini-Centronics_Type-26"></span><span id="mini-centronics_type-26"></span><span id="MINI-CENTRONICS_TYPE-26"></span>**Minicentronics tipo 26** (70)
+<span id="Mini-Centronics_Type-26"></span><span id="mini-centronics_type-26"></span><span id="MINI-CENTRONICS_TYPE-26"></span>**Mini-Centronics Type-26** (70)
 
 
 </dt> <dd></dd> <dt>
@@ -772,7 +772,7 @@ SSA SCSI
 
 <span id="On_Board_Floppy"></span><span id="on_board_floppy"></span><span id="ON_BOARD_FLOPPY"></span>
 
-<span id="On_Board_Floppy"></span><span id="on_board_floppy"></span><span id="ON_BOARD_FLOPPY"></span>**Disquete de abordo** (89)
+<span id="On_Board_Floppy"></span><span id="on_board_floppy"></span><span id="ON_BOARD_FLOPPY"></span>**Disquete abordo** (89)
 
 
 </dt> <dd>
@@ -783,45 +783,45 @@ Circular
 
 <span id="9_Pin_Dual_Inline__pin_10_cut_"></span><span id="9_pin_dual_inline__pin_10_cut_"></span><span id="9_PIN_DUAL_INLINE__PIN_10_CUT_"></span>
 
-<span id="9_Pin_Dual_Inline__pin_10_cut_"></span><span id="9_pin_dual_inline__pin_10_cut_"></span><span id="9_PIN_DUAL_INLINE__PIN_10_CUT_"></span>**9 Pin Dual Inline (pin 10 cut)** (90)
+<span id="9_Pin_Dual_Inline__pin_10_cut_"></span><span id="9_pin_dual_inline__pin_10_cut_"></span><span id="9_PIN_DUAL_INLINE__PIN_10_CUT_"></span>**9 Patillas insertada duales (patilla 10 corte)** (90)
 
 
 </dt> <dd>
 
-Conector ide de abordo
+Conector IDE integrado
 
 </dd> <dt>
 
 <span id="25_Pin_Dual_Inline__pin_26_cut_"></span><span id="25_pin_dual_inline__pin_26_cut_"></span><span id="25_PIN_DUAL_INLINE__PIN_26_CUT_"></span>
 
-<span id="25_Pin_Dual_Inline__pin_26_cut_"></span><span id="25_pin_dual_inline__pin_26_cut_"></span><span id="25_PIN_DUAL_INLINE__PIN_26_CUT_"></span>**25 Pin Dual Inline (pin 26 cut)** (91)
+<span id="25_Pin_Dual_Inline__pin_26_cut_"></span><span id="25_pin_dual_inline__pin_26_cut_"></span><span id="25_PIN_DUAL_INLINE__PIN_26_CUT_"></span>**25 pin dual inline (patilla 26 cortar)** (91)
 
 
 </dt> <dd>
 
-Conector de disquete de abordo
+Conector de disquete a la placa
 
 </dd> <dt>
 
 <span id="50_Pin_Dual_Inline"></span><span id="50_pin_dual_inline"></span><span id="50_PIN_DUAL_INLINE"></span>
 
-<span id="50_Pin_Dual_Inline"></span><span id="50_pin_dual_inline"></span><span id="50_PIN_DUAL_INLINE"></span>**50 Pin Dual Inline** (92)
+<span id="50_Pin_Dual_Inline"></span><span id="50_pin_dual_inline"></span><span id="50_PIN_DUAL_INLINE"></span>**Línea doble de 50** patillas (92)
 
 
 </dt> <dd>
 
-9 Pin Dual Inline
+9 anclar doble en línea
 
 </dd> <dt>
 
 <span id="68_Pin__Dual_Inline"></span><span id="68_pin__dual_inline"></span><span id="68_PIN__DUAL_INLINE"></span>
 
-<span id="68_Pin__Dual_Inline"></span><span id="68_pin__dual_inline"></span><span id="68_PIN__DUAL_INLINE"></span>**68 Pin Dual Inline** (93)
+<span id="68_Pin__Dual_Inline"></span><span id="68_pin__dual_inline"></span><span id="68_PIN__DUAL_INLINE"></span>**Doble línea de 68 patillas** (93)
 
 
 </dt> <dd>
 
-25 Pin Dual Inline
+Doble conexión de 25 patillas
 
 </dd> <dt>
 
@@ -832,21 +832,21 @@ Conector de disquete de abordo
 
 </dt> <dd>
 
-50 Pin Dual Inline
+Línea doble de 50 patillas
 
 </dd> <dt>
 
 95
 </dt> <dd>
 
-68 Pin Dual Inline
+Línea doble de 68 patillas
 
 </dd> <dt>
 
 96
 </dt> <dd>
 
-Conector de sonido de placa
+Conector de sonido de abordo
 
 </dd> <dt>
 
@@ -867,14 +867,14 @@ PCI-X
 99
 </dt> <dd>
 
-Sbus IEEE 1396-1993 de 32 bits
+Sbus IEEE 1396-1993 32 bits
 
 </dd> <dt>
 
 100
 </dt> <dd>
 
-Sbus IEEE 1396-1993 de 64 bits
+Sbus IEEE 1396-1993 64 bits
 
 </dd> <dt>
 
@@ -888,7 +888,7 @@ MCA
 102
 </dt> <dd>
 
-Gio
+GIO
 
 </dd> <dt>
 
@@ -902,14 +902,14 @@ XIO
 104
 </dt> <dd>
 
-Hio
+HIO
 
 </dd> <dt>
 
 105
 </dt> <dd>
 
-N ENTRELAZ
+N HAN
 
 </dd> <dt>
 
@@ -923,7 +923,7 @@ PMC
 107
 </dt> <dd>
 
-Mtrj
+MTRJ
 
 </dd> <dt>
 
@@ -979,7 +979,7 @@ Cinta de opciones
 115
 </dt> <dd>
 
-Glm
+GLM
 
 </dd> <dt>
 
@@ -1036,12 +1036,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ Clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -1111,7 +1111,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Designador de referencia interno de tipo SMBIOS \| \| 8")
 </dt> </dl>
 
-Designador de referencia interno del puerto. Los designadores de referencia internos son específicos del fabricante e identifican la ubicación de la placa de circuitos o el uso del puerto.
+Designador de referencia interno del puerto. Los designadores de referencia internos son específicos del fabricante e identifican la ubicación de la placa de circuito o el uso del puerto.
 
 Ejemplo: "J101"
 
@@ -1131,7 +1131,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Nombre de la organización responsable de generar el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -1149,7 +1149,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Nombre del elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -1182,11 +1182,11 @@ Tipo de acceso: solo lectura
 
 Datos adicionales, más allá de la información de etiquetas de recurso, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento que también tiene una etiqueta de recurso. Si solo hay datos de código de barras disponibles y únicos o se pueden usar como clave de elemento, esta propiedad es **NULL** y los datos del código de barras se usan como clave de clase en la propiedad de etiqueta.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
-**Partnumber**
+**PartNumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -1200,7 +1200,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Número de pieza asignado por la organización responsable de producir o fabricación del elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -1471,7 +1471,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el elemento físico está encendido.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -1489,7 +1489,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Número asignado por el fabricante que se usa para identificar un elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -1507,7 +1507,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Número de unidad de mantenimiento de existencias para un elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -1523,7 +1523,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1554,7 +1554,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -1568,14 +1568,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1631,7 +1631,7 @@ Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/sta
 
 Identificador único de una conexión de puerto en el sistema del equipo.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 Ejemplo: "Conector de puerto 1"
 
@@ -1651,19 +1651,19 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Versión del elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ PortConnector de Win32** se deriva de [**CIM \_ PhysicalConnector.**](cim-physicalconnector.md)
+La **clase \_ PortConnector de Win32** se deriva de [**CIM \_ PhysicalConnector**](cim-physicalconnector.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1673,7 +1673,7 @@ La **clase \_ PortConnector de Win32** se deriva de [**CIM \_ PhysicalConnector.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-title: Source Register Negate
+title: Negate del registro de origen
 description: Realiza un negate (y -x) en todos los componentes de registro.
 ms.assetid: fe11f7a7-81be-4237-8194-15704f6fe43c
 ms.topic: article
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 94898dbbf193254165850ee696d2fea72d6d446908021dfbb5fd32f1920b7010
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f6082523926d70e670e0b792c6e7e8f41c7c1a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118512956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360800"
 ---
-# <a name="source-register-negate"></a>Source Register Negate
+# <a name="source-register-negate"></a>Negate del registro de origen
 
-Realiza un negate (y = -x) en todos los componentes de registro.
+Realiza un negate (y = -x), en todos los componentes de registro.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -33,7 +33,7 @@ Realiza un negate (y = -x) en todos los componentes de registro.
 
 Registro de origen. Para obtener más información sobre los tipos de registro, [vea ps \_ \_ 1 1 \_ \_ ps \_ 1 \_ 2 ps \_ \_ \_ 1 \_ 3 ps \_ \_ \_ 1 \_ 4 Registers](dx9-graphics-reference-asm-ps-registers-ps-1-x.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se cambia el contenido del registro. El modificador solo se aplica a los datos leídos del registro. La operación de negación se aplica a los cuatro canales de color (RGBA).
 
@@ -45,7 +45,7 @@ Este modificador solo se usa con instrucciones aritméticas.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra cómo usar este modificador.
+En el ejemplo siguiente se muestra cómo usar este modificador .
 
 
 ```

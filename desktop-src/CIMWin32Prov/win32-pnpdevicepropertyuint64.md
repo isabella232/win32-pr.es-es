@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f0bf9374ef89a42d3f177de887f15a7c33c8ac8e9fe44a0ccd69ef7b9fd2b38f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bf38961a36bd93175b52b71bb7ab763525a1b68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118008260"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255681"
 ---
 # <a name="win32_pnpdevicepropertyuint64-class"></a>Clase Win32 \_ PnPDevicePropertyUint64
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertyUint64 : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ PnPDevicePropertyUint64** tiene estos tipos de miembros:
 
@@ -57,7 +57,7 @@ La **clase Win32 \_ PnPDevicePropertyUint64** tiene estas propiedades.
 
 <dl> <dt>
 
-**Datos**
+**Data**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Uint64**
@@ -512,7 +512,7 @@ Los valores posibles son.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

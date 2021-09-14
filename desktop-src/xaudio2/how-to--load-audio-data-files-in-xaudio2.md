@@ -4,28 +4,28 @@ ms.assetid: caeb522e-d4f6-91e2-5e85-ea0af0f61300
 title: 'Cómo: cargar archivos de datos de audio en XAudio2'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bacf08e8f16e5cd9c42409776b02846990b9d66d685a0186314445742f23341
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 659b4d8e106b6f0b2eb942505f99562f56fdada7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255956"
 ---
 # <a name="how-to-load-audio-data-files-in-xaudio2"></a>Cómo: cargar archivos de datos de audio en XAudio2
 
 > [!Note]  
-> Este contenido solo se aplica a las aplicaciones de escritorio y requerirá una revisión para funcionar en una Windows Store. Consulte la documentación de [**CreateFile2,**](/windows/win32/api/fileapi/nf-fileapi-createfile2) [**CreateEventEx,**](/windows/win32/api/synchapi/nf-synchapi-createeventexa) [**WaitForSingleObjectEx,**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) [**SetFilePointerEx**](/windows/win32/api/fileapi/nf-fileapi-setfilepointerex)y [**GetOverlappedResultEx.**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresultex) Consulte SoundFileReader.h/.cpp en el ejemplo basicSound Windows 8 de la galería de ejemplos Windows [SDK de .](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/XAudio2%20audio%20file%20playback%20sample%20(Windows%208))
+> Este contenido solo se aplica a las aplicaciones de escritorio y requerirá una revisión para funcionar en una Windows Store. Consulte la documentación de [**CreateFile2,**](/windows/win32/api/fileapi/nf-fileapi-createfile2) [**CreateEventEx,**](/windows/win32/api/synchapi/nf-synchapi-createeventexa) [**WaitForSingleObjectEx,**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) [**SetFilePointerEx**](/windows/win32/api/fileapi/nf-fileapi-setfilepointerex)y [**GetOverlappedResultEx.**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresultex) Consulte SoundFileReader.h/.cpp en el ejemplo basicSound Windows 8 de la galería de ejemplos Windows [SDK.](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/XAudio2%20audio%20file%20playback%20sample%20(Windows%208))
 
  
 
-En este tema se describen los pasos para rellenar las estructuras necesarias para reproducir datos de audio en XAudio2. En los pasos siguientes se cargan los fragmentos "fmt" y "data" de un archivo de audio, y se usan para rellenar una estructura **DE FORMADEDATOSTEXTENSIBLE** y una estructura [**BUFFER de XAUDIO2. \_**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer)
+En este tema se describen los pasos para rellenar las estructuras necesarias para reproducir datos de audio en XAudio2. En los pasos siguientes se cargan los fragmentos "fmt" y "data" de un archivo de audio, y se usan para rellenar una estructura DE BUFFER DE [**XAUDIO2 \_**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) y UNA ESTRUCTURA **DE FORMA** DESENLACE.
 
--   [Preparación para analizar el archivo de audio.](#preparing-to-parse-the-audio-file)
+-   [Prepararse para analizar el archivo de audio.](#preparing-to-parse-the-audio-file)
 -   [Rellenar estructuras XAudio2 con el contenido de fragmentos de RIFF.](#populating-xaudio2-structures-with-the-contents-of-riff-chunks)
 
 ## <a name="preparing-to-parse-the-audio-file"></a>Preparación para analizar el archivo de audio
 
-Los archivos de audio compatibles con XAudio2 usan el formato de archivo de intercambio de recursos (RIFF). RIFF se describe en la introducción al formato de archivo de intercambio de recursos [(RIFF).](resource-interchange-file-format--riff-.md) Los datos de audio de un archivo RIFF se cargan buscando el fragmento de RIFF y, a continuación, recorren el fragmento para buscar fragmentos individuales contenidos en el fragmento de RIFF. Las siguientes funciones son ejemplos de código para buscar fragmentos y cargar datos contenidos en los fragmentos.
+Los archivos de audio compatibles con XAudio2 usan el formato de archivo de intercambio de recursos (RIFF). RIFF se describe en la introducción al formato de archivo de intercambio de [recursos (RIFF).](resource-interchange-file-format--riff-.md) Los datos de audio de un archivo RIFF se cargan buscando el fragmento RIFF y, a continuación, recorren en bucle el fragmento para buscar fragmentos individuales contenidos en el fragmento RIFF. Las siguientes funciones son ejemplos de código para buscar fragmentos y cargar datos contenidos en los fragmentos.
 
 -   Para buscar un fragmento en un archivo RIFF:
 
@@ -105,7 +105,7 @@ Los archivos de audio compatibles con XAudio2 usan el formato de archivo de inte
 
     
 
--   Para leer los datos de un fragmento una vez que se han ubicado.
+-   Para leer datos en un fragmento una vez que se han localizado.
 
     Una vez que se encuentra un fragmento deseado, sus datos se pueden leer ajustando el puntero de archivo al principio de la sección de datos del fragmento. Una función para leer los datos de un fragmento una vez que se encuentran podría tener este aspecto.
 
@@ -126,13 +126,13 @@ Los archivos de audio compatibles con XAudio2 usan el formato de archivo de inte
 
 ## <a name="populating-xaudio2-structures-with-the-contents-of-riff-chunks"></a>Rellenar estructuras XAudio2 con el contenido de fragmentos de RIFF
 
-Para que XAudio2 reprodgue audio con una voz de origen, necesita una estructura **DE FORMA DESATEX** y una estructura [**\_ BUFFER de XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) La **estructura DE FORMADEDATEX** puede ser una estructura mayor, como **ESTALAATEXTENSIBLE,** que contiene una estructura DE FORMA DEDATOS **COMO** su primer miembro. Para más información, consulte la página de referencia de **LAATEX.**
+Para que XAudio2 reprodgue audio con una voz de origen, necesita una estructura **DE FORMA DESATEX** y una estructura [**BUFFER de XAUDIO2. \_**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) La **estructura DESATEX** puede ser una estructura más grande, como **ESTALAATEXTENSIBLE,** que contiene una estructura DE FORMA DESATEX como su primer miembro.  Consulte la **página de referencia DE LAATEX** para obtener más información.
 
-En este ejemplo se **usa UNA FORMADEDATEXTENSIBLE para** permitir la carga de archivos de audio PCM con más de dos canales.
+En este ejemplo, **se usa UNA FORMADETEXTENSIBLE** para permitir la carga de archivos de audio PCM con más de dos canales.
 
-En los pasos siguientes se ilustra el uso de las funciones descritas anteriormente para rellenar una estructura **DE FORMA DEDATOATEXTENSIBLE** y una [**estructura \_ BUFFER de XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) En este caso, el archivo de audio que se carga contiene datos de PCM y solo contendrá un fragmento "RIFF", "fmt" y "data". Otros formatos pueden contener tipos de fragmentos adicionales, como se describe en [Formato de archivo de intercambio de recursos (RIFF).](resource-interchange-file-format--riff-.md)
+En los pasos siguientes se muestra el uso de las funciones descritas anteriormente para rellenar una estructura **DE FORMAENTEXTENSIBLE y** una [**estructura \_ BUFFER de XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) En este caso, el archivo de audio que se carga contiene datos PCM y solo contendrá un fragmento "RIFF", "fmt" y "data". Otros formatos pueden contener tipos de fragmentos adicionales, como se describe en [Formato de archivo de intercambio de recursos (RIFF).](resource-interchange-file-format--riff-.md)
 
-1.  Declare estructuras BUFFER DE LA CLASE DE ÁREA DE **TRABAJOATEXTENSIBLE** [**y XAUDIO2. \_**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer)
+1.  Declare **las estructuras BUFFER DE DESATEXTENSIBLE** y [**XAUDIO2. \_**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer)
     ```
     WAVEFORMATEXTENSIBLE wfx = {0};
     XAUDIO2_BUFFER buffer = {0};
@@ -180,7 +180,7 @@ En los pasos siguientes se ilustra el uso de las funciones descritas anteriormen
 
     
 
-4.  Busque el fragmento 'fmt' y copie su contenido en una **estructura DE FORMAENTEXTENSIBLE.**
+4.  Busque el fragmento 'fmt' y copie su contenido en una estructura **DESATEXTENSIBLE.**
     ```
     FindChunk(hFile,fourccFMT, dwChunkSize, dwChunkPosition );
     ReadChunkData(hFile, &wfx, dwChunkSize, dwChunkPosition );

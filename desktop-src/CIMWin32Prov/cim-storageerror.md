@@ -1,5 +1,5 @@
 ---
-description: La clase Cim StorageError representa bloques de medios o espacio de memoria que están asignados fuera de \_ uso debido a errores. La clave de la clase es la propiedad StartingAddress de los bytes en error.
+description: La clase StorageError de CIM representa bloques de espacio de memoria o multimedia que están asignados fuera de \_ uso debido a errores. La clave de la clase es la propiedad StartingAddress de los bytes en error.
 ms.assetid: e786aa39-4718-416b-b659-bf4b8d3e2851
 ms.tgt_platform: multiple
 title: CIM_StorageError clase
@@ -20,23 +20,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6c1429423ef5291aecf8a8b48fdc353eceb6c711e5e7b2ca89916ebaa814573d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f5b197a5c82e61e054f5875fad466cac808ec38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118677464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255867"
 ---
 # <a name="cim_storageerror-class"></a>Cim \_ StorageError (clase)
 
-La **clase \_ Cim StorageError** representa bloques de medios o espacio de memoria que están asignados fuera de uso debido a errores. La clave de la clase es la **propiedad StartingAddress** de los bytes en error.
+La **clase \_ StorageError de CIM** representa bloques de espacio de memoria o multimedia que están asignados fuera de uso debido a errores. La clave de la clase es la **propiedad StartingAddress** de los bytes en error.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,9 +53,9 @@ class CIM_StorageError
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ StorageError** de CIM tiene estos tipos de miembros:
+La **clase \_ StorageError de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -106,9 +106,9 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Dirección final de los bytes en error.
+Dirección final de los bytes con error.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -124,9 +124,9 @@ Tipo de acceso: solo lectura
 Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Dirección inicial de los bytes en error.
+Dirección inicial de los bytes con error.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**SystemCreationClassName**")
 </dt> </dl>
 
-Nombre de clase de creación del sistema de ámbito.
+Ámbito del nombre de la clase de creación del sistema.
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Nombre del sistema de ámbito.
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

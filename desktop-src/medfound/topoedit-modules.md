@@ -4,12 +4,12 @@ ms.assetid: f3da2d13-a8ad-4db0-9d18-e94857f0abc7
 title: Módulos TopoEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc95848a533ba67599c114917ebe502f42a4fe859df9c1ac6bf5acfc40bb393c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 728f39edace5974d390746173308361b595c3b40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118057720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361115"
 ---
 # <a name="topoedit-modules"></a>Módulos TopoEdit
 

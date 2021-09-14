@@ -4,12 +4,12 @@ ms.assetid: 192cab30-2fa0-4036-b9b4-544bea8e6ac1
 title: System.Photo.FlashText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74e0881abfa2b6fb6900503c2f7168dad98c6e398f2bffc23cc7096d1086adc2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fea902b3890eb40c9c8d944c567b20a18412e716
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118229809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361079"
 ---
 # <a name="systemphotoflashtext"></a>System.Photo.FlashText
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

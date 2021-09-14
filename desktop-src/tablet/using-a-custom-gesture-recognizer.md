@@ -4,12 +4,12 @@ ms.assetid: ed4e8f56-9137-47fd-a8f9-17eebfd06e97
 title: Uso de un reconocedor de gestos personalizado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa4c58dd93bdb19f1f930be38e40f0068fa02239f09603035b572559d1f8a916
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 376f567680cfe7e862f280d1b8e8dc35a2017316
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119091334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361003"
 ---
 # <a name="using-a-custom-gesture-recognizer"></a>Uso de un reconocedor de gestos personalizado
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba9180358f8398060fe7632c0a75b28f61ffb237638b0d121fccefe7cf3c2f5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42f55a57a0f9e06d3001c2638d457fe0b82a914d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361381"
 ---
 # <a name="cdispparamscdispparams-constructor"></a>Constructor CDispParams.CDispParams
 
@@ -53,7 +53,7 @@ Número de argumentos pasados al método o propiedad.
 *pArgs* 
 </dt> <dd>
 
-Puntero a la lista de argumentos. En la lista, cada argumento se almacena con su tipo de variante.
+Puntero a la lista de argumentos. En la lista, cada argumento se almacena con su tipo variant.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Puntero a la lista de argumentos. En la lista, cada argumento se almacena con su
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

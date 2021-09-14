@@ -16,12 +16,12 @@ keywords:
 - cuadros de diálogo, Configuración de página
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1af64357be8bd39217c6527dc81f7ac426f5e06e183de92b3bb479f4633c75d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4b9a8f7f30a8313017dc3a124cdccb7d00c872b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119741664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127373998"
 ---
 # <a name="page-setup-dialog-box"></a>Configurar página (cuadro de diálogo)
 

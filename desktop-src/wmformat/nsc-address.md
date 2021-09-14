@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faa445cc651a5914ee777108a93ba6abcb4e53ede0f1e0609f47d5713e6200da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d4a56a9faa500f11c73776f071315b36175c634
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084641"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256227"
 ---
 # <a name="nsc_address"></a>Dirección \_ NSC
 

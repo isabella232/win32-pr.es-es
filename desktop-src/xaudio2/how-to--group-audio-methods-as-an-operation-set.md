@@ -4,12 +4,12 @@ ms.assetid: 1b50acc5-a6b2-e010-9e7e-0080a5ee4a58
 title: 'Cómo: agrupar métodos de audio como un conjunto de operaciones'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9f5c1d27e33db4c0f7910761a7be574b72e9ac7aaa91b14329fa003792860d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5146c650ae6f89331c40f3e0db896f49484a6f0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119082929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255968"
 ---
 # <a name="how-to-group-audio-methods-as-an-operation-set"></a>Cómo: agrupar métodos de audio como un conjunto de operaciones
 

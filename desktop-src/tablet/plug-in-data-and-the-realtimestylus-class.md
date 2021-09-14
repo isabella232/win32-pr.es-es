@@ -5,11 +5,11 @@ title: Datos de complementos y clase RealTimeStylus
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dac0540d90f291acfef27a09df08ffff645c280d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361019"
 ---
 # <a name="plug-in-data-and-the-realtimestylus-class"></a>Datos de complementos y clase RealTimeStylus
 
@@ -89,7 +89,7 @@ Cada [objeto Stylus](/previous-versions/ms824824(v=msdn.10)) contiene el identif
 
 ## <a name="system-gesture-data"></a>Datos de gestos del sistema
 
-El [**objeto RealTimeStylus**](realtimestylus-class.md) recibe datos sobre los gestos del sistema a medida que son reconocidos por tablet PC. En la tabla siguiente se describe el orden en que se producen los objetos [SystemGestureData](/previous-versions/ms824019(v=msdn.10)) en el flujo de datos del lápiz de tableta en relación con otros datos de lápiz de tableta.
+El [**objeto RealTimeStylus**](realtimestylus-class.md) recibe datos sobre los gestos del sistema a medida que son reconocidos por tablet PC. En la tabla siguiente se describe el orden en el que se producen los objetos [SystemGestureData](/previous-versions/ms824019(v=msdn.10)) en el flujo de datos del lápiz de tableta en relación con otros datos de lápiz de tableta.
 
 
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8444764af729f9536471a6a9df221cc118edb7d043112eb0b5351f45982d87f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94f8d50aea58f556634e7f20b3880aecad72cc39
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127255603"
 ---
 # <a name="cbasecontrolvideochecktargetrect-method"></a>Método CBaseControlVideo.CheckTargetRect
 
@@ -53,7 +53,7 @@ Puntero al rectángulo de destino que se comprobará.
 
 Devuelve E \_ INVALIDARG si no es válido; de lo contrario, devuelve NOERROR (S \_ OK).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro determina si el rectángulo de destino solicitado es válido. Dado que el rectángulo de destino especifica una posición en el cliente lógico de la ventana, las coordenadas pueden ser negativas, aunque el ancho y alto generales no pueden ser cero o un valor negativo.
 
@@ -68,7 +68,7 @@ Esta función miembro determina si el rectángulo de destino solicitado es váli
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

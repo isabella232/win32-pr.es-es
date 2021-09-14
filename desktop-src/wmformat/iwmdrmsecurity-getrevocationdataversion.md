@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d139b2daf3f3bc6ad78beaa50e19c0141aecd5e8bedac2dd20582fb1536d9b74
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 705f02622b7298134328b513aa038804995eb1c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119930785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256256"
 ---
 # <a name="iwmdrmsecuritygetrevocationdataversion-method"></a>IWMDRMSecurity::GetRevocationDataVersion (método)
 
@@ -55,7 +55,7 @@ GUID que especifica el tipo de lista de revocación. Establezca en una de las co
 |-------------------------------|----------------------------------------------------------------------------------|
 | APLICACIÓN WMDRM \_ \_ REVOCATIONTYPE    | Especifica la lista de revocación de certificados de aplicación.                           |
 | WMDRM \_ REVOCATIONTYPE \_ DEVICE | Especifica la lista de revocación de certificados de dispositivo.                                |
-| WMDRM \_ REVOCATIONTYPE \_ CARDEA | Especifica la lista Windows revocación de certificados de DRM multimedia para dispositivos de red. |
+| WMDRM \_ REVOCATIONTYPE \_ CARDEA | Especifica la lista de revocación de Windows drm multimedia para dispositivos de red. |
 
 
 
@@ -95,7 +95,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

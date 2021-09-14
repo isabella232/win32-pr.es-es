@@ -4,12 +4,12 @@ ms.assetid: a0d8b54b-7a05-4307-a756-a34bb22f1afd
 title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_AUDCAP_ENDPOINT_ID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6baafd2aa1bdfc3f4959b877963faff5df9aabe57c672555edb98f4cded8b1ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8a1448dc753a8e3b8221fa040309d3f5b60c4879
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120113955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127364090"
 ---
 # <a name="mf_devsource_attribute_source_type_audcap_endpoint_id-attribute"></a>Atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ AUDCAP \_ ENDPOINT \_ ID
 
@@ -17,7 +17,7 @@ Especifica el identificador de punto de conexión para un dispositivo de captura
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Wchar\***
+**WCHAR\***
 
 ## <a name="getset"></a>Obtener o establecer
 
@@ -25,7 +25,7 @@ Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desk
 
 Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor del atributo es un identificador de punto de conexión. Este atributo se usa con las siguientes funciones:
 
@@ -44,7 +44,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
