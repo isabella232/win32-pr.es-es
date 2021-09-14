@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fc0a4c3fc978c93d13be8faa62012d3928d47da5b5a214ce50f5506992f1fc8d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ae8b7953f31d7e9c6f01387d3136f01d8ab697a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119991225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259268"
 ---
 # <a name="idlesettings-settingstype-element"></a>Elemento IdleSettings (settingsType)
 
-Especifica cómo el Programador de tareas realiza tareas cuando el equipo está en estado inactivo. Para obtener información sobre las condiciones de inactividad, vea [Task Idle Conditions](task-idle-conditions.md).
+Especifica cómo el Programador de tareas realiza tareas cuando el equipo está en estado inactivo. Para obtener información sobre las condiciones de inactividad, vea [Condiciones de inactividad de tareas.](task-idle-conditions.md)
 
 ``` syntax
 <xs:element name="IdleSettings"
@@ -48,10 +48,10 @@ El **elemento IdleSettings** se define mediante el [**tipo complejo settingsType
 |------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------|
 | [**RestartOnIdle**](taskschedulerschema-restartonidle-idlesettingstype-element.md)      | boolean  | Especifica si la tarea se reinicia cuando el equipo entra en una condición de inactividad más de una vez.<br/>       |
 | [**StopOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) | boolean  | Especifica que el Programador de tareas detendrá la tarea si la condición de inactividad finaliza antes de que se complete la tarea.<br/> |
-| **En desuso:** [ **Duración**](taskschedulerschema-duration-idlesettingstype-element.md)                | duration | Especifica cuánto tiempo debe estar el equipo en estado de inactividad antes de que se ejecute la tarea.<br/>                              |
-| **En desuso:** [ **WaitTimeout**](taskschedulerschema-waittimeout-idlesettingstype-element.md)          | duration | Especifica la cantidad de tiempo que el Programador de tareas esperará a que se produzca una condición de inactividad.<br/>                |
+| **En desuso:** [ **Duración**](taskschedulerschema-duration-idlesettingstype-element.md)                | duration | Especifica cuánto tiempo debe estar el equipo en estado inactivo antes de que se ejecute la tarea.<br/>                              |
+| **En desuso:** [ **WaitTimeout**](taskschedulerschema-waittimeout-idlesettingstype-element.md)          | duration | Especifica la cantidad de tiempo que el Programador de tareas esperará a que se produzca una condición inactiva.<br/>                |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripts, la configuración inactiva se especifica mediante la [**propiedad TaskSettings.IdleSettings.**](tasksettings-idlesettings.md)
 
@@ -59,7 +59,7 @@ Para el desarrollo de C++, la configuración inactiva se especifica mediante la 
 
 ## <a name="examples"></a>Ejemplos
 
-El xml siguiente define un elemento de configuración que permite a Programador de tareas esperar 24 horas para una condición de inactividad y, a continuación, permite que solo 10 minutos {IdleDuration) inicie la tarea.
+El siguiente XML define un elemento de configuración que permite a Programador de tareas esperar 24 horas para una condición de inactividad y, a continuación, permite que solo 10 minutos {IdleDuration) inicie la tarea.
 
 ```XML
 <Settings>
@@ -80,7 +80,7 @@ El xml siguiente define un elemento de configuración que permite a Programador 
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Programador de tareas de esquema](task-scheduler-schema-elements.md)
 

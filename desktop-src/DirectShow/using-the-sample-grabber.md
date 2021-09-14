@@ -4,23 +4,23 @@ ms.assetid: ec0e367e-9ef9-4de6-9132-b462c233bc98
 title: Uso de Sample Grabber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47318b7bd4dbbad57fb82bec11e0a1293a0284c906c78fc7175d8a758ad477f2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d4886c796691e83e02b58ddea129d60d5004c9f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275060"
 ---
 # <a name="using-the-sample-grabber"></a>Uso de Sample Grabber
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-El [**filtro Sample Grabber es**](sample-grabber-filter.md) un filtro de transformación que se puede usar para obtener muestras multimedia de una secuencia a medida que pasan por el gráfico de filtros.
+El [**filtro Sample Grabber es**](sample-grabber-filter.md) un filtro de transformación que se puede usar para obtener muestras multimedia de una secuencia a medida que pasan a través del gráfico de filtros.
 
 Si simplemente desea tomar un mapa de bits de un archivo de vídeo, es más fácil usar el objeto [Media Detector (MediaDet).](media-detector--mediadet.md) Consulte [Captura de un marco de póster](grabbing-a-poster-frame.md) para obtener más información. Sin embargo, Sample Grabber es más flexible porque funciona con casi cualquier tipo de medio (vea [**ISampleGrabber::SetMediaType para**](isamplegrabber-setmediatype.md) ver algunas excepciones) y ofrece más control a la aplicación.
 
 -   [Crear el Administrador de Graph filtros](#create-the-filter-graph-manager)
--   [Agregue sample Grabber al filtro Graph](#add-the-sample-grabber-to-the-filter-graph)
+-   [Agregue sample grabber al filtro Graph](#add-the-sample-grabber-to-the-filter-graph)
 -   [Establecer el tipo de medio](#set-the-media-type)
 -   [Compilar el filtro Graph](#build-the-filter-graph)
 -   [Ejecute el Graph](#run-the-graph)
@@ -63,7 +63,7 @@ Para empezar, cree el [Administrador de Graph y](filter-graph-manager.md) consul
 
 
 
-## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Agregue sample Grabber al filtro Graph
+## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Agregue sample grabber al filtro Graph
 
 Cree una instancia del filtro Sample Grabber y agregue al gráfico de filtros. Consulte el filtro Sample Grabber para la [**interfaz ISampleGrabber.**](isamplegrabber.md)
 
@@ -100,7 +100,7 @@ Cree una instancia del filtro Sample Grabber y agregue al gráfico de filtros. C
 
 ## <a name="set-the-media-type"></a>Establecer el tipo de medio
 
-La primera vez que crea el sample grabber, no tiene ningún tipo de medio preferido. Esto significa que puede conectarse a casi cualquier filtro del gráfico, pero no tendría control sobre el tipo de datos que recibió. Antes de compilar el resto del gráfico, por lo tanto, debe establecer un tipo de medio para Sample Grabber mediante una llamada al [**método ISampleGrabber::SetMediaType.**](isamplegrabber-setmediatype.md)
+La primera vez que se crea sample grabber, no tiene ningún tipo de medio preferido. Esto significa que puede conectarse a casi cualquier filtro del gráfico, pero no tendría control sobre el tipo de datos que recibió. Antes de compilar el resto del gráfico, por lo tanto, debe establecer un tipo de medio para Sample Grabber mediante una llamada al [**método ISampleGrabber::SetMediaType.**](isamplegrabber-setmediatype.md)
 
 Cuando se conecta sample grabber, compara este tipo de medio con el tipo de medio que ofrece el otro filtro. Los únicos campos que comprueba son el tipo principal, el subtipo y el tipo de formato. Para cualquiera de ellos, el valor GUID \_ NULL significa "aceptar cualquier valor". La mayoría de las veces, querrá establecer el tipo principal y el subtipo. Por ejemplo, el código siguiente especifica vídeo RGB de 24 bits sin comprimir:
 
@@ -122,7 +122,7 @@ Cuando se conecta sample grabber, compara este tipo de medio con el tipo de medi
 
 ## <a name="build-the-filter-graph"></a>Compilar el filtro Graph
 
-Ahora puede compilar el resto del gráfico de filtro. Dado que Sample Grabber solo se conectará mediante el tipo de medio que ha especificado [](intelligent-connect.md) Graph, esto le permite aprovechar los mecanismos de Conectar inteligente del Administrador de filtros al compilar el gráfico.
+Ahora puede compilar el resto del gráfico de filtro. Dado que sample Grabber solo se conectará con el tipo de medio que ha especificado, esto le permite aprovechar los mecanismos intelligent [Conectar](intelligent-connect.md) de Filter Graph Manager al compilar el gráfico.
 
 Por ejemplo, si especificó vídeo sin comprimir, puede conectar un filtro de origen al sample grabber y el Administrador de filtros Graph agregará automáticamente el analizador de archivos y el descodificador. En el ejemplo siguiente se usa la función auxiliar ConnectFilters, que se muestra [en Conectar dos filtros](connect-two-filters.md):
 
@@ -167,7 +167,7 @@ Por ejemplo, si especificó vídeo sin comprimir, puede conectar un filtro de or
 
 Sample Grabber es un filtro de transformación, por lo que el pin de salida debe estar conectado a otro filtro. A menudo, es posible que simplemente quiera descartar los ejemplos una vez que haya terminado con ellos. En ese caso, conecte sample grabber al filtro de representador [**null**](null-renderer-filter.md), que descarta los datos que recibe.
 
-En el ejemplo siguiente se conecta sample grabber al filtro Representador null:
+En el ejemplo siguiente se conecta sample grabber al filtro De representador null:
 
 
 ```C++
@@ -243,7 +243,7 @@ En el ejemplo siguiente se habilita el modo de una sola toma y el modo de almace
 
 ## <a name="grab-the-sample"></a>Obtener el ejemplo
 
-En el modo de almacenamiento en búfer, sample grabber almacena una copia de cada muestra. El [**método ISampleGrabber::GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md) copia el búfer en una matriz asignada por el autor de la llamada. Para determinar el tamaño de la matriz necesaria, llame primero a **GetCurrentBuffer** con un **puntero NULL** para la dirección de la matriz. A continuación, asigne la matriz y llame al método una segunda vez para copiar el búfer. En el ejemplo siguiente se muestran estos pasos.
+En el modo de almacenamiento en búfer, sample grabber almacena una copia de cada muestra. El [**método ISampleGrabber::GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md) copia el búfer en una matriz asignada por el autor de la llamada. Para determinar el tamaño de la matriz necesaria, llame primero a **GetCurrentBuffer** con un puntero **NULL** para la dirección de la matriz. A continuación, asigne la matriz y llame al método una segunda vez para copiar el búfer. En el ejemplo siguiente se muestran estos pasos.
 
 
 ```C++

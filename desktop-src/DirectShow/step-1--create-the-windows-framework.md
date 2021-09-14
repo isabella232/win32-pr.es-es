@@ -4,12 +4,12 @@ ms.assetid: 678c6261-cbd0-4865-a1dd-03de55eca996
 title: 'Paso 1: Creación de Windows Framework'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: feba710c8df948e34c0da0ca9e7a1de85622bfae462290cbce3f36777854cb6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91ff1712f631db520ff30065e8943d13b280f3d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119072519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275095"
 ---
 # <a name="step-1-create-the-windows-framework"></a>Paso 1: Creación de Windows Framework
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ec6f2724f4374ed94fff47e6577a2887ca953cae0af66de9c64971cd80aa2050
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bfb87884438f1a39a5bd6f08eb9bb855311eb5d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120100005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259247"
 ---
 # <a name="interval-repetitiontype-element"></a>Elemento Interval (repetitionType)
 
@@ -53,7 +53,7 @@ El elemento se define mediante el [**tipo complejo repetitionType.**](taskschedu
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripting, el intervalo del patrón de repetición se especifica mediante la [**propiedad RepetitionPattern.Interval.**](repetitionpattern-interval.md)
 
@@ -61,7 +61,7 @@ Para el desarrollo de C++, el intervalo del patrón de repetición se especifica
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML para una tarea que usa un intervalo de repetición, vea Ejemplo de desencadenador [diario (XML).](daily-trigger-example--xml-.md)
+Para obtener un ejemplo completo del XML de una tarea que usa un intervalo de repetición, vea [Ejemplo de desencadenador diario (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Para obtener un ejemplo completo del XML para una tarea que usa un intervalo de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 0a055c02-c5ed-4790-83e4-183bc3cc6b51
 title: Juegos de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3f9bb57dad6924e2bbc9390d7315dbed0c59647cacefb932d7055ea8fdd3385
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b8e62a0afbe9e5b2b3ab596a8129db833477e53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119898805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274799"
 ---
 # <a name="character-sets"></a>Juegos de caracteres
 

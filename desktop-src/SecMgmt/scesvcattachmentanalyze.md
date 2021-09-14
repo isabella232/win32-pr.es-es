@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 9bb84cc6a8492c729926b644a246b8ee8a03e1de4c2eae6e3de1fd88c5ba339f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 296d755a0b082b46122432936d30614019b8b9a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119004923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259468"
 ---
 # <a name="scesvcattachmentanalyze-callback-function"></a>Función de devolución de llamada SceSvcAttachmentAnalyze
 
@@ -49,14 +49,14 @@ Puntero a una estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/sce
 
 Si esta función se realiza correctamente, devuelve SCESTATUS \_ SUCCESS. De lo contrario, devuelve un código de error. Para obtener más información sobre los códigos de error de configuración de seguridad, vea [Valores devueltos de datos adjuntos.](management-return-values.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función SceSvcAttachmentAnalyze** debe hacer lo siguiente:
 
--   Consultar directamente la información de configuración del servicio.
+-   Consulte directamente la información de configuración del servicio.
 -   Llame a la función de devolución de llamada a la que apunta el miembro **pfQueryInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar información de la base de datos de seguridad.
 -   Calcule las diferencias entre la información en función del tipo y la sintaxis.
--   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para actualizar la base de datos de seguridad con la información de servicio recuperada que es diferente.
+-   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para actualizar la base de datos de seguridad con la información del servicio recuperada que es diferente.
 
 Para obtener más información, [vea Implementing SceSvcAttachmentAnalyze](implementing-scesvcattachmentanalyze.md).
 
@@ -71,7 +71,7 @@ Para obtener más información, [vea Implementing SceSvcAttachmentAnalyze](imple
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

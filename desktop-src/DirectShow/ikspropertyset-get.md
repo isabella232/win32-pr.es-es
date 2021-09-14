@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: fbfd44002270209c055b5a4003d9062a6821aeffb3ce71de7977fc20d0c64e81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c4461e8c5886d84bcf3b7faa6675b749bc0c37d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118652247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275183"
 ---
 # <a name="ikspropertysetget-method"></a>IKsPropertySet::Get (método)
 
@@ -165,7 +165,7 @@ HRESULT GetPinCategory(IPin *pPin, GUID *pPinCategory)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

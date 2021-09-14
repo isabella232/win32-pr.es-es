@@ -4,12 +4,12 @@ ms.assetid: 92051a84-5011-42ed-be68-e8841552ca1b
 title: Captura de vídeo (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c856faede4aaae4f5f19f5c5b292da4e56ac1e1243bc57de22c55a8b77a7ff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b9d63da84f74152c11e1126d11f6dfc450d8547b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119432135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274980"
 ---
 # <a name="video-capture-directshow"></a>Captura de vídeo (DirectShow)
 
@@ -18,11 +18,11 @@ En esta sección se describe cómo usar Microsoft DirectShow para escribir aplic
 -   [Acerca de la captura de vídeo en DirectShow](about-video-capture-in-directshow.md)
 -   [Selección de un dispositivo de captura](selecting-a-capture-device.md)
 -   [Vista previa del vídeo](previewing-video.md)
--   [Captura de vídeo en un archivo](capturing-video-to-a-file.md)
+-   [Capturar vídeo en un archivo](capturing-video-to-a-file.md)
 -   [Controlar una captura Graph](controlling-a-capture-graph.md)
 -   [Tareas de captura de vídeo](video-capture-tasks.md)
 -   [Vídeo digital en DirectShow](digital-video-in-directshow.md)
--   [Control de una videocamba de DV](controlling-a-dv-camcorder.md)
+-   [Control de una cámara dv](controlling-a-dv-camcorder.md)
 -   [Televisión análoga](analog-television.md)
 -   [Temas de captura avanzada](advanced-capture-topics.md)
 

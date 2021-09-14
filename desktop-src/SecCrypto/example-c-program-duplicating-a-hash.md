@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo siguiente se crea y se duplica un hash de texto. A continuación, agrega texto adicional al hash original y otro texto al duplicado.
+description: En el ejemplo siguiente se crea y duplica un hash de texto. A continuación, agrega texto adicional al hash original y otro texto al duplicado.
 ms.assetid: 7aa7c9a1-471b-4b40-9967-b1da946c83a5
 title: 'Programa C de ejemplo: duplicación de un hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19684dfd452ea887d9106453de1a8e996992042d25fb920b0f10e718cfec4ab3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a418f1e5e615d8c4b4c0e8a0af3061b9b6f860e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259495"
 ---
 # <a name="example-c-program-duplicating-a-hash"></a>Programa C de ejemplo: duplicación de un hash
 
-En el ejemplo siguiente se crea y se duplica [*un hash*](../secgloss/h-gly.md) de texto. A continuación, agrega texto adicional al hash original y otro texto al duplicado.
+En el ejemplo siguiente se crea y duplica un [*hash*](../secgloss/h-gly.md) de texto. A continuación, agrega texto adicional al hash original y otro texto al duplicado.
 
-En este ejemplo se usan las siguientes funciones de CryptoAPI:
+En este ejemplo se usan las siguientes funciones CryptoAPI:
 
 -   [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 -   [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash)

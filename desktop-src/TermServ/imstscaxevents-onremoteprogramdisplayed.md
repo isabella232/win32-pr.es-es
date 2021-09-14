@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método OnRemoteProgramDisplayed Servicios de Escritorio remoto
 - Método OnRemoteProgramDisplayed Servicios de Escritorio remoto , interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnRemoteProgramDisplayed
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnRemoteProgramDisplayed
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df50f9a536b367b203f395d9c856562b8967d8a5830704a2e9bbb4c69152f202
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 584e54c487ec24a3c165fdd5eb8e22f243e07f23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119058823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259095"
 ---
 # <a name="imstscaxeventsonremoteprogramdisplayed-method"></a>Método IMsTscAxEvents::OnRemoteProgramDisplayed
 
@@ -71,12 +71,12 @@ La reconexión automática está en curso.
 
 <span id="RAIL_APPDISPLAY_DESKTOPHOOKED"></span><span id="rail_appdisplay_desktophooked"></span>
 
-<span id="RAIL_APPDISPLAY_DESKTOPHOOKED"></span><span id="rail_appdisplay_desktophooked"></span>**APLICACIÓN \_ DE \_ RAILDISPLAY DESKTOPHOOKED**
+<span id="RAIL_APPDISPLAY_DESKTOPHOOKED"></span><span id="rail_appdisplay_desktophooked"></span>**RAIL \_ APPDISPLAY \_ DESKTOPHOOKED**
 
 
 </dt> <dd>
 
-El recuento de RemoteApp acaba de pasar a cero.
+El recuento de RemoteApp acaba de llegar a cero.
 
 </dd> </dl> </dd> </dl>
 
@@ -84,7 +84,7 @@ El recuento de RemoteApp acaba de pasar a cero.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Implemente este método en el receptor de eventos para recibir la notificación de que se ha mostrado RemoteApp.
 

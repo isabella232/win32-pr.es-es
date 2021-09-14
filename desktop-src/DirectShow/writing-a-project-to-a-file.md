@@ -4,18 +4,18 @@ ms.assetid: 84499e4f-4f45-4aa6-aa89-d95c3b6b47d0
 title: Escribir un Project en un archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3efea1d0949c419ba6f595e7a381b689d8a8ce69836609d328b555ee695743b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b8f63ddbc6a021362134d420220f7e25c662553f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120051375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274940"
 ---
 # <a name="writing-a-project-to-a-file"></a>Escribir un Project en un archivo
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En este artículo se describe cómo escribir un [proyecto DirectShow Editing Services](directshow-editing-services.md) en un archivo. En primer lugar se describe cómo escribir un archivo con el motor de representación básico. A continuación, describe la recompresión inteligente con el motor de representación inteligente.
+En este artículo se describe cómo escribir un proyecto [DirectShow Editing Services](directshow-editing-services.md) en un archivo. En primer lugar se describe cómo escribir un archivo con el motor de representación básico. A continuación, describe la recompresión inteligente con el motor de representación inteligente.
 
 Para obtener información general sobre cómo DirectShow Editing Services representa proyectos, vea [Acerca de los motores de representación](about-the-render-engines.md).
 

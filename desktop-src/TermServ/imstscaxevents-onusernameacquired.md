@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f05b63d59ebe0610b28198d264caf0fb7d3cd87f9ee664f804dc38eb2996abd3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf5d77f0eb739daa54f8385112b79f67f279eae9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117757158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259031"
 ---
 # <a name="imstscaxeventsonusernameacquired-method"></a>Método IMsTscAxEvents::OnUserNameAcquired
 
@@ -68,7 +68,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

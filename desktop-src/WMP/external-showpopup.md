@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a651add93e32c1c2eb82827a4089a338341f2506ba26d9fbb06061aa6d185d75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: acaecb559e7df60067e89ec754ec9432233500f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241827"
 ---
 # <a name="externalshowpopup-method"></a>Método External.showPopup
 
@@ -66,7 +66,7 @@ External.showPopup(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El índice emergente no se interpreta mediante Reproductor de Windows Media. Los índices que identifican las páginas web emergentes se crean mediante la tienda en línea y solo tienen significado para la tienda en línea.
 
@@ -86,7 +86,7 @@ Puede usar *Parámetros para* especificar el tamaño de la ventana emergente. Po
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/>                                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

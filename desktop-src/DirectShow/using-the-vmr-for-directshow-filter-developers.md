@@ -4,12 +4,12 @@ ms.assetid: 0a038f0f-5fb6-44df-8263-03725c5bcb5f
 title: Uso de VMR para DirectShow de filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ac188049468d38f6446f7805f70d68bef3f74646e22f5a7052efed311325e46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ce548fd7c59a46a09fca8526292876c666ba94c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119903665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275023"
 ---
 # <a name="using-the-vmr-for-directshow-filter-developers"></a>Uso de VMR para DirectShow de filtros
 

@@ -1,6 +1,6 @@
 ---
 title: Método IMsTscAxEvents OnRequestContainerMinimize
-description: Se llama cuando el usuario presiona el botón Minimizar en la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora se minimiza.
+description: Se llama cuando el usuario presiona el botón Minimizar de la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora minimiza a sí misma.
 ms.assetid: fc052f9b-cf59-4d5a-ba39-571627b72f2a
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 344bd85d8d224a5901517c55c8e0a95c854ed246e74a9d0c8def1eebae515305
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85387e3b156eed29dc7068eac84280be521a934e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259079"
 ---
-# <a name="imstscaxeventsonrequestcontainerminimize-method"></a>Método IMsTscAxEvents::OnRequestContainerMinimize
+# <a name="imstscaxeventsonrequestcontainerminimize-method"></a>IMsTscAxEvents::OnRequestContainerMinimize (método)
 
-Se llama cuando el usuario presiona el botón **Minimizar** en la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora se minimiza.
+Se llama cuando el usuario presiona el botón **Minimizar** de la barra de conexión en modo de pantalla completa. La activación de este evento es una solicitud que la aplicación contenedora minimiza a sí misma.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,9 +45,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Solo se llamará a este método si el modo de pantalla completa controlada por contenedores está habilitado; vea [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para obtener más información.
+Solo se llamará a este método si el modo de pantalla completa controlada por contenedor está habilitado; vea [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para obtener más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Solo se llamará a este método si el modo de pantalla completa controlada por c
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

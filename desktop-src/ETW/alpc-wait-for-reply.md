@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 05b2f2e867e3e95e8ba0916ad288363db7ad8b6a7753f956df5415529d8ec5e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 898077511db25ec7f53bc075ecb845d04e540626
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274895"
 ---
 # <a name="alpc_wait_for_reply-class"></a>ALPC \_ Wait For Reply \_ \_ (Clase)
 
@@ -36,7 +36,7 @@ class ALPC_Wait_For_Reply : ALPC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WAIT For Reply \_ \_ \_ de ALPC** tiene estos tipos de miembros:
 

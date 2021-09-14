@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5724a5dff942377af783970e5d011e8f8a1ce9123039112917a3f652372495d5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ca68876d8742ea04faa972d2ea7fd5f4b2071ffc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119309345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259172"
 ---
 # <a name="maintenancesettings-maintenancesettingstype-element"></a>Elemento MaintenanceSettings (maintenanceSettingsType)
 
@@ -55,7 +55,7 @@ El tipo complejo [**maintenanceSettingsType**](taskschedulerschema-maintenancese
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para la programación de C++, esta configuración inactiva se especifica mediante la [**propiedad ITaskSettings3::MaintenanceSettings.**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings)
 
@@ -86,7 +86,7 @@ El siguiente XML define un elemento de configuración que indica a Programador d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

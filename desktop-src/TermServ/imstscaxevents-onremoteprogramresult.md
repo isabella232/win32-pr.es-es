@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método OnRemoteProgramResult Servicios de Escritorio remoto
 - Método OnRemoteProgramResult Servicios de Escritorio remoto , interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnRemoteProgramResult
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnRemoteProgramResult
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 807fbd49cc6222925f34a7e7c007fef54cbc9a3db2566f024ebc0188e9c95113
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 880e4fb3f6453114415f5bcc07a0afb9c176a1bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118129667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259092"
 ---
 # <a name="imstscaxeventsonremoteprogramresult-method"></a>Método IMsTscAxEvents::OnRemoteProgramResult
 
@@ -150,7 +150,7 @@ No se puede iniciar el programa RemoteApp porque la sesión muestra actualmente 
 *vbIsExecutable* \[ En\]
 </dt> <dd>
 
-Indica si el programa RemoteApp se inició directamente, mediante el nombre ejecutable o indirectamente, mediante una asociación de archivos.
+Indica si el programa RemoteApp se inició directamente, mediante el nombre del ejecutable o indirectamente, mediante una asociación de archivos.
 
 </dd> </dl>
 
@@ -158,17 +158,17 @@ Indica si el programa RemoteApp se inició directamente, mediante el nombre ejec
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Implemente este método en el receptor de eventos para recibir la notificación de que un programa RemoteApp devolvió un resultado.
 
-Se llama a este método inmediatamente después de que el control ActiveX intenta iniciar el programa RemoteApp y el parámetro *lError* indica el resultado del intento.
+Se llama a este método inmediatamente después de que el control ActiveX intente iniciar el programa RemoteApp y el parámetro *lError* indica el resultado del intento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -178,7 +178,7 @@ Se llama a este método inmediatamente después de que el control ActiveX intent
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

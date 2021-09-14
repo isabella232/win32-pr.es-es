@@ -3,7 +3,7 @@ title: Elemento June (monthsType)
 description: Especifica que la tarea se ejecuta en junio.
 ms.assetid: 15b0e8c2-4dc1-4ca3-99c5-bd9a36718904
 keywords:
-- Elemento June Programador de tareas
+- Elemento june Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f0675c0fb7c399b5d3decadf651a10793c163aeb75cad752e9e2fc0fdc251ba9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6e6c21834348a70033af69a71534c60c1b08d91a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259204"
 ---
 # <a name="june-monthstype-element"></a>Elemento June (monthsType)
 
@@ -67,7 +67,7 @@ El siguiente XML define un calendario de meses que ejecuta la tarea en junio.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

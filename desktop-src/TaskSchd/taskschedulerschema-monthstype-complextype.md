@@ -3,7 +3,7 @@ title: tipo complejo monthsType
 description: Define los elementos secundarios y la información de secuenciación para los elementos Months (monthlyDayOfWeekScheduleType) y Months (monthlyScheduleType).
 ms.assetid: f1faa67a-2f5f-4a00-a1df-2d44e218278b
 keywords:
-- monthsType tipo complejo Programador de tareas
+- monthsType complex type Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a0873f07cc76af9fab827c3df98a8f08ef300de93d4ae6b316809ba32aac87ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6a19000073fd12e05aa915921850264979a0541
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117758751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259100"
 ---
 # <a name="monthstype-complex-type"></a>tipo complejo monthsType
 
@@ -123,11 +123,11 @@ Define los elementos secundarios y la información de secuenciación para los el
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

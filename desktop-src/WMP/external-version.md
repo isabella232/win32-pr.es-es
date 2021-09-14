@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d50a7c21efa758f60aa70a6ac54d884768b3863f6de3b253843232fbbafe623
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a8a4de5ba5fa521841a5c2de90b9ae39e7aa86d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118339196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241796"
 ---
 # <a name="externalversion"></a>External.version
 
@@ -30,7 +30,7 @@ ms.locfileid: "118339196"
 
 La **propiedad** version recupera la versión actual de Reproductor de Windows Media.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 window.external.version
@@ -44,7 +44,7 @@ Esta propiedad es una cadena de solo **lectura.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

@@ -4,12 +4,12 @@ ms.assetid: f4748725-2a47-487c-b18c-7b27112d1090
 title: 'Programa C de ejemplo: derivación de una clave de sesión a partir de una contraseña'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b33b43e69b9db2f77e04bad2f8941e6fc0c1bf4e30e5f1d0ff7a5e3bac5ce06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e46884fa40a3a5682ca21229048004314bf03609
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259500"
 ---
 # <a name="example-c-program-deriving-a-session-key-from-a-password"></a>Programa C de ejemplo: derivación de una clave de sesión a partir de una contraseña
 

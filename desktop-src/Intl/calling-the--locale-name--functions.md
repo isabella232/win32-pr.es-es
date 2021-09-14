@@ -4,19 +4,19 @@ ms.assetid: e88c31b2-b1da-40ae-b512-67b8ad409b95
 title: Llamar a las funciones "Nombre de configuración regional"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc97490f21c54a187f2db31c6ee5c7eaa6c45e64069f9be9594c99e2376ef04e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c58c15d2d9fe7721eb162f8c7cf96084bd4afa2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119754895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274815"
 ---
 # <a name="calling-the-locale-name-functions"></a>Llamar a las funciones "Nombre de configuración regional"
 
 Windows Vista presenta un gran número de funciones que usan nombres de [configuración regional en](locale-names.md) lugar de [identificadores de configuración regional.](locale-identifiers.md) Estas nuevas funciones proporcionan una buena compatibilidad con configuraciones [regionales](custom-locales.md)complementarias y varias de ellas proporcionan funcionalidad adicional que no está disponible en las funciones nls anteriores. Algunas de ellas, como las nuevas funciones de enumeración, también representan mejoras de diseño.
 
 > [!Note]  
-> Las aplicaciones diseñadas para ejecutarse solo en Windows Vista y versiones posteriores deben usar las funciones de "nombre de configuración regional" en lugar de las funciones NLS que usan identificadores de configuración regional.
+> Las aplicaciones que están diseñadas para ejecutarse solo en Windows Vista y versiones posteriores deben usar las funciones de "nombre de configuración regional" en lugar de las funciones NLS que usan identificadores de configuración regional.
 
  
 
