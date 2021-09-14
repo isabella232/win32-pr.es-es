@@ -9,31 +9,31 @@ keywords:
 - ISpreadsheetProvider
 - implementación de un Automatización de la interfaz de usuario de control de hoja de cálculo
 - patrón de control de hoja de cálculo
-- patrones de control, ISpreadsheetProvider
+- patrones de control,ISpreadsheetProvider
 - patrones de control, implementación de Automatización de la interfaz de usuario hoja de cálculo
 - patrones de control, hoja de cálculo
 - interfaces,ISpreadsheetProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7991937f1530e28ed85227fbe19be13b628f9722d5609367e2f483c86a2bb70
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4be34174745ccf91435db92665b98eb387f7241a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070483"
 ---
 # <a name="spreadsheet-control-pattern"></a>Patrón de control de hoja de cálculo
 
-Describe las directrices y convenciones para implementar [**ISpreadsheetProvider,**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-ispreadsheetprovider)incluida la información sobre los métodos. Al final del tema se ofrecen vínculos a referencias adicionales. El **patrón de** control Hoja de cálculo se usa para exponer el contenido de una hoja de cálculo u otro documento basado en cuadrícula.
+Describe directrices y convenciones para implementar [**ISpreadsheetProvider,**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-ispreadsheetprovider)incluida información sobre los métodos. Al final del tema se ofrecen vínculos a referencias adicionales. El **patrón de** control Hoja de cálculo se usa para exponer el contenido de una hoja de cálculo u otro documento basado en cuadrícula.
 
-El **patrón de** control Hoja de cálculo está estrechamente relacionado con el patrón [de](uiauto-implementinggrid.md) control Grid. Los controles que implementan el patrón de control **Hoja** de cálculo también deben implementar el patrón de control Grid. Los controles también pueden implementar el [patrón de](uiauto-implementingtable.md) control Tabla, si procede. Para obtener ejemplos de controles que implementan estos patrones de control, vea [Tipos de control y Sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
+El **patrón de** control Hoja de cálculo está estrechamente relacionado con el patrón [de](uiauto-implementinggrid.md) control Grid. Los controles que implementan el patrón de control **Hoja** de cálculo también deben implementar el patrón de control Grid. Los controles también pueden implementar el [patrón de](uiauto-implementingtable.md) control Table, si procede. Para obtener ejemplos de controles que implementan estos patrones de control, vea [Tipos de control y sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
 
 ## <a name="implementation-guidelines-and-conventions"></a>Directrices y convenciones de implementación
 
-Al implementar el patrón de control **hoja de** cálculo, tenga en cuenta las siguientes directrices y convenciones:
+Al implementar el patrón de control **de hoja** de cálculo, tenga en cuenta las siguientes directrices y convenciones:
 
 -   Si una hoja de cálculo implementa la [**interfaz ISpreadsheetProvider,**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-ispreadsheetprovider) sus celdas deben implementar la [**interfaz ISpreadsheetItemProvider.**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-ispreadsheetitemprovider)
--   El [**método ISpreadsheetProvider::GetItemByName**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetprovider-getitembyname) está pensado para proporcionar el mismo tipo de navegación que una aplicación podría proporcionar con una característica De salto **a** etiqueta. Muchos programas de hoja de cálculo permiten que a las celdas específicas se les asigne un nombre descriptivo o una etiqueta. **GetItemByName permite** al cliente buscar una celda en función de su nombre descriptivo. Este método no debe recuperar ninguna celda que contenga el texto del nombre porque los resultados pueden ser muy ambiguos. Si el programa de hoja de cálculo permite que varias celdas de la misma hoja de cálculo tengan el mismo nombre descriptivo o etiqueta, el comportamiento Automatización de la interfaz de usuario microsoft no está definido.
+-   El [**método ISpreadsheetProvider::GetItemByName**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetprovider-getitembyname) está pensado para proporcionar el mismo tipo de navegación que una aplicación podría proporcionar con una característica De salto **a** etiqueta. Muchos programas de hoja de cálculo permiten que a las celdas específicas se les asigne un nombre descriptivo o una etiqueta. **GetItemByName permite** al cliente buscar una celda en función de su nombre descriptivo. Este método no debe recuperar ninguna celda que contenga el texto del nombre porque los resultados pueden ser muy ambiguos. Si el programa de hoja de cálculo permite que varias celdas de la misma hoja de cálculo tengan el mismo nombre descriptivo o etiqueta, el comportamiento Automatización de la interfaz de usuario microsoft es indefinido.
 
 ## <a name="required-members-for-ispreadsheetprovider"></a>Miembros necesarios para **ISpreadsheetProvider**
 
@@ -43,7 +43,7 @@ El método siguiente es necesario para implementar la [**interfaz ISpreadsheetPr
 
 | Miembros requeridos                                                       | Tipo de miembro | Notas |
 |------------------------------------------------------------------------|-------------|-------|
-| [**GetItemByName**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetprovider-getitembyname) | Método      | Ninguno  |
+| [**GetItemByName**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetprovider-getitembyname) | Método      | None  |
 
 
 

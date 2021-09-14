@@ -1,9 +1,9 @@
 ---
 title: defaultvalue (atributo)
-description: El atributo \ defaultvalue\ permite especificar un valor predeterminado para un parámetro opcional con tipo.
+description: El atributo \defaultvalue\ permite especificar un valor predeterminado para un parámetro opcional con tipo.
 ms.assetid: a974a0f7-7b08-4f17-bb28-0e23e6aa97db
 keywords:
-- atributo defaultvalue MIDL
+- MIDL del atributo defaultvalue
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f38fe7dfc99c5c9c1c6a7cae1a5fdd5750c5f3e9af37e56706b27300876da1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04f4efaac16325ec77721665a4dee14c9514a192
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159627"
 ---
 # <a name="defaultvalue-attribute"></a>defaultvalue (atributo)
 
@@ -51,17 +51,17 @@ Especifica el tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
-Especifica el nombre de la función a la que se aplicará el **\[ atributo defaultvalue. \]**
+Especifica el nombre de la función a la que se aplicará el atributo **\[ defaultvalue. \]**
 
 </dd> <dt>
 
 *mandatory-param-list* 
 </dt> <dd>
 
-Especifica en o más parámetros obligatorios.
+Especifica en o más parámetros necesarios.
 
 </dd> <dt>
 
@@ -93,16 +93,16 @@ Especifica cero o más parámetros adicionales, cada uno de los cuales debe tene
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor predeterminado que especifique para el parámetro puede ser cualquier constante, o una expresión que se resuelva en una constante, que se puede representar mediante **una VARIANT**. En concreto, no se puede aplicar el atributo **\[ defaultvalue \]** a un parámetro que sea una estructura, una matriz o un **tipo SAFEARRAY.**
+El valor predeterminado que especifique para el parámetro puede ser cualquier constante, o una expresión que se resuelve como una constante, que se puede representar mediante **variant**. En concreto, no se puede aplicar el atributo **\[ defaultvalue \]** a un parámetro que sea una estructura, una matriz o un **tipo SAFEARRAY.**
 
 El compilador MIDL acepta la siguiente ordenación de parámetros (de izquierda a derecha):
 
 1.  Parámetros obligatorios (parámetros que no tienen el **\[ valor \] predeterminado** u atributos **\[** [**opcionales),**](optional.md) **\]**
-2.  parámetros opcionales con o sin el **\[ atributo defaultvalue, \]**
+2.  Parámetros opcionales con o sin el **\[ atributo defaultvalue, \]**
 3.  parámetros con el **\[ atributo opcional \]** y sin el atributo **\[ defaultvalue, \]**
-4.  **\[**[**Parámetro lcid,**](lcid.md) **\]** si hay alguno,
+4.  **\[**[**parámetro lcid,**](lcid.md) **\]** si lo hay,
 5.  **\[**[**retval**](retval.md) **\]** Parámetro
 
 ## <a name="examples"></a>Ejemplos

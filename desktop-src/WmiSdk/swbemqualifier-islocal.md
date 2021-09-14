@@ -16,14 +16,14 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b6a2e2f6f18a56310ea97fe75233d0e6674e92f19e8af96baa7d169603d7d17f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 584245d3325b9c83fe5a3135c24c31721c9964a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070415"
 ---
-# <a name="swbemqualifierislocal-property"></a>Propiedad SWbemQualifier.IsLocal
+# <a name="swbemqualifierislocal-property"></a>SWbemQualifier.IsLocal, propiedad
 
 La **propiedad IsLocal** del [**objeto SWbemQualifier**](swbemqualifier.md) es un valor booleano que indica si este calificador es local. Esta propiedad es de solo lectura.
 
@@ -50,7 +50,7 @@ SWbemQualifier.IsLocal As Boolean
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemQualifier<br/>                                                        |

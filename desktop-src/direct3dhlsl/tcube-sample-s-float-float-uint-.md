@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 44d2caa20748744a447616a2eed1a24331b714165f46bc746a54401a780b539d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9a91e9a3dcc2df617f50175eb0872398bc564103
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120067515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070344"
 ---
 # <a name="texturecubesamplesfloatfloatuint-function"></a>Función TextureCube::Sample(S,float,float,uint)
 
@@ -56,7 +56,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 
 
-| Texture-Object tipo                    | Tipo de parámetro |
+| Texture-Object type                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -72,20 +72,20 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 *Fijación* \[ En\]
 </dt> <dd>
 
-Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual acceda a un nivel de mip inferior a 2,0f.
 
 </dd> <dt>
 
 *Estado* \[ out\]
 </dt> <dd>
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Vea también
 

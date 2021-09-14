@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101605
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cecbc31bd607989df2181bfb35c0ff131ecea2a3a2141618caf1b1082470d289
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adcca7acbb0455e29b0a070b722e68dea5370d53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118270937"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070283"
 ---
 # <a name="esentdensityinvalidexception-members"></a>Miembros de EsentDensityInvalidException
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

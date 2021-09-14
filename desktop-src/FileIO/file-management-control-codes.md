@@ -4,12 +4,12 @@ ms.assetid: e27ded4b-d104-4244-b38e-5fed10d32e1e
 title: Códigos de control de administración de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d02cc18cb775aa56ade9a417ee22388353b34821d5747abdfd9bc18db958034e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64cb3baf78c4066a640242afe8465592bc9a6f8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117997296"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069966"
 ---
 # <a name="file-management-control-codes"></a>Códigos de control de administración de archivos
 
@@ -21,7 +21,7 @@ Los siguientes códigos de control se usan en la administración de archivos.
 
 | Código de control                                                                                    | Descripción                                                                                                                                                                                         |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**FSCTL \_ ALLOW \_ EXTENDED \_ DASD \_ IO**](/windows/win32/api/winioctl/ni-winioctl-fsctl_allow_extended_dasd_io)<br/>             | Indica al controlador del sistema de archivos que no realice comprobaciones de límites de E/S en las llamadas de lectura o escritura de la partición.<br/>                                                                                  |
+| [**FSCTL \_ ALLOW \_ EXTENDED \_ DASD \_ IO**](/windows/win32/api/winioctl/ni-winioctl-fsctl_allow_extended_dasd_io)<br/>             | Indica al controlador del sistema de archivos que no realice ninguna comprobación de límites de E/S en las llamadas de lectura o escritura de la partición.<br/>                                                                                  |
 | [**FSCTL \_ CREATE U GET OBJECT \_ \_ \_ \_ ID**](/windows/win32/api/winioctl/ni-winioctl-fsctl_create_or_get_object_id)<br/>          | Recupera el identificador de objeto para el archivo o directorio especificado. Si no existe ningún identificador de objeto, **el uso de FSCTL CREATE U \_ GET OBJECT \_ \_ \_ \_ ID** crea uno.<br/>                           |
 | [**CONTROL CSV \_ DE \_ FSCTL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_csv_control)<br/>                                     | Recupera los resultados de una operación de control CSV.<br/>                                                                                                                                        |
 | [**FSCTL \_ DELETE \_ OBJECT \_ ID**](/windows/win32/api/winioctl/ni-winioctl-fsctl_delete_object_id)<br/>                          | Quita el identificador de objeto de un archivo o directorio especificado.<br/>                                                                                                                        |
@@ -35,7 +35,7 @@ Los siguientes códigos de control se usan en la administración de archivos.
 | [**FSCTL \_ GET \_ OBJECT \_ ID**](/windows/win32/api/winioctl/ni-winioctl-fsctl_get_object_id)<br/>                                | Recupera el identificador de objeto para el archivo o directorio especificado.<br/>                                                                                                                     |
 | [**FSCTL \_ GET \_ REPAIR**](/windows/win32/api/winioctl/ni-winioctl-fsctl_get_repair)<br/>                                       | Recupera información sobre el mecanismo de recuperación automática del sistema de archivos NTFS.<br/>                                                                                                               |
 | [**REPARACIÓN DE INICIO DE FSCTL \_ \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_initiate_repair)<br/>                             | Desencadena el sistema de archivos NTFS para iniciar un ciclo de recuperación automática en un solo archivo.<br/>                                                                                                            |
-| [**FSCTL \_ MAKE \_ MEDIA \_ COMPATIBLE**](/windows/win32/api/winioctl/ni-winioctl-fsctl_make_media_compatible)<br/>                | Cierra una sesión UDF abierta en los medios de escritura una vez para que la ROM multimedia sea compatible.<br/>                                                                                                         |
+| [**FSCTL \_ MAKE \_ MEDIA \_ COMPATIBLE**](/windows/win32/api/winioctl/ni-winioctl-fsctl_make_media_compatible)<br/>                | Cierra una sesión udF abierta en los medios de escritura una vez para que la ROM multimedia sea compatible.<br/>                                                                                                         |
 | [**FSCTL \_ OPBATCH \_ ACK \_ CLOSE \_ PENDING**](/windows/win32/api/winioctl/ni-winioctl-fsctl_opbatch_ack_close_pending)<br/>       | Notifica a un servidor que una aplicación cliente está lista para cerrar un archivo.<br/>                                                                                                                    |
 | [**FSCTL \_ OPLOCK \_ BREAK \_ ACK NO \_ \_ 2**](/windows/win32/api/winioctl/ni-winioctl-fsctl_oplock_break_ack_no_2)<br/>              | Responde a la notificación de que un bloqueo oportunista en un archivo está a punto de romperse. Use esta operación para desbloquear todos los bloqueos oportunistas del archivo, pero mantenga el archivo abierto.<br/>            |
 | [**CONFIRMACIÓN DE \_ INTERRUPCIÓN DEL BLOQUEO DE OPERACIÓN \_ DE FSCTL \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_oplock_break_acknowledge)<br/>          | Responde a la notificación de que un bloqueo oportunista exclusivo en un archivo está a punto de romperse. Use esta operación para indicar que el archivo debe recibir un bloqueo oportunista de nivel 2.<br/> |

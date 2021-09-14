@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7abb433d7112bc4c3257345d086ccf308cc1892b61a99991b485ce4962b5851e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c58bbe61b10e2f223cf9f662f10d95ca72819b02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159561"
 ---
 # <a name="helpstring-attribute"></a>atributo helpstring
 
@@ -82,7 +82,7 @@ Una instrucción de definición de interfaz MIDL como [**propget**](propget.md) 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use las [**funciones GetDocumentation**](/windows/win32/api/oaidl/nf-oaidl-itypelib-getdocumentation) en las interfaces [**ITypeLib**](/windows/win32/api/oaidl/nn-oaidl-itypelib) [**e ITypeInfo**](/windows/win32/api/oaidl/nn-oaidl-itypeinfo) para recuperar la cadena de ayuda.
 

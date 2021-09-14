@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b1b73a54ae9b5ccabacfbb1153c5d0d91f951e83082a1bdd3c7f7551ad813804
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: acaf5e45eac6a630d0589e3c8fad106ae29fa3dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070136"
 ---
 # <a name="cbaseallocatornotifysample-method"></a>Método CBaseAllocator.NotifySample
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando hay subprocesos que esperan ejemplos, el valor de [**CBaseAllocator::m \_ lWaiting**](cbaseallocator-m-lwaiting.md) es mayor que cero. Si *m \_ lWaiting* es mayor que cero, este método llama a la función **ReleaseSemaphore** en el semáforo [**CBaseAllocator::m \_ hSem,**](cbaseallocator-m-hsem.md) activando los subprocesos en espera. También restablece *m \_ lWaiting* a cero.
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a271cc81fe97fb25850bfe4dcb7d2edb55ba3c69805dab17d013bc646768e87f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 347b1f22f06431c5490d4fdac15cdb22b25da69e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118384736"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159663"
 ---
 # <a name="byte-attribute"></a>atributo byte
 
@@ -38,13 +38,13 @@ Especifica un identificador MIDL válido. Los identificadores MIDL válidos cons
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un **elemento de** datos byte no se somete a ninguna conversión para la transmisión en la red como podría ser un tipo [**char.**](char-idl.md)
 
-El **tipo byte** es uno de los tipos base del lenguaje de definición de interfaz (IDL). El **tipo byte** puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador function-return-type y como especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
+El **tipo byte** es uno de los tipos base del lenguaje de definición de interfaz (IDL). El **tipo de** byte puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador function-return-type y como especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

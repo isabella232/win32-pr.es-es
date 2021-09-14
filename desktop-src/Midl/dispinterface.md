@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3df65adc3bfa486907df0465f2fca5a1427f6d0b1eb89b5c02e6f199be71e9e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f7cc2b6087b53ff81aa7270a209266dd8248884
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118384672"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159615"
 ---
 # <a name="dispinterface-attribute"></a>dispinterface (atributo)
 
@@ -95,14 +95,14 @@ El *tipo* puede ser cualquier tipo declarado o integrado, o un puntero a cualqui
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El compilador MIDL acepta la siguiente ordenación de parámetros (de izquierda a derecha):
 
 1.  Parámetros obligatorios (parámetros que no tienen el \[ valor predeterminado u atributos \] \[ \] opcionales),
 2.  Parámetros opcionales con o sin el \[ atributo \] defaultvalue,
 3.  parámetros con el \[ atributo opcional y sin el atributo \] \[ \] defaultvalue,
-4.  \[[**Parámetro lcid,**](lcid.md) \] si lo hay,
+4.  \[[**parámetro lcid,**](lcid.md) \] si lo hay,
 5.  \[[**retval**](retval.md) \] Parámetro
 
 Las funciones de método se especifican exactamente como se describe en la página de referencia del [**módulo,**](module.md) salvo que no se permite \[ [](entry.md) \] el atributo de entrada. Tenga en cuenta que STDOLE32. TLB (STDOLE. TLB en sistemas de 16 bits) debe importarse, porque **una interfaz dispinterface** hereda de IDispatch.
@@ -118,7 +118,7 @@ methods:
     [id(1)] HRESULT Show();
 ```
 
-A diferencia de los miembros de interfaz, los miembros dispinterface no pueden usar el atributo [**retval**](retval.md) para devolver un valor además de un código de error HRESULT. El \[ [**atributo lcid**](lcid.md) \] tampoco es válido para las interfaces dispinterface, porque IDispatch::Invoke pasa un LCID. Sin embargo, es posible volver a declarar una interfaz que use estos atributos.
+A diferencia de los miembros de interfaz, los miembros dispinterface no pueden usar el atributo [**retval**](retval.md) para devolver un valor además de un código de error HRESULT. El \[ [**atributo lcid**](lcid.md) tampoco es válido para \] las interfaces dispinterface, porque IDispatch::Invoke pasa un LCID. Sin embargo, es posible volver a declarar una interfaz que use estos atributos.
 
 Con la segunda sintaxis, las interfaces que admiten IDispatch y se declaran anteriormente en un script ODL se pueden volver a declarar como interfaces IDispatch como las siguientes:
 
@@ -247,7 +247,7 @@ dispinterface MyObject
 [**vararg**](vararg.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: coclass (atributo)
 description: La instrucción coclass proporciona una lista de las interfaces admitidas para un objeto de componente.
 ms.assetid: 2c636327-ad18-4087-b495-d1aa84a07f48
 keywords:
-- atributo de coclase MIDL
+- atributo coclass MIDL
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5ba95b38675869637c679a2409a82fb812709ec8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159651"
 ---
 # <a name="coclass-attribute"></a>coclass (atributo)
 
-La instrucción **CoClass** proporciona una lista de las interfaces admitidas para un objeto de componente.
+La **instrucción coclass** proporciona una lista de las interfaces admitidas para un objeto de componente.
 
 ``` syntax
 [
@@ -43,10 +43,10 @@ coclass classname
 
 <dl> <dt>
 
-*coclass-Attribute-List* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-El **\[** atributo [**UUID**](uuid.md) **\]** es necesario en una **coclase**. Es el mismo **\[ UUID \]** que se registra como CLSID en la base de datos de registro del sistema. Los **\[** atributos [**HelpString**](helpstring.md) **\]** , **\[** [**HelpContext**](helpcontext.md) **\]** , **\[** [**licensed**](licensed.md) **\]** , **\[** [**version**](version.md) **\]** , **\[** [**control**](control.md) **\]** , **\[** [**Hidden**](hidden.md) **\]** y **\[** [**appobject**](appobject.md) **\]** se aceptan, pero no es necesario, antes de una definición de **coclase** .
+El **\[** [**atributo uuid**](uuid.md) **\]** es necesario en una **coclase**. Se trata del mismo **\[ uuid \]** que se registra como CLSID en la base de datos de registro del sistema. Los atributos helpstring , helpcontext , licensed , version , control , hidden y appobject se aceptan, pero no son necesarios, antes de una **\[** [](helpstring.md) **\]** **\[** [](helpcontext.md) **\]** **\[** [](licensed.md) **\]** **\[** [](version.md) **\]** **\[** [](control.md) **\]** **\[** [](hidden.md) **\]** **\[** [](appobject.md) **\]** **definición de la coclase.**
 
 </dd> <dt>
 
@@ -57,23 +57,23 @@ Nombre por el que se conoce el objeto común en la biblioteca de tipos.
 
 </dd> <dt>
 
-*interfaz: atributos* 
+*interface-attributes* 
 </dt> <dd>
 
-Atributos opcionales para la interfaz o dispinterface. Los **\[** atributos [**source**](source.md) **\]** , **\[** [**default**](default.md) **\]** y **\[** [**Restricted**](restricted.md) **\]** se aceptan en una interfaz o dispinterface dentro de una **coclase**.
+Atributos opcionales para la interfaz o dispinterface. Los atributos de origen , predeterminado y restringido **\[** [](source.md) **\]** se **\[** [](default.md) **\]** aceptan en **\[** [](restricted.md) **\]** una interfaz o interfaz dispinterface dentro de **una coclase**.
 
 </dd> <dt>
 
-*interfaz* 
+*interfacename* 
 </dt> <dd>
 
-Una interfaz declarada con la palabra clave [**interface**](interface.md) o una dispinterface declarada con la palabra clave [**dispinterface**](dispinterface.md) .
+Una interfaz declarada con la palabra clave [**interface**](interface.md) o una interfaz dispinterface declarada con la [**palabra clave dispinterface.**](dispinterface.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El modelo de objetos componentes de Microsoft define una clase como una implementación de que permite **QueryInterface** entre un conjunto de interfaces.
+El modelo de objetos componentes de Microsoft define una clase como una implementación que permite **QueryInterface** entre un conjunto de interfaces.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -107,13 +107,13 @@ coclass mycoclass
 [**appobject**](appobject.md)
 </dt> <dt>
 
-[**control**](control.md)
+[**Control**](control.md)
 </dt> <dt>
 
-[**predeterminada**](default.md)
+[**Predeterminado**](default.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
@@ -128,33 +128,33 @@ coclass mycoclass
 [**helpcontext**](helpcontext.md)
 </dt> <dt>
 
-[**plusvalía**](hidden.md)
+[**Oculto**](hidden.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[**bajo**](licensed.md)
+[**Licencia**](licensed.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**Restrict**](restricted.md)
+[**Restringido**](restricted.md)
 </dt> <dt>
 
-[**fuentes**](source.md)
+[**Fuente**](source.md)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

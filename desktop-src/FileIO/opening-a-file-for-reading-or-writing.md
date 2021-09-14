@@ -1,25 +1,25 @@
 ---
-description: Código de ejemplo que muestra cómo utilizar la función CreateFile para crear un nuevo archivo o abrir un archivo existente.
+description: Código de ejemplo que muestra cómo usar la función CreateFile para crear un nuevo archivo o abrir un archivo existente.
 ms.assetid: 04e089a7-c559-4a35-a38b-e1acdf3438d1
 title: Apertura de un archivo para lectura o escritura
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a254684538a64a37cd94841812df84808da8374b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810766"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069881"
 ---
 # <a name="opening-a-file-for-reading-or-writing"></a>Apertura de un archivo para lectura o escritura
 
-La función [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) puede crear un archivo nuevo o abrir uno existente. Debe especificar el nombre de archivo, las instrucciones de creación y otros atributos. Cuando una aplicación crea un archivo nuevo, el sistema operativo lo agrega al directorio especificado.
+La [**función CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) puede crear un archivo o abrir uno existente. Debe especificar el nombre de archivo, las instrucciones de creación y otros atributos. Cuando una aplicación crea un nuevo archivo, el sistema operativo lo agrega al directorio especificado.
 
-## <a name="example-open-a-file-for-writing"></a>Ejemplo: abrir un archivo para escribir en él
+## <a name="example-open-a-file-for-writing"></a>Ejemplo: Abrir un archivo para escribir
 
-En el ejemplo siguiente se usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para crear un nuevo archivo y abrirlo para escritura y [**WriteFile**](/windows/desktop/api/FileAPI/nf-fileapi-writefile) para escribir una cadena simple de forma sincrónica en el archivo.
+En el ejemplo siguiente se [**usa CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para crear un archivo y abrirlo para escribirlo y [**WriteFile**](/windows/desktop/api/FileAPI/nf-fileapi-writefile) para escribir una cadena simple sincrónicamente en el archivo.
 
-Una llamada subsiguiente para abrir este archivo con [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) producirá un error hasta que se cierre el controlador.
+Se producirá un error en una llamada posterior para abrir este archivo [**con CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) hasta que se cierre el identificador.
 
 
 ```C++
@@ -138,13 +138,13 @@ void DisplayError(LPTSTR lpszFunction)
 
 
 
-## <a name="example-open-a-file-for-reading"></a>Ejemplo: abrir un archivo para leerlo
+## <a name="example-open-a-file-for-reading"></a>Ejemplo: Abrir un archivo para leer
 
-En el ejemplo siguiente se usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para abrir un archivo existente para lectura y [**readfile**](/windows/desktop/api/FileAPI/nf-fileapi-readfile) para leer de forma sincrónica hasta 80 caracteres del archivo.
+En el ejemplo siguiente se [**usa CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para abrir un archivo existente para leer y [**ReadFile**](/windows/desktop/api/FileAPI/nf-fileapi-readfile) para leer hasta 80 caracteres de forma sincrónica desde el archivo.
 
-En este caso, [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) solo se realiza correctamente si el archivo especificado ya existe en el directorio actual. Una llamada subsiguiente para abrir este archivo con **CreateFile** se realizará correctamente si la llamada usa los mismos modos de acceso y uso compartido.
+En este caso, [**CreateFile solo**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) se realiza correctamente si el archivo especificado ya existe en el directorio actual. Una llamada posterior para abrir este archivo con **CreateFile** se realizará correctamente si la llamada usa los mismos modos de acceso y uso compartido.
 
-Sugerencia: puede usar el archivo que creó con el ejemplo WriteFile anterior para probar este ejemplo.
+Sugerencia: Puede usar el archivo que creó con el ejemplo de WriteFile anterior para probar este ejemplo.
 
 
 ```C++

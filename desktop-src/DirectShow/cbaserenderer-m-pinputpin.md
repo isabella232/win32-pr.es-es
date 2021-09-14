@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 510927a5118e10a69473cd0d2e2eda24a4343aa59cb73d5e64c8616407d2ee16
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3072951304094fd28435c60ec693ffffc7a327e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119429305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070118"
 ---
 # <a name="cbaserendererm_pinputpin-member"></a>Miembro CBaseRenderer::m \_ pInputPin
 

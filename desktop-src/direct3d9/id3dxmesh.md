@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3e6617287a9465384b3c260aebe384f4764bbd0f41a673408f48d36c450597f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c2a677edba4bad5e908b6dd69aa21a467b2a245
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070349"
 ---
 # <a name="id3dxmesh-interface"></a>Interfaz ID3DXMesh
 
 Las aplicaciones usan los métodos de la interfaz ID3DXMesh para manipular objetos de malla.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DXMesh** hereda de [**ID3DXBaseMesh**](id3dxbasemesh.md). **ID3DXMesh** también tiene estos tipos de miembros:
 
@@ -49,7 +49,7 @@ La **interfaz ID3DXMesh** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener la **interfaz ID3DXMesh,** llame a las funciones [**D3DXCreateMesh**](d3dxcreatemesh.md) o [**D3DXCreateMeshFVF.**](d3dxcreatemeshfvf.md)
 

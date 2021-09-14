@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 825fbdc18537fa73561f8a662ecc0388ab18be0b9bf26ca2cbfeadd7bfb9b469
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f277e291a4296253d7c0b1b11c694952ddc17ddf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119732295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070433"
 ---
 # <a name="swbemprivilegesetremove-method"></a>Método SWbemPrivilegeSet.Remove
 
@@ -47,7 +47,7 @@ SWbemPrivilegeSet.Remove( _
 *iPrivilege* 
 </dt> <dd>
 
-Obligatorio. Esta es una de las constantes WMI del [**grupo WbemPrivilegeEnum.**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) Estas constantes son básicamente enteros que representan privilegios específicos. Por ejemplo, para quitar el privilegio que le permite apagar un sistema Windows, use la constante **wbemPrivilegeShutdown** o el equivalente numérico de 0x17.
+Necesario. Esta es una de las constantes WMI del [**grupo WbemPrivilegeEnum.**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) Estas constantes son básicamente enteros que representan privilegios específicos. Por ejemplo, para quitar el privilegio que le permite apagar un sistema Windows, use la constante **wbemPrivilegeShutdown** o el equivalente numérico de 0x17.
 
 </dd> </dl>
 
@@ -79,11 +79,11 @@ El privilegio especificado no existe.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPrivilegeSet<br/>                                                     |

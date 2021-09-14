@@ -16,26 +16,26 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 551650e7c8b6b0f830a84aee37bf671bbc300224c9e300a3f6f841ef503a504d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5a7cbb28c53d8ff357d4e5174d24f92ba2d0cad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070095"
 ---
 # <a name="cimagedisplay-class"></a>CImageDisplay (clase)
 
 ![cimagedisplayclasshierarchy](images/wutil06.png)
 
-La `CImageDisplay` clase es una clase auxiliar para que los representadores de vídeo GDI administren el formato de presentación. El objeto almacena una [**estructura VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) que describe el modo de presentación actual, que se inicializa en el método constructor del objeto. El método **CheckMediaType del** objeto comprueba si un tipo de medio propuesto se puede representar de forma eficaz mediante GDI.
+La clase es una clase auxiliar para que los representadores de vídeo `CImageDisplay` GDI administren el formato de presentación. El objeto almacena una [**estructura VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) que describe el modo de presentación actual, que se inicializa en el método constructor del objeto. El método **CheckMediaType del** objeto comprueba si un tipo de medio propuesto se puede representar de forma eficaz mediante GDI.
 
 
 
-| Variables miembro protegidas                                       | Descripción                                                                            |
+| Variables de miembro protegido                                       | Descripción                                                                            |
 |------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | [**m \_ Display**](cimagedisplay-m-display.md)                    | **Estructura VIDEOINFO** que describe el formato de presentación actual.                     |
 | Métodos protegidos                                                | Descripción                                                                            |
-| [**CheckBitFields**](cimagedisplay-checkbitfields.md)           | Valida las máscaras de color de una **estructura VIDEOINFO.**                                |
+| [**CheckBitFields**](cimagedisplay-checkbitfields.md)           | Valida las máscaras de color en una **estructura VIDEOINFO.**                                |
 | [**CountPrefixBits**](cimagedisplay-countprefixbits.md)         | Calcula el número de cero bits al principio de un campo de bits especificado.              |
 | [**CountSetBits**](cimagedisplay-countsetbits.md)               | Devuelve el número de bits establecido en 1 en un campo de bits especificado.                          |
 | Métodos públicos                                                   | Descripción                                                                            |
@@ -48,7 +48,7 @@ La `CImageDisplay` clase es una clase auxiliar para que los representadores de v
 | [**GetColourMask**](cimagedisplay-getcolourmask.md)             | Recupera las máscaras de color para el formato de presentación actual.                              |
 | [**GetDisplayDepth**](cimagedisplay-getdisplaydepth.md)         | Recupera la profundidad de bits del modo de presentación actual.                                   |
 | [**GetDisplayFormat**](cimagedisplay-getdisplayformat.md)       | Recupera un formato de vídeo que describe el modo de presentación actual.                      |
-| [**IsPalettsed**](cimagedisplay-ispalettised.md)               | Vuelve a determinar si el formato de presentación actual está sobresaltado.                           |
+| [**IsPalcarpesed**](cimagedisplay-ispalettised.md)               | Vuelve a determinar si el formato de presentación actual está en deserción.                           |
 | [**RefreshDisplayType**](cimagedisplay-refreshdisplaytype.md)   | Actualiza el formato de vídeo del objeto para que coincida con la pantalla especificada.                       |
 
 

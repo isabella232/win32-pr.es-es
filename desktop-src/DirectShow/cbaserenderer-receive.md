@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe440b7ac0c7b05c2d3cf9d7ca2019a788e272b7aca6acd6a747738a255ca39b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 96abb2ee3d44604c23e9943e086a52312a011e92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070103"
 ---
 # <a name="cbaserendererreceive-method"></a>Método CBaseRenderer.Receive
 
@@ -53,13 +53,13 @@ Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strm
 
 Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El pin de entrada llama a este método cuando recibe una muestra del filtro ascendente.
+El pin de entrada llama a este método cuando recibe un ejemplo del filtro ascendente.
 
 Si el filtro se está ejecutando, este método realiza los pasos siguientes:
 
-1.  Programa el ejemplo para la representación ([**CBaseRenderer::P repareReceive**](cbaserenderer-preparereceive.md)).
+1.  Programa el ejemplo para su representación ([**CBaseRenderer::P repareReceive**](cbaserenderer-preparereceive.md)).
 2.  Espera la hora programada ([**CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md)).
 3.  Representa el ejemplo ([**CBaseRenderer::Render**](cbaserenderer-render.md)).
 4.  Libera el ejemplo ([**CBaseRenderer::ClearPendingSample**](cbaserenderer-clearpendingsample.md)).

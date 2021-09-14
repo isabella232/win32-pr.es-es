@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a0d84c982fe3a3e7834210741f5bd20cc52615197756653c743f5cd67d0b59dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59d1d16a21996937357d0358625772a4b6712019
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118084934"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070319"
 ---
 # <a name="apijetsetcolumns-method"></a>Método Api.JetSetColumns
 
-Permite a una aplicación establecer varios valores de columna en una sola operación. Se usa una [matriz](./jet-setcolumn-class.md) JET_SETCOLUMN estructura para describir el conjunto de valores de columna que se va a establecer y para describir los búferes de entrada para cada valor de columna que se va a establecer.
+Permite a una aplicación establecer varios valores de columna en una sola operación. Se usa una [matriz](./jet-setcolumn-class.md) de estructuras JET_SETCOLUMN para describir el conjunto de valores de columna que se va a establecer y para describir los búferes de entrada para cada valor de columna que se va a establecer.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -82,7 +82,7 @@ public static JET_wrn JetSetColumns(
   - tableid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor en el que se establecen las columnas.
+    Cursor en el que se establecerán las columnas.
 
 <!-- end list -->
 
@@ -107,7 +107,7 @@ Una advertencia. Si el último conjunto de columnas tiene una advertencia, esta 
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

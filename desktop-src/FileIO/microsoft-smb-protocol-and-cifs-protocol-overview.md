@@ -4,23 +4,23 @@ ms.assetid: 641017fa-3721-40aa-b13c-e26c8b61ce5c
 title: Introducción al protocolo SMB de Microsoft y al protocolo CIFS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09702c719d4e4c5225b35691d7e23980c90c959b7096d7995f3d60b3ef0b204b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30326221694ce843733f6da7a6ad49c8dff336ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118951154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069915"
 ---
 # <a name="microsoft-smb-protocol-and-cifs-protocol-overview"></a>Introducción al protocolo SMB de Microsoft y al protocolo CIFS
 
 El protocolo bloque de mensajes del servidor (SMB) es un protocolo de uso compartido de archivos de red y, como se implementa en Microsoft Windows se conoce como protocolo SMB de Microsoft. El conjunto de paquetes de mensajes que define una versión determinada del protocolo se denomina dialecto. El protocolo common Internet File System (CIFS) es un dialecto de SMB. SMB y CIFS también están disponibles en VMS, varias versiones de Unix y otros sistemas operativos.
 
-La referencia técnica a CIFS está disponible en Microsoft Corporation protocolo de acceso a archivos de [Common Internet File System (CIFS).](/openspecs/windows_protocols/ms-cifs/d416ff7c-c536-406e-a951-4f04b2fd1d2b)
+La referencia técnica a CIFS está disponible Microsoft Corporation en [Common Internet File System (CIFS) File Access Protocol](/openspecs/windows_protocols/ms-cifs/d416ff7c-c536-406e-a951-4f04b2fd1d2b).
 
 Aunque su propósito principal es el uso compartido de archivos, la funcionalidad adicional del Protocolo SMB de Microsoft incluye lo siguiente:
 
 -   [Negociación de dialectos](microsoft-smb-protocol-dialects.md)
--   Determinar otros servidores del Protocolo SMB de Microsoft en la red o examinar la red
+-   Determinación de otros servidores de protocolo SMB de Microsoft en la red o exploración de red
 -   Impresión a través de una red
 -   [Autenticación de acceso a archivos, directorios y recurso compartido](microsoft-smb-protocol-authentication.md)
 -   Bloqueo de archivos y registros
@@ -31,11 +31,11 @@ Aunque su propósito principal es el uso compartido de archivos, la funcionalida
 
 En el modelo de red OSI, el protocolo SMB de Microsoft se usa con mayor frecuencia como capa de aplicación o protocolo de capa de presentación, y se basa en protocolos de nivel inferior para el transporte. El protocolo de capa de transporte con el que se suele usar el Protocolo SMB de Microsoft es NetBIOS sobre TCP/IP[(NBT).](/previous-versions//bb870909(v=vs.85)) Sin embargo, el Protocolo SMB de Microsoft también se puede usar sin un protocolo de transporte independiente; la combinación del Protocolo SMB de Microsoft/NBT se suele usar para la compatibilidad con versiones anteriores.
 
-El Protocolo SMB de Microsoft es una implementación cliente-servidor y consta de un conjunto de paquetes de datos, cada uno de los que contiene una solicitud enviada por el cliente o una respuesta enviada por el servidor. Estos paquetes se pueden clasificar ampliamente de la siguiente manera:
+El protocolo SMB de Microsoft es una implementación cliente-servidor y consta de un conjunto de paquetes de datos, cada uno de los que contiene una solicitud enviada por el cliente o una respuesta enviada por el servidor. Estos paquetes se pueden clasificar ampliamente de la siguiente manera:
 
 -   Paquetes de control de sesión Establece e interrumpe una conexión a los recursos de servidor compartido.
 -   Paquetes de acceso a archivos Accede y manipula archivos y directorios en el servidor remoto.
--   Paquetes de mensajes generales Envía datos para imprimir colas, mailslots y canalizaciones con nombre, y proporciona datos sobre el estado de las colas de impresión.
+-   Paquetes de mensajes generales Envía datos a colas de impresión, mailslots y canalizaciones con nombre, y proporciona datos sobre el estado de las colas de impresión.
 
 Algunos paquetes de mensajes se pueden agrupar y enviar en una transmisión para reducir la latencia de respuesta y aumentar el ancho de banda de red. Esto se denomina "procesamiento por lotes". En [la sección Escenario de paquetes Exchange](microsoft-smb-protocol-packet-exchange-scenario.md) SMB de Microsoft se describe un ejemplo de una sesión del protocolo SMB de Microsoft que usa el procesamiento por lotes de paquetes.
 

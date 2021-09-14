@@ -6,12 +6,12 @@ keywords:
 - IDL MIDL, atributos, llamada a función
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a3800b62bb6b94aac330ecf0b06761d62227a4ed6100f2fabdde5b61cd952d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4d53407abf464d7b201c49d9cb2b1d3f3625b9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159578"
 ---
 # <a name="function-call-attributes"></a>Atributos de llamada de función
 

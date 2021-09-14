@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 674528b6da53b7835e437afac9a0564f91785b2f9a13f132e87a6763b80881c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92cba22e128a76f7884050d74a7819142c696dc9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070133"
 ---
 # <a name="cbaseallocatorsetwaiting-method"></a>CBaseAllocator.SetWaiting (método)
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método incrementa la variable [**miembro CBaseAllocator::m \_ lWaiting.**](cbaseallocator-m-lwaiting.md) Si un subproceso está bloqueado en el método [**CBaseAllocator::GetBuffer,**](cbaseallocator-getbuffer.md) el asignador llama a y espera a que se señale el `SetWaiting` semáforo de [**CBaseAllocator::m \_ hSem.**](cbaseallocator-m-hsem.md) El [**método CBaseAllocator::ReleaseBuffer**](cbaseallocator-releasebuffer.md) señala el semáforo y establece *m \_ lWaiting* de nuevo en cero.
 

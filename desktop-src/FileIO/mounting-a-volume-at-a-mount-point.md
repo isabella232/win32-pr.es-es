@@ -1,17 +1,17 @@
 ---
 description: Cómo crear una carpeta montada.
 ms.assetid: c97bfd10-66ff-41e1-ba3b-f98a019948d5
-title: Crear una carpeta montada
+title: Creación de una carpeta montada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19ee89e029a0ce546687341f3da929a22219dff2b128d793d9f7f5130774f834
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68ad8a16c4a8c06ae22fa7faf2c2b0a2e8cdfc38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069906"
 ---
-# <a name="creating-a-mounted-folder"></a>Crear una carpeta montada
+# <a name="creating-a-mounted-folder"></a>Creación de una carpeta montada
 
 En el ejemplo siguiente se muestra cómo crear una carpeta montada. Para obtener más información, vea [Crear carpetas montadas.](mounting-and-dismounting-a-volume.md)
 

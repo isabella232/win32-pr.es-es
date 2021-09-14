@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 376c2b292b0bdba9a79593c8264ecce17b916a88cfd49407638d637d1fbda6b0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b71ced14a6f92a3056ac4f42e55bc3858c578ff6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119767845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070026"
 ---
 # <a name="csourceremovepin-method"></a>Método CSource.RemovePin
 
@@ -64,7 +64,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método destructor llama a este método para quitar el pin de salida del filtro.
 

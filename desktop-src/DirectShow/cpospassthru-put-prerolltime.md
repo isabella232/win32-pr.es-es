@@ -1,5 +1,5 @@
 ---
-description: El método \_ put PrerollTime establece la cantidad de datos que se pondrán en cola antes de la posición inicial. Este método implementa el método \_ PrerollTime IMediaPosition::p ut.
+description: El método \_ put PrerollTime establece la cantidad de datos que se pondrán en cola antes de la posición inicial. Este método implementa el método IMediaPosition::p ut \_ PrerollTime.
 ms.assetid: 5c35fb1d-2296-493f-8104-601127d7dd9f
 title: CPosPassThru.put_PrerollTime método (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 825c3c584fc6db7eb9f94b4e8d01e003f5cf6c36ff8adac4041fd48f792ca858
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60bd4eddc7688373386147ea7999fdbd17f9af6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119909205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070062"
 ---
 # <a name="cpospassthruput_prerolltime-method"></a>Método PrerollTime de CPosPassThru.put \_
 

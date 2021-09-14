@@ -12,20 +12,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c608b1d3f44a82d7aa964e803dec147a7216a71e85c6d797135713cf28af3fa0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e9cc5e0bde8983cfd8c544d3898d4af628e10f87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119317234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070006"
 ---
 # <a name="csystemclock-class"></a>CSystemClock (clase)
 
-![jerarquía de clases csystemclock](images/sclock01.png)
+![Jerarquía de clases csystemclock](images/sclock01.png)
 
 La `CSystemClock` clase implementa un reloj que devuelve la hora del sistema.
 
-Esta clase se deriva de la [**clase CBaseReferenceClock**](cbasereferenceclock.md) y agrega compatibilidad con las interfaces **IPersist** e [**IAMClockAdjust.**](/windows/desktop/api/Strmif/nn-strmif-iamclockadjust)
+Esta clase deriva de la [**clase CBaseReferenceClock**](cbasereferenceclock.md) y agrega compatibilidad con las interfaces **IPersist** y [**IAMClockAdjust.**](/windows/desktop/api/Strmif/nn-strmif-iamclockadjust)
 
 
 
@@ -33,10 +33,10 @@ Esta clase se deriva de la [**clase CBaseReferenceClock**](cbasereferenceclock.m
 |-------------------------------------------------------|-----------------------------------------------------|
 | [**CreateInstance**](csystemclock-createinstance.md) | Crea una nueva instancia de este objeto.              |
 | [**CSystemClock**](csystemclock-csystemclock.md)     | Método constructor.                                 |
-| IamClockAdjust (métodos)                                | Descripción                                         |
+| Métodos IAMClockAdjust                                | Descripción                                         |
 | [**SetClockDelta**](csystemclock-setclockdelta.md)   | Ajusta la hora del reloj.                             |
 | Métodos IPersist                                      | Descripción                                         |
-| [**GetClassID**](csystemclock-getclassid.md)         | Devuelve el identificador de clase (CLSID) del objeto. |
+| [**GetClassID**](csystemclock-getclassid.md)         | Devuelve el identificador de clase (CLSID) del objeto . |
 
 
 

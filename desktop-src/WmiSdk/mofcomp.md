@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: mofcomp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58821d99dfc816957684ad083710043502394b470548b2cf638a41ded850dc56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da63525e4bb8a32f3628b68295e5cc8ade0b08de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117923540"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070449"
 ---
 # <a name="mofcomp"></a>mofcomp
 
@@ -41,7 +41,7 @@ mofcomp
   <MOFfile>
 ```
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 
 <dl> <dt>
 
@@ -131,7 +131,7 @@ Solicita que el compilador realice una comprobación de sintaxis wmi. El **modif
 
 </dd> <dt>
 
-<span id="-P__Password_"></span><span id="-p__password_"></span><span id="-P__PASSWORD_"></span>**-P:<** _password_*_>_*
+<span id="-P__Password_"></span><span id="-p__password_"></span><span id="-P__PASSWORD_"></span>**-P:<** _contraseña_*_>_*
 </dt> <dd>
 
 Especifica Contraseña *como contraseña* para que el usuario del equipo escriba al iniciar sesión.
@@ -243,13 +243,13 @@ reconstructed, place the #PRAGMA AUTORECOVER statement on the first
 line of the MOF file.
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El compilador MOF está disponible en el directorio wbem %Windir% \\ \\ System32. Debe especificar el archivo MOF como parámetro del compilador de MOF. También puede especificar un modificador de autorrecuperación si desea que el archivo MOF se vuelva a compilar automáticamente si alguna vez se tiene que recuperar automáticamente el repositorio CIM. Para obtener más información, escriba **Mofcomp /?** en el símbolo del sistema.
+El compilador MOF está disponible en el directorio wbem %Windir% \\ \\ System32. Debe especificar el archivo MOF como parámetro del compilador de MOF. También puede especificar un modificador Autorecover si desea que el archivo MOF se vuelva a compilar automáticamente si alguna vez se tiene que recuperar automáticamente el repositorio CIM. Para obtener más información, escriba **Mofcomp /?** en el símbolo del sistema.
 
-Un archivo MOF que usa el juego de caracteres Unicode contiene una firma como los dos primeros bytes del archivo. Esta firma es U+FFFE o U+FEFF, dependiendo de la ordenación de bytes del archivo.
+Un archivo MOF que usa el juego de caracteres Unicode contiene una firma como los dos primeros bytes del archivo. Esta firma es U+FFFE o U+FEFF, en función de la ordenación de bytes del archivo.
 
-Cuando no se produce ningún error en el proceso de análisis, el compilador de MOF se conecta al servidor WMI que se ejecuta en el equipo local a menos que se especifique el modificador **-check.** Las clases e instancias definidas en el archivo MOF se agregan al repositorio WMI.
+Cuando no se produce ningún error en el proceso de análisis, el compilador MOF se conecta al servidor WMI que se ejecuta en el equipo local a menos que se especifique el modificador **-check.** Las clases e instancias definidas en el archivo MOF se agregan al repositorio WMI.
 
 Cuando se produce un error al actualizar el repositorio WMI, el compilador no intenta devolver el repositorio a su estado antes de que el compilador empezara a procesarse.
 
@@ -259,7 +259,7 @@ Cuando se produce un error al actualizar el repositorio WMI, el compilador no in
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -270,13 +270,13 @@ Cuando se produce un error al actualizar el repositorio WMI, el compilador no in
 
 <dl> <dt>
 
-[**pragma (espacio de nombres)**](pragma-namespace.md)
+[**espacio de nombres pragma**](pragma-namespace.md)
 </dt> <dt>
 
-[Compilación de archivos MOF](compiling-mof-files.md)
+[Compilar archivos MOF](compiling-mof-files.md)
 </dt> <dt>
 
-[Compilación de archivos MOF localizados](compiling-localized-mof-files.md)
+[Compilar archivos MOF localizados](compiling-localized-mof-files.md)
 </dt> <dt>
 
 [Registro de un proveedor](registering-a-provider.md)

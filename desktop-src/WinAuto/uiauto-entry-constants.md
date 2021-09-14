@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre las constantes Automatiza
 ms.assetid: 39206da8-e038-4a3b-833f-5902142911ac
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8dbb24675a8fa82807a3c34ae9b33659cece3bc78a7a7e1f0443bb832330e99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe1ff196d225e03c86a6b4f55fa6dca16f06908b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119859685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070556"
 ---
 # <a name="ui-automation-constants"></a>Automatización de la interfaz de usuario constantes
 

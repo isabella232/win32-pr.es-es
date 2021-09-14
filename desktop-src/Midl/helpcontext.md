@@ -3,7 +3,7 @@ title: helpcontext (atributo)
 description: El atributo \ helpcontext\ especifica un identificador de contexto que permite al usuario ver información sobre este elemento en el archivo de Ayuda.
 ms.assetid: 44a60c75-be69-4cd9-afb0-5eb988830e6c
 keywords:
-- atributo helpcontext MIDL
+- Atributo helpcontext MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3caa5dd32257fb5d75bbf77cde4ae5e71c6e97574cd1c263ead47aacedccadc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75a8811a73515528981a8214caba3fe2778e2ea9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159567"
 ---
 # <a name="helpcontext-attribute"></a>helpcontext (atributo)
 
-El \[ **atributo helpcontext** especifica un identificador de contexto que permite al \] usuario ver información sobre este elemento en el archivo de Ayuda.
+El \[ **atributo helpcontext** especifica un identificador de contexto que permite al usuario \] ver información sobre este elemento en el archivo de Ayuda.
 
 ``` syntax
 [
@@ -81,11 +81,11 @@ Especifica las instrucciones que son la definición del elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El atributo helpcontext se puede aplicar a los siguientes \[  \] elementos: [**library**](library.md), \[ [**importlib**](importlib.md) \] , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**module**](module.md), [**typedef**](typedef.md), **method**, **property** o [**coclass**](coclass.md).
 
-*Helpcontext-value* es un identificador de contexto de 32 bits dentro del archivo de Ayuda que se puede recuperar con las funciones [**GetDocumentation**](/windows/win32/api/oaidl/nf-oaidl-itypelib-getdocumentation) en las interfaces [**ITypeLib**](/windows/win32/api/oaidl/nn-oaidl-itypelib) e [**ITypeInfo.**](/windows/win32/api/oaidl/nn-oaidl-itypeinfo)
+*helpcontext-value* es un identificador de contexto de 32 bits dentro del archivo de Ayuda que se puede recuperar con las funciones [**GetDocumentation**](/windows/win32/api/oaidl/nf-oaidl-itypelib-getdocumentation) en las interfaces [**ITypeLib**](/windows/win32/api/oaidl/nn-oaidl-itypelib) e [**ITypeInfo.**](/windows/win32/api/oaidl/nn-oaidl-itypeinfo)
 
 ## <a name="examples"></a>Ejemplos
 

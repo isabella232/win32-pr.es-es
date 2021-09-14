@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c78d5dbcdba6551ef27299ea78bad217f17f68777499f15846c33c0496cb8fbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c97227809be462d6b68cde0281ab0cd4cf1f96e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070154"
 ---
-# <a name="cbaseallocatorm_hsem-member"></a>CBaseAllocator::m \_ miembro hSem
+# <a name="cbaseallocatorm_hsem-member"></a>Miembro de CBaseAllocator::m \_ hSem
 
 Semáforo que se señala cuando una muestra está disponible.
 

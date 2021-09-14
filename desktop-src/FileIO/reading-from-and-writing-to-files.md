@@ -4,12 +4,12 @@ ms.assetid: 14ecb06c-3f80-47b8-9964-6a2c3b572300
 title: Leer y escribir en archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b88de3510a681839a9592bed4755de6249f79db117d94985ddb00320381b92c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ffd0e6518ce2430e18bbb11033023ee6dc274573
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119533325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069867"
 ---
 # <a name="reading-from-and-writing-to-files"></a>Leer y escribir en archivos
 
@@ -26,8 +26,8 @@ Para obtener más información, vea los temas siguientes:
 | Tema                                                                                                                                           | Descripción                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | [Colocar un puntero de archivo](positioning-a-file-pointer.md)<br/>                                                                         | Windows un puntero de archivo para realizar un seguimiento de los bytes leídos o escritos.<br/>                                                       |
-| [Lectura o escritura en archivos mediante un esquema Scatter-Gather datos](reading-from-or-writing-to-files-using-a-scatter-gather-scheme.md)<br/> | Describe un esquema de dispersión y recopilación para leer o escribir fragmentos de datos no continuos en una operación.<br/>                   |
-| [Vaciado de System-Buffered datos de E/S en el disco](flushing-system-buffered-i-o-data-to-disk.md)<br/>                                           | Windows los datos en operaciones de lectura y escritura de archivos en búferes de datos mantenidos por el sistema para optimizar el rendimiento del disco.<br/> |
+| [Lectura o escritura en archivos mediante un esquema Scatter-Gather datos](reading-from-or-writing-to-files-using-a-scatter-gather-scheme.md)<br/> | Describe un esquema de dispersión y recopilación para leer o escribir fragmentos de datos no continuos en una sola operación.<br/>                   |
+| [Vaciar System-Buffered datos de E/S en el disco](flushing-system-buffered-i-o-data-to-disk.md)<br/>                                           | Windows los datos en operaciones de lectura y escritura de archivos en búferes de datos mantenidos por el sistema para optimizar el rendimiento del disco.<br/> |
 | [Truncamiento o extensión de archivos](truncating-or-extending-files.md)<br/>                                                                   | Una aplicación puede truncar o extender un archivo llamando a [**SetEndOfFile.**](/windows/desktop/api/FileAPI/nf-fileapi-setendoffile)<br/>                             |
 
 

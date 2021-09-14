@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e1e9cd15c1b219d07518c9630880a5010226c96c63d57539ffb66fab3a6c02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39a9e44de464f58fd1ffc0606551b9a0203ae9e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118643099"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159610"
 ---
 # <a name="dual-attribute"></a>atributo dual
 
-El **atributo** dual identifica una interfaz que expone propiedades y métodos a través de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) y directamente a través de VTBL.
+El **atributo** dual identifica una interfaz que expone propiedades y métodos a través [**de IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) y directamente a través de VTBL.
 
 ``` syntax
 [
@@ -61,13 +61,13 @@ Nombre de la interfaz a la que **se** aplicará el atributo dual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las interfaces identificadas por **el atributo dual** deben ser compatibles con Automation y derivarse de [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) Este atributo no se permite en interfaces dispinterface.
 
 El **atributo** dual crea una interfaz que es una interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) y una interfaz de Modelo de objetos componentes (COM). Las siete primeras entradas de VTBL para una interfaz dual son los siete miembros de **IDispatch** y las entradas restantes son para el acceso directo a los miembros de la interfaz dual. Todos los parámetros y tipos de valor devuelto especificados para los miembros de una interfaz dual deben ser tipos compatibles con Automation.
 
-Todos los miembros de una interfaz dual deben pasar un HRESULT como el valor devuelto de la función. Los miembros, como las funciones de accessor de propiedad, que necesitan devolver otros valores, deben especificar el último parámetro como [**out**](out-idl.md), [**retval**](retval.md), que indica un parámetro de salida que devuelve el valor de la función. Además, los miembros que necesitan admitir varias configuraciones regionales deben pasar un [**parámetro lcid.**](lcid.md)
+Todos los miembros de una interfaz dual deben pasar un valor HRESULT como el valor devuelto de la función. Los miembros, como las funciones de accessor de propiedad, que necesitan devolver otros valores, deben especificar el último parámetro como [**out**](out-idl.md), [**retval**](retval.md), que indica un parámetro de salida que devuelve el valor de la función. Además, los miembros que necesitan admitir varias configuraciones regionales deben pasar un [**parámetro lcid.**](lcid.md)
 
 Una interfaz dual proporciona la velocidad del enlace VTBL directo y la flexibilidad del [**enlace IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) Por esta razón, se recomiendan interfaces duales siempre que sea posible.
 
@@ -80,7 +80,7 @@ Especificar **dual** en una interfaz implica que la interfaz es compatible con A
 
 ### <a name="flags"></a>Marcas
 
-TYPEFLAG \_ FDUAL, TYPEFLAG \_ FOLTOMATION
+TYPEFLAG \_ FDUAL, TYPEFLAG \_ FOLTOMTOMATION
 
 ## <a name="examples"></a>Ejemplos
 

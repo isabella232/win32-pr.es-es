@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 93ccaa1791726cd5efceae78de2b64df76c3defce70dde50c6a8dfeaea8308a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fab398f3f4e3fdd8c23ce1e1c08f5c130478dfb4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070044"
 ---
 # <a name="csourcecsource-constructor"></a>Constructor CSource.CSource
 

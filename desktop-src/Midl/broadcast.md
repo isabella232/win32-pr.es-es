@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f176b03f9d33ee1bbe1d0e805dfc109de477b7499f8fd624ba7732709dc61a10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72c2bbb724fc292a5e3942bf2b6de61b5631cdc0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118385241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159667"
 ---
 # <a name="broadcast-attribute"></a>atributo broadcast
 
@@ -65,7 +65,7 @@ Especifica el tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función a la que se aplicará el atributo **\[ de \]** difusión.
@@ -79,7 +79,7 @@ Lista de parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **\[ palabra clave broadcast \]** especifica que la rutina siempre se difunde a todos los servidores de la red, en lugar de entregarse a un servidor determinado. El cliente recibe la salida de la primera respuesta para devolver correctamente, mientras que las respuestas posteriores se descartan.
 

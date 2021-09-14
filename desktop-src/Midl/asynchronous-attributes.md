@@ -6,16 +6,16 @@ keywords:
 - IDL MIDL, atributos MIDL, asincrónicos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a14ad045be5c3f5980c99fac0e924181c31ae7859f801608c7bb53fe3d81a2b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00aca2276bf1fa5178f1dca3ae4803544066d983
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117807858"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159674"
 ---
 # <a name="asynchronous-attributes"></a>Atributos asincrónicos
 
-Cuando un programa invoca un procedimiento en una interfaz, el procedimiento puede ejecutarse de forma sincrónica o asincrónica. Un procedimiento sincrónico hace que el programa que realiza la llamada espere hasta que el procedimiento se devuelva antes de que el programa pueda continuar. Un procedimiento asincrónico devuelve inmediatamente sin esperar los resultados. Posteriormente, el programa de llamada debe volver a sincronizarse con el procedimiento de interfaz para recibir datos. Para obtener más información, vea [RPC asincrónica.](/windows/desktop/Rpc/asynchronous-rpc)
+Cuando un programa invoca un procedimiento en una interfaz, el procedimiento puede ejecutarse de forma sincrónica o asincrónica. Un procedimiento sincrónico hace que el programa que realiza la llamada espere hasta que el procedimiento se devuelva antes de que el programa pueda continuar. Un procedimiento asincrónico devuelve inmediatamente sin esperar los resultados. Posteriormente, el programa que realiza la llamada debe resincronizarse con el procedimiento de interfaz para recibir datos. Para obtener más información, vea [RPC asincrónica.](/windows/desktop/Rpc/asynchronous-rpc)
 
 Puede usar los atributos siguientes para proporcionar compatibilidad con llamadas a procedimientos remotos asincrónicos.
 

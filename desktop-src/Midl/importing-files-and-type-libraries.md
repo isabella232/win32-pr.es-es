@@ -8,12 +8,12 @@ keywords:
 - bibliotecas de tipos MIDL, importar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 099ada5122ad024e342148bf3c453df0bd50872e6d59a2bbabd7d2892af5f93a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d84b740f29726c1ce4d401fc69b2ea07e811eac0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159538"
 ---
 # <a name="importing-files-and-type-libraries"></a>Importar archivos y bibliotecas de tipos
 
@@ -36,7 +36,7 @@ interface X86PC
 
 La directiva de [**importación**](import.md) de IDL es el método estándar para incorporar definiciones de tipo e interfaz de otros archivos IDL (o ODL) y archivos de encabezado en el archivo IDL. Todas las instrucciones IDL del archivo importado, como definiciones de tipo, declaraciones [**const**](const.md) y definiciones de interfaz, están disponibles para el archivo IDL de importación.
 
-Al igual que la directiva de preprocesador del lenguaje C incluye **\# ,** la directiva [**import**](import.md) indica al compilador que incluya los tipos de datos definidos en los archivos IDL importados. A diferencia **\# de la directiva include,** la directiva **import** omite los prototipos de procedimiento, ya que no se generan códigos auxiliares para nada en el archivo importado. Dado que el preprocesador se invoca por separado para el archivo importado, las directivas de preprocesador (como **) no se llevan al archivo IDL de importación.
+Al igual que la directiva de preprocesador del lenguaje C incluye **\# ,** la directiva [**import**](import.md) indica al compilador que incluya los tipos de datos definidos en los archivos IDL importados. A diferencia **\# de la directiva include,** **la directiva import** omite los prototipos de procedimiento, ya que no se generan códigos auxiliares para nada en el archivo importado. Dado que el preprocesador se invoca por separado para el archivo importado, las directivas de preprocesador (como **) no se llevan al archivo IDL de importación.
 
 Para obtener información adicional sobre el uso [**de import para**](import.md) incluir archivos de encabezado del sistema en un archivo IDL, vea [Importing System Header Files](importing-system-header-files.md).
 

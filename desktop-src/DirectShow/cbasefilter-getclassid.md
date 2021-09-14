@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 365c8b6d41231da78a1f478f998373247913e132c95b4c532c413f8080a2e362
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02dfe8452da6366454dcc1cfeeed93c379c89bd1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070132"
 ---
 # <a name="cbasefiltergetclassid-method"></a>Método CBaseFilter.GetClassID
 

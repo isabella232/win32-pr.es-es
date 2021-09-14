@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 99b735f52ac4d311af6e35f7e214322c55345e4c029e73a342baa52dfa72de6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c89ff554b049e6730a64ebf7e5f017fc8a5652f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118312996"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070396"
 ---
 # <a name="swbemqualifiersetitem-method"></a>Método SWbemQualifierSet.Item
 
@@ -48,11 +48,11 @@ objQualifier = .Item( _
 *strName* \[ En\]
 </dt> <dd>
 
-Obligatorio. Nombre del calificador que se recuperará.
+Necesario. Nombre del calificador que se recuperará.
 
 </dd> <dt>
 
-*iFlags* \[ in, opcional\]
+*iFlags* \[ en, opcional\]
 </dt> <dd>
 
 Reservado. El valor predeterminado es 0 (cero).
@@ -83,7 +83,7 @@ Error no especificado.
 
 </dd> <dt>
 
-**wbemErrNotFound** : 2147749890 (0x80041002)
+**wbemErrNotFound:** 2147749890 (0x80041002)
 </dt> <dd>
 
 El calificador especificado no existe.
@@ -94,11 +94,11 @@ El calificador especificado no existe.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemQualifierSet<br/>                                                     |
@@ -106,7 +106,7 @@ El calificador especificado no existe.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

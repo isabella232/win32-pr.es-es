@@ -1,9 +1,9 @@
 ---
 title: interface (atributo)
-description: La palabra clave interface especifica el nombre de la interfaz. El nombre de la interfaz debe proporcionarse en el archivo IDL y en el ACF.
+description: La palabra clave interface especifica el nombre de la interfaz. El nombre de la interfaz debe proporcionarse tanto en el archivo IDL como en el ACF.
 ms.assetid: 239b782e-57de-493c-b2f4-310d1859a9ae
 keywords:
-- atributo de interfaz MIDL
+- MIDL del atributo de interfaz
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 852c29b2ba7b43e9d8b15863e60db8ad2fbde33f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904536"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159522"
 ---
 # <a name="interface-attribute"></a>interface (atributo)
 
-La palabra clave **interface** especifica el nombre de la interfaz. El nombre de la interfaz debe proporcionarse en el archivo IDL y en el ACF.
+La **palabra clave** interface especifica el nombre de la interfaz. El nombre de la interfaz debe proporcionarse tanto en el archivo IDL como en el ACF.
 
 ``` syntax
 [ 
@@ -38,43 +38,43 @@ typedef interface interface-name declarator-list
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica los atributos que se aplican a la interfaz en conjunto. Los atributos de interfaz válidos para un archivo IDL incluyen el **\[** [**punto de conexión**](endpoint.md) **\]** , **\[** [**local**](local.md) **\]** , **\[** [**objeto**](object.md) **\]** , **\[** [**\_ valor predeterminado del puntero**](pointer-default.md), **\]** **\[** [**UUID**](uuid.md) **\]** y **\[** [**versión**](version.md) **\]** . Los atributos de interfaz válidos para un ACF incluyen **\[** [**codificación**](encode.md) **\]** , **\[** [**descodificación**](decode.md) **\]** , **\[** [**\_ identificador automático**](auto-handle.md) **\]** o **\[** [**\_ identificador implícito**](implicit-handle.md) **\]** , y **\[** [**código**](code.md) **\]** o **\[** [**nocode**](nocode.md) **\]** .
+Especifica los atributos que se aplican a la interfaz en su conjunto. Los atributos de interfaz válidos para un archivo IDL incluyen el punto de conexión , el objeto local , el objeto , el puntero **\[** [](endpoint.md) **\]** **\[** [](local.md) **\]** **\[** [](object.md) **\]** **\[** [**\_ predeterminado**](pointer-default.md) **\]** , **\[** [**uuid**](uuid.md) **\]** y la **\[** [**versión**](version.md) **\]** . Los atributos de interfaz válidos para un ACF incluyen **\[** [**codificar**](encode.md) **\]** , **\[** [**descodificar**](decode.md), **\]** **\[** [**\_**](auto-handle.md) **\]** **\[** [**\_**](implicit-handle.md) **\]** **\[** [](code.md) **\]** **\[** [](nocode.md) **\]** controlar automáticamente o identificador implícito y código o codificar .
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
-Especifica el nombre de la interfaz. El nombre de la interfaz debe ser un nombre único y debe comenzar por un carácter alfabético o de subrayado.
+Especifica el nombre de la interfaz. El nombre de la interfaz debe ser un nombre único y debe comenzar con un carácter alfabético o de subrayado.
 
 </dd> <dt>
 
 *interfaz base* 
 </dt> <dd>
 
-Especifica el nombre de una interfaz de la que esta interfaz derivada hereda las funciones miembro, los códigos de estado y los atributos de interfaz. La interfaz derivada no hereda las definiciones de tipo. Para ello, use la palabra clave [**Import**](import.md) para importar el archivo IDL de la interfaz base.
+Especifica el nombre de una interfaz de la que esta interfaz derivada hereda funciones miembro, códigos de estado y atributos de interfaz. La interfaz derivada no hereda definiciones de tipo. Para ello, use la palabra [**clave import**](import.md) para importar el archivo IDL de la interfaz base.
 
 </dd> <dt>
 
-*lista de declaradores* 
+*declarator-list* 
 </dt> <dd>
 
-Especifica los declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. Para obtener más información, vea matrices [y Sized-Pointer atributos](array-and-sized-pointer-attributes.md) [**, matrices**](arrays-1.md)y [matrices y punteros](/windows/desktop/Rpc/arrays-and-pointers). La *lista de declaradores* consta de uno o varios declaradores, separados por comas.
+Especifica declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. Para obtener más información, vea [Array and Sized-Pointer Attributes](array-and-sized-pointer-attributes.md), [**arrays**](arrays-1.md)., and [Arrays and Pointers](/windows/desktop/Rpc/arrays-and-pointers). La *lista de declaradores* consta de uno o varios declaradores, separados por comas.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Los nombres de interfaz en el archivo IDL y ACF deben ser los mismos, excepto cuando se usa el modificador de compilador MIDL [**/ACF**](-acf.md).
+Los nombres de interfaz en el archivo IDL y ACF deben ser los mismos, excepto cuando se usa el modificador del compilador MIDL [**/acf**](-acf.md).
 
-El nombre de la interfaz forma la primera parte del nombre de las estructuras de datos de identificador de interfaz que son parámetros de las funciones en tiempo de ejecución de RPC. Para obtener más información, vea [**RPC \_ If \_ Handle**](/windows/desktop/Rpc/rpc-if-handle).
+El nombre de la interfaz forma la primera parte del nombre de las estructuras de datos de identificador de interfaz que son parámetros de las funciones en tiempo de ejecución de RPC. Para obtener más información, vea [**RPC \_ IF \_ HANDLE**](/windows/desktop/Rpc/rpc-if-handle).
 
-Si el encabezado de la interfaz incluye el **\[** [](object.md) **\]** atributo de objeto para indicar una interfaz com, también debe incluir el **\[** atributo [**UUID**](uuid.md) **\]** y debe especificar la interfaz com base de la que se deriva. Para obtener más información sobre las interfaces COM, vea **\[** [**Object**](object.md) **\]** .
+Si el encabezado de interfaz incluye el atributo de objeto para indicar una interfaz COM, también debe incluir el atributo uuid y debe especificar la interfaz COM base de la que **\[** [](object.md) **\]** **\[** [](uuid.md) **\]** se deriva. Para obtener más información sobre las interfaces COM, vea **\[** [**el objeto**](object.md) **\]** .
 
-También puede utilizar la palabra clave **interface** con la palabra clave [**typedef**](typedef.md) para definir un tipo de datos de interfaz.
+También puede usar la palabra clave **interface con** la palabra [**clave typedef**](typedef.md) para definir un tipo de datos de interfaz.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -119,33 +119,33 @@ typedef interface IStorage *LPSTORAGE;
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**finales**](endpoint.md)
+[**endpoint**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**localizar**](local.md)
+[**Local**](local.md)
 </dt> <dt>
 
-[**objeto**](object.md)
+[**object**](object.md)
 </dt> <dt>
 
-[**puntero \_ predeterminado**](pointer-default.md)
+[**valor \_ predeterminado del puntero**](pointer-default.md)
 </dt> <dt>
 
-[**identificador de RPC \_ If \_**](/windows/desktop/Rpc/rpc-if-handle)
+[**RPC \_ IF \_ HANDLE**](/windows/desktop/Rpc/rpc-if-handle)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

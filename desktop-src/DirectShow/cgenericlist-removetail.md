@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ed0b39d72eac68310dacdf2bfdc1d3c28bb35695b3d77230ba37f6fe81c417ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7b98187c663f643acdce28b4f12ebc37b1d4c25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118656161"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070096"
 ---
 # <a name="cgenericlistremovetail-method"></a>CGenericList.RemoveTail (método)
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a un objeto de tipo **OBJECT** (el tipo de plantilla) o **NULL** si la lista está vacía.
+Devuelve un puntero a un objeto de tipo **OBJECT** (tipo de plantilla) o **NULL** si la lista está vacía.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -63,7 +63,7 @@ Este método elimina el nodo de lista, pero no el elemento contenido en el nodo.
 
 <dl> <dt>
 
-[**CGenericList (Clase)**](cgenericlist.md)
+[**CGenericList (clase)**](cgenericlist.md)
 </dt> </dl>
 
  

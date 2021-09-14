@@ -5,19 +5,19 @@ ms.tgt_platform: multiple
 title: CIM_PCMCIAController métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50142553d22e8cdad58c02ea2e9f1812af99e25e76735084c59e1947e4007fe9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01306b2c1def014810cfcee88eab38e8c1d9110b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118678945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070204"
 ---
-# <a name="cim_pcmciacontroller-methods"></a>Métodos \_ DE CIM PCMCIAController
+# <a name="cim_pcmciacontroller-methods"></a>Métodos \_ PCMCIAController de CIM
 
 La [**clase \_ CIM PCMCIAController**](cim-pcmciacontroller.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

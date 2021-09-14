@@ -3,7 +3,7 @@ title: atributo helpstringdll
 description: El atributo \ helpstringdll\ establece el nombre del archivo DLL que se usará para realizar una búsqueda de cadenas de documento.
 ms.assetid: 1b9b962c-c355-4428-b5ea-dc7fd48b50a9
 keywords:
-- atributo helpstringdll MIDL
+- Atributo helpstringdll MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f773ed18e72f184305275ce238ddf0576c81447181a0b7fb420c30341935f5e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dace4fb9ddc3908ce637cd2d8521a1ab4671d620
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159562"
 ---
 # <a name="helpstringdll-attribute"></a>atributo helpstringdll
 
@@ -66,9 +66,9 @@ Una o varias instrucciones MIDL que definen la interfaz de la [**biblioteca**](l
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use el **\[ atributo \] helpstringdll** en una instrucción de biblioteca para especificar, como una cadena de caracteres, el nombre de archivo completo de una biblioteca de vínculos dinámicos. Esto permite que un usuario vea una descripción del archivo DLL con el visor de objetos.
+Use el **\[ atributo \] helpstringdll** en una instrucción de biblioteca para especificar, como una cadena de caracteres, el nombre de archivo completo de una biblioteca de vínculos dinámicos. Esto permite a un usuario ver una descripción del archivo DLL con el visor de objetos.
 
 Use las **funciones GetDocumentation2** en las interfaces **ITypeLib2** e **ITypeInfo2** para recuperar la cadena de ayuda.
 

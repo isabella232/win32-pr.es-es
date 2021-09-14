@@ -4,12 +4,12 @@ ms.assetid: 06136348-0c08-4e9c-9c96-fd3af33cbdc0
 title: Tipos de bloqueos oportunistas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39dc450b038013454ea2d0ddd9c78a701dc8f977b4fa3b0aca7cdda076e8b12e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a755a6ff766f5d19e13d4b269c1ba4bb9803e934
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120047855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069811"
 ---
 # <a name="types-of-opportunistic-locks"></a>Tipos de bloqueos oportunistas
 
@@ -39,7 +39,7 @@ Para obtener más información sobre la separación de bloqueos [oportunistas, v
 
 Un bloqueo oportunista por lotes manipula las aperturas y cierres de archivos. Por ejemplo, en la ejecución de un archivo por lotes, el archivo por lotes se puede abrir y cerrar una vez para cada línea del archivo. Un bloqueo oportunista por lotes abre el archivo por lotes en el servidor y lo mantiene abierto. A medida que el procesador de comandos "abre" y "cierra" el archivo por lotes, el redirector de red intercepta los comandos abrir y cerrar. Todos los servidores que recibe son los comandos de búsqueda y lectura. Si el cliente también está leyendo con antelación, el servidor recibe una solicitud de lectura determinada como máximo una vez.
 
-Al abrir un archivo que ya tiene un bloqueo oportunista por lotes, el servidor comprueba el estado de uso compartido del archivo después de romper el bloqueo. Esta comprobación ofrece al titular del bloqueo la oportunidad de completar el vaciado de la memoria caché y cerrar el identificador de archivo. Una operación abierta intentada durante la comprobación de uso compartido no hace que la comprobación de uso compartido no se pueda realizar si el titular del bloqueo libera el bloqueo.
+Al abrir un archivo que ya tiene un bloqueo oportunista por lotes, el servidor comprueba el estado de uso compartido del archivo después de romper el bloqueo. Esta comprobación ofrece al titular del bloqueo la oportunidad de completar el vaciado de la memoria caché y cerrar el identificador de archivo. Una operación abierta intentada durante la comprobación de uso compartido no provoca un error en la comprobación de uso compartido si el titular del bloqueo libera el bloqueo.
 
 Para obtener un ejemplo de cómo funciona un bloqueo oportunista por lotes, consulte Ejemplo de bloqueo oportunista de Batch. Para obtener más información sobre la separación de bloqueos [oportunistas, vea Breaking Opportunistic Locks](breaking-opportunistic-locks.md).
 
@@ -47,13 +47,13 @@ Para obtener un ejemplo de cómo funciona un bloqueo oportunista por lotes, cons
 
 Un bloqueo oportunista de filtro bloquea un archivo para que no se pueda abrir para el acceso de escritura o eliminación. Todos los clientes deben poder compartir el archivo. Los bloqueos de filtro permiten a las aplicaciones realizar operaciones de filtrado no intrusivas en los datos de archivo (por ejemplo, un código fuente de apertura del compilador o un programa de catalogación).
 
-Un bloqueo oportunista de filtro difiere de un bloqueo oportunista de nivel 2 en que permite que las operaciones abiertas de lectura se produzcan sin infracciones del modo de uso compartido en el intervalo de tiempo entre la apertura del archivo y la recepción del bloqueo por parte de la aplicación. El bloqueo oportunista de filtro es el mejor bloqueo que se puede usar cuando es importante permitir el acceso de lectura a otros clientes. En otros casos, la aplicación debe usar un bloqueo oportunista de nivel 2. Un bloqueo oportunista de filtro difiere de un bloqueo oportunista por lotes en que no permite que el redireccionamiento de red controle varias aperturas y cierres de la forma en que lo hace un bloqueo oportunista por lotes.
+Un bloqueo oportunista de filtro difiere de un bloqueo oportunista de nivel 2 en que permite que las operaciones abiertas de lectura se produzcan sin infracciones del modo de uso compartido en el intervalo de tiempo entre la apertura del archivo y la recepción del bloqueo de la aplicación. El bloqueo oportunista de filtro es el mejor bloqueo que se puede usar cuando es importante permitir el acceso de lectura a otros clientes. En otros casos, la aplicación debe usar un bloqueo oportunista de nivel 2. Un bloqueo oportunista de filtro difiere de un bloqueo oportunista por lotes, ya que no permite que el redirector de red controle varias aperturas y cierres de la forma en que lo hace un bloqueo oportunista por lotes.
 
 La aplicación debe solicitar un bloqueo oportunista de filtro en un archivo en tres pasos:
 
 1.  Use la función [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para abrir un identificador en el archivo con el parámetro *DesiredAccess* establecido en cero, que indica que no hay acceso, y el parámetro *dwShareMode* establecido en la marca **FILE SHARE \_ \_ READ** para permitir el uso compartido de lectura. El identificador obtenido en este momento se denomina identificador de bloqueo.
 2.  Solicite un bloqueo en este identificador con el código de control [**FSCTL \_ REQUEST FILTER \_ \_ OPLOCK.**](/windows/win32/api/winioctl/ni-winioctl-fsctl_request_filter_oplock)
-3.  Cuando se conceda el bloqueo, use [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para volver a abrir el archivo con *DesiredAccess* establecido en la **marca DE \_ LECTURA** GENÉRICA. Establezca *dwShareMode* en la marca DE LECTURA DEL RECURSO COMPARTIDO DE ARCHIVOS para permitir que otros usuarios lean el archivo mientras lo tiene abierto, la marca **FILE SHARE \_ \_ DELETE** para permitir que otros usuarios marquen el archivo para su eliminación mientras lo tiene abierto, o ambos. **\_ \_** El identificador obtenido en este momento se denomina identificador de lectura.
+3.  Cuando se conceda el bloqueo, use [**CreateFile para**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) volver a abrir el archivo con *DesiredAccess* establecido en la **marca DE \_ LECTURA** GENÉRICA. Establezca *dwShareMode* en la marca DE LECTURA DEL RECURSO COMPARTIDO DE ARCHIVOS para permitir que otros usuarios lean el archivo mientras lo tiene abierto, la marca **FILE SHARE \_ \_ DELETE** para permitir que otros usuarios marquen el archivo para su eliminación mientras lo tiene abierto, o ambos. **\_ \_** El identificador obtenido en este momento se denomina identificador de lectura.
 
 Use el identificador de lectura para leer o escribir en el contenido del archivo.
 

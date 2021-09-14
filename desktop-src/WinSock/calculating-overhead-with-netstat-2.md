@@ -1,38 +1,38 @@
 ---
-description: Calcular la sobrecarga con netstat
+description: Calcular la sobrecarga con Netstat
 ms.assetid: d96a8fba-8d76-443f-be49-81a8ad7050fa
-title: Calcular la sobrecarga con netstat
+title: Calcular la sobrecarga con Netstat
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a7843c3cd445bee66e25a9f191ae4b78093faea0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705657"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070470"
 ---
-# <a name="calculating-overhead-with-netstat"></a>Calcular la sobrecarga con netstat
+# <a name="calculating-overhead-with-netstat"></a>Calcular la sobrecarga con Netstat
 
-El cálculo de la sobrecarga con netstat debe realizarse en una red silenciosa para evitar que el tráfico de red sesgado de los datos, como el tráfico de difusión o multidifusión.
+El cálculo de la sobrecarga con Netstat debe realizarse en una red silenciosa para evitar que otro tráfico de red sesga los datos, como el tráfico de difusión o multidifusión.
 
-**Para calcular la sobrecarga de red de una aplicación mediante netstat**
+**Para calcular la sobrecarga de red de una aplicación mediante Netstat**
 
-1.  Recupere las estadísticas de la interfaz actual mediante netstat.
+1.  Recupere las estadísticas de interfaz actuales mediante Netstat.
 2.  Ejecute la aplicación.
-3.  Obtenga las estadísticas de la interfaz, de nuevo mediante netstat.
-4.  Calcule el número de bytes recibidos entre las dos medidas de netstat.
+3.  Obtenga las estadísticas de la interfaz, de nuevo mediante Netstat.
+4.  Calcule el número de bytes recibidos entre las dos medidas de Netstat.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestran estos pasos, con TTCP para enviar 10 bytes de datos, un byte a la vez.
+En el ejemplo siguiente se muestran estos pasos, mediante TTCP para enviar 10 bytes de datos, un byte a la vez.
 
-En primer lugar, se calcula una sobrecarga teórica para la aplicación. Para esta prueba, todos los paquetes tienen 60 bytes (el mínimo de Ethernet). Esta transferencia requiere tres paquetes para configurar la conexión, 10 paquetes de datos, 10 paquetes de confirmación (la confirmación diferida se desencadena casi cada vez) y cuatro paquetes para cerrar la conexión correctamente.
+En primer lugar, se calcula una sobrecarga teórica para la aplicación. Para esta prueba, todos los paquetes tienen 60 bytes (el mínimo ethernet). Esta transferencia requiere tres paquetes para configurar la conexión, 10 paquetes de datos, 10 paquetes de confirmación (la confirmación retrasada se desencadena casi cada vez) y cuatro paquetes para cerrar la conexión correctamente.
 
-Esto equivale a 27 paquetes de 60 bytes cada uno o 1620 bytes (3 + 4 + 10 + 10) \* 60 = 1620). Dado que solo se transfieren 10 bytes de datos, la sobrecarga es de 1610 bytes, que es superior al 99% de sobrecarga del protocolo.
+Esto equivale a 27 paquetes de 60 bytes cada uno, o 1620 bytes (3+4+10+10) \* 60=1620). Puesto que solo se transfieren 10 bytes de datos, la sobrecarga es de 1610 bytes, lo que supera el 99 % de la sobrecarga del protocolo.
 
 ### <a name="commands"></a>Comandos:
 
-**netstat-e**
+**netstat -e**
 
 ``` syntax
 Interface Statistics
@@ -45,14 +45,14 @@ Errors               0            0
 Unknown protocols    52812
 ```
 
-**Ttcp-t-H0-D-L1-N10-P9 172.31.71.99**
+**ttcp -t -h0 -D -l1 -n10 -p9 172.31.71.99**
 
 ``` syntax
 ttcp-t: 10 bytes in 2168 real milliseconds = 0 KB/sec
 ttcp-t: 10 I/O calls, msec/call = 216, calls/sec = 4, bytes/call = 1
 ```
 
-**netstat-e**
+**netstat -e**
 
 ``` syntax
 Interface Statistics
@@ -71,16 +71,16 @@ Unknown protocols     52812
 
 **Recibido:** 674 bytes
 
-**Total de bytes:** 1490
+**Bytes totales:** 1490
 
 **Bytes de usuario:** 10
 
-**Sobrecarga:** 1480/1490 = 99,3%
+**Sobrecarga:** 1480/1490 = 99,3 %
 
-* * Goodput: * * = 5 bytes/segundo (o 40 bits/s)
+**Goodput: **= 5 bytes/segundo (o 40 bits/s)
 
 > [!Note]  
-> Los bytes reales transferidos no coinciden con los valores teóricos debido a que no se tienen en cuenta los bytes de relleno en los valores de netstat.
+> Los bytes reales transferidos no coinciden con los valores teóricos debido a que los bytes de relleno no se tienen en cuenta en los valores de Netstat.
 
  
 
@@ -91,7 +91,7 @@ Unknown protocols     52812
 [Comportamiento de la aplicación](application-behavior-2.md)
 </dt> <dt>
 
-[Aplicaciones de Windows Sockets de alto rendimiento](high-performance-windows-sockets-applications-2.md)
+[Aplicaciones de sockets Windows alto rendimiento](high-performance-windows-sockets-applications-2.md)
 </dt> </dl>
 
  

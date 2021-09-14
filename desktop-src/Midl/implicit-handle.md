@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17c53ded4c7459be8f0c8eb98f3770d88ff88a9b7da20cb3482c1032a4f74e96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22f410fa048a27e1f7626690e6308de4c1a31c2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159541"
 ---
 # <a name="implicit_handle-attribute"></a>atributo \_ de identificador implícito
 
@@ -45,7 +45,7 @@ Especifica el nombre del identificador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El identificador especificado por el **\[ atributo de identificador \_ \] implícito** se usa de maneras diferentes en función de la naturaleza del procedimiento. Si el procedimiento es remoto, el identificador se usará como identificador de enlace para la llamada remota. El identificador implícito también se puede usar para establecer un enlace inicial para una función que usa un identificador de contexto. Si el procedimiento es un procedimiento de serialización, el identificador se usa como identificador de serialización que controla la operación. En el caso de la serialización de tipos, el identificador se usa como identificador de serialización para todos los tipos serializados.
 

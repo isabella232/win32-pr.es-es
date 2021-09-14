@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 1affbbee9de7985599dfc1299531985376ac0b9f5576f7a349b9ba537003a3a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 176494f0b99b62132a6148462a423d0704840633
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118505643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070332"
 ---
 # <a name="texture2dgatherred-methods"></a>Métodos Texture2D::GatherRed
 
@@ -31,12 +31,12 @@ Devuelve los componentes rojos de los cuatro valores de texel de [**Texture2D**]
 |:--------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**GatherRed(S,float,int)**](sm5-object-texture2d-gatherred.md)                                         | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
 | [**GatherRed(S,float,int,uint)**](t2d-gatherred-s-float-int-uint-.md)                                   | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
-| [**GatherRed(S,float,int2,int2,int2,int2)**](t2d-gatherred-s-float-int2-int2-int2-int2-.md)             | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
+| [**GatherRed(S,float,int2,int2,int2,int2,int2)**](t2d-gatherred-s-float-int2-int2-int2-int2-.md)             | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
 | [**GatherRed(S,float,int2,int2,int2,int2,uint)**](t2d-gathergreen-s-float-int2-int2-int2-int2-uint-.md) | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

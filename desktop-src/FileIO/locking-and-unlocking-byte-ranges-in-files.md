@@ -5,11 +5,11 @@ title: Bloqueo y desbloqueo de intervalos de bytes en archivos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d8ea12d2563f1c5e163eb019b37c42bdeb8eed8b
-ms.sourcegitcommit: ccf7dea7222b925441486fa564a1a61b69395562
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "123463056"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069918"
 ---
 # <a name="locking-and-unlocking-byte-ranges-in-files"></a>Bloqueo y desbloqueo de intervalos de bytes en archivos
 
@@ -1028,7 +1028,7 @@ int __cdecl wmain(int argc, LPCWSTR argv[])
 
 
 
-Este ejemplo es una aplicación de consola de Windows que ejecuta varios accesos simultáneos a un archivo, todos coordinados por bloqueos de intervalo de bytes mediante una base de datos simple, compuesta de varios registros de un tamaño fijo. Tenga en cuenta que la verdadera concurrencia depende de cuántos núcleos de procesador existen en el sistema host.
+Este ejemplo es una aplicación de consola Windows que ejecuta varios accesos simultáneos a un archivo, todos ellos coordinados por bloqueos de intervalo de bytes mediante una base de datos simple, compuesta de varios registros de un tamaño fijo. Tenga en cuenta que la verdadera concurrencia depende de cuántos núcleos de procesador existen en el sistema host.
 
 Todos los registros tienen los dos primeros campos en común: un código de tipo y un número de secuencia. El código de tipo es uno de dos códigos: el código "Mstr" hace referencia al tipo **MASTER \_ RECORD** y el código "Data" hace referencia a un tipo **DATA \_ RECORD.** Solo puede haber un **registro \_ maestro y** cero o más registros **\_ de** datos. En este ejemplo, los datos contenidos en los registros de datos se generan aleatoriamente. El segundo campo, el número de secuencia, se incrementa cada vez que se modifica un registro.
 

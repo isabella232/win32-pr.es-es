@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7095e29daf18dc111caf37038b06b0beff5245a8
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159647"
 ---
 # <a name="const-attribute"></a>Atributo const
 
@@ -92,7 +92,7 @@ Especifica cero o más atributos que se aplican a la función. Los atributos de 
 *type-specifier* 
 </dt> <dd>
 
-Especifica un tipo base , [**struct**](struct.md), [**union**](union.md), [**enum**](enum.md) type o un identificador de tipo. [ \_](midl-base-types.md) Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
+Especifica un tipo base , [**struct**](struct.md), [**union**](union.md), [**enum**](enum.md) type o type identifier. [ \_](midl-base-types.md) Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Especifica cero o más atributos direccionales, atributos de campo, atributos de
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 MIDL permite declarar tipos enteros, caracteres, cadenas y booleanos constantes en el cuerpo de la interfaz del archivo IDL. **Las declaraciones** de tipo Const se reproducen en el archivo de encabezado generado como **\# directivas define.**
 
@@ -212,7 +212,7 @@ HRESULT GetName([out] wchar_t * const pszName );
 [**Estructura**](struct.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> <dt>
 
 [**Único**](unique.md)

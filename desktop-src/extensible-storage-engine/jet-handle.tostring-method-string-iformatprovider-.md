@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f807f13bedb879377449cd494cd245b3ad1073488597190866a190b3253f9cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2891e33712027c3387e2d45ff73111e7bf54126
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070234"
 ---
 # <a name="jet_handletostring-method-string-iformatprovider"></a>JET_HANDLE. Método ToString (String, IFormatProvider)
 

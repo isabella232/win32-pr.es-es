@@ -1,23 +1,23 @@
 ---
-description: Las tablas que muestran la funcionalidad y las características admiten comparaciones para los cuatro sistemas de archivos Windows principales, NTFS, exUF, UDF y FAT32.
+description: Las tablas que muestran la funcionalidad y las características admiten comparaciones para los cuatro sistemas de Windows principales, NTFS, exATURA, UDF y FAT32.
 ms.assetid: 28cf2805-f1ce-46b4-bf08-a329f67f4d99
 title: Comparación de la funcionalidad del sistema de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5af85dbacfd04920d8eb0a9558e0d57cc6e4020da35ffac57f7bdc703e6ef15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7547e48ff68a8fdab195087904a47a535aa3464
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119790695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069944"
 ---
 # <a name="file-system-functionality-comparison"></a>Comparación de la funcionalidad del sistema de archivos
 
-En las tablas siguientes se muestran las comparaciones de funcionalidad y compatibilidad de características para los cuatro sistemas de archivos Windows principales, NTFS, ex SUF, UDF y FAT32:
+En las tablas siguientes se muestran las comparaciones de funcionalidad y compatibilidad de características para los cuatro sistemas de Windows principales, NTFS, exATURA, UDF y FAT32:
 
 -   [Funcionalidad](#file-system-functionality-comparison)
 -   [Límites](#limits)
--   [Registro en diario y registro de cambios](#journaling-and-change-log)
+-   [Registro de diario y registro de cambios](#journaling-and-change-log)
 -   [Características de asignación de bloques](#block-allocation-features)
 -   [Seguridad](#security)
 -   [Compresión](#compression)
@@ -33,8 +33,8 @@ En las tablas siguientes se muestran las comparaciones de funcionalidad y compat
 |-------------------------------------|--------------------------------|----------------|-------------------------------|----------------------------|
 | Marcas de tiempo de creación<br/>     | Sí<br/>                 | Sí<br/> | Sí<br/>                | Sí<br/>             |
 | Marcas de tiempo de último acceso<br/>  | No (vea la siguiente nota)<br/> | Sí<br/> | Sí<br/>                | Sí (solo fecha)<br/> |
-| Marcas de tiempo del último cambio<br/>  | Sí<br/>                 | Sí<br/> | Sí<br/>                | Sí<br/>             |
-| Marcas de tiempo del último archivo<br/> | No<br/>                  | No<br/>  | No<br/>                 | No<br/>              |
+| Marcas de tiempo de último cambio<br/>  | Sí<br/>                 | Sí<br/> | Sí<br/>                | Sí<br/>             |
+| Últimas marcas de tiempo de archivo<br/> | No<br/>                  | No<br/>  | No<br/>                 | No<br/>              |
 | Distingue mayúsculas y minúsculas<br/>           | Sí (opción)<br/>        | No<br/>  | Sí<br/>                | No<br/>              |
 | Conservación de mayúsculas y minúsculas<br/>          | Sí<br/>                 | Sí<br/> | Sí<br/>                | Sí<br/>             |
 | Vínculos físicos<br/>               | Sí<br/>                 | No<br/>  | Sí<br/>                | No<br/>              |
@@ -50,7 +50,7 @@ En las tablas siguientes se muestran las comparaciones de funcionalidad y compat
 
  
 
-**Windows Server 2003 y Windows XP:** Se actualiza el campo marca de tiempo de último acceso ntfs.
+**Windows Server 2003 y Windows XP:** Se actualiza el campo de marca de tiempo de último acceso NTFS.
 
 ## <a name="limits"></a>Límites
 
@@ -149,7 +149,7 @@ En las tablas siguientes se muestran las comparaciones de funcionalidad y compat
 
  
 
-**Nota**  El almacén de instancia única para NTFS está disponible como parte de la característica single instance Storage en Windows Server.
+**Nota**  El almacén de instancia única para NTFS está disponible como parte de la característica Storage instancia única en Windows Server.
 
 ## <a name="related-topics"></a>Temas relacionados
 

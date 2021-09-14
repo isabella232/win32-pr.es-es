@@ -15,12 +15,12 @@ keywords:
 - interfaces,ISynchronizedInputProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91aa4ad93a30be26ebcbc463ade3a27d896d61727508965a86d1ed229b7d79be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 105e75163fdac742adaad6b778c251b4b7b8ae70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070475"
 ---
 # <a name="synchronizedinput-control-pattern"></a>Patrón de control SynchronizedInput
 
@@ -54,9 +54,9 @@ Las siguientes propiedades, métodos y eventos son necesarios para implementar l
 
 | Miembros requeridos                                                                         | Tipo de miembro | Notas |
 |------------------------------------------------------------------------------------------|-------------|-------|
-| [**StartListening**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-isynchronizedinputprovider-startlistening)               | Método      | Ninguno  |
-| [**Cancelar**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-isynchronizedinputprovider-cancel)                               | Método      | Ninguno  |
-| [**\_InputReachedTargetEventId de UIA**](uiauto-event-ids.md) | Evento       | Ninguno  |
+| [**StartListening**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-isynchronizedinputprovider-startlistening)               | Método      | None  |
+| [**Cancelar**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-isynchronizedinputprovider-cancel)                               | Método      | None  |
+| [**\_InputReachedTargetEventId de UIA**](uiauto-event-ids.md) | Evento       | None  |
 
 
 

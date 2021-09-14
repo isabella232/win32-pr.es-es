@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a784cadf470fa312a82e473f3934dbda1a2b6dce20d2ae34c7074c309398cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39fd7b4d9d9bf7a595415e55de778a419d91051c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117808239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159678"
 ---
 # <a name="async_uuid-attribute"></a>Atributo \_ uuid asincrónico
 
@@ -81,11 +81,11 @@ Especifica instrucciones IDL que forman la definición de la interfaz .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El uso de este atributo requiere Windows 2000 o versiones posteriores de Windows.
 
-Al aplicar el atributo **\[ \_ uuid \]** asincrónico a una interfaz COM (es decir, [**\[ \]**](object.md) una interfaz que tiene el atributo de objeto), el compilador midL genera una definición asincrónica de la interfaz, además de la versión sincrónica tradicional. La interfaz asincrónica tendrá los mismos nombres que la interfaz sincrónica, pero con un prefijo "Async". El identificador de interfaz (IID) será el UUID especificado como parámetro para el atributo **\[ \_ uuid \] asincrónico.**
+Al aplicar el atributo **\[ \_ uuid \]** asincrónico a una interfaz COM (es decir, [**\[ \]**](object.md) una interfaz que tiene el atributo de objeto), el compilador midL genera una definición asincrónica de la interfaz, además de la versión sincrónica tradicional. La interfaz asincrónica tendrá los mismos nombres que la interfaz sincrónica, pero con un prefijo "Async". El identificador de interfaz (IID) será el UUID especificado como parámetro para el atributo **\[ \_ uuid \]** asincrónico.
 
 Para la interfaz asincrónica, MIDL divide cada método en métodos *de inicio* *y fin* independientes. El *método begin* tiene el nombre del método sincrónico con un prefijo "Begin" e incluye todos los parámetros \_ [**\[ in \]**](in.md) del método sincrónico. El *método finish* tiene el nombre del método sincrónico con el prefijo "Finish" e incluye todos los parámetros \_ [**\[ out \]**](out-idl.md) del método sincrónico. Si el método sincrónico tiene alguna **\[ entrada, \] los** parámetros out se incluirán en los métodos asincrónicos *begin* *y finish.*
 
@@ -136,7 +136,7 @@ interface IMyInterface : IUnknown
 [**out**](out-idl.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
  

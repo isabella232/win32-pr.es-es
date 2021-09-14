@@ -3,7 +3,7 @@ title: Patrón de control de selección
 description: Describe directrices y convenciones para implementar ISelectionProvider, incluida información sobre propiedades, métodos y eventos.
 ms.assetid: 9371e656-6f93-4a43-bd0c-c6977348b16a
 keywords:
-- Automatización de la interfaz de usuario, implementar el patrón de control Selección
+- Automatización de la interfaz de usuario,implementing Selection control pattern
 - Automatización de la interfaz de usuario,Patrón de control Selección
 - Automatización de la interfaz de usuario,ISelectionProvider
 - ISelectionProvider
@@ -15,12 +15,12 @@ keywords:
 - interfaces,ISelectionProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2d0578dcdcfa9d381272afaa474338a54caa1f4b17989f2461f9aec5086bc18
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ad6950302373494f307c91c0aadaeab1db0132a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070484"
 ---
 # <a name="selection-control-pattern"></a>Patrón de control de selección
 
@@ -40,7 +40,7 @@ Al implementar el patrón de control **Selección,** tenga en cuenta las siguien
 
 -   Los controles que [**implementan ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider) permiten seleccionar uno o varios elementos secundarios. Por ejemplo, los cuadros de lista, las vistas de lista y las vistas de árbol admiten varias selecciones, mientras que los cuadros combinados, los controles deslizantes y los grupos de botones de radio admiten una selección única.
 -   Los controles que tienen un intervalo mínimo,  máximo e continuo, como el control deslizante Volumen de un reproductor multimedia, deben implementar [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider) en lugar de [**ISelectionProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)
--   Los controles de selección única que administran controles secundarios que implementan  [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot), como el control  deslizante Resolución de pantalla del cuadro de diálogo **Propiedades de pantalla** para Windows o el control de selección Selector de colores de Microsoft Word (vea la imagen siguiente), deben implementar [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider); sus elementos secundarios deben implementar [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment) [**e ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider).
+-   Los controles de selección única que administran controles secundarios que implementan  [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot), como el  control deslizante Resolución de pantalla del cuadro de diálogo **Propiedades de pantalla** para Windows o el control de selección Selector de colores de Microsoft Word (vea la imagen siguiente), deben implementar [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider); sus elementos secundarios deben implementar [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment) [**e ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider).
 
     ![imagen que muestra un ejemplo de asignación de cadenas de muestra de color](images/uia-valuepattern-colorpicker.jpg)
 
@@ -54,9 +54,9 @@ Las siguientes propiedades, métodos y eventos son necesarios para implementar l
 
 | Miembros requeridos                                                                                | Tipo de miembro | Notas                                                                       |
 |-------------------------------------------------------------------------------------------------|-------------|-----------------------------------------------------------------------------|
-| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple)                        | Propiedad    | Ninguno                                                                        |
-| [**IsSelectionRequired**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_isselectionrequired)                    | Propiedad    | Ninguno                                                                        |
-| [**GetSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-getselection)                                  | Método      | Ninguno                                                                        |
+| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple)                        | Propiedad.    | None                                                                        |
+| [**IsSelectionRequired**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_isselectionrequired)                    | Propiedad.    | None                                                                        |
+| [**GetSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-getselection)                                  | Método      | None                                                                        |
 | [**UIA \_ Selection \_ InvalidtedEventId**](uiauto-event-ids.md) | Evento       | Generar este evento cuando una selección de un contenedor ha cambiado significativamente. |
 
 

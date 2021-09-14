@@ -18,12 +18,12 @@ api_location:
 - MinKernelBase.dll
 - API-MS-Win-Core-io-l1-1-1.dll
 - api-ms-win-downlevel-kernel32-l1-1-0.dll
-ms.openlocfilehash: f81bc0c997e3637fa941cb5a23f6394ba1f585566c8d633cadb00c9fd75ac805
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d45471cc066e6de7cb388036e06e727fe828a532
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119696125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069939"
 ---
 # <a name="getqueuedcompletionstatusex-function"></a>Función GetQueuedCompletionStatusEx
 
@@ -132,7 +132,7 @@ En Windows 8 y Windows Server 2012, esta función es compatible con las siguient
 | Protocolo bloque de mensajes de servidor (SMB) 3.0<br/>   | Sí<br/> |
 | Conmutación por error transparente (TFO) de SMB 3.0<br/>        | Sí<br/> |
 | SMB 3.0 con recursos compartidos de archivos de escalabilidad horizontal (SO)<br/>   | Sí<br/> |
-| Volumen compartido de clúster file system (CsvFS)<br/> | Sí<br/> |
+| Volumen compartido de clúster de archivos (CsvFS)<br/> | Sí<br/> |
 | Sistema de archivos resistente a errores (ReFS)<br/>              | Sí<br/> |
 
 
@@ -143,11 +143,11 @@ En Windows 8 y Windows Server 2012, esta función es compatible con las siguient
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                                                                                                                                                                                                                   |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                                                                                                                                                                                                             |
-| Header<br/>                   | <dl> <dt>IoAPI.h (incluir Windows.h);</dt> <dt>WinBase.h en Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista (incluido Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IoAPI.h (incluir Windows.h);</dt> <dt>WinBase.h en Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista (Windows.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl>                                                                                                                                                                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>                                                                                                                                                                                 |
 

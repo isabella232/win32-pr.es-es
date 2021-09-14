@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101171
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 9fe58706d04488573b092f9fde7a7ee4670fb430e8a5597fdcc025bb251695ea
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2f8f27a5a90cba42d2a56f969309ee48740f52fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120066625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070307"
 ---
 # <a name="esentbuffertoosmallexception-members"></a>Miembros de EsentBufferTooSmallException
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

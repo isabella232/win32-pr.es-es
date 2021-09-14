@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffebc5907072f7fdfc539bbc2b06bf1e4ad9fb667826c6c3c5a96121b106326e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8086d60d0936dcf56738afadea4244a5fff758b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159622"
 ---
 # <a name="defaultvtable-attribute"></a>defaultvtable (atributo)
 
@@ -59,7 +59,7 @@ Lista de interfaces para la clase .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una interfaz de Vtable predeterminada no puede ser una interfaz dispinterface, debe ser una interfaz o una interfaz dual o de Vtable. Si la interfaz es una interfaz dual, los receptores pueden suponer que recibirán eventos a través de Vtable.
 

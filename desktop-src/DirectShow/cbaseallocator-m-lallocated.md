@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 51a42a9207bd2e3567a3fd2fdd0c4f9290b769fcaa9de4c68b2509713d371733
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bee488588cf3fc58334a55e5f1c39957581099c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118955364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070153"
 ---
-# <a name="cbaseallocatorm_lallocated-member"></a>CBaseAllocator::m \_ lAllocated member
+# <a name="cbaseallocatorm_lallocated-member"></a>Miembro CBaseAllocator::m \_ lAllocated
 
 Número de búferes asignados actualmente.
 

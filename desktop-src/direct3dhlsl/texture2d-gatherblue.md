@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7e44b1237bbcfc0538792db93dd10d2f729a0496183830cb08b0f1254c37fa89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06d085ca5c11ba550eb8f934f2db87c96a9605a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118787301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070338"
 ---
 # <a name="texture2dgatherblue-methods"></a>Métodos Texture2D::GatherBlue
 
@@ -36,7 +36,7 @@ Muestrea [**un objeto Texture2D**](sm5-object-texture2d.md) y devuelve el compon
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

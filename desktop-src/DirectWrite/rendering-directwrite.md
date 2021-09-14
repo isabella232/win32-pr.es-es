@@ -4,12 +4,12 @@ description: Representación DirectWrite
 ms.assetid: e8099fac-b5d7-4fb1-b06d-a6e85da0d1dc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa640b8963c427b9eaf1d17fd3e4691115a3965d477c5076deb1f5eb05a569db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc7012bc4861a8befc9beb97c945dc0b03b4e761
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069977"
 ---
 # <a name="rendering-directwrite"></a>Representación DirectWrite
 
@@ -35,7 +35,7 @@ pRT_->DrawTextLayout(
 
 
 
-Para obtener una vista más detallada del dibujo de un [**objeto IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) mediante [Direct2D,](../direct2d/direct2d-portal.md)vea Tareas iniciales [con DirectWrite](getting-started-with-directwrite.md).
+Para obtener una vista más detallada del dibujo de un objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) mediante [Direct2D,](../direct2d/direct2d-portal.md)vea Tareas iniciales [con DirectWrite](getting-started-with-directwrite.md).
 
 ## <a name="2-render-using-a-custom-text-renderer"></a>2. Representar mediante un representador de texto personalizado.
 
@@ -57,7 +57,7 @@ hr = pTextLayout_->Draw(
 
 El [**método IDWriteTextLayout::D raw**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-draw) llama a los métodos de la devolución de llamada del representador personalizado que proporcione. Los [**métodos DrawGlyphRun**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawglyphrun), [**DrawUnderline**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawunderline), [**DrawInlineObject**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawinlineobject)y [**DrawStrikethrough**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawstrikethrough) realizan las funciones de dibujo.
 
-[**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer) declara métodos para dibujar una ejecución de glifo, subrayado, tachado y objetos en línea. La aplicación debe implementar estos métodos. La creación de un representador de texto personalizado permite a la aplicación aplicar efectos adicionales al representar texto, como un relleno o un contorno personalizados. Se incluye un representador de texto personalizado de ejemplo en [el DirectWrite Hola mundo ejemplo](/samples/browse/?redirectedfrom=MSDN-samples).
+[**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer) declara métodos para dibujar una ejecución de glifo, subrayado, tachado y objetos en línea. La aplicación debe implementar estos métodos. La creación de un representador de texto personalizado permite a la aplicación aplicar efectos adicionales al representar texto, como un relleno o un contorno personalizados. Se incluye un representador de texto personalizado de ejemplo en el [DirectWrite Hola mundo ejemplo](/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="3-render-cleartype-to-a-gdi-surface"></a>3. Representar ClearType en una superficie GDI.
 

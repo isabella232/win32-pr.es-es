@@ -4,12 +4,12 @@ ms.assetid: b4c2f5f0-a29b-4598-a49b-da99e93d2991
 title: Bloqueos oportunistas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89d3e984c5a8a1a1dc9cc1cb0c0c56e92434433b334747e832ea7f3bdf62d3da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: faec833caae05bff247a7a3655885b1a967f3435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119683405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069877"
 ---
 # <a name="opportunistic-locks"></a>Bloqueos oportunistas
 

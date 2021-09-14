@@ -1,5 +1,5 @@
 ---
-description: La clase WMI de asociación IDEControllerDevice de Win32 relaciona un controlador de Integrated Drive Electronics (IDE) y el dispositivo lógico conectado a, por \_ ejemplo, una unidad de disco.
+description: La clase WMI de asociación IDEControllerDevice de Win32 relaciona un controlador de Electrónica de unidades integradas (IDE) y el dispositivo lógico conectado a, por \_ ejemplo, una unidad de disco.
 ms.assetid: 1b0a551c-d836-4147-91ed-a0a7d97f4a5b
 ms.tgt_platform: multiple
 title: Win32_IDEControllerDevice clase
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d4cd05f3915e23b3fb03fec232e51596b435dddcd8d529c85343255125eee38a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bc690aadd442d656132b2d9e4539cc27961c3ef9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119828045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070194"
 ---
 # <a name="win32_idecontrollerdevice-class"></a>Clase IDEControllerDevice de Win32 \_
 
-La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación **\_ IDEControllerDevice de Win32** relaciona un controlador de Integrated Drive Electronics (IDE) y el dispositivo lógico conectado a, por ejemplo, una unidad de disco.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación **\_ IDEControllerDevice de Win32** relaciona un controlador de Electrónica de unidades integradas (IDE) y el dispositivo lógico conectado a, por ejemplo, una unidad de disco.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -50,7 +50,7 @@ class Win32_IDEControllerDevice : CIM_ControlledBy
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ IDEControllerDevice de Win32** tiene estos tipos de miembros:
 
@@ -71,7 +71,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el controlador está comandoando activamente o accediendo al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o tener acceso a un dispositivo lógico.
+Indica si el controlador está comandando activamente o accediendo al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o acceder a un dispositivo lógico.
 
 Esta propiedad se hereda de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
@@ -119,13 +119,13 @@ Un [**\_ IDEController de Win32**](win32-idecontroller.md) que representa el con
 **Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ LogicalDevice**
+Tipo de datos: **\_ Cim LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| \_ LogicalDevice")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) \| ("CIM \_ LogicalDevice")
 </dt> </dl>
 
 Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que representa el dispositivo lógico conectado al controlador IDE.
@@ -144,7 +144,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Cuando son posibles varios anchos de datos de conexión o bus, esta propiedad define el que se usa entre los dispositivos. El ancho de los datos se especifica en bits. Si no se negocia el ancho de los datos, o si esta información no está disponible o no es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
+Cuando son posibles varios anchos de datos de conexión o bus, esta propiedad define el que se usa entre los dispositivos. El ancho de datos se especifica en bits. Si no se negocia el ancho de datos o si esta información no está disponible o es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
 
 Esta propiedad se hereda de [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
@@ -164,7 +164,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit
 
 Cuando son posibles varias velocidades de conexión o bus, esta propiedad define la que se usa entre los dispositivos. La velocidad se especifica en bits por segundo. Si no se negocian las velocidades de conexión o bus, o si esta información no está disponible o es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 Esta propiedad se hereda de [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
@@ -179,7 +179,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de restablecimientos de seguridad emitidos por el controlador. Un restablecimiento de seguridad devuelve el dispositivo a su estado de inicialización o arranque. Se pierden toda la información y los datos internos del estado del dispositivo.
+Número de restablecimientos de seguridad emitidos por el controlador. Un restablecimiento duro devuelve el dispositivo a su estado de inicialización o arranque. Se pierden toda la información y los datos internos del estado del dispositivo.
 
 Esta propiedad se hereda de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
@@ -200,7 +200,7 @@ Esta propiedad se hereda de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ IDEControllerDevice de Win32** se deriva de [**CIM \_ ControlledBy**](cim-controlledby.md).
 

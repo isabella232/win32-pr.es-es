@@ -1,22 +1,22 @@
 ---
-description: El proveedor de rutas IP WMI y las clases de red suministran datos para direcciones IPv4. A partir Windows Vista, WMI también proporciona compatibilidad limitada con las funcionalidades de red IPv6.
+description: El proveedor de rutas IP WMI y las clases de red suministran datos para las direcciones IPv4. A partir de Windows Vista, WMI también proporciona compatibilidad limitada con las funcionalidades de red IPv6.
 ms.assetid: 8ab6287d-be3f-4fa2-a9f5-fa5e1aba66c8
 ms.tgt_platform: multiple
 title: Compatibilidad con IPv6 e IPv4 en WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cea400d6c896220dcde5c15d40481444a77ffb309eac8bfdc50cb06ab634c384
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 107872b2a65ffe02f34245a39e0a803d2ac53a2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118819303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070455"
 ---
 # <a name="ipv6-and-ipv4-support-in-wmi"></a>Compatibilidad con IPv6 e IPv4 en WMI
 
-El proveedor [de rutas IP WMI y](/previous-versions/windows/desktop/wmiiprouteprov/ip-route-provider) las clases de red suministran datos para direcciones IPv4. A partir Windows Vista, WMI también proporciona compatibilidad limitada con las funcionalidades de red IPv6.
+El proveedor [de rutas IP WMI](/previous-versions/windows/desktop/wmiiprouteprov/ip-route-provider) y las clases de red suministran datos para las direcciones IPv4. A partir de Windows Vista, WMI también proporciona compatibilidad limitada con las funcionalidades de red IPv6.
 
-## <a name="wmi-ip-data"></a>Datos de IP de WMI
+## <a name="wmi-ip-data"></a>Datos IP de WMI
 
 Las clases siguientes solo suministran datos IPv4:
 
@@ -38,7 +38,7 @@ Las clases siguientes suministran datos para IPv4 e IPv6.
 
 ## <a name="ipv4-and-ipv6-connections-to-wmi"></a>Conexiones IPv4 e IPv6 a WMI
 
-Al conectarse a un espacio de nombres WMI en un equipo remoto, el equipo de destino debe ejecutar el mismo software IP que el equipo que se conecta. Por ejemplo, un equipo que ejecuta IPv4 no puede conectarse a un equipo que ejecuta IPv6, incluso si la conexión se intenta mediante un nombre de equipo en la llamada a [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver), [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md)o mediante la conexión `winmgmts` de moniker. Lo contrario también es cierto: un equipo que solo ejecuta IPv6 no puede conectarse a un equipo que solo ejecuta IPv4.
+Al conectarse a un espacio de nombres WMI en un equipo remoto, el equipo de destino debe ejecutar el mismo software IP que el equipo que se conecta. Por ejemplo, un equipo que ejecuta IPv4 no puede conectarse a un equipo que ejecuta IPv6, incluso si la conexión se intenta mediante un nombre de equipo en la llamada a [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver), [**SWbemLocator.ConnectServer o**](swbemlocator-connectserver.md)mediante la conexión `winmgmts` de moniker. Lo contrario también es cierto: un equipo que solo ejecuta IPv6 no puede conectarse a un equipo que solo ejecuta IPv4.
 
 Si el equipo de destino ejecuta IPv4 e IPv6, se puede establecer una conexión desde un equipo que ejecute cualquier software IP. Se puede proporcionar un nombre de equipo o una dirección IP en formato IPv4 o IPv6 en la conexión a un espacio de nombres WMI.
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7db6f70fb65822a63bd2bf0f9919ac1b9554a664d1ac7ec9775c611b5b4e7f73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 990d277db855c2988021d19a0a756c49454546f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159612"
 ---
 # <a name="dllnamestr-attribute"></a>Atributo dllname(str)
 
@@ -42,7 +42,7 @@ module modulename
 *uuid-number* 
 </dt> <dd>
 
-Especifica un número de identificación único universalmente para el [**módulo**](module.md).
+Especifica un número de identificación único universal para el [**módulo**](module.md).
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Especifica una o varias instrucciones de definición de elemento de módulo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo \] dllname** es necesario en un módulo.
 

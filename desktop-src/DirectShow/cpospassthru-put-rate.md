@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 90c89c9730ee057bea3bc776f551061c0e828385fe3c6ae054f4161bdb705ab1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21e7e654233f78adcda2addf73b87a178654872e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119565514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070061"
 ---
 # <a name="cpospassthruput_rate-method"></a>Método CPosPassThru.put \_ Rate
 
@@ -53,7 +53,7 @@ Velocidad de reproducción. No debe ser cero.
 
 Devuelve E \_ INVALIDARG si *dRate* es cero. De lo contrario, devuelve **el valor HRESULT** del pin conectado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las tasas negativas indican el juego inverso. No todos los medios admitirán la reproducción inversa.
 

@@ -1,9 +1,9 @@
 ---
-title: Async (atributo)
-description: El atributo \ Async \ ACF define una llamada a procedimiento remoto como una operación asincrónica.
+title: atributo asincrónico
+description: El atributo \async\ ACF define una llamada a procedimiento remoto como una operación asincrónica.
 ms.assetid: 8002980a-94be-4d45-99d7-dfa4eae7f102
 keywords:
-- atributo asincrónico MIDL
+- MIDL de atributo asincrónico
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 562b157f26078c6f4d5b3cffe47417fa18fe608d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159671"
 ---
-# <a name="async-attribute"></a>Async (atributo)
+# <a name="async-attribute"></a>atributo asincrónico
 
-El \[  \] atributo ACF Async define una llamada a procedimiento remoto como una operación asincrónica.
+El \[ **atributo ACF** \] asincrónico define una llamada a procedimiento remoto como una operación asincrónica.
 
 ``` syntax
 [async, opt-acf-attributes] function-name (param-list)
@@ -31,21 +31,21 @@ El \[  \] atributo ACF Async define una llamada a procedimiento remoto como una 
 
 <dl> <dt>
 
-*opt-ACF-atributos* 
+*opt-acf-attributes* 
 </dt> <dd>
 
-Especifica los atributos opcionales de configuración de la aplicación.
+Especifica atributos de configuración de aplicación opcionales.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función en el archivo IDL.
 
 </dd> <dt>
 
-*lista de parámetros* 
+*param-list* 
 </dt> <dd>
 
 Especifica una lista de parámetros opcional.
@@ -56,12 +56,12 @@ Especifica una lista de parámetros opcional.
 
 Este atributo no es aplicable en las interfaces COM.
 
-Para declarar una función RPC como asincrónica, primero declare la función como parte de una definición de interfaz en un archivo IDL. A continuación, modifique esa declaración de función en el archivo de configuración de la aplicación (ACF) aplicando el \[  \] atributo Async. Tenga en cuenta que la declaración de función no hace ninguna mención del identificador asincrónico y que el identificador de enlace es el primer parámetro. Al aplicar el \[ atributo **Async** \] en el archivo ACF, se genera el código adecuado de modo que, cuando se llama a esta función, el servidor asincrónico espera recibir un identificador asincrónico antes que los demás parámetros.
+Para declarar una función RPC como asincrónica, declare primero la función como parte de una definición de interfaz en un archivo IDL. A continuación, modifique esa declaración de función, dentro del archivo de configuración de la aplicación (ACF), aplicando el \[ **atributo** \] asincrónico. Tenga en cuenta que la declaración de función no hace ninguna mención al identificador asincrónico y que el identificador de enlace es el primer parámetro. La aplicación del atributo asincrónico en el archivo ACF genera el código adecuado para que, cuando se llama a esta función, el servidor asincrónico espere recibir un identificador asincrónico antes que los demás \[  \] parámetros.
 
 > [!Note]  
-> El atributo Async no se puede usar con el modificador de la línea de comandos [**/OSF**](-osf.md) .
+> El atributo asincrónico no se puede usar con el modificador de línea de comandos [**/osf.**](-osf.md)
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos
 
@@ -94,9 +94,9 @@ interface AsyncIface
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[RPC asincrónico](/windows/desktop/Rpc/asynchronous-rpc)
+[RPC asincrónica](/windows/desktop/Rpc/asynchronous-rpc)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

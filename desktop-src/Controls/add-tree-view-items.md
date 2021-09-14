@@ -4,12 +4,12 @@ description: Para agregar un elemento a un control de vista de árbol, envíe el
 ms.assetid: CD6376F4-8B1A-489D-8538-6C1620E98F76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b769e1b854651363a597e7e13cd27dfc49d582a76032458f593eb5b197d7c01
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 75a7da0846b57f422de83984b197df0770286882
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070173"
 ---
 # <a name="how-to-add-tree-view-items"></a>Cómo agregar elementos Tree-View datos
 
@@ -146,7 +146,7 @@ BOOL InitTreeViewItems(HWND hwndTV)
 
 <dl> <dt>
 
-[Uso de Tree-View controles](using-treeview.md)
+[Usar Tree-View controles](using-treeview.md)
 </dt> <dt>
 
 [El ejemplo CustDTv muestra el dibujo personalizado en un control Tree-View datos](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)

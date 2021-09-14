@@ -6,12 +6,12 @@ keywords:
 - DirectWrite,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eaa3d4d98588e3585022bb0887c6224e29d67e0c0d011437526b33ff0bcf1334
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19f678be8e02c8afecd849673d97ae20f6b1a710
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117815958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069971"
 ---
 # <a name="directwrite-structures"></a>DirectWrite estructuras
 

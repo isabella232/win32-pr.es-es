@@ -4,12 +4,12 @@ ms.assetid: 87c54141-41e2-4eaa-ae3b-84598e8281d9
 title: Estructuras de datos de resolución de nombres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93e6f3b889d295241bb0cdb9c0182babf0c5b8115e7eff7e86c27b65c992c452
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf1f76607ade81503a1057dc21890ac38d5ec265
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070468"
 ---
 # <a name="name-resolution-data-structures"></a>Estructuras de datos de resolución de nombres
 
@@ -17,21 +17,21 @@ Hay varias estructuras de datos importantes que se usan ampliamente en las funci
 
 ## <a name="query-related-data-structures"></a>Query-Related estructuras de datos
 
-La [**estructura WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) se usa para formar consultas para [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina)y para entregar resultados de consulta para [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta). Se trata de una estructura compleja, ya que contiene punteros a otras estructuras, algunas de las cuales hacen referencia a otras estructuras. La relación entre la [**estructura WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) y las estructuras a las que hace referencia se ilustra de la siguiente manera.
+La [**estructura WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) se usa para formar consultas para [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina)y se usa para entregar los resultados de la consulta [**para WSALookupServiceNext.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) Se trata de una estructura compleja, ya que contiene punteros a otras estructuras, algunas de las cuales hacen referencia a otras estructuras. La relación entre la [**estructura WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) y las estructuras a las que hace referencia se ilustra como se indica a continuación.
 
 ![relación entre wsaqueryset y sus estructuras asociadas](images/ovrvw3-2.png)
 
-Dentro de [**la estructura WSAQUERYSET,**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) la mayoría del miembro se explica por sí mismo, pero algunos merecen una explicación adicional. El **miembro dwSize** siempre debe rellenarse con sizeof(**WSAQUERYSET**), ya que lo usan los proveedores de espacios de nombres para detectar y adaptarse a diferentes versiones de la estructura **WSAQUERYSET** que pueden aparecer con el tiempo.
+Dentro de [**la estructura WSAQUERYSET,**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) la mayoría del miembro se explica por sí mismo, pero algunos merecen una explicación adicional. El **miembro dwSize** siempre debe rellenarse con sizeof(**WSAQUERYSET**), ya que lo usan los proveedores de espacios de nombres para detectar y adaptarse a las distintas versiones de la estructura **WSAQUERYSET** que pueden aparecer con el tiempo.
 
 Un proveedor de espacios de nombres usa el miembro **dwOutputFlags** para proporcionar información adicional sobre los resultados de la consulta. Para más información, consulte la [**función WSALookupServiceNext.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta)
 
-La [**estructura WSAECOMPARATOR**](/windows/desktop/api/Winsock2/ne-winsock2-wsaecomparator) a la que hace referencia el **miembro lpversion** se usa para la restricción de consulta y los resultados. Para las consultas, el **miembro dwVersion** indica la versión deseada del servicio. El **miembro ecHow** es un tipo enumerado que especifica cómo se puede realizar la comparación. Las opciones son COMP EQUALS, que requiere que se produzca una coincidencia exacta en la versión, o COMP NOTLESS que especifica que el número de versión del servicio no sea menor que el valor del \_ \_ miembro **dwVersion.**
+La [**estructura WSAECOMPARATOR**](/windows/desktop/api/Winsock2/ne-winsock2-wsaecomparator) a la que hace referencia el **miembro lpversion** se usa tanto para la restricción de consulta como para los resultados. Para las consultas, el **miembro dwVersion** indica la versión deseada del servicio. El **miembro ecHow** es un tipo enumerado que especifica cómo se puede realizar la comparación. Las opciones son COMP EQUALS, que requiere que se produzca una coincidencia exacta en la versión, o COMP NOTLESS, que especifica que el número de versión del servicio no sea menor que el valor del \_ \_ miembro **dwVersion.**
 
-La interpretación de **dwNameSpace** y **lpNSProviderId** depende de cómo se use la estructura y se describe más detalladamente en las descripciones de función individuales que usan esta estructura.
+La interpretación de **dwNameSpace** y **lpNSProviderId** depende de cómo se use la estructura y se describe más detalladamente en las descripciones de funciones individuales que usan esta estructura.
 
 El **miembro lpszContext** se aplica a los espacios de nombres jerárquicos y especifica el punto inicial de una consulta o la ubicación dentro de la jerarquía donde reside el servicio. Las reglas generales son las siguientes:
 
--   Un valor **NULL**, en blanco ("") inicia la búsqueda en el contexto predeterminado.
+-   Un valor de **NULL**, en blanco ("") inicia la búsqueda en el contexto predeterminado.
 -   Un valor de " \\ " inicia la búsqueda en la parte superior del espacio de nombres.
 -   Cualquier otro valor inicia la búsqueda en el punto designado.
 
@@ -43,9 +43,9 @@ La [**estructura AFPROTOCOLS**](/windows/desktop/api/Winsock2/ns-winsock2-afprot
 
 La matriz de la estructura INFO de [**CSADDR \_**](/windows/win32/api/ws2def/ns-ws2def-csaddr_info) a la que hace referencia el miembro **lpcsaBuffer** contiene toda la información necesaria para que un servicio use para establecer una escucha o para que un cliente la use para establecer una conexión con el servicio. Los **miembros LocalAddr** y **RemoteAddr** contienen directamente una [**estructura SOCKET \_ ADDRESS.**](/windows/desktop/api/Ws2def/ns-ws2def-socket_address)
 
-Un servicio crearía un socket llamando a la función [**socket**](/windows/desktop/api/Winsock2/nf-winsock2-socket) o [**WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) mediante la tupla *de LocalAddr.lpSockaddr->sa \_ family*, *iSocketType* e *iProtocol* como parámetros. Un servicio enlazaría el socket a una dirección local llamando a la función [**bind**](/windows/desktop/api/winsock/nf-winsock-bind) mediante *LocalAddr.lpSockaddr y* *LocalAddr.lpSockaddrLength* como parámetros.
+Un servicio crearía un socket llamando a la función [**socket**](/windows/desktop/api/Winsock2/nf-winsock2-socket) o [**WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) mediante la tupla *de LocalAddr.lpSockaddr->sa \_ family*, *iSocketType* e *iProtocol* como parámetros. Un servicio enlazaría el socket a una dirección local llamando a la función [**bind**](/windows/desktop/api/winsock/nf-winsock-bind) mediante *LocalAddr.lpSockaddr* y *LocalAddr.lpSockaddrLength* como parámetros.
 
-Un cliente crea su socket llamando a la función [**socket**](/windows/desktop/api/Winsock2/nf-winsock2-socket) o [**WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) mediante la tupla *de LocalAddr.lpSockaddr->sa \_ family*, *iSocketType* e *iProtocol* como parámetros. Un cliente usa la combinación de *RemoteAddr.lpSockaddr y* *RemoteAddr.lpSockaddrLength* como parámetros al realizar una conexión remota mediante la función [**connect**](/windows/desktop/api/Winsock2/nf-winsock2-connect), [**ConnectEx**](/windows/desktop/api/Mswsock/nc-mswsock-lpfn_connectex)o [**WSAConnect.**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect)
+Un cliente crea su socket llamando a la función [**socket**](/windows/desktop/api/Winsock2/nf-winsock2-socket) o [**WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) mediante la tupla *de LocalAddr.lpSockaddr->sa \_ family*, *iSocketType* e *iProtocol* como parámetros. Un cliente usa la combinación de *RemoteAddr.lpSockaddr y* *RemoteAddr.lpSockaddrLength* como parámetros al realizar una conexión remota mediante la función connect [**,**](/windows/desktop/api/Winsock2/nf-winsock2-connect) [**ConnectEx**](/windows/desktop/api/Mswsock/nc-mswsock-lpfn_connectex)o [**WSAConnect.**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect)
 
 ## <a name="service-class-data-structures"></a>Estructuras de datos de clase de servicio
 
@@ -57,7 +57,7 @@ Para cada clase de servicio, hay una única [**estructura WSASERVICECLASSINFO.**
 
 El **miembro lpClassInfos** de la estructura [**WSASERVICECLASSINFO**](/windows/desktop/api/Winsock2/ns-winsock2-wsaserviceclassinfow) hace referencia a una matriz de estructuras **WSANSCLASSINFO,** cada una de las cuales proporciona un miembro con nombre y tipo que se aplica a un espacio de nombres especificado. Algunos ejemplos de valores para el **miembro lpszName** son: "SapId", "TcpPort", "UdpPort", etc. Estas cadenas suelen ser específicas del espacio de nombres identificado en el **miembro dwNameSpace.** Los valores típicos del **miembro dwValueType** pueden ser REG \_ DWORD, REG \_ SZ, etc. El **miembro dwValueSize** indica la longitud del elemento de datos al que apunta **lpValue.**
 
-Toda la colección de datos representada en una estructura **WSASERVICECLASSINFO** se proporciona a cada proveedor de espacios de nombres cuando se invoca la función [**WSAInstallServiceClass.**](/windows/desktop/api/Winsock2/nf-winsock2-wsainstallserviceclassa) A continuación, cada proveedor de espacios de nombres individuales hace un sondeo en la lista de estructuras **WSANSCLASSINFO** y conserva la información aplicable a ella.
+Toda la colección de datos representada en una estructura **WSASERVICECLASSINFO** se proporciona a cada proveedor de espacios de nombres cuando se invoca la función [**WSAInstallServiceClass.**](/windows/desktop/api/Winsock2/nf-winsock2-wsainstallserviceclassa) A continuación, cada proveedor de espacios de nombres individuales se pasa por la lista de estructuras **WSANSCLASSINFO** y conserva la información aplicable a ella.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -72,13 +72,13 @@ Toda la colección de datos representada en una estructura **WSASERVICECLASSINFO
 [Modelo de resolución de nombres](name-resolution-model-2.md)
 </dt> <dt>
 
-[Resolución de nombres independiente del protocolo](protocol-independent-name-resolution-2.md)
+[Resolución de nombres independientes del protocolo](protocol-independent-name-resolution-2.md)
 </dt> <dt>
 
 [Registro y resolución de nombres](registration-and-name-resolution-2.md)
 </dt> <dt>
 
-[**DIRECCIÓN DE \_ SOCKET**](/windows/desktop/api/Ws2def/ns-ws2def-socket_address)
+[**DIRECCIÓN \_ DE SOCKET**](/windows/desktop/api/Ws2def/ns-ws2def-socket_address)
 </dt> <dt>
 
 [Resumen de las funciones de resolución de nombres](summary-of-name-resolution-functions-2.md)

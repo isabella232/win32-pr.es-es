@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8f0b9671891b9f9c90e8a36e3fc0b58e92a513935d2923e3a2eed5134dcef777
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00300ca9656c3b732b9c294aeba9a6c626ac6e2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118009361"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070190"
 ---
 # <a name="terminate-method-of-the-win32_process-class"></a>Método Terminate de la clase Process de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Terminate** finaliza un proceso y todos sus subprocesos.
+El método [de clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Terminate** finaliza un proceso y todos sus subprocesos.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Código de salida para el proceso y para todos los subprocesos finalizados como 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el proceso se finalizó correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) si el proceso se finalizó correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ Devuelve un valor de 0 (cero) si el proceso se finalizó correctamente y cualqui
 **Acceso denegado** (2)
 </dt> <dt>
 
-**Privilegios insuficientes** (3)
+**Privilegio insuficiente** (3)
 </dt> <dt>
 
 **Error desconocido** (8)
@@ -76,16 +76,16 @@ Devuelve un valor de 0 (cero) si el proceso se finalizó correctamente y cualqui
 **Otros** (22 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Información general**
 
-Los problemas del equipo suelen deberse a un proceso que ya no funciona según lo previsto. Por ejemplo, el proceso podría estar filtrando memoria o podría haber dejado de responder a la entrada del usuario. Cuando se producen problemas como estos, se debe finalizar el proceso. Aunque esto puede parecer una tarea lo suficientemente sencilla, la finalización de un proceso puede ser complicada por varios factores:
+Los problemas del equipo suelen deberse a un proceso que ya no funciona según lo previsto. Por ejemplo, es posible que el proceso esté filtrando memoria o que haya dejado de responder a la entrada del usuario. Cuando se producen problemas como estos, se debe finalizar el proceso. Aunque esto puede parecer una tarea lo suficientemente sencilla, la terminación de un proceso puede ser complicada por varios factores:
 
--   El proceso podría estar cerrado y, por tanto, ya no responde a los comandos de menú o teclado para cerrar la aplicación. Esto hace todo menos imposible para el usuario típico descartar la aplicación y finalizar el proceso.
+-   El proceso podría estar cerrado y, por tanto, ya no responde a los comandos de menú o teclado para cerrar la aplicación. Esto hace que sea todo, pero imposible, que el usuario típico descarte la aplicación y finalice el proceso.
 -   El proceso podría estar huérfano. Por ejemplo, un script podría crear una instancia de Word y, a continuación, salir sin destruir esa instancia. En efecto, Word sigue ejecutándose en el equipo, aunque no haya ninguna interfaz de usuario visible. Dado que no hay ninguna interfaz de usuario, no hay ningún comando de menú o teclado disponible para finalizar el proceso.
 -   Es posible que no sepa qué proceso debe finalizar. Por ejemplo, puede que desee finalizar todos los programas que superen una cantidad de memoria especificada.
--   Dado Administrador de tareas permite finalizar solo los procesos que creó, es posible que no pueda finalizar un proceso, incluso si es administrador en el equipo.
+-   Dado Administrador de tareas permite finalizar solo los procesos que ha creado, es posible que no pueda finalizar un proceso, incluso si es administrador en el equipo.
 
 Los scripts le permiten superar todos estos posibles obstáculos, lo que le proporciona un control administrativo considerable sobre los equipos. Por ejemplo, si sospecha que los usuarios están haciendo juegos prohibidos en su organización, puede escribir fácilmente un script para conectarse a cada equipo, identificar si el juego se está ejecutando y finalizar inmediatamente el proceso.
 
@@ -94,10 +94,10 @@ Los scripts le permiten superar todos estos posibles obstáculos, lo que le prop
 Puede finalizar un proceso mediante:
 
 -   Terminación de un proceso que se está ejecutando actualmente. Por ejemplo, es posible que tenga que finalizar un programa de diagnóstico que se ejecuta en un equipo remoto. Si no hay ninguna manera de controlar la aplicación de forma remota, simplemente puede finalizar el proceso de esa aplicación.
--   Impedir que un proceso se ejecute en primer lugar. Al supervisar continuamente la creación de procesos en un equipo, puede identificar y finalizar al instante cualquier proceso en cuanto se inicie. Esto proporciona un método para garantizar que determinadas aplicaciones (como los programas que descargan archivos multimedia grandes a través de Internet) nunca se ejecuten en determinados equipos.
+-   Impedir que un proceso se ejecute en primer lugar. Al supervisar continuamente la creación de procesos en un equipo, puede identificar y finalizar al instante cualquier proceso en cuanto se inicia. Esto proporciona un método para garantizar que determinadas aplicaciones (como los programas que descargan archivos multimedia grandes a través de Internet) nunca se ejecutan en determinados equipos.
 
 > [!Note]  
-> directiva de grupo también se puede usar para restringir los programas que se ejecutan en un equipo. Sin embargo, directiva de grupo puede restringir solo los programas que se ejecutan mediante menú Inicio o Windows Explorer; no tiene ningún efecto en los programas que empezaron a usar otros medios, como la línea de comandos. Por el contrario, WMI puede impedir que un proceso se ejecute independientemente de cómo se inició el proceso.
+> directiva de grupo también se puede usar para restringir los programas que se ejecutan en un equipo. Sin embargo, directiva de grupo puede restringir solo los programas que se ejecutan mediante menú Inicio o Windows Explorador; no tiene ningún efecto en los programas que empezaron a usar otros medios, como la línea de comandos. Por el contrario, WMI puede impedir que un proceso se ejecute independientemente de cómo se inició el proceso.
 
  
 
@@ -119,7 +119,7 @@ Para obtener más información sobre cómo habilitar este privilegio en C++, vea
 
 El ejemplo de código de PowerShell Terminate [running process on multiple servers](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) on TechNet Gallery (Finalizar el proceso en ejecución en varios servidores en la Galería de TechNet) finaliza un proceso que se ejecuta en uno o varios equipos.
 
-El siguiente ejemplo de VBScript finaliza el proceso en el que la aplicación Diagnose.exe está ejecutando actualmente.
+El siguiente ejemplo de VBScript finaliza el proceso en el que la aplicación Diagnose.exe se está ejecutando actualmente.
 
 
 ```VB
@@ -152,7 +152,7 @@ Loop
 
 
 
-En el ejemplo de código de VBScript siguiente se conecta a un equipo remoto y Notepad.exe en ese equipo.
+El siguiente ejemplo de código VBScript se conecta a un equipo remoto y Notepad.exe en ese equipo.
 
 
 ```VB
@@ -388,7 +388,7 @@ int main(int iArgCnt, char ** argv)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

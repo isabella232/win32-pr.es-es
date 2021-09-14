@@ -14,12 +14,12 @@ keywords:
 - UIA_LocalizedControlTypePropertyId propiedad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef59d46e8f0ad00d2613bcec43ee914c71c9edbc1c8501cd2a714df2b883f63f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b504de2c8f0ae660a27b3b16fa4537630a468f5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119795485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070562"
 ---
 # <a name="ui-automation-control-types-overview"></a>Información general sobre tipos de control de UI Automation
 

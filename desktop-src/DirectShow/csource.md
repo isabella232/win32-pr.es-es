@@ -1,7 +1,7 @@
 ---
-description: La clase CSource es una clase base para implementar filtros de origen. Un filtro derivado de CSource contiene uno o varios pins de salida derivados de la clase CSourceStream. Cada pin de salida crea un subproceso de trabajo que inserta muestras de medios de bajada.
+description: La clase CSource es una clase base para implementar filtros de origen. Un filtro derivado de CSource contiene uno o varios pines de salida derivados de la clase CSourceStream. Cada pin de salida crea un subproceso de trabajo que inserta muestras de medios de bajada.
 ms.assetid: 25bd0334-4ad1-48ed-93f9-b36c13a280a3
-title: CSource (clase, Source.h)
+title: Clase CSource (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6708ce38c826aae9ccb40d077972d267a20d5e22b4f67157000c4a62e92afa1a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4fcecbd1973c54e30c9bf1251bed174aa4a469f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070025"
 ---
 # <a name="csource-class"></a>CSource (clase)
 
-![Jerarquía de clases de csource](images/source01.png)
+![Jerarquía de clases csource](images/source01.png)
 
-La **clase CSource** es una clase base para implementar filtros de origen. Un filtro derivado de **CSource** contiene uno o varios pins de salida derivados de la [**clase CSourceStream.**](csourcestream.md) Cada pin de salida crea un subproceso de trabajo que inserta muestras de medios de bajada.
+La **clase CSource** es una clase base para implementar filtros de origen. Un filtro derivado de **CSource** contiene uno o varios pines de salida derivados de la [**clase CSourceStream.**](csourcestream.md) Cada pin de salida crea un subproceso de trabajo que inserta muestras de medios de bajada.
 
 > [!Note]  
 > La **clase CSource** está diseñada para admitir el modelo de inserción para el flujo de datos. Esta clase no se recomienda para crear filtros de lector de archivos. Los lectores de archivos deben admitir el modelo de extracción a través de [**la interfaz IAsyncReader.**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) Para obtener más información, vea [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
@@ -36,7 +36,7 @@ La **clase CSource** es una clase base para implementar filtros de origen. Un fi
 
 
 
-| Variables de miembro protegido                     | Descripción                                                  |
+| Variables miembro protegidas                     | Descripción                                                  |
 |------------------------------------------------|--------------------------------------------------------------|
 | [**m \_ iPins**](csource-m-ipins.md)            | Número de pines en el filtro.                                |
 | [**m \_ paStreams**](csource-m-pastreams.md)    | Matriz de pines.                                               |
@@ -47,7 +47,7 @@ La **clase CSource** es una clase base para implementar filtros de origen. Un fi
 | [**GetPinCount**](csource-getpincount.md)     | Recupera el número de pines del filtro.                  |
 | [**GetPin**](csource-getpin.md)               | Recupera un pin.                                             |
 | [**pStateLock**](csource--pstatelock.md)      | Recupera un puntero al objeto de sección crítica del filtro. |
-| [**AddPin**](csource-addpin.md)               | Agrega un nuevo pin de salida al filtro.                         |
+| [**AddPin**](csource-addpin.md)               | Agrega una nueva patilla de salida al filtro.                         |
 | [**RemovePin**](csource-removepin.md)         | Quita un pin especificado del filtro.                     |
 | [**FindPinNumber**](csource-findpinnumber.md) | Recupera el número de un pin especificado en el filtro.       |
 | Métodos IBaseFilter                            | Descripción                                                  |
@@ -57,19 +57,19 @@ La **clase CSource** es una clase base para implementar filtros de origen. Un fi
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para implementar un pin de salida, haga lo siguiente:
 
--   Derive una clase de [**CSourceStream**](csourcestream.md).
--   Invalide [**el método CSourceStream::GetMediaType**](csourcestream-getmediatype.md) y, posiblemente, el método [**CSourceStream::CheckMediaType,**](csourcestream-checkmediatype.md) que valida los tipos de medios para el pin.
+-   Derive una clase de [**CSourceStream.**](csourcestream.md)
+-   Invalide [**el método CSourceStream::GetMediaType**](csourcestream-getmediatype.md) y, posiblemente, el método [**CSourceStream::CheckMediaType,**](csourcestream-checkmediatype.md) que valida los tipos multimedia para el pin.
 -   Implemente [**el método CBaseOutputPin::D ecideBufferSize,**](cbaseoutputpin-decidebuffersize.md) que devuelve los requisitos de búfer del pin.
 -   Implemente [**el método CSourceStream::FillBuffer,**](csourcestream-fillbuffer.md) que rellena un búfer de ejemplo multimedia con datos.
 
 Para implementar el filtro, haga lo siguiente:
 
 -   Derive una clase de **CSource**.
--   En el constructor, cree uno o varios pins de salida derivados de [**CSourceStream.**](csourcestream.md) Los pines se agregan automáticamente al filtro en sus métodos de constructor y se quitan ellos mismos en sus métodos destructores.
+-   En el constructor, cree uno o varios pines de salida derivados de [**CSourceStream.**](csourcestream.md) Los pines se agregan automáticamente al filtro en sus métodos de constructor y se quitan a sí mismos en sus métodos destructores.
 
 Para sincronizar el estado de filtro entre varios subprocesos, llame al [**método CSource::p StateLock.**](csource--pstatelock.md) Este método devuelve un puntero a la sección crítica de estado de filtro. Use la [**clase CAutoLock**](cautolock.md) para contener la sección crítica. Desde un pin, puede acceder **a pStateLock** desde la variable miembro [**CBasePin::m \_ pFilter**](cbasepin-m-pfilter.md) del pin, como se muestra a continuación:
 

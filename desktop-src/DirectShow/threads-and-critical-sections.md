@@ -4,12 +4,12 @@ ms.assetid: e55acb06-03f4-4191-bffe-3196f41ef2c7
 title: Subprocesos y secciones críticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d13473a917ae49e80ec658b0d6187fdfdff80c6e3a080a229aca7ccbbe536c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 576cb28e7e382db92328adf09980a825e71b5a3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118651409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069997"
 ---
 # <a name="threads-and-critical-sections"></a>Subprocesos y secciones críticas
 

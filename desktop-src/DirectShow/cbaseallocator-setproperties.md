@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d81ee1c29f1c9e2cc9927f926144a7427b5e94f72406f94ce65f7d4a20e2ab32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 000da3ee359ad727e3af972fc4aa6d0dbbb9133e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070137"
 ---
 # <a name="cbaseallocatorsetproperties-method"></a>Método CBaseAllocator.SetProperties
 
@@ -46,7 +46,7 @@ HRESULT SetProperties(
 *pRequest* 
 </dt> <dd>
 
-Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos del búfer.
+Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos de búfer.
 
 </dd> <dt>
 
@@ -75,11 +75,11 @@ Devuelve uno de los siguientes **valores HRESULT.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método especifica los requisitos del búfer, pero no asigna ningún búfer. Llame al [**método CBaseAllocator::Commit**](cbaseallocator-commit.md) para asignar búferes.
+Este método especifica los requisitos de búfer, pero no asigna ningún búfer. Llame al [**método CBaseAllocator::Commit**](cbaseallocator-commit.md) para asignar búferes.
 
-El autor de la llamada asigna dos estructuras ALLOCATOR \_ PROPERTIES. El *parámetro pRequest* contiene los requisitos del búfer del autor de la llamada, incluido el número de búferes y el tamaño de cada búfer. Cuando el método vuelve, el *parámetro pActual* contiene las propiedades de búfer reales, tal y como establece el asignador. En la clase base, suponiendo que el método se realiza correctamente, las propiedades reales siempre coinciden con las propiedades solicitadas. Las clases derivadas pueden invalidar este comportamiento.
+El autor de la llamada asigna dos estructuras \_ ALLOCATOR PROPERTIES. El *parámetro pRequest* contiene los requisitos de búfer del autor de la llamada, incluido el número de búferes y el tamaño de cada búfer. Cuando el método devuelve un resultado, el *parámetro pActual* contiene las propiedades de búfer reales, tal y como establece el asignador. En la clase base, suponiendo que el método se realiza correctamente, las propiedades reales siempre coinciden con las propiedades solicitadas. Las clases derivadas pueden invalidar este comportamiento.
 
 El asignador no debe estar confirmado y no debe tener búferes pendientes. En la clase base, la alineación debe ser igual a 1. La [**clase CMemAllocator**](cmemallocator.md) invalida este requisito.
 

@@ -1,9 +1,9 @@
 ---
 title: bindable (atributo)
-description: El atributo \ Bindable \ indica que la propiedad admite el enlace de datos.
+description: El atributo \bindable\ indica que la propiedad admite el enlace de datos.
 ms.assetid: ba09096d-a2f7-4958-827c-0fba19ded26f
 keywords:
-- MIDL del atributo enlazable
+- ATRIBUTO enlazable MIDL
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 33911ba5ff55ef5e3dd377613dd98532ecd97486
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105685698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159672"
 ---
 # <a name="bindable-attribute"></a>bindable (atributo)
 
-El atributo **\[ Bindable \]** indica que la propiedad admite el enlace de datos.
+El **\[ atributo \] enlazable** indica que la propiedad admite el enlace de datos.
 
 ``` syntax
 [
@@ -37,38 +37,38 @@ interface | dispinterface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en conjunto. Cuando dos o más atributos de interfaz están presentes, deben separarse con comas.
+Especifica una lista de cero o más atributos IDL que se aplican a la interfaz en su conjunto. Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*lista de atributos* 
+*attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican al prototipo de función para una propiedad o un método en una [**interfaz**](interface.md) o [**dispinterface**](dispinterface.md). Los atributos siguientes son válidos: [**\[ \] HelpString**](helpstring.md), [**\[ \] HelpContext**](helpcontext.md), [**\[ String \]**](string.md), [**\[ defaultbind \]**](defaultbind.md), [**\[ displaybind \]**](displaybind.md), [**\[ immediatebind \]**](immediatebind.md), [**\[ propget \]**](propget.md), [**\[ PROPPUT \]**](propput.md), [**\[ PROPPUTREF \]**](propputref.md)y [**\[ vararg \]**](vararg.md). Si se especifica **vararg** , el último parámetro debe ser una matriz segura de tipo Variant. Separe varios atributos con comas.
+Especifica cero o más atributos que se aplican al prototipo de función para una propiedad o un método en una [**interfaz**](interface.md) o [**dispinterface**](dispinterface.md). Los atributos siguientes son válidos: [**\[ helpstring \]**](helpstring.md), [**\[ helpcontext \]**](helpcontext.md), [**\[ \] string**](string.md), [**\[ defaultbind \]**](defaultbind.md), [**\[ displaybind \]**](displaybind.md), [**\[ immediatebind \]**](immediatebind.md), [**\[ propget \]**](propget.md), [**\[ propput \]**](propput.md), [**\[ propputref \]**](propputref.md) [**\[ ylegarg \]**](vararg.md). Si **se especifica ,** el último parámetro debe ser una matriz segura de tipo VARIANT. Separe varios atributos con comas.
 
 </dd> <dt>
 
-*ReturnType* 
+*returntype* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
-Especifica el nombre de la función a la que se aplicará el atributo **\[ enlazable \]** .
+Especifica el nombre de la función a la que **se \[ \]** aplicará el atributo enlazable.
 
 </dd> <dt>
 
@@ -81,13 +81,13 @@ Lista de parámetros de función.
 
 ## <a name="remarks"></a>Observaciones
 
-Al admitir el enlace de datos, el atributo **\[ enlazable \]** permite al cliente recibir una notificación cada vez que una propiedad ha cambiado de valor. (Si desea que el cliente reciba notificaciones de cambios inminentes en una propiedad, use el atributo [**\[ requestedit \]**](requestedit.md) ).
+Al admitir el enlace de datos, el atributo **\[ enlazable \]** permite notificar al cliente cada vez que una propiedad ha cambiado el valor. (Si desea que se notifique al cliente de los cambios inminentes en una propiedad, use el [**\[ atributo requestedit). \]**](requestedit.md)
 
-Dado que el atributo **\[ enlazable \]** hace referencia a la propiedad como un todo, se debe especificar dondequiera que se defina la propiedad. Por lo tanto, debe especificar el atributo en la función de acceso a propiedades y en la función de configuración de propiedades.
+Dado que **\[ el atributo enlazable \]** hace referencia a la propiedad en su conjunto, debe especificarse siempre que se defina la propiedad. Por lo tanto, debe especificar el atributo en la función de acceso a la propiedad y en la función de configuración de propiedades.
 
 ### <a name="flags"></a>Marcas
 
-FUNCFLAG \_ FBINDABLE, VARFLAG \_ FBINDABLE
+\_FUNCFLAGBLABLE, \_ VARFLAGBLABLE
 
 ## <a name="examples"></a>Ejemplos
 
@@ -112,7 +112,7 @@ dispinterface MyObject
 [**defaultbind**](defaultbind.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
 [**displaybind**](displaybind.md)
@@ -130,28 +130,28 @@ dispinterface MyObject
 [**immediatebind**](immediatebind.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**propget**](propget.md)
 </dt> <dt>
 
-[**PROPPUT**](propput.md)
+[**propput**](propput.md)
 </dt> <dt>
 
-[**PROPPUTREF**](propputref.md)
+[**propputref**](propputref.md)
 </dt> <dt>
 
 [**requestedit**](requestedit.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Cadena**](string.md)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
@@ -160,6 +160,6 @@ dispinterface MyObject
 [**vararg**](vararg.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

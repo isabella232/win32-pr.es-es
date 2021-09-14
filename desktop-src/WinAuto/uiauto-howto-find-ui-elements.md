@@ -4,12 +4,12 @@ description: Este tema contiene código de ejemplo que muestra cómo buscar elem
 ms.assetid: b613eb18-e14d-468e-833d-072bad29ba06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52998ad92fe1912a5159443642d95bbc14a28da595ddd2b2a255ebecaed8c74d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 887ef914d7abcf5ed6dfc546f0930334f53215d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119505275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070510"
 ---
 # <a name="how-to-find-ui-elements"></a>Cómo buscar elementos de la interfaz de usuario
 
@@ -21,7 +21,7 @@ Este tema contiene código de ejemplo que muestra cómo buscar elementos de inte
 
 ## <a name="finding-an-element-by-name"></a>Buscar un elemento por nombre
 
-En el ejemplo siguiente se busca el Automatización de la interfaz de usuario microsoft que tiene el nombre especificado y es un elemento secundario de la ventana de escritorio.
+En el ejemplo siguiente se busca el Automatización de la interfaz de usuario de Microsoft que tiene el nombre especificado y es un elemento secundario de la ventana de escritorio.
 
 
 ```C++

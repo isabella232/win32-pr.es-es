@@ -4,22 +4,22 @@ ms.assetid: e8c3ceed-d391-4934-b3f7-12c2123c8c23
 title: NTFS transaccional (TxF)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a5b44a35e4f83c1389d1fc2e6bc3de4f97f5ad203bbdee4750c2fcd26d87f47
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b7553bfc7cae0b5389762527f0ac726c674a6a03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119431915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069826"
 ---
 # <a name="transactional-ntfs-txf"></a>NTFS transaccional (TxF)
 
-\[Microsoft recomienda encarecidamente a los desarrolladores que utilicen medios alternativos para satisfacer las necesidades de la aplicación. Muchos de los escenarios para los que se desarrolló TxF se pueden lograr mediante técnicas más sencillas y disponibles. Además, es posible que TxF no esté disponible en versiones futuras de Microsoft Windows. Para obtener más información y alternativas a TxF, vea [Alternativas al uso de NTFS transaccional.](deprecation-of-txf.md)\]
+\[Microsoft recomienda encarecidamente a los desarrolladores que utilicen medios alternativos para satisfacer las necesidades de la aplicación. Muchos escenarios para los que se desarrolló TxF se pueden lograr mediante técnicas más sencillas y disponibles. Además, es posible que TxF no esté disponible en versiones futuras de Microsoft Windows. Para obtener más información y alternativas a TxF, vea [Alternativas al uso de NTFS transaccional.](deprecation-of-txf.md)\]
 
 ## <a name="purpose"></a>Propósito
 
 NTFS transaccional (TxF) permite realizar operaciones de archivo en un volumen del sistema de archivos NTFS en una transacción. Las transacciones txF aumentan la confiabilidad de la aplicación al proteger la integridad de los datos en los errores y simplifican el desarrollo de aplicaciones al reducir en gran medida la cantidad de código de control de errores.
 
-TxF usa el marco de transacciones proporcionado por [kernel Transaction Manager](/windows/desktop/Ktm/kernel-transaction-manager-portal) (KTM). Esto permite que las operaciones de archivo TxF forman parte de una transacción que implica otros orígenes de datos, como SQL Server y transacted Registry (TxR).
+TxF usa el marco de transacciones proporcionado por [kernel Transaction Manager](/windows/desktop/Ktm/kernel-transaction-manager-portal) (KTM). Esto permite que las operaciones de archivo TxF forman parte de una transacción que implica otros orígenes de datos, como SQL Server y el Registro de transacciones (TxR).
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 251a2574908891d29baf9d4748943d0550f3f015eddccbdd123e31598b39b08c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 435dcfcf620bd33043d8c8c7d948bccd74eb4e77
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117991333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159571"
 ---
 # <a name="handle_t-attribute"></a>atributo \_ handle t
 
@@ -31,9 +31,9 @@ typedef RPC_BINDING_HANDLE handle_t;
 
 Este atributo no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **tipo \_ t** de identificador es uno de los tipos predefinidos del lenguaje de definición de interfaz (IDL). Puede aparecer como un especificador de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y un especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
+El **tipo de identificador \_ t** es uno de los tipos predefinidos del lenguaje de definición de interfaz (IDL). Puede aparecer como un especificador de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y un especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 
 En RPC de Microsoft, los parámetros de **tipo \_ handle t** solo se pueden producir como en **\[** [**los**](in.md) **\]** parámetros. Los identificadores primitivos no pueden **\[** [**tener el**](unique.md) **\]** atributo único o **\[** [**ptr.**](ptr.md) **\]**
 

@@ -5,12 +5,12 @@ title: Entrada y salida (E/S)
 ms.topic: article
 ms.date: 03/19/2021
 ms.custom: project-verbatim
-ms.openlocfilehash: adbf2d512d99fbf38c51bb8887e2cbc51f5d81a5f6a17bdeef21be189fc8a053
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 729c4eac6ce074c9d2d34e96d313a780058922e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069923"
 ---
 # <a name="input-and-output-io"></a>Entrada y salida (E/S)
 

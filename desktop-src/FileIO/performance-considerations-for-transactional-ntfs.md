@@ -4,12 +4,12 @@ ms.assetid: 847939ff-5322-4023-8ef7-9d845e80d65c
 title: Consideraciones de rendimiento para NTFS transaccional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f32729725ecc6ba59808eabe1fa12a5b798c9413c52d1591bd22b498e6a5856d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a71f7e100e1ddd8524932a4a259a12092bddcb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117996719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069875"
 ---
 # <a name="performance-considerations-for-transactional-ntfs"></a>Consideraciones de rendimiento para NTFS transaccional
 
@@ -21,10 +21,10 @@ TxF usa el registro *de* deshacer para registrar los cambios necesarios para vol
 
 A continuación se muestra un resumen general de cómo funciona TxF:
 
--   A medida que progresa una transacción, TxF escribe *los* registros de deshacer en su archivo de registro para cada modificación que realiza en el sistema de archivos. Si se produce una anulación, estos registros de deshacer se analizan para volver a poner el sistema de archivos en el estado que tenía antes de que se iniciara la transacción.
+-   A medida que avanza una transacción, TxF escribe *los* registros de deshacer en su archivo de registro para cada modificación que realiza en el sistema de archivos. Si se produce una anulación, estos registros de deshacer se analizan para volver a poner el sistema de archivos en el estado que tenía antes de que se iniciara la transacción.
 -   Un *registro de deshacer* un cambio de metadatos solo describe un cambio en los metadatos del sistema de archivos. Algunos ejemplos de esto son movimientos, cambios de nombre, anexos y cambios de atributos. En el caso de los registros de deshacer cambios de metadatos, toda la información necesaria para deshacer el cambio se encuentra en el registro y se almacena en el archivo de registro.
 -   Un *registro de* deshacer sobrescritura describe una sobrescritura de una parte de un archivo. Cuando se produce una sobrescritura de archivos, el contenido original del archivo se almacena en un archivo de deshacer especial en un directorio oculto y el registro de deshacer sobrescritura apunta a este archivo. Cuando las actualizaciones de archivos se vacían finalmente de la memoria caché al disco, también se debe vaciar el contenido del archivo de deshacer, por lo que una sobrescritura de archivos con transacciones podría generar hasta dos operaciones de E/S aleatorias adicionales: una para leer los datos antiguos y otra para escribirla en el archivo de deshacer. Estas operaciones de E/S adicionales son un costo de rendimiento de TxF.
--   Cuando se produce una confirmación, TxF vacía primero toda la información de deshacer, luego vacía los cambios reales del archivo y, a continuación, escribe y vacía un registro de confirmación. Si no hay ningún archivo de deshacer para vaciar, la única sobrecarga adicional de TxF relativa a la E/S sin transacciones es que el registro se vacía por sí mismo. Sin embargo, los vaciados de registro tienen como resultado escrituras secuenciales de gran tamaño eficaces, por lo que el costo de rendimiento es mínimo.
+-   Cuando se produce una confirmación, TxF vacía primero toda la información de deshacer, vacía los cambios reales del archivo y, a continuación, escribe y vacía un registro de confirmación. Si no hay ningún archivo de deshacer para vaciar, la única sobrecarga adicional de TxF relativa a la E/S sin transacciones es que el registro se vacía por sí mismo. Sin embargo, los vaciados de registro tienen como resultado escrituras secuenciales de gran tamaño eficaces, por lo que el costo de rendimiento es mínimo.
 -   TxF está optimizado para la confirmación. Se espera que la mayoría de las transacciones se realizarán correctamente y no tengan que revertirse, por lo que se espera que todos los registros de deshacer de una transacción no se utilicen. Desde la perspectiva del rendimiento, las operaciones de confirmación de TxF son rápidas y las reversión consumen muchos recursos.
 -   La reversión consume más recursos que la confirmación. Durante la reversión, todos los cambios realizados en la transacción deben no realizarse. En general, la duración de la reversión puede ser aproximadamente la misma que tardó en realizar los cambios originalmente. Por ejemplo, si se tardó 1 segundo en realizar todos los cambios, podría tardar aproximadamente 1 segundo en deshacerlos. En el caso de transacciones muy largas, la reversión puede crear impactos adicionales en el rendimiento. Por ejemplo, el tiempo de arranque del sistema se puede retrasar si el sistema debe revertir automáticamente una transacción en caso de que el sistema deje de responder y deba realizar un reinicio no programado.
 

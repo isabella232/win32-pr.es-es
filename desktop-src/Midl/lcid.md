@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e87d1b6105d7e6ae561d7409cbf256b67f965c61e235ffc5782594cb5623497c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5fa22b231c63583c6d16e6a50f3e9987c5b61128
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117806801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159517"
 ---
 # <a name="lcid-attribute"></a>Atributo lcid
 
-El **\[ atributo \] lcid** especifica un identificador de configuración regional y habilita la compatibilidad con el compilador MIDL específico de la configuración regional.
+El **\[ atributo \] lcid** especifica un identificador de configuración regional y habilita la compatibilidad del compilador MIDL específica de la configuración regional.
 
 ``` syntax
 [
@@ -51,7 +51,7 @@ Especifica un número de identificación único universal para la [**biblioteca*
 *localeID* 
 </dt> <dd>
 
-Especifica el identificador de configuración regional de 32 bits utilizado en Windows compatibilidad con idiomas nacionales. Normalmente, el identificador de configuración regional se indica en formato hexadecimal.
+Especifica el identificador de configuración regional de 32 bits que se usa Windows compatibilidad con idiomas nacionales. Normalmente, el identificador de configuración regional se indica en hexadecimal.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Una o varias instrucciones MIDL que definen el contenido de la [**biblioteca**](
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función en el archivo IDL.
@@ -97,7 +97,7 @@ Especifica el nombre del parámetro en el archivo IDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **\[ sintaxis lcid \]** tiene dos formas diferentes; el efecto del [](library.md) atributo depende de la sintaxis que use: la sintaxis de la instrucción de biblioteca o la sintaxis de parámetros.
 

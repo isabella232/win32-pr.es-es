@@ -15,18 +15,18 @@ keywords:
 - interfaces,IRangeValueProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae87ca25fd1ada2f57ce77412fb589875792541fd2b5d31d6eb0aa86192dee36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf426069ad88ad272fd78c521a220ba7ccf72275
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114866"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070487"
 ---
 # <a name="rangevalue-control-pattern"></a>Patrón de control RangeValue
 
 Describe directrices y convenciones para implementar [**IRangeValueProvider,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider)incluida información sobre propiedades y métodos. El patrón de control **RangeValue** se usa para admitir controles que se pueden establecer en un valor dentro de un intervalo.
 
-Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
+Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y Sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
 
 En este tema se incluyen las siguientes secciones.
 
@@ -49,13 +49,13 @@ Las siguientes propiedades y métodos son necesarios para implementar la [**inte
 
 | Miembros requeridos                                              | Tipo de miembro | Notas |
 |---------------------------------------------------------------|-------------|-------|
-| [**IsReadOnly**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_isreadonly)   | Propiedad    | Ninguno  |
-| [**Valor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_value)             | Propiedad    | Ninguno  |
-| [**LargeChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange) | Propiedad    | Ninguno  |
-| [**SmallChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_smallchange) | Propiedad    | Ninguno  |
-| [**Máximo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Propiedad    | Ninguno  |
-| [**Mínima**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Propiedad    | Ninguno  |
-| [**SetValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-setvalue)       | Método      | Ninguno  |
+| [**IsReadOnly**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_isreadonly)   | Propiedad.    | None  |
+| [**Valor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_value)             | Propiedad.    | None  |
+| [**LargeChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange) | Propiedad.    | None  |
+| [**SmallChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_smallchange) | Propiedad.    | None  |
+| [**Máxima**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Propiedad.    | None  |
+| [**Mínima**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Propiedad.    | None  |
+| [**SetValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-setvalue)       | Método      | None  |
 
 
 

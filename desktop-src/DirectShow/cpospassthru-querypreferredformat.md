@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6744516f52a22bf322670388295c55f15f19d19c1b3e5896bba1a66e0668a30
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c22348a10e8b9e5f241e06252c025e2ec9593486
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070059"
 ---
 # <a name="cpospassthruquerypreferredformat-method"></a>Método CPosPassThru.QueryPreferredFormat
 
-El `QueryPreferredFormat` método recupera el formato de hora preferido para la secuencia. Este método implementa el [**método IMediaSeeking::QueryPreferredFormat.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-querypreferredformat)
+El `QueryPreferredFormat` método recupera el formato de hora preferido para la secuencia. Este método implementa el método [**IMediaSeeking::QueryPreferredFormat.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-querypreferredformat)
 
 ## <a name="syntax"></a>Sintaxis
 

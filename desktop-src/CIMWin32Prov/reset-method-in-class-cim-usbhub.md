@@ -2,7 +2,7 @@
 description: El método Reset de la clase \_ CIM USBHub solicita un restablecimiento del dispositivo lógico.
 ms.assetid: ce23ac02-6f13-4b9e-bf73-51f61ced7efe
 ms.tgt_platform: multiple
-title: Método Reset de la CIM_USBHub clase
+title: Método reset de la CIM_USBHub clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5f94e1396b3754418a0b8784271b057770394054c5eae97f4b6f69805ce12ea4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b53716a3f7e1376b3749268bbbfddc73918ec4d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119700735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070203"
 ---
 # <a name="reset-method-of-the-cim_usbhub-class"></a>Método reset de la clase \_ CIM USBHub
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y algún otro valor si se produjo un error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
@@ -57,7 +57,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

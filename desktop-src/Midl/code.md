@@ -1,6 +1,6 @@
 ---
 title: atributo de código
-description: El atributo \ code\ ACF hace que se genere código auxiliar de cliente para las funciones remotas.
+description: El atributo \code\ ACF hace que el código auxiliar de cliente se genere para las funciones remotas.
 ms.assetid: 735a8c25-29d4-4073-a2db-88bc8615ccc1
 keywords:
 - atributo de código MIDL
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1d94f4f764fb25e5e2a5a43d1cdbe76f5288901846c2291daa4497947a486f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa041859c0bffca2771695b7055105b8ae846221
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117991819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159652"
 ---
 # <a name="code-attribute"></a>atributo de código
 
@@ -43,10 +43,10 @@ interface interface-name
 
 <dl> <dt>
 
-*Atributos de interfaz de ACF* 
+*Atributos de interfaz ACF* 
 </dt> <dd>
 
-Especifica una lista de uno o varios atributos que se aplican a la interfaz en su conjunto. Los atributos válidos incluyen el [**\[ identificador automático \_ o \]**](auto-handle.md) [**\[ el identificador \_ \] implícito**](implicit-handle.md) **\[ y el código \]**, [**\[ nocode \]**](nocode.md)o [**\[ optimize \]**](optimize.md). Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
+Especifica una lista de uno o varios atributos que se aplican a la interfaz en su conjunto. Entre los atributos válidos se incluyen el identificador [**\[ \_ automático \]**](auto-handle.md) [**\[ o el identificador \_ implícito \]**](implicit-handle.md) **\[ y el \]** código , la [**\[ codificación nocode \]**](nocode.md)o la [**\[ optimización de \]**](optimize.md). Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
@@ -60,14 +60,14 @@ Especifica el nombre de la interfaz.
 *filename-list* 
 </dt> <dd>
 
-Especifica una lista de uno o varios nombres de archivo de encabezado C, separados por comas. Debe proporcionar el nombre de archivo completo, incluida la extensión.
+Especifica una lista de uno o varios nombres de archivo de encabezado C, separados por comas. Debe proporcionar el nombre de archivo completo, incluida la extensión .
 
 </dd> <dt>
 
 *type-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de uno o varios atributos, separados por comas, que se aplican al tipo especificado. Los atributos de tipo válidos [**\[ incluyen asignar \]**](allocate.md) y representar [**\[ \_ como \]**](represent-as.md).
+Especifica una lista de uno o varios atributos, separados por comas, que se aplican al tipo especificado. Los atributos de tipo [**\[ válidos incluyen allocate \]**](allocate.md) y represent [**\[ \_ as \]**](represent-as.md).
 
 </dd> <dt>
 
@@ -78,14 +78,14 @@ Especifica un tipo definido en el archivo IDL. Los atributos de tipo del ACF sol
 
 </dd> <dt>
 
-*Atributos de función de ACF* 
+*ACF-function-attributes* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la función como un todo, como [**\[ el estado de \_ comm \]**](comm-status.md). Los atributos de función se incluyen entre corchetes. Separe varios atributos de función con comas.
+Especifica cero o más atributos que se aplican a la función en su conjunto, como [**\[ el estado de \_ comm \]**](comm-status.md). Los atributos de función se incluyen entre corchetes. Separe varios atributos de función con comas.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función tal como se define en el archivo IDL.
@@ -106,7 +106,7 @@ Especifica un parámetro de la función tal como se define en el archivo IDL. Ca
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo \]** de código puede aparecer en el encabezado ACF o aplicarse a una función individual.
 
@@ -118,7 +118,7 @@ Cuando el **\[ atributo de \]** código aparece en la lista de atributos de la f
 -   El [**\[ atributo \] nocode**](nocode.md) se aplica a la función.
 -   El [**\[ atributo local \]**](local.md) se aplica a la función en el archivo de interfaz.
 
-El **\[ \] código** o [**\[ el código nocode \]**](nocode.md) pueden aparecer en la lista de atributos de interfaz o función, pero el que elija solo puede aparecer una vez en la lista.
+El **\[ \] código** o [**\[ el código nocode \]**](nocode.md) pueden aparecer en la lista de atributos de función o interfaz, pero el que elija solo puede aparecer una vez en la lista.
 
 ## <a name="see-also"></a>Vea también
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2302fc27a76e6bfffb08fe75086b588ea361b192df2c94eba647006cbdd045ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ef483901a366fffb38ae8cae37cc987d6a228a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070081"
 ---
 # <a name="coareftimeoperator-reference_time-method"></a>Método COARefTime.operator REFERENCE \_ TIME
 

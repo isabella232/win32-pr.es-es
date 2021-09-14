@@ -1,5 +1,5 @@
 ---
-description: Win32 \_ IRQResource &\# 160; La clase WMI representa un número de línea de solicitud de interrupción (IRQ) en un sistema informático que ejecuta Windows.
+description: IRQResource de Win32 \_ &\# 160; La clase WMI representa un número de línea de solicitud de interrupción (IRQ) en un sistema informático que ejecuta Windows.
 ms.assetid: bae0c28e-2b66-40ac-9679-b2dfe9269306
 ms.tgt_platform: multiple
 title: Win32_IRQResource clase
@@ -29,16 +29,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f70f77fb34379a9503bc2ac0988bd855254da4d6a30042b6a8fddd41561f6f53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd02487fe166cd7ce55482eaca1339c8701f2b62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119699505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070185"
 ---
 # <a name="win32_irqresource-class"></a>Win32 \_ IRQResource (clase)
 
-La **clase WMI \_ IRQResource**[de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa un número de línea de solicitud de interrupción (IRQ) en un equipo que ejecuta Windows.   Una solicitud de interrupción es una señal enviada a la CPU por un dispositivo o programa para eventos críticos en el tiempo. IRQ puede estar basado en hardware o en software.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ IRQResource de Win32** representa un número de línea de solicitud de interrupción (IRQ) en un sistema informático que ejecuta Windows.   Una solicitud de interrupción es una señal enviada a la CPU por un dispositivo o programa para eventos críticos en el tiempo. IRQ puede basarse en hardware o en software.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -66,7 +66,7 @@ class Win32_IRQResource : CIM_IRQ
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ IRQResource de Win32** tiene estos tipos de miembros:
 
@@ -147,7 +147,7 @@ En uso o no disponible
 
 </dt> <dd>
 
-En uso y disponible o compartible
+En Uso y disponible o compartible
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ En uso y disponible o compartible
 
 </dt> <dd>
 
-En uso y disponible o compartible
+En uso y disponible/compartible
 
 </dd> </dl>
 
@@ -191,10 +191,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**\_ Clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
 Esta propiedad se hereda de [**CIM \_ IRQ**](cim-irq.md).
 
@@ -209,7 +209,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**Cim \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre de la clase de creación del sistema de equipo de ámbito.
@@ -227,7 +227,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre del sistema de equipo de ámbito.
@@ -315,7 +315,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -354,7 +354,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -560,7 +560,7 @@ Vector del recurso Windows IRQ. Un vector contiene la dirección de memoria de l
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ IRQResource de Win32** se deriva de [**CIM \_ IRQ**](cim-irq.md).
 

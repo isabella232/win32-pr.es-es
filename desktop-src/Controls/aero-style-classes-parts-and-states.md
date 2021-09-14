@@ -4,12 +4,12 @@ description: En este tema se describen las clases, las partes y los estados admi
 ms.assetid: 6ec340a8-8ad1-406e-9fe1-9da9710ee27e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 437ef4a4b032e4f1b5824d94f0ba924ca82745d0b7ea413044b87267ea1f891b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a484e11d04c7e935083ee85fadd9466b8f57dd4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070172"
 ---
 # <a name="aero-style-classes-parts-and-states"></a>Clases de estilo, partes y estados de Aero
 
@@ -65,7 +65,7 @@ En este tema se describen las clases, las partes y los estados admitidos por el 
 |                | FLYOUT \_ LINKAREA            |                                                                                            |
 |                | FLYOUT \_ LINKHEADER          | FLH \_ HOVER, FLH \_ NORMAL                                                                    |
 |                | VENTANA DE \_ FLYOUT              |                                                                                            |
-| Header         | HP \_ HEADERDROPDOWN          |                                                                                            |
+| Encabezado         | HP \_ HEADERDROPDOWN          |                                                                                            |
 |                | HP \_ HEADERDROPDOWNFILTER    |                                                                                            |
 |                | HP \_ HEADERITEM              |                                                                                            |
 | ListView       | LVP \_ GROUPHEADER            |                                                                                            |
@@ -88,7 +88,7 @@ En este tema se describen las clases, las partes y los estados admitidos por el 
 |                | SPNP \_ DOWNHORZ              |                                                                                            |
 |                | SPNP \_ UP                    |                                                                                            |
 |                | SPNP \_ UPHORZ                |                                                                                            |
-| Estado         | SP \_ GRIPPER                 |                                                                                            |
+| Status         | SP \_ GRIPPER                 |                                                                                            |
 |                | PANEL \_ SP                    |                                                                                            |
 | Pestaña            | TABP \_ AEROWIZARDBODY        |                                                                                            |
 |                | PANEL \_ TABP                  |                                                                                            |

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0f7563cabff97626ac45a150e9a763033d9ce9261e5ae528e83d174e35d4f0d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36b9085df8c15e765c751be8b5fcdfd4f4a02140
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070017"
 ---
 # <a name="csourcestream-class"></a>CSourceStream (clase)
 
@@ -29,7 +29,7 @@ ms.locfileid: "119428794"
 
 La **clase CSourceStream** proporciona un pin de salida para la [**clase de filtro CSource.**](csource.md)
 
-Para obtener información sobre el uso de esta clase, vea [**CSource**](csource.md). Esta clase hereda la clase [**CAMThread,**](camthread.md) que proporciona un subproceso de trabajo para el streaming de datos del pin. La **clase CSourceStream** implementa los siguientes métodos auxiliares para enviar solicitudes al subproceso:
+Para obtener información sobre el uso de esta clase, vea [**CSource**](csource.md). Esta clase hereda la [**clase CAMThread,**](camthread.md) que proporciona un subproceso de trabajo para la transmisión de datos desde el pin. La **clase CSourceStream** implementa los siguientes métodos auxiliares para enviar solicitudes al subproceso:
 
 -   [**CSourceStream::Exit**](csourcestream-exit.md)
 -   [**CSourceStream::Init**](csourcestream-init.md)
@@ -49,17 +49,17 @@ No hacen nada en la clase base, pero la clase derivada puede invalidarlos.
 
 
 
-| Variables miembro protegidas                                             | Descripción                                                                                                                       |
+| Variables de miembro protegido                                             | Descripción                                                                                                                       |
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | [**m \_ pFilter**](csourcestream-m-pfilter.md)                          | Puntero al filtro que contiene este pin.                                                                                     |
 | Métodos protegidos                                                      | Descripción                                                                                                                       |
 | [**OnThreadCreate**](csourcestream-onthreadcreate.md)                 | Se llama cuando se inicializa el subproceso de streaming. Virtual.                                                                         |
 | [**OnThreadDestroy**](csourcestream-onthreaddestroy.md)               | Se llama cuando el subproceso de streaming está a punto de salir. Virtual.                                                                       |
 | [**OnThreadStartPlay**](csourcestream-onthreadstartplay.md)           | Se llama al principio del [**método CSourceStream::D oBufferProcessingLoop.**](csourcestream-dobufferprocessingloop.md) Virtual. |
-| [**Activo**](csourcestream-active.md)                                 | Notifica al pin que el filtro ahora está activo.                                                                                   |
+| [**Active**](csourcestream-active.md)                                 | Notifica al pin que el filtro ahora está activo.                                                                                   |
 | [**Inactivo**](csourcestream-inactive.md)                             | Notifica al pin que el filtro ya no está activo.                                                                             |
-| [**GetRequest**](csourcestream-getrequest.md)                         | Espera la siguiente solicitud de subproceso.                                                                                                |
-| [**CheckRequest**](csourcestream-checkrequest.md)                     | Comprueba si hay una solicitud de subproceso, sin bloquear.                                                                            |
+| [**GetRequest**](csourcestream-getrequest.md)                         | Espera a la siguiente solicitud de subproceso.                                                                                                |
+| [**CheckRequest**](csourcestream-checkrequest.md)                     | Comprueba si hay una solicitud de subproceso, sin bloqueo.                                                                            |
 | [**ThreadProc**](csourcestream-threadproc.md)                         | Procedimiento de subproceso. Virtual.                                                                                                        |
 | [**DoBufferProcessingLoop**](csourcestream-dobufferprocessingloop.md) | Genera datos multimedia y los entrega al pin de entrada de bajada. Virtual.                                                        |
 | [**CheckMediaType**](csourcestream-checkmediatype.md)                 | Determina si el pin acepta un tipo de medio específico. Virtual.                                                                     |

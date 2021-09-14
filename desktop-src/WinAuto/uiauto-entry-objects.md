@@ -4,12 +4,12 @@ description: En esta sección se proporciona documentación de referencia para l
 ms.assetid: 5f844721-fbbc-4311-8c53-aea5baf4b347
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f28d3bcf45395738f4b2243395d30f4eb861ac47f941dd01d271f1e09393f5b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06ebccdc3c422c6eabe299e622fa1d3e438c6297
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070543"
 ---
 # <a name="ui-automation-objects"></a>Automatización de la interfaz de usuario objetos
 

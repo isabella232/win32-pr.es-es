@@ -6,18 +6,18 @@ keywords:
 - referencia de línea de comandos MIDL, sintaxis general
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa3d3ded263237dffa425cebe3dea49b169e3494045cfc8b0d27cc249c5ebed1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14baa145c7be03467a24bd4298cf2f502d93b6ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118384268"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159577"
 ---
 # <a name="general-midl-command-line-syntax"></a>Sintaxis general de la línea de comandos de MIDL
 
 El compilador MIDL procesa un archivo IDL y un archivo de configuración de aplicación (ACF) opcional para generar un conjunto de archivos de salida. Los atributos especificados en la lista de atributos de interfaz del archivo IDL determinan si el compilador genera archivos de origen para una interfaz RPC o para una interfaz OLE personalizada.
 
-## <a name="switch-options"></a>Opciones de cambio
+## <a name="switch-options"></a>Cambiar opciones
 
 ``` syntax
      midl [command-line-switch [switch-options]] filename
@@ -26,7 +26,7 @@ El compilador MIDL procesa un archivo IDL y un archivo de configuración de apli
 
 <dl> <dt>
 
-<span id="command-line-switch"></span><span id="COMMAND-LINE-SWITCH"></span>*modificador de línea de comandos*
+<span id="command-line-switch"></span><span id="COMMAND-LINE-SWITCH"></span>*command-line-switch*
 </dt> <dd>
 
 Especifica modificadores de línea de comandos del compilador MIDL. Los modificadores pueden aparecer en cualquier secuencia.
@@ -36,7 +36,7 @@ Especifica modificadores de línea de comandos del compilador MIDL. Los modifica
 <span id="switch-options"></span><span id="SWITCH-OPTIONS"></span>*switch-options*
 </dt> <dd>
 
-Especifica las opciones asociadas a cada modificador. Las opciones válidas se describen en la entrada de referencia para cada modificador del compilador MIDL.
+Especifica las opciones asociadas a cada modificador. Las opciones válidas se describen en la entrada de referencia de cada modificador del compilador MIDL.
 
 </dd> <dt>
 
@@ -47,7 +47,7 @@ Especifica el nombre del archivo IDL. Este archivo normalmente tiene la extensi�
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En las listas siguientes se muestran los nombres predeterminados de los archivos generados para un archivo IDL denominado Name.idl. Puede usar modificadores de línea de comandos para invalidar estos nombres predeterminados. Tenga en cuenta que el nombre del archivo IDL puede tener una extensión que no sea .idl o ninguna extensión.
 
@@ -68,17 +68,17 @@ Cuando el [**atributo local**](local.md) aparece en la lista de atributos de int
 El compilador MIDL proporcionado con RPC de Microsoft invoca el preprocesador de C según sea necesario para procesar el archivo IDL. No invoca automáticamente el compilador de C para compilar los archivos generados.
 
 > [!Note]  
-> El compilador MIDL proporcionado con RPC de Microsoft usa una sintaxis de línea de comandos diferente a la del compilador IDL de DCE.
+> El compilador MIDL proporcionado con RPC de Microsoft usa una sintaxis de línea de comandos diferente a la del compilador de IDL de DCE.
 
  
 
 Los modificadores del compilador [**MIDL /env**](-env.md), [**/server**](-server.md), [**/sstub**](-sstub.md)y [**/out**](-out.md) afectan al archivo de código auxiliar del servidor.
 
-A partir de midl versión 6.0.359, la opción de línea de comandos predeterminada para el compilador MIDL es [**/Oicf**](-oi.md)Â [**/robust**](-robust.md). Para deshabilitar /robust, especifique la [**opción /no \_ robust.**](-no-robust.md)
+A partir de la versión 6.0.359 de MIDL, la opción de línea de comandos predeterminada para el compilador de MIDL es [**/Oicf**](-oi.md)Â [**/robust**](-robust.md). Para deshabilitar /robust, especifique la [**opción /no \_ robust.**](-no-robust.md)
 
 ## <a name="the-header-file"></a>El archivo de encabezado
 
-El archivo de encabezado contiene definiciones de todos los tipos de datos y operaciones declarados en el archivo IDL. Todos los módulos de aplicación que llaman a las operaciones definidas, implementan las operaciones definidas o manipulan los tipos definidos deben incluir el archivo de encabezado.
+El archivo de encabezado contiene definiciones de todos los tipos de datos y operaciones declaradas en el archivo IDL. Todos los módulos de aplicación que llaman a las operaciones definidas, implementan las operaciones definidas o manipulan los tipos definidos deben incluir el archivo de encabezado.
 
 Los modificadores del compilador [**MIDL /header**](-header.md) [**y /out**](-out.md) afectan al archivo de encabezado.
 

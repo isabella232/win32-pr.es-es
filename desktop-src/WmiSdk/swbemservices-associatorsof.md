@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4247b04c70cca8da8527d0d9f19ec872c35ec2ee610e3b0e98d88fbffbbfd3d5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95dc8e16939c345b6f885980dd2f1194f180ac5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070368"
 ---
 # <a name="swbemservicesassociatorsof-method"></a>Método SWbemServices.AssociatorsOf
 
-El **método AssociatorsOf** del objeto [**SWbemServices**](swbemservices.md) devuelve una colección de objetos (clases o instancias) denominados extremos asociados a un objeto especificado. Este método realiza la misma función que la consulta ASSOCIATORS OF WQL.
+El **método AssociatorsOf** del objeto [**SWbemServices**](swbemservices.md) devuelve una colección de objetos (clases o instancias) denominados extremos asociados a un objeto especificado. Este método realiza la misma función que realiza la consulta ASSOCIATORS OF WQL.
 
-De forma predeterminada, se llama a este método en modo semisincronoso. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
+De forma predeterminada, se llama a este método en modo semisincrónico. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
 Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
@@ -59,7 +59,7 @@ objWbemObjectSet = .AssociatorsOf( _
 *strObjectPath* 
 </dt> <dd>
 
-Obligatorio. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Necesario. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -101,14 +101,14 @@ Valor booleano que indica si se debe devolver una lista de nombres de clase en l
 *bSchemaOnly* \[ Opcional\]
 </dt> <dd>
 
-Valor booleano que indica si la consulta se aplica al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE,** el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
+Valor booleano que indica si la consulta se aplica al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE**, el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
 
 </dd> <dt>
 
 *strRequiredAssocQualifier* \[ Opcional\]
 </dt> <dd>
 
-Cadena que contiene un nombre de calificador. Si se especifica, este parámetro indica que los puntos de conexión devueltos deben asociarse al objeto de origen a través de una clase de asociación que incluya el calificador especificado.
+Cadena que contiene un nombre de calificador. Si se especifica, este parámetro indica que los puntos de conexión devueltos deben estar asociados al objeto de origen a través de una clase de asociación que incluye el calificador especificado.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avan
 
 </dt> <dd>
 
-Hace que WMI conserve punteros a objetos de la enumeración hasta que el cliente libere el enumerador.
+Hace que WMI conserve punteros a objetos de la enumeración hasta que el cliente libera el enumerador.
 
 </dd> <dt>
 
@@ -177,14 +177,14 @@ Hace que esta llamada se bloquee hasta que se haya completado la consulta. Esta 
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase junto con la definición de clase base. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clase junto con la definición de clase base. Para obtener más información, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objwbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> </dl>
 
@@ -238,11 +238,11 @@ No se encontró el elemento solicitado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El método recupera las instancias de recursos administrados que están asociados a un recurso especificado a través de una o varias clases de asociación. Proporcione la ruta de acceso del objeto para el punto de conexión de origen y AssociatorsOf devuelve los recursos administrados en el extremo opuesto. El método AssociatorsOf realiza la misma función que la consulta ASSOCIATORS OF WQL.
+El método recupera las instancias de recursos administrados que están asociados a un recurso especificado a través de una o varias clases de asociación. Proporcione la ruta de acceso del objeto para el punto de conexión de origen y AssociatorsOf devuelve los recursos administrados en el punto de conexión opuesto. El método AssociatorsOf realiza la misma función que realiza la consulta ASSOCIATORS OF WQL.
 
-Para obtener más información sobre la consulta ASSOCIATORS OF WQL, las instancias de origen y los puntos de conexión, vea [la instrucción ASSOCIATORS OF](associators-of-statement.md).
+Para obtener más información sobre la consulta ASSOCIATORS OF WQL, las instancias de origen y los puntos de conexión, vea [LA INSTRUCCIÓN ASSOCIATORS OF](associators-of-statement.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -252,7 +252,7 @@ Para obtener más información sobre la consulta ASSOCIATORS OF WQL, las instanc
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |

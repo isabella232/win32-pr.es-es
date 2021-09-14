@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb78ad08dd5ba5494181d3fb2adecb7a8441e4716c42ba6cd4f1c119b3ccb046
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b606a834b394197960777fa485d112a94212ec45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159529"
 ---
 # <a name="in-attribute"></a>in (atributo)
 
@@ -54,7 +54,7 @@ Especifica cero o más declaradores de puntero. Un declarador de puntero es el m
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento remoto.
@@ -75,7 +75,7 @@ Especifica declaradores estándar de C, como identificadores, declaradores de pu
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo in \]** tiene un atributo inverso, out , que indica que se va a devolver un parámetro del procedimiento llamado al procedimiento que realiza la **\[** [](out-idl.md) **\]** llamada. Los **\[ atributos de \]** entrada **\[ y \]** salida se conocen como atributos de parámetro direccionales porque especifican la dirección en la que se pasan los parámetros. Un parámetro se puede definir como **\[ en \]**, **\[ out \]** o **\[ en**, **out \]**.
 

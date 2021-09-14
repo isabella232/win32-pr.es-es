@@ -1,5 +1,5 @@
 ---
-description: Este operador resta una hora de referencia de otra y establece este objeto en el resultado.
+description: Este operador resta un tiempo de referencia de otro y establece este objeto en el resultado.
 ms.assetid: 573b6f6b-7634-4e78-872c-f869b59a75e2
 title: Método COARefTime.operator-= (Ctlutil.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6fd8e567933cf9061b6add3b3f756baec3120fdaeb1ffa0d71d4278e4221829f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 29afc98da01351f63df45997b8cc338e17a1234c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070082"
 ---
 # <a name="coareftimeoperator--method"></a>Método COARefTime.operator-=
 
-Este operador resta una hora de referencia de otra y establece este objeto en el resultado.
+Este operador resta un tiempo de referencia de otro y establece este objeto en el resultado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ COARefTime& operator-=(
 *rt* \[ Ref\]
 </dt> <dd>
 
-Referencia al **objeto COARefTime** que se resta.
+Referencia al objeto **COARefTime** que se resta.
 
 </dd> </dl>
 

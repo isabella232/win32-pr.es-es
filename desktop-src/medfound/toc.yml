@@ -14,7 +14,7 @@
               items:
                 - name: Uso de MFTrace
                   href: using-mftrace.md
-                - name: Palabras clave mftrace
+                - name: Palabras clave de MFTrace
                   href: mftrace-keywords.md
                 - name: Archivo de configuración de MFTrace
                   href: mftrace-configuration-file.md
@@ -35,14 +35,14 @@
                   items:
                     - name: Módulos TopoEdit
                       href: topoedit-modules.md
-                    - name: TopoEdit (Ventana principal)
+                    - name: Ventana principal de TopoEdit
                       href: topoedit-main-window.md
                     - name: Menús TopoEdit
                       href: topoedit-menus.md
                       items:
                         - name: Menú Archivo
                           href: file-menu.md
-                        - name: Menú topología
+                        - name: Menú Topología
                           href: topology-menu.md
                         - name: Menú Controles
                           href: controls-menu.md
@@ -56,7 +56,7 @@
                   href: building-a-playback-topology-with-topoedit.md
                 - name: Creación de una topología de transcodificación con TopoEdit
                   href: building-a-transcode-topology-with-topoedit.md
-                - name: Compilar topologías mediante TopoEdit
+                - name: Creación de topologías mediante TopoEdit
                   href: building-topologies-by-using-topoedit.md
                   items:
                     - name: Agregar nodos de origen con TopoEdit
@@ -67,7 +67,7 @@
                       href: adding-output-nodes-with-topoedit.md
                     - name: Conexión y desconexión de nodos de topología
                       href: connecting-and-disconnecting-topology-nodes.md
-                    - name: Resolución de una topología con TopoEdit
+                    - name: Resolver una topología con TopoEdit
                       href: resolving-a-topology-with-topoedit.md
                 - name: Registro de actividades de nodo de topología
                   href: logging-topology-node-activities.md
@@ -89,7 +89,7 @@
         - name: Arquitectura de Media Foundation
           href: media-foundation-architecture.md
           items:
-            - name: Información general de la arquitectura Media Foundation datos
+            - name: Información general de la Media Foundation arquitectura
               href: overview-of-the-media-foundation-architecture.md
             - name: Media Foundation primitivos
               href: media-foundation-primitives.md
@@ -119,7 +119,7 @@
                           href: video-subtype-guids.md
                         - name: Tipos de medios de vídeo sin comprimir
                           href: uncompressed-video-media-types.md
-                        - name: Acerca de YUV Video
+                        - name: Acerca del vídeo de YUV
                           href: about-yuv-video.md
                         - name: Entrelazado de vídeo
                           href: video-interlacing.md
@@ -143,9 +143,9 @@
                       href: media-type-conversions.md
                     - name: Funciones auxiliares de tipos de medios
                       href: media-type-helper-functions.md
-                    - name: Código de depuración de tipo de medio
+                    - name: Código de depuración de tipo multimedia
                       href: media-type-debugging-code.md
-                - name: Búferes de medios
+                - name: Búferes multimedia
                   href: media-buffers.md
                   items:
                     - name: Trabajar con búferes multimedia
@@ -161,7 +161,7 @@
                       href: working-with-media-samples.md
                     - name: Ejemplos de vídeo
                       href: video-samples.md
-            - name: Media Foundation PLATFORM API
+            - name: Media Foundation API de plataforma de aplicaciones
               href: media-foundation-platform-apis.md
               items:
                 - name: Inicializar Media Foundation
@@ -202,7 +202,7 @@
                 - name: Orígenes multimedia
                   href: media-sources.md
                   items:
-                    - name: Modelo de objetos de origen de medios
+                    - name: Modelo de objetos de origen multimedia
                       href: media-source-object-model.md
                     - name: Descriptores de presentación
                       href: presentation-descriptors.md
@@ -219,9 +219,9 @@
                       items:
                         - name: Usar el solucionador de origen
                           href: using-the-source-resolver.md
-                        - name: Configuración de un origen de medios
+                        - name: Configuración de un origen multimedia
                           href: configuring-a-media-source.md
-                        - name: Controladores de esquema y Byte-Stream de esquema
+                        - name: Controladores de esquemas y Byte-Stream de esquema
                           href: scheme-handlers-and-byte-stream-handlers.md
                 - name: Media Foundation transformaciones
                   href: media-foundation-transforms.md
@@ -253,7 +253,7 @@
                           href: hardware-mfts.md
                         - name: Codec Codec (Códec de me
                           href: codec-merit.md
-                - name: Receptores de medios
+                - name: Receptores multimedia
                   href: media-sinks.md
             - name: Sesión multimedia
               href: media-session.md
@@ -432,7 +432,7 @@
                     - name: Escribir un objeto de encabezado ASF para un nuevo archivo
                       href: writing-an-asf-header-object-for-a-new-file.md
                       items:
-                        - name: Inicialización del objeto ContentInfo de un nuevo archivo ASF
+                        - name: Inicializar el objeto ContentInfo de un nuevo archivo ASF
                           href: initializing-the-contentinfo-object-of-a-new-asf-file.md
                         - name: Establecer propiedades en el objeto ContentInfo
                           href: setting-properties-in-the-contentinfo-object.md
@@ -440,7 +440,7 @@
                           href: generating-a-new-asf-header-object.md
                     - name: Media Foundation atributos para objetos de encabezado asf
                       href: media-foundation-attributes-for-asf-header-objects.md
-                - name: Divisor asf
+                - name: Divisor de ASF
                   href: asf-splitter.md
                   items:
                     - name: Crear el objeto divisor de ASF
@@ -458,7 +458,7 @@
                       href: generating-new-asf-data-packets.md
                     - name: Procesamiento de datos en el codificador
                       href: processing-data-in-the-encoder.md
-                - name: Indexador de ASF
+                - name: ASF Indexer
                   href: asf-index-object.md
                   items:
                     - name: Creación y configuración del indexador
@@ -592,7 +592,7 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-getcertificatesize
                     - name: NegotiateKeyExchange
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-negotiatekeyexchange
-                    - name: Consulta
+                    - name: Consultar
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query
                 - name: IDirect3DCryptoSession9
                   href: /windows/desktop/api/d3d9/nn-d3d9-idirect3dcryptosession9
@@ -1429,6 +1429,67 @@
                 - name: D3D12_VIDEO_DECODE_SUPPORT_FLAGS
                   href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_decode_support_flags
                 - name: D3D12_VIDEO_DECODE_TIER
+                - name: D3D12_VIDEO_ENCODER_CODEC
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_DIRECT_MODES
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_h264_direct_modes
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_h264_flags
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODE_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_h264_slices_deblocking_mode_flags
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODES
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_h264_slices_deblocking_modes
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_CUSIZE
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_hevc_cusize
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_hevc_flags
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_TUSIZE
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_hevc_tusize
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_support_h264_flags
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_codec_configuration_support_hevc_flags
+                - name: D3D12_VIDEO_ENCODER_ENCODE_ERROR_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_encode_error_flags
+                - name: D3D12_VIDEO_ENCODER_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_flags
+                - name: D3D12_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_frame_subregion_layout_mode
+                - name: D3D12_VIDEO_ENCODER_FRAME_TYPE_H264
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_frame_type_h264
+                - name: D3D12_VIDEO_ENCODER_FRAME_TYPE_HEVC
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_frame_type_hevc
+                - name: D3D12_VIDEO_ENCODER_HEAP_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_heap_flags
+                - name: D3D12_VIDEO_ENCODER_INTRA_REFRESH_MODE
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_intra_refresh_mode
+                - name: D3D12_VIDEO_ENCODER_LEVELS_H264
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_levels_h264
+                - name: D3D12_VIDEO_ENCODER_LEVELS_HEVC
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_levels_hevc
+                - name: D3D12_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_motion_estimation_precision_mode
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_picture_control_codec_data_h264_flags
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_picture_control_codec_data_hevc_flags
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_picture_control_flags
+                - name: D3D12_VIDEO_ENCODER_PROFILE_H264
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_profile_h264
+                - name: D3D12_VIDEO_ENCODER_PROFILE_HEVC
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_profile_hevc
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_rate_control_flags
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL_MODE
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_rate_control_mode
+                - name: D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_sequence_control_flags
+                - name: D3D12_VIDEO_ENCODER_SUPPORT_FLAGS
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_support_flags
+                - name: D3D12_VIDEO_ENCODER_TIER_HEVC
+                  href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_encoder_tier_hevc
+                - name: D3D12_VIDEO_ENCODER_VALIDATION_FLAGS
                   href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_decode_tier
                 - name: 'D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_FLAGS '
                   href: /windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_extension_command_parameter_flags
@@ -1496,7 +1557,7 @@
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-reset
                     - name: 'ID3D12VideoDecodeCommandList::ResolveQueryData'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-resolvequerydata
-                    - name: 'ID3D12VideoDecodeCommandList::ResourceBarcommand'
+                    - name: 'ID3D12VideoDecodeCommandList::ResourceBarconfiguración'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-resourcebarrier
                     - name: 'ID3D12VideoDecodeCommandList::SetMarker'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-setmarker
@@ -1548,6 +1609,13 @@
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodevice-createvideodecoderheap
                     - name: 'ID3D12VideoDevice::CreateVideoProcessor'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodevice-createvideoprocessor
+                - name: ID3D12VideoDevice3
+                  href: /windows/desktop/api/d3d12video/nn-d3d12video-id3d12videodevice3
+                  items:
+                    - name: 'ID3D12VideoDevice3::CreateVideoEncoder'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodevice3-createvideoencoder
+                    - name: 'ID3D12VideoDevice3::CreateVideoEncoderHeap'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodevice3-createvideoencoderheap
                 - name: ID3D12VideoEncodeCommandList
                   href: /windows/desktop/api/d3d12video/nn-d3d12video-id3d12videoencodecommandlist
                   items:
@@ -1590,6 +1658,49 @@
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencodecommandlist1-executeextensioncommand
                     - name: 'ID3D12VideoEncodeCommandList1::InitializeExtensionCommand '
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencodecommandlist1-initializeextensioncommand
+                - name: ID3D12VideoEncodeCommandList1
+                  href: /windows/desktop/api/d3d12video/nn-d3d12video-id3d12videoencodecommandlist1
+                - name: ID3D12VideoEncodeCommandList2
+                  href: /windows/desktop/api/d3d12video/nn-d3d12video-id3d12videoencodecommandlist2
+                  items:
+                    - name: 'ID3D12VideoEncodeCommandList2::EncodeFrame'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencodecommandlist2-encodeframe
+                    - name: 'ID3D12VideoEncodeCommandList2::ResolveEncoderOutputMetadata'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencodecommandlist2-resolveencoderoutputmetadata
+                - name: ID3D12VideoEncoder
+                  href: /windows/desktop/api/d3d12video/nn-d3d12video-id3d12videoencoder
+                  items:
+                    - name: 'ID3D12VideoEncoder::GetCodec'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoder-getcodec
+                    - name: 'ID3D12VideoEncoder::GetCodecConfiguration'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoder-getcodecconfiguration
+                    - name: 'ID3D12VideoEncoder::GetCodecProfile'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoder-getcodecprofile
+                    - name: 'ID3D12VideoEncoder::GetEncoderFlags'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoder-getencoderflags
+                    - name: 'ID3D12VideoEncoder::GetInputFormat'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoder-getinputformat
+                    - name: 'ID3D12VideoEncoder::GetMaxMotionEstimationPrecision'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoder-getmaxmotionestimationprecision
+                    - name: 'ID3D12VideoEncoder::GetNodeMask'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoder-getnodemask
+                - name: ID3D12VideoEncoderHeap
+                  href: /windows/desktop/api/d3d12video/nn-d3d12video-id3d12videoencoderheap
+                  items:
+                    - name: 'ID3D12VideoEncoderHeap::GetCodec'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoderheap-getcodec
+                    - name: 'ID3D12VideoEncoderHeap::GetCodecLevel'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoderheap-getcodeclevel
+                    - name: 'ID3D12VideoEncoderHeap::GetCodecProfile'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoderheap-getcodecprofile
+                    - name: 'ID3D12VideoEncoderHeap::GetEncoderHeapFlags'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoderheap-getencoderheapflags
+                    - name: 'ID3D12VideoEncoderHeap::GetNodeMask'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoderheap-getnodemask
+                    - name: 'ID3D12VideoEncoderHeap::GetResolutionList'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoderheap-getresolutionlist
+                    - name: 'ID3D12VideoEncoderHeap::GetResolutionListCount'
+                      href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoencoderheap-getresolutionlistcount
                 - name: 'ID3D12VideoExtensionCommand '
                   href: /windows/desktop/api/d3d12video/nn-d3d12video-id3d12videoextensioncommand
                   items:
@@ -1634,7 +1745,7 @@
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoprocesscommandlist-reset
                     - name: 'ID3D12VideoProcessCommandList::ResolveQueryData'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoprocesscommandlist-resolvequerydata
-                    - name: 'ID3D12VideoProcessCommandList::ResourceBarprocesamiento'
+                    - name: 'ID3D12VideoProcessCommandList::ResourceBarproceso'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoprocesscommandlist-resourcebarrier
                     - name: 'ID3D12VideoProcessCommandList::SetMarker'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoprocesscommandlist-setmarker
@@ -1687,6 +1798,34 @@
                   href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_decode_support
                 - name: D3D12_FEATURE_DATA_VIDEO_DECODER_HEAP_SIZE
                   href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_decoder_heap_size
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_codec
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_codec_configuration_support
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_codec_picture_control_support
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_frame_subregion_layout_mode
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_HEAP_SIZE
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_heap_size
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_INPUT_FORMAT
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_input_format
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_INTRA_REFRESH_MODE
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_intra_refresh_mode
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_output_resolution
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION_RATIOS_COUNT
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_output_resolution_ratios_count
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_PROFILE_LEVEL
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_profile_level
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_RATE_CONTROL_MODE
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_rate_control_mode
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOLUTION_SUPPORT_LIMITS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_resolution_support_limits
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOURCE_REQUIREMENTS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_resource_requirements
+                - name: D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_encoder_support
                 - name: 'D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_COUNT '
                   href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_feature_data_video_extension_command_count
                 - name: D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_PARAMETER_COUNT
@@ -1745,6 +1884,102 @@
                   href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_decode_output_stream_arguments1
                 - name: D3D12_VIDEO_DECODE_REFERENCE_FRAMES
                   href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_decode_reference_frames
+                - name: D3D12_VIDEO_ENCODE_REFERENCE_FRAMES
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encode_reference_frames
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_configuration
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_configuration_h264
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_configuration_hevc
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_configuration_support
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_configuration_support_h264
+                - name: D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_configuration_support_hevc
+                - name: D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_picture_control_support
+                - name: D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_H264
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_picture_control_support_h264
+                - name: D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_HEVC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_codec_picture_control_support_hevc
+                - name: D3D12_VIDEO_ENCODER_COMPRESSED_BITSTREAM
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_compressed_bitstream
+                - name: D3D12_VIDEO_ENCODER_DESC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_desc
+                - name: D3D12_VIDEO_ENCODER_ENCODE_OPERATION_METADATA_BUFFER
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_encode_operation_metadata_buffer
+                - name: D3D12_VIDEO_ENCODER_ENCODEFRAME_INPUT_ARGUMENTS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_encodeframe_input_arguments
+                - name: D3D12_VIDEO_ENCODER_ENCODEFRAME_OUTPUT_ARGUMENTS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_encodeframe_output_arguments
+                - name: D3D12_VIDEO_ENCODER_FRAME_SUBREGION_METADATA
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_frame_subregion_metadata
+                - name: D3D12_VIDEO_ENCODER_HEAP_DESC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_heap_desc
+                - name: D3D12_VIDEO_ENCODER_INTRA_REFRESH
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_intra_refresh
+                - name: D3D12_VIDEO_ENCODER_LEVEL_SETTING
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_level_setting
+                - name: D3D12_VIDEO_ENCODER_LEVEL_TIER_CONSTRAINTS_HEVC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_level_tier_constraints_hevc
+                - name: D3D12_VIDEO_ENCODER_OUTPUT_METADATA
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_output_metadata
+                - name: D3D12_VIDEO_ENCODER_OUTPUT_METADATA_STATISTICS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_output_metadata_statistics
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_codec_data
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_codec_data_h264
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_REFERENCE_PICTURE_LIST_MODIFICATION_OPERATION
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_codec_data_h264_reference_picture_list_modification_operation
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_REFERENCE_PICTURE_MARKING_OPERATION
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_codec_data_h264_reference_picture_marking_operation
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_codec_data_hevc
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_DESC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_desc
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_subregions_layout_data
+                - name: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_SLICES
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_control_subregions_layout_data_slices
+                - name: D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_DESC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_resolution_desc
+                - name: D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_RATIO_DESC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_picture_resolution_ratio_desc
+                - name: D3D12_VIDEO_ENCODER_PROFILE_DESC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_profile_desc
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_rate_control
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL_CBR
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_rate_control_cbr
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_rate_control_configuration_params
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL_CQP
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_rate_control_cqp
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL_QVBR
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_rate_control_qvbr
+                - name: D3D12_VIDEO_ENCODER_RATE_CONTROL_VBR
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_rate_control_vbr
+                - name: D3D12_VIDEO_ENCODER_RECONSTRUCTED_PICTURE
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_reconstructed_picture
+                - name: D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_H264
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_reference_picture_descriptor_h264
+                - name: D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_HEVC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_reference_picture_descriptor_hevc
+                - name: D3D12_VIDEO_ENCODER_RESOLVE_METADATA_INPUT_ARGUMENTS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_resolve_metadata_input_arguments
+                - name: D3D12_VIDEO_ENCODER_RESOLVE_METADATA_OUTPUT_ARGUMENTS
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_resolve_metadata_output_arguments
+                - name: D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_DESC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_sequence_control_desc
+                - name: D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_sequence_gop_structure
+                - name: D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_H264
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_sequence_gop_structure_h264
+                - name: D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_HEVC
+                  href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_encoder_sequence_gop_structure_hevc
                 - name: 'D3D12_VIDEO_EXTENSION_COMMAND_DESC '
                   href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_extension_command_desc
                 - name: D3D12_VIDEO_EXTENSION_COMMAND_INFO
@@ -1819,12 +2054,12 @@
                   href: creating-dxva-hd-video-surfaces.md
                 - name: Configuración de estados DXVA-HD
                   href: setting-dxva-hd-states.md
-                - name: Realización de dxva-HD Blit
+                - name: Realización de DXVA-HD Blit
                   href: performing-the-dxva-hd-blit.md
         - name: Codificación y creación de archivos
           href: encoding-and-file-authoring.md
           items:
-            - name: Introducción a la codificación en Media Foundation
+            - name: Información general sobre la codificación en Media Foundation
               href: overview-of-encoding-in-media-foundation.md
             - name: Transcodificación de API
               href: transcode-api.md
@@ -1847,7 +2082,7 @@
         - name: Metadatos multimedia
           href: media-metadata.md
           items:
-            - name: Proveedores de metadatos de shell
+            - name: Proveedores de metadatos de Shell
               href: shell-metadata-providers.md
             - name: Propiedades de metadatos para archivos multimedia
               href: metadata-properties-for-media-files.md
@@ -1863,12 +2098,12 @@
               items:
                 - name: Configuración del localizador de proxy Configuración
                   href: proxy-locator-configuration-settings.md
-                - name: Cómo configurar el localizador de proxy
+                - name: Configuración del localizador de proxy
                   href: how-to-configure-the-proxy-locator.md
             - name: Autenticación de origen de red
               href: network-source-authentication.md
               items:
-                - name: Establecer un Administrador de credenciales
+                - name: Establecimiento de un Administrador de credenciales
                   href: setting-a-credential-manager.md
                 - name: Uso de la caché de credenciales
                   href: using-the-credential-cache.md
@@ -2098,9 +2333,9 @@
                       href: configuring-standard--professional--or-lossless-audio-encoding.md
                     - name: Enumeración de tipos de audio para modos de codificación específicos
                       href: enumeratingaudiotypesforspecificencodingmodes.md
-                - name: Uso del códec Windows media audio voice
+                - name: Uso del códec Windows Media Audio Voice
                   href: usingthewindowsmediaaudio9voicecodec.md
-                - name: Decoding to S/PDIF
+                - name: Codificación en S/PDIF
                   href: decodingtospdif.md
                 - name: Uso de High-Definition Audio
                   href: usinghighdefinitionaudio.md
@@ -2121,11 +2356,11 @@
                   href: interlacedvideoencoding.md
                 - name: Uso del perfil avanzado Windows Media Video 9
                   href: usingthewindowsmediavideo9advancedprofilecodec.md
-                - name: Uso del códec Windows imagen de Media Video 9.1
+                - name: Uso del códec de imagen Windows Media Video 9.1
                   href: usingthewindowsmediavideo9imagecodec.md
-                - name: Uso del códec Windows media video 9
+                - name: Uso del códec de pantalla Windows Media Video 9
                   href: usingthewindowsmediavideo9screencodec.md
-                - name: Uso de datos privados de códec de vídeo
+                - name: Uso de datos privados de códecs de vídeo
                   href: usingvideocodecprivatedata.md
                 - name: Codificación de vídeo con compresión temporal
                   href: videoencodingwithtemporalcompression.md
@@ -2139,7 +2374,7 @@
               href: gettingencodingstatistics.md
             - name: Uso de extensiones de unidad de datos
               href: usingdataunitextensions.md
-            - name: Constantes IPropertyBag de códec y DSP
+            - name: Códec y constantes IPropertyBag de DSP
               href: codecanddspproperties.md
               items:
                 - name: Acerca del analizador de tabla de contenido
@@ -2168,14 +2403,14 @@
                 - name: Referencia del analizador de tabla de contenido
                   href: toc-parser-reference.md
                   items:
-                    - name: Tabla de objetos del analizador de contenido
+                    - name: Objetos de analizador de tabla de contenido
                       href: toc-parser-objects.md
                       items:
                         - name: Identificadores de clase para el analizador de tabla de contenido
                           href: class-identifiers-for-toc-parser.md
                         - name: Generador de tablas de contenido
                           href: /previous-versions/ee264297(v=vs.85)
-                    - name: Interfaces del analizador de tabla de contenido
+                    - name: Interfaces de analizador de tabla de contenido
                       href: toc-parser-interfaces.md
                       items:
                         - name: IToc
@@ -2288,13 +2523,13 @@
                   href: howcanavideostreamencodedusingqualitybasedvbrhavef.md
                 - name: Cómo descomprimir secuencias de un archivo AVI u otro archivo sobre el que no tengo información de formato?
                   href: howdoidecompresswindowsmediacontentfromanaviorothe.md
-                - name: Tengo un archivo AVI que contiene un Windows de vídeo multimedia. ¿Cómo se puede convertir en un archivo WMV?
+                - name: Tengo un archivo AVI que contiene un Windows de vídeo multimedia. ¿Cómo puedo convertirla en un archivo WMV?
                   href: ihaveanavifilecontainingawindowsmediavideostreamho.md
                 - name: 'Cuando uso VBR con restricciones máximas, la velocidad de bits media recuperada del objeto de códec es mayor que la velocidad de bits máxima. ¿Cómo es posible?'
                   href: whenusingpeakconstrainedvbrtheaveragebitrateretrie.md
                 - name: ¿Por qué un descodificador no acepta el formato de entrada que he establecido?
                   href: whydoesadecoderdmonotaccepttheinputformatthatiset.md
-                - name: ¿Por qué el codificador de audio no informa de ningún tipo de entrada compatible?
+                - name: ¿Por qué el codificador de audio no informa de ningún tipo de entrada admitido?
                   href: whydoestheaudioencoderdmoreportnosupportedinputtyp.md
                 - name: ¿Por qué el codificador de vídeo rechaza un formato de salida que intento establecer cuando he recuperado el formato del mismo objeto?
                   href: whydoesthevideoencoderdmorejectanoutputformatthati.md
@@ -2317,7 +2552,7 @@
           href: mfcaptured3d-sample.md
         - name: Ejemplo MFCaptureToFile
           href: mfcapturetofile-sample.md
-        - name: Ejemplo mfplayer2
+        - name: Ejemplo de MFPlayer2
           href: mfplayer2-sample.md
         - name: MFT_AudioDelay ejemplo
           href: mft-audiodelay-sample.md
@@ -2335,9 +2570,9 @@
           href: simpleplay-sample.md
         - name: Ejemplo de transcodificación
           href: transcode-sample.md
-        - name: Ejemplo videoThumbnail
+        - name: Ejemplo videothumbnail
           href: videothumbnail-sample.md
-        - name: Ejemplo wavsink
+        - name: Ejemplo de WavSink
           href: wavsink-sample.md
         - name: Ejemplo de WavSource
           href: wavsource-sample.md
@@ -2383,7 +2618,7 @@
               href: windowsmediaaudiovoicedecoder.md
             - name: Windows Codificador de voz de audio multimedia
               href: windowsmediaaudiovoiceencoder.md
-            - name: Windows Descodificador mp3 multimedia
+            - name: Windows Descodificador MP3 multimedia
               href: windows-media-mp3-decoder.md
             - name: Windows Descodificador MPEG4 V1/V2 multimedia
               href: windowsmediampeg4decoder.md
@@ -2753,6 +2988,24 @@
                   href: mf-mt-compressed-attribute.md
                 - name: MF_MT_CUSTOM_VIDEO_PRIMARIES
                   href: mf-mt-custom-video-primaries-attribute.md
+                - name: MF_MT_D3D_RESOURCE_VERSION
+                  href: mf-mt-d3d-resource-version.md
+                - name: MF_MT_D3D12_CPU_READBACK
+                  href: mf-mt-d3d12-cpu-readback.md
+                - name: MF_MT_D3D12_RESOURCE_FLAG_ALLOW_CROSS_ADAPTER
+                  href: mf-mt-d3d12-resource-flag-allow-cross-adapter.md
+                - name: MF_MT_D3D12_RESOURCE_FLAG_ALLOW_DEPTH_STENCIL
+                  href: mf-mt-d3d12-resource-flag-allow-depth-stencil.md
+                - name: MF_MT_D3D12_RESOURCE_FLAG_ALLOW_RENDER_TARGET
+                  href: mf-mt-d3d12-resource-flag-allow-render-target.md
+                - name: MF_MT_D3D12_RESOURCE_FLAG_ALLOW_SIMULTANEOUS_ACCESS
+                  href: mf-mt-d3d12-resource-flag-allow-simultaneous-access.md
+                - name: MF_MT_D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS
+                  href: mf-mt-d3d12-resource-flag-allow-unordered-access.md
+                - name: MF_MT_D3D12_RESOURCE_FLAG_DENY_SHADER_RESOURCE
+                  href: mf-mt-d3d12-resource-flag-deny-shader-resource.md
+                - name: MF_MT_D3D12_TEXTURE_LAYOUT
+                  href: mf-mt-d3d12-texture-layout.md
                 - name: MF_MT_DEFAULT_STRIDE
                   href: mf-mt-default-stride-attribute.md
                 - name: MF_MT_DEPTH_MEASUREMENT
@@ -3035,6 +3288,12 @@
                   href: mf-sa-d3d11-shared-without-mutex.md
                 - name: MF_SA_D3D11_USAGE
                   href: mf-sa-d3d11-usage.md
+                - name: MF_SA_D3D12_CLEAR_VALUE
+                  href: mf-sa-d3d12-clear-value.md
+                - name: MF_SA_D3D12_HEAP_FLAGS
+                  href: mf-sa-d3d12-heap-flags.md
+                - name: MF_SA_D3D12_HEAP_TYPE
+                  href: mf-sa-d3d12-heap-type.md
                 - name: MF_SA_MINIMUM_OUTPUT_SAMPLE_COUNT
                   href: mf-sa-minimum-output-sample-count.md
                 - name: MF_SA_MINIMUM_OUTPUT_SAMPLE_COUNT_PROGRESSIVE
@@ -3423,6 +3682,8 @@
               href: capture-device-attributes.md
             - name: Atributos del motor de captura
               href: capture-engine-attributes.md
+            - name: Atributos de Direct3D 12
+              href: d3d12-attributes.md
             - name: Atributos de eventos
               href: event-attributes.md
             - name: Atributos de EVR
@@ -3480,6 +3741,8 @@
               href: imftexttrack-data-formats.md
             - name: GUID de módulo de descifrado de contenido (CDM)
               href: content-decryption-module-guids.md
+            - name: GUID de Media Foundation Direct3D 12
+              href: d3d12-mf-guids.md
         - name: Media Foundation Datatypes
           href: media-foundation-datatypes.md
           items:
@@ -4399,7 +4662,7 @@
               href: /windows/desktop/api/mfidl/nf-mfidl-mfgetsystemid
             - name: MFGetSystemTime
               href: /windows/desktop/api/mfidl/nf-mfidl-mfgetsystemtime
-            - name: MFGetTimerPeriperipericity
+            - name: MFGetTimerPeriacidad
               href: /windows/desktop/api/mfapi/nf-mfapi-mfgettimerperiodicity
             - name: MFGetTopoNodeCurrentType
               href: /windows/desktop/api/mfidl/nf-mfidl-mfgettoponodecurrenttype
@@ -5095,7 +5358,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfaudiostreamvolume-setallvolumes
                 - name: SetChannelVolume
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfaudiostreamvolume-setchannelvolume
-            - name: BUFFERBufferListNotify
+            - name: IMFBufferListNotify
               href: /windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfbufferlistnotify
               items:
                 - name: Método OnAddSourceBuffer
@@ -5356,7 +5619,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart
                 - name: OnClockStop
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstop
-            - name: COLLECTIONCollection
+            - name: IMFCollection
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfcollection
               items:
                 - name: AddElement
@@ -5376,7 +5639,7 @@
               items:
                 - name: 'IMFContentDecryptionModule::CreateSession '
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodule-createsession
-                - name: 'CRYPTOContentDecryptionModule::CreateTrustedInput'
+                - name: 'IMFContentDecryptionModule::CreateTrustedInput'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodule-createtrustedinput
                 - name: 'IMFContentDecryptionModule::GetProtectionSystemIds'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodule-getprotectionsystemids
@@ -5391,7 +5654,7 @@
             - name: 'IMFContentDecryptionModuleAccess '
               href: /windows/desktop/api/mfcontentdecryptionmodule/nn-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess
               items:
-                - name: 'CRYPTOContentDecryptionModuleAccess::CreateContentDecryptionModule'
+                - name: 'IMFContentDecryptionModuleAccess::CreateContentDecryptionModule'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-createcontentdecryptionmodule
                 - name: 'IMFContentDecryptionModuleAccess::GetConfiguration'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-getconfiguration
@@ -5400,22 +5663,22 @@
             - name: 'IMFContentDecryptionModuleFactory '
               href: /windows/desktop/api/mfcontentdecryptionmodule/nn-mfcontentdecryptionmodule-imfcontentdecryptionmodulefactory
               items:
-                - name: 'CRYPTOContentDecryptionModuleFactory::CreateContentDecryptionModuleAccess'
+                - name: 'IMFContentDecryptionModuleFactory::CreateContentDecryptionModuleAccess'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulefactory-createcontentdecryptionmoduleaccess
-                - name: 'CRYPTOContentDecryptionModuleFactory::IsTypeSupported'
+                - name: 'IMFContentDecryptionModuleFactory::IsTypeSupported'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulefactory-istypesupported
             - name: 'IMFContentDecryptionModuleSession '
               href: /windows/desktop/api/mfcontentdecryptionmodule/nn-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession
               items:
                 - name: 'IMFContentDecryptionModuleSession::Close '
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-close
-                - name: 'CRYPTOContentDecryptionModuleSession::GenerateRequest'
+                - name: 'IMFContentDecryptionModuleSession::GenerateRequest'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-generaterequest
                 - name: 'IMFContentDecryptionModuleSession::GetExpiration'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-getexpiration
                 - name: 'IMFContentDecryptionModuleSession::GetKeyStatuses '
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-getkeystatuses
-                - name: 'CRYPTOContentDecryptionModuleSession::GetSessionId'
+                - name: 'IMFContentDecryptionModuleSession::GetSessionId'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-getsessionid
                 - name: 'IMFContentDecryptionModuleSession::Load '
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-load
@@ -5576,7 +5839,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfhttpdownloadrequest-hasnullsourceorigin
                 - name: Método QueryHeader
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfhttpdownloadrequest-queryheader
-            - name: HTTPHttpDownloadSession
+            - name: IMFHttpDownloadSession
               href: /windows/desktop/api/mfidl/nn-mfidl-imfhttpdownloadsession
               items:
                 - name: Método Close
@@ -5585,7 +5848,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfhttpdownloadsession-createrequest
                 - name: Método SetServer
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfhttpdownloadsession-setserver
-            - name: HTTPHttpDownloadSessionProvider
+            - name: IMFHttpDownloadSessionProvider
               href: /windows/desktop/api/mfidl/nn-mfidl-imfhttpdownloadsessionprovider
               items:
                 - name: Método CreateHttpDownloadSession
@@ -5604,7 +5867,7 @@
               items:
                 - name: Método CreateInstanceFromUDN
                   href: /windows/desktop/api/mfsharingengine/nf-mfsharingengine-imfimagesharingengineclassfactory-createinstancefromudn
-            - name: INPUTInputTrustAuthority
+            - name: IMFInputTrustAuthority
               href: /windows/desktop/api/mfidl/nn-mfidl-imfinputtrustauthority
               items:
                 - name: BindAccess
@@ -5624,7 +5887,7 @@
               items:
                 - name: RegisterMFTs
                   href: /windows/desktop/api/mfidl/nf-mfidl-imflocalmftregistration-registermfts
-            - name: BUFFERMediaBuffer
+            - name: IMFMediaBuffer
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfmediabuffer
               items:
                 - name: GetCurrentLength
@@ -6531,7 +6794,7 @@
               items:
                 - name: AddClockStateSink
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-addclockstatesink
-                - name: GetTime
+                - name: ConocerHora
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-gettime
                 - name: GetTimeSource
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-gettimesource
@@ -6676,7 +6939,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getstyles
                 - name: SetSelectedStyle
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-setselectedstyle
-            - name: SAMPLESample
+            - name: IMFSample
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfsample
               items:
                 - name: AddBuffer
@@ -6712,9 +6975,9 @@
               items:
                 - name: 'IMFSampleAllocatorControl::GetAllocatorUsage '
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsampleallocatorcontrol-getallocatorusage
-                - name: 'SAMPLESampleAllocatorControl::SetDefaultAllocator'
+                - name: 'IMFSampleAllocatorControl::SetDefaultAllocator'
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsampleallocatorcontrol-setdefaultallocator
-            - name: SAMPLESampleGrabberSinkCallback
+            - name: IMFSampleGrabberSinkCallback
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsamplegrabbersinkcallback
               items:
                 - name: OnProcessSample
@@ -7414,7 +7677,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imftopology-gettopologyid
                 - name: RemoveNode
                   href: /windows/desktop/api/mfidl/nf-mfidl-imftopology-removenode
-            - name: IMFTopologyNode
+            - name: NODETopologyNode
               href: /windows/desktop/api/mfidl/nn-mfidl-imftopologynode
               items:
                 - name: CloneFrom
@@ -7657,7 +7920,7 @@
                   href: /windows/desktop/api/evr/nf-evr-imfvideopresenter-getcurrentmediatype
                 - name: ProcessMessage
                   href: /windows/desktop/api/evr/nf-evr-imfvideopresenter-processmessage
-            - name: IMFVideoProcessor
+            - name: PROCESSORVideoProcessor
               href: /windows/desktop/api/evr9/nn-evr9-imfvideoprocessor
               items:
                 - name: GetAvailableVideoProcessorModes
@@ -7724,7 +7987,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocator-setdirectxmanager
                 - name: UninitializeSampleAllocator
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocator-uninitializesampleallocator
-            - name: IMFVideoSampleAllocatorCallback
+            - name: CALLBACKVideoSampleAllocatorCallback
               href: /windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocatorcallback
               items:
                 - name: GetFreeSampleCount

@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 66c23db58b5571a3ee6bcbd0fbdab655e07f59799005da2df50db59747499a5b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 26e6bcf927b157efd64f8494d1cfa77eb4569fc0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119785855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070299"
 ---
 # <a name="esentclientrequesttostopjetserviceexception-class"></a>Clase EsentClientRequestToStopJetServiceException
 
-Clase base para JET_err. Excepciones clientRequestToStopJetService.
+Clase base para JET_err. Excepciones de ClientRequestToStopJetService.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -47,7 +47,7 @@ Clase base para JET_err. Excepciones clientRequestToStopJetService.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

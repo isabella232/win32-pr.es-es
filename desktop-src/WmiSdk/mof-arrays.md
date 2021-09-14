@@ -1,20 +1,20 @@
 ---
-description: Una matriz es una lista indizada de valores de datos que son del mismo tipo de datos, a los que puede hacer referencia. Además de las matrices numéricas y de cadena, MOF admite matrices de objetos incrustados y referencias.
+description: Una matriz es una lista indizada de valores de datos que son del mismo tipo de datos, a los que puede hacer referencia. Además de matrices numéricas y de cadena, MOF admite matrices de objetos incrustados y referencias.
 ms.assetid: f63c222f-499d-4776-8901-65cb8b142d2b
 ms.tgt_platform: multiple
 title: Matrices MOF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1231b89302e15d5a7467ab7ff99d23b200badd67e6c5c95054c90b84554548d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0443f2ef3b3fe8fca398e281de71b0927a4f06f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070451"
 ---
 # <a name="mof-arrays"></a>Matrices MOF
 
-Una matriz es una lista indizada de valores de datos que son del mismo tipo de datos, a los que puede hacer referencia. Además de las matrices numéricas y de cadena, MOF admite matrices de objetos incrustados y referencias.
+Una matriz es una lista indizada de valores de datos que son del mismo tipo de datos, a los que puede hacer referencia. Además de matrices numéricas y de cadena, MOF admite matrices de objetos incrustados y referencias.
 
 Las reglas siguientes definen una matriz MOF:
 
@@ -38,7 +38,7 @@ Las reglas siguientes definen una matriz MOF:
     };
     ```
 
-    WMI implementa matrices enlazadas y sin enlazar como estructuras **SAFEARRAY,** lo que permite que WMI varíe las dimensiones de la matriz en tiempo de ejecución. Cuando se declara una matriz con un tamaño explícito, WMI almacena el tamaño como calificador y trata el tamaño como el tamaño máximo sugerido. Sin embargo, WMI puede expandir el tamaño si es necesario. Cambiar el tamaño explícito no tiene ningún efecto en los datos reales.
+    WMI implementa matrices enlazadas y sin enlazar como estructuras **SAFEARRAY,** lo que permite a WMI variar las dimensiones de la matriz en tiempo de ejecución. Cuando se declara una matriz con un tamaño explícito, WMI almacena el tamaño como calificador y trata el tamaño como el tamaño máximo sugerido. Sin embargo, WMI puede expandir el tamaño si es necesario. Cambiar el tamaño explícito no tiene ningún efecto en los datos reales.
 
 -   Las matrices se inicializan especificando valores del tipo adecuado en una lista separada por comas.
 
@@ -69,10 +69,10 @@ Las reglas siguientes definen una matriz MOF:
         };
     ```
 
--   Puede usar una matriz como parámetro para un método, pero no como un valor devuelto para un parámetro de entrada o salida de entrada.
+-   Puede usar una matriz como parámetro para un método, pero no como un valor devuelto para un parámetro de entrada o entrada-salida.
 -   Todos los elementos de una matriz se crean como valores del mismo tipo.
 
-    Si los elementos de una matriz son del **tipo de** objeto , puede colocar cualquier tipo de objeto en la matriz. Por otro lado, si declara un tipo específico de objeto, WMI solo permite objetos de esa clase o subclase en la matriz. En los ejemplos siguientes se muestran declaraciones de matriz que incluyen el uso del **tipo de** objeto .
+    Si los elementos de una matriz son del **tipo de** objeto, puede colocar cualquier tipo de objeto en la matriz. Por otro lado, si declara un tipo específico de objeto, WMI solo permite objetos de esa clase o subclase en la matriz. En los ejemplos siguientes se muestran declaraciones de matriz que incluyen el uso del **tipo de** objeto .
 
     ``` syntax
     Class EmbedClass

@@ -1,9 +1,9 @@
 ---
 title: atributo local
-description: El atributo \ local \ especifica al compilador de MIDL que una interfaz o una función no es remota.
+description: El atributo \ local\ especifica al compilador MIDL que una interfaz o función no es remota.
 ms.assetid: 17ad3d87-4ca4-4e9b-91bc-280c03830f54
 keywords:
-- atributo local MIDL
+- MIDL del atributo local
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a40b1842bf637d3b7fcaab7a0c13319def1d1663
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105665755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159508"
 ---
 # <a name="local-attribute"></a>atributo local
 
-El atributo **\[ local \]** especifica al compilador de MIDL que una interfaz o función no es remota.
+El **\[ atributo local \]** especifica al compilador MIDL que una interfaz o función no es remota.
 
 ``` syntax
 [ 
@@ -48,54 +48,54 @@ interface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica otros atributos que se aplican a la interfaz en conjunto. Los atributos **\[** [**Endpoint**](endpoint.md) **\]** , **\[** [**version**](version.md) **\]** y **\[** [**Pointer \_ default**](pointer-default.md) **\]** son opcionales. Al compilar con el modificador de [**\_ configuración/App**](-app-config.md) , **\[** también puede haber un [**\_ identificador implícito**](implicit-handle.md) **\]** o un **\[** [**\_ identificador automático**](auto-handle.md) **\]** . Separe varios atributos con comas.
+Especifica otros atributos que se aplican a la interfaz en su conjunto. El punto de **\[** [**conexión de**](endpoint.md) **\]** **\[** [](version.md) **\]** atributos, la versión y el **\[** [**valor predeterminado \_ del**](pointer-default.md) **\]** puntero son opcionales. Al compilar con el modificador [**/app \_ config,**](-app-config.md) también puede haber un identificador **\[** [**\_ implícito**](implicit-handle.md) o un identificador **\]** **\[** [**\_**](auto-handle.md) **\]** automático. Separe varios atributos con comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
-Especifica el nombre por el que los componentes de software pueden delimitar la interfaz.
+Especifica el nombre por el que los componentes de software pueden delinear la interfaz.
 
 </dd> <dt>
 
-*cadena: UUID* 
+*string-uuid* 
 </dt> <dd>
 
-Especifica una cadena de UUID generada por la utilidad Uuidgen. Si no usa el modificador de compilador de MIDL [**/OSF**](-osf.md), puede escribir la cadena de UUID entre comillas.
+Especifica una cadena UUID generada por la utilidad Uuidgen. Si no usa el modificador del compilador MIDL [**/osf**](-osf.md), puede incluir la cadena UUID entre comillas.
 
 </dd> <dt>
 
-*lista de atributos de función* 
+*function-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la función. Los atributos de función válidos son **\[** [**callback**](callback.md) **\]** ; el atributo de puntero **\[** [**ref**](ref.md) **\]** , **\[** [**Unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md) **\]** ; y los atributos de uso **\[** [**cadena**](string.md) **\]** , **\[** [**omitir**](ignore.md) **\]** y **\[** [**\_ identificador de contexto**](context-handle.md) **\]** . Separe varios atributos con comas.
+Especifica cero o más atributos que se aplican a la función. Los atributos de función válidos son la devolución de llamada; el atributo de puntero **\[** [](callback.md) **\]** **\[** [**ref**](ref.md) **\]** , **\[** [**unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md); **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** y la cadena de atributos de uso , ignore y el identificador de contexto . Separe varios atributos con comas.
 
 </dd> <dt>
 
 *function-declarator* 
 </dt> <dd>
 
-Especifica el especificador de tipo, el nombre de función y la lista de parámetros para la función.
+Especifica el especificador de tipo, el nombre de función y la lista de parámetros de la función.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El atributo **\[ local \]** se puede aplicar a funciones individuales o a la interfaz en conjunto.
+El **\[ atributo local \]** se puede aplicar a funciones individuales o a la interfaz en su conjunto.
 
-Cuando se usa en el encabezado de la interfaz, el atributo **\[ local \]** permite usar el compilador MIDL como generador de encabezados. El compilador no genera código auxiliar para ninguna función y no garantiza que se pueda transmitir el encabezado.
+Cuando se usa en el encabezado de interfaz, el atributo **\[ local \]** permite usar el compilador MIDL como generador de encabezados. El compilador no genera código auxiliar para ninguna función y no garantiza que se pueda transmitir el encabezado.
 
-En el caso de una interfaz RPC, el atributo **\[ local \]** no se puede usar al mismo tiempo que el **\[** atributo [**UUID**](uuid.md) **\]** . **\[ UUID \]** o **\[ local \]** deben estar presentes en el encabezado de la interfaz y el que elija debe aparecer exactamente una vez.
+Para una interfaz RPC, el **\[ atributo local \]** no se puede usar al mismo tiempo que el atributo **\[** [**uuid.**](uuid.md) **\]** Uuid **\[ o \]** **\[ local \]** deben estar presentes en el encabezado de interfaz y el que elija debe producirse exactamente una vez.
 
-En el caso de una interfaz COM (identificada por el atributo de la interfaz de **\[** [**objeto**](object.md) **\]** ), la lista de atributos de interfaz puede incluir el atributo **\[ local \]** aunque el **\[** atributo [**UUID**](uuid.md) **\]** esté presente.
+Para una interfaz COM (identificada por el atributo de interfaz de objeto), la lista de atributos de interfaz puede incluir el atributo **\[** [](object.md) **\]** **\[ local \]** aunque el **\[** [**atributo uuid**](uuid.md) **\]** esté presente.
 
-Cuando se usa en una función individual, el atributo **\[ local \]** designa un procedimiento local para el que no se genera ningún código auxiliar. Usar **\[ local \]** como atributo de función es una extensión de Microsoft para DCE IDL. Por lo tanto, este atributo no está disponible al compilar mediante el modificador [**/OSF**](-osf.md) de MIDL.
+Cuando se usa en una función individual, el atributo **\[ local \]** designa un procedimiento local para el que no se genera ningún código auxiliar. El **\[ uso de local \]** como atributo de función es una extensión de Microsoft para DCE IDL. Por lo tanto, este atributo no está disponible cuando se compila mediante el modificador MIDL [**/osf.**](-osf.md)
 
-Tenga en cuenta que una interfaz sin atributos se puede importar en un archivo IDL base. Sin embargo, la interfaz debe contener solo tipos de contenido sin procedimientos. Si hay un procedimiento incluido en la interfaz, se debe especificar un atributo local o UUID.
+Tenga en cuenta que una interfaz sin atributos se puede importar en un archivo IDL base. Sin embargo, la interfaz solo debe contener tipos de datos sin procedimientos. Si incluso hay un procedimiento contenido en la interfaz, se debe especificar un atributo uuid o local.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -135,60 +135,60 @@ interface mixed_procs
 
 <dl> <dt>
 
-[**configuración de/APP \_**](-app-config.md)
+[**/app \_ config**](-app-config.md)
 </dt> <dt>
 
-[**\_identificador automático**](auto-handle.md)
+[**identificador \_ automático**](auto-handle.md)
 </dt> <dt>
 
 [**devolución de llamada**](callback.md)
 </dt> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**identificador de \_ contexto**](context-handle.md)
 </dt> <dt>
 
-[**finales**](endpoint.md)
+[**endpoint**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**omitir**](ignore.md)
+[**Ignorar**](ignore.md)
 </dt> <dt>
 
-[**\_identificador implícito**](implicit-handle.md)
+[**identificador \_ implícito**](implicit-handle.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
 </dt> <dt>
 
-[**objeto**](object.md)
+[**object**](object.md)
 </dt> <dt>
 
-[**puntero \_ predeterminado**](pointer-default.md)
+[**valor \_ predeterminado del puntero**](pointer-default.md)
 </dt> <dt>
 
-[**ptr**](ptr.md)
+[**Ptr**](ptr.md)
 </dt> <dt>
 
 [**ref**](ref.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Cadena**](string.md)
 </dt> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

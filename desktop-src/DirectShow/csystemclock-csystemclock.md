@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a60ff54d6c1215127b0f2f0655321368fd24c18b1731cdbc6f55debbd4442d78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11ba7449b086f84dc2caff19da922c03f9c7103b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070013"
 ---
 # <a name="csystemclockcsystemclock-constructor"></a>Constructor CSystemClock.CSystemClock
 

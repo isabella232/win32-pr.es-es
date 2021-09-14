@@ -1,17 +1,17 @@
 ---
 description: Cómo afectan los vínculos simbólicos a las funciones de archivo estándar que usan nombres de ruta de acceso para especificar uno o varios archivos.
 ms.assetid: afda53eb-d0db-4844-9dd0-8a7d93ca341f
-title: Efectos simbólicos de vínculos en funciones de sistemas de archivos
+title: Efectos simbólicos de vínculo en funciones de sistemas de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e1c5d140dc70de8ebc255b779b226b6da156aa2b8961c49d86f466ac01b26ed
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6d4a2fe1696bf5260a0c55ba8b6e4f107270d6da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069837"
 ---
-# <a name="symbolic-link-effects-on-file-systems-functions"></a>Efectos simbólicos de vínculos en funciones de sistemas de archivos
+# <a name="symbolic-link-effects-on-file-systems-functions"></a>Efectos simbólicos de vínculo en funciones de sistemas de archivos
 
 Varias funciones de archivo estándar que usan nombres de ruta de acceso para especificar uno o varios archivos se ven afectadas por el uso de vínculos simbólicos. En este tema se enumeran esas funciones y se describen los cambios de comportamiento:
 
@@ -37,14 +37,14 @@ Varias funciones de archivo estándar que usan nombres de ruta de acceso para es
 -   [SetFileSecurity](#setfilesecurity)
 -   [Temas relacionados](#related-topics)
 
-En las descripciones siguientes, se usan los siguientes términos:
+En las descripciones siguientes, se usan los términos siguientes:
 
 -   Archivo de origen: el archivo original que se va a copiar.
 -   Archivo de destino: la copia recién creada del archivo.
 -   Destino: la entidad a la que apunta un vínculo simbólico.
 
 > [!Note]  
-> El comportamiento de las funciones que aceptan un identificador creado mediante la función [**CreateFile,**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) como la función [**GetFileTime,**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) variará en función de si se llamó o no a la función **CreateFile** mediante la marca **FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT.** Para obtener más información, [**vea CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) y la [siguiente sección CreateFile y CreateFileTransacted.](#createfile-and-createfiletransacted)
+> El comportamiento de las funciones que aceptan un identificador creado mediante la función [**CreateFile,**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) como la función [**GetFileTime,**](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) variará en función de si se llamó o no a la función **CreateFile** mediante la marca **FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT.** Para obtener más información, [**vea CreateFile y**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) la [siguiente sección CreateFile y CreateFileTransacted.](#createfile-and-createfiletransacted)
 
  
 
@@ -65,14 +65,14 @@ Si **se especifica COPY FILE COPY \_ \_ \_ SYMLINK** y:
 
 Si **no se especifica COPY FILE COPY \_ \_ \_ SYMLINK** y:
 
--   Si **también se especifica COPY FILE FAIL IF \_ \_ \_ \_ EXISTS** y el archivo de destino es un vínculo simbólico existente, la operación produce un error solo si el destino del vínculo simbólico existe.
+-   Si **también se especifica COPY FILE FAIL IF \_ \_ \_ \_ EXISTS** y el archivo de destino es un vínculo simbólico existente, la operación solo produce un error si existe el destino del vínculo simbólico.
 -   Si **no se especifica COPY FILE FAIL IF \_ \_ \_ \_ EXISTS,** no hay ningún cambio de comportamiento.
 
 **Windows Server 2003 y Windows XP:** No **se admite la marca COPY FILE COPY \_ \_ \_ SYMLINK.** Si el archivo de origen es un vínculo simbólico, el archivo real copiado es el destino del vínculo simbólico.
 
 ## <a name="createfile-and-createfiletransacted"></a>CreateFile y CreateFileTransacted
 
-Si la llamada a esta función crea un nuevo archivo, no hay ningún cambio de comportamiento.
+Si la llamada a esta función crea un nuevo archivo, no hay ningún cambio en el comportamiento.
 
 Si **se especifica FILE FLAG OPEN \_ \_ \_ REPARSE \_ POINT** y:
 
@@ -94,7 +94,7 @@ Si la ruta de acceso apunta a un vínculo simbólico, se elimina el vínculo sim
 
 ## <a name="findfirstchangenotification"></a>FindFirstChangeNotification
 
-Si la ruta de acceso apunta a un vínculo simbólico, se crea el identificador de notificación para el destino. Si una aplicación se ha registrado para recibir notificaciones de cambio para un directorio que contiene vínculos simbólicos, la aplicación solo recibe una notificación cuando se han cambiado los vínculos simbólicos, no los archivos de destino.
+Si la ruta de acceso apunta a un vínculo simbólico, se crea el identificador de notificación para el destino. Si una aplicación se ha registrado para recibir notificaciones de cambio para un directorio que contiene vínculos simbólicos, solo se notifica a la aplicación cuando se han cambiado los vínculos simbólicos, no los archivos de destino.
 
 ## <a name="findfirstfile-and-findfirstfiletransacted"></a>FindFirstFile y FindFirstFileTransacted
 

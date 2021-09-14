@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 640eae8bfbadcba07f67d244edd78726269ede9eee2f14e9af06e851bb5cac92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f916c4f03023c756b71a2e3cbb38acd9f41f1e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117807203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159527"
 ---
 # <a name="int-attribute"></a>atributo int
 
-La palabra **clave int** especifica un entero de 32 bits con signo en plataformas de 32 bits. En plataformas de 16 bits, la palabra clave **int** es una palabra clave opcional que puede acompaña a las palabras clave [**small**](small.md), [**short**](short.md)y [**long.**](long.md)
+La palabra **clave int** especifica un entero de 32 bits con signo en plataformas de 32 bits. En las plataformas de 16 bits, la palabra clave **int** es una palabra clave opcional que puede acompaña a las palabras clave [**small**](small.md), [**short**](short.md)y [**long.**](long.md)
 
 ``` syntax
 [ signed | unsigned ] integer-modifier [ int ] declarator-list;
@@ -45,15 +45,15 @@ Especifica uno o varios declaradores de C estándar, como identificadores, decla
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los tipos enteros se encuentran entre los tipos base del lenguaje de definición de interfaz (IDL). Pueden aparecer como especificadores de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y como un especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
+Los tipos enteros se encuentran entre los tipos base del lenguaje de definición de interfaz (IDL). Pueden aparecer como especificadores de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador function-return-type y como especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 
 Si no se proporciona ninguna especificación de signo entero, el tipo entero tiene como valor predeterminado [**signed**](signed.md).
 
-Los compiladores IDL de DCE no permiten que la palabra clave [**signed**](signed.md) especifique el signo de tipos enteros. Por lo tanto, esta característica no está disponible cuando se usa el modificador [**/osf del**](-osf.md) compilador de MIDL.
+Los compiladores IDL de DCE no permiten que la palabra clave [**signed**](signed.md) especifique el signo de tipos enteros. Por lo tanto, esta característica no está disponible cuando se usa el modificador [**/osf**](-osf.md) del compilador midL.
 
-Microsoft no recomienda el uso de \_ \_ int3264 para la comunicación remota si se puede evitar. Consulte el tema [**\_ \_ int3264**](--int3264.md) para obtener más información sobre su uso y limitaciones.
+Microsoft no recomienda el uso de \_ \_ int3264 para la comunicación remota si se puede evitar. Consulte el tema sobre [**\_ \_ int3264**](--int3264.md) para obtener más información sobre su uso y limitaciones.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -86,13 +86,13 @@ HRESULT MyFunc([in] long int lCount);
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**long**](long.md)
+[**Largo**](long.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
 </dt> <dt>
 
-[**short**](short.md)
+[**Corto**](short.md)
 </dt> <dt>
 
 [**Firmado**](signed.md)
@@ -107,7 +107,7 @@ HRESULT MyFunc([in] long int lCount);
 [**Typedef**](typedef.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> </dl>
 
  

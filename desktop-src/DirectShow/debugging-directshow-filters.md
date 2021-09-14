@@ -1,23 +1,23 @@
 ---
-description: Muchos de los recursos de depuración descritos en este tema se implementan en la biblioteca de DirectShow base. Para obtener más información, vea DirectShow base.
+description: Muchos de los recursos de depuración que se describen en este tema se implementan en la biblioteca DirectShow de clases base. Para obtener más información, vea DirectShow base de datos.
 ms.assetid: 40b4f2ab-e629-41a0-b979-d74ac5fe83a2
 title: Depuración de DirectShow filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e54532b68df09b78b3b03aa95d7dda5c84cdf7d770cffd131e47228e6d88cba2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1198e17f438d57775ea0f74d5920f63dc4761743
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070008"
 ---
 # <a name="debugging-directshow-filters"></a>Depuración de DirectShow filtros
 
-Muchos de los recursos de depuración descritos en este tema se implementan en la biblioteca de DirectShow base. Para obtener más información, [vea DirectShow clases base](directshow-base-classes.md).
+Muchos de los recursos de depuración que se describen en este tema se implementan en la biblioteca DirectShow de clases base. Para obtener más información, [vea DirectShow Base Classes](directshow-base-classes.md).
 
 ## <a name="assertion-checking"></a>Comprobación de aserciones
 
-Use la comprobación de aserciones de forma libre. Las aserciones pueden comprobar las suposiciones que realice en el código sobre las condiciones previas y posteriores. DirectShow proporciona varias macros de aserción. Para obtener más información, vea [Assert and Breakpoint Macros](assert-and-breakpoint-macros.md).
+Use la comprobación de aserción de forma libre. Las aserciones pueden comprobar las suposiciones que realice en el código sobre las condiciones previas y posteriores. DirectShow proporciona varias macros de aserción. Para obtener más información, vea [Assert and Breakpoint Macros](assert-and-breakpoint-macros.md).
 
 ## <a name="object-names"></a>Nombres de objeto
 
@@ -27,11 +27,11 @@ El método de constructor para la clase base [**CBaseObject**](cbaseobject.md) (
 
 ## <a name="debug-logging"></a>Depurar registro
 
-La [**función DbgLog**](dbglog.md) muestra los mensajes de depuración a medida que se ejecuta el programa. Use esta función para hacer un seguimiento de la ejecución de la aplicación o el filtro. Puede registrar códigos de retorno, los valores de las variables y cualquier otra información relevante.
+La [**función DbgLog**](dbglog.md) muestra mensajes de depuración a medida que se ejecuta el programa. Use esta función para hacer un seguimiento de la ejecución de la aplicación o el filtro. Puede registrar códigos de retorno, los valores de las variables y cualquier otra información pertinente.
 
-Cada mensaje de depuración tiene un tipo, como LOG TRACE o LOG ERROR, y un nivel de depuración, que indica la \_ \_ importancia del mensaje. Los mensajes con niveles de depuración inferiores son más importantes que los que tienen niveles superiores.
+Cada mensaje de depuración tiene un tipo, como LOG TRACE o LOG ERROR, y un nivel de depuración, que indica la \_ \_ importancia del mensaje. Los mensajes con niveles de depuración inferiores son más importantes que los que tienen niveles más altos.
 
-En el ejemplo siguiente, un filtro hipotético desconecta un pin de una matriz de pines. Si el intento de desconexión se realiza correctamente, el filtro muestra un mensaje LOG \_ TRACE. Si se produce un error en el intento, muestra un mensaje DE \_ ERROR DE REGISTRO:
+En el ejemplo siguiente, un filtro hipotético desconecta un pin de una matriz de pines. Si el intento de desconexión se realiza correctamente, el filtro muestra un mensaje LOG \_ TRACE. Si se produce un error en el intento, muestra un mensaje LOG \_ ERROR:
 
 
 ```C++
@@ -53,9 +53,9 @@ DbgLog((LOG_TRACE, 3, TEXT("Disconnected pin %d"), iPin));
 
 
 
-Al depurar, puede establecer el nivel de depuración para cada tipo de mensaje. Además, cada módulo (DLL o ejecutable) mantiene sus propios niveles de depuración. Si va a probar un filtro, eleva los niveles de depuración del archivo DLL que contiene el filtro.
+Al depurar, puede establecer el nivel de depuración para cada tipo de mensaje. Además, cada módulo (DLL o ejecutable) mantiene sus propios niveles de depuración. Si va a probar un filtro, eleve los niveles de depuración para el archivo DLL que contiene el filtro.
 
-Para obtener más información, vea [Funciones de salida de depuración](debug-output-functions.md).
+Para obtener más información, vea [Depurar funciones de salida](debug-output-functions.md).
 
 ## <a name="critical-sections"></a>Secciones críticas
 

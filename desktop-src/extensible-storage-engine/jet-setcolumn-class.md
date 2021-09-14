@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 239a6641645aa527809c16f09519a05b4774d4a29c85ab2f373eede643883a40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7263506fb63572be5587fa55400bf6ef0966222e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119967605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070209"
 ---
 # <a name="jet_setcolumn-class"></a>JET_SETCOLUMN clase
 
@@ -43,7 +43,7 @@ Contiene parámetros de entrada y salida [para JetSetColumns(JET_SESID, JET_TABL
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

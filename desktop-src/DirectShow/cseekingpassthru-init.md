@@ -1,7 +1,7 @@
 ---
 description: El método Init inicializa el objeto .
 ms.assetid: a919adfa-0ffb-4241-b709-ad0e8d55476a
-title: CSeekingPassThru.Init (Seekpt.h)
+title: Método CSeekingPassThru.Init (Seekpt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 91d20477f83ec79c6ae6095e81810c98454f9c26521eda995c919867b3e3ac12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78176a6966f379240b5b7edd1ef5b73d7fa75b3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070052"
 ---
-# <a name="cseekingpassthruinit-method"></a>CSeekingPassThru.Init (método)
+# <a name="cseekingpassthruinit-method"></a>Método CSeekingPassThru.Init
 
 El `Init` método inicializa el objeto .
 
@@ -73,7 +73,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el valor de *bSupportRendering* es **TRUE,** este método crea una instancia de la [**clase CRendererPosPassThru.**](crendererpospassthru.md) De lo contrario, crea una instancia de la [**clase CPosPassThru.**](cpospassthru.md)
 

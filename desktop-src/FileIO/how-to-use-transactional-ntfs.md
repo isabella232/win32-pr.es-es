@@ -4,12 +4,12 @@ ms.assetid: 29879a3f-14b4-462c-a001-46c3c3eb74d1
 title: Uso de NTFS transaccional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8daafd2bc2ee0e695ee3bdede4ac2f62be1000c111d0c544dec877c357f42629
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43681f0d5b27f0db03d8b6c44564b792fce4b467
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069928"
 ---
 # <a name="how-to-use-transactional-ntfs"></a>Uso de NTFS transaccional
 
@@ -39,8 +39,8 @@ El modelo de programación TxF tiene los siguientes puntos clave que debe tener 
 
 Pueden producirse los siguientes errores comunes al desarrollar aplicaciones con transacciones:
 
--   Uso de un identificador de archivo una vez completada una transacción.
--   No se pueden cerrar los identificadores de los archivos y directorios eliminados antes de confirmar una transacción, lo que impedirá que se produzcan las operaciones de eliminación. Este evento debe producirse antes de realizar la confirmación para que la operación de eliminación se considere parte de la transacción. Esto se debe a que el sistema no elimina realmente un archivo hasta que se cierra el último identificador de este, incluso cuando no se realiza la transacción de la operación, como parte del subsistema de E/S de Windows de archivos.
+-   Usar un identificador de archivo una vez completada una transacción.
+-   No se pueden cerrar los identificadores de los archivos y directorios eliminados antes de confirmar una transacción, lo que impedirá que se produzcan las operaciones de eliminación. Este evento debe producirse antes de realizar la confirmación para que la operación de eliminación se considere parte de la transacción. Esto se debe a que el sistema no elimina realmente un archivo hasta que se cierra el último identificador, incluso cuando la operación no se realiza, como parte del subsistema de E/S de Windows archivo.
 -   No se puede tener en cuenta la reversión de transacciones iniciadas por el sistema, lo que puede ocurrir en cualquier momento. Por ejemplo, se revierte una transacción si se agotan los recursos del sistema.
 
  

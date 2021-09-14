@@ -4,12 +4,12 @@ ms.assetid: 271bad79-c23b-45ee-938c-d17dae89db1a
 title: Archivos y clústeres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac1d5a4d6862aebf318e4aed58b940e802b1f67259aaf14c852c4eeed0cc7068
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75384900d5d487ab02bd19c13cc2c25e9a310b3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069945"
 ---
 # <a name="files-and-clusters"></a>Archivos y clústeres
 
@@ -21,13 +21,13 @@ Cuando se crea un archivo, se crea una secuencia predeterminada sin nombre para 
 
 Los atributos de archivo no se almacenan en los flujos de datos con los datos de archivo, sino que se almacenan en otro lugar y se administran mediante el sistema operativo.
 
-Todos los datos del sistema de archivos, incluidos el código de arranque del sistema y los directorios, se almacenan en archivos mediante el sistema de archivos NTFS. Otros sistemas de archivos almacenan esta información en regiones de disco externas al sistema de archivos. Una ventaja de almacenar esta información en archivos es que Windows buscar, acceder y mantener la información fácilmente. Otras ventajas son que cada uno de estos archivos puede estar protegido por un descriptor de seguridad y, en caso de daños parciales en el disco, se pueden reubicar rápidamente en una parte más segura del disco.
+Todos los datos del sistema de archivos, incluidos el código de arranque del sistema y los directorios, se almacenan mediante el sistema de archivos NTFS en archivos. Otros sistemas de archivos almacenan esta información en regiones de disco externas al sistema de archivos. Una ventaja de almacenar esta información en archivos es que Windows buscar, acceder y mantener la información fácilmente. Otras ventajas son que cada uno de estos archivos puede estar protegido por un descriptor de seguridad y, en caso de daños parciales en el disco, se pueden reubicar rápidamente en una parte más segura del disco.
 
 La unidad de almacenamiento fundamental de todos los sistemas de archivos admitidos es *un clúster,* que es un grupo de sectores. Esto permite que el sistema de archivos optimice la administración de datos de disco independientemente del tamaño del sector de disco establecido por el controlador de disco de hardware. Si el disco que se va a administrar es grande y se mueven y organizan grandes cantidades de datos en una sola operación, el administrador puede ajustar el tamaño del clúster para adaptarlo.
 
 Windows los archivos a través de objetos [de](file-objects.md)archivo, [identificadores de archivo](file-handles.md)y [punteros de archivo](file-pointers.md).
 
-Para obtener más información sobre los flujos de archivos, vea [File Secuencias](file-streams.md). Para obtener más información sobre los clústeres, vea [Clústeres y extensiones.](clusters-and-extents.md) Para obtener más información sobre cómo acceder y administrar archivos, vea [File Management](file-management.md) and File [Management Reference](file-management-reference.md).
+Para obtener más información sobre las secuencias de archivos, vea [File Secuencias](file-streams.md). Para obtener más información sobre los clústeres, vea [Clústeres y extensiones.](clusters-and-extents.md) Para obtener más información sobre cómo acceder a los archivos y administrarlos, vea [File Management](file-management.md) and File [Management Reference](file-management-reference.md).
 
 ## <a name="in-this-section"></a>En esta sección
 

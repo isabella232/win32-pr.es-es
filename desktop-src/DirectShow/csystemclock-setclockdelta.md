@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c98ccf35e41886594a3aab8c3abec6737128d8d7e22f6dfb75d0ac88ac3b7a02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc1027081cc8713cffd2979e20627c037d0799f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119538665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070009"
 ---
 # <a name="csystemclocksetclockdelta-method"></a>Método CSystemClock.SetClockDelta
 
@@ -45,7 +45,7 @@ HRESULT SetClockDelta(
 *Rtdelta* 
 </dt> <dd>
 
-Especifica la cantidad por la que se va a ajustar el reloj, como un [**valor DE HORA \_ DE**](reference-time.md) REFERENCIA. Un valor positivo mueve el reloj hacia delante y un valor negativo mueve el reloj hacia atrás.
+Especifica la cantidad por la que se va a ajustar el reloj, como un [**valor DE TIEMPO \_ DE**](reference-time.md) REFERENCIA. Un valor positivo mueve el reloj hacia delante y un valor negativo mueve el reloj hacia atrás.
 
 </dd> </dl>
 
@@ -53,20 +53,20 @@ Especifica la cantidad por la que se va a ajustar el reloj, como un [**valor DE 
 
 Devuelve S \_ OK o un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método simplemente llama [**a CBaseReferenceClock::SetTimeDelta**](cbasereferenceclock-settimedelta.md).
+Este método simplemente llama a [**CBaseReferenceClock::SetTimeDelta**](cbasereferenceclock-settimedelta.md).
 
-Los valores de hora devueltos [**por IReferenceClock::GetTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) aumentan de forma monótica. Si vuelve a establecer el reloj, **GetTime** continúa informando de la hora anterior hasta que el reloj interno se activa.
+Los valores de hora devueltos por [**IReferenceClock::GetTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) aumentan de forma monónica. Si vuelve a establecer el reloj, **GetTime** continúa informando de la hora anterior hasta que el reloj interno se activa.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | CSystemClock (clase)<br/>                                                                                                                                                              |
-| Header<br/>  | <dl> <dt>Sysclock.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Sysclock.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2195e5a8540d393e4e45eb50a812041156765487904f3b9a4e6a8776def4cbf1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: daa1e2404e7c6fbf1d879d71374298103bdc621f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070042"
 ---
 # <a name="csourcefindpin-method"></a>Método CSource.FindPin
 
-El `FindPin` método recupera el pin con el identificador especificado. Este método implementa el [**método IBaseFilter::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin)
+El `FindPin` método recupera el pin con el identificador especificado. Este método implementa el método [**IBaseFilter::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,9 +73,9 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El primer pin siempre se denomina "1"; el segundo pin se denomina "2"; y así sucesivamente. Para obtener más información, [**vea CSourceStream::QueryId**](csourcestream-queryid.md).
+El primer pin siempre se denomina "1"; el segundo pin se denomina "2"; etc. Para obtener más información, [**vea CSourceStream::QueryId**](csourcestream-queryid.md).
 
 ## <a name="requirements"></a>Requisitos
 

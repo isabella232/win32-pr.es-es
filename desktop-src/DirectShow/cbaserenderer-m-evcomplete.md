@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 56bfd25042f026e8feb05ca9a0178f55cd05cea00bf1d3d0ae6a4111a56ec29f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d9a341398e9ad91a02fcc59d18dfc2038ceda2e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119635115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070122"
 ---
 # <a name="cbaserendererm_evcomplete-member"></a>Miembro CBaseRenderer::m \_ evComplete
 

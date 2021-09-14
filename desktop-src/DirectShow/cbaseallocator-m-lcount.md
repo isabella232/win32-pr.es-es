@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c33749ee6293c301501962939e25118595db10592713fb46dc10d01083c0096f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16ab469db1d50007bd3aa55ab692c51aa7600452
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118661697"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070152"
 ---
 # <a name="cbaseallocatorm_lcount-member"></a>Miembro CBaseAllocator::m \_ lCount
 

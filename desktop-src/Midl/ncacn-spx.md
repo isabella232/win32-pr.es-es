@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12cb0a9c2e3b7d3a6d78b0e4feda46357f60773b16d67c1d38f57049df3a4d29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09d27cc746df906ff6b1a3290e41d860c76dc362
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159464"
 ---
 # <a name="ncacn_spx-attribute"></a>Atributo ncacn \_ spx
 
@@ -45,9 +45,9 @@ Especifica un número opcional de 16 bits que representa la dirección del socke
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se usa el **transporte ncacn \_ spx,** el nombre del servidor es exactamente el mismo que el nombre del servidor de 32 Windows bits. Sin embargo, dado que los nombres se distribuyen mediante protocolos de Nociones, deben ajustarse a las convenciones de nomenclatura de Nociones. Si un nombre de servidor no es un nombre válido de Noé, los servidores no podrán crear puntos de conexión con el **transporte ncacn \_ spx.** A continuación se muestra una lista parcial de caracteres prohibidos en los nombres de servidor de Byte:
+Cuando se usa el **transporte ncacn \_ spx,** el nombre del servidor es exactamente el mismo que el nombre de Windows 32 bits. Sin embargo, dado que los nombres se distribuyen mediante protocolos de Nociones, deben ajustarse a las convenciones de nomenclatura de Nociones. Si un nombre de servidor no es un nombre válido de Noé, los servidores no podrán crear puntos de conexión con el **transporte ncacn \_ spx.** A continuación se muestra una lista parcial de caracteres prohibidos en los nombres de servidor de Byte:
 
 " \* + . / : ; < = > ? \[ \] \\ \|
 
@@ -80,7 +80,7 @@ interface iface
 
 <dl> <dt>
 
-[**Extremo**](endpoint.md)
+[**endpoint**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)

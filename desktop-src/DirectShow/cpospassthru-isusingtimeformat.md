@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 64c240a0b1c269dde57e07e50bcbdbbd4d5d7e03d24a4e6d263662947f3d65de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 012a9487f5840117edb9f8bc0afa1d9388b4bce0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954014"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070063"
 ---
 # <a name="cpospassthruisusingtimeformat-method"></a>Método CPosPassThru.IsUsingTimeFormat
 

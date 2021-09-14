@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d08be3ce14074c126a35272ede1b670121634f75d0b3d6cfb0db34e4f305760
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1d8d1be33299354e77ef92d885bb3b092cccfb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159586"
 ---
-# <a name="first_is-attribute"></a>first \_ es el atributo
+# <a name="first_is-attribute"></a>el \_ primero es el atributo
 
 El \[ **primer atributo \_ es** especifica el índice del primer elemento de \] matriz que se va a transmitir.
 
@@ -38,7 +38,7 @@ Especifica una o varias expresiones de lenguaje C. Cada expresión se evalúa co
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el **\[ primer atributo \_ es \]** no está presente, o si el índice especificado es un número negativo, el elemento de matriz cero es el primer elemento transmitido.
 
