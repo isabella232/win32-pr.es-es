@@ -4,12 +4,12 @@ ms.assetid: 06cf7f0b-b509-4865-ad8f-321ad2a2ce27
 title: Cuadro de diálogo Salir
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13850cb920cae1d2cb27684f60d6157994c157b20436e5bebefc6e3ef1f9d1da
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da5c825c3e3ce143b63637e89b1daa20092f2d24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158427"
 ---
 # <a name="exit-dialog"></a>Cuadro de diálogo Salir
 

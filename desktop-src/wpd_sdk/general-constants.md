@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: cd6b4efebef96a30e19431d63d3e41bb167b2d6886e7e3610918b6f25a293302
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f22c279d51eae8cc9e3ab7bbd83d4ed802e5872
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118194735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262108"
 ---
 # <a name="general-constants"></a>Constantes generales
 

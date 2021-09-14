@@ -4,12 +4,12 @@ ms.assetid: 95eb1887-8754-43e0-8886-1f23653bff26
 title: Agregar una solicitud de firma a un documento XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c4ec1acf5d85ea20a1ba5908324a3645b3e944d28e3e6c7aa540d278ad88fa0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9db0d3a899dd49f141adf5cd23ea8c837c8b12d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263119"
 ---
 # <a name="add-a-signature-request-to-an-xps-document"></a>Agregar una solicitud de firma a un documento XPS
 

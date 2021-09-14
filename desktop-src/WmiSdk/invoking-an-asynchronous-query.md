@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Invocación de una consulta asincrónica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52ae188e3826562b1de68357db34dca6cea60a40e4be07c16946b13ed3eb3007
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14a0e297c6a1955d0006d888fc95f5e827f5cb75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118993075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070458"
 ---
 # <a name="invoking-an-asynchronous-query"></a>Invocación de una consulta asincrónica
 
@@ -57,7 +57,7 @@ En el procedimiento siguiente se describe cómo realizar una consulta asincróni
 
 3.  Espere a que WMI llame al [**método IWbemObjectSink::Indicate.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate)
 
-    Cuando termine, wmi llama a [**Indica**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) para indicar a la aplicación que la consulta está completa. WMI también devuelve los resultados de la consulta al receptor como un puntero a un puntero de [**interfaz IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) Al igual que con una consulta sincrónica, use el puntero para acceder a los objetos que son el resultado de la consulta.
+    Cuando termine, wmi llama [**a Indica**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) para indicar a la aplicación que la consulta se ha completado. WMI también devuelve los resultados de la consulta al receptor como un puntero a un puntero de [**interfaz IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) Al igual que con una consulta sincrónica, use el puntero para tener acceso a los objetos que son el resultado de la consulta.
 
 El ejemplo de código siguiente no se compila sin un error porque no se ha definido la clase QuerySink. Para obtener la definición de la clase QuerySink, vea [**IWbemObjectSink**](iwbemobjectsink.md). El ejemplo de código también requiere las siguientes instrucciones reference \# e include.
 

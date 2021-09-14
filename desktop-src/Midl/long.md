@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9493aea9a669e9ac14882e9a230e217e74c7236a68c3bb924ddbbaad7e4b93ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47ea9af3bfac85ff375f6d5433b4e9f3ed37d8f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117806720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159507"
 ---
 # <a name="long-attribute"></a>atributo long
 
@@ -38,9 +38,9 @@ Especifica uno o varios declaradores de C estándar, como identificadores, decla
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La palabra clave **long** puede ir precedida de la palabra clave [**signed**](signed.md) o la palabra [**clave unsigned**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. Para el compilador MIDL, un entero largo se firma de forma predeterminada y es sinónimo de **signed long int**. En las plataformas de 32 bits, **long** es sinónimo de **int**.
+La **palabra clave long** puede ir precedida de la palabra clave [**signed**](signed.md) o la palabra [**clave unsigned**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. Para el compilador MIDL, un entero largo se firma de forma predeterminada y es sinónimo de **signed long int**. En las plataformas de 32 bits, **long** es sinónimo de **int**.
 
 El **tipo** entero long es uno de los tipos base del lenguaje IDL. El **tipo** entero long puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador return-type de función y como especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 
@@ -60,7 +60,7 @@ El **tipo** entero long es uno de los tipos base del lenguaje IDL. El **tipo** e
 [**int**](int.md)
 </dt> <dt>
 
-[**short**](short.md)
+[**Corto**](short.md)
 </dt> <dt>
 
 [**Firmado**](signed.md)

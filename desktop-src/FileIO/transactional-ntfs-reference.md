@@ -1,17 +1,17 @@
 ---
 description: Elementos proporcionados por NTFS transaccional (TxF).
 ms.assetid: 7a610ba4-88d5-4274-b068-8cbde9a67a95
-title: Referencia ntfs transaccional
+title: Referencia NTFS transaccional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 013ee627d659d445f65f31b7c42fbf38894bac0fcd220e4d016bb26f593006ff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 37457bff5de3ea781dd23d90bd2c0de2dbd0f03d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119290275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069824"
 ---
-# <a name="transactional-ntfs-reference"></a>Referencia ntfs transaccional
+# <a name="transactional-ntfs-reference"></a>Referencia NTFS transaccional
 
 NTFS transaccional (TxF) proporciona los siguientes elementos.
 

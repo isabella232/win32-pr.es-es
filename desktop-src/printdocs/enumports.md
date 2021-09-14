@@ -1,5 +1,5 @@
 ---
-description: La función EnumPorts enumera los puertos disponibles para imprimir en un servidor especificado.
+description: La función EnumPorts enumera los puertos que están disponibles para imprimirse en un servidor especificado.
 ms.assetid: 72ea0e35-bf26-4c12-9451-8f6941990d82
 title: Función EnumPorts (Winspool.h)
 ms.topic: reference
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: d1f5abc20e94c53e005ee97727a7de789f172bfef1d66703c72690910f197f95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f4cceb6b6915f92139d8919b74f62ba4392381c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118056410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263095"
 ---
 # <a name="enumports-function"></a>Función EnumPorts
 
-La **función EnumPorts** enumera los puertos disponibles para imprimir en un servidor especificado.
+La **función EnumPorts** enumera los puertos que están disponibles para imprimirse en un servidor especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Para determinar el tamaño de búfer necesario, llame **a EnumPorts** con *cbBuf
 *cbBuf* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que apunta *pPorts.*
+Tamaño, en bytes, del búfer al que apunta *pPorts*.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Puntero a una variable que recibe el número de bytes copiados en el *búfer pPo
 *pcReturned* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número de estructuras [**\_ PORT INFO \_ 1**](port-info-1.md) o [**PORT INFO \_ \_ 2**](port-info-2.md) devueltas en el *búfer pPorts.* Este es el número de puertos de impresora que están disponibles en el servidor especificado.
+Puntero a una variable que recibe el número de estructuras [**PORT \_ INFO \_ 1**](port-info-1.md) o [**PORT INFO \_ \_ 2**](port-info-2.md) devueltas en el *búfer pPorts.* Este es el número de puertos de impresora que están disponibles en el servidor especificado.
 
 </dd> </dl>
 
@@ -98,20 +98,20 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-La **función EnumPorts** puede realizarse correctamente incluso si el servidor especificado por *pName* no tiene definida una impresora.
+La **función EnumPorts** puede realizarse correctamente incluso si el servidor especificado por *pName* no tiene una impresora definida.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -122,7 +122,7 @@ La **función EnumPorts** puede realizarse correctamente incluso si el servidor 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -138,10 +138,10 @@ La **función EnumPorts** puede realizarse correctamente incluso si el servidor 
 [**DeletePort**](deleteport.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DE PUERTO \_ 1**](port-info-1.md)
+[**INFORMACIÓN \_ DE \_ PUERTO 1**](port-info-1.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DE PUERTO \_ 2**](port-info-2.md)
+[**INFORMACIÓN \_ DE \_ PUERTO 2**](port-info-2.md)
 </dt> </dl>
 
  

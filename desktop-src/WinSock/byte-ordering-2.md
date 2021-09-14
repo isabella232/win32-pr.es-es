@@ -4,18 +4,18 @@ ms.assetid: 54c84cdb-50a1-4f5e-a18f-0477d90c74d2
 title: ordenación de bytes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 554b9f00b67fcd602daee0ed33443e228e4e3976f334506d949e3af79fef7e8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47af5ea9d22c01e6ae1ad3d78af48b4216f71ecc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118560185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070471"
 ---
 # <a name="byte-ordering"></a>ordenación de bytes
 
-Siempre debe tenerse en cuenta las diferencias entre la ordenación de bytes utilizada para almacenar enteros por la arquitectura de host y la ordenación de bytes utilizada en la conexión por protocolos de transporte individuales. Cualquier referencia a una dirección o número de puerto pasado a o desde una rutina de sockets de Windows debe estar en el orden de red (big-endian) para el protocolo que se utiliza. En el caso de IP, esto incluye la dirección IP y los parámetros de puerto de una estructura [**sockaddr**](sockaddr-2.md) (pero no el *parámetro de \_ familia sin).*
+Siempre debe tenerse en cuenta las diferencias entre la ordenación de bytes utilizada para almacenar enteros por la arquitectura de host y la ordenación de bytes utilizada en la conexión por protocolos de transporte individuales. Cualquier referencia a una dirección o número de puerto pasado a o desde una rutina Windows Sockets debe estar en el orden de red (big-endian) para el protocolo que se está empleando. En el caso de IP, esto incluye la dirección IP y los parámetros de puerto de una estructura [**sockaddr**](sockaddr-2.md) (pero no el *parámetro de \_ familia sin).*
 
-Varios de los sistemas de UNIX funcionan en CPU que representan enteros en orden de bytes de red (big-endian). Por lo tanto, la necesidad de convertir enteros del orden de bytes del host al orden de bytes de red se puede omitir sin causar problemas aunque no se recomienda para la portabilidad.
+Varios de los sistemas de UNIX funcionan en CPU que representan enteros en el orden de bytes de red (big-endian). Por lo tanto, la necesidad de convertir enteros del orden de bytes del host al orden de bytes de red se puede omitir sin causar problemas aunque no se recomienda para la portabilidad.
 
 Por el contrario, la ordenación de bytes usada para representar enteros por la mayoría de las CPU ® Intel es little-endian. Por lo tanto, es obligatorio que los enteros se conviertan del orden de bytes del host al orden de bytes de red antes de usarse en las funciones y estructuras de Winsock Sockets.
 
@@ -45,7 +45,7 @@ Dado que los pedidos de bytes de Intel e Internet son diferentes, las conversion
 [**ntohs**](/windows/desktop/api/winsock/nf-winsock-ntohs)
 </dt> <dt>
 
-[Porting Socket Applications to Winsock](porting-socket-applications-to-winsock.md)
+[Porte de aplicaciones de socket a Winsock](porting-socket-applications-to-winsock.md)
 </dt> <dt>
 
 [**sockaddr**](sockaddr-2.md)

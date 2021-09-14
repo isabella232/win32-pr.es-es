@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8279af6a58d23de762b077289688f32d07595b38998cf8644ff882ab2a6dcc2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01ff3a32bb213caf19964ccea8175a43e5016f08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071665"
 ---
 # <a name="inapsohprocessorinitialize-method"></a>INapSoHProcessor::Initialize (Método)
 
@@ -95,8 +95,8 @@ También se pueden devolver otros códigos de error específicos de COM.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

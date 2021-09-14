@@ -13,12 +13,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ec4cd47584aaba961d9faa3ba2058ab45145839787f702755ccb7a00fffbe827
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 71f245d1fc1610174f842347a15dfcfaa13286e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119465865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070847"
 ---
 # <a name="using-metafile-playlists"></a>Uso de listas de reproducción de metarchivo
 
@@ -31,14 +31,14 @@ En esta sección se explican varias maneras de usar listas de reproducción. La 
 | Tema                                                                                              | Descripción                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Modificar la pantalla](modifying-the-display.md)                                                 | Agregar texto, vínculos e imágenes.                                                                                                                                |
-| [Redireccionamiento](redirection.md)                                                                     | Usar listas de reproducción para redirigir el explorador Reproductor de Windows Media y especificar la dirección URL de una secuencia o un archivo multimedia que se reproducirá.                                      |
+| [Redireccionamiento](redirection.md)                                                                     | Usar listas de reproducción para redirigir el explorador a Reproductor de Windows Media y especificar la dirección URL de una secuencia o un archivo multimedia que se reproducirá.                                      |
 | [Acceso a medios](accessing-media.md)                                                             | Usar elementos de metarchivo y sus elementos secundarios para especificar el contenido al que se debe acceder, así como el orden y la duración de su reproducción.                               |
-| [Uso de la conmutación de streaming de eventos en directo](using-live-event-stream-switching.md)                         | Uso del **elemento EVENT** para especificar una secuencia multimedia a la que acceder y, a continuación, reanudar la reproducción de la secuencia original. Se usa para la inserción de anuncios.                            |
-| [Uso de metarchivos para la conmutación de secuencias sin problemas](using-metafiles-for-seamless-stream-switching.md) | Usar el **elemento EVENT** para cargar previamente el siguiente flujo multimedia para acceder a fin de evitar espacios en la presentación.                                                      |
-| [Uso de anuncios](using-announcements.md)                                                     | Usar un metarchivo para proporcionar información sobre la dirección URL de un flujo multimedia, incluida la dirección IP de multidifusión, el puerto, el formato de secuencia y otras configuraciones de estación. |
-| [Uso de url y suversión de servidor](using-url-and-server-rollover.md)                                 | Usar listas de reproducción de metarchivo para proporcionar un medio de revertir automáticamente a orígenes de contenido alternativos cuando no se puede acceder a una secuencia ni reproducirla.             |
+| [Uso de la conmutación de streaming de eventos en directo](using-live-event-stream-switching.md)                         | Usar el **elemento EVENT** para especificar un flujo multimedia al que acceder y, a continuación, reanudar la reproducción de la secuencia original. Se usa para la inserción de anuncios.                            |
+| [Uso de metarchivos para la conmutación de flujo sin problemas](using-metafiles-for-seamless-stream-switching.md) | Usar el **elemento EVENT** para cargar previamente el siguiente flujo multimedia para acceder a fin de evitar espacios en la presentación.                                                      |
+| [Uso de anuncios](using-announcements.md)                                                     | Usar un metarchivo para proporcionar información sobre la dirección URL de una secuencia multimedia, incluida la dirección IP de multidifusión, el puerto, el formato de secuencia y otras configuraciones de estación. |
+| [Uso de url y subrecuper de servidor](using-url-and-server-rollover.md)                                 | El uso de listas de reproducción de metarchivos para proporcionar un medio de revertir automáticamente a orígenes de contenido alternativos cuando no se puede acceder a una secuencia o reproducirse.             |
 | [Uso de parámetros y comandos personalizados](using-custom-parameters-and-commands.md)                   | Usar el **elemento PARAM** para definir elementos personalizados para proporcionar metadatos adicionales.                                                                          |
-| [Personalización de la entrega multimedia](personalizing-media-delivery.md)                                   | Usar las preferencias del usuario para determinar el contenido de difusión.                                                                                                         |
+| [Personalización de la entrega multimedia](personalizing-media-delivery.md)                                   | Uso de las preferencias del usuario para determinar el contenido de difusión.                                                                                                         |
 
 
 

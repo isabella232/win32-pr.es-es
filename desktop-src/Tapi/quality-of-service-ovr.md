@@ -4,12 +4,12 @@ ms.assetid: 0ca0ecf3-2b67-4925-a6fc-3edfaad2c0e2
 title: Calidad de servicio (API de telefonía)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 131f54d69cd44799f9ea694fe83d50f28fded0ac7c8c15dabfd7a2db499b2293
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6525ced0b29d35482244c3c37f8382edbfcb9fd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117761236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071068"
 ---
 # <a name="quality-of-service-telephony-api"></a>Calidad de servicio (API de telefonía)
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 860054fe26657c4028c172da08e0c56dbf6ae257ffc98e79905f8420b54e6878
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b7ad9b750027163aef806f5a66e51f87874a0ad2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118642803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159481"
 ---
 # <a name="ms_union-attribute"></a>Atributo \_ de unión ms
 
@@ -68,7 +68,7 @@ Especifica la lista de parámetros del procedimiento, que puede estar vacía.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Nunca use este modificador o atributo con nuevas interfaces. Se trata solo de una característica de compatibilidad con versiones anteriores. El compilador MIDL de esta versión de RPC de Microsoft refleja el comportamiento del compilador IDL de DCE de OSF para las uniones no superadas. Sin embargo, dado que las versiones anteriores del compilador MIDL no lo hacían, el modificador de unión [**/ms \_**](-ms-union.md) proporciona compatibilidad con interfaces creadas en versiones anteriores del compilador MIDL.
 

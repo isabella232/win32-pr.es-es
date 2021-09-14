@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec627a083d5f5186a4ce8b6b25b0ebbc7bd56afd3e334e46dc4e4901dde34201
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5a0f106f1be1ba6d0acabf877b5dbefab3eaff6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119927405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159382"
 ---
 # <a name="small-attribute"></a>atributo small
 
@@ -38,13 +38,13 @@ Especifica un identificador MIDL válido. Los identificadores MIDL válidos cons
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **palabra** clave small puede ir precedida de la palabra clave [**signed**](signed.md) o la palabra [**clave unsigned**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. Para el compilador MIDL, un entero pequeño se **firma** de forma predeterminada y es sinónimo de **int pequeño con signo.**
+La palabra clave **small** puede ir precedida de la palabra clave [**signed**](signed.md) o la palabra [**clave unsigned**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. Para el compilador MIDL, un entero pequeño se **firma de** forma predeterminada y es sinónimo de int pequeño **con signo.**
 
-El **tipo** entero pequeño es uno de los tipos base del lenguaje IDL. El tipo **entero** pequeño puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador return-type de función y como especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
+El **tipo** entero pequeño es uno de los tipos base del lenguaje IDL. El tipo **entero** pequeño puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador return-type de función y como un especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
 
-El modificador  del compilador MIDL [**/char**](-char.md)puede modificar el signo del tipo pequeño . Para evitar confusiones, especifique el signo del tipo entero con las palabras clave [**signed**](signed.md) [**y unsigned**](unsigned.md).
+El signo del **tipo pequeño** se puede modificar mediante el modificador del compilador MIDL [**/char**](-char.md). Para evitar confusiones, especifique el signo del tipo entero con las palabras clave [**signed**](signed.md) [**y unsigned**](unsigned.md).
 
 ## <a name="see-also"></a>Vea también
 
@@ -62,10 +62,10 @@ El modificador  del compilador MIDL [**/char**](-char.md)puede modificar el sign
 [**int**](int.md)
 </dt> <dt>
 
-[**long**](long.md)
+[**Largo**](long.md)
 </dt> <dt>
 
-[**short**](short.md)
+[**Corto**](short.md)
 </dt> <dt>
 
 [**Firmado**](signed.md)

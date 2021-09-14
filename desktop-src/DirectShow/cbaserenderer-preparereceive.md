@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4c5ff423945de7208de6b876d20d602589e4472671d26f709903b9c34cb7f35c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2b15f2a83d8cb20f7204e58dd12d5f94491904c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119928645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070114"
 ---
 # <a name="cbaserendererpreparereceive-method"></a>Método CBaseRenderer.PrepareReceive
 
@@ -66,13 +66,13 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro llama a este método desde dentro del [**método CBaseRenderer::Receive,**](cbaserenderer-receive.md) antes de representar un ejemplo. Si el filtro se está ejecutando, este método programa el ejemplo para su representación.
 
 Si el filtro ya tiene un ejemplo pendiente o si ya se ha alcanzado el final de la secuencia, el método devuelve E \_ UNEXPECTED. Posiblemente, el filtro ascendente no serializa correctamente sus llamadas de streaming.
 
-Si el algoritmo de programación determina que se debe eliminar el ejemplo (vea [**CBaseRenderer::ScheduleSample),**](cbaserenderer-schedulesample.md)el método devuelve VFW \_ E SAMPLE \_ \_ REJECTED. Sin embargo, el método [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) del pin de entrada no pasa este código de error al filtro ascendente, porque quitar una muestra no es un error.
+Si el algoritmo de programación determina que se debe eliminar el ejemplo (vea [**CBaseRenderer::ScheduleSample),**](cbaserenderer-schedulesample.md)el método devuelve VFW \_ E SAMPLE \_ \_ REJECTED. Sin embargo, el método [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) del pin de entrada no pasa este código de error al filtro ascendente, porque quitar un ejemplo no es un error.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,17 +1,17 @@
 ---
 description: Código de ejemplo que muestra cómo probar el final del archivo durante una operación de lectura sincrónica y durante una operación de lectura asincrónica.
 ms.assetid: 93fa9e29-1ff1-496d-9551-99ae88ba7253
-title: Pruebas para el final de un archivo
+title: Probar el final de un archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1b345a0b908e88cfbb98129bc05350c2e265db8bc943d10151a89a17a10fc14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25e6b60f8e17fc452b0638b820be5978775ea5ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118951004"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069827"
 ---
-# <a name="testing-for-the-end-of-a-file"></a>Pruebas para el final de un archivo
+# <a name="testing-for-the-end-of-a-file"></a>Probar el final de un archivo
 
 La [**función ReadFile**](/windows/desktop/api/FileAPI/nf-fileapi-readfile) comprueba la condición de fin de archivo (EOF) de forma diferente para las operaciones de lectura sincrónicas y asincrónicas. Cuando una operación de lectura sincrónica llega al final de un archivo, **ReadFile** devuelve **TRUE** y establece la variable a la que apunta el parámetro *lpNumberOfBytesRead* en cero. Una operación de lectura asincrónica puede encontrar el final de un archivo durante la llamada de inicio a **ReadFile** o durante las operaciones asincrónicas posteriores si el puntero de archivo se avanza mediante programación más allá del final del archivo.
 
@@ -31,7 +31,7 @@ En el siguiente ejemplo de C++ se muestra cómo probar el final de un archivo du
 
 
 
-La prueba de fin de archivo durante una operación de lectura asincrónica es ligeramente más importante que para una operación de lectura sincrónica similar. El indicador de fin de archivo para las operaciones de lectura asincrónicas es cuando [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) devuelve **FALSE** y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve **ERROR HANDLE \_ \_ EOF**.
+La prueba del final del archivo durante una operación de lectura asincrónica es ligeramente más importante que para una operación de lectura sincrónica similar. El indicador de fin de archivo para las operaciones de lectura asincrónicas es cuando [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) devuelve **FALSE** y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve **ERROR HANDLE \_ \_ EOF**.
 
 En el siguiente ejemplo de C++ se muestra cómo probar el final del archivo durante una operación de lectura asincrónica.
 

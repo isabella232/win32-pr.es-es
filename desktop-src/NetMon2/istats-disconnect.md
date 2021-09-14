@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: eabba7b5cf234d48b2839074ec1ad07380a7ed14858f6bd43b07f7d2eaa033b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5fa56c05036380b5dba42089979b43d776a4b57
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071551"
 ---
 # <a name="istatsdisconnect-method"></a>Método IStats::D isconnect
 
@@ -56,9 +56,9 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No se puede llamar a este método cuando el NPP captura datos. Llame primero **al método IStats::D isconnect** y, a continuación, llame [**a IStats::Stop**](istats-stop.md).
+No se puede llamar a este método cuando el NPP captura datos. Llame primero **al método IStats::D isconnect** y, a continuación, llame a [**IStats::Stop**](istats-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 

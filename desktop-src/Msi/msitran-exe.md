@@ -4,20 +4,20 @@ ms.assetid: cfc7b907-78d7-4a78-bab4-ede9012d5a36
 title: Msitran.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e09803623024bb593897411a5e852aa953335c31fd88f9e2e1922b89b53e9abf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a69936155fb3880f43e0f7563bc6aabd59f53703
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118944273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074349"
 ---
 # <a name="msitranexe"></a>Msitran.exe
 
-Msitran.exe usa [**MsiDatabaseGenerateTransform,**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) [**MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa)y [**MsiDatabaseApplyTransform para**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma) generar o aplicar un archivo de transformación.
+Msitran.exe usa [**MsiDatabaseGenerateTransform,**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) [**MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa)y [**MsiDatabaseApplyTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma) para generar o aplicar un archivo de transformación.
 
-Esta herramienta solo está disponible en los componentes Windows [SDK para desarrolladores Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+Esta herramienta solo está disponible en los componentes Windows [SDK para desarrolladores Windows Instalador.](platform-sdk-components-for-windows-installer-developers.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 Use la sintaxis siguiente para generar una transformación.
 

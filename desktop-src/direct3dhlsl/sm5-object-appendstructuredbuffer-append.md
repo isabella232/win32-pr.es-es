@@ -3,7 +3,7 @@ title: AppendStructuredBuffer::Append (Función)
 description: Anexa un valor al final del búfer.
 ms.assetid: 667bc6dc-c0d0-419a-9227-99ce30b9cc73
 keywords:
-- Función append HLSL
+- Función Append HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 863269c5127915af82b8ef82aa36b60b17941d8627b3f81a789f75618219c773
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79db73558cb243437560cc77ed66b64f2807fe13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117725399"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263868"
 ---
 # <a name="append-function"></a>Función Append
 
@@ -47,7 +47,7 @@ Valor de entrada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Ninguno
+None
 
 ## <a name="remarks"></a>Observaciones
 
@@ -57,7 +57,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -65,7 +65,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

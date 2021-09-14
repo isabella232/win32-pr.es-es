@@ -4,12 +4,12 @@ ms.assetid: c6626297-2e45-4073-b04d-8ed40866fe1a
 title: Administración de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b826ebf766bf927cb9b7f73cddf898b9a489cb882a449d3bd10b3e77a0e6fddd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4fffeb33013029737db62d3db2b4c10448dac6a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118894248"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071136"
 ---
 # <a name="security-management"></a>Administración de seguridad
 

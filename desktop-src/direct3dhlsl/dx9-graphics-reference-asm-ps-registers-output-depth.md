@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 041ffccb3301831c91554ef3cda835d3f2e79204730e838b25f26660e76d9a52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9be825d6117cf1cc14464973146dbe176d696d25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119729"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263967"
 ---
 # <a name="output-depth-register"></a>Registro de profundidad de salida
 
 El registro de profundidad de salida del sombreador de píxeles (oDepth) es un registro escalar de solo escritura con el intervalo 0..1 que devuelve un nuevo valor de profundidad para una prueba de profundidad en el búfer de galería de símbolos de \[ \] profundidad.
 
-Syntax
+Sintaxis
 
 
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 891d37611eb931a8857157434419e5221e808710290f2e209f50c743bcb5b7ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bcef39f36abad7c7cb5562b2d892761bd1bb7b5b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159338"
 ---
 # <a name="uidefault-attribute"></a>uidefault (atributo)
 
@@ -59,7 +59,7 @@ Cero o más parámetros para el método .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación del atributo **\[ uidefault \]** a un miembro de una interfaz o una interfaz dispinterface indica a Visual Basic, en tiempo de diseño, que muestre automáticamente este evento o propiedad al usuario. Esto significa que cuando el usuario hace doble clic en un objeto, Visual Basic salta al evento en la interfaz de origen predeterminada que tiene el **\[ atributo uidefault. \]** Cuando el usuario selecciona un objeto, Visual Basic explorador Propiedades muestra la propiedad en la interfaz de origen predeterminada que tiene este atributo. Si ningún evento o propiedad tiene el atributo **\[ uidefault, \]** Visual Basic muestra el primer evento o propiedad enumerado en la interfaz predeterminada.
 

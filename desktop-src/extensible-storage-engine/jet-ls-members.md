@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39515542
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bf1a8595c89c5cebf984692bb57d5022cbd6732e1aa4d5e75f529553597c6e45
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 01f40fd7279645b4da74339edb973cc949c7fa04
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070221"
 ---
 # <a name="jet_ls-members"></a>JET_LS miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Almacenamiento local para un identificador de ESENT. Usado por [JetGetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetgetls-method.md) y [JetSetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit).](./api.jetsetls-method.md)
+Almacenamiento local para un identificador DE ESENT. Usado por [JetGetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetgetls-method.md) y [JetSetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit).](./api.jetsetls-method.md)
 
-El [JET_LS](./jet-ls-structure.md) muestra los miembros siguientes.
+El [JET_LS](./jet-ls-structure.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 

@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2bc422d2170ccd49b8a9746666db7ebbcd7dff14
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372140"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071787"
 ---
 # <a name="creating-a-file-from-existing-streams"></a>Crear un archivo a partir de una Secuencias
 
@@ -20,11 +20,11 @@ Una manera de crear un archivo que contiene flujos de datos es combinar secuenci
 
 Puede compilar un archivo a partir de varias secuencias mediante la [**función AVISave.**](/windows/desktop/api/Vfw/nf-vfw-avisavea) Esta función crea un archivo y escribe en el archivo los flujos de datos especificados en su secuencia de llamada. La secuencia de llamada para **AVISave** usa un número variable de argumentos que incluyen interfaces para las secuencias combinadas en el nuevo archivo.
 
-También puede combinar flujos de datos en un archivo nuevo mediante la [**función AVISaveV.**](/windows/desktop/api/Vfw/nf-vfw-avisaveva) Esta función proporciona la misma funcionalidad que **AVISave,** pero cuando se usa **AVISaveV,** la aplicación especifica los flujos de datos como una matriz, no como un número variable de argumentos.
+También puede combinar flujos de datos en un nuevo archivo mediante la [**función AVISaveV.**](/windows/desktop/api/Vfw/nf-vfw-avisaveva) Esta función proporciona la misma funcionalidad que **AVISave,** pero cuando se usa **AVISaveV,** la aplicación especifica los flujos de datos como una matriz, no como un número variable de argumentos.
 
-Puede crear un cuadro de diálogo en el que el usuario pueda seleccionar la configuración de compresión para el nuevo archivo mediante la [**función AVISaveOptions.**](/windows/desktop/api/Vfw/nf-vfw-avisaveoptions) El cuadro de diálogo muestra la configuración de compresión actual y permite que el usuario las edite. Los cambios de configuración de compresión se almacenan [**en una estructura AVICOMPRESSOPTIONS.**](/windows/desktop/api/Vfw/ns-vfw-avicompressoptions)
+Puede crear un cuadro de diálogo en el que el usuario pueda seleccionar la configuración de compresión para el nuevo archivo mediante la [**función AVISaveOptions.**](/windows/desktop/api/Vfw/nf-vfw-avisaveoptions) El cuadro de diálogo muestra la configuración de compresión actual y permite al usuario editarla. Los cambios de configuración de compresión se almacenan [**en una estructura AVICOMPRESSOPTIONS.**](/windows/desktop/api/Vfw/ns-vfw-avicompressoptions)
 
-También puede incluir una función de devolución de llamada con [**AVISave**](/windows/desktop/api/Vfw/nf-vfw-avisavea) y [**AVISaveV**](/windows/desktop/api/Vfw/nf-vfw-avisaveva) que la aplicación puede usar para mostrar el progreso de la escritura del archivo y, si es necesario, permitir que el usuario cancele la operación de guardado. Puede incluir la dirección de la función de devolución de llamada en la secuencia de llamada de **AVISave** **o AVISaveV**.
+También puede incluir una función de devolución de llamada con [**AVISave**](/windows/desktop/api/Vfw/nf-vfw-avisavea) y [**AVISaveV**](/windows/desktop/api/Vfw/nf-vfw-avisaveva) que la aplicación puede usar para mostrar el progreso de escritura del archivo y, si es necesario, permitir que el usuario cancele la operación de guardado. Puede incluir la dirección de la función de devolución de llamada en la secuencia de llamada de **AVISave** **o AVISaveV**.
 
 Puede permitir que el usuario seleccione un nombre de archivo para el nuevo archivo mediante la [**función GetSaveFileNamePreview.**](/windows/desktop/api/Vfw/nf-vfw-getsavefilenamepreviewa) Esta función muestra el cuadro de diálogo Guardar como en el que el usuario puede obtener una vista previa de la primera secuencia (normalmente la secuencia de vídeo) de un archivo AVI.
 

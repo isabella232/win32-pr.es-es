@@ -4,12 +4,12 @@ ms.assetid: 7eee6c25-468e-4cb8-8735-d61d7a1091e1
 title: LOCALE_ICENTURY
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e3d67426484406e0d2e5e206880bd367cd476d23a39105b221f37a575f1981e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8349e9266bab66f6014f2250267f81586c542c64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120106855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274575"
 ---
 # <a name="locale_icentury"></a>\_ICENTURY DE CONFIGURACIÓN REGIONAL
 

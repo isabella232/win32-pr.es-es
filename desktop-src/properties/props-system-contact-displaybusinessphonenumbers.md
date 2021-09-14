@@ -4,12 +4,12 @@ ms.assetid: e8b1ce0a-a6af-4035-b8f5-4b16cc0b47ae
 title: System.Contact.DisplayBusinessPhoneNumbers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e0a037da4bf6be01023463762f0420ebe5540988d1e4f6be67deef65a69dbed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c9e5490c0d555aa59a4ac22ec346c7b799035ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117866913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262740"
 ---
 # <a name="systemcontactdisplaybusinessphonenumbers"></a>System.Contact.DisplayBusinessPhoneNumbers
 
@@ -28,7 +28,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

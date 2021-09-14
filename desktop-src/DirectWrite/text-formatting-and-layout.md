@@ -3,24 +3,24 @@ title: Formato y diseño de texto
 description: DirectWrite proporciona dos interfaces para dar formato al texto IDWriteTextFormat e IDWriteTextLayout.
 ms.assetid: a68963a6-e486-4881-8ad6-873173396fca
 keywords:
-- DirectWrite, formato de texto
+- DirectWrite,formato de texto
 - DirectWrite,layout
 - DirectWrite,IDWriteTextFormat (interfaz)
-- DirectWrite,IDWriteTextLayout (interfaz)
+- DirectWrite,interfaz IDWriteTextLayout
 - Interfaz IDWriteTextFormat
 - Interfaz IDWriteTextLayout
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e9e5790742a3d3caf7f962a6b5e2b3111c626f28
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380759"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069969"
 ---
 # <a name="text-formatting-and-layout"></a>Formato y diseño de texto
 
-[DirectWrite proporciona](direct-write-portal.md) dos interfaces para dar formato al texto: [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) e [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) **IDWriteTextFormat solo** describe el formato del texto y se usa en casos en los que una cadena completa debe tener el mismo tamaño de fuente, estilo, peso, entre otros. Por otro lado, **IDWriteTextLayout** encapsula una cadena de texto y el formato de los intervalos especificados de la cadena. En este documento se describe cada interfaz y sus usos. Para obtener más información sobre la creación y los métodos de estas interfaces, vea las páginas de referencia [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) e [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
+[DirectWrite](direct-write-portal.md) proporciona dos interfaces para dar formato al texto: [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) e [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout). **IDWriteTextFormat** solo describe el formato de texto y se usa en casos en los que una cadena completa debe tener el mismo tamaño de fuente, estilo, peso, entre otros. Por otro lado, **IDWriteTextLayout** encapsula una cadena de texto y el formato de los intervalos especificados de la cadena. En este documento se describe cada interfaz y sus usos. Para obtener más información sobre la creación y los métodos de estas interfaces, vea las páginas de referencia [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) [**e IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
 Este documento contiene las siguientes partes:
 
@@ -35,7 +35,7 @@ Este documento contiene las siguientes partes:
 Un [**objeto IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) se usa para:
 
 -   Describa el formato de una cadena completa al representarla. Para representar una cadena con varios formatos, use [**un objeto IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
--   Especifique el formato de texto predeterminado al crear [**un objeto IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
+-   Especifique el formato de texto predeterminado al crear un [**objeto IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
 Para crear un objeto [**IDWriteTextFormat,**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) use el método [**IDWriteFactory::CreateTextFormat**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-createtextformat) y especifique la familia de fuentes, la colección de fuentes, el grosor de la fuente, el tamaño de fuente (en DIP), el nombre de la configuración regional.
 
@@ -77,11 +77,11 @@ if (SUCCEEDED(hr))
 
 El texto de un [**objeto IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) no se puede cambiar una vez creado el objeto. Para cambiar el texto, debe eliminar el objeto existente y crear un nuevo **objeto IDWriteTextLayout.**
 
-Puede usar un [**IDWriteTextLayout para**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) dar formato a los intervalos de texto especificados. **IDWriteTextLayout también proporciona** métodos para cambiar el estilo y el peso de la fuente, y agregar características de fuente OpenType y pruebas de impacto. Para obtener más información y una lista completa de los métodos, vea la [**página de referencia de IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
+Puede usar un [**IDWriteTextLayout para**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) dar formato a los intervalos de texto especificados. **IDWriteTextLayout también** proporciona métodos para cambiar el estilo y el peso de la fuente, y agregar características de fuente OpenType y pruebas de acceso. Para obtener más información y una lista completa de métodos, vea la [**página de referencia de IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
 ### <a name="formatting-a-range-of-text"></a>Aplicar formato a un intervalo de texto
 
-[**IDWriteTextLayout proporciona**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) varios métodos para dar formato a intervalos de texto. Cada uno de estos métodos toma una estructura [**DWRITE \_ TEXT \_ RANGE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_range) como parámetro para especificar la posición inicial del texto dentro de la cadena y la longitud del intervalo al que se va a dar formato. En el ejemplo siguiente se muestra cómo establecer el grosor de la fuente de un intervalo de texto en negrita.
+[**IDWriteTextLayout proporciona**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) varios métodos para dar formato a intervalos de texto. Cada uno de estos métodos toma una estructura [**DWRITE \_ TEXT \_ RANGE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_range) como parámetro para especificar la posición inicial del texto dentro de la cadena y la longitud del intervalo al que se va a dar formato. En el ejemplo siguiente se muestra cómo establecer el grosor de fuente de un intervalo de texto en negrita.
 
 
 ```C++

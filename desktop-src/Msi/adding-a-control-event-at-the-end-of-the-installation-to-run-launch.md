@@ -4,12 +4,12 @@ ms.assetid: 323d62ae-333b-49fd-96a1-55b228c8ab2c
 title: Agregar un evento de control al final de la instalación para ejecutar el inicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0cf2a32a30187ea263bd2e3530e6eaae7d236e111826cbcab2461746d9c8e48
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 545901c4cfd0936f63078d5ad56586022fb4ec4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159223"
 ---
 # <a name="adding-a-control-event-at-the-end-of-the-installation-to-run-launch"></a>Agregar un evento de control al final de la instalación para ejecutar el inicio
 

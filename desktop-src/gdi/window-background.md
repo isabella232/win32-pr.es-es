@@ -4,12 +4,12 @@ ms.assetid: d0613f9b-e65b-4de2-887d-2b642d36b22d
 title: Fondo de la ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 819f3bf333728909bdd0e374d41b7665f0517bcc17666b88c58f610e0127d942
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 32d567b0bdc38866cd9332ff8ed399bfb23f53c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119848945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263532"
 ---
 # <a name="window-background"></a>Fondo de la ventana
 
@@ -21,7 +21,7 @@ Si procesa [**WM \_ ERASEB DOMAINND,**](../winmsg/wm-erasebkgnd.md)la aplicació
 
 Una aplicación puede definir un pincel de fondo de clase asignando un identificador de pincel o un valor de color del sistema al **miembro hbrBackground** de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) al registrar la clase con la [**función RegisterClass.**](/windows/win32/api/winuser/nf-winuser-registerclassa) La [**función GetStockObject**](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) [**o CreateSolidBrush**](/windows/desktop/api/Wingdi/nf-wingdi-createsolidbrush) se puede usar para crear un identificador de pincel. Un valor de color del sistema puede ser uno de los definidos para la [**función SetSysColors.**](/windows/win32/api/winuser/nf-winuser-setsyscolors) (El valor debe aumentarse en uno antes de que se asigne al miembro).
 
-Una aplicación puede procesar el [**mensaje \_ ERASEB DOMAINND de WM**](../winmsg/wm-erasebkgnd.md) aunque se defina un pincel de fondo de clase. Esto es habitual en las aplicaciones que permiten al usuario cambiar el color de fondo o el patrón de la ventana para una ventana especificada sin afectar a otras ventanas de la clase . En tales casos, la aplicación no debe pasar el mensaje [**a DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
+Una aplicación puede procesar el [**mensaje \_ WM ERASEBNDND**](../winmsg/wm-erasebkgnd.md) aunque se defina un pincel de fondo de clase. Esto es habitual en las aplicaciones que permiten al usuario cambiar el color de fondo o el patrón de la ventana para una ventana especificada sin afectar a otras ventanas de la clase . En tales casos, la aplicación no debe pasar el mensaje [**a DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
 
 No es necesario que una aplicación alinee los pinceles, ya que el sistema dibuja el pincel utilizando el origen de la ventana como punto de referencia. Dado esto, el usuario puede mover la ventana sin afectar a la alineación de los pinceles de patrón.
 

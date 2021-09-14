@@ -4,12 +4,12 @@ ms.assetid: b17b470b-6971-4124-8ec3-73914fdea95f
 title: CreateFolder Table
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c4cb926f6df388241a9c779328346a6e1bfb9fba4b365afce778c6e0b7a2548
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc286b32b48e0db9e5b991ab10af663c51538bf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120045095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158743"
 ---
 # <a name="createfolder-table"></a>CreateFolder Table
 
@@ -46,7 +46,7 @@ Clave externa en la primera columna de la [tabla Component](component-table.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las carpetas de esta tabla se crean cuando se instala el componente. Se intenta quitar estas carpetas solo cuando el componente se desinstala o se mueve a run-from-source. No se desencadena ninguna eliminación automática si las carpetas están vacías. Por el contrario, las carpetas creadas por el instalador pero que no aparecen en esta tabla se quitan cuando están vacías.
 

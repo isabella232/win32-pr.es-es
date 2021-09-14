@@ -4,12 +4,12 @@ ms.assetid: b7c1de6e-5738-4ecb-a033-9379d79dddb9
 title: CheckTargetPath ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6d8ae179a3d6e0debba4cecfd620bc0cebf99361875517d944886b82ff4d55f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49301dbe1fcc6becc1bc757a0fe487061e1dcdbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158912"
 ---
 # <a name="checktargetpath-controlevent"></a>CheckTargetPath ControlEvent
 

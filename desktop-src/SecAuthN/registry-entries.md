@@ -1,23 +1,23 @@
 ---
-description: Explica las entradas del Registro para los eventos de Winlogon.
+description: Explica las entradas del Registro para los eventos winlogon.
 ms.assetid: dbebe23f-84ff-4a3e-8b8c-fa3bda10fa57
 title: Entradas del Registro (autenticación)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 388cbe42d085543d5e7d4df1c9705504864b370cf94eb32f4025eaba12b89ea8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d50b413d99d2bc31a7af4e8e101ab27e51a8892
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118919451"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259668"
 ---
 # <a name="registry-entries-authentication"></a>Entradas del Registro (autenticación)
 
-Para que el paquete reciba notificaciones de eventos de [*Winlogon,*](../secgloss/w-gly.md)debe proporcionar el nombre del paquete, los nombres de las funciones de controlador de eventos del paquete, el archivo DLL responsable de implementar el paquete e información sobre si el archivo DLL admite eventos asincrónicos y suplantación.
+Para que el paquete reciba notificaciones de eventos de [*Winlogon,*](../secgloss/w-gly.md)debe proporcionar el nombre del paquete, los nombres de las funciones del controlador de eventos en el paquete, el archivo DLL responsable de implementar el paquete e información sobre si el archivo DLL admite eventos asincrónicos y suplantación.
 
 Debe crear la clave del Registro del paquete de notificación como una subclave de
 
-**HKEY \_ Notificación \_ de** \\  \\  \\  \\ Winlogon Windows SOFTWARE DE MÁQUINA LOCAL Microsoft **Windows** NT \\ **CurrentVersion** \\ 
+**HKEY \_ Notificación \_ de** \\  \\  \\  \\  \\ **Winlogon** \\  de Microsoft Windows NT CurrentVersion Software LOCAL MACHINE
 
 El nombre de la clave suele ser el mismo que el nombre del archivo DLL; sin embargo, esto no es obligatorio. El nombre elegido para el paquete no debe estar en conflicto con los nombres de otros paquetes de notificación instalados.
 

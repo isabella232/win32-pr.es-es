@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método OnRequestGoFullScreen Servicios de Escritorio remoto
 - Método OnRequestGoFullScreen Servicios de Escritorio remoto , interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnRequestGoFullScreen
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnRequestGoFullScreen
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6d689469f635694357890c620866fff5783680f8e9e8d11a1a05c78f6e1e322
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c865cd27b447743f781b8563956e7fb2d7f5d703
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119770685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259071"
 ---
 # <a name="imstscaxeventsonrequestgofullscreen-method"></a>Método IMsTscAxEvents::OnRequestGoFullScreen
 
@@ -45,9 +45,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En el modo de pantalla completa con control de contenedor, el contenedor debe entrar en el modo de pantalla completa estándar en respuesta a este evento.
+En el modo de pantalla completa con control de contenedor, el contenedor debe entrar en modo de pantalla completa estándar en respuesta a este evento.
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -65,7 +65,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

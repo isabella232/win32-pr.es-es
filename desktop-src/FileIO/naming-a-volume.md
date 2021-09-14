@@ -4,12 +4,12 @@ ms.assetid: f640f42d-a703-4e2e-a6d3-09cbe989cd11
 title: Asignación de nombres a un volumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc0af7575f2fd6ad2f45fc5763666151c08e10f414e1b6e6610e163c4c811cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6435b6b5c7283cf2fb9a98951698f79646dfdffa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119533364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069897"
 ---
 # <a name="naming-a-volume"></a>Asignación de nombres a un volumen
 

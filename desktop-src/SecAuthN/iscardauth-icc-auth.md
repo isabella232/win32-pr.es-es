@@ -1,5 +1,5 @@
 ---
-description: El método de autenticación DE \_ ACUERDO permite que una aplicación autentique la tarjeta inteligente.
+description: El método de autenticación DE \_ ACUERDO PERMITE que una aplicación autentique la tarjeta inteligente.
 ms.assetid: 98aea241-6bdc-4f47-b56c-a90f69fcd9a4
 title: Método ISCardAuth::ICC_Auth
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2b96d40d6c35250b55b6aa2bb37733492fda874df0346b24c859431d749a3e4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 015b5c395f025abea4ab2dc756c03691bbc27e72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071251"
 ---
 # <a name="iscardauthicc_auth-method"></a>Método ISCardAuth::ICC \_ Auth
 
 \[El **método de \_ autenticación DE** LAA está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método de \_ autenticación DE** ACUERDO permite que una aplicación autentique la tarjeta inteligente.
+El **método de \_ autenticación DE** ACUERDO PERMITE que una aplicación autentique la tarjeta inteligente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Algoritmo que se va a usar en el proceso de autenticación.
 *pParam* \[ En\]
 </dt> <dd>
 
-Objeto [**IByteBuffer**](ibytebuffer.md) que contiene parámetros específicos del proveedor del proceso de autenticación.
+Objeto [**IByteBuffer que**](ibytebuffer.md) contiene parámetros específicos del proveedor del proceso de autenticación.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de todos los métodos proporcionados por esta interfaz, vea [**ISCardAuth**](iscardauth.md).
 
@@ -101,7 +101,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

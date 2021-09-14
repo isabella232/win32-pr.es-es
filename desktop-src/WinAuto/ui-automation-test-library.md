@@ -1,19 +1,19 @@
 ---
 title: Automatización de la interfaz de usuario de pruebas
-description: La Automatización de la interfaz de usuario test library (biblioteca de pruebas de UIA) es una API a la que llama la aplicación de controlador en un escenario de pruebas automatizadas.
+description: La Automatización de la interfaz de usuario de pruebas (biblioteca de pruebas de UIA) es una API a la que llama la aplicación de controlador en un escenario de pruebas automatizadas.
 ms.assetid: A11341E5-71FC-442C-8F78-C40E717BF798
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac2c02433eaaa9f5d5658ca9f469803042b0a637bb20e6cdce72299bf7c4643f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e64200673d45f800e1e18dee2afd5c4acd2b604f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070581"
 ---
 # <a name="ui-automation-test-library"></a>Automatización de la interfaz de usuario de pruebas
 
-La Automatización de la interfaz de usuario test library (biblioteca de pruebas de UIA)  es una API a la que llama la aplicación del controlador en un escenario de pruebas automatizadas. El controlador es la aplicación que obtiene un elemento de automatización (objeto [**IUIAutomationElement)**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) de un control que requiere comprobación y lo proporciona a la biblioteca Automatización de la interfaz de usuario test. A continuación, la biblioteca de pruebas comprueba y valida la Automatización de la interfaz de usuario implementación. Para obtener más información sobre los Automatización de la interfaz de usuario y los elementos de automatización, [vea Automatización de la interfaz de usuario Fundamentals](entry-uiautocore-overview.md).
+La Automatización de la interfaz de usuario de pruebas (biblioteca de pruebas de UIA) es una API a la que llama la aplicación del controlador en un escenario de pruebas automatizadas.  El controlador es la aplicación que obtiene un elemento de automatización (objeto [**IUIAutomationElement)**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) de un control que requiere comprobación y lo proporciona a la biblioteca Automatización de la interfaz de usuario test. A continuación, la biblioteca de pruebas comprueba y valida la Automatización de la interfaz de usuario implementación. Para obtener más información sobre Automatización de la interfaz de usuario y los elementos de automatización, [vea Automatización de la interfaz de usuario Fundamentals](entry-uiautocore-overview.md).
 
 -   [Automatización de la interfaz de usuario flujo de trabajo de la biblioteca de pruebas](#ui-automation-test-library-workflow)
 -   [Registro con la biblioteca Automatización de la interfaz de usuario pruebas](#logging-with-the-ui-automation-test-library)
@@ -24,7 +24,7 @@ La Automatización de la interfaz de usuario test library (biblioteca de pruebas
 
 ## <a name="ui-automation-test-library-workflow"></a>Automatización de la interfaz de usuario flujo de trabajo de la biblioteca de pruebas
 
-En el diagrama siguiente se muestra un flujo de trabajo de prueba que incorpora la biblioteca Automatización de la interfaz de usuario pruebas mediante una aplicación de consola como controlador. En este caso, el controlador inicia una instancia de Notepad.exe y obtiene un elemento de automatización (es decir, un objeto [**IUIAutomationElement)**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) del control de edición. A continuación, el controlador crea un Automatización de la interfaz de usuario biblioteca de pruebas basado en la plataforma de interfaz de usuario que se está probando y, a continuación, pasa el elemento de automatización como un parámetro. La Automatización de la interfaz de usuario test library determina que el elemento de automatización es un tipo de control [Document](uiauto-supportdocumentcontroltype.md) y, a continuación, ejecuta las pruebas de control Document, las pruebas de patrón de control [Text](uiauto-implementingtextandtextrange.md) y [Scroll](uiauto-implementingscroll.md) y las pruebas de elementos de automatización genéricos.
+En el diagrama siguiente se muestra un flujo de trabajo de prueba que incorpora la biblioteca Automatización de la interfaz de usuario pruebas mediante una aplicación de consola como controlador. En este caso, el controlador inicia una instancia de Notepad.exe y obtiene un elemento de automatización (es decir, un objeto [**IUIAutomationElement)**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) del control de edición. A continuación, el controlador crea un Automatización de la interfaz de usuario biblioteca de pruebas basado en la plataforma de interfaz de usuario que se está probando y, a continuación, pasa el elemento de automatización como un parámetro. La biblioteca Automatización de la interfaz de usuario test determina que el elemento de automatización es un tipo de control [Document](uiauto-supportdocumentcontroltype.md) y, a continuación, ejecuta las pruebas de control Document, las pruebas de patrón de control [Text](uiauto-implementingtextandtextrange.md) y [Scroll](uiauto-implementingscroll.md) y las pruebas de elementos de automatización genéricos.
 
 ![Diagrama que muestra el flujo de controlador a aplicación a controlador a UIATestLibrary mediante flechas de color rojo.](images/uia-test-library-workflow.png)
 

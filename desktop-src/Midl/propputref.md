@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97e80b0baa4f78537142043b374c206ade0f3d51d7ca30c2f57e1c4ae4e9b695
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ead5ccf7f9dc6a59580b7c3e3576f3c7503ccafc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118641968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159411"
 ---
 # <a name="propputref-attribute"></a>propputref (atributo)
 
@@ -45,7 +45,7 @@ Tipo de los datos devueltos por el procedimiento remoto.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Nombre del procedimiento remoto.
@@ -59,11 +59,11 @@ Cero o más parámetros para el procedimiento remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una función que tenga el **\[ atributo propputref \]** también debe tener, como último parámetro, un puntero que tenga el atributo **\[** [**in.**](in.md) **\]**
 
-La propiedad debe tener el mismo nombre que la función. Como máximo, se puede especificar uno de los atributos **\[** [**propget**](propget.md), propput y **\]** **\[** [](propput.md) **\]** **\[ propputref \]** para una función.
+La propiedad debe tener el mismo nombre que la función . Como máximo, se puede especificar uno de los atributos **\[** [**propget**](propget.md), propput y **\]** **\[** [](propput.md) **\]** **\[ propputref \]** para una función.
 
 ### <a name="flags"></a>Marcas
 

@@ -10,27 +10,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b0b7e7b1d1e79e64fb1eb83f17f3aa2d118a9eb53b23c19cbdfd624e2c501a84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bd1d329cd861fa45c99851707177322d0b9d12f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070448"
 ---
 # <a name="monitoring-and-responding-to-events-with-standard-consumers"></a>Supervisión y respuesta a eventos con consumidores estándar
 
-Puede usar las clases de consumidor [estándar instaladas para](standard-consumer-classes.md) realizar acciones basadas en eventos en un sistema operativo. Los consumidores estándar son clases simples que ya están registradas y definen clases de consumidor permanentes. Cada consumidor estándar realiza una acción específica después de recibir una notificación de eventos. Por ejemplo, puede definir una instancia de [**ActiveScriptEventConsumer**](activescripteventconsumer.md) para ejecutar un script cuando el espacio libre en disco en un equipo es diferente de un tamaño especificado.
+Puede usar las clases de consumidor [estándar instaladas para](standard-consumer-classes.md) realizar acciones basadas en eventos en un sistema operativo. Los consumidores estándar son clases sencillas que ya están registradas y definen clases de consumidor permanentes. Cada consumidor estándar realiza una acción específica después de recibir una notificación de eventos. Por ejemplo, puede definir una instancia de [**ActiveScriptEventConsumer**](activescripteventconsumer.md) para ejecutar un script cuando el espacio libre en disco en un equipo es diferente de un tamaño especificado.
 
 WMI compila los consumidores estándar en espacios de nombres predeterminados que dependen del sistema operativo, por ejemplo:
 
 -   En Windows Server 2003, todos los consumidores estándar se compilan de forma predeterminada en el espacio de nombres "Suscripción \\ raíz".
 
 > [!Note]  
-> Para obtener los espacios de nombres predeterminados y los sistemas operativos específicos de cada clase WMI, vea las secciones Comentarios y requisitos de cada tema de clase.
+> Para los espacios de nombres y sistemas operativos predeterminados que son específicos de cada clase WMI, vea las secciones Comentarios y requisitos de cada tema de clase.
 
  
 
-En la tabla siguiente se enumeran y describen los consumidores estándar de WMI.
+En la tabla siguiente se enumeran y describen los consumidores estándar wmi.
 
 
 
@@ -58,19 +58,19 @@ En el procedimiento siguiente se describe cómo supervisar y responder a eventos
     #pragma namespace ("\\\\.\\root\\subscription")
     ```
 
-    La [*mayoría de los eventos*](gloss-i.md) intrínsecos están asociados a cambios en las instancias de clase del espacio de nombres \\ cimv2 raíz. Sin embargo, el proveedor del Registro del sistema desencadena eventos del Registro como [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent) en el espacio de \\ nombres predeterminado [raíz.](/previous-versions/windows/desktop/regprov/system-registry-provider)
+    La [*mayoría de los eventos*](gloss-i.md) intrínsecos están asociados a cambios en las instancias de clase del espacio de nombres raíz \\ cimv2. Sin embargo, el proveedor del Registro del sistema desencadena eventos del Registro como [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent) en el espacio de \\ nombres predeterminado [raíz.](/previous-versions/windows/desktop/regprov/system-registry-provider)
 
     Un consumidor puede incluir clases de eventos ubicadas en otros espacios de nombres especificando el espacio de nombres en la **propiedad EventNamespace** en la [**\_ \_ consulta EventFilter**](--eventfilter.md) para eventos. Las [*clases de eventos intrínsecos,*](gloss-i.md) como [**\_ \_ InstanceOperationEvent,**](--instanceoperationevent.md) están disponibles en cada espacio de nombres.
 
 2.  Cree y rellene una instancia de una clase de consumidor estándar.
 
-    Esta instancia puede tener un valor único en la **propiedad Name.** Puede actualizar un consumidor existente si vuelve a usar el mismo nombre.
+    Esta instancia puede tener un valor único en la **propiedad Name.** Para actualizar un consumidor existente, vuelva a usar el mismo nombre.
 
     **InsertionStringTemplates** contiene el texto que se va a insertar en un evento que especifique en **EventType**. Puede usar cadenas literales o hacer referencia directamente a una propiedad. Para obtener más información, vea [Usar plantillas de cadena estándar](using-standard-string-templates.md) e Instrucción SELECT para consultas de [eventos](select-statement-for-event-queries.md).
 
     Use un origen existente para el registro de eventos que admita una cadena de inserción sin texto asociado.
 
-    En el ejemplo de código MOF siguiente se muestra cómo usar un origen existente de WSH y un **valor eventID** de 8.
+    En el siguiente ejemplo de código MOF se muestra cómo usar un origen existente de WSH y un **valor eventID** de 8.
 
     ```syntax
     instance of NTEventLogEventConsumer as $Consumer

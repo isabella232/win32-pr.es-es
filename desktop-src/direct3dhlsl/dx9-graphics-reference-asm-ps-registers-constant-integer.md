@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ce2d9ba19f97439da098563639bc8940cdae2f202a6f24cdd1940e25cfc14e9e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b03a27a95f84ae30a70147caaf5662e1949cf18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119489397"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264028"
 ---
 # <a name="constant-integer-register-hlsl-ps-reference"></a>Registro entero constante (referencia de HLSL PS)
 
@@ -24,9 +24,9 @@ Se pueden establecer mediante [defi - ps](defi---ps.md) o [**SetPixelShaderConst
 
 Cuando se usa como argumento para el [bucle : instrucción ps:](loop---ps.md)
 
--   .x es el recuento de iteraciones. ([rep - ps](rep---ps.md) solo usa este componente).
+-   .x es el recuento de iteraciones. ([rep - ps](rep---ps.md) usa solo este componente).
 -   .y es el valor inicial del contador de bucle.
--   .z es el paso de incremento para el contador de bucles.
+-   .z es el paso de incremento para el contador de bucle.
 
 
 

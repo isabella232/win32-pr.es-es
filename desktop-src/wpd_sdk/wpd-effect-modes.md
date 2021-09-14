@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 8ca712a758d23f70d2a1f8760272b821adeec548a1d719c9564cdc8cf17cdeb4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7e29f89207a74d335fbe1c2561f8dcf9cec3e923
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119657425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262052"
 ---
-# <a name="wpd_effect_modes-enumeration"></a>Enumeración WPD \_ EFFECT \_ MODES
+# <a name="wpd_effect_modes-enumeration"></a>Enumeración \_ WPD EFFECT \_ MODES
 
-El **tipo de \_ enumeración WPD EFFECT \_ MODES** describe varios efectos visuales que se pueden aplicar a una imagen.
+El **tipo de \_ enumeración \_ WPD EFFECT MODES** describe varios efectos visuales que se pueden aplicar a una imagen.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -49,14 +49,14 @@ No se ha especificado ningún efecto.
 
 </dd> <dt>
 
-<span id="WPD_EFFECT_MODE_COLOR"></span><span id="wpd_effect_mode_color"></span>**COLOR DEL MODO \_ \_ DE EFECTO WPD \_**
+<span id="WPD_EFFECT_MODE_COLOR"></span><span id="wpd_effect_mode_color"></span>**COLOR DEL MODO \_ \_ DE EFECTO \_ WPD**
 </dt> <dd>
 
 La imagen debe ser de color.
 
 </dd> <dt>
 
-<span id="WPD_EFFECT_MODE_BLACK_AND_WHITE"></span><span id="wpd_effect_mode_black_and_white"></span>**MODO DE EFECTO WPD \_ \_ EN BLANCO Y \_ \_ \_ NEGRO**
+<span id="WPD_EFFECT_MODE_BLACK_AND_WHITE"></span><span id="wpd_effect_mode_black_and_white"></span>**MODO DE \_ EFECTO \_ WPD \_ EN BLANCO \_ Y \_ NEGRO**
 </dt> <dd>
 
 La imagen debe ser en blanco y negro.
@@ -70,9 +70,9 @@ La imagen debe ser sepia.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta enumeración la usa la [propiedad \_ WPD STILL \_ IMAGE EFFECT \_ \_ MODE.](still-image-properties.md)
+Esta enumeración la usa la propiedad [ \_ WPD STILL \_ IMAGE EFFECT \_ \_ MODE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Esta enumeración la usa la [propiedad \_ WPD STILL \_ IMAGE EFFECT \_ \_ MODE.]
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

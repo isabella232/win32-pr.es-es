@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 54b45779f4954f1cee454b5cf171e374e215555902e3389c7c47f5a59bc989eb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 080b9d3e3ab6dbfc0ed8afc8ac0476981b7c26e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119954884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070447"
 ---
 # <a name="swbemprivilegesetadd-method"></a>Método SWbemPrivilegeSet.Add
 
@@ -48,7 +48,7 @@ objPrivilege = .Add( _
 *iPrivilege* 
 </dt> <dd>
 
-Obligatorio. Una de las constantes WMI del [**grupo WbemPrivilegeEnum.**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) Estas constantes son básicamente enteros que representan privilegios específicos. Por ejemplo, para agregar el privilegio que le permite apagar un sistema informático, use la **constante wbemPrivilegeShutdown.** En un script, debe usar el equivalente numérico de 23 (0x17). Para obtener una lista completa de estas constantes y las cadenas de privilegios asociadas, vea [**Constantes de privilegios**](privilege-constants.md).
+Necesario. Una de las constantes WMI del [**grupo WbemPrivilegeEnum.**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) Estas constantes son básicamente enteros que representan privilegios específicos. Por ejemplo, para agregar el privilegio que le permite apagar un sistema informático, use la **constante wbemPrivilegeShutdown.** En un script, debe usar el equivalente numérico de 23 (0x17). Para obtener una lista completa de estas constantes y las cadenas de privilegios asociadas, vea [**Constantes de privilegios**](privilege-constants.md).
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ En el tema [**SWbemPrivilegeSet**](swbemprivilegeset.md) se describe un ejemplo 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPrivilegeSet<br/>                                                     |

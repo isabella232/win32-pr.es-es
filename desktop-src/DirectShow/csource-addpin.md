@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a1c221d2fd032445587b52b0d0ae7f7744889254983fab82c7b282d06fee195e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 224550756f5935ce26c106ba01c9ef64f0767140
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070043"
 ---
 # <a name="csourceaddpin-method"></a>Método CSource.AddPin
 
-El `AddPin` método agrega un nuevo pin de salida al filtro.
+El `AddPin` método agrega una nueva patilla de salida al filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,9 +64,9 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se crea un nuevo pin derivado de **CSourceStream**, el constructor **CSourceStream** llama automáticamente a este método para agregar el pin de salida al filtro.
+Cuando se crea un nuevo pin derivado de **CSourceStream,** el constructor **CSourceStream** llama automáticamente a este método para agregar el pin de salida al filtro.
 
 ## <a name="requirements"></a>Requisitos
 

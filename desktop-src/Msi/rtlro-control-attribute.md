@@ -4,12 +4,12 @@ ms.assetid: 68394498-98ca-4bcd-86c0-3f692a26a258
 title: Atributo de control RTLRO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3c4488b31b0bac714d0f28915c074c0a6e4a8b5105e3ef2be60f3870ebcf88d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c452a4b5b4533b24e8e59b6fe70dc2884baec0c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074317"
 ---
 # <a name="rtlro-control-attribute"></a>Atributo de control RTLRO
 
@@ -21,7 +21,7 @@ Si este bit de estilo se establece, el texto del control se muestra en un orden 
 
  
 
-[Progressbar](progressbar-control.md)
+[ProgressBar](progressbar-control.md)
 
  
 
@@ -95,9 +95,9 @@ Si este bit de estilo se establece, el texto del control se muestra en un orden 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para establecer este atributo en un control, incluya el bit RTLRO en la columna Atributos del registro del control en la [tabla Control](control-table.md).
+Para establecer este atributo en un control , incluya el bit RTLRO en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
 Vea [Controles y atributos](control-attributes.md) de [control.](controls.md)
 

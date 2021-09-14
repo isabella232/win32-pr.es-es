@@ -1,6 +1,6 @@
 ---
-title: Elemento from (sendEmailType)
-description: Contiene la dirección de correo electrónico del remitente de correo electrónico.
+title: Elemento From (sendEmailType)
+description: Contiene la dirección de correo electrónico del remitente del correo electrónico.
 ms.assetid: b80733de-e050-4026-a2fe-f63833ec2660
 keywords:
 - Del elemento Programador de tareas
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 9f50704212fe6a4fec7ce0fc21bacd7ea33e402c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259343"
 ---
-# <a name="from-sendemailtype-element"></a>Elemento from (sendEmailType)
+# <a name="from-sendemailtype-element"></a>Elemento From (sendEmailType)
 
-Contiene la dirección de correo electrónico del remitente de correo electrónico.
+Contiene la dirección de correo electrónico del remitente del correo electrónico.
 
 ``` syntax
 <xs:element name="From"
@@ -30,7 +30,7 @@ Contiene la dirección de correo electrónico del remitente de correo electróni
  />
 ```
 
-El elemento **from** se define mediante el tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **From.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -44,9 +44,9 @@ El elemento **from** se define mediante el tipo complejo [**sendEmailType**](tas
 
 ## <a name="remarks"></a>Observaciones
 
-Para el desarrollo de C++, vea [**from (propiedad de IEmailAction)**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_from).
+Para el desarrollo de C++, [**vea From Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_from).
 
-Para el desarrollo de scripts, vea [**EmailAction. from**](emailaction-from.md).
+Para el desarrollo de scripts, [**vea EmailAction.From**](emailaction-from.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para el desarrollo de scripts, vea [**EmailAction. from**](emailaction-from.md).
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

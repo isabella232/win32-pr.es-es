@@ -10,11 +10,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e3bfd9c777281a07ebd25b6b0df3f0f4336ea638
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071751"
 ---
 # <a name="microsoft-corporation-product-identifiers"></a>Microsoft Corporation identificadores de producto
 
@@ -40,8 +40,8 @@ ms.locfileid: "124372337"
 | Filtro MS                                | MM \_ MSFT \_ ACM \_ MSFILTER             |
 | Puerto auxiliar de audio de MS OEM                    | MM \_ MSFT \_ WSS \_ OEM \_ AUXILIAR             |
 | Controlador mezclador de la placa de audio de MS OEM          | MEZCLADOR \_ DE MM MSFT WSS \_ \_ OEM \_           |
-| Síntesis FM estéreo de la placa de audio de MS OEM | MM \_ MSFT \_ WSS \_ OEM FM OEM FM \_ OEM \_ STEREO |
-| Entrada de forma de onda de la placa de audio de MS OEM        | MM \_ MSFT \_ WSS OEM \_ \_ WAVEIN          |
+| Síntesis FM estéreo de la placa de audio de MS OEM | MM \_ MSFT \_ WSS OEM FM OEM FM OEM \_ \_ \_ STEREO |
+| Entrada de forma de onda de la placa de audio de MS OEM        | MM \_ MSFT \_ WSS \_ OEM \_ WAVEIN          |
 | Salida de forma de onda de la placa de audio oem de MS       | MM \_ MSFT \_ WSS \_ \_ WAVEOUT DE OEM         |
 | MS vanilla driver aux (CD)               | MM \_ MSFT \_ GENERIC \_ AUX \_ CD          |
 | MS vanilla driver aux (line in)          | LÍNEA \_ AUXILIAR GENÉRICA DE MSFT \_ \_ \_ MM        |

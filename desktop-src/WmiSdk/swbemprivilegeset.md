@@ -15,20 +15,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 2117aec6fada67bddce9f07a6c985c73a3dcd93ef217ed7fe77dc46cc5659d26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2946f8b1f745c0db123ed33dab312cbbe9d16c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070431"
 ---
 # <a name="swbemprivilegeset-object"></a>Objeto SWbemPrivilegeSet
 
-Un **objeto SWbemPrivilegeSet** es una colección de objetos [**SWbemPrivilege**](swbemprivilege.md) en un objeto [**SWbemSecurity**](swbemsecurity.md) que solicita privilegios específicos para un objeto de instrumental de administración de Windows (WMI). Vea la lista de privilegios en [**Constantes de privilegios**](privilege-constants.md). Los elementos se agregan a la colección mediante los [**métodos Add**](swbemprivilegeset-add.md) [**y AddAsString.**](swbemprivilegeset-addasstring.md) Los elementos se recuperan de la colección mediante el [**método Item**](swbemprivilegeset-item.md) y se quitan mediante el [**método Remove.**](swbemprivilegeset-remove.md) La llamada al método [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) de VBScript no puede crear este objeto. Para obtener más información, vea [Accessing a Collection](accessing-a-collection.md).
+Un **objeto SWbemPrivilegeSet** es una colección de objetos [**SWbemPrivilege**](swbemprivilege.md) en un objeto [**SWbemSecurity**](swbemsecurity.md) que solicita privilegios específicos para un objeto Windows Management Instrumentation (WMI). Consulte la lista de privilegios en [**Constantes de privilegios**](privilege-constants.md). Los elementos se agregan a la colección mediante [**los métodos Add**](swbemprivilegeset-add.md) [**y AddAsString.**](swbemprivilegeset-addasstring.md) Los elementos se recuperan de la colección mediante el [**método Item**](swbemprivilegeset-item.md) y se quitan mediante el [**método Remove.**](swbemprivilegeset-remove.md) La llamada al método [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) de VBScript no puede crear este objeto. Para obtener más información, vea [Acceso a una colección](accessing-a-collection.md).
 
-Un **objeto SWbemPrivilegeSet** es un conjunto de solicitudes de invalidación de privilegios para un objeto específico. Cuando se realiza una llamada API con este objeto, se intentan las solicitudes de invalidación de privilegios. El **objeto SWbemPrivilegeSet** no define los privilegios disponibles para el usuario o proceso actual. En otras palabras, la obtención de privilegios para cualquier objeto WMI no identifica la configuración de privilegios que se realiza en la conexión a WMI ni los privilegios en vigor cuando se entrega un objeto a un receptor.
+Un **objeto SWbemPrivilegeSet es** un conjunto de solicitudes de invalidación de privilegios para un objeto específico. Cuando se realiza una llamada API con este objeto, se intentan las solicitudes de invalidación de privilegios. El **objeto SWbemPrivilegeSet** no define los privilegios disponibles para el usuario o proceso actual. En otras palabras, la obtención de los privilegios para cualquier objeto WMI no identifica la configuración de privilegios que se realiza en la conexión a WMI ni los privilegios en vigor cuando un objeto se entrega a un receptor.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto SWbemPrivilegeSet** tiene estos tipos de miembros:
 
@@ -44,10 +44,10 @@ El **objeto SWbemPrivilegeSet** tiene estos métodos.
 | Método                                               | Descripción                                                                                                                                                             |
 |:-----------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Añadir**](swbemprivilegeset-add.md)                 | Agrega un [**objeto SWbemPrivilege**](swbemprivilege.md) a la **colección SWbemPrivilegeSet** mediante una [constante WbemPrivilegeEnum.](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum)<br/> |
-| [**AddAsString**](swbemprivilegeset-addasstring.md) | Agrega un [**objeto SWbemPrivilege**](swbemprivilege.md) a la **colección SWbemPrivilegeSet** mediante una cadena de privilegios.<br/>                                    |
+| [**AddAsString**](swbemprivilegeset-addasstring.md) | Agrega un [**objeto SWbemPrivilege a**](swbemprivilege.md) la **colección SWbemPrivilegeSet** mediante una cadena de privilegios.<br/>                                    |
 | [**DeleteAll**](swbemprivilegeset-deleteall.md)     | Elimina todos los privilegios de la colección.<br/>                                                                                                              |
-| [**Elemento**](swbemprivilegeset-item.md)               | Recupera un [**objeto SWbemPrivilege**](swbemprivilege.md) de la colección. Este es el método predeterminado de este objeto .<br/>                                 |
-| [**Quitar**](swbemprivilegeset-remove.md)           | Quita un [**objeto SWbemPrivilege**](swbemprivilege.md) de la colección.<br/>                                                                              |
+| [**Artículo**](swbemprivilegeset-item.md)               | Recupera un [**objeto SWbemPrivilege**](swbemprivilege.md) de la colección. Este es el método predeterminado de este objeto .<br/>                                 |
+| [**Remove**](swbemprivilegeset-remove.md)           | Quita un [**objeto SWbemPrivilege**](swbemprivilege.md) de la colección.<br/>                                                                              |
 
 
 
@@ -59,9 +59,9 @@ El **objeto SWbemPrivilegeSet** tiene estas propiedades.
 
 
 
-| Propiedad                                            | Tipo de acceso          | Descripción                                       |
+| Propiedad.                                            | Tipo de acceso          | Descripción                                       |
 |:----------------------------------------------------|:---------------------|:--------------------------------------------------|
-| [**Count**](swbemprivilegeset-count.md)<br/> | Solo lectura<br/> | Número de elementos de la colección.<br/> |
+| [**Contar**](swbemprivilegeset-count.md)<br/> | Solo lectura<br/> | Número de elementos de la colección.<br/> |
 
 
 
@@ -90,7 +90,7 @@ Next
 
 
 
-En el ejemplo de código de VBScript siguiente se muestra cómo agregar privilegios mediante el **objeto SWbemPrivilegeSet.**
+En el siguiente ejemplo de código de VBScript se muestra cómo agregar privilegios mediante el **objeto SWbemPrivilegeSet.**
 
 
 ```VB
@@ -201,7 +201,7 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPrivilegeSet<br/>                                                     |

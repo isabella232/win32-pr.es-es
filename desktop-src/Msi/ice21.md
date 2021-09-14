@@ -4,12 +4,12 @@ ms.assetid: 68983d6a-b807-4730-a645-378001e558ec
 title: ICE21
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0c5c517bd41c7d777f327606b3672f90b57a821dbbef028fa985acd043e6768
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c457d026b3dc57a718eabea704254a3448a3de26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119529035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074651"
 ---
 # <a name="ice21"></a>ICE21
 

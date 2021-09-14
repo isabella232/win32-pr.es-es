@@ -4,12 +4,12 @@ ms.assetid: fc685b9a-b65a-491c-8c45-a8021e785910
 title: LOCALE_SNEGATIVESIGN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7a4d5dfe989eddbb165f76f5b65556f9c2b9c5ccebf37a9dd71cf62331bf107
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74b1956c5e512f9143d7d2da44bfaabfea2dc875
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118391155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274295"
 ---
 # <a name="locale_snegativesign"></a>LOCALE \_ SNEGATIVESIGN
 

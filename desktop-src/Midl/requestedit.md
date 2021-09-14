@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51a894e5d4a09e7535e10a73e1bd118245e5886e0cdbb23b0f0645e588ab4adf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18d83beea34f008e6e96fcd493d8410d7d2c5b88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159394"
 ---
 # <a name="requestedit-attribute"></a>requestedit (atributo)
 
@@ -45,7 +45,7 @@ Especifica el tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función en el archivo IDL.
@@ -59,7 +59,7 @@ Cero o más parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Admitir la **notificación OnRequestEdit** significa que, antes de realizar un cambio, el objeto enviará al cliente una solicitud de permiso para cambiar una propiedad. Un objeto puede admitir el enlace de datos, pero no tiene este atributo.
 

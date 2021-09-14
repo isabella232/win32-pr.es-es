@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 212a76930e87d5a83c32a2f6707def8e2af40b89c5ede621ec0c31159d3aa0c2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 74c0abf6ec03ca0c29ede3b7d396db375fd06ac6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119962405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260260"
 ---
 # <a name="glgeterror-function"></a>Función glGetError
 
@@ -60,7 +60,7 @@ La **función glGetError** devuelve uno de los siguientes códigos de error.
 
 Tenga en **cuenta que glGetError** devuelve GL INVALID OPERATION si se llama entre una llamada \_ a \_ [**glBegin**](glbegin.md) y su llamada correspondiente [**a glEnd**](glend.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A cada error detectable se le asigna un código numérico y un nombre simbólico. Cuando se produce un error, la marca de error se establece en el valor de código de error adecuado. No se registran otros errores hasta que **se llama a glGetError,** se devuelve el código de error y la marca se restablece a GL \_ NO \_ ERROR. Si una llamada a **glGetError** devuelve GL NO ERROR, no se ha producido ningún error detectable desde la última llamada a glGetError o desde que se inicializó \_ \_ OpenGL. 
 
@@ -84,7 +84,7 @@ Cuando se establece una marca de error, los resultados de una operación OpenGL 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: operador JET_COMMIT_ID.GreaterThanOrEqual'
-title: operador JET_COMMIT_ID.GreaterThanOrEqual (Microsoft.Isam.Esent.Interop.Windows8)
+description: 'Más información sobre: JET_COMMIT_ID operador GreaterThanOrEqual'
+title: JET_COMMIT_ID operador.GreaterThanOrEqual (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'GreaterThanOrEqual operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID.op_GreaterThanOrEqual(Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID,Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_commit_id.op_greaterthanorequal(v=EXCHG.10)
@@ -25,16 +25,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 54c9500c34f095fcb8da65ea85712a7610c166444b70f7e80fb81af9633bf179
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e531168d2c0656c465d8eace46d00181375bc4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119968325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070244"
 ---
 # <a name="jet_commit_idgreaterthanorequal-operator"></a>JET_COMMIT_ID operador GreaterThanOrEqual
 
-Determine si un commitid está delante de otro commitid.
+Determine si un commitid es anterior a otro commitid.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)

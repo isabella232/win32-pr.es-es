@@ -1,6 +1,6 @@
 ---
-title: Cambiar el volumen de la Waveform-Audio reproducción
-description: Cambiar el volumen de la Waveform-Audio reproducción
+title: Cambiar el volumen de Waveform-Audio reproducción
+description: Cambiar el volumen de Waveform-Audio reproducción
 ms.assetid: 814daa35-7905-47a2-ab08-29f20493af1e
 keywords:
 - audio de forma de onda, cambio del volumen de reproducción
@@ -11,13 +11,13 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 89f972b5bd8e6f0d4a0d7d5964f164429c5632b0
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274028"
 ---
-# <a name="changing-the-volume-of-waveform-audio-playback"></a>Cambiar el volumen de la Waveform-Audio reproducción
+# <a name="changing-the-volume-of-waveform-audio-playback"></a>Cambiar el volumen de Waveform-Audio reproducción
 
 Windows proporciona las siguientes funciones para consultar y establecer el nivel de volumen de los dispositivos de salida de audio de onda.
 

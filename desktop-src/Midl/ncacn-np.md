@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7acf294241c1d38b2067ba54e315fc3240e5bb6eca81a6b12012f8dec457a8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84634e6bb5d2b634439be767ad44749291cffe11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013763"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159466"
 ---
 # <a name="ncacn_np-attribute"></a>atributo \_ np ncacn
 
@@ -45,7 +45,7 @@ Especifica un nombre de canalización válido. Un nombre de canalización válid
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un servidor crea una instancia de una canalización con nombre que, a continuación, está disponible para cualquier cliente. Cuando un cliente intenta conectarse, la instancia existente está asociada a ese cliente. Antes de que otro cliente pueda conectarse, el servidor debe crear otra instancia de la canalización con nombre. Si un cliente intenta enlazar con el servidor antes de crear la nueva instancia, la llamada de enlace, [**RpcBindingFromStringBinding**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcbindingfromstringbinding), puede producir un error con el mensaje de error RPC \_ S SERVER TOO \_ \_ \_ BUSY. Por lo tanto, debe asegurarse de que la aplicación cliente controla el caso en el que el servidor está demasiado ocupado para aceptar una conexión. El cliente debe reintentar automáticamente, solicitar al usuario un curso de acción o producir un error correctamente.
 
@@ -79,7 +79,7 @@ interface iface2
 
 <dl> <dt>
 
-[**Extremo**](endpoint.md)
+[**endpoint**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)

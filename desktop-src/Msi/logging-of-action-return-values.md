@@ -1,15 +1,15 @@
 ---
-description: El instalador escribe los siguientes valores en el registro cuando una acción devuelve estos códigos de error. Para obtener la lista completa de códigos de error devueltos por la función Windows Installer MsiExec.exe y InstMsi.exe, vea Códigos de error.
+description: El instalador escribe los siguientes valores en el registro cuando una acción devuelve estos códigos de error. Para obtener la lista completa de códigos de error devueltos por la función Windows installer MsiExec.exe y InstMsi.exe, vea Códigos de error.
 ms.assetid: 653bbf45-ac2c-4f8a-a978-960e0c42e6e4
 title: Registro de valores devueltos de acción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 756fa633ef486c3dae4b689acf439f8dbf7786c20f740fb4784de30e764dc9fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aaaa203fee1fbb02bef070d065a9838383ea588b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118945900"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074423"
 ---
 # <a name="logging-of-action-return-values"></a>Registro de valores devueltos de acción
 
@@ -17,7 +17,7 @@ El instalador escribe los siguientes valores en el registro cuando una acción d
 
 
 
-| Código de error                       | Valores devueltos por las llamadas MsiExec.exe función y InstMsi.exe | Valores que aparecen en el registro. | Descripción                                                                                                                                                                                                                                                                     |
+| Código de error                       | Valores devueltos por llamadas de función MsiExec.exe y InstMsi.exe | Valores que aparecen en el registro. | Descripción                                                                                                                                                                                                                                                                     |
 |----------------------------------|----------------------------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | FUNCIÓN DE \_ ERROR \_ NO \_ LLAMADA     | 1626                                                           | 0                              | No se pudo ejecutar una función.                                                                                                                                                                                                                                               |
 | ERROR \_ CORRECTO                   | 0                                                              | 1                              | Una acción completada correctamente.                                                                                                                                                                                                                                               |

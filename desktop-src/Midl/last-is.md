@@ -1,9 +1,9 @@
 ---
 title: last_is (atributo)
-description: El atributo de campo \ Last \_ es \ especifica el índice del último elemento de la matriz que se va a transmitir. Cuando el índice especificado es cero o negativo, no se transmite ningún elemento de la matriz.
+description: El atributo de campo \last is\ especifica el índice del último elemento de \_ matriz que se va a transmitir. Cuando el índice especificado es cero o negativo, no se transmite ningún elemento de matriz.
 ms.assetid: 42a5cb0d-0887-4aa7-b34f-2fbad0f4c8ab
 keywords:
-- last_is el atributo MIDL
+- last_is atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 453a51109452f3cdacb1a48e67b76ccbc9f2e257
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104533160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159519"
 ---
-# <a name="last_is-attribute"></a>el \_ atributo Last es
+# <a name="last_is-attribute"></a>el \_ último es el atributo
 
-El atributo de campo **\[ Last \_ \]** especifica el índice del último elemento de la matriz que se va a transmitir. Cuando el índice especificado es cero o negativo, no se transmite ningún elemento de la matriz.
+El atributo field **\[ last \_ especifica \]** el índice del último elemento de matriz que se va a transmitir. Cuando el índice especificado es cero o negativo, no se transmite ningún elemento de matriz.
 
 ``` syntax
 [last_is( limited-expression-list )]
@@ -31,24 +31,24 @@ El atributo de campo **\[ Last \_ \]** especifica el índice del último element
 
 <dl> <dt>
 
-*Limited-Expression-List* 
+*limited-expression-list* 
 </dt> <dd>
 
-Especifica una o más expresiones del lenguaje C. Cada expresión se evalúa como un entero que representa el índice de la matriz del último elemento de la matriz que se va a transmitir. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores de incremento y decremento. Separe varias expresiones con comas.
+Especifica una o varias expresiones de lenguaje C. Cada expresión se evalúa como un entero que representa el índice de matriz del último elemento de matriz que se va a transmitir. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores de incremento y decremento. Separe varias expresiones con comas.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El atributo **\[ Last \_ es \]** determina el valor del índice de matriz correspondiente a la **\[** [**\_**](length-is.md) **\]** **\[ \_ \]** longitud es Attribute cuando no se especifica length. La relación entre estos índices de matriz es la siguiente: length = Last-First + 1.
+El **\[ último atributo \_ is \]** determina el valor del índice de matriz correspondiente a **\[** [**\_**](length-is.md) **\]** **\[ \_ \]** la longitud es attribute cuando no se especifica length. La relación entre estos índices de matriz es la siguiente: length = last - first + 1.
 
-Si el valor del índice de matriz especificado por **\[** [**First \_ es**](first-is.md) **\]** mayor que el valor especificado por **\[ Last \_ es \]**, se transmiten cero elementos.
+Si el valor del índice de matriz especificado por first es mayor que el valor especificado por **\[** [**\_**](first-is.md) last **\]** **\[ \_ es \]**, se transmiten cero elementos.
 
-El atributo **\[ Last \_ \] es** no se puede usar como atributo de campo al mismo tiempo que el atributo **\[** [**length \_**](length-is.md) **\]** o el **\[** atributo [**String**](string.md) **\]** .
+El **\[ último atributo \_ es \]** no se puede usar como atributo de campo al mismo tiempo que **\[** [**la longitud \_ es**](length-is.md) **\]** el atributo o el atributo **\[** [**de**](string.md) **\]** cadena.
 
-El uso de una expresión constante con el atributo **\[ Last \_ es \]** un uso inadecuado del atributo. Es legal, pero ineficaz, y dará como resultado un código de serialización más lento.
+El uso de una expresión constante con **\[ el último atributo \_ is \]** es un uso inadecuado del atributo. Es legal, pero ineficaz, y dará lugar a un código de serialización más lento.
 
-Cuando el valor especificado por **\[** [**Max \_ es**](max-is.md) **\]** igual o mayor que cero, la relación siguiente debe ser true: 0 <= Last \_ es <= Max \_ es.
+Cuando el valor especificado por max es igual o mayor que cero, debe cumplirse la siguiente **\[** [**\_**](max-is.md) relación: 0 <= last es <**\]** = max \_ \_ is.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -65,21 +65,21 @@ proc1(
 [Atributos de campo](/windows/desktop/Rpc/field-attributes)
 </dt> <dt>
 
-[**el primero \_ es**](first-is.md)
+[**en \_ primer lugar es**](first-is.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**la longitud \_ es**](length-is.md)
+[**length \_ es**](length-is.md)
 </dt> <dt>
 
-[**Max \_ es**](max-is.md)
+[**max \_ is**](max-is.md)
 </dt> <dt>
 
-[**el tamaño \_ es**](size-is.md)
+[**el \_ tamaño es**](size-is.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

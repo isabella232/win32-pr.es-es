@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ce85ad2014e1f0563e2c20af7abec3cc476fab330b38340162f28fd390a5f8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5688bafe8343bdc1ab508a4e65984cc15c88b124
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159327"
 ---
 # <a name="uuid-attribute"></a>uuid (atributo)
 
@@ -39,7 +39,7 @@ Especifica una cadena formada por 8 dígitos hexadecimales seguidos de un guion,
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La biblioteca en tiempo de ejecución usa el UUID de interfaz que el atributo **\[ uuid \]** designa para ayudar a establecer la comunicación entre las aplicaciones cliente y servidor. El **\[ atributo \] uuid** puede aparecer en la lista de atributos de interfaz para una interfaz RPC o una interfaz COM.
 
@@ -82,7 +82,7 @@ uuid("6B29FC40-CA47-1067-B31D-00DD010662DA")
 [**/osf**](-osf.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
  

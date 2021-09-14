@@ -4,18 +4,18 @@ ms.assetid: be597c90-7222-4542-b0f7-e9f4cdfc08b9
 title: SetProgress ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22e36ecf5851713d7460f8f249b77871439c628f2adfce516aea29db52ad7942
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: acd7523f03dd8fc8216991ae16b05a731e9f38f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118625085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272404"
 ---
 # <a name="setprogress-controlevent"></a>SetProgress ControlEvent
 
 El instalador usa el evento SetProgress para publicar información sobre el progreso de la instalación. Un [control ProgressBar o](progressbar-control.md) Control [Desenlace](billboard-control.md) debe suscribirse al evento a través de la tabla [EventMapping;](eventmapping-table.md) para ello, debe asignar un nombre a la acción cuyo progreso se indica. Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
 
-Este control ControlEvent se puede controlar mediante una [](r-gly.md)interfaz de usuario que se ejecuta en los niveles básico de interfaz de [*usuario,*](b-gly.md)interfaz de usuario reducida o interfaz [*de usuario*](f-gly.md) completa. Para obtener información sobre los niveles de interfaz de usuario, [vea Interfaz de usuario niveles .](user-interface-levels.md)
+Este control ControlEvent se puede controlar mediante una [](r-gly.md)interfaz de usuario que se ejecuta en los niveles básico de interfaz de [*usuario,*](b-gly.md)interfaz de usuario reducida o interfaz [*de usuario*](f-gly.md) completa. Para obtener información sobre los niveles de interfaz de [usuario, vea Interfaz de usuario Levels](user-interface-levels.md).
 
 ## <a name="published-by"></a>Publicado por
 

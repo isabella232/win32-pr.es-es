@@ -4,12 +4,12 @@ ms.assetid: c05b261d-3fac-40bf-b4ff-bd766f8d148f
 title: Creación de un experto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbffc036f27ad0b91fb19906c5f12740919828b33ebfced584e068abe93bd912
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55ead0ff222b72c66bfc88ec477d1a8d6a941273
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071569"
 ---
 # <a name="building-an-expert"></a>Creación de un experto
 

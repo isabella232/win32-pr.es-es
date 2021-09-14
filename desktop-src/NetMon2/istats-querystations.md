@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b2d4ead22b3e7308aee3c44b3ff6dff407591cbe675b09a3300f3e7a8720726c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 99c3be3926191c27ad038034373e411b5c22d9fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071541"
 ---
 # <a name="istatsquerystations-method"></a>Método IStats::QueryStations
 
@@ -43,9 +43,9 @@ HRESULT STDMETHODCALLTYPE QueryStations(
 *lpQueryTable* \[ in, out\]
 </dt> <dd>
 
-Puntero a una [estructura QUERYTABLE.](querytable.md) En la entrada, esta estructura debe contener el número máximo de equipos que desea Monitor de red y una matriz de [estructuras STATIONQUERY.](stationquery.md)
+Puntero a una [estructura QUERYTABLE.](querytable.md) En la entrada, esta estructura debe contener el número máximo de equipos que Monitor de red devolver y una matriz de [estructuras STATIONQUERY.](stationquery.md)
 
-En la salida, esta estructura devuelve el número de equipos que capturan datos y una [estructura STATIONQUERY](stationquery.md) para cada equipo encontrado. Tenga en cuenta que esta información puede incluir equipos que usan versiones de Monitor de red anteriores a la versión 2.0.
+En la salida, esta estructura devuelve el número de equipos que capturan datos y una [estructura STATIONQUERY](stationquery.md) para cada equipo encontrado. Tenga en cuenta que esta información puede incluir equipos que usan versiones de Monitor de red que son anteriores a la versión 2.0.
 
 </dd> </dl>
 
@@ -65,11 +65,11 @@ Si el método no se realiza correctamente, el valor devuelto es el código de er
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se puede llamar a este método en cualquier momento después de llamar a [CreateNPPInterface.](createnppinterface.md) Una llamada a este método es una llamada sincrónica, que puede tardar varios segundos en completarse a medida Monitor de red espera a que los equipos remotos respondan a la consulta. Solo se pueden consultar los equipos de la subred local.
+Se puede llamar a este método en cualquier momento después de llamar a [CreateNPPInterface.](createnppinterface.md) Una llamada a este método es una llamada sincrónica, que puede tardar varios segundos en completarse a medida que Monitor de red espera a que los equipos remotos respondan a la consulta. Solo se pueden consultar los equipos de la subred local.
 
-Es su responsabilidad asignar la memoria para la estructura [QUERYTABLE](querytable.md) y liberar esa memoria después de que la tabla ya no sea necesaria. Este requisito incluye la memoria necesaria para la [matriz STATIONQUERY](stationquery.md) utilizada en QUERYTABLE.
+Es su responsabilidad asignar la memoria para la estructura [QUERYTABLE](querytable.md) y liberar esa memoria después de que la tabla ya no sea necesaria. Este requisito incluye la memoria necesaria para la [matriz STATIONQUERY](stationquery.md) usada en QUERYTABLE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ Es su responsabilidad asignar la memoria para la estructura [QUERYTABLE](queryta
 [IStats](istats.md)
 </dt> <dt>
 
-[Querytable](querytable.md)
+[QUERYTABLE](querytable.md)
 </dt> <dt>
 
 [STATIONQUERY](stationquery.md)

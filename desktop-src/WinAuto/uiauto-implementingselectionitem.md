@@ -7,7 +7,7 @@ keywords:
 - Automatización de la interfaz de usuario,patrón de control SelectionItem
 - Automatización de la interfaz de usuario,ISelectionItemProvider
 - ISelectionItemProvider
-- implementar patrones Automatización de la interfaz de usuario de control SelectionItem
+- implementación de Automatización de la interfaz de usuario de control SelectionItem
 - Patrones de control SelectionItem
 - patrones de control,ISelectionItemProvider
 - patrones de control, implementar Automatización de la interfaz de usuario SelectionItem
@@ -15,12 +15,12 @@ keywords:
 - interfaces,ISelectionItemProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8814041239c0f1f4ddae448ac170843631afd1950764c8c64dfc88ce47112404
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 912be363ea8228d905a600de091d6cbe12b925fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070482"
 ---
 # <a name="selectionitem-control-pattern"></a>Patrón de control SelectionItem
 
@@ -48,14 +48,14 @@ Las siguientes propiedades, métodos y eventos son necesarios para implementar l
 
 | Miembros requeridos                                                                                                                        | Tipo de miembro | Notas |
 |-----------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
-| [**AddToSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-addtoselection)                                                                  | Método      | Ninguno  |
-| [**IsSelected**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_isselected)                                                                          | Propiedad    | Ninguno  |
-| [**RemoveFromSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-removefromselection)                                                        | Método      | Ninguno  |
-| [**Seleccionar**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-select)                                                                                  | Método      | Ninguno  |
-| [**SelectionContainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer)                                                          | Propiedad    | Ninguno  |
-| [**Elemento \_ SelectionItem \_ de UIAAddedToSelectionEventId**](uiauto-event-ids.md)         | Evento       | Ninguno  |
-| [**Elemento \_ SelectionItem \_ de UIARemovedFromSelectionEventId**](uiauto-event-ids.md) | Evento       | Ninguno  |
-| [**Elementos \_ SelectionItem \_ de UIASelectedEventId**](uiauto-event-ids.md)                         | Evento       | Ninguno  |
+| [**AddToSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-addtoselection)                                                                  | Método      | None  |
+| [**IsSelected**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_isselected)                                                                          | Propiedad.    | None  |
+| [**RemoveFromSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-removefromselection)                                                        | Método      | None  |
+| [**Seleccionar**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-select)                                                                                  | Método      | None  |
+| [**SelectionContainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer)                                                          | Propiedad.    | None  |
+| [**Elemento \_ SelectionItem \_ de UIAAddedToSelectionEventId**](uiauto-event-ids.md)         | Evento       | None  |
+| [**Elemento \_ SelectionItem de \_ UIARemovedFromSelectionEventId**](uiauto-event-ids.md) | Evento       | None  |
+| [**Elementos \_ SelectionItem \_ de UIASelectedEventId**](uiauto-event-ids.md)                         | Evento       | None  |
 
 
 

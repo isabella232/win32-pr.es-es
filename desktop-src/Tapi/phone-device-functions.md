@@ -4,12 +4,12 @@ ms.assetid: 04914c9c-ec23-4a04-af6a-8e31bec20595
 title: Teléfono Funciones de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a2380769269d0bd6b128931babdfaf37827a0cc066323dfdf58ad5592b8f03d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b50d10f308576920be6d343590f313930ac96141
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071094"
 ---
 # <a name="phone-device-functions"></a>Teléfono Funciones de dispositivo
 

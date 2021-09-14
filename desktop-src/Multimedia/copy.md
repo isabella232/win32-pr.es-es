@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d6f08c764cb12b1cdca4c1876e6a22220a5c7522
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071803"
 ---
 # <a name="copy-command"></a>comando copy
 
@@ -49,15 +49,15 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszItem"></span><span id="lpszitem"></span><span id="LPSZITEM"></span>*lpszItem*
 </dt> <dd>
 
-Una de las siguientes marcas identifica el elemento que se copiará.
+Una de las marcas siguientes identifica el elemento que se copiará.
 
 
 
 | Value                 | Significado                                                                                                                                                                                                                                   |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | en *rectángulo*        | Especifica la parte de cada fotograma que se va a copiar. Si se omite, la configuración predeterminada es todo el marco.                                                                                                                             |
-| secuencia *de* audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando . Si usa esta marca y también desea copiar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se copian todas las secuencias de audio y vídeo). |
-| desde *la posición*       | Especifica el inicio del intervalo copiado. Si se omite, la configuración predeterminada es la posición actual.                                                                                                                                         |
+| secuencia *de* audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando . Si usa esta marca y también quiere copiar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se copian todas las secuencias de audio y vídeo). |
+| desde *la posición*       | Especifica el inicio del intervalo copiado. Si se omite, el valor predeterminado es la posición actual.                                                                                                                                         |
 | para *colocar*         | Especifica el final del intervalo copiado. Los datos de audio y vídeo copiados son exclusivos de esta posición. Si se omite, la configuración predeterminada es el final del área de trabajo.                                                                       |
 | secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si usa esta marca y también desea copiar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, se copian todas las secuencias de audio y vídeo). |
 
@@ -76,7 +76,7 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

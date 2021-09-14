@@ -4,18 +4,18 @@ ms.assetid: a91c1ffe-1bdd-49bb-aa6a-71667a1ed812
 title: WriteEnvironmentStrings (Acción)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59686dc6c9d4982e2705b610e871cf0ead029bf4672b98244a43d9602df88155
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc3a9d64a1140fc883d94e8d3733608d29dc2d39
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119786505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071804"
 ---
 # <a name="writeenvironmentstrings-action"></a>WriteEnvironmentStrings (Acción)
 
 La acción WriteEnvironmentStrings modifica los valores de las variables de entorno.
 
-Las variables de entorno no cambian para la instalación en curso cuando se ejecutan la acción WriteEnvironmentStrings o [RemoveEnvironmentStrings.](removeenvironmentstrings-action.md) En Windows 2000, Windows Server 2003, Windows XP y Windows Vista esta información se almacena en el Registro y se envía un mensaje [**\_ WM SETTINGCHANGE**](../winmsg/wm-settingchange.md) para notificar al sistema los cambios cuando se complete la instalación. Otro proceso puede recibir una notificación de los cambios controlando estos mensajes. No se envía ningún mensaje si hay pendiente un reinicio del sistema. Un paquete puede usar la [**propiedad MsiSystemRebootPending**](msisystemrebootpending.md) para comprobar si hay un reinicio del sistema pendiente.
+Las variables de entorno no cambian para la instalación en curso cuando se ejecutan la acción WriteEnvironmentStrings o [RemoveEnvironmentStrings.](removeenvironmentstrings-action.md) En Windows 2000, Windows Server 2003, Windows XP y Windows Vista, esta información se almacena en el Registro y se envía un mensaje [**\_ WM SETTINGCHANGE**](../winmsg/wm-settingchange.md) para notificar al sistema los cambios cuando se complete la instalación. Otro proceso puede recibir una notificación de los cambios controlando estos mensajes. No se envía ningún mensaje si hay pendiente un reinicio del sistema. Un paquete puede usar la [**propiedad MsiSystemRebootPending**](msisystemrebootpending.md) para comprobar si hay un reinicio del sistema pendiente.
 
 El instalador ejecuta la acción WriteEnvironmentStrings solo durante la instalación o reinstalación de un componente y ejecuta la acción [RemoveEnvironmentStrings](removeenvironmentstrings-action.md) solo durante la eliminación de un componente.
 

@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene una lista alfabética de las constantes del dispositivo de teléfono TAPI.
+description: Esta sección contiene una lista alfabética de las constantes de dispositivo de teléfono TAPI.
 ms.assetid: 0e7425e3-f2e4-4703-bb43-3cb293d49922
 title: Teléfono Constantes de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ec2b1e1202c04a87f7daad459bd07124754c60a90e015eba2603c61029d42b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23e5c271c2c974101ebbfe5048e290caafea45f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071098"
 ---
 # <a name="phone-device-constants"></a>Teléfono Constantes de dispositivo
 
-Esta sección contiene una lista alfabética de las siguientes constantes de dispositivos de teléfono TAPI:
+Esta sección contiene una lista alfabética de las siguientes constantes de dispositivo de teléfono TAPI:
 
 -   [Constantes \_ PHONEBUTTONFUNCTION](phonebuttonfunction--constants.md)
 -   [Constantes \_ PHONEBUTTONMODE](phonebuttonmode--constants.md)

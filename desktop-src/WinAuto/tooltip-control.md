@@ -1,17 +1,17 @@
 ---
-title: Control ToolTip (Referencia de elementos de la interfaz de usuario de MSAA)
+title: Control ToolTip (Referencia del elemento de interfaz de usuario de MSAA)
 description: Un control de información sobre herramientas muestra una pequeña ventana emergente que contiene una línea de texto que describe el propósito de una herramienta, representada como un objeto gráfico, en una aplicación.
 ms.assetid: d3a65d7b-b882-4a1a-bac2-6995b64cf4af
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8d6bdffd240d84043e95bcbc87046d2e74ea965ba18f3f03ad1a5177654eb8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37557fd116084fc9ac53e8567afc90eda339750d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117929010"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070597"
 ---
-# <a name="tooltip-control-msaa-ui-element-reference"></a>Control ToolTip (Referencia de elementos de la interfaz de usuario de MSAA)
+# <a name="tooltip-control-msaa-ui-element-reference"></a>Control ToolTip (Referencia del elemento de interfaz de usuario de MSAA)
 
 > [!Note]  
 > En este tema se describen **los objetos de control de información** sobre herramientas para fines de referencia de elementos de interfaz de usuario de MSAA. Aquí no se describe cómo crear objetos **de control** de información sobre herramientas en varios marcos de interfaz de usuario. Consulte la documentación de referencia de API para el marco de interfaz de usuario que está usando.

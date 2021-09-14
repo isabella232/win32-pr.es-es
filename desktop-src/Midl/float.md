@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 096bd5488335d59944b03815184735a4530b20310ddc7c21389e86fac1997eec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c82d298506c5117c0643df8ecea841832d5f923
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120040095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159582"
 ---
 # <a name="float-attribute"></a>atributo float
 
@@ -38,7 +38,7 @@ Especifica un identificador MIDL válido. Los identificadores MIDL válidos cons
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **tipo float** es uno de los tipos base del lenguaje de definición de interfaz (IDL). El **tipo float** puede aparecer como especificador de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y un especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 

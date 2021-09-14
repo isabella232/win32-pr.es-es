@@ -5,12 +5,12 @@ ms.assetid: 34ee83c3-e790-4abb-9095-c85c7b12d75c
 title: M (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cdf8f33f81f45edf77aa94107df7b6d7f161c958f5275847dd438ebd14e1b6f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a25b7dd4ed2e29702959f264894a7d831a0ca0a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118945590"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071928"
 ---
 # <a name="m-windows-installer"></a>M (Windows instalador)
 
@@ -42,14 +42,14 @@ Base de datos combinada con un paquete de instalación para entregar nuevos comp
 <span id="_msi_microsoft_windows_installer_gly"></span><span id="_MSI_MICROSOFT_WINDOWS_INSTALLER_GLY"></span>**Instalador de Windows Microsoft**
 </dt> <dd>
 
-Servicio de instalador del lado cliente para administrar la instalación de aplicaciones en plataformas de 32 bits. La aplicación debe encapsularse en un [*paquete*](p-gly.md). Para obtener más información, vea [Acerca de Windows Installer](about-windows-installer.md).
+Servicio de instalador del lado cliente para administrar la instalación de aplicaciones en plataformas de 32 bits. La aplicación debe encapsularse en un [*paquete*](p-gly.md). Para obtener más información, vea [About Windows Installer](about-windows-installer.md).
 
 </dd> <dt>
 
 <span id="_msi_.msi_file_gly"></span><span id="_MSI_.MSI_FILE_GLY"></span>**.msi archivo**
 </dt> <dd>
 
-Archivo de almacenamiento estructurado en COM que contiene las instrucciones y los datos necesarios para instalar una aplicación. Cada [*paquete*](p-gly.md) contiene al menos un .msi archivo. El .msi contiene la base de datos [*del instalador*](i-gly.md), un flujo de información de [*resumen*](s-gly.md)y, posiblemente, una o varias [*transformaciones*](t-gly.md) y [*archivos de origen internos*](i-gly.md). Para obtener más información, [vea Windows Installer File Extensions](windows-installer-file-extensions.md).
+Archivo de almacenamiento estructurado en COM que contiene las instrucciones y los datos necesarios para instalar una aplicación. Cada [*paquete*](p-gly.md) contiene al menos un .msi archivo. El .msi contiene la base de datos [*del instalador*](i-gly.md), un flujo de información de resumen [*y,*](s-gly.md)posiblemente, una o varias [*transformaciones*](t-gly.md) y [*archivos de origen internos*](i-gly.md). Para obtener más información, [vea Windows Installer File Extensions](windows-installer-file-extensions.md).
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Archivo de almacenamiento estructurado en COM que contiene las instrucciones y l
 <span id="_msi_.mst_file_gly"></span><span id="_MSI_.MST_FILE_GLY"></span>**Archivo .mst**
 </dt> <dd>
 
-Transforme el paquete. Para obtener más información, [vea Merges and Transforms](merges-and-transforms.md). Para obtener más información, [vea Windows Installer File Extensions](windows-installer-file-extensions.md).
+Transformar paquete. Para obtener más información, [vea Merges and Transforms](merges-and-transforms.md). Para obtener más información, [vea Windows Installer File Extensions](windows-installer-file-extensions.md).
 
 </dd> </dl>
 

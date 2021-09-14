@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JetUpdate2 (Función)'
+description: 'Más información sobre: Función JetUpdate2'
 title: Función JetUpdate2
 TOCTitle: JetUpdate2 Function
 ms:assetid: 125f372c-9c4c-4be8-b0df-bbf53d79e90b
@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 34cc43aea463c186d68c0fa0cadc447ba2a02acb
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269655"
 ---
 # <a name="jetupdate2-function"></a>Función JetUpdate2
 
@@ -84,13 +84,13 @@ Grupo de bits que contienen las opciones que se usarán para esta llamada, que i
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores ese, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errBufferTooSmall</p> | <p>El búfer dado para el marcador de registros no es lo suficientemente grande como para almacenar el marcador de registro.</p> | 
+| <p>JET_errBufferTooSmall</p> | <p>El búfer dado para el marcador de registro no es lo suficientemente grande como para almacenar el marcador de registro.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errDiskFull</p> | <p>La operación de actualización requiere el crecimiento del archivo de base de datos o la asignación de archivos de registro, pero la unidad de disco donde reside el archivo de base de datos o la serie de registros está llena. Como alternativa, el archivo de base de datos está en un volumen con formato FAT32 y el archivo de base de datos ya es de 4 GB, el límite por archivo para FAT32.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
@@ -129,7 +129,7 @@ Consulte la sección Comentarios de [JetUpdate](./jetupdate-function.md) para ob
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

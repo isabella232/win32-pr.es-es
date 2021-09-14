@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da899207456cece58216874c7540a032326e4180e9484590e2effd619eea72f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b23162f8606ed68dc90a0cb6debdcc903e0ccd0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118614339"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260095"
 ---
 # <a name="glstencilop-function"></a>Función glStencilOp
 
@@ -53,10 +53,10 @@ Acción que se debe realizar cuando se produce un error en la prueba de galería
 |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | <span id="GL_KEEP"></span><span id="gl_keep"></span><dl> <dt>**GL \_ KEEP**</dt> </dl>          | Mantiene el valor actual.<br/>                                                                         |
 | <span id="GL_ZERO"></span><span id="gl_zero"></span><dl> <dt>**GL \_ ZERO**</dt> </dl>          | Establece el valor del búfer de galería de símbolos en cero.<br/>                                                           |
-| <span id="GL_REPLACE"></span><span id="gl_replace"></span><dl> <dt>**GL \_ REPLACE**</dt> </dl> | Establece el valor del búfer de galería de símbolos *en ref*, tal y como especifica **glStencilFunc.**<br/>                       |
+| <span id="GL_REPLACE"></span><span id="gl_replace"></span><dl> <dt>**GL \_ REPLACE**</dt> </dl> | Establece el valor del búfer de la galería de símbolos *en ref*, tal y como especifica **glStencilFunc.**<br/>                       |
 | <span id="GL_INCR"></span><span id="gl_incr"></span><dl> <dt>**GL \_ INCR**</dt> </dl>          | Incrementa el valor del búfer de galería de símbolos actual. Fija al valor máximo que se puede representar sin signo.<br/> |
 | <span id="GL_DECR"></span><span id="gl_decr"></span><dl> <dt>**GL \_ DECR**</dt> </dl>          | Disminuye el valor del búfer de galería de símbolos actual. Fija a cero.<br/>                                     |
-| <span id="GL_INVERT"></span><span id="gl_invert"></span><dl> <dt>**GL \_ INVERT**</dt> </dl>    | Invierte bit a bit el valor del búfer de la galería de símbolos actual.<br/>                                                |
+| <span id="GL_INVERT"></span><span id="gl_invert"></span><dl> <dt>**GL \_ INVERT**</dt> </dl>    | Invierte bit a bit el valor del búfer de galería de símbolos actual.<br/>                                                |
 
 
 
@@ -97,11 +97,11 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 ## <a name="remarks"></a>Observaciones
 
-La galería de símbolos, como *z*-buffering, habilita y deshabilita el dibujo por píxel. Dibuje en los planos de galería de símbolos mediante primitivas de dibujo openGL y, a continuación, represente la geometría y las imágenes, mediante los planos de galería de símbolos para enmascarar partes de la pantalla. La galería de símbolos se usa normalmente en algoritmos de representación multipass para lograr efectos especiales, como las decales, la delineación y la representación de geometría sólida y recímétrica.
+La galería de símbolos, como *z*-buffering, habilita y deshabilita el dibujo por píxel. Dibuje en los planos de galería de símbolos mediante primitivas de dibujo openGL y, a continuación, represente la geometría y las imágenes, mediante los planos de galería de símbolos para enmascarar partes de la pantalla. La galería de símbolos se usa normalmente en algoritmos de representación multipass para lograr efectos especiales, como las decales, la delineación y la representación de geometría sólida recímétrica.
 
-La prueba de galería de símbolos elimina condicionalmente un píxel en función del resultado de una comparación entre el valor del búfer de la galería de símbolos y un valor de referencia. La prueba se habilita con [**llamadas glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ STENCIL \_ TEST y se controla con [**glStencilFunc.**](glstencilfunc.md)
+La prueba de galería de símbolos elimina condicionalmente un píxel en función del resultado de una comparación entre el valor del búfer de la galería de símbolos y un valor de referencia. La prueba se habilita con [**llamadas glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ STENCIL TEST y se controla con \_ [**glStencilFunc.**](glstencilfunc.md)
 
-La **función glStencilOp** toma tres argumentos que indican lo que sucede con el valor de galería de símbolos almacenado mientras está habilitada la galería de símbolos. Si se produce un error en la prueba de galería de símbolos, no se realiza ningún cambio en los búferes de color o profundidad del píxel, y *fail* especifica lo que ocurre con el contenido del búfer de galería de símbolos.
+La **función glStencilOp** toma tres argumentos que indican lo que sucede con el valor de galería de símbolos almacenado mientras está habilitada la galería de símbolos. Si se produce un error en la prueba de galería de símbolos,  no se realiza ningún cambio en los búferes de color o profundidad del píxel, y fail especifica lo que ocurre con el contenido del búfer de galería de símbolos.
 
 Los valores de búfer de galería de símbolos se tratan como enteros sin signo. Cuando se incrementan y disminuyen, los valores se fijan en 0 y 2 *n* 1, donde *n* es el valor devuelto consultando GL \_ STENCIL \_ BITS.
 
@@ -109,7 +109,7 @@ Los otros dos argumentos para **glStencilOp** especifican acciones de búfer de 
 
 Inicialmente, la prueba de galería de símbolos está deshabilitada. Si no hay ningún búfer de galería de símbolos, no se puede producir ninguna modificación de la galería de símbolos y es como si las pruebas de galería de símbolos siempre pasara, independientemente de cualquier llamada a **glStencilOp**.
 
-Las siguientes funciones recuperan información relacionada con **glStencilOp**:
+Las siguientes funciones recuperan información relacionada **con glStencilOp**:
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ STENCIL \_ FAIL
 
@@ -135,7 +135,7 @@ Las siguientes funciones recuperan información relacionada con **glStencilOp**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

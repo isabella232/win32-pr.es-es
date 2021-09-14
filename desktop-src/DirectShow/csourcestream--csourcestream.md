@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a2e5fb1a09fe089df7d90846e25870a2c1e42987c07361809d958d303f257fd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbf53184dadc42145758ab387d15e8b0a1bfe09d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072252"
 ---
 # <a name="csourcestreamcsourcestream-destructor"></a>Destructor CSourceStream.~CSourceStream
 
@@ -36,7 +36,7 @@ Método destructor.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El destructor quita automáticamente el pin del filtro propietario mediante una llamada [**a CSource::RemovePin**](csource-removepin.md).
 
@@ -51,7 +51,7 @@ El destructor quita automáticamente el pin del filtro propietario mediante una 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

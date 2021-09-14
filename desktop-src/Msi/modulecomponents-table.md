@@ -4,12 +4,12 @@ ms.assetid: def96d52-c9fa-4fac-b575-f9de8eb82d1c
 title: Tabla ModuleComponents
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25216833022ada7592511091c6954222d8ebf354e732c95a54e8857948963541
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ea2f47418b0387c7fa9d289d156fb0369f53adf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261191"
 ---
 # <a name="modulecomponents-table"></a>Tabla ModuleComponents
 
@@ -23,7 +23,7 @@ La tabla ModuleComponents tiene las columnas siguientes.
 |-----------|------------------------------|-----|----------|
 | Componente | [Identificador](identifier.md) | Y   | N        |
 | ModuleID  | [Identificador](identifier.md) | Y   | N        |
-| Lenguaje  | [Entero](integer.md)       | Y   | N        |
+| Idioma  | [Entero](integer.md)       | Y   | N        |
 
 
 
@@ -50,11 +50,11 @@ Identificador del módulo de combinación. Se trata de una clave externa para la
 <span id="Language"></span><span id="language"></span><span id="LANGUAGE"></span>Lengua
 </dt> <dd>
 
-El identificador de idioma describe el idioma predeterminado para el módulo de combinación. El identificador de idioma está en formato decimal, por ejemplo, inglés de EE. UU. es 1033. Clave externa de la [tabla ModuleSignature](modulesignature-table.md).
+El identificador de idioma describe el idioma predeterminado para el módulo de combinación. El identificador de idioma está en formato decimal, por ejemplo, inglés de EE. UU. es 1033. Clave externa a la [tabla ModuleSignature](modulesignature-table.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las transformaciones de lenguaje deben ser capaces de actualizar esta tabla si el módulo de combinación admite varios idiomas.
 

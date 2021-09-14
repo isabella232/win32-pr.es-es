@@ -16,18 +16,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 022d12b78416ce4ec84cf02ae8696f17bf5c315a207ae04f28a8980f6aaac073
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 455752375b76e574923ccdd96d1d05fc9142c16c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118544603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070356"
 ---
 # <a name="bits_job_transfer_policy-enumeration"></a>BITS_JOB_TRANSFER_POLICY enumeración
 
 La **enumeración BITS_JOB_TRANSFER_POLICY** define los valores de identificador correspondientes a las propiedades do.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -56,28 +56,28 @@ Especifica que el trabajo se transferirá cuando la conectividad esté disponibl
 <span id="BITS_JOB_TRANSFER_POLICY_NOT_ROAMING"></span><span id="bits_job_transfer_policy_not_roaming"></span>**BITS_JOB_TRANSFER_POLICY_NOT_ROAMING**
 </dt> <dd>
 
-Especifica que el trabajo se transferirá cuando la conectividad esté disponible, a menos que esa conectividad esté sujeta a los sobrecargos de itinerancia.
+Especifica que el trabajo se transferirá cuando la conectividad esté disponible, a menos que esa conectividad esté sujeta a los suplementos de itinerancia.
 
 </dd> <dt>
 
 <span id="BITS_JOB_TRANSFER_POLICY_NO_SURCHARGE"></span><span id="bits_job_transfer_policy_no_surcharge"></span>**BITS_JOB_TRANSFER_POLICY_NO_SURCHARGE**
 </dt> <dd>
 
-Especifica que el trabajo se transferirá solo cuando haya conectividad disponible que no esté sujeta a un sobrecargo.
+Especifica que el trabajo se transferirá solo cuando la conectividad esté disponible, lo que no está sujeto a un sobrecargo.
 
 </dd> <dt>
 
 <span id="BITS_JOB_TRANSFER_POLICY_STANDARD"></span><span id="bits_job_transfer_policy_standard"></span>**BITS_JOB_TRANSFER_POLICY_STANDARD**
 </dt> <dd>
 
-Especifica que el trabajo se transferirá solo cuando haya conectividad disponible, que no está sujeta a un sobrecargo ni a un agotamiento próximo.
+Especifica que el trabajo se transferirá solo cuando la conectividad esté disponible, lo que no está sujeto a un sobrecargo ni a un agotamiento próximo.
 
 </dd> <dt>
 
 <span id="BITS_JOB_TRANSFER_POLICY_UNRESTRICTED"></span><span id="bits_job_transfer_policy_unrestricted"></span>**BITS_JOB_TRANSFER_POLICY_UNRESTRICTED**
 </dt> <dd>
 
-Especifica que el trabajo se transferirá solo cuando haya conectividad disponible, lo que no impone costos ni límites de tráfico.
+Especifica que el trabajo se transferirá solo cuando la conectividad esté disponible, lo que no impone costos ni límites de tráfico.
 
 </dd> </dl>
 
@@ -85,11 +85,11 @@ Especifica que el trabajo se transferirá solo cuando haya conectividad disponib
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

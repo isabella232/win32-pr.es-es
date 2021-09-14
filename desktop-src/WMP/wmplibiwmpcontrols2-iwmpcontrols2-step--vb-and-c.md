@@ -1,11 +1,11 @@
 ---
-title: IWMPControls2 Step (método)
-description: El método Step hace que el elemento multimedia de vídeo actual se desplazará al fotograma siguiente o al fotograma anterior e inmovilizará la reproducción.
+title: Método de paso IWMPControls2
+description: El método step hace que el elemento multimedia de vídeo actual pase al siguiente fotograma o al fotograma anterior y con inmovilizar la reproducción.
 ms.assetid: c5cb720f-527f-45b6-ae8a-4da0e3e34618
 keywords:
-- método de paso de Windows Media Player
-- método de paso Windows Media Player, interfaz IWMPControls2
-- Interfaz IWMPControls2 Windows Media Player, método Step
+- método step Reproductor de Windows Media
+- Método step Reproductor de Windows Media , interfaz IWMPControls2
+- Interfaz IWMPControls2 Reproductor de Windows Media , método step
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 4cfb65dd20de506a8f303121b23668e2fbf14dc4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070747"
 ---
-# <a name="iwmpcontrols2step-method"></a>IWMPControls2:: Step (método)
+# <a name="iwmpcontrols2step-method"></a>IWMPControls2::step (método)
 
-El método **Step** hace que el elemento multimedia de vídeo actual se desplazará al fotograma siguiente o al fotograma anterior e inmovilizará la reproducción.
+El **método step** hace que el elemento multimedia de vídeo actual pase al siguiente fotograma o al fotograma anterior y con inmovilizar la reproducción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,10 +53,10 @@ Implements IWMPControls2.step
 
 <dl> <dt>
 
-*lStep* \[ de\]
+*lStep* \[ En\]
 </dt> <dd>
 
-Un valor **System. Int32** que indica el número de fotogramas que se van a pasar antes de la inmovilización. Debe establecerse en 1 o-1.
+Valor **System.Int32** que indica el número de fotogramas que hay que ir paso a paso antes de la inmovilización. Debe establecerse en 1 o -1.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Actualmente, este método solo admite los parámetros 1 o-1, por lo que solo se puede ejecutar un fotograma cada vez.
+Actualmente, este método solo admite los parámetros 1 o -1, por lo que solo puede ir paso a fotograma a la vez.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Actualmente, este método solo admite los parámetros 1 o-1, por lo que solo se 
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

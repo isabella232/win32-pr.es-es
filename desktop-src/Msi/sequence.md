@@ -4,18 +4,18 @@ ms.assetid: bd2dd544-eb1d-4b6c-862b-952c8edc7593
 title: Propiedad SEQUENCE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6c938fe556bb8dfd0ff4c1a9c732f68ea28d93e7d01617e1e0bbba582d0bcc3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55ba3e95e5ca7008c5654ebeec5e307002eb8582
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120040065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260919"
 ---
 # <a name="sequence-property"></a>Propiedad SEQUENCE
 
 La **propiedad SEQUENCE** especifica una tabla que tiene el mismo esquema que la tabla InstallExecuteSequence, es decir, las columnas Action, Condition y Sequence. Esta propiedad la usa la [acción SEQUENCE](sequence-action.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción SEQUENCE ejecuta las acciones de la tabla en el orden especificado por la columna Sequence de la tabla.
 

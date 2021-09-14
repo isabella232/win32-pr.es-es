@@ -4,12 +4,12 @@ description: En este tema se describen los valores devueltos más comunes y otro
 ms.assetid: e6deca92-42da-41ab-bfdb-75cbce3022bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71595f7a21d932ee961f9fa5f2a9443cf4d63e38de42f3d5b8c89fa8e9f84e83
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cd0f073c401682eb78d9fdf9270709a84ed77ae2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120122065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070648"
 ---
 # <a name="return-values-windows-accessibility-features"></a>Valores devueltos (Windows de accesibilidad)
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 05504b2ca1520320777b93c1c066e91edd5135798e4710c6514dbe858737760b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f1187705bfa678252237bd95d9a4cb21a0f97d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118402816"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261487"
 ---
 # <a name="cbaserenderernotifyendofstream-method"></a>Método CBaseRenderer.NotifyEndOfStream
 

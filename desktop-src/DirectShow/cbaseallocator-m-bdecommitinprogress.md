@@ -1,5 +1,5 @@
 ---
-description: Marca que indica si una operación de confirmación está en curso.
+description: Marca que indica si hay una operación de desa confirmación en curso.
 ms.assetid: aa008be1-8faa-4dc1-9641-37dcc59ce6c7
 title: CBaseAllocator::m_bDecommitInProgress miembro (Amfilter.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6d73514ffbe2b6e2430230e64ccfa9006809523a95cd3220ca078d4c4e40f41
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27aaf2766f67ebb77250522346cfe5c76acdf6d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070158"
 ---
 # <a name="cbaseallocatorm_bdecommitinprogress-member"></a>Miembro CBaseAllocator::m \_ bDecommitInProgress
 
-Marca que indica si una operación de confirmación está en curso. El valor es **TRUE después** de llamar al método [**CBaseAllocator::D ecommit,**](cbaseallocator-decommit.md) pero antes de que se hayan liberado todos los búferes. Si el valor es **TRUE**, se produce un error en el método [**CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md) Además, el asignador no debe eliminarse a sí mismo mientras el valor sea **TRUE.**
+Marca que indica si hay una operación de desa confirmación en curso. El valor es **TRUE después** de llamar al método [**CBaseAllocator::D ecommit,**](cbaseallocator-decommit.md) pero antes de que se hayan liberado todos los búferes. Si el valor es **TRUE**, se produce un error en el método [**CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md) Además, el asignador no debe eliminarse a sí mismo mientras el valor sea **TRUE.**
 
 ## <a name="syntax"></a>Sintaxis
 

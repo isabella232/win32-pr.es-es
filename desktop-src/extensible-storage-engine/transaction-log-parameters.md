@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 1d8f3ed19d01eece0b22e22b4a2a16d8d985751a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269583"
 ---
 # <a name="transaction-log-parameters"></a>Parámetros de registro de transacciones
 
@@ -63,9 +63,9 @@ Este parámetro establece el prefijo de tres letras utilizado para muchos de los
 
 Este parámetro configura cómo administra el motor de base de datos los archivos de registro de transacciones.
 
-Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no se necesitan porque se ha realizado una copia de seguridad completa de la base de datos. En este modo, es posible restaurar a partir de una copia de seguridad anterior y reproducir todos los archivos de registro de transacciones retenido, de modo que no se pierda ningún dato como resultado del desastre que forzó la restauración. Se requieren copias de seguridad completas periódicas para evitar que el disco se llene con archivos de registro de transacciones.
+Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no son necesarios porque se ha realizado una copia de seguridad completa de la base de datos. En este modo, es posible restaurar desde una copia de seguridad anterior y reproducir todos los archivos de registro de transacciones retenido, de modo que no se pierda ningún dato como resultado del desastre que forzó la restauración. Se requieren copias de seguridad completas periódicas para evitar que el disco se llene con archivos de registro de transacciones.
 
-Cuando el registro circular está en, solo los archivos de registro de transacciones que son más pequeños que el punto de control actual se conservan en el disco. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos. El problema es que ya no es posible una restauración de pérdida de datos cero.
+Cuando el registro circular está habilitado, solo los archivos de registro de transacciones que son más pequeños que el punto de control actual se conservan en el disco. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos. La solución es que ya no es posible una restauración de pérdida de datos cero.
 
 
 | Etiqueta | Value |
@@ -87,7 +87,7 @@ Cuando el registro circular está en, solo los archivos de registro de transacci
 *JET_paramCommitDefault*  
 16  
 
-Este parámetro controla la acción predeterminada realizada cuando se confirma la transacción más externa en una sesión. Cualquier opción válida que se pueda pasar a [JetCommitTransaction](./jetcommittransaction-function.md) también se puede convertir en el valor predeterminado para todas las sesiones de una instancia o para una sesión específica. Consulte [JetCommitTransaction para](./jetcommittransaction-function.md) obtener más detalles sobre estas opciones.
+Este parámetro controla la acción predeterminada realizada cuando se confirma la transacción más externa en una sesión. Cualquier opción válida que se pueda pasar a [JetCommitTransaction](./jetcommittransaction-function.md) también se puede convertir en la opción predeterminada para todas las sesiones de una instancia o para una sesión específica. Consulte [JetCommitTransaction para](./jetcommittransaction-function.md) obtener más detalles sobre estas opciones.
 
 Este parámetro tiene un impacto en la confiabilidad y el rendimiento de las transacciones. Consulte [JetCommitTransaction para](./jetcommittransaction-function.md) obtener más detalles.
 
@@ -104,7 +104,7 @@ Este parámetro tiene un impacto en la confiabilidad y el rendimiento de las tra
 | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>No</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -113,7 +113,7 @@ Este parámetro tiene un impacto en la confiabilidad y el rendimiento de las tra
 
 Cuando este parámetro es true y los archivos de registro de transacciones a los que apunta la ruta de acceso del archivo de registro (**JET_paramLogFilePath**) son una versión obsoleta, esos archivos de registro de transacciones se eliminarán automáticamente.
 
-**Windows 2000:**  Se debe tener cuidado con el uso de este parámetro al actualizar una base de datos de Windows NT a Windows 2000. Si la base de datos no está en un estado coherente y se eliminan los archivos de registro antiguos, se perderá el contenido de la base de datos.
+**Windows 2000:**  Debe tener cuidado con el uso de este parámetro al actualizar una base de datos de Windows NT a Windows 2000. Si la base de datos no está en un estado coherente y se eliminan los archivos de registro antiguos, se perderá el contenido de la base de datos.
 
 
 | Etiqueta | Value |
@@ -191,9 +191,9 @@ Cuando esta opción está presente, el motor de base de datos usará las siguien
 *JET_paramLogBuffers*  
 12  
 
-Este parámetro configurará la cantidad de memoria utilizada para almacenar en caché las entradas de registro antes de que se escriban en el archivo de registro de transacciones. La unidad de este parámetro es el tamaño del sector del volumen que contiene los archivos de registro de transacciones. El tamaño del sector es casi siempre de 512 bytes, por lo que es seguro suponer ese tamaño para la unidad.
+Este parámetro configurará la cantidad de memoria usada para almacenar en caché las entradas de registro antes de que se escriban en el archivo de registro de transacciones. La unidad de este parámetro es el tamaño de sector del volumen que contiene los archivos de registro de transacciones. El tamaño del sector es casi siempre de 512 bytes, por lo que es seguro asumir ese tamaño para la unidad.
 
-Este parámetro tiene un impacto en el rendimiento. Cuando el motor de base de datos está bajo una carga de actualización intensa, este búfer puede estar lleno muy rápidamente. Un tamaño de caché mayor para el archivo de registro de transacciones es fundamental para un buen rendimiento de actualización en una condición de carga tan alta. Se sabe que el valor predeterminado es demasiado pequeño para este caso.
+Este parámetro afecta al rendimiento. Cuando el motor de base de datos está bajo una carga de actualización intensa, este búfer puede estar lleno muy rápidamente. Un tamaño de caché mayor para el archivo de registro de transacciones es fundamental para un buen rendimiento de actualización en una condición de carga tan alta. Se sabe que el valor predeterminado es demasiado pequeño para este caso.
 
 **Windows XP y Windows 2000:**  En Windows XP y versiones anteriores, no se recomienda establecer este parámetro en un número de búferes mayor (en bytes) que la mitad del tamaño de un archivo de registro de transacciones.
 
@@ -234,7 +234,7 @@ Este parámetro configura el motor de base de datos para que tome un punto de co
 | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>No</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -284,7 +284,7 @@ Las propiedades del volumen host de los archivos de registro de transacciones y 
 | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>No</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -310,7 +310,7 @@ Este parámetro tiene un impacto en el rendimiento. Si el valor es muy grande, [
 | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>Sí</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -334,7 +334,7 @@ Este parámetro intenta optimizar el vaciado del búfer de registro causado por 
 | <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>No</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -382,7 +382,7 @@ Este parámetro indica la ruta de acceso del sistema de archivos relativa o abso
 | <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
 | <p>Afecta al rendimiento:</p> | <p>No</p> | 
 | <p>Afecta a los recursos:</p> | <p>No</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
@@ -406,16 +406,16 @@ Este parámetro intenta optimizar el vaciado del búfer de registro causado por 
 | <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
 | <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
 | <p>Afecta a los recursos:</p> | <p>No</p> | 
-| <p>Disponibilidad:</p> | <p>All</p> | 
+| <p>Disponibilidad:</p> | <p>Todo</p> | 
 
 
 
 *JET_paramLegacyFileNames*  
 136  
 
-Este parámetro se usa para especificar las características de compatibilidad de nomenclatura de archivos que se deben mantener con Windows Server 2003 y el esquema de nomenclatura de archivos anterior. Para obtener más información sobre los diferentes archivos y su nomenclatura, vea [Extensible Storage Engine Files](./extensible-storage-engine-files.md).
+Este parámetro se usa para especificar las características de compatibilidad de nomenclatura de archivos que se deben mantener con Windows Server 2003 y el esquema de nomenclatura de archivos anterior. Para obtener más información sobre los distintos archivos y su nomenclatura, vea [Extensible Storage Engine Files](./extensible-storage-engine-files.md).
 
-El JET_bitESE98FileNames garantiza que la extensión de archivo usada en los archivos de registro de transacciones y el archivo de punto de comprobación son los mismos que se usaban en Windows Server 2003. Tenga en cuenta que si se actualiza desde Windows Server 2003, todavía no es necesario especificar este bit, ya que el motor actualizará automáticamente las extensiones de archivo si JET_paramCircularLog está establecido en **true** o mantendrá la extensión de registro anterior si JET_paramCircularLog es **false**.
+El JET_bitESE98FileNames garantiza que la extensión de archivo usada en los archivos de registro de transacciones y el archivo de punto de comprobación son los mismos que los que se usan en Windows Server 2003. Tenga en cuenta que si se actualiza desde Windows Server 2003, todavía no es necesario especificar este bit, ya que el motor actualizará automáticamente las extensiones de archivo si JET_paramCircularLog está establecido en **true** o mantendrá la extensión de registro anterior si JET_paramCircularLog es **false**.
 
 **Nota**  Para establecer un bit, primero se debe recuperar el valor y, a continuación, "or" en el bit de compatibilidad deseado.
 
@@ -449,7 +449,7 @@ El JET_bitESE98FileNames garantiza que la extensión de archivo usada en los arc
 
 ## <a name="see-also"></a>Consulte también
 
-[Archivos extensibles Storage engine](./extensible-storage-engine-files.md)  
+[Archivos extensibles Storage motor](./extensible-storage-engine-files.md)  
 [JetCommitTransaction](./jetcommittransaction-function.md)  
 [JetCreateInstance](./jetcreateinstance-function.md)  
 [JetInit](./jetinit-function.md)  

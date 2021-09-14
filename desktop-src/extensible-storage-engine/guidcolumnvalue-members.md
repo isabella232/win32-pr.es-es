@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.guid
 ms:contentKeyID: 55103215
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 61ac3b6a8b9465749c1e94b7379f33c1cab14adc7d42688ddb7d1fcb6c4529e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: faea05993af82cb9a8eaaaf515086c59f10c02fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263623"
 ---
 # <a name="guidcolumnvalue-members"></a>Miembros GuidColumnValue
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

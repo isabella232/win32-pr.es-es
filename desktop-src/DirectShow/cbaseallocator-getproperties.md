@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 469eb062113ab2ee87e6462b0e0227eaba11673a239794c844125823c4b8a05f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: abf143b11b6dd67fca6c87f9a31ce69f18951311
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119832755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070170"
 ---
 # <a name="cbaseallocatorgetproperties-method"></a>Método CBaseAllocator.GetProperties
 

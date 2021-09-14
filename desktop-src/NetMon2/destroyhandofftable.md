@@ -1,7 +1,7 @@
 ---
 description: La función DestroyHandoffTable destruye una tabla de entrega creada con CreateHandoffTable.
 ms.assetid: 01ae9899-4f7c-4706-a2ce-9f55b112351d
-title: Función DestroyHandoffTable (Netmon. h)
+title: Función DestroyHandoffTable (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Nmapi.dll
 ms.openlocfilehash: 7afccfd1932c57b2a0d77dbb5467afc31726c6fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001862"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260495"
 ---
-# <a name="destroyhandofftable-function"></a>DestroyHandoffTable función)
+# <a name="destroyhandofftable-function"></a>Función DestroyHandoffTable
 
-La función **DestroyHandoffTable** destruye una tabla de entrega creada con **CreateHandoffTable**.
+La **función DestroyHandoffTable** destruye una tabla de entrega creada **con CreateHandoffTable.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ VOID WINAPI DestroyHandoffTable(
 
 <dl> <dt>
 
-*hTable* \[ de\]
+*hTable* \[ En\]
 </dt> <dd>
 
-Identificador de la tabla de entrega destruida.
+Identificador de la tabla de entrega destruyeda.
 
 </dd> </dl>
 
@@ -58,8 +58,8 @@ Ninguno.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

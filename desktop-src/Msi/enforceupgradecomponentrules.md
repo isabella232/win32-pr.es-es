@@ -4,12 +4,12 @@ ms.assetid: 0d39c059-d936-454c-aed8-efedd3da7473
 title: EnforceUpgradeComponentRules
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 882d7df0e794dfb89ab2211db1fada576bd6e056972810d582385c1404e625a8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5a2fc093c2f0beb4167374f93447d978bbca8eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158483"
 ---
 # <a name="enforceupgradecomponentrules"></a>EnforceUpgradeComponentRules
 
@@ -23,7 +23,7 @@ Cuando la propiedad o directiva se [](small-updates.md) ha establecido en 1, se 
 
     La nueva característica debe agregarse como una nueva característica hoja a un árbol de características existente.
 
-    En este caso, se [**puede cambiar el ProductCode**](productcode.md) del producto y las actualizaciones se pueden tratar como una [actualización principal.](major-upgrades.md)
+    En este caso, se puede cambiar [**el productCode**](productcode.md) del producto y las actualizaciones se pueden tratar como una [actualización principal.](major-upgrades.md)
 
 -   Quitar un componente de una característica.
 

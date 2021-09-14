@@ -4,12 +4,12 @@ ms.assetid: 6cd04d9a-5489-4fde-951e-aa962e9bd755
 title: ModuleInstallExecuteSequence (tabla)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6659c8223e41307766d67a4a5138699b46e03fbf3d50b514cb452bdc870c009c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d294ddfdf06028bf18d518e1086d37a0719f8c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120042864"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261140"
 ---
 # <a name="moduleinstallexecutesequence-table"></a>ModuleInstallExecuteSequence (tabla)
 
@@ -56,7 +56,7 @@ Cuando se [usan acciones estándar en](standard-actions.md) tablas de secuencia 
 <span id="BaseAction"></span><span id="baseaction"></span><span id="BASEACTION"></span>BaseAction
 </dt> <dd>
 
-La columna BaseAction puede contener una acción estándar, una acción personalizada especificada en la tabla de acciones personalizada del módulo de mezcla o un cuadro de diálogo especificado en la tabla de diálogos del módulo. La columna BaseAction es una clave en la columna Acción de esta tabla. No puede ser una clave externa en otra tabla o tabla de combinación en el archivo Windows Installer. Esto significa que todas las acciones estándar, acciones personalizadas o diálogos enumerados en la columna BaseAction también deben aparecer en la columna Acción de otro registro de esta tabla.
+La columna BaseAction puede contener una acción estándar, una acción personalizada especificada en la tabla de acciones personalizada del módulo de mezcla o un cuadro de diálogo especificado en la tabla de diálogos del módulo. La columna BaseAction es una clave en la columna Acción de esta tabla. No puede ser una clave externa en otra tabla o tabla de combinación en el Windows instalador. Esto significa que todas las acciones estándar, acciones personalizadas o diálogos enumerados en la columna BaseAction también deben aparecer en la columna Acción de otro registro de esta tabla.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Instrucción condicional que indica si se va a ejecutar la acción. Un valor NUL
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la [tabla ModuleInstallExecuteSequence](installexecutesequence-table.md) está presente, la [tabla InstallExecuteSequence](installexecutesequence-table.md) también debe estar presente en el módulo merge.
 

@@ -4,12 +4,12 @@ description: Direct2D proporciona métodos para representar texto con formato de
 ms.assetid: 4acd1aee-98bf-4ca3-b4dc-b73c96c6ca63
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ad297a8fdf2078c966989baf5e81c69cf515427340f8de8d073035fcf98f434
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58af17e15bcb9bd52461a2da3110982fb04e4c0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120048485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069978"
 ---
 # <a name="render-using-direct2d"></a>Representación mediante Direct2D
 
@@ -17,7 +17,7 @@ Direct2D proporciona métodos para representar texto con formato descrito solo p
 
 ## <a name="rendering-text-described-by-idwritetextformat"></a>Representación de texto descrito por IDWriteTextFormat
 
-Para representar una cadena mediante un objeto [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) para describir el formato de toda la cadena, use el método [**ID2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) proporcionado por [Direct2D.](../direct2d/direct2d-portal.md)
+Para representar una cadena mediante un objeto [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) para describir el formato de toda la cadena, use el método [**ID2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) proporcionado por [Direct2D](../direct2d/direct2d-portal.md).
 
 1.  Para definir el área del diseño de texto, recupere las dimensiones del área de representación y cree un rectángulo [de Direct2D](../direct2d/direct2d-portal.md) que tenga las mismas dimensiones.
     ```C++

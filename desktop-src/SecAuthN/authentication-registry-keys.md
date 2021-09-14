@@ -4,12 +4,12 @@ ms.assetid: cc5a4a7b-02b5-4ecd-967c-de0656f00846
 title: Claves del Registro de autenticación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3c245cdb27a0d661e7e6df82ed0d1d0ed35a59ea05bf74bf98ebd39ba3dc791
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ee2e42febe7516060dd61a7b751a33dcf62cb9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119883685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071319"
 ---
 # <a name="authentication-registry-keys"></a>Claves del Registro de autenticación
 
@@ -29,7 +29,7 @@ La **clave** de pedido contiene un valor único, **ProviderOrder**, que enumera 
 
 El **valor ProviderOrder** contiene una lista separada por comas de nombres de clave. Cada nombre de clave **de ProviderOrder** identifica un proveedor de red. Cuando MPR pasa por los proveedores, los llama en el orden en que aparecen en esta lista.
 
-El nombre del proveedor establecido en **ProviderOrder** también debe usarse como nombre de la clave del Registro que contiene información sobre ese proveedor. Las claves del Registro específicas del proveedor se crean como subclaves de la clave siguiente:
+El nombre del proveedor establecido **en ProviderOrder** también debe usarse como nombre de la clave del Registro que contiene información sobre ese proveedor. Las claves del Registro específicas del proveedor se crean como subclaves de la clave siguiente:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -57,7 +57,7 @@ HKEY_LOCAL_MACHINE
             ProviderName
 ```
 
-Donde *ProviderName* es el nombre del proveedor de red tal y como se especifica en el **valor ProviderOrder** de la **clave de** pedido. El **valor** group bajo la *clave ProviderName* debe establecerse en "NetworkProvider". Esto identifica el servicio como en el grupo de proveedores de red.
+Donde *ProviderName* es el nombre del proveedor de red como se especifica en el **valor ProviderOrder** de la **clave de** pedido. El **valor group** bajo la clave *ProviderName* debe establecerse en "NetworkProvider". Esto identifica el servicio como en el grupo de proveedores de red.
 
 También debe crear una subclave *de ProviderName*, **networkprovider**. Esta clave contiene los siguientes valores que describen el proveedor de red.
 
@@ -72,13 +72,13 @@ También debe crear una subclave *de ProviderName*, **networkprovider**. Esta cl
 
  
 
-Los siguientes valores solo los usan los proveedores de red que admiten las funciones de administración de credenciales, [**NPLogonNotify**](/windows/desktop/api/Npapi/nf-npapi-nplogonnotify) y [**NPPasswordChangeNotify**](/windows/desktop/api/Npapi/nf-npapi-nppasswordchangenotify).
+Los siguientes valores solo los usan los proveedores de red que admiten las funciones de administración de [**credenciales, NPLogonNotify**](/windows/desktop/api/Npapi/nf-npapi-nplogonnotify) y [**NPPasswordChangeNotify**](/windows/desktop/api/Npapi/nf-npapi-nppasswordchangenotify).
 
 
 
 | Value                              | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Clase**<br/>               | DWORD **que** identifica la clase o el tipo de funcionalidad de proveedor que admite este proveedor. Los valores pueden estar unidos por el **operador OR** cuando sea necesario. Los valores válidos para esto son WN \_ NETWORK \_ CLASS, WN \_ CREDENTIAL \_ CLASS, WN \_ PRIMARY \_ AUTHENT \_ CLASS y WN SERVICE \_ \_ CLASS.<br/> Aunque un proveedor puede admitir la funcionalidad del autenticador principal, se usará otro medio para determinar qué autenticador es principal.<br/> **Windows XP/2000:** No se admite el cambio de autenticadores principales, por lo que este valor se omite. <br/> |
+| **Clase**<br/>               | DWORD **que** identifica la clase o el tipo de funcionalidad de proveedor que admite este proveedor. Los valores pueden estar unidos por el **operador OR** cuando corresponda. Los valores válidos para esto son WN \_ NETWORK \_ CLASS, WN \_ CREDENTIAL \_ CLASS, WN \_ PRIMARY \_ AUTHENT \_ CLASS y WN SERVICE \_ \_ CLASS.<br/> Aunque un proveedor puede admitir la funcionalidad del autenticador principal, se usará otro medio para determinar qué autenticador es principal.<br/> **Windows XP/2000:** No se admite el cambio de autenticadores principales, por lo que este valor se omite. <br/> |
 | **AuthentProviderPath**<br/> | Este es el nombre de archivo completo del archivo DLL que exporta las funciones de administración de credenciales. Este valor es útil (pero no obligatorio) solo cuando el proveedor se identifica como un proveedor CREDENTIAL CLASS o \_ PRIMARY \_ AUTHENT \_ CLASS. Si este valor no está presente para un proveedor de esta clase, se espera que las funciones de administración de credenciales se exporten desde el archivo DLL identificado por el valor ProviderPath. Este valor solo se usa si es conveniente empaquetar las funciones de red y las funciones del administrador de credenciales en archivos DLL independientes.<br/>  |
 
 
@@ -96,17 +96,17 @@ HKEY_LOCAL_MACHINE
                Notifyees
 ```
 
-Este valor debe especificar la ruta de acceso a un archivo DLL que implementa la [conexión API de notificación](connection-notification-api.md). El nombre de este valor puede ser cualquier cosa que desee, siempre y cuando no entre en conflicto con nombres de valor preexistente.
+Este valor debe especificar la ruta de acceso a un archivo DLL que implementa la [conexión API de notificación](connection-notification-api.md). El nombre de este valor puede ser cualquier cosa que desee, siempre que no entre en conflicto con los nombres de valor preexistente.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestran las claves del Registro de un sistema que tiene dos proveedores de red instalados: LanmanWorkStation y AnotherNetSvc. AnotherNetSvc también es un administrador de credenciales. En el ejemplo, los nombres de clave están en negrita y los nombres de valor están en cursiva.
+En el ejemplo siguiente se muestran las claves del Registro de un sistema que tiene dos proveedores de red instalados: LanmanWorkStation y AnotherNetSvc. AnotherNetSvc también es un administrador de credenciales. En el ejemplo, los nombres de clave están en negrita y los nombres de valor en cursiva.
 
-**HKEY \_ ORDEN DE \_ LOCAL MACHINE** \\ **SYSTEM** \\ **CurrentControlSet** \\ **Control** \\  \\ **NetworkProvider**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SYSTEM** \\ **CurrentControlSet** \\ **Control** \\ **NetworkProvider** \\ **order**
 
 *ProviderOrder* = "LanmanWorkStation,AnotherNetSvc"
 
-**HKEY \_ NOTIFICACIÓN \_ DE LOCAL MACHINE** \\ **SYSTEM** \\ **CurrentControlSet** \\ **Control** \\ **NetworkProvider** \\ **Notifyees**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SYSTEM** \\ **CurrentControlSet** \\ **Control** \\ **NetworkProvider** \\ **Notifyees**
 
 *MyNotifyApp* = "c: \\ connect \\connect.dll"
 
@@ -128,7 +128,7 @@ En el ejemplo siguiente se muestran las claves del Registro de un sistema que ti
 
 *Name* = "Another Network"*ProviderPath* = "c: \\ another \\anet.dll"
 
-*Clase* = 0x00000003 (CLASE \_ WN NETWORK \_ \| WN \_ CREDENTIAL \_ CLASS)
+*Clase* = 0x00000003 (WN \_ NETWORK CLASS \_ \| WN \_ CREDENTIAL \_ CLASS)
 
 *AuthentProviderPath* = "c: \\ otro \\anetCM.dll"
 

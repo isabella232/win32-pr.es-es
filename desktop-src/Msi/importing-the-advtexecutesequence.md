@@ -4,18 +4,18 @@ ms.assetid: 269bd28c-fa45-42b8-a610-1c4c5fcabc19
 title: Importación de AdvtExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 518adfa315b5705806ba65caf09691316894ab664c32485dd3f4b6ce894be1a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e4d7622670973a622b1376456ecfef445684cf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074432"
 ---
 # <a name="importing-the-advtexecutesequence"></a>Importación de AdvtExecuteSequence
 
 La [tabla AdvtExecuteSequence](advtexecutesequence-table.md) enumera las acciones a las que llama el instalador cuando ejecuta la acción [ADVERTISE de nivel superior.](advertise-action.md) Vea [Grupo de tablas de procedimientos de](installation-procedure-tables-group.md)instalación , Uso de una tabla de [secuencia](using-a-sequence-table.md)y Ejemplo detallado de tabla [de secuencias](sequence-table-detailed-example.md).
 
-Si en [](importing-a-blank-database.md) la sección Importación de una base de datos en blanco usó uisample.msi desde el SDK del instalador de Windows, las tablas de secuencia de la copia de MNP2000.msi ya contienen las secuencias de acciones sugeridas descritas en Uso de una tabla [de secuencias](using-a-sequence-table.md). No es necesario realizar ningún cambio en estas secuencias para crear el Bloc de notas de instalación de ejemplo.
+Si en [](importing-a-blank-database.md) la sección Importación de una base de datos en blanco usó uisample.msi desde el SDK del instalador de Windows, las tablas de secuencia de la copia de MNP2000.msi ya contienen las secuencias de acciones sugeridas descritas en Uso de una tabla de [secuencias](using-a-sequence-table.md). No es necesario realizar ningún cambio en estas secuencias para crear el Bloc de notas de instalación de ejemplo.
 
 Use el editor de bases de datos para MNP2000.msi y escriba los datos siguientes en la [tabla AdvtExecuteSequence](advtexecutesequence-table.md).
 

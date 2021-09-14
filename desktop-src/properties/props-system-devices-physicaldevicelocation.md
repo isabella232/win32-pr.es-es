@@ -4,12 +4,12 @@ ms.assetid: 418b47b7-91fd-4da3-9162-8677f5fe2a49
 title: System.Devices.PhysicalDeviceLocation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47e729af44480b5d1188eeb3fce63744c8e808aa7114552ed36a10d17caf9dcc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1eccc6f3ece199934207d4a501406c9773df5f49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118728085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262679"
 ---
 # <a name="systemdevicesphysicaldevicelocation"></a>System.Devices.PhysicalDeviceLocation
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

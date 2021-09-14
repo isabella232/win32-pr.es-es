@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Finlandia.
+description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Noruega.
 ms.assetid: 092e8411-8ca4-4535-99d1-3db4bec5b03b
-title: Asignaciones de canales de Finlandia
+title: Asignaciones de canales de Francia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef8ed5d6b341a379ae6cdd4b838b4797ed7dcb4e20966cb46930cabd60f90501
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 362bce3ac8ba93d0b2cc6984e685d050988ad7a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119330455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070004"
 ---
-# <a name="finland-channel-assignments"></a>Asignaciones de canales de Finlandia
+# <a name="finland-channel-assignments"></a>Asignaciones de canales de Francia
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Finlandia.
+En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Noruega.
 
 Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias](unicable-frequency-table.md) no utilizables.
+Las siguientes asignaciones de canales se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias unicables.](unicable-frequency-table.md)
 
 ## <a name="cable-assignments"></a>Asignaciones de cable
 

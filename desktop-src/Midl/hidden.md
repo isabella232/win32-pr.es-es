@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a907a608376d9ad13f97427bd7a941b99221a0f14a6fa9fe35944ced10770b66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1718351ef84199b60ba720ed2f3569cfa78a0a50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118384050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159557"
 ---
 # <a name="hidden-attribute"></a>hidden (atributo)
 
@@ -75,7 +75,7 @@ Tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Nombre utilizado para invocar la función.
@@ -89,9 +89,9 @@ Cero o más parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **\[ atributo \]** oculto permite quitar miembros de la interfaz (al protegerlos para que no se usen más) al tiempo que se mantiene la compatibilidad con el código existente. Puede usar el atributo **\[ oculto en propiedades, \]** métodos y las instrucciones de biblioteca , [**dispinterface**](dispinterface.md), [**interface**](interface.md) [**y de**](library.md) la [**coclase**](coclass.md).
+El **\[ atributo \]** oculto permite quitar miembros de la interfaz (al protegerlos para que no se usen más) al tiempo que se mantiene la compatibilidad con el código existente. Puede usar el atributo **\[ oculto en \] propiedades,** métodos y las instrucciones de biblioteca , [**dispinterface**](dispinterface.md), [**interface**](interface.md)y [**de**](library.md) la [**coclase**](coclass.md).
 
 Cuando se especifica para una biblioteca, el **\[ atributo oculto \]** impide que se muestre toda la biblioteca. Este uso está diseñado para emplearlo con controles. Los hosts deben crear una biblioteca de tipos que ajuste el control con propiedades extendidas.
 

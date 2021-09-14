@@ -4,12 +4,12 @@ ms.assetid: 56828105-bd72-426d-833f-f756c577c77f
 title: Creación de la tabla CustomAction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b618da6e88718aa59483b3b25c007ff0b41eb89f6e1dc18a7eb31563632dc54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56fb7d8cf99a30200e6a5525e3516e2b888c1129
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159012"
 ---
 # <a name="authoring-the-customaction-table"></a>Creación de la tabla CustomAction
 
@@ -31,7 +31,7 @@ Escriba los registros de las cinco acciones personalizadas de ejemplo creadas en
 
  
 
-El código fuente de C++ para las bibliotecas de vínculos dinámicos se proporciona en el SDK Windows Installer. Use Process.cpp para crear el archivo Process.dll. Use Create.cpp para crear el archivo Create.dll. Use Remove.cpp para crear Remove.dll. Agregue estos archivos de biblioteca de vínculos dinámicos a la tabla Binaria.
+El código fuente de C++ para las bibliotecas de vínculos dinámicos se proporciona en el SDK Windows Installer. Use Process.cpp para crear el archivo Process.dll. Use Create.cpp para crear el archivo Create.dll. Use Remove.cpp para crear Remove.dll. Agregue estos archivos de biblioteca de vínculos dinámicos a la tabla Binary.
 
 [Tabla binaria](binary-table.md)
 

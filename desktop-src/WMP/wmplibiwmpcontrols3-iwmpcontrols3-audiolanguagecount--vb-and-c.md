@@ -1,10 +1,10 @@
 ---
-title: Propiedad audioLanguageCount de IWMPControls3
+title: IWMPControls3 audioLanguageCount, propiedad
 description: La propiedad audioLanguageCount obtiene el recuento de idiomas de audio admitidos.
 ms.assetid: 92e2093f-435b-4427-9f85-8c8ae76e0e2d
 keywords:
 - propiedad audioLanguageCount Reproductor de Windows Media
-- Propiedad audioLanguageCount Reproductor de Windows Media , interfaz IWMPControls3
+- Propiedad audioLanguageCount Reproductor de Windows Media interfaz , IWMPControls3
 - Interfaz IWMPControls3 Reproductor de Windows Media , propiedad audioLanguageCount
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca39d5a9ac261f8cbc322ae2737260baec95544bb7e6956df2444fc7d0958634
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd397dec80a5ccb5f2085e3231782555efde8e39
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118115892"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070748"
 ---
 # <a name="iwmpcontrols3audiolanguagecount-property"></a>Propiedad IWMPControls3::audioLanguageCount
 
 La **propiedad audioLanguageCount** obtiene el recuento de idiomas de audio admitidos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property audioLanguageCount As System.Int32
 
 **System.Int32 que** es el recuento de idiomas de audio admitidos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para Windows contenido basado en medios, las propiedades y los métodos relacionados con la selección de idioma solo admiten una única salida.
 
@@ -56,7 +56,7 @@ Para Windows contenido basado en medios, las propiedades y los métodos relacion
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

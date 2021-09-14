@@ -3,7 +3,7 @@ title: monthlyDayOfWeekScheduleType Complex Type
 description: Define los elementos secundarios y la información de secuenciación para el elemento ScheduleByMonthDayOfWeek.
 ms.assetid: fb4e5ba3-592b-47a4-bedf-5181d2b7a50f
 keywords:
-- tipo complejo monthlyDayOfWeekScheduleType Programador de tareas
+- Tipo complejo monthlyDayOfWeekScheduleType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e0e15a697c07de4df59f7762e4b6dc0d167b1fff8ab7477f77f5e59d6b654f7a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 782715aed5cbf59a98e996bfa18fdd7c1022227a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119575205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259143"
 ---
 # <a name="monthlydayofweekscheduletype-complex-type"></a>monthlyDayOfWeekScheduleType Complex Type
 
-Define los elementos secundarios y la información de secuenciación para el [**elemento ScheduleByMonthDayOfWeek.**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md)
+Define los elementos secundarios y la información de secuenciación para [**el elemento ScheduleByMonthDayOfWeek.**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md)
 
 ``` syntax
 <xs:complexType name="monthlyDayOfWeekScheduleType">
@@ -65,11 +65,11 @@ Define los elementos secundarios y la información de secuenciación para el [**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -3,7 +3,7 @@ title: WINBIO_BIR_DATA estructura (Winbio \_ types.h)
 description: Especifica el tamaño, en bytes, y el desplazamiento de un bloque de información biométrica.
 ms.assetid: 2f73eb1f-f1a1-4831-a8f7-eec28aa51645
 keywords:
-- WINBIO_BIR_DATA estructura Windows API de marco biométrico
+- WINBIO_BIR_DATA estructura Windows API de Marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01978cf55d90e217aa50fb8fad696f6af90b33ab9e59975a901daa99db633181
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41ebf7b157c5bd806442cdc120350a89ce646f9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118911058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071163"
 ---
 # <a name="winbio_bir_data-structure"></a>Estructura DE DATOS DE WINBIO \_ BIR \_
 
@@ -37,7 +37,7 @@ typedef struct _WINBIO_BIR_DATA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ El uso de desplazamientos en lugar de punteros permite una serialización sencil
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

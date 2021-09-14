@@ -4,12 +4,12 @@ ms.assetid: 3fa0bc36-7577-4b5a-b557-8ac42e8594a8
 title: LOCALE_SPARENT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11383e6fcdd216a1837d9f2f31e70a26821d394c3c56ea614b1df197bbe35c76
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f35a774c6a7f8eea631a2d6579b97058b30acdfe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274287"
 ---
 # <a name="locale_sparent"></a>LOCALE \_ SPARENT
 

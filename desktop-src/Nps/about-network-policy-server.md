@@ -5,12 +5,12 @@ ms.assetid: b5c6b365-34be-499d-96f2-014b7bf83f37
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ea465160885abbb7617456bafad82196ebb2206bcdc21563193388263c4caf9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33448f2ec0f633ae7b7675ac3f9d5eea0bf87081
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118362571"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071521"
 ---
 # <a name="about-network-policy-server"></a>Acerca del servidor de directivas de red
 

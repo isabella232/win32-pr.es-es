@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: b29c4839b8d722b1900dda004364b3e5c1537427925a14cee801d343e5a8986f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ff559bd1da335307a4362b6857ff127aadb81af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118144203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158806"
 ---
 # <a name="configurableitemcontext-property"></a>ConfigurableItem.Context, propiedad
 
@@ -40,16 +40,16 @@ propVal = ConfigurableItem.Context
 
 ## <a name="c"></a>C++
 
-Consulte [**la función get \_ Context.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_context)
+Vea [**get Context function \_ (Función get Context)**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_context)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

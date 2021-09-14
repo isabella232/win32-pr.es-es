@@ -1,8 +1,8 @@
 ---
-description: El método SWbemRefreshableItem. Remove quita el objeto SWbemRefreshableItem del objeto SWbemRefresher primario. Objeto SWbemRefreshableItem del objeto primario SWbemRefresher.
+description: El método SWbemRefreshableItem.Remove quita el objeto SWbemRefreshableItem del objeto SWbemRefresher primario. Objeto SWbemRefreshableItem del objeto SWbemRefresher primario.
 ms.assetid: 8d3f5e22-c343-4191-a20a-6bca2ec9b01a
 ms.tgt_platform: multiple
-title: Método SWbemRefreshableItem. Remove (Wbemdisp. h)
+title: Método SWbemRefreshableItem.Remove (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,17 +17,17 @@ api_type:
 api_location:
 - Wbemdisp.dll
 ms.openlocfilehash: 028bff202108481ce498be02c6014141313f27cc
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697934"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070380"
 ---
-# <a name="swbemrefreshableitemremove-method"></a>SWbemRefreshableItem. Remove (método)
+# <a name="swbemrefreshableitemremove-method"></a>Método SWbemRefreshableItem.Remove
 
-El método **SWbemRefreshableItem. Remove** quita el objeto [**SWbemRefreshableItem**](swbemrefreshableitem.md) del objeto [**SWbemRefresher**](swbemrefresher.md) primario.
+El **método SWbemRefreshableItem.Remove** quita el objeto [**SWbemRefreshableItem**](swbemrefreshableitem.md) del objeto [**SWbemRefresher**](swbemrefresher.md) primario.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ SWbemRefreshableItem.Remove( _
 
 <dl> <dt>
 
-*lFlags* \[ en, opcional\]
+*lFlags* \[ in, opcional\]
 </dt> <dd>
 
 Este parámetro debe establecerse en 0 (cero).
@@ -57,7 +57,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-**Códigos de error** Si el actualizador no tiene ningún elemento con el índice especificado, se genera **wbemErrNotFound** .
+**Códigos de error** Si el actualizador no tiene ningún elemento con el índice especificado, **se genera wbemErrNotFound.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,11 +67,11 @@ Este método no devuelve ningún valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemRefreshableItem<br/>                                                  |
-| IID<br/>                      | \_ISWBEMREFRESHABLEITEM IID<br/>                                                   |
+| IID<br/>                      | IID \_ ISWbemRefreshableItem<br/>                                                   |
 
 
 

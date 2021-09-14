@@ -1,17 +1,17 @@
 ---
-description: Uso de Decimation para optimizar el rendimiento de la mezcla
+description: Uso de Decimation para optimizar el rendimiento de la combinación
 ms.assetid: 94d4ce86-9d60-4fd4-ab01-851dc073680b
-title: Uso de Decimation para optimizar el rendimiento de la mezcla
+title: Uso de Decimation para optimizar el rendimiento de la combinación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2218566ab31d159f6d0ab74320aa45eb5780bdc3de151de8a7c642016441bacf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9e9e4ddfe3bbba3eb5eeab91b7cf0e8b9cbfa03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120049625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275068"
 ---
-# <a name="using-decimation-to-optimize-mixing-performance"></a>Uso de Decimation para optimizar el rendimiento de la mezcla
+# <a name="using-decimation-to-optimize-mixing-performance"></a>Uso de Decimation para optimizar el rendimiento de la combinación
 
 > [!IMPORTANT]
 > La optimización descrita en esta sección depende en gran medida del hardware subyacente. A menos que pueda garantizar qué tipo de hardware gráfico se usará con la aplicación, puede degradar gravemente la apariencia de la imagen de vídeo.

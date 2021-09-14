@@ -4,12 +4,12 @@ ms.assetid: ced9a614-7f00-47bc-a6e1-d0f8e4a60863
 title: System.CachedFileUpdaterContentIdForConflictResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8405efa825e7daf27282a0b82e025a47ffc5e3316903465caf3d21968671599
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5f5e1cfa176ad1b6af9fa3b9bb36150f589ec752
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119554405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262815"
 ---
 # <a name="systemcachedfileupdatercontentidforconflictresolution"></a>System.CachedFileUpdaterContentIdForConflictResolution
 
@@ -29,7 +29,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

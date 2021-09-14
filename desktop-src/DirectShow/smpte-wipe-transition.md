@@ -4,12 +4,12 @@ ms.assetid: 9271bd4b-57b1-4b1b-bfee-d6ae5f49a154
 title: Transición de borrado de SMPTE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40db8097b61d1b750f8e17067bda08f94a54504c8e990656b7416d84a9a1c089
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47de62c450ff0d75f72e5fac466801991b987834
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120050445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127275159"
 ---
 # <a name="smpte-wipe-transition"></a>Transición de borrado de SMPTE
 
@@ -32,7 +32,7 @@ Propiedades
 
 
 
-| Propiedad       | Tipo   | Valor predeterminado  | Descripción                                                                                                                                                                                                                                                                                                      |
+| Propiedad.       | Tipo   | Valor predeterminado  | Descripción                                                                                                                                                                                                                                                                                                      |
 |----------------|--------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | BorderColor    | long   | 0x000000 | Color del borde alrededor de los bordes del patrón de borrado. El valor de este atributo es un número hexadecimal con el formato 0x *RRGGBB,* donde *RR* es el valor rojo, *GG* es el valor verde y *BB* es el valor azul. (Por lo tanto, el rojo puro, el verde y el azul se 0xFF000, 0x00FF00 y 0x0000FF, respectivamente). |
 | BorderSoftness | long   | 0        | Ancho de la región desenfoque alrededor de los bordes del patrón de borrado. Especifique cero para ninguna región desenfoque.                                                                                                                                                                                                              |
@@ -50,7 +50,7 @@ Propiedades
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta transición admite los siguientes borrados SMPTE estándar:
 
@@ -59,34 +59,34 @@ Esta transición admite los siguientes borrados SMPTE estándar:
 | Number | Descripción                   | Number | Descripción                                 |
 |--------|-------------------------------|--------|---------------------------------------------|
 | 1      | Horizontal                    | 211    | Radial, izquierda-derecha, superior                     |
-| 2      | Vertical                      | 212    | Radial, arriba, derecha                      |
+| 2      | Vertical                      | 212    | Radial, arriba hacia abajo, derecha                      |
 | 3      | Parte superior izquierda                    | 213    | Radial, izquierda-derecha, superior inferior              |
 | 4      | Esquina superior derecha                   | 214    | Radial, arriba hacia abajo, izquierda-derecha                 |
 | 5      | Inferior derecha                   | 221    | Radial, superior                                 |
 | 6      | Inferior izquierda                    | 222    | Radial, derecha                               |
 | 7      | Cuatro esquinas                  | 223    | Radial, inferior                              |
 | 8      | Cuatro cuadrados                  | 224    | Radial, izquierda                                |
-| 21     | Puertas de cristal, verticales          | 225    | Radial, superior en el sentido de las agujas del reloj, parte inferior en el sentido de las agujas del reloj     |
-| 22     | Puertas de puertas, horizontales        | 226    | Radial, izquierda en el sentido de las agujas del reloj, derecha en el sentido de las agujas del reloj     |
-| 23     | Centro superior                    | 227    | Radial, superior en el sentido de las agujas del reloj, parte inferior en sentido de las agujas del reloj |
+| 21     | Puertas de cristal, verticales          | 225    | Radial, superior en el sentido de las agujas del reloj, inferior en el sentido de las agujas del reloj     |
+| 22     | Puertas traseras, horizontales        | 226    | Radial, izquierda en el sentido de las agujas del reloj, derecha en el sentido de las agujas del reloj     |
+| 23     | Centro superior                    | 227    | Radial, superior en el sentido de las agujas del reloj, inferior en el sentido de las agujas del reloj |
 | 24     | Centro derecho                  | 228    | Radial, izquierda en el sentido de las agujas del reloj, derecha en el sentido de las agujas del reloj |
 | 25     | Centro inferior                 | 231    | Radial, división superior                           |
-| 26     | Centro izquierdo                   | 232    | Radial, división derecha                         |
+| 26     | Centro izquierdo                   | 232    | Radial, división a la derecha                         |
 | 41     | Diagonal, NW a SE            | 233    | Radial, división inferior                        |
 | 42     | Diagonal, NE a SW            | 234    | Radial, división izquierda                          |
-| 43     | Triángulos, superior/inferior         | 235    | Radial, división superior inferior                    |
+| 43     | Triángulos, superior e inferior         | 235    | Radial, división de arriba abajo                    |
 | 44     | Triángulos, izquierda/derecha         | 236    | Radial, división izquierda-derecha                    |
-| 45     | Franja diagonal, SW a NE     | 241    | Radial, esquina superior izquierda                     |
+| 45     | Franja diagonal, de SW a NE     | 241    | Radial, esquina superior izquierda                     |
 | 46     | Franja diagonal, NW a SE     | 242    | Radial, esquina inferior izquierda                  |
 | 47     | Cross                         | 243    | Radial, esquina inferior derecha                 |
 | 48     | Diamond Box                   | 244    | Radial, esquina superior derecha                    |
-| 61     | Insapese, parte superior                    | 245    | Radial, superior izquierda, inferior derecha              |
-| 62     | Insase, derecha                  | 246    | Radial, inferior izquierda, superior derecha              |
-| 63     | Verón, parte inferior                 | 251    | Radial central, superior                          |
-| 64     | Insase, izquierda                   | 252    | Radial central, izquierda                         |
+| 61     | Condón, parte superior                    | 245    | Radial, superior izquierda, inferior derecha              |
+| 62     | Conste, derecho                  | 246    | Radial, inferior izquierda, superior derecha              |
+| 63     | Fondo, parte inferior                 | 251    | Radial central, superior                          |
+| 64     | Verón, izquierda                   | 252    | Radial central, izquierda                         |
 | 65     | V                             | 253    | Radial central, inferior                       |
 | 66     | V, derecha                      | 254    | Radial central, derecha                        |
-| 67     | V, invertido                   | 261    | Radial de cuadro, derecha                           |
+| 67     | V, invertido                   | 261    | Radial box, right                           |
 | 68     | V, izquierda                       | 262    | Radial box, top                             |
 | 71     | Sawtooth, left                | 263    | Radial central, superior e inferior                  |
 | 72     | Sawtooth, top                 | 264    | Radial central, izquierda, derecha                  |
@@ -100,9 +100,9 @@ Esta transición admite los siguientes borrados SMPTE estándar:
 | 106    | Triángulo, izquierda                | 311    | Matriz, esquina superior derecha en el sentido de las agujas del reloj                 |
 | 107    | Flecha arriba                | 312    | Matriz, esquina inferior derecha en el sentido de las agujas del reloj              |
 | 108    | Dirección de flecha, derecha             | 313    | Matriz, esquina inferior izquierda en el sentido de las agujas del reloj               |
-| 109    | Flecha hacia abajo              | 314    | Matriz, esquina superior izquierda en el sentido de las agujas del reloj              |
+| 109    | Flecha hacia abajo              | 314    | Matrix, anticlockwise top-left              |
 | 110    | Dirección de flecha, izquierda              | 315    | Matriz, esquina superior derecha a la izquierda de las agujas del reloj             |
-| 111    | Gono, arriba                  | 316    | Matriz, esquina inferior derecha en el sentido de las agujas del reloj          |
+| 111    | Gono, arriba                  | 316    | Matrix, anticlockwise bottom-right          |
 | 112    | Gono, abajo                | 317    | Matrix, anticlockwise bottom-left           |
 | 113    | Hexágono                       | 320    | Matriz, vertical superior izquierda, superior derecha        |
 | 114    | Hexágono, girado              | 321    | Matriz, vertical inferior izquierda, inferior derecha  |

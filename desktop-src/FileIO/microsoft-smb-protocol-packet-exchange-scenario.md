@@ -4,12 +4,12 @@ ms.assetid: f831d0de-0e38-4141-811c-892a1b5c4037
 title: Escenario de paquetes de protocolo SMB Exchange Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47415c6d49f6c1f7b924719d4d012277c03956c1af0d948b3ef66049c1203641
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8a03e2f75b00aa93e629b3e698631c5efde4694
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120048055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069908"
 ---
 # <a name="microsoft-smb-protocol-packet-exchange-scenario"></a>Escenario de paquetes de protocolo SMB Exchange Microsoft
 
@@ -35,8 +35,8 @@ En primer lugar, el cliente establece una conexión TCP de dúplex completo con 
 | **Paquete 5: SMB \_ COM \_ TREE CONNECT \_ \_ ANDX**<br/> **Dirección:** Servidor a cliente<br/> **Descripción:** Si se concede acceso al recurso compartido, el servidor devuelve el identificador de árbol de 16 bits (TID) que corresponde al recurso compartido de este paquete. Si el recurso compartido no existe o el usuario no tiene credenciales suficientes para acceder al recurso compartido, el servidor devolverá un código de error en este paquete y denegará el acceso al recurso compartido.<br/>                                                                                                                                                                                                 |
 | **Paquete 6: SMB \_ COM \_ OPEN \_ ANDX**<br/> **Dirección:** Cliente a servidor<br/> **Descripción:** El cliente solicita al servidor que abra un archivo en el recurso compartido al que se accede en nombre del cliente. Este paquete contiene el nombre del archivo que se va a abrir.<br/>                                                                                                                                                                                                                                                                                                                                                                   |
 | **Paquete 7: SMB \_ COM \_ OPEN \_ ANDX**<br/> **Dirección:** Servidor a cliente<br/> **Descripción:** Si se concede acceso al archivo, el servidor devuelve el identificador de archivo del archivo solicitado. Si el archivo no existe o el usuario no tiene credenciales suficientes para acceder al archivo, el servidor devolverá un código de error en este paquete y denegará el acceso al archivo.<br/>                                                                                                                                                                                                                                                  |
-| **Paquete 8: SMB \_ COM \_ READ \_ ANDX**<br/> **Dirección:** Cliente a servidor<br/> **Descripción:** El cliente solicita al servidor que lea los datos del archivo abierto en nombre del cliente y devuelva estos datos al cliente. El identificador de archivo que obtiene el cliente cuando se abrió el archivo se incluye en este paquete para identificar de qué archivo abierto debe leer los datos el servidor.<br/>                                                                                                                                                                                                                   |
-| **Paquete 9: SMB \_ COM \_ READ \_ ANDX**<br/> **Dirección:** Servidor a cliente<br/> **Descripción:** El servidor devuelve los datos de archivo solicitados en este paquete. No es probable que se produzca un error en este caso, dado que se ha concedido acceso al servidor, al recurso compartido y al archivo. Sin embargo, puede ocurrir en algunas situaciones: por ejemplo, si se cambia el acceso a un recurso compartido entre el momento en que se abre el archivo y el momento en que se lee.<br/>                                                                                                                                                                                                      |
+| **Paquete 8: SMB \_ COM \_ READ \_ ANDX**<br/> **Dirección:** Cliente a servidor<br/> **Descripción:** El cliente solicita al servidor que lea los datos del archivo abierto en nombre del cliente y devuelva estos datos al cliente. El identificador de archivo que obtiene el cliente cuando se abrió el archivo se incluye en este paquete con el fin de identificar de qué archivo abierto debe leer los datos el servidor.<br/>                                                                                                                                                                                                                   |
+| **Paquete 9: SMB \_ COM \_ READ \_ ANDX**<br/> **Dirección:** Servidor a cliente<br/> **Descripción:** El servidor devuelve los datos de archivo solicitados en este paquete. Es poco probable que se produzca un error, dado que se ha concedido acceso al servidor, al recurso compartido y al archivo. Sin embargo, puede ocurrir en algunas situaciones: por ejemplo, si se cambia el acceso a un recurso compartido entre el momento en que se abre el archivo y el momento en que se lee.<br/>                                                                                                                                                                                                      |
 
 
 

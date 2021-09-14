@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 28ffd9c35cf2ce0bed976531b18141e583c3e109c434a888df216bf1eab606a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4f228d91985fb9ba9d62bfc09e67d65eafc645a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118787249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070334"
 ---
 # <a name="texture2dgathercmpred-methods"></a>Métodos Texture2D::GatherCmpRed
 
@@ -36,7 +36,7 @@ Muestrea y compara un [**objeto Texture2D**](sm5-object-texture2d.md) y devuelve
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

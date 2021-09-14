@@ -4,18 +4,18 @@ ms.assetid: 4d0e4f01-0530-4202-bc78-b6e52670b8e5
 title: Tipo de acción personalizada 34
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4173633e7912897a3327d6d4c9c556d33f38bbd7f45cca6d4a1d96ef916b08ec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 76ba17c9a4dc5b35d8d03e9cca2707079cb15bf6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158692"
 ---
 # <a name="custom-action-type-34"></a>Tipo de acción personalizada 34
 
 Esta acción personalizada llama a un ejecutable iniciado con una línea de comandos. Para obtener más información, vea [Archivos ejecutables](executable-files.md).
 
-## <a name="source"></a>Origen
+## <a name="source"></a>Source
 
 El archivo ejecutable se genera a partir de un archivo. El campo Source de la [tabla CustomAction](customaction-table.md) contiene una clave en la [tabla Directory.](directory-table.md) La entrada de tabla Directory a la que se hace referencia se usa para resolver la ruta de acceso completa a un directorio de trabajo. No es necesario que sea la ruta de acceso al directorio que contiene el archivo ejecutable.
 
@@ -53,7 +53,7 @@ Incluya bits de marca opcionales en la columna Type de la [tabla CustomAction](c
 
 Las acciones personalizadas que son [archivos ejecutables](executable-files.md) deben devolver un valor de 0 para que se ejecute correctamente. El instalador interpreta cualquier otro valor devuelto como error. Para omitir los valores devueltos, establezca la marca de bits **msidbCustomActionTypeContinue** en el campo Type de la [tabla CustomAction.](customaction-table.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una acción personalizada que inicia un ejecutable toma una línea de comandos, que normalmente contiene propiedades designadas dinámicamente. Si también se trata [de](deferred-execution-custom-actions.md)una acción personalizada de ejecución aplazada, el instalador usa [**CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) o [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) para crear el proceso cuando se invoca la acción personalizada desde el script de instalación.
 

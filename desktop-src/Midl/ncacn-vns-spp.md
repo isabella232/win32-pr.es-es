@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8409e7e9e0bfc01545ac73673f0653c5a4940c65422223233ec5005f5c9fc02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84e72cd17ae65fbffc2cef280f15d12ba0ddbdbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119560285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159463"
 ---
 # <a name="ncacn_vns_spp-attribute"></a>Atributo ncacn \_ vns \_ spp
 
@@ -41,15 +41,15 @@ Especifica el nombre de StreetTalk del servidor. El nombre tiene el formato item
 *port-name* 
 </dt> <dd>
 
-Especifica un puerto de SPP de Banyan Queryan. El intervalo válido para los puntos de conexión estáticos es de 250 a 511.
+Especifica un puerto SPP de Banyan Sarras. El intervalo válido para los puntos de conexión estáticos es de 250 a 511.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para usar el protocolo de transporte **ncacn \_ vns \_ spp** en aplicaciones distribuidas que se ejecutan en Windows 2000, debe instalarse el software cliente de Enterprise De Banyan adecuado. Después de la instalación, **abra Panel de control**, elija Configuración y **Agregar** y, a continuación, seleccione Servicios RPC **de \| Banyan de servicio para \| Banyan.** La compatibilidad con clientes de 16 bits requiere el software adecuado de Ques. Para obtener más información sobre el producto Enterprise cliente de Banyan y el software de 16 bits de Banyan, póngase en contacto con Banyan.
+Para usar el protocolo de transporte **ncacn \_ vns \_ spp** en aplicaciones distribuidas que se ejecutan en Windows 2000, se debe instalar el software cliente de Enterprise de Banyan adecuado. Después de la instalación, **abra Panel de control**, elija **Configuración y** Agregar y, a continuación, seleccione Servicios RPC de **\| Banyan de servicio para \| Banyan.** La compatibilidad con los clientes de 16 bits requiere el software adecuado de Trass. Para obtener más información sobre el producto Enterprise cliente de Banyan y el software de 16 bits de Banyan, póngase en contacto con Banyan.
 
-La sintaxis de la cadena de puerto de transporte de SPP de BanyanTaxis, como todas las cadenas de puerto, se define independientemente de la especificación de IDL. El compilador realiza alguna comprobación de sintaxis, pero no garantiza que la especificación del punto de conexión sea correcta. Algunos errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
+La sintaxis de la cadena de puerto de transporte de SPP de Banyan Queryan, al igual que todas las cadenas de puerto, se define independientemente de la especificación de IDL. El compilador realiza alguna comprobación de sintaxis, pero no garantiza que la especificación del extremo sea correcta. Algunos errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
 
 > [!Note]  
 > Esta familia de protocolos no se admite en Windows XP.
@@ -74,7 +74,7 @@ interface iface
 
 <dl> <dt>
 
-[**Extremo**](endpoint.md)
+[**endpoint**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)

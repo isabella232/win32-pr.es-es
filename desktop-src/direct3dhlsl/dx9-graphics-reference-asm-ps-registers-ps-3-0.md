@@ -14,11 +14,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: e1cd0173beabc8fbe21ad15e88e23fc1b6e84892
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405498"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263927"
 ---
 # <a name="ps_3_0-registers"></a>ps \_ 3 \_ 0 Registros
 
@@ -32,9 +32,9 @@ Los registros de entrada (v ) ahora son de punto flotante completo y los registr
 
 ### <a name="face-register"></a>Face Register
 
-El registro facial (vFace) es nuevo para este modelo. Se trata de un registro escalar de punto flotante que con el tiempo contendrá el área primitiva. Sin \_ embargo, en ps \_ 3 0, solo el signo de este registro es válido. Por lo tanto, si el valor es menor que cero (el bit de signo se establece en negativo), la primitiva es la cara posterior (el área es negativa, en sentido contrario a las agujas del reloj). Por lo tanto, en ps 3 0 solo tiene sentido comparar este registro con \_ \_ 0 (> 0 o < 0). Dentro del sombreador de píxeles, la aplicación puede tomar una decisión sobre qué técnica de iluminación usar. La iluminación en dos lados se puede lograr de esta manera. Este registro requiere una declaración, por lo que el uso no declarado se marcará como un error. Para las líneas y las primitivas de punto, este registro es indefinido. El registro facial solo se puede usar como condición con las instrucciones [ \_ siguientes:](break-comp---ps.md) [setp comp - \_ ps](setp-comp---ps.md), if [comp - \_ ps](if-comp---ps.md)o break comp - ps .
+El registro facial (vFace) es nuevo para este modelo. Se trata de un registro escalar de punto flotante que con el tiempo contendrá el área primitiva. Sin \_ embargo, en ps \_ 3 0, solo el signo de este registro es válido. Por lo tanto, si el valor es menor que cero (el bit de signo se establece en negativo), la primitiva es la cara posterior (el área es negativa, en sentido contrario a las agujas del reloj). Por lo tanto, en ps 3 0 solo tiene sentido comparar este registro con \_ \_ 0 (> 0 o < 0). Dentro del sombreador de píxeles, la aplicación puede tomar una decisión sobre qué técnica de iluminación usar. La iluminación en dos lados se puede lograr de esta manera. Este registro requiere una declaración, por lo que el uso no declarado se marcará como un error. Para las líneas y las primitivas de punto, este registro es indefinido. El registro facial solo se puede usar como condición con las siguientes instrucciones: [setp \_ comp - ps](setp-comp---ps.md), if comp - [ \_ ps](if-comp---ps.md)o [break comp - \_ ps](break-comp---ps.md).
 
-### <a name="loop-counter-register"></a>Registro del contador de bucles
+### <a name="loop-counter-register"></a>Registro de contadores de bucles
 
 El [registro de contadores de](dx9-graphics-reference-asm-ps-registers-loop-counter.md) bucles (aL) es nuevo para este modelo. Se incrementa automáticamente en cada ejecución del [bucle - ps](loop---ps.md) / [endloop - ps](endloop---ps.md) block. Se puede usar en el bloque para el direccionamiento relativo si es necesario. No es válido usar el registro de contadores de bucles fuera del bucle.
 
@@ -48,7 +48,7 @@ El registro de posición (vPos) es nuevo para este modelo. Contiene los píxeles
 
 | Registrarse | Nombre                                                                                      | Count | L/E | \# Lectura de puertos | \# Lecturas/inst | Dimensión | RelAddr | Valores predeterminados   | Requiere DCL |
 |----------|-------------------------------------------------------------------------------------------|-------|-----|---------------|---------------|-----------|---------|------------|--------------|
-| V\#      | [Registro de entrada](dx9-graphics-reference-asm-ps-registers-input-color.md)                 | 10    | R   | 1             | Sin límite     | 4         | aL      | Ninguno       | Sí          |
+| V\#      | [Registro de entrada](dx9-graphics-reference-asm-ps-registers-input-color.md)                 | 10    | R   | 1             | Sin límite     | 4         | aL      | None       | Sí          |
 | R\#      | [Registro temporal](dx9-graphics-reference-asm-ps-registers-temporary.md)               | 32    | L/E | 3             | Sin límite     | 4         | No      | None       | No           |
 | c\#      | [Registro flotante constante](dx9-graphics-reference-asm-ps-registers-constant-float.md)     | 224   | R   | 1             | Sin límite     | 4         | No      | 0000       | No           |
 | i\#      | [Registro de enteros constantes](dx9-graphics-reference-asm-ps-registers-constant-integer.md) | 16    | R   | 1             | 1             | 4         | No      | 0000       | No           |

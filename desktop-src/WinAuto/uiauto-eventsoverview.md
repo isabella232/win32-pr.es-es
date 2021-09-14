@@ -15,12 +15,12 @@ keywords:
 - Eventos de cambio de escritorio global
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ec99a479d390c72232f28521394b2d178f1ad76c913d72ec80aa0a4c93e0d57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9ddd61ed72ae0e92a13f6b59b493427fd7be421
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119859575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070523"
 ---
 # <a name="ui-automation-events-overview"></a>Información general sobre eventos de UI Automation
 
@@ -36,9 +36,9 @@ Los eventos de Automatización de la interfaz de usuario pueden clasificarse de 
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cambio de propiedad       | Se genera cuando cambia una propiedad Automatización de la interfaz de usuario elemento o patrón de control. Por ejemplo, si un cliente necesita supervisar un control de casilla de aplicación, puede registrarse para escuchar un evento de cambio de propiedad en la propiedad [**IUIAutomationTogglePattern::CurrentToggleState.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtogglepattern-get_currenttogglestate) Cuando el control de casilla se activa o desactiva, el proveedor genera el evento y el cliente puede actuar según sea necesario. |
 | Acción de elemento        | Se produce cuando un cambio en la interfaz de usuario es el resultado de una actividad de programación o usuario final, por ejemplo, cuando se hace clic en un botón o se invoca mediante [**IUIAutomationInvokePattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationinvokepattern).                                                                                                                                                                                                                                                     |
-| Cambio de estructura      | Se genera cuando cambia la estructura del Automatización de la interfaz de usuario árbol. La estructura cambia cuando se hacen visibles, ocultan o quitan elementos nuevos de la interfaz de usuario en el escritorio.                                                                                                                                                                                                                                                                                                              |
+| Cambio de estructura      | Se genera cuando cambia la estructura del Automatización de la interfaz de usuario de datos. La estructura cambia cuando se hacen visibles, ocultan o quitan elementos nuevos de la interfaz de usuario en el escritorio.                                                                                                                                                                                                                                                                                                              |
 | Cambio de escritorio global | Se genera cuando se producen acciones de interés global para el cliente, por ejemplo, cuando el foco cambia de un elemento a otro o cuando se cierra una ventana.                                                                                                                                                                                                                                                                                                                      |
-| Notificación          | Se genera cuando una aplicación llama a [**la función UiaRaiseNotificationEvent.**](https://www.bing.com/search?q=**UiaRaiseNotificationEvent**) [**NotificationKind**](/windows/win32/api/uiautomationcore/ne-uiautomationcore-notificationkind) indica el tipo de notificación.                                                                                                                                                                                                                                                 |
+| Notification          | Se genera cuando una aplicación llama a [**la función UiaRaiseNotificationEvent.**](https://www.bing.com/search?q=**UiaRaiseNotificationEvent**) [**NotificationKind**](/windows/win32/api/uiautomationcore/ne-uiautomationcore-notificationkind) indica el tipo de notificación.                                                                                                                                                                                                                                                 |
 
 
 

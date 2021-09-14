@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8082cb19b275f8ebfebd0f2c9beda0eb9854699bf92f29e9d994ee4391e628f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6a71c65efd97c48eed58fb7d0b5aa8fcc2f178e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120084105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070041"
 ---
 # <a name="csourcefindpinnumber-method"></a>Método CSource.FindPinNumber
 

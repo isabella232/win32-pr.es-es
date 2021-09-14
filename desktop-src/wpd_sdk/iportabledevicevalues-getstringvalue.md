@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7d8a9703a359a2de13ec96ff3faf46ea9e49fb1fc467cdade56d799503f1b8cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fdb4741c36445af686b7721e1f5f04dd3e45f1e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262076"
 ---
 # <a name="iportabledevicevaluesgetstringvalue-method"></a>IPortableDeviceValues::GetStringValue (método)
 
@@ -86,7 +86,7 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de evento
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

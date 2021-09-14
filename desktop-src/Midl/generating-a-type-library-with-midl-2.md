@@ -6,12 +6,12 @@ keywords:
 - Lenguaje de definición de interfaz de Microsoft MIDL, tareas, generación de una biblioteca de tipos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8d9084631dc30eb1cff7f61f6f3f090f95bb92cff357b3902cb0959f2c4142f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85f6e8f7ea6f65bc503c08872c9199ff3d5fd828
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159572"
 ---
 # <a name="generating-a-type-library-with-midl"></a>Generar una biblioteca de tipos con MIDL
 

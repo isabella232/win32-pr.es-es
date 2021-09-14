@@ -4,12 +4,12 @@ ms.assetid: fb6be33c-9d6c-48b2-a4da-31c60af8d972
 title: Funciones de TxF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 770f61430c0839d47fbacda5d3a1d882f324fcf3e9771b0d1b75d8261531de8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b59fa3c9a1323ce77c97ee36390190ea6301d71d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950984"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069814"
 ---
 # <a name="txf-functions"></a>Funciones de TxF
 

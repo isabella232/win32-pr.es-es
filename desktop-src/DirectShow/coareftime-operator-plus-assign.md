@@ -1,5 +1,5 @@
 ---
-description: Este operador agrega dos veces de referencia y establece este objeto en el resultado.
+description: Este operador agrega dos tiempos de referencia y establece este objeto en el resultado.
 ms.assetid: 6d29014b-0e31-497e-8326-e3fefc022227
 title: Método COARefTime.operator+= (Ctlutil.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dcb635e3026cec18aa5bea199b6712c15c6472d81e9b6707267d15d7afcfa6ab
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6a03d9e98c3c2f2ca09c3f90f2cb0867d976e02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119585565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070079"
 ---
 # <a name="coareftimeoperator-method"></a>Método COARefTime.operator+=
 
-Este operador agrega dos veces de referencia y establece este objeto en el resultado.
+Este operador agrega dos tiempos de referencia y establece este objeto en el resultado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ COARefTime& operator+=(
 *rt* \[ Ref\]
 </dt> <dd>
 
-Referencia al **objeto COARefTime que** se agregará.
+Referencia al **objeto COARefTime** que se agregará.
 
 </dd> </dl>
 

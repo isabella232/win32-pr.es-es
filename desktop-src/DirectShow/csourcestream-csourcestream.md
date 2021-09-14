@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e02827c74ef4c5461a5777221e1839846b855a4b2f4cd27d97ce913399787ba9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75d94bb89ca109c2a7974c294153d46235f92f23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072240"
 ---
 # <a name="csourcestreamcsourcestream-constructor"></a>Constructor CSourceStream.CSourceStream
 
@@ -55,7 +55,7 @@ Puntero a una cadena que contiene el nombre de depuración del pin.
 *Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto . El valor solo se cambia si se produce un error.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método. Inicialice el valor en S \_ OK antes de crear el objeto. El valor solo se cambia si se produce un error.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Puntero a una cadena que contiene el nombre del pin.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La cadena especificada en el *parámetro pObjectName* solo se usa con fines de depuración. Para obtener más información, vea [**CBaseObject**](cbaseobject.md).
 
@@ -92,7 +92,7 @@ El constructor agrega automáticamente el pin al filtro propietario, llamando a 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

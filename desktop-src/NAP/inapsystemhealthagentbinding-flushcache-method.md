@@ -3,7 +3,7 @@ title: Método INapSystemHealthAgentBinding FlushCache (NapSystemHealthAgent.h)
 description: Un SHA llama a para vaciar su caché de SoH.
 ms.assetid: a771ce03-1922-4e2d-9490-7ee9f693857c
 keywords:
-- Nap del método FlushCache
+- Método NAP de FlushCache
 - Método NAP de FlushCache, interfaz INapSystemHealthAgentBinding
 - INapSystemHealthAgentBinding interface NAP , FlushCache method
 topic_type:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca721f2176b5e600c4afc7d71cd23d0507083d3c112adb4cb36af3b8734da0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ead6e496d220619439b80fdc5c7601675fdb7ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071662"
 ---
 # <a name="inapsystemhealthagentbindingflushcache-method"></a>INapSystemHealthAgentBinding::FlushCache (método)
 
@@ -62,7 +62,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 NapAgent mantiene una memoria caché de los SOH recientes proporcionados por diferentes SHA. Esta memoria caché es útil para optimizar el rendimiento en tiempo de arranque, cuando es posible que las SHA se puedan enlazar al sistema o no.
 
@@ -76,8 +76,8 @@ Sha debe llamar a [**Initialize antes**](inapsystemhealthagentbinding-initialize
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

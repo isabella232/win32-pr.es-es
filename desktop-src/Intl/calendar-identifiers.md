@@ -4,12 +4,12 @@ ms.assetid: ba2e841e-e24e-476a-851e-a29b3af4f04d
 title: Identificadores de calendario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5f9f21aeff1143c4f981e3bfae20214f1b86e86307f7f32b103a19ef99b9803
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ab9b931aea4a186af0849dfe8f6642c53744d364
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274820"
 ---
 # <a name="calendar-identifiers"></a>Identificadores de calendario
 
@@ -51,7 +51,7 @@ Gregoriano (cadenas en inglés siempre)
 
 CAL \_ JAPAN
 
-Era del japonés
+Era japonesa del japonés
 
 4
 

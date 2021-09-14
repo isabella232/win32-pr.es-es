@@ -3,7 +3,7 @@ title: source (atributo)
 description: El atributo \ source\ indica que un miembro de una coclase, propiedad o método es un origen de eventos. Para un miembro de una coclase, este atributo significa que se llama al miembro en lugar de implementarse.
 ms.assetid: fbd5411a-e614-4643-810a-f3765e7ec16d
 keywords:
-- MIDL del atributo de origen
+- atributo de origen MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08f7039505846d7a35bbd0e077456905c0d29ad13be398fe673ca5c1f8da25e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 621e97fd20b6b96d275044dc7cbe701faee29712
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159379"
 ---
 # <a name="source-attribute"></a>source (atributo)
 
-El **\[ atributo \]** source indica que un miembro de una [**coclase**](coclass.md), propiedad o método es un origen de eventos. Para un miembro de una **coclase**, este atributo significa que se llama al miembro en lugar de implementarse.
+El **\[ atributo \]** source indica que un miembro de una [**clase ,**](coclass.md)propiedad o método es un origen de eventos. Para un miembro de una **coclase**, este atributo significa que se llama al miembro en lugar de implementarse.
 
 ``` syntax
 [
@@ -64,7 +64,7 @@ Cero o más atributos MIDL.
 *statement-type* 
 </dt> <dd>
 
-Puede ser [**interface**](interface.md) o [**dispinterface**](dispinterface.md).
+Puede ser [**interface**](interface.md) o [**dispinterface.**](dispinterface.md)
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo del objeto que devuelve el método. Este objeto es un origen de eventos.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Nombre de un método en una [**interfaz o**](interface.md) [**dispinterface**](dispinterface.md).
@@ -96,9 +96,9 @@ Cero o más parámetros de método.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En una propiedad o método, el atributo **\[ de \]** origen indica que el miembro devuelve un objeto o VARIANT que es un origen de eventos. El objeto implementa **IConnectionPointContainer**.
+En una propiedad o método, el atributo **\[ de \]** origen indica que el miembro devuelve un objeto o VARIANT que es un origen de eventos. El objeto implementa **IConnectionPointContainer.**
 
 ### <a name="flags"></a>Marcas
 

@@ -4,7 +4,7 @@ description: El método playItem reproduce el elemento multimedia especificado. 
 ms.assetid: ddd4e4f7-475c-4964-a623-9123ed66be8e
 keywords:
 - Método playItem Reproductor de Windows Media
-- Método playItem Reproductor de Windows Media , interfaz IWMPControls
+- Método playItem Reproductor de Windows Media interfaz , IWMPControls
 - Interfaz IWMPControls Reproductor de Windows Media , método playItem
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fabab78fe60120110f72176885e3b5825699b83782272dfbef0b48c165d1d02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b2ac11f93409128eccc88c1d916144615d77476
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119761035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070752"
 ---
 # <a name="iwmpcontrolsplayitem-method"></a>IWMPControls::p layItem (método)
 
@@ -64,11 +64,11 @@ Interfaz **WMPLib.IWMPMedia** al elemento multimedia.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El elemento multimedia se cargará y reproducirá automáticamente, independientemente del valor de la **propiedad IWMPSettings.autoStart.** Para cargar un elemento sin reproducirlo automáticamente, establezca **IWMPSettings.autoStart** en **false** y asigne un valor a **AxWindowsMediaPlayer.URL**, después del cual se puede llamar a **IWMPControls.play** para empezar a reproducir el elemento.
 
-Nota
+Nota:
 
 **playItem solo** funciona con elementos de **AxWindowsMediaPlayer.currentPlaylist.** No se admite la llamada a **playItem** con una referencia a un elemento multimedia guardado.
 

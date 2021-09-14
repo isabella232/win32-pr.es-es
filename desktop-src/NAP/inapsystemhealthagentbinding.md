@@ -15,14 +15,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38fe66a5cd6883114ff46da3e98174d299f1813e670ed5ce67ee3843dc210d18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d38d1331996e34c6879fc2e98ce566ce6802527a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117799190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071652"
 ---
-# <a name="inapsystemhealthagentbinding-interface"></a>Interfaz INapSystemHealthAgentBinding
+# <a name="inapsystemhealthagentbinding-interface"></a>INapSystemHealthAgentBinding (interfaz)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
@@ -36,9 +36,9 @@ ms.locfileid: "117799190"
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz INapSystemHealthAgentBinding** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSystemHealthAgentBinding** también tiene estos tipos de miembros:
+La **interfaz INapSystemHealthAgentBinding** hereda de [**la interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSystemHealthAgentBinding** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -51,18 +51,18 @@ La **interfaz INapSystemHealthAgentBinding** tiene estos métodos.
 | Método                                                                                                                     | Descripción                                                                                        |
 |:---------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [**INapSystemHealthAgentBinding::FlushCache**](inapsystemhealthagentbinding-flushcache-method.md)                         | Lo llama un SHA para vaciar su caché de SoH.<br/>                                                |
-| [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) | Llamadas por SHA para determinar el estado de aislamiento del sistema.<br/>                                 |
-| [**INapSystemHealthAgentBinding::Initialize**](inapsystemhealthagentbinding-initialize-method.md)                         | Inicializa sha y enlaza el SHA al servicio NapAgent. <br/>                         |
+| [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) | Lo llaman las SHA para determinar el estado de aislamiento del sistema.<br/>                                 |
+| [**INapSystemHealthAgentBinding::Initialize**](inapsystemhealthagentbinding-initialize-method.md)                         | Inicializa sha y enlaza sha al servicio NapAgent. <br/>                         |
 | [**INapSystemHealthAgentBinding::NotifySoHChange**](inapsystemhealthagentbinding-notifysohchange-method.md)               | Lo llaman las SHA cuando su SoH cambia.<br/>                                                  |
-| [**INapSystemHealthAgentBinding::Uninitialize**](inapsystemhealthagentbinding-uninitialize-method.md)                     | Lo llaman los SHA para que NapAgent libere todas sus referencias a punteros SHA COM.<br/> |
+| [**INapSystemHealthAgentBinding::Uninitialize**](inapsystemhealthagentbinding-uninitialize-method.md)                     | Lo llaman los SHA para hacer que NapAgent libere todas sus referencias a punteros SHA COM.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Todas las API de esta interfaz **devolverán RPC \_ E \_ DISCONNECTED** si napagent está detenido. Este objeto se recuperará automáticamente y se volverá a conectar a NapAgent, una vez que se reinicie.
+Todas las API de esta interfaz **devolverán RPC \_ E \_ DISCONNECTED** si napAgent está detenido. Este objeto se recuperará automáticamente y se volverá a conectar a NapAgent, una vez que se reinicie.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ Todas las API de esta interfaz **devolverán RPC \_ E \_ DISCONNECTED** si napag
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

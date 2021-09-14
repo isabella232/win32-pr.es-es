@@ -4,12 +4,12 @@ ms.assetid: 3cf36f88-b282-4f75-84fe-8106fea66825
 title: Redirectors de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ed44bb8479c4aea5056b667688cb27ae0f1fe1ebf4f43d066a49143d5bfeadc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fce8c887cba779fe3f6aee9811819c6638d926f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118951084"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069895"
 ---
 # <a name="network-redirectors"></a>Redirectors de red
 

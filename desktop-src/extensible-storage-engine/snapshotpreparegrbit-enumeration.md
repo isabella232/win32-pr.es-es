@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración SnapshotPrepareGrbit'
-title: Enumeración SnapshotPrepareGrbit
+description: 'Más información sobre: Enumeración SnapshotPrepareGrbit'
+title: SnapshotPrepareGrbit (enumeración)
 TOCTitle: SnapshotPrepareGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SnapshotPrepareGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.snapshotpreparegrbit(v=EXCHG.10)
@@ -31,20 +31,20 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 32c11c609f78cc96862f9c2f15d93266f40ae941
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269620"
 ---
-# <a name="snapshotpreparegrbit-enumeration"></a>Enumeración SnapshotPrepareGrbit
+# <a name="snapshotpreparegrbit-enumeration"></a>SnapshotPrepareGrbit (enumeración)
 
-Opciones de [JetOSSnapshotPrepare (JET_OSSNAPID, SnapshotPrepareGrbit)](./api.jetossnapshotprepare-method.md).
+Opciones de [JetOSSnapshotPrepare(JET_OSSNAPID, SnapshotPrepareGrbit).](./api.jetossnapshotprepare-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Dim instance As SnapshotPrepareGrbit
 public enum SnapshotPrepareGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -80,19 +80,19 @@ public enum SnapshotPrepareGrbit
 <tr class="even">
 <td></td>
 <td>IncrementalSnapshot</td>
-<td>Solo se tomarán los archivos de registro.</td>
+<td>Solo se tomarán archivos de registro.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CopySnapshot</td>
-<td>Una instantánea de copia (normal o incremental) sin truncamiento del registro.</td>
+<td>Instantánea de copia (normal o incremental) sin truncamiento del registro.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

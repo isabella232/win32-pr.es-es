@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86ec4612bc1bd5db1a8cdcbecdced51911591cdf5c482c83381f86deafd66a9e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64f5138dc1794e9b2714e5f64762c1af17b47fb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159452"
 ---
 # <a name="nocode-attribute"></a>atributo nocode
 
@@ -47,7 +47,7 @@ interface interface-name
 *Atributos de interfaz ACF* 
 </dt> <dd>
 
-Especifica una lista de uno o varios atributos que se aplican a la interfaz en su conjunto. Los atributos válidos incluyen el **\[** [**identificador automático \_ o**](auto-handle.md) **\]** el identificador **\[** [**\_ implícito**](implicit-handle.md) y **\]** **\[** [**código**](code.md) **\]** o **\[ codificación \]**. Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
+Especifica una lista de uno o varios atributos que se aplican a la interfaz en su conjunto. Los atributos válidos incluyen el **\[** [**identificador \_ automático**](auto-handle.md) **\]** o el identificador **\[** [**\_ implícito**](implicit-handle.md) y **\]** **\[** [**código**](code.md) **\]** o **\[ codificación. \]** Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Especifica los atributos que se aplican a la función en su conjunto, como **\[*
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función tal como se define en el archivo IDL.
@@ -107,7 +107,7 @@ Especifica un parámetro de la función tal como se define en el archivo IDL. Ca
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo \] nocode** puede aparecer en el encabezado ACF o se puede aplicar a una función individual.
 

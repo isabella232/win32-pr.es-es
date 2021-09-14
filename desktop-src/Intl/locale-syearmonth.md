@@ -4,12 +4,12 @@ ms.assetid: 57eae43a-72e1-410f-b003-c75f720e17fd
 title: LOCALE_SYEARMONTH
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fc2d0226a6db07cad9a0ac645b9995260b55fcae7c7e6e7b0fd9191997c96f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2c3157ebdf9c21c1405ff1e4c15df05265c3b8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119147308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274215"
 ---
 # <a name="locale_syearmonth"></a>LOCALE \_ SYEARMONTH
 

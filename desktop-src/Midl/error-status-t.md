@@ -1,6 +1,6 @@
 ---
 title: error_status_t atributo
-description: La palabra clave \_ t de estado de error designa un tipo para un objeto que contiene información de estado de comunicación o \_ de estado de error.
+description: La palabra clave t de estado de error \_ \_ designa un tipo para un objeto que contiene información sobre el estado de la comunicación o el estado de error.
 ms.assetid: 7eff0d20-c058-4f16-a3db-0b4c82303135
 keywords:
 - error_status_t atributo MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b02e404992e8fca98eba41f5ea85571160582827816a945d7ab8db505b28ba0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0d017b4eaf460b5d5b7ecb8a0bd79201ac8bdee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159593"
 ---
 # <a name="error_status_t-attribute"></a>error \_ status \_ t attribute
 
-La **palabra clave \_ \_ t** de estado de error designa un tipo para un objeto que contiene información de estado de comunicación o de estado de error.
+La **palabra clave \_ \_ t** de estado de error designa un tipo para un objeto que contiene información sobre el estado de la comunicación o el estado de error.
 
 ``` syntax
 [ [ , ACF-function-attributes ] ] error_status_t function-name(
@@ -37,14 +37,14 @@ La **palabra clave \_ \_ t** de estado de error designa un tipo para un objeto q
 
 <dl> <dt>
 
-*Atributos de función de ACF* 
+*ACF-function-attributes* 
 </dt> <dd>
 
-Especifica cero o más atributos de función de ACF, como el estado de la **\[** [**\_**](comm-status.md) **\]** notificación, **\[** [**el estado \_ de**](fault-status.md) **\]** error o el **\[** [**código.**](nocode.md) **\]** Los atributos de función se incluyen entre corchetes. Se pueden aplicar cero o más atributos a una función. Separe varios atributos de función con comas.
+Especifica cero o más atributos de función ACF, como **\[** [**el estado de la \_**](comm-status.md) **\]** notificación, el estado **\[** [**\_ de**](fault-status.md) **\]** error o el código **\[** [**nocode**](nocode.md) **\]** . Los atributos de función se incluyen entre corchetes. Se pueden aplicar cero o más atributos a una función. Separe varios atributos de función con comas.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función tal como se define en el archivo IDL.
@@ -65,13 +65,13 @@ Especifica el parámetro para la función tal como se define en el archivo IDL. 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **tipo t de \_ \_ estado** de error se usa como parte de la arquitectura de control de excepciones en IDL. Este tipo se asigna a [**un largo sin signo.**](unsigned.md) [](long.md) Las aplicaciones que detectan situaciones de error tienen un parámetro out o un tipo de valor devuelto de un procedimiento especificado como estado de error t y califican el estado de error t con los atributos de estado de error o de correo electrónico en **\[** [](out-idl.md) **\]** el **\_ \_** **\_ \_** **\[** [**\_**](comm-status.md) **\]** **\[** [**\_**](fault-status.md) **\]** ACF. Si el parámetro o el tipo **\[ \_ \]** de **\[ \_ \]** valor devuelto no se ha calificado con los atributos de estado de error o de correo, el parámetro funciona como si fuera un long sin signo.
+El **tipo t de \_ \_ estado** de error se usa como parte de la arquitectura de control de excepciones en IDL. Este tipo se asigna a [**un largo sin signo.**](unsigned.md) [](long.md) Las aplicaciones que detectan situaciones de error tienen un parámetro out o un tipo de valor devuelto de un procedimiento especificado como estado de error t y califican el estado de error t con los atributos de estado de error o de correo electrónico en **\[** [](out-idl.md) **\]** el **\_ \_** **\_ \_** **\[** [**\_**](comm-status.md) **\]** **\[** [**\_**](fault-status.md) **\]** ACF. Si el parámetro o el tipo de valor devuelto no se han calificado con los atributos de estado de **\[ comm \_ \]** **\[ \_ \]** o de estado de error, el parámetro funciona como si fuera un long sin signo.
 
-A partir de la versión 2.0, el compilador midl genera código auxiliar que contiene la arquitectura de control de errores adecuada. Sin embargo, las versiones anteriores del compilador MIDL administraban un parámetro o tipo de valor devuelto de estado de **error \_ \_ t** como si se hubieran aplicado los atributos de estado de error y de correo electrónico, aunque no lo **\[** [**\_**](comm-status.md) **\]** **\[** [**\_**](fault-status.md) **\]** fueran. Con MIDL 2.0 o posterior, debe aplicar explícitamente los atributos de estado de error y de **\[ comm \_ \]** **\[ \_ \]** al parámetro o procedimiento del ACF.
+A partir de la versión 2.0, el compilador de MIDL genera código auxiliar que contiene la arquitectura de control de errores adecuada. Sin embargo, las versiones anteriores del compilador MIDL administraban un parámetro o tipo de valor devuelto de estado de **error \_ \_ t** como si se aplicara el estado de comm y los atributos de estado de error, aunque no lo **\[** [**\_**](comm-status.md) **\]** **\[** [**\_**](fault-status.md) **\]** estuvieran. Con MIDL 2.0 o posterior, debe aplicar explícitamente los atributos de estado de **\[ comm \_ \]** **\[ \_ \]** y de estado de error al parámetro o procedimiento en el ACF.
 
-El **tipo t de \_ \_ estado** de error es uno de los tipos predefinidos del lenguaje de definición de interfaz. Los tipos predefinidos pueden aparecer como especificadores de tipo en declaraciones [**typedef,**](typedef.md) en declaraciones generales y en declaradores de función (ya sea como function-return-type o como especificadores de tipo de parámetro).
+El **tipo t de \_ \_ estado** de error es uno de los tipos predefinidos del lenguaje de definición de interfaz. Los tipos predefinidos pueden aparecer como especificadores de tipo en declaraciones [**typedef,**](typedef.md) en declaraciones generales y en declaradores de función (como function-return-type o como especificadores de tipo de parámetro).
 
 ## <a name="see-also"></a>Vea también
 
@@ -86,7 +86,7 @@ El **tipo t de \_ \_ estado** de error es uno de los tipos predefinidos del leng
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**long**](long.md)
+[**Largo**](long.md)
 </dt> <dt>
 
 [**out**](out-idl.md)

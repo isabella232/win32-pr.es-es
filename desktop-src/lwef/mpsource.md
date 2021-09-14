@@ -3,7 +3,7 @@ title: Enumeración MPSOURCE (MpClient.h)
 description: Categoría posible de origen.
 ms.assetid: 1AD12D67-C74B-481A-AC9B-D119AABDB6E9
 keywords:
-- Características heredadas del entorno de Windows MPSOURCE
+- Enumeración MPSOURCE Características heredadas Windows entorno de ejecución
 - Puntero de enumeración PMPSOURCE Legacy Windows Environment Features
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59eb014ab78645d78cd2942c37477d9a19d2572826859be77c6f5ecddfcb1bda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e9255029512499a0e2948a44701ef4482aff4b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269463"
 ---
 # <a name="mpsource-enumeration"></a>Enumeración MPSOURCE
 
 Categoría posible de origen.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -123,7 +123,7 @@ Atestación local.
 
 </dd> <dt>
 
-<span id="MPSOURCE_REMOTE_ATTESTATION"></span><span id="mpsource_remote_attestation"></span>**\_ATESTACIÓN \_ REMOTA DE MPSOURCE**
+<span id="MPSOURCE_REMOTE_ATTESTATION"></span><span id="mpsource_remote_attestation"></span>**\_ATESTACIÓN REMOTA \_ DE MPSOURCE**
 </dt> <dd>
 
 Atestación remota.
@@ -152,7 +152,7 @@ Valor máximo posible.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

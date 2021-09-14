@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b4320157216db18f595d67e172bc49de2d6050551732265060cb5a21339c908
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1394f24d8b6136cab86615e74838737bbda543b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159509"
 ---
 # <a name="licensed-attribute"></a>atributo con licencia
 
@@ -59,7 +59,7 @@ Especifica las instrucciones que son la definición [**de la clase conjunta.**](
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las licencias son una característica de COM que proporciona control sobre la creación de objetos. Los objetos con licencia solo los pueden crear los clientes que están autorizados para usarlos. Las licencias se implementan en COM mediante la [**interfaz IClassFactory2**](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) y la compatibilidad con una clave de licencia que se puede pasar en tiempo de ejecución.
 
@@ -112,7 +112,7 @@ coclass MyClass
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
  

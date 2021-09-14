@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74553fdb1e3020d49eca7dfdd219354a4690056c45126b3af208395117ade991
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e94c6f46a6828e81817e45ff6eb6eb8245b00a61
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118383872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159546"
 ---
 # <a name="iid_is-attribute"></a>iid \_ es atributo
 
-El **\[ atributo de \_ puntero \] iid** es especifica el IID de la interfaz COM a la que apunta un puntero de interfaz.
+El **\[ atributo de puntero iid \_ es \]** especifica el IID de la interfaz COM a la que apunta un puntero de interfaz.
 
 ``` syntax
 [ iid_is(limited-expression) ]
@@ -38,11 +38,11 @@ Especifica una expresión de lenguaje C. El compilador MIDL admite expresiones c
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Puede usar **\[ iid is \_ en \] listas** de atributos para parámetros de función y para miembros de estructura o unión. Los códigos auxiliares usan el IID para determinar cómo serializar el puntero de interfaz. Esto es útil para un puntero de interfaz que se escribe como un parámetro de clase base.
+Puede usar **\[ iid is en \_ listas \]** de atributos para parámetros de función y para miembros de estructura o unión. Los códigos auxiliares usan el IID para determinar cómo serializar el puntero de interfaz. Esto es útil para un puntero de interfaz que se escribe como un parámetro de clase base.
 
-Los archivos que usan el **\[ atributo iid \_ is \]** deben compilarse con el compilador MIDL en modo predeterminado, que no usa el [**modificador /osf.**](-osf.md)
+Los archivos que usan **\[ el atributo iid \_ is \]** deben compilarse con el compilador MIDL en modo predeterminado, que no usa el [**modificador /osf.**](-osf.md)
 
 ## <a name="examples"></a>Ejemplos
 

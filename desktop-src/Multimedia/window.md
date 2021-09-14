@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 21dde3304fa1445b0eaac68950cdfb91f48e5986
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370142"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071683"
 ---
 # <a name="window-command"></a>comando window
 
-El comando de ventana controla la ventana de presentación. Puede usar este comando para cambiar las características de presentación de la ventana o proporcionar una ventana de destino para que el controlador la use en lugar de la ventana de presentación predeterminada. Los dispositivos de superposición de vídeo y vídeo digital reconocen este comando.
+El comando de ventana controla la ventana de presentación. Puede usar este comando para cambiar las características de presentación de la ventana o proporcionar una ventana de destino para que el controlador la use en lugar de la ventana de presentación predeterminada. Los dispositivos de vídeo digital y de superposición de vídeo reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -55,14 +55,14 @@ Marca para controlar la ventana de presentación. En la tabla siguiente se enume
 
 | Value        | Significado                                                                                                                                        | Significado                                                                                                                                   |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| digitalvideo | handle *hwnd* state hidestate minimizestate restorestate showshow maximized                                                                    | show minimizedshow [**min**](min.md) noactiveshow nashow noactivateshow normaltext *caption*                                             |
-| overlay      | fixedhandle defaulthandle hwnd state *hidestate* iconicstate maximizedstate minimizestate minimizedstate no actionstate noactivatestate normal | state restorestate showshow maximizedshow minimizedshow [**min**](min.md) noactiveshow nashow noactivateshow normalstretchtext *caption* |
+| digitalvideo | handle *hwnd state* hidestate minimizestate restorestate showshow maximized                                                                    | show minimizedshow [**min**](min.md) noactiveshow nashow noactivateshow normaltext *caption*                                             |
+| overlay      | fixedhandle defaulthandle *hwnd state hidestate* maximizedstate maximizedstate minimizedstate minimizedstate no actionstate noactivatestate normal | state restorestate showshow maximizedshow minimizedshow [**min**](min.md) noactiveshow nashow noactivateshow normalstretchtext *caption* |
 
 
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro **lpszWindowFlags** y sus significados.
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el **parámetro lpszWindowFlags** y sus significados.
 
 
 
@@ -70,7 +70,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | fijo                            | Deshabilita la extensión de la imagen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | identificador predeterminado                   | Especifica que el dispositivo debe volver a establecer la ventana de presentación en la ventana predeterminada creada durante la [operación de](open.md) apertura. En el caso de los dispositivos de superposición de vídeo, especifica que el dispositivo debe crear y administrar su propia ventana de destino.                                                                                                                                                                                                                                                                                                                                                  |
-| handle *hwnd*                    | Especifica el identificador de la ventana de destino que se usará en lugar de la ventana predeterminada. El *parámetro hwnd* contiene el equivalente numérico ASCII del identificador de ventana devuelto por la [función CreateWindow.](/windows/win32/api/winuser/nf-winuser-createwindowa) Dos instancias de dispositivo pueden usar el mismo identificador de ventana siempre que cada instancia actualice los píxeles de imagen y vídeo de la ventana como si la otra instancia no existiera. Cuando la salida de vídeo está deshabilitada [con setvideo](setvideo.md) "off", un comando [update](update.md) hará que el rectángulo de destino sea un color sólido. |
+| handle *hwnd*                    | Especifica el identificador de la ventana de destino que se usará en lugar de la ventana predeterminada. El *parámetro hwnd* contiene el equivalente numérico ASCII del identificador de ventana devuelto por la [función CreateWindow.](/windows/win32/api/winuser/nf-winuser-createwindowa) Dos instancias de dispositivo pueden usar el mismo identificador de ventana siempre que cada instancia actualice los píxeles de vídeo e imagen en la ventana como si la otra instancia no existiera. Cuando la salida de vídeo está deshabilitada [con setvideo](setvideo.md) "off", un comando [update](update.md) hará que el rectángulo de destino sea un color sólido. |
 | mostrar maximizado                   | Maximiza la ventana de destino.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | show [**min**](min.md) noactive | Muestra la ventana de destino como un icono.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | mostrar minimizado                   | Minimiza la ventana de destino.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -87,7 +87,7 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 | state normal                     | Activa y muestra la ventana de destino en su tamaño y posición originales.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | restauración de estado                    | Activa y muestra la ventana de destino en su tamaño y posición originales.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | state show                       | Muestra la ventana de destino.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ajustar                          | Habilita el stretching de la imagen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ajustar                          | Habilita la extensión de la imagen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | título de *texto*                   | Especifica el título de la ventana de destino. Si este texto contiene espacios en blanco incrustados, todo el título debe incluirse entre comillas. El título predeterminado de la ventana predeterminada está en blanco.                                                                                                                                                                                                                                                                                                                                                                                        |
 
 
@@ -105,7 +105,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -115,7 +115,7 @@ Dado que puede usar el comando [status](status.md) para recuperar el identificad
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente muestra y establece el título de la ventana de reproducción de "película".
+El siguiente comando muestra y establece el título de la ventana de reproducción de "película".
 
 ``` syntax
 window movie text "Welcome to the Movies" state show

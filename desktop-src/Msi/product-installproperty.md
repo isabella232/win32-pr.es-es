@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 3beb67ccdd4a50cdbb52e41846f46fcb4f2545dd833d30098e29c4d5887f8fae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 12949997363fce8073c15f7ca6b7312c211fa0f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074328"
 ---
 # <a name="productinstallproperty-method"></a>Método Product.InstallProperty
 
@@ -44,7 +44,7 @@ Product.InstallProperty(
 *property* 
 </dt> <dd>
 
-Especifica la propiedad que se va a recuperar. Las propiedades de la lista siguiente solo se pueden recuperar de las aplicaciones que ya están instaladas. Tenga en [cuenta que](required-properties.md) se garantiza que las propiedades necesarias estén disponibles, pero otras propiedades solo están disponibles si se ha establecido esa propiedad. Consulte los vínculos indicados a las propiedades del [instalador](properties.md) para obtener información sobre cómo se establece cada propiedad.
+Especifica la propiedad que se va a recuperar. Las propiedades de la lista siguiente solo se pueden recuperar de las aplicaciones que ya están instaladas. Tenga en [cuenta que](required-properties.md) se garantiza que las propiedades necesarias estén disponibles, pero otras propiedades solo están disponibles si se ha establecido esa propiedad. Consulte los vínculos indicados a las propiedades [del instalador](properties.md) para obtener información sobre cómo se establece cada propiedad.
 
 
 
@@ -89,7 +89,7 @@ Para recuperar el tipo de instancia del producto, establezca *la propiedad* en e
 
 | Value        | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| InstanceType | Un valor que falta o un valor de 0 indica una instalación normal del producto. El valor 1 indica un producto instalado mediante una transformación de varias instancias y la [**propiedad MSINEWINSTANCE.**](msinewinstance.md) Disponible con el instalador que ejecuta Windows Server 2003 o Windows XP con SP1. Para obtener más información, vea [Installing Multiple Instances of Products and Patches](installing-multiple-instances-of-products-and-patches.md). |
+| InstanceType | Un valor que falta o un valor de 0 indica una instalación normal del producto. El valor 1 indica un producto instalado mediante una transformación de varias instancias y la [**propiedad MSINEWINSTANCE.**](msinewinstance.md) Disponible con el instalador que ejecuta Windows Server 2003 o Windows XP con SP1. Para obtener más información, [vea Installing Multiple Instances of Products and Patches](installing-multiple-instances-of-products-and-patches.md). |
 
 
 
@@ -121,7 +121,7 @@ Las propiedades de la lista siguiente también se pueden recuperar de las aplica
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la llamada se realiza correctamente, la propiedad contiene el valor como una cadena.
 
@@ -131,13 +131,13 @@ Si la llamada se realiza correctamente, la propiedad contiene el valor como una 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-00000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

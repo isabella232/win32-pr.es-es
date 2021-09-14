@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 320cc99ed4223b7919b85d2b39e15d4d9b76aa90
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370423"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071763"
 ---
 # <a name="icm_compress_end-message"></a>\_ICM Mensaje COMPRESS \_ END
 
@@ -40,7 +40,7 @@ Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso c
 
 ## <a name="remarks"></a>Observaciones
 
-VCM guarda la configuración del mensaje más reciente [**ICM \_ COMPRESS \_ BEGIN.**](icm-compress-begin.md) **ICM \_ COMPRESS \_ BEGIN** y **ICM COMPRESS \_ \_ END** no anidan. Si el controlador recibe ICM **\_ COMPRESS \_ BEGIN** antes de que la compresión se detenga **con ICM COMPRESS \_ \_ END**, debe reiniciar la compresión con nuevos parámetros.
+VCM guarda la configuración del mensaje más reciente [**ICM \_ COMPRESS \_ BEGIN.**](icm-compress-begin.md) **ICM \_ COMPRESS \_ BEGIN y** ICM COMPRESS **\_ \_ END** no anidan. Si el controlador recibe ICM **\_ COMPRESS BEGIN \_ antes** de detener la compresión **con ICM COMPRESS \_ \_ END**, debe reiniciar la compresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2f40301957ec323b8abf7c09829bf3b551e2e1665a811409622d342784d86e54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58d8c859502e81b5c5101adac3c8c26539870dd5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117758897"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259175"
 ---
 # <a name="logontype-simple-type"></a>Tipo simple logonType
 
@@ -71,11 +71,11 @@ El **tipo simple logonType** define los valores siguientes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas simples de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos simples de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

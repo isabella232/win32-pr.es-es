@@ -4,12 +4,12 @@ ms.assetid: c673dbff-cb64-4e90-88a8-c5f2c259f1d3
 title: Esquema del archivo de configuración de la aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19b05f1444e9a652d3cd20f5cefa2ac314bfe17868f47e4f34f6b485e42d4a41
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b964775755cf1bcbb8ec78e563b4b39f71e3cc7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271772"
 ---
 # <a name="application-configuration-file-schema"></a>Esquema del archivo de configuración de la aplicación
 

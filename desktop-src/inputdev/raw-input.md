@@ -1,23 +1,23 @@
 ---
-title: Entrada sin procesar
+title: Entrada sin formato
 description: En esta sección se describe cómo el sistema proporciona una entrada sin procesar a la aplicación y cómo una aplicación recibe y procesa esa entrada.
 ms.assetid: vs|winui|~\winui\windowsuserinterface\userinput\rawinput.htm
 keywords:
-- Windows Interfaz de usuario,entrada del usuario
-- Windows Interfaz de usuario,entrada sin procesar
+- Windows Interfaz de usuario,entrada de usuario
+- Windows Interfaz de usuario, entrada sin formato
 - entrada del usuario, entrada sin procesar
-- captura de entrada del usuario, entrada sin procesar
+- captura de la entrada del usuario, entrada sin procesar
 - entrada sin procesar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1e26d67f2b014ce22c2d01cb4738cca4e041c59e417a216f0d75ffef6e6e4b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e88de70dd2b635cf7dda90f23686b9916c99be4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118482761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072396"
 ---
-# <a name="raw-input"></a>Entrada sin procesar
+# <a name="raw-input"></a>Entrada sin formato
 
 En esta sección se describe cómo el sistema proporciona una entrada sin procesar a la aplicación y cómo una aplicación recibe y procesa esa entrada. La entrada sin procesar a veces se conoce como entrada genérica.
 
@@ -27,7 +27,7 @@ En esta sección se describe cómo el sistema proporciona una entrada sin proces
 
 | Nombre                                           | Descripción                                                                                     |
 |------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [Acerca de la entrada sin formato](about-raw-input.md)         | Describe la entrada del usuario desde dispositivos como micrófonos, pantallas táctiles y micrófonos.<br/> |
+| [Acerca de la entrada sin procesar](about-raw-input.md)         | Describe la entrada del usuario desde dispositivos como auriculares, pantallas táctiles y micrófonos.<br/> |
 | [Uso de entrada sin procesar](using-raw-input.md)         | Proporciona código de ejemplo para las tareas relacionadas con la entrada sin formato.<br/>                                |
 | [Referencia de entrada sin formato](raw-input-reference.md) | Contiene la referencia de API.<br/>                                                          |
 
@@ -72,8 +72,8 @@ En esta sección se describe cómo el sistema proporciona una entrada sin proces
 
 | Nombre                                                        | Descripción                                                          |
 |-------------------------------------------------------------|----------------------------------------------------------------------|
-| [**ENTRADA \_ WM**](wm-input.md)                               | Se envía a la ventana que está obteniendo la entrada sin procesar. <br/>            |
-| [**CAMBIO DE \_ DISPOSITIVO \_ DE ENTRADA \_ WM**](wm-input-device-change.md) | Se envía a la ventana que se registró para recibir la entrada sin procesar. <br/> |
+| [**ENTRADA \_ WM**](wm-input.md)                               | Se envía a la ventana en la que se está obteniendo la entrada sin procesar. <br/>            |
+| [**CAMBIO \_ DE DISPOSITIVO DE ENTRADA DE \_ \_ WM**](wm-input-device-change.md) | Se envía a la ventana que se registró para recibir la entrada sin procesar. <br/> |
 
 
 
@@ -94,8 +94,8 @@ En esta sección se describe cómo el sistema proporciona una entrada sin proces
 | [**RAWMOUSE**](/windows/win32/api/winuser/ns-winuser-rawmouse)                                    | Contiene información sobre el estado del mouse. <br/>                         |
 | [**INFORMACIÓN DEL \_ DISPOSITIVO \_ RID**](/windows/win32/api/winuser/ns-winuser-rid_device_info)                    | Define los datos de entrada sin procesar procedentes de cualquier dispositivo. <br/>                         |
 | [**RID \_ DEVICE \_ INFO \_ HID**](/windows/win32/api/winuser/ns-winuser-rid_device_info_hid)           | Define los datos de entrada sin procesar procedentes del ELEMENTO HID especificado. <br/>                  |
-| [**TECLADO DE \_ INFORMACIÓN \_ DE DISPOSITIVO \_ RID**](/windows/win32/api/winuser/ns-winuser-rid_device_info_keyboard) | Define los datos de entrada sin procesar procedentes del teclado especificado. <br/>             |
-| [**RID \_ DEVICE \_ INFO \_ MOUSE**](/windows/win32/api/winuser/ns-winuser-rid_device_info_mouse)       | Define los datos de entrada sin procesar procedentes del mouse especificado.<br/>                 |
+| [**TECLADO DE \_ INFORMACIÓN \_ DEL DISPOSITIVO \_ RID**](/windows/win32/api/winuser/ns-winuser-rid_device_info_keyboard) | Define los datos de entrada sin procesar procedentes del teclado especificado. <br/>             |
+| [**MOUSE DE \_ INFORMACIÓN \_ DE DISPOSITIVO \_ RID**](/windows/win32/api/winuser/ns-winuser-rid_device_info_mouse)       | Define los datos de entrada sin procesar procedentes del mouse especificado.<br/>                 |
 
 
 

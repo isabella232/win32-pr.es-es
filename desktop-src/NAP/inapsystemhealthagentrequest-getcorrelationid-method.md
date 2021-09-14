@@ -1,11 +1,11 @@
 ---
 title: Método INapSystemHealthAgentRequest GetCorrelationId (NapSystemHealthAgent.h)
-description: Lo usan los agentes de mantenimiento del sistema para correlacionar soH y soH-responses.
+description: Los agentes de mantenimiento del sistema usan para correlacionar soh y soh-responses.
 ms.assetid: 220db71a-31d7-45a7-a8e7-ddb4955d546e
 keywords:
 - Método NAP de GetCorrelationId
-- Método NAP de GetCorrelationId , interfaz INapSystemHealthAgentRequest
-- Interfaz NAP de INapSystemHealthAgentRequest, método GetCorrelationId
+- Método NAP de GetCorrelationId, interfaz INapSystemHealthAgentRequest
+- INapSystemHealthAgentRequest interface NAP , GetCorrelationId method
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bf02a6d72aaa2744cc5a1329d791bdb9e8fa31f7453b131268245e120d7087e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7af5b182df738ec22c75f2afffd1adb3591007be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071630"
 ---
 # <a name="inapsystemhealthagentrequestgetcorrelationid-method"></a>INapSystemHealthAgentRequest::GetCorrelationId (método)
 
@@ -30,7 +30,7 @@ ms.locfileid: "119686165"
 
  
 
-Los agentes de mantenimiento del sistema usan el método **INapSystemHealthAgentRequest::GetCorrelationId** para correlacionar soH y soH-responses.
+Los agentes de mantenimiento del sistema usan el método **INapSystemHealthAgentRequest::GetCorrelationId** para correlacionar soh y soH-responses.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ HRESULT GetCorrelationId(
 *correlationId* \[ out\]
 </dt> <dd>
 
-Puntero a un [**correlationId único**](/windows/win32/api/naptypes/ns-naptypes-correlationid) para el intercambio de SoH.
+Puntero a un [**correlationId único**](/windows/win32/api/naptypes/ns-naptypes-correlationid) para el intercambio soH.
 
 </dd> </dl>
 
@@ -74,12 +74,12 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagentrt.dll</dt> </dl>             |
 
 

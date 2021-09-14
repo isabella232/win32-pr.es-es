@@ -4,12 +4,12 @@ description: Las barras de desplazamiento permiten al usuario elegir la direcci�
 ms.assetid: a4ec1708-d751-4526-bd69-9796c43872a0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6acb609ee56d6e766a2f94cf75406211741ba0a711699f4e8c912790dc71cffe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: df381e0d532991f164f2c17d0a261dd3c5006619
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119734335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070636"
 ---
 # <a name="scroll-bar-msaa-ui-element-reference"></a>Barra de desplazamiento (Referencia del elemento de la interfaz de usuario de MSAA)
 
@@ -54,7 +54,7 @@ Una barra de desplazamiento admite los siguientes [**métodos IAccessible:**](/w
 
     
 
-    | Botón o región      | Valor         |
+    | Botón o región      | Value         |
     |--------------------|---------------|
     | Botón de flecha izquierda  | SB \_ LINELEFT  |
     | Botón de flecha a la derecha | SB \_ LINERIGHT |
@@ -147,10 +147,10 @@ Una barra de desplazamiento admite las siguientes [**propiedades IAccessible:**]
 
      
 
--   [**get \_ accParent:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)la propiedad **Parent** de los botones de flecha, el control de desplazamiento y el área sombreada a ambos lados del control es la ventana de la barra de desplazamiento. La **propiedad Parent** de la ventana de la barra de desplazamiento es una ventana (ROLE SYSTEM WINDOW) que rodea el control y tiene la misma propiedad Name y el mismo nombre de clase de \_ \_ ventana. 
+-   [**get \_ accParent:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)la propiedad **Parent** de los botones de flecha, el control de desplazamiento y el área sombreada a cada lado del control es la ventana de la barra de desplazamiento. La **propiedad Parent** de la ventana de la barra de desplazamiento es una ventana (ROLE SYSTEM WINDOW) que rodea el control y tiene la misma propiedad Name y el mismo nombre de clase de \_ \_ ventana. 
 -   [**get \_ accRole:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)la **propiedad Role** depende de la parte de la barra de desplazamiento que se consulta. Las partes de una barra de desplazamiento tienen los roles siguientes. 
 
-    | Parte                                                  | Rol                                                                    |
+    | Parte                                                  | Role                                                                    |
     |-------------------------------------------------------|-------------------------------------------------------------------------|
     | Barra de desplazamiento propiamente dicha                                     | [**BARRA DE \_ DESPLAZAMIENTO DEL SISTEMA DE \_ ROL**](object-roles.md)   |
     | Botones de flecha arriba, abajo, izquierda y derecha              | [**BOTÓN \_ PUSHBUTTON \_ DEL SISTEMA DE ROL**](object-roles.md) |
@@ -161,7 +161,7 @@ Una barra de desplazamiento admite las siguientes [**propiedades IAccessible:**]
 
      
 
--   [**get \_ accState:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)la **propiedad State** de cada componente de barra de desplazamiento incluye una combinación de los siguientes [valores.](object-state-constants.md)
+-   [**get \_ accState:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)la **propiedad State** de cada componente de barra de desplazamiento incluye una combinación de los valores [siguientes.](object-state-constants.md)
 
     | Estado                                                                                 | Value                                                                                                                                                                                                                       |
     |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

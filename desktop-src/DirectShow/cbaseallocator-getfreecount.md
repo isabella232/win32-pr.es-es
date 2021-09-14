@@ -1,5 +1,5 @@
 ---
-description: El método GetFreeCount recupera el número de muestras multimedia que no están en uso.
+description: El método GetFreeCount recupera el número de muestras de medios que no están en uso.
 ms.assetid: f4ce4cca-0168-42db-9fe7-858862f033a8
 title: Método CBaseAllocator.GetFreeCount (Amfilter.h)
 ms.topic: reference
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c4552829482a604b368a6710c62d0fc0b26a94aa3bb33b67ef386f2785d6c90e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0538229053b5d47ca1bdc8f30b38a0937e36cb5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070169"
 ---
-# <a name="cbaseallocatorgetfreecount-method"></a>CBaseAllocator.GetFreeCount (método)
+# <a name="cbaseallocatorgetfreecount-method"></a>Método CBaseAllocator.GetFreeCount
 
 El `GetFreeCount` método recupera el número de muestras de medios que no están en uso.
 
@@ -53,7 +53,7 @@ Dirección de una variable que recibe el número de muestras que no están en us
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método implementa el [**método IMemAllocatorCallbackTemp::GetFreeCount.**](/windows/desktop/api/Strmif/nf-strmif-imemallocatorcallbacktemp-getfreecount) El asignador no expone la interfaz IMemAllocatorCallbackTemp a menos que la marca *fEnableReleaseCallback* esté establecida en **TRUE** en el constructor CBaseAllocator.
 

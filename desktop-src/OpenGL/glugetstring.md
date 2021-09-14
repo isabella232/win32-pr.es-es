@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a39dca7e03f934a67e2e6d80545e92d16e9a9d852e70405f24e2e089fc5559
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 574ed93c9c6f8d1f964e38ee14541d57bd5c34da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071470"
 ---
 # <a name="glugetstring-function"></a>Función gluGetString
 
@@ -47,7 +47,7 @@ El número de versión de GLU (VERSIÓN \_ DE GLU) o las llamadas de extensión 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluGetString** devuelve un puntero a una cadena estática terminada en NULL. Cuando *name* es GLU \_ VERSION, la cadena devuelta es un valor que representa el número de versión de GLU. El formato del número de versión es el siguiente:
 
@@ -73,7 +73,7 @@ La **función gluGetString** es válida para GLU versión 1.1 o posterior.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

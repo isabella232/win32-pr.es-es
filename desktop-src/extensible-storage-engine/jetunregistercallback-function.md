@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 87c308f4895eb3e78a35338fe39afb3d775da095
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986498"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269700"
 ---
 # <a name="jetunregistercallback-function"></a>JetUnregisterCallback (Función)
 
@@ -34,7 +34,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 La **función JetUnregisterCallback permite** a la aplicación configurar el motor de base de datos para dejar de emitir notificaciones a la aplicación como se solicitó anteriormente a través de [JetRegisterCallback](./jetregistercallback-function.md).
 
-**Windows XP:****JetUnregisterCallback** se introdujo en Windows XP.  
+**Windows XP:****JetUnregisterCallback** se introduce en Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetUnregisterCallback(
@@ -59,7 +59,7 @@ Cursor que se va a usar para esta llamada.
 
 Máscara de bits compuesta por las razones de devolución de llamada por las que la aplicación ya no desea recibir notificaciones.
 
-Para crear esta máscara de bits, simplemente o juntos los motivos de devolución de llamada válidos de la [enumeración JET_CBTYP](./jet-cbtyp.md) datos.
+Para crear esta máscara de bits, simplemente o juntos los motivos de devolución de llamada válidos de la [JET_CBTYP](./jet-cbtyp.md) enumeración.
 
 *hCallbackId*
 
@@ -67,7 +67,7 @@ Identificador de la devolución de llamada registrada devuelta por [JetRegisterC
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -99,7 +99,7 @@ La máscara de bits especificada debe coincidir exactamente con la máscara de b
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

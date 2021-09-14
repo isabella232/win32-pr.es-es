@@ -7,20 +7,20 @@ keywords:
 - Automatización de la interfaz de usuario,patrón de control SpreadsheetItem
 - Automatización de la interfaz de usuario,ISpreadsheetItemProvider
 - ISpreadsheetItemProvider
-- implementación del Automatización de la interfaz de usuario de control SpreadsheetItem
+- implementación del patrón Automatización de la interfaz de usuario control SpreadsheetItem
 - Patrón de control SpreadsheetItem
 - patrones de control,ISpreadsheetItemProvider
-- patrones de control, implementación de Automatización de la interfaz de usuario SpreadsheetItem
+- patrones de control, implementar Automatización de la interfaz de usuario SpreadsheetItem
 - patrones de control,SpreadsheetItem
 - interfaces,ISpreadsheetItemProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58d5feaa32b5fe79635c6acc01e1e0b18b9ba77c382ba3f07c64f7cb3e921b06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88ba050c5a5c8b10c68695fdf1a05d845353e638
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118324375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070474"
 ---
 # <a name="spreadsheetitem-control-pattern"></a>Patrón de control SpreadsheetItem
 
@@ -49,7 +49,7 @@ Las siguientes propiedades y métodos son necesarios para implementar la [**inte
 
 | Miembros requeridos                                                                         | Tipo de miembro | Notas                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Fórmula**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-get_formula)                           | Propiedad    | Es necesario implementar una [**propiedad Formula**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-get_formula) independiente porque la propiedad [Value](value-property.md) de una celda normalmente devuelve el valor calculado de la celda. La **propiedad Formula** debe ser NULL **si** no se establece ninguna fórmula. |
+| [**Fórmula**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-get_formula)                           | Propiedad.    | Es necesario implementar una [**propiedad Formula**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-get_formula) independiente porque la propiedad [Value](value-property.md) de una celda normalmente devuelve el valor calculado de la celda. La **propiedad Formula** debe ser NULL **si** no se establece ninguna fórmula. |
 | [**GetAnnotationObjects**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-getannotationobjects) | Método      | Devuelve una matriz de proveedores de elementos que hacen referencia a las anotaciones vinculadas a esta celda. Los punteros dentro de la matriz pueden ser NULL si una anotación no tiene un proveedor vinculado.                                                                                                       |
 | [**GetAnnotationTypes**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-getannotationtypes)     | Método      | Devuelve una matriz de identificadores de tipo de anotación que describen las anotaciones de esta celda. La matriz debe tener el mismo tamaño que la matriz devuelta [**por GetAnnotationObjects.**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-getannotationobjects)                                         |
 

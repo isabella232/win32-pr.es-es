@@ -1,21 +1,21 @@
 ---
-description: La tabla Binary contiene los datos binarios de elementos como mapas de bits, animaciones e iconos. La tabla binaria también se usa para almacenar datos para acciones personalizadas. Vea Limitaciones de OLE en Secuencias.
+description: La tabla Binary contiene los datos binarios de elementos como mapas de bits, animaciones e iconos. La tabla binaria también se usa para almacenar datos para acciones personalizadas. Vea Limitaciones de OLE Secuencias.
 ms.assetid: 44c56407-df2e-4cbe-b7a3-b22e8d97eb03
 title: Tabla binaria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a70750193b1dc147a9b2b4cfa01bbea410f0e44b7c03f16bd1c992f118a4f0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4069c7e684e7d90c94b4b04f3d5839058f3570a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118638809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158986"
 ---
 # <a name="binary-table"></a>Tabla binaria
 
-La tabla Binary contiene los datos binarios de elementos como mapas de bits, animaciones e iconos. La tabla binaria también se usa para almacenar datos para acciones personalizadas. Vea [Limitaciones de OLE en Secuencias](ole-limitations-on-streams.md).
+La tabla Binary contiene los datos binarios de elementos como mapas de bits, animaciones e iconos. La tabla binaria también se usa para almacenar datos para acciones personalizadas. Vea [Limitaciones de OLE Secuencias](ole-limitations-on-streams.md).
 
-La tabla Binary tiene las siguientes columnas.
+La tabla Binary tiene las columnas siguientes.
 
 
 

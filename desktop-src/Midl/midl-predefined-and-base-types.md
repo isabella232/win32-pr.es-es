@@ -6,12 +6,12 @@ keywords:
 - tipos de datos MIDL, predefinidos y base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6ecbc76b3f680f0fffbabcff38e8562475e26be8ae4ac583a78c614d1651151
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c1afaa479969d65f162a9d57935aa7fbc539701
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159489"
 ---
 # <a name="midl-predefined-and-base-types"></a>Tipos base y predefinidos de MIDL
 
@@ -35,8 +35,8 @@ MIDL admite los siguientes tipos base y predefinidos.
 | **\_\_int32**                              | Entero de 32 bits. Equivalente a [**long.**](long.md)                                                                                                                                                     | Firmado           |
 | [**\_\_int3264**](--int3264.md)           | Entero de 32 bits en plataformas de 32 bits y de 64 bits en plataformas de 64 bits.                                                                                                                       | Firmado           |
 | [**\_\_int64**](--int64.md)               | Entero de 64 bits. Equivalente a [**hyper**](hyper.md).                                                                                                                                                   | Firmado           |
-| [**long**](long.md)                       | Entero de 32 bits.                                                                                                                                                                                         | Firmado           |
-| [**short**](short.md)                     | Entero de 16 bt.                                                                                                                                                                                          | Firmado           |
+| [**Largo**](long.md)                       | Entero de 32 bits.                                                                                                                                                                                         | Firmado           |
+| [**Corto**](short.md)                     | Entero de 16 bt.                                                                                                                                                                                          | Firmado           |
 | [**Pequeño**](small.md)                     | Entero de 8 bits.                                                                                                                                                                                          | Firmado           |
 | [**void**](void.md)                       | Indica que el procedimiento no devuelve un valor.                                                                                                                                                   | (no aplicable) |
 | **Vacío \***                                | Puntero de 32 bits solo para identificadores de contexto.                                                                                                                                                                | (no aplicable) |

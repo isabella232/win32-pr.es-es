@@ -1,6 +1,6 @@
 ---
 title: wire_marshal (atributo)
-description: El atributo \ wire marshal\ especifica un tipo de datos que se usará para la transmisión (el tipo de conexión) en lugar de un tipo de datos específico de la \_ aplicación (userm-type).
+description: El atributo \ wire marshal\ especifica un tipo de datos que se usará para la transmisión (el tipo de conexión) en lugar de un tipo de datos específico de la aplicación \_ (userm-type).
 ms.assetid: 51969f2c-7390-42c4-8aa6-ba12fdb22d23
 keywords:
 - wire_marshal atributo MIDL
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb25e08816c27d2de147204d838b8655989ae8211c1ac506064fbb3b5534b70
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 17466648078162bc8244219f77e3ecc0dc4cb4d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119534925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159316"
 ---
 # <a name="wire_marshal-attribute"></a>atributo \_ wire marshal
 
@@ -63,7 +63,7 @@ Tipo para el que *userm-type* se convertirá en un alias.
 *userm-type* 
 </dt> <dd>
 
-Especifica el identificador del tipo de datos de usuario que se va a serializar. Puede ser cualquier tipo, tal como lo indica *el especificador* de tipo , siempre y cuando tenga un tamaño bien definido. El *tipo userm no* debe ser transmitible, pero debe ser un tipo conocido por el compilador MIDL.
+Especifica el identificador del tipo de datos de usuario que se va a serializar. Puede ser cualquier tipo, tal como lo indica *el especificador* de tipo , siempre y cuando tenga un tamaño bien definido. El *tipo userm no* necesita ser transmitible, pero debe ser un tipo conocido por el compilador MIDL.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Especifica un puntero a un campo de marca ( [**unsigned**](unsigned.md) [**long*
 *StartingSize* 
 </dt> <dd>
 
-Especifica el tamaño del búfer actual (desplazamiento) antes de dimensionar el objeto.
+Especifica el tamaño de búfer actual (desplazamiento) antes de dimensionar el objeto.
 
 </dd> <dt>
 
@@ -95,13 +95,13 @@ Especifica el puntero de búfer actual.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada tipo de datos específico de la aplicación, *userm-type,* tiene una correspondencia uno *a* uno con un tipo de conexión que define la representación de conexión del tipo. Debe proporcionar rutinas para cambiar el tamaño de los datos para la serialización, serializar y desmarmar los datos y liberar memoria. Tenga en cuenta **\[ \_ \]** que si hay tipos incrustados en los datos que también se definen con referencias de conexión o referencias de usuario, también debe administrar el mantenimiento de esos tipos **\[** [**\_**](user-marshal.md) **\]** incrustados. Para obtener más información sobre estas rutinas, vea [The wire \_ marshal Attribute](/windows/desktop/Rpc/the-wire-marshal-attribute).
 
 La implementación debe seguir las reglas de marshalling según la especificación de OSF-DCE. Puede encontrar detalles sobre la sintaxis de transferencia de QL en [https://www.opengroup.org/onlinepubs/9629399/chap14.htm](https://pubs.opengroup.org/onlinepubs/9629399/chap14.htm) . No se recomienda usar la **\[ serialización \_ de conexión \]** si no está familiarizado con el protocolo de conexión.
 
-El *tipo de conexión no* puede ser un puntero de interfaz ni un puntero completo. El *tipo de conexión* debe tener un tamaño de memoria bien definido. Consulte [Reglas de serialización para la \_ serialización de usuario \_](/windows/desktop/Rpc/marshaling-rules-for-user-marshal-and-wire-marshal) y la serialización de conexión para obtener más información sobre cómo serializar un tipo *de conexión determinado.*
+El *tipo de conexión no* puede ser un puntero de interfaz ni un puntero completo. El *tipo de conexión* debe tener un tamaño de memoria bien definido. Consulte [Reglas de serialización para serialización de usuario \_ \_](/windows/desktop/Rpc/marshaling-rules-for-user-marshal-and-wire-marshal) y serialización de conexión para obtener más información sobre cómo serializar un tipo *de conexión determinado.*
 
 *Userm-type no* debe ser un puntero de interfaz porque se pueden serializar directamente. Si el tipo de usuario es un puntero completo, debe administrar el alias usted mismo.
 
@@ -164,7 +164,7 @@ void __RPC_USER FOUR_BYTE_DATA_UserFree(
 [Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**long**](long.md)
+[**Largo**](long.md)
 </dt> <dt>
 
 [**GetGetUserMarshalInfo**](/windows/desktop/api/rpcndr/nf-rpcndr-ndrgetusermarshalinfo)

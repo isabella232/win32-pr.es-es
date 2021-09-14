@@ -6,12 +6,12 @@ keywords:
 - MIDL del compilador MIDL, MIDL y RPC MIDL, interfaces, código auxiliar de servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddfc940ebbd90e4e028ce96dc3b5c47eb15179d41cfbd064cd235e87192822f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b351c53fa9e1d1716e1240ddf4febdccdadda46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119559913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159348"
 ---
 # <a name="the-server-stub"></a>El código auxiliar del servidor
 

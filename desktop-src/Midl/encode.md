@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15a62a170fbad60ea05b1574b54d09042a433d1684761a66a36a4c86dbef6b9b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7c2a35c6d6910229a9e14026f6727db5c3176050
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159603"
 ---
 # <a name="encode-attribute"></a>atributo de codificación
 
@@ -59,7 +59,7 @@ Especifica el nombre de la interfaz.
 *interface-definition* 
 </dt> <dd>
 
-Especifica instrucciones IDL que forman la definición de la interfaz.
+Especifica instrucciones IDL que forman la definición de la interfaz .
 
 </dd> <dt>
 
@@ -91,15 +91,15 @@ Especifica un tipo definido en el archivo IDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo \] de codificación** hace que el compilador MIDL genere código que una aplicación puede usar para serializar los datos en un búfer. El **\[** [**atributo de descodificación**](decode.md) **\]** genera el código para desmarque los datos de un búfer.
 
-Use los **\[ atributos de codificación \]** y descodificación de un ACF para generar código de serialización para procedimientos o tipos definidos en el archivo **\[** [](decode.md) **\]** IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ la codificación \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo operativo, **\[ la codificación \]** solo se aplica al procedimiento especificado. Cuando se usa como atributo de tipo, **\[ la codificación \]** solo se aplica al tipo especificado.
+Use los **\[ atributos de codificación \]** y descodificación en un ACF para generar código de serialización para procedimientos o tipos definidos en el archivo **\[** [](decode.md) **\]** IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ la codificación \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo operativo, **\[ la codificación \]** solo se aplica al procedimiento especificado. Cuando se usa como atributo de tipo, **\[ la codificación \]** solo se aplica al tipo especificado.
 
 Cuando el atributo **\[ de \]** codificación o descodificación se aplica a un procedimiento, el compilador MIDL genera un código auxiliar de serialización de forma similar a como se generan códigos auxiliares remotos para **\[** [](decode.md) **\]** rutinas remotas. Un procedimiento puede ser remoto o serializador, pero no puede ser ambos. El prototipo de la rutina generada se envía al CÓDIGO AUXILIAR. Archivo H mientras el propio código auxiliar entra en el \_ archivo STUB C.C.
 
-El compilador MIDL genera dos **\[ \]** funciones para cada tipo al que se aplica el atributo de codificación y una función adicional para cada tipo al que se aplica el atributo **\[** [**de**](decode.md) **\]** descodificación. Por ejemplo, para un tipo definido por el usuario denominado MyType, el compilador genera código para las funciones MyType \_ Encode, MyType Decode y \_ MyType \_ AlignSize. Para estas funciones, el compilador escribe prototipos en STUB. H y código fuente a STUB \_ C.C.
+El compilador MIDL **\[ \]** genera dos funciones para cada tipo al que se aplica el atributo de codificación y una función adicional para cada tipo al que se **\[** [](decode.md) **\]** aplica el atributo de descodificación. Por ejemplo, para un tipo definido por el usuario denominado MyType, el compilador genera código para las funciones MyType \_ Encode, MyType Decode y \_ MyType \_ AlignSize. Para estas funciones, el compilador escribe prototipos en STUB. H y código fuente a STUB \_ C.C.
 
 Para obtener información adicional sobre los identificadores de serialización y la codificación o la codificación de datos, vea [Servicios de serialización](/windows/desktop/Rpc/serialization-services).
 

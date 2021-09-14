@@ -4,12 +4,12 @@ ms.assetid: 97597dcf-eb18-47aa-b0ed-a43286d5d134
 title: Clases base de MSP de TAPI 3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee34d4f9f67618c3637bfaff149773ab7b0de4b93f33c8bca8e5eb892527735e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7eb7c7958847ef7bf699cfe4810f7133ef0b4bc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071066"
 ---
 # <a name="tapi-3-msp-base-classes"></a>Clases base de MSP de TAPI 3
 

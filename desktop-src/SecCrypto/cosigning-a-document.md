@@ -4,12 +4,12 @@ ms.assetid: f81cbf7b-317d-4fab-9b30-88b6c6576db8
 title: Cosignación de un documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb384ef47001f1df85810ac37595988da96a356ff3b36b1b140d1a6f54d0d698
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa06cbbc95dc0fe558c6e704bd18102e80221dbc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117769390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259588"
 ---
 # <a name="cosigning-a-document"></a>Cosignación de un documento
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c1cd6d20731e38b9f234d2e4a10e97a68c7cf2521258034663d949131b193faf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b0f4662b4884da227a64768cc29bce4c615f8f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070193"
 ---
 # <a name="takeownershipex-method-of-the-win32_pagefile-class"></a>Método TakeOwnerShipEx de la clase PageFile de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShipEx** obtiene la propiedad del archivo de paginación lógico especificado en la ruta de acceso del objeto. Este método es una versión extendida del [**método TakeOwnerShip.**](takeownership-method-in-class-win32-directory.md) Si el archivo lógico es realmente un directorio, este método actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,18 +47,18 @@ uint32 TakeOwnerShipEx(
 *StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo o directorio en el que se ha fallado **el método TakeOwnerShipEx.** Este parámetro será **NULL si** el método se realiza correctamente.
+Nombre del archivo o directorio en el que el **método TakeOwnerShipEx ha fallado.** Este parámetro será **NULL si** el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ en, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Denomina el archivo o directorio secundario que se usará como punto de partida **para TakeOwnerShipEx.** El *parámetro StartFileName* suele ser el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL,** la operación se realiza en el archivo o directorio especificado en la llamada a ExecMethod.
+Denomina el archivo o directorio secundario que se usará como punto de partida **para TakeOwnerShipEx.** El *parámetro StartFileName suele* ser el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL**, la operación se realiza en el archivo o directorio especificado en la llamada a ExecMethod.
 
 </dd> <dt>
 
-*Recursivo* \[ en, opcional\]
+*Recursiva* \[ in, opcional\]
 </dt> <dd>
 
 Si **es true**, el cambio de propiedad se aplicará de forma recursiva a los archivos y directorios del directorio especificado por la instancia de [**\_ LogicalFile de CIM.**](cim-logicalfile.md)
@@ -142,7 +142,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Ha habido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

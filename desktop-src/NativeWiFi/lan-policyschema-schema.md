@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 18352f525ab11995aa3236bb95bdab17377b1a1942b97c852803bf6687305340
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68b81aba17ff2310e6913f133aacb2ddc103b517
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117798455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071577"
 ---
 # <a name="lan_policy-schema"></a>Esquema de directiva LAN \_
 
-El esquema de \_ directiva LAN define un perfil de directiva cableada (LAN).
+El esquema de directiva LAN \_ define un perfil de directiva cableada (LAN).
 
 El elemento raíz de un perfil de directiva LAN es [**el elemento LANPolicy.**](lan-policyschema-lanpolicy-element.md) Cada perfil tiene exactamente un elemento raíz. Todos los elementos de \_ directiva LAN están en el espacio de nombres `https://www.microsoft.com/networking/LAN/policy/v1` .
 
--   [DIRECTIVA DE \_ LANEsquema de elementos](lan-policyschema-elements.md)
+-   [DIRECTIVA DE \_ LANEsquema Elements](lan-policyschema-elements.md)
 -   [DIRECTIVA DE \_ LANEsquema de tipos simples](lan-policyschema-simple-types.md)
 
  

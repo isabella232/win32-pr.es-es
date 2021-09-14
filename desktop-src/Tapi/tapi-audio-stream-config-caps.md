@@ -4,18 +4,18 @@ ms.assetid: 61575839-4604-4c8b-ae4d-fe796c3c5314
 title: TAPI_AUDIO_STREAM_CONFIG_CAPS estructura (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51fc4777e6d174f7d4aaeac9bbd3f6d467123275b4030c9fa21363223584e8b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: daec587a8e760bedd3ab9c6b3469ef8f70b72383
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118861224"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071058"
 ---
 # <a name="tapi_audio_stream_config_caps-structure"></a>Estructura TAPI \_ AUDIO \_ STREAM CONFIG \_ \_ CAPS
 
 \[Esta estructura no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-La **estructura TAPI \_ AUDIO STREAM \_ CONFIG \_ \_ CAPS** contiene la estructura [**TAPI STREAM CONFIG \_ \_ \_ CAPS**](tapi-stream-config-caps.md) cuando el **miembro CapsType** se establece en el miembro **AudioCap** de la unión [**StreamConfigCapsType.**](streamconfigcapstype.md)
+La estructura **TAPI \_ AUDIO STREAM CONFIG \_ \_ \_ CAPS** contiene la estructura [**TAPI STREAM CONFIG \_ \_ \_ CAPS**](tapi-stream-config-caps.md) cuando el **miembro CapsType** se establece en el **miembro AudioCap** de la unión [**StreamConfigCapsType.**](streamconfigcapstype.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -26,14 +26,14 @@ La **estructura TAPI \_ AUDIO STREAM \_ CONFIG \_ \_ CAPS** contiene la estructu
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Descripción**
 </dt> <dd>
 
-Una descripción sencilla del tipo de configuración de secuencia de audio para mostrar a los usuarios de la aplicación.
+Una descripción detallada del tipo de configuración de secuencia de audio para mostrar a los usuarios de la aplicación.
 
 </dd> <dt>
 
@@ -125,14 +125,14 @@ Granularidad de los valores de bytes por segundo.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                       |
-| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

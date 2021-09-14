@@ -4,12 +4,12 @@ ms.assetid: dabe44f7-97dd-4037-80e5-f289bab6d4b3
 title: Quitar ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d59a22ab4fc321ceaf661aed1ba37970806beb8afe87e90ee9dbc59fa52e8fae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9f214330fc16704fd4eef50bc8c75fc10fc2823d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260991"
 ---
 # <a name="remove-controlevent"></a>Quitar ControlEvent
 
@@ -31,7 +31,7 @@ Cadena que es el nombre de la característica o "ALL".
 
 Este control ControlEvent no realiza ninguna acción en los suscriptores.
 
-## <a name="action-by-publisher-when-subscriber-activated"></a>Acción por Publisher cuando se activa el suscriptor
+## <a name="action-by-publisher-when-subscriber-activated"></a>Acción de Publisher cuando se activa el suscriptor
 
 El instalador mantiene el cuadro de diálogo actual en ejecución y notifica al instalador.
 

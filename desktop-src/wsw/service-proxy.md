@@ -5,21 +5,21 @@ ms.assetid: e1a5bf5e-dbc1-43e3-981b-7db4caa08bdc
 keywords:
 - Servicios web de proxy de servicio para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ff23349545c47dde2a54ea0b0911d3f792f21778f5053628929d3a98c69b0f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ac82509fa155084cbb4ca3e6b9437728c6f853a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261972"
 ---
 # <a name="service-proxy"></a>Proxy de servicio
 
 Un proxy de servicio es el proxy del lado cliente para un servicio. El proxy de servicio permite a las aplicaciones enviar y recibir [mensajes](message.md) a través de [un canal como](channel.md) llamadas de método.
 
-Los servidores proxy de servicio se crean según sea necesario, se abren, se usan para llamar a un servicio y se cierran cuando ya no son necesarios. Como alternativa, una aplicación puede reutilizar un proxy de servicio para conectarse repetidamente al mismo servicio sin el gasto de tiempo y los recursos necesarios para inicializar un proxy de servicio más de una vez. En el diagrama siguiente se muestra el flujo de los posibles estados del proxy de servicio y las llamadas de función o eventos que conducen de un estado a otro.
+Los servidores proxy de servicio se crean según sea necesario, se abren, se usan para llamar a un servicio y se cierran cuando ya no son necesarios. Como alternativa, una aplicación puede reutilizar un proxy de servicio para conectarse repetidamente al mismo servicio sin el gasto de tiempo y los recursos necesarios para inicializar un proxy de servicio más de una vez. En el diagrama siguiente se muestra el flujo de los posibles estados del proxy de servicio y las llamadas de función o los eventos que conducen de un estado a otro.
 
 ![Diagrama que muestra los estados del proxy de servicio y las llamadas de función o eventos que conducen de un estado a otro.](images/serviceproxystates.png)
 
@@ -111,9 +111,9 @@ Para obtener más información sobre cómo se usan los servidores proxy de servi
 Las siguientes consideraciones de diseño de aplicaciones deben tenerse en cuenta cuidadosamente al usar la API de proxy del servicio WWSAPI:
 
 -   El proxy de servicio no realizará ninguna validación de los datos más allá de la validación de Basic Profile 2.0 y la serialización XML. Es responsabilidad de la aplicación validar los datos contenidos en los parámetros que recibe como parte de la llamada.
--   La configuración del número máximo de llamadas pendientes en el proxy de servicio, mediante el valor de enumeración WS PROXY PROPERTY **\_ MAX PENDING \_ \_ \_ \_ CALLS** de [**WS PROXY \_ \_ \_ ID**](/windows/desktop/api/WebServices/ne-webservices-ws_proxy_property_id) proporciona protección contra un servidor de ejecución lenta. El máximo predeterminado es 100. Las aplicaciones deben tener cuidado al modificar los valores predeterminados.
+-   La configuración del número máximo de llamadas pendientes en el proxy de servicio, mediante el valor de enumeración WS PROXY PROPERTY **MAX PENDING \_ \_ \_ \_ \_ CALLS** de [**WS \_ \_ \_ PROXY,**](/windows/desktop/api/WebServices/ne-webservices-ws_proxy_property_id) proporciona protección contra un servidor de ejecución lenta. El máximo predeterminado es 100. Las aplicaciones deben tener cuidado al modificar los valores predeterminados.
 -   El proxy de servicio no proporciona ninguna garantía de seguridad más allá de las especificadas en la estructura DE DESCRIPCIÓN DE SEGURIDAD de [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description) que se usa para comunicarse con el servidor.
--   Debe tener cuidado al modificar los valores [predeterminados de mensaje](message.md) y canal en el proxy de servicio. [](channel.md) Lea las consideraciones de seguridad asociadas a los mensajes y canales antes de modificar cualquiera de las propiedades relacionadas.
+-   Debe tener cuidado al modificar los valores [predeterminados de mensaje](message.md) [y](channel.md) canal en el proxy de servicio. Lea las consideraciones de seguridad asociadas a los mensajes y canales antes de modificar cualquiera de las propiedades relacionadas.
 -   El proxy de servicio cifra todas las credenciales que mantiene en memoria.
 
 Los siguientes elementos de API se relacionan con los servidores proxy de servicio.

@@ -3,7 +3,7 @@ title: atributo personalizado
 description: El atributo \ custom\ crea un atributo definido por el usuario.
 ms.assetid: 63c93eca-c9c1-4c14-9f46-aa78b01d9ff8
 keywords:
-- MIDL de atributo personalizado
+- atributo personalizado MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace6a558da428da07a432653391e0e48b7a5545bb1a83eb40d9c950abfa9d9aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef7c4210091cc028d7724cb40724f22a91eb7d74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118643674"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159635"
 ---
 # <a name="custom-attribute"></a>atributo personalizado
 
@@ -55,7 +55,7 @@ Otros atributos, como **\[** [**uuid**](uuid.md) **\]** y **\[** [**helpstring**
 *element-type* 
 </dt> <dd>
 
-Tipo de elemento al que se aplica el atributo personalizado. Puede ser una instrucción de biblioteca, información de tipos, una variable, una función o un parámetro. No se puede usar un atributo personalizado en un miembro de una coclase.
+Tipo de elemento al que se aplica el atributo personalizado. Puede ser una instrucción de biblioteca, información de tipo, una variable, una función o un parámetro. No se puede usar un atributo personalizado en un miembro de una coclase.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Nombre del elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use el **\[ atributo \]** personalizado para definir su propio atributo. Por ejemplo, puede crear un atributo con valores de cadena que proporciona el ProgID para una clase.
 
@@ -78,7 +78,7 @@ Para recuperar un valor de atributo personalizado, llame a uno de los siguientes
 -   ITypeInfo2::GetVarCustData(index, rguid, pvarval)
 -   ITypeInfo2::GetParamCustData(indexFunc, indexParam, rguid, pvarVal)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
