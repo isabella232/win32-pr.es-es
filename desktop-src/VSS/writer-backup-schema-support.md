@@ -4,12 +4,12 @@ ms.assetid: ea504f8e-26d9-499e-b3e9-03515b480a75
 title: Compatibilidad con esquemas de copia de seguridad del escritor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56b037591d6deda2657acdfe4f4e4755fef96b52bafc92e4cc51e4ef7119de1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 593df12f552f206d5d0eedbf8d021b69ef955c6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118344248"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242025"
 ---
 # <a name="writer-backup-schema-support"></a>Compatibilidad con esquemas de copia de seguridad del escritor
 
@@ -36,12 +36,12 @@ Para implementar completamente una copia de seguridad, es necesario la participa
 
 -   Incremental/Diferencial: compatibilidad con la marca de tiempo (VSS BS TIMESTAMPED): indica que un escritor admite el uso del mecanismo de marca de tiempo de VSS para incluir archivos en operaciones incrementales o \_ \_ diferenciales. En la copia de [](vssgloss-f.md) seguridad, el escritor debe almacenar la marca de copia de seguridad de un conjunto de archivos con el método [**IVssComponent::SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp) y, en la restauración, recuperarlo con [**IVssComponent::GetPreviousBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp).
 -   Incremental/Diferencial: tiempo de compatibilidad con la última modificación (VSS BS LAST MODIFY): indica que al implementar copias de seguridad incrementales o diferenciales con archivos diferenciados, un sistema de escritura puede proporcionar información sobre la hora de la última modificación de forma \_ \_ \_ independiente. Esta información se puede proporcionar a un solicitante a través del método [**IVssComponent::AddDifferencedFilesByLastModifyTime.**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-adddifferencedfilesbylastmodifytime)
--   Incremental/Diferencial: limitación de compatibilidad (DIFERENCIAL INCREMENTAL EXCLUSIVO de VSS BS): indica la compatibilidad del escritor con esquemas de copia de seguridad diferenciales o de incremento, pero solo exclusivamente: por ejemplo, no se puede seguir una copia de seguridad incremental con una copia de seguridad \_ \_ \_ \_ diferencial.
+-   Incremental/Diferencial: limitación de compatibilidad (DIFERENCIAL INCREMENTAL EXCLUSIVO de VSS BS): indica la compatibilidad del escritor con esquemas de copia de seguridad diferenciales o incrementales, pero solo exclusivamente: por ejemplo, no se puede seguir una copia de seguridad incremental con una copia de seguridad \_ \_ \_ \_ diferencial.
 -   Estado del sistema independiente (ESTADO DEL SISTEMA INDEPENDIENTE DE VSS BS): indica que el sistema de escritura admite la copia de seguridad de datos que forman parte del estado del sistema, pero de los que también se puede hacer una copia de seguridad independientemente del estado del \_ \_ \_ \_ sistema.
 
     **Windows Server 2003 y Windows XP:** Este valor no se admite hasta Windows Vista.
 
--   Roll-Forward restauración (ROLLFORWARD RESTORE de VSS BS): indica que el escritor admite un solicitante que establece un punto de restauración de puesta al día mediante \_ \_ \_ [**IVssBackupComponentsEx2::SetRollForward**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setrollforward).
+-   Roll-Forward restore (VSS BS ROLLFORWARD RESTORE): indica que el escritor admite un solicitante que establece un punto de restauración de puesta al día mediante \_ \_ \_ [**IVssBackupComponentsEx2::SetRollForward**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setrollforward).
 
     **Windows Server 2003 y Windows XP:** Este valor no se admite hasta Windows Vista.
 
@@ -49,7 +49,7 @@ Para implementar completamente una copia de seguridad, es necesario la participa
 
     **Windows Server 2003 y Windows XP:** Este valor no se admite hasta Windows Vista.
 
--   Restauración autoritativa (RESTORE AUTORITATIVA de VSS BS): indica que el escritor admite una restauración autoritativa de configuración del solicitante mediante \_ \_ \_ [**IVssBackupComponentsEx2::SetAuthotiveRestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setauthoritativerestore).
+-   Restauración autoritativa (RESTORE AUTORITATIVA de VSS BS): indica que el escritor admite una restauración autoritativa de configuración del solicitante mediante \_ \_ \_ [**IVssBackupComponentsEx2::SetAuthoritativeRestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-setauthoritativerestore).
 
 Los escritores establecen sus esquemas mediante el método [**IVssCreateWriterMetadata::SetBackupSchema**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-setbackupschema) y un solicitante obtiene el esquema de cada escritor mediante una llamada a [**IVssExwriterMetadata::GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema).
 

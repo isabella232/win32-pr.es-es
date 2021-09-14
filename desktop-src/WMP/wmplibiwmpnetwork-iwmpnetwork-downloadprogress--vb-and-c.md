@@ -4,7 +4,7 @@ description: La propiedad downloadProgress obtiene el porcentaje de descarga com
 ms.assetid: 40568c81-5bb5-45d9-b654-31072608663d
 keywords:
 - downloadProgress, propiedad Reproductor de Windows Media
-- downloadProgress, propiedad Reproductor de Windows Media , interfaz IWMPNetwork
+- propiedad downloadProgress Reproductor de Windows Media , interfaz IWMPNetwork
 - Interfaz IWMPNetwork Reproductor de Windows Media , downloadProgress, propiedad
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96c2b47895d595a570191d9aa66b90b1cdc53392f8f111d64307074e5689f2ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b10b767845ac951e1364e15c7f6f1d729882e0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241689"
 ---
 # <a name="iwmpnetworkdownloadprogress-property"></a>Propiedad IWMPNetwork::d ownloadProgress
 
 La **propiedad downloadProgress** obtiene el porcentaje de descarga completada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property downloadProgress As System.Int32
 
 **System.Int32 que** es el progreso de descarga expresado como porcentaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el control Reproductor de Windows Media está conectado a un archivo multimedia digital que se puede reproducir y descargar al mismo tiempo, la propiedad **downloadProgress** obtiene el porcentaje del archivo total que se ha descargado. Esta característica solo se admite actualmente para archivos multimedia digitales descargados de servidores web. Se puede descargar y reproducir simultáneamente un archivo de cualquiera de los siguientes formatos:
 
@@ -143,7 +143,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -151,7 +151,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

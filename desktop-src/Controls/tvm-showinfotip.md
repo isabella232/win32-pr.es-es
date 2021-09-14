@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e1cf61511e8c9e69c42d89f99fc4ddae90de78701e5e75170ff1b793671120
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76f147253800469a800677a242ff0ab0ccdbdfa4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119913925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165606"
 ---
 # <a name="tvm_showinfotip-message"></a>Mensaje \_ SHOWINFOTIP de TVM
 
@@ -43,9 +43,9 @@ Identificador del elemento.
 
 Devuelve cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La mayoría de las aplicaciones no usan este mensaje. La información se muestra automáticamente. Para obtener más información, vea Using Tree-view Infotips (Información sobre el uso de información sobre la vista de árbol) en about Tree-View Controls overview (Información general [sobre Tree-View controles).](tree-view-controls.md)
+La mayoría de las aplicaciones no usan este mensaje. La información sobre información se muestra automáticamente. Para obtener más información, vea Using Tree-view Infotips (Uso de información sobre la vista de árbol) en [Información general Tree-View controles.](tree-view-controls.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ La mayoría de las aplicaciones no usan este mensaje. La información se muestra
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

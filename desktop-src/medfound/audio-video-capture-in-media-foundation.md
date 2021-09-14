@@ -4,12 +4,12 @@ ms.assetid: 8a9d96f8-1096-4b66-a2ec-8a95d754ea72
 title: Captura de audio y vídeo en Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03cf225c8e11823779a401288135017d119fe67e4cd32fa39b54f3cd39b7bb45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 506c14ee4ab94a27cfafbe18a97ffa8f05676f1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117880910"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269388"
 ---
 # <a name="audiovideo-capture-in-media-foundation"></a>Captura de audio y vídeo en Media Foundation
 
@@ -24,7 +24,7 @@ Para enumerar los dispositivos de captura en el sistema, realice los pasos sigui
 1.  Llame a [**la función MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos.
 2.  Establezca el [atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE \_ \_ TYPE](mf-devsource-attribute-source-type.md) en uno de los valores siguientes:
 
-    | Valor                                                    | Descripción                      |
+    | Value                                                    | Descripción                      |
     |----------------------------------------------------------|----------------------------------|
     | **MF \_ DEVSOURCE \_ ATTRIBUTE \_ SOURCE \_ TYPE \_ AUDCAP \_ GUID** | Enumerar dispositivos de captura de audio. |
     | **MF \_ DEVSOURCE \_ ATTRIBUTE \_ SOURCE \_ TYPE \_ VIDCAP \_ GUID** | Enumerar dispositivos de captura de vídeo. |
@@ -94,8 +94,8 @@ HRESULT CreateVideoCaptureDevice(IMFMediaSource **ppSource)
 Puede consultar los objetos de activación para obtener varios atributos, incluidos los siguientes:
 
 -   El [atributo MF \_ DEVSOURCE \_ ATTRIBUTE FRIENDLY \_ \_ NAME](mf-devsource-attribute-friendly-name.md) contiene el nombre para mostrar del dispositivo. El nombre para mostrar es adecuado para mostrarse al usuario, pero puede que no sea único.
--   En el caso de los dispositivos de vídeo, el atributo [ \_ MF DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP SYMBOLIC \_ \_ LINK](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) contiene el vínculo simbólico al dispositivo. El vínculo simbólico identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
--   En el caso de los dispositivos de audio, el atributo [MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ AUDCAP \_ ENDPOINT \_ ID](mf-devsource-attribute-source-type-audcap-endpoint-id.md) contiene el identificador de punto de conexión de audio del dispositivo. El identificador del punto de conexión de audio es similar a un vínculo simbólico. Identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
+-   En el caso de los dispositivos de vídeo, el atributo [ \_ \_ DEVSOURCE ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP SYMBOLIC \_ \_ LINK](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) contiene el vínculo simbólico al dispositivo. El vínculo simbólico identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
+-   Para los dispositivos de audio, el atributo [MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ AUDCAP \_ ENDPOINT \_ ID](mf-devsource-attribute-source-type-audcap-endpoint-id.md) contiene el identificador de punto de conexión de audio del dispositivo. El identificador del punto de conexión de audio es similar a un vínculo simbólico. Identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
 
 En el ejemplo siguiente se toma una matriz de punteros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) y se imprime el nombre para mostrar de cada dispositivo en la ventana de depuración:
 

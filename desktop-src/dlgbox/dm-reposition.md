@@ -3,7 +3,7 @@ title: DM_REPOSITION mensaje (Winuser.h)
 description: Vuelve a colocar un cuadro de diálogo de nivel superior para que se ajuste al área de escritorio. Una aplicación puede enviar este mensaje a un cuadro de diálogo después de cambiar su tamaño para asegurarse de que todo el cuadro de diálogo permanece visible.
 ms.assetid: 8386d23e-06ea-4ea7-adde-ac97fc97861d
 keywords:
-- DM_REPOSITION cuadros de diálogo del mensaje
+- DM_REPOSITION de diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52fd3978df92e379f4750b4140c137b915d0d1ae21ac0a5124d3e9d87e62d5c8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 19425d4d77a62117f3fadfdd98f0629b81bf334c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120117815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241371"
 ---
 # <a name="dm_reposition-message"></a>Mensaje \_ DM REPOSITION
 
@@ -55,7 +55,7 @@ Este parámetro no se usa y debe ser cero.
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje no tiene ningún efecto si el cuadro de diálogo es una ventana secundaria.
 

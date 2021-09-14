@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ef0165ffaf1f0f04b32cda43e21c97fed012ad6d61b32f8919612f8924f7c66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8783fd5acdf7319699cdc67cbb3ea075e4dbbc28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165793"
 ---
 # <a name="tvm_deleteitem-message"></a>Mensaje \_ DELETEITEM de TVM
 
@@ -35,17 +35,17 @@ Quita un elemento y todos sus elementos secundarios de un control de vista de á
 *lParam* 
 </dt> <dd>
 
-**Identificador HTREEITEM** para el elemento que se eliminará. Si *lParam se* establece en TVI ROOT o \_ en **NULL,** se eliminan todos los elementos. También puede usar la macro [**\_ DeleteAllItems de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteallitems) para eliminar todos los elementos.
+**Identificador HTREEITEM** para el elemento que se eliminará. Si *lParam está* establecido en TVI \_ ROOT o en **NULL,** se eliminan todos los elementos. También puede usar la macro [**TreeView \_ DeleteAllItems**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteallitems) para eliminar todos los elementos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No es seguro eliminar elementos en respuesta a una notificación como [TVN \_ SELCHANGING.](tvn-selchanging.md)
+No es seguro eliminar elementos en respuesta a una notificación como [TVN \_ SELCHANGING](tvn-selchanging.md).
 
 Una vez eliminado un elemento, su identificador no es válido y no se puede usar.
 
@@ -63,7 +63,7 @@ Si elimina todos los elementos de un control de vista de árbol que tiene el est
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

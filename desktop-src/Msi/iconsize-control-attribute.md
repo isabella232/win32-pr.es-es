@@ -4,16 +4,16 @@ ms.assetid: 2d4d3689-a45a-4088-b466-e2b3bf4c8fb5
 title: IconSize (atributo de control)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7323d9c3d8dc9bef1bfd4cd275a20dfcadaa3be946bc78fd358a2d6484db53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7cb615a53c589ebc2ad2cafb8a2ff7dec902865e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074459"
 ---
 # <a name="iconsize-control-attribute"></a>IconSize (atributo de control)
 
-Un archivo de icono puede contener varios tamaños diferentes de la misma imagen de icono. Estos bits especifican el tamaño de la imagen de icono que se va a cargar. Si no se establece ninguno de los bits, se carga la primera imagen. Si solo **se establece msidbControlAttributesIconSize16,** se carga la primera imagen de 16 x 16. Si solo se **establece msidbControlAttributesIconSize32,** se carga la primera imagen de 32x32. Si **se establece msidbControlAttributesIconSize48,** se carga la primera imagen de 48x48.
+Un archivo de icono puede contener varios tamaños diferentes de la misma imagen de icono. Estos bits especifican el tamaño de la imagen de icono que se va a cargar. Si no se establece ninguno de los bits, se carga la primera imagen. Si solo **se establece msidbControlAttributesIconSize16,** se carga la primera imagen de 16 x 16. Si solo se **establece msidbControlAttributesIconSize32,** se carga la primera imagen de 32 x 32. Si **se establece msidbControlAttributesIconSize48,** se carga la primera imagen de 48 x 48.
 
 ## <a name="valid-controls"></a>Controles válidos
 
@@ -39,11 +39,11 @@ Un archivo de icono puede contener varios tamaños diferentes de la misma imagen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para establecer este atributo en un control , incluya los bits IconSize en la columna Atributos del registro del control en la [tabla Control](control-table.md).
+Para establecer este atributo en un control , incluya los bits IconSize en la columna Attributes del registro del control en la [tabla Control](control-table.md).
 
-Si no se establece el bit [FixedSize,](fixedsize-control-attribute.md) la imagen cargada se reducirá o se ajustará para ajustarse al control de icono. Si se establece el bit [FixedSize](fixedsize-control-attribute.md) y la imagen cargada es menor que el control de icono, la imagen se muestra centrada dentro del control. Si se establece el bit [FixedSize](fixedsize-control-attribute.md) y la imagen cargada es mayor que el control de icono, la imagen se reduce para ajustarse al control.
+Si no se establece el bit [FixedSize,](fixedsize-control-attribute.md) la imagen cargada se encoge o se ajusta para ajustarse al control de icono. Si se establece el bit [FixedSize](fixedsize-control-attribute.md) y la imagen cargada es menor que el control de icono, la imagen se muestra centrada dentro del control. Si se establece el bit [FixedSize](fixedsize-control-attribute.md) y la imagen cargada es mayor que el control de icono, la imagen se reduce para ajustarse al control.
 
 Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 

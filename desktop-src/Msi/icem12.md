@@ -4,24 +4,24 @@ ms.assetid: 1a168629-9865-4412-8317-8af8b9a7b8bd
 title: ICEM12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e53e6f83b9ffccf6595719815ec4bd44cc8ff3774b989b682751dd9be1bbe5f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b37cbff2e29a85dd50ef1f044a43fdb8e48ffdd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118634948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074470"
 ---
 # <a name="icem12"></a>ICEM12
 
 ICEM12 comprueba que, en una tabla ModuleSequence, las acciones estándar tienen números de secuencia y las acciones personalizadas tienen valores BaseAction y After.
 
-Este ICEM está disponible en el archivo Mergemod.uu proporcionado en el SDK Windows Installer 2.0 y versiones posteriores. Para obtener más información, [consulte Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
+Este ICEM está disponible en el archivo Mergemod.uu proporcionado en el SDK de Windows Installer 2.0 y versiones posteriores. Para obtener más información, [consulte Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
 
 ## <a name="result"></a>Resultado
 
 ICEM12 publica un error en los casos siguientes:
 
--   Encuentra que el módulo contiene una [acción estándar sin](standard-actions.md) un número de secuencia.
+-   Encuentra que el módulo contiene una acción [estándar sin](standard-actions.md) un número de secuencia.
 -   Encuentra que una acción estándar tiene valores especificados en los campos BaseAction o After de la tabla [ModuleAdminUISequence](moduleadminuisequence-table.md), la tabla [ModuleAdminExecuteSequence,](moduleadminexecutesequence-table.md)la tabla [ModuleAdvtExecuteSequence,](moduleadvtexecutesequence-table.md)la tabla [ModuleInstallUISequence](moduleinstalluisequence-table.md)o la tabla [ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md).
 -   Busca que el módulo [](custom-actions.md) contiene una acción personalizada sin ningún valor especificado en los campos Sequence, BaseAction o After de la tabla [ModuleAdminUISequence](moduleadminuisequence-table.md), [ModuleAdminExecuteSequence](moduleadminexecutesequence-table.md)table , [ModuleAdvtExecuteSequence table](moduleadvtexecutesequence-table.md), [ModuleInstallUISequence table](moduleinstalluisequence-table.md)o [ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md)table .
 
@@ -93,7 +93,7 @@ Para corregir estos errores, pruebe lo siguiente:
 
 -   Quite el número de secuencia de la acción personalizada Action1 y use los campos BaseAction y After en su lugar.
 -   Escriba valores en los campos Sequence, BaseAction o After para la acción personalizada Action3. Deje los campos BaseAction y After vacíos para la acción estándar Action2.
--   No deje vacío el campo Secuencia para la acción estándar Action2.
+-   No deje el campo Secuencia vacío para la acción estándar Action2.
 
 ## <a name="related-topics"></a>Temas relacionados
 

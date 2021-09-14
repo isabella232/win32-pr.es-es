@@ -4,12 +4,12 @@ ms.assetid: b9795825-41fa-474b-a0c5-06770aa99bc1
 title: Llamar a funciones de base de datos desde programas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1959e43b680d84e04de1f68483e8a1016bbeca0e867daebf10a317838d68c0ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e2adeab5570bc6786439d5de509f03ab906a0c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158948"
 ---
 # <a name="calling-database-functions-from-programs"></a>Llamar a funciones de base de datos desde programas
 

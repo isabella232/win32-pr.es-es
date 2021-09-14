@@ -4,12 +4,12 @@ ms.assetid: 86de0dc1-ed8f-410c-a411-6c44c8e5c9fd
 title: Tabla MsiSFCBypass
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d233f09aa62b5f6d17112b1f5a98753e328f3a1746c452de5a5a1689a36f971f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 707294e9461aaf321add8a3959682a0db555cc2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120042675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074363"
 ---
 # <a name="msisfcbypass-table"></a>Tabla MsiSFCBypass
 

@@ -4,12 +4,12 @@ ms.assetid: 2e6d6eb3-1e71-46e6-a946-d9cc0b209325
 title: Instalación de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 005a987a7e61f646f58abd0ec699ce03bd29d85dfa2ddb01e8f693750acda740
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 472c58db3dc2e9094a26d57f871359a38930877b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074801"
 ---
 # <a name="file-installation"></a>Instalación de archivos
 

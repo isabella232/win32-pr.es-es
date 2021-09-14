@@ -1,28 +1,28 @@
 ---
-title: Atributos de elementos de foto
-description: Atributos de elementos de foto
+title: Atributos de elementos de fotos
+description: Atributos de elementos de fotos
 ms.assetid: 3d3ed3a8-09ac-4e3d-b52d-3614b3a3fc05
 keywords:
 - Reproductor de Windows Media,atributos de elemento de foto
-- Reproductor de Windows Media Atributos de elementos móviles y foto
+- Reproductor de Windows Media Atributos de elementos móviles y de fotos
 - Reproductor de Windows Media modelo de objetos, atributos de elemento de foto
-- modelo de objetos, atributos de elemento de foto
+- object model,photo item attributes
 - ActiveX control,atributos de elemento de foto
 - Reproductor de Windows Media ActiveX control,atributos de elemento de foto
-- Reproductor de Windows Media Control de ActiveX móvil, atributos de elemento de foto
+- Reproductor de Windows Media Control de ActiveX móvil,atributos de elemento de foto
 - referencia para el modelo de objetos, atributos de elemento de foto
 - attributes,photo items
 - atributos de elemento de foto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c9a5d36e77e9b58b642469bf8900eb32b3b789882afb7862bf8f44f5ab8cc22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6482151e2d9bbb15cff236f420b1386e5b68bfec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054423"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242481"
 ---
-# <a name="photo-item-attributes"></a>Atributos de elementos de foto
+# <a name="photo-item-attributes"></a>Atributos de elementos de fotos
 
 Los atributos siguientes están disponibles para un elemento de foto en la biblioteca.
 
@@ -34,7 +34,7 @@ Los atributos siguientes están disponibles para un elemento de foto en la bibli
 -   [**Atributo DLNASourceURI**](dlnasourceuri-attribute.md)
 -   [**Atributo DTCPIPHost**](dtcpiphost-attribute.md)
 -   [**Atributo DTCPIPPort**](dtcpipport-attribute.md)
--   [**Atributo de evento**](event-attribute.md)
+-   [**Atributo event**](event-attribute.md)
 -   [**Atributo FileSize**](filesize-attribute.md)
 -   [**Atributo FileType**](filetype-attribute.md)
 -   [**Atributo LibraryID**](libraryid-attribute.md)

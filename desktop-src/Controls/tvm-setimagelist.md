@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df79089c7a2071c6af702da9ef862178738ede3dccff312c3fbae7dbefe4de56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f308cb8a56b2e74a5703af144bac03c271efc95
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165653"
 ---
 # <a name="tvm_setimagelist-message"></a>Mensaje \_ SETIMAGELIST de TVM
 
-Establece la lista de imágenes normales o de estado para un control de vista de árbol y vuelve a dibujar el control mediante las nuevas imágenes. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetImageList de TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setimagelist)
+Establece la lista de imágenes normales o de estado para un control de vista de árbol y vuelve a dibujar el control mediante las nuevas imágenes. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setimagelist)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -56,9 +56,9 @@ Identificador de la lista de imágenes. Si *lParam* es **NULL,** el mensaje quit
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador a la lista de imágenes anterior, si lo hubiera, o **NULL en caso** contrario.
+Devuelve el identificador a la lista de imágenes anterior, si la hay, o **NULL en caso** contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control de vista de árbol no destruirá la lista de imágenes especificada con este mensaje. La aplicación debe destruir la lista de imágenes cuando ya no sea necesaria.
 
@@ -70,7 +70,7 @@ El control de vista de árbol no destruirá la lista de imágenes especificada c
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

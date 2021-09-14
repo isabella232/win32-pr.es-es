@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 291aff15260d5d693f3e6b0281d693a7351132fc017358f6f9ee21020dfd4f26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68712da95da2f5c21d5e370c688002aa14a8a166
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072211"
 ---
 # <a name="iamtimelinetransgetcutpoint2-method"></a>IamTimelineTrans::GetCutPoint2 (método)
 
@@ -48,7 +48,7 @@ HRESULT GetCutPoint2(
 *pTLTime* 
 </dt> <dd>
 
-Recibe el punto de corte, relativo a la hora de inicio de la transición, en segundos.
+Recibe el punto de corte, en relación con la hora de inicio de la transición, en segundos.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -98,7 +98,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 [**IamTimelineTrans (interfaz)**](iamtimelinetrans.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56ed83649795ccbd9b41270272f5a8984ddf257c3f5881a0c0fb69232081974e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fd55149f38fb17238e13135e798ebbe55b15009
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165718"
 ---
 # <a name="tvm_getlinecolor-message"></a>Mensaje \_ GETLINECOLOR de TVM
 
@@ -39,7 +39,7 @@ El **mensaje \_ GETLINECOLOR de TVM** obtiene el color de línea actual.
 
 Devuelve el color de línea actual o el valor DEFAULT de CLR \_ si no se ha especificado ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje solo recupera los colores de línea. Para recuperar los colores de "+" y "-" dentro de los botones, use el mensaje [**\_ GETTEXTCOLOR de TVM.**](tvm-gettextcolor.md)
 
@@ -51,7 +51,7 @@ Este mensaje solo recupera los colores de línea. Para recuperar los colores de 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

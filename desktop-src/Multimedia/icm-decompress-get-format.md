@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: fc7eefa655646deae8e67fa16a87bfdb81a8b936
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370526"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074230"
 ---
-# <a name="icm_decompress_get_format-message"></a>\_ICM Mensaje GET \_ FORMAT de DECOMPRESS \_
+# <a name="icm_decompress_get_format-message"></a>\_ICM MENSAJE GET FORMAT DE DECOMPRESS \_ \_
 
-El ICM mensaje GET FORMAT de **\_ DECOMPRESS \_ \_** solicita el formato de salida de los datos descomprimidos desde un controlador de descompresión de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressGetFormat.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat)
+El ICM mensaje GET FORMAT de **\_ DECOMPRESS \_ \_** solicita el formato de salida de los datos descomprimidos de un controlador de descompresión de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressGetFormat.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat)
 
 
 ```C++
@@ -48,7 +48,7 @@ Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bi
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) para contener el formato de salida. Puede especificar cero para solicitar solo el tamaño del formato de salida, como en la macro [**ICDecompressGetFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize)
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida. Puede especificar cero para solicitar solo el tamaño del formato de salida, como en la macro [**ICDecompressGetFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize)
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Si *lpbiOutput* es distinto de cero, devuelve ICERR \_ OK si se realiza correcta
 
 ## <a name="remarks"></a>Observaciones
 
-Si *lpbiOutput* es distinto de cero, el controlador debe rellenar la estructura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) con el formato de salida predeterminado correspondiente al formato de entrada especificado para *lpbiInput.* Si el producto puede generar varios formatos, el formato predeterminado debe ser el que conserva la mayor cantidad de información.
+Si *lpbiOutput* es distinto de cero, el controlador debe rellenar la estructura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) con el formato de salida predeterminado correspondiente al formato de entrada especificado para *lpbiInput*. Si el producto puede generar varios formatos, el formato predeterminado debe ser el que conserve la mayor cantidad de información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Si *lpbiOutput* es distinto de cero, el controlador debe rellenar la estructura 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

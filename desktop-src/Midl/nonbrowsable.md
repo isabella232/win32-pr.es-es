@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b6349683c3a3c591752036d9a5e2995d368460a049a79d2e1cf4123beb2b0ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e24c39511df9637c352245b98b237fe8fd451eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159448"
 ---
 # <a name="nonbrowsable-attribute"></a>nonbrowsable (atributo)
 
@@ -59,11 +59,11 @@ Cero o más parámetros que se pasarán al método .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Algunas propiedades no deben mostrarse en un explorador de propiedades. Esto puede deberse a que recuperar el valor tardaría mucho tiempo. En el ejemplo se impide que el usuario intente recuperar la *propiedad Count,* que devuelve el número de filas del conjunto dinámico. Este número puede representar los resultados de una consulta muy grande.
+Algunas propiedades no deben mostrarse en un explorador de propiedades. Esto puede deberse a que recuperar el valor tardaría mucho tiempo. El ejemplo evita que el usuario intente recuperar la *propiedad Count,* que devuelve el número de filas del conjunto dinámico. Este número puede representar los resultados de una consulta muy grande.
 
-Otras propiedades pueden tener efectos inesperados en el explorador. Por ejemplo, considere un control con la propiedad "IsSelected" para saber si el control está seleccionado. Si "IsSelected" se establece en false, un explorador de propiedades basado en selección examinará otro objeto.
+Otras propiedades pueden tener efectos inesperados en el explorador. Por ejemplo, considere un control con la propiedad "IsSelected" para saber si el control está seleccionado. Si "IsSelected" se establece en false, un explorador de propiedades basado en selección examinará un objeto diferente.
 
 Tenga en cuenta que una propiedad etiquetada como **\[ no \]** utilizable seguirá apareciendo en un explorador de objetos, que no muestra los valores de propiedad.
 

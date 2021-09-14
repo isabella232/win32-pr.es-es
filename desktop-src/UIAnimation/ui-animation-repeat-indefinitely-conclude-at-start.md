@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c3a4d255d36b52781670f156df183da2426c03a301f2e1a1acb5e9b73426d93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cba14f7eea6ba4c726edbd7faab134795746373b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119867715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242109"
 ---
 # <a name="ui_animation_repeat_indefinitely_conclude_at_start"></a>LA \_ ANIMACIÓN DE LA INTERFAZ DE USUARIO SE REPITE \_ \_ INDEFINIDAMENTE Y CONCLUYE AL \_ \_ \_ PRINCIPIO
 
@@ -39,8 +39,8 @@ Indica que el intervalo entre dos fotogramas clave de un guión gráfico debe re
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8, Windows 7 y Actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
-| Header<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 

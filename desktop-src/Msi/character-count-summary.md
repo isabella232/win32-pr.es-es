@@ -4,12 +4,12 @@ ms.assetid: d26d24a5-558e-4333-ae39-ffba1bbc5247
 title: Propiedad Resumen de recuento de caracteres
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 766cc9ab355e533c155bfc81bac7b3f6e82cf9ab8679cf4feb00e9d01705a94b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: afc99c065721f0f0b94691a12e00204305940efd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119754345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158927"
 ---
 # <a name="character-count-summary-property"></a>Propiedad Resumen de recuento de caracteres
 
@@ -27,7 +27,7 @@ Esta propiedad debe ser Null en un paquete de instalación o paquete de revisió
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

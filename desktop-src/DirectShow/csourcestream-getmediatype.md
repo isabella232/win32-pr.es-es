@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cb3095e366a03d94616d45eda441fec78d2ccbf7d58f8e74890a42902bae6fc2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d8936f08b952af069812859736a6a13ea9c0e4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073259"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072236"
 ---
 # <a name="csourcestreamgetmediatype-method-sourceh---iposition-and-pmediatype-parameters"></a>Método CSourceStream.GetMediaType (Source.h): parámetros iPosition y pMediaType
 
@@ -74,7 +74,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Hay dos versiones de este método. Una versión invalida el [**método CBasePin::GetMediaType**](cbasepin-getmediatype.md) y toma un valor de índice como parámetro. La otra versión está diseñada para recuperar un único tipo de medio, por lo que carece del parámetro index.
 
@@ -92,7 +92,7 @@ El método de parámetro único devuelve E \_ UNEXPECTED. El método de dos par�
 | Encabezado  | Source.h (incluir Secuencias.h)                                                                                    |
 | Biblioteca | Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

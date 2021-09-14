@@ -4,12 +4,12 @@ ms.assetid: 01747de6-7478-4403-ba36-8ff1abc2b70f
 title: DisableRollback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da8380ce5dc7ea0b711d5766a554d6dce970bc81587a75164e61f3694c6a5ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7f0ce15e618880f021e04adf7d2146a97f6ed65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158537"
 ---
 # <a name="disablerollback"></a>DisableRollback
 

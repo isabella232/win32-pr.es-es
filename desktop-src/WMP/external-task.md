@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aab4c20a5b5c6143e5c3023fde695c3809474a009dbb24acf812e3ccfbee2068
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e220eb9aa86c1db65e2b1cbcfa0177a40181cebf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241826"
 ---
 # <a name="externaltask"></a>External.task
 
@@ -30,7 +30,7 @@ ms.locfileid: "119901935"
 
 La **propiedad** de tarea recupera el nombre del panel de tareas actual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 window.external.task

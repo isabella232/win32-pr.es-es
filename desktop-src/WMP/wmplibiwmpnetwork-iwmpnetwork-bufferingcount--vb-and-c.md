@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b69169e950cf3794d613bfd1d79d4953ce8f8a8bb01efe9ff17d6fa5961071
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f4958892dd9784ee72b51adfedbbcdee81817b52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119899975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241700"
 ---
 # <a name="iwmpnetworkbufferingcount-property"></a>IWMPNetwork::bufferingCount, propiedad
 
 La **propiedad bufferingCount** obtiene el número de veces que se produjo el almacenamiento en búfer durante la reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,9 +48,9 @@ Public ReadOnly Property bufferingCount As System.Int32
 
 **System.Int32 que** es el recuento de almacenamiento en búfer.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece en cero. No se restablece si la reproducción está en pausa.
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece a cero. No se restablece si la reproducción está en pausa.
 
 El almacenamiento en búfer solo se aplica al contenido de streaming. Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la **propiedad AxWindowsMediaPlayer.URL.**
 
@@ -98,7 +98,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

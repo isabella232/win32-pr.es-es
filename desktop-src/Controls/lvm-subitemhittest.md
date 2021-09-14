@@ -1,6 +1,6 @@
 ---
 title: LVM_SUBITEMHITTEST mensaje (Commctrl.h)
-description: Determina qué elemento de vista de lista o subelemento se encuentra en una posición determinada. Puede enviar este mensaje explícitamente o mediante la \_ macro ListView SubItemHitTest.
+description: Determina qué elemento o subelemento de vista de lista se encuentra en una posición determinada. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView SubItemHitTest.
 ms.assetid: 1468febb-af0d-4c04-b0b1-cda5ec77aa2c
 keywords:
 - LVM_SUBITEMHITTEST controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 341f9b3f84646abe975c6543aef802450496154862353b7bbdd1af2c07c087ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c811a3ed85b9eb157920f700b34d5d9c99597e67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117830646"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072329"
 ---
 # <a name="lvm_subitemhittest-message"></a>Mensaje \_ LVM SUBITEMHITTEST
 
-Determina qué elemento de vista de lista o subelemento se encuentra en una posición determinada. Puede enviar este mensaje explícitamente o mediante la [**\_ macro ListView SubItemHitTest.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittest)
+Determina qué elemento o subelemento de vista de lista se encuentra en una posición determinada. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView SubItemHitTest.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittest)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,7 +35,7 @@ Determina qué elemento de vista de lista o subelemento se encuentra en una posi
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura LVHITTESTINFO.**](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) La [**estructura POINT**](/previous-versions//dd162805(v=vs.85)) dentro de **LVHITTESTINFO** debe establecerse en las coordenadas de cliente que se probarán.
+Puntero a una [**estructura LVHITTESTINFO.**](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) La [**estructura POINT**](/previous-versions//dd162805(v=vs.85)) dentro de **LVHITTESTINFO** debe establecerse en las coordenadas de cliente que se va a probar.
 
 </dd> </dl>
 
@@ -47,11 +47,11 @@ Devuelve el índice del elemento o subelemento probado, si lo hay, o -1 en caso 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

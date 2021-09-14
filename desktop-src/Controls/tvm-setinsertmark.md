@@ -1,6 +1,6 @@
 ---
 title: TVM_SETINSERTMARK mensaje (Commctrl.h)
-description: Establece la marca de inserción en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro \_ SetInsertMark de TreeView.
+description: Establece la marca de inserción en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetInsertMark.
 ms.assetid: 35441807-406a-408c-ad89-6dd40c907e3c
 keywords:
 - TVM_SETINSERTMARK controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c3004395dcc7ea0b83af2fc2b7dae370c303228f79599215d5b6d264379b793
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ff5a9cc9b05e9cd7dc3281d778734bee1048ffd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165638"
 ---
 # <a name="tvm_setinsertmark-message"></a>Mensaje \_ DE TVM SETINSERTMARK
 
-Establece la marca de inserción en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetInsertMark de TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmark)
+Establece la marca de inserción en un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetInsertMark.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmark)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,7 +47,7 @@ Establece la marca de inserción en un control de vista de árbol. Puede enviar 
 
 Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En algunas circunstancias, la marca de inserción puede aparecer en dos lugares después de expandir un nodo. Si usa marcas de inserción, se recomienda forzar una actualización del control después de expandir un nodo.
 
@@ -59,7 +59,7 @@ En algunas circunstancias, la marca de inserción puede aparecer en dos lugares 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5da87d0585a22d41743e58e946c4b1b39ca24c8bb131e9084596ce4f8c2b7ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dea693475ca42f962be07936f980cd3f5d52479c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118005706"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072314"
 ---
 # <a name="lvn_getemptymarkup-notification-code"></a>Código de \_ notificación LVN GETEMPTYMARKUP
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura NMLVEMPTYMARKUP.**](/windows/win32/api/commctrl/ns-c
 
 Devuelve **TRUE** para establecer el texto de marcado en el control list-view o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El receptor de notificaciones convierte *lParam* para recuperar la estructura [**NMLVEMPTYMARKUP.**](/windows/win32/api/commctrl/ns-commctrl-nmlvemptymarkup) El *parámetro wParam* contiene el identificador del control que envía este mensaje.
 
@@ -57,11 +57,11 @@ El receptor de notificaciones convierte *lParam* para recuperar la estructura [*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

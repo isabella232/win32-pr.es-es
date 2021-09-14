@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 239486792eb218d51c305f9955331e90c6c165586153dab167f2e19d3a0324e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0f403430f70fde71696ec2a35a34161f08bada9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118641040"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159328"
 ---
 # <a name="usesgetlasterror-attribute"></a>usesgetlasterror (atributo)
 
@@ -72,7 +72,7 @@ Tipo de los datos que devolverá el procedimiento remoto tras la finalización.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Nombre del procedimiento remoto tal como se define en el archivo IDL.
@@ -86,9 +86,9 @@ Cero o más parámetros para el procedimiento remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **\[ atributo \] usesgetlasterror** se puede establecer en un punto de entrada del módulo, si ese punto de entrada usa la función [**Windows SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para devolver códigos de error. El atributo indica al autor de la llamada que, si se produce un error al llamar a esa función, el autor de la llamada puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
+El **\[ atributo \] usesgetlasterror** se puede establecer en un punto de entrada de módulo, si ese punto de entrada usa la Windows [**función SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para devolver códigos de error. El atributo indica al autor de la llamada que, si se produce un error al llamar a esa función, el autor de la llamada puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
 
 ## <a name="examples"></a>Ejemplos
 

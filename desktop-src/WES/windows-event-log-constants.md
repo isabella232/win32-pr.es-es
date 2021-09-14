@@ -1,6 +1,6 @@
 ---
 title: Windows Constantes del registro de eventos (WinEvt.h)
-description: Windows El registro de eventos define las siguientes constantes
+description: Windows El registro de eventos define las constantes siguientes
 ms.assetid: d3a4a136-ca33-4dad-95ad-af1be6687843
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7fe5ecd134749e3420b43c621e506930ede982a271652083086175cea1549ea
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d592cea0eb1738f5ee04ce53faa9a5fa06c0d52a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119620165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241527"
 ---
 # <a name="windows-event-log-constants"></a>Windows Constantes del registro de eventos
 
-Windows El registro de eventos define las siguientes constantes:
+Windows El registro de eventos define las constantes siguientes:
 
 <dl> <dt>
 
@@ -38,7 +38,7 @@ Windows El registro de eventos define las siguientes constantes:
 
 
 
-Máscara de bits que se usa para enmascarar el bit de matriz del tipo variant, de modo que pueda determinar el tipo de datos del valor de variante que contiene la estructura [**\_ EVT VARIANT.**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant)
+Máscara de bits que se usa para enmascarar el bit de matriz del tipo de variante, por lo que puede determinar el tipo de datos del valor de variante que contiene la estructura [**\_ VARIANT de EVT.**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant)
 
 
 </dt> </dl> </dd> <dt>
@@ -51,7 +51,7 @@ Máscara de bits que se usa para enmascarar el bit de matriz del tipo variant, d
 
 
 
-El **miembro Type** de la estructura [**EVT \_ VARIANT**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant) tiene este conjunto de bits si la variante contiene un puntero a una matriz de valores, en lugar del propio valor.
+El **miembro Type** de la estructura [**EVT \_ VARIANT**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant) tiene este bit establecido si la variante contiene un puntero a una matriz de valores, en lugar del propio valor.
 
 
 </dt> </dl> </dd> <dt>
@@ -69,7 +69,7 @@ Permiso de control de acceso de lectura que permite leer información de un regi
 
 </dt> </dl> </dd> <dt>
 
-<span id="EVT_WRITE_ACCESS"></span><span id="evt_write_access"></span>**ACCESO DE ESCRITURA \_ EVT \_**
+<span id="EVT_WRITE_ACCESS"></span><span id="evt_write_access"></span>**ACCESO DE \_ ESCRITURA EVT \_**
 </dt> <dd> <dl> <dt>
 
 0x2
@@ -116,7 +116,7 @@ Todos los permisos de control de acceso (lectura, escritura, borrado y eliminaci
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
-| Header<br/>                   | <dl> <dt>WinEvt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinEvt.h</dt> </dl> |
 
 
 

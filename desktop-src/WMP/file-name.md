@@ -9,12 +9,12 @@ keywords:
 - mapas de bits en máscaras, nombres de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01dde5c362cb733eee78f2935efac049b2987a22c29ec52bf77cf9272c0bf535
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d984c6ed62299bef30bca3c08076f4d2f70a5aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241767"
 ---
 # <a name="file-name"></a>Nombre de archivo
 

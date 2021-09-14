@@ -3,7 +3,7 @@ title: TTN_POP de notificación (Commctrl.h)
 description: Notifica a la ventana de propietario que una información sobre herramientas está a punto de ocultarse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 44a38f1a-f1df-4057-bf76-f87eb467f0d7
 keywords:
-- TTN_POP código de notificación Windows controles
+- TTN_POP de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d3322da3ddbb677631a433e4cce1d2a9eb6e56c3484314026242f23c91c103f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 576aa382f571fb6ded7205d2df3b0abd938c704d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120109485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165802"
 ---
-# <a name="ttn_pop-notification-code"></a>Código de notificación pop de TTN \_
+# <a name="ttn_pop-notification-code"></a>Código de notificación POP de TTN \_
 
 Notifica a la ventana de propietario que una información sobre herramientas está a punto de ocultarse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -57,7 +57,7 @@ No de devuelve ningún valor.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -6,12 +6,12 @@ keywords:
 - Windows Animation Windows Animation ,guide
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 232761539434ddab6360ce145f07c1214333e84fbfc34fec1639aa7fef08b395
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d617e826d7c1a93618adb88af9384ab66b8f874c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119768665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242054"
 ---
 # <a name="windows-animation-development-guide"></a>Windows Guía de desarrollo de animaciones
 

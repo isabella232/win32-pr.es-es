@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87ba9f9d0af4d6afb3c454f5e5477ccd67728bdec7f378b0f0a04adc901ba322
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3608c3f959c45571d9bc085518b763cf505180ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118408592"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165786"
 ---
 # <a name="tvm_editlabel-message"></a>Mensaje \_ EDITLABEL de TVM
 
@@ -43,25 +43,25 @@ Controle el elemento que se editará.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador al control de edición utilizado para editar el texto del elemento si se realiza correctamente o **NULL en caso** contrario.
+Devuelve el identificador al control de edición utilizado para editar el texto del elemento si se realiza correctamente o **NULL** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje envía un [código de notificación \_ BEGINLABELEDIT](tvn-beginlabeledit.md) de TVN al elemento primario del control de vista de árbol.
 
 Cuando el usuario completa o cancela la edición, el control de edición se destruye y el identificador ya no es válido. Puede crear subclases del control de edición, pero no destruirlo.
 
-El control debe tener el foco antes de enviar este mensaje al control. El foco se puede establecer mediante la [**función SetFocus.**](/windows/desktop/api/winuser/nf-winuser-setfocus)
+El control debe tener el foco antes de enviar este mensaje al control . El foco se puede establecer mediante la [**función SetFocus.**](/windows/desktop/api/winuser/nf-winuser-setfocus)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVM \_ EDITLABELW** (Unicode) y **TVM \_ EDITLABELA** (ANSI)<br/>               |
 
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f9e02ff9665eac98717e1d316899a78f9b3b5908e5e41b3928b5cda541b96c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2fefe92691a150571ce16b0c80d187540d58f5f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117749257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242546"
 ---
 # <a name="editboxwordwrap"></a>EDITBOX.wordWrap
 
@@ -31,9 +31,9 @@ El **atributo wordWrap** especifica o recupera un valor que indica si el ajuste 
 
 Este atributo es un booleano **de** lectura y escritura con un valor predeterminado de true.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo solo es útil cuando **editStyle** se establece en "multilínea".
+Este atributo solo es útil cuando **editStyle** está establecido en "multilínea".
 
 Si el ajuste de línea está deshabilitado y el texto no cabe en el control , el texto se trunca.
 

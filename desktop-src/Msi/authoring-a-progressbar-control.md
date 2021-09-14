@@ -4,12 +4,12 @@ ms.assetid: cfc2d974-4f2d-4f52-9835-eab1dc091c9b
 title: Creación de un control ProgressBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1074744220bde8734fe0cd1f65aa1037ff1f0cb26763a11845a7ea7f1b58e507
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b872ed2dd36fb8ed04ee48fd69e4680fce002a18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159047"
 ---
 # <a name="authoring-a-progressbar-control"></a>Creación de un control ProgressBar
 
@@ -23,7 +23,7 @@ Cuando el cuadro de diálogo de presentación de acciones recibe un control SetP
 
 Además, el instalador difunde un [control ControlEvent de TimeRemaining](timeremaining-controlevent.md) en cada mensaje de progreso. El tiempo total restante para la instalación se determina calculando primero la tasa de ejecución, que es el número total de pasos transcurridos dividido por el tiempo total desde que se inició la instalación. El total de tics restantes divididos por la tasa de ejecución proporciona el tiempo aproximado restante.
 
-Cuando el cuadro de diálogo de presentación de la acción recibe el control ControlEvent de TimeRemaining, busca de nuevo en la tabla EventMapping los controles suscritos. Para mostrar el tiempo restante, se debe suscribir un [control Text](text-control.md) al control TimeRemaining ControlEvent con el atributo de [control TimeRemaining](timeremaining-control-attribute.md) especificado en la columna Atributos.
+Cuando el cuadro de diálogo de presentación de la acción recibe el control ControlEvent timeRemaining, busca de nuevo en la tabla EventMapping los controles suscritos. Para mostrar el tiempo restante, se debe suscribir un [control Text](text-control.md) al control TimeRemaining ControlEvent con el atributo de [control TimeRemaining](timeremaining-control-attribute.md) especificado en la columna Atributos.
 
 El control Text suscrito consulta la tabla [UIText](uitext-table.md) para obtener una cadena de plantilla con parámetros denominada "TimeRemaining". Esta cadena tiene dos parámetros, \[ 1 \] para minutos y \[ 2 para \] segundos. El control Text convierte cada valor en minutos y segundos, evalúa la cadena de plantilla TimeRemaining y actualiza el control de texto con la nueva información.
 

@@ -4,12 +4,12 @@ ms.assetid: acf76fff-b7a4-456b-91b9-eb3087879d7b
 title: Atributo de control FormatSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34df03c87ceb742b543f32b770c201646185ce02df6386e38c9c5af02c6a1a47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d7fa656b81272b8ac60985d3dac0416c0f81bef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636048"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074759"
 ---
 # <a name="formatsize-control-attribute"></a>Atributo de control FormatSize
 
@@ -39,7 +39,7 @@ Si este bit se establece para un control de texto estático, el control intenta 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para establecer este atributo en un control , incluya los bits FormatSize en la columna Atributos del registro del control en la [tabla de control](control-table.md). El texto del control debe establecerse en una cadena que represente un número expresado en unidades de 512 bytes. El texto de las cadenas de unidad se define en la tabla [UIText](uitext-table.md). La propiedad LeftUnit controla el posicionamiento de la cadena de [**unidad.**](leftunit.md) Si la **propiedad LeftUnit** se define como cualquier valor, la cadena de unidad aparece antes del valor numérico. Si aparece algo distinto de caracteres numéricos en el texto asociado al control , el valor mostrado no está definido.
 

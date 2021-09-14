@@ -4,12 +4,12 @@ ms.assetid: ba73e7c3-a9d7-4cc3-b5ce-2483a594fcc0
 title: Ensamblados en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04f9a16d7002a107376f525dc73dea9f6df3e2f182cc84207d92bdbf0f37ce81
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da0493b9d16d3943053b32a8a06eaa371cfd1d79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119628285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074290"
 ---
 # <a name="side-by-side-assemblies"></a>Ensamblados en paralelo
 

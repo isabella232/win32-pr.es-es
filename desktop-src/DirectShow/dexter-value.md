@@ -1,5 +1,5 @@
 ---
-description: Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume durante la duración de la transición o efecto.
+description: Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume durante la duración de la transición o el efecto.
 ms.assetid: 3b1c35cf-f1f7-4f2c-8d94-1aaae4116833
 title: DEXTER_VALUE estructura (Qedit.h)
 ms.topic: reference
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: e8e76636a28f1eaa8f3bd948c29e4ab6b2440c75bb4265f6d3c1bf281599bbf6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 930b828e1b715cfcb53275192ed76a7df7d116ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120051955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072226"
 ---
-# <a name="dexter_value-structure"></a>ESTRUCTURA VALUE DE LA ESTRUCTURA DE VALUE DE LA PROPIEDAD \_
+# <a name="dexter_value-structure"></a>ESTRUCTURA VALUE DE LA PROPIEDAD \_
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume durante la duración de la transición o efecto.
+Identifica una propiedad que se va a establecer en una transición o efecto, junto con el número de valores distintos que la propiedad asume durante la duración de la transición o el efecto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -53,10 +53,10 @@ Valor de la propiedad.
 
 </dd> <dt>
 
-**Rt**
+**rt**
 </dt> <dd>
 
-Hora a la que la propiedad asume el valor, en relación con el inicio de la transición o el efecto.
+Hora en la que la propiedad asume el valor, en relación con el inicio de la transición o el efecto.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Marca que indica cómo progresa la propiedad del valor anterior a este valor. De
 
 | Value                                                                                                                                                                           | Significado                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <span id="DEXTERF_JUMP"></span><span id="dexterf_jump"></span><dl> <dt>**JUMP \_ DE**</dt> </dl>                      | La propiedad salta al instante al nuevo valor en el momento especificado.<br/>     |
+| <span id="DEXTERF_JUMP"></span><span id="dexterf_jump"></span><dl> <dt>**JUMP DE JUMP DE \_**</dt> </dl>                      | La propiedad salta al instante al nuevo valor en el momento especificado.<br/>     |
 | <span id="DEXTERF_INTERPOLATE"></span><span id="dexterf_interpolate"></span><dl> <dt>**INTERPOLACIÓN \_ DE INTERPOLACIÓN**</dt> </dl> | La propiedad se interpola linealmente a lo largo del tiempo con respecto al valor anterior.<br/> |
 
 
@@ -88,7 +88,7 @@ Marca que indica cómo progresa la propiedad del valor anterior a este valor. De
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

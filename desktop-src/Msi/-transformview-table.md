@@ -4,12 +4,12 @@ ms.assetid: 4763ac0e-900f-45f1-bee5-34d413c5e401
 title: _TransformView tabla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b3254c7419ed5d4964377a466ecd557429a22450a9ba84fdd892822fca86c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08cc513b1aae388d01cda178bfbefdc88874f6d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118640470"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159291"
 ---
 # <a name="_transformview-table"></a>\_Tabla TransformView
 
@@ -27,7 +27,7 @@ La \_ tabla TransformView tiene las columnas siguientes.
 |---------|------------------------------|-----|----------|
 | Tabla   | [Identificador](identifier.md) | Y   | N        |
 | Columna  | [Texto](text.md)             | Y   | N        |
-| Fila     | [Texto](text.md)             | Y   | Y        |
+| Row     | [Texto](text.md)             | Y   | Y        |
 | Datos    | [Texto](text.md)             | N   | Y        |
 | Current | [Texto](text.md)             | N   | Y        |
 
@@ -74,15 +74,15 @@ Valor actual de la base de datos de referencia o columna un número.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 TransformView se mantiene en memoria mediante un recuento de bloqueos, que se puede liberar \_ con el siguiente SQL comando.
 
 "ALTER TABLE \_ TransformView FREE".
 
-Se puede acceder a los datos de la tabla mediante SQL consultas. El lenguaje SQL tiene dos divisiones principales: Lenguaje de definición de datos (DDL) que se usa para definir todos los objetos de una base de datos de SQL y Lenguaje de manipulación de datos (DML) que se usa para seleccionar, insertar, actualizar y eliminar datos en los objetos definidos mediante DDL.
+Se puede acceder a los datos de la tabla mediante SQL consultas. El lenguaje SQL tiene dos divisiones principales: lenguaje de definición de datos (DDL) que se usa para definir todos los objetos de una base de datos de SQL y lenguaje de manipulación de datos (DML) que se usa para seleccionar, insertar, actualizar y eliminar datos en los objetos definidos mediante DDL.
 
-Las operaciones de transformación del Lenguaje de manipulación de datos (DML) se indican de la siguiente manera. Lenguaje de manipulación de datos (DML) son las instrucciones de SQL que manipulan, en lugar de definir, los datos.
+Las operaciones de transformación del lenguaje de manipulación de datos (DML) se indican como sigue. Lenguaje de manipulación de datos (DML) son las instrucciones de SQL que manipulan, en lugar de definir, los datos.
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 2b779ff7-f410-4af0-899d-4432b015d526
 title: Tabla DrLocator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe1765c7b8f5c38d5701c4c401eb333c7db6a7c403689b8c3100d55b5e51e28e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78df5a5af83a18a14027b88033e977b2c63d2027
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118378329"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158517"
 ---
 # <a name="drlocator-table"></a>Tabla DrLocator
 
@@ -23,7 +23,7 @@ La tabla DrLocator tiene las columnas siguientes.
 |-------------|------------------------------|-----|----------|
 | Firma\_ | [Identificador](identifier.md) | Y   | N        |
 | Parent      | [Identificador](identifier.md) | Y   | Y        |
-| Ruta de acceso        | [AnyPath](anypath.md)       | Y   | Y        |
+| Path        | [AnyPath](anypath.md)       | Y   | Y        |
 | Profundidad       | [Entero](integer.md)       | N   | Y        |
 
 
@@ -64,13 +64,13 @@ Profundidad debajo de la ruta de acceso en la que el instalador busca el archivo
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta tabla se usa con la [tabla AppSearch](appsearch-table.md).
 
 Por lo general, las columnas de esta tabla no están localizadas. Si un autor decide buscar productos en varios idiomas, debe haber una entrada independiente incluida en la tabla para cada idioma.
 
-Vea [Buscar aplicaciones, archivos, entradas del Registro](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)o entradas de .ini existentes.
+Vea [Buscar aplicaciones, archivos, entradas del Registro o .ini de archivos existentes.](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)
 
 ## <a name="validation"></a>Validación
 

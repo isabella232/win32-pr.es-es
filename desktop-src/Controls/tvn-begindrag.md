@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95952ee42dfe8eb8dd1a46c66dcd452f41cbc9723fa175c2a0d1fc75056c31ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08f47f55a5e2eae552f64234a8e43ef0961f38c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165581"
 ---
 # <a name="tvn_begindrag-notification-code"></a>Código de notificación \_ BEGINDRAG de TVN
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMTREEVIEW.**](/windows/win32/api/commctrl/ns-commct
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un control de vista de árbol que tenga el estilo [**TVS \_ DISABLEDRAGDROP**](tree-view-control-window-styles.md) no envía este código de notificación.
 
@@ -63,7 +63,7 @@ Un control de vista de árbol que tenga el estilo [**TVS \_ DISABLEDRAGDROP**](t
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ BEGINDRAGW** (Unicode) y **TVN \_ BEGINDRAGA** (ANSI)<br/>               |
 
 

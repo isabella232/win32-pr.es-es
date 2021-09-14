@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab23b93a72edb2da6784797dd47bdfb4a839e2e9ce662adfc6ffbe09e468ac17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c3db7127e23e3133e11fe9c1600d37695e3b1ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118503456"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241382"
 ---
 # <a name="dlgtemplateex-structure"></a>Estructura DLGTEMPLATEEX
 
@@ -54,7 +54,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Número de versión de la plantilla de cuadro de diálogo extendida. Este miembro debe establecerse en 1.
+Número de versión de la plantilla de cuadro de diálogo extendido. Este miembro debe establecerse en 1.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Indica si una plantilla es una plantilla de cuadro de diálogo extendida. Si **se ha** 0xFFFF firma, se trata de una plantilla de cuadro de diálogo extendida. En este caso, el **miembro dlgVer** especifica el número de versión de la plantilla. Si **signature** es cualquier valor que no sea 0xFFFF, se trata de una plantilla de cuadro de diálogo estándar que usa las estructuras [**DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) y [**DLGITEMTEMPLATE.**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate)
+Indica si una plantilla es una plantilla de cuadro de diálogo extendida. Si **se** ha 0xFFFF firma, se trata de una plantilla de cuadro de diálogo extendida. En este caso, el **miembro dlgVer** especifica el número de versión de la plantilla. Si **signature** es cualquier valor que no sea 0xFFFF, se trata de una plantilla de cuadro de diálogo estándar que usa las estructuras [**DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) y [**DLGITEMTEMPLATE.**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate)
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Tipo: **DWORD**
 
 Estilo del cuadro de diálogo. Este miembro puede ser una combinación de valores de estilo de [ventana y](/windows/desktop/winmsg/window-styles) valores de estilo de cuadro [de diálogo](dialog-box-styles.md).
 
-Si **style** incluye el estilo de cuadro de diálogo **\_ DS SETFONT** o **DS \_ SHELLFONT,** el encabezado  **DLGTEMPLATEEX** de la plantilla de cuadro de diálogo extendido contiene cuatro miembros adicionales **(pointsize**, weight , **italic** y **typeface)** que describen la fuente que se usará para el texto en el área cliente y los controles del cuadro de diálogo. Si es posible, el sistema crea una fuente según los valores especificados en estos miembros. A continuación, el sistema envía un [**mensaje \_ WM SETFONT**](/windows/desktop/winmsg/wm-setfont) al cuadro de diálogo y a cada control para proporcionar un identificador a la fuente.
+Si **style** incluye el estilo de cuadro de diálogo **\_ DS SETFONT** o **DS \_ SHELLFONT,** el encabezado  **DLGTEMPLATEEX** de la plantilla de cuadro de diálogo extendido contiene cuatro miembros adicionales **(pointsize**, weight , **italic** y **typeface)** que describen la fuente que se usará para el texto en el área cliente y los controles del cuadro de diálogo. Si es posible, el sistema crea una fuente según los valores especificados en estos miembros. A continuación, el sistema envía [**un mensaje \_ WM SETFONT**](/windows/desktop/winmsg/wm-setfont) al cuadro de diálogo y a cada control para proporcionar un identificador a la fuente.
 
 Para obtener más información, vea [Fuentes de cuadro de diálogo](about-dialog-boxes.md).
 
@@ -190,7 +190,7 @@ Tipo: **sz \_ o \_ Ord**
 
 </dd> <dd>
 
-Matriz de longitud variable de elementos de 16 bits que identifica la clase de ventana del cuadro de diálogo. Si el primer elemento de la matriz es 0x0000, el sistema usa la clase de cuadro de diálogo predefinida para el cuadro de diálogo y la matriz no tiene ningún otro elemento. Si el primer elemento se 0xFFFF, la matriz tiene un elemento adicional que especifica el valor ordinal de una clase de ventana del sistema predefinida. Si el primer elemento tiene cualquier otro valor, el sistema trata la matriz como una cadena Unicode terminada en NULL que especifica el nombre de una clase de ventana registrada.
+Matriz de longitud variable de elementos de 16 bits que identifica la clase de ventana del cuadro de diálogo. Si el primer elemento de la matriz es 0x0000, el sistema usa la clase de cuadro de diálogo predefinida para el cuadro de diálogo y la matriz no tiene ningún otro elemento. Si el primer elemento 0xFFFF, la matriz tiene un elemento adicional que especifica el valor ordinal de una clase de ventana del sistema predefinida. Si el primer elemento tiene cualquier otro valor, el sistema trata la matriz como una cadena Unicode terminada en NULL que especifica el nombre de una clase de ventana registrada.
 
 </dd> <dt>
 
@@ -270,7 +270,7 @@ Este miembro solo está presente si el **miembro de** estilo especifica **DS \_ 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede usar una plantilla de cuadro de diálogo extendida en lugar de una plantilla de cuadro de diálogo estándar en las funciones [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama), [**DialogBoxIndirectParam,**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama) [**CreateDialogIndirect**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta)y [**DialogBoxIndirect.**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta)
 
@@ -288,14 +288,14 @@ Los **miembros x**, **y**, **cx** y **cy** especifican valores en unidades de cu
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

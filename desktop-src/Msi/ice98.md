@@ -4,12 +4,12 @@ ms.assetid: ed78db96-10a1-4e42-9147-2309c9ca9c6e
 title: ICE98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23f8a627b057e6c235fdb57a4f2d5d2b2cf6274e528ef4945c6a6323e1888427
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bf06e97341bd8f15502b1ea1fe43a975dc9cde2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074496"
 ---
 # <a name="ice98"></a>ICE98
 

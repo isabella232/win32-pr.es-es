@@ -1,9 +1,9 @@
 ---
 title: vararg (atributo)
-description: El atributo \rg\ especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo VARIANT que contenga todos los parámetros restantes.
+description: El atributo \ lerg\ especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo VARIANT que contenga todos los parámetros restantes.
 ms.assetid: df0995d3-5266-4a13-90aa-d78bfa753e0e
 keywords:
-- atributo midl de segorg
+- atributo indórg MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3848393f6bad82d6793e34ba6f4da803c7dd64803c1c40e4ea05487ea141ec48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c3880a3713daaff13fe827beb989dd377440af4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118641013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159323"
 ---
 # <a name="vararg-attribute"></a>vararg (atributo)
 
-El **\[ atributo \] perorg** especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo **VARIANT** que contenga todos los parámetros restantes.
+El **\[ atributo \] lerg** especifica que la función toma un número variable de parámetros. Para ello, el último parámetro debe ser una matriz segura de tipo **VARIANT** que contenga todos los parámetros restantes.
 
 ``` syntax
 [vararg [, optional-attributes]] return-type function-name(
@@ -47,7 +47,7 @@ Tipo de los datos devueltos por el procedimiento remoto tras la finalización.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Nombre del procedimiento remoto.
@@ -75,9 +75,9 @@ Nombre del parámetro variable.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No se pueden aplicar los **\[** [**atributos**](optional.md) **\]** **\[** [**opcionales o defaultvalue**](defaultvalue.md) **\]** a ningún parámetro de una función que tenga el atributo **\[ segorg. \]**
+No se pueden aplicar **\[** [**los atributos opcional**](optional.md) o **\]** **\[** [**defaultvalue**](defaultvalue.md) **\]** **\[ \]** a ningún parámetro de una función que tenga el atributo .
 
 ## <a name="examples"></a>Ejemplos
 

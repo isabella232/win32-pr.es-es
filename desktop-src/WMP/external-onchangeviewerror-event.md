@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaa1152c753501b2e2385de8c56af614d62cfb367fcca8468aaa032e9536e8d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91bcbb71e1c5324a9907d735492364561be49a60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241899"
 ---
 # <a name="externalonchangeviewerror-event"></a>Evento External.OnChangeViewError
 
@@ -36,7 +36,7 @@ window.external.OnChangeViewError = FunctionName
 
 ## <a name="possible-values"></a>Valores posibles
 
-Se trata de una propiedad de solo escritura que especifica el nombre de la función en el script que Reproductor de Windows Media llama cuando se produce el evento.
+Se trata de una propiedad de solo escritura que especifica el nombre de la función en el script que Reproductor de Windows Media cuando se produce el evento.
 
 ## <a name="parameters"></a>Parámetros
 

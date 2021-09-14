@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8265724c8f69cc9b8e90e6f2d7c777940aa1251ac99f436b9976e2a3c13f03fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7f3cade11450bcfbad13dcdd114dca6701c5369
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119614575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269652"
 ---
 # <a name="legacyfilenames-enumeration"></a>Enumeración LegacyFileNames
 
@@ -55,7 +55,7 @@ Dim instance As LegacyFileNames
 public enum LegacyFileNames
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -69,18 +69,18 @@ public enum LegacyFileNames
 <tr class="odd">
 <td></td>
 <td>ESE98FileNames</td>
-<td>Cuando esta opción está presente, el motor de base de datos usará las siguientes convenciones de nomenclatura para sus archivos: o Los archivos del registro de transacciones usarán . LOG para su extensión de archivo o Los archivos de punto de comprobación usarán . CHK para su extensión de archivo</td>
+<td>Cuando esta opción está presente, el motor de base de datos usará las siguientes convenciones de nomenclatura para sus archivos: o Los archivos de registro de transacciones usarán . LOG para su extensión de archivo o Los archivos de punto de comprobación usarán . CHK para su extensión de archivo</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EightDotThreeSoftCompat</td>
-<td>Conserve la sintaxis de nomenclatura 8.3 tanto como sea posible. (esto no debe cambiarse, con la garantía de que no hay archivos de registro)</td>
+<td>Conserve la sintaxis de nomenclatura 8.3 mientras sea posible. (Esto no debe cambiarse, con la garantía de que no hay archivos de registro)</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

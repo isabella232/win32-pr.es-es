@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5637cf2e8de98c056635cef2e68a7672f52b649c0162920f647384a2ceb4e64f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 009d39e78aa93d5c5230e9c1b06b84d2854a0d0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072318"
 ---
 # <a name="lvn_deleteitem-notification-code"></a>Código de notificación DELETEITEM de LVN \_
 
@@ -41,7 +41,7 @@ LVN_DELETEITEM
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) El **miembro iItem** identifica el elemento que se va a eliminar. Si el control no tiene el estilo **LVS \_ OWNERDATA,** *lParam* son los datos definidos por la aplicación asociados al elemento. Todos los demás miembros de esta estructura son cero.
+Puntero a una [**estructura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) El **miembro iItem** identifica el elemento que se va a eliminar. Si el control no tiene el estilo **\_ OWNERDATA de LVS,** *lParam* son los datos definidos por la aplicación asociados al elemento. Todos los demás miembros de esta estructura son cero.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Puntero a una [**estructura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commct
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No agregue, elimine ni reorganice elementos en la vista de lista mientras procesa este código de notificación.
+No agregue, elimine ni reordene elementos en la vista de lista mientras procesa este código de notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ No agregue, elimine ni reorganice elementos en la vista de lista mientras proces
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

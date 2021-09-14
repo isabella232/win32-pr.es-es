@@ -4,12 +4,12 @@ ms.assetid: 190ed399-a8a8-4087-8d18-b1a715690e4c
 title: Acerca de DXVA 2.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1d6ab595be1f167f777e50001c8d31658dc697866c8d11db3865e66e87508ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 149f622c863f433be44bbce6460024ffb06bb1b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119606825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269436"
 ---
 # <a name="about-dxva-20"></a>Acerca de DXVA 2.0
 
@@ -20,7 +20,7 @@ En DXVA, algunas operaciones de decodificación se implementan mediante el contr
 La API de DXVA 2 requiere Windows Vista o posterior. La API DXVA 1 todavía se admite en Windows Vista por compatibilidad con versiones anteriores. Se proporciona una capa de emulación que convierte entre cualquiera de las versiones de la API y la versión opuesta del DDI:
 
 -   Si el controlador de gráficos se ajusta Windows modelo de controlador de pantalla (WDDM), las llamadas API de DXVA 1 se convierten en llamadas DDI de DXVA 2.
--   Si los controladores gráficos usan el modelo Windows XP Display Driver Model (XPDM), las llamadas API de DXVA 2 se convierten en llamadas DDI de DXVA 1.
+-   Si los controladores de gráficos usan el modelo Windows XP Display Driver Model (XPDM), las llamadas API de DXVA 2 se convierten en llamadas DDI de DXVA 1.
 
 En la tabla siguiente se muestran los requisitos del sistema operativo y los representadores de vídeo admitidos para cada versión de la API de DXVA.
 
@@ -48,9 +48,9 @@ Las especificaciones siguientes definen extensiones DXVA para otros estándares 
 
 -   [Especificación de DXVA para lacodización H.264/AVC](https://www.microsoft.com/downloads/details.aspx?FamilyID=3d1c290b-310b-4ea2-bf76-714063a6d7a6&displaylang=en)
 -   [Especificación DXVA para codificación de vídeo multivista (MVC) de AVC H.264/MPEG-4, incluido el perfil alto estéreo](https://www.microsoft.com/download/details.aspx?id=25200)
--   Especificación DXVA para MPEG-1 VLD y la codificación combinada de vídeo [VLD MPEG-1/MPEG-2](https://www.microsoft.com/download/details.aspx?id=9374).
--   [Especificación dxva Off-Host modo VLD para la codificación de vídeo MPEG-4, parte 2](https://www.microsoft.com/download/details.aspx?id=21100)
--   [Especificación de DXVA para Windows Media Video® v8, v9 y decoding vA (incluido SMPTE 421M "VC-1")](https://www.microsoft.com/downloads/details.aspx?FamilyID=8792dfdb-8459-4cb7-adb4-fef30b609b31&displaylang=en)
+-   [Especificación DXVA para MPEG-1 VLD y la codificación de vídeo VLD MPEG-1/MPEG-2 combinada.](https://www.microsoft.com/download/details.aspx?id=9374)
+-   [Especificación DXVA Off-Host modo VLD para la codificación de vídeo MPEG-4, parte 2](https://www.microsoft.com/download/details.aspx?id=21100)
+-   [Especificación de DXVA para Windows Media Video® v8, v9 y la decodización de vA (incluido SMPTE 421M "VC-1")](https://www.microsoft.com/downloads/details.aspx?FamilyID=8792dfdb-8459-4cb7-adb4-fef30b609b31&displaylang=en)
 -   [Especificación de aceleración de vídeo directX (DXVA) para codificación de vídeo escalable (SVC) de H.264/MPEG-4 Off-Host de modo VLD](https://www.microsoft.com/downloads/details.aspx?FamilyID=a38538b6-f52c-470b-94be-0cf7c28d46cc&displaylang=en)
 -   [Especificación de aceleración de vídeo de DirectX para codificación de vídeo VP8 y VP9](https://www.microsoft.com/download/details.aspx?id=49188)
 
@@ -66,7 +66,7 @@ DXVA 1 y DXVA 2 usan las mismas estructuras de datos para la decodificación. Si
 [Aceleración de vídeo de DirectX 2.0](directx-video-acceleration-2-0.md)
 </dt> <dt>
 
-[Especificación de DXVA 1.0](/windows-hardware/drivers/display/directx-video-acceleration)
+[Especificación dxva 1.0](/windows-hardware/drivers/display/directx-video-acceleration)
 </dt> </dl>
 
  

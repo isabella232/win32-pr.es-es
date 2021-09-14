@@ -4,12 +4,12 @@ ms.assetid: 503ad2db-0875-4d8b-90f7-3d04318a6b62
 title: Tipo de texto arbitrario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bcf22ea2a7c4be001a5c036d3e2ee2e8c441ba061f3a7ba5bda32abde3806c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9709a560398472fe79a2c77db827acdfa7994148
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159101"
 ---
 # <a name="arbitrary-text-type"></a>Tipo de texto arbitrario
 

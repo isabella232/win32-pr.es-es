@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c6b58ff7d2ce88fd4257ce7db84fa8bd9b4fa2b2d223af03a3f1d57a83c9b9d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ebdf4d73fb83ddbd8e9e682f11ee1f5ecfbd5153
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165726"
 ---
 # <a name="tvm_getitemrect-message"></a>Mensaje \_ GETITEMRECT de TVM
 
@@ -47,7 +47,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que, 
 
 Si el elemento está visible y el rectángulo delimitador se recuperó correctamente, el valor devuelto es **TRUE.** De lo contrario, el mensaje **devuelve FALSE** y no recupera el rectángulo delimitador.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al enviar este mensaje, el *parámetro lParam* contiene el identificador del elemento para el que se recupera el rectángulo. El identificador se coloca en *lParam* como se muestra en el ejemplo siguiente:
 
@@ -70,7 +70,7 @@ SendMessage(hwndTreeView, TVM_GETITEMRECT, FALSE, (LPARAM)&rc);
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

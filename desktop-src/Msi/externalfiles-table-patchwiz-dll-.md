@@ -4,12 +4,12 @@ ms.assetid: c75591c2-5266-4a99-8104-53815f6550e2
 title: Tabla ExternalFiles (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2573556e8e4e00cf9004b83520468724ad1c959704cf8be32769a7ee41e24ebf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71f0002961408be9f43685ef40cd2ccff729e48b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158421"
 ---
 # <a name="externalfiles-table-patchwizdll"></a>Tabla ExternalFiles (Patchwiz.dll)
 
@@ -21,13 +21,13 @@ La tabla ExternalFiles tiene las siguientes columnas.
 
 | Columna        | Tipo    | Clave | Nullable |
 |---------------|---------|-----|----------|
-| Familia        | texto    | Y   | N        |
-| FTK           | texto    | Y   | N        |
-| FilePath      | texto    | Y   | N        |
-| SymbolPaths   | texto    |     | Y        |
-| IgnoreOffsets | texto    |     | Y        |
-| IgnoreLengths | texto    |     | Y        |
-| RetainOffsets | texto    |     | N        |
+| Familia        | text    | Y   | N        |
+| FTK           | text    | Y   | N        |
+| FilePath      | text    | Y   | N        |
+| SymbolPaths   | text    |     | Y        |
+| IgnoreOffsets | text    |     | Y        |
+| IgnoreLengths | text    |     | Y        |
+| RetainOffsets | text    |     | N        |
 | Pedido         | integer |     | Y        |
 
 
@@ -71,7 +71,7 @@ Ruta de acceso completa busca archivos de símbolos del archivo especificado en 
 
 El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se van a omitir en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreLengths. Esta columna es opcional.
 
-Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirá los valores en ULONG.
+Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirán los valores en ULONG.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md
 
 El valor de este campo es una lista delimitada por comas de longitudes de intervalo en bytes para los intervalos que se van a omitir en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna IgnoreOffsets. Esta columna es opcional.
 
-Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirá los valores en ULONG.
+Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirán los valores en ULONG.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md
 
 El valor de este campo es una lista delimitada por comas de números de desplazamiento de intervalo para los intervalos que se conservarán en el archivo externo. El orden y el número de los intervalos de la lista deben coincidir con los elementos de la columna RetainOffsets del registro correspondiente de la tabla [FamilyFileRanges (Patchwiz.dll).](familyfileranges-table-patchwiz-dll-.md)
 
-Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirá los valores en ULONG.
+Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md) trata el valor como hexadecimal si tiene el prefijo "0x". Las columnas son columnas de cadena y Patchwiz.dll convertirán los valores en ULONG.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Si se especifican dos o más versiones para el mismo archivo externo, la tabla p
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta tabla acepta variables de entorno como rutas de acceso a partir de la versión 4.0 de Patchwiz.dll.
 

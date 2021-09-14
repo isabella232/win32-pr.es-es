@@ -4,22 +4,22 @@ ms.assetid: cdd4f02a-cfe6-4a23-9fc2-f4cb810379aa
 title: Importación de InstallExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 586557130c6aa9af197d5d28f6bd750f4de736feb6982f3b7f12ce73ccf41c83
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f8e4728b0a59c92dcc0d007fc816fd298455e049
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119430775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074428"
 ---
 # <a name="importing-the-installexecutesequence"></a>Importación de InstallExecuteSequence
 
-En [la tabla InstallExecuteSequence](installexecutesequence-table.md) se enumeran las acciones que se ejecutan cuando el instalador ejecuta la acción [INSTALL de nivel superior.](install-action.md) Vea [Grupo de tablas de procedimientos de](installation-procedure-tables-group.md)instalación , Uso de una tabla de [secuencia](using-a-sequence-table.md)y Ejemplo detallado de tabla [de secuencias](sequence-table-detailed-example.md).
+En [la tabla InstallExecuteSequence](installexecutesequence-table.md) se enumeran las acciones que se ejecutan cuando el instalador ejecuta la acción [INSTALL de nivel superior.](install-action.md) Vea [Grupo de tablas de procedimientos de](installation-procedure-tables-group.md)instalación , Uso de una tabla de [secuencia](using-a-sequence-table.md)y Ejemplo detallado de tabla [de secuencia.](sequence-table-detailed-example.md)
 
-Si en [](importing-a-blank-database.md) la sección Importación de una base de datos en blanco usó uisample.msi desde el SDK del instalador de Windows, las tablas de secuencia de la copia de MNP2000.msi ya contienen las secuencias de acciones sugeridas descritas en Uso de una tabla de [secuencia.](using-a-sequence-table.md) No es necesario realizar ningún cambio en estas secuencias para crear el Bloc de notas de instalación.
+Si en [](importing-a-blank-database.md) la sección Importación de una base de datos en blanco usó uisample.msi desde el SDK del instalador de Windows, las tablas de secuencia de la copia de MNP2000.msi ya contienen las secuencias de acciones sugeridas descritas en Uso de una tabla de [secuencia](using-a-sequence-table.md). No es necesario realizar ningún cambio en estas secuencias para crear el Bloc de notas de instalación.
 
 Use el editor de bases de datos para MNP2000.msi y escriba los datos siguientes en la tabla InstallExecuteSequence.
 
-[Tabla InstallExecuteSequence](installexecutesequence-table.md)
+[InstallExecuteSequence Table](installexecutesequence-table.md)
 
 
 

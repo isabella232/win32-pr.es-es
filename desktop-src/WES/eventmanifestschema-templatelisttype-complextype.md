@@ -3,7 +3,7 @@ title: Tipo complejo TemplateListType
 description: Define una lista de plantillas que especifican los datos que se incluirán con los eventos. | Tipo complejo TemplateListType
 ms.assetid: 7f676746-6773-4ae2-8330-60d432c29e3a
 keywords:
-- TemplateListType de tipo complejo EventLog
+- Tipo complejo TemplateListType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8659270ffded1724ce308e2a6c69aeefb34271f2be39f4468d8e7e460b20fd3f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a60b31fd88d05f00229f27a616a29483a29bd49d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242732"
 ---
 # <a name="templatelisttype-complex-type"></a>Tipo complejo TemplateListType
 

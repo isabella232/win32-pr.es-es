@@ -6,12 +6,12 @@ keywords:
 - BITS Server Configuración for Upload Jobs BITS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da8a947c89d0c807064f65a856ed889cde9b672af3ec6518e684fc0efe951413
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a62e2a36743d3f2dac7c70f1b1097187ba44071e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119021242"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072353"
 ---
 # <a name="bits-server-settings-for-upload-jobs"></a>Bits Server Configuración for Upload Jobs
 

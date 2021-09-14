@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8be59ef1b212d0f6953063ce7ac3239d8940a5ea54a623990fc3d7af9f36ad3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e095d420afc433c1f01a63dff51868e57efc50f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159402"
 ---
 # <a name="range-attribute"></a>range (atributo)
 
@@ -59,7 +59,7 @@ Declarador de C estándar, como un identificador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use el atributo **\[ range \]** para modificar el significado de parámetros o campos confidenciales, como los que se usan para el tamaño o la longitud, con matrices compatibles o variables; o siempre que desee comprobar un parámetro o valor de campo con un intervalo de valores válidos. El atributo es aplicable a los parámetros de nivel superior, así como a los parámetros y campos de nivel inferior. Agregar el **\[ atributo de \]** intervalo a un tipo no cambia su formato de conexión, por lo que no afecta a la compatibilidad con versiones anteriores.
 

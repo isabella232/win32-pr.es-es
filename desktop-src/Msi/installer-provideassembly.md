@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 45d5c2d6b64936b034d859caddf72ddaaf6fba77451d066205d7f394200311f4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f81c9ab9b43b814307242cc828326b2b7e7d79fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072109"
 ---
 # <a name="installerprovideassembly-method"></a>Installer::P rovideAssembly (método)
 
@@ -52,7 +52,7 @@ Nombre de seguridad del ensamblado instalado que se va a consultar.
 *appContext* 
 </dt> <dd>
 
-Se establece en NULL para los ensamblados globales. Para los ensamblados privados, establezca *appContext* en la ruta de acceso completa del archivo de configuración de la aplicación o en la ruta de acceso completa del archivo ejecutable de la aplicación en la que el ensamblado se ha convertido en privado.
+Se establece en NULL para los ensamblados globales. Para los ensamblados privados, establezca *appContext* en la ruta de acceso completa del archivo de configuración de la aplicación o en la ruta de acceso completa del archivo ejecutable de la aplicación en la que se ha hecho privado el ensamblado.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Información de ensamblado y tipo de ensamblado. Establezca en uno de los valore
 
 Ruta de acceso al ensamblado instalado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método ProvideAssembly** usa la [**función MsiProvideAssembly.**](/windows/desktop/api/Msi/nf-msi-msiprovideassemblya)
 
@@ -142,7 +142,7 @@ MsgBox Installer.ProvideAssembly("Microsoft.MSXML2,publicKeyToken=""6bd6b9abf345
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

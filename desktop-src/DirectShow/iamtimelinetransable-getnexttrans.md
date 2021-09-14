@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 892f8e0f4af39250d62da9ed662c22867f98ebfc32baeaa0f341ead2eef665a4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc8f7c88dab2b8c0dfece6f2799b6648c0b9da2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072193"
 ---
 # <a name="iamtimelinetransablegetnexttrans-method"></a>IamTimelineTransable::GetNextTrans (método)
 
@@ -49,7 +49,7 @@ HRESULT GetNextTrans(
 *ppTrans* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a la interfaz [**IAMTimelineObj del**](iamtimelineobj.md) objeto de transición.
+Recibe un puntero a la interfaz [**IAMTimelineObj**](iamtimelineobj.md) del objeto de transición.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Puntero a una variable que especifica el tiempo en unidades de 100 nanosegundos.
 
 Devuelve S \_ OK si el método recupera una transición o S FALSE si no encuentra una \_ transición. De lo contrario, devuelve **un valor HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La hora de inicio de la transición puede ser menor que la hora especificada en *pInOut*, si la transición abarca la hora especificada.
 
@@ -76,7 +76,7 @@ Si el método devuelve S \_ OK, la [**interfaz IAMTimelineObj**](iamtimelineobj.
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -91,14 +91,14 @@ Si el método devuelve S \_ OK, la [**interfaz IAMTimelineObj**](iamtimelineobj.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IAMTimelineTransable (interfaz)**](iamtimelinetransable.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

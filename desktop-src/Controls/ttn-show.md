@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74397223f20668487e78cea15e2e1507026ee65089e5011065b3f177514e899b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16acb41d1145c176799dd7997b56a850bb45ece7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118408817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165801"
 ---
-# <a name="ttn_show-notification-code"></a>Código de notificación show de TTN \_
+# <a name="ttn_show-notification-code"></a>Código de notificación \_ TTN SHOW
 
 Notifica a la ventana de propietario que se va a mostrar un control de información sobre herramientas. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -54,19 +54,19 @@ Puntero a una [**estructura NMHDR.**](/windows/desktop/api/richedit/ns-richedit-
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Un rectángulo de ventana de información sobre herramientas es algo mayor que su rectángulo de presentación de texto y su origen se desplaza hacia arriba y hacia la izquierda. Si necesita colocar con precisión el rectángulo de presentación de texto de una información sobre herramientas, el mensaje [**\_ ADJUSTRECT de TTM**](ttm-adjustrect.md) convierte un rectángulo de presentación de texto en el rectángulo de la ventana de información sobre herramientas correspondiente y viceversa.
+Un rectángulo de ventana de información sobre herramientas es algo mayor que su rectángulo de presentación de texto y su origen se desplaza hacia arriba y hacia la izquierda. Si necesita colocar con precisión el rectángulo de presentación de texto de una información sobre herramientas, el mensaje [**\_ ADJUSTRECT de TTM**](ttm-adjustrect.md) convierte un rectángulo de presentación de texto en el rectángulo de ventana de información sobre herramientas correspondiente y viceversa.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
