@@ -4,12 +4,12 @@ ms.assetid: 439ff125-2731-4eb1-8287-4ca8ace7d8ec
 title: IMN_OPENCANDIDATE evento (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dbf6db7415a62b6d77925a4fb7106b70f0b42d77f922e0c1b6df76e71d10c43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27f8f412c60cc6b62904e562d450479af642de0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119147638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063117"
 ---
 # <a name="imn_opencandidate-event"></a>Evento \_ OPENCANDIDATE de IMN
 
@@ -36,7 +36,7 @@ Establezca en IMN \_ OPENCANDIDATE.
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Marca de lista de candidatos. Cada bit corresponde a una lista candidata: bit 0 a la primera lista, bit 1 al segundo, y así sucesivamente. Si un bit especificado es 1, la ventana candidata correspondiente está a punto de abrirse.
+Marca de lista de candidatos. Cada bit corresponde a una lista de candidatos: bit 0 a la primera lista, bit 1 al segundo, y así sucesivamente. Si un bit especificado es 1, la ventana candidata correspondiente está a punto de abrirse.
 
 </dd> </dl>
 
@@ -44,11 +44,11 @@ Marca de lista de candidatos. Cada bit corresponde a una lista candidata: bit 0 
 
 Este comando no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación debe procesar este comando si muestra los propios candidatos. La aplicación puede recuperar una lista de candidatos para mostrar mediante la función [**ImmGetCandidateList.**](/windows/desktop/api/Imm/nf-imm-immgetcandidatelista)
+Una aplicación debe procesar este comando si muestra los candidatos. La aplicación puede recuperar una lista de candidatos para mostrar mediante la [**función ImmGetCandidateList.**](/windows/desktop/api/Imm/nf-imm-immgetcandidatelista)
 
-De forma predeterminada, la ventana de IME crea una ventana candidata cuando procesa este comando.
+De forma predeterminada, la ventana IME crea una ventana candidata cuando procesa este comando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ De forma predeterminada, la ventana de IME crea una ventana candidata cuando pro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

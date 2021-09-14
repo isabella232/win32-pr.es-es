@@ -34,12 +34,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 94b4214c2f06d6b8b4613e6a248477adc2fe3be51fa7816e78451645d5b3b5ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a83c8a4313e5e6f21ee885ee7936c90503bfbd3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063478"
 ---
 # <a name="jet_dbstate-enumeration"></a>JET_dbstate enumeración
 
@@ -61,7 +61,7 @@ Dim instance As JET_dbstate
 public enum JET_dbstate
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>

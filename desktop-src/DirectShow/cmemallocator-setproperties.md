@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5c5a145e630101bda4d060058cde7bfd91796386f0915e9e5329f63ced43ef19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8505916245cca81fdd84132e4523fe9dd03b971b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117821970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063336"
 ---
 # <a name="cmemallocatorsetproperties-method"></a>Método CMemAllocator.SetProperties
 
@@ -46,7 +46,7 @@ HRESULT SetProperties(
 *pRequest* 
 </dt> <dd>
 
-Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos de búfer.
+Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos del búfer.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBaseAllocator::SetProperties.**](cbaseallocator-setproperties.md)
 

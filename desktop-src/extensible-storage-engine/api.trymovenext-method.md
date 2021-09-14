@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Método Api.TryMoveNext'
+description: Más información sobre el método Api.TryMoveNext
 title: Método Api.TryMoveNext
 TOCTitle: 'TryMoveNext method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TryMoveNext(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2e0f44caef2cef6d168668525b8dbd4066d1519f7e3d80ee5de9baec5a10d10c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b4b4e1f296e5549ba3823f698cdcb5cc9f9f42a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063662"
 ---
 # <a name="apitrymovenext-method"></a>Método Api.TryMoveNext
 
@@ -79,13 +79,13 @@ public static bool TryMoveNext(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
-True si el movimiento se ha realizado correctamente.  
+True si el traslado se ha realizado correctamente.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

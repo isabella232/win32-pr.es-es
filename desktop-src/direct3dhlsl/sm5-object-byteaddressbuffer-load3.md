@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bd36958eb2c16d45e6228c9919cb22bb772c8861131c26710fff032276bce6e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e3975d454fcbb8c5dfa8cdef8d7f5718143546f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118510015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063696"
 ---
 # <a name="byteaddressbufferload3uint-function"></a>Función ByteAddressBuffer::Load3(uint)
 
@@ -51,7 +51,7 @@ Tipo: **uint3**
 
 Tres valores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -65,14 +65,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Métodos Load3](byteaddressbuffer-load3.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

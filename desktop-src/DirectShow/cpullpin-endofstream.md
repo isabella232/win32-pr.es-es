@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9544a5f35c42fcf65bff58ad63d6f22bdd4dd817ae91951b01ffe122bce50c5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1df28430cdb71edd2ef9791e6c26092bbb21d0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063312"
 ---
 # <a name="cpullpinendofstream-method"></a>Método CPullPin.EndOfStream
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método para llamar a [**IPin::EndOfStream en**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) cada pin de entrada de nivel inferior que recibe datos de este objeto. Si los pin de salida del filtro derivan de [**CBaseOutputPin,**](cbaseoutputpin.md)llame al método [**CBaseOutputPin::D eliverEndOfStream.**](cbaseoutputpin-deliverendofstream.md)
 
@@ -59,7 +59,7 @@ Use este método para llamar a [**IPin::EndOfStream en**](/windows/desktop/api/S
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

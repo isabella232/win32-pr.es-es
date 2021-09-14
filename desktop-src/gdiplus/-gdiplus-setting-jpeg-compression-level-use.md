@@ -4,16 +4,16 @@ ms.assetid: b8365c00-2223-4aff-9fb2-422976af4c31
 title: Establecer el nivel de compresión JPEG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd72762d27f1e9179b8a1f9bd52ea5b4b7df6cf97a6af658f9e603b87a629e5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 07d2e82dfb21e121609d5e09e5c31e2242ec652f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063418"
 ---
 # <a name="setting-jpeg-compression-level"></a>Establecer el nivel de compresión JPEG
 
-Para especificar el nivel de compresión al guardar una imagen JPEG, inicialice un objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) y pase la dirección de ese objeto al método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) de la [**clase Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) Inicialice **el objeto EncoderParameters** para que tenga una matriz que consta de un [**objeto EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) Inicialice ese objeto **EncoderParameter** para que su **miembro Value** apunta a un valor **ULONG** de 0 a 100. Establezca el **miembro Guid** del **objeto EncoderParameter** en EncoderQuality.
+Para especificar el nivel de compresión al guardar una imagen JPEG, inicialice un objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) y pase la dirección de ese objeto al [método Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) de la [**clase Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) Inicialice **el objeto EncoderParameters** para que tenga una matriz que consta de un [**objeto EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) Inicialice ese objeto **EncoderParameter** para que su **miembro Value** apunta a un **valor ULONG** de 0 a 100. Establezca el **miembro Guid** del **objeto EncoderParameter** en EncoderQuality.
 
 La siguiente aplicación de consola guarda tres imágenes JPEG, cada una con un nivel de calidad diferente. Un nivel de calidad de 0 corresponde a la máxima compresión y un nivel de calidad de 100 corresponde a la mínima compresión.
 

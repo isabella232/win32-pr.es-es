@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 877b92165dd339f2e4f8b3ee5b72ac9f1001eaf8332854f62d042b618eac7195
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1db865b87cbf9b1bbb486360404252d97d4459d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117705457"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063506"
 ---
 # <a name="jet_bkinfotostring-method"></a>JET_BKINFO. Método ToString
 

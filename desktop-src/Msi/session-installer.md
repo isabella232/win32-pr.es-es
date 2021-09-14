@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 31c49e6ef321b04fc8ca993bede04d9b687464fc101fdcee6102c76d270f94e8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8462c3442ebea3021c4f2232f869a6c74bf47474
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063025"
 ---
 # <a name="sessioninstaller-property"></a>Propiedad Session.Installer
 
-La propiedad Installer **de** solo lectura del objeto [**Session**](session-object.md) devuelve el objeto **Installer** activo.
+La propiedad Installer de **solo** lectura del [**objeto Session**](session-object.md) devuelve el objeto **Installer** activo.
 
 Esta propiedad es de solo lectura.
 
@@ -43,9 +43,9 @@ propVal = Session.Installer
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Version<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID ISession se define como \_ 000C109E-0000-0000-C000-00000000046<br/>                                                                                                                                                                             |
+| IID<br/>     | IID ISession se define como \_ 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 89543eed4b2b0a5f1f74752949617015e5d6b70a21fa8cfd5c3a8b3264cd7c43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3d46e6bc5423260e550fd026ca52420b1c392ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119753855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063812"
 ---
 # <a name="d3dxvector4_16f-structure"></a>Estructura D3DXVECTOR4 \_ 16F
 
@@ -38,7 +38,7 @@ typedef struct D3DXVECTOR4_16F {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Componente y.
+Componente Y.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ W-component.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **D3DXVECTOR4 \_ 16F** tiene las siguientes extensiones de C++.
 
@@ -131,7 +131,7 @@ public:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

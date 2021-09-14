@@ -4,12 +4,12 @@ ms.assetid: c246efa3-25dc-4471-9b0f-619e5d125c93
 title: Trabajar con audio (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02cf7ecb0f6d85172dc65becb26112b9e02feaf267fdbba15ea57853982d3d27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d465bfb538d68245e16ce4c3238271d12a9dbd07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363574"
 ---
 # <a name="working-with-audio-microsoft-media-foundation"></a>Trabajar con audio (Microsoft Media Foundation)
 

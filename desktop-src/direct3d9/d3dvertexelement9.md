@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: cda5b92170ef21f7bb66233f0748afe0c780837bbcb0eee9ef3c970880070422
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6c5e9508185124673ca7464b31d741cdf8035c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118527299"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063741"
 ---
-# <a name="d3dvertexelement9-structure"></a>Estructura D3DVERTEXELEMENT9
+# <a name="d3dvertexelement9-structure"></a>D3DVERTEXELEMENT9 (estructura)
 
 Define el diseño de datos del vértice. Cada vértice puede contener uno o varios tipos de datos y cada tipo de datos se describe mediante un elemento de vértice.
 
@@ -40,7 +40,7 @@ typedef struct D3DVERTEXELEMENT9 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tipo de datos, especificado como [**D3DDECLTYPE**](./d3ddecltype.md). Uno de varios tipos predefinidos que definen el tamaño de los datos. Algunos métodos tienen un tipo implícito.
+Tipo de datos, especificado como [**D3DDECLTYPE.**](./d3ddecltype.md) Uno de varios tipos predefinidos que definen el tamaño de los datos. Algunos métodos tienen un tipo implícito.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-El método especifica el procesamiento del teselador, que determina cómo interpreta (o opera) el teselador los datos del vértice. Para obtener más información, [**vea D3DDECLMETHOD**](./d3ddeclmethod.md).
+El método especifica el procesamiento del teselador, que determina cómo el teselador interpreta (o opera) los datos del vértice. Para obtener más información, [**vea D3DDECLMETHOD**](./d3ddeclmethod.md).
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Define para qué se usarán los datos; es decir, la interoperabilidad entre los diseños de datos de vértices y los sombreadores de vértices. Cada uso actúa para enlazar una declaración de vértice a un sombreador de vértices. En algunos casos, tienen una interpretación especial. Por ejemplo, el teselador N-patch usa un elemento que especifica D3DDECLUSAGE NORMAL o D3DDECLUSAGE POSITION para configurar la \_ \_ teselación. Consulte [**D3DDECLUSAGE para**](./d3ddeclusage.md) obtener una lista de la semántica disponible. D3DDECLUSAGE TEXCOORD se puede usar para campos definidos por el usuario (que no tienen definido un \_ uso existente).
+Define para qué se usarán los datos; es decir, la interoperabilidad entre los diseños de datos de vértice y los sombreadores de vértices. Cada uso actúa para enlazar una declaración de vértice a un sombreador de vértices. En algunos casos, tienen una interpretación especial. Por ejemplo, el teselador N-patch usa un elemento que especifica D3DDECLUSAGE NORMAL o D3DDECLUSAGE POSITION para configurar la \_ \_ teselación. Consulte [**D3DDECLUSAGE para**](./d3ddeclusage.md) obtener una lista de la semántica disponible. D3DDECLUSAGE TEXCOORD se puede usar para campos definidos por el usuario (que no tienen definido \_ un uso existente).
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Modifica los datos de uso para permitir al usuario especificar varios tipos de u
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los datos de vértice se definen mediante una matriz de **estructuras D3DVERTEXELEMENT9.** Use [**D3DDECL \_ END para**](d3ddecl-end.md) declarar el último elemento de la declaración.
 

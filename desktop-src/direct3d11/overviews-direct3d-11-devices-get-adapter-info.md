@@ -4,16 +4,16 @@ description: En este tema se muestra cómo usar Microsoft Infraestructura de gr�
 ms.assetid: 3d182f29-48d4-4e25-b34e-b424cc9eed0b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 921d373a9ff0f79baaf848a55cbab0d08fd4e119d30a0a0cb917832830589dfa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 63c2602fcd4e1baa4476bb89273eda676f444e38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120119575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063764"
 ---
 # <a name="how-to-get-adapter-display-modes"></a>Cómo: Obtener modos de presentación del adaptador
 
-En este tema se muestra cómo usar Microsoft Infraestructura de gráficos de DirectX (DXGI) para obtener los modos de presentación válidos asociados a un adaptador. DirectX 10 y 11 pueden usar DXGI para obtener los modos de visualización válidos. Conocer los modos de presentación válidos garantiza que la aplicación puede elegir correctamente un modo de pantalla completa válido.
+En este tema se muestra cómo usar Microsoft Infraestructura de gráficos de DirectX (DXGI) para obtener los modos de presentación válidos asociados a un adaptador. DirectX 10 y 11 pueden usar DXGI para obtener los modos de visualización válidos. Conocer los modos de visualización válidos garantiza que la aplicación puede elegir correctamente un modo de pantalla completa válido.
 
 **Para obtener los modos de presentación del adaptador**
 

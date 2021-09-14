@@ -4,12 +4,12 @@ ms.assetid: 59c7baae-1b8a-4761-9814-31afd8d39691
 title: IMC_GETSTATUSWINDOWPOS comando (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfb542ef95a7825e4809e0fa2ce9175493bffeffbbaa36926a91299746026d51
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfd17c5787d9ef8c787e62a556afa2f136bd65c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063130"
 ---
 # <a name="imc_getstatuswindowpos-command"></a>Comando \_ GETSTATUSWINDOWPOS de IMC
 
@@ -56,7 +56,7 @@ Devuelve una [**estructura POINTS que**](/previous-versions//dd162808(v=vs.85)) 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

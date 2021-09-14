@@ -14,17 +14,17 @@ api_type:
 api_location:
 - D3DX10Mesh.h
 ms.openlocfilehash: 2659783b0443396508465f9498eec86950f825bc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063800"
 ---
 # <a name="d3dx10_mesh-enumeration"></a>D3DX10 \_ MESH (enumeración)
 
 Marcas usadas para especificar opciones de creación para una malla.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -54,7 +54,7 @@ Indica que la malla contiene datos de adyacencia del sombreador de geometría.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una malla de 32 bits (D3DXMESH de 32 BITS) puede admitir teóricamente \_ (2):1 caras y vértices. Sin embargo, no es práctico asignar memoria para una malla que sea grande en un sistema operativo de 32 bits.
 

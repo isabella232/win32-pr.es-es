@@ -4,12 +4,12 @@ ms.assetid: d59fdf76-50e7-4a59-b1bd-a12cdb0026f6
 title: IMN_CLOSESTATUSWINDOW de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a56093e5dac9c5b9b236c6819a627c1d8c1fc05aa8350824577f29f64c007e71
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5c0347fb4b0d83a9e3891b9aea59d82ab81e2183
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120107165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063119"
 ---
 # <a name="imn_closestatuswindow-notification-code"></a>Código de notificación \_ DE IMN CLOSESTATUSWINDOW
 
@@ -44,7 +44,7 @@ No se usa.
 
 Este comando no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación debe procesar este comando si muestra la ventana de estado del IME.
 
@@ -62,7 +62,7 @@ La ventana IME cierra la ventana de estado cuando procesa este comando.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

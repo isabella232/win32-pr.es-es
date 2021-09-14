@@ -4,12 +4,12 @@ ms.assetid: 10b547b1-6624-4d49-9852-a5fff4eb70e7
 title: Trabajar con ejemplos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9f6223db49fd3eab4063f329a5170c76661654cfda732e45491be8f96ef5d5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a31fa8ff17c2dabcac9d110b530751d22fdf7b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119602245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363578"
 ---
 # <a name="working-with-media-samples"></a>Trabajar con ejemplos multimedia
 

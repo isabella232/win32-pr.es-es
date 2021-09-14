@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 947feb790b5fbee628c846f88595b1ae25db4cfddedbbab223fd05513560d63e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9db6477aed5180ae18b99f53f4ebadf9d0ad0c91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117687777"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363511"
 ---
 # <a name="html-resource"></a>Recurso HTML
 

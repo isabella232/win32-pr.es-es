@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d2ce34bb6bde85600e57182151e8c270885e60f919f22a723228b14dd17927a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dfbc44b2d9ceea1bcfbf854a8d3c6998d03e3eec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119632605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063795"
 ---
 # <a name="id3dx11effectgetconstantbufferbyindex-method"></a>Método ID3DX11Effect::GetConstantBufferByIndex
 
@@ -58,7 +58,7 @@ Tipo: **[ **ID3DX11EffectConstantBuffer**](id3dx11effectconstantbuffer.md)\***
 
 Puntero a [**id3DX11EffectConstantBuffer**](id3dx11effectconstantbuffer.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un efecto que contiene una variable que una aplicación leerá o escribirá requiere al menos un búfer constante. Para obtener el mejor rendimiento, un efecto debe organizar las variables en uno o varios búferes constantes en función de su frecuencia de actualización.
 
@@ -78,7 +78,7 @@ Un efecto que contiene una variable que una aplicación leerá o escribirá requ
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

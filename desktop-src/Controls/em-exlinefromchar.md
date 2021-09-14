@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c41f5fbe540a4d765a48292d4ffd5b4af5849681dd1a82f4512b79348a6249d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce904725c5dc63732bae07cfaa95b41558db11d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119915645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063369"
 ---
 # <a name="em_exlinefromchar-message"></a>Mensaje \_ EM EXLINEFROMCHAR
 
@@ -32,7 +32,7 @@ Determina qué línea contiene el carácter especificado en un control de edici�
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza; debe ser cero.
+Este parámetro no se usa; debe ser cero.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Este mensaje devuelve el índice de base cero de la línea.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

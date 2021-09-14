@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7a66be5a854abee395a910596686dbc0a7f16b588fe4567e574da3efcae38d53
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8d08266b20600d5e5253fab929e9a6de5065aef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063469"
 ---
 # <a name="jet_rstmapszdatabasename-property"></a>JET_RSTMAP.szDatabaseName, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece el nombre o la ruta de acceso antiguos de la base de datos. 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public string szDatabaseName { get; set; }
 
 Tipo: [System.String](/dotnet/api/system.string)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

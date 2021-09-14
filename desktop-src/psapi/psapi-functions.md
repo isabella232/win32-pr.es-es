@@ -4,12 +4,12 @@ description: Las siguientes son las funciones PSAPI
 ms.assetid: e158792b-fec2-498d-aae3-d5679fa55783
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b93a5dc64aafa459929e1447275d7388f8e4a8cc267b0fa4c360e9f252ae2b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 58ed7bb2f1ad9f65a56ab997aad343c96406d56d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119774005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363342"
 ---
 # <a name="psapi-functions"></a>Funciones de PSAPI
 

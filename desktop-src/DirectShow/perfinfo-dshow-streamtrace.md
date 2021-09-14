@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Perfstruct.h
 ms.openlocfilehash: e17d013d90b133f9c6819b8d9ddf4b5970582cae
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477011"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063189"
 ---
 # <a name="perfinfo_dshow_streamtrace-structure"></a>PERFINFO \_ DSHOW \_ STREAMTRACE (estructura)
 
@@ -38,11 +38,11 @@ typedef struct _PERFINFO_DSHOW_STREAMTRACE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**identificador**
+**id**
 </dt> <dd>
 
 Identificador de evento. Vea la sección Comentarios.
@@ -70,7 +70,7 @@ Datos de eventos opcionales que constan de cuatro **valores ULONGLONG.** El sign
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se definen los siguientes identificadores de evento.
 

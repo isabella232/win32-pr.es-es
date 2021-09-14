@@ -3,16 +3,16 @@ title: Acerca del Administrador de compresión de vídeo
 description: Acerca del Administrador de compresión de vídeo
 ms.assetid: 2a5ebc95-3ee8-4145-b2c5-512d82e49c6d
 keywords:
-- Windows multimedia,administrador de compresión de vídeo (VCM)
+- Windows multimedia, administrador de compresión de vídeo (VCM)
 - multimedia, administrador de compresión de vídeo (VCM)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6841446a5a0f22b8c05c2419448e65b035f90703
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370310"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063014"
 ---
 # <a name="about-the-video-compression-manager"></a>Acerca del Administrador de compresión de vídeo
 

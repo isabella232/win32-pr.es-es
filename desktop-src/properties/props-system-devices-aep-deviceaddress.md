@@ -1,19 +1,19 @@
 ---
-description: Dirección basada en el protocolo del punto de conexión de asociación de dispositivos. Dirección IP de un dispositivo IP, dirección Bluetooth para Bluetooth dispositivo, etc.
+description: Dirección basada en el protocolo del punto de conexión de asociación de dispositivos. Dirección IP para un dispositivo IP, Bluetooth dirección para Bluetooth dispositivo, etc.
 ms.assetid: 20bc4ac6-151e-4666-bf17-5eb4a3c87c40
 title: System.Devices.Aep.DeviceAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d03231756b625b93d1375d2c27e06c0f3272dd5aac262369dfc0a74de3bca60f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe170bc76184ed2cf739468809c725020c14f1e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118232253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363507"
 ---
 # <a name="systemdevicesaepdeviceaddress"></a>System.Devices.Aep.DeviceAddress
 
-Dirección basada en el protocolo del punto de conexión de asociación de dispositivos. Dirección IP de un dispositivo IP, dirección Bluetooth para Bluetooth dispositivo, etc.
+Dirección basada en el protocolo del punto de conexión de asociación de dispositivos. Dirección IP para un dispositivo IP, Bluetooth dirección para Bluetooth dispositivo, etc.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

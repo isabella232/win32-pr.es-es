@@ -4,7 +4,7 @@ description: Obtiene una matriz de vectores de cuatro componentes que contienen 
 ms.assetid: cabc3bb1-8b65-455a-af84-f96219f7cfb5
 keywords:
 - Método GetIntVectorArray Direct3D 11
-- Método GetIntVectorArray Direct3D 11 , interfaz ID3DX11EffectVectorVariable
+- Método GetIntVectorArray Direct3D 11, interfaz ID3DX11EffectVectorVariable
 - Interfaz ID3DX11EffectVectorVariable Direct3D 11, método GetIntVectorArray
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 813f8cb952e8dc82f7cd3bd9eecce18029947ece9e607121c18b9570f25d5cbc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 024db61b559d74c6453c6838795d5785ca7a0eec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063778"
 ---
 # <a name="id3dx11effectvectorvariablegetintvectorarray-method"></a>Método ID3DX11EffectVectorVariable::GetIntVectorArray
 
@@ -59,7 +59,7 @@ Puntero al inicio de los datos que se establecerán.
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Debe establecerse en 0; está reservado para su uso futuro.
+Debe establecerse en 0; se reserva para su uso futuro.
 
 </dd> <dt>
 
@@ -78,10 +78,10 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -92,11 +92,11 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

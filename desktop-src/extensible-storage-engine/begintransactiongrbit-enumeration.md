@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8bbbba69a6768f37e816030f63aa00e5ed05f2133b62f1047b0c7cbe58d55ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f407c54b7b6e76ab63dcfb97d1307458ba15277
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118982845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063654"
 ---
 # <a name="begintransactiongrbit-enumeration"></a>BeginTransactionGrbit (enumeración)
 
@@ -59,7 +59,7 @@ Dim instance As BeginTransactionGrbit
 public enum BeginTransactionGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -78,13 +78,13 @@ public enum BeginTransactionGrbit
 <tr class="even">
 <td></td>
 <td>ReadOnly</td>
-<td>La transacción no modificará la base de datos. Si se intenta realizar una actualización, se producirá un error en esa operación <a href="hh564840(v=exchg.10).md">con TransReadOnly</a>. Esta opción se omite a menos que se solicite cuando la sesión determinada aún no está en una transacción.</td>
+<td>La transacción no modificará la base de datos. Si se intenta realizar una actualización, se producirá un error en esa operación <a href="hh564840(v=exchg.10).md">con TransReadOnly</a>. Esta opción se omite a menos que se solicite cuando la sesión dada aún no está en una transacción.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

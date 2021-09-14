@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 34c45fe4a34e21647cd976adbf29dfe6723e4216d58166e7d1599d4c8d64d47e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4f33ae2b7434d90d909315edda4d49e07d8adab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063330"
 ---
 # <a name="cpullpinalignup-method"></a>Método CPullPin.AlignUp
 
@@ -66,10 +66,10 @@ Especifica el límite de alineación.
 
 Devuelve el resultado alineado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Caution]  
-> Este método puede provocar un desbordamiento numérico *si ll* + (*lAlign* - 1) desborda.
+> Este método puede provocar un desbordamiento numérico *si ll* + (*lAlign* - 1) se desborda.
 
  
 
@@ -84,7 +84,7 @@ Devuelve el resultado alineado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

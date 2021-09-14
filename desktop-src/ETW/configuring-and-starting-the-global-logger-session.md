@@ -5,18 +5,18 @@ title: Configuración e inicio de la sesión de registrador global
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7a928cba5eb782ca4a57f7dba4776de79f42d7af
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477051"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063153"
 ---
 # <a name="configuring-and-starting-the-global-logger-session"></a>Configuración e inicio de la sesión de registrador global
 
 La sesión de seguimiento de eventos del registrador global registra los eventos que se producen al principio del proceso de arranque del sistema operativo. Las aplicaciones y los controladores de dispositivos pueden usar la sesión del registrador global para capturar seguimientos antes de que el usuario inicie sesión. Tenga en cuenta que algunos controladores de dispositivo, como los controladores de dispositivos de disco, no se cargan en el momento en que comienza la sesión del registrador global.
 
 > [!Note]  
-> Si va a crear una sesión de registrador global en Windows Vista, considere la posibilidad de crear una [sesión de AutoLogger](configuring-and-starting-an-autologger-session.md) en su lugar.
+> Si va a crear una sesión de registrador global en Windows Vista, considere la posibilidad de crear una [sesión de Registrador automático](configuring-and-starting-an-autologger-session.md) en su lugar.
 
  
 
@@ -35,12 +35,12 @@ En la tabla siguiente se describen los valores que puede definir para la **clave
 
 
 
-| Valor | Tipo | Descripción | 
+| Value | Tipo | Descripción | 
 |-------|------|-------------|
 | <strong>Iniciar</strong> | <strong>REG_DWORD</strong> | Establezca este valor en 1 (en) para iniciar la sesión del registrador global la próxima vez que se inicie el sistema. Para detener el inicio de la sesión, establezca este valor en 0 (desactivado). <br /> | 
 | <strong>BufferSize</strong> | <strong>REG_DWORD</strong> | Tamaño de cada búfer, en kilobytes. Este valor debe ser inferior a un megabyte. ETW usa el tamaño de la memoria física para calcular este valor. <br /> | 
 | <strong>ClockType</strong> | <strong>REG_DWORD</strong> | Temporizador que se usará al registrar la marca de tiempo para cada evento.<ul><li>1 = Valor del contador de rendimiento (alta resolución)</li><li>2 = Temporizador del sistema</li><li>3 = Contador de ciclo de CPU</li></ul>Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro ClientContext</strong> <a href="wnode-header.md"><strong>de WNODE_HEADER</strong></a>.<br /> El valor predeterminado es 1 (valor del contador de rendimiento) en Windows Vista y versiones posteriores. Antes de Windows Vista, el valor predeterminado es 2 (temporizador del sistema).<br /> | 
-| <strong>EnableKernelFlags</strong> | <strong>REG_BINARY</strong> | Use este valor para habilitar uno o varios proveedores de kernel. Si habilita los proveedores de kernel, la sesión del registrador global cambiará su nombre a NT Kernel Logger cuando se inicie. Para ver los valores posibles, <strong>vea el miembro EnableFlags</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-event_trace_properties"><strong>de EVENT_TRACE_PROPERTIES</strong></a>.<br /> | 
+| <strong>EnableKernelFlags</strong> | <strong>REG_BINARY</strong> | Use este valor para habilitar uno o varios proveedores de kernel. Si habilita los proveedores de kernel, la sesión del registrador global cambiará su nombre a NT Kernel Logger cuando se inicie. Para ver los valores <strong>posibles, vea el miembro EnableFlags</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-event_trace_properties"><strong>de EVENT_TRACE_PROPERTIES</strong></a>.<br /> | 
 | <strong>FileCounter</strong> | <strong>REG_DWORD</strong> | Número de archivos de registro de seguimiento de eventos generados por sesiones de Registrador global. El sistema incrementa este valor hasta que alcanza el valor de <strong>FileMax</strong>. A continuación, restablece el valor a 0. Este contador impide que el sistema sobrescriba un archivo de registro de seguimiento del registrador global. <br /> | 
 | <strong>FileMax</strong> | <strong>REG_DWORD</strong> | Número máximo de archivos de registro de seguimiento de eventos permitidos en el sistema. Cuando el número de registros de seguimiento alcanza el máximo especificado, el sistema comienza a sobrescribir los registros, empezando por el más antiguo. <br /> Si el archivo de registro especificado en <strong>FileName</strong> existe, ETW anexa el valor <strong>fileCounter</strong> al nombre de archivo. Por ejemplo, si se usa el nombre de archivo de registro predeterminado, el formulario es %SystemRoot%\System32\LogFiles\WMI\GlobalLogger.etl.NNNN. <br /> El valor predeterminado es 0, lo que significa que no hay ningún máximo. <br /> | 
 | <strong>FileName</strong> | <strong>REG_SZ</strong> | Ruta de acceso completa del archivo de registro. La ruta de acceso a este archivo debe existir. El archivo de registro es un archivo de registro secuencial. Tenga en cuenta que todos los proveedores que escriben eventos en la sesión del registrador global escriben eventos en este archivo de registro. La ruta de acceso está limitada a 1024 caracteres. Si <strong>no se especifica FileName,</strong> los eventos se escriben en %SystemRoot%\System32\LogFiles\WMI\GlobalLogger.etl. <strong>Antes de Windows Vista:</strong> El archivo predeterminado es %SystemRoot%\System32\LogFiles\WMI\Trace.log.<br /><br /> | 

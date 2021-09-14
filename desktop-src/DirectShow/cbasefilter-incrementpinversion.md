@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 01c82a5f506673b6145b468004bbc900d3acdb051f525df20930344137618e72
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53e66ccd5bdd34c4767001403439f4372ff2938a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117824126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063357"
 ---
 # <a name="cbasefilterincrementpinversion-method"></a>Método CBaseFilter.IncrementPinVersion
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método incrementa la variable [**miembro CBaseFilter::m \_ PinVersion.**](cbasefilter-m-pinversion.md) Si el filtro crea o destruye de forma dinámica los pines, llame a este método cada vez que cambien.
+Este método incrementa la variable [**miembro \_ PinVersion CBaseFilter::m.**](cbasefilter-m-pinversion.md) Si el filtro crea o destruye de forma dinámica los pins, llame a este método cada vez que cambien los pines.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ ms.assetid: 8e0c4996-9f78-424e-b012-502228b6a27a
 title: MF_MT_FRAME_RATE_RANGE_MAX atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5988a6aee872489327707c7e87639f7467560014c5bdd29bc9b0bd9a136ccbac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62399445cd31c7820ea9de7082fce71febbf3ba2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118742047"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127364007"
 ---
 # <a name="mf_mt_frame_rate_range_max-attribute"></a>Atributo MF \_ MT FRAME RATE RANGE \_ \_ \_ \_ MAX
 
@@ -41,13 +41,13 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

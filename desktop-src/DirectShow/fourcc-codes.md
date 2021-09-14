@@ -4,12 +4,12 @@ ms.assetid: 7627b580-4119-48e2-88b7-51b714b5d5b2
 title: Códigos FOURCC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25820d21fb8e8386fb11816c373debf427fa783b8a2f2d4723a46e689e6aea0d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eb789bc16a1643ee737c1c1a63bdbc5704567931
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063269"
 ---
 # <a name="fourcc-codes"></a>Códigos FOURCC
 
@@ -34,7 +34,7 @@ DWORD fccYUY2 = '2YUY';  // Declares the FOURCC 'YUY2'.
 
 
 
-Es necesario invertir el orden porque el sistema operativo Windows microsoft usa una arquitectura little-endian. 'Y' = 0x59, 'U' = 0x55 y '2' = 0x32, por lo que '2YUY' es 0x32595559.
+Es necesario revertir el orden porque microsoft Windows sistema operativo usa una arquitectura little-endian. 'Y' = 0x59, 'U' = 0x55 y '2' = 0x32, por lo que '2YUY' es 0x32595559.
 
 ### <a name="converting-fourcc-codes-to-subtype-guids"></a>Conversión de códigos FOURCC en GUID de subtipo
 

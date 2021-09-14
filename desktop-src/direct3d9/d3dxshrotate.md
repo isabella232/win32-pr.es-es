@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 26505e768a0f8ad48b069cee2cc83876976e0134d8a60a2f93b17b0cb2aad323
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f888186fb6d7563a5904d4e6e3f1eabe626afd1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118298284"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063737"
 ---
 # <a name="d3dxshrotate-function-d3dx9mathh"></a>Función D3DXSHRotate (D3dx9math.h)
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHRotate(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación genera coeficientes order-to-order. Este puntero no debe incluir un alias *con pIn*. Vea la sección Comentarios.
+Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Este puntero no debe incluir un alias *con pIn*. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación gene
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria lmiento + m + l, donde:
 
@@ -110,7 +110,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

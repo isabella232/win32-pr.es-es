@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3d8e6f7c881cc62f9124a58cb168bb3b2123d5f8e3c99b1d86b6aed0f87e2aaa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e2e5962eb9d175bfbbeadd149a547f0d36fbf49f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119697954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063367"
 ---
 # <a name="cbasecontrolvideo-class"></a>CBaseControlVideo (clase)
 
@@ -25,7 +25,7 @@ ms.locfileid: "119697954"
 
 La **clase CBaseControlVideo** implementa la [**interfaz IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) y controla las propiedades de vídeo de una ventana de vídeo genérica. Por lo general, **un objeto CBaseControlVideo** es un representador de vídeo que dibuja vídeo en una ventana de la pantalla.
 
-Muchas **funciones miembro CBaseControlVideo** solo requieren que el representador de vídeo esté conectado a un gráfico de filtros. Si no está conectado, las funciones miembro devolverán **VFW \_ E NOT \_ \_ CONNECTED**. Las propiedades establecidas en un representador de vídeo persisten entre conexiones sucesivas y desconexiones. Todas las aplicaciones deben asegurarse de que restablecen las propiedades del representador antes de iniciar una presentación.
+Muchas **funciones miembro CBaseControlVideo** solo requieren que el representador de vídeo esté conectado a un gráfico de filtros. Si no está conectado, las funciones miembro **devolverán VFW \_ E NOT \_ \_ CONNECTED**. Las propiedades establecidas en un representador de vídeo persisten entre conexiones sucesivas y desconexiones. Todas las aplicaciones deben asegurarse de que restablecen las propiedades del representador antes de iniciar una presentación.
 
 Al trabajar con vídeo, la aplicación puede seleccionar una parte del vídeo que se usará. Esta parte es el rectángulo de origen que controla el objeto **CBaseControlVideo.** **CBaseControlVideo permite** a la aplicación establecer y recuperar el rectángulo de origen. Todos los rectángulos que **CBaseControlVideo** usa emplean valores de ancho y alto en lugar de los valores derecho e inferior. Cuando no se ha establecido ningún rectángulo de origen, las propiedades del rectángulo de origen devuelven el tamaño de vídeo nativo completo.
 
@@ -33,14 +33,14 @@ Al trabajar con vídeo, la aplicación puede seleccionar una parte del vídeo qu
 
 | Miembros de datos protegidos                                                                   | Descripción                                                                                     |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| m \_ pFilter                                                                               | Puntero a un filtro multimedia propietario.                                                              |
+| m \_ pFilter                                                                               | Puntero a un filtro de medios propietario.                                                              |
 | m \_ pInterfaceLock                                                                        | Sección crítica definida externamente.                                                            |
 | m \_ pPin                                                                                  | Control de los tipos de medios para la conexión.                                                      |
 | Funciones de miembro                                                                         | Descripción                                                                                     |
-| [**CBaseControlVideo**](cbasecontrolvideo-cbasecontrolvideo.md)                         | Construye un objeto **CBaseControlVideo.**                                                      |
+| [**CBaseControlVideo**](cbasecontrolvideo-cbasecontrolvideo.md)                         | Construye un **objeto CBaseControlVideo.**                                                      |
 | [**CopyImage**](cbasecontrolvideo-copyimage.md)                                         | Crea una copia de memoria de una imagen de vídeo.                                                         |
 | [**GetImageSize**](cbasecontrolvideo-getimagesize.md)                                   | Recupera la información de tamaño de la imagen de vídeo.                                                         |
-| [**SetControlVideoPin**](cbasecontrolvideo-setcontrolvideopin.md)                       | Establece la marca con la que debe sincronizarse este objeto.                                         |
+| [**SetControlVideoPin**](cbasecontrolvideo-setcontrolvideopin.md)                       | Establece el pin con el que este objeto debe sincronizarse.                                         |
 | Funciones miembro reemplazables                                                             | Descripción                                                                                     |
 | [**CheckSourceRect**](cbasecontrolvideo-checksourcerect.md)                             | Determina si un rectángulo de origen es válido.                                                      |
 | [**CheckTargetRect**](cbasecontrolvideo-checktargetrect.md)                             | Determina si un rectángulo de destino es válido.                                                      |
@@ -57,7 +57,7 @@ Al trabajar con vídeo, la aplicación puede seleccionar una parte del vídeo qu
 | [**SetSourceRect**](cbasecontrolvideo-setsourcerect.md)                                 | Establece el rectángulo de vídeo de origen actual (virtual puro).                                         |
 | [**SetTargetRect**](cbasecontrolvideo-settargetrect.md)                                 | Establece el rectángulo de destino actual (virtual puro).                                               |
 | Métodos IBasicVideo                                                                      | Descripción                                                                                     |
-| [**get \_ AvgTimePerFrame**](cbasecontrolvideo-get-avgtimeperframe.md)                    | Recupera un tiempo medio aproximado por fotograma.                                                |
+| [**get \_ AvgTimePerFrame**](cbasecontrolvideo-get-avgtimeperframe.md)                    | Recupera un tiempo promedio aproximado por fotograma.                                                |
 | [**get \_ BitErrorRate**](cbasecontrolvideo-get-biterrorrate.md)                          | Recupera una tasa de errores de bits aproximada.                                                        |
 | [**get \_ BitRate**](cbasecontrolvideo-get-bitrate.md)                                    | Recupera una velocidad de bits aproximada para el vídeo.                                                |
 | [**GetCurrentImage**](cbasecontrolvideo-getcurrentimage.md)                             | Recupera una representación en memoria de la imagen actual.                                              |
@@ -94,7 +94,7 @@ Al trabajar con vídeo, la aplicación puede seleccionar una parte del vídeo qu
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

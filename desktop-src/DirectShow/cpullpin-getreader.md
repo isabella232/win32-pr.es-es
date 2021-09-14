@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7880cba8e910c3da8ade049e18ae22e403c0c616246e4dfde94e587a1fcdeab9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a20bbb689c4ee5e3ac12c510098163d9fbb224e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063311"
 ---
 # <a name="cpullpingetreader-method"></a>Método CPullPin.GetReader
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Devuelve un puntero a la [**interfaz IAsyncReader.**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La interfaz devuelta tiene un recuento de referencias pendiente. El autor de la llamada debe liberar la interfaz .
 
-El método no comprueba el valor del puntero de interfaz antes de llamar a **AddRef,** por lo que no llame a esto hasta que haya llamado correctamente al método [**CPullPin::Conectar.**](cpullpin-connect.md) De lo contrario, el puntero de interfaz podría ser **NULL** y llamar a **AddRef** producirá una excepción.
+El método no comprueba el valor del puntero de interfaz antes de llamar a **AddRef,** por lo que no lo llame hasta que haya llamado correctamente al método [**CPullPin::Conectar.**](cpullpin-connect.md) De lo contrario, el puntero de interfaz podría ser **NULL** y llamar a **AddRef** producirá una excepción.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ El método no comprueba el valor del puntero de interfaz antes de llamar a **Add
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

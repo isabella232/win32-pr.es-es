@@ -4,20 +4,20 @@ ms.assetid: f1f789f9-f12b-465c-8c84-33a8efa6fbc5
 title: 'NLS: Ejemplo de normalización Unicode'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 895a41129bcdad14a89b34b5adce9cf5337ba4a51e108d0f62ee74b6e88a9003
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92e825e81b9d42bc3c5066ec5cdfd72e1812cbd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119147118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063046"
 ---
 # <a name="nls-unicode-normalization-sample"></a>NLS: Ejemplo de normalización Unicode
 
 La aplicación de ejemplo descrita en este tema muestra la representación de cadenas mediante [la normalización Unicode](using-unicode-normalization-to-represent-strings.md).
 
-La aplicación de ejemplo llama a los cuatro formularios de normalización Unicode con la misma cadena de entrada. A continuación, se realiza una llamada con Unicode no válido para demostrar cómo funciona el índice de código de caracteres no válidos. Por último, la aplicación pasa una cadena que se expande para que sea anómalamente larga, lo que requiere varias llamadas de normalización de cadena a para obtener un tamaño de búfer adecuado.
+La aplicación de ejemplo llama a los cuatro formularios de normalización Unicode con la misma cadena de entrada. A continuación, se realiza una llamada con Unicode no válido para mostrar cómo funciona el índice de código de caracteres no válidos. Por último, la aplicación pasa una cadena que se expande para que sea anómalamente larga, lo que requiere varias llamadas de normalización de cadena a para obtener un tamaño de búfer adecuado.
 
-En este ejemplo se muestran las NLS API siguientes:
+En este ejemplo se muestran las siguientes NLS API funciones:
 
 -   [**IsNormalizedString**](/windows/desktop/api/Winnls/nf-winnls-isnormalizedstring)
 -   [**NormalizeString**](/windows/desktop/api/Winnls/nf-winnls-normalizestring)

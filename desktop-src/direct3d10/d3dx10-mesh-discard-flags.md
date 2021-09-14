@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Mesh.h
-ms.openlocfilehash: d4b98550a2f3a896ed7b99f3e16f33a399a58035497e44420709ee8a0726901b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6640834cf81bfa5e4b6263d3b3cfbb1181bb16c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063801"
 ---
 # <a name="d3dx10_mesh_discard_flags-enumeration"></a>Enumeración D3DX10 \_ MESH \_ DISCARD \_ FLAGS
 
 Especifica qué fragmentos de datos de malla se descartarán del dispositivo. Se usa [**con ID3DX10Mesh::D iscard**](id3dx10mesh-discard.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -43,10 +43,10 @@ typedef enum D3DX10_MESH_DISCARD_FLAGS {
 
 <dl> <dt>
 
-<span id="D3DX10_MESH_DISCARD_ATTRIBUTE_BUFFER"></span><span id="d3dx10_mesh_discard_attribute_buffer"></span>**BÚFER DE ATRIBUTO \_ DE DESCARTE DE MALLA D3DX10 \_ \_ \_**
+<span id="D3DX10_MESH_DISCARD_ATTRIBUTE_BUFFER"></span><span id="d3dx10_mesh_discard_attribute_buffer"></span>**BÚFER DE ATRIBUTO DE DESCARTE DE MALLA D3DX10 \_ \_ \_ \_**
 </dt> <dd>
 
-Descarte el búfer de atributo.
+Descarte el búfer de atributos.
 
 </dd> <dt>
 
@@ -60,21 +60,21 @@ Descarte la tabla de atributos.
 <span id="D3DX10_MESH_DISCARD_POINTREPS"></span><span id="d3dx10_mesh_discard_pointreps"></span>**D3DX10 \_ MESH \_ DISCARD \_ POINTREPS**
 </dt> <dd>
 
-Descarte el búfer de representaciones de puntero.
+Descarte el búfer de réplicas de puntero.
 
 </dd> <dt>
 
-<span id="D3DX10_MESH_DISCARD_ADJACENCY"></span><span id="d3dx10_mesh_discard_adjacency"></span>**ADYACENCIA DE DESCARTE DE MALLA D3DX10 \_ \_ \_**
+<span id="D3DX10_MESH_DISCARD_ADJACENCY"></span><span id="d3dx10_mesh_discard_adjacency"></span>**D3DX10 \_ MESH \_ DISCARD \_ ADJACENCY**
 </dt> <dd>
 
 Descarte el búfer de adyacencia.
 
 </dd> <dt>
 
-<span id="D3DX10_MESH_DISCARD_DEVICE_BUFFERS"></span><span id="d3dx10_mesh_discard_device_buffers"></span>**D3DX10 \_ MESH \_ DESCARTA \_ BÚFERES DE \_ DISPOSITIVO**
+<span id="D3DX10_MESH_DISCARD_DEVICE_BUFFERS"></span><span id="d3dx10_mesh_discard_device_buffers"></span>**BÚFERES DE DISPOSITIVO DE DESCARTE DE MALLA D3DX10 \_ \_ \_ \_**
 </dt> <dd>
 
-Descarte los búferes confirmados en el dispositivo [**(con ID3DX10Mesh::CommitToDevice**](id3dx10mesh-committodevice.md)).
+Descarte los búferes confirmados en el dispositivo [**(con ID3DX10Mesh::CommitToDevice).**](id3dx10mesh-committodevice.md)
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ Descarte los búferes confirmados en el dispositivo [**(con ID3DX10Mesh::CommitT
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

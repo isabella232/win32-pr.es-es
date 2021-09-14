@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: acda4bd9b00434e33c24ac44625b3c1d45350d45b4ec0b242d2638333ad11ed9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a6ae7228be0f3012c49d652d11bf2c1c3bfc181
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063351"
 ---
 # <a name="cbasevideorenderersendquality-method"></a>Método CBaseVideoRenderer.SendQuality
 
@@ -46,7 +46,7 @@ virtual HRESULT SendQuality(
 *trLate* 
 </dt> <dd>
 
-Cantidad de tiempo en la que el fotograma llega tarde.
+Cantidad de tiempo durante el cual el fotograma llega tarde.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Hora de la secuencia actual.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro envía un mensaje de control de calidad ascendente para controlar la administración de la calidad. La naturaleza del mensaje de calidad (es decir, si se reduce o aumenta el número de muestras) se determina en la implementación de administración de calidad en esta clase derivada (vea [**CBaseVideoRenderer::ShouldDrawSampleNow).**](cbasevideorenderer-shoulddrawsamplenow.md)
 
@@ -76,7 +76,7 @@ Esta función miembro envía un mensaje de control de calidad ascendente para co
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,16 +4,16 @@ ms.assetid: 18081652-962f-4605-84b7-1fa60f61ad05
 title: Emisión de comandos de AV/C sin formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 729cad0be3a55a3f95592e54e8f91b9074892a8d111da9ad996b4e00a136cbe1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf1cf1b25d45a0eb35ede7151941d0cd49d30db0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118153792"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063231"
 ---
 # <a name="issuing-raw-avc-commands"></a>Emisión de comandos de AV/C sin formato
 
-Las interfaces [**IAMExtDevice,**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice) [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)y [**IAMTimecodeReader**](/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader) funcionan traduciendo las llamadas de método en comandos para el controlador y, a continuación, interpretando la respuesta del controlador y devolviendola a través de **un HRESULT** o un parámetro de salida. Sin embargo, es posible que algunas funciones de dispositivo no sean accesibles a través de estos métodos. Por lo tanto, MSDV admite el envío de comandos AV/C sin procesar al dispositivo.
+Las interfaces [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice), [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)y [**IAMTimecodeReader**](/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader) funcionan traduciendo las llamadas de método en comandos para el controlador y, a continuación, interpretando la respuesta del controlador y devolviendola a través de **un HRESULT** o un parámetro de salida. Sin embargo, es posible que algunas funciones de dispositivo no sean accesibles a través de estos métodos. Por lo tanto, MSDV admite el envío de comandos AV/C sin procesar al dispositivo.
 
 Debe tener en cuenta los siguientes puntos al usar esta característica:
 
@@ -65,7 +65,7 @@ El **método GetTransportBasicParameters** puede devolver uno de los siguientes 
 
 Si el método devuelve S \_ OK, la respuesta del dispositivo se copia en la matriz. La carga de respuesta puede ser mayor que el comando, por lo que debe asignar un búfer lo suficientemente grande como para contenerlo. El tamaño máximo de carga es de 512 bytes. Tenga en cuenta que un valor devuelto de S \_ OK no siempre significa que el dispositivo haya realizado correctamente el comando. La aplicación debe examinar la carga de respuesta para determinar el estado.
 
-En el ejemplo siguiente se muestra el comando para buscar una búsqueda de número de seguimiento absoluta:
+En el ejemplo siguiente se muestra el comando para buscar una búsqueda de número de pista absoluta:
 
 
 ```C++
@@ -97,7 +97,7 @@ AvcCmd[6] = (BYTE)((ulTrackNumber & 0x00FF0000) >> 16);
 
 <dl> <dt>
 
-[Control de una videocamba de DV](controlling-a-dv-camcorder.md)
+[Control de una cámara de vídeo dv](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

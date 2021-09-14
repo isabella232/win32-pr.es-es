@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_RETRIEVECOLUMN structure'
+description: 'Más información sobre: JET_RETRIEVECOLUMN estructura'
 title: Estructura de JET_RETRIEVECOLUMN
 TOCTitle: JET_RETRIEVECOLUMN Structure
 ms:assetid: 8e23bed5-5279-4733-b787-a073a0e8d5a5
@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 52b8a36946776ad43120f13e85d9ef7678594337
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983138"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063474"
 ---
 # <a name="jet_retrievecolumn-structure"></a>Estructura de JET_RETRIEVECOLUMN
 
@@ -45,7 +45,7 @@ La **JET_RETRIEVECOLUMN** contiene parámetros de entrada y salida [para JetRetr
     } JET_RETRIEVECOLUMN;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **columnid**
 
@@ -83,7 +83,7 @@ Grupo de bits que contienen las opciones para la recuperación de columnas, que 
 
 **ibLongValue**
 
-Desplazamiento al primer byte que se va a recuperar de una columna de [tipo JET_coltypLongBinary](./jet-coltyp.md) o [JET_coltypLongText](./jet-coltyp.md).
+Desplazamiento al primer byte que se va a recuperar de una columna de tipo [JET_coltypLongBinary](./jet-coltyp.md) o [JET_coltypLongText](./jet-coltyp.md).
 
 **itagSequence**
 

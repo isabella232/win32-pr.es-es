@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 535c44bbd9e3d0c16fbebb21a2f1748fb8ef7289131f4c78bed936720d50a774
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78de803d31d8e97f9493d605d688916501edba6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063607"
 ---
 # <a name="esentlogsequenceendexception-class"></a>Clase EsentLogSequenceEndException
 
-Clase base para JET_err. Excepciones logSequenceEnd.
+Clase base para JET_err. Excepciones LogSequenceEnd.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones logSequenceEnd.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

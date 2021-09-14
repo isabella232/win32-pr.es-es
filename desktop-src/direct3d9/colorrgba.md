@@ -4,12 +4,12 @@ ms.assetid: a79d359d-242e-4ce1-be94-2912939ba3b0
 title: ColorRGBA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4ca848909058803776baf7fee9f819d359baf3ff002233714e0b585b85ea64e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d0cef90e6626e8a67e60628b06ff5f5045cc9c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063750"
 ---
 # <a name="colorrgba"></a>ColorRGBA
 
@@ -26,7 +26,7 @@ template ColorRGBA
 } 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

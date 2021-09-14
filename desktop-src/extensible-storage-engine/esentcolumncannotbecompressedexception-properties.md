@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101285
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a40e2e508587d1a53678576726fc41d4a7ad5cadbcea117fd034330935edbaf1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47a93bcbed82024b5381d8b6c7efe520ef5b9146
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063635"
 ---
 # <a name="esentcolumncannotbecompressedexception-properties"></a>Propiedades de EsentColumnCannotBeCompressedException
 
@@ -34,7 +34,7 @@ El [tipo EsentColumnCannotBeCompressedException](./esentcolumncannotbecompressed
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentColumnCannotBeCompressedException](./esentcolumncannotbecompressed
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

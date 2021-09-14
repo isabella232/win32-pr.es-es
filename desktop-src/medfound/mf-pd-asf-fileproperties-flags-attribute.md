@@ -4,12 +4,12 @@ ms.assetid: 427f0dca-f945-4c89-a87a-a7c86291b1c5
 title: MF_PD_ASF_FILEPROPERTIES_FLAGS atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ebc42bac8ae6efd8c28fe93a4114b7e0b2e85f4daaba708a35e06231e62de9e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ee294642188a0f2e22143feeca6791fea591cbb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119449055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363927"
 ---
 # <a name="mf_pd_asf_fileproperties_flags-attribute"></a>Atributo \_ MF PD \_ ASF \_ FILEPROPERTIES \_ FLAGS
 
@@ -54,11 +54,11 @@ Además, los valores de atributo [**MF \_ PD \_ ASF \_ FILEPROPERTIES MAX PACKET
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

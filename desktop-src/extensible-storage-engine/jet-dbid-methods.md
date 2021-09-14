@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_DBID métodos'
+description: 'Más información sobre: métodos JET_DBID datos'
 title: JET_DBID métodos
 TOCTitle: JET_DBID methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_DBID
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39516066
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 146fb2e46c9a38b97efa39da8b8c3be27fc186f69ca744856a98261288fbaf9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adf56378f744a61b233d51d365235eba13f5e6b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118766617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063488"
 ---
 # <a name="jet_dbid-methods"></a>JET_DBID métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_DBID](./jet-dbid-structure.md) expone los miembros siguientes.
+El [JET_DBID](./jet-dbid-structure.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 

@@ -4,12 +4,12 @@ description: En este tema se muestra cómo inicializar un dispositivo.
 ms.assetid: 02a20ada-b3aa-435e-8d66-117a19222f9f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a886e27a557d0c7c59b9d92b5df9d180a930d4fe
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 546bee6631816beb699f282a3b4f46bbbc142afc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625531"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063763"
 ---
 # <a name="how-to-create-a-device-and-immediate-context"></a>Cómo: Crear un dispositivo y un contexto inmediato
 
@@ -68,9 +68,9 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 
 
 > [!Note]  
-> Si solicita un dispositivo [**D3D \_ FEATURE \_ LEVEL \_ \_ 11 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) en un equipo con solo el entorno de ejecución de Direct3D 11.0, [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) se cierra inmediatamente con **E \_ INVALIDARG**. Para solicitar de forma segura todos los niveles de características posibles en un equipo con el entorno de ejecución de DirectX 11.0 o DirectX 11.1, use este código:
+> Si solicita un dispositivo [**D3D \_ FEATURE \_ LEVEL \_ \_ 11 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) en un equipo con solo el entorno de ejecución de Direct3D 11.0, [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) se cierra inmediatamente con **E \_ INVALIDARG**. Para solicitar de forma segura todos los niveles de características posibles en un equipo con el entorno de ejecución DirectX 11.0 o DirectX 11.1, use este código:
 >
-> <span codelanguage=""></span>
+> 
 >
 > <table>
 > <colgroup>
@@ -103,7 +103,7 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 >
 > Cree una vista de destino de representación mediante una llamada a [**ID3D11Device::CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview) y enlace el búfer de reserva como destino de representación mediante una llamada a [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets).
 >
-> <span codelanguage=""></span>
+> 
 >
 > <table>
 > <colgroup>
@@ -129,7 +129,7 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 >
 > Cree una ventanilla para definir qué partes del destino de representación estarán visibles. Defina la ventanilla mediante la [**estructura VIEWPORT \_ D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) y establezca la ventanilla mediante el [**método ID3D11DeviceContext::RSSetViewports.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports)
 >
-> <span codelanguage="ManagedCPlusPlus"></span>
+> 
 >
 > <table>
 > <colgroup>

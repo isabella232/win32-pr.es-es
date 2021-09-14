@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 68d52c1c022ed292a879ae4f701df52524d4170160bc79b6f1956c744a530c22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d42f431dbb2f9108c5e503aea07ba6b11915f0ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119121307"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063717"
 ---
 # <a name="id3dxfilesavedata-interface"></a>Interfaz ID3DXFileSaveData
 
 Las aplicaciones usan los métodos de la interfaz ID3DXFileSaveData para agregar objetos de datos como elementos secundarios de un nodo de datos de archivo .x.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DXFileSaveData** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXFileSaveData** también tiene estos tipos de miembros:
 
@@ -33,14 +33,14 @@ La **interfaz ID3DXFileSaveData** hereda de la [**interfaz IUnknown.**](/windows
 
 ### <a name="methods"></a>Métodos
 
-La **interfaz ID3DXFileSaveData** tiene estos métodos.
+La **interfaz ID3DXFileSaveData tiene** estos métodos.
 
 
 
 | Método                                                          | Descripción                                                                                                                                |
 |:----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddDataObject**](id3dxfilesavedata--adddataobject.md)       | Agrega un objeto de datos como elemento secundario del nodo de datos de archivo **ID3DXFileSaveData.**<br/>                                                      |
-| [**AddDataReference**](id3dxfilesavedata--adddatareference.md) | Agrega una referencia de datos como elemento secundario de este nodo de datos de archivo **ID3DXFileSaveData.** La referencia de datos apunta a un objeto de datos de archivo.<br/> |
+| [**AddDataReference**](id3dxfilesavedata--adddatareference.md) | Agrega una referencia de datos como elemento secundario de este nodo de datos **de archivo ID3DXFileSaveData.** La referencia de datos apunta a un objeto de datos de archivo.<br/> |
 | [**GetId**](id3dxfilesavedata--getid.md)                       | Recupera el GUID de este nodo **de datos de archivo ID3DXFileSaveData.**<br/>                                                                |
 | [**GetName**](id3dxfilesavedata--getname.md)                   | Recupera el nombre de este nodo de datos **de archivo ID3DXFileSaveData.**<br/>                                                                |
 | [**GetSave**](id3dxfilesavedata--getsave.md)                   | Recupera un puntero a este nodo de datos [**de archivo ID3DXFileSaveObject.**](id3dxfilesaveobject.md)<br/>                                  |
@@ -50,7 +50,7 @@ La **interfaz ID3DXFileSaveData** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El GUID de la interfaz ID3DXFileSaveObject es IID \_ ID3DXFileSaveObject.
 
@@ -74,7 +74,7 @@ typedef interface ID3DXFileSaveData *LPD3DXFILESAVEDATA;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

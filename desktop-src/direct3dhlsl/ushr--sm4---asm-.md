@@ -4,12 +4,12 @@ description: Mayús a la derecha. | ushr (sm4 - asm)
 ms.assetid: 3E7CB515-9D0F-44C7-A770-AD0584631BFE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a55343f9c9b4db4fff4b0df7ab4e2a567f25f0eb43e93486fe9c41b89cf68454
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c48b706afb1223a5289f93b5ca393a89c36e915
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119787825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063675"
 ---
 # <a name="ushr-sm4---asm"></a>ushr (sm4 - asm)
 
@@ -17,7 +17,7 @@ Mayús a la derecha.
 
 
 
-| ushr dest \[ .mask \] , src0 \[ .swzzle \] , src1.select \_ component |
+| ushr dest \[ .mask \] , src0 \[ .swzzle \] , src1.select \_ (componente) |
 |--------------------------------------------------------------|
 
 
@@ -36,9 +36,9 @@ Mayús a la derecha.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta instrucción realiza un desplazamiento por componente de cada valor de 32 bits en *src0* a la derecha por un recuento de bits enteros sin signo proporcionado por el LSB de 5 bits (intervalo 0-31) en el componente *\_ src1.select,* insertando 0. El resultado de 32 bits por componente se coloca en *dest*. El recuento es un valor escalar aplicado a todos los componentes.
+Esta instrucción realiza un desplazamiento por componentes de cada valor de 32 bits en *src0* a la derecha mediante un recuento de bits enteros sin signo proporcionado por el LSB de 5 bits (intervalo 0-31) en el componente *\_ src1.select,* insertando 0. El resultado de 32 bits por componente se coloca en *dest*. El recuento es un valor escalar aplicado a todos los componentes.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -60,12 +60,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -75,7 +75,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

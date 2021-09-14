@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 632350f925f843f05bdf7820bc8c14a4570f152afc741d5ed58f1827ad205251
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64f2d46ded16384e53e5281632bc0a064021f673
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063356"
 ---
 # <a name="cbasefiltergetsyncsource-method"></a>Método CBaseFilter.GetSyncSource
 
@@ -53,7 +53,7 @@ Dirección de una variable que recibe un puntero a la interfaz [**IReferenceCloc
 
 Devuelve S \_ OK o E \_ POINTER.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el filtro no usa un reloj de referencia, *\* pClock* se establece en **NULL.** Cuando el método devuelve un resultado, si *\* pClock* no es **NULL,** la **interfaz IReferenceClock** tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
 
@@ -68,7 +68,7 @@ Si el filtro no usa un reloj de referencia, *\* pClock* se establece en **NULL.*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 57e3bf33-5490-4f4a-addf-356ef8f1aeed
 title: Uso de imágenes, mapas de bits y metarchivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bcb0a4d4bad09a931e62da8fe33e27638fede528ad8b29ec3b49417c7bd6e35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49d0603c8a428c45feac8cdeb47a46b61dc5e3bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119466415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063413"
 ---
 # <a name="using-images-bitmaps-and-metafiles"></a>Uso de imágenes, mapas de bits y metarchivos
 

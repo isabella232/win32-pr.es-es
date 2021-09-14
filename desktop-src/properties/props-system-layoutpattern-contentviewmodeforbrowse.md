@@ -4,12 +4,12 @@ ms.assetid: 6c2b6f1f-274f-44ad-864e-4513aaaec4de
 title: System.LayoutPattern.ContentViewModeForBrowse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73d69d0eaf53e9a1c0545528460835a5d4d6557b3e3c43cb7c96f82cbe7208d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad89c3a11a090c787887910c459ef2cad66c4c4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117865868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363427"
 ---
 # <a name="systemlayoutpatterncontentviewmodeforbrowse"></a>System.LayoutPattern.ContentViewModeForBrowse
 
@@ -52,7 +52,7 @@ propertyDescription
             defineToken = LAYOUTPATTERN_CVMFB_DELTA
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -1,15 +1,15 @@
 ---
 description: Especifica la ventana de búfer promedio, en milisegundos, de una secuencia codificada.
 ms.assetid: 96bf43c3-5a62-4157-a7bc-2302fd69c522
-title: MFPKEY_STAT_BAVG propiedad (Wmcodecdsp.h)
+title: MFPKEY_STAT_BAVG (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58058dbb32fbec2c590f0032a0ec04847bc255c83a8ad732eedf3961bc35928f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 106343b74985c85e962c591234cd319ab899b6be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120113175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363815"
 ---
 # <a name="mfpkey_stat_bavg-property"></a>Propiedad MFPKEY \_ STAT \_ BAVG
 
@@ -23,7 +23,7 @@ Especifica la ventana de búfer promedio, en milisegundos, de una secuencia codi
 
 **VT \_ I4**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar la ventana de búfer promedio de una secuencia codificada, lea esta propiedad al final de la codificación.
 
@@ -33,12 +33,12 @@ Para determinar la ventana de búfer promedio de una secuencia codificada, lea e
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Cliente<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Remoto<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

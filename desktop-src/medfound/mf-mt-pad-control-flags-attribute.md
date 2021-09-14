@@ -4,12 +4,12 @@ ms.assetid: d7fec5fb-a1fe-4cc9-aa27-a3af0456ea8d
 title: MF_MT_PAD_CONTROL_FLAGS atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6648038b92da811095be66f24587276c4149ff18ba6b17664ce86edad098fb1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02610b54b84c2470eba19eaa696f633243df347f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117877029"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363983"
 ---
 # <a name="mf_mt_pad_control_flags-attribute"></a>Atributo \_ MF MT PAD CONTROL \_ \_ \_ FLAGS
 
@@ -19,9 +19,9 @@ Especifica la relación de aspecto del rectángulo de salida para un tipo de med
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor de este atributo es miembro de la [**enumeración MFVideoPadFlags.**](/windows/desktop/api/mfapi/ne-mfapi-mfvideopadflags)
+El valor de este atributo es un miembro de la [**enumeración MFVideoPadFlags.**](/windows/desktop/api/mfapi/ne-mfapi-mfvideopadflags)
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -33,11 +33,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

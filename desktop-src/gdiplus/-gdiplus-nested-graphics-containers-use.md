@@ -4,12 +4,12 @@ ms.assetid: f3fce8ef-903a-4b9d-b76c-562739d02eb3
 title: Contenedores de gráficos anidados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d88b3a768e5b156eb5d28410ad69d58227e9660618764ca4b084b5e35662b839
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 29f9d9feac3494b423d844cb1e3da359af33eaec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120114985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063434"
 ---
 # <a name="nested-graphics-containers"></a>Contenedores de gráficos anidados
 
@@ -54,7 +54,7 @@ En el código anterior, el rectángulo dibujado desde dentro del contenedor se t
 
 ## <a name="clipping-in-nested-containers"></a>Recorte en contenedores anidados
 
-En el ejemplo siguiente se muestra cómo los contenedores anidados controlan las regiones de recorte. El código crea un [**objeto Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) y un contenedor dentro de ese **objeto Graphics.** La región de recorte del **objeto Graphics** es un rectángulo y la región de recorte del contenedor es una elipse. El código realiza dos llamadas al método [**Graphics::D rawLine.**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint)) La primera llamada a **Graphics::D rawLine** está dentro del contenedor y la segunda llamada **a Graphics::D rawLine** está fuera del contenedor (después de la llamada a [**Graphics::EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer)). La primera línea se recorta mediante la intersección de las dos regiones de recorte. La segunda línea solo se recorta mediante la región de recorte rectangular del **objeto Graphics.**
+En el ejemplo siguiente se muestra cómo los contenedores anidados controlan las regiones de recorte. El código crea un [**objeto Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) y un contenedor dentro de ese **objeto Graphics.** La región de recorte del **objeto Graphics** es un rectángulo y la región de recorte del contenedor es una elipse. El código realiza dos llamadas al [**método Graphics::D rawLine.**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint)) La primera llamada a **Graphics::D rawLine** está dentro del contenedor y la segunda llamada **a Graphics::D rawLine** está fuera del contenedor (después de la llamada a [**Graphics::EndContainer**](/windows/win32/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-endcontainer)). La primera línea se recorta mediante la intersección de las dos regiones de recorte. La segunda línea solo se recorta mediante la región de recorte rectangular del **objeto Graphics.**
 
 
 ```

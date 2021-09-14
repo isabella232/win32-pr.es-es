@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1f534f8d6c69731c9108f2b883bc266749e5a483a1112bef8af1bdac388b86ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5191257ee15859708a2221e41824ad7e3e1b2d3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118776557"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063614"
 ---
 # <a name="esentlogsequenceenddatabasesconsistentexception-constructor"></a>Constructor EsentLogSequenceEndDatabasesConsistentException
 

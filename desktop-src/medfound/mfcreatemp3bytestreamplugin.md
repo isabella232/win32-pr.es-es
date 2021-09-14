@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c2d2d07905932e589e8873722bd0889cec6dc321c28dbc2d1c8704f880df4991
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b8bcd153471ddd8acd648d5775b4dc964693a56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117690977"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363867"
 ---
 # <a name="mfcreatemp3bytestreamplugin-function"></a>Función MFCreateMP3ByteStreamPlugin
 
@@ -59,7 +59,7 @@ Recibe un puntero a la interfaz . El autor de la llamada debe liberar la interfa
 
 Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a mf.dll.
 
@@ -67,7 +67,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
@@ -76,14 +76,14 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Media Foundation Functions](media-foundation-functions.md)
 </dt> <dt>
 
-[Controladores de esquema y Byte-Stream de esquema](scheme-handlers-and-byte-stream-handlers.md)
+[Controladores de esquema y Byte-Stream controladores de esquema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> <dt>
 
 [Solucionador de origen](source-resolver.md)

@@ -1,5 +1,5 @@
 ---
-description: El método Inactivo cierra el subproceso de trabajo que extrae datos del pin de salida. Este método también desasigna el asignador.
+description: El método inactivo cierra el subproceso de trabajo que extrae datos del pin de salida. Este método también desasigna el asignador.
 ms.assetid: 90b91686-b9a8-4196-b559-de924334f11c
 title: Método CPullPin.Inactive (Pullpin.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 56307362651761dbe2bc5c0242a24f189cf14d1e820df6a5ba21bdeb9c7deb0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4f32084428a36032152d3c3297b1fc9419e51cb3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119565375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063310"
 ---
 # <a name="cpullpininactive-method"></a>CPullPin.Inactive (método)
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame a este método cuando el filtro propietario se vuelva inactivo. (Si el pin de entrada deriva de [**CBasePin,**](cbasepin.md)invalide el [**método CBasePin::Inactive).**](cbasepin-inactive.md)
 
@@ -59,7 +59,7 @@ Llame a este método cuando el filtro propietario se vuelva inactivo. (Si el pin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

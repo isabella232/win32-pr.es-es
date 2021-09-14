@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0bb27d97c042972051b8647ba932b01da6e61e9054a4d26e8ee1b6d8bfbc45dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9dcbd4c1d8ba59e8df0596ccff446c110f158c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119116805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063626"
 ---
 # <a name="esentcolumninrelationshipexception-class"></a>Clase EsentColumnInRelationshipException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones de ColumnInRelationship.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

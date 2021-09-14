@@ -1,7 +1,7 @@
 ---
 description: La \_ variable miembro m pAlloc es un puntero a la interfaz IMemAllocator del asignador de memoria.
 ms.assetid: a3be5982-83f0-4552-9bcd-85da4a4918ff
-title: CPullPin::m_pAlloc miembro (Pullpin.h)
+title: Miembro CPullPin::m_pAlloc (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 76abcdadf24006d545a8e8cf51205a99656a634094487104b9bad5d9b553c33c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9945bd7b5f3c5b54f0ef578c2b012d0e56935d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063309"
 ---
-# <a name="cpullpinm_palloc-member"></a>CPullPin::m \_ miembro pAlloc
+# <a name="cpullpinm_palloc-member"></a>Miembro CPullPin::m \_ pAlloc
 
 La `m_pAlloc` variable miembro es un puntero a la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) del asignador de memoria.
 
@@ -36,7 +36,7 @@ IMemAllocator *m_pAlloc;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CPullPin::D ecideAllocator**](cpullpin-decideallocator.md) establece esta variable miembro.
 
@@ -51,7 +51,7 @@ El [**método CPullPin::D ecideAllocator**](cpullpin-decideallocator.md) estable
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

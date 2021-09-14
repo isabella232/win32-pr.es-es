@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e5102478807b49c796b06669979e528e8b2d79cd11bd1a5fc158e766b3f081e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e58cb9a903f0841de2442216fab0e360007206b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063313"
 ---
 # <a name="cpullpinendflush-method"></a>Método CPullPin.EndFlush
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El [**método CPullPin::Seek**](cpullpin-seek.md) llama a este método. Implemente este método para llamar al [**método IPin::EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) en cada pin de entrada de nivel inferior que recibe datos de este objeto. Si los pin de salida del filtro derivan de **CBaseOutputPin,** llame al método **CBaseOutputPin::D eliverEndFlush.**
+El [**método CPullPin::Seek**](cpullpin-seek.md) llama a este método. Implemente este método para llamar al método [**IPin::EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) en cada pin de entrada de nivel inferior que recibe datos de este objeto. Si los pines de salida del filtro derivan de **CBaseOutputPin,** llame al método **CBaseOutputPin::D eliverEndFlush.**
 
 Este diseño permite que el filtro busque la secuencia simplemente llamando a **Seek** en el **objeto CPullPin.**
 
@@ -61,7 +61,7 @@ Este diseño permite que el filtro busque la secuencia simplemente llamando a **
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

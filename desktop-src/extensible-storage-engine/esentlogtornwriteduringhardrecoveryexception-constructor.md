@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0fac94eaaedc1c6d3f7000ebade9ec6630870a0796d96fb0aa48f3351a214012
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4fef3d3ea69d158ab7db0d2a543a80cad4e3a22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063601"
 ---
 # <a name="esentlogtornwriteduringhardrecoveryexception-constructor"></a>Constructor EsentLogTornWriteDuringHardRecoveryException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogTornWriteDuringHardRecoveryException()
 public EsentLogTornWriteDuringHardRecoveryException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

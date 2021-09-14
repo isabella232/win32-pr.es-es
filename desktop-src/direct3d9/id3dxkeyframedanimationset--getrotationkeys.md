@@ -1,5 +1,5 @@
 ---
-description: Rellena una matriz con datos de clave de rotación utilizados para la animación de fotogramas clave.
+description: Rellena una matriz con datos de clave de rotación usados para la animación de fotogramas clave.
 ms.assetid: 9ae8bc28-d231-4d50-98f0-762b2d2c04e8
 title: Método ID3DXKeyframedAnimationSet::GetRotationKeys (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b95d2591c8eef4b3df22cd8af301bfee9862dd2e3124ecd1cda8d92a589f91df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af9242ccf75bc1e5443f040399ffbd8a939ed92e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119493545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063716"
 ---
 # <a name="id3dxkeyframedanimationsetgetrotationkeys-method"></a>Método ID3DXKeyframedAnimationSet::GetRotationKeys
 
-Rellena una matriz con datos de clave de rotación utilizados para la animación de fotogramas clave.
+Rellena una matriz con datos de clave de rotación usados para la animación de fotogramas clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Puntero a una matriz asignada por el usuario de [**\_ cuaterniones D3DXKEY QUATE
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

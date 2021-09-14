@@ -4,12 +4,12 @@ description: Mayús a la derecha. | ushr (sm5 - asm)
 ms.assetid: C695CB6C-A6C9-4DC8-8EBE-70A0CFFC4981
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b4f0cacaa785b34eb8910f12ecfe3578bd47781e41110adc71f4a7a7d52858a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f33c627ec4aa985b5ac8a27cf0babd6219c9247c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118283051"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063674"
 ---
 # <a name="ushr-sm5---asm"></a>ushr (sm5 - asm)
 
@@ -56,14 +56,14 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
-| Modelo de sombreador                                              | Compatible. |
+| Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
 | [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

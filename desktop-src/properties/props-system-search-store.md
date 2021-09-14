@@ -1,19 +1,19 @@
 ---
-description: Identificador del controlador de protocolo que generó el elemento. Por ejemplo, MAPI, CSC, archivo, etc.
+description: Identificador del controlador de protocolo que produjo el elemento. Por ejemplo, MAPI, CSC, FILE, y así sucesivamente.
 ms.assetid: aceb0953-d46b-412a-8cdc-7848c1d711f2
 title: System.Search.Store
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 01210ce56f1306749ba9dc573def30682a6270b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363362"
 ---
 # <a name="systemsearchstore"></a>System.Search.Store
 
-Identificador del controlador de protocolo que generó el elemento. Por ejemplo, MAPI, CSC, archivo, etc.
+Identificador del controlador de protocolo que produjo el elemento. Por ejemplo, MAPI, CSC, FILE, y así sucesivamente.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

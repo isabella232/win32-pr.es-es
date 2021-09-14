@@ -1,9 +1,9 @@
 ---
 title: Función Texture2D::GatherCmpAlpha(S,float,float,int)
-description: Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente alfa con un valor de comparación. | Función Texture2D::GatherCmpAlpha(S,float,float,int)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente alfa con un valor de comparación. | Función Texture2D::GatherCmpAlpha(S,float,float,int)
 ms.assetid: 6fa60604-1eac-405d-bffa-3055569b7a09
 keywords:
-- Función HLSL de GatherCmpAlpha
+- Función GatherCmpAlpha HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f6e350ed14482646562121d910a8bd35f30403acf8dbde7df249ee1bc6ca800a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a7f7fcdc6e24cac5c04068fda7f781d0bdd376a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118789608"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063691"
 ---
 # <a name="texture2dgathercmpalphasfloatfloatint-function"></a>Función Texture2D::GatherCmpAlpha(S,float,float,int)
 
-Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente alfa con un valor de comparación.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente alfa con un valor de comparación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,15 +81,15 @@ Tipo: **float4**
 
 Un valor de cuatro componentes, cada componente es el resultado de una comparación por componente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -104,7 +104,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 [Métodos GatherCmpAlpha](texture2d-gathercmpalpha.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

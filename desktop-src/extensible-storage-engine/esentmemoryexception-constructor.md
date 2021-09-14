@@ -1,6 +1,6 @@
 ---
-description: Más información sobre el constructor EsentMemoryException
-title: Constructor EsentMemoryException
+description: 'Más información sobre: Constructor esentMemoryException'
+title: Constructor de EsentMemoryException
 TOCTitle: 'EsentMemoryException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentMemoryException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmemoryexception.esentmemoryexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 5cd729d53081961f1c4ea00f3ffb2d5a3ebb5685c100e2013eee1618bb33db90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cdaf7bca4c351b4d255af530f9db43ca314776f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063593"
 ---
-# <a name="esentmemoryexception-constructor"></a>Constructor EsentMemoryException
+# <a name="esentmemoryexception-constructor"></a>Constructor de EsentMemoryException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

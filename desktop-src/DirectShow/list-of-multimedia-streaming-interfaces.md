@@ -4,12 +4,12 @@ ms.assetid: 19dae9fc-e26a-4777-9190-d8a86da1ea75
 title: Lista de interfaces de streaming multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 360524cc27e9215d8340db01c079c231241c352563046001136a9d35b479d9b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3720d6ba4dd3e1fbc714bbe7f5af07572b3303f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120051275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063213"
 ---
 # <a name="list-of-multimedia-streaming-interfaces"></a>Lista de interfaces de streaming multimedia
 

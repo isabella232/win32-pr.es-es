@@ -4,12 +4,12 @@ ms.assetid: c4ede790-e7ef-4ed0-bdbe-a635350d92f3
 title: MFPKEY_AVDecVideoSWPowerLevel propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce376a370ea6488c87c0266319de7e9bde0a94edab7137a81f015f416ea9fc08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2180e26d3e14263c14f2f3603c8c92cf8c11daec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117874069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363842"
 ---
 # <a name="mfpkey_avdecvideoswpowerlevel-property"></a>Propiedad MFPKEY \_ AVDecVideoSWPowerLevel
 
@@ -17,7 +17,7 @@ Especifica el nivel de energía del descodificador.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -27,9 +27,9 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 **100**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta propiedad debe establecerse en uno de los siguientes valores.
+Esta propiedad debe establecerse en uno de los valores siguientes.
 
 
 
@@ -47,15 +47,15 @@ Esta propiedad debe establecerse en uno de los siguientes valores.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                              |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: f2a76471-3d93-427b-a316-d0967cd20e77
 title: Escribir un objeto de encabezado ASF para un nuevo archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ee50adc4e3f411bca9679672b88680ab3064bc91d828e2897ae1f94e40f9f9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6dfcaf0d7c7c4ca469e75fb4c1bd47a4f8b1d32f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119355215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363534"
 ---
 # <a name="writing-an-asf-header-object-for-a-new-file"></a>Escribir un objeto de encabezado ASF para un nuevo archivo
 

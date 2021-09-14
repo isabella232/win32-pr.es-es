@@ -4,18 +4,18 @@ ms.assetid: 94e2a411-96b8-4506-8491-78f4f5f286ce
 title: Usar el solucionador de origen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81265f2edeb573ccdfb2b4ea8f2664d08f9bca8a2170459c9c53890ecd3b52cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e992199b097ff3f3337f92216b684d68e46bca13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363695"
 ---
 # <a name="using-the-source-resolver"></a>Usar el solucionador de origen
 
-La resolución del origen usa una URL o una secuencia de bytes y crea el origen multimedia adecuado para el contenido en cuestión. Para crear la resolución de origen, llame [**a MFCreateSourceResolver**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesourceresolver). Esta función devuelve un puntero [**de interfaz IMFSourceResolver.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceresolver)
+La resolución del origen usa una URL o una secuencia de bytes y crea el origen multimedia adecuado para el contenido en cuestión. Para crear la resolución de origen, llame [**a MFCreateSourceResolver.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesourceresolver) Esta función devuelve un puntero [**de interfaz IMFSourceResolver.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceresolver)
 
-La resolución de origen tiene métodos sincrónicos y asincrónicos. Si usa la resolución de origen del subproceso de aplicación principal, los métodos asincrónicos harán que la interfaz de usuario tenga más capacidad de respuesta. Los métodos sincrónicos pueden bloquearse durante un período de tiempo perceptible, especialmente si el solucionador de origen debe abrir un recurso de red.
+El solucionador de origen tiene métodos sincrónicos y asincrónicos. Si usa la resolución de origen del subproceso de aplicación principal, los métodos asincrónicos harán que la interfaz de usuario tenga más capacidad de respuesta. Los métodos sincrónicos pueden bloquearse durante un período de tiempo considerable, especialmente si el solucionador de origen debe abrir un recurso de red.
 
 Los métodos sincrónicos son:
 
@@ -27,7 +27,7 @@ Los métodos asincrónicos son:
 -   [**IMFSourceResolver::BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl)
 -   [**IMFSourceResolver::BeginCreateObjectFromByteStream**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfrombytestream)
 
-Para los métodos asincrónicos, cada método tiene un método **End...** correspondiente para completar la solicitud asincrónica y un método **Cancel...** para cancelar una solicitud pendiente. Para obtener más información sobre los métodos asincrónicos Media Foundation, vea [Métodos de devolución de llamada asincrónicos.](asynchronous-callback-methods.md)
+Para los métodos asincrónicos, cada método tiene un método **End...** correspondiente para completar la solicitud asincrónica y un método **Cancel...** para cancelar una solicitud pendiente. Para obtener más información sobre los métodos asincrónicos en Media Foundation, vea [Métodos de devolución de llamada asincrónicos](asynchronous-callback-methods.md).
 
 En el ejemplo de código siguiente se crea un origen multimedia a partir de una dirección URL. En este ejemplo se usa el método sincrónico .
 

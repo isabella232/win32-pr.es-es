@@ -5,11 +5,11 @@ title: Administración de calidad de vídeo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d441178cd5b360bb9f8fb9bfc4d903fd9a5a3848
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363623"
 ---
 # <a name="video-quality-management"></a>Administración de calidad de vídeo
 
@@ -21,18 +21,18 @@ En un mundo perfecto, el vídeo nunca tendría problemas, independientemente de 
 -   Reduzca el uso de memoria, especialmente en la GPU.
 -   Reduzca el consumo de energía, especialmente en equipos portátiles que se ejecutan con batería.
 -   Obtenga la mejor calidad de imagen posible, dadas las restricciones de recursos.
--   Mantenga el vídeo sincronizado con el audio.
+-   Mantenga el vídeo sincronizado con audio.
 
 Algunos de estos objetivos son contrarios, especialmente en los sistemas de gama baja. Por lo general, hay un equilibrio entre velocidad y calidad. Los problemas son más ofensivos que las reducciones moderadas de la calidad visual. La importancia relativa del consumo de energía varía con el entorno; en un portátil que se ejecuta con batería, es muy importante.
 
 En Windows 7, el representador de vídeo mejorado (EVR) tiene una mejor compatibilidad con la administración de calidad de vídeo. Tanto la Media Foundation como la canalización DirectShow se han actualizado para aprovechar estas funcionalidades. Se usa un enfoque de dos opciones:
 
--   Antes de que se inicie la reproducción, la canalización puede realizar optimizaciones estáticas, en función de la configuración de administración de energía del usuario y la información sobre el hardware.
--   Una vez que se inicia la reproducción, la canalización puede aplicar optimizaciones dinámicas, en función del rendimiento en tiempo de ejecución.
+-   Antes de que se inicie la reproducción, la canalización puede realizar optimizaciones estáticas, según la configuración de administración de energía del usuario y la información sobre el hardware.
+-   Una vez que se inicia la reproducción, la canalización puede aplicar optimizaciones dinámicas en función del rendimiento en tiempo de ejecución.
 
 ## <a name="quality-management-in-media-foundation"></a>Administración de calidad en Media Foundation
 
-Para habilitar las optimizaciones estáticas, establezca el atributo [MF \_ TOPOLOGY \_ STATIC PLAYBACK \_ \_ OPTIMIZATIONS](mf-topology-static-playback-optimizations.md) en la topología parcial antes de resolver la topología. El cargador de topología consulta este atributo en su [**método IMFTopoLoader::Load.**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load)
+Para habilitar las optimizaciones estáticas, establezca el atributo [ \_ MF TOPOLOGY STATIC PLAYBACK \_ \_ \_ OPTIMIZATIONS](mf-topology-static-playback-optimizations.md) en la topología parcial antes de resolver la topología. El cargador de topología consulta este atributo en su [**método IMFTopoLoader::Load.**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load)
 
 Si habilita las optimizaciones estáticas, debe establecer otros dos atributos en la topología:
 
@@ -60,7 +60,7 @@ DirectShow optimizaciones estáticas y dinámicas para la reproducción de DVD. 
 | Marca                  | Descripción                    |
 |-----------------------|--------------------------------|
 | AM \_ DVD \_ ADAPT \_ GRAPH | Habilita las optimizaciones estáticas.  |
-| QOS \_ \_ DE DVD DE \_ AM     | Habilita las optimizaciones dinámicas. |
+| QOS \_ \_ DE EVR de DVD DE \_ AM     | Habilita las optimizaciones dinámicas. |
 
 
 
@@ -73,7 +73,7 @@ Otras DirectShow aplicaciones pueden habilitar optimizaciones dinámicas llamand
 
  
 
-## <a name="quality-management-in-the-evr"></a>Administración de calidad en la EVR
+## <a name="quality-management-in-the-evr"></a>Administración de calidad en el EVR
 
 EvR admite algunas nuevas marcas de configuración para la administración de calidad. Si habilita las optimizaciones de administración de calidad descritas anteriormente, no tiene que establecer estas marcas directamente. Sin embargo, se documentan para las aplicaciones que desean un control más pormenorizados sobre la EVR.
 
@@ -92,7 +92,7 @@ Establezca las marcas siguientes en el mezclador EVR mediante una llamada al mé
 
  
 
-Establezca las marcas siguientes en el presentador evr llamando al [**método IMFVideoDisplayControl::SetRenderingPrefs:**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setrenderingprefs)
+Establezca las marcas siguientes en el presentador de EVR mediante una llamada al método [**IMFVideoDisplayControl::SetRenderingPrefs:**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setrenderingprefs)
 
 
 

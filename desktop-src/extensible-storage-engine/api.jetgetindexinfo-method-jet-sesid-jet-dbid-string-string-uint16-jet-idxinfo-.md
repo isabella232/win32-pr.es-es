@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bd6b8833a235049b0079dfd0d436b859f836cb7f5f98d9d21afc131437b642e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 762437dba9e502de5c0650e4ae6df53d4629d791
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118085312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063668"
 ---
 # <a name="apijetgetindexinfo-method-jet_sesid-jet_dbid-string-string-uint16-jet_idxinfo"></a>Método Api.JetGetIndexInfo (JET_SESID, JET_DBID, String, String, UInt16, JET_IdxInfo)
 
@@ -113,11 +113,11 @@ public static void JetGetIndexInfo(
     
     Tipo de información que se recuperará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

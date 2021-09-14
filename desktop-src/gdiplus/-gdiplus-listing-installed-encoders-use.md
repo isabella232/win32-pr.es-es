@@ -1,21 +1,21 @@
 ---
-description: GDI+ proporciona la función GetImageEncoders para que pueda determinar qué codificadores de imagen están disponibles en el equipo.
+description: GDI+ proporciona la función GetImageEncoders para que pueda determinar qué codificadores de imágenes están disponibles en el equipo.
 ms.assetid: a261cf61-b853-4208-984b-0d5040eb1667
-title: Enumerar los codificadores instalados
+title: Enumeración de codificadores instalados
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f310e9d366cdacde019373724f2b9feb3b94aef8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063443"
 ---
-# <a name="listing-installed-encoders"></a>Enumerar los codificadores instalados
+# <a name="listing-installed-encoders"></a>Enumeración de codificadores instalados
 
-GDI+ proporciona la función [**GetImageEncoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) para que pueda determinar qué codificadores de imagen están disponibles en el equipo. **GetImageEncoders** devuelve una matriz de objetos [**ImageCodecInfo**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) . Antes de llamar a **GetImageEncoders**, debe asignar un búfer lo suficientemente grande como para recibir esa matriz. Puede llamar a [**GetImageEncodersSize**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoderssize) para determinar el tamaño del búfer necesario.
+GDI+ proporciona la [**función GetImageEncoders para**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) que pueda determinar qué codificadores de imágenes están disponibles en el equipo. **GetImageEncoders devuelve** una matriz de [**objetos ImageCodecInfo.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) Antes de llamar **a GetImageEncoders,** debe asignar un búfer lo suficientemente grande como para recibir esa matriz. Puede llamar a [**GetImageEncodersSize para**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoderssize) determinar el tamaño del búfer necesario.
 
-La siguiente aplicación de consola muestra los codificadores de imágenes disponibles:
+En la siguiente aplicación de consola se enumeran los codificadores de imagen disponibles:
 
 
 ```

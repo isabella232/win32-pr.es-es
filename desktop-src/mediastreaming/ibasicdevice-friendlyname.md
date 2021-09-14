@@ -4,7 +4,7 @@ description: Recupera el nombre descriptivo del dispositivo.
 ms.assetid: 693806E1-CA66-457D-A25B-D79064776965
 keywords:
 - Método FriendlyName de Media Streaming API
-- Media Streaming API del método FriendlyName, interfaz IBasicDevice
+- Método FriendlyName de Media Streaming API, interfaz IBasicDevice
 - IBasicDevice interface Media Streaming API , FriendlyName (método)
 topic_type:
 - apiref
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 35084fafb92b3716208aa6062f065cc4e25a45d2d1a412083076b9e355d2ce43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec2b2edfa3a98dfdbbdd1d236acb6e1f1433f141
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118735619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363535"
 ---
 # <a name="ibasicdevicefriendlyname-method"></a>IBasicDevice::FriendlyName (método)
 

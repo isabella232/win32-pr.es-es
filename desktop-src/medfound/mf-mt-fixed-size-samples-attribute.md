@@ -4,12 +4,12 @@ ms.assetid: 2d67864a-fd2f-400d-8a1e-e71dc1920593
 title: MF_MT_FIXED_SIZE_SAMPLES atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3662532d1e10857945a828ec3f46beef991fb438dfea0f33dc7d73832aeca7e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d1bb5bdd4e1330e4744902ed1b37cc55b7a67a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119605635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127364022"
 ---
 # <a name="mf_mt_fixed_size_samples-attribute"></a>Atributo MF \_ MT \_ FIXED SIZE \_ \_ SAMPLES
 
@@ -21,7 +21,7 @@ Especifica para un tipo de medio si las muestras tienen un tamaño fijo.
 
 Tratar como un valor booleano.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si este atributo es **TRUE**, cada muestra de la secuencia tiene el mismo tamaño (en bytes). De lo contrario, las muestras pueden variar de tamaño.
 
@@ -35,11 +35,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

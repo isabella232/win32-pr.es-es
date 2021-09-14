@@ -4,12 +4,12 @@ ms.assetid: c1b8a9c0-e97c-4748-a801-0cb617f3f972
 title: System.Devices.AepService.FriendlyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6076add38cdb2a193abc3180c3aab3c857d4f1ca5de97ae3802fda29413eaa8c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4217bf9b8edfca364f5218073210b846f9a58cfd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119775845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363490"
 ---
 # <a name="systemdevicesaepservicefriendlyname"></a>System.Devices.AepService.FriendlyName
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

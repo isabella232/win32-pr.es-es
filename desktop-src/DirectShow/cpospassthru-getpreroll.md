@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1b34cd565d246f4401061834b21c005306633e72a6f24cc8367a222b5f3736c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e72d7c83c8cdb0fa08a4b395fd65c80edbe3fb05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954044"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063334"
 ---
 # <a name="cpospassthrugetpreroll-method"></a>Método CPosPassThru.GetPreroll
 
@@ -64,7 +64,7 @@ Devuelve el **valor HRESULT** del pin conectado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

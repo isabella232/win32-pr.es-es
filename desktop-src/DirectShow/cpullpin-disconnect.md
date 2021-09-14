@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0491bfba7e5b739a2b46674cc2f6506017810d4f1e51693d4478720c67a4a4da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec13a7f29a06bab4f79ddb58932796f8363adadc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063315"
 ---
 # <a name="cpullpindisconnect-method"></a>Método CPullPin.Disconnect
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método interrumpe cualquier conexión realizada en [**el método CPullPin::Conectar.**](cpullpin-connect.md) Llame a este método dentro del [**método IPin::D isconnect.**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect) (Si el pin deriva de [**CBasePin,**](cbasepin.md)invalide [**CBasePin::BreakConnect**](cbasepin-breakconnect.md) para llamar a este método).
 
@@ -59,7 +59,7 @@ Este método interrumpe cualquier conexión realizada en [**el método CPullPin:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

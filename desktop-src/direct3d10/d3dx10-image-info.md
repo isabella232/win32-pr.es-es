@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: bf3aa2eeb3e908a76e05588940927fff53dd1583c937d95a1c862f6021bd630f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 228ddf777217e9e61369b0a7fc3b3eb1ca012b1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063802"
 ---
 # <a name="d3dx10_image_info-structure"></a>Estructura DE INFORMACIÓN DE IMAGEN de D3DX10 \_ \_
 
@@ -43,7 +43,7 @@ typedef struct D3DX10_IMAGE_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -156,7 +156,7 @@ Representa el formato del archivo de imagen. Vea FORMATO DE ARCHIVO DE [**IMAGEN
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

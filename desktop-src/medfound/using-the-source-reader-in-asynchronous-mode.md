@@ -4,24 +4,24 @@ ms.assetid: 9D3C2780-D7DB-4151-8474-9A19EC94F6BE
 title: Usar el lector de origen en modo asincrónico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 514331f9d1635cbe83222ccf413b1dbb5a7d350b4656e23ed27ccede5c0be6f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 357d0405cb3e594d059b7c93e793250e0be88562
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237510"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363699"
 ---
 # <a name="using-the-source-reader-in-asynchronous-mode"></a>Usar el lector de origen en modo asincrónico
 
 En este tema se describe cómo usar el Lector [de origen](source-reader.md) en modo asincrónico. En modo asincrónico, la aplicación proporciona una interfaz de devolución de llamada, que se usa para notificar a la aplicación que los datos están disponibles.
 
-En este tema se supone que ya ha leído el tema [Using the Source Reader to Process Media Data](processing-media-data-with-the-source-reader.md).
+En este tema se da por supuesto que ya ha leído el tema [Using the Source Reader to Process Media Data](processing-media-data-with-the-source-reader.md).
 
 ## <a name="using-asynchronous-mode"></a>Uso del modo asincrónico
 
 El Lector de origen funciona en modo sincrónico o asincrónico. En el ejemplo de código que se muestra en la sección anterior se supone que el Lector de origen usa el modo sincrónico, que es el valor predeterminado. En modo sincrónico, [**el método IMFSourceReader::ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) se bloquea mientras el origen multimedia genera el ejemplo siguiente. Normalmente, un origen multimedia adquiere datos de algún origen externo (como un archivo local o una conexión de red), por lo que el método puede bloquear el subproceso que realiza la llamada durante un período de tiempo apreciable.
 
-En el modo asincrónico, [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) devuelve inmediatamente y el trabajo se realiza en otro subproceso. Una vez completada la operación, el lector de origen llama a la aplicación a través de la interfaz de devolución de llamada [**IMFSourceReaderCallback.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback) Para usar el modo asincrónico, debe proporcionar un puntero de devolución de llamada al crear por primera vez el Lector de origen, como se muestra a continuación:
+En el modo asincrónico, [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) devuelve inmediatamente y el trabajo se realiza en otro subproceso. Una vez completada la operación, el Lector de origen llama a la aplicación a través de la interfaz de devolución de llamada [**DE DEvolución de llamada DE TIPO IMFSourceReaderCallback.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback) Para usar el modo asincrónico, debe proporcionar un puntero de devolución de llamada al crear por primera vez el Lector de origen, como se muestra a continuación:
 
 1.  Cree un almacén de atributos mediante una llamada [**a la función MFCreateAttributes.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes)
 2.  Establezca el atributo [MF \_ SOURCE READER \_ \_ ASYNC \_ CALLBACK](mf-source-reader-async-callback.md) en el almacén de atributos. El valor del atributo es un puntero al objeto de devolución de llamada.
@@ -89,7 +89,7 @@ Cuando el [**método ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwri
 
 Además, la interfaz de devolución de llamada define otros dos métodos:
 
--   [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent). Notifica a la aplicación cuándo se producen determinados eventos en el origen multimedia, como el almacenamiento en búfer o los eventos de conexión de red.
+-   [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent). Notifica a la aplicación cuando se producen determinados eventos en el origen multimedia, como el almacenamiento en búfer o los eventos de conexión de red.
 -   [**OnFlush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush). Se llama cuando [**se completa**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-flush) el método Flush.
 
 ## <a name="implementing-the-callback-interface"></a>Implementación de la interfaz de devolución de llamada

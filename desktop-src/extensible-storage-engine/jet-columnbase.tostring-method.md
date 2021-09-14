@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e9c53dd2958f753c9f4eeb898a60da76e97d09afe2e6f2021c3143db4dd2c095
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ea8b0397b71916e3fcf71c0b2c976556a9a57e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119721055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063497"
 ---
 # <a name="jet_columnbasetostring-method"></a>JET_COLUMNBASE. Método ToString
 
-Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_COLUMNBASE](./jet-columnbase-class.md).
+Devuelve una [cadena](/dotnet/api/system.string) que representa el objeto [JET_COLUMNBASE](./jet-columnbase-class.md).
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -59,7 +59,7 @@ public override string ToString()
 Tipo: [System.String](/dotnet/api/system.string)  
 Cadena [que](/dotnet/api/system.string) representa el objeto [JET_COLUMNBASE](./jet-columnbase-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

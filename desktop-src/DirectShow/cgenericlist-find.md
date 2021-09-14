@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e36ea355fed2099769b375abc23aedd1795d6b54b4db3584296070fbfe496b8e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a21f16e25d8a2ebba4494a850bc456a7b579f2a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119813805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063350"
 ---
 # <a name="cgenericlistfind-method"></a>CGenericList.Find (método)
 
@@ -64,7 +64,7 @@ Devuelve un valor POSITION o **NULL si** el elemento no está en la lista.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

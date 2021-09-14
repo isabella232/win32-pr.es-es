@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 65915039d26b3c8739441240419e61e0cbacf5a6f4212cbb1c8b456f55dfcbd3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd866daa225ab398e1a578aa8d21e73bad15e96d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063240"
 ---
 # <a name="ismartrenderenginegetgroupcompressor-method"></a>ISmartRenderEngine::GetGroupCompressor (método)
 
@@ -64,7 +64,7 @@ Recibe un puntero a la [**interfaz IBaseFilter**](/windows/desktop/api/Strmif/nn
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método para establecer propiedades en el filtro de compresión, como la velocidad de fotogramas clave. Llame a este método después de llamar [**a IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md), pero antes de representar el proyecto. A continuación, consulte el pin de salida del filtro de compresión para la [**interfaz IAMVideoCompression,**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression) que contiene métodos para establecer parámetros de compresión. Libere la interfaz cuando haya terminado. Si realiza cambios posteriores en la escala de tiempo, llame a **ConnectFrontEnd** y vuelva a llamar a **GetGroupCompressor** para restablecer los parámetros de compresión.
 
@@ -91,7 +91,7 @@ En la devolución, si el valor de \* *pCompressor* no es **NULL,** la [**interfa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

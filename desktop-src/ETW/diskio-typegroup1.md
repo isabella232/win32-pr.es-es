@@ -21,14 +21,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3a69643602a59fa7be8cd844f3f2908c92e2e08545f7444d1002ec1542b36730
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d20f80eb840283600f5d106f89c6cf8032ee746
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117814981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063149"
 ---
-# <a name="diskio_typegroup1-class"></a>DiskIo \_ TypeGroup1 (clase)
+# <a name="diskio_typegroup1-class"></a>Clase \_ TypeGroup1 de DiskIo
 
 Esta clase es la clase de tipo de evento para los eventos de E/S de disco.
 
@@ -52,9 +52,9 @@ class DiskIo_TypeGroup1 : DiskIo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase DiskIo \_ TypeGroup1** tiene estos tipos de miembros:
+La **clase \_ TypeGroup1 de DiskIo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -124,9 +124,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (8)
 </dt> </dl>
 
-Tiempo entre el inicio y la finalización de E/S medido por el administrador de particiones (en las unidades de tic [**KeQueryPerformanceCounter).**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kequeryperformancecounter)
+El tiempo entre la iniciación de E/S y la finalización según lo medido por el administrador de particiones (en las unidades de paso [**KeQueryPerformanceCounter).**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kequeryperformancecounter)
 
-**Windows Server 2003:** Esta propiedad tiene un [**valor WmiDataId**](event-tracing-mof-qualifiers.md) de 7.
+**Windows Server 2003:** Esta propiedad tiene un [**valor wmiDataId**](event-tracing-mof-qualifiers.md) de 7.
 
 **Windows 2000 Server y Windows 2000 Professional:** Esta propiedad no se admite.
 
@@ -169,13 +169,13 @@ Puede contener una o varias de las siguientes marcas de paquetes de solicitud de
  **IRP \_ NOCACHE**
 </dt><span id="__IRP_PAGING_IO"></span><span id="__irp_paging_io"></span><dt>
 
- **E/S \_ DE PAGINACIÓN DE \_ IRP**
+ **E/S \_ DE PAGINACIÓN \_ DE IRP**
 </dt><span id="__IRP_MOUNT_COMPLETION"></span><span id="__irp_mount_completion"></span><dt>
 
  **FINALIZACIÓN DEL MONTAJE DE IRP \_ \_**
 </dt><span id="__IRP_SYNCHRONOUS_API"></span><span id="__irp_synchronous_api"></span><dt>
 
- **API \_ SINCRÓNICA de IRP \_**
+ **API \_ SINCRÓNICA DE IRP \_**
 </dt><span id="__IRP_ASSOCIATED_IRP"></span><span id="__irp_associated_irp"></span><dt>
 
  **IRP \_ ASOCIADO \_ A IRP**
@@ -187,25 +187,25 @@ Puede contener una o varias de las siguientes marcas de paquetes de solicitud de
 **BÚFER DE \_ DESASIGNAR IRP \_**
 </dt><span id="__IRP_INPUT_OPERATION"></span><span id="__irp_input_operation"></span><dt>
 
- **OPERACIÓN DE ENTRADA \_ DE \_ IRP**
+ **OPERACIÓN DE \_ ENTRADA DE \_ IRP**
 </dt><span id="__IRP_SYNCHRONOUS_PAGING_IO"></span><span id="__irp_synchronous_paging_io"></span><dt>
 
- **E/S \_ DE \_ PAGINACIÓN SINCRÓNICA DE IRP \_**
+ **E/S \_ DE \_ PAGINACIÓN SINCRÓNICA \_ DE IRP**
 </dt><span id="__IRP_CREATE_OPERATION"></span><span id="__irp_create_operation"></span><dt>
 
- **OPERACIÓN CREATE DE IRP \_ \_**
+ **OPERACIÓN DE CREACIÓN DE IRP \_ \_**
 </dt><span id="IRP_READ_OPERATION"></span><span id="irp_read_operation"></span><dt>
 
 **OPERACIÓN DE \_ LECTURA DE \_ IRP**
 </dt><span id="__IRP_WRITE_OPERATION"></span><span id="__irp_write_operation"></span><dt>
 
- **OPERACIÓN DE ESCRITURA \_ DE \_ IRP**
+ **OPERACIÓN DE \_ ESCRITURA DE \_ IRP**
 </dt><span id="__IRP_CLOSE_OPERATION"></span><span id="__irp_close_operation"></span><dt>
 
  **OPERACIÓN DE \_ CIERRE DE \_ IRP**
 </dt><span id="__IRP_DEFER_IO_COMPLETION"></span><span id="__irp_defer_io_completion"></span><dt>
 
- **IRP \_ DEFER \_ IO \_ COMPLETION**
+ **IRP \_ APLAZAR LA \_ FINALIZACIÓN DE \_ E/S**
 </dt> </dl>
 
 </dd> <dt>
@@ -264,9 +264,9 @@ Tamaño de los datos leídos o escritos desde el disco, en bytes.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Windows Server 2003 usa la siguiente definición para la clase de tipo de evento **\_ DiskIo TypeGroup1.**
+Windows Server 2003 usa la siguiente definición para la clase de tipo de evento **DiskIo \_ TypeGroup1.**
 
 ``` syntax
 [EventType{10, 11}, EventTypeName{"Read", "Write"}]
@@ -282,11 +282,11 @@ class DiskIo_TypeGroup1 : DiskIo
 };
 ```
 
-La **propiedad ResponseTime** contiene el recuento de tics de CPU desde el principio de la operación hasta el final de la operación. Tenga en cuenta que este valor puede desbordarse.
+La **propiedad ResponseTime** contiene el recuento de pasos de CPU desde el principio de la operación hasta el final de la operación. Tenga en cuenta que este valor puede desbordarse.
 
 No **se admite la propiedad HighResResponseTime.**
 
-Windows Server 2003 con SP1 y Windows Vista usa la siguiente definición para la clase de tipo de evento **DiskIo \_ TypeGroup1.**
+Windows Server 2003 con SP1 y Windows Vista usa la definición siguiente para la clase de tipo de evento **DiskIo \_ TypeGroup1.**
 
 ``` syntax
 [EventType{10, 11}, EventTypeName{"Read", "Write"}]
@@ -303,7 +303,7 @@ class DiskIo_TypeGroup1 : DiskIo
 };
 ```
 
-La **propiedad Irp** es el paquete de solicitud de E/S. Esta propiedad identifica la actividad de E/S. Puede usar esta propiedad con los eventos [**DiskIo \_ TypeGroup2**](diskio-typegroup2.md) para correlacionar el tiempo de respuesta.
+La **propiedad Irp** es el paquete de solicitud de E/S. Esta propiedad identifica la actividad de E/S. Puede usar esta propiedad con los eventos [**\_ TypeGroup2**](diskio-typegroup2.md) de DiskIo para correlacionar el tiempo de respuesta.
 
 Se **admite la propiedad HighResResponseTime.** La propiedad contiene el tiempo entre el inicio y la finalización de E/S medido por PartitionManager (en las unidades KeQueryPerformanceCounter). Use esta propiedad en lugar de la **propiedad ResponseTime** para determinar el tiempo de respuesta de E/S del disco.
 
@@ -318,7 +318,7 @@ Se **admite la propiedad HighResResponseTime.** La propiedad contiene el tiempo 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

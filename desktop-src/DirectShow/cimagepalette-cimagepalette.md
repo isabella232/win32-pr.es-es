@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 437055ee9e1d33d4b551faf1ca999d432a99d17919dcd67f6a701bc4f9780543
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5021b165a8fa47bedc7961657d7cdbfa07af301d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063340"
 ---
 # <a name="cimagepalettecimagepalette-constructor"></a>Constructor CImagePalette.CImagePalette
 
@@ -76,7 +76,7 @@ Puntero a un **objeto CDrawImage,** que dibuja la imagen de vídeo. Este paráme
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

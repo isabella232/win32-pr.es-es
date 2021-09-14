@@ -1,5 +1,5 @@
 ---
-description: Establezca la información de rotación de un fotograma clave específico en el conjunto de animación.
+description: Establezca la información de rotación de un fotograma clave específico en el conjunto de animaciones.
 ms.assetid: b31edc88-0d77-49f3-b4c4-39cd866e1379
 title: Método ID3DXKeyframedAnimationSet::SetRotationKey (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2375167b9c848c0ccec10853f04c2f1aa7b59992d3198164df46c0ba7c08b68c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b03a6818a6a59904c3db5b4819775d9e58d4f8ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063714"
 ---
 # <a name="id3dxkeyframedanimationsetsetrotationkey-method"></a>Método ID3DXKeyframedAnimationSet::SetRotationKey
 
-Establezca la información de rotación de un fotograma clave específico en el conjunto de animación.
+Establezca la información de rotación de un fotograma clave específico en el conjunto de animaciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Fotograma clave.
 
 Tipo: **[ **LPD3DXKEY \_ QUATERNION**](d3dxkey-quaternion.md)**
 
-Puntero a los datos de rotación. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
+Puntero a los datos de rotación. Vea [**D3DXKEY \_ VECTOR3.**](d3dxkey-vector3.md)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a los datos de rotación. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.m
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: El método BeginFlush informa al filtro propietario para vaciar los filtros de nivel inferior. La clase derivada debe implementar este método.
+description: El método BeginFlush informa al filtro propietario de que vacíe los filtros de nivel inferior. La clase derivada debe implementar este método.
 ms.assetid: 612f230c-7f23-42cf-b565-344fae0b6f9a
 title: Método CPullPin.BeginFlush (Pullpin.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d2c7998c1c38a533d67edcd2cc237188a627ec8258a8b0349066e31ecf0fbaf4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2e4c26b99c78794449077e73040d98b5481fb91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063329"
 ---
 # <a name="cpullpinbeginflush-method"></a>Método CPullPin.BeginFlush
 
-El `BeginFlush` método informa al filtro propietario para vaciar los filtros de nivel inferior. La clase derivada debe implementar este método.
+El `BeginFlush` método informa al filtro propietario de que vacíe los filtros de nivel inferior. La clase derivada debe implementar este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El [**método CPullPin::Seek**](cpullpin-seek.md) llama a este método. Implemente este método para llamar al método [**IPin::BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en cada pin de entrada de nivel inferior que recibe datos de este objeto. Si los pin de salida del filtro derivan de [**CBaseOutputPin,**](cbaseoutputpin.md)llame al método [**CBaseOutputPin::D eliverBeginFlush.**](cbaseoutputpin-deliverbeginflush.md)
+El [**método CPullPin::Seek**](cpullpin-seek.md) llama a este método. Implemente este método para llamar al [**método IPin::BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en cada pin de entrada de nivel inferior que recibe datos de este objeto. Si los pin de salida del filtro derivan de [**CBaseOutputPin,**](cbaseoutputpin.md)llame al método [**CBaseOutputPin::D eliverBeginFlush.**](cbaseoutputpin-deliverbeginflush.md)
 
 Este diseño permite que el filtro busque la secuencia simplemente llamando a **Seek** en el **objeto CPullPin.**
 
@@ -61,7 +61,7 @@ Este diseño permite que el filtro busque la secuencia simplemente llamando a **
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

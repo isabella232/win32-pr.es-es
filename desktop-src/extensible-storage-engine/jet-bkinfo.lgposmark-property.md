@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 759307cb9ef54fce8c63a53af59e03da8085ea8ca315c6e50080f3501ef6c8cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6d51fc144e649d442e9b6ce0ab80b7dd5cc3153
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118255416"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063507"
 ---
 # <a name="jet_bkinfolgposmark-property"></a>JET_BKINFO.lgposMark, propiedad
 
@@ -40,7 +40,7 @@ Obtiene la posición del registro de la copia de seguridad.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

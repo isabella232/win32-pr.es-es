@@ -4,12 +4,12 @@ ms.assetid: 0e1cff4e-43f8-4d0a-b7a7-b6d0278e9e4a
 title: Carga de un archivo GraphEdit mediante programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faf2bdff86a47e740e6cb177a70a7b1e12ffc7c865d8ad231f6ada9122f286d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9a4780ead7b65d883bdd48917c6372425612435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118153183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063208"
 ---
 # <a name="loading-a-graphedit-file-programmatically"></a>Carga de un archivo GraphEdit mediante programación
 
@@ -59,13 +59,13 @@ HRESULT LoadGraphFile(IGraphBuilder *pGraph, const WCHAR* wszName)
 
  
 
-Los archivos GraphEdit están diseñados solo para pruebas y depuraciones. No están diseñados para su uso por las aplicaciones de usuario final.
+Los archivos GraphEdit solo están pensados para pruebas y depuración. No están diseñados para su uso por las aplicaciones de usuario final.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Simulación de Graph building con GraphEdit](simulating-graph-building-with-graphedit.md)
+[Simulación Graph building con GraphEdit](simulating-graph-building-with-graphedit.md)
 </dt> <dt>
 
 [**StgIsStorageFile**](/windows/win32/api/coml2api/nf-coml2api-stgisstoragefile)

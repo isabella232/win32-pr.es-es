@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 62c70524fd1b729473c09c0ff0cb6b1c764e356069a29eb40e9cf52dfa434127
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50fb09a4619be9c3dbcff98bc939d6f99ad33bd4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118297688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063728"
 ---
 # <a name="d3dxvec3transformnormal-function-d3dx9mathh"></a>Función D3DXVec3TransformNormal (D3dx9math.h)
 
@@ -75,11 +75,11 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
 Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el vector transformado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función transforma el vector (*pV*->x, *pV*->y, *pV*->z, 0) por la matriz a la que apunta *pM*.
+Esta función transforma el vector *(pV*->x, *pV*->y, *pV*->z, 0) por la matriz a la que apunta *pM*.
 
-Si desea transformar un normal, la matriz que pasa a esta función debe ser la transpuesta de la inversa de la matriz que usaría para transformar un punto.
+Si desea transformar un normal, la matriz que pase a esta función debe ser la transponer del inverso de la matriz que se usaría para transformar un punto.
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3TransformNormal** se puede usar como parámetro para otra función.
 

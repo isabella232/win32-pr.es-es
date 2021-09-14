@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc5d1b18ee3beff052d389f12ec652c3cd263415f2db3eff3129ab085bbd006f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c373705307b2529b3d05609fc4b6ffb47d3abcc2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119607604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063733"
 ---
 # <a name="d3dxvec3transformcoordarray-function-d3dx9mathh"></a>Función D3DXVec3TransformCoordArray (D3dx9math.h)
 
@@ -105,7 +105,7 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
 Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la matriz transformada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función transforma la matriz *pV (x,* y, z, 1) mediante el *pM* de matriz, proyectando el resultado de nuevo en w = 1.
 
@@ -122,7 +122,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

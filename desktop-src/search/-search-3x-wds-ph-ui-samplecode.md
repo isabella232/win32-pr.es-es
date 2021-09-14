@@ -4,12 +4,12 @@ ms.assetid: 4b65ced8-8dc9-43f6-bfe1-3703aea3459f
 title: 'Ejemplo de código: Extensiones de shell para controladores de protocolo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1f2a29fb75ee6838b207648e2b58d634e19eb977f6d0abedb01ba450968756e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e436f1d7ad746181be8cb3c43375abe3656c544b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363274"
 ---
 # <a name="code-sample-shell-extensions-for-protocol-handlers"></a>Ejemplo de código: Extensiones de shell para controladores de protocolo
 
@@ -21,7 +21,7 @@ El código de ejemplo siguiente muestra cómo crear extensiones de Shell para un
 >
 > **ESTE CÓDIGO E INFORMACIÓN SE PROPORCIONAN "TAL Y COMO ESTÁN" SIN GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUIDAS, ENTRE OTRAS, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD O IDONEIDAD PARA UN PROPÓSITO DETERMINADO.**
 >
-> Copyright (c)Microsoft Corporation. All rights reserved.
+> Copyright (c)Microsoft Corporation. Todos los derechos reservados.
 
  
 
@@ -499,7 +499,7 @@ STDMETHODIMP CSampleShellFolder::SetNameOf(
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
--   Para obtener ejemplos de código de búsqueda, [consulte Windows ejemplos del SDK de Search.](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8)
+-   Para obtener ejemplos de código de búsqueda, [Windows ejemplos del SDK de Search.](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8)
 -   Para obtener ejemplos de código de Shell, consulte [Ejemplos del SDK de Shell.](/previous-versions/windows/desktop/legacy/dd940376(v=vs.85))
 
 ## <a name="related-topics"></a>Temas relacionados

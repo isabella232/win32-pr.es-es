@@ -1,19 +1,19 @@
 ---
-description: La sesión del registrador de kernel nt es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel.
+description: La sesión nt kernel Logger es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel.
 ms.assetid: 3c4258d8-8073-4cc5-a29d-ce485a3fdc14
 title: Configuración e inicio de la sesión del registrador de kernel de NT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a41398c9caac3ecd090af68a18bfb148095632d96b8c75eaaee7f04a551360fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d13cb0d429bc4b0e01e02c33e2686040f0b7454b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063151"
 ---
 # <a name="configuring-and-starting-the-nt-kernel-logger-session"></a>Configuración e inicio de la sesión del registrador de kernel de NT
 
-La sesión del registrador de kernel nt es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel. No se llama a la [**función EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar los proveedores de kernel. En su lugar, use el **miembro EnableFlags** de la estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) para especificar los eventos de kernel que desea recibir. La [**función StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) usa las marcas de habilitación que especifique para habilitar los proveedores de kernel.
+La sesión nt kernel Logger es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel. No se llama a la [**función EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar los proveedores de kernel. En su lugar, use el **miembro EnableFlags** de la estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) para especificar los eventos de kernel que desea recibir. La [**función StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) usa las marcas de habilitación que especifique para habilitar los proveedores de kernel.
 
 Solo hay una sesión de registrador de kernel de NT. Si la sesión ya está en uso, la [**función StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) devuelve ERROR \_ ALREADY \_ EXISTS.
 
@@ -21,11 +21,11 @@ Para obtener más información sobre cómo iniciar una sesión de seguimiento de
 
 Para obtener más información sobre cómo iniciar una sesión de registrador privado, vea [Configuring and Starting a Private Logger Session](configuring-and-starting-a-private-logger-session.md).
 
-Para obtener más información sobre cómo iniciar una sesión de Registrador global, vea [Configuring and Starting the Global Logger Session](configuring-and-starting-the-global-logger-session.md).
+Para obtener más información sobre cómo iniciar una sesión de registrador global, vea [Configuring and Starting the Global Logger Session](configuring-and-starting-the-global-logger-session.md).
 
 Para obtener más información sobre cómo iniciar una sesión de AutoLogger, vea [Configuring and Starting an AutoLogger Session](configuring-and-starting-an-autologger-session.md).
 
-En el ejemplo siguiente se muestra cómo configurar e iniciar una sesión de registrador de kernel NT que recopila eventos de kernel TCP/IP de red y los escribe en un archivo circular de 5 MB.
+En el ejemplo siguiente se muestra cómo configurar e iniciar una sesión de registrador de kernel de NT que recopila eventos de kernel TCP/IP de red y los escribe en un archivo circular de 5 MB.
 
 
 ```C++

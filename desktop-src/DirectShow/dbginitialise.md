@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 13aad8d0214c65c01237c8e74548c3915af9287c935b53e33c6d229b2da5b12e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33a62c8dad7ef6e15b9b11461303b1bced977a96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118654220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063289"
 ---
 # <a name="dbginitialise-function"></a>Función DbgInitialise
 
@@ -70,7 +70,7 @@ En un archivo DLL que se vincula a la biblioteca de clase base (Strmbase.lib), n
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

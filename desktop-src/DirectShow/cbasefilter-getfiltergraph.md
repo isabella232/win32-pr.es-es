@@ -1,5 +1,5 @@
 ---
-description: El método GetFilterGraph recupera un puntero al administrador de gráficos de filtros.
+description: El método GetFilterGraph recupera un puntero al administrador de gráficos de filtro.
 ms.assetid: 80b41272-2ca1-40db-8624-0d99d66f3c34
 title: Método CBaseFilter.GetFilterGraph (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6f35b40febff058d5bbd9f48c5ac6d10168d48d6e587b51ab2730704724e48c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0843c7789afc1500565d2737d863cbc8af114d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063360"
 ---
 # <a name="cbasefiltergetfiltergraph-method"></a>Método CBaseFilter.GetFilterGraph
 
@@ -55,7 +55,7 @@ Devuelve el valor de [**CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md).
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

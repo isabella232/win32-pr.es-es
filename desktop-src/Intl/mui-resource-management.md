@@ -4,12 +4,12 @@ ms.assetid: 4d8b769d-0830-4e4e-b284-ce0b21dfe5d4
 title: Administración de recursos de LAN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94c0b489d10ae28ca0fe7c659153b58c6ee7713e4eda4e1da9d96ffe16ae1a2c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aeed59c4b835e2c93e5f4cfc9988509349d8b0ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063058"
 ---
 # <a name="mui-resource-management"></a>Administración de recursos de LAN
 

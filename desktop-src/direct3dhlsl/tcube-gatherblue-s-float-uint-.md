@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af0a43462bf8a33bf8415c03dceb0dccf18ecba6dc343ec9978131065ecabffd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 59378e3a5754dbd55298d6040b40076a9e54eb74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120118025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063685"
 ---
 # <a name="texturecubegatherbluesfloatuint-function"></a>Función TextureCube::GatherBlue(S,float,uint)
 
@@ -74,7 +74,7 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las muestras de textura se pueden usar para la interpolación bilineal.
 
@@ -90,7 +90,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

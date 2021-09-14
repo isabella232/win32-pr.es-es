@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102211
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 00fff601065916a46871ce729ca1d65a291b832b1ed9074f25afdc3bc607ef9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39df5a044804f0e731ee1b86348fb89d4975097d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118494474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063619"
 ---
 # <a name="esentlogsectorsizemismatchexception-properties"></a>Propiedades de EsentLogSectorSizeMismatchException
 
@@ -34,7 +34,7 @@ El [tipo EsentLogSectorSizeMismatchException](./esentlogsectorsizemismatchexcept
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

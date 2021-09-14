@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXLIST. columnidgrbitIndex'
-title: Propiedad JET_INDEXLIST. columnidgrbitIndex
+description: 'Más información sobre: JET_INDEXLIST.columnidgrbitIndex'
+title: JET_INDEXLIST.columnidgrbitIndex, propiedad
 TOCTitle: 'columnidgrbitIndex property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.columnidgrbitIndex
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.columnidgrbitindex(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: ae8d31661451a2bd1c7c5f942141c27ae552c578
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911762"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063477"
 ---
-# <a name="jet_indexlistcolumnidgrbitindex-property"></a>Propiedad JET_INDEXLIST. columnidgrbitIndex
+# <a name="jet_indexlistcolumnidgrbitindex-property"></a>JET_INDEXLIST.columnidgrbitIndex, propiedad
 
-Obtiene el columnid de la columna de la tabla temporal que almacena el grbits que se usa en el índice. Vea [CreateIndexGrbit](./createindexgrbit-enumeration.md). La columna es de tipo [Long](./jet-coltyp-enumeration.md).
+Obtiene el columnid de la columna de la tabla temporal que almacena los grbits usados en el índice. Vea [CreateIndexGrbit](./createindexgrbit-enumeration.md). La columna es de tipo [Long.](./jet-coltyp-enumeration.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidgrbitIndex { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXLIST (clase)](./jet-indexlist-class.md)
+[JET_INDEXLIST clase](./jet-indexlist-class.md)
 
-[Miembros de JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST miembros](./jet-indexlist-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

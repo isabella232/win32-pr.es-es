@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102567
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bfade87f64529336838be8c424e022f8b02e4dec0c5d812f6f35466cf9733126
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4c301ab7f1ef2467344bec4b7e5a23c6453fe79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118982075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063568"
 ---
 # <a name="esentrecoveredwitherrorsexception-properties"></a>Propiedades de EsentRecoveredWithErrorsException
 
@@ -34,7 +34,7 @@ El [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

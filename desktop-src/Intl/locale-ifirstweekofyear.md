@@ -4,12 +4,12 @@ ms.assetid: 866a28b7-e0b8-4b99-96df-345791a24833
 title: LOCALE_IFIRSTWEEKOFYEAR
 ms.topic: article
 ms.date: 03/04/2020
-ms.openlocfilehash: da0d8697e8a02bb6943f4a4154a1ea89c4e01cbaed7576631e3a61d161e80503
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f391fb167a9362fc8770bbcc5a495170148b489
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119147428"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063072"
 ---
 # <a name="locale_ifirstweekofyear"></a>CONFIGURACIÓN REGIONAL \_ IFIRSTWEEKOFYEAR
 

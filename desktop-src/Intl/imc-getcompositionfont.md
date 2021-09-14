@@ -1,19 +1,19 @@
 ---
-description: Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje WM \_ IME \_ CONTROL con la configuración de parámetros que se muestra a continuación.
+description: Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje \_ WM IME \_ CONTROL con la configuración de parámetros que se muestra a continuación.
 ms.assetid: 43db70b6-f8bc-4241-9096-5d91fd1e332b
 title: IMC_GETCOMPOSITIONFONT comando (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ebf26592f2fd000f864685bd79d71b189fc24d695941691fe2e01d48132d00d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 696d9809cadbe4f2c0e632719401e882777888dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063131"
 ---
 # <a name="imc_getcompositionfont-command"></a>Comando \_ GETCOMPOSITIONFONT de IMC
 
-Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje [**WM \_ IME \_ CONTROL**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
+Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje [**\_ WM IME \_ CONTROL**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
 
 
 ```C++
@@ -42,7 +42,7 @@ Puntero a una [**estructura LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfo
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se realiza correctamente o un valor distinto de cero de lo contrario.
+Devuelve 0 si se realiza correctamente o un valor distinto de cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Devuelve 0 si se realiza correctamente o un valor distinto de cero de lo contrar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0e91f5e8b84d77b0938f35da69a84c26fa0f34a4da63bce40330484a29e19b5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97f9907e4da51675bb1a5f562931e471ee0e133e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118395306"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063139"
 ---
 # <a name="diskio-class"></a>DiskIo (clase)
 
@@ -34,18 +34,18 @@ class DiskIo : MSNT_SystemTrace
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase DiskIo** no define ningún miembro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para habilitar eventos de E/S de disco en una sesión de registro del kernel de NT, especifique la marca **EVENT TRACE FLAG DISK \_ \_ \_ \_ IO** en el **miembro EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) También puede especificar una o varias de las marcas siguientes:
+Para habilitar eventos de E/S de disco en una sesión de registro del kernel de NT, especifique la marca **EVENT TRACE FLAG DISK \_ \_ \_ \_ IO** en el miembro **EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) También puede especificar una o varias de las marcas siguientes:
 
--   **E/S \_ DE \_ \_ \_ E/S DE DISCO \_ DE MARCA DE SEGUIMIENTO DE EVENTOS**
+-   **EVENT \_ TRACE \_ FLAG \_ DISK \_ IO \_ INIT**
 -   **CONTROLADOR DE \_ MARCA DE SEGUIMIENTO DE \_ \_ EVENTOS**
 
-Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos de E/S de disco llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**DiskIoGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid.* Use los siguientes tipos de eventos para identificar el evento de E/S de disco real al consumir eventos.
+Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos de E/S de disco llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**DiskIoGuid**](nt-kernel-logger-constants.md) como el *parámetro pGuid.* Use los siguientes tipos de eventos para identificar el evento de E/S de disco real al consumir eventos.
 
 
 
@@ -70,13 +70,13 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 
 El proveedor de E/S de disco no puede identificar qué archivo se lee o escribe durante un evento de E/S de disco. Para recuperar el nombre del archivo asociado al evento de E/S de disco, habilite el proveedor de eventos de E/S de archivo.
 
-Los eventos de E/S de disco se registran en el momento de finalización de E/S. Para determinar cuándo comenzó la operación de E/S, use los eventos de inicialización, por ejemplo, EVENT \_ TRACE TYPE IO READ \_ \_ \_ \_ INIT.
+Los eventos de E/S de disco se registran en el momento de finalización de E/S. Para determinar cuándo se inició la operación de E/S, use los eventos de inicialización, por ejemplo, EVENT \_ TRACE TYPE IO READ \_ \_ \_ \_ INIT.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |

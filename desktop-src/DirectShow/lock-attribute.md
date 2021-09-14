@@ -4,12 +4,12 @@ ms.assetid: 1aa92665-ab3b-4f04-9e6b-905942c197ef
 title: lock (Atributo)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fdd1718c25aab136219af436543df064bd8f68bb53ea15b00e09e6a18188c5d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8c7716f047e0df47ffb5e84cb2de0e9fe345836b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119502325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063194"
 ---
 # <a name="lock-attribute"></a>lock (Atributo)
 
@@ -18,7 +18,7 @@ ms.locfileid: "119502325"
 
  
 
-El `lock` atributo especifica si se debe editar un objeto. Si el valor es **TRUE,** la aplicación debe tratar el objeto como bloqueado y no permitir cambios en ese objeto o sus secundarios. El valor predeterminado es **FALSE**.
+El `lock` atributo especifica si se debe editar un objeto. Si el valor es **TRUE**, la aplicación debe tratar el objeto como bloqueado y no permitir cambios en ese objeto o sus secundarios. El valor predeterminado es **FALSE**.
 
 ## <a name="possible-values"></a>Valores posibles
 
@@ -26,9 +26,9 @@ Valores posibles Los valores siguientes se definen como TRUE: y, Y, t, T, 1. Los
 
 ## <a name="applies-to"></a>Se aplica a
 
-[**clip**](clip-element.md), [**composite**](composite-element.md), [**effect**](effect-element.md), [**group**](group-element.md), [**timeline**](timeline-element.md), [**transition**](transition-element.md)
+[**clip,**](clip-element.md) [**composite ,**](composite-element.md) [**effect**](effect-element.md), [**group**](group-element.md), [**timeline**](timeline-element.md), [**transition**](transition-element.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

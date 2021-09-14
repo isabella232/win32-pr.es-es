@@ -4,12 +4,12 @@ ms.assetid: d91562ab-41e6-4bca-a320-74f490a4f88f
 title: Lápices, líneas y rectángulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb8ac54d1e98a617492aa6f5f1194767fc56a34ffcaaee71ba71753dda08f8bd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d5e9749b1c1af6ca4808e797d016267bb251e6fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119359595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063427"
 ---
 # <a name="pens-lines-and-rectangles"></a>Lápices, líneas y rectángulos
 

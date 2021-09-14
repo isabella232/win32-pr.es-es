@@ -1,23 +1,23 @@
 ---
-description: Muchas aplicaciones almacenan imágenes de forma permanente como archivos. Por ejemplo, las aplicaciones de dibujo almacenan imágenes, aplicaciones de hojas de cálculo, gráficos de tienda, aplicaciones de CAD, etc.
+description: Muchas aplicaciones almacenan imágenes de forma permanente como archivos. Por ejemplo, las aplicaciones de dibujo almacenan imágenes, gráficos de almacén de aplicaciones de hoja de cálculo, aplicaciones CAD almacenan dibujos, y así sucesivamente.
 ms.assetid: fc43ab78-c174-400b-a73a-c346d8bda8d2
-title: Almacenar una imagen
+title: Almacenamiento de una imagen
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1bf47a869481d9ec7d71d594ddb238be14f9b152
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104545726"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063463"
 ---
-# <a name="storing-an-image"></a>Almacenar una imagen
+# <a name="storing-an-image"></a>Almacenamiento de una imagen
 
-Muchas aplicaciones almacenan imágenes de forma permanente como archivos. Por ejemplo, las aplicaciones de dibujo almacenan imágenes, aplicaciones de hojas de cálculo, gráficos de tienda, aplicaciones de CAD, etc.
+Muchas aplicaciones almacenan imágenes de forma permanente como archivos. Por ejemplo, las aplicaciones de dibujo almacenan imágenes, gráficos de almacén de aplicaciones de hoja de cálculo, aplicaciones CAD almacenan dibujos, y así sucesivamente.
 
-Si está escribiendo una aplicación que almacena una imagen de mapa de bits en un archivo, debe utilizar el formato de archivo de mapa de bits que se describe en [almacenamiento de mapas de bits](bitmap-storage.md). Para almacenar un mapa de bits en este formato, debe usar una estructura [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)), [**BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header)o [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header) y una matriz de estructuras [**RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) , así como una matriz de índices de paleta.
+Si va a escribir una aplicación que almacena una imagen de mapa de bits en un archivo, debe usar el formato de archivo de mapa de bits descrito en [Bitmap Storage](bitmap-storage.md). Para almacenar un mapa de bits en este formato, debe usar [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)), [**BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header)o una estructura [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header) y una matriz de estructuras [**RGBQUAD,**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) así como una matriz de índices de paleta.
 
-En el código de ejemplo siguiente se define una función que usa una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) y asigna memoria para e inicializa miembros dentro de una estructura [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)) . Tenga en cuenta que la estructura **bitmapinfo (** no se puede usar con una estructura [**BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header) o [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header) .
+El código de ejemplo siguiente define una función que usa una estructura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) y asigna memoria para e inicializa miembros dentro de una [**estructura BITMAPINFOHEADER.**](/previous-versions//dd183376(v=vs.85)) Tenga en cuenta que **la estructura BITMAPINFO** no se puede usar con una [**estructura BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header) o [**BITMAPV5HEADER.**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header)
 
 
 ```C++
@@ -88,7 +88,7 @@ PBITMAPINFO CreateBitmapInfoStruct(HWND hwnd, HBITMAP hBmp)
 
 
 
-En el código de ejemplo siguiente se define una función que inicializa las estructuras restantes, recupera la matriz de índices de paleta, abre el archivo, copia los datos y cierra el archivo.
+El código de ejemplo siguiente define una función que inicializa las estructuras restantes, recupera la matriz de índices de paleta, abre el archivo, copia los datos y cierra el archivo.
 
 
 ```C++

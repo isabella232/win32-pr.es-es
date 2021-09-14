@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e0296fca49c93fba0bd22cde8160681764788a0324b4a2da9b5a85599f82951a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2fe1d44f4d8d6867ddb6fa4763d794aa0a32c55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063295"
 ---
 # <a name="cqueuecqueue-constructor-wxutilh"></a>Constructor CQueue.CQueue (Wxutil.h)
 
@@ -60,7 +60,7 @@ Tamaño de la cola que se creará.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101240
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0795c2b916e2664300cd40d080483bb533f5ebfb6f5428c1b9602c38423034ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afd76681f0dfc3db5da1116518d2c3d0e68e581f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117714295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063634"
 ---
 # <a name="esentcolumncannotbecompressedexception-methods"></a>Métodos de EsentColumnCannotBeCompressedException 
 

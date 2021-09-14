@@ -4,16 +4,16 @@ ms.assetid: 7878885f-c285-4744-8eab-445678dcfd49
 title: Enumerar tipos de medios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4e2f063fc243d081b930a1bf47f85904dfbc2fc7eef00fb595d5f0fb3a451ec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3909c25e9ae5f90a3084eebb531431cc93ef46cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120102805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063276"
 ---
 # <a name="enumerating-media-types"></a>Enumerar tipos de medios
 
-Los pines admiten [**el método IPin::EnumMediaTypes,**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) que enumera los tipos de medios preferidos de un pin. Devuelve un puntero a la [**interfaz IEnumMediaTypes.**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) El [**método IEnumMediaTypes::Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) recupera punteros a estructuras [**AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que describen tipos de medios.
+Los pines admiten [**el método IPin::EnumMediaTypes,**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) que enumera los tipos de medios preferidos de un pin. Devuelve un puntero a la [**interfaz IEnumMediaTypes.**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) El [**método IEnumMediaTypes::Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) recupera punteros a estructuras [**DE AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que describen tipos de medios.
 
 El enumerador de tipo de medio existe principalmente para ayudar a Filter Graph Manager a realizar conexiones inteligentes y es probable que las aplicaciones no lo usen. Un pin no devuelve necesariamente ningún tipo de medio preferido. Además, los tipos de medios que devuelve pueden depender del estado de conexión del filtro. Por ejemplo, el pin de salida de un filtro podría devolver un conjunto diferente de tipos de medios en función del tipo de medio que se estableció para el pin de entrada del filtro.
 

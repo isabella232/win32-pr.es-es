@@ -1,15 +1,15 @@
 ---
 title: Planos de recorte de usuario en hardware de nivel 9 de características
-description: A partir de Windows 8, el Lenguaje de sombreador de alto nivel (HLSL) de Microsoft admite una sintaxis que se puede usar con la API de Microsoft Direct3D 11 para especificar planos de recorte de usuario en el nivel de característica 9 x y \_ superior.
+description: A partir de Windows 8, el Lenguaje de sombreador de alto nivel (HLSL) de Microsoft admite una sintaxis que puede usar con la API de Microsoft Direct3D 11 para especificar planos de recorte de usuario en el nivel de característica 9 x y \_ superior.
 ms.assetid: C51FB0E5-94C3-4E7F-AC33-E5F0F26EDC11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd6ffd624e688dbe5e3591e10ee5c005a9d4564dc5a536e9c89cfcee50067c2a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 968831ca39f2501a44b00f202fd8dfda1f92d1e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119948975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063677"
 ---
 # <a name="user-clip-planes-on-feature-level-9-hardware"></a>Planos de recorte de usuario en hardware de nivel 9 de características
 
@@ -23,16 +23,16 @@ A partir de Windows 8, el Lenguaje de sombreador de alto nivel (HLSL) de Microso
     -   [Cálculo matemático de plano de recorte](#clip-plane-math)
     -   [Recorte en el espacio de vista](#clipping-in-view-space)
     -   [Matriz de proyección](#projection-matrix)
-    -   [Plano de recorte del espacio de recorte](#clip-space-clip-plane)
+    -   [Plano de recorte de espacio de recorte](#clip-space-clip-plane)
 -   [Temas relacionados](#related-topics)
 
-## <a name="background"></a>Información previa
+## <a name="background"></a>Fondo
 
-Puede acceder a los planos de recorte de usuario en la API de Microsoft Direct3D 9 a través de los métodos [**IDirect3DDevice9::SetClipPlane**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setclipplane) e [**IDirect3DDevice9::GetClipPlane.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getclipplane) En Microsoft Direct3D 10 y versiones posteriores, puede acceder a planos de recorte de usuario a través de la [semántica \_ SV ClipDistance.](dx-graphics-hlsl-semantics.md) Pero antes Windows 8, SV ClipDistance no estaba disponible para el hardware x de nivel de característica 9 en las \_ API de [](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) \_ Direct3D 10 o Direct3D 11. Por lo tanto, antes Windows 8, la única manera de acceder a los planos de recorte de usuario con hardware de nivel de característica 9 x era a través de la \_ API de Direct3D 9. Las aplicaciones Windows Store de Direct3D no pueden usar la API de Direct3D 9. Aquí se describe la sintaxis que puede usar para acceder a planos de recorte de usuario a través de la API de Direct3D 11 en el nivel de característica 9 \_ x y superior.
+Puede acceder a los planos de recorte de usuario en la API de Microsoft Direct3D 9 a través de los métodos [**IDirect3DDevice9::SetClipPlane**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setclipplane) e [**IDirect3DDevice9::GetClipPlane.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getclipplane) En Microsoft Direct3D 10 y versiones posteriores, puede acceder a los planos de recorte de usuario a través de la [semántica de SV \_ ClipDistance.](dx-graphics-hlsl-semantics.md) Pero antes Windows 8, SV ClipDistance no estaba disponible para el hardware de nivel de característica 9 x en las \_ API de [](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) \_ Direct3D 10 o Direct3D 11. Por lo tanto, antes Windows 8, la única manera de acceder a los planos de recorte de usuario con hardware de nivel de característica 9 x era a través de la \_ API de Direct3D 9. Las aplicaciones Windows Store de Direct3D no pueden usar la API de Direct3D 9. Aquí se describe la sintaxis que puede usar para acceder a planos de recorte de usuario a través de la API de Direct3D 11 en el nivel de característica 9 \_ x y superior.
 
-Las aplicaciones usan planos de recorte para definir un conjunto de planos invisibles dentro del mundo 3D que recortan (desejen) todas las primitivas dibujadas. Windows dibujará ningún píxel que esté en el lado negativo de los planos de recorte. A continuación, las aplicaciones pueden usar planos de recorte para representar las reflexión planas.
+Las aplicaciones usan planos de recorte para definir un conjunto de planos invisibles dentro del mundo 3D que recortan (desejen) todas las primitivas dibujadas. Windows dibujará ningún píxel que esté en el lado negativo de los planos de clip. A continuación, las aplicaciones pueden usar planos de recorte para representar las reflexión planas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 Use esta sintaxis para declarar planos de recorte como atributos de función en una [declaración de función](dx-graphics-hlsl-function-syntax.md). Por ejemplo, aquí usamos la sintaxis en un fragmento del sombreador de vértices:
 
@@ -73,11 +73,11 @@ Aquí se muestra cómo crear planos de recorte en el espacio de recorte en [el n
 
 ### <a name="10level9-feature-levels"></a>Niveles de características 10Level9
 
-En Direct3D 10 y versiones posteriores, puede recortar en cualquier espacio que tenga sentido, a menudo en el espacio del mundo o en el espacio de vista. Pero Direct3D 9 usa el espacio de recorte, que es el espacio de proyección de división de perspectiva previa. Los vectores están en el espacio de recorte cuando el sombreador de vértices los pasa a las fases siguientes en la canalización [de gráficos](/windows/desktop/direct3d11/overviews-direct3d-11-graphics-pipeline).
+En Direct3D 10 y versiones posteriores, puede recortar en cualquier espacio que tenga sentido, a menudo en el espacio del mundo o en el espacio de vista. Pero Direct3D 9 usa el espacio de recorte, que es el espacio de proyección de división de perspectiva previa. Los vectores están en el espacio de recorte cuando el sombreador de vértices los pasa a las fases que siguen en la canalización [de gráficos](/windows/desktop/direct3d11/overviews-direct3d-11-graphics-pipeline).
 
-Al escribir una aplicación de Windows Store, debe usar los niveles de características 10Level9[(nivel](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) de característica 9 x) para que la aplicación se pueda ejecutar en el nivel de característica 9 x y \_ hardware \_ superior. Dado que la aplicación admite el nivel de característica 9 x y superior, también debe usar la funcionalidad común de aplicar planos de \_ recorte en el espacio de recorte.
+Al escribir una aplicación de Windows Store, debe usar los niveles de característica 10Level9[(nivel](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) de característica 9 x) para que la aplicación se pueda ejecutar en el nivel de característica 9 x y \_ hardware \_ superior. Dado que la aplicación admite el nivel de característica 9 x y superior, también debe usar la funcionalidad común de aplicar planos de \_ recorte en el espacio de recorte.
 
-Al compilar un sombreador de vértices con frente a 4 0 nivel 9 1 o posterior, ese sombreador de vértices puede \_ \_ usar el atributo \_ \_ \_ **clipplanes.** Un objeto Direct3D 10 o posterior tiene un producto de punto del vértice emitido que contiene cada una de las constantes globales **float4** especificadas en el atributo . El objeto Direct3D 9 tiene suficientes metadatos para hacer que el entorno de ejecución 10Level9 emita las llamadas adecuadas a [**IDirect3DDevice9::SetClipPlane**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setclipplane).
+Al compilar un sombreador de vértices con frente a 4 0 nivel 9 1 o posterior, ese sombreador de vértices puede \_ \_ usar el atributo \_ \_ \_ **clipplanes.** Un objeto Direct3D 10 o posterior tiene un producto de punto del vértice emitido que contiene cada una de las constantes globales **float4** especificadas en el atributo . El objeto Direct3D 9 tiene suficientes metadatos para hacer que el tiempo de ejecución 10Level9 emita las llamadas adecuadas a [**IDirect3DDevice9::SetClipPlane**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setclipplane).
 
 ### <a name="clip-plane-math"></a>Cálculo matemático de plano de recorte
 
@@ -111,17 +111,17 @@ Una matriz de proyección transforma un vértice del espacio de vista (donde el 
 *n*   distancia desde el visor hasta el plano cercano
 </dl>![Matriz de proyección](images/projection-matrix.png)
 
-La siguiente matriz es una versión simplificada de la matriz anterior. Mostramos la matriz simplificada para que podamos usarla más adelante en la operación de multiplicación de matriz.
+La siguiente matriz es una versión simplificada de la matriz anterior. Mostramos la matriz simplificada para poder usarla más adelante en la operación de multiplicación de matriz.
 
 ![Matriz de proyección simplificada](images/projection-matrix2.png)
 
-Ahora transformamos el vértice del espacio de vista en un espacio de recorte con una matriz multiplicada:
+Ahora transformamos el vértice del espacio de vista en un espacio de recorte con una multiplicación de matriz:
 
 ![multiplicación de matrices](images/matrix-multiply.png)
 
-En la operación de multiplicación de matriz, los componentes x e y solo se ajustan ligeramente, pero los componentes z y w están bastante desajustados. El plano de recorte ya no nos dará lo que queremos.
+En nuestra operación de multiplicación de matriz, los componentes x e y solo se ajustan ligeramente, pero los componentes z y w están bastante desajustados. El plano de recorte ya no nos dará lo que queremos.
 
-### <a name="clip-space-clip-plane"></a>Plano de recorte del espacio de recorte
+### <a name="clip-space-clip-plane"></a>Plano de recorte de espacio de recorte
 
 Aquí queremos crear un plano de recorte de espacio de recorte cuyo producto de punto con el vértice del espacio de recorte nos da el mismo valor que **v · C** en la [sección Recorte en el espacio de](#clipping-in-view-space) vista.
 
@@ -129,7 +129,7 @@ Aquí queremos crear un plano de recorte de espacio de recorte cuyo producto de 
 
 **v** · **C**  =  **v P** · **C**<sub>P</sub>
 
-*v* ₓ *C* ₓ +*v*<sub>y</sub>*C*<sub>y</sub>  +  *v*<sub>z</sub>*C*<sub>z</sub>  +  *C*<sub>w</sub>  =  *v* ₓ *P* ₓ *C*<sub>Pₓ</sub>  + *v*<sub>y</sub>P <sub>y</sub>*C* P <sub><sub>y</sub></sub>  +  *v v*<sub>z</sub>*A*<sub>y</sub>*C* P <sub><sub>z</sub></sub>  +  *BC* P <sub><sub>z</sub></sub>  +  *v*<sub>z</sub>*C* P <sub><sub>w</sub></sub>
+*v* ₓ *C* ₓ +*v*<sub>y</sub>*C*<sub>y</sub>  +  *v*<sub>z</sub>*C*<sub>z</sub>  +  *C*<sub>w</sub>  =  *v* ₓ *P* ₓ *C*<sub>Pₓ</sub>  + *v*<sub>y</sub>P <sub>y</sub>*C* P <sub><sub>y</sub></sub>  +  *v*<sub>z</sub>*A*<sub>y</sub>*C* P <sub><sub>z</sub></sub>  +  *BC* P <sub><sub>z</sub></sub>  +  *v*<sub>z</sub>*C* P <sub><sub>w</sub></sub>
 
 Ahora podemos dividir la operación matemática anterior por componente de vértice en cuatro ecuaciones independientes:
 
@@ -143,7 +143,7 @@ Ahora podemos dividir la operación matemática anterior por componente de vért
 
 El plano de recorte del espacio de vista y la matriz de proyección derivan y nos dan el plano de recorte del espacio de recorte.
 
-![plano de recorte del espacio de recorte](images/clip-space-clip-plane-matrix.png)
+![clip space clip plane](images/clip-space-clip-plane-matrix.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -4,12 +4,12 @@ ms.assetid: 2bf13137-db9c-4ad0-a511-16859745cbba
 title: Búsqueda de recursos de Win32 PE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d99a22994cb30a414588edff42ec39f7505ab993ca76f4d6504fc946c4a22fd6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 464b99eaf792b7f292aed0f3c95925fdeffe45a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119147168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063068"
 ---
 # <a name="locating-win32-pe-resources"></a>Búsqueda de recursos de Win32 PE
 

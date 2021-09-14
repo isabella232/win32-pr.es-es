@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4656290a861247dc474e46cb396314f762f0084f45ae60d32198aa7bb464f8d6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cea8996273a0c9d03123ce58f5fbb0dfb099be94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119320055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063371"
 ---
 # <a name="ccm_setwindowtheme-message"></a>Mensaje \_ SETWINDOWTHEME de CCM
 
@@ -35,7 +35,7 @@ Establece el estilo visual de un control .
 *lParam* 
 </dt> <dd>
 
-Puntero a una cadena Unicode que contiene el estilo visual de control que se establecerá.
+Puntero a una cadena Unicode que contiene el estilo visual de control que se establece.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Puntero a una cadena Unicode que contiene el estilo visual de control que se est
 
 No se usa el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
@@ -54,11 +54,11 @@ No se usa el valor devuelto.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

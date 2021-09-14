@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a818654c1acfa17c8e9af61987880e7d79dceaaffe305ba98df2d1d57cc39c46
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bb1663f80d4b233670852f80b06c405a1bab0207
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063616"
 ---
 # <a name="esentlogsequenceenddatabasesconsistentexception-class"></a>Clase EsentLogSequenceEndDatabasesConsistentException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. LogSequenceEndDatabasesConsistent exceptions.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentLogSequenceEndDatabasesConsistentException : EsentFragm
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

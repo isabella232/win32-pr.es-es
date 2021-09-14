@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 37240be1b732410d1e91974922f8ed7dc464b57b2596faa381c646a7513daf26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97e3b0b676e02dee0e3ebd82de9def56edc2ea28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073509"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063327"
 ---
 # <a name="cpullpinconnect-method"></a>CPullPin. Conectar método
 
@@ -81,7 +81,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame a este método durante el proceso de conexión del pin de entrada. Si se produce un error en el método , el pin debería producir un error en la conexión.
 
@@ -100,7 +100,7 @@ Si el valor de *bSync* es **TRUE**, el objeto **CPullPin** realiza solicitudes d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

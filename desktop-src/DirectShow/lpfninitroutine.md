@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Combase.h
-ms.openlocfilehash: c07f22b9dc261fe9d7b073a1f1ab93aa49e482fb70c53288aeaf606e6be9aec9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 375660399180196e2434030ea7551733affc4062
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119685085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063193"
 ---
 # <a name="lpfninitroutine-function-pointer"></a>Puntero de función LPFNInitRoutine
 
@@ -68,7 +68,7 @@ Este puntero de función no devuelve un valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

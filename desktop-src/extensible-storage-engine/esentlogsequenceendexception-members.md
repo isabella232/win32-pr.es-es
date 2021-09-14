@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102214
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b62c870dcca336d566a6e5513778c291e10a8d6190df76dbb78ad7d082e5dbc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92e5d3d857c4ac9c74f43280ed688e3fd91dd4a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063603"
 ---
 # <a name="esentlogsequenceendexception-members"></a>Miembros de EsentLogSequenceEndException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones logSequenceEnd.
+Clase base para JET_err. Excepciones LogSequenceEnd.
 
 El [tipo EsentLogSequenceEndException](./esentlogsequenceendexception-class.md) expone los miembros siguientes.
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

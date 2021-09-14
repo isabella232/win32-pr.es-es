@@ -4,12 +4,12 @@ ms.assetid: 1ee2ad6f-5e84-45ba-9849-cd3bd8e7eb29
 title: Ejemplos de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3883b3a62cd907c89dd46d14681e28ad9a4d4d94653a9f04a9097707d22cff9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 239fecd0947271627abc7fc50ed16f6a7c682b84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363622"
 ---
 # <a name="video-samples"></a>Ejemplos de vídeo
 

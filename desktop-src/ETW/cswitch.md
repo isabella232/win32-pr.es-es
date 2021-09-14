@@ -24,12 +24,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 09efeac38babb057621cb6f25d14d3a631c12242e91982ae3ab9e79570416be5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91004ca276140271e8d73c3fc226e83c4e03d1fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118395351"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063150"
 ---
 # <a name="cswitch-class"></a>CSwitch (clase)
 
@@ -58,7 +58,7 @@ class CSwitch : Thread_V2
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CSwitch** tiene estos tipos de miembros:
 
@@ -164,7 +164,7 @@ Calificadores: WmiDataId(9)
 
 Estado del subproceso anterior. Estos son los valores de estado posibles:
 
-| Estado | Descripción                                   |
+| State | Descripción                                   |
 |-------|-----------------------------------------------|
 | 0     | Inicializado                                   |
 | 1     | Ready                                         |
@@ -211,7 +211,7 @@ Calificadores: WmiDataId(8)
 
 Modo de espera para el subproceso anterior. Los posibles valores son los siguientes:
 
-| Estado | Descripción |
+| State | Descripción |
 |-------|-------------|
 | 0     | KernelMode  |
 | 1     | UserMode    |
@@ -236,7 +236,7 @@ Calificadores: WmiDataId(7)
 
 Motivo de espera del subproceso anterior. Los posibles valores son los siguientes:
 
-| Estado | Descripción       |
+| State | Descripción       |
 |-------|-------------------|
 | 0     | Ejecutivo         |
 | 1     | FreePage          |
@@ -331,7 +331,7 @@ No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estos eventos generan un gran volumen de eventos.
 
@@ -339,7 +339,7 @@ Estos eventos generan un gran volumen de eventos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
@@ -350,7 +350,7 @@ Estos eventos generan un gran volumen de eventos.
 
 <dl> <dt>
 
-[**Hilo**](thread.md)
+[**Thread**](thread.md)
 </dt> <dt>
 
 [**Subproceso \_ V2**](thread-v2.md)

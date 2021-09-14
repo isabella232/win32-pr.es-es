@@ -1,19 +1,19 @@
 ---
-description: Especifica el tamaño de cada ejemplo, en bytes, en un tipo de medio.
+description: Especifica el tamaño de cada muestra, en bytes, en un tipo de medio.
 ms.assetid: 4c28f73d-ff40-4eb9-a45f-57a60df719c6
-title: MF_MT_SAMPLE_SIZE atributo (mfapi. h)
+title: MF_MT_SAMPLE_SIZE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9bb897524dac5f73f4d4553f8e77e02ef473f611
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363962"
 ---
-# <a name="mf_mt_sample_size-attribute"></a>\_Atributo de \_ tamaño de muestra MF MT \_
+# <a name="mf_mt_sample_size-attribute"></a>Atributo MF \_ MT \_ SAMPLE \_ SIZE
 
-Especifica el tamaño de cada ejemplo, en bytes, en un tipo de medio.
+Especifica el tamaño de cada muestra, en bytes, en un tipo de medio.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,9 +21,9 @@ Especifica el tamaño de cada ejemplo, en bytes, en un tipo de medio.
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo solo es válido si el atributo [**MF \_ MT \_ fixed \_ size \_ Samples**](mf-mt-fixed-size-samples-attribute.md) es **true**.
+Este atributo solo es válido si el atributo [**MF MT FIXED SIZE \_ \_ \_ \_ SAMPLES**](mf-mt-fixed-size-samples-attribute.md) es **TRUE.**
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,29 +31,29 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

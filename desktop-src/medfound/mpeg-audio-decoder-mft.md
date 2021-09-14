@@ -1,15 +1,15 @@
 ---
-description: Microsoft MPEG Audio Decoder es una transformación sincrónica de Media Foundation (MFT) que permite descodificar formatos de secuencia elementales de audio MPEG mediante la canalización Media Foundation (MF).
+description: Microsoft MPEG Audio Decoder es una transformación sincrónica de Media Foundation (MFT) que permite descodificar formatos de secuencias elementales de audio MPEG mediante la canalización Media Foundation (MF).
 ms.assetid: 29A0491D-CA0D-4909-96F0-5640D5EE77F9
 title: Descodificador de audio MPEG
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8eb908509f9c9f1c55ef7434b33d3265be875bf56443bc69c5a4cf829774bded
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a98106ce4610c7c89a5e6212c225fd8eca3e4526
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119722285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363722"
 ---
 # <a name="mpeg-audio-decoder"></a>Descodificador de audio MPEG
 
@@ -19,7 +19,7 @@ El descodificador admite los siguientes formatos de secuencia elemental MPEG.
 
 -   Capas de audio MPEG-1 I y II (ISO/IEC 11172-3). 2. Compatible con versiones anteriores de MPEG-2, capas I y II (ISO)
 
--   COMPATIBLE con versiones anteriores de MPEG-2, capas I y II (ISO/IEC 13818-3), solo mono y estéreo
+-   COMPATIBLE con versiones anteriores de MPEG-2, capas I y II (ISO/IEC 13818-3), mono y estéreo únicamente
 
 ## <a name="class-identifier"></a>Identificador de clase
 
@@ -35,8 +35,8 @@ El descodificador MPEG Audio admite los siguientes atributos de tipo de medio de
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**TIPO \_ PRINCIPAL DE MT \_ DE \_ MF**](mf-mt-major-type-attribute.md)                               | **MFMediaType \_ Audio**                                                                                                                                                                                                                                                |
 | [**\_SUBTIPO DE MT DE MF \_**](mf-mt-subtype-attribute.md)                                      | **MFAudioFormat \_ MPEG**                                                                                                                                                                                                                                               |
-| [**CANALES \_ NUM \_ DE AUDIO \_ MF MT \_**](mf-mt-audio-num-channels-attribute.md)              | (Opcional) Normalmente, 1 para mono o 2 para estéreo, pero puede ser hasta 6 canales.<br/>                                                                                                                                                                                |
-| [**MF \_ MT \_ AUDIO \_ CHANNEL \_ MASK**](mf-mt-audio-channel-mask-attribute.md)              | (Opcional) Normalmente 0x4 mono o 0x3 para estéreo, pero también puede ser cualquiera de las máscaras de canal asociadas a hasta 6 canales (3/2/1, 3/2, 3/1, 2/2, 2/1). Si está presente, la máscara de canal debe ser coherente con el número de entrada especificado de canales.<br/> |
+| [**CANALES \_ NUM DE AUDIO MF \_ \_ \_ MT**](mf-mt-audio-num-channels-attribute.md)              | (Opcional) Normalmente, 1 para mono o 2 para estéreo, pero puede ser hasta 6 canales.<br/>                                                                                                                                                                                |
+| [**MF \_ MT \_ AUDIO \_ CHANNEL \_ MASK**](mf-mt-audio-channel-mask-attribute.md)              | (Opcional) Normalmente 0x4 para mono o 0x3 para estéreo, pero también puede ser cualquiera de las máscaras de canal asociadas a hasta 6 canales (3/2/1, 3/2, 3/1, 2/2, 2/1). Si está presente, la máscara de canal debe ser coherente con el número de entrada especificado de canales.<br/> |
 | [**MUESTRAS \_ DE AUDIO MF MT POR \_ \_ \_ \_ SEGUNDO**](mf-mt-audio-samples-per-second-attribute.md) | (Opcional) Uno de los siguientes: 16000, 22050, 24000, 32000, 44100, 48000. Si se especifica, la velocidad de muestreo de entrada debe ser una de las velocidades de muestreo MPEG válidas.<br/>                                                                                             |
 
 
@@ -88,7 +88,7 @@ El descodificador MPEG Audio implementa el [**método IMFTransform::GetAttribute
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

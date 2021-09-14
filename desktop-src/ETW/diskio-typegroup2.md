@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 60c1f2be2e90ddb8b3d7a396bfa925f0b7e83181effe7fb8c947bd911133f441
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ea08f32106c935be628bcdcd22e39ab92a0566e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119963145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063148"
 ---
 # <a name="diskio_typegroup2-class"></a>Clase \_ TypeGroup2 de DiskIo
 
@@ -38,9 +38,9 @@ class DiskIo_TypeGroup2 : DiskIo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase DiskIo \_ TypeGroup2** tiene estos tipos de miembros:
+La **clase \_ TypeGroup2 de DiskIo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -95,7 +95,7 @@ Identificador del subproceso emisor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

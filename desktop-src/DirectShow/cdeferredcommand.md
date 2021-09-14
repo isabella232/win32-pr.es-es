@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3413deb3c606177c937aef72a8437769dc2a97acdcbee97200880c96f36f9fc7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d3db3f35b5589a6cd17791d72aa9931124ccfbb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063352"
 ---
 # <a name="cdeferredcommand-class"></a>CDeferredCommand (clase)
 
@@ -51,7 +51,7 @@ Los recuentos de referencias controlan la duración de la `CDeferredCommand` cla
 | [**GetMethod**](cdeferredcommand-getmethod.md)               | Recupera el identificador de envío del método que se va a ejecutar.                                                              |
 | [**GetParams**](cdeferredcommand-getparams.md)               | Recupera la lista **de argumentos DIS DIS DIRAMS** en el método .                                                               |
 | [**GetResult**](cdeferredcommand-getresult.md)               | Recupera la lista de argumentos resultante, si existe alguna.                                                                   |
-| [**GetTime**](cdeferredcommand-gettime.md)                   | Recupera la hora a la que se ejecutará el método.                                                                         |
+| [**ConocerHora**](cdeferredcommand-gettime.md)                   | Recupera la hora a la que se ejecutará el método.                                                                         |
 | [**Invocar**](cdeferredcommand-invoke.md)                     | Proporciona acceso a métodos y propiedades expuestos por un objeto .                                                         |
 | [**IsStreamTime**](cdeferredcommand-isstreamtime.md)         | Especifica si el comando se va a ejecutar en tiempo de transmisión o en tiempo de presentación.                                         |
 | Métodos IDeferredCommand                                      | Descripción                                                                                                             |

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 1f1809bbf9352b022d2acfb15b119db47b0feab6302020cdaf5b24746945aa05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2c0838743f8190eeb0e5c825e7125d2e48c0b6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119750585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063743"
 ---
 # <a name="d3dvertexbuffer_desc-structure"></a>D3DVERTEXBUFFER \_ DESC (estructura)
 
@@ -40,7 +40,7 @@ typedef struct D3DVERTEXBUFFER_DESC {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -99,7 +99,7 @@ Tamaño del búfer de vértices, en bytes.
 
 </dd> <dt>
 
-**Fvf**
+**FVF**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -120,7 +120,7 @@ Combinación de [D3DFVF](d3dfvf.md) que describe el formato de vértice de los v
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

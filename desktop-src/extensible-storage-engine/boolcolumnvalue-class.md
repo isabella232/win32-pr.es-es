@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Clase BoolColumnValue'
-title: BoolColumnValue (clase)
+title: Clase BoolColumnValue
 TOCTitle: BoolColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.BoolColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.boolcolumnvalue(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 28f360745c09adb913ae7c62babbc417ac0ec5297441a1d3368e101bfd90d9a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 628ace76e9558774130cc14e4e1a7d380be66fc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118084241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063652"
 ---
-# <a name="boolcolumnvalue-class"></a>BoolColumnValue (clase)
+# <a name="boolcolumnvalue-class"></a>Clase BoolColumnValue
 
 Valor [de columna](/dotnet/api/system.boolean) booleano.
 
@@ -45,7 +45,7 @@ Valor [de columna](/dotnet/api/system.boolean) booleano.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -63,7 +63,7 @@ public class BoolColumnValue : ColumnValueOfStruct<bool>
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

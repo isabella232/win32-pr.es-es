@@ -1,15 +1,15 @@
 ---
 description: Especifica qué haz usa el DSP de captura de voz para el procesamiento de la matriz de micrófonos.
 ms.assetid: 9ed761da-3f1b-47e8-b71f-becc56fe8801
-title: MFPKEY_WMAAECMA_FEATR_MICARR_BEAM (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_WMAAECMA_FEATR_MICARR_BEAM propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b9a91cef7d270af37adc8fda9805d7bf275ef9877883ed8ff8cfdbf9e7a55e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9165eec0dee87fa5d9f6a751f41e81d0de2d9958
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363791"
 ---
 # <a name="mfpkey_wmaaecma_featr_micarr_beam-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ BEAM
 
@@ -27,7 +27,7 @@ VT \_ I4
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Establezca esta propiedad si el valor de la propiedad [ \_ MFPKEY WMAAECMA \_ FEATR \_ MICARR \_ MODE](mfpkey-wmaaecma-featr-micarr-modeproperty.md) es MICARRAY \_ EXTERN \_ BEAM.
 
@@ -63,11 +63,11 @@ Esta propiedad puede tener los siguientes valores. Los valores están en grados 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

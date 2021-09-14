@@ -14,15 +14,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a495e52e404d04955a2c330729ef82cccb726554
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062992"
 ---
 # <a name="audio-compression-functions"></a>Funciones de compresión de audio
 
-Las siguientes funciones se usan con compresión de audio.
+Las funciones siguientes se usan con compresión de audio.
 
 -   [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 -   [**acmDriverClose**](/windows/desktop/api/Msacm/nf-msacm-acmdriverclose)
@@ -31,7 +31,7 @@ Las siguientes funciones se usan con compresión de audio.
 -   [**acmDriverEnumCallback**](/windows/win32/api/msacm/nc-msacm-acmdriverenumcb)
 -   [**acmDriverID**](/windows/desktop/api/Msacm/nf-msacm-acmdriverid)
 -   [**acmDriverMessage**](/windows/desktop/api/Msacm/nf-msacm-acmdrivermessage)
--   [**acmDriverOpen**](/windows/desktop/api/Msacm/nf-msacm-acmdriveropen)
+-   [**acmDriverAbrir**](/windows/desktop/api/Msacm/nf-msacm-acmdriveropen)
 -   [**acmDriverPriority**](/windows/desktop/api/Msacm/nf-msacm-acmdriverpriority)
 -   [**acmDriverProc**](/windows/desktop/api/Msacm/nc-msacm-acmdriverproc)
 -   [**acmDriverRemove**](/windows/desktop/api/Msacm/nf-msacm-acmdriverremove)

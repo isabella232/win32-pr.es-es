@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 97f017428eb7c29b8358f6868661cfa07e5f66119e12d5a2505e8342666b3ed1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78d7b39152ced7d2267c7e3d4e8ce72636744e7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118075973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063492"
 ---
 # <a name="jet_columncreatecolumnid-property"></a>JET_COLUMNCREATE.columnid, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el columnid de la columna.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public JET_COLUMNID columnid { get; internal set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

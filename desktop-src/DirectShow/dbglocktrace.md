@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b55736b2efb8fd4cfbca40710caa930c200c84e1ceec9c8c4f7439468c1add1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8daf3c33b43bda95bb1d54145e9e5aebc6f89c2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118654075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063288"
 ---
 # <a name="dbglocktrace-function"></a>Función DbgLockTrace
 
@@ -68,7 +68,7 @@ Use esta función para hacer un seguimiento de una sección crítica específica
 Para realizar un seguimiento de una sección crítica, realice los pasos siguientes:
 
 1.  Defina DEBUG o \_ DEBUG antes de incluir los DirectShow encabezados.
-2.  Habilite el registro de depuración para secciones críticas mediante una llamada [**a DbgSetModuleLevel**](dbgsetmodulelevel.md) con la marca LOG \_ LOCKING.
+2.  Habilite el registro de depuración para las secciones críticas mediante una llamada [**a DbgSetModuleLevel con**](dbgsetmodulelevel.md) la marca LOG \_ LOCKING.
 3.  Llame **a DbgLockTrace** en la sección crítica de la que desea hacer un seguimiento.
 
 En las compilaciones comerciales, la **función DbgLockTrace** no tiene ningún efecto.
@@ -109,7 +109,7 @@ DbgTerminate();
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

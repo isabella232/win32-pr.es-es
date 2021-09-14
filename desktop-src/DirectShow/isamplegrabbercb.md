@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 822eef97ebd2ff169631f0e4d83cdfe3417388389e112851f5e77dcd7216acfd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c39d11e6560bc5e50a4c8a9b42a1cbb095b4b71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817507"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063250"
 ---
 # <a name="isamplegrabbercb-interface"></a>Interfaz ISampleGrabberCB
 
@@ -30,7 +30,7 @@ ms.locfileid: "117817507"
 
 La `ISampleGrabberCB` interfaz proporciona métodos de devolución de llamada [**para el método ISampleGrabber::SetCallback.**](isamplegrabber-setcallback.md) Si la aplicación llama a ese método, debe implementar esta interfaz. Para obtener más información, [**vea ISampleGrabber**](isamplegrabber.md).
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ISampleGrabberCB** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ISampleGrabberCB** también tiene estos tipos de miembros:
 
@@ -51,7 +51,7 @@ La **interfaz ISampleGrabberCB** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.

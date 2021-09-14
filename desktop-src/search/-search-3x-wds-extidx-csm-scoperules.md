@@ -5,11 +5,11 @@ title: Administración de reglas de ámbito
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 134e4241e9dcd66e468935ae56a4029a51a96c37
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880219"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363310"
 ---
 # <a name="managing-scope-rules"></a>Administración de reglas de ámbito
 
@@ -44,8 +44,8 @@ Por ejemplo, supongamos que ha instalado una nueva aplicación cuyos archivos de
 
 Hay tres tipos de reglas, con el orden de prioridad siguiente:
 
-1.  directiva de grupo reglas son establecidas por los administradores y pueden invalidar todas las demás reglas.
-2.  Las reglas de usuario las establecen los usuarios que modifican el ámbito en la Windows de usuario de opciones de búsqueda. Los usuarios u otras aplicaciones pueden quitar todas las reglas de usuario y revertir a las reglas predeterminadas.
+1.  directiva de grupo reglas las establecen los administradores y pueden invalidar todas las demás reglas.
+2.  Las reglas de usuario las establecen los usuarios que modifican el ámbito en la interfaz de usuario Windows opciones de búsqueda. Los usuarios u otras aplicaciones pueden quitar todas las reglas de usuario y revertir a las reglas predeterminadas.
 3.  Normalmente, una aplicación establece reglas predeterminadas para definir un ámbito predeterminado. Por ejemplo, se pueden establecer reglas predeterminadas cuando se agrega un nuevo controlador de protocolo o contenedor al sistema.
 
 Juntos, estos tipos  de reglas componen el conjunto de reglas de trabajo a partir del cual el Administrador del ámbito de rastreo (CSM) genera la lista completa de direcciones URL para rastrear. Aunque las reglas predeterminadas se pueden invalidar por reglas de directiva de grupo y por reglas de usuario, se mantienen en su propio conjunto de reglas predeterminado, al que puede revertir en cualquier momento. El indexador rastrea las direcciones URL del conjunto de reglas de trabajo y agrega elementos, propiedades y contenido al catálogo.
@@ -55,7 +55,7 @@ Juntos, estos tipos  de reglas componen el conjunto de reglas de trabajo a parti
 
  
 
-Las reglas de exclusión pueden definir direcciones URL de patrón con el carácter comodín ' '; por \* ejemplo: file:///C: \\ ProjectA \\ \* \\ . Una regla de exclusión que usa este patrón impide que el indexador rastree las carpetas del directorio ProjectA. Para obtener un ejemplo más complicado, suponga que hay una regla de inclusión para file:///C: ProjectA y una regla de patrón de exclusión \\ \\ para file:///C: Datos de \\ \\ \* \\ ProjectA \\ \* . En este caso, el indexador rastrearía elementos en:
+Las reglas de exclusión pueden definir direcciones URL de patrón con el carácter comodín ' '; por \* ejemplo: file:///C: \\ ProjectA \\ \* \\ . Una regla de exclusión que usa este patrón impide que el indexador rastree las carpetas del directorio ProjectA. Para obtener un ejemplo más complicado, supongamos que hay una regla de inclusión para file:///C: ProjectA y una regla de patrón de exclusión \\ \\ para file:///C: Datos de \\ \\ \* \\ ProjectA \\ \* . En este caso, el indexador rastrearía elementos en:
 
 -   C: \\ ProjectA\\
 -   C: \\ Archivos de prueba \\ **projectA versión1** \\\\
@@ -87,7 +87,7 @@ Las reglas de trabajo establecidas para el CSM incluyen reglas predeterminadas y
 -   La instalación o actualización de una aplicación como Windows Search o un controlador de protocolo
 -   Una aplicación de configuración para la adición de un nuevo almacén de datos o contenedor
 
-[**ISearchCrawlScopeManager proporciona**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) dos métodos para agregar nuevas reglas de ámbito, como se describe en la tabla siguiente. Las rutas de acceso para las reglas de inclusión del sistema de archivos deben terminar con una barra diagonal inversa ' ' (por ejemplo, file:///C: archivos ) y las rutas de acceso para las reglas de exclusión deben terminar con un asterisco \\ \\ \\ (por ejemplo, file:///c: \\ archivos \\ \* ). Solo las reglas de exclusión pueden contener direcciones URL de patrón. Además, se recomienda incluir los identificadores de seguridad (SID) de los usuarios en las rutas de acceso, para mejorar la seguridad. Las rutas de acceso por usuario son más seguras, ya que las consultas se ejecutarían en un proceso por usuario, lo que garantiza que un usuario no pueda ver elementos indexados desde la bandeja de entrada de otro usuario, por ejemplo.
+[**ISearchCrawlScopeManager proporciona**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) dos métodos para agregar nuevas reglas de ámbito, como se describe en la tabla siguiente. Las rutas de acceso para las reglas de inclusión del sistema de archivos deben terminar con una barra diagonal inversa ' ' (por ejemplo, file:///C: archivos ) y las rutas de acceso para las reglas de exclusión deben terminar con un \\ \\ asterisco \\ (por ejemplo, file:///c: \\ archivos \\ \* ). Solo las reglas de exclusión pueden contener direcciones URL de patrón. Además, se recomienda incluir los identificadores de seguridad (SID) de los usuarios en las rutas de acceso, para mejorar la seguridad. Las rutas de acceso por usuario son más seguras, ya que las consultas se ejecutarían en un proceso por usuario, lo que garantiza que un usuario no pueda ver elementos indexados desde la bandeja de entrada de otro usuario, por ejemplo.
 
 En la tabla siguiente se describen los métodos de la interfaz ISearchCrawlScopeManager que se usa para agregar nuevas reglas de ámbito.
 

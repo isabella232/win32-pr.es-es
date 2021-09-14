@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 01f0521ca7833cd74c3cb45b5a650fbd12aae485e36a153b57e6d9b10b49d1f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94f77549d0ea2a9c59d7de8367a6133085cc2771
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117733076"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063748"
 ---
 # <a name="d3ddevinfo_d3d9cacheutilization-structure"></a>D3DDEVINFO \_ D3D9CACHEUTILIZATION (estructura)
 
@@ -36,7 +36,7 @@ typedef struct D3DDEVINFO_D3D9CACHEUTILIZATION {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Velocidad de aciertos para buscar vértices transformados en la caché de vérti
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una caché eficaz suele estar más cerca de una tasa de aciertos del 90 %, y una caché ineficaz suele estar más cerca de una tasa de aciertos del 10 % (aunque un porcentaje bajo no es necesariamente un problema).
 
@@ -76,7 +76,7 @@ Una caché eficaz suele estar más cerca de una tasa de aciertos del 90 %, y una
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

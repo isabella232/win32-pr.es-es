@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: 597f929a2a5f2800b1761fdba377f2ed022460e7585e1a9d0131d3e6e21127e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fba878a40f510cc5e76256161255e01deaa7ee04
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118303500"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063803"
 ---
 # <a name="d3dx10_image_file_format-enumeration"></a>Enumeración D3DX10 \_ IMAGE \_ FILE \_ FORMAT
 
 Formatos de archivo de imagen compatibles con las funciones D3DXCreatexxx y D3DX10Savexxx.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -49,7 +49,7 @@ typedef enum D3DX10_IMAGE_FILE_FORMAT {
 <span id="D3DX10_IFF_BMP"></span><span id="d3dx10_iff_bmp"></span>**D3DX10 \_ IFF \_ BMP**
 </dt> <dd>
 
-Windows de archivo de mapa de bits (BMP). Contiene un encabezado que describe la resolución del dispositivo en el que se creó el rectángulo de píxeles, las dimensiones del rectángulo, el tamaño de la matriz de bits, una paleta lógica y una matriz de bits que define la relación entre los píxeles de la imagen de mapa de bits y las entradas de la paleta lógica. La extensión de archivo para este formato es .bmp.
+Windows formato de archivo de mapa de bits (BMP). Contiene un encabezado que describe la resolución del dispositivo en el que se creó el rectángulo de píxeles, las dimensiones del rectángulo, el tamaño de la matriz de bits, una paleta lógica y una matriz de bits que define la relación entre los píxeles de la imagen de mapa de bits y las entradas de la paleta lógica. La extensión de archivo para este formato es .bmp.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Formato de archivo portable de gráficos de red (PNG). Formato de mapa de bits n
 <span id="D3DX10_IFF_DDS"></span><span id="d3dx10_iff_dds"></span>**D3DX10 \_ IFF \_ DDS**
 </dt> <dd>
 
-Formato de archivo de superficie DirectDraw (DDS). Almacena texturas, texturas de volumen y mapas de entornos cúbicas, con o sin niveles de mapa mipmap y con o sin compresión de píxeles. La extensión de archivo para este formato es .dds.
+Formato de archivo de superficie DirectDraw (DDS). Almacena texturas, texturas de volumen y mapas de entornos cúbicas, con o sin niveles de mapa mipmap, y con o sin compresión de píxeles. La extensión de archivo para este formato es .dds.
 
 </dd> <dt>
 
@@ -104,11 +104,11 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte [Tipos de mapas de bits (GDI+) para](../gdiplus/-gdiplus-types-of-bitmaps-about.md) obtener más información sobre algunos de estos formatos.
 
-D3DX10 usa el componente Windows imaging para implementar la mayoría de los tipos de archivo de mapa de bits admitidos. Consulte [información Windows de componentes de creación de imágenes](https://msdn.microsoft.com/library/ms737408.aspx) para obtener información adicional.
+D3DX10 usa el componente Windows imaging para implementar la mayoría de los tipos de archivo de mapa de bits admitidos. Consulte [información Windows de componentes de creación de imágenes](https://msdn.microsoft.com/library/ms737408.aspx) para obtener más información.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3b0d9873e2d327c424b2cd1ffda7112676f53399a63d2a9ca92dca1f50a02f62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2dc8bf7f307ab56609b5f90f6955a1f666854270
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063308"
 ---
 # <a name="cpullpinonerror-method"></a>Método CPullPin.OnError
 
@@ -42,7 +42,7 @@ virtual void OnError(
 
 <dl> <dt>
 
-*h* 
+*Hr* 
 </dt> <dd>
 
 Especifica el valor **HRESULT** devuelto por el método que ha dado error.
@@ -53,9 +53,9 @@ Especifica el valor **HRESULT** devuelto por el método que ha dado error.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El objeto llama a este método cada vez que se produce un error que detiene el subproceso de extracción de datos. El filtro puede usar este método para recuperarse correctamente de los errores de streaming. En la mayoría de los casos, el error se devuelve desde el filtro ascendente, por lo que el filtro ascendente es responsable de notificarlo al Administrador de Graph. Si el error se produce dentro del [**método CPullPin::Receive,**](cpullpin-receive.md) el filtro debe enviar un [**evento EC \_ ERRORABORT.**](ec-errorabort.md) (Vea [**IMediaEventSink::Notify).**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify)
+El objeto llama a este método cada vez que se produce un error que detiene el subproceso de extracción de datos. El filtro puede usar este método para recuperarse correctamente de los errores de streaming. En la mayoría de los casos, el error se devuelve desde el filtro ascendente, por lo que el filtro ascendente es responsable de notificarlo al Administrador de Graph Filtro. Si el error se produce dentro del [**método CPullPin::Receive,**](cpullpin-receive.md) el filtro debe enviar un [**evento EC \_ ERRORABORT.**](ec-errorabort.md) (Vea [**IMediaEventSink::Notify**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ El objeto llama a este método cada vez que se produce un error que detiene el s
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

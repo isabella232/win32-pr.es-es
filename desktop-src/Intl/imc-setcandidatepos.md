@@ -1,19 +1,19 @@
 ---
-description: Indica a una ventana de IME que establezca la posición de la ventana candidatos. Para enviar este comando, la aplicación usa el mensaje WM \_ IME \_ CONTROL con la configuración de parámetros que se muestra a continuación.
+description: Indica a una ventana de IME que establezca la posición de la ventana candidata. Para enviar este comando, la aplicación usa el mensaje \_ WM IME \_ CONTROL con la configuración de parámetros que se muestra a continuación.
 ms.assetid: 7a2f9958-4a4e-462a-9737-e7796fd90216
 title: IMC_SETCANDIDATEPOS comando (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fbce21cac53eecf3ad5b99cc7dbe5cf5b52304ed25869a5c3f6ae729ac9d016
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b8ac05890e4c720c5b671faa7f20a68a96b24a23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120107275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063129"
 ---
 # <a name="imc_setcandidatepos-command"></a>Comando \_ SETCANDIDATEPOS de IMC
 
-Indica a una ventana de IME que establezca la posición de la ventana candidatos. Para enviar este comando, la aplicación usa el mensaje [**WM \_ IME \_ CONTROL**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
+Indica a una ventana de IME que establezca la posición de la ventana candidata. Para enviar este comando, la aplicación usa el mensaje [**\_ WM IME \_ CONTROL**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
 
 
 ```C++
@@ -36,17 +36,17 @@ Establezca en IMC \_ SETCANDIDATEPOS.
 <span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntero a una [**estructura CANDIDATEFORM**](/windows/win32/api/imm/ns-imm-candidateform) que contiene la coordenada x y la coordenada y de la ventana candidata. La aplicación debe establecer el **miembro dwIndex** de esta estructura.
+Puntero a una [**estructura CANDIDATEFORM**](/windows/win32/api/imm/ns-imm-candidateform) que contiene la coordenada x y la coordenada y de la ventana candidatos. La aplicación debe establecer el **miembro dwIndex** de esta estructura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se realiza correctamente o un valor distinto de cero de lo contrario.
+Devuelve 0 si se realiza correctamente o un valor distinto de cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este comando está destinado a aplicaciones que muestran caracteres de composición por sí solas, pero usan la ventana IME para mostrar candidatos.
+Este comando está pensado para aplicaciones que muestran caracteres de composición por sí solas, pero usan la ventana IME para mostrar candidatos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Este comando está destinado a aplicaciones que muestran caracteres de composici
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

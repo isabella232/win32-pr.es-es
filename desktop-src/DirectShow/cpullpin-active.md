@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6572ad0b415f4c1a51133d080e84a2e869787dea0c23614478b09c7b86296b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 461f6554f828dc096029ee1e7a1832e12a7c262a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063332"
 ---
 # <a name="cpullpinactive-method"></a>Método CPullPin.Active
 
@@ -56,7 +56,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame a este método cuando el filtro propietario se active. (Si el pin de entrada deriva de [**CBasePin,**](cbasepin.md)invalide el [**método CBasePin::Active).**](cbasepin-active.md)
 
@@ -73,7 +73,7 @@ Antes de llamar a este método, llame [**al método CPullPin::Conectar**](cpullp
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

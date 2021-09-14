@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: d6b82d3ffa1f55d79ac516ede469d422e7aced99
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063660"
 ---
 # <a name="backup-and-restore-parameters"></a>Parámetros de copia de seguridad y restauración
 
@@ -58,7 +58,7 @@ La ruta de acceso completa a cada base de datos se conserva en los registros de 
 
 Este parámetro controla el resultado de [JetInit](./jetinit-function.md) cuando el motor de base de datos está configurado para empezar a usar archivos de registro de transacciones en disco que tienen un tamaño diferente al configurado. Normalmente, [JetInit recuperará](./jetinit-function.md) correctamente las bases de datos, pero se producirá un error JET_errLogFileSizeMismatchDatabasesConsistent para indicar que el tamaño del archivo de registro está mal configurado. Sin embargo, cuando este parámetro se establece en true, el motor de base de datos eliminará silenciosamente todos los archivos de registro antiguos, iniciará un nuevo conjunto de archivos de registro de transacciones con el tamaño de archivo de registro configurado y devolverá JET_errSuccess.
 
-Este parámetro es útil cuando la aplicación desea cambiar de forma transparente el tamaño del archivo de registro de transacciones, pero sigue funcionando de forma transparente en escenarios de actualización y restauración.
+Este parámetro es útil cuando la aplicación desea cambiar de forma transparente su tamaño de archivo de registro de transacciones, pero sigue funcionando de forma transparente en escenarios de actualización y restauración.
 
 
 | Etiqueta | Value |
