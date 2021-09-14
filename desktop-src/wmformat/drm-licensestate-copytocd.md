@@ -1,9 +1,9 @@
 ---
 title: DRM_LicenseState_CopyToCD
-description: La \_ propiedad CopyToCD de LicenseState de DRM \_ contiene una \_ estructura de datos de estado de la licencia de WM \_ \_ que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
+description: La propiedad \_ LicenseState CopyToCD de DRM contiene una estructura WM LICENSE STATE DATA que contiene detalles sobre cómo se ha aplicado este derecho \_ \_ al \_ \_ contenido.
 ms.assetid: 0a32ce53-87ce-4b63-bfd6-3a0dd629dabc
 keywords:
-- DRM_LicenseState_CopyToCD formato de Windows Media
+- DRM_LicenseState_CopyToCD windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5e147e9435c7d9028b25a688a87515893340d685
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103791901"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360954"
 ---
-# <a name="drm_licensestate_copytocd"></a>\_CopyToCD LICENSESTATE \_ DRM
+# <a name="drm_licensestate_copytocd"></a>DRM \_ LicenseState \_ CopyToCD
 
-La **propiedad \_ \_ CopyToCD de LicenseState de DRM** contiene una estructura de [**\_ \_ \_ datos de estado**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) de la licencia de WM que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
+La **propiedad \_ LicenseState \_ CopyToCD de DRM** contiene una estructura WM LICENSE STATE [**\_ \_ \_ DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,19 +29,19 @@ g \_ wszWMDRM \_ LicenseState \_ CopyToCD
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ binario**
+**BINARIO DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Observaciones
 
-Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
+Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Propiedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

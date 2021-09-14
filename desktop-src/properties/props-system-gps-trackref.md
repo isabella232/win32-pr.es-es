@@ -4,12 +4,12 @@ ms.assetid: 5335d713-015a-4960-aacc-fd0b4525672c
 title: System.GPS.TrackRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc7b3ee2c0986e6dd29857566dbf5024a8d629c1be2d85fd70fe40f9618642e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70300ee567930c7336bb55743ed5d753a5459a5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119716965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360666"
 ---
 # <a name="systemgpstrackref"></a>System.GPS.TrackRef
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

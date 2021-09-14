@@ -2,7 +2,7 @@
 description: El método de clase WMI DeleteEx eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. DeleteEx es una versión extendida del método Delete.
 ms.assetid: 6e5447c1-4d71-4a51-a1e0-b5785c13dfd2
 ms.tgt_platform: multiple
-title: Método DeleteEx de la Win32_Directory de datos
+title: Método DeleteEx de la Win32_Directory clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0725011b39628f5376293bc82273723a89dfb0eafe1535d2f58393919f18c71a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac23a4013053d252aec49b8b7be4aae62c41c8e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375279"
 ---
 # <a name="deleteex-method-of-the-win32_directory-class"></a>Método DeleteEx de la clase Directory de \_ Win32
 
-El **método de clase** WMI [DeleteEx](/windows/desktop/WmiSdk/retrieving-a-class) eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. **DeleteEx** es una versión extendida del [**método Delete.**](delete-method-in-class-win32-directory.md)
+El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. **DeleteEx** es una versión extendida del [**método Delete.**](delete-method-in-class-win32-directory.md)
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,10 +50,10 @@ Nombre del archivo o directorio en el que se ha fallado **el método DeleteEx.**
 
 </dd> <dt>
 
-*StartFileName* \[ in, opcional\]
+*StartFileName* \[ en, opcional\]
 </dt> <dd>
 
-Denomina el archivo o directorio secundario que se usará como punto de partida para **DeleteEx.** El *parámetro StartFileName suele* ser el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL**, la operación se realiza en el archivo o directorio especificado en la llamada a ExecMethod.
+Denomina el archivo o directorio secundario que se usará como punto de partida para **DeleteEx.** El *parámetro StartFileName* suele ser el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL,** la operación se realiza en el archivo o directorio especificado en la llamada a ExecMethod.
 
 </dd> </dl>
 
@@ -129,7 +129,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha infringido el uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -168,14 +168,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Directorio \_ win32**](win32-directory.md)
+[**Directorio \_ Win32**](win32-directory.md)
 </dt> </dl>
 
  

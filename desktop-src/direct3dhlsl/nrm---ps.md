@@ -1,6 +1,6 @@
 ---
-title: NRM-PS
-description: Normalizar un vector 3D. | NRM-PS
+title: nrm - ps
+description: Normalizar un vector 3D. | nrm - ps
 ms.assetid: 4881037d-3ad1-4afb-b4ad-d615c6b8fe34
 ms.topic: reference
 ms.date: 05/31/2018
@@ -10,13 +10,13 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 165f1b8fa6adce4ffba079eff025ed1a3d8ce61e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362171"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359010"
 ---
-# <a name="nrm---ps"></a>NRM-PS
+# <a name="nrm---ps"></a>nrm - ps
 
 Normalizar un vector 3D.
 
@@ -24,7 +24,7 @@ Normalizar un vector 3D.
 
 
 
-| NRM DST, src |
+| nrm dst, src |
 |--------------|
 
 
@@ -33,24 +33,24 @@ Normalizar un vector 3D.
 
 , donde
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src es un registro de origen.
 
 ## <a name="remarks"></a>Observaciones
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| nrm                   |      |      |      |      | x    | x    | x     | x    | x     |
+| Mrn                   |      |      |      |      | x    | x    | x     | x    | x     |
 
 
 
  
 
-Esta instrucción funciona conceptualmente tal y como se muestra aquí.
+Esta instrucción funciona conceptualmente como se muestra aquí.
 
-squareRootOfTheSum = (src0. x \* src0. x + src0. y \* src0. y + src0. z \* src0. z)<sup>1/2</sup>;
+squareRootOfTheSum = (src0.x \* src0.x + src0.y \* src0.y + src0.z \* src0.z)<sup>1/2</sup>;
 
 
 ```
@@ -62,9 +62,9 @@ dest.w = src0.w * (1 / squareRootOfTheSum);
 
 
 
-Los registros dest y src no pueden ser iguales. El registro de destino debe ser un registro temporal.
+Los registros dest y src no pueden ser los mismos. El registro dest debe ser un registro temporal.
 
-Esta instrucción realiza la interpolación lineal basada en la fórmula siguiente.
+Esta instrucción realiza la interpolación lineal en función de la fórmula siguiente.
 
 
 ```

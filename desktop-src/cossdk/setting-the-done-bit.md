@@ -4,12 +4,12 @@ ms.assetid: badd3b5a-ce6f-4be7-9dd8-a3b17344b185
 title: Establecer el bit listo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ad2d9a9dc06caa623d3f7c58d51aec389b40a1f3315ae09a21052bdf6e2ae3a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6a53368377016c88633d91d942cde1970d979563
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361670"
 ---
 # <a name="setting-the-done-bit"></a>Establecer el bit listo
 
@@ -26,13 +26,13 @@ De forma predeterminada, el bit terminado se establece en False cuando se crea u
 
 ## <a name="using-icontextstate"></a>Uso de IContextState
 
-Puede usar [**IContextState::SetDeactivateOnReturn**](/windows/desktop/api/ComSvcs/nf-comsvcs-icontextstate-setdeactivateonreturn) para establecer el bit listo en True o False.
+Puede usar [**IContextState::SetDeactivateOnReturn para**](/windows/desktop/api/ComSvcs/nf-comsvcs-icontextstate-setdeactivateonreturn) establecer el bit listo en True o False.
 
 Puede usar [**IContextState::GetDeactivateOnReturn**](/windows/desktop/api/ComSvcs/nf-comsvcs-icontextstate-getdeactivateonreturn) para obtener el estado actual del bit listo del contexto del objeto.
 
 ## <a name="using-iobjectcontext"></a>Uso de IObjectContext
 
-Puede usar los métodos siguientes en [**IObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontext) para establecer el bit listo mientras se establece simultáneamente el bit coherente utilizado para votar en transacciones:
+Puede usar los métodos siguientes en [**IObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontext) para establecer el bit listo al mismo tiempo que establece el bit coherente que se usa para votar en transacciones:
 
 -   [**SetComplete**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) indica que ha terminado y que vota para confirmar la transacción actual. Establece el bit listo y el bit coherente en True.
 -   [**SetAbort**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort) indica que ha terminado y desmón la transacción actual. Establece el bit listo en True y el bit coherente en False.

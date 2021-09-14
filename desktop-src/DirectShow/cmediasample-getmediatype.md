@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ee7b5464ff2620dbc0247b006dc323232131de3936d2c5e56f2232b67c00ba5c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9a067494d6236b824ef8fbbcb583ad50503297b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119832305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361382"
 ---
 # <a name="cmediasamplegetmediatype-method"></a>Método CMediaSample.GetMediaType
 
@@ -65,7 +65,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando haya terminado con el tipo de medio, liberará el bloque de memoria mediante una llamada a la función de utilidad [**DeleteMediaType.**](deletemediatype.md)
 
@@ -82,7 +82,7 @@ La variable [**miembro CMediaSample::m \_ pMediaType**](cmediasample-m-pmediatyp
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

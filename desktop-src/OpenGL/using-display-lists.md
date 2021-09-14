@@ -7,12 +7,12 @@ keywords:
 - mostrar listas OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 322721868f3bf994382a7604aa2cb76802f268aec7a1298aaa14e3066d5f6cce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 793ec78af0b19ac437e44f16e13b93db6eab32a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118932805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361982"
 ---
 # <a name="using-display-lists"></a>Uso de listas para mostrar
 

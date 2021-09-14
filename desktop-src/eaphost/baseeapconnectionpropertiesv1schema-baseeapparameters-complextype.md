@@ -3,7 +3,7 @@ title: 'Tipo complejo BaseEapParameters: propiedades de conexión'
 description: Define el elemento de marcador de posición para el tipo de método y la configuración específica del método.
 ms.assetid: 510debce-545c-4ce1-965b-e4b2185b7983
 keywords:
-- EapHost de tipo complejo BaseEapParameters
+- Tipo complejo BaseEapParameters EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4ae3abf23b19badb123f8eb49097c6b3e9d7ac6d26fc0132f34b84de5ac24c01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f3bfb9f6c833900967525467202421cf94166405
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118086959"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241323"
 ---
 # <a name="baseeapparameters-complex-type---connection-properties"></a>Tipo complejo BaseEapParameters: propiedades de conexión
 
@@ -51,7 +51,7 @@ El **tipo complejo BaseEapParameters** define el elemento de marcador de posici�
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En **BaseEapParameters,** el método puede definir los elementos constituyentes. El método también realiza la validación del esquema en los elementos de **BaseEapParameters**.
 
@@ -59,7 +59,7 @@ En **BaseEapParameters,** el método puede definir los elementos constituyentes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

@@ -1,20 +1,20 @@
 ---
 title: Escritorio remoto ActiveX enumeraciones de control
-description: Las enumeraciones siguientes se usan con el Escritorio remoto ActiveX control .
+description: Las enumeraciones siguientes se usan con el control Escritorio remoto ActiveX datos.
 ms.assetid: C4EBA996-B3C7-492B-A6B7-96A3EC1847B2
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5880ff690e93d3a18337347b964aae421bff5acc95c5ec4859e597bc307822e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb2313cdc429fd39366a38f9596298a94e24e65b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117756186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374714"
 ---
 # <a name="remote-desktop-activex-control-enumerations"></a>Escritorio remoto ActiveX enumeraciones de control
 
-Las enumeraciones siguientes se usan con el Escritorio remoto ActiveX control .
+Las enumeraciones siguientes se usan con el control Escritorio remoto ActiveX datos.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -37,7 +37,7 @@ Especifica el resultado del método [**IMsRdpClient8::Reconnect.**](imsrdpclient
 [**ClientSpec**](clientspec.md)
 </dt> <dd>
 
-Se usa con [**la propiedad ClientProtocolSpec**](imsrdpclientadvancedsettings8-clientprotocolspec.md) para especificar el protocolo de escritorio remoto usado entre el cliente y el servidor.
+Se usa con [**la propiedad ClientProtocolSpec para**](imsrdpclientadvancedsettings8-clientprotocolspec.md) especificar el protocolo de escritorio remoto usado entre el cliente y el servidor.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Tipo de codificación que se usa para una instantánea Protocolo de escritorio r
 [**SnapshotFormatType**](/windows/win32/api/rdpappcontainerclient/ne-rdpappcontainerclient-snapshotformattype)
 </dt> <dd>
 
-El formato de datos usado para una instantánea de cliente Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
+Formato de datos que se usa para una instantánea Protocolo de escritorio remoto cliente de contenedor de aplicaciones (RDP).
 
 </dd> </dl>
 

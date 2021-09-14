@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a71485603944dc8b7eaf1a3a773051096776e6538aecdd8fb01396a3f0ea5fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d31eba66a1e4527a24a55a24e4623f3c49dc204
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118734664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363518"
 ---
 # <a name="class-statement"></a>Class (instrucción)
 
 Define la clase del cuadro de diálogo.
 
-La **instrucción CLASS** aparece en la sección opcional antes del [**main**](dialog-resource.md) de una instrucción DIALOG. Si no se proporciona ninguna clase, se usa la clase de diálogo estándar.
+La **instrucción CLASS** aparece en la sección opcional antes del main de una instrucción DIALOG. [](dialog-resource.md) Si no se proporciona ninguna clase, se usa la clase de diálogo estándar.
 
 ``` syntax
 CLASS class
@@ -38,7 +38,7 @@ Entero de 16 bits sin signo o una cadena, entre comillas dobles ("), que identif
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **instrucción CLASS** solo debe usarse con casos especiales, ya que invalida el procesamiento normal de un cuadro de diálogo. La **instrucción CLASS** convierte un cuadro de diálogo en una ventana de la clase especificada; dependiendo de la clase , esto podría dar resultados no deseados. No use los nombres de clase de control redefinidos con esta instrucción.
 
@@ -57,7 +57,7 @@ CLASS "myclass"
 [**DefDlgProc**](/windows/win32/api/winuser/nf-winuser-defdlgprocw)
 </dt> <dt>
 
-[**Diálogo**](dialog-resource.md)
+[**DIÁLOGO**](dialog-resource.md)
 </dt> </dl>
 
  

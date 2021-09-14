@@ -1,17 +1,17 @@
 ---
-title: El modelo presente en cola está en desuso
-description: El modelo presente en cola está en desuso
+title: El modelo actual en cola está en desuso
+description: El modelo actual en cola está en desuso
 ms.assetid: 271CD4F7-0992-47DB-AF5A-B77570EF681A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7cb1d4d07a824c2c6f9d0136259aec98b89c53e1320ceb6402241f881e312fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5713009cd5cd3a575d0d634f81fce7a289d1c1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118211350"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360633"
 ---
-# <a name="queued-present-model-is-being-deprecated"></a>El modelo presente en cola está en desuso
+# <a name="queued-present-model-is-being-deprecated"></a>El modelo actual en cola está en desuso
 
 ## <a name="platforms"></a>Plataformas
 
@@ -21,7 +21,7 @@ ms.locfileid: "118211350"
 
 ## <a name="description"></a>Descripción
 
-En la Windows versión posterior Windows 8, estas API devolverán E \_ NOTIMPL:
+En la Windows versión posterior a Windows 8, estas API devolverán E \_ NOTIMPL:
 
 -   DwmSetPresentParameters
 -   DwmSetDxFrameDuration
@@ -37,11 +37,11 @@ También se desaconseja el uso de la API DwmGetCompositionTimingInfo y se recomi
 
 ## <a name="manifestation"></a>Manifestación
 
-Las aplicaciones que usan el modelo presente en cola no funcionarán correctamente. La expresión exacta depende de la aplicación en particular, pero puede abarcar desde un tiempo de presentación incorrecto hasta la salida inesperada de la aplicación. En la práctica, no esperamos ver muchas (si existen) estas aplicaciones. Este modelo lo usó el Reproductor de Vista Media, que no se usará en Windows 8 (y posiblemente en el reproductor de Zune anterior). En este momento no tenemos información sobre ninguna otra aplicación que use realmente este modelo.
+Las aplicaciones que usan el modelo presente en cola no funcionarán correctamente. La expresión exacta depende de la aplicación en particular, pero puede abarcar desde un tiempo de presentación incorrecto hasta la salida inesperada de la aplicación. En la práctica, no esperamos ver muchas (si existen) estas aplicaciones. Este modelo lo usó el Reproductor de Vista Media, que no se usará en Windows 8 (y posiblemente en el reproductor Zune anterior). En este momento no tenemos información sobre ninguna otra aplicación que use realmente este modelo.
 
 ## <a name="solution"></a>Solución
 
-Los desarrolladores deben usar el modo de presentación de volteo DXGI en lugar de estar en cola (disponible en el entorno de ejecución dx9 desde Windows 7 y en los entornos de ejecución DX10 y DX11 en Windows 8).
+Los desarrolladores deben usar el modo de presentación de volteo DXGI en lugar de los presentes en cola (disponibles en el entorno de ejecución DX9 desde Windows 7 y en los entornos de ejecución DX10 y DX11 en Windows 8).
 
 ## <a name="tests"></a>Pruebas
 

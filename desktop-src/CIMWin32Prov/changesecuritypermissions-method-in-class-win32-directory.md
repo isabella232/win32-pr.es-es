@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0eb6c8e86d21894bcf8abcf921706e46b78f45844d4bd7f66c8d6cfcfc019d5d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 98c6026497496ab758c71a8a0403557ad2cacc7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119323185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361474"
 ---
 # <a name="changesecuritypermissions-method-of-the-win32_directory-class"></a>Método ChangeSecurityPermissions de la clase Directory de \_ Win32
 
 El **método de clase WMI ChangeSecurityPermissions** cambia los permisos de seguridad para el archivo de entrada de directorio lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es un directorio, **ChangeSecurityPermissions es recursivo** y cambia los permisos de seguridad de todos los archivos y subdirectorios que contiene el directorio. La **clase ChangeSecurityPermissions** devuelve un valor entero de 0 (cero) si se cambian los permisos y un número diferente para indicar un error.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -234,7 +234,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

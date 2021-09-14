@@ -9,22 +9,22 @@ keywords:
 - ASF (formato de sistemas avanzados), referencia de programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60d600833202da1522d07dfcedebb8892f92975cac59bb0117f3367b44ada5b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44c316b85e91c31b513fbfcdff003ba37efea93b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360923"
 ---
 # <a name="windows-media-format-sdk-programming-reference"></a>Windows Referencia de programación del SDK de formato multimedia
 
-Microsoft® Windows Media® Format Software Development Kit (SDK) admite una variedad de objetos, interfaces, funciones independientes, estructuras, tipos de enumeración, atributos, entre otros. En las secciones siguientes se documentan con detalle.
+Microsoft® Windows Media® Format Software Development Kit (SDK) admite una variedad de objetos, interfaces, funciones independientes, estructuras, tipos de enumeración, atributos, entre otros. En las secciones siguientes se documentan en detalle.
 
 
 
 | Sección                                                                              | Descripción                                                                                                  |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [Objects](objects.md)                                                               | Describe los objetos y las interfaces compatibles con cada objeto del SDK Windows Media Format.           |
+| [Objects](objects.md)                                                               | Describe los objetos y las interfaces compatibles con cada objeto en el SDK Windows Media Format.           |
 | [Funciones](functions.md)                                                           | Describe todas las funciones independientes, normalmente las que se usan para crear e inicializar varios objetos.      |
 | [Interfaces](interfaces.md)                                                         | Describe todas las interfaces y métodos de este SDK.                                                        |
 | [Estructuras](structures.md)                                                         | Describe las estructuras admitidas por este SDK.                                                              |
@@ -37,7 +37,7 @@ Microsoft® Windows Media® Format Software Development Kit (SDK) admite una var
 | [Perfiles del sistema](system-profiles.md)                                               | Enumera todos los perfiles de sistema admitidos.                                                                         |
 | [Perfiles del sistema localizados](localized-system-profiles.md)                           | Enumera los archivos de perfil del sistema localizados incluidos con el SDK y los idiomas asociados a cada uno.       |
 | [Valores GUID](guid-values.md)                                                       | Describe los valores GUID usados por este SDK.                                                                  |
-| [Códigos de error](error-codes.md)                                                       | Describe códigos de error comunes devueltos por métodos y funciones en el SDK.                                   |
+| [Códigos de error](error-codes.md)                                                       | Describe los códigos de error comunes devueltos por métodos y funciones en el SDK.                                   |
 | [Complementos de origen](source-plug-ins.md)                                               | Describe los requisitos de los orígenes implementados por el usuario.                                                     |
 
 

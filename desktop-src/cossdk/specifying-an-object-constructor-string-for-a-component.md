@@ -4,12 +4,12 @@ ms.assetid: 0c5aaaae-368e-4b3e-a483-b3a23c353e6e
 title: Especificar una cadena de constructor de objetos para un componente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ead0c4d59e0da6301e989a1dfa256f8f3e4868ff823acf7d320fd169bdee188d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0ca4604d07a5b750d02a968456d33c9e5bc6bee8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361658"
 ---
 # <a name="specifying-an-object-constructor-string-for-a-component"></a>Especificar una cadena de constructor de objetos para un componente
 

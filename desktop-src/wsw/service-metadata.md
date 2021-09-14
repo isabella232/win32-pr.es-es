@@ -5,15 +5,15 @@ ms.assetid: 5a6feb34-7fff-4000-b3be-63112b22905a
 keywords:
 - Servicios web nativos de metadatos de servicio
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca22301071b3de8ba386917eefc39029749aef8a60dc8a6dcea7cc31ff0276f5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9ebf15614ac9e89a4e08fdd19102492d0121e65d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360573"
 ---
 # <a name="service-metadata"></a>Metadatos de servicio
 
@@ -61,7 +61,7 @@ Adición del elemento de servicio al documento WSDL
 
 El host de servicio proporciona la facilidad para que la aplicación agregue un elemento de servicio en su nombre si aún no se ha especificado uno. Para habilitar este comportamiento, una aplicación debe especificar los campos serivceName y serviceNs en la estructura [**WS \_ SERVICE \_ METADATA.**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata) Si serviceName y serviceNs son **NULL,** no se agrega ningún elemento de servicio al documento WSDL. Ambos se usan para identificar el documento en el que se va a agregar serviceElement.
 
-Si [**no se especifica la propiedad \_ WS SERVICE PROPERTY \_ \_ METADATA,**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) no se llevará a cabo ningún exsalto de metadatos en el host de servicio.
+Si [**no se especifica la propiedad \_ WS SERVICE PROPERTY \_ \_ METADATA,**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) no se llevará a cabo ninguna excepción de metadatos en el host de servicio.
 
 Especificación del puerto en el punto de conexión de servicio de WS \_ \_
 
@@ -83,7 +83,7 @@ Se supone que la referencia al nombre de enlace y al espacio de nombres existe e
 
 Habilitación WS-MetadataExchange servicio en el punto de conexión de servicio de WS \_ \_
 
-Para atender las solicitudes WS-MetadataExchange servicio, el host de servicio debe tener al menos un punto de conexión habilitado para atender WS-MetadataExchange solicitudes. Para ello, se establece la versión adecuada para WS-MetadataExchange en el punto de [**conexión de servicio de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
+Para atender las solicitudes WS-MetadataExchange servicio, el host de servicio debe tener al menos un punto de conexión habilitado para el mantenimiento WS-MetadataExchange solicitudes. Para ello, se establece la versión adecuada para WS-MetadataExchange en el punto de [**conexión de servicio de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
 
 ``` syntax
 WS_METADATA_EXCHANGE_TYPE metadataExchangeType = WS_METADATA_EXCHANGE_TYPE_MEX;
@@ -107,7 +107,7 @@ serviceProperties[0].ValueSize = sizeof(metadataExchangeType);
 
 Especificación del sufijo de dirección URL Ws-MetadataExchange solicitudes
 
-Opcionalmente, una aplicación solo puede habilitar la aceptación de solicitudes de WS-MetadataExchange en una ruta de acceso específica. Para ello, especifique un sufijo para el punto de conexión de servicio de WS \_ \_ determinado. Este sufijo se concatena tal como está en la dirección URL real del punto de conexión de servicio \_ de WS. \_ La cadena concatenada se usa como dirección URL correspondiente al encabezado "to" recibido.
+Opcionalmente, una aplicación solo puede habilitar la aceptación de solicitudes WS-MetadataExchange en una ruta de acceso específica. Para ello, especifique un sufijo para el punto de conexión de servicio de WS \_ \_ determinado. Este sufijo se concatena tal como está en la dirección URL real del punto de conexión de servicio \_ de WS. \_ La cadena concatenada se usa como dirección URL correspondiente al encabezado "to" recibido.
 
 ``` syntax
 const WS_STRING suffix = WS_STRING_VALUE(L&quot;mex&quot;);
@@ -117,7 +117,7 @@ serviceProperties[0].value =  &suffix;
 serviceProperties[0].valueSize = sizeof(suffix);
 ```
 
-Los siguientes elementos de API se relacionan con la metada del servicio.
+Los siguientes elementos de API se relacionan con la metada de servicio.
 
 | Enumeración                                                       | Descripción                                                                     |
 |-------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -131,7 +131,7 @@ Los siguientes elementos de API se relacionan con la metada del servicio.
 
 | Estructura                                                               | Descripción                                                           |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**METADATOS DE \_ PUNTO DE CONEXIÓN DE SERVICIO \_ DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_metadata) | Representa el elemento port para el punto de conexión.                         |
+| [**METADATOS DEL \_ PUNTO DE CONEXIÓN DE \_ SERVICIO DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_metadata) | Representa el elemento port para el punto de conexión.                         |
 | [**METADATOS DEL SERVICIO WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata)                    | Especifica la matriz de documentos de metadatos de servicio.                       |
 | [**DOCUMENTO DE METADATOS \_ \_ DEL SERVICIO WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata_document) | Especifica los documentos individuales que son los metadatos del servicio. |
 

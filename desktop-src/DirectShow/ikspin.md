@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: 8855378544bcc2ea7357af220b5d80d32edde74a50c304e973c9821aa8e9a41c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d65e5ba5525b977ebae27da9964579614a1d653
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119792335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361320"
 ---
 # <a name="ikspin-interface"></a>Interfaz IKsPin
 
 La `IKsPin` interfaz proporciona un método para recuperar los medios admitidos por un pin en un filtro de modo kernel. `IKsPin`tiene métodos adicionales además del que se muestra aquí, pero no se admiten para DirectShow.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IKsPin** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IKsPin** también tiene estos tipos de miembros:
 
@@ -45,7 +45,7 @@ La **interfaz IKsPin** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe incluir Ks.h antes de Ksproxy.h.
 
@@ -53,7 +53,7 @@ Debe incluir Ks.h antes de Ksproxy.h.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

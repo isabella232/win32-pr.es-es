@@ -4,12 +4,12 @@ ms.assetid: 3a75dc30-c8c6-4e59-a533-ffca5734823b
 title: System.LastWriterPackageFamilyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c1b60e8ee66e76bdd5447c04703e637c440b9325a9e212ddfc11bba2a98e148
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 094c9e07075af171d2e3de2723727e79504e932d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120058765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363431"
 ---
 # <a name="systemlastwriterpackagefamilyname"></a>System.LastWriterPackageFamilyName
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

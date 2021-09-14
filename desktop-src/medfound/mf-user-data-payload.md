@@ -4,12 +4,12 @@ ms.assetid: 1F2B8275-9D4C-4732-9905-8ADE4CFD7496
 title: MF_USER_DATA_PAYLOAD atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f05c962bc0e36cd80a40fbac04606b86d933f7ba0f9286955c28b3fb494307f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c01355fd5ca58e174d843652e077fb363522ca8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119604605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363878"
 ---
 # <a name="mf_user_data_payload-attribute"></a>Atributo MF \_ USER \_ DATA \_ PAYLOAD
 
@@ -17,13 +17,13 @@ Establece si se debe incluir una carga de datos de usuario con el ejemplo de sal
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Blob**
+**BLOB**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los datos de usuario pueden contener datos, como datos de subtítulos o datos de barras.
+Los datos de usuario pueden contener datos como datos de subtítulos o datos de barras.
 
-Los datos de usuario se pasan sin ninguna descodación.
+Los datos de usuario se pasan a través de sin ninguna decodificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,18 +33,18 @@ Los datos de usuario se pasan sin ninguna descodación.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de tipo multimedia](media-type-attributes.md)
+[Atributos de tipo de medio](media-type-attributes.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b365212df06dded8b84c4a1f5af650f545b20eb5b169215da5cf4263c35bd8a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3672f16bee5251aa46e6a64a0da983e0f34ec54a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118841234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242001"
 ---
 # <a name="folderscanstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento FolderScanStateChange del objeto AxWindowsMediaPlayer
 
@@ -41,7 +41,7 @@ Private Sub player_FolderScanStateChange(
 
 ## <a name="event-data"></a>Datos del evento
 
-El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ FolderScanStateChangeEventHandler**. Este controlador recibe un argumento de tipo **AxWMPLib. \_ WMPOCXEvents \_ FolderScanStateChangeEvent**, que contiene la siguiente propiedad relacionada con este evento.
+El controlador asociado a este evento es de tipo **AxWMPLib. \_ Carpeta \_ WMPOCXEventsScanStateChangeEventHandler**. Este controlador recibe un argumento de tipo **AxWMPLib. \_ WMPOCXEvents \_ FolderScanStateChangeEvent**, que contiene la siguiente propiedad relacionada con este evento.
 
 
 

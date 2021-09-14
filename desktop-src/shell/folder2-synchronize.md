@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5a0865ab34c9ffba625a51881e01f5cb2df774da9e8d4a32a7fbd17f6dbf523f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9c39c37ff0e44e58aa71c69496dec8bee2745bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118458895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363114"
 ---
 # <a name="folder2synchronize-method"></a>Método Folder2.Synchronize
 
@@ -37,7 +37,7 @@ iRetVal = Folder2.Synchronize()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar este método, la Archivos sin conexión debe estar habilitada.
 
@@ -116,12 +116,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

@@ -1,38 +1,38 @@
 ---
 title: Estilo y tono
-description: El tono al escribir es la actitud que el escritor transmite al lector.
+description: El tono en la escritura es el sentimiento que el escritor transmite al lector.
 ms.assetid: b9a03709-301f-46de-b4b4-0dd1214c0ed7
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 20bd9fff1093607bfc554eb458f0e1904fda0a496772ce244922d03e9890d982
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6009491b54de9035b253a10b9fd48f2233947104
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119841694"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360639"
 ---
 # <a name="style-and-tone"></a>Estilo y tono
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-El tono al escribir es la actitud que el escritor transmite al lector. No es necesariamente lo que se dice, sino cómo se dice. El tono está pensado para crear una respuesta o emoción específicas en el lector. crea una personalidad que puede atraer a los usuarios o a otros usuarios.
+El tono en la escritura es el sentimiento que el escritor transmite al lector. No es necesariamente lo que se dice, sino cómo se dice. El tono está pensado para crear una respuesta o una emoción específicas en el lector. crea una personalidad que puede interactuar con los usuarios o con ellos.
 
-**Nota:** Las directrices relacionadas [con el texto de la interfaz de](text-ui.md) usuario se presentan en un artículo independiente.
+**Nota:** Las instrucciones relacionadas con [el texto de la interfaz de](text-ui.md) usuario se presentan en un artículo independiente.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
-### <a name="the-windows-tone"></a>El Windows de voz
+### <a name="the-windows-tone"></a>El Windows tono
 
-Use el Windows para inspirar la confianza al comunicarse con los usuarios a nivel personal al ser preciso, alentador, persícelo, objetivo y centrado en el usuario. El Windows también se esfuerza por ser claro, inspirador, sencillo y de confianza.
+Use el tono Windows para inspirar confianza al comunicarse con los usuarios a nivel personal al ser preciso, alentador, persaz, objetivo y centrado en el usuario. El Windows también se esfuerza por ser claro, elegante, sencillo y de confianza.
 
-No use un tono condescendiente, condescendiente o condescendiente. Evite los extremos de la voz "máquina" (donde se quita el hablante del idioma) y de la voz de "representante de ventas" (donde la escritura intenta vendernos algo, para puntárnoslo, para animarnos, para glosar todo como "simple").
+No use un tono de distraer, condescendiente o de tono de tono. Evite los extremos de la voz "máquina" (donde el hablante se quita del idioma) y la voz del "representante de ventas" (donde la escritura intenta vendernos algo, para ensalzarnos, para animarnos, para glosar todo como "sencillo").
 
 La investigación de Microsoft muestra que, en el software, a menudo hay:
 
--   **Uso excesivo de terminología y jerga** del equipo, que muchos usuarios no entienden ni malinterpretan.
+-   **Uso excesivo de terminología del equipo y jerga,** que muchos usuarios no entienden ni malinterpretan.
 -   **Uso incoherente de terminología.**
--   **Mensajes impentrables, a menudo sin involuntaria, que** los usuarios tienen dificultades para descifrar.
+-   **Mensajes impensables, a menudo no involuntariamente, que** los usuarios tienen dificultades para descifrar.
 
 Estos problemas hacen que los usuarios se sientan confusos, ininteligentes, desconcertados y, en última instancia, desvinculados de su experiencia con el software.
 
@@ -40,36 +40,36 @@ Una atención renovado a la calidad del mensaje, incluido el tono del texto, imp
 
 **Si solo hace una cosa...**
 
-Asegúrese de que el texto sea preciso, alentador, perseguido, objetivo y centrado en el usuario. Sea sencillo y de confianza y, cuando corresponda, use un tono claro y inspirador.
+Asegúrese de que el texto sea preciso, alentador, con información detallada, objetivo y centrado en el usuario. Sea sencillo y confiable y, cuando corresponda, use un tono claro y desaforado.
 
 ## <a name="guidelines"></a>Directrices
 
-### <a name="use-the-windows-tone"></a>Uso del Windows tono
+### <a name="use-the-windows-tone"></a>Uso del Windows de voz
 
 El tono del programa debe ser:
 
--   **Precisa.** Los usuarios deben estar seguros de que la información es técnicamente precisa. Si la información no es precisa, la experiencia del usuario con esa tarea específica es complicada y pierde la confianza en cualquier otra ayuda que lea de ese origen.
--   **Alentador.** Use un lenguaje que transmita que el software permite a los usuarios hacer cosas, en lugar de que les permita hacer cosas. Por ejemplo, use "puede" en lugar de "Windows le permite" o "esta característica lo permite". (Excepción: es correcto usar "permitir" al hacer referencia a características ,como las características de seguridad, que permiten o deniegan una acción).
+-   **Precisa.** Los usuarios deben estar seguros de que la información es técnicamente precisa. Si la información no es precisa, la experiencia del usuario con esa tarea específica es complicada y pierde la confianza en cualquier otra asistencia que lea de ese origen.
+-   **Alentador.** Use un lenguaje que transmita que el software permite a los usuarios hacer cosas, en lugar de que les permita hacer cosas. Por ejemplo, use "puede" en lugar de "Windows le permite" o "esta característica lo permite". (Excepción: es correcto usar "permitir" al hacer referencia a características (como las características de seguridad) que permiten o deniegan una acción).
 -   **Perspicaz.** Los usuarios deben pensar que usted (y, por extensión, la aplicación) sabe cuándo una tarea determinada es complicada y que los guiará a través de ella. Al mismo tiempo, trate a los usuarios como personas inteligentes que necesitan ayuda con un problema determinado.
--   **Objetivo.** A veces, los usuarios quieren una explicación más completa; a menudo, aunque solo quieren saber lo que necesitan para seguir adelante. Esto requiere objectividad, para reconocer que el objetivo (productividad, curiosidad, esfuerzo) es el objetivo del usuario, no el del escritor. También requiere que se desarrome cualquier noción predispuesta sobre el usuario.
+-   **Objetivo.** A veces, los usuarios quieren una explicación más completa. a menudo, aunque solo quieren saber lo que necesitan para seguir adelante. Esto requiere objectividad, para reconocer que el objetivo (productividad, curiosidad, esfuerzo) es el objetivo del usuario, no el del escritor. También requiere que se desarrome cualquier noción predispuesta sobre el usuario.
 -   **Centrado en el usuario.** Escriba desde la perspectiva del usuario y preferiblemente desde la perspectiva de lo que puede hacer para el usuario. Los usuarios deben tener la sensación de que encontrarán información pertinente y accesible para ellos.
 
-Puede desarrollar aún más la comunicación con los usuarios:
+Puede desarrollar aún más la comunicación con los usuarios si:
 
--   **Luz.** Una voz ligera resulta fácil de tratar y rápida de comprender. No es difícil ni pesado, y evita que la presión sea profunda o grave.
--   **Inspirador.** Una voz inspiradora motiva a los usuarios y los motiva a tomar medidas. Un cierto tono marca este tipo de voz, lo que le da una personalidad más atractiva que el tono de máquina que los usuarios suelen esperar de sus equipos.
+-   **Luz.** Una voz ligera resulta fácil de tratar y rápida de comprender. No es difícil ni pesado, y evita que la tensión sea profunda o grave.
+-   **Inspirador.** Una voz inspiradora motiva a los usuarios y los motiva a tomar medidas. Ciertas marcas de graduación marcan este tipo de voz, lo que le da una personalidad más atractiva de la que los usuarios del tono de la máquina suelen esperar de sus equipos.
 -   **Sencillo.** Una voz sencilla es abierta y abierta, libre de pretensos o engaños.
--   **Confiable.** Una voz de confianza es merecedora de confianza, confiable, precisa y sinceridad. Solo se necesitan algunas imprecisiones para perder la confianza del usuario, pero puede tardar mucho tiempo en recuperar esa confianza.
+-   **Confiable.** Una voz de confianza es confiable, confiable, precisa y confiable. Solo se necesitan algunas imprecisiones para perder la confianza del usuario, pero puede tardar mucho tiempo en recuperar esa confianza.
 
 Por el contrario, asegúrese de evitar los siguientes tonos, que son mucho más probables que reciban una reacción negativa:
 
--   **Tono de la máquina.** Parece tener un intercambio impersonal e inflexible con un equipo o robot.
--   **Tono corporativo.** Parece tener un monólogo con una empresa impersonal, eficaz y que todo lo sabe.
+-   **Tono de la máquina.** Parece tener un intercambio impersonal e inflexible con un equipo o un robot.
+-   **Tono corporativo.** Parece tener un monólogo con una empresa impersonal, eficaz y sin conocimientos.
 -   **Tono de aplicación de la ley.** Parece que se le interroga con un aluvión de preguntas intrusivas.
--   **Tono con desándalo.** Parece que se le pide que realice algún acto legalmente significativo.
+-   **Tono de suerte.** Parece que se le pide que realice algún acto legalmente significativo.
 -   **Tono de representante de ventas.** Parece que se le pide que compre o pruebe algo, con cualquier problema que se esté desluyéndo.
--   **Tono superior, condescendiente o sonado.** Parece que el software está desasociando a los usuarios, hablando con ellos o consiente con ellos. Normalmente, este tono es muy técnico, llama la atención innecesaria a los errores del usuario y se siente resonado.
--   **Tono constundente.** Parece que el software se está presuplicando sobre sus logros o que, de lo contrario, llama demasiado la atención sobre sí mismo.
+-   **Tono superior, condescendiente o toso.** Parece que el software está despreociando a los usuarios, hablando con ellos o consiente con ellos. Normalmente, este tono es muy técnico, llama la atención innecesaria a los errores del usuario y se siente resonado.
+-   **Tono desasoytivo.** Parece que el software se está presumiendo de sus logros o, de lo contrario, llama demasiada atención a sí mismo.
 -   **Tono volteado.** Parece que los objetivos y emociones de los usuarios no se toman en serio o que su uso del programa se da por hecho.
 
 ### <a name="use-real-world-language"></a>Uso del lenguaje real
@@ -100,11 +100,11 @@ Por el contrario, asegúrese de evitar los siguientes tonos, que son mucho más 
 
     Las cámaras digitales usan pequeños microchips...
 
--   **No inventa palabras ni aplica nuevos significados a las palabras estándar.** Suponga que los usuarios están más familiarizados con el significado establecido de una palabra que con un significado especial dado por el sector tecnológico. Cuando se requiera un término del sector, proporcione una definición en contexto. Evite la jerga, pero recuerde que algunas expresiones específicas del uso del equipo (hacker, grabación de un CD, entre otras) ya forman parte de la voz diaria.
+-   **No inventar palabras ni aplicar nuevos significados a las palabras estándar.** Suponga que los usuarios están más familiarizados con el significado establecido de una palabra que con un significado especial que le ha dado el sector tecnológico. Cuando se requiere un término del sector, proporcione una definición en contexto. Evite la jerga, pero recuerde que algunas expresiones específicas del uso del equipo (hacker, grabar un CD, entre otras) ya forman parte de la voz diaria.
 
     **Incorrecto:**
 
-    Puede usar carpetas para crear depósitos de sus favoritos.
+    Puede usar carpetas para crear cubos de sus favoritos.
 
     **Correcto:**
 
@@ -278,10 +278,10 @@ Por el contrario, asegúrese de evitar los siguientes tonos, que son mucho más 
 
     Este archivo está protegido y no se puede eliminar sin un permiso específico.
 
--   **Lograr el equilibrio correcto: estar abrigado hacia el usuario sin ser demasiado infiel o demasiado parecido a la empresa.** Imagine que ayuda a un amigo a usar el producto por primera vez. Esta persona no es su mejor pareja, sino un vecino o un amigo de la familia. Los usuarios deben sentirse cómodos y cómodos cuando usan el programa, pero el lenguaje no debería ser sospechoso o demasiado familiar.
+-   **Lograr el equilibrio correcto: estar abrigado hacia el usuario sin ser demasiado infiel o demasiado parecido a la empresa.** Imagine que ayuda a un amigo a usar el producto por primera vez. Esta persona no es su mejor amigo o pareja, sino un vecino o un amigo de la familia. Los usuarios deben sentirse cómodos y en casa al usar el programa, pero el lenguaje no debería ser sospechoso o demasiado familiar.
 -   **Limite las situaciones que incomoden al** usuario de alguna manera, como:
 
-    -   Se pide al usuario que haga algo inconveniente, como esperar, repetir una tarea o actualizar un programa.
+    -   Se pide al usuario que haga algo poco conveniente, como esperar, repetir una tarea o actualizar un programa.
 
         **Correcto:**
 
@@ -293,17 +293,17 @@ Por el contrario, asegúrese de evitar los siguientes tonos, que son mucho más 
 
         No se puede guardar con el formato especificado. Seleccione otro formato.
 
-    -   El usuario ha salido de su camino para ser útil, como participar en un programa de comentarios de los clientes o presentar un informe de errores.
+    -   El usuario ha salido de su camino para ser útil, como participar en un programa de comentarios de clientes o presentar un informe de errores.
 
         **Correcto:**
 
-        Para mejorar la experiencia de Copia de seguridad de Fabrikam, participe en el programa de comentarios de los clientes de Fabrikam.
+        Para mejorar la experiencia de Copia de seguridad de Fabrikam, participe en el programa de comentarios de clientes de Fabrikam.
 
     También debe usar please siempre que su ausencia se considere curt.
 
-    ![captura de pantalla de las direcciones que comienzan por please ](images/text-style-tone-image1.png)
+    ![captura de pantalla de las direcciones que comienzan por ](images/text-style-tone-image1.png)
 
-    En este ejemplo, los mensajes de error en línea serían curt sin favor.
+    En este ejemplo, los mensajes de error en línea serían curt sin please.
 
 -   **Use sorry only in error messages that result in serious problems for the user** (for example, data loss, the user can't continue to use the computer, or the user must get help from a technical representative). No se preocupe si el problema se produjo durante el funcionamiento normal del programa (por ejemplo, si el usuario necesita esperar a que se encuentra una conexión de red).
 
@@ -313,19 +313,19 @@ Por el contrario, asegúrese de evitar los siguientes tonos, que son mucho más 
 
 ### <a name="sentence-structure-and-length"></a>Estructura y longitud de oraciones
 
--   Dado que los usuarios suelen examinar texto, **haga que cada palabra cuente.** Las oraciones simples y concisas (y párrafos) no solo ahorran espacio en la pantalla, sino que son el medio más eficaz para transmitir que una idea o acción es importante. Use su mejor criterio: haga que las oraciones se ajusten, pero no tan ajustadas que el tono parezca brusco y poco acotada.
--   **Evite la repetición.** Revise cada ventana y elimine palabras e instrucciones duplicadas. No evite texto importante ,sea explícito siempre que sea necesario, pero no sea redundante y no explique las cosas que van sin decir nada.
--   **Use fragmentos de oración si procede.** Los fragmentos de oración son cortos y desenlazados y, como normalmente toman la forma de interrogación, son una buena manera de interactuar directamente con el usuario.
+-   Dado que los usuarios suelen examinar texto, **haga que cada palabra cuente.** Las oraciones simples y concisas (y párrafos) no solo ahorran espacio en la pantalla, sino que son el medio más eficaz de transmitir que una idea o acción es importante. Use su mejor criterio: haga que las oraciones se apreten, pero no tan estrictas que el tono parezca brusco y antipático.
+-   **Evite la repetición.** Revise cada ventana y elimine palabras e instrucciones duplicadas. No evite texto importante, sea explícito siempre que sea necesario, pero no sea redundante y no explique las cosas que van sin decir.
+-   **Use fragmentos de oraciones si procede.** Los fragmentos de oración son cortos y despedaz, y, como normalmente toman la forma de interrogación, son una buena manera de interactuar directamente con el usuario.
 
     **Correcto:**
 
     ¿Guarda los cambios en "Mi Fotos"?
 
-    ¿Alguna vez guardó un archivo y, a continuación, no se recuerda dónde lo guardó?
+    ¿Alguna vez guardó un archivo y, a continuación, no recordó dónde lo guardó?
 
 -   **Inicie oraciones con conjunciones** (y, pero, o ) si es necesario.
--   **Sustituir listas y tablas por oraciones complejas.** Las listas (ya sean numeradas o con viñetas) y las tablas son más claras y fáciles de examinar.
--   **Use construcciones gramaticales paralelas.** El paralelismo requiere que las palabras y frases que tienen la misma función tengan la misma forma. Use el lenguaje paralelo siempre que exprese ideas de igual peso y para los elementos de la interfaz de usuario que son paralelos en función (como encabezados, etiquetas, listas o títulos de página).
+-   **Sustituir listas y tablas para oraciones complejas.** Las listas (ya sean numeradas o con viñetas) y las tablas son más claras y fáciles de examinar.
+-   **Use construcciones gramaticales paralelas.** El paralelismo requiere que las palabras y frases que tienen la misma función tengan la misma forma. Use el lenguaje paralelo siempre que exprese ideas de igual peso y para los elementos de la interfaz de usuario que son paralelos en función (por ejemplo, encabezados, etiquetas, listas o títulos de página).
 
     **Correcto:**
 

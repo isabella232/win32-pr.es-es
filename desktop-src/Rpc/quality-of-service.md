@@ -4,12 +4,12 @@ description: Los programas cliente pueden usar la función RpcBindingSetAuthInfo
 ms.assetid: bc3d47ba-3c1b-4aba-8fe3-b4501a621931
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84d7c68386a5d7db4f59b620bc998d628faa2969671ef99b5c5fc2c65aadeb96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee93b1aa376c9d6f4e2b3eedab73c91471d42498
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118927153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361913"
 ---
 # <a name="quality-of-service-rpc"></a>Calidad de servicio (RPC)
 

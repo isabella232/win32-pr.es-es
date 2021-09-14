@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración EscrowUpdateGrbit'
-title: Enumeración EscrowUpdateGrbit
+description: 'Más información sobre: EscrowUpdateGrbit (enumeración)'
+title: EscrowUpdateGrbit (enumeración)
 TOCTitle: EscrowUpdateGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EscrowUpdateGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.escrowupdategrbit(v=EXCHG.10)
@@ -29,20 +29,20 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: d301ef801a5685057a9e33beb794f3b6cf13e646
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002997"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359079"
 ---
-# <a name="escrowupdategrbit-enumeration"></a>Enumeración EscrowUpdateGrbit
+# <a name="escrowupdategrbit-enumeration"></a>EscrowUpdateGrbit (enumeración)
 
 Opciones de JetEscrowUpdate.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Dim instance As EscrowUpdateGrbit
 public enum EscrowUpdateGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -77,8 +77,8 @@ public enum EscrowUpdateGrbit
 </tr>
 <tr class="even">
 <td></td>
-<td>Norollback</td>
-<td>Incluso si la sesión que realiza la actualización de custodia tiene la reversión de la transacción, esta actualización no se deshará. Dado que es posible que las entradas de registro no se vacíen en el disco, es posible que se pierdan actualizaciones recientes de custodia realizadas con esta marca si se produce un bloqueo.</td>
+<td>NoRollback</td>
+<td>Incluso si la sesión que realiza la actualización de custodia tiene su reversión de transacciones, esta actualización no se deshacerá. Como es posible que las entradas de registro no se vacían en el disco, las actualizaciones de custodia recientes realizadas con esta marca pueden perderse si se produce un bloqueo.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum EscrowUpdateGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

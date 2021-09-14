@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af01c5c7a1bbe16826457d7e1f8700df01876827c522a36db41f6c3843101d6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f690670606cd7ee307ba945fc2daabe92953e81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118882340"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374822"
 ---
 # <a name="logfilesadd-method"></a>Método LogFiles.Add
 
@@ -49,17 +49,17 @@ Ruta de acceso al archivo de registro. Puede especificar la ruta de acceso como 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe usar la herramienta Logman.exe o el complemento MMC Perfmon.msc para generar los archivos de registro que agregue a esta colección. Para Perfmon.msc, los registros de contador se encuentran en **Registros y alertas de rendimiento**. Para obtener más información sobre Logman.exe o Perfmon.msc, busque Logman o Using Performance, respectivamente, **en el Centro de ayuda y soporte técnico**.
 
-**Antes de Windows Vista:** No se pueden agregar [](systemmonitor-logfiles.md) archivos de registro a la colección de archivos de registro si el valor de [**SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md) está establecido [**enDataSourceTypeConstants.sysmonLogFiles**](/windows/desktop/api/ISysmon/ne-isysmon-datasourcetypeconstants). En primer lugar, establezca **SystemMonitor.DataSourceType** en **DataSourceTypeConstants.sysmonNullDataSource,** agregue los archivos de registro y los contadores y, a continuación, establezca **SystemMonitor.DataSourceType** en **DataSourceTypeConstants.sysmonLogFiles**.
+**Antes de Windows Vista:** No se pueden agregar [](systemmonitor-logfiles.md) archivos de registro a la colección de archivos de registro si el valor de [**SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md) está establecido en [**DataSourceTypeConstants.sysmonLogFiles.**](/windows/desktop/api/ISysmon/ne-isysmon-datasourcetypeconstants) En primer lugar, establezca **SystemMonitor.DataSourceType** en **DataSourceTypeConstants.sysmonNullDataSource,** agregue los archivos de registro y los contadores y, a continuación, establezca **SystemMonitor.DataSourceType** en **DataSourceTypeConstants.sysmonLogFiles.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

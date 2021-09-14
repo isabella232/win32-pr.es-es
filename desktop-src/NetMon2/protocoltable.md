@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: a30d890fa5b6dcbbca1797a53722b97b2109cc9943ce07260c7f47514cfeb7b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ad79beca7ce79611747a02704ffc05da5fc3d4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362130"
 ---
-# <a name="protocoltable-structure"></a>Estructura PROTOCOLTABLE
+# <a name="protocoltable-structure"></a>PROTOCOLTABLE (estructura)
 
 La **estructura PROTOCOLTABLE** contiene una lista de protocolos.
 
@@ -36,7 +36,7 @@ typedef struct _PROTOCOLTABLE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

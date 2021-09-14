@@ -4,12 +4,12 @@ description: Un globo es una pequeña ventana emergente que informa a los usuari
 ms.assetid: 67092831-e573-4ad6-b1fc-baa1836031cb
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: ea95eee6e745dc85dbe7cd354df0906b5df4a7870198fc662effd326c6fbaae9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 792974ebaaa946a3e1a4f05d52c8fd9ac32fc87a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119818693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361000"
 ---
 # <a name="balloons"></a>Globos
 
@@ -22,13 +22,13 @@ Un globo es una pequeña ventana emergente que informa a los usuarios de un prob
 
 Un globo típico.
 
-Los globos tienen un icono, un título y texto del cuerpo, todos ellos opcionales. A diferencia de la información sobre herramientas y la información sobre herramientas, los globos también tienen una cola que identifica su origen. Normalmente, el origen es un control, si es así, se conoce como control [de propietario](glossary.md).
+Los globos tienen un icono, un título y texto del cuerpo, que son opcionales. A diferencia de la información sobre herramientas y la información sobre herramientas, los globos también tienen una cola que identifica su origen. Normalmente, el origen es un control, si es así, se conoce como [control de propietario](glossary.md).
 
-Aunque los globos informan a los usuarios de problemas no críticos, no evitan problemas, aunque el control de propietario podría. La interfaz de usuario (UI) propietaria debe controlar los problemas no controladas cuando los usuarios intenten confirmar la acción.
+Aunque los globos informan a los usuarios de problemas no críticos, no evitan problemas, aunque el control de propietario podría. La interfaz de usuario (UI) del propietario debe controlar los problemas no controladas cuando los usuarios intenten confirmar la acción.
 
-Los globos se usan normalmente con cuadros de texto o controles que usan cuadros de texto para cambiar valores, como cuadros combinados, vistas de lista y vistas de árbol. Otros tipos de controles están suficientemente restringidos y no necesitan los globos de comentarios adicionales que se ofrecen. Además, si hay un problema con otros tipos de controles, a menudo implica incoherencia entre varios controles, situación para la que los globos no son adecuados. Solo los controles de entrada de texto están sin restricciones y son un origen común de [errores de punto único.](glossary.md)
+Los globos se usan normalmente con cuadros de texto o controles que usan cuadros de texto para cambiar valores, como cuadros combinados, vistas de lista y vistas de árbol. Otros tipos de controles están suficientemente restringidos y no necesitan los globos de comentarios adicionales. Además, si hay un problema con otros tipos de controles, a menudo implica incoherencia entre varios controles, situación para la que los globos no son adecuados. Solo los controles de entrada de texto no están entrenados y son un origen común de [errores de un solo punto.](glossary.md)
 
-Una notificación es un tipo específico de globo mostrado por un icono [de área de](winenv-notification.md) notificación.
+Una notificación es un tipo específico de globo que muestra un icono [de área de](winenv-notification.md) notificación.
 
 **Nota:** Las directrices relacionadas [con las notificaciones,](mess-notif.md)la información sobre herramientas y la información sobre [herramientas,](ctrl-tooltips-and-infotips.md)y los mensajes de [error](mess-error.md) se presentan en artículos independientes.
 
@@ -36,34 +36,34 @@ Una notificación es un tipo específico de globo mostrado por un icono [de áre
 
 Para decidirte, intenta responder a estas preguntas:
 
--   **¿Describe la información un problema o una condición especial?** Si no es así, usa otro control. No use globos para mostrar información complementaria para un control. considere la posibilidad [de usar texto estático,](glossary.md)[información sobre información,](glossary.md) [divulgación progresiva](glossary.md)o avisos en su lugar.
--   **¿Se puede detectar el problema o la condición especial inmediatamente** en la entrada o cuando el control de propietario pierde el foco de entrada? Si no es así, use un mensaje de error que se muestra en un cuadro [de diálogo o](glossary.md) mensaje de [tarea](glossary.md).
+-   **¿Describe la información un problema o una condición especial?** Si no es así, usa otro control. No use globos para mostrar información complementaria para un control; considere la posibilidad [de usar texto estático](glossary.md), información sobre[información,](glossary.md) [divulgación progresiva](glossary.md)o avisos en su lugar.
+-   **¿Se puede detectar el problema o la condición especial inmediatamente** en la entrada o cuando el control de propietario pierde el foco de entrada? Si no es así, use un mensaje de error que se muestra en un cuadro [de diálogo de tarea](glossary.md) o [mensaje](glossary.md).
 -   **En el caso de los problemas, ¿el problema es crítico?** Si es así, use un mensaje de error que se muestra en un cuadro de diálogo o mensaje de tarea. Estos mensajes de error requieren interacción (que es adecuada para errores críticos), mientras que los globos no.
--   **En el caso de las condiciones especiales, ¿la condición es válida pero es probable que no sea intencionado?** Si es así, los globos son adecuados. En el caso de las condiciones no válidas, es mejor evitarlas en primer lugar. En el caso de las condiciones previstas probablemente, no es necesario hacer nada.
+-   **En el caso de las condiciones especiales, ¿la condición es válida pero probablemente no sea intencionado?** Si es así, los globos son adecuados. En el caso de condiciones no válidas, es mejor evitarlas en primer lugar. En el caso de las condiciones previstas probables, no es necesario hacer nada.
 -   **¿Se puede expresar el problema o la condición especial de forma concisa?** Si no es así, usa otro control. Los globos no pueden tener explicaciones detalladas ni proporcionar información complementaria.
--   **¿Describe la información el control sobre el que se mantiene el puntero?** Si es así, use una sugerencia en su lugar, a menos que los usuarios necesiten interactuar con el mensaje.
--   **¿La información está relacionada con la actividad actual del usuario?** Si no es así, considere la posibilidad de [usar una notificación](mess-notif.md) o un cuadro de diálogo en [su](win-dialog-box.md) lugar. Es probable que los usuarios pasen por alto los globos fuera de la actividad actual y, de forma predeterminada, los globos tienen un tiempo de espera de 10 segundos.
--   **¿La información procede de un origen único y específico?** Si un problema o condición tiene varios orígenes o ningún origen específico, use un mensaje local [o](glossary.md) un cuadro de diálogo en su lugar.
+-   **¿Describe la información el control sobre el que se mantiene el puntero actualmente?** Si es así, use una sugerencia en su lugar, a menos que los usuarios necesiten interactuar con el mensaje.
+-   **¿La información está relacionada con la actividad actual del usuario?** Si no es así, considere la posibilidad de [usar una notificación](mess-notif.md) o un cuadro de [diálogo](win-dialog-box.md) en su lugar. Es probable que los usuarios pasen por alto los globos fuera de la actividad actual y que, de forma predeterminada, los globos se quedán fuera del tiempo de espera después de 10 segundos.
+-   **¿La información procede de un origen único y específico?** Si un problema o una condición tiene varios orígenes o ningún origen específico, use un mensaje local o [un](glossary.md) cuadro de diálogo en su lugar.
 
 **Incorrecto:** ![ captura de pantalla de un globo: inicio de sesión no correcto](images/ctrl-balloons-image2.png)
 
-En este ejemplo, el problema podría ser con el nombre de usuario o la contraseña, pero notificar el problema con un globo sugiere visualmente que solo la contraseña es el problema. Por lo tanto, los comentarios de escribir un nombre de usuario incorrecto son confusos.
+En este ejemplo, el problema podría ser con el nombre de usuario o la contraseña, pero notificar el problema con un globo sugiere visualmente que solo la contraseña es el problema. Por lo tanto, los comentarios de escribir un nombre de usuario incorrecto son engañosos.
 
-Los globos son una alternativa a información sobre información, cuadros de diálogo y mensajes en su lugar. A diferencia de la información sobre herramientas y la información sobre herramientas:
+Los globos son una alternativa a la información sobre información, los cuadros de diálogo y los mensajes locales. A diferencia de la información sobre herramientas y la información sobre herramientas:
 
--   Los globos se pueden mostrar independientemente de la ubicación actual del puntero, por lo que tienen un final que indica su origen.
+-   Los globos se pueden mostrar independientemente de la ubicación actual del puntero, por lo que tienen una cola que indica su origen.
 -   Los globos tienen un título, texto del cuerpo y un icono.
--   Los globos pueden ser interactivos, mientras que es imposible hacer clic en una sugerencia.
+-   Los globos pueden ser interactivos, mientras que es imposible hacer clic en una propina.
 
 A diferencia de los cuadros de diálogo modales:
 
 -   Los globos no roban el foco de entrada ni requieren interacción.
 -   Los globos identifican un origen único y específico. Los diálogos modales pueden tener varios orígenes o ningún origen específico.
 
-A diferencia de los mensajes en su lugar:
+A diferencia de los mensajes en posición:
 
 -   Los globos son más evidentes.
--   Los globos no requieren espacio de pantalla disponible ni el diseño dinámico necesario para mostrar los mensajes en su lugar.
+-   Los globos no requieren espacio disponible en la pantalla ni el diseño dinámico necesario para mostrar los mensajes locales.
 -   Los globos se quitan automáticamente después de un tiempo de espera.
 
 **Patrones de uso**
@@ -74,8 +74,8 @@ Los globos tienen estos patrones de uso:
 
 |   Uso                                                                                                                                                            |    Ejemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Problema de entrada** Un problema de entrada de usuario no crítico procedente de un control de propietario único, normalmente un cuadro de texto. <br/>                                               | El uso de globos para mensajes de error no roba el foco de entrada, pero sigue siendo muy perceptible si el control de propietario tiene el foco de entrada. Para corregir el problema, es posible que el usuario tenga que cambiar o volver a escribir la entrada; pero si el control de propietario omite la entrada incorrecta, es posible que el usuario no tenga que realizar ningún cambio. dado que el problema no es crítico, no [es necesario ningún icono](vis-std-icons.md) de error. <br/> ![Captura de pantalla que muestra un globo que indica un carácter incorrecto.](images/ctrl-balloons-image3.png)<br/> Globo que se usa para notificar un problema de entrada de usuario no crítico.<br/>                                                                                                  |
-| **Condición especial** El control de propietario está en un estado que afecta a la entrada. Es probable que este estado no sea intencionado y el usuario no se dé cuenta de que la entrada se ve afectada. <br/> | use globos para evitar frustraciones mediante la alerta a los usuarios de condiciones especiales en cuanto se cumplen (por ejemplo, superando el tamaño máximo de entrada o estableciendo límites de bloqueo por error). es importante proporcionar estos comentarios sin robar el foco de entrada ni forzar la interacción porque estas condiciones pueden ser intencionadas. estos globos son especialmente importantes para los cuadros de contraseña y anclado, donde los usuarios trabajan con comentarios mínimos. estos globos tienen un [icono de advertencia](vis-std-icons.md). <br/> ![Captura de pantalla que muestra globos que indican que El bloqueo de límites está en y se introduce un carácter incorrecto.](images/ctrl-balloons-image4.png)<br/> Globo que se usa para notificar una condición especial.<br/> |
+| **Problema de entrada** Un problema de entrada de usuario no crítico procedente de un control de propietario único, normalmente un cuadro de texto. <br/>                                               | El uso de globos para los mensajes de error no roba el foco de entrada, pero sigue siendo muy evidente si el control de propietario tiene el foco de entrada. para corregir el problema, es posible que el usuario tenga que cambiar o volver a escribir la entrada; pero si el control de propietario omite la entrada incorrecta, es posible que el usuario no tenga que realizar ningún cambio. dado que el problema no es crítico, no [es necesario ningún icono](vis-std-icons.md) de error. <br/> ![Captura de pantalla que muestra un globo que indica un carácter incorrecto.](images/ctrl-balloons-image3.png)<br/> Globo que se usa para notificar un problema de entrada de usuario no crítico.<br/>                                                                                                  |
+| **Condición especial** El control de propietario está en un estado que afecta a la entrada. Es probable que este estado no sea intencionado y que el usuario no se dé cuenta de que la entrada se ve afectada. <br/> | use globos para evitar frustraciones al avisar a los usuarios de condiciones especiales en cuanto se cumplen (por ejemplo, superar el tamaño máximo de entrada o establecer límites de bloqueo por error). es importante proporcionar estos comentarios sin robar el foco de entrada ni forzar la interacción porque estas condiciones pueden ser intencionadas. estos globos son especialmente importantes para los cuadros de contraseña y anclado, donde los usuarios trabajan con comentarios mínimos. estos globos tienen un [icono de advertencia](vis-std-icons.md). <br/> ![Captura de pantalla que muestra globos que indican que El bloqueo de límites está en y se introduce un carácter incorrecto.](images/ctrl-balloons-image4.png)<br/> Globo que se usa para notificar una condición especial.<br/> |
 
 
 
@@ -85,26 +85,26 @@ Los globos tienen estos patrones de uso:
 
 **Cuándo se debe mostrar**
 
--   **Muestre el globo en cuanto se detecte el problema o la condición especial, aunque se repita, sin ningún retraso apreciable.**
-    -   Para problemas relacionados con caracteres individuales o el tamaño máximo de entrada, muestre el globo inmediatamente en la entrada.
-    -   En el caso de problemas relacionados con el valor de entrada (incluida la necesidad de un valor no en blanco), muestre el globo cuando el control de propietario pierda el foco de entrada. De lo contrario, mostrar globos mientras los usuarios escriben entradas potencialmente válidas puede distraer y ser molesto.
+-   **Muestre el globo en cuanto se detecte el problema o la condición especial, incluso si se repite, sin ningún retraso apreciable.**
+    -   Para problemas que implican caracteres individuales o el tamaño máximo de entrada, muestre el globo inmediatamente en la entrada.
+    -   Para problemas relacionados con el valor de entrada (incluida la necesidad de un valor no en blanco), muestre el globo cuando el control de propietario pierda el foco de entrada. De lo contrario, mostrar globos mientras los usuarios escriben entradas potencialmente válidas puede ser molesto y molesto.
 -   **Mostrar solo un globo a la vez.** Mostrar varios globos puede ser abrumador. Si un solo evento produce varios problemas, presente todos los problemas a la vez o informe solo del problema más importante.
 
 **Incorrecto:** ![ captura de pantalla de dos globos que apuntan a un cuadro](images/ctrl-balloons-image5.png)
 
 En este ejemplo, dos problemas se presentan incorrectamente al mismo tiempo.
 
-**Cuánto tiempo se debe mostrar**
+**Cuánto tiempo se va a mostrar**
 
 -   **Quite un globo cuando:**
     -   El problema se resuelve o se quita una condición especial.
     -   El usuario escribe datos válidos (para problemas de entrada).
-    -   Se ha pasado el tiempo de espera del globo. De forma predeterminada, los globos se quitan después de 10 segundos, aunque los usuarios pueden cambiarlo modificando el parámetro del sistema SPI \_ MESSAGEDURATION.
+    -   Se ha pasado el tiempo de espera del globo. De forma predeterminada, los globos se quitan después de 10 segundos, aunque los usuarios pueden cambiarlo modificando el parámetro del sistema \_ SPI MESSAGEDURATION.
 -   **Quite el tiempo de espera si los usuarios no pueden continuar hasta que se resuelva el problema. Desarrolladores:** en Win32, puede establecer la hora de presentación con el mensaje \_ SETDELAYTIME de TTM.
 
 **Cómo mostrar**
 
--   **Mostrar globos debajo de su control de propietario.** Esto permite a los usuarios ver el contexto, incluidos el control de propietario y su etiqueta. Microsoft Windows ajusta automáticamente las posiciones del globo para que estén completamente en pantalla. El comportamiento predeterminado es mostrar un globo encima de su control de propietario, como se hace con las notificaciones.
+-   **Mostrar globos debajo de su control de propietario.** Esto permite a los usuarios ver el contexto, incluido el control de propietario y su etiqueta. Microsoft Windows automáticamente las posiciones del globo para que estén completamente en pantalla. El comportamiento predeterminado es mostrar un globo encima de su control de propietario, como se hace con las notificaciones.
 
 **Correcto:** ![ captura de pantalla de un globo que se muestra debajo de su control](images/ctrl-balloons-image6.png)
 

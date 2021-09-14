@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 57e2eb96a36f0902dccbba052080fa27b5e61f96b852bf44bd1a238d59010145
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dc4fc63e63adbc42b75ae9a24d1c47e7d985c9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361421"
 ---
 # <a name="cbasecontrolvideoget_destinationheight-method"></a>Método CBaseControlVideo.get \_ DestinationHeight
 
@@ -58,7 +58,7 @@ Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno d
 | Código devuelto                                                                                           | Descripción                                                                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | <dl> <dt>**E \_ FAIL**</dt> </dl>                | Error.<br/>                                                              |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | Argumento de puntero **NULL.**<br/>                                            |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | **Argumento de** puntero NULL.<br/>                                            |
 | <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | No se puede realizar la operación porque los pines no están conectados.<br/> |
 | <dl> <dt>**NOERROR**</dt> </dl>                | Correcto.<br/>                                                              |
 
@@ -66,7 +66,7 @@ Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno d
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro implementa el [**método IBasicVideo::get \_ DestinationHeight.**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_destinationheight)
 
@@ -83,7 +83,7 @@ Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

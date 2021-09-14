@@ -4,12 +4,12 @@ ms.assetid: 12a6fe6d-5b37-4fcf-bd04-0a22d84ba323
 title: Instalación y registro de un archivo DLL de filtro de contraseña
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ba3cb74571748c38bdfe5a80282e640c13595806c6b7b87b33d9608e420576d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cb2e9f93630dc6bdaa5dbcc7e665a6b1cebff0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117969323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374875"
 ---
 # <a name="installing-and-registering-a-password-filter-dll"></a>Instalación y registro de un archivo DLL de filtro de contraseña
 
@@ -30,17 +30,17 @@ Realice los pasos siguientes para instalar el filtro de contraseña. Puede reali
                 Lsa
     ```
 
-    Si el **valor paquetes de** notificación *de tipo REG_MULTI_SZ* existe, agregue el nombre del archivo DLL a los datos de valor existentes. No sobrescriba los valores existentes y no incluya la .dll existente.
+    Si existe **el valor Paquetes** de *notificación REG_MULTI_SZ* tipo , agregue el nombre del archivo DLL a los datos de valor existentes. No sobrescriba los valores existentes y no incluya la .dll existente.
 
-    Si el **valor Paquetes** de notificación no existe, cándalo, asíézcale el tipo REG_MULTI_SZ y, a continuación, especifique el nombre del archivo DLL para los datos de valor.  No incluya la .dll extensión.
+    Si el **valor Paquetes** de notificación no existe, cándalo, asíézcale el tipo REG_MULTI_SZ y, *a* continuación, especifique el nombre del archivo DLL para los datos de valor. No incluya la .dll extensión.
 
     El **valor Paquetes de** notificación puede agregar varios paquetes.
 
 3.  Busque la configuración de complejidad de la contraseña.
 
-    En Panel de control, haga clic en Rendimiento **y** mantenimiento , herramientas **administrativas,** haga doble clic en Directiva de seguridad **local,** haga doble clic en Directivas de cuentay, a continuación, haga doble clic en Directiva de **contraseña.**
+    En Panel de control, haga clic en Rendimiento y mantenimiento **,** herramientas administrativas **,** haga doble clic en Directiva de seguridad **local,** haga doble clic en Directivas de cuentay, a continuación, haga doble clic en Directiva de **contraseñas.**
 
-4.  Para aplicar el filtro de contraseñas Windows predeterminado y el filtro de contraseña personalizado, asegúrese de que la configuración de directiva Contraseñas debe cumplir **los** requisitos de complejidad está habilitada. De lo contrario, deshabilite **la configuración de directiva Contraseñas debe cumplir los requisitos** de complejidad.
+4.  Para aplicar el filtro predeterminado Windows contraseña y el filtro de contraseña personalizado, asegúrese de que la configuración de directiva Contraseñas debe cumplir **los** requisitos de complejidad está habilitada. De lo contrario, deshabilite **la configuración de directiva Contraseñas debe cumplir los requisitos** de complejidad.
 
 ## <a name="related-topics"></a>Temas relacionados
 

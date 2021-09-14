@@ -4,12 +4,12 @@ ms.assetid: 931fc69a-1f7a-492c-8158-0691cd2fe57a
 title: Valores de intervalo Unicode de gestos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1f96c1f59ea9e53d63999c01db73c45080f205bccf043e26463563b0f1f6af3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b66b9b4ee511e9eeadd79e0dff2675391ceee6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118449239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361005"
 ---
 # <a name="unicode-range-values-of-gestures"></a>Valores de intervalo Unicode de gestos
 
@@ -35,13 +35,13 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 | ESTRELLA \_ DE GESTO<br/>              | 0xf004<br/>   |
 | COMPROBACIÓN DE \_ GESTOS<br/>             | 0xf005<br/>   |
 | \_CURLICUE DE GESTO<br/>          | 0xf010<br/>   |
-| GESTO \_ DOBLE \_ CURLICUE<br/>  | 0xf011<br/>   |
+| GESTO \_ DOUBLE \_ CURLICUE<br/>  | 0xf011<br/>   |
 | CÍRCULO DE \_ GESTOS<br/>            | 0xf020<br/>   |
 | CÍRCULO \_ DOBLE DE \_ GESTO<br/>    | 0xf021<br/>   |
 | GESTO \_ SEMICIRCLE \_ LEFT<br/>  | 0xf028<br/>   |
 | GESTO \_ SEMICIRCLE \_ RIGHT<br/> | 0xf029<br/>   |
 | BOTÓN \_ DE CONTENIDO ADICIONAL DE \_ GESTO<br/>       | 0xf030<br/>   |
-| BOTÓN \_ DE CONTENIDO ADICIONAL DE \_ GESTOS HACIA ABAJO<br/>     | 0xf031<br/>   |
+| BOTÓN \_ DE CONTENIDO ADICIONAL GESTUAL HACIA \_ ABAJO<br/>     | 0xf031<br/>   |
 | BOTÓN \_ DE CONTENIDO ADICIONAL DE GESTO A LA \_ IZQUIERDA<br/>     | 0xf032<br/>   |
 | BOTÓN \_ DE CONTENIDO ADICIONAL DE GESTO A LA \_ DERECHA<br/>    | 0xf033<br/>   |
 | FLECHA \_ DE GESTO HACIA \_ ARRIBA<br/>         | 0xf038<br/>   |
@@ -53,7 +53,7 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 | GESTO \_ A LA IZQUIERDA<br/>              | 0xf05a<br/>   |
 | GESTO \_ A LA DERECHA<br/>             | 0xf05b<br/>   |
 | GESTO \_ HACIA \_ ABAJO<br/>          | 0xf060<br/>   |
-| GESTO \_ HACIA \_ ARRIBA<br/>          | 0xf061<br/>   |
+| GESTO \_ HACIA ABAJO HACIA \_ ARRIBA<br/>          | 0xf061<br/>   |
 | GESTO \_ A LA \_ DERECHA<br/>       | 0xf062<br/>   |
 | GESTO \_ A LA DERECHA \_ IZQUIERDA<br/>       | 0xf063<br/>   |
 | GESTO \_ HACIA ARRIBA A LA IZQUIERDA \_ \_ LARGO<br/>    | 0xf064<br/>   |
@@ -82,7 +82,7 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 
 | Nombre del gesto                             | Valor de intervalo Unicode |
 |------------------------------------------|---------------------|
-| INFINITO \_ GESTUAL<br/>             | 0xf006<br/>   |
+| INFINITO DE \_ GESTOS<br/>             | 0xf006<br/>   |
 | GESTO \_ CRUZADO<br/>                | 0xf007<br/>   |
 | PÁRRAFO DE \_ GESTO<br/>            | 0xf008<br/>   |
 | SECCIÓN \_ GESTO<br/>              | 0xf009<br/>   |
@@ -110,12 +110,12 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 | GESTO \_ FLECHA IZQUIERDA HACIA \_ \_ ABAJO<br/>    | 0xf045<br/>   |
 | GESTO \_ FLECHA DERECHA HACIA \_ \_ ARRIBA<br/>     | 0xf046<br/>   |
 | GESTO \_ FLECHA DERECHA HACIA \_ \_ ABAJO<br/>   | 0xf047<br/>   |
-| GESTO \_ DIAGONAL A LA \_ IZQUIERDA<br/>     | 0xf05c<br/>   |
+| GESTO \_ DIAGONAL \_ LEFTUP<br/>     | 0xf05c<br/>   |
 | GESTO \_ DIAGONAL A LA \_ DERECHA<br/>    | 0xf05d<br/>   |
 | GESTO \_ DIAGONAL A LA \_ IZQUIERDA<br/>   | 0xf05e<br/>   |
 | DIAGONAL \_ DE GESTO A LA \_ DERECHA<br/>  | 0xf05f<br/>   |
 | LETRA \_ DE GESTO \_ A<br/>            | 0xf080<br/>   |
-| LETRA \_ DE GESTO \_ B<br/>            | 0xf081<br/>   |
+| GESTO \_ LETRA \_ B<br/>            | 0xf081<br/>   |
 | LETRA \_ DE GESTO \_ C<br/>            | 0xf082<br/>   |
 | LETRA \_ \_ GESTUAL D<br/>            | 0xf083<br/>   |
 | LETRA \_ DE GESTO \_ E<br/>            | 0xf084<br/>   |
@@ -132,21 +132,21 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 | LETRA \_ DE GESTO \_ P<br/>            | 0xf08f<br/>   |
 | LETRA \_ \_ GESTUAL Q<br/>            | 0xf090<br/>   |
 | LETRA \_ \_ GESTUAL R<br/>            | 0xf091<br/>   |
-| LETRAS \_ \_ GESTUALES S<br/>            | 0xf092<br/>   |
+| LETRAS \_ DE \_ GESTOS S<br/>            | 0xf092<br/>   |
 | LETRA \_ DE GESTO \_ T<br/>            | 0xf093<br/>   |
 | LETRA \_ DE GESTO \_ U<br/>            | 0xf094<br/>   |
 | LETRA \_ \_ GESTUAL V<br/>            | 0xf095<br/>   |
-| LETRA \_ \_ GESTUAL W<br/>            | 0xf096<br/>   |
-| LETRA \_ DE GESTO \_ X<br/>            | 0xf097<br/>   |
+| LETRA \_ DE GESTO \_ W<br/>            | 0xf096<br/>   |
+| LETRA \_ \_ GESTUAL X<br/>            | 0xf097<br/>   |
 | LETRA \_ DE GESTO \_ Y<br/>            | 0xf098<br/>   |
 | LETRA \_ Z DE \_ GESTO<br/>            | 0xf099<br/>   |
 | DÍGITO \_ DE \_ GESTO 0<br/>             | 0xf09a<br/>   |
 | DÍGITO \_ DE \_ GESTO 1<br/>             | 0xf09b<br/>   |
-| GESTO \_ DÍGITO \_ 2<br/>             | 0xf09c<br/>   |
+| DÍGITO \_ DE \_ GESTO 2<br/>             | 0xf09c<br/>   |
 | GESTO \_ DÍGITO \_ 3<br/>             | 0xf09d<br/>   |
 | DÍGITO \_ DE \_ GESTO 4<br/>             | 0xf09e<br/>   |
 | DÍGITO \_ DE \_ GESTO 5<br/>             | 0xf09f<br/>   |
-| DÍGITO \_ DE \_ GESTO 6<br/>             | 0xf0a0<br/>   |
+| GESTO \_ DÍGITO \_ 6<br/>             | 0xf0a0<br/>   |
 | GESTO \_ DÍGITO \_ 7<br/>             | 0xf0a1<br/>   |
 | GESTO \_ DÍGITO \_ 8<br/>             | 0xf0a2<br/>   |
 | GESTO \_ DÍGITO \_ 9<br/>             | 0xf0a3<br/>   |
@@ -172,7 +172,7 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 | LLAVE \_ DE GESTO A LA \_ IZQUIERDA<br/>          | 0xf0ea<br/>   |
 | LLAVE \_ DE GESTO A LA \_ DERECHA<br/>         | 0xf0eb<br/>   |
 | GESTO \_ TRIPLE \_ TAP<br/>          | 0xf0f2<br/>   |
-| PULSACIÓN \_ DE \_ CUÁDUAL DE GESTO<br/>            | 0xf0f3<br/>   |
+| PULSACIÓN \_ DE \_ CUÁDUAL GESTO<br/>            | 0xf0f3<br/>   |
 
 
 

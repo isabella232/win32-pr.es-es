@@ -12,12 +12,12 @@ keywords:
 - Complementos de interfaz de usuario, Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2270acdf5472d502eba08ce9fe54b2864ddb7525895d6909bf1b3a5e3eba7d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a83bda7cb265d0c2e039ada6d9d827c6da3faf63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134978"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359283"
 ---
 # <a name="modifying-wizard-generated-code"></a>Modificar código generado por el asistente
 

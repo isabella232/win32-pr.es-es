@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4a53ed8c6cfd285927ad3a0be83ce219ece8a203e0e062995c2abb1725042f0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 976a5f3d7282853b5267b0b1640a7a95120efbef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119716985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241551"
 ---
 # <a name="wm_xbuttondown-message"></a>Mensaje \_ XBUTTONDOWN de WM
 
@@ -59,7 +59,7 @@ La palabra de orden bajo indica si varias claves virtuales están abajo. Puede s
 
  
 
-La palabra de orden superior indica en qué botón se hizo clic. Puede ser uno de los siguientes valores.
+La palabra de orden superior indica qué botón se hizo clic. Puede ser uno de los siguientes valores.
 
 
 
@@ -77,9 +77,9 @@ La palabra de orden superior indica en qué botón se hizo clic. Puede ser uno d
 *lParam* 
 </dt> <dd>
 
-La palabra de orden bajo especifica la coordenada X del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
+La palabra de orden bajo especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
-La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
+La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
 </dd> </dl>
 
@@ -87,9 +87,9 @@ La palabra de orden superior especifica la coordenada y del cursor. La coordenad
 
 Si una aplicación procesa este mensaje, debe devolver **TRUE**. Para obtener más información sobre cómo procesar el valor devuelto, vea la sección Comentarios.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use el código siguiente para obtener la información del *parámetro wParam:*
+Use el código siguiente para obtener la información en el *parámetro wParam:*
 
 
 ```
@@ -109,14 +109,14 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en orden  alto **corto** (ambos representan valores firmados porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) a partir del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
+Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en el  orden corto de orden superior **(ambos** representan valores con signo porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
 
 > [!IMPORTANT]
-> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** e **HIWORD** tratan las coordenadas como cantidades sin signo.
+> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
-A diferencia de los mensajes [**WM \_ LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \_ MBUTTONDOWN**](wm-mbuttondown.md)y [**WM \_ RBUTTONDOWN,**](wm-rbuttondown.md) una aplicación debe devolver **TRUE** de este mensaje si lo procesa. Esto permite que el software que simula este mensaje en sistemas de Windows anteriores Windows 2000 determine si el procedimiento de ventana procesó el mensaje o llamó a [**DefWindowProc para**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) procesarlo.
+A diferencia de los mensajes [**WM \_ LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \_ MBUTTONDOWN**](wm-mbuttondown.md)y [**WM \_ RBUTTONDOWN,**](wm-rbuttondown.md) una aplicación debe devolver **TRUE** a partir de este mensaje si lo procesa. Esto permite que el software que simula este mensaje en sistemas de Windows anteriores a Windows 2000 determine si el procedimiento de ventana procesó el mensaje o llamó a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para procesarlo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -173,7 +173,7 @@ A diferencia de los mensajes [**WM \_ LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

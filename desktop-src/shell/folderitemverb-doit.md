@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a30c29e30ca3cfb63cd2080476d84e21bee7495c8e2f7fa99efadfaeeb8038d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0703b9403dfe9ff6600de68aaa710cd5a55c225a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118050027"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363095"
 ---
 # <a name="folderitemverbdoit-method"></a>Método FolderItemVerb.DoIt
 
@@ -43,7 +43,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa DoIt** para ejecutar el primer verbo de la colección de verbos a los que responde la carpeta Program del usuario. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa DoIt** para ejecutar el primer verbo de la colección de verbos a los que responde la carpeta Program del usuario. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -138,12 +138,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

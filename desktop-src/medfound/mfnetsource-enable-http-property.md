@@ -4,12 +4,12 @@ ms.assetid: dcc4db5c-0274-4a8a-89a4-66cda62e1520
 title: MFNETSOURCE_ENABLE_HTTP propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09d033594e223b8219f168e86d82ef02012bfafd4be9d758a438d042356735f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 004868c92962702b774a8f6c0a9b75708c5727b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117874771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363854"
 ---
 # <a name="mfnetsource_enable_http-property"></a>Propiedad HTTP MFNETSOURCE \_ ENABLE \_
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La constante **MFNETSOURCE \_ ENABLE \_ HTTP** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
@@ -41,11 +41,11 @@ Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1dede59d2c52f20050a490e6ded1389e63884e598868e9736195280e3269a72
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05d4de69a753811537f60ae8a3244cfaf012f60d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241892"
 ---
 # <a name="externalonsendmessagecomplete-event"></a>Evento External.OnSendMessageComplete
 
@@ -65,7 +65,7 @@ La misma cadena que se pasó en el parámetro **Param** de **sendMessage**.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método sendMessage** llama [a IWMPContentPartner::SendMessage](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-sendmessage), que devuelve de forma asincrónica. Es decir, devuelve antes de que la tienda en línea termine de procesar el mensaje. Cuando el almacén en línea termina de procesar el mensaje, llama a [IWMPContentPartnerCallback::SendMessageComplete](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartnercallback-sendmessagecomplete), que a su vez llama al controlador de eventos **OnSendMessageComplete del** script.
 
@@ -77,7 +77,7 @@ Ninguno de los parámetros (*Msg*, *Param*, *Result*) del controlador de eventos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/>                                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

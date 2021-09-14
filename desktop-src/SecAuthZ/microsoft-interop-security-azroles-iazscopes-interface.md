@@ -23,18 +23,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 8c81db0964820a7c5034ec4cb5417a58396bdc9a361f1d3a403cfaf80abbf7d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44fffcd99c0e48c0b6cda19fd76ad7bbc12929ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118912553"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361843"
 ---
 # <a name="microsoftinteropsecurityazrolesiazscopes-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzScopes
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzScopes** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzScopes** tiene estos tipos de miembros:
 
@@ -61,7 +61,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzScopes** tiene estas propied
 
 
 
-| Propiedad                                                          | Tipo de acceso          | Descripción                                                       |
+| Propiedad.                                                          | Tipo de acceso          | Descripción                                                       |
 |:------------------------------------------------------------------|:---------------------|:------------------------------------------------------------------|
 | **Microsoft.Interop.Security.Azroles.IAzScopes.Count**<br/> | Solo lectura<br/> | [**Propiedad Count de IAzScopes**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get_count)<br/> |
 | **Microsoft.Interop.Security.Azroles.IAzScopes.Item**<br/>  | Solo lectura<br/> | [**Propiedad Item de IAzScopes**](/windows/desktop/api/Azroles/nf-azroles-iazscopes-get_item)<br/>   |

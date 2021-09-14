@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e66efe81f8b45c2339dc511d283b2f349360061b580b60308c3e69b3e6c0b0cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c97f9b17fd148a0686a96fb46f77694a2b78b21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118010019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361470"
 ---
 # <a name="changesecuritypermissionsex-method-of-the-cim_datafile-class"></a>Método ChangeSecurityPermissionsEx de la clase \_ DataFile de CIM
 
 El **método ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo de datos lógico especificado en la ruta de acceso del objeto (este método es una versión extendida del [**método ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-cim-datafile.md) Si el archivo lógico es realmente un directorio, este método actuará de forma recursiva, cambiando los permisos de seguridad para todos los archivos y subdirectorios que contiene el directorio.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -159,7 +159,7 @@ Correcto.
 
 2
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ Un parámetro no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI implementa el método **ChangeSecurityPermissionsEx** [**en CIM \_ DataFile.**](cim-datafile.md)
 
@@ -272,7 +272,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -282,7 +282,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

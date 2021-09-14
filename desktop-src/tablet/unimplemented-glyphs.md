@@ -4,12 +4,12 @@ ms.assetid: 4d504140-ff48-4a07-9bf7-a36913e44426
 title: Glifos sin implementar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8f3966ef2e4bec268bc4b45b65b6778abd434f4169ec1e2aa971703032f07ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90d479c6f3b486706b9e8d063ae2bc46daf5a0a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966714"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361004"
 ---
 # <a name="unimplemented-glyphs"></a>Glifos sin implementar
 
@@ -19,8 +19,8 @@ Para garantizar la *coherencia de los gestos usados* para *acciones comunes* ent
 
 -   La *acción* es el comportamiento semántico sugerido asociado al gesto.
 -   Para los gestos etiquetados como *Corregidos* en la tabla siguiente, se recomienda no cambiar el comportamiento semántico sugerido. Si una aplicación no necesita el comportamiento semántico especificado, se recomienda no volver a usar el gesto para otra acción o semántica.
--   No dude en asociar los comportamientos semánticos pertinentes a todos los demás gestos. Estos gestos se etiquetan como *específicos de la aplicación.* Para los gestos que tienen un comportamiento semántico sugerido, se recomienda usar el gesto para la semántica sugerida si existe la funcionalidad correspondiente en la aplicación.
--   El punto de acceso de un gesto es un punto distintivo en la geometría del gesto. El punto de acceso se puede usar para determinar dónde se realizó el gesto. La API de gestos permite determinar el punto de acceso para un gesto determinado. Sin embargo, no todos los gestos tienen un punto de acceso destacado distintivo específico. Para aquellos que no tienen un punto de acceso rápido distintivo específico, el punto inicial se notifica como punto de acceso rápido.
+-   No dude en asociar los comportamientos semánticos pertinentes a todos los demás gestos. Estos gestos se etiquetan como *específicos de la aplicación.* Para los gestos que tienen un comportamiento semántico sugerido, se recomienda usar el gesto para la semántica sugerida si la funcionalidad correspondiente existe en la aplicación.
+-   El punto de acceso de un gesto es un punto distintivo en la geometría del gesto. El punto de acceso se puede usar para determinar dónde se realizó el gesto. La API de gestos permite determinar el punto de acceso para un gesto determinado. Sin embargo, no todos los gestos tienen un punto de referencia distintivo específico. Para aquellos que no tienen un punto de acceso rápido distintivo específico, el punto inicial se notifica como punto de acceso rápido.
 
 > [!Note]  
 > Algunos de los gestos tienen un punto de acceso que resulta ser el punto de partida distintivo. Se distinguen en la tabla.
@@ -106,22 +106,22 @@ Para garantizar la *coherencia de los gestos usados* para *acciones comunes* ent
 | Plus<br/>                   | Pegar<br/>                               | Fijo<br/>                | Intersección de los trazos<br/>                              |
 | Doble up<br/>              | Desplazarse hacia arriba<br/>                           | Fijo<br/>                | Punto de partida<br/>                                           |
 | Doble bajada<br/>            | Desplazarse hacia abajo<br/>                         | Fijo<br/>                | Punto de partida<br/>                                           |
-| Doble a la izquierda<br/>            | Desplazarse a la izquierda<br/>                         | Fijo<br/>                | Punto de partida<br/>                                           |
+| Doble izquierda<br/>            | Desplazarse a la izquierda<br/>                         | Fijo<br/>                | Punto de partida<br/>                                           |
 | Doble derecha<br/>           | Desplazarse a la derecha<br/>                        | Fijo<br/>                | Punto de partida<br/>                                           |
-| Triple up<br/>              | Re Pág<br/>                             | Fijo<br/>                | Punto de partida<br/>                                           |
-| Triple down<br/>            | Página abajo<br/>                           | Fijo<br/>                | Punto de partida<br/>                                           |
+| Triple arriba<br/>              | Re Pág<br/>                             | Fijo<br/>                | Punto de partida<br/>                                           |
+| Triple bajada<br/>            | Página abajo<br/>                           | Fijo<br/>                | Punto de partida<br/>                                           |
 | Triple izquierda<br/>            | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Punto de partida<br/>                                           |
 | Triple derecha<br/>           | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Punto de partida<br/>                                           |
 | Entre corchetes<br/>           | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Midpoint<br/>                                                 |
-| Corchete debajo<br/>          | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Midpoint<br/>                                                 |
+| Entre corchetes<br/>          | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Midpoint<br/>                                                 |
 | Corchete a la izquierda<br/>           | Inicio de la selección<br/>                  | Fijo<br/>                | Midpoint<br/>                                                 |
 | Corchete a la derecha<br/>          | Final de la selección<br/>                    | Fijo<br/>                | Midpoint<br/>                                                 |
-| Llave sobre<br/>             | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Midpoint<br/>                                                 |
+| Llaves<br/>             | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Midpoint<br/>                                                 |
 | Llave debajo<br/>            | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | Midpoint<br/>                                                 |
 | Llave a la izquierda<br/>             | Inicio de la selección discontinua<br/>    | Fijo<br/>                | Midpoint<br/>                                                 |
-| Llave a la derecha<br/>            | Fin de la selección discontinua<br/>      | Fijo<br/>                | Midpoint<br/>                                                 |
-| Triple pulsación<br/>             | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | El punto inicial es distinguir el punto de acceso<br/>               |
-| Pulsar con una llave de 10000<br/>          | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | El punto inicial es distinguir el punto de acceso<br/>               |
+| Llave derecha<br/>            | Fin de la selección discontinua<br/>      | Fijo<br/>                | Midpoint<br/>                                                 |
+| Triple pulsación<br/>             | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | El punto inicial distingue el punto de acceso<br/>               |
+| Pulsación con forma de condón<br/>          | Específico de la aplicación<br/>                | Específico de la aplicación<br/> | El punto inicial distingue el punto de acceso<br/>               |
 
 
 

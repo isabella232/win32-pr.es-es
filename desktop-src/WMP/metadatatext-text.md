@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e88c6b32742b55e0e4d6988f603130100cedbb2992ce5d2b7600fc29fbbe0a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60aebaf8df3328d9263e7416f6fa2dfaae6e7826
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359056"
 ---
 # <a name="metadatatexttext"></a>MetadataText.text
 
 La **propiedad text** recupera el texto de metadatos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player*. *currentMedia*. **getItemInfoByType**( *name*, *language*, *index*). **text**
 
@@ -33,7 +33,7 @@ La **propiedad text** recupera el texto de metadatos.
 
 Esta propiedad es una cadena de solo **lectura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 

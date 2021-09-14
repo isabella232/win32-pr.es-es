@@ -4,16 +4,16 @@ ms.assetid: 6dc0a0ab-2cfa-4cc9-92a6-0d7554dd3397
 title: 'El modelo lógico: definición y planeamiento de la aplicación'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d19a493ebdacebac27edd291e747b5c42612f5fffd3ac7ea489f99b41de272b9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: acb09b0d377fcd9bf5e2319868f4006b5dbfce75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361621"
 ---
 # <a name="the-logical-model-application-definition-and-planning"></a>El modelo lógico: definición y planeamiento de la aplicación
 
-El segundo paso de un proceso de diseño de aplicaciones COM+ es dividir el modelo conceptual en los niveles lógicos de la arquitectura de tres niveles: el nivel de presentación *o* los servicios de usuario. el *nivel intermedio*, o servicios empresariales; y la *capa de datos*, o los servicios de datos. Si no está familiarizado con la arquitectura de tres niveles, consulte Using a Three-Tier Architecture Model (Uso de [un modelo de arquitectura de Three-Tier estándar).](using-a-three-tier-architecture-model.md)
+El segundo paso de un proceso de diseño de aplicaciones COM+ es dividir el modelo conceptual en los niveles lógicos de la arquitectura de tres niveles: el nivel de presentación *o* los servicios de usuario. el *nivel intermedio*, o servicios empresariales; y la *capa de datos*, o los servicios de datos. Si no está familiarizado con la arquitectura de tres niveles, consulte Uso de [un modelo de Three-Tier arquitectura.](using-a-three-tier-architecture-model.md)
 
 Para comenzar este proceso, busque nombres y verbos en el modelo conceptual. Los nombres a menudo se pueden traducir en objetos empresariales (clases) y los verbos asociados a ellos pueden traducirse en acciones (métodos de las clases). Aunque puede ser difícil definir todos los nombres como objetos empresariales, las omisións o los errores se volverán obvios cuando complete el modelo lógico.
 

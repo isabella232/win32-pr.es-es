@@ -4,12 +4,12 @@ ms.assetid: 437d36d1-dd6d-4405-8f35-c37fd04fa0f6
 title: From (cláusula)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e6231244df2a2ec8753950ccb1a7d046c3510eff6582215d0aa3d71ebc127e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37100a614ca7cc08cdf510f27e42b045acc1ec23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117863401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363214"
 ---
 # <a name="from-clause"></a>From (cláusula)
 
@@ -51,7 +51,7 @@ En el segundo de los ejemplos anteriores, la consulta tiene como destino un equi
 **Referencia**
 </dt> <dt>
 
-[Información general de la sintaxis de SQL búsqueda](-search-sql-ovwofsearchquery.md)
+[Información general sobre la sintaxis de SQL búsqueda](-search-sql-ovwofsearchquery.md)
 </dt> <dt>
 
 [Instrucción SELECT](-search-sql-select.md)

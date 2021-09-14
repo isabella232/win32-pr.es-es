@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f4e9f52675cee097512af1e8581eec297f7a7d6e0533370f7a0d7cc503c36dfe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 252b1cda9de09e1739e074bddd41fc23c4043433
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118252087"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361491"
 ---
 # <a name="jet_spacehintsgrbit-property"></a>JET_SPACEHINTS.grbit, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece las opciones de sugerencias de espacio.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

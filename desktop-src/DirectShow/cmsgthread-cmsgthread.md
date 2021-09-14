@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 602ad73bb18ceb75e27d26b9665946f1aaccb679f2811b2dd913409e8eb3651d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 08d76ebecd09d95b7ba0fca22b300c1e402f5302
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119585715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361366"
 ---
 # <a name="cmsgthreadcmsgthread-constructor"></a>Constructor CMsgThread.CMsgThread
 
@@ -40,7 +40,7 @@ CMsgThread();
 
 Este constructor no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La construcción de un objeto de subproceso de mensaje no crea automáticamente el subproceso. Debe llamar a la [**función miembro CMsgThread::CreateThread**](cmsgthread-createthread.md) para crear el subproceso.
 
@@ -55,7 +55,7 @@ La construcción de un objeto de subproceso de mensaje no crea automáticamente 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

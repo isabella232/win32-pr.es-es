@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d828435c43f57406e637312245b2bb3ae3e7c35510c9b2daf478a7fec39b599
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f55e6371f5c8d1e5dfcb17762340a82e8d921c17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119649215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241958"
 ---
 # <a name="externaldownloadmanager"></a>External.DownloadManager
 
@@ -39,7 +39,7 @@ window.external.DownloadManager
 
 Esta propiedad es un objeto **DownloadManager de** solo lectura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En Reproductor de Windows Media 10 o posterior, la propiedad **DownloadManager** y el objeto solo son accesibles desde los paneles de tareas del servicio de la tienda en línea. No se puede usar **DownloadManager desde otras** características en las que el **objeto** Externo está disponible, como HTMLView, vista del centro de información e información del álbum.
 
@@ -47,7 +47,7 @@ En Reproductor de Windows Media 10 o posterior, la propiedad **DownloadManager**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

@@ -4,12 +4,12 @@ ms.assetid: eca3f9b7-6051-4654-8016-a9c679519bc7
 title: MFASFSPLITTER_PACKET_BOUNDARY atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0904c6b5a002d6aa18361365946a176521674ea22f7a45cc042b89d844c4210d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 044fd3ed635dc7cb45db1cb9e5c480481b06cd31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119464065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363871"
 ---
 # <a name="mfasfsplitter_packet_boundary-attribute"></a>Atributo PACKET BOUNDARY de MFASFSPLITTER \_ \_
 
@@ -29,7 +29,7 @@ Este atributo se aplica si usa el divisor ASF para analizar los datos de ASF. Si
 
 Para los datos de ASF con tamaños fijos de paquete, este atributo no es necesario y un búfer puede abarcar varios paquetes.
 
-Tenga en cuenta que las implementaciones estándar de [**IMFMediaBuffer**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediabuffer) proporcionadas por Media Foundation no exponen [**LOSATTRIBUTE.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Para usar este atributo, debe proporcionar su propia implementación de **IMFMediaBuffer**; por ejemplo, encapsulando los búferes devueltos [**por MFCreateMemoryBuffer**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatememorybuffer).
+Tenga en cuenta que las implementaciones estándar de [**IMFMediaBuffer**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediabuffer) proporcionadas por Media Foundation no exponen [**LOSATTRIBUTE.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Para usar este atributo, debe proporcionar su propia implementación de **IMFMediaBuffer**; por ejemplo, ajustando los búferes devueltos [**por MFCreateMemoryBuffer**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatememorybuffer).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,11 +39,11 @@ Tenga en cuenta que las implementaciones estándar de [**IMFMediaBuffer**](/wind
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff27f8082d384c5c244951b5dd237f21cb60875c0912cf742c4f8b2d3ea1f018
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a09a92b718881670ed5625fd5aa94a23193cdd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118358698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375151"
 ---
 # <a name="glnormal3b-function"></a>Función glNormal3b
 
@@ -52,7 +52,7 @@ Especifica la coordenada x para el nuevo vector normal actual.
 *Ny* 
 </dt> <dd>
 
-Especifica la coordenada y para el nuevo vector normal actual.
+Especifica la coordenada Y para el nuevo vector normal actual.
 
 </dd> <dt>
 
@@ -67,13 +67,13 @@ Especifica la coordenada z para el nuevo vector normal actual.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La normal actual se establece en las coordenadas dadas cada vez que se llama a la **función glNormal3b.**
 
 Los argumentos byte, short o integer se convierten al formato de punto flotante mediante una asignación lineal que asigna el valor entero representable más positivo a 1,0 y el valor entero representable más negativo a -1,0.
 
-Las normales especificadas **con glNormal3b** no necesitan tener longitud de unidad. Si la normalización está habilitada, las normales especificadas **con glNormal3b** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ NORMALIZE. De forma predeterminada, la normalización está deshabilitada. Puede actualizar la normal actual en cualquier momento. En concreto, puede llamar a **glNormal3b entre** una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). Las siguientes funciones recuperan información relacionada **con glNormal3b**:
+Las normales especificadas **con glNormal3b** no necesitan tener longitud de unidad. Si la normalización está habilitada, las normales especificadas **con glNormal3b** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ NORMALIZE. De forma predeterminada, la normalización está deshabilitada. Puede actualizar la normal actual en cualquier momento. En concreto, puede llamar a **glNormal3b** entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). Las siguientes funciones recuperan información relacionada **con glNormal3b**:
 
 [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ NORMAL
 
@@ -83,7 +83,7 @@ Las normales especificadas **con glNormal3b** no necesitan tener longitud de uni
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -93,7 +93,7 @@ Las normales especificadas **con glNormal3b** no necesitan tener longitud de uni
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b30e776e-642c-4599-b83f-ef15bc0b23d2
-ms.openlocfilehash: f106b9860dcfa87cad9a69763731b47aeb4f9b0c7d4698f72dfc7210498e9234
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ce6fa0a71bb2ab995e510f06b4403c78bebcc60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117676626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361030"
 ---
 # <a name="shelluihelperaddfavorite-method"></a>Método ShellUIHelper.AddFavorite
 
@@ -60,7 +60,7 @@ Valor **Variant** que especifica el nombre del elemento.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertados en HTML y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML y Visual Basic.
 
 JScript:
 
@@ -111,9 +111,9 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

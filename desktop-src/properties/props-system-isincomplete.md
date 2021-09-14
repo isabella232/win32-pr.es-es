@@ -4,12 +4,12 @@ ms.assetid: 23cbbd16-fc32-40f2-bdea-25dac2f78191
 title: System.IsIncomplete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9a5f81251c571b1e98e9a08f2c0c0b8e1d431d860995e3f57cd46f533f293eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d12be8403cba397f514874e302ef34d53370538a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118231716"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363454"
 ---
 # <a name="systemisincomplete"></a>System.IsIncomplete
 
@@ -44,7 +44,7 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

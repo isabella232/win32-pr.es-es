@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8dd20ec3e22531a9425a2bbdde88ead1c4cf9ffe2501b7807adb019bcd6f6f7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b01732d1e2c653ced9eeb38ad74f33b61171ae1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119214345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361387"
 ---
 # <a name="cbaseinputpincbaseinputpin-destructor"></a>Destructor CBaseInputPin.~CBaseInputPin
 
@@ -47,7 +47,7 @@ Método destructor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

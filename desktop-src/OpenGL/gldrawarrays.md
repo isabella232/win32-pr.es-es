@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 349ba3407d84d66afd431d14c3fc97b151661f4f783a05734a55d9ba1dc313ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88b20cf3a3e3b2c96a8172f53f8126815efe16d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118616997"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362068"
 ---
 # <a name="gldrawarrays-function"></a>Función glDrawArrays
 
@@ -109,7 +109,7 @@ Aunque no se genera ningún error al especificar una matriz más de una vez dent
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

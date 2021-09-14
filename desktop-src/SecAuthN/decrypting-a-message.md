@@ -4,12 +4,12 @@ ms.assetid: 4858a43b-3084-4a03-8b6f-4a788cdb3dd5
 title: Descifrar un mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca3b01b37b82c3b8c2ca551e2b8113ff171668b2bb95b41fa9b8363e5b3ae4af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3598025564e607bf25241def4171eba84aa1dbbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361864"
 ---
 # <a name="decrypting-a-message"></a>Descifrar un mensaje
 

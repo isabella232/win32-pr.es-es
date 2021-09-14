@@ -4,12 +4,12 @@ ms.assetid: f0b2192d-4bb7-4ba2-8dd0-35a20183ea31
 title: DocumentSeparatorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b87b77258872975fc256eb204b4f799f583f5018faf14789294676dabae968b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38195c2d1c52e5c02d9da4844b5fa981866a61bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118971564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358965"
 ---
 # <a name="documentseparatorsheet"></a>DocumentSeparatorSheet
 

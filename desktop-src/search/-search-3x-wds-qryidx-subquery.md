@@ -4,12 +4,12 @@ ms.assetid: a92c774f-310b-4c40-be1c-0c2b0cac907b
 title: Argumento SUBQUERY (Windows search)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a53ff863f018fa3ed1310d704179e0b022d6d7853a9b91e9b5a038c846ce9b4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93b23028d0bddcc674714f51f8b31883052431bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117681059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363267"
 ---
 # <a name="subquery-argument-windows-search"></a>Argumento SUBQUERY (Windows search)
 

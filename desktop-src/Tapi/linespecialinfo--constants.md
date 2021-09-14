@@ -1,15 +1,15 @@
 ---
-description: Las constantes de marca de bits LINESPECIALINFO describen las señales de información especiales que la red puede usar para notificar varias operaciones de observación de red \_ y de informes.
+description: Las constantes de marca de bits LINESPECIALINFO describen las señales de información especiales que la red puede usar para notificar varias operaciones de informes y \_ observación de red.
 ms.assetid: b94f8a6f-b84d-4976-b4d4-10dee5a1a4d8
 title: LINESPECIALINFO_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1585146040db4392a271f5095420eee61f9873906443b58198676de806cb37f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78154757515ebd5bfa36778795c26ef9fdc96db1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374799"
 ---
 # <a name="linespecialinfo_-constants"></a>LineSPECIALINFO \_ (Constantes)
 
@@ -67,7 +67,7 @@ Actualmente se desconocen detalles sobre el tono de información especial, pero 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los 16 bits de orden superior se pueden asignar para extensiones específicas del dispositivo. Los 16 bits de orden inferior están reservados.
 
@@ -80,7 +80,7 @@ Los tonos de información especiales se definen para los mensajes de asesoramien
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

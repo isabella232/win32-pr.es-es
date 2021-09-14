@@ -4,12 +4,12 @@ ms.assetid: 83aab060-0629-48e3-a2db-9ba96a8631e5
 title: System.AppUserModel.RelaunchCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cc2ce3783aa9ab3d76124b8d62f9d9d9ad2e1f5d4b92622716df111456dbabd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 84049f605896ba5e99a98f33557e6ee4dea37df5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119554525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360672"
 ---
 # <a name="systemappusermodelrelaunchcommand"></a>System.AppUserModel.RelaunchCommand
 
@@ -62,7 +62,7 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

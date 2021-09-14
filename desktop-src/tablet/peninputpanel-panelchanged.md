@@ -4,12 +4,12 @@ ms.assetid: 21d38406-7ed9-4741-a092-ed3a369dc0dc
 title: Evento PenInputPanel.PanelChanged (Msalterut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41f722609ae71761a2a2a05c743aba7bfd83b7d4ff8689333bf2093d4dc21345
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d6ff0f415e12131221a8dad1c0775a347ef96cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117856524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361021"
 ---
 # <a name="peninputpanelpanelchanged-event"></a>PenInputPanel.PanelChanged, evento
 
@@ -43,7 +43,7 @@ El nuevo tipo de panel usado para la entrada dentro [**del objeto PenInputPanel,
 
 Si este evento se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al crear un [**objeto PenInputPanel,**](peninputpanel-class.md) [**handwriting**](/windows/win32/api/peninputpanel/ne-peninputpanel-paneltype) es el **valor predeterminado de PanelType.** Si cambia el panel estableciendo la propiedad [**CurrentPanel**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_currentpanel) antes de que el panel de entrada de lápiz se active por primera vez, **se produce un evento PanelChanged.**
 
@@ -53,11 +53,11 @@ El **evento PanelChanged** no se genera cuando el usuario cambia entre los panel
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

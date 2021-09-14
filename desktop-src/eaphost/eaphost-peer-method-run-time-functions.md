@@ -4,12 +4,12 @@ description: Obtenga información sobre las funciones en tiempo de ejecución de
 ms.assetid: fdfa595d-acf7-4489-88a8-113093567fe5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb3134a2b118b4bce4511e79d8d9ef58708f6b1c2bd7a93ed820fc16ec073914
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfde4adc8d509fcd5d67f9a33bd0617d605716db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118275028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241293"
 ---
 # <a name="eaphost-peer-method-run-time-functions"></a>Funciones del método del mismo nivel eaphost Run-Time
 

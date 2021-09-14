@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fa9ff717e17f08e5d37885f3994d03671bddaa9c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369567"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360872"
 ---
 # <a name="autotreatas"></a>AutoTreatAs
 
@@ -27,7 +27,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 ## <a name="remarks"></a>Observaciones
 
-Se trata de **un valor \_ SZ REG** que especifica el identificador de clase.
+Se trata de **un valor \_ SZ reg** que especifica el identificador de clase.
 
 ## <a name="related-topics"></a>Temas relacionados
 

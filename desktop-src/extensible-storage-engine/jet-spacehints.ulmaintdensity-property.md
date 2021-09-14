@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b6c6067aa0cc94a3df0436f68095b2e2b03bde700c3ab75e05175d6b74b8bd67
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2b3351574e5dd73817f66eecede6c0ece37dd7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119833240"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361224"
 ---
 # <a name="jet_spacehintsulmaintdensity-property"></a>JET_SPACEHINTS.ulMaintDensity, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece la densidad en la que se va a mantener.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public int ulMaintDensity { get; set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -4,12 +4,12 @@ ms.assetid: E09DD142-A685-425E-94CD-A8E2EA73E869
 title: CODECAPI_AVEncH264CABACEnable propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c9c3099f5208b020a61a12e718788459130a1c121ba0634b3e259c439f44f53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5db4a23377b79102165f0582d6a2ee47f53d8c1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118744161"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269319"
 ---
 # <a name="codecapi_avench264cabacenable-property"></a>Propiedad CODECAPI \_ AVEncH264CABACEnable
 
@@ -35,11 +35,11 @@ Si el valor es **VARIANT \_ TRUE,** CABAC está habilitado.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

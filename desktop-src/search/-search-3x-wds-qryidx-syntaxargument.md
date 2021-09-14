@@ -1,19 +1,19 @@
 ---
-description: El argumento Syntax permite identificar la sintaxis de la consulta. Los valores permitidos son sintaxis de consulta natural (NQS) o sintaxis de consulta avanzada (AQS). AQS es el valor predeterminado y siempre se asume que se analiza y se admite.
+description: El argumento de sintaxis le permite identificar la sintaxis de la consulta. Los valores permitidos son Sintaxis de consulta natural (NQS) o Sintaxis de consulta avanzada (AQS). AQS es el valor predeterminado y siempre se supone que se analiza y se admite.
 ms.assetid: d3b5ed70-022f-4c50-814e-1511662e04e5
-title: Argumento de sintaxis (búsqueda de Windows)
+title: Argumento SYNTAX (Windows Search)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 95bbf8523ba3a71dc19cf172bf1416f67d04f6f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540726"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363263"
 ---
-# <a name="syntax-argument-windows-search"></a>Argumento de sintaxis (búsqueda de Windows)
+# <a name="syntax-argument-windows-search"></a>Argumento SYNTAX (Windows Search)
 
-El `syntax` argumento le permite identificar la sintaxis de la consulta. Los valores permitidos son sintaxis de consulta natural (NQS) o sintaxis de consulta avanzada (AQS). AQS es el valor predeterminado y siempre se asume que se analiza y se admite.
+El `syntax` argumento permite identificar la sintaxis de la consulta. Los valores permitidos son Sintaxis de consulta natural (NQS) o Sintaxis de consulta avanzada (AQS). AQS es el valor predeterminado y siempre se supone que se analiza y se admite.
 
 Este tema se organiza de la siguiente manera:
 
@@ -33,19 +33,19 @@ Este tema se organiza de la siguiente manera:
 
 <dl> <dt>
 
-[Introducción con argumentos de Parameter-Value](getting-started-with-parameter-value-arguments.md)
+[Tareas iniciales con Parameter-Value argumentos](getting-started-with-parameter-value-arguments.md)
 </dt> <dt>
 
-[Argumentos de identificador de configuración regional](-search-3x-wds-qryidx-localeidentifiers.md)
+[Argumentos del identificador de configuración regional](-search-3x-wds-qryidx-localeidentifiers.md)
 </dt> <dt>
 
-[Argumento de MIGAs de](-search-3x-wds-qryidx-crumb.md)
+[Argumento CRUMB](-search-3x-wds-qryidx-crumb.md)
 </dt> <dt>
 
 [Argumento STACKEDBY](-search-3x-wds-qryidx-stackedby.md)
 </dt> <dt>
 
-[Argumento de subconsulta](-search-3x-wds-qryidx-subquery.md)
+[Argumento SUBQUERY](-search-3x-wds-qryidx-subquery.md)
 </dt> </dl>
 
  

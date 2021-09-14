@@ -1,5 +1,5 @@
 ---
-description: El método IsNormalRate indica si el clip se reproducirá a la velocidad de reproducción normal; es decir, la velocidad de reproducción del archivo original.
+description: El método IsNormalRate indica si el clip se reproducirá con la velocidad de reproducción normal; es decir, la velocidad de reproducción del archivo original.
 ms.assetid: 4a8fe415-f9eb-450d-9a75-e528577050d9
 title: Método IAMTimelineSrc::IsNormalRate (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4d1c0b355b0eedee29dafb92debbabac5c7b3e574d2f161827626bc73f72c035
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e368efcf29d836cc23fa60ed34dae1a172978f77
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361348"
 ---
 # <a name="iamtimelinesrcisnormalrate-method"></a>IamTimelineSrc::IsNormalRate (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "120083875"
 
  
 
-El método indica si el clip se reproducirá a la velocidad de reproducción normal; es decir, la velocidad `IsNormalRate` de reproducción del archivo original.
+El método indica si el clip se reproducirá con la velocidad de reproducción normal; es decir, la velocidad de `IsNormalRate` reproducción del archivo original.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Recibe un valor booleano que indica cómo se representará el clip. Si el valor 
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La velocidad de reproducción de un clip viene determinada por las horas de inicio y de detenerse de los medios, en relación con sus horas de escala de tiempo:
 
@@ -90,14 +90,14 @@ Si esta proporción es igual a 1, el clip se reproduce a la velocidad de creaci�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

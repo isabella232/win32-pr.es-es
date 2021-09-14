@@ -4,12 +4,12 @@ ms.assetid: f73d631e-2552-4358-903a-739e2df3657d
 title: Grupos de propiedades compartidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cda375c09b164e4ed380ba7d89477f2225b5b6004f98299ec9fd9b46f80abee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 776dafe5c7e9752ce3ed1c88b01fd909b4b145de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361661"
 ---
 # <a name="shared-property-groups"></a>Grupos de propiedades compartidas
 
@@ -25,7 +25,7 @@ Las siguientes son interfaces del administrador de propiedades compartidas:
 
 -   [**ISharedPropertyGroup**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroup) se usa para crear y acceder a las propiedades compartidas de un grupo de propiedades compartidas. Puede acceder a la **interfaz ISharedPropertyGroup** mediante la creación de un objeto [**SharedPropertyGroup**](sharedpropertygroup.md) con el método [**ISharedPropertyGroupManager::CreatePropertyGroup.**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroupmanager-createpropertygroup) Al igual que con cualquier objeto COM, debe liberar un **objeto SharedPropertyGroup** cuando haya terminado de usarlo.
 
--   [**ISharedProperty**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedproperty) se usa para establecer o recuperar el valor de una propiedad compartida. Una propiedad compartida puede contener cualquier tipo de datos que se pueda representar mediante un variant. Puede acceder a la **interfaz ISharedProperty** mediante la creación de un objeto [**SharedProperty**](sharedproperty.md) con el método [**ISharedPropertyGroup::CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o el método [**ISharedPropertyGroup::CreatePropertyByPosition.**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) Solo se puede crear o acceder a un objeto **SharedProperty** desde dentro de [**un objeto SharedPropertyGroup.**](sharedpropertygroup.md) Una vez más, debe liberar un **objeto SharedProperty** cuando haya terminado de usarlo.
+-   [**ISharedProperty**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedproperty) se usa para establecer o recuperar el valor de una propiedad compartida. Una propiedad compartida puede contener cualquier tipo de datos que se pueda representar mediante un variant. Puede acceder a la **interfaz ISharedProperty** mediante la creación de un objeto [**SharedProperty**](sharedproperty.md) con el método [**ISharedPropertyGroup::CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o el método [**ISharedPropertyGroup::CreatePropertyByPosition.**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) Solo se puede crear o tener acceso a un objeto **SharedProperty** desde dentro de [**un objeto SharedPropertyGroup.**](sharedpropertygroup.md) Una vez más, debe liberar un **objeto SharedProperty** cuando haya terminado de usarlo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

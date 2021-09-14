@@ -14,11 +14,11 @@ api_location:
 - Shell32.dll
 ms.assetid: 5b52b141-ced3-4d38-8584-7dfcfe12ab56
 ms.openlocfilehash: c2c630ef36f6e4b2b58f3902c3d5728a31ad1f0d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842066"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363126"
 ---
 # <a name="folder2-object"></a>Objeto Folder2
 
@@ -52,11 +52,11 @@ El **objeto Folder2** tiene estas propiedades.
 
 
 
-| Propiedad                                                                            | Tipo de acceso          | Descripción                                                               |
+| Propiedad.                                                                            | Tipo de acceso          | Descripción                                                               |
 |:------------------------------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------|
 | [**HaveToShowWebViewBarricade**](folder2-havetoshowwebviewbarricade.md)<br/> | Solo lectura<br/> | No se admite actualmente.<br/>                                       |
 | [**OfflineStatus**](folder2-offlinestatus.md)<br/>                           | Solo lectura<br/> | Contiene el estado sin conexión de la carpeta.<br/>                     |
-| [**propio**](folder2-self.md)<br/>                                             | Solo lectura<br/> | Contiene el objeto [**FolderItem de la**](folderitem.md) carpeta.<br/> |
+| [**Propio**](folder2-self.md)<br/>                                             | Solo lectura<br/> | Contiene el objeto [**FolderItem de la**](folderitem.md) carpeta.<br/> |
 
 
 
@@ -68,10 +68,10 @@ El **objeto Folder2** tiene estas propiedades.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

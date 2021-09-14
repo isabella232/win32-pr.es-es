@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf3f1a6b78a8a712e1fac3fe3223f292a56d8b0020dadc787f419de540d12ef4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8979c180b1c8d8848d869342fb92876ff4828df1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242397"
 ---
 # <a name="playerisonline"></a>Player.isOnline
 
 La **propiedad isOnline** recupera un valor que indica si el usuario está conectado a una red.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player* . **isOnline**
 
@@ -35,7 +35,7 @@ Esta propiedad es un booleano de solo **lectura.**
 
 
 
-| Valor | Descripción                             |
+| Value | Descripción                             |
 |-------|-----------------------------------------|
 | true  | El usuario está conectado a una red.     |
 | false | El usuario no está conectado a una red. |
@@ -44,7 +44,7 @@ Esta propiedad es un booleano de solo **lectura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Reproductor de Windows Media 10 Mobile:** Esta propiedad siempre devuelve true.
 

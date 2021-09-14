@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 65a21cbae87c25e0f37791129f1699349ea4bb4a8591097978e04010a925962b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1055a420316868db6374798c0295339dd74ac172
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361361"
 ---
 # <a name="csourceseekingm_drateseeking-member"></a>Miembro CSourceSeeking::m \_ dRateSeeking
 
@@ -36,9 +36,9 @@ double m_dRateSeeking;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Mantenga **presionada \_ la sección m pLock** critical antes de acceder a esta variable.
+Mantenga **presionada la \_ sección m pLock** critical antes de acceder a esta variable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Mantenga **presionada \_ la sección m pLock** critical antes de acceder a esta 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

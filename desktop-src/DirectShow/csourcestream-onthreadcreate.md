@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6e263f0ae72838504ab6d219c71d7841291a3edd2a7d6b719d112c74fb30c23b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5ae3c210ca81eafa1951fc51301eaf50491357f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361351"
 ---
 # <a name="csourcestreamonthreadcreate-method"></a>Método CSourceStream.OnThreadCreate
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El procedimiento de subproceso, [**CSourceStream::ThreadProc**](csourcestream-threadproc.md), llama a este método cuando recibe por primera vez una [**solicitud CSourceStream::Init.**](csourcestream-init.md) El método no hace nada en la clase base. La clase derivada puede invalidar este método para realizar inicializaciones de subprocesos. Si la clase derivada devuelve un código de error, el subproceso se cierra con un error.
+El procedimiento de subproceso [**CSourceStream::ThreadProc**](csourcestream-threadproc.md)llama a este método cuando recibe por primera vez una [**solicitud CSourceStream::Init.**](csourcestream-init.md) El método no hace nada en la clase base. La clase derivada puede invalidar este método para realizar inicializaciones de subprocesos. Si la clase derivada devuelve un código de error, el subproceso se cierra con un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ El procedimiento de subproceso, [**CSourceStream::ThreadProc**](csourcestream-th
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

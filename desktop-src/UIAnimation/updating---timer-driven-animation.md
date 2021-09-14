@@ -5,16 +5,16 @@ ms.assetid: e2641c93-e520-4749-a98e-5a58c175fdb9
 keywords:
 - storyboards Windows Animation ,creating
 - guiones gráficos Windows animación , agregar transiciones
-- transiciones Windows animación ,creating
+- transiciones Windows animation ,creating
 - transiciones Windows animación , agregar a guión gráfico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f992ae7720fea692d5e0b813e6cb9c35fab61d4bf2c781c928d9c8fcd08adb33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ee85aac4db11371c9a1e4a2aa254421d217cfd5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118999645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242061"
 ---
 # <a name="create-a-storyboard-and-add-transitions"></a>Crear un guión gráfico y agregar transiciones
 
@@ -28,13 +28,13 @@ Los pasos generales para construir un guión gráfico son los siguientes:
 2.  Crear una o varias transiciones
 3.  Agregue las transiciones al guión gráfico, especificando las variables que animan.
 
-Se puede crear un guión gráfico vacío mediante el administrador de animaciones. La aplicación debe rellenar cada guión gráfico con transiciones. Cada transición especifica cómo cambia una variable de animación única durante un intervalo de tiempo determinado. Las transiciones se pueden crear mediante el componente de biblioteca de transición incluido en Windows animación. Como alternativa, una aplicación puede crear sus propias transiciones personalizadas o usar una biblioteca de transición de un tercero. Cuando la aplicación agrega una transición a un guión gráfico, especifica qué variable de animación animará la transición.
+Se puede crear un guión gráfico vacío mediante el administrador de animaciones. La aplicación debe rellenar cada guión gráfico con transiciones. Cada transición especifica cómo cambia una única variable de animación durante un intervalo de tiempo determinado. Las transiciones se pueden crear mediante el componente de biblioteca de transición incluido en Windows animación. Como alternativa, una aplicación puede crear sus propias transiciones personalizadas o usar una biblioteca de transición de terceros. Cuando la aplicación agrega una transición a un guión gráfico, especifica qué variable de animación animará la transición.
 
-Un guión gráfico puede incluir transiciones en una o varias variables de animación. Los guiones gráficos más complejos pueden usar fotogramas clave para sincronizar los inicios o finales de las transiciones, o para especificar partes del guión gráfico que se deben repetir (un número fijo de veces o indefinidamente).
+Un guión gráfico puede incluir transiciones en una o varias variables de animación. Los guiones gráficos más complejos pueden usar fotogramas clave para sincronizar los inicios o finales de las transiciones, o para especificar partes del guión gráfico que deben repetirse (un número fijo de veces o indefinidamente).
 
 ## <a name="example-code"></a>Código de ejemplo
 
-El código de ejemplo siguiente se toma de MainWindow.cpp en la animación controlada por temporizador de Windows [ejemplo de animación](timer-driven-animation-sample.md); vea el método CMainWindow::ChangeColor. En este ejemplo se crea el guión gráfico (paso 1) mediante el método [**IUIAnimationManager::CreateStoryboard,**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createstoryboard) se crean las transiciones (paso 2) mediante el método [**IUIAnimationTransitionLibrary::CreateAccelerateDecelerateTransition**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createacceleratedeceleratetransition) y se agregan las transiciones al guión gráfico (paso 3) mediante el método [**IUIAnimationStoryboard::AddTransition.**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransition)
+El código de ejemplo siguiente se toma de MainWindow.cpp en la animación controlada por temporizador de Windows [ejemplo de animación .](timer-driven-animation-sample.md) vea el método CMainWindow::ChangeColor. En este ejemplo se crea el guión gráfico (paso 1) mediante el método [**IUIAnimationManager::CreateStoryboard,**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createstoryboard) se crean las transiciones (paso 2) mediante el método [**IUIAnimationTransitionLibrary::CreateAccelerateDecelerateTransition**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createacceleratedeceleratetransition) y se agregan las transiciones al guión gráfico (paso 3) mediante el método [**IUIAnimationStoryboard::AddTransition.**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransition)
 
 
 ```C++
@@ -117,7 +117,7 @@ Antes de iniciar este paso, debería haber completado este paso: [Leer los valor
 
 ## <a name="next-step"></a>siguiente paso
 
-Después de completar este paso, el siguiente paso es: Programar [un guión gráfico.](scheduling-a-storyboard.md)
+Después de completar este paso, el siguiente paso es: [Programar un guión gráfico.](scheduling-a-storyboard.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

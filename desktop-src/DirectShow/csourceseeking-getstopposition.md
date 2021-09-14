@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 870ddbf77d1a29a34703d4b43ee21d02b676e8fafac9ee688384246339465732
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9f61ad26c32cfeec285874edfcc26038d57b117
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073329"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361365"
 ---
 # <a name="csourceseekinggetstopposition-method"></a>Método CSourceSeeking.GetStopPosition
 
@@ -57,14 +57,14 @@ Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
 | Código devuelto                                                                               | Descripción                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>      | Success<br/>                |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto<br/>                |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Valor de** puntero NULL<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La hora de detenerse se especifica mediante la variable miembro [**CSourceSeeking::m \_ rtStop.**](csourceseeking-m-rtstop.md)
 
@@ -79,7 +79,7 @@ La hora de detenerse se especifica mediante la variable miembro [**CSourceSeekin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

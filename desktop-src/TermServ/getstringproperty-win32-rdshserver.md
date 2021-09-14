@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método GetStringProperty Servicios de Escritorio remoto
 - Método GetStringProperty Servicios de Escritorio remoto , Win32_RDSHServer clase
-- Win32_RDSHServer clase Servicios de Escritorio remoto método , GetStringProperty
+- Win32_RDSHServer clase Servicios de Escritorio remoto , método GetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7540a93e5172ac45fe57527eaa4a105af82e7ad8f73b4a3a25a9fe356ed688
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 619a034e0a2f89270d21bf0c4fc297b4248cef59
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120099495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374750"
 ---
-# <a name="getstringproperty-method-of-the-win32_rdshserver-class"></a>Método GetStringProperty de la clase RDSHServer de Win32 \_
+# <a name="getstringproperty-method-of-the-win32_rdshserver-class"></a>Método GetStringProperty de la clase \_ RDSHServer de Win32
 
 Recupera un valor de propiedad de cadena de [**un objeto \_ RDSHServer de Win32.**](win32-rdshserver.md)
 
@@ -60,7 +60,7 @@ Recibe el valor de propiedad recuperado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 

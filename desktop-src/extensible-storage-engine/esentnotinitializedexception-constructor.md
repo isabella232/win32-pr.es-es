@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c87eb7f4cb5a674093446a517cb963933487fca67224324bee58553065c860df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9da2cab896ed81384845576c81befccababd32d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117708344"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361524"
 ---
 # <a name="esentnotinitializedexception-constructor"></a>Constructor EsentNotInitializedException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNotInitializedException()
 public EsentNotInitializedException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

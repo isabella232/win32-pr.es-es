@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Registrar un proveedor de métodos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31a85fb93a30f6a996dd8e7255cc53f7a58a7fe37df35eb16bdca8de038e8704
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a399f90c6fc6f97e9ada8051055505b43885da3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241659"
 ---
 # <a name="registering-a-method-provider"></a>Registrar un proveedor de métodos
 
@@ -26,7 +26,7 @@ En el procedimiento siguiente se describe cómo registrar un proveedor de métod
 
 2.  Cree una instancia de la [**\_ \_ clase MethodProviderRegistration**](--methodproviderregistration.md) que describa el conjunto de características del proveedor.
 
-    Asegúrese de etiquetar la clase con los calificadores [**Dynamic**](dynamic-qualifier.md) [**y Provider.**](/windows/desktop/api/Provider/nl-provider-provider) El **calificador** dinámico indica que WMI debe usar un proveedor para recuperar las instancias de clase. El **calificador** Provider especifica el nombre del proveedor que WMI debe usar.
+    Asegúrese de etiquetar la clase con los calificadores [**Dynamic**](dynamic-qualifier.md) [**y Provider.**](/windows/desktop/api/Provider/nl-provider-provider) El **calificador** Dinámico indica que WMI debe usar un proveedor para recuperar las instancias de clase. El **calificador** Provider especifica el nombre del proveedor que WMI debe usar.
 
 En el ejemplo de código siguiente se describe cómo registrar un proveedor de métodos.
 

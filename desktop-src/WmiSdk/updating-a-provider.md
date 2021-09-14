@@ -1,20 +1,20 @@
 ---
-description: A veces es posible que deba instalar una versión más reciente de un proveedor en un sistema en ejecución.
+description: A veces es posible que tenga que instalar una versión más reciente de un proveedor en un sistema en ejecución.
 ms.assetid: 44c4c16a-fd79-483a-81ef-a0f74a2cdf45
 ms.tgt_platform: multiple
 title: Actualizar un proveedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa8c40a3d50672115478ae62135774f5a1aad93373bd5b844402e89462b44fd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4869e6e9f7fbddc3081922f476ca021934065a18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241646"
 ---
 # <a name="updating-a-provider"></a>Actualizar un proveedor
 
-A veces es posible que deba instalar una versión más reciente de un proveedor en un sistema en ejecución. Si el proveedor está instalado como un archivo DLL, puede instalar un nuevo proveedor sin tener que reiniciar el servicio, reiniciar el equipo o afectar de cualquier otro modo a las aplicaciones que usan WMI en ese momento.
+A veces es posible que tenga que instalar una versión más reciente de un proveedor en un sistema en ejecución. Si el proveedor se instala como un archivo DLL, puede instalar un nuevo proveedor sin tener que reiniciar el servicio, reiniciar el equipo o afectar de otro modo a las aplicaciones que usan WMI en ese momento.
 
 En el procedimiento siguiente se describe cómo actualizar un proveedor.
 
@@ -39,11 +39,11 @@ En el procedimiento siguiente se describe cómo actualizar un proveedor.
 
 3.  Quite la versión anterior del proveedor, si es necesario.
 
-    1.  Anular el registro del archivo DLL anterior.
+    1.  Anula el registro del archivo DLL antiguo.
 
         Por ejemplo, use el **comando regsvr32** **/umyprov.dll** para anular el registro del archivo DLL anterior.
 
-    2.  Marque el archivo DLL anterior que se va a eliminar al reiniciar llamando a [**MoveFileEx.**](/windows/desktop/api/winbase/nf-winbase-movefileexa)
+    2.  Marque el archivo DLL antiguo que se va a eliminar al reiniciar llamando a [**MoveFileEx.**](/windows/desktop/api/winbase/nf-winbase-movefileexa)
 
 Puede realizar pasos similares para actualizar un proveedor local implementado por el servidor.
 
@@ -54,7 +54,7 @@ Puede realizar pasos similares para actualizar un proveedor local implementado p
 [Desarrollar un proveedor WMI](developing-a-wmi-provider.md)
 </dt> <dt>
 
-[Establecer descriptores de seguridad namepace](setting-namespace-security-descriptors.md)
+[Establecer descriptores de seguridad de namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
 [Protección del proveedor](securing-your-provider.md)

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4026dc3bdb6db452381c2c7129b2605769ba91adde7f4301e66c93b263ae8ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d129982db5535d91b38dc9d3630f78192c4b1fbc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117908755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360823"
 ---
 # <a name="d3dx_r8g8b8a8_sint_to_int4-function"></a>Función D3DX \_ R8G8B8A8 \_ SINT \_ to \_ INT4
 

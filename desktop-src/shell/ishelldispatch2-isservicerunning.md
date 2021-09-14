@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 579748ae3b2e650e53e0f903b2ba2342e0ab9e522ae84c06c1ae4e13398c8762
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e8ad792f1669a8ebcfa411c58b34da214ccf69a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120090355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360648"
 ---
-# <a name="ishelldispatch2isservicerunning-method"></a>IShellDispatch2.IsServiceRunning (método)
+# <a name="ishelldispatch2isservicerunning-method"></a>Método IShellDispatch2.IsServiceRunning
 
 Devuelve un valor que indica si se está ejecutando un servicio determinado.
 
@@ -72,7 +72,7 @@ Tipo: **\* Variant**
 
 Devuelve **true** si se está ejecutando el servicio especificado *por sServiceName;* de lo contrario, **false**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se implementa y se accede a través del [**método Shell.IsServiceRunning.**](./shell-isservicerunning.md)
 
@@ -80,7 +80,7 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso **de IsServiceRunning para** determinar si el servicio Themes se está ejecutando para una aplicación. El uso se muestra para JScript y VBScript.
+En los ejemplos siguientes se muestra el uso de **IsServiceRunning para** determinar si el servicio Themes se está ejecutando para una aplicación. El uso se muestra para JScript y VBScript.
 
 JScript:
 
@@ -123,12 +123,12 @@ Vbscript:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

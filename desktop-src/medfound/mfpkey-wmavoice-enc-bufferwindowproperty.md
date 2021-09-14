@@ -1,15 +1,15 @@
 ---
 description: Especifica la ventana de búfer, en milisegundos, que se usará para el códec de voz.
 ms.assetid: 48c84e6d-b21f-468e-8847-f5e2acd5b44a
-title: MFPKEY_WMAVOICE_ENC_BufferWindow (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_WMAVOICE_ENC_BufferWindow propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d05df85a6f1460666f82f494df0d41fdebd811a578817639eb6f7d41f0bf9ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35d5035979ffd161eb7694690fbf2566db5dfd1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119603455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360686"
 ---
 # <a name="mfpkey_wmavoice_enc_bufferwindow-property"></a>Propiedad BufferWindow de MFPKEY \_ WMAVOICE \_ ENC \_
 
@@ -33,15 +33,15 @@ VT \_ I4
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

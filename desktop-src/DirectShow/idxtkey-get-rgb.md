@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 596595e38ce57b026631d1ba7bd88d501bc50661ea3034fecd9ad4fbd9615428
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef521b28c232f8247ef38858931ae56be6bf2d25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118652414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361342"
 ---
-# <a name="idxtkeyget_rgb-method"></a>Método RGB IDxtKey::get \_
+# <a name="idxtkeyget_rgb-method"></a>Método IDxtKey::get \_ RGB
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -79,7 +79,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

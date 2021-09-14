@@ -1,22 +1,22 @@
 ---
 title: Uso de Windows redes
-description: Las funciones de WNet permiten a la aplicación consultar y controlar las conexiones de red directamente, o para proporcionar control directo de las conexiones de red al usuario.
+description: Las funciones de WNet permiten a la aplicación consultar y controlar las conexiones de red directamente, o bien para proporcionar control directo de las conexiones de red al usuario.
 ms.assetid: 209f5eb4-b42d-4a09-845c-07201204d292
 keywords:
 - Windows redes WNet , mediante
 - WNet WNet ,using
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af41dc376324836d0d128eee8149ffd4eb572868e10db7796c30cbff196e44d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 806ca0009cc4702aceaddf2a9670c9d490608889
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361717"
 ---
 # <a name="using-windows-networking"></a>Uso de Windows redes
 
-Las funciones de WNet permiten a la aplicación consultar y controlar las conexiones de red directamente, o para proporcionar control directo de las conexiones de red al usuario.
+Las funciones de WNet permiten a la aplicación consultar y controlar las conexiones de red directamente, o bien para proporcionar control directo de las conexiones de red al usuario.
 
 En los temas siguientes se describe cómo usar las funciones de WNet en la aplicación en Windows NT, Windows 2000 y Windows XP.
 

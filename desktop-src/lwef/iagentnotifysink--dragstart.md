@@ -4,12 +4,12 @@ description: IAgentNotifySink DragStart
 ms.assetid: b3905b99-69e4-4046-aab9-2322618935aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3510449923d4567d3126bf9cd84655acd782b021f9f37f655a51114122a4717
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f33ae89f9e24c6c7b0ec69fba1a98b3a64a18620
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119105221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360722"
 ---
 # <a name="iagentnotifysinkdragstart"></a>IAgentNotifySink::D ragStart
 
@@ -24,7 +24,7 @@ HRESULT DragStart(
 );                          
 ```
 
-Notifica a una aplicación cliente cuando el usuario comienza a arrastrar un carácter.
+Notifica a una aplicación cliente cuando el usuario empieza a arrastrar un carácter.
 
 -   No de devuelve ningún valor.
 
@@ -44,14 +44,14 @@ Parámetro que indica el botón del mouse y el estado de la tecla modificadora. 
 
 
 
-| Valor  | Descripción      |
+| Value  | Descripción      |
 |--------|------------------|
 | 0x0001 | Botón izquierdo      |
 | 0x0010 | Botón Central    |
 | 0x0002 | Botón derecho     |
 | 0x0004 | Mayús Key Down   |
-| 0x0008 | Control de la tecla Abajo |
-| 0x0020 | Alt tecla abajo     |
+| 0x0008 | Tecla De control hacia abajo |
+| 0x0020 | Tecla Alt hacia abajo     |
 
 
 
@@ -62,7 +62,7 @@ Parámetro que indica el botón del mouse y el estado de la tecla modificadora. 
 <span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordenada x del puntero del mouse en píxeles, en relación con el origen de la pantalla (parte superior izquierda).
+Coordenada x del puntero del mouse en píxeles, en relación con el origen de la pantalla (esquina superior izquierda).
 
 </dd> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd31b3f84bbc8c75a3622b7b87f7a7577a33927bd489a06b8691377badaf0b56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e24993fe5873be0af8713e3d127b86a7c593cd82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118358808"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375174"
 ---
 # <a name="glmultmatrixd-function"></a>Función glMultMatrixd
 
@@ -63,7 +63,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glMultMatrix** multiplica la matriz actual por la especificada en *m*. Es decir, si M es la matriz actual y T es la matriz que se pasa **a glMultMatrix,** M se reemplaza por M T.
 
@@ -87,7 +87,7 @@ Las siguientes funciones recuperan información relacionada **con glMultMatrix**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -97,7 +97,7 @@ Las siguientes funciones recuperan información relacionada **con glMultMatrix**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

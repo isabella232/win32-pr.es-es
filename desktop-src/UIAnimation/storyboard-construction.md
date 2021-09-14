@@ -6,16 +6,16 @@ keywords:
 - Windows Animation Windows Animation ,storyboard overview
 - storyboards Windows Animation ,described
 - transitions Windows Animation ,described
-- transiciones Windows animación ,custom
+- transiciones Windows animation ,custom
 - interpoladores Windows animación , descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca78e4638ad7c3930be25b9ff826e5fa533d2af62cc4907b7a17d4c5b636f239
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58210ae98f6d3a96c554276466ad72b3364d72a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119514185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242127"
 ---
 # <a name="storyboard-overview"></a>Información general sobre guiones gráficos
 
@@ -28,7 +28,7 @@ Este tema contiene las siguientes secciones:
     -   [Transiciones personalizadas](#custom-transitions)
 -   [Storyboards](#storyboards)
     -   [Creación de un guión gráfico simple](#building-a-simple-storyboard)
-    -   [Uso de una Context-Sensitive duración](#using-a-context-sensitive-duration)
+    -   [Usar una duración Context-Sensitive datos](#using-a-context-sensitive-duration)
     -   [Creación de un guión gráfico más complejo](#building-a-more-complex-storyboard)
     -   [Uso de fotogramas clave](#using-keyframes)
     -   [Mantener variables](#holding-variables)
@@ -37,7 +37,7 @@ Este tema contiene las siguientes secciones:
 
 ## <a name="transitions"></a>Transiciones
 
-Una transición define cómo cambia una única variable de animación durante un intervalo de tiempo determinado. Windows La animación incluye una biblioteca de transiciones comunes que los desarrolladores pueden aplicar a una o varias variables de animación. Los distintos tipos de transiciones tienen conjuntos diferentes de parámetros, que pueden incluir el valor de la variable cuando se completa la transición, la duración de la transición o cantidades únicas para la función matemática subyacente, como la aceleración o el intervalo de oscilación.
+Una transición define cómo cambia una única variable de animación durante un intervalo de tiempo determinado. Windows La animación incluye una biblioteca de transiciones comunes que los desarrolladores pueden aplicar a una o varias variables de animación. Los distintos tipos de transiciones tienen diferentes conjuntos de parámetros, que pueden incluir el valor de la variable cuando se completa la transición, la duración de la transición o cantidades únicas para la función matemática subyacente, como la aceleración o el intervalo de oscilación.
 
 Todas las transiciones comparten dos parámetros implícitos: el valor inicial y la velocidad inicial (pendiente) de la función matemática. La aplicación puede especificar estos valores explícitamente, pero normalmente lo establece el administrador de animaciones en el valor y la velocidad de la variable de animación cuando comienza la transición.
 
@@ -86,20 +86,20 @@ La tabla siguiente contiene ilustraciones para cada una de estas transiciones.
 
 ### <a name="custom-transitions"></a>Transiciones personalizadas
 
-Un *interpolador define* la función matemática que determina cómo cambia una variable de animación con el tiempo a medida que progresa de su valor inicial a un valor final. Cada transición de la biblioteca de transición tiene un objeto interpolador asociado proporcionado por el sistema e implementa la función de interpolador. Si una aplicación requiere un efecto que no se puede especificar mediante la biblioteca de transición, puede implementar una o varias transiciones personalizadas implementando un objeto interpolador para cada nueva transición. Las aplicaciones no pueden usar directamente los objetos interpoladores y, en su lugar, deben ajustarse en una transición asociada. Se *usa un generador* de transición para generar transiciones desde un objeto interpolador. Consulte [**IUIAnimationInterpolator**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator) e [**IUIAnimationTransitionFactory**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionfactory) para obtener más detalles.
+Un *interpolador define* la función matemática que determina cómo cambia una variable de animación con el tiempo a medida que progresa de su valor inicial a un valor final. Cada transición de la biblioteca de transición tiene un objeto interpolador asociado proporcionado por el sistema e implementa la función de interpolador. Si una aplicación requiere un efecto que no se puede especificar mediante la biblioteca de transición, puede implementar una o varias transiciones personalizadas implementando un objeto interpolador para cada nueva transición. Las aplicaciones no pueden usar objetos interpoladores directamente y, en su lugar, deben ajustarse en una transición asociada. Se *usa un generador* de transición para generar transiciones desde un objeto interpolador. Consulte [**IUIAnimationInterpolator**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator) e [**IUIAnimationTransitionFactory**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionfactory) para obtener más detalles.
 
 Tenga en cuenta que la mayoría de las aplicaciones tendrán todas las transiciones que necesitan mediante la biblioteca de transición y, por tanto, no tendrían que implementar un interpolador.
 
 ## <a name="storyboards"></a>Storyboards
 
-Un guión gráfico es una colección de transiciones aplicadas a una o varias variables de animación a lo largo del tiempo. Se garantiza que las transiciones de un guión gráfico permanecen sincronizadas entre sí y que el guión gráfico se programa o cancela como una unidad. Después de crear las transiciones deseadas, una aplicación crea un guión gráfico mediante el administrador de animaciones, agrega las transiciones al guión gráfico, configura el guión gráfico adecuadamente y lo programa para reproducirlo lo antes posible. El administrador de animaciones determina la hora de inicio real del guión gráfico, ya que puede haber contención con otros guiones gráficos que animan actualmente las mismas variables.
+Un guión gráfico es una colección de transiciones aplicadas a una o varias variables de animación a lo largo del tiempo. Se garantiza que las transiciones de un guión gráfico permanecen sincronizadas entre sí y que el guión gráfico se programa o cancela como una unidad. Después de crear las transiciones deseadas, una aplicación crea un guión gráfico mediante el administrador de animaciones, agrega las transiciones al guión gráfico, configura el guión gráfico correctamente y lo programa para reproducirlo lo antes posible. El administrador de animaciones determina la hora de inicio real del guión gráfico, ya que puede haber contención con otros guiones gráficos que animan actualmente las mismas variables.
 
 La duración general de un guión gráfico depende de las duraciones de las transiciones dentro del guión gráfico. No es necesario solucionar la duración de una transición; puede determinarse por el valor y la velocidad de las variables animadas cuando comienza la transición. Por lo tanto, la duración de un guión gráfico también puede depender del estado de las variables que anima.
 
 En los ejemplos siguientes se supone que se han creado un administrador de animaciones, una biblioteca de transición y un temporizador. Para obtener más información, vea [Crear los objetos de animación principales](adding-animation-to-an-application.md). En los ejemplos también se supone que la aplicación ha creado tres variables de animación (X, Y y Z) mediante el método [**IUIAnimationManager::CreateAnimationVariable**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createanimationvariable) y cinco transiciones (T1, T2, T3, T4 y T5) mediante el uso de uno de los métodos de la interfaz [**IUIAnimationTransitionLibrary.**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary)
 
 -   [Creación de un guión gráfico simple](#building-a-simple-storyboard)
--   [Uso de una Context-Sensitive duración](#using-a-context-sensitive-duration)
+-   [Usar una duración Context-Sensitive datos](#using-a-context-sensitive-duration)
 -   [Creación de un guión gráfico más complejo](#building-a-more-complex-storyboard)
 -   [Uso de fotogramas clave](#using-keyframes)
 -   [Mantener variables](#holding-variables)
@@ -115,7 +115,7 @@ Este proceso produce un guión gráfico simple, como se muestra en la ilustraci�
 
 Tenga en cuenta que, para un escenario tan sencillo, una opción alternativa es usar el [**método IUIAnimationManager::ScheduleTransition.**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-scheduletransition)
 
-### <a name="using-a-context-sensitive-duration"></a>Usar una duración Context-Sensitive datos
+### <a name="using-a-context-sensitive-duration"></a>Uso de una Context-Sensitive duración
 
 Aunque algunas transiciones tienen una duración fija, la duración de otras depende del valor inicial o la velocidad de la variable animada cuando comienza la transición. Por ejemplo, el método [**IUIAnimationTransitionLibrary::CreateLinearTransitionFromSpeed**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createlineartransitionfromspeed) crea una transición con una duración proporcional a la diferencia entre el valor inicial de la variable de animación y el valor final especificado. En esta ilustración, y las ilustraciones restantes, estas transiciones con duraciones arbitrarias se muestran con un signo de interrogación (?) y sus duraciones reales se determinan cuando se reproduce el guión gráfico.
 
@@ -163,7 +163,7 @@ Todas estas ilustraciones han supuesto un conjunto arbitrario de valores actuale
 
 ![ilustración que muestra el resultado de cambiar las condiciones iniciales usadas para la ilustración anterior](images/holdvariablez.png)
 
-En este escenario, T5 comienza antes de que T3 haya finalizado y, por tanto, T3 se recorta. Dado que T4 finaliza antes que T2 y T5, el valor de Z se mantiene hasta el final del guión gráfico. En general, los valores y velocidades de las variables cuando un guión gráfico empieza a reproducirse puede afectar al orden de los fotogramas clave y a la longitud y forma generales del guión gráfico.
+En este escenario, T5 comienza antes de que T3 haya finalizado y, por tanto, T3 se recorta. Dado que T4 finaliza antes que T2 y T5, el valor de Z se mantiene hasta el final del guión gráfico. En general, los valores y las velocidades de las variables cuando un guión gráfico comienza a reproducirse pueden afectar al orden de los fotogramas clave y a la longitud y forma generales del guión gráfico.
 
 ### <a name="scheduling-a-storyboard"></a>Programar un guión gráfico
 
@@ -194,7 +194,7 @@ La aplicación ha registrado comparaciones de prioridad que incluyen la siguient
 
  
 
-Para iniciar G antes de que haya transcurrido el retraso más largo aceptable, el administrador de animaciones debe hacer lo siguiente:
+Para iniciar G antes de que haya transcurrido el retraso más largo aceptable, el administrador de animación debe hacer lo siguiente:
 
 -   Recortar F
 -   Cancelar E

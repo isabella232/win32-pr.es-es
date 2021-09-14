@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: 33edb7cb2ca959080878f7ce735930ceec9d95dc2f829aef6d50f72d764f2f00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f037317b49bc54f5ea9db5b7a4ae039ec0a9970d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118398941"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361321"
 ---
 # <a name="ikspinksquerymediums-method"></a>Método IKsPin::KsQueryMediums
 
@@ -51,7 +51,7 @@ Dirección de un puntero a una [**estructura KSMULTIPLE \_ ITEM.**](ksmultiple-i
 
 Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve una estructura [**KSMULTIPLE \_ ITEM**](ksmultiple-item.md) asignada por tareas, seguida de cero o más estructuras [**REGPINMEDIUM.**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) El **miembro Count** de la estructura **KSMULTIPLE \_ ITEM** especifica el número de **estructuras REGPINMEDIUM.** Cada **estructura REGPINMEDIUM** define un medio admitido por el pin.
 
@@ -107,7 +107,7 @@ HRESULT FindMatchingMedium(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

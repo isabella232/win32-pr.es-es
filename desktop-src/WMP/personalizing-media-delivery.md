@@ -3,7 +3,7 @@ title: Personalización de la entrega multimedia
 description: Personalización de la entrega multimedia
 ms.assetid: ffd62602-8bfc-4ca7-91fd-c610faa330cd
 keywords:
-- Windows Listas de reproducción de metarchivo multimedia, personalización de la entrega multimedia
+- Windows Listas de reproducción de metarchivos multimedia, personalización de la entrega multimedia
 - listas de reproducción, personalización de la entrega multimedia
 - listas de reproducción de metarchivo, personalización de la entrega multimedia
 - Windows Listas de reproducción de metarchivo multimedia, personalización de entrega multimedia
@@ -18,12 +18,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9483f4fc7a068c6f6456a5d170b4be73a9ba31ef85294f9a6939181dff00c826
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ddb01364e2ea36214b94d01517f1d3d3b802ba63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242499"
 ---
 # <a name="personalizing-media-delivery"></a>Personalización de la entrega multimedia
 

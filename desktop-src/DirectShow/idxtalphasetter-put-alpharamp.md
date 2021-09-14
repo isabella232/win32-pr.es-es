@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 88661c40ea0824d643909f688a7d86251c434e0e3dcc88d8a3aec97dcb6b40c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc6c0eb4d5286081de9abe0c7c6d58092d111573
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375210"
 ---
-# <a name="idxtalphasetterput_alpharamp-method"></a>Método IDxtAlphaSetter::p ut \_ AlphaRamp
+# <a name="idxtalphasetterput_alpharamp-method"></a>Método \_ AlphaRamp :p IDxtAlphaSetter::p ut
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -56,7 +56,7 @@ Rampa alfa como porcentaje. Por ejemplo, 1,0 es 100 %. Para deshabilitar esta pr
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si establece esta propiedad en un valor no negativo, también debe deshabilitar la propiedad alfa mediante una llamada a **put \_ Alpha** con un valor negativo. De lo contrario, el efecto no se representará correctamente.
 
@@ -66,7 +66,7 @@ Si establece esta propiedad en un valor no negativo, también debe deshabilitar 
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

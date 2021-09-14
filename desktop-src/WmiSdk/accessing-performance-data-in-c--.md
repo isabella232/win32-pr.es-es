@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Acceso a datos de rendimiento en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e566fb5803e598e42fac06d8f04fe3e71935008668e397a47d0226a96560eec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b076e1ab15b934f347ee491711d7d3d1b8fbbe0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118820332"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241479"
 ---
 # <a name="accessing-performance-data-in-c"></a>Acceso a datos de rendimiento en C++
 
-La API de alto rendimiento de WMI es una serie de interfaces que obtienen datos de las [clases de contador de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes). Estas interfaces requieren el uso de un objeto [*de actualizador*](gloss-r.md) para aumentar la frecuencia de muestreo. Para obtener más información sobre cómo usar el objeto de actualizador en scripting, vea Acceso a datos de rendimiento en [tareas de script](accessing-performance-data-in-script.md) [y WMI: supervisión de rendimiento.](wmi-tasks--performance-monitoring.md)
+La API de alto rendimiento de WMI es una serie de interfaces que obtienen datos de las [clases de contador de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes). Estas interfaces requieren el uso de un [*objeto de actualizador*](gloss-r.md) para aumentar la frecuencia de muestreo. Para obtener más información sobre el uso del objeto de actualizador en el scripting, vea Acceso a datos de rendimiento en [tareas de script](accessing-performance-data-in-script.md) y [WMI: Supervisión del rendimiento.](wmi-tasks--performance-monitoring.md)
 
-En este tema se de abordan las siguientes secciones:
+En este tema se de abordan las secciones siguientes:
 
 -   [Actualizar datos de rendimiento](#refreshing-performance-data)
 -   [Agregar enumeradores al actualizador wmi](#adding-enumerators-to-the-wmi-refresher)
@@ -25,7 +25,7 @@ En este tema se de abordan las siguientes secciones:
 
 ## <a name="refreshing-performance-data"></a>Actualizar datos de rendimiento
 
-Un objeto de actualizador aumenta el rendimiento del cliente y del proveedor de datos mediante la recuperación de datos sin traspasar los límites del proceso. Si el cliente y el servidor se encuentran en el mismo equipo, un actualizador carga el proveedor de alto rendimiento en proceso en el cliente y copia los datos directamente de los objetos de proveedor en objetos de cliente. Si el cliente y el servidor se encuentran en equipos diferentes, el actualizador aumenta el rendimiento mediante el almacenamiento en caché de objetos en el equipo remoto y la transmisión de conjuntos de datos mínimos al cliente.
+Un objeto de actualizador aumenta el rendimiento del cliente y del proveedor de datos mediante la recuperación de datos sin cruzar los límites del proceso. Si el cliente y el servidor se encuentran en el mismo equipo, un actualizador carga el proveedor de alto rendimiento en proceso en el cliente y copia los datos directamente de los objetos del proveedor en objetos de cliente. Si el cliente y el servidor se encuentran en equipos diferentes, el actualizador aumenta el rendimiento almacenando en caché objetos en el equipo remoto y transmitiendo conjuntos de datos mínimos al cliente.
 
 Un actualizador también:
 
@@ -33,7 +33,7 @@ Un actualizador también:
 
     De forma predeterminada, un actualizador intenta volver a conectar la aplicación al proveedor de alto rendimiento correspondiente cuando se produce un error en una conexión remota entre los dos equipos. Para evitar la reconexión, pase la marca **WBEM \_ FLAG REFRESH NO AUTO \_ \_ \_ \_ RECONNECT** en la [**llamada al método Refresh.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh) Los clientes de scripting deben [**establecer la propiedad SWbemRefresher.AutoReconnect**](swbemrefresher-autoreconnect.md) en **FALSE.**
 
--   Carga varios objetos y enumeradores proporcionados por el mismo proveedor o por otros distintos.
+-   Carga varios objetos y enumeradores proporcionados por los mismos proveedores o distintos.
 
     Permite agregar varios objetos, enumeradores o ambos a un actualizador.
 
@@ -41,13 +41,13 @@ Un actualizador también:
 
     Al igual que otros proveedores, un proveedor de alto rendimiento puede enumerar objetos.
 
-Cuando termine de escribir el cliente de alto rendimiento, es posible que desee mejorar el tiempo de respuesta. Dado que [**la interfaz IWbemObjectAccess**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess) está optimizada para la velocidad, la interfaz no es intrínsecamente segura para subprocesos. Por lo tanto, durante una operación de actualización, no acceda al objeto actualizable o la enumeración. Para proteger objetos entre subprocesos durante las llamadas al método **IWbemObjectAccess,** use los métodos [**IWbemObjectAccess::Lock**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-lock) [**y Unlock.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-unlock) Para mejorar el rendimiento, sincronice los subprocesos para que no sea necesario bloquear subprocesos individuales. La reducción de subprocesos y la sincronización de grupos de objetos para las operaciones de actualización proporciona el mejor rendimiento general.
+Cuando termine de escribir el cliente de alto rendimiento, es posible que desee mejorar el tiempo de respuesta. Dado que [**la interfaz IWbemObjectAccess está**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess) optimizada para la velocidad, la interfaz no es intrínsecamente segura para subprocesos. Por lo tanto, durante una operación de actualización, no tiene acceso al objeto actualizable ni a la enumeración. Para proteger objetos entre subprocesos durante las llamadas al método **IWbemObjectAccess,** use los métodos [**IWbemObjectAccess::Lock**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-lock) [**y Unlock.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-unlock) Para mejorar el rendimiento, sincronice los subprocesos para que no sea necesario bloquear subprocesos individuales. La reducción de subprocesos y la sincronización de grupos de objetos para las operaciones de actualización proporciona el mejor rendimiento general.
 
 ## <a name="adding-enumerators-to-the-wmi-refresher"></a>Agregar enumeradores al actualizador wmi
 
 Tanto el número de instancias como los datos de cada instancia se actualizan agregando un enumerador al actualizador para que cada llamada a [**IWbemRefresher::Refresh**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh) da como resultado una enumeración completa.
 
-El siguiente ejemplo de código de C++ requiere las siguientes referencias e \# instrucciones include para compilarse correctamente.
+El siguiente ejemplo de código de C++ requiere que las siguientes referencias e \# instrucciones include se compilen correctamente.
 
 
 ```C++
@@ -61,7 +61,7 @@ using namespace std;
 
 
 
-El procedimiento siguiente muestra cómo agregar un enumerador a un actualizador.
+En el procedimiento siguiente se muestra cómo agregar un enumerador a un actualizador.
 
 **Para agregar un enumerador a un actualizador**
 
@@ -96,7 +96,7 @@ El procedimiento siguiente muestra cómo agregar un enumerador a un actualizador
 
     -   Actualiza el objeto mediante una llamada a [**IWbemRefresher::Refresh**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemrefresher-refresh).
     -   Proporciona una matriz de punteros de interfaz [**IWbemObjectAccess**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess) al [**método IWbemHiPerfEnum::GetObjects.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-getobjects)
-    -   Obtiene acceso a las propiedades del enumerador mediante los métodos [**IWbemObjectAccess**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess) pasados a [**GetObjects.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-getobjects)
+    -   Obtiene acceso a las propiedades del enumerador mediante los métodos [**IWbemObjectAccess**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess) [**pasados a GetObjects.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-getobjects)
 
         Se puede pasar un identificador de propiedad a cada [**instancia de IWbemObjectAccess**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess) para recuperar el valor actualizado. El cliente debe llamar [**a Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) para liberar los **punteros IWbemObjectAccess** devueltos [**por GetObjects.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemhiperfenum-getobjects)
 
@@ -380,7 +380,7 @@ int __cdecl wmain(int argc, wchar_t* argv[])
 
 <dl> <dt>
 
-[Clases de contador de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes)
+[Clases de contadores de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes)
 </dt> <dt>
 
 [Acceso a datos de rendimiento en script](accessing-performance-data-in-script.md)

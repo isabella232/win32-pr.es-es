@@ -1,5 +1,5 @@
 ---
-title: Elemento valueMap (MapType)
+title: elemento valueMap (MapType)
 description: Define una lista de pares nombre-valor que asignan valores enteros y valores de cadena.
 ms.assetid: caf84ed1-8624-4163-bf31-60b9fd877220
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2d350060044bc66662947eb583c35337f642d77586fd7af24b2be99dc4a2d69f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aea7a02a1d744687e3ba2083fa4eb67472ee08e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242709"
 ---
-# <a name="valuemap-maptype-element"></a>Elemento valueMap (MapType)
+# <a name="valuemap-maptype-element"></a>elemento valueMap (MapType)
 
 Define una lista de pares nombre-valor que asignan valores enteros y valores de cadena.
 
@@ -36,7 +36,7 @@ El **tipo complejo MapType** define el elemento [**valueMap.**](eventmanifestsch
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

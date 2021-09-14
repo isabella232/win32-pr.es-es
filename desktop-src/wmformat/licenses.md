@@ -10,21 +10,21 @@ keywords:
 - DRM (administración de derechos digitales), licencias
 - administración de derechos digitales (DRM), licencias de archivos protegidos
 - DRM (administración de derechos digitales), licencias de archivos protegidos
-- licencias, DRM
+- licenses,DRM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b899e44ffdff5d2a7f3c5fb3237b477ae0143327a331f63bd9717e3ae4320483
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0fbf2d7c0a25b2b19241d90743f43f46a71d7e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118700839"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360935"
 ---
 # <a name="licenses"></a>Licencias
 
 Una licencia es un conjunto de datos que describe las condiciones en las que se pueden leer los datos de los archivos protegidos. Cada licencia se aplica a un identificador de clave, que normalmente se asigna a un único archivo multimedia. Este identificador es lo que se usa para identificar el contenido protegido en la licencia.
 
-Cada licencia especifica una o varias acciones que se pueden realizar con el contenido protegido. Estas acciones, también denominadas derechos, se pueden limitar de varias maneras. Al combinar las fechas de inicio, las fechas de finalización, los recuentos y los límites de tiempo, el emisor de la licencia puede crear casi cualquier limitación general sobre un derecho.
+Cada licencia especifica una o varias acciones que se pueden realizar con el contenido protegido. Estas acciones, también denominadas derechos, se pueden limitar de varias maneras. Al combinar las fechas de inicio, las fechas de finalización, los recuentos y los límites de tiempo, el emisor de la licencia puede crear casi cualquier limitación en un derecho.
 
 Las licencias las emite un servicio web. Cuando se adquiere una licencia, se almacena en el equipo cliente en el almacén de licencias local, que es un archivo protegido que contiene licencias y otros datos DRM. Cuando una aplicación tiene acceso al contenido protegido, el subsistema DRM busca en el almacén de licencias local una licencia que conceda el derecho adecuado. Si no se encuentra ninguna licencia, la aplicación puede adquirir una según la información almacenada en el encabezado DRM del archivo.
 

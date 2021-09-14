@@ -4,12 +4,12 @@ description: Buscar sistemas host de servidor mediante enlaces de cadena y consu
 ms.assetid: 4aadda88-2109-481f-aa4b-b1983d81dec5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 180e2e43c0350f55defb74762d6ab1b6b656dafbc1468bcc7f077ed9780a2e98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2357fcafa35d4f64cfb4f6841c0b56e1e94b7aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118929994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361945"
 ---
 # <a name="finding-server-host-systems"></a>Búsqueda de sistemas host de servidor
 
@@ -20,7 +20,7 @@ Hay dos métodos para buscar sistemas host de servidor:
 -   Usar información almacenada en cadenas en el código fuente del cliente, variables de entorno o archivos de configuración específicos de la aplicación. La aplicación cliente puede usar los datos de la cadena para crear un enlace entre el cliente y el servidor.
 -   Consulta de una base de datos de servicio de nombres para la ubicación de un programa de servidor.
 
-En esta sección se presenta información sobre ambas técnicas en los temas siguientes:
+En esta sección se presenta información sobre estas dos técnicas en los temas siguientes:
 
 -   [Usar enlaces de cadena](#using-string-bindings)
 -   [Importación desde bases de datos de servicio de nombres](#importing-from-name-service-databases)
@@ -79,7 +79,7 @@ status = RpcBindingFromStringBinding(pszString, &hBinding);
 
 
 
-Una función conveniente, [**RpcStringBindingCompose**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcstringbindingcompose) ensambla el UUID del objeto, la secuencia de protocolo, la dirección de red y el punto de conexión en la sintaxis correcta para la llamada a [**RpcBindingFromStringBinding.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding) No tiene que preocuparse de colocar la yand, los dos puntos y los distintos componentes de cada secuencia de protocolo en el lugar correcto; simplemente proporciona las cadenas como parámetros a la función . La biblioteca en tiempo de ejecución incluso asigna la memoria necesaria para el enlace de cadena.
+Una función conveniente, [**RpcStringBindingCompose**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcstringbindingcompose) ensambla el UUID del objeto, la secuencia de protocolo, la dirección de red y el punto de conexión en la sintaxis correcta para la llamada a [**RpcBindingFromStringBinding.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding) No tiene que preocuparse de colocar la yand, los dos puntos y los distintos componentes de cada secuencia de protocolo en el lugar correcto. simplemente proporciona las cadenas como parámetros a la función . La biblioteca en tiempo de ejecución incluso asigna la memoria necesaria para el enlace de cadena.
 
 
 ```C++
@@ -132,7 +132,7 @@ En el ejemplo anterior, el valor RPC C NS SYNTAX DEFAULT se pasa como primer par
 
 La aplicación cliente puede buscar en la base de datos del servicio de nombres un nombre de interfaz, un UUID o ambos. Si quiere que busque una interfaz por nombre, pase la variable de interfaz global que el compilador MIDL genera a partir del archivo IDL como tercer parámetro a [**RpcNsBindingImportBegin.**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportbegina) Encontrará su declaración en el archivo de encabezado que el compilador MIDL generó cuando generó el código auxiliar del cliente. Si desea que el programa cliente busque solo por UUID, establezca el tercer parámetro en **NULL.**
 
-Al buscar un UUID en la base de datos del servicio de nombres, establezca el cuarto parámetro de [**RpcNsBindingImportBegin**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportbegina) en el UUID que desea buscar. Si no está buscando un UUID, establezca este parámetro en **NULL.**
+Al buscar un UUID en la base de datos del servicio de nombres, establezca el cuarto parámetro de [**RpcNsBindingImportBegin**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportbegina) en el UUID que desea buscar. Si no busca un UUID, establezca este parámetro en **NULL.**
 
 La [**función RpcNsBindingImportBegin**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportbegina) pasa la dirección de un identificador de contexto de búsqueda-servicio de nombre a través de su quinto parámetro. Este parámetro se pasa a otras funciones RpcNsBindingImport.
 
@@ -152,7 +152,7 @@ status = RpcNsBindingImportNext(hNameServiceHandle, &hBindingHandle);
 
 Una vez que ha llamado a la [**función RpcNsBindingImportNext**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportnext) para obtener un identificador de enlace, la aplicación cliente puede determinar si el identificador que recibió es aceptable. Si no es así, el programa cliente puede ejecutar un bucle y llamar de nuevo a **RpcNsBindingImportNext** para ver si el servicio de nombres contiene un identificador más adecuado. Para cada llamada a **RpcNsBindingImportNext**, debe haber una llamada correspondiente a RpcNsBindingFree. Una vez completada la búsqueda, llame a [**la función RpcNsBindingImportDone**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportdone) para liberar el contexto de búsqueda.
 
-Una vez que la aplicación cliente tiene un identificador de enlace aceptable, debe comprobar que la aplicación de servidor se está ejecutando. Hay dos métodos que el cliente puede usar para realizar esta comprobación. La primera es llamar a una función en la interfaz de cliente. Si el programa de servidor se está ejecutando, se completará la llamada. Si no es así, se producirá un error en la llamada. Una mejor manera de comprobar que el servidor se está ejecutando es invocar [**RpcEpResolveBinding,**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcepresolvebinding)seguido de una llamada a [**RpcMgmtIsServerListening.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtisserverlistening) Para obtener más información sobre la base de datos del servicio de nombres, vea [La base de datos del servicio de nombres RPC](the-rpc-name-service-database.md).
+Una vez que la aplicación cliente tiene un identificador de enlace aceptable, debe comprobar que la aplicación de servidor se está ejecutando. Hay dos métodos que el cliente puede usar para realizar esta comprobación. La primera es llamar a una función en la interfaz de cliente. Si el programa de servidor se está ejecutando, la llamada se completará. Si no es así, se producirá un error en la llamada. Una mejor manera de comprobar que el servidor se está ejecutando es invocar [**RpcEpResolveBinding,**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcepresolvebinding)seguido de una llamada a [**RpcMgmtIsServerListening.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtisserverlistening) Para obtener más información sobre la base de datos del servicio de nombres, vea [La base de datos del servicio de nombres RPC](the-rpc-name-service-database.md).
 
  
 

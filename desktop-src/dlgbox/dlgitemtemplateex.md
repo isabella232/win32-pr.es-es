@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ad2bf1795f5059ec1fdda00ddb6a93cfe396dae5b4119d392eff42382fa978b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7261fa832e5acfb4ef7d9723bc93b862947ef380
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118785871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241383"
 ---
 # <a name="dlgitemtemplateex-structure"></a>Estructura DLGITEMTEMPLATEEX
 
@@ -45,7 +45,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -126,7 +126,7 @@ Alto, en unidades de cuadro de diálogo, del control.
 
 </dd> <dt>
 
-**identificador**
+**id**
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -146,11 +146,11 @@ Tipo: **sz \_ o \_ ord**
 
 Matriz de longitud variable de elementos de 16 bits que especifica la clase de ventana del control. Si el primer elemento de esta matriz es cualquier valor distinto de 0xFFFF, el sistema trata la matriz como una cadena Unicode terminada en NULL que especifica el nombre de una clase de ventana registrada.
 
-Si el primer elemento se 0xFFFF, la matriz tiene un elemento adicional que especifica el valor ordinal de una clase del sistema predefinida. El ordinal puede ser uno de los siguientes valores atom.
+Si el primer elemento es 0xFFFF, la matriz tiene un elemento adicional que especifica el valor ordinal de una clase del sistema predefinida. El ordinal puede ser uno de los siguientes valores atom.
 
 
 
-| Valor                                                                             | Significado               |
+| Value                                                                             | Significado               |
 |-----------------------------------------------------------------------------------|-----------------------|
 | <dl> <dt>0x0080</dt> </dl> | Botón<br/>     |
 | <dl> <dt>0x0081</dt> </dl> | Editar<br/>       |
@@ -187,7 +187,7 @@ Número de bytes de datos de creación que siguen a este miembro. Si este valor 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una plantilla extendida para un cuadro de diálogo consta de un encabezado [**DLGTEMPLATEEX**](dlgtemplateex.md) seguido de una **estructura DLGITEMTEMPLATEEX** para cada control del cuadro de diálogo.
 
@@ -201,14 +201,14 @@ Los **miembros x**, **y**, **cx** y **cy** especifican valores en unidades de cu
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

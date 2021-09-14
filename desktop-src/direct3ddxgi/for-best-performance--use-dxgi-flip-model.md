@@ -5,16 +5,16 @@ title: Para obtener el mejor rendimiento, use el modelo de volteo DXGI.
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: RS5
-ms.openlocfilehash: ce999bc735042132902158cfd6bd6d41296d29a3afc98ab27d9480dc6bd8b3b3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2a1e671c03f468fd62b0b5bad0f008f84e62ca3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360847"
 ---
 # <a name="for-best-performance-use-dxgi-flip-model"></a>Para obtener el mejor rendimiento, use el modelo de volteo DXGI.
 
-En este tema se proporcionan instrucciones para desarrolladores sobre cómo maximizar el rendimiento y la eficacia en la pila de presentación en versiones modernas de Windows. Recoge el modelo de volteo [DXGI,](dxgi-flip-model.md) [DirectX 12:](https://www.youtube.com/watch?v=E3wTajGZOsA)modos de presentación en Windows 10 (vídeo) y Mejoras de presentación en Windows 10: Un aspecto temprano [(vídeo)](https://www.youtube.com/watch?v=nUZVV_mssWQ) dejados.
+En este tema se proporcionan instrucciones para desarrolladores sobre cómo maximizar el rendimiento y la eficacia en la pila de presentación en versiones modernas de Windows. Recoge el modelo de volteo [DXGI,](dxgi-flip-model.md) [DirectX 12:](https://www.youtube.com/watch?v=E3wTajGZOsA)Modos de presentación en Windows 10 (vídeo) y Mejoras de presentación en Windows 10: Una apariencia [temprana (vídeo)](https://www.youtube.com/watch?v=nUZVV_mssWQ) dejados.
 
 ## <a name="call-to-action"></a>Llamada a la acción
 
@@ -24,7 +24,7 @@ Cambio a **DXGI \_ SWAP EFFECT FLIP \_ \_ \_ SEQUENTIAL** o **DXGI SWAP EFFECT F
 
 Los presentaciones de modelo de volteo van tan lejos como hacer que el modo de ventana sea equivalente o mejor en comparación con el modo clásico "pantalla completa exclusiva". De hecho, es posible que quiera replantearse si la aplicación realmente necesita un modo exclusivo de pantalla completa, ya que las ventajas de una ventana sin borde del modelo de volteo incluyen una conmutación de Alt-Tab más rápida y una mejor integración con características de pantalla modernas.
 
-¿Por qué se aplican ahora? Antes de la actualización de abril de 2018, el modelo blt presentaba un desgarro visible cuando se usaba en configuraciones de GPU híbridas, a menudo encontradas en equipos portátiles de gama alta (consulte [KB 3158621](https://support.microsoft.com/help/3158621/hybrid-graphics-and-vsync-results-in-graphic-tearing-in-some-games-and)). En la actualización de abril de 2018, se ha corregido este desgarro, a costa de algún trabajo adicional. Si va a realizar presentaciones con velocidades de fotogramas elevadas en GPU híbridas, especialmente en resoluciones altas como 4K, este trabajo adicional puede afectar al rendimiento general. Para mantener el mejor rendimiento en estos sistemas, cambie del modelo blt al modelo actual de volteo. Además, considere la posibilidad de reducir la resolución de la cadena de intercambio, especialmente si no es el punto principal de interacción del usuario (como suele ser el caso de las ventanas de vista previa de VR).
+¿Por qué se aplican ahora? Antes de la actualización de abril de 2018, el modelo blt presentaba un desgarro visible cuando se usaba en configuraciones de GPU híbridas, que a menudo se encontraban en equipos portátiles de gama alta (consulte [KB 3158621](https://support.microsoft.com/help/3158621/hybrid-graphics-and-vsync-results-in-graphic-tearing-in-some-games-and)). En la actualización de abril de 2018, se ha corregido este desgarro, a costa de algún trabajo adicional. Si va a realizar presentaciones con velocidades de fotogramas elevadas en GPU híbridas, especialmente en resoluciones altas como 4K, este trabajo adicional puede afectar al rendimiento general. Para mantener el mejor rendimiento en estos sistemas, cambie del modelo blt al modelo actual de volteo. Además, considere la posibilidad de reducir la resolución de la cadena de intercambio, especialmente si no es el punto principal de interacción del usuario (como suele ser el caso de las ventanas de vista previa de VR).
 
 ## <a name="a-brief-history"></a>Un breve historial
 
@@ -32,11 +32,11 @@ Los presentaciones de modelo de volteo van tan lejos como hacer que el modo de v
 
 Antes de Windows 7, la única manera de presentar contenido de D3D era "blt" o copiarlo en una superficie que era propiedad de la ventana o pantalla. A partir del efecto de intercambio FLIPEX de D3D9 y la llegada a DXGI a través del efecto de intercambio FLIP SEQUENTIAL en Windows 8, hemos desarrollado una manera más eficaz de colocar contenido en pantalla al compartirlo directamente con el compositor de escritorio, con copias \_ mínimas. Consulte [Modelo de volteo DXGI](dxgi-flip-model.md) para obtener información general de alto nivel de la tecnología.
 
-Esta optimización es posible gracias al DWM (Administrador de ventanas de escritorio), que es el compositor que impulsa el Windows escritorio.
+Esta optimización es posible gracias a DWM (Administrador de ventanas de escritorio), que es el compositor que dirige el Windows escritorio.
 
 ## <a name="when-should-i-use-the-blt-model"></a>¿Cuándo debo usar el modelo blt?
 
-Hay una parte de la funcionalidad que el modelo de volteo no proporciona: la capacidad de tener varias API diferentes que producen contenido, que se capa a su vez en el mismo **HWND,** de forma presente por presente. Un ejemplo de esto sería usar D3D para dibujar un fondo de ventana y, Windows continuación, [un GDI para](/windows/desktop/gdi/windows-gdi) dibujar algo en la parte superior, o usar dos API de gráficos diferentes, o dos cadenas de intercambio de la misma API, para generar fotogramas alternos. Si no necesita interoperabilidad **de nivel HWND** entre componentes de gráficos, no necesita el modelo blt.
+Hay una parte de la funcionalidad que el modelo de volteo no proporciona: la capacidad de tener varias API diferentes que producen contenido, que se capa a su vez en el mismo **HWND,** de forma presente por presente. Un ejemplo de esto sería usar D3D para dibujar un fondo de ventana y, Windows continuación, [un GDI](/windows/desktop/gdi/windows-gdi) para dibujar algo en la parte superior, o usar dos API de gráficos diferentes, o dos cadenas de intercambio de la misma API, para generar fotogramas alternos. Si no necesita interoperabilidad **de nivel HWND** entre componentes de gráficos, no necesita el modelo blt.
 
 Hay una segunda parte de funcionalidad que no se proporcionó en el diseño original del modelo de volteo, pero que ahora está disponible, que es la capacidad de presentarse en una velocidad de fotogramas no limitada. En el caso de una aplicación que usa el intervalo de sincronización 0, no se recomienda cambiar al modelo de volteo a menos que la API [IDXGIFactory5::CheckFeatureSupport](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) esté disponible e informe de la compatibilidad con **DXGI \_ FEATURE PRESENT ALLOW \_ \_ \_ TEARING**. Esta característica es casi ubicua en las versiones recientes de Windows 10 y en hardware moderno.
 
@@ -60,7 +60,7 @@ Consulte la herramienta [PresentMon](https://github.com/GameTechDev/PresentMon) 
 
 Además de las mejoras anteriores, que se aplican a las cadenas de intercambio estándar sin nada especial, hay varias características disponibles para que las aplicaciones de modelo flip usen:
 
--   Reducir la latencia mediante **DXGI \_ SWAP CHAIN FLAG FRAME \_ \_ \_ \_ LATENCY \_ WAITABLE \_ OBJECT**. Cuando está en modo de volteo independiente, puede llegar a un marco de latencia en las versiones recientes de Windows, con una reserva correcta al mínimo posible cuando se compone.
+-   Reducir la latencia mediante **DXGI \_ SWAP CHAIN FLAG FRAME \_ \_ \_ \_ LATENCY \_ WAITABLE \_ OBJECT**. Cuando está en el modo de inversión independiente, puede llegar a un fotograma de latencia en las versiones recientes de Windows, con una reserva correcta al mínimo posible cuando se compone.
     -   Advertencia: hubo un problema que dio un mínimo de dos fotogramas de latencia en la actualización de aniversario Windows 10 anterior. Consulte [este tema del foro](https://www.gamedev.net/forums/topic/686507-windows-10-dx12-low-latency-tearing-free-rendering/) para obtener más información. Esto se ha corregido en Fall Creator's Update.
 -   **DXGI \_ SWAP \_ EFFECT FLIP DISCARD \_ \_ habilita** un modo de "composición inversa" de volteo directo, lo que da como resultado un trabajo menos general para mostrar el escritorio. DwM puede suscribirse en los búferes de la aplicación y enviarlos a la pantalla, en lugar de realizar una copia completa en sus propias cadenas de intercambio.
 -   **DXGI \_ SWAP \_ CHAIN FLAG ALLOW \_ \_ \_ TEARING** puede permitir una latencia incluso menor que el objeto que se puede esperar, incluso en una ventana en sistemas con compatibilidad con superposición de varios planos.

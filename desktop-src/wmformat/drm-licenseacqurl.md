@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a82edc09cf28ab5b46f4dc6df91f266927294209c69ff11289324d01cedbd23e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 231efc4334a4d893b4bdd1e7545bd50b1bed2a5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117848484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360963"
 ---
 # <a name="drm_licenseacqurl"></a>Licencia \_ de DRMAcqURL
 
@@ -31,9 +31,9 @@ g \_ wszWMDRM \_ LicenseAcqURL
 
 **CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo se puede establecer mediante [**IWMDRMWriter::SetDRMAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute) y se puede recuperar con [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty). El mismo atributo de archivo se puede recuperar mediante [**DRM \_ DRMHeader \_ LicenseAcqURL.**](drm-drmheader-licenseacqurl.md)
+Este atributo se puede establecer mediante [**IWMDRMWriter::SetDRMAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute) y se puede recuperar con [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty). El mismo atributo de archivo se puede recuperar mediante [**DRM \_ DRMHeader \_ LicenseAcqURL**](drm-drmheader-licenseacqurl.md).
 
 ## <a name="see-also"></a>Consulte también
 

@@ -4,12 +4,12 @@ ms.assetid: 9bb56d80-670e-4b2b-bf3f-40d0a75a89b6
 title: StructuredQuerySample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cab8f32a3ed58133893ed5c38c16c2ac242e9a28c6384a4e354bb6b0524c5a1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64da74b56658f74b056c64c314a2986ddce45ba3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118462585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363231"
 ---
 # <a name="structuredquerysample"></a>StructuredQuerySample
 
@@ -34,16 +34,16 @@ En este tema se incluyen las siguientes secciones.
 
 Este ejemplo está disponible en la siguiente ubicación.
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                  |
+| Location      | Dirección URL de ruta de acceso                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub        | [StructuredQuerySample](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/StructuredQuerySample)  |
 
 > [!NOTE]  
-> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para la versión más actualizada.
+> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para obtener la versión más actualizada.
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-1. Abra Windows explorador y vaya al directorio del proyecto **StructuredQuerySample.**
+1. Abra Windows Explorer y vaya al directorio del proyecto **StructuredQuerySample.**
 2. Haga doble clic en el icono del archivo StructuredQuerySample.sln para abrir el proyecto en Visual Studio.
 
     > [!NOTE]  
@@ -54,7 +54,7 @@ Este ejemplo está disponible en la siguiente ubicación.
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
 1. Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows Explorador.
-2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic en `StructuredQuerySample.exe` el icono de StructuredQuerySample.exe.
+2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic en el `StructuredQuerySample.exe` icono de StructuredQuerySample.exe.
 
 ## <a name="related-topics"></a>Temas relacionados
 

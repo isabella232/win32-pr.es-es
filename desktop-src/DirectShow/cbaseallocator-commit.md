@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba9c373a15d5200d6466fef5c519a59a1052c8e5854ebe38c5a8b027d21188a5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b49fae72e5588105b1235c1f0c461d5cc45cfa2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361427"
 ---
 # <a name="cbaseallocatorcommit-method"></a>Método CBaseAllocator.Commit
 
@@ -55,13 +55,13 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la lista sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de llamar a este método, llame [**al método CBaseAllocator::SetProperties**](cbaseallocator-setproperties.md) para especificar los requisitos del búfer.
 
-Este método llama al método virtual [**CBaseAllocator::Alloc**](cbaseallocator-alloc.md) para asignar la memoria para los búferes. Las clases derivadas pueden invalidar **Alloc**. Si una operación de desaprobación está pendiente, se cancela.
+Este método llama al método virtual [**CBaseAllocator::Alloc**](cbaseallocator-alloc.md) para asignar la memoria para los búferes. Las clases derivadas pueden invalidar **Alloc**. Si hay una operación de desaprobación pendiente, se cancela.
 
-Debe llamar a este método antes de llamar [**al método CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md)
+Debe llamar a este método antes de llamar al [**método CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Debe llamar a este método antes de llamar [**al método CBaseAllocator::GetBuff
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

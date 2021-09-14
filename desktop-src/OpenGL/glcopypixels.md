@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 43c399b4ce63f84c41bcb2d65140356ac20a6ddd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479451"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362094"
 ---
 # <a name="glcopypixels-function"></a>Función glCopyPixels
 
@@ -80,7 +80,7 @@ Especifica si **glCopyPixels** va a copiar valores de color, valores de profundi
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="GL_COLOR"></span><span id="gl_color"></span><dl><dt><strong>GL_COLOR</strong></dt></dl> | La <strong>función glCopyPixels</strong> lee índices o colores RGBA del búfer especificado actualmente como búfer de origen de lectura <a href="glreadbuffer.md"><strong>(vea glReadBuffer</strong></a>). <br /> Si OpenGL está en modo de índice de color:<br /><ol><li>Cada índice que se lee de este búfer se convierte a un formato de punto fijo con un número no especificado de bits a la derecha del punto binario.</li><li>Cada índice se desplaza a la izquierda GL_INDEX_SHIFT bits y se agrega a GL_INDEX_OFFSET. Si GL_INDEX_SHIFT es negativo, el desplazamiento es a la derecha. En cualquier caso, los bits cero rellenan ubicaciones de bits no especificadas en el resultado.<br /></li><li>Si GL_MAP_COLOR es true, el índice se reemplaza por el valor al que hace referencia en la tabla de GL_PIXEL_MAP_I_TO_I.</li><li>Tanto si la sustitución de búsqueda del índice se realiza como si no, la parte entera del índice es <strong>ENTONCES AND</strong>ed con 2<em><sup>b</sup></em> 1, donde <em>b</em> es el número de bits de un búfer de índice de color.</li></ol>Si OpenGL está en modo RGBA:<br /><ol><li>Los componentes rojo, verde, azul y alfa de cada píxel que se lee se convierten a un formato de punto flotante interno con precisión no especificada.</li><li>La conversión asigna el mayor valor de componente representable a 1,0 y el valor de componente cero a 0,0.</li><li>A continuación, los valores de color de punto flotante resultantes se multiplican por GL_c_SCALE y se agregan a GL_c_BIAS, donde <em>c</em> es RED, GREEN, BLUE y ALPHA para los componentes de color respectivos.</li><li>Los resultados se fijan en el intervalo [0,1].</li><li>Si GL_MAP_COLOR es true, cada componente de color se escala por el tamaño de la tabla de búsqueda GL_PIXEL_MAP_c_TO_c y, a continuación, se reemplaza por el valor al que hace referencia en esa tabla; <em>c</em> es R, G, B o A, respectivamente. A continuación, los índices resultantes o los colores RGBA se convierten en fragmentos adjuntando la posición de trama <em>actual z</em>-coordenada y coordenadas de textura a cada píxel y, a continuación, asignando coordenadas de ventana<em>(x</em><sub>r</sub> + i, <em>y</em><sub>r</sub>j ), donde ( x r , y r ) es la posición de trama actual y el píxel era el píxel en la posición i de la  +  <em></em>fila <em></em><sub></sub> <em>j.</em> <em></em><sub></sub> <em></em> Estos fragmentos de píxeles se tratan como los fragmentos generados al rasterizar puntos, líneas o polígonos. La asignación de texturas, los grados y todas las operaciones de fragmento se aplican antes de que los fragmentos se escriban en el búfer de fotogramas.<br /></li></ol> | 
 | <span id="GL_DEPTH"></span><span id="gl_depth"></span><dl><dt><strong>GL_DEPTH</strong></dt></dl> | Los valores de profundidad se leen desde el búfer de profundidad y se convierten directamente en un formato de punto flotante interno con precisión no especificada. A continuación, el valor de profundidad de punto flotante resultante se multiplica por GL_DEPTH_SCALE y se agrega a GL_DEPTH_BIAS. El resultado se fija en el intervalo [0,1]. <br /> A continuación, los componentes de profundidad resultantes se convierten en fragmentos adjuntando el color de la posición de trama actual o el índice de color y las coordenadas de textura a cada píxel y, a continuación, asignando coordenadas de ventana<em>(x</em><sub>r</sub> + i, <em>y</em><sub>r</sub>j ), donde ( x r , y r ) es la posición de trama actual y el píxel era el píxel en la posición i de la fila  +  <em></em> <em></em><sub></sub> <em>j.</em> <em></em><sub></sub> <em></em> Estos fragmentos de píxeles se tratan como los fragmentos generados al rasterizar puntos, líneas o polígonos. La asignación de texturas, los grados y todas las operaciones de fragmento se aplican antes de que los fragmentos se escriban en el búfer de fotogramas.<br /> | 
@@ -113,7 +113,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glCopyPixels** copia un rectángulo alineado con la pantalla de píxeles de la ubicación del búfer de fotogramas especificado en una región con respecto a la posición de trama actual. Su operación solo está bien definida si toda la región de origen de píxeles está dentro de la parte expuesta de la ventana. Los resultados de copias desde fuera de la ventana, o desde regiones de la ventana que no están expuestas, dependen del hardware y no están definidos.
 
@@ -151,7 +151,7 @@ Para copiar el píxel de color de la esquina inferior izquierda de la ventana en
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

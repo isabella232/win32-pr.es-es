@@ -1,6 +1,6 @@
 ---
 title: Función glColor4uiv (Gl.h)
-description: Establece el color actual de una matriz de valores de color ya existente. | Función glColor4uiv (Gl.h)
+description: Establece el color actual de una matriz existente de valores de color. | Función glColor4uiv (Gl.h)
 ms.assetid: de21116b-50f6-4a80-8fa1-e8cf6e4978e9
 keywords:
 - Función glColor4uiv OpenGL
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef6ab454b402de138b93e82ad728add14fd26734a4ccec13914841501af5e75e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2acc9a413436b4d6b6fad4ca175aa74821ad2dbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362111"
 ---
 # <a name="glcolor4uiv-function"></a>Función glColor4uiv
 
-Establece el color actual de una matriz de valores de color ya existente.
+Establece el color actual de una matriz existente de valores de color.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glColor4uiv(
 *V* 
 </dt> <dd>
 
-Puntero a una matriz que contiene valores rojo, verde, azul y alfa.
+Puntero a una matriz que contiene valores rojos, verdes, azules y alfa.
 
 </dd> </dl>
 
@@ -51,15 +51,15 @@ Puntero a una matriz que contiene valores rojo, verde, azul y alfa.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El GL almacena un índice de color actual de un solo valor y un color RGBA de cuatro valores actual. **glcolor** establece un nuevo color RGBA de cuatro valores. **glcolor** tiene dos variantes principales: **glcolor3** y **glcolor4.** Las **variantes glcolor3** especifican los nuevos valores rojo, verde y azul explícitamente y establecen el valor alfa actual en 1,0 (intensidad completa) implícitamente. **Las variantes glcolor4** especifican explícitamente los cuatro componentes de color.
+El GL almacena un índice de color actual de un solo valor y un color RGBA de cuatro valores actual. **glcolor** establece un nuevo color RGBA de cuatro valores. **glcolor** tiene dos variantes principales: **glcolor3** y **glcolor4.** Las **variantes glcolor3** especifican los nuevos valores rojos, verdes y azules explícitamente y establecen el valor alfa actual en 1,0 (intensidad completa) implícitamente. **Las variantes glcolor4** especifican explícitamente los cuatro componentes de color.
 
-**glcolor3b,** **glcolor4b,** **glcolor3s,** **glcolor4s,** **glcolor3i** y **glcolor4i** toman tres o cuatro enteros de bytes, cortos o largos como argumentos. Cuando v se anexa al nombre, los comandos de color pueden tomar un puntero a una matriz de estos valores.
+**glcolor3b,** **glcolor4b,** **glcolor3s,** **glcolor4s,** **glcolor3i** y **glcolor4i** toman tres o cuatro enteros de bytes con signo, cortos o largos como argumentos. Cuando v se anexa al nombre, los comandos de color pueden tomar un puntero a una matriz de estos valores.
 
-Los valores de color actuales se almacenan en formato de punto flotante, con tamaños de mantisa y exponente no especificados. Los componentes de color entero sin signo, cuando se especifican, se asignan linealmente a valores de punto flotante, de modo que el valor representable más grande se asigna a 1,0 (intensidad completa) y 0 se asigna a 0,0 (intensidad cero). Los componentes de color entero con signo, cuando se especifican, se asignan linealmente a valores de punto flotante, de modo que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a -1,0. (Tenga en cuenta que esta asignación no convierte 0 de forma precisa en 0,0). Los valores de punto flotante se asignan directamente.
+Los valores de color actuales se almacenan en formato de punto flotante, con tamaños de mantisa y exponente no especificados. Los componentes de color entero sin signo, cuando se especifican, se asignan linealmente a valores de punto flotante de forma que el valor representable más grande se asigna a 1,0 (intensidad completa) y 0 a 0,0 (intensidad cero). Los componentes de color entero con signo, cuando se especifican, se asignan linealmente a valores de punto flotante de forma que el valor representable más positivo se asigna a 1,0 y el valor representable más negativo se asigna a -1,0. (Tenga en cuenta que esta asignación no convierte 0 de forma precisa a 0,0). Los valores de punto flotante se asignan directamente.
 
-Ni los valores de punto flotante ni entero con signo se fijan en el \[ intervalo 0,1 antes de actualizar \] el color actual. Sin embargo, los componentes de color se fijan a este intervalo antes de interpolarse o escribirse en un búfer de color.
+Ni los valores de punto flotante ni enteros con signo se fijan al intervalo \[ 0,1 antes de \] actualizar el color actual. Sin embargo, los componentes de color se fijan a este intervalo antes de interpolarse o escribirse en un búfer de colores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Ni los valores de punto flotante ni entero con signo se fijan en el \[ intervalo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

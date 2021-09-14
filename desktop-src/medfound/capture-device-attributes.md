@@ -4,12 +4,12 @@ ms.assetid: dd24671a-0689-4490-8d18-2a33ed461e9d
 title: Capturar atributos de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 265a27f34b5b12cc5909ea2cfa8bbf90d6d623fe4b4acf40e39fdd64d8ad8936
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43dd8dbcdf0a441ddb8a5ef2794526e961c22033
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119959165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241167"
 ---
 # <a name="capture-device-attributes"></a>Capturar atributos de dispositivo
 

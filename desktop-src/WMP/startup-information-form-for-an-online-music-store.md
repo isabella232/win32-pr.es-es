@@ -6,12 +6,12 @@ keywords:
 - Reproductor de Windows Media Tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83acbe30b3d5232abb6c79cb845f29d46cd741b2ea6b3a84f03ecd082cb13e99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3ded923538d6be6c8a22fa0ba96ddcd0814348d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118118545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241730"
 ---
 # <a name="startup-information-form-for-an-online-music-store"></a>Formulario de información de inicio para un almacén de Música en línea
 
@@ -23,7 +23,7 @@ Rellene y envíe un formulario para cada tienda y cada configuración regional a
 |---------------------------|-------------|
 | Nombre de la tienda                |             |
 | Configuración regional                    |             |
-| Fecha                      |             |
+| Date                      |             |
 | Ventana de incorporación de destino |             |
 
 
@@ -96,7 +96,7 @@ Rellene y envíe un formulario para cada tienda y cada configuración regional a
 
 | Elemento                                                                                     | Descripción |
 |------------------------------------------------------------------------------------------|-------------|
-| ¿Cómo se pueden evaluar las cuentas de prueba?<br/> (Número ficticio de tarjeta de crédito?, ...?<br/> |             |
+| ¿Cómo se pueden evaluar las cuentas de prueba?<br/> (Número de tarjeta de crédito ficticio?, ...?<br/> |             |
 
 
 

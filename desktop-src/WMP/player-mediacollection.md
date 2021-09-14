@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea536f8938e5ab438312980f03536d7930ddcea45f01c7250c08a5c9665b1f45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa79b455abec6fbdd5c7b4eda0eca327bd57f81f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118573172"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359276"
 ---
 # <a name="playermediacollection"></a>Player.mediaCollection
 
 La **propiedad mediaCollection** recupera el **objeto MediaCollection.**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player* . **mediaCollection**
 
@@ -33,22 +33,22 @@ La **propiedad mediaCollection** recupera el **objeto MediaCollection.**
 
 Esta propiedad es un objeto **MediaCollection de** solo lectura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

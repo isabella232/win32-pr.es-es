@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d910e479cc0a957ea5f1332d7fead0f93badd797bfe2d90b26f9914f0c3d863a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 66da0ad5ade7f3e01f58ef29bbd1094634c01b37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118882610"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374855"
 ---
 # <a name="systemmonitorenabledigitgrouping-property"></a>Propiedad SystemMonitor.EnableDigitGrouping
 
 Recupera o establece un valor que determina si SYSMON usa la agrupación de dígitos al mostrar valores numéricos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -38,9 +38,9 @@ Property EnableDigitGrouping As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si es True, SYSMON agrupará dígitos al mostrar valores numéricos, por ejemplo, 1214. Si es False, los valores numéricos no se agrupan, por ejemplo, 1214. True es el valor predeterminado.
+Si es True, SYSMON agrupará los dígitos al mostrar valores numéricos, por ejemplo, 1214. Si es False, los valores numéricos no se agrupan, por ejemplo, 1214. True es el valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El símbolo de agrupación de dígitos está localizado.
 
@@ -48,7 +48,7 @@ El símbolo de agrupación de dígitos está localizado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 229b269e8d9677e0ffdedffb3d91029a473292082409830ac26490bf34680075
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4dec5130edb0b8ef30af1397be501fa9cd5d5744
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118617050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362078"
 ---
 # <a name="gldepthfunc-function"></a>Función glDepthFunc
 
@@ -106,7 +106,7 @@ Las funciones siguientes recuperan información relacionada **con glDepthFunc**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

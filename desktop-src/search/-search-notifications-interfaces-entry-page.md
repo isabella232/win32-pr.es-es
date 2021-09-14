@@ -4,12 +4,12 @@ ms.assetid: 32638e85-7c24-4756-99f2-478316b5a326
 title: Interfaces de notificaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ace742d00d6acf780f1ca37086850df297b67b6fb0e557fa0ef3c9592dd30316
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06581e5326fc8a3bc42f073d1ddce3efcc509c7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118462973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360652"
 ---
 # <a name="notifications-interfaces"></a>Interfaces de notificaciones
 

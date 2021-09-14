@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfidl.h
-ms.openlocfilehash: 885c3e9c34fa787a6877fd37eef81f470be395225594b90b2f5516a8e773eb88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 604fee61ae4b6a34d876de8c2863ee6dddad73d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118244143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363879"
 ---
-# <a name="mf_video_processor_algorithm_type-enumeration"></a>Enumeración MF \_ VIDEO \_ PROCESSOR ALGORITHM \_ \_ TYPE
+# <a name="mf_video_processor_algorithm_type-enumeration"></a>ENUMERACIÓN MF \_ VIDEO \_ PROCESSOR ALGORITHM \_ \_ TYPE
 
 Define algoritmos para el procesador de vídeo que utiliza [MF \_ VIDEO PROCESSOR \_ \_ ALGORITHM](mf-video-processor-algorithm.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -40,7 +40,7 @@ typedef enum _MF_VIDEO_PROCESSOR_ALGORITHM_TYPE {
 
 <dl> <dt>
 
-<span id="MF_VIDEO_PROCESSOR_ALGORITHM_DEFAULT"></span><span id="mf_video_processor_algorithm_default"></span>**VALOR \_ PREDETERMINADO DEL ALGORITMO DE PROCESADOR DE \_ \_ VÍDEO MF \_**
+<span id="MF_VIDEO_PROCESSOR_ALGORITHM_DEFAULT"></span><span id="mf_video_processor_algorithm_default"></span>**VALOR \_ PREDETERMINADO DEL ALGORITMO DEL PROCESADOR DE VÍDEO \_ \_ MF \_**
 </dt> <dd>
 
 el modo predeterminado favorece un equilibrio de calidad y velocidad
@@ -50,7 +50,7 @@ el modo predeterminado favorece un equilibrio de calidad y velocidad
 <span id="MF_VIDEO_PROCESSOR_ALGORITHM_MRF_CRF_444"></span><span id="mf_video_processor_algorithm_mrf_crf_444"></span>**ALGORITMO \_ DE PROCESADOR DE VÍDEO MF \_ \_ \_ MRF \_ CRF \_ 444**
 </dt> <dd>
 
-El procesador de vídeo siempre procesará internamente en AYUV y usará filtros de alta calidad.
+El procesador de vídeo siempre se procesará internamente en AYUV y usará filtros de alta calidad.
 
 </dd> </dl>
 
@@ -58,11 +58,11 @@ El procesador de vídeo siempre procesará internamente en AYUV y usará filtros
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                              |
-| Idl<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 

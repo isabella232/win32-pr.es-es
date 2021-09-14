@@ -11,22 +11,22 @@ api_name:
 - SharedPropertyGroupManager
 api_type:
 - COM
-ms.openlocfilehash: ac05dcc813192a9ea1bf1f1f4e5ad63ed72eca6874de855ac3f4582af51680f6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 680c5caef996d329e18192193f30841f61f02f27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361659"
 ---
-# <a name="sharedpropertygroupmanager-class"></a>Clase SharedPropertyGroupManager
+# <a name="sharedpropertygroupmanager-class"></a>SharedPropertyGroupManager (clase)
 
 Crea grupos de propiedades compartidas y para obtener acceso a los grupos de propiedades compartidos existentes.
 
-Para obtener más información sobre el uso del Administrador de propiedades compartido en COM+, vea [COM+ Shared Administrador de propiedades](com--shared-property-manager.md).
+Para obtener más información sobre el uso de shared Administrador de propiedades en COM+, vea [COM+ Shared Administrador de propiedades](com--shared-property-manager.md).
 
 ## <a name="when-to-implement"></a>Cuándo implementar
 
-ESTA clase se implementa mediante COM+.
+COM+implementa esta clase.
 
 
 
@@ -44,7 +44,7 @@ ESTA clase se implementa mediante COM+.
 
 Use esta clase para tener acceso a los métodos [**de ISharedPropertyGroupManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroupmanager).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para crear este objeto, llame a [**IObjectContext::CreateInstance**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-createinstance).
 
@@ -62,7 +62,7 @@ Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la bibl
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

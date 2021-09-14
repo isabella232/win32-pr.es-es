@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e447e471f1a37f4d0c8c6bd8fb3ce548bb5657e49afafa01e785b0870ebdd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97124eeca8051ec23d9a4fea03a98468d320af8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118938360"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375099"
 ---
 # <a name="glpixelmapfv-function"></a>Función glPixelMapfv
 
@@ -45,14 +45,14 @@ void WINAPI glPixelMapfv(
 *map* 
 </dt> <dd>
 
-Un nombre de mapa simbólico. Los diez mapas son los siguientes.
+Nombre de mapa simbólico. Los diez mapas son los siguientes.
 
 
 
 | Value                                                                                                                                                                               | Significado                                               |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | <span id="GL_PIXEL_MAP_I_TO_I"></span><span id="gl_pixel_map_i_to_i"></span><dl> <dt>**GL \_ PIXEL \_ MAP \_ I \_ TO \_ I**</dt> </dl> | Mapas índices de color a índices de color.<br/>       |
-| <span id="GL_PIXEL_MAP_S_TO_S"></span><span id="gl_pixel_map_s_to_s"></span><dl> <dt>**GL \_ PIXEL \_ MAP \_ S \_ TO \_ S**</dt> </dl> | Mapas índices de galería de símbolos a índices de galería de símbolos.<br/>   |
+| <span id="GL_PIXEL_MAP_S_TO_S"></span><span id="gl_pixel_map_s_to_s"></span><dl> <dt>**GL \_ PIXEL \_ MAP \_ S \_ TO \_ S**</dt> </dl> | Mapas de galería de símbolos a índices de galería de símbolos.<br/>   |
 | <span id="GL_PIXEL_MAP_I_TO_R"></span><span id="gl_pixel_map_i_to_r"></span><dl> <dt>**GL \_ PIXEL \_ MAP \_ I \_ TO \_ R**</dt> </dl> | Mapas índices de color a componentes rojos.<br/>      |
 | <span id="GL_PIXEL_MAP_I_TO_G"></span><span id="gl_pixel_map_i_to_g"></span><dl> <dt>**GL \_ PIXEL \_ MAP \_ I \_ TO \_ G**</dt> </dl> | Mapas índices de color a componentes verdes.<br/>    |
 | <span id="GL_PIXEL_MAP_I_TO_B"></span><span id="gl_pixel_map_i_to_b"></span><dl> <dt>**GL \_ PIXEL \_ MAP \_ I \_ TO \_ B**</dt> </dl> | Mapas índices de color a componentes azules.<br/>     |
@@ -94,28 +94,28 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *map* no era un valor aceptado.<br/>                                                                                                                                                                                |
-| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *mapsize era* negativo o mayor que GL \_ PIXEL MAP \_ \_ TABLE. <br/>                                                                                                                                                   |
-| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *el* mapa era GL \_ PIXEL MAP I TO \_ \_ \_ \_ I, GL PIXEL MAP S \_ TO \_ \_ \_ \_ S, GL PIXEL MAP I \_ \_ TO \_ \_ \_ R, GL PIXEL MAP I TO G, GL PIXEL MAP I TO B o \_ GL \_ PIXEL MAP I \_ TO A y \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ *mapsize* no era una potencia de dos. <br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *map* no era un valor aceptado.<br/>                                                                                                                                                                                |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *mapsize* era negativo o mayor que GL \_ PIXEL \_ MAP \_ TABLE. <br/>                                                                                                                                                   |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *map* was GL \_ PIXEL MAP I TO \_ \_ \_ \_ I, GL PIXEL MAP \_ S TO \_ \_ \_ \_ S, GL PIXEL MAP \_ I TO \_ \_ \_ \_ R, GL PIXEL MAP \_ I TO \_ \_ \_ \_ G, GL PIXEL MAP \_ I TO B o GL PIXEL MAP I \_ TO \_ \_ \_ \_ \_ \_ \_ \_ A, and *mapsize* was not a power of two. <br/> |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). <br/>                                                                                     |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La función **glPixelMap** configura tablas de traducción, o mapas, usadas por [**glCopyPixels**](glcopypixels.md), [**glCopyTexImage1D,**](glcopyteximage1d.md) [**glCopyTexImage2D,**](glcopyteximage2d.md) [**glCopyTexSubImage1D,**](glcopytexsubimage1d.md) [**glCopyTexSubImage2D,**](glcopytexsubimage2d.md) [**glDrawPixels,**](gldrawpixels.md) [**glReadPixels,**](glreadpixels.md) [**glTexImage1D,**](glteximage1d.md) [**glTexImage2D,**](glteximage2d.md) [**glTexSubImage1D**](gltexsubimage1d.md) [**y glTexSubImage2D.**](gltexsubimage2d.md) El uso de estos mapas se describe completamente en el tema [**glPixelTransfer**](glpixeltransfer.md) y, en parte, en los temas de los comandos de imagen de textura y píxeles. En este tema solo se describe la especificación de los mapas.
+La función **glPixelMap** configura tablas de traducción, o *mapas,* usadas por [**glCopyPixels,**](glcopypixels.md) [**glCopyTexImage1D,**](glcopyteximage1d.md) [**glCopyTexImage2D,**](glcopyteximage2d.md) [**glCopyTexSubImage1D,**](glcopytexsubimage1d.md) [**glCopyTexSubImage2D,**](glcopytexsubimage2d.md) [**glDrawPixels,**](gldrawpixels.md) [**glReadPixels,**](glreadpixels.md) [**glTexImage1D,**](glteximage1d.md) [**glTexImage2D,**](glteximage2d.md) [**glTexSubImage1D**](gltexsubimage1d.md)y [**glTexSubImage2D.**](gltexsubimage2d.md) El uso de estos mapas se describe completamente en el tema [**glPixelTransfer**](glpixeltransfer.md) y, en parte, en los temas de los comandos de imagen de textura y píxeles. En este tema solo se describe la especificación de los mapas.
 
-El *parámetro map* es un nombre de mapa simbólico, que indica uno de los diez mapas que se establecerán. El *parámetro mapsize* especifica el número de entradas en el mapa y *los* valores son un puntero a una matriz de valores *de asignación* de mapa.
+El *parámetro map* es un nombre de mapa simbólico, que indica uno de los diez mapas que se establecerán. El *parámetro mapsize* especifica el número de entradas del mapa y *values* es un puntero a una matriz de valores *de asignación* de mapa.
 
-Las entradas de un mapa se pueden especificar como números de punto flotante de precisión sencilla, enteros cortos sin signo o enteros largos sin signo. Mapas que almacenan valores de componente de color (todos menos GL PIXEL MAP I TO I y GL PIXEL MAP S TO S) conservan sus valores en formato de punto flotante, con tamaños de \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ mantisa y exponente no especificados. Los valores de punto flotante especificados por [**glPixelMapfv**](glpixelmap.md) se convierten directamente al formato de punto flotante interno de estos mapas y, a continuación, se fijan en el \[ intervalo 0,1. \] Los valores enteros sin signo especificados por **glPixelMapusv** y **glPixelMapuiv** se convierten linealmente de forma que el entero representable más grande se asigna a 1,0 y cero se asigna a 0,0.
+Las entradas de un mapa se pueden especificar como números de punto flotante de precisión sencilla, enteros cortos sin signo o enteros largos sin signo. Mapas que almacenan valores de componente de color (todos menos GL PIXEL MAP I TO I y GL PIXEL MAP S TO S) conservan sus valores en formato de punto flotante, con tamaños de mantisa y exponente no \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ especificados. Los valores de punto flotante especificados por [**glPixelMapfv**](glpixelmap.md) se convierten directamente al formato de punto flotante interno de estos mapas y, a continuación, se fijan en el \[ intervalo 0,1 \] . Los valores enteros sin signo especificados por **glPixelMapusv** y **glPixelMapuiv** se convierten linealmente de modo que el entero representable más grande se asigna a 1,0 y cero se asigna a 0,0.
 
 Mapas que almacenan índices, GL PIXEL MAP I TO I y GL PIXEL MAP S TO S, conservan sus valores en formato de punto fijo, con un número no especificado de bits a la derecha del \_ \_ punto \_ \_ \_ \_ \_ \_ \_ \_ binario. Los valores de punto flotante especificados por [**glPixelMapfv**](glpixelmap.md) se convierten directamente al formato de punto fijo interno de estos mapas. Los valores enteros sin signo especificados por **glPixelMapusv** y **glPixelMapuiv** especifican valores enteros, con todos los ceros a la derecha del punto binario.
 
-En la tabla siguiente se muestran los tamaños y valores iniciales de cada uno de los mapas. Mapas indexados por índices de color o galería de símbolos deben tener *mapsize* = 2 ^ *n* para *algunos n* o los resultados no están definidos. El tamaño máximo permitido para cada mapa depende de la implementación y se puede determinar mediante una llamada **a glGet** con el argumento GL \_ MAX PIXEL MAP \_ \_ \_ TABLE. El máximo único se aplica a todos los mapas y es al menos 32.
+En la tabla siguiente se muestran los tamaños y valores iniciales de cada uno de los mapas. Mapas indexados por índices de color o galería de símbolos deben tener *mapize* = 2 ^ *n* para *algunos n* o los resultados no están definidos. El tamaño máximo permitido para cada mapa depende de la implementación y se puede determinar mediante una llamada **a glGet** con el argumento GL \_ MAX PIXEL MAP \_ \_ \_ TABLE. El único máximo se aplica a todos los mapas y es al menos 32.
 
 
 
-| Asignación                      | Índice de búsqueda  | Valor de búsqueda  | Tamaño inicial | Valor inicial |
+| Map                      | Índice de búsqueda  | Valor de búsqueda  | Tamaño inicial | Valor inicial |
 |--------------------------|---------------|---------------|--------------|---------------|
 | GL \_ PIXEL \_ MAP \_ I \_ TO \_ I | índice de color   | índice de color   | 1            | 0,0           |
 | GL \_ PIXEL \_ MAP \_ S \_ TO \_ S | índice de galería de símbolos | índice de galería de símbolos | 1            | 0,0           |
@@ -132,13 +132,13 @@ En la tabla siguiente se muestran los tamaños y valores iniciales de cada uno d
 
  
 
-Las funciones siguientes recuperan información relacionada **con glPixelMap**:
+Las siguientes funciones recuperan información relacionada con **glPixelMap**:
 
 [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ PIXEL MAP I TO I \_ \_ \_ \_ \_ SIZE
 
-**glGet con** el argumento GL \_ PIXEL MAP S TO S \_ \_ \_ \_ \_ SIZE
+**glGet** con el argumento GL \_ PIXEL MAP S TO S \_ \_ \_ \_ \_ SIZE
 
-**glGet con** el argumento GL \_ PIXEL MAP I TO R \_ \_ \_ \_ \_ SIZE
+**glGet** con el argumento GL \_ PIXEL MAP I TO R \_ \_ \_ \_ \_ SIZE
 
 **glGet** con el argumento GL \_ PIXEL MAP I TO G \_ \_ \_ \_ \_ SIZE
 
@@ -146,13 +146,13 @@ Las funciones siguientes recuperan información relacionada **con glPixelMap**:
 
 **glGet** con el argumento GL \_ PIXEL MAP I TO A \_ \_ \_ \_ \_ SIZE
 
-**glGet con** el argumento GL \_ PIXEL MAP R TO R \_ \_ \_ \_ \_ SIZE
+**glGet** con el argumento GL \_ PIXEL MAP R TO R \_ \_ \_ \_ \_ SIZE
 
-**glGet con** el argumento GL \_ PIXEL MAP G TO G \_ \_ \_ \_ \_ SIZE
+**glGet** con el argumento GL \_ PIXEL MAP G TO G \_ \_ \_ \_ \_ SIZE
 
-**glGet con** el argumento GL \_ PIXEL MAP B TO B \_ \_ \_ \_ \_ SIZE
+**glGet** con el argumento GL \_ PIXEL MAP B TO B \_ \_ \_ \_ \_ SIZE
 
-**glGet con** el argumento GL \_ PIXEL MAP A TO A \_ \_ \_ \_ \_ SIZE
+**glGet** con el argumento GL \_ PIXEL MAP A TO A \_ \_ \_ \_ \_ SIZE
 
 **glGet con** el argumento GL \_ MAX PIXEL MAP \_ \_ \_ TABLE
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a2664a99fb103b41bd3b5040b3876b0cb92b8f9c010f420f93af7eb62a6f32bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d456eae826e8a2e173b92fac4be716fb24bcb92d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117860252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363123"
 ---
 # <a name="folder2offlinestatus-property"></a>Propiedad Folder2.OfflineStatus
 
@@ -96,7 +96,7 @@ El servidor está sin conexión, pero se puede acceder a él.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Archivos sin conexión debe habilitarse a través de Opciones de carpeta para **que OfflineStatus** funcione correctamente. Si la Archivos sin conexión no está habilitada, la propiedad devuelve **OFS \_ INACTIVE**.
@@ -184,12 +184,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

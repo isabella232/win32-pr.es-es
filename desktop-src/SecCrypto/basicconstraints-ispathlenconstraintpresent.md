@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: c6faf267508476f423efaff6b012a25114eca25e7bc21c51c51b9a3e66dde802
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9809b6747bac548b14b37384719dbe2660188582
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374918"
 ---
 # <a name="basicconstraintsispathlenconstraintpresent-property"></a>BasicConstraints.IsPathLenConstraintPresent, propiedad
 
@@ -26,7 +26,7 @@ ms.locfileid: "119879735"
 
 La **propiedad IsPathLenConstraintPresent** recupera un valor booleano que indica si la restricción de longitud de ruta de acceso está presente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

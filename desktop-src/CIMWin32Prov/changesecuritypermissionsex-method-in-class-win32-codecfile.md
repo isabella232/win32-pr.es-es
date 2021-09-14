@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3a025bd9be527237b16022d6544f024e6aa10d294637b16de1df31e43cfa830b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 549c55a5066bdaba4699ec76ed3b7be23eb28b96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119323085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361464"
 ---
-# <a name="changesecuritypermissionsex-method-of-the-win32_codecfile-class"></a>Método ChangeSecurityPermissionsEx de la clase CodecFile win32 \_
+# <a name="changesecuritypermissionsex-method-of-the-win32_codecfile-class"></a>Método ChangeSecurityPermissionsEx de la clase CodecFile de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo de códec especificado en la ruta de acceso del objeto (este método es una versión extendida del [**método ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-win32-directory.md) Si el archivo lógico es un directorio, este método es recursivo y cambia los permisos de seguridad de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -101,7 +101,7 @@ Cambie la lista de control de acceso discrecional (DACL) del archivo lógico.
 
 <span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>
 
-<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE SEGURIDAD \_ DE SACL** (8 (0x8))
+<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**CAMBIO \_ INFORMACIÓN DE \_ SEGURIDAD \_ DE SACL** (8 (0x8))
 
 
 </dt> <dd>
@@ -113,21 +113,21 @@ Cambie la lista de control de acceso del sistema (SACL) del archivo lógico.
 *StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo o directorio en el que se **ha fallado el método ChangeSecurityPermissionsEx.** Este parámetro es null cuando el método se realiza correctamente.
+Nombre del archivo o directorio en el que se **ha fallado el método ChangeSecurityPermissionsEx.** Este parámetro es NULL cuando el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ en, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Denomina el archivo o directorio secundario que se usará como punto de partida para **ChangeSecurityPermissionsEx.** Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio donde se produjo un error de la llamada al método anterior. Si este parámetro es NULL, la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execmethod)
+Denomina el archivo o directorio secundario que se usará como punto de partida **para ChangeSecurityPermissionsEx.** Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio donde se produjo un error de la llamada al método anterior. Si este parámetro es NULL, la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursivo* \[ en, opcional\]
+*Recursiva* \[ in, opcional\]
 </dt> <dd>
 
-Si **es true**, los cambios de propiedad se aplican de forma recursiva a los archivos y directorios del directorio que especifica la instancia de [**\_ LogicalFile**](cim-logicalfile.md) de CIM. En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.*
+Si **es true,** los cambios de propiedad se aplican de forma recursiva a los archivos y directorios del directorio que especifica la [**instancia de \_ LogicalFile**](cim-logicalfile.md) de CIM. En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.*
 
 </dd> </dl>
 
@@ -268,14 +268,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**CodecFile de Win32 \_**](win32-codecfile.md)
+[**CódecFile de \_ Win32**](win32-codecfile.md)
 </dt> </dl>
 
  

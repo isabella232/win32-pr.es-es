@@ -1,6 +1,6 @@
 ---
-title: 'm3x3: vs'
-description: 'Multiplica un vector de tres componentes por una matriz de 3x3. | m3x3: vs'
+title: m3x3- vs
+description: Multiplica un vector de 3 componentes por una matriz de 3x3. | m3x3- vs
 ms.assetid: 6a749ed0-097d-4354-bc70-fbcd879eafab
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 11c1caa682751c3c4d112efd07643233e9cac91392c9e3bb9c575b1f89f5b53f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e75cdb4b098b92ea358c32e40b3948c7ac73e0cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119562065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241437"
 ---
-# <a name="m3x3---vs"></a>m3x3: vs
+# <a name="m3x3---vs"></a>m3x3- vs
 
-Multiplica un vector de tres componentes por una matriz de 3x3.
+Multiplica un vector de 3 componentes por una matriz de 3x3.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,13 +31,13 @@ Multiplica un vector de tres componentes por una matriz de 3x3.
 
  
 
-where
+, donde
 
--   dst es el registro de destino. El resultado es un vector de tres componentes.
--   src0 es un registro de origen que representa un vector de tres componentes.
+-   dst es el registro de destino. El resultado es un vector de 3 componentes.
+-   src0 es un registro de origen que representa un vector de 3 componentes.
 -   src1 es un registro de origen que representa una matriz 3x3, que corresponde al primero de tres registros consecutivos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -62,7 +62,7 @@ dest.z = (src0.x * src3.x) + (src0.y * src3.y) + (src0.z * src3.z);
 
 
 
-El vector de entrada está en el registro src0. La matriz de entrada 3x3 está en el registro src1 y los dos registros superiores siguientes, como se muestra en la expansión siguiente. Se genera un resultado 3D, lo que deja el otro elemento del registro de destino (dest.w) no afectado.
+El vector de entrada está en el registro src0. La matriz de entrada 3x3 está en el registro src1 y los dos siguientes registros superiores, como se muestra en la expansión siguiente. Se genera un resultado 3D, sin que el otro elemento del registro de destino (dest.w) se ven afectados.
 
 Esta operación se usa normalmente para transformar vectores normales durante los cálculos de iluminación. Esta instrucción se implementa como un par de productos de punto, como se muestra a continuación.
 

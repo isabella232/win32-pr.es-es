@@ -4,12 +4,12 @@ description: Identifica la propiedad Tachado \_ PKEY FontProperties de la \_ int
 ms.assetid: 18ee653d-db01-4615-a85d-ad4ac6a0f422
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 746172ec2209861615375e73dee3f2336950a2dd93e76b33893190e9f7e8bc18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b684704fdd90a8dd1b88b14db2b52540b15fccb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117850315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267268"
 ---
 # <a name="ui_pkey_fontproperties_strikethrough"></a>UI \_ PKEY \_ FontProperties \_ Strikethrough
 
@@ -25,7 +25,7 @@ propertyDescription
       type = UI_FONTPROPERTIES
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación usa la interfaz de usuario PKEY FontProperties Strikethrough para consultar \_ el estado del botón \_ \_ **Tachado.**
 
@@ -41,7 +41,7 @@ En la tabla siguiente se describen las propiedades y el resultado de la interfaz
 
 
 
-|   Propiedad                       |    Resultado de la interfaz de usuario                                                                 |
+|   Propiedad.                       |    Resultado de la interfaz de usuario                                                                 |
 |----------------------------------|------------------------------------------------------------------------------|
 | `UI_FONTPROPERTIES_NOTAVAILABLE` | **El botón tachado** está deshabilitado y solo la aplicación puede establecerlo. |
 | `UI_FONTPROPERTIES_NOTSET`       | **El botón Tachado** no está seleccionado.                                    |

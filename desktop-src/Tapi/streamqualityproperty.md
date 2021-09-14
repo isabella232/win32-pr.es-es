@@ -4,12 +4,12 @@ ms.assetid: 28c9257f-6fbb-440f-9b84-c15a74229b5b
 title: Enumeración StreamQualityProperty (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea006b614522ffcab6f96e630df03087b78864ff7d7af6ddcd5c515bc090e821
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7f552641cd0847bb3ff8eec9d528a03171a78c2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119905755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374771"
 ---
 # <a name="streamqualityproperty-enumeration"></a>Enumeración StreamQualityProperty
 
@@ -17,7 +17,7 @@ ms.locfileid: "119905755"
 
 Enumeración **StreamQualityProperty** usada por los métodos [**ITStreamQualityControl::GetRange**](itstreamqualitycontrol-getrange.md), [**ITStreamQualityControl::Get**](itstreamqualitycontrol-get.md)e [**ITStreamQualityControl::Set**](itstreamqualitycontrol-set.md) para indicar la propiedad de calidad de flujo que se está abordando.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -54,7 +54,7 @@ Intervalo máximo de fotogramas.
 <span id="StreamQuality_AvgFrameInterval"></span><span id="streamquality_avgframeinterval"></span><span id="STREAMQUALITY_AVGFRAMEINTERVAL"></span>**StreamQuality \_ AvgFrameInterval**
 </dt> <dd>
 
-Intervalo de fotogramas mínimo.
+Intervalo mínimo de fotogramas.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Intervalo de fotogramas mínimo.
 | Requisito | Value |
 |-------------------------|------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                       |
-| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 

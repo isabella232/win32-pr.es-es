@@ -3,7 +3,7 @@ title: Elemento ApplicationMenu
 description: Representa el menú de la aplicación. | Elemento ApplicationMenu
 ms.assetid: 815e0462-ea45-44b1-81bf-f5797b22e920
 keywords:
-- Elemento ApplicationMenu Windows cinta de opciones
+- Elemento ApplicationMenu Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 7fcf64d3fa3b618a4e66777b8fd4c0d831a33126
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360975"
 ---
 # <a name="applicationmenu-element"></a>Elemento ApplicationMenu
 
@@ -87,7 +87,7 @@ Representa el [menú de la aplicación](windowsribbon-controls-applicationmenu.m
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Necesario.
 
@@ -189,7 +189,7 @@ En esta sección de código se muestran las declaraciones del control **Applicat
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: En esta sección se describen las Windows, enumeraciones y marcas del sistema de propiedades.
+description: En esta sección se describen las Windows del sistema de propiedades, enumeraciones y marcas.
 ms.assetid: ff735b9c-e444-4e6f-8e80-0b2a5d770386
 title: Constantes, enumeraciones y marcas (Windows de propiedades)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24e39d357ae741ae49c4fa98c886e8c08b3594a2ea3a7e4e045def96abe8c2fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8681c773181b69b24b1fe2d01d380d730c33e220
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119718215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360674"
 ---
 # <a name="constants-enumerations-and-flags"></a>Constantes, enumeraciones y marcas
 
-En esta sección se describen las Windows, enumeraciones y marcas del sistema de propiedades.
+En esta sección se describen las Windows del sistema de propiedades, enumeraciones y marcas.
 
 
 
@@ -26,7 +26,7 @@ En esta sección se describen las Windows, enumeraciones y marcas del sistema de
 | [**PROPDESC \_ COLUMNINDEX \_ TYPE**](/windows/win32/api/propsys/ne-propsys-propdesc_columnindex_type)                 | Indica si una propiedad se puede indexar o cómo se puede indexar.<br/>                                                                                                                                                                                                                                                                                                                             |
 | [**TIPO DE CONDICIÓN \_ PROPDESC \_**](/windows/win32/api/propsys/ne-propsys-propdesc_condition_type)                     | Describe el tipo de condición que se va a usar al mostrar la propiedad en la interfaz de usuario del generador de consultas en Windows Vista, pero no en Windows 7 y versiones posteriores.<br/>                                                                                                                                                                                                                                      |
 | [**PROPDESC \_ ENUMFILTER**](/windows/win32/api/propsys/ne-propsys-propdesc_enumfilter)                              | Describe la lista filtrada de descripciones de propiedades que se devuelven.<br/>                                                                                                                                                                                                                                                                                                          |
-| [**MARCAS DE \_ FORMATO PROPDESC \_**](/windows/win32/api/propsys/ne-propsys-propdesc_format_flags)                         | Lo usan las funciones auxiliares de descripción de propiedades, [**como PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay), para indicar el formato de una cadena de propiedad.<br/>                                                                                                                                                                                                                         |
+| [**MARCAS DE \_ FORMATO PROPDESC \_**](/windows/win32/api/propsys/ne-propsys-propdesc_format_flags)                         | Usado por las funciones auxiliares de descripción de propiedades, [**como PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay), para indicar el formato de una cadena de propiedad.<br/>                                                                                                                                                                                                                         |
 | [**PROPDESC \_ RELATIVEDESCRIPTION \_ TYPE**](/windows/win32/api/propsys/ne-propsys-propdesc_relativedescription_type) | Describe el tipo de descripción relativa de una descripción de propiedad, determinado por el atributo *relativeDescriptionType* del [elemento displayInfo.](./propdesc-schema-displayinfo.md)<br/>                                                                                                                                                                                   |
 | [**MARCAS \_ SEARCHINFO DE PROPDESC \_**](/windows/win32/api/propsys/ne-propsys-propdesc_searchinfo_flags)                 | Determina si y cómo se indexa una propiedad mediante Windows Search.<br/>                                                                                                                                                                                                                                                                                                             |
 | [**MARCAS DE TIPO PROPDESC \_ \_**](/windows/win32/api/propsys/ne-propsys-propdesc_type_flags)                             | Describe los atributos del [elemento typeInfo](./propdesc-schema-typeinfo.md) en el archivo .propdesc de la propiedad.<br/>                                                                                                                                                                                                                                                                |

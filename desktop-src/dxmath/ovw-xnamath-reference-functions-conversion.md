@@ -4,12 +4,12 @@ ms.assetid: 6a0a8422-991d-00aa-0fd7-b41387adc72e
 title: Funciones de conversión de directXMath Library
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a96c8d432f15978e12472e877a629b41bfd6f750ac48016711e68bc3274efc49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d182089d766043d47459e859503e48c0c59c2407
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118087762"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360775"
 ---
 # <a name="directxmath-library-conversion-functions"></a>Funciones de conversión de directXMath Library
 

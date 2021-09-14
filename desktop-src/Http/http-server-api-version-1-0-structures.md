@@ -7,12 +7,12 @@ keywords:
 - Estructuras HTTP, API de servidor HTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0bae846a4ee67312e428afe59c6215cda85050a70988ff6cb5e3e6c9ffa4067
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67cdd426bbe9329e089352999acf5c0f79b6f94f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118150328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266252"
 ---
 # <a name="http-server-api-version-10-structures"></a>Estructuras de LA API del servidor HTTP versión 1.0
 
@@ -21,7 +21,7 @@ La API del servidor HTTP proporciona las estructuras siguientes:
 -   [**VERSIÓN DE \_ HTTPAPI**](/windows/desktop/api/Http/ns-http-httpapi_version)
 -   [**INTERVALO \_ DE BYTES \_ HTTP**](/windows/desktop/api/Http/ns-http-http_byte_range)
 -   [**DIRECTIVA \_ DE CACHÉ \_ HTTP**](/windows/desktop/api/Http/ns-http-http_cache_policy)
--   [**DIRECCIÓN URL DE HTTP \_ \_ COOKED**](/windows/desktop/api/Http/ns-http-http_cooked_url)
+-   [**DIRECCIÓN URL DE HTTP \_ COOKED \_**](/windows/desktop/api/Http/ns-http-http_cooked_url)
 -   [**FRAGMENTO \_ DE DATOS \_ HTTP**](/windows/desktop/api/Http/ns-http-http_data_chunk)
 -   [**ENCABEZADO \_ HTTP \_ CONOCIDO**](/windows/desktop/api/Http/ns-http-http_known_header)
 -   [**SOLICITUD \_ HTTP**](/previous-versions/windows/desktop/legacy/aa364545(v=vs.85))
@@ -51,7 +51,7 @@ La API del servidor HTTP proporciona las estructuras siguientes:
 
 <dl> <dt>
 
-[Funciones de LA API del servidor HTTP versión 1.0](http-server-api-version-1-0-functions.md)
+[Funciones de la API del servidor HTTP versión 1.0](http-server-api-version-1-0-functions.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: En este tema se enumeran los métodos AddClosedCurve de la clase GraphicsPath. Para obtener una lista completa de los métodos de la clase GraphicsPath, vea GraphicsPath.
+description: En este tema se enumeran los métodos AddClosedCurve de la clase GraphicsPath. Para obtener una lista completa de los métodos para la clase GraphicsPath, vea GraphicsPath.
 ms.assetid: 5a633a04-1de4-43f5-a898-d30245567e5d
 title: Métodos GraphicsPath.AddClosedCurve (Gdipluspath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: fe369bed82ff58ad50084a836b13b720736f7dae9402a2b19f87216484e2ad09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e12be7b1710cca983e74c388f31123f8ae77b1a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118482781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361218"
 ---
 # <a name="graphicspathaddclosedcurve-methods"></a>Métodos GraphicsPath.AddClosedCurve
 
-En este tema se enumeran los métodos AddClosedCurve de la [**clase GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Para obtener una lista completa de métodos para la **clase GraphicsPath,** vea [**GraphicsPath**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath).
+En este tema se enumeran los métodos AddClosedCurve de la [**clase GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Para obtener una lista completa de los métodos para la **clase GraphicsPath,** vea [**GraphicsPath**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath).
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -21,10 +21,10 @@ En este tema se enumeran los métodos AddClosedCurve de la [**clase GraphicsPath
 
 | Método                                                                                                                        | Descripción                                                                                                                                                                                |
 |:------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddClosedCurve(Point \* ,INT)**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint))                     | El [**método GraphicsPath::AddClosedCurve**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint)) agrega una curva spline cardinal cerrada a esta ruta de acceso.<br/>               |
-| [**AddClosedCurve(PointF \* , INT)**](/previous-versions//ms535618(v=vs.85))                   | El [**método GraphicsPath::AddClosedCurve**](/previous-versions//ms535618(v=vs.85)) agrega una curva spline cardinal cerrada a esta ruta de acceso.<br/>              |
-| [**AddClosedCurve(Point \* ,INT,REAL)**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint_inreal))   | El [**método GraphicsPath::AddClosedCurve**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint_inreal)) agrega una curva spline cardinal cerrada a esta ruta de acceso.<br/>  |
-| [**AddClosedCurve(PointF \* ,INT,REAL)**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpointf_inint_inreal)) | El [**método GraphicsPath::AddClosedCurve**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpointf_inint_inreal)) agrega una curva spline cardinal cerrada a esta ruta de acceso.<br/> |
+| [**AddClosedCurve(Point \* , INT)**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint))                     | El [**método GraphicsPath::AddClosedCurve**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint)) agrega una spline cardinal cerrada a esta ruta de acceso.<br/>               |
+| [**AddClosedCurve(PointF \* , INT)**](/previous-versions//ms535618(v=vs.85))                   | El [**método GraphicsPath::AddClosedCurve**](/previous-versions//ms535618(v=vs.85)) agrega una spline cardinal cerrada a esta ruta de acceso.<br/>              |
+| [**AddClosedCurve(Point \* , INT,REAL)**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint_inreal))   | El [**método GraphicsPath::AddClosedCurve**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpoint_inint_inreal)) agrega una spline cardinal cerrada a esta ruta de acceso.<br/>  |
+| [**AddClosedCurve(PointF \* , INT,REAL)**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpointf_inint_inreal)) | El [**método GraphicsPath::AddClosedCurve**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-addclosedcurve(inconstpointf_inint_inreal)) agrega una spline cardinal cerrada a esta ruta de acceso.<br/> |
 
 
 

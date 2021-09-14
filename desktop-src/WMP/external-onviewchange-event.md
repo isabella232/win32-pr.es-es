@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c01db02ef1bfd194330483c8dd7e71eba7ed09d9b347aee4b4813f413950c65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c7144e03955fb67ed90cad4a4336bf782ca1566
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241886"
 ---
 # <a name="externalonviewchange-event"></a>Evento External.OnViewChange
 
@@ -42,7 +42,7 @@ Se trata de una propiedad de solo escritura que especifica el nombre de la funci
 
 La función que controla este evento no toma ningún parámetro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La vista de Reproductor de Windows Media puede cambiar por cualquiera de los siguientes motivos:
 
@@ -56,7 +56,7 @@ Cuando la vista cambia en Reproductor de Windows Media, el reproductor llama a [
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/>                                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

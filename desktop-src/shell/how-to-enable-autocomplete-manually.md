@@ -4,12 +4,12 @@ ms.assetid: E1A7B1B0-2879-452E-9EBB-73F02B932200
 title: Cómo habilitar autocompletar manualmente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7df686e4c5a4a6e96b1faf82e4926dffc73398b360e3e6235d6a61451eae189
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aee4b327c6ccdd62fd921c56cfb046edb8527bc2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117859712"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267895"
 ---
 # <a name="how-to-enable-autocomplete-manually"></a>Cómo habilitar autocompletar manualmente
 
@@ -49,7 +49,7 @@ En los pasos siguientes se muestra cómo crear e inicializar un objeto autocompl
 
     
 
-    El código siguiente usa un origen de autocompletar personalizado. Puede escribir su propio origen de autocompletar implementando un objeto que expone la [**interfaz IEnumString.**](/windows/win32/api/objidlbase/nn-objidlbase-ienumstring) El objeto también puede implementar opcionalmente las interfaces [**IACList**](/windows/win32/api/shlobj_core/nn-shlobj_core-iaclist) [**e IACList2.**](/windows/win32/api/shlobj_core/nn-shlobj_core-iaclist2)
+    El código siguiente usa un origen de autocompletar personalizado. Puede escribir su propio origen de autocompletar implementando un objeto que expone la [**interfaz IEnumString.**](/windows/win32/api/objidlbase/nn-objidlbase-ienumstring) El objeto también puede implementar opcionalmente las [**interfaces IACList**](/windows/win32/api/shlobj_core/nn-shlobj_core-iaclist) [**e IACList2.**](/windows/win32/api/shlobj_core/nn-shlobj_core-iaclist2)
 
     ```C++
     CCustomAutoCompleteSource *pcacs = new CCustomAutoCompleteSource();
@@ -94,7 +94,7 @@ En los pasos siguientes se muestra cómo crear e inicializar un objeto autocompl
 
 5.  Establezca las opciones del objeto autocompletar (opcional).
 
-    Puede personalizar el comportamiento del objeto autocompletar estableciendo sus opciones. Para obtener una lista completa de las opciones y sus valores, vea la documentación de [**IACList2::SetOptions**](/windows/win32/api/shlobj_core/nf-shlobj_core-iaclist2-setoptions).
+    Puede personalizar el comportamiento del objeto autocompletar estableciendo sus opciones. Para obtener una lista completa de las opciones y sus valores, consulte la documentación de [**IACList2::SetOptions**](/windows/win32/api/shlobj_core/nf-shlobj_core-iaclist2-setoptions).
 
     ```C++
     IAutoComplete2 *pac2;
@@ -126,11 +126,11 @@ En los pasos siguientes se muestra cómo crear e inicializar un objeto autocompl
 
 ### <a name="creating-a-compound-autocomplete-object"></a>Crear un objeto autocompletar compuesto
 
-Un objeto de autocompletar compuesto coincide con cadenas de varios orígenes. Por ejemplo, la Windows Internet Explorer address usa un objeto de autocompletar compuesto porque el usuario podría empezar a escribir el nombre de un archivo o una dirección URL. La mayoría de los pasos implicados en la creación de un objeto de autocompletar compuesto son idénticos a los pasos de "Crear un objeto de autocompletar simple". Estos pasos se indican como tales.
+Un objeto de autocompletar compuesto coincide con cadenas de varios orígenes. Por ejemplo, la Windows Internet Explorer de direcciones usa un objeto de autocompletar compuesto porque el usuario podría empezar a escribir el nombre de un archivo o una dirección URL. La mayoría de los pasos implicados en la creación de un objeto de autocompletar compuesto son idénticos a los pasos de "Crear un objeto de autocompletar simple". Estos pasos se indican como tales.
 
 1.  Cree el objeto autocompletar. Esto es lo mismo que en el paso 1 anterior.
 
-2.  Cree el administrador de objetos de origen compuesto autocompletar.
+2.  Cree el administrador de objetos de origen compuesto de autocompletar.
 
     El objeto de origen compuesto autocompletar permite combinar varios orígenes de autocompletar en un único origen de autocompletar.
 

@@ -1,22 +1,22 @@
 ---
-description: En esta sección se explica cómo realizar las siguientes tareas asociadas a procedimientos de ventana.
+description: En esta sección se explica cómo realizar las siguientes tareas asociadas a los procedimientos de ventana.
 ms.assetid: acc68991-4689-44dc-8547-a7b6153b0f62
 title: Usar procedimientos de ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f05e5999b216ad8c51be4de6fdec80b5f58ff94956f8c1129d74c3f7075a90eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79e0508119a2ba62c813c32e8fd0c00bd3dd1e85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267204"
 ---
 # <a name="using-window-procedures"></a>Usar procedimientos de ventana
 
-En esta sección se explica cómo realizar las siguientes tareas asociadas a procedimientos de ventana.
+En esta sección se explica cómo realizar las siguientes tareas asociadas a los procedimientos de ventana.
 
 -   [Diseñar un procedimiento de ventana](#designing-a-window-procedure)
--   [Asociar un procedimiento de ventana con una clase Window](#associating-a-window-procedure-with-a-window-class)
+-   [Asociar un procedimiento de ventana a una clase window](#associating-a-window-procedure-with-a-window-class)
 -   [Subclases de una ventana](#subclassing-a-window)
 
 ## <a name="designing-a-window-procedure"></a>Diseñar un procedimiento de ventana
@@ -63,19 +63,19 @@ LRESULT CALLBACK MainWndProc(
 
 
 
-El [**mensaje \_ WM NCCREATE**](wm-nccreate.md) se envía justo después de crear la ventana, pero si una aplicación responde a este mensaje devolviendo **FALSE**, se produce un error en la función [**CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) El [**mensaje \_ WM CREATE**](wm-create.md) se envía una vez creada la ventana.
+El [**mensaje \_ WM NCCREATE**](wm-nccreate.md) se envía justo después de crear la ventana, pero si una aplicación responde a este mensaje devolviendo **FALSE,** se produce un error en la función [**CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) El [**mensaje \_ WM CREATE**](wm-create.md) se envía una vez creada la ventana.
 
 El [**mensaje \_ WM DESTROY**](wm-destroy.md) se envía cuando la ventana está a punto de destruirse. La [**función DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) se encarga de destruir las ventanas secundarias de la ventana que se va a destruir. El [**mensaje \_ WM NCDESTROY**](wm-ncdestroy.md) se envía justo antes de que se destruya una ventana.
 
-Como mínimo, un procedimiento de ventana debe procesar el [**mensaje \_ WM PAINT**](../gdi/wm-paint.md) para dibujarse a sí mismo. Normalmente, también debe controlar los mensajes del mouse y el teclado. Consulte las descripciones de mensajes individuales para determinar si el procedimiento de ventana debe controlarlos.
+Como mínimo, un procedimiento de ventana debe procesar el [**mensaje \_ WM PAINT**](../gdi/wm-paint.md) para dibujarse a sí mismo. Normalmente, también debe controlar los mensajes del mouse y el teclado. Consulte las descripciones de los mensajes individuales para determinar si el procedimiento de ventana debe controlarlos.
 
 La aplicación puede llamar a [**la función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como parte del procesamiento de un mensaje. En tal caso, la aplicación puede modificar los parámetros del mensaje antes de pasar el mensaje a **DefWindowProc** o puede continuar con el procesamiento predeterminado después de realizar sus propias operaciones.
 
-Un procedimiento de cuadro de diálogo recibe un mensaje [**\_ WM INITDIALOG**](../dlgbox/wm-initdialog.md) en lugar de un mensaje [**\_ CREATE**](wm-create.md) de WM y no pasa mensajes sin procesar a la [**función DefDlgProc.**](/windows/win32/api/winuser/nf-winuser-defdlgprocw) De lo contrario, un procedimiento de cuadro de diálogo es exactamente igual que un procedimiento de ventana.
+Un procedimiento de cuadro de diálogo recibe un mensaje [**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md) en lugar de un mensaje [**WM \_ CREATE**](wm-create.md) y no pasa mensajes sin procesar a la [**función DefDlgProc.**](/windows/win32/api/winuser/nf-winuser-defdlgprocw) De lo contrario, un procedimiento de cuadro de diálogo es exactamente igual que un procedimiento de ventana.
 
-## <a name="associating-a-window-procedure-with-a-window-class"></a>Asociar un procedimiento de ventana con una clase Window
+## <a name="associating-a-window-procedure-with-a-window-class"></a>Asociar un procedimiento de ventana a una clase window
 
-Al registrar la clase, se asocia un procedimiento de ventana a una clase de ventana. Debe rellenar una estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) con información sobre la clase y el miembro **lpfnWndProc** debe especificar la dirección del procedimiento de ventana. Para registrar la clase, pase la dirección de la **estructura WNDCLASS** a la [**función RegisterClass.**](/windows/win32/api/winuser/nf-winuser-registerclassa) Una vez registrada la clase de ventana, el procedimiento de ventana se asocia automáticamente a cada nueva ventana creada con esa clase.
+Al registrar la clase, se asocia un procedimiento de ventana a una clase de ventana. Debe rellenar una estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) con información sobre la clase y el miembro **lpfnWndProc** debe especificar la dirección del procedimiento de ventana. Para registrar la clase , pase la dirección de **la estructura WNDCLASS** a la [**función RegisterClass.**](/windows/win32/api/winuser/nf-winuser-registerclassa) Una vez registrada la clase de ventana, el procedimiento de ventana se asocia automáticamente a cada nueva ventana creada con esa clase.
 
 En el ejemplo siguiente se muestra cómo asociar el procedimiento de ventana del ejemplo anterior a una clase de ventana.
 

@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bdf4fb45fd38fe7d5acec95d750a050144a408c7fd1dedc44be858bc00aa58ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7608b1187cc90cf4914bdd42a197cc6044d53734
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119457425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241419"
 ---
 # <a name="m4x3---vs"></a>m4x3: vs
 
 Multiplica un vector de 4 componentes por una matriz de 4x3.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,13 +31,13 @@ Multiplica un vector de 4 componentes por una matriz de 4x3.
 
  
 
-where
+, donde
 
 -   dst es el registro de destino. El resultado es un vector de 3 componentes.
 -   src0 es un registro de origen que representa un vector de 4 componentes.
 -   src1 es un registro de origen que representa una matriz 4x3, que corresponde al primero de tres registros consecutivos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -51,7 +51,7 @@ where
 
 La máscara xyz es necesaria para el registro de destino. Se permiten modificadores negate y swzzle para src0, pero no para src1.
 
-En el fragmento de código siguiente se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```
@@ -62,7 +62,7 @@ dest.z = (src0.x * src3.x) + (src0.y * src3.y) + (src0.z * src3.z) + (src0.w * s
 
 
 
-El vector de entrada está en el registro src0. La matriz de entrada 4x3 está en el registro src1 y los dos siguientes registros superiores, como se muestra en la expansión siguiente. Se genera un resultado 3D, sin que el otro elemento del registro de destino (dest.w) se ven afectados.
+El vector de entrada está en el registro src0. La matriz de entrada 4x3 está en el registro src1 y los dos registros siguientes superiores, como se muestra en la expansión siguiente. Se genera un resultado 3D, sin que el otro elemento del registro de destino (dest.w) se ven afectados.
 
 Esta operación se usa normalmente para transformar un vector de posición mediante una matriz que no tiene ningún efecto projective, como ocurre en transformaciones de espacio de modelo. Esta instrucción se implementa como un par de productos de punto, como se muestra a continuación.
 

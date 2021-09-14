@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be941d17b63d033ad735b4c13b3d620b77bcf0c376da156341d0a0fd6ca82f1e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be4c368fcd93ef832bcdb9cf82abe82c5e02413d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375134"
 ---
 # <a name="glnormal3i-function"></a>Función glNormal3i
 
@@ -67,7 +67,7 @@ Especifica la coordenada z para el nuevo vector normal actual.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La normal actual se establece en las coordenadas dadas cada vez que se llama a la **función glNormal3i.**
 

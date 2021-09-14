@@ -1,22 +1,22 @@
 ---
 title: Asistente para impresión en línea
-description: El Windows de impresión en línea de Vista ayuda a los usuarios a solicitar copias de fotos de distribuidores de impresión en línea participantes.
+description: El Windows de impresión en línea de Vista ayuda a los usuarios a solicitar copias de fotos de los distribuidores de impresión en línea participantes.
 ms.assetid: 1e73a5d0-2ca8-4eca-846a-bd69eee257cb
 keywords:
 - Asistente para impresión en línea
 - iconos,Asistente para impresión en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc402f1fe5853c7a255ea45940d62efcd092c424be6905287315c5cfe5fc7504
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8536eea7a51eddb2dbb46d10c9291a60edfdc74e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118975928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241238"
 ---
 # <a name="online-printing-wizard"></a>Asistente para impresión en línea
 
-El Windows de impresión en línea de Vista ayuda a los usuarios a solicitar copias de fotos de distribuidores de impresión en línea participantes. Este asistente está diseñado para que cualquier aplicación que quiera ofrecer a los usuarios la posibilidad de solicitar copias de fotos lo pueda invocar mediante programación. El Asistente para impresión de fotos está disponible en Windows Vista. LAV para Windows
+El Windows de impresión en línea de Vista ayuda a los usuarios a solicitar copias de fotos de los distribuidores de impresión en línea participantes. Este asistente está diseñado para que cualquier aplicación que quiera ofrecer a los usuarios la posibilidad de solicitar copias de fotos lo pueda invocar mediante programación. El Asistente para impresión de fotos está disponible en Windows Vista. PARA WINDOWS
 
 -   [Características proporcionadas por el Asistente para impresión en línea](#features-provided-by-the-online-print-wizard)
 -   [Formatos de archivo de fotos admitidos](#supported-photo-file-formats)
@@ -34,7 +34,7 @@ El Windows de impresión en línea de Vista permite a los usuarios solicitar cop
 
 Cualquier aplicación puede beneficiarse de las características que ofrece Windows Asistente para impresión en línea de Vista. Una aplicación solo necesita pasar el archivo o los archivos para los que se ordenarán las copias impresas, y el asistente guía al usuario a través del proceso de ordenación.
 
-En la ilustración siguiente se muestra Windows Asistente para impresión en línea de Vista que muestra una lista de ejemplo de distribuidores de impresión en línea participantes.
+En la ilustración siguiente se muestra Windows Asistente para impresión en línea de Vista que muestra una lista de ejemplo de los distribuidores de impresión en línea participantes.
 
 ![El Asistente para impresión en línea de Windows Vista](images/opw.png)
 
@@ -52,7 +52,7 @@ El Windows de impresión en línea de Vista admite cualquier formato de archivo 
 
 Para obtener más información sobre los códecs WIC y WIC, [vea Windows Imaging Component](https://msdn.microsoft.com/library/ms737408(VS.85).aspx).
 
-Los formatos de archivo admitidos por los distribuidores de impresión en línea varían de minorista a minorista. Es posible que un distribuidor determinado no admita todos los formatos de archivo admitidos por el Asistente para impresión Windows Vista Online. Si el usuario intenta solicitar copias impresas en un formato que no es compatible con el distribuidor seleccionado, el Asistente para impresión en línea de Windows Vista notifica al usuario que el distribuidor seleccionado no admite el formato de archivo enviado.
+Los formatos de archivo admitidos por los distribuidores de impresión en línea varían de minorista a minorista. es posible que un distribuidor determinado no admita todos los formatos de archivo admitidos por el Asistente para impresión Windows Vista Online. Si el usuario intenta solicitar copias impresas en un formato que no es compatible con el distribuidor seleccionado, el Asistente para impresión en línea de Windows Vista notifica al usuario que el distribuidor seleccionado no admite el formato de archivo enviado.
 
 ## <a name="programmatically-launching-the-online-print-wizard"></a>Iniciar el Asistente para impresión en línea mediante programación
 
@@ -99,7 +99,7 @@ El Windows de impresión en línea de Vista exporta un icono al que pueden acced
 
 ![icono del Asistente para impresión en línea de Windows Vista](images/opw-icon.png)
 
-En el ejemplo de código siguiente se muestra cómo recuperar el índice del Windows asistente para impresión en línea de Vista mediante la lectura de **la propiedad OPWIcon.**
+En el ejemplo de código siguiente se muestra cómo recuperar el índice del Windows asistente para impresión en línea de Vista mediante la lectura de **la propiedad OPWIcon** .
 
 
 ```

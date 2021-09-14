@@ -8,26 +8,26 @@ keywords:
 - modelo de objetos, supervisión de carpetas
 - Reproductor de Windows Media ActiveX control,supervisión de carpetas
 - ActiveX control,supervisión de carpetas
-- Reproductor de Windows Media Control de ActiveX móvil,supervisión de carpetas
-- Reproductor de Windows Media Móvil, supervisión de carpetas
+- Reproductor de Windows Media Control de ActiveX móviles,supervisión de carpetas
+- Reproductor de Windows Media Mobile, supervisión de carpetas
 - supervisión de carpetas
 - supervisar carpetas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1206defcdc387659567ceedcf7347a3ab99ca45d9926a9bd32c4f75280a8a46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c3d6af341df706cd85c4158197b27babad09c86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361741"
 ---
 # <a name="about-folder-monitoring"></a>Acerca de la supervisión de carpetas
 
 Reproductor de Windows Media supervisar las carpetas que contienen archivos multimedia digitales y actualizar la biblioteca cuando se agregan o quitan archivos. Esta funcionalidad de supervisión de carpetas la proporciona la [interfaz IWMPFolderMonitorServices.](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpfoldermonitorservices)
 
-Para usar los servicios de supervisión de carpetas, debe crear el objeto Player en un estado remoto. Para obtener más información sobre la comunicación remota, vea [Comunicación remota Reproductor de Windows Media control](remoting-the-windows-media-player-control.md). Después de crear una instancia remota del reproductor, obtenga un puntero a la interfaz **IWMPFolderMonitorServices** mediante una llamada a **QueryInterface** en la [interfaz IWMPPlayer.](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplayer)
+Para usar los servicios de supervisión de carpetas, debe crear el objeto Player en un estado remoto. Para obtener más información sobre la comunicación remota, vea [Comunicación remota Reproductor de Windows Media Control](remoting-the-windows-media-player-control.md). Después de crear una instancia remota del reproductor, obtenga un puntero a la interfaz **IWMPFolderMonitorServices** mediante una llamada a **QueryInterface** en la [interfaz IWMPPlayer.](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplayer)
 
-Reproductor de Windows Media mantiene una lista de carpetas que se están supervisando. Para obtener una lista de carpetas supervisadas, use los [métodos IWMPFolderMonitorServices::get \_ count](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-get_count) e [IWMPFolderMonitorServices::item.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-item) Para agregar carpetas a la lista o quitarlas de la lista, use los [métodos IWMPFolderMonitorServices::add](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-add) y [remove,](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-remove) respectivamente.
+Reproductor de Windows Media mantiene una lista de carpetas que se están supervisando. Para obtener una lista de carpetas supervisadas, use los [métodos IWMPFolderMonitorServices::get \_ count](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-get_count) e [IWMPFolderMonitorServices::item.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-item) Para agregar carpetas a la lista o quitarlas de la lista, use los [métodos IWMPFolderMonitorServices::add](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-add) [y remove,](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpfoldermonitorservices-remove) respectivamente.
 
 **Iniciar un examen**
 

@@ -4,12 +4,12 @@ description: Recorte automático
 ms.assetid: 9107ee47-52aa-48c8-b141-c821f93fda45
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dabc3fd7ece50250ee9e1fea89ff23dd23db533dfcc90d5a939ce1b563ce764
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71fb39f3a9f15ed6e1e96493ed2cbdd62db40403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118551241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360873"
 ---
 # <a name="automatic-clipping"></a>Recorte automático
 

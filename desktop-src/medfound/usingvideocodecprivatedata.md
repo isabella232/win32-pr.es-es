@@ -4,18 +4,18 @@ ms.assetid: 0cc24fe4-a5b6-4805-8c8e-3066d12ec4bd
 title: Uso de datos privados de códec de vídeo (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7e417d4d83cc3ae3174e1bbf3310a6abb2900e2c5f3323192a8d17643e4066f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 83e86fc31a50d2c4e553b5947717ea930698d812
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363639"
 ---
 # <a name="using-video-codec-private-data-microsoft-media-foundation"></a>Uso de datos privados de códec de vídeo (Microsoft Media Foundation)
 
-La salida comprimida producida por los códecs Windows Media Video 9 no se puede descomprimir correctamente sin algunos datos proporcionados por el codificador. Estos datos, denominados datos privados de códec, deben anexarse al tipo de medio de salida. Puede obtener los datos privados del códec llamando a los métodos de la [interfaz IWMCodecPrivateData.](/windows/desktop/api/wmcodecdsp/nn-wmcodecdsp-iwmcodecprivatedata) Pase el valor de [**DMO estructura MEDIA TYPE \_ \_ a**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) [IWMCodecPrivateData::SetPartialOutputType](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmcodecprivatedata-setpartialoutputtype). A continuación, llame a [IWMCodecPrivateData::GetPrivateData](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmcodecprivatedata-getprivatedata) dos veces, una vez para obtener el tamaño de los datos y, a continuación, para copiar los datos en un búfer de ese tamaño. Cree un nuevo búfer para contener la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) con los datos privados anexados y copie la estructura y los datos en ese búfer. Por último, establezca el miembro **pbFormat** de la estructura **DMO MEDIA \_ \_ TYPE** en la dirección del búfer recién creado y establezca el miembro **cbFormat** en el tamaño combinado, en bytes, de **VIDEOINFOHEADER** y los datos privados.
+La salida comprimida producida por los códecs Windows Media Video 9 no se puede descomprimir correctamente sin algunos datos proporcionados por el codificador. Estos datos, denominados datos privados de códec, deben anexarse al tipo de medio de salida. Puede obtener los datos privados del códec llamando a los métodos de la [interfaz IWMCodecPrivateData.](/windows/desktop/api/wmcodecdsp/nn-wmcodecdsp-iwmcodecprivatedata) Pase la estructura de [**DMO \_ de tipo multimedia \_**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) completa a [IWMCodecPrivateData::SetPartialOutputType](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmcodecprivatedata-setpartialoutputtype). A continuación, llame a [IWMCodecPrivateData::GetPrivateData](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmcodecprivatedata-getprivatedata) dos veces, una vez para obtener el tamaño de los datos y, a continuación, para copiar los datos en un búfer de ese tamaño. Cree un nuevo búfer para contener la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) con los datos privados anexados y copie la estructura y los datos en ese búfer. Por último, establezca el miembro **pbFormat** de la estructura **media \_ \_ TYPE** de DMO en la dirección del búfer recién creado y establezca el miembro **cbFormat** en el tamaño combinado, en bytes, de **VIDEOINFOHEADER** y los datos privados.
 
-Si usa MediaFoundation, puede construir una estructura [**\_ DMO MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) a partir de una interfaz [**MFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) mediante una llamada a [**MFCreateAMMediaTypeFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateammediatypefrommfmediatype).
+Si usa MediaFoundation, puede construir una estructura [**\_ DMO MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) a partir de una interfaz [**MFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) llamando a [**MFCreateAMMediaTypeFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateammediatypefrommfmediatype).
 
 Debe usar los datos privados del códec obtenidos después de establecer primero las propiedades en el codificador. Si se cambia alguna propiedad, debe obtener nuevos datos privados. Si no usa los datos privados obtenidos después de establecer todas las propiedades para la sesión de codificación, es posible que el descodificador no pueda descomprimir los datos.
 

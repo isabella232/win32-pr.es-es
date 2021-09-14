@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 83df4d0bcb919e1cee9b5cd6a6c3506d5d1db7190c7ae34af823005bc392e773
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad2abd23cbb8cc0937c534bcc3374d0c3291a6c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360750"
 ---
 # <a name="jet_index_rangetostring-method"></a>JET_INDEX_RANGE. Método ToString
 
@@ -59,7 +59,7 @@ public override string ToString()
 Tipo: [System.String](/dotnet/api/system.string)  
 Cadena [que](/dotnet/api/system.string) representa el objeto [JET_INDEX_COLUMN](./jet-index-column-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

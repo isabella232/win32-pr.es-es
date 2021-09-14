@@ -4,12 +4,12 @@ ms.assetid: 5737324a-65e5-4a39-b325-762768e171a1
 title: Acelerar transacciones notificando al objeto raíz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fd84a041a43ef0aa4a9dc9d5dd034017925c2a42834eb383efcd256d962bd5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21f3865382434ee070db753a0f9113577531558d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118812569"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361647"
 ---
 # <a name="speeding-transactions-by-notifying-the-root-object"></a>Acelerar transacciones notificando al objeto raíz
 
@@ -21,7 +21,7 @@ Sin embargo, a menos que el objeto que llama a [**SetAbort**](/windows/desktop/a
 
 Aunque hay muchos enfoques diferentes que puede tomar para controlar los errores, el enfoque debe coordinar claramente las comunicaciones entre los objetos interiores y el objeto raíz.
 
-Los siguientes fragmentos Visual Basic código muestran un enfoque para el control de errores. En el primer fragmento, un objeto interior llama a [**SetAbort,**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort)genera un error y genera un mensaje de error, como se indica a continuación:
+Los siguientes fragmentos Visual Basic código muestran un enfoque para el control de errores. En el primer fragmento, un objeto interior llama a [**SetAbort**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort), genera un error y genera un mensaje de error, como se indica a continuación:
 
 ``` syntax
 Dim ObjCtx As ObjectContext

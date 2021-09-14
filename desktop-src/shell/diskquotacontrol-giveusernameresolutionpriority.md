@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: eb5dc2939ea0fbc2c8037dc22c5b690e93a5727ecad6b2249e99e4c337340710
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1acf50e0cec59a7ee14fbd9d7760fb68b27c4de5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363166"
 ---
 # <a name="diskquotacontrolgiveusernameresolutionpriority-method"></a>Método DiskQuotaControl.GiveUserNameResolutionPriority
 
@@ -52,9 +52,9 @@ Expresión de objeto que se evalúa como el objeto [**DIDiskQuotaUser del**](did
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la resolución asincrónica de nombres está habilitada, los objetos de usuario se colocan en una cola. De forma predeterminada, se les da servicio en el orden en que se colocan en la cola. El **método GiveUserNameResolutionPriority** mueve un objeto al principio de la cola para que sea el siguiente en línea al que se va a atender.
+Si la resolución asincrónica de nombres está habilitada, los objetos de usuario se colocan en una cola. De forma predeterminada, se atendidas en el orden en que se colocan en la cola. El **método GiveUserNameResolutionPriority** mueve un objeto al principio de la cola para que sea el siguiente en línea al que se va a atender.
 
 Use la [**propiedad UserNameResolution**](diskquotacontrol-usernameresolution.md) para habilitar la resolución asincrónica de nombres.
 
@@ -71,7 +71,7 @@ Use la [**propiedad UserNameResolution**](diskquotacontrol-usernameresolution.md
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

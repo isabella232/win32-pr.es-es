@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ea38c08d051a2363699643f3b68ea5999fc5014c65716f974e3df6e6d83938
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3f981b78dc2d9f152a4a7d1f40c4a2d1f120944b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375166"
 ---
 # <a name="glmultmatrixf-function"></a>Función glMultMatrixf
 
@@ -63,7 +63,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glMultMatrix** multiplica la matriz actual por la especificada en *m*. Es decir, si M es la matriz actual y T es la matriz que se pasa **a glMultMatrix,** M se reemplaza por M T.
 

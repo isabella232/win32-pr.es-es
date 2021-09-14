@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad60acc19b1ad85e788f8da4503df7bacc067114ef4394615f38d92fda25912a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2add14816f51d79c66189723ed8f9c62c7e725f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118835908"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242403"
 ---
 # <a name="playererror"></a>Player.error
 
 La **propiedad error** recupera el objeto Error.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player* . **error**
 
@@ -37,7 +37,7 @@ Esta propiedad es un objeto Error de solo lectura.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

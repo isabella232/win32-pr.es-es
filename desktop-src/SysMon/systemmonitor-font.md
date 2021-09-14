@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a605420418c03fae69926dac5dc184f67142cad83918ab2e34dca11ea411aac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2abf021000d673474bb006d9d16afa459ddbdb3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118882421"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374851"
 ---
 # <a name="systemmonitorfont-property"></a>Propiedad SystemMonitor.Font
 
@@ -42,7 +42,7 @@ Property Font As stdole.IFontDisp
 
 Fuente utilizada para mostrar texto en el control .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de una propiedad ambiente. El contenedor determina el valor de esta propiedad. Establecer el valor de esta propiedad podría afectar a la sensación de que el control y el contenedor son una sola aplicación.
 
@@ -50,7 +50,7 @@ Se trata de una propiedad ambiente. El contenedor determina el valor de esta pro
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
@@ -58,7 +58,7 @@ Se trata de una propiedad ambiente. El contenedor determina el valor de esta pro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

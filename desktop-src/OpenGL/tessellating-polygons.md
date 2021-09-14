@@ -13,12 +13,12 @@ keywords:
 - OpenGL de polígonos complejos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 948e0669348404af763883f7ff713212d52f6f0d79312812552c0e5053041627
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 475076f6372042d61c1662b445b7573709134c65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034521"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362009"
 ---
 # <a name="tessellating-polygons"></a>Tessentar polígonos
 

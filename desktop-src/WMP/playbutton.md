@@ -1,6 +1,6 @@
 ---
-title: Playbutton
-description: Se trata de un button predefinido con los siguientes valores predeterminados. | Playbutton
+title: PLAYBUTTON
+description: Se trata de un button predefinido con los siguientes valores predeterminados. | PLAYBUTTON
 ms.assetid: 0d144f34-d536-4138-a7b2-e36a9f85e105
 keywords:
 - PlayBUTTON Reproductor de Windows Media
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3649363ceeef96859ed675863c8dbcc3c8c8d9918304e0a72c1d51ee01251d5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88510dd62372eeea2d122a1ceb65df953315a3ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117747752"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242469"
 ---
-# <a name="playbutton"></a>Playbutton
+# <a name="playbutton"></a>PLAYBUTTON
 
-Se trata de un **button** predefinido con los siguientes valores predeterminados.
+Se trata de un **button predefinido** con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:player.controls.play()"
@@ -31,9 +31,9 @@ cursor="system"
 enabled="wmpenabled:player.controls.play"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
+Todas las propiedades de **este BOTÓN** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d22abfbcc1d57e3bc94792c36ddd98cec66c722ac401de051cc32440d43253f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8954e76256b86a7b982efb1ab23831052d29ee6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117750813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242715"
 ---
 # <a name="userdata-templateitemtype-element"></a>Elemento UserData (TemplateItemType)
 

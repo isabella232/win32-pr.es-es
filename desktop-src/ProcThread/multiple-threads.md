@@ -4,12 +4,12 @@ ms.assetid: a78c17dc-d5d9-4baf-8770-597b04fa3fa8
 title: Varios subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e95651a5bcda87a651b6d1bff4e7754a5eea9f99d9e3306bc18bc2dd65be2bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 268c28a8b1db398156e6a1aeba918abf4f7e12e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375038"
 ---
 # <a name="multiple-threads"></a>Varios subprocesos
 

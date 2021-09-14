@@ -1,23 +1,23 @@
 ---
-description: Los datos de suscripción residen en el catálogo com+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la interfaz ICOMAdminCatalog::InstallComponent.
+description: Los datos de suscripción residen en el catálogo de COM+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la interfaz ICOMAdminCatalog::InstallComponent.
 ms.assetid: 190e88f3-1d87-4c27-9451-0a633cbae829
 title: Suscripciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48810ae90f3507ea7afb661b106c4d05f8cc5b9a4f1b09aafdfb26d9fdb03a75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9973eb76fc22354f1a2fc8e381c90cf5be1efee3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118546177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361640"
 ---
 # <a name="subscriptions"></a>Suscripciones
 
-Los datos de suscripción residen en el catálogo com+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la [**interfaz ICOMAdminCatalog::InstallComponent.**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installcomponent)
+Los datos de suscripción residen en el catálogo de COM+ de la suscripción. Una suscripción se puede crear mediante la herramienta administrativa Servicios de componentes o mediante programación mediante la [**interfaz ICOMAdminCatalog::InstallComponent.**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-installcomponent)
 
 La [**colección SubscriptionsForComponent**](subscriptionsforcomponent.md) se usa para agregar, eliminar o cambiar información relativa a las suscripciones. La **colección SubscriptionsForComponent** es una colección secundaria de un componente. Para agregar una suscripción, obtenga la colección **SubscriptionsForComponent** del componente y use el [**método Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) para agregar una entrada a la colección. Para configurar las distintas propiedades del objeto de suscripción, use la [**propiedad**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_value) Value. Para guardar los cambios, use [**SaveChanges en**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) el **objeto de colección SubscriptionsForComponent.**
 
-También puede usar la herramienta de administración Servicios de componentes para modificar algunas de las propiedades de la suscripción, pero no todas. Las suscripciones especifican la siguiente información:
+También puede usar la herramienta de administración servicios de componentes para modificar algunas de las propiedades de la suscripción, pero no todas. Las suscripciones especifican la siguiente información:
 
 -   Identidad y ubicación del suscriptor
 -   Método de entrega
@@ -42,7 +42,7 @@ Cuando un publicador crea instancias y [](the-com--event-class-object.md) realiz
 <span id="Transient"></span><span id="transient"></span><span id="TRANSIENT"></span>Transitoria
 </dt> <dd>
 
-Para las suscripciones transitorias, puede usar la [**colección TransientSubscriptions,**](transientsubscriptions.md) cuyo objeto primario es el objeto de catálogo raíz. Las suscripciones transitorias solicitan un evento para un objeto de suscriptor específico que ya existe. Las suscripciones transitorias se almacenan en el catálogo de COM+, pero la suscripción se elimina si se detiene el sistema operativo o el sistema operativo. A diferencia de las suscripciones persistentes, las suscripciones transitorias están vinculadas a un objeto determinado y solo se almacenan en el sistema de eventos. Las suscripciones transitorias pueden ser más eficaces que las suscripciones persistentes, pero debe administrar sus ciclos de vida de objetos. Para obtener información sobre cómo registrar una suscripción transitoria, vea [Registrar una suscripción transitoria.](registering-a-transient-subscription.md)
+Para las suscripciones transitorias, puede usar la [**colección TransientSubscriptions,**](transientsubscriptions.md) cuyo objeto primario es el objeto de catálogo raíz. Las suscripciones transitorias solicitan un evento para un objeto de suscriptor específico que ya existe. Las suscripciones transitorias se almacenan en el catálogo de COM+, pero la suscripción se elimina si se detiene el sistema operativo o el sistema operativo. A diferencia de las suscripciones persistentes, las suscripciones transitorias están asociadas a un objeto determinado y solo se almacenan en el sistema de eventos. Las suscripciones transitorias pueden ser más eficaces que las suscripciones persistentes, pero debe administrar sus ciclos de vida de objetos. Para obtener información sobre cómo registrar una suscripción transitoria, vea [Registrar una suscripción transitoria.](registering-a-transient-subscription.md)
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Las suscripciones por usuario solo son efectivas cuando el publicador y el suscr
 
 </dd> </dl>
 
-El sistema de eventos usa metadatos para notificar a los suscriptores interesados cada vez que se crean, modifican o quitan objetos o suscripciones de clase de eventos. Para recibir metadatos del sistema de eventos, las aplicaciones deben crear una suscripción que resida en el equipo del sistema de eventos y que especifique el identificador de interfaz de activación (IID \_ IEventObjectChange).
+El sistema de eventos usa metadatos para notificar a los suscriptores interesados cada vez que se crean, modifican o quitan objetos o suscripciones de clase de eventos. Para recibir metaeventos del sistema de eventos, las aplicaciones deben crear una suscripción que resida en el equipo del sistema de eventos y que especifique el identificador de interfaz de activación (IID \_ IEventObjectChange).
 
 ## <a name="related-topics"></a>Temas relacionados
 

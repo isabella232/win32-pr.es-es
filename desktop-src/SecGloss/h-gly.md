@@ -5,12 +5,12 @@ ms.assetid: 4165b820-30fc-477e-a690-81109f161323
 title: H (Glosario de seguridad)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a147162a99ec4c8cc669c6cff2c39203c3da5b9d4e56802377c273e7dbe8e288
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 665cd90cfc8a849030b6a1cfd1cb4e6d6f687557
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118895608"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361823"
 ---
 # <a name="h-security-glossary"></a>H (Glosario de seguridad)
 
@@ -71,7 +71,7 @@ Tipo de datos que actúa como identificador de un contexto de copia de seguridad
 
 </dd> <dt>
 
-<span id="_security_hmac_gly"></span><span id="_SECURITY_HMAC_GLY"></span>**Hmac**
+<span id="_security_hmac_gly"></span><span id="_SECURITY_HMAC_GLY"></span>**HMAC**
 </dt> <dd>
 
 Vea *Código de autenticación de mensajes basado en hash.*

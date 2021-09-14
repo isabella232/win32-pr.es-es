@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdfb7db639b60c8550e0405a3084eeb3211f0ed21dd20440445caa6a0e2230fe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 84f2c2cefd5b0373808347e8a9ef17eb2ca2f863
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375143"
 ---
 # <a name="glnormal3dv-function"></a>Función glNormal3dv
 
@@ -51,17 +51,17 @@ Puntero a una matriz de tres elementos: las coordenadas x, y y z de la nueva nor
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La normal actual se establece en las coordenadas dadas cada vez que se llama a la **función glNormal3dv.**
 
-Los argumentos byte, corto o entero se convierten al formato de punto flotante con una asignación lineal que asigna el valor entero representable más positivo a 1,0 y el valor entero más negativo que se puede representar a -1,0.
+Los argumentos byte, short o integer se convierten al formato de punto flotante con una asignación lineal que asigna el valor entero representable más positivo a 1,0 y el valor entero representable más negativo a -1,0.
 
-Las normales especificadas mediante **glNormal3dv** no necesitan tener longitud de unidad. Si la normalización está habilitada, las normales especificadas **con glNormal3dv** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ NORMALIZE. De forma predeterminada, la normalización está deshabilitada. Puede actualizar el normal actual en cualquier momento. En concreto, puede llamar a **glNormal3dv entre** una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). Las siguientes funciones recuperan información relacionada con **glNormal3dv**:
+Las normales especificadas mediante **glNormal3dv** no necesitan tener longitud de unidad. Si la normalización está habilitada, las normales especificadas **con glNormal3dv** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ NORMALIZE. De forma predeterminada, la normalización está deshabilitada. Puede actualizar la normal actual en cualquier momento. En concreto, puede llamar a **glNormal3dv** entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). Las siguientes funciones recuperan información relacionada **con glNormal3dv**:
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ CURRENT \_ NORMAL
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ NORMAL
 
-[**glIsEnable con**](glisenabled.md) el argumento GL \_ NORMALIZE
+[**glIsEnable**](glisenabled.md) con el argumento GL \_ NORMALIZE
 
 ## <a name="requirements"></a>Requisitos
 

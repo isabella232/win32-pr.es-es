@@ -5,15 +5,15 @@ ms.assetid: ca18306e-6d67-406d-9c42-4be159a0b81f
 keywords:
 - Servicios web de nivel de compatibilidad de esquema para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d6cae112e074d50b90425c1d8952f3b6c06463378d73767346742193b406d2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5aa50eef8835f643abb668b439160ea733bf5160
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026292"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360904"
 ---
 # <a name="schema-support-level"></a>Nivel de compatibilidad del esquema
 
@@ -28,7 +28,7 @@ El esquema admite directamente lo siguiente:
 -   Tipos básicos definidos por el formato binario XSD/.NET, incluidos los intervalos (mín./máx.).
 -   Compatibilidad sencilla con cualquier elemento (sin restricciones en el tipo de elemento).
 -   Elementos y atributos opcionales con valores predeterminados.
--   Repetir elementos con intervalos (mín./máx.).
+-   Repetir elementos con intervalos (min/max).
 -   Elementos Nillable.
 
 El esquema no admite directamente lo siguiente (lo que implica el comportamiento de "reserva"):
@@ -41,13 +41,13 @@ El esquema no admite directamente lo siguiente (lo que implica el comportamiento
 -   La construcción all.
 -   Key/keyref.
 
-A continuación se muestra un desglose detallado de la compatibilidad con distintos componentes de esquema. Se compara con el contrato de datos en WCF debido a la similitud en la funcionalidad. Se describirá la diferencia.
+A continuación se muestra un desglose detallado de la compatibilidad con diferentes componentes de esquema. Se compara con el contrato de datos en WCF debido a la similitud en la funcionalidad. Se describirá la diferencia.
 
 Por lo general, para los comportamientos de reserva:
 
 -   Los atributos se reservan a WS \_ STRING;
 -   El contenido del elemento se reserva al búfer XML de \_ \_ WS.
--   complexType se reservan a la estructura que contiene un campo de WS \_ XML \_ BUFFER.
+-   complexType se reservan a la estructura que contiene un campo de BÚFER XML de \_ \_ WS.
 -   Los tipos simples se reservan a WS \_ STRING.
 
 wsutil genera advertencias para los componentes de esquema que no son totalmente compatibles actualmente. Es posible que la aplicación tenga que realizar una comprobación adicional para esos componentes. Wsutil de tiempo extra se puede mejorar para controlar algunas de las características que se admiten actualmente en tiempo de ejecución, como la compatibilidad con valores predeterminados. wsutil también se puede mejorar junto con la serialización para admitir otras características como abstract. El número de componentes de esquema no admitidos se puede reducir con el tiempo.
@@ -83,7 +83,7 @@ Definición global que podría afectar a las definiciones incrustadas en el esqu
 
 El tipo complejo, representado por <xs:complexType>, podría ser una restricción de tipo simple o tipo complejo, extensión de tipo simple, matrices o estructura. Hemos observado que, en la extensión de tipos simples, no hay herencia ni compatibilidad con xsi:type.
 
-<atributos de> xs:complexType
+<xs:complexType> atributos
 
 -   abstract Genere una advertencia sobre la característica no admitida, sin cambios en la generación de código.
 -   block Genera una advertencia sobre la característica no admitida, sin cambios en la generación de código.
@@ -92,7 +92,7 @@ El tipo complejo, representado por <xs:complexType>, podría ser una restricció
 -   mixto Genera una advertencia sobre la característica no admitida, reserva a la estructura con WS \_ XML BUFFER si es \_ true.
 -   name Compatible y asignado al nombre del tipo de estructura.
 
-<contenido de> xs:complexType
+<xs:complexType> contenido
 
 Esta es la definición de tipo para structure. No se admite la restricción complexContent.
 
@@ -104,13 +104,13 @@ Esta es la definición de tipo para structure. No se admite la restricción comp
 -   attributeGroup compatible: se asigna a la secuencia de atributos
 -   anyAttribute omitido
 -   AttributeGroupRef compatible: se asigna a la secuencia de atributos.
--   GroupRef Actualmente se reserva a la estructura con el campo \_ BÚFER XML de WS. \_ Se puede admite según el grupo subyacente.
+-   GroupRef Actualmente se reserva a la estructura con el campo \_ BÚFER XML de WS. \_ Puede ser compatible según el grupo subyacente.
 -   Cualquier compatible, se asigna a BÚFER \_ XML
 -   (en blanco) se admite la asignación a una descripción de struct vacía sin ningún struct generado.
 
 <xs:sequence> en un tipo complejo: contenido
 
-wsutil solo admite totalmente la secuencia de minOccurs = 1 y maxOccurs = 1; De lo contrario, el tipo complejo se reserva actualmente al búfer XML de \_ \_ WS. Se puede admite como matriz de estructuras.
+wsutil solo admite completamente la secuencia de minOccurs = 1 y maxOccurs = 1; De lo contrario, el tipo complejo se reserva actualmente al búfer XML de \_ \_ WS. Se puede admite como matriz de estructuras.
 
 -   element Supported; cada instancia se asigna a un campo de la estructura .
 -   Reserva de grupo; complexType es una reserva para WS \_ XML \_ BUFFER.
@@ -124,11 +124,11 @@ wsutil solo admite totalmente la secuencia de minOccurs = 1 y maxOccurs = 1; De 
 
 <xs:element>pueden producirse en tres contextos.
 
--   Puede producirse dentro de un <xs:sequence>, que describe un campo de una estructura normal. En este caso, el atributo maxOccurs debe ser 1. El campo es opcional si minOccurs es 0.
+-   Puede producirse dentro de un <xs:sequence> describe un campo de una estructura normal. En este caso, el atributo maxOccurs debe ser 1. El campo es opcional si minOccurs es 0.
 -   Puede producirse dentro de un <xs:sequence>, que describe un campo de una matriz. En este caso, el atributo maxOccurs debe ser mayor que 1 o "sin enlazar".
 -   Puede producirse dentro de un <xs:schema> como una descripción de elemento global.
 
-<xs:element> dentro de un <xs:sequence> o <xs:choice> como un campo de una estructura
+<xs:element> dentro de un <xs:sequence> o <xs:choice> como un campo en una estructura
 
 -   ref Supported; se resolvió para hacer referencia al elemento global.
 -   name Supported, se asigna al nombre del campo.

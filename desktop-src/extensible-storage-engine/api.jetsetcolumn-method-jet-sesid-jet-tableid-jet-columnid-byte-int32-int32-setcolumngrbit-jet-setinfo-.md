@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)'
-title: Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)
+title: Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 TOCTitle: JetSetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.Byte[],System.Int32,System.Int32,Microsoft.Isam.Esent.Interop.SetColumnGrbit,Microsoft.Isam.Esent.Interop.JET_SETINFO)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcolumn(v=EXCHG.10)
@@ -20,16 +20,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aab9e57caed54bac02f2ad7cc62ff313a41bd0c4158082d310798e6210fb674a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f52c900521d28c82245db53b98ab376dd82faec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119977811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360772"
 ---
-# <a name="apijetsetcolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-setcolumngrbit-jet_setinfo"></a>Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)
+# <a name="apijetsetcolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-setcolumngrbit-jet_setinfo"></a>Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 
-La función JetSetColumn modifica un valor de columna único en un registro modificado que se va a insertar o para actualizar el registro actual. Puede sobrescribir un valor existente, agregar un nuevo valor a una secuencia de valores de una columna con varios valores, quitar un valor de una secuencia de valores de una columna de varios valores o actualizar todo o parte de un valor largo (una columna de tipo [LongText](./jet-coltyp-enumeration.md) o [LongBinary](./jet-coltyp-enumeration.md)).
+La función JetSetColumn modifica un valor de columna única en un registro modificado que se va a insertar o actualizar el registro actual. Puede sobrescribir un valor existente, agregar un nuevo valor a una secuencia de valores de una columna con varios valores, quitar un valor de una secuencia de valores de una columna de varios valores o actualizar todo o parte de un valor largo (una columna de tipo [LongText](./jet-coltyp-enumeration.md) o [LongBinary).](./jet-coltyp-enumeration.md)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -82,7 +82,7 @@ public static JET_wrn JetSetColumn(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sesión que está realizando la actualización.
+    Sesión que realiza la actualización.
 
 <!-- end list -->
 
@@ -96,7 +96,7 @@ public static JET_wrn JetSetColumn(
   - columnid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Columnid que se establecerá.
+    Columnid que se establece.
 
 <!-- end list -->
 
@@ -117,7 +117,7 @@ public static JET_wrn JetSetColumn(
   - dataOffset  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Desplazamiento en el búfer de datos desde el que se establecerán los datos.
+    Desplazamiento en el búfer de datos desde el que se establecen los datos.
 
 <!-- end list -->
 
@@ -138,15 +138,15 @@ public static JET_wrn JetSetColumn(
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Valor de advertencia.  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de una versión solo interna de la API que toma un búfer de datos y un desplazamiento en el búfer.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

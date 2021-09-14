@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 0d1c338fb8b4e63f03bff422e25578132476f70d932e8f17d5b0c39a0f6416e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ee4ba108b8231646a2c0749dee6b5cc9f0f21c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362135"
 ---
 # <a name="propertyinst-structure"></a>PROPERTYINST (estructura)
 
@@ -49,7 +49,7 @@ typedef struct _PROPERTYINST {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -121,7 +121,7 @@ Si **se usa lpPropertyInstEx,** debe establecer el **miembro DataLength** en 0xF
 **DataLength**
 </dt> <dd>
 
-Longitud de datos para esta instancia de la propiedad . Si el **miembro lpPropertyInstEx** apunta a una [**estructura PROPERTYINSTEX,**](propertyinstex.md) debe establecer **DataLength** en 0xFFFF.
+Longitud de datos para esta instancia de la propiedad . Si el **miembro lpPropertyInstEx** apunta a una estructura [**PROPERTYINSTEX,**](propertyinstex.md) debe establecer **DataLength** en 0xFFFF.
 
 </dd> <dt>
 
@@ -146,9 +146,9 @@ Marca de condición de error.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **estructura PROPERTYINST** define una instancia de una propiedad adjunta. El analizador accede a la estructura **PROPERTYINST** a través de varias funciones auxiliares. Por ejemplo, cuando se llama a la función [**FormatPropertyInstance**](formatpropertyinstance.md) para dar formato a los datos de una propiedad, modifica el miembro **szPropertyText** de la **estructura PROPERTYINST.**
+La **estructura PROPERTYINST** define una instancia de una propiedad adjunta. El analizador tiene acceso a la **estructura PROPERTYINST** a través de varias funciones auxiliares. Por ejemplo, cuando se llama a la función [**FormatPropertyInstance**](formatpropertyinstance.md) para dar formato a los datos de una propiedad, modifica el miembro **szPropertyText** de la **estructura PROPERTYINST.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -162,7 +162,7 @@ La **estructura PROPERTYINST** define una instancia de una propiedad adjunta. El
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 5e65a3d8-04b9-46ba-b4e5-a976e1923bfd
 title: Habilitar y deshabilitar la ejecución automática
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbd14a1dfd3aadb94f3586dec783ea6d394f717f500b5ac103c65fcb813baf14
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a567f50db75cd129346e193e66ba0ae5f74fa955
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120090785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363175"
 ---
 # <a name="enabling-and-disabling-autorun"></a>Habilitar y deshabilitar la ejecución automática
 
@@ -162,7 +162,7 @@ La ejecución automática está pensada principalmente para la distribución pú
 
 Normalmente, AutoRun se inicia automáticamente, pero también se puede iniciar manualmente. Si el dispositivo cumple los criterios mencionados anteriormente, el menú contextual de la letra de unidad incluirá un **comando De reproducción** automática. Para ejecutar AutoRun manualmente, haga clic con el botón derecho en el icono de unidad y seleccione **Reproducción** automática en el menú contextual o haga doble clic en el icono de unidad. Si los controladores no son compatibles con AutoRun, el menú contextual no tendrá un elemento **Reproducción** automática y No se puede iniciar AutoRun.
 
-Los controladores compatibles con AutoRun se proporcionan con algunas unidades de disco extraíbles, así como otros tipos de medios extraíbles, como tarjetas CompactFlash. La ejecución automática también funciona con unidades de red asignadas a una letra de unidad con Windows Explorer o montadas con [el Microsoft Management Console (MMC).](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) Al igual que con el hardware montado, una unidad de red montada debe tener un archivo Autorun.inf en su directorio raíz y no debe deshabilitarse a través del [Registro](#using-the-registry-to-disable-autorun).
+Los controladores compatibles con AutoRun se proporcionan con algunas unidades de disco extraíbles, así como otros tipos de medios extraíbles, como tarjetas CompactFlash. AutoRun también funciona con unidades de red que están asignadas a una letra de unidad con Windows Explorer o montadas con [el Microsoft Management Console (MMC).](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) Al igual que con el hardware montado, una unidad de red montada debe tener un archivo Autorun.inf en su directorio raíz y no debe deshabilitarse a través del [Registro](#using-the-registry-to-disable-autorun).
 
  
 

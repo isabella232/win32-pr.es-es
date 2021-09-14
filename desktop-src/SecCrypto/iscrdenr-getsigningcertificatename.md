@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 29933856eb644e638e9e58c8da0b0e3d6234e4f0175925c8a1fb5b48b126e3ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8d9a8a84067e82a18e5066721f3e7f39d075c339
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374906"
 ---
 # <a name="iscrdenrgetsigningcertificatename-method"></a>Método ISCrdEnr::getSigningCertificateName
 
@@ -80,7 +80,7 @@ Si se produce un error en el método , devuelve un **valor HRESULT** que indica 
 
 Cadena que representa el nombre del certificado de firma. El certificado de firma se usará para firmar la solicitud [*de certificado*](../secgloss/c-gly.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método getSigningCertificateName** devuelve el nombre del firmante del certificado que ha seleccionado (u otro administrador) en una llamada correcta anterior a [**ISCrdEnr::selectSigningCertificate**](iscrdenr-selectsigningcertificate.md) o [**ISCrdEnr::setSigningCertificate**](iscrdenr-setsigningcertificate.md). Este método llama a la [**función CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) para recuperar el nombre del sujeto según la secuencia descrita para el valor CERT NAME SIMPLE DISPLAY TYPE del parámetro dwType de \_ \_ \_ \_ **CertGetNameString.** 
 
@@ -88,7 +88,7 @@ El **método getSigningCertificateName** devuelve el nombre del firmante del cer
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |

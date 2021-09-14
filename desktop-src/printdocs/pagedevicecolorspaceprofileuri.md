@@ -4,18 +4,18 @@ ms.assetid: ab26850e-554a-4a1b-9250-edb0b4e17fe2
 title: PageDeviceColorSpaceProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a979ed2bdabd9d31be44942de2a8fbe47119f2e27c77041b2410413d9e43ece6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 21420dec2e3057de903b1e04c55a7c6d234343b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119554615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361095"
 ---
 # <a name="pagedevicecolorspaceprofileuri"></a>PageDeviceColorSpaceProfileURI
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica un IDENTIFICADOR URI relativo a la raíz del paquete para un perfil DE LAN incluido en un documento XPS. El procesamiento de esta opción depende de la configuración de la característica PageDeviceColorSpaceUsage. Se supone que todos los elementos que usan ese perfil ya están en el espacio de color del dispositivo adecuado y no se administrarán por colores en el controlador o dispositivo.
+Especifica un IDENTIFICADOR URI relativo a la raíz del paquete para un perfil DE CEDIDO contenido en un documento XPS. El procesamiento de esta opción depende de la configuración de la característica PageDeviceColorSpaceUsage. Se supone que todos los elementos que usan ese perfil ya están en el espacio de color del dispositivo adecuado y no se administrarán por colores en el controlador o dispositivo.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Especifica un IDENTIFICADOR URI relativo a la raíz del paquete para un perfil D
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Prefijo de ámbito <br/> | Página<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Value                      |
+| Propiedad.                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

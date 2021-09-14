@@ -4,12 +4,12 @@ ms.assetid: 11aa7603-61f1-4af0-b6f9-81f484788052
 title: Utilidad de replicación COMREPL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 446cfc0e627463e8c142ccab624c3773123034c2becebc402a6069f74d30ccd4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a08ecd77a679b6fc150e7a91fc0214eb829792dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118305300"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361623"
 ---
 # <a name="the-comrepl-replication-utility"></a>Utilidad de replicación COMREPL
 

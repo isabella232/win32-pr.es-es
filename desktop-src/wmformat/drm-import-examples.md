@@ -4,19 +4,19 @@ description: Ejemplos de importación de DRM
 ms.assetid: 074e71b6-076b-4608-982b-f91fc226a8b3
 keywords:
 - Windows SDK de formato multimedia, importación de DRM
-- Windows SDK de formato multimedia, importación
+- Windows SDK de formato multimedia, importar
 - administración de derechos digitales (DRM), importación
 - DRM (administración de derechos digitales),importar
 - API extendidas de cliente DRM, importar
 - API extendidas de cliente, importar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bbe059204a99ee465d1fe6272a897a6cfa7583f91895dd1744e8684b4212b82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88b966ce1ab3c1b355ebe93897d7f59bc97762b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119085976"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267143"
 ---
 # <a name="drm-import-examples"></a>Ejemplos de importación de DRM
 
