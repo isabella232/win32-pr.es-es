@@ -4,12 +4,12 @@ ms.assetid: 763a9dc2-3e70-4169-a66e-3aac78ef8d33
 title: PHONEERR_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b66c4dd2078b7de1572137ee1d759e7b186328dc5604c9790e444db428eb774a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b41ba5d14f4aa12318dd4bc9f2b20e4e9e2e6b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119060663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071070"
 ---
 # <a name="phoneerr_-constants"></a>Constantes \_ PHONEERR
 
@@ -122,7 +122,7 @@ El identificador de botón o bombilla especificado está fuera del intervalo o n
 
 
 
-El parámetro de modo de botón no es válido.
+El parámetro button mode no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -182,7 +182,7 @@ El parámetro de dispositivo hookswitch no es válido.
 
 
 
-El parámetro de modo hookswitch no es válido.
+El parámetro hookswitch mode no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,7 +192,7 @@ El parámetro de modo hookswitch no es válido.
 
 
 
-El parámetro de modo de bombilla especificado no es válido.
+El parámetro de modo lamp especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -252,7 +252,7 @@ El *parámetro dwPrivilege* no es válido.
 
 
 
-El parámetro de modo anillo no es válido.
+El parámetro de modo de anillo no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -262,7 +262,7 @@ El parámetro de modo anillo no es válido.
 
 
 
-El identificador de dispositivo especificado, que anteriormente era válido, ya no se acepta porque el dispositivo asociado se ha quitado del sistema desde que TAPI se inicializó por última vez o está dañado de una manera que no se detectó en la inicialización.
+El identificador de dispositivo especificado, que anteriormente era válido, ya no se acepta porque el dispositivo asociado se ha quitado del sistema desde que tapi se inicializó por última vez o está dañado de forma que no se detectó durante la inicialización.
 
 
 </dt> </dl> </dd> <dt>
@@ -272,7 +272,7 @@ El identificador de dispositivo especificado, que anteriormente era válido, ya 
 
 
 
-El proveedor de servicios telefónicos para el dispositivo especificado encontró que falta uno de sus componentes o está dañado de una manera que no se detectó en el momento de la inicialización. Se debe recomendar al usuario que use el Panel de control telefonía para corregir el problema.
+El proveedor de servicios telefónicos para el dispositivo especificado encontró que falta uno de sus componentes o está dañado de una manera que no se detectó en el momento de la inicialización. Se debe recomendar al usuario que use la Panel de control telefonía para corregir el problema.
 
 
 </dt> </dl> </dd> <dt>
@@ -282,7 +282,7 @@ El proveedor de servicios telefónicos para el dispositivo especificado encontr�
 
 
 
-Memoria insuficiente para completar la operación solicitada o no se puede asignar o bloquear la memoria.
+Memoria insuficiente para completar la operación solicitada o no puede asignar o bloquear la memoria.
 
 
 </dt> </dl> </dd> <dt>
@@ -292,7 +292,7 @@ Memoria insuficiente para completar la operación solicitada o no se puede asign
 
 
 
-La aplicación no tiene privilegios de propietario en el dispositivo telefónico especificado.
+La aplicación no tiene privilegios de propietario para el dispositivo telefónico especificado.
 
 
 </dt> </dl> </dd> <dt>
@@ -322,7 +322,7 @@ La operación no está disponible.
 
 
 
-Si se ha solicitado la reinicialización de TAPI, por ejemplo, como resultado de agregar o quitar un proveedor de servicios de telefonía, las solicitudes [**phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize), [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa) o [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) se rechazan con este error hasta que la última aplicación cierra su uso de la API (mediante [**phoneShutdown),**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)momento en el que la nueva configuración se hace efectiva y las aplicaciones pueden llamar de nuevo a **phoneInitialize** o **phoneInitializeEx.**
+Si se ha solicitado la reinicialización de TAPI, por ejemplo, como resultado de agregar o quitar un proveedor de servicios de telefonía, las solicitudes [**phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize), [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa) o [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) se rechazan con este error hasta que la última aplicación cierre su uso de la API (mediante [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)), momento en el que la nueva configuración pasa a ser efectiva y las aplicaciones pueden llamar de nuevo a **phoneInitialize** o **phoneInitializeEx**.
 
 
 </dt> </dl> </dd> <dt>
@@ -337,7 +337,7 @@ Se ha superado el número máximo de solicitudes de teléfono pendientes.
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONEERR_RESOURCEUNAVAIL"></span><span id="phoneerr_resourceunavail"></span>**PHONEERR \_ RESOURCEUNAVAIL**
+<span id="PHONEERR_RESOURCEUNAVAIL"></span><span id="phoneerr_resourceunavail"></span>**RECURSO DE \_ PHONEERRUNAVAIL**
 </dt> <dd> <dl> <dt>
 
 
@@ -362,14 +362,14 @@ La estructura de límites de teléfono especificada es demasiado pequeña.
 
 
 
-La operación se invocó antes que cualquier aplicación denominada [**phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize), [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa).
+La operación se invocó antes de cualquier [**aplicación denominada phoneInitialize**](/windows/desktop/api/Tapi/nf-tapi-phoneinitialize), [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa).
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los valores 0xC0000000 a 0xFFFFFFFF están disponibles para extensiones específicas del dispositivo; los valores 0x80000000 a 0xBFFFFFFF están reservados; y 0x00000000 a 0x7FFFFFFF se usan como identificadores de solicitud.
+Los valores 0xC0000000 a 0xFFFFFFFF están disponibles para las extensiones específicas del dispositivo; los valores 0x80000000 a 0xBFFFFFFF están reservados; y 0x00000000 a través 0x7FFFFFFF se usan como identificadores de solicitud.
 
 Si una aplicación obtiene una devolución de error que no controla específicamente (por ejemplo, un error definido por una extensión específica del dispositivo), debe tratar el error como PHONEERR OPERATIONFAILED (por un motivo no \_ especificado).
 
@@ -377,10 +377,10 @@ Si una aplicación obtiene una devolución de error que no controla específicam
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -394,7 +394,7 @@ Si una aplicación obtiene una devolución de error que no controla específicam
 [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa)
 </dt> <dt>
 
-[**phoneAbrir**](/windows/desktop/api/Tapi/nf-tapi-phoneopen)
+[**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen)
 </dt> <dt>
 
 [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)

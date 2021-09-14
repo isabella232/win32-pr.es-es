@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 494ec12a0bb9c5c312f34e9cc53e82bfcbe155f90c38b98b2ba807e9c87b6945
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64f02529ba10d98092eb30a1bcc350d5c72049fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071535"
 ---
 # <a name="istatsstart-method"></a>IStats::Start (método)
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
@@ -51,13 +51,13 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 | <dl> <dt>**CAPTURA DE NMERR \_ \_ EN PAUSA**</dt> </dl>  | La captura se ha pausado y debe detenerse antes de poder reiniciarse. Llame al [método IStats::Stop](istats-stop.md) para detener la captura.<br/> |
 | <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>        | La captura ya se ha iniciado.<br/>                                                                                                            |
 | <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame al [método IStats::Conectar](istats-connect.md) para conectar el NPP a la red.<br/>           |
-| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Conectar.](istats-connect.md)<br/>                                          |
+| <dl> <dt>**NMERR \_ NO \_ SOLO \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Conectar.](istats-connect.md)<br/>                                          |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al reiniciar la captura mediante los métodos IStats::Start e [IStats::Stop,](istats-stop.md) debe llamar al método [IStats::Configure](istats-configure.md) para volver a configurar la conexión cada vez que llame a IStats::Start para reiniciar la captura de datos.
 

@@ -1,6 +1,6 @@
 ---
 title: Función gluEndSurface (Glu.h)
-description: Las funciones gluBeginSurface y gluEndSurface delimitan una definición de superficie no uniforme de spline B de lógica (SPLINEBS). | Función gluEndSurface (Glu.h)
+description: Las funciones gluBeginSurface y gluEndSurface delimitan una definición de superficie B-Spline racionalizada no uniforme (DSLBS). | Función gluEndSurface (Glu.h)
 ms.assetid: beaa0340-c67d-4376-bedd-7f73c5c6d742
 keywords:
 - Función gluEndSurface OpenGL
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32c8fb5165be78032429dce7957cd0975753515d55969b04415c61be2a7dc5ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54631d5c4ef752cffd989f8fa02f8cb512c67da3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071477"
 ---
-# <a name="gluendsurface-function"></a>función gluEndSurface
+# <a name="gluendsurface-function"></a>Función gluEndSurface
 
 Las [**funciones gluBeginSurface**](glubeginsurface.md) y **gluEndSurface** delimitan una definición de superficie B-Spline racionalizada no uniforme [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
@@ -51,24 +51,24 @@ El objeto RGBBS (creado [**con gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las [**funciones gluBeginSurface**](glubeginsurface.md) y **gluEndSurface** marcan el principio y el final de las definiciones de la superficie DESERBS, que se definen con llamadas a **gluNurbsSurface**.
+Las [**funciones gluBeginSurface**](glubeginsurface.md) y **gluEndSurface** marcan el principio y el final de las definiciones de la superficie DE GLUBS, que se definen con llamadas a **gluNurbsSurface**.
 
-1.  Llame **a gluBeginSurface** para marcar el principio de una definición de superficie DE LABS.
+1.  Llame **a gluBeginSurface para** marcar el principio de una definición de superficie DE LA BASE DE DATOS.
 2.  Realice una o varias llamadas a **gluNurbsSurface** para definir los atributos de la superficie.
 
     Exactamente una de estas llamadas a **gluNurbsSurface** debe tener un tipo de superficie de GL \_ MAP2 VERTEX 3 o GL \_ \_ \_ MAP2 \_ VERTEX \_ 4.
 
-3.  Para marcar el final de la definición de la superficie DE ASEBS, llame **a gluEndSurface**.
+3.  Para marcar el final de la definición de la superficie de LABS, llame **a gluEndSurface**.
 
 Las [**funciones gluBeginTrim,**](glubegintrim.md) [**gluPwlCurve,**](glupwlcurve.md) [**gluNurbsCurve**](glunurbscurve.md)y **gluEndTrim** admiten el recorte de superficies DETRUBS.
 
-Use evaluadores OpenGL para representar la superficie DE LA BASE DE DATOS COMO un conjunto de polígonos. Conserve el estado del evaluador durante la representación [**con glPushAttrib**](glpushattrib.md) (GL \_ EVAL \_ BIT) y [**glPopAttrib**](glpopattrib.md).
+Use evaluadores OpenGL para representar la superficie de LABS como un conjunto de polígonos. Conserve el estado del evaluador durante la representación [**con glPushAttrib**](glpushattrib.md) (GL \_ EVAL \_ BIT) y [**glPopAttrib**](glpopattrib.md).
 
 ## <a name="examples"></a>Ejemplos
 
-Las funciones siguientes representan una superficie DE COLOR DE TEXTURA con textura con normales; Las coordenadas de textura y las normales también se describen como superficies DE LABS:
+Las funciones siguientes representan una superficie DE COLORYBS con textura con normales; Las coordenadas de textura y las normales también se describen como superficies DE TIPO XYZBS:
 
 ``` syntax
 gluBeginSurface(nobj); 
@@ -82,7 +82,7 @@ gluEndSurface(nobj);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

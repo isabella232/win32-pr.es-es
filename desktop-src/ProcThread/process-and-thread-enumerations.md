@@ -4,12 +4,12 @@ ms.assetid: c79352c1-d9c5-4eeb-8d53-ba4063fc208d
 title: Enumeraciones de procesos y subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 509c6a7a995a93829706c0d2549cf170f64eeb830fa9abf8caf538a573874b80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b3068585a54ba6042eeb7ee99b33eb003938522
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071438"
 ---
 # <a name="process-and-thread-enumerations"></a>Enumeraciones de procesos y subprocesos
 

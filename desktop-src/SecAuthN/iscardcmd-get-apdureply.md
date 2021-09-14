@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: b5732d956e28c89ef3fba6d5beeea7077468c9e9154a48e4ffb327a36280d11f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ce11ec2d3d8202574ab23074531c393c9fecb98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071239"
 ---
 # <a name="iscardcmdget_apdureply-method"></a>Método ISCardCmd::get \_ ApduReply
 
 \[El **método \_ get ApduReply** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método \_ get ApduReply** recupera la [*APDU*](../secgloss/r-gly.md)de respuesta y la coloca en un búfer de bytes específico. La respuesta puede ser **NULL si** no [*se ha*](../secgloss/t-gly.md) realizado ninguna transacción en el comando APDU.
+El **método \_ get ApduReply** recupera la [*APDU*](../secgloss/r-gly.md)de respuesta y la coloca en un búfer de bytes específico. La respuesta puede ser **NULL** si no [*se ha realizado*](../secgloss/t-gly.md) ninguna transacción en el comando APDU.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ HRESULT get_ApduReply(
 *ppReplyApdu* \[ out\]
 </dt> <dd>
 
-Puntero al búfer de bytes (asignado a través de un **objeto IStream)** que contiene el mensaje de respuesta apdu en la devolución.
+Puntero al búfer de bytes (asignado a través de un **objeto IStream)** que contiene el mensaje de respuesta de APDU en la devolución.
 
 </dd> </dl>
 
@@ -58,14 +58,14 @@ El método devuelve uno de los siguientes valores posibles.
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operación completada correctamente.<br/>          |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro ppReplyApdu* no es válido.<br/>  |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido *en ppReplyApdu.*<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido *en ppReplyApdu*.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>                             |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar la longitud de la respuesta de APDU, llame [**a get \_ ApduReplyLength**](iscardcmd-get-apdureplylength.md).
 
@@ -116,18 +116,18 @@ if (lLe > 0)
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardCmd se define como \_ D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

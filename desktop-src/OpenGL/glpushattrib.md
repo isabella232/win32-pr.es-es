@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 252859065ddae0439441acb6afd797d26bbed44a246b628b4f0350d7f3b1e2d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e0bc15b85ddca3bdbe5f6774b5368c6f0cde8dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071496"
 ---
 # <a name="glpushattrib-function"></a>Función glPushAttrib
 
@@ -57,7 +57,7 @@ Acumulación del valor sin borrar del búfer
 <span id="GL_COLOR_BUFFER_BIT"></span><span id="gl_color_buffer_bit"></span>BIT DE \_ BÚFER DE COLOR \_ \_ GL
 </dt> <dd>
 
-Bit \_ de habilitación de PRUEBA ALFA de GL \_
+Bit \_ de \_ habilitación de PRUEBA ALFA de GL
 
 Función de prueba alfa y valor de referencia
 
@@ -98,14 +98,14 @@ Color RGBA asociado a la posición de trama actual
 
 Coordenadas de textura asociadas a la posición de trama actual
 
-Marca \_ GL EDGE \_ FLAG
+Marca GL \_ EDGE \_ FLAG
 
 </dd> <dt>
 
 <span id="GL_DEPTH_BUFFER_BIT"></span><span id="gl_depth_buffer_bit"></span>BIT DE \_ BÚFER DE PROFUNDIDAD DE \_ \_ GL
 </dt> <dd>
 
-GL \_ DEPTH TEST enable \_ bit
+Bit \_ de habilitación \_ de PRUEBA DE PROFUNDIDAD DE GL
 
 Función de prueba de búfer de profundidad
 
@@ -200,7 +200,7 @@ Marca \_ de habilitación GL
 
 Color de color rojo
 
-Densidad de densidad
+Densidad de densidad de densidad
 
 Inicio lineal de la matriz
 
@@ -252,9 +252,9 @@ Dirección, posición, exponente y ángulo de límite para cada luz
 
 Factores de atenuación constante, lineal y cuadrática para cada luz
 
-Color ambiente, difuso, especular y emisivo para cada material
+Color ambiental, difuso, especular y emisivo para cada material
 
-Índices de color ambiente, difuso y especular para cada material
+Índices de color ambiental, difuso y especular para cada material
 
 Exponente especular para cada valor de MATERIAL GL \_ SHADE \_ MODEL
 
@@ -265,9 +265,9 @@ Exponente especular para cada valor de MATERIAL GL \_ SHADE \_ MODEL
 
 Marca GL \_ LINE \_ SMOOTH
 
-Bit \_ de habilitación de GL LINE \_ STIPPLE
+Bit \_ de \_ habilitación de STIPPLE de GL LINE
 
-Patrón de stipple de línea y contador de repetición
+Patrón detippla de línea y contador de repetición
 
 Ancho de línea
 
@@ -280,7 +280,7 @@ Configuración de GL \_ LIST \_ BASE
 
 </dd> <dt>
 
-<span id="GL_PIXEL_MODE_BIT"></span><span id="gl_pixel_mode_bit"></span>BIT \_ DE MODO DE PÍXEL \_ \_ GL
+<span id="GL_PIXEL_MODE_BIT"></span><span id="gl_pixel_mode_bit"></span>BIT DE \_ MODO \_ DE PÍXEL \_ GL
 </dt> <dd>
 
 Configuración \_ de GL RED \_ BIAS y GL RED \_ \_ SCALE
@@ -299,7 +299,7 @@ Marcas GL \_ MAP COLOR y GL MAP \_ \_ \_ STENCIL
 
 Factores \_ ZOOM X y GL ZOOM Y \_ \_ \_ de GL
 
-Configuración de \_ READ BUFFER de GL \_
+Configuración de \_ GL READ \_ BUFFER
 
 </dd> <dt>
 
@@ -315,17 +315,17 @@ Tamaño del punto
 <span id="GL_POLYGON_BIT"></span><span id="gl_polygon_bit"></span>GL \_ POLYGON \_ BIT
 </dt> <dd>
 
-GL \_ CULL \_ FACE enable bit
+Gl \_ CULL \_ FACE enable bit
 
-Valor DE \_ GL CULL \_ FACE \_ MODE
+Valor DE GL \_ CULL \_ FACE \_ MODE
 
 Indicador \_ GL FRONT \_ FACE
 
-Configuración del \_ MODO DE POLÍGONO DE GL \_
+Configuración del \_ MODO DE POLÍGONO DE \_ GL
 
 Marca GL \_ POLYGON \_ SMOOTH
 
-Bit \_ de habilitación de GL POLYGON \_ STIPPLE
+Bit \_ de habilitación de STIPPLE de GL POLYGON \_
 
 Marca GL \_ POLYGON \_ OFFSET \_ FILL
 
@@ -333,9 +333,9 @@ Marca GL \_ POLYGON \_ OFFSET \_ LINE
 
 Marca GL \_ POLYGON \_ OFFSET \_ POINT
 
-FACTOR DE \_ DESPLAZAMIENTO \_ DE POLÍGONO \_ GL
+FACTOR DE \_ DESPLAZAMIENTO \_ DEL POLÍGONO \_ GL
 
-UNIDADES DE \_ \_ DESPLAZAMIENTO DE POLÍGONO \_ DE GL
+UNIDADES DE \_ \_ DESPLAZAMIENTO DE POLÍGONO GL \_
 
 </dd> <dt>
 
@@ -346,19 +346,19 @@ Imagen detippla de polígono
 
 </dd> <dt>
 
-<span id="GL_SCISSOR_BIT"></span><span id="gl_scissor_bit"></span>BIT \_ DE RESALTE \_ DE GL
+<span id="GL_SCISSOR_BIT"></span><span id="gl_scissor_bit"></span>BIT \_ DE \_ TORDO DE GL
 </dt> <dd>
 
-Marca \_ DE PRUEBA DE GL \_ SESO
+Marca \_ DE PRUEBA DE GL LO QUE SE HA \_ DESAJEADO
 
-Cuadro de verificación
+Caja de verificación
 
 </dd> <dt>
 
 <span id="GL_STENCIL_BUFFER_BIT"></span><span id="gl_stencil_buffer_bit"></span>BIT DE \_ BÚFER DE GALERÍA DE SÍMBOLOS DE \_ \_ GL
 </dt> <dd>
 
-GL \_ STENCIL \_ TEST enable bit
+Bit de habilitación de prueba de \_ GL STENCIL \_
 
 Función de galería de símbolos y valor de referencia
 
@@ -368,11 +368,11 @@ Acciones de paso de búfer de profundidad, paso y error de galería de símbolos
 
 Valor sin borrar del búfer de galería de símbolos
 
-Máscara de escritura del búfer de galería de símbolos
+Máscara de escritura de búfer de galería de símbolos
 
 </dd> <dt>
 
-<span id="GL_TEXTURE_BIT"></span><span id="gl_texture_bit"></span>BIT \_ DE TEXTURA \_ GL
+<span id="GL_TEXTURE_BIT"></span><span id="gl_texture_bit"></span>GL \_ TEXTURE \_ BIT
 </dt> <dd>
 
 Habilitar bits para las cuatro coordenadas de textura
@@ -389,7 +389,7 @@ Color y modo para cada entorno de textura
 
 Habilitar bits GL \_ TEXTURE \_ GEN \_ *x*; *x* es S, T, R y Q
 
-Configuración del MODO GEN DE TEXTURA DE GL \_ \_ para \_ S, T, R y Q
+Configuración \_ de GL TEXTURE GEN MODE para \_ \_ S, T, R y Q
 
 Ecuaciones de plano glTexGen para S, T, R y Q
 
@@ -402,13 +402,13 @@ Coeficientes de los seis planos de recorte
 
 Habilitar bits para los planos de recorte definibles por el usuario
 
-Valor DEL \_ \_ MODO DE MATRIZ DE GL
+Valor de \_ GL MATRIX \_ MODE
 
-Marca \_ NORMALIZE de GL
+Marca \_ GL NORMALIZE
 
 </dd> <dt>
 
-<span id="GL_VIEWPORT_BIT"></span><span id="gl_viewport_bit"></span>GL \_ VIEWPORT \_ BIT
+<span id="GL_VIEWPORT_BIT"></span><span id="gl_viewport_bit"></span>BIT DE \_ VENTANILLA \_ DE GL
 </dt> <dd>
 
 Intervalo de profundidad (cerca y lejos)
@@ -434,9 +434,9 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función glPushAttrib** toma un argumento, una máscara que indica qué grupos de variables de estado se guardarán en la pila de atributos. Las constantes simbólicas se usan para establecer bits en la máscara. Normalmente, el parámetro mask se construye aplicando la operación **OR** lógica a varias de estas constantes. Puede usar la máscara especial GL \_ ALL \_ ATTRIB \_ BITS para guardar todos los estados apilables.
+La **función glPushAttrib** toma un argumento, una máscara que indica qué grupos de variables de estado se deben guardar en la pila de atributos. Las constantes simbólicas se usan para establecer bits en la máscara. El parámetro mask se construye normalmente aplicando la operación **LÓGICA OR** a varias de estas constantes. Puede usar la máscara especial GL \_ ALL \_ ATTRIB \_ BITS para guardar todos los estados apilables.
 
 La [**función glPopAttrib**](glpopattrib.md) restaura los valores de las variables de estado guardadas con el último **comando glPushAttrib.** Los no guardados se mantienen sin cambios.
 
@@ -444,21 +444,21 @@ Es un error insertar atributos en una pila completa o quitar atributos de una pi
 
 Inicialmente, la pila de atributos está vacía.
 
-No todos los valores del estado OpenGL se pueden guardar en la pila de atributos. Por ejemplo, no puede guardar el paquete de píxeles y desempaquetar el estado, representar el estado del modo y seleccionar y el estado de comentarios.
+No todos los valores del estado OpenGL se pueden guardar en la pila de atributos. Por ejemplo, no puede guardar el paquete de píxeles y desempaquetar el estado, el estado del modo de representación y seleccionar y el estado de comentarios.
 
 La profundidad de la pila de atributos depende de la implementación, pero debe ser al menos 16.
 
-Las funciones siguientes recuperan información relacionada **con glPushAttrib** y [**glPopAttrib**](glpopattrib.md):
+Las siguientes funciones recuperan información relacionada **con glPushAttrib** y [**glPopAttrib**](glpopattrib.md):
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ ATTRIB \_ STACK \_ DEPTH
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ ATTRIB \_ STACK \_ DEPTH
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAX \_ ATTRIB \_ STACK \_ DEPTH
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAX \_ ATTRIB STACK \_ \_ DEPTH
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

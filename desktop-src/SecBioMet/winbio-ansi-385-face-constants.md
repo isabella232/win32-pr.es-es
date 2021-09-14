@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6bd8ddc173915e2bbd912a6a668c63b4be733f32357189fe6ff3365a20bacfe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5afa6bc6ba28de799795a049dde3ab98ebdb4c78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119410315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071174"
 ---
 # <a name="winbio_ansi_385_face-constants"></a>Constantes FACE de WINBIO \_ ANSI \_ 385 \_
 
@@ -39,11 +39,11 @@ Las siguientes constantes son valores **\_ DE \_ SUBTYPE BIOMETRIC** DE WINBIO q
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

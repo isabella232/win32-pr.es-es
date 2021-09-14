@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: d39def878077aca20e17b35f88ba210de032ea272940ba59e785ef0766a38f58
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e319d22db33a627be631f9b6b0ee36591bc7a5bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117984995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071607"
 ---
-# <a name="dot11_ssid-structure"></a>Estructura \_ SSID de DOT11
+# <a name="dot11_ssid-structure"></a>Estructura SSID de DOT11 \_
 
-Una **estructura \_ SSID DE DOT11** contiene el SSID de una interfaz.
+Una **estructura \_ SSID DOT11** contiene el SSID de una interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ typedef struct _DOT11_SSID {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ The SSID. DOT11 \_ SSID \_ MAX LENGTH se establece \_ en 32.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El SSID especificado por el miembro **ucSSID** no es una cadena ASCII terminada en NULL. El miembro **uSSIDLength** determina la longitud del SSID.
 
@@ -66,10 +66,10 @@ Un SSID comodín es un SSID cuyo **miembro uSSIDLength** está establecido en ce
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                        |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                         |
-| Header<br/>                   | <dl> <dt>Wlantypes.h (incluya Windot11.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wlantypes.h (incluye Windot11.h)</dt> </dl> |
 
 
 

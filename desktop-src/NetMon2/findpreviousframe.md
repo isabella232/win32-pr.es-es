@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: a3bd6378691b63fc7f4db2455f713ffd0cf2a0281da2411dc494244ad3f00ba4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: deabf10702ca41c23101c5f60c9459e094e567fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117982532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071564"
 ---
 # <a name="findpreviousframe-function"></a>Función FindPreviousFrame
 
@@ -83,7 +83,7 @@ Puntero a una **palabra que** recibe el desplazamiento del protocolo.
 *OriginalFrameNumber* 
 </dt> <dd>
 
-Punto inicial de la búsqueda. De forma predeterminada, esta función busca hacia atrás 1000 fotogramas desde el *punto inicial OriginalFrameNumber.* Puede cambiar la distancia de búsqueda atrás agregando esta línea al archivo Nmapi.ini, que se encuentra en el \\ directorio Monitor de red búsqueda.
+Punto inicial de la búsqueda. De forma predeterminada, esta función busca 1000 fotogramas hacia atrás desde el *punto inicial OriginalFrameNumber.* Puede cambiar la distancia de búsqueda hacia atrás agregando esta línea al archivo Nmapi.ini, que se encuentra en el \\ directorio Monitor de red búsqueda.
 
 MAXLOOKBACK=<new lookback distance>
 
@@ -102,17 +102,17 @@ Si la función se realiza correctamente, el valor devuelto es un identificador d
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro de captura se define principalmente mediante *ProtocolName*, que es la única entrada de filtro necesaria; Puede agregar información *de DestinationAddress* *y SourceAddress* para aumentar la velocidad de captura.
 
-*ProtocolOffset* se devuelve al analizador de llamadas, que agrega este **DWORD** al puntero devuelto bloqueando el marco [(con ParserTemporaryLockFrame)](parsertemporarylockframe.md)para obtener el LPBYTE del protocolo que se está buscando. En la devolución, el HFRAME que pasó el filtro se da al analizador. Si el analizador encuentra que el marco no es el que se busca, el analizador puede devolver este HFRAME a la función **FindPreviousFrame** para recuperar el fotograma siguiente. Las direcciones de origen y destino, que no son necesarias, se pueden pasar como **NULL.** Cuando se usan, estas direcciones pueden ser de tipo ADDRESS \_ TYPE \_ IP, y así sucesivamente, no solo tipos MAC.
+*ProtocolOffset* se devuelve al analizador de llamadas, que agrega este **DWORD** al puntero devuelto bloqueando el marco [(con ParserTemporaryLockFrame)](parsertemporarylockframe.md)para obtener el LPBYTE del protocolo que se está buscando. En la devolución, el HFRAME que pasó el filtro se da al analizador. Si el analizador encuentra que el marco no es el que se busca, el analizador puede devolver este HFRAME a la función **FindPreviousFrame** para recuperar el fotograma siguiente. Las direcciones de origen y destino, que no son necesarias, se pueden pasar como **NULL.** Cuando se usan, estas direcciones pueden ser de tipo ADDRESS TYPE IP, y \_ así sucesivamente, no solo tipos \_ MAC.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

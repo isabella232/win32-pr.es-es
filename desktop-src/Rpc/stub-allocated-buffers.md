@@ -1,17 +1,17 @@
 ---
-title: Stub-Allocated buffers
+title: Stub-Allocated búferes
 description: En lugar de forzar una llamada distinta para cada nodo del árbol o gráfico, puede dirigir los códigos auxiliares para calcular el tamaño de los datos y asignar y liberar memoria haciendo que una sola llamada al usuario midl asigne o al usuario medio sea \_ \_ \_ \_ libre.
 ms.assetid: 9911649d-00e8-47d8-b512-7d9b185d1e09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ad400c000f1112b6f69d5ba8ea48bfc50f947eadb736150f894fba68205e1a4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 956acf6452c1a4e7d04afcd1da263439436e3bad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071409"
 ---
-# <a name="stub-allocated-buffers"></a>Stub-Allocated buffers
+# <a name="stub-allocated-buffers"></a>Stub-Allocated búferes
 
 En lugar de forzar una llamada distinta para cada nodo del árbol o gráfico, puede dirigir los códigos auxiliares para calcular el tamaño de los datos y para asignar y liberar memoria haciendo una sola llamada a la asignación de usuario de nivel medio o al usuario [medio \_ \_ ](/windows/desktop/Midl/midl-user-free-1)libre. [ \_ \_ ](/windows/desktop/Midl/midl-user-allocate-1) El atributo ACF **\[ allocate (todos los \_ nodos) \]** dirige los códigos auxiliares para asignar o liberar todos los nodos en una sola llamada a las funciones de administración de memoria proporcionadas por el usuario.
 

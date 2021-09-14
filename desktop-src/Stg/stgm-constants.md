@@ -29,12 +29,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18248e862c3d5981e9c34b29522b1cd75d2b61cf78a52613b3d28a1d2c98b4fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd283c2dfeddc48b6bd12f8317ec352cb62e4973
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119661975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071113"
 ---
 # <a name="stgm-constants"></a>Constantes STGM
 
@@ -48,7 +48,7 @@ Para obtener más información sobre las transacciones, vea la sección Comentar
 
 
 
-| Grupo                      | Marca                         | Value       |
+| Group (Grupo)                      | Marca                         | Value       |
 |----------------------------|------------------------------|-------------|
 | Acceso                     | **STGM \_ READ**               | 0x00000000L |
 |                            | **STGM \_ WRITE**              | 0x00000001L |
@@ -96,7 +96,7 @@ Indica que el objeto es de solo lectura, lo que significa que no se pueden reali
 
 
 
-Permite guardar los cambios en el objeto , pero no permite el acceso a sus datos. Las implementaciones proporcionadas de [**las interfaces IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) [**e IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) no admiten este modo de solo escritura.
+Permite guardar los cambios en el objeto , pero no permite el acceso a sus datos. Las implementaciones proporcionadas de las interfaces [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) e [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) no admiten este modo de solo escritura.
 
 
 </dt> </dl> </dd> <dt>
@@ -273,7 +273,7 @@ Indica que, en modo de transacción, normalmente se usa un archivo temporal temp
 
 
 
-Esta marca se usa al abrir un objeto de almacenamiento con **STGM \_ TRANSACTED** y sin **STGM \_ SHARE \_ EXCLUSIVE** o **STGM \_ SHARE DENY \_ \_ WRITE**. En este caso, la especificación **de STGM \_ NOSNAPSHOT** impide que la implementación proporcionada por el sistema cree una copia de instantánea del archivo. En su lugar, los cambios realizados en el archivo se escriben al final del archivo. El espacio sin usar no se reclama a menos que se realice la consolidación durante la confirmación y solo haya un escritor actual en el archivo. Cuando el archivo se abre sin modo de instantánea, no se puede realizar otra operación de apertura sin especificar **STGM \_ NOSNAPSHOT**. Esta marca solo se puede usar en una operación raíz abierta. Para obtener más información sobre el modo NoSnapshot, consulte la sección Comentarios.
+Esta marca se usa al abrir un objeto de almacenamiento con **STGM \_ TRANSACTED** y sin **STGM \_ SHARE \_ EXCLUSIVE** o **STGM \_ SHARE DENY \_ \_ WRITE**. En este caso, la especificación **de STGM \_ NOSNAPSHOT** impide que la implementación proporcionada por el sistema cree una copia de instantánea del archivo. En su lugar, los cambios realizados en el archivo se escriben al final del archivo. El espacio sin usar no se reclama a menos que se realice la consolidación durante la confirmación y solo haya un escritor actual en el archivo. Cuando el archivo se abre sin modo de instantánea, no se puede realizar otra operación de apertura sin especificar **STGM \_ NOSNAPSHOT**. Esta marca solo se puede usar en una operación raíz abierta. Para obtener más información sobre el modo NoSnapshot, vea la sección Comentarios.
 
 
 </dt> </dl> </dd> <dt>
@@ -317,7 +317,7 @@ Indica que el archivo subyacente se destruirá automáticamente cuando se libera
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede combinar estas marcas, pero solo puede elegir una marca de cada grupo de marcas relacionadas. Normalmente, se debe especificar una marca de cada uno de los grupos de acceso y uso compartido para todas las funciones y métodos que usan estas constantes. Las marcas de otros grupos son opcionales.
 
@@ -347,7 +347,7 @@ Cuando se abre un objeto de almacenamiento raíz en modo de transacción, la ubi
 
 El efecto de estas marcas depende del número de lectores o escritores que acceden al almacenamiento raíz.
 
-En el caso del "escritor único", se abre un objeto de almacenamiento en modo de transacción para el acceso de escritura y no puede haber ningún otro acceso al archivo. Es decir, el archivo se abre con **STGM \_ TRANSACTED,** el acceso de **STGM \_ WRITE** o **STGM \_ READWRITE** y el uso compartido de **STGM \_ SHARE \_ EXCLUSIVE.** En este caso, los cambios realizados en el objeto de almacenamiento se escriben en el área de scratch. Cuando se confirman esos cambios, se copian en el almacenamiento original. Por lo tanto, si no se realiza realmente ningún cambio en el objeto de almacenamiento, no habrá ninguna transferencia de datos innecesaria.
+En el caso del "escritor único", se abre un objeto de almacenamiento en modo de transacción para el acceso de escritura y no puede haber ningún otro acceso al archivo. Es decir, el archivo se abre con **STGM \_ TRANSACTED,** el acceso de **STGM \_ WRITE** o **STGM \_ READWRITE** y el uso compartido de **STGM \_ SHARE \_ EXCLUSIVE.** En este caso, los cambios en el objeto de almacenamiento se escriben en el área de scratch. Cuando se confirman esos cambios, se copian en el almacenamiento original. Por lo tanto, si no se realiza realmente ningún cambio en el objeto de almacenamiento, no habrá ninguna transferencia de datos innecesaria.
 
 En el caso de "varios escritores", se abre un objeto de almacenamiento con transacciones para el acceso de escritura, pero se comparte en , como para permitir otros escritores. Es decir, el objeto de almacenamiento se abre con **STGM \_ TRANSACTED,** el acceso de **STGM \_ WRITE** o **STGM \_ READWRITE** y el uso compartido de **STGM \_ SHARE DENY \_ \_ READ**. Si en su lugar se especifica el uso compartido de **STGM \_ SHARE DENY \_ \_ NONE,** el caso es "multiple-writer, multiple-reader". En estos casos, se realizará una instantánea de los datos originales durante la operación de apertura. Por lo tanto, aunque no se realice realmente ningún cambio en el almacenamiento o no lo abra otro escritor simultáneamente, la transferencia de datos sigue siendo necesaria durante la apertura. Como resultado, se puede obtener el mejor rendimiento en tiempo abierto abriendo el objeto de almacenamiento en los modos **STGM \_ SHARE DENY \_ \_ WRITE** o **STGM SHARE \_ \_ EXCLUSIVE.** Para obtener más información sobre cómo se confirman los cambios cuando hay varios escritores, vea [**IStorage::Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit).
 
@@ -355,11 +355,11 @@ En el caso de "escritor único, lector múltiple", se abre un objeto de almacena
 
 Normalmente, el área temporal es un archivo temporal, independiente de los datos originales. Cuando los cambios se confirman en el archivo original, los datos se deben transferir desde el archivo temporal. Para evitar esta transferencia de datos, se puede especificar la marca **\_ STGM NOSCRATCH.** Cuando se especifica esta marca, se usan partes del archivo de objeto de almacenamiento para el área temporal, en lugar de un archivo temporal independiente. Como resultado, la confirmación de los cambios se puede realizar rápidamente, ya que se requiere poca transferencia de datos. La desventaja es que el archivo de almacenamiento puede ser mayor de lo que sería de otro modo, ya que debe crecer para que sea lo suficientemente grande para los datos originales y el área de cero. Para consolidar los datos y quitar esta área innecesaria, vuelva a abrir el almacenamiento raíz en modo de transacción, pero sin establecer la marca **STGM \_ NOSCRATCH.** A continuación, [**llame a IStorage::Commit con**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) la marca **\_ STGC CONSOLIDATE** establecida.
 
-El área de instantánea, como el área temporal, también es, normalmente, un archivo temporal, y esto también puede verse afectado por una marca STGM. Al especificar la marca **STGM \_ NOSNAPSHOT,** no se crea un archivo de instantánea temporal independiente. En su lugar, los datos originales nunca se modifican, incluso si hay uno o varios escritores por objeto. Cuando se confirman los cambios, se agregan al archivo, pero los datos originales permanecen intactos. Este modo aumenta la eficacia porque reduce el tiempo de ejecución al eliminar el requisito de crear una instantánea durante la operación de apertura. Sin embargo, el uso de este modo puede dar lugar a un archivo de almacenamiento muy grande porque los datos del archivo nunca se pueden sobrescribir. Esto no limita el tamaño de los archivos abiertos en el modo NoSnapshot.
+El área de instantánea, como el área temporal, también es, normalmente, un archivo temporal, y esto también puede verse afectado por una marca STGM. Al especificar la marca **STGM \_ NOSNAPSHOT,** no se crea un archivo de instantánea temporal independiente. En su lugar, los datos originales nunca se modifican, aunque haya uno o varios escritores por objeto. Cuando se confirman los cambios, se agregan al archivo, pero los datos originales permanecen intactos. Este modo aumenta la eficacia porque reduce el tiempo de ejecución al eliminar el requisito de crear una instantánea durante la operación de apertura. Sin embargo, el uso de este modo puede dar lugar a un archivo de almacenamiento muy grande porque los datos del archivo nunca se pueden sobrescribir. Esto no limita el tamaño de los archivos abiertos en el modo NoSnapshot.
 
-### <a name="direct-single-writer-multiple-reader-mode"></a>Direct Single-Writer, Multiple-Reader Mode
+### <a name="direct-single-writer-multiple-reader-mode"></a>Escritura única directa, modo Multiple-Reader escritura
 
-Como se describe, es posible tener un único sistema de escritura y varios lectores de un objeto de almacenamiento, si ese objeto se abre en modo de transacción. También es posible lograr el caso de un solo escritor y varios lectores en modo directo, mediante la especificación de la marca **STGM \_ DIRECT \_ SWMR.**
+Como se describe, es posible tener un único sistema de escritura y varios lectores de un objeto de almacenamiento, si ese objeto se abre en modo de transacción. También es posible lograr el caso de escritura única y multireader en modo directo, mediante la especificación de la marca **STGM \_ DIRECT \_ SWMR.**
 
 En el modo **STGM \_ DIRECT \_ SWMR,** es posible que un autor de la llamada abra un objeto para el acceso de lectura y escritura, mientras que otros autores de la llamada simultáneamente tienen el archivo abierto para el acceso de solo lectura. No es válido usar esta marca en combinación con la **marca STGM \_ TRANSACTED.** En este modo, el escritor abre el objeto con las marcas siguientes:
 
@@ -367,7 +367,7 @@ En el modo **STGM \_ DIRECT \_ SWMR,** es posible que un autor de la llamada abr
 
 y cada uno de los lectores abre el objeto con estas marcas:
 
-**STGM \_ RECURSO \_ COMPARTIDO STGM DE** \| **LECTURA \_ STGM** DE SWMR DIRECTO DENY \| **\_ \_ \_ NONE**
+**STGM \_ RECURSO \_ COMPARTIDO STGM DE** \| **LECTURA \_ STGM** DE SWMR DIRECTO NO DENEGAR \| **\_ \_ \_ NINGUNO**
 
 En este modo, para modificar el objeto de almacenamiento, el escritor debe obtener acceso exclusivo al objeto. Esto es posible cuando todos los lectores lo han cerrado. El escritor usa la [**interfaz IDirectWriterLock**](/windows/desktop/api/Objidl/nn-objidl-idirectwriterlock) para obtener este acceso exclusivo.
 
@@ -378,13 +378,13 @@ El modo simple **(STGM \_ SIMPLE)** es útil para las aplicaciones que realizan 
 -   No existe compatibilidad con los subalmacenamientos.
 -   El objeto de almacenamiento y los objetos de secuencia obtenidos de él no se pueden serializar.
 -   Cada secuencia tiene un tamaño mínimo. Si se escriben menos bytes mínimos en una secuencia cuando se libera la secuencia, la secuencia se extiende al tamaño mínimo. Por ejemplo, el tamaño mínimo para una implementación [**de IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) determinada es de 4 KB. Se crea una secuencia y se escribe en ella 1 KB. En la versión final de **ese IStream,** el tamaño del flujo se ampliará automáticamente a 4 KB. Posteriormente, al abrir la secuencia y llamar al [**método IStream::Stat**](/windows/desktop/api/Objidl/nf-objidl-istream-stat) se mostrará un tamaño de 4 KB.
--   No todos los métodos [**de IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) [**o IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) serán compatibles con la implementación de . Para obtener más información, [vea IStorage - Compound File Implementation](istorage-compound-file-implementation.md)e [IStream - Compound File Implementation](istream-compound-file-implementation.md).
+-   No todos los métodos [**de IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) [**o IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) serán compatibles con la implementación de . Para obtener más información, [vea IStorage - Compound File Implementation](istorage-compound-file-implementation.md)y [IStream - Compound File Implementation](istream-compound-file-implementation.md).
 
 [La serialización](/windows/desktop/Midl/marshaling-ole-data-types) es el proceso de empaquetar, desempaquetar y enviar parámetros de método de interfaz a través de los límites de subprocesos o procesos dentro de una llamada a procedimiento remoto (RPC). Para obtener más información, vea [Detalles de serialización](../com/marshaling-details.md) y [Serialización de interfaz.](../com/interface-marshaling.md)
 
 Cuando un objeto de almacenamiento se obtiene mediante una operación Create en modo simple:
 
--   Se pueden crear elementos de secuencia, pero no abrirse.
+-   Se pueden crear elementos de flujo, pero no abrirse.
 -   Cuando se crea un elemento de secuencia mediante una llamada a [**IStorage::CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream), no es posible crear otra secuencia hasta que se libera ese objeto de secuencia.
 -   Una vez escritas todas las secuencias, llame [**a IStorage::Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) para vaciar los cambios.
 
@@ -399,7 +399,7 @@ Tenga en cuenta que, si un objeto de almacenamiento modifica un elemento de alma
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

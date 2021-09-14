@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 3b3d558717777c9b2bead2fd7e141dee38b22491af4142d4948c7f1f76aadfd9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 702ee6340fa3d03217c884a48625d3a38be4ad9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071585"
 ---
 # <a name="nametype-simple-type-lan_policy"></a>tipo simple nameType (LAN_policy)
 
-El tipo simple nameType define un tipo de cadena para el nombre o la descripción de un perfil de directiva LAN cableada. Los nombres y descripciones son cadenas que tienen al menos un carácter de longitud y, como máximo, 255 caracteres.
+El tipo simple nameType define un tipo de cadena para el nombre o la descripción de un perfil de directiva LAN cableada. Los nombres y descripciones son cadenas que tienen al menos un carácter de longitud y una longitud de 255 caracteres como máximo.
 
 ``` syntax
 <xs:simpleType name="nameType">
@@ -42,7 +42,7 @@ El tipo simple nameType define un tipo de cadena para el nombre o la descripció
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

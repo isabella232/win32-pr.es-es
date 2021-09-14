@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 94ce2a2e0b86c24ea6c16627fd0b866e18aaf48f3c1f0b318a601809e1ee03dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4484d5ec55f700410eb80d11d2249cceceef43ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071525"
 ---
 # <a name="labeled_systemtime-structure"></a>LABELED \_ SYSTEMTIME (estructura)
 
@@ -36,7 +36,7 @@ typedef struct _LABELED_SYSTEMTIME {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,9 +54,9 @@ Descripción textual o etiqueta que se muestra cuando se detecta el valor SYSTEM
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **miembro lpLabeledSystemTimeTable** de la estructura [SET](set.md) apunta a una matriz de estructuras **SET** que definen uno o varios pares de valores de etiqueta. Los pares se usan cuando se quiere mostrar una etiqueta en lugar de un valor LARGEINT específico que se encuentra en el paquete de protocolo.
+El **miembro lpLabeledSystemTimeTable** de la estructura [SET](set.md) apunta a una matriz de estructuras **SET** que definen uno o varios pares de valores de etiqueta. Los pares se usan cuando se desea mostrar una etiqueta en lugar de un valor LARGEINT específico que se encuentra en el paquete de protocolo.
 
 ## <a name="requirements"></a>Requisitos
 

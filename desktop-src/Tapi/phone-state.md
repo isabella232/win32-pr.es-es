@@ -4,14 +4,14 @@ ms.assetid: 74e74b62-8387-4056-83e6-2350b3da4077
 title: PHONE_STATE mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90003eaa67cb3384b123c62827fcf52bae524b1e20f9f14c2391c46dc89a367c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5db52f16d6c377087fd6ccadc5e70b5bb2865da2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119796765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071078"
 ---
-# <a name="phone_state-message"></a>Mensaje \_ DE ESTADO DEL TELÉFONO
+# <a name="phone_state-message"></a>Mensaje \_ PHONE STATE
 
 TAPI envía el mensaje **PHONE \_ STATE** a una aplicación cada vez que cambia el estado de un dispositivo de teléfono.
 
@@ -29,14 +29,14 @@ TAPI envía el mensaje **PHONE \_ STATE** a una aplicación cada vez que cambia 
 *hPhone* 
 </dt> <dd>
 
-Identificador para el dispositivo de teléfono.
+Identificador del dispositivo de teléfono.
 
 </dd> <dt>
 
 *dwCallbackInstance* 
 </dt> <dd>
 
-La instancia de devolución de llamada de la aplicación proporcionada al abrir el dispositivo telefónico.
+Instancia de devolución de llamada de la aplicación proporcionada al abrir el dispositivo telefónico.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Si *dwParam1* es PHONESTATE \_ LAMP, *dwParam2* contiene el identificador de bot
 
 Si *dwParam1* es PHONESTATE \_ RINGMODE, *dwParam2* contiene el nuevo modo de anillo.
 
-Si *dwParam1* es PHONESTATE \_ HANDSET, SPEAKER o HEADSET, *dwParam2* contiene el nuevo modo hookswitch de ese dispositivo de conmutador de enlace. Este parámetro usa una de las [**constantes PHONEHOOKSWITCHMODE \_**](phonehookswitchmode--constants.md).
+Si *dwParam1* es PHONESTATE \_ HANDSET, SPEAKER o HEADSET, *dwParam2* contiene el nuevo modo hookswitch de ese dispositivo hookswitch. Este parámetro usa una de las [**constantes PHONEHOOKSWITCHMODE \_**](phonehookswitchmode--constants.md).
 
 </dd> <dt>
 
@@ -75,20 +75,20 @@ Sin usar.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El envío **del \_ mensaje PHONE STATE** a la aplicación se puede controlar y consultar mediante [**phoneSetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonesetstatusmessages) y [**phoneGetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatusmessages). De forma predeterminada, este mensaje está deshabilitado para todos los cambios de estado excepto para PHONESTATE \_ REINIT, que no se puede deshabilitar. Este mensaje se envía a todas las aplicaciones que tienen un identificador al teléfono, incluidas las que llamaron [**a phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) con el parámetro *dwPrivileges* establecido en PHONEPRIVILEGE OWNER o \_ PHONEPRIVILEGE \_ MONITOR.
+El envío **del \_ mensaje PHONE STATE** a la aplicación se puede controlar y consultar mediante [**phoneSetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonesetstatusmessages) y [**phoneGetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatusmessages). De forma predeterminada, este mensaje está deshabilitado para todos los cambios de estado excepto PHONESTATE \_ REINIT, que no se puede deshabilitar. Este mensaje se envía a todas las aplicaciones que tienen un identificador para el teléfono, incluidas aquellas que llamaron [**a phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) con el parámetro *dwPrivileges* establecido en PHONEPRIVILEGE OWNER o \_ PHONEPRIVILEGE \_ MONITOR.
 
-Se **envía un mensaje DE \_ ESTADO** DE TELÉFONO con una indicación de propietarios o monitores a las aplicaciones que ya tienen un identificador para el teléfono. Esto puede ser el resultado de que otra aplicación cambie la propiedad o la supervisión del dispositivo telefónico con [**phoneOpen,**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) [**phoneClose**](/windows/desktop/api/Tapi/nf-tapi-phoneclose) o [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown).
+Se **envía un mensaje PHONE \_ STATE** con una indicación Propietarios o Monitores a las aplicaciones que ya tienen un identificador para el teléfono. Esto puede ser el resultado de que otra aplicación cambie la propiedad o la supervisión del dispositivo telefónico con [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen), [**phoneClose**](/windows/desktop/api/Tapi/nf-tapi-phoneclose) o [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

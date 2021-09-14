@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83abb24f665cbcbf978a6423868751794371606cf412f609876a8f17d42c115a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a9a9e8b547790049c93360f060e944aafcea4511
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119489535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071486"
 ---
 # <a name="gludisk-function"></a>función gluDisk
 
@@ -83,7 +83,7 @@ Número de anillos concéntricas sobre el origen en el que se subdivide el disco
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluDisk** representa un disco en el *plano z* = 0. El disco tiene un radio de *rado* externo y contiene un hueco circular concéntrica con un radio *de innerRadius*. Si *innerRadius* es 0, no se genera ningún hueco. El disco se subdivide alrededor del eje Z en segmentos (como los segmentos de pizza) y también sobre el eje z en anillos (como se especifica en *segmentos* y *bucles*, respectivamente).
 
@@ -95,7 +95,7 @@ Si texturing está activado (con [**gluQuadricTexture),**](gluquadrictexture.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

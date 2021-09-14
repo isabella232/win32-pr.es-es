@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_ANSI_381_IMP_TYPE (Winbio \_ Types. h)
-description: Especifique los tipos de impresión de dedo y Palm.
+title: WINBIO_ANSI_381_IMP_TYPE constantes (Winbio \_ types.h)
+description: Especifique los tipos de impresión de dedo y de mano.
 ms.assetid: 838FC1E2-4FEB-4162-B689-4FACAF8F79F5
 topic_type:
 - apiref
@@ -19,17 +19,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 15641059efe5a1f9f529c248b417cbc949db4ec4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996386"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071176"
 ---
-# <a name="winbio_ansi_381_imp_type-constants"></a>\_Constantes de \_ \_ tipo IMP \_ de ANSI 381 WINBIO
+# <a name="winbio_ansi_381_imp_type-constants"></a>Constantes DE TIPO IMP DE WINBIO \_ ANSI \_ 381 \_ \_
 
-Se pueden usar las siguientes constantes para especificar los tipos de impresión de dedo y de Palma:
+Las siguientes constantes se pueden usar para especificar los tipos de impresión de dedos y manos:
 
-<dl> <span id="WINBIO_ANSI_381_IMP_TYPE_LIVE_SCAN_PLAIN"></span><span id="winbio_ansi_381_imp_type_live_scan_plain"></span>**WINBIO \_ ANSI \_ 381 \_ IMP-tipo IMP. \_ \_ \_ \_ análisis** en directo <span id="WINBIO_ANSI_381_IMP_TYPE_LIVE_SCAN_ROLLED"></span> <span id="winbio_ansi_381_imp_type_live_scan_rolled"></span> **WINBIO \_ ANSI \_ 381 \_ \_ tipo IMP \_ Live \_ scan \_** alWINBIOd <span id="WINBIO_ANSI_381_IMP_TYPE_NONLIVE_SCAN_PLAIN"></span> <span id="winbio_ansi_381_imp_type_nonlive_scan_plain"></span> **WINBIO \_ ANSI \_ 381 IMP no \_ \_ \_ Live \_ scan \_ Plain** <span id="WINBIO_ANSI_381_IMP_TYPE_NONLIVE_SCAN_ROLLED"></span> <span id="winbio_ansi_381_imp_type_nonlive_scan_rolled"></span> **\_ ANSI \_ 381 IMP no \_ \_ \_ Live \_ scan \_ revertido** <span id="WINBIO_ANSI_381_IMP_TYPE_LATENT"></span> <span id="winbio_ansi_381_imp_type_latent"></span> **WINBIO \_ ANSI \_ 381 \_ IMP \_ Type \_ lated** <span id="WINBIO_ANSI_381_IMP_TYPE_SWIPE"></span> <span id="winbio_ansi_381_imp_type_swipe"></span> **WINBIO \_ ANSI \_ 381 \_ IMP \_ \_** <span id="WINBIO_ANSI_381_IMP_TYPE_LIVE_SCAN_CONTACTLESS"></span> <span id="winbio_ansi_381_imp_type_live_scan_contactless"></span> **\_ \_ \_ \_ \_ \_ \_**  
+<dl> <span id="WINBIO_ANSI_381_IMP_TYPE_LIVE_SCAN_PLAIN"></span><span id="winbio_ansi_381_imp_type_live_scan_plain"></span>**WINBIO \_ ANSI \_ 381 IMP TYPE \_ LIVE SCAN \_ \_ \_ \_ PLAIN** <span id="WINBIO_ANSI_381_IMP_TYPE_LIVE_SCAN_ROLLED"></span> <span id="winbio_ansi_381_imp_type_live_scan_rolled"></span> **WINBIO \_ ANSI \_ 381 \_ IMP TYPE LIVE SCAN \_ \_ \_ \_ ROLLED** <span id="WINBIO_ANSI_381_IMP_TYPE_NONLIVE_SCAN_PLAIN"></span> <span id="winbio_ansi_381_imp_type_nonlive_scan_plain"></span> **WINBIO \_ ANSI \_ 381 \_ IMP TYPE \_ \_ NONLIVE SCAN \_ \_ PLAIN** <span id="WINBIO_ANSI_381_IMP_TYPE_NONLIVE_SCAN_ROLLED"></span> <span id="winbio_ansi_381_imp_type_nonlive_scan_rolled"></span> **WINBIO \_ ANSI \_ 381 IMP TYPE \_ \_ \_ NONLIVE SCAN \_ \_ ROLLED** <span id="WINBIO_ANSI_381_IMP_TYPE_LATENT"></span> <span id="winbio_ansi_381_imp_type_latent"></span> **WINBIO \_ ANSI \_ 381 \_ IMP TYPE \_ \_ LATENT** <span id="WINBIO_ANSI_381_IMP_TYPE_SWIPE"></span> <span id="winbio_ansi_381_imp_type_swipe"></span> **WINBIO \_ ANSI \_ 381 \_ IMP TYPE \_ \_ SWIPE** <span id="WINBIO_ANSI_381_IMP_TYPE_LIVE_SCAN_CONTACTLESS"></span> <span id="winbio_ansi_381_imp_type_live_scan_contactless"></span> **WINBIO \_ ANSI \_ 381 \_ IMP TYPE LIVE SCAN \_ \_ \_ \_ CONTACTLESS**  
 </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -38,9 +38,9 @@ Se pueden usar las siguientes constantes para especificar los tipos de impresió
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

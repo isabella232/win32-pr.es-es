@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 27a43f8ea2902af7e2847e032da18543ffdbb228c2aa3e49fde63ce7cd727512
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b64816589e3d4d0a2e3ace7be5c895e3d2cf22f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071530"
 ---
 # <a name="istats-interface"></a>Interfaz IStats
 
 La **interfaz IStats** proporciona los métodos que se usan para conectar un NPP a la red, capturar tráfico de red, recuperar estadísticas y desconectar el NPP de la red. Esta interfaz genera estadísticas sin fotogramas.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IStats** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IStats** también tiene estos tipos de miembros:
 
@@ -39,8 +39,8 @@ La **interfaz IStats** tiene estos métodos.
 
 | Método                                                                | Descripción                                                                                                                                               |
 |:----------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Configurar**](istats-configure.md)                                 | Configura el desencadenador, la coincidencia de patrones y el tamaño del búfer del archivo de captura.<br/>                                                                    |
-| [**Conectar**](istats-connect.md)                                     | Conecta el NPP a la red.<br/>                                                                                                               |
+| [**Configuración**](istats-configure.md)                                 | Configura el desencadenador, la coincidencia de patrones y el tamaño del búfer del archivo de captura.<br/>                                                                    |
+| [**Conexión**](istats-connect.md)                                     | Conecta el NPP a la red.<br/>                                                                                                               |
 | [**Desconectar**](istats-disconnect.md)                               | Desconecta el NPP de la red.<br/>                                                                                                          |
 | [**GetControlState**](istats-getcontrolstate.md)                     | Recupera el estado de la [*captura*](c.md), que indica si la captura se está ejecutando o en pausa.<br/>                        |
 | [**GetConversationStatistics**](istats-getconversationstatistics.md) | Recupera la [*información de*](s.md) la sesión y [*la estación*](s.md) sobre la captura actual.<br/> |
@@ -49,7 +49,7 @@ La **interfaz IStats** tiene estos métodos.
 | [**QueryStations**](istats-querystations.md)                         | Recupera una lista de todos los equipos que usan Monitor de red para capturar datos en una subred.<br/>                                                  |
 | [**QueryStatus**](istats-querystatus.md)                             | Recupera el estado del NPP.<br/>                                                                                                               |
 | [**Reanudar**](istats-resume.md)                                       | Reinicia una captura en pausa.<br/>                                                                                                                     |
-| [**Inicio**](istats-start.md)                                         | Inicia la captura.<br/>                                                                                                                            |
+| [**Empezar**](istats-start.md)                                         | Inicia la captura.<br/>                                                                                                                            |
 | [**Stop**](istats-stop.md)                                           | Detiene la captura actual.<br/>                                                                                                                     |
 
 
@@ -60,7 +60,7 @@ La **interfaz IStats** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |

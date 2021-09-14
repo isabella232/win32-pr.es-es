@@ -4,12 +4,12 @@ description: Los atributos de campo se pueden proporcionar en varias combinacion
 ms.assetid: ff4f971f-9e46-4454-9d57-d8ebdf70b261
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd440251a658dd5b888df7275f578369419d4b8b2d4f920b263bc5095c4bd948
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ffc60777caeb3950e37fe167fe09ecc181d88b8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118931758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071429"
 ---
 # <a name="combining-array-attributes"></a>Combinar atributos de matriz
 

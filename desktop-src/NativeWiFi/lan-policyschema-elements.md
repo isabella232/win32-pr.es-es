@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 22454fee7556f80bfbc9d969225ed6d6975ce4d3bd6a4365ce9838a245e9eb17
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7c2dc6123b84cc0acf97eb414daea408a72d2db1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119801145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071591"
 ---
 # <a name="lan_policy-schema-elements"></a>Elementos de esquema de directiva LAN \_
 

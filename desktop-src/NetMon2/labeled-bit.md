@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: fe08288929a5f14c4a920c52121c2ccfbdb35888f2ed220291e30e53a3ef0c6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24a56e832600b551dd3ab43ea93d59c5805af630
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364840"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071529"
 ---
-# <a name="labeled_bit-structure"></a>LABELED \_ BIT (estructura)
+# <a name="labeled_bit-structure"></a>Labeled \_ BIT (estructura)
 
 La **estructura LABELED \_ BIT** define un par BIT de etiqueta.
 
@@ -37,7 +37,7 @@ typedef struct _LABELED_BIT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -51,7 +51,7 @@ Número BIT del par BIT de etiqueta. Los valores oscilan entre 0 y 255. Establez
 **LabelOff**
 </dt> <dd>
 
-Cadena o etiqueta que se muestra cuando bit especificado en **BitNumber** es igual a cero. Por ejemplo, una posible etiqueta es "Bit OFF".
+Cadena o etiqueta que se muestra cuando el BIT especificado en **BitNumber** es igual a cero. Por ejemplo, una posible etiqueta es "Bit OFF".
 
 </dd> <dt>
 
@@ -62,9 +62,9 @@ Cadena o etiqueta que se muestra cuando el BIT especificado en **BitNumber** es 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se usa una **matriz de estructuras \_ LABELED BIT** para definir un conjunto de pares BIT de etiqueta. Se especifica un puntero a la matriz en el **miembro lpLabeledBit** de la [estructura SET.](set.md) Los pares se usan cuando se desea mostrar una etiqueta basada en el valor de cada BIT. Normalmente, este tipo de conjunto se usa para indicar el valor ON u OFF de los BIT.
+Se usa una **matriz de estructuras LABELED \_ BIT** para definir un conjunto de pares BIT de etiqueta. Se especifica un puntero a la matriz en el **miembro lpLabeledBit** de la [estructura SET.](set.md) Los pares se usan cuando se desea mostrar una etiqueta en función de la configuración de cada BIT. Normalmente, este tipo de conjunto se usa para indicar el valor ON u OFF de los BIT.
 
 Cuando se especifica un conjunto DE BITS, Monitor de red muestra solo los BI incluidos en la matriz de **estructuras SET.** No se muestran los BIT que no están en la **estructura SET.**
 
@@ -72,7 +72,7 @@ Cuando se especifica un conjunto DE BITS, Monitor de red muestra solo los BI inc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -80,7 +80,7 @@ Cuando se especifica un conjunto DE BITS, Monitor de red muestra solo los BI inc
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

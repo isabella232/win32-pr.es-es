@@ -5,12 +5,12 @@ ms.assetid: 771277DF-D50A-4701-93D9-951D7EF8E7E1
 title: R (aplicaciones aisladas y ensamblados en paralelo)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54022cee203ece2a3fa12290554d7d742265b07c80d9b29c3d7a0575a8eb7a3c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1052ce7388375fccbec23e7e6b42dc5b32ef6435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071335"
 ---
 # <a name="r-isolated-applications-and-side-by-side-assemblies"></a>R (aplicaciones aisladas y ensamblados en paralelo)
 
@@ -21,7 +21,7 @@ ms.locfileid: "120101635"
 <span id="_win32_ref_context_assemblyidentity_gly"></span><span id="_WIN32_REF_CONTEXT_ASSEMBLYIDENTITY_GLY"></span>**REF-context assemblyIdentity**
 </dt> <dd>
 
-**Subelemento assemblyIdentity** que describe un ensamblado en paralelo. La versión del ensamblado descrito es la versión requerida por el ensamblado o la aplicación definidos en el ensamblado de contexto **DEFIdentity** del manifiesto. Un subelemento **assemblyIdentity** de contexto REF es el primer subelemento de un **elemento dependentAssembly.**
+**Subelemento assemblyIdentity** que describe un ensamblado en paralelo. La versión del ensamblado descrita es la versión requerida por el ensamblado o la aplicación definidos en el ensamblado de contexto **DEFIdentity** del manifiesto. Un subelemento **assemblyIdentity** de contexto REF es el primer subelemento de un **elemento dependentAssembly.**
 
 </dd> </dl>
 

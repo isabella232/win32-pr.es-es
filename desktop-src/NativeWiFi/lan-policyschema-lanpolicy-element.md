@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 468e9fb0500c4a514b7b0a9dddea023f0851b9f7ba783504548f2285810ffffa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b424a47405aa8f32276019a85902bd51b173cc1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071587"
 ---
 # <a name="lanpolicy-element"></a>Elemento LANPolicy
 
@@ -89,7 +89,7 @@ El espacio de nombres de destino **para el elemento LANPolicy** es `https://www.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para ver la lista de elementos secundarios en una estructura similar a un árbol, vea Elementos de esquema de [ \_ directiva LAN](lan-policyschema-elements.md).
 
@@ -97,7 +97,7 @@ Para ver la lista de elementos secundarios en una estructura similar a un árbol
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 60f5be785da0cca6aac4fdf1c098d49548696420042ce60a97a46de73edde9bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2abe9d4acd4d59019fe0c8ce122baa12fde06f2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071257"
 ---
 # <a name="iscardtransaction-method"></a>ISCard::Transaction (método)
 
@@ -65,7 +65,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [Valores devueltos de tarjeta inteligente.](authentication-return-values.md)
 
@@ -100,14 +100,14 @@ if (FAILED(hr))
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCard se define como \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -117,7 +117,7 @@ if (FAILED(hr))
 [**AttachByReader**](iscard-attachbyreader.md)
 </dt> <dt>
 
-[**Desasociar**](iscard-detach.md)
+[**Separar**](iscard-detach.md)
 </dt> <dt>
 
 [**get \_ Atr**](iscard-get-atr.md)

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: c34d5d1449b2ef8f34fa87d3a70ecf37787d423a0d5df71ecd15e5f722d112ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8a5bf56aa27a044d29e2e0153698bfefe69e1d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120014535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071212"
 ---
 # <a name="iscarddatabaselistcards-method"></a>Método ISCardDatabase::ListCards
 
@@ -89,7 +89,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recuperar todos los [*lectores o*](../secgloss/r-gly.md) [*lectores conocidos,*](../secgloss/r-gly.md)llame a [**ListReaders**](iscarddatabase-listreaders.md) o [**ListReaderGroups,**](iscarddatabase-listreadergroups.md) respectivamente.
 
@@ -141,14 +141,14 @@ else
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardDatabase se define como \_ 1461AAC8-6810-11D0-918F-00AA00C18068<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

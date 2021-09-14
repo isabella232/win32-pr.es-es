@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42566cf8a0674086883e6333a67ac2df03329f6a9bd3bb903ef558af3c430b9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34fad4c620890df109449b9a222d3355041ac77f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071466"
 ---
 # <a name="glutessbeginpolygon-function"></a>Función gluTessBeginPolygon
 
@@ -44,7 +44,7 @@ void WINAPI gluTessBeginPolygon(
 *Tess* 
 </dt> <dd>
 
-Objeto de teselación (creado [**con gluNewTess**](glunewtess.md)).
+Objeto de teselación (creado [**con gluNewTess).**](glunewtess.md)
 
 </dd> <dt>
 
@@ -59,17 +59,17 @@ Puntero a una estructura de datos de polígono definida por el programador.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las **funciones gluTessBeginPolygon** y [**gluTessEndPolygon**](glutessendpolygon.md) delimitan la definición de un polígono no convexa. Dentro de cada par **gluTessBeginPolygon**  /  **gluTessEndPolygon,** incluya una o varias llamadas a [**gluTessBeginContour.**](glutessbegincontour.md) Dentro de cada contorno, hay cero o más llamadas [**a gluTessVertex.**](glutessvertex.md) Los vértices especifican un contorno cerrado (el último vértice de cada contorno se vincula automáticamente al primero).
+Las **funciones gluTessBeginPolygon** y [**gluTessEndPolygon**](glutessendpolygon.md) delimitan la definición de un polígono no convexa. Dentro de cada par **gluTessBeginPolygon**  /  **gluTessEndPolygon,** incluya una o varias llamadas a [**gluTessBeginContour**](glutessbegincontour.md). Dentro de cada contorno, hay cero o más llamadas [**a gluTessVertex.**](glutessvertex.md) Los vértices especifican un contorno cerrado (el último vértice de cada contorno se vincula automáticamente al primero).
 
-El *parámetro \_ de datos* polygon es un puntero a una estructura de datos definida por el programador. Si se especifican las devoluciones de llamada adecuadas (vea [*gluTessCallback),*](glutess.md)este puntero se devuelve a la función o funciones de devolución de llamada, lo que lo hace una manera cómoda de almacenar información por polígono.
+El *parámetro \_ de datos* polygon es un puntero a una estructura de datos definida por el programador. Si se especifican las devoluciones de llamada adecuadas (vea [*gluTessCallback*](glutess.md)), este puntero se devuelve a la función o funciones de devolución de llamada, lo que lo hace una manera cómoda de almacenar información por polígono.
 
-Cuando se llama [**a gluTessEndPolygon,**](glutessendpolygon.md)el polígono se tesela y los triángulos resultantes se describen a través de devoluciones de llamada. Para obtener descripciones de las funciones de devolución de llamada, [*vea gluTessCallback*](glutess.md).
+Cuando se llama [**a gluTessEndPolygon,**](glutessendpolygon.md)el polígono se tesela y los triángulos resultantes se describen mediante devoluciones de llamada. Para obtener descripciones de las funciones de devolución de llamada, [*vea gluTessCallback*](glutess.md).
 
 ## <a name="examples"></a>Ejemplos
 
-A continuación se describe un cuadrángulo con un hueco triangular:
+A continuación se describe un cuadrilátero con un hueco triangular:
 
 ``` syntax
 gluTessBeginPolygon(tobj, NULL); 
@@ -91,7 +91,7 @@ gluTessEndPolygon(tobj);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

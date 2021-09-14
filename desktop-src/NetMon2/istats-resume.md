@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 72c73107ea4bf4662d4251a7c9e06ed1844feca88cb0ce6700887e65f6f08021
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee7818da3d8a02e41488d473d3cf26607d3b84ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071536"
 ---
 # <a name="istatsresume-method"></a>IStats::Resume (método)
 
@@ -57,7 +57,7 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Mientras la captura está en estado en pausa, no se capturan nuevos datos hasta que se llama al método IStats::Resume para reiniciar la captura.
 
@@ -69,7 +69,7 @@ Para detener la captura, llame a [IStats::Stop](istats-stop.md).
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -78,7 +78,7 @@ Para detener la captura, llame a [IStats::Stop](istats-stop.md).
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

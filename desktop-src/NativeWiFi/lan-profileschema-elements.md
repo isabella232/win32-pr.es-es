@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bf0c6895dec96ff0844345bb04ebd3a8cf406d3414f923c86ee3b3b9358a771b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d9a4c3087569b21960a0d2733c4506a392147ee4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119685075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071574"
 ---
 # <a name="lan_profile-schema-elements"></a>Elementos de esquema de perfil de LAN \_
 

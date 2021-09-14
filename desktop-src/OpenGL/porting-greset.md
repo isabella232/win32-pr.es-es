@@ -14,12 +14,12 @@ keywords:
 - Porte de OpenGL desde IRIS GL, función greset
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf5a48c09e7078f3eccd316de9cb86872d61343aabfa0faf60fbe5af2bef218c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 078482f47dcaf7fd5f84605e2e0fa32d0cf14729
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118936153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071447"
 ---
 # <a name="porting-greset"></a>Greset de porte
 

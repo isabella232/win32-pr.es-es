@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 695fc21a651522321c1213cb3e8c87fa156710014e7ab8114b94e0d50efe00b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0daa47653779b3aa4b5e7cb65c0c56410b19ab9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071258"
 ---
 # <a name="iscardget_status-method"></a>ISCard::get \_ Status (método)
 
-\[El **método \_ get Status** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
+\[El **método get \_ Status** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método \_ get Status** recupera el estado actual [*de*](../secgloss/s-gly.md) la [*tarjeta inteligente*](../secgloss/s-gly.md).
+El **método \_ get Status** recupera el estado [*actual*](../secgloss/s-gly.md) de la [*tarjeta inteligente*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,13 +58,13 @@ El método devuelve uno de los siguientes valores posibles.
 |----------------------------------------------------------------------------------------------|---------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Operación completada correctamente.<br/>      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El *parámetro pStatus* no es válido.<br/>  |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | Se pasó un puntero no válido en *pStatus*.<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | Se pasó un puntero no válido *en pStatus*.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [Valores devueltos de tarjeta inteligente.](authentication-return-values.md)
 
@@ -119,18 +119,18 @@ switch (scState)
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCard se define como \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

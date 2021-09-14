@@ -4,23 +4,23 @@ ms.assetid: bde3bcae-2152-4589-92a0-b44d98f233ef
 title: Interfaces de autenticación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6843385004095499a59593bf548ff21998c4079e48667ea0e472e4a55d1f57ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b101fd4fdd3c518d24b5b6f798fcaa4e0327dd22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071325"
 ---
 # <a name="authentication-interfaces"></a>Interfaces de autenticación
 
 Las interfaces de autenticación se clasifican según el uso como se muestra a continuación:
 
 -   [Interfaces de tarjeta inteligente](#smart-card-interfaces)
--   [Interfaces de uso compartido de identidades](#identity-sharing-interfaces)
+-   [Interfaces de uso compartido de identidad](#identity-sharing-interfaces)
 
 ## <a name="smart-card-interfaces"></a>Interfaces de tarjeta inteligente
 
-El SDK de tarjeta inteligente proporciona las siguientes interfaces COM. Los métodos de una interfaz específica se muestran en la tabla de contenido y en la página de referencia de esa interfaz.
+El SDK de tarjeta inteligente proporciona las siguientes interfaces COM. Los métodos de una interfaz específica se enumeran en la tabla de contenido y en la página de referencia de esa interfaz.
 
 
 
@@ -28,8 +28,8 @@ El SDK de tarjeta inteligente proporciona las siguientes interfaces COM. Los mé
 |----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IByteBuffer**](ibytebuffer.md)           | Administra un objeto de secuencia.                                                                                                                                                                 |
 | [**ISCard**](iscard.md)                     | Abre y administra una conexión a una [*tarjeta inteligente.*](/windows/desktop/SecGloss/s-gly)                                                                    |
-| [**ISCardAuth**](iscardauth.md)             | Autentica una aplicación, tarjeta inteligente o usuario.                                                                                                                                       |
-| [**ISCardCmd**](iscardcmd.md)               | Construye y administra una unidad de datos de protocolo de aplicación (APDU) de tarjeta [*inteligente.*](/windows/desktop/SecGloss/a-gly) |
+| [**ISCardAuth**](iscardauth.md)             | Autentica una aplicación, una tarjeta inteligente o un usuario.                                                                                                                                       |
+| [**ISCardCmd**](iscardcmd.md)               | Construye y administra una unidad de datos de [*protocolo de aplicación*](/windows/desktop/SecGloss/a-gly) (APDU) de tarjeta inteligente. |
 | [**ISCardDatabase**](iscarddatabase.md)     | Realiza operaciones de base de datos [*del administrador de recursos de tarjeta*](/windows/desktop/SecGloss/r-gly) inteligente.                                              |
 | [**ISCardFileAccess**](iscardfileaccess.md) | Realiza servicios de archivos comunes, como buscar, seleccionar, leer, escribir, crear y eliminar archivos.                                                                               |
 | [**ISCardISO7816**](iscardiso7816.md)       | Construye un comando APDU.                                                                                                                                                              |
@@ -42,9 +42,9 @@ El SDK de tarjeta inteligente proporciona las siguientes interfaces COM. Los mé
 
  
 
-## <a name="identity-sharing-interfaces"></a>Interfaces de uso compartido de identidades
+## <a name="identity-sharing-interfaces"></a>Interfaces de uso compartido de identidad
 
-El SDK de uso compartido de identidades proporciona las siguientes interfaces COM. Los métodos de una interfaz específica se muestran en la tabla de contenido y en la página de referencia de esa interfaz.
+El SDK de uso compartido de identidades proporciona las siguientes interfaces COM. Los métodos de una interfaz específica se enumeran en la tabla de contenido y en la página de referencia de esa interfaz.
 
 
 

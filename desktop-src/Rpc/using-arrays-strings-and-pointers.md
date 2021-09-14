@@ -4,12 +4,12 @@ description: El programa Doctor (consulte los ejemplos rpc doctor en el Kit de d
 ms.assetid: 9aea94a1-ae1f-4bd6-9dd3-146edf0b5fec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8371c9c60f19e6ce59c62da637cbe2e844e919984b9c2c905053b61e6deb251b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 542a174b9ffd742ecf88de7231449a780be8dca9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071370"
 ---
 # <a name="using-arrays-strings-and-pointers"></a>Usar matrices, cadenas y punteros
 

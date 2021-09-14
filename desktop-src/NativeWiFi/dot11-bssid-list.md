@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - windot11.h
-ms.openlocfilehash: 8abcd2e711d5598c59bb8d4b7aed0f291364f94d04ec17a5fc80de2fd32939eb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 345053a8d39ea37bea2fa2350dcc426420aed422
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119801395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071615"
 ---
 # <a name="dot11_bssid_list-structure"></a>Dot11 \_ BSSID \_ LIST (estructura)
 
@@ -38,14 +38,14 @@ typedef struct _DOT11_BSSID_LIST {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Header**
 </dt> <dd>
 
-Estructura [**OBJECT \_ HEADER \_ de NDIS**](ndis-object-header.md) que contiene la información de tipo, versión y tamaño de una estructura NDIS. Para la mayoría de las estructuras  **DOT11 \_ BSSID \_ LIST,** establezca  el miembro Type en **NDIS \_ OBJECT \_ TYPE \_ DEFAULT**, establezca el miembro Revision en **DOT11 \_ BSSID LIST REVISION \_ \_ \_ 1** y establezca el miembro **Size** en **sizeof(DOT11 \_ BSSID \_ LIST).**
+Estructura [**OBJECT \_ HEADER \_ de NDIS**](ndis-object-header.md) que contiene la información de tipo, versión y tamaño de una estructura NDIS. Para la mayoría de las estructuras  **DOT11 \_ BSSID \_ LIST,** establezca  el miembro Type en **NDIS \_ OBJECT \_ TYPE \_ DEFAULT,** establezca el miembro Revision en **DOT11 \_ BSSID LIST REVISION \_ \_ \_ 1** y establezca el miembro **Size** en **sizeof(DOT11 \_ BSSID \_ LIST).**
 
 </dd> <dt>
 
@@ -76,10 +76,10 @@ Lista de identificadores de BSS. Un identificador BSS se almacena como un tipo [
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                       |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                        |
-| Header<br/>                   | <dl> <dt>Windot11.h (incluye Windot11.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Windot11.h (incluir Windot11.h)</dt> </dl> |
 
 
 

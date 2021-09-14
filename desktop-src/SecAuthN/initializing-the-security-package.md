@@ -4,12 +4,12 @@ ms.assetid: 60c11519-f7ca-4002-b3f6-d74f50310730
 title: Inicialización del paquete de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8d39cbbd9a1126a22d04c14bee3b6ac9b305b2feb3593d03756779e4cb0649b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bed981c7a209c8f76be9e58f970d84b0aa184371
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071291"
 ---
 # <a name="initializing-the-security-package"></a>Inicialización del paquete de seguridad
 

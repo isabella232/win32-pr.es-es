@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2db848c6971fe2893f2bc2cd4ca33e96811dda0d44e81e8a852cd441a6478d79
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: af04ab2364fafcea709ca36cab2f10a8bea1a96f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119488475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071457"
 ---
 # <a name="glutessnormal-function"></a>función gluTessNormal
 
@@ -75,7 +75,7 @@ Componente de coordenada z de un normal.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluTessNormal** describe un normal para un polígono que defina. Todos los datos de entrada se proyectan en un plano a uno de los tres ejes de coordenadas antes de la teselación, y todos los triángulos de salida se orientan en sentido contrario a las agujas del reloj con respecto a lo normal. (Para obtener la orientación en el sentido de las agujas del reloj, invierta el signo de la normal proporcionada). Por ejemplo, si sabe que todos los polígonos se encuentran en el plano x-y, llame a **gluTessNormal**(tess, 0.0, 0.0, 1.0) antes de representar cualquier polígono.
 

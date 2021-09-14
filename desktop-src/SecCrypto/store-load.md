@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 1b39c2be625ff88869d27e6210e49496352af868c73557d2657c509fd0e79f82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32261a6fd8c5cf4382832d8286d63ce5d44fb542
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118897795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071143"
 ---
 # <a name="storeload-method"></a>Método Store.Load
 
@@ -46,7 +46,7 @@ Store.Load( _
 *FileName* \[ En\]
 </dt> <dd>
 
-Cadena que contiene la ruta de acceso a un archivo .cer, .sst, .spc, .p7s o .pfx, o a cualquier archivo con firma Authenticode.
+Cadena que contiene la ruta de acceso a un archivo .cer, .sst, .spc, .p7s o .pfx, o a cualquier archivo firmado authenticode.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Valor de la enumeración [**CAPICOM \_ KEY \_ STORAGE \_ FLAG**](capicom-key-sto
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se **llama al método Load** en un almacén de memoria, los contenedores de claves que se crean se eliminarán cuando se elimine el almacén de memoria. Por ejemplo, si un archivo .pfx se carga en un almacén de memoria y, posteriormente, se agrega a un almacén del sistema (como Mi almacén) desde el almacén de memoria, el certificado del almacén Mi no contendrá una clave. En este caso, el archivo .pfx debe cargarse directamente en Mi almacén.
 
@@ -94,14 +94,14 @@ Si el certificado que se carga en el almacén es el mismo que el que ya existe, 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

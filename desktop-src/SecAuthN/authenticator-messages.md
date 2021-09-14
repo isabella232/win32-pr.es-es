@@ -4,12 +4,12 @@ ms.assetid: 984c84db-96d5-479e-8917-25a0270b3b59
 title: Authenticator Mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acc21cd87fbf1b725f276f138bcd0bd513658428ddd1296c4016542953bd8b86
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7e76cf171d163ac2f1d0d4a7fcaab53a7fa0ace0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071309"
 ---
 # <a name="authenticator-messages"></a>Authenticator Mensajes
 

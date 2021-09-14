@@ -4,12 +4,12 @@ description: El compilador MIDL genera hasta tres funciones para cada tipo al qu
 ms.assetid: 948f1dd7-c8b0-4fa0-88d8-9d122de52ba1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 681d898a077ff55bb03a76fbd7579e28a8bcdf18c792330b32b1eb832c6b9058
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4674617bc98c92dbc684a29d1a3c91ac6a7429e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071394"
 ---
 # <a name="type-serialization"></a>Serialización de tipos
 
@@ -43,7 +43,7 @@ Para un identificador explícito:
 void MyType_Decode (handle_t Handle, MyType __RPC_FAR * pObject);
 ```
 
-La función siguiente devuelve un tamaño, en bytes, que incluye la instancia de tipo más los bytes de relleno necesarios para alinear los datos. Esto permite serializar un conjunto de instancias de los mismos tipos o diferentes en un búfer, al tiempo que se garantiza que los datos de cada objeto se alinean correctamente. MyType AlignSize supone que la instancia a la que apunta pObject se serializará en un búfer a partir del \_ desplazamiento alineado en 8.
+La siguiente función devuelve un tamaño, en bytes, que incluye la instancia de tipo más los bytes de relleno necesarios para alinear los datos. Esto permite serializar un conjunto de instancias de los mismos tipos o diferentes en un búfer, al tiempo que se garantiza que los datos de cada objeto se alinean correctamente. MyType AlignSize supone que la instancia a la que apunta pObject se serializará en un búfer a partir del \_ desplazamiento alineado en 8.
 
 Para un identificador implícito:
 

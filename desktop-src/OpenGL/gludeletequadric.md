@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad0c12bd77d3d8b7f7de641671916bb8a901d29d812dfa4e9af6ef116984a128
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b5ee85e943cd958e394efb191932393d228d948
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071489"
 ---
-# <a name="gludeletequadric-function"></a>función gluDeleteQuadric
+# <a name="gludeletequadric-function"></a>Función gluDeleteQuadric
 
 La **función gluDeleteQuadric** destruye un objeto cuádigo.
 
@@ -51,7 +51,7 @@ Objeto cuádigo que se va a destruir (creado [**con gluNewQuadric).**](glunewqua
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluDeleteQuadric** destruye el objeto cuádigo y libera la memoria que usó. Después de llamar a **gluDeleteQuadric,** no puede volver a usar *el* estado.
 
@@ -59,7 +59,7 @@ La **función gluDeleteQuadric** destruye el objeto cuádigo y libera la memoria
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

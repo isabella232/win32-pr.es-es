@@ -1,5 +1,5 @@
 ---
-description: Recupera el byte de estado DE SW2 de APDU de respuesta.
+description: Recupera el byte de estado DE APDU SW2 de respuesta.
 ms.assetid: 24ad0164-84fc-4a99-b9dd-0f7d789dff92
 title: Método ISCardCmd::get_ReplyStatusSW2 (Scarddat.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 60004c56d9d6dec8aa7b5afc9c77e3c5af813020db387172b06a0c802bd9fd8b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ff503758a50437b4b7ff974fe4455d4b92ce978
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119481545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071216"
 ---
 # <a name="iscardcmdget_replystatussw2-method"></a>Método ISCardCmd::get \_ ReplyStatusSW2
 
@@ -57,7 +57,7 @@ El método devuelve uno de los siguientes valores posibles.
 | Código devuelto                                                                                   | Descripción                                      |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operación completada correctamente.<br/>     |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | *pbySW2* no es válido.<br/>            |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | *PbySW2* no es válido.<br/>            |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido *en pbySW2.*<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>                        |
 
@@ -65,11 +65,11 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El byte de estado SW2 de LA APDU de respuesta es de solo lectura.
+El byte de estado SW2 de APDU de respuesta es de solo lectura.
 
-Para recuperar el byte de estado SW1 de APDU de respuesta, llame [**a get \_ ReplyStatusSW1**](iscardcmd-get-replystatussw1.md).
+Para recuperar el byte de estado SW1 de la APDU de respuesta, llame [**a get \_ ReplyStatusSW1**](iscardcmd-get-replystatussw1.md).
 
 Para obtener una lista de todos los métodos proporcionados por esta interfaz, vea [**ISCardCmd**](iscardcmd.md).
 
@@ -77,7 +77,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo recuperar el byte de estado SW2 de [*la APDU de respuesta.*](../secgloss/r-gly.md) En el ejemplo se supone que pISCardCmd es un puntero válido a una instancia de la [**interfaz ISCardCmd.**](iscardcmd.md)
+En el ejemplo siguiente se muestra cómo recuperar el byte de estado SW2 de la [*APDU de respuesta.*](../secgloss/r-gly.md) En el ejemplo se supone que pISCardCmd es un puntero válido a una instancia de la [**interfaz ISCardCmd.**](iscardcmd.md)
 
 
 ```C++
@@ -101,18 +101,18 @@ if (FAILED(hr))
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardCmd se define como \_ D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d12e7ca8099197b663893b1edcf04dd8fa98348fe4f6d3d324b54f33904e026a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 482f32b227dbcf0c2a62405e344aa719bb4b9e17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119554245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071469"
 ---
 # <a name="glugettessproperty-function"></a>Función gluGetTessProperty
 
@@ -45,7 +45,7 @@ void WINAPI gluGetTessProperty(
 *Tess* 
 </dt> <dd>
 
-Objeto de teselación (creado [**con gluNewTess**](glunewtess.md)).
+Objeto de teselación (creado [**con gluNewTess).**](glunewtess.md)
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Puntero a la ubicación donde se escribe el valor de la propiedad con nombre.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use **gluGetTessProperty para** recuperar las propiedades almacenadas en un objeto de teselación. Estas propiedades afectan a la forma en que se interpretan y representan los objetos de teselación. Para obtener información sobre qué son las propiedades y qué hacen, [**vea gluTessProperty**](glutessproperty.md).
 
@@ -75,7 +75,7 @@ Use **gluGetTessProperty para** recuperar las propiedades almacenadas en un obje
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

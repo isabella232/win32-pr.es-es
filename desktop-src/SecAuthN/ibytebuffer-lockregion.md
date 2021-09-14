@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 8575a568615a88552dd3907c7a5733c81dfe2d222661b4d8f9f82e32f0896ecf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae227d11892b604ab1382cb328dc492e4596f278
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119482685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071302"
 ---
 # <a name="ibytebufferlockregion-method"></a>IByteBuffer::LockRegion (método)
 
@@ -78,9 +78,9 @@ Especifica las restricciones que se solicitan para acceder al intervalo. Puede s
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **un HRESULT**. Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
+El valor devuelto es **un HRESULT.** Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El intervalo de bytes puede extenderse más allá del final actual de la secuencia. El bloqueo más allá del final de una secuencia es útil como método de comunicación entre diferentes instancias de la secuencia sin cambiar los datos que realmente forman parte de la secuencia.
 
@@ -114,7 +114,7 @@ if (FAILED(hr))
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer se define como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |

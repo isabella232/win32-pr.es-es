@@ -3,7 +3,7 @@ title: WINBIO_CREDENTIAL_TYPE enumeración (Winbio \_ types.h)
 description: Define las marcas que se pueden usar para filtrar por el tipo de credencial.
 ms.assetid: 7ef2d4b3-e1f9-46a0-8fc2-0e8660805ac3
 keywords:
-- WINBIO_CREDENTIAL_TYPE enumeración Windows BIOMETRIC Framework API
+- WINBIO_CREDENTIAL_TYPE enumeración Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d559d97022f6c240e8a310adef829d47799683ad214fd0bfb0b54c6ec66cf5c7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae41693db264308d33bc30191bdb73007b6b2dba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119867975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071154"
 ---
 # <a name="winbio_credential_type-enumeration"></a>Enumeración \_ CREDENTIAL TYPE de WINBIO \_
 
-Define las marcas que se pueden usar para filtrar por el tipo de credencial. Esta enumeración la usan las [**funciones WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential), [**WinBioRemoveCredential**](/windows/desktop/api/Winbio/nf-winbio-winbioremovecredential)y [**WinBioGetCredentialState.**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate)
+Define las marcas que se pueden usar para filtrar por el tipo de credencial. Esta enumeración la usan las [**funciones WinBioSetCredential,**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential) [**WinBioRemoveCredential**](/windows/desktop/api/Winbio/nf-winbio-winbioremovecredential)y [**WinBioGetCredentialState.**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -41,7 +41,7 @@ typedef enum _WINBIO_CREDENTIAL_TYPE {
 
 <dl> <dt>
 
-<span id="WINBIO_CREDENTIAL_PASSWORD"></span><span id="winbio_credential_password"></span>**CONTRASEÑA DE \_ CREDENCIALES DE \_ WINBIO**
+<span id="WINBIO_CREDENTIAL_PASSWORD"></span><span id="winbio_credential_password"></span>**CONTRASEÑA DE \_ CREDENCIAL \_ WINBIO**
 </dt> <dd>
 
 Filtra las credenciales de contraseña.
@@ -63,7 +63,7 @@ Filtra todas las credenciales.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

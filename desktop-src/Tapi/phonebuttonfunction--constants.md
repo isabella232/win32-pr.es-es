@@ -1,19 +1,19 @@
 ---
-description: Las constantes escalares PHONEBUTTONFUNCTION describen las funciones asignadas normalmente \_ a botones en conjuntos de teléfonos.
+description: Las constantes escalares PHONEBUTTONFUNCTION describen las funciones que normalmente se \_ asignan a los botones de los conjuntos de teléfonos.
 ms.assetid: 33d369d0-2221-403e-8fbc-a9a1cbd640ad
 title: PHONEBUTTONFUNCTION_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a7c7151018d7ff0146137d293aa1543b74a84c5e8ac11d6641b0fc408003854
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4874fbfbd1e6900b58a604ba50c33c873eb5abc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117761317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071076"
 ---
 # <a name="phonebuttonfunction_-constants"></a>Constantes \_ PHONEBUTTONFUNCTION
 
-Las **constantes \_ escalares PHONEBUTTONFUNCTION** describen las funciones asignadas normalmente a botones en conjuntos de teléfonos.
+Las **constantes \_ escalares PHONEBUTTONFUNCTION** describen las funciones que normalmente se asignan a los botones de los conjuntos de teléfonos.
 
 <dl> <dt>
 
@@ -32,7 +32,7 @@ El número que se va a marcar se indicará mediante un número corto abreviado q
 
 
 
-Hace que el teléfono parezca "ocupado" a las llamadas entrantes.
+Hace que el teléfono parezca "ocupado" para las llamadas entrantes.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ Hace que el teléfono parezca "ocupado" a las llamadas entrantes.
 
 
 
-Selecciona una apariencia determinada de una dirección puente.
+Selecciona una apariencia determinada de una dirección puenteada.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Selecciona una apariencia de llamada determinada.
 
 
 
-Solicita la presentación del identificador de autor de la llamada en la pantalla del teléfono.
+Solicita la visualización del identificador de autor de la llamada en la pantalla del teléfono.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ Solicita la presentación del identificador de autor de la llamada en la pantall
 
 
 
-Campos en una extensión que devuelve una indicación ocupada. Cuando la estación remota vuelva a estar inactiva, el teléfono se llamará con patrones distintivos. Al seleccionar el teléfono local, se vuelve a iniciar la llamada.
+Campos en una extensión que devuelve una indicación ocupada. Cuando la estación remota vuelva a estar inactiva, el teléfono se verá con patrones distintivos. Al seleccionar el teléfono local, se vuelve a iniciar la llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -132,7 +132,7 @@ Indica que la siguiente llamada es una llamada de datos.
 
 
 
-Hace que el teléfono muestre la fecha y hora actuales; esta información la enviaría el modificador.
+Hace que el teléfono muestre la fecha y hora actuales; el modificador enviaría esta información.
 
 
 </dt> </dl> </dd> <dt>
@@ -162,7 +162,7 @@ Desconecta una llamada, como después de iniciar una transferencia.
 
 
 
-Coloca el teléfono en modo "no inquietar". Las llamadas entrantes reciben una señal ocupada o se reenvían a un operador o sistema de correo de voz.
+Coloca el teléfono en modo "no alterar"; las llamadas entrantes reciben una señal ocupada o se reenvían a un operador o sistema de correo de voz.
 
 
 </dt> </dl> </dd> <dt>
@@ -207,12 +207,12 @@ Coloca la llamada activa en espera.
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONEBUTTONFUNCTION_INTERCOM"></span><span id="phonebuttonfunction_intercom"></span>**PHONEBUTTONFUNCTION \_ VEZPORTE**
+<span id="PHONEBUTTONFUNCTION_INTERCOM"></span><span id="phonebuttonfunction_intercom"></span>**PHONEBUTTONFUNCTION \_ VEZ**
 </dt> <dd> <dl> <dt>
 
 
 
-Se conecta al timbre para difundir una página.
+Se conecta al canal para difundir una página.
 
 
 </dt> </dl> </dd> <dt>
@@ -222,7 +222,7 @@ Se conecta al timbre para difundir una página.
 
 
 
-Marca el último número marcado.
+Redials last number dialed (Edials last number dialed).
 
 
 </dt> </dl> </dd> <dt>
@@ -232,7 +232,7 @@ Marca el último número marcado.
 
 
 
-Controla la luz indicadora del mensaje.
+Controla la bombilla del indicador de mensaje.
 
 
 </dt> </dl> </dd> <dt>
@@ -252,7 +252,7 @@ Desactiva una luz de espera de mensaje.
 
 
 
-Activa una luz de espera de mensaje.
+Activa una bombilla de espera de mensaje.
 
 
 </dt> </dl> </dd> <dt>
@@ -267,7 +267,7 @@ Silencia el dispositivo de micrófono del teléfono.
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONEBUTTONFUNCTION_NIGHTSRV"></span><span id="phonebuttonfunction_nightsrv"></span>**PHONEBUTTONFUNCTION \_ SURV**
+<span id="PHONEBUTTONFUNCTION_NIGHTSRV"></span><span id="phonebuttonfunction_nightsrv"></span>**\_PHONEBUTTONFUNCTIONBUTTONRV**
 </dt> <dd> <dl> <dt>
 
 
@@ -282,7 +282,7 @@ Coloca el teléfono en el modo para el que está configurado durante las horas d
 
 
 
-Una asignación de función "ficticia" que indica que el botón no tiene una función.
+Asignación de función "ficticia" que indica que el botón no tiene una función.
 
 
 </dt> </dl> </dd> <dt>
@@ -292,7 +292,7 @@ Una asignación de función "ficticia" que indica que el botón no tiene una fun
 
 
 
-Desatenda la llamada activa en otro teléfono y la coloca allí en espera.
+A continuación, la llamada activa en otro teléfono la coloca en espera.
 
 
 </dt> </dl> </dd> <dt>
@@ -312,7 +312,7 @@ Recoge una llamada que suena en otro teléfono.
 
 
 
-Pone en cola una llamada a un número externo después de encontrar una indicación de tronco ocupado. Cuando un tronco esté disponible más adelante, el teléfono se llamará con un patrón distintivo. Al seleccionar el teléfono local, se vuelve a iniciar la llamada.
+Pone en cola una llamada a un número externo después de encontrar una indicación de tronco ocupado. Cuando un tronco esté disponible más adelante, el teléfono se verá con un patrón distintivo. Al seleccionar el teléfono local, se vuelve a iniciar la llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -322,7 +322,7 @@ Pone en cola una llamada a un número externo después de encontrar una indicaci
 
 
 
-Descontee una llamada.
+Descontene una llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -402,7 +402,7 @@ Programa las asignaciones de números de mano corta a teléfono accesibles media
 
 
 
-Envía todas las llamadas a otro teléfono usado para la cobertura; igual que PHONEBUTTONFUNCTION \_ COVER.
+Envía todas las llamadas a otro teléfono usado para la cobertura. igual que PHONEBUTTONFUNCTION \_ COVER.
 
 
 </dt> </dl> </dd> <dt>
@@ -432,7 +432,7 @@ Activa el altavoz externo del teléfono.
 
 
 
-El número que se va a marcar se proporciona como una forma abreviada después de presionar este botón. Las asignaciones para la marcación rápida de esta estación son específicas de esta estación (teléfono).
+El número que se va a marcar se proporciona como una forma abreviada después de presionar este botón. Las asignaciones para la marcación rápida de estaciones son específicas de esta estación (teléfono).
 
 
 </dt> </dl> </dd> <dt>
@@ -442,7 +442,7 @@ El número que se va a marcar se proporciona como una forma abreviada después d
 
 
 
-El número que se va a marcar se proporciona como una forma abreviada después de presionar este botón. Las asignaciones para el marcado rápido del sistema se configuran dentro del conmutador.
+El número que se va a marcar se proporciona como una forma abreviada después de presionar este botón. Las asignaciones para la marcación rápida del sistema se configuran dentro del conmutador.
 
 
 </dt> </dl> </dd> <dt>
@@ -487,9 +487,9 @@ Aumenta el volumen de audio a través del altavoz del teléfono o del altavoz de
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los valores del intervalo 0x80000000 se 0xFFFFFFFF pueden asignarse para extensiones específicas del dispositivo; Los valores del intervalo 0x00000000 a 0x7FFFFFFF están reservados.
+Los valores del intervalo 0x80000000 a 0xFFFFFFFF se pueden asignar para extensiones específicas del dispositivo; Los valores del intervalo 0x00000000 a 0x7FFFFFFF están reservados.
 
 Las **constantes PHONEBUTTONFUNCTION \_ tienen** valores que se encuentran normalmente en los conjuntos de teléfonos actuales. Estas funciones de botón se pueden usar para invocar la función correspondiente desde el modificador [**mediante lineDevSpecificFeature**](/windows/desktop/api/Tapi/nf-tapi-linedevspecificfeature). Tenga en cuenta que TAPI no define la semántica de las funciones de botón; solo proporciona acceso a la función correspondiente. El comportamiento asociado a cada uno de los valores de función anteriores es genérico y puede variar en función del entorno de telefonía.
 
@@ -500,7 +500,7 @@ Las **constantes PHONEBUTTONFUNCTION \_ tienen** valores que se encuentran norma
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

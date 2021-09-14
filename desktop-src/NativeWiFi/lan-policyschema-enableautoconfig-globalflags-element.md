@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 2842da69b07136df80d15ea84553aecdf2c62d417c73f7ec85d9c315b819a397
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af1ca32f177140bbfc6563f74df5afc519ee0c75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071590"
 ---
 # <a name="enableautoconfig-globalflags-element-lan_policy"></a>Elemento enableAutoConfig (globalFlags) (LAN_policy)
 
-El **elemento enableAutoConfig** (globalFlags) especifica si las máquinas usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (como 802.1X).
+El **elemento enableAutoConfig** (globalFlags) especifica si las máquinas usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (por ejemplo, 802.1X).
 
 Cuando **enableAutoConfig tiene** el valor FALSE, las máquinas no deben usar el servicio de configuración automática integrado para administrar las conexiones que requieren autenticación de nivel 2. En su lugar, la red especificada en el [**elemento profileList**](lan-policyschema-profilelist-lanpolicy-element.md) es la única red disponible para la conexión. El servicio de configuración automática solo responderá a las solicitudes para habilitar el servicio.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 8e76bad23d79e261a27df5b83a94d4e477b21cde5057bb2587ffb49c93382df0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 030fafb4ccf041c2804179f8adf0088ca3fba845
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071546"
 ---
 # <a name="istatsgetconversationstatistics-method"></a>Método IStats::GetConversationStatistics
 
@@ -98,11 +98,11 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se puede llamar a este método mientras la captura de datos está en curso; cuando la captura actual está en pausa, una llamada a este método no se realizará correctamente.
 
-Para iniciar una captura, llame al [**método IStats::Start.**](istats-start.md) Para recuperar otros tipos de estadísticas, llame a [**IStats::GetTotalStatistics.**](istats-gettotalstatistics.md)
+Para iniciar una captura, llame al [**método IStats::Start.**](istats-start.md) Para recuperar otros tipos de estadísticas, llame a [**IStats::GetTotalStatistics**](istats-gettotalstatistics.md).
 
 ## <a name="requirements"></a>Requisitos
 

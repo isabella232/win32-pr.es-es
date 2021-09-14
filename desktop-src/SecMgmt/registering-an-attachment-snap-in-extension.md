@@ -4,18 +4,18 @@ ms.assetid: 176a658c-b1fd-40c5-a2ac-c9a2b7060c55
 title: Registro de una extensión de complemento de datos adjuntos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7af8b586f0071a5718b420612fd552d578bf30bb083cca45a43f38198e1aee7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7726131325433aa920ff22c9b71a4f7184000a69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119005023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071128"
 ---
 # <a name="registering-an-attachment-snap-in-extension"></a>Registro de una extensión de complemento de datos adjuntos
 
 Después de crear una extensión de complemento de datos adjuntos, debe registrarla para que los complementos MMC y Configuración de seguridad la busquen y usen.
 
-El complemento de datos adjuntos debe extender el espacio de nombres de complementos de configuración de seguridad agregando su propio nodo, como se describe en el procedimiento siguiente.
+El complemento de datos adjuntos debe extender el espacio de nombres de complementos de configuración de seguridad agregando su propio nodo como se describe en el procedimiento siguiente.
 
 **Para instalar y registrar la extensión de complemento de datos adjuntos**
 

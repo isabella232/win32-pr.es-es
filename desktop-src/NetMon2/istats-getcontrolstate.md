@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 5dcc0ea5a7278364218bde23fbffdfa720070c9a54dbff0feb20abc1f161d024
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25532293335756a872ef5104d5eef66027fe2ae4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071549"
 ---
 # <a name="istatsgetcontrolstate-method"></a>IStats::GetControlState (método)
 
-El **método GetControlState** recupera el estado de [*la*](c.md)captura , lo que indica si la captura se está ejecutando o en pausa.
+El **método GetControlState** recupera el estado de [*la*](c.md)captura , que indica si la captura se está ejecutando o en pausa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,20 +59,20 @@ Indicador de que la captura actual está en pausa.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                            | Descripción                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame [a IStats::Conectar](istats-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Conectar.](istats-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ SOLO \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Conectar.](istats-connect.md)<br/>                     |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a este método cada vez que el NPP está conectado a la red. Puede usar este método para averiguar si se está ejecutando una captura, si la captura está en pausa o si la captura se ha detenido pero el NPP no está desconectado.
 
@@ -80,7 +80,7 @@ Se puede llamar a este método cada vez que el NPP está conectado a la red. Pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -89,7 +89,7 @@ Se puede llamar a este método cada vez que el NPP está conectado a la red. Pue
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
