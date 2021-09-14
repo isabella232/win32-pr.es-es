@@ -5,15 +5,15 @@ ms.assetid: 39639b9a-32e2-44d2-9bda-a2ad23850de8
 keywords:
 - Servicios web de identidad de punto de conexión para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 819fd2b33f1c74f88ef9032a49bd9aa4f04e34f1dcd4e599120951afabb6e167
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a7a3f7b95d5fc1b926d8bafb49b06f96c7d68fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119927595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262015"
 ---
 # <a name="endpoint-identity"></a>Identidad de extremo
 

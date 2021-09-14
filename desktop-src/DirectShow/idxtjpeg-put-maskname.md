@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7a43398020c49f2a6dab1cd56fc0244c4be88e2e45e38e0f6bd63c119bbf66a3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f74fe09572b95ff1508021b3fa2ae4f9888f2d5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261367"
 ---
-# <a name="idxtjpegput_maskname-method"></a>Método MaskName :p \_ IDxtAsynceg::p ut
+# <a name="idxtjpegput_maskname-method"></a>Método MaskName :p IDxt \_ Maskeg::p ut
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -56,7 +56,7 @@ Especifica el nombre del archivo.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para revertir a una máscara integrada, establezca la **propiedad MaskNum.**
 
@@ -81,7 +81,7 @@ Para revertir a una máscara integrada, establezca la **propiedad MaskNum.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

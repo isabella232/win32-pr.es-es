@@ -4,12 +4,12 @@ ms.assetid: 2e9748be-7d76-4424-8daf-c94a327d85ac
 title: Interfaces de complemento de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 202d30eafd87b302527ebe0697b54fb04387670c5a5253a83d869716f203ecbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d90aa1ce8c3c0d498f4a01f1b00c0d8674ee9610
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262575"
 ---
 # <a name="data-add-in-interfaces"></a>Interfaces de complemento de datos
 

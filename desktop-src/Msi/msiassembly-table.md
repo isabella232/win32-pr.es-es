@@ -4,18 +4,18 @@ ms.assetid: 3a8cd206-0112-4840-8c9d-773483f5c771
 title: Tabla MsiAssembly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acda246bd6baba75d0f7e8d53f515a25abb0c163c2d3ef0b1b9705c123b8e69e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b54bd6e58e2ff6d12c582309c23856a7bb825b2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119381385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261071"
 ---
 # <a name="msiassembly-table"></a>Tabla MsiAssembly
 
 La tabla MsiAssembly especifica Windows configuración del instalador para los ensamblados .NET Framework Microsoft y los ensamblados Win32. Para obtener más información, vea [Instalación de ensamblados en la caché global](installation-of-assemblies-to-the-global-assembly-cache.md) de ensamblados e Instalación de [ensamblados Win32.](installation-of-win32-assemblies.md)
 
-En Windows XP, Windows Installer puede instalar ensamblados Win32 como [ensamblados en paralelo.](side-by-side-assemblies.md) Para obtener más información, consulte la API de [ensamblado en paralelo](../sbscs/side-by-side-assembly-api.md).
+En Windows XP, Windows Installer puede instalar ensamblados Win32 como ensamblados [en paralelo.](side-by-side-assemblies.md) Para obtener más información, consulte la API de [ensamblado en paralelo](../sbscs/side-by-side-assembly-api.md).
 
 **Windows 2000:** Esta característica no se admite.
 
@@ -42,7 +42,7 @@ La tabla MsiAssembly tiene las columnas siguientes.
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Clave de la [tabla de componentes](component-table.md) que especifica el Windows instalador que contiene este ensamblado.
+Clave de la [tabla de componentes](component-table.md) que especifica el Windows installer que contiene este ensamblado.
 
 El valor de este campo no debe establecerse en NULL. El campo KeyPath del componente de [la tabla de componentes](component-table.md) no debe ser NULL.
 
@@ -62,7 +62,7 @@ Cuando el ensamblado debe instalarse mediante una instalación de característic
 <span id="File_Manifest"></span><span id="file_manifest"></span><span id="FILE_MANIFEST"></span>Manifiesto de \_ archivo
 </dt> <dd>
 
-Clave externa en la [tabla de](file-table.md) archivos que especifica el archivo que contiene el manifiesto para un ensamblado .NET Framework o ensamblado Win32.
+Clave externa en la [tabla de](file-table.md) archivos que especifica el archivo que contiene el manifiesto de un ensamblado .NET Framework o ensamblado Win32.
 
 Para un ensamblado Win32, no especifique este archivo como archivo de ruta de acceso de clave de componente en el campo KeyPath de la [tabla de componentes](component-table.md).
 
@@ -86,7 +86,7 @@ Si la columna Atributos es NULL, el instalador trata el ensamblado como un .NET 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si hay al menos una entrada en la tabla MsiAssembly, la tabla [InstallExecuteSequence](installexecutesequence-table.md) debe contener las acciones [MsiPublishAssemblies](msipublishassemblies-action.md)y [MsiUnpublishAssemblies](msiunpublishassemblies-action.md).
 

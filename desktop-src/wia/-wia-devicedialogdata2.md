@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: 800f7ceb102cafcad8ddda5204990706b908a4a0137a16143af76a90345b472e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82ca6cba81101e577eed882ad45272ab81546fed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119451195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262348"
 ---
 # <a name="devicedialogdata2-structure"></a>Estructura DEVICEDIALOGDATA2
 
@@ -43,7 +43,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Especifica un conjunto de marcas que controlan la operación del cuadro de diál
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamiento predeterminado.                                                                                                                                                                           |
 | IMAGEN ÚNICA \_ DEL CUADRO DE DIÁLOGO DE DISPOSITIVO \_ \_ \_ WIA   | Restrinja la selección de imágenes a una sola imagen en el cuadro de diálogo de adquisición de imágenes del dispositivo.                                                                                                      |
-| CUADRO DE DIÁLOGO \_ DE DISPOSITIVO WIA \_ USO DE LA INTERFAZ DE USUARIO \_ \_ \_ COMÚN | Use la interfaz de usuario del sistema, si está disponible, en lugar de la interfaz de usuario proporcionada por el proveedor. Si la interfaz de usuario del sistema no está disponible, se usa la interfaz de usuario del proveedor. Si no hay ninguna interfaz de usuario disponible, la función devuelve E \_ NOTIMPL. |
+| CUADRO DE DIÁLOGO \_ DE DISPOSITIVO WIA \_ USAR INTERFAZ DE USUARIO \_ \_ \_ COMÚN | Use la interfaz de usuario del sistema, si está disponible, en lugar de la interfaz de usuario proporcionada por el proveedor. Si la interfaz de usuario del sistema no está disponible, se usa la interfaz de usuario del proveedor. Si ninguna interfaz de usuario está disponible, la función devuelve E \_ NOTIMPL. |
 
 
 
@@ -121,7 +121,7 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Especifica la plantilla de nombre de archivo que se usará para los archivos transferidos de elementos WIA a la carpeta de destino designada por **bstrFolderName**. Se puede crear un número arbitrario de nombres de archivo únicos anexando caracteres adicionales a la plantilla de nombre de archivo.
+Especifica la plantilla de nombre de archivo que se va a usar para los archivos transferidos de elementos WIA a la carpeta de destino designada **por bstrFolderName**. Se puede crear un número arbitrario de nombres de archivo únicos anexando caracteres adicionales a la plantilla de nombre de archivo.
 
 </dd> <dt>
 
@@ -143,7 +143,7 @@ Tipo: **BSTR \***
 
 </dd> <dd>
 
-Puntero a una matriz de punteros BSTR. Cada elemento de matriz apunta a un BSTR que contiene el nombre de destino de un archivo que se transfirieron correctamente a la carpeta identificada por bstrFolderName. El método debe asignar el almacenamiento para este miembro.
+Puntero a una matriz de punteros BSTR. Cada elemento de matriz apunta a un BSTR que contiene el nombre de destino de un archivo que se ha transferido correctamente a la carpeta identificada por bstrFolderName. El método debe asignar el almacenamiento para este miembro.
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Puntero a la [**interfaz IWiaItem2**](-wia-iwiaitem2.md) del elemento WIA que tr
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
 
 
 

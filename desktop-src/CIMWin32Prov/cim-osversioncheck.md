@@ -26,20 +26,20 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 2dce98d850bb140d6af40bbd9b012e23bebe7316
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880671"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261756"
 ---
 # <a name="cim_osversioncheck-class"></a>Cim \_ OSVersionCheck (clase)
 
-La **clase CIM \_ OSVersionCheck** especifica las versiones del sistema operativo que pueden admitir un elemento de software. La comprobación se puede ejecutar para una versión específica, mínima, máxima o un intervalo de versiones de sistema operativo. Para especificar una versión específica del sistema operativo, las versiones mínima y máxima deben ser iguales. Para especificar la versión mínima, solo se debe especificar la versión mínima. Para especificar una versión máxima, solo es necesario especificar la versión máxima. Para especificar un intervalo, se deben especificar las versiones mínima y máxima.
+La **clase CIM \_ OSVersionCheck** especifica las versiones del sistema operativo que pueden admitir un elemento de software. La comprobación se puede ejecutar para una versión específica, mínima, máxima o un intervalo de versiones de sistema operativo. Para especificar una versión específica del sistema operativo, las versiones mínima y máxima deben ser iguales. Para especificar la versión mínima, solo se debe especificar la versión mínima. Para especificar una versión máxima, solo es necesario especificar la versión máxima. Para especificar un intervalo, deben especificarse las versiones mínima y máxima.
 
-El tipo de sistema operativo se especifica en la **propiedad TargetOperatingSystem** del elemento de software propietario. Los detalles de las comprobaciones se comparan con los detalles correspondientes que se encuentran en un objeto [**\_ OperatingSystem cim**](cim-operatingsystem.md) al que hace referencia una asociación [**de CIM \_ InstalledOS**](cim-installedos.md) para el objeto [**\_ ComputerSystem de CIM**](cim-computersystem.md) que describe el entorno. Al menos una **clase \_ Cim OperatingSystem** debe cumplir los detalles de la condición para que se cumpla la comprobación. En otras palabras, no todos los sistemas operativos del sistema informático correspondiente necesitan cumplir la condición. Además, la **propiedad OSType** de la **clase Cim \_ OperatingSystem** debe coincidir con el tipo de la **propiedad TargetOperatingSystem.**
+El tipo de sistema operativo se especifica en la **propiedad TargetOperatingSystem** del elemento de software propietario. Los detalles de las comprobaciones se comparan con los detalles correspondientes encontrados en un objeto [**\_ OperatingSystem cim**](cim-operatingsystem.md) al que hace referencia una asociación [**de CIM \_ InstalledOS**](cim-installedos.md) para el objeto [**\_ ComputerSystem de CIM**](cim-computersystem.md) que describe el entorno. Al menos una **clase \_ Cim OperatingSystem** debe satisfacer los detalles de la condición para que se cumpla la comprobación. En otras palabras, no todos los sistemas operativos del sistema informático correspondiente necesitan cumplir la condición. Además, la **propiedad OSType** de la clase **Cim \_ OperatingSystem** debe coincidir con el tipo de la **propiedad TargetOperatingSystem.**
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -65,7 +65,7 @@ class CIM_OSVersionCheck : CIM_Check
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM OSVersionCheck** tiene estos tipos de miembros:
 
@@ -80,7 +80,7 @@ La **clase \_ CIM OSVersionCheck** tiene estos métodos.
 
 | Método                                                      | Descripción                                                   |
 |:------------------------------------------------------------|:--------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-osversioncheck.md) | Realiza una acción determinada. No implementado por WMI.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-osversioncheck.md) | Realiza una acción determinada. Wmi no implementa .<br/> |
 
 
 
@@ -106,7 +106,7 @@ Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del asunto.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/w
 
 Identificador que se usa junto con otras claves para identificar de forma única la comprobación.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -137,11 +137,11 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
+Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que el [**método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
 
-Si **es FALSE**, no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
+Si **es FALSE,** no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -156,7 +156,7 @@ Tipo de acceso: solo lectura
 
 Descripción de los objetos.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -211,12 +211,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre usado para identificar el elemento de software
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -229,12 +229,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Se trata de un identificador para este elemento de software.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -247,12 +247,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado del elemento de software de un elemento de software.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 <dt>
 
@@ -285,7 +285,7 @@ Describe los detalles necesarios para una instalación correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado de ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Describe los detalles necesarios para la ejecución correcta y los detalles (con
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento start.
+Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
 
 </dd> </dl>
 
@@ -311,12 +311,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -384,7 +384,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de máquinas virtuales
+Abrir máquinas virtuales
 
 </dd> <dt>
 
@@ -422,7 +422,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -641,7 +641,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -787,7 +787,7 @@ Mac OS 9
 
 </dt> <dd>
 
-So De remanso
+So de mano
 
 </dd> <dt>
 
@@ -837,31 +837,31 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versión de la operación.
 
-La versión de la operación debe tener uno de los formatos siguientes:
+La versión de la operación debe tener uno de los siguientes formatos:
 
 -   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
 -   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

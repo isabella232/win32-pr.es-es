@@ -3,7 +3,7 @@ title: Comando deshacer
 description: El comando deshacer invierte la acción realizada por el comando de copia, corte, eliminación, deshacer o pegar correctamente más reciente. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 81d696a9-5288-4efd-bc76-8416dd63e694
 keywords:
-- Comando deshacer Windows Multimedia
+- Deshacer comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: dfc0814dff2c684095299b6820b8dc9a2464aa26
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260583"
 ---
 # <a name="undo-command"></a>Comando deshacer
 
@@ -67,7 +67,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

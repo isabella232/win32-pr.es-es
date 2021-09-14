@@ -1,7 +1,7 @@
 ---
-description: La estructura ENTRYPOINTS define los puntos de entrada a las funciones de exportación que Monitor de red utiliza para operar el analizador.
+description: La estructura ENTRYPOINTS define los puntos de entrada a las funciones de exportación Monitor de red utiliza para operar el analizador.
 ms.assetid: e2ac118d-e04b-489f-877f-84cc9888f8af
-title: Estructura ENTRYPOINTS (Netmon. h)
+title: ESTRUCTURA ENTRYPOINTS (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Netmon.h
 ms.openlocfilehash: 3eebee878cd907ee20674224a969c82038f4ac6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260428"
 ---
-# <a name="entrypoints-structure"></a>Estructura ENTRYPOINTS
+# <a name="entrypoints-structure"></a>ENTRYPOINTS (estructura)
 
-La estructura **ENTRYPOINTS** define los puntos de entrada a las funciones de exportación que monitor de red utiliza para operar el analizador.
+La **estructura ENTRYPOINTS** define los puntos de entrada a las funciones de exportación Monitor de red utiliza para operar el analizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,57 +39,57 @@ typedef struct __ENTRYPOINTS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Registro**
 </dt> <dd>
 
-Puntero a la implementación de la función [*Register Expert*](register-expert.md) .
+Puntero a la implementación de la [*función de experto Register.*](register-expert.md)
 
 </dd> <dt>
 
 **Eliminar registro**
 </dt> <dd>
 
-Puntero a la implementación de la función de [**eliminación de registro**](deregister.md) .
+Puntero a la implementación de la [**función Deregister.**](deregister.md)
 
 </dd> <dt>
 
 **RecognizeFrame**
 </dt> <dd>
 
-Puntero a la implementación de la función de exportación [**RecognizeFrame**](recognizeframe.md) .
+Puntero a la implementación de la [**función de exportación RecognizeFrame.**](recognizeframe.md)
 
 </dd> <dt>
 
 **AttachProperties**
 </dt> <dd>
 
-Puntero a la implementación de la función de exportación [**AttachProperties**](attachproperties.md) .
+Puntero a la implementación de la [**función de exportación AttachProperties.**](attachproperties.md)
 
 </dd> <dt>
 
 **FormatProperties**
 </dt> <dd>
 
-Puntero a la implementación de la función de exportación [**FormatProperties**](formatproperties.md) .
+Puntero a la implementación de la [**función de exportación FormatProperties.**](formatproperties.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La función **CreateProtocol** utiliza la estructura **ENTRYPOINTS** para proporcionar punteros a monitor de red. Los punteros se deben especificar en el orden identificado en la sección de miembros anteriores.
+La **función CreateProtocol** usa la **estructura ENTRYPOINTS** para proporcionar punteros a Monitor de red. Los punteros deben especificarse en el orden identificado en la sección Miembros anterior.
 
-No es necesario implementar la función [**FormatProperties**](formatproperties.md) si monitor de red nunca mostrará los datos del protocolo. Por ejemplo, no es necesario implementar **FormatProperties** si una aplicación de exportación usa la salida del analizador y monitor de red no muestra la salida.
+No es necesario implementar la función [**FormatProperties**](formatproperties.md) si Monitor de red mostrar los datos del protocolo. Por ejemplo, No es necesario implementar **FormatProperties** si una aplicación de exportación usa la salida del analizador y Monitor de red no muestra la salida.
 
 
 
 | Para obtener información acerca de                                        | Vea                                                     |
 |-----------------------------------------------------------|---------------------------------------------------------|
 | Qué son los analizadores y cómo funcionan con Monitor de red. | [Analizadores](parsers.md)                                  |
-| Cómo implementar **DllMain**  incluye un ejemplo.        | [Implementar DllMain](implementing-dllmain-parser.md) |
+| Cómo implementar **DllMain incluye**  un ejemplo.        | [Implementación de DllMain](implementing-dllmain-parser.md) |
 
 
 
@@ -103,11 +103,11 @@ No es necesario implementar la función [**FormatProperties**](formatproperties.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

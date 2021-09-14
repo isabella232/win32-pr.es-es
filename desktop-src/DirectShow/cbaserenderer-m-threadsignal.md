@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b8a0cf1190d1350b868e5254acc4fe80e48c9c6faf0de76d629b5a38494ba272
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb8fc5f20a03fa48cc7c0d5b4bd1faaefe9a5646
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261492"
 ---
 # <a name="cbaserendererm_threadsignal-member"></a>Miembro ThreadSignal de CBaseRenderer::m \_
 
@@ -47,7 +47,7 @@ CAMEvent m_ThreadSignal;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

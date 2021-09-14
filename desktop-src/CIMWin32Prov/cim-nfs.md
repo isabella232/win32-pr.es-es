@@ -47,19 +47,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cfdf044adf5623a7fafd424f6051105bf83d3d0f5f4338b16b7bf3a7fe07126c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0dcfb44fdcd035ca47cbe3056da2a081ef2ae07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119820975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261831"
 ---
 # <a name="cim_nfs-class"></a>Cim \_ NFS (clase)
 
 La **clase \_ CIM NFS** representa un sistema de archivos remoto que se monta, mediante el protocolo de sistema de archivos de red (NFS), desde un sistema de equipos. Las propiedades del objeto NFS corresponden a los aspectos operativos del montaje y representan la configuración del lado cliente para el acceso NFS. El tipo de sistema de archivos debe establecerse para indicar el tipo de sistema de archivos tal como aparece en el cliente.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -107,7 +107,7 @@ class CIM_NFS : CIM_RemoteFileSystem
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM NFS** tiene estos tipos de miembros:
 
@@ -396,7 +396,7 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/w
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
+Esta propiedad se hereda del sistema [**\_ de archivos CIM.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -414,7 +414,7 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/w
 
 Ámbito del nombre de clase de creación del sistema de equipo.
 
-Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
+Esta propiedad se hereda del sistema [**\_ de archivos CIM.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -430,9 +430,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**")
 </dt> </dl>
 
-Ámbito del nombre del sistema del equipo.
+Ámbito del nombre del sistema informático.
 
-Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
+Esta propiedad se hereda del sistema [**\_ de archivos CIM.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -466,7 +466,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Partición DMTF \| \| 002.8")
 </dt> </dl>
 
-Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en proceso (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado". Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
+Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en la lista (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado". Esta propiedad se hereda del sistema [**\_ de archivos CIM.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -484,9 +484,9 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("byt
 
 Tamaño total del sistema de archivos, en bytes. Si es desconocido, escriba 0 (cero).
 
-Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
+Esta propiedad se hereda del sistema [**\_ de archivos CIM.**](cim-filesystem.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -558,7 +558,7 @@ Tipo de acceso: solo lectura
 
 Longitud máxima de un nombre de archivo dentro del sistema de archivos. Un valor de 0 (cero) indica que no hay ningún límite para la longitud del nombre de archivo.
 
-Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
+Esta propiedad se hereda del sistema [**\_ de archivos CIM.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -584,7 +584,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -607,7 +607,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("byt
 
 Tamaño del búfer de lectura, en bytes.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -620,12 +620,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrFSAccess")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. \|HOST-RESOURCES-MIB.hrFSAccess de IETF")
 </dt> </dl>
 
 Si **es TRUE,** el sistema de archivos se designa como de solo lectura.
 
-Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
+Esta propiedad se hereda del sistema [**\_ de archivos CIM.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -651,7 +651,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("décimos de segundos")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("décimas de segundos")
 </dt> </dl>
 
 Tiempo de espera de NFS, en décimas de segundo.
@@ -813,7 +813,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM NFS** se deriva de [**CIM \_ RemoteFileSystem.**](cim-remotefilesystem.md)
 
@@ -835,7 +835,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

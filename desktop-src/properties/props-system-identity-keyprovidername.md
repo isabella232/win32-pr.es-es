@@ -4,12 +4,12 @@ ms.assetid: 31ead002-b69b-444c-bada-f311eb0d8bb3
 title: System.Identity.KeyProviderName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd0ea368fcd6160cdf0296199781b20c40dc4169aa86b8f4ab24e86ef102f24
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b92543e81fbb78bcdade4776644535233c41c89
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119945415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262639"
 ---
 # <a name="systemidentitykeyprovidername"></a>System.Identity.KeyProviderName
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

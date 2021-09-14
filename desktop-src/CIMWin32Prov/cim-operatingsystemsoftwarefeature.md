@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: debc277976e59173153b31e3be41dc0fe2566fa3cb01a3a15234e5c008ad50fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9d74478f211b23e103854cedb09a1e0186618b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080499"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261788"
 ---
-# <a name="cim_operatingsystemsoftwarefeature-class"></a>\_Cim OperatingSystemSoftwareFeature (clase)
+# <a name="cim_operatingsystemsoftwarefeature-class"></a>Cim \_ OperatingSystemSoftwareFeature (clase)
 
 La **clase CIM \_ OperatingSystemSoftwareFeature** representa las características de software que constituye el sistema operativo.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_OperatingSystemSoftwareFeature : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM OperatingSystemSoftwareFeature** tiene estos tipos de miembros:
 
@@ -60,16 +60,16 @@ La **clase \_ CIM OperatingSystemSoftwareFeature** tiene estas propiedades.
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Cim \_ OperatingSystem**
+Tipo de datos: **CIM \_ OperatingSystem**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Un [**sistema \_ operativo CIM**](cim-operatingsystem.md) que describe el sistema operativo.
+Sistema [**\_ operativo CIM**](cim-operatingsystem.md) que describe el sistema operativo.
 
 </dd> <dt>
 
@@ -85,21 +85,21 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Cim [**\_ SoftwareFeature que**](cim-softwarefeature.md) describe las características de software que lo hacen.
+Una [**propiedad \_ Cim SoftwareFeature**](cim-softwarefeature.md) que describe las características de software que conste del sistema operativo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 28c70a95a9f735e37b16ae786623a805ccc06ed6020aa00781576a1e064faa11
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: baedae22e948b38d9ff162942269ac4529896826
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117982849"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260468"
 ---
 # <a name="destroypropertydatabase-function"></a>Función DestroyPropertyDatabase
 
@@ -63,7 +63,7 @@ Si la función no se realiza correctamente, el valor devuelto es un código de e
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se debe llamar a la función **DestroyPropertyDatabase** al implementar la función de exportación [Deregister](deregister.md) para el protocolo. En el caso de los archivos DLL del analizador que admiten varios protocolos, se llama a la función **DestroyPropertyDatabase** para cada implementación **de Deregister**.
 
@@ -83,7 +83,7 @@ Solo se debe llamar a la función **DestroyPropertyDatabase** al implementar la 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

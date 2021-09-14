@@ -4,12 +4,12 @@ ms.assetid: f08f751d-877b-4b17-8015-7108d5fd8195
 title: Acción MoveFiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b8581cd19569109c0f7697b5dfebf33e91b33da9ba84d15caf424242e4e21ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f06db0cef12753652bf94bf05875b2c2f9d4067c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118945049"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261079"
 ---
 # <a name="movefiles-action"></a>Acción MoveFiles
 
@@ -33,7 +33,7 @@ La acción MoveFiles debe ir después de [la acción InstallValidate](installval
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La tabla MoveFiles contiene una columna denominada "options" que especifica los archivos de origen que se van a mover o copiar. Se elimina un archivo de origen movido después de copiarlo en una nueva ubicación. Para obtener la sintaxis exacta, vea la [tabla MoveFile](movefile-table.md).
 

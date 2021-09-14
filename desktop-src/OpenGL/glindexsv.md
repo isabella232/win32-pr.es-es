@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31bbc81da47f9dc0ac17e003d3c27b8882855dc487200c4791e33e21bad4fb62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da4db5d760845fa6c05923c76459900dafcbdbfc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260100"
 ---
 # <a name="glindexsv-function"></a>función glIndexsv
 
@@ -51,7 +51,7 @@ Puntero a una matriz de un solo elemento que contiene el nuevo valor para el ín
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glIndexsv** actualiza el índice de color actual (con un solo valor). Toma un argumento: el nuevo valor para el índice de color actual.
 
@@ -63,7 +63,7 @@ El índice actual se puede actualizar en cualquier momento. En concreto, se pued
 
 La función siguiente recupera información relacionada con **glIndexsv**:
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ CURRENT \_ INDEX
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ INDEX
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,7 +79,7 @@ La función siguiente recupera información relacionada con **glIndexsv**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

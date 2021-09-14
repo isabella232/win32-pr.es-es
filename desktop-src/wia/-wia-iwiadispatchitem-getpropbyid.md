@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 5c8d5f68114f74505fce11ca8872370a802e31400159146d7030ec34339c7d19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54eb329d51005893b89a9fd28f160ff616e682df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118208379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262303"
 ---
 # <a name="itemgetpropbyid-method"></a>Método Item.GetPropById
 
@@ -54,11 +54,11 @@ Tipo: **VARIANT**
 
 Este método devuelve el valor de la propiedad especificada por *id.*.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use este método para buscar el valor de una propiedad de elemento a partir de su identificador. Para obtener una lista de los iDs de propiedad, vea [Definiciones de constantes de propiedad de WIA.](-wia-wia-property-constant-definitions.md) Para obtener información sobre las propias propiedades, vea [WiA Property Constants](-wia-wia-property-constants.md).
+Use este método para buscar el valor de una propiedad de elemento a partir de su identificador. Para obtener una lista de los IDs de propiedad, vea [WiA Property Constant Definitions](-wia-wia-property-constant-definitions.md). Para obtener información sobre las propias propiedades, vea [WiA Property Constants](-wia-wia-property-constants.md).
 
-Para las aplicaciones Visual Basic Microsoft, agregue una referencia a "Windows biblioteca de tipos de adquisición de imágenes 1.01". Las siguientes constantes definidas en ese archivo solo son válidas para los elementos raíz (elementos de dispositivo):
+Para las aplicaciones Visual Basic Microsoft, agregue una referencia a "biblioteca de tipos Windows image acquisition 1.01". Las siguientes constantes definidas en ese archivo solo son válidas para los elementos raíz (elementos de dispositivo):
 
 ``` syntax
 const FirmwareVersion = 1026
@@ -148,7 +148,7 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |

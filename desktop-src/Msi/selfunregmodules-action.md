@@ -4,12 +4,12 @@ ms.assetid: fa5a5abb-ecd4-434c-b176-83cdca280a13
 title: Acción SelfUnregModules
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2ba95a745716d512a72e9541064f56bdc663e2e6c9658a9c35744449217952f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c3a0d98d8a8afe45b9b78f5c8af8ca2f84b2244
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120040335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260980"
 ---
 # <a name="selfunregmodules-action"></a>Acción SelfUnregModules
 
@@ -32,9 +32,9 @@ La [acción InstallValidate](installvalidate-action.md) debe aparecer antes de l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La acción SelfUnregModules intenta llamar a la [**función DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) del módulo que se va a anular el registro. Esta acción se ejecuta con privilegios elevados cuando la instalación se ejecuta con privilegios elevados, como durante una instalación por equipo. Durante una instalación por usuario, el instalador ejecuta esta acción con privilegios de usuario.
+La acción SelfUnregModules intenta llamar a la función [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) del módulo que se va a anular el registro. Esta acción se ejecuta con privilegios elevados cuando la instalación se ejecuta con privilegios elevados, como durante una instalación por máquina. Durante una instalación por usuario, el instalador ejecuta esta acción con privilegios de usuario.
 
 Tenga en cuenta que no puede especificar el orden en el que el instalador anula el registro de los archivos DLL de registro automático mediante la acción SelfUnRegModules.
 

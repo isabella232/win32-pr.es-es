@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c57a8c8354cea3fe43854824da5d4a139f648d7e0615b425fbf7945da9d69fef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c017e7601e074c588aa534b6ea90aef79325ed4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260207"
 ---
 # <a name="glgetpixelmapuiv-function"></a>Función glGetPixelMapuiv
 
@@ -72,7 +72,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte [**glPixelMap para**](glpixelmap.md) obtener una descripción de los valores aceptables para el *parámetro map.* La **función glGetPixelMap** devuelve *en* valores el contenido del mapa de píxeles especificado en *el mapa*. Use mapas de píxeles durante la ejecución de [**glReadPixels,**](glreadpixels.md) [**glDrawPixels,**](gldrawpixels.md) [**glCopyPixels,**](glcopypixels.md) [**glTexImage1D**](glteximage1d.md)y [**glTexImage2D**](glteximage2d.md) para asignar índices de color, índices de galería de símbolos, componentes de color y componentes de profundidad a otros valores.
 
@@ -120,7 +120,7 @@ Las siguientes funciones recuperan información relacionada **con glGetPixelMap*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

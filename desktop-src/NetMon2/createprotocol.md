@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 173f744406ef2b360c0af7158e397c2001f146b9f2339bf6aaf3468b9a1465dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b35f9505758256750ae02d24d6c2a84ed0646b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117796356"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260540"
 ---
 # <a name="createprotocol-function"></a>Función CreateProtocol
 
@@ -64,15 +64,15 @@ Tamaño de la **estructura ENTRYPOINTS.** Monitor de red proporciona una macro E
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es un identificador para el protocolo.
+Si la función se realiza correctamente, el valor devuelto es un identificador del protocolo.
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El archivo DLL del analizador llama **a CreateProtocol** durante su implementación [de DllMain](dllmain-parser.md). Se **llama a la función CreateProtocol** cuando el sistema operativo carga el archivo DLL del analizador por primera vez.
 
-Los puntos de entrada a los que se hace referencia en el parámetro *lpEntryPoints* incluyen punteros a las siguientes funciones de exportación que deben proporcionarse en el orden que se presenta aquí.
+Los puntos de entrada a los que se hace referencia en el parámetro *lpEntryPoints* incluyen punteros a las siguientes funciones de exportación que se deben proporcionar en el orden que se presenta aquí.
 
 -   [Registro](register-parser.md)
 -   [Eliminar registro](deregister.md)
@@ -95,7 +95,7 @@ Los puntos de entrada a los que se hace referencia en el parámetro *lpEntryPoin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -105,7 +105,7 @@ Los puntos de entrada a los que se hace referencia en el parámetro *lpEntryPoin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

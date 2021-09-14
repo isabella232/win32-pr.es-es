@@ -4,12 +4,12 @@ ms.assetid: 019918e1-fff5-40d7-b466-866de8e2e5e5
 description: 'Más información sobre: Ejemplos de modelos de servicio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f006a846aff11e48426c7a9d673f191af0f6e6dfdc8191e8b1fe59e69a70f0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2cf609c8235d4f407dbb47449014c179272c2929
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261988"
 ---
 # <a name="service-model-examples"></a>Ejemplos de modelos de servicio
 
@@ -50,12 +50,12 @@ En los ejemplos siguientes se muestra el uso del [modelo de servicio](service-mo
     -   Cliente: [HttpPurchaseOrderWithSslClientExample](httppurchaseorderwithsslclientexample.md)
     -   Servidor: [HttpPurchaseOrderWithSslServiceExample](httppurchaseorderwithsslserviceexample.md)
 
--   Servicio de pedido de compra con nombre de usuario sobre seguridad en modo mixto SSL:
+-   Servicio de pedido de compra con nombre de usuario a través de la seguridad en modo mixto SSL:
 
     -   Cliente: [HttpPurchaseOrderWithUsernameOverSslClientExample](httppurchaseorderwithusernameoversslclientexample.md)
     -   Servidor: [HttpPurchaseOrderWithUserNameOverSslServiceExample](httppurchaseorderwithusernameoversslserviceexample.md)
 
--   Servicio de pedido de compra con Kerberos a través de la seguridad en modo mixto de SSL:
+-   Servicio de pedido de compra con Kerberos a través de la seguridad en modo mixto ssl:
 
     -   Cliente: [HttpPurchaseOrderWithKerberosOverSslClientExample](httppurchaseorderwithkerberosoversslclientexample.md)
     -   Servidor: [HttpPurchaseOrderWithKerberosOverSslServiceExample](httppurchaseorderwithkerberosoversslserviceexample.md)

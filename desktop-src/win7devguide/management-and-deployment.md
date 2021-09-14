@@ -1,19 +1,19 @@
 ---
 title: Administración e implementación
-description: Los profesionales o desarrolladores de TI que se preparen para implementar Windows 7 tendrán una mayor confianza y experimentarán un ciclo de evaluación más corto debido a las mejoras en las características y herramientas de creación de imágenes.
+description: Los profesionales de TI o desarrolladores que se preparen para implementar Windows 7 tendrán una mayor confianza y experimentarán un ciclo de evaluación más corto debido a las mejoras en las características y herramientas de creación de imágenes.
 ms.assetid: 217090c4-6385-4333-a380-f75f2c80e369
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4a68a2c20f3ff765fcb9855afe1bd0455904088e3558562ec5c1cd0402e5c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 105b19ad01cb9208d05e77871be637fdadcb0532
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262260"
 ---
 # <a name="management-and-deployment"></a>Administración e implementación
 
-Los profesionales o desarrolladores de TI que se preparen para implementar Windows 7 tendrán una mayor confianza y experimentarán un ciclo de evaluación más corto debido a las mejoras en las características y herramientas de creación de imágenes. Entre ellas se incluye la compatibilidad con la administración de aplicaciones, controladores y sistemas operativos en archivos de imagen sin conexión. Además, la creación y administración de imágenes será más fácil y estará disponible para una gama más amplia de organizaciones de TI. La implementación Windows 7 en equipos empresariales también será más fácil y rápida gracias a las nuevas herramientas de migración de IT y a las tecnologías de implementación automatizada.
+Los profesionales de TI o desarrolladores que se preparen para implementar Windows 7 tendrán una mayor confianza y experimentarán un ciclo de evaluación más corto debido a las mejoras en las características y herramientas de creación de imágenes. Entre ellas se incluye la compatibilidad con la administración de aplicaciones, controladores y sistemas operativos en archivos de imagen sin conexión. Además, la creación y administración de imágenes será más fácil y estará disponible para una gama más amplia de organizaciones de TI. La implementación Windows 7 en equipos empresariales también será más fácil y rápido gracias a las nuevas herramientas de migración de IT y a las tecnologías de implementación automatizada.
 
 ## <a name="windows-powershell-20"></a>Windows PowerShell 2.0
 
@@ -25,7 +25,7 @@ PowerShell 2.0 admite la creación de particiones y la organización de scripts 
 
 ![Captura de pantalla de Windows PowerShell ise](images/windows7-devguide-solidfig1-powershell.jpg)
 
-Figura 1. Windows PowerShell es un lenguaje de scripting administrado de .NET completo que tiene un shell de línea de comandos interactivo y un ISE gráfico.
+Figura 1. Windows PowerShell es un lenguaje de scripting administrado de .NET completo que tiene un shell de línea de comandos interactivo y un ISE gráfico
 
 ## <a name="windows-installer"></a>Windows Installer
 

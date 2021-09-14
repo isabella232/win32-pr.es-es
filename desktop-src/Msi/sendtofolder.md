@@ -4,12 +4,12 @@ ms.assetid: 403e868a-b844-4860-bb9f-744ca931a3a8
 title: Propiedad SendToFolder
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8fd5966d8a3d1eef52e9fcb6dc31f695ee2fa91108936491ee39348920a212e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9cb12ccc16ea754e2dfd6ebffe752d132abb089a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120040295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260959"
 ---
 # <a name="sendtofolder-property"></a>Propiedad SendToFolder
 

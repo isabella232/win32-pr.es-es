@@ -1,15 +1,15 @@
 ---
-description: Si ninguno de los archivos tiene un número de versión, el instalador de Windows usa la lógica que se muestra en el siguiente diagrama de flujo para determinar si se deben reemplazar todos los archivos instalados que pertenecen al componente.
+description: Si ninguno de los archivos tiene un número de versión, el instalador de Windows usa la lógica ilustrada en el siguiente diagrama de flujo para determinar si se deben reemplazar todos los archivos instalados que pertenecen al componente.
 ms.assetid: 82cb0d96-f49f-408e-a8c6-a0d1ee9af8c7
 title: Ninguno de los archivos tiene una versión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a68a6d74a26a810f2ddb33e1c13b2ed7b372a75d5b262a8b6d8d7ecaca1c99f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5360bb7b6b4deda54156006073f353ab65ab2b2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065944"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261047"
 ---
 # <a name="neither-file-has-a-version"></a>Ninguno de los archivos tiene una versión
 

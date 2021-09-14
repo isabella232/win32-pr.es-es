@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 039b7dd4579419bac744a07bbc6ddd55c4b0b2e2e713340bf256fdb95d8fc071
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2863915b850588d4db018693d9081ed2907d644a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119450215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262284"
 ---
-# <a name="iwiatransferdownload-method"></a>Método IWiaTransfer::D ownload
+# <a name="iwiatransferdownload-method"></a>IWiaTransfer::D ownload (método)
 
 Inicia una descarga de datos al autor de la llamada.
 
@@ -77,8 +77,8 @@ Si se descarga una carpeta, también se transfieren todos los elementos secundar
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 

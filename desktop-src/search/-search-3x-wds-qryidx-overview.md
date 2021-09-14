@@ -4,12 +4,12 @@ ms.assetid: 2c161b7f-4e28-4e8a-add6-3c1cda00a622
 title: Consulta del índice mediante programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f76f98d12e4a0615bf19dfb165766a67b8c9e58700ad2d0c897782e2a16ba9dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6390b31f4a1cc01ca723978a5107d5d9a502c4ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119094946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262588"
 ---
 # <a name="querying-the-index-programmatically"></a>Consulta del índice mediante programación
 
@@ -20,7 +20,7 @@ En esta sección se proporciona el marco conceptual para consultar el índice me
 -   [Usar SQL y enfoques de AQS para consultar el índice](using-sql-and-aqs-to-query-the-index.md)
 -   [Consulta del índice con ISearchQueryHelper](-search-3x-wds-qryidx-searchqueryhelper.md)
 -   [Consulta del índice con el protocolo search-ms](-search-3x-wds-qryidx-searchms.md)
--   [Consulta del índice con la sintaxis Windows búsqueda SQL búsqueda](-search-sql-windowssearch-entry.md)
+-   [Consulta del índice con la sintaxis Windows search SQL búsqueda](-search-sql-windowssearch-entry.md)
 -   [Uso de la sintaxis de consulta avanzada mediante programación](-search-3x-advancedquerysyntax.md)
 
 > [!Note]  
@@ -30,12 +30,12 @@ En esta sección se proporciona el marco conceptual para consultar el índice me
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
--   Para obtener información sobre OLE DB, [vea información general OLE DB programación.](https://msdn.microsoft.com/library/Cc522830(v=VS.71).aspx) Para obtener información sobre el .NET Framework de datos para OLE DB, vea el espacio de nombres [System.Data.OleDb](/dotnet/api/system.data.oledb?view=dotnet-plat-ext-3.1).
+-   Para obtener información sobre OLE DB, vea [información general sobre OLE DB programación.](https://msdn.microsoft.com/library/Cc522830(v=VS.71).aspx) Para obtener información sobre el .NET Framework de datos para OLE DB, vea el espacio de nombres [System.Data.OleDb](/dotnet/api/system.data.oledb?view=dotnet-plat-ext-3.1).
 -   Para obtener información adicional sobre el uso de propiedades en las consultas, vea los temas siguientes:
     -   [Sistema de propiedades](../properties/building-property-handlers.md)
     -   [Propiedades del sistema](https://msdn.microsoft.com/library/bb763010(VS.85).aspx)
 -   Para obtener información sobre cómo crear y modificar carpetas de búsqueda, vea [**ISearchFolderItemFactory Interface**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-isearchfolderitemfactory).
--   Para ver los paneles de mensajes de preguntas y discusión admitidos por la comunidad sobre las tecnologías de búsqueda, vea [Foro de MSDN: Windows desarrollo](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads)de búsqueda de escritorio.
+-   Para ver los paneles de mensajes de preguntas y discusión admitidos por la comunidad sobre las tecnologías de búsqueda, vea [Foro de MSDN: Windows desarrollo de búsqueda de escritorio.](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads)
 -   Para descargar los ejemplos de código del SDK de Search:
     -   Para Windows 7: [Windows search samples on GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch)
     -   Para Windows Vista: ejemplos [del SDK Windows Search](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8)

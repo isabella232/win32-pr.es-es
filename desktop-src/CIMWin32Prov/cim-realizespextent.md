@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 697ca0386d03ade55895f63cab67b3144bf50b3d0ffea2928633384e4d1f502a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 906861c7bc7a7e09d40d3457d069cdb9dd3a6b11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261684"
 ---
 # <a name="cim_realizespextent-class"></a>CIM \_ RealizesPExtent (clase)
 
 La **\_ asociación CIM RealizesPExtent** representa la relación en la que las extensiones físicas se realizan en un medio físico. Además, se especifica la dirección inicial de la extensión física en el medio físico.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_RealizesPExtent : CIM_Realizes
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ RealizesPExtent** tiene estos tipos de miembros:
 
@@ -106,7 +106,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase CIM \_ RealizesPExtent** se deriva de [**CIM \_ Realizes**](cim-realizes.md).
 
@@ -128,7 +128,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

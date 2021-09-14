@@ -5,11 +5,11 @@ title: Tipos semánticos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 234e5dd929991c2ec5fecbc1d2d1bda72f4fbe52
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882651"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260975"
 ---
 # <a name="semantic-types"></a>Tipos semánticos
 
@@ -51,8 +51,8 @@ Las siguientes entradas de las columnas Format, Type y ContextData de la tabla [
 |--------|-----------|------------------|------------------------------------------------------------------------------------------------------------------------|
 | Clave    | Archivo      | AssemblyContext  | Permitir a los usuarios configurar claves externas en ensamblados de Win32 o Common Language Runtime. Vea [Tipo de archivo](file-type.md). |
 | Clave    | Binary    | Bitmap           | Clave externa para una fila de tabla binaria que contiene un mapa de bits para su uso en la interfaz de usuario. Vea [Tipo binario](binary-type.md).                  |
-| Clave    | Binary    | Icono             | Clave externa para una fila de tabla binaria que contiene un icono para su uso en la interfaz de usuario. Vea [Tipo binario](binary-type.md).                   |
-| Clave    | Binary    | EXE              | Clave externa a una fila de tabla binaria que contiene un exe de 32 bits. Vea [Tipo binario](binary-type.md).                             |
+| Clave    | Binary    | Icono             | Clave externa a una fila de tabla binaria que contiene un icono para su uso en la interfaz de usuario. Vea [Tipo binario](binary-type.md).                   |
+| Clave    | Binary    | EXE              | Clave externa para una fila de tabla binaria que contiene un exe de 32 bits. Vea [Tipo binario](binary-type.md).                             |
 | Clave    | Binary    | EXE64            | Clave externa a una fila de tabla binaria que contiene un exe de 32 o 64 bits. Vea [Tipo binario](binary-type.md).                       |
 | Clave    | Icono      | ShortcutIcon     | Tecla externa para una fila de tabla icono que contiene un icono para su uso mediante un acceso directo. Vea [Icon Type (Tipo de icono).](icon-type.md)                |
 | Clave    | Diálogo    | Cuadro de diálogoSiguiente       | Clave externa a una fila de tabla dialog. Vea [Tipo de cuadro de diálogo](dialog-type.md).                                                 |

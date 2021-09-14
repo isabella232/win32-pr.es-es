@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: d66ba5dd3a977967d0020a00d5813c3f689142b1e58c631c99f9bd10fceba3ec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fdefc6f1233f820321bae6795f457e345fb5d4b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120074405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260367"
 ---
 # <a name="set-structure"></a>Set (estructura)
 
@@ -49,7 +49,7 @@ typedef struct _SET {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -144,7 +144,7 @@ Puntero a una matriz de valores.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **estructura SET** se usa para definir un conjunto de datos de comparación que Monitor de red usar para interpretar el valor de una propiedad en un paquete de protocolo. Cuando se requiere un conjunto de datos de comparación, se especifica un puntero a la **estructura SET** en el **miembro lpSet** de la [estructura PROPERTYINFO.](propertyinfo.md)
 
@@ -166,7 +166,7 @@ El archivo DLL del analizador puede proporcionar un conjunto de valores y un con
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -174,14 +174,14 @@ El archivo DLL del analizador puede proporcionar un conjunto de valores y un con
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [BIT \_ ETIQUETADO](labeled-bit.md)
 </dt> <dt>
 
-[Propertyinfo](propertyinfo.md)
+[PROPERTYINFO](propertyinfo.md)
 </dt> </dl>
 
  

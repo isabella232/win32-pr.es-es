@@ -4,12 +4,12 @@ ms.assetid: 9a29525d-714a-431e-bb6f-4705d658537b
 title: Ink-Collection complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64966e2d088e9145fa4a0c0b29a7f7cc787b8435a3e4a609e75eae27b4e25524
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc060adf172938612e8f16f9a694e4ee3e1a7b64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262404"
 ---
 # <a name="ink-collection-plug-ins"></a>Ink-Collection complementos
 
@@ -31,7 +31,7 @@ Para obtener un ejemplo de este tipo de aplicación, consulte el ejemplo de cole
 
 ## <a name="ink-collection-and-recognizers"></a>Ink Collection y Recognizers
 
-Ni el análisis de lápiz ni el reconocimiento de escritura a mano son una función del [**objeto RealTimeStylus.**](realtimestylus-class.md) A medida que el complemento de recopilador de lápiz recopila la entrada de lápiz o cuando desea reconocerla, puede copiar la entrada de lápiz en un objeto [RecognizerContext](/previous-versions/ms552546(v=vs.100)) o [Divider.](/previous-versions/ms583616(v=vs.100)) Para obtener más información sobre el reconocimiento y el análisis de lápiz, vea [Acerca del reconocimiento de escritura a mano](about-handwriting-recognition.md) o El objeto [divisor](the-divider-object.md).
+Ni el análisis de lápiz ni el reconocimiento de escritura a mano son una función del [**objeto RealTimeStylus.**](realtimestylus-class.md) A medida que el complemento del recopilador de lápiz recopila la entrada de lápiz, o bien cuando quiera reconocer la entrada de lápiz, puede copiarla en un objeto [RecognizerContext](/previous-versions/ms552546(v=vs.100)) o [Divider.](/previous-versions/ms583616(v=vs.100)) Para obtener más información sobre el reconocimiento y el análisis de lápiz, vea [Acerca del reconocimiento de escritura a mano](about-handwriting-recognition.md) o El objeto [divisor](the-divider-object.md).
 
 ## <a name="static-rendering"></a>Representación estática
 

@@ -53,19 +53,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8df8461aad42bfa1e1107a18f99f5a33c85967d52fe1eea9c22e924604be20ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fca29f0b279994dc0b844127fd1925850094da8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119820965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261823"
 ---
 # <a name="cim_nonvolatilestorage-class"></a>Cim \_ NonVolatileStorage (clase)
 
 La **clase CIM \_ NonVolatileStorage** representa las funcionalidades y la administración del almacenamiento no volátil. La memoria no volátil incluye de forma nativa almacenamiento flash y ROM. Además, la memoria no volátil se puede basar en el almacenamiento volátil, si la memoria volátil está basada en una batería. Por ejemplo, este escenario se describiría mediante una instancia de la relación [**\_ AssociatedBattery**](cim-associatedbattery.md) de CIM que hace referencia al almacenamiento no volátil como **dependiente** y la  batería como **antecedente;** y una instancia de la relación [**\_ Cim BasedOn**](cim-basedon.md) que hace referencia al almacenamiento no volátil como el almacenamiento dependiente y el almacenamiento volátil como **antecedente.**
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -119,7 +119,7 @@ class CIM_NonVolatileStorage : CIM_Memory
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ NonVolatileStorage** tiene estos tipos de miembros:
 
@@ -134,8 +134,8 @@ La **clase CIM \_ NonVolatileStorage** tiene estos métodos.
 
 | Método                                                                        | Descripción                                                                                                                              |
 |:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-nonvolatilestorage.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa.<br/>                                                               |
-| [**SetPowerState**](setpowerstate-method-in-class-cim-nonvolatilestorage.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. Wmi no implementa.<br/> |
+| [**Reset**](reset-method-in-class-cim-nonvolatilestorage.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                               |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-nonvolatilestorage.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. Wmi no implementa .<br/> |
 
 
 
@@ -428,7 +428,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si el tamaño del bloque de variables es , se debe especificar el tamaño máximo del bloque, en bytes. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para extensiones agregadas, memoria o discos lógicos), escriba 1 (uno).
+Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si el tamaño del bloque de variables es variable, se debe especificar el tamaño máximo del bloque, en bytes. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para extensiones agregadas, memoria o discos lógicos), escriba 1 (uno).
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
@@ -828,7 +828,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -841,12 +841,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dispositivo de memoria DMTF \| \| 002.12", "MIF. Matriz de memoria física DMTF \| \| 001.8")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.12", "MIF. Matriz de memoria física DMTF \| \| 001.8")
 </dt> </dl>
 
 Si **es TRUE,** se puede corregir el error más reciente. Si la **propiedad ErrorInfo** es igual a 3 ("Ok"), esta propiedad no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
 
 </dd> <dt>
 
@@ -859,12 +859,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -895,12 +895,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Dirección u otra información de identificación para dar un nombre único al dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -913,14 +913,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Array Mapped Addresses \| 001.4", "MIF. DMTF \| Memory Device Mapped Addresses \| 001.5"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Direcciones asignadas de matriz de memoria DMTF \| \| 001.4", "MIF. DMTF \| Memory Device Mapped Addresses \| 001.5"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
 Dirección final, a la que hace referencia una aplicación o sistema operativo y que asigna un controlador de memoria, para el objeto de memoria. La dirección final se especifica en kilobytes.
 
-Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -933,12 +933,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dispositivo de memoria DMTF \| \| 002.15", "MIF. Matriz de memoria física DMTF \| \| 001.10")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.15", "MIF. Matriz de memoria física DMTF \| \| 001.10")
 </dt> </dl>
 
 Enumeración que indica la operación de acceso a memoria que produjo el último error. La propiedad **ErrorInfo** describe el tipo de error. Si la **propiedad ErrorInfo** es igual a 3 ("Ok"), esta propiedad no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
 
 <dt>
 
@@ -958,7 +958,7 @@ Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
 
 <span id="Read"></span><span id="read"></span><span id="READ"></span>
 
-**Read** (3)
+**Lectura** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -988,14 +988,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dispositivo de memoria DMTF \| \| 002.19", "MIF. Dispositivo de memoria DMTF \| \| 002.20", "MIF. Matriz de memoria física DMTF \| \| 001.14")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.19", "MIF. DMTF \| Memory Device \| 002.20", "MIF. Matriz de memoria física DMTF \| \| 001.14")
 </dt> </dl>
 
 Dirección del último error de memoria. La propiedad **ErrorInfo** describe el tipo de error. Si la **propiedad ErrorInfo** es igual a 3 ("Ok"), esta propiedad no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -1010,7 +1010,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** ahora se borra el error notificado en la propiedad **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1023,12 +1023,12 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dispositivo de memoria DMTF \| \| 002.17", "MIF. Matriz de memoria física DMTF \| \| 001.12"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.17", "MIF. Matriz de memoria física DMTF \| \| 001.12"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Datos capturados durante el último acceso erróneo a la memoria. Los datos ocupan los primeros *n octetos* de la matriz que son necesarios para contener el número de bits especificado por la **propiedad ErrorTransferSize.** Si **ErrorTransferSize** es 0, esta propiedad no tiene ningún significado.
+Datos capturados durante el último acceso erróneo a la memoria. Los datos ocupan los primeros *n* octetos de la matriz que son necesarios para contener el número de bits especificado por la **propiedad ErrorTransferSize.** Si **ErrorTransferSize** es 0, esta propiedad no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
 
 </dd> <dt>
 
@@ -1043,7 +1043,7 @@ Tipo de acceso: solo lectura
 
 Ordenación de los datos almacenados en **la propiedad ErrorData.** Si **ErrorTransferSize** es 0, esta propiedad no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
 
 <dt>
 
@@ -1081,7 +1081,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona información sobre el error registrado en la **propiedad LastErrorCode** y las acciones correctivas que se deben realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1094,10 +1094,10 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dispositivo de memoria DMTF \| \| 002.12", "MIF. Matriz de memoria física DMTF \| \| 001.8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Memory**](cim-memory.md).**OtherErrorDescription**")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.12", "MIF. DMTF \| Physical Memory Array \| 001.8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Memory**](cim-memory.md).**OtherErrorDescription**")
 </dt> </dl>
 
-Tipo de error que se produjo más recientemente. Los valores del 12 al 14 no están definidos en el esquema CIM porque DMI combina la semántica del tipo de error y si se puede corregir. Si se puede corregir un error, se indica en la **propiedad CorrectableError.** Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
+Tipo de error que se produjo más recientemente. Los valores del 12 al 14 no están definidos en el esquema CIM porque DMI combina la semántica del tipo de error y si se puede corregir. Si se puede corregir un error, se indica en la **propiedad CorrectableError.** Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
 
 <dt>
 
@@ -1141,7 +1141,7 @@ Aceptar.
 
 </dt> <dd>
 
-Lecturas no leída.
+Lectura no leída.
 
 </dd> <dt>
 
@@ -1169,7 +1169,7 @@ Error de un solo bit.
 
 <span id="Double-Bit_Error"></span><span id="double-bit_error"></span><span id="DOUBLE-BIT_ERROR"></span>
 
-<span id="Double-Bit_Error"></span><span id="double-bit_error"></span><span id="DOUBLE-BIT_ERROR"></span>**Error de doble bit** (7)
+<span id="Double-Bit_Error"></span><span id="double-bit_error"></span><span id="DOUBLE-BIT_ERROR"></span>**Error de doble bits** (7)
 
 
 </dt> <dd>
@@ -1284,14 +1284,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.21", "MIF. Matriz de memoria física DMTF \| \| 001.15"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dispositivo de memoria DMTF \| \| 002.21", "MIF. Matriz de memoria física DMTF \| \| 001.15"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
 Intervalo, en bytes, en el que se puede resolver el último error. Por ejemplo, si las direcciones de error se resuelven en el bit 11 (es decir, en una página típica), los errores se pueden resolver en límites de 4 KB y esta propiedad se establece en 4000. Si la **propiedad ErrorInfo** es igual a 3 ("Ok"), esta propiedad no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -1306,7 +1306,7 @@ Tipo de acceso: solo lectura
 
 Hora a la que se produjo el último error de memoria. La propiedad **ErrorInfo** describe el tipo de error. Si la **propiedad ErrorInfo** es igual a 3 ("Ok"), esta propiedad no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
 
 </dd> <dt>
 
@@ -1319,12 +1319,12 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.16", "MIF. Matriz de memoria física DMTF \| \| 001.11"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dispositivo de memoria DMTF \| \| 002.16", "MIF. Matriz de memoria física DMTF \| \| 001.11"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
 Tamaño de la transferencia de datos, en bits, que produjo el último error. Un valor de 0 (cero) indica que no hay ningún error. Si la **propiedad ErrorInfo** es igual a 3 ("Ok"), esta propiedad debe establecerse en 0 (cero).
 
-Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
 
 </dd> <dt>
 
@@ -1370,7 +1370,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1383,7 +1383,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1404,11 +1404,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
 </dt> </dl>
 
-Número total de bloques consecutivos, cada bloque es el tamaño del valor contenido en la **propiedad BlockSize,** que constituye la extensión de almacenamiento. El tamaño total de la extensión de almacenamiento se puede calcular multiplicando el valor de la propiedad **BlockSize** por el valor de esta propiedad. Si el valor de **BlockSize** es 1 (uno), esta propiedad es el tamaño total de la extensión de almacenamiento.
+Número total de bloques consecutivos, cada bloque es el tamaño del valor contenido en la **propiedad BlockSize,** que forma la extensión de almacenamiento. El tamaño total de la extensión de almacenamiento se puede calcular multiplicando el valor de la **propiedad BlockSize** por el valor de esta propiedad. Si el valor de **BlockSize** es 1 (uno), esta propiedad es el tamaño total de la extensión de almacenamiento.
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -1421,12 +1421,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Memoria CIM \_**](cim-memory.md).**ErrorInfo**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Memory**](cim-memory.md).**ErrorInfo**")
 </dt> </dl>
 
 Cadena de forma libre que proporciona información si la **propiedad ErrorType** está establecida en 1 ("Other"). Si no se establece en 1, esta cadena no tiene ningún significado.
 
-Esta propiedad se hereda de la [**memoria \_ CIM**](cim-memory.md).
+Esta propiedad se hereda de la [**memoria CIM \_**](cim-memory.md).
 
 </dd> <dt>
 
@@ -1442,7 +1442,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Windows Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Windows Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1513,7 +1513,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1552,7 +1552,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.** Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.** Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1641,7 +1641,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -1655,7 +1655,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1711,7 +1711,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1761,12 +1761,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1794,16 +1794,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM NonVolatileStorage** se deriva de [**la memoria \_ CIM**](cim-memory.md).
 
@@ -1825,7 +1825,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

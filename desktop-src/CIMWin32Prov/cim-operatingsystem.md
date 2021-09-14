@@ -42,15 +42,15 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: fbdec7fce68231b59d1b2be3cea1c265e9daddea
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122887111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261799"
 ---
 # <a name="cim_operatingsystem-class"></a>Cim \_ OperatingSystem (clase)
 
-La **clase \_ CIM OperatingSystem** representa un sistema operativo de equipo, que se constituye en software y firmware que hacen que el hardware de un sistema informático sea utilizable.
+La **clase \_ CIM OperatingSystem** representa un sistema operativo de equipo, que está integrado por software y firmware que hacen que se pueda usar el hardware de un sistema informático.
 
 > [!IMPORTANT]
 > Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
@@ -95,7 +95,7 @@ class CIM_OperatingSystem : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM OperatingSystem** tiene estos tipos de miembros:
 
@@ -110,8 +110,8 @@ La **clase \_ CIM OperatingSystem** tiene estos métodos.
 
 | Método                                                           | Descripción                                                                                                                            |
 |:-----------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| [**Reiniciar**](reboot-method-in-class-cim-operatingsystem.md)     | Método de clase que apaga el sistema del equipo y, a continuación, lo reinicia. Wmi no implementa.<br/>                                 |
-| [**Apagado**](shutdown-method-in-class-cim-operatingsystem.md) | Método de clase que descarga programas y archivos DLL hasta el punto en que es seguro apagar el equipo. Wmi no implementa.<br/> |
+| [**Reiniciar**](reboot-method-in-class-cim-operatingsystem.md)     | Método de clase que apaga el sistema del equipo y, a continuación, lo reinicia. Wmi no implementa .<br/>                                 |
+| [**Apagado**](shutdown-method-in-class-cim-operatingsystem.md) | Método de clase que descarga programas y archivos DLL hasta el punto en que es seguro apagar el equipo. Wmi no implementa .<br/> |
 
 
 
@@ -166,10 +166,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**clave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Ámbito del nombre de la clase de creación del sistema de equipo.
+Ámbito del nombre de clase de creación del sistema de equipo.
 
 </dd> <dt>
 
@@ -367,7 +367,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kil
 
 Número máximo de kilobytes de memoria que se pueden asignar a un proceso. Para los sistemas operativos sin memoria virtual, este valor suele ser igual a la cantidad total de memoria física, menos la memoria usada por el BIOS y el sistema operativo. Para algunos sistemas operativos, este valor puede ser infinito, en cuyo caso se debe especificar 0. En otros casos, este valor puede ser una constante, por ejemplo, 2 GB o 4 GB.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -380,7 +380,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
 Clave de una instancia de sistema operativo dentro de un sistema informático.
@@ -514,7 +514,7 @@ Att UNIX
 
 </dt> <dd>
 
-Abrir máquinas virtuales
+Apertura de máquinas virtuales
 
 </dd> <dt>
 
@@ -552,7 +552,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -771,7 +771,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -977,7 +977,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ OperatingSystem**.**OSType**")
 </dt> </dl>
 
-Describe el fabricante y el tipo de sistema operativo cuando la **propiedad OSType** se establece en 1 ("Other"). El formato de la cadena insertada en **OtherTypeDescription** debe ser similar a las cadenas **Values** definidas para **OSType**. Esta propiedad debe establecerse en NULL cuando **OSType** es un valor distinto de 1 (uno).
+Describe el fabricante y el tipo de sistema operativo cuando la **propiedad OSType** se establece en 1 ("Other"). El formato de la cadena insertada **en OtherTypeDescription** debe ser similar a las cadenas **Values** definidas para **OSType**. Esta propiedad debe establecerse en NULL cuando **OSType** es un valor distinto de 1 (uno).
 
 </dd> <dt>
 
@@ -1153,7 +1153,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Cantidad total de memoria física, en kilobytes, disponible para el sistema operativo. Este valor no indica necesariamente la verdadera cantidad de memoria física, sino lo que se notifica al sistema operativo como disponible para él.
+Cantidad total de memoria física, en kilobytes, disponible para el sistema operativo. Este valor no indica necesariamente la cantidad verdadera de memoria física, sino lo que se notifica al sistema operativo como disponible para él.
 
 Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
@@ -1180,7 +1180,7 @@ La versión de la operación debe tener uno de los formatos siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM OperatingSystem** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
@@ -1192,7 +1192,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

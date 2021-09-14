@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b46d9c6fd8974511698bcb687c580e68be3757ee
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372470"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260743"
 ---
 # <a name="system-entries-for-compressors-decompressors-and-renderers"></a>Entradas del sistema para descompresión, descompresión y representadores
 

@@ -4,12 +4,12 @@ ms.assetid: 9ba47bdc-90c8-444a-ba8b-71c723b54556
 title: Tabla MoveFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49d90afe8a5fb950f2e6fdb96ba0f8af4f8969226a5dc219bc9cd0598481beb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2340626e745627c3c6146998c851a076d21ab81a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118945100"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261092"
 ---
 # <a name="movefile-table"></a>Tabla MoveFile
 
@@ -61,7 +61,7 @@ Esta columna contiene el nombre localizable de los archivos de origen que se van
 <span id="DestName"></span><span id="destname"></span><span id="DESTNAME"></span>DestName
 </dt> <dd>
 
-Esta columna contiene el nombre localizable que se va a dar al archivo original después de moverlo o copiarlo. Si este campo está en blanco, el archivo de destino tiene el mismo nombre que el archivo de origen.
+Esta columna contiene el nombre localizable que se va a proporcionar al archivo original después de moverlo o copiarlo. Si este campo está en blanco, el archivo de destino tiene el mismo nombre que el archivo de origen.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Nombre de una propiedad cuyo valor se resuelve en la ruta de acceso completa al 
 <span id="Options"></span><span id="options"></span><span id="OPTIONS"></span>Opciones
 </dt> <dd>
 
-Valor entero que especifica el modo operativo.
+Valor entero que especifica el modo de funcionamiento.
 
 
 
@@ -97,7 +97,7 @@ Valor entero que especifica el modo operativo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se especifica un carácter comodín " " en la columna SourceName de la tabla MoveFile y se especifica un nombre de archivo de destino en la columna DestName, todos los archivos movidos o copiados conservan los nombres de los \* orígenes.
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: a954dbefec9728d2d6f595144ba3991ab4f7b3a1ded77fdf7e3ca5407be70d23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25bb24fd2b4c6b8d3d7f8cc08c23a42257399a14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117669717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262308"
 ---
 # <a name="itemgetitemsfromui-method"></a>Método Item.GetItemsFromUI
 
@@ -82,11 +82,11 @@ Tipo: **ICollection**
 
 Este método devuelve una colección de [**objetos Item**](-wia-item.md) que representan los elementos seleccionados por el usuario. Si no se selecciona ningún elemento, la colección está vacía.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para las aplicaciones Visual Basic Microsoft, agregue una referencia a "Windows biblioteca de tipos de adquisición de imágenes 1.01".
 
-Este método solo se aplica a dispositivos (elementos raíz). El método devuelve una colección de objetos [**Item**](-wia-item.md) que representan las imágenes o clips de audio seleccionados por el usuario.
+Este método solo se aplica a dispositivos (elementos raíz). El método devuelve una colección de [**objetos Item**](-wia-item.md) que representan las imágenes o clips de audio seleccionados por el usuario.
 
 Si el usuario no selecciona ningún elemento, el método devuelve una colección vacía.
 
@@ -123,7 +123,7 @@ Next
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

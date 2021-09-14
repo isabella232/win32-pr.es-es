@@ -1,5 +1,5 @@
 ---
-description: Recupera una matriz de punteros a listas de identificadores de elemento (PIDL) para todos los objetos seleccionados. Lo usa shshellfolderview \_ message.
+description: Recupera una matriz de punteros a listas de identificadores de elemento (PIDL) para todos los objetos seleccionados. Usado por el mensaje \_ SHShellFolderView.
 title: SFVM_GETSELECTEDOBJECTS mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7e892755b3c9bec0d955ddc786b818eac8d04e865acb710d1d5064c7f4102e77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 056a9bd6bea78ef5093f6654b9935eb90e3759ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117677232"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262511"
 ---
 # <a name="sfvm_getselectedobjects-message"></a>Mensaje \_ DE SFVM GETSELECTEDOBJECTS
 
-Recupera una matriz de punteros a listas de identificadores de elemento (PIDL) para todos los objetos seleccionados. Usado por [**el mensaje SHShellFolderView \_**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
+Recupera una matriz de punteros a listas de identificadores de elemento (PIDL) para todos los objetos seleccionados. Utilizado por [**el mensaje SHShellFolderView \_**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
 
 
 ```C++
@@ -46,9 +46,9 @@ SFVM_GETSELECTEDOBJECTS
 
 Devuelve el número de elementos de la matriz.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando termine, debe llamar a [**ILFree en**](/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfree) cada miembro de la matriz para liberar la memoria.
+Cuando termine, debe llamar a [**ILFree**](/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfree) en cada miembro de la matriz para liberar la memoria.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 89e9dd6850b93718c218b3d3f465b8f549a9a614b5e9f898a622b03ee2cfc340
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b37b2f5f3fe9cfce78e16530df8b94e4333e9a33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261695"
 ---
 # <a name="cim_realizes-class"></a>Cim \_ Realizes (clase)
 
 La **clase CIM \_ Realizes** representa la asociación que define la asignación entre un dispositivo lógico y el componente físico que implementa el dispositivo.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ class CIM_Realizes : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ Realizes** tiene estos tipos de miembros:
 
@@ -89,9 +89,9 @@ Un [**\_ dispositivo lógico CIM**](cim-logicaldevice.md) que describe el dispos
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase CIM \_ Realizes** se deriva de la [**dependencia \_ CIM**](cim-dependency.md).
+La **clase CIM \_ Realizes** se deriva de la [**dependencia CIM \_**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

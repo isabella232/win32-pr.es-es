@@ -4,12 +4,12 @@ description: Referencia de control de botón
 ms.assetid: fab77471-ca1b-480a-b956-a872bf8b129a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: accef496a0cccd28cb5ff2dd7d02921bc1a32e355d5a1e3550dc4fe58eab3d76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfd01c290cfa2b052c52af7a025150488ee4bf5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117833575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261607"
 ---
 # <a name="button-control-reference"></a>Referencia de control de botón
 

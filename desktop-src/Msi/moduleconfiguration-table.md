@@ -4,12 +4,12 @@ ms.assetid: 3b77cc23-c104-4adc-868c-3aa2b5794bc7
 title: Tabla ModuleConfiguration
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c499e313633d1668db81c91654800d1d5824192839329316f55040fd3bc7bad2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa187c10b5d3376a9bec78eb897b4982445ff01f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119963065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261167"
 ---
 # <a name="moduleconfiguration-table"></a>Tabla ModuleConfiguration
 
@@ -84,7 +84,7 @@ Esta columna especifica un contexto semántico para los datos solicitados. El ti
 <span id="DefaultValue"></span><span id="defaultvalue"></span><span id="DEFAULTVALUE"></span>Defaultvalue
 </dt> <dd>
 
-Esta columna especifica un valor predeterminado para el elemento de este registro si la herramienta de combinación rechaza proporcionar un valor. Este valor debe tener el formato, el tipo y el contexto del elemento. Si se trata de un elemento de formato "Key", la clave externa debe ser una clave válida en las tablas del módulo. Null puede ser un valor válido para esta columna en función del elemento. Para los elementos de formato "Clave", este valor está en formato [especial cmsm](cmsm-special-format.md). Para todos los demás tipos, el valor se trata literalmente.
+Esta columna especifica un valor predeterminado para el elemento de este registro si la herramienta de combinación rechaza proporcionar un valor. Este valor debe tener el formato, el tipo y el contexto del elemento. Si se trata de un elemento de formato "Key", la clave externa debe ser una clave válida en las tablas del módulo. Null puede ser un valor válido para esta columna en función del elemento. Para los elementos de formato "Clave", este valor está en formato [especial de CMSM.](cmsm-special-format.md) Para todos los demás tipos, el valor se trata literalmente.
 
 Los autores de módulos deben asegurarse de que el módulo sea válido en su estado predeterminado. Esto garantiza que las versiones de Mergemod.dll anteriores a la versión 2.0 puedan seguir utilizando el módulo en su estado predeterminado.
 
@@ -136,7 +136,7 @@ Esta columna proporciona una palabra clave en el archivo de ayuda o espacio de n
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los módulos de combinación configurables usan [la tabla ModuleConfiguration.](configurable-merge-modules.md) Mergemod.dll 2.0 o posterior es necesario para crear un módulo de combinación configurable.
 

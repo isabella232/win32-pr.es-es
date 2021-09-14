@@ -1,5 +1,5 @@
 ---
-description: Se llama al método OnWaitStart cuando el filtro comienza a esperar el tiempo de presentación de un ejemplo.
+description: Se llama al método OnWaitStart cuando el filtro comienza a esperar el tiempo de presentación de una muestra.
 ms.assetid: 598cd676-3afe-4ec9-ae38-83971412e6a7
 title: Método CBaseRenderer.OnWaitStart (Renbase.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eaad14d0eec765a0ad12693c0a1eee67386bc9bb26344ee52c29224d129edf5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2f88f11e370c6d1962ae6076f4c8f5eecc31407
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117822652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261412"
 ---
 # <a name="cbaserendereronwaitstart-method"></a>Método CBaseRenderer.OnWaitStart
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md) llama a este método cuando comienza a esperar el tiempo de presentación de un ejemplo. Este método no hace nada en la clase base, pero la clase derivada puede invalidarla.
 
@@ -61,7 +61,7 @@ Si va a implementar el control de calidad, puede invalidar este método junto co
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

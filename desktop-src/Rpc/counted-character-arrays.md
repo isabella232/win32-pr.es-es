@@ -4,12 +4,12 @@ description: El atributo \ size is\ indica el límite superior de la matriz, mie
 ms.assetid: bed10259-3034-4be8-91f5-5201c2e19c6b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea8abb7a391c617cadae5af396c4b4216dc9d14abf0f6d31ead3a6e075c7357b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 360652436a73b445aa2dbb013e0e05145154e20e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118931134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259852"
 ---
 # <a name="counted-character-arrays"></a>Matrices de caracteres con recuento
 

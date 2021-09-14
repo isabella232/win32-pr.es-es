@@ -4,12 +4,12 @@ ms.assetid: 81688d31-e560-4dd0-8d84-efb50206c76e
 title: ServiceInstall Table
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3850b957df4dd0af662354c14f82717e4b86ad597f151c6a45bb8dc1bebea5af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b502583802a26c10bfd9572375149720c7c597f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260900"
 ---
 # <a name="serviceinstall-table"></a>ServiceInstall Table
 
@@ -111,7 +111,7 @@ Esta columna es un conjunto de marcas de bits que especifican cuándo iniciar el
 
  
 
-El Windows no puede usar las opciones INICIO DE ARRANQUE DE SERVICIO \_ y INICIO DEL SISTEMA DE \_ \_ \_ SERVICIO.
+El Windows no puede usar las opciones INICIO \_ DE ARRANQUE DEL SERVICIO y INICIO DEL SISTEMA DE \_ \_ \_ SERVICIO.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ El Windows no puede usar las opciones INICIO DE ARRANQUE DE SERVICIO \_ y INICIO
 
 Esta columna especifica la acción realizada por el programa de inicio si el servicio no se puede iniciar durante el inicio. Estos valores afectan a los eventos ServiceControl StartService para los servicios instalados. En esta columna se debe especificar una de las siguientes marcas de control de errores.
 
-La adición de la constante **msidbServiceInstallErrorControlVital** (valor = 0x08000) a las marcas de la tabla siguiente especifica que se debe producir un error en la instalación general si el servicio no se puede instalar en el sistema.
+Al agregar la **constante msidbServiceInstallErrorControlVital** (valor = 0x08000) a las marcas de la tabla siguiente se especifica que se debe producir un error en la instalación general si el servicio no se puede instalar en el sistema.
 
 
 
@@ -157,7 +157,7 @@ Debe antecedido los nombres de grupo con + para que se puedan distinguir de un n
 <span id="StartName"></span><span id="startname"></span><span id="STARTNAME"></span>Startname
 </dt> <dd>
 
-El servicio se inicia sesión como el nombre especificado por la cadena de esta columna. Si el tipo de servicio es SERVICE \_ WIN32 OWN PROCESS, use un nombre de cuenta con el \_ \_ formato: DomainName \\ UserName. Si la cuenta pertenece al dominio integrado, se permite especificar . \\ nombre de usuario. La cuenta LocalSystem debe usarse si el tipo de servicio es SERVICE \_ WIN32 \_ SHARE PROCESS o SERVICE INTERACTIVE \_ \_ \_ PROCESS. La [**función CreateService**](/windows/win32/api/winsvc/nf-winsvc-createservicea) usa la cuenta LocalSystem si StartName se especifica como null y, por tanto, la mayoría de los servicios dejan esta columna en blanco.
+El servicio se inicia sesión como el nombre especificado por la cadena de esta columna. Si el tipo de servicio es SERVICE \_ WIN32 OWN PROCESS, use un \_ nombre de cuenta con el \_ formato: NombreDeServidor \\ NombreDe DomainName. Si la cuenta pertenece al dominio integrado, se permite especificar . \\ Nombre de usuario. La cuenta LocalSystem debe usarse si el tipo de servicio es SERVICE \_ WIN32 \_ SHARE PROCESS o SERVICE INTERACTIVE \_ \_ \_ PROCESS. La [**función CreateService**](/windows/win32/api/winsvc/nf-winsvc-createservicea) usa la cuenta LocalSystem si StartName se especifica como null y, por tanto, la mayoría de los servicios dejan esta columna en blanco.
 
 </dd> <dt>
 
@@ -193,7 +193,7 @@ Esta columna contiene una descripción localizable para el servicio que se está
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [acción InstallServices](installservices-action.md) de [*las tablas de secuencia*](s-gly.md) procesa la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 

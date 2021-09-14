@@ -1,5 +1,5 @@
 ---
-description: El método Encapsulate encapsula la unidad de datos del protocolo de aplicación de comandos (APDU) dada en otro comando APDU para su transmisión a una tarjeta inteligente.
+description: El método Encapsulate encapsula la unidad de datos del protocolo de aplicación de comandos (APDU) dada en otro comando APDU para la transmisión a una tarjeta inteligente.
 ms.assetid: dfffad09-046b-46cb-b6fd-286a4bbf1066
 title: Método ISCardCmd::Encapsulate (Scarddat.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: f531d0d5f55bea1fe63875a9feb508eb8b4c0e830705bfad2603cc52664c6f44
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd671a11edd9977695eeaf858e38f962b3dd0962
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259695"
 ---
 # <a name="iscardcmdencapsulate-method"></a>Método ISCardCmd::Encapsulate
 
 \[El **método Encapsulate** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método Encapsulate** encapsula la unidad de datos del [*protocolo*](../secgloss/a-gly.md) de aplicación de comandos (APDU) dada en otro comando APDU para la transmisión a una [*tarjeta inteligente*](../secgloss/s-gly.md).
+El **método Encapsulate** encapsula la unidad de datos del [*protocolo*](../secgloss/a-gly.md) de aplicación de comandos (APDU) dada en otro comando APDU para la transmisión a una [*tarjeta inteligente.*](../secgloss/s-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,14 +78,14 @@ El método devuelve uno de los siguientes valores posibles.
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operación completada correctamente.<br/>    |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parámetro no válido.<br/>                   |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido *en pApdu*.<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido en *pApdu.*<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>                       |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para compilar un comando APDU, llame [**a BuildCmd**](iscardcmd-buildcmd.md).
 
@@ -119,18 +119,18 @@ if (FAILED(hr))
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardCmd se define como \_ D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

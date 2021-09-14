@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 8a438327a6c1e160ea989434666ae535660d9b5ef26fc9289a3afa9d80d3f63e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 323e6334c90358dd8725f3f9092142275cfe491a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120074365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260359"
 ---
 # <a name="setccinstptr-function"></a>Función SetCCInstPtr
 
@@ -50,7 +50,7 @@ Puntero a los datos de instancia agregados a la captura.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use esta función para almacenar un puntero a un bloque asignado con la **función CCHeapAlloc.** Cada analizador puede establecer una única instancia de datos en una captura.
 
@@ -58,7 +58,7 @@ Use esta función para almacenar un puntero a un bloque asignado con la **funci�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -68,7 +68,7 @@ Use esta función para almacenar un puntero a un bloque asignado con la **funci�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

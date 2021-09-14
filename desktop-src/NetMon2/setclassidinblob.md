@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 70e68d3a0d9d105b765ee6cd0ae1a6422f48e3dd6776cf144b302c9e1c5ff951
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b617c39767038bac51d749a640ebcf2301e0c63f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260351"
 ---
 # <a name="setclassidinblob-function"></a>Función SetClassIDInBlob
 
@@ -88,7 +88,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

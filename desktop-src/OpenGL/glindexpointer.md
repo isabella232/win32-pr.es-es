@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e27502420121f7373af5425e8aadffe3641ddec539a4521fe6c6bf55e6d807d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cca6858d7d1e3f13e4155bd40307a53b22e80a56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260108"
 ---
 # <a name="glindexpointer-function"></a>Función glIndexPointer
 
@@ -80,7 +80,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glIndexPointer** especifica la ubicación y los datos de una matriz de índices de color que se usarán al representar. El  parámetro type especifica el tipo de datos de cada índice de color y *stride* determina el desplazamiento de bytes de un índice de color al siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes. Para obtener más información, [**vea glInterleavedArrays**](glinterleavedarrays.md).
 
@@ -120,7 +120,7 @@ Las funciones siguientes recuperan información relacionada **con glIndexPointer
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

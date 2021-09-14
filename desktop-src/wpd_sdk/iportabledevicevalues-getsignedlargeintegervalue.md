@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 516d7c08b68e4480b3240ea9335793589114070859cf28d5cf91e645b616a2db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5fc41c263ffdef540300a08f88665a6489fa9d41
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262079"
 ---
 # <a name="iportabledevicevaluesgetsignedlargeintegervalue-method"></a>IPortableDeviceValues::GetSignedLargeIntegerValue (método)
 
-El **método GetSignedLargeIntegerValue** recupera un valor **LONGLONG** (tipo VT \_ I8) especificado por una clave.
+El **método GetSignedLargeIntegerValue** recupera un **valor LONGLONG** (tipo VT \_ I8) especificado por una clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Clave **REFPROPERTYKEY** que especifica el elemento que se recuperará.
 *pValue* \[ out\]
 </dt> <dd>
 
-Puntero al valor **de ULONG** recuperado.
+Puntero al valor de **ULONG** recuperado.
 
 </dd> </dl>
 
@@ -82,11 +82,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetSignedLargeIntegerValue**](iportabledevicevalues-setsignedlargeintegervalue.md)

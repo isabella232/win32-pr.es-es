@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43b8724526142236b70faade68bf7d3ca358eb3f3810cae73f58adde17f25a0d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e928a95a71d9636f88bc3c79ac36168072527040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119591575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262220"
 ---
 # <a name="drm_license_state_category-enumeration-wmdrmsdkh"></a>DRM_LICENSE_STATE_CATEGORY enumeración (Wmdrmsdk.h)
 
 El **tipo \_ de enumeración DRM LICENSE STATE \_ \_ CATEGORY** especifica el tipo de restricción de licencia descrito por una [**estructura DRM LICENSE STATE \_ \_ \_ DATA.**](drmdrm-license-state-data.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -56,21 +56,21 @@ Especifica que no se permite la acción para la que se **recibió DRM LICENSE ST
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_UNLIM"></span><span id="wm_drm_license_state_unlim"></span>**ESTADO DE LICENCIA DRM DE WM \_ \_ \_ \_ UNLIM**
+<span id="WM_DRM_LICENSE_STATE_UNLIM"></span><span id="wm_drm_license_state_unlim"></span>**ESTADO DE LICENCIA DE DRM DE WM \_ \_ \_ \_ UNLIM**
 </dt> <dd>
 
 Especifica que la acción para la que se recibió **\_ DRM LICENSE STATE \_ \_ DATA** se permite sin restricciones.
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_COUNT"></span><span id="wm_drm_license_state_count"></span>**RECUENTO DE \_ ESTADO DE LICENCIA DE DRM \_ \_ \_ DE WM**
+<span id="WM_DRM_LICENSE_STATE_COUNT"></span><span id="wm_drm_license_state_count"></span>**NÚMERO DE \_ ESTADOS DE LICENCIA DE DRM \_ \_ DE \_ WM**
 </dt> <dd>
 
 Especifica que se permite la acción para la que se recibieron los DATOS DE ESTADO DE LICENCIA DE DRM, pero solo un número establecido de veces. **\_ \_ \_**
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_FROM"></span><span id="wm_drm_license_state_from"></span>**ESTADO DE LICENCIA DRM DE WM \_ \_ \_ \_ DESDE**
+<span id="WM_DRM_LICENSE_STATE_FROM"></span><span id="wm_drm_license_state_from"></span>**ESTADO DE LICENCIA DE DRM DE WM \_ \_ \_ \_ DESDE**
 </dt> <dd>
 
 Especifica que la acción para la que se recibió **\_ DRM LICENSE STATE \_ \_ DATA** se permite después de una fecha establecida.
@@ -84,7 +84,7 @@ Especifica que la acción para la que se recibió **\_ DRM LICENSE STATE \_ \_ D
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_FROM_UNTIL"></span><span id="wm_drm_license_state_from_until"></span>**ESTADO DE LICENCIA DRM DE WM \_ \_ DESDE \_ \_ \_ HASTA**
+<span id="WM_DRM_LICENSE_STATE_FROM_UNTIL"></span><span id="wm_drm_license_state_from_until"></span>**ESTADO DE LICENCIA DE DRM DE WM \_ \_ DESDE \_ \_ \_ HASTA**
 </dt> <dd>
 
 Especifica que la acción para la que se recibió **\_ DRM LICENSE STATE \_ \_ DATA** se permite entre dos fechas establecidas.
@@ -105,7 +105,7 @@ Especifica que se permite la acción para la que se recibió **DRM \_ LICENSE ST
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_COUNT_FROM_UNTIL"></span><span id="wm_drm_license_state_count_from_until"></span>**NÚMERO DE ESTADOS DE LICENCIA DE DRM DE WM \_ \_ DESDE \_ \_ \_ \_ HASTA**
+<span id="WM_DRM_LICENSE_STATE_COUNT_FROM_UNTIL"></span><span id="wm_drm_license_state_count_from_until"></span>**RECUENTO DE ESTADO DE LICENCIA DE DRM DE WM \_ \_ DESDE \_ \_ \_ \_ HASTA**
 </dt> <dd>
 
 Especifica que se permite la acción para la que se recibió **DRM \_ LICENSE STATE \_ \_ DATA,** pero solo un número establecido de veces entre dos fechas establecidas.
@@ -115,7 +115,7 @@ Especifica que se permite la acción para la que se recibió **DRM \_ LICENSE ST
 <span id="WM_DRM_LICENSE_STATE_EXPIRATION_AFTER_FIRSTUSE"></span><span id="wm_drm_license_state_expiration_after_firstuse"></span>**EXPIRACIÓN DEL ESTADO DE LA LICENCIA DRM DE WM \_ DESPUÉS DE LA PRIMERA \_ \_ \_ \_ \_ USO**
 </dt> <dd>
 
-Especifica que la acción para la que se recibió **DRM \_ LICENSE STATE \_ \_ DATA** se permite durante un período de tiempo establecido a partir del primer uso de la acción.
+Especifica que la acción para la que se recibió **DRM \_ LICENSE STATE \_ \_ DATA** se permite durante un período de tiempo establecido que comienza con el primer uso de la acción.
 
 </dd> </dl>
 
@@ -133,7 +133,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

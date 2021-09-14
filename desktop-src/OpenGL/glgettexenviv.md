@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebda58b8ea92edd379274ff6afdeadaec773713e55e4564c43ad04895c0e53a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ff222b7de0bfcd5fa50e9fa5f260e329c60c69d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144188"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260188"
 ---
 # <a name="glgettexenviv-function"></a>Función glGetTexEnviv
 
@@ -58,8 +58,8 @@ Nombre simbólico de un parámetro de entorno de textura. Se aceptan los valores
 
 | Value                                                                                                                                                                                | Significado                                                                                                                                                                                                                                                                                                                                              |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_TEXTURE_ENV_MODE"></span><span id="gl_texture_env_mode"></span><dl> <dt>**MODO \_ DE ENV DE \_ TEXTURA \_ GL**</dt> </dl>    | El *parámetro params* devuelve el modo de entorno de textura de un solo valor, una constante simbólica.<br/>                                                                                                                                                                                                                                           |
-| <span id="GL_TEXTURE_ENV_COLOR"></span><span id="gl_texture_env_color"></span><dl> <dt>**COLOR DE \_ \_ ENV DE TEXTURA \_ GL**</dt> </dl> | El *parámetro params* devuelve cuatro valores enteros o de punto flotante que son el color del entorno de textura. Los valores enteros, cuando se solicitan, se asignan linealmente a partir de la representación interna de punto flotante, de modo que 1,0 se asigna al entero que se puede representar más positivo y -1,0 se asigna al entero más negativo que se puede representar.<br/> |
+| <span id="GL_TEXTURE_ENV_MODE"></span><span id="gl_texture_env_mode"></span><dl> <dt>**MODO DE \_ ENV DE \_ TEXTURA \_ GL**</dt> </dl>    | El *parámetro params* devuelve el modo de entorno de textura de un solo valor, una constante simbólica.<br/>                                                                                                                                                                                                                                           |
+| <span id="GL_TEXTURE_ENV_COLOR"></span><span id="gl_texture_env_color"></span><dl> <dt>**COLOR DE \_ \_ ENV DE TEXTURA \_ GL**</dt> </dl> | El *parámetro params* devuelve cuatro valores enteros o de punto flotante que son el color del entorno de textura. Los valores enteros, cuando se solicitan, se asignan linealmente a partir de la representación interna de punto flotante, de modo que 1,0 se asigna al entero representable más positivo y -1,0 se asigna al entero que se puede representar más negativo.<br/> |
 
 
 
@@ -86,12 +86,12 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *target* o *pname* no era un valor aceptado.<br/>                                                                             |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *target* o *pname* no era un valor aceptado.<br/>                                                                             |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glGetTexEnv** devuelve en *parámetros* los valores seleccionados de un entorno de textura que se especificó [**con glTexEnv**](gltexenv-functions.md). El *parámetro de* destino especifica un entorno de textura. Actualmente, solo se define y se admite un entorno de textura: GL \_ TEXTURE \_ ENV.
 
@@ -113,7 +113,7 @@ Si se genera un error, no se realiza ningún cambio en el contenido de *params*.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

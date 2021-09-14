@@ -14,17 +14,17 @@ api_type:
 api_location:
 - Wiascr.dll
 ms.openlocfilehash: 69b34a97483a8a6ce231890454148c7948f63e4e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262343"
 ---
 # <a name="deviceinfo-object"></a>Objeto DeviceInfo
 
 El **objeto DeviceInfo** proporciona acceso a las propiedades de un Windows de hardware de adquisición de imágenes (WIA). También, a través de su [**método Create,**](-wia-iwiadeviceinfo-create.md) proporciona una manera de que la aplicación o el script se conecten al dispositivo y obtengan un objeto [**Item**](-wia-item.md) que represente el dispositivo. Use el [**método Devices**](-wia-iwia-devices.md) para obtener una colección de **objetos DeviceInfo.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto DeviceInfo** tiene estos tipos de miembros:
 
@@ -53,12 +53,12 @@ El **objeto DeviceInfo** tiene estas propiedades.
 
 
 
-| Propiedad | Tipo de acceso | Descripción | 
+| Propiedad. | Tipo de acceso | Descripción | 
 |----------|-------------|-------------|
 | <a href="-wia-iwiadeviceinfo-id.md"><strong>Id</strong></a><br /> | Solo lectura<br /> | Recupera el identificador del dispositivo de hardware WIA. <br /> | 
 | <a href="-wia-iwiadeviceinfo-manufacturer.md"><strong>Fabricante</strong></a><br /> | Solo lectura<br /> | Recupera el nombre del fabricante de este dispositivo de hardware.<br /> | 
 | <a href="-wia-iwiadeviceinfo-name.md"><strong>Nombre</strong></a><br /> | Solo lectura<br /> | Nombre del dispositivo de hardware WIA tal como aparece en la interfaz de usuario.<br /> | 
-| <a href="-wia-iwiadeviceinfo-port.md"><strong>Port</strong></a><br /> | Solo lectura<br /> | Recupera el puerto al que está conectado el dispositivo de hardware WIA.<br /> | 
+| <a href="-wia-iwiadeviceinfo-port.md"><strong>Puerto</strong></a><br /> | Solo lectura<br /> | Recupera el puerto al que está conectado el dispositivo de hardware WIA.<br /> | 
 | <a href="-wia-iwiadeviceinfo-type.md"><strong>Tipo</strong></a><br /> | Solo lectura<br /> | Recupera el tipo de dispositivo de hardware WIA. Los valores posibles son: <br /><ul><li>DigitalCamera</li><li>Escáner</li><li>StreamingVideo</li><li>Valor predeterminado</li></ul> | 
 | <a href="-wia-iwiadeviceinfo-uiclsid.md"><strong>UIClsid</strong></a><br /> | Solo lectura<br /> | Recupera el identificador de clase de la interfaz de usuario proporcionada por el fabricante para este dispositivo de hardware WIA. El valor es una representación de cadena de un GUID. <br /> | 
 
@@ -71,7 +71,7 @@ El **objeto DeviceInfo** tiene estas propiedades.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |

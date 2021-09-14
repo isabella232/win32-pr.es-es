@@ -1,19 +1,19 @@
 ---
 description: Los mensajes enviados mediante MsiProcessMessage son los mismos mensajes que recibe la función de devolución de llamada INSTALLUI HANDLER si se llamó \_ a MsiSetExternalUI.
 ms.assetid: ca73bd0a-6f4e-453c-9e38-14cfd602d42c
-title: Enviar mensajes al instalador Windows con MsiProcessMessage
+title: Enviar mensajes al instalador Windows mediante MsiProcessMessage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1c639e45b22c2406f446ab31072ceb02ab9b3e906f5973b1436356d96f3782
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3bcd8c8a704c1f4dd24763f7f47ff0d8898a95c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260967"
 ---
 # <a name="sending-messages-to-windows-installer-using-msiprocessmessage"></a>Envío de mensajes Windows instalador mediante MsiProcessMessage
 
-Los mensajes enviados mediante [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) son los mismos mensajes que recibe la función de devolución de llamada [**INSTALLUI \_ HANDLER**](/windows/desktop/api/Msi/nc-msi-installui_handlera) si se llamó a [**MsiSetExternalUI.**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) De lo contrario, Windows Installer controla los mensajes. Para obtener más información, vea [Analizar Windows mensajes del instalador](parsing-windows-installer-messages.md).
+Los mensajes enviados mediante [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) son los mismos mensajes que recibe la función de devolución de llamada [**INSTALLUI \_ HANDLER**](/windows/desktop/api/Msi/nc-msi-installui_handlera) si se llamó a [**MsiSetExternalUI.**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) De lo contrario, Windows Installer controla los mensajes. Para obtener más información, vea [Analizar Windows mensajes del instalador.](parsing-windows-installer-messages.md)
 
 Por ejemplo, para enviar un mensaje DE ERROR INSTALLMESSAGE con el icono MB ICONWARNING y los botones \_ \_ MB \_ ABORTRETRYCANCEL:
 
@@ -26,11 +26,11 @@ MsiProcessMessage(hInstall, INSTALLMESSAGE(INSTALLMESSAGE_ERROR|MB_ABORTRETRYIGN
 
 
 
-Donde *hInstall* es el identificador de la instalación, proporcionado a una acción personalizada o al identificador *hProduct* de [**MsiOpenProduct**](/windows/desktop/api/Msi/nf-msi-msiopenproducta) o [**MsiOpenPackage,**](/windows/desktop/api/Msi/nf-msi-msiopenpackagea)y *hRec* es el registro que contiene la información de error que se va a dar formato. Para obtener información sobre cómo se realiza el formato, [**vea MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda).
+Donde *hInstall* es el identificador de la instalación, proporcionado a una acción personalizada o al identificador *hProduct* de [**MsiOpenProduct**](/windows/desktop/api/Msi/nf-msi-msiopenproducta) o [**MsiOpenPackage,**](/windows/desktop/api/Msi/nf-msi-msiopenpackagea) *y hRec* es el registro que contiene la información de error que se va a dar formato. Para obtener información sobre cómo se realiza el formato, [**vea MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda).
 
-De forma predeterminada, si se envía un mensaje INSTALLMESSAGE ERROR o INSTALLMESSAGE FATALEXIT sin especificar el tipo de botón o los tipos de icono, se usan MB OK, no icon y \_ \_ MB \_ \_ DEFBUTTON1.
+De forma predeterminada, si se envía un mensaje INSTALLMESSAGE ERROR o INSTALLMESSAGE FATALEXIT sin especificar el tipo de botón o los tipos de icono, se usa MB OK, no icon y \_ \_ MB \_ \_ DEFBUTTON1.
 
-Windows El instalador no etiqueta el botón **ABORT** con la cadena "Abort" al mostrar un cuadro de mensajes con la especificación del botón MB ABORTRETRYIGNORE, sino que etiqueta el botón con la cadena \_ "Cancel". Todos los mensajes de error evitan usar la palabra "Abort" y, en su lugar, usan la palabra "Cancel".
+Windows El instalador no etiqueta el **botón ABORT** con la cadena "Abort" al mostrar un cuadro de mensajes con la especificación del botón MB ABORTRETRYIGNORE, sino que etiqueta el botón con la cadena \_ "Cancel". Todos los mensajes de error evitan usar la palabra "Abort" y, en su lugar, usan la palabra "Cancel".
 
 El *parámetro hRecord* de la [**función MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) depende del tipo de mensaje enviado a [**MsiProcessMessage.**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) En la lista siguiente se detallan los requisitos del registro en relación con el tipo de mensaje:
 
@@ -38,7 +38,7 @@ INSTALLMESSAGE \_ FATALEXIT
 
  
 
-INSTALLMESSAGE \_ INFO
+INFORMACIÓN DE \_ INSTALLMESSAGE
 
  
 
@@ -48,8 +48,8 @@ INSTALLMESSAGE \_ OUTOFDISKSPACE
 
 | Campo         | Descripción                                                                                                                                                                                                        |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0             | Plantilla para el formato de la cadena resultante. Consulte [**MsiFormatRecord para**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) obtener más información. Se hace referencia a los campos del registro mediante 1 para el \[ \] campo 1, \[ 2 para el campo \] 2, etc. |
-| De 1 a *n* | Todos los campos posteriores están directamente relacionados con los campos a los que hace referencia la plantilla en el campo 0.                                                                                                                    |
+| 0             | Plantilla para el formato de la cadena resultante. Consulte [**MsiFormatRecord para**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) obtener más información. Se hace referencia a los campos del registro mediante \[ 1 \] para el campo 1, \[ 2 para el campo \] 2, etc. |
+| De 1 a *n* | Todos los campos subsiguientes están directamente relacionados con los campos a los que hace referencia la plantilla en el campo 0.                                                                                                                    |
 
 
 
@@ -59,7 +59,7 @@ Si el campo 0 es NULL, la cadena recibida por el controlador de interfaz de usua
 
 Los mensajes de información de [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) se registran cuando [](command-line-options.md) [**MsiEnableLog**](/windows/desktop/api/Msi/nf-msi-msienableloga) [](logging.md) , la opción de línea de comandos "/l" o la directiva de registro especifican "I" o INSTALLLOGMODE \_ INFO.
 
-INSTALLMESSAGE \_ ERROR
+ERROR \_ DE INSTALLMESSAGE
 
  
 
@@ -76,7 +76,7 @@ Para usar un mensaje de la tabla Error.
 | Campo         | Descripción                                           |
 |---------------|-------------------------------------------------------|
 | 0             | Debe ser NULL.                                         |
-| 1             | Número de mensaje de la [tabla Error](error-table.md). |
+| 1             | Número de mensaje en la [tabla error](error-table.md). |
 | De 2 a *n* | Relacionado con el mensaje especificado en la tabla Error.  |
 
 
@@ -103,11 +103,11 @@ Error 1304. Error al escribir en el archivo: Myfile.txt. Compruebe que tiene acc
 
 Si el campo 0 no es NULL, se invalida el mensaje de la tabla de errores. En su lugar, la plantilla de campo 0 determina el formato del mensaje.
 
-El mensaje también puede especificar los botones, incluido el botón predeterminado y el icono para su uso con el mensaje, como se mencionó anteriormente. Los tipos de botón e icono se enumeran en [**INSTALLUI \_ HANDLER**](/windows/desktop/api/Msi/nc-msi-installui_handlera).
+El mensaje también puede especificar los botones, incluido el botón predeterminado, y el icono para usarlo con el mensaje como se mencionó anteriormente. Los tipos de botón e icono se enumeran en [**INSTALLUI \_ HANDLER**](/windows/desktop/api/Msi/nc-msi-installui_handlera).
 
 INSTALLMESSAGE \_ COMMONDATA
 
-Este mensaje se envía para habilitar o deshabilitar el **botón Cancelar** en un cuadro de diálogo de progreso.
+Este mensaje se envía para habilitar o deshabilitar el botón **Cancelar** en un cuadro de diálogo de progreso.
 
 
 
@@ -115,13 +115,13 @@ Este mensaje se envía para habilitar o deshabilitar el **botón Cancelar** en u
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | Sin usar.                                                                                                                                      |
 | 1     | 2 hace referencia al **botón** Cancelar.                                                                                                           |
-| 2     | Un valor de 1 indica que el **botón Cancelar** debe estar visible. Un valor de 0 indica que **el botón Cancelar** debe ser invisible.<br/> |
+| 2     | Un valor de 1 indica que el **botón Cancelar** debe estar visible. Un valor de 0 indica que el **botón Cancelar** debe ser invisible.<br/> |
 
 
 
  
 
-Por ejemplo, para deshabilitar u ocultar el **botón Cancelar,** el registro aparecería como se muestra a continuación.
+Por ejemplo, para deshabilitar u ocultar el **botón Cancelar,** el registro aparecería como sigue.
 
 
 
@@ -156,7 +156,7 @@ El registro INSTALLMESSAGE \_ ACTIONSTART determina el formato del registro Acti
 
  
 
-No haga referencia al campo 0 en el mensaje Plantilla de acción.
+No haga referencia al campo 0 en el mensaje de plantilla Acción.
 
 El registro INSTALLMESSAGE \_ ACTIONDATA tiene el formato siguiente.
 
@@ -218,9 +218,9 @@ El registro FILESINUSE es un registro de longitud variable.
 
  
 
-Por ejemplo, para enviar un mensaje FilesInUse que muestra dos archivos en uso, red.exe y blue.exe, el registro tiene cuatro campos más el campo 0. El formato del registro sería el que se muestra en la tabla siguiente. Este ejemplo requiere Windows installer versión 4.0.
+Por ejemplo, para enviar un mensaje FilesInUse que muestra dos archivos en uso, red.exe y blue.exe, el registro tiene cuatro campos más el campo 0. El formato del registro sería el que se muestra en la tabla siguiente. Este ejemplo requiere Windows Installer versión 4.0.
 
-**Windows Installer versión 3.1 y anteriores:** Los campos 2 y 4 del ejemplo siguiente deben contener los PID de los procesos que red.exe y blue.exe en uso.
+**Windows Installer versión 3.1 y anteriores:** Los campos 2 y 4 del ejemplo siguiente deben contener los PID de los procesos que contienen red.exe y blue.exe en uso.
 
 
 
