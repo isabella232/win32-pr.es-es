@@ -5,11 +5,11 @@ ms.assetid: e17ec75d-a98f-46ea-8bef-7e45e1696f43
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: aa6f84b4542b6ea87b5d05ae8d1cda2374fcac2c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371582"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245678"
 ---
 # <a name="vcr-command-set"></a>Conjunto de comandos vcr
 
@@ -23,7 +23,7 @@ Los VCR admiten el siguiente conjunto de comandos.
 | [**Capacidad**](capability.md)   | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md)   |
 | [**Cue**](cue.md)                 | [**MCI \_ CUE**](mci-cue.md)                 |
 | [**Congelar**](freeze.md)           | [**MCI \_ FREEZE**](mci-freeze.md)           |
-| [**índice**](./windows-multimedia-start-page.md)             | [**ÍNDICE \_ DE MCI**](mci-index.md)             |
+| [**Índice**](./windows-multimedia-start-page.md)             | [**ÍNDICE \_ DE MCI**](mci-index.md)             |
 | [**Información**](info.md)               | [**INFORMACIÓN \_ de MCI**](mci-info.md)               |
 | [**Lista**](list.md)               | [**LISTA \_ DE MCI**](mci-list.md)               |
 | [**Marca**](mark.md)               | [**MCI \_ MARK**](mci-mark.md)               |

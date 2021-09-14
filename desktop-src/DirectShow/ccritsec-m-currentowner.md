@@ -1,7 +1,7 @@
 ---
 description: Identificador de subproceso del subproceso propietario.
 ms.assetid: 495598db-a0c9-473b-8184-121a1939b55a
-title: Miembro CCritSec::m_currentOwner (Wxutil.h)
+title: CCritSec::m_currentOwner miembro (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 71c88055f5068a5486c1eb6e3ac739235a6b7cde2e8d6b767380160ff12503be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b6dcb8d968f1f437087a94c5b08db12d31952d92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118657218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072279"
 ---
 # <a name="ccritsecm_currentowner-member"></a>Miembro CCritSec::m \_ currentOwner
 
@@ -51,7 +51,7 @@ Esta variable miembro solo se define en la versión de depuración de la clase b
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

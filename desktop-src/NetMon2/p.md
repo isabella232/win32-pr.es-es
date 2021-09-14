@@ -5,12 +5,12 @@ ms.assetid: 321398fb-683f-4fb1-b6b7-c7826811cacd
 title: P (Monitor de red)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de258a4394ae13ca71a62d90fd9ee9218862ab7845c7300fcfe509a3a286f34
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44a95ed739acb6f4a59cf8c7a7edb760547f6469
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245246"
 ---
 # <a name="p-network-monitor"></a>P (Monitor de red)
 

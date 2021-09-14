@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 2f821d3aea8055f6c1344ed9d5107417adbaf604
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269628"
 ---
 # <a name="meta-parameters"></a>Meta parámetros
 
@@ -80,11 +80,11 @@ La configuración pequeña cambia los valores predeterminados de los siguientes 
 
 La configuración pequeña también tiene otros efectos en el motor de base de datos, entre los que se incluyen:
 
-  - Todos los recursos administrados por parámetros del sistema se asignan desde el montón según sea necesario.
+  - Todos los recursos administrados por parámetros del sistema se asignan desde el montón según sea necesario
 
   - Otros recursos internos usados por el motor de base de datos se escalan verticalmente en tamaño
 
-  - Se escalan de nuevo varias actividades de mantenimiento para evitar la actividad de subprocesos en segundo plano
+  - Varias actividades de mantenimiento se escalan de nuevo para evitar la actividad de subprocesos en segundo plano
 
 
 | Etiqueta | Value |

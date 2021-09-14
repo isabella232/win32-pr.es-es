@@ -4,18 +4,18 @@ ms.assetid: 793e23de-d959-4feb-8bf6-647a455c85ae
 title: Enumeración de descodificadores instalados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d54548971ff4f4346d32884ff7abc687b901044022ab886f7191d5700b9db98d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a20a4e8ac88fa884483ebeaf6592b8085fde807
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118977395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072427"
 ---
 # <a name="listing-installed-decoders"></a>Enumeración de descodificadores instalados
 
 Windows GDI+ proporciona la [**función GetImageDecoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoders) para que pueda determinar qué descodificadores de imagen están disponibles en el equipo. **GetImageDecoders devuelve** una matriz de [**objetos ImageCodecInfo.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) Antes de llamar **a GetImageDecoders,** debe asignar un búfer lo suficientemente grande como para recibir esa matriz. Puede llamar a [**GetImageDecodersSize para**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoderssize) determinar el tamaño del búfer necesario.
 
-En la siguiente aplicación de consola se enumeran los descodificadores de imágenes disponibles:
+En la siguiente aplicación de consola se enumeran los descodificadores de imagen disponibles:
 
 
 ```

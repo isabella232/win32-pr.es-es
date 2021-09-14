@@ -57,7 +57,7 @@
                   href: capabilities-functions.md
                 - name: Funciones de nombre de usuario
                   href: user-name-functions.md
-                - name: Device-Redirecting functions
+                - name: Device-Redirecting Functions
                   href: device-redirecting-functions.md
                 - name: Provider-Specific funciones del cuadro de diálogo
                   href: provider-specific-dialog-box-functions.md
@@ -118,7 +118,7 @@
                   href: base-service-providers.md
                 - name: Creación de un comando APDU ISO7816-4
                   href: building-an-iso7816-4-apdu-command.md
-                - name: Proveedor de servicios contenedor de proveedor
+                - name: Proveedor de servicios contenedor de proveedores
                   href: vendor-wrapper-service-provider.md
         - name: SSPI
           href: sspi.md
@@ -166,7 +166,7 @@
                           href: key-distribution.md
                         - name: Vales de sesión
                           href: session-tickets.md
-                        - name: Ticket-Granting tickets
+                        - name: Ticket-Granting Tickets
                           href: ticket-granting-tickets.md
                     - name: Subprotocolos kerberos
                       href: kerberos-subprotocols.md
@@ -175,7 +175,7 @@
                           href: authentication-service-exchange.md
                         - name: Intercambio del servicio de concesión de vales
                           href: ticket-granting-service-exchange.md
-                        - name: Cliente o servidor Exchange
+                        - name: Cliente/servidor Exchange
                           href: client-server-exchange.md
                     - name: Modelo kerberos
                       href: kerberos-components.md
@@ -242,8 +242,12 @@
                     - name: Conjuntos de cifrado en TLS/SSL (Schannel SSP)
                       href: cipher-suites-in-schannel.md
                       items:
+                        - name: Conjuntos de cifrado TLS en Windows 11
+                          href: tls-cipher-suites-in-windows-11.md
+                        - name: Conjuntos de cifrado TLS en Windows 10 v20H2 y v21H1
+                          href: tls-cipher-suites-in-windows-10-v20H2.md
                         - name: Conjuntos de cifrado TLS en Windows Server 2022
-                          href: ./tls-cipher-suites-in-windows-server-2022.md
+                          href: tls-cipher-suites-in-windows-server-2022.md
                         - name: Conjuntos de cifrado TLS en Windows 10 v1903
                           href: tls-cipher-suites-in-windows-10-v1903.md
                         - name: Conjuntos de cifrado TLS en Windows 10 v1809
@@ -272,7 +276,7 @@
                           href: prioritizing-schannel-cipher-suites.md
                     - name: Curvas elípticas en TLS (Schannel SSP)
                       items:
-                        - name: Curvas elípticas TLS en Windows 10 versiones 1607 y posteriores
+                        - name: Curvas elípticas TLS Windows 10 versiones 1607 y posteriores
                           href: tls-elliptic-curves-in-windows-10-1607-and-later.md
                         - name: 'Curvas elípticas TLS en Windows 10, versiones 1507 y 1511'
                           href: tls-elliptic-curves-in-windows-10-1507-and-1511.md
@@ -411,7 +415,7 @@
               href: receiving-connection-notifications.md
             - name: Registro para recibir notificaciones de conexión
               href: registering-to-receive-connection-notifications.md
-            - name: Invalidar el intervalo de tiempo de espera predeterminado de MPR
+            - name: Invalidar el intervalo de tiempo de espera de MPR predeterminado
               href: overriding-the-default-mpr-time-out-interval.md
         - name: Uso de SSPI
           href: using-sspi.md
@@ -471,7 +475,7 @@
                       href: encrypting-a-message.md
                     - name: Descifrar un mensaje
                       href: decrypting-a-message.md
-            - name: SSPI con Microsoft Digest de SSP
+            - name: SSPI con Microsoft Digest SSP Tasks
               href: sspi-with-microsoft-digest-ssp-tasks.md
               items:
                 - name: Obtención de Microsoft Digest de SSP
@@ -486,7 +490,7 @@
                 - name: Generación de la respuesta del desafío de resumen
                   href: generating-the-digest-challenge-response.md
                   items:
-                    - name: Búferes de entrada para la respuesta de desafío de resumen
+                    - name: Búferes de entrada para la respuesta del desafío de resumen
                       href: input-buffers-for-the-digest-challenge-response.md
                 - name: Protección de mensajes mediante Microsoft Digest
                   href: protecting-messages-using-microsoft-digest.md
@@ -1494,22 +1498,22 @@
             - name: ISCard
               href: iscard.md
               items:
-                - name: Métodos de ISCard
+                - name: Métodos iscard
                   href: iscard-methods.md
                   items:
-                    - name: AttachByHandle (método)
+                    - name: Método AttachByHandle
                       href: iscard-attachbyhandle.md
                     - name: AttachByReader (método)
                       href: iscard-attachbyreader.md
                     - name: Método Detach
                       href: iscard-detach.md
-                    - name: get_Atr (método)
+                    - name: get_Atr método
                       href: iscard-get-atr.md
                     - name: get_CardHandle (método)
                       href: iscard-get-cardhandle.md
-                    - name: get_Context (método)
+                    - name: get_Context método
                       href: iscard-get-context.md
-                    - name: get_Protocol (método)
+                    - name: get_Protocol método
                       href: iscard-get-protocol.md
                     - name: get_Status (método)
                       href: iscard-get-status.md
@@ -1524,16 +1528,16 @@
             - name: ISCardAuth
               href: iscardauth.md
               items:
-                - name: Métodos de ISCardAuth
+                - name: Métodos ISCardAuth
                   href: iscardauth-methods.md
                   items:
-                    - name: APP_Auth (método)
+                    - name: APP_Auth método
                       href: iscardauth-app-auth.md
                     - name: GetChallenge (método)
                       href: iscardauth-getchallenge.md
-                    - name: ICC_Auth (método)
+                    - name: ICC_Auth método
                       href: iscardauth-icc-auth.md
-                    - name: User_Auth (método)
+                    - name: User_Auth método
                       href: iscardauth-user-auth.md
             - name: ISCardCmd
               href: iscardcmd.md
@@ -1549,29 +1553,29 @@
                       href: iscardcmd-encapsulate.md
                     - name: get_AlternateClassId (método)
                       href: iscardcmd-get-alternateclassid.md
-                    - name: get_Apdu (método)
+                    - name: get_Apdu método
                       href: iscardcmd-get-apdu.md
-                    - name: get_ApduLength (método)
+                    - name: get_ApduLength método
                       href: iscardcmd-get-apdulength.md
-                    - name: get_ApduReply (método)
+                    - name: get_ApduReply método
                       href: iscardcmd-get-apdureply.md
-                    - name: get_ApduReplyLength (método)
+                    - name: get_ApduReplyLength método
                       href: iscardcmd-get-apdureplylength.md
-                    - name: get_ClassId (método)
+                    - name: get_ClassId método
                       href: iscardcmd-get-classid.md
                     - name: get_Data (método)
                       href: iscardcmd-get-data.md
                     - name: get_InstructionId (método)
                       href: iscardcmd-get-instructionid.md
-                    - name: get_LeField (método)
+                    - name: get_LeField método
                       href: iscardcmd-get-lefield.md
-                    - name: get_P1 (método)
+                    - name: get_P1 método
                       href: iscardcmd-get-p1.md
                     - name: get_P2 (método)
                       href: iscardcmd-get-p2.md
                     - name: get_P3 (método)
                       href: iscardcmd-get-p3.md
-                    - name: get_ReplyNad (método)
+                    - name: get_ReplyNad método
                       href: iscardcmd-get-replynad.md
                     - name: get_ReplyStatus (método)
                       href: iscardcmd-get-replystatus.md
@@ -1581,9 +1585,9 @@
                       href: iscardcmd-get-replystatussw2.md
                     - name: put_AlternateClassId (método)
                       href: iscardcmd-put-alternateclassid.md
-                    - name: put_Apdu (método)
+                    - name: put_Apdu método
                       href: iscardcmd-put-apdu.md
-                    - name: put_ApduReply (método)
+                    - name: put_ApduReply método
                       href: iscardcmd-put-apdureply.md
                     - name: put_ClassId (método)
                       href: iscardcmd-put-classid.md
@@ -1595,9 +1599,9 @@
                       href: iscardcmd-put-nad.md
                     - name: put_P1 (método)
                       href: iscardcmd-put-p1.md
-                    - name: put_P2 (método)
+                    - name: put_P2 método
                       href: iscardcmd-put-p2.md
-                    - name: put_ReplyStatus (método)
+                    - name: put_ReplyStatus método
                       href: iscardcmd-put-replystatus.md
             - name: ISCardDatabase
               href: iscarddatabase.md
@@ -1637,7 +1641,7 @@
                       href: iscardfileaccess-getfilecapabilities.md
                     - name: GetProperties (método)
                       href: iscardfileaccess-getproperties.md
-                    - name: Invalidate (Método)
+                    - name: Invalidate (método)
                       href: iscardfileaccess-invalidate.md
                     - name: Método Abrir
                       href: iscardfileaccess-open.md
@@ -1679,13 +1683,13 @@
                       href: iscardiso7816-readbinary.md
                     - name: ReadRecord (método)
                       href: iscardiso7816-readrecord.md
-                    - name: SelectFile (método)
+                    - name: Método SelectFile
                       href: iscardiso7816-selectfile.md
-                    - name: SetDefaultClassId (método)
+                    - name: Método SetDefaultClassId
                       href: iscardiso7816-setdefaultclassid.md
                     - name: UpdateBinary (método)
                       href: iscardiso7816-updatebinary.md
-                    - name: UpdateRecord (método)
+                    - name: Método UpdateRecord
                       href: iscardiso7816-updaterecord.md
                     - name: Verify (método)
                       href: iscardiso7816-verify.md
@@ -1741,7 +1745,7 @@
                       href: iscardtypeconv-convertbytearraytobytebuffer.md
                     - name: Método ConvertByteBufferToByteArray
                       href: iscardtypeconv-convertbytebuffertobytearray.md
-                    - name: Método ConvertByteBufferToSafeArray
+                    - name: ConvertByteBufferToSafeArray (método)
                       href: iscardtypeconv-convertbytebuffertosafearray.md
                     - name: Método ConvertSafeArrayToByteBuffer
                       href: iscardtypeconv-convertsafearraytobytebuffer.md
@@ -1755,7 +1759,7 @@
                       href: iscardtypeconv-freeistreammemoryptr.md
                     - name: GetAtIStreamMemory (método)
                       href: iscardtypeconv-getatistreammemory.md
-                    - name: Método SizeOfIStream
+                    - name: SizeOfIStream (método)
                       href: iscardtypeconv-sizeofistream.md
             - name: ISCardVerify
               href: iscardverify.md
@@ -1767,7 +1771,7 @@
                       href: iscardverify-changecode.md
                     - name: ResetSecurityState (método)
                       href: iscardverify-resetsecuritystate.md
-                    - name: Unblock (método)
+                    - name: Método Unblock
                       href: /previous-versions/windows/desktop/legacy/aa377269(v=vs.85)
                     - name: Verify (método)
                       href: iscardverify-verify.md

@@ -4,16 +4,16 @@ ms.assetid: cb9552e9-e807-4b07-b315-4550762e7026
 title: Usar la enumeración EncoderValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 488d465d27f7884ecc5999d38fea10afdac06b74b77d29338c8d0944a1261b92
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d755248150e81f963ea1c5c597ab04649c342944
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119666325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072409"
 ---
 # <a name="using-the-encodervalue-enumeration"></a>Usar la enumeración EncoderValue
 
-Un codificador determinado admite determinadas categorías de parámetros y, para cada una de esas categorías, ese codificador permite determinados valores. Por ejemplo, el codificador JPEG admite la categoría de parámetros EncoderValueQuality y los valores de parámetro permitidos son los enteros de 0 a 100. Algunos de los valores de parámetro permitidos son los mismos en varios codificadores. Estos valores estándar se definen en la [**enumeración EncoderValue**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) de Gdiplusenums.h:
+Un codificador determinado admite determinadas categorías de parámetros y, para cada una de esas categorías, ese codificador permite determinados valores. Por ejemplo, el codificador JPEG admite la categoría de parámetros EncoderValueQuality y los valores de parámetro permitidos son los enteros del 0 al 100. Algunos de los valores de parámetro permitidos son los mismos en varios codificadores. Estos valores estándar se definen en la [**enumeración EncoderValue**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) de Gdiplusenums.h:
 
 
 ```
@@ -115,7 +115,7 @@ INT main()
 
 
 
-Al ejecutar la aplicación de consola anterior, se obtiene una salida similar a la siguiente:
+Al ejecutar la aplicación de consola anterior, obtiene una salida similar a la siguiente:
 
 
 ```

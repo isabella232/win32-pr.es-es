@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: a656667a8c32d4b21793cfc605654f1c80c31ce1d69fd274a7be81078f6cc2c1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ae05b18f58927e05c952edbbfc1b6a6190cec19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245571"
 ---
 # <a name="autoswitch-wlanprofile-element"></a>Elemento autoSwitch (WLANProfile)
 
@@ -33,7 +33,7 @@ Un valor de autoSwitch establecido en "true" da como resultado una mayor frecuen
 
 **Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. Estos cambios están diseñados para reducir la frecuencia de radiofrecuencia, el consumo de energía y la interrupción del tráfico en tiempo real a través de redes inalámbricas. La configuración predeterminada de **autoSwitch** cuando este elemento no está establecido en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado. El valor predeterminado era "true" en Windows Server 2008 y Windows Vista. Se recomienda establecer el valor del elemento **autoSwitch** usado por una aplicación en un perfil de LAN inalámbrica en "false" para reducir la frecuencia de examen periódico de nuevas redes, a menos que sea absolutamente necesario que una aplicación establezca este valor en "true".
 
-Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
+**Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="autoSwitch"

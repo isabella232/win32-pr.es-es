@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 3f3b250cbaebd565f14ef7f10cd8180e497f20347d00a7e96a74298d3e5dc770
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5df72b9423ad212264736d16db0ae73ded9afef5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074400"
 ---
 # <a name="mergeclosedatabase-method"></a>Método Merge.CloseDatabase
 
@@ -51,7 +51,7 @@ Merge.CloseDatabase(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El cierre de una base de datos borra toda la información de dependencia, pero no afecta a los errores que no se han recuperado.
 
@@ -66,7 +66,7 @@ Vea [**CloseDatabase function (Función CloseDatabase).**](/windows/win32/api/me
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

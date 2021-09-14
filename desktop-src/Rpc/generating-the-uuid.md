@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, tareas, generación del UUID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21c1fbb257a4ce41a4fc0159f703a01705b4dd5926356d7850ec4ce1e0d2e002
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e263bfe21c4a564106c0d6328c0de891c18bca1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118929532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244712"
 ---
 # <a name="generating-the-uuid"></a>Generación del UUID
 

@@ -1,7 +1,7 @@
 ---
-description: Especifica el método de autenticación que se va a usar para conectarse a la LAN inalámbrica.
+description: Especifica el método de autenticación que se usará para conectarse a la LAN inalámbrica.
 ms.assetid: fb6c5cce-05d6-41a2-acf4-9ae2713079dd
-title: Elemento Authentication (authEncryption)
+title: elemento authentication (authEncryption)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 02895da685c78484c907af51745264abb81086da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245570"
 ---
-# <a name="authentication-authencryption-element"></a>Elemento Authentication (authEncryption)
+# <a name="authentication-authencryption-element"></a>elemento authentication (authEncryption)
 
-El elemento Authentication (authEncryption) especifica el método de autenticación que se va a usar para conectarse a la LAN inalámbrica.
+El elemento authentication (authEncryption) especifica el método de autenticación que se usará para conectarse a la LAN inalámbrica.
 
 ``` syntax
 <xs:element name="authentication">
@@ -52,7 +52,7 @@ El elemento Authentication (authEncryption) especifica el método de autenticaci
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) .
+El elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) define el elemento .
 
 ## <a name="remarks"></a>Observaciones
 
@@ -62,22 +62,22 @@ En la tabla siguiente se describen los valores de enumeración.
 
 | Value   | Descripción                            |
 |---------|----------------------------------------|
-| abrir    | Abra la autenticación 802,11.            |
-| shared  | Autenticación 802,11 compartida.          |
-| WPA     | Autenticación WPA-Enterprise 802,11.  |
-| WPAPSK  | Autenticación WPA-Personal 802,11.    |
-| WPA2    | Autenticación WPA2-Enterprise 802,11. |
-| WPA2PSK | Autenticación WPA2-Personal 802,11.   |
+| abierto    | Abra la autenticación 802.11.            |
+| shared  | Autenticación compartida 802.11.          |
+| WPA     | WPA-Enterprise autenticación 802.11.  |
+| WPAPSK  | WPA-Personal autenticación 802.11.    |
+| WPA2    | WPA2-Enterprise autenticación 802.11. |
+| WPA2PSK | WPA2-Personal autenticación 802.11.   |
 
 
 
  
 
-Para obtener más información acerca de los métodos de autenticación de 802,11, consulte las especificaciones de [WPA](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access), [802.1 x](https://ieeexplore.ieee.org/document/1438730)y [802.11 i](https://standards.ieee.org/findstds/standard/802.11i-2004.html) .
+Para obtener más información sobre los métodos de autenticación 802.11, vea las especificaciones [WPA](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access), [802.1X](https://ieeexplore.ieee.org/document/1438730)y [802.11i.](https://standards.ieee.org/findstds/standard/802.11i-2004.html)
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento de **autenticación** , consulte [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan el **elemento de autenticación,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Para ver los perfiles de ejemplo que usan el elemento de **autenticación** , co
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 

@@ -4,12 +4,12 @@ description: Después de que un programa de servidor registre su información de
 ms.assetid: 1c116e44-03a4-4b86-ae37-0b9187981e53
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb60b6d383c7c31b7eb59aab6f17fcdad1fde108b6f26d4fa73627d34f74340
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f69d9463e0591279377502394541190be685cccd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244532"
 ---
 # <a name="listening-for-remote-procedure-calls"></a>Escucha de llamadas a procedimientos remotos
 

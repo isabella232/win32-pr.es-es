@@ -4,12 +4,12 @@ description: Macros de entrada sin procesar
 ms.assetid: d6438ecf-6e9d-4099-bd20-a039c1f3c36c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 623e84dd53d5d92a88a81b39aa29d6921e5a877f16acb1f1da6b29aca1ac1786
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c7b07590b9b0df39b7eb4c6ae731109bedad963
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119611615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072401"
 ---
 # <a name="raw-input-macros"></a>Macros de entrada sin procesar
 

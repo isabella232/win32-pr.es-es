@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: a920d6ffc135855826719e31613119a27671e334d5a75ce7dba29c2b140816fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2e8989264a042368b37926bbb502f48ab2fb04b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118363756"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245205"
 ---
 # <a name="setnpppatternfilterinblob-function"></a>Función SetNPPPatternFilterInBlob
 
@@ -51,14 +51,14 @@ Identificador del BLOB.
 *pExpression* \[ En\]
 </dt> <dd>
 
-Puntero a una [estructura EXPRESSION](expression.md) que define la expresión de filtro que se va a establecer.
+Puntero a una estructura [EXPRESSION](expression.md) que define la expresión de filtro que se va a establecer.
 
 </dd> <dt>
 
 *hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde se produjo el error (si lo hubiera) en el BLOB original.
+Identificador de un BLOB de error que especifica dónde en el BLOB original se produjo el error (si lo hubiera).
 
 </dd> </dl>
 
@@ -68,15 +68,15 @@ Si la **función SetNPPPatternFilterInBlob** es correcta, el valor devuelto es N
 
 Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los datos de filtro de coincidencia de patrón almacenados **en la categoría Config** del BLOB.
+Los datos de filtro de coincidencia de patrones almacenados **en la categoría Config** del BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -86,7 +86,7 @@ Los datos de filtro de coincidencia de patrón almacenados **en la categoría Co
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

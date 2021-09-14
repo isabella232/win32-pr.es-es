@@ -10,11 +10,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 77d884c38d224182db7eef8db0f0cd80b14e3a08
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245684"
 ---
 # <a name="vcr-services"></a>Servicios VCR
 
@@ -110,11 +110,11 @@ Al editar, es posible que desee registrar segmentos de un VCR a otro. Puede empe
 
 Ambos VCR deben usar el mismo reloj para este tipo de edición; el reloj ayuda a sincronizar ambos dispositivos. Puede determinar si dos VCR comparten el mismo reloj mediante el comando [**status**](status.md) ([**MCI \_ STATUS**](mci-status.md)) con la marca "clock id" para consultar cada VCR. Si los números de identificación devueltos por el **comando de** estado son los mismos, los dispositivos usan el mismo reloj. Como recurso compartido, el reloj se puede conectar a varios VCR. El controlador VISCA solo admite un reloj compartido.
 
-También puede determinar la resolución del reloj mediante el comando **de** estado "velocidad de incremento del reloj". Este comando devuelve el número de incrementos que admite el reloj por segundo. Por ejemplo, si el reloj se actualiza cada milisegundo, el comando devuelve 1000 como velocidad de incremento del reloj. La ventaja de usar la tasa de incremento es que la velocidad se expresa como un entero; De lo contrario, el incremento sería un valor de punto flotante (de precisión sencilla o doble). Como entero, manipular la velocidad de incremento es una operación sencilla y no es susceptible a errores de redondeo. Puede restablecer el reloj mediante el comando [**set**](set.md) ([**MCI \_ SET**](mci-set.md)) con la marca "clock 0" (cero).
+También puede determinar la resolución del reloj mediante el **comando** de estado "velocidad de incremento del reloj". Este comando devuelve el número de incrementos que admite el reloj por segundo. Por ejemplo, si el reloj se actualiza cada milisegundo, el comando devuelve 1000 como velocidad de incremento del reloj. La ventaja de usar la tasa de incremento es que la velocidad se expresa como un entero; De lo contrario, el incremento sería un valor de punto flotante (de precisión sencilla o doble). Como entero, manipular la tasa de incremento es una operación sencilla y no es susceptible a errores de redondeo. Puede restablecer el reloj mediante el comando [**set**](set.md) ([**MCI \_ SET**](mci-set.md)) con la marca "clock 0" (cero).
 
-Al emitir un comando [**play**](play.md) ([**MCI \_ PLAY**](mci-play.md)), [**record**](record.md) ([**MCI \_ RECORD**](mci-record.md)) o [**seek**](seek.md) ([**MCI \_ SEEK**](mci-seek.md)), puede especificar cuándo se va a ejecutar el comando. Las características de los VCR que se usan determinan cuándo iniciar cada VCR. El tiempo debe tener en cuenta la cantidad de inscripción previa que requiere cada dispositivo y la cantidad de tiempo necesario para completar los comandos de MCI usados para configurar la sesión de edición. Para ello, recupere la hora del reloj y agregue un intervalo de espera de 5 a 10 segundos. (El intervalo de espera debe ser lo suficientemente largo como para permitir que la inscripción previa y los comandos de MCI pendientes terminen de ejecutarse).
+Al emitir un comando [**play**](play.md) ([**MCI \_ PLAY**](mci-play.md)), [**record**](record.md) ([**MCI \_ RECORD**](mci-record.md)) o [**seek**](seek.md) ([**MCI \_ SEEK**](mci-seek.md)), puede especificar cuándo se va a ejecutar el comando. Las características de los VCR que se usan determinan cuándo iniciar cada VCR. El tiempo debe tener en cuenta la cantidad de inscripción previa que requiere cada dispositivo y la cantidad de tiempo necesaria para completar los comandos de MCI usados para configurar la sesión de edición. Para ello, recupere la hora del reloj y agregue un intervalo de espera de 5 a 10 segundos. (El intervalo de espera debe ser lo suficientemente largo como para permitir que la inscripción previa y los comandos de MCI pendientes terminen de ejecutarse).
 
-Para asegurarse de que el período de espera es lo suficientemente largo, coloque el comando **de** registro en último lugar en la aplicación y compruebe la hora inmediatamente anterior a él. Si el intervalo es demasiado corto, reinicie el **comando play.** Como alternativa, puede comprobar la hora inmediatamente posterior al último comando del script para comprobar que hay tiempo suficiente para enviar y completar todos los comandos.
+Para asegurarse de que el período de espera es lo suficientemente largo, coloque el comando **de** registro en último lugar en la aplicación y compruebe la hora inmediatamente anterior. Si el intervalo es demasiado corto, reinicie el **comando play.** Como alternativa, puede comprobar la hora inmediatamente posterior al último comando del script para comprobar que hay tiempo suficiente para enviar y completar todos los comandos.
 
  
 

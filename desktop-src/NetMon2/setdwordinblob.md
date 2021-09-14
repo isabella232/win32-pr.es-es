@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: a0fdc05052542c8606bf72d7250e29086a59b6cc69761229df4800abdc781027
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bca0efe61824c6fb8dd41b0b241791b6303799d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245240"
 ---
 # <a name="setdwordinblob-function"></a>Función SetDwordInBlob
 
@@ -46,14 +46,14 @@ DWORD SetDwordInBlob(
 *hBlob* \[ En\]
 </dt> <dd>
 
-Identificador de un BLOB que se está configurando.
+Identificador de un BLOB que se va a establecer.
 
 </dd> <dt>
 
 *pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del **propietario de** BLOB que se va a establecer.
+Puntero al nombre del propietario **de** BLOB que se va a establecer.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Puntero al nombre de **la etiqueta** BLOB que se va a establecer.
 *Dword* \[ En\]
 </dt> <dd>
 
-**Valor DWORD** del BLOB que se va a establecer.
+**Valor DWORD** del BLOB que se establece.
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -98,7 +98,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

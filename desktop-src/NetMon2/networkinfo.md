@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: b5b57d7f051c1409c4b691d78d9173341efda984f35498289cd1eacb8c8b3199
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8917966d2e090417a95a9ca20158c6c5935bda3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245301"
 ---
 # <a name="networkinfo-structure"></a>Estructura NETWORKINFO
 
@@ -45,7 +45,7 @@ typedef struct _NETWORKINFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -98,13 +98,13 @@ Este parámetro puede ser una de las siguientes marcas de información:
 
 
 
-| Valor                                                                                                                                                                                                                                       | Significado                                                                                                                                                                   |
+| Value                                                                                                                                                                                                                                       | Significado                                                                                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="NETWORKINFO_FLAGS_PMODE_NOT_SUPPORTED"></span><span id="networkinfo_flags_pmode_not_supported"></span><dl> <dt>**NETWORKINFO \_ FLAGS \_ PMODE \_ NOT \_ SUPPORTED**</dt> </dl>    | La tarjeta de red no admite el modo promiscuo, lo que significa que solo capturará el tráfico que se difunde por naturaleza o solo implica a la máquina local.<br/> |
 | <span id="NETWORKINFO_FLAGS_RAS"></span><span id="networkinfo_flags_ras"></span><dl> <dt>**NETWORKINFO \_ FLAGS \_ RAS**</dt> </dl>                                                      | Se trata de una tarjeta de red virtual que es una conexión RAS (servidor de acceso remoto) a través de un módem u otra tarjeta de red.<br/>                                        |
-| <span id="NETWORKINFO_FLAGS_REMOTE_CARD"></span><span id="networkinfo_flags_remote_card"></span><dl> <dt>**TARJETA REMOTA \_ DE MARCAS NETWORKINFO \_ \_**</dt> </dl>                             | La tarjeta de red no está en el equipo local, pero se captura en un equipo remoto en la ubicación del equipo local.<br/>                                      |
-| <span id="NETWORKINFO_FLAGS_REMOTE_NAL"></span><span id="networkinfo_flags_remote_nal"></span><dl> <dt>**NAL REMOTO DE MARCAS NETWORKINFO \_ \_ \_**</dt> </dl>                                | Obsoleto; no se usan.<br/>                                                                                                                                          |
-| <span id="NETWORKINFO_FLAGS_REMOTE_NAL_CONNECTED"></span><span id="networkinfo_flags_remote_nal_connected"></span><dl> <dt>**NETWORKINFO \_ MARCA REMOTE \_ \_ NAL \_ CONNECTED**</dt> </dl> | Obsoleto; no se usan.<br/>                                                                                                                                          |
+| <span id="NETWORKINFO_FLAGS_REMOTE_CARD"></span><span id="networkinfo_flags_remote_card"></span><dl> <dt>**TARJETA REMOTA DE MARCAS \_ NETWORKINFO \_ \_**</dt> </dl>                             | La tarjeta de red no está en el equipo local, pero está capturando en un equipo remoto en el entorno del equipo local.<br/>                                      |
+| <span id="NETWORKINFO_FLAGS_REMOTE_NAL"></span><span id="networkinfo_flags_remote_nal"></span><dl> <dt>**NETWORKINFO \_ FLAGS \_ REMOTE \_ NAL**</dt> </dl>                                | Obsoleto; no use.<br/>                                                                                                                                          |
+| <span id="NETWORKINFO_FLAGS_REMOTE_NAL_CONNECTED"></span><span id="networkinfo_flags_remote_nal_connected"></span><dl> <dt>**NETWORKINFO \_ MARCA REMOTE \_ \_ NAL \_ CONNECTED**</dt> </dl> | Obsoleto; no use.<br/>                                                                                                                                          |
 
 
 
@@ -144,7 +144,7 @@ Campo de comentario del adaptador.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

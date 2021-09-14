@@ -4,12 +4,12 @@ ms.assetid: c966cd00-5cab-4fcf-ad8e-b6c4ffb0e977
 title: Proveedores de paquetes de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c580610224a5d6cb3f461b1c039862e49b29358c4952549cefefe3c7434aa084
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e8257a62e4f8b0a8434143b2fecba04d9a66c9fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245306"
 ---
 # <a name="network-packet-providers"></a>Proveedores de paquetes de red
 

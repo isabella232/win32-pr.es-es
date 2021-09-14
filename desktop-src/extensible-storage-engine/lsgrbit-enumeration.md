@@ -32,12 +32,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4fbe93b2c9c47f4929e442d2b38ae118caba328e1411c203519624807332d7db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5fc0a60d039d0eb1307558d42a3e7a3c7e99eb86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118071950"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269639"
 ---
 # <a name="lsgrbit-enumeration"></a>Enumeración LsGrbit
 
@@ -63,7 +63,7 @@ Dim instance As LsGrbit
 public enum LsGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -76,7 +76,7 @@ public enum LsGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
@@ -98,7 +98,7 @@ public enum LsGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

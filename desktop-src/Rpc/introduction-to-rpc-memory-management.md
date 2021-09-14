@@ -4,12 +4,12 @@ description: Introducción a la administración de memoria de llamadas a procedi
 ms.assetid: 3474d79c-93ef-4221-b9ea-9173978e2929
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a169f87bbd8a9747dd7a4983a26f1122cf575e95434ed0dd3be346bae12b9a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94ac4b6aecb2fd78448ebe31c72587fafb8f6fde
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118928940"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244574"
 ---
 # <a name="introduction-to-rpc-memory-management"></a>Introducción a la administración de memoria RPC
 

@@ -4,12 +4,12 @@ description: Este glosario incluye términos y conceptos clave sobre las llamada
 ms.assetid: 4EC80A0B-D816-452C-93C0-D48A5220EEF6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fa5dc92e6399a66311387807bb1f49aa675450b9b58b4980ea1e68a527b24c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a4c82bc9f1bcd78f09d226111bfe567e998397f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244694"
 ---
 # <a name="glossary-rpc"></a>Glosario (RPC)
 

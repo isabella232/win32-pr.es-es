@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5fbcb7d59f31d9b2c76d924cfe2ebf2f5646366e72c69a54c6a7cf8fad81e975
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e103622d69f6e472c368851ce18f2a026bd25e84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118156716"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072274"
 ---
 # <a name="cmediasamplem_end-member"></a>CMediaSample::m \_ Miembro end
 
-Hora de finalización del ejemplo. Este valor solo es válido si la variable miembro [**CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) contiene la marca \_ \_ STOPVALID DE AM SAMPLE.
+Hora de finalización del ejemplo. Este valor solo es válido si la variable miembro [**CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) contiene la marca \_ \_ STOPVALID de AM SAMPLE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ REFERENCE_TIME m_End;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

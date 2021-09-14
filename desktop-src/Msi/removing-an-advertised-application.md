@@ -4,12 +4,12 @@ ms.assetid: 979928fc-d95b-4c4e-88bd-aa16fbced736
 title: Quitar una aplicación anunciada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 880ce7d7de7ce7a8f9c9a20511f3f9d1b48ccdf34ffd2da51a71d226d0770b54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6e8aba31dfd1538afc5585ada41b193c642950a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274143"
 ---
 # <a name="removing-an-advertised-application"></a>Quitar una aplicación anunciada
 

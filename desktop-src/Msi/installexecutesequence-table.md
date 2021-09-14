@@ -1,17 +1,17 @@
 ---
 description: En la tabla InstallExecuteSequence se enumeran las acciones que se ejecutan cuando se ejecuta la acción INSTALL de nivel superior.
 ms.assetid: 995d4159-bfc9-48b2-8328-3ae8251d785d
-title: Tabla InstallExecuteSequence
+title: InstallExecuteSequence Table
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d48fb83bd8f3c947feb81ab95df490572ba1ee68d423957759a95c323005070
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7d110debacab19739c3da69abf3948d11bb7aa6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118142186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072076"
 ---
-# <a name="installexecutesequence-table"></a>Tabla InstallExecuteSequence
+# <a name="installexecutesequence-table"></a>InstallExecuteSequence Table
 
 En la tabla InstallExecuteSequence se enumeran las acciones que se ejecutan cuando se ejecuta la acción [INSTALL](install-action.md) de nivel superior.
 
@@ -19,7 +19,7 @@ Las acciones de la secuencia de instalación hasta la acción [InstallValidate](
 
 [Las acciones personalizadas](custom-actions.md) que requieren una interfaz de usuario deben usar [**MsiProcessMessage en**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) lugar de cuadros de diálogo creados mediante la [tabla Dialog](dialog-table.md).
 
-La tabla InstallExecuteSequence tiene las siguientes columnas.
+La tabla InstallExecuteSequence tiene las columnas siguientes.
 
 
 
@@ -49,7 +49,7 @@ Clave de tabla principal.
 <span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condición
 </dt> <dd>
 
-Este campo contiene una expresión condicional. Si la expresión se evalúa como False, se omite la acción. Si la sintaxis de la expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea [Sintaxis de instrucciones condicionales.](conditional-statement-syntax.md)
+Este campo contiene una expresión condicional. Si la expresión se evalúa como False, se omite la acción. Si la sintaxis de expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea [Sintaxis de instrucciones condicionales.](conditional-statement-syntax.md)
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Un valor positivo representa la posición de la secuencia. Un valor NULL indica 
 | msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
 | msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |
 | msiDoActionStatusFailure  | -3    | Finaliza la salida irrescindiendo. Se usa con cuadros [de diálogo FatalError.](fatalerror-dialog.md) |
-| msiDoActionStatusSuspend  | -4    | La instalación se suspende.                                                                |
+| msiDoActionStatusSuspend  | -4    | La instalación está suspendida.                                                                |
 
 
 
@@ -77,7 +77,7 @@ Cero, todos los demás números negativos o un valor NULL indican que la acción
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El texto localizado para la presentación o el registro del progreso se especifica en la [tabla ActionText](actiontext-table.md).
 

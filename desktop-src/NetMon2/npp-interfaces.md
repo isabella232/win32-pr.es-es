@@ -4,12 +4,12 @@ ms.assetid: 101ce722-3101-4f50-b492-dad8b68a7aaf
 title: NPP Interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22fc38bd5db91354c81f88d9f0fe0a6ad23ce3ccb3ecd4a08c4b6335e25ddd33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3146d34798c57aea0bbd0f4bfec0037ed2ac879c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119676985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245265"
 ---
 # <a name="npp-interfaces"></a>NPP Interfaces
 

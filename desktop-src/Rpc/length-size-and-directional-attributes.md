@@ -1,17 +1,17 @@
 ---
-title: Atributos de longitud, tamaño y direccional
-description: Al pasar matrices entre el cliente y el servidor, los atributos relacionados con el tamaño \ max is\ y \ size is\ determinan cuántos elementos de matriz asigna el \_ \_ código auxiliar del servidor.
+title: Longitud, tamaño y atributos direccionales
+description: Al pasar matrices entre el cliente y el servidor, los atributos relacionados con el tamaño \max is\ y \ size is\ determinan cuántos elementos de matriz asigna el \_ \_ código auxiliar del servidor.
 ms.assetid: 2c95cf47-6fc0-4ccd-bb4f-acf356596e56
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e91424a93a53fe710c945011d19f8f97dc0f65e4899bc3305be5725d5a08e7e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98ffbf1ac75ad82a89e258ab595590fce2190b9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020136"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244556"
 ---
-# <a name="length-size-and-directional-attributes"></a>Atributos de longitud, tamaño y direccional
+# <a name="length-size-and-directional-attributes"></a>Longitud, tamaño y atributos direccionales
 
 Al pasar matrices entre el cliente y el servidor, el tamaño máximo de los atributos relacionados con el tamaño es y el tamaño determina cuántos elementos de matriz asigna el código auxiliar \[ [**\_**](/windows/desktop/Midl/max-is) \] del \[ [**\_**](/windows/desktop/Midl/size-is) \] servidor. La longitud de los atributos relacionados con la longitud es , la primera es y la última es determinar cuántos elementos se transmiten al \[ [**\_**](/windows/desktop/Midl/length-is)servidor \] y al \[ [**\_**](/windows/desktop/Midl/first-is) \] \[ [**\_**](/windows/desktop/Midl/last-is) \] cliente.
 
@@ -27,7 +27,7 @@ El comportamiento del compilador MIDL para cada combinación de atributos direcc
 
 
 
-| Array                                          | Parámetro Length                               | Acciones de código auxiliar durante la llamada del cliente al servidor                                                                                                                                                                                                                          | Acciones de código auxiliar en la devolución del servidor al cliente                                                                                                                                                                         |
+| Array                                          | Parámetro Length                               | Acciones de código auxiliar durante la llamada desde el cliente al servidor                                                                                                                                                                                                                          | Acciones de código auxiliar en la devolución del servidor al cliente                                                                                                                                                                         |
 |------------------------------------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \[[**En**](/windows/desktop/Midl/in)\]                          | \[[**En**](/windows/desktop/Midl/in)\]                          | Transmita la longitud y el número de elementos indicados por el parámetro .                                                                                                                                                                                              | No se transmiten datos.                                                                                                                                                                                                 |
 | \[[**En**](/windows/desktop/Midl/in)\]                          | \[[**out**](/windows/desktop/Midl/out-idl)\]                    | No es legal; Error del compilador MIDL.                                                                                                                                                                                                                                         | No es legal; Error del compilador MIDL.                                                                                                                                                                                      |
@@ -43,7 +43,7 @@ El comportamiento del compilador MIDL para cada combinación de atributos direcc
 
  
 
-En general, no debe modificar los parámetros de longitud o tamaño en el lado servidor. Si cambia el parámetro length, puede huérfana de memoria. Para obtener más información, vea [Memoria huérfana.](memory-orphaning.md)
+En general, no debe modificar los parámetros de longitud o tamaño en el lado servidor. Si cambia el parámetro length, puede tener memoria huérfana. Para obtener más información, vea [Memoria huérfana.](memory-orphaning.md)
 
  
 

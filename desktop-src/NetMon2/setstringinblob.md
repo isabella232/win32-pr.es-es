@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 293aabf86769a8cfa678df79a04b5158b9c1d19c80d660b144c4a33cbf32c56f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37278b9111818957e6d5fb3032f1bf33ad3a6ec3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118363684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245199"
 ---
 # <a name="setstringinblob-function"></a>Función SetStringInBlob
 
@@ -60,7 +60,7 @@ Puntero a la **sección Propietario** del BLOB, donde se establece la cadena.
 *pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero a la **sección Category** del BLOB, donde se establece la cadena.
+Puntero a la **sección Categoría** del BLOB, donde se establece la cadena.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Si la información **de propietario,** **categoría** o etiqueta especificada no
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -100,7 +100,7 @@ Si la información **de propietario,** **categoría** o etiqueta especificada no
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

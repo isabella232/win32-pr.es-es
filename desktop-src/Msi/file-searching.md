@@ -4,12 +4,12 @@ ms.assetid: cfcd7cdb-7547-45f4-bf11-c9f0edc4f7bf
 title: Búsqueda de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 418b4b24e0aecec4d4ef86d06e9889deaa7abc6ffb4c76a5e074c6099c292043
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fb0a21d6da77e49a8f29306cee16045adf1b643
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636577"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074800"
 ---
 # <a name="file-searching"></a>Búsqueda de archivos
 

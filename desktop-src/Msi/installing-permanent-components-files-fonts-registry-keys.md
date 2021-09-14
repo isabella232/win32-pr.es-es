@@ -4,12 +4,12 @@ ms.assetid: 99db6485-2e85-47c3-a449-ef85b7efc865
 title: Instalación de componentes permanentes, archivos, fuentes y claves del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87818c2b9a80d582992dd964daa632575f51e5fa24f17a97af0191277e880df6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd9a6e77f2e6bb2d8d7a6f48d80f6855906e4d93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072041"
 ---
 # <a name="installing-permanent-components-files-fonts-registry-keys"></a>Instalación de componentes permanentes, archivos, fuentes y claves del Registro
 

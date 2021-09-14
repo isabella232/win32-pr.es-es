@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 95683eb812a2b8a668664f7ad8092a91c1940d2c3f7185225e8364959777538b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2597b486590871f0af28736717d4c2f332aae342
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245295"
 ---
 # <a name="nmcolumninfo-structure"></a>NMCOLUMNINFO (estructura)
 
@@ -36,14 +36,14 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **szColumnName**
 </dt> <dd>
 
-Nombre que se puede mostrar de una columna específica. Si el nombre es demasiado largo, no estará completamente visible en la configuración Visor de eventos predeterminada.
+Nombre que se puede mostrar de una columna específica. Si el nombre es demasiado largo, no será completamente visible en la configuración Visor de eventos predeterminada.
 
 </dd> <dt>
 

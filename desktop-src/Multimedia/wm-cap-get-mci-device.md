@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d0960ff9aa1366802611f444383212c4bcc45bcb
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245607"
 ---
 # <a name="wm_cap_get_mci_device-message"></a>Mensaje \_ GET \_ \_ MCI DEVICE \_ de WM CAP
 
-El **mensaje \_ GET \_ \_ MCI DEVICE \_ de WM CAP** recupera el nombre de un dispositivo MCI previamente establecido con el mensaje WM CAP SET [**\_ \_ \_ MCI \_ DEVICE.**](wm-cap-set-mci-device.md) Puede enviar este mensaje explícitamente o mediante la macro [**capGetMCIDeviceName.**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename)
+El **mensaje GET \_ \_ \_ MCI DEVICE \_ de WM CAP** recupera el nombre de un dispositivo MCI previamente establecido con el mensaje WM CAP SET [**\_ \_ \_ MCI \_ DEVICE.**](wm-cap-set-mci-device.md) Puede enviar este mensaje explícitamente o mediante la macro [**capGetMCIDeviceName.**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 <span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*wSize*
 </dt> <dd>
 
-Longitud, en bytes, del búfer al que hace referencia **szName.**
+Longitud, en bytes, del búfer al que hace referencia **szName**.
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Puntero a una cadena terminada en NULL que contiene el nombre del dispositivo MC
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, descrita, administración de memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eae15e488a1d2b9d9fc0be4aad3fae7e48078e64de39fd5c7d1fe75a17470244
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4992d957e24a61953b98d2861c675af3252d5516
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118928401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244454"
 ---
 # <a name="memory-management-rpc"></a>Administración de memoria (RPC)
 

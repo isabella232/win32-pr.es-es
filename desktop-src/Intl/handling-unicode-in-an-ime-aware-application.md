@@ -4,12 +4,12 @@ ms.assetid: fa202c1e-d0af-441f-b878-ed98205a880c
 title: Control de Unicode en una IME-Aware aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff5ea0953410a8f36098e5ac863c85e85fc7407163985995becd7c9e9233efa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d78174776eb608c3e494fd5967acba41609e436a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274607"
 ---
 # <a name="handling-unicode-in-an-ime-aware-application"></a>Control de Unicode en una IME-Aware aplicación
 

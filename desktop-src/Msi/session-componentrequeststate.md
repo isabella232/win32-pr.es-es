@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 3cef17ab3a4781f925e92968bd50dfedddd9a0df8e1781a2f209712fc447ef10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17ec77c5498a808e0d7ac0f2881057979d7db0c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118625241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274108"
 ---
 # <a name="sessioncomponentrequeststate-property"></a>Propiedad Session.ComponentRequestState
 
@@ -39,11 +39,11 @@ propVal = Session.ComponentRequestState
 
 Nombre de cadena requerido del elemento de componente, clave principal de la tabla Component.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
-| Estado de selección        | Valor | Descripción                                                    |
+| Estado de selección        | Value | Descripción                                                    |
 |------------------------|-------|----------------------------------------------------------------|
 | Null                   | Null  | Solicita que no se haya realizado ninguna acción para este elemento.                |
 | msiInstallStateAbsent  | 2     | El elemento se va a quitar.                                         |
@@ -61,7 +61,7 @@ Si se produce un error en la propiedad , puede obtener información de error ext
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |

@@ -6,12 +6,12 @@ keywords:
 - Procedimiento remoto Llame a RPC , tareas, lo que hace que el servidor esté disponible
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55385a1ba10f7f8ca28622af0b145ce25ef1bbbd0ab8df327687ce7fd7db6f77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ee2826e4e63e7e78e7f87f6afc120b80e885cd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244496"
 ---
 # <a name="making-the-server-available-on-the-network"></a>Hacer que el servidor esté disponible en la red
 

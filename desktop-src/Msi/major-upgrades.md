@@ -4,12 +4,12 @@ ms.assetid: 0c8f2aad-b301-4404-9051-694d97db1a8d
 title: Actualizaciones principales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d98c6364ca0a6d9622eaacdea6cd37a2cc2dd10b057405a99577acab5102f8f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7795695072f6c153373db914781ac4b919cd2572
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118629162"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074413"
 ---
 # <a name="major-upgrades"></a>Actualizaciones principales
 

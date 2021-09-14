@@ -8,12 +8,12 @@ keywords:
 - ADSI del proveedor LDAP, ejemplos de administración de usuarios, usuario no puede cambiar contraseña
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e82f18a86c2029032488c71593a54bb1291719596cf26bfbec76e31d88b3da07
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 512f3c8cc535805f16dcfecc1a85a0eb5642cb37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072365"
 ---
 # <a name="user-cannot-change-password-ldap-provider"></a>El usuario no puede cambiar la contraseña (proveedor LDAP)
 

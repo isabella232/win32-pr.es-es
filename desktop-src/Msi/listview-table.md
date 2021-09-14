@@ -4,12 +4,12 @@ ms.assetid: 0da4eab9-cabc-4bcc-8267-4aa1cd79e78b
 title: ListView (tabla)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a84ebab6c90486283c3dd8d4731cc0b7f3aff11a5459a0e93496bab83d7c277
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0e7296db9f71a7c40550fdcaab18d8f0d0f41f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074424"
 ---
 # <a name="listview-table"></a>ListView (tabla)
 
@@ -21,11 +21,11 @@ La tabla ListView tiene las columnas siguientes.
 
 | Columna   | Tipo                         | Clave | Nullable |
 |----------|------------------------------|-----|----------|
-| Propiedad | [Identificador](identifier.md) | Y   | N        |
+| Propiedad. | [Identificador](identifier.md) | Y   | N        |
 | Pedido    | [Entero](integer.md)       | Y   | N        |
 | Value    | [Formato](formatted.md)   | N   | N        |
 | Texto     | [Formato](formatted.md)   | N   | Y        |
-| Binario\_ | [Identificador](identifier.md) | N   | Y        |
+| Binary\_ | [Identificador](identifier.md) | N   | Y        |
 
 
 
@@ -70,7 +70,7 @@ Los datos de imagen del icono. Se trata de una clave externa para la [tabla bina
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El contenido de los campos Value y Text tiene el formato de la función [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) cuando se crea el control, por lo que pueden contener cualquier expresión que la función MsiFormatRecord pueda interpretar. El formato solo se produce cuando se crea el control y no se actualiza si una propiedad implicada en la expresión se modifica durante la vida del control.
 

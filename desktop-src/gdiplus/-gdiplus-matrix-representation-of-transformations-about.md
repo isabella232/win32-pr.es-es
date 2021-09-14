@@ -1,15 +1,15 @@
 ---
-description: Una matriz m&215;n es un conjunto de números \# organizados en m filas y n columnas. En la ilustración siguiente se muestran varias matrices.
+description: Una matriz m&215;n es un conjunto de \# números organizados en m filas y n columnas. En la ilustración siguiente se muestran varias matrices.
 ms.assetid: 62215ae0-b095-42b2-911c-aa7607a8b61a
 title: Representación matricial de transformaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 122d59787038cd75a9806cac6cb0d225e8660eb13d7482d3ee1f47ff0732ca5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0577cae38c401e842cff2ff14179594f9118dfd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072421"
 ---
 # <a name="matrix-representation-of-transformations"></a>Representación matricial de transformaciones
 
@@ -31,7 +31,7 @@ Los puntos del plano y las filas y columnas de una matriz se pueden pensar como 
 
 Por ejemplo, el producto de puntos de (2, 3) y (5, 4) es (2)(5) + (3)(4) = 22. El producto de puntos de (2, 5, 1) y (4, 3, 1) es (2)(4) + (5)(3) + (1)(1) = 24. Tenga en cuenta que el producto de puntos de dos vectores es un número, no otro vector. Tenga en cuenta también que solo puede calcular el producto de puntos si los dos vectores tienen el mismo número de componentes.
 
-Deje que A(i, j) sea la entrada de la matriz A en **la** fila i y la **columna** jth. Por ejemplo, A(3, 2) es la entrada de la matriz A en la fila 3 **rd** y la segunda **columna.** Supongamos que A, B y C son matrices y AB = C. Las entradas de C se calculan de la siguiente manera:
+Deje que A(i, j) sea la entrada de la matriz A en **la** fila i y la **columna** j. Por ejemplo, A(3, 2) es la entrada de la matriz A en la fila 3 **rd** y la segunda **columna.** Supongamos que A, B y C son matrices y AB = C. Las entradas de C se calculan de la manera siguiente:
 
 C(i, j) = (fila i de A) • (columna j de B)
 
@@ -84,7 +84,7 @@ El hecho de que la matriz de una transformación compuesta se pueda formar multi
 
  
 
-La [**clase Matrix**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) proporciona varios métodos para crear una transformación compuesta: [**Matrix::Multiply**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-multiply), [**Matrix::Rotate**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-rotate), [**Matrix::RotateAt**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-rotateat), [**Matrix::Scale**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-scale), [**Matrix::Shear**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-shear)y [**Matrix::Translate**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-translate). En el ejemplo siguiente se crea la matriz de una transformación compuesta que gira primero 30 grados, después se escala por un factor de 2 en la dirección y y, a continuación, convierte 5 unidades en la dirección x.
+La [**clase Matrix**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) proporciona varios métodos para crear una transformación compuesta: [**Matrix::Multiply**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-multiply), [**Matrix::Rotate**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-rotate), [**Matrix::RotateAt**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-rotateat), [**Matrix::Scale**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-scale), [**Matrix::Shear**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-shear)y [**Matrix::Translate**](/windows/desktop/api/Gdiplusmatrix/nf-gdiplusmatrix-matrix-translate). En el ejemplo siguiente se crea la matriz de una transformación compuesta que gira primero 30 grados, luego se escala por un factor de 2 en la dirección y y, a continuación, convierte 5 unidades en la dirección x.
 
 
 ```

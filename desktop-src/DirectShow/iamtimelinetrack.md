@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 9cc33facc22023d6e93c8dcfa3804d111d9c99f49be16d8271b09a7bf938b49e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 71003694d33b33980fb262f06f6b2e7aa55a70d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119965085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072213"
 ---
 # <a name="iamtimelinetrack-interface"></a>Interfaz IAMTimelineTrack
 
@@ -30,11 +30,11 @@ ms.locfileid: "119965085"
 
 La `IAMTimelineTrack` interfaz proporciona métodos para manipular objetos de *seguimiento* en DirectShow [Editing Services](directshow-editing-services.md) (DES).
 
-Una pista contiene una lista de orígenes que se representan en la salida final. Es posible que los orígenes dentro de la misma pista no se superpongan. Las pistas de vídeo pueden tener efectos y transiciones. El motor de representación aplica efectos antes de aplicar transiciones. Las pistas de audio pueden tener efectos, pero no transiciones. Para obtener más información, vea [El modelo de escala de tiempo](the-timeline-model.md).
+Una pista contiene una lista de orígenes que se representan en la salida final. Es posible que los orígenes dentro de la misma pista no se superpongan. Las pistas de vídeo pueden tener efectos y transiciones. El motor de representación aplica efectos antes de aplicar las transiciones. Las pistas de audio pueden tener efectos, pero no transiciones. Para obtener más información, vea [El modelo de escala de tiempo](the-timeline-model.md).
 
 Para crear un objeto de seguimiento, llame a [**IAMTimeline::CreateEmptyNode**](iamtimeline-createemptynode.md) con el valor TIMELINE \_ MAJOR TYPE \_ \_ TRACK. Puede consultar el puntero **IAMTimelineObj** devuelto para la `IAMTimelineTrack` interfaz .
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IAMTimelineTrack** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineTrack también** tiene estos tipos de miembros:
 
@@ -67,7 +67,7 @@ La **interfaz IAMTimelineTrack** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -75,7 +75,7 @@ La **interfaz IAMTimelineTrack** tiene estos métodos.
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

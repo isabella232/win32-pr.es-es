@@ -1,5 +1,5 @@
 ---
-description: 'Método CPosPassThru.GetMediaTime: el método GetMediaTime recupera las marcas de tiempo del ejemplo actual.'
+description: 'Método CPosPassThru.GetMediaTime: el método GetMediaTime recupera las marcas de tiempo en el ejemplo actual.'
 ms.assetid: 36f3b6d3-b884-4168-94f3-f334a5056c7d
 title: Método CPosPassThru.GetMediaTime (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec2767f3a20b6acc162da8670eefcd6d399639d5acf713b6dc54caf56f6edabe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 328a0ae09c80a687863cfedb994f5a80cebebf14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120084175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072266"
 ---
 # <a name="cpospassthrugetmediatime-method"></a>Método CPosPassThru.GetMediaTime
 
@@ -61,7 +61,7 @@ Puntero a una variable que recibe la hora de finalización, en unidades del form
 
 Devuelve E \_ FAIL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Invalide este método si el filtro almacena en caché las marcas de tiempo en los ejemplos que recibe.
 
@@ -76,7 +76,7 @@ Invalide este método si el filtro almacena en caché las marcas de tiempo en lo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: af2a4775be7d9e123974fbab865a8171d9bc9dec7dacae7692054bc6db0d3085
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6258b1b1bfde5b159165de2efb9a010053c0421a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245276"
 ---
-# <a name="nmeventdata-structure"></a>NMEVENTDATA (estructura)
+# <a name="nmeventdata-structure"></a>Estructura NMEVENTDATA
 
 La **estructura NMEVENTDATA** contiene información sobre una condición de evento que se pasa a Monitor de red para insertar una línea en el visor experto.
 
@@ -47,21 +47,21 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Versión**
 </dt> <dd>
 
-Número de versión de la **estructura NMEVENTDATA.** El número de versión debe ser cero. Las versiones futuras Monitor de red pueden admitir un número de versión mayor.
+Número de versión de la **estructura NMEVENTDATA.** El número de versión debe ser cero. Las versiones futuras de Monitor de red pueden admitir un número de versión superior.
 
 </dd> <dt>
 
 **EventIdent**
 </dt> <dd>
 
-Identificador del evento. **EventIdent** es único para cada experto y hace referencia a una página [de referencia de eventos](event-reference-page.md).
+Identificador del evento. **EventIdent** es único para cada experto y hace referencia a una [página de referencia de eventos](event-reference-page.md).
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Conjunto de marcas que describe quién envía los datos del evento y cómo se mu
 
 Nivel de gravedad del evento. El nivel de gravedad puede tener uno de los siguientes valores:
 
-INFORMACIÓN DE GRAVEDAD DE NMEVENT ADVERTENCIA DE GRAVEDAD NMEVENT ADVERTENCIA DE GRAVEDAD NMEVENT ADVERTENCIA FUERTE ADVERTENCIA NMEVENT ERROR DE GRAVEDAD \_ \_ \_ \_ \_ \_ \_ NMEVENT \_ GRAVEDAD \_ NMEVENT ERROR GRAVE ERROR \_ \_ \_ CRÍTICO \_ \_ \_ DE GRAVEDAD NMEVENT
+GRAVEDAD DE NMEVENT INFORMACIÓN ADVERTENCIA DE GRAVEDAD NMEVENT ADVERTENCIA DE GRAVEDAD NMEVENT ADVERTENCIA FUERTE ADVERTENCIA NMEVENT ERROR DE GRAVEDAD NMEVENT GRAVEDAD DE NMEVENT ERROR GRAVE ERROR CRÍTICO DE \_ \_ GRAVEDAD \_ DE \_ \_ \_ \_ \_ \_ \_ \_ \_ NMEVENT \_ \_ \_
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Obsoleto, debe ser **NULL.**
 **Justificación**
 </dt> <dd>
 
-Información que se muestra en la segunda ventana de la Visor de eventos. El **miembro Justification** puede ser **NULL.** Si es **NULL,** la segunda ventana no estará visible.
+Información que se muestra en la segunda ventana del Visor de eventos. El **miembro Justification** puede ser **NULL.** Si es **NULL,** la segunda ventana no estará visible.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Hora a la que se produce la condición de evento. El tiempo se mide con respecto
 **Columna**
 </dt> <dd>
 
-Tabla de estructuras de columna que aparece en el panel superior de la Visor de eventos.
+Tabla de estructuras de columna que aparece en el panel superior del Visor de eventos.
 
 </dd> </dl>
 

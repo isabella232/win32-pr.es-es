@@ -4,12 +4,12 @@ ms.assetid: 785c3fd6-7120-4532-b055-b73a9a44f75d
 title: ICE de ejemplo en VBScript
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a21ce87547923cca67b115f1f5c9ea93c4cfac6676924e9ad88e7f1d2b332d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cf49c37eb5aa8d8e4b4e7b617802c49389e77ed7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119996315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074300"
 ---
 # <a name="sample-ice-in-vbscript"></a>ICE de ejemplo en VBScript
 

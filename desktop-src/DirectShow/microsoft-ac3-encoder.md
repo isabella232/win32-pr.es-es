@@ -1,22 +1,22 @@
 ---
-description: El filtro del codificador AC-3 de Microsoft codifica el audio PCM estéreo a una secuencia de bits Dolby Digital.
+description: El filtro Microsoft AC-3 Encoder codifica el audio PCM estéreo en una secuencia de bits Dolby Digital.
 ms.assetid: 59d46ee2-d45f-4492-938d-39c55a7368e1
-title: Codificador Ac-3 de Microsoft (Wmcodecdsp.h)
+title: Microsoft AC-3 Encoder (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35984975fc5a56b043f1b2ceda56505ee6fe74038034fb35deb09b6a5f6a0f41
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 160b020e07bb3ba4e4dc5636b58dd0e66f581a6f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118153173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072160"
 ---
 # <a name="microsoft-ac-3-encoder"></a>Codificador Ac-3 de Microsoft
 
-El filtro del codificador AC-3 de Microsoft codifica el audio PCM estéreo a una secuencia de bits Dolby Digital.
+El filtro Microsoft AC-3 Encoder codifica el audio PCM estéreo en una secuencia de bits Dolby Digital.
 
 > [!Note]  
-> La implementación de Microsoft de la tecnología Dolby Digital está restringida en términos del programa de licencias Dolby Digital para su uso por parte de las aplicaciones de Microsoft.
+> La implementación de Microsoft de la tecnología Dolby Digital está restringida en términos del programa de licencias Dolby Digital para que las usen las aplicaciones de Microsoft.
 
  
 
@@ -59,7 +59,7 @@ msac3enc.dll
 
 [Mérito](merit.md)
 
-**NO USE EL VALOR DE NO \_ \_ \_ USE.**
+**NO USE LA OPCIÓN DE \_ \_ NO \_ USAR.**
 
 [Categoría de filtro](filter-categories.md)
 
@@ -69,23 +69,23 @@ msac3enc.dll
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este filtro no está disponible para su uso por aplicaciones de terceros.
+Este filtro no está disponible para su uso por parte de aplicaciones de terceros.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ desktop apps only\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                                                                     |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>                                                                                       |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>                                                                                       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

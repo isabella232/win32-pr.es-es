@@ -4,12 +4,12 @@ ms.assetid: aa51b077-fb7b-4e09-9de1-ef1905144a94
 title: ICE07
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4226a0e555a35c7d5735abe0b14520d000bfeea8c888488ce37b15a78674ff9e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80a79bcb681a57bb09ff235b35a5287492a4f39c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119581295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074674"
 ---
 # <a name="ice07"></a>ICE07
 
@@ -71,9 +71,9 @@ IC07 publicaría el siguiente mensaje de error para el ejemplo mostrado.
 
  
 
-En este ejemplo, la fuente FontMosoma se asigna al archivo de fuente Deón. El archivo Quesón pertenece al componente \_ Despándalo Despándalo. En la resolución de la tabla Directory se muestra que todos los archivos que pertenecen a Beach \_ Beach se instalarán en la carpeta Sandbar. Dado que no se trata de FontsFolder, ICE07 envía un mensaje de error.
+En este ejemplo, la fuente FontMosoma se asigna al archivo de fuente Deón. El archivo Quesón pertenece al componente \_ Despándalo Despándalo. En la resolución de la tabla Directory se muestra que todos los archivos que pertenecen a Beach \_ Van a instalarse en la carpeta Sandbar. Dado que no se trata de FontsFolder, ICE07 envía un mensaje de error.
 
-Tenga en cuenta que, si el componente Desoy Player pertenece realmente a la carpeta Sandbar, y no a FontsFolder, es posible que la fuente Hayaoma no pertenezca \_ a Ninguna \_ costa. Una posible corrección del error sería incluirLooma en otro componente que se instala en el directorio FontsFolder.
+Tenga en cuenta que, si el componente Desoy player pertenece realmente a la carpeta Sandbar y no a FontsFolder, es posible que la fuente Nooma no pertenezca \_ a Ninguna \_ costa. Una posible corrección del error sería incluirLooma en otro componente que se instala en el directorio FontsFolder.
 
 ## <a name="related-topics"></a>Temas relacionados
 

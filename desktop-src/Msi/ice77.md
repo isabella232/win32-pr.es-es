@@ -4,12 +4,12 @@ ms.assetid: 291cf731-b7e6-44c2-a8ec-78e0e037d1f5
 title: ICE77
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5910b814a9cee6da87a76594949f2ad3250bbdd55c3666d0f500ea3a64ae3730
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15e072692b76cfd63bf62c5fd23f612a445e5fd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074536"
 ---
 # <a name="ice77"></a>ICE77
 
@@ -19,7 +19,7 @@ ICE77 comprueba que las acciones personalizadas con el conjunto de bits **msidbC
 
 ICE77 publica un error si se secuencia una acción personalizada en script antes de la acción InstallInitialize o después de la acción InstallFinalize.
 
-ICE77 publica un error si falta la acción InstallInitialize o installFinalize.
+ICE77 publica un error si falta la acción InstallInitialize o la acción InstallFinalize.
 
 ## <a name="example"></a>Ejemplo
 

@@ -4,16 +4,16 @@ description: Referencia de captura de vídeo
 ms.assetid: 5356c575-2a59-4459-b4eb-76967deb6877
 keywords:
 - Vídeo para Windows (VFW), referencia de captura de vídeo
-- VFW (vídeo para Windows), referencia de captura de vídeo
+- VFW (vídeo para Windows),referencia de captura de vídeo
 - AVICap,reference
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cef19834e244f6070a1d8bb3383dcac017e4d161
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245618"
 ---
 # <a name="video-capture-reference"></a>Referencia de captura de vídeo
 
@@ -27,7 +27,7 @@ En esta sección se describen las funciones, estructuras, mensajes y macros asoc
 -   [**SECUENCIA \_ DE LÍMITE DE \_ WM**](wm-cap-sequence.md)
 -   [**WM \_ CAP \_ STOP**](wm-cap-stop.md)
 
-## <a name="capture-windows"></a>Captura de Windows
+## <a name="capture-windows"></a>Capturar Windows
 
 -   [**CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus)
 -   [**capGetDriverDescription**](/windows/desktop/api/Vfw/nf-vfw-capgetdriverdescriptiona)

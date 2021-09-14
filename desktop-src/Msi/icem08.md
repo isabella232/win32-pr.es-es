@@ -1,19 +1,19 @@
 ---
-description: ICEM08 garantiza que un módulo no excluya otro módulo del que dependa.
+description: ICEM08 garantiza que un módulo no excluya otro módulo del que depende.
 ms.assetid: 56d115b4-7410-4db2-a9af-bc6716f3358d
 title: ICEM08
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6c953c40d29458613b0fc2027dd691adb672eb15
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074476"
 ---
 # <a name="icem08"></a>ICEM08
 
-ICEM08 garantiza que un módulo no excluya otro módulo del que dependa.
+ICEM08 garantiza que un módulo no excluya otro módulo del que depende.
 
 ## <a name="result"></a>Resultado
 
@@ -28,13 +28,13 @@ Error: This module requires module ModuleB.<GUID> (1033v1.0) but also
 lists it as an exclusion.
 ```
 
-[ModuleDependency (tabla)](moduledependency-table.md)
+[ModuleDependency Table](moduledependency-table.md)
 
 
 
 | ModuleID             | ModuleLanguage | RequiredID           | RequiredLanguage | RequiredVersion |
 |----------------------|----------------|----------------------|------------------|-----------------|
-| ModuleA. &lt; GUID&gt; | 3082           | ModuleB. &lt; GUID&gt; | 3082             | 1,0             |
+| ModuleA. &lt; GUID&gt; | 3082           | ModuleB. &lt; GUID&gt; | 3082             | 1.0             |
 
 
 
@@ -46,7 +46,7 @@ lists it as an exclusion.
 
 | ModuleID             | ModuleLanguage | ExcludedID           | ExcludedLanguage | ExcludedMinVersion | ExcludedMaxVersion |
 |----------------------|----------------|----------------------|------------------|--------------------|--------------------|
-| ModuleA. &lt; GUID&gt; | 3082           | ModuleB. &lt; GUID&gt; | 3082             |                    | 1,0                |
+| ModuleA. &lt; GUID&gt; | 3082           | ModuleB. &lt; GUID&gt; | 3082             |                    | 1.0                |
 
 
 

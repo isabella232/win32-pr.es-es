@@ -4,12 +4,12 @@ ms.assetid: d16e7e0c-93f1-4f08-a319-02b717b7d33b
 title: LOCALE_STIME* Constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: effd1519bd168c8eddfef35ab0a740cb3bac5b74ab7f68db64ba6fc294550590
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 603d1ae16f57c3944ce6803bea0cc6ad0354372b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274223"
 ---
 # <a name="locale_stime-constants"></a>Constantes \_ STIME de LOCALE \*
 

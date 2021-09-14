@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 475d8b58decac9297b9e02ebf8116ea5c86d224fc534626937fbed7daf5b2c4f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf9bf0ca0fabd00c27f4ef4b795af5271605fa8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072253"
 ---
 # <a name="csourceseeking-class"></a>CSourceSeeking (clase)
 
@@ -70,7 +70,7 @@ Esta clase admite la [**interfaz IMediaSeeking.**](/windows/desktop/api/Strmif/n
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada vez que cambia la posición inicial, la posición de detenerse o la velocidad de reproducción, el objeto **CSourceSeeking** llama a un método virtual puro correspondiente:
 
@@ -127,7 +127,7 @@ De forma predeterminada, esta clase solo admite la búsqueda en unidades de tiem
 -   [**IMediaSeeking::IsUsingTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-isusingtimeformat)
 -   [**IMediaSeeking::SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat)
 
-Además, invalide los métodos [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) restantes para realizar las conversiones necesarias entre formatos de tiempo. Después de llamar al [**método SetTimeFormat,**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) todos los métodos **IMediaSeeking** deben tratar los parámetros de hora entrantes y salientes como en el nuevo formato de hora. Por ejemplo, si la variable *m \_ rtDuration* representa la duración en unidades de tiempo de referencia, pero el formato de hora actual es fotogramas, el método [**GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) debe devolver el valor *m \_ rtDuration* convertido en fotogramas. Por ejemplo:
+Además, invalide los métodos [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) restantes para realizar las conversiones necesarias entre formatos de tiempo. Después de [**llamar al método SetTimeFormat,**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) todos los métodos **IMediaSeeking** deben tratar los parámetros de hora entrantes y salientes como en el nuevo formato de hora. Por ejemplo, si la variable *m \_ rtDuration* representa la duración en unidades de tiempo de referencia, pero el formato de hora actual es frames, el método [**GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) debe devolver el valor *m \_ rtDuration* convertido en fotogramas. Por ejemplo:
 
 
 ```
@@ -161,11 +161,11 @@ Además, asegúrese de comprobar la marca ReturnTime de AM SEEKING en el \_ \_ m
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Admitir búsquedas en un filtro de origen](supporting-seeking-in-a-source-filter.md)
+[Compatibilidad con la búsqueda en un filtro de origen](supporting-seeking-in-a-source-filter.md)
 </dt> </dl>
 
  

@@ -6,16 +6,16 @@ keywords:
 - Llamada a procedimiento remoto RPC, tareas, generación de archivos de código auxiliar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c03fbffb165e94b89e6801c212d0a8b63cd4e77fab28ad4a4afc4b4243ae0e79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e092663711be60a3a0dc0dd8a4e99c0fa92a3ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244718"
 ---
 # <a name="generating-the-stub-files"></a>Generar los archivos de código auxiliar
 
-Después de definir la interfaz de cliente/servidor, normalmente desarrollará los archivos de origen de cliente y servidor. A continuación, use un único archivo Make para generar los archivos de código auxiliar y de encabezado. Compile y vincule las aplicaciones cliente y servidor. Sin embargo, si esta es la primera exposición al entorno informático distribuido, es posible que quiera invocar el compilador midl ahora para ver qué genera MIDL antes de continuar. El compilador midl (Midl.exe) se instala automáticamente al instalar el Kit de desarrollo de software (SDK) de plataforma.
+Después de definir la interfaz de cliente/servidor, normalmente desarrollará los archivos de origen de cliente y servidor. A continuación, use un único archivo Make para generar los archivos de código auxiliar y de encabezado. Compile y vincule las aplicaciones cliente y servidor. Sin embargo, si esta es la primera exposición al entorno informático distribuido, es posible que quiera invocar el compilador midl ahora para ver qué genera MIDL antes de continuar. El compilador MIDL (Midl.exe) se instala automáticamente al instalar el Kit de desarrollo de software (SDK) de plataforma.
 
 Al compilar estos archivos, asegúrese de que Hello.idl y Hello.acf se encuentran en el mismo directorio. El comando siguiente generará el archivo de encabezado Hello.h y los códigos auxiliares de cliente y servidor, Hello \_ c.c y Hello \_ s.c.
 

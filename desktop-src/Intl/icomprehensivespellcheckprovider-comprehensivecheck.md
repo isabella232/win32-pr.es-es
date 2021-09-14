@@ -1,7 +1,7 @@
 ---
-description: Revise el texto del proveedor de forma más exhaustiva que ISpellCheckProvider::Check.
+description: Compruebe el texto del proveedor de forma más exhaustiva que ISpellCheckProvider::Check.
 ms.assetid: BD334EB8-4E14-478D-AB2A-E7F863C4BE0F
-title: IComprehensiveSpellCheckProvider::ComprehensiveCheck (método)
+title: IComprehensiveSpellCheckProvider::ComprehensiveCheck (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - spellcheckprovider.h
-ms.openlocfilehash: ee1b07eb2f459aca3955b0a1c5ad2e2e2139cc196f618430b3039b1eba1e3971
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d999a90166e0d54d537abc84c30f6c4e0ee3768c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274596"
 ---
-# <a name="icomprehensivespellcheckprovidercomprehensivecheck-method"></a>IComprehensiveSpellCheckProvider::ComprehensiveCheck (método)
+# <a name="icomprehensivespellcheckprovidercomprehensivecheck-method"></a>IComprehensiveSpellCheckProvider::ComprehensiveCheck (Método)
 
-Revise el texto del proveedor de forma más exhaustiva que [**ISpellCheckProvider::Check**](/windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-check).
+Compruebe el texto del proveedor de forma más exhaustiva que [**ISpellCheckProvider::Check**](/windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-check).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,11 +70,11 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No es necesario que un proveedor de revisión ortórque implemente esta interfaz. Pero si el proveedor admite dos "modos" de revisión ortográfica (uno más rápido y uno más lento pero más exhaustivo), debe implementar esta interfaz en el mismo objeto que implementa [**ISpellCheckProvider para**](/windows/desktop/api/Spellcheckprovider/nn-spellcheckprovider-ispellcheckprovider) admitir el modo de comprobación más exhaustivo. Cuando un cliente llama a [**ISpellChecker::ComprehensiveCheck**](/windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-comprehensivecheck), la funcionalidad de revisión ortográfica [**consultará al**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) proveedor para [**IComprehensiveSpellCheckProvider**](/windows/desktop/api/spellcheckprovider/nn-spellcheckprovider-icomprehensivespellcheckprovider)y llamará a **IComprehensiveSpellCheckProvider.ComprehensiveCheck si** se admite la interfaz. Si no se admite la interfaz, volverá a [**ISpellCheckProvider::Check**](/windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-check)de forma silenciosa.
+Esta interfaz no es necesaria para que la implemente un proveedor de spell check. Pero si el proveedor admite dos "modos" de revisión ortográfica (uno más rápido y uno más lento pero más exhaustivo), debe implementar esta interfaz en el mismo objeto que implementa [**ISpellCheckProvider para**](/windows/desktop/api/Spellcheckprovider/nn-spellcheckprovider-ispellcheckprovider) admitir el modo de comprobación más exhaustivo. Cuando un cliente llama a [**ISpellChecker::ComprehensiveCheck**](/windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-comprehensivecheck), la funcionalidad de corrector ortográfico [**consultará al**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) proveedor de [**IComprehensiveSpellCheckProvider**](/windows/desktop/api/spellcheckprovider/nn-spellcheckprovider-icomprehensivespellcheckprovider)y llamará a **IComprehensiveSpellCheckProvider.ComprehensiveCheck si** se admite la interfaz. Si no se admite la interfaz, volverá a [**ISpellCheckProvider::Check**](/windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-check)de forma silenciosa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

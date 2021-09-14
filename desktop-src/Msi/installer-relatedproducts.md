@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 15e84a063b8f094dbeee02f3000bdd1c69356f5fa664f6e6f6aff87d19d07dd3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb30be6ea5250a90ef8aa18065e9be679946e503
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118946143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072093"
 ---
 # <a name="installerrelatedproducts-property"></a>Installer.RelatedProducts, propiedad
 
@@ -39,7 +39,7 @@ propVal = Installer.RelatedProducts
 
 Código de actualización de productos relacionados que enumera el instalador.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para enumerar los productos relacionados, una aplicación recorre en iteración [**stringlist**](stringlist-object.md) mediante una construcción For Each. Dado que los productos relacionados no están ordenados, cualquier nuevo producto relacionado tiene un índice arbitrario. Esto significa que la función puede devolver productos relacionados en cualquier orden.
 
@@ -55,7 +55,7 @@ Para enumerar los productos relacionados, una aplicación recorre en iteración 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

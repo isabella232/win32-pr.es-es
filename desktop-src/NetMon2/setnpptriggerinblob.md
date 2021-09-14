@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5ed344b3434e8ae53fe88e7ee97b77a6efa5bd3f0941af6cc9cbc6f2ff10304b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05b8bb3f7f95dc3246ef10f3945b9ab0868550cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118363783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245204"
 ---
 # <a name="setnpptriggerinblob-function"></a>Función SetNPPTriggerInBlob
 
@@ -58,7 +58,7 @@ Puntero al valor del desencadenador.
 *hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde se produjo el error (si lo hubiera) en el BLOB original.
+Identificador de un BLOB de error que especifica dónde en el BLOB original se produjo el error (si lo hubiera).
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estos datos de desencadenador se almacenan en la **categoría Desencadenador** del BLOB.
 
@@ -76,7 +76,7 @@ Estos datos de desencadenador se almacenan en la **categoría Desencadenador** d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -86,7 +86,7 @@ Estos datos de desencadenador se almacenan en la **categoría Desencadenador** d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

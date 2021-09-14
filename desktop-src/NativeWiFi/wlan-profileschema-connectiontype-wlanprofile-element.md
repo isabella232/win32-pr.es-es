@@ -1,7 +1,7 @@
 ---
 description: Indica el modo de funcionamiento de la red.
 ms.assetid: b71de38a-6373-4d96-90dd-a3ad4a7de074
-title: Elemento connectionType (WLANProfile)
+title: elemento connectionType (WLANProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 01eec035fdd42504e3c3da0baec537b096d42c63deb7c336d8446bc7a0d95572
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e7b456260c656ebb3d64b6a3732fe97ca3ca488
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245546"
 ---
-# <a name="connectiontype-wlanprofile-element"></a>Elemento connectionType (WLANProfile)
+# <a name="connectiontype-wlanprofile-element"></a>elemento connectionType (WLANProfile)
 
 El elemento connectionType (WLANProfile) indica el modo de funcionamiento de la red.
 
@@ -46,7 +46,7 @@ El **elemento connectionType** se define mediante el [**elemento WLANProfile.**]
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el **elemento connectionType,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
+Para ver perfiles de ejemplo que usan el **elemento connectionType,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Para ver los perfiles de ejemplo que usan el **elemento connectionType,** vea [E
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 

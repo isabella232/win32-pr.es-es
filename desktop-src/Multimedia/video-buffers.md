@@ -4,17 +4,17 @@ description: Búferes de vídeo
 ms.assetid: 0dfe01ec-f997-4e5e-a73d-e6b712d0e19e
 keywords:
 - WM_CAP_GET_SEQUENCE_SETUP mensaje
-- CapCaptureGetSetup (macro)
+- CapCaptureGetSetup macro
 - WM_CAP_SET_SEQUENCE_SETUP mensaje
-- CapCaptureSetSetup (macro)
+- CapCaptureSetSetup macro
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 71e2f3e5b56f995e6a09792260ac2fd6e1ba5cd7
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372080"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245661"
 ---
 # <a name="video-buffers"></a>Búferes de vídeo
 

@@ -4,12 +4,12 @@ ms.assetid: dd290c73-6528-482d-8276-ac56d0fec181
 title: ICE83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78e8014f8feee76e4d1910fb601e186bec928a0fd6d6d34469ce2c2b201b724d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d5ac38b4455875314c85fa08c1cfdc329e0cb470
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119580755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074527"
 ---
 # <a name="ice83"></a>ICE83
 

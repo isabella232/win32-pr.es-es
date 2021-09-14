@@ -7,15 +7,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1774eb3df2a45f98558862a15349007cd299d142
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371762"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245667"
 ---
 # <a name="verifying-the-output-device"></a>Comprobación del dispositivo de salida
 
-Después de abrir el secuenciador, debe comprobar si el asignador de MIDI estaba disponible y seleccionado como dispositivo de salida. En el ejemplo siguiente se usa el [**comando MCI \_ STATUS**](mci-status.md) para comprobar que el asignador de MIDI es el dispositivo de salida del secuenciador MCI.
+Después de abrir el secuenciador, debe comprobar si el asignador de MIDI estaba disponible y seleccionado como dispositivo de salida. En el ejemplo siguiente se usa el comando STATUS de [**MCI \_**](mci-status.md) para comprobar que el asignador de MIDI es el dispositivo de salida del secuenciador de MCI.
 
 
 ```C++

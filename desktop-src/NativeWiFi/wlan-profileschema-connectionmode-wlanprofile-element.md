@@ -1,7 +1,7 @@
 ---
 description: Indica si la conexión a una LAN inalámbrica debe ser automática o iniciada por el usuario.
 ms.assetid: 0fad8392-3053-494b-9b30-1db85408a437
-title: elemento connectionMode (WLANProfile)
+title: Elemento connectionMode (WLANProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: a6ef18eff8ba27a3169399f1f10e0707c4e0b3c010d54830ad8f8f997c5e1b50
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3dafb9561bf8b5e3c5c66eb23bd5e286cbd38118
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245559"
 ---
-# <a name="connectionmode-wlanprofile-element"></a>elemento connectionMode (WLANProfile)
+# <a name="connectionmode-wlanprofile-element"></a>Elemento connectionMode (WLANProfile)
 
 El elemento connectionMode (WLANProfile) indica si la conexión a una LAN inalámbrica debe ser automática o iniciada por el usuario.
 
@@ -46,15 +46,15 @@ Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md
 
 El **elemento connectionMode** se define mediante el [**elemento WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la tabla siguiente se describen los valores de enumeración.
 
 
 
-| Valor  | Descripción                                                                                                |
+| Value  | Descripción                                                                                                |
 |--------|------------------------------------------------------------------------------------------------------------|
-| auto   | La conexión a la red inalámbrica debe iniciarse automáticamente siempre que la red esté dentro del alcance. |
+| auto   | La conexión a la red inalámbrica debe iniciarse automáticamente siempre que la red esté dentro del intervalo. |
 | manual | La conexión a la red inalámbrica solo se establece tras la solicitud explícita de un usuario.               |
 
 
@@ -69,9 +69,9 @@ Para ver perfiles de ejemplo que usan el **elemento connectionMode,** vea [Ejemp
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 

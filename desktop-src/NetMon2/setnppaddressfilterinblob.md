@@ -1,5 +1,5 @@
 ---
-description: La función SetNPPAddressFilterInBlob establece el filtro de direcciones dado en blob.
+description: La función SetNPPAddressFilterInBlob establece el filtro de direcciones determinado en blob.
 ms.assetid: bdd1482d-8be0-4999-9a7a-16b0400412fb
 title: Función SetNPPAddressFilterInBlob (Netmon.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: da2119b30f690acf5deac46d43d9382e75c6caf1c2e9f41784a4b34f7f80e257
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39e8a85599fa63b1320d707f648731a195dbb48e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118363821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245217"
 ---
 # <a name="setnppaddressfilterinblob-function"></a>Función SetNPPAddressFilterInBlob
 
-La **función SetNPPAddressFilterInBlob** establece el filtro de direcciones dado en blob.
+La **función SetNPPAddressFilterInBlob** establece el filtro de direcciones determinado en blob.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -74,7 +74,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

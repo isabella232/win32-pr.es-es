@@ -4,12 +4,12 @@ ms.assetid: 438153c1-bc4b-4ecf-ab85-d66ad69c987c
 title: ICE19
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1a706999744762a930a800326cb8d38487f19c1c4ea3e01b6b1f8aeae4ca2dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a53aa3268a1c77f674d4a130c9de02c44b56243
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119529115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074653"
 ---
 # <a name="ice19"></a>ICE19
 
@@ -19,15 +19,15 @@ ICE19 valida que los componentes o accesos directos anunciados tienen un Compone
 
 ## <a name="result"></a>Resultado
 
-ICE19 envía un mensaje de error si la columna KeyPath de la tabla Component no hace referencia a un archivo en el caso de un componente anunciado o un directorio en el caso de un acceso directo anunciado. ICE19 envía un mensaje de error si los componentes o accesos directos anunciados no tienen un ComponentId.
+ICE19 publica un mensaje de error si la columna KeyPath de la tabla Component no hace referencia a un archivo en el caso de un componente anunciado o un directorio en el caso de un acceso directo anunciado. ICE19 publica un mensaje de error si los componentes o accesos directos anunciados no tienen un ComponentId.
 
 ## <a name="example"></a>Ejemplo
 
-ICE19 publica los siguientes mensajes de error para el ejemplo que se muestra:
+ICE19 publica los siguientes mensajes de error para el ejemplo mostrado:
 
 -   La extensión flp hace referencia al componente Comp1 que no tiene un ComponentId especificado en la [tabla Component](component-table.md).
 -   El archivo exe de extensión hace referencia al componente Comp4, que hace referencia a un directorio como KeyPath. KeyPath es NULL en la tabla Component.
--   Acceso directo2 hace referencia al componente Comp3, que hace referencia a una entrada del Registro como ruta de acceso de clave. El valor de la columna Attributes de la tabla Component es 4.
+-   Acceso directo2 hace referencia al componente Comp3, que hace referencia a una entrada del Registro como ruta de acceso de la clave. El valor de la columna Attributes de la tabla Component es 4.
 
 [Tabla de componentes](component-table.md) (parcial)
 
@@ -84,7 +84,7 @@ ICE19 publica los siguientes mensajes de error para el ejemplo que se muestra:
  
 
 > [!Note]  
-> Si la extensión flp y exe hacen referencia al mismo componente, el servidor EXE o COM que los abre debe ser el mismo. Este EXE suele ser keyPath para el componente. Para OFFICE, el documento de extensiones y xls no pueden hacer referencia al mismo componente porque el mismo EXE no abre ambas extensiones. Necesita winword.exe para abrir extensiones de documento y necesita excel.exe para abrir extensiones xls.
+> Si la extensión flp y exe hacen referencia al mismo componente, el servidor EXE o COM que los abre debe ser el mismo. Normalmente, este exe es keyPath para el componente. Para OFFICE, el documento de extensiones y xls no pueden hacer referencia al mismo componente porque el mismo EXE no abre ambas extensiones. Necesita winword.exe extensiones de documentos y necesita excel.exe extensiones xls.
 
  
 

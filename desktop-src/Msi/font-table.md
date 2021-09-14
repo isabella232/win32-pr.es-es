@@ -4,12 +4,12 @@ ms.assetid: 5ddff430-a6f8-473b-8006-ac0124469a99
 title: Tabla de fuentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65efb786d4379bbe14fec0239cd8f3edee50f1b79a6413904b6e00331bc49a25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c10208c7b9a14ca7f311aff71653a53a3da9ed0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118946992"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074768"
 ---
 # <a name="font-table"></a>Tabla de fuentes
 
@@ -35,7 +35,7 @@ La tabla Font tiene las columnas siguientes.
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Archivo\_
 </dt> <dd>
 
-Clave externa en la [entrada de la tabla](file-table.md) Archivo para el archivo de fuente. Se recomienda que el componente que contiene el archivo de fuente tenga el elemento FontsFolder especificado en la columna \_ Directory de la tabla [Component](component-table.md).
+Clave externa en la [entrada de la tabla Archivo](file-table.md) para el archivo de fuente. Se recomienda que el componente que contiene el archivo de fuente tenga el elemento FontsFolder especificado en la columna \_ Directory de la tabla [Component](component-table.md).
 
 </dd> <dt>
 
@@ -46,15 +46,15 @@ Nombre de fuente. Se recomienda dejar esta columna en null para las fuentes True
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se hace referencia a esta tabla cuando se ejecuta [la acción RegisterFonts](registerfonts-action.md) o la acción [UnregisterFonts.](unregisterfonts-action.md)
 
 Si el campo FontTitle se deja como Null, el nombre de fuente se lee directamente desde el archivo de fuente especificado. Si el nombre de fuente registrado en el campo FontTitle difiere del nombre de fuente interno registrado en el archivo de fuente, la fuente se registra dos veces mediante la [acción RegisterFonts](registerfonts-action.md).
 
-Los archivos de fuente no deben crearse con un identificador de idioma, ya que las fuentes no tienen un recurso de identificador de idioma incrustado. Por lo tanto, la columna Language de [la tabla File](file-table.md) debe quedar en null para los archivos de fuente.
+Los archivos de fuente no deben crearse con un identificador de idioma, ya que las fuentes no tienen un recurso de identificador de idioma incrustado. Por lo tanto, la columna Language de [la tabla File](file-table.md) debe dejar null para los archivos de fuente.
 
-Dado que el instalador no cuenta los archivos de fuente de forma predeterminada, los archivos de fuente preexistente se pueden quitar con su componente al desinstalar una aplicación. Para asegurarse de que no se quita un archivo de fuentes, los autores pueden establecer las marcas de bits **msidbComponentAttributesSharedDllRefCount** o **msidbComponentAttributesPermanent** en la columna Atributos de la tabla de componentes msi para el componente que contiene el archivo de \_ \_ \_ fuente.
+Dado que el instalador no cuenta los archivos de fuente de forma predeterminada, los archivos de fuente preexistente se pueden quitar con su componente al desinstalar una aplicación. Para asegurarse de que no se quita un archivo de fuente, los autores pueden establecer las marcas de bits **msidbComponentAttributesSharedDllRefCount** o **msidbComponentAttributesPermanent** en la columna Atributos de la tabla de componentes msi Component Table para el componente que contiene el archivo de \_ \_ \_ fuente.
 
 ## <a name="validation"></a>Validación
 

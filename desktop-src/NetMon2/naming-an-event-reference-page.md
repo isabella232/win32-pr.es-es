@@ -1,17 +1,17 @@
 ---
 description: Después de crear un documento HTML de origen de la página de referencia de eventos (ERP), debe nombrarlo para que Monitor de red pueda mostrarlo en el Visor de eventos.
 ms.assetid: 0c668a8b-94a5-4996-8214-4629a24a8337
-title: Asignar un nombre a una página de referencia de eventos
+title: Asignación de nombres a una página de referencia de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 569991c5e5ac24e18476fe27727f4fad1c310c8fd4e9439062fdf91bfb344005
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2f9c82b153ce2c7086af3883bcf3c4b34a0e68a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245331"
 ---
-# <a name="naming-an-event-reference-page"></a>Asignar un nombre a una página de referencia de eventos
+# <a name="naming-an-event-reference-page"></a>Asignación de nombres a una página de referencia de eventos
 
 Después de crear un documento HTML de origen de la página de referencia de eventos (ERP), debe nombrarlo para que Monitor de red pueda mostrarlo en el Visor de eventos.
 
@@ -26,7 +26,7 @@ Monitor de nombres y archivos ERP expertos con este formato:
 <span id="ExpertName"></span><span id="expertname"></span><span id="EXPERTNAME"></span>**ExpertName**
 </dt> <dd>
 
-Nombre de archivo DLL, sin incluir la extensión de nombre de archivo.
+Nombre de archivo DLL, excepto la extensión de nombre de archivo.
 
 </dd> <dt>
 
@@ -35,7 +35,7 @@ Nombre de archivo DLL, sin incluir la extensión de nombre de archivo.
 
 Identificador de evento del ERP experto.
 
-El identificador de evento también se encuentra en el **miembro EventIdent** de la estructura **NMEVENTDATA.**
+El identificador de evento también se encuentra en el **miembro EventIdent** de la **estructura NMEVENTDATA.**
 
 </dd> </dl>
 

@@ -4,18 +4,18 @@ ms.assetid: c80ad013-0b92-461f-8714-4b6d0cb6de0d
 title: Enumeración de parámetros y valores para todos los codificadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4545c23522b2f129d858dab03e8e2b80941426a36758df5ab60850ca9e81974
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2fdaf522193f1074a28fe9f5ebb8a7afc2bade0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118248504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072426"
 ---
 # <a name="listing-parameters-and-values-for-all-encoders"></a>Enumeración de parámetros y valores para todos los codificadores
 
-La siguiente aplicación de consola enumera todos los parámetros admitidos por los distintos codificadores instalados en el equipo. La función principal llama [**a GetImageEncoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) para detectar qué codificadores están disponibles. Para cada codificador disponible, la función principal llama a la función auxiliar ShowAllEncoderParameters.
+La siguiente aplicación de consola enumera todos los parámetros admitidos por los distintos codificadores instalados en el equipo. La función principal llama [**a GetImageEncoders para**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimageencoders) detectar qué codificadores están disponibles. Para cada codificador disponible, la función principal llama a la función auxiliar ShowAllEncoderParameters.
 
-La función ShowAllEncoderParameters llama al método [**Image::GetEncoderParameterList**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlist) para detectar qué parámetros son compatibles con un codificador determinado. Para cada parámetro admitido, la función enumera la categoría, el tipo de datos y el número de valores. La función ShowAllEncoderParameters se basa en dos funciones auxiliares: EncoderParameterCategoryFromGUID y ValueTypeFromULONG.
+La función ShowAllEncoderParameters llama al método [**Image::GetEncoderParameterList**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlist) para detectar qué parámetros son compatibles con un codificador determinado. Para cada parámetro admitido, la función muestra la categoría, el tipo de datos y el número de valores. La función ShowAllEncoderParameters se basa en dos funciones auxiliares: EncoderParameterCategoryFromGUID y ValueTypeFromULONG.
 
 
 ```
@@ -182,7 +182,7 @@ HRESULT ValueTypeFromULONG(ULONG index, WCHAR* strValueType, UINT maxChars)
 
 
 
-Al ejecutar la aplicación de consola anterior, se obtiene una salida similar a la siguiente:
+Al ejecutar la aplicación de consola anterior, obtiene una salida similar a la siguiente:
 
 
 ```
@@ -239,7 +239,7 @@ Puede extraer las conclusiones siguientes examinando la salida del programa ante
 -   El codificador JPEG admite las categorías de parámetros Transformation, Quality, LuminanceTable y ChrominanceTable.
 -   El codificador TIFF admite las categorías de parámetros Compression, ColorDepth y SaveFlag.
 
-También puede ver el número de valores aceptables para cada categoría de parámetros. Por ejemplo, puede ver que la categoría de parámetros ColorDepth (códec TIFF) tiene cinco valores de tipo **ULONG.** En el código siguiente se enumeran esos cinco valores. Suponga que **pEncoderParameters** es un puntero a un objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) que representa el codificador TIFF.
+También puede ver el número de valores aceptables para cada categoría de parámetro. Por ejemplo, puede ver que la categoría de parámetros ColorDepth (códec TIFF) tiene cinco valores de tipo **ULONG**. En el código siguiente se enumeran esos cinco valores. Suponga que **pEncoderParameters es** un puntero a un objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) que representa el codificador TIFF.
 
 
 ```
@@ -272,7 +272,7 @@ The allowable values for ColorDepth are
 
 
 > [!Note]  
-> En algunos casos, los valores de un [**objeto EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) son los valores numéricos de los elementos de la [**enumeración EncoderValue.**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) Sin embargo, los números de la lista anterior no se relacionan con la **enumeración EncoderValue.** Los números significan 1 bit por píxel, 2 bits por píxel, y así sucesivamente.
+> En algunos casos, los valores de un [**objeto EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) son los valores numéricos de los elementos de la [**enumeración EncoderValue.**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) Sin embargo, los números de la lista anterior no están relacionados con la **enumeración EncoderValue.** Los números significan 1 bit por píxel, 2 bits por píxel, y así sucesivamente.
 
  
 
@@ -291,7 +291,7 @@ Si escribe código similar al ejemplo anterior para investigar los valores permi
 
 
 
-| Parámetro de codificador TIFF | Valores permitidos                                                                                                                                                                             |
+| Parámetro del codificador TIFF | Valores permitidos                                                                                                                                                                             |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Compresión            | EncoderValueCompressionLZW EncoderValueCompressionCCITT3<br/>  EncoderValueCompressionCCITT4<br/>  EncoderValueCompressionRle<br/>  EncoderValueCompressionNone<br/> |
 | Colordepth             | 1, 4, 8, 24, 32                                                                                                                                                                              |

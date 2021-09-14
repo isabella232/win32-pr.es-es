@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 20ed4a0358bc0aecada66858f9814bce94252ff9d705c971be947ca5af788ab3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2183f5635dcdb15362a86a77ae2b3c109c71dbd5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245229"
 ---
 # <a name="setmacaddressinblob-function"></a>Función SetMacAddressInBlob
 
@@ -53,7 +53,7 @@ Controle el BLOB que se va a establecer.
 *pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del **propietario de** BLOB que se va a establecer.
+Puntero al nombre del propietario **de** BLOB que se va a establecer.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -98,7 +98,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

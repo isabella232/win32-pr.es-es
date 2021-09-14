@@ -1,19 +1,19 @@
 ---
-description: Puede instalar productos completos con las Windows installer. En los pasos siguientes se describe cómo instalar un producto.
+description: Puede instalar productos completos con las Windows Installer. En los pasos siguientes se describe cómo instalar un producto.
 ms.assetid: 03cc7abc-63bd-4a01-a05c-9f7928de8827
 title: Instalación de una aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74aad6e130d78bd30b940232aeb6fe1da6508be754fe50b9abb9dbcaa0186562
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8cf312e7394c4fcbca699f6e032e315a42356c1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119327965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072056"
 ---
 # <a name="installing-an-application"></a>Instalación de una aplicación
 
-Puede instalar productos completos con las Windows installer. En los pasos siguientes se describe cómo instalar un producto.
+Puede instalar productos completos con las Windows Installer. En los pasos siguientes se describe cómo instalar un producto.
 
 **Para instalar un producto**
 

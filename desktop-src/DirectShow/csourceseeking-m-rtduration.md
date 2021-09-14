@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6aa62a3cdf906a4e9666b7786c08e49fca250ef042d187902132410cc2f0abaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e188a29689a6dd1a54ef401f8bd2677e30989972
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072261"
 ---
 # <a name="csourceseekingm_rtduration-member"></a>Miembro CSourceSeeking::m \_ rtDuration
 
@@ -36,7 +36,7 @@ CRefTime m_rtDuration;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Mantenga **presionada la \_ sección m pLock** critical antes de acceder a esta variable.
 
@@ -51,7 +51,7 @@ Mantenga **presionada la \_ sección m pLock** critical antes de acceder a esta 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

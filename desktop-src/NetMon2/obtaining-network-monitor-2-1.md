@@ -4,12 +4,12 @@ ms.assetid: c349fa6d-74f1-475d-b8c7-3ec574478afc
 title: Obtener Monitor de red 2.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb8466422660ceec619db69bc09970d5049ca267ddb5889fb1a37da934bbf15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e6c30f08079312d52bd01b25fd5f897689229a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245259"
 ---
 # <a name="obtaining-network-monitor-21"></a>Obtener Monitor de red 2.1
 

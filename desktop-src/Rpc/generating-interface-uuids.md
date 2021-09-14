@@ -4,12 +4,12 @@ description: Generación de identificadores únicos universales (UUID) de interf
 ms.assetid: a973b7f9-71c5-46a0-aa0c-51f150560dbc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70c21ead6161a79d000d2741a49c4fb61ff23b3a8a3340db2eb26a7805424df5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68c5f727ed3e37139d4da50f84c3929bff333156
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118929552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244719"
 ---
 # <a name="generating-interface-uuids"></a>Generación de UUID de interfaz
 

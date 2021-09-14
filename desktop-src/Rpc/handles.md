@@ -4,20 +4,20 @@ description: Hasta dos partes en la descripción de cadena de formato de los ide
 ms.assetid: 11c6742c-b2f5-4201-8b1c-7e31ae52e0da
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bb31dcf075b7b07b65d2a976a37386e164d8cadc11903a33c22172c433a3a51
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d1c1ce68b74440fc9339fb9cf9170bfdd1fdfcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118929542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244695"
 ---
 # <a name="handles"></a>Asas
 
-Hasta dos partes en la descripción de cadena de formato de los identificadores de una dirección de procedimiento. La primera parte es el tipo de identificador<un campo> de la descripción de un procedimiento, que se \_ usa para indicar identificadores implícitos. Esta parte siempre está presente. La segunda parte es una descripción de parámetro de cualquier identificador explícito en el procedimiento. Ambos se explican en las secciones siguientes, junto con una explicación de la compatibilidad adicional del compilador MIDL de la estructura del descriptor de código auxiliar para los problemas de identificador de enlace.
+Hasta dos partes en la descripción de cadena de formato de los identificadores de una dirección de procedimiento. La primera parte es el tipo de identificador<1> campo de la descripción de un procedimiento, que se usa \_ para indicar identificadores implícitos. Esta parte siempre está presente. La segunda parte es una descripción de parámetro de cualquier identificador explícito en el procedimiento. Ambos se explican en las secciones siguientes, junto con una explicación de la compatibilidad adicional del compilador MIDL de la estructura del descriptor de código auxiliar para los problemas de identificador de enlace.
 
 ## <a name="implicit-handles"></a>Identificadores implícitos
 
-Si un procedimiento usa un identificador implícito para el enlace, el tipo de identificador<un campo> de la descripción del procedimiento contiene uno de los tres valores distintos de \_ cero válidos. La compatibilidad del compilador MIDL con identificadores implícitos se encuentra en el campo IMPLICIT \_ HANDLE INFO de la estructura Del descriptor de código \_ auxiliar:
+Si un procedimiento usa un identificador implícito para el enlace, el tipo de identificador<un campo> de la descripción del procedimiento contiene uno de los tres valores válidos distintos \_ de cero. La compatibilidad del compilador MIDL con identificadores implícitos se encuentra en el campo IMPLICIT \_ HANDLE INFO de la estructura Del descriptor de código \_ auxiliar:
 
 ``` syntax
 typedef  (__RPC_FAR * GENERIC_BINDING_ROUTINE)();
@@ -75,11 +75,11 @@ Genérico
 FC_BIND_GENERIC, flag_and_size<1>, offset<2>, binding_routine_pair_index<1>, FC_PAD
 ```
 
-La marca y el tamaño<1> la marca superior nibble y el tamaño \_ \_ inferior. La marca indica si un puntero pasa el identificador. El campo tamaño proporciona el tamaño del tipo de identificador genérico definido por el usuario. Este tamaño se limita a 1, 2 o 4 bytes en sistemas de 32 bits y 1, 2, 4 u 8 bytes en sistemas de 64 bits.
+La marca y el tamaño<1> tiene la marca superior \_ \_ nibble y el tamaño inferior nibble. La marca indica si un puntero pasa el identificador. El campo tamaño proporciona el tamaño del tipo de identificador genérico definido por el usuario. Este tamaño se limita a 1, 2 o 4 bytes en sistemas de 32 bits y 1, 2, 4 u 8 bytes en sistemas de 64 bits.
 
-El desplazamiento<2> campo proporciona el desplazamiento desde el principio de la pila del puntero hasta los datos del tamaño especificado.
+El desplazamiento<2 campos> proporciona el desplazamiento desde el principio de la pila del puntero hasta los datos del tamaño especificado.
 
-El índice de par de rutinas de enlace<1 campo> proporciona el índice en el campo \_ \_ \_ aGenericBindingRoutinePairs   del descriptor de código auxiliar para enlazar y desenlace los punteros de función rutinaria para el identificador genérico.
+El índice de par de rutinas de enlace<un campo> proporciona el índice en el campo \_ \_ \_ aGenericBindingRoutinePairs   del descriptor de código auxiliar para enlazar y desenlace los punteros de función rutinaria para el identificador genérico.
 
 > [!Note]  
 > Una descripción de identificador genérico en el formato de tipo es solo la descripción del tipo de datos relacionado.
@@ -115,7 +115,7 @@ Las cuatro primeras marcas siempre han estado presentes, las cuatro últimas se 
 
 El desplazamiento<2> campo proporciona el desplazamiento desde el inicio de la pila hasta el identificador de contexto.
 
-El índice de rutina de desmontaje de contexto<1> proporciona un índice en el campo \_ \_ \_ **apfnRunRundownRoutines** del descriptor de código auxiliar a la rutina de desmontaje utilizada para este identificador de contexto. El compilador siempre genera un índice. Para las rutinas que no tienen una rutina de desmontaje, se trata de un índice de una posición de tabla que contiene null.
+El índice de rutina de desmontaje de contexto<1> proporciona un índice en el campo \_ \_ \_ **apfnRunRundownRoutines** del descriptor de código auxiliar para la rutina de desmontaje utilizada para este identificador de contexto. El compilador siempre genera un índice. Para las rutinas que no tienen una rutina de desmontaje, se trata de un índice de una posición de tabla que contiene null.
 
 Para los códigos auxiliares integrados **en –Oi2,** el parámetro num<1> proporciona el recuento ordinal, empezando por cero, especificando qué identificador de contexto se encuentra en el procedimiento \_ especificado.
 
@@ -175,10 +175,10 @@ typedef struct
 -   El bit HasReturn se establece si el procedimiento tiene un valor devuelto.
 -   El bit HasPipes se establece si el paquete de canalización debe usarse para admitir un argumento de canalización.
 -   El bit HasAsyncUuid se establece si el procedimiento es un procedimiento DCOM asincrónico.
--   El bit HasExtensions indica que Windows se usan las extensiones 2000 y posteriores.
+-   El bit HasExtensions indica que Windows 2000 y las extensiones posteriores.
 -   El bit HasAsyncHandle indica un procedimiento RPC asincrónico.
 
-El bit HasAsyncHandle se ha usado inicialmente para una implementación DCOM diferente de compatibilidad asincrónica y, por tanto, no se pudo usar para la compatibilidad asincrónica de estilo actual en DCOM. El bit HasAsyncUuid actualmente indica esto.
+El bit HasAsyncHandle se ha usado inicialmente para una implementación DCOM diferente de compatibilidad asincrónica y, por lo tanto, no se pudo usar para la compatibilidad asincrónica de estilo actual en DCOM. El bit HasAsyncUuid actualmente indica esto.
 
  
 

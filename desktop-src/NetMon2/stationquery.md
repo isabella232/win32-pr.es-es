@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: a2e46f4c0d213091a3915b5310d7768a193d33e5ac3391fd3bc3c6781e32cb57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de76c4da7bc27d76c04aeeaa7a46d69134e411ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118363061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245156"
 ---
 # <a name="stationquery-structure"></a>STATIONQUERY (estructura)
 
@@ -44,7 +44,7 @@ typedef struct _STATIONQUERY {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -55,7 +55,7 @@ Marcas que identifican el estado actual de Monitor de red.
 
 
 
-| Valor                                                                                                                                                                                                                | Significado                                                 |
+| Value                                                                                                                                                                                                                | Significado                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | <span id="STATIONQUERY_FLAGS_LOADED"></span><span id="stationquery_flags_loaded"></span><dl> <dt>**STATIONQUERY \_ FLAGS \_ LOADED**</dt> </dl>                   | El controlador se carga, pero el kernel no.<br/> |
 | <span id="STATIONQUERY_FLAGS_RUNNING"></span><span id="stationquery_flags_running"></span><dl> <dt>**MARCAS STATIONQUERY \_ EN \_ EJECUCIÓN**</dt> </dl>                | El controlador se carga pero no captura datos.<br/> |
@@ -131,7 +131,7 @@ Nombre de usuario Unicode. Este miembro se aplica a Monitor de red 2.0 o posteri
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La estructura [QUERYTABLE](querytable.md) usa una matriz de estas estructuras para proporcionar una lista de los equipos que actualmente usan Monitor de red para capturar datos.
 
@@ -139,7 +139,7 @@ La estructura [QUERYTABLE](querytable.md) usa una matriz de estas estructuras pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -147,11 +147,11 @@ La estructura [QUERYTABLE](querytable.md) usa una matriz de estas estructuras pa
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Querytable](querytable.md)
+[QUERYTABLE](querytable.md)
 </dt> </dl>
 
  

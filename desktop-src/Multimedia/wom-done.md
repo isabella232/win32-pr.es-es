@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ab64598a2dfdd329615ca116fb6382909bb83b01
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245619"
 ---
 # <a name="wom_done-message"></a>Mensaje DE WOM \_ DONE
 
-El **mensaje WOM \_ DONE** se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se devuelve el búfer de salida dado a la aplicación. Los búferes se devuelven a la aplicación cuando se han reproducido, o como resultado de una llamada a la [**función waveOutReset.**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset)
+El **mensaje WOM \_ DONE** se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se devuelve el búfer de salida dado a la aplicación. Los búferes se devuelven a la aplicación cuando se han reproducido o como resultado de una llamada a la [**función waveOutReset.**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset)
 
 
 ```C++

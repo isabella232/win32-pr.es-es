@@ -1,5 +1,5 @@
 ---
-description: Proporciona una línea en el panel superior de la Visor de eventos que actúa como contenedor para todos los datos posibles insertados en una columna.
+description: Proporciona una línea en el panel superior del Visor de eventos que actúa como contenedor para todos los datos posibles insertados en una columna.
 ms.assetid: 2ad32c23-5dbe-46be-b0cc-ccf7a6fe8ec3
 title: Estructura NMCOLUMNVARIANT (Netmon.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 814b419909591e45c07b3ed499072ec4871cdeb1f4c5a355277a03d0623d264c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9f70d2d1a0caf63411fcd2b44d5ed8bdcbecd00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890034"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245277"
 ---
 # <a name="nmcolumnvariant-structure"></a>NMCOLUMNVARIANT (estructura)
 
@@ -53,7 +53,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Valor entero de 8 bits con signo.
 **Uint16Val**
 </dt> <dd>
 
-Valor entero de 16 bits sin signo.
+Valor entero sin signo de 16 bits.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Valor entero de 16 bits con signo.
 **Uint32Val**
 </dt> <dd>
 
-Valor entero sin signo de 32 bits.
+Valor entero de 32 bits sin signo.
 
 </dd> <dt>
 

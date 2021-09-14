@@ -4,12 +4,12 @@ description: Memory-Management modelos
 ms.assetid: 1690901b-2a1e-455b-a440-2674f5e5dfa4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a985158f54bf09d149e04c7eebc5853417e39191ca0bb854cb7d1ba5de1e5d86
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8114f11755829be9d5f7b17b751e075701ac0aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244466"
 ---
 # <a name="memory-management-models"></a>Memory-Management modelos
 

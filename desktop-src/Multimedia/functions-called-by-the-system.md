@@ -13,18 +13,18 @@ keywords:
 - ACM (administrador de compresión de audio), funciones de devolución de llamada
 - procedimientos de enlace
 - procedimientos de controlador
-- administrador de compresión de audio (ACM), procedimientos de enlace
+- Administrador de compresión de audio (ACM), procedimientos de enlace
 - ACM (administrador de compresión de audio), procedimientos de enlace
-- administrador de compresión de audio (ACM), procedimientos de controlador
+- Administrador de compresión de audio (ACM), procedimientos de controlador
 - ACM (administrador de compresión de audio), procedimientos de controlador
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f1324ea168892d54f21754658607476c35075910
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074247"
 ---
 # <a name="functions-called-by-the-system"></a>Funciones llamadas por el sistema
 
@@ -41,7 +41,7 @@ Las funciones de devolución de llamada tienen los nombres siguientes:
 
 La mayoría de las funciones de enumeración del ACM usan funciones de devolución de llamada. Por ejemplo, cuando se llama a una función de enumeración, el ACM enumera los elementos llamando repetidamente a la aplicación a través de la función de devolución de llamada.
 
-No se puede llamar a algunas funciones desde estas funciones de devolución de llamada. Las funciones a las que no se puede llamar manipulan estructuras de ACM internas que usan las funciones de enumeración. No se debe llamar a las funciones siguientes desde una función de devolución de llamada:
+No se puede llamar a algunas funciones desde dentro de estas funciones de devolución de llamada. Las funciones a las que no se puede llamar manipulan estructuras internas de ACM que usan las funciones de enumeración. No se debe llamar a las siguientes funciones desde una función de devolución de llamada:
 
 -   [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 -   [**acmDriverPriority**](/windows/desktop/api/Msacm/nf-msacm-acmdriverpriority)
@@ -52,7 +52,7 @@ El sistema llama a las funciones siguientes para ayudar a una aplicación a cont
 -   [**acmFilterChooseHookProc**](/windows/desktop/api/Msacm/nc-msacm-acmfilterchoosehookproc)
 -   [**acmFormatChooseHookProc**](/windows/desktop/api/Msacm/nc-msacm-acmformatchoosehookproc)
 
-La siguiente función se especifica como un prototipo que permite a una aplicación usar un códec, convertidor o filtro personalizados. Una función conforme a este prototipo se puede pasar como argumento a la [**función acmDriverAdd.**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
+La siguiente función se especifica como un prototipo que permite a una aplicación usar un códec, convertidor o filtro personalizados. Una función que se ajuste a este prototipo se puede pasar como argumento a la [**función acmDriverAdd.**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 
 -   [**acmDriverProc**](/windows/desktop/api/Msacm/nc-msacm-acmdriverproc)
 

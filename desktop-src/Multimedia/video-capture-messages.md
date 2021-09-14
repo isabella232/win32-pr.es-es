@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1e6d775decf7a7514772e9291665f3fdf10233d6
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371389"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245606"
 ---
 # <a name="video-capture-messages"></a>Mensajes de captura de vídeo
 
@@ -25,30 +25,30 @@ Los mensajes siguientes se usan con la captura de vídeo.
 -   [**WM \_ CAP \_ DLG \_ VIDEOSOURCE**](wm-cap-dlg-videosource.md)
 -   [**WM \_ CAP \_ DRIVER \_ CONNECT**](wm-cap-driver-connect.md)
 -   [**DESCONEXIÓN DEL CONTROLADOR WM \_ CAP \_ \_**](wm-cap-driver-disconnect.md)
--   [**LÍMITES \_ GET \_ DEL CONTROLADOR \_ WM CAP \_**](wm-cap-driver-get-caps.md)
+-   [**LÍMITES GET DEL CONTROLADOR WM \_ CAP \_ \_ \_**](wm-cap-driver-get-caps.md)
 -   [**WM \_ CAP \_ DRIVER \_ GET \_ NAME**](wm-cap-driver-get-name.md)
 -   [**VERSIÓN GET DEL CONTROLADOR WM \_ CAP \_ \_ \_**](wm-cap-driver-get-version.md)
 -   [**WM \_ CAP \_ EDIT \_ COPY**](wm-cap-edit-copy.md)
 -   [**WM \_ CAP \_ FILE \_ ALLOCATE**](wm-cap-file-allocate.md)
 -   [**ARCHIVO WM \_ CAP \_ GET CAPTURE \_ \_ \_ FILE**](wm-cap-file-get-capture-file.md)
 -   [**WM \_ CAP \_ FILE \_ SAVEAS**](wm-cap-file-saveas.md)
--   [**ARCHIVO \_ DE LÍMITE DE WM \_ \_ SAVEDIB**](wm-cap-file-savedib.md)
--   [**ARCHIVO DE CAPTURA DE CONJUNTO DE ARCHIVOS DE LÍMITE \_ \_ \_ \_ \_ DE WM**](wm-cap-file-set-capture-file.md)
+-   [**ARCHIVO \_ WM CAP \_ \_ SAVEDIB**](wm-cap-file-savedib.md)
+-   [**ARCHIVO DE \_ CAPTURA DEL CONJUNTO DE \_ \_ ARCHIVOS \_ \_ DE WM CAP**](wm-cap-file-set-capture-file.md)
 -   [**WM \_ CAP \_ FILE \_ SET \_ INFOCHUNK**](wm-cap-file-set-infochunk.md)
 -   [**WM \_ CAP \_ GET \_ AUDIOFORMAT**](wm-cap-get-audioformat.md)
 -   [**WM \_ CAP \_ GET \_ MCI \_ DEVICE**](wm-cap-get-mci-device.md)
 -   [**CONFIGURACIÓN DE SECUENCIA GET DE WM \_ CAP \_ \_ \_**](wm-cap-get-sequence-setup.md)
--   [**WM \_ CAP \_ GET \_ STATUS**](wm-cap-get-status.md)
+-   [**ESTADO GET \_ de WM CAP \_ \_**](wm-cap-get-status.md)
 -   [**WM \_ CAP \_ GET \_ USER \_ DATA**](wm-cap-get-user-data.md)
 -   [**WM \_ CAP \_ GET \_ VIDEOFORMAT**](wm-cap-get-videoformat.md)
 -   [**MARCO DE \_ CAPTURA DE EXTREMO DE \_ \_ WM**](wm-cap-grab-frame.md)
--   [**NOSTOP \_ DEL MARCO DE CAPTURA DE EXTREMO \_ \_ \_ DE WM**](wm-cap-grab-frame-nostop.md)
+-   [**WM \_ CAP \_ GRAB \_ FRAME \_ NOSTOP**](wm-cap-grab-frame-nostop.md)
 -   [**WM \_ CAP \_ PAL \_ AUTOCREATE**](wm-cap-pal-autocreate.md)
 -   [**WM \_ CAP \_ PAL \_ MANUALCREATE**](wm-cap-pal-manualcreate.md)
 -   [**WM \_ CAP \_ PAL \_ OPEN**](wm-cap-pal-open.md)
 -   [**WM \_ CAP \_ PAL \_ PASTE**](wm-cap-pal-paste.md)
 -   [**WM \_ CAP \_ PAL \_ SAVE**](wm-cap-pal-save.md)
--   [**SECUENCIA \_ DE LÍMITE DE \_ WM**](wm-cap-sequence.md)
+-   [**WM \_ CAP \_ SEQUENCE**](wm-cap-sequence.md)
 -   [**WM \_ CAP \_ SEQUENCE \_ NOFILE**](wm-cap-sequence-nofile.md)
 -   [**WM \_ CAP \_ SET \_ AUDIOFORMAT**](wm-cap-set-audioformat.md)
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ CAPCONTROL**](wm-cap-set-callback-capcontrol.md)
@@ -57,18 +57,18 @@ Los mensajes siguientes se usan con la captura de vídeo.
 -   [**ESTADO DE DEVOLUCIÓN DE LLAMADA DEL CONJUNTO DE \_ \_ \_ LÍMITES \_ DE WM**](wm-cap-set-callback-status.md)
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ VIDEOSTREAM**](wm-cap-set-callback-videostream.md)
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ WAVESTREAM**](wm-cap-set-callback-wavestream.md)
--   [**RENDIMIENTO DE DEVOLUCIÓN DE LLAMADA DEL CONJUNTO DE \_ \_ \_ LÍMITES \_ DE WM**](wm-cap-set-callback-yield.md)
+-   [**RENDIMIENTO DE \_ DEVOLUCIÓN DE LLAMADA DEL CONJUNTO DE \_ \_ LÍMITES \_ DE WM**](wm-cap-set-callback-yield.md)
 -   [**WM \_ CAP \_ SET \_ MCI \_ DEVICE**](wm-cap-set-mci-device.md)
 -   [**SUPERPOSICIÓN \_ DE CONJUNTO DE LÍMITE DE \_ \_ WM**](wm-cap-set-overlay.md)
 -   [**WM \_ CAP \_ SET \_ PREVIEW**](wm-cap-set-preview.md)
 -   [**WM \_ CAP \_ SET \_ PREVIEWRATE**](wm-cap-set-previewrate.md)
--   [**ESCALA \_ DE CONJUNTO DE \_ \_ LÍMITES DE WM**](wm-cap-set-scale.md)
+-   [**ESCALA \_ DEL CONJUNTO DE \_ \_ LÍMITES DE WM**](wm-cap-set-scale.md)
 -   [**DESPLAZAMIENTO \_ DE WM CAP \_ SET \_**](wm-cap-set-scroll.md)
--   [**CONFIGURACIÓN DE \_ SECUENCIA DEL CONJUNTO DE \_ \_ LÍMITES \_ DE WM**](wm-cap-set-sequence-setup.md)
--   [**DATOS \_ DE USUARIO DE WM CAP \_ SET \_ \_**](wm-cap-set-user-data.md)
+-   [**CONFIGURACIÓN DE \_ SECUENCIA DE WM CAP \_ SET \_ \_**](wm-cap-set-sequence-setup.md)
+-   [**WM \_ CAP \_ SET \_ USER \_ DATA**](wm-cap-set-user-data.md)
 -   [**WM \_ CAP \_ SET \_ VIDEOFORMAT**](wm-cap-set-videoformat.md)
 -   [**WM \_ CAP \_ SINGLE \_ FRAME**](wm-cap-single-frame.md)
--   [**CIERRE DE MARCO ÚNICO DE WM \_ CAP \_ \_ \_**](wm-cap-single-frame-close.md)
+-   [**CIERRE \_ DE \_ MARCO \_ ÚNICO DE WM CAP \_**](wm-cap-single-frame-close.md)
 -   [**WM \_ CAP \_ SINGLE \_ FRAME \_ OPEN**](wm-cap-single-frame-open.md)
 -   [**WM \_ CAP \_ STOP**](wm-cap-stop.md)
 

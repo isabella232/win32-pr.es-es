@@ -1,7 +1,7 @@
 ---
 description: Indica si una clave compartida está cifrada.
 ms.assetid: 9206ef74-cd3e-4374-bea9-0c10505d10bf
-title: Elemento Protected (sharedKey)
+title: elemento protected (sharedKey)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 0b48ef0e07e5502ea8577904facc52f9f7e69838
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677331"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272172"
 ---
-# <a name="protected-sharedkey-element"></a>Elemento Protected (sharedKey)
+# <a name="protected-sharedkey-element"></a>elemento protected (sharedKey)
 
-El elemento Protected (sharedKey) indica si una clave compartida está cifrada.
+El elemento protected (sharedKey) indica si se cifra una clave compartida.
 
 ``` syntax
 <xs:element name="protected"
@@ -29,17 +29,17 @@ El elemento Protected (sharedKey) indica si una clave compartida está cifrada.
  />
 ```
 
-El elemento se define mediante el elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) .
+El elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) define el elemento .
 
 ## <a name="remarks"></a>Observaciones
 
-En Windows Vista y Windows Server 2008, **Protected** siempre tiene el valor true si el perfil se recuperó del almacén de perfiles (por ejemplo, mediante una llamada a [**WlanGetProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetprofile)).
+Para Windows Vista y Windows Server 2008, **protected** siempre tiene un valor de TRUE si el perfil se recuperó del almacén de perfiles (por ejemplo, mediante una llamada a [**WlanGetProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetprofile)).
 
-En el caso de los perfiles pensados para usarse en Windows XP con Service Pack 3 (SP3) o la API de LAN inalámbrica para Windows XP con Service Pack 2 (SP2), **Protected** debe tener un valor de false.
+Para los perfiles diseñados para su uso en Windows XP con Service Pack 3 (SP3) o wireless LAN API para Windows XP con Service Pack 2 (SP2), **protected** debe tener un valor de FALSE.
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **protegido** , consulte [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan **el elemento** protegido, vea Ejemplos de [perfil inalámbrico](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,13 +47,13 @@ Para ver los perfiles de ejemplo que usan el elemento **protegido** , consulte [
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

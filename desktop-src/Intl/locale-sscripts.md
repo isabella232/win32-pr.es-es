@@ -4,12 +4,12 @@ ms.assetid: d15c501a-b77b-4446-bee6-6dbbd714b4e0
 title: LOCALE_SSCRIPTS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aede4d6d1843fd32bdd17ae3a275a364c3a2d4f0bd282302f49d7b4a3b0dd1ed
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2bb79f78626e7afb54229d8e0619e26d94250f86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274268"
 ---
 # <a name="locale_sscripts"></a>SSCRIPT \_ DE CONFIGURACIÓN REGIONAL
 
@@ -19,7 +19,7 @@ Se puede llamar a [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getl
 
 
 
-| Configuración regional                  | Configuración regional/nombre de idioma | Value                                                                                                  |
+| Configuración regional                  | Nombre de configuración regional o idioma | Value                                                                                                  |
 |-------------------------|----------------------|--------------------------------------------------------------------------------------------------------|
 | Spanish (Traditional Sort) - Spain | es-ES                | Latn;                                                                                                  |
 | Hindi (India)           | hi-IN                | Deva;                                                                                                  |
@@ -29,7 +29,7 @@ Se puede llamar a [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getl
 
  
 
-Un valor de script compuesto no incluye el script latino a menos que sea una parte esencial del sistema de escritura utilizado para la configuración regional determinada. Los caracteres latinos se usan a menudo en el contexto de configuraciones regionales para las que no son nativos, por ejemplo, para un nombre empresarial externo. En el ejemplo anterior de Hindi en la India, el único valor de script es "Deva" (para "Deva bytei"), aunque los caracteres latinos también pueden aparecer en el texto de Hindi. La [función VerifyScripts](/windows/desktop/api/Winnls/nf-winnls-verifyscripts) tiene una marca especial para resolver este caso.
+Un valor de script compuesto no incluye el script latino a menos que sea una parte esencial del sistema de escritura utilizado para la configuración regional concreta. Los caracteres latinos se suelen usar en el contexto de configuraciones regionales para las que no son nativos, por ejemplo, para un nombre de negocio externo. En el ejemplo anterior de Hindi en la India, el único valor de script es "Deva" (para "Devachari"), aunque los caracteres latinos también pueden aparecer en texto hindi. La [función VerifyScripts](/windows/desktop/api/Winnls/nf-winnls-verifyscripts) tiene una marca especial para abordar este caso.
 
  
 

@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 13bd14602b331e334cdec8cd1aedc7250b04c0ae4df2e5e4e9997c67c84d707d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 22b0f6ef0a91f9a6d9163a03c17f6e86ee8b5f4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120051965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072229"
 ---
-# <a name="dexter_param-structure"></a>ESTRUCTURA DE PARAM DE PARAM DE PARAM DE \_ PARAM
+# <a name="dexter_param-structure"></a>ESTRUCTURA DE PARAM DE PARAM DE \_ PARAM
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -42,7 +42,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -60,14 +60,14 @@ Reservado. Establecer en cero.
 
 </dd> <dt>
 
-**nValues**
+**nValores**
 </dt> <dd>
 
-Número de valores que la propiedad asume.
+Número de valores que la propiedad presupone.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El objeto debe admitir la **interfaz IDispatch.**
 
@@ -81,14 +81,14 @@ El objeto debe admitir la **interfaz IDispatch.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IPropertySetter**](ipropertysetter.md)
 </dt> <dt>
 
-[**VALUE DE LA \_ PROPIEDAD**](dexter-value.md)
+[**VALOR DE \_ DESASTROS**](dexter-value.md)
 </dt> </dl>
 
  

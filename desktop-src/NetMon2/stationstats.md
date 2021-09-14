@@ -1,7 +1,7 @@
 ---
 description: La estructura STATIONSTATS proporciona estadísticas sobre una estación específica descrita por la captura actual.
 ms.assetid: f85d53d6-f496-4242-875f-e173c76b046a
-title: Estructura STATIONSTATS (Netmon. h)
+title: Estructura STATIONSTATS (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Netmon.h
 ms.openlocfilehash: 0b37d4570fe8f4c27ea66e6350b79e14a10e544e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082460"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245157"
 ---
-# <a name="stationstats-structure"></a>Estructura STATIONSTATS
+# <a name="stationstats-structure"></a>STATIONSTATS (estructura)
 
-La estructura **STATIONSTATS** proporciona estadísticas sobre una [*estación*](s.md) específica descrita por la captura actual.
+La **estructura STATIONSTATS** proporciona estadísticas sobre una estación [*específica*](s.md) descrita por la captura actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ typedef struct _STATIONSTATS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **NextStationStats**
 </dt> <dd>
 
-Índice de la siguiente estación registrada en la matriz de estructura **STATIONSTATS** .
+Índice de la siguiente estación registrada en la matriz **de estructura STATIONSTATS.**
 
 </dd> <dt>
 
 **SessionPartnerList**
 </dt> <dd>
 
-Índice de la lista de asociados de la estación.
+Índice de la lista de asociados de estación.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Dirección MAC de la estación.
 **Pad**
 </dt> <dd>
 
-Alineación de **DWORD** .
+**Alineación DWORD.**
 
 </dd> <dt>
 
@@ -128,10 +128,10 @@ Número total de bytes enviados por la estación.
 
 ## <a name="remarks"></a>Observaciones
 
-Monitor de red almacena información de la sesión y de la estación en dos matrices asociadas. cuyos elementos son estructuras [SESSIONSTATS](sessionstats.md) y **STATIONSTATS** , respectivamente. Los miembros de estas estructuras se pueden usar para navegar entre ellos. Por ejemplo, para pasar a la siguiente estación, use **NextStationStats**. Para ir a la lista de asociados de sesión en la matriz SESSIONSTATS, use el índice proporcionado en **SessionPartnerList**.
+Monitor de red almacena la información de la sesión y la estación en dos matrices asociadas. cuyos elementos [son estructuras SESSIONSTATS](sessionstats.md) **y STATIONSTATS** respectivamente. Los miembros de estas estructuras se pueden usar para navegar entre ellas. Por ejemplo, para pasar a la estación siguiente, use **NextStationStats**. Para saltar a la lista de asociados de sesión de la matriz SESSIONSTATS, use el índice proporcionado **en SessionPartnerList**.
 
 > [!Note]  
-> La matriz **STATIONSTATS** contiene un elemento para cada estación utilizada durante la captura actual. El algoritmo Monitor de red utiliza para agregar elementos a esta matriz se basa en la forma más eficaz de registrar información mientras la captura está en curso. Por consiguiente, la siguiente estación no es siempre el siguiente elemento de la matriz.
+> La **matriz STATIONSTATS** contiene un elemento para cada estación usada durante la captura actual. El algoritmo Monitor de red utiliza para agregar elementos a esta matriz se basa en la manera más eficaz de registrar información mientras la captura está en curso. Por lo tanto, la siguiente estación no siempre es el siguiente elemento de la matriz.
 
  
 
@@ -143,7 +143,7 @@ Monitor de red almacena información de la sesión y de la estación en dos matr
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -157,7 +157,7 @@ Monitor de red almacena información de la sesión y de la estación en dos matr
 [IRTC::GetConversationStatistics](irtc-getconversationstatistics.md)
 </dt> <dt>
 
-[IStas:: GetConversationStatistics](istats-getconversationstatistics.md)
+[IStats::GetConversationStatistics](istats-getconversationstatistics.md)
 </dt> </dl>
 
  

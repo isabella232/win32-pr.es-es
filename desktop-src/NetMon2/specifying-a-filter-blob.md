@@ -1,17 +1,17 @@
 ---
 description: Al seleccionar una tarjeta de interfaz de red (NIC) registrada en un equipo local, puede usar un BLOB de filtro para pasar por alto las NIC que no le interesan.
 ms.assetid: fa87bb7d-c481-4eb1-b116-b22643a7c9da
-title: Especificar un blob en filtros
+title: Especificar un blob de filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 486a5dfe318da50a921560c92b82a3a3bf05a9434a4ac609b7f135afd7bf5a34
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8754b8f7ea5388b730fd2dfb65e26e24a906d648
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245175"
 ---
-# <a name="specifying-a-filter-blob"></a>Especificar un blob en filtros
+# <a name="specifying-a-filter-blob"></a>Especificar un blob de filtro
 
 Al seleccionar una tarjeta de interfaz de red (NIC) registrada en un equipo local, puede usar un [*BLOB*](f.md) de filtro para pasar por alto las NIC que no le interesan. Por ejemplo, puede restringir la búsqueda de un tipo específico de tarjeta (como ETHERNET) o una dirección MAC específica.
 

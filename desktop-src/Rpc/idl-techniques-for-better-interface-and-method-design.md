@@ -1,23 +1,23 @@
 ---
 title: Técnicas de IDL para mejorar la interfaz y el diseño de métodos
-description: Considere la posibilidad de usar las siguientes técnicas específicas de IDL para mejorar la seguridad y el rendimiento al desarrollar interfaces y métodos RPC que controlan datos compatibles y variantes.
+description: Considere la posibilidad de usar las siguientes técnicas específicas de IDL para mejorar la seguridad y el rendimiento al desarrollar interfaces RPC y métodos que controlan datos compatibles y variantes.
 ms.assetid: 651bdb5c-ad56-4526-9b7d-7165141e7ceb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3608e908742d4de4b6564787c6d8faffc29efcef81549ff50414cc7716c468b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b897d8d1f2f5e1c11a5328fb095341871e3689e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118929431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244676"
 ---
 # <a name="idl-techniques-for-better-interface-and-method-design"></a>Técnicas de IDL para mejorar la interfaz y el diseño de métodos
 
-Considere la posibilidad de usar las siguientes técnicas específicas de IDL para mejorar la seguridad y el rendimiento al desarrollar interfaces y métodos RPC que controlan datos compatibles y variantes. Los atributos a los que se hace referencia en este tema son los atributos IDL establecidos en parámetros de método que controlan datos compatibles (por ejemplo, el tamaño es y max es atributos) o datos variantes \[ **\_** \] \[ **\_** \] (por ejemplo, \[ **\_** \] \[  la longitud \] es y los atributos de cadena).
+Considere la posibilidad de usar las siguientes técnicas específicas de IDL para mejorar la seguridad y el rendimiento al desarrollar interfaces RPC y métodos que controlan datos compatibles y variantes. Los atributos a los que se hace referencia en este tema son los atributos IDL establecidos en parámetros de método que controlan datos compatibles (por ejemplo, el tamaño es y max es atributos) o datos variantes \[ **\_** \] \[ **\_** \] (por ejemplo, \[ **\_** \] \[  los atributos length es y \] string).
 
-## <a name="using-the-range-attribute-with-conformant-data-parameters"></a>Uso del \[ atributo range con parámetros de datos \] compatibles
+## <a name="using-the-range-attribute-with-conformant-data-parameters"></a>Usar el \[ atributo range con parámetros de datos \] compatibles
 
-El atributo range indica al rpc en tiempo de ejecución que realice una validación \[  \] de tamaño adicional durante el proceso de desmarque de datos. En concreto, comprueba que el tamaño proporcionado de los datos pasados como parámetro asociado está dentro del intervalo especificado.
+El atributo range indica al rpc en tiempo de ejecución que realice una validación de tamaño adicional durante el \[  \] proceso de desmarque de datos. En concreto, comprueba que el tamaño proporcionado de los datos pasados como parámetro asociado está dentro del intervalo especificado.
 
 El \[ **atributo range** \] no afecta al formato de conexión.
 
@@ -25,15 +25,15 @@ Si el valor de la conexión está fuera del intervalo permitido, RPC producirá 
 
 ## <a name="rpc-server-stub-memory-management-rules"></a>Reglas de administración de memoria de código auxiliar del servidor RPC
 
-Es importante comprender las reglas de administración de memoria de código auxiliar del servidor RPC al crear los archivos IDL para una aplicación habilitada para RPC. Las aplicaciones pueden mejorar el uso de recursos de servidor mediante el uso de intervalos junto con datos compatibles como se indicó anteriormente, así como evitar deliberadamente la aplicación de atributos IDL de datos de longitud variable, como la longitud, para dar cumplimiento a los \[  \] \[ **\_** \] datos.
+Es importante comprender las reglas de administración de memoria de código auxiliar del servidor RPC al crear los archivos IDL para una aplicación habilitada para RPC. Las aplicaciones pueden mejorar el uso de recursos de servidor mediante el uso del intervalo junto con los datos compatibles como se indicó anteriormente, así como evitar deliberadamente la aplicación de atributos IDL de datos de longitud variable, como length, para los datos \[  \] \[ **\_** \] compatibles.
 
 No se recomienda la aplicación de longitud a los campos de estructura de datos definidos en un \[ **\_** \] archivo IDL.
 
 ## <a name="best-practices-for-variable-length-data-parameters"></a>Procedimientos recomendados para parámetros de datos de longitud variable
 
-Estos son varios procedimientos recomendados que se deben tener en cuenta al definir los atributos de IDL para estructuras de datos de tamaño variable, parámetros de método y campos.
+Los siguientes son varios procedimientos recomendados que se deben tener en cuenta al definir los atributos IDL para estructuras de datos de tamaño variable, parámetros de método y campos.
 
--   Use la correlación temprana. Por lo general, es mejor definir el parámetro de tamaño variable o el campo de forma que se produzca inmediatamente después del tipo entero de control.
+-   Use la correlación temprana. Por lo general, es mejor definir el parámetro o campo de tamaño variable, de modo que se produzca inmediatamente después del tipo entero de control.
 
     Por ejemplo,
 
@@ -55,9 +55,9 @@ Estos son varios procedimientos recomendados que se deben tener en cuenta al def
     );
     ```
 
-    donde **earlyCorr declara** el parámetro de tamaño inmediatamente antes del parámetro de datos de longitud variable y **lateCorr** declara el parámetro size después de él. El uso de la correspondencia temprana mejora el rendimiento general, especialmente en los casos en los que se llama al método con frecuencia.
+    donde **earlyCorr declara el** parámetro de tamaño inmediatamente antes del parámetro de datos de longitud variable y **lateCorr** declara el parámetro size después de él. El uso de la correspondencia temprana mejora el rendimiento general, especialmente en los casos en los que se llama al método con frecuencia.
 
--   En el caso de los parámetros marcados con \[ **out, size \_** es la tupla de atributo y donde la longitud de datos se conoce en el lado cliente o donde el cliente tiene un límite superior razonable, la definición del método debe ser similar a la siguiente en términos de atribución y secuencia de \] parámetros:
+-   En el caso de los parámetros marcados con \[ **out, size \_** es la tupla de atributos y donde se conoce la longitud de datos en el lado cliente o donde el cliente tiene un límite superior razonable, la definición del método debe ser similar a la siguiente en términos de atribución y secuencia de \] parámetros:
 
     ``` syntax
     outKnownSize
@@ -69,7 +69,7 @@ Estos son varios procedimientos recomendados que se deben tener en cuenta al def
 
     En este caso, el cliente proporciona un búfer de tamaño fijo para *pArr,* lo que permite al servicio RPC del lado servidor asignar un búfer de tamaño razonable con un buen grado de garantía. Tenga en cuenta que, en el ejemplo, los datos se reciben del servidor ( \[ **out** \] ). La definición es similar para los datos pasados al servidor ( \[ **en** \] ).
 
--   En el caso de situaciones en las que el componente del lado servidor de una aplicación RPC decide la longitud de los datos, la definición del método debe ser similar a la siguiente:
+-   En situaciones en las que el componente del lado servidor de una aplicación RPC decide la longitud de los datos, la definición del método debe ser similar a la siguiente:
 
     ``` syntax
     typedef [range(MIN_COUNT,MAX_COUNT)] long RANGED_LONG;
@@ -81,9 +81,9 @@ Estos son varios procedimientos recomendados que se deben tener en cuenta al def
     );
     ```
 
-    **RANGED \_ LONG** es un tipo definido para los códigos auxiliares de cliente y servidor, y de un tamaño especificado que el cliente puede prever correctamente. En el ejemplo, el cliente pasa *ppArr* como **NULL** y el componente de aplicación de servidor RPC asigna la cantidad correcta de memoria. Tras la devolución, el servicio RPC en el lado cliente asigna la memoria para los datos devueltos.
+    **RANGED \_ LONG** es un tipo definido para los códigos auxiliares de cliente y servidor, y de un tamaño especificado que el cliente puede prever correctamente. En el ejemplo, el cliente pasa *ppArr* como **NULL** y el componente de aplicación de servidor RPC asigna la cantidad correcta de memoria. Tras la devolución, el servicio RPC del lado cliente asigna la memoria para los datos devueltos.
 
--   Si el cliente quiere enviar un subconjunto de una matriz compatible grande al servidor, la aplicación puede especificar el tamaño del subconjunto como se muestra en el ejemplo siguiente:
+-   Si el cliente desea enviar un subconjunto de una matriz compatible grande al servidor, la aplicación puede especificar el tamaño del subconjunto como se muestra en el ejemplo siguiente:
 
     ``` syntax
     inConformantVaryingArray
@@ -109,7 +109,7 @@ Estos son varios procedimientos recomendados que se deben tener en cuenta al def
 
     El componente de aplicación cliente especifica el tamaño máximo de la matriz y el servidor especifica cuántos elementos transmite al cliente.
 
--   Si el componente de aplicación de servidor necesita devolver una cadena al componente de aplicación cliente y si el cliente sabe el tamaño máximo que se va a devolver desde el servidor, la aplicación puede usar un tipo de cadena compatible como se muestra en el ejemplo siguiente:
+-   Si el componente de aplicación de servidor necesita devolver una cadena al componente de aplicación cliente y el cliente sabe el tamaño máximo que se va a devolver desde el servidor, la aplicación puede usar un tipo de cadena compatible como se muestra en el ejemplo siguiente:
 
     ``` syntax
     outStringKnownSize
@@ -128,7 +128,7 @@ Estos son varios procedimientos recomendados que se deben tener en cuenta al def
     );
     ```
 
-    El componente de aplicación cliente debe establecer *ppStr* en **NULL** al llamar al método RPC.
+    El componente de aplicación cliente debe establecer *ppStr* en **NULL** en al llamar al método RPC.
 
  
 

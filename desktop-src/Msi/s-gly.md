@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre Windows installer que comienzan por la letra S, como las tablas de secuencia y la lista de origen.
+description: Obtenga información Windows conceptos del instalador que comienzan por la letra S, como las tablas de secuencia y la lista de origen.
 ms.assetid: 8570bf99-e7db-4af1-acc5-abc236a640d6
 title: S (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17d0bc61230433857a903476dab7ba25e1a75e3a6c405944731b73bfbb29ad78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93e288396a35a90346ffc6581653f32a4478e535
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118625555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074305"
 ---
 # <a name="s-windows-installer"></a>S (Windows instalador)
 
-[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) G [H](g-gly.md) [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) S [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
+[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) S [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
 
 <dl> <dt>
 
@@ -24,10 +24,10 @@ Tablas de la base [*de datos del instalador*](i-gly.md) que muestran las accione
 
 </dd> <dt>
 
-<span id="_msi_source_list_gly"></span><span id="_MSI_SOURCE_LIST_GLY"></span>**lista de orígenes**
+<span id="_msi_source_list_gly"></span><span id="_MSI_SOURCE_LIST_GLY"></span>**lista de origen**
 </dt> <dd>
 
-Especifica las ubicaciones en las que el instalador va a buscar archivos [*de código fuente externos.*](e-gly.md)
+Especifica las ubicaciones en las que el instalador va a buscar archivos [*de origen externos.*](e-gly.md)
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Lenguaje utilizado para procesar datos en una base de datos relacional. Puede us
 <span id="_msi_summary_information_stream_gly"></span><span id="_MSI_SUMMARY_INFORMATION_STREAM_GLY"></span>**secuencia de información de resumen**
 </dt> <dd>
 
-Storage ubicación en el [*.msi para*](m-gly.md) obtener información que se puede ver con Microsoft Windows Explorer. Para obtener más información, [vea Acerca del flujo de información de resumen](about-the-summary-information-stream.md).
+Storage ubicación en [*el.msi para*](m-gly.md) obtener información que se pueda ver con Microsoft Windows Explorer. Para obtener más información, vea [Acerca del flujo de información de resumen](about-the-summary-information-stream.md).
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Cuando el instalador espera a que se complete el subproceso independiente de una
 <span id="_msi_system_policy_using_windows_installer__gly"></span><span id="_MSI_SYSTEM_POLICY_USING_WINDOWS_INSTALLER__GLY"></span>**directiva del sistema**
 </dt> <dd>
 
-Lo usan los administradores del sistema para controlar las configuraciones de usuario y equipo desde una única ubicación en una red. Las directivas del sistema propagan la configuración del Registro a un gran número de equipos sin necesidad de que el administrador tenga conocimientos detallados del registro. La directiva del sistema del instalador se puede configurar mediante el editor de directiva de grupo (GPE), incluido en Windows 2000. Para obtener más información, vea [Directiva del sistema](system-policy.md).
+Lo usan los administradores del sistema para controlar las configuraciones de usuario y equipo desde una única ubicación de una red. Las directivas del sistema propagan la configuración del Registro a un gran número de equipos sin necesidad de que el administrador tenga conocimientos detallados del registro. La directiva del sistema del instalador se puede configurar mediante el Editor de directiva de grupo (GPE), incluido en Windows 2000. Para obtener más información, vea [Directiva del sistema](system-policy.md).
 
 </dd> </dl>
 

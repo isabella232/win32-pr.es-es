@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 76eea47c6fb1fe6f18a2d4a3e9b354fb50f85d24
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372536"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245630"
 ---
 # <a name="video-capture-structures"></a>Estructuras de captura de vídeo
 

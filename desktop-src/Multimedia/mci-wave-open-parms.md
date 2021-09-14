@@ -1,9 +1,9 @@
 ---
 title: MCI_WAVE_OPEN_PARMS estructura (Mciapi.h)
-description: La estructura MCI \_ WAVE \_ OPEN \_ PARMS contiene información para el comando MCI \_ OPEN para dispositivos de audio de onda.
+description: La estructura MCI \_ WAVE \_ OPEN \_ PARMS contiene información para el comando MCI OPEN para dispositivos de audio de forma \_ de onda.
 ms.assetid: 2fc9383e-4610-4751-acad-b545dc6d8992
 keywords:
-- MCI_WAVE_OPEN_PARMS estructura Windows multimedia
+- MCI_WAVE_OPEN_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b5a4107c6283edab1ffeaf18297e2898a8b17761
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245841"
 ---
 # <a name="mci_wave_open_parms-structure"></a>Estructura \_ MCI WAVE \_ OPEN \_ PARMS
 
-La **estructura MCI \_ WAVE OPEN \_ \_ PARMS** contiene información para el [**comando MCI \_ OPEN**](mci-open.md) para dispositivos de audio de onda.
+La **estructura MCI \_ WAVE OPEN \_ \_ PARMS** contiene información para el [**comando MCI \_ OPEN**](mci-open.md) para dispositivos de audio de forma de onda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -55,14 +55,14 @@ La palabra de orden bajo especifica un identificador de ventana que se usa para 
 **wDeviceID**
 </dt> <dd>
 
-Indentifier devuelto a la aplicación.
+El aplicador de sangría se devolvió a la aplicación.
 
 </dd> <dt>
 
 **lpstrDeviceType**
 </dt> <dd>
 
-Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o SYSTEM.INI archivo). Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI](mci-device-types.md).
+Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o SYSTEM.INI archivo). Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI.](mci-device-types.md)
 
 </dd> <dt>
 

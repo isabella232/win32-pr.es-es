@@ -4,12 +4,12 @@ description: Si se sigue la seguridad descrita en esta sección, proporcionada e
 ms.assetid: 528ff35c-f37c-43d8-8cc1-dbc36a9a826c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90647852d237f02a15db6900d234d7cc78979f7c7681c67cfe9620adf17634bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34279e4fb8899db6b7e980a0e868e91c6edb8166
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118929512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244688"
 ---
 # <a name="how-secure-is-my-rpc-server-now"></a>¿Qué tan seguro es mi servidor RPC ahora?
 
