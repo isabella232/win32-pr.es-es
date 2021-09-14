@@ -4,12 +4,12 @@ ms.assetid: 40641167-12de-4008-80e4-2fb758146421
 title: Procesamiento de solicitudes de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5be2c8e8acacbb001803cf3ce8d7e1263e920673eb912a04105ec8bb2772953a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f70a25d9ca633247c3995677825dc011b2b38d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117977414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170866"
 ---
 # <a name="processing-certificate-requests"></a>Procesamiento de solicitudes de certificado
 
@@ -17,7 +17,7 @@ Servicios de certificados realiza los pasos siguientes al procesar una [*solicit
 
 1.  Recepción de solicitudes.
 
-    El [*cliente envía la*](../secgloss/c-gly.md) solicitud de certificado a una aplicación intermediaria, que la da formato a una solicitud de formato PKCS 10 y la envía al motor de \# servidor.
+    El [*cliente envía*](../secgloss/c-gly.md) la solicitud de certificado a una aplicación intermediaria, que la da formato a una solicitud de formato PKCS 10 y la envía al motor de \# servidor.
 
 2.  Solicitar aprobación.
 

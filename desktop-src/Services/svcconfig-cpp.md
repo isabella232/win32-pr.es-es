@@ -4,12 +4,12 @@ ms.assetid: effb469a-020e-4c70-aad6-12a91bd36f68
 title: SvcConfig.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f400849dcd28073e17faacd2bc33cea06ed1a5837a72fb2beecd52714911cc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69baf6e2c0757f394f09338c65af488db9efd664
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118888417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170785"
 ---
 # <a name="svcconfigcpp"></a>SvcConfig.cpp
 

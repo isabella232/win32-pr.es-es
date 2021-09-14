@@ -3,7 +3,7 @@ title: Firewall Port Registry Configuración
 description: Firewall Port Registry Configuración
 ms.assetid: 86995f2c-8794-45da-9dca-9cdd388b2a21
 keywords:
-- Reproductor de Windows Media, configuración del Registro de puertos de firewall
+- Reproductor de Windows Media configuración del Registro de puertos de firewall
 - Reproductor de Windows Media,configuración del Registro de puertos
 - Reproductor de Windows Media,registry
 - registro, configuración de puerto de firewall
@@ -13,12 +13,12 @@ keywords:
 - configuración del registro de puertos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 140f55a4008a03c2b3bc4184e2eca92129a5e30dc69f0871da856b4555daec73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e231732e8d62efce575ae3fdee5edc63975f23c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118576772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170586"
 ---
 # <a name="firewall-port-registry-settings"></a>Firewall Port Registry Configuración
 
@@ -66,7 +66,7 @@ En Windows Vista, si la entrada del Registro **WMPNSSFirewallPortsOpen** tiene u
 | 50004 - 50013 | UDP RTCP/RTP              | wmpnetwk.exe                    | entrante y saliente |
 | 1900          | UDP SSDP                  | SSDPsrv en svchost.exe          | entrante y saliente |
 | 2869          | SSDP TCP, UPnP            | SSDPsrv/UPnPHost en svchost.exe | hacia la ciudad              |
-| 10280 - 10284 | Registro de UDP WMDRM-ND | wmpnetwk.exe                    | entrante y saliente |
+| 10280 - 10284 | Registro DE UDP WMDRM-ND | wmpnetwk.exe                    | entrante y saliente |
 | 10243         | TCP HTTP                  | wmpnetwk.exe                    | hacia la ciudad              |
 | 2177          | TCP UDP qWAVE             | svchost.exe                     | entrante y saliente |
 
@@ -96,7 +96,7 @@ En Microsoft Windows XP, si la entrada del Registro **WMPNSSFirewallPortsOpen** 
 |---------------|---------------------------|---------------------------------|----------------------|
 | 1900          | UDP SSDP                  | SSDPsrv en svchost.exe          | entrante y saliente |
 | 2869          | SSDP TCP, UPnP            | SSDPsrv/UPnPHost en svchost.exe | hacia la ciudad              |
-| 10280 - 10284 | Registro de UDP WMDRM-ND | wmpnetwk.exe                    | entrante y saliente |
+| 10280 - 10284 | Registro DE UDP WMDRM-ND | wmpnetwk.exe                    | entrante y saliente |
 | 10243         | TCP HTTP                  | wmpnetwk.exe                    | hacia la ciudad              |
 
 

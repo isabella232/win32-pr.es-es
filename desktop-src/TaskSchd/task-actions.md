@@ -1,26 +1,26 @@
 ---
-title: Acciones de tarea
-description: Los elementos de trabajo que realiza una tarea se denominan acciones. Una tarea puede tener una sola acción o un máximo de 32 acciones. Tenga en cuenta que cuando se especifican varias acciones, se ejecutan secuencialmente.
+title: Acciones de tareas
+description: Los elementos de trabajo realizados por una tarea se denominan acciones. Una tarea puede tener una sola acción o un máximo de 32 acciones. Tenga en cuenta que cuando se especifican varias acciones, se ejecutan secuencialmente.
 ms.assetid: 4cbe739d-4c4e-4469-8289-4be41b93950c
 keywords:
 - acciones Programador de tareas
 - acciones Programador de tareas , descritas
 - acciones Programador de tareas , ejecutar acción
-- acciones Programador de tareas , acción del controlador COM
+- acciones Programador de tareas , acción de controlador COM
 - ejecutar acción Programador de tareas
 - Acción controlador COM Programador de tareas
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 54a7cc4a0e3ecbd4d55e4731379287f2cf4fd660
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470500"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170634"
 ---
-# <a name="task-actions"></a>Acciones de tarea
+# <a name="task-actions"></a>Acciones de tareas
 
-Los elementos de trabajo que realiza una tarea se denominan acciones. Una tarea puede tener una sola acción o un máximo de 32 acciones. Tenga en cuenta que cuando se especifican varias acciones, se ejecutan secuencialmente.
+Los elementos de trabajo realizados por una tarea se denominan acciones. Una tarea puede tener una sola acción o un máximo de 32 acciones. Tenga en cuenta que cuando se especifican varias acciones, se ejecutan secuencialmente.
 
 ## <a name="types-of-actions"></a>Tipos de acciones
 
@@ -39,7 +39,7 @@ En la tabla de acciones siguiente se describe el tipo de trabajo o acciones que 
 
 ## <a name="specifying-actions"></a>Especificar acciones
 
-Las acciones de una tarea se especifican cuando la tarea se define y se almacena en una colección de acciones utilizadas por el Programador de tareas trabajo. En la tabla siguiente se enumeran los vínculos a temas de referencia para las API y los elementos XML asociados a las acciones.
+Las acciones de una tarea se especifican cuando la tarea se define y se almacena en una colección de acciones utilizadas por el servicio Programador de tareas trabajo. En la tabla siguiente se muestran vínculos a temas de referencia para las API y los elementos XML asociados a acciones.
 
 Para obtener más información y ejemplos sobre cómo usar las interfaces Programador de tareas, objetos de scripting y XML, vea [Using the Programador de tareas](using-the-task-scheduler.md).
 
@@ -95,7 +95,7 @@ Para obtener más información y ejemplos sobre cómo usar las interfaces Progra
 
 ## <a name="using-variables-in-action-properties"></a>Usar variables en propiedades de acción
 
-Algunas propiedades de acción de tipo **BSTR** pueden contener variables $(Arg0), $(Arg1), ..., $(Arg32) en sus valores de cadena. Estas variables se reemplazan por los valores especificados en el parámetro *params* de los métodos [**IRegisteredTask::Run**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtask-run) e [**IRegisteredTask::RunEx**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtask-runex) o que se encuentran dentro del desencadenador de eventos para la tarea. En la tabla siguiente se enumeran las propiedades de acción que pueden usar variables en sus valores de cadena.
+Algunas propiedades de acción de tipo **BSTR** pueden contener variables $(Arg0), $(Arg1), ..., $(Arg32) en sus valores de cadena. Estas variables se reemplazan por los valores especificados en el parámetro *params* de los métodos [**IRegisteredTask::Run**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtask-run) e [**IRegisteredTask::RunEx**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtask-runex) o que se encuentran en el desencadenador de eventos de la tarea. En la tabla siguiente se enumeran las propiedades de acción que pueden usar variables en sus valores de cadena.
 
 
 | Acción | Propiedades | 

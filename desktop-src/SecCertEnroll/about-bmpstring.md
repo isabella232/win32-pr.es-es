@@ -4,16 +4,16 @@ ms.assetid: 66e4a6d8-2401-4346-9361-e145735cbe19
 title: BMPString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 496715d380739dd68dab4266422876ecca174b9caffd3895e9c465f446d32cf5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c911218d852b792a333f015c825a7e4d1486b62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118904844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173370"
 ---
 # <a name="bmpstring"></a>BMPString
 
-El tipo de datos ASN.1 **BMPString,** denominado **\_ CADENA UNICODE** en la API de inscripción de certificados, se codifica en un triplete TLV que comienza con un **byte** tag de 0x1E. En el ejemplo siguiente, adaptado del tema [ASN.1](cmc-encoded-asn-1.md) codificado para CMC, se muestra la codificación de una **extensión TemplateName.** El nombre se puede especificar mediante la [**interfaz IX509ExtensionTemplateName.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) El identificador de objeto de la extensión es 1.3.6.1.4.1.311.13.2.1.
+El tipo de datos ASN.1 **BMPString,** denominado **\_ CADENA UNICODE** en la API de inscripción de certificados, se codifica en un triplete TLV que comienza con un **byte** tag de 0x1E. En el ejemplo siguiente, adaptado del tema [ASN.1](cmc-encoded-asn-1.md) con codificación CMC, se muestra la codificación de una **extensión TemplateName.** El nombre se puede especificar mediante la [**interfaz IX509ExtensionTemplateName.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) El identificador de objeto de la extensión es 1.3.6.1.4.1.311.13.2.1.
 
 ``` syntax
 06 0a                              ; OBJECT_ID (a Bytes)
@@ -36,7 +36,7 @@ Si la cadena contiene menos de 128 bytes, el campo **Longitud** del triplete TLV
 
 <dl> <dt>
 
-[Sistema de tipos ASN.1](about-asn-1-type-system.md)
+[Sistema de tipo ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
 [Codificación DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)

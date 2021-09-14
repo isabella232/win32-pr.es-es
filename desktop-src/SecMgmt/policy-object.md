@@ -4,12 +4,12 @@ ms.assetid: 4253c7fb-85f5-441d-90bf-492e802ad0f8
 title: Objeto de directiva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d49e3dd7a33fd83107f9338783e3b8bdcc68eee7d8c4f927f67a7df1c0262c3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcceec080d51f9c432ab2d63b8eeb26b3211cd28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119005072"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170822"
 ---
 # <a name="policy-object"></a>Objeto de directiva
 
@@ -27,7 +27,7 @@ Los **campos AccountDomain** y **PrimaryDomain** del objeto **Policy** se usan p
 
 -   En un sistema que no tiene un dominio principal, el campo **AccountDomain** contiene el nombre y el SID del dominio de cuenta local del sistema, que es el mismo que el nombre del equipo. El **campo PrimaryDomain** contiene el nombre del grupo de trabajo del que es miembro esta máquina. [**Los objetos TrustedDomain**](trusteddomain-object.md) se omiten con una excepción: no puede haber un objeto **TrustedDomain** con el mismo nombre que el grupo de trabajo porque aparecerá como si fuera el dominio principal de la máquina.
 -   En un sistema que tiene un dominio principal, el **campo AccountDomain** identifica el nombre y el SID del dominio de cuenta local, como antes. Sin embargo, **el campo PrimaryDomain** contiene el nombre y el SID del dominio principal del sistema. Además, debe haber un objeto [**TrustedDomain**](trusteddomain-object.md) con el nombre y el SID identificados en el **campo PrimaryDomain.** Este **objeto TrustedDomain** contiene la información de cuenta y servidor necesaria para establecer un canal seguro para un controlador de dominio en el dominio principal. Cualquier otro **objeto TrustedDomain** se omite.
--   En los controladores de dominio, **el campo AccountDomain** identifica el dominio de cuenta local para el sistema; sin embargo, el nombre de la cuenta se asigna al usuario en lugar de ser un nombre conocido. Puesto que el dominio principal es el mismo que el dominio de cuenta, el **campo PrimaryDomain** debe contener el mismo valor que el **campo AccountDomain.** Además, se espera que [**todos los objetos TrustedDomain**](trusteddomain-object.md) sean válidos y representen relaciones de confianza con otros dominios. Si el sistema no confía en ningún otro dominio, no debe haber ningún **objeto TrustedDomain.**
+-   En los controladores de dominio, **el campo AccountDomain** identifica el dominio de cuenta local para el sistema; sin embargo, el nombre de la cuenta se asigna al usuario en lugar de ser un nombre conocido. Puesto que el dominio principal es el mismo que el dominio de cuenta, el **campo PrimaryDomain** debe contener el mismo valor que el **campo AccountDomain.** Además, se espera que todos los objetos [**TrustedDomain**](trusteddomain-object.md) sean válidos y representen relaciones de confianza con otros dominios. Si el sistema no confía en ningún otro dominio, no debe haber ningún **objeto TrustedDomain.**
 
  
 

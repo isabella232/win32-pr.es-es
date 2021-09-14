@@ -4,12 +4,12 @@ ms.assetid: 1539cbfa-d84f-4989-8380-6cfc7c496310
 title: Autenticación no inactiva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e259a2b14d48f4d7109966fa01f6fbd6a505a1343e90ea312c557ebfb9c84ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 658cba212403da2f970e056d7bacc1bc1bcaa559
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117786623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173410"
 ---
 # <a name="noninteractive-authentication"></a>Autenticación no inactiva
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 778850da4094d8ac745018b115248de9008d15339b7ffee75de177cf957d3fc2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7953067281e394df71a1a53c874cb80837a5f35d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172714"
 ---
 # <a name="iwmpmediacollectionadd-method"></a>IWMPMediaCollection::add (método)
 
@@ -64,9 +64,9 @@ Implements IWMPMediaCollection.add
 
 Interfaz **WMPLib.IWMPMedia** para el elemento o lista de reproducción agregados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método carga un elemento multimedia o una lista de reproducción existentes en la biblioteca, dada una ruta de acceso. Este método no mueve ni cambia el archivo. Este método produce un error si se le da una ruta de acceso local no válida, pero no se comprueba la validez de los propios elementos multimedia antes de agregarlos a la biblioteca.
+Este método carga un elemento multimedia o una lista de reproducción existentes en la biblioteca, dada una ruta de acceso. Este método no mueve ni cambia el archivo. Se produce un error en este método si se le da una ruta de acceso local no válida, pero no se comprueba la validez de los propios elementos multimedia antes de agregarlos a la biblioteca.
 
 Este método acepta archivos de lista de reproducción estáticos y automáticos. El **método IWMPPlaylistCollection.importPlaylist** también se puede usar para agregar una lista de reproducción estática a la biblioteca.
 

@@ -1,21 +1,21 @@
 ---
 description: El acceso a las claves de las cuentas LocalService o NetworkService se puede obtener mediante programación mediante la función CryptSetProvParam para modificar el parámetro \_ DESCR PP KEYSET \_ \_ SEC.
 ms.assetid: 22e8a153-c218-426a-bd81-7bdbb504c96f
-title: Modificación del acceso al contenedor de claves
+title: Modificar el acceso al contenedor de claves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c34e5c34d562d3a72b4343a2f18da65ae9c5a89689e89ef35b459aa4dec80397
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7f76c5b7202400064931e8014cf852ed49bf633b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119797145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173194"
 ---
-# <a name="modifying-key-container-access"></a>Modificación del acceso al contenedor de claves
+# <a name="modifying-key-container-access"></a>Modificar el acceso al contenedor de claves
 
 El contenedor de claves predeterminado creado por CryptoAPI no permite el acceso a las claves desde las cuentas LocalService o NetworkService. Esto se puede corregir mediante programación mediante la función [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) para modificar el parámetro **\_ \_ \_ DESCR PP KEYSET SEC.**
 
-En el ejemplo siguiente se muestra cómo usar la función [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) para modificar el **\_ \_ \_ DESCR** de PP KEYSET SEC para permitir el acceso a un contenedor de claves a las cuentas LocalService o NetworkService.
+En el ejemplo siguiente se muestra cómo usar la función [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) para modificar el **\_ \_ \_ DESCR** de SEC de PP KEYSET para permitir el acceso a un contenedor de claves a las cuentas LocalService o NetworkService.
 
 > [!Note]  
 > El código siguiente se ofrece como una herramienta y solo se debe usar si es absolutamente necesario. Solo debe ejecutar este código una vez en cada equipo para permitir el acceso a las claves.

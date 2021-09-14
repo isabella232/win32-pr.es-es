@@ -4,18 +4,18 @@ ms.assetid: 78108cd5-531e-4d0c-96cf-6f6264b7716c
 title: 'Programa de C de ejemplo: Codificación y codificación de ASN.1'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98ee176995de5f150e6818290b1dcf1fda83b320a1fbcf40bf3a27ebab149447
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c3d15601c35db7a32805e3d5ef20f71f18538ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173253"
 ---
 # <a name="example-c-program-asn1-encoding-and-decoding"></a>Programa de C de ejemplo: Codificación y codificación de ASN.1
 
 En el ejemplo siguiente se [**muestra el uso de CryptEncodeObjectEx**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobjectex) y [**CryptDecodeObjectEx.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobjectex) Este ejemplo se puede modificar fácilmente para usar [**CryptEncodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobject) y [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject).
 
-En este ejemplo también se usa una versión modificada de la función [**ByteToStr**](bytetostr.md) para imprimir una serie de octetos codificados con la sintaxis abstracta [*One*](../secgloss/a-gly.md) (ASN.1). También usa [**MyHandleError.**](myhandleerror.md) El código de estas funciones se incluye con el ejemplo.
+En este ejemplo también se usa una versión modificada de la función [**ByteToStr**](bytetostr.md) para imprimir una serie codificada de octetos con la notación de sintaxis abstracta [*One*](../secgloss/a-gly.md) (ASN.1). También usa [**MyHandleError.**](myhandleerror.md) El código de estas funciones se incluye con el ejemplo.
 
 
 ```C++

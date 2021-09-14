@@ -4,12 +4,12 @@ ms.assetid: 1c26509d-5bb6-42dc-aeb0-525d7eaecf7d
 title: 'Programa C de ejemplo: Operaciones de comprobación de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a50b8e9f89d761498eba87964dfb6e38f3d27c09d940c9cddda35682a944c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1efdbaaea172b24448ad2b15b03ee19c6dc7a445
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173242"
 ---
 # <a name="example-c-program-certificate-verification-operations"></a>Programa C de ejemplo: Operaciones de comprobación de certificados
 
@@ -24,7 +24,7 @@ En el ejemplo siguiente se muestran estas tareas y las funciones cryptoAPI:
 -   [**CertFreeCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext)
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

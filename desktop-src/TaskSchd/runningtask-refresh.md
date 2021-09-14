@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 143b0f8fdcca5ce325e344a998ffc37295ef9302b69b90b166cd2fa94fb51400
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 00b3251f65d0cb500c2f903274429f0d4ed8b200
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119975095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172817"
 ---
 # <a name="runningtaskrefresh-method"></a>Método RunningTask.Refresh
 

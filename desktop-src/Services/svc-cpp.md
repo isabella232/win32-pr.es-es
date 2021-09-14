@@ -1,19 +1,19 @@
 ---
-description: A continuación se muestra un ejemplo de servicio completo. Al usar este código como plantilla, simplemente agregue código a las secciones precedida por TO \_ DO.
+description: A continuación se muestra un ejemplo de servicio completo. Al usar este código como plantilla, basta con agregar código a las secciones precedida por TO \_ DO.
 ms.assetid: dc968bd2-0397-4cec-a825-f807037b4c14
 title: Svc.cpp
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6388a51335883aa48d15a52667d89d2188ac4ea3
-ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113102124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170786"
 ---
 # <a name="svccpp"></a>Svc.cpp
 
-A continuación se muestra un ejemplo de servicio completo. Al usar este código como plantilla, simplemente agregue código a las secciones precedida por `TO_DO` .
+A continuación se muestra un ejemplo de servicio completo. Al usar este código como plantilla, basta con agregar código a las secciones precedida por `TO_DO` .
 
 Al compilar el ejemplo, asegúrese de vincular con Kernel32.lib y Advapi32.lib. El archivo Sample.h se genera al compilar el archivo DLL de solo recursos, Sample.dll. Para obtener más información, [vea Sample.mc](sample-mc.md).
 

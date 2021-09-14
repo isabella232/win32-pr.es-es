@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fb8dab44cd1f26c080d438c15f545c882d2e4427af7fa04049b539ce8b3cf13
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dd7adba98fbfa450cd938b56ec6d91598b918d0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119735025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172705"
 ---
 # <a name="iwmpmediacollectiongetbyattribute-method"></a>IWMPMediaCollection::getByAttribute (método)
 
@@ -73,7 +73,7 @@ Implements IWMPMediaCollection.getByAttribute
 
 Interfaz **WMPLib.IWMPPlaylist** para los elementos multimedia recuperados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se puede usar para crear una consulta genérica para elementos multimedia que coincidan con un valor para un atributo de la biblioteca. Esto es útil en el caso de los atributos definidos por el usuario. Si el atributo no existe, se producirá un error.
 
@@ -84,7 +84,7 @@ Puede usar este método para recuperar todos los elementos multimedia de un tipo
 | Value    | Descripción                                               |
 |----------|-----------------------------------------------------------|
 | audio    | Música y otros elementos de solo audio                          |
-| Otros    | Otros elementos, como un archivo .asf o la dirección URL de una secuencia. |
+| otro    | Otros elementos, como un archivo .asf o la dirección URL de una secuencia. |
 | Foto    | Elementos de foto. Requiere Reproductor de Windows Media 10.            |
 | Reproducción | Listas de reproducción representadas como elementos multimedia.                     |
 | radio    | Elementos de estación de radio. No lo usa Reproductor de Windows Media 10. |

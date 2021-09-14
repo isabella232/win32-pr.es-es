@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 4d9860e9a3f04f2f17ebcda08a4ec2610c5af3cbb5fbb5e7afa98227264992b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35ff147d8db7fb409787fa938a951dfc0a2320e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119880155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173301"
 ---
 # <a name="algorithmname-property"></a>Algorithm.Name propiedad
 
@@ -28,7 +28,7 @@ La **propiedad Name** establece o recupera el algoritmo utilizado para firmar, e
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -55,7 +55,7 @@ Valor de la enumeración [**CAPICOM \_ ENCRYPTION \_ ALGORITHM**](capicom-encryp
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se restablece el valor de esta propiedad, directa o indirectamente, se restablece todo el estado del objeto.
 

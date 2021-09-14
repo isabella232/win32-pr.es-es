@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3428e523ca4ea997c5f8d2e21ed4d678856c602e19dae864a452efce177f1761
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c9f655001684cb51de525ebc6ac852fbd478ca08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119975015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172810"
 ---
 # <a name="runningtaskstop-method"></a>Método RunningTask.Stop
 

@@ -9,12 +9,12 @@ keywords:
 - Utilidad OpenGL (GLU),Functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e4483b364d2d67daff0bbc04b9a30cd7cdb3059f3977f763b247f77be74d62f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fae3ece873f4e1e015861f597c0d51ebfc3436de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173573"
 ---
 # <a name="glu-functions"></a>Funciones glu
 
@@ -31,7 +31,7 @@ En esta sección se incluyen páginas de referencia, en orden alfabético, para 
 | [**gluBuild1DMipmaps**](glubuild1dmipmaps.md)                                                     | Crea mapas MIP 1D.                                                                                     |
 | [**gluBuild2DMipmaps**](glubuild2dmipmaps.md)                                                     | Crea mapas MIP 2D.                                                                                     |
 | [**gluCylinder**](glucylinder.md)                                                                 | Dibuja un cilindro.                                                                                        |
-| [**gluDeleteNurbsRenderer**](gludeletenurbsrenderer.md)                                           | Destruye un objeto DEBS.                                                                                 |
+| [**gluDeleteNurbsRenderer**](gludeletenurbsrenderer.md)                                           | Destruye un objeto DETEBS.                                                                                 |
 | [**gluDeleteQuadric**](gludeletequadric.md)                                                       | Destruye un objeto cuádigo.                                                                               |
 | [**gluDeleteTess**](gludeletetess.md)                                                             | Destruye un objeto de teselación.                                                                          |
 | [**gluDisk**](gludisk.md)                                                                         | Dibuja un disco.                                                                                            |
@@ -54,7 +54,7 @@ En esta sección se incluyen páginas de referencia, en orden alfabético, para 
 | [**gluPerspective**](gluperspective.md)                                                           | Configura una matriz de proyección de perspectiva.                                                                 |
 | [**gluPickMatrix**](glupickmatrix.md)                                                             | Define una región de selección.                                                                                |
 | [**gluProject**](gluproject.md)                                                                   | Mapas coordenadas de objeto a coordenadas de ventana.                                                           |
-| [**gluPwlCurve**](glupwlcurve.md)                                                                 | Describe una curva de recorte LINEAR DE LANS lineal por fragmentos.                                                       |
+| [**gluPwlCurve**](glupwlcurve.md)                                                                 | Describe una curva de recorte LINEAR DE TRIMBS por fragmentos.                                                       |
 | [*gluQuadricCallback*](gluquadric.md)                                                             | Define una devolución de llamada para un objeto cuádigo.                                                                 |
 | [**gluQuadricDrawStyle**](gluquadricdrawstyle.md)                                                 | Especifica el estilo de dibujo deseado para los cuádigos.                                                           |
 | [**gluQuadricNormals**](gluquadricnormals.md)                                                     | Especifica qué tipo de normales se van a usar para los cuádigos.                                              |

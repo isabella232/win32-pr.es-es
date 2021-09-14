@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Conexión a WMI de forma remota con PowerShell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35d499c59ee6774b1e972e192dfc2c0d1228469196c66e8f3feb80d1c9d6339c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7a2bb1ad982a20a10dbadd89856d118f1be9bd82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119679884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170522"
 ---
 # <a name="connecting-to-wmi-remotely-with-powershell"></a>Conexión a WMI de forma remota con PowerShell
 
-Windows PowerShell proporciona un mecanismo sencillo para conectarse a Windows Management Instrumentation (WMI) en un equipo remoto. Las conexiones remotas en WMI se ven afectadas por el [firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754274(v=ws.11))de Windows, la configuración de DCOM y el control de cuentas de usuario [(UAC).](/previous-versions/aa905108(v=msdn.10)) Para obtener más información sobre cómo configurar conexiones remotas, vea [Conectarse](connecting-to-wmi-remotely-starting-with-vista.md)a WMI de forma remota a partir Windows Vista .
+Windows PowerShell proporciona un mecanismo sencillo para conectarse a Windows Management Instrumentation (WMI) en un equipo remoto. Las conexiones remotas en WMI se ven afectadas por el [firewall de Windows,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754274(v=ws.11))la configuración de DCOM y el Control de cuentas de usuario [(UAC).](/previous-versions/aa905108(v=msdn.10)) Para obtener más información sobre cómo configurar conexiones remotas, vea [Conectarse](connecting-to-wmi-remotely-starting-with-vista.md)a WMI de forma remota a partir Windows Vista .
 
 Los ejemplos de este tema se basan en los VBScript de [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md) Todos los ejemplos de este tema usan el cmdlet [Get-WmiObject.](/previous-versions//dd315295(v=technet.10)) Para obtener más información, [vea Get-WmiObject](/previous-versions//dd315295(v=technet.10)).
 
@@ -34,14 +34,14 @@ Get-WmiObject -Namespace "root\cimv2" -Class Win32_Process -Impersonation 3 -Com
 
 En el ejemplo anterior, el usuario se conecta a un equipo remoto con las mismas credenciales (dominio y nombre de usuario) con las que inició sesión. El usuario también solicitó usar la suplantación. A diferencia del ejemplo de VBScript original, no se necesita una cadena de moniker porque la propiedad "Impersonation" establece el nivel de suplantación. De forma predeterminada, el nivel de suplantación se establece en 3 (Suplantar).
 
-En el ejemplo se enumeran todas las instancias de la [**clase \_ Win32 Process**](/windows/desktop/CIMWin32Prov/win32-process) que se ejecutan en el equipo remoto.
+En el ejemplo se enumeran todas las instancias de la clase Process de [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) que se ejecutan en el equipo remoto.
 
 > [!Note]  
 > Debe especificar el espacio de nombres WMI al que conectarse en el equipo remoto porque es posible que el espacio de nombres predeterminado no sea el mismo en equipos diferentes.
 
  
 
-En el Windows PowerShell ejemplo siguiente se muestra cómo conectarse a un equipo remoto con credenciales diferentes y establecer el nivel de suplantación en 3, que es Suplantar:
+En el Windows PowerShell siguiente se muestra cómo conectarse a un equipo remoto con credenciales diferentes y establecer el nivel de suplantación en 3, que es Suplantar:
 
 
 ```PowerShell
@@ -54,14 +54,14 @@ FABRIKAM\administrator -ComputerName $Computer
 
 
 
-En el ejemplo anterior, el nombre del equipo se asignó a $Computer variable. El usuario se conecta a un equipo remoto mediante credenciales específicas (dominio y nombre de usuario) y solicita suplantación para el nivel de autenticación.
+En el ejemplo anterior, el nombre del equipo se asignó al $Computer variable. El usuario se conecta a un equipo remoto mediante credenciales específicas (dominio y nombre de usuario) y solicita suplantación para el nivel de autenticación.
 
 > [!Note]  
 > El carácter de acento grave ( \` ) se usa para indicar un salto de línea. Es equivalente al carácter de subrayado ( \_ ) en VBScript.
 
  
 
-En el ejemplo Windows PowerShell siguiente se conecta a un grupo de equipos remotos en el mismo dominio mediante la creación de una matriz de nombres de equipo remoto y, a continuación, se muestran los nombres de los dispositivos Plug and Play (instancias de [**Win32 \_ PnPEntity)**](/windows/desktop/CIMWin32Prov/win32-pnpentity)en cada equipo:
+En el ejemplo Windows PowerShell siguiente se conecta a un grupo de equipos remotos del mismo dominio mediante la creación de una matriz de nombres de equipo remoto y, a continuación, se muestran los nombres de los dispositivos Plug and Play (instancias de [**Win32 \_ PnPEntity)**](/windows/desktop/CIMWin32Prov/win32-pnpentity)en cada equipo:
 
 
 ```PowerShell
@@ -89,8 +89,8 @@ $ColItems[0..47] | Format-List Name, Status
 
  
 
--   Los nombres de equipo de la matriz deben ir entre comillas porque son cadenas.
--   Los objetos devueltos por [Get-WmiObject](/previous-versions//dd315295(v=technet.10)) se asignan a $ColItems variable.
+-   Los nombres de equipo de la matriz deben incluirse entre comillas porque son cadenas.
+-   Los objetos devueltos por [Get-WmiObject](/previous-versions//dd315295(v=technet.10)) se asignan a la $ColItems variable.
 -   El operador range \[ \] limitó la lista de Plug and Play dispositivos a 48 instancias. Para obtener más información, vea [About \_ Operators](/previous-versions//dd347588(v=technet.10)).
 -   " " \| es el carácter de canalización. El objeto devuelto por ColItems se envía al cmdlet [Format-List.]( /previous-versions//dd347700(v=technet.10))
 

@@ -4,12 +4,12 @@ ms.assetid: 438bce7b-5a88-4e80-bdf9-6affdcbd169b
 title: Instalación de los ERP existentes en Monitor de red 2.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58ddd7a52c51eb761ec6c260dc88fde750e3d85a49d1af76741c0add61d13269
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe17685981bbf7530bdde05b7056e17e3380e291
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173581"
 ---
 # <a name="installing-existing-erps-to-network-monitor-21"></a>Instalación de los ERP existentes en Monitor de red 2.1
 

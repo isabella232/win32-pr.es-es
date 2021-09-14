@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 api_location:
 - Cspdk.h
-ms.openlocfilehash: 2815d12735023cd0f7ac60fc2ed9f60fc56e32d0f54610f295a2e6b0544e589c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99b9344c6951dc93972315d9b4f60752f1484d68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117970871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170829"
 ---
 # <a name="vtableprovstruc-structure"></a>Estructura VTableProvStruc
 
@@ -42,7 +42,7 @@ typedef struct VTableProvStruc {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -119,7 +119,7 @@ Se trata de un miembro de la versión 3.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los punteros de la **estructura VTableProvStruc** solo están disponibles dentro de la [**función CPAcquireContext.**](https://www.bing.com/search?q=**CPAcquireContext**) Si se necesitan miembros de la estructura una vez completada una llamada a **CPAcquireContext,** el CSP debe realizar copias de los elementos de estructura necesarios. Los punteros de función de esta estructura se pueden almacenar y usar hasta que se libera el contexto de CSP.
 
@@ -127,11 +127,11 @@ Los punteros de la **estructura VTableProvStruc** solo están disponibles dentro
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Cspdk.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Cspdk.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **VTableProvStrucW** (Unicode)<br/>                                          |
 
 

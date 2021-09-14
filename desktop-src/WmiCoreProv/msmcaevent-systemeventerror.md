@@ -35,18 +35,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 4ff5d05cb1b9db7430f2f91a0f2a5ad3a97a56557c3fc5ae832eecc85d13128c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f20f95fb5e1b1bf07b0f70c25d54122642b13569
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170530"
 ---
 # <a name="msmcaevent_systemeventerror-class"></a>Clase SystemEventError de MSMCAEvent \_
 
 La **clase \_ SystemEventError de MSMCAEvent** indica que se ha producido un evento del sistema Intelligent Platform Management Interface (IPMI). El error se escribe en el registro de eventos del sistema SMBIOS (SEL). Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,7 +78,7 @@ class MSMCAEvent_SystemEventError : WMIEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemEventError de MSMCAEvent** tiene estos tipos de miembros:
 
@@ -142,7 +142,7 @@ Nivel de gravedad del error notificado.
 
 
 
-| Valor                                                                                                | Significado                |
+| Value                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperable<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Grave<br/>       |
@@ -395,7 +395,7 @@ Bits de validación usados para indicar la validez de los campos posteriores.
 
 
 
-| Valor                                                                                                                                            | Significado                                     |
+| Value                                                                                                                                            | Significado                                     |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
 | <span id="1_0x1"></span><span id="1_0X1"></span><dl> <dt>**1 0x1**</dt> </dl>             | **SEL \_ El \_ id. de REGISTRO** es válido.<br/>    |
 | <span id="2_0x2"></span><span id="2_0X2"></span><dl> <dt>**2 0x2**</dt> </dl>             | **SEL \_ RECORD \_ TYPE** es válido.<br/>  |
@@ -416,7 +416,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemEventError de MSMCAEvent** se deriva de [**WMIEvent**](wmievent.md).
 

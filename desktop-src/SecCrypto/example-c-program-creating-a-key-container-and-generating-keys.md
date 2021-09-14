@@ -1,22 +1,22 @@
 ---
 description: Crea un contenedor de claves con nombre y agrega un par de claves de firma y un par de claves de intercambio al contenedor.
 ms.assetid: b9d13024-0e53-4930-9962-a2a0d0cb88de
-title: 'Programa de C de ejemplo: Crear un contenedor de claves y generar claves'
+title: 'Programa C de ejemplo: Crear un contenedor de claves y generar claves'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c2d879e71f137ce92d04e92ca499a628d20dc002388b10884664a55d857ad93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1e389df22cb4e745cf1c1a65542a17eeabe9b41
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173226"
 ---
-# <a name="example-c-program-creating-a-key-container-and-generating-keys"></a>Programa de C de ejemplo: Crear un contenedor de claves y generar claves
+# <a name="example-c-program-creating-a-key-container-and-generating-keys"></a>Programa C de ejemplo: Crear un contenedor de claves y generar claves
 
-En el ejemplo siguiente se crea un contenedor [*de claves*](../secgloss/k-gly.md) con nombre y se agrega un par de [*claves de firma*](../secgloss/s-gly.md) y un par [*de*](../secgloss/e-gly.md) claves de intercambio al contenedor. Este ejemplo se puede ejecutar sin problemas aunque ya existan el contenedor de claves con nombre y las claves criptográficas.
+En el ejemplo siguiente se crea un contenedor [*de claves*](../secgloss/k-gly.md) con nombre y se agrega un par de claves [*de firma*](../secgloss/s-gly.md) y un par [*de*](../secgloss/e-gly.md) claves de intercambio al contenedor. Este ejemplo se puede ejecutar sin problemas aunque ya existan el contenedor de claves con nombre y las claves criptográficas.
 
 > [!Note]  
-> Una aplicación no debe usar el contenedor de claves predeterminado para almacenar claves privadas. Cuando varias aplicaciones usan el mismo contenedor, una aplicación puede cambiar o destruir las claves que otra aplicación necesita tener disponibles. Se recomienda que las aplicaciones usen contenedores de claves que estén vinculados a la aplicación. Si lo hace, se reduce el riesgo de que otras aplicaciones manipule las claves necesarias para que una aplicación funcione correctamente.
+> Una aplicación no debe usar el contenedor de claves predeterminado para almacenar claves privadas. Cuando varias aplicaciones usan el mismo contenedor, una aplicación puede cambiar o destruir las claves que otra aplicación necesita tener disponibles. Se recomienda que las aplicaciones usen contenedores de claves que estén vinculados a la aplicación. Al hacerlo, se reduce el riesgo de que otras aplicaciones manipule las claves necesarias para que una aplicación funcione correctamente.
 
  
 
@@ -28,7 +28,7 @@ En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
 Estas operaciones solo deben realizarse una vez para cada usuario de cada equipo. Si ya se han creado el contenedor de claves con nombre y los pares de claves, este ejemplo no realiza ninguna operación.
 
-En este ejemplo se usan las siguientes funciones cryptoAPI:
+En este ejemplo se usan las siguientes funciones CryptoAPI:
 
 -   [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 -   [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey)

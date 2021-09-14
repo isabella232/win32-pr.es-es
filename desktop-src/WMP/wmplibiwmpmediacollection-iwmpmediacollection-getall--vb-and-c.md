@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection getAll (método)
+title: Método getAll de IWMPMediaCollection
 description: El método getAll devuelve una interfaz IWMPPlaylist que corresponde a la lista de reproducción que contiene todos los elementos multimedia de la biblioteca.
 ms.assetid: f2bbb4a4-7397-4c97-afd9-e8ee380af9da
 keywords:
-- getAll (método) de Windows Media Player
-- getAll (método) Windows Media Player, interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Windows Media Player, método getAll
+- Método getAll Reproductor de Windows Media
+- Método getAll Reproductor de Windows Media , interfaz IWMPMediaCollection
+- Interfaz IWMPMediaCollection Reproductor de Windows Media , método getAll
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: be08548ae29db12ded788f34563ef5e319c27d61
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670361"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172710"
 ---
-# <a name="iwmpmediacollectiongetall-method"></a>IWMPMediaCollection:: getAll (método)
+# <a name="iwmpmediacollectiongetall-method"></a>IWMPMediaCollection::getAll (método)
 
-El método **getAll** devuelve una interfaz **IWMPPlaylist** que corresponde a la lista de reproducción que contiene todos los elementos multimedia de la biblioteca.
+El **método getAll** devuelve una **interfaz IWMPPlaylist** que corresponde a la lista de reproducción que contiene todos los elementos multimedia de la biblioteca.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,17 +51,17 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La interfaz **WMPLib. IWMPPlaylist** para la lista de reproducción que contiene todos los elementos multimedia solicitados.
+Interfaz **WMPLib.IWMPPlaylist** para la lista de reproducción que contiene todos los elementos multimedia solicitados.
 
 ## <a name="remarks"></a>Observaciones
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del método **getAll** depende de cuál de esas dos formas se usa. Si recupera la interfaz llamando a [AxWindowsMediaPlayer. mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el método **getAll** devuelve todos los elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz llamando a [IWMPLibrary. mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el método **getAll** solo devuelve los elementos de audio de la biblioteca.
+Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del **método getAll** depende de cuál de esas dos maneras se use. Si recupera la interfaz mediante una llamada [a AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el **método getAll** devuelve todos los elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz mediante una llamada a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el **método getAll** devuelve solo los elementos de audio de la biblioteca.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **getAll** para reproducir elementos multimedia aleatoriamente de la colección de medios. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa getAll para** reproducir elementos multimedia aleatoriamente desde la colección de medios. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -110,7 +110,7 @@ player.Ctlcontrols.play()
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

@@ -1,21 +1,21 @@
 ---
-description: Para obtener credenciales que no son las asociadas a la sesión de inicio de sesión actual, rellene una estructura SEC WINNT AUTH IDENTITY con información para la \_ \_ entidad de seguridad \_ alternativa.
+description: Para obtener credenciales que no son las asociadas a la sesión de inicio de sesión actual, rellene una estructura SEC WINNT AUTH IDENTITY con información para \_ la entidad de seguridad \_ \_ alternativa.
 ms.assetid: f590ddb5-39a1-4d0c-a787-da938a63c206
-title: Obtención de credenciales implícitas alternativas
+title: Obtención de credenciales de resumen alternativas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 260aa1c4cb3bd52395352e2e5dcadcaed7e3fea3cf478367a9e3432c7d2c8d8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94ed7daa2a3179822929e8c2df8077ee55afaadb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118921294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173409"
 ---
-# <a name="obtaining-alternate-digest-credentials"></a>Obtención de credenciales implícitas alternativas
+# <a name="obtaining-alternate-digest-credentials"></a>Obtención de credenciales de resumen alternativas
 
-Para obtener [*credenciales*](../secgloss/c-gly.md) que no son las asociadas a la sesión de inicio de sesión [*actual,*](../secgloss/s-gly.md)rellene una estructura [**SEC \_ WINNT \_ AUTH \_ IDENTITY**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a) con información para la entidad de [*seguridad alternativa*](../secgloss/s-gly.md). Pase la estructura a la [**función AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) mediante el *parámetro pAuthData.*
+Para obtener [*credenciales que*](../secgloss/c-gly.md) no son las asociadas a la sesión de inicio de sesión [*actual,*](../secgloss/s-gly.md)rellene una estructura [**SEC \_ WINNT \_ AUTH \_ IDENTITY**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a) con información para la entidad de [*seguridad alternativa*](../secgloss/s-gly.md). Pase la estructura a la [**función AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) mediante el *parámetro pAuthData.*
 
-En la tabla siguiente se describen los miembros de la estructura [**\_ SEC WINNT \_ AUTH \_ IDENTITY.**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a)
+En la tabla siguiente se describen los miembros de la estructura [**SEC \_ WINNT \_ AUTH \_ IDENTITY.**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a)
 
 
 
@@ -39,8 +39,8 @@ En la tabla siguiente se enumeran los valores válidos para el **miembro Flags**
 
 | Constante                            | Descripción                                                                                                      |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| ANSI DE \_ IDENTIDAD DE AUTENTICACIÓN DE WINNT \_ \_ \_ SEC    | Las cadenas de esta estructura están en formato ANSI.                                                                    |
-| UNICODE \_ DE IDENTIDAD DE AUTENTICACIÓN DE WINNT \_ \_ DE \_ SEGUNDO | Las cadenas de esta estructura están en [*formato Unicode.*](../secgloss/u-gly.md) |
+| ANSI \_ DE IDENTIDAD DE AUTENTICACIÓN DE WINNT \_ \_ \_ SEC    | Las cadenas de esta estructura están en formato ANSI.                                                                    |
+| UNICODE \_ DE IDENTIDAD DE AUTENTICACIÓN DE WINNT \_ \_ \_ SEC | Las cadenas de esta estructura están en [*formato Unicode.*](../secgloss/u-gly.md) |
 
 
 
@@ -104,7 +104,7 @@ void main()
 
 
 
-La **\_ función tcslen** devuelve la longitud de cadena en caracteres, sin incluir el carácter nulo de terminación.
+La **\_ función tcslen** devuelve la longitud de cadena en caracteres, sin incluir el carácter nulo final.
 
 Si la aplicación puede usar las credenciales establecidas en el inicio de sesión, consulte [Obtención de credenciales implícitas predeterminadas.](obtaining-default-digest-credentials.md)
 

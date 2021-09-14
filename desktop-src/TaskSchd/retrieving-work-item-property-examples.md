@@ -3,15 +3,15 @@ title: Recuperar ejemplos de propiedades de elemento de trabajo
 description: Para recuperar las propiedades de un elemento de trabajo, llame a ITaskScheduler Activate para recuperar la interfaz del objeto de elemento de trabajo y, a continuación, llame al método adecuado para recuperar la propiedad de tarea que le interesa.
 ms.assetid: d9723dea-1a82-4993-b4d0-bc7d944e775f
 keywords:
-- recuperar propiedades de elementos de trabajo Programador de tareas
+- recuperar propiedades de elemento de trabajo Programador de tareas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3519f3f995e4a5c49a58f0c8be590b34a82381bfd534b61bac6ff8aba05de33c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74a51c623301a4a3b53369713abe95ea1dafba80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172834"
 ---
 # <a name="retrieving-work-item-property-examples"></a>Recuperar ejemplos de propiedades de elemento de trabajo
 
@@ -30,7 +30,7 @@ En el procedimiento siguiente se describe cómo recuperar una propiedad de tarea
 
 **Para recuperar una propiedad de tarea**
 
-1.  Llame a [**CoInitialize para**](/windows/win32/api/objbase/nf-objbase-coinitialize) inicializar la biblioteca COM y [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para obtener un Programador de tareas objeto . (En estos ejemplos se supone que Programador de tareas servicio está en ejecución).
+1.  Llame a [**CoInitialize para**](/windows/win32/api/objbase/nf-objbase-coinitialize) inicializar la biblioteca COM y [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para obtener Programador de tareas objeto. (En estos ejemplos se supone que Programador de tareas servicio está en ejecución).
 2.  Llame [**a ITaskScheduler::Activate**](/windows/desktop/api/Mstask/nf-mstask-itaskscheduler-activate) para obtener la [**interfaz ITask**](/windows/desktop/api/Mstask/nn-mstask-itask) del objeto de tarea. (Tenga en cuenta que las tareas son actualmente el único tipo válido de elemento de trabajo).
 3.  Llame al método adecuado para recuperar la propiedad que le interesa.
 4.  Procese la propiedad según sea necesario. (Estos ejemplos simplemente imprimen la propiedad en la pantalla).

@@ -1,30 +1,30 @@
 ---
-description: El formato de cadena de moniker es similar al de una ruta de acceso de objeto WMI estándar. Para obtener más información, vea requisitos de ruta de acceso de objeto WMI.
+description: El formato de cadena del moniker es similar al de una ruta de acceso de objeto WMI estándar. Para obtener más información, vea Wmi Object Path Requirements.
 ms.assetid: 1aacc523-2a2f-43f5-96a3-aa0387cbae3e
 ms.tgt_platform: multiple
-title: Construir una cadena de moniker
+title: Construcción de una cadena de Moniker
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 44e54e29b3c8f14890dc1cedd5907059308e8d22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170518"
 ---
-# <a name="constructing-a-moniker-string"></a>Construir una cadena de moniker
+# <a name="constructing-a-moniker-string"></a>Construcción de una cadena de Moniker
 
-El formato de cadena de moniker es similar al de una ruta de acceso de objeto WMI estándar. Para obtener más información, vea [requisitos de ruta de acceso de objeto WMI](wmi-object-path-requirements.md).
+El formato de cadena del moniker es similar al de una ruta de acceso de objeto WMI estándar. Para obtener más información, vea [Wmi Object Path Requirements](wmi-object-path-requirements.md).
 
 Un moniker tiene las siguientes partes:
 
--   El prefijo WinMgmts: (obligatorio). El prefijo indica a Windows Script Host (WSH) que el siguiente código utilizará los [objetos de API de scripting](scripting-api-objects.md).
+-   Prefijo WinMgmts: (obligatorio). El prefijo indica al Windows host de script (WSH) que el código siguiente va a usar los objetos [de la API de scripting](scripting-api-objects.md).
 -   Un componente de configuración de seguridad (opcional)
--   Un componente de ruta de acceso de objeto WMI (opcional)
+-   Componente de ruta de acceso de objeto WMI (opcional)
 
-No se puede especificar una contraseña en una cadena de moniker de WMI. Si debe cambiar la contraseña (parámetro *strPassword* ) o el tipo de autenticación (parámetro *strAuthority* ) al conectarse a WMI, llame a [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md). Tenga en cuenta que solo puede especificar la contraseña y la autoridad en las conexiones a equipos remotos. Si intenta establecerlos en un script que se esté ejecutando en el equipo local, se producirá un error. Para obtener más información sobre cuándo se utilizan la configuración de seguridad y los componentes de la ruta de acceso del objeto, vea [configuración de seguridad de WMI](/previous-versions/tn-archive/ee156574(v=technet.10)).
+No se puede especificar una contraseña en una cadena de moniker WMI. Si debe cambiar la contraseña (parámetro *strPassword)* o el tipo de autenticación (parámetro *strAuthority)* al conectarse a WMI, llame a [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md). Tenga en cuenta que solo puede especificar la contraseña y la autoridad en las conexiones a equipos remotos. Si se intenta establecer en un script que se ejecuta en el equipo local, se produce un error. Para obtener más información sobre cuándo se usan la configuración de seguridad y los componentes de ruta de acceso de [objeto,](/previous-versions/tn-archive/ee156574(v=technet.10))vea Wmi Security Configuración .
 
-El moniker siguiente especifica el objeto [**SWbemServices**](swbemservices.md) que representa el valor predeterminado de la raíz del espacio de nombres \\ , con suplantación en y el privilegio wbemPrivilegeDebug (SeDebugPrivilege) habilitado, y el privilegio wbemPrivilegeSecurity (SeSecurityPrivilege) deshabilitado.
+El moniker siguiente especifica el objeto [**SWbemServices**](swbemservices.md) que representa el valor predeterminado de la raíz del espacio de nombres, con la suplantación activada y el privilegio \\ wbemPrivilegeDebug (SeDebugPrivilege) habilitado y el privilegio wbemPrivilegeSecurity (SeSecurityPrivilege) deshabilitado.
 
 
 ```VB
@@ -35,35 +35,35 @@ El moniker siguiente especifica el objeto [**SWbemServices**](swbemservices.md) 
 
 > [!Note]
 >
-> Todos los literales de cadena no distinguen mayúsculas de minúsculas.
+> Todos los literales de cadena no tienen en cuenta las mayúsculas y minúsculas.
 >
-> El prefijo "!" de un privilegio indica que se va a deshabilitar el privilegio; la omisión de este prefijo implica que se va a habilitar el privilegio.
+> El prefijo "!" de un privilegio indica que el privilegio se va a deshabilitar; La omisión de este prefijo implica que el privilegio se va a habilitar.
 >
-> El prefijo "!" se usa en el nombre de equipo o espacio de nombres cuando la configuración de seguridad se especifica entre corchetes antes del nombre o espacio de nombres del equipo.
+> El prefijo "!" se usa en el nombre o espacio de nombres del equipo cuando la configuración de seguridad se especifica entre corchetes antes del nombre o espacio de nombres del equipo.
 
  
 
 Se permiten las siguientes asignaciones predeterminadas al especificar la ruta de acceso del objeto:
 
--   El nombre del equipo se puede omitir en la ruta de acceso del objeto, en cuyo caso se presupone el nombre del equipo local.
--   El espacio de nombres se puede omitir en la ruta de acceso del objeto, en cuyo caso se supone que se trata del espacio de nombres predeterminado.
+-   El nombre del equipo se puede omitir en la ruta de acceso del objeto, en cuyo caso se supone que el nombre de la máquina local.
+-   El espacio de nombres se puede omitir en la ruta de acceso del objeto, en cuyo caso se asume el espacio de nombres predeterminado.
 
-    Esto viene determinado por el valor de la clave del registro **HKEY \_ local \_ Machine** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **scripting** \\ **default namespace**, el valor predeterminado es "root \\ CIMv2".
+    Esto viene determinado por el valor de la clave del Registro **HKEY \_ LOCAL \_ MACHINE** Software Microsoft WBEM Scripting Default Namespace , el valor predeterminado \\  \\  \\  \\  \\ es \\ "ROOT CIMv2".
 
--   También se puede especificar una clase o una instancia, en cuyo caso el objeto devuelto es un objeto WMI en lugar de un objeto de servicios.
+-   También se puede especificar una clase o instancia, en cuyo caso el objeto devuelto es un objeto WMI en lugar de un objeto de servicios.
 
 > [!Note]  
 > Si se especifica una clase o instancia, no se puede omitir el espacio de nombres al especificar el nombre del equipo.
 
  
 
-Para obtener una referencia de las constantes de privilegio usadas en la cadena de moniker de WMI, vea [constantes de privilegios](privilege-constants.md)y los descriptores "nombre corto de scripting".
+Para obtener una referencia de las constantes de privilegio usadas en la cadena de moniker WMI, vea Constantes de [privilegios](privilege-constants.md)y descriptores de "Nombre corto de scripting".
 
 ## <a name="valid-moniker-strings"></a>Cadenas de moniker válidas
 
 En los ejemplos siguientes se muestran cadenas de moniker válidas.
 
-El moniker siguiente identifica el espacio de nombres predeterminado en el equipo local. Se devuelve un objeto [**SWbemServices**](swbemservices.md) .
+El moniker siguiente identifica el espacio de nombres predeterminado en el equipo local. Se devuelve un objeto [**SWbemServices.**](swbemservices.md)
 
 
 ```VB
@@ -72,7 +72,7 @@ WinMgmts:
 
 
 
-El moniker siguiente identifica el espacio de nombres predeterminado en el equipo Server. Se devuelve un objeto [**SWbemServices**](swbemservices.md) .
+El moniker siguiente identifica el espacio de nombres predeterminado en el equipo myServer. Se devuelve un objeto [**SWbemServices.**](swbemservices.md)
 
 
 ```VB
@@ -81,7 +81,7 @@ El moniker siguiente identifica el espacio de nombres predeterminado en el equip
 
 
 
-El moniker siguiente identifica el \\ espacio de nombres root cimv2 en el equipo de servidor. Se devuelve un objeto [**SWbemServices**](swbemservices.md) .
+El moniker siguiente identifica el espacio de nombres \\ cimv2 raíz en el equipo myServer. Se devuelve un objeto [**SWbemServices.**](swbemservices.md)
 
 
 ```VB
@@ -90,7 +90,7 @@ El moniker siguiente identifica el \\ espacio de nombres root cimv2 en el equipo
 
 
 
-El moniker siguiente identifica el \\ espacio de nombres root cimv2 en el servidor local. Se devuelve un objeto [**SWbemServices**](swbemservices.md) .
+El moniker siguiente identifica el espacio de \\ nombres cimv2 raíz en el servidor local. Se devuelve un objeto [**SWbemServices.**](swbemservices.md)
 
 
 ```VB
@@ -99,7 +99,7 @@ El moniker siguiente identifica el \\ espacio de nombres root cimv2 en el servid
 
 
 
-El moniker siguiente identifica la clase [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) en el \\ espacio de nombres root cimv2 en el servidor de servidor. Se devuelve un objeto [**SWbemObject**](swbemobject.md) .
+El moniker siguiente identifica la clase [**\_ LogicalDisk win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) en el espacio de nombres \\ raíz cimv2 en el servidor myServer. Se devuelve un objeto [**SWbemObject.**](swbemobject.md)
 
 
 ```VB
@@ -109,7 +109,7 @@ El moniker siguiente identifica la clase [**Win32 \_ LogicalDisk**](/windows/des
 
 
 
-El moniker siguiente identifica la clase [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) en el \\ espacio de nombres root cimv2 en el servidor local. Se devuelve un objeto [**SWbemObject**](swbemobject.md) .
+El moniker siguiente identifica la clase [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) en el espacio de nombres \\ raíz cimv2 del servidor local. Se devuelve un objeto [**SWbemObject.**](swbemobject.md)
 
 
 ```VB
@@ -118,7 +118,7 @@ El moniker siguiente identifica la clase [**Win32 \_ LogicalDisk**](/windows/des
 
 
 
-El moniker siguiente identifica la clase [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) en el espacio de nombres predeterminado en el servidor local. Se devuelve un objeto [**SWbemObject**](swbemobject.md) .
+El moniker siguiente identifica la clase [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) en el espacio de nombres predeterminado en el servidor local. Se devuelve un objeto [**SWbemObject.**](swbemobject.md)
 
 
 ```VB
@@ -127,7 +127,7 @@ El moniker siguiente identifica la clase [**Win32 \_ LogicalDisk**](/windows/des
 
 
 
-El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el espacio de nombres de scripting predeterminado en el servidor local. Se devuelve un objeto [**SWbemObject**](swbemobject.md) . El espacio de nombres predeterminado para scripting viene determinado por el valor predeterminado de configuración del espacio de nombres, tal y como se especifica en el control WMI. Para obtener más información, vea [establecer la seguridad del espacio de nombres con el control WMI](setting-namespace-security-with-the-wmi-control.md).
+El moniker siguiente identifica la instancia de [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el espacio de nombres de scripting predeterminado en el servidor local. Se devuelve un objeto [**SWbemObject.**](swbemobject.md) El espacio de nombres predeterminado para scripting viene determinado por la configuración predeterminada del espacio de nombres, tal como se especifica en el control WMI. Para obtener más información, vea [Establecer la seguridad del espacio de nombres con el control WMI](setting-namespace-security-with-the-wmi-control.md).
 
 
 ```VB
@@ -136,7 +136,7 @@ El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/wind
 
 
 
-El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el \\ espacio de nombres root cimv2 en el servidor de servidor. Se devuelve un objeto [**SWbemObject**](swbemobject.md) .
+El moniker siguiente identifica la instancia de [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el espacio de nombres \\ raíz cimv2 en el servidor myServer. Se devuelve un objeto [**SWbemObject.**](swbemobject.md)
 
 
 ```VB
@@ -145,7 +145,7 @@ El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/wind
 
 
 
-El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el \\ espacio de nombres root cimv2 en el servidor local. Se devuelve un objeto [**SWbemObject**](swbemobject.md) .
+El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el espacio de nombres \\ cimv2 raíz del servidor local. Se devuelve un objeto [**SWbemObject.**](swbemobject.md)
 
 
 ```VB
@@ -154,7 +154,7 @@ El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/wind
 
 
 
-El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el espacio de nombres predeterminado en el servidor local. Se devuelve un objeto [**SWbemObject**](swbemobject.md) .
+El moniker siguiente identifica la instancia de [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) correspondiente a la unidad C: en el espacio de nombres predeterminado en el servidor local. Se devuelve un objeto [**SWbemObject.**](swbemobject.md)
 
 
 ```VB
@@ -163,7 +163,7 @@ El moniker siguiente identifica la instancia de [**Win32 \_ LogicalDisk**](/wind
 
 
 
-El moniker siguiente establece el nivel de suplantación en Impersonate y establece el \_ privilegio de depuración se.
+El moniker siguiente establece el nivel de suplantación para suplantar y establece el SE \_ debug.
 
 
 ```VB
@@ -172,7 +172,7 @@ El moniker siguiente establece el nivel de suplantación en Impersonate y establ
 
 
 
-El moniker siguiente establece el nivel de suplantación en Impersonate y establece el \_ privilegio de depuración se. También revoca el privilegio de cierre de SE \_ .
+El moniker siguiente establece el nivel de suplantación para suplantar y establece el SE \_ debug. También revoca el SE \_ shutdown.
 
 
 ```VB
@@ -181,7 +181,7 @@ El moniker siguiente establece el nivel de suplantación en Impersonate y establ
 
 
 
-El moniker siguiente recupera las descripciones localizadas en Inglés de Estados Unidos de la clase **MyClass** del \\ espacio de nombres WMI raíz.
+El moniker siguiente recupera las descripciones localizadas en inglés de Estados Unidos para la **clase myclass** del espacio de \\ nombres wmi raíz.
 
 
 ```VB
@@ -190,7 +190,7 @@ El moniker siguiente recupera las descripciones localizadas en Inglés de Estado
 
 
 
-El moniker siguiente solicita la autenticación Kerberos mediante el \\ servidor dominio principal.
+El moniker siguiente solicita la autenticación Kerberos mediante el servidor mydomain \\ principal.
 
 
 ```VB
@@ -201,7 +201,7 @@ El moniker siguiente solicita la autenticación Kerberos mediante el \\ servidor
 
 
 
-El moniker siguiente solicita la autenticación NTLM mediante el dominio midominio.
+El moniker siguiente solicita la autenticación NTLM mediante el dominio mydomain.
 
 
 ```VB
@@ -212,7 +212,7 @@ El moniker siguiente solicita la autenticación NTLM mediante el dominio midomin
 
 
 
-En el ejemplo de código de VBScript siguiente se muestra cómo combinar parámetros de configuración regional y seguridad en un moniker.
+En el ejemplo de código de VBScript siguiente se muestra cómo combinar parámetros de seguridad y configuración regional en un moniker.
 
 
 ```VB
@@ -238,9 +238,9 @@ wscript.echo "File system = " & myobj.filesystem
 
 > [!Note]
 >
-> Aunque los monikers proporcionan un acceso directo a los objetos, en determinadas circunstancias, el uso repetido de monikers puede ser menos eficaz que el código equivalente que se conecta explícitamente a WMI. Si el rendimiento de la aplicación es una consideración, considere la posibilidad de usar los mecanismos alternativos.
+> Aunque los monikers proporcionan un acceso más directo a los objetos, en determinadas circunstancias, el uso repetido de monikers puede ser menos eficaz que el código equivalente que se conecta explícitamente a WMI. Si el rendimiento de la aplicación es una consideración, considere la posibilidad de usar los mecanismos alternativos.
 >
-> No es posible usar la función **GetObject** proporcionada por VBScript para actualizar o establecer los datos al ejecutar scripts incrustados en una página HTML, ya que Microsoft Internet Explorer deniega el uso de esta llamada por motivos de seguridad.
+> No es posible usar la función **GetObject** proporcionada por VBScript para actualizar o establecer datos al ejecutar scripts insertados en una página HTML, ya que Microsoft Internet Explorer deniega el uso de esta llamada por motivos de seguridad.
 
  
 

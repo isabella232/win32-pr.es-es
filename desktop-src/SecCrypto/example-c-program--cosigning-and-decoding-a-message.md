@@ -4,12 +4,12 @@ ms.assetid: b400436f-a71f-426a-ac8a-7fdcfa6d7575
 title: 'Programa C de ejemplo: Cosignación y decodización de un mensaje'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32f45525354ec1d85853a93677a72d96ea8555a0f7d1adf892ba27e5f0bf55fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 786bf0e44c0d781070d8cde0e1f08b8235b27234
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173266"
 ---
 # <a name="example-c-program-cosigning-and-decoding-a-message"></a>Programa C de ejemplo: Cosignación y decodización de un mensaje
 

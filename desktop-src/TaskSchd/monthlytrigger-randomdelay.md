@@ -1,10 +1,10 @@
 ---
 title: MonthlyTrigger.RandomDelay, propiedad
-description: Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | MonthlyTrigger.RandomDelay, propiedad
+description: Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | MonthlyTrigger.RandomDelay, propiedad
 ms.assetid: 5334356f-fef1-4d0e-9879-6ec996b75dff
 keywords:
 - Propiedad RandomDelay Programador de tareas
-- Propiedad RandomDelay Programador de tareas , objeto MonthlyTrigger
+- Propiedad RandomDelay Programador de tareas objeto , MonthlyTrigger
 - Objeto MonthlyTrigger Programador de tareas , propiedad RandomDelay
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d751b31f31cdba9233ea2932976fc69f6880ab8e4c3b81c8743e6c381bdc9a5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa7f5c3a1831681cca2b3dc006ffb7a7d44a7a6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119253775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170666"
 ---
 # <a name="monthlytriggerrandomdelay-property"></a>MonthlyTrigger.RandomDelay, propiedad
 
-Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
+Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
 
 ## <a name="syntax"></a>Sintaxis
 

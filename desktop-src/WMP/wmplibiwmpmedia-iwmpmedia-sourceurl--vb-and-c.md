@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5427dadcbc2b9dccc4156ff1c9b25e641298a3c7cd069900fa932b6e0803c64
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d9ad2cdb2c0a67f65f7b0cf722d1b613307806d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120122605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172726"
 ---
-# <a name="iwmpmediasourceurl-property"></a>IWMPMedia::sourceURL, propiedad
+# <a name="iwmpmediasourceurl-property"></a>Propiedad IWMPMedia::sourceURL
 
 La **propiedad sourceURL** obtiene la dirección URL del elemento multimedia.
 

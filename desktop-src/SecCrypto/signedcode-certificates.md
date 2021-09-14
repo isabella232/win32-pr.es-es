@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: ae1f456c59a75fa8cd9969e57f7e991cc836ee3783d25e52919387606ec79262
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b24a07041dae1ea2387ced93d1d2ae541a806029
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117974256"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173118"
 ---
 # <a name="signedcodecertificates-property"></a>Propiedad SignedCode.Certificates
 
@@ -26,7 +26,7 @@ ms.locfileid: "117974256"
 
 La **propiedad Certificates** recupera la colección de certificados en el archivo ejecutable firmado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -43,7 +43,7 @@ Colección [**Certificates**](certificates.md) que contiene todos los certificad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |

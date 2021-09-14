@@ -1,21 +1,21 @@
 ---
 description: En el ejemplo siguiente se combina la firma y la codificación de un mensaje, y la codificación de un mensaje firmado y la comprobación de la firma.
 ms.assetid: 2cad11a8-75ad-4726-a7bb-82870b71c721
-title: 'Programa C de ejemplo: firma, codificación, codificación y comprobación de un mensaje'
+title: 'Programa de C de ejemplo: firma, codificación, codificación y comprobación de un mensaje'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8b274c8db1bc36c32616c84c4771d95a144f965effc7a849e77dde9d276950b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 128b4368a75d5f7636394fdf9a3b1b2694f45176
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173222"
 ---
-# <a name="example-c-program-signing-encoding-decoding-and-verifying-a-message"></a>Programa C de ejemplo: firma, codificación, codificación y comprobación de un mensaje
+# <a name="example-c-program-signing-encoding-decoding-and-verifying-a-message"></a>Programa de C de ejemplo: firma, codificación, codificación y comprobación de un mensaje
 
 En el ejemplo siguiente se combina la firma y la codificación de un mensaje, y la codificación de un mensaje firmado y la comprobación de la firma. Las dos operaciones normalmente estarían en programas independientes. El ejemplo de codificación crearía el mensaje codificado, lo guardaría en un archivo de disco o, de alguna otra manera, lo enviaría a otro usuario. El ejemplo de descodificación recibiría el mensaje codificado, lo descodificaría y comprobaría la firma. Los dos procesos se han combinado aquí para mostrar que ambos procedimientos funcionan.
 
-La firma y codificación de un mensaje no garantiza la privacidad de ese mensaje. En su lugar, garantiza la autenticidad del mensaje. Dado que el mensaje está firmado con la clave privada del remitente, cuando el receptor del mensaje descifra la firma con la clave pública del remitente [*(disponible*](../secgloss/p-gly.md) en el certificado que se envía junto con el mensaje), el receptor puede estar seguro de que el mensaje lo envió la persona o entidad asociada al certificado y que el mensaje no se cambió después de firmarlo.
+La firma y codificación de un mensaje no garantiza la privacidad de ese mensaje. Sino que garantiza la autenticidad del mensaje. Dado que el mensaje está firmado con la clave privada del remitente, cuando el receptor del mensaje descifra la firma con la clave pública del remitente [*(disponible*](../secgloss/p-gly.md) en el certificado que se envía junto con el mensaje), el receptor puede estar seguro de que el mensaje lo envió la persona o entidad asociada al certificado y que el mensaje no se cambió después de firmarlo.
 
 En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI para codificar un mensaje:
 

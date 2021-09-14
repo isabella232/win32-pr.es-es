@@ -29,16 +29,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91ede3347581267d9fcec00a82c016c273c239c9673b536843753e6b59ec2341
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0689536385644ae3ef95d106e50ab198e5a57f93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119514325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172769"
 ---
 # <a name="win32_tsenvironmentsetting-class"></a>Clase \_ TSEnvironmentSetting de Win32
 
-La clase WMI **Win32 \_ TSEnvironmentSetting** define los valores de configuración de la clase [**\_ Terminal Win32,**](win32-terminal.md) incluida la directiva de programa inicial.
+La clase WMI **\_ TSEnvironmentSetting de Win32** define las opciones de configuración de la clase [**\_ Terminal Win32,**](win32-terminal.md) incluida la directiva de programa inicial.
 
 La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
 
@@ -64,7 +64,7 @@ class Win32_TSEnvironmentSetting : Win32_TerminalSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSEnvironmentSetting de Win32** tiene estos tipos de miembros:
 
@@ -119,7 +119,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si la imagen de fondo de pantalla se muestra en el cliente. No mostrar la imagen de papel tapiz puede ahorrar recursos del sistema al reducir el tiempo necesario para volver a dibujar la pantalla.
+Especifica si la imagen de fondo de pantalla se muestra en el cliente. Si no se muestra la imagen de fondo de pantalla, se pueden ahorrar recursos del sistema reduciendo el tiempo necesario para volver a dibujar la pantalla.
 
 <dt>
 
@@ -201,7 +201,7 @@ La configuración del programa de inicio del usuario está en vigor.
 
 <span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>
 
-<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación de** servidor (1)
+<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación del** servidor (1)
 
 
 </dt> <dd>
@@ -265,7 +265,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad ClientWallPaper** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
+Indica si la propiedad **ClientWallPaper** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -301,7 +301,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad InitialProgramPath** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
+Indica si la propiedad **InitialProgramPath** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -468,11 +468,11 @@ Esta propiedad se hereda de [**\_ TerminalSetting de Win32.**](win32-terminalset
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tenga en cuenta que las winstations asociadas a la sesión de consola no pueden tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad **TerminalName,** los métodos de este objeto **devuelven WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB

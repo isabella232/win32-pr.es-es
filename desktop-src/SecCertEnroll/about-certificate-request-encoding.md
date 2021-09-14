@@ -4,12 +4,12 @@ ms.assetid: 0b9fa1bc-b67e-4b50-abd5-cbc3663ff219
 title: Codificación de solicitud de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd6bb65b496264fcd1f9667416c78d5d8cf246f1c9aa4cf736990a1f61669f19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cd9dfedede4c7b10d4968242b1d27ad11e2b6f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118904854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173349"
 ---
 # <a name="certificate-request-encoding"></a>Codificación de solicitud de certificado
 

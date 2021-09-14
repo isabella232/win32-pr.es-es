@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c046702b81ce60f2e50817cb98c04686d9a35e964a141d88fd70dd05654e3067
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6d4d8559e64580897aec5261c450dc739496e75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170470"
 ---
 # <a name="d3dxcolornegative-function"></a>Función D3DXColorNegative
 
@@ -65,11 +65,11 @@ Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
 Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el valor de color negativo del valor de color.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El canal alfa de entrada se copia, sin modificar, en el canal alfa de salida.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXColorNegative** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXColorNegative** se puede usar como parámetro para otra función.
 
 Esta función devuelve el valor de color negativo restando 1,0 de los componentes de color de la estructura [**D3DXCOLOR,**](d3dxcolor.md) como se muestra en el ejemplo siguiente.
 

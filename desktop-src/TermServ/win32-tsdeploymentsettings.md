@@ -39,12 +39,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a3f5b5cde779cbd9b8120fa648138611236935080f3517a28a6f19dcee8864b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f254363968099ab73c5f3f14f1f15ab8554f62a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118349313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172781"
 ---
 # <a name="win32_tsdeploymentsettings-class"></a>Clase \_ TSDeploymentSettings de Win32
 
@@ -81,7 +81,7 @@ class Win32_TSDeploymentSettings : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSDeploymentSettings de Win32** tiene estos tipos de miembros:
 
@@ -198,7 +198,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El contenido del archivo RDP que se corresponde con el rdp personalizado Configuración en Administrador de RemoteApp.
+Contenido del archivo RDP que se corresponde con el rdp personalizado Configuración en Administrador de RemoteApp.
 
 </dd> <dt>
 
@@ -329,7 +329,7 @@ Use un servidor de puerta de enlace de Escritorio remoto.
 3
 </dt> <dd>
 
-Detectar automáticamente la configuración del servidor de puerta de enlace de Escritorio remoto.
+Detecte automáticamente la configuración del servidor de puerta de enlace de Escritorio remoto.
 
 </dd> </dl>
 
@@ -416,7 +416,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica las opciones de redireccionamiento de dispositivos y recursos para las conexiones de RemoteApp. Se pueden combinar **marcas para RedirectionOptions.** Los valores siguientes son posibles.
+Especifica las opciones de redireccionamiento de dispositivos y recursos para las conexiones RemoteApp. Se pueden combinar **marcas para RedirectionOptions.** Los valores siguientes son posibles.
 
 <dt>
 
@@ -444,7 +444,7 @@ Redirigir impresoras.
 4
 </dt> <dd>
 
-Redirigir el Portapapeles.
+Redirija el Portapapeles.
 
 </dd> <dt>
 
@@ -465,7 +465,7 @@ Redirigir tarjetas inteligentes.
 32
 </dt> <dd>
 
-Redirigir audio.
+Redirija el audio.
 
 </dd> <dt>
 
@@ -503,7 +503,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -580,16 +580,16 @@ Indica si hay varios monitores habilitados para el escritorio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para establecer propiedades mediante esta clase.
 
 Si **RequireServerAuth está** establecido en **TRUE,** tenga en cuenta lo siguiente:
 
 -   Si el programa RemoteApp es para uso de intranet y todos los equipos cliente ejecutan Windows Server 2008 o Windows Vista, no es necesario configurar el servidor host de sesión de Escritorio remoto para que use un certificado SSL. En este caso, se usa la Autenticación a nivel de red.
--   Debe especificar el FQDN del servidor o la granja de servidores para el valor de la **propiedad FarmName.**
+-   Debe especificar el FQDN del servidor o la granja para el valor de la **propiedad FarmName.**
 
-Para conectarse al espacio de nombres "CIMV2 \\ TerminalServices", el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio de nombres \\ "CIMV2 TerminalServices", el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -600,17 +600,17 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Se instalan en el equipo al agregar el rol asociado. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Se instalan en el equipo cuando se agrega el rol asociado. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 

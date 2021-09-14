@@ -5,7 +5,7 @@ ms.assetid: eb3793f6-bad1-4c80-991e-c6d0093ae57f
 keywords:
 - Método getByAuthor Reproductor de Windows Media
 - Método getByAuthor Reproductor de Windows Media , interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Reproductor de Windows Media método , getByAuthor
+- Interfaz IWMPMediaCollection Reproductor de Windows Media , método getByAuthor
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 829232e6cd9fb64fec1d209991c3734ad435b4b69d0d7b66b135ab9cca1fe4a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e594de010a65c15088e2a31a3ccbac2ac5a1fc6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172698"
 ---
 # <a name="iwmpmediacollectiongetbyauthor-method"></a>IWMPMediaCollection::getByAuthor (método)
 
@@ -64,11 +64,11 @@ Implements IWMPMediaCollection.getByAuthor
 
 Interfaz **WMPLib.IWMPPlaylist** para los elementos multimedia recuperados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del método depende de cuál de esas dos formas `getByAuthor` de usar. Si recupera la interfaz mediante una llamada [a AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el método devuelve todos los `getByAuthor` elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz mediante una llamada a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el método devuelve solo los elementos de audio de la biblioteca que tienen el atributo y el valor `getByAuthor` especificados.
+Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del método depende de cuál de esas dos maneras `getByAuthor` se use. Si recupera la interfaz llamando a [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el método devuelve todos los elementos multimedia `getByAuthor` de la biblioteca. Sin embargo, si recupera la interfaz mediante una llamada a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el método devuelve solo los elementos de audio de la biblioteca que tienen el atributo y el valor `getByAuthor` especificados.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -124,7 +124,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

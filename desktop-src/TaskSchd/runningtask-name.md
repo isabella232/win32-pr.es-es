@@ -1,6 +1,6 @@
 ---
 title: RunningTask.Name propiedad
-description: Para el scripting, obtiene el nombre de la tarea.
+description: Para scripting, obtiene el nombre de la tarea.
 ms.assetid: 6c21f845-a33f-4625-97e0-d6fc739527a3
 keywords:
 - Nombre de propiedad Programador de tareas
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56d0a1a9be1c0572ef7fd7e39e26d2a091ad398719d8f8b7cff0430403ff3ffb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 039c8f5f1b2ac39cf331050a9e2cc0cd186e4537
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172821"
 ---
 # <a name="runningtaskname-property"></a>RunningTask.Name propiedad
 
-Para el scripting, obtiene el nombre de la tarea.
+Para scripting, obtiene el nombre de la tarea.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

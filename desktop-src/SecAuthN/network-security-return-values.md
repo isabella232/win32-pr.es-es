@@ -4,12 +4,12 @@ ms.assetid: f8e6692f-4824-40fe-a5b3-9843689ea02e
 title: Valores devueltos de seguridad de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a40fd8e6e21d9e7671c1e7b9c3d008978628e28cb0fcb01c3df56359144e72e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a362fde712d2a44565894aceb9d85172e488b53a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118921304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173417"
 ---
 # <a name="network-security-return-values"></a>Valores devueltos de seguridad de red
 

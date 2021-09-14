@@ -6,12 +6,12 @@ keywords:
 - Programador de tareas ejemplos Programador de tareas , desencadenador semanal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cf6e0a2e94f3f7da34871d1bce9d86fe6cf29b9d86baf17aed82cc3715e15bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c7c3d6698bd97429c1871b17f06f9e49f711355
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118858793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170658"
 ---
 # <a name="starting-an-executable-weekly"></a>Iniciar un ejecutable semanalmente
 
@@ -33,7 +33,7 @@ En los ejemplos siguientes se muestra cómo crear tareas que se inician Bloc de 
 
 <dl> <dt>
 
-[Uso de la Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
  

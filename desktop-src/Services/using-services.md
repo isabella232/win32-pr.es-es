@@ -1,19 +1,19 @@
 ---
-description: Para crear y controlar servicios, utilice el siguiente código de ejemplo.
+description: Para crear y controlar servicios, use el siguiente código de ejemplo.
 ms.assetid: cacf0bdd-95b3-41d3-96a9-c60415a1f437
 title: Uso de servicios
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0d14d21a7fbc5d657fea243944704876b74b4c00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913010"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170778"
 ---
 # <a name="using-services"></a>Uso de servicios
 
-Para crear y controlar servicios, utilice el siguiente código de ejemplo.
+Para crear y controlar servicios, use el siguiente código de ejemplo.
 
 ## <a name="service-program-tasks"></a>Tareas del programa de servicio
 
@@ -26,13 +26,13 @@ Para crear y controlar servicios, utilice el siguiente código de ejemplo.
 -   [Instalación de un servicio](installing-a-service.md)
 -   [Eliminación de un servicio](deleting-a-service.md)
 -   [Cambiar la configuración de un servicio](changing-a-service-configuration.md)
--   [Consultar la configuración de un servicio](querying-a-service-s-configuration.md)
+-   [Consulta de la configuración de un servicio](querying-a-service-s-configuration.md)
 
-## <a name="service-control-program-tasks"></a>Tareas del programa de control de servicios
+## <a name="service-control-program-tasks"></a>Tareas del programa control de servicios
 
 -   [Iniciar un servicio](starting-a-service.md)
 -   [Detener un servicio](stopping-a-service.md)
--   [Modificar la DACL para un servicio](modifying-the-dacl-for-a-service.md)
+-   [Modificación de la DACL para un servicio](modifying-the-dacl-for-a-service.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -41,7 +41,7 @@ Para crear y controlar servicios, utilice el siguiente código de ejemplo.
 [Acerca de los servicios](about-services.md)
 </dt> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

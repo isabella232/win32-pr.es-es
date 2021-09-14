@@ -9,18 +9,18 @@ keywords:
 - Complementos de DSP, negociación de formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69669bc3af82400ea62d154335d117fef185d0b34184be4101ffa5ae309e6ccb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbc805b18d3e2be081e4f85bcc5ed42aded06853
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170573"
 ---
 # <a name="format-negotiation"></a>Negociación de formato
 
 Para Reproductor de Windows Media y un complemento DSP para compartir datos, ambos programas deben estar de acuerdo en el formato de los datos que están procesando. El complemento DSP implementa métodos a los que el reproductor llama para determinar qué formatos admite el complemento. El complemento también implementa métodos a los que el reproductor llama para establecer el formato actual.
 
-Si el complemento actúa como un objeto multimedia DirextX (DMO), Reproductor de Windows Media detecta y establece formatos multimedia llamando a métodos de la **interfaz IMediaObject.** Por ejemplo, el reproductor llama repetidamente al **IMediaObject::GetInputType** del complemento para obtener una lista de todos los formatos de entrada admitidos por el complemento. DMO complementos usan la estructura **\_ DMO MEDIA \_ TYPE** para organizar la información que especifica un formato multimedia. Para obtener más información sobre DMO complementos y el formato de negociación del reproductor, vea [Acerca de IMediaObject](about-imediaobject.md).
+Si el complemento actúa como un objeto multimedia DirextX (DMO), Reproductor de Windows Media detecta y establece formatos multimedia llamando a métodos de la interfaz **IMediaObject.** Por ejemplo, el reproductor llama repetidamente al **IMediaObject::GetInputType** del complemento para obtener una lista de todos los formatos de entrada admitidos por el complemento. DMO complementos usan la estructura **\_ DMO MEDIA \_ TYPE** para organizar la información que especifica un formato multimedia. Para obtener más información sobre DMO complementos y el formato de negociación del reproductor, vea [Acerca de IMediaObject](about-imediaobject.md).
 
 Si el complemento actúa como una transformación de Media Foundation (MFT), Reproductor de Windows Media detecta y establece formatos multimedia llamando a métodos de la interfaz **DETRANSFORMTransform.** Por ejemplo, el reproductor llama varias veces al **elemento DESTRANSFORM::GetInputAvailableType** del complemento para obtener una lista de todos los formatos de entrada admitidos por el complemento. Los complementos de MFT y el reproductor usan la interfaz **IMFMediaType** para organizar e intercambiar información de formato.
 

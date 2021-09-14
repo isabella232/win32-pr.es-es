@@ -4,12 +4,12 @@ ms.assetid: 05785d64-a22f-411f-9fae-318828d30c52
 title: Método ITFormatControl::ReOrderCapabilities (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12f1a105a659b89305a4f89bd7d647556e8d38d3e4320167cac9de1c0c3b68d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d6f7800e4a04dbd70c5b270778cd7eb0ff540b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117945061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170701"
 ---
 # <a name="itformatcontrolreordercapabilities-method"></a>ItFormatControl::ReOrderCapabilities (método)
 
@@ -78,7 +78,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se [**debe llamar al método GetNumberOfCapabilities**](itformatcontrol-getnumberofcapabilities.md) antes de usar este método.
 
@@ -86,10 +86,10 @@ Se [**debe llamar al método GetNumberOfCapabilities**](itformatcontrol-getnumbe
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                         |
-| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 

@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7795633355eccdc19da235a56d211f4913ac532e9df51f6d30f33635f9b2d39a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 883ee7aa2f230756d62294d46e6402fe7f962d4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119131447"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170509"
 ---
 # <a name="countertype-qualifier"></a>Calificador CounterType
 
@@ -32,7 +32,7 @@ Para obtener más información y un desglose de los tipos de contador por funci�
 |-------------|------------------------------------------|
 | 0           | PERF \_ COUNTER \_ RAWCOUNT \_ HEX             |
 | 256         | PERF \_ COUNTER \_ LARGE \_ RAWCOUNT \_ HEX      |
-| 2816        | TEXTO DEL \_ CONTADOR DE \_ RENDIMIENTO                      |
+| 2816        | TEXTO DEL \_ CONTADOR DE RENDIMIENTO \_                      |
 | 65536       | PERF \_ COUNTER \_ RAWCOUNT                  |
 | 65792       | PERF \_ COUNTER \_ LARGE \_ RAWCOUNT           |
 | 73728       | PERF \_ DOUBLE \_ RAW                        |

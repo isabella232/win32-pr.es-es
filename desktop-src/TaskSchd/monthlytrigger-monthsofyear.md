@@ -3,8 +3,8 @@ title: MonthlyTrigger.MonthsOfYear, propiedad
 description: Para el scripting, obtiene o establece los meses del año durante los que se ejecuta la tarea. | MonthlyTrigger.MonthsOfYear, propiedad
 ms.assetid: cf26a815-7f4f-4b7a-8db8-a4bd9b77cf49
 keywords:
-- Propiedades MonthsOfYear Programador de tareas
-- Propiedad MonthsOfYear Programador de tareas objeto , MonthlyTrigger
+- Propiedad MonthsOfYear Programador de tareas
+- Propiedad MonthsOfYear Programador de tareas , objeto MonthlyTrigger
 - Objeto MonthlyTrigger Programador de tareas propiedad , MonthsOfYear
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ff6f08e257acf85a8a3f073f43c3c81e65817900f8154e1701ab73fe10c2368
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5683fb1c85e470ca7c82b069929de0351ea7cffe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119253785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170669"
 ---
 # <a name="monthlytriggermonthsofyear-property"></a>MonthlyTrigger.MonthsOfYear, propiedad
 
 Para el scripting, obtiene o establece los meses del año durante los que se ejecuta la tarea.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,13 +40,13 @@ MonthlyTrigger.MonthsOfYear As short
 
 Máscara bit a bit que indica los meses del año durante los que se ejecuta la tarea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la tabla siguiente se muestra la asignación de la máscara bit a bit que usa esta propiedad.
 
 
 
-| Month (Mes)     | Valor hexadecimal | Valor decimal |
+| Mes     | Valor hexadecimal | Valor decimal |
 |-----------|-----------|---------------|
 | January   | 0X01      | 1             |
 | February  | 0x02      | 2             |
@@ -65,7 +65,7 @@ En la tabla siguiente se muestra la asignación de la máscara bit a bit que usa
 
  
 
-Al leer o escribir su propio XML para una tarea, los meses del año se especifican mediante el elemento [**Months**](taskschedulerschema-months-monthlyscheduletype-element.md) del esquema Programador de tareas datos.
+Al leer o escribir su propio XML para una tarea, los meses del año se especifican mediante el elemento [**Months**](taskschedulerschema-months-monthlyscheduletype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 

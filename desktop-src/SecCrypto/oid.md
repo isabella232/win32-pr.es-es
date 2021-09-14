@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: a0c37fc1e85dd4d372219e142ed587f9766f9634911afa59b49ce5538023af4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a524bfd8d2eb2edcf3c97919129dd694414d5ace
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117979683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173149"
 ---
 # <a name="oid-object"></a>Objeto OID
 
@@ -33,7 +33,7 @@ El **objeto OID** se usa para realizar las siguientes tareas:
 -   Establezca o recupere un nombre CAPICOM y un nombre para mostrar para el OID.
 -   Establezca o recupere el número de puntos para el OID.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto OID** tiene estos tipos de miembros:
 
@@ -47,15 +47,15 @@ El **objeto OID** tiene estas propiedades.
 
 | Propiedad                                            | Tipo de acceso           | Descripción                                                                                      |
 |:----------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------|
-| [**FriendlyName**](oid-friendlyname.md)<br/> | Lectura/escritura<br/> | Establece o recupera el nombre para mostrar del OID.<br/>                                       |
-| [**Nombre**](oid-name.md)<br/>                 | Lectura/escritura<br/> | Establece o recupera el nombre definido por CAPICOM para el OID. Esta es la propiedad predeterminada.<br/> |
-| [**Valor**](oid-value.md)<br/>               | Lectura/escritura<br/> | Establece o recupera el valor del número de puntos de OID del OID.<br/>                      |
+| [**FriendlyName**](oid-friendlyname.md)<br/> | Lectura y escritura<br/> | Establece o recupera el nombre para mostrar del OID.<br/>                                       |
+| [**Nombre**](oid-name.md)<br/>                 | Lectura y escritura<br/> | Establece o recupera el nombre definido por CAPICOM para el OID. Esta es la propiedad predeterminada.<br/> |
+| [**Value**](oid-value.md)<br/>               | Lectura y escritura<br/> | Establece o recupera el valor del número de puntos de OID del OID.<br/>                      |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede crear el objeto **OID** y es seguro para el scripting. El ProgID del **objeto OID** es CAPICOM. OID.1.
 
@@ -70,7 +70,7 @@ Las siguientes propiedades de objeto CAPICOM devuelven un **objeto OID:**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |

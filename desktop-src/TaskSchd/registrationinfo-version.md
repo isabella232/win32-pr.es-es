@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b08ef170004b7c9791f18cf65360c2446d5c87a6b835fb6fbcb048f47892c470
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c312878383c5361317a765cbf84a503244c188a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172894"
 ---
 # <a name="registrationinfoversion-property"></a>RegistrationInfo.Version, propiedad
 
 Para el scripting, obtiene o establece el número de versión de la tarea.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,7 +40,7 @@ RegistrationInfo.Version As String
 
 Número de versión de la tarea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al leer o escribir XML para una tarea, el número de versión de la tarea se especifica mediante el elemento [**Version**](taskschedulerschema-version-registrationinfotype-element.md) del Programador de tareas esquema.
 

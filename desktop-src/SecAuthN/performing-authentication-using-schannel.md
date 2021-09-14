@@ -4,12 +4,12 @@ ms.assetid: 060981e0-b52a-4cc2-bfd2-4cf24f921f16
 title: Realizar la autenticación mediante Schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6c2a5099dd29d6b3b342b583e37e2dc98187f5011c7cc75b75432924fba9ea1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a37b8dedf07680286288234c7ca4422f44c2c3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118921024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173386"
 ---
 # <a name="performing-authentication-using-schannel"></a>Realizar la autenticación mediante Schannel
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: 103438e3ef0747aa6170848398621b0246bd15366be4d1171ce5735942011007
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0f8ac49d8221538a168ade536e55766e209d3d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173345"
 ---
 # <a name="a_shaupdate-function"></a>Una \_ función SHAUpdate
 
@@ -66,7 +66,7 @@ Tamaño del búfer.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a esta función varias veces para calcular el hash en flujos de datos largos o flujos de datos discontinuos. Se debe llamar a la función [**\_ SHAFinal**](a-shafinal.md) antes de recuperar el valor hash.
 

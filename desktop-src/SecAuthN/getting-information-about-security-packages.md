@@ -4,12 +4,12 @@ ms.assetid: eaed162b-ef07-4295-93d9-6be91232a82e
 title: Obtener información sobre los paquetes de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 626b5bf53ddc9ef20f0110dc7695a7245245604ca9e11baa3cbb50b2c1bd393f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca690575ff7f46ef5a5b1d971b1ab9fdd91f95e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119883105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173529"
 ---
 # <a name="getting-information-about-security-packages"></a>Obtener información sobre los paquetes de seguridad
 

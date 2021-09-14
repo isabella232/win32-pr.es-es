@@ -3,7 +3,7 @@ title: Supervisión de carpetas Configuración
 description: Supervisión de carpetas Configuración
 ms.assetid: 563aeaec-0759-4b0c-a8e9-a9a2b3092515
 keywords:
-- Reproductor de Windows Media, configuración del Registro de supervisión de carpetas
+- Reproductor de Windows Media del Registro de supervisión de carpetas
 - Reproductor de Windows Media del Registro de supervisión de carpetas de archivos
 - Reproductor de Windows Media,registry
 - registro, configuración de supervisión de carpetas
@@ -13,12 +13,12 @@ keywords:
 - Configuración del Registro de supervisión de carpetas de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac3e5e99c633c58a68b3579c55d38e6ad5b2415d9faac8d6c3438251c5a83459
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 233076d1fc807dd5cdd79e9b4985ef752fba0815
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748447"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170578"
 ---
 # <a name="folder-monitoring-registry-settings"></a>Supervisión de carpetas Configuración
 
@@ -28,7 +28,7 @@ Para Reproductor de Windows Media 9 a Reproductor de Windows Media 11, para agre
 
 **HKEY \_ CURRENT USER Software \_ \\ \\ Preferencias de Microsoft \\ MediaPlayer \\\\**
 
-Los nuevos valores deben tener el nombre siguiente.
+Los nuevos valores se deben denominar como se muestra a continuación.
 
 
 

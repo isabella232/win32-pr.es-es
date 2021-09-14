@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 088756fe1e4bb3d5b019c141740917185c117416e8f30b871586b7197c62aa1c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 200e36f232c97c1b5a86c8a8a975783469d64a71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173198"
 ---
 # <a name="extendedpropertiesitem-property"></a>Propiedad ExtendedProperties.Item
 
@@ -26,7 +26,7 @@ ms.locfileid: "119007263"
 
 La **propiedad Item** recupera un objeto [**ExtendedProperty**](extendedproperty.md) de la colección. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

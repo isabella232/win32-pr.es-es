@@ -4,12 +4,12 @@ ms.assetid: cf87791c-b98c-4dd7-b346-336c4b1a88ca
 title: 'Programa C de ejemplo: Operaciones de almacén de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eba6a7634a5d3fbd6f1e4aab04c72d0c6eca0123fb037641f9625bb9900548b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2f20a56fd04eb79b1ebe2359e3c915d9aad60fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173249"
 ---
 # <a name="example-c-program-certificate-store-operations"></a>Programa C de ejemplo: Operaciones de almacén de certificados
 
@@ -24,11 +24,11 @@ En el ejemplo siguiente se muestran varias operaciones comunes de almacén [*de*
 -   Guardar el almacén en memoria en un archivo en disco.
 -   Abrir y cerrar un almacén de certificados basado en archivos.
 
-En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 En este ejemplo se usa **la función CreateMyDACL,** definida en el tema Creación de una [DACL,](../secbp/creating-a-dacl.md) para asegurarse de que el archivo abierto se crea con una DACL adecuada.
 
-En este ejemplo se crea un almacén de certificados en memoria. Se abre y se duplica un almacén del sistema. Se recupera un certificado del almacén del sistema. Se crea un nuevo certificado a partir de la parte codificada del certificado recuperado. El certificado recuperado se agrega al almacén de memoria. Se recupera un segundo certificado de Mi almacén y se agrega un vínculo a ese certificado al almacén de memoria. A continuación, el certificado y el vínculo se recuperan del almacén de memoria y la memoria se guarda en el disco. Se cierran todos los almacenes y archivos. A continuación, se vuelve a abrir el almacén de archivos y se realiza una búsqueda para el vínculo de certificado. El éxito de este programa depende de que mi tienda esté disponible. Ese almacén debe incluir un certificado con el asunto "Insertar nombre de sujeto del certificado1" y un segundo certificado con el asunto "Insertar nombre de sujeto \_ \_ del \_ \_ \_ \_ certificado2". Los nombres de los firmantes deben cambiarse por los nombres de los firmantes del certificado que se sabe que están en el almacén Mi.
+En este ejemplo se crea un almacén de certificados en memoria. Se abre y se duplica un almacén del sistema. Se recupera un certificado del almacén del sistema. Se crea un nuevo certificado a partir de la parte codificada del certificado recuperado. El certificado recuperado se agrega al almacén de memoria. Se recupera un segundo certificado de Mi almacén y se agrega un vínculo a ese certificado al almacén de memoria. A continuación, el certificado y el vínculo se recuperan del almacén de memoria y la memoria se guarda en el disco. Se cierran todos los almacenes y archivos. A continuación, se vuelve a abrir el almacén de archivos y se realiza una búsqueda para el vínculo de certificado. El éxito de este programa depende de que mi tienda esté disponible. Ese almacén debe incluir un certificado con el asunto "Insert cert subject name1" y un segundo certificado con el asunto \_ \_ \_ "Insert \_ cert subject \_ \_ name2". Los nombres de los firmantes deben cambiarse por los nombres de los firmantes del certificado que se sabe que están en el almacén Mi.
 
 
 ```C++

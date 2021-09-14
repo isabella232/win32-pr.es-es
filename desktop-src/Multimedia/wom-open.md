@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3cfca721019b28a5bf039e8c56c75892d85bd5e1
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173602"
 ---
-# <a name="wom_open-message"></a>Mensaje \_ WOM OPEN
+# <a name="wom_open-message"></a>Mensaje WOM \_ OPEN
 
 El **mensaje WOM \_ OPEN** se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se abre un dispositivo de salida de audio de forma de onda.
 

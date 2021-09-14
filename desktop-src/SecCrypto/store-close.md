@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e0310db88b29fea18756ecaf7a2dc142097c3a6e53dfff5892acdaf4030b9b00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e3deb127ec8b19d9ec5c625f07cfaa2685b776c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118897930"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170861"
 ---
 # <a name="storeclose-method"></a>Método Store.Close
 
@@ -43,7 +43,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de llamar al método **Close,** [**se**](store.md) destruye el objeto Store.
 
@@ -51,14 +51,14 @@ Después de llamar al método **Close,** [**se**](store.md) destruye el objeto S
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.1 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -68,7 +68,7 @@ Después de llamar al método **Close,** [**se**](store.md) destruye el objeto S
 [**Objetos criptografía**](cryptography-objects.md)
 </dt> <dt>
 
-[**Abierto**](store-open.md)
+[**Abrir**](store-open.md)
 </dt> </dl>
 
  

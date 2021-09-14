@@ -4,16 +4,16 @@ ms.assetid: 3e85e61c-d4df-49dd-aa86-1bbd682e375e
 title: Sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 716bfa3665dbd638b6d6cf70023b90963b5a31c56c2deacb70d5b31fd61cbafe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d3d62e06c018671bce1fbb87168f72e475c9ec5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765559"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170738"
 ---
 # <a name="synchronization"></a>Sincronización
 
-Hay varias maneras de coordinar varios subprocesos de ejecución. Las funciones descritas en esta introducción proporcionan mecanismos que los subprocesos pueden usar para sincronizar el acceso a un recurso.
+Hay varias maneras de coordinar varios subprocesos de ejecución. Las funciones descritas en esta información general proporcionan mecanismos que los subprocesos pueden usar para sincronizar el acceso a un recurso.
 
 -   [Novedades de la sincronización](what-s-new-in-synchronization.md)
 -   [Acerca de la sincronización](about-synchronization.md)

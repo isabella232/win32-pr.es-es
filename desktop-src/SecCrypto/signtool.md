@@ -4,21 +4,21 @@ description: SignTool es una herramienta de línea de comandos que firma digital
 ms.assetid: aa59cb35-5fba-4ce8-97ea-fc767c83f88e
 ms.topic: article
 ms.date: 10/12/2020
-ms.openlocfilehash: f7105e81b958e463612a5065003ed04c24b913f87f52d8d72bb7a708917ebbed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f738eddb6e47da12297bffd13a816398ba2c46c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118897960"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173102"
 ---
 # <a name="signtool"></a>SignTool
 
 SignTool es una herramienta de línea de comandos que firma digitalmente archivos, comprueba las firmas en los archivos y los archivos de marcas de tiempo. Para obtener información sobre por qué es importante firmar archivos, vea [Introducción a la firma de código.](cryptography-tools.md) La herramienta se instala en la carpeta Bin de la ruta de instalación del Kit de desarrollo de \\ software (SDK) de Microsoft Windows (ejemplo: C:\Archivos de programa (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe).
 
-SignTool está disponible como parte del SDK Windows, que puede descargar desde <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
+SignTool está disponible como parte del SDK Windows, que puede descargar de <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
 
 > [!Note]  
-> El SDK de Windows 10, Windows 10 HLK, Windows 10 WDK y Windows 10 ADK compila **20236** y posteriores requerirán ahora especificar el algoritmo de síntesis. El comando SignTool sign requiere que se especifiquen las opciones /fd y /td durante la firma y la marca de `file digest algorithm` `timestamp digest algorithm` tiempo, respectivamente. Se producirá una advertencia (código de error 0, inicialmente) si no se especifica /fd durante la firma y si no se especifica /td durante la marca de tiempo. En versiones posteriores de SignTool, la advertencia se convertirá en un error. Se recomienda SHA256, el que el sector considera más seguro que SHA1.  
+> El SDK de Windows 10, Windows 10 HLK, Windows 10 WDK y Windows 10 ADK **compilaciones 20236** y posteriores requerirán ahora especificar el algoritmo de síntesis. El comando SignTool sign requiere que se especifiquen las opciones /fd y /td durante la firma y la marca de `file digest algorithm` `timestamp digest algorithm` tiempo, respectivamente. Se producirá una advertencia (código de error 0, inicialmente) si no se especifica /fd durante la firma y si no se especifica /td durante la marca de tiempo. En versiones posteriores de SignTool, la advertencia se convertirá en un error. Se recomienda SHA256, el que el sector considera más seguro que SHA1.  
 
 
 ## <a name="syntax"></a>Sintaxis  
@@ -81,9 +81,9 @@ SignTool admite los siguientes comandos.
 |`/c`  *CertTemplateName*|Especifica el nombre de plantilla de certificado (una extensión de Microsoft) para el certificado de firma.|  
 |`/csp`  *CSPName*|Especifica el proveedor de servicios criptográficos (CSP) que contiene el contenedor de claves privadas.|  
 |`/d`  *Desc*|Especifica una descripción del contenido firmado.|  
-|`/dg`  *Ruta de acceso*|Genera el resumen que se va a firmar y los archivos PKCS7 sin firmar. El resumen de salida y los archivos PKCS7 serán: *Path\FileName.dig* y *Path\FileName.p7u*. Para generar un archivo XML adicional, vea <strong>/dxml</strong>.|  
-|`/di`  *Ruta de acceso*|Crea la firma ingiendo el resumen con signo en el archivo PKCS7 sin firmar. Los archivos PKCS7 y de resumen con signo de entrada deben ser: *Path\FileName.dig.signed* y *Path\FileName.p7u*.|  
-|`/dlib`  *Dll*|Especifica el archivo DLL que implementa la <code>AuthenticodeDigestSign</code> función con la que se firmará el resumen. Esta opción equivale a usar <strong>SignTool</strong> por separado con los modificadores <strong>/dg</strong>, <strong>/ds</strong>y <strong>/di,</strong> salvo que esta opción invoca los tres como una operación atómica.|  
+|`/dg`  *Path*|Genera el resumen que se va a firmar y los archivos PKCS7 sin firmar. El resumen de salida y los archivos PKCS7 serán: *Path\FileName.dig* y *Path\FileName.p7u*. Para generar un archivo XML adicional, vea <strong>/dxml</strong>.|  
+|`/di`  *Path*|Crea la firma ingiendo el resumen con signo en el archivo PKCS7 sin firmar. Los archivos PKCS7 y de resumen con signo de entrada deben ser: *Path\FileName.dig.signed* y *Path\FileName.p7u*.|  
+|`/dlib`  *Archivo DLL*|Especifica el archivo DLL que implementa la <code>AuthenticodeDigestSign</code> función con la que se firmará la síntesis. Esta opción equivale a usar <strong>SignTool</strong> por separado con los modificadores <strong>/dg</strong>, <strong>/ds</strong>y <strong>/di,</strong> salvo que esta opción invoca los tres como una operación atómica.|  
 |`/dmdf`  *Nombre*|Cuando se usa con <strong>la opción /dg,</strong> pasa el contenido del archivo a la <code>AuthenticodeDigestSign</code> función sin modificaciones.|  
 |`/ds`  |Firma solo la síntesis. El archivo de entrada debe ser el resumen generado por la <strong>opción /dg.</strong> El archivo de salida será: *File.signed.*|  
 |`/du`  *URL*|Especifica el localizador uniforme de recursos (URL) de la descripción ampliada del contenido firmado.|  
@@ -126,33 +126,33 @@ SignTool admite los siguientes comandos.
 |`/tr`  *URL*|Especifica la dirección URL del servidor con marca de tiempo RFC 3161. El archivo al que se va a agregar la marca de tiempo se debe haber firmado previamente. Se requiere la opción `/tr` o `/t`.|  
 
 
-## <a name="verify-command-options"></a>Comprobación de las opciones del comando  
+## <a name="verify-command-options"></a>Comprobar las opciones de comando  
 
 |Opción de Verify|Descripción|
 |----|----|
-| **/a** | Especifica que todos los métodos se puedan utilizar para comprobar el archivo. Primero, se buscan las bases de datos de catálogo para determinar si el archivo se firma en un catálogo. Si el archivo no está firmado en ningún catálogo, SignTool intenta comprobar la firma incrustada del archivo. Se recomienda esta opción a la hora de comprobar si se pueden firmar o no archivos en un catálogo. Entre los ejemplos de archivos que pueden o no estar firmados se incluyen Windows o controladores. |
+| **/a** | Especifica que todos los métodos se puedan utilizar para comprobar el archivo. Primero, se buscan las bases de datos de catálogo para determinar si el archivo se firma en un catálogo. Si el archivo no está firmado en ningún catálogo, SignTool intenta comprobar la firma incrustada del archivo. Se recomienda esta opción a la hora de comprobar si se pueden firmar o no archivos en un catálogo. Algunos ejemplos de archivos que pueden o no estar firmados incluyen Windows o controladores. |
 | **/ad** | Busca el catálogo utilizando la base de datos de catálogo predeterminada. |
 | **/all** | Comprueba todas las firmas de un archivo con varias firmas. |
 | **/as** | Busca el catálogo utilizando la base de datos de catálogo de componentes del sistema (controlador). |
 | **/ag** *CatDBGUID* | Busca el catálogo en la base de datos de catálogo identificada por el **GUID**. |
 | **/c** *CatFile* | Especifica el archivo de catálogo por nombre. |
-| **/d** | Imprima la dirección URL de descripción y descripción.<br/> **Windows Vista y versiones anteriores:** Esta marca no se admite.<br/> |
+| **/d** | Imprima la dirección URL de descripción y descripción.<br/> **Windows Vista y versiones anteriores:** No se admite esta marca.<br/> |
 | **/ds** *Index* | Comprueba la firma en una posición determinada. |
 | **/hash**{**SHA1** \| **SHA256**} | Especifica un algoritmo hash opcional que se usará al buscar un archivo en un catálogo. |
 | **/kp** | Realiza la comprobación mediante la directiva de firma de controladores en modo kernel x64. |
 | **/ms** | Utiliza la semántica de comprobación múltiple. Este es el comportamiento predeterminado de una [**llamada a WinVerifyTrust.**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) |
-| **Versión de /o**  | Comprueba el archivo por versión del sistema operativo. El parámetro version tiene el formato:<br/> *PlatformID*:_VerMajor_*_._ *_VerMinor_*_._ * _BuildNumber_<br/> Se recomienda el uso del modificador */o.* Si *no se especifica /o,* SignTool puede devolver resultados inesperados. Por ejemplo, si no incluye el modificador */o,* es posible que los catálogos del sistema que se validan correctamente en un sistema operativo anterior no se validen correctamente en un sistema operativo más reciente. |
-| **/p7** | Compruebe los archivos PKCS \# 7. No se usan directivas existentes para la validación pkcs \# 7. Se comprueba la signatura y se genera una cadena para el certificado de firma. |
-| **/pa** | Especifica que se usa la directiva de comprobación de autenticación predeterminada. Si no se especifica la opción **/pa,** SignTool usa la Windows comprobación del controlador. Esta opción no se puede usar con las **opciones de catdb.** |
+| **Versión de /o**  | Comprueba el archivo por versión del sistema operativo. El parámetro version tiene el formato:<br/> *PlatformID***:**_VerMajor_*_._ *_VerMinor_*_._ * _BuildNumber_<br/> Se recomienda el uso del modificador */o.* Si *no se especifica /o,* SignTool puede devolver resultados inesperados. Por ejemplo, si no incluye el modificador */o,* es posible que los catálogos del sistema que se validan correctamente en un sistema operativo anterior no se validen correctamente en un sistema operativo más reciente. |
+| **/p7** | Compruebe los archivos PKCS \# 7. No se usan directivas existentes para la validación PKCS \# 7. Se comprueba la signatura y se genera una cadena para el certificado de firma. |
+| **/pa** | Especifica que se usa la directiva de comprobación de autenticación predeterminada. Si no **se especifica la opción /pa,** SignTool usa la directiva Windows comprobación del controlador. Esta opción no se puede usar con las **opciones de catdb.** |
 | **/pg** *PolicyGUID* | Especifica una directiva de comprobación por **GUID.** El **GUID** corresponde al ActionID de la directiva de comprobación. Esta opción no se puede usar con las **opciones de catdb.** |
-| **/ph** | Imprima y compruebe los valores hash de página.<br/> **Windows Vista y versiones anteriores:** Esta marca no se admite.<br/>  |
+| **/ph** | Imprima y compruebe los valores hash de página.<br/> **Windows Vista y versiones anteriores:** No se admite esta marca.<br/>  |
 | **/r** *RootSubjectName* | Especifica el nombre del sujeto del certificado raíz al que el certificado de firma debe encadenarse. Este valor puede corresponder a una subcadena del nombre del sujeto completo del certificado raíz. |
 | **/tw** | Especifica que se genera una advertencia si la firma no tiene marca de tiempo.|
 
 
 El comando SignTool **verify** determina si el certificado de firma lo emitió una entidad de confianza, si se ha revocado el certificado de firma y, opcionalmente, si el certificado de firma es válido para una directiva específica.  
 
-El comando SignTool **verify** mostrará el estado de la firma incrustada a menos que se especifique una opción para buscar en un catálogo (/a, /ad, /as, /ag, /c). 
+El comando SignTool **verify** mostrará el estado de la firma incrustada a menos que se especifique una opción para buscar un catálogo (/a, /ad, /as, /ag, /c). 
 
 
 ## <a name="return-value"></a>Valor devuelto  

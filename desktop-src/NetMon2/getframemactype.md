@@ -1,7 +1,7 @@
 ---
 description: La función GetFrameMacType devuelve el tipo MAC del marco.
 ms.assetid: 8d3da770-1392-4638-a267-32c2dae289b0
-title: Función GetFrameMacType (Netmon. h)
+title: Función GetFrameMacType (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Nmapi.dll
 ms.openlocfilehash: b85accc64a6e29424e3f65d070bafcf29bb3ec0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173585"
 ---
-# <a name="getframemactype-function"></a>GetFrameMacType función)
+# <a name="getframemactype-function"></a>Función GetFrameMacType
 
-La función **GetFrameMacType** devuelve el tipo Mac del marco.
+La **función GetFrameMacType** devuelve el tipo MAC del marco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ DWORD WINAPI GetFrameMacType(
 
 <dl> <dt>
 
-*hFrame* \[ de\]
+*hFrame* \[ En\]
 </dt> <dd>
 
 Identificador del marco.
@@ -48,16 +48,16 @@ Identificador del marco.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve el tipo MAC del marco, que puede tener uno de los valores siguientes.
+La función devuelve el tipo MAC del marco, que puede tener uno de los siguientes valores.
 
--   tipo de MAC \_ \_ desconocido
--   \_Ethernet de tipo Mac \_
--   \_TOKENRING de tipo Mac \_
--   \_FDDI de tipo Mac \_
+-   TIPO DE MAC \_ \_ DESCONOCIDO
+-   ETHERNET \_ DE TIPO \_ MAC
+-   TOKENRING \_ DE \_ TIPO MAC
+-   FDDI \_ DE TIPO \_ MAC
 
 ## <a name="remarks"></a>Observaciones
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetFrameMacType** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetFrameMacType.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **Ge
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

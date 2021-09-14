@@ -1,21 +1,21 @@
 ---
-description: Muestra cómo usar las funciones CryptMsgOpenToEncode, CryptMsgOpenToDecode y CryptMsgUpdate con la estructura CMSG STREAM INFO para codificar y descodificar un mensaje mediante las características de streaming de estas \_ \_ funciones.
+description: Muestra cómo usar las funciones CryptMsgOpenToEncode, CryptMsgOpenToDecode y CryptMsgUpdate con la estructura CMSG_STREAM_INFO para codificar y descodificar un mensaje mediante las características de streaming de estas funciones.
 ms.assetid: 6c9c0509-1ad9-42cd-9589-e77752df6739
 title: 'Programa C de ejemplo: codificación y codificación de un mensaje mediante una secuencia'
 ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: eef428d7c6c0b175623bfa4811c4043bcd7bdaef3e05afea24a288f6629b8e0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.date: 09/10/2021
+ms.openlocfilehash: 3c776dba6ac38f3167dad0e40c84f3b9ccef6bd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765657"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173261"
 ---
 # <a name="example-c-program-encoding-and-decoding-a-message-using-a-stream"></a>Programa C de ejemplo: codificación y codificación de un mensaje mediante una secuencia
 
 En el ejemplo siguiente se muestra cómo usar las funciones [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgOpenToDecode y**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode) [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) con la estructura [**\_ CMSG STREAM \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_stream_info) para codificar y descodificar un mensaje mediante las características de streaming de estas funciones.
 
-La firma y codificación de un mensaje no garantiza la privacidad de ese mensaje. En su lugar, garantiza la autenticidad del mensaje. Dado que el mensaje está firmado con la clave privada del remitente, cuando el receptor del mensaje descifra la firma con la clave pública del remitente [*(disponible*](../secgloss/p-gly.md) en el certificado que se envía junto con el mensaje), el receptor puede estar seguro de que el mensaje lo envió la persona o entidad asociada al certificado y que el mensaje no se cambió después de firmarlo.
+La firma y codificación de un mensaje no garantiza la privacidad de ese mensaje. Sino que garantiza la autenticidad del mensaje. Dado que el mensaje está firmado con la clave privada del remitente, cuando el receptor del mensaje descifra la firma con la clave pública del remitente [*(disponible*](../secgloss/p-gly.md) en el certificado que se envía junto con el mensaje), el receptor puede estar seguro de que el mensaje lo envió la persona o entidad asociada al certificado y que el mensaje no se cambió después de firmarlo.
 
 Esta parte de la firma de codificación de este ejemplo ilustra las siguientes tareas y funciones cryptoAPI:
 

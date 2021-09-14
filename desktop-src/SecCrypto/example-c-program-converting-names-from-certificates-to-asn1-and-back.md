@@ -4,12 +4,12 @@ ms.assetid: 8b4771da-0996-40fb-98ce-73efe8e3534f
 title: 'Programa C de ejemplo: Convertir nombres de certificados a ASN.1 y Back'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e1093f47500592c32142f4680c046b60facc690f7c794c7b850b18e810242e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a14114d4ba956acabf26ff28368403c699497b45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173234"
 ---
 # <a name="example-c-program-converting-names-from-certificates-to-asn1-and-back"></a>Programa C de ejemplo: Convertir nombres de certificados a ASN.1 y Back
 

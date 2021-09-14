@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: c5ce8f906628df06ef506a0f57c33db4bed7c5980bb78ab2e0094d0443b5646b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0aa5dbaeeebe2daaf925b5d5f3aa82b36053fc39
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117773669"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173305"
 ---
 # <a name="algorithmkeylength-property"></a>Algorithm.KeyLength, propiedad
 
@@ -28,7 +28,7 @@ La **propiedad KeyLength** establece o recupera la longitud de la clave.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -45,18 +45,18 @@ Valor de la [**enumeración CAPICOM \_ ENCRYPTION KEY \_ \_ LENGTH**](capicom-en
 
 | Valor                                                                                                                                                                                                                                        | Significado                                                                                  |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_MAXIMUM"></span><span id="capicom_encryption_key_length_maximum"></span><dl> <dt>**LONGITUD MÁXIMA DE CLAVE \_ \_ DE CIFRADO \_ CAPICOM \_**</dt> </dl>     | Use la longitud máxima de clave disponible con el algoritmo de cifrado indicado.<br/> |
+| <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_MAXIMUM"></span><span id="capicom_encryption_key_length_maximum"></span><dl> <dt>**LONGITUD MÁXIMA DE LA \_ \_ CLAVE DE CIFRADO \_ CAPICOM \_**</dt> </dl>     | Use la longitud máxima de clave disponible con el algoritmo de cifrado indicado.<br/> |
 | <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_40_BITS"></span><span id="capicom_encryption_key_length_40_bits"></span><dl> <dt>**LONGITUD DE CLAVE DE CIFRADO CAPICOM \_ \_ DE \_ \_ 40 \_ BITS**</dt> </dl>    | Use claves de 40 bits.<br/>                                                              |
 | <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_56_BITS"></span><span id="capicom_encryption_key_length_56_bits"></span><dl> <dt>**LONGITUD DE CLAVE DE CIFRADO CAPICOM \_ \_ DE \_ \_ 56 \_ BITS**</dt> </dl>    | Use claves de 56 bits si están disponibles.<br/>                                                 |
-| <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_128_BITS"></span><span id="capicom_encryption_key_length_128_bits"></span><dl> <dt>**LONGITUD DE CLAVE DE CIFRADO CAPICOM \_ \_ DE \_ \_ 128 \_ BITS**</dt> </dl> | Use claves de 128 bits si están disponibles.<br/>                                                |
-| <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_192_BITS"></span><span id="capicom_encryption_key_length_192_bits"></span><dl> <dt>**LONGITUD DE CLAVE DE CIFRADO CAPICOM \_ \_ DE \_ \_ 192 \_ BITS**</dt> </dl> | Use claves de 192 bits. Esta longitud de clave solo está disponible para AES.<br/>                  |
+| <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_128_BITS"></span><span id="capicom_encryption_key_length_128_bits"></span><dl> <dt>**LONGITUD DE CLAVE \_ DE CIFRADO CAPICOM DE \_ \_ \_ 128 \_ BITS**</dt> </dl> | Use claves de 128 bits si están disponibles.<br/>                                                |
+| <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_192_BITS"></span><span id="capicom_encryption_key_length_192_bits"></span><dl> <dt>**LONGITUD DE CLAVE \_ DE CIFRADO CAPICOM DE \_ \_ \_ 192 \_ BITS**</dt> </dl> | Use claves de 192 bits. Esta longitud de clave solo está disponible para AES.<br/>                  |
 | <span id="CAPICOM_ENCRYPTION_KEY_LENGTH_256_BITS"></span><span id="capicom_encryption_key_length_256_bits"></span><dl> <dt>**LONGITUD DE CLAVE DE CIFRADO CAPICOM \_ \_ DE \_ \_ 256 \_ BITS**</dt> </dl> | Use claves de 256 bits. Esta longitud de clave solo está disponible para AES.<br/>                  |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se usan algoritmos de cifrado DES y 3DES, las longitudes de clave son estándar y se **omite la propiedad KeyLength.**
 
@@ -73,7 +73,7 @@ Cuando se usan algoritmos de cifrado DES y 3DES, las longitudes de clave son est
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

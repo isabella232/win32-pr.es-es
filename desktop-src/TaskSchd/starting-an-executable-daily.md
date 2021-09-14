@@ -1,21 +1,21 @@
 ---
-title: Iniciar un ejecutable diariamente
-description: La escritura de una tarea que inicia un archivo ejecutable diariamente se realiza mediante la definición de un desencadenador diario y una acción ejecutable.
+title: Iniciar un ejecutable a diario
+description: La escritura de una tarea que inicia un archivo ejecutable a diario se realiza mediante la definición de un desencadenador diario y una acción ejecutable.
 ms.assetid: 3ceea4a6-0052-4831-a3b0-76d84ab4e1ed
 keywords:
 - Programador de tareas ejemplos Programador de tareas , desencadenador diario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f32a5ec9b7eb7c6f6888bec669c422ff5348e97b9c3c0f27ed8b554dc1c0b78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebb5b11e1942f342437347f1aa4a510e101c56df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170665"
 ---
-# <a name="starting-an-executable-daily"></a>Iniciar un ejecutable diariamente
+# <a name="starting-an-executable-daily"></a>Iniciar un ejecutable a diario
 
-La escritura de una tarea que inicia un archivo ejecutable diariamente se realiza mediante la definición de un desencadenador diario y una acción ejecutable.
+La escritura de una tarea que inicia un archivo ejecutable a diario se realiza mediante la definición de un desencadenador diario y una acción ejecutable.
 
 ## <a name="daily-triggers"></a>Desencadenadores diarios
 
@@ -33,7 +33,7 @@ En los ejemplos siguientes se muestra cómo crear tareas que Bloc de notas a dia
 
 <dl> <dt>
 
-[Uso de la Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
  

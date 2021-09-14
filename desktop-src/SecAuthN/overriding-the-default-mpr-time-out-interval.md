@@ -4,12 +4,12 @@ ms.assetid: f57bd8ff-647d-42f8-abaf-7937b24416dd
 title: Invalidar el intervalo de tiempo de espera de MPR predeterminado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c51c2c9db2fb892b7c2fc9646a9328fb9de4b7f9782ff5204ed261b16471ca4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b4308d94f4b16a7f67786c8a0856f23922e6f25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118921139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173390"
 ---
 # <a name="overriding-the-default-mpr-time-out-interval"></a>Invalidar el intervalo de tiempo de espera de MPR predeterminado
 

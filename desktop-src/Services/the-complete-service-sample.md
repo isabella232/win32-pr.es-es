@@ -4,18 +4,18 @@ ms.assetid: a3aeea9b-09c0-4834-892a-c378b67402f4
 title: Ejemplo de servicio completo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1f3f5fc0fb59342841a9d1f1280475ace12c54998d59e5f36a19557f0ccc5c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb87ebfef3f964eacee66be94a4b5291c335d0d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118888336"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170781"
 ---
 # <a name="the-complete-service-sample"></a>Ejemplo de servicio completo
 
 Los temas de esta sección forman un ejemplo de servicio completo:
 
--   [Sample.mc (contiene](sample-mc.md) mensajes de error)
+-   [Sample.mc](sample-mc.md) (contiene mensajes de error)
 -   [Svc.cpp](svc-cpp.md) (contiene el código de servicio)
 -   [SvcConfig.cpp](svcconfig-cpp.md) (contiene el código de configuración del servicio)
 -   [SvcControl.cpp](svccontrol-cpp.md) (contiene código de control de servicio)
@@ -33,7 +33,7 @@ En el procedimiento siguiente se describe cómo compilar el servicio y registrar
 2.  Compile Svc.exe, SvcConfig.exe y SvcControl.exe desde Svc.cpp, SvcConfig.cpp y SvcControl.cpp, respectivamente.
 3.  Cree la clave del Registro **HKEY \_ LOCAL MACHINE SYSTEM \_ \\ \\ CurrentControlSet \\ Services \\ EventLog Application \\ \\ SvcName** y agregue los siguientes valores del Registro a esta clave.
 
-    | Valor                              | Tipo       | Descripción                                                                                                        |
+    | Value                              | Tipo       | Descripción                                                                                                        |
     |------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------|
     | **EventMessageFile**  =  *ruta de acceso de \_ dll* | REG \_ SZ    | Ruta de acceso al archivo DLL de solo recursos que contiene cadenas que el servicio puede escribir en el registro de eventos.               |
     | **TypesSupported** = 0x00000007    | REG \_ DWORD | Máscara de bits que especifica los tipos de eventos admitidos. El valor 0x000000007 indica que se admiten todos los tipos. |
@@ -48,14 +48,14 @@ En el procedimiento siguiente se describe cómo probar el servicio.
 
 **Para probar el servicio**
 
-1.  En Panel de control, inicie la **aplicación** Servicios. (En los pasos siguientes, use la tecla F5 para actualizar la pantalla después de ejecutar un comando que modifica la información en la **aplicación Servicios).**
+1.  En Panel de control, inicie la **aplicación Servicios.** (En los pasos siguientes, use la tecla F5 para actualizar la pantalla después de ejecutar un comando que modifica la información en la **aplicación Servicios).**
 2.  Ejecute el siguiente comando para instalar el servicio:
 
     **svc install**
 
     El servicio escribe "Servicio instalado correctamente" en la consola si la operación se realiza correctamente o un mensaje de error en caso contrario.
 
-    Si la instalación del servicio se realiza correctamente, el servicio se muestra en la **aplicación** Servicios. Tenga en cuenta **que Nombre** se establece  en "SvcName", **Descripción** y Estado están en blanco y **Tipo** de inicio está establecido en "Manual".
+    Si la instalación del servicio se realiza correctamente, el servicio se muestra en la **aplicación** Servicios. Tenga en cuenta **que Nombre** está establecido  en "SvcName", **Descripción** y Estado están en blanco y **Tipo** de inicio está establecido en "Manual".
 
 3.  Ejecute el siguiente comando para iniciar el servicio:
 
@@ -63,7 +63,7 @@ En el procedimiento siguiente se describe cómo probar el servicio.
 
     Si la operación se realiza correctamente, el programa de control de servicio escribe "Inicio del servicio pendiente..." y, a continuación, "El servicio se inició correctamente" en la consola. De lo contrario, el programa escribe un mensaje de error en la consola.
 
-    Si el servicio se inicia correctamente, **El** estado se establece en "Iniciado". El SCM ejecuta el código de la función [*ServiceMain.*](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) Si se produce un error, el servicio escribirá un mensaje de error en el registro de eventos. Este mensaje incluye el nombre de la función que produjo un error y el código de error que se devolvió en caso de error.
+    Si el servicio se inicia correctamente, **El** estado se establece en "Iniciado". El SCM ejecuta el código de la función [*ServiceMain.*](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) Si se produce un error, el servicio escribirá un mensaje de error en el registro de eventos. Este mensaje incluye el nombre de la función que produjo el error y el código de error devuelto en caso de error.
 
 4.  Ejecute el siguiente comando para actualizar la descripción del servicio:
 

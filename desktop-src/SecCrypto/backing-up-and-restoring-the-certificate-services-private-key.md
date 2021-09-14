@@ -1,15 +1,15 @@
 ---
-description: No puede usar las funciones de copia Certadm.dll copia de seguridad y restauración de la base de datos para realizar una copia de seguridad de las claves privadas de Servicios de certificados.
+description: No se pueden usar las Certadm.dll de copia de seguridad y restauración de la base de datos para realizar una copia de seguridad de las claves privadas de Servicios de certificados.
 ms.assetid: 27ee8caa-8f5e-46dc-b55d-afde5471507e
 title: Copia de seguridad y restauración de la clave privada de Servicios de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a65b8c25e627e516d92b8dc8219db9c7933bd8d9902b1f75bea204d723edd61f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 891794f36e87b2aa4b6a5d5c8dde55304da20601
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173289"
 ---
 # <a name="backing-up-and-restoring-the-certificate-services-private-key"></a>Copia de seguridad y restauración de la clave privada de Servicios de certificados
 

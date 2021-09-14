@@ -4,19 +4,19 @@ ms.assetid: cd2ce7b7-6167-4451-9f6e-881676a2145c
 title: MSGina.dll características
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2acf5d1e7e9dccf9581b27ea2fef3deb1c2c8aa218a1b0a711b7015134e1d2d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51833ab92e47dad01c13df004797e3ab3552b09a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117786754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173461"
 ---
 # <a name="msginadll-features"></a>MSGina.dll características
 
-Si está escribiendo un [*archivo GINA*](../secgloss/g-gly.md) para reemplazar el archivo DLL de GINA estándar de Microsoft (MSGina.dll), es posible que desee proporcionar parte o toda la funcionalidad estándar de GINA. A continuación se muestra una lista de características estándar y una breve descripción de cómo se controlan.
+Si va a escribir un [*archivo GINA*](../secgloss/g-gly.md) para reemplazar el archivo DLL de GINA estándar de Microsoft (MSGina.dll), es posible que desee proporcionar parte o toda la funcionalidad estándar de GINA. A continuación se muestra una lista de características estándar y una breve descripción de cómo se controlan.
 
 > [!Note]  
-> Los archivos DLL de GINA se omiten en Windows Vista.
+> Los archivos DLL de GINA se omiten Windows Vista.
 
  
 
@@ -66,7 +66,7 @@ Los valores de clave del Registro controlan la disponibilidad o el comportamient
 
     Si el valor de clave **AutoAdminLogon** está presente y contiene uno, y si el valor de clave **AutoLogonCount** está presente y no es cero, **AutoLogonCount** determinará el número de inicios de sesión automáticos que se producen. Cada vez que se reinicia el sistema, el valor de **AutoLogonCount** se disminuirá en uno, hasta que llegue a cero. Cuando **AutoLogonCount** alcanza el cero, no se iniciará sesión automáticamente en ninguna cuenta, el valor de clave **AutoLogonCount** y el valor de clave **DefaultPassword,** si se usan, se eliminarán del Registro y **AutoAdminLogon** se establecerá en cero.
 
-    Hay una advertencia adicional al uso de **AutoAdminLogon:** de forma predeterminada, MSGina.dll comprueba el estado de la clave MAYÚS cuando **AutoAdminLogon** es uno. Si se mantiene la tecla MAYÚS durante el proceso de arranque, MSGina.dll omitirá el valor de clave **AutoAdminLogon** y solicitará al usuario información de identificación y autenticación de forma interactiva. Se trata de una característica útil al depurar una aplicación dedicada. Para deshabilitar el significado de la tecla MAYÚS, establezca el valor de la clave **IgnoreShiftOverride** en uno.
+    Hay una advertencia adicional al uso de **AutoAdminLogon:** de forma predeterminada, MSGina.dll comprueba el estado de la clave MAYÚS cuando **AutoAdminLogon** es uno. Si se mantiene la tecla MAYÚS durante el proceso de arranque, MSGina.dll omitirá el valor de la clave **AutoAdminLogon** y solicitará al usuario información de identificación y autenticación de forma interactiva. Esta es una característica útil al depurar una aplicación dedicada. Para deshabilitar el significado de la tecla MAYÚS, establezca el valor de la clave **IgnoreShiftOverride** en uno.
 
 -   **Permitir apagado no autenticado**
 
@@ -90,7 +90,7 @@ Los valores de clave del Registro controlan la disponibilidad o el comportamient
 
 -   **Opciones de seguridad de la sesión iniciada**
 
-    Cuando se inicia sesión, si un usuario entra en una secuencia de [*atención*](../secgloss/s-gly.md) segura (SAS), se le presenta una pantalla de opciones de seguridad. Entre las opciones enumeradas se encuentran:
+    Cuando se inicia sesión, si un usuario entra en una secuencia de [*atención*](../secgloss/s-gly.md) segura (SAS), se le muestra una pantalla de opciones de seguridad. Entre las opciones enumeradas se encuentran:
 
     -   Apague el sistema.
     -   Cierre la sesión.

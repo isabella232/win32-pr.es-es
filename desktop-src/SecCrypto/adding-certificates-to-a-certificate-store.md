@@ -4,12 +4,12 @@ ms.assetid: a1cb6e1e-0702-4f73-827e-3f9e9237b4b6
 title: Agregar certificados a un almacén de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e3c4b2fafbcd11bf2d984dfd5b5a575f67dc4f6d3c70337de399ca6076029ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6f4c018be697f48e40d52480f49694762fb956f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117774040"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173326"
 ---
 # <a name="adding-certificates-to-a-certificate-store"></a>Agregar certificados a un almacén de certificados
 
@@ -17,13 +17,13 @@ ms.locfileid: "117774040"
 
 [*Los certificados*](../secgloss/c-gly.md) se pueden agregar o quitar de [*los*](../secgloss/c-gly.md) almacenes de certificados si el almacén se abre con permiso de lectura y escritura. El permiso de lectura y escritura no se concede a Active Directory almacenes. Aunque los certificados se pueden agregar o quitar de los almacenes de memoria, los cambios en los almacenes de memoria no se conservan entre sesiones.
 
-Los certificados se pueden agregar a un almacén de certificados que se abre con permiso de lectura y escritura mediante el **método Add.** Un certificado se puede quitar de un almacén de certificados que se abre con permiso de lectura y escritura mediante el **método Remove.** Se pueden crear y guardar nuevas tiendas en las ubicaciones CAPICOM \_ CURRENT USER STORE y \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE. Las tiendas recién creadas en cualquiera de estas ubicaciones se pueden abrir con permiso de lectura y escritura.
+Los certificados se pueden agregar a un almacén de certificados que se abre con permiso de lectura y escritura mediante el **método Add.** Un certificado se puede quitar de un almacén de certificados que se abre con permiso de lectura y escritura mediante el **método Remove.** Se pueden crear y guardar nuevas tiendas en las ubicaciones CAPICOM \_ CURRENT USER STORE y \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE. Los almacenes recién creados en cualquiera de estas ubicaciones se pueden abrir con permiso de lectura y escritura.
 
-En el ejemplo siguiente, se abren dos almacenes de certificados. Los certificados de asuntos con apellidos que comienzan por F se recuperan del almacén Active Directory datos. A continuación, el almacén de usuarios actuales de CAPICOM, el almacén de CA STORE de CAPICOM se abre como almacén de lectura y escritura y el primer certificado de la colección de certificados del almacén de Active Directory se agrega a los certificados del almacén de ca de \_ \_ \_ \_ \_ CAPICOM. \_ \_
+En el ejemplo siguiente, se abren dos almacenes de certificados. Los certificados de los asuntos con apellidos que comienzan por F se recuperan del almacén Active Directory datos. A continuación, el ALMACÉN DE USUARIOS ACTUAL DE CAPICOM, el almacén DE CA DE CAPICOM se abre como un almacén de lectura y escritura y el primer certificado de la colección de certificados del almacén de Active Directory se agrega a los certificados del ALMACÉN DE CA \_ \_ \_ \_ \_ CAPICOM. \_ \_
 
-Con fines de demostración, en el ejemplo se muestra la apertura de tiendas en las ubicaciones CAPICOM \_ MEMORY \_ STORE, CAPICOM CURRENT USER STORE y \_ \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE. En el ejemplo se muestra cómo exportar todos los certificados de un almacén abierto, escribir los certificados exportados en un archivo, volver a leerlos e importarlos en otro almacén. Los certificados recién importados se enumeran y se muestran.
+Con fines de demostración, en el ejemplo se muestra la apertura de tiendas en las ubicaciones CAPICOM \_ MEMORY \_ STORE, CAPICOM CURRENT USER STORE y \_ \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE. En el ejemplo se muestra la exportación de todos los certificados desde un almacén abierto, la escritura de los certificados exportados en un archivo, su lectura e importación en un almacén diferente. Los certificados recién importados se enumeran y se muestran.
 
-En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, vea [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos **de Err.Number,** vea Winerror.h.
+En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, [**vea CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos de **Err.Number,** vea Winerror.h.
 
 En el ejemplo siguiente se muestra cómo abrir almacenes de certificados mediante el enlace temprano en la declaración de los objetos **Store** y en la creación de una instancia de esos objetos.
 

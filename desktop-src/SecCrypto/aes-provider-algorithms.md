@@ -4,16 +4,16 @@ ms.assetid: 34d0479f-9d1e-41cd-87b0-6bc18c7a062b
 title: Algoritmos de proveedor de AES
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a06381c3f7fcf3d410a9a9a90c70633cab17c1ffd2e3e967ba6f3e7c3787fbb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e5e197100060d53304bb5233560dcccae083756
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117773780"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173306"
 ---
 # <a name="aes-provider-algorithms"></a>Algoritmos de proveedor de AES
 
-En la tabla siguiente se enumeran los algoritmos admitidos por el proveedor [*de servicios criptográficos de*](../secgloss/a-gly.md) Microsoft Estándar de cifrado avanzado (AES).
+En la tabla siguiente se enumeran los algoritmos admitidos por el proveedor [*de servicios criptográficos Estándar de cifrado avanzado*](../secgloss/a-gly.md) (AES) de Microsoft.
 
 
 

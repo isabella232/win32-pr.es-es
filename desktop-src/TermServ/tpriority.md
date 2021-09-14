@@ -12,12 +12,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 63cb5bf3ae6efe00888d9e91a94f423d494385b28ce4affefc2c22d70534ed5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af354cbdc9c5f9ca5225c9f38d452a2ebac218c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117756044"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170617"
 ---
 # <a name="tpriority-enumeration"></a>TPriority (enumeración)
 

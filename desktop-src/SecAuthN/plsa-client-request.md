@@ -4,12 +4,12 @@ ms.assetid: 384dd6e0-726f-4100-a036-1cca6a332a64
 title: PLSA_CLIENT_REQUEST (Ntsecpkg.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 792b81516e434469750b4ddd667bf6ddb82df31f4f13f82588d281f743bc8835
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a3685c3cd38843edfd4ae708a18761b6ee698c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118921044"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173378"
 ---
 # <a name="plsa_client_request"></a>SOLICITUD DE CLIENTE \_ PLSA \_
 
@@ -30,11 +30,11 @@ typedef PVOID *PLSA_CLIENT_REQUEST;
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Ntsecpkg.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntsecpkg.h</dt> </dl> |
 
 
 
