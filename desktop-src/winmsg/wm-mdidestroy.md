@@ -4,12 +4,12 @@ ms.assetid: b415393d-a5c2-4b70-af18-0dc7b3939a47
 title: WM_MDIDESTROY mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 232514831defe3c65cdce66a5e1c7348ad4f80508eb01615572b7aa5b7d8e9c0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: edea8fe8dadc691ca912df4e9ee5d57421124bcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119772066"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251691"
 ---
 # <a name="wm_mdidestroy-message"></a>Mensaje \_ MDIDESTROY de WM
 
@@ -46,7 +46,7 @@ Tipo: **cero**
 
 Este mensaje siempre devuelve cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje quita el título de la ventana secundaria MDI de la ventana marco MDI y desactiva la ventana secundaria. Una aplicación debe usar este mensaje para cerrar todas las ventanas secundarias MDI.
 
@@ -56,7 +56,7 @@ Si una ventana cliente MDI recibe un mensaje que cambia la activación de sus ve
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

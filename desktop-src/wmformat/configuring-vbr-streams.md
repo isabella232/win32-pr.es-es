@@ -11,12 +11,12 @@ keywords:
 - IWMPropertyVault
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b3434ec508afdca9637b300ac83777cca33e0e59566b01c7fb027d547f39302
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6667dc9cf66932cf8af90da0b0e59ad27860ab3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117655973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251523"
 ---
 # <a name="configuring-vbr-streams"></a>Configuración de Secuencias VBR
 

@@ -4,12 +4,12 @@ ms.assetid: ace18486-1873-49e5-a699-c25807dee363
 title: Propiedades de los elementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60ca2ee4e5b2b41bf2ad01d73eb9281c215c649460ca28686121a54cb44fb1fd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 369d593c9db3dc60b308156f8e2033c73762be6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119772874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251805"
 ---
 # <a name="item-properties"></a>Propiedades de los elementos
 

@@ -4,12 +4,12 @@ description: En este artículo se incluyen vínculos a artículos de referencia 
 ms.assetid: e9dcb602-d04f-4067-8abc-d39e5a29de4e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba3fd44c5babb8742467a01229f450f32077d3648f5a8e4b5ccca3af3030cddc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8a37b34eab3542f01d281bfebd10a387651e1dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119928245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251360"
 ---
 # <a name="wpd-reference"></a>Referencia de WPD
 

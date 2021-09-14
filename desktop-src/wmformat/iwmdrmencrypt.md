@@ -3,7 +3,7 @@ title: Interfaz IWMDRMEncrypt
 description: La interfaz IWMDRMEncrypt proporciona un método para cifrar los datos en su lugar.
 ms.assetid: da57d72e-da6b-4e27-9bcb-72f87b3e5c90
 keywords:
-- IWMDRMEncrypt interface windows Media Format
+- Interfaz IWMDRMEncrypt windows Media Format
 - Interfaz IWMDRMEncrypt windows Media Format , descrito
 topic_type:
 - apiref
@@ -14,18 +14,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 424b3be1394d2989ac9328ce088d05fbfd0a9192360ef56acbfd70d58be7864f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f9fdd0c7123b8abb1fc180f1a43947cc179f1ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118433594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251468"
 ---
 # <a name="iwmdrmencrypt-interface"></a>Interfaz IWMDRMEncrypt
 
 La **interfaz IWMDRMEncrypt** proporciona un método para cifrar los datos en su lugar.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IWMDRMEncrypt** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMEncrypt** también tiene estos tipos de miembros:
 
@@ -39,7 +39,7 @@ La **interfaz IWMDRMEncrypt** tiene estos métodos.
 
 | Método                                   | Descripción                                 |
 |:-----------------------------------------|:--------------------------------------------|
-| [**Encrypt**](iwmdrmencrypt-encrypt.md) | Cifra un búfer de datos en su lugar.<br/> |
+| [**Cifrar**](iwmdrmencrypt-encrypt.md) | Cifra un búfer de datos en su lugar.<br/> |
 
 
 
@@ -52,7 +52,7 @@ La **interfaz IWMDRMEncrypt** tiene estos métodos.
 [**Interfaces**](drm-interfaces.md)
 </dt> <dt>
 
-[**IWMDRMDecrypt (interfaz)**](iwmdrmdecrypt.md)
+[**IWMDRMDecrypt (Interfaz)**](iwmdrmdecrypt.md)
 </dt> </dl>
 
  

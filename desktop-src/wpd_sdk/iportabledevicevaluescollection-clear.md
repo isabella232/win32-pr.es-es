@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 4cc810ae7871ffcd5bffc50eabda8682f1d2cd334d6e0b09fac715d3749f300d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf826b8e8a2035a0d84aec76979616fcccee9948
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118697029"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251379"
 ---
 # <a name="iportabledevicevaluescollectionclear-method"></a>IPortableDeviceValuesCollection::Clear (Método)
 
@@ -52,7 +52,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método libera toda la memoria asignada para los elementos de la colección.
 
@@ -67,7 +67,7 @@ El método libera toda la memoria asignada para los elementos de la colección.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

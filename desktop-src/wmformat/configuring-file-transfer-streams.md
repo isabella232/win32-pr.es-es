@@ -11,12 +11,12 @@ keywords:
 - extensiones de unidad de datos, flujos de transferencia de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0be95c9760a02275e223f56785149f6867d4aaf2462d07d158991b3cd21c01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75fac7d2270da82f1f9e82ed9123611ae608dd3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117849068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251565"
 ---
 # <a name="configuring-file-transfer-streams"></a>Configuración de la transferencia de archivos Secuencias
 
@@ -43,7 +43,7 @@ Para establecer una extensión de unidad de datos para la secuencia, realice los
 [**Configuración de tipos de secuencia arbitrarios**](configuring-arbitrary-stream-types.md)
 </dt> <dt>
 
-[**Archivos Secuencias**](file-streams.md)
+[**Archivo Secuencias**](file-streams.md)
 </dt> </dl>
 
  

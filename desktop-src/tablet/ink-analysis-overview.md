@@ -1,47 +1,47 @@
 ---
-description: Las API InkAnalysis proporcionan a los desarrolladores de Tabletas PC herramientas eficaces para examinar mediante programación la entrada de lápiz. La API clasifica la entrada de lápiz en categorías significativas, como palabras, líneas, párrafos y dibujos.
+description: Las API InkAnalysis proporcionan a los desarrolladores de tabletas pc herramientas eficaces para examinar mediante programación la entrada de entrada de lápiz. La API clasifica la entrada de lápiz en categorías significativas, como palabras, líneas, párrafos y dibujos.
 ms.assetid: d9521a8c-f61a-40ea-8603-e8afbba75a4e
-title: Información general sobre análisis de entrada de lápiz
+title: Información general sobre el análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3056a5e5fbff8be82f6df2de2a34fadd9761e50f451ee2d48c112589d1aff397
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e383d16c01cd9475d4c54587b4b5fb4c09791a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118718923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251907"
 ---
-# <a name="ink-analysis-overview"></a>Información general sobre análisis de entrada de lápiz
+# <a name="ink-analysis-overview"></a>Información general sobre el análisis de entrada de lápiz
 
-Las API InkAnalysis proporcionan a los desarrolladores de Tabletas PC herramientas eficaces para examinar mediante programación la entrada de lápiz. La API clasifica la entrada de lápiz en categorías significativas, como palabras, líneas, párrafos y dibujos.
+Las API InkAnalysis proporcionan a los desarrolladores de tabletas pc herramientas eficaces para examinar mediante programación la entrada de entrada de lápiz. La API clasifica la entrada de lápiz en categorías significativas, como palabras, líneas, párrafos y dibujos.
 
 Puede usar cada clasificación de varias maneras, incluida la mejora de los resultados de reconocimiento para la escritura a mano.
 
 ## <a name="ink-analysis-basics"></a>Conceptos básicos del análisis de entrada de lápiz
 
-En esta sección se presenta la tecnología de análisis de lápiz de tablet PC Platform y se explica cuándo y cómo usarla.
+En esta sección se presenta la tecnología de análisis de entrada de lápiz de la plataforma tablet PC y se explica cuándo y cómo usarla.
 
 Las API InkAnalysis combinan eficazmente dos tecnologías distintas pero gratuitas: reconocimiento de escritura a mano y clasificación de diseño. La combinación de estas dos tecnologías proporciona resultados definitivamente mayores que las partes tomadas por sí solas.
 
 El reconocimiento de escritura a mano es el análisis computacional de la entrada manuscrita digital para devolver la interpretación basada en caracteres en un idioma determinado. Es decir, el reconocimiento de escritura a mano es la forma en que el equipo "lee" la escritura a mano de una persona.
 
-Análisis de entrada de lápiz se puede dividir aún más en la clasificación de entrada de lápiz y el análisis de diseño. La clasificación de lápiz es la división computacional de la entrada de lápiz en unidades semánticamente significativas, como párrafos, líneas, palabras y dibujos. El análisis de diseño es el examen computacional de la entrada de lápiz para determinar la posición de la entrada de lápiz en la superficie de entrada manuscrita y cómo se relacionan los trazos entre sí espacial e incluso semánticamente. Por ejemplo, el análisis de diseño puede avisarle de que un fragmento de lápiz determinado es una anotación o una llamada.
+El análisis de entrada de lápiz se puede desglosar aún más en la clasificación de entrada de lápiz y el análisis de diseño. La clasificación de lápiz es la división computacional de la entrada de lápiz en unidades semánticamente significativas, como párrafos, líneas, palabras y dibujos. El análisis de diseño es el examen computacional de la entrada de lápiz para determinar la posición de la entrada de lápiz en la superficie de entrada manuscrita y cómo se relacionan los trazos entre sí espacial e incluso semánticamente. Por ejemplo, el análisis de diseño puede avisarle de que un fragmento de lápiz determinado es una anotación o una llamada.
 
 ### <a name="recognition"></a>Reconocimiento
 
-Un ejemplo de cómo la combinación de reconocimiento con análisis de lápiz en InkAnalysis API ayuda al desarrollador es la mejora en los resultados del reconocimiento. Los motores de reconocimiento de escritura a mano de Tablet PC se han diseñado principalmente para reconocer una sola línea horizontal de lápiz. Sin embargo, las personas tienden a escribir varias líneas al tomar notas y no se garantiza que esas líneas sean horizontales en relación con la página. Con InkAnalysis API, el analizador de lápiz preprocesa la entrada de lápiz antes de enviarse al reconocedor. La entrada de lápiz analizada se transforma en horizontal antes de ser reconocida, lo que mejora los resultados del reconocimiento.
+Un ejemplo de cómo la combinación de reconocimiento con análisis de entrada de lápiz en InkAnalysis API ayuda al desarrollador es la mejora en los resultados del reconocimiento. Los motores de reconocimiento de escritura a mano de Tablet PC se han diseñado principalmente para reconocer una sola línea horizontal de entrada de lápiz. Sin embargo, las personas tienden a escribir varias líneas al tomar notas, y no se garantiza que esas líneas sean horizontales en relación con la página. Con InkAnalysis API, el analizador de entrada de lápiz preprocesa la entrada de lápiz antes de enviarla al reconocedor. La entrada de lápiz analizada se transforma en horizontal antes de ser reconocida, lo que mejora los resultados del reconocimiento.
 
-Otras ventajas del reconocimiento se derivan de que el analizador de lápiz corrija la información de orden de trazo incorrecta antes de enviar la entrada de lápiz al reconocedor. Además, los resultados del reconocimiento ahora están disponibles de forma selectiva. Es decir, el desarrollador puede recuperar rápidamente los resultados del reconocimiento de una sola palabra, línea o párrafo en una sola llamada.
+Otras ventajas del reconocimiento se derivan de que el analizador de entrada de lápiz corrija la información de orden de trazo incorrecta antes de enviar la entrada de lápiz al reconocedor. Además, los resultados del reconocimiento ahora están disponibles de forma selectiva. Es decir, el desarrollador puede recuperar rápidamente los resultados del reconocimiento de una sola palabra, línea o párrafo en una llamada.
 
 ### <a name="ink-classification"></a>Clasificación de entrada de lápiz
 
-Por supuesto, hay una variedad de escenarios en los que puede mantener intactos los datos de entrada de lápiz, en lugar de convertirlos inmediatamente en texto. El análisis de lápiz también proporciona ventajas aquí. En concreto, las API InkAnalysis proporcionan la capacidad de dividir trazos de lápiz en función de si están escribiendo o dibujando. Los trazos de lápiz que se clasifican como escritura son aquellos que compone una palabra o caracteres. Todos los demás trazos son dibujos. Esto proporciona una nueva manera de acceder a los datos de entrada de lápiz, lo que permite nuevos escenarios de usuario. Por ejemplo, puede implementar la selección para que sea diferente en función del tipo de trazo que pulse el usuario. Si un usuario pulsa un trazo de escritura, la aplicación selecciona todo el conjunto de trazos que componen la palabra; si el usuario pulsa un dibujo, la aplicación selecciona solo ese trazo.
+Por supuesto, hay una variedad de escenarios en los que puede mantener intactos los datos de entrada de lápiz, en lugar de convertirlos inmediatamente en texto. El análisis de entrada de lápiz también proporciona ventajas aquí. En concreto, las API InkAnalysis proporcionan la capacidad de dividir los trazos de entrada de lápiz en función de si escriben o dibujan. Los trazos de entrada de lápiz que se clasifican como escritura son aquellos que compone una palabra o caracteres. Todos los demás trazos son dibujos. Esto le proporciona una nueva manera de acceder a los datos de entrada de lápiz, lo que permite nuevos escenarios de usuario. Por ejemplo, puede implementar la selección para que sea diferente en función del tipo de trazo que pulse el usuario. Si un usuario pulsa un trazo de escritura, la aplicación selecciona todo el conjunto de trazos que componen la palabra; si el usuario pulsa un dibujo de dibujo, la aplicación selecciona solo ese trazo.
 
 ### <a name="layout-analysis"></a>Análisis de diseño
 
-En realidad, el análisis de diseño útil va mucho más allá del desglose relativamente sencillo de la entrada de lápiz en los componentes de escritura y dibujo.
+El análisis de diseño útil va mucho más allá del desglose relativamente sencillo de la entrada de lápiz en los componentes de escritura y dibujo.
 
-El análisis de lápiz también incluye un desglose más completo de los trazos de escritura y dibujo. Como ejemplo muy sencillo, tome un blob de lápiz como se muestra en la ilustración siguiente.
+El análisis de entrada de lápiz también incluye un desglose más completo de los trazos de escritura y dibujo. Como ejemplo muy sencillo, tome un blob de lápiz como se muestra en la ilustración siguiente.
 
 ![dos líneas sencillas de escritura a mano](images/12e7a221-59c1-4d69-b7aa-67f2caebe375.jpg)
 
@@ -49,9 +49,9 @@ Una vez que la plataforma ha analizado estos trazos, devuelve una representació
 
 ![representación de árbol de raíz, párrafo, líneas y palabras](images/be5a7635-0abc-45ad-bcb5-98fddee5e148.jpg)
 
-Dado que esta información ahora está separada en unidades administrables, ahora puede crear características más eficaces. Por ejemplo, la aplicación puede ampliar la característica en la que el usuario pulsa para seleccionar una palabra en una característica en la que el usuario pulsa una vez para seleccionar la palabra, pulsa dos veces para seleccionar toda la línea y pulsa tres veces para seleccionar todo el párrafo. Al aprovechar la estructura de árbol devuelta por la operación de análisis, la aplicación puede relacionar el área pulsada con un trazo del árbol. Una vez que la aplicación encuentra un trazo, puede recorrer el árbol para determinar cómo y qué trazos vecinos se seleccionan.
+Dado que esta información ahora está separada en unidades administrables, ahora puede crear características más eficaces. Por ejemplo, la aplicación puede extender la característica en la que el usuario pulsa para seleccionar una palabra en una característica en la que el usuario pulsa una vez para seleccionar la palabra, pulsa dos veces para seleccionar toda la línea y pulsa tres veces para seleccionar todo el párrafo. Al aprovechar la estructura de árbol devuelta por la operación de análisis, la aplicación puede relacionar el área pulsada con un trazo del árbol. Una vez que la aplicación encuentra un trazo, puede recorrer el árbol para determinar cómo y qué trazos vecinos se seleccionan.
 
-Seleccionar una línea completa es un ejemplo simplista de las ventajas del análisis de entrada de lápiz, pero las posibilidades se vuelven excelentes cuando se tienen en cuenta los diferentes tipos de estructuras jerárquicas que el analizador de lápiz es capaz de detectar:
+La selección de una línea completa es un ejemplo simplista de las ventajas del análisis de entrada de lápiz, pero las posibilidades se vuelven excelentes cuando se tienen en cuenta los distintos tipos de estructuras jerárquicas que el analizador de entrada de lápiz es capaz de detectar:
 
 -   Listas ordenadas y desordenadas
 -   Formas
@@ -61,7 +61,7 @@ Los tipos de características varían de una aplicación a otra y se basan en lo
 
 ### <a name="key-ink-analysis-features"></a>Características clave del análisis de entrada de lápiz
 
-Las principales funcionalidades de inkAnalysis API incluyen las siguientes características:
+Las funcionalidades clave de InkAnalysis API incluyen las siguientes características:
 
 -   Análisis incremental
 -   Persistencia
@@ -71,11 +71,11 @@ Las principales funcionalidades de inkAnalysis API incluyen las siguientes carac
 
 ### <a name="incremental-analysis"></a>Análisis incremental
 
-Cuando los usuarios finales trabajan con lápiz, normalmente lo tratan como escritura a mano. La entrada de lápiz está sujeta continuamente a operaciones de edición, como la adición de nueva entrada de lápiz, la eliminación de la entrada de lápiz existente y la modificación de las propiedades de la entrada de lápiz, todo ello de la misma manera que la escritura a mano se edita continuamente. Estas operaciones de edición afectan a los resultados del análisis. Cuando se producen modificaciones, normalmente se pueden aislar en secciones del documento en momentos específicos en el tiempo. Por ejemplo, suponga que un usuario escribe cinco líneas de lápiz. La manera estándar que las aplicaciones analizan la entrada de lápiz es esperar hasta que el usuario haya terminado de escribir las cinco líneas de lápiz (un párrafo, por ejemplo) y, a continuación, analizar los resultados, ya sea de forma sincrónica o asincrónica.
+Cuando los usuarios finales trabajan con lápiz, normalmente lo tratan como escritura a mano. La entrada manuscrita está continuamente sujeta a operaciones de edición, como la adición de nueva entrada de lápiz, la eliminación de la entrada de lápiz existente y la modificación de las propiedades de entrada de lápiz, todo ello de la misma manera que la escritura a mano se edita continuamente. Estas operaciones de edición afectan a los resultados del análisis. Cuando se producen modificaciones, normalmente se pueden aislar en secciones del documento en momentos específicos. Por ejemplo, suponga que un usuario escribe cinco líneas de lápiz. La manera estándar que las aplicaciones analizan la entrada de lápiz es esperar hasta que el usuario haya terminado de escribir las cinco líneas de lápiz (un párrafo, por ejemplo) y, a continuación, analizar los resultados, ya sea de forma sincrónica o asincrónica.
 
-Puede optimizar el tiempo total dedicado a analizar estas cinco líneas mediante el aislamiento de las áreas que se analizan a medida que se escriben y, a continuación, volver a analizar solo las partes de los resultados que han cambiado. Una vez analizada la primera línea, nunca se volverá a reconocer a menos que el usuario final la modifique. El reconocimiento de la segunda línea se trata como una operación de reconocimiento independiente.
+Puede optimizar el tiempo total dedicado a analizar estas cinco líneas mediante el aislamiento de las áreas que se analizan a medida que se escriben y, a continuación, volver a analizar solo las partes de los resultados que han cambiado. Una vez analizada la primera línea, nunca se volverá a reconocer a menos que la modifique el usuario final. El reconocimiento de la segunda línea se trata como una operación de reconocimiento independiente.
 
-Este enfoque incremental funciona bien en el nivel de línea para las operaciones de reconocimiento, pero debe funcionar en un nivel superior para la operación de análisis de entrada de lápiz. Dado que el analizador de entrada de lápiz puede detectar diferentes clasificaciones de nivel superior para estas cinco líneas de entrada de lápiz (por ejemplo, podría ser un párrafo estándar o cinco elementos de una lista), el enfoque incremental del analizador de lápiz es que tiene que analizar estas estructuras superiores. Es decir, después de que el analizador de entrada de lápiz clasifica la primera línea de lápiz como una línea, comprueba que sigue siendo una línea cuando clasifica la segunda línea. Sin embargo, el analizador de entrada de lápiz aísla esta comprobación doble en el párrafo y omite el primer párrafo al analizar un segundo párrafo, tratando el segundo párrafo como una operación independiente del analizador de lápiz. Este enfoque incremental para el análisis ahorra drásticamente tiempo de procesamiento cuando ya existen grandes cantidades de lápiz en la aplicación.
+Este enfoque incremental funciona bien en el nivel de línea para las operaciones de reconocimiento, pero debe funcionar en un nivel superior para la operación de análisis de entrada de lápiz. Dado que el analizador de entrada de lápiz puede detectar diferentes clasificaciones de nivel superior para estas cinco líneas de entrada de lápiz (por ejemplo, podría ser un párrafo estándar o cinco elementos de una lista), el enfoque incremental del analizador de entrada de lápiz es que tiene que analizar estas estructuras superiores. Es decir, después de que el analizador de entrada de lápiz clasifica la primera línea de entrada de lápiz como una línea, comprueba que sigue siendo una línea cuando clasifica la segunda línea. Sin embargo, el analizador de entrada de lápiz aísla esta comprobación doble en el párrafo y omite el primer párrafo al analizar un segundo párrafo, tratando el segundo párrafo como una operación independiente del analizador de entrada de lápiz. Este enfoque incremental para el análisis ahorra considerablemente tiempo de procesamiento cuando ya existen grandes cantidades de entrada de lápiz en la aplicación.
 
 ### <a name="persistence"></a>Persistencia
 
@@ -83,21 +83,21 @@ El análisis incremental funciona bien dentro de una sesión o instancia determi
 
 ### <a name="data-proxy"></a>Proxy de datos
 
-Muchas aplicaciones ya tienen algún tipo de estructura de documentos existente en sus aplicaciones. por ejemplo, un gráfico o una base de datos. [**InkAnalyzer**](inkanalyzer.md) también presenta los resultados en forma estructurada, en un árbol de [**objetos ContextNode.**](icontextnode.md) La **estructura InkAnalyzer** y la estructura existente de la aplicación deben interoperar en dos direcciones: los resultados se extraen de **InkAnalyzer** en la aplicación y el estado se inserta desde la aplicación en **InkAnalyzer.**
+Muchas aplicaciones ya tienen algún tipo de estructura de documentos existente en sus aplicaciones. por ejemplo, un grafo o una base de datos. [**InkAnalyzer también**](inkanalyzer.md) presenta los resultados en un formato estructurado, en un árbol de [**objetos ContextNode.**](icontextnode.md) La **estructura InkAnalyzer** y la estructura existente de la aplicación deben interoperar en dos direcciones: los resultados se extraen de **InkAnalyzer** en la aplicación y el estado se inserta desde la aplicación en **InkAnalyzer**.
 
-Si lo único que se necesita fuera extraer los resultados de [**InkAnalyzer**](inkanalyzer.md) en la estructura de la aplicación, sería relativamente sencillo. Las aplicaciones iteran por el árbol de resultados y copian (integran) todos los elementos de los resultados que necesitan en su estructura de datos existente. Sin embargo, dado que muchas aplicaciones horizontales requieren análisis incremental y persistencia en el disco, el problema se vuelve bidireccional. El estado (resultados pasados) debe sacarse de la estructura de la aplicación e insertarse en **InkAnalyzer**.
+Si la extracción de los resultados de [**InkAnalyzer**](inkanalyzer.md) en la estructura de la aplicación fuera todo lo necesario, sería relativamente sencillo. Las aplicaciones iteran por el árbol de resultados y copian (integran) todos los elementos de los resultados que necesitan en su estructura de datos existente. Sin embargo, dado que muchas aplicaciones horizontales requieren análisis incrementales y persistencia en el disco, el problema se vuelve bidireccional. El estado (resultados anteriores) se debe sacar de la estructura de la aplicación e insertarse en **InkAnalyzer**.
 
-Para cumplir este requisito, [**InkAnalyzer**](inkanalyzer.md) contiene una serie de eventos que genera en el momento adecuado durante una operación de análisis para permitir que las aplicaciones puedan devolver la solicitud de datos a sus estructuras existentes. Estos eventos solo se genera para los [**objetos ContextNode**](icontextnode.md) requeridos por la operación incremental.
+Para cumplir este requisito, [**InkAnalyzer**](inkanalyzer.md) contiene una serie de eventos que genera en el momento adecuado durante una operación de análisis para permitir que las aplicaciones puedan devolver la solicitud de datos a sus estructuras existentes. Estos eventos solo se genera para los objetos [**ContextNode**](icontextnode.md) requeridos por la operación incremental.
 
 ### <a name="reconciliation"></a>Reconciliación
 
-La mayoría de las aplicaciones querrán analizar la entrada de lápiz en segundo plano para mantener al mínimo las interrupciones de la interfaz de usuario. Sin embargo, el análisis de la entrada de lápiz en segundo plano provoca problemas si el usuario cambia la entrada de lápiz (o la entrada de lápiz vecino) que se está analizando. Por ejemplo, si el usuario elimina la entrada de lápiz durante la operación en segundo plano, la estructura resultante reflejaría el estado del documento cuando se inició la operación en segundo plano, en lugar de cuando se completó.
+La mayoría de las aplicaciones querrán analizar la entrada de lápiz en segundo plano para mantener al mínimo las interrupciones de la interfaz de usuario. El análisis de la entrada de lápiz en segundo plano provoca problemas, sin embargo, si el usuario cambia la entrada de lápiz (o la entrada de lápiz adyacente) que se está analizando. Por ejemplo, si el usuario elimina la entrada de lápiz durante la operación en segundo plano, la estructura resultante reflejaría el estado del documento cuando se inició la operación en segundo plano, en lugar de cuando se completó.
 
-Para ayudar a las aplicaciones, [**InkAnalyzer concilia**](inkanalyzer.md) las diferencias en el estado del documento entre el principio y el final de la operación de análisis. Los cambios realizados por el usuario o la aplicación mientras el análisis se ejecuta en segundo plano siempre invalidan los resultados calculados en segundo plano. Después de la conciliación, solo se notifican las partes de la estructura de resultados que no están en conflicto con los cambios del documento y los trazos en conflicto se etiquetan para su análisis futuro. La próxima vez que se ejecute la operación de análisis en segundo plano, los resultados se volverán a calcular en función del nuevo estado.
+Para ayudar a las aplicaciones, [**InkAnalyzer concilia**](inkanalyzer.md) las diferencias en el estado del documento entre el principio y el final de la operación de análisis. Los cambios realizados por el usuario o la aplicación mientras el análisis se ejecuta en segundo plano siempre invalidan los resultados calculados en segundo plano. Después de la conciliación, solo se notifican las partes de la estructura de resultados que no entren en conflicto con los cambios del documento y los trazos en conflicto se etiquetan para el análisis futuro. La próxima vez que se ejecute la operación de análisis en segundo plano, los resultados se recalcularán en función del nuevo estado.
 
 En el diagrama siguiente se muestra este proceso. El tiempo se expresa linealmente de arriba abajo en el diagrama.
 
-![proceso para conciliar los cambios de estado del documento durante la operación de análisis](images/6323e0b5-b6b3-4adc-8c73-da3fad5b4bc2.jpg)
+![proceso de conciliación de los cambios de estado del documento durante la operación de análisis](images/6323e0b5-b6b3-4adc-8c73-da3fad5b4bc2.jpg)
 
 1.  En el momento 1 (t1), la aplicación recopila la entrada de lápiz del usuario final, incluido cualquier tipo de modificación de la entrada de lápiz, como agregar, quitar o modificar.
 2.  En t2, la aplicación invoca la operación de análisis en segundo plano. [**InkAnalyzer determina**](inkanalyzer.md) qué entrada de lápiz no tiene resultados y qué lápiz debe comprobarse. Copia los datos de entrada de lápiz necesarios para permitir que el subproceso en segundo plano se ejecute de forma independiente.

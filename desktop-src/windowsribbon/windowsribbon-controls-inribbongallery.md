@@ -1,17 +1,17 @@
 ---
-title: In-Ribbon Galería de aplicaciones
+title: In-Ribbon Gallery
 description: La In-Ribbon galería de aplicaciones es un control que muestra una colección de elementos relacionados o comandos en la cinta de opciones. Si hay demasiados elementos en la galería, se proporciona una flecha de expansión para mostrar el resto de la colección en un panel expandido.
 ms.assetid: d608dd0d-a0af-49a6-a129-7115195c0df2
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 713455e962996e2cc1a70b418000d0f94a383174
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251738"
 ---
-# <a name="in-ribbon-gallery"></a>In-Ribbon Galería de aplicaciones
+# <a name="in-ribbon-gallery"></a>In-Ribbon Gallery
 
 La In-Ribbon galería de aplicaciones es un control que muestra una colección de elementos relacionados o comandos en la cinta de opciones. Si hay demasiados elementos en la galería, se proporciona una flecha de expansión para mostrar el resto de la colección en un panel expandido.
 
@@ -25,20 +25,20 @@ En la siguiente captura de pantalla se muestra el control Ribbon In-Ribbon Galle
 
 ![captura de pantalla de un control inribbongallery en la cinta de microsoft paint.](images/controls/inribbongallery.png)
 
-## <a name="in-ribbon-gallery-properties"></a>In-Ribbon galería de aplicaciones
+## <a name="in-ribbon-gallery-properties"></a>In-Ribbon de la galería de aplicaciones
 
-El marco de la cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el In-Ribbon galería.
+El marco de la cinta de opciones define una colección [de claves de propiedad](windowsribbon-reference-properties.md) para el control In-Ribbon Galería de aplicaciones.
 
-Normalmente, una propiedad In-Ribbon Gallery se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) controla el evento de invalidación y las actualizaciones de propiedad definidas.
+Normalmente, una propiedad In-Ribbon Gallery se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El evento de invalidación se controla y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación consulta un valor de propiedad actualizado, hasta que el marco de trabajo requiera la propiedad . Por ejemplo, cuando se activa una pestaña y se muestra un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
+El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación ha consultado un valor de propiedad actualizado, hasta que el marco requiere la propiedad . Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
 
 > [!Note]  
 > En algunos casos, una propiedad se puede recuperar mediante el método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-En la tabla siguiente se enumeran las claves de propiedad asociadas al control galería In-Ribbon de datos.
+En la tabla siguiente se enumeran las claves de propiedad que están asociadas al control galería In-Ribbon datos.
 
 
 

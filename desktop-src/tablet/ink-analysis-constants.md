@@ -4,12 +4,12 @@ ms.assetid: f701faca-7695-4be2-bd25-fab7ebcdbf30
 title: Constantes de análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4091be533e9988df078d7a3947a74222422b83bb80bae807caa6c8ab676ce3e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 783206a0b9a0f76fdf33d166f533f53e7aa06746
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119939545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251925"
 ---
 # <a name="ink-analysis-constants"></a>Constantes de análisis de entrada de lápiz
 

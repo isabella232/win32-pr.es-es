@@ -1,17 +1,17 @@
 ---
-description: 'InkCollector.Sysevento temGesture: se produce cuando se reconoce un gesto del sistema.'
+description: 'Evento InkCollector.SystemGesture: se produce cuando se reconoce un gesto del sistema.'
 ms.assetid: 11071d6f-8aa3-4902-94fd-89ad0cf17729
-title: InkCollector.Sysevento temGesture (Msasisut.h)
+title: Evento InkCollector.SystemGesture (Mscolaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 693201c26608064ee60bda1a86ee305b128c05d691172b8dcf74c428f83cf67b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f753807d8aaaf03c2de2fd9810ef1e044bcbe05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118043155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251877"
 ---
-# <a name="inkcollectorsystemgesture-event"></a>InkCollector.Sysevento temGesture
+# <a name="inkcollectorsystemgesture-event"></a>Evento InkCollector.SystemGesture
 
 Se produce cuando se reconoce un gesto del sistema.
 
@@ -89,7 +89,7 @@ Valor que indica si el objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los gestos del sistema son útiles porque dan información sobre el objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que se usa para crear el gesto. También proporcionan accesos directos a combinaciones de eventos del mouse y son formas "más económicas" de detectar eventos del mouse.
 
@@ -105,11 +105,11 @@ Este método de evento se define en las interfaces de solo distribución \_ \_ (
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

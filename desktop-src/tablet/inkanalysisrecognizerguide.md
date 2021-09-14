@@ -1,7 +1,7 @@
 ---
 description: Especifica la guía o el área donde se dibuja y reconoce la entrada de lápiz.
 ms.assetid: 5bd874ff-003b-4471-b4ef-50731007dc5a
-title: Estructura InkAnalysisRecognizerGuide (IACom. h)
+title: Estructura InkAnalysisRecognizerGuide (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,13 +14,13 @@ api_type:
 api_location:
 - IACom.h
 ms.openlocfilehash: eab5b1d09354f021f2c0a7e66a41b53e761d51e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696338"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251901"
 ---
-# <a name="inkanalysisrecognizerguide-structure"></a>Estructura InkAnalysisRecognizerGuide
+# <a name="inkanalysisrecognizerguide-structure"></a>InkAnalysisRecognizerGuide (estructura)
 
 Especifica la guía o el área donde se dibuja y reconoce la entrada de lápiz.
 
@@ -39,48 +39,48 @@ typedef struct InkAnalysisRecognizerGuide {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **rectWritingBox**
 </dt> <dd>
 
-Área de escritura invisible de la guía de reconocimiento en la que realmente se puede realizar la escritura.
+El área de escritura invisible de la guía de reconocimiento en la que realmente puede tener lugar la escritura.
 
 </dd> <dt>
 
 **rectDrawnBox**
 </dt> <dd>
 
-Rectángulo que se dibuja en la pantalla de Tablet PC y en el que tiene lugar la escritura.
+Rectángulo que se dibuja en la pantalla de tableta y en el que tiene lugar la escritura.
 
 </dd> <dt>
 
-**cRows**
+**Cuervos**
 </dt> <dd>
 
-El número de filas en el cuadro guía de reconocimiento.
+Número de filas del cuadro de la guía de reconocimiento.
 
 </dd> <dt>
 
 **cColumns**
 </dt> <dd>
 
-El número de columnas en el cuadro guía de reconocimiento.
+Número de columnas del cuadro de la guía de reconocimiento.
 
 </dd> <dt>
 
-**Elips**
+**Midline**
 </dt> <dd>
 
-El alto de la media en el cuadro de la guía de reconocimiento. El alto de línea media es la distancia desde la línea de base hasta la línea media del cuadro dibujado.
+Alto de línea media del cuadro de guía de reconocimiento. El alto de la línea media es la distancia desde la línea base hasta la línea media del cuadro dibujado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Un **InkAnalysisRecognizerGuide** define un área esperada de entrada, como una línea o cuadros, para los caracteres. Una estructura **InkAnalysisRecognizerGuide** solo se puede establecer en un nodo de contexto de sugerencia de análisis (vea [**IContextNode:: GetType**](icontextnode-gettype.md)). [**IInkAnalyzer**](iinkanalyzer.md) usa la ubicación del nodo de sugerencia de análisis y las ubicaciones de los trazos de entrada de lápiz para asociar un trazo al nodo de sugerencia de análisis. Los trazos con una asociación al nodo de sugerencia de análisis tendrán el **InkAnalysisRecognizerGuide** especificado que se usará cuando lo reconozca un **IInkAnalyzer**, siempre que el **IInkAnalyzer** admita **InkAnalysisRecognizerGuide**. Los valores expresados en la clase **InkAnalysisRecognizerGuide** siempre se relacionan con la ubicación del nodo de sugerencia de análisis y se especifican en coordenadas de espacio de tinta.
+**InkAnalysisRecognizerGuide** define un área de entrada esperada, como una línea o cuadros, para los caracteres. Una **estructura InkAnalysisRecognizerGuide** solo se puede establecer en un nodo de contexto de sugerencia de análisis (vea [**IContextNode::GetType).**](icontextnode-gettype.md) [**IInkAnalyzer**](iinkanalyzer.md) usa la ubicación del nodo de sugerencias de análisis y las ubicaciones de los trazos de lápiz para asociar un trazo al nodo de sugerencia de análisis. Los trazos con una asociación al nodo de sugerencias de análisis tendrán el **inkAnalysisRecognizerGuide** especificado usado cuando lo reconozca un **IInkAnalyzer,** siempre que **IInkAnalyzer** admita **InkAnalysisRecognizerGuide**. Los valores expresados en la **clase InkAnalysisRecognizerGuide** siempre son relativos a la ubicación del nodo de sugerencias de análisis y se especifican en coordenadas de espacio de entrada de lápiz.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,9 +88,9 @@ Un **InkAnalysisRecognizerGuide** define un área esperada de entrada, como una 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Un **InkAnalysisRecognizerGuide** define un área esperada de entrada, como una 
 
 <dl> <dt>
 
-[Propiedades de la sugerencia de análisis](analysis-hint-properties.md)
+[Propiedades de sugerencias de análisis](analysis-hint-properties.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: CreateAnalysisHint (método)**](iinkanalyzer-createanalysishint.md)
+[**IInkAnalyzer::CreateAnalysisHint (Método)**](iinkanalyzer-createanalysishint.md)
 </dt> <dt>
 
 [**IContextNode::AddPropertyData**](icontextnode-addpropertydata.md)
@@ -110,7 +110,7 @@ Un **InkAnalysisRecognizerGuide** define un área esperada de entrada, como una 
 [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 5b2bab46a7509ce858af9db3c7c4785de5161b64e86c0f3c280fdad00ebe5f64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2fe0c2f8714d3fa28f61624924eba169f9f1c5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117843008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251396"
 ---
-# <a name="iportabledevicevaluesgetsignedintegervalue-method"></a>IPortableDeviceValues::GetSignedIntegerValue (Método)
+# <a name="iportabledevicevaluesgetsignedintegervalue-method"></a>IPortableDeviceValues::GetSignedIntegerValue (método)
 
 El **método GetSignedIntegerValue** recupera un **valor LONG** (tipo VT \_ I4) especificado por una clave.
 
@@ -64,7 +64,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 | Código devuelto                                                                                                            | Descripción                                                          |
 |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                     |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key no* es un **tipo LONG.**<br/>   |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key no* es de **tipo LONG.**<br/>   |
 | <dl> <dt>**HRESULT \_ DE \_ WIN32(ERROR \_ NO \_ ENCONTRADO)**</dt> </dl> | La propiedad especificada por *key no* está en la colección.<br/> |
 
 
@@ -82,11 +82,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetSignedIntegerValue**](iportabledevicevalues-setsignedintegervalue.md)

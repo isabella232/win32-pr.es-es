@@ -4,12 +4,12 @@ ms.assetid: 536f743d-bfff-4607-a92c-f29e49881b76
 title: Enumeraciones de análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e730d34031b5967daa83595b44f1f0b5f38fac8aead7609245fb28b6c55ec0e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 710a1fdbb8c3627ed4856048f8cd27b80112bb16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452112"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251918"
 ---
 # <a name="ink-analysis-enumerations"></a>Enumeraciones de análisis de entrada de lápiz
 

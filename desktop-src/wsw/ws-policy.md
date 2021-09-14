@@ -6,12 +6,12 @@ keywords:
 - WS_POLICY
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f3daf0ac353e8d239ae03eb83e7a5dcbfe963754c52b90bf426566fc4ebae0f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 74312490bf0e44c1119c0ca1203ac2f581eb7683
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120109685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251301"
 ---
 # <a name="ws_policy"></a>WS \_ POLICY
 
@@ -24,7 +24,7 @@ typedef struct _WS_POLICY WS_POLICY;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este objeto no es seguro para subprocesos. Para obtener más información, vea [Seguridad para subprocesos.](thread-safety.md)
 
@@ -34,9 +34,9 @@ Este objeto no es seguro para subprocesos. Para obtener más información, vea [
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
-| Header<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
 title: Método IWMDRMSecurity GetContentEnablersFromHashes (Wmdrmsdk.h)
-description: El método GetContentEnablersFromHashes recupera interfaces del habilitador de contenido que permiten la renovación de componentes basados en certificados hash.
+description: El método GetContentEnablersFromHashes recupera interfaces de habilitador de contenido que permiten la renovación de componentes basados en certificados con hash.
 ms.assetid: d7429859-b609-49a2-a369-d02260bc15bf
 keywords:
 - Método GetContentEnablersFromHashes windows Media Format
 - Método GetContentEnablersFromHashes windows Media Format , interfaz IWMDRMSecurity
-- IWMDRMSecurity interface windows Media Format , GetContentEnablersFromHashes method
+- IWMDRMSecurity interface windows Media Format , GetContentEnablersFromHashes (método)
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d5b2b5e126555a0d09ea88017e2a290c180434b18fb8a61f668afd8e12fa02a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f44b4187699cb4a55d0c6215e3f31b430a87d299
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251451"
 ---
 # <a name="iwmdrmsecuritygetcontentenablersfromhashes-method"></a>Método IWMDRMSecurity::GetContentEnablersFromHashes
 
-El **método GetContentEnablersFromHashes** recupera interfaces del habilitador de contenido que permiten la renovación de componentes basados en certificados hash.
+El **método GetContentEnablersFromHashes** recupera interfaces de habilitador de contenido que permiten la renovación de componentes basados en certificados con hash.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Matriz de hashes de certificado para los que se obtienen los habilitadores de co
 *cCerts* \[ En\]
 </dt> <dd>
 
-Número de certificados para los que se recuperarán los habilitadores de contenido. Este es el número de elementos de la *matriz rgpbCertHashes.*
+Número de certificados para los que se recuperan los habilitadores de contenido. Este es el número de elementos de la *matriz rgpbCertHashes.*
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Valor devuelto recibido de la operación que ha producido un error debido a un c
 *prgContentEnablers* \[ out\]
 </dt> <dd>
 
-Matriz que recibe las direcciones de las interfaces **DESCONTENTEnabler** recién creadas. Establezca en **NULL** para obtener el número de habilitadores de contenido en el *parámetro pcContentEnablers.*
+Matriz que recibe las direcciones de las interfaces **DESCONTENTContentEnabler** recién creadas. Establezca en **NULL** para obtener el número de habilitadores de contenido en el *parámetro pcContentEnablers.*
 
 </dd> <dt>
 
@@ -96,9 +96,9 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si usa la interfaz **IMFContentEnabler** para renovar los componentes revocados, debe aclarar el proceso al usuario. Esta aclaración debe hacerse porque el proceso de actualización envía información desde el equipo cliente a un sitio web de Microsoft.
+Si usa la interfaz **IMFContentEnabler** para renovar los componentes revocados, debe aclarar el proceso al usuario. Esta aclaración debe realizarse porque el proceso de actualización envía información desde el equipo cliente a un sitio web de Microsoft.
 
 Cuando se llama **a IMFContentEnabler::AutomaticEnable**, el habilitador de contenido inicia el explorador predeterminado con la dirección del servicio de actualización en el sitio web de Microsoft. Se envía al servicio de actualización un identificador único que identifica el componente revocado. A continuación, el servicio redirige el explorador a una página web desde la que el usuario puede descargar e instalar la nueva versión del componente revocado.
 
@@ -117,7 +117,7 @@ Cuando se llama **a IMFContentEnabler::AutomaticEnable**, el habilitador de cont
 
 <dl> <dt>
 
-[**IWMDRMSecurity (interfaz)**](iwmdrmsecurity.md)
+[**Interfaz IWMDRMSecurity**](iwmdrmsecurity.md)
 </dt> </dl>
 
  

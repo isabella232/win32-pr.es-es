@@ -20,7 +20,7 @@ keywords:
 - Windows SDK de formato multimedia, modo de búsqueda aproximado
 - Windows SDK de formato multimedia, grabación de lista de reproducción
 - Windows SDK de formato multimedia, compatibilidad con varios lenguajes
-- Windows SDK de formato multimedia, WINDOWS SDK de Administrador de dispositivos multimedia
+- Windows SDK de formato multimedia, WINDOWS MEDIA Administrador de dispositivos SDK
 - Windows SDK de formato multimedia, interfaces de códec
 - codecs,Windows imagen de vídeo multimedia
 - administración de derechos digitales (DRM),Protocolo de transferencia segura de dispositivos de red
@@ -35,12 +35,12 @@ keywords:
 - Windows SDK de Administrador de dispositivos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbcabd2fd3ae1b1030b04c0be342bcb64678e98eef601c83570ad68a13567820
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5e58c9816ef80325422ee365b952842727b5004e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119591405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251486"
 ---
 # <a name="features-added-in-the-windows-media-95-sdk"></a>Características agregadas en el SDK Windows Media 9.5
 
@@ -51,7 +51,7 @@ El SDK Windows Media Format 9.5 introdujo nuevas características para proporcio
 Las aplicaciones de reproductor que admiten la aceleración de vídeo de DirectX ahora pueden implementar la interfaz [**IWMPlayerHook**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmplayerhook) para realizar el procesamiento específico de la aplicación durante la decodificación de DirectX VA. El lector llama al método de devolución de llamada [**IWMPLayerHook::P reDecode**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmplayerhook-predecode) antes de pasar ejemplos de vídeo comprimidos al procesador de vídeo para descodificar.
 
 > [!Note]  
-> Para usar la **interfaz IWMPlayerHook** y la interfaz [**IWMReaderAdvanced5**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced5) asociada, debe tener el número de actualización 888656 instalado en el SDK de formato multimedia de Windows. Puede descargar la actualización desde el sitio [web de Microsoft](https://support.microsoft.com/?id=888656).
+> Para usar la **interfaz IWMPlayerHook** y la interfaz [**IWMReaderAdvanced5**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced5) asociada, debe tener el número de actualización 888656 instalado en el SDK Windows Media Format. Puede descargar la actualización desde el sitio [web de Microsoft](https://support.microsoft.com/?id=888656).
 
  
 
@@ -63,7 +63,7 @@ Hay disponible una versión basada en x64 del SDK Windows Media Format. Esta doc
 
 El códec Windows Media Video 9 Image v2 simplifica los cálculos de geometría de ejemplo para el movimiento panorámico y el zoom. El nuevo códec también admite varias transiciones complejas entre imágenes.
 
-## <a name="new-version-of-the-windows-media-audio-codecs"></a>Nueva versión de los códecs Windows media audio
+## <a name="new-version-of-the-windows-media-audio-codecs"></a>Nueva versión de los códecs Windows audio multimedia
 
 El SDK Windows Media Format 9.5 incluye los siguientes códecs de audio actualizados:
 
@@ -75,11 +75,11 @@ El SDK Windows Media Format 9.5 incluye los siguientes códecs de audio actualiz
 
 El SDK Windows Media Format 9.5 admite el nuevo protocolo de transferencia segura Windows Media DRM 10 para dispositivos de red. Este protocolo se puede usar para transmitir contenido cifrado a través de una red local a un dispositivo de reproducción, como un receptor de vídeo establecido en la parte superior.
 
-La aplicación debe realizar la mayoría de los procedimientos usados para implementar la compatibilidad con Windows Drm 10 multimedia para dispositivos de red. Sin embargo, puede usar métodos del SDK Windows Media Format para proporcionar la siguiente funcionalidad:
+La aplicación debe realizar la mayoría de los procedimientos usados para implementar la compatibilidad con Windows DRM 10 multimedia para dispositivos de red. Sin embargo, puede usar métodos del SDK Windows Media Format para proporcionar la siguiente funcionalidad:
 
 -   Mantenga una base de datos de dispositivos, incluidos los que están habilitados para Windows DRM 10 multimedia para dispositivos de red.
 -   Valide los dispositivos para asegurarse de que están lo suficientemente "cerca" del cliente en la red para el streaming seguro.
--   Convierta los archivos protegidos con DRM en Windows drm multimedia 10 para los flujos de dispositivos de red.
+-   Convierta archivos protegidos con DRM en Windows drm multimedia 10 para flujos de dispositivos de red.
 -   Escribir archivos con datos previamente cifrados.
 
 ## <a name="support-for-new-drm-licenses"></a>Compatibilidad con nuevas licencias DRM
@@ -88,7 +88,7 @@ Las nuevas licencias creadas mediante el SDK de Windows Media Rights Manager usa
 
 ## <a name="new-video-codec"></a>Nuevo códec de vídeo
 
-El códec Windows perfil avanzado de Windows Media Video 9 se basa en la alta calidad del códec Windows Media Video 9, al tiempo que agrega compatibilidad con la codificación entrelazada.
+El códec Windows media video 9 advanced profile se basa en la alta calidad del códec Windows Media Video 9, al tiempo que agrega compatibilidad con la codificación entrelazada.
 
 ## <a name="spdif-output"></a>Salida de S/PDIF
 
@@ -108,15 +108,15 @@ Windows Drm multimedia 10 admite derechos para copiar archivos de audio en Red B
 
 ## <a name="improved-multiple-language-support-for-metadata"></a>Compatibilidad mejorada Multiple-Language de metadatos
 
-En el SDK de Windows Media Format 9, todos los metadatos agregados a un archivo se asignaron a una lista de idiomas a la que se le asignó el identificador de idioma del idioma predeterminado. Esto produjo problemas cuando los distribuidores de contenido de diferentes configuraciones regionales agregaron algunos metadatos, ya que los usuarios de la configuración regional del distribuidor solo ven los pocos atributos agregados para su idioma. El SDK Windows Media Format 9.5 soluciona este problema al no crear una lista de idiomas hasta que haya atributos de dos idiomas presentes en el archivo. En ese momento, todos los metadatos están asociados a la configuración regional del segundo idioma, que luego se convierte en el valor predeterminado. De esta manera, un distribuidor de contenido puede mantener intactos todos los metadatos originales de un archivo, como el título y el autor, al tiempo que agrega algunos atributos pertinentes a su configuración regional.
+En el SDK Windows Media Format 9, todos los metadatos agregados a un archivo se asignaron a una lista de idiomas a la que se le asignó el identificador de idioma del idioma predeterminado. Esto produjo problemas cuando los distribuidores de contenido de diferentes configuraciones regionales agregaron algunos metadatos, ya que los usuarios de la configuración regional del distribuidor solo ven los pocos atributos agregados para su idioma. El SDK Windows Media Format 9.5 soluciona este problema al no crear una lista de idiomas hasta que haya atributos de dos idiomas presentes en el archivo. En ese momento, todos los metadatos están asociados a la configuración regional del segundo idioma, que luego se convierte en el valor predeterminado. De esta manera, un distribuidor de contenido puede mantener intactos todos los metadatos originales de un archivo, como el título y el autor, al tiempo que agrega algunos atributos pertinentes a su configuración regional.
 
 ## <a name="windows-media-device-manager-sdk-included-in-installation"></a>Windows SDK Administrador de dispositivos multimedia incluido en la instalación
 
-El paquete de instalación del SDK Windows Media Format 9.5 instala el SDK Windows Media Administrador de dispositivos SDK. La documentación del SDK de Windows Media Administrador de dispositivos se puede encontrar en la carpeta de documentos C: \\ WMSDK \\ WMFSDK95 \\ WMDM (la carpeta será diferente si no instala el SDK de formato multimedia de Windows en la carpeta \\ predeterminada).
+El paquete de instalación del SDK Windows Media Format 9.5 instala el SDK Windows Media Administrador de dispositivos SDK. La documentación del SDK de Windows Media Administrador de dispositivos se puede encontrar en la carpeta de documentos C: \\ \\ WMSDK WMFSDK95 \\ WMDM (la carpeta será diferente si no instala el SDK de formato multimedia de Windows en la carpeta \\ predeterminada).
 
 ## <a name="codec-interface-documentation"></a>Documentación de la interfaz de códec
 
-En esta documentación se incluye información sobre el uso Windows códecs de audio y vídeo multimedia fuera del SDK Windows Media Format. Esta documentación se publicó originalmente como parte de una descarga de Desarrollador de Microsoft Network. Las aplicaciones de ejemplo que muestran cómo usar las DDO de códec directamente se incluyen en la instalación del SDK Windows Media Format junto con los encabezados.
+Esta documentación incluye información sobre el uso de los códecs Windows audio multimedia y vídeo fuera del SDK Windows Media Format. Esta documentación se publicó originalmente como parte de una descarga de Desarrollador de Microsoft Network. Las aplicaciones de ejemplo que muestran el uso de las DDO de códec directamente se incluyen en la instalación del SDK Windows Media Format junto con los encabezados.
 
 ## <a name="related-topics"></a>Temas relacionados
 

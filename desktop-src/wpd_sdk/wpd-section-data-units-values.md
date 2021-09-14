@@ -1,5 +1,5 @@
 ---
-description: La enumeración \_ WPD SECTION DATA UNITS VALUES indica las unidades de una sección de datos a la \_ \_ que se hace \_ referencia.
+description: La enumeración \_ WPD SECTION \_ DATA UNITS VALUES indica las unidades de una sección de datos a la que \_ se hace \_ referencia.
 ms.assetid: d787d8b4-b622-4370-baf9-a2783133260f
 title: WPD_SECTION_DATA_UNITS_VALUES enumeración (PortableDevice.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 02311531d3adb2be2832708d5a5295f9514f6a6e3d20a48205d1f720592d9e61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60d6f3b26e525375f834bde151548e4d41ce53f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118696262"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251330"
 ---
-# <a name="wpd_section_data_units_values-enumeration"></a>ENUMERACIÓN \_ DE VALORES DE \_ UNIDADES DE DATOS DE LA SECCIÓN \_ \_ DE WPD
+# <a name="wpd_section_data_units_values-enumeration"></a>WPD \_ SECTION DATA UNITS VALUES \_ \_ \_ (enumeración)
 
 La **enumeración \_ WPD SECTION \_ DATA UNITS \_ \_ VALUES** indica las unidades de una sección de datos a la que se hace referencia.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -40,7 +40,7 @@ typedef enum WPD_SECTION_DATA_UNITS_VALUES {
 
 <dl> <dt>
 
-<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**BYTES DE \_ UNIDADES DE DATOS DE LA SECCIÓN WPD \_ \_ \_**
+<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**BYTES DE \_ UNIDADES DE \_ DATOS DE LA \_ SECCIÓN \_ WPD**
 </dt> <dd>
 
 Las unidades especificadas se especifican en bytes.
@@ -64,7 +64,7 @@ Las unidades especificadas se especifican en milisegundos.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

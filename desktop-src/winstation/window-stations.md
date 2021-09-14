@@ -6,12 +6,12 @@ keywords:
 - objetos de estación de ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d55e43a0db21b23a6704949f0d72a184c9034f625689b800814ac8a93891b7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee2048015e4b0c687932c4d01aafe31127e2141e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118199696"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251613"
 ---
 # <a name="window-stations"></a>Estaciones de ventana
 
@@ -23,7 +23,7 @@ Cuando un usuario inicia sesión en un equipo Servicios de Escritorio remoto, se
 
 Para obtener más información sobre las estaciones de ventana, vea los temas siguientes:
 
--   [Creación de equipos de escritorio y estaciones de ventana](window-station-and-desktop-creation.md)
+-   [Estación de ventana y creación de escritorio](window-station-and-desktop-creation.md)
 -   [Procesar conexión a una estación de ventana](process-connection-to-a-window-station.md)
 -   [Derechos de acceso y seguridad de la estación de windows](window-station-security-and-access-rights.md)
 

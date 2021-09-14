@@ -15,12 +15,12 @@ api_type:
 api_location:
 - Inkdiv.dll
 - Inkdiv.dll.dll
-ms.openlocfilehash: d7dd98aaef627bac6a26340464c14c4e46c07d6a23f32c2664651503b5d79014
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0658504303968803bd2abff063694701d121390
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118220836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251865"
 ---
 # <a name="inkdivider-class"></a>InkDivider (clase)
 
@@ -68,15 +68,15 @@ La **clase InkDivider** tiene estas propiedades.
 
 | Propiedad                                                             | Tipo de acceso           | Descripción                                                                                                                     |
 |:---------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------|
-| [**LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight)<br/>               | Lectura/escritura<br/> | Obtiene o establece el alto de escritura a mano esperado en unidades HIMETRIC.<br/>                                                      |
-| [**RecognizerContext**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext)<br/> | Lectura/escritura<br/> | Obtiene o establece el [**objeto InkRecognizerContext**](inkrecognizercontext-class.md) usado para el reconocimiento de escritura a mano.<br/> |
-| [**Trazos**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_strokes)<br/>                     | Lectura/escritura<br/> | Obtiene o establece la [**colección InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) contenida en el **objeto InkDivider.** <br/>     |
+| [**LineHeight**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight)<br/>               | Lectura y escritura<br/> | Obtiene o establece el alto de escritura a mano esperado en unidades HIMETRIC.<br/>                                                      |
+| [**RecognizerContext**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext)<br/> | Lectura y escritura<br/> | Obtiene o establece el [**objeto InkRecognizerContext**](inkrecognizercontext-class.md) que se usa para el reconocimiento de escritura a mano.<br/> |
+| [**Trazos**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_strokes)<br/>                     | Lectura y escritura<br/> | Obtiene o establece la [**colección InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) contenida en el **objeto InkDivider.** <br/>     |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede crear una instancia de este objeto llamando al [**método CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) en C++.
 
@@ -84,14 +84,14 @@ El **objeto InkDivider** usa el diseño de los trazos, el orden en el que se agr
 
 Los resultados del análisis se devuelven en [**un objeto IInkDivisionResult.**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionresult)
 
-El **objeto InkDivider** usa un objeto [**InkRecognizerContext**](inkrecognizercontext-class.md) para dividir los trazos con más precisión y asignar una cadena de reconocimiento a los resultados.
+El **objeto InkDivider** usa un objeto [**InkRecognizerContext**](inkrecognizercontext-class.md) para dividir con más precisión los trazos y asignar una cadena de reconocimiento a los resultados.
 
 > [!Note]  
 > El **objeto InkDivider** usa la configuración de propiedad predeterminada del [**objeto InkRecognizerContext.**](inkrecognizercontext-class.md)
 
  
 
-Si no asigna un contexto de reconocedor al objeto **InkDivider,** el objeto **InkDivider** sigue analizando la entrada de lápiz, pero divide los trazos con menos precisión y no asocia texto a los resultados de división.
+Si no asigna un contexto de reconocedor al objeto **InkDivider,** el objeto **InkDivider** sigue analizando la entrada de lápiz, pero divide los trazos con menos precisión y no asocia texto con los resultados de división.
 
 > [!Note]  
 > La [**propiedad RecognizerContext**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext) debe establecerse antes de agregar trazos a la [**propiedad Strokes.**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_strokes) Una vez agregados los trazos al **objeto InkDivider,** no se puede cambiar la propiedad **RecognizerContext.**
@@ -104,16 +104,16 @@ Si no asigna un contexto de reconocedor al objeto **InkDivider,** el objeto **In
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                               |
-| Header<br/>                   | <dl> <dt>Msgniut15.h (también requiere Msgniut15 \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut15.h (también requiere Ms ashut15 \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Inkdiv.dll</dt> </dl>                                   |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -123,7 +123,7 @@ Si no asigna un contexto de reconocedor al objeto **InkDivider,** el objeto **In
 [**InkRecognizerContext (clase)**](inkrecognizercontext-class.md)
 </dt> <dt>
 
-[InkStrokes Collection](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
+[Colección InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 </dt> </dl>
 
  

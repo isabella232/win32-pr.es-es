@@ -4,12 +4,12 @@ description: Una estación de ventana es un objeto protegible que está asociado
 ms.assetid: 6264030f-36fc-4c6d-87fd-dd3de2dc5b67
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a511e2b6e572a708110e428609c9df8d3322ec8400ba00221614c502386aca1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 376904dca3cc929a4e298f4330e348a877a1345e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119710025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251625"
 ---
 # <a name="about-window-stations-and-desktops"></a>Acerca de las estaciones de ventana y los escritorios
 

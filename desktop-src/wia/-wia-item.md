@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 2b5b32603f334148fede3bc2866367817fd3dcd5ab33aaa40bab84fe3cf49624
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6af0642a47db9d3a7a1c30aea76be22ea5ce1d07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118208938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251804"
 ---
 # <a name="item-object"></a>Objeto Item
 
@@ -26,7 +26,7 @@ Windows Los dispositivos de hardware de adquisición de imágenes (WIA) se repre
 
 Use el **objeto Item** para transferir datos a un archivo, para navegar por el árbol de elementos de un dispositivo determinado o para recuperar información sobre una imagen o un dispositivo.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto Item** tiene estos tipos de miembros:
 
@@ -70,14 +70,14 @@ El **objeto Item** tiene estas propiedades.
 | [**ThumbHeight**](-wia-iwiadispatchitem-thumbheight.md)<br/>         | Solo lectura<br/> | Alto, en píxeles, de la imagen en miniatura. Esta propiedad devuelve -1 si este elemento no admite miniaturas. <br/>                                                                                                                               |
 | [**Miniatura**](-wia-iwiadispatchitem-thumbnail.md)<br/>             | Solo lectura<br/> | Ruta de acceso y nombre de archivo de la imagen en miniatura. Esta propiedad es **NULL** si el elemento no admite miniaturas o si no se puede crear una ruta de acceso. <br/>                                                                                                  |
 | [**ThumbWidth**](-wia-iwiadispatchitem-thumbwidth.md)<br/>           | Solo lectura<br/> | Ancho, en píxeles, de la imagen en miniatura. Esta propiedad devuelve -1 si este elemento no admite miniaturas. <br/>                                                                                                                                |
-| [**Time**](-wia-iwiadispatchitem-time.md)<br/>                       | Solo lectura<br/> | La hora actual. Solo se aplica a los dispositivos. <br/>                                                                                                                                                                                                      |
+| [**Hora**](-wia-iwiadispatchitem-time.md)<br/>                       | Solo lectura<br/> | La hora actual. Solo se aplica a los dispositivos. <br/>                                                                                                                                                                                                      |
 | [**Ancho**](-wia-iwiadispatchitem-width.md)<br/>                     | Solo lectura<br/> | Ancho, en píxeles, del elemento. <br/>                                                                                                                                                                                                              |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="creationaccess-functions"></a>Funciones de \\ acceso de creación
 
@@ -99,9 +99,9 @@ Use cualquiera de las siguientes opciones para recuperar una referencia al objet
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

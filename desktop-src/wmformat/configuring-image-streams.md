@@ -8,12 +8,12 @@ keywords:
 - secuencias de imágenes, configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1ce58fe3da709772b08d0956f3f5540713f7960742338f73c9d9807ad1a1e40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24b05a21474143e227257dad240ff4d4464732ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117848970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251553"
 ---
 # <a name="configuring-image-streams"></a>Configuración de imágenes Secuencias
 
@@ -21,12 +21,12 @@ Los flujos de imágenes contienen imágenes fijas en formato JPEG. Aunque las se
 
 
 
-| Configuración                                                           | Descripción                                                                                                                                                                      |
+| Parámetro                                                           | Descripción                                                                                                                                                                      |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **WM \_ MEDIA \_ TYPE.majortype**                                     | Se establece en Imagen \_ WMMEDIATYPE.                                                                                                                                                       |
 | **WM \_ MEDIA \_ TYPE.subtype**                                       | Establezca en WMMEDIASUBTYPE \_ RGB24.                                                                                                                                                    |
-| **WM \_ MEDIA \_ TYPE.bFixedSizeSamples**                             | Se establece en **FALSE.**                                                                                                                                                                |
-| **WM \_ MEDIA \_ TYPE.bMentalCompression**                          | Se establece en **FALSE.**                                                                                                                                                                |
+| **WM \_ MEDIA \_ TYPE.bFixedSizeSamples**                             | Establezca en **FALSE.**                                                                                                                                                                |
+| **WM \_ MEDIA \_ TYPE.bMentalCompression**                          | Establezca en **FALSE.**                                                                                                                                                                |
 | **WM \_ MEDIA \_ TYPE.lSampleSize**                                   | Establecer en 0.                                                                                                                                                                        |
 | **WM \_ MEDIA \_ TYPE.formattype**                                    | Establezca en WMFORMAT \_ VideoInfo.                                                                                                                                                      |
 | **WM \_ MEDIA \_ TYPE.pUnk**                                          | Se establece en **NULL.**                                                                                                                                                                 |
@@ -42,7 +42,7 @@ Los flujos de imágenes contienen imágenes fijas en formato JPEG. Aunque las se
 | **BITMAPINFOHEADER.biPlanes**                                     | establézcalo en 1.                                                                                                                                                                        |
 | **BITMAPINFOHEADER.biBitCount**                                   | Establezca en 24.                                                                                                                                                                       |
 | **BITMAPINFOHEADER.biCompression**                                | Establezca en BI \_ RGB.                                                                                                                                                                  |
-| **BITMAPINFOHEADER.biSizeImage**                                  | Establezca en ((x y c) / 8), donde x es el ancho de la imagen, y es el alto de la imagen y c es la profundidad de color de la imagen (en este caso siempre \* \* 24).                     |
+| **BITMAPINFOHEADER.biSizeImage**                                  | Establezca en ((x y c) / 8), donde x es el ancho de la imagen, y es el alto de la imagen y c es la profundidad de color de la imagen (en este caso, \* \* siempre es 24).                     |
 | **BITMAPINFOHEADER.biXPelsPerMeter**                              | Establecer en 0.                                                                                                                                                                        |
 | **BITMAPINFOHEADER.biYPelsPerMeter**                              | Establecer en 0.                                                                                                                                                                        |
 | **BITMAPINFOHEADER.biClrUsed**                                    | Establecer en 0.                                                                                                                                                                        |
@@ -56,13 +56,13 @@ Los flujos de imágenes contienen imágenes fijas en formato JPEG. Aunque las se
 
 <dl> <dt>
 
-[**Configuración común a todos los Secuencias**](configuration-common-to-all-streams.md)
+[**Configuración común a todas las Secuencias**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
 [**Configuración de Secuencias**](configuring-streams.md)
 </dt> <dt>
 
-[**Obtención de buenos resultados con el códec de pantalla Windows Media Video 9**](getting-good-results-with-the-windows-media-video-9-screen-codec.md)
+[**Obtención de buenos resultados con el códec de Windows Media Video 9**](getting-good-results-with-the-windows-media-video-9-screen-codec.md)
 </dt> <dt>
 
 [**Imagen Secuencias**](image-streams.md)

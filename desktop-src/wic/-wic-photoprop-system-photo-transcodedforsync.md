@@ -4,18 +4,18 @@ ms.assetid: 1869d845-6264-425a-ab3e-e0a9f942961a
 title: Directiva de metadatos de fotos System.Photo.TranscodedForSync
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34e78086284e1ca13b01c5e7cd188b761afe7eeba8acb5f2bca103234f80955b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5884ad469fcf7b5dffc8c4ad14f0ee5ff90cd07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251787"
 ---
 # <a name="systemphototranscodedforsync-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.TranscodedForSync
 
 Directiva de metadatos de fotos para [la propiedad System.Photo.TranscodedForSync.](../properties/props-system-photo-transcodedforsync.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ Photo \_ TranscodedForSync
 
@@ -41,11 +41,11 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta de acceso                                  | Formato de disco  |
+| Pedido | Path                                  | Formato de disco  |
 |-------|---------------------------------------|--------------|
 | 1     | /app1/ifd/{ushort=18248}              | bool \_ ushort |
 | 2     | /xmp/MicrosoftPhoto:TranscodedForSync |              |
@@ -58,7 +58,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                                  | Formato de disco  |
+| Pedido | Path                                  | Formato de disco  |
 |-------|---------------------------------------|--------------|
 | 1     | /app1/ifd/{ushort=18248}              | bool \_ ushort |
 | 2     | /xmp/MicrosoftPhoto:TranscodedForSync |              |
@@ -71,7 +71,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                                  |
+| Pedido | Path                                  |
 |-------|---------------------------------------|
 | 1     | /app1/ifd/{ushort=18248}              |
 | 2     | /xmp/microsoftphoto:transcodedforsync |
@@ -82,11 +82,11 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta de acceso                                      | Formato de disco  |
+| Pedido | Path                                      | Formato de disco  |
 |-------|-------------------------------------------|--------------|
 | 1     | /ifd/{ushort=18248}                       | bool \_ ushort |
 | 2     | /ifd/xmp/MicrosoftPhoto:TranscodedForSync |              |
@@ -99,7 +99,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                                      | Formato de disco  |
+| Pedido | Path                                      | Formato de disco  |
 |-------|-------------------------------------------|--------------|
 | 1     | /ifd/{ushort=18248}                       | bool \_ ushort |
 | 2     | /ifd/xmp/MicrosoftPhoto:TranscodedForSync |              |
@@ -112,7 +112,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                                      |
+| Pedido | Path                                      |
 |-------|-------------------------------------------|
 | 1     | /ifd/{ushort=18248}                       |
 | 2     | /ifd/xmp/microsoftphoto:transcodedforsync |
@@ -121,7 +121,7 @@ Los valores de esquemas diferentes se concilian.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

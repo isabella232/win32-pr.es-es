@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 87dca9643174b9497e0643d1c0fdcfcd8c57c18e638f7cf8441ea08b8e958a7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7e1dc50f115fbd2ace84a3b631d37a42e1c4ba7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118026352"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251331"
 ---
 # <a name="wpd_focus_modes-enumeration"></a>Enumeración \_ WPD FOCUS \_ MODES
 
-El **tipo de \_ enumeración \_ WPD FOCUS MODES** describe el modo de enfoque que usa un dispositivo de captura de imágenes fijas.
+El **tipo de \_ enumeración WPD FOCUS \_ MODES** describe el modo de enfoque que usa un dispositivo de captura de imágenes fijas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -66,11 +66,11 @@ Especifica el foco automático, controlado por el dispositivo.
 <span id="WPD_FOCUS_AUTOMATIC_MACRO"></span><span id="wpd_focus_automatic_macro"></span>**WPD \_ FOCUS \_ AUTOMATIC \_ MACRO**
 </dt> <dd>
 
-Especifica que el dispositivo debe cambiar automáticamente entre macro y foco normal, según sea necesario.
+Especifica que el dispositivo debe cambiar automáticamente entre la macro y el foco normal, según sea necesario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta enumeración la usa la [propiedad \_ WPD STILL \_ IMAGE FOCUS \_ \_ MODE.](still-image-properties.md)
 

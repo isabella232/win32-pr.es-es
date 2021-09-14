@@ -5,15 +5,15 @@ ms.assetid: 8b79735b-f238-4d49-8977-2935fc208d48
 keywords:
 - AsyncStreamingTcpServerExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 222d7bbf5cf5e2f219da5f5703b7cf2e1f8bb898b65c0bc61c6b288116cab048
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1103d46bc777e56090b90b318a1138eb88aef2ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119927675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251325"
 ---
 # <a name="asyncstreamingtcpserverexample"></a>AsyncStreamingTcpServerExample
 

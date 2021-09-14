@@ -4,12 +4,12 @@ ms.assetid: 3abbe92b-32b7-4820-b208-45c847243078
 title: Códigos de error (WIA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5c782ae449a52ae0ff2b64f124609a3142f1dd457d74bdb82333502ef1868ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd6025616d46a5973692bb3cafbcf88e18836ad0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117670278"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251841"
 ---
 # <a name="error-codes-wia"></a>Códigos de error (WIA)
 

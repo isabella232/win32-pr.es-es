@@ -21,12 +21,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 5ae8a0a519af32a68bd65241f847cadcaa3d623be932a747e21a3b86338d680d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e60c44cda2585655a86ca1cdb4653ad002a0225d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119704795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251414"
 ---
 # <a name="event-constants-portabledeviceh"></a>Constantes de evento (PortableDevice.h)
 

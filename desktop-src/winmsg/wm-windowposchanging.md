@@ -4,12 +4,12 @@ ms.assetid: 45ecd966-5222-4738-9e99-8a6edbdd435a
 title: WM_WINDOWPOSCHANGING mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68f10abcb0692374209c2070a465df7c4a5f18672eebf376378d6fb16cbca537
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 015a31aac31d38506d1798f83c8dd7f9aa646f85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119771945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251630"
 ---
 # <a name="wm_windowposchanging-message"></a>WM \_ WINDOWPOSCHANGING message
 
@@ -48,9 +48,9 @@ Tipo: **LRESULT**
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para una ventana con el estilo [**WS \_ OVERLAPPED**](window-styles.md) o **WS \_ THICKFRAME,** la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) envía el [**mensaje \_ GETMINMAXINFO**](wm-getminmaxinfo.md) de WM a la ventana. Esto se hace para validar el nuevo tamaño y la posición de la ventana y para aplicar los estilos de cliente [ \_ BYTEALIGNCLIENT](about-window-classes.md) y CS \_ BYTEALIGNWINDOW de CS. Al no pasar el **mensaje \_ WM WINDOWPOSCHANGING** a la función **DefWindowProc,** una aplicación puede invalidar estos valores predeterminados.
+Para una ventana con el estilo [**WS \_ OVERLAPPED**](window-styles.md) o **WS \_ THICKFRAME,** la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) envía el mensaje [**WM \_ GETMINMAXINFO**](wm-getminmaxinfo.md) a la ventana. Esto se hace para validar el nuevo tamaño y la posición de la ventana y para aplicar los estilos de cliente [ \_ BYTEALIGNCLIENT](about-window-classes.md) y CS \_ BYTEALIGNWINDOW de CS. Al no pasar el **mensaje WM \_ WINDOWPOSCHANGING** a la función **DefWindowProc,** una aplicación puede invalidar estos valores predeterminados.
 
 Mientras se procesa este mensaje, la modificación de cualquiera de los valores de [**WINDOWPOS**](/windows/win32/api/winuser/ns-winuser-windowpos) afecta al nuevo tamaño, la posición o la posición de la ventana en el orden Z. Una aplicación puede evitar cambios en la ventana estableciendo o borrando los bits adecuados en el **miembro flags** de **WINDOWPOS.**
 
@@ -91,7 +91,7 @@ Mientras se procesa este mensaje, la modificación de cualquiera de los valores 
 [**WM \_ MOVE**](wm-move.md)
 </dt> <dt>
 
-[**TAMAÑO \_ WM**](wm-size.md)
+[**TAMAÑO \_ DE WM**](wm-size.md)
 </dt> <dt>
 
 [**VENTANA \_ WMPOSCHANGED**](wm-windowposchanged.md)

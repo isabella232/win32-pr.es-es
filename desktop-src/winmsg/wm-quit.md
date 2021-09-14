@@ -4,12 +4,12 @@ ms.assetid: a9bff5dc-cab8-4e08-838e-d92c87c265d6
 title: WM_QUIT mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26f6b999ff23d964c1998fe1cc2a9991e11ecfe71760800b1d678e2f71b89273
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f8e0d7413d65e9a0fb451fe63504f2ed5be02064
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119881525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251661"
 ---
 # <a name="wm_quit-message"></a>Mensaje DE SALIDA DE WM \_
 
@@ -46,7 +46,7 @@ Tipo: **LRESULT**
 
 Este mensaje no tiene un valor devuelto porque hace que el bucle de mensajes finalice antes de que el mensaje se envíe al procedimiento de ventana de la aplicación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **mensaje DE SALIDA \_ de WM** no está asociado a una ventana y, por tanto, nunca se recibirá a través del procedimiento de ventana de una ventana. Solo la recuperan las funciones [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) [**o PeekMessage.**](/windows/win32/api/winuser/nf-winuser-peekmessagea)
 

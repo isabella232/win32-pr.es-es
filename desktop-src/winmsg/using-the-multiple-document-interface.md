@@ -4,12 +4,12 @@ ms.assetid: 024744d3-362f-4162-8d0a-d4dac61de808
 title: Uso de la interfaz de varios documentos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09453e6f4a9301c8cdfc9d675ae1efd7853594fc472a446a021e3bd3e075fc50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5e24aed7abc3640b441345520203c8a02e025e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251697"
 ---
 # <a name="using-the-multiple-document-interface"></a>Uso de la interfaz de varios documentos
 
@@ -75,7 +75,7 @@ BOOL WINAPI InitializeApplication()
 
 
 
-## <a name="creating-frame-and-child-windows"></a>Creación de fotogramas y elementos Windows
+## <a name="creating-frame-and-child-windows"></a>Crear fotogramas y elementos Windows
 
 Después de registrar sus clases de ventana, una aplicación MDI puede crear sus ventanas. En primer lugar, crea su ventana de marco mediante la [**función CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) [**o CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Después de crear su ventana de marco, la aplicación crea su ventana cliente, de nuevo mediante **CreateWindow** o **CreateWindowEx.** La aplicación debe especificar MDICLIENT como nombre de clase de la ventana de cliente; **MDICLIENT** es una clase de ventana registrada previamente definida por el sistema. El *parámetro lpvParam* de **CreateWindow** o **CreateWindowEx** debe apuntar a una [**estructura CLIENTCREATESTRUCT.**](/windows/win32/api/winuser/ns-winuser-clientcreatestruct) Esta estructura contiene los miembros descritos en la tabla siguiente:
 
@@ -83,7 +83,7 @@ Después de registrar sus clases de ventana, una aplicación MDI puede crear sus
 
 | Miembro           | Descripción                                                                                                                                                                                                                                                                                                           |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **hWindowMenu**  | Identificador del menú de ventana utilizado para controlar las ventanas secundarias MDI. A medida que se crean ventanas secundarias, la aplicación agrega sus títulos al menú de la ventana como elementos de menú. A continuación, el usuario puede activar una ventana secundaria haciendo clic en su título en el menú de la ventana.                                                               |
+| **hWindowMenu**  | Identificador del menú de ventana que se usa para controlar las ventanas secundarias MDI. A medida que se crean ventanas secundarias, la aplicación agrega sus títulos al menú de la ventana como elementos de menú. A continuación, el usuario puede activar una ventana secundaria haciendo clic en su título en el menú de la ventana.                                                               |
 | **idFirstChild** | Especifica el identificador de la primera ventana secundaria MDI. A la primera ventana secundaria MDI creada se le asigna este identificador. Se crean ventanas adicionales con identificadores de ventana incrementados. Cuando se destruye una ventana secundaria, el sistema reasigna inmediatamente los identificadores de ventana para mantener su intervalo contiguo. |
 
 
@@ -166,8 +166,8 @@ El procedimiento de ventana para una ventana de marco MDI es similar al de la ve
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**COMANDO \_ WM**](../menurc/wm-command.md)     | Activa la ventana secundaria MDI que el usuario elige. Este mensaje se envía cuando el usuario elige una ventana secundaria MDI en el menú de ventana de la ventana marco MDI. El identificador de ventana que acompaña a este mensaje identifica la ventana secundaria MDI que se va a activar. |
 | [**WM \_ MENUCHAR**](../menurc/wm-menuchar.md)   | Abre el menú de ventana de la ventana secundaria MDI activa cuando el usuario presiona la combinación de teclas ALT+ - (menos).                                                                                                                                                      |
-| [**WM \_ SETFOCUS**](../inputdev/wm-setfocus.md) | Pasa el foco del teclado a la ventana del cliente MDI, que a su vez lo pasa a la ventana secundaria MDI activa.                                                                                                                                                         |
-| [**TAMAÑO \_ DE WM**](wm-size.md)              | Cambia el tamaño de la ventana de cliente MDI para que quepa en el área de cliente de la nueva ventana de marco. Si el procedimiento de ventana de marco puede cambiar el tamaño de la ventana de cliente MDI, no debe pasar el mensaje a la [**función DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)                   |
+| [**WM \_ SETFOCUS**](../inputdev/wm-setfocus.md) | Pasa el foco del teclado a la ventana cliente de MDI, que a su vez lo pasa a la ventana secundaria MDI activa.                                                                                                                                                         |
+| [**TAMAÑO \_ DE WM**](wm-size.md)              | Cambia el tamaño de la ventana cliente de MDI para que quepa en el área de cliente de la nueva ventana de marco. Si el procedimiento de ventana de marco puede cambiar el tamaño de la ventana de cliente de MDI, no debe pasar el mensaje a la [**función DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)                   |
 
 
 

@@ -9,20 +9,20 @@ keywords:
 - profiles,multiple bit rate (MBR)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c31c7954f6aa5098f6cc221a7a761428ff15fd6a4c2c0a6e5c8cea2b6622a84b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be77c7615845d10d07982676dfdb4dc8c617cebe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119446975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251439"
 ---
 # <a name="using-multiple-bit-rate-mutual-exclusion"></a>Uso de la exclusión mutua de velocidad de bits múltiple
 
 La exclusión mutua de velocidad de bits múltiple (MBR) es útil cuando se desea codificar contenido para diversos escenarios de reproducción. Una salida de vídeo de MBR consta de una sola entrada codificada varias veces, cada una con una configuración de velocidad de bits diferente. Cuando se lee un archivo con codificación MBR, el lector determinará qué secuencia usar en función del ancho de banda disponible.
 
-El SDK Windows Media Format admite la codificación MBR para secuencias de vídeo y audio. Además, puede crear un tipo especial de codificación MBR denominado codificación MBR de tamaño múltiple de vídeo. El vídeo MBR de varios tamaños de vídeo funciona de forma idéntica al vídeo MBR normal, salvo que puede especificar diferentes tamaños de imagen para las secuencias de vídeo en la exclusión mutua.
+El SDK Windows Media Format admite la codificación MBR para secuencias de vídeo y audio. Además, puede crear un tipo especial de codificación MBR denominada codificación MBR de tamaño múltiple de vídeo. El vídeo MBR de varios tamaños de vídeo funciona de forma idéntica al vídeo MBR normal, salvo que puede especificar diferentes tamaños de imagen para las secuencias de vídeo en la exclusión mutua.
 
-En el ejemplo siguiente se muestra cómo configurar un perfil para vídeo de MBR con varios tamaños de vídeo. Crea un nuevo perfil con tres secuencias de vídeo de diferentes velocidades de bits y tamaños, y las incluye en un objeto de exclusión mutua.
+En el ejemplo siguiente se muestra cómo configurar un perfil para vídeo de MBR con varios tamaños de vídeo. Crea un nuevo perfil con tres secuencias de vídeo de diferentes velocidades de bits y tamaños, e incluye en un objeto de exclusión mutua.
 
 
 ```C++
@@ -149,13 +149,13 @@ pProfileMgr = NULL;
 [**IWMMediaProps (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops)
 </dt> <dt>
 
-[**IWMMutualExclusion (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmutualexclusion)
+[**Interfaz IWMMutualExclusion**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmutualexclusion)
 </dt> <dt>
 
 [**IWMProfile (interfaz)**](iwmprofile.md)
 </dt> <dt>
 
-[**IWMStreamConfig (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig)
+[**Interfaz IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig)
 </dt> <dt>
 
 [**Uso de la exclusión mutua**](using-mutual-exclusion.md)

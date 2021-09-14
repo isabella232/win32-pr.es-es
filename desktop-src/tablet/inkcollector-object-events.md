@@ -1,19 +1,19 @@
 ---
-description: 'En la tabla siguiente se describen los subprocesos en los que se pueden realizar los eventos de objeto InkCollector. EventThreadsCursorButtonDownFires en el subproceso de entrada de lápiz. CursorButtonUpFires en el subproceso de entrada de lápiz. CursorDownFires en el subproceso de entrada de lápiz. CursorInRangeFires en el subproceso de entrada de lápiz. CursorOutOfRangeFires en el subproceso de entrada de lápiz. Evento DoubleClick (solo Automation). Se ejecuta en el subproceso de la interfaz de usuario (UI) de la aplicación. DoubleClick (solo biblioteca administrada) se ejecuta en el subproceso de interfaz de usuario de la aplicación. GestureFires en el subproceso de entrada de lápiz. MouseDownFires en el subproceso de interfaz de usuario de la aplicación. MouseMoveFires en el subproceso de interfaz de usuario de la aplicación. MouseUpFires en el subproceso de interfaz de usuario de la aplicación. MouseWheelFires en el subproceso de interfaz de usuario de la aplicación. NewInAirPacketsFires en el subproceso de entrada de lápiz. NewPacketsFires en el subproceso de entrada de lápiz. StrokeFires en la entrada thread.SystemGestureFires en el subproceso de entrada de lápiz. TabletAddedFires en el subproceso de entrada de lápiz. TabletRemovedFires en el subproceso de entrada de lápiz. '
+description: 'En la tabla siguiente se describen los subprocesos en los que se pueden establecer los eventos de objeto InkCollector. EventThreadsCursorButtonDownFires en el subproceso de entrada de lápiz. CursorButtonUpFires en el subproceso de entrada de lápiz. CursorDownFires en el subproceso de entrada de lápiz. CursorInRangeFires en el subproceso de entrada de lápiz. CursorOutOfRangeFires en el subproceso de entrada de lápiz. Evento DoubleClick (solo Automation). Se ejecuta en el subproceso de la interfaz de usuario (UI) de la aplicación. DoubleClick (solo biblioteca administrada) se ejecuta en el subproceso de interfaz de usuario de la aplicación. GestureFires en el subproceso de entrada de lápiz. MouseDownFires en el subproceso de interfaz de usuario de la aplicación. MouseMoveFires en el subproceso de interfaz de usuario de la aplicación. MouseUpFires en el subproceso de interfaz de usuario de la aplicación. MouseWheelFires en el subproceso de interfaz de usuario de la aplicación. NewInAirPacketsFires en el subproceso de entrada de lápiz. NewPacketsFires en el subproceso de entrada de lápiz. StrokeFires en el subproceso de entrada de lápiz. SystemGestureFires en el subproceso de entrada de lápiz. Tableta AgregadaFires en el subproceso de entrada de lápiz. TabletRemovedFires en el subproceso de entrada de lápiz. '
 ms.assetid: 39a1c868-eb7e-4139-806d-27d86175cbcf
 title: Eventos de objeto InkCollector
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a543bd1a461bfbc88382255accf1b5bfdf628886699093d8bd930f1b349c2461
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73b5d0031c6a471f3958efa5a8a1f95a5150e8eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119939435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251900"
 ---
 # <a name="inkcollector-object-events"></a>Eventos de objeto InkCollector
 
-En la tabla siguiente se describen los subprocesos en los que se pueden realizar los eventos de objeto [**InkCollector.**](inkcollector-class.md)
+En la tabla siguiente se describen los subprocesos en los que se pueden establecer los eventos de objeto [**InkCollector.**](inkcollector-class.md)
 
 
 
