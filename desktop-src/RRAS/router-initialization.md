@@ -6,12 +6,12 @@ keywords:
 - enrutadores RRAS, inicialización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf3cbb55e4488da750a0fb8e8f813a5a5116a1d9e1caadad81eaefe4e12a79eb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6f4d45c10ef7b44b6dfe9d2d84149c77c81c5752
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273572"
 ---
 # <a name="router-initialization"></a>Inicialización del enrutador
 

@@ -4,12 +4,12 @@ ms.assetid: c90c9247-825f-4602-bb16-809969703a98
 title: Propiedad AVEncStatAudioAverageBPS (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47b43bf329d1d55b41c7849fee7855d322f3ab1622bca013ca5e96cfa4f519db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a76bcf1ca7b3ee74ae406ebd71f85988a4d13313
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161812"
 ---
 # <a name="avencstataudioaveragebps-property"></a>Propiedad AVEncStatAudioAverageBPS
 
@@ -25,7 +25,7 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncStatAudioAverageBPS**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad está disponible una vez completada la codificación.
 
@@ -37,13 +37,13 @@ Esta propiedad solo se aplica a la codificación de velocidad de bits variable b
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
-| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP de 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

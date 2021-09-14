@@ -1,23 +1,23 @@
 ---
-description: La clase \_ Cim CacheMemory expone los métodos siguientes.
+description: La clase \_ CacheMemory de CIM expone los métodos siguientes.
 ms.assetid: FFC5CDE3-A0B3-4967-8E9B-07A7B1C3DB92
 ms.tgt_platform: multiple
 title: CIM_CacheMemory métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03ee3d0c5b609d47ee58014735a1d9ce41743dcb3b41cf5a46b3e3ccdb6f4648
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9208658dc24d4260cef5d92055c41bc3b8277c9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119700985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273516"
 ---
 # <a name="cim_cachememory-methods"></a>\_Métodos CacheMemory de CIM
 
-La [**clase \_ Cim CacheMemory**](cim-cachememory.md) expone los métodos siguientes.
+La [**clase \_ CacheMemory**](cim-cachememory.md) de CIM expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

@@ -6,12 +6,12 @@ keywords:
 - efecto de rotación de matiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 531ab9b1649db96bc5ee100df98ed10b4021b506e3ad71bb426778655348b2df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 525dbe8fc94377080fbae34b80252c84c05073ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163125"
 ---
 # <a name="hue-rotatation-effect"></a>Efecto de rotación de matiz
 
@@ -60,7 +60,7 @@ El efecto calcula una matriz de colores en función del ángulo de rotación (*?
 
 ![cálculos de rotación de matiz](images/hue-formula.png)
 
-La matriz creada depende solo del ángulo de rotación. Puede usar el efecto [de matriz de](color-matrix.md) colores si necesita una matriz específica.
+La matriz creada depende solo del ángulo de rotación. Puede usar el efecto de [matriz de](color-matrix.md) colores si necesita una matriz específica.
 
 ## <a name="effect-properties"></a>Propiedades de efecto
 
@@ -82,11 +82,11 @@ El tamaño del mapa de bits de salida es el mismo que el tamaño del mapa de bit
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

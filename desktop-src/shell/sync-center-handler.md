@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 127426365ff0f2c7bbada34f87cc7e2aec8916a2dbe4038978835aa61b179cf6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11185aa5976c27b7af95787b081e1eaacd99c8e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252105"
 ---
 # <a name="developing-a-windows-sync-center-handler"></a>Desarrollar un controlador de Windows Centro de sincronización de datos
 
@@ -28,7 +28,7 @@ En este tema se proporciona un examen paso a paso de los requisitos para compila
 
 Windows XP proporcionó un [Administrador de sincronización](syncmgr-start-page.md) (mobsync.exe). Muchos dispositivos, como reproductores mp3, teléfonos móviles y cámaras, también proporcionaban sus propias interfaces de sincronización en lugar de usar synchronization Manager. Esto dio lugar a una experiencia de usuario incoherente y no descentralizada.
 
-La nueva Centro de sincronización característica proporcionada en Windows Vista tiene varias ventajas con respecto al administrador de sincronización anterior.
+La nueva Centro de sincronización que se proporciona en Windows Vista tiene varias ventajas con respecto al administrador de sincronización anterior.
 
 -   Mejor detectabilidad
 -   Menos necesidad de acción directa del usuario

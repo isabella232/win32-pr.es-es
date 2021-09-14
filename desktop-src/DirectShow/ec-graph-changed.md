@@ -1,19 +1,19 @@
 ---
-description: El gráfico de filtros ha cambiado.
+description: El gráfico de filtro ha cambiado.
 ms.assetid: 621591d2-74ac-4b1f-b065-247582b05efc
 title: EC_GRAPH_CHANGED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bd0289be1f0c44dfb9d5897f3fe8678d4bc98288df4beb677c022d834ec1928
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 13637d3a72280dba1db177e7fb1936177fbb299a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119651655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161551"
 ---
-# <a name="ec_graph_changed"></a>EC \_ GRAPH \_ CHANGED
+# <a name="ec_graph_changed"></a>EC \_ GRAPH \_ HA CAMBIADO
 
-El gráfico de filtros ha cambiado.
+El gráfico de filtro ha cambiado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este código de evento está pensado para la depuración. No se envía para todos los cambios del grafo.
 
@@ -51,7 +51,7 @@ Este código de evento está pensado para la depuración. No se envía para todo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

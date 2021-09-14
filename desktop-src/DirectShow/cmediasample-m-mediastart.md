@@ -1,7 +1,7 @@
 ---
-description: Hora de inicio de los medios.
+description: Hora de inicio del medio.
 ms.assetid: 04ae3862-00b1-4c99-b535-756067cdf4c4
-title: CMediaSample::m_MediaStart miembro (Amfilter.h)
+title: Miembro CMediaSample::m_MediaStart (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5c564b85843b93364daf55f31f17e33ef4e7d60a1653dd4fa70cf0fb59b62034
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6878f24a13c660eb5fb0560152e334547a248036
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161595"
 ---
 # <a name="cmediasamplem_mediastart-member"></a>Miembro De MediaStart de CMediaSample::m \_
 
-Hora de inicio de los medios.
+Hora de inicio del medio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ LONGLONG m_MediaStart;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

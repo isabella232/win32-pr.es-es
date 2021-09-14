@@ -1,17 +1,17 @@
 ---
-title: Invert effect
+title: Invertir efecto
 description: Invierte los colores de una imagen.
 ms.assetid: aa859cd4-0fb0-9902-3add-748d0cca63ce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd718d5a6f23dc1e1ab0bae0cbe9b39411379af43e56097aee106409826c635
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ba6a39a273417cb479f2f99a1e08cf20c16e1398
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120076724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162725"
 ---
-# <a name="invert-effect"></a>Invert effect
+# <a name="invert-effect"></a>Invertir efecto
 
 Invierte los colores de una imagen.
 
@@ -34,11 +34,11 @@ Este efecto no tiene propiedades.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 

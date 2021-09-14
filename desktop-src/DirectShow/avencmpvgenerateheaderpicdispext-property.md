@@ -1,19 +1,19 @@
 ---
-description: Especifica si el codificador genera encabezados de extensión de visualización de imagen. Esta propiedad se aplica a los codificadores de vídeo MPEG.
+description: Especifica si el codificador genera encabezados de extensión para mostrar imágenes. Esta propiedad se aplica a los codificadores de vídeo MPEG.
 ms.assetid: 01d616ff-e1e4-4cad-9145-c01181e4f8b8
 title: Propiedad AVEncMPVGenerateHeaderPicDispExt (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ff031a60c9e1dfd2b6ef59da0241f14386c063104974be8b85b9b1a0e620d3b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b064082895f890d2c68174f55ed7c03107f78cac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119276185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161853"
 ---
 # <a name="avencmpvgenerateheaderpicdispext-property"></a>Propiedad AVEncMPVGenerateHeaderPicDispExt
 
-Especifica si el codificador genera encabezados de extensión de visualización de imagen. Esta propiedad se aplica a los codificadores de vídeo MPEG.
+Especifica si el codificador genera encabezados de extensión para mostrar imágenes. Esta propiedad se aplica a los codificadores de vídeo MPEG.
 
 Esta propiedad es de lectura y escritura.
 
@@ -25,9 +25,9 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncMPVGenerateHeaderPicDispExt**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el valor es **VARIANT \_ TRUE,** el codificador genera encabezados de extensión de visualización de imagen.
+Si el valor es **VARIANT \_ TRUE,** el codificador genera encabezados de extensión para mostrar imágenes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,13 +35,13 @@ Si el valor es **VARIANT \_ TRUE,** el codificador genera encabezados de extensi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

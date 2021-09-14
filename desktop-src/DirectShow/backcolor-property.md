@@ -4,12 +4,12 @@ ms.assetid: 51576836-c648-4268-8475-0312dbd60963
 title: Propiedad BackColor (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a48f192e3f067b4ae3093c1541702b1bedbf645df5367a254fd2b5866a7e51da
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 37adb625080ca284c168c7286982e980f8919f3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120084565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161702"
 ---
 # <a name="backcolor-property-directshow"></a>Propiedad BackColor (DirectShow)
 
@@ -28,9 +28,9 @@ La propiedad establece o recupera el color de las barras que aparecen alrededor 
 
 Devuelve un valor entero que representa los valores RGB del color de fondo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta propiedad es de lectura y escritura con un valor predeterminado de off-black (0x100010).
+Esta propiedad es de lectura y escritura con un valor predeterminado de desactivado (0x100010).
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 6c77c8f6-289e-4130-b56a-e1f0bcc40f3e
 title: DSP de captura de voz (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d05eb6d3f97f748d5c82d8fa566ee25a3a01ce225ab76e84d73f0a86b132afb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e48c3b3194873008f45ef80ef3a21dad416158b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252489"
 ---
 # <a name="voice-capture-dsp"></a>DSP de captura de voz
 
@@ -39,7 +39,7 @@ CLSID \_ CWMAudioAEC
 | [LONGITUD DE ECO DE MFPKEY \_ WMAAECMA \_ FEATR \_ \_](mfpkey-wmaaecma-featr-echo-lengthproperty.md)       | Especifica la duración del eco que el algoritmo de cancelación de eco acústico (AEC) puede controlar.    |
 | [TAMAÑO DEL MARCO MFPKEY \_ WMAAECMA \_ FEATR \_ \_](mfpkey-wmaaecma-featr-frame-sizeproperty.md)         | Especifica el tamaño del marco de audio.                                                                   |
 | [MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ BEAM](mfpkey-wmaaecma-featr-micarr-beamproperty.md)       | Especifica qué haz usa el DMO para el procesamiento de la matriz de micrófonos.                                |
-| [MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ MODE](mfpkey-wmaaecma-featr-micarr-modeproperty.md)       | Especifica cómo el DMO el procesamiento de la matriz de micrófonos.                                       |
+| [MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ MODE](mfpkey-wmaaecma-featr-micarr-modeproperty.md)       | Especifica cómo el usuario DMO procesamiento de la matriz de micrófonos.                                       |
 | [MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ PREPROC](mfpkey-wmaaecma-featr-micarr-preprocproperty.md) | Especifica si el DMO preprocesamiento de la matriz de micrófonos.                                |
 | [RELLENO DE RUIDO DE MFPKEY \_ WMAAECMA \_ FEATR \_ \_](mfpkey-wmaaecma-featr-noise-fillproperty.md)         | Especifica si el DMO realiza el relleno de ruido.                                                 |
 | [MFPKEY \_ WMAAECMA \_ FEATR \_ NS](mfpkey-wmaaecma-featr-nsproperty.md)                          | Especifica si el DMO realiza la supresión de ruido.                                             |
@@ -55,9 +55,9 @@ CLSID \_ CWMAudioAEC
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-A diferencia de los otros DSP, el objeto de captura de voz encapsula varios DSP en un solo objeto y el objeto es un objeto DMO solo (no implementa [**LATRANSFORMTRANSFORM**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)). La captura de DMO incluye los siguientes componentes de DSP:
+A diferencia de los otros DSP, el objeto de captura de voz encapsula varios DSP en un solo objeto y el objeto es un objeto DMO solo (no implementa [**LATRANSFORMDETRANSFORM**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)). La captura de DMO incluye los siguientes componentes de DSP:
 
 -   Cancelación de eco acústico (AEC)
 -   Procesamiento de la matriz de micrófonos
@@ -67,9 +67,9 @@ A diferencia de los otros DSP, el objeto de captura de voz encapsula varios DSP 
 
 Las aplicaciones pueden activar y desactivar cada componente individualmente.
 
-La captura de DMO admite dos modos de funcionamiento, el *modo de* filtro y el *modo de* origen. En el modo de filtro, la aplicación envía muestras de audio desde el micrófono y desde la línea del hablante al DMO, y el DMO genera la salida.
+La captura de DMO admite dos modos de operación, *el modo de* filtro y el modo *de* origen. En el modo de filtro, la aplicación envía muestras de audio desde el micrófono y desde la línea del hablante al DMO, y el DMO genera la salida.
 
-En el modo de origen, la aplicación no necesita entregar ejemplos a la DMO. En su lugar, el DMO administra todas las operaciones en los dispositivos de audio, incluida la inicialización de los dispositivos, la captura y sincronización de las secuencias de audio, el cálculo de marcas de tiempo y la recuperación de la geometría de la matriz de micrófonos. Con el modo de origen, la aplicación simplemente configura el DMO y la salida del DMO es una señal de micrófono limpia y procesada. El modo de origen es significativamente más fácil de usar que el modo de filtro y se recomienda para la mayoría de las aplicaciones.
+En el modo de origen, la aplicación no necesita entregar ejemplos al DMO. En su lugar, el DMO administra todas las operaciones en los dispositivos de audio, incluida la inicialización de los dispositivos, la captura y sincronización de las secuencias de audio, el cálculo de marcas de tiempo y la recuperación de la geometría de la matriz de micrófonos. Con el modo de origen, la aplicación simplemente configura el DMO y la salida del DMO es una señal de micrófono limpia y procesada. El modo de origen es significativamente más fácil de usar que el modo de filtro y se recomienda para la mayoría de las aplicaciones.
 
 Actualmente, la captura de DMO solo admite la cancelación de eco acústico de canal único (AEC), por lo que la salida de la línea del hablante debe ser de un solo canal. Si el procesamiento de la matriz de micrófonos está deshabilitado, la entrada multicanal se plega a un canal para el procesamiento de AEC. Si el procesamiento de la matriz de micrófonos y el procesamiento de AEC están habilitados, AEC se realiza en cada elemento de micrófono antes del procesamiento de la matriz de micrófonos.
 
@@ -83,7 +83,7 @@ Para usar el DSP de captura de voz, realice los pasos siguientes.
 
 ### <a name="1-initialize-the-dmo"></a>1. Inicialice el DMO
 
-Cree la captura de DMO mediante una llamada [**a CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con **CLSID \_ CLSID CWMAudioAEC**. El DSDP de captura de voz expone solo las interfaces [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) e [**IPropertyStore,**](/windows/win32/api/propsys/nn-propsys-ipropertystore) por lo que solo se puede usar como DMO.
+Cree la captura de DMO mediante una llamada [**a CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con **CLSID \_ CLSID CWMAudioAEC**. El DSDP de captura de voz solo expone las interfaces [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) e [**IPropertyStore,**](/windows/win32/api/propsys/nn-propsys-ipropertystore) por lo que solo se puede usar como DMO.
 
 El DMO predeterminado es el modo de origen. Para seleccionar el modo de filtro, establezca la propiedad [ \_ MFPKEY WMAAECMA \_ DMO SOURCE \_ \_ MODE](mfpkey-wmaaecma-dmo-source-modeproperty.md) en **VARIANT \_ FALSE.**
 
@@ -151,7 +151,7 @@ Para obtener los datos de salida del DSP, realice los pasos siguientes:
 1.  Cree un objeto de búfer para contener los datos de salida. El objeto de búfer debe implementar la [**interfaz IMediaBuffer.**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediabuffer) El tamaño del búfer depende de los requisitos de la aplicación. La asignación de un búfer mayor puede reducir las posibilidades de que se produzcan problemas.
 2.  Declare una [**DMO \_ OUTPUT DATA \_ \_ BUFFER**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_output_data_buffer) y establezca el **miembro pBuffer** para que apunte al objeto de búfer.
 3.  Pase la [**DMO \_ OUTPUT DATA \_ \_ BUFFER**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_output_data_buffer) al método [**IMediaObject::P rocessOutput.**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processoutput)
-4.  Continúe con la llamada a este método mientras el DMO tenga datos de salida. El DSP indica que tiene más salida estableciendo la marca **\_ DMO OUTPUT DATA \_ \_ BUFFERF \_ INCOMPLETE** en el miembro **dwStatus** de la estructura DMO [**OUTPUT DATA \_ \_ \_ BUFFER.**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_output_data_buffer)
+4.  Continúe con la llamada a este método mientras el DMO tenga datos de salida. El DSP indica que tiene más salida estableciendo la marca **\_ DMO OUTPUT DATA \_ \_ BUFFERF \_ INCOMPLETE** en el miembro **dwStatus** de la estructura [**DMO OUTPUT DATA \_ \_ \_ BUFFER.**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_output_data_buffer)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -161,7 +161,7 @@ Para obtener los datos de salida del DSP, realice los pasos siguientes:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Mfwmaaec.dll</dt> </dl> |
 
 

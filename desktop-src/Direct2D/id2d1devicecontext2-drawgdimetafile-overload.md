@@ -1,6 +1,6 @@
 ---
-title: Métodos de DrawGdiMetafile id2D1DeviceContext2
-description: Dibuje un metarchivo en el contexto del dispositivo. | Métodos de DrawGdiMetafile id2D1DeviceContext2
+title: Métodos ID2D1DeviceContext2 DrawGdiMetafile
+description: Dibuje un metarchivo en el contexto del dispositivo. | Métodos ID2D1DeviceContext2 DrawGdiMetafile
 ms.assetid: c093da19-9def-115c-9e2f-d8f4d98aee92
 keywords:
 - Métodos DrawGdiMetafile de Direct2D
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 39fe281d367a3718d72b66324b608591fe4cf7359f833dec877d5725afdbc040
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8b4f8a0e9ff5e63c08ff3911312a5e62f16bd0b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119768695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163050"
 ---
 # <a name="id2d1devicecontext2drawgdimetafile-methods"></a>Métodos ID2D1DeviceContext2::D rawGdiMetafile
 
@@ -35,7 +35,7 @@ Dibuje un metarchivo en el contexto del dispositivo.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

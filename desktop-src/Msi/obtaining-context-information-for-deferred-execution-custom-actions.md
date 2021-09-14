@@ -4,12 +4,12 @@ ms.assetid: 13174c5d-c810-4b5d-9d1e-60ed30b8c44d
 title: Obtener información de contexto para acciones personalizadas de ejecución aplazada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76f9016a37eb97c99dc94840617a91ba17da68a0409d6130c15cb17078c60d11
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a13cd956509a5b8a4c92e0a53bfa455154a59bcc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118943278"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251079"
 ---
 # <a name="obtaining-context-information-for-deferred-execution-custom-actions"></a>Obtener información de contexto para acciones personalizadas de ejecución aplazada
 
@@ -21,39 +21,39 @@ Las acciones personalizadas de ejecución aplazada están restringidas a llamar 
 
 | Función                                       | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MsiGetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msigetpropertya)       | Admite un conjunto limitado de propiedades cuando se usa con acciones personalizadas [de](deferred-execution-custom-actions.md)ejecución diferida: la propiedad CustomActionData, la propiedad [**ProductCode**](productcode.md) y [**la propiedad UserSID.**](usersid.md) [Las acciones personalizadas de](commit-custom-actions.md) confirmación no [**pueden usar la función MsiGetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msigetpropertya) para obtener la [**propiedad ProductCode.**](productcode.md) Las acciones personalizadas de confirmación pueden usar la propiedad CustomActionData para obtener el código de producto.<br/> |
+| [**MsiGetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msigetpropertya)       | Admite un conjunto limitado de propiedades cuando se usa con acciones personalizadas [de](deferred-execution-custom-actions.md)ejecución aplazada: la propiedad CustomActionData, la propiedad [**ProductCode**](productcode.md) y [**la propiedad UserSID.**](usersid.md) [Las acciones personalizadas de](commit-custom-actions.md) confirmación no [**pueden usar la función MsiGetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msigetpropertya) para obtener la [**propiedad ProductCode.**](productcode.md) Las acciones personalizadas de confirmación pueden usar la propiedad CustomActionData para obtener el código del producto.<br/> |
 | [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda)     | Admite un conjunto limitado de propiedades cuando se usa con acciones personalizadas de ejecución [diferida:](deferred-execution-custom-actions.md)las propiedades CustomActionData y ProductCode.                                                                                                                                                                                                                                                                                                                                                      |
-| [**MsiGetMode**](/windows/desktop/api/Msiquery/nf-msiquery-msigetmode)               | Cuando se llama desde acciones [](commit-custom-actions.md)personalizadas de ejecución diferida [,](deferred-execution-custom-actions.md)confirmar acciones personalizadas o revertir acciones personalizadas [,](rollback-custom-actions.md) [**MsiGetMode**](/windows/desktop/api/Msiquery/nf-msiquery-msigetmode) devuelve True o False cuando se solicita para comprobar los parámetros de modo MSIRUNMODE \_ SCHEDULED, MSIRUNMODE COMMIT o \_ MSIRUNMODE \_ ROLLBACK. Las solicitudes para comprobar cualquier otro parámetro de modo de ejecución de una acción personalizada diferida, de confirmación o de reversión devuelven False.<br/>                       |
-| [**MsiGetLanguage**](/windows/desktop/api/Msiquery/nf-msiquery-msigetlanguage)       | Identificador de idioma numérico del producto actual. [Las acciones personalizadas de](commit-custom-actions.md) confirmación no pueden usar la función [**MsiGetLanguage.**](/windows/desktop/api/Msiquery/nf-msiquery-msigetlanguage) Las acciones personalizadas de confirmación pueden usar la propiedad CustomActionData para obtener el identificador numérico del idioma.<br/>                                                                                                                                                                                                                                                           |
-| [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) | Procesa los mensajes de error o progreso de la acción personalizada.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**MsiGetMode**](/windows/desktop/api/Msiquery/nf-msiquery-msigetmode)               | Cuando se llama desde acciones [](commit-custom-actions.md)personalizadas de ejecución aplazada, [](deferred-execution-custom-actions.md)acciones personalizadas de confirmación o acciones personalizadas de reversión, [](rollback-custom-actions.md) [**MsiGetMode**](/windows/desktop/api/Msiquery/nf-msiquery-msigetmode) devuelve True o False cuando se solicita que compruebe los parámetros de modo MSIRUNMODE \_ SCHEDULED, MSIRUNMODE COMMIT o \_ MSIRUNMODE \_ ROLLBACK. Las solicitudes para comprobar cualquier otro parámetro de modo de ejecución de una acción personalizada diferida, de confirmación o de reversión devuelven False.<br/>                       |
+| [**MsiGetLanguage**](/windows/desktop/api/Msiquery/nf-msiquery-msigetlanguage)       | Identificador de idioma numérico del producto actual. [Las acciones personalizadas de](commit-custom-actions.md) confirmación no pueden [**usar la función MsiGetLanguage.**](/windows/desktop/api/Msiquery/nf-msiquery-msigetlanguage) Las acciones personalizadas de confirmación pueden usar la propiedad CustomActionData para obtener el identificador numérico del idioma.<br/>                                                                                                                                                                                                                                                           |
+| [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) | Procesa mensajes de error o de progreso de la acción personalizada.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 
 
  
 
-Una acción personalizada escrita en JScript o VBScript requiere la instalación del [**objeto Session.**](session-object.md) Es del tipo **Objeto de sesión** y el instalador lo adjunta al script con el nombre "Session". Dado que es posible que el objeto **Session** no exista durante una reversión de la instalación, una acción personalizada diferida escrita en script debe usar uno de los métodos o propiedades siguientes del objeto **Session** para recuperar su contexto.
+Una acción personalizada escrita en JScript o VBScript requiere el objeto [**Session de**](session-object.md) instalación. Es del tipo **Session Object** y el instalador lo asocia al script con el nombre "Session". Dado que es posible que el objeto **Session** no exista durante una reversión de instalación, una acción personalizada diferida escrita en script debe usar uno de los métodos o propiedades siguientes del objeto **Session** para recuperar su contexto.
 
 
 
 | Nombre                                                           | Descripción                                                                                                                        |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [**Mode (propiedad)**](session-mode.md)                          | Devuelve True solo para MSIRUNMODE \_ SCHEDULED.                                                                                       |
+| [**Propiedad Mode**](session-mode.md)                          | Devuelve True solo para MSIRUNMODE \_ SCHEDULED.                                                                                       |
 | [**Propiedad Property (objeto Session)**](session-session.md)  | Devuelve la propiedad CustomActionData, [**la propiedad ProductCode**](productcode.md) o [**la propiedad UserSID.**](usersid.md)        |
 | [**Propiedad Language (objeto Session)**](session-language.md) | Devuelve el identificador de idioma numérico de la sesión de instalación.                                                                           |
 | [**Message (método)**](session-message.md)                      | Se llama para controlar los errores y el progreso.                                                                                              |
-| [**Propiedad installer**](session-installer.md)                | Devuelve el objeto primario, que se usa para funciones que no son de sesión, como el acceso al Registro y la administración de configuración del instalador. |
+| [**Propiedad Installer**](session-installer.md)                | Devuelve el objeto primario, que se usa para funciones que no son de sesión, como el acceso al Registro y la administración de configuración del instalador. |
 
 
 
  
 
-Los valores de propiedad que se establecen en el momento en que se procesa la secuencia de instalación en el script pueden no estar disponibles en el momento de la ejecución del script. Solo el siguiente conjunto limitado de propiedades siempre es accesible para las acciones personalizadas durante la ejecución del script.
+Los valores de propiedad que se establecen en el momento en que la secuencia de instalación se procesa en script pueden no estar disponibles en el momento de la ejecución del script. Solo el siguiente conjunto limitado de propiedades siempre es accesible para las acciones personalizadas durante la ejecución del script.
 
 
 
 | Nombre de propiedad                      | Descripción                                                                                                                                                                                                     |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Customactiondata                   | La acción personalizada value at time se procesa en la tabla de secuencia. La propiedad CustomActionData solo está disponible para acciones personalizadas de ejecución aplazada. Las acciones personalizadas inmediatas no tienen acceso a esta propiedad. |
+| Customactiondata                   | El valor en el momento en que la acción personalizada se procesa en la tabla de secuencia. La propiedad CustomActionData solo está disponible para acciones personalizadas de ejecución aplazada. Las acciones personalizadas inmediatas no tienen acceso a esta propiedad. |
 | [**ProductCode**](productcode.md) | Código único para el producto, una [cadena GUID.](guid.md)                                                                                                                                                         |
 | [**UserSID**](usersid.md)         | Establecido por el instalador en el identificador de seguridad (SID) del usuario.                                                                                                                                                   |
 
@@ -65,7 +65,7 @@ Si la acción personalizada de ejecución diferida requiere otros datos de propi
 
 **Para escribir el valor de una propiedad en el script de instalación para su uso durante una acción personalizada de ejecución aplazada**
 
-1.  Inserte una pequeña acción personalizada en la secuencia de instalación que establece la propiedad de interés en una propiedad con el mismo nombre que la acción personalizada de ejecución diferida. Por ejemplo, si la clave principal de la acción personalizada de ejecución diferida es "MyAction", establezca una propiedad denominada "MyAction" en la propiedad X que debe recuperar. Debe establecer la propiedad "MyAction" en la secuencia de instalación antes de la acción personalizada "MyAction". Aunque cualquier tipo de acción personalizada puede establecer los datos de contexto, el método más sencillo es usar una acción personalizada de asignación de propiedades (por ejemplo, Tipo de [acción personalizada 51](custom-action-type-51.md)).
+1.  Inserte una pequeña acción personalizada en la secuencia de instalación que establece la propiedad de interés en una propiedad con el mismo nombre que la acción personalizada de ejecución aplazada. Por ejemplo, si la clave principal de la acción personalizada de ejecución diferida es "MyAction", establezca una propiedad denominada "MyAction" en la propiedad X que necesita recuperar. Debe establecer la propiedad "MyAction" en la secuencia de instalación antes de la acción personalizada "MyAction". Aunque cualquier tipo de acción personalizada puede establecer los datos de contexto, el método más sencillo es usar una acción personalizada de asignación de propiedades (por ejemplo, Tipo de [acción personalizada 51).](custom-action-type-51.md)
 2.  En el momento en que se procesa la secuencia de instalación, el instalador escribirá el valor de la propiedad X en el script de ejecución como el valor de la propiedad CustomActionData.
 
 ## <a name="related-topics"></a>Temas relacionados
@@ -78,7 +78,7 @@ Si la acción personalizada de ejecución diferida requiere otros datos de propi
 [Utilizar propiedades](using-properties.md)
 </dt> <dt>
 
-[Referencia de propiedades](property-reference.md)
+[Referencia de propiedad](property-reference.md)
 </dt> </dl>
 
  

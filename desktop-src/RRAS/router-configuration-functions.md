@@ -1,19 +1,19 @@
 ---
 title: Funciones de configuración del enrutador
-description: Use las siguientes funciones al desarrollar software para configurar Windows enrutadores.
+description: Use las siguientes funciones al desarrollar software para configurar enrutadores Windows cliente.
 ms.assetid: fb65885c-7c3b-4c90-9516-388f09703c90
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf242f28fd7e398d05076dbdb7f023be9d4b1b1f9d540117efea5917a2c43b90
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 09ccc9ffafc257112a4692d20a47dd37a43c4204
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273596"
 ---
 # <a name="router-configuration-functions"></a>Funciones de configuración del enrutador
 
-Use las siguientes funciones al desarrollar software para configurar Windows enrutadores.
+Use las siguientes funciones al desarrollar software para configurar enrutadores Windows cliente.
 
 -   [**MprConfigBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfigbufferfree)
 -   [**MprConfigFilterGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfigfiltergetinfo)

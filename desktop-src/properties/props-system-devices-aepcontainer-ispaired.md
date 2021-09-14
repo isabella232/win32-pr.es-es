@@ -4,12 +4,12 @@ ms.assetid: 4f2a588c-d1f1-4249-946f-ac989826db2d
 title: System.Devices.AepContainer.IsPaired
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abc1093cfdc99f24a818fc77914c0cbabb6a3a09816922c5955da2d89c727c64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b01427ab7e0971605acbf83fdf4bcdc9343d2c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119598975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252213"
 ---
 # <a name="systemdevicesaepcontainerispaired"></a>System.Devices.AepContainer.IsPaired
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

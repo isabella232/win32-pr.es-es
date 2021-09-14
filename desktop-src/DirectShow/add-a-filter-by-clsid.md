@@ -4,12 +4,12 @@ ms.assetid: b15cf324-5b9b-41da-a8cf-87071aaf3b60
 title: Agregar un filtro por CLSID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed8306613e5a73ad863b3c16b04529e3e0def12b76fb4e27685db9cb442b6c80
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f880ab1cb3b88fbe6d889acdd192bba341ce2acf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162409"
 ---
 # <a name="add-a-filter-by-clsid"></a>Agregar un filtro por CLSID
 
@@ -59,7 +59,7 @@ done:
 
  
 
-La función llama [**a CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el filtro y, a continuación, llama a [**IFilterGraph::AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) para agregar el filtro al gráfico. En el ejemplo de código siguiente se usa esta función para agregar el [filtro AVI Mux](avi-mux-filter.md) al gráfico:
+La función llama [**a CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el filtro y, a continuación, llama a [**IFilterGraph::AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) para agregar el filtro al gráfico. En el ejemplo de código siguiente se usa esta función para agregar el filtro [Mux avi](avi-mux-filter.md) al gráfico:
 
 
 ```C++
@@ -74,13 +74,13 @@ if (SUCCEEDED(hr))
 
 
 
-Tenga en cuenta que algunos filtros no se pueden crear [**con CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance). Este suele ser el caso de los filtros que administran otros componentes de software. Por ejemplo, el filtro [avi Deserción es](avi-compressor-filter.md) un contenedor para códecs de vídeo y el filtro captura de vídeo [wdm](wdm-video-capture-filter.md) es un contenedor para los controladores de captura wdm. Estos filtros deben crearse mediante el enumerador [de dispositivos del sistema](system-device-enumerator.md) o el [asignador de filtros.](filter-mapper.md) Para obtener más información, [vea Enumerar dispositivos y filtros.](enumerating-devices-and-filters.md)
+Tenga en cuenta que algunos filtros no se pueden crear [**con CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance). Esto suele ser el caso de los filtros que administran otros componentes de software. Por ejemplo, el filtro [Deserción avi es](avi-compressor-filter.md) un contenedor para códecs de vídeo y el filtro captura de vídeo [de WDM](wdm-video-capture-filter.md) es un contenedor para los controladores de captura de WDM. Estos filtros deben crearse mediante el enumerador [de dispositivos del sistema](system-device-enumerator.md) o el [asignador de filtros.](filter-mapper.md) Para obtener más información, [vea Enumerar dispositivos y filtros.](enumerating-devices-and-filters.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Técnicas Graph-Building general](general-graph-building-techniques.md)
+[Técnicas de Graph-Building generales](general-graph-building-techniques.md)
 </dt> </dl>
 
  

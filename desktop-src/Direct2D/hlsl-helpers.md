@@ -4,12 +4,12 @@ description: Para ayudar a los autores de efectos a escribir sombreadores de pí
 ms.assetid: 5D0BB99E-7C77-4D45-82E6-F038E4B752A4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 608ae4b47b96616f8818cd45b466c02a7b09b2171383fbe82ecbe055ed0915b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec8f43447c16d93ef9e1839ac319c761b975222a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163225"
 ---
 # <a name="hlsl-helpers"></a>Asistentes hlsl
 
@@ -31,7 +31,7 @@ Las directivas de preprocesador son necesarias para comunicar información sobre
 -   `D2D_INPUT<N>_SIMPLE` : declara la enésima entrada para usar el muestreo simple. Si no se define, la enésima entrada tiene como valor predeterminado complejo. La definición de este valor es opcional.
 -   `D2D_INPUT<N>_COMPLEX` : declara la enésima entrada para usar el muestreo complejo. Si no se define, la enésima entrada tiene como valor predeterminado complejo. La definición de este valor es opcional.
 -   `D2D_REQUIRES_SCENE_POSITION`: indica que la función de sombreador llama a métodos auxiliares que usan el valor de posición de la escena (es decir, la función auxiliar [D2DGetScenePosition).](d2dgetsceneposition.md) Este parámetro solo debe incluirse cuando sea necesario, ya que solo una función por sombreador vinculado puede utilizar este parámetro. La definición de este valor es opcional.
--   `D2D_CUSTOM_ENTRY` : indica que la función de sombreador de píxeles consume la salida de un sombreador de vértices personalizado y, por tanto, declarará sus parámetros de entrada. Todas las entradas personalizadas del sombreador de vértices usan un muestreo complejo y no pueden consumir la salida de otra función de sombreador (es decir, solo se pueden vincular posteriormente). La definición de este valor es opcional.
+-   `D2D_CUSTOM_ENTRY` : indica que la función de sombreador de píxeles consume la salida de un sombreador de vértices personalizado y, por tanto, declarará sus parámetros de entrada. Todas las entradas del sombreador de vértices personalizadas usan un muestreo complejo y no pueden consumir la salida de otra función de sombreador (es decir, solo se pueden vincular posteriormente). La definición de este valor es opcional.
 
 Por ejemplo:
 

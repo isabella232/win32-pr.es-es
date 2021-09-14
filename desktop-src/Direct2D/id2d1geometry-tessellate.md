@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: b40602fb38ec2a0834ba202252114f7c0c34a4948e4473703ff4daf8bf2ee97a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 060fc42dddd7642f021d073b8addbe089d031393
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162945"
 ---
 # <a name="id2d1geometrytessellate-methods"></a>Métodos ID2D1Geometry::Tessellate
 
@@ -30,8 +30,8 @@ Crea un conjunto de triángulos hacia la derecha que cubren la geometría despu�
 
 | Método                                                                                                                                                    | Descripción                                                                                                                                                                          |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F , \* ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Crea un conjunto de triángulos que cubren la geometría en el sentido de las agujas del reloj una vez que se ha transformado con la matriz especificada y se ha aplanado con la tolerancia predeterminada. <br/>   |
-| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Crea un conjunto de triángulos que cubren la geometría en el sentido de las agujas del reloj una vez que se ha transformado con la matriz especificada y se ha aplanado con la tolerancia predeterminada. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F , \* ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Crea un conjunto de triángulos que cubren la geometría una vez que se ha transformado mediante la matriz especificada y se ha aplanado con la tolerancia predeterminada. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Crea un conjunto de triángulos que cubren la geometría una vez que se ha transformado mediante la matriz especificada y se ha aplanado con la tolerancia predeterminada. <br/>   |
 | [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F , \* FLOAT,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)) | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada. <br/> |
 | [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink))  | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada.<br/>  |
 
@@ -103,7 +103,7 @@ En el ejemplo de código siguiente se muestra cómo usar Tessellate para crear u
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

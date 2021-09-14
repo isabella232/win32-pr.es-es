@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_RETURNSTRING mensaje (Vfw.h)
-description: El mensaje RETURNSTRING de MCIWNDM recupera la respuesta al comando de cadena MCI más reciente enviado \_ a un dispositivo MCI.
+description: El mensaje MCIWNDM RETURNSTRING recupera la respuesta al comando de cadena MCI más reciente enviado \_ a un dispositivo MCI.
 ms.assetid: 36a5222c-a63c-4b8c-ad0c-a00477e95b96
 keywords:
 - MCIWNDM_RETURNSTRING mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7b99307bd7d61a70db594d0a696cceccd6d246a3
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370736"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250772"
 ---
 # <a name="mciwndm_returnstring-message"></a>Mensaje RETURNSTRING de MCIWNDM \_
 
-El **mensaje \_ RETURNSTRING de MCIWNDM** recupera la respuesta al comando de cadena MCI más reciente enviado a un dispositivo MCI. La información de la respuesta se proporciona como una cadena terminada en NULL. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndReturnString.**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
+El **mensaje MCIWNDM \_ RETURNSTRING** recupera la respuesta al comando de cadena MCI más reciente enviado a un dispositivo MCI. La información de la respuesta se proporciona como una cadena terminada en NULL. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndReturnString.**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
 
 
 ```C++
@@ -48,7 +48,7 @@ Tamaño, en bytes, del búfer.
 <span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntero a un búfer definido por la aplicación para contener la cadena terminada en NULL.
+Puntero a un búfer definido por la aplicación que contiene la cadena terminada en NULL.
 
 </dd> </dl>
 

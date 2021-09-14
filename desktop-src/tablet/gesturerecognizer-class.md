@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - RTSCom.dll
-ms.openlocfilehash: e3122cb8c266a8c5cf29d0fe8780ecfc854654b189868a17f6aa19876d90fa18
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ee89872dab46ab845507fa0079ef007ebe5b5921
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120008945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251996"
 ---
 # <a name="gesturerecognizer-class"></a>Clase GestureRecognizer
 
@@ -32,7 +32,7 @@ Implementa la [**interfaz IGestureRecognizer**](/windows/desktop/api/RTSCom/nn-r
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                       |
-| Header<br/>                   | <dl> <dt>RTSCom.h (también requiere RTSCom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>RTSCom.h (también requiere RTSCom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RTSCom.dll</dt> </dl>                           |
 
 
@@ -41,7 +41,7 @@ Implementa la [**interfaz IGestureRecognizer**](/windows/desktop/api/RTSCom/nn-r
 
 <dl> <dt>
 
-[**IGestureRecognizer (Interfaz)**](/windows/desktop/api/RTSCom/nn-rtscom-igesturerecognizer)
+[**Interfaz IGestureRecognizer**](/windows/desktop/api/RTSCom/nn-rtscom-igesturerecognizer)
 </dt> <dt>
 
 [Clases e interfaces de RealTimeStylus](realtimestylus-classes-and-interfaces.md)

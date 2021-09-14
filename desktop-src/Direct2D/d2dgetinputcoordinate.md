@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a3fe0d825dea70c8e5211b8c13f1e850fa513670bbc93de98f1f8e2b87ef046
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d5d9ee759de12bb8b017d582026dd5b5ca8c3fb3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075299"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163465"
 ---
 # <a name="d2dgetinputcoordinate-function"></a>Función D2DGetInputCoordinate
 
@@ -48,7 +48,7 @@ Número de entrada.
 
 La función devuelve **un valor float4**, con el formato TEXCOORDN.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La coordenada devuelta por esta función está en el espacio de textura. Un sombreador no debe tener dependencias de cómo se calcula este valor. Solo se debe usar para muestrear la entrada del sombreador de píxeles. Para obtener más información, vea [Agregar un sombreador de píxeles a una transformación personalizada.](./custom-effects.md#adding-a-pixel-shader-to-a-custom-transform)
 
@@ -79,7 +79,7 @@ D2D_PS_ENTRY(DisplacementMapBilinear)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

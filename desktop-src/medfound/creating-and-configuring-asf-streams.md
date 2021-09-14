@@ -4,12 +4,12 @@ ms.assetid: cc89e8bc-58ff-48e2-9668-0dcd6cfd25e1
 title: Creación y configuración de asf Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58c780de3fa0abb5db29e3e5e5ed049b78aca7898966e8f7e8595b504804da91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8eabce588022dd66947f34e4dcd9db61f26448b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118743252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252500"
 ---
 # <a name="creating-and-configuring-asf-streams"></a>Creación y configuración de asf Secuencias
 
@@ -64,9 +64,9 @@ Si usa los componentes de la capa de canalización y configura las secuencias pa
 
 ## <a name="payload-extensions"></a>Extensiones de carga
 
-Los datos multimedia de las secuencias se agregan [](media-samples.md) al objeto de datos de ASF como ejemplos multimedia mediante el [multiplexador de ASF.](asf-multiplexer.md) Estos ejemplos multimedia pueden contener datos de extensión de carga: datos de código de tiempo SMPTE, relación de aspecto de píxeles no cuadrados, duración de la muestra y, si el ejemplo los contiene, un fotograma clave de vídeo. Para obtener una lista de los tipos de extensión de carga [admitidos, vea ASF Payload Extension GUIDs (GUID de extensión de carga de ASF).](asf-payload-extension-guids.md)
+Los datos multimedia de las secuencias se agregan [](media-samples.md) al objeto de datos de ASF como ejemplos multimedia mediante el [multiplexador de ASF.](asf-multiplexer.md) Estos ejemplos multimedia pueden contener datos de extensión de carga: datos de código de tiempo de SMPTE, relación de aspecto de píxeles no cuadrados, duración de la muestra y, si el ejemplo los contiene, un fotograma clave de vídeo. Para obtener una lista de los tipos de extensión de carga [admitidos, vea ASF Payload Extension GUIDs (GUID de extensión de carga de ASF).](asf-payload-extension-guids.md)
 
-Una secuencia debe configurarse para aceptar la extensión de carga para que durante la generación de la muestra el multiplexador pueda agregar los datos adicionales a cada muestra para esa secuencia.
+Una secuencia debe configurarse para aceptar la extensión de carga para que durante la generación de muestras el multiplexador pueda agregar los datos adicionales a cada muestra para esa secuencia.
 
 Para obtener el número total de extensiones de carga establecidas en la secuencia, llame a [**IMFASFStreamConfig::GetPayloadExtensionCount**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getpayloadextensioncount) y, a continuación, enumere la lista mediante una llamada a [**IMFASFStreamConfig::GetPayloadExtension**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getpayloadextension). Para agregar la extensión de carga para la secuencia, llame [**a IMFASFStreamConfig::AddPayloadExtension**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-addpayloadextension). Esto agregará datos adicionales a los ejemplos de medios individuales generados para la secuencia.
 

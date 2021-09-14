@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4090100d9ee3aee0a6e9e2600c61d88aee075de3c5b12ea55ab6dbba18b4f130
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b69fca24d2fefec7f0f114b8e9b502d171713c07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117889607"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252657"
 ---
 # <a name="vistaparamtableclass2name-field"></a>Campo VistaParam.TableClass2Name
 

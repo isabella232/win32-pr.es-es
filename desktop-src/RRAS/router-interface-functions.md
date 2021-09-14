@@ -4,12 +4,12 @@ description: Use las siguientes funciones para administrar interfaces en el enru
 ms.assetid: e988753e-908a-4c42-aad3-dd9f641c90a9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bcaaf257e31623036a075c21da66d4665b3afe7e821f8f246f6a225e02b8272
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3a5318eedfbc3a04c13549012fda3bd4d93b4d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117787841"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273567"
 ---
 # <a name="router-interface-functions"></a>Funciones de la interfaz de enrutador
 

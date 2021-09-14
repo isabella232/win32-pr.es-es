@@ -7,12 +7,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: d3f8cd7420325fd876897d538ea9e01a5c0adb64b2d0c55437514773904d6013
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb97b0737bfad391fb9ba2501793a970fcbd9886
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117825866"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163369"
 ---
 # <a name="geometries-overview"></a>Información general sobre las geometrías 
 
@@ -20,21 +20,21 @@ En esta introducción se describe cómo crear y usar [**objetos ID2D1Geometry**]
 
 ## <a name="what-is-a-direct2d-geometry"></a>¿Qué es una geometría de Direct2D?
 
-Una geometría de Direct2D es [**un objeto ID2D1Geometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) Este objeto puede ser una geometría simple [**(ID2D1RectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry), [**ID2D1RoundedRectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1roundedrectanglegeometry)o [**ID2D1TransformpseGeometry),**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry)una geometría de ruta de acceso [**(ID2D1PathGeometry)**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)o una geometría compuesta ([**ID2D1GeometryGroup**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrygroup) e [**ID2D1TransformedGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1transformedgeometry)).
+Una geometría de Direct2D es [**un objeto ID2D1Geometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) Este objeto puede ser una geometría simple [**(ID2D1RectangleGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry) [**ID2D1RoundedRectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1roundedrectanglegeometry)o [**ID2D1TransformpseGeometry),**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry)una geometría de ruta de acceso ([**ID2D1PathGeometry)**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)o una geometría compuesta ([**ID2D1GeometryGroup**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrygroup) e [**ID2D1TransformedGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1transformedgeometry)).
 
-Las geometrías de Direct2D permiten describir las figuras bidimensionales y ofrecer muchos usos, como definir regiones de prueba de acceso, regiones de recorte e incluso rutas de animación.
+Las geometrías de Direct2D le permiten describir las figuras bidimensionales y ofrecer muchos usos, como definir regiones de prueba de impacto, regiones de recorte e incluso rutas de animación.
 
-Las geometrías de Direct2D son recursos inmutables e independientes del dispositivo creados [**por ID2D1Factory.**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) Por lo general, debe crear geometrías una vez y conservarlas durante la vida útil de la aplicación, o hasta que tengan que cambiarse. Para obtener más información sobre los recursos independientes del dispositivo y dependientes del dispositivo, vea Información [general sobre los recursos.](resources-and-resource-domains.md)
+Las geometrías de Direct2D son recursos inmutables e independientes del dispositivo creados [**por ID2D1Factory.**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) Por lo general, debe crear geometrías una vez y conservarlas durante la vida útil de la aplicación, o hasta que tengan que cambiarse. Para obtener más información sobre los recursos independientes del dispositivo y los recursos dependientes del dispositivo, consulte Información [general sobre los recursos.](resources-and-resource-domains.md)
 
 En las secciones siguientes se describen los diferentes tipos de geometrías.
 
 ## <a name="simple-geometries"></a>Geometrías simples
 
-Las geometrías simples incluyen los objetos [**ID2D1RectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry), [**ID2D1RoundedRectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1roundedrectanglegeometry)e [**ID2D1PxpseGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) y se pueden usar para crear figuras geométricas básicas, como rectángulos, rectángulos redondeados, círculos y elipses.
+Las geometrías simples incluyen los objetos [**ID2D1RectangleGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry) [**ID2D1RoundedRectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1roundedrectanglegeometry)e [**ID2D1ProcesamientoGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) y se pueden usar para crear figuras geométricas básicas, como rectángulos, rectángulos redondeados, círculos y elipses.
 
 Para crear una geometría simple, use uno de los métodos [**ID2D1Factory::Create<*geometryType*>Geometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) Estos métodos crean un objeto del tipo especificado. Por ejemplo, para crear un rectángulo, llame a [**ID2D1Factory::CreateRectangleGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)), que devuelve un objeto [**ID2D1RectangleGeometry;**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry) Para crear un rectángulo redondeado, llame a [**ID2D1Factory::CreateRoundedRectangleGeometry**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createroundedrectanglegeometry(constd2d1_rounded_rect__id2d1roundedrectanglegeometry)), que devuelve un objeto [**ID2D1RoundedRectangleGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1roundedrectanglegeometry) etc.
 
-En el ejemplo de código siguiente se llama al método [**CreateVelopseGeometry,**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry)) pasando una estructura de elipse con el centro establecido en (100, 100), *x-radius* a 100 e *y-radius* en 50.  A continuación, llama a [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry), pasando la geometría de elipse devuelta, un puntero a un [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush)negro y un ancho de trazo de 5. En la ilustración siguiente se muestra la salida del ejemplo de código.
+En el ejemplo de código siguiente se llama al método [**CreateVelopseGeometry,**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry)) pasando una estructura de elipse con el centro establecido en (100, 100), el radio *x* a 100 y el radio *Y* en 50.  A continuación, llama a [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry), pasando la geometría de elipse devuelta, un puntero a un [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush)negro y un ancho de trazo de 5. En la ilustración siguiente se muestra la salida del ejemplo de código.
 
 ![ilustración de una elipse](images/geometry-ovw-drawstep6.png)
 
@@ -69,21 +69,21 @@ Para dibujar el contorno de cualquier geometría, use el [**método DrawGeometry
 
 ## <a name="path-geometries"></a>Geometrías de ruta de acceso
 
-Las geometrías de ruta de acceso se representan mediante la [**interfaz ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) Estos objetos se pueden usar para describir figuras geométricas complejas compuestas de segmentos como arcos, curvas y líneas. En la ilustración siguiente se muestra un dibujo creado mediante geometría de trazado.
+Las geometrías de ruta de acceso se representan mediante la [**interfaz ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) Estos objetos se pueden usar para describir figuras geométricas complejas formadas por segmentos como arcos, curvas y líneas. En la ilustración siguiente se muestra un dibujo creado mediante la geometría de ruta de acceso.
 
-![ilustración de un río, las montañas y el sol](images/path-geo-mnts.png)
+![ilustración de un monte, una montaña y el sol](images/path-geo-mnts.png)
 
-Para obtener más información y ejemplos, vea Información general sobre [geometrías de ruta de acceso.](path-geometries-overview.md)
+Para obtener más información y ejemplos, vea Introducción a [las geometrías de ruta de acceso.](path-geometries-overview.md)
 
 ## <a name="composite-geometries"></a>Geometrías compuestas
 
-Una geometría compuesta es una geometría agrupada o combinada con otro objeto geometry, o con una transformación. Las geometrías compuestas [**incluyen los objetos ID2D1TransformedGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1transformedgeometry) e [**ID2D1GeometryGroup.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrygroup)
+Una geometría compuesta es una geometría agrupada o combinada con otro objeto geometry o con una transformación. Las geometrías compuestas [**incluyen los objetos ID2D1TransformedGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1transformedgeometry) e [**ID2D1GeometryGroup.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrygroup)
 
 ### <a name="geometry-groups"></a>Grupos de geometría
 
-Los grupos de geometría son una manera cómoda de agrupar varias geometrías al mismo tiempo, por lo que todas las figuras de varias geometrías distintas se concatenan en una. Para crear un objeto [**ID2D1GeometryGroup,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrygroup) llame al método [**CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) en el objeto [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) y pase *fillMode* con los valores posibles [**D2D1 \_ FILL MODE \_ \_ ALTERNATE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_fill_mode) (alternate) y **D2D1 \_ FILL MODE \_ \_ WINDING,** una matriz de objetos geometry que se va a agregar al grupo de geometría y el número de elementos de esta matriz.
+Los grupos de geometría son una manera cómoda de agrupar varias geometrías al mismo tiempo, por lo que todas las figuras de varias geometrías distintas se concatenan en una. Para crear un objeto [**ID2D1GeometryGroup,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrygroup) llame al método [**CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) en el objeto [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) y pase *fillMode* con los valores posibles [**D2D1 \_ FILL MODE \_ \_ ALTERNATE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_fill_mode) (alternativo) y **D2D1 \_ FILL MODE \_ \_ WINDING,** una matriz de objetos geometry que se va a agregar al grupo de geometría y el número de elementos de esta matriz.
 
-En el ejemplo de código siguiente se declara primero una matriz de objetos geometry. Estos objetos son cuatro círculos concéntricas que tienen los siguientes radios: 25, 50, 75 y 100. A continuación, llame a [**CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) en el objeto [**ID2D1Factory,**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) pasando [**D2D1 \_ FILL MODE \_ \_ ALTERNATE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_fill_mode), una matriz de objetos geometry que se va a agregar al grupo de geometría y el número de elementos de esta matriz.
+En primer lugar, en el ejemplo de código siguiente se declara una matriz de objetos geometry. Estos objetos son cuatro círculos concéntricas que tienen los siguientes radios: 25, 50, 75 y 100. A continuación, llame a [**CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) en el objeto [**ID2D1Factory,**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) pasando [**D2D1 \_ FILL MODE \_ \_ ALTERNATE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_fill_mode), una matriz de objetos geometry que se va a agregar al grupo de geometría y el número de elementos de esta matriz.
 
 
 ```C++
@@ -119,12 +119,12 @@ En la ilustración siguiente se muestran los resultados de representar las dos g
 
 ### <a name="transformed-geometries"></a>Geometrías transformadas
 
-Hay varias maneras de transformar una geometría. Puede usar el [**método SetTransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)) de un destino de representación para transformar todo lo que dibuja el destino de representación, o bien puede asociar una transformación directamente a una geometría mediante el método [**CreateTransformedGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createtransformedgeometry(id2d1geometry_constd2d1_matrix_3x2_f_id2d1transformedgeometry)) para crear un [**id2D1TransformedGeometry.**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85))
+Hay varias maneras de transformar una geometría. Puede usar el método [**SetTransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)) de un destino de representación para transformar todo lo que dibuja el destino de representación, o puede asociar una transformación directamente a una geometría mediante el método [**CreateTransformedGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createtransformedgeometry(id2d1geometry_constd2d1_matrix_3x2_f_id2d1transformedgeometry)) para crear un [**id2D1TransformedGeometry.**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85))
 
-El método que debe usar depende del efecto que desee. Cuando se usa el destino de representación para transformar y, a continuación, representar una geometría, la transformación afecta a todo lo que tiene que ver con la geometría, incluido el ancho de cualquier trazo que se haya aplicado. Por otro lado, cuando se usa [**id2D1TransformedGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1transformedgeometry)la transformación solo afecta a las coordenadas que describen la forma. La transformación no afectará al grosor del trazo cuando se dibuja la geometría.
+El método que debe usar depende del efecto que desee. Cuando se usa el destino de representación para transformar y, a continuación, representar una geometría, la transformación afecta a todo lo que tiene que ver con la geometría, incluido el ancho de cualquier trazo que se haya aplicado. Por otro lado, cuando se usa [**un ID2D1TransformedGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1transformedgeometry)la transformación solo afecta a las coordenadas que describen la forma. La transformación no afectará al grosor del trazo cuando se dibuja la geometría.
 
 > [!Note]  
-> A partir Windows 8 transformación del mundo no afectará al grosor del trazo de los trazos con [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ FIXED**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type)o [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ HAIRLINE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type). Debe usar estos tipos de transformación para lograr trazos independientes de transformación.
+> A partir Windows 8 transformación del mundo no afectará al grosor del trazo de los trazos con [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ FIXED**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type)o [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ HAIRLINE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type). Debe usar estos tipos de transformación para lograr trazos independientes de la transformación.
 
  
 
@@ -207,21 +207,21 @@ Puede usar un objeto [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ge
 
 ## <a name="geometric-operations"></a>Operaciones geométricas
 
-La [**interfaz ID2D1Geometry proporciona**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) varias operaciones geométricas que puede usar para manipular y medir las figuras geométricas. Por ejemplo, puede usarlos para calcular y devolver sus límites, comparar para ver cómo una geometría está relacionada espacialmente con otra (útil para las pruebas de acceso), calcular las áreas y longitudes, etc. En la tabla siguiente se describen las operaciones geométricas comunes.
+La [**interfaz ID2D1Geometry proporciona**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) varias operaciones geométricas que puede usar para manipular y medir figuras geométricas. Por ejemplo, puede usarlos para calcular y devolver sus límites, comparar para ver cómo una geometría está relacionada espacialmente con otra (útil para las pruebas de impacto), calcular las áreas y longitudes, etc. En la tabla siguiente se describen las operaciones geométricas comunes.
 
 
 
 | Operación                                                   | Método                                                                                                                                                                     |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Combinar                                                     | [**CombineWithGeometry**](id2d1geometry-combinewithgeometry.md)                                                                                                           |
-| Límites/límites anchos/recuperación de límites, actualización de la región desasenada | [**Widen,**](id2d1geometry-widen.md) [**GetBounds,**](/windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1gdimetafile-getbounds) [**GetWidenedBounds**](id2d1geometry-getwidenedbounds.md)                             |
+| Límites/ límites anchos/recuperar límites, actualización de la región desasenada | [**Widen,**](id2d1geometry-widen.md) [**GetBounds,**](/windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1gdimetafile-getbounds) [**GetWidenedBounds**](id2d1geometry-getwidenedbounds.md)                             |
 | Pruebas de posicionamiento                                                 | [**FillContainsPoint**](id2d1geometry-fillcontainspoint.md), [ **StrokeContainsPoint**](id2d1geometry-strokecontainspoint.md)                                             |
 | Carrera                                                      | [**StrokeContainsPoint**](id2d1geometry-strokecontainspoint.md)                                                                                                           |
 | De comparación                                                  | [**CompareWithGeometry**](id2d1geometry-comparewithgeometry.md)                                                                                                           |
 | Simplificación (quita arcos y curvas Bézier cuadráticas)   | [**Simplificar**](id2d1geometry-simplify.md)                                                                                                                                 |
-| Teselación                                                | [**Tesselate**](id2d1geometry-tessellate.md)                                                                                                                             |
-| Esquema (quitar intersección)                               | [**Esquema**](id2d1geometry-outline.md)                                                                                                                                   |
-| Cálculo del área o longitud de una geometría                  | [**ComputeArea,**](id2d1geometry-computearea.md) [**ComputeLength,**](id2d1geometry-computelength.md) [**ComputePointAtLength**](id2d1geometry-computepointatlength.md) |
+| Teselación                                                | [**Tessellate**](id2d1geometry-tessellate.md)                                                                                                                             |
+| Contorno (quitar intersección)                               | [**Esquema**](id2d1geometry-outline.md)                                                                                                                                   |
+| Calcular el área o la longitud de una geometría                  | [**ComputeArea,**](id2d1geometry-computearea.md) [**ComputeLength,**](id2d1geometry-computelength.md) [**ComputePointAtLength**](id2d1geometry-computepointatlength.md) |
 
 
 
@@ -234,7 +234,7 @@ La [**interfaz ID2D1Geometry proporciona**](/windows/win32/api/d2d1/nn-d2d1-id2d
 
 ### <a name="combining-geometries"></a>Combinación de geometrías
 
-Para combinar una geometría con otra, llame al [**método ID2D1Geometry::CombineWithGeometry.**](id2d1geometry-combinewithgeometry.md) Al combinar las geometrías, especifique una de las cuatro maneras de realizar la operación de combinación: [**D2D1 \_ COMBINE \_ MODE \_ UNION**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (union), [**D2D1 \_ COMBINE MODE \_ \_ INTERSECT**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (intersect), [**D2D1 \_ COMBINE MODE \_ \_ XOR**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (xor) y [**D2D1 \_ COMBINE MODE \_ \_ EXCLUDE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (exclude). En el ejemplo de código siguiente se muestran dos círculos que se combinan mediante el modo de combinación de unión, donde el primer círculo tiene el punto central de (75, 75) y el radio de 50, y el segundo círculo tiene el punto central de (125, 75) y el radio de 50.
+Para combinar una geometría con otra, llame al [**método ID2D1Geometry::CombineWithGeometry.**](id2d1geometry-combinewithgeometry.md) Al combinar las geometrías, se especifica una de las cuatro maneras de realizar la operación de combinación: [**D2D1 \_ COMBINE \_ MODE \_ UNION**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (union), [**D2D1 \_ COMBINE MODE \_ \_ INTERSECT**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (intersect), [**D2D1 \_ COMBINE MODE \_ \_ XOR**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (xor) y [**D2D1 \_ COMBINE MODE \_ \_ EXCLUDE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode) (exclude). En el ejemplo de código siguiente se muestran dos círculos que se combinan mediante el modo de combinación de unión, donde el primer círculo tiene el punto central de (75, 75) y el radio de 50, y el segundo círculo tiene el punto central de (125, 75) y el radio de 50.
 
 
 ```C++
@@ -308,7 +308,7 @@ Para obtener ilustraciones de todos los modos de combinación, vea la [**enumera
 
 ### <a name="widen"></a>Ampliar
 
-El [**método Widen**](id2d1geometry-widen.md) genera una nueva geometría cuyo relleno es equivalente a acariciar la geometría existente y, a continuación, escribe el resultado en el objeto [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) especificado. En el ejemplo de código siguiente se [**llama a Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) en el objeto [**ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) Si **Open** se realiza correctamente, llama **a Widen** en el objeto geometry.
+El [**método Widen**](id2d1geometry-widen.md) genera una nueva geometría cuyo relleno equivale a acariciar la geometría existente y, a continuación, escribe el resultado en el objeto [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) especificado. En el ejemplo de código siguiente se [**llama a Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) en el objeto [**ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) Si **Open** se realiza correctamente, llama **a Widen** en el objeto geometry.
 
 
 ```C++
@@ -326,9 +326,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="tessellate"></a>Tessellate
+### <a name="tessellate"></a>Tesselate
 
-El [**método Tessellate**](id2d1geometry-tessellate.md) crea un conjunto de triángulos en el sentido de las agujas del reloj que cubren la geometría después de transformarse mediante la matriz especificada y aplanadas mediante la tolerancia especificada. En el ejemplo de código siguiente **se usa Tessellate para** crear una lista de triángulos que representan *pPathGeometry*. Los triángulos se almacenan en [**id2D1Mesh,**](/windows/win32/api/d2d1/nn-d2d1-id2d1mesh) *pMesh* y, a continuación, se transfieren a un miembro de clase, *m \_ pStrokeMesh,* para su uso posterior al representarlo.
+El [**método Tessellate**](id2d1geometry-tessellate.md) crea un conjunto de triángulos que cubren la geometría en el sentido de las agujas del reloj después de que se transforme mediante la matriz especificada y se aplane mediante la tolerancia especificada. En el ejemplo de código siguiente **se usa Tessellate para** crear una lista de triángulos que representan *pPathGeometry*. Los triángulos se almacenan en [**id2D1Mesh,**](/windows/win32/api/d2d1/nn-d2d1-id2d1mesh) *pMesh* y, a continuación, se transfieren a un miembro de clase, *m \_ pStrokeMesh,* para su uso posterior al representarse.
 
 
 ```C++
@@ -362,7 +362,7 @@ if (SUCCEEDED(hr))
 
 ### <a name="fillcontainspoint-and-strokecontainspoint"></a>FillContainsPoint y StrokeContainsPoint
 
-El [**método FillContainsPoint**](id2d1geometry-fillcontainspoint.md) indica si el área rellenada por la geometría contiene el punto especificado. Puede usar este método para realizar pruebas de impacto. En el ejemplo de código siguiente se llama a **FillContainsPoint** en un objeto [**ID2D1FormatpseGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) pasando un punto en (0,0) y una matriz [**identity.**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-isidentity)
+El [**método FillContainsPoint**](id2d1geometry-fillcontainspoint.md) indica si el área rellenada por la geometría contiene el punto especificado. Puede usar este método para realizar pruebas de acceso. En el ejemplo de código siguiente se llama a **FillContainsPoint** en un objeto [**ID2D1VelopseGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) pasando un punto en (0,0) y una matriz [**identity.**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-isidentity)
 
 
 ```C++
@@ -381,7 +381,7 @@ if (SUCCEEDED(hr))
 
 
 
-El [**método StrokeContainsPoint**](id2d1geometry-strokecontainspoint.md) determina si el trazo de la geometría contiene el punto especificado. Puede usar este método para realizar pruebas de impacto. En el ejemplo de código siguiente se **usa StrokeContainsPoint**.
+El [**método StrokeContainsPoint**](id2d1geometry-strokecontainspoint.md) determina si el trazo de la geometría contiene el punto especificado. Puede usar este método para realizar pruebas de acceso. En el ejemplo de código siguiente se **usa StrokeContainsPoint**.
 
 
 ```C++
@@ -405,7 +405,7 @@ if (SUCCEEDED(hr))
 
 ### <a name="simplify"></a>Simplificación de 
 
-El [**método Simplify**](id2d1geometry-simplify.md) quita los arcos y las curvas Bézier cuadráticas de una geometría especificada. Por lo tanto, la geometría resultante solo contiene líneas y, opcionalmente, curvas Bézier cúbicas. En el ejemplo de código siguiente se **usa Simplificar** para transformar una geometría con curvas Bézier en una geometría que solo contiene segmentos de línea.
+El [**método Simplify**](id2d1geometry-simplify.md) quita arcos y curvas Bézier cuadráticas de una geometría especificada. Por lo tanto, la geometría resultante solo contiene líneas y, opcionalmente, curvas Bézier cúbicas. En el ejemplo de código siguiente se **usa Simplificar** para transformar una geometría con curvas Bézier en una geometría que contiene solo segmentos de línea.
 
 
 ```C++
@@ -461,7 +461,7 @@ HRESULT D2DFlatten(
 
 ### <a name="computelength-and-computearea"></a>ComputeLength y ComputeArea
 
-El [**método ComputeLength**](id2d1geometry-computelength.md) calcula la longitud de la geometría especificada si cada segmento se anuló en una línea. Esto incluye el segmento de cierre implícito si se cierra la geometría. En el ejemplo de código siguiente se **usa ComputeLength** para calcular la longitud de un círculo especificado (**m \_ pCircleGeometry1**).
+El [**método ComputeLength**](id2d1geometry-computelength.md) calcula la longitud de la geometría especificada si cada segmento se inscribió en una línea. Esto incluye el segmento de cierre implícito si se cierra la geometría. En el ejemplo de código siguiente se **usa ComputeLength** para calcular la longitud de un círculo especificado (**m \_ pCircleGeometry1**).
 
 
 ```C++
@@ -481,7 +481,7 @@ if (SUCCEEDED(hr))
 
 
 
-El [**método ComputeArea**](id2d1geometry-computearea.md) calcula el área de la geometría especificada. En el ejemplo de código siguiente se **usa ComputeArea** para calcular el área de un círculo especificado (**m \_ pCircleGeometry1**).
+El [**método ComputeArea**](id2d1geometry-computearea.md) calcula el área de la geometría especificada. En el ejemplo de código siguiente se **usa ComputeArea para** calcular el área de un círculo especificado (**m \_ pCircleGeometry1**).
 
 
 ```C++
@@ -498,7 +498,7 @@ hr = m_pCircleGeometry1->ComputeArea(
 
 ### <a name="comparewithgeometry"></a>CompareWithGeometry
 
-El [**método CompareWithGeometry**](id2d1geometry-comparewithgeometry.md) describe la intersección entre la geometría que llama a este método y la geometría especificada. Los valores posibles para la intersección incluyen [**D2D1 \_ GEOMETRY \_ RELATION \_ DISJOINT (disjoint),**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_geometry_relation) **D2D1 GEOMETRY RELATION IS CONTAINED (is \_ \_ \_ \_ contained),** **D2D1 \_ GEOMETRY RELATION \_ \_ CONTAINS** (contains) y **D2D1 \_ GEOMETRY RELATION OVERLAP \_ \_ (overlap).** "disjoint" significa que dos rellenos de geometría no se intersecan en absoluto. "is contained" significa que la geometría está completamente contenida en la geometría especificada. "contains" significa que la geometría contiene completamente la geometría especificada y "overlap" significa que las dos geometrías se superponen, pero ninguna contiene completamente la otra.
+El [**método CompareWithGeometry**](id2d1geometry-comparewithgeometry.md) describe la intersección entre la geometría que llama a este método y la geometría especificada. Los valores posibles para la intersección incluyen [**D2D1 \_ GEOMETRY \_ RELATION \_ DISJOINT (disjoint),**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_geometry_relation) **D2D1 GEOMETRY RELATION IS CONTAINED (is \_ \_ \_ \_ contained),** **D2D1 \_ GEOMETRY RELATION CONTAINS \_ \_ (contains)** y **D2D1 \_ GEOMETRY RELATION OVERLAP \_ \_ (overlap).** "disjoint" significa que dos rellenos de geometría no se intersecan en absoluto. "is contained" significa que la geometría está completamente contenida en la geometría especificada. "contains" significa que la geometría contiene completamente la geometría especificada y "overlap" significa que las dos geometrías se superponen, pero ninguna contiene completamente la otra.
 
 En el ejemplo de código siguiente se muestra cómo comparar dos círculos que tienen el mismo radio de 50 pero que se desplazan por 50.
 
@@ -568,7 +568,7 @@ if (SUCCEEDED(hr))
 
 ### <a name="outline"></a>Esquema
 
-El [**método Outline**](id2d1geometry-outline.md) calcula el contorno de la geometría (una versión de la geometría en la que ninguna figura se cruza a sí misma o a ninguna otra figura) y escribe el resultado en un [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink). En el ejemplo de código siguiente se **usa Outline** para construir una geometría equivalente sin autoconcirecciones. Usa la tolerancia de aplanado predeterminada.
+El [**método Outline**](id2d1geometry-outline.md) calcula el contorno de la geometría (una versión de la geometría en la que ninguna figura se cruza a sí misma o a ninguna otra figura) y escribe el resultado en un [**id2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink). En el ejemplo de código siguiente se **usa Outline** para construir una geometría equivalente sin ninguna intersección. Usa la tolerancia de aplanación predeterminada.
 
 
 ```C++
@@ -680,7 +680,7 @@ if (SUCCEEDED(hr))
 
 ### <a name="computepointatlength"></a>ComputePointAtLength
 
-El [**método ComputePointAtLength**](id2d1geometry-computepointatlength.md) calcula el punto y el vector tangente a la distancia especificada a lo largo de la geometría. En el ejemplo de código siguiente se **usa ComputePointAtLength**.
+El [**método ComputePointAtLength**](id2d1geometry-computepointatlength.md) calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría. En el ejemplo de código siguiente se **usa ComputePointAtLength**.
 
 
 ```C++

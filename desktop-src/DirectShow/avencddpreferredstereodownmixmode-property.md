@@ -1,19 +1,19 @@
 ---
-description: Especifica el modo de bajada estéreo preferido para una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
+description: Especifica el modo de mezcla abajo estéreo preferido para una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 ms.assetid: 3cf9fba7-6895-4dfb-9aef-571c512b7955
 title: Propiedad AVEncDDPreferredStereoDownMixMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f28df64ba42cec96f7b1d18a6bb32ec08bd2b93176adbaa0233364c35b4ab6b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aea695491175c8cb7d769673fcb09dd6ad2ae9f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161910"
 ---
 # <a name="avencddpreferredstereodownmixmode-property"></a>AvEncDDPreferredStereoDownMixMode, propiedad
 
-Especifica el modo de bajada estéreo preferido para una secuencia de audio de Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
+Especifica el modo de mezcla abajo estéreo preferido para una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
 Esta propiedad es de lectura y escritura.
 
@@ -29,7 +29,7 @@ Esta propiedad es de lectura y escritura.
 
 El valor de esta propiedad es un miembro de la [**enumeración eAVEncDDPreferredStereoDownMixMode.**](/windows/desktop/api/codecapi/ne-codecapi-eavencddpreferredstereodownmixmode)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es de lectura y escritura.
 
@@ -41,11 +41,11 @@ Esta propiedad es de lectura y escritura.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

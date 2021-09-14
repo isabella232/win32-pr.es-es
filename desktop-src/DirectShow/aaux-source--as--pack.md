@@ -4,12 +4,12 @@ ms.assetid: 0e173fe5-0b9d-48e8-bcbd-403614d51558
 title: Paquete de origen (AS) de APACK
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89a2d8aa11c9560b2aa59165afd9bdaae775be7755a7a7d2a5e87a80df412d1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe479a0740da08f42ca5d80e1f0b6f5174f6917b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162494"
 ---
 # <a name="aaux-source-as-pack"></a>Paquete de origen (AS) de APACK
 
@@ -420,7 +420,7 @@ PAQUETE DE AS
  
 
 > [!Note]  
-> \* La [**estructura DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contiene dos paquetes as de A AHORA, para los bloques de audio 1 y 2. DV50 tiene cuatro bloques de audio; Los bloques 3 y 4 no se representan en la **estructura DVINFO.**
+> \* La [**estructura DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contiene dos paquetes as de APACK, para los bloques de audio 1 y 2. DV50 tiene cuatro bloques de audio; Los bloques 3 y 4 no se representan en la **estructura DVINFO.**
 
  
 
@@ -585,16 +585,16 @@ PAQUETE DE AS
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los siguientes códigos de campo son de interés:
 
 -   LF: marca de modo bloqueado. Indica si el audio está bloqueado.
     -   0 = Bloqueado
     -   1 = Desbloqueado
--   AF SIZE: tamaño del fotograma de audio. Especifica el número de muestras de audio por fotograma.
+-   AF SIZE: tamaño del marco de audio. Especifica el número de muestras de audio por fotograma.
 
-    Definición de IEC 61834:
+    Definición iec 61834:
 
     -   00:1111 = 1068 muestras por fotograma
     -   01:0000 = 1280 muestras por fotograma
@@ -604,7 +604,7 @@ Los siguientes códigos de campo son de interés:
     -   01:0110 = 1602 muestras por fotograma
     -   01:1000 = 1920 muestras por fotograma
 
-    En función de la velocidad de fotogramas, el número exacto de muestras de un fotograma puede variar. Por ejemplo, UNOS es de 30 000/1001 fotogramas por segundo (29,97 fps). Con audio de 32 kHz, hay aproximadamente 1067,73 muestras de audio por fotograma. Por lo tanto, la tasa nominal es 1068, pero el número real varía por fotograma. Además, con el audio desbloqueado, el número de muestras de audio por fotograma puede variar dentro de un intervalo determinado a lo largo del tiempo.
+    En función de la velocidad de fotogramas, el número exacto de muestras de un fotograma puede variar. Por ejemplo, PRESS es de 30 000/1001 fotogramas por segundo (29,97 fps). Con audio de 32 kHz, hay aproximadamente 1067,73 muestras de audio por fotograma. Por lo tanto, la tasa nominal es 1068, pero el número real varía por fotograma. Además, con el audio desbloqueado, el número de muestras de audio por fotograma puede variar dentro de un intervalo determinado a lo largo del tiempo.
 
 <!-- -->
 
@@ -614,9 +614,9 @@ Los siguientes códigos de campo son de interés:
 -   CHN: número de canales de audio por bloque de audio.
     -   0 = Un canal por bloque de audio
     -   1 = Dos canales por bloque de audio
--   MODO AUDIO: indica el contenido de la señal de audio en cada canal. La interpretación de este campo depende de qué valores se colocan en los campos SM y CHN. Las definiciones que se indican a continuación son para los valores usados por MSDV; Consulte las especificaciones para obtener más información.
+-   MODO AUDIO: indica el contenido de la señal de audio en cada canal. La interpretación de este campo depende de qué valores se colocan en los campos SM y CHN. Las definiciones que se indican a continuación son para los valores usados por MSDV; consulte las especificaciones para obtener más información.
 
-    Definición de IEC 61834:
+    Definición iec 61834:
 
     -   0000 = Ch a/c/e/g es el canal izquierdo, Ch b/d/f/h es el canal derecho
     -   1111 = sin datos de audio
@@ -631,7 +631,7 @@ Los siguientes códigos de campo son de interés:
     -   1 = 50 campos
 -   STYPE: tipo de sistema.
 
-    Definición de IEC 61834:
+    Definición iec 61834:
 
     -   00000 = 525-60 o 625-50, dvsd
     -   00001 = 525-60 o 625-50, dvsl (vea IEC 61883-5)
@@ -645,7 +645,7 @@ Los siguientes códigos de campo son de interés:
 -   SMP: frecuencia de muestreo.
     -   000 = 48 kHz
     -   010 = 32 kHz
--   QU: Cuantificación.
+-   QU: cuantificación.
     -   0 = 16 bits lineales
     -   1 = 12 bits no lineales
 
@@ -656,7 +656,7 @@ Los siguientes códigos de campo son de interés:
 [Vídeo digital en DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Campo DVINFO Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campos DVINFO Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

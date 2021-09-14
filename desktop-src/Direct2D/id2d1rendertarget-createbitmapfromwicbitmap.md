@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 3d023db69afdc3cc69535d310cb21fb841c2f1bbe981df98e0aaa22074a46db0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23ad055beab9f24c39f032a3e28456c231480c68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119304347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162850"
 ---
 # <a name="id2d1rendertargetcreatebitmapfromwicbitmap-methods"></a>Métodos ID2D1RenderTarget::CreateBitmapFromWicBitmap
 
@@ -36,13 +36,13 @@ Crea un [**objeto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) co
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para que Direct2D pueda cargar una imagen wic, se debe convertir a un formato de píxeles compatible y al modo alfa. Para obtener una lista de los formatos de píxel admitidos y los modos alfa, vea [Formatos de píxeles admitidos y Modos alfa.](supported-pixel-formats-and-alpha-modes.md)
+Para que Direct2D pueda cargar una imagen de WIC, debe convertirse a un formato de píxeles y un modo alfa admitidos. Para obtener una lista de los formatos de píxel admitidos y los modos alfa, vea [Formatos de píxeles admitidos y Modos alfa.](supported-pixel-formats-and-alpha-modes.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos, vea How to Load a Bitmap from a File (Cómo cargar un mapa de [bits desde un archivo)](how-to-load-a-direct2d-bitmap-from-a-file.md) [y How to Load a Bitmap from a Resource (Cómo cargar](how-to-load-a-bitmap-from-a-resource.md)un mapa de bits desde un recurso).
+Para obtener ejemplos, [vea How to Load a Bitmap from a File](how-to-load-a-direct2d-bitmap-from-a-file.md) (Cómo cargar un mapa de bits desde un archivo) y How to Load a Bitmap from a Resource (Cómo cargar un mapa de bits desde un [recurso).](how-to-load-a-bitmap-from-a-resource.md)
 
 ## <a name="requirements"></a>Requisitos
 

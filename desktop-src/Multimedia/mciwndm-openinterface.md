@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_OPENINTERFACE mensaje (Vfw.h)
-description: El mensaje OPENINTERFACE de MCIWNDM asocia el flujo de datos o el archivo asociado a la interfaz especificada \_ a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
+description: El mensaje MCIWNDM OPENINTERFACE adjunta el flujo de datos o el archivo asociado a la interfaz especificada \_ a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro MCIWndOpenInterface.
 ms.assetid: 73cbd637-d315-4b39-a978-2b72aed1f303
 keywords:
 - MCIWNDM_OPENINTERFACE mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9c40453f4d587429508a5aae19bc432fc46088ae
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250821"
 ---
 # <a name="mciwndm_openinterface-message"></a>Mensaje OPENINTERFACE de MCIWNDM \_
 
-El **mensaje \_ OPENINTERFACE de MCIWNDM** asocia el flujo de datos o el archivo asociado a la interfaz especificada a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndOpenInterface.**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface)
+El **mensaje MCIWNDM \_ OPENINTERFACE** adjunta el flujo de datos o el archivo asociado a la interfaz especificada a una ventana de MCIWnd. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndOpenInterface.**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface)
 
 
 ```C++
@@ -47,7 +47,7 @@ Puntero a una interfaz IAVI que apunta a un archivo o a un flujo de datos de un 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

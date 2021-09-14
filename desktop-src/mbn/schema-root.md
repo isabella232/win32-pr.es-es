@@ -13,16 +13,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 3fd9b2d5a28abd4c445198d58c589c60f9dba9de786b989c6d97cd74dd461aa3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b10d2ea3e327f54c6a8100f0758d652675b9d4a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118744206"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252525"
 ---
 # <a name="span-idwwan_profile_v4schema_rootspanmobile-broadband-profile-schema-v4"></a><span id="WWAN_profile_v4.Schema_Root"></span>Esquema de perfil de banda ancha móvil v4
 
-El Windows esquema 10Mobile Broadband Profile v4 está disponible en el espacio de nombres `https://www.microsoft.com/networking/WWAN/profile/v4` .
+El Windows 10 Esquema de perfil de banda ancha móvil v4 está disponible en el espacio de nombres `https://www.microsoft.com/networking/WWAN/profile/v4` .
 
 -   [Elementos del esquema de perfil de banda ancha móvil v4](root-elements.md)
 -   [Tipos simples de esquema de perfil de banda ancha móvil v4](simple-types.md)

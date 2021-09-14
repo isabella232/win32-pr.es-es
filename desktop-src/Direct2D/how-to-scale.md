@@ -4,12 +4,12 @@ description: Muestra cómo escalar un objeto.
 ms.assetid: 3da749e2-50d5-4f4e-9ccd-8c230efe3436
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d833ea44e4a38672729dd7647063e8ed9f8de3574d820a3db40d5a848064ef15
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d9f46ae37197cb7cbfeb3f86588e1b5298cfc467
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119259155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163138"
 ---
 # <a name="how-to-scale-an-object"></a>Cómo escalar un objeto
 

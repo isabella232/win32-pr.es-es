@@ -5,11 +5,11 @@ title: Filtro de captura de audio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e2a630452565fafad3c4a4420154efd8fe6b282f
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162221"
 ---
 # <a name="audio-capture-filter"></a>Filtro de captura de audio
 
@@ -21,11 +21,11 @@ Este filtro puede funcionar con más de un dispositivo de hardware, por lo que l
 
 | Etiqueta | Value |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Interfaces de filtro                        | [**IAMAudioInputMixer,**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer) [**IAMFilterMiscFlags,**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags) [**IAMResourceControl,**](/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol) [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)IPersistPropertyBag, ISpecifyPropertyPages                                                               |
+| Interfaces de filtro                        | [**IAMAudioInputMixer,**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer) [**IAMFilterMiscFlags,**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags) [**IAMResourceControl**](/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol), [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)IPersistPropertyBag, ISpecifyPropertyPages                                                               |
 | Tipos de medios de pin de entrada                    | MEDIATYPE \_ AnalogAudio, MEDIASUBTYPE \_ NULL                                                                                                                                                                                                                                                         |
 | Interfaces de pin de entrada                     | [**IAMAudioInputMixer,**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer) [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                           |
 | Tipos de medios de pin de salida                   | MEDIATYPE \_ Audio, MEDIASUBTYPE \_ NULL                                                                                                                                                                                                                                                               |
-| Interfaces de pin de salida                    | [**IAMBufferNegotiation,**](/windows/desktop/api/Strmif/nn-strmif-iambuffernegotiation) [**IAMPushSource,**](/windows/desktop/api/Strmif/nn-strmif-iampushsource) [**IAMStreamConfig,**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig) [**IAMStreamControl,**](/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol) [**IKsPropertySet,**](ikspropertyset.md) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
+| Interfaces de pin de salida                    | [**IAMBufferNegotiation,**](/windows/desktop/api/Strmif/nn-strmif-iambuffernegotiation) [**IAMPushSource,**](/windows/desktop/api/Strmif/nn-strmif-iampushsource) [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig), [**IAMStreamControl**](/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol), [**IKsPropertySet**](ikspropertyset.md), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
 | Filtrar CLSID                             | No aplicable                                                                                                                                                                                                                                                                                     |
 | CLSID de la página de propiedades                      | CLSID \_ AudioInputMixerProperties                                                                                                                                                                                                                                                                   |
 | Executable                               | qcap.dll                                                                                                                                                                                                                                                                                           |
@@ -36,15 +36,15 @@ Este filtro puede funcionar con más de un dispositivo de hardware, por lo que l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los pines de entrada representan conexiones de hardware físico y nunca se conectan a otros filtros en DirectShow.
+Los pines de entrada representan conexiones de hardware físico y nunca se conectan a otros filtros de DirectShow.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> <dt>
 
 [Captura de audio](audio-capture.md)

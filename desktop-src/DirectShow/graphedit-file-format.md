@@ -4,12 +4,12 @@ ms.assetid: 84c2de05-6c8f-45f1-b789-04a24cfa3ea1
 title: Formato de archivo GraphEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbce90247e710772b75ad31593ce72a1fd4c8f9bd9fabf1be786b1e7bdc5e74d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a75421ff75c9bb26901eddf423448bbd9e4f478
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251120"
 ---
 # <a name="graphedit-file-format"></a>Formato de archivo GraphEdit
 

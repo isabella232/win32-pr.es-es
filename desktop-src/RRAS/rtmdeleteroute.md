@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0efe2e34345cc335b8214b781da4dce608dddcc4c2f77e80d8c86f76007c2855
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 310364bdb6e6ba7daf285316fcaaf16884e53929
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120073855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273543"
 ---
 # <a name="rtmdeleteroute-function"></a>Función RtmDeleteRoute
 
@@ -59,7 +59,7 @@ Puntero a una estructura específica de la familia de protocolos que especifica 
 
 
 
-| Valor                                                                                                                                                                                                         | Significado                                                                               |
+| Value                                                                                                                                                                                                         | Significado                                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | <span id="RR_Network"></span><span id="rr_network"></span><span id="RR_NETWORK"></span><dl> <dt>**RR \_ Network**</dt> </dl>                             | Especifica el número de red de destino. <br/>                                 |
 | <span id="RR_InterfaceID"></span><span id="rr_interfaceid"></span><span id="RR_INTERFACEID"></span><dl> <dt>**RR \_ InterfaceID**</dt> </dl>             | Especifica el índice de la interfaz a través de la que se recibió la ruta.<br/> |
@@ -107,7 +107,7 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 
 
-| Valor                                                                                                       | Descripción                                                                                            |
+| Value                                                                                                       | Descripción                                                                                            |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | El parámetro de identificador de cliente no es un identificador válido.<br/>                                          |
 | <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | La estructura de ruta a la que apunta *el parámetro Route* contiene un valor de miembro.<br/>            |
@@ -118,7 +118,7 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función genera un mensaje de cambio de ruta si la mejor ruta a una red de destino ha cambiado como resultado de la eliminación. Sin embargo, el mensaje de cambio de ruta no se envía al cliente que realiza esta llamada. En su lugar, esta función devuelve la información pertinente directamente a ese cliente.
 
@@ -126,18 +126,18 @@ La función genera un mensaje de cambio de ruta si la mejor ruta a una red de de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

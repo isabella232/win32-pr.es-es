@@ -1,5 +1,5 @@
 ---
-description: La función AMovieSetupRegisterFilter2 registra los valores, los pines y los tipos de medios de un filtro en el Registro mediante la interfaz IFilterMapper2.
+description: La función AMovieSetupRegisterFilter2 registra los valores, las marcas y los tipos de medios de un filtro en el registro mediante la interfaz IFilterMapper2.
 ms.assetid: 8e0f3485-9e5d-4b22-853d-4ad9b1fb71d2
 title: Función AMovieSetupRegisterFilter2 (Dllsetup.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 69b37fcf3e680cb8a64155aaf1474a8234934fe34bb5349151252ec7500e87a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 272b781cf70f1dede9d4eea64b45d3d9d793a119
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118001870"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162297"
 ---
 # <a name="amoviesetupregisterfilter2-function"></a>Función AMovieSetupRegisterFilter2
 
-La **función AMovieSetupRegisterFilter2** registra los valores, los pines y los tipos de medios de un filtro en el Registro mediante la [**interfaz IFilterMapper2.**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2)
+La **función AMovieSetupRegisterFilter2** registra los valores, las marcas y los tipos de medios de un filtro en el registro mediante la [**interfaz IFilterMapper2.**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ HRESULT AMovieDllRegisterServer(
 *psetupdata* 
 </dt> <dd>
 
-Puntero a los [**datos del filtro \_ de AMOVIESETUP.**](amoviesetup-filter.md)
+Puntero a los [**datos filter \_ de AMOVIESETUP.**](amoviesetup-filter.md)
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Puntero a [**la interfaz IFilterMapper2.**](/windows/desktop/api/Strmif/nn-strmi
 *bRegister* 
 </dt> <dd>
 
-Valor que indica si se debe registrar el filtro; **TRUE** indica registrar el filtro, **FALSE** indica anular el registro.
+Valor que indica si se va a registrar el filtro; **TRUE** indica registrar el filtro, **FALSE** indica anular el registro.
 
 </dd> </dl>
 
@@ -69,11 +69,11 @@ Valor que indica si se debe registrar el filtro; **TRUE** indica registrar el fi
 
 Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**función AMovieDllRegisterServer2**](amoviedllregisterserver2.md) llama a esta función auxiliar para registrar un filtro una vez registrado el servidor COM.
 
-Normalmente, un filtro usará [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) y no llamará directamente a esta función.
+Normalmente, un filtro usará [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) y no llamará a esta función directamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Normalmente, un filtro usará [**AMovieDllRegisterServer2**](amoviedllregisterse
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

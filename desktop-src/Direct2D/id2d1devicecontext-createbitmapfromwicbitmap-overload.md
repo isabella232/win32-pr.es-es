@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: dacc7d16e55c033141c8268ce771591c6b2b6f48be3314a16cff32bd602a0028
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0d96b08bad3eb2396cb1cc93f04f4852fb405b11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120044355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163089"
 ---
 # <a name="id2d1devicecontextcreatebitmapfromwicbitmap-methods"></a>Métodos ID2D1DeviceContext::CreateBitmapFromWicBitmap
 
@@ -35,7 +35,7 @@ Crea un mapa de bits de Direct2D copiando un mapa de bits de WIC.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

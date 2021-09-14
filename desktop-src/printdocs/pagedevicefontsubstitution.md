@@ -4,12 +4,12 @@ ms.assetid: 741aa729-35c3-43c2-93d8-e25ed508cfa6
 title: PageDeviceFontSubstitution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2104ac8fd6c0dde2275bbba5640fef75918fffbdb2596d81576f1877380068f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4dc5650c687a4c96e6c54ef7ea0631e77407e874
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252327"
 ---
 # <a name="pagedevicefontsubstitution"></a>PageDeviceFontSubstitution
 
@@ -19,13 +19,13 @@ Describe el estado habilitado o deshabilitado de la sustitución de fuentes de d
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |
@@ -68,7 +68,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 

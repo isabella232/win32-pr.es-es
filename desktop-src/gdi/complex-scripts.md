@@ -4,12 +4,12 @@ ms.assetid: a60b50c8-13e8-4c61-989f-187bb67cf929
 title: Scripts complejos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 550b5c85b94eade6a8e52fbc4bafc05dd3b484f83b872f7e6b96981507d91026
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c149aa1d9a6f5caf78fec5227f25aa30146fc273
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117887485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252626"
 ---
 # <a name="complex-scripts"></a>Scripts complejos
 

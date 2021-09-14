@@ -1,7 +1,7 @@
 ---
-description: Determina si el objeto IContextNode contiene datos almacenados en el identificador especificado.
+description: Determina si el objeto IContextNode contiene datos almacenados bajo el identificador especificado.
 ms.assetid: ac3a85a2-abf8-4ac4-8779-d9fda89497d4
-title: 'IContextNode:: ContainsPropertyData (método) (IACom. h)'
+title: Método IContextNode::ContainsPropertyData (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - IACom.dll
 ms.openlocfilehash: fc45e1ebe519e5988ad73e1481c68e9e9811ba04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497590"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251984"
 ---
-# <a name="icontextnodecontainspropertydata-method"></a>IContextNode:: ContainsPropertyData (método)
+# <a name="icontextnodecontainspropertydata-method"></a>IContextNode::ContainsPropertyData (método)
 
-Determina si el objeto [**IContextNode**](icontextnode.md) contiene datos almacenados en el identificador especificado.
+Determina si el objeto [**IContextNode**](icontextnode.md) contiene datos almacenados bajo el identificador especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,27 +40,27 @@ HRESULT ContainsPropertyData(
 
 <dl> <dt>
 
-*pPropertyDataId* \[ de\]
+*pPropertyDataId* \[ En\]
 </dt> <dd>
 
-El identificador de los datos.
+Identificador de los datos.
 
 </dd> <dt>
 
-*pbContains* \[ enuncia\]
+*pbContains* \[ out\]
 </dt> <dd>
 
-**Variante \_ TRUE** si el objeto [**IContextNode**](icontextnode.md) contiene datos almacenados en el identificador especificado; de lo contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** si el [**objeto IContextNode**](icontextnode.md) contiene datos almacenados bajo el identificador especificado; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Además de los datos específicos de la aplicación, también puede usar este método para determinar si este [**IContextNode**](icontextnode.md) contiene otros datos internos (consulte [propiedades](analysis-hint-properties.md) de la sugerencia de análisis y [propiedades del nodo de contexto](context-node-properties.md)).
+Además de los datos específicos de la aplicación, también puede usar este método [](analysis-hint-properties.md) para determinar si este [**IContextNode**](icontextnode.md) contiene otros datos internos (vea Propiedades de sugerencias de análisis y Propiedades del [nodo de contexto).](context-node-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ Además de los datos específicos de la aplicación, también puede usar este m�
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -100,7 +100,7 @@ Además de los datos específicos de la aplicación, también puede usar este m�
 [**IContextNode::SavePropertiesData**](icontextnode-savepropertiesdata.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

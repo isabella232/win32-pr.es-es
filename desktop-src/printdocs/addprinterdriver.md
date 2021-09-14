@@ -15,21 +15,21 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: edf4c0beaf0279040adf5ba2971f2196b5783990d0d03b240d1d3f86cc080ef2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de5a9e9d16a47dfe8b9620edc9acdc5c5fd4d552
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117868885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252338"
 ---
 # <a name="addprinterdriver-function"></a>Función AddPrinterDriver
 
 La **función AddPrinterDriver** instala un controlador de impresora local o remoto y asocia los archivos de configuración, datos y controladores.
 
-Para obtener más flexibilidad en la instalación o actualización de controladores de impresora, use la función [**AddPrinterDriverEx**](addprinterdriverex.md) porque permite una actualización estricta, una degradación estricta, la copia solo de archivos más recientes y la copia de todos los archivos (independientemente de las marcas de tiempo de archivo).
+Para mayor flexibilidad en la instalación o actualización de controladores de impresora, use la función [**AddPrinterDriverEx**](addprinterdriverex.md) porque permite una actualización estricta, una degradación estricta, la copia solo de archivos más recientes y la copia de todos los archivos (independientemente de las marcas de tiempo de archivo).
 
 > [!Note]  
-> Ya no se recomienda instalar un controlador de impresora sin un paquete de controladores. En [**su lugar, use InstallPrinterDriverFromPackage.**](installprinterdriverfrompackage.md)
+> Ya no se recomienda instalar un controlador de impresora sin un paquete de controladores. Use [**InstallPrinterDriverFromPackage en su**](installprinterdriverfrompackage.md) lugar.
 
  
 
@@ -75,13 +75,13 @@ Puntero a una estructura que contiene información del controlador de impresora.
 
 
 
-| Valor | Estructura de unidad de impresora                  |
+| Value | Estructura de la unidad de impresora                  |
 |-------|------------------------------------------|
-| 2     | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 2**](driver-info-2.md) |
-| 3     | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 3**](driver-info-3.md) |
-| 4     | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 4**](driver-info-4.md) |
-| 6     | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 6**](driver-info-6.md) |
-| 8     | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 8**](driver-info-8.md) |
+| 2     | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 2**](driver-info-2.md) |
+| 3     | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 3**](driver-info-3.md) |
+| 4     | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 4**](driver-info-4.md) |
+| 6     | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 6**](driver-info-6.md) |
+| 8     | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 8**](driver-info-8.md) |
 
 
 
@@ -97,14 +97,14 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-El autor de la llamada debe [tener SeLoadDriverPrivilege.](/windows/desktop/SecAuthZ/authorization-constants)
+El autor de la llamada debe [tener seLoadDriverPrivilege](/windows/desktop/SecAuthZ/authorization-constants).
 
 Antes de que una aplicación llame a la función **AddPrinterDriver,** todos los archivos requeridos por el controlador deben copiarse en el directorio printer-driver del sistema. Una aplicación puede recuperar el nombre de este directorio llamando a la [**función GetPrinterDriverDirectory.**](getprinterdriverdirectory.md)
 
@@ -114,7 +114,7 @@ Una aplicación puede determinar qué controladores de impresora están instalad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -138,16 +138,16 @@ Una aplicación puede determinar qué controladores de impresora están instalad
 [**AddPrinterDriverEx**](addprinterdriverex.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL CONTROLADOR \_ 2**](driver-info-2.md)
+[**INFORMACIÓN \_ DEL \_ CONTROLADOR 2**](driver-info-2.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL CONTROLADOR \_ 3**](driver-info-3.md)
+[**INFORMACIÓN \_ DEL \_ CONTROLADOR 3**](driver-info-3.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL CONTROLADOR \_ 4**](driver-info-4.md)
+[**INFORMACIÓN \_ DEL \_ CONTROLADOR 4**](driver-info-4.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL CONTROLADOR \_ 6**](driver-info-6.md)
+[**INFORMACIÓN \_ DEL \_ CONTROLADOR 6**](driver-info-6.md)
 </dt> <dt>
 
 [**EnumPrinterDrivers**](enumprinterdrivers.md)

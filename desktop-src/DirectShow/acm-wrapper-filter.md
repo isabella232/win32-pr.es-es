@@ -5,19 +5,19 @@ title: Filtro de contenedor de ACM
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7f0688150ab417c6ebb71313a438f72ef7839042
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162413"
 ---
 # <a name="acm-wrapper-filter"></a>Filtro de contenedor de ACM
 
 El filtro contenedor de ACM permite que los códecs del Administrador de compresión de audio (ACM) se unan a un gráfico de filtros. Puede actuar como filtro de descompresión o como filtro de compresión.
 
-Como filtro de descompresión, el contenedor de ACM aparece en la categoría "filtros de DirectShow" (CLSID LegacyAmFilterCategory) y tiene un nivel de \_ DETECCIÓN \_ NORMAL. El tipo de medio de conexión en el pin de entrada determina qué códec usa el filtro. Normalmente, la aplicación no necesita agregar el filtro al gráfico de filtros; Se extrae automáticamente mediante el Administrador de filtros Graph cuando sea necesario. La descompresión es solo para el audio PCM.
+Como filtro de descompresión, el contenedor de ACM aparece en la categoría "filtros de DirectShow" (CLSID LegacyAmFilterCategory) y tiene un nivel \_ de VALOR NORMAL DE \_ MES. El tipo de medio de conexión en el pin de entrada determina qué códec usa el filtro. Normalmente, la aplicación no necesita agregar el filtro al gráfico de filtros; El Administrador de filtros lo extrae automáticamente cuando Graph necesario. La descompresión es solo para el audio PCM.
 
-Como filtro de compresión, el contenedor de ACM aparece en la categoría "Audio Deserciones" (CLSID AudioCompressorCategory) y tiene un gran nivel de \_ NO USAR DE \_ \_ \_ LUGAR. Cada códec aparece como una instancia independiente. Para la compresión, no puede crear directamente el filtro con CoCreateInstance. En su lugar, debe usar el enumerador de dispositivos del sistema. Para obtener más información, [vea Usar el enumerador de dispositivos del sistema](using-the-system-device-enumerator.md).
+Como filtro de compresión, el contenedor de ACM aparece en la categoría "Audio Deserciones" (CLSID AudioCompressorCategory) y tiene una virtud \_ de NO USAR NO \_ \_ \_ USAR. Cada códec aparece como una instancia independiente. Para la compresión, no puede crear directamente el filtro con CoCreateInstance. En su lugar, debe usar el enumerador de dispositivos del sistema. Para obtener más información, [vea Usar el enumerador de dispositivos del sistema](using-the-system-device-enumerator.md).
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 56f3685f-3df8-4358-b04e-3efc04b58008
 title: DirectShow Referencia de clase base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 950a4eff89e235194be974256492bd23701f69e5f64181a2e805cf67c1fd62f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8816656f0ae87224cc95886ad32aaa1a098f177
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118663052"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161698"
 ---
 # <a name="directshow-base-class-reference"></a>DirectShow Referencia de clase base
 
-Esta sección contiene entradas de referencia para todas las clases base de Microsoft [DirectShow](directshow-base-classes.md), sus miembros de datos y sus funciones.
+Esta sección contiene entradas de referencia para todas las clases base de Microsoft [DirectShow](directshow-base-classes.md)base, sus miembros de datos y sus funciones.
 
 
 
@@ -21,10 +21,10 @@ Esta sección contiene entradas de referencia para todas las clases base de Micr
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | [**CAggDirectDraw**](caggdirectdraw.md)                               | En desuso.                                                                                                                       |
 | [**CAggDrawSurface**](caggdrawsurface.md)                             | En desuso.                                                                                                                       |
-| [**EVENTO DE LA CÁMARA**](camevent.md)                                           | Clase contenedora para eventos de restablecimiento manual y automático.                                                                                  |
+| [**EVENTO DE CÁMARA**](camevent.md)                                           | Clase contenedora para eventos de restablecimiento manual y automático.                                                                                  |
 | [**CAMMsgEvent**](cammsgevent.md)                                     | Clase contenedora para objetos de evento que realizan el procesamiento de mensajes.                                                                  |
 | [**CAMSchedule**](camschedule.md)                                     | Programador para los relojes de referencia.                                                                                                   |
-| [**CAMThread**](camthread.md)                                         | Clase de subprocesos de trabajo para administrar subprocesos de trabajo.                                                                                           |
+| [**SUBPROCESOProceso**](camthread.md)                                         | Clase de subprocesos de trabajo para administrar subprocesos de trabajo.                                                                                           |
 | [**CAutoLock**](cautolock.md)                                         | Contiene una sección crítica para el ámbito de un bloque.                                                                                |
 | [**CAutoUsingOutputPin**](cautousingoutputpin-cautousingoutputpin.md) | Obtiene y libera el acceso a un [**objeto CDynamicOutputPin.**](cdynamicoutputpin.md)                                           |
 | [**CBaseAllocator**](cbaseallocator.md)                               | Clase Deserción para asignadores.                                                                                                        |
@@ -68,27 +68,27 @@ Esta sección contiene entradas de referencia para todas las clases base de Micr
 | [**CMediaSample**](cmediasample.md)                                   | Ejemplo multimedia.                                                                                                                     |
 | [**CMediaType**](cmediatype.md)                                       | Clase para administrar tipos de medios.                                                                                                   |
 | [**CMemAllocator**](cmemallocator.md)                                 | Asignador de memoria.                                                                                                                 |
-| [**CMsg**](cmsg.md)                                                   | Clase auxiliar para administrar las solicitudes realizadas a un [**objeto CMsgThread.**](cmsgthread.md)                                             |
+| [**CMsg**](cmsg.md)                                                   | Clase auxiliar para administrar las solicitudes realizadas a [**un objeto CMsgThread.**](cmsgthread.md)                                             |
 | [**CMsgThread**](cmsgthread.md)                                       | Subproceso de trabajo que pone en cola las solicitudes al subproceso de cola para la finalización asincrónica.                                             |
 | [**COARefTime**](coareftime.md)                                       | Convierte los tiempos de referencia entre segundos y unidades de 100 nanosegundos.                                                                |
-| [**COutputQueue**](coutputqueue.md)                                   | Objeto que pone en cola ejemplos de medios para la entrega.                                                                                    |
+| [**COutputQueue**](coutputqueue.md)                                   | Objeto que pone en cola ejemplos multimedia para la entrega.                                                                                    |
 | [**CPersistStream**](cpersiststream.md)                               | Clase base para implementar la interfaz IPersistStream.                                                                         |
-| [**CPosPassThru**](cpospassthru.md)                                   | Los identificadores buscan comandos para filtros con un pin de entrada.                                                                             |
+| [**CPosPassThru**](cpospassthru.md)                                   | Controla los comandos de búsqueda para los filtros con un pin de entrada.                                                                             |
 | [**CPullPin**](cpullpin.md)                                           | Clase auxiliar que extrae datos de un pin de salida que admite la [**interfaz IAsyncReader.**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader)                 |
-| [**CQueue**](cqueue.md)                                               | Plantilla de clase que implementa una cola sencilla de tamaño estático.                                                                  |
+| [**CQueue**](cqueue.md)                                               | Plantilla de clase que implementa una cola de tamaño estático simple.                                                                  |
 | [**CRefTime**](creftime.md)                                           | Clase auxiliar para administrar los tiempos de referencia.                                                                                           |
 | [**CRenderedInputPin**](crenderedinputpin.md)                         | Pin de entrada para filtros de representador que admiten varias entradas.                                                                      |
 | [**CRendererInputPin**](crendererinputpin.md)                         | Pin de entrada para la [**clase CBaseRenderer.**](cbaserenderer.md)                                                                   |
-| [**CRendererPosPassThru**](crendererpospassthru.md)                   | Los identificadores buscan comandos para los filtros del representador.                                                                                       |
-| [**CSeekingPassThru**](cseekingpassthru.md)                           | Objeto auxiliar que crea [**objetos CPosPassThru**](cpospassthru.md) y [**CRendererPosPassThru.**](crendererpospassthru.md) |
+| [**CRendererPosPassThru**](crendererpospassthru.md)                   | Controla los comandos de búsqueda para los filtros del representador.                                                                                       |
+| [**CSeekingPassThru**](cseekingpassthru.md)                           | Objeto auxiliar que crea [**objetos CPosPassThru**](cpospassthru.md) [**y CRendererPosPassThru.**](crendererpospassthru.md) |
 | [**CSource**](csource.md)                                             | Clase base para implementar filtros de origen.                                                                                       |
 | [**CSourcePosition**](csourceposition.md)                             | Clase abstracta para implementar la [**interfaz IMediaPosition.**](/windows/desktop/api/Control/nn-control-imediaposition) Obsoleto.                                 |
 | [**CSourceSeeking**](csourceseeking.md)                               | Clase abstracta para implementar búsquedas en filtros de origen con un pin de salida.                                                    |
 | [**CSourceStream**](csourcestream.md)                                 | Pin de salida para la [**clase CSource.**](csource.md)                                                                              |
 | [**CSystemClock**](csystemclock.md)                                   | Reloj del sistema.                                                                                                                     |
 | [**CTransformFilter**](ctransformfilter.md)                           | Clase base para implementar filtros de transformación.                                                                                    |
-| [**CTransformInputPin**](ctransforminputpin.md)                       | Pin de entrada utilizado por la clase CTransformFilter.                                                                                     |
-| [**CTransformOutputPin**](ctransformoutputpin.md)                     | Pin de salida utilizado por la clase CTransformFilter.                                                                                    |
+| [**CTransformInputPin**](ctransforminputpin.md)                       | Pin de entrada usado por la clase CTransformFilter.                                                                                     |
+| [**CTransformOutputPin**](ctransformoutputpin.md)                     | Pin de salida usado por la clase CTransformFilter.                                                                                    |
 | [**CTransInPlaceFilter**](ctransinplacefilter.md)                     | Clase para implementar filtros de transformación que no copian datos.                                                                   |
 | [**CTransInPlaceInputPin**](ctransinplaceinputpin.md)                 | Pin de entrada para la clase CTransInPlaceFilter.                                                                                      |
 | [**CTransInPlaceOutputPin**](ctransinplaceoutputpin.md)               | Pin de salida para la clase CTransInPlaceFilter.                                                                                     |

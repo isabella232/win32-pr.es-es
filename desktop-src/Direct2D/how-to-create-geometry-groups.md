@@ -10,12 +10,12 @@ keywords:
 - Direct2D, geometrías de ruta de acceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5540d96b9befddaa8eb6eef7fcc61e3e6c7665a7319de1ea123c9ce94281f101
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ceb4a0e63a3274473153e1871a8a085bb04d5146
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119259255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163174"
 ---
 # <a name="how-to-create-geometry-groups"></a>Cómo crear grupos de geometría
 
@@ -25,7 +25,7 @@ Para crear un grupo de geometría, llame al método [**ID2D1Factory::CreateGeome
 
 Al combinar geometrías en un grupo de geometría, asegúrese de que las geometrías están orientadas de forma similar. Si no está seguro de la orientación de las geometrías, llame a [**ID2D1Geometry::Outline**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)) en cada una de ellas individualmente y, a continuación, inserte las geometrías resultantes en el grupo de geometría.
 
-En el ejemplo de código siguiente se muestra la creación de cuatro círculos concéntricas: el primer círculo tiene un radio de 25, el segundo 50, el tercero 75 y el cuarto 100. El código también muestra la creación de instancias de una matriz de geometrías, así como las dos llamadas a [**CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup).
+En el ejemplo de código siguiente se muestra la creación de cuatro círculos concéntricas: el primer círculo tiene un radio de 25, el segundo 50, el tercero 75 y el cuarto 100. El código también muestra la creación de instancias de una matriz de geometrías, así como las dos llamadas a [**CreateGeometryGroup.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup)
 
 
 ```C++

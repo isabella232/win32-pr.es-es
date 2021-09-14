@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 827a82bf76fe78b86f97efa3aa01e0ae1106cd81430952b5d5b2849b5b3dd492
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8115ed3d9795720796b5f944c11a519ff366983
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119547435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251283"
 ---
 # <a name="create-method-of-the-win32_baseservice-class"></a>Método Create de la clase BaseService win32 \_
 
 El **método de** clase Create [WMI](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo servicio. El *parámetro LoadOrderGroup* representa una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ uint32 Create(
 *Nombre* \[ En\]
 </dt> <dd>
 
-Nombre del servicio que se instalará en el **método Create.** La longitud máxima de la cadena es de 256 caracteres. La base de datos del administrador de control de servicios conserva el uso de mayúsculas y minúsculas de los caracteres, pero las comparaciones de nombres de servicio siempre no tienen en cuenta las mayúsculas y minúsculas. Las barras diagonales (/) y las dos barras diagonales () son \\ caracteres de nombre de servicio no válidos.
+Nombre del servicio que se instalará en el **método Create.** La longitud máxima de la cadena es de 256 caracteres. La base de datos del administrador de control de servicios conserva el uso de mayúsculas y minúsculas de los caracteres, pero las comparaciones de nombres de servicio siempre no tienen en cuenta las mayúsculas y minúsculas. Las barras diagonales (/) y las dos barras diagonales () son caracteres de nombre de \\ servicio no válidos.
 
 </dd> <dt>
 
@@ -195,7 +195,7 @@ El sistema intenta comenzar con una buena configuración.
 *StartMode* \[ En\]
 </dt> <dd>
 
-Modo de inicio del Windows base.
+Modo de inicio del servicio Windows base.
 
 <dt>
 
@@ -264,7 +264,7 @@ Si **es true,** el servicio puede crear o comunicarse con ventanas en el escrito
 *StartName* \[ En\]
 </dt> <dd>
 
-Nombre de cuenta con el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de la cuenta puede tener el formato "NombreDeServidor \\ DeNombreDe Domain". El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, ". \\ Nombre de usuario" se puede especificar. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. Para un kernel o controladores de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio. Ejemplo: Administrador de \\ DWDOM.
+Nombre de cuenta con el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de la cuenta puede tener el formato "NombreDeServidor \\ DeNombreDe Domain". El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, ". \\ Nombre de usuario" se puede especificar. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. Para un kernel o controladores de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S en función del nombre del servicio. Ejemplo: Administrador de \\ DWDOM.
 
 </dd> <dt>
 
@@ -394,7 +394,7 @@ No se encontró la ruta de acceso del directorio al archivo ejecutable del servi
 
 </dd> <dt>
 
-**Servicio ya en ejecución**
+**Servicio que ya se está ejecutando**
 </dt> <dd>
 
 10
@@ -484,7 +484,7 @@ Hay un servicio que se ejecuta con el mismo nombre.
 
 </dd> <dt>
 
-**Nombre de estado no válido**
+**Nombre no válido del estado**
 </dt> <dd>
 
 20
@@ -540,7 +540,7 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -557,7 +557,7 @@ El servicio se encuentra en pausa actualmente en el sistema.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ BaseService**](win32-baseservice.md)
+[**BaseService de Win32 \_**](win32-baseservice.md)
 </dt> </dl>
 
  

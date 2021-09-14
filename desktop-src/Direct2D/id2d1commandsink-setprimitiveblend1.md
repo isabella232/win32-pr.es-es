@@ -1,6 +1,6 @@
 ---
-title: ID2D1CommandSink1 SetPrimitiveBlend1, método
-description: Establece un nuevo modo de mezcla primitivo.
+title: Método ID2D1CommandSink1 SetPrimitiveBlend1
+description: Establece un nuevo modo de combinación primitivo.
 ms.assetid: 3EA9EC07-1B2F-48A2-ABFB-2DA0E2EFFBF4
 keywords:
 - Método SetPrimitiveBlend1 Direct2D
@@ -16,15 +16,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: b3aa961eec873cc84e5b34ce41279c09f580e63d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163102"
 ---
-# <a name="id2d1commandsink1setprimitiveblend1-method"></a>ID2D1CommandSink1:: SetPrimitiveBlend1 (método)
+# <a name="id2d1commandsink1setprimitiveblend1-method"></a>Método ID2D1CommandSink1::SetPrimitiveBlend1
 
-Establece un nuevo modo de mezcla primitivo.
+Establece un nuevo modo de combinación primitivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ HRESULT SetPrimitiveBlend1(
 *primitiveBlend* 
 </dt> <dd>
 
-Tipo: **[ **D2D1 \_ primitiva \_ Blend**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend)**
+Tipo: **[ **D2D1 \_ PRIMITIVE \_ BLEND**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend)**
 
-Combinación primitiva que se aplicará a los primitivos posteriores.
+Combinación primitiva que se aplicará a las primitivas posteriores.
 
 </dd> </dl>
 
@@ -54,45 +54,45 @@ Combinación primitiva que se aplicará a los primitivos posteriores.
 
 Tipo: **HRESULT**
 
-Si el método se ejecuta correctamente, devuelve **S \_ correcto**. Si se produce un error, devuelve un código de error **HRESULT** .
+Si el método se realiza correctamente, devuelve **S \_ OK**. Si se produce un error, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
 ### <a name="blend-modes"></a>Modos de fusión
 
-En la representación con alias (excepto en el modo MIN), el valor de salida O se calcula mediante la interpolación lineal del valor *Blend (S, D)* con el valor de píxel de destino, en función de la cantidad que el primitivo cubre el píxel de destino.
+Para la representación con alias (excepto para el modo MIN), el valor de salida O se calcula interpolando linealmente el valor *blend(S, D)* con el valor de píxel de destino, en función de la cantidad que la primitiva cubre el píxel de destino.
 
-En la tabla siguiente se muestran los modos de mezcla primitivos para la combinación con alias y con suavizado de contorno. Las ecuaciones que aparecen en la tabla usan estos elementos:
+En la tabla siguiente se muestran los modos de combinación primitivos para la combinación con alias y suavizado de contorno. Las ecuaciones enumeradas en la tabla usan estos elementos:
 
--   O = salida
--   S = origen
--   SA = alfa de origen
--   D = destino
--   DA = alfa de destino
--   C = cobertura de píxeles
+-   O = Salida
+-   S = Origen
+-   SA = Alfa de origen
+-   D = Destino
+-   DA = Alfa de destino
+-   C = Cobertura de píxeles
 
 
 
-| Modo de mezcla primitivo                 | Combinación con alias                            | Mezcla suavizada            | Descripción                                                                                                              |
+| Modo de combinación primitivo                 | Combinación con alias                            | Combinación con suavizado de contorno            | Descripción                                                                                                              |
 |--------------------------------------|---------------------------------------------|---------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| \_Origen de mezcla primitivo de D2D1 \_ \_ \_ sobre | O = (S + (1 SA) \* D) \* C + D \* (1 C) | O = S \* C + D \* (1 SA \* C)   | Modo de mezcla de origen a destino estándar.                                                                         |
-| \_Copia de \_ Blend D2D1 primitiva \_         | O = S \* C + D \* (1 c)                   | O = S \* C + D \* (1 c)       | El origen se copia en el destino; los píxeles de destino se omiten.                                             |
-| D2D1 \_ primitiva de \_ mezcla \_ mínima          | O = min (S + 1-SA, D)                        | O = min (S \* c + 1 SA \* C, D) | Los valores de píxeles resultantes usan el mínimo de los valores de píxel de origen y de destino. Disponible en Windows 8 y versiones posteriores. |
-| D2D1 \_ primitiva \_ Blend \_ Add          | O = (S + D) \* C + d \* (1 c)             | O = S \* C + D                  | Los valores de píxeles resultantes son la suma de los valores de los píxeles de origen y de destino. Disponible en Windows 8 y versiones posteriores.     |
+| D2D1 \_ PRIMITIVE \_ BLEND \_ SOURCE \_ OVER | O = (S + (1 SA) \* D) \* C + D \* (1 C) | O = S \* C + D \* (1 SA \* C)   | Modo blend de origen sobre destino estándar.                                                                         |
+| COPIA DE BLEND PRIMITIVA D2D1 \_ \_ \_         | O = S \* C + D \* (1 C)                   | O = S \* C + D \* (1 C)       | El origen se copia en el destino; se omiten los píxeles de destino.                                             |
+| D2D1 \_ PRIMITIVE \_ BLEND \_ MIN          | O = Min(S + 1-SA, D)                        | O = Min(S \* C + 1 SA \* C, D) | Los valores de píxel resultantes usan el mínimo de los valores de píxel de origen y destino. Disponible en Windows 8 y versiones posteriores. |
+| D2D1 \_ PRIMITIVE \_ BLEND \_ ADD          | O = (S + D) \* C + D \* (1 C)             | O = S \* C + D                  | Los valores de píxel resultantes son la suma de los valores de píxel de origen y destino. Disponible en Windows 8 y versiones posteriores.     |
 
 
 
  
 
-![Ilustración de los modos de mezcla primitivos de direct2d con opacidad y fondo variables.](images/primblenddemo.png)
+![ilustración de los modos de combinación primitivos de Direct2d con opacidad y fondos variables.](images/primblenddemo.png)
 
-Ilustración de los modos de mezcla primitivos con opacidad y fondo variables.
+Ilustración de los modos de combinación primitivos con opacidad y fondos variables.
 
-La mezcla primitiva se aplicará a toda la primitiva dibujada en el contexto, a menos que se invalide con el parámetro *compositeMode* en la API [**DrawImage**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)) .
+La combinación primitiva se aplicará a todas las primitivas dibujadas en el contexto, a menos que se invalide con el *parámetro compositeMode* en la API [**DrawImage.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode))
 
-La mezcla primitiva se aplica al interior de cualquier primitiva dibujada en el contexto. En el caso de [**DrawImage**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)), lo implicará el rectángulo de imagen, el desplazamiento y la transformación universal.
+La combinación primitiva se aplica al interior de cualquier primitivo dibujado en el contexto. En el caso de [**DrawImage**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)), esto estará implícito en el rectángulo de la imagen, el desplazamiento y la transformación del mundo.
 
-Si la mezcla primitiva es algo que no sea **D2D1 \_ primitiva \_ Blend \_** , se desactivará la representación de ClearType. Si la aplicación fuerza explícitamente la representación ClearType en estos modos, el contexto de dibujo se colocará en un estado de error. Se \_ \_ devolverá un estado incorrecto de D2DERR desde [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush).
+Si la combinación primitiva es cualquier cosa que no **sea D2D1 \_ PRIMITIVE BLEND \_ \_ OVER,** se desactivará la representación de ClearType. Si la aplicación fuerza explícitamente la representación de ClearType en estos modos, el contexto de dibujo se colocará en un estado de error. D2DERR \_ WRONG STATE se devolverá desde \_ [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,13 +100,13 @@ Si la mezcla primitiva es algo que no sea **D2D1 \_ primitiva \_ Blend \_** , se
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                          |
-| Teléfono mínimo compatible<br/>  | Windows Phone 8,1 \[ Windows Phone aplicaciones de Windows Runtime Silverlight 8,1 y\]<br/> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                          |
+| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 9f2c18ec-3684-42a8-a3df-5f8827b27642
 title: Televisión análoga
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 886c2b3f93ca70fb4a533f131611431c4a15df51169f70ed49f321c0ccfc8c2d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33af8ba94831afed59d783598dbf6bc0eaee0ec6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117824768"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162285"
 ---
 # <a name="analog-television"></a>Televisión análoga
 
@@ -26,9 +26,9 @@ En el diagrama siguiente se muestra un gráfico de filtros típico para la vista
 -   El [filtro tv Tuner controla](tv-tuner-filter.md) el ajuste.
 -   El [filtro tv Audio](tv-audio-filter.md) controla la decodificación de audio.
 -   Si la tarjeta de afinador tiene más de una entrada física, el filtro [de](analog-video-crossbar-filter.md) barra cruzada de vídeo análogo permite a la aplicación seleccionar qué entrada se descodifica y representa.
--   El [filtro captura de vídeo wdm](wdm-video-capture-filter.md) entrega la secuencia de vídeo digitalizado.
+-   El [filtro captura de vídeo de WDM](wdm-video-capture-filter.md) ofrece la secuencia de vídeo digitalizado.
 
-Capture Graph Builder inserta automáticamente los filtros que se requieren en la parte superior del filtro de captura.
+Capture Graph Builder inserta automáticamente los filtros que se requieren en el nivel superior del filtro de captura.
 
 Esta sección contiene los siguientes temas:
 

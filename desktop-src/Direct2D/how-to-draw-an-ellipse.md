@@ -5,12 +5,12 @@ ms.assetid: 8a68fc3f-118c-447b-856c-05417ae4ef29
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: d072d6f43467aab9230796bfb24139630995e3f525c7e86a0c5e179ddd82048e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93d8f3a3ddeb06c9168971789dff3ac8c9222d22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118003756"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163169"
 ---
 # <a name="how-to-draw-and-fill-a-basic-shape"></a>Dibujar y rellenar una forma básica
 
@@ -26,7 +26,7 @@ Este tema contiene las siguientes secciones:
 
 ## <a name="draw-the-outline-of-an-ellipse-with-a-solid-stroke"></a>Dibujar el contorno de una elipse con un trazo sólido
 
-Para dibujar el contorno de una elipse, defina un pincel (por ejemplo, [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) o [**ID2D1LinearGradientBrush)**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush)para pintar el contorno y una [**\_ ELIPSE D2D1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse) para describir la posición y las dimensiones de la elipse y, a continuación, pasar estos objetos al método [**ID2D1RenderTarget::D rawVelopse.**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawellipse(constd2d1_ellipse__id2d1brush_float_id2d1strokestyle)) En el ejemplo siguiente se crea un pincel de color sólido negro y se almacena en el miembro de clase m \_ spBlackBrush.
+Para dibujar el contorno de una elipse, defina un pincel (por ejemplo, [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) o [**ID2D1LinearGradientBrush)**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush)para pintar el contorno y una [**elipse D2D1 \_ para**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse) describir la posición y las dimensiones de la elipse y, a continuación, pasar estos objetos al [**método ID2D1RenderTarget::D rawVelopse.**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawellipse(constd2d1_ellipse__id2d1brush_float_id2d1strokestyle)) En el ejemplo siguiente se crea un pincel de color sólido negro y se almacena en el miembro de clase m \_ spBlackBrush.
 
 
 ```C++

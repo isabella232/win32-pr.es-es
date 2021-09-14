@@ -4,12 +4,12 @@ description: Funciones de control ComboBox
 ms.assetid: 102793c0-157b-4430-b016-e80a95e3886f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80a9f038a628f21d2c350ee4a674c41391b7f07d8ae6f83c2c62ba4fc5dc9a4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a269f47223b79b3adec53575afebde2e96bc5dc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120064345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251246"
 ---
 # <a name="combobox-control-functions"></a>Funciones de control ComboBox
 

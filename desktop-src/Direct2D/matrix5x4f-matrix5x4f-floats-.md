@@ -1,10 +1,10 @@
 ---
-title: Matrix5x4F Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) (D2d1 \_ helper.h)
+title: Matrix5x4F Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) (D2d1 \_ helper.h)
 description: Crea instancias de una nueva instancia de una clase Matrix5x4F que se inicializa con todos los valores de la matriz de punto flotante.
 ms.assetid: 46C2741F-9E49-4ABD-9DA5-D4E6D3CA2B09
 keywords:
 - Matrix5x4F constructor Direct2D
-- Constructor Matrix5x4F Direct2D , interfaz Matrix5x4F
+- Matrix5x4F constructor Direct2D , interfaz Matrix5x4F
 - Interfaz Matrix5x4F Direct2D, constructor Matrix5x4F
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3626e4af5e51555779a2d14c731fbeb4a2ad30ce542ce2ca9447116332c9faea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2582e58f535ddf4f87d54e16dd2edaec2aa37e91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119430635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162682"
 ---
-# <a name="matrix5x4fmatrix5x4ffloat-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Constructor Matrix5x4F::Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT
+# <a name="matrix5x4fmatrix5x4ffloat-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Matrix5x4F::Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)
 
 Crea instancias de una nueva instancia de una clase [**Matrix5x4F**](matrix5x4f.md) que se inicializa con todos los valores de la matriz de punto flotante.
 
@@ -102,7 +102,7 @@ Valor de la primera fila y la cuarta columna de la matriz.
 
 Tipo: **FLOAT**
 
-Valor de la segunda fila y primera columna de la matriz.
+Valor de la segunda fila y la primera columna de la matriz.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Valor de la segunda fila y la cuarta columna de la matriz.
 
 Tipo: **FLOAT**
 
-Valor de la tercera fila y primera columna de la matriz.
+Valor de la tercera fila y la primera columna de la matriz.
 
 </dd> <dt>
 
@@ -165,7 +165,7 @@ Valor de la tercera fila y tercera columna de la matriz.
 
 Tipo: **FLOAT**
 
-Valor de la tercera fila y cuarta columna de la matriz.
+Valor de la tercera fila y la cuarta columna de la matriz.
 
 </dd> <dt>
 
@@ -247,17 +247,17 @@ Valor de la quinta fila y cuarta columna de la matriz.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma solo para Windows de escritorio de Vista \[\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma solo para aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma solo Windows aplicaciones de escritorio de Vista \[\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y actualización de plataforma solo para aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                           |
 | Espacio de nombres<br/>                | D2D1<br/>                                                                                                                   |
-| Header<br/>                   | <dl> <dt>D2d1 \_ helper.h</dt> </dl>                                         |
+| Encabezado<br/>                   | <dl> <dt>D2d1 \_ helper.h</dt> </dl>                                         |
 | Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                               |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

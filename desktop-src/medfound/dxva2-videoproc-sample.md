@@ -5,11 +5,11 @@ title: DXVA2_VideoProc ejemplo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d8fc4be1bad6a3955af255cb083a4595ecedfd30
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252494"
 ---
 # <a name="dxva2_videoproc-sample"></a>Ejemplo de VideoProc de DXVA2 \_
 
@@ -67,10 +67,10 @@ Cada una de las teclas de función de F1 a F8 cambia a un modo en el que las tec
 | Clave | Descripción | 
 |-----|-------------|
 | F1 | Ajuste los valores alfa.<br /><ul><li>UP: aumente el alfa planar de ambas secuencias.</li><li>DOWN: reduzca el alfa planar de ambas secuencias.</li><li>RIGHT: aumente el píxel alfa de la subsección.</li><li>LEFT: reduzca el píxel alfa de la subsección.</li></ul>Color de substream: Blanco<br /> | 
-| F2 | Ajuste el área de origen del flujo principal (zoom).<br /><ul><li>SUBIR: aumentar verticalmente (acercar).</li><li>DOWN: disminuir verticalmente (alejar).</li><li>RIGHT: Aumentar horizontalmente (acercar).</li><li>LEFT: reducir horizontalmente (alejar).</li></ul>Color de subtransmisión: rojo<br /> | 
+| F2 | Ajuste el área de origen del flujo principal (zoom).<br /><ul><li>SUBIR: aumente verticalmente (acercar).</li><li>DOWN: disminuir verticalmente (alejar).</li><li>RIGHT: Aumentar horizontalmente (acercar).</li><li>LEFT: reducir horizontalmente (alejar).</li></ul>Color de subtransmisión: rojo<br /> | 
 | F3 | Mueva el área de origen del flujo principal.<br /><ul><li>SUBIR: subir.</li><li>DOWN: bajar.</li><li>RIGHT: moverse a la derecha.</li><li>LEFT: mover a la izquierda.</li></ul>Color de subtransmisión: amarillo<br /> | 
 | F4 | Ajuste el área de destino del flujo principal.<br /><ul><li>UP: aumente verticalmente.</li><li>DOWN: disminuir verticalmente.</li><li>RIGHT: aumente horizontalmente.</li><li>LEFT: disminuir horizontalmente.</li></ul>Color de substream: Verde<br /> | 
-| F5 | Mueva el área de destino del flujo principal.<br /><ul><li>SUBIR: subir.</li><li>DOWN: bajar.</li><li>RIGHT: moverse a la derecha.</li><li>LEFT: mover a la izquierda.</li></ul>Color de substream: Cian<br /> | 
+| F5 | Mueva el área de destino del flujo principal.<br /><ul><li>SUBIR: subir.</li><li>DOWN: bajar.</li><li>RIGHT: moverse a la derecha.</li><li>LEFT: mover a la izquierda.</li></ul>Color de subtransmisión: Cian<br /> | 
 | F6 | Cambiar el color de fondo o el espacio de color.<br /><ul><li>UP, DOWN: recorrer los espacios de color.</li><li>RIGHT, LEFT: recorrer los colores de fondo.</li></ul>Color de substream: Azul<br /> | 
 | F7 | Ajuste el brillo y el contraste.<br /><ul><li>UP: aumente el brillo.</li><li>DOWN: disminuir el brillo.</li><li>RIGHT: aumente el contraste.</li><li>LEFT: disminuir el contraste.</li></ul>Color de substream: Magenta<br /> | 
 | F8 | Ajuste el matiz y la saturación.<br /><ul><li>UP: aumente el matiz.</li><li>DOWN: disminuir el matiz.</li><li>RIGHT: Aumente la saturación.</li><li>LEFT: disminuir la saturación.</li></ul>Color de subtransmisión: negro<br /> | 

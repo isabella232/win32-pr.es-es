@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shldisp.h
-ms.openlocfilehash: c5bcf40a77c2f464d5277ac4823ed74a3f3c2bdd6a2114d2431684cc8b319f66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fbaf53db11fda577e9e9c5384af5f7c62fe1944
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252062"
 ---
 # <a name="webwizardhost-object"></a>Objeto WebWizardHost
 
 Expone métodos que permiten que las páginas HTML hospedadas en una extensión del asistente se comuniquen con el asistente.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto WebWizardHost** tiene estos tipos de miembros:
 
@@ -57,8 +57,8 @@ El **objeto WebWizardHost** tiene estas propiedades.
 
 | Propiedad                                               | Tipo de acceso           | Descripción                                              |
 |:-------------------------------------------------------|:----------------------|:---------------------------------------------------------|
-| [**Caption**](iwebwizardhost-caption.md)<br/>   | Lectura/escritura<br/> | Sin implementar.<br/>                              |
-| [**Propiedad**](iwebwizardhost-property.md)<br/> | Lectura/escritura<br/> | Establece o recupera el valor actual de una propiedad.<br/> |
+| [**Caption**](iwebwizardhost-caption.md)<br/>   | Lectura y escritura<br/> | Sin implementar.<br/>                              |
+| [**Propiedad**](iwebwizardhost-property.md)<br/> | Lectura y escritura<br/> | Establece o recupera el valor actual de una propiedad.<br/> |
 
 
 
@@ -72,8 +72,8 @@ El **objeto WebWizardHost** tiene estas propiedades.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 | IID<br/>                      | CLSID \_ WebWizardHost<br/>                                                        |
 
 

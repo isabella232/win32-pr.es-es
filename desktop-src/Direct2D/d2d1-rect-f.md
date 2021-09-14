@@ -6,12 +6,12 @@ keywords:
 - D2D1_RECT_F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dc0f92dca8958fc939a4464ef7ddc1a3d8bde8b26a3ea3faefa7c55748870cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 93ce4700e093b9e82fd4334ae9e01485a7fcbb4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163498"
 ---
 # <a name="d2d1_rect_f"></a>D2D1 \_ RECT \_ F
 
@@ -24,13 +24,13 @@ typedef D2D_RECT_F D2D1_RECT_F;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**D2D1 \_ RECT \_ F** es un nuevo nombre para la estructura [**\_ D2D RECT \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f) ya definida.
+**D2D1 \_ RECT \_ F** es un nuevo nombre para la estructura [**\_ rect \_ F de D2D**](/windows/desktop/api/dcommon/ns-dcommon-d2d_rect_f) ya definida.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se [**usa id2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) para dibujar y rellenar varios rectángulos. En este ejemplo se genera la salida como se muestra en la ilustración siguiente.
+En el ejemplo siguiente se [**usa id2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) para dibujar y rellenar varios rectángulos. En este ejemplo se genera una salida como se muestra en la ilustración siguiente.
 
 ![ilustración de dos rectángulos en un fondo de cuadrícula](images/drawrectangleexample-small.png)
 
@@ -124,14 +124,14 @@ Para ver un tutorial relacionado, consulte [Creación de una aplicación direct2
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Platform Update for Windows Vista \[ desktop apps \| UWP apps\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>D2DBaseTypes.h (incluir D2d1.h)</dt> </dl>                               |
+| Encabezado<br/>                   | <dl> <dt>D2DBaseTypes.h (incluir D2d1.h)</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

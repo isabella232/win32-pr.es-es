@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 4cd8282b960ce5b52b488628ff716c5d8a467f65f3d65add77739926bbb7f8db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e491bf693bb71fcda9a07dde4509828acd20e784
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119727875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252675"
 ---
 # <a name="sessiondispose-method"></a>Método Session.Dispose
 
@@ -45,7 +45,7 @@ Incluir miembros heredados
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
-<td>Llamado por Dispose y el finalizador. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
+<td>Lo llaman Dispose y el finalizador. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

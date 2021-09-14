@@ -4,12 +4,12 @@ ms.assetid: bb227536-3b29-4221-b2d5-bab5e9d91448
 title: Trabajar con interfaces IXpsOMPageReference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee38856075a967fbf0f66255c922e181961dc42f1214f75e05da7d4062d6c4a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f4526e6c561a962b77fa3f2fc62d56431359aa6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252302"
 ---
 # <a name="working-with-ixpsompagereference-interfaces"></a>Trabajar con interfaces IXpsOMPageReference
 
@@ -20,8 +20,8 @@ En este tema se describe cómo usar las interfaces que proporcionan acceso a las
 | Nombre de interfaz                                                  | Interfaces secundarias lógicas                    | Descripción                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference)<br/>   | [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage)<br/> | Virtualiza el contenido de una página de documento. <br/> Una referencia de página contiene información básica sobre la página, algunas propiedades de página y un vínculo al contenido de la página. El método [**IXpsOMPageReference::GetPage**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-getpage) devuelve la interfaz [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage) que incluye el contenido de la página.<br/> |
-| [**IXpsOMNameCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomnamecollection)<br/> | Ninguno<br/>                             | Contiene una lista de elementos de página que son destinos de hipervínculo. El método [**IXpsOMPageReference::CollectLinkTargets**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectlinktargets) devuelve la lista.<br/>                                                                                                                                                               |
-| [**IXpsOMPartResources**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompartresources)<br/>   | Ninguno<br/>                             | Contiene una lista de los recursos basados en elementos asociados a la página. El método [**IXpsOMPageReference::CollectPartResources**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectpartresources) devuelve esta lista.<br/>                                                                                                                                     |
+| [**IXpsOMNameCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomnamecollection)<br/> | None<br/>                             | Contiene una lista de elementos de página que son destinos de hipervínculo. El método [**IXpsOMPageReference::CollectLinkTargets**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectlinktargets) devuelve la lista.<br/>                                                                                                                                                               |
+| [**IXpsOMPartResources**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompartresources)<br/>   | None<br/>                             | Contiene una lista de los recursos basados en elementos asociados a la página. El método [**IXpsOMPageReference::CollectPartResources**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectpartresources) devuelve esta lista.<br/>                                                                                                                                     |
 
 
 

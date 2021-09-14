@@ -4,15 +4,15 @@ description: Direct2D proporciona los siguientes tipos de datos y constantes.
 ms.assetid: e5ff04d9-6194-4bdf-9db3-213d79199e4b
 keywords:
 - Direct2D, tipos de datos
-- Direct2D, constantes
+- Direct2D,constants
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cea50069fcf860efa12d68c318657a896cd27d24fdf4c81b7c82a28e1f6567e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a8566bd44d851b516e291f919e1deeddc06b696
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117825968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163441"
 ---
 # <a name="direct2d-datatypes-and-constants"></a>Constantes y tipos de datos de Direct2D
 

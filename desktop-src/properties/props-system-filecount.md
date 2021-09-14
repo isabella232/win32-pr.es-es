@@ -4,12 +4,12 @@ ms.assetid: 81c89caf-843e-4a87-ac41-099de9174ea6
 title: System.FileCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d43acbb5b8b00aea38a21d000cdfb560dc677377de98fd50e68d1c4bd64d55fd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a29c7760b0e3db61516da49ea95010fda8b4a4d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119598895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252153"
 ---
 # <a name="systemfilecount"></a>System.FileCount
 
@@ -29,7 +29,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

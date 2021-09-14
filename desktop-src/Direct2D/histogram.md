@@ -6,12 +6,12 @@ keywords:
 - efecto histograma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08477a832b2dbf758d26a16e78905f8530d4d4525205cbc85e9d138f8b3bded7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b654ffb2b830914b00a59490ceb429b5de9c51cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120044425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163226"
 ---
 # <a name="histogram-effect"></a>Efecto histograma
 
@@ -80,7 +80,7 @@ Esta es la ecuación para generar la salida.
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NumBins<br/> CUBOS DE NÚMERO DE PROP DE \_ HISTOGRAMA D2D1 \_ \_ \_<br/>                 | UINT32<br/> 256<br/>                                         | Especifica el número de intervalos usados para el histograma. El intervalo de valores de intensidad que se encuentra en un cubo determinado depende del número de cubos especificados.                              |
 | ChannelSelect<br/> SELECCIÓN DEL CANAL DE \_ PROP DEL \_ \_ HISTOGRAMA D2D1 \_<br/>     | SELECTOR DE CANALES D2D1 \_ \_<br/> SELECTOR DE CANALES D2D1 \_ \_ \_ R<br/> | Especifica el canal utilizado para generar el histograma. Este efecto tiene una única salida de datos correspondiente al canal especificado. Consulte [Selectores de canales](#channel-selectors) para obtener más información. |
-| HistogramOutput<br/> SALIDA DEL \_ HISTOGRAMA DE PROP \_ \_ HISTOGRAMA D2D1 \_<br/> | Flotador\[\]<br/> Solo propiedad de salida.<br/>                    | Matriz de salida.                                                                                                                                                                             |
+| HistogramOutput<br/> SALIDA DEL \_ HISTOGRAMA DE PROP \_ \_ HISTOGRAMA D2D1 \_<br/> | FLOTADOR\[\]<br/> Solo propiedad de salida.<br/>                    | Matriz de salida.                                                                                                                                                                             |
 
 
 
@@ -103,9 +103,9 @@ Esta es la ecuación para generar la salida.
 
 ## <a name="data-output"></a>Salida de datos
 
-Este efecto genera float \[ \] , con el número de elementos correspondiente al número de contenedores especificados. Cada elemento de FLOAT \[ \] es un valor float. El valor del elemento corresponde al número de elementos de esa ubicación.
+Este efecto genera float \[ \] , con el número de elementos correspondiente al número de intervalos especificados. Cada elemento de FLOAT \[ \] es un valor float. El valor del elemento corresponde al número de elementos de esa ubicación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se produce un error en el método [**CreateEffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect) si el dispositivo no admite DirectCompute y devuelve HRESULT = D2DERR \_ INSUFFICIENT DEVICE \_ \_ CAPABILITIES. Todas las tarjetas DirectX11 y DirectX10 que admiten DirectCompute pueden usar el efecto.
@@ -120,7 +120,7 @@ Este efecto genera float \[ \] , con el número de elementos correspondiente al 
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

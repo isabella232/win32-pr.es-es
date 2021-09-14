@@ -1,23 +1,23 @@
 ---
 title: Efecto de refluencia
-description: Use el efecto de refluencia para generar un mapa de bits basado en la función de ruido perlin.
+description: Use el efecto de rebulencia para generar un mapa de bits basado en la función de ruido perlin.
 ms.assetid: 86C1990E-958C-46D7-840A-E4A17F1D1740
 keywords:
 - efecto de bombilla
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a2f2aa58be48c759956fe3522812d7ad6c3e9989
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468602"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162526"
 ---
 # <a name="turbulence-effect"></a>Efecto de refluencia
 
-Use el efecto de refluencia para generar un mapa de bits basado en la función de ruido perlin.
+Use el efecto de rebulencia para generar un mapa de bits basado en la función de ruido perlin.
 
-El efecto de rebulencia no tiene ninguna imagen de entrada.
+El efecto de refluencia no tiene ninguna imagen de entrada.
 
 El CLSID para este efecto es CLSID \_ D2D1Turbulence.
 
@@ -62,7 +62,7 @@ Este efecto genera valores de píxel en alfa premultiplicado.
 | NumOctaves<br /> D2D1_TURBULENCE_PROP_NUM_OCTAVES<br /> | Número de octaves para la función de ruido. Esta propiedad es un UINT32 y debe ser mayor que 0.<br /> El tipo es UINT32.<br /> El valor predeterminado es 1.<br /> | 
 | Seed<br /> D2D1_TURBULENCE_PROP_SEED<br /> | Valor de valor de ed. para el generador pseudo aleatorio. Esta propiedad no está enlazar.<br /> El tipo es UINT32.<br /> El valor predeterminado es 0.<br /> | 
 | Ruido<br /> D2D1_TURBULENCE_PROP_NOISE<br /> | Modo de ruido de rebulencia. Esta propiedad puede ser <em>sum o</em> <em>vabulence</em>. Indica si se va a generar un mapa de bits basado en ruido de Varon o en la función Vabulence. Consulte <a href="#noise-modes">Modos de ruido</a> para obtener más información. <br /> El tipo es D2D1_TURBULENCE_NOISE.<br /> El valor predeterminado es D2D1_TURBULENCE_NOISE_FRACTAL_SUM.<br /> | 
-| Unida<br /> D2D1_TURBULENCE_PROP_STITCHABLE<br /> | Activa o desactiva la unión. La frecuencia base se ajusta para que se pueda unir el mapa de bits de salida. Esto resulta útil si desea crear un mosaico de varias copias de la salida del efecto de rebulencia.<ul><li>True El mapa de bits de salida se puede en mosaico (mediante el efecto de mosaico) sin la apariencia de las juntas. La frecuencia base se ajusta para que se pueda unir el mapa de bits de salida.</li><li>False La frecuencia base no se ajusta, por lo que pueden aparecer las juntas entre los iconos si el mapa de bits está en mosaico.</li></ul><br /> El tipo es BOOL.<br /> El valor predeterminado es FALSE.<br /> | 
+| Unida<br /> D2D1_TURBULENCE_PROP_STITCHABLE<br /> | Activa o desactiva la unión. La frecuencia base se ajusta para que se pueda unir el mapa de bits de salida. Esto resulta útil si desea crear un mosaico de varias copias de la salida del efecto de rebulencia.<ul><li>True El mapa de bits de salida puede estar en mosaico (mediante el efecto de mosaico) sin la apariencia de las juntas. La frecuencia base se ajusta para que se pueda unir el mapa de bits de salida.</li><li>False La frecuencia base no se ajusta, por lo que pueden aparecer las juntas entre los iconos si el mapa de bits está en mosaico.</li></ul><br /> El tipo es BOOL.<br /> El valor predeterminado es FALSE.<br /> | 
 
 
 
@@ -76,7 +76,7 @@ Este efecto genera valores de píxel en alfa premultiplicado.
 | Enumeración                           | Descripción                                                                           |
 |---------------------------------------|---------------------------------------------------------------------------------------|
 | D2D1 \_ LEBULENCE \_ NOISE \_ SUM \_ | Calcula una suma de los octaves, desplazando el intervalo de salida \[ de -1, 1 , a \] \[ 0, 1 \] . |
-| REFLUBULENCIA DE RUIDO DE REFLUENCIA D2D1 \_ \_ \_   | Calcula una suma del valor absoluto de cada octave.                                  |
+| REFLUBULENCIA DE RUIDO DE \_ REFLUENCIA D2D1 \_ \_   | Calcula una suma del valor absoluto de cada octave.                                  |
 
 
 
@@ -95,10 +95,10 @@ Este efecto genera un mapa de bits de tamaño lógico infinito.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio Windows aplicaciones de la \| Tienda\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio Windows aplicaciones de la \| Tienda\] |
 | Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 

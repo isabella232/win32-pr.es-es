@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9ef3a803791a4f8dfe94d128d42ea06a7b28e739
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250779"
 ---
-# <a name="mciwndm_realize-message"></a>Mensaje DE MCIWNDM \_ REALIZE
+# <a name="mciwndm_realize-message"></a>Mensaje MCIWNDM \_ REALIZE
 
 El **mensaje MCIWNDM \_ REALIZE** se da cuenta de la paleta que usa actualmente el dispositivo MCI en una ventana de MCIWnd. Esta macro se define con el **mensaje MCIWNDM \_ REALIZE.** Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndRealize.**](/windows/desktop/api/Vfw/nf-vfw-mciwndrealize)
 
@@ -47,11 +47,11 @@ Marca de fondo. Especifique **TRUE** para este parámetro si la ventana es una a
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-**MCIWNDM \_ REALIZE** usa la paleta del dispositivo MCI y llama a la [**función RealizePalette.**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette) Si la aplicación controla explícitamente los mensajes [**WM \_ PALETTECHANGED**](/windows/desktop/gdi/wm-palettechanged) y [**WM \_ QUERYNEWPALETTE,**](/windows/desktop/gdi/wm-querynewpalette) debe usar este mensaje en la aplicación en lugar de **usar RealizePalette**. Si el cuerpo de uno de estos controladores de mensajes solo contiene **RealizePalette,** reenvía el mensaje a la ventana MCIWnd, que se dará cuenta automáticamente de la paleta.
+**MCIWNDM \_ REALIZE** usa la paleta del dispositivo MCI y llama a la [**función RealizePalette.**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette) Si la aplicación controla explícitamente los mensajes [**WM \_ PALETTECHANGED**](/windows/desktop/gdi/wm-palettechanged) y [**WM \_ QUERYNEWPALETTE,**](/windows/desktop/gdi/wm-querynewpalette) debe usar este mensaje en la aplicación en lugar de **usar RealizePalette**. Si el cuerpo de uno de estos controladores de mensajes contiene solo **RealizePalette,** reenvía el mensaje a la ventana MCIWnd, que se dará cuenta automáticamente de la paleta.
 
 ## <a name="requirements"></a>Requisitos
 

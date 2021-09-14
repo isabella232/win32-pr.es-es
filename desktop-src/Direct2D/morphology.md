@@ -5,15 +5,15 @@ ms.assetid: 4B3CFC51-D556-4729-B433-7307C80291F4
 keywords:
 - Efectos de la morfología
 - efecto de la reenlaz
-- Efecto de e electrónicos
+- Efecto de e ya no
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0737c9153faad1f23337b20b6406f6c1a794a7e1efa25de154eb2f867a347b7f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f43cf41810ae0b16c9bc96dd37473a0231fc132c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119385064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162685"
 ---
 # <a name="morphology-effect"></a>Efecto de la morfología
 
@@ -75,7 +75,7 @@ m_d2dContext->EndDraw();
 | Nombre                           | Descripción                                                    |
 |--------------------------------|----------------------------------------------------------------|
 | ETROP \_ DEL MODO MORPHOLOGY \_ \_ D2D1  | Se usa el valor máximo de cada canal RGB del kernel. |
-| MODO MORPHOLOGY DE D2D1: \_ \_ \_ MORPHOLOGY MODE (MODO MORPHOLOGY) | Se usa el valor mínimo de cada canal RGB del kernel. |
+| MODO MORPHOLOGY DE D2D1: \_ \_ \_ ENTRETE | Se usa el valor mínimo de cada canal RGB del kernel. |
 
 
 
@@ -113,7 +113,7 @@ Para el modo ENTES, el tamaño del mapa de bits de salida se reduce:
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

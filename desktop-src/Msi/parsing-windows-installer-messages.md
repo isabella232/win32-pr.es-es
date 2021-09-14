@@ -4,18 +4,18 @@ ms.assetid: c4405803-9abd-40f4-9090-c075e7dcf293
 title: Análisis de Windows del instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39d2d44f75ccd610dd5d4da24a9ad96d85af947474ed1c8e600183388264bbb2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65cf96c85499b44accd0e01548ca184a030775d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118942738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250911"
 ---
 # <a name="parsing-windows-installer-messages"></a>Análisis de Windows del instalador
 
 Un controlador de interfaz de usuario externo puede procesar la lista de mensajes del instalador especificados por el *parámetro dwMessagedFilter* de [**la función MsiSetExternalUI.**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) Algunos de estos mensajes contienen cadenas que se pueden usar directamente, y es posible que el controlador de interfaz de usuario externo deba analizar y procesar otros mensajes para que sean útiles. Es posible que el controlador de interfaz de usuario externo solo necesite supervisar Windows installer sin realizar ninguna operación que afecte a la instalación.
 
-Los siguientes Windows installer contienen cadenas que un cuadro de diálogo puede mostrar y no necesitan ningún procesamiento adicional. Estos mensajes contienen una lista de botones e iconos que se van a mostrar en un cuadro de diálogo. Puede usar los valores **\_ MB ICONMASK,** **MB \_ DEFMASK** y **MB \_ TYPEMASK** para especificar iconos y botones.
+Los siguientes Windows installer contienen cadenas que se pueden mostrar mediante un cuadro de diálogo y no necesitan ningún procesamiento adicional. Estos mensajes contienen una lista de botones e iconos que se van a mostrar en un cuadro de diálogo. Puede usar los valores **\_ MB ICONMASK,** **MB \_ DEFMASK** y **MB \_ TYPEMASK** para especificar iconos y botones.
 
 <dl> <dt>
 

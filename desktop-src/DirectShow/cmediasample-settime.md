@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: be9028db35cb6d74623bde77fac21e32793de436ea2f80d2f513687c15d1b64c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 935c4f3aa565b291e459d36e067805944b4fd6b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118156517"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251127"
 ---
 # <a name="cmediasamplesettime-method"></a>Método CMediaSample.SetTime
 
-El `SetTime` método establece las horas de transmisión en las que debe comenzar y finalizar este ejemplo. Este método implementa el [**método IMediaSample::SetTime.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-settime)
+El `SetTime` método establece los tiempos de secuencia en los que debe comenzar y finalizar este ejemplo. Este método implementa el [**método IMediaSample::SetTime.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-settime)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Puntero al tiempo de secuencia en el que finaliza el ejemplo, en unidades de 100
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método establece las variables [**miembro CMediaSample::m \_ Start**](cmediasample-m-start.md) y [**CMediaSample::m \_ End,**](cmediasample-m-end.md) que especifican las marcas de tiempo. También actualiza la variable [**miembro CMediaSample::m \_ dwFlags,**](cmediasample-m-dwflags.md) que especifica si las marcas de tiempo son válidas.
 

@@ -60,12 +60,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c64fd25df2d81f7debf78fd0a50f69656b16c2c5309b1955e1aa0e96e6dde403
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b7a7add96c523dae6b683d597ba36953c605d28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119284555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273519"
 ---
 # <a name="cim_cachememory-class"></a>Cim \_ CacheMemory (clase)
 
@@ -140,7 +140,7 @@ class CIM_CacheMemory : CIM_Memory
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CacheMemory** de CIM tiene estos tipos de miembros:
 
@@ -155,7 +155,7 @@ La **clase \_ CacheMemory** de CIM tiene estos métodos.
 
 | Método                                                                 | Descripción                                                                                                                                |
 |:-----------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-cachememory.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                                 |
+| [**Reset**](reset-method-in-class-cim-cachememory.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                                 |
 | [**SetPowerState**](setpowerstate-method-in-class-cim-cachememory.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar el dispositivo en ese estado. No implementado por WMI.<br/> |
 
 
@@ -250,7 +250,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Caché del sistema DMTF \| \| 003.15")
 </dt> </dl>
 
-Enumeración que define la asociatividad de la memoria caché del sistema.
+Enumeración que define la asociatividad de caché del sistema.
 
 <dt>
 
@@ -523,9 +523,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si el tamaño del bloque de variables es variable, se debe especificar el tamaño máximo del bloque, en bytes. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para extensiones de agregado, memoria o discos lógicos), escriba 1 (uno).
+Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si el tamaño del bloque de variables es variable, se debe especificar el tamaño máximo del bloque, en bytes. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para extensiones agregadas, memoria o discos lógicos), escriba 1 (uno).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
@@ -616,7 +616,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -727,7 +727,7 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-**Este dispositivo no funciona correctamente porque probablemente haya un problema de enumeración.** (15)
+**Este dispositivo no funciona correctamente porque probablemente haya un problema de nueva enumeración.** (15)
 
 
 </dt> <dd></dd> <dt>
@@ -832,7 +832,7 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
+**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -860,7 +860,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1501,7 +1501,7 @@ Terciario.
 
 </dt> <dd>
 
-No es aplicable.
+No aplicable.
 
 </dd> </dl>
 
@@ -1676,7 +1676,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se **admite el método SetPowerState.** Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se **admite el método SetPowerState.** Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1698,7 +1698,7 @@ El **método SetPowerState** se puede invocar con el *parámetro PowerState* est
 
 </dt> <dd>
 
-El **método SetPowerState** se puede invocar con el parámetro *PowerState* establecido en 5 ("Ciclo de energía") y el parámetro *Time* establecido en una fecha y hora específicas, o intervalo, para el encendido.
+El **método SetPowerState** se puede invocar con el parámetro *PowerState* establecido en 5 ("Ciclo de energía") y el parámetro *Time* establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -2244,7 +2244,7 @@ Determinación por E/S.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Cim CacheMemory** se deriva de [**la memoria \_ CIM**](cim-memory.md).
 
@@ -2266,7 +2266,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

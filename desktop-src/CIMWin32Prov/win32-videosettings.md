@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI de la Asociación Win32 Videosettings relaciona una configuración de vídeo y un controlador de vídeo que se puede aplicar a ella.
+description: La clase WMI de asociación VideoSettings de Win32 relaciona un controlador de vídeo y la configuración de vídeo \_ que se puede aplicar a él.
 ms.assetid: 0cc42352-0a89-434d-a8b6-230c677de49c
 ms.tgt_platform: multiple
-title: Win32_VideoSettings (clase)
+title: Win32_VideoSettings clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,15 +17,15 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 38e949b6b6501dc51b39448d72e6bf61f37fbecb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659430"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251259"
 ---
-# <a name="win32_videosettings-class"></a>\_Clase Win32 Videosettings
+# <a name="win32_videosettings-class"></a>Clase Win32 \_ VideoSettings
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) de la Asociación **Win32 \_ videosettings** relaciona una configuración de vídeo y un controlador de vídeo que se puede aplicar a ella.
+La clase WMI **de asociación \_ VideoSettings** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un controlador de vídeo y la configuración de vídeo que se puede aplicar a él.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -40,31 +40,31 @@ class Win32_VideoSettings : CIM_VideoSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La clase **Win32 \_ videosettings** tiene estos tipos de miembros:
+La **clase Win32 \_ VideoSettings** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **Win32 \_ videosettings** tiene estas propiedades.
+La **clase Win32 \_ VideoSettings** tiene estas propiedades.
 
 <dl> <dt>
 
 **Element**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ videocontroladora Win32**
+Tipo de datos: **Win32 \_ VideoController**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ videocontroller")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ VideoController")
 </dt> </dl>
 
-Un [**\_ videocontrolador de Win32**](win32-videocontroller.md) que contiene las propiedades del controlador de vídeo en el que se puede usar una configuración de vídeo.
+[**Win32 \_ VideoController que**](win32-videocontroller.md) contiene las propiedades del controlador de vídeo en el que se puede usar una configuración de vídeo.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo de datos: **CIM \_ VideoControllerResolution**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("configuración"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ VideoControllerResolution")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) \| ("CIM \_ VideoControllerResolution")
 </dt> </dl>
 
-[**\_ VideoControllerResolution CIM**](cim-videocontrollerresolution.md) que contiene la configuración que se puede aplicar al controlador de vídeo.
+Cim [**\_ VideoControllerResolution que**](cim-videocontrollerresolution.md) contiene la configuración que se puede aplicar al controlador de vídeo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La clase **Win32 \_ videosettings** se deriva de [**la \_ configuración**](cim-videosetting.md)de videoconfiguración de CIM.
+La **clase \_ VideoSettings de Win32** se deriva de [**CIM \_ VideoSetting**](cim-videosetting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La clase **Win32 \_ videosettings** se deriva de [**la \_ configuración**](cim-
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,10 +106,10 @@ La clase **Win32 \_ videosettings** se deriva de [**la \_ configuración**](cim-
 
 <dl> <dt>
 
-[**Videoconfiguración de CIM \_**](cim-videosetting.md)
+[**CIM \_ VideoSetting**](cim-videosetting.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

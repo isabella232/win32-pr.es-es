@@ -4,12 +4,12 @@ ms.assetid: bcadaa3c-23b7-4408-8199-058103a92a34
 title: BookmarkOnStop (propiedad)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c73d8b9829075125437e05da96c78d101f5a7f5df4dc2decc25f044cc3f5f27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 355ae01c43ef28a086c76f4716fe3d46d250fbe4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118662677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161680"
 ---
 # <a name="bookmarkonstop-property"></a>BookmarkOnStop (propiedad)
 
@@ -29,7 +29,7 @@ Esta propiedad es de lectura y escritura con un valor predeterminado de false.
 
 Los marcadores solo son válidos para una máquina determinada. Un usuario no puede guardar un marcador y, a continuación, enviarlo a otra persona para leerlo en otro equipo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 4df3a7e7-1be4-4cc7-ad61-567f7f45811e
 title: Propiedad ButtonsAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a16e14675238711ef0b572477334fecba0311ca2bb54d67fc3fe012ae6d1ede9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72cab4afdd9f6e23a376bb72885810b8464f180d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118955564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161660"
 ---
 # <a name="buttonsavailable-property"></a>Propiedad ButtonsAvailable
 
@@ -28,13 +28,13 @@ La `ButtonsAvailable` propiedad recupera el número total de botones del menú a
 
 Devuelve un valor entero que representa el número de botones.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es de solo lectura sin ningún valor predeterminado. Use este método al implementar el control personalizado del mouse después de establecer [**DisableAutoMouseProcessing en**](disableautomouseprocessing-property.md) **true.**
 
 Llame a este método para recuperar el límite superior para el intervalo de números de botón válidos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

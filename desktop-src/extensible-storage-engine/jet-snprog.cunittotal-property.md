@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 23ebab88e121ffdfb5114ef7c732f2975e6864fcc5b3d5f10bea7ef3c00082c8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 983e07dd56dd75b374a6e869f5614662ad92d5a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119945085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252686"
 ---
 # <a name="jet_snprogcunittotal-property"></a>JET_SNPROG.cunitTotal, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el número de unidades de trabajo que deben completarse. Este valor siem
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int cunitTotal { get; internal set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -4,12 +4,12 @@ description: La directiva \ ifndef controla la compilación condicional del arch
 ms.assetid: b83d7b0e-1a37-47a8-b495-0eab05ed3a9a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23728acabc0ca0179c544a66657a2d1b8343d5eae24556018e0e65025420bfba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 984a969123ea68fd68b14c1b98354b8bc5205aba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118472991"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252452"
 ---
 # <a name="ifndef"></a>\#ifndef
 

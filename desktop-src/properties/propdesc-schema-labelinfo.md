@@ -5,11 +5,11 @@ title: labelInfo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8d2d358270bfdf231f990feee54d90f6f39f16fa
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475101"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252267"
 ---
 # <a name="labelinfo"></a>labelInfo
 
@@ -17,7 +17,7 @@ Especifica cómo se muestran las etiquetas de la propiedad. Solo debe haber un [
 
 Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [labelInfo,]() no se muestra la etiqueta de la propiedad; sin embargo, esto suele ser un defecto.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -50,7 +50,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 | Elemento primario                                                   | Elementos secundarios |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | Ninguno           |
+| [propertyDescription](./propdesc-schema-propertydescription.md) | None           |
 
 
 
@@ -63,7 +63,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 | Atributo | Descripción | 
 |-----------|-------------|
-| label | Público. Opcional. Etiqueta tal como se muestra en la interfaz de usuario (por ejemplo, la etiqueta de columna de detalles o el panel de vista previa). La sintaxis permite una cadena de presentación directa o una referencia de cadena de presentación indirecta. Use la cadena de presentación indirecta porque se puede localizar. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getdisplayname"><strong>IPropertyDescription::GetDisplayName devuelve</strong></a> el nombre para mostrar resuelto. | 
+| etiqueta | Público. Opcional. Etiqueta tal como se muestra en la interfaz de usuario (por ejemplo, la etiqueta de columna de detalles o el panel de vista previa). La sintaxis permite una cadena de presentación directa o una referencia de cadena de presentación indirecta. Use la cadena de presentación indirecta porque se puede localizar. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getdisplayname"><strong>IPropertyDescription::GetDisplayName devuelve</strong></a> el nombre para mostrar resuelto. | 
 | sortDescription | Opcional. Especifica las cadenas que se ofrecen como opciones de ordenación. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getsortdescription"><strong>IPropertyDescription::GetSortDescription devuelve</strong></a> esta descripción de ordenación. Los valores siguientes proporcionan las cadenas de interfaz de usuario correspondientes.<ul><li>General: "Sort going up" / "Sort going down"</li><li>AToZ: "A en la parte superior" / "Z en la parte superior"</li><li>LowestHighest: "Lowest on top" / "Highest on top"</li><li>OldestNewest: "Oldest on top" / "Newest on top"</li><li>SmallestLargest: "Smallest on top" / "Largest on top"</li></ul> | 
 | invitationText | Opcional. Texto de la cadena de ayuda que se muestra como una instrucción al usuario para el control o la información sobre herramientas (por ejemplo, "Escriba el nombre del autor"). La sintaxis permite una cadena de presentación directa o una referencia de cadena de presentación indirecta. Use la cadena de presentación indirecta porque se puede localizar. <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-geteditinvitation"><strong>IPropertyDescription::GetEditInvitation devuelve</strong></a> el texto de invitación resuelto. | 
 | hideLabel | Opcional. El valor predeterminado es "false". Indica si la etiqueta está oculta. | 

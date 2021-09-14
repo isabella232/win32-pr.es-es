@@ -4,12 +4,12 @@ ms.assetid: 875df611-a6ae-4a73-b00b-799249a39ff3
 title: Tipos de medios BDA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 670c9d82ac673c46f4c391b1f2b941f4b3bb49e15af2195d9fc7adbd51309622
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e746b8ddfdbaf638a4d239a549b058471cfdaa6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120103365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161691"
 ---
 # <a name="bda-media-types"></a>Tipos de medios BDA
 

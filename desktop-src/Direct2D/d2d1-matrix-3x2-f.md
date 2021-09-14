@@ -1,21 +1,21 @@
 ---
 title: D2D1_MATRIX_3X2_F (D2d1.h)
-description: Representa una matriz 3 por 2.
+description: Representa una matriz de 3 por 2.
 ms.assetid: f05d7555-6482-4eea-950f-7b443892cc1f
 keywords:
 - D2D1_MATRIX_3X2_F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d4e8a50e17c4c740c427d21df27e3c1d9cf8226df5edc1b98f15cbe920c401c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: beb252e35508c48570c96f251205fc8a54755687
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119260495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163522"
 ---
 # <a name="d2d1_matrix_3x2_f"></a>MATRIZ D2D1 \_ \_ 3X2 \_ F
 
-Representa una matriz 3 por 2.
+Representa una matriz de 3 por 2.
 
 
 ```C++
@@ -28,11 +28,11 @@ typedef D2D_MATRIX_3X2_F D2D1_MATRIX_3X2_F;
 
 **D2D1 \_ MATRIX \_ 3X2** es un nuevo nombre para la estructura [**D2D \_ MATRIX \_ 3X2 \_ F.**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f) Para obtener una lista de los campos proporcionados por la matriz, vea [**D2D \_ MATRIX \_ 3X2 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f).
 
-Para simplificar las operaciones de matriz comunes, Direct2D proporciona la clase [**D2D1::Matrix3x2F,**](/windows/win32/api/d2d1helper/nl-d2d1helper-matrix3x2f) que se deriva de la estructura [**MATRIX \_ \_ 3X2 de D2D1.**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f) La **clase Matrix3x2F** proporciona un conjunto de métodos auxiliares para realizar tareas comunes, como crear una traducción o una matriz de sesgo.
+Para simplificar las operaciones de matriz comunes, Direct2D proporciona la clase [**D2D1::Matrix3x2F,**](/windows/win32/api/d2d1helper/nl-d2d1helper-matrix3x2f) que se deriva de la estructura [**\_ MATRIX \_ 3X2 de D2D1.**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f) La **clase Matrix3x2F** proporciona un conjunto de métodos auxiliares para realizar tareas comunes, como crear una traducción o una matriz de sesgo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa el método [**D2D1::Matrix3x2F::Rotation**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) para crear una matriz de rotación que gira un cuadrado 45 grados en el sentido de las agujas del reloj sobre el centro del cuadrado y pasa la matriz al [**método SetTransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)) del destino de representación (*m \_ pRenderTarget*).
+En el ejemplo siguiente se usa el método [**D2D1::Matrix3x2F::Rotation**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) para crear una matriz de rotación que gira un cuadrado 45 grados en el sentido de las agujas del reloj sobre el centro del cuadrado y pasa la matriz al método [**SetTransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)) del destino de representación (*m \_ pRenderTarget*).
 
 En la ilustración siguiente se muestra el efecto de aplicar la transformación de rotación anterior al cuadrado. El cuadrado original es un contorno de puntos y el cuadrado girado es un contorno sólido.
 
@@ -68,7 +68,7 @@ En la ilustración siguiente se muestra el efecto de aplicar la transformación 
 
 
 
-El código se ha omitido en este ejemplo. Para obtener más información sobre las transformaciones, vea [Introducción a las transformaciones.](direct2d-transforms-overview.md)
+En este ejemplo se ha omitido el código. Para obtener más información sobre las transformaciones, vea [Introducción a las transformaciones.](direct2d-transforms-overview.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,14 +76,14 @@ El código se ha omitido en este ejemplo. Para obtener más información sobre l
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Platform Update for Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio Windows Vista \[ \| aplicaciones para UWP\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
+| Encabezado<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

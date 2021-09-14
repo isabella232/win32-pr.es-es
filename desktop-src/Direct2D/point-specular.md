@@ -6,12 +6,12 @@ keywords:
 - efecto de iluminación especular de punto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37adb0c6ea0ca946abf819730dcc378f421bf2c220dc0ab8d41916f570501d0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 355c573888604af8dfac443f4f53554a8a780071
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075189"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162650"
 ---
 # <a name="point-specular-lighting-effect"></a>Efecto de iluminación especular puntual
 
@@ -44,7 +44,7 @@ El efecto calcula los valores finales de píxeles de salida mediante las ecuacio
 
 ![ecuaciones para calcular los valores de píxel final. ](images/point-spec-formula-output.png)
 
-where<dl> ¿K? = constante de iluminación especular.  
+, donde<dl> ¿K? = constante de iluminación especular.  
 ![símbolo de vector de unidad normal de superficie. ](images/point-spec-mathchar-n.png) = vector de unidad normal de superficie que es una función de x e y. Consulte [Mapa de alto y vector normal](#height-map-and-normal-vector) para los cálculos.  
 ![símbolo vectorial de la unidad a medio camino. ](images/point-spec-mathchar-h.png) = vector de unidad "a medio camino" entre el vector de unidad de ojo y el vector de unidad de luz. Consulte [Point light source (Origen de](#point-light-source) luz de punto) para ver los cálculos.  
 L<sub>r</sub>, L<sub>g</sub>, L<sub>b</sub> = el color claro en los componentes RGB.  
@@ -110,19 +110,19 @@ Los exponentes más grandes representan objetos más grandes y reflejan la luz e
 
 | Enumeración                                             | Descripción                                                                                                                                                                                          |
 |---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ NEAREST \_ NEIGHBOR     | Muestrea el punto único más cercano y lo usa. Este modo usa menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                                                           |
-| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ LINEAR                | Usa una muestra de cuatro puntos e interpolación lineal. Este modo genera una imagen de mayor calidad que el vecino más próximo.                                                                                   |
+| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ NEAREST \_ NEIGHBOR     | Muestrea el punto más cercano y lo usa. Este modo usa menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                                                           |
+| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ LINEAR                | Usa una muestra de cuatro puntos y una interpolación lineal. Este modo genera una imagen de mayor calidad que el vecino más próximo.                                                                                   |
 | D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ CUBIC                 | Usa un kernel cúbica de 16 muestras para la interpolación. Este modo usa el mayor tiempo de procesamiento, pero genera una imagen de mayor calidad.                                                                        |
-| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ MULTI \_ SAMPLE \_ LINEAR | Usa 4 muestras lineales dentro de un solo píxel para un buen suavizado de alias perimetral. Este modo es bueno para reducir verticalmente en pequeñas cantidades en imágenes con pocos píxeles.                                              |
+| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ MULTI \_ SAMPLE \_ LINEAR | Usa 4 muestras lineales dentro de un solo píxel para un suavizado de alias de borde bueno. Este modo es bueno para reducir verticalmente en pequeñas cantidades en imágenes con pocos píxeles.                                              |
 | D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ ANISOTROPIC           | Usa el filtrado anisotropico para muestrear un patrón según la forma transformada del mapa de bits.                                                                                                     |
-| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ HIGH \_ QUALITY \_ CUBIC  | Usa un kernel cúbica de alta calidad de tamaño variable para realizar una escala previa a la baja de la imagen si la escalación está implicada en la matriz de transformación. A continuación, usa el modo de interpolación cúbica para la salida final. |
+| D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ HIGH \_ QUALITY \_ CUBIC  | Usa un kernel cúbica de alta calidad de tamaño variable para realizar una escala previa a la baja de la imagen si la escala hacia abajo está implicada en la matriz de transformación. A continuación, usa el modo de interpolación cúbica para la salida final. |
 
 
 
  
 
 > [!Note]  
-> Si no selecciona un modo, el valor predeterminado del efecto es D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ LINEAR.
+> Si no selecciona un modo, el efecto tiene como valor predeterminado D2D1 \_ POINTSPECULAR \_ SCALE \_ MODE \_ LINEAR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,9 +130,9 @@ Los exponentes más grandes representan objetos más grandes y reflejan la luz e
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

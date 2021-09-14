@@ -1,6 +1,6 @@
 ---
-title: D2D_PS_ENTRY función (D2d1effecthelpers.h)
-description: Macro que define un punto de entrada de sombreador de píxeles con el nombre de función especificado.
+title: D2D_PS_ENTRY (D2d1effecthelpers.h)
+description: Macro que define un punto de entrada del sombreador de píxeles con el nombre de función especificado.
 ms.assetid: 4C87369A-EF51-46BA-9CA4-386630A7F866
 keywords:
 - D2D_PS_ENTRY función Direct2D
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26369ef5be8c9dea81bf95e60c09ca0041d4275114c8892b85b6b5525f45504b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7525416eed7700709d02d2ec17823cd57a8c12ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163538"
 ---
 # <a name="d2d_ps_entry-function"></a>Función D2D \_ PS \_ ENTRY
 
-Macro que define un punto de entrada de sombreador de píxeles con el nombre de función especificado.
+Macro que define un punto de entrada del sombreador de píxeles con el nombre de función especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,9 +48,9 @@ Nombre del punto de entrada del sombreador de píxeles.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use esta macro en lugar de especificar la firma de entrada del punto de entrada de la manera normal: todos los parámetros están implícitos y se agregan mediante Direct2D durante la compilación en función del tipo de destino de compilación (sombreador completo o función de exportación).
+Use esta macro en lugar de especificar la firma de entrada del punto de entrada de la manera normal: Direct2D agrega todos los parámetros implícitamente durante la compilación en función del tipo de destino de compilación (sombreador completo o función de exportación).
 
 ``` syntax
 #define D2D_INPUT_COUNT 1 
@@ -67,7 +67,7 @@ D2D_PS_ENTRY(LinkingCompatiblePixelShader)
 } 
 ```
 
-En este breve ejemplo, tenga en cuenta que no se declara ningún parámetro de función, que el número de entradas y el tipo de cada entrada se declara antes de la función de entrada, que la entrada se recupera mediante una llamada a [D2DGetInput](d2dgetinput.md)y que las directivas de preprocesador deben definirse antes de incluir el archivo auxiliar.
+En este breve ejemplo, tenga en cuenta que no se declara ningún parámetro de función, que el número de entradas y el tipo de cada entrada se declara antes que la función de entrada, la entrada se recupera mediante una llamada a [D2DGetInput](d2dgetinput.md)y que las directivas de preprocesador deben definirse antes de que se incluya el archivo auxiliar.
 
 Un sombreador compatible con la vinculación debe proporcionar un sombreador de píxeles de un solo paso normal y una función de sombreador de exportación. La macro D2D PS ENTRY permite generar cada uno de ellos a partir del mismo código, cuando se usa junto con el script de \_ \_ compilación del sombreador.
 
@@ -105,7 +105,7 @@ export float4 LinkingCompatiblePixelShader_Function(
 } 
 ```
 
-Tenga en cuenta que la entrada de textura, recuperada normalmente mediante el muestreo de texture2D, se ha reemplazado por una entrada input0 de función.
+Tenga en cuenta que la entrada de textura, recuperada normalmente mediante el muestreo de texture2D, se ha reemplazado por una entrada de función input0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,7 +118,7 @@ Tenga en cuenta que la entrada de textura, recuperada normalmente mediante el mu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

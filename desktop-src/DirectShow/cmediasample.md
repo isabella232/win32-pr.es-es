@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7b0b27c8878a2841eeecb3bc1ae24bdcc43d056c57a881596179f5d2bd990fcd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 72cfe0f86ff6b6643f2f7793822899136a5c6454
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120084495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251126"
 ---
 # <a name="cmediasample-class"></a>CMediaSample (clase)
 
@@ -29,17 +29,17 @@ ms.locfileid: "120084495"
 
 La `CMediaSample` clase define un ejemplo multimedia que admite la interfaz [**IMediaSample2.**](/windows/desktop/api/Strmif/nn-strmif-imediasample2) El ejemplo multimedia contiene un puntero a un búfer de memoria y varias propiedades almacenadas como variables miembro protegidas.
 
-Los asignadores crean ejemplos multimedia, que se derivan de la [**clase CBaseAllocator.**](cbaseallocator.md) El `CMediaSample` constructor recibe un puntero a un búfer asignado, junto con el tamaño del búfer. Normalmente, otras propiedades se establecen y recuperan a través de métodos de interfaz [**IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample)
+Los asignadores crean ejemplos multimedia, que se derivan de la [**clase CBaseAllocator.**](cbaseallocator.md) El `CMediaSample` constructor recibe un puntero a un búfer asignado, junto con el tamaño del búfer. Normalmente, otras propiedades se establecen y recuperan a través de los métodos de interfaz [**IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample)
 
 El ciclo de vida de un ejemplo multimedia difiere del de la mayoría de los objetos COM:
 
--   El asignador contiene una lista de ejemplos gratuitos. Cuando un filtro necesita un nuevo ejemplo, llama al método [**IMemAllocator::GetBuffer del**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer) asignador. El asignador recupera un ejemplo de su lista libre, incrementa el recuento de referencias de la muestra y devuelve un puntero a la muestra.
--   Una vez que el filtro se realiza con el ejemplo, llama al método **IUnknown::Release** en el ejemplo. A diferencia de la mayoría de los objetos , el ejemplo no se elimina cuando su recuento de referencias alcanza cero. En su lugar, llama al [**método IMemAllocator::ReleaseBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer) en el asignador y el asignador devuelve el ejemplo a su lista libre.
+-   El asignador contiene una lista de ejemplos gratuitos. Cuando un filtro necesita un nuevo ejemplo, llama al método [**IMemAllocator::GetBuffer del**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer) asignador. El asignador recupera una muestra de su lista libre, incrementa el recuento de referencias de la muestra y devuelve un puntero a la muestra.
+-   Una vez que el filtro se realiza con el ejemplo, llama al **método IUnknown::Release** en el ejemplo. A diferencia de la mayoría de los objetos, el ejemplo no se elimina cuando su recuento de referencias alcanza cero. En su lugar, llama al método [**IMemAllocator::ReleaseBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer) en el asignador y el asignador devuelve el ejemplo a su lista libre.
 -   El asignador no destruye muestras hasta que se llama al método [**IMemAllocator::D ecommit.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-decommit)
 
 
 
-| Variables miembro protegidas                                           | Descripción                                                                                     |
+| Variables de miembro protegido                                           | Descripción                                                                                     |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | [**m \_ dwFlags**](cmediasample-m-dwflags.md)                         | Marcas de propiedad de ejemplo.                                                                          |
 | [**m \_ dwTypeSpecificFlags**](cmediasample-m-dwtypespecificflags.md) | Marcas específicas del tipo.                                                                            |
@@ -50,10 +50,10 @@ El ciclo de vida de un ejemplo multimedia difiere del de la mayoría de los obje
 | [**m \_ pNext**](cmediasample-m-pnext.md)                             | Puntero al ejemplo siguiente en la lista de ejemplos del asignador.                                  |
 | [**m \_ Start**](cmediasample-m-start.md)                             | Hora de inicio de ejemplo.                                                                              |
 | [**m \_ End**](cmediasample-m-end.md)                                 | Hora de finalización del ejemplo.                                                                                |
-| [**m \_ MediaStart**](cmediasample-m-mediastart.md)                   | Hora de inicio de los medios.                                                                               |
-| [**m \_ MediaEnd**](cmediasample-m-mediaend.md)                       | Tiempo de detenerse de los medios.                                                                                |
+| [**m \_ MediaStart**](cmediasample-m-mediastart.md)                   | Hora de inicio del medio.                                                                               |
+| [**m \_ MediaEnd**](cmediasample-m-mediaend.md)                       | Tiempo de detención de medios.                                                                                |
 | [**m \_ pMediaType**](cmediasample-m-pmediatype.md)                   | Puntero al tipo de medio, si el tipo ha cambiado con respecto al ejemplo anterior en el flujo de datos. |
-| [**m \_ dwStreamId**](cmediasample-m-dwstreamid.md)                   | Identificador de secuencia.                                                                              |
+| [**m \_ dwStreamId**](cmediasample-m-dwstreamid.md)                   | Identificador de flujo.                                                                              |
 | Variables de miembro público                                              | Descripción                                                                                     |
 | [**m \_ cRef**](cmediasample-m-cref.md)                               | Recuento de referencias.                                                                                |
 | Métodos públicos                                                       | Descripción                                                                                     |
@@ -61,10 +61,10 @@ El ciclo de vida de un ejemplo multimedia difiere del de la mayoría de los obje
 | [**~ CMediaSample**](cmediasample--cmediasample.md)                 | Método destructor. Virtual.                                                                     |
 | [**SetPointer**](cmediasample-setpointer.md)                        | Establece el puntero al búfer de memoria.                                                          |
 | Métodos IMediaSample                                                 | Descripción                                                                                     |
-| [**GetPointer**](cmediasample-getpointer.md)                        | Recupera un puntero de lectura/escritura al búfer.                                                   |
+| [**GetPointer**](cmediasample-getpointer.md)                        | Recupera un puntero de lectura y escritura al búfer.                                                   |
 | [**GetSize**](cmediasample-getsize.md)                              | Recupera el tamaño del búfer.                                                               |
-| [**GetTime**](cmediasample-gettime.md)                              | Recupera las horas de flujo en las que debe comenzar y finalizar este ejemplo.                        |
-| [**SetTime**](cmediasample-settime.md)                              | Establece las horas de transmisión en las que debe iniciarse y finalizar este ejemplo.                             |
+| [**ConocerHora**](cmediasample-gettime.md)                              | Recupera las horas de transmisión en las que debe comenzar y finalizar este ejemplo.                        |
+| [**SetTime**](cmediasample-settime.md)                              | Establece los tiempos de transmisión en los que debe iniciarse y finalizar este ejemplo.                             |
 | [**IsSyncPoint**](cmediasample-issyncpoint.md)                      | Determina si el principio del ejemplo es un punto de sincronización.                           |
 | [**SetSyncPoint**](cmediasample-setsyncpoint.md)                    | Especifica si el principio de este ejemplo es un punto de sincronización.                      |
 | [**IsPreroll**](cmediasample-ispreroll.md)                          | Determina si este ejemplo es un ejemplo de inscripción previa.                                                  |
@@ -75,7 +75,7 @@ El ciclo de vida de un ejemplo multimedia difiere del de la mayoría de los obje
 | [**SetMediaType**](cmediasample-setmediatype.md)                    | Establece el tipo de medio para el ejemplo.                                                             |
 | [**IsDiscontinuity**](cmediasample-isdiscontinuity.md)              | Determina si este ejemplo representa una interrupción en el flujo de datos.                                |
 | [**SetDiscontinuity**](cmediasample-setdiscontinuity.md)            | Especifica si este ejemplo representa una interrupción en el flujo de datos.                            |
-| [**GetMediaTime**](cmediasample-getmediatime.md)                    | Recupera las horas de medios para este ejemplo.                                                      |
+| [**GetMediaTime**](cmediasample-getmediatime.md)                    | Recupera los tiempos de medios para este ejemplo.                                                      |
 | [**SetMediaTime**](cmediasample-setmediatime.md)                    | Establece los tiempos de medios para este ejemplo.                                                           |
 | Métodos IMediaSample2                                                | Descripción                                                                                     |
 | [**GetProperties**](cmediasample-getproperties.md)                  | Recupera las propiedades del ejemplo.                                                         |

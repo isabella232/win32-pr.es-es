@@ -1,9 +1,9 @@
 ---
 title: Función D2DSampleInputAtPosition (D2d1effecthelpers.h)
-description: Muestra la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para entradas complejas.
+description: Muestrea la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para entradas complejas.
 ms.assetid: E839287F-91D1-4591-8DE7-1DFC3001A23D
 keywords:
-- Función Direct2DSampleInputAtPosition de D2D
+- Función D2DSampleInputAtPosition Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c19a455444459e78e2a98fde6386e733c9aa7f1848ed3bb7d2cd6bc22c3062cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e12bba2b83f3956cf4b654c00b0650a6a0ce9a54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119698205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163449"
 ---
 # <a name="d2dsampleinputatposition-function"></a>Función D2DSampleInputAtPosition
 
-Muestra la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para entradas complejas.
+Muestrea la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para entradas complejas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,9 +54,9 @@ Posición uv.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **float4**, con el formato TEXCOORDN.
+La función devuelve **un valor float4**, con el formato TEXCOORDN.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el ejemplo siguiente se muestra la función utilizada en un ajuste circular.
 
@@ -84,7 +84,7 @@ D2D_PS_ENTRY(CircularWrapPS)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

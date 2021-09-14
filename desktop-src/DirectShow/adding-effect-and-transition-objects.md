@@ -4,12 +4,12 @@ ms.assetid: fe82392f-33e2-432a-a6e3-710e475547b3
 title: Agregar objetos de efecto y transición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 929678759d55a51b022cd7b870ddfa7cc5abb72279bcabe1694b5cc4eef211b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e6d33ed27faa0c69a755a17c72d9c5b136a4670
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160066"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162398"
 ---
 # <a name="adding-effect-and-transition-objects"></a>Agregar objetos de efecto y transición
 
@@ -38,9 +38,9 @@ pTimeline->CreateEmptyNode(&pTransObj, TIMELINE_MAJOR_TYPE_TRANSITION);
 
 **2. Especificar el subobjeto**
 
-El objeto de escala de tiempo actúa como un contenedor para otro objeto, denominado *subobjeto*, que realiza el trabajo real. El subobjeto implementa una transformación de datos que produce el efecto o la transición deseados. Para obtener una lista de transiciones y efectos proporcionados con DES, vea [Transiciones y efectos.](transitions-and-effects.md)
+El objeto de escala de tiempo actúa como un contenedor para otro objeto, denominado *subobjeto*, que realiza el trabajo real. El subobjeto implementa una transformación de datos que genera el efecto o la transición deseados. Para obtener una lista de transiciones y efectos proporcionados con DES, vea [Transiciones y efectos.](transitions-and-effects.md)
 
-Para establecer el subobjeto, llame al método [**IAMTimelineObj::SetSubObjectGUID**](iamtimelineobj-setsubobjectguid.md) en el objeto timeline, pasando el identificador de clase (CLSID) del subobjeto. DirectShow proporciona un enumerador para efectos de vídeo y transiciones de vídeo, que puede usar para obtener el CLSID. Para obtener más información, [vea Enumerar efectos y transiciones.](enumerating-effects-and-transitions.md)
+Para establecer el subobjeto, llame al método [**IAMTimelineObj::SetSubObjectGUID**](iamtimelineobj-setsubobjectguid.md) en el objeto de escala de tiempo, pasando el identificador de clase (CLSID) del subobjeto. DirectShow proporciona un enumerador para efectos de vídeo y transiciones de vídeo, que puede usar para obtener el CLSID. Para obtener más información, [vea Enumerar efectos y transiciones.](enumerating-effects-and-transitions.md)
 
 En el ejemplo siguiente se establece la transición de borrado de [SMPTE](smpte-wipe-transition.md) como subobjeto :
 
@@ -74,7 +74,7 @@ Para insertar el objeto en la escala de tiempo, llame a uno de los métodos sigu
 -   Efectos: [ **IAMTimelineEffectable::EffectInsBefore**](iamtimelineeffectable-effectinsbefore.md)
 -   Transiciones: [ **IAMTimelineTransable::TransAdd**](iamtimelinetransable-transadd.md)
 
-En el [**método IAMTimelineEffectable::EffectInsBefore,**](iamtimelineeffectable-effectinsbefore.md) debe especificar la prioridad del efecto. Cuando los efectos se superponen en el mismo objeto, se aplican por orden de prioridad. El efecto de audio Sobre de volumen es una excepción; Consulte la referencia [del efecto de sobre de](volume-envelope-effect.md) volumen para obtener más información. Dentro de una composición, todas las pistas de audio se mezclan antes de que se apliquen los efectos de audio para esa composición.
+En el [**método IAMTimelineEffectable::EffectInsBefore,**](iamtimelineeffectable-effectinsbefore.md) debe especificar la prioridad del efecto. Cuando los efectos se superponen en el mismo objeto, se aplican en orden de prioridad. El efecto de audio Sobre de volumen es una excepción; Consulte la referencia [del efecto de sobre de](volume-envelope-effect.md) volumen para obtener más información. Dentro de una composición, todas las pistas de audio se mezclan antes de que se apliquen los efectos de audio para esa composición.
 
 Dado que las transiciones no se pueden superponer en el mismo objeto, no tienen un valor de prioridad.
 
@@ -98,7 +98,7 @@ Muchos efectos y transiciones admiten propiedades personalizadas. Para obtener i
 
 Ejemplo
 
-En el ejemplo de código siguiente se agrega una [transición de borrado de SMPTE](smpte-wipe-transition.md) a una pista. Se supone que el objeto de seguimiento ya existe en la escala de tiempo.
+En el ejemplo de código siguiente se agrega una transición de [borrado de SMPTE](smpte-wipe-transition.md) a una pista. Se supone que el objeto de seguimiento ya existe en la escala de tiempo.
 
 
 ```C++

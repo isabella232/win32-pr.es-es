@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45bca50025e1c9136c22166d6d3f758c5c9b5819a9328d33d375195285f1d4f7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da2051b326b2f2f37c9e24e03bcb5e5116cf290a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252387"
 ---
 # <a name="menuitem-statement"></a>Instrucción MENUITEM
 
@@ -55,10 +55,10 @@ Apariencia del elemento de menú. Este parámetro opcional toma una o varias de 
 
 | Opción           | Descripción                                                                                                                                                           |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Comprobado**      | El elemento de menú tiene una marca de verificación junto a él.                                                                                                                                |
-| **Gris**       | El elemento de menú está inicialmente inactivo y aparece en el menú en gris o en un tono claro del color de texto del menú. Esta opción no se puede usar con la **opción INACTIVE.** |
-| **Ayuda**         | Identifica un elemento de ayuda. Esta opción no tiene ningún efecto en la apariencia del elemento de menú.                                                                                 |
-| **Inactivo**     | Se muestra el elemento de menú, pero no se puede seleccionar. Esta opción no se puede usar con la **opción GRAYED.**                                                              |
+| **COMPROBADO**      | El elemento de menú tiene una marca de verificación junto a él.                                                                                                                                |
+| **GRIS**       | El elemento de menú está inicialmente inactivo y aparece en el menú en gris o en un tono claro del color de texto del menú. Esta opción no se puede usar con la **opción INACTIVE.** |
+| **AYUDA**         | Identifica un elemento de ayuda. Esta opción no tiene ningún efecto en la apariencia del elemento de menú.                                                                                 |
+| **INACTIVO**     | Se muestra el elemento de menú, pero no se puede seleccionar. Esta opción no se puede usar con la **opción GRAYED.**                                                              |
 | **MENUBARBREAK** | Igual que **MENUBREAK,** salvo que para los menús emergentes, separa la nueva columna de la columna anterior con una línea vertical.                                             |
 | **MENUBREAK**    | Coloca el elemento de menú en una nueva línea para los elementos estáticos de la barra de menús. En el caso de los menús, coloca el elemento de menú en una nueva columna sin ninguna línea divisora entre las columnas.           |
 
@@ -89,10 +89,10 @@ MENUITEM "&Blackletter", 301
 
 <dl> <dt>
 
-[**Menú**](menu-resource.md)
+[**MENÚ**](menu-resource.md)
 </dt> <dt>
 
-[**Popup**](popup-resource.md)
+[**POPUP**](popup-resource.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Convierte los datos planares y submuestreos JPEG YCbCr en RGB.
 ms.assetid: E4492996-54DA-4C5F-B44C-8FBE97C8DD7D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5302300cc539571fabb1c3d786686ffc514636133391e706fc5963002656764
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c581effbadecc19c39161d2a2ec4af051d4195d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162498"
 ---
 # <a name="ycbcr-effect"></a>Efecto YCbCr
 
@@ -30,7 +30,7 @@ El CLSID para este efecto es CLSID \_ D2D1YCbCr.
 
 | Enumeración de nombre para mostrar e índice                                          | Descripción                                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Submuestreo desubsampling<br/> SUBMUESTREO DE YCBCR DE D2D1 \_ \_ \_ YCBCR: SUBMUESTREO<br/>    | Especifica el submuestreo de la capa de entrada. <br/> El tipo es D2D1 \_ YCBCR \_ UNA \_ SUBMUESTREO.<br/> El valor predeterminado es D2D1 \_ YCBCR \_ UNA \_ SUBSAMPLING \_ AUTO.<br/>                                                                                                |
+| Submuestreo desubsampling<br/> SUBMUESTREO DE YCBCR DE D2D1 \_ \_ \_ YCBCR: SUBMUESTREO<br/>    | Especifica el submuestreo de la columna de entrada. <br/> El tipo es D2D1 \_ YCBCR \_ UNA \_ SUBMUESTREO.<br/> El valor predeterminado es D2D1 \_ YCBCR \_ UNA \_ SUBSAMPLING \_ AUTO.<br/>                                                                                                |
 | TransformMatrix <br/> D2D1 \_ YCBCR \_ PROP \_ TRANSFORM \_ MATRIX<br/> | Matriz [3x2 que](/previous-versions/dotnet/netframework-3.0/ms750596(v=vs.85)) especifica la transformación afín alineada con el eje de la imagen. Las transformaciones alineadas del eje incluyen Escala, Volteos y giros de 90 grados. <br/> El tipo es D2D1 \_ MATRIX \_ 3X2 \_ F.<br/> El valor predeterminado es Matrix3x2F::Identity().<br/> |
 | InterpolationMode<br/> MODO DE \_ INTERPOLACIÓN D2D1 \_ \_ YCBCR<br/>    | Modo de interpolación.<br/> El tipo es D2D1 \_ YCBCR \_ INTERPOLATION \_ MODE.<br/>                                                                                                                                                                                                             |
 
@@ -47,8 +47,8 @@ El CLSID para este efecto es CLSID \_ D2D1YCbCr.
 | SUBSAMPLING AUTO de D2D1 \_ YCBCR \_ \_ LORÓN \_ AUTO<br/> | Este modo intenta deducir el submuestreo de los límites de las imágenes de entrada. Cuando se selecciona esta opción, el plano más pequeño se muestrea al tamaño del plano más grande y el rectángulo de salida de este efecto es la intersección de los dos planos. Al usar este modo, se debe tener cuidado al aplicar efectos a los planos de entrada que cambian los límites de la imagen, como la transformación de borde, para que se mantenga la relación de tamaño deseada entre los planos. <br/> |
 | SUBSAMPLING 420 de D2D1 \_ YCBCR \_ \_ LORÓN \_ 420<br/>  | El plano de mosaico se submuestra horizontalmente por y se submuestrea verticalmente por . Cuando se selecciona esta opción, el plano del mosaico se eleva horizontal y verticalmente por 2 veces y el rectángulo de salida de este efecto es la intersección de los dos planos.<br/>                                                                                                                                                                                                                          |
 | SUBSAMPLING 422 de D2D1 \_ YCBCR \_ \_ LORÓN \_ 422<br/>  | El plano de mosaico se submuestrea horizontalmente mediante . Cuando se selecciona esta opción, el plano del mosaico se escala horizontalmente por 2 veces y el rectángulo de salida de este efecto es la intersección de los dos planos.<br/>                                                                                                                                                                                                                                                                        |
-| SUBSAMPLING 444 DE D2D1 \_ YCBCR \_ \_ LORCO \_ 444<br/>  | El plano de zona no se submuestrea. Cuando se selecciona esta opción, el rectángulo de salida de este efecto es la intersección de los dos planos.<br/>                                                                                                                                                                                                                                                                                                                                            |
-| SUBSAMPLING 440 de D2D1 \_ YCBCR \_ \_ LORÓN \_ 440<br/>  | El plano del mosaico se submuestrea verticalmente mediante . Cuando se selecciona esta opción, el plano del mosaico se eleva verticalmente en dos veces y el rectángulo de salida de este efecto es la intersección de los dos planos.<br/>                                                                                                                                                                                                                                                                            |
+| D2D1 \_ YCBCR \_ DE \_ SUBMUESTREO \_ 444<br/>  | El plano de zona no se submuestrea. Cuando se selecciona esta opción, el rectángulo de salida de este efecto es la intersección de los dos planos.<br/>                                                                                                                                                                                                                                                                                                                                            |
+| SUBSAMPLING 440 de D2D1 \_ YCBCR \_ \_ LORÓN \_ 440<br/>  | El plano de mosaico se submuestrea verticalmente mediante . Cuando se selecciona esta opción, el plano del mosaico se eleva verticalmente en dos veces y el rectángulo de salida de este efecto es la intersección de los dos planos.<br/>                                                                                                                                                                                                                                                                            |
 
 
 
@@ -81,11 +81,11 @@ El efecto realiza la operación de transformación y, a continuación, aplica un
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible | \[Windows 8.1 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\]            |
-| Servidor mínimo compatible | Windows Server 2012 Aplicaciones de escritorio de R2 \[ \| Windows store\] |
-| Header                   | d2d1effects \_ 1.h                                              |
+| Cliente mínimo compatible | \[Windows 8.1 aplicaciones de escritorio \| Windows store\]            |
+| Servidor mínimo compatible | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| Windows store\] |
+| Encabezado                   | d2d1effects \_ 1.h                                              |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                          |
 
 

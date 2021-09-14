@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: c0bf6f5ba22571378a0b88bcb78842cfc81c39705673e2e14e5d1fda496040dd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 271c5b97838135d06613ed795deeee729a52c691
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119259025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162858"
 ---
 # <a name="id2d1propertiessetvaluebyname-methods"></a>Métodos ID2D1Properties::SetValueByName
 
@@ -45,7 +45,7 @@ Establece la propiedad con nombre en el valor especificado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

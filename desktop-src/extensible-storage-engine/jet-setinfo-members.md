@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103871
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5d817450d596af67c41550d6f22e91bbd51e3ec244e8cd1e0b0805c069a95201
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c782eace916b3871ade67870b08e1766faeafd28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118254371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252687"
 ---
 # <a name="jet_setinfo-members"></a>JET_SETINFO miembros
 
@@ -64,7 +64,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351037(v=exchg.10).md">itagSequence</a></td>
-<td>Obtiene o establece el número de secuencia de valor de una columna de varios valores que se va a establecer. La matriz de valores se basa en uno. El primer valor es la secuencia 1, no 0 (cero). Si la columna de registro tiene solo un valor, se debe pasar 1 como itagSequence si ese valor se reemplaza. Un valor de 0 (cero) significa agregar una nueva instancia de valor de columna al final de la secuencia de valores de columna.</td>
+<td>Obtiene o establece el número de secuencia del valor de una columna de varios valores que se va a establecer. La matriz de valores se basa en uno. El primer valor es la secuencia 1, no 0 (cero). Si la columna de registro solo tiene un valor, se debe pasar 1 como itagSequence si ese valor se va a reemplazar. Un valor de 0 (cero) significa agregar una nueva instancia de valor de columna al final de la secuencia de valores de columna.</td>
 </tr>
 </tbody>
 </table>

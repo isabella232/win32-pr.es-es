@@ -14,12 +14,12 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 2e5f3060f261ba84b70272ed358a7c544f2b0e1582de310ed759b4ea40714359
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11878e6a0ac953b9b7eb27ce21bb67001f9d88d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252033"
 ---
 # <a name="calldivideresults-function"></a>Función CallDivideResults
 
@@ -93,7 +93,7 @@ Matriz de [**propiedades de identificador**](/windows/desktop/api/msinkaut/nf-ms
 *pastrWords* \[ out\]
 </dt> <dd>
 
-Matriz de palabras devueltas desde el análisis de entrada de lápiz.
+Matriz de palabras devueltas por el análisis de entrada de lápiz.
 
 </dd> <dt>
 
@@ -169,7 +169,7 @@ Esta función puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para evitar pérdidas de memoria, debe liberar los recursos de *pastrWords*, *pastrLines* y *pastrParagraphs.*
 

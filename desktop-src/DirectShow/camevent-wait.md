@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3875647cb93619e8326066bc9af7a6f99f79a0b0a2df58f668b1e365fd39102b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ab5bc2aabf77fb73739528e99cda7961ae87e9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118662516"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161640"
 ---
 # <a name="cameventwait-method"></a>Método CAMEvent.Wait
 
@@ -51,7 +51,7 @@ Valor de tiempo de espera opcional, representado en milisegundos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si se señala el evento. De lo contrario, **devuelve FALSE**.
+Devuelve **TRUE** si se señala el evento. De lo contrario, **devuelve FALSE.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -68,7 +68,7 @@ En el caso de los eventos de restablecimiento automático, el evento se restable
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

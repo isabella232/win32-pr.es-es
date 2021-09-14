@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 25957defa4db514ce84f2e013dcc3751e21779b8
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161395"
 ---
 # <a name="pause-command"></a>comando pause
 
-El comando pause pausa la reproducción o la grabación. La mayoría de los controladores conservan la posición actual y finalmente reanudan la reproducción o grabación en esta posición. Los dispositivos cd audio, digital-video, secuenciador DE AUDIO, VCR, videodisc y audio de forma de onda reconocen este comando.
+El comando pause pausa la reproducción o la grabación. La mayoría de los controladores conservan la posición actual y finalmente reanudan la reproducción o grabación en esta posición. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc y audio de forma de onda reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -54,7 +54,7 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -62,7 +62,7 @@ Con los controladores MCICDA, MCISEQ y MCIPIONR, el comando pause funciona igual
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente pausa el dispositivo "mysound".
+El comando siguiente pausa el dispositivo "my sound".
 
 ``` syntax
 pause mysound
@@ -79,7 +79,7 @@ pause mysound
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

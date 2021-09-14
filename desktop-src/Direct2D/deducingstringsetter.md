@@ -1,6 +1,6 @@
 ---
 title: DeducingStringSetter (D2d1effecthelpers.h)
-description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del setter de la propiedad member-function para una propiedad de tipo cadena.
+description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada de establecimiento de propiedad de función miembro para una propiedad de tipo cadena.
 ms.assetid: D3075B7B-D253-4F85-9FD2-3487C4207122
 keywords:
 - DeducingStringSetter Direct2D
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50fdcf97e9df1f77705509a4b93b6936a4c9f7f203ddb16e0b0284630cb42bdc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b7860978fd271b2ff395caae068cd651d3057020
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075289"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163426"
 ---
 # <a name="deducingstringsetter"></a>DeducingStringSetter
 
-Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del setter de la propiedad member-function para una propiedad de tipo cadena.
+Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada de establecimiento de propiedad de función miembro para una propiedad de tipo cadena.
 
 > [!Note]  
 > No se debe llamar directamente a DeducingStringSetter.
@@ -50,7 +50,7 @@ HRESULT DeducingStringSetter(
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

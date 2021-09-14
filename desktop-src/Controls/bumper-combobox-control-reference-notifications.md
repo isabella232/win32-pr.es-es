@@ -4,19 +4,19 @@ description: Notificaciones de control ComboBox
 ms.assetid: e5804e9e-e847-4f07-819e-569bd8d60117
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b6e176d0b3d0b73f15e2a04bb7ea5769ed826250449fb63cafc2391a6cbf274
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47502d7b45772399deff368ca21ed587b66fbac4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118673981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251235"
 ---
 # <a name="combobox-control-notifications"></a>Notificaciones de control ComboBox
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [CBN \_ CLOSEUP](cbn-closeup.md)
--   [CBN \_ DBLCLK](cbn-dblclk.md)
+-   [\_DBLCLK de CBN](cbn-dblclk.md)
 -   [LISTA DESPLEGABLE DE CBN \_](cbn-dropdown.md)
 -   [CBN \_ EDITCHANGE](cbn-editchange.md)
 -   [CBN \_ EDITUPDATE](cbn-editupdate.md)

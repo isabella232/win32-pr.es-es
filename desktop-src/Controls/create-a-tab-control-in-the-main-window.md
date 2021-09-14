@@ -1,21 +1,21 @@
 ---
-title: Cómo crear un control de pestaña en la ventana principal
-description: En el ejemplo de esta sección se muestra cómo crear un control de pestaña y mostrarlo en el área cliente de la ventana principal de la aplicación.
+title: Cómo crear un control de ficha en la ventana principal
+description: En el ejemplo de esta sección se muestra cómo crear un control de ficha y mostrarlo en el área cliente de la ventana principal de la aplicación.
 ms.assetid: 24157B8B-177B-471C-9DA0-548D09EA5F89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8b7d945b01c1e6409cf795d7f42f29999830ed1272bb661a9bb13e52cd1e293
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 686a9a4fe4f6be95ccdcf3bbcb597c2c48ff3b2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119320015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251174"
 ---
-# <a name="how-to-create-a-tab-control-in-the-main-window"></a>Cómo crear un control de pestaña en la ventana principal
+# <a name="how-to-create-a-tab-control-in-the-main-window"></a>Cómo crear un control de ficha en la ventana principal
 
-En el ejemplo de esta sección se muestra cómo crear un control de pestaña y mostrarlo en el área cliente de la ventana principal de la aplicación. La aplicación muestra una tercera ventana (un control estático) en el área de presentación del control de pestaña. La ventana primaria coloca y tamaño el control de tabulación y el control estático cuando procesa el [**mensaje WM \_ SIZE.**](/windows/desktop/winmsg/wm-size)
+En el ejemplo de esta sección se muestra cómo crear un control de ficha y mostrarlo en el área cliente de la ventana principal de la aplicación. La aplicación muestra una tercera ventana (un control estático) en el área de presentación del control de ficha. La ventana primaria coloca y tamaño el control de ficha y el control estático cuando procesa el [**mensaje WM \_ SIZE.**](/windows/desktop/winmsg/wm-size)
 
-Hay siete pestañas en este ejemplo, una para cada día de la semana. Cuando el usuario selecciona una pestaña, la aplicación muestra el nombre del día correspondiente en el control estático.
+En este ejemplo hay siete pestañas, una para cada día de la semana. Cuando el usuario selecciona una pestaña, la aplicación muestra el nombre del día correspondiente en el control estático.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -30,9 +30,9 @@ Hay siete pestañas en este ejemplo, una para cada día de la semana. Cuando el 
 
 ## <a name="instructions"></a>Instructions
 
-### <a name="create-a-tab-control-in-the-main-window"></a>Crear un control tab en la ventana principal
+### <a name="create-a-tab-control-in-the-main-window"></a>Crear un control Tab en la ventana principal
 
-La función siguiente crea el control de ficha y agrega una pestaña para cada día de la semana. Los nombres de los días se definen como recursos de cadena, numerados consecutivamente a partir de IDS SUNDAY (definido en el archivo de encabezado de recursos de la \_ aplicación). Tanto la ventana primaria como el control de pestaña deben tener el estilo [**de ventana WS \_ CLIPSIBLINGS.**](/windows/desktop/winmsg/window-styles) La función de inicialización de la aplicación llama a esta función después de crear la ventana principal.
+La función siguiente crea el control de ficha y agrega una pestaña para cada día de la semana. Los nombres de los días se definen como recursos de cadena, numerados consecutivamente a partir de IDS SUNDAY (definido en el archivo de encabezado de recursos de \_ la aplicación). Tanto la ventana primaria como el control de ficha deben tener el estilo [**de ventana WS \_ CLIPSIBLINGS.**](/windows/desktop/winmsg/window-styles) La función de inicialización de la aplicación llama a esta función después de crear la ventana principal.
 
 
 ```C++
@@ -93,7 +93,7 @@ HWND DoCreateTabControl(HWND hwndParent)
 
 
 
-La función siguiente crea el control estático que reside en el área de presentación del control de pestaña. La función de inicialización de la aplicación llama a esta función después de crear la ventana principal y el control de pestaña.
+La función siguiente crea el control estático que reside en el área de presentación del control de ficha. La función de inicialización de la aplicación llama a esta función después de crear la ventana principal y el control de ficha.
 
 
 ```C++
@@ -115,9 +115,9 @@ HWND DoCreateDisplayWindow(HWND hwndTab)
 
 
 
-Las siguientes funciones de ejemplo se llaman desde el procedimiento de ventana de la aplicación. La aplicación llama a la función al procesar el mensaje WM SIZE para colocar y ajustar el tamaño del control de pestaña para que se ajuste al `OnSize` área de cliente de la ventana principal. [**\_**](/windows/desktop/winmsg/wm-size)
+Las siguientes funciones de ejemplo se llaman desde el procedimiento de ventana de la aplicación. La aplicación llama a la función al procesar el mensaje WM SIZE para colocar y ajustar el tamaño del control de ficha para ajustarlo al área `OnSize` cliente de la ventana principal. [**\_**](/windows/desktop/winmsg/wm-size)
 
-Cuando se selecciona una pestaña, el control de pestaña envía un mensaje [**\_ WM NOTIFY,**](wm-notify.md) especificando el [código de notificación DE TCN \_ SELCHANGE.](tcn-selchange.md) La función de la `OnNotify` aplicación procesa este código de notificación estableciendo el texto del control estático.
+Cuando se selecciona una pestaña, el control de pestaña envía un mensaje [**\_ WM NOTIFY,**](wm-notify.md) especificando el [código de notificación DE \_ TCN SELCHANGE.](tcn-selchange.md) La función de la `OnNotify` aplicación procesa este código de notificación estableciendo el texto del control estático.
 
 
 ```C++

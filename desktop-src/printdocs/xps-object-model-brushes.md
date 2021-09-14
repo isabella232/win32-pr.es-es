@@ -1,19 +1,19 @@
 ---
-description: En este tema se describe cómo usar distintos tipos de pinceles en una OM XPS.
+description: En este tema se describe cómo usar distintos tipos de pinceles en una om de XPS.
 ms.assetid: 392ca1d5-283e-4eed-ae21-6477c469014d
-title: Pinceles XPS OM
+title: Pinceles DE OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbca4174c406e0d2fda63d932ee85f2f3c3123b7255b43f77a2365bf0f05e2f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0557757bfaf81156b2015525d35897cfb042e44b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118971134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252326"
 ---
-# <a name="xps-om-brushes"></a>Pinceles XPS OM
+# <a name="xps-om-brushes"></a>Pinceles DE OM XPS
 
-En este tema se describe cómo usar distintos tipos de pinceles en una OM XPS.
+En este tema se describe cómo usar distintos tipos de pinceles en una om de XPS.
 
 Los pinceles de XPS OM se basan en la [**interfaz IXpsOMBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsombrush) e incluyen lo siguiente:
 
@@ -108,7 +108,7 @@ En el ejemplo de código siguiente se crea un pincel a partir de un objeto visua
 
 ### <a name="create-an-image-brush"></a>Creación de un pincel de imagen
 
-Consulte el ejemplo de código en [Colocar imágenes en un OM XPS.](place-images-in-an-xps-om.md)
+Consulte el ejemplo de código de [Colocar imágenes en un XPS OM](place-images-in-an-xps-om.md).
 
 ### <a name="create-a-linear-gradient-brush"></a>Creación de un pincel de degradado lineal
 

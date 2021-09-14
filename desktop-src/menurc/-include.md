@@ -4,12 +4,12 @@ description: La directiva \ include hace que el compilador de recursos procese e
 ms.assetid: 9a3505c6-c19f-4c4f-85a4-94fbcfc0f9c6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8bf5d6fa40e45073ca7ccb5f97dd3ddb0d13dfdfced965d5c83332183da421e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5a8d36f1d0ae24f3dc21d67eec57056872aabdbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119599725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252446"
 ---
 # <a name="-include"></a>'include'
 
@@ -24,13 +24,13 @@ La **\# directiva include** hace que el compilador de recursos procese el archiv
 <span id="filename"></span><span id="FILENAME"></span>*Nombre*
 </dt> <dd>
 
-Nombre del archivo que se va a incluir. Si el archivo está en el directorio actual, la cadena debe incluirse entre comillas dobles; si el archivo está en el directorio especificado por la variable de entorno INCLUDE, la cadena debe incluirse entre caracteres menores y mayores que (<>). Debe proporcionar una ruta de acceso completa entre comillas dobles (") si el archivo no está en el directorio actual o en el directorio especificado por la variable de entorno INCLUDE.
+Nombre del archivo que se va a incluir. Si el archivo está en el directorio actual, la cadena debe incluirse entre comillas dobles; Si el archivo está en el directorio especificado por la variable de entorno INCLUDE, la cadena debe incluirse entre caracteres menores y mayores que (<>). Debe proporcionar una ruta de acceso completa entre comillas dobles (") si el archivo no está en el directorio actual o en el directorio especificado por la variable de entorno INCLUDE.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use la siguiente instrucción en el archivo de encabezado para rodear instrucciones que un compilador de C puede compilar pero no RC:
+Use la siguiente instrucción en el archivo de encabezado para rodear instrucciones que un compilador de C puede compilar, pero no RC:
 
 ``` syntax
 #ifndef RC_INVOKED

@@ -4,12 +4,12 @@ ms.assetid: ee408ca2-0d8b-454d-9f6b-009638caf25c
 title: System.Contact.MiddleName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b5c03e4e7f4c15fdf0bc65c11cb7151e29f1803a60f2e481e1d4fa71b365b67
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b270863784062146e58afce3c5a7ed1c61d704a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119599365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252231"
 ---
 # <a name="systemcontactmiddlename"></a>System.Contact.MiddleName
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

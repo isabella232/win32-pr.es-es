@@ -4,12 +4,12 @@ ms.assetid: 439be951-0185-4578-8b79-a5dfce254a68
 title: Propiedad AVEncMPVGOPSInSeq (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a4aba43159bc50509ee2ed045e2f5b2d277f7dff7011a3f959c3d1735a6f0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b61414bd7389448e7ae43a52a065142fc40867f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118403757"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161838"
 ---
 # <a name="avencmpvgopsinseq-property"></a>Propiedad AVEncMPVGOPSInSeq
 
@@ -25,7 +25,7 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncMPVGOPSInSeq**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es de lectura y escritura.
 
@@ -33,11 +33,11 @@ Esta propiedad es de lectura y escritura.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 

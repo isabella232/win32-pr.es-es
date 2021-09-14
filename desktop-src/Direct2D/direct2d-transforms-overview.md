@@ -14,12 +14,12 @@ keywords:
 - destinos de representación, transformaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80f2fad970af1d231adab691ad9345377c585b839053625ad49b3d8f7a9e203a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0b924c51d73e71f206fbb250f4a7dd50ca71db2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119833111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163346"
 ---
 # <a name="transforms-overview"></a>Información general sobre transformaciones
 
@@ -110,20 +110,20 @@ Para representar el contenido, use los métodos de dibujo del destino de represe
 
 ## <a name="brush-transforms"></a>Transformaciones de pincel
 
-Puede ajustar la transformación en el pincel llamando a [**SetTransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)). Para esta transformación, puede pensar en el pincel como un papel grande y en las distintas primitivas de representación (texto, geometría, rectángulo, entre otras) como galerías de símbolos. Al ajustar la transformación del pincel, es como si estuviera deslizando el papel grande debajo de la galería de símbolos, sin cambiar la posición de la propia galería de símbolos. Puede usar esta técnica para que el texto se desvanezca de amarillo a negro en un espacio 3D.
+Puede ajustar la transformación en el pincel llamando a [**SetTransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)). Para esta transformación, puede pensar en el pincel como un papel grande y en las distintas primitivas de representación (texto, geometría, rectángulo, entre otras) como galerías de símbolos. Al ajustar la transformación de pincel, es como si estuviera deslizando el papel grande debajo de la galería de símbolos, sin cambiar la posición de la propia galería de símbolos. Puede usar esta técnica para que el texto se desvanezca de amarillo a negro en un espacio 3D.
 
-Cuando la transformación de pincel es la transformación de identidad, los pinceles aparecen en el mismo espacio de coordenadas que el destino de representación en el que se dibujan. La transformación de pincel permite a un llamador modificar cómo se asignan las coordenadas de pincel a este espacio.
+Cuando la transformación de pincel es la transformación de identidad, los pinceles aparecen en el mismo espacio de coordenadas que el destino de representación en el que se dibujan. La transformación de pincel permite a un autor de llamada modificar cómo se asignan las coordenadas de pincel a este espacio.
 
-El espacio de pincel se especifica de forma diferente en Direct2D que en Windows Presentation Foundation (WPF). En Direct2D, el espacio de pincel no es relativo al objeto que se dibuja, sino que es el sistema de coordenadas actual del destino de representación, transformado por la transformación de pincel, si hay uno. Para que el pincel rellene un objeto como se hizo en WPF, debe traducir el origen del espacio de pincel a la esquina superior izquierda del cuadro de límite del objeto y, a continuación, escalar el espacio del pincel para que el icono base rellene el cuadro de límite del objeto.
+El espacio de pincel se especifica de forma diferente en Direct2D que en Windows Presentation Foundation (WPF). En Direct2D, el espacio de pincel no es relativo al objeto que se está dibujando, sino que es el sistema de coordenadas actual del destino de representación, transformado por la transformación de pincel, si lo hay. Para que el pincel rellene un objeto como se hizo en WPF, debe traducir el origen del espacio de pincel a la esquina superior izquierda del cuadro de límite del objeto y, a continuación, escalar el espacio de pincel para que el icono base rellene el rectángulo delimitador del objeto.
 
-Para obtener más información sobre las transformaciones de pincel, vea [Introducción a los pinceles de Direct2D.](direct2d-brushes-overview.md)
+Para obtener más información sobre las transformaciones de pincel, [vea Introducción a los pinceles de Direct2D.](direct2d-brushes-overview.md)
 
 ## <a name="geometry-transforms"></a>Transformaciones de geometría
 
 Al escalar, mover, traducir o sesgar geometrías, puede aplicar directamente una transformación a una geometría específica, no a una transformación de destino de representación que afectaría a toda la pantalla. Por lo general, una transformación de destino de representación afecta al trazo y relleno de una geometría. Por el contrario, una transformación de geometría solo afecta al relleno de una geometría, ya que la transformación se aplica a una geometría antes de que se acaricia.
 
 > [!Note]  
-> A partir Windows 8, la transformación del mundo no afecta al trazo si establece el tipo de trazo en [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ FIXED**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type) o [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ HAIRLINE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type).
+> A partir Windows 8, la transformación world no afecta al trazo si establece el tipo de trazo en [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ FIXED**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type) o [**D2D1 \_ STROKE TRANSFORM TYPE \_ \_ \_ HAIRLINE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type).
 
  
 
@@ -131,9 +131,9 @@ Puede ajustar la transformación en una geometría llamando a [**ID2D1Factory::C
 
 ## <a name="how-a-render-target-transform-affects-clips"></a>Cómo afecta una transformación de destino de representación a los clips
 
-La transformación en un destino de representación afecta a cómo se calcula el rectángulo delimitador de un clip alineado con el eje. Cuando se [**llama a PushAxisAlignedClip,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) la transformación del mundo actual que se establece en el destino de representación transforma el parámetro *clipRect.* Después de aplicar la transformación a *clipRect*, se calcula el rectángulo de selección alineado con el eje para *clipRect.* Para mejorar la eficacia, el contenido se recorta a este cuadro de límite alineado con el eje y no al *clip originalRect* que se pasa. En los diagramas siguientes se muestra cómo se aplica una transformación de rotación al destino de representación, el *clipRect* resultante y un cuadro de límite alineado con el eje calculado.
+La transformación en un destino de representación afecta a cómo se calcula el rectángulo delimitador de un clip alineado con el eje. Cuando se [**llama a PushAxisAlignedClip,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) la transformación del mundo actual que se establece en el destino de representación transforma el parámetro *clipRect.* Después de aplicar la transformación a *clipRect,* se calcula el rectángulo de selección alineado con el eje para *clipRect.* Para mejorar la eficacia, el contenido se recorta a este rectángulo de selección alineado con el eje y no al *clipRect* original que se pasa. En los diagramas siguientes se muestra cómo se aplica una transformación de rotación al destino de representación, al *clipRect* resultante y a un rectángulo de selección alineado con el eje calculado.
 
-1.  Suponga que el rectángulo de la ilustración siguiente es un destino de representación alineado con los píxeles de la pantalla.
+1.  Supongamos que el rectángulo de la ilustración siguiente es un destino de representación alineado con los píxeles de la pantalla.
 
     ![ilustración de un rectángulo (destino de representación)](images/pushaxisalignedclip-step1-rendertarget.png)
 
@@ -141,13 +141,13 @@ La transformación en un destino de representación afecta a cómo se calcula el
 
     ![ilustración del rectángulo original y un rectángulo girado (destino de representación transformado)](images/pushaxisalignedclip-step2-transformed.png)
 
-3.  Después [**de llamar a PushAxisAlignedClip,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) la transformación de rotación se aplica al *clipRect*. En la ilustración siguiente, el rectángulo azul representa el *clip transformadoRect*.
+3.  Después [**de llamar a PushAxisAlignedClip,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) la transformación de rotación se aplica a *clipRect*. En la ilustración siguiente, el rectángulo azul representa el *clip transformadoRect*.
 
     ![ilustración de un rectángulo azul más pequeño (cliprect) dentro del rectángulo girado (destino de representación transformado)](images/pushaxisalignedclip-step3-cliprecttransformed.png)
 
-4.  Se calcula el cuadro de límite alineado con el eje. En la ilustración siguiente, el rectángulo discontinuo verde representa el cuadro de límite. Todo el contenido se recorta a este rectángulo de selección alineado con el eje.
+4.  Se calcula el rectángulo de selección alineado con el eje. En la ilustración siguiente, el rectángulo discontinuo verde representa el rectángulo delimitador. Todo el contenido se recorta en este rectángulo de selección alineado con el eje.
 
-    ![ilustración de un rectángulo delimitador verde en el rectángulo azul pequeño (recorte)](images/pushaxisalignedclip-step4-boundingbox.png)
+    ![ilustración de un rectángulo de selección verde en el rectángulo azul pequeño (cliprect)](images/pushaxisalignedclip-step4-boundingbox.png)
 
 ## <a name="summary"></a>Resumen
 

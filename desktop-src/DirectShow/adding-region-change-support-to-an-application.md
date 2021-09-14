@@ -4,12 +4,12 @@ ms.assetid: 4a5c049d-b59f-4130-9252-bc28662a7931
 title: Agregar Region-Change compatibilidad con una aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a13c17a934f176a017a6980920b75ec8563d211330bff203fce6bf9006f4b4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6d0bd97bc6249928455ccf9154a91ce2045d8c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119690525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162390"
 ---
 # <a name="adding-region-change-support-to-an-application"></a>Agregar Region-Change compatibilidad con una aplicación
 

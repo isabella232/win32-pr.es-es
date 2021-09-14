@@ -4,12 +4,12 @@ description: A diferencia de otras API, como GDI, GDI+ o WPF, Direct2D interoper
 ms.assetid: 1d5b8deb-34e2-433c-8de3-4ef66fb4e49d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd95e7644b5f429d4dd91d2276213d5b7ffb92b058d8e530bfcf47fee77fea3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e2c49a8f341377bcf78a9a99699a3bd4852411dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119698241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163401"
 ---
 # <a name="text-rendering-with-direct2d-and-directwrite"></a>Representación de texto con Direct2D y DirectWrite
 
@@ -31,13 +31,13 @@ En este tema se incluyen las siguientes secciones.
 
 Mover una aplicación de una API de gráficos a otra puede ser difícil o no lo que desea por varias razones. Esto puede deberse a que tiene que admitir complementos que todavía toman las interfaces anteriores, porque la propia aplicación es demasiado grande para portabilidad a una nueva API en una versión o porque alguna parte de la API más reciente es deseable, pero la API anterior funciona lo suficientemente bien para otras partes de la aplicación.
 
-Dado [que Direct2D](./direct2d-portal.md) [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) se implementan como componentes independientes, puede actualizar todo el sistema de gráficos 2D o solo la parte de texto de él. Por ejemplo, podría actualizar una aplicación para que use DirectWrite texto pero seguir utilizando [GDI](/windows/desktop/gdi/windows-gdi) o GDI+ para la representación.
+Dado [que Direct2D](./direct2d-portal.md) [y DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) se implementan como componentes independientes, puede actualizar todo el sistema de gráficos 2D o solo la parte de texto de él. Por ejemplo, podría actualizar una aplicación para usar DirectWrite texto pero seguir utilizando [GDI](/windows/desktop/gdi/windows-gdi) o GDI+ para la representación.
 
-## <a name="text-services-versus-text-rendering"></a>Servicios de texto frente a Representación de texto
+## <a name="text-services-versus-text-rendering"></a>Servicios de texto frente a representación de texto
 
-A medida que las aplicaciones han evolucionado, sus requisitos de procesamiento de texto se han vuelto cada vez más complejos. Al principio, el texto se limitaba por lo general a la interfaz de usuario de diseño estático y el texto se representaba en un cuadro bien definido, como un botón. A medida que las aplicaciones empezaron a estar disponibles en un número creciente de idiomas, este enfoque se volvió más difícil de mantener porque tanto el ancho como el alto del texto traducido pueden variar significativamente entre idiomas. Para adaptarse, las aplicaciones empezaron a crear dinámicamente su interfaz de usuario para que dependa del tamaño real representado del texto, en lugar de al revés.
+A medida que las aplicaciones han evolucionado, sus requisitos de procesamiento de texto se han vuelto cada vez más complejos. Al principio, el texto se limitaba por lo general a la interfaz de usuario de diseño estático y el texto se representaba en un cuadro bien definido, como un botón. A medida que las aplicaciones empezaron a estar disponibles en un número creciente de idiomas, este enfoque se volvió más difícil de mantener porque tanto el ancho como el alto del texto traducido pueden variar significativamente entre los idiomas. Para adaptarse, las aplicaciones empezaron a crear dinámicamente su interfaz de usuario para que dependa del tamaño real representado del texto, en lugar de al revés.
 
-Para ayudar a las aplicaciones a completar [esta tarea, DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) proporciona la [**interfaz IDWriteTextLayout.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) Esta API permite a una aplicación especificar un fragmento de texto con características complejas, como diferentes fuentes y tamaños de fuente, subrayados, tachados, texto bidireccional, efectos, puntos suspensivos e incluso caracteres no glifo incrustados (como un emoji de mapa de bits o un icono). A continuación, la aplicación puede cambiar varias características del texto a medida que determina de forma iterativa su diseño de interfaz de usuario. El [DirectWrite Hola mundo ejemplo](/samples/browse/?redirectedfrom=MSDN-samples), que se muestra en la ilustración siguiente y en el [tutorial: Tareas iniciales con DirectWrite](/windows/desktop/DirectWrite/getting-started-with-directwrite) tema, muestra muchos de estos efectos.
+Para ayudar a las aplicaciones a completar esta [tarea, DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) proporciona la [**interfaz IDWriteTextLayout.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) Esta API permite a una aplicación especificar un fragmento de texto con características complejas, como diferentes fuentes y tamaños de fuente, subrayados, tachados, texto bidireccional, efectos, puntos suspensivos e incluso caracteres no glifo incrustados (como un emoji de mapa de bits o un icono). A continuación, la aplicación puede cambiar varias características del texto a medida que determina iterativamente su diseño de interfaz de usuario. El [DirectWrite Hola mundo ejemplo](/samples/browse/?redirectedfrom=MSDN-samples), que se muestra en la siguiente ilustración y en el [tutorial: Tareas iniciales con DirectWrite](/windows/desktop/DirectWrite/getting-started-with-directwrite) tema, muestra muchos de estos efectos.
 
 ![captura de pantalla del ejemplo "Hola mundo".](images/dwrite-hello-world.png)
 
@@ -47,13 +47,13 @@ Además de obtener medidas de texto, la aplicación puede probar varias partes d
 
 La interfaz de diseño de texto se desacopla de la API de representación que usa la aplicación, como se muestra en el diagrama siguiente:
 
-![diagrama de la API de gráficos y diseño de texto.](images/direct2d-directwrite1.png)
+![diagrama de api de gráficos y diseño de texto.](images/direct2d-directwrite1.png)
 
 Esta separación es posible porque DirectWrite proporciona una interfaz de representación [**(IDWriteTextRenderer)**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextrenderer)que las aplicaciones pueden implementar para representar texto mediante la API de gráficos que desee. La aplicación implementó el método de devolución de llamada [**IDWriteTextRenderer::D rawGlyph DirectWrite Run**](/windows/desktop/api/dwrite/nf-dwrite-idwritetextrenderer-drawglyphrun) al representar un diseño de texto. Es responsabilidad de este método realizar las operaciones de dibujo o pasarlas.
 
 Para dibujar glifos, [Direct2D](./direct2d-portal.md) proporciona [**ID2D1RenderTarget::D rawGlyphRun**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun) para dibujar en una superficie de Direct2D y [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) proporciona [**IDWriteBitmapRenderTarget::D rawGlyphRun**](/windows/desktop/api/dwrite/nf-dwrite-idwritebitmaprendertarget-drawglyphrun) para dibujar en una superficie GDI que luego se puede transferir a una ventana mediante GDI. Cómodamente, **DrawGlyphRun** en Direct2D y DirectWrite tienen parámetros exactamente compatibles con el método [**DrawGlyphRun**](/windows/desktop/api/dwrite/nf-dwrite-idwritetextrenderer-drawglyphrun) que la aplicación implementa en [**IDWriteTextRenderer**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextrenderer).
 
-Después de una separación similar, las características específicas del texto (como la enumeración y administración de fuentes, el análisis de glifos, entre [otros)](/windows/desktop/DirectWrite/direct-write-portal) se controlan mediante DirectWrite en lugar de [Direct2D](./direct2d-portal.md). Direct2D acepta directamente los objetos DirectWrite datos. Para ayudar a las aplicaciones GDI existentes a aprovechar las ventajas de DirectWrite, proporciona la interfaz de método [**IDWriteGdiInterop**](/windows/desktop/api/dwrite/nn-dwrite-idwritegdiinterop) con métodos para hacer lo siguiente:
+Después de una separación similar, las características específicas del texto (como la enumeración y administración de fuentes, el análisis de glifos, entre otros) se controlan mediante DirectWrite [en](/windows/desktop/DirectWrite/direct-write-portal) lugar de [Direct2D](./direct2d-portal.md). Direct2D acepta directamente los objetos DirectWrite datos. Para ayudar a las aplicaciones GDI existentes a aprovechar las ventajas de DirectWrite, proporciona la interfaz de método [**IDWriteGdiInterop**](/windows/desktop/api/dwrite/nn-dwrite-idwritegdiinterop) con métodos para hacer lo siguiente:
 
 -   Cree una [fuente DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) a partir de una fuente [lógica GDI](/windows/desktop/gdi/windows-gdi) ([**CreateFontFromLOGFONT**](/windows/desktop/api/dwrite/nf-dwrite-idwritegdiinterop-createfontfromlogfont)).
 -   Convertir de una [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) de fuente a una fuente [lógica GDI](/windows/desktop/gdi/windows-gdi) ([**ConvertFontFaceToLOGFONT**](/windows/desktop/api/dwrite/nf-dwrite-idwritegdiinterop-convertfontfacetologfont)).
@@ -134,7 +134,7 @@ Por lo tanto, [Direct2D](./direct2d-portal.md) proporciona API por capas que per
 
 ### <a name="drawtextlayout"></a>DrawTextLayout
 
-Al crear un objeto [**IDWriteTextLayout,**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) una aplicación puede empezar a medir y organizar el texto y otros elementos de la interfaz de usuario, y admitir varias fuentes, estilos, subrayados y tachados. [Direct2D proporciona](./direct2d-portal.md) la API [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) que acepta directamente este objeto y representa el texto en un punto determinado. (El ancho y alto los proporciona el objeto de diseño). Además de implementar todas las características de diseño de texto esperadas, Direct2D interpretará cualquier objeto de efecto como un pincel y aplicará ese pincel al intervalo de glifos seleccionado. También llamará a cualquier objeto en línea. Una aplicación puede insertar caracteres no glifo (iconos) en el texto si lo desea. Otra ventaja de usar un objeto de diseño de texto es que las posiciones del glifo se almacenan en caché en él. Por lo tanto, es posible una gran ganancia de rendimiento al volver a usar el mismo objeto de diseño para varias llamadas a draw y evitar volver a calcular las posiciones del glifo para cada llamada. Esta funcionalidad no está presente para [**DrawText de**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))GDI.
+Al crear un objeto [**IDWriteTextLayout,**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) una aplicación puede empezar a medir y organizar el texto y otros elementos de la interfaz de usuario, y admitir varias fuentes, estilos, subrayados y tachados. [Direct2D proporciona](./direct2d-portal.md) la API [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) que acepta directamente este objeto y representa el texto en un punto determinado. (El ancho y alto los proporciona el objeto de diseño). Además de implementar todas las características de diseño de texto esperadas, Direct2D interpretará cualquier objeto de efecto como un pincel y aplicará ese pincel al intervalo de glifos seleccionado. También llamará a cualquier objeto en línea. A continuación, una aplicación puede insertar caracteres no glifo (iconos) en el texto si lo desea. Otra ventaja de usar un objeto de diseño de texto es que las posiciones del glifo se almacenan en caché en él. Por lo tanto, es posible una gran ganancia de rendimiento al volver a usar el mismo objeto de diseño para varias llamadas a draw y evitar volver a calcular las posiciones del glifo para cada llamada. Esta funcionalidad no está presente para [**DrawText de**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))GDI.
 
 ### <a name="drawglyphrun"></a>DrawGlyphRun
 
@@ -148,7 +148,7 @@ Agregar [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) a una ap
 
 Esto permite a la aplicación obtener características avanzadas de representación de texto como las siguientes:
 
--   ClearType de subpíxeles permite a una aplicación colocar glifos en posiciones de subpíxeles para permitir la representación de glifos nítidos y el diseño del glifo.
+-   ClearType de subpíxeles permite que una aplicación coloque glifos en posiciones de subpíxeles para permitir la representación de glifos nítidos y el diseño del glifo.
 -   El suavizado de contorno de dirección Y permite una representación más fluida de curvas en glifos más grandes.
 
 Una aplicación que se mueva [a Direct2D](./direct2d-portal.md) también obtendrá las siguientes características:
@@ -162,7 +162,7 @@ Para admitir de forma eficaz la aceleración de hardware, [Direct2D](./direct2d-
 
 ## <a name="conclusion"></a>Conclusión
 
-En este tema se explican las diferencias y similitudes entre [Direct2D](./direct2d-portal.md) [y DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) y las motivaciones arquitectónicas para proporcionarlas como API independientes y cooperativas.
+En este tema se explican las diferencias y similitudes entre [Direct2D](./direct2d-portal.md) [y DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) y las motivaciones arquitectónicas para proporcionarlas como API cooperativas independientes.
 
  
 

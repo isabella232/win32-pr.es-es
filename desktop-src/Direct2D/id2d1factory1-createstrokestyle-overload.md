@@ -1,5 +1,5 @@
 ---
-title: Métodos Id2D1Factory1 CreateStrokeStyle
+title: Métodos CreateStrokeStyle de ID2D1Factory1
 description: Crea un objeto ID2D1StrokeStyle1.
 ms.assetid: FFC85600-A352-4348-BFAA-CBCAF34A692C
 keywords:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: e874f0832af55802b63a8e3ee66beb59374d194a3f1d1e73a3811a4dcc6ec646
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c7e0de21c5591ce89f6bfff278b44b23c8ca393d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119304815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162998"
 ---
 # <a name="id2d1factory1createstrokestyle-methods"></a>Métodos ID2D1Factory1::CreateStrokeStyle
 

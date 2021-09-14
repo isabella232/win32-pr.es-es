@@ -6,12 +6,12 @@ keywords:
 - Ras del servicio de acceso remoto, errores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b870678eb2dbe95c190bc67415b9abb5481c33918429194404893349c0d7f7a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f37c18a795f5675fc6df80da6027526f81a87010
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117791283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273628"
 ---
 # <a name="handling-ras-errors"></a>Control de errores ras
 

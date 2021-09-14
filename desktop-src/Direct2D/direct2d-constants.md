@@ -17,12 +17,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 09/19/2019
-ms.openlocfilehash: cd8adfa3d6fa3c59a05331c82ea12100918a4697d9478097a890eedff039d5e9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bc25bf1055b923a383fc580a622e96d787ed13e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119768735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163390"
 ---
 # <a name="direct2d-constants"></a>Constantes de Direct2D
 
@@ -37,7 +37,7 @@ Tolerancia predeterminada para las operaciones de aplanado geométrico.
 ## <a name="d2d1_invalid_property_index-uint_max"></a>D2D1_INVALID_PROPERTY_INDEX (UINT_MAX)
 Define un índice de propiedad no válido.
 
-Esta constante se devuelve de [**ID2D1Properties::GetPropertyIndex**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertyindex) para indicar que la propiedad con nombre que proporcionó no tiene un índice en la interfaz de propiedad.
+Esta constante se devuelve desde [**ID2D1Properties::GetPropertyIndex**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertyindex) para indicar que la propiedad con nombre que proporcionó no tiene un índice en la interfaz de propiedad.
 
 Si pasa esta constante a [**ID2D1Properties::GetValue**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_byte_uint32)) o [**ID2D1Properties::GetValueByName**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr_byte_uint32)), se produce un error en la llamada y el búfer de salida se rellena con cero.
 
@@ -49,9 +49,9 @@ Número de nits que usa el espacio de colores sRGB o scRGB para los valores de p
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |-|-|
-| Cliente mínimo compatible | Windows 7, Windows Vista con SP2 y Platform Update for Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\] |
+| Cliente mínimo compatible | Windows 7, Windows Vista con SP2 y Platform Update for Windows Aplicaciones de escritorio \[ de Vista para aplicaciones para \| UWP\] |
 | Servidor mínimo compatible | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\] |
-| Teléfono mínimo compatible | Windows Phone 8.1 Windows Phone Silverlight 8.1 y aplicaciones en tiempo de ejecución de \[ Windows \] , Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\] |
-| Header | d2d1effectauthor.h, d2d1.h, d2d1_1.h, d2d1effects_2.h |
+| Teléfono mínimo compatible | Windows Phone aplicaciones 8.1 \[ Windows Phone Silverlight 8.1 y Windows \] Runtime, Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\] |
+| Encabezado | d2d1effectauthor.h, d2d1.h, d2d1_1.h, d2d1effects_2.h |

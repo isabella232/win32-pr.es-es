@@ -4,12 +4,12 @@ ms.assetid: 3518b370-0652-4b54-8057-9871365d5e8c
 title: Tabla ODBCDriver
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a1eb0da3217d7466fc0beef90933c8a6af32e3d0551ecc6975a31ac55ed2730
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3257f3eec5b60191df727d156572293489aa1956
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118943126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251061"
 ---
 # <a name="odbcdriver-table"></a>Tabla ODBCDriver
 
@@ -21,11 +21,11 @@ La tabla ODBCDriver tiene las columnas siguientes.
 
 | Columna      | Tipo                         | Clave | Nullable |
 |-------------|------------------------------|-----|----------|
-| Controlador      | [Identificador](identifier.md) | Y   | N        |
-| Componente\_ | [Identificador](identifier.md) | N   | N        |
-| Descripción | [Texto](text.md)             | N   | N        |
-| Archivo\_      | [Identificador](identifier.md) | N   | N        |
-| Instalación de \_ archivos | [Identificador](identifier.md) | N   | Y        |
+| Controlador      | [Identificador](identifier.md) | Y   | No        |
+| Componente\_ | [Identificador](identifier.md) | No   | No        |
+| Descripción | [Texto](text.md)             | No   | No        |
+| Archivo\_      | [Identificador](identifier.md) | No   | No        |
+| Instalación de \_ archivos | [Identificador](identifier.md) | No   | Y        |
 
 
 
@@ -59,7 +59,7 @@ Descripción registrada para este controlador ODBC. Este valor no se puede local
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Archivo\_
 </dt> <dd>
 
-Archivo DLL para los controladores enumerados en la columna Controlador. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis DE SFN LFN.
+El archivo DLL para los controladores enumerados en la columna Controlador . La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis DE SFN LFN.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Archivo DLL de instalación para el controlador si es diferente del controlador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 

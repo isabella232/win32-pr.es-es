@@ -4,12 +4,12 @@ ms.assetid: 4d78b2ea-517a-4c58-87ad-c6039d928a50
 title: Enumeraciones usadas por WPF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2c15d2b0d55af8284c518775b73208144475e84d910bb66d2e4147c47728a2c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4322c35701fa568b4afe4d9d57daa12c7bbb10eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252020"
 ---
 # <a name="enumerations-used-by-wpf"></a>Enumeraciones usadas por WPF
 

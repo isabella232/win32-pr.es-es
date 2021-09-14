@@ -1,15 +1,15 @@
 ---
 description: Esta propiedad se usa para indicar qué versión del conjunto de propiedades De cambio de frecuencia debe usar el descodificador.
 ms.assetid: 49d1bfda-749b-4614-9a75-1f76fa8b320d
-title: AM_RATE_UseRateVersion propiedad (Dvdmedia.h)
+title: AM_RATE_UseRateVersion (Propiedad, Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 4dd33ef96c50ecc3da0711f08f0c7ffbf0a20825
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162334"
 ---
 # <a name="am_rate_userateversion-property"></a>Propiedad \_ \_ UseRateVersion de AM RATE
 

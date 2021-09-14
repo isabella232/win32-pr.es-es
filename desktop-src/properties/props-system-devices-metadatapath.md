@@ -4,12 +4,12 @@ ms.assetid: 6499128d-d26d-47f2-b050-927159980307
 title: System.Devices.MetadataPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 973c5fd007d35c8c5d60e067da94c7d875d64e7db305c455ac3e6eec2363f8b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e2b7f5f505dffb70f8e2a50ac2cb1564deb70c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119598570"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252183"
 ---
 # <a name="systemdevicesmetadatapath"></a>System.Devices.MetadataPath
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

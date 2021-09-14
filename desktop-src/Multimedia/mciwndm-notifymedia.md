@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7026bd984e1d79775aac52caad56c87be6e8098e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370700"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250850"
 ---
 # <a name="mciwndm_notifymedia-message"></a>Mensaje NOTIFYMEDIA de MCIWNDM \_
 
@@ -54,7 +54,7 @@ Puntero a una cadena terminada en NULL que contiene el nuevo nombre de archivo. 
 
 ## <a name="remarks"></a>Observaciones
 
-Puede habilitar la notificación de cambios en los medios especificando el estilo de ventana MCIWNDF \_ NOTIFYMEDIA.
+Puede habilitar la notificación de cambios multimedia especificando el estilo de ventana MCIWNDF \_ NOTIFYMEDIA.
 
 ## <a name="requirements"></a>Requisitos
 

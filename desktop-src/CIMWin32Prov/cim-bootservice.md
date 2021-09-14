@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 02716e784b8bcc4a0bfbe7c00d2a6a9c5b836d869399187b1128118a5ea2228a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d32a8fdfe61e02e6ffe3a8dd2f115e57f338aec6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273524"
 ---
 # <a name="cim_bootservice-class"></a>Cim \_ BootService (clase)
 
-La **clase \_ CIM BootService** representa la funcionalidad proporcionada por un dispositivo o software, o por una red, para cargar un sistema operativo en un sistema informático unitario.
+La **clase CIM \_ BootService** representa la funcionalidad proporcionada por un dispositivo o software, o por una red, para cargar un sistema operativo en un sistema informático unitario.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -61,23 +61,23 @@ class CIM_BootService : CIM_Service
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ BootService** de CIM tiene estos tipos de miembros:
+La **clase \_ BOOTService** de CIM tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ BootService** de CIM tiene estos métodos.
+La **clase \_ BOOTService de CIM** tiene estos métodos.
 
 
 
 | Método                                                               | Descripción                                                               |
 |:---------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| [**StartService**](startservice-method-in-class-cim-bootservice.md) | Coloca el servicio en estado iniciado. Wmi no implementa.<br/> |
-| [**StopService**](stopservice-method-in-class-cim-bootservice.md)   | Coloca el servicio en estado detenido. Wmi no implementa.<br/> |
+| [**StartService**](startservice-method-in-class-cim-bootservice.md) | Coloca el servicio en estado iniciado. No implementado por WMI.<br/> |
+| [**StopService**](stopservice-method-in-class-cim-bootservice.md)   | Coloca el servicio en estado detenido. No implementado por WMI.<br/> |
 
 
 
@@ -85,7 +85,7 @@ La **clase \_ BootService** de CIM tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ BootService** de CIM tiene estas propiedades.
+La **clase \_ BOOTService de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -191,7 +191,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Started")
 </dt> </dl>
 
-Si **es TRUE,** el servicio se ha iniciado.
+Si **es TRUE,** se ha iniciado el servicio.
 
 Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
@@ -245,7 +245,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -276,28 +276,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -348,7 +348,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("System Class Name")
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("System Class Name")
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
@@ -366,7 +366,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("System Name")
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("System Name")
 </dt> </dl>
 
 Nombre del sistema que hospeda el servicio.
@@ -377,7 +377,7 @@ Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
 ## <a name="remarks"></a>Observaciones
 
-La **clase \_ BootService** de CIM se deriva del [**servicio CIM \_**](cim-service.md).
+La **clase \_ BOOTService** de CIM se deriva del [**servicio CIM \_**](cim-service.md).
 
 WMI no implementa esta clase.
 
@@ -397,7 +397,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 4909f797-d296-4c9f-83fb-543e48bbe75d
 title: Construir una escala de tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2b085e6d84aa01e43874ebcb0d38bc0f8cac74a8d16f0cc3267caa3174d4977
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c16b1134eb92b3e3ac5a0f1919d7c4a2736b206
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161576"
 ---
 # <a name="constructing-a-timeline"></a>Construir una escala de tiempo
 
@@ -21,7 +21,7 @@ Este artículo contiene los temas siguientes.
 
 -   [Crear objetos de escala de tiempo](creating-timeline-objects.md)
 -   [Crear grupos, composiciones y pistas](creating-groups-compositions-and-tracks.md)
--   [Establecer el tipo de medio de grupo](setting-the-group-media-type.md)
+-   [Establecimiento del tipo de medio de grupo](setting-the-group-media-type.md)
 -   [Agregar un origen](adding-a-source.md)
 -   [Crear una escala de tiempo: código de ejemplo](creating-a-timeline--example-code.md)
 

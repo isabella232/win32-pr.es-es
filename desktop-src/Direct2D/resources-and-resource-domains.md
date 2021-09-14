@@ -7,12 +7,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 67dc8c34703c834dbf0f1b651e3c118831d88abe1676feaba68ac53ecb603565
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf4eb807a25b592e32a2d83436532af17462d70c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117825116"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162609"
 ---
 # <a name="resources-overview"></a>Introducción a los recursos
 
@@ -83,7 +83,7 @@ Las interfaces de receptor [**(ID2D1SimplifiedGeometrySink,**](/windows/win32/ap
 
 ## <a name="sharing-render-target-resources"></a>Uso compartido de recursos de destino de representación
 
-La capacidad de compartir recursos creados por un destino de representación depende del tipo de destino de representación. Al crear un destino de representación de tipo [**D2D1 \_ RENDER TARGET TYPE \_ \_ \_ DEFAULT**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type), los recursos creados por ese destino de representación solo pueden ser utilizados por ese destino de representación (a menos que el destino de representación se ajuste a una de las categorías descritas en las secciones siguientes). Esto se debe a que no sabe qué dispositivo terminará usando el destino de representación, ya que podría terminar representando el hardware local, el software o el hardware de un cliente remoto. Por ejemplo, podría escribir un programa que deje de funcionar cuando se muestre de forma remota o cuando el destino de representación se incremente en tamaño por encima del tamaño máximo admitido por el hardware de representación.
+La capacidad de compartir recursos creados por un destino de representación depende del tipo de destino de representación. Cuando se crea un destino de representación de tipo [**D2D1 \_ RENDER TARGET TYPE \_ \_ \_ DEFAULT**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type), los recursos creados por ese destino de representación solo los puede usar ese destino de representación (a menos que el destino de representación se ajuste a una de las categorías descritas en las secciones siguientes). Esto se debe a que no sabe qué dispositivo terminará usando el destino de representación, ya que podría terminar representando el hardware local, el software o el hardware de un cliente remoto. Por ejemplo, podría escribir un programa que deje de funcionar cuando se muestre de forma remota o cuando el destino de representación se incremente en tamaño por encima del tamaño máximo admitido por el hardware de representación.
 
 En las secciones siguientes se describen las circunstancias en las que un recurso creado por un destino de representación se puede compartir con otro destino de representación.
 

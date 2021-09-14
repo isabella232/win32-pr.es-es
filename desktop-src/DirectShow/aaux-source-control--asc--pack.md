@@ -1,27 +1,27 @@
 ---
-description: Paquete de control de código fuente de AAUX (ASC)
+description: Paquete de control de código fuente (ASC) de AJUN
 ms.assetid: 3df80895-81e1-42a4-a095-913e77b199e5
-title: Paquete de control de código fuente de AAUX (ASC)
+title: Paquete de control de código fuente (ASC) de AJUN
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: eab942ccff1cf38e6962d508c9c9bfc99ea9fed6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806536"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162493"
 ---
-# <a name="aaux-source-control-asc-pack"></a>Paquete de control de código fuente de AAUX (ASC)
+# <a name="aaux-source-control-asc-pack"></a>Paquete de control de código fuente (ASC) de AJUN
 
-En las tablas siguientes se enumeran los valores usados por el controlador MSDV para rellenar el **dwDVAAuxCtl** y
+En las tablas siguientes se muestran los valores utilizados por el controlador MSDV para rellenar **dwDVACtl y** .
 
-**dwDVAAuxCtl1** miembros de la estructura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Para obtener más información, consulte [configuración de los campos DVINFO en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
+**Miembros dwDVACtlCtl1** de la [**estructura DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Para obtener más información, [vea DvINFO Field Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-Configuración de DVCR
+DVCR Configuración
 
 
 
-Estándar DV
+DV Estándar
 
 DVCR (IEC 61834)
 
@@ -31,7 +31,7 @@ dvsl
 
 dvsd
 
-System
+Sistema
 
 525-60
 
@@ -111,7 +111,7 @@ MODO REC (3)
 
 001
 
-INSERTAR CH (3)
+INSERT CH (3)
 
 111
 
@@ -131,7 +131,7 @@ DRF (1)
 
 1
 
-VELOCIDAD (7)
+SPEED (7)
 
 010:0000
 
@@ -151,7 +151,7 @@ Reservado (1)
 
 1
 
-GÉNERO (7)
+GENRE (7)
 
 111:1111
 
@@ -175,11 +175,11 @@ ASC Pack (ambos bloques de audio)\*
 
  
 
-Configuración de DVCR 25 y DVCPRO 50 (planeada)
+DVCR 25 y DVCPRO 50 Configuración (planeado)
 
 
 
-Estándar DV
+DV Estándar
 
 DVCPRO (SMPTE 314M): planeado
 
@@ -189,7 +189,7 @@ dv25
 
 dv50
 
-System
+Sistema
 
 525-60
 
@@ -249,7 +249,7 @@ REC END (1)
 
 1
 
-ATENUAR ST (1)
+FADE ST (1)
 
 1
 
@@ -259,7 +259,7 @@ ATENUAR ST (1)
 
 1
 
-FIN DE DESVANECIMIENTO (1)
+FADE END (1)
 
 1
 
@@ -289,7 +289,7 @@ DRF (1)
 
 1
 
-VELOCIDAD (7)
+SPEED (7)
 
 111:1000
 
@@ -323,13 +323,13 @@ ASC Pack (ambos bloques de audio)\*
 
  
 
-\* La estructura *DVINFO* contiene dos AAUX como paquetes, para los bloques de audio 1 y 2. DV50 tiene cuatro bloques de audio; los bloques 3 y 4 no se representan en la estructura *DVINFO* .
+\* La *estructura DVINFO* contiene dos paquetes as de APACK, para los bloques de audio 1 y 2. DV50 tiene cuatro bloques de audio; Los bloques 3 y 4 no se representan en la *estructura DVINFO.*
 
-Configuración de DVCR 100 (planeada)
+DVCR 100 Configuración (planeado)
 
 
 
-Estándar DV
+DV Estándar
 
 DVCPRO 100: planeado
 
@@ -337,7 +337,7 @@ FOURCC
 
 dvh1
 
-System
+Sistema
 
 1080-60i
 
@@ -385,7 +385,7 @@ REC END (1)
 
 1
 
-ATENUAR ST (1)
+FADE ST (1)
 
 1
 
@@ -393,7 +393,7 @@ ATENUAR ST (1)
 
 1
 
-FIN DE DESVANECIMIENTO (1)
+FADE END (1)
 
 1
 
@@ -417,7 +417,7 @@ DRF (1)
 
 1
 
-VELOCIDAD (7)
+SPEED (7)
 
 111:1000
 
@@ -445,26 +445,26 @@ ASC Pack (ambos bloques de audio)\*
 
  
 
-\* DVCPRO 100 tiene ocho bloques de audio; los bloques 3 a 8 no se representan en la estructura *DVINFO* .
+\*DVCPRO 100 tiene 8 bloques de audio; Los bloques del 3 al 8 no se representan en la *estructura DVINFO.*
 
 ## <a name="remarks"></a>Observaciones
 
 Los siguientes códigos de campo son de interés:
 
--   **CGMS**: copiar sistema de administración de generación. 0 = copia permitida sin restricción.
+-   **CGMS:** sistema de administración de generación de copias. 0 = se permite copiar sin restricciones.
 
-    Los módulos de ASC reales en el flujo DV pueden contener valores distintos.
+    Los paquetes de ASC reales de la secuencia DV pueden contener valores diferentes.
 
 <!-- -->
 
--   **Modo REC**: modo de grabación. 1 = original
--   **Velocidad**: velocidad de reproducción del VTR.
+-   **REC MODE**: modo de grabación. 1 = Original
+-   **SPEED:** velocidad de reproducción de VTR.
 
     Definición de IEC 61834:
 
     -   010:0000 = velocidad normal, 525-60 o 625-50
 
-    Definición de 314M SMPTE:
+    Definición de SMPTE 314M:
 
     -   111:1000 = velocidad normal, 525-60
     -   110:0100 = velocidad normal, 625-50
@@ -476,7 +476,7 @@ Los siguientes códigos de campo son de interés:
 [Vídeo digital en DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Configuración del campo DVINFO en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campo DVINFO Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

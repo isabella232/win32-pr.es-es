@@ -4,12 +4,12 @@ description: Use las siguientes funciones al desarrollar software para administr
 ms.assetid: a61734a7-b171-4e38-8dec-46be9a9c08ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31e498dbf55f1723e950003a848c9d8362aa5efc45b2fd709797cb60103c38e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c07b1b875b3faebf830327291008b437f3d8564f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273599"
 ---
 # <a name="router-administration-functions"></a>Funciones de administración del enrutador
 

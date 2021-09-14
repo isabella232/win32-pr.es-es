@@ -1,6 +1,6 @@
 ---
 title: WM_SYSCOMMAND mensaje (Winuser.h)
-description: Una ventana recibe este mensaje cuando el usuario elige un comando en el menú Ventana (anteriormente conocido como el menú del sistema o control) o cuando el usuario elige el botón maximizar, minimizar, restaurar o cerrar.
+description: Una ventana recibe este mensaje cuando el usuario elige un comando en el menú Ventana (anteriormente conocido como el sistema o el menú de control) o cuando el usuario elige el botón maximizar, minimizar, restaurar o cerrar botón.
 ms.assetid: 82c7cc95-82d5-4f0f-8c78-ab325561b04e
 keywords:
 - WM_SYSCOMMAND menús de mensajes y otros recursos
@@ -16,15 +16,15 @@ ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
 ms.openlocfilehash: 5458a9acfa6c166764b47a2d49a5ddcc181e38ee
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252386"
 ---
 # <a name="wm_syscommand-message"></a>Mensaje \_ SYSCOMMAND de WM
 
-Una ventana recibe este mensaje cuando el  usuario elige un comando en el menú Ventana (anteriormente conocido como menú del sistema o control) o cuando el usuario elige el botón maximizar, minimizar, restaurar o cerrar.
+Una ventana recibe este mensaje cuando el  usuario elige un comando en el menú Ventana (anteriormente conocido como el sistema o el menú de control) o cuando el usuario elige el botón maximizar, minimizar, restaurar o cerrar botón.
 
 
 ```C++
@@ -60,7 +60,7 @@ Tipo de comando del sistema solicitado. Este parámetro puede ser uno de los val
 | Valor | Significado | 
 |-------|---------|
 | <span id="SC_CLOSE"></span><span id="sc_close"></span><dl><dt><strong>SC_CLOSE</strong></dt><dt>0xF060</dt></dl> | Cierra la ventana.<br /> | 
-| <span id="SC_CONTEXTHELP"></span><span id="sc_contexthelp"></span><dl><dt><strong>SC_CONTEXTHELP</strong></dt><dt>0xF180</dt></dl> | Cambia el cursor a un signo de interrogación con un puntero. Si el usuario hace clic en un control en el cuadro de diálogo, el control recibe un <a href="/windows/desktop/shell/wm-help"><strong>WM_HELP</strong></a> mensaje.<br /> | 
+| <span id="SC_CONTEXTHELP"></span><span id="sc_contexthelp"></span><dl><dt><strong>SC_CONTEXTHELP</strong></dt><dt>0xF180</dt></dl> | Cambia el cursor a un signo de interrogación con un puntero. Si el usuario hace clic en un control en el cuadro de diálogo, el control recibe <a href="/windows/desktop/shell/wm-help"><strong>un WM_HELP</strong></a> mensaje.<br /> | 
 | <span id="SC_DEFAULT"></span><span id="sc_default"></span><dl><dt><strong>SC_DEFAULT</strong></dt><dt>0xF160</dt></dl> | Selecciona el elemento predeterminado; El usuario hizo doble clic en el menú de la ventana.<br /> | 
 | <span id="SC_HOTKEY"></span><span id="sc_hotkey"></span><dl><dt><strong>SC_HOTKEY</strong></dt><dt>0xF150</dt></dl> | Activa la ventana asociada a la tecla de acceso activa especificada por la aplicación. El <em>parámetro lParam</em> identifica la ventana que se debe activar.<br /> | 
 | <span id="SC_HSCROLL"></span><span id="sc_hscroll"></span><dl><dt><strong>SC_HSCROLL</strong></dt><dt>0xF080</dt></dl> | Se desplaza horizontalmente.<br /> | 
@@ -91,7 +91,7 @@ Tipo de comando del sistema solicitado. Este parámetro puede ser uno de los val
 
 La palabra de orden bajo especifica la posición horizontal del cursor, en coordenadas de pantalla, si se elige un comando de menú de ventana con el mouse. De lo contrario, no se usa este parámetro.
 
-La palabra de orden superior especifica la posición vertical del cursor, en coordenadas de pantalla, si se elige un comando de menú de ventana con el mouse. Este parámetro es 1 si el comando se elige mediante un acelerador del sistema, o cero si se usa un mnemotécnico.
+La palabra de orden superior especifica la posición vertical del cursor, en coordenadas de pantalla, si se elige un comando de menú de ventana con el mouse. Este parámetro es 1 si el comando se elige mediante un acelerador del sistema, o cero si se usa una tecla mnemotécnica.
 
 </dd> </dl>
 
@@ -99,7 +99,7 @@ La palabra de orden superior especifica la posición vertical del cursor, en coo
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener las coordenadas de posición en coordenadas de pantalla, use el código siguiente:
 
@@ -113,23 +113,23 @@ yPos = GET_Y_LPARAM(lParam);    // vertical position
 
 La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) lleva a cabo la solicitud de menú de ventana para las acciones predefinidas especificadas en la tabla anterior.
 
-En **los mensajes \_ SYSCOMMAND** de WM, el sistema usa internamente los cuatro bits de orden inferior del parámetro *wParam.* Para obtener el resultado correcto al probar el valor de *wParam*, una aplicación debe combinar el valor 0xFFF0 con el *valor wParam* mediante el operador AND bit a bit.
+En **los \_ mensajes SYSCOMMAND de WM,** el sistema usa internamente los cuatro bits de orden inferior del parámetro *wParam.* Para obtener el resultado correcto al probar el valor de *wParam,* una aplicación debe combinar el valor 0xFFF0 con el valor *wParam* mediante el operador AND bit a bit.
 
 Los elementos de menú de un menú de ventana se pueden modificar mediante las funciones [**GetSystemMenu**](/windows/desktop/api/Winuser/nf-winuser-getsystemmenu), [**AppendMenu**](/windows/desktop/api/Winuser/nf-winuser-appendmenua), [**InsertMenu**](/windows/desktop/api/Winuser/nf-winuser-insertmenua), [**ModifyMenu,**](/windows/desktop/api/Winuser/nf-winuser-modifymenua) [**InsertMenuItem**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema)y [**SetMenuItemInfo.**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa) Las aplicaciones que modifican el menú de ventana deben procesar **mensajes \_ SYSCOMMAND de WM.**
 
-Una aplicación puede llevar a cabo cualquier comando del sistema en cualquier momento pasando un **mensaje \_ SYSCOMMAND de WM** a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca). Todos **los \_ mensajes SYSCOMMAND de WM** que no controle la aplicación deben pasarse a **DefWindowProc**. Cualquier valor de comando agregado por una aplicación debe ser procesado por la aplicación y no se puede pasar **a DefWindowProc**.
+Una aplicación puede llevar a cabo cualquier comando del sistema en cualquier momento pasando un mensaje **\_ SYSCOMMAND** de WM a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca). Todos **los \_ mensajes SYSCOMMAND** de WM que no controle la aplicación deben pasarse **a DefWindowProc**. La aplicación debe procesar los valores de comando agregados por una aplicación y no se pueden pasar **a DefWindowProc**.
 
 Si la directiva habilita la protección con contraseña, el protector de pantalla se inicia independientemente de lo que haga una aplicación con la notificación **SC \_ SCREENSAVE,** incluso si no se puede pasar a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
 
-Las teclas de aceleración que se definen para elegir elementos del menú de la ventana se traducen en mensajes **\_ SYSCOMMAND** de WM; todas las demás pulsaciones de teclas del acelerador se traducen en [**mensajes WM \_ COMMAND.**](wm-command.md)
+Las teclas de aceleración que se definen para elegir elementos del menú de ventana se traducen en mensajes **\_ SYSCOMMAND** de WM; todas las demás pulsaciones de teclas del acelerador se traducen en [**mensajes WM \_ COMMAND.**](wm-command.md)
 
-Si *wParam* es **SC \_ KEYMENU,** *lParam* contiene el código de carácter de la clave que se usa con la tecla ALT para mostrar el menú emergente. Por ejemplo, al presionar ALT+F para mostrar el elemento emergente Archivo, se provocará un **COMANDO \_ SYSCOMMAND wm** con *wParam* igual a **SC \_ KEYMENU** y *lParam* igual a "f".
+Si *wParam* es **SC \_ KEYMENU,** *lParam* contiene el código de carácter de la clave que se usa con la tecla ALT para mostrar el menú emergente. Por ejemplo, al presionar ALT+F para mostrar el elemento emergente Archivo, se provocará un **COMANDO \_ SYSCOMMAND** wm con *wParam* igual a **SC \_ KEYMENU** y *lParam* igual a 'f'.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -137,7 +137,7 @@ Si *wParam* es **SC \_ KEYMENU,** *lParam* contiene el código de carácter de l
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

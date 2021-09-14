@@ -4,12 +4,12 @@ ms.assetid: ba9240fe-2e5a-43f5-8cdf-59dd6348092b
 title: Orden de prioridad de propiedad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b243180b356b081e3d14515d72c2ed1313ba6fa1f2fd81356b329c2edcd83598
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90c114594b9a825a3847db37f5b98dc990211d9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118942822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251007"
 ---
 # <a name="order-of-property-precedence"></a>Orden de prioridad de propiedad
 

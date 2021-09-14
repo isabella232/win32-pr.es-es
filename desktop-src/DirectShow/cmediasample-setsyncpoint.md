@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0be51ed18e25bcbd12e33f9167493d73f0c140480f4ec0042fb0c43928720d3c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 679be6a313329a15c83bee4473e5a944aa3532b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118156527"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251133"
 ---
 # <a name="cmediasamplesetsyncpoint-method"></a>Método CMediaSample.SetSyncPoint
 
@@ -53,9 +53,9 @@ Valor booleano que especifica si se trata de un punto de sincronización. Si **e
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método actualiza la variable [**miembro CMediaSample::m \_ dwFlags,**](cmediasample-m-dwflags.md) que especifica la propiedad de punto de sincronización.
+Este método actualiza la variable [**miembro CMediaSample::m \_ dwFlags,**](cmediasample-m-dwflags.md) que especifica la propiedad synchronization-point.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ description: En este tema se describe cómo cargar un recurso en la memoria.
 ms.assetid: 9e56cfdd-b365-4433-a507-a30220b4a92d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63b2a66628e5cdceb485df315dc27f0189fe23decbb6205e76d97f3afb77a380
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ca9590927cad28772a6b4a5b761d74c9ebf101a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119886805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252405"
 ---
 # <a name="finding-and-loading-resources"></a>Búsqueda y carga de recursos
 

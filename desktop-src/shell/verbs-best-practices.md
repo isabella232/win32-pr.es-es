@@ -1,5 +1,5 @@
 ---
-description: Comprenda los procedimientos recomendados para los controladores de menús contextuales y varios verbos al implementar un formato de archivo personalizado en el Shell de Windows.
+description: Comprenda los procedimientos recomendados para los controladores de menús contextuales y varios verbos al implementar un formato de archivo personalizado en Windows Shell.
 title: Procedimientos recomendados para controladores de menús contextuales y varios verbos
 ms.topic: article
 ms.date: 05/31/2018
@@ -10,11 +10,11 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: 14ec2e8915aa1df47ca21c6436ec963be3f590f5
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252074"
 ---
 # <a name="best-practices-for-shortcut-menu-handlers-and-multiple-verbs"></a>Procedimientos recomendados para controladores de menús contextuales y varios verbos
 
@@ -63,7 +63,7 @@ En algunos casos, es adecuado tener en cuenta un pequeño número de elementos f
 
 Los verbos optimistas se agregan automáticamente en el caso de selección múltiple, suponiendo que el verbo pueda controlar los elementos no especificados. Por el contrario, los verbos pesimistas no se agregan cuando la selección contiene elementos no especificados y solo se agregan en casos en los que el número de elementos es pequeño.
 
-Los verbos de estilo de reproductor deben ser optimistas y omitir silenciosamente los elementos que no se controlan. Si un error al actuar en los elementos puede causar confusión o pérdida de datos, el verbo debe advertir a los usuarios sobre los elementos que no se pueden procesar. Por ejemplo, un verbo de "copia de seguridad" debe indicar que no se pudo realizar una copia de seguridad de algunos elementos.
+Los verbos de estilo de reproductor deben ser optimistas y omitir silenciosamente los elementos que no se controlan. Si un error al actuar en los elementos puede provocar pérdida de datos o confusión, el verbo debe advertir a los usuarios sobre los elementos que no se pueden procesar. Por ejemplo, un verbo de "copia de seguridad" debe indicar que no se pudo realizar una copia de seguridad de algunos elementos.
 
 ## <a name="related-topics"></a>Temas relacionados
 

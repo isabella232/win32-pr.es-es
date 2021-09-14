@@ -4,12 +4,12 @@ ms.assetid: 2febea35-3fea-4a2d-baaf-7a4f935fc81f
 title: Leer y escribir metadatos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4b965285e2d8a4666ef86b78cdc5dbb9ed38c55ee7c84b4a93f1dbe80141efa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e4ea0a8f389f31870b31a0b15480815bdd7cf1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120114935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252609"
 ---
 # <a name="reading-and-writing-metadata"></a>Leer y escribir metadatos
 
@@ -54,7 +54,7 @@ INT main()
 
 
 
-El código anterior, junto con un archivo determinado, FakePhoto.jpg generaba la siguiente salida:
+El código anterior, junto con un archivo determinado, FakePhoto.jpg, generaba la siguiente salida:
 
 
 ```

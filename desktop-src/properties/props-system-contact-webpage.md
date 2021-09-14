@@ -4,12 +4,12 @@ ms.assetid: 6e9a5f61-a561-4f1a-b63f-ab9162e1107e
 title: System.Contact.WebPage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bef121f57c7bd3866b39a77b82f9506d2a6ad605f1a4345c4d8e78c76f5b6d73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3595abff45fe80bab1dab8fd6a541d4806290506
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118232349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252225"
 ---
 # <a name="systemcontactwebpage"></a>System.Contact.WebPage
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 75f5f40946b75b74853370657160f36ab3b85288199325b9a5d82609ccd95e6e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: adaf8cc064e8001bf3106b5e9166af656c7a925b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163041"
 ---
 # <a name="id2d1devicecontext5createcolorcontextfromsimplecolorprofile-methods"></a>Métodos ID2D1DeviceContext5::CreateColorContextFromSimpleColorProfile
 
@@ -34,7 +34,7 @@ Crea un contexto de color a partir de un perfil de color simple. Solo es válido
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,12 +6,12 @@ keywords:
 - D2D1_TAG
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3dbea9f7c86f08a1c3c5df22b419bc5800db473aceed9f9a682a9d2e346a6a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aacd11aa016e64ed463f1809595c865ae7e1f124
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120108875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163477"
 ---
 # <a name="d2d1_tag"></a>ETIQUETA D2D1 \_
 
@@ -24,7 +24,7 @@ typedef UINT64 D2D1_TAG;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para establecer una etiqueta antes de una serie de operaciones de representación, use el [**método ID2D1RenderTarget::SetTags.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) Para recuperar la etiqueta actual, use el [**método ID2D1RenderTarget::GetTags.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-gettags)
 
@@ -34,14 +34,14 @@ Para establecer una etiqueta antes de una serie de operaciones de representació
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Platform Update for Windows Vista \[ desktop apps \| UWP apps\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio Windows Vista \[ \| aplicaciones para UWP\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
+| Encabezado<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

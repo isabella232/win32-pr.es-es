@@ -3,7 +3,7 @@ title: Métodos ID2D1Factory CreateRoundedRectangleGeometry (D2d1.h)
 description: Crea un id2D1RoundedRectangleGeometry.
 ms.assetid: b0f7ccb0-5733-4f96-a532-8f665fbc257e
 keywords:
-- Métodos CreateRoundedRectangleGeometry de Direct2D
+- Métodos CreateRoundedRectangleGeometry Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 373a0059a390af3e5038e602672635e76bdb142b23bbf2dbd52461207324c4aa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1d8b15d4f0cc4af852ad49665d0266e3235eb4e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163013"
 ---
 # <a name="id2d1factorycreateroundedrectanglegeometry-methods"></a>Métodos ID2D1Factory::CreateRoundedRectangleGeometry
 
@@ -46,7 +46,7 @@ Crea un [**objeto ID2D1RoundedRectangleGeometry.**](/previous-versions/windows/d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

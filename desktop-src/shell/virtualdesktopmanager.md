@@ -11,18 +11,18 @@ api_name:
 - VirtualDesktopManager
 api_type:
 - COM
-ms.openlocfilehash: 52becd94c0426c19d6a53658e2eef43c8d1f2396f1974cf5107f695c4e1734f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f08a4c6b565a733593ba8b9972ce3de36907ce6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252075"
 ---
-# <a name="virtualdesktopmanager-class"></a>VirtualDesktopManager (clase)
+# <a name="virtualdesktopmanager-class"></a>Clase VirtualDesktopManager
 
 **VirtualDesktopManager** implementa la [**interfaz IVirtualDesktopManager.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ivirtualdesktopmanager)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use esta interfaz para interactuar con los escritorios virtuales y controlar dónde se inician las ventanas de programa. Para obtener más información, [**vea IVirtualDesktopManager**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ivirtualdesktopmanager).
 
@@ -34,7 +34,7 @@ Use esta interfaz para interactuar con los escritorios virtuales y controlar dó
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl> |
 
 
 

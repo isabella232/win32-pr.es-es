@@ -4,12 +4,12 @@ ms.assetid: f2b89578-22f5-4b3b-bc43-7cf4f7eb5f0e
 title: EC_LENGTH_CHANGED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e4182c143ba729093a052c450b7b09ca4d3f446141d8d8ee35f0cf3f03bcf5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30936dee7af1f89ea9d99dd011566bdf297339ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161550"
 ---
 # <a name="ec_length_changed"></a>EC \_ LENGTH \_ CHANGED
 
@@ -35,7 +35,7 @@ Cero.
 
 ## <a name="default-action"></a>Acción predeterminada
 
-El Administrador Graph filtro almacena la nueva hora de detenerse.
+El Administrador de Graph de filtros almacena la nueva hora de detenerse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ El Administrador Graph filtro almacena la nueva hora de detenerse.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 1208b41b-2552-4e1b-b220-77bb6468627b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e02e9f58f757ea2f93ef83821d9a83fbfa9ecfa218293a6209bb712135364311
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38cf77db021c4e82276ced129ffb109c5c594895
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119825995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252410"
 ---
 # <a name="f-menus-and-other-resources"></a>F (menús y otros recursos)
 

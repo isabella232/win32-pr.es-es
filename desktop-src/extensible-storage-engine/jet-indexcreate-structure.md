@@ -18,11 +18,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 237e6351c7baf7f418c5160797f413d78ce034bd
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252699"
 ---
 # <a name="jet_indexcreate-structure"></a>Estructura de JET_INDEXCREATE
 
@@ -54,7 +54,7 @@ typedef struct tagJET_INDEXCREATE {
 } JET_INDEXCREATE;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -66,9 +66,9 @@ Nombre del índice que se creará.
 
 El nombre del índice debe cumplir las condiciones siguientes:
 
-  - Debe ser menor que JET_cbNameMost, sin incluir el valor NULL final.
+  - Debe ser menor que JET_cbNameMost, sin incluir el valor null de terminación.
 
-  - Debe constar de los siguientes caracteres: de 0 (cero) a 9, de A a Z, de a a z y de todos los demás signos de puntuación excepto " \! " (signo de exclamación), "," (coma), " " (corchete de apertura) y " " (corchete de cierre), es decir, caracteres \[ \] ASCII 0x20, 0x22 a través de 0x2d, 0x2f a través de 0x5a, 0x5c, 0x5d a 0x7f.
+  - Debe constar de los siguientes caracteres: de 0 (cero) a 9, de A a Z, de a a z y de todos los demás signos de puntuación excepto " \! " (signo de exclamación), "," (coma), " " (corchete de apertura) y " " (corchete de cierre), es decir, caracteres \[ \] ASCII 0x20, 0x22 a 0x2d, 0x2f a través de 0x5a, 0x5c, 0x5d a 0x7f.
 
   - No debe comenzar con un espacio.
 
@@ -80,11 +80,11 @@ Puntero a una cadena terminada en doble null de tokens delimitados por NULL.
 
 Cada token tiene el formato \<direction-specifier\> \<column-name\> " ", donde direction-specification es "+" o "-". Por ejemplo, un **szKey** de "+abc 0-def 0+ghi 0" indexará sobre las tres columnas \\ \\ \\ "abc" (en orden ascendente), "def" (en orden descendente) y "ghi" (en orden ascendente). En el lenguaje C, los literales de cadena tienen un **terminador NULL** implícito; por lo tanto, la cadena anterior finalizará con un valor double-NULL.
 
-El número de columnas especificadas en **szKey** no puede superar el valor de **JET_ccolKeyMost** (una constante dependiente de la versión).
+El número de columnas especificado en **szKey** no puede superar el valor de **JET_ccolKeyMost** (una constante dependiente de la versión).
 
 Al menos una columna debe tener el nombre **szKey**.
 
-Comportamiento obsoleto: después del terminador de doble NULL, es posible especificar un identificador de idioma (una palabra que se pasa a MAKELCID( langid, SORT_DEFAULT ) ) como una manera de especificar el LCID para el índice. No es válido especificar un identificador de idioma en **szKey** y un LCID en JET_UNICODEINDEX [(estableciendo](./jet-unicodeindex-structure.md) JET_bitIndexUnicode en *grbit*).
+Comportamiento obsoleto: después del terminador de doble NULL, es posible especificar un identificador de idioma (una palabra que se pasa a MAKELCID( langid, SORT_DEFAULT ) como una manera de especificar el LCID para el índice. No es válido especificar un identificador de idioma en **szKey** y un LCID en [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) (estableciendo JET_bitIndexUnicode en *grbit*).
 
 En desuso: después del identificador de idioma, es posible pasar **cbVarSegMac** como USHORT. El comportamiento no está definido si USHORT se establece en **szKey** y si **cbVarSegMac** está establecido en la estructura .
 
@@ -106,22 +106,22 @@ Grupo de bits que incluye cero o más de los valores enumerados en la tabla sigu
 | <p>JET_bitIndexIgnoreAnyNull</p> | <p>No agregue una entrada de índice para una fila si alguna de las columnas que se indexa es <strong>NULL.</strong></p> | 
 | <p>JET_bitIndexIgnoreFirstNull</p> | <p>No agregue una entrada de índice para una fila si la primera columna que se indexa es <strong>NULL.</strong></p> | 
 | <p>JET_bitIndexLazyFlush</p> | <p>Las operaciones de índice se registrarán de forma lazi.</p><p>JET_bitIndexLazyFlush no afecta a la latencia de las actualizaciones de datos. Si la operación de indexación se interrumpe por la terminación del proceso, la recuperación flexible seguirá siendo capaz de conseguir que la base de datos tenga un estado coherente, pero es posible que el índice no esté presente.</p> | 
-| <p>JET_bitIndexEmpty</p> | <p>No intente compilar el índice, ya que todas las entradas se evaluarían como <strong>NULL.</strong> <strong>Grbit</strong> también debe especificar JET_bitIgnoreAnyNull cuando JET_bitIndexEmpty se pasa. Se trata de una mejora del rendimiento. Por ejemplo, si se agrega una nueva columna a una tabla, se crea un índice sobre esta columna recién agregada y se examinan todos los registros de la tabla aunque no se agregan al índice. Al especificar JET_bitIndexEmpty se omite el examen de la tabla, lo que podría tardar mucho tiempo.</p> | 
+| <p>JET_bitIndexEmpty</p> | <p>No intente compilar el índice, porque todas las entradas se evaluarían como <strong>NULL.</strong> <strong>Grbit</strong> también debe especificar JET_bitIgnoreAnyNull cuando JET_bitIndexEmpty se pasa. Se trata de una mejora del rendimiento. Por ejemplo, si se agrega una nueva columna a una tabla, se crea un índice sobre esta columna recién agregada y se examinan todos los registros de la tabla aunque no se agregan al índice. Al especificar JET_bitIndexEmpty se omite el examen de la tabla, lo que podría tardar mucho tiempo.</p> | 
 | <p>JET_bitIndexUnversioned</p> | <p>Hace que la creación de índices sea visible para otras transacciones. Normalmente, una sesión de una transacción no podrá ver una operación de creación de índices en otra sesión. Esta marca puede ser útil si es probable que otra transacción cree el mismo índice. La segunda creación de índice producirá un error en lugar de provocar muchas operaciones de base de datos innecesarias. Es posible que la segunda transacción no pueda usar el índice inmediatamente. La operación de creación de índices debe completarse antes de poder usarse. La sesión no debe estar actualmente en una transacción para crear un índice sin información de versión.</p> | 
 | <p>JET_bitIndexSortNullsHigh</p> | <p>Si se especifica esta marca, <strong>los valores NULL</strong> se ordenan después de los datos de todas las columnas del índice.</p> | 
-| <p>JET_bitIndexUnicode</p> | <p>La especificación de esta marca afecta a la interpretación del campo de unión lcid/pidnicde en la estructura . Establecer el bit significa que el <strong>campo pidxunicode</strong> apunta realmente a una <a href="gg294097(v=exchg.10).md">JET_UNICODEINDEX</a> estructura. JET_bitIndexUnicode no es necesario para indexar datos Unicode. Solo se usa para personalizar la normalización de datos Unicode.</p> | 
+| <p>JET_bitIndexUnicode</p> | <p>La especificación de esta marca afecta a la interpretación del campo de unión lcid/pidnicde de la estructura . Establecer el bit significa que el <strong>campo pidxunicode</strong> apunta realmente a una <a href="gg294097(v=exchg.10).md">JET_UNICODEINDEX</a> estructura. JET_bitIndexUnicode no es necesario para indexar datos Unicode. Solo se usa para personalizar la normalización de datos Unicode.</p> | 
 | <p>JET_bitIndexTuples</p> | <p>Especifica que el índice es un índice de tupla. Consulte <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> para obtener una descripción de un índice de tupla.</p><p>JET_bitIndexTuples se introdujo en el sistema operativo Windows XP.</p> | 
 | <p>JET_bitIndexTupleLimits</p> | <p>Especificar esta marca afecta a la interpretación del campo de unión <strong>cbVarSegMac/ptuplelimits</strong> en la estructura . Establecer este bit significa que el campo <strong>ptuplelimits</strong> apunta realmente <a href="gg269207(v=exchg.10).md">a</a> una estructura JET_TUPLELIMITS para permitir límites de índice de tupla personalizados (implica JET_bitIndexTuples).</p><p>JET_bitIndexTupleLimits se introdujo en el sistema operativo Windows Server 2003.</p> | 
-| <p>JET_bitIndexCrossProduct 0x00004000</p> | <p>Si se especifica esta marca para un índice que tiene más de una columna de clave que es una columna de varios valores, se creará una entrada de índice para cada resultado de un producto cruzado de todos los valores de esas columnas de clave. De lo contrario, el índice solo tendría una entrada para cada valor múltiple en la columna de clave más significativa que es una columna de varios valores y cada una de esas entradas de índice usaría el primer valor múltiple de cualquier otra columna de clave que sea columnas de varios valores.</p><p>Por ejemplo, si especificó esta marca para un índice sobre la columna A que tiene los valores "red" y "blue" y sobre la columna B que tiene los valores "1" y "2", se crearían las siguientes entradas de índice: "red", "1"; "red", "2"; "blue", "1"; "blue", "2". De lo contrario, se crearían las siguientes entradas de índice: "red", "1"; "blue", "1".</p><p>JET_bitIndexCrossProduct se introdujo en el sistema operativo Windows Vista.</p> | 
+| <p>JET_bitIndexCrossProduct 0x00004000</p> | <p>Si se especifica esta marca para un índice que tiene más de una columna de clave que es una columna de varios valores, se creará una entrada de índice para cada resultado de un producto cruzado de todos los valores de esas columnas de clave. De lo contrario, el índice solo tendría una entrada para cada valor múltiple en la columna de clave más significativa que es una columna de varios valores y cada una de esas entradas de índice usaría el primer valor múltiple de cualquier otra columna de clave que sea de varias columnas.</p><p>Por ejemplo, si especificó esta marca para un índice sobre la columna A que tiene los valores "red" y "blue" y sobre la columna B que tiene los valores "1" y "2", se crearían las siguientes entradas de índice: "red", "1"; "red", "2"; "blue", "1"; "blue", "2". De lo contrario, se crearían las siguientes entradas de índice: "red", "1"; "blue", "1".</p><p>JET_bitIndexCrossProduct se introdujo en el sistema operativo Windows Vista.</p> | 
 | <p>JET_bitIndexKeyMost 0x00008000</p> | <p>Si se especifica esta marca, el índice usará el tamaño máximo de clave especificado en el <strong>campo cbKeyMost</strong> de la estructura . De lo contrario, el índice usará JET_cbKeyMost (255) como tamaño máximo de clave.</p><p>JET_bitIndexKeyMost se introdujo en Windows Vista.</p> | 
-| <p>JET_bitIndexDisallowTruncation 0x00010000</p> | <p>Si se especifica esta marca, se producirá un error en cualquier actualización del índice que provocaría un error en una clave truncada con JET_errKeyTruncated. De lo contrario, las claves se truncarán en modo silencioso. Para más información sobre el truncamiento de claves, consulte la <a href="gg269329(v=exchg.10).md">función JetMakeKey.</a></p><p><strong>Windows Vista: JET_bitIndexDisallowTruncation</strong> se introdujo en Windows Vista.</p> | 
+| <p>JET_bitIndexDisallowTruncation 0x00010000</p> | <p>Si se especifica esta marca, se producirá un error en cualquier actualización del índice que provocaría un error en una clave truncada JET_errKeyTruncated. De lo contrario, las claves se truncarán en modo silencioso. Para más información sobre el truncamiento de claves, consulte la <a href="gg269329(v=exchg.10).md">función JetMakeKey.</a></p><p><strong>Windows Vista: JET_bitIndexDisallowTruncation</strong> se introdujo en Windows Vista.</p> | 
 | <p>JET_bitIndexNestedTable 0x00020000</p> | <p>Si se especifica esta marca, se actualizará el índice en varias columnas de varios valores, pero solo con valores de la misma <strong>itagSequence</strong>.</p><p>JET_bitIndexNestedTable se introdujo en Windows Vista.</p> | 
 
 
 
 **ulDensity**
 
-Densidad porcentual del árbol B+ del índice inicial. La especificación de un número menor que 100 usa más espacio para crear el índice inicialmente, pero permite que el crecimiento futuro del índice esté en su lugar, lo que evita la fragmentación interna.
+Densidad de porcentaje del árbol B+ del índice inicial. Si se especifica un número menor que 100, se usa más espacio para crear el índice inicialmente, pero se permite el crecimiento futuro del índice, lo que evita la fragmentación interna.
 
 **lcid**
 
@@ -129,7 +129,7 @@ Identificador de configuración regional (LCID) que se va a usar al normalizar l
 
 **pidxunicode**
 
-Puntero a una [estructura JET_UNICODEINDEX](./jet-unicodeindex-structure.md) si el JET_bitIndexUnicode se especifica en el *parámetro grbit.* Esto permite al usuario especificar marcas personalizadas que se pasan a la [función LCMapString](https://msdn.microsoft.com/library/dd318700\(vs.85\).aspx) durante la normalización unicode.
+Puntero a una [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) estructura si el JET_bitIndexUnicode se especifica en el *parámetro grbit.* Esto permite al usuario especificar marcas personalizadas que se pasan a la [función LCMapString](https://msdn.microsoft.com/library/dd318700\(vs.85\).aspx) durante la normalización unicode.
 
 **cbVarSegMac**
 
@@ -137,19 +137,19 @@ Longitud máxima, en bytes, de cada columna que se va a almacenar en el índice 
 
 Especificar un valor de 0 (cero) para este campo equivale a:
 
-  - Especificar JET_cbPrimaryKeyMost para un índice principal.
+  - Especificación JET_cbPrimaryKeyMost para un índice principal.
 
-  - Especificar JET_cbSecondaryKeyMost para un índice secundario.
+  - Especificación JET_cbSecondaryKeyMost para un índice secundario.
 
 **ptuplelimits**
 
-Puntero a una [estructura JET_TUPLELIMITS](./jet-tuplelimits-structure.md) si se especifica el JET_bitIndexTupleLimits en el *parámetro grbit.*
+Puntero a una [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) estructura si el JET_bitIndexTupleLimits se especifica en el *parámetro grbit.*
 
 ptuplelimits se introdujo en Windows Server 2003.
 
 **rgconditionalcolumn**
 
-Parámetro opcional para una matriz de [estructuras JET_CONDITIONALCOLUMN,](./jet-conditionalcolumn-structure.md) que se usan para especificar las columnas condicionales en el índice.
+Parámetro opcional para una matriz de [JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-structure.md) estructura, que se usan para especificar las columnas condicionales en el índice.
 
 **cConditionalColumn**
 
@@ -161,7 +161,7 @@ Contiene el código de retorno para crear este índice.
 
 **cbKeyMost**
 
-Especifica el tamaño máximo permitido, en bytes, para las claves del índice. Este parámetro se omite si el JET_bitIndexKeyMost no se especifica en el *parámetro grbit.* Si este parámetro se establece en cero y JET_bitIndexKeyMost especifica en el parámetro *grbit,* se producirá un error en la función de llamada JET_err_InvalidDef.
+Especifica el tamaño máximo permitido, en bytes, para las claves del índice. Este parámetro se omite si el JET_bitIndexKeyMost no se especifica en el *parámetro grbit.* Si este parámetro se establece en cero y JET_bitIndexKeyMost se especifica en el parámetro *grbit,* se producirá un error en la función de llamada con JET_err_InvalidDef.
 
 El tamaño máximo de clave mínimo admitido es JET_cbKeyMostMin (255), que es el tamaño máximo de clave heredado.
 
@@ -179,9 +179,9 @@ El tamaño máximo de clave admitido para la instancia también se puede leer de
 
 ### <a name="remarks"></a>Observaciones
 
-ESE admite la indexación sobre columnas de clave que contienen varios valores. Para usar esta característica, la columna debe ser un tipo de columna etiquetado (JET_bitColumnTagged) y debe marcarse para que sus varios valores se indexe con JET_bitColumnMultiValued. En versiones de Windows anteriores a Windows Vista, solo la primera columna de clave multivalor del índice tendrá sus valores expandido en el índice. Todas las demás columnas multivalor y etiquetadas solo tendrán sus primeros valores expandido en el índice.
+ESE admite la indexación sobre columnas de clave que contienen varios valores. Para usar esta característica, la columna debe ser un tipo de columna etiquetado (JET_bitColumnTagged) y debe marcarse para que sus varios valores se indexe con JET_bitColumnMultiValued. En versiones de Windows anteriores a Windows Vista, solo la primera columna de clave multivalor del índice tendrá sus valores expandido en el índice. Todas las demás columnas con varios valores y etiquetadas solo tendrán sus primeros valores expandido en el índice.
 
-Suponiendo que las filas siguientes existen en una tabla (la columna Alpha no tiene varios valores, mientras que las columnas Beta, Gamma y Delta son de varios valores) y se crea un índice como "+Alpha \\ 0+Beta \\ 0+Gamma \\ 0+Delta \\ 0 \\ 0":
+Suponiendo que las filas siguientes existen en una tabla (la columna Alpha no tiene varios valores, mientras que las columnas Beta, Gamma y Delta son de varios valores) y se crea un índice como "+Alpha \\ 0+Beta \\ 0+Gamma \\ 0+Delta \\ \\ 0 0":
 
 
 | <p>Alpha</p> | <p>Beta</p> | <p>Gamma</p> | <p>Delta</p> | 
@@ -191,7 +191,7 @@ Suponiendo que las filas siguientes existen en una tabla (la columna Alpha no ti
 
 
 
-Las tuplas de índice que se van a bajar se almacenarán:
+Se almacenarán las tuplas de índice que se están disminuyendo:
 
 {1,ABC,MNO,VWX}  
 {1,GHI,MNO,VWX}  

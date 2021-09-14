@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 195c968b93f57bed0a8bb611b642ab19e7024cb4d67e49bf84c643dc8e340432
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2b7ff62617b9fa378511dba2838f0dcbdb25dbf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251180"
 ---
 # <a name="cbasecontrolvideoget_sourceleft-method"></a>Método CBaseControlVideo.get \_ SourceLeft
 
@@ -66,7 +66,7 @@ Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno d
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a través de la [**interfaz IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) El rectángulo de origen afecta a qué sección del origen de vídeo nativo aparecerá en la pantalla; el rectángulo de destino afecta a dónde aparecerá el vídeo cuando se reproduce. El rectángulo de destino es relativo al área de cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es coordenada (0,0).
 

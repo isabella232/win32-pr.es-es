@@ -4,12 +4,12 @@ description: Use los siguientes tipos de información al llamar a funciones de e
 ms.assetid: 66cf0147-f099-4b6f-8063-32b284e891ca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30f71e82c2a6ce7b6f8d6b9b037bb73beacbc2ed576ee84edf95beadd8798278
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bb8512442398c2fb321e025fe6292b50534d27e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127273591"
 ---
 # <a name="router-information-enumerations"></a>Enumeraciones de información de enrutador
 

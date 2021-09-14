@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 825b78101de82757ba3b1842f82b7d2453e06de5d74fdb55b91f0b9169e3c050
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b83019cafb6053b9f803c815289d9f9f64d32a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119337176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252050"
 ---
-# <a name="_ianalysisproxyevents-interface"></a>\_Interfaz IAnalysisProxyEvents
+# <a name="_ianalysisproxyevents-interface"></a>\_IAnalysisProxyEvents (interfaz)
 
 Especifica los eventos asociados a los pasos del proxy de datos de [**un objeto IInkAnalyzer.**](iinkanalyzer.md)
 
@@ -41,32 +41,32 @@ La **\_ interfaz IAnalysisProxyEvents** tiene estos eventos.
 | [**ContextNodeMovingToPosition**](-ianalysisproxyevents-contextnodemovingtoposition.md)   | Se produce antes de [**que IInkAnalyzer**](iinkanalyzer.md) mueva un objeto [**IContextNode**](icontextnode.md) a una nueva posición dentro de la colección de subnodos de su nodo primario.<br/> |
 | [**ContextNodePropertiesUpdated**](-ianalysisproxyevents-contextnodepropertiesupdated.md) | Se produce después de [**que IInkAnalyzer**](iinkanalyzer.md) actualice una o varias propiedades de un [**objeto IContextNode.**](icontextnode.md)<br/>                                        |
 | [**ContextNodeReparenting**](-ianalysisproxyevents-contextnodereparenting.md)             | Se produce antes de [**que IInkAnalyzer**](iinkanalyzer.md) mueva un [**objeto IContextNode**](icontextnode.md) cambiando su nodo primario.<br/>                                       |
-| [**InkAnalyzerStateChanging**](-ianalysisproxyevents-inkanalyzerstatechanging.md)         | Se produce antes de [**que IInkAnalyzer**](iinkanalyzer.md) concilia los resultados del análisis para que una aplicación pueda sincronizar los datos con **IInkAnalyzer.**<br/>                      |
-| [**PopulateContextNode**](-ianalysisproxyevents-populatecontextnode.md)                   | Se produce antes de [**que IInkAnalyzer**](iinkanalyzer.md) realice el análisis dentro de la región de un objeto [**IContextNode**](icontextnode.md) parcialmente rellenado.<br/>               |
+| [**InkAnalyzerStateChanging**](-ianalysisproxyevents-inkanalyzerstatechanging.md)         | Se produce antes de [**que IInkAnalyzer**](iinkanalyzer.md) concilia los resultados del análisis para que una aplicación pueda sincronizar los datos con **IInkAnalyzer**.<br/>                      |
+| [**PopulateContextNode**](-ianalysisproxyevents-populatecontextnode.md)                   | Se produce antes de [**que IInkAnalyzer**](iinkanalyzer.md) realice el análisis dentro de la región de un objeto [**IContextNode parcialmente**](icontextnode.md) rellenado.<br/>               |
 | [**StrokeReparented**](-ianalysisproxyevents-strokereparented.md)                         | Se produce cuando [**IInkAnalyzer**](iinkanalyzer.md) mueve un trazo de un [**objeto IContextNode**](icontextnode.md) a otro.<br/>                                           |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use estos eventos cuando la aplicación mantenga su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer**](iinkanalyzer.md). Para obtener más información sobre cómo sincronizar los datos de la aplicación con **IInkAnalyzer**, vea Proxy de [datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
+Use estos eventos cuando la aplicación mantenga su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer**](iinkanalyzer.md). Para obtener más información sobre cómo sincronizar los datos de la aplicación con **IInkAnalyzer**, vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

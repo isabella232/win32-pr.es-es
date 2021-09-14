@@ -4,12 +4,12 @@ ms.assetid: 7585ce79-39ef-4174-833a-c314289fec43
 title: Asignaciones del canal de Rusia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e336b3b6c5b0e8afba56625014a6798284c7a16fcef5a147d381f916a178ba3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 099e1f6929077a9370b543e1725d700ccdd24229
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161495"
 ---
 # <a name="russia-channel-assignments"></a>Asignaciones del canal de Rusia
 
@@ -17,7 +17,7 @@ En este tema se enumeran las tablas de frecuencia usadas para la optimización d
 
 Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canales se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias unicables.](unicable-frequency-table.md)
+Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias](unicable-frequency-table.md) no utilizables.
 
 -   [Asignaciones de difusión](#broadcast-assignments)
 -   [Asignaciones de cable](#cable-assignments)

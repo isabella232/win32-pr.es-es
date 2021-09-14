@@ -4,12 +4,12 @@ description: Muestra cómo aplicar varias transformaciones a un objeto .
 ms.assetid: a3875072-bb73-4698-944e-102ab5539d80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d63db7899b79dd07a6a4a14a4efbbfaeefc5723ad09c71a3462ba5d2fd0c042
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e031a46545c59513767ed4d260be9dc677b3fb77
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119259695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163210"
 ---
 # <a name="how-to-apply-multiple-transforms-to-an-object"></a>Cómo aplicar varias transformaciones a un objeto
 
@@ -87,7 +87,7 @@ m_pRenderTarget->DrawRectangle(rectangle, m_pTransformedShapeBrush);
 
 El código genera la salida que se muestra en la ilustración siguiente.
 
-![ilustración de un rectángulo que se ha traducido y luego girado y un rectángulo que se ha girado y, a continuación, se ha traducido](images/multipletransforms.png)
+![ilustración de un rectángulo que se ha traducido y, a continuación, girado, y un rectángulo que se ha girado y, a continuación, se ha traducido](images/multipletransforms.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

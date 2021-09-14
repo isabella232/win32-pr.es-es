@@ -4,12 +4,12 @@ ms.assetid: 5bf421d9-f60e-40c9-b4ee-087e18608f06
 title: System.Devices.AepService.ProtocolId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5e981a80e2a1490e0d3044648efe99dc67a892f871950a2d5b0e5590df45f55
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f2f0e392004a83efae9d31cf826fcf7f18793c89
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119885585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252207"
 ---
 # <a name="systemdevicesaepserviceprotocolid"></a>System.Devices.AepService.ProtocolId
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

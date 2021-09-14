@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 7ee9dc23607a2ee64220889fe98c571b62ec7aca18ad3e65726503069c72b20c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6aa33e75feebe1e8ab71605fcd71c3ce7fe71471
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162918"
 ---
 # <a name="id2d1inksetsegmentatend-methods"></a>Métodos ID2D1Ink::SetSegmentAtEnd
 
@@ -44,7 +44,7 @@ Actualiza el último segmento de este objeto de entrada de lápiz con nuevos pun
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Filtra el contenido de una imagen y deja líneas en los bordes de l
 ms.assetid: d22868cf-95fe-690e-66ac-268d7e116aee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7067243c19ed65bcdc23f1654999ff10ad3b80bafa641d0d3da940719db7bcd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b47239bede77dc5d32582c6e83c8101e5c9bbf2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119967075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163301"
 ---
 # <a name="edge-detection-effect"></a>Efecto de detección de borde
 
@@ -57,7 +57,7 @@ Las propiedades del efecto de detección perimetral se definen mediante la [**en
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados

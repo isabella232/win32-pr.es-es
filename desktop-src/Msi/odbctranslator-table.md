@@ -4,12 +4,12 @@ ms.assetid: fecb7454-29bb-4ddf-b4d5-2e56c20ff2dc
 title: Tabla ODBCTranslator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd59c535963b3c42e94c8c904d448540072913b56bedb58c3e0bddc72dd6c6c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9fdf85f73b649e18c0980508e234bf7599e69c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118942896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251060"
 ---
 # <a name="odbctranslator-table"></a>Tabla ODBCTranslator
 
@@ -21,11 +21,11 @@ La tabla ODBCTranslator tiene las columnas siguientes.
 
 | Columna      | Tipo                         | Clave | Nullable |
 |-------------|------------------------------|-----|----------|
-| Traductor  | [Identificador](identifier.md) | Y   | N        |
-| Componente\_ | [Identificador](identifier.md) | N   | N        |
-| Descripción | [Texto](text.md)             | N   | N        |
-| Archivo\_      | [Identificador](identifier.md) | N   | N        |
-| Instalación de \_ archivos | [Identificador](identifier.md) | N   | Y        |
+| Translator  | [Identificador](identifier.md) | Y   | No        |
+| Componente\_ | [Identificador](identifier.md) | No   | No        |
+| Descripción | [Texto](text.md)             | No   | No        |
+| Archivo\_      | [Identificador](identifier.md) | No   | No        |
+| Instalación de \_ archivos | [Identificador](identifier.md) | No   | Y        |
 
 
 
@@ -66,11 +66,11 @@ Archivo DLL para la transferencia que aparece en la Traductor columna. La column
 <span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Instalación de \_ archivos
 </dt> <dd>
 
-Archivo DLL de instalación para el traductor si es diferente de la Traductor archivo. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis LFN de SFN.
+Archivo DLL de instalación para el traductor si es diferente de la columna Traductor configuración. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis LFN de SFN.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de*](s-gly.md) secuencia procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 

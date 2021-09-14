@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - ExecModelClient.dll
-ms.openlocfilehash: d03e52a15e6689b7f1ea98a2f1021874cab6a8967dd148b7eaf685ff3984e8cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a823dc528ea189c70f44689ab69795eb3a430e67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252087"
 ---
 # <a name="taskcompletionclient-interface"></a>Interfaz TaskCompletionClient
 
 Habilita la finalización de tareas.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz TaskCompletionClient** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **TaskCompletionClient también** tiene estos tipos de miembros:
 
@@ -45,11 +45,11 @@ La **interfaz TaskCompletionClient** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El GUID de esta interfaz es "E97D552D-9AE9-46AA-9151-D2DA4BBB5E96".
 
-Esta API está en desuso y es posible que no esté disponible en versiones futuras de Windows. Las aplicaciones deben usar las API de la [**Windows. En su lugar, el espacio de nombres ApplicationModel.ExtendedExecution.**](/uwp/api/Windows.ApplicationModel.ExtendedExecution?view=winrt-19041)
+Esta API está en desuso y puede que no esté disponible en versiones futuras de Windows. Las aplicaciones deben usar las API de [**la Windows. En su lugar, el espacio de nombres ApplicationModel.ExtendedExecution.**](/uwp/api/Windows.ApplicationModel.ExtendedExecution?view=winrt-19041)
 
 ## <a name="requirements"></a>Requisitos
 

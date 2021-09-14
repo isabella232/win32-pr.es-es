@@ -4,12 +4,12 @@ description: Mensajes ComboBoxEx
 ms.assetid: cca4332e-2b88-4e72-82b3-e65da695b40f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 772515b3cfb15b8cbc1e4bbdb2c41b285016a20a58adf2bc185c50a261102d29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e3aec229ea9d1b5a5cd913efa4a76efe7a3238c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119079319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251192"
 ---
 # <a name="comboboxex-messages"></a>Mensajes ComboBoxEx
 

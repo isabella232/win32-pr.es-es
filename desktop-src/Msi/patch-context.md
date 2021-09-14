@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 3316c71c5de15a777ce7e4559b7ee52e9efcb61200bd72b8898440e56bb4f392
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a6495b199046a361910741545a7178050621ccd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120042425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250910"
 ---
 # <a name="patchcontext-property"></a>Patch.Context, propiedad
 
@@ -37,7 +37,7 @@ propVal = Patch.Context
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad devuelve uno de los valores siguientes.
 

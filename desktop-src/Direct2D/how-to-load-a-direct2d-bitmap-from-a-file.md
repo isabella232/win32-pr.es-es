@@ -4,16 +4,16 @@ description: Muestra cómo cargar un mapa de bits de Direct2D desde un archivo d
 ms.assetid: 4abfbc2b-2730-4d96-897e-1e2232383a72
 ms.topic: article
 ms.date: 03/09/2019
-ms.openlocfilehash: a330f0e32ee4abf62eb7df1c1d6a00b3f217e6f04502cebae6c489aa01eaaa9c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c9590e799e71e92056157b75573565cf79b9236b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163146"
 ---
 # <a name="how-to-load-a-bitmap-from-a-file"></a>Cómo cargar un mapa de bits desde un archivo
 
-Direct2D usa el Windows de creación de imágenes (WIC) para cargar mapas de bits. Para cargar un mapa de bits desde un archivo, primero use objetos WIC para cargar la imagen y convertirla a un formato compatible con Direct2D y, a continuación, use el método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para crear un [**id2D1Bitmap.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)
+Direct2D usa el componente Windows imaging (WIC) para cargar mapas de bits. Para cargar un mapa de bits desde un archivo, use primero objetos WIC para cargar la imagen y convertirla a un formato compatible con Direct2D y, a continuación, use el método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para crear un [**elemento ID2D1Bitmap.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)
 
 1.  Cree un [**IWICBitmapDecoder**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapdecoder) mediante el método [**IWICImagingFactory::CreateDecoderFromFileName.**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename)
 
@@ -45,7 +45,7 @@ Direct2D usa el Windows de creación de imágenes (WIC) para cargar mapas de bit
 
     
 
-2.  Recupere un fotograma de la imagen y almacénelo en un [**objeto IWICBitmapFrameDecode.**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode)
+2.  Recupere un marco de la imagen y almacénelo en un [**objeto IWICBitmapFrameDecode.**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode)
 
     ```C++
         if (SUCCEEDED(hr))
