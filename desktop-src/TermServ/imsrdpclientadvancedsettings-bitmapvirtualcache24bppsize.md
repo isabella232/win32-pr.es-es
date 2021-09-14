@@ -5,7 +5,7 @@ ms.assetid: 5891c90d-f463-4f27-b212-351ebf21ae00
 ms.tgt_platform: multiple
 keywords:
 - Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
 - La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
@@ -13,11 +13,11 @@ keywords:
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
 - La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
-- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
 - La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
-- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
 - La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e984eef21fa74aa3f3134f19c1d6e7503a24ec9fb67e0ef3bfb0daa6330cfcd8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0fc31954ff191f795146e3894b0394b29484fb1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118353276"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968339"
 ---
 # <a name="imsrdpclientadvancedsettingsbitmapvirtualcache24bppsize-property"></a>Propiedad IMsRdpClientAdvancedSettings::BitmapVirtualCache24BppSize
 
@@ -67,7 +67,7 @@ Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persi
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -90,7 +90,7 @@ Nuevo tamaño de caché. Los valores válidos son de 1 a 32 inclusive y el valor
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Entre las propiedades relacionadas se **incluyen las propiedades BitmapVirtualCacheSize** **y BitmapVirtualCache16BppSize.**
 
@@ -100,7 +100,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |
@@ -110,7 +110,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

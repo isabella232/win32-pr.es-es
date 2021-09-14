@@ -30,12 +30,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07fb08feba16331f02390ca65f1823d162b19204ddc099ea48e7672209766d01
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 887306216682ba1555739a4258b8337694fabe0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120099455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968420"
 ---
 # <a name="imsrdpclient7advancedsettings8-property"></a>Propiedad IMsRdpClient7::AdvancedSettings8
 
@@ -72,7 +72,7 @@ Dirección de un [**puntero de interfaz IMsRdpClientAdvancedSettings7**](imsrdpc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

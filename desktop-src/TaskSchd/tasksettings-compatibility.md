@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48cc560029400206d749ee7fc74fdf2330b02578ffd73fa4494d8d426951e5d1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 08ba93d3716a8fb0e701cc783ec83abba40190d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968532"
 ---
 # <a name="tasksettingscompatibility-property"></a>Propiedad TaskSettings.Compatibility
 
@@ -29,7 +29,7 @@ Para el scripting, obtiene o establece un valor entero que indica con qué versi
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -52,9 +52,9 @@ TaskSettings.Compatibility As Integer
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La compatibilidad de tareas, que se establece a través de la propiedad [**Compatibilidad,**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_compatibility) solo debe establecerse en TASK COMPATIBILITY V1 si es necesario tener acceso a una tarea o modificarla desde un equipo \_ Windows \_ XP, Windows Server 2003 o Windows 2000. De lo contrario, se recomienda Programador de tareas compatibilidad con 2.0 porque la tarea tendrá más características.
+La compatibilidad de tareas, [](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_compatibility) que se establece a través de la propiedad Compatibilidad, solo debe establecerse en TASK COMPATIBILITY V1 si es necesario tener acceso a una tarea o modificarla desde un equipo \_ Windows \_ XP, Windows Server 2003 o Windows 2000. De lo contrario, se recomienda Programador de tareas compatibilidad con 2.0 porque la tarea tendrá más características.
 
 Las tareas compatibles con el comando AT solo pueden tener un desencadenador de una vez.
 
@@ -75,7 +75,7 @@ Para obtener más información sobre la compatibilidad de tareas, vea [Novedades
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

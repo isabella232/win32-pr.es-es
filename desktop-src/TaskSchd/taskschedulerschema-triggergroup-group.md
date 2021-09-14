@@ -1,5 +1,5 @@
 ---
-title: triggerGroup Group
+title: grupo triggerGroup
 description: Define el grupo de desencadenadores.
 ms.assetid: e07e6999-d982-405b-adfd-2976707b999f
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74ae14f6e22245e49b2c2d0136fd297b35c9c5ed1f5126cc0914e97f42c8488f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce0203cd9515808891f93223dd7b3ebaf2642103
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118611006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968596"
 ---
-# <a name="triggergroup-group"></a>triggerGroup Group
+# <a name="triggergroup-group"></a>grupo triggerGroup
 
 Define el grupo de desencadenadores.
 
@@ -70,9 +70,9 @@ Define el grupo de desencadenadores.
 | Elemento                                                                                                 | Tipo                                                                                                   | Descripción                                                                                                       |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md)                             | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)                             | Desencadenador que inicia una tarea cuando se arranca el sistema.<br/>                                                |
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)                     | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)                     | Desencadenador que inicia una tarea según una programación diaria, semanal, mensual o mensual del día de la semana (DOW).<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)                     | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)                     | Desencadenador que inicia una tarea basada en una programación diaria, semanal, mensual o mensual del día de la semana (DOW).<br/> |
 | [**EventTrigger**](taskschedulerschema-eventtrigger-triggergroup-element.md)                           | [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md)                           | Desencadenador que inicia una tarea cuando se produce un evento del sistema.<br/>                                               |
-| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                             | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                             | Desencadenador que inicia una tarea cuando el equipo entra en estado de inactividad.<br/>                                |
+| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                             | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                             | Desencadenador que inicia una tarea cuando el equipo entra en estado inactivo.<br/>                                |
 | [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md)                           | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)                           | Desencadenador que inicia una tarea cuando un usuario inicia sesión.<br/>                                                      |
 | [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md)             | [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md)             | Desencadenador que inicia una tarea cuando se registra la tarea.<br/>                                              |
 | [**SessionStateChangeTrigger**](taskschedulerschema-sessionstatechangetrigger-triggergroup-element.md) | [**sessionStateChangeTriggerType**](taskschedulerschema-sessionstatechangetriggertype-complextype.md) | Desencadenador que inicia una tarea cuando una sesión de Terminal Server cambia de estado.<br/>                             |
@@ -95,7 +95,7 @@ Al leer o escribir XML, los elementos definidos por este grupo son los elementos
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

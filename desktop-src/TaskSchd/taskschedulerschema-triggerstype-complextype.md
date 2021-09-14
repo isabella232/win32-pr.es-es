@@ -1,6 +1,6 @@
 ---
 title: triggersType Complex Type
-description: Define el grupo (triggerGroup) para todos los elementos de desencadenador.
+description: Define el grupo (triggerGroup) para todos los elementos del desencadenador.
 ms.assetid: ceabc332-e028-491e-8fd8-c02ac23a2635
 keywords:
 - triggersType tipo complejo Programador de tareas
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c2bd6fa4011841958ad08239640024f9878528aecb1307487c3354ac74e31db4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9903fdc292fe832cc6931d794a4c1f39fd91f83e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118610542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968587"
 ---
 # <a name="triggerstype-complex-type"></a>triggersType Complex Type
 
-Define el grupo ([**triggerGroup**](taskschedulerschema-triggergroup-group.md)) para todos los elementos de desencadenador. El [**grupo triggerGroup**](taskschedulerschema-triggergroup-group.md) contiene la lista de desencadenadores que se pueden usar en una tarea.
+Define el grupo ([**triggerGroup**](taskschedulerschema-triggergroup-group.md)) para todos los elementos del desencadenador. El [**grupo triggerGroup**](taskschedulerschema-triggergroup-group.md) contiene la lista de desencadenadores que se pueden usar en una tarea.
 
 ``` syntax
 <xs:complexType name="triggersType">
@@ -45,7 +45,7 @@ Define el grupo ([**triggerGroup**](taskschedulerschema-triggergroup-group.md)) 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

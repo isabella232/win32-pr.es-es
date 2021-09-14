@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2367686e308eb33287dafc3ce274d039b71534048fea07bc313e0542af4e2041
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9e0643220915ecb1c8f2cd1fe842e0dc3f21d8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118355645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968600"
 ---
 # <a name="to-sendemailtype-element"></a>Elemento To (sendEmailType)
 
@@ -42,17 +42,17 @@ El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complexty
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de C++, vea [**To Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_to).
 
-Para el desarrollo de scripts, [**consulte EmailAction.To**](emailaction-to.md).
+Para el desarrollo de scripts, [**vea EmailAction.To**](emailaction-to.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

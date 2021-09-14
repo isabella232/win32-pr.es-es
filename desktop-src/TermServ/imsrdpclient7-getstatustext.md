@@ -5,14 +5,14 @@ ms.assetid: 1da2280a-c26d-4caa-b227-c289055f3aa9
 ms.tgt_platform: multiple
 keywords:
 - Método GetStatusText Servicios de Escritorio remoto
-- Método GetStatusText Servicios de Escritorio remoto interfaz , IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto método , GetStatusText
-- Método GetStatusText Servicios de Escritorio remoto interfaz , IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto método , GetStatusText
-- Método GetStatusText Servicios de Escritorio remoto interfaz , IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto método , GetStatusText
-- Método GetStatusText Servicios de Escritorio remoto interfaz , IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto método , GetStatusText
+- Método GetStatusText Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , método GetStatusText
+- Método GetStatusText Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método GetStatusText
+- Método GetStatusText Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método GetStatusText
+- Método GetStatusText Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , método GetStatusText
 topic_type:
 - apiref
 api_name:
@@ -26,12 +26,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42ecccb6535afec2d32ff0466428af36c432bc981a1bc23cfa24161ca969a80e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 820628bfba59ec980e5128b9d9df3ee21b49a064
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119285195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968419"
 ---
 # <a name="imsrdpclient7getstatustext-method"></a>IMsRdpClient7::GetStatusText (método)
 
@@ -79,14 +79,14 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                        |
-| Header<br/>                   | <dl> <dt>Openservice.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Openservice.h</dt> </dl> |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | IID<br/>                      | IID IMsRdpClient7 se define como \_ b2a5b5ce-3461-444a-91d4-add26d070638<br/>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

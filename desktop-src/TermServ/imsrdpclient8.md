@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63dbdffbad87f9860bc063ab7f83883e0f902ea1ef7e4d2e91d452b2b832a699
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6575e50bd85cfe96888f6c5924d1875b48d544ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119871365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968376"
 ---
 # <a name="imsrdpclient8-interface"></a>Interfaz IMsRdpClient8
 
 Proporciona los métodos y propiedades necesarios para configurar y usar el control de cliente. Deriva de la [**interfaz IMsRdpClient7.**](imsrdpclient7.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClient8** hereda de [**IMsRdpClient7**](imsrdpclient7.md). **IMsRdpClient8** también tiene estos tipos de miembros:
 
@@ -49,7 +49,7 @@ La **interfaz IMsRdpClient8** tiene estos métodos.
 | [**GetStatusText**](imsrdpclient7-getstatustext.md)                      | Recupera el texto de estado del código de estado especificado.<br/>                                                                                                                         |
 | [**GetVirtualChannelOptions**](imsrdpclient-getvirtualchanneloptions.md) | Recupera las opciones establecidas para un canal virtual.<br/>                                                                                                                                 |
 | [**Volver a conectar**](imsrdpclient8-reconnect.md)                              | Se vuelve a conectar a la sesión remota con el nuevo ancho y alto del escritorio.<br/>                                                                                                          |
-| [**RequestClose**](imsrdpclient-requestclose.md)                         | Solicita un cierre correcto del control Escritorio remoto ActiveX correcto.<br/>                                                                                                              |
+| [**RequestClose**](imsrdpclient-requestclose.md)                         | Solicita un cierre correcto del control de Escritorio remoto ActiveX.<br/>                                                                                                              |
 | [**SendOnVirtualChannel**](imstscax-sendonvirtualchannel.md)             | Envía datos al servidor host de sesión de Escritorio remoto a través de un canal virtual que se creó anteriormente mediante el [**método CreateVirtualChannels.**](imstscax-createvirtualchannels.md)<br/> |
 | [**SendRemoteAction**](imsrdpclient8-sendremoteaction.md)                | Hace que se realice una acción en la sesión remota.<br/>                                                                                                                          |
 | [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md) | Establece las opciones de canal virtual para el control Escritorio remoto ActiveX virtual.<br/>                                                                                                         |
@@ -76,31 +76,31 @@ La **interfaz IMsRdpClient8** tiene estas propiedades.
 | [**AdvancedSettings8**](imsrdpclient7-advancedsettings8.md)<br/>              | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz IMsRdpClientAdvancedSettings7.**](imsrdpclientadvancedsettings7.md)<br/>                                                                                                                     |
 | [**AdvancedSettings9**](imsrdpclient8-advancedsettings9.md)<br/>              | Solo lectura<br/>  | Contiene un objeto que admite la [**interfaz IMsRdpClientAdvancedSettings8.**](imsrdpclientadvancedsettings8.md)<br/>                                                                                                                      |
 | [**CipherStrength**](imstscax-cipherstrength.md)<br/>                         | Solo lectura<br/>  | Recupera la intensidad de cifrado máxima del control actual.<br/>                                                                                                                                                                           |
-| [**Colordepth**](imsrdpclient-colordepth.md)<br/>                             | Lectura/escritura<br/> | Profundidad de color (en bits por píxel) para la conexión del control.<br/>                                                                                                                                                                           |
+| [**Colordepth**](imsrdpclient-colordepth.md)<br/>                             | Lectura y escritura<br/> | Profundidad de color (en bits por píxel) para la conexión del control.<br/>                                                                                                                                                                           |
 | [**Conectado**](imstscax-connected.md)<br/>                                   | Solo lectura<br/>  | Recupera el estado de conexión del control actual.<br/>                                                                                                                                                                                      |
-| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/>          | Lectura/escritura<br/> | Contiene el texto que se muestra en el área de cliente del control mientras el control está en estado conectado.<br/>                                                                                                                          |
-| [**ConnectingText**](imstscax-connectingtext.md)<br/>                         | Lectura/escritura<br/> | Especifica el texto que aparece centrado en el control mientras se conecta el control.<br/>                                                                                                                                                    |
-| [**DesktopHeight**](imstscax-desktopheight.md)<br/>                           | Lectura/escritura<br/> | Especifica el alto del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                                                                                           |
-| [**DesktopWidth**](imstscax-desktopwidth.md)<br/>                             | Lectura/escritura<br/> | Especifica el ancho del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                                                                                            |
-| [**DisconnectedText**](imstscax-disconnectedtext.md)<br/>                     | Lectura/escritura<br/> | Especifica el texto que aparece centrado en el control antes de finalizar una conexión.<br/>                                                                                                                                                  |
-| [**Domain**](imstscax-domain.md)<br/>                                         | Lectura/escritura<br/> | Especifica el dominio en el que el usuario actual inicia sesión.<br/>                                                                                                                                                                                     |
+| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/>          | Lectura y escritura<br/> | Contiene el texto que se muestra en el área de cliente del control mientras el control está en estado conectado.<br/>                                                                                                                          |
+| [**ConnectingText**](imstscax-connectingtext.md)<br/>                         | Lectura y escritura<br/> | Especifica el texto que aparece centrado en el control mientras se conecta el control.<br/>                                                                                                                                                    |
+| [**DesktopHeight**](imstscax-desktopheight.md)<br/>                           | Lectura y escritura<br/> | Especifica el alto del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                                                                                           |
+| [**DesktopWidth**](imstscax-desktopwidth.md)<br/>                             | Lectura y escritura<br/> | Especifica el ancho del control actual, en píxeles, en el escritorio remoto inicial.<br/>                                                                                                                                                            |
+| [**DisconnectedText**](imstscax-disconnectedtext.md)<br/>                     | Lectura y escritura<br/> | Especifica el texto que aparece centrado en el control antes de finalizar una conexión.<br/>                                                                                                                                                  |
+| [**Dominio**](imstscax-domain.md)<br/>                                         | Lectura y escritura<br/> | Especifica el dominio en el que el usuario actual inicia sesión.<br/>                                                                                                                                                                                     |
 | [**ExtendedDisconnectReason**](imsrdpclient-extendeddisconnectreason.md)<br/> | Solo lectura<br/>  | Contiene información extendida sobre el motivo de desconexión del control.<br/>                                                                                                                                                                 |
-| [**Fullscreen**](imsrdpclient-fullscreen.md)<br/>                             | Lectura/escritura<br/> | Determina si el control de cliente está en modo de pantalla completa.<br/>                                                                                                                                                                               |
+| [**Fullscreen**](imsrdpclient-fullscreen.md)<br/>                             | Lectura y escritura<br/> | Determina si el control de cliente está en modo de pantalla completa.<br/>                                                                                                                                                                               |
 | [**FullScreenTitle**](imstscax-fullscreentitle.md)<br/>                       | Solo escritura<br/> | Especifica el título de la ventana que se muestra cuando el control está en modo de pantalla completa.<br/>                                                                                                                                                               |
 | [**HorizontalScrollBarVisible**](imstscax-horizontalscrollbarvisible.md)<br/> | Solo lectura<br/>  | Indica si el control ha mostrado una barra de desplazamiento horizontal.<br/>                                                                                                                                                                        |
 | [**MsRdpClientShell**](imsrdpclient5-msrdpclientshell.md)<br/>                | Solo lectura<br/>  | Recupera la interfaz de configuración de cliente que admite scripts [**IMsRdpClientShell**](imsrdpclientshell.md).<br/>                                                                                                                                           |
 | [**RemoteProgram**](imsrdpclient5-remoteprogram.md)<br/>                      | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz ITSRemoteProgram.**](itsremoteprogram.md)<br/>                                                                                                                                               |
 | [**RemoteProgram2**](imsrdpclient7-remoteprogram2.md)<br/>                    | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz ITSRemoteProgram2.**](itsremoteprogram2.md)<br/>                                                                                                                                             |
 | [**SecuredSettings**](imstscax-securedsettings.md)<br/>                       | Solo lectura<br/>  | Recupera un puntero [**de interfaz IMsTscSecuredSettings.**](imstscsecuredsettings-interface.md)<br/>                                                                                                                                            |
-| [**SecuredSettings2**](imsrdpclient-securedsettings2.md)<br/>                 | Solo lectura<br/>  | Recupera un puntero a la [**interfaz IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md) Esta interfaz se puede usar para establecer la configuración protegida para el control de cliente.<br/>                                               |
+| [**SecuredSettings2**](imsrdpclient-securedsettings2.md)<br/>                 | Solo lectura<br/>  | Recupera un puntero a la [**interfaz IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md) Esta interfaz se puede usar para establecer la configuración segura para el control de cliente.<br/>                                               |
 | [**SecuredSettings3**](imsrdpclient7-securedsettings3.md)<br/>                | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz IMsRdpClientSecuredSettings2.**](imsrdpclientsecuredsettings2.md)<br/>                                                                                                                       |
 | [**SecuredSettingsEnabled**](imstscax-securedsettingsenabled.md)<br/>         | Solo lectura<br/>  | Indica si la [**interfaz IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponible. Es decir, si la página web que contiene el control se encuentra actualmente en una de las zonas de seguridad Internet Explorer URL permitidas.<br/> |
-| [**Servidor**](imstscax-server.md)<br/>                                         | Lectura/escritura<br/> | Especifica el nombre del servidor al que está conectado el control actual.<br/>                                                                                                                                                                 |
-| [**StartConnected**](imstscax-startconnected.md)<br/>                         | Lectura/escritura<br/> | Indica si el control establecerá la conexión del servidor host de sesión de Escritorio remoto inmediatamente después del inicio.<br/>                                                                                                                                |
+| [**Servidor**](imstscax-server.md)<br/>                                         | Lectura y escritura<br/> | Especifica el nombre del servidor al que está conectado el control actual.<br/>                                                                                                                                                                 |
+| [**StartConnected**](imstscax-startconnected.md)<br/>                         | Lectura y escritura<br/> | Indica si el control establecerá la conexión del servidor host de sesión de Escritorio remoto inmediatamente después del inicio.<br/>                                                                                                                                |
 | [**TransportSettings**](imsrdpclient5-transportsettings.md)<br/>              | Solo lectura<br/>  | Recupera lo que se pasó a través de un script a la [**interfaz IMsRdpClientTransportSettings.**](imsrdpclienttransportsettings.md)<br/>                                                                                                         |
 | [**TransportSettings2**](imsrdpclient6-transportsettings2.md)<br/>            | Solo lectura<br/>  | Recupera la [**interfaz IMsRdpClientTransportSettings2.**](imsrdpclienttransportsettings2.md)<br/>                                                                                                                                           |
 | [**TransportSettings3**](imsrdpclient7-transportsettings3.md)<br/>            | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz IMsRdpClientTransportSettings3.**](imsrdpclienttransportsettings3.md)<br/>                                                                                                                   |
-| [**nombre de usuario**](imstscax-username.md)<br/>                                     | Lectura/escritura<br/> | Especifica la credencial de inicio de sesión de nombre de usuario.<br/>                                                                                                                                                                                                   |
+| [**Nombre de usuario**](imstscax-username.md)<br/>                                     | Lectura y escritura<br/> | Especifica la credencial de inicio de sesión de nombre de usuario.<br/>                                                                                                                                                                                                   |
 | [**Versión**](imstscax-version.md)<br/>                                       | Solo lectura<br/>  | Especifica el número de versión del control actual.<br/>                                                                                                                                                                                        |
 | [**VerticalScrollBarVisible**](imstscax-verticalscrollbarvisible.md)<br/>     | Solo lectura<br/>  | Indica si el control muestra una barra de desplazamiento vertical.<br/>                                                                                                                                                                               |
 
@@ -108,9 +108,9 @@ La **interfaz IMsRdpClient8** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **interfaz IMsRdpClient8** se ha ampliado mediante las interfaces siguientes, y cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
+Las interfaces siguientes han ampliado la interfaz **IMsRdpClient8,** donde cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
 
 -   [**IMsRdpClient9**](imsrdpclient9.md)
 -   [**IMsRdpClient10**](imsrdpclient10.md)
@@ -132,7 +132,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

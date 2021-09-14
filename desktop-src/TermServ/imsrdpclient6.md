@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4bbf8fb9cc532b1968b8fba99b62e49feaf4538fd618018666d0338736cc04d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ddb2b60d95650975955bc45abe23a354668c9bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119138918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968427"
 ---
 # <a name="imsrdpclient6-interface"></a>Interfaz IMsRdpClient6
 
 Proporciona los métodos y propiedades necesarios para configurar y usar el control de cliente. Deriva de la [**interfaz IMsRdpClient5.**](imsrdpclient5.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClient6** hereda de [**IMsRdpClient5.**](imsrdpclient5.md) **IMsRdpClient6** también tiene estos tipos de miembros:
 
@@ -48,7 +48,7 @@ La **interfaz IMsRdpClient6** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **interfaz IMsRdpClient6** se ha ampliado mediante las siguientes interfaces, y cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
 
@@ -74,7 +74,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d6b766a64f87b43feb23200176c5d23e254638a0022ea4d77b64264ca1d507d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83d3b0a63a8be70af7eba4edb90e49db71892f5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118355852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968607"
 ---
 # <a name="timetrigger-triggergroup-element"></a>Elemento TimeTrigger (triggerGroup)
 
@@ -50,7 +50,7 @@ El **elemento TimeTrigger** se define mediante [**triggerGroup**](taskschedulers
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [**Habilitado (triggerBaseType)**](taskschedulerschema-enabled-triggerbasetype-element.md)                       | boolean                                                                  | Especifica que el desencadenador está habilitado.<br/>                                                                                  |
 | [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | Especifica la fecha y hora en que se desactiva el desencadenador. El desencadenador no puede iniciar la tarea después de desactivarla.<br/> |
-| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Especifica la cantidad máxima de tiempo en la que el desencadenador puede iniciar la tarea.<br/>                                   |
+| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Especifica la cantidad máxima de tiempo en que el desencadenador puede iniciar la tarea.<br/>                                   |
 | [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.<br/>          |
 | [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)           | dateTime                                                                 | Especifica la fecha y hora en que se activa el desencadenador. Este elemento es obligatorio.<br/>                                    |
 
@@ -66,7 +66,7 @@ El **elemento TimeTrigger** se define mediante [**triggerGroup**](taskschedulers
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**elemento StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) es un elemento necesario para los desencadenadores time y calendar **(TimeTrigger** [**y CalendarTrigger).**](taskschedulerschema-calendartrigger-triggergroup-element.md)
 
@@ -74,7 +74,7 @@ Para el desarrollo de scripting, se especifica un desencadenador de tiempo media
 
 Para el desarrollo de C++, se especifica un desencadenador de tiempo mediante la [**interfaz ITimeTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-itimetrigger)
 
-Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md) Estos elementos deben agregarse en la secuencia que se muestra a continuación.
+Los elementos secundarios enumerados anteriormente se definen mediante los [**tipos de elementos complejos triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md) Estos elementos deben agregarse en la secuencia que se muestra a continuación.
 
 -   [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 -   [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)
@@ -84,13 +84,13 @@ Los elementos secundarios enumerados anteriormente se definen mediante los tipos
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador de hora, vea Ejemplo de [desencadenador de tiempo (XML).](time-trigger-example--xml-.md)
+Para obtener un ejemplo completo del XML para una tarea que especifica un desencadenador de hora, vea Ejemplo de desencadenador [de tiempo (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

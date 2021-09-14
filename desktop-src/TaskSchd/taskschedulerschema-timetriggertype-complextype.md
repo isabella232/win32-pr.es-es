@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c03ede1b87f3969d12256df16c0b05c109391876a12c256190966c8befc7f2fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f44f0959a9f67e4bfee0b0ef5dd7f095ffbadce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118355753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968608"
 ---
 # <a name="timetriggertype-complex-type"></a>tipo complejo timeTriggerType
 
@@ -51,15 +51,15 @@ Define el tipo base para el [**elemento TimeTrigger.**](taskschedulerschema-time
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Tenga en cuenta que este elemento no agrega ningún elemento secundario a los definidos por el [**tipo complejo triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
+Tenga en cuenta que este elemento no agrega ningún elemento secundario a los definidos por el tipo complejo [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
@@ -70,7 +70,7 @@ Tenga en cuenta que este elemento no agrega ningún elemento secundario a los de
 
 <dl> <dt>
 
-[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

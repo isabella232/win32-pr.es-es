@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 955dcc93b826b4f86bffd3371ab9907e56dfe7f35649aee603cb18716868f535
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe12f76c35238251e2ecc60f848e2f7eb4eaa681
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119959535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968564"
 ---
 # <a name="userid-principaltype-element"></a>Elemento UserId (principalType)
 
@@ -42,7 +42,7 @@ El **elemento UserId** se define mediante el [**tipo complejo principalType.**](
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **elemento UserId** y [**el elemento LogonType**](taskschedulerschema-logontype-principaltype-element.md) se usan juntos para definir el usuario necesario para ejecutar las tareas que usan esta entidad de seguridad.
 
@@ -54,7 +54,7 @@ Para el desarrollo de C++, el identificador de usuario se especifica mediante la
 
 ## <a name="examples"></a>Ejemplos
 
-El código XML siguiente define un principio mediante un identificador de usuario.
+El xml siguiente define un principio mediante un identificador de usuario.
 
 
 ```XML
@@ -78,7 +78,7 @@ El código XML siguiente define un principio mediante un identificador de usuari
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

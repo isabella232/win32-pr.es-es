@@ -5,17 +5,17 @@ ms.assetid: ad0053bc-e3a9-4cd5-a409-fab3e24ffffa
 ms.tgt_platform: multiple
 keywords:
 - Propiedad AcceleratorPassthrough Servicios de Escritorio remoto
-- Propiedad AcceleratorPassthrough Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz AcceleratorPassthrough Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad AcceleratorPassthrough
 - Interfaz acceleratorPassthrough Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad AcceleratorPassthrough
-- Interfaz AcceleratorPassthrough Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings3
+- Propiedad AcceleratorPassthrough Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad AcceleratorPassthrough
 - Propiedad AcceleratorPassthrough Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad AcceleratorPassthrough
 - Interfaz acceleratorPassthrough Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad AcceleratorPassthrough
-- Propiedad AcceleratorPassthrough Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz acceleratorPassthrough Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad AcceleratorPassthrough
 - Interfaz acceleratorPassthrough Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad AcceleratorPassthrough
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c422147848c2b2625acc518074468febb7593d4a97bb8080c1db7d4b1ba7c081
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c252c5c0477f331b66cf65b93ed2cab844fb88e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118609259"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968343"
 ---
 # <a name="imsrdpclientadvancedsettingsacceleratorpassthrough-property"></a>Propiedad IMsRdpClientAdvancedSettings::AcceleratorPassthrough
 
@@ -108,7 +108,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

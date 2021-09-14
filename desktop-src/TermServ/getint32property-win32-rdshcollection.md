@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61fb64c55a0b361ec4f3ca8528247f3884684b3321251c81594c3161c83a8c7b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5cc29234fe3bb1b92e68e728423931da965391f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118130720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968499"
 ---
 # <a name="getint32property-method-of-the-win32_rdshcollection-class"></a>Método GetInt32Property de la clase \_ RDSHCollection de Win32
 
@@ -71,13 +71,13 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                                 |
 | Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                                   |
-| Header<br/>                   | <dl> <dt>Microsoft.diagnostics.appanalysis.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Microsoft.diagnostics.appanalysis.h</dt> </dl> |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl>                    |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>                            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

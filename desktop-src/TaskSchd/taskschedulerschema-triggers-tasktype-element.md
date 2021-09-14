@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d067c9e315006c55e07e972e5616525750d8a383d7ed8294f7d39a6acf32caff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06994c395fbfbc5b0c6244c9d17930bc4afac885
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118610889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968595"
 ---
 # <a name="triggers-tasktype-element"></a>Elemento Triggers (taskType)
 
@@ -30,7 +30,7 @@ Especifica los desencadenadores que inician la tarea.
  />
 ```
 
-El tipo complejo **triggersType** define el elemento [**Triggers.**](taskschedulerschema-triggerstype-complextype.md)
+El **elemento Triggers** se define mediante el tipo complejo [**triggersType.**](taskschedulerschema-triggerstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -51,7 +51,7 @@ El tipo complejo **triggersType** define el elemento [**Triggers.**](taskschedul
 | [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md)                 | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando se arranca el sistema.<br/>                 |
 | [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)         | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)         | Especifica un desencadenador diario, semanal, mensual o mensual del día de la semana (DOW).<br/>   |
 | [**EventTrigger**](taskschedulerschema-eventtrigger-triggergroup-element.md)               | [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md)               | Especifica un desencadenador que inicia una tarea cuando se produce un evento del sistema.<br/>                |
-| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando el equipo entra en estado de inactividad.<br/> |
+| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando el equipo entra en estado inactivo.<br/> |
 | [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md)               | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)               | Especifica un desencadenador que inicia una tarea cuando un usuario inicia sesión.<br/>                       |
 | [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) | [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) | Especifica un desencadenador que inicia una tarea cuando se registra la tarea.<br/>               |
 | [**TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md)                 | [**timeTriggerType**](taskschedulerschema-timetriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando se activa el desencadenador.<br/>             |
@@ -68,7 +68,7 @@ Para el desarrollo de scripting, los desencadenadores de una tarea se especifica
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador, vea [Ejemplo de desencadenador de tiempo (XML).](time-trigger-example--xml-.md)
+Para obtener un ejemplo completo del XML para una tarea que especifica un desencadenador, vea Ejemplo de desencadenador de tiempo [(XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,7 +81,7 @@ Para obtener un ejemplo completo del XML de una tarea que especifica un desencad
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

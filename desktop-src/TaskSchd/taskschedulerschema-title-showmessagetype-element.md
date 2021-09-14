@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e5fe72b791a963e78d49ace14f7edec1210dc3bf23a5f7cee9550e6f6db53e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca5baa7135579ff673ba9b01a672a126924d1d49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118355682"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968604"
 ---
 # <a name="title-showmessagetype-element"></a>Elemento Title (showMessageType)
 
@@ -42,9 +42,9 @@ El tipo complejo [**showMessageType**](taskschedulerschema-showmessagetype-compl
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para el desarrollo de C++, [**vea Propiedad Title de IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title).
+Para el desarrollo de C++, [**vea Propiedad Title de IShowMessageAction.**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title)
 
 Para el desarrollo de scripts, [**vea ShowMessageAction.Title**](showmessageaction-title.md).
 
@@ -52,7 +52,7 @@ Para el desarrollo de scripts, [**vea ShowMessageAction.Title**](showmessageacti
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

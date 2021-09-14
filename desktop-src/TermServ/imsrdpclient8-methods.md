@@ -5,12 +5,12 @@ ms.assetid: A8B62801-1992-44C9-B3EF-5DEF402004E0
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e087e24f3743b405174ae957eadc3e1186c2306413b20d40691e743a1bba0b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fdb1b6f44791142be8f2a6e82e159b1796152368
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968383"
 ---
 # <a name="imsrdpclient8-methods"></a>Métodos IMsRdpClient8
 

@@ -5,11 +5,11 @@ ms.assetid: d6a43662-7e51-404a-a3f9-a8b51cbc69d1
 ms.tgt_platform: multiple
 keywords:
 - Método SendRemoteAction Servicios de Escritorio remoto
-- Método SendRemoteAction Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Método SendRemoteAction Servicios de Escritorio remoto , interfaz IMsRdpClient8
 - Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método SendRemoteAction
 - Método SendRemoteAction Servicios de Escritorio remoto interfaz , IMsRdpClient9
 - Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método SendRemoteAction
-- Método SendRemoteAction Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Método SendRemoteAction Servicios de Escritorio remoto , interfaz IMsRdpClient10
 - Interfaz IMsRdpClient10 Servicios de Escritorio remoto , método SendRemoteAction
 topic_type:
 - apiref
@@ -23,12 +23,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c41cdc5c5d164a0154f00d6fa4e8130d0860bfecbf77db7639272cbdd60f401f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a28fc9695686402e0a8e98ed17fc1bc6a47939d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080029"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968379"
 ---
 # <a name="imsrdpclient8sendremoteaction-method"></a>IMsRdpClient8::SendRemoteAction (método)
 
@@ -64,7 +64,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                         |
@@ -74,7 +74,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

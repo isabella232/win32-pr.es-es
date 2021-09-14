@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86b70ee57d8940dc65b1f7b74151a3dd6889286a26e7bbf4357bea4aae8c5259
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81064581b209f047ac492faee6d442b082d038cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117757827"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968468"
 ---
 # <a name="getprotocolname-method-of-the-win32_tsgatewayserversettings-class"></a>Método GetProtocolName de la clase \_ TSGatewayServerSettings de Win32
 
@@ -47,7 +47,7 @@ uint32 GetProtocolName(
 *ProtocolId* \[ En\]
 </dt> <dd>
 
-Índice del identificador de protocolo. El valor debe estar entre cero y el valor de **la propiedad MaxProtocols.**
+Índice del identificador de protocolo. El valor debe estar entre cero y el valor de la **propiedad MaxProtocols.**
 
 </dd> <dt>
 
@@ -62,13 +62,13 @@ Devuelve el nombre del protocolo especificado.
 
 Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se admite un protocolo.
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,11 +84,11 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**TSGatewayServerSettings de Win32 \_**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

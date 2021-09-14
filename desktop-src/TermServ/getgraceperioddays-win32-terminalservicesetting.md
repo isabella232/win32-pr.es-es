@@ -1,6 +1,6 @@
 ---
 title: Método GetGracePeriodDays de la Win32_TerminalServiceSetting clase
-description: Recupera el número de días restantes en el período de gracia Servicios de Escritorio remoto licencias para un servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto). Un valor cero indica que el período de gracia ha terminado.
+description: Recupera el número de días restantes en el período de gracia de Servicios de Escritorio remoto de licencias para un servidor Escritorio remoto de sesión de servidor (host de sesión de Escritorio remoto). Un valor cero indica que el período de gracia ha terminado.
 ms.assetid: d84d7815-ee09-43d9-a370-993d23f14898
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbfe1a99fb0b4f12db19f018d8acb3aaee6ab15a3560cd9140c3a05f36986585
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0faaf525bb74a8ac4b0164c181e5a20cfb215d7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968507"
 ---
-# <a name="getgraceperioddays-method-of-the-win32_terminalservicesetting-class"></a>Método GetGracePeriodDays de la clase \_ TerminalServiceSetting de Win32
+# <a name="getgraceperioddays-method-of-the-win32_terminalservicesetting-class"></a>Método GetGracePeriodDays de la clase TerminalServiceSetting de Win32 \_
 
-Recupera el número de días restantes en el período de gracia Servicios de Escritorio remoto licencias para un servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto). Un valor cero indica que el período de gracia ha terminado.
+Recupera el número de días restantes en el período de gracia de Servicios de Escritorio remoto de licencias para un servidor Escritorio remoto de sesión de servidor (host de sesión de Escritorio remoto). Un valor cero indica que el período de gracia ha terminado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,9 +50,9 @@ Número de días restantes en el período de gracia.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -79,7 +79,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

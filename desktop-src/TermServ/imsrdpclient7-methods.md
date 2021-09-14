@@ -5,12 +5,12 @@ ms.assetid: A05547F6-FBD4-4635-9010-EE68C5EE7ED5
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61880d01bd6fc9261677fef4566260382c2b9ea7d822978461a27964e6241d4f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8cb24e65165347b48c69f426e2f8d2c2ddf51fe3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968416"
 ---
 # <a name="imsrdpclient7-methods"></a>Métodos IMsRdpClient7
 
