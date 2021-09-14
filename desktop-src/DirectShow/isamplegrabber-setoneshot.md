@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7829bd57cb2d813f71e17a4925d6e5fab7cc34330041461b691e00eae6ca5cad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72a6e0e1798bcb8e19807619e982f487b0f04e6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817686"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062302"
 ---
 # <a name="isamplegrabbersetoneshot-method"></a>ISampleGrabber::SetOneShot (método)
 
@@ -52,7 +52,7 @@ Valor booleano que especifica si el filtro Sample Grabber se detiene después de
 
 
 
-| Valor                                                                                                                                    | Significado                                                                                                           |
+| Value                                                                                                                                    | Significado                                                                                                           |
 |------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | <span id="TRUE"></span><span id="true"></span><dl> <dt>TRUE**</dt> </dl>    | Sample Grabber se detiene después del primer ejemplo. <br/>                                                      |
 | <span id="FALSE"></span><span id="false"></span><dl> <dt>FALSE**</dt> </dl> | Después del primer ejemplo, sample Grabber continúa procesando muestras. Este es el comportamiento predeterminado.<br/> |
@@ -67,7 +67,7 @@ Valor booleano que especifica si el filtro Sample Grabber se detiene después de
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método para obtener un solo ejemplo de la secuencia, como se muestra a continuación:
 

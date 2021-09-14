@@ -17,12 +17,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 63a0708f2e081ffc8c5fb359be1e57aacd1cd62bd1db1daee2063e66e2fb55c2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0bc479d3415906a6536c6df1d163056e94e2af76
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061464"
 ---
 # <a name="win32_systemconfigurationchangeevent-class"></a>Clase \_ SystemConfigurationChangeEvent de Win32
 
@@ -42,7 +42,7 @@ class Win32_SystemConfigurationChangeEvent : Win32_DeviceChangeEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemConfigurationChangeEvent de Win32** tiene estos tipos de miembros:
 
@@ -63,7 +63,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API Mensajes de administración de \| dispositivos WM \_ DEVICECHANGE \| wParam", "Win32API Mensajes de administración \| de dispositivos WM \_ SETTINGCHANGE")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API Management Messages \| WM \_ DEVICECHANGE \| wParam", "Win32APIDevice Management Messages \| WM \_ SETTINGCHANGE")
 </dt> </dl>
 
 Tipo de notificación de cambio de evento que se ha producido.
@@ -102,7 +102,7 @@ Esta propiedad se hereda de [**Win32 \_ DeviceChangeEvent.**](win32-devicechange
 
 </dd> <dt>
 
-**\_DESCRIPTOR DE SEGURIDAD**
+**DESCRIPTOR \_ DE SEGURIDAD**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **matriz uint8**
@@ -111,7 +111,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](../wmisdk/--event.md). Para obtener más información sobre las constantes usadas para establecer este descriptor de seguridad, vea [Constantes de seguridad WMI](../wmisdk/wmi-security-constants.md).
+Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](../wmisdk/--event.md). Para obtener más información sobre las constantes usadas para establecer este descriptor de seguridad, vea [Wmi Security Constants](../wmisdk/wmi-security-constants.md).
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemConfigurationChangeEvent de Win32** se deriva de [**Win32 \_ DeviceChangeEvent**](win32-devicechangeevent.md).
 
@@ -150,7 +150,7 @@ La **clase \_ SystemConfigurationChangeEvent de Win32** se deriva de [**Win32 \_
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 81b054f805f746522b957de3e8003d471b37a14e8804635e97c6f1bef091f3d3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18a7438c09fb2a850637bbae549ada61c37fb3c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119935345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256754"
 ---
 # <a name="icontextnodesaddcontextnode-method"></a>IContextNodes::AddContextNode (método)
 
@@ -42,7 +42,7 @@ HRESULT AddContextNode(
 *pContextNode* \[ En\]
 </dt> <dd>
 
-Objeto [**IContextNode**](icontextnode.md) que se agrega.
+Objeto [**IContextNode**](icontextnode.md) que se agregará.
 
 </dd> </dl>
 
@@ -58,12 +58,12 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

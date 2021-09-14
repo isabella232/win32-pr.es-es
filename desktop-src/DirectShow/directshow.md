@@ -4,12 +4,12 @@ ms.assetid: 75191978-d538-4140-83ed-69334624c6fb
 title: DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3dc6baf6b6324edda7ded80601d144704e5c9117d09376b7e2b23db073de36b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ea3969d8d43cc6f66f66440d93c87ff7f7375b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061694"
 ---
 # <a name="directshow"></a>DirectShow
 
@@ -18,7 +18,7 @@ La interfaz DirectShow programación de aplicaciones (API) de Microsoft es una a
 Los DirectShow, bibliotecas, herramientas del SDK y ejemplos están disponibles en el [SDK Windows .](https://msdn.microsoft.com/windows/aa904949.aspx)
 
 > [!Note]  
-> Las versiones anteriores del SDK DirectShow se incluían en el SDK de DirectX. La última versión del SDK de DirectX que se incluye DirectShow era DirectX 9.0 SDK Update - (febrero de 2005) Extras. Después de esta versión, DirectShow se ha movido al SDK Windows. Para obtener la versión más reciente de DirectShow encabezados, bibliotecas y ejemplos, descargue Windows SDK.
+> Las versiones anteriores del SDK DirectShow se incluían en el SDK de DirectX. La última versión del SDK de DirectX que se incluye DirectShow era DirectX 9.0 SDK Update - (febrero de 2005) Extras. Después de esta versión, DirectShow se ha movido al SDK Windows. Para obtener la versión más reciente de los DirectShow, bibliotecas y ejemplos, descargue el SDK Windows.
 
  
 

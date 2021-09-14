@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: dcace4e501a27b1f82b148533f382f5c86bafb17d9bf34343f1e43a8893672c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1db0a126ebf6ff90d4db7512eb7346d6dbca8b5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061624"
 ---
 # <a name="iamtimelinesrcfixmediatimes-method"></a>IamTimelineSrc::FixMediaTimes (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "120052405"
 
  
 
-El `FixMediaTimes` método redondea los valores de tiempo especificados al límite de fotogramas más cercano, tal como se define en la velocidad de fotogramas de salida. En general, las aplicaciones no necesitan llamar a este método.
+El método redondea los valores de tiempo especificados al límite de marco más cercano, tal como `FixMediaTimes` se define en la velocidad de fotogramas de salida. En general, las aplicaciones no necesitan llamar a este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,9 +64,9 @@ Puntero a una variable que contiene la hora de detenerse, en unidades de 100 nan
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método es similar al [**método IAMTimelineObj::FixTimes,**](iamtimelineobj-fixtimes.md) pero conserva la proporción original de tiempos multimedia y de escala de tiempo. Simplemente redondear los tiempos al límite de fotograma más cercano podría distorsionar esta proporción.
+Este método es similar al [**método IAMTimelineObj::FixTimes,**](iamtimelineobj-fixtimes.md) pero conserva la proporción original de tiempos multimedia y de escala de tiempo. Si solo redondea los tiempos al límite del marco más cercano, podría distorsionar esta proporción.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -89,14 +89,14 @@ Este método es similar al [**método IAMTimelineObj::FixTimes,**](iamtimelineob
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

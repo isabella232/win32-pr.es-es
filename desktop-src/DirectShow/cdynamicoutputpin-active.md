@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 12e59b434562e84c42228c16282620efe10866ea9dad85a4d62beb46f5a59e61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d9544c0fd125146b10f008565fcfbe330d18de1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061262"
 ---
 # <a name="cdynamicoutputpinactive-method"></a>Método CDynamicOutputPin.Active
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBaseOutputPin::Active.**](cbaseoutputpin-active.md) Restablece el evento [**CDynamicOutputPin::m \_ hStopEvent.**](cdynamicoutputpin-m-hstopevent.md) Si el filtro propietario no ha llamado a **SetConfigInfo**, este método devuelve E \_ FAIL.
 
@@ -70,7 +70,7 @@ Este método invalida el [**método CBaseOutputPin::Active.**](cbaseoutputpin-ac
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

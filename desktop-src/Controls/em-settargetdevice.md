@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d9a3cd4e59f3800b91fedee446e927ab0ec39988474752561a04dace5572ef0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f82d6ee5df86572564cffcf192395ccee1fbd05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119697595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062059"
 ---
 # <a name="em_settargetdevice-message"></a>Mensaje \_ EM SETTARGETDEVICE
 
@@ -47,7 +47,7 @@ Ancho de línea que se usará para el formato.
 
 El valor devuelto es cero si se produce un error en la operación o distinto de cero si se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El HDC de la impresora predeterminada se puede obtener como se muestra a continuación.
 
@@ -70,11 +70,11 @@ Si *lParam es* cero, no se crea ningún salto de línea.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

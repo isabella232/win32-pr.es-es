@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 566f8b8e3bdf4e92abfb1fdd5874b8514814792e1d7aae169cc2aca4b2e8d101
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c2073602121480930e0f7d9d2e5a904c0dea77ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119436195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061994"
 ---
 # <a name="hdm_getitem-message"></a>Mensaje \_ GETITEM de HDM
 
@@ -41,13 +41,13 @@ Obtiene información sobre un elemento de un control de encabezado. Puede enviar
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura HDITEM.**](/windows/win32/api/commctrl/ns-commctrl-hditema) Cuando se envía el mensaje, el **miembro mask** indica el tipo de información que se solicita. Cuando se devuelve el mensaje, los demás miembros reciben la información solicitada. Si el **miembro mask** especifica cero, el mensaje devuelve **TRUE** pero no copia ninguna información en la estructura .
+Puntero a una [**estructura HDITEM.**](/windows/win32/api/commctrl/ns-commctrl-hditema) Cuando se envía el mensaje, el **miembro mask** indica el tipo de información que se solicita. Cuando el mensaje vuelve, los demás miembros reciben la información solicitada. Si el **miembro mask** especifica cero, el mensaje devuelve **TRUE** pero no copia ninguna información en la estructura .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -61,7 +61,7 @@ Si la marca HDI TEXT se establece en el miembro mask de la estructura HDITEM, el
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDM \_ GETITEMW** (Unicode) y **HDM \_ GETITEMA** (ANSI)<br/>                   |
 
 

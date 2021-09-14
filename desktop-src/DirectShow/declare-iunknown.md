@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21ba606a5721635398cc9bcf48bba70978e00354188e1a62d83239c853a28b17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4823c1b4bd4832b1047a732bc503f04b4da65483
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062366"
 ---
 # <a name="declare_iunknown"></a>DECLARE \_ IUNKNOWN
 
@@ -42,9 +42,9 @@ La **macro DECLARE \_ IUNKNOWN** declara los tres métodos de la interfaz base p
     };
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al crear una nueva interfaz, debe derivarse de **IUnknown**, que tiene tres métodos: **QueryInterface**, **AddRef** y **Release**. Esta macro simplifica el proceso de declaración declarando cada uno de estos métodos para la nueva interfaz.
+Al crear una nueva interfaz, debe derivar de **IUnknown**, que tiene tres métodos: **QueryInterface**, **AddRef** y **Release**. Esta macro simplifica el proceso de declaración declarando cada uno de estos métodos para la nueva interfaz.
 
 Esta macro solo funciona con clases que derivan, directa o indirectamente, de la [**clase CUnknown.**](cunknown.md)
 
@@ -59,7 +59,7 @@ Esta macro solo funciona con clases que derivan, directa o indirectamente, de la
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

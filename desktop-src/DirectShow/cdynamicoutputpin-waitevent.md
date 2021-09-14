@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3797c9127d3e931cd64fa35e822eac3151acc7fa1a8c4c0c9e93d6a36c0dfe99
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b27f3c387c82eaeebc119f967deaca8e7314ccd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119871935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062499"
 ---
 # <a name="cdynamicoutputpinwaitevent-method"></a>Método CDynamicOutputPin.WaitEvent
 
-El `WaitEvent` método espera hasta que se señale el evento especificado.
+El `WaitEvent` método espera hasta que se señala el evento especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

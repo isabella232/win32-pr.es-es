@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0e8d2b476d57306261d9261215a1e5053827a972412fa78b76cf0d136fbf97e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 111a1448f62cae3f782917de76d92e88aa5a3356
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119460305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060718"
 ---
 # <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Función D3DXMatrixShadow (D3dx9math.h)
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que aplana la geometría en un plano.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función D3DXMatrixShadow** aplana la geometría en un plano, como si la conversión de una sombra a partir de una luz.
 
@@ -110,7 +110,7 @@ Si el componente w de la luz es 0, el rayo del origen a la luz representa una lu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

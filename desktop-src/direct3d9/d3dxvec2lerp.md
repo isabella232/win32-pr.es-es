@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c93040b3ab4c27c937947bfe1bd50f439dd70e84c6b90fb3931f7055b94b0def
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b08b767993143db3057985140b97854b9203d2b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060697"
 ---
 # <a name="d3dxvec2lerp-function"></a>Función D3DXVec2Lerp
 
@@ -85,7 +85,7 @@ Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
 Puntero a una [**estructura D3DXVECTOR2**](d3dxvector2.md) que es el resultado de la interpolación lineal.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función realiza la interpolación lineal en función de la fórmula siguiente: V1 + s(V2-V1).
 
@@ -102,7 +102,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

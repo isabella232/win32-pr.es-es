@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e64d4493e43e23b6826c81ac61ae90d64a236d7ffcace32bb29f53b5c0c039fe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 99974206f6487d90e1660f5a64c1d00904912c66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062255"
 ---
 # <a name="usercontrolservice-method-of-the-win32_systemdriver-class"></a>Método UserControlService de la clase \_ SystemDriver de Win32
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UserControlService** intenta enviar un código de control definido por el usuario a un servicio administrado por un controlador del sistema.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,7 +67,7 @@ Devuelve un valor de 0 (cero) si se aceptó la solicitud **UserControlService,**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

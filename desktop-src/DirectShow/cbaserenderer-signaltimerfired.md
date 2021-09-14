@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f08ed0e8348648d5d1af1127159b414b0ddbc40cfd470ff0834b7bc2b0723e9b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4dd29b37869fc6f07c2d876dfa0d1d306b04b111
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061761"
 ---
 # <a name="cbaserenderersignaltimerfired-method"></a>CBaseRenderer.SignalTimerFired (método)
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El filtro llama a este método cuando se activa el temporizador de representación (vea [**CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md)) o cuando se cancela el temporizador (vea [**CBaseRenderer::CancelNotification**](cbaserenderer-cancelnotification.md)). El método restablece la variable [**miembro CBaseRenderer::m \_ dwAdvise**](cbaserenderer-m-dwadvise.md) en cero.
+El filtro llama a este método cuando se activa el temporizador de representación (vea [**CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md)) o cuando se cancela el temporizador (vea [**CBaseRenderer::CancelNotification**](cbaserenderer-cancelnotification.md)). El método restablece la variable [**miembro CBaseRenderer::m \_ dwAdvise**](cbaserenderer-m-dwadvise.md) a cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ El filtro llama a este método cuando se activa el temporizador de representaci�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

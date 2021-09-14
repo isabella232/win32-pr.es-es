@@ -1,5 +1,5 @@
 ---
-description: La clase CIM Card representa un tipo de contenedor físico que se puede conectar a otra tarjeta o placa de hospedaje, o bien es una placa de hospedaje o placa base en \_ un chasis.
+description: La clase cim card representa un tipo de contenedor físico que se puede conectar a otra tarjeta o placa de hospedaje, o bien es en sí una placa de hospedaje o placa base en \_ un chasis.
 ms.assetid: edbbfe43-c8e8-4cde-9507-e0a248c15ca7
 ms.tgt_platform: multiple
 title: CIM_Card clase
@@ -41,19 +41,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9ea55b96fda6493d0f0790c3a75e5a4876131bab686b0f8aef1101dc98674f61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b10478e5d0e34020f64d8775e857d9fa6af94d11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119284525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062749"
 ---
 # <a name="cim_card-class"></a>Cim \_ Card (clase)
 
-La **clase CIM \_ Card** representa un tipo de contenedor físico que se puede conectar a otra tarjeta o placa de hospedaje, o bien es una placa de hospedaje o placa base en un chasis. Esta clase incluye cualquier paquete capaz de transportar señales y proporcionar un punto de montaje para componentes físicos, como chips u otros paquetes físicos, como otras tarjetas.
+La **clase \_ cim card** representa un tipo de contenedor físico que se puede conectar a otra tarjeta o placa de hospedaje, o bien es en sí una placa de hospedaje o placa base en un chasis. Esta clase incluye cualquier paquete capaz de transportar señales y proporcionar un punto de montaje para componentes físicos, como chips u otros paquetes físicos, como otras tarjetas.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -95,9 +95,9 @@ class CIM_Card : CIM_PhysicalPackage
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ CIM Card** tiene estos tipos de miembros:
+La **clase \_ Cim Card** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
@@ -110,7 +110,7 @@ La **clase CIM \_ Card** tiene estos métodos.
 
 | Método                                                        | Descripción                                                                                                                                    |
 |:--------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IsCompatible**](iscompatible-method-in-class-cim-card.md) | Comprueba si el elemento físico al que se hace referencia puede estar contenido o insertado en el paquete físico. No implementado por WMI.<br/> |
+| [**IsCompatible**](iscompatible-method-in-class-cim-card.md) | Comprueba si el elemento físico al que se hace referencia puede contener o insertarse en el paquete físico. Wmi no implementa .<br/> |
 
 
 
@@ -149,12 +149,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ Clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -221,7 +221,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** esta tarjeta es una placa base o, de forma más genérica, un placa base en un chasis.
+Si **es TRUE,** esta tarjeta es una placa base o, de forma más genérica, una placa base en un chasis.
 
 </dd> <dt>
 
@@ -270,9 +270,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de la organización responsable de generar el elemento físico. Para obtener más información, vea la **propiedad Vendor** del [**producto CIM \_**](cim-product.md).
+Nombre de la organización responsable de generar el elemento físico. Para obtener más información, vea la **propiedad Vendor** del [**producto \_ CIM.**](cim-product.md)
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -290,7 +290,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Nombre por el que se suele conocer el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -303,7 +303,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -321,13 +321,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Datos adicionales, más allá de la información de etiquetas de recurso, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento , que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y es único y se puede usar como clave de elemento, esta propiedad sería NULL y los datos de código de barras se usarían como clave de clase en la **propiedad Tag.**
+Datos adicionales, más allá de la información de etiquetas de recurso, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento, que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y es único y se puede usar como clave de elemento, esta propiedad sería NULL y los datos del código de barra se usarían como clave de clase en la **propiedad Tag.**
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
-**Partnumber**
+**PartNumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -339,7 +339,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Número de pieza asignado por la organización responsable de producir o fabricación del elemento físico.
+Número de parte asignado por la organización responsable de producir o crear el elemento físico.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
@@ -369,7 +369,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** el paquete está diseñado para su entrada y salida del contenedor físico en el que se encuentra normalmente, sin afectar a la función del empaquetado general. Un paquete se considera extraíble incluso si la alimentación debe estar desactivada para realizar la eliminación. Si la energía puede estar encendido y el paquete quitado, el elemento es extraíble y se puede intercambiar en caliente. Por ejemplo, un chip de procesador actualizable es extraíble.
+Si **es TRUE,** el paquete está diseñado para su entrada y salida del contenedor físico en el que se encuentra normalmente, sin afectar a la función del empaquetado general. Un paquete se considera extraíble incluso si la alimentación debe estar desactivada para realizar la eliminación. Si la alimentación puede estar encendido y se ha quitado el paquete, el elemento es extraíble y se puede intercambiar en caliente. Por ejemplo, un chip de procesador actualizable es extraíble.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
@@ -384,7 +384,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** es posible reemplazar el elemento por uno físicamente diferente. Por ejemplo, algunos sistemas informáticos permiten actualizar el chip del procesador principal a una de las especificaciones de reloj más altas. En este caso, se dice que el procesador es reemplazable. Todos los componentes extraíbles son intrínsecamente reemplazables.
+Si **es TRUE,** es posible reemplazar el elemento por uno físicamente diferente. Por ejemplo, algunos sistemas informáticos permiten que el chip del procesador principal se actualice a una de las especificaciones de reloj más altas. En este caso, se dice que el procesador es reemplazable. Todos los componentes extraíbles son inherentemente reemplazables.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
@@ -415,7 +415,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE**, para funcionar correctamente, se requiere al menos una placa auxiliar o una tarjeta auxiliar.
+Si **es TRUE**, para funcionar correctamente, se requiere al menos un placa o una tarjeta auxiliar.
 
 </dd> <dt>
 
@@ -431,7 +431,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Número asignado por el fabricante usado para identificar el elemento físico.
+Número asignado por el fabricante que se usa para identificar el elemento físico.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
@@ -480,7 +480,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Card**.**RequirementsDescription**")
 </dt> </dl>
 
-Si **es TRUE,** la tarjeta es físicamente única de otras tarjetas del mismo tipo y, por lo tanto, requiere una ranura especial. Por ejemplo, una tarjeta de doble ancho requiere dos ranuras. Otro ejemplo es cuando una tarjeta determinada se puede usar para la misma función general que otras tarjetas, pero requiere una ranura especial (extra larga, por ejemplo); mientras que otras tarjetas se pueden colocar en cualquier ranura disponible. Si **es TRUE,** la **propiedad RequirementsDescription** correspondiente debe especificar la naturaleza de la unidad o el propósito de la tarjeta.
+Si **es TRUE,** la tarjeta es físicamente única de otras tarjetas del mismo tipo y, por lo tanto, requiere una ranura especial. Por ejemplo, una tarjeta de doble ancho requiere dos ranuras. Otro ejemplo es cuando se puede usar una tarjeta determinada para la misma función general que otras tarjetas, pero requiere una ranura especial (extra larga, por ejemplo); mientras que otras tarjetas se pueden colocar en cualquier ranura disponible. Si **es TRUE,** la **propiedad RequirementsDescription** correspondiente debe especificar la naturaleza de la unidad o el propósito de la tarjeta.
 
 </dd> <dt>
 
@@ -498,7 +498,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -529,7 +529,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -543,14 +543,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -601,10 +601,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**\_ Clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identifica de forma única el elemento físico y actúa como clave del elemento. Esta propiedad puede contener información, como datos de número de serie o etiqueta de recurso. La clave de [**CIM \_ PhysicalElement**](cim-physicalelement.md) se coloca muy alta en la jerarquía de objetos para identificar de forma independiente el hardware o la entidad, independientemente de la ubicación física en (o en) gabinetes, adaptadores, y así sucesivamente. Por ejemplo, un componente extraíble que se puede intercambiar en caliente se puede tomar de su paquete que contiene (ámbito) y no usarse temporalmente. El objeto sigue existiendo e incluso se puede insertar en un contenedor de ámbito diferente. La clave de un elemento físico es una cadena arbitraria que se define independientemente de la ubicación o la jerarquía orientada a la ubicación.
+Identifica de forma única el elemento físico y actúa como clave del elemento. Esta propiedad puede contener información, como datos de etiqueta de recurso o número de serie. La clave de [**CIM \_ PhysicalElement**](cim-physicalelement.md) se coloca muy alta en la jerarquía de objetos para identificar de forma independiente el hardware o la entidad, independientemente de la colocación física en (o en) gabinetes, adaptadores, y así sucesivamente. Por ejemplo, un componente extraíble que se puede intercambiar en caliente se puede tomar de su paquete que contiene (ámbito) y no se puede usar temporalmente. El objeto sigue existiendo e incluso se puede insertar en un contenedor de ámbito diferente. La clave de un elemento físico es una cadena arbitraria que se define independientemente de la ubicación o la jerarquía orientada a la ubicación.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
@@ -640,7 +640,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("libras")
 </dt> </dl>
 
-Peso del paquete físico, en libras.
+Peso del paquete físico, en kilos.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
@@ -664,19 +664,19 @@ Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM Card** se deriva de CIM [**\_ PhysicalPackage**](cim-physicalpackage.md).
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de la tarjeta CIM , vea [Clases Win32](win32-provider.md). **\_**
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de la **\_ tarjeta CIM**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -686,7 +686,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

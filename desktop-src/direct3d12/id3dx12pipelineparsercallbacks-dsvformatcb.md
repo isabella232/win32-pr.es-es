@@ -1,6 +1,6 @@
 ---
 title: Método ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12.h) (DSV)
-description: Llama a la devolución de llamada de subobjeto de formato de valor de galería de símbolos de profundidad de un objeto que implementa esta interfaz.
+description: Llama a la devolución de llamada del subobjeto depth stencil value format de un objeto que implementa esta interfaz.
 ms.assetid: BDD3AB24-34C6-41C8-984D-78A45867BF24
 keywords:
 - Método DepthStencilStateCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d72a7501c57af515a9c9e26a435aaae02ae3ebd4cdb260f37800fda1be3d720e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fd40b138c357c143deafffe01252b3c8b3e87cda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060797"
 ---
 # <a name="id3dx12pipelineparsercallbacks-depthstencilstatecb-method-d3dx12h-for-depth-stencil-value"></a>Método ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12.h) para el valor de galería de símbolos de profundidad
 
-Llama a la devolución de llamada de subobjeto de formato de valor de galería de símbolos de profundidad de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada del subobjeto depth stencil value format de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ No devuelve nada.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

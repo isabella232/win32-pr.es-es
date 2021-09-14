@@ -1,6 +1,6 @@
 ---
 title: HDM_GETORDERARRAY mensaje (Commctrl.h)
-description: Obtiene el orden de izquierda a derecha actual de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o usar la macro Header \_ GetOrderArray.
+description: Obtiene el orden actual de izquierda a derecha de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o usar la \_ macro GetOrderArray de encabezado.
 ms.assetid: b287d3c1-ae61-41a4-a884-dc008eb24ad8
 keywords:
 - HDM_GETORDERARRAY controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f374424fe3f1d84c4919c26948486a9bae1660072975556aecaac4b08b85b33b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e334b0023ad3441c20048273e9bc58c1b25622b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061992"
 ---
 # <a name="hdm_getorderarray-message"></a>Mensaje \_ GETORDERARRAY de HDM
 
-Obtiene el orden de izquierda a derecha actual de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o usar la macro [**Header \_ GetOrderArray.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray)
+Obtiene el orden actual de izquierda a derecha de los elementos de un control de encabezado. Puede enviar este mensaje explícitamente o usar la macro [**\_ GetOrderArray de**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray) encabezado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,9 +47,9 @@ Puntero a una matriz de enteros que reciben los valores de índice de los elemen
 
 Devuelve un valor distinto de cero si se realiza correctamente y el búfer de *lParam* recibe el número de elemento para cada elemento del control de encabezado en el orden en que aparecen de izquierda a derecha. De lo contrario, el mensaje devuelve cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El número de elementos de *lParam* se especifica en *wParam* y debe ser igual al número de elementos del control . Por ejemplo, el siguiente fragmento de código reservará suficiente memoria para contener los valores de índice.
+El número de elementos *de lParam* se especifica en *wParam* y debe ser igual al número de elementos del control . Por ejemplo, el fragmento de código siguiente reservará suficiente memoria para contener los valores de índice.
 
 
 ```
@@ -78,7 +78,7 @@ MessageBox(hwnd, "Out of memory.","Error", MB_OK);
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

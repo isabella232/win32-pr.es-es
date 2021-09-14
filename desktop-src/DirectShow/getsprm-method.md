@@ -4,12 +4,12 @@ ms.assetid: c6177f43-2809-4ef2-bc94-ac9a28f94621
 title: Método GetSPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e254d23f0d70890516bc5655f6c4ea38133a8a3733360955cabf9040207f3afd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc8b6898902eda55e0e877878343a25d82d03660
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119536995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061106"
 ---
 # <a name="getsprm-method"></a>Método GetSPRM
 
@@ -39,9 +39,9 @@ Especifica el registro cuyo valor desea recuperar como entero. El entero debe os
 
 Devuelve un valor entero que representa el contenido del registro especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El disco controla los registros de parámetros del sistema (SPRM). Una aplicación de reproductor no necesita acceder a estos registros para ninguna funcionalidad de navegación estándar. Los SPRM representan el estado del reproductor. Cada una tiene un significado, establecido por preferencias del usuario, comandos de disco y otras repeticiones sobre las que una aplicación no tiene control directo. Una aplicación puede leer estos registros, pero no puede escribir en ellos. Para usar estos registros de forma eficaz, probablemente necesitará un conocimiento más detallado de los comandos de navegación de DVD que se proporciona en esta documentación. En la tabla siguiente se muestra el contenido de cada registro. Para obtener información más detallada sobre el contenido del registro, vea [ **IDvdInfo2::GetAllSPRMs**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getallsprms)
+El disco controla los registros de parámetros del sistema (SPRM). Una aplicación de reproductor no necesita acceder a estos registros para ninguna funcionalidad de navegación estándar. Los SPRM representan el estado del reproductor. Cada uno tiene un significado, establecido por preferencias de usuario, comandos de disco y otras repeticiones sobre las que una aplicación no tiene control directo. Una aplicación puede leer estos registros, pero no puede escribir en ellos. Para usar estos registros de forma eficaz, probablemente necesitará un conocimiento más detallado de los comandos de navegación de DVD que se proporciona en esta documentación. En la tabla siguiente se muestra el contenido de cada registro. Para obtener información más detallada sobre el contenido del registro, vea [ **IDvdInfo2::GetAllSPRMs.**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getallsprms)
 
 
 
@@ -53,19 +53,19 @@ El disco controla los registros de parámetros del sistema (SPRM). Una aplicaci�
 | 3        | Número de ángulo actual            |
 | 4        | Número de título actual            |
 | 5        | Número de título                    |
-| 6        | Número de PGC                      |
+| 6        | Número PGC                      |
 | 7        | Número de capítulo actual (PTT)    |
 | 8        | Número de botón resaltado       |
 | 9        | Temporizador de navegación                |
 | 10       | Salto PGC para navegación. timer         |
-| 11       | Modo de presentación de audio de Audio de Audio de Audio |
+| 11       | Modo de presentación audio audio de audio |
 | 12       | Código de país o región de PML         |
-| 13       | Pml                             |
+| 13       | PML                             |
 | 14       | Configuración de vídeo                   |
 | 15       | Funcionalidad de audio                |
 | 16       | Idioma de audio                  |
 | 17       | Extensión de lenguaje de audio        |
-| 18       | Lenguaje de subaspección             |
+| 18       | Lenguaje de subimagen             |
 | 19       | Extensión de lenguaje de subimagen   |
 | 20       | Código de región del reproductor              |
 | 21       | Reservada                        |
@@ -76,7 +76,7 @@ El disco controla los registros de parámetros del sistema (SPRM). Una aplicaci�
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

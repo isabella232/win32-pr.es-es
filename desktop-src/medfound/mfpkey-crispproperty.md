@@ -1,19 +1,19 @@
 ---
-description: Especifica una representación numérica del equilibrio entre la suavización del movimiento y la calidad de la imagen de la salida del códec.
+description: Especifica una representación numérica del equilibrio entre la subilidad del movimiento y la calidad de la imagen de la salida del códec.
 ms.assetid: 63915450-71c5-4097-91d7-5817249c1cda
 title: MFPKEY_CRISP propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 177ae5e9d1c8a9aba359000e04483c8e45c44f823c9db924155dd5ef3d5989a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04ff20b37bcedf3995ec3e16178b823c40b352ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119954265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257647"
 ---
-# <a name="mfpkey_crisp-property"></a>Propiedad \_ MFPKEY DE CRISP
+# <a name="mfpkey_crisp-property"></a>Propiedad MFPKEY \_ DE CRISP
 
-Especifica una representación numérica del equilibrio entre la suavización del movimiento y la calidad de la imagen de la salida del códec.
+Especifica una representación numérica del equilibrio entre la subilidad del movimiento y la calidad de la imagen de la salida del códec.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,11 +27,11 @@ VT \_ I4
 
 75
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este valor entero puede oscilar entre 0 y 100. Cuanto mayor sea el valor, más optimizará el códec la codificación para la calidad de imagen de los fotogramas individuales, lo que normalmente reduce la suavizado del movimiento.
+Este valor entero puede oscilar entre 0 y 100. Cuanto mayor sea el valor, más optimizará el códec la codificación para la calidad de la imagen de fotogramas individuales, lo que normalmente reduce la subilidad del movimiento.
 
-Esta propiedad debe establecerse solo para la codificación de velocidad de bits constante (CBR). Las optimizaciones para la codificación de velocidad de bits variable (VBR) funcionan de forma diferente.
+Esta propiedad solo debe establecerse para la codificación de velocidad de bits constante (CBR). Las optimizaciones para la codificación de velocidad de bits variable (VBR) funcionan de forma diferente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,13 +39,13 @@ Esta propiedad debe establecerse solo para la codificación de velocidad de bits
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

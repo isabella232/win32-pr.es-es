@@ -4,12 +4,12 @@ ms.assetid: ff91fe27-9773-4185-bc1e-57e897be3821
 title: Identificadores e identificadores de subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6058388f450b4b44c371fc26b132ea785b22c29bc0a2fd86875f563371608512
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 501d449bdb34d158ad14e52409967d4ef17f62f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062792"
 ---
 # <a name="thread-handles-and-identifiers"></a>Identificadores e identificadores de subprocesos
 

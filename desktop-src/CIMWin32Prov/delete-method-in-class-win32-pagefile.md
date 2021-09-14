@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 76101812d3c74dd9d4769706d6b6e1bde9470d530c6d88f2a60331a8666bb3d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b35751633387f3db1d7dccbf13694f56717a1d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118419459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061552"
 ---
 # <a name="delete-method-of-the-win32_pagefile-class"></a>Método Delete de la clase PageFile de Win32 \_
 
 El **método eliminar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -141,7 +141,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

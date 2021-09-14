@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: a7424f62008e15feb538df7a6a27745dda17bf6ace4612218608f8e509e75e59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d19bed823f5385533dfc938eb9f6013b4a5640c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967284"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256742"
 ---
-# <a name="iinkanalyzerfindinkleafnodesforstrokes-method"></a>IInkAnalyzer::FindInkLeafNodesForStrokes (método)
+# <a name="iinkanalyzerfindinkleafnodesforstrokes-method"></a>Método IInkAnalyzer::FindInkLeafNodesForStrokes
 
 Recupera los nodos hoja de entrada de lápiz que contienen los trazos especificados.
 
@@ -66,7 +66,7 @@ Colección de objetos [**IContextNode**](icontextnode.md) que contienen todos lo
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodesFound* cuando ya no necesite usar el objeto .
@@ -85,12 +85,12 @@ Si ningún nodo contiene los trazos especificados, se devuelve una colección [*
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

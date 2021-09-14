@@ -4,18 +4,18 @@ description: IAgentCharacterEx
 ms.assetid: 8defc836-cc54-40c7-8afc-ec90f941861b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04e4b6661641ebf472001e502a7fec3042332ea039ec94c01349d58bbe93346d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f92a9f9c39804d6b5d3ac777457fff5b7f03823c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258028"
 ---
 # <a name="iagentcharacterex"></a>IAgentCharacterEx
 
 \[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-**IAgentCharacterEx** se deriva de la [**interfaz IAgentCharacter.**](iagentcharacter.md) Incluye todos los **métodos IAgentCharacter,** así como proporciona acceso a funciones adicionales.
+**IAgentCharacterEx** deriva de la [**interfaz IAgentCharacter.**](iagentcharacter.md) Incluye todos los **métodos IAgentCharacter,** así como proporciona acceso a funciones adicionales.
 
 **Métodos en orden de Vtable**
 
@@ -27,9 +27,9 @@ ms.locfileid: "119961965"
 | [**SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md)   | Establece si el servidor muestra automáticamente el menú emergente del carácter.    |
 | [**GetAutoPopupMenu**](iagentcharacterex--getautopopupmenu.md)   | Devuelve si el servidor muestra automáticamente el menú emergente del carácter. |
 | [**GetHelpFileName**](iagentcharacterex--gethelpfilename.md)     | Devuelve el nombre de archivo de ayuda del carácter.                                   |
-| [**SetHelpFileName**](iagentcharacterex--sethelpfilename.md)     | Establece el nombre de archivo de la Ayuda para el carácter.                                      |
+| [**SetHelpFileName**](iagentcharacterex--sethelpfilename.md)     | Establece el nombre de archivo de ayuda del carácter.                                      |
 | [**SetHelpModeOn**](iagentcharacterex--sethelpmodeon.md)         | Establece el modo de Ayuda en .                                                             |
-| [**GetHelpModeOn**](iagentcharacterex--gethelpmodeon.md)         | Devuelve si el modo de Ayuda está en .                                               |
+| [**GetHelpModeOn**](iagentcharacterex--gethelpmodeon.md)         | Devuelve si el modo de Ayuda está en.                                               |
 | [**SetHelpContextID**](iagentcharacterex--sethelpcontextid.md)   | Establece helpContextID para el carácter.                                      |
 | [**GetHelpContextID**](iagentcharacterex--gethelpcontextid.md)   | Devuelve el HelpContextID del carácter.                                   |
 | [**GetActive**](iagentcharacterex--getactive.md)                 | Devuelve el estado activo del carácter.                                    |

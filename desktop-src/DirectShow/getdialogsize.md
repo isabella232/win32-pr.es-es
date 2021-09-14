@@ -1,5 +1,5 @@
 ---
-description: La función GetDialogSize recupera el tamaño de un cuadro de diálogo de recursos.
+description: La función GetDialogSize recupera el tamaño de un cuadro de diálogo de recurso.
 ms.assetid: b6c42f96-0381-493a-9503-f3bd4c6a8e1e
 title: Función GetDialogSize (Wxutil.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f1f2631e169549895a1f74ce571b2abfeeee8cd77ac7cb3c4dfc5aa6913a6d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34eff1882306c85446f7cc7708efea3b17fcf7e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061142"
 ---
 # <a name="getdialogsize-function"></a>Función GetDialogSize
 
-La **función GetDialogSize** recupera el tamaño de un cuadro de diálogo de recursos.
+La **función GetDialogSize** recupera el tamaño de un cuadro de diálogo de recurso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ BOOL WINAPI GetDialogSize(
 *iResourceID* 
 </dt> <dd>
 
-Identificador de recursos del cuadro de diálogo.
+Identificador de recurso del cuadro de diálogo.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Puntero al procedimiento del cuadro de diálogo.
 *lParam* 
 </dt> <dd>
 
-Valor pasado en el mensaje WM \_ INITDIALOG enviado al cuadro de diálogo temporal justo después de crearlo.
+Valor pasado en el mensaje \_ WM INITDIALOG enviado al cuadro de diálogo temporal justo después de crearlo.
 
 </dd> <dt>
 
@@ -75,11 +75,11 @@ Puntero a una **estructura SIZE** que recibe las dimensiones del cuadro de diál
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se encontró el recurso de cuadro de diálogo o **FALSE** en caso contrario.
+Devuelve **TRUE si** se encontró el recurso del cuadro de diálogo o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las páginas de propiedades pueden usar esta función para devolver el tamaño de presentación real que requieren. La mayoría de las páginas de propiedades son cuadros de diálogo y, como tales, tienen plantillas de cuadro de diálogo almacenadas en archivos de recursos. Las plantillas usan unidades de cuadro de diálogo que no se asignan directamente a píxeles de pantalla. Sin embargo, la función [**GetPageInfo**](cbasepropertypage-getpageinfo.md) de una página de propiedades debe devolver el tamaño de presentación real en píxeles. La página de propiedades puede llamar `GetDialogSize` a para calcular el tamaño de presentación.
+Las páginas de propiedades pueden usar esta función para devolver el tamaño de presentación real que requieren. La mayoría de las páginas de propiedades son cuadros de diálogo y, como tales, tienen plantillas de cuadro de diálogo almacenadas en archivos de recursos. Las plantillas usan unidades de cuadro de diálogo que no se asignan directamente a píxeles de pantalla. Sin embargo, la función [**GetPageInfo**](cbasepropertypage-getpageinfo.md) de una página de propiedades debe devolver el tamaño de presentación real en píxeles. La página de propiedades puede `GetDialogSize` llamar a para calcular el tamaño de presentación.
 
 Esta función crea una instancia temporal del cuadro de diálogo. Para evitar que el cuadro de diálogo aparezca en la pantalla, la plantilla de cuadro de diálogo del archivo de recursos no debe tener una propiedad WS \_ VISIBLE.
 
@@ -94,7 +94,7 @@ Esta función crea una instancia temporal del cuadro de diálogo. Para evitar qu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

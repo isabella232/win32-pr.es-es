@@ -16,31 +16,31 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2462843f9ad42793a9e0666dd96aaf7387a1f5f0f1749f97cc4e2ca4d3ed051a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e41fbff07a9bdeb8990bbf3ddba6d9f7455d1bad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120076164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061244"
 ---
 # <a name="ctransinplaceoutputpin-class"></a>CTransInPlaceOutputPin (clase)
 
 ![ctransinplaceoutputpin (jerarquía de clases)](images/tsip02.png)
 
-La `CTransInPlaceOutputPin` clase implementa un pin de salida que usa la clase [**CTransInPlaceFilter.**](ctransinplacefilter.md)
+La `CTransInPlaceOutputPin` clase implementa un pin de salida utilizado por la clase [**CTransInPlaceFilter.**](ctransinplacefilter.md)
 
 Normalmente, no es necesario derivar de esta clase. Si lo hace, debe invalidar el método [**CTransInPlaceFilter::GetPin**](ctransinplacefilter-getpin.md) del filtro para crear instancias de la clase derivada.
 
 
 
-| Variables miembro protegidas                                                      | Descripción                                          |
+| Variables de miembro protegido                                                      | Descripción                                          |
 |---------------------------------------------------------------------------------|------------------------------------------------------|
 | [**m \_ pTIPFilter**](ctransinplaceoutputpin-m-ptipfilter.md)                    | Puntero al filtro que creó este pin.         |
 | Métodos públicos                                                                  | Descripción                                          |
 | [**CTransInPlaceOutputPin**](ctransinplaceoutputpin-ctransinplaceoutputpin.md) | Método constructor.                                  |
 | [**CheckMediaType**](ctransinplaceoutputpin-checkmediatype.md)                 | Determina si el pin acepta un tipo de medio específico. |
 | [**SetAllocator**](ctransinplaceoutputpin-setallocator.md)                     | Especifica un asignador para la conexión.           |
-| [**ConnectedIMemInputPin**](ctransinplaceoutputpin-connectedimeminputpin.md)   | Recupera un puntero a la patilla de entrada de bajada.     |
+| [**ConnectedIMemInputPin**](ctransinplaceoutputpin-connectedimeminputpin.md)   | Recupera un puntero al pin de entrada de bajada.     |
 | [**PeekAllocator**](ctransinplaceoutputpin-peekallocator.md)                   | Recupera un puntero al asignador del pin.          |
 | Métodos de IPin                                                                    | Descripción                                          |
 | [**EnumMediaTypes**](ctransinplaceoutputpin-enummediatypes.md)                 | Enumera los tipos de medios preferidos del pin.          |

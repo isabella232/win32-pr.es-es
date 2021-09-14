@@ -5,11 +5,11 @@ title: System.Contact.DisplayHomePhoneNumbers
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ecb92d9b95a493a342c48d0f1671ae5502f8c6ab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257404"
 ---
 # <a name="systemcontactdisplayhomephonenumbers"></a>System.Contact.DisplayHomePhoneNumbers
 
@@ -28,7 +28,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

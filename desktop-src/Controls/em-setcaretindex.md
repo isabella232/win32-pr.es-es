@@ -1,6 +1,6 @@
 ---
 title: EM_SETCARETINDEX mensaje (CommCtrl.h)
-description: Establece el valor de índice de base cero de la posición del cursor de cursor en un control de edición.
+description: Establece el valor de índice de base cero de la posición del elemento de diálogo en un control de edición.
 ms.assetid: 5cb7ff1e-18e8-49c8-8072-872cf32b18b0
 keywords:
 - EM_SETCARETINDEX controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 8b80202ed5294828441abcfa66a914514e31944902e52926de7fa3af92794b46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea0c49ebad91532e82dc7e96facb62f38b2abfa1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062132"
 ---
-# <a name="em_setcaretindex-message"></a>Mensaje \_ EM SETCARETINDEX
+# <a name="em_setcaretindex-message"></a>Mensaje \_ SETCARETINDEX DE EM
 
-Establece el valor de índice de base cero de la posición del cursor de cursor en un control de edición.
+Establece el valor de índice de base cero de la posición del elemento de diálogo en un control de edición.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece el valor de índice de base cero de la posición del cursor de cursor 
 *wParam* 
 </dt> <dd>
 
-Nuevo valor de índice de base cero de la posición del caret.
+Nuevo valor de índice de base cero de la posición del cursor de cursor.
 
 </dd> <dt>
 
@@ -43,23 +43,23 @@ Nuevo valor de índice de base cero de la posición del caret.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el índice está fuera del intervalo del texto en un control de edición, el índice se ajustará para que quepa dentro del intervalo del texto.
+Si el índice está fuera del intervalo del texto de un control de edición, el índice se ajustará para que quepa dentro del intervalo del texto.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio 1809 \[\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

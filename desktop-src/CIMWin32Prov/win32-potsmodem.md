@@ -96,12 +96,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e79cb842acd2063522f901d050c3fab6db3251a39a212a234f062935cc30b87c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ec9634c5ee86d6819bf8f7a45dd521276565903
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061489"
 ---
 # <a name="win32_potsmodem-class"></a>Clase \_ WIN32 POTSModem
 
@@ -198,7 +198,7 @@ class Win32_POTSModem : CIM_PotsModem
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ WIN32 POTSModem** tiene estos tipos de miembros:
 
@@ -213,7 +213,7 @@ La **clase \_ WIN32 POTSModem** tiene estos métodos.
 
 | Método            | Descripción                                                                                                                                                                            |
 |:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Reset**         | Sin implementar. Para implementar este método, vea el [**método Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ PotsModem**](cim-potsmodem.md).<br/>                 |
+| **Reset**         | Sin implementar. Para implementar este método, vea el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ PotsModem**](cim-potsmodem.md).<br/>                 |
 | **SetPowerState** | Sin implementar. Para implementar este método, vea el [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) [**en CIM \_ PotsModem**](cim-potsmodem.md).<br/> |
 
 
@@ -705,7 +705,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -840,7 +840,7 @@ Error en el dispositivo.
 
 </dt> <dd>
 
-El dispositivo no puede encontrar suficientes recursos gratuitos para usarlos.
+El dispositivo no encuentra suficientes recursos gratuitos para usarlos.
 
 </dd> <dt>
 
@@ -868,18 +868,18 @@ El dispositivo no puede funcionar correctamente hasta que se reinicie el equipo.
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de nueva enumeración.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de enumeración.** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente debido a un posible problema de nueva enumeración.
+El dispositivo no funciona correctamente debido a un posible problema de enumeración.
 
 </dd> <dt>
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificar todos los recursos que usa este dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows puede identificar todos los recursos que usa este dispositivo.** (16)
 
 
 </dt> <dd>
@@ -901,12 +901,12 @@ El dispositivo solicita un tipo de recurso desconocido.
 
 <span id="Reinstall_the_drivers_for_this_device."></span><span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>
 
-<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores de este dispositivo.** (18)
+<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores para este dispositivo.** (18)
 
 
 </dt> <dd>
 
-Los controladores de dispositivos deben volver a instalarse.
+Los controladores de dispositivo deben volver a instalarse.
 
 </dd> <dt>
 
@@ -924,7 +924,7 @@ Los controladores de dispositivos deben volver a instalarse.
 
 </dt> <dd>
 
-El Registro puede estar dañado.
+Es posible que el Registro esté dañado.
 
 </dd> <dt>
 
@@ -935,7 +935,7 @@ El Registro puede estar dañado.
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
+Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
 
 </dd> <dt>
 
@@ -957,7 +957,7 @@ El dispositivo está deshabilitado.
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware.
+Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware.
 
 </dd> <dt>
 
@@ -1029,12 +1029,12 @@ El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso IRQ que está usando otro dispositivo.
+El dispositivo usa un recurso IRQ que usa otro dispositivo.
 
 </dd> <dt>
 
@@ -1065,7 +1065,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1085,7 +1085,7 @@ Cadena de inicialización del módem. Esta propiedad se forma de cadenas de coma
 
 </dd> <dt>
 
-**CountriesSupported**
+**Países Admitidos**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **matriz de** cadenas
@@ -1124,12 +1124,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [ **Clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicalfile.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -1157,14 +1157,14 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb)")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB")**](/windows/win32/api/winbase/ns-winbase-dcb)
 </dt> </dl>
 
-Configuración de control para un dispositivo de comunicaciones serie, en este caso, el dispositivo de módem.
+Configuración de control para un dispositivo de comunicaciones serie, en este caso, el dispositivo módem.
 
 </dd> <dt>
 
-**Predeterminado**
+**Valor predeterminado**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **matriz uint8**
@@ -1176,7 +1176,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Default")
 </dt> </dl>
 
-Si **es TRUE,** este módem DE ACCESO remoto es el módem predeterminado en el sistema informático que ejecuta Windows.
+Si **es TRUE,** este módem de POTS es el módem predeterminado en el sistema informático que ejecuta Windows.
 
 </dd> <dt>
 
@@ -1210,9 +1210,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("DeviceId"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Identificador único de este módem DE JARS de otros dispositivos del sistema.
+Identificador único de este módem DE MACS de otros dispositivos del sistema.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1352,9 +1352,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** ahora se borra el error **notificado en LastErrorCode.**
+Si **es TRUE,** ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1370,7 +1370,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ErrorControl \_ Forced")
 </dt> </dl>
 
-Cadena de comandos que se usa para habilitar el control de corrección de errores al establecer una conexión. Esto aumenta la confiabilidad de la conexión.
+Cadena de comandos utilizada para habilitar el control de corrección de errores al establecer una conexión. Esto aumenta la confiabilidad de la conexión.
 
 Ejemplo: "+Q5S36=4S48=7"
 
@@ -1458,7 +1458,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ErrorControl \_ On")
 </dt> </dl>
 
-Cadena de comandos utilizada para habilitar el control de errores.
+Cadena de comandos que se usa para habilitar el control de errores.
 
 Ejemplo: "+Q5S36=7S48=7"
 
@@ -1475,7 +1475,7 @@ Tipo de acceso: solo lectura
 
 Más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1509,7 +1509,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| FlowControl \_ Off")
 </dt> </dl>
 
-Cadena de comandos utilizada para deshabilitar el control de flujo. Flow control consta de señales enviadas entre equipos que comprueban que ambos equipos están listos para transmitir o recibir datos.
+Cadena de comandos que se usa para deshabilitar el control de flujo. Flow control consta de señales enviadas entre equipos que comprueban que ambos equipos están listos para transmitir o recibir datos.
 
 Ejemplo: "&K0"
 
@@ -1628,7 +1628,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1747,7 +1747,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Desconcierto \_ de campana")
 </dt> </dl>
 
-Cadena de comandos que se usa para indicar al módem que use bebeles de 300 y 1200 bps.
+Cadena de comandos que se usa para indicar al módem que use bebeles para 300 y 1200 bps.
 
 Ejemplo: "B1"
 
@@ -1765,7 +1765,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ \| ClassException \_ CCITT")
 </dt> </dl>
 
-Cadena de comandos que se usa para indicar al módem que use las valoraciones CCITT para 300 y 1200 bps.
+Cadena de comando que se usa para indicar al módem que use las valoraciones CCITT para 300 y 1200 bps.
 
 Ejemplo: "B0"
 
@@ -1904,7 +1904,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1919,7 +1919,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| PortSubClass"), **Value** ("Parallel Port", "Serial Port", "Modem")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| PortSubClass"), **Value** ("Parallel Port", "Serial Port", "Módem")
 </dt> </dl>
 
 Definición del puerto usado para este módem.
@@ -1972,7 +1972,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **CIM \_ LogicalDevice.**
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -2026,7 +2026,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](../wmisdk/designing-managed-object-format--mof--classes.md)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](../wmisdk/designing-managed-object-format--mof--classes.md).
 
 </dd> <dt>
 
@@ -2099,7 +2099,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Propiedades de la clase de control Win32Registry \| SYSTEM \\ \\ CurrentControlSet") \\ \\ \\ \\ \|
 </dt> </dl>
 
-Lista de todas las propiedades (y sus valores) para este módem.
+Lista de todas las propiedades (y sus valores) de este módem.
 
 </dd> <dt>
 
@@ -2167,7 +2167,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ResponsesKeyName")
 </dt> </dl>
 
-Respuesta que este módem podría notificar al sistema operativo durante el proceso de conexión. Los dos primeros caracteres especifican el tipo de respuesta. Los dos segundos caracteres especifican información sobre la conexión que se realiza. Los dos segundos caracteres solo se usan para el progreso de la negociación o Conectar códigos de respuesta. Los ocho caracteres siguientes especifican la velocidad de línea de módem a módem negociada en bits por segundo (bps). Los caracteres representan un formato entero largo de 32 bits sin signo (byte y palabra invertida). Los últimos ocho caracteres indican que el módem cambia a un puerto diferente o a una velocidad de equipo de terminal de datos (DTE). Normalmente, este campo no se usa porque los módems hacen conexiones a una velocidad de puerto bloqueada, independientemente de la velocidad del módem al módem o del equipo de comunicaciones de datos (DCE).
+Respuesta que este módem podría notificar al sistema operativo durante el proceso de conexión. Los dos primeros caracteres especifican el tipo de respuesta. Los dos segundos caracteres especifican información sobre la conexión que se realiza. Los dos segundos caracteres solo se usan para el progreso de la negociación o Conectar de respuesta. Los ocho caracteres siguientes especifican la velocidad de línea de módem a módem negociada en bits por segundo (bps). Los caracteres representan un formato entero largo de 32 bits sin signo (byte y palabra invertida). Los últimos ocho caracteres indican que el módem cambia a un puerto diferente o a una velocidad de equipo de terminal de datos (DTE). Normalmente, este campo no se usa porque los módems hacen conexiones a una velocidad de puerto bloqueada, independientemente de la velocidad del módem al módem o del equipo de comunicaciones de datos (DCE).
 
 </dd> <dt>
 
@@ -2397,7 +2397,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -2428,7 +2428,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -2628,7 +2628,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ System**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Valor de la propiedad **CreationClassName del** equipo de ámbito.
@@ -2646,7 +2646,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ System**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
@@ -2724,7 +2724,7 @@ Ejemplo: "AT+V"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ WIN32 POTSModem** se deriva de [**CIM \_ PotsModem**](cim-potsmodem.md).
 
@@ -2742,7 +2742,7 @@ La **clase \_ WIN32 POTSModem** se deriva de [**CIM \_ PotsModem**](cim-potsmode
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

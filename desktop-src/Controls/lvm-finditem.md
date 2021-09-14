@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78cb7b9479f9dca1f1ef42e051b449d9fe7341fbce443b00dcfd06f26b8b0ffe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f1f7dfc19e263a6ab7ad29b5e514fa4e52c1a9ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119698715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061857"
 ---
 # <a name="lvm_finditem-message"></a>Mensaje \_ FINDITEM de LVM
 
@@ -53,11 +53,11 @@ Devuelve el índice del elemento si se realiza correctamente o -1 en caso contra
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LVM \_ FINDITEMW** (Unicode) y **LVM \_ FINDITEMA** (ANSI)<br/>                 |
 
 

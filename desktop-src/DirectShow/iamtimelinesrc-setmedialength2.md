@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 2541639841792b5f46f486e602dd8c870b8a90b3c327a7a8f06277c3fdbeb163
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4deb42cdd917fe7d79a420b15247b4bdf5ee52bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119256655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061087"
 ---
-# <a name="iamtimelinesrcsetmedialength2-method"></a>IamTimelineSrc::SetMediaLength2 (método)
+# <a name="iamtimelinesrcsetmedialength2-method"></a>Método IAMTimelineSrc::SetMediaLength2
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -79,14 +79,14 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

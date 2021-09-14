@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8fd56da36546365fecc053d679e31982c44efdfb85289c7fb64ce16651241f9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cb1443f54ab273ef6c114b8645e5322c24785f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062754"
 ---
 # <a name="cim_associatedmemory-class"></a>Cim \_ AssociatedMemory (clase)
 
 La **clase \_ AssociateMemory** de CIM asocia la memoria instalada o asociada, como la memoria caché con un dispositivo lógico.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_AssociatedMemory : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ AssociatedMemory de CIM** tiene estos tipos de miembros:
 
@@ -76,26 +76,26 @@ Memoria [**CIM \_ que**](cim-memory.md) describe la memoria instalada en un disp
 **Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ Cim LogicalDevice**
+Tipo de datos: **CIM \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ dispositivo lógico CIM**](cim-logicaldevice.md) que describe el dispositivo lógico.
+Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que describe el dispositivo lógico.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ AssociatedMemory** de CIM se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

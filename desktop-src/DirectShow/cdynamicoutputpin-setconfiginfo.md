@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 23b492eaf4b5f712a51132eefcceac12a772b17b8285d8c6edb1a6cec268b1c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0c14342a629a38a878649ac59d8f1f814874f12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062511"
 ---
 # <a name="cdynamicoutputpinsetconfiginfo-method"></a>Método CDynamicOutputPin.SetConfigInfo
 
@@ -61,7 +61,7 @@ Controlar a un evento que se señala cuando se detiene el filtro, o **NULL.**
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro debe llamar a este método cuando se une al gráfico de filtros. El administrador de gráficos de filtro **admite IGraphConfig.** Para el *parámetro hStopEvent,* cree un evento de restablecimiento manual. Cuando el filtro salga del gráfico de filtros, vuelva a llamar a este método **con NULL** para ambos parámetros.
 
@@ -76,7 +76,7 @@ El filtro debe llamar a este método cuando se une al gráfico de filtros. El ad
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

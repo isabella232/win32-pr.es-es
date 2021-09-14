@@ -4,12 +4,12 @@ ms.assetid: fe9dc266-5b12-479d-85cb-50cc6bb9d580
 title: Método Play (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97d4cea7dc53afc6a116ad052da9a4ca0d52c2e8687d99bde854d3f89fa60a9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f62323c9c86be476a35977dadf554bbfca3bca91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119633565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061008"
 ---
 # <a name="play-method-directshow"></a>Método Play (DirectShow)
 
@@ -28,11 +28,11 @@ MSWebDVD.Play()
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la reproducción está en pausa o detenida y [**EnableResetOnStop**](enableresetonstop-property.md) es true, la llamada a **Play** reanudará la reproducción a velocidad normal en la ubicación actual. Si se detiene la reproducción y **EnableResetOnStop** es false, la llamada a **Play** hará que el disco empiece a reproducirse al principio del primer título.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -2,7 +2,7 @@
 description: Cambia el nombre de una impresora.
 ms.assetid: afbef871-5153-4b9e-9ad3-4d271a497c37
 ms.tgt_platform: multiple
-title: Método RenamePrinter de la clase Win32_Printer
+title: Método RenamePrinter de la Win32_Printer clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,17 +15,17 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 6066dfd4280f7c43c9804933fb1ed5fb931bfa08
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062649"
 ---
-# <a name="renameprinter-method-of-the-win32_printer-class"></a>Método RenamePrinter de la \_ clase Printer de Win32
+# <a name="renameprinter-method-of-the-win32_printer-class"></a>Método RenamePrinter de la clase Printer de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **RenamePrinter** cambia el nombre de una impresora.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **RenamePrinter** cambia el nombre de una impresora.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 RenamePrinter(
 
 <dl> <dt>
 
-*NewPrinterName* \[ de\]
+*NewPrinterName* \[ En\]
 </dt> <dd>
 
 Nuevo nombre de impresora.
@@ -51,7 +51,7 @@ Nuevo nombre de impresora.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ Nombre de impresora no válido
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de VBScript se cambia el nombre de una impresora y su nombre de recurso compartido de impresora.
+En el ejemplo de VBScript siguiente se cambia el nombre de una impresora y su nombre compartido de impresora.
 
 
 ```VB
@@ -112,20 +112,20 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_Impresora Win32**](win32-printer.md)
+[**Impresora \_ Win32**](win32-printer.md)
 </dt> </dl>
 
  

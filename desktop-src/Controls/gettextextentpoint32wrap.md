@@ -3,7 +3,7 @@ title: Función GetTextExtentPoint32Wrap
 description: Calcula el ancho y alto de la cadena de texto especificada. Esta función encapsula una llamada a GetTextExtentPoint.
 ms.assetid: 156f9344-6071-451c-94c7-63f369a5573a
 keywords:
-- GetTextExtentPoint32Wrap , función Windows controles
+- GetTextExtentPoint32Wrap function Windows Controls
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0217d1708764ec33dd76ea35ff330f0d411697b5e9be3a6bd148377002a1f127
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6a0db92ad019950cf8be0a72260da75acc06779
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120047215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062011"
 ---
 # <a name="gettextextentpoint32wrap-function"></a>Función GetTextExtentPoint32Wrap
 
@@ -91,7 +91,7 @@ Para obtener información de error extendida, llame a [**GetLastError**](/window
 
 ## <a name="remarks"></a>Comentarios
 
-**GetTextExtentPoint32Wrap** no se exporta por nombre ni se declara en un archivo de encabezado público. Para usarlo, debe usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar ordinal 420 a ComCtl32.dll obtener un puntero de función.
+**GetTextExtentPoint32Wrap** no se exporta por nombre ni se declara en un archivo de encabezado público. Para usarlo, debe usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar ordinal 420 a ComCtl32.dll para obtener un puntero de función.
 
 Para obtener comentarios adicionales, [**vea GetTextExtentPoint**](/windows/desktop/api/wingdi/nf-wingdi-gettextextentpointa).
 

@@ -1,5 +1,5 @@
 ---
-description: El método estático de la clase WMI SetTcpMaxConnectRetransmissions se usa para establecer el número de intentos que TCP retransmitirá una solicitud de conexión antes de anularla.
+description: El método estático de la clase WMI SetTcpMaxConnectRetransmissions se usa para establecer el número de intentos que TCP retransmitirá una solicitud de conexión antes de anular.
 ms.assetid: cb0dfba3-4ef5-4052-94f3-f688a1c55d90
 ms.tgt_platform: multiple
 title: Método SetTcpMaxConnectRetransmissions de la Win32_NetworkAdapterConfiguration clase
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: de612b2ece1f186fef218d8642d8ce2e28154c159df1bb5203f0fe4692f6baab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 160d84c2a466bff34070a6dec4a34804d5a3a7fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061500"
 ---
 # <a name="settcpmaxconnectretransmissions-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpMaxConnectRetransmissions de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpMaxConnectRetransmissions** se usa para establecer el número de intentos que TCP retransmitirá una solicitud de conexión antes de anularla.
+El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpMaxConnectRetransmissions** se usa para establecer el número de intentos que TCP retransmitirá una solicitud de conexión antes de anular.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 SetTcpMaxConnectRetransmissions(
 *TcpMaxConnectRetransmissions* \[ En\]
 </dt> <dd>
 
-Número de intentos que TCP retransmitirá una solicitud de conexión antes de anularla. El intervalo válido para los valores es 0- 0xFFFFFFFF.
+El número de intentos TCP retransmitirá una solicitud de conexión antes de anularla. El intervalo válido para los valores es 0 - 0xFFFFFFFF.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no es necesario reiniciar.
+Finalización correcta, no se requiere reinicio.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco o red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -404,7 +404,7 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tiempo de espera de retransmisión inicial es de tres segundos y se duplica para cada intento sucesivo.
 
@@ -426,7 +426,7 @@ El ejemplo de VBScript Modificar el número máximo permitido de [retransmisione
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -436,7 +436,7 @@ El ejemplo de VBScript Modificar el número máximo permitido de [retransmisione
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

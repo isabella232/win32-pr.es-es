@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 39725fc4e4f5c9f02dcd092fddba632262c3b8a0aa85e27afd7df1afb9bb314c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f150ca0fafff6b250776a38b7ec68beb470e9d6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120107845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062319"
 ---
 # <a name="iamtimelinegetdefaulttransitionb-method"></a>IamTimeline::GetDefaultTransitionB (método)
 
@@ -56,7 +56,7 @@ Recibe un **valor BSTR** que representa el GUID de la transición predeterminada
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método asigna memoria para la cadena. La aplicación debe llamar **a SysFreeString para** liberar la memoria.
 
@@ -66,7 +66,7 @@ El método asigna memoria para la cadena. La aplicación debe llamar **a SysFree
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -81,14 +81,14 @@ El método asigna memoria para la cadena. La aplicación debe llamar **a SysFree
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IamTimeline (interfaz)**](iamtimeline.md)
+[**IAMTimeline (interfaz)**](iamtimeline.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

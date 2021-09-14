@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f0ba5e9f3fd3dc5e8f021e40c9cb70d95a136ae7c09d6f43826e436a32854170
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0954e9a113342217dd389c64ec4fc6c04a6f767
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120084275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062415"
 ---
 # <a name="cpersiststreamgetsoftwareversion-method"></a>Método CPersistStream.GetSoftwareVersion
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **DWORD que** contiene el número de versión. Cada vez que se cambia el formato de la secuencia, esta función se debe modificar para devolver un número mayor que antes.
+Devuelve un **DWORD que** contiene el número de versión. Cada vez que se cambia el formato de la secuencia, esta función debe modificarse para devolver un número mayor que antes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve un **DWORD que** contiene el número de versión. Cada vez que se cambi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

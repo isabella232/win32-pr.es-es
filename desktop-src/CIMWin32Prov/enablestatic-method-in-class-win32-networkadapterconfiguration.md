@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 03d2c7214f9cfb89b8efcb612f3bc07840448ff0eaf1b064556d2797b74d4822
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74a7b9ca8c8016cca5a78f2e7fe753f00398193e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062709"
 ---
-# <a name="enablestatic-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableStatic de la clase \_ NetworkAdapterConfiguration de Win32
+# <a name="enablestatic-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableStatic de la clase NetworkAdapterConfiguration de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableStatic** habilita el direccionamiento TCP/IP estático para el adaptador de red de destino. Como resultado, DHCP para este adaptador de red está deshabilitado.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -85,12 +85,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -333,11 +333,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -423,9 +423,9 @@ Bloqueo de escritura no habilitado. Para obtener más información, [**vea INetC
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al usar **EnableStatic** para cambiar la dirección IP del equipo remoto, mientras se conecta a través de ese adaptador, probablemente se producirá una conexión flexible con el equipo remoto y recibirá un mensaje de error rpc no disponible. (sin embargo, la configuración cambia). Para evitar este escenario, considere la posibilidad de cambiar la configuración de puerta de enlace o DNS antes de establecer la dirección IP del adaptador.
+Al usar **EnableStatic** para cambiar la dirección IP del equipo remoto, mientras se conecta a través de ese adaptador, es probable que la conexión al equipo remoto sea flexible y reciba un mensaje de error rpc no disponible. (sin embargo, la configuración cambia). Para evitar este escenario, considere la posibilidad de cambiar la configuración de puerta de enlace o DNS antes de establecer la dirección IP del adaptador.
 
 Cuando se **usa EnableStatic** para proporcionar a un adaptador una configuración de IP estática, la función devuelve un "81 - No se puede configurar el servicio DHCP" si el adaptador ya está configurado con una dirección estática. Sin embargo, la función sigue estableciendo correctamente con la nueva operación.
 
@@ -515,7 +515,7 @@ else
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

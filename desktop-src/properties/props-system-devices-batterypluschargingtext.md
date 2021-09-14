@@ -1,19 +1,19 @@
 ---
-description: La duración restante de la batería del dispositivo y el estado de la carga del dispositivo como una cadena.
+description: La duración restante de la batería del dispositivo y el estado de carga del dispositivo como una cadena.
 ms.assetid: b0a0600f-db2f-4220-8cd9-d5e71880b267
 title: System.Devices.BatteryPlusChargingText
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 60f569426a248444327690bd11727f0ce9c0f1ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104276893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257223"
 ---
 # <a name="systemdevicesbatterypluschargingtext"></a>System.Devices.BatteryPlusChargingText
 
-La duración restante de la batería del dispositivo y el estado de la carga del dispositivo como una cadena.
+La duración restante de la batería del dispositivo y el estado de carga del dispositivo como una cadena.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

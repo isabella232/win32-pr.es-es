@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de7c0da0d38da2563e0a34b5f7f894a23e7b55390fc9291321dbca46a7cb61fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76786290609026da44ada7cae962fd7d4b09c358
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061779"
 ---
 # <a name="cbasecontrolvideoput_sourcetop-method"></a>CBaseControlVideo.put \_ SourceTop (método)
 
@@ -61,13 +61,13 @@ Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno d
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Argumento no válido.<br/>                                                     |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | **Argumento de** puntero NULL.<br/>                                            |
 | <dl> <dt>**NOERROR**</dt> </dl>                | Correcto.<br/>                                                              |
-| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | No se puede realizar la operación porque las clavijas no están conectadas.<br/> |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | No se puede realizar la operación porque los pines no están conectados.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a través de la [**interfaz IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) El rectángulo de origen afecta a qué sección del origen de vídeo nativo aparecerá en la pantalla; el rectángulo de destino afecta a dónde aparecerá el vídeo cuando se reproduce. El rectángulo de destino es relativo al área de cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es coordenada (0,0).
 
@@ -82,7 +82,7 @@ Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

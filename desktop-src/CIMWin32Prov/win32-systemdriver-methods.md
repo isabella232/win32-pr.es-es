@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_SystemDriver métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ca1d5da13782c6eef893bf882b9c7fc4877a46b75ce7e559104fddbce8770e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eab4512b574d31f0889f92f48ce27add0453679f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117834146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061459"
 ---
 # <a name="win32_systemdriver-methods"></a>Métodos \_ de SystemDriver de Win32
 

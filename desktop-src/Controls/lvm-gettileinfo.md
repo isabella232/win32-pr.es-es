@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8141b3a39c47966348dfd823b557c1b0af4cca84a90ba979a358d6ac0eaa4757
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db5bfd085cd5cbaced0bf90b17e8862a6c0e159b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119079039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061813"
 ---
 # <a name="lvm_gettileinfo-message"></a>Mensaje \_ GETTILEINFO de LVM
 
@@ -39,7 +39,7 @@ Recupera información sobre un icono en un control de vista de lista.
 
 Valor devuelto no utilizado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La vista de mosaico es una nueva manera de organizar y mostrar elementos en un control de vista de lista. Las demás vistas son icono, icono pequeño, detalles y lista.
 
@@ -52,11 +52,11 @@ La vista de mosaico es una nueva manera de organizar y mostrar elementos en un c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: El archivo shortcutfile de Win32 \_&\# 32; La clase WMI representa archivos que son accesos directos a otros archivos, directorios y comandos.
+description: El archivo de acceso directo de Win32 \_&\# 32; La clase WMI representa archivos que son accesos directos a otros archivos, directorios y comandos.
 ms.assetid: 15973234-e418-4869-839e-a7c439512e4e
 ms.tgt_platform: multiple
 title: Win32_ShortcutFile clase
@@ -48,18 +48,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8f1951d4c52087330ac28e23e59e9403c67aff44bf7f9e94c63d3bfa7fc1bded
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b714b4c8119f92931235734664726123744064d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061482"
 ---
 # <a name="win32_shortcutfile-class"></a>Clase ShortcutFile de Win32 \_
 
-La clase WMI **\_ Win32 ShortcutFile** [representa](../wmisdk/retrieving-a-class.md) archivos que son accesos directos a otros archivos, directorios y comandos.
+La **clase WMI \_ ShortcutFile** [de](../wmisdk/retrieving-a-class.md) Win32 representa archivos que son accesos directos a otros archivos, directorios y comandos.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -104,7 +104,7 @@ class Win32_ShortcutFile : CIM_DataFile
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ShortcutFile de Win32** tiene estos tipos de miembros:
 
@@ -128,7 +128,7 @@ La **clase \_ ShortcutFile de Win32** tiene estos métodos.
 | [**Eliminar**](delete-method-in-class-win32-shortcutfile.md)                                           | Método de clase que elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto.<br/>                                                                                                                                   |
 | [**DeleteEx**](deleteex-method-in-class-win32-shortcutfile.md)                                       | Método de clase que elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto.<br/>                                                                                                                                   |
 | [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-shortcutfile.md)           | Método de clase que determina si el autor de la llamada tiene los permisos agregados especificados por el argumento Permission no solo en el objeto de archivo, sino en el recurso compartido en el que reside el archivo o directorio (si se encuentra en un recurso compartido).<br/> |
-| [**Renombrar**](rename-method-in-class-win32-shortcutfile.md)                                           | Método de clase que cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto.<br/>                                                                                                                                   |
+| [**Cambiar nombre**](rename-method-in-class-win32-shortcutfile.md)                                           | Método de clase que cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto.<br/>                                                                                                                                   |
 | [**TakeOwnerShip**](takeownership-method-in-class-win32-shortcutfile.md)                             | Método de clase que obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.<br/>                                                                                                                                     |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-win32-shortcutfile.md)                         | Método de clase que obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.<br/>                                                                                                                                     |
 | [**Descomprimir**](uncompress-method-in-class-win32-shortcutfile.md)                                   | Método de clase que descomprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto.<br/>                                                                                                                              |
@@ -156,10 +156,10 @@ Tipo de acceso: solo lectura
 Calificadores: [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Access Rights")
 </dt> </dl>
 
-Máscara de bits que representa los derechos de acceso necesarios para acceder o realizar operaciones específicas en el archivo. Para obtener valores de bits, [**vea File and Directory Access Rights Constants**](../wmisdk/file-and-directory-access-rights-constants.md).
+Máscara de bits que representa los derechos de acceso necesarios para acceder al archivo o realizar operaciones específicas en el archivo. Para obtener valores de bits, vea Constantes de derechos de [**acceso a archivos y directorios.**](../wmisdk/file-and-directory-access-rights-constants.md)
 
 > [!Note]  
-> En los volúmenes FAT, se devuelve el valor **\_ FULL ACCESS** en su lugar, lo que indica que no se ha establecido ninguna seguridad en el objeto .
+> En los volúmenes FAT, se devuelve el valor **\_ FULL ACCESS** en su lugar, lo que indica que no se ha establecido ninguna seguridad en el objeto.
 
  
 
@@ -183,7 +183,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 <span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__or_file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>
 
-**FILE \_ APPEND \_ DATA (archivo) o \_ SUBDIRECTORIO ADD DE ARCHIVO \_ (directorio)** (4)
+**FILE \_ APPEND \_ DATA (archivo) o \_ SUBDIRECTORIO AGREGAR ARCHIVO \_ (directorio)** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -218,14 +218,14 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-**FILE \_ LEER \_ ATRIBUTOS** (128)
+**FILE \_ ATRIBUTOS \_ DE LECTURA** (128)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-**FILE \_ ATRIBUTOS \_ DE ESCRITURA** (256)
+**FILE \_ ATRIBUTOS \_ DE** ESCRITURA (256)
 
 
 </dt> <dd></dd> <dt>
@@ -246,14 +246,14 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-**WRITE \_ DAC** (262144)
+**ESCRITURA \_ DAC** (262144)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-**WRITE \_ OWNER** (524288)
+**ESCRITURA \_ OWNER** (524288)
 
 
 </dt> <dd></dd> <dt>
@@ -279,7 +279,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Should Be Archived")
 </dt> </dl>
 
-Si **es True**, el archivo se debe archivar.
+Si **es True,** el archivo debe archivarse.
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -384,7 +384,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSCreationClassName**"), [**Clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre de clase del sistema de equipo")
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSCreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Computer System Class Name")
 </dt> </dl>
 
 Clase del sistema del equipo.
@@ -402,7 +402,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSName**"), [**Clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre del sistema del equipo")
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Computer System Name")
 </dt> </dl>
 
 Nombre del sistema del equipo.
@@ -499,7 +499,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Método de cifrado")
 </dt> </dl>
 
-Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en proceso (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado".
+Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en la lista (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado".
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -517,7 +517,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("File Extension")
 </dt> </dl>
 
-Extensión de nombre de archivo sin el punto anterior (punto).
+Extensión de nombre de archivo sin el período anterior (punto).
 
 Ejemplo: "txt", "mof", "mdb"
 
@@ -534,7 +534,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre de archivo")
+Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("File Name")
 </dt> </dl>
 
 Nombre de archivo sin la extensión de nombre de archivo.
@@ -554,18 +554,18 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tamaño"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Size"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Tamaño del archivo, en bytes.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**FileType**
+**Eltipo**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -592,7 +592,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre de clase del sistema de archivos")
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("File System Class Name")
 </dt> </dl>
 
 Clase del sistema de archivos.
@@ -610,7 +610,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("File System Name")
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ FileSystem**](cim-filesystem.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("File System Name")
 </dt> </dl>
 
 Nombre del sistema de archivos.
@@ -749,7 +749,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -832,7 +832,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -965,7 +965,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ ShortcutFile de Win32** se deriva de [**CIM \_ DataFile**](cim-datafile.md).
 
@@ -983,11 +983,11 @@ La **clase \_ ShortcutFile de Win32** se deriva de [**CIM \_ DataFile**](cim-dat
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Archivo de datos CIM \_**](cim-datafile.md)
+[**CIM \_ DataFile**](cim-datafile.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

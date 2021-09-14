@@ -4,12 +4,12 @@ ms.assetid: 027fffdb-62a1-47d8-b69f-c2fcf7f9ac97
 title: Códigos de control de administración de energía
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7294e04727bf122e65ef982bc7850ff3417e9bf25a8542c96e0ad412909bd649
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bef980bdcd3aa4c1ace9ee0b0cd92265d3dd9dfe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062832"
 ---
 # <a name="power-management-control-codes"></a>Códigos de control de administración de energía
 

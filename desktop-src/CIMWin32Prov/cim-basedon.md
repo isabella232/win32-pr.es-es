@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0a6bdd4c61628c71dbcb58b7b1d177cf7e936f802165aa9beed0aa195aeef4a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e25cd9a5f194df8c5cbc0c7dc24a4777cee3417
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061574"
 ---
 # <a name="cim_basedon-class-cimwin32-wmi-providers"></a>CIM_BasedOn clase (proveedores WMI CIMWin32)
 
 La **clase \_ BasedOn** de CIM representa una asociación que describe cómo se pueden ensamblar las extensiones de almacenamiento desde extensiones de nivel inferior. Por ejemplo, las extensiones físicas incluyen extensiones de espacio protegido. Por lo tanto, los conjuntos de volúmenes se ensamblan a partir de una o varias extensiones de espacio físico o protegido. La memoria caché se puede definir de forma independiente y realizarse en un elemento físico, o puede basarse en extensiones de almacenamiento volátiles o no volátiles.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,7 +49,7 @@ class CIM_BasedOn : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ BasedOn** de CIM tiene estos tipos de miembros:
 
@@ -145,7 +145,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

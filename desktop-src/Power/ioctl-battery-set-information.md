@@ -1,5 +1,5 @@
 ---
-description: Establece varias información sobre la batería.
+description: Establece varias información de batería.
 ms.assetid: b827983d-5fb8-43f2-b732-541d16b3eb7b
 title: IOCTL_BATTERY_SET_INFORMATION código de control (Poclass.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Poclass.h
 - Batclass.h
-ms.openlocfilehash: be6fca1042c4ba381996ccca1740d1662f9795269aaaa8b3e429576d96011dbc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f540037486f16e920b3346620ff934b279652e7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143498"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062855"
 ---
 # <a name="ioctl_battery_set_information-control-code"></a>Código de \_ control IOCTL BATTERY \_ SET \_ INFORMATION
 
-Establece varias información sobre la batería. La estructura de parámetros de entrada, [**BATTERY \_ SET \_ INFORMATION**](battery-set-information-str.md), indica qué información de estado de la batería se va a establecer.
+Establece varias información de batería. La estructura de parámetros de entrada, [**BATTERY \_ SET \_ INFORMATION**](battery-set-information-str.md), indica qué información de estado de la batería se va a establecer.
 
 Para realizar esta operación, llame a la [**función DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
 
@@ -96,7 +96,7 @@ Puntero a una variable que recibe el tamaño de los datos devueltos en el búfer
 
 Si el búfer de salida es demasiado pequeño para devolver datos, se produce un error en la llamada, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el código de error ERROR INSUFFICIENT BUFFER y el recuento de bytes devuelto \_ \_ es cero.
 
-Si *lpOverlapped* es **NULL** (E/S nooverlapped), *lpBytesReturned* no puede ser **NULL,** aunque *lpOutBuffer* sea **NULL.**
+Si *lpOverlapped* es **NULL** (E/S no omitida), *lpBytesReturned* no puede ser **NULL,** aunque *lpOutBuffer* sea **NULL.**
 
 Si *lpOverlapped no* es **NULL** (E/S superpuesta), *lpBytesReturned* puede ser **NULL.** Si se trata de una operación superpuesta, puede recuperar el número de bytes devueltos llamando a la [**función GetOverlappedResult.**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Si *hDevice* está asociado a un puerto de finalización de E/S, puede obtener el número de bytes devueltos llamando a la función [**GetQueuedCompletionStatus.**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
@@ -107,7 +107,7 @@ Si *lpOverlapped no* es **NULL** (E/S superpuesta), *lpBytesReturned* puede ser 
 
 Puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Si *hDevice se* abrió con la marca \_ FILE FLAG \_ OVERLAPPED, *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) se realiza como una operación superpuesta (asincrónica). Si el dispositivo se abrió con la marca OVERLAPPED DE FILE FLAG y \_ \_ *lpOverlapped* es **NULL,** la función produce un error de manera impredecible.
+Si *hDevice se* abrió con la marca \_ FILE FLAG \_ OVERLAPPED, *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) se realiza como una operación superpuesta (asincrónica). Si el dispositivo se abrió con la marca FILE FLAG OVERLAPPED y lpOverlapped es NULL, la función produce un error \_ \_ de manera imprevisible.  
 
 Si *hDevice* se abrió sin especificar la marca \_ FILE FLAG \_ OVERLAPPED, *lpOverlapped* se omite y la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) no se devuelve hasta que se ha completado la operación o hasta que se produce un error.
 
@@ -129,11 +129,11 @@ Para ver las implicaciones de la E/S superpuesta en esta operación, consulte la
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                                                                                                                                                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                                                                                                                                                                                |
-| Header<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>Batclass.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>Batclass.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
 
 
 

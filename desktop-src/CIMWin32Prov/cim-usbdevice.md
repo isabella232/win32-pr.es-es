@@ -40,19 +40,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 95bf244aa747781850a9917449da0752c3678d5932cb6427a4df6a07107edcd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21b927980716d4ee7ee2e22a352c5c3b34b363dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062737"
 ---
 # <a name="cim_usbdevice-class-cimwin32-wmi-providers"></a>CIM_USBDevice clase (proveedores WMI CIMWin32)
 
 La **clase \_ CIM USBDevice** representa las características de administración de un dispositivo USB.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -93,7 +93,7 @@ class CIM_USBDevice : CIM_LogicalDevice
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM USBDevice** tiene estos tipos de miembros:
 
@@ -109,7 +109,7 @@ La **clase \_ USBDevice** de CIM tiene estos métodos.
 | Método                                                               | Descripción                                                                                                                              |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
 | [**GetDescriptor**](getdescriptor-method-in-class-cim-usbdevice.md) | Devuelve el descriptor del dispositivo USB. No implementado por WMI.<br/>                                                                    |
-| [**Restablecer**](reset-method-in-class-cim-usbdevice.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
+| [**Reset**](reset-method-in-class-cim-usbdevice.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
 | [**SetPowerState**](setpowerstate-method-in-class-cim-usbdevice.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
 
 
@@ -997,7 +997,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice de CIM** primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1101,7 +1101,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -1115,7 +1115,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1171,7 +1171,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1234,12 +1234,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1252,12 +1252,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1274,7 +1274,7 @@ Versión USB más reciente compatible con el dispositivo USB. Esta propiedad se 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM USBDevice** se deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
@@ -1296,7 +1296,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

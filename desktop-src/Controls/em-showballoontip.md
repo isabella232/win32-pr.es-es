@@ -1,6 +1,6 @@
 ---
 title: EM_SHOWBALLOONTIP mensaje (Commctrl.h)
-description: El mensaje \_ EM SHOWBALLOONTIP muestra una sugerencia de globo asociada a un control de edición.
+description: El mensaje EM \_ SHOWBALLOONTIP muestra una sugerencia de globo asociada a un control de edición.
 ms.assetid: 1e6915b7-4b61-43b2-be13-b89c72378a1a
 keywords:
 - EM_SHOWBALLOONTIP controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0ec2666d18c0f6ce43d5c7644eca0aa2a2cc1f3af72cea03ad34af5ca451cda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8fc0174752ab8214873da9478a0af435be76427
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118672328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062052"
 ---
 # <a name="em_showballoontip-message"></a>Mensaje \_ EM SHOWBALLOONTIP
 
-El **mensaje EM \_ SHOWBALLOONTIP muestra** una sugerencia de globo asociada a un control de edición.
+El **mensaje EM \_ SHOWBALLOONTIP** muestra una sugerencia de globo asociada a un control de edición.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -62,11 +62,11 @@ Si el mensaje se realiza correctamente, devuelve **TRUE.** De lo contrario, **de
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

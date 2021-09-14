@@ -1,5 +1,5 @@
 ---
-description: El método ChangeOutputFormat cambia dinámicamente el tipo de medio para la conexión y proporciona información de segmento nuevo.
+description: El método ChangeOutputFormat cambia dinámicamente el tipo de medio para la conexión y proporciona información de segmento nueva.
 ms.assetid: d1204ca0-a489-48a0-8fe5-3ade04f51c93
 title: Método CDynamicOutputPin.ChangeOutputFormat (Amfilter.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 534d588bc1633770c35b0e0edbc2079ed8f7ab5035d3a8d2ff181042d26fdb3f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57421b2fd9624d9798037151a5656343e386a497
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061743"
 ---
 # <a name="cdynamicoutputpinchangeoutputformat-method"></a>Método CDynamicOutputPin.ChangeOutputFormat
 
-El `ChangeOutputFormat` método cambia dinámicamente el tipo de medio para la conexión y proporciona información de segmento nuevo. El cambio puede producirse mientras se ejecuta el gráfico de filtros. Una vez que se llama a este método, no se pueden entregar ejemplos con el tipo de medio anterior. El autor de la llamada debe asegurarse de que no hay ninguna muestra antigua pendiente.
+El `ChangeOutputFormat` método cambia dinámicamente el tipo de medio para la conexión y proporciona información de segmento nuevo. El cambio puede producirse mientras se ejecuta el gráfico de filtros. Una vez que se llama a este método, no se pueden entregar ejemplos con el tipo de medio antiguo. El autor de la llamada debe asegurarse de que no haya muestras antiguas pendientes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Hora de inicio del segmento.
 *tSegmentStop* 
 </dt> <dd>
 
-Hora de detenerse del segmento.
+Tiempo de detenerse del segmento.
 
 </dd> <dt>
 
@@ -82,18 +82,18 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 | Código devuelto                                                                                           | Descripción                                                                                                                              |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Correcto.<br/>                                                                                                                      |
-| <dl> <dt>**E \_ FAIL**</dt> </dl>                | Error. Posiblemente, el filtro propietario no llamó [**a CDynamicOutputPin::SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md).<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                | Error. Posiblemente, el filtro propietario no llamó a [**CDynamicOutputPin::SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md).<br/> |
 | <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | El pin no está conectado.<br/>                                                                                                     |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método cambia el tipo de formato mientras se ejecuta el filtro. Si la marca de nivel inferior acepta el nuevo formato, no es necesaria ninguna reconexión. De lo contrario, el método intenta volver a conectar el pin. Si el método cambia correctamente el formato, proporciona la nueva información de segmento. Este método llama al [**método CDynamicOutputPin::ChangeMediaType**](cdynamicoutputpin-changemediatype.md) para realizar el cambio de formato.
+Este método cambia el tipo de formato mientras se ejecuta el filtro. Si el pin de bajada acepta el nuevo formato, no es necesaria ninguna reconexión. De lo contrario, el método intenta volver a conectar el pin. Si el método cambia correctamente el formato, proporciona la información del nuevo segmento. Este método llama al [**método CDynamicOutputPin::ChangeMediaType**](cdynamicoutputpin-changemediatype.md) para realizar el cambio de formato.
 
-Debe llamar al método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) antes de llamar a este método.
+Debe llamar al [**método CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) antes de llamar a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,7 +106,7 @@ Debe llamar al método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutp
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

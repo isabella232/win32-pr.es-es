@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c47bda2b5466111594617a9f3fc0faa9d2dbf55e4452509015cbbe368ef15cba
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7c9ba8162cd115a567e9e9010420c558061fed08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062653"
 ---
 # <a name="rename-method-of-the-win32_pagefile-class"></a>Método Rename de la clase PageFile de Win32 \_
 
 El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Rename** cambia el nombre del archivo de paginación especificado en la ruta de acceso del objeto. No se admite un cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -123,7 +123,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha infringido el uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -162,7 +162,7 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

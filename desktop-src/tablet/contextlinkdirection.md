@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: 1cd187b2a6efed6de5e6ee866cbd2e75ad67defc67b4b6d2250eb9117c62d89e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82e10c7e908b4cc4035d8bfdde55d863f7b6ecf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256814"
 ---
 # <a name="contextlinkdirection-enumeration"></a>Enumeración ContextLinkDirection
 
 Especifica la dirección de un [**objeto IContextLink.**](icontextlink.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -118,11 +118,11 @@ while (pAncestor != NULL)
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

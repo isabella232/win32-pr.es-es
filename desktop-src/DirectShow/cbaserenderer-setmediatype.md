@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d1ba935fc5476becaf5edd4001efe8e604a97fc5e3a3ee8e965b606568d01863
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ccb364545df514e098811ff6135e0c8cf72a329
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061768"
 ---
 # <a name="cbaserenderersetmediatype-method"></a>Método CBaseRenderer.SetMediaType
 
-Se `SetMediaType` llama al método cuando se establece el tipo de medio del pin.
+Se llama al método cuando se establece el `SetMediaType` tipo de medio del pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica el tipo de me
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El pin de entrada llama a este método desde su propio [**método CRendererInputPin::SetMediaType.**](crendererinputpin-setmediatype.md) Este método no hace nada en la clase base.
 
@@ -68,7 +68,7 @@ El pin de entrada llama a este método desde su propio [**método CRendererInput
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

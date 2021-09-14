@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CompileFromMemory (D3DX11async.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como D3DCompile API. Compile un sombreador o un efecto que se carga en memoria.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API D3DCompile. Compile un sombreador o un efecto que se carga en memoria.
 ms.assetid: 3396560f-f411-4c66-9f22-03c0050c74b0
 keywords:
 - Función D3DX11CompileFromMemory Direct3D 11
@@ -15,12 +15,12 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 055fa070eb698298716abef11090a8c178cb4ef85f46bc6733df037a5778e4d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e10590c3db458a23bf4d52b6507146884630087
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118536824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060862"
 ---
 # <a name="d3dx11compilefrommemory-function"></a>Función D3DX11CompileFromMemory
 
@@ -30,7 +30,7 @@ ms.locfileid: "118536824"
  
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) API.
+> En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API [**D3DCompile.**](/windows/desktop/direct3dhlsl/d3dcompile)
 
  
 
@@ -186,9 +186,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-**D3DX11CompileFromMemory** devuelve E INVALIDARG si se proporciona no NULL al parámetro pHResult al proporcionar NULL al \_ parámetro *pPump.*    Para obtener más información sobre esta situación, vea Comentarios.
+**D3DX11CompileFromMemory** devuelve E INVALIDARG si se proporciona un valor NULL distinto de NULL al parámetro pHResult al proporcionar NULL al \_ parámetro *pPump.*    Para obtener más información sobre esta situación, vea Comentarios.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información **sobre D3DX11CompileFromMemory**, vea [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile).
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1448e993a88f2f5ce800de041779fb66f383c8973143b90200622758511ef337
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 785ba54b56c65fd298b6ef763ec2d7eca0d8f61a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119752825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062693"
 ---
 # <a name="pause-method-of-the-win32_printjob-class"></a>Método Pause de la clase PrintJob de Win32 \_
 
 El **método de** clase WMI [Pause](/windows/desktop/WmiSdk/retrieving-a-class) suspende un trabajo de impresión.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,9 +62,9 @@ Acceso denegado
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de código de VBScript Pausar todas las [impresoras](https://Gallery.TechNet.Microsoft.Com/cf2b6b61-8ffe-444b-857b-e3a205bc693c) con colas de impresión vacías pausa las impresoras que no tienen trabajos de impresión pendientes.
+El ejemplo de código Pause All Printers with Empty Print Queues VBScript (Pausar todas las impresoras con colas de impresión [vacías)](https://Gallery.TechNet.Microsoft.Com/cf2b6b61-8ffe-444b-857b-e3a205bc693c) pausa las impresoras que no tienen trabajos de impresión pendientes.
 
-El siguiente ejemplo de código de VBScript pausa todos los trabajos de impresión en un servidor de impresión.
+El siguiente ejemplo de código VBScript pausa todos los trabajos de impresión en un servidor de impresión.
 
 
 ```VB
@@ -96,7 +96,7 @@ Next
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

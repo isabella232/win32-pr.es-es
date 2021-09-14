@@ -1,5 +1,5 @@
 ---
-description: Marca que especifica si las muestras del asignador del pin son de solo lectura. Si el valor es TRUE, el ejemplo es de solo lectura. El valor predeterminado es FALSE.
+description: Marca que especifica si los ejemplos del asignador del pin son de solo lectura. Si el valor es TRUE, el ejemplo es de solo lectura. El valor predeterminado es FALSE.
 ms.assetid: c2c6247c-4b37-416c-99a2-847d35f48358
 title: CDynamicOutputPin::m_bPinUsesReadOnlyAllocator miembro (Amfilter.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c2a03816d3ad324f7f50a3edbfd1166403442afec7133d14288d0aafa3d91cd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff4e7ab7dd887f7290cfc229c7af439bf8150277
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118656430"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061723"
 ---
 # <a name="cdynamicoutputpinm_bpinusesreadonlyallocator-member"></a>Miembro CDynamicOutputPin::m \_ bPinUsesReadOnlyAllocator
 
-Marca que especifica si las muestras del asignador del pin son de solo lectura. Si el valor es **TRUE**, el ejemplo es de solo lectura. El valor predeterminado es **FALSE**.
+Marca que especifica si los ejemplos del asignador del pin son de solo lectura. Si el valor es **TRUE,** el ejemplo es de solo lectura. El valor predeterminado es **FALSE**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ BOOL m_bPinUsesReadOnlyAllocator;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

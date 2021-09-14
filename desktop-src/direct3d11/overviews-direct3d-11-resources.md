@@ -4,12 +4,12 @@ description: En esta sección se describen aspectos de los recursos de Direct3D 
 ms.assetid: 5b8b1198-73ed-4058-9fc6-a1c43902d732
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd87812e5b057117349afede6e3f466de1dd3fe517eab5e4f49f2c34e6643d0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f9ed73d81d2521fe97b36e6bfc8d71e387f8c9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060814"
 ---
 # <a name="resources"></a>Recursos
 

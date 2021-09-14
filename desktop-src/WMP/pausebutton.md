@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5e1173b178adfa6e9cf3b9f6e0d5af0ef6b52e6c39a88c5d9be1af9d8836a25b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6713c765a27ad7d341beab58266ae3bd383674bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119646895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240945"
 ---
 # <a name="pausebutton"></a>PAUSEBUTTON
 
-Se trata de un **button** predefinido con los siguientes valores predeterminados.
+Se trata de un **button predefinido** con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:player.controls.pause()" 
@@ -31,21 +31,21 @@ cursor="system"
 enabled="wmpenabled:player.controls.pause"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
+Todas las propiedades de **este BOTÓN** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

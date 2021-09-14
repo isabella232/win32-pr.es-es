@@ -8,16 +8,16 @@ keywords:
 - ADSI ADSI , using,using the IADs GetEx method
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e656bd6a48830feb725e927f08be1d573e7b0232cf02c16ee87bd7d6a5b2f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3a909b33664ad805b0bf483ee9f0c2b40316ec8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118690154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062765"
 ---
 # <a name="the-getex-method"></a>El método GetEx
 
-Algunos atributos pueden almacenar uno o varios valores. Por ejemplo, el **otro atributoTelephone** de un objeto de usuario en Active Directory es una propiedad que puede tener cero, uno o varios valores. Los atributos que tienen varios valores se conocen como "atributos multivalor". Si el [**método IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) se usa para recuperar un atributo con varios valores, los resultados se deben procesar de forma diferente que si el atributo tiene un único valor. Sin embargo, los resultados proporcionados por el método [**IADs::GetEx**](/windows/desktop/api/Iads/nf-iads-iads-getex) se procesan de la misma manera, independientemente de si el atributo tiene uno o varios valores. En ambos casos, **el método IADs::GetEx** devuelve los valores de una matriz.
+Algunos atributos pueden almacenar uno o varios valores. Por ejemplo, el **atributo otherTelephone** de un objeto de usuario en Active Directory es una propiedad que puede tener cero, uno o varios valores. Los atributos que tienen varios valores se conocen como "atributos multivalor". Si el [**método IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) se usa para recuperar un atributo con varios valores, los resultados se deben procesar de forma diferente que si el atributo tiene un único valor. Sin embargo, los resultados proporcionados por el método [**IADs::GetEx**](/windows/desktop/api/Iads/nf-iads-iads-getex) se procesan de la misma manera, independientemente de si el atributo tiene uno o varios valores. En ambos casos, **el método IADs::GetEx** devuelve los valores de una matriz.
 
 El [**método IADs::GetEx**](/windows/desktop/api/Iads/nf-iads-iads-getex) recupera propiedades de la caché de propiedades. Si la propiedad especificada no se encuentra en la memoria caché, **IADs::GetEx** realiza una llamada [**implícita a IADs::GetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-getinfo)
 

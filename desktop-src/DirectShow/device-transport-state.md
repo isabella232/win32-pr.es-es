@@ -4,16 +4,16 @@ ms.assetid: 15edded0-207c-41e8-81fe-deb6335045eb
 title: Estado de transporte de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99ea7c3d6cba8363826c0fdab3cf411f0d68d6e284832a75c02cac3b1eefa770
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05f52ea846c79be6cb2d011b635da358f7ecd0a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061227"
 ---
 # <a name="device-transport-state"></a>Estado de transporte de dispositivos
 
-Para recuperar el estado actual del dispositivo, como reproducir, pausar o detener, llame al método [**IAMExtTransport::get \_ Mode.**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-get_mode) El método recupera una constante que indica el estado del dispositivo:
+Para recuperar el estado actual del dispositivo, como reproducir, pausar o detener, llame al [**método IAMExtTransport::get \_ Mode.**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-get_mode) El método recupera una constante que indica el estado del dispositivo:
 
 
 

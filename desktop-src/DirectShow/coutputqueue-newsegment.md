@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4057cafa3962c85fbca9342debbf7bb0e92355fc083e693889df298e53509259
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e682211a98f4409fda35687160c88b121fa93898
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119768145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062447"
 ---
 # <a name="coutputqueuenewsegment-method"></a>Método COutputQueue.NewSegment
 
-El `NewSegment` método entrega un nuevo segmento a la patilla de entrada.
+El `NewSegment` método entrega un nuevo segmento al pin de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Posición del medio final del segmento, en unidades de 100 nanosegundos.
 *dRate* 
 </dt> <dd>
 
-Velocidad a la que se debe procesar este segmento, como porcentaje de la velocidad original.
+Velocidad a la que se debe procesar este segmento, como porcentaje de la tasa original.
 
 </dd> </dl>
 
@@ -69,14 +69,14 @@ Velocidad a la que se debe procesar este segmento, como porcentaje de la velocid
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el objeto usa un subproceso, pone en cola los siguientes elementos, en orden:
 
--   Mensaje de \_ control NEW SEGMENT.
+-   Mensaje de control NEW \_ SEGMENT.
 -   Datos de segmento.
 
-El mensaje NEW \_ SEGMENT notifica al subproceso que el siguiente elemento de la cola contendrá datos de segmento. Los datos de segmento se agrupan en una estructura, declarada de la siguiente manera:
+El mensaje NEW \_ SEGMENT notifica al subproceso que el siguiente elemento de la cola contendrá datos de segmento. Los datos de segmento se agrupan en una estructura , declarada como sigue:
 
 
 ```C++
@@ -104,7 +104,7 @@ Si el objeto no usa un subproceso, llama al método [**COutputQueue::SendAnyway*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

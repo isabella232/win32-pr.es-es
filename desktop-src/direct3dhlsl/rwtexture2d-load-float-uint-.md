@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14d60624d29245b8039dc3c040d50b1c631fdfcbc201f14d2d409c454b07eabb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dcc8619caea715f1e752ba2768cca1d4e5f330ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117906244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240848"
 ---
 # <a name="rwtexture2dloadintuint-function"></a>Función RWTexture2D::Load(int,uint)
 
@@ -54,7 +54,7 @@ Ubicación de la textura.
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ Estado de la operación. No se puede acceder al estado directamente; en su lugar
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo de la declaración para el [**objeto RWTexture2D.**](sm5-object-rwtexture2d.md)
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWTexture2D.**](sm5-object-rwtexture2d.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -78,7 +78,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

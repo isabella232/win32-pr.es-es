@@ -1,23 +1,23 @@
 ---
 description: En esta sección se documenta los identificadores únicos globales (GUID) que usa la interfaz IJournalReader para identificar propiedades personalizadas en trazos o atributos de dibujo.
 ms.assetid: 9b3a0fb3-7f66-4efe-81ba-413a562d54b8
-title: GUID de lector de diario
+title: GUID del lector de diario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e0a72c83d1983b3a13b9da6ca830388809e773f54824da1d09a8a1c73b2514b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 489194a21055bde6eccf7d3e665905e3288907a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117856591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256562"
 ---
-# <a name="journal-reader-guids"></a>GUID de lector de diario
+# <a name="journal-reader-guids"></a>GUID del lector de diario
 
 En esta sección se documenta los identificadores únicos globales (GUID) que usa la interfaz [**IJournalReader**](ijournalreader.md) para identificar propiedades personalizadas en trazos o atributos de dibujo.
 
 ## <a name="in-this-section"></a>En esta sección
 
-[GUID de propiedad personalizada](custom-property-guids.md)
+[GUID de propiedades personalizadas](custom-property-guids.md)
 
  
 

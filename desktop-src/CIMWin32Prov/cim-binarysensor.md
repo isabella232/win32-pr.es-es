@@ -37,19 +37,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7cf4a2a8e681bcdaaed4b496c3ff6fcc198c71bf241da939a2feb12814668963
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0d795f98473c09937571d415e34cf6fcb7f3486
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061570"
 ---
 # <a name="cim_binarysensor-class"></a>Cim \_ BinarySensor (clase)
 
-La **clase \_ BinarySensor de CIM** proporciona una salida booleana. Las **propiedades CurrentState** y **PossibleStates** se agregaron para la sensoración, lo que hace que la subclase **Cim \_ BinarySensor** ya no sea necesaria, aunque se conserva por compatibilidad con versiones anteriores. Se puede crear un sensor binario mediante la creación de instancias de un sensor con dos estados posibles.
+La **clase \_ BinarySensor de CIM** proporciona una salida booleana. Las **propiedades CurrentState** y **PossibleStates** se agregaron para la sensoración, lo que hace que la subclase **\_ BinarySensor** de CIM ya no sea necesaria, aunque se conserva por compatibilidad con versiones anteriores. Se puede crear un sensor binario mediante la creación de instancias de un sensor con dos estados posibles.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -87,7 +87,7 @@ class CIM_BinarySensor : CIM_Sensor
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ BinarySensor de CIM** tiene estos tipos de miembros:
 
@@ -102,8 +102,8 @@ La **clase \_ BinarySensor de CIM** tiene estos métodos.
 
 | Método                                                                  | Descripción                                                                                                                                |
 |:------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-binarysensor.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                                 |
-| [**SetPowerState**](setpowerstate-method-in-class-cim-binarysensor.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar el dispositivo en ese estado. No implementado por WMI.<br/> |
+| [**Reset**](reset-method-in-class-cim-binarysensor.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                                 |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-binarysensor.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo debe colocarse en ese estado. Wmi no implementa .<br/> |
 
 
 
@@ -124,12 +124,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. \|HOST-RESOURCES-MIB.hrDeviceStatus de IETF")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -149,7 +149,7 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -212,7 +212,7 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -281,7 +281,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
 
 
 </dt> <dd>
@@ -292,7 +292,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
 
 
 </dt> <dd>
@@ -303,12 +303,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo está silencioso.
+El dispositivo es silencioso.
 
 </dd> </dl>
 
@@ -346,7 +346,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -765,7 +765,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -778,7 +778,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -799,11 +799,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Indica el identificador de Plug and Play win32 del dispositivo lógico.
+Indica el identificador de dispositivo Plug and Play Win32 del dispositivo lógico.
 
 Ejemplo: \* "PNP030b"
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -818,7 +818,7 @@ Tipo de acceso: solo lectura
 
 Indica las funcionalidades específicas relacionadas con la energía del dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -829,7 +829,7 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dt> <dd>
 
-Las capacidades relacionadas con la energía son desconocidas.
+Se desconocen las capacidades relacionadas con la energía.
 
 </dd> <dt>
 
@@ -840,7 +840,7 @@ Las capacidades relacionadas con la energía son desconocidas.
 
 </dt> <dd>
 
-No se admiten capacidades relacionadas con energía para este dispositivo.
+Las capacidades relacionadas con la energía no se admiten para este dispositivo.
 
 </dd> <dt>
 
@@ -884,7 +884,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se **admite el método SetPowerState.** Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se **admite el método SetPowerState.** Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -906,7 +906,7 @@ El **método SetPowerState** se puede invocar con el *parámetro PowerState* est
 
 </dt> <dd>
 
-El **método SetPowerState** se puede invocar con el parámetro *PowerState* establecido en 5 ("Power Cycle") y el parámetro *Time* establecido en una fecha y hora específicas, o un intervalo, para la encendido.
+El **método SetPowerState** se puede invocar con el parámetro *PowerState* establecido en 5 ("Ciclo de energía") y el parámetro *Time* establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -923,9 +923,9 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o, si están habilitadas, qué características se admiten. Para más información, consulte la matriz **PowerManagementCapabilities.**
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -943,7 +943,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -974,7 +974,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -988,14 +988,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1046,12 +1046,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado operativo DMTF \| \| 003.3")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 ("No aplicable").
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1101,12 +1101,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1119,16 +1119,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ BinarySensor de CIM** se deriva del [**\_ sensor CIM**](cim-sensor.md).
 
@@ -1140,7 +1140,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1150,7 +1150,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

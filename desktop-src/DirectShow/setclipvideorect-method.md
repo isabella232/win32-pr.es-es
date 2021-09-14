@@ -4,12 +4,12 @@ ms.assetid: 3940a382-8d53-4ff9-b024-38de1aa00f54
 title: Método SetClipVideoRect
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e7741a2604ed1c2896b105295020893e23b447e3fa6f6ab7c53def92aa508c4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ff7f4b003ef20b82f1e783ebf074e8bbd5cc793
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061610"
 ---
 # <a name="setclipvideorect-method"></a>Método SetClipVideoRect
 
@@ -39,13 +39,13 @@ Especifica un objeto [DVDRect,](dvdrect-object.md) que contiene el rectángulo d
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se establece un nuevo rectángulo de recorte, el objeto amplía ese área para ajustarse a las dimensiones de presentación generales de la aplicación. Esto crea el efecto de acercar en un área determinada de la pantalla. Para especificar el rectángulo, cree un nuevo [objeto DVDRect](dvdrect-object.md) y rellene sus propiedades.
+Cuando se establece un nuevo rectángulo de recorte, el objeto amplía esa área para ajustarse a las dimensiones de presentación generales de la aplicación. Esto crea el efecto de acercar en un área determinada de la pantalla. Para especificar el rectángulo, cree un nuevo [objeto DVDRect](dvdrect-object.md) y rellene sus propiedades.
 
 El rectángulo más común para la presentación de vídeo es 720 x 540.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

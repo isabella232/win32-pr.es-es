@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a5285faad36f83dbab693c63a0c96ca2b1d2b6a25220bb601a9527aac9dc5ac1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ab8a4421244f2c2ee21c5243923f5d0827317e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120051295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061061"
 ---
 # <a name="ixml2dexwritexml-method"></a>IXml2Dex::WriteXML (método)
 
@@ -49,7 +49,7 @@ HRESULT WriteXML(
 *pTimeline* 
 </dt> <dd>
 
-Puntero a la interfaz **IUnknown del objeto de escala de** tiempo.
+Puntero a la interfaz **IUnknown** del objeto de escala de tiempo.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Puntero a una variable de tipo BSTR que recibe la cadena XML que describe la esc
 
 Devuelve S \_ OK si se realiza correctamente. Si no hay memoria suficiente para la conversión, devuelve E \_ OUTOFMEMORY. De lo contrario, devuelve otro código de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método asigna memoria para la cadena. La aplicación debe llamar **a SysFreeString para** liberar la memoria.
 
@@ -84,20 +84,20 @@ El método asigna memoria para la cadena. La aplicación debe llamar **a SysFree
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Internet Explorer 4.0 o posterior<br/>                                               |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Version<br/> | Internet Explorer 4.0 o posterior<br/>                                               |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IXml2Dex (interfaz)**](ixml2dex.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: eb1f912a-8aae-4774-b699-ca3f448760c6
 title: InkEdit Messages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbb9688ad85f258d8f0bb36852de9d1274f3a27b965b18b31b8af89818837ff2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e91ce703928648ae1ac1f3d5d53c69bc806ea9b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118042272"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256701"
 ---
 # <a name="inkedit-messages"></a>InkEdit Messages
 

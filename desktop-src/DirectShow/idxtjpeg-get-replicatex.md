@@ -1,7 +1,7 @@
 ---
-description: El \_ método get ReplicateX recupera el número de veces que el patrón de barrido se replica horizontalmente.
+description: El método get \_ ReplicateX recupera el número de veces que el patrón de borrado se replica horizontalmente.
 ms.assetid: 669a3bde-af8b-4d31-b914-41b71c95de1c
-title: 'Método IDxtJpeg:: get_ReplicateX (QEDIT. h)'
+title: Método IDxtAsynceg::get_ReplicateX (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,20 +15,20 @@ api_location:
 - strmiids.lib
 - strmiids.dll
 ms.openlocfilehash: 8855f819cb00d46297220c41deb6b81d6150e0f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680671"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061079"
 ---
-# <a name="idxtjpegget_replicatex-method"></a>IDxtJpeg:: get \_ ReplicateX (método)
+# <a name="idxtjpegget_replicatex-method"></a>Método IDxtAsynceg::get \_ ReplicateX
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `get_ReplicateX` método recupera el número de veces que el patrón de barrido se replica horizontalmente.
+El `get_ReplicateX` método recupera el número de veces que el patrón de borrado se replica horizontalmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ HRESULT get_ReplicateX(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
-Recibe el número de veces que el patrón de barrido se replica horizontalmente.
+Recibe el número de veces que el patrón de borrado se replica horizontalmente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,16 +74,16 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IDxtJpeg**](idxtjpeg.md)
+[**IDxt Jpeg (interfaz)**](idxtjpeg.md)
 </dt> </dl>
 
  

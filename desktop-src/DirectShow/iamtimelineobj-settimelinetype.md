@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4592c92c4c40f9fff8294ea546601654afd0111e38fd9f64473512c27b6f1a34
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a63031968a2dfb43d98f9b7f59bd2d9051042732
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118400856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061639"
 ---
 # <a name="iamtimelineobjsettimelinetype-method"></a>IamTimelineObj::SetTimelineType (método)
 
@@ -56,7 +56,7 @@ Reservado.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -83,7 +83,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 <dl> <dt>
 
-[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
+[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> </dl>
 
  

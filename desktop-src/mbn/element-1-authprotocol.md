@@ -1,5 +1,5 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ AuthProtocol (v4)
+description: '\/MódemDMConfigProfile... \/ AuthProtocol (v4)'
 MS-HAID: WWAN\_profile\_v4.element\_1\_AuthProtocol
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,17 +17,17 @@ topic_type:
 - APIRef
 - kbSyntax
 ms.openlocfilehash: 26dff13e189d70ce0c57dbd0ce9642ffd1722283
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982837"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257967"
 ---
-# <a name="span-idwwan_profile_v4element_1_authprotocolspanmodemdmconfigprofileauthprotocol-v4"></a><span id="WWAN_profile_v4.element_1_AuthProtocol"></span>ModemDMConfigProfile \/ ... \/ AuthProtocol (v4)
+# <a name="span-idwwan_profile_v4element_1_authprotocolspanmodemdmconfigprofileauthprotocol-v4"></a><span id="WWAN_profile_v4.element_1_AuthProtocol"></span>\/MódemDMConfigProfile... \/ AuthProtocol (v4)
 
 >Especifica el protocolo de autenticación que se usará para activar un contexto de Protocolo de datos de paquetes (PDP).
 
-Tenga en cuenta que, en la versión v4, hay disponible un nuevo valor de enumeración para este elemento. **AutoSelection** significa que un protocolo de autenticación se debe seleccionar por capas inferiores.
+Tenga en cuenta que en v4, hay disponible un nuevo valor de enumeración para este elemento. **AutoSelection** significa que un protocolo de autenticación se debe seleccionar mediante capas inferiores.
 
 Para más información, consulte la documentación del elemento [**AuthProtocol**](./schema-authprotocol-contexttype-element.md) v1.
 

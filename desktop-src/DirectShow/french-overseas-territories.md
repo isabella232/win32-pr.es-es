@@ -1,17 +1,17 @@
 ---
-description: Territorios de francia
+description: Territorios francés de Francia
 ms.assetid: 19f178c5-46f7-4108-9a1a-e49a4eb51f27
-title: Territorios de francia
+title: Territorios francés de Francia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01f0c773fefe9e224650f62bab5f4703eebecba6fb20d7210a80564facc7d4f0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 933ee833b57060d7f6b45e97267a64f9bc6fc7cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061167"
 ---
-# <a name="french-overseas-territories"></a>Territorios de francia
+# <a name="french-overseas-territories"></a>Territorios francés de Francia
 
 Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 

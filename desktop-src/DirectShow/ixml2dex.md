@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 3bc12c2305a8b92110d4aa17522184e9a3c5ee83b60ccd5a989468fa0a8c6e7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac15110aa1482c37a835ae874057a792e310fc2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952394"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061058"
 ---
 # <a name="ixml2dex-interface"></a>Interfaz IXml2Dex
 
@@ -30,7 +30,7 @@ ms.locfileid: "118952394"
 
 La interfaz guarda y carga DirectShow de proyecto `IXml2Dex` de [Editing Services](directshow-editing-services.md) (DES) en lenguaje de marcado extensible (XML). Esta interfaz también proporciona métodos para leer y escribir DirectShow de gráficos (.grf).
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IXml2Dex** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IXml2Dex** también tiene estos tipos de miembros:
 
@@ -51,7 +51,7 @@ La **interfaz IXml2Dex** tiene estos métodos.
 | [**PasteXMLFile**](ixml2dex-pastexmlfile.md)               | Sin implementar.<br/>                                                |
 | [**Readxml**](ixml2dex-readxml.md)                         | Sin implementar.<br/>                                                |
 | [**ReadXMLFile**](ixml2dex-readxmlfile.md)                 | Carga un archivo de proyecto XML.<br/>                                      |
-| [**Restablecer**](ixml2dex-reset.md)                             | Sin implementar.<br/>                                                |
+| [**Reset**](ixml2dex-reset.md)                             | Sin implementar.<br/>                                                |
 | [**WriteGrfFile**](ixml2dex-writegrffile.md)               | Escribe un gráfico de filtro en un archivo en formato .grf.<br/>                 |
 | [**WriteXML**](ixml2dex-writexml.md)                       | Convierte una escala de tiempo en una cadena XML.<br/>                         |
 | [**WriteXMLFile**](ixml2dex-writexmlfile.md)               | Convierte una escala de tiempo en XML y escribe los datos XML en un archivo.<br/> |
@@ -61,7 +61,7 @@ La **interfaz IXml2Dex** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -80,7 +80,7 @@ La **interfaz IXml2Dex** tiene estos métodos.
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Internet Explorer 4.0 o posterior<br/>                                               |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 

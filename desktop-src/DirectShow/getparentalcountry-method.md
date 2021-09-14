@@ -4,12 +4,12 @@ ms.assetid: 947c5e2a-dfd5-4900-87d4-0ec967b99a22
 title: Método GetParentalCountry (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeeee55a3e39449c48e1af6b2674db85d5c4a964e730e5a66bb91be6dca2c393
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e6fcee63fd3cad64498d95ca74e81a9f02804a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119756765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061119"
 ---
 # <a name="getparentalcountry-method"></a>Método GetParentalCountry
 
@@ -28,7 +28,7 @@ El `DVDAdm.GetParentalCountry` método recupera el país o región parental que 
 
 Devuelve un entero que indica el código de país o región predeterminado almacenado en el Registro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El país o región parental que recupera este método no es necesariamente el mismo país o región almacenado actualmente en el objeto MSWebDVD.
 
@@ -42,7 +42,7 @@ El país o región parental que recupera este método no es necesariamente el mi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

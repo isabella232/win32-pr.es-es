@@ -4,12 +4,12 @@ ms.assetid: f6c8a9e2-aab0-4f06-956e-bb86557c72e7
 title: Filtrado de textura anisotropica (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 363aeef463f137a240602e52410260108ee4a40a1a23da7b2e7c245ed6e74a65
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c3443696e54410c6edc6a9998d4fcfd86b537a0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119676945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060770"
 ---
 # <a name="anisotropic-texture-filtering-direct3d-9"></a>Filtrado de textura anisotropica (Direct3D 9)
 

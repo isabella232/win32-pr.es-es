@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8137c4e18708ce6a0402d1d34caf9560054f267d8de0280a6efb5c3dd36e6517
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 599dd82e282f2d14ac7e974363a62695e209c080
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119909815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061293"
 ---
 # <a name="cdrawimagedrawvideoimagehere-method"></a>Método CDrawImage.DrawVideoImageHere
 
@@ -88,7 +88,7 @@ Devuelve **TRUE si** se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

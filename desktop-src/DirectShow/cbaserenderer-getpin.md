@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7c85b1a33abec4dfd10cf093e8673e270e7df02533846791a5d5d37702b51313
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b7c30767b7cba68931bc1ddde4905c9b7bc2bc29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117822706"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061330"
 ---
 # <a name="cbaserenderergetpin-method"></a>Método CBaseRenderer.GetPin
 
@@ -53,7 +53,7 @@ Número del pin especificado. Debe ser cero.
 
 Devuelve el [**puntero CBaseRenderer::m \_ pInputPin.**](cbaserenderer-m-pinputpin.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método implementa el [**método CBaseFilter::GetPin,**](cbasefilter-getpin.md) que es virtual puro en la **clase CBaseFilter.** El filtro admite exactamente un pin (el pin de entrada). La primera vez que se llama a este método, crea el pin como un nuevo [**objeto CRendererInputPin.**](crendererinputpin.md)
 

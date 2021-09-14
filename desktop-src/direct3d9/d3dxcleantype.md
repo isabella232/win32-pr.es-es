@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 2517c59d5505a8f2892ef0aee1d3884b8d489625637002d6e69a4f86434237fd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b38578d0f50521def552b8bd6608c2696b405d0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060735"
 ---
 # <a name="d3dxcleantype-enumeration"></a>D3DXCLEANTYPE (enumeración)
 
 Define las operaciones que se realizan en los vértices como preparación para la limpieza de malla.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -50,17 +50,17 @@ Combinar triángulos que comparten los mismos índices de vértice pero que tien
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_BOWTIES"></span><span id="d3dxclean_bowties"></span>**D3DXCLEAN \_ BOWTIES**
+<span id="D3DXCLEAN_BOWTIES"></span><span id="d3dxclean_bowties"></span>**ARCOS DE D3DXCLEAN \_**
 </dt> <dd>
 
-Si un vértice es el vértice de dos ventiladores de triángulo (una arco) y las operaciones de malla afectarán a uno de los ventiladores, divida el vértice compartido en dos vértices nuevos. Las arcos pueden causar problemas para operaciones como la simplificación de mallas que quitan vértices, ya que la eliminación de un vértice afecta a dos conjuntos distintos de triángulos.
+Si un vértice es el vértice de dos ventiladores de triángulo (un arco) y las operaciones de malla afectarán a uno de los ventiladores, divida el vértice compartido en dos vértices nuevos. Las arcos pueden causar problemas en operaciones como la simplificación de mallas que quitan vértices, ya que la eliminación de un vértice afecta a dos conjuntos distintos de triángulos.
 
 </dd> <dt>
 
 <span id="D3DXCLEAN_SKINNING"></span><span id="d3dxclean_skinning"></span>**D3DXCLEAN \_ SKINNING**
 </dt> <dd>
 
-Use esta marca para evitar bucles infinitos durante las operaciones de malla de configuración de desplazamiento.
+Use esta marca para evitar bucles infinitos durante las operaciones de malla de configuración de despejado.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Use esta marca para evitar bucles infinitos durante las operaciones de simplific
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

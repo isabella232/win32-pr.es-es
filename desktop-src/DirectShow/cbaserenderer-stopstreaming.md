@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 097ad9fd1548b709f7eb74a3e468c34c3b18a73621720e249a3c626c252c898d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dfd943de6a53383d7505fa9e884dcc152da6e5f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061757"
 ---
 # <a name="cbaserendererstopstreaming-method"></a>Método CBaseRenderer.StopStreaming
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al [**método CBaseRenderer::OnStopStreaming.**](cbaserenderer-onstopstreaming.md) Ese método no hace nada en la clase base, pero la clase derivada puede invalidarlo.
 
@@ -59,7 +59,7 @@ Este método llama al [**método CBaseRenderer::OnStopStreaming.**](cbaserendere
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

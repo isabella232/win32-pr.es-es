@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 299092700b015840376f3e4b297d7825366b6083e1458155f5963e1b5b1f4d73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 469b9b32072107885417266266f804a955301668
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060712"
 ---
 # <a name="d3dxvalidmesh-function"></a>Función D3DXValidMesh
 
@@ -75,9 +75,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DXERR \_ INVALIDMESH, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método valida la malla comprobando si hay índices no válidos. La información de error está disponible en la salida del depurador.
+Este método valida la malla mediante la comprobación de índices no válidos. La información de error está disponible en la salida del depurador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Este método valida la malla comprobando si hay índices no válidos. La informa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8999f6dbb42c55c036ee3d7fcd02dc34def4bd0a036cf0b5d908d3c280e297e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 67232bf1081f9c9ea088968cb6c5d02667b00eeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119317795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061264"
 ---
 # <a name="cdynamicoutputpinasynchronousblockoutputpin-method"></a>Método CDynamicOutputPin.AsynchronousBlockOutputPin
 
@@ -65,7 +65,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No llame a este método desde el subproceso de streaming.
 

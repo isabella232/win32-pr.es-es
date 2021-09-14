@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4a987cfd0f08311a0e7a233ab479e5cdbe2fc649fd521ad4f4ed1b37b6df6d75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e968ec01d937aeac9a5838b75462a6d23a632512
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119428165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061632"
 ---
 # <a name="iamtimelineobj-interface"></a>Interfaz IAMTimelineObj
 
@@ -30,7 +30,7 @@ ms.locfileid: "119428165"
 
 La `IAMTimelineObj` interfaz proporciona métodos para manipular objetos de escala de tiempo [DirectShow Editing Services](directshow-editing-services.md) (DES). Todos los objetos de escala de tiempo implementan este método, incluidos los objetos de origen, efecto, transición, seguimiento, grupo y composición. Cree un objeto de escala de tiempo llamando al [**método IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IAMTimelineObj** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineObj** también tiene estos tipos de miembros:
 
@@ -66,7 +66,7 @@ La **interfaz IAMTimelineObj** tiene estos métodos.
 | [**GetUserData**](iamtimelineobj-getuserdata.md)               | Recupera los datos persistentes definidos por la aplicación.<br/>                                                                          |
 | [**GetUserID**](iamtimelineobj-getuserid.md)                   | Recupera el identificador definido por la aplicación del objeto.<br/>                                                                      |
 | [**GetUserName**](iamtimelineobj-getusername.md)               | Recupera el nombre definido por la aplicación del objeto.<br/>                                                                            |
-| [**Quitar**](iamtimelineobj-remove.md)                         | Quita este objeto de la escala de tiempo, para su reinserción en otro lugar.<br/>                                                           |
+| [**Remove**](iamtimelineobj-remove.md)                         | Quita este objeto de la escala de tiempo, para su reinserción en otro lugar.<br/>                                                           |
 | [**Removeall**](iamtimelineobj-removeall.md)                   | Quita permanentemente este objeto de la escala de tiempo, incluidos los subobjetos y los elementos secundarios.<br/>                                       |
 | [**SetDirtyRange**](iamtimelineobj-setdirtyrange.md)           | Sin implementar.<br/>                                                                                                            |
 | [**SetDirtyRange2**](iamtimelineobj-setdirtyrange2.md)         | Sin implementar.<br/>                                                                                                            |
@@ -87,7 +87,7 @@ La **interfaz IAMTimelineObj** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.

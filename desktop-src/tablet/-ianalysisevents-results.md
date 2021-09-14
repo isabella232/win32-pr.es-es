@@ -1,7 +1,7 @@
 ---
 description: Se produce cuando finaliza la fase de análisis final.
 ms.assetid: 97318c2d-980e-436c-b97d-e064bace5bf0
-title: _IAnalysisEvents::Results (Evento) (IACom.h)
+title: _IAnalysisEvents::Results (evento, IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 22d9ac16976b1cd61d5d2e403424fc9ed08b8da0cbfcced213decc512a1f1e5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd52a5ce4563827fb22a00f79113fe1e80e852b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118047397"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256850"
 ---
 # <a name="_ianalysiseventsresults-event"></a>\_Evento IAnalysisEvents::Results
 
@@ -58,7 +58,7 @@ Objeto [**IAnalysisStatus**](ianalysisstatus.md) que representa el estado del an
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**IInkAnalyzer**](iinkanalyzer.md) genera este evento después de haber conciliado los resultados de la fase de análisis final.
 
@@ -68,22 +68,22 @@ Si la aplicación mantiene su propia estructura de datos, que se sincroniza con 
 
 Bloquee la estructura de datos cuando [**IInkAnalyzer**](iinkanalyzer.md) genera el evento [**\_ IAnalysisProxyEvents::InkAnalyzerStateChanging.**](-ianalysisproxyevents-inkanalyzerstatechanging.md) Los cambios en la estructura de datos durante esta fase de análisis pueden provocar errores en el análisis de entrada de lápiz y la sincronización. Desbloquee la estructura de datos cuando **IInkAnalyzer** genera el evento [**\_ IAnalysisEvents::IntermediateResults**](-ianalysisevents-intermediateresults.md) o **\_ IAnalysisEvents::Results.**
 
-Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
+Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea Proxy de [datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

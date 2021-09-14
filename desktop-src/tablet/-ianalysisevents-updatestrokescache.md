@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 9a5854c8061a12dc558a2ca20ebd893880f899b2113065abd9b8122c53812aa0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d16011d8c5fe571d228b632fecb7a973bafcbf5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118047377"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256845"
 ---
 # <a name="_ianalysiseventsupdatestrokescache-event"></a>\_Evento IAnalysisEvents::UpdateStrokesCache
 
@@ -58,7 +58,7 @@ Identificadores de los trazos cuyos datos de paquete se han borrado.
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**IInkAnalyzer**](iinkanalyzer.md) genera este evento durante el análisis de entrada de lápiz cuando accede a uno o varios trazos para los que se han borrado los datos del paquete. Para actualizar los datos del paquete de trazo, use el [**método IInkAnalyzer::UpdateStrokesData .**](iinkanalyzer-updatestrokesdata.md)
 
@@ -70,16 +70,16 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

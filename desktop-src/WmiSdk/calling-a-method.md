@@ -5,37 +5,37 @@ ms.tgt_platform: multiple
 title: Llamar a un método WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1db6c8a74c8125e0bb1727839b8f59f4b486161d5ae629a0c7351481ade016ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c327bbf0c4c90ad05d1c5026e3308e5fd8447aec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118820119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240909"
 ---
 # <a name="calling-a-wmi-method"></a>Llamar a un método WMI
 
-WMI proporciona métodos en la [API COM y](com-api-for-wmi.md) la [API de scripting](scripting-api-for-wmi.md) para obtener información o manipular objetos en un sistema empresarial. Por ejemplo, el método de scripting wmi [**SWbemServices.Execonsultas cQuery**](swbemservices-execquery.md) para los datos. Los proveedores también tienen métodos definidos en las clases que registran. Algunos ejemplos son [**los métodos \_ Win32 LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) [**Chkdsk**](/windows/desktop/CIMWin32Prov/chkdsk-method-in-class-win32-logicaldisk) y [**ScheduleAutoChk**](/windows/desktop/CIMWin32Prov/scheduleautochk-method-in-class-win32-logicaldisk) proporcionados por el [proveedor de Win32.](/windows/desktop/CIMWin32Prov/win32-provider)
+WMI proporciona métodos en la [API COM](com-api-for-wmi.md) y la [API de scripting](scripting-api-for-wmi.md) para obtener información o manipular objetos en un sistema empresarial. Por ejemplo, el método de scripting wmi [**SWbemServices.ExecQuery**](swbemservices-execquery.md) consulta los datos. Los proveedores también tienen métodos definidos en las clases que registran. Algunos ejemplos son [**los métodos \_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) [**Chkdsk**](/windows/desktop/CIMWin32Prov/chkdsk-method-in-class-win32-logicaldisk) y [**ScheduleAutoChk**](/windows/desktop/CIMWin32Prov/scheduleautochk-method-in-class-win32-logicaldisk) proporcionados por el [proveedor win32.](/windows/desktop/CIMWin32Prov/win32-provider)
 
-En este tema se de abordan las siguientes secciones:
+En este tema se de abordan las secciones siguientes:
 
--   [Métodos WMI en comparación con métodos de proveedor](#wmi-methods-compared-to-provider-methods)
+-   [Métodos WMI comparados con métodos de proveedor](#wmi-methods-compared-to-provider-methods)
 -   [Modos de llamada a métodos en WMI](#method-calling-modes-in-wmi)
     -   [Modo sincrónico](#synchronous-mode)
     -   [Modo asincrónico](#asynchronous-mode)
     -   [Modo semisincronoso](#semisynchronous-mode)
 -   [Temas relacionados](#related-topics)
 
-## <a name="wmi-methods-compared-to-provider-methods"></a>Métodos WMI en comparación con métodos de proveedor
+## <a name="wmi-methods-compared-to-provider-methods"></a>Métodos WMI comparados con métodos de proveedor
 
-Mediante el uso [*de llamadas a métodos WMI*](gloss-w.md) combinadas con llamadas a [*métodos*](gloss-p.md) de proveedor, puede recuperar y manipular información sobre su empresa. Para obtener más información, vea [Llamar a un método WMI y](calling-a-wmi-method.md) Llamar a un método de [proveedor](calling-a-provider-method.md).
+Mediante el [*uso de llamadas a métodos WMI*](gloss-w.md) combinadas con llamadas a [*métodos*](gloss-p.md) de proveedor, puede recuperar y manipular información sobre su empresa. Para obtener más información, vea [Llamar a un método WMI y](calling-a-wmi-method.md) Llamar a un método de [proveedor](calling-a-provider-method.md).
 
 Los métodos del objeto de scripting wmi [**SWbemObject**](swbemobject.md) tienen un estado especial porque se pueden aplicar a cualquier clase de datos WMI. Para obtener más información, vea [Scripting con SWbemObject](scripting-with-swbemobject.md).
 
 En el ejemplo de código siguiente se llama a WMI y a los métodos de proveedor.
 
-Los siguientes métodos wmi y de proveedor se encuentran en [scripting API para WMI](scripting-api-for-wmi.md):
+Los siguientes métodos wmi y proveedor se encuentran en [scripting API para WMI](scripting-api-for-wmi.md):
 
--   **objWMIService.ExecQuery llama** al método de scripting wmi [ **SWbemServices.ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery)
+-   **objWMIService.ExecQuery llama** al método de scripting WMI [ **SWbemServices.ExecQuery.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery)
 -   **objService.StopService()** llama al método de proveedor [ **Win32 \_ Service.StopService**](/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service)
 
 Puede buscar el código que puede aparecer en "Devolución" en la sección Códigos de retorno del [**servicio Win32. \_**](/windows/desktop/CIMWin32Prov/win32-service)
@@ -72,7 +72,7 @@ foreach ($objService in $colServices)
 
 ## <a name="method-calling-modes-in-wmi"></a>Method-Calling en WMI
 
-El modo de llamada semisincronosa normalmente proporciona el mejor equilibrio entre seguridad y rendimiento.
+Normalmente, el modo de llamada semisincronosa proporciona el mejor equilibrio entre seguridad y rendimiento.
 
 Para obtener más información sobre cada uno de los modos posibles, vea lo siguiente:
 
@@ -86,7 +86,7 @@ El modo sincrónico se produce cuando el programa o los scripts se detienen hast
 
 El modo sincrónico puede tener un efecto adverso del rendimiento del programa o script en el equipo que ejecuta el programa o script. Por ejemplo, recuperar sincrónicamente miles de eventos del registro de eventos puede tardar mucho tiempo y usar mucha memoria porque WMI crea un objeto a partir de cada evento y, a continuación, coloca esos objetos en una colección antes de pasar la colección al método .
 
-Solo debe llamar a métodos que no devuelvan grandes conjuntos de datos en modo sincrónico. Los [**métodos SWbemServices siguientes**](swbemservices.md) se pueden llamar de forma segura en modo sincrónico:
+Solo debe llamar a métodos que no devuelvan grandes conjuntos de datos en modo sincrónico. Los siguientes [**métodos SWbemServices**](swbemservices.md) se pueden llamar de forma segura en modo sincrónico:
 
 -   [**SWbemServices.Delete**](swbemservices-delete.md)
 -   [**SWbemServices.ExecMethod**](swbemservices-execmethod.md)
@@ -96,9 +96,9 @@ Cualquier [**método SWbemServices**](swbemservices.md) sin la palabra "Async" e
 
 ### <a name="asynchronous-mode"></a>Modo asíncrono
 
-El modo asincrónico se produce cuando el programa o script continúa en ejecución después de llamar al método . WMI devuelve todos los objetos del método a [**un objeto SWbemSink**](swbemsink.md) a medida que se crea cada objeto. El programa o script que realiza la llamada debe tener un objeto **SWbemSink** y un controlador de eventos [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md) para procesar los objetos devueltos. Para obtener más información sobre cómo crear un controlador de eventos para el modo asincrónico, vea [Recibir un evento WMI](receiving-a-wmi-event.md).
+El modo asincrónico se produce cuando el programa o script continúa en ejecución después de llamar al método . WMI devuelve todos los objetos del método a [**un objeto SWbemSink**](swbemsink.md) a medida que se crea cada objeto. El programa o script de llamada debe tener un **objeto SWbemSink** y un controlador de eventos [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md) para procesar los objetos devueltos. Para obtener más información sobre cómo crear un controlador de eventos para el modo asincrónico, vea [Recibir un evento WMI](receiving-a-wmi-event.md).
 
-Aunque este modo no tiene el rendimiento y la penalización de recursos del modo sincrónico, el modo asincrónico puede crear riesgos de seguridad graves porque es posible que los resultados almacenados en el objeto [**SWbemSink**](swbemsink.md) no proceden del programa o script de llamada. WMI reduce el nivel de autenticación en el **objeto SWbemSink** hasta que el método se realiza correctamente. Para obtener más información sobre cómo mitigar estos riesgos de seguridad, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
+Aunque este modo no tiene el rendimiento y la penalización de recursos del modo sincrónico, el modo asincrónico puede crear riesgos de seguridad graves porque es posible que los resultados almacenados en el objeto [**SWbemSink**](swbemsink.md) no proceden del programa o script de llamada. WMI reduce el nivel de autenticación en **el objeto SWbemSink** hasta que el método se realiza correctamente. Para obtener más información sobre cómo mitigar estos riesgos de seguridad, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
 Los métodos anexados con la palabra Async son métodos para el modo asincrónico. Los métodos siguientes son llamadas asincrónicas:
 
@@ -122,7 +122,7 @@ El modo semisincronoso es similar al modo asincrónico, ya que el programa o scr
 
 Dado que WMI administra el objeto, el modo semisincronoso es más seguro que el modo asincrónico. Sin embargo, si usa el modo semisincronoso con más de 1000 instancias, la recuperación de instancias puede penalizar los recursos disponibles, lo que puede degradar el rendimiento del programa o script y del equipo mediante el programa o script. Cada objeto toma los recursos necesarios hasta que se libera la memoria.
 
-Para evitar esta condición, puede llamar al método con el parámetro *iFlags* establecido con las marcas **wbemFlagForwardOnly** y **wbemFlagReturnImmediately** para indicar a WMI que devuelva un [**SWbemObjectSet**](swbemobjectset.md)de solo avance. Un **SWbemObjectSet** de solo avance elimina el problema de rendimiento causado por un conjunto de datos grande al liberar la memoria después de enumerar el objeto.
+Para evitar esta condición, puede llamar al método con el parámetro *iFlags* establecido con las marcas **wbemFlagForwardOnly** y **wbemFlagReturnImmediately** para indicar a WMI que devuelva un [**SWbemObjectSet de**](swbemobjectset.md)solo avance. Un **SWbemObjectSet** de solo avance elimina el problema de rendimiento causado por un conjunto de datos grande al liberar la memoria después de enumerar el objeto.
 
 Cualquier [**método SWbemServices**](swbemservices.md) al que no se pueda llamar en modo sincrónico o asincrónico se llama en modo semisincronoso.
 
@@ -139,7 +139,7 @@ Se llama a los métodos siguientes en modo semisincronoso:
 -   [**SWbemServices.SubclassesOf**](swbemservices-subclassesof.md)
 -   [**SWbemServices.Put**](swbemservicesex-put.md)
 
-Para obtener más información sobre el modo semisincrónico, vea Realizar una llamada semisincronosa con [C++](making-a-semisynchronous-call-with-c--.md) y Realizar una llamada [semisincronosa con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
+Para obtener más información sobre el modo semisincronoso, vea Realizar una llamada [semisincronosa](making-a-semisynchronous-call-with-c--.md) con C++ y Realizar una llamada semisincronosa [con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

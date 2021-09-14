@@ -1,7 +1,7 @@
 ---
 description: Puntero a la interfaz IMemInputPin del pin de entrada.
 ms.assetid: 59383b5d-cfd2-40ae-9075-c55aa20139ae
-title: Miembro COutputQueue::m_pInputPin (Outputq.h)
+title: COutputQueue::m_pInputPin miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 497eaf85f1884da3817564d06f2a1989f5e33fec99f5aae50cd435cff76dce0c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d47444a95d8497e67c72fa399308ff7d8e815f46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119871545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062451"
 ---
 # <a name="coutputqueuem_pinputpin-member"></a>Miembro COutputQueue::m \_ pInputPin
 
@@ -47,7 +47,7 @@ IMemInputPin *m_pInputPin;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

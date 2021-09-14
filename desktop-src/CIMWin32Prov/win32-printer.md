@@ -102,12 +102,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5f1a91ac90560343a38e546590005e8b984d13843eba8195381daa204e2d22cb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 48fc170cb3e85d44dc3e01140fe2c881a7ec975b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062248"
 ---
 # <a name="win32_printer-class"></a>Clase De impresora Win32 \_
 
@@ -209,7 +209,7 @@ class Win32_Printer : CIM_Printer
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Printer de Win32** tiene estos tipos de miembros:
 
@@ -300,7 +300,7 @@ Impresora predeterminada en un equipo.
 
 <span id="PRINTER_ATTRIBUTE_SHARED"></span><span id="printer_attribute_shared"></span>
 
-<span id="PRINTER_ATTRIBUTE_SHARED"></span><span id="printer_attribute_shared"></span>**IMPRESORA \_ ATTRIBUTE \_ SHARED** (8 (0x8))
+<span id="PRINTER_ATTRIBUTE_SHARED"></span><span id="printer_attribute_shared"></span>**IMPRESORA \_ ATRIBUTO \_ COMPARTIDO** (8 (0x8))
 
 
 </dt> <dd>
@@ -542,7 +542,7 @@ En ejecución o con energía completa
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -611,7 +611,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
 
 
 </dt> <dd>
@@ -622,7 +622,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
 
 
 </dt> <dd>
@@ -633,12 +633,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo está silencioso.
+El dispositivo es silencioso.
 
 </dd> </dl>
 
@@ -658,7 +658,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("CIM
 
 Matriz de todas las hojas de trabajo disponibles en una impresora. También se puede usar para describir el banner que una impresora puede proporcionar al principio de cada trabajo u otras opciones especificadas por el usuario.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -689,7 +689,7 @@ Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [*
 
 Matriz de funcionalidades de impresora.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 <dt>
 
@@ -751,7 +751,7 @@ Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
 
 <span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>
 
-<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Insondes** (8)
+<span id="Punch"></span><span id="punch"></span><span id="PUNCH"></span>**Despedaz** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -833,14 +833,14 @@ Two-Sided Short Edge
 
 <span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>
 
-<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inverso** (18)
+<span id="Reverse_Landscape"></span><span id="reverse_landscape"></span><span id="REVERSE_LANDSCAPE"></span>**Horizontal inversa** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quality_High"></span><span id="quality_high"></span><span id="QUALITY_HIGH"></span>
 
-<span id="Quality_High"></span><span id="quality_high"></span><span id="QUALITY_HIGH"></span>**Calidad alta** (19)
+<span id="Quality_High"></span><span id="quality_high"></span><span id="QUALITY_HIGH"></span>**Alto de calidad** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -875,7 +875,7 @@ Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [*
 
 Matriz de cadenas de forma libre que proporcionan explicaciones detalladas de las características de impresora indicadas en la **matriz Capabilities.** Cada entrada de esta matriz está relacionada con una entrada de la matriz **Capabilities** que se encuentra en el mismo índice.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -909,9 +909,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("CIM \_ PrintJob.CharSet"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| Printer-MIB.prtLocalizationCharacterSet")
 </dt> </dl>
 
-Matriz de juegos de caracteres disponibles para la salida. Las cadenas proporcionadas en esta propiedad deben cumplir la semántica y la sintaxis especificadas por la sección 4.1.2 ("Parámetros de juego de caracteres") en RFC 2046 (parte MIME 2) y contenidas en el registro de juego de caracteres de IANA. Entre los ejemplos se incluyen "UTF-8", "us-ASCII" e "iso-8859-1".
+Matriz de juegos de caracteres disponibles para la salida. Las cadenas proporcionadas en esta propiedad deben ajustarse a la semántica y la sintaxis especificadas por la sección 4.1.2 ("Parámetros de juego de caracteres") en RFC 2046 (parte 2 de MIME) y contenidas en el registro de juego de caracteres de IANA. Entre los ejemplos se incluyen "UTF-8", "us-ASCII" e "iso-8859-1".
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -944,7 +944,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1926,7 +1926,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Tipo MIME que se usa actualmente si **CurrentLanguage** es un tipo MIME (valor = 47).
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -1944,7 +1944,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Idioma que la impresora usa actualmente para la administración. El idioma que se muestra aquí también debe aparecer en la **propiedad NaturalLanguagesSupported.**
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -1962,11 +1962,11 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Tipo de papel que usa la impresora. Debe expresarse en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 10175, que se resume en el Apéndice C de RFC 1759 (Impresora MIB).
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
-**Predeterminado**
+**Valor predeterminado**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -1993,7 +1993,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Matriz de las funcionalidades de impresora usadas de forma predeterminada. Cada entrada de la **matriz DefaultCapabilities** también debe aparecer en la matriz **Capabilities.**
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 <dt>
 
@@ -2176,7 +2176,7 @@ Tipo de acceso: solo lectura
 
 Número de copias producidas para un trabajo, a menos que se especifique lo contrario.
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -2194,7 +2194,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Idioma de impresora predeterminado. El idioma que se muestra aquí también debe aparecer en la **propiedad LanguagesSupported.**
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 <dt>
 
@@ -2576,7 +2576,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Tipo MIME que se usa actualmente, si el **valor DefaultLanguage** es un tipo MIME (valor = 47).
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -2591,7 +2591,7 @@ Tipo de acceso: solo lectura
 
 Número de páginas de flujo de impresión que la impresora representa en una hoja de medios, a menos que un trabajo especifique lo contrario.
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -2609,7 +2609,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Tipo de papel que usa la impresora, a menos que un trabajo de impresión especifique otro tipo de papel. La cadena debe expresarse en el formato especificado por la aplicación de impresión de documentos (DPA) ISO/IEC 1017, que se resume en el Apéndice C de [RFC 1759](https://www.ietf.org/rfc/rfc1759.txt) (Impresora MIB).
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -2658,7 +2658,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Información de error de impresora.
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 <dt>
 
@@ -3650,7 +3650,7 @@ Tipo de acceso: lectura y escritura
 
 Ubicación física de la impresora.
 
-Ejemplo: Bldg. 38, sala 1164
+Ejemplo: Bldg. 38, Sala 1164
 
 </dd> <dt>
 
@@ -3668,7 +3668,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IET
 
 Tecnología de marcado que usa la impresora.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 <dt>
 
@@ -3688,35 +3688,35 @@ Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
 
 <span id="Electrophotographic_LED"></span><span id="electrophotographic_led"></span><span id="ELECTROPHOTOGRAPHIC_LED"></span>
 
-**LED fotográfico** (3)
+**LEDfotográfico** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Electrophotographic_Laser"></span><span id="electrophotographic_laser"></span><span id="ELECTROPHOTOGRAPHIC_LASER"></span>
 
-**Rayos fotográficos** (4)
+**Rayosfotográficos** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Electrophotographic_Other"></span><span id="electrophotographic_other"></span><span id="ELECTROPHOTOGRAPHIC_OTHER"></span>
 
-**Otros biográficos** (5)
+**Otros iconográficos** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Impact_Moving_Head_Dot_Matrix_9pin"></span><span id="impact_moving_head_dot_matrix_9pin"></span><span id="IMPACT_MOVING_HEAD_DOT_MATRIX_9PIN"></span>
 
-**Impact Moving Head Dot Matrix 9pin** (6)
+**Matriz de puntos de cabeza móviles de impacto 9 pines** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Impact_Moving_Head_Dot_Matrix_24pin"></span><span id="impact_moving_head_dot_matrix_24pin"></span><span id="IMPACT_MOVING_HEAD_DOT_MATRIX_24PIN"></span>
 
-**Impact Moving Head Dot Matrix 24pin** (7)
+**Matriz de puntos de cabeza móviles de impacto de 24 pines** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -3744,7 +3744,7 @@ Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
 
 <span id="Impact_Other"></span><span id="impact_other"></span><span id="IMPACT_OTHER"></span>
 
-**Impacto en otros** (11)
+**Otro impacto** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -3793,21 +3793,21 @@ Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
 
 <span id="Thermal_Diffusion"></span><span id="thermal_diffusion"></span><span id="THERMAL_DIFFUSION"></span>
 
-**Desafuso** térmico (18)
+**Tratamiento térmico** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Thermal_Other"></span><span id="thermal_other"></span><span id="THERMAL_OTHER"></span>
 
-**Otro térmico** (19)
+**Otros térmicos** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Electroerosion"></span><span id="electroerosion"></span><span id="ELECTROEROSION"></span>
 
-**Pinturaion** (20)
+**Procesión** (20)
 
 
 </dt> <dd></dd> <dt>
@@ -3821,28 +3821,28 @@ Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
 
 <span id="Photographic_Microfiche"></span><span id="photographic_microfiche"></span><span id="PHOTOGRAPHIC_MICROFICHE"></span>
 
-**Microficha fotográfica** (22)
+**Microfiche de fotografías** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Photographic_Imagesetter"></span><span id="photographic_imagesetter"></span><span id="PHOTOGRAPHIC_IMAGESETTER"></span>
 
-**Imagen fotográfica** (23)
+**Semágenes de fotografías** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Photographic_Other"></span><span id="photographic_other"></span><span id="PHOTOGRAPHIC_OTHER"></span>
 
-**Otras fotografías** (24)
+**Otro** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ion_Deposition"></span><span id="ion_deposition"></span><span id="ION_DEPOSITION"></span>
 
-**Deposición de ion** (25)
+**Deposición de iones** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -3875,9 +3875,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("CIM \_ PrintJob.Copies")
 </dt> </dl>
 
-Número máximo de copias que la impresora puede producir para un trabajo.
+Número máximo de copias que la impresora puede generar para un trabajo.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -3895,7 +3895,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("CIM
 
 Número máximo de páginas de flujo de impresión que la impresora puede representar en una hoja de medios, como papel.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -3911,9 +3911,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("CIM \_ PrintJob.JobSize"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Trabajo más grande como secuencia de bytes, en kilobytes, que la impresora puede aceptar. Un valor de 0 (cero) indica que no se ha establecido ningún límite.
+Trabajo más grande como un flujo de bytes, en kilobytes, que la impresora puede aceptar. Un valor de 0 (cero) indica que no se ha establecido ningún límite.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -3931,7 +3931,7 @@ Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**
 
 Matriz de explicaciones detalladas de tipo MIME que admite la impresora. Si se proporcionan datos, el valor 47 ("MIME") debe incluirse en la **propiedad LanguagesSupported.**
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
@@ -3944,7 +3944,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
 Nombre de la impresora.
@@ -3967,11 +3967,11 @@ Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [*
 
 Matriz de idiomas admitidos para cadenas que la impresora usa para la salida de información de administración. Debe ajustarse [a RFC 1766.](https://www.ietf.org/rfc/rfc1766.txt) Por ejemplo, "en" se usa para inglés.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 </dd> <dt>
 
-**Red**
+**Network**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -3995,7 +3995,7 @@ Tipo de acceso: solo lectura
 
 Matriz de los tipos de papel que admite la impresora.
 
-Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de [**la impresora CIM. \_**](cim-printer.md)
 
 <dt>
 
@@ -4644,7 +4644,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* PNP030b
 
@@ -4659,7 +4659,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Puerto que se usa para transmitir datos a una impresora. Si una impresora está conectada a más de un puerto, los nombres de cada puerto se separan por comas.
+Puerto que se usa para transmitir datos a una impresora. Si una impresora está conectada a más de un puerto, los nombres de cada puerto se separan mediante comas.
 
 Ejemplo: LPT1:, LPT2:, LPT3:
 
@@ -4676,7 +4676,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **\_ CIM LogicalDevice.**
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -4730,7 +4730,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice de CIM** primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](../wmisdk/designing-managed-object-format--mof--classes.md).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](../wmisdk/designing-managed-object-format--mof--classes.md).
 
 </dd> <dt>
 
@@ -4752,9 +4752,9 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 </dt> <dd>
 
-Timed Power-On compatible
+Se admiten Power-On tiempo
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -4771,7 +4771,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** se puede administrar la potencia del dispositivo, lo que significa que se puede poner en modo de suspensión. La propiedad no indica que las características de administración de energía están habilitadas, solo que el dispositivo lógico es capaz de la administración de energía.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -4784,7 +4784,7 @@ Tipo de datos: **matriz de** cadenas
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de tamaños de papel admitidos por la impresora. Los nombres especificados por la impresora se usan para representar tamaños de papel admitidos.
+Matriz de tamaños de papel compatibles con la impresora. Los nombres especificados por la impresora se usan para representar tamaños de papel admitidos.
 
 Ejemplo: B5 (JIS)
 
@@ -4809,7 +4809,7 @@ Uno de los posibles estados relacionados con esta impresora. Esta propiedad ha q
 0
 </dt> <dd>
 
-Inactivo: para obtener más información, consulte la sección Comentarios a continuación.
+Inactivo: para obtener más información, vea la sección Comentarios a continuación.
 
 </dd> <dt>
 
@@ -4837,7 +4837,7 @@ Eliminación pendiente
 4
 </dt> <dd>
 
-Ateso de papel
+Atasco de papel
 
 </dd> <dt>
 
@@ -4949,7 +4949,7 @@ Sin tóner
 20
 </dt> <dd>
 
-Punt de página
+Punto de página
 
 </dd> <dt>
 
@@ -5002,9 +5002,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIB. IETF \| Printer-MIB.hrPrinterStatus")
 </dt> </dl>
 
-Información de estado de una impresora que es diferente de la información especificada en la propiedad Disponibilidad **del dispositivo** lógico.
+Información de estado de una impresora que es diferente de la información especificada en la propiedad **Disponibilidad del dispositivo** lógico.
 
-Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
+Esta propiedad se hereda de la [**impresora CIM \_**](cim-printer.md).
 
 <dt>
 
@@ -5029,7 +5029,7 @@ Esta propiedad se hereda de [**la impresora CIM \_**](cim-printer.md).
 
 </dt> <dd>
 
-Inactivo: para obtener más información, vea la sección Comentarios a continuación.
+Inactivo: para obtener más información, consulte la sección Comentarios a continuación.
 
 </dd> <dt>
 
@@ -5053,7 +5053,7 @@ Warming Up
 
 <span id="Stopped_Printing"></span><span id="stopped_printing"></span><span id="STOPPED_PRINTING"></span>
 
-<span id="Stopped_Printing"></span><span id="stopped_printing"></span><span id="STOPPED_PRINTING"></span>**Se ha detenido** la impresión (6)
+<span id="Stopped_Printing"></span><span id="stopped_printing"></span><span id="STOPPED_PRINTING"></span>**Impresión detenida** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -5130,7 +5130,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si **es TRUE,** la impresora almacena en búfer y pone en cola los trabajos de impresión.
+Si **es TRUE,** los búferes de impresora y las colas imprimen trabajos.
 
 </dd> <dt>
 
@@ -5143,7 +5143,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si **es TRUE,** la impresora acepta solo los datos sin procesar que se va a colar.
+Si **es TRUE,** la impresora acepta solo los datos sin procesar para que se puedan colar.
 
 </dd> <dt>
 
@@ -5213,7 +5213,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **En desuso**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Esta propiedad está obsoleta; no se usan. Si **es TRUE,** la cola de impresión está habilitada para la impresora.
+Esta propiedad está obsoleta; no use. Si **es TRUE,** la cola está habilitada para la impresora.
 
 </dd> <dt>
 
@@ -5226,7 +5226,7 @@ Tipo de datos: **datetime**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Fecha y hora en que una impresora puede empezar a imprimir un trabajo, si la impresora se limita a imprimir en momentos específicos. Este valor se expresa como el tiempo transcurrido desde las 12:00 a.m. GMT (hora media de Greenwich).
+Fecha y hora en que una impresora puede empezar a imprimir un trabajo, si la impresora está limitada a imprimirse en momentos específicos. Este valor se expresa como el tiempo transcurrido desde las 12:00 a.m. GMT (hora media de Greenwich).
 
 </dd> <dt>
 
@@ -5242,7 +5242,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: **Ok**, **Degraded** y **Pred Fail** (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: **Error**, **Starting**, **Stopping** y **Service**. El último, **Service**, podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es **correcto** ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: **Ok**, **Degraded** y **Pred Fail** (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: **Error**, **Starting**, **Stopping** y **Service**. El último, **Service**, podría aplicarse durante la resilvering de reflejo de un disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es **correcto** ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -5273,7 +5273,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -5287,14 +5287,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -5486,11 +5486,11 @@ Si **es TRUE,** puede poner en cola los trabajos de impresión en el equipo cuan
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase Printer \_ de Win32** se deriva de [**cim \_ printer**](cim-printer.md). Antes de llamar a [**\_ SWbemObject.Put**](../wmisdk/swbemobject-put-.md) o [**IWbemServices::P utInstance**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-putinstance) para una instancia de **\_ Impresora Win32,** se debe habilitar el privilegio **SeLoadDriverPrivilege** **(wbemPrivilegeLoadDriver para** Visual Basic y LoadDriver para los monikers de scripting). Para obtener más información, vea [**Constantes de privilegios**](../wmisdk/privilege-constants.md) y [Ejecución de operaciones con privilegios.](../wmisdk/executing-privileged-operations.md) En el siguiente ejemplo de código de VBScript se muestra cómo habilitar el **privilegio SetLoadDriverPrivilege** en el script.
+La **clase Printer \_ de Win32** se deriva de [**cim \_ printer**](cim-printer.md). Antes de llamar a [**\_ SWbemObject.Put**](../wmisdk/swbemobject-put-.md) o [**IWbemServices::P utInstance**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-putinstance) para una instancia de **\_ Impresora Win32,** se debe habilitar el privilegio **SeLoadDriverPrivilege** **(wbemPrivilegeLoadDriver** para Visual Basic y LoadDriver para los monikers de scripting). Para obtener más información, vea [**Constantes de privilegios**](../wmisdk/privilege-constants.md) y [Ejecución de operaciones con privilegios.](../wmisdk/executing-privileged-operations.md) En el siguiente ejemplo de código de VBScript se muestra cómo habilitar el **privilegio SetLoadDriverPrivilege** en el script.
 
-Para trabajar con clústeres de impresora MSCS, use el prnadmin.dll ensamblado o, de lo contrario, .NET Framework espacio de [nombres System.Printing.](/dotnet/api/system.printing)
+Para trabajar con clústeres de impresora MSCS, use el prnadmin.dll ensamblado o, de lo contrario, .NET Framework [espacio de nombres System.Printing.](/dotnet/api/system.printing)
 
 
 ```VB
@@ -5501,16 +5501,16 @@ Set objPrinter = GetObject("winmgmts:{impersonationLevel=Impersonate,(LoadDriver
 
 Windows usa las credenciales del usuario que ejecuta el script para determinar cuáles son las impresoras disponibles. Por lo tanto, si ejecuta un script de forma remota, es posible que solo pueda acceder a cualquier impresora que esté disponible para su cuenta de usuario en ese sistema remoto.
 
-No se puede usar la **clase \_ Printer de Win32** para impresoras en un clúster de impresión de MSCS. En su lugar, puede que tenga que usar la herramienta PrinterAdmin (PrnAdmin.dll) o el espacio .NET Framework [system.printing.](/dotnet/api/system.printing)
+No se puede usar la **clase \_ Printer de Win32** para impresoras en un clúster de impresión de MSCS. En su lugar, puede que tenga que usar la herramienta PrinterAdmin (PrnAdmin.dll) o el espacio de nombres [.NET Framework System.Printing.](/dotnet/api/system.printing)
 
 > [!Note]  
-> Si va a recuperar **PrinterStatus** = 3 o **PrinterState** = 0, es posible que el controlador de impresora no esté alimentando información precisa en WMI. WMI recupera la información de impresora del spoolsv.exe proceso. Es posible que el controlador de impresora no informe de su estado al administrador de trabajos de cola. En este caso, **la impresora Win32 \_** notifica la impresora como **Inactiva.**
+> Si va a recuperar **PrinterStatus** = 3 o **PrinterState** = 0, es posible que el controlador de impresora no esté alimentando información precisa en WMI. WMI recupera la información de impresora del spoolsv.exe proceso. Es posible que el controlador de impresora no informe de su estado al administrador de trabajos en cola. En este caso, **la impresora Win32 \_** notifica la impresora como **Inactiva.**
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-Ps [Create a Computer Configuration Drawing](https://Gallery.TechNet.Microsoft.Com/84e2c31a-e644-4f79-83cd-e2b1a0ef8557) using Visio PowerShell sample on TechNet Gallery usa la impresora **Win32 \_** para interactuar con un modelo de automatización de Visio para crear un dibujo Visio.
+En el ejemplo de PowerShell create [a computer configuration drawing using Visio](https://Gallery.TechNet.Microsoft.Com/84e2c31a-e644-4f79-83cd-e2b1a0ef8557) PowerShell de la Galería de TechNet se usa la impresora **\_ Win32** para interactuar con un modelo de automatización de Visio para crear un Visio diseño.
 
 El [script de información de EQUIPO remoto de PowerShell](https://Gallery.TechNet.Microsoft.Com/2a8a008c-ee30-4b50-a81a-1b7545ef3436) usa una serie de clases, incluida la impresora **Win32, \_** para recuperar información sobre un equipo remoto.
 
@@ -5523,7 +5523,7 @@ Get-WmiObject win32_printer | %{if ($_.default) {$_}}
 
 
 
-En el siguiente ejemplo de código de VBScript se describe cómo recuperar estadísticas de impresora de instancias de **Impresora Win32 \_**.
+En el siguiente ejemplo de código de VBScript se describe cómo recuperar estadísticas de impresora de instancias de **impresora \_ Win32.**
 
 
 ```VB
@@ -5607,7 +5607,7 @@ Next
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

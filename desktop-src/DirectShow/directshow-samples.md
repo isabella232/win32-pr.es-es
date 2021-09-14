@@ -5,15 +5,15 @@ title: DirectShow Muestras
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 87687905d53f91339202af2b08bffa79902e100d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467362"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062334"
 ---
 # <a name="directshow-samples"></a>DirectShow Muestras
 
-Los DirectShow se incluyen con el [SDK Windows .](https://msdn.microsoft.com/windows/aa904949.aspx) Se encuentran en la ruta de acceso \[ SDK Root Samples Multimedia \] \\ \\ \\ DirectShow.
+Los DirectShow se incluyen con el [SDK Windows](https://msdn.microsoft.com/windows/aa904949.aspx). Se encuentran en la ruta de acceso \[ SDK Root Samples Multimedia \] \\ \\ \\ DirectShow.
 
 En la tabla siguiente se enumeran todos los DirectShow ejemplos proporcionados en el SDK Windows. Para obtener instrucciones sobre cómo compilar los ejemplos, consulte la documentación proporcionada en el SDK de Windows.
 
@@ -39,15 +39,15 @@ Si hay documentación adicional para un ejemplo, la primera columna de esta tabl
 | <a href="async-filter-sample.md">Ejemplo de filtro asincrónico</a> | Filtros, origen | Filtro de lector de archivos que admite la descarga progresiva. | strmbase.lib | 
 | <a href="ball-filter-sample.md">Ejemplo de filtro de bola</a> | Filtros, origen | Filtro de origen de vídeo que genera una imagen de una bola de contrabando. | strmbase.lib | 
 | <a href="push-source-filters-sample.md">Ejemplo de filtros de origen de inserción</a> | Filtros, origen | Filtros de origen que proporcionan los datos siguientes como secuencia de vídeo: un solo mapa de bits, un conjunto de mapas de bits y una copia de la imagen de escritorio actual. | strmbase.lib | 
-| <a href="synth-filter-sample.md">Ejemplo de filtro de Synth</a> | Filtros, origen | Filtro de origen que genera formas de onda de audio. En este ejemplo se muestra la creación dinámica de grafos. | strmbase.lib | 
+| <a href="synth-filter-sample.md">Ejemplo de filtro de Synth</a> | Filtros, origen | Filtro de origen que genera formas de onda de audio. En este ejemplo se muestra la creación de gráficos dinámicos. | strmbase.lib | 
 | <a href="ezrgb24-filter-sample.md">Ejemplo de filtro EZRGB24</a> | Filtros, transformación | Filtro de procesamiento de imágenes. | strmbase.lib | 
 | <a href="gargle-filter-sample.md">Ejemplo de filtro de Gargle</a> | Filtros, transformación | Filtro de efecto de audio. | strmbase.lib | 
 | <a href="wavdest-filter-sample.md">Ejemplo de filtro WavDest</a> | Filtros, transformación | Escribe una secuencia de audio en un archivo WAV. | strmbase.lib | 
-| <a href="dmoenum-sample.md">DMOEnum Sample</a> | Varios | Muestra cómo enumerar objetos <a href="directx-media-objects.md">multimedia DirectX</a> (DDO). | 
+| <a href="dmoenum-sample.md">DMOEnum Sample</a> | Varios | Muestra cómo enumerar objetos <a href="directx-media-objects.md">multimedia (DMO) de DirectX.</a> | 
 | <a href="mapper-sample.md">Ejemplo del asignador</a> | Varios | Muestra cómo usar el <a href="filter-mapper.md">Asignador de filtros</a> para buscar filtros en el Registro. | 
 | Ejemplo de SysEnum | Varios | Muestra cómo usar el <a href="system-device-enumerator.md">enumerador de dispositivos del sistema</a> para enumerar dispositivos y filtros. | 
 | <a href="cutscene-sample.md">Ejemplo de CutScene</a> | Reproducción | Reproduce un archivo de vídeo en modo de pantalla completa. | 
-| Ejemplo DDrawXCL | Reproducción | Reproduce vídeo en el modo de pantalla completa exclusivo de DirectDraw, mediante la <a href="/windows/desktop/api/Strmif/nn-strmif-iddrawexclmodevideo"><strong>interfaz IDDrawExclModeVideo</strong></a> en el filtro <a href="overlay-mixer-filter.md">de</a> Mixer superposición. | 
+| Ejemplo DDrawXCL | Reproducción | Reproduce vídeo en el modo de pantalla completa exclusivo de DirectDraw, mediante la <a href="/windows/desktop/api/Strmif/nn-strmif-iddrawexclmodevideo"><strong>interfaz IDDrawExclModeVideo</strong></a> en el filtro <a href="overlay-mixer-filter.md">Mixer</a> superposición. | 
 | Ejemplo de DShowPlayer | Reproducción | Aplicación de reproducción de vídeo. | 
 | Ejemplo EVRPlayer | Reproducción | Muestra cómo usar el filtro DirectShow EVR.<blockquote>[!Note]<br />Requiere Windows Vista o posterior.</blockquote><br /><br /> Este ejemplo está disponible en el SDK Windows para Windows Server 2008 o posterior.<br /> | strmbase.lib | 
 | Ejemplo texture3D9 | Reproducción | Dibuja vídeo en una superficie de textura de Microsoft DirectX 9.0. | strmbase.lib, SDK de DirectX | 
@@ -65,9 +65,9 @@ Si hay documentación adicional para un ejemplo, la primera columna de esta tabl
 
 ## <a name="additional-dependencies"></a>Dependencias adicionales
 
-Algunos de los ejemplos se vinculan a la biblioteca DirectShow de clases base. Para compilar estos ejemplos, primero debe compilar la biblioteca de clases base. Para obtener más información, [vea DirectShow Base Classes](directshow-base-classes.md). La biblioteca de clases base es necesaria para todos los filtros de ejemplo.
+Algunos de los ejemplos se vinculan a DirectShow biblioteca de clases base. Para compilar estos ejemplos, primero debe compilar la biblioteca de clases base. Para obtener más información, [vea DirectShow Base Classes](directshow-base-classes.md). La biblioteca de clases base es necesaria para todos los filtros de ejemplo.
 
-Algunos de los ejemplos también requieren el SDK de DirectX, además del SDK Windows SDK. Para compilar estos ejemplos, debe instalar el SDK de DirectX y establecer la variable de entorno %DXSDK DIR% igual a la ruta de \_ instalación del SDK de DirectX.
+Algunos de los ejemplos también requieren el SDK de DirectX, además del SDK Windows SDK. Para compilar estos ejemplos, debe instalar el SDK de DirectX y establecer la variable de entorno %DXSDK DIR% igual a la ruta \_ de instalación del SDK de DirectX.
 
 Muchos de los ejemplos DirectShow usan un conjunto de encabezados comunes y archivos de código fuente ubicados en el sdk de Directrory \[ Root Samples Multimedia DirectShow \] \\ \\ \\ \\ Common. Si copia una carpeta de ejemplo en otro directorio, asegúrese de copiar también la carpeta Común.
 

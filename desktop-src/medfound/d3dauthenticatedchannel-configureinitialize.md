@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 27f94dd5aca19d24742d553a65ce3c7f9164edf48cb1aab335d87d338f7e7499
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 072d7886a024b1c28e8c3b7f0609dc8dd3e6add8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257932"
 ---
 # <a name="d3dauthenticatedchannel_configureinitialize-structure"></a>D3DAUTHENTICATEDCHANNEL \_ CONFIGUREINITIALIZE (estructura)
 
-Contiene datos de entrada para un [**comando D3DAUTHENTICATEDCONFIGURE \_ INITIALIZE.**](d3dauthenticatedconfigure-initialize.md)
+Contiene datos de entrada para [**un comando D3DAUTHENTICATEDCONFIGURE \_ INITIALIZE.**](d3dauthenticatedconfigure-initialize.md)
 
 Para enviar esta consulta, llame a [**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure).
 
@@ -39,14 +39,14 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Parámetros**
 </dt> <dd>
 
-Estructura [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURE \_ INPUT**](d3dauthenticatedchannel-configure-input.md) que contiene el GUID del comando y otros datos.
+Estructura [**INPUT de D3DAUTHENTICATEDCHANNEL \_ QUE \_**](d3dauthenticatedchannel-configure-input.md) contiene el GUID del comando y otros datos.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Número de secuencia inicial de los comandos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los **miembros StartSequenceQuery** y **StartSequenceConfigure** contienen un número aleatorio de 32 bits seguro criptográficamente.
 
@@ -74,13 +74,13 @@ Los **miembros StartSequenceQuery** y **StartSequenceConfigure** contienen un n�
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
-| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a9dcfadf3e7a07a5f814f5421ed97d26faff6a5ac4c36ce97b9faea77c6a152
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bb05fed8466188aa0025d2128ce64ad7f1512c07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119293745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061810"
 ---
 # <a name="lvm_hasgroup-message"></a>Mensaje \_ HASGROUP de LVM
 
@@ -37,9 +37,9 @@ Determina si el control list-view tiene un grupo especificado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si el control de vista de lista tiene el grupo especificado o **FALSE** en caso contrario.
+Devuelve **TRUE** si el control list-view tiene el grupo especificado o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
@@ -50,11 +50,11 @@ Devuelve **TRUE** si el control de vista de lista tiene el grupo especificado o 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

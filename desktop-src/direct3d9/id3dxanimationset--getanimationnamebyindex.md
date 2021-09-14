@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dfcc939cb498906ad57798bdb1fd2891f060b067cff76255123e48b24bce955f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 820b21fa69fd7007bdd1971e83ea44368dce5cc2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060632"
 ---
 # <a name="id3dxanimationsetgetanimationnamebyindex-method"></a>Método ID3DXAnimationSet::GetAnimationNameByIndex
 
@@ -63,7 +63,7 @@ Dirección de un puntero a una cadena que recibe el nombre de animación.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR.**](./d3dxerr.md)
+Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Los valores devueltos de este método los implementa un programador de aplicacio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

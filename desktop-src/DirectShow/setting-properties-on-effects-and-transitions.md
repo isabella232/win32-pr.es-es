@@ -4,12 +4,12 @@ ms.assetid: ce773140-7e50-4b72-8cb5-e34cba51644d
 title: Establecer propiedades en efectos y transiciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1305eb7860b5519b14cfeebc349643c2662db3f133c0bf3424d1d71ccf85753c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c4ddd129eb9d4ab24ebef6f5c760a4211f26c9a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061595"
 ---
 # <a name="setting-properties-on-effects-and-transitions"></a>Establecer propiedades en efectos y transiciones
 
@@ -20,7 +20,7 @@ Muchas [DirectShow y transiciones de Editing Services](directshow-editing-servic
 Para establecer una propiedad, realice los pasos siguientes.
 
 1.  Cree una instancia del setter de propiedad (CLSID \_ PropertySetter).
-2.  Rellene [**las estructuras DE \_ PARAM**](dexter-param.md) [**y VALUE \_ DE LA PROPIEDAD DE LA PROPIEDAD**](dexter-value.md) con los datos de propiedad. Estas estructuras se deban tratar a continuación.
+2.  Rellene [**las estructuras \_ PARAM y**](dexter-param.md) VALUE de LA PROPIEDAD DE CONTROL [**\_ con**](dexter-value.md) los datos de propiedad. Estas estructuras se deban tratar a continuación.
 3.  Pase las [**estructuras \_ PARAM y**](dexter-param.md) EL VALOR [**\_ DE LA PROPIEDAD DE CONTROL AL**](dexter-value.md) MÉTODO [**IPropertySetter::AddProp.**](ipropertysetter-addprop.md)
 4.  Repita los pasos 2 y 3 para cada propiedad que quiera establecer.
 5.  Pase el [**puntero de interfaz IPropertySetter**](ipropertysetter.md) al [**método IAMTimelineObj::SetPropertySetter.**](iamtimelineobj-setpropertysetter.md)
@@ -28,12 +28,12 @@ Para establecer una propiedad, realice los pasos siguientes.
 La [**estructura \_ PARAM DE LA**](dexter-param.md) MARCA ESPECIFICA qué propiedad se va a establecer. Contiene los miembros siguientes.
 
 -   **Name:** nombre de la propiedad
--   **dispID:** Reservado, debe ser cero
+-   **dispID:** reservado, debe ser cero
 -   **nValues:** número de valores
 
 La estructura VALUE de LA \_ PROPIEDAD especifica el valor de una propiedad en un momento dado. Contiene los miembros siguientes.
 
--   **v**: tipo VARIANT que especifica un nuevo valor para la propiedad . El **miembro vt** de esta VARIANT define el tipo de datos de la propiedad . Para más información sobre el **tipo VARIANT,** consulte el SDK Windows.
+-   **v**: tipo VARIANT que especifica un nuevo valor para la propiedad . El **miembro vt** de esta VARIANT define el tipo de datos de la propiedad . Para obtener más información sobre el **tipo VARIANT,** consulte el SDK Windows.
 -   **rt:** hora de referencia en la que la propiedad asume este valor, en relación con la hora de inicio del efecto o la transición. La hora de inicio del efecto o transición es relativa a la hora de inicio de su objeto primario.
 -   **dwInterp:** marca que especifica cómo cambia la propiedad del valor anterior al nuevo valor. Con la marca JUMP \_ de LAFF, la propiedad salta al instante al nuevo valor en el momento especificado. Con la marca \_ INTERPOLATE DE INTERPOLACIÓN DE INTERPOLAF, la propiedad se interpola linealmente desde el valor anterior.
 
@@ -89,7 +89,7 @@ pProp->Release();
 
 **Cambiar dinámicamente las propiedades**
 
-Después de representar un proyecto de edición de vídeo, es posible modificar las propiedades de un objeto de efecto o transición mientras se ejecuta el gráfico. Sin embargo, esto solo es posible si establece propiedades en ese objeto antes de la aplicación llamada [**IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md). Si es así, puede llamar a [**IAMTimelineObj::GetPropertySetter**](iamtimelineobj-getpropertysetter.md) en el efecto o la transición, borrar o modificar las propiedades, y los cambios se realizarán dinámicamente a medida que se ejecute el gráfico. Puede haber anomalías visuales mientras se produce el cambio, por lo que solo se recomienda para la versión preliminar. No cambie las propiedades mientras escribe el proyecto en un archivo.
+Después de representar un proyecto de edición de vídeo, es posible modificar las propiedades de un objeto de efecto o transición mientras se ejecuta el gráfico. Sin embargo, esto solo es posible si establece propiedades en ese objeto antes de la aplicación [**llamada IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md). Si es así, puede llamar a [**IAMTimelineObj::GetPropertySetter**](iamtimelineobj-getpropertysetter.md) en el efecto o la transición, borrar o modificar las propiedades, y los cambios se realizarán dinámicamente a medida que se ejecute el gráfico. Puede haber anomalías visuales mientras se produce el cambio, por lo que solo se recomienda para la versión preliminar. No cambie las propiedades mientras escribe el proyecto en un archivo.
 
 Si no estableció ninguna propiedad en el objeto de efecto o transición antes de llamar a **ConnectFrontEnd,** no puede agregarle propiedades mientras se ejecuta el gráfico.
 

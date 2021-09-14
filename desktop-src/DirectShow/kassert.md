@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: a1eb6738ea3e9d4535bf9f8291dc71349d67bb51d143b6bc73e83290f36657cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f797e60a6175a86f2c1c9d675e9607a48a58c14a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817062"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061045"
 ---
 # <a name="kassert-macro"></a>Macro DE MACROS DEERT
 
@@ -50,7 +50,7 @@ Expresión que se va a evaluar.
 
 Esta macro no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A diferencia [**de las**](assert.md) macros ASSERT y [**EXECUTE \_ ASSERT,**](execute-assert.md) esta macro no muestra un cuadro de mensaje que solicita al usuario. En las compilaciones de depuración, si la expresión es **FALSE**, la macro hace automáticamente una excepción de punto de interrupción.
 
@@ -64,7 +64,7 @@ A diferencia [**de las**](assert.md) macros ASSERT y [**EXECUTE \_ ASSERT,**](ex
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

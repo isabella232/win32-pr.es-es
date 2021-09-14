@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 756166fe1e28ec3cd0eef3676caafd8c00c854f18b5f6d179dd12ded18dd4fa6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 902325890b02416e796940388bca7a6548773be5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119750115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060723"
 ---
 # <a name="d3dxmatrixrotationy-function-d3dx9mathh"></a>Función D3DXMatrixRotationY (D3dx9math.h)
 
@@ -65,7 +65,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) girada alrededor del eje Y.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixRotationY** se puede usar como parámetro para otra función.
 
@@ -80,7 +80,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

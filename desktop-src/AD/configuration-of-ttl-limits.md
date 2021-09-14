@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d2786258d060ef4261dcd9fbfad359c71f2dbaeb
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122881603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062762"
 ---
 # <a name="configuration-of-ttl-limits"></a>Configuración de límites de TTL
 
@@ -25,7 +25,7 @@ Los valores predeterminados de los dos parámetros TTL configurables serán los 
 -   Valor TTL predeterminado = 86400 segundos (1 día)
 -   Valor mínimo de TTL = 900 segundos (15 minutos)
 
-Los parámetros de TTL configurables se almacenarán como entradas AVA (aserción de valor de atributo) con el formato " value-name value " en el atributo &lt; &gt; = &lt; &gt; **ms-DS-Other-Configuración** del objeto NTDS-Service especificado por el DN siguiente en la partición Configuration:
+Los parámetros de TTL configurables se almacenarán como entradas AVA (aserción de valor de atributo) con el formato " value-name value " en el atributo &lt; &gt; = &lt; &gt; **ms-DS-Other-Configuración** del objeto NTDS-Service especificado por el DN siguiente en la partición De configuración:
 
 
 ```C++

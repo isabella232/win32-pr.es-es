@@ -1,5 +1,5 @@
 ---
-description: 'Método PauseService de la Win32_Service (proveedores WMI CIMWin32): intenta colocar el servicio en estado en pausa.'
+description: 'Método PauseService de la clase Win32_Service (proveedores WMI CIMWin32): intenta colocar el servicio en estado en pausa.'
 ms.assetid: 5382457e-7f9c-48a5-9262-b815a1a4a605
 ms.tgt_platform: multiple
 title: Método PauseService de la clase Win32_Service (proveedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d5546ef4c67a6c9fa23f723f45725b19999770e11771608e197d6b759ca61de8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7654feea410564137e98861c4c0b5de2b5e7192e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119504545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062691"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método PauseService de la clase Win32_Service (proveedores WMI CIMWin32)
 
@@ -221,7 +221,7 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de determinar qué servicios se pueden detener o pausar, puede usar los métodos [**StopService**](stopservice-method-in-class-win32-service.md) y [**PauseService**](pauseservice-method-in-class-win32-systemdriver.md) para detener y pausar los servicios. La decisión de detener un servicio en lugar de pausarlo, o viceversa, depende de varios factores, incluidos los siguientes:
 
@@ -322,7 +322,7 @@ else
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -332,7 +332,7 @@ else
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: La clase CIM POTSModem representa un dispositivo que traduce los datos binarios en transmisiones de onda para la transmisión basada en sonido mediante la conexión a la red del Sistema de teléfono antiguo sin formato \_ (POTS).
+description: La clase CIM POTSModem representa un dispositivo que traduce los datos binarios en transmisiones de onda para la transmisión basada en sonido mediante la conexión a la red del sistema telefónico sin formato \_ (POTS).
 ms.assetid: 2740f305-769d-464c-910a-998522f5121b
 ms.tgt_platform: multiple
 title: CIM_POTSModem clase
@@ -50,19 +50,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 36d59280b37ae56c12330d37132bb9c35c4712810dce71e7deafe84d2e080acd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7fbaeedd1de4006dfdccbcec313a7428d7b7f03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118677547"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062293"
 ---
-# <a name="cim_potsmodem-class"></a>Cim \_ POTSModem (clase)
+# <a name="cim_potsmodem-class"></a>CIM \_ POTSModem (clase)
 
-La **clase \_ CIM POTSModem** representa un dispositivo que traduce los datos binarios en transmisiones de onda para la transmisión basada en sonido mediante la conexión a la red del Sistema de teléfono antiguo sin formato (POTS).
+La **clase \_ CIM POTSModem** representa un dispositivo que traduce los datos binarios en transmisiones de onda para la transmisión basada en sonido mediante la conexión a la red del sistema telefónico sin formato (POTS).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -113,7 +113,7 @@ class CIM_POTSModem : CIM_LogicalDevice
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM POTSModem** tiene estos tipos de miembros:
 
@@ -122,14 +122,14 @@ La **clase \_ CIM POTSModem** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ CIM JARSModem** tiene estos métodos.
+La **clase \_ CIM POTSModem** tiene estos métodos.
 
 
 
 | Método                                                               | Descripción                                                                                                                              |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-potsmodem.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                               |
-| [**SetPowerState**](setpowerstate-method-in-class-cim-potsmodem.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. Wmi no implementa .<br/> |
+| [**Reset**](reset-method-in-class-cim-potsmodem.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-potsmodem.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
 
 
 
@@ -191,7 +191,7 @@ Configuración actual de respuesta automática o de detección de llamadas para 
 
 <span id="Auto_Answer_with_Call-Back"></span><span id="auto_answer_with_call-back"></span><span id="AUTO_ANSWER_WITH_CALL-BACK"></span>
 
-**Respuesta automática con detección de** llamadas (5)
+**Respuesta automática con la detección de llamadas** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -212,7 +212,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -232,7 +232,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -295,7 +295,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
 
 
 </dt> <dd></dd> <dt>
@@ -364,7 +364,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
 
 
 </dt> <dd>
@@ -375,7 +375,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
 
 
 </dt> <dd>
@@ -386,12 +386,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo es silencioso.
+El dispositivo está silencioso.
 
 </dd> </dl>
 
@@ -479,7 +479,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -536,7 +536,7 @@ El dispositivo no funciona correctamente. Uno de sus controladores o el registro
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador de este dispositivo necesita un recurso que Windows puede administrar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador para este dispositivo necesita un recurso que Windows puede administrar.** (5)
 
 
 </dt> <dd>
@@ -1254,10 +1254,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se encuentra en subclases, esta propiedad se puede invalidar para que sea una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1275,7 +1275,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Win32 Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Win32 Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 Ejemplo: \* "PNP030b"
 
@@ -1292,7 +1292,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **CIM \_ LogicalDevice**.
+Esta propiedad se hereda de **\_ CIM LogicalDevice.**
 
 <dt>
 
@@ -1346,7 +1346,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1368,7 +1368,7 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 </dt> <dd>
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
 
 </dd> </dl>
 
@@ -1385,7 +1385,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.** Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o, si están habilitadas, qué características se admiten. Para más información, consulte la matriz **PowerManagementCapabilities.** Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1411,7 +1411,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nivel de volumen de los tonos audibles del módem. Por ejemplo, se puede informar de un volumen alto, medio o bajo.
+Nivel de volumen de los tonos de color tonal del módem. Por ejemplo, se puede informar de un volumen alto, medio o bajo.
 
 <dt>
 
@@ -1466,7 +1466,7 @@ Nivel de volumen de los tonos audibles del módem. Por ejemplo, se puede informa
 
 <span id="Auto"></span><span id="auto"></span><span id="AUTO"></span>
 
-**Automático** (7)
+**Auto** (7)
 
 
 </dt> <dd></dd> </dl>
@@ -1514,7 +1514,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -1528,14 +1528,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -1586,12 +1586,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado operativo DMTF \| \| 003.3")
 </dt> </dl>
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -1667,7 +1667,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
@@ -1685,7 +1685,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
@@ -1711,7 +1711,7 @@ Fecha y hora en que se restablecó por última vez este controlador. Esto podrí
 
 La **clase \_ CIM POTSModem** se deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ POTSModem,** vea [Clases win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ POTSModem,** vea [Clases Win32](win32-provider.md).
 
 Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
@@ -1729,7 +1729,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Identifica la propiedad \_ Ui PKEY \_ FontProperties \_ ForegroundC
 ms.assetid: 28b617a3-2203-465f-b2e6-9406660cee5c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65f326fda70258669e29d4ccf4fcacb29f86c35be54165113c30221162cc6589
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c5f86744dbdf60279d43cc183efea88d657dfa3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117850326"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256418"
 ---
 # <a name="ui_pkey_fontproperties_foregroundcolor"></a>UI \_ PKEY \_ FontProperties \_ ForegroundColor
 
@@ -25,7 +25,7 @@ propertyDescription
       type = COLORREF
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación usa ui PKEY FontProperties ForegroundColor, junto con la interfaz de usuario \_ \_ \_ [ \_ PKEY \_ FontProperties \_ ForegroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolortype.md),  para consultar la configuración de la galería de colores de texto.
 

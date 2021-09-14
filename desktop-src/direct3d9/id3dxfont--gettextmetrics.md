@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e9254ec9d5224f9041079f36bc95d68ea7346cf6dac2aecb81e7a6009496675e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ce6064804d2aac2846cbea6971f145fc07759f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060606"
 ---
 # <a name="id3dxfontgettextmetrics-method"></a>Método ID3DXFont::GetTextMetrics
 
@@ -55,7 +55,7 @@ Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 Es distinto de cero si la función se realiza correctamente; de lo contrario, es 0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La configuración del compilador también determina el tipo de estructura. Si se define Unicode, la función devuelve una estructura TEXTMETRICW. De lo contrario, la llamada a la función devuelve una estructura TEXTMETRICA.
 
@@ -70,7 +70,7 @@ La configuración del compilador también determina el tipo de estructura. Si se
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

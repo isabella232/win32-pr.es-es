@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe6bf01ed46d0294f654c21dc854933f0be04695f7edeee7a6849e23b01b027f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca49cd4fd77425f202c5d8ee06cb0b3d7712e610
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118006192"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061935"
 ---
 # <a name="hdn_itemclick-notification-code"></a>Código de notificación ITEMCLICK de HDN \_
 
@@ -51,7 +51,7 @@ Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un control de encabezado envía este código de notificación después de que el usuario suelte el botón izquierdo del mouse.
 
@@ -59,11 +59,11 @@ Un control de encabezado envía este código de notificación después de que el
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDN \_ ITEMCLICKW** (Unicode) y **HDN \_ ITEMCLICKA** (ANSI)<br/>               |
 
 

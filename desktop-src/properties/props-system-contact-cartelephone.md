@@ -4,12 +4,12 @@ ms.assetid: ef7d6ac7-ef7e-463c-8408-60948802e9c5
 title: System.Contact.CarTelephone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b6f1167eef0af978a49d92d44c7c166ea269e6ded128e7504c04c8de491fb8a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a307f601f795e3317fe1b21df994d85896e018e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118468400"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257444"
 ---
 # <a name="systemcontactcartelephone"></a>System.Contact.CarTelephone
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

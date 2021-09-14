@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f323e4055b8d9a962e1c0a20f934d2449fb94a2d987d901ccf18f78d01b63d96
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d18d8ede94700f2de2fe49e44031675c7c91c930
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061078"
 ---
 # <a name="idxtjpegget_offsetx-method"></a>Método IDxtAsynceg::get \_ OffsetX
 
@@ -28,7 +28,7 @@ ms.locfileid: "120083865"
 
  
 
-El `get_OffsetX` método recupera el desplazamiento horizontal del origen de borrado.
+El `get_OffsetX` método recupera el desplazamiento horizontal del origen del borrado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Recibe el desplazamiento horizontal del origen de borrado, en píxeles. El centr
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,7 +79,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

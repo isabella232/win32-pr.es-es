@@ -1,38 +1,38 @@
 ---
 title: Cómo controlar el clip AVI
-description: En este tema se muestra cómo usar las macros de control de animación para reproducir, detener y cerrar un clip Audio-Video intercalado (AVI) asociado.
+description: En este tema se muestra cómo usar las macros de control de animación para reproducir, detener y cerrar un clip asociado Audio-Video intercalado (AVI).
 ms.assetid: 4B19F929-B306-4EBF-B82F-6539FAA42BA6
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6c11f7d8f519f98f3293d5be29fac0e0a40dd704
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104488596"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061918"
 ---
 # <a name="how-to-control-the-avi-clip"></a>Cómo controlar el clip AVI
 
-En este tema se muestra cómo usar las macros de control de animación para reproducir, detener y cerrar un clip Audio-Video intercalado (AVI) asociado.
+En este tema se muestra cómo usar las macros de control de animación para reproducir, detener y cerrar un clip asociado Audio-Video intercalado (AVI).
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 -   Archivos AVI
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Cree una función que toma como parámetros un identificador del control Animation y una marca que indica la acción que se va a realizar en el clip AVI asociado.
+Cree una función que toma como parámetros un identificador para el control de animación y una marca que indica la acción que se va a realizar en el clip AVI asociado.
 
-En el siguiente ejemplo de C++, la función llama a una de las tres macros de control de animación ([**animar \_ reproducir**](/windows/desktop/api/Commctrl/nf-commctrl-animate_play), [**animar \_ detener**](/windows/desktop/api/Commctrl/nf-commctrl-animate_stop)y [**animar \_ cerrar**](/windows/desktop/api/Commctrl/nf-commctrl-animate_close)) en función del valor del parámetro *nAcción* . El identificador del control de animación que está asociado al clip AVI se pasa a través del parámetro *hwndAnim* .
+La función del siguiente ejemplo de C++ llama a una de las tres macros de control de animación [**(Animar \_**](/windows/desktop/api/Commctrl/nf-commctrl-animate_play)reproducción , Animar detener [**, \_**](/windows/desktop/api/Commctrl/nf-commctrl-animate_stop)Animar cerrar [**) \_**](/windows/desktop/api/Commctrl/nf-commctrl-animate_close)en función del valor del *parámetro nAction.* El identificador del control de animación asociado al clip AVI se pasa a través del *parámetro hwndAnim.*
 
 
 ```C++
@@ -76,13 +76,13 @@ void DoAnimation(HWND hwndAnim, int nAction)
 [Acerca de los controles de animación](animation-control-overview.md)
 </dt> <dt>
 
-[Referencia de control de animación](bumper-animation-animation-control-reference.md)
+[Referencia de controles de animación](bumper-animation-animation-control-reference.md)
 </dt> <dt>
 
 [Usar controles de animación](using-animation-control.md)
 </dt> <dt>
 
-[Animation (control)](animation-control-reference.md)
+[Control de animación](animation-control-reference.md)
 </dt> </dl>
 
  

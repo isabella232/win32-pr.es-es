@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8d11cad71bb1b71bcf72dc8513f8d2ca5d5ecbf5d1993d66f1c6a4b7e4b4f07a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ef246a0ee372c5755aeb30980095e7f2f6ca1dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118007329"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061472"
 ---
 # <a name="win32_systemaccount-class"></a>Clase SystemAccount de Win32 \_
 
@@ -56,7 +56,7 @@ class Win32_SystemAccount : Win32_Account
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemAccount de Win32** tiene estos tipos de miembros:
 
@@ -186,7 +186,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Corregido,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Identificadores de seguridad \| (SID) de Win32API")
 </dt> </dl>
 
-Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (por ejemplo, un dominio Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cuando se ha usado un SID como identificador único de un usuario o grupo, no se puede volver a usar para identificar a otro usuario o grupo.
+Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (por ejemplo, un dominio de Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cuando se ha usado un SID como identificador único de un usuario o grupo, no se puede volver a usar para identificar a otro usuario o grupo.
 
 Esta propiedad se hereda de la [**cuenta de \_ Win32.**](win32-account.md)
 
@@ -201,7 +201,7 @@ Tipo de datos: **uint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Access Control enumeration types \| SID NAME \_ \_ USE")
+Calificadores: [**Corregido,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API Access Control tipos de enumeración \| \| SID \_ NAME \_ USE")
 </dt> </dl>
 
 Valores enumerados que especifican el tipo de identificador de seguridad (SID).
@@ -341,7 +341,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -383,7 +383,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemAccount de Win32** se deriva de [**la cuenta de Win32. \_**](win32-account.md)
 
@@ -391,7 +391,7 @@ La **clase \_ SystemAccount de Win32** se deriva de [**la cuenta de Win32. \_**]
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -401,7 +401,7 @@ La **clase \_ SystemAccount de Win32** se deriva de [**la cuenta de Win32. \_**]
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

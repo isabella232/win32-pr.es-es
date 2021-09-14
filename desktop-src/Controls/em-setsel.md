@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 190d8a62b874d3449e0a9bf5d334a515000fb0436ba73753a8657936363071b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4981fa179ae4bdd454ab0b0a6d7485185ed31d2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062062"
 ---
 # <a name="em_setsel-message"></a>Mensaje \_ EM SETSEL
 
@@ -47,7 +47,7 @@ Posición del carácter final de la selección.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor inicial puede ser mayor que el valor final. La parte inferior de los dos valores especifica la posición del carácter del primer carácter de la selección. El valor superior especifica la posición del primer carácter más allá de la selección.
 
@@ -57,7 +57,7 @@ Si el inicio es 0 y el final es -1, se selecciona todo el texto del control de e
 
 **Editar controles:** El control muestra un cursor intermitente en la posición final, independientemente de los valores relativos de inicio y fin.
 
-**Edición enriqueceda:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 Si el control de edición tiene el estilo [**\_ ES NOHIDESEL,**](edit-control-styles.md) el texto seleccionado se resalta independientemente de si el control tiene el foco. Sin el **estilo \_ ES NOHIDESEL,** el texto seleccionado solo se resalta cuando el control de edición tiene el foco.
 
@@ -69,11 +69,11 @@ Si el control de edición tiene el estilo [**\_ ES NOHIDESEL,**](edit-control-st
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

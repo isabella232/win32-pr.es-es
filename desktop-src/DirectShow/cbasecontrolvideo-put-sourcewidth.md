@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cbc984e0baad4b2a4a287c6265df35c8d4ddccdd903e0ff79b80cc95f6cf8453
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1576389a90db71ee6d371f6e68c44ea39117c05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118158657"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061778"
 ---
 # <a name="cbasecontrolvideoput_sourcewidth-method"></a>Método CBaseControlVideo.put \_ SourceWidth
 
@@ -61,15 +61,15 @@ Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno d
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Argumento no válido.<br/>                                                     |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | **Argumento de** puntero NULL.<br/>                                            |
 | <dl> <dt>**NOERROR**</dt> </dl>                | Correcto.<br/>                                                              |
-| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | No se puede realizar la operación porque las clavijas no están conectadas.<br/> |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | No se puede realizar la operación porque los pines no están conectados.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a través de la [**interfaz IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) El rectángulo de origen afecta a la sección del origen de vídeo nativo que aparecerá en la pantalla; el rectángulo de destino afecta a dónde aparecerá el vídeo cuando se reproduce. El rectángulo de destino es relativo al área de cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es coordenada (0,0).
+Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a través de la [**interfaz IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) El rectángulo de origen afecta a qué sección del origen de vídeo nativo aparecerá en la pantalla; el rectángulo de destino afecta a dónde aparecerá el vídeo cuando se reproduce. El rectángulo de destino es relativo al área de cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es coordenada (0,0).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

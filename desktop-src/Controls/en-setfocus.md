@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0851d7df2e3943efc1b4aac2ba0f16c01aa90bf0bcc1389b64a3216df934b25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5cb96482f0e42669658dde3a39637e3c2311619
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118171252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062018"
 ---
 # <a name="en_setfocus-notification-code"></a>Código de notificación DE EN \_ SETFOCUS
 
@@ -53,7 +53,7 @@ Identificador del control de edición.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La ventana primaria siempre recibe un [**mensaje \_ WM COMMAND**](/windows/desktop/menurc/wm-command) para este evento, no requiere una máscara de notificación enviada con EM [**\_ SETEVENTMASK**](em-seteventmask.md).
 
@@ -63,15 +63,15 @@ La ventana primaria siempre recibe un [**mensaje \_ WM COMMAND**](/windows/deskt
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

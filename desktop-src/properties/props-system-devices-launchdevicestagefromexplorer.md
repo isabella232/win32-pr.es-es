@@ -4,12 +4,12 @@ ms.assetid: D75A6D42-D4BB-4168-AD91-E2B8BE847128
 title: System.Devices.LaunchDeviceStageFromExplorer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb7dc1e70775ba2ebe642c2fc35cccdd93299167cb8a75ee9bab18dc78857aa8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e2219b05af3a2374e9e702da2be143eefe08c80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119711195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257211"
 ---
 # <a name="systemdeviceslaunchdevicestagefromexplorer"></a>System.Devices.LaunchDeviceStageFromExplorer
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

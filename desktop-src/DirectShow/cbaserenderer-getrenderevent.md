@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 04b4adc030e172a3d66d501e745ca9e3d1062fc1551bccb504fff36328d00bbf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e2fd0b9cd98194129eccd2e24e6ee75577d1eec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117822662"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061329"
 ---
 # <a name="cbaserenderergetrenderevent-method"></a>Método CBaseRenderer.GetRenderEvent
 

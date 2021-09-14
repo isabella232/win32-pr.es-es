@@ -4,12 +4,12 @@ ms.assetid: 24fc2d7c-f8d6-49ca-9bb5-0179bef68e78
 title: Escritores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abf748d0c6c4533c81c0f8a8d0c0c5aa9125c92334a1c09d4ab40fad299067b0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 52ca409e8dc6153a6b3e2b747dc23cc391055471
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241112"
 ---
 # <a name="writers"></a>Escritores
 
@@ -48,7 +48,7 @@ Para asegurarse de que el control de errores para varias sesiones de copia de se
 
 A excepción del evento Identify, el tipo y el orden de los eventos que recibe un escritor depende de forma exclusiva del tipo de operaciones de VSS que están en curso actualmente.
 
-El evento Identify requiere que los escritores proporcionen la información del sistema sobre su configuración y los archivos que administran a través de su [*documento de metadatos del escritor*](vssgloss-w.md). Se genera un evento Identify para admitir casi cualquier operación de VSS, incluidas las consultas del sistema, así como las operaciones de instantáneas y copia de seguridad y restauración. Por lo tanto, la implementación de cualquier escritor del controlador de eventos Identify [**CVssWriter::OnIdentify**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify) debe ser capaz de controlar un evento Identify en cualquier momento, incluso en medio del procesamiento de otra operación de VSS, como una copia de seguridad o una restauración. Un evento Identify nunca debe considerarse como parte del ciclo de vida de una operación de VSS, aunque su generación puede ser esperada y necesaria antes del inicio de esa operación.
+El evento Identify requiere que los escritores proporcionen la información del sistema sobre su configuración y los archivos que administran a través de su [*documento de metadatos del escritor*](vssgloss-w.md). Se genera un evento Identify en compatibilidad con casi cualquier operación de VSS, incluidas las consultas del sistema, así como las operaciones de instantáneas y copia de seguridad y restauración. Por lo tanto, la implementación de cualquier escritor del controlador de eventos Identify [**CVssWriter::OnIdentify**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify) debe ser capaz de controlar un evento Identify en cualquier momento, incluso en medio del procesamiento de otra operación de VSS, como una copia de seguridad o una restauración. Un evento Identify nunca debe considerarse como parte del ciclo de vida de una operación de VSS, aunque su generación puede ser esperada y necesaria antes del inicio de esa operación.
 
 Es especialmente importante que la información de estado sobre una operación de VSS no se modifique en [**CVssWriter::OnIdentify**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify), porque la recepción de un evento fuera de servicio restablecería esa información.
 
@@ -68,7 +68,7 @@ En una operación de copia de seguridad típica (vea Información general sobre 
 -   BackupComplete
 -   BackupShutdown
 
-En una operación de restauración típica (vea Información general sobre el procesamiento de una restauración [en VSS),](overview-of-processing-a-restore-under-vss.md)un escritor controlaría los eventos siguientes:
+En una operación de restauración típica (vea Información general sobre el procesamiento de una restauración en [VSS),](overview-of-processing-a-restore-under-vss.md)un escritor controlaría los eventos siguientes:
 
 -   PreRestore
 -   PostRestore

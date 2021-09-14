@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0048624b79daa6948851fd9a56142b97c7e185caa9bbcbdeb6c2c1b19f591eb1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bda01d02db2a93a90c63f206b723a55df2373418
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061357"
 ---
 # <a name="cbasepindisconnect-method"></a>Método CBasePin.Disconnect
 
@@ -56,7 +56,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La clase base delega la mayor parte del trabajo en el método [**CBasePin::D isconnectInternal.**](cbasepin-disconnectinternal.md)
 
@@ -71,7 +71,7 @@ La clase base delega la mayor parte del trabajo en el método [**CBasePin::D isc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3fb25d4539d4b929362241ffacbfafd97b08844508ec2c1f38c619fe40901475
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c262031045eed3755fe2d19d3bd703a347e6117
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061100"
 ---
 # <a name="gettruecolortype-function"></a>Función GetTrueColorType
 
@@ -64,7 +64,7 @@ Devuelve MEDIASUBTYPE \_ RGB555 o MEDIASUBTYPE \_ RGB565.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

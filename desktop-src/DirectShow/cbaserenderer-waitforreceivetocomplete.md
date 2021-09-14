@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c1f63efa53cc8e8829aba825e831f95595b16faf97bdf29777918c599aadade1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9033474c71d23fed106205839071bad200df6a23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061750"
 ---
 # <a name="cbaserendererwaitforreceivetocomplete-method"></a>Método CBaseRenderer.WaitForReceiveToComplete
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los [**métodos CBaseRenderer::Stop**](cbaserenderer-stop.md) y [**CBaseRenderer::BeginFlush**](cbaserenderer-beginflush.md) llaman a este método para sincronizar el cambio de estado con **el método Receive.**
 
@@ -61,7 +61,7 @@ En concreto, este método envía mensajes mientras espera a que la marca [**CBas
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

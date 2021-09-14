@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 698b827e2dd3f9097f2348c83cbb52120186b0694a836fd2468396c542e535c4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b2b28c11e10318e3bca562baf93bc20df9b756cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061461"
 ---
 # <a name="win32_systemdevices-class"></a>Clase SystemDevices de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_SystemDevices : CIM_SystemDevice
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemDevices de Win32** tiene estos tipos de miembros:
 
@@ -64,7 +64,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades del sistema informático donde existe el dispositivo lógico.
+Referencia a la instancia de que representa las propiedades del sistema del equipo donde existe el dispositivo lógico.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa las propiedades de un dispositivo l�
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemDevices de Win32** se deriva de [**CIM \_ SystemDevice**](cim-systemdevice.md).
 
@@ -92,7 +92,7 @@ La **clase \_ SystemDevices de Win32** se deriva de [**CIM \_ SystemDevice**](ci
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -102,7 +102,7 @@ La **clase \_ SystemDevices de Win32** se deriva de [**CIM \_ SystemDevice**](ci
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

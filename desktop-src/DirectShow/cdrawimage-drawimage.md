@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c2791d20b906f2a2adce31ce99b9e7498854c8fca00ade4507db0207e04b2cde
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d219eb82ab2cf1929605eee4045c2f278022ad98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061298"
 ---
 # <a name="cdrawimagedrawimage-method"></a>Método CDrawImage.DrawImage
 
@@ -53,7 +53,7 @@ Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-i
 
 Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método delega en [**CDrawImage::FastRender**](cdrawimage-fastrender.md) o [**CDrawImage::SlowRender**](cdrawimage-slowrender.md), en función de si el filtro posee el asignador que proporcionó el ejemplo. Si el filtro posee el asignador, se garantiza que el ejemplo es un [**objeto CImageSample.**](cimagesample.md) En ese caso, el ejemplo usa memoria compartida asignada por GDI y la imagen se puede dibujar mediante **BitBlt** o **StretchBlt**. De lo contrario, las imágenes se deben dibujar mediante las funciones **SetDIBitsToDevice** o **StretchDIBits más lentas.**
 
@@ -70,7 +70,7 @@ En las compilaciones de depuración, este método llama **a DisplaySampleTimes**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

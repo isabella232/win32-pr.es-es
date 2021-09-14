@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 89fbf8ee51f07c2912373cf77c6a05d64106f5bc923da947aff7f37b83e297b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0fd02d0757745199249d64fa08d73f8b5ec65a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117834456"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061492"
 ---
-# <a name="uncompressex-method-of-the-win32_directory-class"></a>Método UncompressEx de la clase Directory de \_ Win32
+# <a name="uncompressex-method-of-the-win32_directory-class"></a>Método UncompressEx de la clase Directory de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UncompressEx** descomprime el archivo de entrada de directorio lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del [**método Uncompress.**](uncompress-method-in-class-win32-directory.md)
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,23 +47,23 @@ uint32 UncompressEx(
 *StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo o directorio en el que se ha dado error al método **UncompressEx.** Este parámetro será **NULL si** el método se realiza correctamente.
+Nombre del archivo o directorio en el que se ha dado error **al método UncompressEx.** Este parámetro será **NULL si** el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ in, opcional\]
+*StartFileName* \[ en, opcional\]
 </dt> <dd>
 
-Denomina el archivo o directorio secundario que se usará como punto de partida para **UncompressEx.** El *parámetro StartFileName suele* ser el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL**, la operación se realiza en el archivo o directorio especificado en la llamada a ExecMethod.
+Denomina el archivo o directorio secundario que se usará como punto de partida para **UncompressEx.** El *parámetro StartFileName* suele ser el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL,** la operación se realiza en el archivo o directorio especificado en la llamada a ExecMethod.
 
 Si *se usa StartFileName,* *Recursive* también debe establecerse en true.
 
 </dd> <dt>
 
-*Recursiva* \[ in, opcional\]
+*Recursiva* \[ en, opcional\]
 </dt> <dd>
 
-Si **es true,** el cambio de propiedad se aplicará de forma recursiva a los archivos y directorios del directorio especificado por la instancia [**de \_ LogicalFile de CIM.**](cim-logicalfile.md) Nota: En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.*
+Si **es true**, el cambio de propiedad se aplicará de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia de [**\_ LogicalFile de CIM.**](cim-logicalfile.md) Nota: En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.*
 
 </dd> </dl>
 
@@ -139,7 +139,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha infringido el uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -185,7 +185,7 @@ Un parámetro especificado no es válido.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Directorio \_ win32**](win32-directory.md)
+[**Directorio \_ Win32**](win32-directory.md)
 </dt> </dl>
 
  

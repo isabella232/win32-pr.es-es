@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e6fd6ba75caccf19f3782e0c39581d1e652de0c4187c3c5a203bb5f3b7ceec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d1045202c531aa200745fc89ed067628a175486
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117913082"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060802"
 ---
 # <a name="cd3dx12_cpu_descriptor_handle-structure"></a>Estructura DEL IDENTIFICADOR DEL \_ \_ DESCRIPTOR DE CPU CD3DX12 \_
 
@@ -50,7 +50,7 @@ struct CD3DX12_CPU_DESCRIPTOR_HANDLE  : public D3D12_CPU_DESCRIPTOR_HANDLE{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ Crea una nueva instancia sin inicializar de un IDENTIFICADOR DE DESCRIPTOR DE CP
 
 </dd> <dt>
 
-**identificador explícito del \_ DESCRIPTOR de CPU CD3DX12(const \_ \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ o)**
+**identificador explícito del DESCRIPTOR de CPU CD3DX12(const \_ \_ \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ o)**
 </dt> <dd>
 
 Crea una nueva instancia de un IDENTIFICADOR DE DESCRIPTOR de CPU CD3DX12, inicializado con el contenido de otra estructura de IDENTIFICADOR \_ \_ DEL DESCRIPTOR de \_ [**\_ \_ CPU \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle)
@@ -75,7 +75,7 @@ Crea una nueva instancia de un IDENTIFICADOR DE DESCRIPTOR DE CPU CD3DX12, inici
 
 </dd> <dt>
 
-**IDENTIFICADOR DEL \_ DESCRIPTOR DE CPU CD3DX12(const \_ \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ otros, INT offsetScaledByIncrementSize)**
+**IDENTIFICADOR DEL DESCRIPTOR DE CPU CD3DX12(const \_ \_ \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ otro, INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
 Crea una nueva instancia de un IDENTIFICADOR DE DESCRIPTOR DE CPU CD3DX12, \_ \_ \_ inicializando los parámetros siguientes:
@@ -169,7 +169,7 @@ Descriptor de UINTIncrementSize: cantidad por la que se va a incrementar para ca
 
 Inicializa una estructura HANDLE del DESCRIPTOR de [**\_ \_ CPU \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño especificado. Usa los parámetros siguientes:
 
-\_Out \_ D3D12 CPU DESCRIPTOR HANDLE &handle (Controlador de descriptor de \_ CPU \_ \_ D3D12 de salida): genera el identificador del DESCRIPTOR de CPU D3D12 \_ \_ \_ resultante.
+\_Controlador de descriptor de \_ CPU D3D12 de salida &identificador: genera el identificador del DESCRIPTOR de CPU \_ \_ \_ D3D12 \_ \_ \_ resultante.
 
 \_En \_ const D3D12 CPU DESCRIPTOR HANDLE &base: dirección base desde la que se \_ va a \_ \_ desplazar.
 
@@ -182,7 +182,7 @@ INT offsetScaledByIncrementSize: número de incrementos por los que se va a desp
 
 Inicializa una estructura HANDLE del DESCRIPTOR de [**\_ \_ CPU \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño especificado. Usa los parámetros siguientes:
 
-\_Out \_ D3D12 CPU DESCRIPTOR HANDLE &handle (Controlador de descriptor de \_ CPU \_ \_ D3D12 de salida): genera el identificador del DESCRIPTOR de CPU D3D12 \_ \_ \_ resultante.
+\_Controlador de descriptor de \_ CPU D3D12 de salida &identificador: genera el identificador del DESCRIPTOR de CPU \_ \_ \_ D3D12 \_ \_ \_ resultante.
 
 \_En \_ const D3D12 CPU DESCRIPTOR HANDLE &base: dirección base desde la que se \_ va a \_ \_ desplazar.
 
@@ -202,7 +202,7 @@ Descriptor de UINTIncrementSize: cantidad por la que se va a incrementar para ca
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

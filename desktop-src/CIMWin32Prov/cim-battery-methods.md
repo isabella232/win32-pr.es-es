@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: CIM_Battery métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 416b8ce5aaee400bab1adec90cb3de298de5578c2f8cb81da98ebad6cb237c6f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24488a542c968d1662e754ba612cde296317e2c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118959104"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061573"
 ---
 # <a name="cim_battery-methods"></a>Métodos de batería CIM \_
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c716ecb36c0d27b445446a30eb0a026edf3fd88641f469e50daef1763cd6ca66
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: de1f99b9ea05d037b5c00562a24bda1e434ce08d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120047385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062015"
 ---
 # <a name="en_vscroll-notification-code"></a>Código \_ de notificación de EN VSCROLL
 
@@ -53,7 +53,7 @@ Identificador del control de edición.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje se envía para los siguientes eventos del mouse en la barra de desplazamiento vertical: haciendo clic en cualquiera de los botones de flecha o haciendo clic entre el botón de flecha y el control. Sin embargo, el mensaje no se envía al hacer clic en el mouse de la barra de desplazamiento. El mensaje también se envía cuando un evento de teclado provoca un cambio en el área de vista del control de edición, por ejemplo, al presionar INICIO, END, PAGE UP, PAGE DOWN, FLECHA ARRIBA o FLECHA ABAJO.
 
@@ -69,11 +69,11 @@ La rueda del mouse es un mouse que tiene una rueda central que se desplaza. Para
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

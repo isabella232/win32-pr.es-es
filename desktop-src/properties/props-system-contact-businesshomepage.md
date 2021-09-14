@@ -4,12 +4,12 @@ ms.assetid: f63ea8d8-2d00-4910-8222-6910eab9c1f7
 title: System.Contact.BusinessHomePage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c71d393ee01bf19b9d20926602e5fc6d2ef1c48000ab0779fc1772803e58b95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ad024fe27d83e86a9695d5ff8246ae908121bcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257476"
 ---
 # <a name="systemcontactbusinesshomepage"></a>System.Contact.BusinessHomePage
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Poclass.h
 - BatClass.h
-ms.openlocfilehash: c68c9dc2385803155a6c0f8fd2a5b7c84cedaa8e78c98ae2baca6909104e7315
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d8435e62c4f061ac13b3e18e5bcd64afcb399c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062858"
 ---
 # <a name="ioctl_battery_query_tag-control-code"></a>Código de \_ control IOCTL BATTERY \_ QUERY \_ TAG
 
@@ -77,7 +77,7 @@ Tamaño del búfer de entrada, en bytes.
 *lpOutBuffer* 
 </dt> <dd>
 
-Puntero a un búfer **de salida ULONG.** Si se ejecuta correctamente, este búfer contiene la etiqueta de batería actual, que puede ser cualquier valor excepto BATTERY \_ TAG \_ INVALID. En caso de error, [**si GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el código de error **ARCHIVO DE ERROR NO \_ \_ \_ ENCONTRADO**, este búfer contiene el valor **BATTERY TAG \_ \_ INVALID**.
+Puntero a un búfer **de salida ULONG.** Si se ejecuta correctamente, este búfer contiene la etiqueta de batería actual, que puede ser cualquier valor excepto BATTERY \_ TAG \_ INVALID. En caso de error, [**si GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el código de error **ARCHIVO DE ERROR NO \_ \_ \_ ENCONTRADO,** este búfer contiene el valor **BATTERY TAG \_ \_ INVALID**.
 
 </dd> <dt>
 
@@ -138,11 +138,11 @@ Para obtener un ejemplo, consulte [Enumeración de dispositivos de batería.](en
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                                                                                                                                                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                                                                                                                                                                                |
-| Header<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>BatClass.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>BatClass.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

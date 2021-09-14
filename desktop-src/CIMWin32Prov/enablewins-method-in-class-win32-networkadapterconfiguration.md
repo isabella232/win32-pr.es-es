@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1ce820e515bb72cbd2521521726f2b6962c49ee1b453781b5d17993c45e0d22d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77f5ba32606ff228908e8b7a1559a73ae5139e9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118676508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062706"
 ---
 # <a name="enablewins-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableWINS de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableWINS** Windows configuración de Naming Service Internet (WINS) específica de TCP/IP, pero independiente del adaptador de red.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -214,7 +214,7 @@ El ejemplo de código [Enable WINS for All Network Adapters](https://Gallery.Tec
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

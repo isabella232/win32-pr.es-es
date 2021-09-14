@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c420419e49f7093e6fdf1fdc66880035f4844d03277db18b5c134d9ee69b10fc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0891a9446e09c56e3845c02217d39037aad38bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061355"
 ---
 # <a name="cbasepindisconnectinternal-method"></a>Método CBasePin.DisconnectInternal
 
@@ -56,7 +56,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CBasePin::D isconnect**](cbasepin-disconnect.md) delega el proceso de desconexión en este método. Este método llama al [**método CBasePin::BreakConnect.**](cbasepin-breakconnect.md) También libera el recuento de referencias en el otro pin, que se mantiene en la variable miembro [**conectado CBasePin::m. \_**](cbasepin-m-connected.md)
 
@@ -71,7 +71,7 @@ El [**método CBasePin::D isconnect**](cbasepin-disconnect.md) delega el proceso
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

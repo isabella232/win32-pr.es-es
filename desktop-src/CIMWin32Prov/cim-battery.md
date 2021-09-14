@@ -1,5 +1,5 @@
 ---
-description: La clase \_ Battery cim representa las funcionalidades y la administración del dispositivo lógico de la batería. Esta clase se aplica a baterías en sistemas portátiles y otras baterías internas y externas.
+description: La clase Battery de CIM \_ representa las funciones y la administración del dispositivo lógico de la batería. Esta clase se aplica a las baterías de los sistemas portátiles y otras baterías internas y externas.
 ms.assetid: af127b7a-021b-4cd8-af1b-176aff760858
 ms.tgt_platform: multiple
 title: CIM_Battery clase
@@ -45,19 +45,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f43e25e072ef645168d68e40283ee344e038d2502081b4a4a531fd26793159ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3719b2700c69cfa58921bed1242aa8a6de158466
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061572"
 ---
 # <a name="cim_battery-class"></a>Cim \_ Battery (clase)
 
-La **clase Battery \_ de CIM** representa las funcionalidades y la administración del dispositivo lógico de la batería. Esta clase se aplica a baterías en sistemas portátiles y otras baterías internas y externas.
+La **clase Battery \_ de CIM** representa las funciones y la administración del dispositivo lógico de la batería. Esta clase se aplica a las baterías de los sistemas portátiles y otras baterías internas y externas.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -103,7 +103,7 @@ class CIM_Battery : CIM_LogicalDevice
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Battery \_ de CIM** tiene estos tipos de miembros:
 
@@ -118,8 +118,8 @@ La **clase Battery \_ de CIM** tiene estos métodos.
 
 | Método                                                             | Descripción                                                                                                                                |
 |:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-battery.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                                 |
-| [**SetPowerState**](setpowerstate-method-in-class-cim-battery.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo debe colocarse en ese estado. Wmi no implementa .<br/> |
+| [**Reset**](reset-method-in-class-cim-battery.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                                 |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-battery.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar el dispositivo en ese estado. No implementado por WMI.<br/> |
 
 
 
@@ -145,7 +145,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -165,7 +165,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -228,7 +228,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
 
 
 </dt> <dd></dd> <dt>
@@ -297,7 +297,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
 
 
 </dt> <dd>
@@ -308,7 +308,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
 
 
 </dt> <dd>
@@ -319,12 +319,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo es silencioso.
+El dispositivo está silencioso.
 
 </dd> </dl>
 
@@ -436,7 +436,7 @@ Carga y baja.
 
 <span id="Charging_and_Critical"></span><span id="charging_and_critical"></span><span id="CHARGING_AND_CRITICAL"></span>
 
-<span id="Charging_and_Critical"></span><span id="charging_and_critical"></span><span id="CHARGING_AND_CRITICAL"></span>**Carga y crítico** (9)
+<span id="Charging_and_Critical"></span><span id="charging_and_critical"></span><span id="CHARGING_AND_CRITICAL"></span>**Carga y crítica** (9)
 
 
 </dt> <dd>
@@ -869,7 +869,7 @@ Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifie
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -939,7 +939,7 @@ Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifie
 
 Dirección u otra información de identificación para dar un nombre único al dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -954,7 +954,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** ahora se borra el error notificado en la propiedad **LastErrorCode.**
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -969,7 +969,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona información sobre el error registrado en la **propiedad LastErrorCode** y las acciones correctivas que se deben realizar.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1030,7 +1030,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.11"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("militio-hora")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.11"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivatios-hora")
 </dt> </dl>
 
 La capacidad de carga completa de la batería en milivatios-hora. Compare este valor con la **propiedad DesignCapacity** para determinar cuándo es necesario reemplazar la batería. La duración final de una batería suele ser cuando la propiedad **FullChargeCapacity** está por debajo del 80 % de la **propiedad DesignCapacity.** Si no se admite esta propiedad, escriba 0.
@@ -1066,7 +1066,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1082,7 +1082,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("minutos")
 </dt> </dl>
 
-Tiempo máximo, en minutos, para cargar completamente la batería. Esta propiedad representa el tiempo para recargar una batería totalmente agotada, no el tiempo de carga restante actual, que se indica en la **propiedad TimeToFullCharge.**
+Tiempo máximo, en minutos, para cargar completamente la batería. Esta propiedad representa el tiempo para reponer una batería totalmente agotada, no el tiempo de carga restante actual, que se indica en la **propiedad TimeToFullCharge.**
 
 </dd> <dt>
 
@@ -1120,7 +1120,7 @@ Indica el identificador de dispositivo Plug and Play Win32 del dispositivo lógi
 
 Ejemplo: \* "PNP030b"
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1135,7 +1135,7 @@ Tipo de acceso: solo lectura
 
 Indica las funcionalidades específicas relacionadas con la energía del dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1157,7 +1157,7 @@ Se desconocen las capacidades relacionadas con la energía.
 
 </dt> <dd>
 
-No se admiten capacidades relacionadas con energía para este dispositivo.
+Las capacidades relacionadas con la energía no se admiten para este dispositivo.
 
 </dd> <dt>
 
@@ -1223,7 +1223,7 @@ El **método SetPowerState** se puede invocar con el *parámetro PowerState* est
 
 </dt> <dd>
 
-El **método SetPowerState** se puede invocar con el parámetro *PowerState* establecido en 5 ("Power Cycle") y el parámetro *Time* establecido en una fecha y hora específicas, o un intervalo, para la encendido.
+El **método SetPowerState** se puede invocar con el parámetro *PowerState* establecido en 5 ("Ciclo de energía") y el parámetro *Time* establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -1240,9 +1240,9 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o, si están habilitadas, qué características se admiten. Para más información, consulte la matriz **PowerManagementCapabilities.**
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1276,7 +1276,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1307,7 +1307,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -1321,14 +1321,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1379,12 +1379,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado operativo DMTF \| \| 003.3")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 ("No aplicable").
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1434,12 +1434,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1452,12 +1452,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1473,7 +1473,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("segundos")
 </dt> </dl>
 
-Tiempo transcurrido, en segundos, desde que el UPS del sistema informático cambió por última vez a la energía de la batería, o la cantidad de tiempo transcurrido desde que el sistema o UPS se reiniciaron por última vez, lo que sea menor. Se devuelve un valor de 0 si la batería está "en línea".
+Tiempo transcurrido, en segundos, desde que el UPS del sistema informático cambió por última vez a la energía de la batería, o la cantidad de tiempo desde que se reinició por última vez el sistema o UPS, lo que sea menor. Se devuelve un valor de 0 si la batería está "en línea".
 
 </dd> <dt>
 
@@ -1486,26 +1486,26 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.16"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("minutes")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.16"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("minutos")
 </dt> </dl>
 
-Tiempo restante, en minutos, para cargar la batería completamente a la velocidad de carga actual y su uso.
+Tiempo restante, en minutos, para cargar la batería por completo a la velocidad de carga actual y su uso.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La clase Battery de **CIM \_** se deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+La **clase \_ Battery** de CIM se deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **cim \_ battery**, vea [Clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de la batería CIM , vea [Clases Win32](win32-provider.md). **\_**
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1515,7 +1515,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

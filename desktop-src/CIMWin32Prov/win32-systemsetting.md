@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 75c4ee9db2f48d02151c3874cc0ac5775f04e2d119ada972db09826dd1f791c5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e29b752d769cd347ce1cfdb729bf8c0c3959a4f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119827795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061433"
 ---
 # <a name="win32_systemsetting-class"></a>Clase SystemSetting de Win32 \_
 
-La clase [WMI](../wmisdk/retrieving-a-class.md) **de asociación \_ abstracta SystemSetting de Win32** relaciona un sistema informático y una configuración general en ese sistema.
+La clase [WMI](../wmisdk/retrieving-a-class.md) de asociación abstracta **\_ SystemSetting de Win32** relaciona un sistema informático y una configuración general en ese sistema.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ class Win32_SystemSetting : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemSetting de Win32** tiene estos tipos de miembros:
 
@@ -64,7 +64,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades de un sistema informático en el que se puede aplicar esta configuración.
+Referencia a la instancia de que representa las propiedades de un sistema informático donde se puede aplicar esta configuración.
 
 </dd> <dt>
 
@@ -84,9 +84,9 @@ Referencia a la instancia de que representa las propiedades de la configuración
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ SystemSetting de Win32** se deriva del [**elemento \_ CIMSetting**](cim-elementsetting.md).
+La **clase \_ SystemSetting de Win32** se deriva de [**\_ ElementSetting de CIM.**](cim-elementsetting.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ La **clase \_ SystemSetting de Win32** se deriva del [**elemento \_ CIMSetting**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 9e099378-bb77-4dca-9171-7fe58e0139de
 title: MFPKEY_DENOISEOPTION propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0483edbda1c2eb3ec929fb662fe4544cb09e7d43dfd1b30421d14eb06d2a365b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7f318e294f69095758fe300fce19043c23cf376
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119954075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257591"
 ---
 # <a name="mfpkey_denoiseoption-property"></a>Propiedad MFPKEY \_ DENOISEOPTION
 
@@ -25,11 +25,11 @@ VT \_ BOOL
 
 ## <a name="default-value"></a>Valor predeterminado
 
-FALSE
+false
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El filtro de ruido puede mejorar la calidad de los orígenes de vídeo ruidosos, como la película que contiene una gran cantidad de grano o una toma de vídeo con poca luz. Este filtro se puede usar en escenarios de codificación en vivo donde el preprocesamiento externo no es una opción.
+El filtro de ruido puede mejorar la calidad de los orígenes de vídeo ruidosos, como el vídeo que contiene una gran cantidad de grano o una toma de vídeo con poca luz. Este filtro se puede usar en escenarios de codificación en vivo donde el preprocesamiento externo no es una opción.
 
 Este filtro debe deshabilitarse para orígenes de vídeo limpios, ya que puede reducir la calidad de la imagen cuando la calidad es buena para empezar.
 
@@ -39,13 +39,13 @@ Este filtro debe deshabilitarse para orígenes de vídeo limpios, ya que puede r
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

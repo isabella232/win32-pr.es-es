@@ -1,7 +1,7 @@
 ---
-description: Evento que se señala cuando el PIN no está bloqueado.
+description: Evento que se señala cuando el pin no está bloqueado.
 ms.assetid: c05670e1-e9fe-4cb1-917f-6f75d25cde1b
-title: 'Miembro CDynamicOutputPin:: m_hUnblockOutputPinEvent (Amfilter. h)'
+title: CDynamicOutputPin::m_hUnblockOutputPinEvent miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,15 +17,15 @@ api_location:
 - Strmbasd.lib
 - Strmbasd.dll
 ms.openlocfilehash: 82f1f74412793166ad3aaadff9b8227e5366881f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062513"
 ---
-# <a name="cdynamicoutputpinm_hunblockoutputpinevent-member"></a>Miembro hUnblockOutputPinEvent CDynamicOutputPin:: m \_
+# <a name="cdynamicoutputpinm_hunblockoutputpinevent-member"></a>Miembro CDynamicOutputPin::m \_ hUnblockOutputPinEvent
 
-Evento que se señala cuando el PIN no está bloqueado.
+Evento que se señala cuando el pin no está bloqueado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HANDLE m_hUnblockOutputPinEvent;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

@@ -9,24 +9,24 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbSyntax
-ms.openlocfilehash: 79f8f65b18fd6774f318541b15d1649b7c25526f46bf3ab57f02edc4788687c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36f9da25c20d99da74be30046fc5f9f4789dfd73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117858659"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256917"
 ---
 # <a name="quickstart-sending-a-toast-notification-from-the-desktop"></a>Inicio rápido: Envío de una notificación del sistema desde el escritorio
 
 En este inicio rápido se muestra cómo generar una notificación del sistema desde una aplicación de escritorio.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 -   Bibliotecas
     -   C++: Runtime.object.lib
     -   C \# : Windows. Winmd
 -   Se debe instalar un acceso directo a [la aplicación, System.AppUserModel.ID](../properties/props-system-appusermodel-id.md), en el pantalla Inicio. Sin embargo, tenga en cuenta que no es necesario anclarse al pantalla Inicio. Para más información, consulte [Habilitación de notificaciones del sistema de escritorio a través de AppUserModelID.](enable-desktop-toast-with-appusermodelid.md)
--   Una versión de Microsoft Visual Studio admite al menos Windows 8
+-   Una versión de Microsoft Visual Studio que admita al menos Windows 8
 
 ## <a name="instructions"></a>Instructions
 
@@ -60,7 +60,7 @@ ToastNotification toast = new ToastNotification(toastXml);
 
 ### <a name="2-create-and-attach-the-event-handlers"></a>2. Creación y asociación de los controladores de eventos
 
-Registre controladores para los eventos del sistema: Activado, Descartado y Error. Una aplicación de escritorio debe suscribirse al menos al evento Activated para que pueda controlar la activación esperada de la aplicación desde el sistema cuando el usuario la selecciona.
+Registrar controladores para los eventos del sistema: Activado, Descartado y Error. Una aplicación de escritorio debe suscribirse al evento Activated para que pueda controlar la activación esperada de la aplicación desde el sistema cuando el usuario la selecciona.
 
 
 ```csharp
@@ -102,7 +102,7 @@ Poner la ventana de la aplicación en primer plano si recibe una devolución de 
 [Esquema XML del sistema](/uwp/schemas/tiles/toastschema/schema-root)
 </dt> <dt>
 
-[Introducción a las notificaciones del sistema](/previous-versions/windows/apps/hh779727(v=win.10))
+[Información general sobre notificaciones del sistema](/previous-versions/windows/apps/hh779727(v=win.10))
 </dt> <dt>
 
 [Inicio rápido: Envío de una notificación del sistema](/previous-versions/windows/apps/hh465448(v=win.10))

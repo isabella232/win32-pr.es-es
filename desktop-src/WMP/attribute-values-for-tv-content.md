@@ -3,7 +3,7 @@ title: Valores de atributo para contenido de TV
 description: Valores de atributo para contenido de TV
 ms.assetid: 70afb0fc-9eb0-4b94-a32a-f9202db94270
 keywords:
-- Reproductor de Windows Media,attributes para elementos multimedia
+- Reproductor de Windows Media,atributos para elementos multimedia
 - Reproductor de Windows Media modelo de objetos, atributos para elementos multimedia
 - modelo de objetos, atributos para elementos multimedia
 - Reproductor de Windows Media Móvil, atributos para elementos multimedia
@@ -16,12 +16,12 @@ keywords:
 - Valores de atributo de contenido de TV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa96f855d90fe0b65c4e9483dcb2ba4ae3ff7be049f1346f1038097789b2126c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb63e872edd80944772a320da5f2094e6d8f5757
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118583036"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241077"
 ---
 # <a name="attribute-values-for-tv-content"></a>Valores de atributo para contenido de TV
 
@@ -40,7 +40,7 @@ Reproductor de Windows Media 10 o posterior puede organizar el contenido de la t
 
 
 
-| Atributo                    | Valor                                |
+| Atributo                    | Value                                |
 |------------------------------|--------------------------------------|
 | **WM/MediaClassPrimaryID**   | DB9830BD-3AB3-4FAB-8A37-1A995F7FF74B |
 | **WM/MediaClassSecondaryID** | BA7F258A-62F7-47A9-B21F-4651C42A000E |
@@ -71,7 +71,7 @@ media.setItemInfo("WM/MediaClassSecondaryID", "BA7F258A-62F7-47A9-B21F-4651C42A0
 
 
 
-Para obtener más información sobre los valores posibles para los atributos de la clase multimedia, vea el Windows instrucciones de uso de [metadatos multimedia](/previous-versions/ms867702(v=msdn.10)).
+Para obtener más información sobre los valores posibles para los atributos de clase multimedia, vea el Windows instrucciones de uso de [metadatos multimedia](/previous-versions/ms867702(v=msdn.10)).
 
 ## <a name="related-topics"></a>Temas relacionados
 

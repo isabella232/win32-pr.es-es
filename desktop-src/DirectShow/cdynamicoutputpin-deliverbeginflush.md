@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 06b7486fa8fbacb4f2d048da198a78aa763e9beabc1991b2ddd178b9a55781b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4158a3d6191325e8b647e4551133952d623f795
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061739"
 ---
 # <a name="cdynamicoutputpindeliverbeginflush-method"></a>Método CDynamicOutputPin.DeliverBeginFlush
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBaseOutputPin::D eliverBeginFlush.**](cbaseoutputpin-deliverbeginflush.md) Establece el evento [**CDynamicOutputPin::m \_ hStopEvent.**](cdynamicoutputpin-m-hstopevent.md)
 
@@ -59,7 +59,7 @@ Este método invalida el [**método CBaseOutputPin::D eliverBeginFlush.**](cbase
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

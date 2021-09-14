@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 95c79071030b2f40613138e526abd1f965d3b5aeb7b233c2c53be57b65f97da7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c68fe1ab83724149dcd2fb58a60e9c6950d887ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061350"
 ---
 # <a name="cbasepinenummediatypes-method"></a>Método CBasePin.EnumMediaTypes
 
@@ -65,7 +65,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los pines de entrada no son necesarios para enumerar los tipos preferidos. Los pines de salida deben enumerar al menos un tipo preferido. De lo contrario, ambos pines podrían carecer de un tipo preferido, lo que imposibilitó una conexión.
 
@@ -84,7 +84,7 @@ La clase base [**CEnumMediaTypes**](cenummediatypes.md) implementa **IEnumMediaT
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

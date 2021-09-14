@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4de840c68af1abb9fd5a79e93318d984b64b295f5431317330bf03f0e34e44ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d4c4fdf0e8466d3fb0b2ad164241c3f6a541570
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061814"
 ---
 # <a name="lvm_getviewrect-message"></a>Mensaje \_ GETVIEWRECT de LVM
 
@@ -51,7 +51,7 @@ Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

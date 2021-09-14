@@ -9,12 +9,12 @@ keywords:
 - ADSI del proveedor LDAP, ejemplos de administración de usuarios, usuario debe cambiar la contraseña en el siguiente inicio de sesión, lectura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ebbccc3147ffb1e29c0081d6e19ef1a615b7020cdc7e246fea294df7d2d38c0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b26818ee02d3876aa209dcd4990288ea1cfe96fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119637585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062296"
 ---
 # <a name="reading-user-cannot-change-password-ldap-provider"></a>Leer que el usuario no puede cambiar la contraseña (proveedor LDAP)
 
@@ -417,7 +417,7 @@ HRESULT UserCannotChangePassword(LPCWSTR pwszUserDN,
 En el ejemplo de código siguiente se muestra cómo determinar el permiso Usuario no se puede cambiar la contraseña mediante el proveedor LDAP.
 
 > [!Note]  
-> El ejemplo de código siguiente solo funciona para los dominios en los que el idioma principal es inglés, ya que las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador de dominio del \\ dominio. No hay ninguna manera de Visual Basic los nombres de cuenta de una entidad de seguridad conocida sin llamar a la [**función LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Si usa Visual Basic, se recomienda usar el proveedor WinNT para determinar el permiso Usuario no se puede cambiar la contraseña como se muestra en Lectura del usuario no se puede cambiar la contraseña [(proveedor de WinNT).](reading-user-cannot-change-password-winnt-provider.md)
+> El ejemplo de código siguiente solo funciona para los dominios en los que el idioma principal es inglés, ya que las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador de dominio del \\ dominio. No hay ninguna manera de Visual Basic los nombres de cuenta de una entidad de seguridad conocida sin llamar a la [**función LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Si usa Visual Basic, se recomienda usar el proveedor winNT para determinar el permiso Usuario no se puede cambiar la contraseña, como se muestra en Lectura del usuario no se puede cambiar la contraseña [(proveedor de WinNT).](reading-user-cannot-change-password-winnt-provider.md)
 
  
 

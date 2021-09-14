@@ -4,12 +4,12 @@ ms.assetid: f2997905-26c9-4884-ae79-64df5ce6bc55
 title: PBT_APMRESUMECRITICAL evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f13214a97e99954d0649df0647bdf6ee3823b91926c0f2f2dc1212fa780a7b6c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3ef4a76e163f2e61e723f4df6572254e8ef89b40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062843"
 ---
 # <a name="pbt_apmresumecritical-event"></a>Evento \_ PBT APMRESUMECRITICAL
 
@@ -73,7 +73,7 @@ Reservado; debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dado que se produce una suspensión crítica sin notificación previa, es posible que los recursos y los datos disponibles anteriormente no estén presentes cuando la aplicación reciba este evento. La aplicación debe intentar restaurar su estado lo mejor que pueda. Mientras se encuentra en una suspensión crítica, el sistema mantiene el estado de la DRAM y los discos duros locales, pero puede que no mantenga conexiones netas. Es posible que una aplicación tenga que tomar medidas con respecto a los archivos que estaban abiertos en la red antes de la suspensión crítica.
 
@@ -87,11 +87,11 @@ Dado que se produce una suspensión crítica sin notificación previa, es posibl
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                                    |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                                           |
-| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

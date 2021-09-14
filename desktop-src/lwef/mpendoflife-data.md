@@ -4,7 +4,7 @@ description: '\ 0034; Fin del ciclo de vida \ 0034; datos de notificación.'
 ms.assetid: 00C2E707-9034-4BBC-99CF-3DFA4B8C08D9
 keywords:
 - MPENDOFLIFE_DATA estructura heredada de Windows environment
-- PMPENDOFLIFE_DATA puntero de estructura heredado de Windows Environment Features
+- PMPENDOFLIFE_DATA puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 532ee5f80e76de49c2c20bb01958e95fc13603b8f4b65666639834c5cad0fa72
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e209b9b35a089523815c353e8a750152bf4af75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118476287"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258031"
 ---
 # <a name="mpendoflife_data-structure"></a>Estructura DE DATOS MPENDOFLIFE \_
 
-Datos de notificación de "fin de ciclo de vida".
+Datos de notificación de "Fin del ciclo de vida".
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ typedef struct tagMPENDOFLIFE_DATA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Tipo: **BOOL**
 
 </dd> <dd>
 
-True si "Fin de la vida" está pendiente o pasado. Si es false, la interfaz de usuario y los clientes pueden borrar los estados relacionados con EOL.
+True si "Final del ciclo de vida" está pendiente o pasado. Si es false, la interfaz de usuario y los clientes pueden borrar los estados relacionados con EOL.
 
 </dd> </dl>
 
@@ -92,11 +92,11 @@ True si "Fin de la vida" está pendiente o pasado. Si es false, la interfaz de u
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

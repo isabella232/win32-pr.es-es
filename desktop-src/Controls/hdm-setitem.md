@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd0e2709a1b40bd4a564498cd0ae0b5d4e11861066aa9b0951815f92ee1c295f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71b03a05b909cf8c7887edd2031f5346c419f1cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118171070"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061972"
 ---
 # <a name="hdm_setitem-message"></a>Mensaje \_ SETITEM de HDM
 
@@ -49,7 +49,7 @@ Puntero a una estructura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hd
 
 Devuelve un valor distinto de cero si se ha hecho correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**estructura HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) que admite este mensaje admite información sobre el orden de los elementos y la lista de imágenes. Mediante el uso de estos miembros, puede controlar el orden en el que se muestran los elementos y especificar imágenes para que aparezcan con los elementos.
 
@@ -57,11 +57,11 @@ La [**estructura HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) que 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDM \_ SETITEMW** (Unicode) y **HDM \_ SETITEMA** (ANSI)<br/>                   |
 
 

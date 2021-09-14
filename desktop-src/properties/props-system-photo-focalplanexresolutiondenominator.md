@@ -4,12 +4,12 @@ ms.assetid: 54aaf800-6685-4945-976f-a9f1c25aa523
 title: System.Photo.FocalPlaneXResolutionDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c9970cdee3d658edfbeda2c8e36e11e495ec8675570e1c64f80db1133a5819f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6337b3674edc3af3116a53d2674a2b4e2fee9fbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118229182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257127"
 ---
 # <a name="systemphotofocalplanexresolutiondenominator"></a>System.Photo.FocalPlaneXResolutionDenominator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

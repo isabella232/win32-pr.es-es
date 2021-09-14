@@ -4,12 +4,12 @@ ms.assetid: 0a885b7a-840d-4112-85f7-ff6f2d87bb75
 title: EC_CLOCK_UNSET (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd7bc9daecb9e39ca2d121c9fa903b2e4e8257e6247f28d718ca093b302cc2e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85ead35d89eee94bbffb38a96f658ccb2bb6e6e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061199"
 ---
 # <a name="ec_clock_unset"></a>EC \_ CLOCK \_ UNSET
 
@@ -35,11 +35,11 @@ Cero.
 
 ## <a name="default-action"></a>Acción predeterminada
 
-El Administrador Graph filtros elige un nuevo reloj de referencia en el siguiente comando de pausa o ejecución. También reenvía el evento a la aplicación.
+El Administrador Graph filtro elige un nuevo reloj de referencia en el siguiente comando de pausa o ejecución. También reenvía el evento a la aplicación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-KSProxy señala este evento cuando se desconecta el pin de un filtro que proporciona reloj.
+KSProxy señala este evento cuando se desconecta la marca de un filtro que proporciona el reloj.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ KSProxy señala este evento cuando se desconecta el pin de un filtro que proporc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

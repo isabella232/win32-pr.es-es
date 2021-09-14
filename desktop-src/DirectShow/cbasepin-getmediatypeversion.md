@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1f1b50b16a099c8698bbf5bef270173334f1c3ac2c3d2d67ff87778cffddf2ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe01d33d7a7c1cb65bc0e2391af63e3519d9cce3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118955194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061344"
 ---
 # <a name="cbasepingetmediatypeversion-method"></a>Método CBasePin.GetMediaTypeVersion
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la [**variable miembro CBasePin::m \_ TypeVersion.**](cbasepin-m-typeversion.md)
+Devuelve la variable [**miembro CBasePin::m \_ TypeVersion.**](cbasepin-m-typeversion.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El constructor **CBasePin** inicializa el número de versión en 1. En la clase base, este número nunca cambia. Si el pin cambia dinámicamente su lista de tipos de medios preferidos, debe incrementar el número de versión cada vez que cambie la lista. Para incrementar el número de versión, llame al [**método CBasePin::IncrementTypeVersion.**](cbasepin-incrementtypeversion.md)
+El **constructor CBasePin** inicializa el número de versión en 1. En la clase base, este número nunca cambia. Si el pin cambia dinámicamente su lista de tipos de medios preferidos, debe incrementar el número de versión cada vez que cambie la lista. Para incrementar el número de versión, llame [**al método CBasePin::IncrementTypeVersion.**](cbasepin-incrementtypeversion.md)
 
 El enumerador de tipo de medio, que implementa la clase [**CEnumMediaTypes,**](cenummediatypes.md) usa el número de versión para mantenerse sincronizado con el pin.
 
@@ -61,7 +61,7 @@ El enumerador de tipo de medio, que implementa la clase [**CEnumMediaTypes,**](c
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

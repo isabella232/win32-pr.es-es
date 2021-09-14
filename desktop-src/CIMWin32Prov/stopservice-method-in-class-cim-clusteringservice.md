@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2c6cb636a644ba9d67bb6165163b297257af83753a1bcae77a0aa53f8731ffa3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3a55f7b0a9527092e51156d55c7513ee59c4861
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119752305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062580"
 ---
 # <a name="stopservice-method-of-the-cim_clusteringservice-class"></a>Método StopService de la clase \_ ClusteringService de CIM
 
@@ -49,7 +49,7 @@ Este método no tiene parámetros.
 
 Devuelve un valor de 0 (cero) si el servicio se detuvo correctamente, 1 (uno) si no se admite la solicitud y cualquier otro número para indicar un error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
@@ -64,13 +64,13 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
-| Header<br/>                   | <dl> <dt>Sdoias.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Sdoias.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 060ff0cc10fed441fdb2d6f2bf1bd0e66f3e8b9facec3cb52d8f270b350b1f4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a39aa79e9311fe3491d0925fdc1b2dd3b1cc65c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817706"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062309"
 ---
 # <a name="isamplegrabbersetmediatype-method"></a>ISampleGrabber::SetMediaType (método)
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, Sample Grabber no tiene ningún tipo de medio preferido. Para asegurarse de que sample Grabber se conecta al filtro correcto, llame a este método antes de compilar el gráfico de filtros.
 

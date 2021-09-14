@@ -4,12 +4,12 @@ ms.assetid: f7662562-6036-4b3c-9c24-b12afb9255a0
 title: System.Media.ClassPrimaryID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a5278ab3ca40cdb23a622f004ec96a15783e3411ae8a369bcaa0dfade9261f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83bc99f3292a5772f2230b1e963f1ba8d383100d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118725985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257175"
 ---
 # <a name="systemmediaclassprimaryid"></a>System.Media.ClassPrimaryID
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

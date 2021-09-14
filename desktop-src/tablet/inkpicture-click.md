@@ -4,12 +4,12 @@ ms.assetid: 326bac37-2d5d-434b-916c-8a675bab5052
 title: Evento InkPicture.Click (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08ebde47609a36a92eca211f597345a9784fca03f66076ebb4db6f04ee6f5936
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1dd90cd69555f65531f5ab2684f886dab23e191
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118218544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256593"
 ---
 # <a name="inkpictureclick-event"></a>Evento InkPicture.Click
 
@@ -32,7 +32,7 @@ Este evento no tiene parámetros.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al hacer clic en un control se [**generan eventos MouseDown**](inkpicture-mousedown.md) [**y MouseUp**](inkpicture-mouseup.md) además del evento Click.
 
@@ -49,11 +49,11 @@ Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9daa65558c58849d406056ce3358c26fdf2ce1c604342f993babe6af553d130f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee241b39f2d0c1939cf2cb0cc09e079abd3430a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060587"
 ---
 # <a name="id3dxlinebegin-method"></a>Método ID3DXLine::Begin
 
@@ -42,15 +42,15 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Llamar **a ID3DXLine::Begin** es opcional. Si se llama fuera de una secuencia ID3DXLine::Begin/ID3DXLine::End, las funciones draw llamarán internamente a ID3DXLine::Begin e ID3DXLine::End. Para evitar sobrecargas adicionales, se debe usar este método si se llamará sucesivamente a más de una función draw.
+Llamar **a ID3DXLine::Begin** es opcional. Si se llama fuera de una secuencia ID3DXLine::Begin/ID3DXLine::End, las funciones draw llamarán internamente a ID3DXLine::Begin e ID3DXLine::End. Para evitar sobrecargas adicionales, este método debe usarse si se llamará sucesivamente a más de una función draw.
 
 Se debe llamar a este método desde dentro de una secuencia [**IDirect3DDevice9::BeginScene**](/windows/desktop/api) [**e IDirect3DDevice9::EndScene.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-endscene)
 
-ID3DXLine::Begin no se puede usar como sustituto de [**IDirect3DDevice9::BeginScene**](/windows/desktop/api) o [**ID3DXRenderToSurface::BeginScene.**](id3dxrendertosurface--beginscene.md)
+ID3DXLine::Begin no se puede usar como sustituto de [**IDirect3DDevice9::BeginScene**](/windows/desktop/api) o [**ID3DXRenderToSurface::BeginScene**](id3dxrendertosurface--beginscene.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ ID3DXLine::Begin no se puede usar como sustituto de [**IDirect3DDevice9::BeginSc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

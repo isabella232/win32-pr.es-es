@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec2TransformCoord (D3dx9math.h): transforma un vector 2D por una matriz determinada, proyectando el resultado de nuevo en w = 1.'
+description: 'Función D3DXVec2TransformCoord (D3dx9math.h): transforma un vector 2D mediante una matriz determinada, proyectando el resultado de nuevo en w = 1.'
 ms.assetid: 0c0efdf8-77df-4f4a-86ce-89e11555f4dc
 title: Función D3DXVec2TransformCoord (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fa9d36b43cd86ceeb6b3fc9982d22e2cb1a75dd92f819f5c2eeb05835073e285
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 717af9eed2c7cedae7ac292a19239e13521dfa74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060693"
 ---
 # <a name="d3dxvec2transformcoord-function-d3dx9mathh"></a>Función D3DXVec2TransformCoord (D3dx9math.h)
 
-Transforma un vector 2D por una matriz determinada, proyectando el resultado de nuevo en w = 1.
+Transforma un vector 2D mediante una matriz determinada, proyectando el resultado de nuevo en w = 1.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,9 +75,9 @@ Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
 Puntero a una [**estructura D3DXVECTOR2**](d3dxvector2.md) que es el vector transformado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función transforma el vector, *pV* (x, y, 0, 1), por la matriz, *pM,* proyectando el resultado de nuevo en w=1.
+Esta función transforma el vector, *pV* (x, y, 0, 1), por la matriz, *pM*, proyectando el resultado de nuevo en w=1.
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec2TransformCoord** se puede usar como parámetro para otra función.
 
@@ -92,7 +92,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

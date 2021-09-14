@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5d8f9d30b057c1c011dcbff1b7d8c88e9183d50ca1fc2b7dd046b79fe8279d37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01e83520943abafd814425b6ff3fb53f48775627
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061718"
 ---
 # <a name="creftime-class"></a>CRefTime (clase)
 
@@ -50,7 +50,7 @@ Un *tiempo de referencia* es una unidad de tiempo representada en unidades de 10
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Existe un posible problema con el uso de esta clase. Si aplica el operador += con un objeto **CRefTime** como operando izquierdo y una variable de tipo **LONG** como operando derecho, el compilador coercirá implícitamente el operando derecho en un **objeto CRefTime.** Esta coerción usa el constructor **CRefTime** que convierte milisegundos en unidades DE TIEMPO DE REFERENCIA; como resultado, el operando derecho se multiplica por \_ 10 000:
 

@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: edaafa00f792cf01b4166d525171cf15b7f781c8c0c943c17377b3bd9b3401dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7cbf7c42b8523bcd12b19e9b474ecc50bd031939
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062729"
 ---
 # <a name="create-method-of-the-win32_clustershare-class"></a>Método Create de la clase ClusterShare de Win32 \_
 
@@ -63,7 +63,7 @@ Ejemplo, "public".
 *Tipo* \[ En\]
 </dt> <dd>
 
-Tipo de recurso que se comparte. Los tipos incluyen: unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales.
+Tipo de recurso que se comparte. Entre los tipos se incluyen: unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales.
 
 <dt>
 
@@ -123,28 +123,28 @@ Administrador de IPC
 
 </dd> </dl> </dd> <dt>
 
-*MaximumAllowed* \[ in, opcional\]
+*MaximumAllowed* \[ en, opcional\]
 </dt> <dd>
 
 Limite el número máximo de usuarios que pueden usar este recurso simultáneamente.
 
 </dd> <dt>
 
-*Descripción* \[ in, opcional\]
+*Descripción* \[ en, opcional\]
 </dt> <dd>
 
 Descripción del objeto.
 
 </dd> <dt>
 
-*Contraseña* \[ in, opcional\]
+*Contraseña* \[ en, opcional\]
 </dt> <dd>
 
-Por determinar
+TBD
 
 </dd> <dt>
 
-*Acceso* \[ in, opcional\]
+*Acceso* \[ en, opcional\]
 </dt> <dd>
 
 Instancia incrustada opcional de una [**clase \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) que contiene el descriptor de seguridad para el nuevo recurso compartido.
@@ -165,7 +165,7 @@ Instancia incrustada opcional de una [**clase \_ SecurityDescriptor de Win32**](
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

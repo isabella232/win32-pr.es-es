@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 24526d7743b1f4939f2240c751f7da2bfecfacfe13d2ddf3cbc7fdd73c1d260e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cf84d2e7943dfe6da88f81ef6963190553f028e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119321645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061554"
 ---
 # <a name="cim_deviceaccessedbyfile-class"></a>Cim \_ DeviceAccessedByFile (clase)
 
@@ -45,7 +45,7 @@ class CIM_DeviceAccessedByFile : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim DeviceAccessedByFile** tiene estos tipos de miembros:
 
@@ -53,7 +53,7 @@ La **clase \_ Cim DeviceAccessedByFile** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ CIM DeviceAccessedByFile** tiene estas propiedades.
+La **clase CIM \_ DeviceAccessedByFile** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -89,7 +89,7 @@ Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que describe el dispos
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
@@ -101,7 +101,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

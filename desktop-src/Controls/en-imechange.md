@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4974c4126606b8ed95ffa645778469b6fc897488533b81498347de1c1995e7a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4fa0e0c8fe4e7d6d8de876a5d1a1fb7a10754096
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120047685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062039"
 ---
-# <a name="en_imechange-notification-code"></a>Código \_ de notificación de EN IMECHANGE
+# <a name="en_imechange-notification-code"></a>Código de notificación de EN \_ IMECHANGE
 
 Notifica al elemento primario de un control de edición enriquecido que el estado de conversión de IME ha cambiado. Este código de notificación solo *está disponible* para las versiones en idioma asiático del sistema operativo. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
@@ -57,9 +57,9 @@ Controlar el control de edición enriquecido.
 
 Este código de notificación devuelve cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para recibir códigos de notificación EN \_ IMECHANGE, especifique [**ENM \_ IMECHANGE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
+Para recibir los códigos de notificación EN \_ IMECHANGE, especifique [**ENM \_ IMECHANGE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 > [!Note]  
 > Este código de notificación solo se admite en la versión de Asia de Rich Edit 1.0. No se admite en versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
@@ -74,11 +74,11 @@ Para recibir códigos de notificación EN \_ IMECHANGE, especifique [**ENM \_ IM
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 32df78aedcf4e7e229eec8c9648c82c86f6fea9f4c7176b8780cee67ccf49fcb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b60d01d59a4e54fa0d50c16a3fc845ea4e316792
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060595"
 ---
 # <a name="id3dxincludeclose-method"></a>Método ID3DXInclude::Close
 
@@ -53,13 +53,13 @@ Puntero al búfer devuelto que contiene las directivas include. Este es el punte
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al leer el archivo de include, se producirá un error en la API que hizo que se llamara a \# la devolución de llamada. Es uno de los siguientes:
+El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al leer el archivo include, se producirá un error en la API que hizo que se llamara a \# la devolución de llamada. Es uno de los siguientes:
 
 -   El sombreador HLSL producirá un error en una de las funciones D3DXCompileShader. \* \* \*
 -   El sombreador de ensamblados producirá un error en una de las funciones D3DXAssembleShader. \* \* \*
 -   El efecto producirá un error en una de las funciones D3DXCreateEffect \* \* \* o D3DXCreateEffectCompiler. \* \* \*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si [**ID3DXInclude::Open**](id3dxinclude--open.md) se ha realizado correctamente, se garantiza que se llamará a **ID3DXInclude::Close** antes de que se devuelva la API que usa esta interfaz.
 
@@ -74,7 +74,7 @@ Si [**ID3DXInclude::Open**](id3dxinclude--open.md) se ha realizado correctamente
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e80e05686d06871aa40e8a649a119a41fb1a7a59bbb60a77b56497561ae9f27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 512819d4c01524e82a92fee9849a9589366a36ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240968"
 ---
 # <a name="equalizersettingsgainlevel10"></a>EQUALIZERSETTINGS.gainLevel10
 
@@ -29,9 +29,9 @@ El **atributo gainLevel10** especifica o recupera el nivel de ganancia de la ban
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura y **escritura** **(float)** con un valor que normalmente oscila entre 20 y +20. Tiene un valor predeterminado de cero.
+Este atributo es un número de lectura y **escritura** (**float**) con un valor que normalmente oscila entre 20 y +20. Tiene un valor predeterminado de cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo ajusta la parte del espectro de frecuencia de audio centrada en 16 kHz.
 
@@ -47,7 +47,7 @@ Si no se especifica este atributo, se conservará el valor anterior.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

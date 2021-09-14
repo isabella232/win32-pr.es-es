@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11SaveTextureToMemory (D3DX11tex.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar la biblioteca DirectXTex, CaptureTexture y SaveToXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos). Guarde una textura en la memoria.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar la biblioteca DirectXTex, CaptureTexture y SaveToXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos). Guarde una textura en la memoria.
 ms.assetid: 3b54d8e1-6474-48fd-8348-a3baac406101
 keywords:
 - Función D3DX11SaveTextureToMemory Direct3D 11
@@ -15,12 +15,12 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8459b9652701110a27efa88cf75d1bd5eb9214f72e860a5a80c18d0fa6292ba0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4718f32f8d8288f83b30e3d742ebbe619421dc48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124570"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060846"
 ---
 # <a name="d3dx11savetexturetomemory-function"></a>Función D3DX11SaveTextureToMemory
 
@@ -69,7 +69,7 @@ Puntero a un [**objeto ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d
 
 Tipo: **[ **ID3D11Resource**](/windows/desktop/api/D3D11/nn-d3d11-id3d11resource)\***
 
-Puntero a la textura que se va a guardar. Consulte [**ID3D11Resource**](/windows/desktop/api/D3D11/nn-d3d11-id3d11resource).
+Puntero a la textura que se va a guardar. Vea [**ID3D11Resource**](/windows/desktop/api/D3D11/nn-d3d11-id3d11resource).
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Di
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

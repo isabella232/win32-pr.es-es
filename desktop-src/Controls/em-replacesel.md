@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 478550432aa8c03a081e8de214cdd7e8337a46eca2676a0531b177a81ff20a54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d9745b870a310626a6cbbbddbef118a63c64479
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117831186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062150"
 ---
 # <a name="em_replacesel-message"></a>Mensaje \_ DE EM REPLACESEL
 
@@ -47,9 +47,9 @@ Puntero a una cadena terminada en NULL que contiene el texto de reemplazo.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use el **mensaje EM \_ REPLACESEL** para reemplazar solo una parte del texto en un control de edición. Para reemplazar todo el texto, use el [**mensaje \_ SETTEXT de WM.**](/windows/desktop/winmsg/wm-settext)
+Use el **mensaje EM \_ REPLACESEL** para reemplazar solo una parte del texto de un control de edición. Para reemplazar todo el texto, use el [**mensaje \_ SETTEXT de WM.**](/windows/desktop/winmsg/wm-settext)
 
 Si no hay ninguna selección, el texto de reemplazo se inserta en el símbolo de inserción.
 
@@ -61,11 +61,11 @@ En un control de edición enriquecido, el texto de reemplazo toma el formato del
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

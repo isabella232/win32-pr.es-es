@@ -4,16 +4,16 @@ description: Una aplicación crea un control rebar llamando a la función Create
 ms.assetid: F17CC2A4-BDC6-48A6-9AF5-19FCF65CC39A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ebd6063f8921453a5c71e1c2467bf803c67c0a1b4f66e98006b9118e6a588b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19b38cd49e8e6016dafad5ec07c77be570a5a430
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117831777"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062216"
 ---
 # <a name="how-to-create-rebar-controls"></a>Cómo crear controles Rebar
 
-Una aplicación crea un control rebar llamando a la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y [**especificaNDO REBARCLASSNAME**](common-control-window-classes.md) como clase de ventana. En primer lugar, la aplicación debe registrar la clase window llamando a la función [**InitCommonControlsEx,**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) especificando el bit DE CLASES COOL DE JAVA EN LA ESTRUCTURA \_ \_ [**INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) que lo acompaña.
+Una aplicación crea un control rebar llamando a la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y [**especificaNDO REBARCLASSNAME**](common-control-window-classes.md) como clase de ventana. En primer lugar, la aplicación debe registrar la clase window llamando a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) y especificando el bit DE CLASES COOL DE CLASS DE CLASS EN LA estructura \_ \_ [**INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) que lo acompaña.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -30,7 +30,7 @@ Una aplicación crea un control rebar llamando a la [**función CreateWindowEx**
 
 ### <a name="create-a-rebar-control"></a>Crear un control Rebar
 
-En el ejemplo siguiente se crea un control rebar con dos bandas: una que contiene un cuadro combinado y otra que contiene una barra de herramientas. (Vea la ilustración en [Acerca de los controles rebar](rebar-controls.md)). Estos controles se crean por separado y se pasan a la función de ejemplo como parámetros.
+En el ejemplo siguiente se crea un control rebar con dos bandas: una que contiene un cuadro combinado y otra que contiene una barra de herramientas. (Vea la ilustración de [Acerca de los controles Rebar).](rebar-controls.md) Estos controles se crean por separado y se pasan a la función de ejemplo como parámetros.
 
 
 ```C++

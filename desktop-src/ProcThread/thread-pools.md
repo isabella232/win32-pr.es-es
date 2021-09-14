@@ -4,12 +4,12 @@ ms.assetid: abe0798a-0b60-4bdb-a61e-45393f1e958d
 title: Grupos de subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7918a0f6f0b881233ebea8e664d6e743a7bff105e265270063b08af313417e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 690aa3eb6fd3ce7a99d71e0f57118529ef79113f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062781"
 ---
 # <a name="thread-pools"></a>Grupos de subprocesos
 
@@ -22,7 +22,7 @@ Las siguientes aplicaciones pueden beneficiarse del uso de un grupo de subproces
 -   Una aplicación que es muy paralela y puede enviar un gran número de elementos de trabajo pequeños de forma asincrónica (como la búsqueda de índices distribuidos o la E/S de red).
 -   Una aplicación que crea y destruye un gran número de subprocesos que se ejecutan durante un breve período de tiempo. El uso del grupo de subprocesos puede reducir la complejidad de la administración de subprocesos y la sobrecarga implicada en la creación y destrucción de subprocesos.
 -   Aplicación que procesa elementos de trabajo independientes en segundo plano y en paralelo (como cargar varias pestañas).
--   Una aplicación que debe realizar una espera exclusiva en objetos de kernel o bloquear los eventos entrantes en un objeto. El uso del grupo de subprocesos puede reducir la complejidad de la administración de subprocesos y aumentar el rendimiento al reducir el número de modificadores de contexto.
+-   Una aplicación que debe realizar una espera exclusiva en objetos de kernel o bloquear los eventos entrantes en un objeto . El uso del grupo de subprocesos puede reducir la complejidad de la administración de subprocesos y aumentar el rendimiento al reducir el número de modificadores de contexto.
 -   Aplicación que crea subprocesos de espera personalizados para esperar eventos.
 
 El grupo de subprocesos original se ha reorganizado completamente en Windows Vista. El nuevo grupo de subprocesos se mejora porque proporciona un único tipo de subproceso de trabajo (admite E/S y no E/S), no usa un subproceso de temporizador, proporciona una cola de temporizador única y proporciona un subproceso persistente dedicado. También proporciona grupos de limpieza, un mayor rendimiento, varios grupos por proceso que se programan de forma independiente y una nueva API de grupo de subprocesos.
@@ -45,7 +45,7 @@ Estos son los procedimientos recomendados al usar un grupo de subprocesos:
 -   Una solicitud de E/S se puede ejecutar en cualquier subproceso del grupo de subprocesos. La cancelación de E/S en un subproceso del grupo de subprocesos requiere sincronización porque la función cancel podría ejecutarse en un subproceso diferente del que está controlando la solicitud de E/S, lo que puede dar lugar a la cancelación de una operación desconocida. Para evitar esto, proporcione siempre la estructura [**OVERLAPPED**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) con la que se inició una solicitud de E/S al llamar a [**CancelIoEx**](/windows/win32/api/ioapiset/nf-ioapiset-cancelioex) para E/S asincrónica, o use su propia sincronización para asegurarse de que no se pueda iniciar ninguna otra E/S en el subproceso de destino antes de llamar a la función [**CancelSynchronousIo**](/windows/win32/api/ioapiset/nf-ioapiset-cancelsynchronousio) o **CancelIoEx.**
 -   Limpie todos los recursos creados en la función de devolución de llamada antes de volver de la función. Estos incluyen TLS, contextos de seguridad, prioridad de subproceso y registro COM. Las funciones de devolución de llamada también deben restaurar el estado del subproceso antes de volver.
 -   Mantenga los identificadores de espera y sus objetos asociados activo hasta que el grupo de subprocesos haya señalado que ha finalizado con el identificador.
--   Marque todos los subprocesos que están esperando operaciones largas (como vaciados de E/S o limpieza de recursos) para que el grupo de subprocesos pueda asignar nuevos subprocesos en lugar de esperar a este.
+-   Marque todos los subprocesos que esperan operaciones largas (como vaciados de E/S o limpieza de recursos) para que el grupo de subprocesos pueda asignar nuevos subprocesos en lugar de esperar a este.
 -   Antes de descargar un archivo DLL que usa el grupo de subprocesos, cancele todos los elementos de trabajo, E/S, operaciones de espera y temporizadores, y espere a que se completen las devoluciones de llamada de ejecución.
 -   Evite interbloqueos eliminando las dependencias entre los elementos de trabajo y entre las devoluciones de llamada, asegurándose de que una devolución de llamada no está esperando a que se complete y conservando la prioridad del subproceso.
 -   No poner en cola demasiados elementos demasiado rápido en un proceso con otros componentes mediante el grupo de subprocesos predeterminado. Hay un grupo de subprocesos predeterminado por proceso, incluidos Svchost.exe. De forma predeterminada, cada grupo de subprocesos tiene un máximo de 500 subprocesos de trabajo. El grupo de subprocesos intenta crear más subprocesos de trabajo cuando el número de subprocesos de trabajo en estado listo o en ejecución debe ser menor que el número de procesadores.
@@ -54,7 +54,7 @@ Estos son los procedimientos recomendados al usar un grupo de subprocesos:
 -   Si es posible, use un objeto que se puede esperar en lugar de un mecanismo basado en APC para señalar un subproceso de grupo de subprocesos. Las API no funcionan tan bien con los subprocesos del grupo de subprocesos como otros mecanismos de señalización porque el sistema controla la duración de los subprocesos del grupo de subprocesos, por lo que es posible que un subproceso finalice antes de que se entregue la notificación.
 -   Use la extensión del depurador del grupo de subprocesos, !tp. Este comando tiene el siguiente uso:
 
-    -   marcas *de direcciones de* *grupo*
+    -   marcas *de direcciones* de *grupo*
     -   Marcas de *dirección*  obj
     -   Marcas de dirección *de*  tqueue
     -   dirección del *waiter*

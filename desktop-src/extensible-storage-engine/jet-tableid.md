@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f3221fcb23e6c512ff7b5a2ade7abad0791b9449
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 04e59ddada8715872978ccc21da11a349e1b7c43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465442"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242210"
 ---
 # <a name="jet_tableid"></a>JET_TABLEID
 
@@ -41,7 +41,7 @@ JET_TABLEID
 
 Null **o** [JET_tableidNil](./invalid-handle-constants.md) se pueden usar para indicar un identificador de cursor no válido.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Un cursor administra el uso de una tabla para el motor de base de datos. Un cursor puede realizar las siguientes tareas:
 
@@ -49,7 +49,7 @@ Un cursor administra el uso de una tabla para el motor de base de datos. Un curs
 
   - Buscar registros
 
-  - Elegir el criterio de ordenación efectivo y la visibilidad de esos registros
+  - Elección del criterio de ordenación y visibilidad efectivos de esos registros
 
   - Creación, actualización o eliminación de registros
 
@@ -62,7 +62,11 @@ Se puede crear un cursor [mediante JetOpenTable](./jetopentable-function.md) o [
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

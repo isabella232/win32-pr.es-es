@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Poclass.h
 - BatClass.h
-ms.openlocfilehash: 29d8b33238fa8daa463c007fa9d65cba9c6fb72ef13f0f68587a1452f3dabb0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2de9d3ab48aec13a9a5c1957a5f98aefbe6a09f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062861"
 ---
-# <a name="ioctl_battery_query_status-control-code"></a>Código de \_ control DE ESTADO DE LA CONSULTA DE BATERÍA \_ \_ DE IOCTL
+# <a name="ioctl_battery_query_status-control-code"></a>Código de \_ control DE ESTADO DE LA CONSULTA DE LA BATERÍA \_ \_ DE IOCTL
 
 Recupera el estado actual de la batería.
 
@@ -50,7 +50,7 @@ BOOL DeviceIoControl(
 *hDevice* 
 </dt> <dd>
 
-Identificador de la batería desde la que se va a devolver la información. Para recuperar un identificador de dispositivo, llame a la [**función CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
+Identificador de la batería de la que se va a devolver información. Para recuperar un identificador de dispositivo, llame a la [**función CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 
 </dd> <dt>
 
@@ -92,13 +92,13 @@ Tamaño del búfer de salida, en bytes.
 *lpBytesReturned* 
 </dt> <dd>
 
-Puntero a una variable que recibe el tamaño de los datos devueltos en el búfer *lpOutBuffer,* en bytes.
+Puntero a una variable que recibe el tamaño de los datos devueltos en el *búfer lpOutBuffer,* en bytes.
 
 Si el búfer de salida es demasiado pequeño para devolver datos, se produce un error en la llamada, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el código de error **ERROR INSUFFICIENT \_ \_ BUFFER** y el recuento de bytes devuelto es cero.
 
 Si *lpOverlapped* es **NULL** (E/S nooverlapped), *lpBytesReturned* no puede ser **NULL.**
 
-Si *lpOverlapped no* es **NULL** (E/S superpuesta), *lpBytesReturned* puede ser **NULL.** Si se trata de una operación superpuesta, puede recuperar el número de bytes devueltos llamando a la [**función GetOverlappedResult.**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Si *hDevice* está asociado a un puerto de finalización de E/S, puede obtener el número de bytes devueltos llamando a la función [**GetQueuedCompletionStatus.**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
+Si *lpOverlapped* no es **NULL** (E/S superpuesta), *lpBytesReturned* puede ser **NULL.** Si se trata de una operación superpuesta, puede recuperar el número de bytes devueltos llamando a la [**función GetOverlappedResult.**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Si *hDevice* está asociado a un puerto de finalización de E/S, puede obtener el número de bytes devueltos llamando a la [**función GetQueuedCompletionStatus.**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
@@ -107,9 +107,9 @@ Si *lpOverlapped no* es **NULL** (E/S superpuesta), *lpBytesReturned* puede ser 
 
 Puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Si *hDevice se* abrió con la marca **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) se realiza como una operación superpuesta (asincrónica). Si el dispositivo se abrió con la marca **\_ FILE FLAG \_ OVERLAPPED** y *lpOverlapped* es **NULL,** la función produce un error de manera imprevisible.
+Si *hDevice se* abrió con la marca **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* debe apuntar a una [**estructura OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) se realiza como una operación superpuesta (asincrónica). Si el dispositivo se abrió con la marca **\_ FILE FLAG \_ OVERLAPPED** y *lpOverlapped* es **NULL,** se produce un error en la función de maneras imprevisibles.
 
-Si *hDevice* se abrió sin especificar la marca **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* se omite y la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) no se devuelve hasta que se ha completado la operación o hasta que se produce un error.
+Si *hDevice* se abrió sin especificar la marca **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* se omite y la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) no se devuelve hasta que se haya completado la operación o hasta que se produzca un error.
 
 </dd> </dl>
 
@@ -125,7 +125,7 @@ Esta IOCTL de batería recupera el estado de la batería en el momento en que se
 
 Las solicitudes de estado de la batería pueden ser para la devolución inmediata o se pueden establecer para esperar una condición determinada antes de completarse. Por ejemplo, se puede realizar una solicitud de información de batería que espere hasta que la capacidad de la batería alcance un punto especificado o cambie el estado de la batería.
 
-Todas las solicitudes de información de batería se completarán con el estado ARCHIVO DE ERROR NO ENCONTRADO siempre que el elemento **BatteryTag** de la solicitud no coincida con el de la etiqueta de batería actual. **\_ \_ \_** (Consulte [Etiquetas de batería](battery-information.md) para obtener más información). Esto se usa para asegurarse de que la información de la batería devuelta coincide con la de la batería solicitada.
+Todas las solicitudes de información de la batería se completarán con el estado ARCHIVO DE ERROR NO ENCONTRADO siempre que el elemento **BatteryTag** de la solicitud no coincida con el de la etiqueta de batería actual. **\_ \_ \_** (Consulte [Etiquetas de batería](battery-information.md) para obtener más información). Esto se usa para asegurarse de que la información de la batería devuelta coincide con la de la batería solicitada.
 
 Para ver las implicaciones de la E/S superpuesta en esta operación, consulte la sección Comentarios del [**tema DeviceIoControl.**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)
 
@@ -139,17 +139,17 @@ Para obtener un ejemplo, consulte [Enumeración de dispositivos de batería.](en
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                                                                                                                                                                         |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                                                                                                                                                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                                                                                                                                                                                |
-| Header<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>BatClass.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Poclass.h;</dt> <dt>BatClass.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información de la batería](battery-information.md)
+[Información de batería](battery-information.md)
 </dt> <dt>
 
 [Códigos de control de administración de energía](power-management-control-codes.md)
@@ -167,10 +167,10 @@ Para obtener un ejemplo, consulte [Enumeración de dispositivos de batería.](en
 [**INFORMACIÓN DE CONSULTA \_ DE LA \_ BATERÍA DE IOCTL \_**](ioctl-battery-query-information.md)
 </dt> <dt>
 
-[**ETIQUETA DE CONSULTA \_ DE \_ BATERÍA DE \_ IOCTL**](ioctl-battery-query-tag.md)
+[**ETIQUETA DE CONSULTA \_ DE BATERÍA \_ DE IOCTL \_**](ioctl-battery-query-tag.md)
 </dt> <dt>
 
-[**INFORMACIÓN DEL \_ CONJUNTO DE \_ BATERÍAS DE IOCTL \_**](ioctl-battery-set-information.md)
+[**INFORMACIÓN DEL CONJUNTO \_ DE \_ BATERÍAS DE IOCTL \_**](ioctl-battery-set-information.md)
 </dt> </dl>
 
  

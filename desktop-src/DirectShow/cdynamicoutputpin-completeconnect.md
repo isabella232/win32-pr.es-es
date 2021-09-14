@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6d051bdd2757e37d3939616300ab0763ef2bebec727d48477f15a23e0f5178f0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5fa15c84b9d9e0b686e17110c656b74161687705
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119983175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061740"
 ---
 # <a name="cdynamicoutputpincompleteconnect-method"></a>Método CDynamicOutputPin.CompleteConnect
 
@@ -53,9 +53,9 @@ Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del
 
 Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método invalida el [**método CBaseOutputPin::CompleteConnect.**](cbaseoutputpin-completeconnect.md) Para admitir reconexiones dinámicas, este método confirma el asignador si el filtro está activo. En la clase base, las conexiones solo se pueden producir cuando se detiene el filtro, por lo que el asignador siempre se confirma en el [**método CBaseOutputPin::Active.**](cbaseoutputpin-active.md)
+Este método invalida el [**método CBaseOutputPin::CompleteConnect.**](cbaseoutputpin-completeconnect.md) Para admitir reconexiones dinámicas, este método confirma el asignador si el filtro está activo. En la clase base, las conexiones solo pueden producirse cuando se detiene el filtro, por lo que el asignador siempre se confirma en el método [**CBaseOutputPin::Active.**](cbaseoutputpin-active.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Este método invalida el [**método CBaseOutputPin::CompleteConnect.**](cbaseout
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

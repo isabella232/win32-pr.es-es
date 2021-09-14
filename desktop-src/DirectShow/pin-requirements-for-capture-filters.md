@@ -1,27 +1,27 @@
 ---
-description: En este tema se describen los requisitos para implementar un pin de salida en un filtro DirectShow captura.
+description: En este tema se describen los requisitos para implementar un pin de salida en un DirectShow de captura.
 ms.assetid: cb9cda1c-efa2-4abb-934b-21ba8cb80f30
-title: Requisitos de anclar filtros de captura
+title: Requisitos de anclar para filtros de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e72c74f06970bf6124d0e5dffea458bb41bcd0a19db44acc71a51615aa2fee8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e2a97d3e5c0f7fe0f5a9a341899651685df1cdd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119316115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061011"
 ---
-# <a name="pin-requirements-for-capture-filters"></a>Requisitos de anclar filtros de captura
+# <a name="pin-requirements-for-capture-filters"></a>Requisitos de anclar para filtros de captura
 
-En este tema se describen los requisitos para implementar un pin de salida en un filtro DirectShow captura.
+En este tema se describen los requisitos para implementar un pin de salida en un DirectShow de captura.
 
 ## <a name="pin-name"></a>Nombre del pin
 
-Puede dar un nombre a un pin. Si el nombre del pin comienza con el carácter de tilde (~), filter Graph Manager no representa automáticamente ese pin cuando una aplicación llama a [**IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile). Por ejemplo, si el filtro tiene un pin de captura y un pin de vista previa, podría nombrarlos "~Capture" y "Preview", respectivamente. Si una aplicación representa ese filtro en un gráfico, el pin de vista previa se conectará a su representador predeterminado y nada se conectará al pin de captura, que es un comportamiento predeterminado razonable. Esto también se puede aplicar a los pines que proporcionan datos informativos que no están diseñados para representarse, o a los pines que necesitan establecer propiedades personalizadas. Tenga en cuenta que la aplicación todavía puede conectar manualmente los pines con el prefijo de tilde (~).
+Puede dar un nombre a un pin. Si el nombre del pin comienza con el carácter de tilde (~), el Administrador de filtros Graph no representa automáticamente ese pin cuando una aplicación llama a [**IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile). Por ejemplo, si el filtro tiene un pin de captura y un pin de vista previa, podría nombrarlos "~Capture" y "Preview", respectivamente. Si una aplicación representa ese filtro en un gráfico, el pin de vista previa se conectará a su representador predeterminado y nada se conectará al pin de captura, que es un comportamiento predeterminado razonable. Esto también se puede aplicar a los pines que proporcionan datos informativos que no están diseñados para representarse, o a los pines que necesitan establecer propiedades personalizadas. Tenga en cuenta que la aplicación todavía puede conectar manualmente los pines con el prefijo de tilde (~).
 
 ## <a name="pin-category"></a>Categoría de anclar
 
-Un filtro de captura siempre tiene un pin de captura y puede tener un pin de vista previa. Algunos filtros de captura pueden tener otros pines de salida para entregar otros tipos de datos, como la información de control. Cada pin de salida debe exponer la [**interfaz IKsPropertySet.**](ikspropertyset.md) Las aplicaciones usan esta interfaz para determinar la categoría de pin. Normalmente, el pin devuelve PIN \_ CATEGORY CAPTURE o PIN CATEGORY \_ \_ \_ PREVIEW. Para obtener más información, vea [Anclar conjunto de propiedades](pin-property-set.md).
+Un filtro de captura siempre tiene un pin de captura y puede tener un pin de vista previa. Algunos filtros de captura pueden tener otros pines de salida para entregar otros tipos de datos, como información de control. Cada pin de salida debe exponer la [**interfaz IKsPropertySet.**](ikspropertyset.md) Las aplicaciones usan esta interfaz para determinar la categoría de pin. Normalmente, el pin devuelve PIN \_ CATEGORY CAPTURE o PIN CATEGORY \_ \_ \_ PREVIEW. Para obtener más información, vea [Anclar conjunto de propiedades.](pin-property-set.md)
 
 En el ejemplo siguiente se muestra cómo implementar [**IKsPropertySet para**](ikspropertyset.md) devolver la categoría pin en un pin de captura:
 

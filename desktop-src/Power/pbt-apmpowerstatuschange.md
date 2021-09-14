@@ -4,12 +4,12 @@ ms.assetid: dc56fee3-e0df-4f8e-8a41-92460279280a
 title: PBT_APMPOWERSTATUSCHANGE evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d92739182bdee624e54f11d4fe4b430e32c35e0a9f215e795081a713ea67b41f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18ed67f7ba064d44614196da4190ce18a996bd5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062848"
 ---
 # <a name="pbt_apmpowerstatuschange-event"></a>Evento \_ PBT APMPOWERSTATUSCHANGE
 
@@ -71,7 +71,7 @@ Reservado; debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación debe procesar este evento llamando a la [**función GetSystemPowerStatus**](/windows/desktop/api/Winbase/nf-winbase-getsystempowerstatus) para recuperar el estado de energía actual del equipo. En concreto, la aplicación debe comprobar los miembros **ACLineStatus,** **BatteryFlag,** **BatteryLifeTime** y **BatteryLifePercent** de la estructura [**SYSTEM POWER \_ \_ STATUS**](/windows/desktop/api/Winbase/ns-winbase-system_power_status) para ver si hay cambios. Este evento puede producirse cuando la duración de la batería disminuye a menos de 5 minutos, cuando el porcentaje de duración de la batería cae por debajo del 10 % o si la duración de la batería cambia en un 3 %.
 
@@ -83,11 +83,11 @@ Una aplicación debe procesar este evento llamando a la [**función GetSystemPow
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

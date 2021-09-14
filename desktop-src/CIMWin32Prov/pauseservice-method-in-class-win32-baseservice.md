@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8fc031258cb1eb15b578cc9e32e3b8542d47ae4165003590822f45e13fcd92a0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4828b81af5d6d543aaf16a34a08350f09078d623
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119752745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062690"
 ---
 # <a name="pauseservice-method-of-the-win32_baseservice-class"></a>Método PauseService de la clase BaseService win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio al que se hace referencia en estado en pausa.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -292,14 +292,14 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ BaseService**](win32-baseservice.md)
+[**BaseService de Win32 \_**](win32-baseservice.md)
 </dt> </dl>
 
  

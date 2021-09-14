@@ -4,14 +4,14 @@ ms.assetid: 97f80584-9d74-4ba5-80f4-ddb6f2bc4625
 title: MF_PD_ASF_FILEPROPERTIES_CREATION_TIME atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1a015e251e04c706e2d36b7ab85cac4e8038ad2083c9e0089fbe847d835227a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0f48f251f5ff9c7332de0e355c58782ed98fad0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104361"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257804"
 ---
-# <a name="mf_pd_asf_fileproperties_creation_time-attribute"></a>Atributo MF \_ PD \_ ASF \_ FILEPROPERTIES \_ CREATION \_ TIME
+# <a name="mf_pd_asf_fileproperties_creation_time-attribute"></a>Atributo \_ MF PD \_ ASF \_ FILEPROPERTIES CREATION \_ \_ TIME
 
 Especifica la fecha y hora en que se creó un archivo de formato de sistemas avanzados (ASF).
 
@@ -19,9 +19,9 @@ Especifica la fecha y hora en que se creó un archivo de formato de sistemas ava
 
 Byte array
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los descriptores de presentación para el contenido de ASF. El valor del atributo es una **estructura FILETIME,** que se documenta en el SDK Windows.
+Este atributo se aplica a los descriptores de presentación para el contenido de ASF. El valor del atributo es una **estructura FILETIME,** que se documenta en Windows SDK.
 
 El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo a partir de los metadatos de ASF.
 
@@ -29,11 +29,11 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 

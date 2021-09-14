@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98930ec48d3daa13d6ae463b38ce1ae62d745de9fae65915dcabcedf3cd673aa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ea563ca07eaea6b6974a831726918866414a33b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061353"
 ---
 # <a name="cbasepindisplaypininfo-method"></a>Método CBasePin.DisplayPinInfo
 
@@ -53,7 +53,7 @@ Puntero al pin receptor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En las compilaciones de depuración, este método llama a la [**función DbgLog**](dbglog.md) para realizar un seguimiento de un intento de conexión. En las compilaciones comerciales, este método no hace nada.
 
@@ -68,7 +68,7 @@ En las compilaciones de depuración, este método llama a la [**función DbgLog*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

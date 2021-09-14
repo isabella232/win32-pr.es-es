@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 86b6bd35b14ee2a342dee27615c1ff21d9274a5f3020c4f804df5065f430813f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 874151e1ff8c9feca375df3eb441665863d1070d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062657"
 ---
 # <a name="rename-method-of-the-win32_directory-class"></a>Método Rename de la clase Directory de \_ Win32
 
 El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Rename** cambia el nombre del archivo de entrada de directorio especificado en la ruta de acceso del objeto. No se admite un cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 Rename(
 *FileName* 
 </dt> <dd>
 
-Nombre nuevo completo del archivo (o directorio). Ejemplo: c: \\ temp \\newfile.txt.
+Nuevo nombre completo del archivo (o directorio). Ejemplo: c: \\ temp \\newfile.txt.
 
 </dd> </dl>
 
@@ -146,7 +146,7 @@ Un parámetro especificado no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para cambiar el nombre de una carpeta, primero enlace a la carpeta en cuestión y, a continuación, llame al método Rename. Como único parámetro para el método , pase el nuevo nombre de la carpeta como un nombre de ruta de acceso completo. Por ejemplo, si se va a cambiar el nombre de la carpeta de la copia de seguridad de registros de C: Scripts a C: Archivo de scripts, debe pasar C: Archivo de scripts como nombre \\ \\ completo de la \\ \\ \\ \\ \\ carpeta. Al pasar solo el nombre de la carpeta - Archivo - , se produce un error de ruta de acceso no válida.
 
@@ -160,7 +160,7 @@ La única excepción a este proceso de dos pasos implica mover una carpeta a una
 
 ## <a name="examples"></a>Ejemplos
 
-En el código siguiente, del ejemplo Mover una carpeta mediante [VBScript wmi](https://Gallery.TechNet.Microsoft.Com/f4f9643c-d7ed-4f54-b155-c6515396431f) de la Galería de TechNet, se usa el método Rename para mover la carpeta C: Scripts a C: Archivos de documentos de administrador \\ \\ \\ \\ \\ VBScript.
+El código siguiente, del ejemplo Mover una carpeta mediante [WMI](https://Gallery.TechNet.Microsoft.Com/f4f9643c-d7ed-4f54-b155-c6515396431f) VBScript de la Galería de TechNet, usa el método Rename para mover la carpeta C: Scripts a \\ C: \\ Admins Documents Archive \\ \\ \\ VBScript.
 
 
 ```VB
@@ -182,7 +182,7 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -192,7 +192,7 @@ Next
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

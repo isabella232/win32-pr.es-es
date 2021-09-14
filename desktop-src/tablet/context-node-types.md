@@ -25,11 +25,11 @@ api_type:
 api_location:
 - iaguid.h
 ms.openlocfilehash: 2bb2064cc72b398d290fa78606b31bd37208535e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256820"
 ---
 # <a name="context-node-types"></a>Tipos de nodo de contexto
 
@@ -56,7 +56,7 @@ Estas constantes definen valores que especifican el tipo de [**objetos IContextN
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre los distintos tipos de nodos de contexto, vea [Ink Analysis Overview](ink-analysis-overview.md).
 
@@ -64,7 +64,7 @@ Para obtener más información sobre los distintos tipos de nodos de contexto, v
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                           |

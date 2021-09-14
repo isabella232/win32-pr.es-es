@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX9Shader.h
-ms.openlocfilehash: 1a343930f55323016895007f858a7fe188418eeab24b16859c2d773e39c9e73b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05b034a48635e3a5a6d1a3dbdfbabd0fe2933b5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118524106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060713"
 ---
 # <a name="d3dxtx_version"></a>D3DXTX \_ VERSIÓN
 
@@ -30,7 +30,7 @@ Token de versión que crea un relleno de textura de procedimientos en efectos. L
 
 ## <a name="return-value"></a>Valor devuelto
 
-La macro devuelve el token de versión de textura de procedimientos.
+La macro devuelve el token de versión de textura de procedimiento.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,5 +1,5 @@
 ---
-description: 'Método TakeOwnerShip de la clase Win32_ShortcutFile : El método TakeOwnerShip&\# 8194; El método de clase WMI obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.'
+description: 'Método TakeOwnerShip de la clase Win32_ShortcutFile : el&\# 8194; El método de clase WMI obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.'
 ms.assetid: 1a8ff156-50b2-4550-abcc-7a6ae0e4630f
 ms.tgt_platform: multiple
 title: Método TakeOwnerShip de la Win32_ShortcutFile clase
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 30e482f8c11c19abd7c9782e517b5b04a33139d5b8e2189512614317ea2123db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 36364a55276842518480c3d3d37c57c3ae0a06ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062259"
 ---
 # <a name="takeownership-method-of-the-win32_shortcutfile-class"></a>Método TakeOwnerShip de la clase ShortcutFile de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es realmente un directorio, **TakeOwnerShip** actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -151,7 +151,7 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

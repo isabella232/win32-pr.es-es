@@ -1,17 +1,17 @@
 ---
 description: Las definiciones siguientes se deben usar al leer y escribir directamente el encabezado binario.
 ms.assetid: 19c36f94-8088-417d-867d-3a02912087dc
-title: Header
+title: Encabezado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: baaed7884cef465110167d3e235197c534e48d19eb47ee308c0650bd86773ea3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1cfaa589382812cfd752d47cc8b95cda0139385b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118297075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060637"
 ---
-# <a name="header"></a>Header
+# <a name="header"></a>Encabezado
 
 Las definiciones siguientes se deben usar al leer y escribir directamente el encabezado binario.
 

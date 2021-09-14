@@ -1,5 +1,5 @@
 ---
-description: Determina el producto de puntos de dos vectores 3D.
+description: Determina el producto de punto de dos vectores 3D.
 ms.assetid: 61aa7751-cc06-4673-929b-d7c1e691e395
 title: Función D3DXVec3Dot (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 32b1387c1299c5ed3a379b06e3157d1c359c3f1d4fc3db39ee8c51c4997b6834
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22d6930a44f129154482f9b1aab24337e8bcdc83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118297797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060685"
 ---
 # <a name="d3dxvec3dot-function"></a>Función D3DXVec3Dot
 
-Determina el producto de puntos de dos vectores 3D.
+Determina el producto de punto de dos vectores 3D.
 
 ## <a name="syntax"></a>Sintaxis
 

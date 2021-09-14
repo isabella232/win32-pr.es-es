@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: baf0ffe9d9eb961d07731ee9967b32e940dbdb3231935588387972433c61aa74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41124567e8743227f46c9cb3b84dcb0d1f788bc3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117834591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062258"
 ---
 # <a name="takeownershipex-method-of-the-cim_datafile-class"></a>Método TakeOwnerShipEx de la clase \_ DataFile de CIM
 
 El **método TakeOwnerShipEx** obtiene la propiedad del archivo de datos lógico que se especifica en la ruta de acceso del objeto. Este método es una versión extendida del [**método TakeOwnerShip**](takeownership-method-in-class-cim-datafile.md) y se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md). Si el archivo lógico es un directorio, este método actuará de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,13 +68,13 @@ Si *se usa StartFileName,* *Recursive* también debe establecerse en true.
 *Recursivo* \[ En\]
 </dt> <dd>
 
-Si **es TRUE,** el método también se aplica de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia [**de Cim \_ DataFile.**](cim-datafile.md) En el caso de las instancias de archivo, este parámetro se omite.
+Si **es TRUE,** el método también se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia [**de \_ DataFile**](cim-datafile.md) de CIM. En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -169,7 +169,7 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI implementa el método **TakeOwnerShipEx** [**en CIM \_ DataFile.**](cim-datafile.md)
 
@@ -179,7 +179,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

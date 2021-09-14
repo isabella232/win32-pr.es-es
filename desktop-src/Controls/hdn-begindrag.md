@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ae1ab3f8ac24b5521fab1afc5313503867e575906e851acf4d4fdbe90fe787d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed6b4af8e662a8a9891e9a81535de987337567f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119544695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061960"
 ---
 # <a name="hdn_begindrag-notification-code"></a>Código de notificación \_ BEGINDRAG de HDN
 
@@ -49,7 +49,7 @@ Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-
 
 Para permitir que el control de encabezado administre automáticamente las operaciones de arrastrar y colocar, devuelva **FALSE.** Si el propietario del control realiza manualmente la reordenación de arrastrar y colocar, devuelva **TRUE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, un control de encabezado administra automáticamente la reordenación de arrastrar y colocar. Devolver **TRUE** para indicar la administración externa (manual) de arrastrar y colocar permite al propietario del control proporcionar servicios personalizados como parte del proceso de arrastrar y colocar.
 
@@ -57,11 +57,11 @@ De forma predeterminada, un control de encabezado administra automáticamente la
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

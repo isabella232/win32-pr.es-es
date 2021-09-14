@@ -14,12 +14,12 @@ api_type:
 - UserDefined
 api_location: ''
 ms.assetid: 00f31d6b-2a96-4abd-9647-24a6e66aa22f
-ms.openlocfilehash: bcf8bb7c8ec4ceab299efd75c61cabe86f43d0ee46585be59ab4000957554ed2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 83020fbcd0d4cfcfbc643d1360e3671595de6f32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120111495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256965"
 ---
 # <a name="mrucmpproc-callback-function"></a>Función de devolución de llamada MRUCMPPROC
 
@@ -65,7 +65,7 @@ Tipo: **int**
 
 Devuelve 0 si los elementos son idénticos; de lo contrario, un valor distinto de cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función se puede especificar opcionalmente para su uso en la estructura [**MRUINFO**](mruinfo.md) pasada a [**CreateMRUListW**](createmrulist.md). Esto resulta útil cuando se creó la lista de MRU con la **marca \_ BINARY de MRU.** Cuando no se especifica esta función, se usan funciones de comparación de cadenas estándar.
 

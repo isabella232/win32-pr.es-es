@@ -4,12 +4,12 @@ ms.assetid: db47f362-82e1-4fce-b0aa-4fc6cd3db102
 title: System.Devices.Aep. Bluetooth.Cod.Services.Information
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c15db2a294da1fbb9b4e57441ad01f2b58fe2dc564f5d3fe782a031ec77cc50f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8904a6fa70aa9f7417b9f5538564481550946bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257294"
 ---
 # <a name="systemdevicesaepbluetoothcodservicesinformation"></a>System.Devices.Aep. Bluetooth.Cod.Services.Information
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

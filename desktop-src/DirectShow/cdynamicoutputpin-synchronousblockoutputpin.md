@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d8613a27d8af2dc2b69a93a1f324db17b054cf2dd312fdb0c9d6cd63e6c89ca8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7fff1a0a1f093b97d07c74d7916ef2a7511d0e16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062502"
 ---
 # <a name="cdynamicoutputpinsynchronousblockoutputpin-method"></a>Método CDynamicOutputPin.SynchronousBlockOutputPin
 
-El `SynchronousBlockOutputPin` método bloquea el pin; no vuelve hasta que se bloquea el pin.
+El `SynchronousBlockOutputPin` método bloquea el pin; no vuelve hasta que se bloquea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No llame a este método desde el subproceso de streaming.
 
@@ -71,7 +71,7 @@ No llame a este método desde el subproceso de streaming.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

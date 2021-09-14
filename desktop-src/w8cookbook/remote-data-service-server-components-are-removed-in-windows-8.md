@@ -6,12 +6,12 @@ keywords:
 - Servidor RDS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05ee18b62bf78bc30aa07cc861963c03baa90c1fd4bc405207b1586ee6167f58
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b6588b029fe37f1312c709be168fd695bdc5738
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119935075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256515"
 ---
 # <a name="remote-data-service-server-components-are-removed-in-windows-8"></a>Los componentes del servidor de servicio de datos remotos se quitan en Windows 8
 
@@ -26,8 +26,8 @@ ms.locfileid: "119935075"
 
 El servidor del servicio de datos remoto (RDS) no está disponible en Windows 8:
 
--   Se quita msadcf.dll archivo, que hospeda el "objeto de negocio" predeterminado RDSServer.DataFactory, y se quitan sus archivos asociados (msadcfr.dll, msadcfr.dll.mui, handler.reg y handsafe.reg).
--   Se msdfmap.dll archivo, que es el controlador predeterminado, y se quita msdfmap.ini archivo.
+-   Se msadcf.dll archivo, que hospeda el "objeto empresarial" predeterminado RDSServer.DataFactory, y se quitan sus archivos asociados (msadcfr.dll, msadcfr.dll.mui, handler.reg y handsafe.reg).
+-   Se msdfmap.dll de archivos, que es el controlador predeterminado, y se quita msdfmap.ini archivo.
 -   Se msadcs.dll el archivo, isapi,
 
 ## <a name="manifestation"></a>Manifestación

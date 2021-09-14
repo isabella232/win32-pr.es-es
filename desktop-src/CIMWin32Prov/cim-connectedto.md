@@ -1,5 +1,5 @@
 ---
-description: La clase ConnectedTo de CIM representa una asociación que indica que hay dos \_ o más conectores físicos conectados.
+description: La clase \_ CIM ConnectedTo representa una asociación que indica que hay dos o más conectores físicos conectados.
 ms.assetid: fedd9227-8a3b-461a-995b-08cbceb81181
 ms.tgt_platform: multiple
 title: CIM_ConnectedTo clase
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5837dcabef1eeb43edf8bfdfb5cfd318802c7f2cd28bc52157ee8322bdae1392
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f1a507cb529f2040607024e1a6167ddcd5dc7c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080849"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062741"
 ---
 # <a name="cim_connectedto-class"></a>Cim \_ ConnectedTo (clase)
 
-La **clase \_ ConnectedTo** de CIM representa una asociación que indica que hay dos o más conectores físicos conectados.
+La **clase \_ CIM ConnectedTo** representa una asociación que indica que hay dos o más conectores físicos conectados.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_ConnectedTo : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ConnectedTo** de CIM tiene estos tipos de miembros:
 
@@ -82,26 +82,26 @@ Tipo de datos: **CIM \_ PhysicalConnector**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
 Un [**conector físico CIM \_ que**](cim-physicalconnector.md) representa otro conector físico que actúa como el otro extremo de la conexión.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ ConnectedTo** de CIM se hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

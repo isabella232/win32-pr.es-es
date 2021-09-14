@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e590a09c2c6d4cc34728f5ec29db0d8f650d3a1e9cb663e5993acd2cebe4793f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43a537728ca0874fa1dfd69b4712bcc97cf23850
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061742"
 ---
 # <a name="cbaserendererwaitforrendertime-method"></a>Método CBaseRenderer.WaitForRenderTime
 
@@ -55,14 +55,14 @@ Devuelve uno de los siguientes **valores HRESULT.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método espera hasta que se produzca una de las siguientes situaciones:
+Este método espera hasta que se produzca una de las siguientes acciones:
 
 -   Llega el tiempo de presentación de la muestra, momento en el que se puede representar la muestra.
 -   El filtro se detiene o comienza a vaciar los datos.
 
-Si llega el tiempo de presentación, se señala el evento [**CBaseRenderer::m \_ RenderEvent.**](cbaserenderer-m-renderevent.md) Si cambia el estado, se señala el evento [**\_ ThreadSignal de CBaseRenderer::m.**](cbaserenderer-m-threadsignal.md) Este método espera en ambos eventos. La clase derivada puede invalidar este método para esperar eventos adicionales, si es necesario.
+Si llega el tiempo de presentación, se señala el evento [**\_ RenderEvent CBaseRenderer::m.**](cbaserenderer-m-renderevent.md) Si cambia el estado, se señala el evento [**\_ ThreadSignal CBaseRenderer::m.**](cbaserenderer-m-threadsignal.md) Este método espera en ambos eventos. La clase derivada puede invalidar este método para esperar eventos adicionales, si es necesario.
 
 Este método llama al [**método CBaseRenderer::OnWaitStart**](cbaserenderer-onwaitstart.md) cuando comienza la espera y al método [**CBaseRenderer::OnWaitEnd**](cbaserenderer-onwaitend.md) cuando se realiza la espera. Ninguno de los métodos hace nada en la clase base, pero la clase derivada puede invalidarlos.
 
@@ -77,7 +77,7 @@ Este método llama al [**método CBaseRenderer::OnWaitStart**](cbaserenderer-onw
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 942fae3ee1ea2c7481f475dc2d8dba421fd21d44290c98b822b9bc489ee25334
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ddd8194bbf76c4a4311aa90335f94d1e7548a356
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117822625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061759"
 ---
 # <a name="cbaserendererstop-method"></a>Método CBaseRenderer.Stop
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el método [**CBaseFilter::Stop.**](cbasefilter-stop.md) Las acciones que realiza son las siguientes:
 

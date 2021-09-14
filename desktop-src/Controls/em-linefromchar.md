@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_LINEFROMCHAR (Winuser. h)
-description: Obtiene el índice de la línea que contiene el índice de carácter especificado en un control de edición multilínea.
+title: EM_LINEFROMCHAR mensaje (Winuser.h)
+description: Obtiene el índice de la línea que contiene el índice de caracteres especificado en un control de edición multilínea.
 ms.assetid: e8e9217b-3f0c-478d-b44d-2a51868dbc5a
 keywords:
-- EM_LINEFROMCHAR controles de mensajes de Windows
+- EM_LINEFROMCHAR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f0dfe0c6c2ed0f9d77817fddde75fa18b64d485f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150140"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062164"
 ---
-# <a name="em_linefromchar-message"></a>\_Mensaje LINEFROMCHAR em
+# <a name="em_linefromchar-message"></a>Mensaje EM \_ LINEFROMCHAR
 
-Obtiene el índice de la línea que contiene el índice de carácter especificado en un control de edición multilínea. Un índice de carácter es el índice de base cero del carácter desde el principio del control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Obtiene el índice de la línea que contiene el índice de caracteres especificado en un control de edición multilínea. Un índice de caracteres es el índice de base cero del carácter desde el principio del control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Obtiene el índice de la línea que contiene el índice de carácter especificad
 *wParam* 
 </dt> <dd>
 
-Índice de carácter del carácter incluido en la línea cuyo número se va a recuperar. Si este parámetro es-1, **em \_ LINEFROMCHAR** recupera el número de línea de la línea actual (la línea que contiene el símbolo de intercalación) o, si hay una selección, el número de línea de la línea que contiene el principio de la selección.
+Índice de caracteres del carácter contenido en la línea cuyo número se va a recuperar. Si este parámetro es -1, **EM \_ LINEFROMCHAR** recupera el número de línea de la línea actual (la línea que contiene el centro de referencia) o, si hay una selección, el número de línea de la línea que contiene el principio de la selección.
 
 </dd> <dt>
 
@@ -49,7 +49,7 @@ El valor devuelto es el número de línea de base cero de la línea que contiene
 
 ## <a name="remarks"></a>Observaciones
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Si el índice de caracteres es mayor que 64.000, use el mensaje [**\_ EXLINEFROMCHAR em**](em-exlinefromchar.md) . Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Si el índice de caracteres es mayor que 64 000, use el [**mensaje EM \_ EXLINEFROMCHAR.**](em-exlinefromchar.md) Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,23 +57,23 @@ El valor devuelto es el número de línea de base cero de la línea que contiene
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**\_EXLINEFROMCHAR em**](em-exlinefromchar.md)
+[**EM \_ EXLINEFROMCHAR**](em-exlinefromchar.md)
 </dt> <dt>
 
-[**\_LINEINDEX em**](em-lineindex.md)
+[**EM \_ LINEINDEX**](em-lineindex.md)
 </dt> </dl>
 
  

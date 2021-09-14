@@ -3,7 +3,7 @@ title: Función MpManagerVersionQuery (MpClient.h)
 description: Devuelve información de versión sobre varios componentes del administrador de protección contra malware.
 ms.assetid: 47DE12BF-D7A4-468B-B0E7-79B5C27E56F5
 keywords:
-- Función MpManagerVersionQuery Heredada de Windows environment
+- Características heredadas del entorno de Windows mpManagerVersionQuery
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6407f36650b699f6bcdc9cbdd832ff2db38f68e9db758411d42aa5e81564ea4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a841a83d8ceb828de0a5a9cd80f5f5bdc7f5c914
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120114545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258023"
 ---
 # <a name="mpmanagerversionquery-function"></a>Función MpManagerVersionQuery
 
@@ -46,7 +46,7 @@ HRESULT WINAPI MpManagerVersionQuery(
 
 Tipo: **MPHANDLE**
 
-Controle la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
+Identificador de la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Tipo: **HRESULT**
 
 Si la función se realiza correctamente, el valor devuelto es **S \_ OK**.
 
-Si se produce un error en la función, el valor devuelto es un **código HRESULT con** errores. El autor de la llamada puede usar [**la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
+Si se produce un error en la función, el valor devuelto es un **código HRESULT** con errores. El autor de la llamada puede [**usar la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ Si se produce un error en la función, el valor devuelto es un **código HRESULT
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -90,7 +90,7 @@ Si se produce un error en la función, el valor devuelto es un **código HRESULT
 [**MpManagerAbrir**](mpmanageropen.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DE MPVERSION**](mpversion-info.md)
+[**INFORMACIÓN DE \_ MPVERSION**](mpversion-info.md)
 </dt> </dl>
 
  

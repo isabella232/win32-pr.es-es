@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f10caec569733724a0c42b310facd36f74467472aee4339c83b68b382da09fa9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a61b4ece94c9c52a0f769a29ec32a26c08b33ee0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119539805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061268"
 ---
 # <a name="cdrawimageusingimageallocator-method"></a>CDrawImage.UsingImageAllocator (método)
 
@@ -55,7 +55,7 @@ Devuelve **TRUE** si el asignador actual es **un objeto CImageAllocator** o **FA
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

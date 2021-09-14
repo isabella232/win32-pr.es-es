@@ -4,12 +4,12 @@ ms.assetid: ba6cc3f1-9130-4197-8501-c2d0a088e847
 title: DirectShow Arquitectura de servicios de edición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: add81e579b89c0053e5833aab67d84e942a111c90df2e2b665531c507f7be1e9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85c6059eebe9228e61d3de9677972eedfcb51c62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062352"
 ---
 # <a name="directshow-editing-services-architecture"></a>DirectShow Arquitectura de servicios de edición
 
@@ -21,7 +21,7 @@ En la ilustración siguiente se muestra la arquitectura [de DirectShow Editing S
 
 -   Escala de tiempo: representa una producción de vídeo como una colección de clips, transiciones y efectos de origen, organizados en un conjunto de pistas anidadas. Para obtener más información, vea [El modelo de escala de tiempo](the-timeline-model.md).
 -   Analizador XML: analiza la escala de tiempo y genera un archivo de salida, o lee un archivo de entrada y genera una escala de tiempo. DES admite un formato de persistencia basado en XML.
--   Motor de representación: convierte la escala de tiempo en un formulario que se puede representar como medio de streaming. De forma predeterminada, el motor de representación genera un DirectShow gráfico de filtro (consulte la sección siguiente).
+-   Motor de representación: convierte la escala de tiempo en un formulario que se puede representar como medio de streaming. De forma predeterminada, el motor de representación genera un gráfico DirectShow filtro (consulte la sección siguiente).
 -   Localizador de medios: mantiene una caché de ubicaciones de elementos multimedia. Cuando se produce un error al intentar abrir un elemento multimedia, DES usa la memoria caché para buscar el elemento, en función de un historial de aperturas correctas.
 
 La escala de tiempo es una descripción abstracta de un proyecto de edición de vídeo. Especifica los clips de origen usados en el proyecto, las horas de inicio y de detenerse, los efectos y las transiciones, etc. Sin embargo, la escala de tiempo no representa las secuencias de audio y vídeo. En su lugar, el motor de representación convierte la escala de tiempo en un gráfico de filtros, ya sea para la vista previa o la salida del archivo. Una aplicación manipula la escala de tiempo en lugar de manipular directamente el gráfico de filtros, lo que sería complicado y propenso a errores.

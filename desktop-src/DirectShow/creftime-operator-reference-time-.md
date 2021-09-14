@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a084d4e142f57b724343ac5a353461b41aac0be216b8e3851bc8b7e40000a1f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3ceeeb00ba1de4f305f87ef3fe15e70a8d91457
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120108035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061720"
 ---
-# <a name="creftimeoperator-reference_time-method"></a>Método REFERENCE TIME de CRefTime.operator \_
+# <a name="creftimeoperator-reference_time-method"></a>Método CRefTime.operator REFERENCE \_ TIME
 
 El `REFERENCE_TIME()` operador convierte el objeto a un tipo de datos REFERENCE [**\_ TIME.**](reference-time.md)
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve el valor de [**CRefTime::m \_ time**](creftime-m-time.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el ejemplo siguiente se muestra cómo usar este operador de conversión:
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ce43cebee93516f929f9a763c14dd51d9d486470eeb93818b9605c3f23a1914
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64a11a4dec91a7a2f1d200c4c86c6989d846604a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118674129"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062237"
 ---
 # <a name="bn_doubleclicked-notification-code"></a>Código de notificación \_ DOUBLECLICKED de BN
 
@@ -44,7 +44,7 @@ BN_DOUBLECLICKED
 *wParam* 
 </dt> <dd>
 
-Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del botón. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
+LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del botón. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Identificador del botón.
 
 ## <a name="remarks"></a>Observaciones
 
-BN \_ DOUBLECLICKED es el mismo que el código de [notificación \_ DBLCLK de BN.](bn-dblclk.md)
+BN \_ DOUBLECLICKED es igual que el código de [notificación \_ DBLCLK de BN.](bn-dblclk.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ BN \_ DOUBLECLICKED es el mismo que el código de [notificación \_ DBLCLK de BN
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

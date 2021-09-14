@@ -4,12 +4,12 @@ ms.assetid: f4609eb7-6bad-44cb-8b87-daf350931cab
 title: System.Media.UserWebUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c83c12414178d8ff654ea4bbb685089895c6886cb200d92a2f4f28ba4ad6dc24
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d2c304aff0bd0cdaa69b7e1e9ae10360b2c8ca22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119774795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257174"
 ---
 # <a name="systemmediauserweburl"></a>System.Media.UserWebUrl
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

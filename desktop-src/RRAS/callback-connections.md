@@ -1,19 +1,19 @@
 ---
 title: Conexiones de devolución de llamada
-description: RAS admite conexiones en las que el servidor remoto se mantiene y, a continuación, vuelve a llamar al cliente para establecer la conexión.
+description: RAS admite conexiones en las que el servidor remoto se mantiene y, a continuación, llama de nuevo al cliente para establecer la conexión.
 ms.assetid: 25f0e84d-8900-4efe-b07d-59f25186c976
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b72d10285c6920befe7a508bf69ef1e5d21c19e8632534f94dd8ccb9a0ed1743
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9aabe3bf5503f16d7d27e44e02dc19ccb2a6f2e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120030435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062774"
 ---
 # <a name="callback-connections"></a>Conexiones de devolución de llamada
 
-RAS admite conexiones en las que el servidor remoto se mantiene y, a continuación, vuelve a llamar al cliente para establecer la conexión.
+RAS admite conexiones en las que el servidor remoto se mantiene y, a continuación, llama de nuevo al cliente para establecer la conexión.
 
 Para cada usuario que pueda conectarse a un servidor RAS, el servidor almacena un atributo de devolución de llamada que controla cómo se realiza la conexión. El atributo predeterminado es Sin devolución de llamada, lo que significa que el usuario puede conectarse al servidor RAS sin una devolución de llamada. Como alternativa, el administrador del servidor RAS puede asignar a un usuario el atributo de devolución de llamada Preset o Set-By-Caller.
 
@@ -21,7 +21,7 @@ Para un usuario al que se le asignó la restricción Preestablecido, el administ
 
 El acceso remoto y el servidor remoto controlan automáticamente una operación de devolución de llamada Connection Manager preestablecida. La aplicación cliente RAS no necesita hacer nada más que proporcionar comentarios al usuario cuando se llama al controlador de notificaciones durante los distintos estados de la operación de devolución de llamada.
 
-Un usuario asignado al privilegio Establecer por llamador puede elegir conectarse con o sin una devolución de llamada. La [**llamada RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) usa el **miembro szCallbackNumber** de la [**estructura RASDIALPARAMS**](/previous-versions/windows/desktop/legacy/aa377238(v=vs.85)) para indicar la elección.
+Un usuario al que se haya asignado el privilegio Establecer por autor de la llamada puede optar por conectarse con o sin una devolución de llamada. La [**llamada RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) usa el **miembro szCallbackNumber** de la [**estructura RASDIALPARAMS**](/previous-versions/windows/desktop/legacy/aa377238(v=vs.85)) para indicar la elección.
 
 El **miembro szCallbackNumber** puede especificar simplemente el número de devolución de llamada; o bien, para establecer la conexión sin una devolución de llamada, **szCallbackNumber** puede apuntar a una cadena vacía, "". En cualquiera de estos casos, el administrador de acceso Connection Manager controla automáticamente la operación de conexión. Al igual que con una operación de devolución de llamada preestablecida, el cliente RAS no necesita realizar ninguna acción que no sea proporcionar comentarios al usuario.
 
@@ -32,7 +32,7 @@ Si la llamada [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) habilita l
 
  
 
-En el caso de una devolución de llamada, la llamada a [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) no se devuelve hasta después de que el servidor haya llamado de nuevo al cliente.
+En el caso de una devolución de llamada, la llamada a [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) no se devuelve hasta después de que el servidor haya devuelto la llamada al cliente.
 
  
 

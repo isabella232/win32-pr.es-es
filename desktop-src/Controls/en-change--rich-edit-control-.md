@@ -1,9 +1,9 @@
 ---
-title: EN_CHANGE (edición enriquecte) código de notificación (Winuser.h)
-description: Notifica a la ventana host de un control de edición enriquecido sin ventanas que se ha producido un cambio. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
+title: EN_CHANGE (edición enriquecte) de código de notificación (Winuser.h)
+description: Notifica a la ventana host de un control rich edit sin ventana que se ha producido un cambio. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 97C0D9F1-7D4E-409D-A4F6-E645475A8EEF
 keywords:
-- EN_CHANGE (edición enriquecte) código de notificación Windows controles
+- EN_CHANGE (edición enriquecte) de código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 489ab6043937e10c18d689fc74a5e7ffbd415e81fd627a257a9e7021701de6ad
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9ea615234aba881b2a8938b8e502b36acfa565fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120047845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062040"
 ---
 # <a name="en_change-rich-edit-notification-code"></a>Código de notificación EN \_ CHANGE (rich edit)
 
-Notifica a la ventana host de un control de edición enriquecido sin ventanas que se ha producido un cambio. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Notifica a la ventana host de un control rich edit sin ventana que se ha producido un cambio. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -49,9 +49,9 @@ Estructura [**CHANGENOTIFY**](/windows/desktop/api/Textserv/ns-textserv-changeno
 
 Este código de notificación no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para recibir códigos de notificación EN \_ CHANGE, especifique [**ENM \_ CHANGE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
+Para recibir códigos de notificación EN \_ CHANGE, especifique [**ENM \_ CHANGE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**\_ EM SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,11 +61,11 @@ Para recibir códigos de notificación EN \_ CHANGE, especifique [**ENM \_ CHANG
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

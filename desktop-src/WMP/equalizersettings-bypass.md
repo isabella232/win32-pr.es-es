@@ -1,6 +1,6 @@
 ---
 title: EQUALIZERSETTINGS.bypass
-description: El atributo de omisión especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros.
+description: El atributo bypass especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros.
 ms.assetid: b189a6f1-e0d0-4cfa-9a99-73d3ccd705e0
 keywords:
 - EQUALIZERSETTINGS.bypass Reproductor de Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 636995cd62c83f46f97ea7371257a5fdfc8f1c79fec1873b229f80d92be6335d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b78fe6f4ce7608ff02ecb5b125b00171610ec112
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241028"
 ---
 # <a name="equalizersettingsbypass"></a>EQUALIZERSETTINGS.bypass
 
-El **atributo** de omisión especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros.
+El **atributo bypass** especifica o recupera un valor que indica si el filtro de equalizer se omite en el gráfico de filtros.
 
 ``` syntax
         elementID.bypass
@@ -29,7 +29,7 @@ El **atributo** de omisión especifica o recupera un valor que indica si el filt
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un valor booleano de lectura **y escritura.**
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
@@ -42,7 +42,7 @@ Este atributo es un valor booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no se especifica este atributo, se conservará el valor anterior.
 
@@ -56,7 +56,7 @@ Si no se especifica este atributo, se conservará el valor anterior.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

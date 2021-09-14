@@ -1,5 +1,5 @@
 ---
-description: La clase WMI de asociación SystemDriverPNPEntity de Win32 relaciona un dispositivo Plug and Play en el sistema informático que ejecuta Windows y el controlador que admite el \_ dispositivo Plug and Play.
+description: La clase WMI de asociación SystemDriverPNPEntity de Win32 relaciona un dispositivo Plug and Play en el sistema informático que ejecuta Windows y el controlador que admite el \_ Plug and Play.
 ms.assetid: 2696c8e5-3bc3-42e3-807b-a387607c7c09
 ms.tgt_platform: multiple
 title: Win32_SystemDriverPNPEntity clase
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e4b0de9559d223db4c398387ca846be39b17566b3267c76399bdf4381cdd14e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8b5a7eedfbd7a545e37cb9cda38c19cf61308761
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061454"
 ---
 # <a name="win32_systemdriverpnpentity-class"></a>Clase \_ SystemDriverPNPEntity de Win32
 
-La clase [WMI](../wmisdk/retrieving-a-class.md) de asociación **\_ SystemDriverPNPEntity de Win32** relaciona un dispositivo Plug and Play en el sistema informático que ejecuta Windows y el controlador que admite el Plug and Play.
+La clase [WMI](../wmisdk/retrieving-a-class.md) de asociación **\_ SystemDriverPNPEntity de Win32** relaciona un dispositivo Plug and Play en el sistema informático que ejecuta Windows y el controlador que admite el dispositivo Plug and Play.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -40,7 +40,7 @@ class Win32_SystemDriverPNPEntity : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemDriverPNPEntity de Win32** tiene estos tipos de miembros:
 
@@ -80,11 +80,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Dependent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ SystemDriver")
 </dt> </dl>
 
-Un [**\_ SystemDriver de Win32**](win32-systemdriver.md) que representa el controlador que admite el Plug and Play dispositivo.
+Un [**\_ SystemDriver de Win32**](win32-systemdriver.md) que representa el controlador que admite Plug and Play dispositivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemDriverPNPEntity de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 
@@ -102,7 +102,7 @@ La **clase \_ SystemDriverPNPEntity de Win32** se deriva de [**la dependencia CI
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

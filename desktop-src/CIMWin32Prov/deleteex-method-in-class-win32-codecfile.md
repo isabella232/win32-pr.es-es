@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f749455a15e92427f4f0fec50abce7ea8ba83b44f9244b3b61208fb27dd12b9d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: df5527be497176f167ac368b872253fa3254a404
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061529"
 ---
-# <a name="deleteex-method-of-the-win32_codecfile-class"></a>Método DeleteEx de la clase CodecFile de Win32 \_
+# <a name="deleteex-method-of-the-win32_codecfile-class"></a>Método DeleteEx de la clase \_ CodecFile win32
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** eliminará el archivo lógico de códec de audio o vídeo (o directorio) especificado en la ruta de acceso del objeto. **DeleteEx** es una versión extendida del [**método Delete.**](delete-method-in-class-win32-directory.md)
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Nombre del archivo o directorio en el que se ha fallado **el método DeleteEx.**
 *StartFileName* \[ En\]
 </dt> <dd>
 
-Denomina el archivo o directorio secundario que se usará como punto de partida para **DeleteEx.** El *parámetro StartFileName suele* ser el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL**, la operación se realiza en el archivo o directorio especificado en la **llamada a ExecMethod.** Este parámetro es opcional.
+Denomina el archivo o directorio secundario que se usará como punto de partida para **DeleteEx.** El *parámetro StartFileName* suele ser el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL,** la operación se realiza en el archivo o directorio especificado en la **llamada a ExecMethod.** Este parámetro es opcional.
 
 </dd> </dl>
 
@@ -129,7 +129,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha infringido el uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -168,14 +168,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**CódecFile de \_ Win32**](win32-codecfile.md)
+[**CodecFile de Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

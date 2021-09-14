@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: cba88c90f33a52e0a1ff94cdbe69e2f210163769a09916f04de41c262d9e7e22
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4c2fd5924b206ee296c066a908d2a59b02019f72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256755"
 ---
 # <a name="icontextnoderemovepropertydata-method"></a>IContextNode::RemovePropertyData (método)
 
@@ -50,7 +50,7 @@ Identificador de los datos que se quitarán.
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **E \_ Se devuelve INVALIDARG** si el *parámetro pPropertyDataId* es una de las constantes [de propiedades del nodo de](context-node-properties.md) contexto.
 
@@ -58,16 +58,16 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

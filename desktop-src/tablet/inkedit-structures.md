@@ -4,12 +4,12 @@ ms.assetid: 96a4d77a-ad9c-40bb-a4c0-eb4ca77cac4e
 title: InkEdit Structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b27ba123fdcafa3863611053104faa355d353713c84163303dbd37631d5a7b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ffc9c223820b9229c5239a8f6adef02a5a84a3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119939065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256665"
 ---
 # <a name="inkedit-structures"></a>InkEdit Structures
 

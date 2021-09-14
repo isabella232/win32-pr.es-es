@@ -1,17 +1,17 @@
 ---
 title: InprocHandler32
-description: InprocHandler32 especifica si una aplicación usa un controlador personalizado en HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID clave del Registro.
+description: InprocHandler32 especifica si una aplicación usa un controlador personalizado en el HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID clave del Registro.
 ms.assetid: da611bb6-1f69-449a-9821-e2fbbe413a97
 keywords:
 - Com de clave del Registro InprocHandler32
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: be73a8b2577a554b0bb8b5ba5a851e630edbf90a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369460"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060912"
 ---
 # <a name="inprochandler32"></a>InprocHandler32
 

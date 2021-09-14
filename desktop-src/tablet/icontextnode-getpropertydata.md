@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 89e7ab9fb5213b41d53695b516b95b47193e8d803b207efd09216c743085927e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 381d137dd73056a2a6f4c2e9cd3746f9f16c5b2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256767"
 ---
 # <a name="icontextnodegetpropertydata-method"></a>IContextNode::GetPropertyData (método)
 
@@ -66,14 +66,14 @@ Puntero a una matriz de enteros de 8 bits sin signo que contiene los datos de pr
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, use [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar la memoria de \* *ppbPropertyData* cuando ya no necesite la información.
 
  
 
-Además de recuperar datos específicos de la aplicación que se agregaron con [**IContextNode::AddPropertyData,**](icontextnode-addpropertydata.md)este método se usa para recuperar las propiedades comunes descritas por las constantes Propiedades del nodo [de](context-node-properties.md) contexto.
+Además de recuperar datos específicos de la aplicación que se agregaron con [**IContextNode::AddPropertyData,**](icontextnode-addpropertydata.md)este método se usa para recuperar propiedades comunes descritas por las constantes propiedades del nodo [de](context-node-properties.md) contexto.
 
 Las propiedades de tipo cadena incluyen:
 
@@ -84,7 +84,7 @@ Las propiedades de tipo cadena incluyen:
 -   GUID \_ AHP \_ SUFFIXTEXT
 -   GUID \_ AHP \_ FACTOID
 
-El valor devuelto es **WCHAR. \**_Si convierte el parámetro \_ *ppbPropertyData* en **WCHAR, \**_ su longitud devuelta es `(length of the string + 1) _ sizeof(WCHAR)` .
+El valor devuelto es **WCHAR \**_. Si convierte el parámetro \_ *ppbPropertyData* en **WCHAR, \**_ su longitud devuelta es `(length of the string + 1) _ sizeof(WCHAR)` .
 
 Las propiedades de tipo booleano incluyen:
 
@@ -92,7 +92,7 @@ Las propiedades de tipo booleano incluyen:
 -   GUID \_ AHP \_ COERCETOFACTOID
 -   GUID \_ AHP \_ WORDMODE
 
-El valor devuelto es **VARIANT \_ BOOL.** Si convierte el parámetro \* *ppbPropertyData* a **VARIANT \_ BOOL, \*** su longitud devuelta es `sizeof(VARIANT_BOOL)` .
+El valor devuelto es **VARIANT \_ BOOL.** Si convierte el parámetro \* *ppbPropertyData* en **VARIANT \_ BOOL, \*** su longitud devuelta es `sizeof(VARIANT_BOOL)` .
 
 GUID \_ AHP \_ GUIDE es una propiedad de tipo de guía. El valor devuelto es **InkAnalysisRecognitionGuide \** _. Si convierte el parámetro \_ *ppbPropertyData* en **InkAnalysisRecognitionGuide, \*** su longitud devuelta es `sizeof(InkAnalysisRecognitionGuide)` .
 
@@ -101,7 +101,7 @@ Las propiedades de tipo entero incluyen:
 -   GUID \_ CNP \_ LINENUMBER
 -   GUID \_ CNP \_ POINTSPERINCH
 -   GUID \_ CNP \_ CONFIDENCELEVEL
--   CONFIRMACIÓN \_ DE CNP \_ DE GUID
+-   CONFIRMACIÓN \_ DE CNP \_ GUID
 -   GUID \_ CNP \_ MAXIMUMSTROKECOUNT
 -   SEGMENTACIÓN \_ DE CNP \_ GUID
 -   GUID \_ CNP \_ ALIGNMENTLEVEL
@@ -110,20 +110,20 @@ El valor devuelto es **LONG \** _. Si convierte el parámetro \_ *ppbPropertyDat
 
 Las propiedades de tipo de métricas de línea incluyen:
 
--   ASCENDENTES \_ DE CNP \_ GUID
+-   \_CNP \_ DE GUID: ASCENDENTES
 -   DESCENDIENTES \_ DE CNP \_ GUID
--   LÍNEA BASE \_ DE CNP \_ GUID
--   GUID \_ CNP \_ MIDLINE
+-   BASE DE \_ REFERENCIA DE CNP \_ GUID
+-   LÍNEA \_ MEDIA DEL CNP \_ GUID
 
-El valor devuelto es **\* LONG.*_Si convierte el parámetro \_ *ppbPropertyData* en **LONG, \**_ su longitud devuelta es , lo que significa los valores (x, y) de los puntos iniciales seguidos de los valores (x, y) para los puntos `sizeof(LONG)_4` finales.
+El valor devuelto es **LONG \**_. Si convierte el parámetro \_ *ppbPropertyData* en **LONG, \**_ su longitud devuelta es , lo que significa los valores (x, y) de los puntos iniciales seguidos de los valores (x, y) para los puntos `sizeof(LONG)_4` finales.
 
-GUID \_ CNP \_ TEXTRECOGNIZERID es una **propiedad GUID.** El valor devuelto es **GUID \** _. Si convierte el parámetro \_ *ppbPropertyData* al **GUID, \*** su longitud devuelta es `sizeof(GUID)` .
+GUID \_ CNP \_ TEXTRECOGNIZERID es una **propiedad GUID.** El valor devuelto es **GUID \** _. Si convierte el parámetro \_ *ppbPropertyData en* **GUID, \*** su longitud devuelta es `sizeof(GUID)` .
 
-GUID \_ CNP \_ ROTATEDBOUNDINGBOX es una propiedad de cuadro de límite girado. El valor devuelto es **\* LONG.*_Si convierte el parámetro \_ *ppbPropertyData* en **LONG, \**_ su longitud devuelta es , lo que significa los valores (x, y) de las cuatro esquinas `sizeof(LONG)_8` del cuadro.
+GUID \_ CNP \_ ROTATEDBOUNDINGBOX es una propiedad de rectángulo de selección girada. El valor devuelto es **LONG \**_. Si convierte el parámetro \_ *ppbPropertyData* en **LONG, \**_ su longitud devuelta es , lo que significa los valores (x, y) de las cuatro esquinas `sizeof(LONG)_8` del cuadro.
 
-\_CNP \_ HOTPOINT GUID es una propiedad de punto de acceso. El valor devuelto es **\* LONG.*_Si convierte el parámetro \_ *ppbPropertyData* en **LONG, \**_ su longitud devuelta es , lo que significa los `sizeof(LONG)_2` valores (x, y) del punto.
+GUID \_ CNP \_ HOTPOINT es una propiedad de punto de acceso. El valor devuelto es **LONG \**_. Si convierte el parámetro \_ *ppbPropertyData* en **LONG, \**_ su longitud devuelta es , lo que significa los `sizeof(LONG)_2` valores (x, y) del punto.
 
-GUID \_ AHP \_ WORDLIST es una propiedad de lista de palabras. El valor devuelto es **WCHAR. \**_Si convierte el parámetro \_ *ppbPropertyData* en **WCHAR, \**_ su longitud devuelta es , donde es la suma de las longitudes de cadena del número de cadenas de la lista más 1 para cada carácter de terminación NULL para `n _ sizeof(WCHAR)` cada `n` cadena. 
+GUID \_ AHP \_ WORDLIST es una propiedad de lista de palabras. El valor devuelto es **WCHAR \**_. Si convierte el parámetro \_ *ppbPropertyData* en **WCHAR, \**_ su longitud devuelta es , donde es la suma de las longitudes de cadena del número de cadenas de la lista más 1 para cada carácter de terminación NULL para `n _ sizeof(WCHAR)` cada `n` cadena. 
 
 ## <a name="examples"></a>Ejemplos
 
@@ -169,16 +169,16 @@ HRESULT CMyClass::ExploreParagraphNode(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

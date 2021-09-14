@@ -4,12 +4,12 @@ ms.assetid: 6017ef59-d2e9-4245-a406-8965024dbb35
 title: Conjunto de trabajo de proceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a345df46f4d36e8400112c54492d7844c7a46b5d5ae125a3d9103db9cbcc18c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aaded3d0b5f8c6ad552cc728c68ad0407391c343
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117793513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062810"
 ---
 # <a name="process-working-set"></a>Conjunto de trabajo de proceso
 

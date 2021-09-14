@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba6c583de68b8a92c8d93990bce84787fa061ec5422ea2c6b32a6a3942b766ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 101a25a8e2da09b9f4065a54fcff9896690adbb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119877685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062528"
 ---
 # <a name="dtn_dropdown-notification-code"></a>Código de notificación DE LISTA DESPLEGABLE de DTN \_
 
@@ -49,9 +49,9 @@ Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-n
 
 No se usa el valor devuelto para esta notificación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una tarea que el controlador de notificaciones puede tener que realizar es personalizar el control de calendario mensual desplegable. Por ejemplo, si no quiere "Ir a hoy", debe establecer el estilo [**\_ NOTODAY**](month-calendar-control-styles.md)  de MCS del control. Para recuperar un identificador al control month-calendar, envíe al control DTP un mensaje [**\_ GETMONTHCAL de DTM.**](dtm-getmonthcal.md) A continuación, puede usar este identificador [**y SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) para establecer el estilo de calendario mensual deseado.
+Una tarea que el controlador de notificaciones puede tener que realizar es personalizar el control de calendario mensual desplegable. Por ejemplo, si no quiere "Ir a hoy", debe establecer el estilo [**\_ NOTODAY**](month-calendar-control-styles.md)  de MCS del control. Para recuperar un identificador al control month-calendar, envíe al control DTP un [**mensaje \_ GETMONTHCAL de DTM.**](dtm-getmonthcal.md) A continuación, puede usar este identificador [**y SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) para establecer el estilo de calendario mensual deseado.
 
 Los controles DTP no mantienen un control de calendario de mes secundario estático. El control DTP crea un nuevo control de calendario mensual antes de enviar este código de notificación. Además, el control DTP destruye el control secundario cuando no está activo (visible). Por lo tanto, la aplicación no debe basarse en un identificador de ventana estático para el calendario del mes secundario del control.
 
@@ -63,11 +63,11 @@ Los controles DTP no mantienen un control de calendario de mes secundario estát
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

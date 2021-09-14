@@ -2,7 +2,7 @@
 description: El método de clase WMI RenewDHCPLease renueva la dirección IP en adaptadores de red específicos habilitados para DHCP.
 ms.assetid: b6e5d1fb-db3f-4491-bbac-46b1f2e7206e
 ms.tgt_platform: multiple
-title: Método RenewDHCPLease de la Win32_NetworkAdapterConfiguration clase
+title: Método RenewDHCPLease de la Win32_NetworkAdapterConfiguration de datos
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 08e3887f44fbd56b2f80c275b1cfacc26fd83dc50890f8162efec93d329f44c5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4603f013c6b4c2c80edd555608b5f59325b6a6d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119218175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062646"
 ---
-# <a name="renewdhcplease-method-of-the-win32_networkadapterconfiguration-class"></a>Método RenewDHCPLease de la clase NetworkAdapterConfiguration de Win32 \_
+# <a name="renewdhcplease-method-of-the-win32_networkadapterconfiguration-class"></a>Método RenewDHCPLease de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **RenewDHCPLease** renueva la dirección IP en adaptadores de red específicos habilitados para DHCP.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no es necesario reiniciar.
+Finalización correcta, no se requiere reinicio.
 
 </dd> <dt>
 
@@ -64,12 +64,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no compatible con esta plataforma**
+**Método no admitido en esta plataforma**
 </dt> <dd>
 
 64
 
-Método no compatible con esta plataforma.
+Método no admitido en esta plataforma.
 
 </dd> <dt>
 
@@ -231,7 +231,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
@@ -249,7 +249,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco o red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
@@ -271,7 +271,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -303,7 +303,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -312,11 +312,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -370,7 +370,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
@@ -395,15 +395,15 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La concesión de la dirección IP asignada por un servidor DHCP tiene una fecha de expiración que el cliente debe renovar si pretende seguir usando la dirección IP asignada.
 
 ## <a name="examples"></a>Ejemplos
 
-En [el ejemplo release Renew IP Adresses Using PowerShell PowerShell (Renovación](https://Gallery.TechNet.Microsoft.Com/Renew-IP-Adresses-Using-365f6bfa) de direcciones IP con PowerShell de PowerShell) de la Galería de TechNet se usa **RenewDHCPLease para** publicar y renovar una dirección IP.
+En el ejemplo renovación de direcciones IP mediante [PowerShell](https://Gallery.TechNet.Microsoft.Com/Renew-IP-Adresses-Using-365f6bfa) de PowerShell en la Galería de TechNet se **usa RenewDHCPLease** para publicar y renovar una dirección IP.
 
-El ejemplo [de VBScript](https://Gallery.TechNet.Microsoft.Com/39443fd7-0152-4c0a-89e9-e2753049b203) Renovar la concesión DHCP para un adaptador de red en la Galería de TechNet usa **RenewDHCPLease para** renovar la concesión DHCP para cada adaptador de red enlazado a TCP/IP en un equipo.
+El ejemplo de [VBScript](https://Gallery.TechNet.Microsoft.Com/39443fd7-0152-4c0a-89e9-e2753049b203) Renovar la concesión DHCP para un adaptador de red en la Galería de TechNet usa **RenewDHCPLease** para renovar la concesión DHCP para cada adaptador de red enlazado a TCP/IP en un equipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -419,7 +419,7 @@ El ejemplo [de VBScript](https://Gallery.TechNet.Microsoft.Com/39443fd7-0152-4c0
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -429,7 +429,7 @@ El ejemplo [de VBScript](https://Gallery.TechNet.Microsoft.Com/39443fd7-0152-4c0
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

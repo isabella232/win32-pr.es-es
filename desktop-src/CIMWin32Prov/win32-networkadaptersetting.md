@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8f7330e5b6a2b86508528bb1136acd58b308ca4b9c44b31b9b6e0777f4eccd19
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c51ef9ed790c902a6a662dc3ebc45df97fa29721
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062561"
 ---
 # <a name="win32_networkadaptersetting-class"></a>Clase \_ NetworkAdapterSetting de Win32
 
@@ -40,7 +40,7 @@ class Win32_NetworkAdapterSetting : Win32_DeviceSettings
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ NetworkAdapterSetting de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Un [**objeto \_ NetworkAdapterConfiguration de Win32**](win32-networkadapterconf
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ NetworkAdapterSetting de Win32** se deriva de [**Win32 \_ DeviceSettings.**](win32-devicesettings.md)
 
@@ -134,7 +134,7 @@ Next
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

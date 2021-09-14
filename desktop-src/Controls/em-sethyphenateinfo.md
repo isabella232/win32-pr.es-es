@@ -1,5 +1,5 @@
 ---
-title: EM_SETHYPHENATEINFO mensaje (Richedit.h)
+title: EM_SETHYPHENATEINFO (Richedit.h)
 description: Establece la forma en que un control de edición enriquecido hace la guión.
 ms.assetid: 67126cb8-ab50-49a9-b32f-2245debf2fe3
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5551aace3ab054c1c6fa322242ae06386ff19f5a44775bd6dcc6887d19c65c62
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b8369d463ae03e9410347ab58a50346625e3de47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119437565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062100"
 ---
 # <a name="em_sethyphenateinfo-message"></a>Mensaje \_ EM SETHYPHENATEINFO
 
@@ -58,11 +58,11 @@ No se usa, debe ser cero.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP1 \[\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

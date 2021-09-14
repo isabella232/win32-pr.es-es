@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: 6605e2fb02edad23831b22334b960eaa2e89f23206673608500f248452094ea6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19f97abeec74af0d08f340b70aa139e1bec7bf1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062888"
 ---
 # <a name="pdhvbaddcounter-function"></a>Función PdhVbAddCounter
 
@@ -27,7 +27,7 @@ La **función PdhVbAddCounter** crea una entrada de contador en el objeto de con
 > [!IMPORTANT]
 > La función que describe este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda usar las funciones descritas en [Funciones de contadores de rendimiento](performance-counters-functions.md).
 
-Función PdhVbAddCounter( \_ ByVal QueryHandle as long, \_ ByVal CounterPath as string, \_ ByVal CounterHandle as long \_ ) as long
+Función PdhVbAddCounter( \_ ByVal QueryHandle As Long, \_ ByVal CounterPath as String, \_ ByVal CounterHandle as Long \_ ) as Long
 
 ## <a name="parameters"></a>Parámetros
 
@@ -58,7 +58,7 @@ Referencia única que identifica este contador en la consulta. Esta variable deb
 
 Si la función se realiza correctamente, devuelve un **entero Long** igual a ERROR SUCCESS y un nuevo identificador en la \_ variable *CounterHandle.*
 
-Si se produce un error en la función, el valor devuelto es un [código de error del sistema](/windows/desktop/Debug/system-error-codes) o un código de error [PDH](pdh-error-codes.md). Los siguientes son valores posibles.
+Si se produce un error en la función, el valor devuelto es un [código de error del sistema](/windows/desktop/Debug/system-error-codes) o un código de error [PDH](pdh-error-codes.md). A continuación se den los valores posibles.
 
 
 
@@ -66,7 +66,7 @@ Si se produce un error en la función, el valor devuelto es un [código de error
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | <dl> <dt>**PDH \_ INVALID \_ ARGUMENT**</dt> </dl>           | Uno o varios de los argumentos no son válidos o incorrectos.<br/>              |
 | <dl> <dt>**ERROR DE \_ ASIGNACIÓN DE \_ MEMORIA PDH \_**</dt> </dl> | No se pudo asignar un búfer de memoria.<br/>                            |
-| <dl> <dt>**IDENTIFICADOR NO VÁLIDO de PDH \_ \_**</dt> </dl>             | El identificador de consulta no es válido.<br/>                                     |
+| <dl> <dt>**IDENTIFICADOR NO \_ VÁLIDO de \_ PDH**</dt> </dl>             | El identificador de consulta no es válido.<br/>                                     |
 | <dl> <dt>**PDH \_ CSTATUS \_ NO \_ COUNTER**</dt> </dl>        | No se encontró el contador especificado.<br/>                               |
 | <dl> <dt>**PDH \_ CSTATUS \_ NO \_ OBJECT**</dt> </dl>         | No se encontró el objeto especificado.<br/>                           |
 | <dl> <dt>**PDH \_ CSTATUS \_ NO \_ MACHINE**</dt> </dl>        | No se pudo crear una entrada de equipo.<br/>                             |
@@ -83,14 +83,14 @@ Si se produce un error en la función, el valor devuelto es un [código de error
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
 | Biblioteca<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: EQUALIZERSETTINGS.enableSplineTension
-description: El atributo enableSplineTension especifica o recupera un valor que indica si la curva spline está habilitada.
+description: El atributo enableSplineTension especifica o recupera un valor que indica si está habilitada la tensión de spline.
 ms.assetid: ca52feac-3161-4fd0-976c-abbfb2a238f2
 keywords:
 - EQUALIZERSETTINGS.enableSplineTension Reproductor de Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6dda8deec60b1b2427f046f50ca843f68272ed26cb71470674137491ac2db1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34158d6f22710b1c9e87946624cbd0f1a00c53bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240999"
 ---
 # <a name="equalizersettingsenablesplinetension"></a>EQUALIZERSETTINGS.enableSplineTension
 
-El **atributo enableSplineTension** especifica o recupera un valor que indica si la curva spline está habilitada.
+El **atributo enableSplineTension** especifica o recupera un valor que indica si está habilitada la tensión de spline.
 
 ``` syntax
         elementID.enableSplineTension
@@ -31,9 +31,9 @@ El **atributo enableSplineTension** especifica o recupera un valor que indica si
 
 Este atributo es un booleano **de** lectura y escritura con un valor predeterminado de true.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La habilitación de la curva spline permite al usuario ajustar los anchos de banda del igualador de forma más fluida, de modo que no haya saltos grandes entre los niveles de frecuencia.
+La habilitación de la tensión spline permite al usuario ajustar los anchos de banda del igualador de forma más fluida, de modo que no haya saltos grandes entre los niveles de frecuencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ La habilitación de la curva spline permite al usuario ajustar los anchos de ban
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

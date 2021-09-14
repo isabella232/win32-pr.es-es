@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 951e7909d55517489c77190434bf677ccdd8bee8dc1238ecd247d117a551610a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: caee510db9ddeda1923327176a634a9011601e4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061615"
 ---
 # <a name="iamtimelinesrcgetmedialength2-method"></a>IamTimelineSrc::GetMediaLength2 (método)
 
@@ -68,7 +68,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -91,7 +91,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI de Asociación de subdirectorios de Win32 relaciona un directorio (carpeta) y uno de sus subdirectorios (subcarpetas).
+description: La clase WMI de asociación SubDirectory de Win32 relaciona un directorio (carpeta) y uno de sus \_ subdirectorios (subcarpetas).
 ms.assetid: f0565b7b-d593-468b-96b1-3922428c61e1
 ms.tgt_platform: multiple
-title: Win32_SubDirectory (clase)
+title: Win32_SubDirectory clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,17 +17,17 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 046de6ad1e09874351b37d58f7277126e39e990a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061475"
 ---
-# <a name="win32_subdirectory-class"></a>\_Clase de subdirectorio Win32
+# <a name="win32_subdirectory-class"></a>Clase SubDirectory de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) de Asociación de **\_ subdirectorios de Win32** relaciona un directorio (carpeta) y uno de sus subdirectorios (subcarpetas).
+La **clase WMI de asociación \_ SubDirectory** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un directorio (carpeta) y uno de sus subdirectorios (subcarpetas).
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,61 +40,61 @@ class Win32_SubDirectory : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La clase de **\_ subdirectorio Win32** tiene estos tipos de miembros:
+La **clase \_ SubDirectory de Win32** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ subdirectorio Win32** tiene estas propiedades.
+La **clase \_ SubDirectory de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ directorio Win32**
+Tipo de datos: **Directorio Win32 \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| directorio Win32 de WMI \_ ")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ Directory")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades del directorio primario (carpeta) en esta asociación.
+Referencia a la instancia de que representa las propiedades del directorio primario (carpeta) de esta asociación.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ directorio Win32**
+Tipo de datos: **Directorio Win32 \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| directorio Win32 de WMI \_ ")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ Directory")
 </dt> </dl>
 
-Referencia a la instancia de que representa la parte de subdirectorio (subcarpeta) de la asociación.
+Referencia a la instancia de que representa la parte del subdirectorio (subcarpeta) de la asociación.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La clase de **\_ subdirectorio Win32** se deriva [**del \_ componente CIM**](cim-component.md).
+La **clase \_ SubDirectory de Win32** se deriva del [**componente CIM \_**](cim-component.md).
 
-Para devolver una colección de subcarpetas de una carpeta, cree una consulta de asociación que establezca *ResultRole* en *PartComponent*. Esto indica que todos los elementos de la colección devuelta deben desempeñar el rol de un elemento PartComponent, o subcarpeta, del objeto Folder. Para devolver la carpeta principal de una carpeta, establezca *ResultRole* en *GroupComponent*.
+Para devolver una colección de subcarpetas para una carpeta, cree una consulta de asociación que establece *ResultRole* en *PartComponent.* Esto indica que todos los elementos de la colección devuelta deben desempeñar el rol de partcomponente, o subcarpeta, del objeto de carpeta. Para devolver la carpeta primaria de una carpeta, establezca *ResultRole* en *GroupComponent.*
 
-La clase de **\_ subdirectorio Win32** solo funciona en el nivel de sistema de archivos inmediatamente superior o inmediatamente inferior a la carpeta especificada.
+La **clase \_ SubDirectory de Win32** solo funciona en el nivel del sistema de archivos inmediatamente por encima o inmediatamente debajo de la carpeta especificada.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de VBScript se devuelve una lista de todas las subcarpetas de la carpeta C: \\ scripts.
+El siguiente ejemplo de VBScript devuelve una lista de todas las subcarpetas dentro de la carpeta C: \\ Scripts.
 
 
 ```VB
@@ -120,17 +120,17 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

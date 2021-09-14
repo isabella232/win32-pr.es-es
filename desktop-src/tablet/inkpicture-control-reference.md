@@ -5,11 +5,11 @@ title: Referencia del control InkPicture
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d93f5727d2f3f049a579e32e5feb0ba0eaa742d2
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256592"
 ---
 # <a name="inkpicture-control-reference"></a>Referencia del control InkPicture
 
@@ -24,7 +24,7 @@ Se puede crear una instancia del control InkPicture llamando al [**método CoCre
 
 La creación del control InkPicture detrás de un control transparente (por ejemplo, un Control GroupBox con el conjunto de propiedades TRANSPARENT de WS EX) impedirá que InkPicture recopile \_ \_ la entrada de lápiz.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 
 
@@ -41,7 +41,7 @@ La creación del control InkPicture detrás de un control transparente (por ejem
 | Evento                                                                              | Descripción                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **ChangeUICues**                                                                   | En desuso.<br/>                                                                                                                                                                                                                                                                                             |
-| [**Hacer clic**](inkpicture-click.md)                                                  | Se produce cuando un usuario hace clic en el control InkPicture.<br/>                                                                                                                                                                                                                                                       |
+| [**Haga clic en**](inkpicture-click.md)                                                  | Se produce cuando un usuario hace clic en el control InkPicture.<br/>                                                                                                                                                                                                                                                       |
 | [**Evento CursorButtonDown**](inkpicture-cursorbuttondown.md)                      | Se produce cuando el control [**InkCollector**](inkcollector-class.md) detecta un [**objeto IInkCursorButton**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton) que está abajo.<br/>                                                                                                                                                         |
 | [**Evento CursorButtonUp**](inkpicture-cursorbuttonup.md)                          | Se produce cuando el control InkPicture detecta un [**IInkCursorButton**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton) que está en marcha.<br/>                                                                                                                                                                                                  |
 | [**Evento CursorDown**](inkpicture-cursordown.md)                                  | Se produce cuando la punta del cursor se pone en contacto con la superficie digitalizadora de la tableta.<br/>                                                                                                                                                                                                                                      |
@@ -121,7 +121,7 @@ La creación del control InkPicture detrás de un control transparente (por ejem
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_desiredpacketdescription"><strong>Propiedad DesiredPacketDescription</strong></a> | Obtiene o establece la descripción del paquete del control InkPicture (solo en tiempo de ejecución).<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_dynamicrendering"><strong>Propiedad DynamicRendering</strong></a> | Obtiene o establece el valor que especifica si el control InkPicture representa dinámicamente la entrada de lápiz a medida que se recopila.<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_editingmode"><strong>EditingMode</strong></a> | Obtiene o establece un valor que especifica si el control InkPicture está en modo de entrada de lápiz, en modo de eliminación o en modo de selección o edición.<br /> | 
-| <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_enabled"><strong>Habilitado</strong></a> | Obtiene o establece un valor que determina si el control InkPicture puede responder a eventos generados por el usuario.<br /><blockquote>[!Note]<br />Esta propiedad es equivalente a la <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_inkenabled"><strong>propiedad InkEnabled.</strong></a></blockquote><br /> | 
+| <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_enabled"><strong>Enabled</strong></a> | Obtiene o establece un valor que determina si el control InkPicture puede responder a eventos generados por el usuario.<br /><blockquote>[!Note]<br />Esta propiedad es equivalente a la <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_inkenabled"><strong>propiedad InkEnabled.</strong></a></blockquote><br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_erasermode"><strong>EraserMode</strong></a> | Obtiene o establece el valor que especifica si la entrada manuscrita se borra por trazo o por punto.<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_eraserwidth"><strong>EraserWidth</strong></a> | Obtiene o establece el valor que especifica el ancho de la punta del lápiz de borrador.<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_hwnd"><strong>Hwnd</strong></a> | Obtiene el identificador de ventana al que está enlazado el control InkPicture. (solo en tiempo de ejecución)<br /> | 
@@ -135,7 +135,7 @@ La creación del control InkPicture detrás de un control transparente (por ejem
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_renderer"><strong>Renderer (propiedad)</strong></a> | Obtiene o establece el <a href="inkrenderer-class.md"><strong>objeto InkRenderer</strong></a> que se usa para dibujar entrada manuscrita en el control InkPicture (solo en tiempo de ejecución).<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection"><strong>Número de selección</strong></a> | Obtiene la <a href="/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)">colección InkStrokes</a> seleccionada actualmente dentro del control InkPicture (solo en tiempo de ejecución).<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_sizemode"><strong>SizeMode</strong></a> | Obtiene o establece cómo el control controla la ubicación y el tamaño de la imagen.<br /> | 
-| <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_supporthighcontrastink"><strong>Propiedad SupportHighContrastInk</strong></a> | Obtiene un valor que especifica si la entrada de lápiz se representa como un solo color, Color = COLOR_WINDOWTEXT (de la llamada a GetSystemMetrics) cuando el sistema está en modo contraste alto automático.<br /> | 
+| <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_supporthighcontrastink"><strong>Propiedad SupportHighContrastInk</strong></a> | Obtiene un valor que especifica si la entrada de lápiz se representa como un solo color, Color = COLOR_WINDOWTEXT (de la llamada a GetSystemMetrics) cuando el sistema está en contraste alto modo.<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_supporthighcontrastselectionui"><strong>SupportHighContrastSelectionUI</strong></a> | Obtiene o establece un valor que especifica si todas las interfaces de usuario de selección (rectángulo de selección y identificadores de selección) se dibujan en contraste alto cuando el sistema está en modo contraste alto selección.<br /> | 
 | <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_tablet"><strong>Propiedad de tableta</strong></a> | Obtiene el <a href="/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet"><strong>objeto IInkTablet</strong></a> que el control InkPicture usa actualmente para recopilar la entrada.<br /> | 
 
@@ -144,7 +144,7 @@ La creación del control InkPicture detrás de un control transparente (por ejem
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La interfaz de usuario en tiempo de ejecución del control InkPicture es una ventana con un fondo opaco (color único, fondo de imagen o ambos) que contiene entrada manuscrita.
 
@@ -167,11 +167,11 @@ Para obtener información sobre qué subprocesos provoca eventos concretos, vea 
 Para mejorar el rendimiento de la aplicación, elimine manualmente un control InkPicture cuando ya no sea necesario.
 
 > [!Note]  
-> Cuando un control InkPicture se superpone con otro control, como **groupBox** establecido en transparente, InkPicture no recopilará lápiz. InkPicture debe ser el control de nivel superior en el orden Z o debe ser un elemento secundario de **GroupBox.**
+> Cuando un control InkPicture se superpone con otro control, como **groupBox** establecido en transparente, InkPicture no recopilará la entrada de lápiz. InkPicture debe ser el control de nivel superior en el orden Z o debe ser un elemento secundario de **GroupBox**.
 
  
 
-## <a name="com-implementation"></a>Implementación com
+## <a name="com-implementation"></a>Implementación de COM
 
 Este objeto implementa la **interfaz COM IInkPicture.**
 

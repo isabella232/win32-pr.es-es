@@ -4,12 +4,12 @@ ms.assetid: 6aa476b3-97ad-4289-836b-f46fe4d04280
 title: Propiedades de InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28c5feb78eb120d3a3758d130dc0cbac7e80f25f51577f6b717823802118e14d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b4e7fa3156ef38013ab099e6440b6796505f21d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118717928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256688"
 ---
 # <a name="inkedit-properties"></a>Propiedades de InkEdit
 
@@ -24,9 +24,9 @@ Esta sección contiene propiedades que pertenecen al control InkEdit.
 | [**BorderStyle**](/windows/desktop/api/inked/nf-inked-iinkedit-get_borderstyle)               | Obtiene o establece un valor que determina si el control [InkEdit](inkedit-control-reference.md) tiene un borde.<br/>                                                                             |
 | [**DisableNoScroll**](/windows/desktop/api/inked/nf-inked-iinkedit-get_disablenoscroll)       | Obtiene o establece un valor que determina si las barras de desplazamiento del control [InkEdit](inkedit-control-reference.md) están deshabilitadas.<br/>                                                              |
 | [**DrawingAttributes**](/windows/desktop/api/inked/nf-inked-iinkedit-get_drawingattributes)   | Obtiene o establece los atributos de dibujo para la entrada de lápiz que aún no se han dibujado en el control [InkEdit.](inkedit-control-reference.md)<br/>                                                                |
-| [**habilitado**](/windows/desktop/api/inked/nf-inked-iinkedit-get_enabled)                       | Obtiene o establece un valor que determina si el control [InkEdit](inkedit-control-reference.md) puede responder a eventos generados por el usuario.<br/>                                                     |
+| [**Enabled**](/windows/desktop/api/inked/nf-inked-iinkedit-get_enabled)                       | Obtiene o establece un valor que determina si el control [InkEdit](inkedit-control-reference.md) puede responder a eventos generados por el usuario.<br/>                                                     |
 | [**Factoid**](/windows/desktop/api/inked/nf-inked-iinkedit-get_factoid)                       | Obtiene o establece la [constante Factoid](factoid-constants.md) que usa un [**objeto IInkRecognizer**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizer) para restringir su búsqueda para el resultado del reconocimiento.<br/>                  |
-| [**Fuente**](/windows/desktop/api/inked/nf-inked-iinkedit-get_font)                             | Obtiene o establece la fuente del texto que muestra el control [InkEdit.](inkedit-control-reference.md)<br/>                                                                                       |
+| [**Font**](/windows/desktop/api/inked/nf-inked-iinkedit-get_font)                             | Obtiene o establece la fuente del texto que muestra el control [InkEdit.](inkedit-control-reference.md)<br/>                                                                                       |
 | [**Hwnd**](/windows/desktop/api/inked/nf-inked-iinkedit-get_hwnd)                             | Obtiene el identificador de ventana al que está enlazado el control [**InkDisp.**](inkdisp-class.md)<br/>                                                                                                      |
 | [**InkInsertMode**](/windows/desktop/api/inked/nf-inked-iinkedit-get_inkinsertmode)           | Obtiene o establece un valor que especifica cómo se inserta la entrada de lápiz en el control [InkEdit,](inkedit-control-reference.md) ya sea como texto o como entrada de lápiz.<br/>                                                |
 | [**InkMode**](/windows/desktop/api/inked/nf-inked-iinkedit-get_inkmode)                       | Obtiene o establece un valor que especifica si la colección de entrada de lápiz está deshabilitada, se recopila la entrada de lápiz o se recopilan los gestos y la entrada de lápiz.<br/>                                                                |
@@ -55,7 +55,7 @@ Esta sección contiene propiedades que pertenecen al control InkEdit.
 | [**Estado**](/windows/desktop/api/inked/nf-inked-iinkedit-get_status)                         | Obtiene un valor que especifica si el control [InkEdit](inkedit-control-reference.md) está inactivo, recopilando entrada de lápiz o reconociendo la entrada de lápiz (solo en tiempo de ejecución).<br/>                                       |
 | [**Texto**](/windows/desktop/api/inked/nf-inked-iinkedit-get_text)                             | Obtiene o establece el texto actual del cuadro de texto.<br/>                                                                                                                                              |
 | [**TextRTF**](/windows/desktop/api/inked/nf-inked-iinkedit-get_textrtf)                       | Obtiene o establece el texto del control [InkEdit,](inkedit-control-reference.md) incluidos todos los códigos RTF.<br/>                                                                                     |
-| [**UseMouseForInput**](/windows/desktop/api/inked/nf-inked-iinkedit-get_usemouseforinput)     | Obtiene o establece un valor que indica si el mouse se puede usar como un dispositivo de entrada.<br/>                                                                                                       |
+| [**UseMouseForInput**](/windows/desktop/api/inked/nf-inked-iinkedit-get_usemouseforinput)     | Obtiene o establece un valor que indica si el mouse se puede usar como dispositivo de entrada.<br/>                                                                                                       |
 
 
 

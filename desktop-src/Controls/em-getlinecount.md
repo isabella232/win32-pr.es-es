@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44487084da8df8edd463fc0683c9d27fcba19a2993465e5493edfd8bb7c3c6b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15ffbeafb13850317faccb4be44571d81b0d7e36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118006688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062190"
 ---
 # <a name="em_getlinecount-message-winuserh"></a>EM_GETLINECOUNT mensaje (Winuser.h)
 
@@ -45,25 +45,25 @@ No se usa; debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un entero que especifica el número total de líneas de texto en el control de edición multilínea o en el control de edición enriquecido. Si el control no tiene texto, el valor devuelto es 1. El valor devuelto nunca será menor que 1.
+El valor devuelto es un entero que especifica el número total de líneas de texto en el control de edición multilínea o el control de edición enriquecido. Si el control no tiene texto, el valor devuelto es 1. El valor devuelto nunca será menor que 1.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **mensaje EM \_ GETLINECOUNT** recupera el número total de líneas de texto, no solo el número de líneas que están visibles actualmente.
 
-Si la característica Desencapsulado de palabras está habilitada, el número de líneas puede cambiar cuando cambian las dimensiones de la ventana de edición.
+Si la característica Wordwrap está habilitada, el número de líneas puede cambiar cuando cambien las dimensiones de la ventana de edición.
 
-**Edición enriqueceda:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Si la característica Desencapsulado de palabras está habilitada, el número de
 [**EM \_ LINELENGTH**](em-linelength.md)
 </dt> <dt>
 
-[**Edición \_ de GetLineCount**](/windows/desktop/api/Windowsx/nf-windowsx-edit_getlinecount)
+[**Editar \_ GetLineCount**](/windows/desktop/api/Windowsx/nf-windowsx-edit_getlinecount)
 </dt> </dl>
 
  

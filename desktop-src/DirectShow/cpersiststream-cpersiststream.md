@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 00745dab5d851f05bf3df99dcdb7b6e8574518a970f8a79466a291cbec13997a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9e3be9233d76929ebfcb79121c60ef6c1af35b56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119813395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062428"
 ---
 # <a name="cpersiststreamcpersiststream-constructor"></a>Constructor CPersistStream.CPersistStream
 
@@ -68,7 +68,7 @@ Puntero al valor devuelto com general. Este valor solo se cambia si se produce u
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

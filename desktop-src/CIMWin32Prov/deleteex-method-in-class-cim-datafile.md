@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1e52a1d974afdc123e79f85252a68c52aa99e7e78a2b997b6eca1f1bced60997
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9af120c76e4ab8c53c945bd13aa62a2295385ac2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061534"
 ---
 # <a name="deleteex-method-of-the-cim_datafile-class"></a>Método DeleteEx de la clase \_ DataFile de CIM
 
@@ -30,7 +30,7 @@ El **método DeleteEx** elimina el archivo lógico (o directorio) especificado e
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,7 +82,7 @@ Correcto.
 
 2
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -185,7 +185,7 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI implementa el método **DeleteEx** [**en CIM \_ DataFile.**](cim-datafile.md)
 
@@ -205,7 +205,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - checkbmi.h
-ms.openlocfilehash: a23bbb322da1effdb2246ee797b353d1af36e3b87cbb37bd89039d1aced994e5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c7242778a2ff16414b07f887dc1e71a1547a88e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060971"
 ---
 # <a name="validatebitmapinfoheader-function"></a>Función ValidateBitmapInfoHeader
 
@@ -63,7 +63,7 @@ Tamaño del bloque de memoria que contiene la estructura, en bytes.
 
 Devuelve un valor booleano. Si el valor es **FALSE**, la [**estructura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) no es válida.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función protege contra los errores siguientes:
 
@@ -84,7 +84,7 @@ La función no comprueba si la estructura describe un formato de vídeo válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

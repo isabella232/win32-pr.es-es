@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7c5ec2682e6a81d0cdc3e9fa590418bdf03e46c0a60086b470cd8bc4c97006fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: deae8129772e5d854f05b5b953ec66a12bd5bcaf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117833953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061442"
 ---
 # <a name="win32_systempartitions-class"></a>Clase SystemPartitions de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_SystemPartitions : Win32_SystemDevices
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemPartitions de Win32** tiene estos tipos de miembros:
 
@@ -84,15 +84,15 @@ Referencia a la instancia de que representa las propiedades de una partición de
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ SystemPartitions de Win32** se deriva de [**\_ SystemDevices de Win32.**](win32-systemdevices.md)
+La **clase \_ SystemPartitions de Win32** se deriva de [**Win32 \_ SystemDevices.**](win32-systemdevices.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

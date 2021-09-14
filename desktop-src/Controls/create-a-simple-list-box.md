@@ -4,12 +4,12 @@ description: En este tema se muestra cómo inicializar y recuperar elementos de 
 ms.assetid: 4A717010-A1D3-4FFB-8E4E-D5C4F9D8D952
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a037bfbdb5232cd30d3e13fbc251c22c18c71a76398a351939602301a745d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ca2230b265d61e9a59a8892e14127d25bf2cfd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120063184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062228"
 ---
 # <a name="how-to-create-a-simple-list-box"></a>Cómo crear un cuadro de lista simple
 
@@ -25,7 +25,7 @@ El ejemplo de código de C++ de este tema incluye un procedimiento de cuadro de 
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

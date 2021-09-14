@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a638861bc6a01a615355f0fad05cddc00f31d3e659fc60c0be0246eb108583f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 191fa85264e4e7e22aa67f409db20cebd68f4319
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118401878"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062473"
 ---
 # <a name="cmediaeventgetidsofnames-method"></a>Método CMediaEvent.GetIDsOfNames
 
-Mapas una función miembro única y un conjunto opcional de parámetros en un conjunto correspondiente de identificadores de distribución de enteros, que se pueden usar en llamadas posteriores a la función miembro [**CMediaEvent::Invoke.**](cmediaevent-invoke.md)
+Mapas una función miembro única y un conjunto opcional de parámetros en un conjunto correspondiente de identificadores de distribución de enteros, que se pueden usar en las llamadas posteriores a la función miembro [**CMediaEvent::Invoke.**](cmediaevent-invoke.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Identificador de referencia. Reservado para uso futuro. Debe ser **NULL.**
 *rgszNames* 
 </dt> <dd>
 
-Dirección de un puntero a una matriz de nombres pasada que se va a asignar.
+Dirección de un puntero a una matriz de nombres que se va a asignar.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Número de nombres que se van a asignar.
 *lcid* 
 </dt> <dd>
 
-Contexto de configuración regional en el que se interpretarán los nombres.
+Contexto de configuración regional en el que se interpretan los nombres.
 
 </dd> <dt>
 

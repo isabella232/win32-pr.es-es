@@ -1,24 +1,24 @@
 ---
-description: Notifica a las aplicaciones que el sistema se está reanudando desde suspensión o hibernación. Este evento se entrega cada vez que el sistema se reanuda y no indica si un usuario está presente.
+description: Notifica a las aplicaciones que el sistema se está reanudando desde suspensión o hibernación. Este evento se entrega cada vez que se reanuda el sistema y no indica si un usuario está presente.
 ms.assetid: cd331f79-b64d-479e-aea8-5118ccc87224
 title: PBT_APMRESUMEAUTOMATIC evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43e66fcd2201e9fb3c4feeb135843e92a350303b89a5c5045836428b9a326a30
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a7a481dee356c85b3831fcace0c1ff127b0b276
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062844"
 ---
 # <a name="pbt_apmresumeautomatic-event"></a>Evento \_ PBT APMRESUMEAUTOMATIC
 
-Notifica a las aplicaciones que el sistema se está reanudando desde suspensión o hibernación. Este evento se entrega cada vez que el sistema se reanuda y no indica si un usuario está presente.
+Notifica a las aplicaciones que el sistema se está reanudando desde suspensión o hibernación. Este evento se entrega cada vez que se reanuda el sistema y no indica si un usuario está presente.
 
-Una ventana recibe este evento a través del [**mensaje \_ WM POWERBROADCAST.**](wm-powerbroadcast.md) Los *parámetros wParam* *y lParam* se establecen como se describe a continuación.
+Una ventana recibe este evento a través [**del mensaje \_ WM POWERBROADCAST.**](wm-powerbroadcast.md) Los *parámetros wParam* *y lParam* se establecen como se describe a continuación.
 
 > [!Note]  
-> En Windows 10, versión 1507 o posterior, si el sistema se reanuda de suspensión solo para entrar inmediatamente en hibernación, este evento no se entrega. En este caso, no se envía un mensaje [**WM \_ POWERBROADCAST.**](wm-powerbroadcast.md)
+> En Windows 10, versión 1507 o posterior, si el sistema se reanuda desde suspensión solo para entrar inmediatamente en hibernación, este evento no se entrega. En este caso, no se envía un mensaje [**WM \_ POWERBROADCAST.**](wm-powerbroadcast.md)
 
  
 
@@ -41,7 +41,7 @@ WindowProc( HWND hwnd,      // handle to window
 *Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
 </dd> <dt>*uMsg*</dt> <dd> 
 
@@ -76,9 +76,9 @@ Reservado; debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el sistema detecta cualquier actividad del usuario después de difundir PBT \_ APMRESUMEAUTOMATIC, difundirá un evento [ \_ PBT APMRESUMESUSPEND](pbt-apmresumesuspend.md) para que las aplicaciones sepan que pueden reanudar la interacción completa con el usuario.
+Si el sistema detecta cualquier actividad de usuario después de difundir PBT \_ APMRESUMEAUTOMATIC, difundirá un evento [ \_ PBT APMRESUMESUSPEND](pbt-apmresumesuspend.md) para que las aplicaciones sepan que pueden reanudar la interacción completa con el usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,13 +86,13 @@ Si el sistema detecta cualquier actividad del usuario después de difundir PBT \
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                              |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

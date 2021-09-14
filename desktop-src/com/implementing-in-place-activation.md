@@ -4,12 +4,12 @@ description: Implementación de In-Place activación
 ms.assetid: 5fd67d1c-1dc5-4d83-a41e-b64d84cbf212
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 037fea98524b70f1d9d43dcef5909376ac136c5ea077bcbea06a663898ced354
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c075f143c772fe34de0c494664227e892b998387
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060926"
 ---
 # <a name="implementing-in-place-activation"></a>Implementación de In-Place activación
 

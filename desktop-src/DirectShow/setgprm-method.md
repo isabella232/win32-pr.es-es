@@ -4,12 +4,12 @@ ms.assetid: ded28f2a-5e40-4f76-9ed4-de10296529e1
 title: Método SetGPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c217f0235ca5b055e20102f553e9e23f5b93e6dd9c3d74db560584690a669ea
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e9e7492c599cde4c074c1a806f897edf3a8fe0a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061612"
 ---
 # <a name="setgprm-method"></a>Método SetGPRM
 
@@ -38,13 +38,13 @@ Especifica el registro de parámetros general que se establecerá como un entero
 <span id="nValue"></span><span id="nvalue"></span><span id="NVALUE"></span>*nValue*
 </dt> <dd>
 
-Especifica el nuevo valor para el registro como entero.
+Especifica el nuevo valor para el registro como un entero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los registros de parámetros generales, o GPU, son registros de 16 bits que cada disco puede usar de maneras únicas para el almacenamiento temporal de datos. Una aplicación de reproductor no necesita acceder a estos registros para ningún control de reproducción o navegación estándar mediante el **objeto MSWebDVD.** Este método se proporciona para las aplicaciones de reproductor que implementan funcionalidad avanzada. No intente modificar los GPRM directamente a menos que tenga un conocimiento exhaustivo de la especificación de DVD y las formas en que se usan los GPRM en el disco concreto que se va a reproducir. El cambio de estos valores puede dar lugar a un comportamiento impredecible.
+Los registros de parámetros generales, o GPU, son registros de 16 bits que cada disco puede usar de maneras únicas para el almacenamiento temporal de datos. Una aplicación de reproductor no necesita tener acceso a estos registros para ningún control de reproducción o navegación estándar mediante el **objeto MSWebDVD.** Este método se proporciona para las aplicaciones de reproductor que implementan funcionalidad avanzada. No intente modificar los GPRM directamente a menos que tenga un conocimiento exhaustivo de la especificación de DVD y las formas en que se usan los GPRM en el disco concreto que se va a reproducir. El cambio de estos valores puede dar lugar a un comportamiento impredecible.
 
  
 

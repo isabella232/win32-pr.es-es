@@ -1,5 +1,5 @@
 ---
-description: 'Método TakeOwnerShip de la clase Win32_CodecFile: el método de clase WMI TakeOwnerShip obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.'
+description: 'Método TakeOwnerShip de la clase Win32_CodecFile : el método de clase WMI TakeOwnerShip obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.'
 ms.assetid: c8fa0706-1f7e-4e68-aea6-694ba24c16c3
 ms.tgt_platform: multiple
 title: Método TakeOwnerShip de la Win32_CodecFile clase
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 96997b7a29d4a7ca0ad586263bfe7846142963f7ba60e4bdf01a3991e3cfcbff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e52e5dafe5f0453861ddcddadf9f7115d17ee404
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062271"
 ---
-# <a name="takeownership-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShip de la clase CodecFile de Win32 \_
+# <a name="takeownership-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShip de la clase CodecFile win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es realmente un directorio, **TakeOwnerShip** actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha infringido el uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

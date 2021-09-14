@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 0227335c2110590439873b965b2d1393a42dd575bf530ce83aae5228547fda26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bba12db8dbc1902adc5c64b4cc1726e081dfea70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119121481"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060618"
 ---
 # <a name="id3dxeffectstatemanagersetsamplerstate-method"></a>Método ID3DXEffectStateManager::SetSamplerState
 
@@ -89,7 +89,7 @@ El método implementado por el usuario debe devolver S \_ OK. Si se produce un e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

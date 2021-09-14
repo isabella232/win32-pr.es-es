@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d5b3a58775a984fe0d9be69d33a5eee0d0e2af1b6f1bd609f399614bf99cdc3f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a165ff60971cef3d2373e0f07b2abee554308279
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061769"
 ---
 # <a name="cbasepropertypagesetpagesite-method"></a>Método CBasePropertyPage.SetPageSite
 
@@ -64,7 +64,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método almacena el *puntero pPageSite* en la variable miembro [**CBasePropertyPage::m \_ pPageSite.**](cbasepropertypage-m-ppagesite.md)
 
@@ -79,7 +79,7 @@ El método almacena el *puntero pPageSite* en la variable miembro [**CBaseProper
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

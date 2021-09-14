@@ -1,5 +1,5 @@
 ---
-title: RwTexture3D::RWTexture3D Métodos de carga
+title: RWTexture3D::RWTexture3D Métodos de carga
 description: Lee datos de textura de RWTexture3D.
 ms.assetid: 850A2F93-96C1-4B6F-AFEF-D245791611B4
 keywords:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 602e02827629a86d6dafc0541c9614d2d0174e58583ca7ce48f15cad2e21f8e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9790f82674a7e87a6fc3f48d147c52fac8eae5a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240825"
 ---
-# <a name="rwtexture3dload-methods"></a>RWTexture3D::Load (Métodos)
+# <a name="rwtexture3dload-methods"></a>RWTexture3D::Load (métodos)
 
-Lee los datos de textura de [**rwtexture3D.**](sm5-object-rwtexture3d.md)
+Lee datos de textura de [**RWTexture3D.**](sm5-object-rwtexture3d.md)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -34,7 +34,7 @@ Lee los datos de textura de [**rwtexture3D.**](sm5-object-rwtexture3d.md)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

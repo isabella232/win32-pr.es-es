@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d39b679e8bf7e78cf7ce028d0bb440438770d0d0123516313fb418b2136ebc11
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bba7a684db0d40ebcfeec4a540989c4dab4c5dd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119437865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062151"
 ---
-# <a name="em_redo-message"></a>Mensaje \_ EM REDO
+# <a name="em_redo-message"></a>Mensaje \_ DE REDO DE EM
 
-Envía un **mensaje EM \_ REDO** a un control de edición enriquecido para volver a hacer la siguiente acción en la cola de rehacer del control.
+Envía un **mensaje \_ EM REDO** a un control de edición enriquecido para volver a hacer la siguiente acción en la cola de rehacer del control.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,21 +47,21 @@ No se usa; debe ser cero.
 
 Si la **operación de rehacer** se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
-Si se **produce un error en la** operación rehacer, el valor devuelto es cero.
+Si se produce un error **en la** operación de rehacer, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para determinar si hay alguna acción en la cola de rehacer del control, envíe el [**mensaje EM \_ CANREDO.**](em-canredo.md)
+Para determinar si hay alguna acción en la cola de rehacer del control, envíe el mensaje [**EM \_ CANREDO.**](em-canredo.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

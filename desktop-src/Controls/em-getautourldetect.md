@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d60fc8efdc6e554e379a9381239920cf70ef07ffca22240e62cfc6892ca2e636
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e68e4f2991c5f8780cb587594289674e07ec992
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062211"
 ---
 # <a name="em_getautourldetect-message"></a>Mensaje \_ EM GETAUTOURLDETECT
 
@@ -49,7 +49,7 @@ Si la detección automática de direcciones URL está activa, el valor devuelto 
 
 Si la detección automática de direcciones URL está inactiva, el valor devuelto es 0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando la detección automática de direcciones URL está activa, Microsoft Rich Edit comprueba constantemente el texto escrito para una dirección URL válida. Rich Edit reconoce las direcciones URL que comienzan con estos prefijos:
 
@@ -76,11 +76,11 @@ Rich Edit también reconoce los nombres de ruta de acceso estándar que comienza
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

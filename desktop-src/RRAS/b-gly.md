@@ -5,16 +5,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 69af0591-016f-4c50-b9ba-839629e87f75
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75ff579d01f75e630022927f65eb6158512d34720f58b00350b0c8028b7c1b4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73d47618e66185368dc6f334c87a11f914420e0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120030475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062776"
 ---
 # <a name="b-rras"></a>B (RRAS)
 
-[A](a-gly.md) B [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) F G H [I](i-gly.md) J K L M N O [P P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z
+[A](a-gly.md) B [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) F G H [I](i-gly.md) J K L M N O [P](p-gly.md) Q R [S](s-gly.md) T U V W X Y Z
 
 <dl> <dt>
 
@@ -37,7 +37,7 @@ BGP es un [*protocolo de puerta de enlace exterior.*](e-gly.md) BGP reenvía inf
 <span id="_mpr_brute_force_attack"></span><span id="_MPR_BRUTE_FORCE_ATTACK"></span>**ataque por fuerza bruta**
 </dt> <dd>
 
-Intento de poner en peligro un cifrado intentando todos los posibles.
+Un intento de poner en peligro un cifrado intentando todos los posibles.
 
 </dd> </dl>
 

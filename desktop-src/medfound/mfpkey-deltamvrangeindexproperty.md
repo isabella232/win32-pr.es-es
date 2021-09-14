@@ -1,17 +1,17 @@
 ---
 description: Especifica el método utilizado para codificar la información del vector de movimiento.
 ms.assetid: 22ffdb77-9266-42e5-be41-fc7457141bba
-title: MFPKEY_DELTAMVRANGEINDEX (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_DELTAMVRANGEINDEX propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7a21ac1a0bdaf859c93bca800d72f5e9ed155919bb07a24f5287b2436e57f94
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c72d923659e64c9a0dcab40811e31d7752924700
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120113345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257607"
 ---
-# <a name="mfpkey_deltamvrangeindex-property"></a>Propiedad MFPKEY \_ DELTAMVRANGEINDEX
+# <a name="mfpkey_deltamvrangeindex-property"></a>Propiedad DELTAMVRANGEINDEX de MFPKEY \_
 
 Especifica el método utilizado para codificar la información del vector de movimiento.
 
@@ -27,19 +27,19 @@ VT \_ I4
 
 0
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se establece esta propiedad, el codificador aumenta el intervalo de vectores de movimiento delta en los campos. La información del vector de movimiento solo es válida para los campos entrelazados.
 
-Esta propiedad puede establecerse en uno de los valores siguientes:
+Esta propiedad puede establecerse en uno de los siguientes valores:
 
 
 
 | Value | Descripción                                                                          |
 |-------|--------------------------------------------------------------------------------------|
 | 0     | Use el intervalo de vectores de movimiento delta existente.                                          |
-| 1     | Duplica el intervalo de vectores de movimiento delta en la dirección horizontal.                    |
-| 2     | Duplica el intervalo de vectores de movimiento delta en la dirección vertical.                      |
+| 1     | Doble el intervalo de vectores de movimiento delta en la dirección horizontal.                    |
+| 2     | Doble el intervalo de vectores de movimiento delta en la dirección vertical.                      |
 | 3     | Duplica el intervalo de vectores de movimiento delta en las direcciones horizontal y vertical. |
 
 
@@ -52,13 +52,13 @@ Esta propiedad puede establecerse en uno de los valores siguientes:
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: bf007541-7fea-423e-910b-fa5f45271608
 title: AnimationKey
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bad23a6cc519b0b0525cd0dac1b488184b3bf91e99359e252f44dca435ace529
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05728f124ae01962a1291547f8fe8b7fcebd175a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118806410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060778"
 ---
 # <a name="animationkey"></a>AnimationKey
 
@@ -31,7 +31,7 @@ Donde:
 -   nKeys: número de claves.
 -   keys: matriz de claves. Vea [**TimedFloatKeys**](timedfloatkeys.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

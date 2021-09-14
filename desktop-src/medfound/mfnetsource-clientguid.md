@@ -4,12 +4,12 @@ ms.assetid: 490a2b03-aba8-4510-80c5-ca12f4037747
 title: MFNETSOURCE_CLIENTGUID propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9585f5ac9cd69148272cb986746f6849aad4c3aa048b46baf2f75aeaba77c092
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc5df46741d4a0b9a6a125396b6f93dd32bfadf6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118738994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257735"
 ---
 # <a name="mfnetsource_clientguid-property"></a>Propiedad \_ MFNETSOURCE CLIENTGUID
 
@@ -43,13 +43,13 @@ Si no se establece o establece como **GUID \_ NULL,** Microsoft Media Foundation
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

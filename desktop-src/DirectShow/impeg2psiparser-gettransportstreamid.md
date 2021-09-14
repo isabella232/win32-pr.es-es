@@ -1,5 +1,5 @@
 ---
-description: 'Método IMpeg2PsiParser::GetTransportStreamId: la implementación de este método se proporciona como código de ejemplo con el SDK DirectShow. No se admite DirectShow API.'
+description: 'Método IMpeg2PsiParser::GetTransportStreamId: la implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No es una API de DirectShow compatible.'
 ms.assetid: 0c35abc0-984f-42df-a2a2-30cd400d4599
 title: IMpeg2PsiParser::GetTransportStreamId (método)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e78eabce23633029e4ef3dfe6c6777c586a5d74ed28ccfe466c89064851f8197
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a24253b021abacf398a3a169b63bbb2f01ec2354
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119791905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061067"
 ---
 # <a name="impeg2psiparsergettransportstreamid-method"></a>IMpeg2PsiParser::GetTransportStreamId (método)
 
-La implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No se admite DirectShow API.
+La implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No es una API de DirectShow compatible.
 
 El `GetTransportStreamId` método recupera el campo de identificador de flujo de transporte del \_ \_ PAT. El usuario define este valor y se puede usar para distinguir una secuencia de transporte determinada de otras secuencias de la misma red. Una secuencia de transporte contiene como máximo un PAT.
 
@@ -61,7 +61,7 @@ El método devuelve un **valor HRESULT.** Los valores posibles incluyen, entre o
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

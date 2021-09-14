@@ -1,6 +1,6 @@
 ---
 title: EN_MSGFILTER de notificación (Richedit.h)
-description: Notifica a la ventana primaria de un control de edición enriquecido un evento de teclado o mouse en el control. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
+description: Notifica a la ventana primaria de un control de edición enriquecido un evento de teclado o mouse en el control . Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 96cf0047-baae-46cd-82e8-ab6f3f353260
 keywords:
 - EN_MSGFILTER código de notificación Windows controles
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87d2cbe47af3d74deb4795946d58871b4729118db0e839027e78e05976ebf855
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 40ddb3e9b1d5314e2e981b00f0e0ef8e22974242
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119436715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062035"
 ---
-# <a name="en_msgfilter-notification-code"></a>Código de notificación EN \_ MSGFILTER
+# <a name="en_msgfilter-notification-code"></a>Código de notificación DE EN \_ MSGFILTER
 
-Notifica a la ventana primaria de un control de edición enriquecido un evento de teclado o mouse en el control. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Notifica a la ventana primaria de un control de edición enriquecido un evento de teclado o mouse en el control . Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,15 +41,15 @@ EN_MSGFILTER
 *lParam* 
 </dt> <dd>
 
-Estructura [**MSGFILTER que**](/windows/desktop/api/Richedit/ns-richedit-msgfilter) contiene información sobre el mensaje del teclado o del mouse. Si la ventana primaria modifica esta estructura y devuelve un valor distinto de cero, se procesa el mensaje modificado en lugar del original.
+Estructura [**MSGFILTER que**](/windows/desktop/api/Richedit/ns-richedit-msgfilter) contiene información sobre el teclado o el mensaje del mouse. Si la ventana primaria modifica esta estructura y devuelve un valor distinto de cero, se procesa el mensaje modificado en lugar del original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si el control debe procesar el evento de teclado o mouse.
+Devuelve cero si el control debe procesar el evento del teclado o del mouse.
 
-Devuelve un valor distinto de cero si el control debe omitir el evento de teclado o mouse.
+Devuelve un valor distinto de cero si el control debe omitir el evento del teclado o del mouse.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -60,8 +60,8 @@ Para recibir códigos de notificación EN MSGFILTER para eventos, especifique un
 | Marca                                                                             | Significado                                                |
 |----------------------------------------------------------------------------------|--------------------------------------------------------|
 | [**ENM \_ KEYEVENTS**](rich-edit-control-event-mask-flags.md)       | Para recibir códigos de notificación para eventos de teclado.     |
-| [**ENM \_ MOUSEEVENTS**](rich-edit-control-event-mask-flags.md)   | Para recibir códigos de notificación para eventos del mouse.        |
-| [**EVENTOS DE DESPLAZAMIENTO DE ENM \_**](rich-edit-control-event-mask-flags.md) | Para recibir códigos de notificación para un evento de rueda del mouse. |
+| [**EVENTOS MOUSE DE ENM \_**](rich-edit-control-event-mask-flags.md)   | Para recibir códigos de notificación para eventos del mouse.        |
+| [**ENM \_ SCROLLEVENTS**](rich-edit-control-event-mask-flags.md) | Para recibir códigos de notificación para un evento de rueda del mouse. |
 
 
 
@@ -75,11 +75,11 @@ Para recibir códigos de notificación EN MSGFILTER para eventos, especifique un
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

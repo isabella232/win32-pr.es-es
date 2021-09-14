@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 146c3736f7aaa89fc9a724d9dd7e4bfb58160e21e2de57f40a8e855c8a3c1446
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 823583beed6696d40803ccc098410dac053b8948
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061294"
 ---
 # <a name="cdrawimagefastrender-method"></a>Método CDrawImage.FastRender
 
@@ -53,13 +53,13 @@ Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-i
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El [**método CDrawImage::D rawImage**](cdrawimage-drawimage.md) llama a este método, pero solo si el asignador de la conexión es un [**objeto CImageAllocator.**](cimageallocator.md) En ese caso, se garantiza que el ejemplo multimedia es un [**objeto CImageSample.**](cimagesample.md) El **objeto CImageSample** usa la función **CreateDIBSection** para asignar memoria compartida para el mapa de bits, lo que permite dibujar la imagen mediante **BitBlt** o **StretchBlt.**
+El [**método CDrawImage::D rawImage**](cdrawimage-drawimage.md) llama a este método, pero solo si el asignador de la conexión es un [**objeto CImageAllocator.**](cimageallocator.md) En ese caso, se garantiza que el ejemplo multimedia es [**un objeto CImageSample.**](cimagesample.md) El **objeto CImageSample** usa la función **CreateDIBSection** para asignar memoria compartida para el mapa de bits, lo que permite dibujar la imagen mediante **BitBlt** o **StretchBlt.**
 
-Este método llama a **BitBlt si** los rectángulos de origen y targer coinciden exactamente, o **StretchBlt en caso** contrario.
+Este método llama a **BitBlt** si los rectángulos de origen y targer coinciden exactamente, o **StretchBlt en** caso contrario.
 
-Si el filtro no es propietario del asignador, el **método DrawImage** usa [**CDrawImage::SlowRender**](cdrawimage-slowrender.md) para dibujar la imagen.
+Si el filtro no posee el asignador, el método **DrawImage** usa [**CDrawImage::SlowRender**](cdrawimage-slowrender.md) para dibujar la imagen.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Si el filtro no es propietario del asignador, el **método DrawImage** usa [**CD
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

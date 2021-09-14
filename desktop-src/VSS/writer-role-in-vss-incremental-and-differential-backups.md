@@ -4,12 +4,12 @@ ms.assetid: 85c4e003-b531-4283-83aa-dd5cc53f35b1
 title: Rol escritor en copias de seguridad incrementales y diferenciales de VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3c84245c21a47ba5535eccdfcbf10e988cf72b30ea99ee92086a9ca8f65647
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f2cda57d907bed4572f0c0f71f9ee829bee18299
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241124"
 ---
 # <a name="writer-role-in-vss-incremental-and-differential-backups"></a>Rol escritor en copias de seguridad incrementales y diferenciales de VSS
 
@@ -21,9 +21,9 @@ Al controlar el evento Identify, los escritores establecen su arquitectura bási
 
 Un sistema de escritura indica qué operaciones admite en su documento de metadatos del escritor mediante la creación de una máscara de bits de valores DE ESQUEMA DE COPIA DE SEGURIDAD de [**VSS \_ \_**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema) y su paso al método [**IVssCreateWriterMetadata::SetBackupSchema.**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-setbackupschema) Con esto, un escritor puede indicar si admite lo siguiente:
 
--   Copias de seguridad incrementales **(INCREMENTAL \_ de VSS \_ BS)**
+-   Copias de seguridad **incrementales (INCREMENTAL \_ de VSS BS) \_**
 -   Copias de seguridad **diferenciales \_ (VSS BS \_ DIFFERENTIAL)**
--   No se pueden mezclar copias de seguridad incrementales y diferenciales (DIFERENCIAL INCREMENTAL EXCLUSIVO DE **\_ VSS \_ \_ \_ BS)**
+-   No se pueden mezclar copias de seguridad incrementales y diferenciales **(DIFERENCIAL \_ INCREMENTAL EXCLUSIVO \_ \_ \_ DE VSS BS)**
 -   Copias de seguridad incrementales y diferenciales mediante marcas de copia de seguridad **\_ (VSS BS \_ TIMESTAMPED)**
 -   Copias de seguridad incrementales y diferenciales en función de la información sobre la última modificación de un archivo (**\_ VSS BS \_ LAST \_ MODIFY**)
 
@@ -83,7 +83,7 @@ Al especificar un archivo diferenciado, un escritor usa [**IVssComponent::AddDif
 
 De hecho, un escritor puede agregar un archivo no agregado previamente a uno de sus conjuntos de componentes (por [**IVssCreateWriterMetadata::AddDatabaseFiles,**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabasefiles) [**IVssCreateWriterMetadata::AddDatabaseLogFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-adddatabaselogfiles)o [**IVssCreateWriterMetadata::AddFilesToFileGroup)**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addfilestofilegroup)a la copia de seguridad como un archivo diferenciado. Los archivos nuevos agregados a la copia de seguridad de esta manera deben estar en un volumen que ya se está copiando en la sombra para esta copia de seguridad.
 
-Normalmente, un escritor también especificará la hora de la última modificación al agregar un archivo diferenciado, en función del mecanismo de historial propio del escritor. Esta hora de última modificación, si se especifica, siempre debe ser utilizada por los solicitantes para determinar si un archivo debe incluirse en una copia de seguridad incremental o diferencial.
+Normalmente, un escritor también especificará la hora de la última modificación al agregar un archivo diferenciado, en función del mecanismo de historial propio del escritor. Esta última hora de modificación, si se especifica, siempre debe ser utilizada por los solicitantes para determinar si un archivo debe incluirse en una copia de seguridad incremental o diferencial.
 
 Un escritor puede optar por no especificar una hora de última modificación al agregar un archivo diferenciado a un conjunto de copia de seguridad incremental o diferencial. Si este es el caso, los solicitantes pueden usar sus propios mecanismos (por ejemplo, registros de copias de seguridad anteriores o información del sistema de archivos) para determinar si el archivo diferenciado debe incluirse en una copia de seguridad incremental o diferencial.
 
@@ -102,7 +102,7 @@ Si un solicitante tiene acceso a la marca de copia de seguridad de una copia de 
 
 A continuación, un escritor puede examinar esta marca de tiempo [**mediante IVssComponent::GetPreviousBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp).
 
-Tenga en cuenta que el solicitante simplemente almacena y devuelve la cadena que contiene la marca de copia de seguridad. No sabe nada sobre el formato de la cadena ni cómo usarlo. solo el escritor tiene esa información.
+Tenga en cuenta que el solicitante simplemente almacena y devuelve la cadena que contiene la marca de copia de seguridad. No sabe nada sobre el formato de la cadena ni cómo usarlo; solo el escritor tiene esa información.
 
 Un escritor puede optar por actualizar la marca de copia de seguridad actual mediante [**IVssComponent::SetBackupStamp**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-setbackupstamp) después de llamar a [**IVssComponent::GetPreviousBackupStamp,**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpreviousbackupstamp)registrando así en su propio formato la fecha de la operación de copia de seguridad incremental o diferencial actual.
 

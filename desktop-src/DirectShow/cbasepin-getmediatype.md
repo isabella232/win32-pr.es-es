@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cc202c3b6dbc570d063ef74619b266c2faa20cb74322b29e61626418412e2cb9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 186f2eddbedf4eb0565a4ca66ff4ed7e5b080090
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120044085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061347"
 ---
 # <a name="cbasepingetmediatype-method"></a>Método CBasePin.GetMediaType
 
@@ -74,7 +74,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la lista de tipos de medios preferidos del pin, este método devuelve el tipo con un valor de índice *de iPosition*. La [**clase CEnumMediaTypes**](cenummediatypes.md) llama a este método para enumerar los tipos de medios preferidos.
 
@@ -91,7 +91,7 @@ La clase base devuelve E \_ UNEXPECTED. Invalide este método en la clase deriva
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

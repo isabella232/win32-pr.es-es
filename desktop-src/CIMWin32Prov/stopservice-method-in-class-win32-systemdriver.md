@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 516eeae7907f03a31522620adb08eafaaa4cbbb7928fd0e305c936f19b3d4cb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb45a414ea9cc7198487dbb61d122722816f4728
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118172592"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062570"
 ---
 # <a name="stopservice-method-of-the-win32_systemdriver-class"></a>Método StopService de la clase \_ SystemDriver de Win32
 
@@ -84,7 +84,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**Propiedad** State) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** property) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -239,18 +239,18 @@ $Return = $usbPrintDriver.StopService()
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
-| Header<br/>                   | <dl> <dt>Sdoias.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Sdoias.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

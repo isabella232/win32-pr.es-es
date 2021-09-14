@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c33511d1f8a1b7ccf3657f31a0c3b997f7e1044f7425de9683f167d557b1dba9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1a8ca556c24295e2c4b04ab851610ef35ec9b715
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119827985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061437"
 ---
 # <a name="win32_systemprogramgroups-class"></a>Clase \_ SystemProgramGroups de Win32
 
 La clase WMI **de asociación \_ SystemProgramGroups** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y un grupo de programas lógicos.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ class Win32_SystemProgramGroups : Win32_SystemSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemProgramGroups de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa el grupo de programas lógicos en el
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemProgramGroups de Win32** se deriva de [**\_ SystemSetting de Win32.**](win32-systemsetting.md)
 
@@ -102,11 +102,11 @@ La **clase \_ SystemProgramGroups de Win32** se deriva de [**\_ SystemSetting de
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemSetting de Win32 \_**](win32-systemsetting.md)
+[**Win32 \_ SystemSetting**](win32-systemsetting.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

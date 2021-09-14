@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4fa8014d23bc488b4f0b8b0cc9b872dfdf4a56cced396cc22eefab5912df1706
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46e565f51d7c549f524f9e478b2a8326daf690a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062407"
 ---
 # <a name="cpospassthruget_rate-method"></a>Método CPosPassThru.get \_ Rate
 
@@ -64,7 +64,7 @@ Devuelve el **valor HRESULT** del pin conectado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

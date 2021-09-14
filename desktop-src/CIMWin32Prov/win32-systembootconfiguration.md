@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ad5b30d42e94391163a4a54836877f90415225d0ae697e719e6c088f432430cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 863e4103f7e87681e25ccf53679bfe006ed3ff75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118416758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061470"
 ---
 # <a name="win32_systembootconfiguration-class"></a>Clase SystemBootConfiguration de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_SystemBootConfiguration : Win32_SystemSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemBootConfiguration de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa la configuración de arranque del si
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemBootConfiguration de Win32** se deriva de [**\_ SystemSetting de Win32.**](win32-systemsetting.md)
 
@@ -92,7 +92,7 @@ La **clase \_ SystemBootConfiguration de Win32** se deriva de [**\_ SystemSettin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

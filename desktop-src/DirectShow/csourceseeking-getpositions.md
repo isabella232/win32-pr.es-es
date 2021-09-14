@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4b6f52d8d8b30a28d942d4395a465b9c7c49d0a23020ad212c81eb170d20ca0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d95013b12d1ee41867ac73920ca1f9b1ca0bdca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061708"
 ---
 # <a name="csourceseekinggetpositions-method"></a>Método CSourceSeeking.GetPositions
 
@@ -61,7 +61,7 @@ Puntero a una variable que recibe la posición de detenerse.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el *parámetro pCurrent,* este método devuelve el valor de la variable miembro [**CSourceSeeking::m \_ rtStart,**](csourceseeking-m-rtstart.md) que representa el tiempo de búsqueda más reciente, no la posición de streaming actual. Sin embargo, cuando una aplicación llama a **IMediaSeeking::GetPositions** a través del administrador de gráficos de filtros, los valores normalmente proceden de un filtro de representador, no de un filtro de origen.
 
@@ -76,7 +76,7 @@ Para el *parámetro pCurrent,* este método devuelve el valor de la variable mie
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

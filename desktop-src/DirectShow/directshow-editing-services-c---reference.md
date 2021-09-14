@@ -4,12 +4,12 @@ ms.assetid: 17da83d8-bd39-457c-b9cf-343cfec249f8
 title: DirectShow Referencia de C++ de Servicios de edición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97eace405d951d69cc14fb99445d74cca3ff0f0154f69f8eefa6140fd83d8fc1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 909821e2297c2d6219f68bca635aab32ed7fad66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062351"
 ---
 # <a name="directshow-editing-services-c-reference"></a>DirectShow Referencia de C++ de Servicios de edición
 
@@ -18,7 +18,7 @@ ms.locfileid: "119966645"
 
  
 
-Esta sección contiene toda la información de [referencia DirectShow editing services.](directshow-editing-services.md)
+Esta sección contiene toda la información de [DirectShow referencia de los servicios de edición.](directshow-editing-services.md)
 
 -   [Interfaces](interfaces-des.md)
 -   [Estructuras](structures.md)

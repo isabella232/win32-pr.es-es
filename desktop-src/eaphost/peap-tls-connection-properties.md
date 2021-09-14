@@ -4,16 +4,16 @@ description: Obtenga información sobre las propiedades de conexión PEAP-TLS. V
 ms.assetid: 1128b3f7-eba7-484e-a3d8-070d37e9c57f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be661834c6a1053d34ba5c6a8cee7f7d491537ce0153011772c1b29cf78ef89f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: efa368ca49b93cff8fa3cd60620ec075bfb8d3a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118784813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127240789"
 ---
 # <a name="peap-tls-connection-properties"></a>Propiedades de conexión PEAP-TLS
 
-Este ejemplo es una instancia del esquema heredado [eaptlsconnectionpropertiesv1.](eaptlsconnectionpropertiesv1schema-schema.md)
+Este ejemplo es una instancia del esquema [heredado eaptlsconnectionpropertiesv1.](eaptlsconnectionpropertiesv1schema-schema.md)
 
 ``` syntax
   <?xml version="1.0" ?> 

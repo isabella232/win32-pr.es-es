@@ -4,12 +4,12 @@ ms.assetid: 0e1b828f-1cdb-4199-bc42-5ad41af56222
 title: DirectShow Clases base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fa0c512449144a0d6a427b76ba8199ac967c8467d0274a150cb44522b81c534
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd237f06b4694c237bca36ebd7a8b3e3cba73d2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118653832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062354"
 ---
 # <a name="directshow-base-classes"></a>DirectShow Clases base
 

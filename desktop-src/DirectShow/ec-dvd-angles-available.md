@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: e95c692aed8ac6c709ff0db1d6056fc59219fa73f5aa2e4cfb9b31b2c1a03d94
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4d2abb17b329323cf4a21128da5dba927b48d4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061183"
 ---
-# <a name="ec_dvd_angles_available"></a>ÁNGULOS \_ DE DVD EC \_ \_ DISPONIBLES
+# <a name="ec_dvd_angles_available"></a>ÁNGULOS \_ DE DVD DE EC \_ \_ DISPONIBLES
 
 Indica si se reproduce un bloque angular y se pueden realizar cambios de ángulo.
 
@@ -42,9 +42,9 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los cambios de ángulo no están restringidos a los bloques angulares y la demostración del cambio de ángulo solo se puede ver en un bloque angular.
+Los cambios de ángulo no están restringidos a los bloques angulares y la expresión del cambio de ángulo solo se puede ver en un bloque angular.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Los cambios de ángulo no están restringidos a los bloques angulares y la demos
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

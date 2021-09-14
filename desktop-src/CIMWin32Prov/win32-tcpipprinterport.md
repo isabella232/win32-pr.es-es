@@ -31,16 +31,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b2861d12740f894cc17a91d6a3f4c2b6792d38f658063bc89474f3656a74b45f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a0b0f0cb73cc60ff117399a636b0ab8542fac6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061421"
 ---
 # <a name="win32_tcpipprinterport-class"></a>Clase TCPIPPrinterPort de Win32 \_
 
-La clase [WMI](../wmisdk/retrieving-a-class.md) **\_ WIN32 TCPIPPrinterPort** representa un punto de acceso del servicio TCP/IP.
+La **clase WMI \_ TCPIPPrinterPort** [de](../wmisdk/retrieving-a-class.md) Win32 representa un punto de acceso de servicio TCP/IP.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -69,7 +69,7 @@ class Win32_TCPIPPrinterPort : CIM_ServiceAccessPoint
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TCPIPPrinterPort de Win32** tiene estos tipos de miembros:
 
@@ -243,7 +243,7 @@ Imprimir directamente en un dispositivo o servidor de impresión.
 
 </dt> <dd>
 
-Lpr
+LPR
 
 Protocolo heredado, que finalmente se reemplaza por RAW.
 
@@ -422,7 +422,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**clave CIM, \_**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Nombre de clase de creación del sistema de ámbito.
@@ -504,7 +504,7 @@ Esta propiedad se hereda de [**CIM \_ ServiceAccessPoint.**](cim-serviceaccesspo
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ TCPIPPrinterPort de Win32** se deriva de [**CIM \_ ServiceAccessPoint,**](cim-serviceaccesspoint.md) que deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
@@ -543,7 +543,7 @@ function Remove-PrinterAndPort{
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

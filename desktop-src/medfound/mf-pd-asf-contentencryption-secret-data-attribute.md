@@ -4,14 +4,14 @@ ms.assetid: e6ce71d6-59cd-42da-906a-ab71f2bef16f
 title: MF_PD_ASF_CONTENTENCRYPTION_SECRET_DATA atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e628bf52aa08074473f14a84ee1d1fe39fe91c130aa9848be687601b864393a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28c960131e61e539fa417e1068b45974a24c42a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257823"
 ---
-# <a name="mf_pd_asf_contentencryption_secret_data-attribute"></a>Atributo \_ \_ \_ CONTENTENCRYPTION \_ SECRET \_ DATA de MF PD ASF
+# <a name="mf_pd_asf_contentencryption_secret_data-attribute"></a>Atributo \_ DE DATOS \_ \_ CONTENTENCRYPTION \_ SECRET \_ de MF PD ASF
 
 Contiene datos secretos para un archivo cifrado de formato de sistemas avanzados (ASF). Este atributo corresponde al campo Datos secretos del encabezado de cifrado de contenido, definido en la especificación de ASF.
 
@@ -19,7 +19,7 @@ Contiene datos secretos para un archivo cifrado de formato de sistemas avanzados
 
 Byte array
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -29,11 +29,11 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 

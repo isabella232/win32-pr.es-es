@@ -1,5 +1,5 @@
 ---
-description: El método SetUserName establece un nombre definido por la aplicación para el objeto.
+description: El método SetUserName establece un nombre definido por la aplicación para el objeto .
 ms.assetid: 6f071884-519a-465f-8273-ab1be58dda8b
 title: Método IAMTimelineObj::SetUserName (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0656428ad591372495170a6e7e688a593fe496e07d9f01e9dd3f348b9f527d69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ec39aece23d38be6fbe2e69f7ded8bc738e04c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118399670"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061634"
 ---
 # <a name="iamtimelineobjsetusername-method"></a>IamTimelineObj::SetUserName (método)
 
@@ -56,7 +56,7 @@ Cadena de caracteres anchos que contiene el nombre. Las cadenas de más de 256 c
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -83,10 +83,10 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 <dl> <dt>
 
-[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
+[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

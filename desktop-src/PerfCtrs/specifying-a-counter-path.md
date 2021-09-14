@@ -4,12 +4,12 @@ ms.assetid: d1f1a90c-425a-4606-b86d-2948305ea84a
 title: Specifying a Counter Path (Especificar una ruta de acceso de contador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a359762e4d959992bebd338c4b3ee29825c63b4cb081b70722c82fb3376b5d19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f3a92f94b4bf3d2252903d92785f43bb0cac110
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143808"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062877"
 ---
 # <a name="specifying-a-counter-path"></a>Specifying a Counter Path (Especificar una ruta de acceso de contador)
 
@@ -37,7 +37,7 @@ Si la instancia de este objeto también requiere un nombre de instancia primaria
 (Explorer/0)
 ```
 
-Si el objeto tiene varias instancias que tienen la misma cadena de nombre, se pueden indexar secuencialmente especificando el índice de instancia precedido por un signo de peral. Los índices de instancia se basan en 0. Si desea consultar la primera instancia, no incluya \# 0, solo tiene que especificar el nombre de la instancia. Para especificar la segunda instancia, use \# 1; para especificar la tercera instancia, use \# 2, y así sucesivamente. Por ejemplo:
+Si el objeto tiene varias instancias que tienen la misma cadena de nombre, se pueden indexar secuencialmente especificando el índice de instancia precedido por un signo de peral. Los índices de instancia se basan en 0. Si desea consultar la primera instancia, no incluya \# 0, simplemente especifique el nombre de la instancia. Para especificar la segunda instancia, use \# 1; para especificar la tercera instancia, use \# 2, y así sucesivamente. Por ejemplo:
 
 ``` syntax
 (Explorer/0#1)

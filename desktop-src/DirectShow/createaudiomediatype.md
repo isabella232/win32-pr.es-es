@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2eb9dc01a398a498252cca2f1f3af012608f8e0ca80c62800c56e4026c0b0a7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef4e525762d4b6928e6a9095fad34f3f4f2e96fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062408"
 ---
 # <a name="createaudiomediatype-function"></a>Función CreateAudioMediaType
 
@@ -69,7 +69,7 @@ Marca que indica si se va a inicializar el bloque de formato. Especifique **TRUE
 
 Devuelve E \_ OUTOFMEMORY si no se pudo asignar memoria para los datos de formato; En caso \_ contrario, es correcto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el *parámetro bSetFormat* es **TRUE,** el método asigna la memoria para el bloque de formato. Si el *parámetro pmt* ya contiene un bloque de formato asignado, se producirá una pérdida de memoria. Para evitar una pérdida de memoria, llame [**a FreeMediaType antes**](freemediatype.md) de llamar a esta función. Después de que el método vuelva a llamar **a FreeMediaType** para liberar el bloque de formato.
 
@@ -84,7 +84,7 @@ Si el *parámetro bSetFormat* es **TRUE,** el método asigna la memoria para el 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

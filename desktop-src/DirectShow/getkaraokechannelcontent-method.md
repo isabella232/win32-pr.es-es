@@ -4,12 +4,12 @@ ms.assetid: e36a88b8-7184-44a4-8e02-204440f651bc
 title: GetKaraokeChannelContent (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ef0353ebda6469627b5f41209b780fc1403c51940705be72d6acaa139d8320f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd35705f1fba65eaf5c6f7c67ea55078c68e5036
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119812495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061122"
 ---
 # <a name="getkaraokechannelcontent-method"></a>GetKaraokeChannelContent (método)
 
@@ -42,7 +42,7 @@ Especifica el canal como entero. Los valores posibles para cada canal son:
 
 
 
-| Valor  | Descripción    |
+| Value  | Descripción    |
 |--------|----------------|
 | 0x0001 | Guide Voz 1  |
 | 0x0002 | Guide Voz 2  |
@@ -63,14 +63,14 @@ Especifica el canal como entero. Los valores posibles para cada canal son:
 
 Devuelve un valor entero cuyos bits individuales especifican el contenido del canal de canal de Canal.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La numeración de canales de audio de DVD es de base cero, por lo que los canales 2, 3 y 4 son los canales auxiliares de canal. Una vez que el método vuelva, realice una operación AND bit a bit *en iContent* para determinar el contenido de cada canal. Dado que un único canal puede tener más de un tipo de contenido registrado en él, debe probar todos los valores posibles incluso después de encontrar una coincidencia.
 
 Una vez que el usuario conoce el contenido de cada canal, debe poder ajustar el volumen o activar o desactivar los canales individuales según sea necesario. Implemente esta funcionalidad en la aplicación mediante la [**propiedadAudioPresentationMode.**](karaokeaudiopresentationmode-property.md)
 
 > [!Note]  
-> Para reproducir discos de sonido, el descodificador de audio del sistema del usuario debe ser compatible con la implementación de DirectShow 8.
+> Para reproducir discos de disco, el descodificador de audio del sistema del usuario debe ser compatible con la implementación de DirectShow 8.
 
  
 

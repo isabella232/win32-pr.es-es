@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3ef3f84cce1bad88b0f1103be3584ff350afac0fd7047b5a75a5fb473a4bedcf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f93e3227051729f9d16e1f9ef8de464a14cca33b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118156993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062472"
 ---
 # <a name="cmediaeventgettypeinfo-method"></a>Método CMediaEvent.GetTypeInfo
 
-Recupera un objeto de información de tipos, que puede recuperar la información de tipo de una interfaz.
+Recupera un objeto de información de tipo, que puede recuperar la información de tipo de una interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ Escriba la información que se devolverá. Pase cero para recuperar información
 *lcid* 
 </dt> <dd>
 
-Identificador de configuración regional para la información de tipo. Para las clases que admiten nombres de miembros localizados, un objeto puede devolver información de tipo diferente para distintos idiomas. En el caso de las clases que no admiten nombres de miembros localizados, este parámetro se puede omitir.
+Identificador de configuración regional para la información de tipo. En el caso de las clases que admiten nombres de miembros localizados, un objeto puede devolver información de tipo diferente para distintos idiomas. En el caso de las clases que no admiten nombres de miembros localizados, este parámetro se puede omitir.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Dirección de un puntero al objeto de información de tipo solicitado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero E \_ si *pptinfo* no es válido. Devuelve TYPE \_ E \_ ELEMENTNOTFOUND si *itinfo* no es cero. Devuelve S \_ OK si se realiza correctamente. De lo contrario, devuelve **un HRESULT** de una de las llamadas para recuperar el tipo.
+Devuelve un puntero E \_ si *pptinfo* no es válido. Devuelve TYPE \_ E \_ ELEMENTNOTFOUND si *itinfo* no es cero. Devuelve S \_ OK si se realiza correctamente. De lo contrario, **devuelve un HRESULT** de una de las llamadas para recuperar el tipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Devuelve un puntero E \_ si *pptinfo* no es válido. Devuelve TYPE \_ E \_ ELEME
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

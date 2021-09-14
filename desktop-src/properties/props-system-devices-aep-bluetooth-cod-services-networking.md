@@ -1,19 +1,19 @@
 ---
-description: Bluetooth clase de redes de servicio de dispositivo.
+description: Bluetooth clase de redes de servicio de dispositivos.
 ms.assetid: 5c440c40-a0af-49d5-a4f8-25bfc62dc869
 title: System.Devices.Aep. Bluetooth.Cod.Services.Networking
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2cd11926e1108a4f61c5efb15601d2fb4b828632be9e5128772d96c2e192576
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ba7cdbba58a8b2e36ca1d6a912ca2476b7feaa2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257288"
 ---
 # <a name="systemdevicesaepbluetoothcodservicesnetworking"></a>System.Devices.Aep. Bluetooth.Cod.Services.Networking
 
-Bluetooth clase de redes de servicio de dispositivo.
+Bluetooth clase de redes de servicio de dispositivos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

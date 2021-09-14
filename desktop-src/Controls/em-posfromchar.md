@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e1d9d2dccb6ccf1bd80b44b2221f8628f13e595ee514074956e7869447d513
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d98968873ad006b2e91cf3add2429bf7630fae1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119437885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062152"
 ---
 # <a name="em_posfromchar-message"></a>Mensaje \_ DE EM POSFROMCHAR
 
@@ -43,7 +43,7 @@ Recupera las coordenadas de área de cliente de un carácter especificado en un 
 
 **Rich Edit 1.0 y 3.0:** Índice de base cero del carácter.
 
-**Editar controles y Rich Edit 2.0:** Este parámetro no se utiliza.
+**Editar controles y Rich Edit 2.0:** Este parámetro no se usa.
 
 </dd> </dl>
 
@@ -51,17 +51,17 @@ Recupera las coordenadas de área de cliente de un carácter especificado en un 
 
 **Rich Edit 1.0 y 3.0:** No se usa el valor devuelto.
 
-**Editar controles y Rich Edit 2.0:** El valor devuelto contiene las coordenadas del área de cliente del carácter. LOWORD [**contiene la**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) coordenada horizontal y [**hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene la coordenada vertical.
+**Editar controles y Rich Edit 2.0:** El valor devuelto contiene las coordenadas del área de cliente del carácter. El [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene la coordenada horizontal y [**hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene la coordenada vertical.
 
 ## <a name="remarks"></a>Observaciones
 
-Una coordenada devuelta puede ser un valor negativo si el carácter especificado no se muestra en el área de cliente del control de edición. Las coordenadas se truncan en valores enteros.
+Una coordenada devuelta puede ser un valor negativo si el carácter especificado no se muestra en el área cliente del control de edición. Las coordenadas se truncan en valores enteros.
 
-Si el carácter es un delimitador de línea, las coordenadas devueltas indican un punto justo después del último carácter visible de la línea. Si el índice especificado es mayor que el índice del último carácter del control, el control devuelve -1.
+Si el carácter es un delimitador de línea, las coordenadas devueltas indican un punto justo después del último carácter visible en la línea. Si el índice especificado es mayor que el índice del último carácter del control, el control devuelve -1.
 
-**Rich Edit 3.0 y versiones posteriores:** Por compatibilidad con versiones anteriores, Microsoft Rich Edit 3.0 admite la sintaxis usada por Microsoft Rich Edit 2.0. Si Microsoft Rich Edit 3.0 detecta que *wParam* no es un puntero [**POINTL**](/previous-versions//dd162807(v=vs.85)) válido, se supone que el mensaje se envió mediante la sintaxis de Microsoft Rich Edit 2.0. En este caso, usa el valor devuelto para devolver las coordenadas.
+**Rich Edit 3.0 y versiones posteriores:** Por compatibilidad con versiones anteriores, Microsoft Rich Edit 3.0 admite la sintaxis que usa Microsoft Rich Edit 2.0. Si Microsoft Rich Edit 3.0 detecta que *wParam* no es un puntero [**POINTL**](/previous-versions//dd162807(v=vs.85)) válido, se supone que el mensaje se envió mediante la sintaxis de Microsoft Rich Edit 2.0. En este caso, usa el valor devuelto para devolver las coordenadas.
 
-**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,11 +71,11 @@ Si el carácter es un delimitador de línea, las coordenadas devueltas indican u
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

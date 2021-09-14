@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0e8f292016d24de69f71f91391c3c0d028c05e9cfa9c9057509877424ab02c99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a8f495c87a86efc9d5625868c7f8fd4afd6ff1e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062378"
 ---
 # <a name="crendererinputpinendofstream-method"></a>Método CRendererInputPin.EndOfStream
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

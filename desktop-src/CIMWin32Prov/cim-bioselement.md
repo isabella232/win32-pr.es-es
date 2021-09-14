@@ -1,5 +1,5 @@
 ---
-description: La clase CIM BIOSElement representa el software de bajo nivel que se carga en el almacenamiento no volátil y se usa \_ para iniciar y configurar un sistema informático.
+description: La clase BIOSElement de CIM representa el software de bajo nivel que se carga en el almacenamiento no volátil y se usa \_ para iniciar y configurar un sistema informático.
 ms.assetid: c203244a-51e0-4733-a0bc-cf9b7957f364
 ms.tgt_platform: multiple
 title: CIM_BIOSElement clase (proveedores WMI CIMWin32)
@@ -31,19 +31,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b825d318f6a9d97f1041cd9e8baa391055c8f7ce24e935c6dd08708e4492ff6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21cd0d13d62f5cfa70f579110480b4c11c36b77d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061564"
 ---
 # <a name="cim_bioselement-class-cimwin32-wmi-providers"></a>CIM_BIOSElement clase (proveedores WMI CIMWin32)
 
-La **clase \_ CIM BIOSElement** representa el software de bajo nivel que se carga en el almacenamiento no volátil y se usa para iniciar y configurar un sistema informático.
+La **clase \_ BIOSElement de CIM** representa el software de bajo nivel que se carga en el almacenamiento no volátil y se usa para iniciar y configurar un sistema informático.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -75,7 +75,7 @@ class CIM_BIOSElement : CIM_SoftwareElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ BIOSElement de CIM** tiene estos tipos de miembros:
 
@@ -83,7 +83,7 @@ La **clase \_ BIOSElement de CIM** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ CIM BIOSElement** tiene estas propiedades.
+La **clase \_ BIOSElement de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -222,7 +222,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Manufacturer"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.2")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Manufacturer"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. BIOS del \| sistema DMTF \| 001.2")
 </dt> </dl>
 
 Fabricante del BIOS.
@@ -259,7 +259,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Fabricante y tipo de sistema operativo para un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 ("Other"). Cuando la **propiedad TargetOperatingSystem** tiene un valor de 1, esta propiedad debe tener un valor distinto de NULL. Para todos los **demás valores targetOperatingSystem,** esta propiedad es null.
+Fabricante y tipo de sistema operativo para un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 ("Other"). Cuando la **propiedad TargetOperatingSystem** tiene un valor de 1, esta propiedad debe tener un valor distinto de NULL. Para todos los **demás valores de TargetOperatingSystem,** esta propiedad es NULL.
 
 Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
@@ -277,7 +277,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.9")
 </dt> </dl>
 
-Si **es TRUE,** este es el BIOS principal del sistema del equipo.
+Si **es TRUE,** este es el BIOS principal del sistema informático.
 
 </dd> <dt>
 
@@ -326,7 +326,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Estado de un elemento de software.
@@ -364,7 +364,7 @@ Describe los detalles necesarios para una instalación correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado de ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
@@ -375,7 +375,7 @@ Describe los detalles necesarios para la ejecución correcta y los detalles (con
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento start.
+Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
 
 </dd> </dl>
 
@@ -395,7 +395,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -426,7 +426,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -440,14 +440,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -571,7 +571,7 @@ Att UNIX
 
 </dt> <dd>
 
-Abrir máquinas virtuales
+Apertura de MÁQUINAS VIRTUALES
 
 </dd> <dt>
 
@@ -609,7 +609,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -828,7 +828,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -974,7 +974,7 @@ Mac OS 9
 
 </dt> <dd>
 
-So de mano
+So De remanso
 
 </dd> <dt>
 
@@ -1031,19 +1031,19 @@ La versión del BIOS.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ BIOSElement de CIM** se deriva de CIM [**\_ SoftwareElement**](cim-softwareelement.md).
+La **clase \_ CIM BIOSElement** se deriva de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **\_ CIM BIOSElement**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1053,7 +1053,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

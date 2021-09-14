@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b9faf923cf6c771e95a7dfb4f0b04f896c54d79c6b5548e97850d867057b065b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 927dd6b2664c92ff07e94407fdc59fdd917363dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117834652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061517"
 ---
 # <a name="joindomainorworkgroup-method-of-the-win32_computersystem-class"></a>Método JoinDomainOrWorkgroup de la clase ComputerSystem win32 \_
 
 El **método JoinDomainOrWorkgroup** une un sistema informático a un dominio o grupo de trabajo.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -149,7 +149,7 @@ Permite una unión a un nuevo dominio incluso si el equipo ya está unido a un d
 
 realiza una unión no segura.
 
-Esta opción solicita una unión a un dominio a una cuenta creada previamente sin autenticarse con credenciales de usuario de dominio. Esta opción se puede usar junto con la opción **\_ NETSETUP MACHINE \_ PWD \_ PASSED.** En este caso, *Contraseña es* la contraseña de la cuenta de equipo creada previamente.
+Esta opción solicita una unión a un dominio a una cuenta creada previamente sin autenticarse con credenciales de usuario de dominio. Esta opción se puede usar junto con la opción **\_ NETSETUP MACHINE \_ PWD \_ PASSED.** En este caso, *Password es* la contraseña de la cuenta de equipo creada previamente.
 
 Antes de Windows Vista con SP1 y Windows Server 2008, una combinación no segura no se autenticaba en el controlador de dominio. Toda la comunicación se realizó mediante una sesión null (no autenticada). A partir de Windows Vista con SP1 y Windows Server 2008, el nombre y la contraseña de la cuenta de equipo se usan para autenticarse en el controlador de dominio.
 
@@ -164,7 +164,7 @@ Antes de Windows Vista con SP1 y Windows Server 2008, una combinación no segura
 
 Indica que el parámetro *Password especifica* una contraseña de cuenta de equipo local en lugar de una contraseña de usuario. Esta marca solo es válida para combinaciones no seguras, lo que debe indicar estableciendo también la marca NETSETUP \_ JOIN \_ UNSECURE.
 
-Si establece esta marca, después de que la operación de combinación se realiza correctamente, la contraseña de la máquina se establecerá en el valor de *Contraseña*, si ese valor es una contraseña de máquina válida.
+Si establece esta marca, después de que la operación de combinación se realiza correctamente, la contraseña de la máquina se establecerá en el valor de *Contraseña*, si ese valor es una contraseña de equipo válida.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Si establece esta marca, después de que la operación de combinación se realiz
 
 </dt> <dd>
 
-Indica que el nombre de entidad de seguridad de servicio (SPN) y las propiedades DnsHostName del objeto de equipo no se deben actualizar en este momento.
+Indica que el nombre de entidad de seguridad de servicio (SPN) y las propiedades DnsHostName del objeto de equipo no deben actualizarse en este momento.
 
 Normalmente, estas propiedades se actualizan durante la operación de combinación. En su lugar, estas propiedades se deben actualizar durante una llamada posterior al [**método Rename.**](rename-method-in-class-win32-computersystem.md) Estas propiedades siempre se actualizan durante la operación de cambio de nombre.
 
@@ -252,7 +252,7 @@ Al unirse al dominio, no fuerce el inicio del servicio Netlogon.
 
 </dt> <dd>
 
-Al unir el dominio solo para la unión sin conexión, establezca el nombre de host de la máquina de destino y el nombre NetBIOS.
+Al unirse al dominio solo para la unión sin conexión, establezca el nombre de host de la máquina de destino y el nombre NetBIOS.
 
 > [!Note]  
 > Esta marca se admite en Windows 7, Windows Server 2008 R2 y versiones posteriores.
@@ -306,7 +306,7 @@ Si se establece este bit, la función **JoinDomainOrWorkgroup** omitirá las mar
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un [código de error del sistema](/windows/desktop/Debug/system-error-codes), que puede incluir uno de los siguientes valores numéricos. Cualquier otro número indica que hubo un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
+Devuelve un [código de error del sistema](/windows/desktop/Debug/system-error-codes), que puede incluir uno de los siguientes valores numéricos. Cualquier otro número indica que hubo un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 <dl> <dt>
 
@@ -385,7 +385,7 @@ La máquina no está unida actualmente a un dominio.
 
 0x80041087
 
-*Se* especifican *Password y UserName,* pero el nivel de autenticación no es **RPC C \_ \_ \_ \_ AUTHN LEVEL PKT \_ PRIVACY**. Por Visual Basic, **se devuelve wbemErrEncryptedConnectionRequired.**
+*Se* especifican *Password y UserName,* pero el nivel de autenticación no es **RPC C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Por Visual Basic, **se devuelve wbemErrEncryptedConnectionRequired.**
 
 </dd> <dt>
 
@@ -396,13 +396,13 @@ La máquina no está unida actualmente a un dominio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al mover un equipo de un dominio a un grupo de trabajo, debe quitar el equipo del dominio (con una llamada a [**UnjoinDomainOrWorkgroup)**](unjoindomainorworkgroup-method-in-class-win32-computersystem.md)antes de llamar a este método para unirse a un grupo de trabajo (con una llamada a **JoinDomainOrWorkgroup**). Después de llamar a este método, reinicie el equipo afectado para aplicar los cambios.
 
-*UserName y* *Password se* pueden dejar **null.** Sin embargo, la autenticación de la conexión a WMI debe ser 6 en script o **WbemAuthenticationLevelPktPrivacy** en Visual Basic y otros lenguajes que puedan usar la bibliotecawbemdisp.dll. [](/windows/desktop/WmiSdk/using-the-wmi-scripting-type-library) Para obtener más información, vea [Establecer el nivel de seguridad de proceso predeterminado mediante VBScript.](/windows/desktop/WmiSdk/setting-the-default-process-security-level-using-vbscript)
+*UserName y* *Password se* pueden dejar **null.** Sin embargo, la autenticación de la conexión a WMI debe ser 6 en script o **WbemAuthenticationLevelPktPrivacy** en Visual Basic y otros lenguajes que puedan usar la [bibliotecawbemdisp.dll.](/windows/desktop/WmiSdk/using-the-wmi-scripting-type-library) Para obtener más información, vea [Establecer el nivel de seguridad de proceso predeterminado mediante VBScript.](/windows/desktop/WmiSdk/setting-the-default-process-security-level-using-vbscript)
 
-En C++, establezca la autenticación en **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY** en [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity), para todo el proceso o en [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket), para una conexión al proxy [**IWbemServices.**](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) Para obtener más información, vea [Establecer la autenticación mediante C++](/windows/desktop/WmiSdk/setting-authentication-using-c-) y Establecer la [seguridad en IWbemServices y otros servidores proxy.](/windows/desktop/WmiSdk/setting-the-security-on-iwbemservices-and-other-proxies)
+En C++, establezca la autenticación en **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY** en [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity), para todo el proceso o en [**CoSetProxyBlanket,**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket)para una conexión al proxy [**IWbemServices.**](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) Para obtener más información, vea [Establecer la autenticación mediante C++](/windows/desktop/WmiSdk/setting-authentication-using-c-) y Establecer la seguridad [en IWbemServices y otros servidores proxy.](/windows/desktop/WmiSdk/setting-the-security-on-iwbemservices-and-other-proxies)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -441,7 +441,7 @@ ReturnValue = objComputer.JoinDomainOrWorkGroup(strDomain, _
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

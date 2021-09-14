@@ -1,5 +1,5 @@
 ---
-description: Descomprime el archivo de datos lógicos (o directorio) que se especifica en la ruta de acceso del objeto. Este método es una versión extendida del método Uncompress y se hereda de CIM \_ LogicalFile.
+description: Descomprime el archivo de datos lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método Uncompress y se hereda de CIM \_ LogicalFile.
 ms.assetid: 30b62930-1d4a-47c0-8b57-b460edb5dbd0
 ms.tgt_platform: multiple
 title: Método UncompressEx de la CIM_DataFile clase
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: df3ded05474904ef76c9ee6911e87e168bcdbc9874224cf402b0bcd5adf5681f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0d11585a834ecc357447394ce09b73698bf2de86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062564"
 ---
-# <a name="uncompressex-method-of-the-cim_datafile-class"></a>Método UncompressEx de la clase \_ DataFile de CIM
+# <a name="uncompressex-method-of-the-cim_datafile-class"></a>Método UncompressEx de la clase DataFile de \_ CIM
 
-El **método UncompressEx** descomprime el archivo de datos lógicos (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método [**Uncompress**](uncompress-method-in-class-cim-datafile.md) y se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
+El **método UncompressEx** descomprime el archivo de datos lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método [**Uncompress**](uncompress-method-in-class-cim-datafile.md) y se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ uint32 UncompressEx(
 *StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo (o directorio) en el que se ha fallado el método. Este parámetro es **NULL** si el método se realiza correctamente.
+Nombre del archivo (o directorio) en el que se ha error en el método. Este parámetro es **NULL** si el método se realiza correctamente.
 
 </dd> <dt>
 
@@ -68,13 +68,13 @@ Si *se usa StartFileName,* *Recursive* también debe establecerse en true.
 *Recursiva* \[ En\]
 </dt> <dd>
 
-Si **es TRUE,** el método también se aplica de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia [**de Cim \_ DataFile.**](cim-datafile.md) En el caso de las instancias de archivo, este parámetro se omite.
+Si **es TRUE,** el método también se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia [**de \_ DataFile de CIM.**](cim-datafile.md) En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Archivo de inicio no válido.
 **17**
 </dt> <dd>
 
-Privilegios no mantenidos.
+Privilegio no mantenido.
 
 </dd> <dt>
 
@@ -169,11 +169,11 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI implementa el método **UncompressEx** [**en CIM \_ DataFile.**](cim-datafile.md)
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -189,14 +189,14 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**CIM \_ DataFile**](uncompressex-method-in-class-cim-datafile.md)
+[**Archivo de datos CIM \_**](uncompressex-method-in-class-cim-datafile.md)
 </dt> <dt>
 
-[**CIM \_ DataFile**](cim-datafile.md)
+[**Archivo de datos CIM \_**](cim-datafile.md)
 </dt> <dt>
 
 [Tareas wmi: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)

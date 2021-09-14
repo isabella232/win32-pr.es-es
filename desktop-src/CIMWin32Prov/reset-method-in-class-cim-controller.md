@@ -2,7 +2,7 @@
 description: El método Reset de la clase \_ cim controller solicita un restablecimiento del dispositivo lógico.
 ms.assetid: 98ec2010-4ce1-4aa8-941f-947714de8e7b
 ms.tgt_platform: multiple
-title: Método Reset de la CIM_Controller de datos
+title: Método Reset de la CIM_Controller clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 19dc12db2e504eeebca38038ee23510d12e55d0829b473f8537437f0126ed79c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a1585f153e16e7ffa7133871064f4ff7e1277243
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062628"
 ---
 # <a name="reset-method-of-the-cim_controller-class"></a>Método Reset de la clase \_ cim controller
 
 El **método Reset** de la clase cim controller solicita un \_ restablecimiento del dispositivo lógico. Este método se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y algún otro valor si se produjo un error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor. Para obtener más información, vea [Crear proveedores WMI.](/windows/desktop/WmiSdk/creating-wmi-providers)
 
@@ -57,7 +57,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -67,7 +67,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

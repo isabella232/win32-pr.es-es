@@ -4,16 +4,16 @@ ms.assetid: 5fd72be3-4ff5-4c93-8055-abe247f3c856
 title: DirectShow Referencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7325fb2ee4f96ded98c7657e88e5d7eb8258c977f10b1fbfc3b557bf70b82370
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dfbefe8d2b9dc2991523954d7775885ccffd4021
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062335"
 ---
 # <a name="directshow-reference"></a>DirectShow Referencia
 
-Esta sección contiene información de referencia para los filtros y las API DirectShow principales.
+Esta sección contiene información de referencia para el núcleo DirectShow API y filtros.
 
 -   [DirectShow Filtros](directshow-filters.md)
 -   [Interfaces](interfaces.md)

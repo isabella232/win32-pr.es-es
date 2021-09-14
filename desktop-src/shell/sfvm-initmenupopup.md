@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: fd69d19f753c1c72c1e0c143a0aface2cdb234cb2ace8c87d559834b97bbf0f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f9a2a169b232fe3ad16eeee8816536ed81c74dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119592325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256880"
 ---
 # <a name="sfvm_initmenupopup-message"></a>Mensaje \_ SFVM INITMENUPOPUP
 
@@ -55,7 +55,7 @@ Identificador del menú.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El objeto de vista de carpeta del sistema envía este mensaje cuando se selecciona un menú, pero antes de que se muestre. Procese este mensaje si, por ejemplo, necesita habilitar o deshabilitar los comandos de menú. El menú emergente puede ser:
 
@@ -75,7 +75,7 @@ El objeto de vista de carpeta del sistema envía este mensaje cuando se seleccio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: c041d094-8165-446f-bf77-0d53b728fe7a
 title: Diseño de las claves del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4473027b2612d16b3c6daee4f8e708d90b993397b133db111aa55c58e9c4ceb0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5783a9f083f639912188f418238f46a5d45ed922
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119502304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061026"
 ---
 # <a name="layout-of-the-registry-keys"></a>Diseño de las claves del Registro
 

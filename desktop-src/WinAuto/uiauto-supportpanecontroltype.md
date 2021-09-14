@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6b335496d8d40d20ccc68f6bc2b048c87ff608dd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474261"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242307"
 ---
 # <a name="pane-control-type"></a>Tipo de control Panel
 
@@ -34,7 +34,7 @@ En este tema se proporciona información sobre microsoft Automatización de la i
 
 El **tipo** de control Pane es para las regiones potencialmente desplazables que tienen contenido dispare. Se usa para representar un objeto dentro de un marco o ventana de documento. Los usuarios pueden navegar entre los controles de panel y dentro del contenido del panel actual. Los controles de panel representan un nivel de agrupación inferior al de ventanas o documentos, pero por encima de los controles individuales. El usuario navega entre paneles presionando TAB, F6 o CTRL+TAB, dependiendo del contexto.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, las propiedades, los patrones de control y los eventos necesarios para el tipo **de** control Pane. Los Automatización de la interfaz de usuario se aplican a todos los controles de panel en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo **de** control Pane. Los Automatización de la interfaz de usuario se aplican a todos los controles de panel en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -47,7 +47,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de panel y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el árbol Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de panel y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario árbol, vea [Información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
 
 
 
@@ -69,7 +69,7 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor      | Notas                                                                                                                                                                                                                                                                                                                 |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value      | Notas                                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AccessKeyPropertyId de UIA \_**](uiauto-automation-element-propids.md)                       | Vea las notas. | Si una combinación de claves específica proporciona el foco al panel, esa información debe exponerse a través de esta propiedad.                                                                                                                                                                                                      |
 | [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                          |
@@ -77,8 +77,8 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas. | Esta propiedad expone un punto en el que se puede hacer clic del control de panel que hace que el enfoque se sitúe en el panel cuando se hace clic en él.                                                                                                                                                                                                |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Panel**   |                                                                                                                                                                                                                                                                                                                       |
 | [**HelpTextPropertyId de UIA \_**](uiauto-automation-element-propids.md)                         | Vea las notas. | El texto de ayuda de los controles de panel debe explicar el propósito del marco y cómo se relaciona con otros fotogramas. Es necesaria una descripción si el propósito y la relación de los fotogramas no están claros del valor de la propiedad [**\_ NamePropertyId de UIA.**](uiauto-automation-element-propids.md) |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de panel siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                                                    |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de panel siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                                                                                                                                                                                    |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control de panel siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                                                    |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control de panel siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                                                                                                                                                                                    |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                                                                                                                                             |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas. | Los controles de panel normalmente no tienen una etiqueta estática. Si hay una etiqueta de texto estático, se debe exponer a través de esta propiedad.                                                                                                                                                                                      |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Pane. El valor predeterminado es "panel" para en-US o inglés (Estados Unidos).                                                                                                                                                                                        |
@@ -107,7 +107,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 ## <a name="required-events"></a>Eventos necesarios
 
-En la tabla siguiente se enumeran los Automatización de la interfaz de usuario que los controles de panel son necesarios para admitir. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario eventos que los controles de panel son necesarios para admitir. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
@@ -131,14 +131,14 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 ## <a name="pane-control-type-example"></a>Ejemplo de tipo de control de panel
 
-En la imagen siguiente se muestra un control que implementa el tipo **de** control Pane.
+En la imagen siguiente se muestra un control que implementa el tipo de control **Pane.**
 
 ![captura de pantalla que muestra un ejemplo de un control de panel](images/panexmpl.jpg)
 
 
 
 
-| Automatización de la interfaz de usuario árbol de control: Vista de control | Automatización de la interfaz de usuario árbol de contenido: vista de contenido | 
+| Automatización de la interfaz de usuario árbol: Vista de control | Automatización de la interfaz de usuario árbol de contenido: vista de contenido | 
 |-----------------------------------|-----------------------------------|
 | <ul><li>Panel<ul><li>Tree (patrón de desplazamiento)<ul><li>TreeItem</li><li>...</li></ul></li></ul></li><li>Panel<ul><li>Editar (patrón de desplazamiento)</li></ul></li></ul> | <ul><li>Panel<ul><li>Tree (patrón de desplazamiento)<ul><li>TreeItem</li><li>...</li></ul></li><li>Panel<ul><li>Editar (patrón de desplazamiento)</li></ul></li></ul></li></ul> | 
 

@@ -3,7 +3,7 @@ title: HDM_SETUNICODEFORMAT mensaje (Commctrl.h)
 description: 'HDM_SETUNICODEFORMAT mensaje: establece la marca de formato de caracteres UNICODE para el control.'
 ms.assetid: 18161fe5-c779-4be0-9e7a-1b5948e42b80
 keywords:
-- HDM_SETUNICODEFORMAT mensaje Controles de Windows
+- HDM_SETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d32ffa5f7f90ab266c52c67899dbff3be0d51123
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061970"
 ---
 # <a name="hdm_setunicodeformat-message"></a>Mensaje \_ SETUNICODEFORMAT de HDM
 
@@ -43,7 +43,7 @@ Juego de caracteres utilizado por el control . Si este valor es distinto de cero
 
 Devuelve la marca de formato Unicode anterior para el control .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodeformat.md) obtener una explicación de este mensaje.
 
@@ -51,10 +51,10 @@ Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodefor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
 | Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

@@ -10,15 +10,15 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: 40e9f795c800a3a688f3b032db53cba755849db6
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256934"
 ---
 # <a name="profiles-directory"></a>Directorio de perfiles
 
-El sistema almacena información de perfil de usuario en un directorio específico, que tiene nombres diferentes en distintas versiones de Windows: "Documentos y Configuración" en Windows XP y "Usuarios" en Windows Vista y versiones posteriores. Para obtener la ruta de acceso del directorio profiles, use la [**función GetProfilesDirectory.**](/windows/desktop/api/Userenv/nf-userenv-getprofilesdirectorya)
+El sistema almacena la información de perfil de usuario en un directorio específico, que tiene nombres diferentes en diferentes versiones de Windows: "Documentos y Configuración" en Windows XP y "Usuarios" en Windows Vista y versiones posteriores. Para obtener la ruta de acceso del directorio profiles, use la [**función GetProfilesDirectory.**](/windows/desktop/api/Userenv/nf-userenv-getprofilesdirectorya)
 
 El directorio profiles contiene los siguientes subdirectorios para perfiles de usuario.
 

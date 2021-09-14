@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Ntddvdeo.h
-ms.openlocfilehash: ec4bb5200378f9f530913f26d33bfbd485d81ae184c7b478a51c90bca18d95da
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0c679f352012eea66b80335bc3ad1547501dd92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062852"
 ---
-# <a name="ioctl_video_set_display_brightness-control-code"></a>Código de control DISPLAY BRIGHTNESS de IOCTL \_ VIDEO \_ SET \_ \_
+# <a name="ioctl_video_set_display_brightness-control-code"></a>Código de control DISPLAY BRIGHTNESS del CONJUNTO DE \_ \_ VÍDEO \_ \_ DE IOCTL
 
 Establece los niveles actuales de retroiluminación de CA y controlador de dominio.
 
@@ -104,7 +104,7 @@ Si *lpOverlapped no* es **NULL** (E/S superpuesta), *lpBytesReturned* puede ser 
 
 Puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Si *hDevice se* abrió con la marca \_ FILE FLAG \_ OVERLAPPED, *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, la operación se realiza como una operación superpuesta (asincrónica). Si el dispositivo se abrió con la marca OVERLAPPED DE FILE FLAG y \_ \_ *lpOverlapped* es **NULL,** la función produce un error de manera impredecible.
+Si *hDevice se* abrió con la marca \_ FILE FLAG \_ OVERLAPPED, *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, la operación se realiza como una operación superpuesta (asincrónica). Si el dispositivo se abrió con la marca FILE FLAG OVERLAPPED y lpOverlapped es NULL, la función produce un error \_ \_ de manera imprevisible.  
 
 Si *hDevice* se abrió sin especificar la marca \_ FILE FLAG \_ OVERLAPPED, *lpOverlapped* se omite y [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) no vuelve hasta que se ha completado la operación o hasta que se produce un error.
 
@@ -137,11 +137,11 @@ Como alternativa, puede definir este código de control de la siguiente manera:
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp1 \[\]<br/>                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Ntddvdeo.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntddvdeo.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

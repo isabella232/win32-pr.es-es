@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1db0ba4e4bf505c5fb1b746b84cae71dcc621635a0a33b4a533ce8551486fe6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8780ed79650a90a8d85ee8025dbe97e9af36aa1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062076"
 ---
 # <a name="em_setparaformat-message"></a>Mensaje \_ EM SETPARAFORMAT
 
@@ -32,7 +32,7 @@ Establece el formato de párrafo para la selección actual en un control de edic
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza; debe ser cero.
+Este parámetro no se usa; debe ser cero.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Este parámetro no se utiliza; debe ser cero.
 
 Puntero a una [**estructura PARAFORMAT**](/windows/desktop/api/Richedit/ns-richedit-paraformat) que especifica los nuevos atributos de formato de párrafo. Solo se cambian los atributos especificados por el **miembro dwMask.**
 
-Microsoft Rich Edit 2.0 y versiones posteriores: este parámetro puede ser un puntero a una estructura [**PARAFORMAT2,**](/windows/desktop/api/Richedit/ns-richedit-paraformat2) que es una extensión de la [**estructura PARAFORMAT.**](/windows/desktop/api/Richedit/ns-richedit-paraformat) Antes de enviar **el mensaje EM \_ SETPARAFORMAT,** establezca el miembro **cbSize** de la estructura para indicar la versión de la estructura.
+Microsoft Rich Edit 2.0 y versiones posteriores: este parámetro puede ser un puntero a una estructura [**PARAFORMAT2,**](/windows/desktop/api/Richedit/ns-richedit-paraformat2) que es una extensión de la [**estructura PARAFORMAT.**](/windows/desktop/api/Richedit/ns-richedit-paraformat) Antes de enviar **el \_ mensaje EM SETPARAFORMAT,** establezca el miembro **cbSize** de la estructura para indicar la versión de la estructura.
 
 </dd> </dl>
 
@@ -59,11 +59,11 @@ Si se produce un error en la operación, el valor devuelto es cero.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

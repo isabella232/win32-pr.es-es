@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2b6970b056706e7443cc38793a9c050d4f93c5ebd86556ce58aff23d4e9e83e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f6888b234b87a48fc89f70c0db36122cbf7289ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062380"
 ---
 # <a name="crendererinputpincrendererinputpin-constructor"></a>Constructor CRendererInputPin.CRendererInputPin
 
@@ -76,7 +76,7 @@ Puntero a una cadena de caracteres anchos que contiene el identificador de pin.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

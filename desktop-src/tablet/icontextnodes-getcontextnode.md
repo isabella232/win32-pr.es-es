@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 5543faa9b0c66fa8a68775b8b76c25b50378b8cd705189831cbff7983ea7c3c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec907fdcac5a1ed18cca54c79a876959868f2ecc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118044475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256749"
 ---
 # <a name="icontextnodesgetcontextnode-method"></a>IContextNodes::GetContextNode (método)
 
@@ -58,7 +58,7 @@ Puntero al [**IContextNode al**](icontextnode.md) que se hace referencia en el �
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppContextNode* cuando ya no necesite usar el nodo de contexto.
@@ -70,7 +70,7 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 En este ejemplo se muestra un método, `ExploreContextNode` , que examina un [**IContextNode**](icontextnode.md). El método hace lo siguiente:
 
 -   Obtiene el tipo del nodo de contexto.
--   Examina propiedades específicas del tipo de nodo llamando a un método auxiliar, si el nodo de contexto es un nodo de lápiz, sugerencia de análisis o reconocedor personalizado sin clasificar.
+-   Examina propiedades específicas del tipo de nodo mediante una llamada a un método auxiliar, si el nodo de contexto es un nodo de lápiz, sugerencia de análisis o reconocedor personalizado sin clasificar.
 -   Examina cada subnodo mediante una llamada a sí mismo, si el nodo tiene subnodos.
 -   Examina los datos de trazo del nodo llamando a un método auxiliar, si el nodo es un nodo hoja de entrada de lápiz.
 
@@ -180,16 +180,16 @@ HRESULT CMyClass::ExploreContextNode(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

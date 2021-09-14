@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9be1896c39e06c25bf06e033d74a17107b3e194a43b1c574e1dcb7f9a456413
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25cb4e119731c41130e1c19fdea2f74882796435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118411849"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061858"
 ---
 # <a name="lvm_editlabel-message"></a>Mensaje LVM \_ EDITLABEL
 
@@ -45,7 +45,7 @@ Comienza la edición en contexto del texto del elemento de vista de lista especi
 
 Devuelve el identificador al control de edición que se usa para editar el texto del elemento si se realiza correctamente o **NULL** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el usuario completa o cancela la edición, el control de edición se destruye y el identificador ya no es válido. Puede crear subclases del control de edición, pero no debe destruirlo.
 
@@ -57,11 +57,11 @@ Si *wParam es* -1, se envía [un código de notificación \_ ENDLABELEDIT de LVN
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LVM \_ EDITLABELW** (Unicode) y **LVM \_ EDITLABELA** (ANSI)<br/>               |
 
 

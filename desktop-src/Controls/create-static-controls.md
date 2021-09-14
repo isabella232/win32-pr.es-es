@@ -4,12 +4,12 @@ description: En el ejemplo de esta sección se muestra cómo crear un control es
 ms.assetid: D2DA38CB-360C-49EC-90BC-9AFA88C4B751
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ef4bdb4cce808ab3f8f8133a731c7f4ef5638bb1fbf9fd45370e4304d0138d0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 217135a6590fcee60286d21f00233916c4eba967
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119826390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061393"
 ---
 # <a name="how-to-create-static-controls"></a>Cómo crear controles estáticos
 
@@ -21,7 +21,7 @@ En el ejemplo de esta sección se muestra cómo crear un control estático anima
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -98,7 +98,7 @@ INT_PTR CALLBACK StaticDlgProc(HWND hDlg, UINT message, WPARAM wParam,
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El identificador del control de icono estático (ICONO ESTÁTICO de IDI) se define en un archivo de encabezado global y los iconos se cargan \_ desde los recursos de la \_ aplicación.
 

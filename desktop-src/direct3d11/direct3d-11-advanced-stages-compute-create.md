@@ -5,11 +5,11 @@ ms.assetid: 6114dd90-626b-4c9e-9da5-7d2d33153e79
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: eea5e0ab6309dd441d33fc20b13d0ef31642b62f
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060842"
 ---
 # <a name="how-to-create-a-compute-shader"></a>Cómo: Crear un sombreador de proceso
 

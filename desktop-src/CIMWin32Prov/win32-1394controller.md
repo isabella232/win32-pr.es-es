@@ -39,12 +39,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15db06f20fde204a25e38ae5b7f321cba00859d6cbff14fef3e9b759a1d16590
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c788469e258a79e70bcc8311c26b43e1f24c26e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119546595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062254"
 ---
 # <a name="win32_1394controller-class"></a>Clase Win32 \_ 1394Controller
 
@@ -84,7 +84,7 @@ class Win32_1394Controller : CIM_Controller
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ 1394Controller** tiene estos tipos de miembros:
 
@@ -965,7 +965,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1170,7 +1170,7 @@ Esta propiedad se hereda del [**controlador CIM. \_**](cim-controller.md)
 
 <span id="Power"></span><span id="power"></span><span id="POWER"></span>
 
-**Energía** (21)
+**Potencia** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -1345,7 +1345,7 @@ Esta propiedad se hereda del [**controlador CIM. \_**](cim-controller.md)
 
 <span id="SIR__serial_infrared_"></span><span id="sir__serial_infrared_"></span><span id="SIR__SERIAL_INFRARED_"></span>
 
-**MRE (serie)** (46)
+**MRE (serial desarroba)** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -1571,7 +1571,7 @@ Esta propiedad se hereda del [**controlador CIM. \_**](cim-controller.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase Win32 \_ 1394Controller** se deriva del [**controlador CIM \_**](cim-controller.md).
 
@@ -1702,7 +1702,7 @@ Time of Last Reset          :
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

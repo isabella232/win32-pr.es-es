@@ -3,7 +3,7 @@ title: Elemento HelpButton
 description: Representa el control Botón de ayuda.
 ms.assetid: 24c709da-539e-4ea0-bd3e-d3fbd72dfb97
 keywords:
-- Elemento HelpButton Windows cinta de opciones
+- Elemento HelpButton Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: f138b615b0ae4a4e7a163364938808d945b60eb5
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623501"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256442"
 ---
 # <a name="helpbutton-element"></a>Elemento HelpButton
 
@@ -77,7 +77,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -118,7 +118,7 @@ En esta sección de código se muestra la declaración del control **HelpButton.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

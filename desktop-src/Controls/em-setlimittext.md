@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98105c3384c2f218c13ad39da7be0828a601e8d3e166edbf2e3ef02553cf88de
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b66d4e03b5c1824ab501226482fcf51fb9121cba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119437537"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062092"
 ---
 # <a name="em_setlimittext-message"></a>Mensaje \_ EM SETLIMITTEXT
 
@@ -36,7 +36,7 @@ El **mensaje EM \_ SETLIMITTEXT** es idéntico al mensaje [**EM \_ LIMITTEXT.**]
 *wParam* 
 </dt> <dd>
 
-Número máximo de **TCHAR** que el usuario puede especificar. Para el texto ANSI, este es el número de bytes; Para el texto Unicode, este es el número de caracteres. Este número no incluye el carácter nulo de terminación.
+Número máximo de **TCHAR que** el usuario puede especificar. Para el texto ANSI, este es el número de bytes; Para el texto Unicode, este es el número de caracteres. Este número no incluye el carácter nulo de terminación.
 
 **Controles de edición enriquecciones:** Si este parámetro es cero, la longitud del texto se establece en 64 000 caracteres.
 
@@ -73,11 +73,11 @@ Para los controles de edición de una sola línea, el límite de texto es 0x7FFF
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

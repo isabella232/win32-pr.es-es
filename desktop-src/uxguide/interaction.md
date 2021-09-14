@@ -1,34 +1,34 @@
 ---
 title: Interacción
-description: La interacción es la variedad de formas en que los usuarios interactúan con la aplicación, como la función táctil, el teclado, el mouse, entre otras. Use estas directrices para crear experiencias intuitivas y distintivas optimizadas para el uso táctil, pero que funcionen de forma coherente en todos los dispositivos de entrada.
+description: La interacción es la variedad de maneras en que los usuarios interactúan con la aplicación, como la función táctil, el teclado, el mouse, entre otras. Use estas directrices para crear experiencias intuitivas y distintivas optimizadas para la función táctil, pero que funcionen de forma coherente en todos los dispositivos de entrada.
 ms.assetid: 1509c885-f4dc-4cf9-86a3-cc6754d3b4a0
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 09991d9b1c16c0605c89a695beb14c1117cb54fe8a5de1e2a805f6717070b1d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 869034e8d7cc8b9d7023e1511482dae203c14b49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117853292"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256521"
 ---
 # <a name="interaction"></a>Interacción
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-La interacción es la variedad de formas en que los usuarios interactúan con la aplicación, como la función táctil, el teclado, el mouse, entre otras. Use estas directrices para crear experiencias intuitivas y distintivas optimizadas para el uso táctil, pero que funcionen de forma coherente en todos los dispositivos de entrada.
+La interacción es la variedad de maneras en que los usuarios interactúan con la aplicación, como la función táctil, el teclado, el mouse, entre otras. Use estas directrices para crear experiencias intuitivas y distintivas optimizadas para la función táctil, pero que funcionen de forma coherente en todos los dispositivos de entrada.
 
 ## <a name="design-for-a-touch-first-experience"></a>Diseño para una experiencia táctil
 
 Ante todo, diseña tu aplicación teniendo en mente que el principal método de entrada de los usuarios será táctil. Si usa los controles de plataforma, la compatibilidad con touchpad, mouse y pen/stylus no requiere ninguna programación adicional, ya Windows proporciona esto de forma gratuita.
 
-Pero ten presente que una interfaz de usuario optimizada para entrada táctil no es siempre mejor que una interfaz de usuario tradicional. Ambos proporcionan ventajas y desventajas exclusivas de la tecnología y la aplicación. En el paso a una interfaz de usuario táctil, es importante comprender las diferencias principales entre la entrada táctil (incluido el touchpad), el lápiz/lápiz, el mouse y el teclado. No tome propiedades y comportamientos conocidos del dispositivo de entrada por concedidos, ya que la entrada táctil en Windows 8 hace algo más que simplemente emular esa funcionalidad.
+Pero ten presente que una interfaz de usuario optimizada para entrada táctil no es siempre mejor que una interfaz de usuario tradicional. Ambos proporcionan ventajas y desventajas exclusivas de la tecnología y la aplicación. En el paso a una interfaz de usuario táctil, es importante comprender las diferencias principales entre la entrada táctil (incluido el touchpad), el lápiz/lápiz, el mouse y la entrada de teclado. No tome propiedades y comportamientos de dispositivos de entrada conocidos por concedidos, ya que la función táctil Windows 8 hace más que simplemente emular esa funcionalidad.
 
 Como pronto descubrirá, la entrada táctil requiere un enfoque diferente para el diseño de la interfaz de usuario.
 
 **Compara los requisitos de la interacción táctil**
 
-En esta tabla se muestran algunas de las diferencias entre los dispositivos de entrada que se deben tener en cuenta al diseñar aplicaciones de la Windows táctiles.
+En esta tabla se muestran algunas de las diferencias entre los dispositivos de entrada que debe tener en cuenta al diseñar aplicaciones optimizadas para Windows store.
 
 
 
@@ -62,23 +62,23 @@ Aquí se proporcionan algunas directrices generales de interacción del usuario 
 
 ## <a name="visuals-for-feedback"></a>Objetos visuales para comentarios
 
-Los comentarios visuales adecuados durante las interacciones con la aplicación ayudan a los usuarios a reconocer, aprender y adaptarse a la forma en que la aplicación y los comentarios visuales de Windows pueden indicar interacciones correctas, retransmitir el estado del sistema, mejorar la sensación de control, reducir errores, ayudar a los usuarios a comprender el sistema y el dispositivo de entrada y fomentar la interacción.
+Los comentarios visuales adecuados durante las interacciones con la aplicación ayudan a los usuarios a reconocer, aprender y adaptarse a cómo la aplicación interpreta sus interacciones y los comentarios visuales de Windows pueden indicar interacciones correctas, retransmitir el estado del sistema, mejorar la sensación de control, reducir errores, ayudar a los usuarios a comprender el sistema y el dispositivo de entrada y fomentar la interacción.
 
 La información visual es esencial cuando el usuario usa la entrada táctil para llevar a cabo actividades que requieren exactitud y precisión en lo que respecta a ubicación. Muestra información siempre que se detecte entrada táctil para ayudar al usuario a entender cualquier regla personalizada de selección de destinos que defina la aplicación y los controles correspondientes.
 
 ## <a name="optimize-for-accuracy"></a>Optimización para la precisión
 
-La entrada táctil implica todo el área de contacto del dedo. Esta geometría de contacto se usa para determinar el objeto de destino más probable. Ajuste el tamaño de los controles para garantizar una interfaz de usuario cómoda con objetos y controles que son fáciles y seguros de tener como destino.
+La entrada táctil implica todo el área de contacto del dedo. Esta geometría de contacto se usa para determinar el objeto de destino más probable. Ajuste el tamaño de los controles para garantizar una interfaz de usuario cómoda con objetos y controles de destino fáciles y seguros.
 
-Tamaño, espacio y posición de los controles para ayudar a eliminar la oclusión de los dedos y las manos, donde la interacción del usuario en sí oculta la interfaz de usuario.
+Tamaño, espacio y posición de los controles para ayudar a eliminar la oclusión de dedos y manos, donde la interacción del usuario oculta la interfaz de usuario.
 
 Coloque los menús, los elementos emergentes y la información sobre herramientas sobre el área de contacto siempre que sea posible.
 
-## <a name="constrain-for-confidence"></a>Restricción de confianza
+## <a name="constrain-for-confidence"></a>Restricción para la confianza
 
 Evite o minimice las interacciones desordenada mediante restricciones de interfaz de usuario.
 
--   Los puntos de ajuste pueden facilitar la detenerse en las ubicaciones deseadas. Los puntos de acoplamiento especifican paradas lógicas en el contenido de tu aplicación. Desde el punto de vista cognitivo, los puntos de ajuste actúan como un mecanismo de paginación para el usuario y minimizan la agotamiento por deslizamiento excesivo, deslizamiento o rotación. Con ellos, puede controlar la entrada imprecisa del usuario y asegurarse de que se muestra un subconjunto específico de contenido o información clave.
+-   Los puntos de ajuste pueden facilitar la detenerse en las ubicaciones deseadas. Los puntos de acoplamiento especifican paradas lógicas en el contenido de tu aplicación. Desde el punto de vista cognitivo, los puntos de ajuste actúan como mecanismo de paginación para el usuario y minimizan la molestia de un deslizamiento excesivo, un deslizamiento o una rotación. Con ellos, puede controlar la entrada de usuario imprecisa y asegurarse de que se muestra un subconjunto específico de contenido o información clave.
 -   "raíles" direccionales que resaltan el eje de movimiento (vertical u horizontal).
 
 ## <a name="avoid-timed-interactions"></a>Evitar interacciones con tiempo
@@ -89,5 +89,5 @@ Para determinar qué comando se ejecutará, las interacciones temporales suelen 
 
 Las interacciones que afectan directamente a los objetos y mimetizan las interacciones de la vida real son más intuitivas y fáciles de detectar y recordar. No dependen de interacciones oscuras o abstractas.
 
-**Nota:** Una excepción a esto es cuando se usan interacciones con tiempo específicas para ayudar en el aprendizaje y la exploración (por ejemplo, mantener presionado). El uso de las descripciones adecuadas y las indicaciones visuales tiene un gran efecto en el uso de interacciones avanzadas.
+**Nota:** Una excepción a esto es cuando se usan interacciones con tiempo específicas para ayudar en el aprendizaje y la exploración (por ejemplo, mantener presionado). El uso de descripciones adecuadas e indicaciones visuales tiene un gran efecto en el uso de interacciones avanzadas.
 

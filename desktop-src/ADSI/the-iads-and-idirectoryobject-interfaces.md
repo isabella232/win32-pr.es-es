@@ -6,15 +6,15 @@ ms.tgt_platform: multiple
 keywords:
 - ADSI de IADs , acerca de
 - IDirectoryObject ADSI , acerca de
-- ADSI ADSI , using, IADs e IDirectoryObject interfaces
+- ADSI ADSI , using, IADs e interfaces IDirectoryObject
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dccfa643c0076224abece6f449f20caf5a4de5d378c03d37cf0e2248ed5a50b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32dfef47fe1c66e4303725deecec14fe93d1fd92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117838391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062759"
 ---
 # <a name="the-iads-and-idirectoryobject-interfaces"></a>Interfaces IAD e IDirectoryObject
 

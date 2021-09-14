@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemUsers Association de Win32 relaciona un equipo y una cuenta de usuario en ese sistema.
+description: La clase WMI de asociación SystemUsers de Win32 relaciona \_ un sistema informático y una cuenta de usuario en ese sistema.
 ms.assetid: 0f6cba69-86f7-4795-a47d-6fb8ed0a00b8
 ms.tgt_platform: multiple
-title: Win32_SystemUsers (clase)
+title: Win32_SystemUsers clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,15 +17,15 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: a2239983d5b9c080c60d301a557b5487f8cf7fcf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061422"
 ---
-# <a name="win32_systemusers-class"></a>\_Clase Win32 SystemUsers
+# <a name="win32_systemusers-class"></a>Clase SystemUsers de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemUsers** Association de Win32 relaciona un equipo y una cuenta de usuario en ese sistema.
+La clase WMI **de asociación \_ SystemUsers** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y una cuenta de usuario en ese sistema.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -40,7 +40,7 @@ class Win32_SystemUsers : CIM_SystemComponent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemUsers de Win32** tiene estos tipos de miembros:
 
@@ -61,32 +61,32 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa el sistema del equipo que contiene la cuenta de usuario.
+Referencia a la instancia de que representa el sistema de equipo que contiene la cuenta de usuario.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Win32 \_ cuentadeusuario**
+Tipo de datos: **Win32 \_ UserAccount**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ cuentadeusuario")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ UserAccount")
 </dt> </dl>
 
-Referencia a la instancia de que representa la cuenta de usuario en el sistema del equipo.
+Referencia a la instancia de que representa la cuenta de usuario en el sistema informático.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La **clase \_ SystemUsers de Win32** se deriva de [**\_ SystemComponent de CIM**](cim-systemcomponent.md).
+La **clase \_ SystemUsers de Win32** se deriva de [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,17 +96,17 @@ La **clase \_ SystemUsers de Win32** se deriva de [**\_ SystemComponent de CIM**
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3994c9cef1f645dc9c1129876b9144471caf9f608f5911641b180deae437194
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49c5794da93821db840a48facbba45540da9249a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241071"
 ---
 # <a name="editboxfontface"></a>EDITBOX.fontFace
 
@@ -31,7 +31,7 @@ El **atributo fontFace** especifica o recupera la fuente del texto en el control
 
 Este atributo es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo puede ser el nombre de cualquier fuente válida disponible en Windows. Reproductor de Windows Media admitirá la instalación de fuentes, así que elija una fuente que sepa que estará en el sistema previsto.
 
@@ -47,7 +47,7 @@ Si el **fontFace** especificado no está disponible en el sistema del usuario, e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

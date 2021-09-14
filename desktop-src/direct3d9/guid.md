@@ -1,17 +1,17 @@
 ---
 description: Define un GUID que se puede usar en otras plantillas.
 ms.assetid: dbfdd307-310f-4c80-b4aa-f16a81a9a372
-title: GUID (DirectX 9)
+title: Guid (DirectX 9)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e83e45d6e993153cf293a2ad55080c74f2e6049d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537227"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060641"
 ---
-# <a name="guid-directx-9"></a>GUID (DirectX 9)
+# <a name="guid-directx-9"></a>Guid (DirectX 9)
 
 Define un GUID que se puede usar en otras plantillas.
 
@@ -26,14 +26,14 @@ template Guid
 } 
 ```
 
-Donde los parámetros forman el formato de almacenamiento binario para un GUID:
+Donde los parámetros forman juntos el formato de almacenamiento binario para un GUID:
 
--   valor de datos de entero de 32 bits sin signo de Data1
--   data2: valor de datos de entero sin signo de 16 bits
--   valor de datos de entero de 16 bits sin signo de data3
+-   data1: valor de datos enteros de 32 bits sin signo
+-   data2: valor de datos enteros de 16 bits sin signo
+-   data3: valor de datos enteros de 16 bits sin signo
 -   data4: una matriz de caracteres sin signo
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c1054ffe0c016c5e06159a13cbdf68d5cfa7521e96727867a74d25a635888165
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a4eb931a0155518ad9644ebb1cce0b604be80602
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062663"
 ---
-# <a name="rename-method-of-the-win32_codecfile-class"></a>Método Rename de la clase \_ CodecFile win32
+# <a name="rename-method-of-the-win32_codecfile-class"></a>Método Rename de la clase CodecFile de Win32 \_
 
 El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Rename** cambia el nombre del archivo de códec especificado en la ruta de acceso del objeto. No se admite un cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 Rename(
 *FileName* 
 </dt> <dd>
 
-Nombre nuevo completo del archivo (o directorio). Ejemplo: c: \\ temp \\newfile.txt.
+Nuevo nombre completo del archivo (o directorio). Ejemplo: c: \\ temp \\newfile.txt.
 
 </dd> </dl>
 
@@ -121,7 +121,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Ha habido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -160,14 +160,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**CodecFile de Win32 \_**](win32-codecfile.md)
+[**CódecFile de \_ Win32**](win32-codecfile.md)
 </dt> </dl>
 
  

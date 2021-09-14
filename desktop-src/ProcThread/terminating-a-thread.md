@@ -4,12 +4,12 @@ ms.assetid: 633e5d0c-e9d8-4f9a-9411-17cbe9e2e6e4
 title: Terminación de un subproceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef64729db5490ebdab3ba759b34a105c31d2cbc421a404d07b041aa9b611ba08
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ada421356666316072aabff8281787cc140ad114
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062794"
 ---
 # <a name="terminating-a-thread"></a>Terminación de un subproceso
 
@@ -38,7 +38,7 @@ Un subproceso se ejecuta hasta que se produce uno de los siguientes eventos:
 
 El código de salida de un subproceso es el valor especificado en la llamada a [**ExitThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread), [**ExitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess), [**TerminateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread)o [**TerminateProcess,**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess)o el valor devuelto por la función de subproceso.
 
-Si [**exitThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread)finaliza un subproceso , el sistema llama a la función de punto de entrada de cada archivo DLL adjunto con un valor que indica que el subproceso se está desasociando del archivo DLL (a menos que llame a la [**función DisableThreadLibraryCalls).**](/windows/win32/api/libloaderapi/nf-libloaderapi-disablethreadlibrarycalls) Si [**exitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess)finaliza un subproceso , las funciones de punto de entrada de DLL se invocan una vez para indicar que el proceso se está desasociando. Los archivos DLL no se notifican cuando [**terminateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) o TerminateProcess finalizan [**un subproceso.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess) Para obtener más información sobre los archivos DLL, vea [Bibliotecas de vínculos dinámicos.](../dlls/dynamic-link-libraries.md)
+Si [**exitThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread)finaliza un subproceso , el sistema llama a la función de punto de entrada de cada archivo DLL adjunto con un valor que indica que el subproceso se está desasociando del archivo DLL (a menos que llame a la [**función DisableThreadLibraryCalls).**](/windows/win32/api/libloaderapi/nf-libloaderapi-disablethreadlibrarycalls) Si [**exitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess)finaliza un subproceso , las funciones de punto de entrada del archivo DLL se invocan una vez para indicar que el proceso se está desasociando. Los archivos DLL no se notifican cuando [**terminateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) o TerminateProcess finalizan [**un subproceso.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess) Para obtener más información sobre los archivos DLL, vea [Bibliotecas de vínculos dinámicos.](../dlls/dynamic-link-libraries.md)
 
 Las [**funciones TerminateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) y [**TerminateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess) solo se deben usar en circunstancias extremas, ya que no permiten que los subprocesos se limpien, no notifican a los archivos DLL adjuntos y no liberan la pila inicial. Además, los identificadores de los objetos que pertenecen al subproceso no se cierran hasta que finaliza el proceso. Los pasos siguientes proporcionan una solución mejor:
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f02fa02dd04720a130bf6303927fed64aadc53f4f90acc70a60e2c0cf7afd7ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b86f3df8de5224e79ca4e15ea18409e13972ca5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120047175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061993"
 ---
 # <a name="hdm_getitemdropdownrect-message"></a>Mensaje \_ GETITEMDROPDOWNRECT de HDM
 
@@ -45,9 +45,9 @@ Puntero a una [**estructura RECT**](/windows/win32/api/windef/ns-windef-rect) qu
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El elemento de encabezado debe tener el **estilo HDF \_ SPLITBUTTON**.
 
@@ -59,11 +59,11 @@ El elemento de encabezado debe tener el **estilo HDF \_ SPLITBUTTON**.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

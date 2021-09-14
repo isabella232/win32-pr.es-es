@@ -1,7 +1,7 @@
 ---
 description: Obtenga información sobre el método de constructor CMediaPosition.CMediaPosition (Ctlutil.h). Este método usa los parámetros "pName" y "pUnk".
 ms.assetid: 18a7785c-30c6-43b8-9a41-542a8424522c
-title: Constructor CMediaPosition.CMediaPosition (Ctlutil.h):pName, pUnk parameters
+title: Constructor CMediaPosition.CMediaPosition (Ctlutil.h):pName, parámetros pUnk
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0df3337c07ed678354515bdf0c665a5d6157f158ac6c2370a8981d8e5028b27e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e65f034e5f8857b21bc706bce45aa74c3c3cf966
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634814"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062469"
 ---
 # <a name="cmediapositioncmediaposition-constructor-ctlutilh---pname-punk-parameters"></a>Constructor CMediaPosition.CMediaPosition (Ctlutil.h): pName, parámetros pUnk
 
@@ -46,7 +46,7 @@ CMediaPosition(
 *pName* 
 </dt> <dd>
 
-Puntero al nombre del objeto para fines de depuración. Asigne este parámetro en la memoria estática.
+Puntero al nombre del objeto para fines de depuración. Asigne este parámetro en memoria estática.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Puntero al propietario de este objeto o **NULL** si el objeto no se agrega.
 | Encabezado | Ctlutil.h (incluir Secuencias.h) |
 | Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

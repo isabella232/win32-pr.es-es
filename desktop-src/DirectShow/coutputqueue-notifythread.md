@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d96fa39c912502234e7ff513badfd787032a41fd1f951b6d89f79194a6d4e72b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7bb5f965bac15e99140955e8ee2519feaadfef85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073729"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062440"
 ---
 # <a name="coutputqueuenotifythread-method"></a>Método COutputQueue.NotifyThread
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Mantenga la sección crítica antes de llamar a este método.
 
@@ -59,7 +59,7 @@ Mantenga la sección crítica antes de llamar a este método.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

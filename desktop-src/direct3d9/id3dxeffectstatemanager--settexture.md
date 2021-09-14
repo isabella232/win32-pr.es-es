@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 96ed2d8abfd7cb815292c81e6cc9feb2ae84c184cded3b5c5a808dbb4456598f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b395c19b65bb39b8328da24f727292f7dbe2a0f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118521251"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060617"
 ---
 # <a name="id3dxeffectstatemanagersettexture-method"></a>Método ID3DXEffectStateManager::SetTexture
 

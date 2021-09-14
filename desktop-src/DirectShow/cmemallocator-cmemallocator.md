@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9ef77a05eefc84975539bdc4e61b534a7ed5ee71d00e029bdf7ef2af8c19e666
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1151572c32efe69cceb89e7a5ea5a045955b5f43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061260"
 ---
 # <a name="cmemallocatorcmemallocator-constructor"></a>Constructor CMemAllocator.CMemAllocator
 
@@ -76,7 +76,7 @@ Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o er
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

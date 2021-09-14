@@ -4,12 +4,12 @@ ms.assetid: 9e80783e-9641-4cbd-9c28-a8efe6b9efaa
 title: Funciones de canalización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af0ef895fe8b987f19f025b6a21ef4c3a5dc3cb24db5458595c25708066e8a78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2413157ca76af56b5344327e1d3a9e93f86253f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118481609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242181"
 ---
 # <a name="pipe-functions"></a>Funciones de canalización
 

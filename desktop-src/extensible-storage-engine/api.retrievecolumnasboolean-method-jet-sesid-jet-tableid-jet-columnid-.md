@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0fa19d0088d7b558099ea1b100eda65fbd5f51d8c871f7f9779f66b838f5d441
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2f7f38841248910bd23dd15b6cec06a638640d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117718153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242241"
 ---
 # <a name="apiretrievecolumnasboolean-method-jet_sesid-jet_tableid-jet_columnid"></a>Método Api.RetrieveColumnAsBoolean (JET_SESID, JET_TABLEID, JET_COLUMNID)
 

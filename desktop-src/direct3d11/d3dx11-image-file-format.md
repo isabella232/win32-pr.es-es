@@ -1,6 +1,6 @@
 ---
 title: D3DX11_IMAGE_FILE_FORMAT enumeración (D3DX11tex.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Formatos de archivo de imagen admitidos por las funciones D3DX11Createxxx y D3DX11Savexxx.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Formatos de archivo de imagen admitidos por las funciones D3DX11Createxxx y D3DX11Savexxx.
 ms.assetid: 89fa9ab8-3be0-4dc5-a533-94edb01df36a
 keywords:
 - D3DX11_IMAGE_FILE_FORMAT enumeración Direct3D 11
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e34d3ab49987d499114c4b9eee695bfad02055fbbef785a955407e97843208f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 730ce59bb8a07f3fd8ef78bbeb27b4d01d198f7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118536969"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060879"
 ---
 # <a name="d3dx11_image_file_format-enumeration"></a>Enumeración D3DX11 \_ IMAGE \_ FILE \_ FORMAT
 
@@ -31,7 +31,7 @@ ms.locfileid: "118536969"
 
 Formatos de archivo de imagen admitidos por las funciones D3DX11Createxxx y D3DX11Savexxx.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -56,14 +56,14 @@ typedef enum D3DX11_IMAGE_FILE_FORMAT {
 <span id="D3DX11_IFF_BMP"></span><span id="d3dx11_iff_bmp"></span>**D3DX11 \_ IFF \_ BMP**
 </dt> <dd>
 
-Windows de archivo de mapa de bits (BMP). Contiene un encabezado que describe la resolución del dispositivo en el que se creó el rectángulo de píxeles, las dimensiones del rectángulo, el tamaño de la matriz de bits, una paleta lógica y una matriz de bits que define la relación entre los píxeles de la imagen de mapa de bits y las entradas de la paleta lógica. La extensión de archivo para este formato es .bmp.
+Windows formato de archivo de mapa de bits (BMP). Contiene un encabezado que describe la resolución del dispositivo en el que se creó el rectángulo de píxeles, las dimensiones del rectángulo, el tamaño de la matriz de bits, una paleta lógica y una matriz de bits que define la relación entre los píxeles de la imagen de mapa de bits y las entradas de la paleta lógica. La extensión de archivo para este formato es .bmp.
 
 </dd> <dt>
 
 <span id="D3DX11_IFF_JPG"></span><span id="d3dx11_iff_jpg"></span>**D3DX11 \_ IFF \_ JPG**
 </dt> <dd>
 
-Formato de archivo comprimido del Grupo de expertos en fotografía conjunta (JPEG). Especifica la compresión variable de los archivos de documento de imagen de color RGB de 24 bits y de escala de Tagged Image File Format gris de 8 bits (TIFF). La extensión de archivo para este formato es .jpg.
+Formato de archivo comprimido del Grupo de expertos de fotografía conjunta (JPEG). Especifica la compresión variable de los archivos de documento de imagen TIFF (color RGB de 24 bits) Tagged Image File Format escala de grises de 8 bits. La extensión de archivo para este formato es .jpg.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Formato de archivo portable de gráficos de red (PNG). Formato de mapa de bits n
 <span id="D3DX11_IFF_DDS"></span><span id="d3dx11_iff_dds"></span>**D3DX11 \_ IFF \_ DDS**
 </dt> <dd>
 
-Formato de archivo de superficie de DirectDraw (DDS). Almacena texturas, texturas de volumen y mapas de entornos cúbicas, con o sin niveles de mapa mipmap y con o sin compresión de píxeles. La extensión de archivo para este formato es .dds.
+Formato de archivo de superficie DirectDraw (DDS). Almacena texturas, texturas de volumen y mapas de entornos cúbicas, con o sin niveles de mapa mipmap, y con o sin compresión de píxeles. La extensión de archivo para este formato es .dds.
 
 </dd> <dt>
 
@@ -107,11 +107,11 @@ Para que funcione correctamente, **D3DX11 \_ IFF \_ WMP** requiere que inicialic
 <span id="D3DX11_IFF_FORCE_DWORD"></span><span id="d3dx11_iff_force_dword"></span>**D3DX11 \_ IFF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte [Tipos de mapas de bits (GDI+) para](../gdiplus/-gdiplus-types-of-bitmaps-about.md) obtener más información sobre algunos de estos formatos.
 

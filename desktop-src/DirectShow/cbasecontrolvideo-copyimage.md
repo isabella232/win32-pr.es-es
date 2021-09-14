@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 20e427a9c8b146dc1398443df06cbb8a3fb58452e3bbabd0a6291428f960a79c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23ada87e77d3c3441f489abed2e7af86a2a556ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061790"
 ---
 # <a name="cbasecontrolvideocopyimage-method"></a>Método CBaseControlVideo.CopyImage
 
@@ -85,7 +85,7 @@ Puntero al rectángulo de vídeo de origen.
 
 Si el *parámetro pVideoImage* es **NULL,** el parámetro *pBufferSize* se rellena con el número de bytes que el búfer de salida necesita para almacenar la imagen. Si el búfer pasado es demasiado pequeño o la función miembro no puede asignar suficiente memoria, la función miembro devuelve E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función miembro recupera la imagen del ejemplo y la copia en el búfer de salida. La sección de vídeo copiada en el búfer de salida refleja el rectángulo de origen que se establece a través de la interfaz [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) (aunque no refleja el rectángulo de destino).
 
@@ -100,7 +100,7 @@ La función miembro recupera la imagen del ejemplo y la copia en el búfer de sa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

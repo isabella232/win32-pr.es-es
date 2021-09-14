@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d37158d71a74726e9bf27e76ffedb076f99b7380ffcca4edfa95928767eedbf4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75e2e6bd7fa05480603f30e68eeaf0487918ae7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073639"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062430"
 ---
 # <a name="coutputqueuethreadproc-method"></a>Método COutputQueue.ThreadProc
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método COutputQueue::InitialThreadProc**](coutputqueue-initialthreadproc.md) llama a este método, que implementa el bucle de subproceso principal. Dentro del bucle , el método realiza los pasos siguientes:
 
@@ -66,7 +66,7 @@ El subproceso finaliza cuando la variable miembro [**COutputQueue::m \_ bTermina
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

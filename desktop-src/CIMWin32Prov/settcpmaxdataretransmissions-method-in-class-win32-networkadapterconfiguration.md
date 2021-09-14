@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 07484f07ab5c4a53da5b044f409a59c4ac37f07717875cd80f44eb625bdf2041
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 59998888eb2aed170b626fb4cb61780cbe0cb6e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061496"
 ---
 # <a name="settcpmaxdataretransmissions-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpMaxDataRetransmissions de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpMaxDataRetransmissions** se usa para establecer el número de veces que TCP retransmite un segmento de datos individual antes de anular la conexión.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no se requiere reinicio.
+Finalización correcta, no es necesario reiniciar.
 
 </dd> <dt>
 
@@ -73,12 +73,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión dhcp.
+No se puede renovar la concesión DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-Ip no habilitada en el adaptador.
+IP no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de fotograma no válido**
+**Tipo de marco no válido**
 </dt> <dd>
 
 87
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -426,7 +426,7 @@ El [ejemplo modify the maximum allowed TCP Data Retransmissions](https://Gallery
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

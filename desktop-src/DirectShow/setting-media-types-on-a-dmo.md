@@ -4,12 +4,12 @@ ms.assetid: 9ff1542d-6a67-414d-8336-aae80c74d5d0
 title: Establecer tipos de medios en un DMO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85fd437ae54d2e5baec35eb415dd8d04e4d3a3fe5992b8ba73f6d25c77f0475a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8d657977079a75bf5f1eeccc389da6ad67f63b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061601"
 ---
 # <a name="setting-media-types-on-a-dmo"></a>Establecer tipos de medios en un DMO
 
@@ -68,8 +68,8 @@ Debe tener en cuenta los siguientes puntos sobre los tipos preferidos:
 
 -   El DMO podría devolver un tipo que no tiene ningún bloque de formato. Por ejemplo, un DMO podría especificar un tipo de vídeo, como RGB de 24 bits, sin proporcionar el ancho y el alto de la imagen. Sin embargo, al establecer el tipo, debe proporcionar un bloque de formato completo. (Algunos tipos de medios, como MIDI, nunca requieren un bloque de formato, en cuyo caso no se aplica este comentario).
 -   El DMO no es necesario para admitir todas las combinaciones de tipos preferidos que devuelve. Por ejemplo, si un DMO tiene dos secuencias y cada secuencia tiene cuatro tipos preferidos, hay 16 combinaciones posibles, pero no se garantiza que todas sean válidas.
--   Cuando el cliente establece el tipo de medio para una secuencia, el DMO podría actualizar los tipos preferidos de otras secuencias para reflejar el nuevo estado. Sin embargo, no es necesario hacerlo.
--   Para algunas secuencias, el DMO podría no ofrecer ningún tipo preferido. Normalmente, un DMO debe ofrecer al menos algunos tipos preferidos en algunas secuencias.
+-   Cuando el cliente establece el tipo de medio para una secuencia, el DMO podría actualizar los tipos preferidos para que otras secuencias reflejen el nuevo estado. Sin embargo, no es necesario hacerlo.
+-   Para algunas secuencias, la DMO podría no ofrecer ningún tipo preferido. Normalmente, un DMO debe ofrecer al menos algunos tipos preferidos en algunas secuencias.
 -   El DMO no es necesario para ofrecer una lista completa de los tipos de medios que puede aceptar. Puede haber tipos "sin invertir" que el DMO admite, pero no ofrece como tipos preferidos.
 
 En resumen, el cliente debe tratar los tipos preferidos solo como instrucciones. La única manera de saber con certeza qué tipos se admiten es probarlos, como se describe en la sección siguiente.
@@ -111,7 +111,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para probar un tipo de medio sin establecerlo, llame a **SetInputType** o **SetOutputType** con DMO \_ marca SET \_ TYPEF TEST \_ \_ ONLY. El método devuelve S OK si el tipo es aceptable o S FALSE en caso \_ \_ contrario:
+Para probar un tipo de medio sin establecerlo, llame a **SetInputType** o **SetOutputType** con la DMO \_ SET \_ TYPEF \_ TEST \_ ONLY. El método devuelve S OK si el tipo es aceptable o S FALSE en caso \_ \_ contrario:
 
 
 ```C++

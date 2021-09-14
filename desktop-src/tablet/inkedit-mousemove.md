@@ -4,12 +4,12 @@ ms.assetid: 6ccaf2eb-acec-4dfd-9ec7-c78aca043900
 title: Evento InkEdit.MouseMove (Inked.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 601bcaa4c5bc3379c207302c28e5eb17d44b2b184ce42452d5b78b6079d88ead
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a0d3e98827a1f0ebcdc80f5d44765ebe768f65e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119939115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256694"
 ---
 # <a name="inkeditmousemove-event"></a>Evento InkEdit.MouseMove
 
@@ -33,7 +33,7 @@ HRESULT MouseMove(
 
 <dl> <dt>
 
-*Botón* 
+*Button* 
 </dt> <dd>
 
 Miembro de la [**enumeración MouseButton**](/windows/desktop/api/inked/ne-inked-mousebutton) que indica qué botones del mouse están deprimidos.
@@ -90,7 +90,7 @@ Coordenada y actual, en píxeles, del puntero del mouse.
 
 Si este evento se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se presiona un botón del mouse mientras el puntero está sobre un control [InkEdit,](inkedit-control-reference.md) ese control captura el mouse y recibe todos los eventos del mouse hasta e incluyendo el último [**evento MouseUp.**](inkedit-mouseup.md) Esto implica que es posible que las coordenadas del puntero del mouse (x, y) devueltas por un evento del mouse no siempre se encontraran en el área interna del objeto que las recibe.
 
@@ -108,12 +108,12 @@ Este método de evento se define en la **\_ interfaz IInkEditEvents.** La **\_ i
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>Inked.h (también requiere \_ i.c con entrada manuscrita)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Inked.h (también requiere \_ i.c con entrada manuscrita)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

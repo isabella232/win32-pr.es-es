@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 66136ee767c16aa85bfcef33fd23d5d42817f844fc309f7633d2a3d2bd35f2e4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7500d52179c3282c7f15dcdd5dd5a32620bbc076
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119471061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241094"
 ---
 # <a name="importchanneltype-complex-type"></a>Tipo complejo ImportChannelType
 
@@ -61,7 +61,7 @@ Identifica un canal definido por otro proveedor o en un manifiesto que contiene 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El manifiesto que definió el canal importado debe instalarse antes de que el proveedor escriba eventos; De lo contrario, los eventos no se pueden escribir en el canal (la operación de escritura se realiza correctamente, los eventos simplemente no se escriben en el canal).
 

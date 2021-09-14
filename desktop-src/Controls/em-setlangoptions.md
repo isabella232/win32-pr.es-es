@@ -1,6 +1,6 @@
 ---
 title: EM_SETLANGOPTIONS mensaje (Richedit.h)
-description: Establece opciones para la compatibilidad del Editor de métodos de entrada (IME) y el idioma asiático en un control de edición enriquecido.
+description: Establece las opciones para el Editor de métodos de entrada (IME) y la compatibilidad con idiomas asiáticos en un control de edición enriquecido.
 ms.assetid: d42d0512-3339-471d-a91a-114151554799
 keywords:
 - EM_SETLANGOPTIONS controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5984c20273d2daa0a2e39fc6caf6dde88c8b274502a50e1a5e5eb3cca2b6f94c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e5095c599dfa78740ce4cb081e4d52c33b2debd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117831216"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062094"
 ---
 # <a name="em_setlangoptions-message"></a>Mensaje \_ EM SETLANGOPTIONS
 
-Establece opciones para la compatibilidad del Editor de métodos de entrada (IME) y el idioma asiático en un control de edición enriquecido.
+Establece las opciones para el Editor de métodos de entrada (IME) y la compatibilidad con idiomas asiáticos en un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Establece opciones para la compatibilidad del Editor de métodos de entrada (IME
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza; debe ser cero.
+Este parámetro no se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Especifica las opciones de idioma. Para obtener una lista de los valores posibles, [**vea EM \_ GETLANGOPTIONS**](em-getlangoptions.md).
+Especifica las opciones de idioma. Para obtener una lista de valores posibles, [**vea EM \_ GETLANGOPTIONS**](em-getlangoptions.md).
 
 </dd> </dl>
 
@@ -47,29 +47,29 @@ Especifica las opciones de idioma. Para obtener una lista de los valores posible
 
 Este mensaje devuelve un valor de 1.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **mensaje EM \_ SETLANGOPTIONS** controla lo siguiente:
+El **mensaje \_ EM SETLANGOPTIONS** controla lo siguiente:
 
--   Enlace de fuente automático.
--   Cambio automático del teclado.
+-   Enlace automático de fuentes.
+-   Cambio automático de teclado.
 -   Ajuste automático del tamaño de fuente.
 -   Uso de fuentes predeterminadas de interfaz de usuario en lugar de fuentes predeterminadas de documento.
 -   Notificaciones al cliente durante la composición de IME.
 -   Cómo anula IME el modo de composición.
--   Corrector ortográfica, corrección automática y predicción táctil del teclado.
+-   Revisión ortográfica, corrección automática y predicción de teclado táctil.
 
-Este mensaje establece los valores de todas las marcas de opción de idioma. Para cambiar un subconjunto de las marcas, envíe el mensaje [**EM \_ GETLANGOPTIONS**](em-getlangoptions.md) para obtener las marcas de opción actuales, cambie las marcas que necesita cambiar y, a continuación, envíe el mensaje **EM \_ SETLANGOPTIONS con** el resultado.
+Este mensaje establece los valores de todas las marcas de opción de idioma. Para cambiar un subconjunto de las marcas, envíe el mensaje [**EM \_ GETLANGOPTIONS**](em-getlangoptions.md) para obtener las marcas de opción actuales, cambie las marcas que necesita cambiar y, a continuación, envíe el mensaje **EM \_ SETLANGOPTIONS** con el resultado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

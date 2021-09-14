@@ -4,12 +4,12 @@ ms.assetid: 30f99804-6aea-473b-9bbf-e8c715501391
 title: MF_PD_PREFERRED_LANGUAGE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cd01a47002bf3cd9419579786ff37df1fc03af940f54b2d2a2bb859d5b97007
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81bb121c7181724ef06b3e8fe9239342a140104a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118740716"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257788"
 ---
 # <a name="mf_pd_preferred_language-attribute"></a>Atributo MF \_ PD \_ PREFERRED \_ LANGUAGE
 
@@ -17,13 +17,13 @@ Contiene el idioma RFC 1766 preferido del origen multimedia.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Wchar**
+**WCHAR**
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para establecer este atributo, llame [**aATTRIBUTEAttributes::Settring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para establecer este atributo, llame [**a IMFAttributes::Settring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -31,9 +31,9 @@ Para establecer este atributo, llame [**aATTRIBUTEAttributes::Settring**](/windo
 
 ## <a name="remarks"></a>Observaciones
 
-El atributo MF \_ PD PREFERRED LANGUAGE es \_ \_ opcional. Una aplicación puede establecer este atributo en un origen multimedia (por ejemplo, un origen de red) para especificar su idioma preferido.
+El atributo MF \_ PD PREFERRED LANGUAGE es \_ \_ opcional. Una aplicación puede establecer este atributo en un origen multimedia (como un origen de red) para especificar su idioma preferido.
 
-La constante GUID de este atributo se exporta desde mfuuid.lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,11 +43,11 @@ La constante GUID de este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

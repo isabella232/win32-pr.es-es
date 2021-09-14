@@ -1,5 +1,5 @@
 ---
-description: El método GetMethod recupera el identificador de distribución (DISPID) del método que se va a ejecutar.
+description: El método GetMethod recupera el identificador de envío (DISPID) del método que se va a ejecutar.
 ms.assetid: 93b48e04-7a47-4112-ae9d-dfda6adf100a
 title: Método CDeferredCommand.GetMethod (Ctlutil.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16d6f3ae7a116d59eef60b440a7423f57cf0012375e261a9943714523db9259f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2dcbf42f7216aa72faf578d80ec47b0877be78c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910077"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061307"
 ---
 # <a name="cdeferredcommandgetmethod-method"></a>Método CDeferredCommand.GetMethod
 
-El `GetMethod` método recupera el identificador de distribución (DISPID) del método que se va a ejecutar.
+El `GetMethod` método recupera el identificador de envío (DISPID) del método que se va a ejecutar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el VALOR DISPID del método que se ejecutará.
+Devuelve el DISPID del método que se ejecutará.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve el VALOR DISPID del método que se ejecutará.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

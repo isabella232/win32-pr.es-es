@@ -5,15 +5,15 @@ title: Esquema de descripción de biblioteca
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2bfbaa8401468a6bab79cf4bccc5d7d4cd0ff7bb
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122879651"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256994"
 ---
 # <a name="library-description-schema"></a>Esquema de descripción de biblioteca
 
-Los archivos de descripción de biblioteca son archivos XML que definen bibliotecas. Las bibliotecas agregan elementos de ubicaciones de almacenamiento locales y remotas en una sola vista en Windows Explorer. Los archivos de descripción de la biblioteca siguen el esquema de descripción de la biblioteca y se guardan como \* archivos .library-ms.
+Los archivos de descripción de biblioteca son archivos XML que definen bibliotecas. Las bibliotecas agregan elementos desde ubicaciones de almacenamiento locales y remotas a una sola vista en Windows Explorer. Los archivos de descripción de la biblioteca siguen el esquema Descripción de la biblioteca y se guardan como \* archivos .library-ms.
 
 Este tema contiene las siguientes secciones:
 
@@ -24,15 +24,15 @@ Este tema contiene las siguientes secciones:
 
 ## <a name="overview-of-the-library-description-schema"></a>Información general del esquema de descripción de la biblioteca
 
-Las bibliotecas contienen archivos que se almacenan en una o varias ubicaciones de almacenamiento. Las bibliotecas no almacenan realmente estos archivos; en su lugar, supervisan las carpetas que contienen los archivos y permiten a los usuarios acceder y organizar los archivos de maneras diferentes. Por ejemplo, un usuario puede tener archivos de música en varias carpetas en un disco duro local y también en un disco duro externo. Con la **biblioteca Música**, el usuario puede acceder a todos esos archivos al mismo tiempo y ordenarlos todos por nombre de intérprete o título de álbum como un único grupo.
+Las bibliotecas contienen archivos que se almacenan en una o varias ubicaciones de almacenamiento. Las bibliotecas no almacenan realmente estos archivos; en su lugar, supervisan las carpetas que contienen los archivos y permiten a los usuarios acceder a los archivos y organizar los archivos de maneras diferentes. Por ejemplo, un usuario puede tener archivos de música en varias carpetas en un disco duro local y también en un disco duro externo. Con la **biblioteca Música**, el usuario puede acceder a todos esos archivos al mismo tiempo y ordenarlos todos por nombre de intérprete o título de álbum como un único grupo.
 
-El esquema de descripción de la biblioteca consta de tres partes principales, que se describen en la tabla siguiente:
+El esquema descripción de la biblioteca consta de tres partes principales, que se describen en la tabla siguiente:
 
 
 
 | Parte                        | Descripción                                                                                                                                                |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Información general de la biblioteca | Información sobre la biblioteca, como el nombre, el propietario, la versión, el icono, que Windows Explorer puede usar cuando muestra la biblioteca a un usuario.                   |
+| Información general de la biblioteca | Información sobre la biblioteca, como nombre, propietario, versión, icono, que Windows Explorer puede usar cuando muestra la biblioteca a un usuario.                   |
 | Propiedades de la biblioteca          | Una o varias propiedades que describen la biblioteca. Estas propiedades personalizadas son específicas de la biblioteca.                                                     |
 | Ubicaciones de biblioteca           | Uno o varios conectores de búsqueda que identifican las ubicaciones de almacenamiento que se incluirán en la biblioteca. Cada una de estas ubicaciones también puede tener un conjunto único de propiedades. |
 
@@ -40,11 +40,11 @@ El esquema de descripción de la biblioteca consta de tres partes principales, q
 
  
 
-Los archivos de biblioteca Windows 7 se almacenan en la carpeta conocida, \_ Bibliotecas FOLDERID. De forma predeterminada, la carpeta Bibliotecas FOLDERID se encuentra en \_ %USERPROFILE% \\ AppData \\ Roaming \\ Microsoft Windows \\ \\ Libraries.
+Los archivos de biblioteca Windows 7 se almacenan en la carpeta conocida, \_ BIBLIOTECAS FOLDERID. De forma predeterminada, la carpeta Bibliotecas FOLDERID se encuentra en \_ %USERPROFILE% \\ AppData \\ Roaming \\ Microsoft Windows \\ \\ Libraries.
 
 ## <a name="namespace-versioning"></a>Control de versiones del espacio de nombres
 
-Se realiza un seguimiento de las versiones del formato de archivo Descripción de la biblioteca \* (.library-ms) cambiando el espacio de nombres. Para Windows 7, el formato de archivo tiene el siguiente espacio de nombres predeterminado: https://schemas.microsoft.com/windows/2009/library .
+Se realiza un seguimiento de las versiones del formato de archivo Descripción de la biblioteca \* (.library-ms) cambiando el espacio de nombres . Para Windows 7, el formato de archivo tiene el siguiente espacio de nombres predeterminado: https://schemas.microsoft.com/windows/2009/library .
 
 Sin embargo, se realiza un seguimiento de las versiones del contenido de la biblioteca mediante el elemento [ &lt; version &gt; ](schema-library-version.md) en un archivo de descripción de biblioteca específico.
 
@@ -91,19 +91,19 @@ A continuación se muestra un ejemplo de un archivo de descripción de bibliotec
 
 <dl> <dt>
 
-[elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)
+[Elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)
 </dt> <dt>
 
-[elemento iconReference (Esquema de biblioteca)](schema-library-iconreference.md)
+[Elemento iconReference (esquema de biblioteca)](schema-library-iconreference.md)
 </dt> <dt>
 
-[elemento isLibraryPinned (esquema de biblioteca)](schema-library-islibrarypinned.md)
+[Elemento isLibraryPinned (esquema de biblioteca)](schema-library-islibrarypinned.md)
 </dt> <dt>
 
-[elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
+[Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
 </dt> <dt>
 
-[elemento name (esquema de biblioteca)](schema-library-name.md)
+[elemento name (Esquema de biblioteca)](schema-library-name.md)
 </dt> <dt>
 
 [elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md)
@@ -121,7 +121,7 @@ A continuación se muestra un ejemplo de un archivo de descripción de bibliotec
 [elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md)
 </dt> <dt>
 
-[elemento templateInfo (esquema de biblioteca)](schema-library-templateinfo.md)
+[Elemento templateInfo (esquema de biblioteca)](schema-library-templateinfo.md)
 </dt> <dt>
 
 [elemento version (esquema de biblioteca)](schema-library-version.md)

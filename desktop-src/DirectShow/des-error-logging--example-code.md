@@ -1,23 +1,23 @@
 ---
-description: 'Registro de errores de DES: código de ejemplo'
+description: 'Registro de errores DES: código de ejemplo'
 ms.assetid: e734daed-9230-4376-839f-7e09da7bc275
-title: 'Registro de errores de DES: código de ejemplo'
+title: 'Registro de errores DES: código de ejemplo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2919e8214a247be77c5d706bbbf5a043751791b26ecb59f95e2e1bc69ce9f070
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a9e0d47535e1d4035669a0e672a30fb2520c676
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061228"
 ---
-# <a name="des-error-logging-example-code"></a>Registro de errores de DES: código de ejemplo
+# <a name="des-error-logging-example-code"></a>Registro de errores DES: código de ejemplo
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
 El código de ejemplo siguiente presenta una aplicación de consola completa que carga y muestra una vista previa de un archivo de proyecto XML de [DirectShow Editing Services,](directshow-editing-services.md) mediante la clase de registro de errores descrita en esta sección. (Vea [Errores de registro).](logging-errors.md) El nombre del archivo de proyecto está codificado de forma hard-code en la aplicación.
 
-Para que el código sea más corto, la aplicación de consola usa punteros inteligentes ATL, lo que elimina la necesidad de llamar a **QueryInterface** y **Release**. Si lo prefiere, puede modificar la aplicación de ejemplo en [Carga y vista previa de un Project](loading-and-previewing-a-project.md). Simplemente agregue el código que se muestra en la sección anterior.
+Para que el código sea más corto, la aplicación de consola usa punteros inteligentes ATL, lo que elimina la necesidad de llamar a **QueryInterface** y **Release.** Si lo prefiere, puede modificar la aplicación de ejemplo en [Carga y vista previa de un Project](loading-and-previewing-a-project.md). Simplemente agregue el código que se muestra en la sección anterior.
 
 
 ```C++

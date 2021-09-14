@@ -4,12 +4,12 @@ ms.assetid: be61aee9-41d5-42bc-b905-d0216d301faf
 title: Obtención de búferes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f727045142b9432da93511ecea1f3238aa24ad213fdc7715f5e2e45a91ab19a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ecf516096397eca1fce3a023ee4987d8e8feaa4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119536905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061103"
 ---
 # <a name="getting-buffers"></a>Obtención de búferes
 

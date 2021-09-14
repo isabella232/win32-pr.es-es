@@ -4,12 +4,12 @@ ms.assetid: 31d59f17-552b-46d1-89e4-751216f54280
 title: Establecimiento de las preferencias de desinteresación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33dae356618653f501b56f8b7a7eeb98e24ee92eb196cac78466e8cd26c01610
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be52ae3023c8e4bc83c3305a104c389f423cffd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119072579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061600"
 ---
 # <a name="setting-deinterlace-preferences"></a>Establecimiento de las preferencias de desinteresación
 

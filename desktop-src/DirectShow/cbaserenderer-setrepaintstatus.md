@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 748d0091bd3d2eae11773a9f94b62ceeb92b2d3ca64049f1a1981e38bf222e8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39822b535680a699654e969abc316c10c54ba51b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061764"
 ---
 # <a name="cbaserenderersetrepaintstatus-method"></a>Método CBaseRenderer.SetRepaintStatus
 
@@ -53,7 +53,7 @@ Valor booleano que indica si los eventos de repintado están habilitados. Si **e
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método garantiza que el administrador de gráficos de filtro no se inunde con eventos \_ EC REPAINT redundantes. Una vez que el filtro envía [**un evento EC \_ REPAINT,**](ec-repaint.md) llama a este método con el valor **TRUE**. El filtro no envía más eventos \_ EC REPAINT hasta que recibe más datos.
 
@@ -68,7 +68,7 @@ Este método garantiza que el administrador de gráficos de filtro no se inunde 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

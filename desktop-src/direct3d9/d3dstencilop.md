@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 166f670e6e34edd6a3b05584c54e63be274e54161faea242fa701e771a90a771
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 34784a57d3afd3862d380554040f3909ec905898
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060741"
 ---
 # <a name="d3dstencilop-enumeration"></a>D3DSTENCILEVEL (enumeración)
 
 Define las operaciones de búfer de galería de símbolos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -110,7 +110,7 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las entradas de búfer de galería de símbolos son valores enteros comprendidos entre 0 y 2ⁿ - 1, donde n es la profundidad de bits del búfer de galería de símbolos.
 
@@ -124,7 +124,7 @@ Las entradas de búfer de galería de símbolos son valores enteros comprendidos
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

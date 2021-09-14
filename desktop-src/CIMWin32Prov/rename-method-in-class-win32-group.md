@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cff8f587426b45133716e308ea40785602fea2d5b5d30a99645bfd0c6cc5c4e1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c111a0c12d0fdc1ce3f6d6bcaa0e7b0f57831054
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062655"
 ---
 # <a name="rename-method-of-the-win32_group-class"></a>Método Rename de la clase Group de Win32 \_
 
 El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Rename** permite cambiar el nombre del grupo.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ uint32 Rename(
 *Nombre* \[ En\]
 </dt> <dd>
 
-Nombre de la Windows de usuario en el dominio especificado por la **propiedad Domain** de esta clase.
+Nombre de la Windows usuario en el dominio especificado por la **propiedad Domain** de esta clase.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El **método Rename** puede devolver los códigos de error enumerados en la lista siguiente. Para obtener valores enteros distintos de los enumerados, consulte [Códigos de \_ retorno wmi](/windows/desktop/WmiSdk/wmi-return-codes).
+El **método Rename** puede devolver los códigos de error enumerados en la lista siguiente. Para obtener valores enteros distintos de los enumerados, consulte [Códigos de \_ retorno WMI.](/windows/desktop/WmiSdk/wmi-return-codes)
 
 <dl> <dt>
 
@@ -99,7 +99,7 @@ Correcto.
 
 </dd> <dt>
 
-**La operación solo se permite en el controlador de dominio principal del dominio.**
+**Solo se permite la operación en el controlador de dominio principal del dominio.**
 </dt> <dd>
 
 6
@@ -120,7 +120,7 @@ Correcto.
 
 </dd> <dt>
 
-**Error interno.**
+**Error interno**
 </dt> <dd>
 
 9
@@ -141,7 +141,7 @@ Correcto.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

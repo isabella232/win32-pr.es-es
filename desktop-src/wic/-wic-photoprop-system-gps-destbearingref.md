@@ -4,18 +4,18 @@ ms.assetid: d1c8b3cc-ed52-43ca-a0ba-045a2c5fe274
 title: Directiva de metadatos de fotos System.GPS.DestBearingRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26ee4b984d0a759769b80be76b53499690673c7ec630c759aa0371b53ea9368f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f00d3083459fe365fc54e81dc485ddd26887a46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119087856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256485"
 ---
 # <a name="systemgpsdestbearingref-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DestBearingRef
 
 Directiva de metadatos de fotos para [la propiedad System.GPS.DestBearingRef.](../properties/props-system-gps-destbearingref.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ GPS \_ DestBearingRef
 
@@ -33,7 +33,7 @@ VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
-String.
+Cadena
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
@@ -121,7 +121,7 @@ Los valores de esquemas diferentes se concilian.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

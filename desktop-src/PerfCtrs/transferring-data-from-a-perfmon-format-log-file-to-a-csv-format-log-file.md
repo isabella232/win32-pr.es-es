@@ -5,11 +5,11 @@ title: Convertir datos de un archivo de registro de formato binario en un archiv
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2748ef834b82de09ce0fa9f5ca8a36c85781eaa6
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062874"
 ---
 # <a name="converting-data-from-a-binary-format-log-file-to-a-csv-format-log-file"></a>Convertir datos de un archivo de registro de formato binario en un archivo de registro con formato CSV
 

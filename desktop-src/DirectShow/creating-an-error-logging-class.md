@@ -4,18 +4,18 @@ ms.assetid: c0b3b25c-ed03-4f78-9c53-0c0bcff1c60c
 title: Crear una clase de registro de errores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 194d927b2e4eae73f75a326ed03363d96f6121634e46b606ba87409e3bf07f9f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db08971c7bf1a0024669935079b7a9403c429327
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120108205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062391"
 ---
 # <a name="creating-an-error-logging-class"></a>Crear una clase de registro de errores
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En este tema se describe cómo implementar el registro de errores en [DirectShow Editing Services](directshow-editing-services.md).
+En este tema se describe cómo implementar el registro de errores [en DirectShow Editing Services](directshow-editing-services.md).
 
 En primer lugar, declare una clase que implementará el registro de errores. La clase hereda la [**interfaz IAMErrorLog.**](iamerrorlog.md) Contiene declaraciones para los tres métodos **IUnknown** y para el método único en [IAMErrorLog](implementing-iamerrorlog.md). La declaración de clase es la siguiente:
 

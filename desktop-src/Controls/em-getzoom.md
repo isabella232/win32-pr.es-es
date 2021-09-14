@@ -1,6 +1,6 @@
 ---
 title: EM_GETZOOM mensaje (Richedit.h)
-description: Obtiene la relación de zoom actual. La relación de zoom siempre está entre 1/64 y 64. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
+description: Obtiene la relación de zoom actual. La proporción de zoom siempre está entre 1/64 y 64. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 ms.assetid: d4a1daee-4af7-44d1-80d6-0fcaaf3672a8
 keywords:
 - EM_GETZOOM controles de Windows mensaje
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 874feba3022571a69f816a94bc5f56cb29a94929c47a2a8d408b1c8fac7b26ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 40a88aa96787e1fda5cdeb8f77f478a4d51635cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119438115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062174"
 ---
-# <a name="em_getzoom-message"></a>Mensaje \_ EM GETZOOM
+# <a name="em_getzoom-message"></a>Mensaje \_ DE EM GETZOOM
 
-Obtiene la relación de zoom actual para un control de edición multilínea o un control de edición enriquecido. La relación de zoom siempre está entre 1/64 y 64.
+Obtiene la relación de zoom actual para un control de edición multilínea o un control de edición enriquecido. La proporción de zoom siempre está entre 1/64 y 64.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,7 +33,7 @@ Obtiene la relación de zoom actual para un control de edición multilínea o un
 *wParam* 
 </dt> <dd>
 
-Recibe el numerador de la proporción de zoom.
+Recibe el numerador de la relación de zoom.
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ El mensaje devuelve **TRUE** si se procesa el mensaje, que será si *wParam* y *
 
 ## <a name="remarks"></a>Observaciones
 
-**Editar:** Compatible con Windows 10 1809 y versiones posteriores. El control de edición debe tener el estilo extendido **ES \_ EX \_ ZOOMABLE** establecido; para que este mensaje suba efecto, vea [Editar estilos extendidos de control](edit-control-window-extended-styles.md). Para obtener información sobre el control de edición, vea [Editar controles](edit-controls.md).
+**Editar:** Compatible con Windows 10 1809 y versiones posteriores. El control de edición debe tener el estilo extendido **\_ ES EX \_ ZOOMABLE;** para que este mensaje tenga efecto, vea [Editar estilos extendidos de control.](edit-control-window-extended-styles.md) Para obtener información sobre el control de edición, vea [Editar controles](edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,11 +61,11 @@ El mensaje devuelve **TRUE** si se procesa el mensaje, que será si *wParam* y *
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
 | Redistribuible<br/>          | Rich Edit 3.0<br/>                                                              |
-| Header<br/>                   | <dl> <dt>Richedit.h/Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h/Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

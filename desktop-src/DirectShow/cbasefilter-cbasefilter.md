@@ -1,7 +1,7 @@
 ---
-description: 'Constructor CBaseFilter.CBaseFilter(const TCHAR \* , LNOWNOWN, CCritSec, \* REFCLSID, HRESULT \* ): método constructor.'
+description: 'Constructor CBaseFilter.CBaseFilter(const \* TCHAR, LNOWN, CCritSec, \* REFCLSID, HRESULT \* ): método constructor.'
 ms.assetid: 705a075e-3f0f-4e7d-94b6-3458f87b6718
-title: Constructor CBaseFilter.CBaseFilter(const *TCHAR, LNOWNOWN, CCritSec,* REFCLSID, HRESULT*) (Amfilter.h)
+title: Constructor CBaseFilter.CBaseFilter(const *TCHAR, LNOWN, CCritSec,* REFCLSID, HRESULT*) (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 023de6fd8df37930954b59114e4e00fa409b7803a83ae15b31f6816c4dfdffbb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f85fc666d299d5e120f71cfeaec5fc2f88e72761
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061384"
 ---
-# <a name="cbasefiltercbasefilterconst-tchar-lpunknown-ccritsec-refclsid-hresult-constructor"></a>Constructor CBaseFilter.CBaseFilter(const \* TCHAR, LNOWNOWN, CCritSec, \* REFCLSID, HRESULT \* )
+# <a name="cbasefiltercbasefilterconst-tchar-lpunknown-ccritsec-refclsid-hresult-constructor"></a>Constructor CBaseFilter.CBaseFilter(const \* TCHAR, LNOWN, CCritSec, \* REFCLSID, HRESULT \* )
 
 Método constructor.
 
@@ -81,9 +81,9 @@ Puntero a un **valor HRESULT.** El constructor omite este parámetro.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para el objeto de sección crítica, normalmente realizaría una de las siguientes acciones:
+Para el objeto de sección crítica, normalmente haría una de las siguientes acciones:
 
 -   Derive una clase que herede **tanto CBaseFilter** como **CCritSec.** Para *pLock*, pase el `this` puntero.
 -   Derive una clase que hereda **CBaseFilter** y contiene una variable **miembro CCritSec.** Para *pLock*, pase la dirección de esa variable.
@@ -99,7 +99,7 @@ Para el objeto de sección crítica, normalmente realizaría una de las siguient
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

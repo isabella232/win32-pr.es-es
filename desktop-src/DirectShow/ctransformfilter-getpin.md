@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 32f9ccdd2b7d787faa6f1081c51bf107b979d26d952552651542afcb34f985ba
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8e76cafce2ca5a9881b87d9248c144dc584971c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119823925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061249"
 ---
 # <a name="ctransformfiltergetpin-method"></a>Método CTransformFilter.GetPin
 
@@ -53,7 +53,7 @@ Número del pin especificado, indexado desde cero. En este filtro, el pin 0 es e
 
 Devuelve un puntero al objeto [**CBasePin**](cbasepin.md) que implementa el pin o **NULL** si se produce un error en el método.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método implementa el método [**CBaseFilter::GetPin**](cbasefilter-getpin.md) virtual puro. La primera vez que se llama al método, crea ambos pines.
 
@@ -72,7 +72,7 @@ Si el filtro usa los pines [**CTransformInputPin**](ctransforminputpin.md) y [**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

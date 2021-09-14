@@ -4,12 +4,12 @@ ms.assetid: 23deab26-6c9a-4f94-b750-11c9b1a14ce3
 title: Establecimiento del Graph reloj
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ab93fcefe4ba88aa7724bf59b775c493313783b2f4ad3801925e16b9a1818c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfe98c8dce1ab5f94664fbe1406c682e5d4e50b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061591"
 ---
 # <a name="setting-the-graph-clock"></a>Establecimiento del Graph reloj
 

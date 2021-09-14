@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d133038c0adad2fe7eaa1ae98cf638fe6bd13fad82df3b3d2d1ac384a30e1a80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0c29b5815da5569059ba80c007d6af39d1e389f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119576645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062179"
 ---
-# <a name="em_getundoname-message"></a>Mensaje \_ GETUNDONAME de EM
+# <a name="em_getundoname-message"></a>Mensaje \_ EM GETUNDONAME
 
 Microsoft Rich Edit 2.0 y versiones posteriores: recupera el tipo de la siguiente acción de deshacer, si la hay.
 
@@ -51,23 +51,23 @@ Si hay una acción de deshacer, el valor devuelto es un valor de enumeración [*
 
 Si no hay acciones que se puedan deshacer o se desconoce el tipo de la siguiente acción de deshacer, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los tipos de acciones que se pueden deshacer o volver a escribir incluyen operaciones de escritura, eliminación, arrastrar, colocar, cortar y pegar. Esta información puede ser útil para las aplicaciones que proporcionan una interfaz de usuario extendida para las operaciones de deshacer y rehacer, como un cuadro de lista desplegable de acciones que se pueden deshacer.
+Entre los tipos de acciones que se pueden deshacer o reescribir se incluyen operaciones de escritura, eliminación, arrastrar, colocar, cortar y pegar. Esta información puede ser útil para las aplicaciones que proporcionan una interfaz de usuario extendida para las operaciones de deshacer y rehacer, como un cuadro de lista desplegable de acciones que se pueden deshacer.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -77,7 +77,7 @@ Los tipos de acciones que se pueden deshacer o volver a escribir incluyen operac
 [**EM \_ GETREDONAME**](em-getredoname.md)
 </dt> <dt>
 
-[**EM \_ REDO**](em-redo.md)
+[**REDO DE EM \_**](em-redo.md)
 </dt> <dt>
 
 [**EM \_ UNDO**](em-undo.md)

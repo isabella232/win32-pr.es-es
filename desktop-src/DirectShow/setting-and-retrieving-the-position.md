@@ -4,12 +4,12 @@ ms.assetid: 06b0e2d7-9539-41ad-a631-7e8da556feeb
 title: Establecer y recuperar la posición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe7951ce12fe498a4f230ab3d1ac84796621e04ed025010678f1c43a39d88eb0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 776a32eb6193ef456d693b5a133c87d800a0b64e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119683695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061605"
 ---
 # <a name="setting-and-retrieving-the-position"></a>Establecer y recuperar la posición
 

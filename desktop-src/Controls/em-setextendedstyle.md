@@ -1,6 +1,6 @@
 ---
 title: EM_SETEXTENDEDSTYLE mensaje (Commctrl.h)
-description: Informa al control de edición para establecer estilos extendidos. Envíe este mensaje o use la macro Editar \_ SetExtendedStyle.
+description: Informa al control de edición para establecer estilos extendidos. Envíe este mensaje o use la macro \_ Editar SetExtendedStyle.
 ms.assetid: 4ca010c3-2c70-41e5-ade4-11e1895fda26
 keywords:
 - EM_SETEXTENDEDSTYLE controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 710ad6535bd7891f322a4bf02a5fed0f766dd97c2569fa5ec9b961478bf6a457
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 560b675927b4497810b8d492fd89b5765aa5a2c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118673082"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062113"
 ---
 # <a name="em_setextendedstyle-message"></a>Mensaje EM \_ SETEXTENDEDSTYLE
 
-Informa al control de edición para establecer estilos extendidos. Envíe este mensaje o use la macro [**Edit \_ SetExtendedStyle**](/windows/desktop/api/Commctrl/nf-commctrl-edit_setextendedstyle).
+Informa al control de edición para establecer estilos extendidos. Envíe este mensaje o use la macro [**\_ Edit SetExtendedStyle**](/windows/desktop/api/Commctrl/nf-commctrl-edit_setextendedstyle).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ Si este mensaje se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Observaciones
 
-Los estilos extendidos para un control de edición no tienen nada que ver con los estilos extendidos usados con la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o la [**función SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga).
+Los estilos extendidos de un control de edición no tienen nada que ver con los estilos extendidos usados con la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o [**la función SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Los estilos extendidos para un control de edición no tienen nada que ver con lo
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10, versión 1809 solo aplicaciones de escritorio\]<br/>                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

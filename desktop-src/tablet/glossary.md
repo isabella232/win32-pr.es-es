@@ -5,12 +5,12 @@ ms.assetid: c55e4881-ca98-4393-a72e-f3ced687b7ca
 title: Glosario de la API de Tablet PC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 394b935bb36fbd4c8e4dfa429b4da341c72f5467d9023e772ef898df4a59bb47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ec2c047061f8c842f4725875d045e4895927bc1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127256785"
 ---
 # <a name="tablet-pc-api-glossary"></a>Glosario de la API de Tablet PC
 
@@ -145,7 +145,7 @@ Los trazos de escritura o dibujo que se realizan con un lápiz de tableta o un m
 <span id="tablet.tablet_glossary_ink_analysis"></span><span id="TABLET.TABLET_GLOSSARY_INK_ANALYSIS"></span>**análisis de entrada de lápiz**
 </dt> <dd>
 
-Proceso de examinar mediante programación la entrada de entrada de lápiz.
+El proceso de examinar mediante programación la entrada de entrada de lápiz.
 
 </dd> <dt>
 
@@ -201,7 +201,7 @@ Accesorios para escribir texto mediante un lápiz de tableta en lugar de un tecl
 <span id="tablet.tablet_glossary_input_scope"></span><span id="TABLET.TABLET_GLOSSARY_INPUT_SCOPE"></span>**ámbito de entrada**
 </dt> <dd>
 
-Conjunto de palabras, números, puntuación y ordenaciones sintácticas que se permiten dentro de un modelo de lenguaje específico. Las aplicaciones pueden usar ámbitos de entrada para restringir el modelo de lenguaje utilizado por el reconocedor a un contexto específico. Anteriormente conocido como fa
+Conjunto de palabras, números, puntuación y ordenaciones sintácticas que se permiten dentro de un modelo de lenguaje específico. Las aplicaciones pueden usar los ámbitos de entrada para restringir el modelo de lenguaje utilizado por el reconocedor a un contexto específico. Anteriormente conocido como fa
 
 </dd> <dt>
 
@@ -254,7 +254,7 @@ Motor que reconoce y procesa la entrada de entrada de lápiz como comandos del s
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_microsoft_windows_journal_note_reader"></span><span id="TABLET.TABLET_GLOSSARY_MICROSOFT_WINDOWS_JOURNAL_NOTE_READER"></span>**Lector de notas Windows diario de Microsoft**
+<span id="tablet.tablet_glossary_microsoft_windows_journal_note_reader"></span><span id="TABLET.TABLET_GLOSSARY_MICROSOFT_WINDOWS_JOURNAL_NOTE_READER"></span>**Lector de notas Windows Diario de Microsoft**
 </dt> <dd>
 
 Componente que toma una secuencia que contiene un archivo .jnt y devuelve una secuencia que contiene el contenido del archivo en formato XML que se ajusta al esquema del Lector de notas del diario.
@@ -299,14 +299,14 @@ Unidad de entrada de lápiz interpretada por un reconocedor. En el caso de los i
 <span id="tablet.tablet_glossary_recognizer"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNIZER"></span>**Reconocedor**
 </dt> <dd>
 
-Módulo de software que reconoce y procesa componentes de un idioma o grupo de idiomas relacionados, o una clase de objetos relacionados, como notas musicales, gestos del sistema y formas geométricas.
+Módulo de software que reconoce y procesa componentes de un idioma o grupo de idiomas relacionados, o una clase de objetos relacionados, como notas de música, gestos del sistema y formas geométricas.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_recognizer_context"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNIZER_CONTEXT"></span>**contexto del reconocedor**
 </dt> <dd>
 
-Información específica de la aplicación que el reconocedor usa para realizar el reconocimiento de lápiz.
+Información específica de la aplicación que el reconocedor usa para realizar el reconocimiento de entrada de lápiz.
 
 </dd> <dt>
 
@@ -327,18 +327,18 @@ Lista de palabras que contiene todas las palabras escritas habitualmente en un i
 <span id="tablet.tablet_glossary_system_gesture"></span><span id="TABLET.TABLET_GLOSSARY_SYSTEM_GESTURE"></span>**gesto del sistema**
 </dt> <dd>
 
-Un lápiz equivalente a un mensaje de mouse tradicional, como hacer doble clic a la izquierda o hacer doble clic.
+Un lápiz equivalente a un mensaje de mouse tradicional, como un clic con el botón izquierdo o un doble clic.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_tablet_pc_managed_library"></span><span id="TABLET.TABLET_GLOSSARY_TABLET_PC_MANAGED_LIBRARY"></span>**Biblioteca administrada de Tablet PC**
 </dt> <dd>
 
-Conjunto de objetos administrados que amplía microsoft .NET Framework para proporcionar compatibilidad con la entrada y salida de escritura a mano en tablet PC e intercambio de datos con otros equipos.
+Conjunto de objetos administrados que extiende microsoft .NET Framework para proporcionar compatibilidad con la entrada y salida de escritura a mano en tablet PC e intercambio de datos con otros equipos.
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_text_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_TEXT_INK_OBJECT"></span>**objeto text ink**
+<span id="tablet.tablet_glossary_text_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_TEXT_INK_OBJECT"></span>**objeto de entrada manuscrita de texto**
 </dt> <dd>
 
 Objeto OLE que representa la entrada de lápiz que se interpreta como una palabra.
@@ -355,7 +355,7 @@ Lista de palabras que contiene las palabras agregadas al diccionario por los usu
 <span id="tablet.tablet_glossary_word_list"></span><span id="TABLET.TABLET_GLOSSARY_WORD_LIST"></span>**lista de palabras**
 </dt> <dd>
 
-Un archivo que contiene una colección de palabras que forma un diccionario de aplicación.
+Un archivo que contiene una colección de palabras que forma un diccionario de aplicaciones.
 
 </dd> </dl>
 

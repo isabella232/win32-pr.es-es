@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f9ab63d23a4370c2c64143d2289bd1324a3ebf684d30caf06db3eab2cd4e2915
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5087177448b01763bd94acb9b50c27c6cdf38815
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117730898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060711"
 ---
 # <a name="d3dxvec2add-function"></a>Función D3DXVec2Add
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
 Puntero a una [**estructura D3DXVECTOR2**](d3dxvector2.md) que es la suma de los dos vectores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec2Add** se puede usar como parámetro para otra función.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

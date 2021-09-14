@@ -4,12 +4,12 @@ ms.assetid: f6de9e74-85fa-4f36-9d7d-3d95f2dbf873
 title: EC_CLOCK_CHANGED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 760c947c74a88f9c37ba75ffb55c49e5581c370ef4cc153aee8ebf377bf29246
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7f6a1346c4d445245e62c4823edb4f2cc5accfcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119965965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061200"
 ---
 # <a name="ec_clock_changed"></a>CAMBIO \_ DEL RELOJ DE LA \_ EC
 
@@ -37,7 +37,7 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El administrador de gráficos de filtros envía este evento cuando se llama a su método [**IMediaFilter::SetSyncSource.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource)
 
@@ -51,7 +51,7 @@ El administrador de gráficos de filtros envía este evento cuando se llama a su
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

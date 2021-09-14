@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a183079e954b3a0d8b07fc1d7daf039db8fcc840243a6ea421b2390ce02a3625
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f965885d4a7a12e09c8875f71032ce2fded61bd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118661687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061788"
 ---
 # <a name="cbaseallocatorgetbuffer-method"></a>Método CBaseAllocator.GetBuffer
 
@@ -48,7 +48,7 @@ HRESULT GetBuffer(
 *ppBuffer* 
 </dt> <dd>
 
-Recibe un puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) búfer. El autor de la llamada debe liberar la interfaz.
+Recibe un puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) búfer. El autor de la llamada debe liberar la interfaz .
 
 </dd> <dt>
 
@@ -101,13 +101,13 @@ Devuelve uno de los siguientes **valores HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-A menos que el autor de la llamada especifique la marca **\_ \_ NOWAIT de AM GBF** en *dwFlags*, este método se bloquea hasta que el ejemplo siguiente está disponible.
+A menos que el autor de la llamada especifique la marca **\_ \_ NOWAIT de AM GBF** en *dwFlags,* este método se bloquea hasta que el ejemplo siguiente esté disponible.
 
-El ejemplo de medio recuperado tiene un puntero válido al búfer asignado. El autor de la llamada es responsable de establecer cualquier otra propiedad en el ejemplo, como las marcas de tiempo, las horas del medio o la propiedad de punto de sincronización. Para obtener más información, vea [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample).
+El ejemplo de medio recuperado tiene un puntero válido al búfer asignado. El autor de la llamada es responsable de establecer cualquier otra propiedad del ejemplo, como las marcas de tiempo, las horas de los medios o la propiedad de punto de sincronización. Para obtener más información, vea [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample).
 
 En la clase base, se omiten los parámetros *pStartTime* y *pEndTime.* Las clases derivadas pueden usar estos valores. Por ejemplo, el asignador del filtro [Representador](video-renderer-filter.md) de vídeo usa estos valores para sincronizar la conmutación entre las superficies de DirectDraw.
 
-Si el método necesita esperar en un ejemplo, incrementa el recuento de objetos en espera ([**CBaseAllocator::m \_ lCount**](cbaseallocator-m-lcount.md)) y llama a la función [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) en el semáforo ([**CBaseAllocator::m \_ hSem**](cbaseallocator-m-hsem.md)). Cuando un ejemplo está disponible, llama al método [**CBaseAllocator::ReleaseBuffer**](cbaseallocator-releasebuffer.md) en el asignador, lo que aumenta el recuento de semáforos en **m \_ lCount** (lo que libera los subprocesos en espera) y establece **m \_ lCount** de nuevo en cero.
+Si el método necesita esperar en un ejemplo, incrementa el recuento de objetos en espera ([**CBaseAllocator::m \_ lCount**](cbaseallocator-m-lcount.md)) y las llamadas a la función [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) en el semáforo ([**CBaseAllocator::m \_ hSem**](cbaseallocator-m-hsem.md)). Cuando un ejemplo está disponible, llama al método [**CBaseAllocator::ReleaseBuffer**](cbaseallocator-releasebuffer.md) en el asignador, lo que aumenta el recuento de semáforos en **m \_ lCount** (liberando así los subprocesos en espera) y establece **m \_ lCount** de nuevo en cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ Si el método necesita esperar en un ejemplo, incrementa el recuento de objetos 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

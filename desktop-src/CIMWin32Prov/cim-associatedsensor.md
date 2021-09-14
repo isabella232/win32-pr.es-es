@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4e70ac657cd1bacff2d396cad08253d50bca422dde2044f562dfda179396e18c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50eac6b8bd933762df0da0213c420f5895b74640
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062750"
 ---
 # <a name="cim_associatedsensor-class"></a>Cim \_ AssociatedSensor (clase)
 
 La **clase \_ AssociatedSensor de CIM** asocia un sensor instalado a un dispositivo lógico. El sensor mide las propiedades críticas de entrada y salida, y se puede incluir con el dispositivo o instalarse cerca.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_AssociatedSensor : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ AssociatedSensor de CIM** tiene estos tipos de miembros:
 
@@ -76,32 +76,32 @@ Un [**\_ sensor CIM**](cim-sensor.md) que describe el sensor.
 **Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ Cim LogicalDevice**
+Tipo de datos: **CIM \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ dispositivo lógico CIM**](cim-logicaldevice.md) que describe el dispositivo lógico para el que el sensor mide la información.
+Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que describe el dispositivo lógico para el que el sensor mide la información.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ AssociatedSensor de CIM** se deriva de la dependencia [**\_ CIM**](cim-dependency.md).
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ AssociatedSensor,** vea [Clases win32](win32-provider.md).
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ AssociatedSensor,** vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

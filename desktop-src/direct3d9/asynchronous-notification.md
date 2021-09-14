@@ -4,12 +4,12 @@ ms.assetid: 81e1c5c5-03bc-4598-814e-14e56513e221
 title: Notificación asincrónica (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbd23a64e613bbbae56154dc35c05bcf08b75c4c91f306360153e775e12c40ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8aee8acb791e2e1e2de7eb305cc19df4e7711e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123422"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060757"
 ---
 # <a name="asynchronous-notification-direct3d-9"></a>Notificación asincrónica (Direct3D 9)
 
@@ -19,7 +19,7 @@ Cree una consulta [**mediante IDirect3DDevice9::CreateQuery**](/windows/desktop/
 
 La aplicación tiene una opción para forzar al tiempo de ejecución a vaciar la consulta en el controlador mediante D3DGETDATA FLUSH con \_ [**IDirect3DQuery9::GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata). Provoca un vaciado, lo que obliga al controlador a ver la consulta. En este caso, se devuelve D3DERR \_ DEVICELOST si el dispositivo se pierde.
 
-Todas las consultas se pierden cuando se pierde el dispositivo, la aplicación tiene que volver a crearlas. Si el dispositivo no admite la consulta y pQueryID es **NULL,** se producirá un error en la creación de la consulta con D3DERR \_ INVALIDCALL.
+Todas las consultas se pierden cuando se pierde el dispositivo, la aplicación tiene que volver a crearlas. Si el dispositivo no admite la consulta y el valor de pQueryID es **NULL,** se producirá un error en la creación de la consulta con D3DERR \_ INVALIDCALL.
 
 En la tabla siguiente se resume información importante sobre cada tipo de consulta.
 
