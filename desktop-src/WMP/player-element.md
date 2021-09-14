@@ -10,12 +10,12 @@ keywords:
 - elements,PLAYER
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8bef2e7758a0146ae6197d17dc3790011a758f9d2fa4e3d54af9461a8b870c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a50eb4383eab279c28b75467a9ed803501e7720b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118338130"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242414"
 ---
 # <a name="player-element"></a>ELEMENTO PLAYER
 
@@ -47,7 +47,7 @@ El **elemento PLAYER** puede implementar controladores de eventos para los sigui
 | [CurrentPlaylistChange](player-player-currentplaylistchange.md)                                 | Se produce cuando cambia la lista de reproducción actual.                                        |
 | [CurrentPlaylistItemAvailable](player-player-currentplaylistitemavailable.md)                   | Se produce cuando el elemento de lista de reproducción actual está disponible.                         |
 | [DomainChange](player-player-domainchange.md)                                                   | Se produce cuando cambia el dominio de DVD.                                              |
-| [Error](player-player-error.md)                                                                 | Se produce cuando el control Reproductor de Windows Media tiene una condición de error.             |
+| [Error](player-player-error.md)                                                                 | Se produce cuando el Reproductor de Windows Media control tiene una condición de error.             |
 | [MarkerHit](player-player-markerhit.md)                                                         | Se produce cuando Reproductor de Windows Media encuentra un marcador en el clip.                |
 | [MediaChange](player-player-mediachange.md)                                                     | Se produce cuando cambia un elemento multimedia.                                                |
 | [MediaCollectionAttributeString agregado](player-player-mediacollectionattributestringadded.md)     | Se produce cuando se agrega un valor de atributo a la biblioteca.                          |
@@ -64,7 +64,7 @@ El **elemento PLAYER** puede implementar controladores de eventos para los sigui
 | [PlaylistCollectionPlaylistRemoved](player-player-playlistcollectionplaylistremoved.md)         | Se produce cuando se quita una lista de reproducción de la colección de listas de reproducción.                  |
 | [PlayStateChange](player-player-playstatechange.md)                                             | Se produce cuando el *reproductor*. **cambios de playState.**                                      |
 | [PositionChange](player-player-positionchange.md)                                               | Se produce cuando el *reproductor*. *controla*. **currentPosition** cambia.                     |
-| [ScriptCommand](player-player-scriptcommand.md)                                                 | Se produce cuando Reproductor de Windows Media un comando de script insertado en un archivo. |
+| [ScriptCommand](player-player-scriptcommand.md)                                                 | Se produce cuando Reproductor de Windows Media encuentra un comando de script insertado en un archivo. |
 | [StatusChange](player-player-statuschange.md)                                                   | Se produce cuando cambia **el valor de** la propiedad status.                               |
 
 

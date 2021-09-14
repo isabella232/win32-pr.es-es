@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 185d1ee79d7001be49116ba9d980552eca57f082e68e650dc66f4f3aa0dbdb97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34880ec0a59f6456a969755da9f0b5f81b3db2c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242379"
 ---
-# <a name="iwmpmetadatapicturepicturetype-property"></a>IWMPMetadataPicture::p ictureType
+# <a name="iwmpmetadatapicturepicturetype-property"></a>Propiedad IWMPMetadataPicture::p ictureType
 
 La `pictureType` propiedad obtiene el tipo de imagen de la imagen representada por el atributo de metadatos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property pictureType As System.String
 
 **System.String que** es el tipo de imagen de la imagen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 

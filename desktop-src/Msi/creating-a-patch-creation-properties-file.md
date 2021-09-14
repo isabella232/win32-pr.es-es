@@ -4,16 +4,16 @@ ms.assetid: 0653d8f6-89b0-4c56-ae51-3c7cb7df2909
 title: Crear un archivo de propiedades de creación de revisiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50873fd508aa9f31435bd401284d38d13310991e150b28f4e24e5ec27f505dc8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2775f8521731b43264df315ae05a874e37dd3ffc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118379410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158735"
 ---
 # <a name="creating-a-patch-creation-properties-file"></a>Crear un archivo de propiedades de creación de revisiones
 
-Para reproducir el paquete de revisión de ejemplo, necesita una herramienta de software capaz de crear y editar un Windows de revisión del instalador. Hay varias herramientas de creación de paquetes de revisión disponibles de proveedores de software independientes. En el ejemplo que se describe en las secciones siguientes se usa un editor de base de datos Windows Installer llamado Orca para crear un archivo de propiedades de creación de revisiones (extensión .csv). El archivo .msp se puede usar con las utilidades [Msimsp.exe](msimsp-exe.md) y [Patchwiz.dll](patchwiz-dll.md) para generar un paquete de revisión Windows Installer (extensión .msp). Orca, Msimsp.exe y Patchwiz.dll se proporcionan en los componentes del SDK de Windows para Windows [Installer .](platform-sdk-components-for-windows-installer-developers.md)
+Para reproducir el paquete de revisión de ejemplo, necesita una herramienta de software capaz de crear y editar un Windows de revisión del instalador. Hay varias herramientas de creación de paquetes de revisión disponibles de proveedores de software independientes. En el ejemplo que se describe en las secciones siguientes se usa un editor de base de datos Windows Installer llamado Orca para crear un archivo de propiedades de creación de revisiones (extensión .csv). El archivo .msp se puede usar con las utilidades [Msimsp.exe](msimsp-exe.md) y [Patchwiz.dll](patchwiz-dll.md) para generar un paquete de revisión Windows Installer (extensión .msp). Orca, Msimsp.exe y Patchwiz.dll se proporcionan en Windows SDK Components for Windows Installer Developers (Componentes Windows SDK para [Windows Installer).](platform-sdk-components-for-windows-installer-developers.md)
 
 También se proporciona un archivo de propiedades de creación de revisiones en blanco, template.asín. Realice una copia de template.fax y cambie el nombre de esta copia MNP2000.copie. Use Orca u otro editor de bases de datos para escribir los datos siguientes en la tabla Properties de MNP2000.oracle. La tabla Propiedades contiene la configuración global del paquete de revisión.
 
@@ -21,7 +21,7 @@ También se proporciona un archivo de propiedades de creación de revisiones en 
 
 
 
-| Nombre                               | Valor                                  |
+| Nombre                               | Value                                  |
 |------------------------------------|----------------------------------------|
 | AllowProductCodeMismatches         | 1                                      |
 | AllowProductVersionMajorMismatches | 1                                      |

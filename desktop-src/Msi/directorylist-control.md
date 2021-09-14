@@ -4,12 +4,12 @@ ms.assetid: 05e70381-28c0-4568-808e-ff2dee8ff790
 title: DirectoryList Control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ce0cf409f4ca7335bd032f1fc63831db88ace14424ef7a73cd3853c9ff3e2de
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ee6a1e48a25ae057c836c7b815dae18e7dcf5c3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158566"
 ---
 # <a name="directorylist-control"></a>DirectoryList Control
 
@@ -38,7 +38,7 @@ El control DirectoryList nunca muestra el contenido del campo Texto de la [tabla
 
 ## <a name="control-attributes"></a>Atributos de control
 
-Puede usar los atributos siguientes con este control. Para cambiar el valor de un atributo mediante un evento, suscribe el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumera el identificador del atributo en la columna Atributo . Escriba el identificador de ControlEvent en la columna Evento.
+Puede usar los atributos siguientes con este control. Para cambiar el valor de un atributo mediante un evento, suscriba el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumézcalo en la columna Atributo . Escriba el identificador de ControlEvent en la columna Evento.
 
 
 
@@ -50,7 +50,7 @@ Puede usar los atributos siguientes con este control. Para cambiar el valor de u
 | [PropertyValue](propertyvalue-control-attribute.md)               |                                  | Valor actual de la propiedad mostrada o modificada por este control. Si no se establece el bit de atributo indirecto, este es el valor de PropertyName. Si se establece el bit de atributo indirecto, este es el valor de IndirectPropertyName. Si el atributo cambia, el control refleja el nuevo valor.                                                                           |
 | [Texto](text-control-attribute.md)                                 |                                  | Para mostrar texto en lectores de pantalla, escriba el texto en la columna Texto de la [tabla Control](control-table.md). Consulte [Accesibilidad.](accessibility.md)                                                                                                                                                                                                                 |
 | [Visible](visible-control-attribute.md)                           | 0x00000000 0x00000001<br/> | Control oculto. Control visible.<br/> Incluya este bit en la palabra de bits de la columna Atributos de la [tabla Control](control-table.md)para que el control sea visible u oculto tras su creación.<br/> También puede ocultar o mostrar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                     |
-| [Habilitado](enabled-control-attribute.md)                           | 0x00000000 0x00000002<br/> | Control en estado deshabilitado. Control en un estado habilitado.<br/> Incluya este bit en la palabra de bits en la columna Atributos del [control para](control-table.md) habilitar el control en la creación.<br/> También puede habilitar o deshabilitar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                   |
+| [Enabled](enabled-control-attribute.md)                           | 0x00000000 0x00000002<br/> | Control en estado deshabilitado. Control en un estado habilitado.<br/> Incluya este bit en la palabra de bits en la columna Atributos del [control para](control-table.md) habilitar el control en la creación.<br/> También puede habilitar o deshabilitar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                   |
 | [Sunken](sunken-control-attribute.md)                             | 0x00000000 0x00000004<br/> | Muestra el estilo visual predeterminado. Muestra el control con un aspecto 3D y bloqueado.<br/> Incluya estos bits en la palabra de bits en la columna Atributos de la [tabla Control](control-table.md).<br/>                                                                                                                                                             |
 | [Indirecto](indirect-control-attribute.md)                         | 0x00000000 0x00000008<br/> | El control muestra o cambia el valor de la propiedad en la columna Propiedad de la [tabla Control](control-table.md). El control muestra o cambia el valor de la propiedad que tiene el identificador enumerado en la columna Propiedad de la tabla Control.<br/> Determina si se hace referencia indirectamente a la propiedad asociada a este control.<br/> |
 | [RTLRO](rtlro-control-attribute.md)                               | 0x00000000 0x00000020<br/> | El texto del control se muestra en orden de lectura de izquierda a derecha. El texto del control se muestra en orden de lectura de derecha a izquierda.<br/>                                                                                                                                                                                                                              |
@@ -62,7 +62,7 @@ Puede usar los atributos siguientes con este control. Para cambiar el valor de u
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este control se puede crear desde la clase \_ WC LISTVIEW mediante la [**función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Tiene los estilos **LVS \_ LIST**, **LVS \_ EDITLABELS,** **WS \_ VSCROLL,** **LVS \_ SHAREIMAGELISTS**, **LVS \_ AUTOARRANGE**, **LVS \_ SINGLESEL,** **WS \_ BORDER**, **LVS \_ SORTASCENDING,** **WS \_ CHILD,** **WS \_ GROUP** y **WS \_ TABSTOP.**
 

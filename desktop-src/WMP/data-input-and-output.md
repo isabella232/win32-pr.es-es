@@ -9,18 +9,18 @@ keywords:
 - Complementos de DSP, entrada y salida de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d31e7c6fba24451d65e59c3fb9f56ec6b1413be3d595530414c25c52964b9b15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39f66946dc796337d1f1e638cfe3828b3cbfbb6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242547"
 ---
 # <a name="data-input-and-output"></a>Entrada y salida de datos
 
-Reproductor de Windows Media proporciona datos de audio o vídeo a los complementos DSP a través de un búfer de entrada asignado por Reproductor de Windows Media. Los complementos de DSP devuelven datos procesados para Reproductor de Windows Media a través de un búfer de salida que también se asigna mediante Reproductor de Windows Media. Reproductor de Windows Media el proceso de pasar datos entre sí y el complemento DSP mediante una llamada a los métodos implementados por el complemento. Para un complemento que actúa como un objeto multimedia DirectX (DMO), el proceso funciona de la siguiente manera:
+Reproductor de Windows Media datos de audio o vídeo a los complementos DSP a través de un búfer de entrada asignado por Reproductor de Windows Media. Los complementos de DSP devuelven datos procesados para Reproductor de Windows Media a través de un búfer de salida que también se asigna mediante Reproductor de Windows Media. Reproductor de Windows Media el proceso de pasar datos entre sí y el complemento DSP mediante una llamada a los métodos implementados por el complemento. Para un complemento que actúa como un objeto multimedia DirectX (DMO), el proceso funciona de la siguiente manera:
 
-1.  Reproductor de Windows Media llama a **IMediaObject::P rocessInput** y pasa un puntero a un objeto **IMediaBuffer** al complemento DE DSP.
+1.  Reproductor de Windows Media llama a **IMediaObject::P rocessInput** y pasa un puntero a un objeto **IMediaBuffer** al complemento DSP.
 2.  El complemento DSP mantiene un recuento de referencias en el objeto de búfer de entrada. El complemento DSP devuelve un HRESULT correcto o **con error adecuado.**
 3.  Reproductor de Windows Media llama a **IMediaObject::P rocessOutput** y pasa un puntero DMO una matriz de estructuras **OUTPUT DATA \_ \_ \_ BUFFER** (que contienen búferes de salida) al complemento DSP.
 4.  El complemento DSP procesa los datos en el búfer de entrada y, a continuación, copia los datos en el búfer de salida adecuado. El complemento DSP libera el recuento de referencias en el objeto de búfer de entrada cuando se han procesado todos los datos del búfer. A continuación, el complemento DSP devuelve un valor HRESULT correcto o **de error adecuado.**

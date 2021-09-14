@@ -1,19 +1,19 @@
 ---
-description: Una instalación administrativa crea una imagen de origen de una aplicación o un producto en una red.
+description: Una instalación administrativa crea una imagen de origen de una aplicación o producto en una red.
 ms.assetid: 40755461-317f-4764-aaa2-6b8471d52f55
 title: Aplicación de actualizaciones pequeñas mediante la aplicación de revisiones a una imagen administrativa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e02c8e3eb606dc92c60a86dd8e3216cbc99603200a87e5ee5dda0983fb7ad34d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1dad22d91e101d79d2bf6ecc0efc8ea9358eda2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119559165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159114"
 ---
 # <a name="applying-small-updates-by-patching-an-administrative-image"></a>Aplicación de actualizaciones pequeñas mediante la aplicación de revisiones a una imagen administrativa
 
-Una [instalación administrativa](administrative-installation.md) crea una imagen de origen de una aplicación o un producto en una red. Los usuarios de un grupo de trabajo que tienen acceso a esta imagen administrativa pueden instalar el producto desde este origen. La actualización de la aplicación para este grupo de trabajo se realiza en dos pasos:
+Una [instalación administrativa](administrative-installation.md) crea una imagen de origen de una aplicación o producto en una red. Los usuarios de un grupo de trabajo que tienen acceso a esta imagen administrativa pueden instalar el producto desde este origen. La actualización de la aplicación para este grupo de trabajo se realiza en dos pasos:
 
 -   En primer lugar, la revisión de actualización pequeña se puede aplicar a la imagen administrativa.
 -   En segundo lugar, los cambios en la actualización pequeña deben propagarse a los usuarios.

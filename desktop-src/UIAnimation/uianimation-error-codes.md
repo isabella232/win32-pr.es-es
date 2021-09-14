@@ -33,12 +33,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44d725874de9c511558cef6ebbe8652905a7f5dac6372230385eaa3253ba3454
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb7c63066690b15ec8fad8ef5b9f74ed5cf2fbc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119513665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242066"
 ---
 # <a name="windows-animation-error-codes"></a>Windows Códigos de error de animación
 
@@ -46,7 +46,7 @@ Si se produce un error, Windows Animation devuelve un código como **un valor HR
 
 <dl> <dt>
 
-<span id="UI_E_CREATE_FAILED"></span><span id="ui_e_create_failed"></span>**ERROR \_ EN LA CREACIÓN DE LA INTERFAZ DE USUARIO \_ \_ E**
+<span id="UI_E_CREATE_FAILED"></span><span id="ui_e_create_failed"></span>**ERROR EN \_ LA CREACIÓN DE LA INTERFAZ DE USUARIO \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x802A0001
@@ -67,7 +67,7 @@ No se pudo crear el objeto.
 
 
 
-Se [**ha llamado**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown) al método Shutdown en el administrador de animaciones, lo que hace que el administrador de animaciones se apague y se liberarán todas las variables de animación y guiones gráficos que creó.
+Se [**ha llamado**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown) al método Shutdown en el administrador de animación, lo que hace que el administrador de animaciones se apague y se liberarán todas las variables de animación y guiones gráficos que creó.
 
 > [!Note]  
 > No se puede llamar a ningún método en ningún objeto de animación después de [**apagar**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown).
@@ -77,7 +77,7 @@ Se [**ha llamado**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimation
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_ILLEGAL_REENTRANCY"></span><span id="ui_e_illegal_reentrancy"></span>**REENLACE ILEGAL DE IU \_ E \_ \_**
+<span id="UI_E_ILLEGAL_REENTRANCY"></span><span id="ui_e_illegal_reentrancy"></span>**\_ \_ REENENLACE NO ES DE LA INTERFAZ DE USUARIO \_ E**
 </dt> <dd> <dl> <dt>
 
 0x802A0003
@@ -111,7 +111,7 @@ Este objeto se ha sellado, por lo que este cambio ya no se permite.
 
 
 
-El valor solicitado nunca se ha establecido y, por lo tanto, no se puede recuperar.
+El valor solicitado nunca se ha establecido y, por tanto, no se puede recuperar.
 
 
 </dt> </dl> </dd> <dt>
@@ -129,7 +129,7 @@ No se puede determinar el valor solicitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_INVALID_OUTPUT"></span><span id="ui_e_invalid_output"></span>**SALIDA \_ NO VÁLIDA DE UI E \_ \_**
+<span id="UI_E_INVALID_OUTPUT"></span><span id="ui_e_invalid_output"></span>**SALIDA NO \_ VÁLIDA DE LA INTERFAZ DE USUARIO \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x802A0007
@@ -207,7 +207,7 @@ Solo se puede llamar a este método desde el subproceso que creó el objeto .
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_STORYBOARD_ACTIVE"></span><span id="ui_e_storyboard_active"></span>**UI \_ E \_ STORYBOARD \_ ACTIVE**
+<span id="UI_E_STORYBOARD_ACTIVE"></span><span id="ui_e_storyboard_active"></span>**GUIÓN \_ GRÁFICO DE INTERFAZ DE USUARIO E \_ \_ ACTIVO**
 </dt> <dd> <dl> <dt>
 
 0x802A0101
@@ -220,7 +220,7 @@ El guión gráfico está actualmente en la programación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_STORYBOARD_NOT_PLAYING"></span><span id="ui_e_storyboard_not_playing"></span>**GUIÓN \_ GRÁFICO DE INTERFAZ DE USUARIO E NO \_ \_ \_ REPRODUCIENDO**
+<span id="UI_E_STORYBOARD_NOT_PLAYING"></span><span id="ui_e_storyboard_not_playing"></span>**GUIÓN \_ GRÁFICO DE IU E \_ NO \_ \_ REPRODUCIENDO**
 </dt> <dd> <dl> <dt>
 
 0x802A0102
@@ -233,7 +233,7 @@ El guión gráfico no se está reproduciendo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_START_KEYFRAME_AFTER_END"></span><span id="ui_e_start_keyframe_after_end"></span>**FOTOGRAMA CLAVE \_ DE INICIO \_ DE IU E \_ DESPUÉS DEL \_ \_ FINAL**
+<span id="UI_E_START_KEYFRAME_AFTER_END"></span><span id="ui_e_start_keyframe_after_end"></span>**FOTOGRAMA CLAVE \_ DE INICIO \_ DE \_ IU E DESPUÉS DEL \_ \_ FINAL**
 </dt> <dd> <dl> <dt>
 
 0x802A0103
@@ -254,7 +254,7 @@ El fotograma clave inicial puede producirse después del fotograma clave final.
 
 
 
-Es posible que no sea posible determinar la hora del fotograma clave final cuando se alcanza el fotograma clave de inicio.
+Es posible que no sea posible determinar la hora del fotograma clave final cuando se alcanza el fotograma clave inicial.
 
 
 </dt> </dl> </dd> <dt>
@@ -272,7 +272,7 @@ Dos partes repetidas de un guión gráfico pueden superponerse.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_ALREADY_USED"></span><span id="ui_e_transition_already_used"></span>**UI E TRANSITION ALREADY USED (TRANSICIÓN \_ DE IU E \_ YA \_ \_ USADA)**
+<span id="UI_E_TRANSITION_ALREADY_USED"></span><span id="ui_e_transition_already_used"></span>**TRANSICIÓN \_ DE IU E \_ YA \_ \_ USADA**
 </dt> <dd> <dl> <dt>
 
 0x802A0106
@@ -285,7 +285,7 @@ La transición ya se ha agregado a un guión gráfico diferente o se ha agregado
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_NOT_IN_STORYBOARD"></span><span id="ui_e_transition_not_in_storyboard"></span>**TRANSICIÓN \_ DE IU E \_ NO EN \_ \_ STORYBOARD \_**
+<span id="UI_E_TRANSITION_NOT_IN_STORYBOARD"></span><span id="ui_e_transition_not_in_storyboard"></span>**TRANSICIÓN \_ DE IU E \_ NO EN EL \_ \_ \_ GUIÓN GRÁFICO**
 </dt> <dd> <dl> <dt>
 
 0x802A0107
@@ -298,7 +298,7 @@ La transición no se ha agregado a ningún guión gráfico.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_ECLIPSED"></span><span id="ui_e_transition_eclipsed"></span>**UI \_ E \_ TRANSITION \_ ECLIPSED**
+<span id="UI_E_TRANSITION_ECLIPSED"></span><span id="ui_e_transition_eclipsed"></span>**IU \_ E \_ TRANSITION \_ ECLIPSED**
 </dt> <dd> <dl> <dt>
 
 0x802A0108
@@ -311,7 +311,7 @@ La transición podría eclipse el principio de otra transición en el guión gr�
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TIME_BEFORE_LAST_UPDATE"></span><span id="ui_e_time_before_last_update"></span>**TIEMPO \_ DE E DE LA INTERFAZ DE USUARIO ANTES DE LA ÚLTIMA \_ \_ \_ \_ ACTUALIZACIÓN**
+<span id="UI_E_TIME_BEFORE_LAST_UPDATE"></span><span id="ui_e_time_before_last_update"></span>**HORA \_ E DE LA INTERFAZ DE USUARIO ANTERIOR A LA ÚLTIMA \_ \_ \_ \_ ACTUALIZACIÓN**
 </dt> <dd> <dl> <dt>
 
 0x802A0109
@@ -324,7 +324,7 @@ La hora especificada es anterior a la hora pasada a la última actualización.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TIMER_CLIENT_ALREADY_CONNECTED"></span><span id="ui_e_timer_client_already_connected"></span>**CLIENTE \_ DE TEMPORIZADOR DE \_ \_ IU E YA \_ \_ CONECTADO**
+<span id="UI_E_TIMER_CLIENT_ALREADY_CONNECTED"></span><span id="ui_e_timer_client_already_connected"></span>**CLIENTE \_ DE TEMPORIZADOR E DE INTERFAZ DE USUARIO YA \_ \_ \_ \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 0x802A010A
@@ -341,11 +341,11 @@ Este cliente ya está conectado a un temporizador.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7, Windows vista y actualización de plataforma solo para Windows de escritorio de Vista \[\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
-| Header<br/>                   | <dl> <dt>Winerror.h</dt> </dl>           |
+| Encabezado<br/>                   | <dl> <dt>Winerror.h</dt> </dl>           |
 
 
 

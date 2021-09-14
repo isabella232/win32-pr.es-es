@@ -4,12 +4,12 @@ ms.assetid: 3D4C1A81-A9BA-427F-93DB-F522A0616EAB
 title: MF_MT_MPEG2_STANDARD atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba3c773fbf453bba77cb3f0472894e251e56f48b0cebe2a09cb9bf3ea6288c35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0650a68975f449ea938b41872005e11d79922393
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269143"
 ---
 # <a name="mf_mt_mpeg2_standard-attribute"></a>Atributo \_ MF MT \_ MPEG2 \_ STANDARD
 
@@ -21,7 +21,7 @@ Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una s
 
 
 
-| Valor                                                                                                | Significado                                                                    |
+| Value                                                                                                | Significado                                                                    |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | ESTÁNDAR MPEG-2 PS o TS.<br/>                                       |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Estándar de Advanced Tv Systems Committee (ATSC).<br/>          |
@@ -36,15 +36,15 @@ Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una s
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

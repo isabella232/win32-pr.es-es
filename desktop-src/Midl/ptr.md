@@ -3,7 +3,7 @@ title: ptr (atributo)
 description: El atributo \ ptr\ designa un puntero como puntero completo.
 ms.assetid: a1233a25-b651-4a01-8abf-a64dc9ee168e
 keywords:
-- Atributo ptr MIDL
+- MidL del atributo ptr
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53e9b85be5e9073a272dafd63a2a01ba64f440f90cc5d9c41f44260f235f9ab5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b2d8b2ee2e3ea4daccd1c4fa37ff1c1f1899dd3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119927425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159406"
 ---
 # <a name="ptr-attribute"></a>ptr (atributo)
 
@@ -57,7 +57,7 @@ Especifica uno o varios atributos que se aplican al tipo. Los atributos de tipo 
 *type-specifier* 
 </dt> <dd>
 
-Especifica un tipo [base](midl-base-types.md), [**struct**](struct.md), [**union**](union.md)o tipo [**de enumeración**](enum.md) o identificador de tipo. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
+Especifica un tipo [base](midl-base-types.md), [**struct**](struct.md), [**unión**](union.md)o tipo [**de enumeración**](enum.md) o identificador de tipo. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Especifica declaradores estándar de C, como identificadores, declaradores de pu
 *field-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos de campo que se aplican a la estructura o al parámetro de función o miembro de unión. Los atributos de campo válidos incluyen primero es , el último es , length es , max es , size es ; la cadena de atributos de uso , omitir y el identificador de contexto ; el atributo de puntero ref , unique o **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](ref.md) **\]** **\[** [](unique.md) **\]** **\[ ptr \]**; **\[** [**\_**](switch-type.md) **\]** y el tipo de modificador de atributo union . Separe varios atributos de campo con comas.
+Especifica cero o más atributos de campo que se aplican al parámetro de función o miembro de estructura o unión. Los atributos de campo válidos incluyen primero , el último es , length es , max es , size es ; la cadena de atributos de uso , ignore y el identificador de contexto ; el atributo de puntero ref , unique o **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](ref.md) **\]** **\[** [](unique.md) **\]** **\[ ptr \]**; **\[** [**\_**](switch-type.md) **\]** y el tipo de modificador de atributo union . Separe varios atributos de campo con comas.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Especifica al menos un declarador de puntero al que se aplica el atributo **\[ p
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento remoto.
@@ -106,13 +106,13 @@ Especifica el nombre del procedimiento remoto.
 *parameter-attribute-list* 
 </dt> <dd>
 
-Consta de cero o más atributos adecuados para el tipo de parámetro especificado. Los atributos de parámetro pueden tomar los atributos [**direccionales dentro**](in.md) y [**fuera**](out-idl.md)de ; los atributos de campo primero son [**, \_**](first-is.md)el último es [**, \_**](last-is.md)length es [**\_ ,**](length-is.md) [**\_**](context-handle.md) max es , size es y switch [**\_ type**](switch-type.md); el atributo de puntero [**ref**](ref.md), [**unique**](unique.md)o **\[ \] ptr**; y el identificador de contexto de los atributos de uso y la [**cadena**](string.md). [**\_**](max-is.md) [**\_**](size-is.md) El atributo usage [**ignore no**](ignore.md) se puede usar como atributo de parámetro. Separe varios atributos con comas.
+Consta de cero o más atributos adecuados para el tipo de parámetro especificado. Los atributos de parámetro pueden tomar los atributos [**direccionales dentro**](in.md) y [**fuera**](out-idl.md)de ; los atributos de campo primero son [**, \_**](first-is.md)el último es [**, \_**](last-is.md)length es [**\_ ,**](length-is.md) [**\_**](context-handle.md) max es , size es y [**switch \_ type**](switch-type.md); el atributo de puntero [**ref**](ref.md), [**unique**](unique.md)o **\[ \] ptr**; y el identificador de contexto de los atributos de uso y la [**cadena**](string.md). [**\_**](max-is.md) [**\_**](size-is.md) El atributo usage [**ignore no**](ignore.md) se puede usar como atributo de parámetro. Separe varios atributos con comas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El puntero completo designado por el **\[ atributo ptr \]** se aproxima a la funcionalidad completa del puntero del lenguaje C. El puntero completo puede tener el valor **NULL** y puede cambiar durante la llamada de **NULL** a no **NULL.** Storage punteros completos pueden acceder a ellos otros nombres de la aplicación que admitan alias y ciclos. Esta funcionalidad requiere más sobrecarga durante una llamada a procedimiento remoto para identificar los datos a los que hace referencia el puntero, determinar si el valor es **NULL** y detectar si dos punteros apuntan a los mismos datos.
+El puntero completo designado por el **\[ atributo ptr \]** se aproxima a la funcionalidad completa del puntero en lenguaje C. El puntero completo puede tener el valor **NULL** y puede cambiar durante la llamada de **NULL** a **non-NULL.** Storage punteros completos a los que apuntan otros nombres de la aplicación que admiten alias y ciclos. Esta funcionalidad requiere más sobrecarga durante una llamada a procedimiento remoto para identificar los datos a los que hace referencia el puntero, determinar si el valor es **NULL** y detectar si dos punteros apuntan a los mismos datos.
 
 Use punteros completos para:
 
@@ -122,11 +122,11 @@ Use punteros completos para:
 
 No se pueden usar punteros completos (y únicos) para describir el tamaño de una matriz o unión porque estos punteros pueden tener el valor **NULL**. Esta restricción de MIDL evita un error que puede producirse cuando se usa un valor **NULL** como tamaño.
 
-Se supone que los punteros de referencia y únicos no provocan ningún alias de datos. Un gráfico dirigido obtenido a partir de un puntero único o de referencia y siguiendo solo punteros únicos o de referencia no contiene ni reconvergencia ni ciclos.
+Se supone que los punteros únicos y de referencia no provocan ningún alias de los datos. Un gráfico dirigido obtenido a partir de un puntero único o de referencia y siguiendo solo punteros únicos o de referencia no contiene ninguna reconvergencia ni ciclos.
 
 Para evitar el alias, todos los valores de puntero deben obtenerse de un puntero de entrada de la misma clase de puntero. Si más de un puntero apunta a la misma ubicación de memoria, todos estos punteros deben ser punteros completos.
 
-En algunos casos, se pueden mezclar punteros completos y únicos. A un puntero completo se le puede asignar el valor de un puntero único, siempre que la asignación no infrinja las restricciones para cambiar el valor de un puntero único. Sin embargo, al asignar a un puntero único el valor de un puntero completo, puede provocar alias.
+En algunos casos, se pueden mezclar punteros completos y únicos. Se puede asignar a un puntero completo el valor de un puntero único, siempre y cuando la asignación no infrinja las restricciones para cambiar el valor de un puntero único. Sin embargo, al asignar a un puntero único el valor de un puntero completo, puede provocar alias.
 
 La combinación de punteros completos y únicos puede provocar alias, como se muestra en el ejemplo siguiente:
 
@@ -153,7 +153,7 @@ t->right = &h;
 // t->left->pdata == t->right->pdata == &a
 ```
 
-Aunque "t->left" y "t->right" apuntan a ubicaciones de memoria únicas, se asigna un alias a "t->left->pdata" y "t->right->pdata". Por esta razón, los algoritmos de compatibilidad con alias deben seguir todos los punteros (incluidos los punteros únicos y de referencia) que finalmente pueden alcanzar un puntero completo.
+Aunque "t->left" y "t->right" apuntan a ubicaciones de memoria únicas, "t->left->pdata" y "t->right->pdata" tienen alias. Por esta razón, los algoritmos de compatibilidad con alias deben seguir todos los punteros (incluidos los punteros únicos y de referencia) que pueden llegar finalmente a un puntero completo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -193,7 +193,7 @@ typedef [ptr, string] unsigned char * MY_STRING_TYPE;
 [**Enum**](enum.md)
 </dt> <dt>
 
-[**en \_ primer lugar es**](first-is.md)
+[**en primer \_ lugar es**](first-is.md)
 </dt> <dt>
 
 [**handle**](handle.md)
@@ -238,7 +238,7 @@ typedef [ptr, string] unsigned char * MY_STRING_TYPE;
 [**transmitir \_ como**](transmit-as.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> <dt>
 
 [**Único**](unique.md)

@@ -4,12 +4,12 @@ ms.assetid: f7b265df-4b34-44ea-85ab-8dbca4797517
 title: Transformaciones insertadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae8d7afb2b28599cb9ee2f10c4bc1fb25fbb0939fe68da5e817972eb8fc94236
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 301e7f188da1a46411636ef90b7e6ae327a06c22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118637467"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158498"
 ---
 # <a name="embedded-transforms"></a>Transformaciones insertadas
 

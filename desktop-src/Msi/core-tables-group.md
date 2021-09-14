@@ -4,12 +4,12 @@ ms.assetid: ec4f585d-cbd5-4c25-aaf4-1c1333fd4587
 title: Grupo de tablas principales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a8704a13e71f019e3d0686384057d3f209de06530c97bda6f0a63ff352d4db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5a5cc87e80c60505025825353272699db574bd1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118948549"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158757"
 ---
 # <a name="core-tables-group"></a>Grupo de tablas principales
 
@@ -17,7 +17,7 @@ Para obtener más información sobre el diagrama siguiente, vea la leyenda del d
 
 ![grupo de tablas principales](images/core.png)
 
-El grupo principal consta de tablas que describen las características y componentes fundamentales de la aplicación y el paquete del instalador. Por lo tanto, los desarrolladores de paquetes de instalación deben considerar primero cómo rellenar estas tablas porque la organización de gran parte de la base de datos se hará evidente a partir del contenido de este grupo.
+El grupo principal consta de tablas que describen las características y componentes fundamentales de la aplicación y el paquete del instalador. Por lo tanto, los desarrolladores de paquetes de instalación deben considerar primero cómo rellenar estas tablas, ya que la organización de gran parte de la base de datos se hará evidente a partir del contenido de este grupo.
 
 -   En [la tabla Características](feature-table.md) se enumeran todas las características que pertenecen a la aplicación.
 -   La [tabla Condition](condition-table.md) contiene las expresiones condicionales que determinan si se instalará o no una característica determinada.
@@ -28,7 +28,7 @@ El grupo principal consta de tablas que describen las características y compone
 -   La [tabla MsiAssembly especifica](msiassembly-table.md) Windows installer para .NET Framework ensamblados de Common Language Runtime y ensamblados Win32.
 -   La [tabla MsiAssemblyName](msiassemblyname-table.md) especifica el esquema para los elementos de un nombre de caché de ensamblados segura para un ensamblado de Common Language Runtime o Win32.
 -   La [tabla Complus contiene](complus-table.md) la información necesaria para instalar aplicaciones COM+.
--   La tabla [IsolatedComponent](isolatedcomponent-table.md) asocia el componente especificado en la columna Aplicación de componentes (normalmente un .exe) con el componente especificado en la columna Component Shared (normalmente un \_ archivo DLL \_ compartido).
+-   La [tabla IsolatedComponent](isolatedcomponent-table.md) asocia el componente especificado en la columna Aplicación de componentes (normalmente un .exe) con el componente especificado en la columna Component Shared (normalmente un \_ archivo DLL \_ compartido).
 -   La [tabla Upgrade contiene](upgrade-table.md) la información necesaria durante las actualizaciones [principales.](major-upgrades.md)
 
  

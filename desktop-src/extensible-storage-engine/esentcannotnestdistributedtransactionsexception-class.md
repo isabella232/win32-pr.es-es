@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93c13ce7d5593890c734705292f6be33fcb60eef21d8b5123c8c59f7e3f6e866
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 732b0995f75bb02174325489554aff2ece18a7f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120066415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241275"
 ---
 # <a name="esentcannotnestdistributedtransactionsexception-class"></a>Clase EsentCannotNestDistributedTransactionsException
 
-Clase base para JET_err. No se pueden realizar excepciones cannotNestDistributedTransactions.
+Clase base para JET_err. Excepciones de CannotNestDistributedTransactions.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -48,7 +48,7 @@ Clase base para JET_err. No se pueden realizar excepciones cannotNestDistributed
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

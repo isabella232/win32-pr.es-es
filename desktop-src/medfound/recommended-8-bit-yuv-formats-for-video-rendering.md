@@ -4,12 +4,12 @@ ms.assetid: 675d4c60-4c58-4f15-9bae-ffb0c389c608
 title: Formatos YUV de 8 bits recomendados para la representación en vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc6e30f33c59bedf9a2e842d2d33328bd97d8078d21bda90ae84af9af00ec113
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4505eb17f833040e0148ac98912f16af860b55b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119722131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268759"
 ---
 # <a name="recommended-8-bit-yuv-formats-for-video-rendering"></a>Formatos YUV de 8 bits recomendados para la representación en vídeo
 
@@ -19,7 +19,7 @@ Microsoft Corporation
 
 Abril de 2002, actualizado en noviembre de 2008
 
-En este tema se describen los formatos de color YUV de 8 bits que se recomiendan para la representación de vídeo en Windows sistema operativo. En este artículo se presentan técnicas para convertir entre formatos YUV y RGB, y también se proporcionan técnicas para mejorar elmuestreo de los formatos YUV. Este artículo está pensado para cualquier persona que trabaje con la decodificación o representación de vídeo de YUV en Windows.
+En este tema se describen los formatos de color YUV de 8 bits que se recomiendan para la representación de vídeo en el Windows operativo. En este artículo se presentan técnicas para convertir entre formatos YUV y RGB, y también se proporcionan técnicas para mejorar elmuestreo de los formatos YUV. Este artículo está pensado para cualquier persona que trabaje con la decodificación o representación de vídeo de YUV en Windows.
 
 ## <a name="introduction"></a>Introducción
 
@@ -54,7 +54,7 @@ En los diagramas siguientes se muestra cómo se muestrea el muestreo de cada una
 
 La forma dominante del muestreo 4:2:2 se define en la recomendación BT.601 de ITU-R. Hay dos variantes comunes de muestreo 4:2:0. Una de ellas se usa en vídeo MPEG-2 y la otra en MPEG-1 y en ITU-T Recomendaciones H.261 y H.263.
 
-En comparación con el esquema MPEG-1, es más sencillo convertir entre el esquema MPEG-2 y las cuadrículas de muestreo definidas para los formatos 4:2:2 y 4:4:4. Por esta razón, se prefiere el esquema MPEG-2 en Windows y se debe considerar la interpretación predeterminada de los formatos 4:2:0.
+En comparación con el esquema MPEG-1, es más sencillo convertir entre el esquema MPEG-2 y las cuadrículas de muestreo definidas para los formatos 4:2:2 y 4:4:4. Por este motivo, se prefiere el esquema MPEG-2 en Windows y se debe considerar la interpretación predeterminada de los formatos 4:2:0.
 
 ## <a name="surface-definitions"></a>Definiciones de surface
 
@@ -227,11 +227,11 @@ U = clip3(0, (2^M)-1, floor(2^(M-8) * (112*(B-L) / ((1-Kb)*S) + 128) + 0.5))
 V = clip3(0, (2^M)-1, floor(2^(M-8) * (112*(R-L) / ((1-Kr)*S) + 128) + 0.5))
 ```
 
-where
+, donde
 
 -   M es el número de bits por ejemplo YUV (M >= 8).
 -   Z es la variable de nivel negro. Para el equipo RGB, Z es igual a 0. Para vídeo de estudio RGB, Z es igual a 16 2^(N-8), donde N es el número de bits por muestra \* RGB (N >= 8).
--   S es la variable de escalado. Para el equipo RGB, S es igual a 255. Para vídeo de studio RGB, S es igual a 219 \* 2^(N-8).
+-   S es la variable de escalado. Para el equipo RGB, S es igual a 255. Para vídeo de estudio RGB, S es igual a 219 \* 2^(N-8).
 
 La función floor(x) devuelve el entero más grande menor o igual que x. La función clip3(x, y, z) se define de la siguiente manera:
 
@@ -240,25 +240,25 @@ clip3(x, y, z) = ((z < x) ? x : ((z > y) ? y : z))
 ```
 
 > [!Note]  
-> clip3 debe implementarse como una función en lugar de una macro de preprocesador; De lo contrario, se producirán varias evaluaciones de los argumentos.
+> clip3 debe implementarse como una función en lugar de como una macro de preprocesador. De lo contrario, se producirán varias evaluaciones de los argumentos.
 
  
 
 El ejemplo Y representa el brillo, y las muestras usted y V representan las desviaciones de color hacia el azul y el rojo, respectivamente. El intervalo nominal de Y es de 16 \* 2^(M-8) a 235 \* 2^(M-8). El negro se representa como 16 \* 2^(M-8) y el blanco como 235 \* 2^(M-8). El intervalo nominal para usted y V es de 16 \* 2^(M-8) a 240 \* 2^(M-8), con el valor 128 \* 2^(M-8) que representa el efecto neutro. Sin embargo, los valores reales pueden estar fuera de estos intervalos.
 
-Para los datos de entrada en forma de VÍDEO RGB de Studio, la operación de recorte es necesaria para mantener los valores de you y V dentro del intervalo de 0 a (2^M)-1. Si la entrada es RGB del equipo, la operación de recorte no es necesaria, ya que la fórmula de conversión no puede generar valores fuera de este intervalo.
+Para los datos de entrada en forma rgb de vídeo de Studio, la operación de recorte es necesaria para mantener los valores de usted y V dentro del intervalo de 0 a (2^M)-1. Si la entrada es RGB del equipo, la operación de recorte no es necesaria, ya que la fórmula de conversión no puede generar valores fuera de este intervalo.
 
-Estas son las fórmulas exactas sin aproximación. Todo lo que sigue a este documento se deriva de estas fórmulas. En esta sección se describen las conversiones siguientes:
+Estas son las fórmulas exactas sin aproximación. Todo lo que sigue en este documento se deriva de estas fórmulas. En esta sección se describen las conversiones siguientes:
 
--   [Conversión de RGB888 a YUV 4:4:4](#converting-rgb888-to-yuv-444)
+-   [Convertir RGB888 a YUV 4:4:4](#converting-rgb888-to-yuv-444)
 -   [Conversión de YUV de 8 bits a RGB888](#converting-8-bit-yuv-to-rgb888)
--   [Conversión de 4:2:0 YUV a 4:2:2 YUV](#converting-420-yuv-to-422-yuv)
--   [Conversión de 4:2:2 YUV a 4:4:4 YUV](#converting-422-yuv-to-444-yuv)
--   [Conversión de 4:2:0 YUV a 4:4:4 YUV](#converting-420-yuv-to-444-yuv)
+-   [Convertir 4:2:0 YUV en 4:2:2 YUV](#converting-420-yuv-to-422-yuv)
+-   [Convertir 4:2:2 YUV en 4:4:4 YUV](#converting-422-yuv-to-444-yuv)
+-   [Convertir 4:2:0 YUV en 4:4:4 YUV](#converting-420-yuv-to-444-yuv)
 
-## <a name="converting-rgb888-to-yuv-444"></a>Conversión de RGB888 a YUV 4:4:4
+## <a name="converting-rgb888-to-yuv-444"></a>Convertir RGB888 a YUV 4:4:4
 
-En el caso de la entrada RGB del equipo y la salida BT.601 YUV de 8 bits, creemos que las fórmulas dadas en la sección anterior pueden ser razonablemente aproximadas por lo siguiente:
+En el caso de la entrada RGB del equipo y la salida de BT.601 YUV de 8 bits, creemos que las fórmulas dadas en la sección anterior pueden ser razonablemente aproximadas por lo siguiente:
 
 ``` syntax
 Y = ( (  66 * R + 129 * G +  25 * B + 128) >> 8) +  16
@@ -270,7 +270,7 @@ Estas fórmulas generan resultados de 8 bits mediante coeficientes que no requie
 
 ## <a name="converting-8-bit-yuv-to-rgb888"></a>Conversión de YUV de 8 bits a RGB888
 
-De las fórmulas RGB a YUV originales, se pueden derivar las relaciones siguientes para BT.601.
+A partir de las fórmulas RGB a YUV originales, se pueden derivar las relaciones siguientes para BT.601.
 
 ``` syntax
 Y = round( 0.256788 * R + 0.504129 * G + 0.097906 * B) +  16 
@@ -286,7 +286,7 @@ D = U - 128
 E = V - 128
 ```
 
-Las fórmulas para convertir YUV en RGB se pueden derivar de la siguiente manera:
+Las fórmulas para convertir YUV a RGB se pueden derivar de la siguiente manera:
 
 ``` syntax
 R = clip( round( 1.164383 * C                   + 1.596027 * E  ) )
@@ -304,18 +304,18 @@ B = clip(( 298 * C + 516 * D           + 128) >> 8)
 
 Estas fórmulas usan algunos coeficientes que requieren más de 8 bits de precisión para generar cada resultado de 8 bits, y los resultados intermedios requerirán más de 16 bits de precisión.
 
-Para convertir 4:2:0 o 4:2:2 YUV en RGB, se recomienda convertir los datos de YUV a 4:4:4 YUV y, a continuación, convertir de 4:4:4 YUV a RGB. Las secciones siguientes presentan algunos métodos para convertir los formatos 4:2:0 y 4:2:2 a 4:4:4.
+Para convertir 4:2:0 o 4:2:2 YUV a RGB, se recomienda convertir los datos de YUV a 4:4:4 YUV y, a continuación, convertir de 4:4:4 YUV a RGB. Las secciones siguientes presentan algunos métodos para convertir los formatos 4:2:0 y 4:2:2 a 4:4:4.
 
-## <a name="converting-420-yuv-to-422-yuv"></a>Conversión de 4:2:0 YUV a 4:2:2 YUV
+## <a name="converting-420-yuv-to-422-yuv"></a>Convertir 4:2:0 YUV en 4:2:2 YUV
 
-La conversión de 4:2:0 YUV a 4:2:2 YUV requiere una inversión vertical por un factor de dos. En esta sección se describe un método de ejemplo para realizar la upconversion. El método presupone que las imágenes de vídeo son un examen progresivo.
+La conversión de 4:2:0 YUV a 4:2:2 YUV requiere una conversión vertical por un factor de dos. En esta sección se describe un método de ejemplo para realizar la inversión. El método supone que las imágenes de vídeo son de examen progresiva.
 
 > [!Note]  
 > El proceso de conversión de examen entrelazado de 4:2:0 a 4:2:2 presenta problemas atípicos y es difícil de implementar. En este artículo no se aborda el problema de convertir el examen entrelazado de 4:2:0 a 4:2:2.
 
  
 
-Permita que cada línea vertical de muestras de muestreo de entrada sea una matriz `Cin[]` que va de 0 a N a 1. La línea vertical correspondiente en la imagen de salida será una matriz que va de 0 a `Cout[]` 2N- 1. Para convertir cada línea vertical, realice el siguiente proceso:
+Permita que cada línea vertical de muestras de muestreo de entrada sea una matriz `Cin[]` que va de 0 a N- 1. La línea vertical correspondiente en la imagen de salida será una matriz que va de 0 a `Cout[]` 2N- 1. Para convertir cada línea vertical, realice el siguiente proceso:
 
 ``` syntax
 Cout[0]     = Cin[0];
@@ -333,39 +333,39 @@ Cout[2*N-2] = Cin[N-1];
 Cout[2*N-1] = clip((9 * (Cin[N-1] + Cin[N-1]) - (Cin[N-2] + Cin[N-1]) + 8) >> 4);
 ```
 
-donde clip() denota el recorte a un intervalo de \[ 0,.255 \] .
+donde clip() denota el recorte a un intervalo de \[ 0,255 \] .
 
 > [!Note]  
-> Las ecuaciones para controlar los bordes se pueden simplificar matemáticamente. Se muestran de esta forma para ilustrar el efecto de fijación en los bordes de la imagen.
+> Las ecuaciones para controlar los bordes se pueden simplificar matemáticamente. Se muestran en este formato para ilustrar el efecto de fijación en los bordes de la imagen.
 
  
 
 En efecto, este método calcula cada valor que falta interpolando la curva sobre los cuatro píxeles adyacentes, ponderada hacia los valores de los dos píxeles más cercanos (Figura 11). El método de interpolación específico usado en este ejemplo genera muestras que faltan en posiciones de medio entero mediante un método conocido denominado interpolación Catmull-Rom, también conocido como interpolación de convolución cúbica.
 
-![Figura 11. diagrama que muestra el muestreo de 4:2:0 a 4:2:2](images/yuvformats14.gif)
+![figura 11. diagrama que muestra el muestreo de 4:2:0 a 4:2:2](images/yuvformats14.gif)
 
-En términos de procesamiento de señales, lo ideal es que la inversión vertical incluya una compensación de desplazamiento de fase para tener en cuenta el desplazamiento vertical de medio píxel (con respecto a la cuadrícula de muestreo de salida 4:2:2) entre las ubicaciones de las líneas de ejemplo 4:2:0 y la ubicación de cada otra línea de ejemplo 4:2:2. Sin embargo, la introducción de este desplazamiento aumentaría la cantidad de procesamiento necesario para generar las muestras y haría imposible reconstruir las muestras originales de 4:2:0 a partir de la imagen 4:2:2 upsampled. También haría imposible descodificar vídeo directamente en superficies de 4:2:2 y, a continuación, usar esas superficies como imágenes de referencia para descodificar imágenes posteriores en la secuencia. Por lo tanto, el método proporcionado aquí no tiene en cuenta la alineación vertical precisa de las muestras. Es probable que no sea visualmente perjudicial a resoluciones de imagen razonablemente altas.
+En términos de procesamiento de señales, lo ideal es que la inversión vertical incluya una compensación de desplazamiento de fase para tener en cuenta el desplazamiento vertical de medio píxel (en relación con la cuadrícula de muestreo de salida 4:2:2) entre las ubicaciones de las líneas de muestra 4:2:0 y la ubicación de cada otra línea de muestra de 4:2:2. Sin embargo, introducir este desplazamiento aumentaría la cantidad de procesamiento necesario para generar las muestras y haría imposible reconstruir las muestras originales de 4:2:0 a partir de la imagen upsampled 4:2:2. También haría imposible descodificar vídeo directamente en superficies 4:2:2 y, a continuación, usar esas superficies como imágenes de referencia para descodificar imágenes posteriores en la secuencia. Por lo tanto, el método proporcionado aquí no tiene en cuenta la alineación vertical precisa de las muestras. Es probable que hacerlo no sea visualmente perjudicial a resoluciones de imagen razonablemente altas.
 
-Si empieza con un vídeo de 4:2:0 que usa la cuadrícula de muestreo definida en vídeo H.261, H.263 o MPEG-1, la fase de las muestras de muestreo de salida 4:2:2 también se desplazará por un desplazamiento horizontal de medio píxel en relación con el espaciado en la cuadrícula de muestreo de luma (un desplazamiento de cuarto de píxel en relación con el espaciado de la cuadrícula de muestreo de 4:2:2). Sin embargo, el formato MPEG-2 del vídeo 4:2:0 probablemente se usa con más frecuencia en equipos y no sufre este problema. Además, es probable que la distinción no sea visualmente dañina a resoluciones de imagen razonablemente altas. Si se intenta corregir este problema, se crearía el mismo tipo de problemas analizados para el desplazamiento de fase vertical.
+Si empieza con un vídeo de 4:2:0 que usa la cuadrícula de muestreo definida en vídeo H.261, H.263 o MPEG-1, la fase de las muestras de muestreo de salida 4:2:2 también se desplazará mediante un desplazamiento horizontal de medio píxel en relación con el espaciado en la cuadrícula de muestreo de luma (un desplazamiento de cuarto de píxel en relación con el espaciado de la cuadrícula de muestreo de muestreo de 4:2:2). Sin embargo, la forma MPEG-2 del vídeo 4:2:0 probablemente se usa con más frecuencia en equipos y no sufre este problema. Además, es probable que la distinción no sea visualmente dañina a resoluciones de imagen razonablemente altas. Si se intenta corregir este problema, se crearía el mismo tipo de problemas que se analizan para el desplazamiento de fase vertical.
 
-## <a name="converting-422-yuv-to-444-yuv"></a>Conversión de 4:2:2 YUV a 4:4:4 YUV
+## <a name="converting-422-yuv-to-444-yuv"></a>Convertir 4:2:2 YUV en 4:4:4 YUV
 
 La conversión de 4:2:2 YUV a 4:4:4 YUV requiere una conversión horizontal por un factor de dos. El método descrito anteriormente para upconversion vertical también se puede aplicar a la upconversion horizontal. Para el vídeo MPEG-2 e ITU-R BT.601, este método producirá ejemplos con la alineación de fase correcta.
 
-## <a name="converting-420-yuv-to-444-yuv"></a>Conversión de 4:2:0 YUV a 4:4:4 YUV
+## <a name="converting-420-yuv-to-444-yuv"></a>Convertir 4:2:0 YUV en 4:4:4 YUV
 
-Para convertir 4:2:0 YUV a 4:4:4 YUV, simplemente puede seguir los dos métodos descritos anteriormente. Convierta la imagen 4:2:0 en 4:2:2 y, a continuación, convierta la imagen 4:2:2 en 4:4:4. También puede cambiar el orden de los dos procesos de upconversion, ya que el orden de operación no importa realmente a la calidad visual del resultado.
+Para convertir 4:2:0 YUV a 4:4:4 YUV, simplemente puede seguir los dos métodos descritos anteriormente. Convierta la imagen 4:2:0 en 4:2:2 y, a continuación, convierta la imagen 4:2:2 en 4:4:4. También puede cambiar el orden de los dos procesos de upconversion, ya que el orden de operación no importa realmente para la calidad visual del resultado.
 
 ## <a name="other-yuv-formats"></a>Otros formatos YUV
 
-Algunos otros formatos YUV menos comunes incluyen lo siguiente:
+Algunos otros formatos YUV menos comunes incluyen los siguientes:
 
--   AI44 es un formato YUV con 8 bits por muestra. Cada muestra contiene un índice en los 4 bits más significativos (MSB) y un valor alfa en los 4 bits menos significativos (LSB). El índice hace referencia a una matriz de entradas de la paleta YUV, que se deben definir en el tipo de medio para el formato. Este formato se usa principalmente para imágenes de subimagen.
--   NV11 es un formato plano de 4:1:1 con 12 bits por píxel. Los ejemplos Y aparecen primero en memoria. El plano Y va seguido de una matriz de ejemplos empaquetados de U (Cb) y V (Cr). Cuando la matriz de U-V combinada se  dirige como una matriz de valores word little-endian, las muestras de U se encuentran en los LSB de cada **WORD** y las muestras de V se incluyen en las MSB. (Este diseño de memoria es similar a NV12, aunque el muestreo de muestreo es diferente).
+-   AI44 es un formato YUV tachado con 8 bits por muestra. Cada muestra contiene un índice en los 4 bits más significativos (MSB) y un valor alfa en los 4 bits menos significativos (LSB). El índice hace referencia a una matriz de entradas de la paleta YUV, que se deben definir en el tipo de medio para el formato. Este formato se usa principalmente para las imágenes de subimagen.
+-   NV11 es un formato planar de 4:1:1 con 12 bits por píxel. Los ejemplos Y aparecen primero en la memoria. El plano Y va seguido de una matriz de ejemplos empaquetados de U (Cb) y V (Cr). Cuando la matriz de U-V combinada se trata como una matriz de valores **word** little-endian, las muestras de U se encuentran en los LSB de cada **WORD** y las muestras de V se incluyen en las MSB. (Este diseño de memoria es similar a NV12, aunque el muestreo de muestreo es diferente).
 -   Y41P es un formato empaquetado de 4:1:1, con usted y V muestreados cada cuarto píxel horizontalmente. Cada macropixel contiene 8 píxeles en tres bytes, con el siguiente diseño de bytes: `U0 Y0 V0 Y1    U4 Y2 V4 Y3    Y4 Y5 Y6 Y7`
--   Y41T es idéntico a Y41P, salvo que el bit menos significativo de cada muestra Y especifica la clave de la capa (0 = transparente, 1 = opaca).
--   Y42T es idéntico a UYVY, excepto que el bit menos significativo de cada muestra de Y especifica la clave de croma (0 = transparente, 1 = opaca).
--   YVYU es equivalente a YUYV, excepto que se intercambian los ejemplos de you y V.
+-   Y41T es idéntico a Y41P, salvo que el bit menos significativo de cada muestra Y especifica la clave de la llave de la llave (0 = transparente, 1 = opaca).
+-   Y42T es idéntico a UYVY, salvo que el bit menos significativo de cada muestra Y especifica la clave de la y (0 = transparente, 1 = opaca).
+-   YVYU es equivalente a YUYV, salvo que se intercambian los ejemplos de usted y V.
 
 ## <a name="identifying-yuv-formats-in-media-foundation"></a>Identificación de formatos YUV en Media Foundation
 
@@ -378,7 +378,7 @@ DWORD fccYUY2 = MAKEFOURCC('Y','U','Y','2');
 DWORD fccYUY2 = FCC('YUY2');
 ```
 
-También puede declarar un código FOURCC directamente como literal de cadena simplemente invirtiendo el orden de los caracteres. Por ejemplo:
+También puede declarar un código FOURCC directamente como un literal de cadena simplemente invirtiendo el orden de los caracteres. Por ejemplo:
 
 ``` syntax
 DWORD fccYUY2 = '2YUY';  // Declares the FOURCC 'YUY2'
@@ -386,7 +386,7 @@ DWORD fccYUY2 = '2YUY';  // Declares the FOURCC 'YUY2'
 
 Es necesario invertir el orden porque el Windows operativo usa una arquitectura little-endian. 'Y' = 0x59, 'U' = 0x55 y '2' = 0x32, por lo que '2YUY' es 0x32595559.
 
-En Media Foundation, los formatos se identifican mediante un GUID de tipo principal y un GUID de subtipo. El tipo principal de los formatos de vídeo del equipo siempre es MFMediaType \_ Video. El subtipo se puede construir asignando el código FOURCC a un GUID, como se muestra a continuación:
+En Media Foundation, los formatos se identifican mediante un GUID de tipo principal y un GUID de subtipo. El tipo principal para los formatos de vídeo de equipo es siempre MFMediaType \_ Video . El subtipo se puede construir asignando el código FOURCC a un GUID, como se muestra a continuación:
 
 ``` syntax
 XXXXXXXX-0000-0010-8000-00AA00389B71 
@@ -398,13 +398,13 @@ donde `XXXXXXXX` es el código FOURCC. Por lo tanto, el GUID del subtipo para YU
 32595559-0000-0010-8000-00AA00389B71 
 ```
 
-Las constantes para los GUID de formato YUV más comunes se definen en el archivo de encabezado mfapi.h. Para obtener una lista de estas constantes, vea [GUID de subtipo de vídeo](video-subtype-guids.md).
+Las constantes para los GUID de formato YUV más comunes se definen en el archivo de encabezado mfapi.h. Para obtener una lista de estas constantes, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Acerca de YUV Video](about-yuv-video.md)
+[Acerca del vídeo de YUV](about-yuv-video.md)
 </dt> <dt>
 
 [Tipos de medios de vídeo](video-media-types.md)

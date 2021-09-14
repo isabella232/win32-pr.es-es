@@ -1,9 +1,9 @@
 ---
-title: struct (atributo)
+title: Atributo struct
 description: La palabra clave struct se usa en un especificador de tipo de estructura.
 ms.assetid: 89e18f0e-185a-408e-812d-3d11f228b473
 keywords:
-- atributo de estructura MIDL
+- ATRIBUTO DE ESTRUCTURA MIDL
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a5c97ca9a2dbbfeddc5416b517e85e0926434c5d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105665807"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159372"
 ---
-# <a name="struct-attribute"></a>struct (atributo)
+# <a name="struct-attribute"></a>Atributo struct
 
-La palabra clave **struct** se usa en un especificador de tipo de estructura.
+La **palabra clave struct** se usa en un especificador de tipo de estructura.
 
 ``` syntax
 struct [[ struct-tag ]] 
@@ -35,31 +35,31 @@ struct [[ struct-tag ]]
 
 <dl> <dt>
 
-*struct: etiqueta* 
+*struct-tag* 
 </dt> <dd>
 
-Especifica una etiqueta opcional para la estructura.
+Especifica una etiqueta opcional para la estructura .
 
 </dd> <dt>
 
-*lista de atributos de campo* 
+*field-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos de campo que se aplican al miembro de estructura. Entre los atributos de campo válidos **\[** [**se incluyen First \_ es**](first-is.md) **\]** , **\[** [**Last \_ es**](last-is.md) **\]** , **\[** [**length \_**](length-is.md)is **\]** , **\[** [**Max \_ is**](max-is.md) **\]** y **\[** [**size \_ es**](size-is.md) **\]** ; la cadena de atributos de uso **\[** [](string.md) **\]** y **\[** [**Ignore**](ignore.md) **\]** ; el atributo de puntero **\[** [**ref**](ref.md) **\]** , **\[** [**Unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md) **\]** y el **\[** [**\_ tipo de modificador**](switch-type.md)de atributo Union **\]** . Separe varios atributos de campo con comas.
+Especifica cero o más atributos de campo que se aplican al miembro de estructura. Los atributos de campo válidos incluyen primero , el último es , length es , max es y size es ; el atributo de uso string y ignore ; el atributo de puntero **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**ref**](ref.md) **\]** , **\[** [**unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md); **\]** **\[** [**\_**](switch-type.md) **\]** y el tipo de modificador de atributo union . Separe varios atributos de campo con comas.
 
 </dd> <dt>
 
-*Type-Specifier* 
+*type-specifier* 
 </dt> <dd>
 
-Especifica un tipo [base](midl-base-types.md), un **struct**, una [**Unión**](union.md)o un tipo de [**enumeración**](enum.md) o un identificador de tipo. Una especificación de almacenamiento opcional puede preceder *a Type-Specifier*.
+Especifica un tipo [base](midl-base-types.md), **struct**, [**unión**](union.md)o tipo [**de enumeración**](enum.md) o identificador de tipo. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
-*lista de declaradores* 
+*declarator-list* 
 </dt> <dd>
 
-Especifica uno o más declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en las estructuras que se transmiten en llamadas a procedimientos remotos. Estos declaradores se permiten en estructuras que no se transmiten). Separe varios declaradores con comas.
+Especifica uno o varios declaradores de C estándar, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en estructuras que se transmiten en llamadas a procedimientos remotos. Estos declaradores se permiten en estructuras que no se transmiten). Separe varios declaradores con comas.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Especifica uno o más declaradores estándar de C, como identificadores, declara
 
 El especificador de tipo de estructura IDL, **struct**, difiere del especificador de tipo C estándar de las maneras siguientes:
 
--   Cada miembro de la estructura puede asociarse a atributos de campo opcionales que describen las características de ese miembro de estructura para los fines de una llamada a procedimiento remoto.
--   Los campos de bits y los declaradores de función no se permiten en estructuras que se utilizan en llamadas a procedimientos remotos. Estas construcciones de declarador de C estándar solo se pueden usar si la estructura no se transmite en la red.
+-   Cada miembro de estructura se puede asociar a atributos de campo opcionales que describen las características de ese miembro de estructura para los fines de una llamada a procedimiento remoto.
+-   No se permiten campos de bits ni declaradores de función en estructuras que se usan en llamadas a procedimientos remotos. Estas construcciones de declarador de C estándar solo se pueden usar si la estructura no se transmite en la red.
 
 La forma de las estructuras debe ser la misma en todas las plataformas para garantizar la interconectividad.
 
@@ -86,69 +86,69 @@ typedef struct _PITCHER_RECORD_TYPE
 
 <dl> <dt>
 
-[**matrices**](arrays-1.md)
+[**Matrices**](arrays-1.md)
 </dt> <dt>
 
 [Matrices y punteros](/windows/desktop/Rpc/arrays-and-pointers)
 </dt> <dt>
 
-[Atributos array y Sized-Pointer](array-and-sized-pointer-attributes.md)
+[Atributos de matriz Sized-Pointer matriz](array-and-sized-pointer-attributes.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
 [**/c \_ ext**](-c-ext.md)
 </dt> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**identificador de \_ contexto**](context-handle.md)
 </dt> <dt>
 
-[**enumeración**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
-[**el primero \_ es**](first-is.md)
+[**en primer \_ lugar es**](first-is.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**omitir**](ignore.md)
+[**Ignorar**](ignore.md)
 </dt> <dt>
 
-[**última \_ es**](last-is.md)
+[**el \_ último es**](last-is.md)
 </dt> <dt>
 
-[**la longitud \_ es**](length-is.md)
+[**length \_ es**](length-is.md)
 </dt> <dt>
 
-[**Max \_ es**](max-is.md)
+[**max \_ is**](max-is.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
 </dt> <dt>
 
-[**ptr**](ptr.md)
+[**Ptr**](ptr.md)
 </dt> <dt>
 
 [**ref**](ref.md)
 </dt> <dt>
 
-[**el tamaño \_ es**](size-is.md)
+[**el \_ tamaño es**](size-is.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Cadena**](string.md)
 </dt> <dt>
 
-[**tipo de conmutador \_**](switch-type.md)
+[**tipo \_ de conmutador**](switch-type.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

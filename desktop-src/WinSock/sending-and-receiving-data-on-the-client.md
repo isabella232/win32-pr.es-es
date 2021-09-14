@@ -4,18 +4,18 @@ ms.assetid: 9c6d366d-2bc6-4c92-8d0b-21c51e08ed4f
 title: Envío y recepción de datos en el cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3150c853f50e8626451cc344179645289058df928600d71bf437dc95d9738986
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36d91ee507d78bc2638a6d3f7383cd6a930651e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117740566"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241503"
 ---
 # <a name="sending-and-receiving-data-on-the-client"></a>Envío y recepción de datos en el cliente
 
 El código siguiente muestra las [**funciones send**](/windows/desktop/api/Winsock2/nf-winsock2-send) [**y recv**](/windows/desktop/api/winsock/nf-winsock-recv) usadas por el cliente una vez establecida una conexión.
 
-## <a name="client"></a>Cliente
+## <a name="client"></a>Remoto
 
 
 ```C++

@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5df829d09ffbb414bdf145495389d8d14db129d1c0eec2929ac0f7e1f97816f9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe0d3a73d8734d79d5ed0862f66bf9ba5c030e46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119606355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241353"
 ---
 # <a name="findmsgstring-message"></a>Mensaje FINDMSGSTRING
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura FINDREPLACE.**](/windows/win32/api/commdlg/ns-commdl
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe especificar la **constante FINDMSGSTRING** en una llamada a la función [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener el identificador del mensaje enviado por el cuadro de diálogo.
 
@@ -83,7 +83,7 @@ Para un **mensaje Buscar siguiente** o Reemplazar todo, el miembro **Flags** pue
 
 | Marca                           | Significado                                                                                                                                                                                                                                                                                         |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **FR \_ DOWN** (0x00000001)      | Si se establece, se **selecciona el** botón Abajo de los botones de radio de dirección que indica que el usuario desea buscar desde la ubicación actual hasta el final del documento. Si **FR \_ DOWN** no está establecido, se **selecciona** el botón Arriba para que el usuario quiera buscar al principio del documento.       |
+| **FR \_ DOWN** (0x00000001)      | Si se establece, se **selecciona el** botón Down (Bajar) de los botones de radio direction (Dirección) que indica que el usuario desea buscar desde la ubicación actual hasta el final del documento. Si **FR \_ DOWN** no está establecido, se **selecciona** el botón Arriba para que el usuario quiera buscar al principio del documento.       |
 | **FR \_ MATCHCASE** (0x00000004) | Si se establece, la **casilla Caso** de coincidencia está activada, lo que indica que el usuario quiere que la búsqueda distingue mayúsculas de minúsculas. Si **FR \_ MATCHCASE** no está establecido, la casilla no está seleccionada, por lo que la búsqueda no debe tener en cuenta las mayúsculas y minúsculas.                                                                         |
 | **FR \_ WHOLEWORD** (0x00000002) | Si se establece, la **casilla** Coincidir solo palabras enteras está activada, lo que indica que el usuario desea buscar solo palabras enteras que coincidan con la cadena de búsqueda. Si **FR \_ WHOLEWORD** no está establecido, la casilla no está seleccionada, por lo que también debe buscar fragmentos de palabras que coincidan con la cadena de búsqueda. |
 
@@ -95,7 +95,7 @@ Para un **mensaje Buscar siguiente** o Reemplazar todo, el miembro **Flags** pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -111,7 +111,7 @@ Para un **mensaje Buscar siguiente** o Reemplazar todo, el miembro **Flags** pue
 **Referencia**
 </dt> <dt>
 
-[**Findreplace**](/windows/win32/api/commdlg/ns-commdlg-findreplacea)
+[**FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea)
 </dt> <dt>
 
 [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)

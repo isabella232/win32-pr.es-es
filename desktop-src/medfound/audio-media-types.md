@@ -4,12 +4,12 @@ ms.assetid: 15aad4ea-7b4b-4a6f-bac7-18e0c281f2a6
 title: Tipos de medios de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e51063a4ded0c65b8f21f1129ae8bd7da41c5eb231402633b695e4e47cc2004
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 786cbef5c4c151a0a97b445fa4bb4a7eec552cc0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119959514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269391"
 ---
 # <a name="audio-media-types"></a>Tipos de medios de audio
 
@@ -31,7 +31,7 @@ En esta sección se describe cómo crear y manipular tipos de medios que describ
 
 <dl> <dt>
 
-[Atributos de tipo multimedia](media-type-attributes.md)
+[Atributos de tipo de medio](media-type-attributes.md)
 </dt> <dt>
 
 [Tipos de medios](media-types.md)

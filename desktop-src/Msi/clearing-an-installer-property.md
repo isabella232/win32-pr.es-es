@@ -1,15 +1,15 @@
 ---
-description: 'Para borrar una propiedad (establecerla en Null), establezca el valor de la propiedad en una cadena vacía: &\# 0034;&\# 0034;.'
+description: 'Para borrar una propiedad (establecerla en Null), establezca el valor de la propiedad en una cadena vacía: \# &0034;&\# 0034;.'
 ms.assetid: 25c4fd46-0729-4b16-956a-f370de1b3c29
 title: Borrar una propiedad del instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edd4fd6fc167df0f61f9613b68b0150e8328118efdf6d194a8b41bb24eff48ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f72f0996268a702968dae424ddb03a0dba23339
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158908"
 ---
 # <a name="clearing-an-installer-property"></a>Borrar una propiedad del instalador
 

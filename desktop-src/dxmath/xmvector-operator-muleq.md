@@ -12,13 +12,13 @@ api_type:
 - NA
 api_location: ''
 ms.openlocfilehash: 13280fd5da109012ac90ff55a778f8f5cd6a5b95
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122627749"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241611"
 ---
-# <a name="operator--operators"></a>operador \* = operadores
+# <a name="operator--operators"></a>operator \* = operadores
 
 Operadores de asignación de multiplicación
 
@@ -33,7 +33,7 @@ Operadores de asignación de multiplicación
 </colgroup>
 <thead>
 <tr class="header">
-<th >Operador</th>
+<th >Operator</th>
 <th >Descripción</th>
 </tr>
 </thead>

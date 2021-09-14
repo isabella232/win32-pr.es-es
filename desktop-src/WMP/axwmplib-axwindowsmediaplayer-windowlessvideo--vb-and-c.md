@@ -4,8 +4,8 @@ description: La propiedad windowlessVideo obtiene o establece un valor que indic
 ms.assetid: 70386aae-cd30-405d-90dd-9b3fa63dad17
 keywords:
 - windowlessVideo, propiedad Reproductor de Windows Media
-- propiedad windowlessVideo Reproductor de Windows Media clase , AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Reproductor de Windows Media propiedad , windowlessVideo
+- Propiedad windowlessVideo Reproductor de Windows Media , clase AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad windowlessVideo
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a63a7246e730f73bd6d6f27111112a3db2029e3b53c80569e2e013771da6708
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d22ecc0f39b03201809877fe8ebc667d62e16d0b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118581525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241515"
 ---
 # <a name="axwindowsmediaplayerwindowlessvideo-property"></a>Propiedad AxWindowsMediaPlayer.windowlessVideo
 
 La propiedad windowlessVideo obtiene o establece un valor que indica si el control Reproductor de Windows Media representa vídeo en modo sin ventanas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,19 +48,19 @@ Public Property windowlessVideo As System.Boolean
 
 Valor System.Boolean que indica si el control Reproductor de Windows Media representa el vídeo en modo sin ventanas. El valor predeterminado es false.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-De forma predeterminada, un control Reproductor de Windows Media integrado representa el vídeo en su propia ventana dentro del área cliente. Cuando **windowlessVideo** está establecido en true, el objeto Reproductor de Windows Media representa el vídeo directamente en el área cliente, por lo que puede aplicar efectos especiales o aplicar capas de texto al vídeo.
+De forma predeterminada, un control Reproductor de Windows Media representa vídeo en su propia ventana dentro del área cliente. Cuando **windowlessVideo** se establece en true, el objeto Reproductor de Windows Media representa vídeo directamente en el área cliente, por lo que puede aplicar efectos especiales o aplicar capas de texto al vídeo.
 
 En Windows Vista, la representación de vídeo en modo sin ventanas puede degradar el rendimiento.
 
-No se admite la obtención de un valor para esta propiedad en Netscape Navigator. Establecer un valor para esta propiedad en Netscape Navigator puede producir resultados inesperados.
+No se admite la obtención de un valor para esta propiedad para Netscape Navigator. Establecer un valor para esta propiedad en Netscape Navigator puede producir resultados inesperados.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -68,7 +68,7 @@ No se admite la obtención de un valor para esta propiedad en Netscape Navigator
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cf1bb1c4f522cecb5fe81a317267e2cffff2da638e3a8c09a412ae8d94a149d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 334223979298f54acb546bd0b9ec913afd92e286
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159440"
 ---
 # <a name="notify-attribute"></a>atributo notify
 
@@ -38,11 +38,11 @@ Nombre del procedimiento remoto al que se asociará el procedimiento de notifica
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **\[ procedimiento de \]** notificación llamado como resultado del atributo **\[ notify \]** está asociado a un procedimiento remoto determinado en el servidor. Es similar en concepto a una función de devolución de llamada. El código **\[ \]** auxiliar llama al procedimiento de notificación después de que se hayan serializado todos los argumentos de salida del procedimiento remoto al que está asociado y se libera cualquier memoria asociada a los parámetros. Se **\[ llama a la \]** rutina notify si se produce un error en una llamada antes de que se ejecute la rutina de servidor. Por ejemplo, si se produce un error en un servidor durante la desmarque debido a la recepción de datos no recibidos del cliente, se llama a la rutina de \[ \] notificación.
+El **\[ procedimiento de \]** notificación llamado como resultado del atributo **\[ notify \]** está asociado a un procedimiento remoto determinado en el servidor. Es similar en concepto a una función de devolución de llamada. El código **\[ \]** auxiliar llama al procedimiento de notificación después de que se hayan serializado todos los argumentos de salida del procedimiento remoto al que está asociado y se libera cualquier memoria asociada a los parámetros. Se **\[ llama a la \]** rutina notify si se produce un error en una llamada antes de que se ejecute la rutina de servidor. Por ejemplo, si se produce un error en un servidor durante la desmarque debido a la recepción de datos no recibidos del cliente, se llama a \[ \] la rutina de notificación.
 
-El **\[ atributo notify \]** es útil para desarrollar aplicaciones que adquieren recursos en procedimientos remotos. Después, estos recursos se liberan en el procedimiento **\[ de \]** notificación una vez que se serializan completamente los parámetros de salida del procedimiento remoto.
+El **\[ atributo notify \]** es útil para desarrollar aplicaciones que adquieren recursos en procedimientos remotos. A continuación, estos recursos se liberan en el procedimiento **\[ de \]** notificación una vez que se serializan por completo los parámetros de salida del procedimiento remoto.
 
 El **\[ nombre \]** del procedimiento de notificación es el nombre del procedimiento remoto con el sufijo **\_ notify**. El **\_ procedimiento de** notificación no requiere ningún parámetro y no devuelve un resultado. También se genera un prototipo de este procedimiento en el archivo de encabezado. Por ejemplo, si el archivo IDL contiene lo siguiente:
 

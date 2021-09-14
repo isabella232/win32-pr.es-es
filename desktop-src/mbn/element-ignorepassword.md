@@ -8,17 +8,17 @@ title: IgnorePassword
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e85c41bab92d127a81a8b86a4ac575d448605d0e
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982798"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241214"
 ---
 # <a name="span-idwwan_profile_v4element_ignorepasswordspanmbnprofileextignorepassword-v4"></a><span id="WWAN_profile_v4.element_IgnorePassword"></span>MBNProfileExt \/ ... \/ IgnorePassword (v4)
 
 Especifica cómo se controlan las contraseñas al actualizar perfiles.
 
-Si se establece en **TRUE** y existe un perfil con el mismo nombre en el momento de la operación de actualización, la contraseña de ese perfil se toma y se almacena en el nuevo perfil.
+Si se establece en **TRUE** y existe un perfil con el mismo nombre en el momento de la operación de actualización, la contraseña de ese perfil se toma y almacena en el nuevo perfil.
 
 Para más información, consulte la documentación del elemento [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) v1.
 

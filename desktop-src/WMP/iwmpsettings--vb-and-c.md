@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a537efcd9b39f993705244020e579b9d667164180fd5cd70ab05fc692bed8fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db911cc6d18ba40777e77a803480c7fcab4ff8ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241749"
 ---
 # <a name="iwmpsettings-vb-and-c-interface"></a>Interfaz IWMPSettings (VB y C#)
 
@@ -28,7 +28,7 @@ Proporciona propiedades y métodos que obtienen o establecen los valores de Repr
 
 La **interfaz IWMPSettings** expone las siguientes propiedades.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IWMPSettings (VB y C#)** tiene estos tipos de miembros:
 
@@ -58,17 +58,17 @@ La **interfaz IWMPSettings (VB y C#)** tiene estas propiedades.
 
 | Propiedad                                                                                              | Tipo de acceso           | Descripción                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Autostart**](wmplibiwmpsettings-iwmpsettings-autostart--vb-and-c.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece un valor que indica si el elemento multimedia actual comienza a reproducirse automáticamente. <br/>                                     |
-| [**equilibrar**](wmplibiwmpsettings-iwmpsettings-balance--vb-and-c.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece el equilibrio estéreo actual.<br/>                                                                                          |
-| [**Baseurl**](wmplibiwmpsettings-iwmpsettings-baseurl--vb-and-c.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece la dirección URL base usada para la resolución de rutas de acceso relativas con comandos de script de dirección URL insertados en contenido multimedia digital. <br/> |
-| [**defaultFrame**](wmplibiwmpsettings-iwmpsettings-defaultframe--vb-and-c.md)<br/>             | Lectura/escritura<br/> | Obtiene o establece el nombre del marco utilizado para mostrar una dirección URL que se recibe en un **evento scriptCommand.** <br/>                          |
-| [**enableErrorDialogs**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un valor que indica si los cuadros de diálogo de error se muestran automáticamente.<br/>                                           |
-| [**invokeURLs**](wmplibiwmpsettings-iwmpsettings-invokeurls--vb-and-c.md)<br/>                 | Lectura/escritura<br/> | Obtiene o establece un valor que indica si los eventos de dirección URL deben iniciar un explorador web. <br/>                                                  |
+| [**Autostart**](wmplibiwmpsettings-iwmpsettings-autostart--vb-and-c.md)<br/>                   | Lectura y escritura<br/> | Obtiene o establece un valor que indica si el elemento multimedia actual comienza a reproducirse automáticamente. <br/>                                     |
+| [**equilibrar**](wmplibiwmpsettings-iwmpsettings-balance--vb-and-c.md)<br/>                       | Lectura y escritura<br/> | Obtiene o establece el equilibrio estéreo actual.<br/>                                                                                          |
+| [**Baseurl**](wmplibiwmpsettings-iwmpsettings-baseurl--vb-and-c.md)<br/>                       | Lectura y escritura<br/> | Obtiene o establece la dirección URL base usada para la resolución de rutas de acceso relativas con comandos de script de dirección URL insertados en contenido multimedia digital. <br/> |
+| [**defaultFrame**](wmplibiwmpsettings-iwmpsettings-defaultframe--vb-and-c.md)<br/>             | Lectura y escritura<br/> | Obtiene o establece el nombre del marco utilizado para mostrar una dirección URL que se recibe en un **evento scriptCommand.** <br/>                          |
+| [**enableErrorDialogs**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)<br/> | Lectura y escritura<br/> | Obtiene o establece un valor que indica si los cuadros de diálogo de error se muestran automáticamente.<br/>                                           |
+| [**invokeURLs**](wmplibiwmpsettings-iwmpsettings-invokeurls--vb-and-c.md)<br/>                 | Lectura y escritura<br/> | Obtiene o establece un valor que indica si los eventos de dirección URL deben iniciar un explorador web. <br/>                                                  |
 | [**Isavailable**](iwmpsettings-isavailable--vb-and-c.md)<br/>                                  | Solo lectura<br/>  | Obtiene un valor que indica si se puede realizar una acción especificada. En C#, este es el **método \_ get isAvailable.**<br/>             |
-| [**Mudo**](wmplibiwmpsettings-iwmpsettings-mute--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene o establece un valor que indica si el audio está silenciado. <br/>                                                                          |
-| [**playCount**](wmplibiwmpsettings-iwmpsettings-playcount--vb-and-c.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece el número de veces que se reproducirá un elemento multimedia. <br/>                                                                         |
-| [**Tasa**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene o establece la velocidad de reproducción actual del vídeo. <br/>                                                                                |
-| [**Volumen**](wmplibiwmpsettings-iwmpsettings-volume--vb-and-c.md)<br/>                         | Lectura/escritura<br/> | Obtiene o establece el volumen de reproducción actual. <br/>                                                                                        |
+| [**Mudo**](wmplibiwmpsettings-iwmpsettings-mute--vb-and-c.md)<br/>                             | Lectura y escritura<br/> | Obtiene o establece un valor que indica si el audio está silenciado. <br/>                                                                          |
+| [**playCount**](wmplibiwmpsettings-iwmpsettings-playcount--vb-and-c.md)<br/>                   | Lectura y escritura<br/> | Obtiene o establece el número de veces que se reproducirá un elemento multimedia. <br/>                                                                         |
+| [**Tasa**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)<br/>                             | Lectura y escritura<br/> | Obtiene o establece la velocidad de reproducción actual del vídeo. <br/>                                                                                |
+| [**Volumen**](wmplibiwmpsettings-iwmpsettings-volume--vb-and-c.md)<br/>                         | Lectura y escritura<br/> | Obtiene o establece el volumen de reproducción actual. <br/>                                                                                        |
 
 
 

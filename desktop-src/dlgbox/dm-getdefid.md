@@ -3,7 +3,7 @@ title: DM_GETDEFID mensaje (Winuser.h)
 description: Recupera el identificador del control de botón de inserción predeterminado para un cuadro de diálogo.
 ms.assetid: 9f00a494-f5a2-4c4e-a9fc-2220d9326eb9
 keywords:
-- DM_GETDEFID cuadros de diálogo del mensaje
+- DM_GETDEFID cuadro de diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6898ed6484a66e1c0d5fa498b0352498c0a57fbe91a74f738e2c6438511aef21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fdcdfc2cd278ab452d48ecb1c254bdb00ffbb7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118785827"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241377"
 ---
 # <a name="dm_getdefid-message"></a>Mensaje \_ GETDEFID de DM
 
@@ -53,9 +53,9 @@ Este parámetro no se usa y debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si existe un botón de inserción predeterminado, la palabra de orden superior del valor devuelto contiene el valor **DC \_ HASDEFID** y la palabra de orden bajo contiene el identificador de control. De lo contrario, el valor devuelto es cero.
+Si existe un botón de inserción predeterminado, la palabra de orden superior del valor devuelto contiene el valor **\_ DC HASDEFID** y la palabra de orden bajo contiene el identificador de control. De lo contrario, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**función DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) procesa este mensaje.
 
@@ -63,7 +63,7 @@ La [**función DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -71,7 +71,7 @@ La [**función DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

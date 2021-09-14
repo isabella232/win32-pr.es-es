@@ -4,12 +4,12 @@ ms.assetid: 45e80314-90b1-4fcf-9c8f-c9840ae1775b
 title: WPCEVENT_IM_FEATURE evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8046e755540a2282e84ea25c5278cf0c0b113264e78a3db31b6bd8a42de599cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee28f004560ed287bc3cb94cbee1bda876355834
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268399"
 ---
 # <a name="wpcevent_im_feature-event"></a>Evento WPCEVENT \_ IM \_ FEATURE
 
@@ -57,7 +57,7 @@ Identificador de esta conversación.
 *MediaType* 
 </dt> <dd>
 
-Valor de la enumeración [**WPCFLAG \_ IM \_ FEATURE**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_feature) que indica información sobre las características a las que se accede durante una interacción de mensajería instantánea.
+Valor de la [**enumeración WPCFLAG \_ IM \_ FEATURE**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_feature) que indica información sobre las características a las que se accede durante una interacción de mensajería instantánea.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Dirección IP del equipo del remitente.
 
 </dd> <dt>
 
-*Datos* 
+*Data* 
 </dt> <dd>
 
 Descripción de los datos de la característica.
@@ -111,11 +111,11 @@ Descripción de los datos de la característica.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

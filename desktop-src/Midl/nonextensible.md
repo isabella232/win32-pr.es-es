@@ -3,7 +3,7 @@ title: nonextensible (atributo)
 description: El atributo \nonextensible\ especifica que la implementación de IDispatch solo incluye las propiedades y los métodos enumerados en la descripción de la interfaz y no se puede extender con miembros adicionales en tiempo de ejecución.
 ms.assetid: 5fcffa65-4f0c-4180-a6c2-f68d63ff99ae
 keywords:
-- atributo nonextensible MIDL
+- nonextensible attribute MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96c4e55cf5cf2c05ff9c3619b19e7a9b0582f3cf64bc0f9a711fb1af274bfb9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e591ea4ab0647449ca9296b3b14a4aab9fff6991
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159444"
 ---
 # <a name="nonextensible-attribute"></a>nonextensible (atributo)
 
-El **\[ atributo nonextensible \]** especifica que la implementación de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) solo incluye las propiedades y métodos enumerados en la descripción de la interfaz y no se puede extender con miembros adicionales en tiempo de ejecución. (De forma predeterminada, Automation supone que las interfaces pueden agregar miembros en tiempo de ejecución; es decir, se supone que son extensibles).
+El **\[ atributo nonextensible \]** especifica que la implementación de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) incluye solo las propiedades y los métodos enumerados en la descripción de la interfaz y no se puede extender con miembros adicionales en tiempo de ejecución. (De forma predeterminada, Automation da por supuesto que las interfaces pueden agregar miembros en tiempo de ejecución; es decir, supone que son extensibles).
 
 ``` syntax
 [
@@ -67,7 +67,7 @@ Especifica instrucciones IDL que forman la definición de la [**interfaz**](inte
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede aplicar el **\[ atributo nonextensible \]** a una interfaz o a una interfaz dispinterface. Sin embargo, una interfaz también debe tener **\[** [**los atributos dual**](dual.md) y **\]** **\[** [**oleautomation.**](oleautomation.md) **\]**
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a059a6a2820d99541076775ac869de0767ffd739743f5b145a155efd0a25abc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32d2d306faebef813996b59575220efeba99dfb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118576782"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241755"
 ---
 # <a name="filter-element"></a>elemento filter
 
@@ -52,7 +52,7 @@ GUID que identifica de forma única un objeto de filtro. Los métodos del objeto
 
 
 
-| Valor                                  | Descripción                                                                                                 |
+| Value                                  | Descripción                                                                                                 |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | {BC5E21B0-504C-46F6-82BF-FB975C911AD6} | Identificador del filtro "Filtro de lista de reproducción automática de Microsoft: limita las listas de reproducción automáticas por recuento, tamaño o duración". |
 
@@ -69,7 +69,7 @@ Nombre del objeto de filtro.
 
 
 
-| Valor                                                                              | Descripción                                        |
+| Value                                                                              | Descripción                                        |
 |------------------------------------------------------------------------------------|----------------------------------------------------|
 | Filtro de lista de reproducción automática de Microsoft: limita las listas de reproducción automáticas por recuento, tamaño o duración | Limita las listas de reproducción automáticas por recuento, tamaño o duración. |
 
@@ -92,7 +92,7 @@ Nombre del objeto de filtro.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **elemento filter** no agrega ningún elemento multimedia a una lista de reproducción; simplemente quita o filtra el contenido seleccionado por el **elemento sourceFilter.**
 
@@ -116,13 +116,13 @@ El **elemento filter** no agrega ningún elemento multimedia a una lista de repr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

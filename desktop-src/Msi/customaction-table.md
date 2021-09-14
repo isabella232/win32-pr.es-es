@@ -4,12 +4,12 @@ ms.assetid: 0f47abc1-4e06-4ddc-9ea1-9afb9f27d499
 title: CustomAction (tabla)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 725ac6ad72b1f84da2c43c94a91cd4a466bd02a5af19261b4b07dfd1c496ae76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75c8cbfa6500743e2a2ad89627447da1907f6f48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158667"
 ---
 # <a name="customaction-table"></a>CustomAction (tabla)
 

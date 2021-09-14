@@ -6,12 +6,12 @@ keywords:
 - MIDL de ACF, atributos, conversión de tipos y serialización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 286de08a56aba5ffc7b73fc52791238a6af62b3f0545e95aedabcf79d5623464
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14367be3df97cc1185fca64e46aafe1d342f3526
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118382751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159346"
 ---
 # <a name="type-conversion-and-marshaling-acf-attributes"></a>Type-Conversion y serialización de atributos ACF
 

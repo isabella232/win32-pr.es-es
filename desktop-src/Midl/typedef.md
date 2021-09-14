@@ -3,7 +3,7 @@ title: Atributo typedef
 description: La palabra clave typedef de IDL permite declaraciones typedef muy similares a las declaraciones typedef del lenguaje C.
 ms.assetid: 995a233e-0d07-4051-9f00-d1dc0b563f8f
 keywords:
-- Atributo typedef MIDL
+- atributo typedef MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 999f0154de90f589f776a84bf030677c64a68f2471ebdd7a0d9838aa3074fa44
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ecfce98e5a83f8d2a5e2499a5ceceba755e68f2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119822045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159340"
 ---
 # <a name="typedef-attribute"></a>Atributo typedef
 
@@ -38,14 +38,14 @@ typedef [ acf-type-attribute-list ] typename;
 *idl-type-attribute-list* 
 </dt> <dd>
 
-Especifica uno o varios atributos que se aplican al tipo. Los atributos de tipo válidos de un archivo IDL incluyen el identificador , el tipo de modificador , transmitir como ; el atributo de puntero ref , unique o **\[** [](handle.md) **\]** **\[** [**\_**](switch-type.md) **\]** **\[** [**\_**](transmit-as.md) **\]** **\[** [](ref.md) **\]** **\[** [](unique.md) **\]** **\[** [**ptr**](ptr.md) **\]** ; **\[** [**\_**](context-handle.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** y el identificador de contexto de atributos de uso , cadena y omitir . Separe varios atributos con comas.
+Especifica uno o varios atributos que se aplican al tipo. Los atributos de tipo válidos de un archivo IDL incluyen el identificador , el tipo de modificador , transmitir como ; el atributo de puntero **\[** [](handle.md) **\]** **\[** [**\_**](switch-type.md) **\]** **\[** [**\_**](transmit-as.md) **\]** **\[** [**ref**](ref.md) **\]** , **\[** [**unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md); **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** y el identificador de contexto de atributos de uso , la cadena y omitir . Separe varios atributos con comas.
 
 </dd> <dt>
 
 *type-specifier* 
 </dt> <dd>
 
-Especifica un tipo [base](midl-base-types.md), [**struct**](struct.md), [**union**](union.md), [**enum**](enum.md) type o type identifier. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*. La [**palabra clave const**](const.md) puede *preceder a type-specifier.*
+Especifica un tipo [base,](midl-base-types.md) [**struct**](struct.md), [**union,**](union.md) [**tipo de enumeración**](enum.md) o identificador de tipo. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*. La [**palabra clave const**](const.md) puede *preceder a type-specifier.*
 
 </dd> <dt>
 
@@ -70,13 +70,13 @@ Especifica un tipo definido en el archivo IDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La declaración **typedef de** IDL se aumenta para permitirle asociar atributos de tipo a los tipos definidos. Los atributos de tipo válidos incluyen el identificador , el tipo de modificador , transmitir como ; el atributo de puntero **\[** [](handle.md) **\]** **\[** [**\_**](switch-type.md) **\]** **\[** [**\_**](transmit-as.md) **\]** **\[** [**ref**](ref.md) **\]** , **\[** [**unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md); **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** y el identificador de contexto de los atributos de uso , la cadena y omitir .
 
-La **palabra clave typedef** de un ACF aplica atributos a los tipos definidos en el archivo IDL correspondiente. Por ejemplo, el [**atributo de**](allocate.md) tipo allocate permite personalizar la asignación y desasignación de memoria tanto por la aplicación como por los códigos auxiliares.
+La **palabra clave typedef** de un ACF aplica atributos a los tipos definidos en el archivo IDL correspondiente. Por ejemplo, el [**atributo allocate**](allocate.md) type le permite personalizar la asignación y desasignación de memoria tanto por la aplicación como por los códigos auxiliares.
 
-La instrucción **typedef de** ACF aparece como parte del cuerpo de ACF. Tenga en cuenta que la sintaxis **de typedef** de ACF es diferente de la sintaxis de **typedef** de IDL y la sintaxis **typedef del** lenguaje C. No se pueden introducir nuevos tipos en el ACF.
+La instrucción **typedef de** ACF aparece como parte del cuerpo de ACF. Tenga en cuenta que la sintaxis **de typedef** de ACF es diferente de la sintaxis de **typedef** de IDL y la sintaxis **typedef del lenguaje** C. No se pueden introducir nuevos tipos en el ACF.
 
 ## <a name="see-also"></a>Vea también
 
@@ -133,7 +133,7 @@ La instrucción **typedef de** ACF aparece como parte del cuerpo de ACF. Tenga e
 [**transmitir \_ como**](transmit-as.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> <dt>
 
 [**Único**](unique.md)

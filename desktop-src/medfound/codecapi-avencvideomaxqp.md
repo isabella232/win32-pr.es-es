@@ -4,12 +4,12 @@ ms.assetid: 2C02F82B-E645-4C5B-9526-5E130A6E2F67
 title: CODECAPI_AVEncVideoMaxQP propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d95f605dbb647ed96ec40e89870c761400a6d414cd354cb0197bb316bd3cf27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9bcf23866da5530d2edc1203be359071e5e33e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119606325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269260"
 ---
 # <a name="codecapi_avencvideomaxqp-property"></a>Propiedad CODECAPI \_ AVEncVideoMaxQP
 
@@ -23,7 +23,7 @@ Especifica el QP máximo admitido por el codificador.
 
 **CODECAPI \_ AVEncVideoMaxQP**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Codificadores H.264/AVC:**
 
@@ -40,12 +40,12 @@ El valor predeterminado debe ser el QP máximo permitido por el estándar de cod
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                   |
-| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

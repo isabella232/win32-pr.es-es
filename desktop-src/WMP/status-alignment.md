@@ -6,15 +6,15 @@ keywords:
 - Reproductor de Windows Media Máscaras móviles, visualización de estado
 - máscaras, visualización de estado
 - referencia de máscaras, visualización de estado
-- visualización del estado en máscaras, alineación
+- presentación de estado en máscaras, alineación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dbb9bb825329aa3f4ddbe98e8b8e3cfe6d26dd7a396c27394665ac6f7e54431
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f50b1a9824db4454ae549a38428a10f2e4f3e0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241719"
 ---
 # <a name="status-alignment"></a>Alineación de estado
 
@@ -24,7 +24,7 @@ Debe definir la alineación de la presentación de estado que desea usar. En la 
 
 | Value  | Descripción                                                                       |
 |--------|-----------------------------------------------------------------------------------|
-| Left   | El texto está alineado a la izquierda (alineado con el margen izquierdo de la presentación de estado).   |
+| Left   | El texto está alineado a la izquierda (alineado con el margen izquierdo de la pantalla de estado).   |
 | Center | El texto se centra en la presentación de estado.                                       |
 | Right  | El texto está alineado a la derecha (alineado con el margen derecho de la presentación de estado). |
 
@@ -36,7 +36,7 @@ Debe definir la alineación de la presentación de estado que desea usar. En la 
 
 <dl> <dt>
 
-[**Estado**](status.md)
+[**Status**](status.md)
 </dt> </dl>
 
  

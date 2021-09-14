@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65119db42e8a4d6a06414f1c7790fb8716c0f9423391ed0a58f74a6913cb3b8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89f411ad8575bc7419cf9300d1aab46073ee869c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119649135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241941"
 ---
 # <a name="externallibrarylocationid"></a>External.libraryLocationID
 
@@ -39,17 +39,17 @@ window.external.libraryLocationID
 
 Esta propiedad es una cadena de solo **lectura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad funciona en combinación con la [propiedad External.libraryLocationType.](external-librarylocationtype.md) Por ejemplo, suponga **que libraryLocationType** es igual a CPAlbumID y **libraryLocationID** es igual a 3. Esto significa que la vista actual Reproductor de Windows Media muestra el álbum que tiene un identificador de 3. Para obtener más información sobre cómo Reproductor de Windows Media las vistas del contenido de la tienda en línea, vea [Ubicación y elemento seleccionado.](location-and-selected-item.md)
 
-Ciertas vistas de Reproductor de Windows Media están asociadas a un elemento multimedia determinado. Por ejemplo, si la vista actual representa un álbum individual, **libraryLocationType** es igual a CPAlbumID y **libraryLocationID** es el identificador del álbum. Otras vistas no están asociadas a ningún elemento multimedia determinado. Por ejemplo, si la vista actual representa todos los álbumes, **libraryLocationType** es igual a AllCPAlbumIDs, pero no hay ningún valor significativo que se pueda asignar a **libraryLocationID.** En los casos en los que la propiedad **libraryLocationID** no tiene ningún valor significativo, es igual a la cadena vacía.
+Algunas vistas de Reproductor de Windows Media están asociadas a un elemento multimedia determinado. Por ejemplo, si la vista actual representa un álbum individual, **libraryLocationType** es igual a CPAlbumID y **libraryLocationID** es el identificador del álbum. Otras vistas no están asociadas a ningún elemento multimedia determinado. Por ejemplo, si la vista actual representa todos los álbumes, **libraryLocationType** es igual a AllCPAlbumIDs, pero no hay ningún valor significativo que se pueda asignar a **libraryLocationID.** En los casos en los que la propiedad **libraryLocationID** no tiene ningún valor significativo, es igual a la cadena vacía.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

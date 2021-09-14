@@ -1,19 +1,19 @@
 ---
-description: El archivo VBScript WiExport.vbs se proporciona en los componentes del SDK de Windows para desarrolladores Windows Installer.
+description: El archivo VBScript WiExport.vbs se proporciona en los componentes del SDK de Windows para Windows Instalador de aplicaciones.
 ms.assetid: 3ff7bd48-cb22-4d5b-a607-39eaeb67c55b
 title: Exportar archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de7cab882778bce6d84412f53987c65211f70f4a8a10b52836ad993d8e813304
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1512650ee144fc00c2de851051b9bbb4d98a21e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120044445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158423"
 ---
 # <a name="export-files"></a>Exportar archivos
 
-El archivo vbscript WiExport.vbs se proporciona en los componentes del SDK de [Windows para Windows desarrolladores del instalador de .](platform-sdk-components-for-windows-installer-developers.md) En este ejemplo se muestra cómo escribir script para exportar tablas a una base de Windows Installer. El ejemplo de script se conecta a un [**objeto Installer,**](installer-object.md) abre una base de datos y exporta tablas a archivos de archivo.
+El archivo vbscript WiExport.vbs se proporciona en los componentes del SDK Windows [para Windows instalador de .](platform-sdk-components-for-windows-installer-developers.md) En este ejemplo se muestra cómo escribir script para exportar tablas a una base de datos Windows Installer. El ejemplo de script se conecta a un [**objeto Installer,**](installer-object.md) abre una base de datos y exporta tablas a archivos de archivo.
 
 En el ejemplo se muestra el uso de:
 
@@ -43,7 +43,7 @@ Las siguientes opciones se pueden especificar en cualquier lugar de la línea de
 
  
 
-Para obtener ejemplos de scripting adicionales, [vea Windows ejemplos de scripting del instalador de .](windows-installer-scripting-examples.md) Para obtener utilidades de ejemplo que no requieren Windows host de script, [vea Windows Installer Development Tools](windows-installer-development-tools.md).
+Para obtener ejemplos de scripting adicionales, [vea Windows ejemplos de scripting del instalador de .](windows-installer-scripting-examples.md) Para obtener utilidades de ejemplo que no requieren Windows host de script, [vea Windows Herramientas de desarrollo del instalador .](windows-installer-development-tools.md)
 
  
 

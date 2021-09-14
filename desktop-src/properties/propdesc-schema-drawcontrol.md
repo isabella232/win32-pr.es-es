@@ -5,11 +5,11 @@ title: drawControl
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 58a330854f19005f7f2863c337451b1dcc56cea3
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122632053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268276"
 ---
 # <a name="drawcontrol"></a>drawControl
 
@@ -87,7 +87,7 @@ Esta forma del control no permite la edición de propiedades.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Predeterminado</td>
+<td>Valor predeterminado</td>
 <td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . El tipo predeterminado es &quot; String &quot; (multivalor) y el control predeterminado &quot; es MultiValueText. &quot; Cualquier otro tipo da como resultado el uso del &quot; control &quot; StaticText.</td>
 </tr>
 <tr class="even">

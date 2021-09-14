@@ -1,5 +1,5 @@
 ---
-title: tipos complejos de esquema baseeapconnectionpropertiesv1
+title: Tipos complejos de esquema baseeapconnectionpropertiesv1
 description: Obtenga información sobre el esquema baseeapconnectionpropertiesv1. Este esquema define los tipos complejos BaseEapParameters y BaseEapTypeParameters.
 ms.assetid: 536dbc56-1811-4b51-95ee-cf1e3f4b0a2d
 ms.topic: article
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b63c04159741f6deb1ad12f4e2d3507ae8d29c093ffd39d7d7cc2299c6ab84db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6466298e0f03dc5b5f20960c5910a29529e65520
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241317"
 ---
-# <a name="baseeapconnectionpropertiesv1-schema-complex-types"></a>tipos complejos de esquema baseeapconnectionpropertiesv1
+# <a name="baseeapconnectionpropertiesv1-schema-complex-types"></a>Tipos complejos de esquema baseeapconnectionpropertiesv1
 
 El esquema baseeapconnectionpropertiesv1 define los siguientes tipos complejos.
 

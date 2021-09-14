@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ed6191de129bffea0e11abb24f1e271fc0b2873d2b306430a4e7eafe39b214d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09e9ff854893268a00cb7b5f2fb35409be2e70e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241898"
 ---
 # <a name="externalonchangeviewonlinelisterror-event"></a>Evento External.OnChangeViewOnlineListError
 
@@ -28,7 +28,7 @@ ms.locfileid: "119648805"
 
  
 
-El **evento OnChangeViewOnlineListError** se produce cuando una llamada al [método External.changeViewOnlineList](external-changeviewonlinelist.md) produce un error.
+El **evento OnChangeViewOnlineListError** se produce cuando una llamada al método [External.changeViewOnlineList](external-changeviewonlinelist.md) produce un error.
 
 ``` syntax
 window.external.OnChangeViewOnlineListError = functionname
@@ -36,7 +36,7 @@ window.external.OnChangeViewOnlineListError = functionname
 
 ## <a name="possible-values"></a>Valores posibles
 
-Se trata de una propiedad de solo escritura que especifica el nombre de la función en el script que Reproductor de Windows Media cuando se produce el evento.
+Se trata de una propiedad de solo escritura que especifica el nombre de la función en el script que Reproductor de Windows Media llama cuando se produce el evento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -54,14 +54,14 @@ Código **de error HRESULT** que indica el motivo del error.
 <span id="LibraryLocationType"></span><span id="librarylocationtype"></span><span id="LIBRARYLOCATIONTYPE"></span>*LibraryLocationType*
 </dt> <dd>
 
-La misma cadena que se pasó en el **parámetro LibraryLocationType** **de changeViewOnlineList.**
+La misma cadena que se pasó en el parámetro **LibraryLocationType** **de changeViewOnlineList.**
 
 </dd> <dt>
 
 <span id="LibraryLocationID"></span><span id="librarylocationid"></span><span id="LIBRARYLOCATIONID"></span>*LibraryLocationID*
 </dt> <dd>
 
-La misma cadena que se pasó en el **parámetro LibraryLocationID** **de changeViewOnlineList**.
+La misma cadena que se pasó en el parámetro **LibraryLocationID** **de changeViewOnlineList.**
 
 </dd> <dt>
 
@@ -75,21 +75,21 @@ La misma cadena que se pasó en el parámetro **Params** **de changeViewOnlineLi
 <span id="FriendlyName"></span><span id="friendlyname"></span><span id="FRIENDLYNAME"></span>*FriendlyName*
 </dt> <dd>
 
-La misma cadena que se pasó en el **parámetro FriendlyName** **de changeViewOnlineList**.
+La misma cadena que se pasó en el **parámetro FriendlyName** **de changeViewOnlineList.**
 
 </dd> <dt>
 
 <span id="ListType"></span><span id="listtype"></span><span id="LISTTYPE"></span>*ListType*
 </dt> <dd>
 
-La misma cadena que se pasó en el **parámetro ListType** **de changeViewOnlineList**.
+La misma cadena que se pasó en el **parámetro ListType** **de changeViewOnlineList.**
 
 </dd> <dt>
 
 <span id="ViewMode"></span><span id="viewmode"></span><span id="VIEWMODE"></span>*Viewmode*
 </dt> <dd>
 
-La misma cadena que se pasó en el **parámetro ViewMode** **de changeViewOnlineList**.
+La misma cadena que se pasó en el **parámetro ViewMode** **de changeViewOnlineList.**
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ La misma cadena que se pasó en el **parámetro ViewMode** **de changeViewOnline
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/>                                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

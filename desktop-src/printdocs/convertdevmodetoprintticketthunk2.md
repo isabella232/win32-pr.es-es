@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: d5aea99e54a43eb35f76c719da885f8d7ae0352d47ecff62b7df38de30410025
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f13d597a11a4d6cfd1ad6f5d70b3a386560f5106
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268372"
 ---
 # <a name="convertdevmodetoprintticketthunk2-function"></a>Función ConvertDevModeToPrintTicketThunk2
 
@@ -77,7 +77,7 @@ Valor que especifica el ámbito de *ppPrintTicket.* Este valor puede especificar
 *ppPrintTicket* \[ out\]
 </dt> <dd>
 
-Dirección del búfer que contiene un vale de impresión que representa el [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) pasado *en pDevmode*. Esta función llama [**a CoTaskMemAlloc para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) asignar este búfer. Cuando el búfer ya no es necesario, el autor de la llamada debe liberarlo llamando a [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
+Dirección del búfer que contiene un vale de impresión que representa el [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) pasado *en pDevmode*. Esta función llama [**a CoTaskMemAlloc para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) asignar este búfer. Cuando el búfer ya no es necesario, el autor de la llamada debe liberarlo mediante una [**llamada a CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Si el método se realiza correctamente, devuelve **S \_ OK;** de lo contrario, d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

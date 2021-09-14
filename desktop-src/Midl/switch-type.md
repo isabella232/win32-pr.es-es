@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8695a17c60f9785d7782d77db839499306a9577755e8a6838540f5a0fc2cea48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14184c5838d9f671f75536714d73c3f6ebf00a0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159366"
 ---
 # <a name="switch_type-attribute"></a>atributo \_ switch type
 
@@ -38,7 +38,7 @@ Especifica un tipo [**int**](int.md), [**char**](char-idl.md), [**Boolean**](boo
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Mientras que **\[ el atributo switch \_ \] type** identifica el tipo de variable, el atributo switch is especifica el nombre del parámetro que es **\[** [**\_**](switch-is.md) el **\]** discriminador de unión. El **\[ atributo switch \_ type \]** se aplica a parámetros o miembros de estructuras o uniones.
 
@@ -68,7 +68,7 @@ typedef struct _WINNER_TYPE
 
 <dl> <dt>
 
-[**Booleana**](boolean.md)
+[**Boolean**](boolean.md)
 </dt> <dt>
 
 [**Char**](char-idl.md)
@@ -92,7 +92,7 @@ typedef struct _WINNER_TYPE
 [**switch \_ es**](switch-is.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> </dl>
 
  

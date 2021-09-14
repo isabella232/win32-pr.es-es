@@ -1,6 +1,6 @@
 ---
 title: TVM_SETINSERTMARKCOLOR mensaje (Commctrl.h)
-description: Establece el color utilizado para dibujar la marca de inserción para la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetInsertMarkColor.
+description: Establece el color utilizado para dibujar la marca de inserción de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetInsertMarkColor.
 ms.assetid: c82304a8-3726-42c0-81e7-90d8f8205ead
 keywords:
 - TVM_SETINSERTMARKCOLOR controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05d5fd9984b77c99a13e1c7eab24c231e0ce7f601ecb79f8747cdf7ea3011327
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 92668b1137b089f9a09cc9a34d63d472742bce4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165641"
 ---
 # <a name="tvm_setinsertmarkcolor-message"></a>Mensaje DE TVM \_ SETINSERTMARKCOLOR
 
-Establece el color utilizado para dibujar la marca de inserción para la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetInsertMarkColor de TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmarkcolor)
+Establece el color utilizado para dibujar la marca de inserción de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetInsertMarkColor.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmarkcolor)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,11 +47,11 @@ Devuelve un **valor COLORREF** que contiene el color de la marca de inserción a
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

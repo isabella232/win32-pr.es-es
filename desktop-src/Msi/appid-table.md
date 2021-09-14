@@ -5,22 +5,22 @@ title: Tabla AppId
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1d9a121e6252c6054d5ac2765a9649e345035dde
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159131"
 ---
 # <a name="appid-table"></a>Tabla AppId
 
-La tabla AppId o [la tabla registry](registry-table.md) especifica que el instalador configure y registre servidores DCOM para realizar una de las siguientes acciones durante una instalación.
+La tabla AppId o la [tabla registry](registry-table.md) especifica que el instalador configure y registre servidores DCOM para realizar una de las siguientes acciones durante una instalación.
 
 -   Ejecute el servidor DCOM con una identidad diferente a la del usuario que activa el servidor. Por ejemplo, para configurar un servidor DCOM para que siempre se ejecute como un usuario interactivo o como un usuario predefinido.
 -   Ejecute el servidor DCOM como servicio.
 -   Configure el acceso de seguridad predeterminado para el servidor DCOM.
--   Registre el servidor DCOM de forma que se active en otro equipo.
+-   Registre el servidor DCOM de modo que se active en otro equipo.
 
-Esta tabla se procesa durante la instalación del componente asociado al servidor DCOM en la \_ columna Componente de la tabla [Clase](class-table.md). No se anuncia un AppId.
+Esta tabla se procesa en la instalación del componente asociado al servidor DCOM en la \_ columna Componente de la tabla [Class](class-table.md). No se anuncia un AppId.
 
 La tabla AppId tiene las columnas siguientes.
 
@@ -28,13 +28,13 @@ La tabla AppId tiene las columnas siguientes.
 
 | Columna               | Tipo                       | Clave | Nullable |
 |----------------------|----------------------------|-----|----------|
-| AppId                | [GUID](guid.md)           | S   | No        |
-| RemoteServerName     | [Formato](formatted.md) | N   | S        |
-| LocalService (Servicio local)         | [Text](text.md)           | N   | S        |
-| ServiceParameters    | [Text](text.md)           | No   | S        |
-| DllSurrogate         | [Text](text.md)           | N   | S        |
-| ActivateAtStorage    | [Entero](integer.md)     | No   | S        |
-| RunAsInteractiveUser | [Entero](integer.md)     | No   | S        |
+| AppId                | [GUID](guid.md)           | Y   | N        |
+| RemoteServerName     | [Formato](formatted.md) | N   | Y        |
+| LocalService (Servicio local)         | [Texto](text.md)           | N   | Y        |
+| ServiceParameters    | [Texto](text.md)           | N   | Y        |
+| DllSurrogate         | [Texto](text.md)           | N   | Y        |
+| ActivateAtStorage    | [Entero](integer.md)     | N   | Y        |
+| RunAsInteractiveUser | [Entero](integer.md)     | N   | Y        |
 
 
 
@@ -54,7 +54,7 @@ La columna AppId de la [tabla Class es](class-table.md) una clave externa en est
 <span id="RemoteServerName"></span><span id="remoteservername"></span><span id="REMOTESERVERNAME"></span>RemoteServerName
 </dt> <dd>
 
-Esta columna contiene el valor de "RemoteServerName"= &lt; xxxx &gt; que se escribirá en HKCR \\ AppID \\ {AppID}. \\
+Esta columna contiene el valor de "RemoteServerName"= xxxx que se escribirá en &lt; &gt; HKCR \\ AppID \\ {AppID}. \\
 
 </dd> <dt>
 
@@ -93,11 +93,11 @@ Un valor entero distinto de cero en este campo hace que Windows Installer escrib
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta tabla la usan la [acción RegisterClassInfo y](registerclassinfo-action.md) [la acción UnregisterClassInfo](unregisterclassinfo-action.md).
+La acción [RegisterClassInfo](registerclassinfo-action.md) y la acción [UnregisterClassInfo](unregisterclassinfo-action.md)usan esta tabla.
 
-Tenga en cuenta que la tabla AppId no tiene una columna para registrar un nombre predeterminado. Por lo tanto, en los casos en los que necesite escribir un nombre descriptivo como valor de Nombre predeterminado, debe registrarse mediante la [tabla del Registro](registry-table.md).
+Tenga en cuenta que la tabla AppId no tiene una columna para registrar un nombre predeterminado. Por lo tanto, en los casos en los que necesite escribir un nombre descriptivo como valor de nombre predeterminado, debe registrarse mediante la [tabla del Registro](registry-table.md).
 
 ## <a name="validation"></a>Validación
 

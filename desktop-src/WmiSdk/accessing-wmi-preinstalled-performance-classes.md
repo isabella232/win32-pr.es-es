@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Acceso a clases de rendimiento preinstaladas de WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 656c3434d2f20bd73ae9ff5273f7e67439fc6caa01ac9ee5bf0283850e64b34a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0265f9b4008913a463545ed03cd6f1025b58ef5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119131898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241472"
 ---
 # <a name="accessing-wmi-preinstalled-performance-classes"></a>Acceso a clases de rendimiento preinstaladas de WMI
 
@@ -18,7 +18,7 @@ El repositorio WMI contiene clases de rendimiento preinstaladas para todos los o
 
 La **propiedad PageFaultsPerSec** de [**Win32 \_ PerfRawData \_ PerfProc \_ Process**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) representa el contador de rendimiento Errores de página por segundo para el proceso. Las [**clases \_ PerfFormattedData de Win32**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) contienen los valores de datos calculados que se muestran en el Monitor de sistema (Perfmon.exe). El valor de la **propiedad PageFaultsPerSec** de [**Win32 \_ PerfFormattedData \_ PerfProc \_ Process**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) es el mismo que cuando aparece en el Monitor del sistema.
 
-Use la [API COM para WMI o](com-api-for-wmi.md) scripting API para [WMI](scripting-api-for-wmi.md) para acceder a los datos de rendimiento a través de las clases de contador [de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes). En ambos [*casos, se requiere un objeto*](gloss-r.md) de actualizador para obtener cada muestra de datos. Para obtener más información y crear scripts de ejemplos de código para usar actualizadores y obtener acceso a clases de rendimiento, vea [Wmi Tasks: Performance Monitoring](wmi-tasks--performance-monitoring.md). Para obtener más información, vea [Acceso a datos de rendimiento en script](accessing-performance-data-in-script.md).
+Use la [API COM para WMI o](com-api-for-wmi.md) la API de scripting para [WMI](scripting-api-for-wmi.md) para acceder a los datos de rendimiento a través de las clases de contador [de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes). En ambos [*casos, se requiere un objeto*](gloss-r.md) de actualizador para obtener cada muestra de datos. Para obtener más información y crear scripts de ejemplos de código para usar actualizadores y obtener acceso a clases de rendimiento, vea [Wmi Tasks: Performance Monitoring](wmi-tasks--performance-monitoring.md). Para obtener más información, vea [Acceso a datos de rendimiento en script](accessing-performance-data-in-script.md).
 
 ## <a name="accessing-performance-data-from-c"></a>Acceso a datos de rendimiento desde C++
 
@@ -37,13 +37,13 @@ using namespace std;
 
 En el procedimiento siguiente se muestra cómo acceder a los datos de un proveedor de alto rendimiento en C++.
 
-**Para acceder a datos de un proveedor de alto rendimiento en C++**
+**Para acceder a los datos de un proveedor de alto rendimiento en C++**
 
-1.  Establezca una conexión con el espacio de nombres WMI y establezca la seguridad de WMI mediante una llamada a [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver) y [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+1.  Establezca una conexión con el espacio de nombres WMI y establezca la seguridad wmi mediante una llamada a [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver) y [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
     Este paso es un paso estándar para crear cualquier aplicación cliente WMI. Para obtener más información, vea [Crear una aplicación WMI mediante C++.](creating-a-wmi-application-using-c-.md)
 
-2.  Cree un objeto refresher mediante [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con CLSID \_ WbemRefresher. Solicite una [**interfaz IWbemConfigureRefresher**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemconfigurerefresher) mediante el [**método QueryInterface.**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) Solicite una [**interfaz IWbemRefresher**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemrefresher) mediante el **método QueryInterface.**
+2.  Cree un objeto de actualizador mediante [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con CLSID \_ WbemRefresher. Solicite una [**interfaz IWbemConfigureRefresher**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemconfigurerefresher) mediante el [**método QueryInterface.**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) Solicite una [**interfaz IWbemRefresher**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemrefresher) mediante el **método QueryInterface.**
 
     La [**interfaz IWbemRefresher**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemrefresher) es la interfaz principal del objeto [**Refresher de**](swbemrefreshableitem-refresher.md) WMI.
 
@@ -115,9 +115,9 @@ En el procedimiento siguiente se muestra cómo acceder a los datos de un proveed
 
     La [**interfaz IWbemObjectAccess**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemobjectaccess) aumenta el rendimiento porque puede obtener identificadores para propiedades de contador específicas y requiere que bloquee y desbloquee el objeto en el código, que es una operación que [**IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) realiza para cada acceso a las propiedades.
 
-5.  Obtenga los identificadores de las propiedades que se examinarán mediante llamadas al método [**IWbemObjectAccess::GetPropertyHandle.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle)
+5.  Obtenga los identificadores de las propiedades que se examinarán mediante llamadas al [**método IWbemObjectAccess::GetPropertyHandle.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectaccess-getpropertyhandle)
 
-    Los identificadores de propiedad son los mismos para todas las instancias de una clase, lo que significa que usan el identificador de propiedad que se recupera de una instancia específica para todas las instancias de una clase específica. También puede obtener un identificador de un objeto de clase para recuperar valores de propiedad de un objeto de instancia.
+    Los identificadores de propiedad son los mismos para todas las instancias de una clase, lo que significa que se usa el identificador de propiedad que se recupera de una instancia específica para todas las instancias de una clase específica. También puede obtener un identificador de un objeto de clase para recuperar valores de propiedad de un objeto de instancia.
 
     En el siguiente ejemplo de código de C++ se muestra cómo recuperar un identificador de propiedad.
 

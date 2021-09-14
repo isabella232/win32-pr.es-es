@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdbeff03626903a77ca9eb42b3b47969dbf84b66e0496f90ae2b279b13655141
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76ed163f1c947b7cf0481c7aa2b7e5c125f36b57
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242667"
 ---
 # <a name="xmltypes-typelisttype-element"></a>Elemento xmlTypes (TypeListType)
 
@@ -30,7 +30,7 @@ Define una lista de tipos de salida que el servicio usa para determinar cómo re
  />
 ```
 
-El **elemento xmlTypes** se define mediante el [**tipo complejo TypeListType.**](eventmanifestschema-typelisttype-complextype.md)
+El tipo complejo [**TypeListType**](eventmanifestschema-typelisttype-complextype.md) define el elemento **xmlTypes.**
 
 ## <a name="requirements"></a>Requisitos
 

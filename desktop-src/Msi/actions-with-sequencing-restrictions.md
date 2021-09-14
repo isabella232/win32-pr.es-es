@@ -4,12 +4,12 @@ ms.assetid: 659b1dd2-7510-4962-a991-f5febcfbf26e
 title: Acciones con restricciones de secuenciación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3886ce503569ae2e32e23e15bb73fa3fce13dbcadec98d1d3922056dc0c3247a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13d518bca1f90d256660bdf241dd7199d749cbd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118640103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159231"
 ---
 # <a name="actions-with-sequencing-restrictions"></a>Acciones con restricciones de secuenciación
 

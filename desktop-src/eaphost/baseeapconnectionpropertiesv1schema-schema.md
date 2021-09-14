@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8cec4b56e73aac256e97bff01fa3bce3d1b9582f4e656d223583c2ceeddb4c36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8011e0a4993f0a8d929c6eca7dea39a3e1d8d46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118086837"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241305"
 ---
 # <a name="baseeapconnectionpropertiesv1-schema"></a>baseeapconnectionpropertiesv1 Schema
 

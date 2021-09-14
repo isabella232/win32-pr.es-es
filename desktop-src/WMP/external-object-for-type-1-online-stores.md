@@ -9,12 +9,12 @@ keywords:
 - objetos externos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e7d95d2ca332b88edea73da2238374aeffc52e520d7bc0346eab9f4eb7a05f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f50e5e6bfc98ea3669996b06fa4a4defb52452fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119649005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241923"
 ---
 # <a name="external-object-for-type-1-online-stores"></a>Objeto externo para almacenes en línea de tipo 1
 
@@ -23,7 +23,7 @@ ms.locfileid: "119649005"
 
  
 
-El **objeto Externo** proporciona funcionalidad a las páginas web, proporcionadas por una tienda en línea, hospedadas en Reproductor de Windows Media.
+El **objeto** Externo proporciona funcionalidad a las páginas web, proporcionadas por una tienda en línea, hospedadas en Reproductor de Windows Media.
 
 El **objeto External** expone las siguientes propiedades para almacenes en línea de tipo 1.
 
@@ -32,8 +32,8 @@ El **objeto External** expone las siguientes propiedades para almacenes en líne
 | Propiedad                                                                                  | Descripción                                                                                                                              |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | [accountType](external-accounttype.md)                                                   | Recupera el tipo de cuenta del usuario actual.                                                                                          |
-| [appColorButtonHighlight](external-appcolorbuttonhighlight.md)                           | Recupera el color de resaltado del botón actual para la interfaz Reproductor de Windows Media usuario.                                                |
-| [appColorButtonHoverFace](external-appcolorbuttonhoverface.md)                           | Recupera el color actual del mouse del botón para la Reproductor de Windows Media usuario.                                                    |
+| [appColorButtonHighlight](external-appcolorbuttonhighlight.md)                           | Recupera el color de resaltado del botón actual para la Reproductor de Windows Media interfaz de usuario.                                                |
+| [appColorButtonHoverFace](external-appcolorbuttonhoverface.md)                           | Recupera el color actual del mouse del botón para la Reproductor de Windows Media de usuario.                                                    |
 | [appColorButtonShadow](external-appcolorbuttonshadow.md)                                 | Recupera el color de sombra del botón actual para la interfaz Reproductor de Windows Media usuario.                                                   |
 | [appColorDark](external-appcolordark.md)                                                 | Recupera el color sombreado oscuro actual de la interfaz Reproductor de Windows Media usuario.                                                      |
 | [appColorLight](external-appcolorlight.md)                                               | Recupera el color sombreado claro actual de la interfaz Reproductor de Windows Media usuario.                                                     |
@@ -43,7 +43,7 @@ El **objeto External** expone las siguientes propiedades para almacenes en líne
 | [ignoreIEHistory](external-ignoreiehistory.md)                                           | Especifica si Reproductor de Windows Media debe omitir Internet Explorer historial.                                                          |
 | [libraryLocationID](external-librarylocationid.md)                                       | Recupera el identificador de un elemento multimedia específico que se muestra actualmente en la vista del reproductor.                                      |
 | [libraryLocationType](external-librarylocationtype.md)                                   | Recupera una constante [de ubicación de biblioteca](library-location-constants.md) que indica el tipo de la vista actual en Reproductor de Windows Media. |
-| [pluginRunning](external-pluginrunning.md)                                               | Recupera un valor que indica si el complemento de la tienda en línea se está ejecutando.                                                          |
+| [pluginRunning](external-pluginrunning.md)                                               | Recupera un valor que indica si se está ejecutando el complemento de la tienda en línea.                                                          |
 | [selectedItemID](external-selecteditemid.md)                                             | Recupera el identificador del elemento multimedia que está seleccionado actualmente en Reproductor de Windows Media.                                           |
 | [selectedItemType](external-selecteditemtype.md)                                         | Recupera el tipo del elemento multimedia que está seleccionado actualmente en Reproductor de Windows Media.                                                 |
 | [Tarea](external-task.md)                                                                 | Recupera el nombre del panel de tareas actual.                                                                                             |
@@ -68,7 +68,7 @@ El **objeto External** expone los métodos siguientes para almacenes en línea d
 | [comprar](external-buy.md)                                           | Inicia la compra de un conjunto de elementos multimedia.                                                                              |
 | [cancelNavigate](external-cancelnavigate.md)                     | Informa Reproductor de Windows Media que no debe mostrar una nueva página de detección aunque la vista haya cambiado en el reproductor. |
 | [changeView](external-changeview.md)                             | Cambia la vista en Reproductor de Windows Media.                                                                                    |
-| [changeViewOnlineList](external-changeviewonlinelist.md)         | Cambia la vista de Reproductor de Windows Media para mostrar una lista generada dinámicamente por la tienda en línea.                        |
+| [changeViewOnlineList](external-changeviewonlinelist.md)         | Cambia la vista en Reproductor de Windows Media para mostrar una lista generada dinámicamente por la tienda en línea.                        |
 | [download](external-download.md)                                 | Inicia la descarga de un conjunto de elementos multimedia.                                                                              |
 | [Jugar](external-play.md)                                         | Indica Reproductor de Windows Media reproducir un conjunto de elementos multimedia.                                                                 |
 | [saveCurrentViewToLibrary](external-savecurrentviewtolibrary.md) | Crea una lista de reproducción a partir de los elementos multimedia de la vista actual y guarda la lista de reproducción en la biblioteca local.                     |
@@ -89,7 +89,7 @@ El **objeto External** expone los siguientes eventos para almacenes en línea de
 | [OnChangeViewOnlineListError](external-onchangeviewonlinelisterror-event.md) | Se produce cuando una llamada al **método External.ChangeViewOnlineList** produce un error. |
 | [OnColorChange](external-oncolorchange-event.md)                             | Se produce cuando cambia el color del Reproductor de Windows Media interfaz de usuario.               |
 | [OnLoginChange](external-onloginchange-event.md)                             | Se produce cuando cambia el estado de inicio de sesión del usuario o cuando se produce un error al intentar iniciar sesión.        |
-| [OnSendMessageComplete](external-onsendmessagecomplete-event.md)             | Se produce cuando la tienda en línea ha terminado de procesar un mensaje.                         |
+| [OnSendMessageComplete](external-onsendmessagecomplete-event.md)             | Se produce cuando el almacén en línea ha terminado de procesar un mensaje.                         |
 | [OnViewChange](external-onviewchange-event.md)                               | Se produce cuando la vista cambia en Reproductor de Windows Media.                                   |
 
 

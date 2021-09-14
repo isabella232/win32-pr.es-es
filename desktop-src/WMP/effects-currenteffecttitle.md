@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a4cb48d92f7f4ad0eb801c90e46ad20f04a639b20550a1dbf910e93347e2429
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 348d8ae1eed421d9e5da594f34a9b10f5b439469
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242528"
 ---
 # <a name="effectscurrenteffecttitle"></a>EFFECTS.currentEffectTitle
 
-El **atributo currentEffectTitle** recupera el título de presentación de la visualización actual.
+El **atributo currentEffectTitle** recupera el título para mostrar de la visualización actual.
 
 ``` syntax
         elementID.currentEffectTitle
@@ -45,7 +45,7 @@ Este atributo es una cadena de solo **lectura.**
 
 <dl> <dt>
 
-[**ELEMENTO EFFECTS**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> <dt>
 
 [**EFFECTS.currentEffect**](effects-currenteffect.md)

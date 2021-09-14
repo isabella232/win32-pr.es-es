@@ -4,12 +4,12 @@ ms.assetid: 7EB33215-8F8B-4EA4-87E6-A98F0D014548
 title: Novedades de la seguridad Windows 8 familia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e67714618f691a61490900c8d7d35bf3cc462d8f7c86cdeccb9120aa3c519554
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2123ec7f0d9c3af66528c6c203a3e8ea64bd0384
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268444"
 ---
 # <a name="whats-new-in-windows-8-family-safety"></a>Novedades de la seguridad Windows 8 familia
 
@@ -23,14 +23,14 @@ Los cambios en los controles parentales introducidos en Windows 8 continúan el 
 
 -   Uso de Microsoft Family Safety para proporcionar administración remota y supervisión remota de la actividad.
 -   Integración del filtrado web como parte de las restricciones de Microsoft y la capacidad de ver informes de actividad en Windows 8 equipo.
--   La característica Controles parentales del Panel de control se ha cambiado a Seguridad familiar y se hará referencia como tal a lo largo de este documento.
+-   La característica Controles parentales de la Panel de control se ha cambiado a Seguridad familiar y se hará referencia como tal a lo largo de este documento.
 -   Las restricciones de tiempo incluidas se mejoraron al proporcionar la capacidad de controlar la cantidad total de tiempo al día que se puede usar el equipo (asignación de tiempo), además de la capacidad de controlar las horas en las que se puede usar el equipo (toque de queda). El toque de queda estaba disponible en versiones anteriores de Windows.
 -   Windows 8 La funcionalidad de seguridad de familia se puede desactivar durante el flujo de creación de cuentas estándar.
--   Windows Las características de extensibilidad de los controles parentales de Vista y Windows 7 siguen siendo compatibles con la seguridad de la familia de Windows 8, incluida la capacidad de las soluciones de terceros de reemplazar el filtro de contenido web o reemplazar la interfaz de usuario de configuración integrada mientras se sigue basando en la implementación integrada de Time, Application, Game Restrictions y Web Content Filter.
+-   Windows Las características de extensibilidad de los controles parentales de Vista y Windows 7 siguen siendo compatibles con la seguridad de la familia de Windows 8, incluida la capacidad de las soluciones de terceros para reemplazar el filtro de contenido web o reemplazar la interfaz de usuario de configuración integrada mientras se sigue basando en la implementación integrada de Tiempo, Aplicación, Restricciones de juegos y Filtro de contenido web.
 -   La activación de proveedores de terceros desactiva la administración remota y la generación de informes de Windows 8 seguridad familiar a través del sitio web de seguridad familiar.
 -   La extensibilidad de terceros para la seguridad de familia solo se admite Windows 8 aplicaciones de escritorio.
 
-## <a name="family-safety-and-standard-account-creation-in-windows-8"></a>Seguridad de la familia y creación de cuentas estándar en Windows 8
+## <a name="family-safety-and-standard-account-creation-in-windows-8"></a>Seguridad para la familia y creación de cuentas estándar en Windows 8
 
 Como parte de la creación de cuentas estándar en Windows 8, un administrador tiene la capacidad de activar la supervisión de la cuenta por seguridad familiar. A continuación se muestra una lista de la funcionalidad y la capacidad del proveedor de terceros para controlarla:
 
@@ -38,7 +38,7 @@ Como parte de la creación de cuentas estándar en Windows 8, un administrador t
 -   Si esta casilla está activada, La seguridad de la familia está activada para la cuenta con la siguiente configuración:
     -   Informe de actividades en
     -   Todas las restricciones están desactivadas
--   Si el administrador ha usado una cuenta Microsoft para iniciar sesión en Windows, el equipo Windows 8 se configurará para la administración remota de la configuración de seguridad familiar y los informes de actividad de correo electrónico. A continuación, se puede usar el sitio web de seguridad para familias para administrar este tipo de equipo de forma remota.
+-   Si el administrador usó una cuenta Microsoft para iniciar sesión en Windows, el equipo Windows 8 se configurará para la administración remota de la configuración de seguridad familiar y los informes de actividad de correo electrónico. A continuación, se puede usar el sitio web de seguridad para familias para administrar este tipo de equipo de forma remota.
 -   Si el proveedor de terceros desea que la casilla esté presente en un flujo de creación de cuentas estándar, el siguiente valor debe estar presente entre los valores de registro del proveedor. Para obtener más información sobre [](what-s-new-in-windows-7-parental-controls.md) los detalles de registro del proveedor, vea la sección Registro del proveedor en el tema Novedades de Windows 7 Parental Controls .
 
     
@@ -55,16 +55,16 @@ Como parte de la creación de cuentas estándar en Windows 8, un administrador t
 
 ## <a name="family-safety-top-level-user-interface-changes-in-windows-8"></a>Cambios de nivel superior de seguridad Interfaz de usuario familia en Windows 8
 
-Windows 8 incluye los siguientes cambios en la interfaz de usuario de nivel superior Panel de control controles parentales:
+Windows 8 incluye los siguientes cambios en la interfaz de usuario de Panel de control parental:
 
--   Cuando se activen los controles de seguridad de familia en la caja para al menos una cuenta estándar en un equipo Windows 8 Windows 8, se muestra el vínculo de comando Administrar la configuración en el sitio web de seguridad familiar que permite a un administrador establecer la administración remota de la configuración de seguridad de la familia de un equipo a través del sitio web de seguridad familiar.
+-   Cuando se activen los controles de seguridad de familia en el cuadro para al menos una cuenta estándar en un equipo de Windows 8, se muestra el vínculo de comando Administrar la configuración en el sitio web de seguridad familiar que permite Windows 8 a un administrador establecer la administración remota de la configuración de seguridad de la familia de un equipo a través del sitio web de seguridad familiar.
 -   Cuando un equipo Windows 8 está configurado para la administración remota a través del sitio web de seguridad familiar, el control Más información permite a un administrador deshabilitar la administración remota de un equipo Windows 8 a través del sitio web de seguridad familiar.
--   La sección Controles solo está visible cuando al menos un proveedor de terceros está registrado con Seguridad para la familia. La interfaz de usuario y la funcionalidad de esta sección son idénticas a la sección Controles adicionales Windows 7 Controles parentales. Para obtener más información, vea la sección Cambios en la interfaz de usuario de nivel superior de los controles parentales [del tema Windows 7 Parental Controls](what-s-new-in-windows-7-parental-controls.md) .
+-   La sección Controles solo es visible cuando al menos un proveedor de terceros está registrado con seguridad de familia. La interfaz de usuario y la funcionalidad de esta sección son idénticas a la sección Controles adicionales Windows 7 Controles parentales. Para obtener más información, vea la sección Cambios en la interfaz de usuario de nivel superior de Los controles parentales [del tema Windows 7 Parental Controls](what-s-new-in-windows-7-parental-controls.md) .
 -   Cuando se instala y selecciona un proveedor de terceros como proveedor actual, se deshabilita la administración remota de la configuración de seguridad familiar de Windows 8 equipo a través del sitio web de seguridad familiar.
 
 ## <a name="family-safety-in-box-restrictions-changes-in-windows-8"></a>Cambios en las restricciones de seguridad In-Box familia en Windows 8
 
-Windows 8 incluye los siguientes cambios en las restricciones de seguridad en la familia:
+Windows 8 incluye los siguientes cambios en las restricciones de seguridad en familia:
 
 Restricciones web
 

@@ -4,12 +4,12 @@ ms.assetid: 586f6c43-7449-4d06-9201-9b4b4919871e
 title: Agregar información de resumen a la transformación de personalización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4ea4c9aa505d425bfd06fe5cac1f45666e794624618db14100ee5f517dd3048
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64957fcf8f29ab8793517015c7018292ba9a6e69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118639475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159194"
 ---
 # <a name="adding-summary-information-to-customization-transform"></a>Agregar información de resumen a la transformación de personalización
 

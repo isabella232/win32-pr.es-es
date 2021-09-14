@@ -8,12 +8,12 @@ keywords:
 - funciones de cadena
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d50f47205ec021bffaa4cb6e24aa4825177a3fc0d8546f3a14b1d4b0e0ca4271
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ff9fa6c9d93ba2f5c089b52b56816cad74bb61c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268575"
 ---
 # <a name="about-strings"></a>Acerca de las cadenas
 

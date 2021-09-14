@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f975814fadc5271c562e4e8e420c35dbb3450142bed797af83af73fdf81a55d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 341591c31accb4aab0b49f611359a93ec99c0cab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119913805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165598"
 ---
 # <a name="tvm_sortchildren-message"></a>Mensaje \_ SORTCHILDREN de TVM
 
@@ -45,11 +45,11 @@ Identificador del elemento primario cuyos elementos secundarios se van a ordenar
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje alfabéticamente los elementos de árbol [**mediante lstrcmpi**](/windows/desktop/api/winbase/nf-winbase-lstrcmpia) en el nombre del elemento. Puede usar el mensaje [**\_ TVM SORTCHILDRENCB**](tvm-sortchildrencb.md) para personalizar el comportamiento de la ordenación.
+Este mensaje alfabéticamente los elementos de árbol mediante [**lstrcmpi**](/windows/desktop/api/winbase/nf-winbase-lstrcmpia) en el nombre del elemento. Puede usar el mensaje [**\_ SORTCHILDRENCB**](tvm-sortchildrencb.md) de TVM para personalizar el comportamiento de la ordenación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Este mensaje alfabéticamente los elementos de árbol [**mediante lstrcmpi**](/w
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

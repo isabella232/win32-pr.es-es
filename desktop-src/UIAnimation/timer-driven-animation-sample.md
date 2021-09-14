@@ -1,19 +1,19 @@
 ---
 title: Timer-Driven de animación
-description: Muestra cómo usar Windows animación con el temporizador de animación, mientras se usa GDI+ para animar el color de fondo de una ventana.
+description: Muestra cómo usar Windows con el temporizador de animación, mientras se usa GDI+ para animar el color de fondo de una ventana.
 ms.assetid: c50a4bfb-855b-4837-a117-84f412943b14
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8071d51906ba2d0d7b59acb7b1b5531fcb5c577fbbf0d47ab5039d3f43e2eab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec145b087a112c7482de3a749c690a1824195ea3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120008165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242126"
 ---
 # <a name="timer-driven-animation-sample"></a>Timer-Driven de animación
 
-Muestra cómo usar Windows animación con el temporizador de animación, mientras se usa GDI+ para animar el color de fondo de una ventana.
+Muestra cómo usar Windows con el temporizador de animación, mientras se usa GDI+ para animar el color de fondo de una ventana.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
@@ -21,7 +21,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Ubicación                               | Ruta de acceso o dirección URL                                                                                          |
+| Location                               | Ruta de acceso o dirección URL                                                                                          |
 |----------------------------------------|---------------------------------------------------------------------------------------------------|
 | Kit de desarrollo de software de Windows (SDK) | [Microsoft Windows Software Development Kit 7.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx) |
 | Galería de códigos                           | [Windows Código de ejemplo del Administrador de animaciones](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionWindowsAnimationManager)         |
@@ -38,7 +38,7 @@ Use uno de los métodos siguientes para compilar el ejemplo.
 
 **Para compilar el ejemplo en el símbolo del sistema**
 
-1.  Abra la ventana símbolo del sistema y vaya al directorio del proyecto TimerDriven. Por ejemplo, la ruta de instalación predeterminada para este ejemplo es C: Archivos de programa SDK de \\ \\ Microsoft Windows \\ \\ v7.0 \\ Ejemplos multimedia \\ \\ windowsAnimation \\ TimerDriven.
+1.  Abra la ventana símbolo del sistema y vaya al directorio del proyecto TimerDriven. Por ejemplo, la ruta de instalación predeterminada para este ejemplo es C: Archivos de programa SDK de Microsoft Windows ejemplos de \\ \\ Windows Multimedia \\ \\ v7.0Contorno de temporizador de \\ \\ \\ \\ implementación.
 
 2.  Ejecute el siguiente comando: **msbuild TimerDriven.sln**
 

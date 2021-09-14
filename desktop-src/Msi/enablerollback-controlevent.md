@@ -4,12 +4,12 @@ ms.assetid: 5279151c-a7cd-4f66-8d1b-d688b3b1cf82
 title: EnableRollback ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d3b0cd93a65a9402c915606585f3eb1cd43c058847e2907b1134e1c84982b76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc651ef90b46c87431453f50c7ee5a28953e4d32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118143116"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158493"
 ---
 # <a name="enablerollback-controlevent"></a>EnableRollback ControlEvent
 

@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 42fe1ecdbaf5cdc5cbafc53117ad7c8f370dae2b4e1a3adcee3a4fcf719c995a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e203acfc7fc23fe0dab466eee383223aad0bf889
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118320448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241478"
 ---
 # <a name="accessing-performance-data-in-script"></a>Acceso a datos de rendimiento en script
 
-Los scripts WMI pueden acceder a las clases de contador de rendimiento [WMI](/windows/desktop/CIMWin32Prov/performance-counter-classes)preinstaladas, ya sea en el equipo local o de forma remota. Aunque los scripts pueden obtener datos de clases nocalculadas, como [**Win32 \_ PerfRawData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)o clases con formato, [**\_ Win32 PerfFormattedData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data), las clases de datos con formato pueden ser más fáciles de usar.
+Los scripts WMI pueden tener acceso a las clases de contador de rendimiento [WMI](/windows/desktop/CIMWin32Prov/performance-counter-classes)preinstaladas, ya sea en el equipo local o de forma remota. Aunque los scripts pueden obtener datos de clases nocalculadas, como [**Win32 \_ PerfRawData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)o clases con formato, [**\_ Win32 PerfFormattedData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data), las clases de datos con formato pueden ser más fáciles de usar.
 
 La supervisión de los datos de rendimiento con las clases de contador de rendimiento requiere el uso de [*un actualizador*](gloss-r.md). Use el [**objeto SWbemRefresher**](swbemrefresher.md) para almacenar uno o varios objetos de rendimiento para actualizar o actualizar un único objeto mediante la llamada [**SWbemObjectEx.Refresh.**](swbemobjectex-refresh-.md) Para obtener más información, vea [Actualizar datos WMI en scripts](refreshing-wmi-data-in-scripts.md).
 

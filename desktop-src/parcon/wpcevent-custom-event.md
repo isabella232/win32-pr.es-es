@@ -4,12 +4,12 @@ ms.assetid: e6cf8008-b896-453b-9946-a6b3d94a991a
 title: WPCEVENT_CUSTOM evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8082e03aa6dfea8cd2fd461feec093de71a1ada8051b8fb88295d0bbbf570b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d20cb2450cd18bb0c77993622d226cfc06dff6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268431"
 ---
 # <a name="wpcevent_custom-event"></a>Evento WPCEVENT \_ CUSTOM
 
@@ -34,7 +34,7 @@ const EVENT_DESCRIPTOR WPCEVENT_CUSTOM = {0xd, 0x0, 0x10, 0x4, 0x17, 0xd, 0x8000
 
 <dl> <dt>
 
-*Publisher* 
+*Publicador* 
 </dt> <dd>
 
 Publicador del evento (por ejemplo, un nombre de empresa).
@@ -105,11 +105,11 @@ Cadena personalizada que proporciona información adicional sobre la razón para
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

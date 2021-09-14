@@ -1,6 +1,6 @@
 ---
 title: propget (atributo)
-description: El atributo \ propget\ especifica una función de accessor de propiedad. La propiedad debe tener el mismo nombre que la función.
+description: El atributo \ propget\ especifica una función de accessor de propiedad. La propiedad debe tener el mismo nombre que la función .
 ms.assetid: 0b76ece3-e19b-4c80-883c-ff414bc2e435
 keywords:
 - atributo propget MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aaa55521042adc07f4242a44060e2442f087e609d0e3995d8c77457c8653c66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6337409e021670c282400d38b97543687fa81c2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118383340"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159414"
 ---
 # <a name="propget-attribute"></a>propget (atributo)
 
-El **\[ atributo \] propget** especifica una función de accessor de propiedad. La propiedad debe tener el mismo nombre que la función.
+El **\[ atributo \] propget** especifica una función de accessor de propiedad. La propiedad debe tener el mismo nombre que la función .
 
 ``` syntax
 [propget [,optional-property-attributes]] return-type function-name( parameters);
@@ -45,7 +45,7 @@ Tipo de los datos devueltos por el procedimiento remoto.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Nombre del procedimiento remoto.
@@ -59,9 +59,9 @@ Cero o más parámetros para el procedimiento remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una función que tenga el atributo propget también debe tener, como último parámetro, un tipo de puntero con los atributos **\[** [**out**](out-idl.md) **\]** y **\[** [**retval.**](retval.md) **\]** Si el último parámetro no tiene los atributos out y retval, el valor devuelto de la función se trata como un \[ \] parámetro out y \[ \] retval. Por ejemplo, una función con el prototipo
+Una función que tenga el atributo propget también debe tener, como último parámetro, un tipo de puntero con los atributos **\[** [**out**](out-idl.md) **\]** y **\[** [**retval.**](retval.md) **\]** Si el último parámetro no tiene los atributos out, retval, el valor devuelto de la función se trata como \[ \] un parámetro \[ out, retval. \] Por ejemplo, una función con el prototipo
 
 ``` syntax
 [propget] short MyFunction([in] long aLongValue);
@@ -73,9 +73,9 @@ se trata como
 [propget] HRESULT MyFunction([in] long aLongValue, [out,retval] short *outValue);
 ```
 
-Como máximo, se puede **\[ especificar uno de \] propget**, **\[** [**propput**](propput.md)y **\]** **\[** [**propputref**](propputref.md) para una **\]** función.
+Como máximo, se puede especificar **\[ uno de \] propget,** **\[** [**propput**](propput.md)y **\]** **\[** [**propputref**](propputref.md) para una **\]** función.
 
-Si el atributo lcid se usa en la lista de parámetros de una función que contiene un parámetro con el atributo **\[** [](lcid.md) **\]** **\[** [**propput,**](propput.md) el **\]** **\[ parámetro lcid \]** debe ser el segundo al último.
+Si el atributo lcid se usa en la lista de parámetros de una función que contiene un parámetro con el atributo **\[** [](lcid.md) **\]** **\[** [**propput,**](propput.md) el parámetro **\]** **\[ lcid \]** debe ser de segundo a último.
 
 ### <a name="flags"></a>Marcas
 

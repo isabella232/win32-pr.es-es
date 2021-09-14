@@ -4,12 +4,12 @@ ms.assetid: 0740e4d3-63ca-46bc-84ab-19fed0b2ccac
 title: Cuadro de diálogo FatalError
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8804b632b7496c4aa876b4a84c633dc36c0928badfc7b674d3da2a34bdd743fa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c456d0442606ae4a50fc1a41f163aaa0d5057879
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120129575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158413"
 ---
 # <a name="fatalerror-dialog"></a>Cuadro de diálogo FatalError
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8c11d9e7d900c62e9dea59934058de9019cc31b6fa0e414f1310eff43c410858
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8c04874c67ff496997d36e7fd614eee1a6dbfa1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242577"
 ---
 # <a name="debugdata-eventtype-element"></a>Elemento DebugData (EventType)
 
@@ -30,7 +30,7 @@ Contiene los datos que se pueden registrar para Windows de preprocesador de segu
  />
 ```
 
-El tipo complejo [**EventType**](eventschema-eventtype-complextype.md) define el elemento **DebugData.**
+El **elemento DebugData** se define mediante el [**tipo complejo EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 

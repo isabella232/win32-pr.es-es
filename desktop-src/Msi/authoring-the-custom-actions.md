@@ -4,12 +4,12 @@ ms.assetid: 389ec652-243e-4392-aec9-3a7eb90e6c68
 title: Creación de acciones personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb6880f95b0468a495653057a9a5802af671c55b18b025c38a3191a4792e7558
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e09525490304762b98635bcbbe6c238ce3fe413f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118381180"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159013"
 ---
 # <a name="authoring-the-custom-actions"></a>Creación de acciones personalizadas
 

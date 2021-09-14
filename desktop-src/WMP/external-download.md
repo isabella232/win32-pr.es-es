@@ -5,7 +5,7 @@ ms.assetid: 10bae41c-0658-4712-8a7e-375a1ec6dc25
 keywords:
 - descargar método Reproductor de Windows Media
 - download method Reproductor de Windows Media , External (Clase)
-- Clase externa Reproductor de Windows Media , método download
+- Clase externa Reproductor de Windows Media , método de descarga
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 766f96a6db5f2114724e7545eaac7a269bf52e2e657872a8078b490621c794df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35ef0c6e6c32e8959e402080796f29a3860fe728
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119649225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241959"
 ---
 # <a name="externaldownload-method"></a>Método External.download
 

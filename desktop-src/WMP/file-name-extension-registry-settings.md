@@ -1,6 +1,6 @@
 ---
-title: Extensión del Registro de nombre de archivo Configuración
-description: Extensión del Registro de nombre de archivo Configuración
+title: Nombre de archivo Extensión del Registro Configuración
+description: Nombre de archivo Extensión del Registro Configuración
 ms.assetid: a5c31cf7-e1e1-4f1a-8e94-ed08f99ad973
 keywords:
 - Reproductor de Windows Media,registry
@@ -10,14 +10,14 @@ keywords:
 - configuración del Registro de extensiones de nombre de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4acea080c59b4f78d4b4053f6ae67e5d1eb2c820d68b4e4702485130d8f33a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c526e38ae1b2b76b942e0646df6f8aaa3b8e3417
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241773"
 ---
-# <a name="file-name-extension-registry-settings"></a>Extensión del Registro de nombre de archivo Configuración
+# <a name="file-name-extension-registry-settings"></a>Nombre de archivo Extensión del Registro Configuración
 
 Si los archivos multimedia digitales tienen un formato personalizado, puede proporcionar a Reproductor de Windows Media información sobre el formato personalizado colocando entradas en el Registro en el equipo del usuario. Reproductor de Windows Media inspecciona las entradas del Registro para determinar cómo debe controlar los archivos. En la lista siguiente se muestran varias de las cosas que puede hacer mediante la creación de entradas del Registro que pertenecen al formato de archivo multimedia personalizado.
 
@@ -37,7 +37,7 @@ donde *customExtension* es la extensión de nombre de archivo, incluido el separ
 
 **HKEY \_ LOCAL MACHINE Software Microsoft Multimedia \_ \\ \\ \\ \\ WMPlayer \\ Extensions \\ .xyz**
 
-Para escribir información sobre el formato de archivo personalizado en el subárbol HKEY \_ CURRENT \_ USER, cree la subclave siguiente.
+Para escribir información sobre el formato de archivo personalizado en el subárbol HKEY \_ CURRENT \_ USER, cree la siguiente subclave.
 
 **HKEY \_ CURRENT \_ USER Software Microsoft \\ \\ \\ MediaPlayer Player \\ \\ Extensions \\** *customExtension*
 

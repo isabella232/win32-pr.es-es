@@ -1,31 +1,31 @@
 ---
-description: Habilita o deshabilita la lectura previa en un origen de multimedia.
+description: Habilita o deshabilita la lectura adelantada en un origen multimedia.
 ms.assetid: b2b8711f-ba63-4fba-bb88-8d254135eb21
-title: Propiedad MFPKEY_MediaSource_DisableReadAhead (Mfidl. h)
+title: MFPKEY_MediaSource_DisableReadAhead propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d06fe354431a24e15152268ba0ea6352e535c5e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268911"
 ---
-# <a name="mfpkey_mediasource_disablereadahead-property"></a>\_Propiedad MFPKEY MediaSource \_ DisableReadAhead
+# <a name="mfpkey_mediasource_disablereadahead-property"></a>Propiedad MFPKEY \_ MediaSource \_ DisableReadAhead
 
-Habilita o deshabilita la lectura previa en un origen de multimedia.
+Habilita o deshabilita la lectura adelantada en un origen multimedia.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-**VARIANTE \_ bool**
+**VARIANT \_ BOOL**
 
-VT \_ bool
+VT \_ BOOL
 
 **boolVal**
 
@@ -33,13 +33,13 @@ VT \_ bool
 
 ## <a name="remarks"></a>Observaciones
 
-Las aplicaciones pueden utilizar esta propiedad para configurar algunos orígenes de medios. Para establecer la propiedad, pase un puntero **IPropertyStore** a la resolución de origen. Para obtener más información, consulte [configuración de un origen de medios](configuring-a-media-source.md).
+Las aplicaciones pueden usar esta propiedad para configurar algunos orígenes multimedia. Para establecer la propiedad , pase un **puntero IPropertyStore** al solucionador de origen. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
-Si el valor es **Variant \_ true**, el origen del medio no se leerá con anterioridad en el flujo de bytes. Esta configuración puede optimizar el rendimiento si tiene previsto leer una cantidad limitada de datos del origen de medios, por ejemplo, para obtener una imagen en miniatura de un archivo de vídeo.
+Si el valor es **VARIANT \_ TRUE**, el origen del medio no se leerá con antelación en la secuencia de bytes. Esta configuración puede optimizar el rendimiento si planea leer una cantidad limitada de datos del origen multimedia, por ejemplo, para obtener una imagen en miniatura de un archivo de vídeo.
 
-Para la reproducción de audio/vídeo típica, esta propiedad debe establecerse en **variante \_ falsa**. El valor predeterminado es **Variant \_ false**.
+Para la reproducción típica de audio y vídeo, esta propiedad debe establecerse en **VARIANT \_ FALSE.** El valor predeterminado es **VARIANT \_ FALSE.**
 
-No todos los orígenes multimedia admiten esta propiedad.
+No todos los orígenes de medios admiten esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,16 +47,16 @@ No todos los orígenes multimedia admiten esta propiedad.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows 7<br/>                                                               |
-| Encabezado<br/> | <dl> <dt>Mfidl. h</dt> </dl> |
+| Remoto<br/> | Windows 7<br/>                                                               |
+| Encabezado<br/> | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

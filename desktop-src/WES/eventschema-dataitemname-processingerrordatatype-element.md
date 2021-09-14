@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 67e159426ec70f87f23d3c022a6f5ab3049f576daf14363875b70c9ea8e20076
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 11e4629e33b1fb1f10eb01a230b689babee7b07e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242589"
 ---
 # <a name="dataitemname-processingerrordatatype-element"></a>Elemento DataItemName (ProcessingErrorDataType)
 

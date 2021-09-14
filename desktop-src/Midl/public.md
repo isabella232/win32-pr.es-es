@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f8e4944404bccc734594f3847c0ff9de17e54d0b5bcc444a56abe9b8f1e0eaf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8451ddf77b5074dbea609bfed144340dc877c00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119328725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159403"
 ---
 # <a name="public-attribute"></a>public (atributo)
 
@@ -45,7 +45,7 @@ Otro nombre por el *que se conocerá el* tipo de datos en el software.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, un alias que se declara con [**typedef**](typedef.md) y no tiene ningún otro atributo se trata como una definición y no se incluye en la biblioteca de tipos. **\#** El uso **\[ del atributo \]** public garantiza que el alias se convierte en parte de la biblioteca de tipos.
 

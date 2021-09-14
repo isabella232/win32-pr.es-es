@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0ec7201358669fa49e6396508d371ca5e95d6fa1
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165673"
 ---
 # <a name="tvm_selectitem-message"></a>Mensaje \_ SELECTITEM de TVM
 
@@ -37,7 +37,7 @@ Marca de acción. Este parámetro puede ser uno de los siguientes valores:
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="TVGN_CARET"></span><span id="tvgn_caret"></span><dl><dt><strong>TVGN_CARET</strong></dt></dl> | Establece la selección en el elemento especificado. La ventana primaria del control de vista de árbol recibe los <a href="tvn-selchanging.md">TVN_SELCHANGING</a> y <a href="tvn-selchanged.md">TVN_SELCHANGED</a> de notificación. <br /> | 
 | <span id="TVGN_DROPHILITE"></span><span id="tvgn_drophilite"></span><dl><dt><strong>TVGN_DROPHILITE</strong></dt></dl> | Vuelve a dibujar el elemento especificado en el estilo utilizado para indicar el destino de una operación de arrastrar y colocar.<br /> | 
@@ -54,25 +54,25 @@ Marca de acción. Este parámetro puede ser uno de los siguientes valores:
 *lParam* 
 </dt> <dd>
 
-Identificador de un elemento. Si *lParam es* **NULL,** el control se establece para que no tenga ningún elemento seleccionado.
+Identificador de un elemento. Si *lParam* es **NULL,** el control se establece para que no tenga ningún elemento seleccionado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el elemento especificado es el elemento secundario de un elemento primario contraído, la lista de elementos secundarios del elemento primario se expande para mostrar el elemento especificado. En este caso, la ventana primaria del control recibe los códigos de notificación [TVN \_ ITEMEXPANDING](tvn-itemexpanding.md) y [TVN \_ ITEMEXPANDED.](tvn-itemexpanded.md)
+Si el elemento especificado es el elemento secundario de un elemento primario contraído, la lista de elementos secundarios del elemento primario se expande para mostrar el elemento especificado. En este caso, la ventana primaria del control recibe los códigos de notificación [ \_ TVN ITEMEXPANDING](tvn-itemexpanding.md) y [TVN \_ ITEMEXPANDED.](tvn-itemexpanded.md)
 
-El uso de la macro [**\_ TreeView SelectItem**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_selectitem) equivale a enviar el mensaje **\_ SELECTITEM** de TVM con *wParam* establecido en el \_ valor DE TVGN CARET. El uso de la macro [**\_ SelectDropTarget**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_selectdroptarget) de TreeView equivale a enviar el mensaje **\_ SELECTITEM** de TVM con *wParam* establecido en el valor \_ DROPHILITE de TVGN. El [**uso de TreeView \_ SelectSetFirstVisible**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_selectsetfirstvisible) equivale a enviar el mensaje **\_ SELECTITEM** de TVM con *wParam* establecido en el valor TVGN \_ FIRSTVISIBLE.
+El uso de la macro [**\_ TreeView SelectItem**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_selectitem) equivale a enviar el mensaje **\_ SELECTITEM** de TVM con *wParam* establecido en el valor \_ DE TVGN CARET. El uso de la macro [**\_ TreeView SelectDropTarget**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_selectdroptarget) equivale a enviar el mensaje **\_ SELECTITEM** de TVM con *wParam* establecido en el valor \_ DROPHILITE de TVGN. El [**uso de TreeView \_ SelectSetFirstVisible**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_selectsetfirstvisible) equivale a enviar el mensaje **\_ SELECTITEM** de TVM con *wParam* establecido en el valor DE TVGN \_ FIRSTVISIBLE.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

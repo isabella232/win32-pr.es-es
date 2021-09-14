@@ -4,12 +4,12 @@ ms.assetid: 33a2ef50-519b-424e-b510-55c21c5706a3
 title: Tabla AdminExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eed182f5a27b357ecd546003cbfd7c68728d41c4018442b23bbf834ac8a796a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0c62ae43f8436ab210765e5402751c5722b78b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159177"
 ---
 # <a name="adminexecutesequence-table"></a>Tabla AdminExecuteSequence
 
@@ -21,7 +21,7 @@ Las acciones admin de la acción InstallValidate hasta el final de la secuencia 
 
 [Las acciones personalizadas](custom-actions.md) que requieren una interfaz de usuario deben usar [**MsiProcessMessage en**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) lugar de cuadros de diálogo creados mediante la [tabla Dialog](dialog-table.md).
 
-Las columnas son idénticas a las de [la tabla InstallExecuteSequence](installexecutesequence-table.md). La tabla AdminExecuteSequence tiene las siguientes columnas.
+Las columnas son idénticas a las de [la tabla InstallExecuteSequence](installexecutesequence-table.md). La tabla AdminExecuteSequence tiene las columnas siguientes.
 
 
 
@@ -51,7 +51,7 @@ Clave de tabla principal.
 <span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condición
 </dt> <dd>
 
-Expresión lógica. Si la expresión se evalúa como false, se omite la acción. Si la sintaxis de la expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea [Sintaxis de instrucción condicional.](conditional-statement-syntax.md)
+Expresión lógica. Si la expresión se evalúa como false, se omite la acción. Si la sintaxis de la expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea [Sintaxis de instrucciones condicionales.](conditional-statement-syntax.md)
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Un valor positivo indica la posición de secuencia de la acción. Los siguientes
 | msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
 | msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |
 | msiDoActionStatusFailure  | -3    | Finaliza la salida irrescindiendo. Se usa con cuadros [de diálogo FatalError.](fatalerror-dialog.md) |
-| msiDoActionStatusSuspend  | -4    | La instalación se suspende.                                                                |
+| msiDoActionStatusSuspend  | -4    | La instalación está suspendida.                                                                |
 
 
 

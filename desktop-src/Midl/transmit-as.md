@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18d1b8e9aae9a147c929fade8030babbf6b02fd87c9170370252522001742e95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ec0cba27e994f7d77d441aef7bb783cad71cbad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118382836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159345"
 ---
 # <a name="transmit_as-attribute"></a>transmitir \_ como atributo
 
@@ -77,7 +77,7 @@ Especifica el nombre del tipo de datos que se presenta a las aplicaciones client
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar **\[ la \_ \]** transmisión como atributo, el usuario debe proporcionar rutinas que conviertan datos entre los tipos presentados y transmitidos; estas rutinas también deben liberar la memoria usada para contener los datos convertidos. El **\[ atributo transmit \_ as \]** indica a los códigos auxiliares que llamen a las rutinas de conversión proporcionadas por el usuario.
 
@@ -100,7 +100,7 @@ El usuario debe proporcionar las rutinas siguientes.
 
  
 
-El código auxiliar del cliente llama *a type-id** para \_ \_ xmit** para asignar espacio para el tipo transmitido y para traducir los datos en objetos de tipo *xmit-type.* El código auxiliar del servidor asigna espacio para el tipo de datos original y llama a *type-id** desde \_ \_ xmit** para traducir los datos de su tipo transmitido al tipo presentado.
+El código auxiliar del cliente llama *a type-id** para \_ \_ xmit** para asignar espacio para el tipo transmitido y traducir los datos en objetos de tipo *xmit-type.* El código auxiliar del servidor asigna espacio para el tipo de datos original y llama a *type-id** desde \_ \_ xmit** para traducir los datos de su tipo transmitido al tipo presentado.
 
 Tras la devolución del código de aplicación, el código auxiliar del servidor llama a *type-id+ \_ free \_ inst** para desasignar el almacenamiento para *type-id* en el lado servidor. El código auxiliar del cliente *llama a type-id+ \_ \_ xmit** gratis para desasignar el *almacenamiento de tipo xmit* en el lado cliente.
 
@@ -192,7 +192,7 @@ void __RPC_USER TREE_TYPE_free_xmit(
 [**Typedef**](typedef.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> <dt>
 
 [**Único**](unique.md)

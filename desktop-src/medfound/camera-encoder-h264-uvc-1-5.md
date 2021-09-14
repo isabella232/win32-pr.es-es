@@ -4,12 +4,12 @@ ms.assetid: B3D500DF-1FD4-4D7C-B6F8-8DE4B957ED5C
 title: Codificadores de cámara H.264 UVC 1.5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65a7ba895ae06e6f8cfa036bf890aa7a6b8d82c5e38c432951f44cb44899c580
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e0bffc2380098600be9acb4786c6a6598a99aee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119959175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241172"
 ---
 # <a name="h264-uvc-15-camera-encoders"></a>Codificadores de cámara H.264 UVC 1.5
 
@@ -24,7 +24,7 @@ La SIGUIENTE API se usa con codificadores de cámara H.264 UVC 1.5.
 -   [CODECAPI \_ AVEncVideoOutputFrameRate](/windows/desktop/DirectShow/avencvideooutputframerate-property)
 -   [CODECAPI \_ AVEncVideoSelectLayer](codecapi-avencvideoselectlayer.md)
 -   [CODECAPI \_ AVEncVideoSupportedControls](codecapi-avencvideosupportedcontrols.md)
--   [CODECAPI \_ AVEncVideoTemporalLayerCount](codecapi-avencvideotemporallayercount.md)
+-   [CODECAPI \_ AVEncVideoVideoLayerCount](codecapi-avencvideotemporallayercount.md)
 -   [CODECAPI \_ AVEncVideoUsage](codecapi-avencvideousage.md)
 -   [**eAVEncH264VProfile**](/windows/desktop/api/codecapi/ne-codecapi-eavench264vprofile)
 -   [**eAVEncCommonRateControlMode**](/windows/desktop/api/codecapi/ne-codecapi-eavenccommonratecontrolmode)
@@ -37,9 +37,9 @@ La SIGUIENTE API se usa con codificadores de cámara H.264 UVC 1.5.
 -   [TIPOS DE MARCO DE SINCRONIZACIÓN COMPATIBLES CON MF \_ MT \_ H264 \_ \_ \_ \_](mf-mt-h264-supported-sync-frame-types.md)
 -   [MODOS DE CONTROL DE VELOCIDAD COMPATIBLES CON MF \_ MT \_ H264 \_ \_ \_ \_](mf-mt-h264-supported-rate-control-modes.md)
 -   [USOS COMPATIBLES CON MF \_ MT \_ H264 \_ \_](mf-mt-h264-supported-usages.md)
--   [CAPACIDADES \_ DE SVC DE \_ MF MT H264 \_ \_](mf-mt-h264-svc-capabilities.md)
+-   [CAPACIDADES DE SVC DE MF \_ MT \_ H264 \_ \_](mf-mt-h264-svc-capabilities.md)
 
-Para obtener información sobre el desarrollo de controladores de dispositivo para codificadores de cámara H.264 UVC 1.5, vea Nuevos temas [de AVStream para Windows 8](/windows-hardware/drivers/stream/new-windows-8-ddis).
+Para obtener información sobre el desarrollo de controladores de dispositivo para codificadores de cámara H.264 UVC 1.5, consulte Nuevos temas [de AVStream para Windows 8](/windows-hardware/drivers/stream/new-windows-8-ddis).
 
 ## <a name="related-topics"></a>Temas relacionados
 

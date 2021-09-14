@@ -4,12 +4,12 @@ ms.assetid: 35ccfad2-b022-4446-8275-a3b26f4e4db2
 title: Acciones sin restricciones de secuenciación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b3a86ab4e020a20a3eefbe753dd343965b8d3851e74f6566f61c78ae05a2a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e78c4e562569a5fde45245761aee1c736ca2da19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119559525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159230"
 ---
 # <a name="actions-without-sequencing-restrictions"></a>Acciones sin restricciones de secuenciación
 

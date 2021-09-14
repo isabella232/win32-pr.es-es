@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f0166402c7605139d3e27fce17b94ad0afdffb66622f40da4adc3044b7023d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 305aaa05df5b72ffde709e4cf3b3e06d47c43448
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165702"
 ---
-# <a name="tvm_gettooltips-message"></a>Mensaje \_ GETTOOLTIPS de TVM
+# <a name="tvm_gettooltips-message"></a>Mensaje \_ DE TVM GETTOOLTIPS
 
 Recupera el identificador del control de información sobre herramientas secundario utilizado por un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ GetToolTips.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_gettooltips)
 
@@ -39,9 +39,9 @@ Recupera el identificador del control de información sobre herramientas secunda
 
 Devuelve el identificador al control de información sobre herramientas secundario o **NULL** si el control no usa información sobre herramientas.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se crean, los controles de vista de árbol crean automáticamente un control de información sobre herramientas secundario. Para que un control de vista de árbol no use información sobre herramientas, cree el control con el estilo [**\_ TVS NOTOOLTIPS.**](tree-view-control-window-styles.md)
+Cuando se crean, los controles de vista de árbol crean automáticamente un control de información sobre herramientas secundario. Para hacer que un control de vista de árbol no use información sobre herramientas, cree el control con el estilo [**\_ TVS NOTOOLTIPS.**](tree-view-control-window-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Cuando se crean, los controles de vista de árbol crean automáticamente un cont
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

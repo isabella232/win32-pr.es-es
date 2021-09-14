@@ -4,12 +4,12 @@ ms.assetid: 77379664-26f2-4c1d-8c44-d9be2376efa9
 title: Formato de definición de columna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f0fcad09d0c87b766022602b152c09f466b4d6cddc87467b89ff02793240b8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6e43e7f70c942fda32bf5003571fa687250e971d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158881"
 ---
 # <a name="column-definition-format"></a>Formato de definición de columna
 
@@ -32,7 +32,7 @@ ms.locfileid: "120077935"
 
  
 
-Las cadenas usadas para describir columnas tienen la siguiente relación con las cadenas de consulta SQL cadenas de consulta usadas por CREATE y ALTER. Para obtener más información, [vea sintaxis SQL .](sql-syntax.md)
+Las cadenas usadas para describir columnas tienen la siguiente relación con las cadenas de consulta SQL las cadenas de consulta usadas por CREATE y ALTER. Para obtener más información, [vea sintaxis SQL .](sql-syntax.md)
 
 
 
@@ -66,11 +66,11 @@ Si la letra no está en mayúsculas, la instrucción SQL debe anexarse con NOT N
 
  
 
-El instalador no limita internamente la longitud de las columnas al valor especificado por el formato de definición de columna. Si los datos especificados en un campo superan la longitud de columna especificada, el paquete no puede pasar la [validación del paquete](package-validation.md). Para pasar la validación en este caso, se deben cambiar los datos o el esquema de la base de datos. El único medio para cambiar la longitud de columna de una tabla estándar es exportar la tabla mediante [**MsiDatabaseExport,**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta)editar el archivo .idt exportado y, a continuación, importar la tabla mediante [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta). Los autores no pueden cambiar los tipos de datos de columna, la nulabilidad ni los atributos de localización de ninguna columna de las tablas estándar. Los autores pueden crear tablas personalizadas con columnas que tengan atributos de columna.
+El instalador no limita internamente la longitud de las columnas al valor especificado por el formato de definición de columna. Si los datos especificados en un campo superan la longitud de columna especificada, el paquete no puede pasar la [validación del paquete.](package-validation.md) Para pasar la validación en este caso, se deben cambiar los datos o el esquema de la base de datos. El único medio para cambiar la longitud de columna de una tabla estándar es exportar la tabla mediante [**MsiDatabaseExport,**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta)editar el archivo .idt exportado y, a continuación, importar la tabla mediante [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta). Los autores no pueden cambiar los tipos de datos de columna, la nulabilidad ni los atributos de localización de ninguna columna de las tablas estándar. Los autores pueden crear tablas personalizadas con columnas que tengan atributos de columna.
 
 Cuando se [**usa MsiDatabaseMerge para**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea) combinar una base de datos de referencia en una base de datos de destino, los nombres de columna, el número de claves principales y los tipos de datos de columna deben coincidir. **MsiDatabaseMerge omite** los atributos de localización y longitud de columna. Si una columna de la base de datos de referencia tiene una longitud de 0 o mayor que la longitud de esa columna en la base de datos de destino, **MsiDatabaseMerge** aumenta la longitud de columna de la base de datos de destino a la longitud de la base de datos de referencia.
 
-Cuando se Mergmod.dll versión 2.0, la aplicación de un módulo de combinación a un archivo .msi nunca cambia la longitud de las columnas o los tipos de columna de una tabla de base de datos existente. Sin embargo, la aplicación de un módulo de combinación puede cambiar el esquema de una tabla de base de datos existente si el módulo agrega nuevas columnas a una tabla para la que es válido agregar columnas. Cuando se usa una Mergemod.dll anterior a la versión 2.0, la aplicación de un módulo de combinación nunca cambia la longitud de las columnas y nunca cambia el esquema de la base de datos de destino.
+Al usar Mergmod.dll versión 2.0, la aplicación de un módulo de combinación en un archivo .msi nunca cambia la longitud de las columnas o los tipos de columna de una tabla de base de datos existente. Sin embargo, la aplicación de un módulo de combinación puede cambiar el esquema de una tabla de base de datos existente si el módulo agrega nuevas columnas a una tabla para la que es válido agregar columnas. Cuando se usa una versión Mergemod.dll anterior a la versión 2.0, la aplicación de un módulo de combinación nunca cambia la longitud de las columnas y nunca cambia el esquema de la base de datos de destino.
 
  
 

@@ -1,29 +1,29 @@
 ---
-description: En este tema se muestra código de ejemplo para usar el origen del secuenciador en Microsoft Media Foundation.
+description: En este tema se muestra código de ejemplo para usar el origen del secuenciador Microsoft Media Foundation.
 ms.assetid: 6f39a297-33a9-414a-9d41-47aec54eaa6b
 title: Código de ejemplo de origen del secuenciador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3098faa0b979d6ad3baa96256c0ffac1eb14f482df5caff966ebc1cda3957f50
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a587a9b77413ad22ac49111489cf3e1b89cadf8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268751"
 ---
 # <a name="sequencer-source-example-code"></a>Código de ejemplo de origen del secuenciador
 
-En este tema se muestra código de ejemplo para usar [el origen del secuenciador](sequencer-source.md) en Microsoft Media Foundation. Contiene las siguientes secciones:
+En este tema se muestra código de ejemplo para usar [el origen del secuenciador](sequencer-source.md) Microsoft Media Foundation. Contiene las siguientes secciones:
 
 -   [CPlaylist (clase)](#cplaylist-class)
--   [Creación de una instancia de CPlaylist](#creating-an-instance-of-cplaylist)
+-   [Crear una instancia de CPlaylist](#creating-an-instance-of-cplaylist)
 -   [Agregar y quitar segmentos de lista de reproducción](#adding-and-removing-playlist-segments)
 -   [Control de eventos de sesión](#handling-session-events)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="cplaylist-class"></a>CPlaylist (clase)
 
-La clase se deriva de la clase que se muestra en el tutorial Cómo reproducir archivos `CPlaylist` multimedia con `CPlayer` [Media Foundation](how-to-play-unprotected-media-files.md).
+La `CPlaylist` clase se deriva de la clase que se muestra en el tutorial How to Play Media Files `CPlayer` with [Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++
@@ -89,9 +89,9 @@ public:
 
 
 
-## <a name="creating-an-instance-of-cplaylist"></a>Creación de una instancia de CPlaylist
+## <a name="creating-an-instance-of-cplaylist"></a>Crear una instancia de CPlaylist
 
-El `CPlaylist::CreateInstance` método crea un nuevo objeto `CPlaylist` . Internamente, este método llama `CPlaylist::Initialize` a para inicializar el objeto . El `Initialize` método llama a [**MFCreateSequencerSource para**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesequencersource) crear el origen de secuencia. También llama a [**IMFMediaSession::GetClock**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) para obtener un puntero al reloj de presentación.
+El `CPlaylist::CreateInstance` método crea un nuevo objeto `CPlaylist` . Internamente, este método `CPlaylist::Initialize` llama a para inicializar el objeto . El `Initialize` método llama a [**MFCreateSequencerSource para**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesequencersource) crear el origen de secuencia. También llama a [**IMFMediaSession::GetClock**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) para obtener un puntero al reloj de presentación.
 
 
 ```C++
@@ -182,12 +182,12 @@ CPlaylist::~CPlaylist()
 
 ## <a name="adding-and-removing-playlist-segments"></a>Agregar y quitar segmentos de lista de reproducción
 
-El `AddSegment` método agrega un nuevo segmento de lista de reproducción.
+El método `AddSegment` agrega un nuevo segmento de lista de reproducción.
 
 Este método realiza los pasos siguientes:
 
 1.  Crea una topología de reproducción. El código de este paso se muestra en el tema [Creación de topologías de reproducción.](creating-playback-topologies.md)
-2.  Llama [**a IMFSequencerSource::AppendTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-appendtopology) para agregar la topología a la lista de reproducción.
+2.  Llama [**a IMFSequencerSource::AppendTopology para**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-appendtopology) agregar la topología a la lista de reproducción.
 3.  En el primer segmento, obtiene el valor del atributo [**MF \_ PD \_ DURATION,**](mf-pd-duration-attribute.md) que contiene la duración de reproducción.
 4.  Almacena el identificador de segmento y el identificador de topología en una tabla de búsqueda.
 
@@ -330,7 +330,7 @@ Al crear el primer segmento de lista de reproducción, debe poner en cola la top
 
 1.  Consulte el origen del secuenciador para la [**interfaz IMFMediaSourceTopologyProvider.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider)
 2.  Pase el descriptor de presentación [**al método IMFMediaSourceTopologyProvider::GetMediaSourceTopology.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourcetopologyprovider-getmediasourcetopology) Este método obtiene un puntero a la topología de segmento. Tenga en cuenta que esta topología no es exactamente la misma que la topología de reproducción que creó anteriormente. En su lugar, es una versión modificada de esa topología. Para obtener más información, vea [Acerca del origen del secuenciador.](about-the-sequencer-source.md)
-3.  Para poner en cola la topología en la sesión multimedia, llame [**a IMFMediaSession::SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology).
+3.  Poner en cola la topología en la sesión multimedia llamando [**a IMFMediaSession::SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology).
 
 En el código siguiente se muestran estos pasos. Este mismo código también se usa cuando la lista de reproducción preinselección el segmento siguiente.
 

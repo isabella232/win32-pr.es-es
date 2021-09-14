@@ -39,18 +39,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: f93ac9ddda978a56ceb0e258766c2e60703acc94e92c551e673a9294e2cb984c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8dce82b8fa7a87676c34a9c6f26f43e4db10e227
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241676"
 ---
 # <a name="msmcaevent_memoryerror-class"></a>Clase MemoryError de MSMCAEvent \_
 
 La **clase \_ MemoryError de MSMCAEvent** representa un evento de error de memoria de machine check architecture (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -86,7 +86,7 @@ class MSMCAEvent_MemoryError : WMIEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ MemoryError de MSMCAEvent** tiene estos tipos de miembros:
 
@@ -267,7 +267,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de dispositivo de la ubicación de error de memoria.
+Número de dispositivo de la ubicación del error de memoria.
 
 </dd> <dt>
 
@@ -347,7 +347,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> <dt>
 
-**FILA \_ DE MEM**
+**MEM \_ ROW**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint16**
@@ -369,7 +369,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de bytes que contiene el registro de errores sin procesar tal como se Windows la capa de abstracción del sistema (SAL). La propiedad Size especifica el número de elementos de la **matriz.**
+Matriz de bytes que contiene el registro de error sin formato presentado a Windows por la capa de abstracción del sistema (SAL). La propiedad Size especifica el número de elementos de la **matriz.**
 
 </dd> <dt>
 
@@ -382,9 +382,9 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de registro del registro de errores de este error.
+Identificador de registro del registro de errores para este error.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -399,7 +399,7 @@ Tipo de acceso: solo lectura
 
 Dirección de hardware del dispositivo o componente que inicia la transacción.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -414,7 +414,7 @@ Tipo de acceso: solo lectura
 
 Dirección de hardware del respondedor a la transacción.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -427,7 +427,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño del registro de errores sin procesar en bytes.
+Tamaño del registro de error sin procesar en bytes.
 
 </dd> <dt>
 
@@ -442,7 +442,7 @@ Tipo de acceso: solo lectura
 
 Dirección de hardware del destino previsto de la transacción.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -468,15 +468,15 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Bits de validación usados para indicar la validez de los campos subsiguientes.
+Bits de validación usados para indicar la validez de los campos posteriores.
 
 
 
 | Valores                                                                                     | Significado                                                 |
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <dl> <dt>1 (0x1)</dt> </dl>         | EL ESTADO DE ERROR DE MEM \_ \_ es válido.<br/>                 |
+| <dl> <dt>1 (0x1)</dt> </dl>         | MEM \_ ERROR STATUS es \_ válido.<br/>                 |
 | <dl> <dt>2 (0x2)</dt> </dl>         | EL ADDR FÍSICO DE MEM \_ \_ es válido.<br/>                |
-| <dl> <dt>4 (0x4)</dt> </dl>         | LA MÁSCARA DE ADDR DE MEM \_ \_ es válida.<br/>                    |
+| <dl> <dt>4 (0x4)</dt> </dl>         | ADDR MASK de MEM \_ \_ es válido.<br/>                    |
 | <dl> <dt>8 (0x8)</dt> </dl>         | EL NODO DE MEM \_ es válido.<br/>                          |
 | <dl> <dt>16 (0x10)</dt> </dl>       | MEM \_ CARD es válido.<br/>                          |
 | <dl> <dt>32 (0x20)</dt> </dl>       | MEM \_ MODULE es válido.<br/>                        |
@@ -484,25 +484,25 @@ Bits de validación usados para indicar la validez de los campos subsiguientes.
 | <dl> <dt>128 (0x80)</dt> </dl>      | MEM \_ DEVICE es válido.<br/>                        |
 | <dl> <dt>256 (0x100)</dt> </dl>     | MEM \_ ROW es válido.<br/>                           |
 | <dl> <dt>512 (0x200)</dt> </dl>     | MEM \_ COLUMN es válido.<br/>                        |
-| <dl> <dt>1024 (0x400)</dt> </dl>    | LA POSICIÓN DE BIT DE MEM \_ \_ es válida.<br/>                 |
-| <dl> <dt>2048 (0x800)</dt> </dl>    | El identificador del SOLICITANTE DE LA PLATAFORMA DE MEM \_ \_ es \_ válido.<br/>       |
-| <dl> <dt>4096 (0x1000)</dt> </dl>   | El identificador del RESPONDEDOR DE PLATAFORMA DE MEM \_ \_ es \_ válido.<br/>       |
+| <dl> <dt>1024 (0x400)</dt> </dl>    | MEM \_ BIT POSITION es \_ válido.<br/>                 |
+| <dl> <dt>2048 (0x800)</dt> </dl>    | El identificador DEL SOLICITANTE DE LA PLATAFORMA DE MEM \_ \_ es \_ válido.<br/>       |
+| <dl> <dt>4096 (0x1000)</dt> </dl>   | El identificador del RESPONDEDOR DE LA PLATAFORMA DE MEM \_ \_ es \_ válido.<br/>       |
 | <dl> <dt>8192 (0x2000)</dt> </dl>   | MEM \_ PLATFORM TARGET es \_ válido.<br/>              |
 | <dl> <dt>16384 (0x4000)</dt> </dl>  | LOS DATOS \_ \_ ESPECÍFICOS DE MEM PLATFORM BUS son \_ \_ válidos.<br/> |
 | <dl> <dt>32768 (0x8000)</dt> </dl>  | El identificador \_ de OEM de MEM PLATFORM es \_ \_ válido.<br/>             |
-| <dl> <dt>65536 (0x10000)</dt> </dl> | LA ESTRUCTURA DE DATOS DE OEM DE MEM \_ PLATFORM \_ es \_ \_ válida.<br/>   |
+| <dl> <dt>65536 (0x10000)</dt> </dl> | MEM \_ PLATFORM OEM DATA \_ \_ \_ STRUCT es válido.<br/>   |
 
 
 
  
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ MemoryError de MSMCAEvent** se deriva de [**WMIEvent**](wmievent.md).
+La **clase MSMCAEvent \_ MemoryError** se deriva de [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ ms.assetid: c7c5eac1-3283-4878-9d0d-887f93fc7a35
 title: DefaultDir
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af74acc43e2814763184321af3f24a3074e51603e556ab18e4b3e0f7c5bbb8bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 957c826ec2b0850710d761def2f758691f923d9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119745605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158615"
 ---
 # <a name="defaultdir"></a>DefaultDir
 

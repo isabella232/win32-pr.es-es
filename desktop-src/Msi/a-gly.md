@@ -4,12 +4,12 @@ ms.assetid: 541fd08c-c21a-4a51-aa1c-d65cc0f5da75
 title: A (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 715e051d584ada5c96fbc8ac5cdf717b666276f81ea6f94331217a766074bace
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eea91c044553ec374f28309a86002a386961d2c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159279"
 ---
 # <a name="a-windows-installer"></a>A (Windows instalador)
 
@@ -27,28 +27,28 @@ Diseñe la implementación para que la interfaz de usuario del instalador sea ac
 <span id="_msi_acquisition_phase_gly"></span><span id="_MSI_ACQUISITION_PHASE_GLY"></span>**fase de adquisición**
 </dt> <dd>
 
-Fase de instalación durante la cual el instalador determina el procedimiento. La fase de adquisición comienza cuando una aplicación o un usuario [*Windows instalador para*](m-gly.md) instalar una aplicación o característica. A continuación, el instalador consulta [*la base de*](i-gly.md) datos para obtener información a medida que genera el script de [*ejecución*](e-gly.md) para la instalación. Para obtener más información sobre las fases de una instalación, vea [Mecanismo de instalación](installation-mechanism.md)de .
+Fase de instalación durante la cual el instalador determina el procedimiento. La fase de adquisición comienza cuando una aplicación o un [*usuario indica a Windows Installer*](m-gly.md) que instale una aplicación o característica. A continuación, el instalador consulta [*la base de*](i-gly.md) datos para obtener información a medida que genera el script de [*ejecución*](e-gly.md) para la instalación. Para obtener más información sobre las fases de una instalación, vea [Mecanismo de instalación](installation-mechanism.md).
 
 </dd> <dt>
 
 <span id="_msi_action_gly"></span><span id="_MSI_ACTION_GLY"></span>**Acción**
 </dt> <dd>
 
-Muchas de las funciones realizadas por Windows Installer se encapsulan en acciones. Cada acción especifica la ejecución de una función determinada y el flujo de procedimientos total de la instalación se prescribe mediante la secuencia de acciones de las [*tablas sequence*](s-gly.md). [*Las acciones estándar*](s-gly.md) están integradas en Windows Instalador. [*El autor*](c-gly.md) del paquete de instalación escribe acciones [*personalizadas.*](p-gly.md)
+Muchas de las funciones realizadas por Windows Installer se encapsulan en acciones. Cada acción especifica la ejecución de una función determinada y el flujo de procedimientos total de la instalación se prescribe mediante la secuencia de acciones de las [*tablas sequence*](s-gly.md). [*Las acciones estándar*](s-gly.md) están integradas en Windows Installer. [*El autor*](c-gly.md) del paquete de instalación escribe acciones [*personalizadas.*](p-gly.md)
 
 </dd> <dt>
 
 <span id="_msi_admin_approval_mode_gly"></span><span id="_MSI_ADMIN_APPROVAL_MODE_GLY"></span>**Modo de aprobación de administrador**
 </dt> <dd>
 
-Estado de aprobación habilitado por La protección de cuentas de usuario (UAC) que ejecuta todos los usuarios con privilegios mínimos, incluidos los administradores. Los usuarios deben dar su consentimiento para elevar las instalaciones que requieren privilegios de administrador.
+El estado de aprobación habilitado por Protección de cuentas de usuario (UAC) que ejecuta todos los usuarios con privilegios mínimos, incluidos los administradores. Los usuarios deben dar su consentimiento para elevar las instalaciones que requieren privilegios de administrador.
 
 </dd> <dt>
 
 <span id="_msi_advertising_gly"></span><span id="_MSI_ADVERTISING_GLY"></span>**Publicidad**
 </dt> <dd>
 
-Capacidad para hacer que las interfaces necesarias para cargar y para que una aplicación esté disponible sin instalar la aplicación. Cuando un usuario o una aplicación activa una interfaz anunciada, el instalador continúa con la instalación de los componentes necesarios. Los dos tipos de publicidad son [*asignar*](/windows) y [*publicar*](p-gly.md). Para obtener más información, vea [*también instalación a petición.*](i-gly.md) Para obtener más información sobre cómo el instalador anuncia aplicaciones, vea [Anuncio](advertisement.md).
+Capacidad de hacer que las interfaces necesarias para cargar y hacer que una aplicación esté disponible sin instalar la aplicación. Cuando un usuario o aplicación activa una interfaz anunciada, el instalador continúa con la instalación de los componentes necesarios. Los dos tipos de publicidad son [*asignar*](/windows) y [*publicar*](p-gly.md). Para obtener más información, vea [*también install-on-demand*](i-gly.md). Para obtener más información sobre cómo el instalador anuncia aplicaciones, vea [Anuncio](advertisement.md)de .
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Un servicio del sistema de Windows Vista que facilita el inicio de instalaciones
 <span id="_msi_assigning_gly"></span><span id="_MSI_ASSIGNING_GLY"></span>**Asignar**
 </dt> <dd>
 
-Hace que una aplicación esté disponible y parezca que se ha instalado para un usuario, sin instalarla realmente. La asignación agrega accesos directos e iconos al **menú** Inicio, asocia los archivos adecuados y escribe entradas del Registro para la aplicación. Cuando un usuario intenta abrir una aplicación asignada, el instalador instala la aplicación. La asignación [*y publicación son*](p-gly.md) dos métodos de [*publicidad.*](/windows) Para obtener más información, vea [Anuncio](advertisement.md).
+Hace que una aplicación esté disponible y parezca como si se hubiera instalado para un usuario, sin instalarla realmente. La asignación agrega accesos directos e iconos al **menú** Inicio, asocia los archivos adecuados y escribe entradas del Registro para la aplicación. Cuando un usuario intenta abrir una aplicación asignada, el instalador instala la aplicación. La asignación [*y publicación son*](p-gly.md) dos métodos de [*publicidad.*](/windows) Para obtener más información, vea [Anuncio](advertisement.md)de .
 
 </dd> <dt>
 

@@ -14,34 +14,34 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7139c567eab5fbb3c324916dec260d34f57429cb50bb99d199f35be8aee7a1c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ceae33a201086d268942e47496874678ec13f459
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118573220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242421"
 ---
 # <a name="playercurrentplaylist"></a>Player.currentPlaylist
 
 La propiedad currentPlaylist especifica o recupera el objeto **Playlist** actual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player* . **currentPlaylist**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto Playlist de lectura y **escritura.**
+Esta propiedad es un  objeto Playlist de lectura/escritura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el *Configuración*. **La propiedad autoStart** es true, la reproducción comienza automáticamente cada vez que se **establece currentPlaylist**.
+Si el *Configuración*. **La propiedad autoStart** es true, la reproducción comienza automáticamente cada vez que se **establece currentPlaylist.**
 
-Esta propiedad toma un objeto Playlist, que se puede adquirir de varias maneras, como llamando a *PlaylistArray*. **item** o *PlaylistCollection*. **newPlaylist**. Para cargar un elemento **de lista de** reproducción con un nombre de archivo, establezca la propiedad URL o use el Reproductor *de*. **newPlaylist**.
+Esta propiedad toma un objeto Playlist, que se puede adquirir de varias maneras, como llamando a *PlaylistArray*. **item** o *PlaylistCollection*. **newPlaylist**. Para cargar un elemento **de lista de** reproducción con un nombre de archivo, establezca la propiedad URL o use *player*. **newPlaylist**.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se recupera la primera lista de reproducción de la biblioteca. A continuación, **usa currentPlaylist** para convertir la lista de reproducción recuperada en la lista de reproducción actual y, a continuación, para mostrar el nombre de la lista de reproducción actual. El **objeto Player** se creó con id. = "Player".
+En el ejemplo JScript siguiente se recupera la primera lista de reproducción de la biblioteca. A continuación, **usa currentPlaylist** para que la lista de reproducción recuperada sea la lista de reproducción actual y, a continuación, para mostrar el nombre de la lista de reproducción actual. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -61,14 +61,14 @@ document.write("Found first playlist. Name: " + Player.currentPlaylist.name);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

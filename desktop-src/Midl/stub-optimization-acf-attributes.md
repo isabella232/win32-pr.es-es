@@ -6,12 +6,12 @@ keywords:
 - MIDL de ACF, atributos, optimización de código auxiliar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f8386eb6a6077a994b6f9800ff237a9966e97bff5eb0d6d865ea313634790f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 209490d6064d134a51492afee39c501059879bab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118383197"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159371"
 ---
 # <a name="stub-optimization-acf-attributes"></a>Atributos ACF de optimización de código auxiliar
 

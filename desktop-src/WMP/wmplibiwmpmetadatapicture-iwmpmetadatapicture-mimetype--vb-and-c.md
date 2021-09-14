@@ -4,7 +4,7 @@ description: La propiedad mimeType obtiene el tipo MIME de la imagen representad
 ms.assetid: 3ddd7f20-a183-4b95-bdcf-5497349f6db6
 keywords:
 - Propiedad mimeType Reproductor de Windows Media
-- MimeType, propiedad Reproductor de Windows Media , interfaz IWMPMetadataPicture
+- Propiedad mimeType Reproductor de Windows Media , interfaz IWMPMetadataPicture
 - Interfaz IWMPMetadataPicture Reproductor de Windows Media , propiedad mimeType
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e61f155394ecf91b73b0f6056f3c1aaed53b87f3202928e86d10db1298a430b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b79602e1cdf8d4cc2ceda6ca217b81a7f899c6cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242378"
 ---
 # <a name="iwmpmetadatapicturemimetype-property"></a>Propiedad IWMPMetadataPicture::mimeType
 
 La `mimeType` propiedad obtiene el tipo MIME de la imagen representada por el atributo de metadatos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property mimeType As System.String
 
 **System.String que** es el tipo MIME de la imagen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 

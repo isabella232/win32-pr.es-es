@@ -4,12 +4,12 @@ ms.assetid: 6943b405-0807-412b-a149-fc3a8ece1b48
 title: Eventos de sesión de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf0c3441a7f6f6835070a530c4ebb8985354b2701f312f2f085c5e449f12cbf0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90ec5de18c883f817c2f650ccfc48ad0149ac84e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118407229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165137"
 ---
 # <a name="audio-session-events"></a>Eventos de sesión de audio
 

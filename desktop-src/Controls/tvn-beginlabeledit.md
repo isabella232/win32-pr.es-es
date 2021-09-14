@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8fdd2b75ee9f3dcc46e5449c275eeea141162f3d31f524b64e114a623bd915e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34eccdeda553d0792a2862e3ca81a0889539d5ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165585"
 ---
 # <a name="tvn_beginlabeledit-notification-code"></a>Código de notificación \_ BEGINLABELEDIT de TVN
 
@@ -43,7 +43,7 @@ TVN_BEGINLABELEDIT
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMTVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) El **miembro** de elemento es una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contiene información válida sobre el elemento que se está editando en los miembros **hItem**, **state**, **lParam** y **pszText.**
+Puntero a una [**estructura NMTVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) El **miembro** de elemento es una [**estructura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contiene información válida sobre el elemento que se está editando en los miembros **hItem**, **state**, **lParam** y **pszText.**
 
 </dd> </dl>
 
@@ -51,11 +51,11 @@ Puntero a una [**estructura NMTVDISPINFO.**](/windows/win32/api/commctrl/ns-comm
 
 Devuelve **TRUE para** cancelar la edición de etiquetas.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando comienza la edición de etiquetas, se crea un control de edición, pero no se coloca ni se muestra. Antes de que se muestre, el control de vista de árbol envía a su ventana primaria un código de notificación \_ BEGINLABELEDIT de TVN.
 
-Para personalizar la edición de etiquetas, implemente un controlador para TVN BEGINLABELEDIT y haga que envíe un mensaje \_ [**\_ GETEDITCONTROL**](tvm-geteditcontrol.md) de TVM al control de vista de árbol. Si se está editando una etiqueta, el valor devuelto será un identificador para el control de edición. Use este identificador para personalizar el control de edición mediante el envío de los mensajes EM \_ XXX habituales.
+Para personalizar la edición de etiquetas, implemente un controlador para TVN BEGINLABELEDIT y haga que envíe un mensaje \_ [**\_ GETEDITCONTROL**](tvm-geteditcontrol.md) de TVM al control de vista de árbol. Si se edita una etiqueta, el valor devuelto será un identificador del control de edición. Use este identificador para personalizar el control de edición mediante el envío de los mensajes EM \_ XXX habituales.
 
 Cuando el usuario cancela o completa la edición, la ventana primaria recibe un código de [notificación \_ ENDLABELEDIT de TVN.](tvn-endlabeledit.md)
 
@@ -67,7 +67,7 @@ Cuando el usuario cancela o completa la edición, la ventana primaria recibe un 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ BEGINLABELEDITW** (Unicode) y **TVN \_ BEGINLABELEDITA** (ANSI)<br/>     |
 
 

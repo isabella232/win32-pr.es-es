@@ -1,19 +1,19 @@
 ---
-description: Especifica si el códec debe utilizar el filtro de desbloqueo en bucle durante la codificación.
+description: Especifica si el códec debe usar el filtro de desbloqueo en bucle durante la codificación.
 ms.assetid: 395a356a-5f58-46b4-b2ff-47f98106f487
-title: Propiedad MFPKEY_LOOPFILTER (Wmcodecdsp. h)
+title: MFPKEY_LOOPFILTER propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 1fbb723c4145f9769cc157d5db8eb7893d89b389
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268983"
 ---
-# <a name="mfpkey_loopfilter-property"></a>\_Propiedad LOOPFILTER de MFPKEY
+# <a name="mfpkey_loopfilter-property"></a>Propiedad MFPKEY \_ LOOPFILTER
 
-Especifica si el códec debe utilizar el filtro de desbloqueo en bucle durante la codificación.
+Especifica si el códec debe usar el filtro de desbloqueo en bucle durante la codificación.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,15 +21,15 @@ g \_ wszWMVCLoopFilter
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="remarks"></a>Observaciones
 
-El filtro en bucle es un método de desbloqueo que se aplica durante la codificación y la descodificación, para reducir los artefactos de bloqueo en el tiempo de codificación ("en el bucle") para que los fotogramas futuros y los fotogramas B no los lleven hacia delante.
+El filtro en bucle es un método de desbloqueo que se aplica durante la codificación y la codificación, para reducir los artefactos de bloqueo en tiempo de codificación ("en el bucle") para que los futuros fotogramas P y B no los lleven hacia delante.
 
-El efecto de aplicar el filtro en bucle es que los bordes de los bloques de macros de los fotogramas de vídeo de salida son menos perceptibles. Al mismo tiempo, la imagen puede ser más blanda.
+El efecto de aplicar el filtro en bucle es que los bordes de los bloques de macros en los fotogramas de vídeo de salida son menos perceptibles. Al mismo tiempo, la imagen puede volverse más suave en apariencia.
 
-Aunque el filtro en bucle puede dar lugar a un detalle de la imagen reducida en algunos fotogramas, la calidad general del vídeo resultará muy ventajosa. El mayor inconveniente de usar el filtrado en bucle es el costo de rendimiento de la descodificación adicional.
+Aunque el filtro en bucle puede dar lugar a un menor detalle de la imagen en algunos fotogramas, la calidad general del vídeo se beneficiará notablemente. La mayor desventaja de usar el filtrado en bucle es el costo de rendimiento de la decodación adicional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,17 +37,17 @@ Aunque el filtro en bucle puede dar lugar a un detalle de la imagen reducida en 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dea96976a167bf8dccbbe097ec0aaabc6c020fc09bde67d4ede98744875dbdf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67efc01db88cb13c85eebaedd2cdca0ec40d2a18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119649994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242523"
 ---
 # <a name="externalappcolorbuttonhighlight"></a>External.appColorButtonHighlight
 
@@ -39,7 +39,7 @@ window.external.appColorButtonHighlight
 
 Esta propiedad es una cadena de solo **lectura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los usuarios pueden cambiar el color de la interfaz Reproductor de Windows Media usuario. Puede usar esta propiedad para personalizar la apariencia de la página web hospedada para que coincida con el reproductor.
 

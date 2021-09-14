@@ -4,12 +4,12 @@ ms.assetid: a8a95f6a-6465-433b-98a4-95281cddedd3
 title: Bit de estilo de cuadro de diálogo de error
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 912f9c244e0f7905b72faf53306a7556ac8f9bb718c48666630751a5c0b20762
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e0ff3e4868cf1941f80be4f7b2d70068ec949a4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119913495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158469"
 ---
 # <a name="error-dialog-style-bit"></a>Bit de estilo de cuadro de diálogo de error
 

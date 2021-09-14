@@ -1,28 +1,28 @@
 ---
-description: Las clases siguientes se declaran y se asocian a identificadores de clase (CLSID) en wmcodecdsp.h.
+description: Las clases siguientes se declaran y asocian con identificadores de clase (CLID) en wmcodecdsp.h.
 ms.assetid: f82d92dc-fbce-4274-a10f-72fa8dd776cc
 title: Identificadores de clase para el analizador de tabla de contenido (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12c340ec32b8de4ce42619d57f6e44da9d77d0eead4940dc94d90baec4d349ab
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e5108855c687085e77ce36aa14b3424732e25572
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119664695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269359"
 ---
 # <a name="class-identifiers-for-table-of-contents-parser"></a>Identificadores de clase para el analizador de tabla de contenido
 
-Las clases siguientes se declaran y se asocian a identificadores de clase (CLSID) en wmcodecdsp.h.
+Las clases siguientes se declaran y asocian con identificadores de clase (CLID) en wmcodecdsp.h.
 
 
 
-| Nombre de la clase       | Nombre descriptivo del objeto |
+| Nombre de la clase       | Nombre de objeto descriptivo |
 |------------------|----------------------|
 | CTocEntry        | Entrada de TOC            |
 | CTocEntryList    | Lista de entradas de TOC       |
 | CToc             | TABLA DE CONTENIDO                  |
-| CTocCollection   | Colección toc       |
+| CTocCollection   | Colección de TOC       |
 | CTocParser       | Analizador de TOC           |
 | CTocGeneratorDmo | Generador de TOC        |
 
@@ -32,7 +32,7 @@ Las clases siguientes se declaran y se asocian a identificadores de clase (CLSID
 
 En la tabla anterior se proporciona un nombre de objeto descriptivo para cada clase. En esta documentación se usan esos nombres descriptivos para hacer referencia a instancias de las clases. Por ejemplo, la documentación hace referencia a una instancia de la clase CTocEntry como un objeto TOC Entry.
 
-En el código, puede usar **\_ \_ uuidof para** hacer referencia a los CLID. Por ejemplo, puede usar el código siguiente para hacer referencia al CLSID para CTocGeneratorDmo.
+En el código, puede usar **\_ \_ uuidof** para hacer referencia a los CLID. Por ejemplo, puede usar el código siguiente para hacer referencia al CLSID para CTocGeneratorDmo.
 
 
 ```C++
@@ -43,11 +43,11 @@ __uuidof(CTocGeneratorDmo)
 
 ### <a name="clsid-constants-defined-in-wmcodecdsph"></a>Constantes CLSID definidas en Wmcodecdsp.h
 
-Como alternativa al uso de **\_ \_ uuidof,** puede usar constantes para hacer referencia a los CLID. Las siguientes constantes se definen en wmcodecdsp.h
+Como alternativa al uso **\_ \_ de uuidof,** puede usar constantes para hacer referencia a los CLID. Las siguientes constantes se definen en wmcodecdsp.h
 
 
 
-| Nombre de la clase     | Constante CLSID        |
+| Nombre de la clase     | ClSID constante        |
 |----------------|-----------------------|
 | CTocEntry      | CLSID \_ CTocEntry      |
 | CTocEntryList  | CLSID \_ CTocEntryList  |
@@ -61,11 +61,11 @@ Como alternativa al uso de **\_ \_ uuidof,** puede usar constantes para hacer re
 
 ### <a name="clsid-constants-defined-in-wmcodecdspuuidlib"></a>Constantes CLSID definidas en Wmcodecdspuuid.lib
 
-La siguiente constante CLSID se declara, pero no se define, en wmcodecdsp.h. Para usarlo en el código, debe vincular con wmcodecdspuuid.lib.
+La siguiente constante CLSID se declara, pero no se define, en wmcodecdsp.h. Para usarlo en el código, debe vincularlo a wmcodecdspuuid.lib.
 
 
 
-| Nombre de la clase       | Constante CLSID          |
+| Nombre de la clase       | ClSID constante          |
 |------------------|-------------------------|
 | CTocGeneratorDmo | CLSID \_ CTocGeneratorDmo |
 
@@ -77,20 +77,20 @@ La siguiente constante CLSID se declara, pero no se define, en wmcodecdsp.h. Par
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wmvdspa.dll</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Tabla de objetos del analizador de contenido](toc-parser-objects.md)
+[Objetos de analizador de tabla de contenido](toc-parser-objects.md)
 </dt> </dl>
 
  

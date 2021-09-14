@@ -1,21 +1,21 @@
 ---
-description: Los desarrolladores de Windows Installer pueden optar por usar un tipo de acción personalizado 2 cuando las acciones estándar no son suficientes para ejecutar la instalación.
+description: Los desarrolladores Windows paquetes del instalador pueden optar por usar un tipo de acción personalizada 2 cuando las acciones estándar no son suficientes para ejecutar la instalación.
 ms.assetid: 79ae0582-c991-4c0a-860b-0f5197ad0c7c
 title: Tipo de acción personalizada 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba648578ecdd9d300a5cf15793e3abd9407f78853830f49c16a26db184ff3683
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0497b2a76dc2fac7f5e56f7347b50deac867757f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119996855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158702"
 ---
 # <a name="custom-action-type-2"></a>Tipo de acción personalizada 2
 
 Esta acción personalizada llama a un ejecutable iniciado con una línea de comandos.
 
-## <a name="source"></a>Origen
+## <a name="source"></a>Source
 
 El archivo ejecutable se genera a partir de una secuencia binaria temporal. El campo Source de la [tabla CustomAction](customaction-table.md) contiene una clave para la [tabla Binaria.](binary-table.md) La columna Datos de la tabla Binaria contiene los datos de flujo. Se asigna una secuencia independiente para cada fila.
 
@@ -55,7 +55,7 @@ Incluya bits de marca opcionales en la columna Type de la tabla CustomAction par
 
 Las acciones personalizadas que son [archivos ejecutables](executable-files.md) deben devolver un valor de 0 para que se ejecute correctamente. El instalador interpreta cualquier otro valor devuelto como error. Para omitir los valores devueltos, establezca la marca de bits **msidbCustomActionTypeContinue** en el campo Tipo de la tabla CustomAction.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una acción personalizada que inicia un ejecutable toma una línea de comandos, que normalmente contiene propiedades designadas dinámicamente. Si también se trata [de](deferred-execution-custom-actions.md)una acción personalizada de ejecución aplazada, el instalador usa [**CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) o [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) para crear el proceso cuando se invoca la acción personalizada desde el script de instalación.
 

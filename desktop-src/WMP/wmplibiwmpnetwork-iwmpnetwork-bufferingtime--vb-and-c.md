@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d224e35dd9c87dad627e71f2ae07d3d0b9e24ee1b094cfa5dea549e86c69a65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8594d53797b028dd74a8ef11cb8f2fa64b3654cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241694"
 ---
-# <a name="iwmpnetworkbufferingtime-property"></a>Propiedad IWMPNetwork::bufferingTime
+# <a name="iwmpnetworkbufferingtime-property"></a>IWMPNetwork::bufferingTime, propiedad
 
 La **propiedad bufferingTime** obtiene o establece la cantidad de tiempo en milisegundos asignada para almacenar en búfer los datos entrantes antes de que comience la reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -46,11 +46,11 @@ Public Property bufferingTime As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System.Int32 que** es el tiempo de almacenamiento en búfer en milisegundos, que oscila entre cero y 60 000 con un valor predeterminado de 5000.
+**System.Int32** que es el tiempo de almacenamiento en búfer en milisegundos, que oscila entre cero y 60 000 con un valor predeterminado de 5000.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se **usa bufferingTime para** especificar el número de segundos asignados para almacenar en búfer los datos entrantes. Un cuadro de texto permite al usuario escribir un nuevo valor para **bufferingTime** y la propiedad se actualiza en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo de código siguiente se **usa bufferingTime** para especificar el número de segundos asignados para almacenar en búfer los datos entrantes. Un cuadro de texto permite al usuario escribir un nuevo valor para **bufferingTime** y la propiedad se actualiza en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp

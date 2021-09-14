@@ -4,27 +4,27 @@ ms.assetid: eee1e3e6-74e9-41d0-b732-1f792a4df423
 title: Ejemplo de instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb29f6564517980604b6c98972e5972d07fa438e8030a7e2ee9314034cf4b36f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11eefaab2977bf7cc31e86ac7541b21b345c1aa1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120045855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159138"
 ---
 # <a name="an-installation-example"></a>Ejemplo de instalación
 
-En este ejemplo se muestra cómo crear un paquete Windows Installer que instala una aplicación. El ejemplo instala Bloc de notas, un editor de texto incluido con Windows y varios archivos de texto que describen eventos y admisiones en el imaginario Red Park Arena.
+En este ejemplo se muestra cómo crear un paquete Windows Installer que instala una aplicación. El ejemplo instala Bloc de notas, un editor de texto incluido con Windows y varios archivos de texto que describen eventos e admisiones en el imaginario Red Park Campos.
 
-El ejemplo tiene las siguientes especificaciones:
+El ejemplo tiene las especificaciones siguientes:
 
--   La aplicación se proporciona a los usuarios como un paquete Windows Installer que instala todos los archivos necesarios, los accesos directos y la información del Registro.
+-   La aplicación se proporciona a los usuarios como un paquete de Windows Installer que instala todos los archivos, accesos directos e información del Registro necesarios.
 -   El paquete de instalación puede presentar un asistente de interfaz de usuario al usuario durante la instalación para recopilar información del usuario.
--   Durante la instalación, los usuarios tienen la opción de seleccionar características individuales que se instalarán para ejecutarse localmente, para ejecutarse desde el origen o para que no se instalen.
+-   Durante la instalación, los usuarios tienen la opción de seleccionar características individuales que se instalarán para ejecutarse localmente, ejecutarse desde el origen o no instalarse.
 -   Una de las características se puede presentar a los usuarios como una característica de instalación a petición.
 -   El mismo paquete desinstala la aplicación y quita todos los archivos de aplicación y la información del Registro del equipo del usuario.
 -   El paquete está preparado para recibir una actualización importante que incluye el cambio de su código de producto.
 
-Para reproducir el ejemplo, necesita una herramienta de software capaz de crear y editar una base de datos de Windows instalador. Hay varias herramientas de creación de paquetes disponibles de proveedores de software independientes. En Windows [SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md)se proporciona un editor de base de datos Windows Installer llamado Orca.
+Para reproducir el ejemplo, necesita una herramienta de software capaz de crear y editar una base de datos en blanco Windows instalador. Hay varias herramientas de creación de paquetes disponibles de proveedores de software independientes. Se Windows editor de base de datos del instalador de Windows llamado Orca en Windows [SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
 
 Para completar el ejemplo, siga estos pasos:
 
@@ -46,7 +46,7 @@ Para completar el ejemplo, siga estos pasos:
 
 [Agregar información del Registro](adding-registry-information.md)
 
-[Especificar métodos abreviados](specifying-shortcuts.md)
+[Especificar accesos directos](specifying-shortcuts.md)
 
 [Especificar propiedades](specifying-properties.md)
 

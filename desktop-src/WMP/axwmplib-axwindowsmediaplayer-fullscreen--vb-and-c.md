@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e128d8c7e0cf49d3feaae723a7fb5a51740cda47e5016df6290b4852c20ec27b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 23bfb1a2c67ecfa3ba7cced6f0ccb564bb387b52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119902625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241995"
 ---
 # <a name="axwindowsmediaplayerfullscreen-property"></a>Propiedad AxWindowsMediaPlayer.fullScreen
 
 La propiedad fullScreen obtiene o establece un valor que indica si el contenido del vídeo se reproduce en modo de pantalla completa.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,9 +48,9 @@ Public Property fullScreen As System.Boolean
 
 Valor System.Boolean que indica si el contenido se reproduce en modo de pantalla completa. El valor predeterminado es false.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para que el modo de pantalla completa funcione correctamente al insertar el control Reproductor de Windows Media, el área de visualización del vídeo debe tener un alto y un ancho de al menos un píxel. Si **uiMode** se establece en "mini" o "full", el alto del propio control debe ser 65 o superior para alojar el área de presentación de vídeo además de la interfaz de usuario.
+Para que el modo de pantalla completa funcione correctamente al insertar el control Reproductor de Windows Media, el área de visualización del vídeo debe tener un alto y un ancho de al menos un píxel. Si **uiMode** está establecido en "mini" o "full", el alto del propio control debe ser 65 o superior para alojar el área de presentación del vídeo además de la interfaz de usuario.
 
 Si **uiMode** se establece en "invisible", establecer esta propiedad en true genera un error y no afecta al comportamiento del control.
 

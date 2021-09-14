@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9138b05b949098c59996c69143059de5cb5b25cafcd8da7d922de120d586b356
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a882da6c07ec76a94c8e214fe1da11c71680b0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118568797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241731"
 ---
 # <a name="starttime-element"></a>Elemento STARTTIME
 
@@ -51,7 +51,7 @@ El **elemento STARTTIME** define un índice de tiempo a partir del Reproductor d
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento define un índice de tiempo en el contenido donde Reproductor de Windows Media es empezar a representar la secuencia. Este elemento solo se puede usar con contenido almacenado a petición que se ha indexado.
+Este elemento define un índice de tiempo en el contenido donde Reproductor de Windows Media va a empezar a representar la secuencia. Este elemento solo se puede usar con contenido almacenado a petición que se ha indexado.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -66,13 +66,13 @@ Este elemento define un índice de tiempo en el contenido donde Reproductor de W
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

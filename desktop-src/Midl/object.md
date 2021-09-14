@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ddf51e020cdcd5d13dde6938a58ea5e51f22d9dd03f8632312b3d6b8453a9ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb2c21246282646dcf6ae488411316e07ab62b2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118383513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159442"
 ---
 # <a name="object-attribute"></a>object (atributo)
 
@@ -67,7 +67,7 @@ Interfaz COM de la que deriva esta interfaz. La interfaz base debe ser [**IUnkno
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una lista de atributos de interfaz para una interfaz COM debe incluir **\[** [**el atributo uuid,**](uuid.md) **\]** pero no puede incluir el atributo **\[** [**de**](version.md) **\]** versión.
 
@@ -146,7 +146,7 @@ interface ILocalInterface : ISomeOldCOMInterface
 [**Uuid**](uuid.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
  

@@ -5,11 +5,11 @@ title: numberFormat
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2e9db77cc68dab7038a1b5b9c50d49f5381ee948
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883658"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268263"
 ---
 # <a name="numberformat"></a>numberFormat
 
@@ -17,7 +17,7 @@ Especifica cómo [**IPropertyDescription::FormatForDisplay**](/windows/win32/api
 
 Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [numberFormat,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -89,7 +89,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <table>
 <thead>
 <tr class="header">
-<th>Valor</th>
+<th>Value</th>
 <th>Significado</th>
 </tr>
 </thead>
@@ -149,7 +149,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <table>
 <thead>
 <tr class="header">
-<th>Valor</th>
+<th>Value</th>
 <th>Significado</th>
 </tr>
 </thead>

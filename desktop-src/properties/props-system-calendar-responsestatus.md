@@ -4,12 +4,12 @@ ms.assetid: 5cbc0306-20c7-4f12-bb8b-3889b93dfd69
 title: System.Calendar.ResponseStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3900e95e6cd0a9d9becc9e86b44c391e06ad02bf1f592d75e8ea6d2896b1316
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7af8f69d177dba751ead02a0ee71f5ea4a42ae4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268228"
 ---
 # <a name="systemcalendarresponsestatus"></a>System.Calendar.ResponseStatus
 
@@ -103,7 +103,7 @@ propertyDescription
             defineName = CALENDAR_RESPONSESTATUS_NOTRESPONDED
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

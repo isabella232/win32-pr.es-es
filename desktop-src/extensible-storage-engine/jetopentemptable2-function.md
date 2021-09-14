@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: f6ac33866ea2f58c6dc5de593aeed046c981c48c
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241593"
 ---
 # <a name="jetopentemptable2-function"></a>Función JetOpenTempTable2
 
@@ -78,7 +78,7 @@ Identificador de configuración regional que se usará para comparar los datos d
 
 Se puede usar cualquier configuración regional siempre que se haya instalado el paquete de idioma adecuado en la máquina. La única excepción es que la configuración regional de idioma neutro (LCID de cero) no es posible.
 
-En Windows Server 2003 y versiones posteriores, si se especifica la configuración regional de idioma neutro para este parámetro, se usará en su lugar el identificador de configuración regional predeterminado (inglés de EE. UU.). Esto permite que un valor de cero signifique el valor predeterminado en lugar de un valor no válido.
+En Windows Server 2003 y versiones posteriores, si se especifica la configuración regional idioma neutro para este parámetro, se usará en su lugar el identificador de configuración regional predeterminado (inglés de EE. UU.). Esto permite que un valor de cero signifique el valor predeterminado en lugar de un valor no válido.
 
 Cuando este parámetro no está presente y el *parámetro pidxunicode* no está presente, se usará el LCID predeterminado para comparar los datos de columna de clave Unicode de la tabla temporal. El LCID predeterminado es la configuración regional del inglés de EE. UU.
 
@@ -136,7 +136,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errTooManyColumns</p> | <p>Se intentó agregar demasiadas columnas a la tabla. Una tabla no puede tener más de JET_ccolFixedMost columnas fijas, no más de JET_ccolVarMost columnas de longitud variable y no más de JET_ccolTaggedMost columnas etiquetadas.</p> | 
 | <p>JET_errTooManyOpenIndexes</p> | <p>Error en la operación porque el motor no puede asignar los recursos necesarios para almacenar en caché los índices de la tabla. El número de índices cuyo esquema se puede almacenar en caché se configura <a href="gg294044(v=exchg.10).md">mediante JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">con JET_paramMaxOpenTables</a>.</p> | 
 | <p>JET_errTooManyOpenTables</p> | <p>Error en la operación porque el motor no puede asignar los recursos necesarios para almacenar en caché el esquema de la tabla. El número de tablas cuyo esquema se puede almacenar en caché se configura <a href="gg294044(v=exchg.10).md">mediante JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">con JET_paramMaxOpenTables</a>.</p> | 
-| <p>JET_errTooManySorts</p> | <p>Error en la operación porque el motor no puede asignar los recursos necesarios para crear una tabla temporal. Los recursos de tabla temporales se configuran <a href="gg294044(v=exchg.10).md">mediante JetSetSystemParameter</a> <a href="gg294140(v=exchg.10).md">con JET_paramMaxTemporaryTables</a>.</p> | 
+| <p>JET_errTooManySorts</p> | <p>Error en la operación porque el motor no puede asignar los recursos necesarios para crear una tabla temporal. Los recursos de tabla temporal se configuran <a href="gg294044(v=exchg.10).md">mediante JetSetSystemParameter</a> <a href="gg294140(v=exchg.10).md">con JET_paramMaxTemporaryTables</a>.</p> | 
 
 
 
@@ -157,7 +157,7 @@ Consulte [JetOpenTempTable](./jetopentemptable-function.md).
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

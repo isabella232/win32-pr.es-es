@@ -6,12 +6,12 @@ keywords:
 - Windows Animation Windows Animation ,tasks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4db8f5116a6e36697e649ad81bfbad883c57aee50440c3ba80734419ce2fb372
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a2007e53a738494e9b143b3aa8a6cf83290acb1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119058153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242055"
 ---
 # <a name="windows-animation-tasks"></a>Windows Tareas de animación
 

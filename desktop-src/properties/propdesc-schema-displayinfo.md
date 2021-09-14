@@ -5,11 +5,11 @@ title: displayInfo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9b0bbc3cf0f17d24672e30a110d95341c1cb902d
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268284"
 ---
 # <a name="displayinfo"></a>displayInfo
 
@@ -302,7 +302,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </tr>
 <tr class="even">
 <td>Displaytype</td>
-<td>Público. Opcional. El valor predeterminado es &quot; String &quot; . Especifica el tipo de la cadena de presentación. Una vez establecidos aquí, <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getdisplaytype"><strong>IPropertyDescription::GetDisplayType</strong></a>recupera los valores de PROPDESC_DISPLAYTYPE asociados. <strong></strong> Los siguientes son tipos válidos. 
+<td>Público. Opcional. El valor predeterminado es &quot; String &quot; . Especifica el tipo de la cadena de presentación. Una vez establecidos aquí, <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-getdisplaytype"><strong>IPropertyDescription::GetDisplayType</strong></a>recupera los valores PROPDESC_DISPLAYTYPE asociados. <strong></strong> Los siguientes son tipos válidos. 
 <table>
 <thead>
 <tr class="header">
@@ -409,15 +409,15 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </tr>
 <tr class="odd">
 <td>Tarifa</td>
-<td>Usa &quot; más &quot;  /  &quot; lentamente el mismo &quot;  /  &quot; más rápido.&quot;</td>
+<td>Usa &quot; más &quot;  /  &quot; lentamente lo &quot;  /  &quot; mismo más rápido.&quot;</td>
 </tr>
 <tr class="even">
 <td>Rating</td>
-<td>Usa &quot; menor el mismo valor &quot;  /  &quot; &quot;  /  &quot; superior.&quot;</td>
+<td>Usa &quot; lower &quot;  /  &quot; same &quot;  /  &quot; higher&quot;</td>
 </tr>
 <tr class="odd">
 <td>Prioridad</td>
-<td>Usa &quot; menor el mismo valor &quot;  /  &quot; &quot;  /  &quot; superior.&quot;</td>
+<td>Usa &quot; lower &quot;  /  &quot; same &quot;  /  &quot; higher&quot;</td>
 </tr>
 </tbody>
 </table>

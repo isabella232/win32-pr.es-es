@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee9c7d10db107f3f90acc25b9cd31136cd9af110b5eb9bffe34f331dc8b1b0ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7e3ca893d2fe639a9f733bdfa2bf6b5c350e9ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241862"
 ---
 # <a name="externalpluginrunning"></a>External.pluginRunning
 
@@ -30,7 +30,7 @@ ms.locfileid: "119648495"
 
 La **propiedad pluginRunning** recupera un valor que indica si se está ejecutando el complemento de la tienda en línea.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 window.external.pluginRunning
@@ -44,7 +44,7 @@ Esta propiedad es un booleano de solo **lectura.** **TRUE** indica que el comple
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

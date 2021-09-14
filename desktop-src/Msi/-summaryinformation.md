@@ -4,16 +4,16 @@ ms.assetid: b1b42e03-7a05-46d4-9c42-b87906535adb
 title: _SummaryInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3824ceb9b3ad12338d84dfeea016a3c7e4404c274543cc691dc6ea0fb121bd32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 803b89223db8b6fc8074336109221a8300f7c1ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117805741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159295"
 ---
 # <a name="_summaryinformation"></a>\_SummaryInformation
 
-La \_ tabla SummaryInformation es una tabla especial que se usa con [la secuencia de información de resumen](summary-information-stream.md). Puede obtener o establecer el flujo de información de resumen de una [](text-archive-files.md) base de datos Windows Installer mediante la exportación o importación de un archivo de archivo de texto denominado \_ SummaryInformation.idt.
+La \_ tabla SummaryInformation es una tabla especial que se usa con [la secuencia de información de resumen](summary-information-stream.md). Puede obtener o establecer el flujo de información de resumen de una base [](text-archive-files.md) de datos Windows Installer mediante la exportación o importación de un archivo de archivo de texto denominado \_ SummaryInformation.idt.
 
 El archivo .idt de una tabla \_ SummaryInformation exportada tiene el formato siguiente.
 

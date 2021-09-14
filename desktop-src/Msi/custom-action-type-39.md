@@ -4,12 +4,12 @@ ms.assetid: edf96cc6-ef32-4660-b4ee-50c130626e15
 title: Tipo de acción personalizada 39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbc28dbb970edab619d884ed8001305d5a3ffa93d4b673be6e2dbfcfde181855
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6e49667fbad6e71aa8b2197b00ae9dd49f7dfff0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158684"
 ---
 # <a name="custom-action-type-39"></a>Tipo de acción personalizada 39
 
@@ -55,7 +55,7 @@ La acción personalizada no usa esta opción.
 
 ## <a name="return-values"></a>Valores devueltos
 
-El estado devuelto de la salida del usuario, el error, la suspensión o el éxito de una instalación simultánea se procesa de la misma manera que cualquier otra acción. Sin embargo, tenga Windows instalador traduce los valores devueltos de todas las acciones cuando escribe el valor devuelto en el archivo de registro. Por ejemplo, si el valor devuelto de la acción aparece como 1 en el archivo de registro, significa que la acción devolvió ERROR \_ SUCCESS. Para obtener más información, vea [Registro de valores devueltos de acción.](logging-of-action-return-values.md)
+El estado devuelto de la salida del usuario, el error, la suspensión o el éxito de una instalación simultánea se procesa de la misma manera que cualquier otra acción. Sin embargo, tenga Windows installer traduce los valores devueltos de todas las acciones cuando escribe el valor devuelto en el archivo de registro. Por ejemplo, si el valor devuelto de la acción aparece como 1 en el archivo de registro, significa que la acción devolvió ERROR \_ SUCCESS. Para obtener más información, vea [Registro de valores devueltos de acción.](logging-of-action-return-values.md)
 
 Tenga en cuenta que si una instalación simultánea tiene **msidbCustomActionTypeContinue** establecido, la devolución de ERROR \_ INSTALL \_ USEREXIT, ERROR INSTALL REBOOT, ERROR INSTALL REBOOT NOW o ERROR SUCCESS REBOOT REQUIRED se trata como \_ \_ ERROR \_ \_ \_ \_ \_ \_ \_ SUCCESS. Esto significa que si establece **msidbCustomActionTypeContinue** y la instalación simultánea requiere un reinicio, se omitirá el requisito para el reinicio. Además, se omitirá el código de error de la acción personalizada de instalación simultánea.
 
@@ -73,7 +73,7 @@ Si **no se establece msidbCustomActionTypeContinue,** los siguientes códigos de
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se requiere una expresión condicional para habilitar la instalación simultánea en la instalación o eliminación del componente o la característica asociados.
 

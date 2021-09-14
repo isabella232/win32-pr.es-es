@@ -1,19 +1,19 @@
 ---
-description: Especifica el rectángulo de origen para el mezclador de vídeo del representador de vídeo mejorado (EVR). El rectángulo de origen es la parte del fotograma de vídeo que el mezclador se abre en la superficie de destino.
+description: Especifica el rectángulo de origen para el mezclador de vídeo del representador de vídeo mejorado (EVR). El rectángulo de origen es la parte del fotograma de vídeo que el mezclador blits a la superficie de destino.
 ms.assetid: 4364ff87-816e-4b64-b5e9-c53dd6c9bb33
 title: VIDEO_ZOOM_RECT atributo (Evr.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e6ce19c808545d400f53b9c0091cdbcc20c8efbc13372ae5386e419d244143
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dda4efca5beab844baf3b3f53074d6b3012e8621
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118737150"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268604"
 ---
 # <a name="video_zoom_rect-attribute"></a>Atributo VIDEO \_ ZOOM \_ RECT
 
-Especifica el rectángulo de origen para el mezclador de vídeo del [representador de](enhanced-video-renderer.md) vídeo mejorado (EVR). El rectángulo de origen es la parte del fotograma de vídeo que el mezclador se abre en la superficie de destino.
+Especifica el rectángulo de origen para el mezclador de vídeo del [representador de](enhanced-video-renderer.md) vídeo mejorado (EVR). El rectángulo de origen es la parte del fotograma de vídeo que el mezclador blits a la superficie de destino.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -28,7 +28,7 @@ El rectángulo de origen se define en relación con un sistema de coordenadas no
 El presentador de EVR estándar establece este atributo en el mezclador. Para establecer el atributo, haga lo siguiente:
 
 1.  Llame [**a IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) en el mezclador para obtener el almacén de atributos del mezclador.
-2.  Llame [**aATTRIBUTEAttributes::SetBlob para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob) establecer el atributo **VIDEO ZOOM \_ \_ RECT** en el mezclador. El valor es una [**estructura MFVideoNormalizedRect.**](/windows/desktop/api/evr/ns-evr-mfvideonormalizedrect)
+2.  Llame [**a IMFAttributes::SetBlob para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob) establecer el atributo VIDEO ZOOM **\_ \_ RECT** en el mezclador. El valor es una [**estructura MFVideoNormalizedRect.**](/windows/desktop/api/evr/ns-evr-mfvideonormalizedrect)
 
 En un presentador de EVR personalizado, puede usar este atributo para implementar el [**método IMFVideoDisplayControl::SetVideoPosition.**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideoposition) Para obtener más información, vea [Rectángulos de origen y destino.](how-to-write-an-evr-presenter.md)
 
@@ -69,11 +69,11 @@ HRESULT SetMixerSourceRect(IMFTransform *pMixer, const MFVideoNormalizedRect& nr
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                             |
-| Header<br/>                   | <dl> <dt>Evr.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Evr.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

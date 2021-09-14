@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 86642bf86e724ee337d97baae56d8740fcf421158a6547786cbc9bf6b919a4bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89383fa076e3509a50ac3a7cc319709bbfdd0a9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118143704"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158787"
 ---
 # <a name="configurableitemtype-property"></a>ConfigurableItem.Type, propiedad
 
@@ -46,10 +46,10 @@ Vea [**get Type Function \_ (ConfigurableItem Object)**](/windows/desktop/api/Me
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

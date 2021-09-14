@@ -4,12 +4,12 @@ ms.assetid: 60873aa6-46ec-4a73-94b9-0d8ac602f850
 title: 'Tutorial: Codificación de un archivo MP4'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 242777f04015f5444be5e0d8424ca06fc4b95cd84ca88c2b997d7b7466c734af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae895ef321b35f080bf946384ee32d83c2c539fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237628"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268652"
 ---
 # <a name="tutorial-encoding-an-mp4-file"></a>Tutorial: Codificación de un archivo MP4
 
@@ -17,9 +17,9 @@ En este tutorial se muestra cómo usar [Transcode API](transcode-api.md) para co
 
 -   [Encabezados y archivos de biblioteca](#headers-and-library-files)
 -   [Definir los perfiles de codificación](#define-the-encoding-profiles)
--   [Escritura de la función wmain](#write-the-wmain-function)
+-   [Escribir la función wmain](#write-the-wmain-function)
 -   [Codificación del archivo](#encode-the-file)
-    -   [Creación del origen de medios](#create-the-media-source)
+    -   [Creación del origen multimedia](#create-the-media-source)
     -   [Obtener la duración del origen](#get-the-source-duration)
     -   [Creación del perfil de transcodificación](#create-the-transcode-profile)
     -   [Ejecución de la sesión de codificación](#run-the-encoding-session)
@@ -56,7 +56,7 @@ Vincule los siguientes archivos de biblioteca.
 
 ## <a name="define-the-encoding-profiles"></a>Definir los perfiles de codificación
 
-Un enfoque para la codificación es definir una lista de perfiles de codificación de destino que se conocen de antemano. En este tutorial, se toma un enfoque relativamente sencillo y se almacena una lista de formatos de codificación para vídeo H.264 y audio AAC.
+Un enfoque para la codificación es definir una lista de perfiles de codificación de destino que se conocen de antemano. En este tutorial, tomamos un enfoque relativamente sencillo y almacenamos una lista de formatos de codificación para vídeo H.264 y audio AAC.
 
 Para H.264, los atributos de formato más importantes son el perfil H.264, la velocidad de fotogramas, el tamaño del fotograma y la velocidad de bits codificada. La siguiente matriz contiene una lista de formatos de codificación H.264.
 
@@ -84,9 +84,9 @@ H264ProfileInfo h264_profiles[] =
 
 
 
-Los perfiles H.264 se especifican mediante la [**enumeración eAVEncH264VProfile.**](/windows/desktop/api/codecapi/ne-codecapi-eavench264vprofile) También puede especificar el nivel H.264, pero el codificador de vídeo [**H.264**](h-264-video-encoder.md) de Microsoft Media Foundation puede derivar el nivel adecuado para una secuencia de vídeo determinada, por lo que se recomienda no invalidar el nivel seleccionado del codificador. Para el contenido entrelazado, también especificaría el modo de entrelazado (consulte [Intercalación de vídeo).](video-interlacing.md)
+Los perfiles H.264 se especifican mediante la [**enumeración eAVEncH264VProfile.**](/windows/desktop/api/codecapi/ne-codecapi-eavench264vprofile) También puede especificar el nivel H.264, pero el codificador de vídeo [**H.264**](h-264-video-encoder.md) de Microsoft Media Foundation puede derivar el nivel adecuado para una secuencia de vídeo determinada, por lo que se recomienda no invalidar el nivel seleccionado del codificador. Para el contenido entrelazado, también debe especificar el modo de entrelazado (consulte [Intercalación de vídeo).](video-interlacing.md)
 
-Para el audio de AAC, los atributos de formato más importantes son la velocidad de muestreo de audio, el número de canales, el número de bits por muestra y la velocidad de bits codificada. Opcionalmente, puede establecer la indicación de nivel de perfil de audio de AAC. Para obtener más información, vea [**Codificador AAC**](aac-encoder.md). La siguiente matriz contiene una lista de formatos de codificación de AAC.
+En el caso del audio AAC, los atributos de formato más importantes son la velocidad de muestreo de audio, el número de canales, el número de bits por muestra y la velocidad de bits codificada. Opcionalmente, puede establecer la indicación de nivel de perfil de audio de AAC. Para obtener más información, vea [**Codificador AAC**](aac-encoder.md). La siguiente matriz contiene una lista de formatos de codificación AAC.
 
 
 ```C++
@@ -115,7 +115,7 @@ AACProfileInfo aac_profiles[] =
 
  
 
-## <a name="write-the-wmain-function"></a>Escritura de la función wmain
+## <a name="write-the-wmain-function"></a>Escribir la función wmain
 
 El código siguiente muestra el punto de entrada de la aplicación de consola.
 
@@ -250,16 +250,16 @@ done:
 
 La `EncodeFile` función realiza los pasos siguientes.
 
-1.  Crea un origen multimedia para el archivo de entrada, utilizando la dirección URL o la ruta de acceso del archivo de entrada. (Vea [Crear el origen de medios).](#create-the-media-source)
-2.  Obtiene la duración del archivo de entrada. (Vea [Obtener la duración del origen).](#get-the-source-duration)
+1.  Crea un origen multimedia para el archivo de entrada mediante la dirección URL o la ruta de acceso del archivo de entrada. (Vea [Crear el origen multimedia).](#create-the-media-source)
+2.  Obtiene la duración del archivo de entrada. (Consulte [Obtener la duración del origen).](#get-the-source-duration)
 3.  Cree el perfil de transcodificación. (Consulte [Creación del perfil de transcodificación).](#create-the-transcode-profile)
 4.  Llame [**a MFCreateTranscodeTopology para**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetranscodetopology) crear la topología de transcodificación parcial.
-5.  Cree un objeto auxiliar que administre la sesión multimedia. (Consulte Asistente de sesión multimedia).
+5.  Cree un objeto auxiliar que administre la sesión multimedia. (Vea Asistente de sesión multimedia).
 6.  Ejecute la sesión de codificación y espere a que se complete. (Vea [Ejecutar la sesión de codificación).](#run-the-encoding-session)
 7.  Llame [**a IMFMediaSource::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) para apagar el origen multimedia.
 8.  Punteros de interfaz de versión. Este código usa la [función SafeRelease para](saferelease.md) liberar punteros de interfaz. Otra opción es usar una clase de puntero inteligente COM, como **CComPtr**.
 
-### <a name="create-the-media-source"></a>Creación del origen de medios
+### <a name="create-the-media-source"></a>Creación del origen multimedia
 
 El origen multimedia es el objeto que lee y analiza el archivo de entrada. Para crear el origen de medios, pase la dirección URL del archivo de entrada al [solucionador de origen](source-resolver.md). El código siguiente muestra cómo hacerlo.
 
@@ -299,11 +299,11 @@ done:
 
 
 
-Para obtener más información, [vea Usar el solucionador de origen](using-the-source-resolver.md).
+Para obtener más información, [vea Usar el solucionador de origen.](using-the-source-resolver.md)
 
 ### <a name="get-the-source-duration"></a>Obtener la duración del origen
 
-Aunque no es necesario, resulta útil consultar el origen del medio mientras dure el archivo de entrada. Este valor se puede usar para realizar un seguimiento del progreso de la codificación. La duración se almacena en el atributo [**MF \_ PD \_ DURATION**](mf-pd-duration-attribute.md) del descriptor de presentación. Obtenga el descriptor de presentación mediante una llamada [**a IMFMediaSource::CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor).
+Aunque no es necesario, resulta útil consultar el origen de medios mientras dure el archivo de entrada. Este valor se puede usar para realizar un seguimiento del progreso de la codificación. La duración se almacena en el atributo [**MF \_ PD \_ DURATION**](mf-pd-duration-attribute.md) del descriptor de presentación. Para obtener el descriptor de presentación, llame [**a IMFMediaSource::CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor).
 
 
 ```C++
@@ -327,13 +327,13 @@ HRESULT GetSourceDuration(IMFMediaSource *pSource, MFTIME *pDuration)
 
 ### <a name="create-the-transcode-profile"></a>Creación del perfil de transcodificación
 
-El perfil de transcodificación describe los parámetros de codificación. Para obtener más información sobre cómo crear un perfil de transcodificación, [consulte Uso de transcodificar API.](fast-transcode-objects.md) Para crear el perfil, realice los pasos siguientes.
+El perfil de transcodificación describe los parámetros de codificación. Para obtener más información sobre cómo crear un perfil de transcodificación, consulte [Uso de transcodificar API.](fast-transcode-objects.md) Para crear el perfil, realice los pasos siguientes.
 
 1.  Llame [**a MFCreateTranscodeProfile para**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetranscodeprofile) crear el perfil vacío.
-2.  Cree un tipo de medio para la secuencia de audio de AAC. Para agregarlo al perfil, llame a [**IMFTranscodeProfile::SetAudioAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-setaudioattributes).
-3.  Cree un tipo de medio para la secuencia de vídeo H.264. Para agregarlo al perfil, llame a [**IMFTranscodeProfile::SetVideoAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-setvideoattributes).
+2.  Cree un tipo de medio para la secuencia de audio de AAC. Agrégrelo al perfil mediante una llamada [**a IMFTranscodeProfile::SetAudioAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-setaudioattributes).
+3.  Cree un tipo de medio para la secuencia de vídeo H.264. Agrégrelo al perfil mediante una llamada [**a IMFTranscodeProfile::SetVideoAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-setvideoattributes).
 4.  Llame [**a MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos para los atributos de nivel de contenedor.
-5.  Establezca el [atributo \_ MF TRANSCODE \_ CONTAINERTYPE.](mf-transcode-containertype.md) Este es el único atributo de nivel de contenedor necesario. Para la salida del archivo MP4, establezca este atributo en **MFTranscodeContainerType \_ MPEG4**.
+5.  Establezca el [atributo MF \_ TRANSCODE \_ CONTAINERTYPE.](mf-transcode-containertype.md) Este es el único atributo de nivel de contenedor necesario. Para la salida del archivo MP4, establezca este atributo en **MFTranscodeContainerType \_ MPEG4**.
 6.  Llame [**a IMFTranscodeProfile::SetContainerAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-setcontainerattributes) para establecer los atributos de nivel de contenedor.
 
 En el código siguiente se muestran estos pasos.
@@ -418,10 +418,10 @@ Para especificar los atributos de la secuencia de vídeo H.264, cree un almacén
 
 | Atributo                                                       | Descripción                      |
 |-----------------------------------------------------------------|---------------------------------|
-| [**\_SUBTIPO DE MT DE MF \_**](mf-mt-subtype-attribute.md)              | Establezca en **MFVideoFormat \_ H264**. |
-| [**MF \_ MT \_ MPEG2 \_ PROFILE**](mf-mt-mpeg2-profile-attribute.md) | Perfil H.264.                  |
-| [**TAMAÑO \_ DEL MARCO DE MT \_ \_ DE MF**](mf-mt-frame-size-attribute.md)       | Tamaño del marco.                     |
-| [**MF \_ MT \_ FRAME \_ RATE**](mf-mt-frame-rate-attribute.md)       | Velocidad de fotogramas.                     |
+| [**SUBTIPO \_ MT DE MF \_**](mf-mt-subtype-attribute.md)              | Establezca en **MFVideoFormat \_ H264**. |
+| [**PERFIL \_ DE MF MT \_ MPEG2 \_**](mf-mt-mpeg2-profile-attribute.md) | Perfil H.264.                  |
+| [**TAMAÑO DEL \_ MARCO DE \_ MT \_ DE MF**](mf-mt-frame-size-attribute.md)       | Tamaño del marco.                     |
+| [**VELOCIDAD \_ DE \_ FOTOGRAMAS MT DE MF \_**](mf-mt-frame-rate-attribute.md)       | Velocidad de fotogramas.                     |
 | [**MF \_ MT \_ AVG \_ BITRATE**](mf-mt-avg-bitrate-attribute.md)     | Velocidad de bits codificada.               |
 
 
@@ -434,12 +434,12 @@ Para especificar los atributos de la secuencia de audio de AAC, cree un almacén
 
 | Atributo                                                                                      | Descripción                               |
 |------------------------------------------------------------------------------------------------|------------------------------------------|
-| [**\_SUBTIPO DE MT DE MF \_**](mf-mt-subtype-attribute.md)                                             | Se establece **en MFAudioFormat \_ AAC**            |
+| [**SUBTIPO \_ MT DE MF \_**](mf-mt-subtype-attribute.md)                                             | Establezca en **MFAudioFormat \_ AAC.**            |
 | [**MUESTRAS \_ DE AUDIO MF MT POR \_ \_ \_ \_ SEGUNDO**](mf-mt-audio-samples-per-second-attribute.md)        | Frecuencia de muestreo de audio.                       |
-| [**BITS \_ DE AUDIO MF MT POR \_ \_ \_ \_ EJEMPLO**](mf-mt-audio-bits-per-sample-attribute.md)              | Bits por ejemplo de audio.                   |
-| [**CANALES \_ NUM \_ DE AUDIO \_ MF MT \_**](mf-mt-audio-num-channels-attribute.md)                     | Número de canales de audio.                |
-| [**PROMEDIO \_ DE BYTES PROMEDIO DE AUDIO MF MT POR \_ \_ \_ \_ \_ SEGUNDO**](mf-mt-audio-avg-bytes-per-second-attribute.md)   | Velocidad de bits codificada.                        |
-| [**ALINEACIÓN \_ DE \_ BLOQUES DE AUDIO \_ \_ MF MT**](mf-mt-audio-block-alignment-attribute.md)               | establézcalo en 1.                                |
+| [**BITS \_ DE AUDIO MF MT POR \_ \_ \_ \_ MUESTRA**](mf-mt-audio-bits-per-sample-attribute.md)              | Bits por muestra de audio.                   |
+| [**CANALES \_ NUM DE AUDIO MF \_ \_ \_ MT**](mf-mt-audio-num-channels-attribute.md)                     | Número de canales de audio.                |
+| [**PROMEDIO DE BYTES PROMEDIO DE AUDIO DE MF \_ MT \_ POR \_ \_ \_ \_ SEGUNDO**](mf-mt-audio-avg-bytes-per-second-attribute.md)   | Velocidad de bits codificada.                        |
+| [**ALINEACIÓN \_ DE \_ BLOQUES DE AUDIO MF MT \_ \_**](mf-mt-audio-block-alignment-attribute.md)               | establézcalo en 1.                                |
 | [INDICACIÓN \_ DE NIVEL DE PERFIL DE AUDIO MF MT \_ AAC \_ \_ \_ \_](mf-mt-aac-audio-profile-level-indication.md) | Indicación de nivel de perfil de AAC (opcional). |
 
 
@@ -603,25 +603,25 @@ HRESULT RunEncodingSession(CSession *pSession, MFTIME duration)
 
 ## <a name="media-session-helper"></a>Asistente de sesión multimedia
 
-La [sesión multimedia](media-session.md) se describe más detalladamente en la Media Foundation arquitectura [de](media-foundation-architecture.md) esta documentación. La sesión multimedia usa un modelo de eventos asincrónico. En una aplicación de guia, debe responder a eventos de sesión sin bloquear el subproceso de la interfaz de usuario para esperar al siguiente evento. En el tutorial [How to Play Unprotected Media Files](how-to-play-unprotected-media-files.md) (Cómo reproducir archivos multimedia sin protección) se muestra cómo hacerlo en una aplicación de reproducción. Para la codificación, el principio es el mismo, pero hay menos eventos relevantes:
+La [sesión multimedia](media-session.md) se describe más detalladamente en la Media Foundation arquitectura [de](media-foundation-architecture.md) esta documentación. La sesión multimedia usa un modelo de eventos asincrónico. En una aplicación guia, debe responder a eventos de sesión sin bloquear el subproceso de la interfaz de usuario para esperar al siguiente evento. En el tutorial [How to Play Unprotected Media Files](how-to-play-unprotected-media-files.md) (Cómo reproducir archivos multimedia sin protección) se muestra cómo hacerlo en una aplicación de reproducción. Para la codificación, el principio es el mismo, pero hay menos eventos relevantes:
 
 
 
 | Evento                                  | Descripción                                                                                                                                                       |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [MESessionEnded](mesessionended.md)   | Se genera cuando se completa la codificación.                                                                                                                            |
-| [MESessionClosed](mesessionclosed.md) | Se genera cuando se completa el método [**IMFMediaSession::Close.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) Después de que se genera este evento, es seguro apagar la sesión multimedia. |
+| [MESessionClosed](mesessionclosed.md) | Se genera cuando se completa el método [**IMFMediaSession::Close.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) Una vez que se genera este evento, es seguro apagar la sesión multimedia. |
 
 
 
  
 
-Para una aplicación de consola, es razonable bloquear y esperar eventos. Según el archivo de origen y la configuración de codificación, puede tardar un tiempo en completar la codificación. Puede obtener actualizaciones de progreso de la siguiente manera:
+Para una aplicación de consola, es razonable bloquear y esperar eventos. En función del archivo de origen y la configuración de codificación, la codificación puede tardar un tiempo en completarse. Puede obtener las actualizaciones de progreso de la siguiente manera:
 
-1.  Llame [**a IMFMediaSession::GetClock para**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) obtener el reloj de presentación.
+1.  Llame [**a IMFMediaSession::GetClock**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) para obtener el reloj de presentación.
 2.  Consulte el reloj para la [**interfaz IMFPresentationClock.**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationclock)
 3.  Llame [**a IMFPresentationClock::GetTime**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-gettime) para obtener la posición actual.
-4.  La posición se da en unidades de tiempo. Para obtener el porcentaje completado, use el valor `(100 * position) / duration` .
+4.  La posición se da en unidades de tiempo. Para completar el porcentaje, use el valor `(100 * position) / duration` .
 
 Esta es la declaración de la `CSession` clase .
 

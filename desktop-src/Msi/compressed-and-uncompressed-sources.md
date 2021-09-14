@@ -1,19 +1,19 @@
 ---
-description: Los autores de paquetes pueden reducir el tamaño de sus paquetes de instalación comprimiendo los archivos de origen e incluyéndolos en archivos archivados. La imagen de archivo de origen se puede comprimir, descomprimir o una combinación de ambos tipos.
+description: Los autores de paquetes pueden reducir el tamaño de sus paquetes de instalación comprimiendo los archivos de origen e incluyéndolos en archivos de archivo. La imagen de archivo de origen se puede comprimir, descomprimir o una combinación de ambos tipos.
 ms.assetid: e84c52ca-a1c4-4c81-9c24-31ea435054db
 title: Orígenes comprimidos y sin comprimir
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca7d35a5723261ab1c62866d185a8402a9607600cad906c2fb66ddc5dc85ac08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43dc706a73d52f1dac35c917bd6c178a543ab300
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118144456"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158824"
 ---
 # <a name="compressed-and-uncompressed-sources"></a>Orígenes comprimidos y sin comprimir
 
-Los autores de paquetes pueden reducir el tamaño de sus paquetes de instalación comprimiendo los archivos de origen e incluyéndolos en [archivos de archivo .](cabinet-files.md) La imagen de archivo de origen se puede comprimir, descomprimir o una combinación de ambos tipos.
+Los autores de paquetes pueden reducir el tamaño de sus paquetes de instalación comprimiendo los archivos de origen e incluyéndolos en archivos [de archivo .](cabinet-files.md) La imagen de archivo de origen se puede comprimir, descomprimir o una combinación de ambos tipos.
 
 <dl> <dt>
 
@@ -34,7 +34,7 @@ Un origen que consta completamente de archivos de origen sin comprimir debe omit
 <span id="Mixed_Sources_____"></span><span id="mixed_sources_____"></span><span id="MIXED_SOURCES_____"></span>Orígenes mixtos 
 </dt> <dd>
 
-Para mezclar archivos de código fuente comprimidos y [](word-count-summary.md) sin comprimir en el mismo paquete, invalide el valor predeterminado de la propiedad Resumen de recuento de palabras estableciendo las marcas de bits msidbFileAttributesCompressed o msidbFileAttributesNon comprimidas en archivos concretos. Estas marcas de bits se establecen [](file-table.md) en la columna Atributos de la tabla Archivo si el estado de compresión del archivo no coincide con el valor predeterminado especificado por la propiedad Resumen de recuento [**de palabras.**](word-count-summary.md)
+Para mezclar archivos de código fuente comprimidos y [](word-count-summary.md) sin comprimir en el mismo paquete, invalide el valor predeterminado de la propiedad Resumen de recuento de palabras estableciendo las marcas de bits msidbFileAttributesCompressed o msidbFileAttributesNoncompressed en archivos concretos. Estas marcas de bits se establecen [](file-table.md) en la columna Atributos de la tabla Archivo si el estado de compresión del archivo no coincide con el valor predeterminado especificado por la propiedad Resumen de recuento [**de palabras.**](word-count-summary.md)
 
 Por ejemplo, si la [**propiedad Resumen de recuento**](word-count-summary.md) de palabras tiene el conjunto de bits de marca comprimido, todos los archivos se tratan como comprimidos en un gabinete. Los archivos sin comprimir del origen deben incluir msidbFileAttributesNoncompressed en la columna Attributes de la [tabla File](file-table.md). Los archivos sin comprimir deben encontrarse en la raíz del árbol de origen.
 

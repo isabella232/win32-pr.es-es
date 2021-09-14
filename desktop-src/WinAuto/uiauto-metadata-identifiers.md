@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa3942fa4001390fec952744279f687234b70244cf9b6226a6595f6d5d41784a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2e55f919635303d28819d79e1491478904733f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242354"
 ---
 # <a name="metadata-identifiers"></a>Identificadores de metadatos
 
@@ -33,7 +33,7 @@ En este tema se describen las constantes con nombre, que se usan para identifica
 
 
 
-Identifica metadatos que indican cómo debe interpretarse una cadena y hablarla un lector de pantalla o un motor de texto a voz.
+Identifica metadatos que indican cómo debe interpretar y hablar una cadena un lector de pantalla o un motor de texto a voz.
 
 
 </dt> </dl> </dd> </dl>
@@ -44,9 +44,9 @@ Identifica metadatos que indican cómo debe interpretarse una cadena y hablarla 
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo aplicaciones de escritorio\]<br/>                                       |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                       |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                            |
-| Header<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

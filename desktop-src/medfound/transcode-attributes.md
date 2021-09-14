@@ -4,12 +4,12 @@ ms.assetid: 6cddb5b9-75da-4640-9810-35a8203fc4bc
 title: Transcodificar atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22d62a02f83a799e51648e25740aaca01318a3d3c44f239715970ab1ee840308
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf5322904cc70c7d2888621095d1381f029c06d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268687"
 ---
 # <a name="transcode-attributes"></a>Transcodificar atributos
 

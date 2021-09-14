@@ -4,12 +4,12 @@ ms.assetid: 8bd95baa-c130-4616-8ab7-7d902162e4ed
 title: MFPKEY_NUMBFRAMES propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfcf103da1d629c90209aef4badd604651d73af3e9101cac0f613b47c82883e3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc3b0655a4a5e24b92f9699b198f10232de8edf8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268887"
 ---
 # <a name="mfpkey_numbframes-property"></a>Propiedad \_ MFPKEY DEFRAMES
 
@@ -27,7 +27,7 @@ VT-I4
 
 0
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, Windows Media Video 9 solo usa intraframes (fotogramas I), también conocidos como fotogramas clave o fotogramas delimitadores, que son fotogramas totalmente codificados, y fotogramas predictivos (fotogramas P), que se codifican como una diferencia con respecto al marco I anterior. Los fotogramas B son diferentes de los fotogramas P porque almacenan las diferencias con respecto al fotograma anterior y las diferencias con respecto al fotograma siguiente.
 
@@ -43,15 +43,15 @@ El intervalo válido de valores para esta propiedad es de 0 a 7.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,21 +1,21 @@
 ---
-description: Obtenga información sobre la sintaxis del esquema de impresión, que se expresa en sintaxis XML y se compone de un pequeño número de tipos de elementos.
+description: Obtenga información sobre la sintaxis del esquema de impresión, que se expresa en sintaxis XML y se compone de un pequeño número de tipos de elemento.
 ms.assetid: d67518e3-c379-4a50-aeda-31afaa7f05dd
 title: Sintaxis del esquema de impresión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a55fbae9b74fe9537430c926870e422cb1a9cd0e025d4aedf702865a8822c740
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ef52dbdbdfacc2d3cc947b46558319577a75b1b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119662375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268332"
 ---
 # <a name="syntax-of-the-print-schema"></a>Sintaxis del esquema de impresión
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-El esquema de impresión se expresa en sintaxis XML. Por lo tanto, se espera que los lectores estén familiarizados con la sintaxis y los términos XML, como el elemento, la etiqueta de elemento, el contenido del elemento, el atributo y el espacio de nombres. El marco de esquema de impresión se compone de un pequeño número de tipos de elementos; Cada tipo de elemento tiene un propósito específico en las tecnologías creadas en el esquema de impresión.
+El esquema de impresión se expresa en sintaxis XML. Por lo tanto, se espera que los lectores estén familiarizados con la sintaxis XML y los términos como elemento, etiqueta de elemento, contenido de elemento, atributo y espacio de nombres. El marco de esquema de impresión se compone de un pequeño número de tipos de elementos; Cada tipo de elemento tiene un propósito específico en las tecnologías creadas en el esquema de impresión.
 
 Los tipos de elemento se distinguen por su etiqueta de elemento XML. El marco de esquema de impresión define la estructura general y la organización de las tecnologías dependientes, indicando para cada tipo de elemento qué tipos de elemento se permiten como elementos secundarios.
 
@@ -25,7 +25,7 @@ Muchos tipos de elementos se diferencian de otros del mismo tipo por el atributo
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

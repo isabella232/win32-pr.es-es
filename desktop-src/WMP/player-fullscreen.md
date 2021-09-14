@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f380dcbcaeedddd23c5e6ff42f9750ea8bcd2f552942e19ba7b847e725edc3b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3f71b4100c359effd95f79c574a52b5a5bae28c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242402"
 ---
 # <a name="playerfullscreen"></a>Player.fullScreen
 
 La **propiedad fullScreen** especifica o recupera un valor que indica si el contenido del vídeo se reproduce en modo de pantalla completa.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player* . **fullScreen**
 
@@ -35,7 +35,7 @@ Esta propiedad es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                                                    |
+| Value | Descripción                                                    |
 |-------|----------------------------------------------------------------|
 | true  | El contenido del vídeo se reproduce en modo de pantalla completa.              |
 | false | Predeterminada. El contenido de vídeo no se reproduce en modo de pantalla completa. |
@@ -44,7 +44,7 @@ Esta propiedad es un booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para que el modo de pantalla completa funcione correctamente al insertar el control Reproductor de Windows Media, el área de visualización del vídeo debe tener un alto y un ancho de al menos un píxel. Si **uiMode** se establece en "mini" o "full", el alto del propio control debe ser 65 o superior para alojar el área de presentación del vídeo además de la interfaz de usuario.
 
@@ -52,11 +52,11 @@ Si **uiMode** se establece en "invisible", establecer esta propiedad en true gen
 
 Durante la reproducción a pantalla completa, Reproductor de Windows Media el cursor del mouse cuando **enableContextMenu** es igual a false y **uiMode** es igual a "none".
 
-Si **uiMode** se establece en "full" o "mini", Reproductor de Windows Media controles de transporte en modo de pantalla completa cuando se mueve el cursor del mouse. Después de un breve intervalo sin movimiento del mouse, se ocultan los controles de transporte. Si **uiMode** está establecido en "none", no se muestra ningún control en modo de pantalla completa.
+Si **uiMode** está establecido en "full" o "mini", Reproductor de Windows Media controles de transporte en modo de pantalla completa cuando se mueve el cursor del mouse. Después de un breve intervalo sin movimiento del mouse, se ocultan los controles de transporte. Si **uiMode** está establecido en "none", no se muestra ningún control en modo de pantalla completa.
 
 **Nota**
 
-La visualización de controles de transporte en modo de pantalla completa requiere el Windows operativo XP.
+La visualización de controles de transporte en modo de pantalla completa requiere Windows sistema operativo XP.
 
 Si los controles de transporte no se muestran en modo de pantalla completa, Reproductor de Windows Media automáticamente sale del modo de pantalla completa cuando se detiene la reproducción.
 

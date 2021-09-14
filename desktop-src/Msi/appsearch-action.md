@@ -4,12 +4,12 @@ ms.assetid: 56665876-2c74-476b-aa1a-158c6e86418d
 title: Acción de AppSearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bbd6a99bdca37074f8bade1b40aa4665895b26b3fee46fa9bc5e0b63632c4bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04187fb146af80839e135c99986dea1902ccb6b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159109"
 ---
 # <a name="appsearch-action"></a>Acción de AppSearch
 
@@ -17,7 +17,7 @@ La acción AppSearch usa firmas de archivo para buscar versiones existentes de p
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-AppSearch debe crearse en la [tabla InstallUISequence](installuisequence-table.md) y [en la tabla InstallExecuteSequence](installexecutesequence-table.md). El instalador impide que la acción de AppSearch se ejecute en la secuencia InstallExecuteSequence si la acción ya se ha ejecutado en la secuencia InstallUISequence.
+AppSearch debe crearse en la [tabla InstallUISequence](installuisequence-table.md) y en [la tabla InstallExecuteSequence](installexecutesequence-table.md). El instalador impide que la acción de AppSearch se ejecute en la secuencia InstallExecuteSequence si la acción ya se ha ejecutado en la secuencia InstallUISequence.
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -32,7 +32,7 @@ AppSearch debe crearse en la [tabla InstallUISequence](installuisequence-table.m
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción AppSearch requiere que la [tabla Signature](signature-table.md) esté presente en el paquete de instalación. Las firmas de archivo se muestran en la tabla Firma. Una firma que no está en la tabla Firma denota un directorio y la acción establece la propiedad en la ruta de acceso del directorio para esa firma.
 

@@ -4,12 +4,12 @@ ms.assetid: d064855b-8c10-476e-9570-cc3ab48ae998
 title: _Tables tabla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10c251693d89bb23634b222518e98dba270856e672362bcdc9acddd3c0b86c56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2dc3ebafd969a07676f64f674f76c3e16ebe059
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159293"
 ---
 # <a name="_tables-table"></a>\_Tabla de tablas
 
@@ -38,9 +38,9 @@ Nombre de una de las tablas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Dado que la tabla Tables es una tabla del sistema que no se puede modificar a través de consultas SQL, no se pueden obtener las claves principales con la función \_ [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) o la [**propiedad PrimaryKeys**](database-primarykeys.md).
+Dado que la tabla Tables es una tabla del sistema que no se puede modificar mediante consultas SQL, no puede obtener las claves principales con la función \_ [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) o la [**propiedad PrimaryKeys**](database-primarykeys.md).
 
  
 

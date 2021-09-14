@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 54137f2081a48158d306e882eab0dc912a8e50332b7d66cfb137c3c10b669570
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a4018698dbe6ab986945a84c1fcf9ce0431bd0fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119457435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241436"
 ---
 # <a name="m3x4---vs"></a>m3x4: vs
 
 Multiplica un vector de 3 componentes por una matriz de 3x4.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,13 +31,13 @@ Multiplica un vector de 3 componentes por una matriz de 3x4.
 
  
 
-where
+, donde
 
 -   dst es el registro de destino. El resultado es un vector de 4 componentes.
 -   src0 es un registro de origen que representa un vector de 3 componentes.
 -   src1 es un registro de origen que representa una matriz 3x4, que corresponde al primero de cuatro registros consecutivos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

@@ -22,19 +22,19 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8d86d5aad29519bca4e9cfe03da4b6f0e9ccaeb9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468082"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242318"
 ---
 # <a name="menu-control-type"></a>Tipo de control menu
 
 En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo **de** control Menu.
 
-Un control de menú permite organizar jerárquicamente los elementos asociados a comandos y controladores de eventos. En una aplicación de Microsoft Windows típica, una barra de menús contiene varios botones de menú (como **Archivo,** Edición y **Ventana)** y cada botón de menú muestra un menú.  Un menú contiene una colección de elementos de menú (como **Nuevo**, **Abrir** y **Cerrar**), que se puede expandir para mostrar elementos de menú adicionales o realizar una acción específica cuando se haga clic en ellos.
+Un control de menú permite organizar jerárquicamente los elementos asociados a comandos y controladores de eventos. En una aplicación de Microsoft Windows típica, una barra de menús contiene varios botones de menú (como **Archivo,** Editar y **Ventana)** y cada botón de menú muestra un menú. Un menú contiene una colección de elementos de menú (como **Nuevo**, **Abrir** y **Cerrar**), que se puede expandir para mostrar elementos de menú adicionales o realizar una acción específica cuando se haga clic en ellos.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, las propiedades, los patrones de control y los eventos necesarios para el tipo **de** control Menu. Los Automatización de la interfaz de usuario se aplican a todos los controles de menú en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo **de** control Menu. Los Automatización de la interfaz de usuario se aplican a todos los controles de menú en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de menú y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el árbol Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de menú y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario árbol, vea [Información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
 
 
 
@@ -70,11 +70,11 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                      | Valor      | Notas                                                                                                                                                                   |
+| Propiedad de automatización de interfaz de usuario                                                                                      | Value      | Notas                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)           | **Menú**   |                                                                                                                                                                         |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md) | TRUE       | El control de menú siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                      |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md) | TRUE       | El control de menú siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                                      |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md) | true       | El control de menú siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                      |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md) | true       | El control de menú siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                                      |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)               | NULL       | No se espera ninguna etiqueta con un control de menú típico.                                                                                                                    |
 | [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                         | Vea las notas. | El control de menú no requiere que se establezca una propiedad **Name** o podría tener el mismo nombre que el control asociado, como un elemento de menú que abrió el submenú. |
 
